@@ -737,7 +737,8 @@ const yamukDeltoid: Record<string, FigureDef> = {
           quad([A, B, C, D], "muted"),
           seg(D, H, { dash: true, tone: "a" }),
           right(H, B[0] > H[0] ? B : A, D, "a"),
-          dim(D, H, "h = 3", C, "a"),
+          // The height label sits low beside the foot, clear of the angle at D.
+          dx >= 0 ? txt(v(dx + 0.12, 1.4), "h = 3", "e", { tone: "a" }) : txt(v(dx - 0.12, 1.5), "h = 3", "w", { tone: "a" }),
           ang(A, B, D, `${fmt(a, 0)}°`, { tone: "b", fill: true }),
           ang(D, A, C, `${fmt(180 - a, 0)}°`, { tone: "c", fill: true }),
           ...labelAll([A, B, C, D], ["A", "B", "C", "D"], ["sw", "se", "ne", "nw"]),

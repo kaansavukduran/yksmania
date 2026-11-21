@@ -79,7 +79,7 @@ const width: FigureDef = {
       els.push(seg(v(w.x, -1.15), v(w.x, -1.45), { tone: w.tone }));
       const lines = i === 1 ? ["Şehir ağaçlarının", "serinletici etkisi"] : [w.label];
       lines.forEach((l, k) =>
-        els.push(txt(v(w.x, -0.05 - k * 0.6), l, "c", { bold: sel, tone: sel ? "a" : w.tone, pick: k === 0 ? i : undefined })),
+        els.push(txt(v(w.x, -0.05 - k * 0.72), l, "c", { bold: sel, tone: sel ? "a" : w.tone, pick: k === 0 ? i : undefined })),
       );
     });
     els.push(txt(v(-1.2, 1.8), " ", "c"), txt(v(9.6, -2.2), " ", "c"));
@@ -109,14 +109,28 @@ const negative: FigureDef = {
     const els: El[] = [
       txt(v(0, 0.2), "Kök: Hangisi kesin söylenemez?", "e", { bold: true, tone: step >= 0 ? "warn" : "ink" }),
     ];
-    OPTS.forEach((o, i) => {
-      const y = -(i + 1) * 1.3;
+    // Long options wrap onto a second line so a phone-size font stays
+    // inside the drawing.
+    const wrap = (t: string) => {
+      const out: string[] = [];
+      for (const w of t.split(" ")) {
+        const last = out[out.length - 1];
+        if (last && (last + " " + w).length <= 30) out[out.length - 1] = last + " " + w;
+        else out.push(w);
+      }
+      return out;
+    };
+    let y = -1.3;
+    OPTS.forEach((o) => {
       const chosen = step === 2 && !o.ok;
-      if (chosen) els.push(band(-0.2, 9.4, y - 0.25, 0.55, "a"));
-      els.push(txt(v(0, y), `${o.k}) ${o.s}`, "e", { bold: chosen, tone: chosen ? "a" : "ink" }));
-      if (step >= 1) els.push(txt(v(0.5, y - 0.55), `kanıt: ${o.ev}`, "e", { small: true, tone: o.ok ? "c" : "warn" }));
+      const lines = wrap(`${o.k}) ${o.s}`);
+      const h = (lines.length - 1) * 0.62;
+      if (chosen) els.push(band(-0.2, 9.4, y - h - 0.25, h + 0.55, "a"));
+      lines.forEach((l, k) => els.push(txt(v(k ? 0.45 : 0, y - k * 0.62), l, "e", { bold: chosen, tone: chosen ? "a" : "ink" })));
+      if (step >= 1) els.push(txt(v(0.5, y - h - 0.62), `kanıt: ${o.ev}`, "e", { small: true, tone: o.ok ? "c" : "warn" }));
+      y -= h + 1.55;
     });
-    els.push(txt(v(-0.4, 0.7), " ", "c"), txt(v(9.6, -4.5), " ", "c"));
+    els.push(txt(v(-0.4, 0.7), " ", "c"), txt(v(9.6, y + 0.6), " ", "c"));
     return {
       els,
       readout: [

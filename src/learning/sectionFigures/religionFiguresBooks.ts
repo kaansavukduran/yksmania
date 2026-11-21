@@ -43,17 +43,19 @@ const bible: FigureDef = {
   alt: "İç içe kutular: dışta Kitab-ı Mukaddes, içinde solda Eski Ahit, sağda Yeni Ahit; Yeni Ahit'in içinde dört İncil kutusu ve diğer yazılar kutusu.",
   steps: ["Bütün: Kitab-ı Mukaddes", "İki ana bölüm", "Dört İncil ⊂ Yeni Ahit"],
   draw: (_, step) => {
-    const els: El[] = [box(0, 0, 12, 4.4, "c", true)];
-    els.push(txt(v(6, 4.4), "Kitab-ı Mukaddes", "n", { bold: true, tone: "c" }));
+    // Eski Ahit is a strip on top and Yeni Ahit spans the width below it, so
+    // the two inner boxes are wide enough for their names on a phone.
+    const els: El[] = [box(0, 0, 12, 6.6, "c", true)];
+    els.push(txt(v(6, 6.6), "Kitab-ı Mukaddes", "n", { bold: true, tone: "c" }));
     if (step >= 1) {
-      els.push(box(0.4, 0.4, 3.6, 3.6, "b", step === 1), txt(v(2.2, 2.2), "Eski Ahit", "c", { bold: true }));
-      els.push(box(4.4, 0.4, 7.2, 3.6, "b", step === 1), txt(v(8.0, 4.0), "Yeni Ahit", "s", { bold: true }));
+      els.push(box(0.4, 5.0, 11.2, 1.2, "b", step === 1), txt(v(6, 5.6), "Eski Ahit", "c", { bold: true }));
+      els.push(box(0.4, 0.4, 11.2, 4.3, "b", step === 1), txt(v(6, 4.7), "Yeni Ahit", "s", { bold: true }));
     }
     if (step >= 2) {
-      els.push(box(4.7, 0.65, 3.3, 2.5, "a", true), txt(v(6.35, 2.65), "dört İncil", "c", { bold: true }), txt(v(6.35, 1.8), "Matta · Markos", "c", { small: true }), txt(v(6.35, 1.15), "Luka · Yuhanna", "c", { small: true }));
-      els.push(box(8.2, 0.65, 3.1, 2.5, "muted", false), txt(v(9.75, 2.65), "diğer yazılar", "c", { small: true, bold: true }), txt(v(9.75, 1.8), "Elçilerin İşleri", "c", { small: true }), txt(v(9.75, 1.15), "mektuplar, Vahiy", "c", { small: true }));
+      els.push(box(0.7, 0.65, 5.3, 2.9, "a", true), txt(v(3.35, 3.0), "dört İncil", "c", { bold: true }), txt(v(3.35, 2.05), "Matta · Markos", "c", { small: true }), txt(v(3.35, 1.25), "Luka · Yuhanna", "c", { small: true }));
+      els.push(box(6.3, 0.65, 5.0, 2.9, "muted", false), txt(v(8.8, 3.0), "diğer yazılar", "c", { small: true, bold: true }), txt(v(8.8, 2.05), "Elçilerin İşleri", "c", { small: true }), txt(v(8.8, 1.25), "mektuplar, Vahiy", "c", { small: true }));
     }
-    els.push(txt(v(-0.3, 5.2), " ", "c"), txt(v(12.3, -0.4), " ", "c"));
+    els.push(txt(v(-0.3, 7.4), " ", "c"), txt(v(12.3, -0.4), " ", "c"));
     return {
       els,
       readout: [step === 0 ? "Hristiyan kutsal kitabının bütünü" : step === 1 ? "Eski Ahit + Yeni Ahit" : "Dört İncil ⊂ Yeni Ahit ⊂ Kitab-ı Mukaddes", "Eski Ahit ile Tanah ilişkilidir; sıra ve adlandırma farklılaşabilir."],

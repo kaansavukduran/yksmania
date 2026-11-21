@@ -435,7 +435,7 @@ const daire: Record<string, FigureDef> = {
           seg(O, pol(r, 0, O), { tone: "b" }),
           seg(O, pol(r, a, O), { tone: "b" }),
           ang(O, pol(r, 0, O), pol(r, a, O), `${a}°`, { tone: "b", reflex: a > 180 }),
-          pt(O, "O", "sw"),
+          pt(O, "O", a > 180 ? "s" : "sw"),
         ],
         readout: [`ℓ = 2π·6·${a}/360 = ${fmt((12 * a) / 360, 2)}π`],
       };
@@ -446,7 +446,7 @@ const daire: Record<string, FigureDef> = {
     alt: "Boyalı daire dilimi ve onu çevreleyen soluk çember.",
     param: { label: "α", min: 30, max: 330, step: 30, init: 120, unit: "°" },
     draw: (a) => ({
-      els: [circle(O, 3, { tone: "muted" }), sector(O, 3, 0, a, "a"), pt(O, "O", "sw"), txt(pol(1.5, a / 2, O), `${a}°`, "c", { small: true, bold: true })],
+      els: [circle(O, 3, { tone: "muted" }), sector(O, 3, 0, a, "a"), pt(O, "O", "sw"), txt(pol(1.95, a / 2, O), `${a}°`, "c", { small: true, bold: true })],
       readout: [`A = 36π·${a}/360 = ${fmt(a / 10, 1)}π`, `yay·r/2 = ${fmt((12 * a) / 360, 2)}π·6/2 = ${fmt(a / 10, 1)}π`],
     }),
   },

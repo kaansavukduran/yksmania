@@ -39,17 +39,17 @@ const barScope: FigureDef = {
   draw: (_v, _s, pick = -1) => {
     const els: El[] = [];
     const X = (i: number) => 0.6 + i * 1.6;
-    els.push(txt(v(0.15, 0), "|", "c", { bold: true }));
+    els.push(txt(v(-0.32, 0), "|", "c", { bold: true }));
     NUMS.forEach((n, i) => {
       const inside = pick >= 0 && i <= pick;
       els.push(txt(v(X(i), 0), shown(n, i), "c", { bold: true, tone: inside ? "a" : pick >= 0 ? "muted" : "ink", pick: i }));
     });
     if (pick >= 0) {
-      els.push(txt(v(X(pick) + 0.75, 0), "|", "c", { bold: true, tone: "a" }));
-      els.push(poly([v(0, -0.45), v(X(pick) + 0.9, -0.45), v(X(pick) + 0.9, 0.45), v(0, 0.45)], { tone: "a", thin: true, dash: true }));
+      els.push(txt(v(X(pick) + 0.85, 0), "|", "c", { bold: true, tone: "a" }));
+      els.push(poly([v(-0.55, -0.45), v(X(pick) + 1.05, -0.45), v(X(pick) + 1.05, 0.45), v(-0.55, 0.45)], { tone: "a", thin: true, dash: true }));
     }
     els.push(txt(v(X(4) + 1.1, 0), "= 3", "e", { bold: true }));
-    els.push(txt(v(-0.4, 1.2), " ", "c"), txt(v(X(4) + 2.6, -1.0), " ", "c"));
+    els.push(txt(v(-0.8, 1.2), " ", "c"), txt(v(X(4) + 2.6, -1.0), " ", "c"));
     const r = pick >= 0 ? evalBar(pick) : undefined;
     return {
       els,

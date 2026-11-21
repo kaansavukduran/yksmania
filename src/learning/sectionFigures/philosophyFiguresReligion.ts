@@ -30,16 +30,24 @@ const startBoard: FigureDef = {
     COLS.forEach((c, i) => {
       const x0 = i * (W + 0.3);
       const on = CASES[step].col === i;
-      els.push(poly([v(x0, 0), v(x0 + W, 0), v(x0 + W, 3.4), v(x0, 3.4)], { tone: on ? c.tone : "muted", fill: on ? c.tone : undefined, thin: !on }));
-      els.push(txt(v(x0 + W / 2, 3.4), c.name, "n", { bold: true, tone: on ? c.tone : "muted" }));
-      els.push(txt(v(x0 + W / 2, 2.85), c.start, "c", { small: true, tone: on ? "ink" : "muted" }));
+      els.push(poly([v(x0, 0), v(x0 + W, 0), v(x0 + W, 4.6), v(x0, 4.6)], { tone: on ? c.tone : "muted", fill: on ? c.tone : undefined, thin: !on }));
+      els.push(txt(v(x0 + W / 2, 4.6), c.name, "n", { bold: true, tone: on ? c.tone : "muted" }));
+      els.push(txt(v(x0 + W / 2, 4.05), c.start, "c", { small: true, tone: on ? "ink" : "muted" }));
     });
     CASES.slice(0, step + 1).forEach((cs, k) => {
       const x = cs.col * (W + 0.3) + W / 2;
       const cur = k === step;
-      cs.text.forEach((line, r) => els.push(txt(v(x, 2.0 - r * 0.6), line, "c", { small: true, tone: cur ? "ink" : "muted", bold: cur })));
+      // Narrow columns: the sentence is re-wrapped to about 11 characters a
+      // line so a phone-size font stays inside its column.
+      const lines: string[] = [];
+      for (const w of cs.text.join(" ").split(" ")) {
+        const last = lines[lines.length - 1];
+        if (last && (last + " " + w).length <= 11) lines[lines.length - 1] = last + " " + w;
+        else lines.push(w);
+      }
+      lines.forEach((line, r) => els.push(txt(v(x, 3.3 - r * 0.68), line, "c", { small: true, tone: cur ? "ink" : "muted", bold: cur })));
     });
-    els.push(txt(v(-0.2, 4.2), " ", "c"), txt(v(3 * W + 0.8, -0.4), " ", "c"));
+    els.push(txt(v(-0.2, 5.4), " ", "c"), txt(v(3 * W + 0.8, -0.4), " ", "c"));
     return { els, readout: [CASES[step].why, "Kritik öncülü ayrıca sına: bir neden bulmak o nedenin bütün niteliklerini bulmak değildir."] };
   },
 };

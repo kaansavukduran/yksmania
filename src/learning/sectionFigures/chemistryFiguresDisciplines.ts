@@ -90,7 +90,7 @@ const organic: FigureDef = {
     for (const a of [90, 210, 330]) { const p = v(cc[0] + 0.62 * Math.cos((a * Math.PI) / 180), cc[1] + 0.62 * Math.sin((a * Math.PI) / 180)); bond(cc, p); atom(p, "O", 0.24, step === 0 ? "warn" : tIn); }
     atom(cc, "C", 0.26, step === 0 ? "muted" : tIn);
     atom(v(8.4, 0.2), "Ca", 0.3, step === 0 ? "a" : tIn);
-    const names: [number, string, boolean][] = [[0, "CH₄ (metan)", true], [3.5, "C₂H₅OH (etanol)", true], [6.6, "CO₂", false], [9.2, "CaCO₃", false]];
+    const names: [number, string, boolean][] = [[-0.3, "CH₄ (metan)", true], [3.7, "C₂H₅OH (etanol)", true], [6.8, "CO₂", false], [9.2, "CaCO₃", false]];
     for (const [x, s, org] of names) els.push(txt(v(x, -0.7), s, "s", { tone: step === 0 ? "ink" : org === (step === 1) ? "ink" : "muted", small: true, bold: step !== 0 && org === (step === 1) }));
     els.push(txt(v(-1.2, 2.9), " ", "c"), txt(v(11.4, -1.4), " ", "c"));
     const rows: [string, string][] = [

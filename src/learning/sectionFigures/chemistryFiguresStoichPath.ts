@@ -72,7 +72,7 @@ const fen12: FigureDef = {
       txt(v(-0.2, 0.5), "gaz", "w", { small: true, bold: true }), rect(0, h2 * k, 0.3, 0.7, "b"), rect(h2 * k, gas * k, 0.3, 0.7, "c"),
       txt(v(gas * k + 0.15, 0.5), `H₂ ${f(h2, 1)} + O₂ ${f(o2, 1)} = ${f(gas, 1)} mol`, "e", { small: true }),
       txt(v(-0.2, -0.3), "kalan su", "w", { small: true, bold: true }), rect(0, Math.max((4 - x) * k, 0.001), -0.5, -0.1, "muted"), txt(v((4 - x) * k + 0.15, -0.3), `${f(4 - x, 1)} mol = ${f((4 - x) * 18, 0)} g`, "e", { small: true }),
-      seg(v(3 * k, 0.9), v(3 * k, 0.1), { dash: true, thin: true, tone: "warn" }), txt(v(3 * k, 1.1), "ölçülen 3 mol", "c", { small: true, tone: "warn" }),
+      seg(v(3 * k, 1.25), v(3 * k, 0.1), { dash: true, thin: true, tone: "warn" }), txt(v(3 * k, 1.45), "ölçülen 3 mol", "c", { small: true, tone: "warn" }),
     ];
     els.push(txt(v(-2.0, 1.4), " ", "c"), txt(v(10.0, -0.8), " ", "c"));
     return { els, readout: [`Toplam gaz = ${f(x, 1)} × 3/2 = ${f(gas, 1)} mol (${f(gas * 22.4, 1)} L NK).`, Math.abs(gas - 3) < 1e-9 ? "Ölçülenle eşleşti: 2 mol su ayrıştı, verim 3/6 = %50 (A)." : "Ölçülen 3 mol için ayrışan su 3 × 2/3 = 2 mol."] };

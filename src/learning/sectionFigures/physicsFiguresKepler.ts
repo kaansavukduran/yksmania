@@ -35,7 +35,7 @@ const geometry: FigureDef = {
     const a = 5, K = 0.5, c = a * e, b = a * Math.sqrt(1 - e * e), rp = a - c, ra = a + c;
     const els: El[] = [poly(ellipse(a, e, K), { tone: "b" })];
     els.push(ball(v(0, 0), 0.22, "warn"), txt(v(0, -0.45), "yıldız (odak)", "c", { small: true, tone: "warn" }));
-    els.push(circle(v(-c * K, 0), 0.07, { tone: "muted", fill: "muted" }), txt(v(-c * K, 0.35), "merkez", "c", { small: true, tone: "muted" }));
+    els.push(circle(v(-c * K, 0), 0.07, { tone: "muted", fill: "muted" }), txt(v(-c * K - 0.12, 0.42), "merkez", "w", { small: true, tone: "muted" }));
     if (e > 0) els.push(circle(v(-2 * c * K, 0), 0.08, { tone: "muted", bold: true }));
     els.push(seg(v(0, 0), v(rp * K, 0), { tone: "a", bold: true }), seg(v(0, 0), v(-ra * K, 0), { tone: "c", dash: true }));
     els.push(txt(v(rp * K + 0.25, 0.3), `rp = ${f1(rp, 1)}`, "e", { small: true, tone: "a" }), txt(v((-ra * K) / 2 - 0.4, -0.3), `ra = ${f1(ra, 1)}`, "c", { small: true, tone: "c" }));

@@ -89,7 +89,7 @@ const autoRec: FigureDef = {
     els.push(...person({ at: c2, sex: "e", on: false, label: step >= 4 ? "AA ya da Aa" : step >= 1 ? "A_" : undefined }));
     if (step >= 1 && step < 3) {
       els.push(vec(v(F[0] + 0.1, F[1] - 0.5), v(c1[0] - 0.1, c1[1] + 0.55), { tone: "c", thin: true }), vec(v(M[0] - 0.3, M[1] - 0.5), v(c1[0] + 0.3, c1[1] + 0.55), { tone: "c", thin: true }));
-      els.push(txt(v(-1.8, 1.9), "a", "c", { tone: "c", bold: true }), txt(v(-3.3, 1.5), "a", "c", { tone: "c", bold: true }));
+      els.push(txt(v(-1.95, 1.38), "a", "c", { tone: "c", bold: true }), txt(v(-3.6, 1.2), "a", "c", { tone: "c", bold: true }));
     }
     if (step >= 3) {
       const X0 = 1.4;

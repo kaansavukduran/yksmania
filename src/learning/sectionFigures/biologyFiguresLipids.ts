@@ -61,12 +61,12 @@ const tag: FigureDef = {
       const gap = b ? 0 : 0.9;
       els.push(ball(v(-1.9, y), 0.17, "warn", "O"));
       els.push(seg(v(-2.38, y), v(-2.07, y), { tone: "ink" }));
-      if (!b) els.push(txt(v(-1.65, y + 0.3), "H", "c", { tone: "ink", small: true }));
+      if (!b) els.push(txt(v(-1.62, y + 0.4), "H", "c", { tone: "ink", small: true }));
       // Carboxyl carbon with =O and the chain.
       const cx = -1.2 + gap;
       els.push(ball(v(cx, y), 0.17, "muted", "C"), seg(v(cx, y + 0.17), v(cx, y + 0.55), { tone: "ink" }), seg(v(cx + 0.07, y + 0.17), v(cx + 0.07, y + 0.55), { tone: "ink" }), ball(v(cx + 0.03, y + 0.7), 0.15, "warn", "O"));
-      if (!b) els.push(ball(v(cx - 0.45, y - 0.25), 0.14, "warn", "O"), txt(v(cx - 0.75, y - 0.45), "H", "c", { tone: "ink", small: true }));
-      if (b) els.push(seg(v(-1.73, y), v(cx - 0.17, y), { tone: "c", bold: true }), txt(v(-1.55, y - 0.32), "ester", "c", { tone: "c", small: true, bold: true }));
+      if (!b) els.push(ball(v(cx - 0.45, y - 0.25), 0.14, "warn", "O"), txt(v(cx - 0.8, y - 0.58), "H", "c", { tone: "ink", small: true }));
+      if (b) els.push(seg(v(-1.73, y), v(cx - 0.17, y), { tone: "c", bold: true }), txt(v(-1.45, y - 0.4), "ester", "c", { tone: "c", small: true, bold: true }));
       els.push(...drawChain(chain(v(cx + 0.17, y), 0, 9), "a"));
       if (b && step < 3) els.push(txt(v(3.9, y), "→ H₂O", "e", { tone: "b", small: true, bold: true }));
       if (step === 3) els.push(txt(v(3.9, y), "+ H₂O harcanır", "e", { tone: "b", small: true, bold: true }));

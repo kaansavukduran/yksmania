@@ -42,8 +42,9 @@ const device: FigureDef = {
     els.push(rect(2.5, -1.2, 2.0, 2.4, ht, on(2), !on(2)));
     // Labels below the box only.
     const names: [number, string][] = [[-3.4, "optik"], [0.1, "elektromanyetizma"], [3.5, "termodinamik"]];
-    names.forEach(([x, s], i) => els.push(txt(v(x, -1.9), s, "s", { tone: on(i) ? "ink" : "muted", small: true, bold: on(i) })));
-    els.push(txt(v(-5.4, 3.4), " ", "c"), txt(v(5.4, -2.9), " ", "c"));
+    // The long middle name sits half a row lower so neighbours never touch.
+    names.forEach(([x, s], i) => els.push(txt(v(x, i === 1 ? -2.45 : -1.9), s, "s", { tone: on(i) ? "ink" : "muted", small: true, bold: on(i) })));
+    els.push(txt(v(-5.4, 3.4), " ", "c"), txt(v(5.4, -3.4), " ", "c"));
     const rows: [string, string][] = [
       ["Işığın mercekte kırılıp bir noktada toplanması: optik.", "Cihaz elektrikli diye bu olay elektromanyetizma olmaz."],
       ["Bobindeki akımın mıknatısın alanında itilmesi: elektromanyetizma.", "Aynı cihazdaki mercek sorulsaydı cevap optik olurdu."],

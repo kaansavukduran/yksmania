@@ -72,7 +72,7 @@ const induction: FigureDef = {
     const els: El[] = [];
     const rodX = step === 3 ? -4.6 : -1.6;
     els.push(poly([v(rodX - 1.6, 0.25), v(rodX, 0.25), v(rodX, -0.25), v(rodX - 1.6, -0.25)], { tone: "b", fill: "b" }));
-    for (let i = 0; i < 4; i++) els.push(txt(v(rodX - 1.4 + i * 0.4, 0), "−", "c", { tone: "b", bold: true }));
+    for (let i = 0; i < 3; i++) els.push(txt(v(rodX - 1.4 + i * 0.6, 0), "−", "c", { tone: "b", bold: true }));
     els.push(txt(v(rodX - 0.8, 0.55), "negatif çubuk", "n", { tone: "b", small: true }));
     els.push(ball(S, 1.1, "muted"));
     if (step <= 2) els.push(...marks(S, 1.1, 3, "+", Math.PI, 0.7));

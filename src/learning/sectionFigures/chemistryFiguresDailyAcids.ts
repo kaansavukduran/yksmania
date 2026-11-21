@@ -28,12 +28,12 @@ const limeCycle: FigureDef = {
     LIME.forEach((l, i) => {
       const x = X[i], sel = pick === i;
       els.push(rect(x - 1.0, x + 1.0, -0.35, 0.35, sel ? "a" : "b", sel), txt(v(x, 0), l.formula, "c", { small: true, bold: true }), txt(v(x, -0.65), l.label, "c", { small: true, bold: sel, tone: sel ? "a" : "ink", pick: i }));
-      if (sel) els.push(txt(v(x, 0.65), l.els.join(" · "), "c", { small: true, tone: "a" }));
+      if (sel) els.push(txt(v(x, 0.92), l.els.join(" · "), "c", { small: true, tone: "a" }));
     });
-    els.push(vec(v(1.1, 0), v(2.5, 0), { tone: "warn" }), txt(v(1.8, 0.3), "ısı: −CO₂", "c", { small: true, tone: "muted" }));
+    els.push(vec(v(1.1, 0), v(2.5, 0), { tone: "warn" }), txt(v(1.8, 0.35), "ısı: −CO₂", "c", { small: true, tone: "muted" }));
     els.push(vec(v(4.7, 0), v(6.1, 0), { tone: "warn" }), txt(v(5.4, 0.3), "+H₂O", "c", { small: true, tone: "muted" }));
     els.push(poly([v(7.2, -0.95), v(7.2, -1.3), v(0, -1.3)], { open: true, tone: "warn", thin: true }), vec(v(0, -1.3), v(0, -0.95), { tone: "warn", thin: true }), txt(v(3.6, -1.6), "+ CO₂ (havadan), − H₂O", "c", { small: true, tone: "muted" }));
-    els.push(txt(v(-1.3, 1.0), " ", "c"), txt(v(8.5, -1.9), " ", "c"));
+    els.push(txt(v(-1.3, 1.25), " ", "c"), txt(v(8.5, -1.9), " ", "c"));
     return { els, readout: [pick >= 0 ? `${LIME[pick].label} = ${LIME[pick].formula}: ${LIME[pick].els.join(", ")}.` : "Bir bileşiğe tıkla.", "Söndürme CaO + H₂O’dur; CaCO₃’e su eklemek kireç söndürmek değildir."] };
   },
 };

@@ -191,7 +191,7 @@ const miryokefalon: Battle = {
   terrain: [
     ...mountains([4.4, 6, 7.6, 9.2, 10.8], 5.1, 1.6, 1.7),
     ...mountains([5.2, 6.8, 8.4, 10, 11.6], 2.9, 1.6, 1.7, true),
-    txt(v(2, 5.3), "dar geçit", "c", { tone: "muted", small: true }),
+    txt(v(1.7, 5.9), "dar geçit", "c", { tone: "muted", small: true }),
     ...compass(14, "← batı", "Konya yönü →"),
   ],
   width: 14,

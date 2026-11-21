@@ -123,7 +123,7 @@ const isi: Record<string, FigureDef> = {
       const els: El[] = [
         seg(v(0, y(-20)), v(0, y(100)), { tone: "ink", bold: true }),
         seg(v(4, y(-20)), v(4, y(100)), { tone: "ink", bold: true }),
-        txt(v(0, y(100) + 0.3), "°C", "n", { small: true, bold: true }),
+        txt(v(0, y(100) + 0.55), "°C", "n", { small: true, bold: true }),
         txt(v(4, y(100) + 0.3), "K", "n", { small: true, bold: true }),
       ];
       for (const c of [0, 50, 100]) {
@@ -502,7 +502,7 @@ const hal: Record<string, FigureDef> = {
           curve(pts),
           ...[0, 100].map((c) => txt(v(0, (c + 20) * sy), String(c), "w", { small: true, tone: "muted", soft: true })),
           txt(v(0, 0), "−20", "w", { small: true, tone: "muted" }),
-          ...names.map((n, i) => txt(v(((xs[i] + xs[i + 1]) / 2) * sx, ((T[i] + T[i + 1]) / 2 + 20) * sy), n, i === 3 ? "s" : i === 1 ? "n" : "nw", { small: true, tone: i === 1 || i === 3 ? "a" : "muted" })),
+          ...names.map((n, i) => txt(v(((xs[i] + xs[i + 1]) / 2) * sx, ((T[i] + T[i + 1]) / 2 + 20) * sy), n, i === 3 ? "s" : i === 1 ? "se" : "nw", { small: true, tone: i === 1 || i === 3 ? "a" : "muted" })),
         ],
         readout: ["Toplam ≈ 4,2 + 33,4 + 42 + 226 + 4 = 309,6 kJ"],
       };

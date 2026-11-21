@@ -62,16 +62,35 @@ const kinds: FigureDef = {
   draw: (_v, _s, pick = -1) => {
     const els: El[] = [];
     const W = 5.2;
+    // Each criterion wraps at about 11 characters so a phone-size font stays
+    // inside its column; criteria are separated by a wider gap.
+    const wrap = (t: string) => {
+      const out: string[] = [];
+      for (const w of t.split(" ")) {
+        const last = out[out.length - 1];
+        if (last && (last + " " + w).length <= 11) out[out.length - 1] = last + " " + w;
+        else out.push(w);
+      }
+      return out;
+    };
+    const H = 6.4;
     KINDS.forEach((k, i) => {
       const x = i * (W + 0.3);
       const on = pick === i;
       const tone: Tone = on ? "a" : k.tone;
-      els.push(poly([v(x, 0), v(x + W, 0), v(x + W, 3.2), v(x, 3.2)], { tone, fill: tone, thin: !on }));
-      els.push(txt(v(x + W / 2, 3.2), k.name, "n", { bold: true, tone: on ? "a" : "ink", pick: i }));
-      k.rows.forEach((r, j) => els.push(txt(v(x + W / 2, 2.5 - j * 0.8), r, "c", { small: true, tone: on ? "ink" : "muted" })));
+      els.push(poly([v(x, 0), v(x + W, 0), v(x + W, H), v(x, H)], { tone, fill: tone, thin: !on }));
+      els.push(txt(v(x + W / 2, H), k.name, "n", { bold: true, tone: on ? "a" : "ink", pick: i }));
+      let y = H - 0.75;
+      k.rows.forEach((r) => {
+        for (const line of wrap(r)) {
+          els.push(txt(v(x + W / 2, y), line, "c", { small: true, tone: on ? "ink" : "muted" }));
+          y -= 0.82;
+        }
+        y -= 0.35;
+      });
     });
     els.push(poly([v(W + 0.3, -0.25), v(3 * W + 0.6, -0.25)], { tone: "a", open: true, bold: true }), txt(v(2 * W + 0.45, -0.25), "ortak: kemiozmoz", "s", { small: true, bold: true, tone: "a" }));
-    els.push(txt(v(-0.2, 4.1), " ", "c"), txt(v(3 * W + 0.8, -1.1), " ", "c"));
+    els.push(txt(v(-0.2, H + 0.9), " ", "c"), txt(v(3 * W + 0.8, -1.1), " ", "c"));
     const sel = pick >= 0 ? KINDS[pick] : undefined;
     return { els, readout: [sel ? `${sel.name}: ${sel.where}` : "Bir sütuna tıkla ya da aşağıdan seç.", "Hücre ATP'yi sürekli üretir ve tüketir: son ATP = başlangıç + sentez − hidroliz."] };
   },

@@ -136,8 +136,8 @@ const work: FigureDef = {
     for (let i = 1; i < 6; i++) els.push(seg(v(i * u, 0), v(i * u, 0.8), { tone: "muted", thin: true, dash: true }));
     els.push(txt(v(0, 1.0), "1 iş = 6 parça", "ne", { tone: "ink", small: true, bold: true }));
     els.push(rect(0, -0.9, 0.3, 0.3, "b"), txt(v(0.4, -0.75), "A: günde 1 parça (1/6)", "e", { tone: "b", small: true }));
-    els.push(rect(3.3, -0.9, 0.3, 0.3, "c"), txt(v(3.7, -0.75), "B: günde 2 parça (1/3)", "e", { tone: "c", small: true }));
-    els.push(txt(v(-0.4, 1.6), " ", "c"), txt(v(7.4, -1.2), " ", "c"));
+    els.push(rect(0, -1.45, 0.3, 0.3, "c"), txt(v(0.4, -1.3), "B: günde 2 parça (1/3)", "e", { tone: "c", small: true }));
+    els.push(txt(v(-0.4, 1.6), " ", "c"), txt(v(7.4, -1.8), " ", "c"));
     const done = (3 * d) / 6;
     return {
       els,

@@ -57,7 +57,7 @@ const section: FigureDef = {
       txt(v(2.6, -2.0), "Ön kök", "c", { small: true, bold: on(5), tone: on(5) ? "a" : "warn", pick: 5 }),
       txt(v(4.5, 0.7), "Karma sinir", "e", { small: true, bold: on(6), tone: on(6) ? "a" : "ink", pick: 6 }),
       txt(v(0, 2.75), "arka", "c", { small: true, tone: "muted" }),
-      txt(v(0.6, -2.65), "ön", "c", { small: true, tone: "muted" }),
+      txt(v(1.0, -2.65), "ön", "c", { small: true, tone: "muted" }),
     );
     els.push(seg(v(-0.75, -2.45), v(-0.1, -0.15), { thin: true, tone: "muted" }));
     els.push(txt(v(-6.3, 3.1), " ", "c"), txt(v(6.3, -3.0), " ", "c"));
@@ -134,7 +134,7 @@ const delay: FigureDef = {
       rect(x1, x2, 0, 0.35, { fill: "warn", tone: "warn" }),
       rect(x2, x3, 0, 0.35, { fill: "b", tone: "b" }),
       txt(v(x1 / 2, 0.75), `duyu ${f(td)} ms`, "c", { small: true, tone: "c" }),
-      txt(v(x2 + (x3 - x2) / 2, 0.75), `motor ${f(tm)} ms`, "c", { small: true, tone: "b" }),
+      txt(v(x2 + (x3 - x2) / 2, 1.25), `motor ${f(tm)} ms`, "c", { small: true, tone: "b" }),
       txt(v((x1 + x2) / 2, -0.75), `sinaps ${SYN} ms`, "c", { small: true, tone: "warn" }),
       txt(v(x3 + 0.3, 0), `= ${f(tot)} ms`, "e", { bold: true }),
       txt(v(-0.3, 1.3), " ", "c"), txt(v(((LD / 20) * 1000 + SYN + (LM / VM) * 1000) * K + 3.0, -1.2), " ", "c"),
@@ -166,17 +166,17 @@ const lesion: FigureDef = {
     const els: El[] = [
       rect(2.6, 4.6, 0, 0.8, { fill: "b", tone: "b", thin: true }),
       txt(v(3.6, 0), "omurilik", "c", { small: true }),
-      txt(v(0, 0.95), "reseptör", "c", { small: true }),
+      txt(v(-0.35, 0.95), "reseptör", "c", { small: true }),
       vec(v(0.4, 0.5), v(2.6, 0.5), { tone: c.cut === 0 ? "muted" : "c", bold: true }),
-      txt(v(1.5, 0.95), "arka kök", "c", { small: true, tone: "c" }),
+      txt(v(1.85, 0.95), "arka kök", "c", { small: true, tone: "c" }),
       vec(v(4.6, -0.5), v(6.8, -0.5), { tone: c.cut === 1 ? "muted" : "warn", bold: true }),
       txt(v(5.7, -0.95), "ön kök", "c", { small: true, tone: "warn" }),
       txt(v(7.4, -0.5), "kas", "c", { small: true }),
       vec(v(3.6, 0.8), v(3.6, 2.0), { tone: c.cut === 0 ? "muted" : "c" }),
       txt(v(3.6, 2.35), "beyin (duyum)", "c", { small: true }),
     ];
-    if (c.cut === 0) els.push(txt(v(1.5, 0.5), "✗", "c", { bold: true, tone: "warn" }));
-    if (c.cut === 1) els.push(txt(v(5.4, -0.5), "✗", "c", { bold: true, tone: "warn" }));
+    if (c.cut === 0) els.push(txt(v(1.5, 0.3), "✗", "c", { bold: true, tone: "warn" }));
+    if (c.cut === 1) els.push(txt(v(5.4, -0.25), "✗", "c", { bold: true, tone: "warn" }));
     els.push(txt(v(-0.9, 2.8), " ", "c"), txt(v(8.2, -1.4), " ", "c"));
     return {
       els,

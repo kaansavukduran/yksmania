@@ -301,7 +301,7 @@ const paralelkenar: Record<string, FigureDef> = {
         const m = mid(a, b);
         return [
           vec(add(a, mul(d, 1.5)), sub(b, mul(d, 1.5)), { tone: "a", thin: true }),
-          txt(add(m, v(0, 0.45)), label, "c", { small: true, tone: "a" }),
+          txt(add(m, v(0, 0.6)), label, "c", { small: true, tone: "a" }),
         ];
       };
       return {
@@ -976,7 +976,7 @@ const kaynakPekistirme: Record<string, FigureDef> = {
       if (step >= 2)
         els.push(
           ang(E, A1, sub(E, v(1, 0)), "40°", { tone: "b", fill: true, r: 40 }),
-          ang(E, sub(E, v(1, 0)), B1, "30°", { tone: "c", fill: true, r: 40 }),
+          ang(E, sub(E, v(1, 0)), B1, "30°", { tone: "c", fill: true, r: 58 }),
         );
       else els.push(ang(E, A1, B1, "?", { tone: "a", r: 40 }));
       return { els, readout: step >= 2 ? ["∠E = 40° + 30° = 70°"] : undefined };

@@ -22,15 +22,17 @@ const balance: FigureDef = {
   alt: "Üstte pozitif iyon blokları, altta negatif iyon blokları; iki sıra eşit uzunlukta; yanında formül ve ad.",
   picks: PAIRS.map((p) => ({ label: `${p.cat} + ${p.an}`, title: `${p.f}: ${p.name}`, detail: [`${p.nc} × (+${p.cq}) + ${p.na} × (−${p.aq}) = 0.`, `Formül ${p.f}; ad: ${p.name}.`, p.na > 1 && p.an.length > 3 ? "Çok atomlu iyon birden fazla ise grup paranteze alınır." : "Ad sırası: katyon + anyon."] })),
   draw: (_v, _s, pick = -1) => {
-    const p = PAIRS[pick >= 0 ? pick : 2], u = 0.9;
+    const p = PAIRS[pick >= 0 ? pick : 2], u = 1.3;
     const els: El[] = [];
     for (let i = 0; i < p.nc; i++) els.push(rect(i * p.cq * u, (i + 1) * p.cq * u - 0.04, 0.3, 0.9, "b"), txt(v((i + 0.5) * p.cq * u, 0.6), p.cat, "c", { small: true, bold: true }));
     for (let i = 0; i < p.na; i++) els.push(rect(i * p.aq * u, (i + 1) * p.aq * u - 0.04, -0.9, -0.3, "warn"), txt(v((i + 0.5) * p.aq * u, -0.6), p.an, "c", { small: true, bold: true }));
     const W = p.nc * p.cq * u;
     els.push(seg(v(W + 0.05, 1.0), v(W + 0.05, -1.0), { dash: true, thin: true, tone: "a" }), txt(v(W + 0.25, 0.6), `+${p.nc * p.cq}`, "e", { small: true, tone: "b" }), txt(v(W + 0.25, -0.6), `−${p.na * p.aq}`, "e", { small: true, tone: "warn" }));
-    els.push(txt(v(W + 1.3, 0.25), p.f, "e", { bold: true, tone: "a" }), txt(v(W + 1.3, -0.35), p.name, "e", { small: true }));
-    PAIRS.forEach((pp, i) => els.push(txt(v(-0.2 + i * 2.3, -1.7), `${pp.cat} + ${pp.an}`, "e", { small: true, bold: pick === i, tone: pick === i ? "a" : "ink", pick: i })));
-    els.push(txt(v(-0.4, 1.3), " ", "c"), txt(v(9.0, -2.0), " ", "c"));
+    // Formula and name under the bars keep the blocks wide enough for
+    // their ion symbols on a phone.
+    els.push(txt(v(0, -1.45), p.f, "e", { bold: true, tone: "a" }), txt(v(2.6, -1.45), p.name, "e", { small: true }));
+    PAIRS.forEach((pp, i) => els.push(txt(v(-0.2 + i * 2.3, -2.4), `${pp.cat} + ${pp.an}`, "e", { small: true, bold: pick === i, tone: pick === i ? "a" : "ink", pick: i })));
+    els.push(txt(v(-0.4, 1.3), " ", "c"), txt(v(9.0, -2.7), " ", "c"));
     return { els, readout: [`${p.nc} × (+${p.cq}) = ${p.nc * p.cq}; ${p.na} × (−${p.aq}) = −${p.na * p.aq}; toplam 0 → ${p.f}.`, "İyonun içindeki sayılar (NO₃’teki 3) değişmez; yalnız iyon adetleri ayarlanır."] };
   },
 };
@@ -44,13 +46,13 @@ const paren: FigureDef = {
   steps: PAREN,
   draw: (_v, step) => {
     const els: El[] = [txt(v(0, 2.0), "Al₂(SO₄)₃", "e", { bold: true, tone: "a" })];
-    if (step >= 1) for (let i = 0; i < 2; i++) els.push(ball(v(0.4 + i * 0.8, 0.3), 0.28, "b"), txt(v(0.4 + i * 0.8, 0.3), "Al", "c", { small: true, bold: true }));
+    if (step >= 1) for (let i = 0; i < 2; i++) els.push(ball(v(0.4 + i * 0.8, 0.3), 0.3, "b", "Al"));
     if (step >= 2)
       for (let g = 0; g < 3; g++) {
         const x = 2.4 + g * 1.7;
         els.push(rect(x - 0.6, x + 0.6, -0.4, 1.0, "warn", false), txt(v(x, 1.25), "SO₄²⁻", "c", { small: true }));
         if (step >= 3) {
-          els.push(ball(v(x, 0.3), 0.14, "c"), txt(v(x, 0.3), "S", "c", { small: true }));
+          els.push(ball(v(x, 0.3), 0.2, "c", "S"));
           [[-0.35, 0.65], [0.35, 0.65], [-0.35, -0.05], [0.35, -0.05]].forEach(([dx, dy]) => els.push(ball(v(x + dx, dy), 0.1, "warn")));
         }
       }
@@ -77,11 +79,11 @@ const variable: FigureDef = {
   draw: (_v, _s, pick = -1) => {
     const els: El[] = [];
     VAR.forEach((r, i) => {
-      const y = -i * 1.2, sel = pick === i;
-      els.push(rect(-0.32, -0.16, y - 0.8, y + 0.25, r.warn ? "warn" : "b"));
-      els.push(txt(v(0, y), r.f, "e", { small: true, bold: true, tone: sel ? "a" : "ink", pick: i }), txt(v(2.0, y), `→ ${r.name}`, "e", { small: true, tone: sel ? "a" : "c" }), txt(v(0.3, y - 0.55), r.calc, "e", { small: true, tone: "muted" }));
+      const y = -i * 1.5, sel = pick === i;
+      els.push(rect(-0.32, -0.16, y - 1.05, y + 0.25, r.warn ? "warn" : "b"));
+      els.push(txt(v(0, y), r.f, "e", { small: true, bold: true, tone: sel ? "a" : "ink", pick: i }), txt(v(2.7, y), `→ ${r.name}`, "e", { small: true, tone: sel ? "a" : "c" }), txt(v(0.3, y - 0.78), r.calc, "e", { small: true, tone: "muted" }));
     });
-    els.push(txt(v(-0.6, 0.6), " ", "c"), txt(v(6.6, -6.8), " ", "c"));
+    els.push(txt(v(-0.6, 0.6), " ", "c"), txt(v(6.6, -8.5), " ", "c"));
     return { els, readout: [pick >= 0 ? VAR[pick].calc : "Bir formüle tıkla.", "Fe₂O₃’te (III) O’nun yanındaki 3’ten değil, 3 × (−2) = −6’nın iki Fe’ye bölünmesinden gelir."] };
   },
 };

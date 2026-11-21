@@ -33,18 +33,24 @@ const map: FigureDef = {
   draw: (_v, _s, pick = -1) => {
     const D = 0.62, on = pick >= 0 ? CLASSES[pick].id : null;
     const els: El[] = [];
+    // Groups 1–2 and 13–18 form the main block; the transition metals
+    // (groups 3–12, period 4) sit in their own strip below it, so every cell
+    // is wide enough for its symbol on a phone.
+    const cell = (g: number, r: number): [number, number] =>
+      g <= 2 ? [(g - 1) * D, -r * D] : g >= 13 ? [(g - 11) * D, -r * D] : [(g - 3) * D, -4.85 * D];
     ROWS.forEach((row, r) =>
       row.forEach(([sym, g, cls]) => {
-        const x = (g - 1) * D, y = -r * D, cl = CLASSES.find((c) => c.id === cls)!;
+        const [x, y] = cell(g, r), cl = CLASSES.find((c) => c.id === cls)!;
         const lit = on === null || on === cls;
         els.push(rect(x, x + D - 0.04, y - D + 0.04, y, lit ? cl.tone : "muted", lit));
         els.push(txt(v(x + (D - 0.04) / 2, y - (D - 0.04) / 2), sym, "c", { small: true, tone: lit ? "ink" : "muted" }));
       }),
     );
     // Basamak çizgisi: B’nin solu (2. periyot), Al|Si ve Ga|Ge arası; şematik.
-    els.push(poly([v(12 * D, -1 * D), v(12 * D, -2 * D), v(13 * D, -2 * D), v(13 * D, -4 * D)], { open: true, bold: true, tone: "warn" }));
-    CLASSES.forEach((c, i) => els.push(txt(v(i * 2.2, -3.2), c.label, "e", { small: true, bold: pick === i, tone: pick === i ? "a" : "ink", pick: i })));
-    els.push(txt(v(-0.3, 0.4), " ", "c"), txt(v(18 * D + 0.3, -3.5), " ", "c"));
+    els.push(poly([v(2 * D, -1 * D), v(2 * D, -2 * D), v(3 * D, -2 * D), v(3 * D, -4 * D)], { open: true, bold: true, tone: "warn" }));
+    els.push(txt(v(0, -4.42 * D), "3–12. gruplar (4. periyot)", "e", { small: true, tone: "muted" }));
+    CLASSES.forEach((c, i) => els.push(txt(v(i * 1.25, -6.75 * D), c.label, "e", { small: true, bold: pick === i, tone: pick === i ? "a" : "ink", pick: i })));
+    els.push(txt(v(-0.3, 0.4), " ", "c"), txt(v(10 * D + 0.3, -7.1 * D), " ", "c"));
     return { els, readout: [pick >= 0 ? CLASSES[pick].detail[0] : "Bir sınıfa tıkla.", "Aynı grupta olmak aynı sınıfı garanti etmez: B yarı metal, Al metal (13. grup)."] };
   },
 };

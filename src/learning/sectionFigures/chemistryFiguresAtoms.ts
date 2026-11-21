@@ -105,13 +105,15 @@ const bohr: FigureDef = {
     const els: El[] = [...plus(v(0, 0), 0.45)];
     radii.forEach((r, i) => {
       els.push(circle(v(0, 0), r, { tone: "muted", thin: true, dash: i > 0 }));
-      els.push(txt(v(r * Math.cos(0.5), r * Math.sin(0.5)), `n=${i + 1}`, "ne", { tone: "muted", small: true }));
+      // Each ring's name sits at its own angle so neighbouring names never touch.
+      const a = 0.12 + i * 0.3;
+      els.push(txt(v(r * Math.cos(a), r * Math.sin(a)), `n=${i + 1}`, "ne", { tone: "muted", small: true }));
     });
     const at = (n: number): V => (n <= 4 ? v(-radii[n - 1] * Math.cos(0.6), -radii[n - 1] * Math.sin(0.6)) : v(-6, -3.4));
     const cur = bohrSteps[step].n;
     const prev = step > 0 ? bohrSteps[step - 1].n : cur;
     if (step > 0 && prev !== cur) els.push(vec(at(prev), at(cur), { tone: "b", dash: true }));
-    els.push(circle(at(cur), 0.2, { tone: "b", fill: "b", bold: true }), txt(at(cur), "e⁻", "sw", { tone: "b", small: true }));
+    els.push(circle(at(cur), 0.2, { tone: "b", fill: "b", bold: true }), txt(v(at(cur)[0] - 0.22, at(cur)[1] - 0.22), "e⁻", "sw", { tone: "b", small: true }));
     let readout: string[] = ["Elektron en düşük uygun enerji düzeyinde."];
     if (step === 1) {
       els.push(...photon(v(-6.5, 1.5), v(-2.9, -1.5), "c"), txt(v(-6.5, 1.7), "soğurulan foton", "n", { tone: "c", small: true }));
@@ -251,8 +253,9 @@ const slide: FigureDef = {
       els.push(...plus(v(c * 1.6 + dx, 1.6), 0.42));
     }
     for (let i = 0; i < 14; i++) {
-      const x = ((i * 0.61) % 1) * 8.6 - 0.4 + dx * (i % 2 ? 0.5 : 0.2);
-      const y = ((i * 0.37) % 1) * 2.2 - 0.3;
+      // Free electrons move in the gap between the two ion layers, never on an ion.
+      const x = (i % 7) * 1.3 - 0.1 + (i < 7 ? 0 : 0.65) + dx * (i % 2 ? 0.5 : 0.2);
+      const y = i < 7 ? 0.64 : 0.98;
       els.push(dot(v(x, y), "b"));
     }
     els.push(vec(v(-0.6, 2.6), v(-0.6 + Math.max(0.3, dx + 0.3), 2.6), { tone: "warn", dash: true }));

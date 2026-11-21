@@ -131,9 +131,10 @@ const EVENTS: Ev[] = [
 ];
 const X0 = 1922;
 const K = 0.7; // strip units per year
-const ROW = 0.82;
+const ROW = 1;
 
 const reformStrip: FigureDef = {
+  maxHeight: 560,
   caption:
     "Referans yılını kaydır: o yıl ve öncesi renkli (gerçekleşmiş), sonrası gri (henüz değil). Bir olayın adına tıkla: tarihi, ne değiştirdiği, hangi ilkeyle bağlandığı ve neyle karıştırılmaması gerektiği açılır. 1933 seçilince yalnız 1934 ve 1937 olayları gride kalır (2025 AYT Sosyal Bilimler-2 Tarih-2 soru 10 mantığı). Kadın hakları (vurgulu) üç düzeydir: 1930 belediye, 1933 köy, 1934 milletvekili.",
   alt: "Yatay eksende 1922–1937 yılları, her satırda bir olay: olayın yılında nokta, adı solda. Referans yılını gösteren dikey çizginin solundaki olaylar renkli, sağındakiler gri. Olay adları seçilebilir.",

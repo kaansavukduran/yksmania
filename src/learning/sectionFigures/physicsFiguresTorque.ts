@@ -22,7 +22,7 @@ const arm: FigureDef = {
     const dir = v(Math.cos(t), Math.sin(t));
     const els: El[] = [seg(O, P, { bold: true }), ...pivot(O)];
     els.push(seg(v(P[0] - dir[0] * 4, P[1] - dir[1] * 4), v(P[0] + dir[0] * 2, P[1] + dir[1] * 2), { dash: true, thin: true, tone: "muted" }));
-    els.push(vec(P, v(P[0] + dir[0] * 1.4, P[1] + dir[1] * 1.4), { tone: "a", bold: true }), txt(v(P[0] + dir[0] * 1.6, P[1] + dir[1] * 1.6 + 0.2), "F = 10 N", "c", { small: true, tone: "a" }));
+    els.push(vec(P, v(P[0] + dir[0] * 1.4, P[1] + dir[1] * 1.4), { tone: "a", bold: true }), txt(v(P[0] + dir[0] * 0.7 + (th <= 90 ? -dir[1] : dir[1]) * 0.5, P[1] + dir[1] * 0.7 + (th <= 90 ? dir[0] : -dir[0]) * 0.5), "F = 10 N", "c", { small: true, tone: "a" }));
     const dperp = r * Math.sin(t);
     if (Math.abs(Math.sin(t)) > 0.01) {
       const s = -(O[0] - P[0]) * dir[0] - (O[1] - P[1]) * dir[1];
@@ -30,7 +30,7 @@ const arm: FigureDef = {
       els.push(seg(O, foot, { tone: "warn", bold: true }), circle(foot, 0.06, { tone: "warn", fill: "warn" }));
       els.push(txt(v(foot[0] / 2 - 0.2, foot[1] / 2), `d⊥ = ${f2(Math.abs(dperp))} m`, "w", { small: true, tone: "warn" }));
     }
-    const rBelow = (th >= 60 && th <= 120) || th >= 150;
+    const rBelow = th >= 60;
     els.push(txt(v(P[0] / 2 + (th >= 60 && th <= 120 ? 0.9 : 0), rBelow ? -0.35 : 0.35), "r = 0,6 m", "c", { small: true }));
     els.push(txt(v(-4.2, 2.4), " ", "c"), txt(v(5.2, -2.0), " ", "c"));
     return {

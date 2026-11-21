@@ -47,9 +47,9 @@ const compare: FigureDef = {
     MODELS.forEach((m, i) => {
       const x = i * 3.1;
       els.push(...icon(i, x, pick === i));
-      els.push(txt(v(x, -1.0 - (i % 2) * 0.9), m.name, "s", { bold: true, tone: pick === i ? "a" : "ink", pick: i }));
+      els.push(txt(v(x, -1.0 - (i % 2) * 1.1), m.name, "s", { bold: true, tone: pick === i ? "a" : "ink", pick: i }));
     });
-    els.push(txt(v(-1.2, 1.2), " ", "c"), txt(v(4 * 3.1 + 1.2, -2.8), " ", "c"));
+    els.push(txt(v(-1.2, 1.2), " ", "c"), txt(v(4 * 3.1 + 1.2, -3.0), " ", "c"));
     const sel = pick >= 0 ? MODELS[pick] : undefined;
     return { els, readout: [sel ? `${sel.name}: ${sel.claim}` : "Bir modelin adına tıkla ya da aşağıdan seç.", "Sıra: Dalton → Thomson → Rutherford → Bohr → modern. Her yeni model yeni bir kanıtı açıkladı."] };
   },

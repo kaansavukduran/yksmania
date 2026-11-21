@@ -19,6 +19,12 @@ import {
 } from "./forge014Physics";
 import "./forge014Physics.css";
 import { ChoiceSelect } from "../components/ChoiceSelect";
+import {
+  placeLabels,
+  textWidth,
+  type Anchor,
+  type Seg,
+} from "./sectionFigures/labelPlacement";
 const fmt = (v: number, digits = 2) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: digits }).format(
     Math.abs(v) < 1e-8 ? 0 : v,
@@ -170,6 +176,105 @@ function RayImage({
     : device === "mirror"
       ? [-focal]
       : [-focal, focal];
+  // Labels avoid every ray, arrow and tick: each tries a few spots around
+  // its mark and takes the first one clear of strokes and other labels
+  // (a soft plate only when no spot is free).
+  const segs: Seg[] = [[25, 170, 675, 170], [350, 25, 350, 315]];
+  const line = (a: Point, b: Point) =>
+    segs.push([px(a.x), py(a.y), px(b.x), py(b.y)]);
+  line(rays.object, rays.parallelHit);
+  line(rays.object, rays.centralHit);
+  line(parallel.start, end(parallel));
+  line(central.start, end(central));
+  if (image && rays.image.kind === "virtual") {
+    line(rays.parallelHit, image);
+    line(rays.centralHit, image);
+  }
+  segs.push([px(-u), 170, px(-u), py(1)]);
+  if (image) segs.push([px(image.x), 170, px(image.x), py(image.y)]);
+  for (const x of focusPositions) segs.push([px(x), 164, px(x), 176]);
+  const around = (x: number, y: number, up: boolean, gap = 14): [number, number, Anchor][] => {
+    const near: [number, number, Anchor][] = [
+      [x, up ? y - gap : y + gap + 4, "middle"],
+      [x + 9, up ? y - gap : y + gap + 4, "start"],
+      [x - 9, up ? y - gap : y + gap + 4, "end"],
+      [x + 12, y + 5, "start"],
+      [x - 12, y + 5, "end"],
+    ];
+    const away = (k: number): [number, number, Anchor][] =>
+      near.map(([a, b, c], i) => [
+        i < 3 ? a : a + (c === "start" ? k : -k),
+        i < 3 ? b + (up ? -k : k) : b,
+        c,
+      ]);
+    const flip: [number, number, Anchor][] = near
+      .slice(0, 3)
+      .map(([a, b, c]) => [a, up ? b + 2 * gap + 4 : b - 2 * gap - 4, c]);
+    return [...near, ...away(12), ...flip, ...away(24), ...away(36)];
+  };
+  const reqs = focusPositions.map((x, j) => ({
+    key: j,
+    text: "F",
+    spots: [
+      ...around(px(x), 176, false),
+      ...around(px(x), 164, true),
+    ],
+  }));
+  reqs.push({
+    key: focusPositions.length,
+    text: "Cisim",
+    spots: around(px(-u), py(1), true),
+  });
+  if (image) {
+    const tip = py(image.y);
+    const spots =
+      rays.image.kind === "virtual"
+        ? [
+            ...around(px(image.x), 205, false, 0),
+            ...around(px(image.x), tip, image.y > 0),
+          ]
+        : around(px(image.x), tip, image.y > 0);
+    reqs.push({ key: focusPositions.length + 1, text: "Görüntü", spots });
+  }
+  const plan = placeLabels(
+    reqs.map((r) => ({
+      key: r.key,
+      text: r.text,
+      fs: 15,
+      weight: 500,
+      spots: r.spots.map(([x, y, anchor]) => ({ x, y, anchor, dy: 0.35 })),
+    })),
+    segs,
+    [],
+    700,
+    340,
+  );
+  const placed = (k: number, label: string, data: Record<string, string> = {}) => {
+    const at = plan.get(k);
+    if (!at || at.hidden) return null;
+    const { x, y, anchor } = at.spot;
+    const text = (
+      <text x={x} y={y} dy="0.35em" textAnchor={anchor} {...data}>
+        {label}
+      </text>
+    );
+    if (!at.plate) return text;
+    const w = textWidth(label, 15, 500);
+    const x0 = anchor === "end" ? x - w : anchor === "middle" ? x - w / 2 : x;
+    return (
+      <g data-label-plate="">
+        <rect
+          x={x0 - 5}
+          y={y - 11}
+          width={w + 10}
+          height={22}
+          rx={4}
+          className="physics014-label-plate"
+        />
+        {text}
+      </g>
+    );
+  };
   return (
     <svg
       viewBox="0 0 700 340"
@@ -236,9 +341,7 @@ function RayImage({
             y2="176"
             className="physics014-axis"
           />
-          <text x={px(x)} y="195" textAnchor="middle">
-            F
-          </text>
+          {placed(j, "F")}
         </g>
       ))}
       <path
@@ -284,9 +387,7 @@ function RayImage({
         d={`M${px(-u)} 170V${py(1)}m-6 10 6-10 6 10`}
         className="physics014-object-arrow"
       />
-      <text data-object-caption x={px(-u)} y={py(1) - 12} textAnchor="middle">
-        Cisim
-      </text>
+      {placed(focusPositions.length, "Cisim", { "data-object-caption": "" })}
       {image && (
         <>
           <path
@@ -300,20 +401,9 @@ function RayImage({
                 : "physics014-image-arrow"
             }
           />
-          {/* A real inverted image: the rays leave its tip toward the lower
-              left, so the caption sits to the lower right, clear of them. */}
-          <text
-            data-image-caption
-            x={rays.image.kind === "real" && image.y < 0 ? px(image.x) + 10 : px(image.x)}
-            y={
-              rays.image.kind === "virtual"
-                ? 221
-                : py(image.y) + (image.y > 0 ? -12 : 22)
-            }
-            textAnchor={rays.image.kind === "real" && image.y < 0 ? "start" : "middle"}
-          >
-            Görüntü
-          </text>
+          {placed(focusPositions.length + 1, "Görüntü", {
+            "data-image-caption": "",
+          })}
         </>
       )}
     </svg>

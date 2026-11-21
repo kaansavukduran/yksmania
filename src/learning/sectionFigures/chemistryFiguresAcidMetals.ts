@@ -57,13 +57,13 @@ const electrons: FigureDef = {
   draw: (_v, _s, pick = -1) => {
     const p = pick >= 0 ? pick : 2, hiL = p !== 1, hiR = p !== 0;
     const els: El[] = [
-      ball(v(0, 0), 0.4, hiL ? "c" : "muted"), txt(v(0, 0), "Mg", "c", { small: true, bold: true }),
+      ball(v(0, 0), 0.4, hiL ? "c" : "muted", "Mg"),
       vec(v(0.55, 0), v(1.3, 0), { tone: hiL ? "a" : "muted" }),
-      ball(v(1.8, 0), 0.36, hiL ? "c" : "muted"), txt(v(1.8, 0), "Mg²⁺", "c", { small: true, bold: true }),
+      ball(v(1.8, 0), 0.42, hiL ? "c" : "muted", "Mg²⁺"),
     ];
     [0.35, -0.35].forEach((dy) => els.push(ball(v(2.7, dy), 0.1, "a"), txt(v(2.85, dy), "e⁻", "e", { small: true })));
     els.push(vec(v(3.3, 0), v(4.1, 0), { tone: "a", dash: true }));
-    [0.4, -0.4].forEach((dy) => els.push(ball(v(4.6, dy), 0.18, hiR ? "warn" : "muted"), txt(v(4.6, dy), "H⁺", "c", { small: true })));
+    [0.4, -0.4].forEach((dy) => els.push(ball(v(4.6, dy), 0.25, hiR ? "warn" : "muted", "H⁺")));
     els.push(vec(v(5.0, 0), v(5.7, 0), { tone: hiR ? "a" : "muted" }), ball(v(6.05, 0.12), 0.2, hiR ? "b" : "muted"), ball(v(6.35, -0.12), 0.2, hiR ? "b" : "muted"), txt(v(6.2, -0.6), "H₂", "c", { small: true, bold: true }));
     els.push(txt(v(3.1, 1.0), HALVES[p].title, "c", { small: true, bold: true, tone: "a" }));
     HALVES.forEach((h, i) => els.push(txt(v(i * 2.4, -1.4), h.label, "e", { small: true, bold: pick === i, tone: pick === i ? "a" : "ink", pick: i })));
@@ -133,8 +133,8 @@ const acidName: FigureDef = {
     const a = ACIDS[pick >= 0 ? pick : 1], n = 0.15 * a.ratio, k = 16;
     const els: El[] = [txt(v(0, 0.9), a.eq, "e", { small: true, bold: true })];
     els.push(txt(v(-0.2, 0.2), a.gas === "—" ? "gaz" : a.gas, "w", { small: true, bold: true }), rect(0, Math.max(n * k, 0.001), 0, 0.4, "b"), txt(v(n * k + 0.15, 0.2), a.gas === "—" ? "0 (tepkime yok)" : `${f(n, 2)} mol (0,15 mol metal)`, "e", { small: true }));
-    ACIDS.forEach((aa, i) => els.push(txt(v(0, -0.6 - i * 0.55), aa.label, "e", { small: true, bold: pick === i, tone: pick === i ? "a" : "ink", pick: i })));
-    els.push(txt(v(-1.0, 1.3), " ", "c"), txt(v(7.4, -3.1), " ", "c"));
+    ACIDS.forEach((aa, i) => els.push(txt(v(0, -0.65 - i * 0.68), aa.label, "e", { small: true, bold: pick === i, tone: pick === i ? "a" : "ink", pick: i })));
+    els.push(txt(v(-1.0, 1.3), " ", "c"), txt(v(7.4, -3.75), " ", "c"));
     return { els, readout: [a.note, "Gazın formülü asit, metal ve koşula bağlıdır; verilen denklemin katsayısını kullan."] };
   },
 };

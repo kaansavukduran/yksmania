@@ -30,8 +30,8 @@ const ratioBars: FigureDef = {
       const y = 0.5 - i * 0.8, q = n / nu, lim = Math.abs(q - mn) < 1e-9;
       els.push(txt(v(-0.2, y), s, "w", { small: true, bold: true }), rect(0, q * k, y - 0.22, y + 0.22, lim ? "warn" : "b"), txt(v(q * k + 0.15, y), `${f(n)} ÷ ${nu} = ${f(q, 3)}${lim ? " (biter)" : ""}`, "e", { small: true }));
     });
-    CASES.forEach((cc, i) => els.push(txt(v((i % 2) * 3.4, -1.3 - Math.floor(i / 2) * 0.5), cc.label, "e", { small: true, bold: pick === i, tone: pick === i ? "a" : "ink", pick: i })));
-    els.push(txt(v(-1.4, 1.7), " ", "c"), txt(v(7.2, -2.0), " ", "c"));
+    CASES.forEach((cc, i) => els.push(txt(v((i % 2) * 3.4, -1.3 - Math.floor(i / 2) * 0.64), cc.label, "e", { small: true, bold: pick === i, tone: pick === i ? "a" : "ink", pick: i })));
+    els.push(txt(v(-1.4, 1.7), " ", "c"), txt(v(7.2, -2.2), " ", "c"));
     return { els, readout: [c.note, "ξ = en küçük oran; ürün = ürün katsayısı × ξ."] };
   },
 };

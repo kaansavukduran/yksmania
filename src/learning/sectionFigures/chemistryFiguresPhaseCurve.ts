@@ -73,7 +73,7 @@ const plasma: FigureDef = {
   param: { label: "2+ iyon", min: 0, max: 12, step: 1, init: 6, unit: "" },
   draw: (nv) => {
     const n = Math.round(nv), e = 2 * n, els: El[] = [rect(0, 6, 0, 3, "muted", false)];
-    for (let i = 0; i < n; i++) els.push(ball(v(0.5 + (i % 6) * 1.0, 2.5 - Math.floor(i / 6) * 0.9), 0.2, "warn"), txt(v(0.5 + (i % 6) * 1.0, 2.5 - Math.floor(i / 6) * 0.9), "2+", "c", { small: true, bold: true }));
+    for (let i = 0; i < n; i++) els.push(ball(v(0.5 + (i % 6) * 1.0, 2.5 - Math.floor(i / 6) * 0.9), 0.3, "warn", "2+"));
     for (let i = 0; i < e; i++) els.push(ball(v(0.3 + (i % 12) * 0.48, 0.75 - Math.floor(i / 12) * 0.4), 0.07, "b"));
     [[1.0, 1.12], [3.0, 1.12], [5.0, 1.12]].forEach(([x, y]) => els.push(ball(v(x, y), 0.15, "muted")));
     els.push(txt(v(3, -0.4), `+${2 * n} iyon yükü, −${e} elektron yükü → toplam 0`, "c", { small: true, bold: true, tone: "a" }));

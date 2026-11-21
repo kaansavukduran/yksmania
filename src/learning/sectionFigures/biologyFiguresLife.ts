@@ -59,8 +59,8 @@ const cells: FigureDef = {
     const lead = (from: V, to: V, s: string, on: boolean) => els.push(seg(from, to, { tone: "muted", thin: true }), txt(to, s, "n", { tone: on ? "ink" : "muted", small: true }));
     lead(v(-3.5, 0.3), v(-4.5, 2.0), "DNA (sitoplazmada)", on0);
     lead(v(-1.7, 0.45), v(-1.1, 2.0), "ribozom", on0);
-    lead(v(2.6, 0.6), v(2.2, 2.0), "çekirdek zarı", on1);
-    lead(v(4.0, 0.7), v(4.4, 2.0), "ribozom", on1);
+    lead(v(2.6, 0.6), v(1.9, 2.0), "çekirdek zarı", on1);
+    lead(v(4.0, 0.7), v(4.7, 2.0), "ribozom", on1);
     els.push(txt(v(-5.4, 2.6), " ", "c"), txt(v(5.4, -2.3), " ", "c"));
     const rows: [string, string][] = [
       ["Prokaryot: hücre duvarı ve zar; DNA sitoplazmada (turuncu halka); çekirdek zarı ve zarlı organel yok; ribozom (noktalar) var.", "“Organeli yok” ezberi yanlış: zarsız ribozom vardır."],
@@ -85,7 +85,7 @@ const nutrition: FigureDef = {
       const x = col * W;
       const y = -row * H;
       els.push(poly([v(x, y), v(x + W, y), v(x + W, y - H), v(x, y - H)], { tone: on ? tone : "muted", fill: on ? tone : undefined, thin: !on, bold: on }));
-      els.push(txt(v(x + W / 2, y - 0.45), title, "c", { tone: on ? tone : "muted", small: true, bold: true }), txt(v(x + W / 2, y - 0.95), ex, "c", { tone: on ? "ink" : "muted", small: true }));
+      els.push(txt(v(x + W / 2, y - 0.4), title, "c", { tone: on ? tone : "muted", small: true, bold: true }), txt(v(x + W / 2, y - 1.02), ex, "c", { tone: on ? "ink" : "muted", small: true }));
     };
     cell(0, 0, "fotoototrof", "bitki, alg", step === 0, "c");
     cell(1, 0, "kemoototrof", "nitrifikasyon bakterisi", step === 1, "a");

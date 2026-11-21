@@ -31,7 +31,7 @@ const milestones: FigureDef = {
   draw: (_v, _s, pick = -1) => {
     const els: El[] = [];
     const X = (y: number) => (y - A0) * K;
-    const ROW = 0.7;
+    const ROW = 0.86;
     const top = (EVENTS.length - 1) * ROW;
     els.push(seg(v(X(A0), -0.5), v(X(A1), -0.5), { tone: "muted" }));
     for (const y of [300, 600, 900, 1200, 1500]) els.push(seg(v(X(y), -0.6), v(X(y), -0.4), { tone: "muted" }), txt(v(X(y), -0.6), String(y), "s", { small: true, tone: "muted" }));

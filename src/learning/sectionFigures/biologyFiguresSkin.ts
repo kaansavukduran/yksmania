@@ -86,14 +86,14 @@ const receptors: FigureDef = {
   draw: (_v, _s, pick = -1) => {
     const els: El[] = [];
     const W = 4.6;
-    const H = 1.4;
+    const H = 1.65;
     RECEPTORS.forEach((r, i) => {
       const x = (i % 2) * (W + 0.3);
       const y = (2 - Math.floor(i / 2)) * (H + 0.3);
       const on = pick === i;
       const tone: Tone = on ? "a" : i < 4 ? "b" : "c";
       els.push(poly([v(x, y), v(x + W, y), v(x + W, y + H), v(x, y + H)], { tone, fill: tone, thin: !on }));
-      els.push(txt(v(x + W / 2, y + H * 0.64), r.name, "c", { bold: true, pick: i }), txt(v(x + W / 2, y + H * 0.26), r.tag, "c", { small: true, tone: on ? "ink" : "muted" }));
+      els.push(txt(v(x + W / 2, y + H * 0.67), r.name, "c", { bold: true, pick: i }), txt(v(x + W / 2, y + H * 0.24), r.tag, "c", { small: true, tone: on ? "ink" : "muted" }));
     });
     els.push(txt(v(-0.2, 3 * (H + 0.3) + 0.1), " ", "c"), txt(v(2 * (W + 0.3), -0.3), " ", "c"));
     const sel = pick >= 0 ? RECEPTORS[pick] : undefined;

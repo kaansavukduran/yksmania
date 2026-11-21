@@ -47,9 +47,10 @@ const sinFamilies: FigureDef = {
         [390, "b"],
         [510, "c"],
       ] as [number, Tone][])
-        els.push(ball(v(X(d), Y(0.5)), 0.09, t), seg(v(X(d), Y(0.5)), v(X(d), -1.45), { tone: t, dash: true, thin: true }), txt(v(X(d), -1.5), `${d}°`, "s", { tone: t, small: true }));
+        // The 150° family drops one row lower so neighbouring angle names never touch.
+        els.push(ball(v(X(d), Y(0.5)), 0.09, t), seg(v(X(d), Y(0.5)), v(X(d), d % 360 === 150 ? -2.05 : -1.45), { tone: t, dash: true, thin: true }), txt(v(X(d), d % 360 === 150 ? -2.1 : -1.5), `${d}°`, "s", { tone: t, small: true }));
     }
-    els.push(txt(v(-5.4, 2.2), " ", "c"), txt(v(7.4, -2.2), " ", "c"));
+    els.push(txt(v(-5.4, 2.2), " ", "c"), txt(v(7.4, -2.8), " ", "c"));
     const rows: [string, string][] = [
       ["sin x, birim çemberdeki noktanın y koordinatıdır. y = 1/2 olan ilk açı 30°.", "Tek bir kök bulmak çözüm kümesini bulmak değildir."],
       ["Sinüs ikinci bölgede de pozitif: 180° − 30° = 150°. Aileler: 30° + k·360° ve 150° + k·360°.", "Kosinüste aileler x = ±α + k·360°; tanjantta tur 180°'dir."],

@@ -396,3 +396,10 @@
   stroke-width: 5px;
   stroke-linejoin: round;
 }
+
+/* A ray label that has no free spot sits on a soft plate in the panel colour. */
+.physics014-label-plate {
+  fill: var(--surface);
+  fill-opacity: 0.94;
+  stroke: none;
+}

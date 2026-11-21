@@ -512,7 +512,7 @@ const su: Record<string, FigureDef> = {
           txt(v(0, 4.4), "normal", "n", { small: true, tone: "muted" }),
           vec(inP, o, { tone: "a", bold: true }),
           vec(o, outP, { tone: "c", bold: true }),
-          ...(i > 0 ? [ang(o, v(0, 1), inP, "i", { tone: "a", r: 44 }), ang(o, outP, v(0, 1), "r", { tone: "c", r: 44 })] : []),
+          ...(i > 0 ? [ang(o, v(0, 1), inP, "i", { tone: "a", r: 44 }), ang(o, outP, v(0, 1), "r", { tone: "c", r: 64 })] : []),
           ...(i > 0 && i < 75 ? [ang(o, v(-1, 0), inP, "", { tone: "warn", r: 26 })] : []),
         ],
         readout: [`i = r = ${i}°`, `Engel ile ışın arası (turuncu yay) = 90° − ${i}° = ${90 - i}°`],

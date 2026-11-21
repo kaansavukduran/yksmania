@@ -595,8 +595,8 @@ const cember: Record<string, FigureDef> = {
           ...axes(-6, 2, -0.5, 8, 2),
           circle(M, 3, { tone: "a" }),
           seg(M, add(M, v(3, 0)), { tone: "b" }),
-          dim(M, add(M, v(3, 0)), "r = 3", add(M, v(1.5, 2)), "b"),
-          pt(M, "M(−2; 4)", "n"),
+          dim(M, add(M, v(3, 0)), "r = 3", add(M, v(1.5, -2)), "b"),
+          pt(M, "M(−2; 4)", "nw"),
         ],
       };
     },

@@ -96,7 +96,7 @@ const trend: FigureDef = {
     "Periyodik yön bir başlangıç tahminidir: aynı periyotta sağa doğru, aynı grupta yukarı doğru İE₁ genel olarak artar. 2. ve 3. periyotta renkli hücreler (2A ve 5A) dolu s / yarı dolu p kararlılığı nedeniyle sağ komşusundan yüksektir.",
   alt: "Küçük periyodik tablo H’den Ca’ya; sağa ve yukarı oklar İE artışını gösteriyor; 2A ve 5A sütunları renkli.",
   draw: () => {
-    const D = 0.72;
+    const D = 0.78;
     const els: El[] = [];
     for (const t of TABLE) {
       const x = t.c * D, y = -t.r * D;

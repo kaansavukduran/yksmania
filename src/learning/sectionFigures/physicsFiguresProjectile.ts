@@ -112,7 +112,7 @@ const target: FigureDef = {
     const track: V[] = [];
     for (let s2 = 0; s2 <= 2.0001; s2 += 0.1) track.push(v((x0 - s2) * K, (20 - (G * s2 * s2) / 2) * K));
     els.push(poly(track, { open: true, dash: true, thin: true, tone: "b" }));
-    els.push(ball(v(xo * K, yo * K), 0.14, "b"), txt(v(xo * K + 0.3, yo * K + 0.3), "nesne ← 1 m/s", "e", { small: true, tone: "b" }));
+    els.push(ball(v(xo * K, yo * K), 0.14, "b"), txt(v(xo * K + 0.3, yo * K + 1.45), "nesne ← 1 m/s", "e", { small: true, tone: "b" }));
     els.push(poly([v(xc * K - 0.5, 0.05), v(xc * K + 0.5, 0.05), v(xc * K + 0.5, 0.35), v(xc * K - 0.5, 0.35)], { fill: "c", tone: "c" }), txt(v(xc * K, 0.65), "otomobil → 20 m/s", "c", { small: true, tone: "c" }));
     const gap = Math.max(xo - xc, 0);
     els.push(seg(v(xc * K, -0.35), v(xo * K, -0.35), { tone: "a", bold: true }), txt(v(((xc + xo) / 2) * K, -0.7), `aralık ${f1(gap)} m`, "c", { small: true, bold: true, tone: "a" }));

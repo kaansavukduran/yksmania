@@ -3,6 +3,7 @@ import { useApp } from "../store";
 import { txt as text } from "../domain/model";
 import { useExploration } from "./useExploration";
 import { useVisualCopy } from "./copy";
+import { textWidth } from "./sectionFigures/labelPlacement";
 const parts = [
   {
     id: "nucleus",
@@ -203,6 +204,48 @@ export default function CellExplorer() {
     const next = Math.max(0, Math.min(4, n));
     set({ step: next, selected: route[next], route: true });
   };
+  // Name labels: left-half names go to the left margin, the rest to the
+  // right; each side is spread evenly so no two names touch. A long name
+  // takes two lines, and the margins follow the widest name (bold when
+  // selected) so nothing is pressed against the drawing's edge.
+  const LABEL_FS = 19;
+  const labelItems = (() => {
+    const items = available.map((p) => {
+      const an = ANCHOR[p.id];
+      const [x, y] = (s.plant && an.p) || an.a;
+      const name = l(p.name);
+      const cut =
+        name.length > 13
+          ? name.lastIndexOf(" ", Math.ceil(name.length / 2) + 2)
+          : -1;
+      const lines =
+        cut > 0 ? [name.slice(0, cut + 1), name.slice(cut + 1)] : [name];
+      const width =
+        Math.max(...lines.map((t) => textWidth(t.trim(), LABEL_FS, 700))) *
+        1.04;
+      return { id: p.id, lines, width, x, y, left: x < 300 };
+    });
+    const place = (list: typeof items) => {
+      const sorted = [...list].sort((a, b) => a.y - b.y);
+      const gap = Math.min(52, 380 / Math.max(1, sorted.length));
+      const top = 200 - (gap * (sorted.length - 1)) / 2;
+      return sorted.map((it, k) => ({ ...it, ly: top + k * gap }));
+    };
+    return [
+      ...place(items.filter((i) => i.left)),
+      ...place(items.filter((i) => !i.left)),
+    ];
+  })();
+  const margin = (left: boolean) =>
+    Math.ceil(
+      Math.max(
+        0,
+        ...labelItems.filter((i) => i.left === left).map((i) => i.width),
+      ) + 30,
+    );
+  const viewBox = s.labels
+    ? `${-margin(true)} 0 ${600 + margin(true) + margin(false)} 400`
+    : "0 0 600 400";
   return (
     <section className="visual-lab cell-lab" aria-labelledby={`${uid}-title`}>
       <div className="lab-heading">
@@ -249,7 +292,7 @@ export default function CellExplorer() {
       </button>
       <div className="cell-workbench">
         <svg
-          viewBox={s.labels ? "-175 0 1000 400" : "0 0 600 400"}
+          viewBox={viewBox}
           role="group"
           aria-label={v("cellDiagram")}
           className="cell-figure"
@@ -515,34 +558,43 @@ export default function CellExplorer() {
             />
           )}
           {s.labels &&
-            (() => {
-              // Left half names go to the left margin, the rest to the right;
-              // each side is spread evenly so no two names touch.
-              const items = available.map((p) => {
-                const an = ANCHOR[p.id];
-                const [x, y] = (s.plant && an.p) || an.a;
-                return { id: p.id, name: l(p.name), x, y, left: x < 300 };
-              });
-              const place = (list: typeof items) => {
-                const sorted = [...list].sort((a, b) => a.y - b.y);
-                const gap = Math.min(52, 380 / Math.max(1, sorted.length));
-                const top = 200 - (gap * (sorted.length - 1)) / 2;
-                return sorted.map((it, k) => ({ ...it, ly: top + k * gap }));
-              };
-              return [...place(items.filter((i) => i.left)), ...place(items.filter((i) => !i.left))].map((it) => {
-                const lx = it.left ? -12 : 612;
-                const on = it.id === part.id;
-                return (
-                  <g key={it.id} className={`cell-label${on ? " is-on" : ""}`} pointerEvents="none">
-                    <polyline points={`${it.x},${it.y} ${it.left ? lx + 8 : lx - 8},${it.ly} ${lx},${it.ly}`} className="cell-label-line" />
-                    <circle cx={it.x} cy={it.y} r="3.5" className="cell-label-dot" />
-                    <text x={it.left ? lx - 4 : lx + 4} y={it.ly + 5} textAnchor={it.left ? "end" : "start"} className="cell-label-text">
-                      {it.name}
-                    </text>
-                  </g>
-                );
-              });
-            })()}
+            labelItems.map((it) => {
+              const lx = it.left ? -12 : 612;
+              const on = it.id === part.id;
+              const tx = it.left ? lx - 4 : lx + 4;
+              const first =
+                it.ly + 5 - ((it.lines.length - 1) * 1.1 * LABEL_FS) / 2;
+              return (
+                <g
+                  key={it.id}
+                  className={`cell-label${on ? " is-on" : ""}`}
+                  pointerEvents="none"
+                >
+                  <polyline
+                    points={`${it.x},${it.y} ${it.left ? lx + 8 : lx - 8},${it.ly} ${lx},${it.ly}`}
+                    className="cell-label-line"
+                  />
+                  <circle
+                    cx={it.x}
+                    cy={it.y}
+                    r="3.5"
+                    className="cell-label-dot"
+                  />
+                  <text
+                    x={tx}
+                    y={first}
+                    textAnchor={it.left ? "end" : "start"}
+                    className="cell-label-text"
+                  >
+                    {it.lines.map((t, k) => (
+                      <tspan key={k} x={tx} dy={k ? "1.1em" : undefined}>
+                        {t}
+                      </tspan>
+                    ))}
+                  </text>
+                </g>
+              );
+            })}
         </svg>
         <div className="organelle-info" aria-live="polite">
           <span className="lab-kicker">{l(part.structure)}</span>

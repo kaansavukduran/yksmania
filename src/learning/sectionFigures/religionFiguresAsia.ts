@@ -27,9 +27,9 @@ const four: FigureDef = {
     const els: El[] = [txt(v(-0.3, 0.55), "Hint", "w", { small: true, tone: "muted" }), txt(v(-0.3, -1.75), "Çin", "w", { small: true, tone: "muted" })];
     FOUR.forEach((f, i) => {
       const sel = pick === i;
-      els.push(rect(f.x - 0.1, f.x + 4.3, f.y - 1.4, f.y + 0.38, sel ? "a" : i < 2 ? "c" : "b"));
+      els.push(rect(f.x - 0.1, f.x + 4.3, f.y - 1.62, f.y + 0.38, sel ? "a" : i < 2 ? "c" : "b"));
       els.push(txt(v(f.x + 0.1, f.y), f.s, "e", { small: true, bold: true, tone: sel ? "a" : "ink", pick: i }));
-      f.line.split(" · ").forEach((w, k) => els.push(txt(v(f.x + 0.2 + (k % 2) * 2.1, f.y - 0.5 - Math.floor(k / 2) * 0.52), w, "e", { small: true, tone: "muted" })));
+      f.line.split(" · ").forEach((w, k) => els.push(txt(v(f.x + 0.2 + (k % 2) * 2.1, f.y - 0.5 - Math.floor(k / 2) * 0.68), w, "e", { small: true, tone: "muted" })));
     });
     els.push(txt(v(-1.0, 0.8), " ", "c"), txt(v(9.1, -3.9), " ", "c"));
     return { els, readout: [pick >= 0 ? FOUR[pick].detail[0] : "Bir geleneğe tıkla ya da aşağıdan seç.", "Tek sözcük değil, iki kanıt: kişi/kaynak + ayırıcı kavram."] };

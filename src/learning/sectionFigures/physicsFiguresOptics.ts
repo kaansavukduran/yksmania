@@ -44,7 +44,7 @@ const arrow = (x: number, h: number, tone: "ink" | "a" | "b" | "c" = "ink", dash
  * optical element sits at x = 0, the real object at x = −u with height h.
  * f > 0 converging (concave / convex lens), f < 0 diverging.
  */
-function rayDiagram(kind: "mirror" | "lens", f: number, u: number, h = 2) {
+function rayDiagram(kind: "mirror" | "lens", f: number, u: number, h = 3) {
   const side = kind === "mirror" ? -1 : 1;
   const span = Math.max(u, 2 * Math.abs(f)) + 2;
   const tip = v(-u, h);
@@ -177,7 +177,7 @@ const duzlemAyna: Record<string, FigureDef> = {
           ...ray(A, P, "a"),
           ...ray(P, B, "b"),
           ang(P, A, v(0, 1), "i", { r: 52, tone: "a" }),
-          ang(P, v(0, 1), B, "r", { r: 52, tone: "b" }),
+          ang(P, v(0, 1), B, "r", { r: 74, tone: "b" }),
           txt(v(0, 3.2), "normal", "n", { small: true, tone: "muted" }),
         ],
         readout: [`i = r = ${i}° · yüzeyle açı ${90 - i}°`],
@@ -558,7 +558,7 @@ const kirilma: Record<string, FigureDef> = {
       const { els } = refraction(40, 1, 1.5);
       const P = v(0, 0);
       const refl = add(P, mul(pol(1, 50), 3));
-      return { els: [...els, ...ray(P, refl, "c"), ang(P, v(0, 1), refl, "40°", { r: 60, tone: "c" })] };
+      return { els: [...els, ...ray(P, refl, "c"), ang(P, v(0, 1), refl, "40°", { r: 88, tone: "c" })] };
     },
   },
   "Sınır açısının varlık koşulunu önce sor": {

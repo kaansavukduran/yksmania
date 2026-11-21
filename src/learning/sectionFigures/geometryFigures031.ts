@@ -449,7 +449,7 @@ const ucgendeAcilar: Record<string, FigureDef> = {
           ang(C, I, B, undefined, { tone: "c", r: 40 }),
           ang(C, A, I, undefined, { tone: "c", r: 46 }),
           ang(I, C, B, `${fmt(bic)}°`, { tone: "a", r: 26 }),
-          ang(A, B, C, `${a}°`, { tone: "muted", r: 30 }),
+          ang(A, B, C, `${a}°`, { tone: "muted", r: 22 }),
           pt(A, "A", "n"),
           pt(B, "B", "sw"),
           pt(C, "C", "se"),

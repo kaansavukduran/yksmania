@@ -59,8 +59,8 @@ const sign: FigureDef = {
     els.push(seg(v(1.6, 0), v(4.8, 0), { dash: true, thin: true, tone: "muted" }));
     els.push(vec(v(4.6, 0), v(4.6, y1), { tone: S.e < 0 ? "b" : "warn", bold: true }));
     els.push(txt(v(4.8, y1 / 2), S.e < 0 ? `${-S.e} kJ/mol salınır` : `${S.e} kJ/mol alınır`, "e", { small: true, bold: true, tone: S.e < 0 ? "b" : "warn" }));
-    SIGN.forEach((s, i) => els.push(txt(v(-0.4, -3.3 - i * 0.55), s.label, "e", { small: true, bold: pick === i, tone: pick === i ? "a" : "ink", pick: i })));
-    els.push(txt(v(-0.6, 0.8), " ", "c"), txt(v(7.6, -4.6), " ", "c"));
+    SIGN.forEach((s, i) => els.push(txt(v(-0.4, -3.7 - i * 0.62), s.label, "e", { small: true, bold: pick === i, tone: pick === i ? "a" : "ink", pick: i })));
+    els.push(txt(v(-0.6, 0.8), " ", "c"), txt(v(7.6, -5.2), " ", "c"));
     return { els, readout: [`ΔE = ${S.e > 0 ? "+" : "−"}${Math.abs(S.e)} kJ/mol: ${S.e < 0 ? `|${S.e}| = ${-S.e} kJ/mol salınır.` : "enerji alınır."}`, "“Daha büyük sayı” ile “daha çok salım” aynı soru değildir."] };
   },
 };

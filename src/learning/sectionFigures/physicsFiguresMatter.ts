@@ -187,9 +187,10 @@ const capillary: FigureDef = {
     }
     els.push(txt(v(-4.2, base), "dış seviye", "w", { tone: "muted", small: true }));
     if (step === 2) {
-      els.push(ball(v(-3.3, 4.8), 0.22, "b", "su"), txt(v(-3.0, 4.8), "su–cam çekimi (adezyon) > su–su çekimi (kohezyon)", "e", { tone: "b", small: true }));
+      // Two lines so the comparison stays inside the drawing on a phone.
+      els.push(ball(v(-3.3, 4.8), 0.22, "b", "su"), txt(v(-3.0, 5.15), "su–cam çekimi (adezyon) >", "e", { tone: "b", small: true }), txt(v(-3.0, 4.38), "su–su çekimi (kohezyon)", "e", { tone: "b", small: true }));
     }
-    els.push(txt(v(-6.4, 5.8), " ", "c"), txt(v(5.4, -0.4), " ", "c"));
+    els.push(txt(v(-7.0, 5.8), " ", "c"), txt(v(5.4, -0.4), " ", "c"));
     const rows: [string, string][] = [
       ["Su camı ıslatır: borularda dış seviyeden yükselir. İnce boruda yükselme en fazla.", "Aynı sıvı, aynı temiz cam ve aynı sıcaklıkta daha dar boru → daha büyük seviye farkı."],
       ["Cıva camı ıslatmaz: borularda dış seviyeden alçalır, yüzeyi tümsektir.", "Kohezyonu adezyondan baskın sıvıda kılcal alçalma görülür."],
