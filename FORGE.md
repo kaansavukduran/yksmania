@@ -1,8 +1,10 @@
 # 0.26.0 masaüstü doğrulaması
 
-23 Kasım 2026, Türkiye saati. 21 Kasım'da `58cc739c1d0a9c90f522c9e86751636d092a2f73` kaynaklı 0.26.0 web sürümü elle başlatılan Pages işiyle yayımlandı. Aynı kaynakta tip, içerik, 4.046 birim testi ve dört tarayıcı grubu geçti. Windows ve Linux paket testlerinde TYT karma denemesinin eski düğme adı zaman aşımına yol açtı. [Web yayını](https://github.com/kaansavukduran/yksmania/actions/runs/44912127598) · [İlk CI](https://github.com/kaansavukduran/yksmania/actions/runs/44912127339)
+23 Kasım 2026, Türkiye saati. 21 Kasım'da `58cc739c1d0a9c90f522c9e86751636d092a2f73` kaynaklı 0.26.0 web sürümü elle başlatılan Pages işiyle yayımlandı. Aynı kaynakta tip, içerik, 4.046 birim testi ve dört gruptaki 1.393 tarayıcı testi geçti. Windows ve Linux paket testlerinde TYT karma denemesinin eski düğme adı zaman aşımına yol açtı. [Web yayını](https://github.com/kaansavukduran/yksmania/actions/runs/44912127598) · [İlk CI](https://github.com/kaansavukduran/yksmania/actions/runs/44912127339)
 
 Masaüstü testi güncel, tam erişilebilir düğme adını kullanır. Gerçek tıklamayı, kayıtlı yanıtı, aynı profilde çevrimdışı yeniden açılışı ve deneme sonucunu sınar. Yerel derleme ve yedi Sınavlar tarayıcı testi geçti. Yayımdaki 341 dosya, aynı kaynakla üretilen alt dizin derlemesiyle HTTPS üzerinden bayt düzeyinde eşleşti.
+
+İlk yerel Linux paket koşusu sınav kontrollerini geçtikten sonra Sorular sayfasına geçişte durdu. Test, önceki ekranda görünür olan iki TYT düğmesine denk geldi. Aynı akışta şimdi Sorular ana başlığının görünmesi bekleniyor ve TYT seçimi ardından yapılıyor. İlk düzeltmenin dal koşusu bu ikinci bulgudan sonra iptal edildi. [İlk dal koşusu](https://github.com/kaansavukduran/yksmania/actions/runs/45080184282)
 
 Kanonik defterin doğrulanan sayımı 8.981 PDF içinde 7 tam öğretim aktarımı, 2 kısmi aktarım ve 8.972 belirsiz kayıttır. Bu tur kaynak işleme kredisi eklemedi.
 

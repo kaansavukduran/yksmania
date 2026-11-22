@@ -1216,6 +1216,9 @@ try {
   const learningBeforeFoundation = foundationLearning(beforeFoundation);
   const openFoundation = async (id, title) => {
     await navigate("Sorular");
+    await expect(
+      page.getByRole("heading", { name: "Sorular", level: 1, exact: true }),
+    ).toBeVisible();
     await page.getByRole("button", { name: "TYT", exact: true }).click();
     await page
       .getByRole("textbox", { name: "Ders veya konu ara", exact: true })
