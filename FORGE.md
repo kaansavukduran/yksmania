@@ -1,3 +1,11 @@
+# 0.26.0 masaüstü doğrulaması
+
+23 Kasım 2026, Türkiye saati. 21 Kasım'da `58cc739c1d0a9c90f522c9e86751636d092a2f73` kaynaklı 0.26.0 web sürümü elle başlatılan Pages işiyle yayımlandı. Aynı kaynakta tip, içerik, 4.046 birim testi ve dört tarayıcı grubu geçti. Windows ve Linux paket testlerinde TYT karma denemesinin eski düğme adı zaman aşımına yol açtı. [Web yayını](https://github.com/kaansavukduran/yksmania/actions/runs/44912127598) · [İlk CI](https://github.com/kaansavukduran/yksmania/actions/runs/44912127339)
+
+Masaüstü testi güncel, tam erişilebilir düğme adını kullanır. Gerçek tıklamayı, kayıtlı yanıtı, aynı profilde çevrimdışı yeniden açılışı ve deneme sonucunu sınar. Yerel derleme ve yedi Sınavlar tarayıcı testi geçti. Yayımdaki 341 dosya, aynı kaynakla üretilen alt dizin derlemesiyle HTTPS üzerinden bayt düzeyinde eşleşti.
+
+Kanonik defterin doğrulanan sayımı 8.981 PDF içinde 7 tam öğretim aktarımı, 2 kısmi aktarım ve 8.972 belirsiz kayıttır. Bu tur kaynak işleme kredisi eklemedi.
+
 # Forge053–057 — adım adım çözüm %100, ÖSYM kalıp haritası, sınav ve hata araçları, mikro ritim
 
 21 Kasım 2026. Forge052'nin üç ajanlı turu (ferahlık, SVG kapısı, şık ve çözüm paneli) ile ardından gelen içerik dalgaları bu bölümde toplanır. Durum etiketleri: **yapıldı** = bu dalda, testleriyle; **bekliyor** = henüz bu dalda değil.

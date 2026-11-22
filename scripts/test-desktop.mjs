@@ -1080,7 +1080,10 @@ try {
   await expect(page.locator(".result-stats")).toContainText("5/5");
   await navigate("Sınavlar");
   await page
-    .getByRole("button", { name: "Başlat: TYT karma denemesi", exact: true })
+    .getByRole("button", {
+      name: "Denemeyi başlat: TYT karma denemesi",
+      exact: true,
+    })
     .click();
   await expect(page.locator(".exam-runner")).toBeVisible();
   await page.locator(".exam-answer").first().click();

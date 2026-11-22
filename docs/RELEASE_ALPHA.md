@@ -1,11 +1,14 @@
 # YKSMania 0.26.0 — web yayını
 
-21 Kasım 2026, Türkiye saati. Sahibin sürekli yayın onayıyla main'e alınıp GitHub Pages'e yayımlandı. Sürüm kuralı: her main + Pages yayınında sürüm bir basamak artar; tarih ve kapsam bu dosyaya ve Ayarlar → Güncelleme notuna yazılır.
+21 Kasım 2026, Türkiye saati. `58cc739c1d0a9c90f522c9e86751636d092a2f73` kaynaklı web sürümü elle başlatılan Pages işiyle yayımlandı. Yayındaki çevrimdışı kontroller aynı işte geçti. [Web yayını ve doğrulama](https://github.com/kaansavukduran/yksmania/actions/runs/44912127598)
+
+Her yeni ürün yayını ana dala alındığında sürüm bir basamak artar. Tarih ve kapsam bu dosyaya ve Ayarlar → Güncelleme notuna yazılır.
 
 - **Öğrenme öncelikli süre:** Ayarlar → Zamanlayıcılar (kapalıyken kum saati, deneme sayacı, hız notları, süre nabzı, soru süreleri gizli). Deneme süre dolsa da kendiliğinden bitmez; yalnız öğrenci bitirince kaydedilir; "Süre tamamlandı" uyarısı yok, sayaç sakin "Ek süre" gösterir.
 - **Bölüm figürleri:** 0.25.0'dan bu yana 525 yeni figür; toplam 331 figürlü ders, 1.355 figür (docs/ILERLEME.md).
 - **Lab etiketleri:** paketli Inter ile her platformda aynı ölçü; dört labda gerçek düzeltme, kalan 0 px temaslar açık borç listesinde.
-- **Doğrulama:** tip denetimi, `npm run check`, ilgili birim ve tarayıcı testleri yerelde geçti; main CI'ı ayrıca koşar. 0.25.0 yayınındaki commit (`97061f2`) için main CI'ının dört tarayıcı parçası yeşildi. Paket sürümleri ve gerçek cihaz kabulü bu yayına dahil değildir.
+- Aynı kaynağın tip, içerik, birim ve dört tarayıcı grubu kontrolü geçti. Windows ve Linux paket testleri, TYT karma denemesinin eski düğme adını beklerken durdu. [İlk doğrulama koşusu](https://github.com/kaansavukduran/yksmania/actions/runs/44912127339)
+- Paket testi güncel `Denemeyi başlat: TYT karma denemesi` düğmesini kullanır. Yanıtın kaydı, çevrimdışı yeniden açılış ve deneme sonucu aynı akışta sınanır. Masaüstü yayınında kaynak commit ve doğrulama koşusu `verified-run.json` ile belgelenir. Android kişisel deneme paketi ayrı Actions işinde üretilir.
 
 ---
 
