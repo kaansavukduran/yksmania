@@ -1,3 +1,13 @@
+# Forge062 · Deneme süresi
+
+23 Kasım 2026. 0.26.1 adayı deneme sonucunda başlangıçtan bitişe geçen süreyi, referans süreyi ve varsa ek süreyi gösterir. Soru süreleri referans bitişinde duran kayıtlarından okunur. Eski bir sonuçta bu sınırdan sonrasına ait süre bilinmiyorsa bir değer gösterilmez.
+
+Zamanlayıcılar kapatıldığında kum saati ve deneme sayacı güncelleme döngüsü başlatmaz. Görünürlük geri geldiğinde açık zamanlayıcılar kaydedilmiş bitiş anına göre devam eder. Deneme her durumda öğrenci bitirene kadar açıktır. Yanıt, işaret, yardım ve hedef tarihleri mevcut kayıt biçimleriyle korunur.
+
+Yerel `check`, derleme ve 13 tarayıcı testi geçti. Tam yerel birim koşusunda 4.046 test geçti ve değişmeyen çözüm rehberi testi 5 saniyede zaman aşımına uğradı. Aynı testi içeren 41 testlik hedefli tekrar geçti. AIONIA v1.7’nin ilgili maddeleri 23 Kasım’da canlı kaynaktan doğrulandı.
+
+Görsel çalışma bundan sonraki turda mevcut Claude dalındaki 56 ders ve 242 figür üzerinden devam eder. Figür sayıları uygulama envanterinden, PDF aktarım sayıları kanonik defterden alınır. Öğretim ve laboratuvar kabulü kendi kanıtını gerektirir.
+
 # 0.26.0 masaüstü doğrulaması
 
 23 Kasım 2026, Türkiye saati. 21 Kasım'da `58cc739c1d0a9c90f522c9e86751636d092a2f73` kaynaklı 0.26.0 web sürümü elle başlatılan Pages işiyle yayımlandı. Aynı kaynakta tip, içerik, 4.046 birim testi ve dört gruptaki 1.393 tarayıcı testi geçti. Windows ve Linux paket testlerinde TYT karma denemesinin eski düğme adı zaman aşımına yol açtı. [Web yayını](https://github.com/kaansavukduran/yksmania/actions/runs/44912127598) · [İlk CI](https://github.com/kaansavukduran/yksmania/actions/runs/44912127339)

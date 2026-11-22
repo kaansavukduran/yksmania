@@ -6,10 +6,14 @@
 
 1. **Hedef:** Tek, yüksek etkili dikey dilim seç. Açık regresyon veya yarım iş varsa önce onu kapat.
 2. **İçerik kalitesi:** Yer tutucu, sahte veri, tekrar eden şablon yok. Sorular ÖSYM biçimlerini kullanır (öncüllü I–II–III, grafik/tablo/deney yorumu, günlük yaşam bağlamı). Her çeldiricinin hangi yanılgıyı hedeflediği yazılır. Sorular özgündür, resmî soru olarak etiketlenmez.
-3. **Laboratuvar standardı:** Yeni laboratuvarlar `src/learning/labs/` altında ortak `InteractiveLabShell` ile; saf SVG/Canvas, çevrimdışı, tembel yüklü. Her birinde Tahmin et → Oynat → Gör görevi, 2–3 sınav senaryosu düğmesi, Sıfırla, klavye ve en az 44×44 px dokunma hedefleri, dört temada okunabilirlik, azaltılmış hareket desteği. Keşif 0 XP.
+3. **Laboratuvar standardı:** Mevcut figür kitaplığını, kayıt listesini ve konuya özgü modelleri kullan. Modelin dayandığı hesabı, tahmin ve gözlem akışını, klavye karşılığını, 44×44 px dokunma hedeflerini ve azaltılmış hareketi denetle. Etkilenen yüzeyleri 320, 375, 430 ve 1280 px ile altı temada sına. Figür varlığı ve öğretici laboratuvar kabulü ayrı kanıt gerektirir. Keşif XP üretmez.
 4. **Dürüst ustalık:** Okuma, süre, keşif, işaretleme ve dosya içe aktarma XP/ustalık üretmez. Yalnız bağımsız doğru çözüm, 3/7/21 hatırlama ve gerçek hata onarımı.
 5. **Doğrulama kapısı:** `npm run check`, `npm test`, `npm run build`, değişen akışların tarayıcı testleri (erişilebilirlik denetimi dahil). Kırık varsa yeni işe geçilmez. Şema değişirse geriye uyumlu dönüşüm ve birim testi; kullanıcı verisi sıfırlanmaz.
 6. **Devir:** `FORGE.md` (eklenen, test sayıları, kalan açık, sıradaki hedef) ve işleme sayacı güncellenir; main'e gönderilir; Pages ve APK kontrol edilir; sonraki tura geçilir.
+
+## Forge062 ve sonraki paket
+
+Önce 0.26.0 masaüstü koşusunun aynı kaynaklı CI, Pages ve Release kapılarını tamamla. Deneme süresi onarımında 0.26.1 adayının eski kayıtları, 55 dakika referansa karşı 62 dakika gerçek süreyi ve kapalı sayaçların döngü kurmamasını doğrula. Ardından bekleyen figürleri kaynak ve deney davranışıyla kabul et. Figürlü ders, doğrulanmış laboratuvar, çözüm paneli ve pedagojik kabul ölçüleri kendi kanıtlarıyla izlenir.
 
 ## Paket sırası
 

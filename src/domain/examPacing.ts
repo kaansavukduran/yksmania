@@ -1,9 +1,9 @@
 import type { ExamDraft, ExamSession } from "./examModel";
 
 /*
- * Soru başına süre, süre nabzı ve 2. tur. Süre yalnız soru değişiminde ve
- * bitişte mutlak zaman damgalarından hesaplanır; ekrandaki canlı değer
- * kaydedilmez. Hiçbiri XP, kupa ya da öğrenme kanıtı üretmez.
+ * Soru süresi referans bitiş anına kadarki soru geçişlerini ölçer. Süre
+ * yalnız soru değişiminde ve bitişte mutlak zaman damgalarından hesaplanır.
+ * Ekrandaki canlı değer kaydedilmez. Hiçbiri XP, kupa veya öğrenme kanıtı üretmez.
  */
 
 type Timing = Pick<ExamDraft, "items" | "startedAt" | "deadline" | "itemMs" | "viewedAt">;

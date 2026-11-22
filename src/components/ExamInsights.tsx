@@ -16,9 +16,15 @@ const fmt = (x: number) => String(Math.round(x * 100) / 100).replace(".", ",");
  * Deneme sonucu: yorgunluk eğrisi, kayıp net otopsisi ve seçilebilir hedefli
  * net pusulası. Hedef seçimi yalnız görünüm durumudur; kaydedilmez.
  */
-export function ExamInsights({ session }: { session: ExamSession }) {
+export function ExamInsights({
+  session,
+  showOrderAccuracy,
+}: {
+  session: ExamSession;
+  showOrderAccuracy: boolean;
+}) {
   const [target, setTarget] = useState<CompassTarget>(DEFAULT_COMPASS_TARGET);
-  const quarters = fatigueCurve(session);
+  const quarters = showOrderAccuracy ? fatigueCurve(session) : null;
   const compass = netCompass(session, target);
   const lost = lostNetTable(session);
   return (
@@ -27,8 +33,9 @@ export function ExamInsights({ session }: { session: ExamSession }) {
       {quarters ? (
         <figure className="fatigue-curve">
           <figcaption>
-            <strong>Yorgunluk eğrisi.</strong> Soru sırasına göre dört çeyrekte doğru oranı. Son çeyrekte düşüş varsa dayanıklılık, ilk
-            çeyrekte düşüş varsa ısınma üzerine çalış.
+            <strong>Soru sırasına göre doğruluk.</strong> Denemenin dört
+            bölümündeki doğru oranını karşılaştır. Düşüşün nedenini anlamak
+            için o bölümdeki yanlış ve boş soruları incele.
           </figcaption>
           <svg viewBox="0 0 320 150" role="img" aria-label={quarters.map((q) => `${q.label} yüzde ${Math.round(q.accuracy * 100)} doğru`).join(", ")}>
             <line x1="20" y1="120" x2="310" y2="120" className="fc-axis" />
@@ -51,9 +58,9 @@ export function ExamInsights({ session }: { session: ExamSession }) {
             {quarters.map((q) => `${q.label}: ${q.correct} doğru, ${q.wrong} yanlış, ${q.blank} boş`).join(" · ")}
           </p>
         </figure>
-      ) : (
-        <p className="small muted">Yorgunluk eğrisi en az 12 soruluk denemelerde çizilir.</p>
-      )}
+      ) : showOrderAccuracy ? (
+        <p className="small muted">Doğruluk grafiği en az 12 soruluk denemelerde çizilir.</p>
+      ) : null}
       <div className="lost-net">
         <h3>Kayıp net otopsisi</h3>
         {lost.rows.length === 0 ? (

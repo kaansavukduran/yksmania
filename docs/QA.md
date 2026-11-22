@@ -1,3 +1,12 @@
+# Forge062 · Deneme süresi ve kapalı sayaçlar
+
+| Bulgu | Önceki davranış | Doğrulama koşulu |
+| --- | --- | --- |
+| F062-EXAM-ELAPSED | 55 dakika referanslı deneme 62 dakika sonra bitirildi. Kayıt 62 dakikaydı ve sonuç başlığı 55 dakika gösterdi. | Sonuç başlığında geçen süre 62 dk, referans 55 dk ve ek süre 7 dk görünür. Cevap, işaret ve yardım çevrimdışı yeniden açılışta aynı kalır. |
+| F062-HIDDEN-TICKS | Ayar kapalıken görünmeyen kum saati 250 ms ve deneme sayacı 500 ms döngüsü başlatabildi. | Ayar kapalıyken iki döngü de kurulmaz. Çevrimdışı taslak korunur. Ayar yeniden açıldığında kum saati kaydedilmiş bitiş anına göre devam eder. |
+
+Soru sürelerinin kaydı referans bitişiyle sınırlıdır. Bu ölçüm, denemenin başlangıcı ile öğrenci tarafından seçilen bitiş arasında geçen süreye eklenmez. Eski sonuçlara bilinmeyen ek süre yazılmaz.
+
 # 0.24.0 adayının yerel regresyonları — 18 Kasım 2026
 
 **Yayımlanmış kabul değildir.** C2 birleşiminin check, normal/alt dizin derlemeleri, 223 dosyada 2.032 birim testi, iki yeni ilk-adım UI testi, yerel alt dizin/native akışları ve gerçek yerel web güncellemesi geçti. Tam uzak E2E/CI ve yayın geri okumaları bekliyor. Önceki 0.23 ve daha eski yayın kanıtları kendi sürümlerine aittir.

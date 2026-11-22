@@ -182,8 +182,11 @@ test("past the absolute deadline the exam stays open while studying another page
     "true",
   );
   const draft = (await stored(page)).examDraft;
+  const referenceMinutes = 55;
+  const extraMinutes = 7;
+  expect(draft.durationSeconds).toBe(referenceMinutes * 60);
   await nav(page, "Konu Anlatımı");
-  await page.clock.fastForward(draft.durationSeconds * 1000 + 3 * 60_000);
+  await page.clock.fastForward((referenceMinutes + extraMinutes - 1) * 60_000);
   // Süre doldu ama deneme kendiliğinden bitmez.
   let state = await stored(page);
   expect(state.examSessions).toEqual([]);
@@ -213,6 +216,11 @@ test("past the absolute deadline the exam stays open while studying another page
   await expect
     .poll(async () => (await stored(page)).examDraft.flagged)
     .toEqual([1]);
+  await page.getByRole("button", { name: "İpucu al", exact: true }).click();
+  await expect(page.locator(".help-content")).toBeVisible();
+  await expect
+    .poll(async () => (await stored(page)).examDraft.helpLevels?.[1] ?? 0)
+    .toBeGreaterThan(0);
   await page.clock.fastForward(60_000);
   expect((await stored(page)).examSessions).toEqual([]);
   await page.getByRole("button", { name: "Denemeyi bitir", exact: true }).click();
@@ -224,22 +232,35 @@ test("past the absolute deadline the exam stays open while studying another page
   state = await stored(page);
   expect(state.examDraft).toBeNull();
   expect(state.examSessions).toHaveLength(1);
-  expect(state.examSessions[0].timedOut).toBe(true);
-  expect(state.examSessions[0].finishedAt).toBeGreaterThan(draft.deadline);
-  expect(state.examSessions[0].answers[1]).toBe(1);
-  await expect(page.locator(".exam-results")).toContainText("Denemeyi bitirdin.");
-  await expect(page.locator(".exam-results")).toContainText(
-    /Resmî süreden \d+ dk fazla çalıştın; öğrenme için sorun değil\./,
-  );
+  const session = state.examSessions[0];
+  expect(session.timedOut).toBe(true);
+  expect(session.finishedAt).toBe(draft.deadline + extraMinutes * 60_000);
+  expect(session.answers[1]).toBe(1);
+  expect(session.flagged).toEqual([1]);
+  expect(session.helpLevels[1]).toBeGreaterThan(0);
+  expect(session.itemMs.slice(0, 2)).toEqual([referenceMinutes * 60_000, 0]);
+  const resultHeading = page.locator(".exam-results .page-heading");
+  await expect(resultHeading).toContainText("Denemeyi bitirdin.");
+  await expect(resultHeading).toContainText("Geçen süre 62 dk");
+  await expect(resultHeading).toContainText("Referans süre 55 dk");
+  await expect(resultHeading).toContainText("Ek süre 7 dk");
   await expect(page.locator(".exam-results")).not.toContainText("Süre tamamlandı");
+  const itemTimes = page.getByRole("region", {
+    name: "En çok zaman alan 5 soru",
+  });
+  await expect(itemTimes).toContainText("Referans süre içinde");
+  await expect(itemTimes).toContainText(/ek süre/i);
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
   });
   await context.setOffline(true);
   await page.reload();
   await expect(page.locator(".exam-score-summary")).toBeVisible();
-  expect((await stored(page)).examSessions).toHaveLength(1);
-  expect((await stored(page)).sessions).toEqual([]);
+  await expect(resultHeading).toContainText("Geçen süre 62 dk");
+  const reloaded = await stored(page);
+  expect(reloaded.examSessions).toEqual([session]);
+  expect(reloaded.sessions).toEqual([]);
+  expect(reloaded.reviews).toEqual([]);
 });
 test("failed exam writes retain the last durable answer and finish draft; touch controls and results fit at 320px with large text", async ({
   page,
@@ -375,10 +396,49 @@ test("after the deadline nothing finishes in the background; a failed finish kee
   expect((await stored(page)).sessions).toEqual([]);
 });
 
-test("timers switched off in settings remove the exam clock, pace, pulse and hourglass while keeping saved timer state", async ({
+test("disabled timers schedule no exam or hourglass ticks and preserve an offline draft and the running hourglass", async ({
   page,
+  context,
 }) => {
+  type TimerProbeWindow = Window & {
+    examTimerProbe: { scheduled: number[]; active: Map<number, number> };
+  };
+  await page.addInitScript(() => {
+    const browser: Window = window;
+    const schedule = browser.setInterval.bind(browser);
+    const stop = browser.clearInterval.bind(browser);
+    const probe = {
+      scheduled: [] as number[],
+      active: new Map<number, number>(),
+    };
+    Object.assign(browser, { examTimerProbe: probe });
+    browser.setInterval = (handler, delay, ...args) => {
+      const id = schedule(handler, delay, ...args);
+      // Other application intervals, such as the current study day, are unrelated.
+      if (delay === 250 || delay === 500) {
+        probe.scheduled.push(delay);
+        probe.active.set(id, delay);
+      }
+      return id;
+    };
+    browser.clearInterval = (id) => {
+      if (id !== undefined) probe.active.delete(id);
+      stop(id);
+    };
+  });
+  const intervals = () =>
+    page.evaluate(() => {
+      const { scheduled, active } = (window as Window as TimerProbeWindow).examTimerProbe;
+      return { scheduled, active: [...active.values()] };
+    });
   await page.goto("/");
+  await nav(page, "Konu Anlatımı");
+  await page
+    .getByRole("button", { name: "Kum saatini ters çevir ve başlat", exact: true })
+    .click();
+  await expect.poll(async () => (await intervals()).active).toContain(250);
+  const timerBefore = (await stored(page)).focusTimer;
+  expect(timerBefore.phase).toBe("running");
   await nav(page, "Ayarlar");
   const toggle = page.getByRole("switch", { name: /Zamanlayıcılar/ });
   await expect(toggle).toBeChecked();
@@ -387,15 +447,47 @@ test("timers switched off in settings remove the exam clock, pace, pulse and hou
   await expect
     .poll(async () => (await stored(page)).settings.timers)
     .toBe(false);
-  const timerBefore = (await stored(page)).focusTimer;
+  await page.evaluate(() => {
+    (window as Window as TimerProbeWindow).examTimerProbe.scheduled.length = 0;
+  });
   await nav(page, "Konu Anlatımı");
-  await expect(page.locator(".page-heading, .topbar").first()).toBeVisible();
+  await expect(
+    page.getByRole("heading", { level: 1, name: "Konu Anlatımı", exact: true }),
+  ).toBeVisible();
   await expect(page.locator(".study-timer")).toHaveCount(0);
   await branch(page);
-  for (const selector of [".exam-time", ".exam-clock", ".exam-pace", ".exam-pulse", ".exam-pace-note"])
+  for (const selector of [
+    ".exam-time",
+    ".exam-clock",
+    ".exam-pace",
+    ".exam-pulse",
+    ".exam-pace-note",
+  ])
     await expect(page.locator(selector)).toHaveCount(0);
   await expect(page.locator(".exam-runner")).not.toContainText("Kalan süre");
   await expect(page.locator(".exam-runner")).not.toContainText("kalan süre");
+  await page.locator(".exam-answer").first().click();
+  await expect(page.locator(".exam-answer").first()).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  expect(await intervals()).toEqual({ scheduled: [], active: [] });
+  const draftBefore = (await stored(page)).examDraft;
+  await page.evaluate(async () => {
+    await navigator.serviceWorker.ready;
+  });
+  await context.setOffline(true);
+  await page.reload();
+  await expect(page.locator(".exam-answer").first()).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  await expect(page.locator(".exam-clock")).toHaveCount(0);
+  const resumed = await stored(page);
+  expect(resumed.examDraft).toEqual(draftBefore);
+  expect(resumed.examSessions).toEqual([]);
+  expect(resumed.settings.timers).toBe(false);
+  expect(await intervals()).toEqual({ scheduled: [], active: [] });
   await page.getByRole("button", { name: "Denemeyi bitir", exact: true }).click();
   await page
     .getByRole("dialog")
@@ -403,7 +495,20 @@ test("timers switched off in settings remove the exam clock, pace, pulse and hou
     .click();
   await expect(page.locator(".exam-results")).toContainText("Denemeyi bitirdin.");
   await expect(page.locator(".exam-slowest")).toHaveCount(0);
-  await expect(page.locator(".exam-results")).not.toContainText("kullanılan süre");
+  await expect(page.locator(".exam-results .page-heading")).not.toContainText(
+    /geçen süre|referans süre|ek süre|kullanılan süre/i,
+  );
+  const completed = await stored(page);
+  expect(completed.focusTimer).toEqual(timerBefore);
+  expect(completed.examSessions).toHaveLength(1);
+  expect(completed.examSessions[0].answers[0]).toBe(0);
+  expect(completed.sessions).toEqual([]);
+  await nav(page, "Ayarlar");
+  await toggle.check();
+  await expect.poll(async () => (await stored(page)).settings.timers).toBe(true);
+  await nav(page, "Konu Anlatımı");
+  await expect(page.locator(".hourglass-state")).toHaveText("Kum akıyor");
+  await expect.poll(async () => (await intervals()).active).toContain(250);
   expect((await stored(page)).focusTimer).toEqual(timerBefore);
 });
 

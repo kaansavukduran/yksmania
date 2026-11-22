@@ -2,6 +2,8 @@
 
 Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış işi gösterir; bir PDF'nin okunması, uygulamadaki içeriğin o PDF'yi tamamen kapsadığı anlamına gelmez.
 
+23 Kasım kanonik defter geri okumasında 8.981 PDF kaydının 7’sinde tam öğretim aktarımı, 2’sinde kısmi aktarım ve 8.972’sinde belirsiz durum vardı. Bu okuma mevcut defteri doğruladı. Canlı Drive envanteri bu tarihte yeniden sayılmadı.
+
 ## Son güncelleme: 19 Kasım 2026 (Türkiye saati)
 
 ### Drive PDF arşivi (Aurelia/YKS)

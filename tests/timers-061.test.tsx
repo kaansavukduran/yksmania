@@ -127,15 +127,30 @@ describe("Forge061 süre dolsa da deneme açık kalır", () => {
     store061.state = state;
     const on = renderToStaticMarkup(<Exams navigate={() => {}} resultId={draft.id} />);
     expect(on).toContain("Denemeyi bitirdin.");
-    expect(on).toContain("Resmî süreden 7 dk fazla çalıştın; öğrenme için sorun değil.");
+    expect(on).toContain("Geçen süre 62 dk 5 sn");
+    expect(on).toContain("Referans süre 55 dk");
+    expect(on).toContain("Ek süre 7 dk 5 sn");
     expect(on).not.toContain("Süre tamamlandı");
     expect(on).toContain("exam-slowest");
     store061.state = withTimers(state, false);
     const off = renderToStaticMarkup(<Exams navigate={() => {}} resultId={draft.id} />);
     expect(off).toContain("Denemeyi bitirdin.");
-    expect(off).not.toContain("Resmî süre");
-    expect(off).not.toContain("kullanılan süre");
+    expect(off).not.toContain("Referans süre");
+    expect(off).not.toContain("Geçen süre");
+    expect(off).not.toContain("Ek süre");
+    expect(off).not.toContain("fatigue-curve");
     expect(off).not.toContain("exam-slowest");
     expect(off).toContain("Ders sonuçları");
+  });
+
+  it("shows the known elapsed time from older results without inventing time past the deadline", () => {
+    const state = beginExam(initialState(), spec(), 1000);
+    const draft = state.examDraft!;
+    store061.state = finishExam(state, draft.id, draft.deadline);
+    const html = renderToStaticMarkup(<Exams navigate={() => {}} resultId={draft.id} />);
+    expect(html).toContain("Geçen süre 55 dk");
+    expect(html).toContain("Referans süre 55 dk");
+    expect(html).toContain("Bu kayıtta referans süre sonrasına ait süre bilgisi yok.");
+    expect(html).not.toMatch(/Ek süre \d+/);
   });
 });

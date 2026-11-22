@@ -1,7 +1,7 @@
 {
-  "version": "0.26.0",
+  "version": "0.26.1",
   "channel": "alpha",
   "notes": {
-    "tr": "0.26.0: Öğrenme öncelikli süre: Ayarlar → Zamanlayıcılar ile kum saati, deneme sayacı, hız notları ve soru süreleri tamamen gizlenebilir. Süre dolsa da deneme kapanmaz; sen \"Denemeyi bitir\" diyene kadar yanıtlarına, ipuçlarına ve çözümlere bakmaya devam edersin. 0.25.0'dan bu yana 525 yeni bölüm figürü: AYT Fizik, Kimya, Biyoloji ve Matematik, TYT Coğrafya, Biyoloji, Tarih ve Kimya (klimatogram, atış yörüngesi, titrasyon eğrisi, Punnett karesi, zaman çizelgesi ve daha fazlası). Lab etiketleri her platformda aynı yazı tipiyle çakışmasız. Kayıtlı ilerleme, notlar, ayarlar ve özgün tekrar tarihleri korunur."
+    "tr": "Deneme sonucunda başlangıçtan bitişe geçen süre, referans süre ve varsa ek süre ayrı görünür. Soru süreleri referans süre içindeki kayda dayanır. Zamanlayıcılar kapalıyken kum saati ve süreye bağlı göstergeler gizlenir. Denemeyi istediğin zaman kendin bitirirsin."
   }
 }

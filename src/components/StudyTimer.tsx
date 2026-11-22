@@ -11,6 +11,7 @@ import {
 export function StudyTimer() {
   const { state, commit } = useApp();
   const timer = state.focusTimer;
+  const timersOn = state.settings.timers !== false;
   const [now, setNow] = useState(Date.now);
   const [menu, setMenu] = useState(false);
   const [custom, setCustom] = useState(false);
@@ -36,31 +37,37 @@ export function StudyTimer() {
     minutes >= 1 &&
     minutes <= 120;
   useEffect(() => {
+    if (!timersOn || timer.phase !== "running") return;
     let tick: ReturnType<typeof setInterval> | undefined;
     const refresh = () => {
       const time = Date.now();
       setNow(time);
       if (remainingTime(timer, time) === 0) clearInterval(tick);
     };
-    if (timer.phase === "running") tick = setInterval(refresh, 250);
-    refresh();
-    window.addEventListener("focus", refresh);
-    document.addEventListener("visibilitychange", refresh);
+    const sync = () => {
+      clearInterval(tick);
+      if (document.hidden) return;
+      refresh();
+      if (remainingTime(timer, Date.now()) > 0) tick = setInterval(refresh, 250);
+    };
+    sync();
+    window.addEventListener("focus", sync);
+    document.addEventListener("visibilitychange", sync);
     return () => {
       clearInterval(tick);
-      window.removeEventListener("focus", refresh);
-      document.removeEventListener("visibilitychange", refresh);
+      window.removeEventListener("focus", sync);
+      document.removeEventListener("visibilitychange", sync);
     };
-  }, [timer]);
+  }, [timer, timersOn]);
   useEffect(() => {
-    if (!menu) return;
+    if (!timersOn || !menu) return;
     menuPanel.current?.querySelector<HTMLButtonElement>("button")?.focus();
     const outside = (event: PointerEvent) => {
       if (!root.current?.contains(event.target as Node)) setMenu(false);
     };
     document.addEventListener("pointerdown", outside);
     return () => document.removeEventListener("pointerdown", outside);
-  }, [menu]);
+  }, [menu, timersOn]);
   function close() {
     setMenu(false);
     menuButton.current?.focus();
@@ -90,7 +97,7 @@ export function StudyTimer() {
   }
   // Zamanlayıcılar ayarla kapatıldıysa kum saati gösterilmez; kayıtlı
   // durumu (süre, duraklatma, mutlak bitiş) olduğu gibi korunur.
-  if (state.settings.timers === false) return null;
+  if (!timersOn) return null;
   return (
     <div
       className="study-timer"

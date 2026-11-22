@@ -68,6 +68,7 @@ export function Exams({
   resultId?: string;
 }) {
   const { state, commit } = useApp();
+  const timersOn = state.settings.timers !== false;
   const specs = useMemo(examCatalogue, []);
   const [tab, setTab] = useState("TYT");
   const [distributionExam, setDistributionExam] = useState<"TYT" | "AYT">("TYT");
@@ -135,9 +136,6 @@ export function Exams({
       <header className="page-heading">
         <div>
           <h1>Sınavlar</h1>
-          <p className="muted">
-            Bilgini süre içinde uygula; sonra her sorunun mantığını incele.
-          </p>
         </div>
       </header>
       {state.examDraft && (
@@ -147,7 +145,7 @@ export function Exams({
             <p>
               {state.examDraft.answers.filter((v) => v !== null).length}/
               {state.examDraft.items.length} soru yanıtlandı.
-              {state.settings.timers !== false &&
+              {timersOn &&
                 " Süre, bu ekrandan ayrılsan da devam eder."}
             </p>
           </div>
@@ -179,9 +177,9 @@ export function Exams({
       </div>
       <p className="muted exam-scope">
         Uygulamadaki hazır soru bankasından hazırlanır. Kısa setler tam kapsamlı
-        sınav değildir. TYT için 120 soru / 165 dakika, AYT Sayısal için 80 soru
-        / 180 dakika referansı kullanılır; süre gerçek soru sayısına göre
-        ölçeklenir.
+        sınav değildir. Tam dağılım TYT’de 120, AYT Sayısal’da 80 sorudur.
+        {timersOn &&
+          " Referans süre TYT’de 165, AYT Sayısal’da 180 dakikadır ve setin soru sayısına göre ölçeklenir."}
       </p>
       {error && (
         <p role="alert" className="exam-error">
@@ -211,10 +209,12 @@ export function Exams({
               <h2>{spec.title}</h2>
               <p className="exam-card-meta">
                 <strong>{spec.items.length} soru</strong>
-                <span>
-                  <Timer size={16} aria-hidden="true" />
-                  {duration(spec.durationSeconds)}
-                </span>
+                {timersOn && (
+                  <span>
+                    <Timer size={16} aria-hidden="true" />
+                    {duration(spec.durationSeconds)}
+                  </span>
+                )}
               </p>
               {spec.kind === "mixed" && (
                 <p className="small muted">
@@ -345,15 +345,17 @@ function ExamRunner({
     : formatCountdown(remaining);
   const clockParts = clockText.split(":");
   const answered = draft.answers.filter((value) => value !== null).length;
-  const pace = examPace(
-    { answered, total: draft.items.length, startedAt: draft.startedAt, deadline: draft.deadline },
-    now,
-  );
+  const pace = timersOn
+    ? examPace(
+        { answered, total: draft.items.length, startedAt: draft.startedAt, deadline: draft.deadline },
+        now,
+      )
+    : null;
   const showPaceNote =
-    !paceNoteClosed && !dismissedPaceNotes.has(draft.id) && paceCheckpointDue(draft, now);
+    timersOn && !paceNoteClosed && !dismissedPaceNotes.has(draft.id) && paceCheckpointDue(draft, now);
   const flaggedTarget = nextFlagged(draft.flagged, draft.index, draft.items.length);
   // Süre nabzı: ekranda canlı hesaplanır, hiçbir tik kaydedilmez.
-  const pulse = timePulse(draft, now);
+  const pulse = timersOn ? timePulse(draft, now) : null;
   // 2. tur listesi girişte sabitlenir; böylece boş bir soruyu yanıtlamak
   // turdaki sırayı kaydırmaz. Yalnız bu ekranın belleğinde tutulur.
   const [roundState, setRoundState] = useState<{ id: string; list: number[] } | null>(null);
@@ -385,17 +387,24 @@ function ExamRunner({
     });
   }, [draft.index]);
   useEffect(() => {
+    if (!timersOn) return;
+    let timer: ReturnType<typeof setInterval> | undefined;
     const refresh = () => setNow(Date.now());
-    refresh();
-    const timer = setInterval(refresh, 500);
-    window.addEventListener("focus", refresh);
-    document.addEventListener("visibilitychange", refresh);
+    const sync = () => {
+      clearInterval(timer);
+      if (document.hidden) return;
+      refresh();
+      timer = setInterval(refresh, 500);
+    };
+    sync();
+    window.addEventListener("focus", sync);
+    document.addEventListener("visibilitychange", sync);
     return () => {
       clearInterval(timer);
-      window.removeEventListener("focus", refresh);
-      document.removeEventListener("visibilitychange", refresh);
+      window.removeEventListener("focus", sync);
+      document.removeEventListener("visibilitychange", sync);
     };
-  }, [draft.id]);
+  }, [draft.id, timersOn]);
   const finish = useCallback(async () => {
     if (lock.current) return;
     lock.current = true;
@@ -812,9 +821,9 @@ function ExamResults({
 }) {
   const score = examScore(session);
   const assistance = examAssistance(session);
-  const slowest = slowestItems(session);
   const { state } = useApp();
   const timersOn = state.settings.timers !== false;
+  const slowest = timersOn ? slowestItems(session) : null;
   const overtimeMs = session.finishedAt - session.deadline;
   return (
     <section className="exam-results">
@@ -829,25 +838,20 @@ function ExamResults({
         <div>
           <span className="eyebrow">Kaydedilmiş deneme sonucu</span>
           <h1>{session.title}</h1>
-          <p>
-            Denemeyi bitirdin. {session.items.length} soru
-            {timersOn &&
-              ` · kullanılan süre ${duration(
-                Math.min(
-                  session.durationSeconds,
-                  Math.max(
-                    0,
-                    Math.round((session.finishedAt - session.startedAt) / 1000),
-                  ),
-                ),
-              )}`}
-          </p>
-          {timersOn && session.timedOut && (
-            <p className="small muted exam-overtime">
-              {overtimeMs >= 60_000
-                ? `Resmî süreden ${Math.floor(overtimeMs / 60_000)} dk fazla çalıştın; öğrenme için sorun değil.`
-                : "Resmî süre doldu; öğrenme için sorun değil."}
-            </p>
+          <p>Denemeyi bitirdin. {session.items.length} soru</p>
+          {timersOn && (
+            <>
+              <p className="small muted">
+                Geçen süre {spokenDuration(session.finishedAt - session.startedAt)}
+                {" · "}Referans süre {duration(session.durationSeconds)}
+                {overtimeMs >= 1_000 && ` · Ek süre ${spokenDuration(overtimeMs)}`}
+              </p>
+              {session.timedOut && overtimeMs === 0 && (
+                <p className="small muted">
+                  Bu kayıtta referans süre sonrasına ait süre bilgisi yok.
+                </p>
+              )}
+            </>
           )}
         </div>
         <Trophy size={32} aria-hidden="true" />
@@ -922,9 +926,10 @@ function ExamResults({
         ) : (
           <>
             <p className="small muted">
-              Soru başı ortalama süre{" "}
+              Referans süre içinde soru başına ortalama{" "}
               {spokenDuration((session.durationSeconds * 1000) / session.items.length)}.
-              Süre, sorunun ekranda açık kaldığı toplam zamandır.
+              Soru süreleri bu aralıkta sorular arasında geçen zamandır.
+              Ek süre bu ölçüme dahil değildir.
             </p>
             <ol className="exam-slowest-list">
               {slowest.map((row) => (
@@ -952,7 +957,7 @@ function ExamResults({
         )}
         </section>
       )}
-      <ExamInsights session={session} />
+      <ExamInsights session={session} showOrderAccuracy={timersOn} />
       <section
         className="exam-solutions"
         aria-label="Açıklamalı deneme çözümleri"

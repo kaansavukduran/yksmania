@@ -1,3 +1,11 @@
+# YKSMania 0.26.1 · Deneme sürelerinin gösterimi
+
+- Deneme sonucunda geçen süre, referans süre ve ek süre ayrı görünür. Soru süreleri referans süresi içindeki kayda dayanır.
+- Zamanlayıcılar kapalıyken kum saati ve deneme sayacı güncelleme döngüsü çalıştırmaz. Süreye bağlı göstergeler gizlenir. Deneme, öğrenci bitirene kadar açık kalır.
+- Cevaplar, işaretler, yardım geçmişi ve eski kayıtların biçimi korunur.
+
+---
+
 # YKSMania 0.26.0 — web yayını
 
 21 Kasım 2026, Türkiye saati. `58cc739c1d0a9c90f522c9e86751636d092a2f73` kaynaklı web sürümü elle başlatılan Pages işiyle yayımlandı. Yayındaki çevrimdışı kontroller aynı işte geçti. [Web yayını ve doğrulama](https://github.com/kaansavukduran/yksmania/actions/runs/44912127598)

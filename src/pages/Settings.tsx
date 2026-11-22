@@ -371,7 +371,7 @@ export function Settings({
           />
           <Toggle
             label="Zamanlayıcılar"
-            help="Kapalıyken kum saati, deneme geri sayımı, hız notları, süre nabzı ve soru süreleri gösterilmez. Denemeler her durumda sen bitirene kadar açık kalır."
+            help="Kapalıyken kum saati, deneme sayacı ve süreye bağlı göstergeler gizlenir. Deneme zamanları kayda geçmeye devam eder. Denemeyi sen bitirirsin."
             checked={state.settings.timers !== false}
             onChange={(v) => set("timers", v)}
           />
