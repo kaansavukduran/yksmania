@@ -169,6 +169,22 @@ import { physicsFigures060Rotation } from "./physicsFigures060Rotation";
 import { physicsFigures060Fields } from "./physicsFigures060Fields";
 import { physicsFigures060Motion } from "./physicsFigures060Motion";
 import { mathFigures060 } from "./mathFigures060";
+import { biologyFigures060Skeleton } from "./biologyFigures060Skeleton";
+import { biologyFigures060Plant2 } from "./biologyFigures060Plant2";
+import { biologyFigures060Plant } from "./biologyFigures060Plant";
+import { biologyFigures060Genetics } from "./biologyFigures060Genetics";
+import { biologyFigures060Reproduction } from "./biologyFigures060Reproduction";
+import { biologyFigures060Digestion } from "./biologyFigures060Digestion";
+import { mathFigures060TytNumbers } from "./mathFigures060TytNumbers";
+import { mathFigures060TytAlgebra } from "./mathFigures060TytAlgebra";
+import { mathFigures060TytData } from "./mathFigures060TytData";
+import { mathFigures060TytProblems } from "./mathFigures060TytProblems";
+import { religionFigures061Worship } from "./religionFigures061Worship";
+import { religionFigures061Anatolia } from "./religionFigures061Anatolia";
+import { religionFigures061Life } from "./religionFigures061Life";
+import { religionFigures061Belief } from "./religionFigures061Belief";
+import { geographyFigures061Human } from "./geographyFigures061Human";
+import { geographyFigures061Environment } from "./geographyFigures061Environment";
 
 /*
  * Figure packs are merged per guide. A plain object spread replaced a whole
@@ -345,6 +361,22 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   philosophyFigures060Logic,
   philosophyFigures060History,
   philosophyFigures060Being,
+  biologyFigures060Skeleton,
+  biologyFigures060Plant2,
+  biologyFigures060Plant,
+  biologyFigures060Genetics,
+  biologyFigures060Reproduction,
+  biologyFigures060Digestion,
+  mathFigures060TytNumbers,
+  mathFigures060TytAlgebra,
+  mathFigures060TytData,
+  mathFigures060TytProblems,
+  religionFigures061Worship,
+  religionFigures061Anatolia,
+  religionFigures061Life,
+  religionFigures061Belief,
+  geographyFigures061Human,
+  geographyFigures061Environment,
 ];
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {};
 for (const pack of figurePacks)
