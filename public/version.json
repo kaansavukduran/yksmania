@@ -1,7 +1,7 @@
 {
-  "version": "0.26.1",
+  "version": "0.27.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Deneme sonucunda başlangıçtan bitişe geçen süre, referans süre ve varsa ek süre ayrı görünür. Soru süreleri referans süre içindeki kayda dayanır. Zamanlayıcılar kapalıyken kum saati ve süreye bağlı göstergeler gizlenir. Denemeyi istediğin zaman kendin bitirirsin."
+    "tr": "Konu anlatımlarında 56 derse 242 bölüm figürü eklendi. Örneğin bilimsel gösterimde virgülün yerini değiştirirken üssün nasıl hareket ettiğini izleyebilirsin. Nüfus tahmini ve çarpan çiftleri örneklerinin açıklamaları netleştirildi."
   }
 }

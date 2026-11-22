@@ -1,3 +1,9 @@
+# YKSMania 0.27.0 · Konu anlatımı figürleri
+
+Yayın adayı. Konu anlatımlarında 56 derse 242 bölüm figürü eklendi. Güncel ders ve figür envanteri, çözüm paneli sayıları ve kanıt durumu ders bazında izlenebilir. [İlerleme tablosu](ILERLEME.md)
+
+---
+
 # YKSMania 0.26.1 · Deneme sürelerinin gösterimi
 
 - Deneme sonucunda geçen süre, referans süre ve ek süre ayrı görünür. Soru süreleri referans süresi içindeki kayda dayanır.

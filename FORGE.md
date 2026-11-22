@@ -1,3 +1,9 @@
+# 0.27.0 · Konu anlatımı figürleri
+
+23 Kasım 2026. Bu aday, mevcut konu anlatımlarının 56’sına toplam 242 bölüm figürü ekler. Böylece Temel İnşa dışındaki konu envanterinde 405 dersin 1.668 bölüm figürü bulunur. Temel İnşa’nın 25 dersi ve 57 figürü ayrıca sayılır. TÜİK nüfus örneği yaklaşık hesabı ve açıklanan değeri ayırır. Çarpan örneği çiftlerin sırasız sayıldığını belirtir.
+
+Bağımsız görsel inceleme dalında 2.108 hedefli birim testi, `check`, derleme ve beş Chromium testi geçti. 320 px’de yeni figürlerin tamamında ölçülen çakışma ve taşma sıfırdı. Örnek bir ders normal menüden klavyeyle açıldı. Çevrimdışı yeniden yüklemede öğrenme verisi aynı kaldı. Birleşik adayın tam CI, Pages ve paket sonuçları bekliyor.
+
 # Forge062 · Deneme süresi
 
 23 Kasım 2026. 0.26.1 adayı deneme sonucunda başlangıçtan bitişe geçen süreyi, referans süreyi ve varsa ek süreyi gösterir. Soru süreleri referans bitişinde duran kayıtlarından okunur. Eski bir sonuçta bu sınırdan sonrasına ait süre bilinmiyorsa bir değer gösterilmez.
@@ -5,8 +11,6 @@
 Zamanlayıcılar kapatıldığında kum saati ve deneme sayacı güncelleme döngüsü başlatmaz. Görünürlük geri geldiğinde açık zamanlayıcılar kaydedilmiş bitiş anına göre devam eder. Deneme her durumda öğrenci bitirene kadar açıktır. Yanıt, işaret, yardım ve hedef tarihleri mevcut kayıt biçimleriyle korunur.
 
 Yerel `check`, derleme ve 13 tarayıcı testi geçti. Tam yerel birim koşusunda 4.046 test geçti ve değişmeyen çözüm rehberi testi 5 saniyede zaman aşımına uğradı. Aynı testi içeren 41 testlik hedefli tekrar geçti. AIONIA v1.7’nin ilgili maddeleri 23 Kasım’da canlı kaynaktan doğrulandı.
-
-Görsel çalışma bundan sonraki turda mevcut Claude dalındaki 56 ders ve 242 figür üzerinden devam eder. Figür sayıları uygulama envanterinden, PDF aktarım sayıları kanonik defterden alınır. Öğretim ve laboratuvar kabulü kendi kanıtını gerektirir.
 
 # 0.26.0 masaüstü doğrulaması
 
