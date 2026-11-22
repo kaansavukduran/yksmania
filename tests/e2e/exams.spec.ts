@@ -510,6 +510,28 @@ test("disabled timers schedule no exam or hourglass ticks and preserve an offlin
   await expect(page.locator(".hourglass-state")).toHaveText("Kum akıyor");
   await expect.poll(async () => (await intervals()).active).toContain(250);
   expect((await stored(page)).focusTimer).toEqual(timerBefore);
+
+  const showDocument = (visible: boolean) =>
+    page.evaluate((show) => {
+      Object.defineProperty(document, "hidden", {
+        configurable: true,
+        value: !show,
+      });
+      document.dispatchEvent(new Event("visibilitychange"));
+    }, visible);
+  await showDocument(false);
+  expect((await intervals()).active).not.toContain(250);
+  await showDocument(true);
+  await expect.poll(async () => (await intervals()).active).toContain(250);
+
+  await branch(page);
+  await expect.poll(async () => (await intervals()).active).toContain(500);
+  const secondDraft = (await stored(page)).examDraft;
+  await showDocument(false);
+  expect((await intervals()).active).not.toContain(500);
+  await showDocument(true);
+  await expect.poll(async () => (await intervals()).active).toContain(500);
+  expect((await stored(page)).examDraft).toEqual(secondDraft);
 });
 
 test("a new branch attempt varies available questions while both old results and the resumed new paper stay fixed offline", async ({
@@ -584,7 +606,7 @@ test("block order, time pulse, second round and the official distribution panel 
   // Time pulse: calm warning past 1.5 times the average; no per-second writes.
   await page.clock.fastForward("02:10");
   await expect(page.locator(".exam-pulse-warning")).toHaveText(
-    "Bu soruda ortalamanın üstündesin; işaretleyip geçebilirsin.",
+    "Bu soru için referans payını aştın. İstersen işaretleyip geçebilirsin.",
   );
   expect((await stored(page)).examDraft.itemMs[0]).toBe(0);
   await page.locator(".exam-answer").first().click();

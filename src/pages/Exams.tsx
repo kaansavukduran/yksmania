@@ -557,7 +557,7 @@ function ExamRunner({
               <p className="exam-pulse-line" aria-live="off">
                 <Hourglass size={16} aria-hidden="true" />
                 <span>
-                  Bu soruda {spokenDuration(pulse.spentMs)} · soru başı ortalama{" "}
+                  Bu soruya yazılan süre {spokenDuration(pulse.spentMs)} · soru başına referans{" "}
                   {spokenDuration(pulse.averageMs)}
                 </span>
               </p>
@@ -568,7 +568,7 @@ function ExamRunner({
               </div>
               <p className="exam-pulse-warning" role="status">
                 {pulse.over
-                  ? "Bu soruda ortalamanın üstündesin; işaretleyip geçebilirsin."
+                  ? "Bu soru için referans payını aştın. İstersen işaretleyip geçebilirsin."
                   : ""}
               </p>
             </div>
@@ -926,9 +926,10 @@ function ExamResults({
         ) : (
           <>
             <p className="small muted">
-              Referans süre içinde soru başına ortalama{" "}
+              Referans süre içinde soru başına eşit pay{" "}
               {spokenDuration((session.durationSeconds * 1000) / session.items.length)}.
               Soru süreleri bu aralıkta sorular arasında geçen zamandır.
+              Uygulamadan uzak kaldığın zaman da bu kayda girer.
               Ek süre bu ölçüme dahil değildir.
             </p>
             <ol className="exam-slowest-list">
