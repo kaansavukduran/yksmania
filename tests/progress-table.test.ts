@@ -48,8 +48,21 @@ function compute() {
     if (id) sheetsDone[id] = (sheetsDone[id] ?? 0) + 1;
   }
   const pdf = ledger.match(/Okunduğu doğrulanan PDF toplamı[^|]*\|\s*(\d+) \/ ([\d.]+)/);
+  const sheetTotals = ledger.match(
+    /^\| \*\*Genel toplam\*\* \| \*\*(\d+)\*\* \| \*\*(\d+)\*\* \|/m,
+  );
   const osymDoc = readFileSync("docs/OSYM_SAYACI.md", "utf8");
-  const osym = osymDoc.match(/sayac:osym-pdf islenen=(\d+) toplam=(\d+)/)!;
+  const osym = osymDoc.match(/sayac:osym-pdf islenen=(\d+) toplam=(\d+)/);
+  if (!pdf || !sheetTotals || !osym) {
+    throw new Error("Kaynak sayaçlarının beklenen kayıtları bulunamadı.");
+  }
+  const ogmPdfDone = Number(pdf[1]);
+  const ogmPdfTotal = Number(pdf[2].replace(/\./g, ""));
+  const osymPdfDone = Number(osym[1]);
+  const osymPdfTotal = Number(osym[2]);
+  if (ogmPdfTotal <= 0 || osymPdfTotal <= 0 || ogmPdfDone > ogmPdfTotal || osymPdfDone > osymPdfTotal) {
+    throw new Error("PDF sayaçları arşiv toplamlarıyla uyumsuz.");
+  }
   // Distinct past questions cited as "year exam subject number" in figures and tactics.
   const cite = /(19|20)\d{2} (TYT|AYT|LYS\d?|YGS|ÖSS|ÖYS)( [A-ZÇĞİÖŞÜ][a-zçğıöşü]+){1,2}(-\d)? \d{1,2}\b/g;
   const cited = new Set<string>();
@@ -91,6 +104,9 @@ function compute() {
     };
   });
   const sum = (k: keyof (typeof rows)[number]) => rows.reduce((n, r) => n + (r[k] as number), 0);
+  if (sum("sheets") !== Number(sheetTotals[1]) || sum("sheetsDone") !== Number(sheetTotals[2])) {
+    throw new Error("Kopya kâğıdı kayıtları beyan edilen toplamla eşleşmiyor.");
+  }
   const catalogue = examCatalogue();
   const fixDir = "src/learning/displayFixes";
   const displayFixFiles = readdirSync(fixDir)
@@ -119,10 +135,10 @@ function compute() {
       sheetsDone: sum("sheetsDone"),
       sheets: sum("sheets"),
       open: sum("open"),
-      ogmPdfDone: pdf ? Number(pdf[1]) : 0,
-      ogmPdfTotal: pdf ? Number(pdf[2].replace(/\./g, "")) : 0,
-      osymPdfDone: Number(osym[1]),
-      osymPdfTotal: Number(osym[2]),
+      ogmPdfDone,
+      ogmPdfTotal,
+      osymPdfDone,
+      osymPdfTotal,
       osymQuestions: osymRows.length,
       recallLessons: recallCheckLessonCount,
       recallChecks: recallCheckCount,
@@ -136,7 +152,7 @@ function compute() {
 function markdown(data: ReturnType<typeof compute>) {
   const t = data.totals;
   const head = [
-    "| Ders | Hazır konu / toplam | Görsel lab (figürlü ders · figür) | Adım adım çözümlü soru | OGM/MEBİ kopya kâğıdı | 99_ÖSYM | Kalan açık (figürsüz ders) |",
+    "| Ders | Hazır konu / toplam | Bölüm figürleri (konu · figür) | Kademeli çözüm paneli | Kısmi kopya kâğıdı aktarımı | 99_ÖSYM | Figürsüz konu |",
     "| --- | ---: | ---: | ---: | ---: | ---: | ---: |",
     `| Temel İnşa (0. basamak) | ${data.foundations.lessons} ön ders | ${data.foundations.lessons} · ${data.foundations.figures} | ön derslerde çözümlü örnek | — | — | 0 |`,
   ];
@@ -153,13 +169,15 @@ function markdown(data: ReturnType<typeof compute>) {
     "",
     "| Genel gösterge | Değer |",
     "| --- | ---: |",
-    `| OGM/MEBİ PDF (okunan / envanter) | ${frac(t.ogmPdfDone, t.ogmPdfTotal)} |`,
+    `| Dal kaydında okunan veya eşlenen PDF / arşiv envanteri | ${frac(t.ogmPdfDone, t.ogmPdfTotal)} |`,
     `| 99_ÖSYM PDF (işlenen / beyan edilen) | ${frac(t.osymPdfDone, t.osymPdfTotal)} |`,
     `| 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | ${tr(t.osymQuestions)} · ${t.osymCitedQuestions} |`,
-    `| Adım adım çözümlü soru | ${frac(t.stepped, t.questions)} |`,
+    `| Kademeli çözüm paneli bulunan soru | ${frac(t.stepped, t.questions)} |`,
+    "| Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |",
+    "| Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |",
     `| Ara hatırlama (mikro ritim): ders · soru | ${frac(t.recallLessons, t.readyLessons)} · ${tr(t.recallChecks)} soru |`,
     `| Gösterim onarımı: soru alanı · ders paragrafı | ${tr(t.displayFixCards)} · ${tr(t.displayFixParagraphs)} |`,
-    `| Kopya kâğıdı (işlenen / toplam) | ${frac(t.sheetsDone, t.sheets)} |`,
+    `| Kopya kâğıdı (kısmi aktarım / toplam) | ${frac(t.sheetsDone, t.sheets)} |`,
     `| Resmî ana başlık · anlatımlı konu · hazır anlatım | ${t.officialHeadings} · ${t.topics} · ${t.readyLessons} |`,
     `| İleri ve kaynak soru seti (anlatımı ana konusunda) | ${t.questionSets} |`,
   ];

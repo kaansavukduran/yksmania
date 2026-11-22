@@ -54,7 +54,7 @@ Kanonik defterin doğrulanan sayımı 8.981 PDF içinde 7 tam öğretim aktarım
 Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır); elle düzenlenmez.
 
 <!-- ilerleme:başla -->
-| Ders | Hazır konu / toplam | Görsel lab (figürlü ders · figür) | Adım adım çözümlü soru | OGM/MEBİ kopya kâğıdı | 99_ÖSYM | Kalan açık (figürsüz ders) |
+| Ders | Hazır konu / toplam | Bölüm figürleri (konu · figür) | Kademeli çözüm paneli | Kısmi kopya kâğıdı aktarımı | 99_ÖSYM | Figürsüz konu |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
@@ -77,13 +77,15 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 
 | Genel gösterge | Değer |
 | --- | ---: |
-| OGM/MEBİ PDF (okunan / envanter) | 119 / 8.981 · %1,33 |
+| Dal kaydında okunan veya eşlenen PDF / arşiv envanteri | 119 / 8.981 · %1,33 |
 | 99_ÖSYM PDF (işlenen / beyan edilen) | 18 / 1.001 · %1,80 |
 | 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 76 |
-| Adım adım çözümlü soru | 6.465 / 6.465 · %100,00 |
+| Kademeli çözüm paneli bulunan soru | 6.465 / 6.465 · %100,00 |
+| Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
+| Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
 | Ara hatırlama (mikro ritim): ders · soru | 505 / 505 · %100,00 · 3.052 soru |
 | Gösterim onarımı: soru alanı · ders paragrafı | 962 · 1.635 |
-| Kopya kâğıdı (işlenen / toplam) | 109 / 517 · %21,08 |
+| Kopya kâğıdı (kısmi aktarım / toplam) | 109 / 517 · %21,08 |
 | Resmî ana başlık · anlatımlı konu · hazır anlatım | 341 · 505 · 505 |
 | İleri ve kaynak soru seti (anlatımı ana konusunda) | 35 |
 <!-- ilerleme:bitir -->
