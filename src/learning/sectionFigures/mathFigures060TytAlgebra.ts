@@ -55,8 +55,8 @@ const diffSquares: FigureDef = {
 const PAIRS: [number, number][] = [[1, -12], [-1, 12], [2, -6], [-2, 6], [3, -4], [-3, 4]];
 const sumProduct: FigureDef = {
   caption:
-    "x² − x − 12 için çarpımı c = −12 olan bütün tam sayı ikililerinin toplamları. c < 0 olduğundan sayılar zıt işaretlidir; toplamın b = −1 olması mutlak değeri büyük olanın negatif olduğunu söyler. Yalnız (3; −4) iki koşulu birden sağlar: (x − 4)(x + 3).",
-  alt: "Üç sütunlu tablo: p, q ve p + q; altı satırda çarpımı −12 olan ikililer; toplamı −1 olan satır vurgulu.",
+    "Çarpımı −12 olan tam sayı çarpan çiftleri sırasız olarak birer kez gösterilir. Çarpım negatif olduğu için işaretler zıttır. Toplamın −1 olması, mutlak değeri büyük olan çarpanın negatif olduğunu gösterir. Toplamı −1 olan çarpanlar 3 ve −4’tür. Kontrol için (x − 4)(x + 3) çarpımını aç.",
+  alt: "p, q ve p + q sütunları. Altı satırda çarpımı −12 olan sırasız çarpan çiftleri var. Toplamı −1 olan satır vurgulu.",
   draw: () => {
     const els: El[] = [];
     const w = 1.6, h = 0.62;
@@ -67,7 +67,7 @@ const sumProduct: FigureDef = {
     });
     els.push(txt(v(3 * w + 0.3, (PAIRS.length - 5 + 0.5) * h), "toplam −1", "e", { tone: "a", small: true, bold: true }));
     els.push(...pad(-0.3, (PAIRS.length + 1) * h + 0.3, 7.4, -0.3));
-    return { els, readout: ["pq = −12 ve p + q = −1 ⇒ p = 3, q = −4.", "x² − x − 12 = (x − 4)(x + 3); açılımla denetle."] };
+    return { els, readout: ["pq = −12 ve p + q = −1 koşullarını 3 ve −4 sağlar.", "x² − x − 12 = (x − 4)(x + 3). Açılımla denetle."] };
   },
 };
 
@@ -394,4 +394,3 @@ export const mathFigures060TytAlgebra: Record<string, Record<string, FigureDef>>
     "Karşıt ters denktir; karşıt ve ters genellikle değildir": contrapositive,
   },
 };
-

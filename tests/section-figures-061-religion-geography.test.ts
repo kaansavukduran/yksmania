@@ -104,4 +104,15 @@ describe("Forge061 Din Kültürü ve Coğrafya bölüm figürleri", () => {
     expect(fig("cevre-toplum", "Yük ile derişimi farklı ölç").draw(2, 0).readout?.[0]).toContain("0,5 katı");
     expect(fig("ekonomik-faaliyetler", "Makineleşme ve payın değişmesi").draw(0, 1).readout?.[0]).toContain("50 / 650 = %7,7");
   });
+
+  it("binde ve yüzde sonuçlarını aynı tabana uygulanan örnek hesap diye gösterir", () => {
+    const def = fig("turkiye-nufusu", "Artış miktarı ile artış hızı");
+    expect(def.alt).toContain("2023 nüfusu taban alındığında");
+    expect(def.draw(0, 0).readout?.[0]).toContain(
+      "2023 nüfusu taban alınırsa binde 1,1 yaklaşık 93.910 kişiye karşılık gelir.",
+    );
+    expect(def.draw(0, 1).readout?.[0]).toContain(
+      "Aynı tabana yüzde 1,1 uygulanırsa yaklaşık 939.096 kişi çıkar.",
+    );
+  });
 });

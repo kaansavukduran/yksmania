@@ -307,14 +307,14 @@ const permilleDraw = (step: number) => {
 const permilleH = permilleDraw(1).h;
 const permille: FigureDef = {
   caption:
-    "Binde 1,1 yüzde 1,1 değildir: aynı 2023 nüfusuna uygulanınca aradaki fark on kattır. İleri ile yanlış okumayı aç. Hız düşerken pozitif kaldıkça nüfus artmayı sürdürür; artış miktarı ile artış hızı ayrı niceliklerdir.",
-  alt: "İki yatay çubuk, kişi ekseninde. Binde 1,1 artış yaklaşık 93.910 kişi; yüzde 1,1 diye okunursa yaklaşık 939.096 kişi, on kat fazla.",
+    "Binde 1,1 ve yüzde 1,1 aynı 2023 nüfusuna uygulanırsa yüzdeyle yapılan hesap binde ile yapılanın on katı çıkar. İleri ile karşılaştırmayı aç. Hız düşerken pozitif kaldıkça nüfus artmayı sürdürür.",
+  alt: "Kişi ekseninde iki yatay çubuk. 2023 nüfusu taban alındığında binde 1,1 yaklaşık 93.910, yüzde 1,1 yaklaşık 939.096 kişiye karşılık gelir.",
   maxHeight: fitH(permilleH),
   steps: ["Binde 1,1", "Yüzde ile karıştırma"],
   draw: (_v, step) => {
     const { els } = permilleDraw(step);
     els.push(...frame(permilleH));
-    return { els, readout: [step === 0 ? "Yıllık artış miktarı yaklaşık 93.910 kişi: hız binde 1,1." : "Yüzde 1,1 okunursa yaklaşık 939.096 kişi çıkar; bu, verilen hızın on katıdır.", "Hızın aşağı yönelmesi nüfus sütunlarının küçüldüğünü tek başına göstermez."] };
+    return { els, readout: [step === 0 ? "2023 nüfusu taban alınırsa binde 1,1 yaklaşık 93.910 kişiye karşılık gelir." : "Aynı tabana yüzde 1,1 uygulanırsa yaklaşık 939.096 kişi çıkar. Bu, binde 1,1 ile yapılan hesabın on katıdır.", "Hızın aşağı yönelmesi nüfus sütunlarının küçüldüğünü tek başına göstermez."] };
   },
 };
 

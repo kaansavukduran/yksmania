@@ -98,6 +98,16 @@ describe("Forge060 TYT Matematik bölüm figürleri", () => {
     expect(ct.els.filter((e) => e.k === "text").map((e) => (e as { s: string }).s).slice(6, 30)).toEqual("111111100110011001001111".split(""));
   });
 
+  it("çarpan çiftlerinin sırasız olduğunu açıklar ve iki çarpanı gösterir", () => {
+    const title = "x²+bx+c için toplam ve çarpımı birlikte ara";
+    const def = fig("carpanlara-ayirma", title);
+    expect(def.caption).toContain("sırasız olarak birer kez");
+    expect(def.alt).toContain("sırasız çarpan çiftleri");
+    const result = frame("carpanlara-ayirma", title).readout;
+    expect(result).toContain("pq = −12 ve p + q = −1 koşullarını 3 ve −4 sağlar.");
+    expect(result).toContain("x² − x − 12 = (x − 4)(x + 3)");
+  });
+
   it("veri, grafik ve problem modelleri", () => {
     expect(frame("veri-analizi", "Ortancayı yazılış sırası belirlemez", 0, 0).labels).toContain("ortanca = (4 + 7)/2 = 5,5");
     expect(frame("veri-analizi", "Uç değerin etkisini ölç, ezberleme", 13).readout).toContain("ortalama 5; ortanca 3; açıklık 12");

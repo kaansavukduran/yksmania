@@ -395,4 +395,3 @@ export const biologyFigures060Skeleton: Record<string, Record<string, FigureDef>
     "Aroma ile temel tat birleşince": flavor,
   },
 };
-
