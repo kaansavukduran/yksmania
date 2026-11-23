@@ -242,7 +242,9 @@ test("all twenty-eight newly taught units have independent end-to-end cases", ()
 
 const currentQuestionCounts: Readonly<Record<string, number>> = {
   "grafik-problemleri": 16,
+  "kartezyen-carpim": 17,
   kumeler: 17,
+  "mantik-onerme": 18,
 };
 
 for (const lesson of units) {
