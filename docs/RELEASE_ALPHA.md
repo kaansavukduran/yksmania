@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.63.0 · Isı aktarımı
+
+Yayın adayı. Sıcaklık farkını, aktarılan enerjiyi ve dengeyi aynı iki cisim çiziminde incele. Ayrı Kopya Kağıdı’nda aynı hesap çözümlü olarak yer alır.
+
 # ÖSYM Mania 0.62.0 · Hidroelektrik
 
 Yayın adayı. Su seviyesi farkını değiştirerek su girişini, türbin adımını ve elektrik çıkışını incele. Aynı veriler anlatımda, adım adım örnekte ve ayrı Kopya Kağıdı’nda yer alır.

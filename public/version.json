@@ -1,7 +1,7 @@
 {
-  "version": "0.62.0",
+  "version": "0.63.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Hidroelektrik örneğinde suyun yükseklik farkını değiştir. Su, türbin ve jeneratör üzerinden elektrik çıkışını izle."
+    "tr": "Sıcak ve soğuk iki cismin dengeye ilerleyişini izle. Sıcaklıklar yaklaşırken geçen enerjiyi tabloyla karşılaştır."
   }
 }

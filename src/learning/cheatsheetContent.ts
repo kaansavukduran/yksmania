@@ -117,6 +117,7 @@ import { newtonTimeTitle } from "./newtonTimeComparison";
 import { forcePairsTitle } from "./newtonForcePairs";
 import { frictionThresholdTitle } from "./newtonFrictionThreshold";
 import { cylinderPotentialTitle } from "./cylinderPotentialEnergy";
+import { thermalTransferTitle } from "./thermalTransfer063";
 import { hydropowerTitle } from "./hydropower062";
 import { lampEfficiencyTitle } from "./lampEfficiency061";
 import { railEnergyTitle } from "./railEnergy060";
@@ -152,6 +153,12 @@ export interface CheatSheet {
 }
 
 const revisedSectionTextByLesson = new Map([
+  ["isi-ve-sicaklik", new Map([
+    [thermalTransferTitle, [
+      "Isı, sıcaklık farkı nedeniyle aktarılan enerjidir. Net aktarım sıcak cisimden soğuğa olur ve ortak sıcaklıkta durur.",
+      "Kapalı örnekte ısı sığaları eşitse denge sıcaklığı ilk iki sıcaklığın ortalamasıdır. 60 °C ve 20 °C için denge 40 °C.",
+    ]],
+  ])],
   ["enerji-ve-hareket", new Map([
     [hydropowerTitle, [
       "Saniyede geçen su kütlesi yoğunluk × debidir. Su gücü bu kütle akışı × g × yükseklik farkı.",
@@ -444,7 +451,7 @@ export const builtInCheatSheets = new Map<string, CheatSheet>(
 // catalog snapshot used by the existing preservation checks.
 export function studyCheatSheet(topicId: string): CheatSheet | undefined {
   const sheet = builtInCheatSheets.get(topicId);
-  if (sheet?.lessonId !== "enerji-ve-hareket") return sheet;
+  if (!sheet || (sheet.lessonId !== "enerji-ve-hareket" && sheet.lessonId !== "isi-ve-sicaklik")) return sheet;
   const guide = studyGuide(sheet.lessonId);
   return guide ? lessonSheet(sheet.lessonId, guide) : sheet;
 }

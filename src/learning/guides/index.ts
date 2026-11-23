@@ -1,3 +1,4 @@
+import { thermalTransferExample, thermalTransferSection } from "../thermalTransfer063";
 import { hydropowerExample, hydropowerSection } from "../hydropower062";
 import { lampEfficiencyExample, lampEfficiencySection } from "../lampEfficiency061";
 import { railEnergyExample, railEnergySection } from "../railEnergy060";
@@ -322,6 +323,14 @@ for (const extension of forge020BiologyGuideExtensions) {
 // The reader can extend the catalog while preserving its historical entries.
 export function studyGuide(lessonId: string) {
   const guide = clarifiedGuideView(lessonGuides.get(lessonId));
+  if (guide?.id === "isi-ve-sicaklik") {
+    return {
+      ...guide,
+      sections: [...guide.sections, thermalTransferSection],
+      examples: [...guide.examples, thermalTransferExample],
+      source: `${guide.source} Isı aktarımının yönü ve yalıtılmış iki cismin denge çizimi MEBİ TYT Fizik Konu Özetleri fiziksel 61 ve 72, basılı 59 ve 70. sayfalarla karşılaştırıldı. Sıcaklıklar ve ısı sığaları özgün hesap değerleridir.`,
+    };
+  }
   if (guide?.id !== "enerji-ve-hareket") return guide;
   return {
     ...guide,

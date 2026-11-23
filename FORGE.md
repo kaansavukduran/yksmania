@@ -1,3 +1,7 @@
+# Isı farkla aktarılır · 0.63.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel sayfa 61 ve 72, basılı 59 ve 70, sıcak cisimden soğuğa ısı akışı ile yalıtılmış ortamda dengeyi çiziyor. 60 °C ve 20 °C ile başlayan, ısı sığaları 400 J/K olan iki cisim 40 °C’de buluşur. Biri 8.000 J kaybeder, diğeri aynı enerjiyi kazanır. Üç çizim adımı süreyi temsil etmez. Sayfaların tanecik çizimi ve dondurma görseli ayrı incelemede açık. İlk tarayıcıda ısı bölümünün Kopya Kağıdı eski rehberden açılıyordu. Okuyucu güncel rehbere bağlandı. Aynı çevrimdışı anlatım ve Kopya Kağıdı akışları %200 ölçek, tablo ve çözüm çizimiyle yeniden geçti.
+
 # Suyun yüksekliğinden elektrik gücüne · 0.62.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 58, basılı 56, enerji dönüşümünü suyun yüksekliğinden türbine ve elektriğe bağlıyor. Özgün modelde debi 2 m³/s, yoğunluk 1.000 kg/m³ ve toplam verim %75. 10 m yükseklik farkında alınabilecek 200 kW’ın 150 kW’ı elektrik çıkışına aktarılır. Model yüksekliği, aynı andaki giriş ve çıkışı doğrudan değiştiriyor. Kaynağın diğer enerji örnekleri ve tesis fotoğrafı ayrı değerlendirmede açık. Gerçek çevrimdışı anlatım ve Kopya Kağıdı, klavye ile üç adım, 320 px ve %200 ölçek, SVG boşlukları ve değişmeyen öğrenme kaydı iki tarayıcı testinde doğrulandı.
@@ -334,7 +338,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 191 | 313 / 313 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 192 | 313 / 313 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
 | TYT Biyoloji | 36 / 36 | 22 · 80 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 14 |
 | TYT Tarih | 24 / 24 | 14 · 41 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 10 |
@@ -347,7 +351,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **405 · 1684** | **6.658 / 6.658 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
+| **Toplam** | **510 / 510** | **405 · 1685** | **6.658 / 6.658 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
