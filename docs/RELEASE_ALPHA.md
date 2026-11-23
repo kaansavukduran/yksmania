@@ -1,3 +1,10 @@
+# ÖSYM Mania 0.46.0 · Paralel kenar ve dış açı
+
+Yayın adayı.
+
+- Üçgende Açılar’da verilen iki ikizkenar üçgeni incele. İlk adım küçük üçgeni, sonraki adım büyük üçgenin tepe parçalarını gösterir.
+- Şekil, açılar ve son işlem çevrimdışı açılır.
+
 # ÖSYM Mania 0.45.0 · Eş dönüşleri çizimle çöz
 
 Yayın adayı.

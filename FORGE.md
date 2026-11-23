@@ -1,3 +1,9 @@
+# Paralel kenar ve dış açı · 0.46.0 adayı
+
+Üçgende Açılar’da özgün bir soru, iki eş ikizkenar üçgeni kullanarak taban açısını taşır. Kaynak düşünme yolu Geometri 002, sürüm 5.1 fiziksel sayfa 6 ve 2024 TYT Temel Matematik 32’nin fiziksel 34. sayfasıyla karşılaştırıldı. Özgün şeklin dış açısı 86° ve sonucu 51°. Kitapçığın fiziksel 43. sayfası resmî E cevabını verir.
+
+Şeklin kenarları, paralellik, kesişim ve 43°, 86°, 94° ve 51° açıları nokta koordinatlarından ayrı bir testle ölçüldü. Çözümün ilk çizimi küçük üçgeni büyütür, ikinci çizim büyük üçgenin taban ve tepe parçalarını gösterir. 320 piksel, %200 arayüz ve %150 yazıda önce taşan köşe etiketi, sonra çakışan β etiketleri düzeltildi. Aynı çevrimdışı klavye akışı ve SVG sınır denetimi yeniden geçti. Örnekteki adımlar ders kayıtlarına puan yazmaz.
+
 # Eş dönüşlerin çizimleri · 0.45.0 adayı
 
 Doğruda Açılar’da 2024 TYT Temel Matematik 31 ile ilişkilendirilen özgün örnek, dik köşeyi ve iki eş dış parçayı başta gösterir. İlk adım tam turun sekiz eş aralığını, ikinci adım aradaki dönüşü ve son adım derece hesabını açar. 2024 TYT kitapçığındaki fiziksel 34. sayfa ve fiziksel 43. sayfadaki D anahtarı resmî kayıt olarak görünür.

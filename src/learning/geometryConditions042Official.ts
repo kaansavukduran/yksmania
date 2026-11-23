@@ -1,6 +1,7 @@
 import type { PastExamReference } from "../domain/pastExams";
 import type { ExamTeachingCase } from "./pastExamCases";
 import { equalTurns, outerLabel, rotationIllustrations, turnAngle } from "./rayRotation045";
+import { parallelTriangles046 } from "./parallelTriangles046";
 
 export const lineAnglesReference042: PastExamReference = {
   id: "2024-TYT-MAT-31",
@@ -72,16 +73,17 @@ export const lineAnglesTeachingCase042: ExamTeachingCase = {
   illustrations: rotationIllustrations,
 };
 
+const { exteriorAngle, baseAngle, apexAngle, unknownAngle } = parallelTriangles046;
 export const triangleAnglesTeachingCase042: ExamTeachingCase = {
-  prompt:
-    "Bir ikizkenar üçgenin taban açısı β. Yardımcı bir üçgende 86° dış açının uzak iki iç açısı da β. İlk üçgenin tepe açısı β ve x olarak ikiye ayrılıyor. x kaç derecedir?",
+  prompt: `ABC ve DEF üçgenleri eş ikizkenar üçgenler. Tabanları BC ve EF. A, EF üzerinde ve F, BC üzerinde. AC ile DE paralel. AC ve DF’nin kesiştiği yerde üst açı ${exteriorAngle}°. AB ile AF arasındaki x açısını bul.`,
   steps: [
-    "Yardımcı üçgende 2β=86°, yani β=43°.",
-    "İkizkenarın iki taban açısı 43°. Tepe açısı 180°−86°=94°.",
-    "Tepe açısında 94°−43°=51° kalır.",
+    `AC ile DF’nin kesişimine G de. Paralel AC ve DE, A’daki küçük açıyı E’deki taban açısına eşit yapar. F’de aynı iki kol DEF’nin diğer taban açısını verir. İkisine β dersek G’deki dış açı 2β = ${exteriorAngle}°, yani β = ${baseAngle}°.`,
+    `Eş ABC üçgeninin B ve C taban açıları da ${baseAngle}°. Tepe açısı 180° − 2 × ${baseAngle}° = ${apexAngle}°. AF bu açıyı x ve ${baseAngle}° diye ikiye ayırır.`,
+    `${apexAngle}° − ${baseAngle}° = ${unknownAngle}°.`,
   ],
-  answer: "51°.",
-  pitfall: "86°yi tepe açısı sanmak. Bu, iki taban açısının toplamı.",
+  answer: `${unknownAngle}°.`,
+  pitfall: `${exteriorAngle}°yi tepe açısı sanmak. Bu açı iki taban açısının toplamıdır.`,
+  illustrations: parallelTriangles046,
 };
 
 export const triangleSidesTeachingCase042: ExamTeachingCase = {

@@ -1,7 +1,7 @@
 {
-  "version": "0.45.0",
+  "version": "0.46.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Doğruda Açılar’da geçmiş sınavla ilişkili örneğin çizimleri adım adım açılır. Tam turu, dik açının parçalarını ve kalan açıyı bölme işlemini çevrimdışı çalışabilirsin."
+    "tr": "Üçgende Açılar’da iki eş ikizkenar üçgen, paralel kenarlar ve dış açı aynı çözümlü örnekte çizilir. Küçük üçgeni ve tepe açısının parçalarını adım adım çevrimdışı inceleyebilirsin."
   }
 }
