@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.80.0 · Durgun sıvıda derinlik ve dolum
+
+Yayın adayı. Aynı derinlikteki kapları karşılaştır. Dik, genişleyen ve daralan bir kaba aynı debide su ekle, yükseklik ile taban basıncını aynı eğriden oku. K ve L alıştırmasında ipucu ve çözüm adımlarını sırayla aç.
+
 # ÖSYM Mania 0.79.0 · Katı basıncı
 
 Yayın adayı. Üç tuğla düzeninde zeminin taşıdığı yükü ve temas alanını karşılaştır. Homojen prizmayı düşey ve yatay kes, basıncın hangi kesimde değiştiğini çizimden izle.

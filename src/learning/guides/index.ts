@@ -4,6 +4,8 @@ import { groundingTransferExample, groundingTransferSection } from "../grounding
 import { parabolaTranslationExample, parabolaTranslationSection } from "../parabolaTranslation075";
 import { wireMaterialSection, wireResistanceExample, wireResistanceTitle } from "../wireResistance076";
 import { meterConnectionsTitle, ohmMeasurementSection, ohmSlopeExample } from "../mebiOhmReadings";
+import { brickPressureExample, brickPressureSection, uprightPrismSection } from "../mebiSolidPressure";
+import { equalDepthSection, fillingGraphExample, fillingGraphSection } from "../mebiHydrostaticFilling";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
@@ -369,6 +371,18 @@ export function studyGuide(lessonId: string) {
       }),
       examples: [...guide.examples, wireResistanceExample, ohmSlopeExample],
       source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 109, basılı 107. sayfadaki telin kesiti ve uzunluğu, metal atomları, serbest elektronlar ve 20 °C öz direnç tablosu aynı öğretim akışında işlendi. Fiziksel 111–112, basılı 109–110. sayfalardaki dört ölçü aleti bağlantısı ve dört V–I çifti ilgili çizimlerde kullanıldı.`,
+    };
+  }
+  if (guide?.id === "basinc") {
+    return {
+      ...guide,
+      sections: guide.sections.flatMap((section) => {
+        if (section.title === "Katıda önce destek kuvvetini bul") return [section, brickPressureSection, uprightPrismSection];
+        if (section.title === "Durgun sıvıda düşey derinliği ölç") return [section, equalDepthSection, fillingGraphSection];
+        return [section];
+      }),
+      examples: [...guide.examples, brickPressureExample, fillingGraphExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 132–136, basılı 130–134. Tuğla düzeni, dik prizma kesiti, eş derinlik ve sabit debili dolum grafikleri bu sayfalarla karşılaştırıldı. Sayısal kap ölçüleri örnek model değerleridir.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

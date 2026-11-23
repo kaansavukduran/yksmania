@@ -10,6 +10,7 @@ import { groundingQuestionFigures, groundingQuestionId } from "./groundingQuesti
 import { wireDiameterQuestionFigures, wireDiameterQuestionId } from "./wireResistance076Question";
 import { ohmGraphQuestionFigures, ohmGraphQuestionId } from "./ohmGraphQuestion078";
 import { solidPressureQuestionFigures, solidPressureQuestionId } from "./solidPressureQuestion079";
+import { equalDepthQuestionFigures, equalDepthQuestionId } from "./hydrostaticQuestion080";
 import {
   inverseTranslationFigures,
   inverseTranslationQuestion,
@@ -248,6 +249,14 @@ const bindings = new Map<string, FigureBinding>([
   ogmTranslationBinding(inverseTranslationQuestion, 12, "Görüntünün grafiğinden başlangıç noktası", inverseTranslationFigures),
   ogmTranslationBinding(triangleTranslationQuestion, 13, "ABC üçgeninin üç köşesinin ötelenmesi", triangleTranslationFigures),
   ...ogmGridTranslationExamples.map(({ question, page, name, figures }) => ogmTranslationBinding(question, page, name, figures)),
+  [equalDepthQuestionId, {
+    stemRevision: "0115896f31ade7",
+    helpRevision: "02990ecc0bf23c",
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 135–136. sayfalar, basılı 133–134",
+    itemLabel: "Aynı düşey derinlik, özgün soru",
+    figures: equalDepthQuestionFigures,
+  }],
   [solidPressureQuestionId, {
     stemRevision: "0e3fe1b74c953d",
     helpRevision: "11c406f4895ecb",
