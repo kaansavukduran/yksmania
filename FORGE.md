@@ -4,7 +4,7 @@ MEBİ TYT Fizik Konu Özetleri fiziksel sayfa 54, basılı sayfa 52, A’dan bı
 
 Konu modeli ve ayrı Kopya Kağıdı aynı hesap ve çizimi kullanır. 320 piksel ve %200 ölçekli öğrenci akışında klavye, etiket yerleşimi ve kayıt oluşmaması doğrulandı. Ayrı Kopya Kağıdı 430 pikselde çevrimdışı açıldı.
 
-Uzak 0.56 denetimi 320 ve 375 pikselde çekme ve sürtünme etiketlerinin yaklaştığını ölçtü. Sürtünme etiketi kendi okunun ucuna alındı. Aynı koşuda eski soru sınamasının etkin ipucu beklentisi de yenilendi. [0.56 denetimi](https://github.com/kaansavukduran/yksmania/actions/runs/45221646969)
+Uzak 0.56 denetimi 320 ve 375 pikselde çekme ve sürtünme etiketlerinin yaklaştığını ölçtü. Sürtünme etiketi kendi okunun ucuna alındı. İki genişlikte eski sıkı SVG denetimi geçti. Etkin ipucu ile önceki soru akışının kaynak şekli ve çözüm tablosu için kaydedilen kesin görsel revizyonları çevrimdışı yeniden açılışta doğrulandı. [0.56 denetimi](https://github.com/kaansavukduran/yksmania/actions/runs/45221646969)
 
 # Sıçrama yüksekliği ve mekanik enerji · 0.59.0 adayı
 

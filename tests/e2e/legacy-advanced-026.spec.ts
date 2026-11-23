@@ -10,6 +10,7 @@ import { foundation013QuestionsByLesson } from "../../src/learning/forge013Found
 import type { AppState, Lesson, Question } from "../../src/domain/model";
 import type { QuestionGuidance } from "../../src/domain/questionHelpModel";
 import { practiceQuestionView } from "../../src/learning/practiceQuestionView";
+import { signedWorkQuestionId } from "../../src/learning/signedWork055";
 
 // Expected copy comes from the accepted production question sets. These tests
 // verify routing, staged rendering, scoring flags and durable UI state; they do
@@ -357,8 +358,22 @@ for (const { lesson, question, guidance } of cases) {
       .getByRole("button", { name: "Cevabı kontrol et", exact: true })
       .click();
     await checked026Card(page, question);
+    const visualRevisions = question.id === signedWorkQuestionId
+      ? {
+          visibleFigureRevision: "10187853a7d74b",
+          solutionFigureRevision: "0d9fa89fccd484",
+        }
+      : {};
+    if (question.id === signedWorkQuestionId) {
+      await expect(page.getByRole("figure", { name: "Yer değiştirme ve verilen kuvvetler", exact: true })
+        .getByRole("img")).toBeVisible();
+      await expect(page.locator(".question-help").getByRole("figure", {
+        name: "Her kuvvetin yaptığı iş", exact: true,
+      }).getByRole("table")).toBeVisible();
+    }
     const expectedResponse = {
       questionId: question.id,
+      ...visualRevisions,
       selected: question.answer,
       correct: true,
       assisted: true,
