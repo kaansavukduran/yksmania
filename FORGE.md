@@ -1,3 +1,7 @@
+# Öz ısı ve sıcaklık değişimi · 0.65.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 65–66, basılı 63–64, öz ısı tablosu ve eşit enerjiyle ısınan su ve demiri gösteriyor. Tek veri dizisi yedi maddeyi hem J/(kg·K) hem cal/(g·°C) biçiminde veriyor. Demir için 448 J/(kg·K), yaklaşık 0,107 cal/(g·°C). Basılı kalori karşılığı 0,017, birim dönüşümüyle uyuşmuyor. Uygulamada öz ısı ve sıcaklık değişimi ayrı birimli çizimlerde. İki gerçek çevrimdışı sınama 320 px ve %200 ölçekte her iki çizimi, ayrı Kopya Kağıdı tablosunu, çözüm adımını ve korunmuş öğrenme kaydını doğruladı.
+
 # Üç termometrede aynı sıcaklık · 0.64.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 64, basılı 62. sayfada Celsius, Fahrenheit ve Kelvin sütunlarında ortak referansları gösteriyor. Aynı yükseklik üç ölçekte aynı fiziksel sıcaklık. Dönüşümde 273,15 sabiti kullanıldı. Sıcaklık farkı Celsius ile Kelvin’de aynı, Fahrenheit’ta 9/5 kat. Kaynama ve donma referansları yaklaşık 1 atmosfer için verilir. Varsayılan sıcaklık, −40 °C, 0 °C ve 100 °C çevrimdışı sınandı. 320 px ve %200 ölçekte çizim, 430 px Kopya Kağıdı ve ayrı çözüm çizimi iki gerçek kullanıcı akışında geçti.
@@ -342,7 +346,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 193 | 313 / 313 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 195 | 313 / 313 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
 | TYT Biyoloji | 36 / 36 | 22 · 80 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 14 |
 | TYT Tarih | 24 / 24 | 14 · 41 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 10 |
@@ -355,7 +359,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **405 · 1686** | **6.658 / 6.658 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
+| **Toplam** | **510 / 510** | **405 · 1688** | **6.658 / 6.658 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

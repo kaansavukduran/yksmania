@@ -117,6 +117,7 @@ import { newtonTimeTitle } from "./newtonTimeComparison";
 import { forcePairsTitle } from "./newtonForcePairs";
 import { frictionThresholdTitle } from "./newtonFrictionThreshold";
 import { cylinderPotentialTitle } from "./cylinderPotentialEnergy";
+import { equalHeatTitle, specificHeatTitle } from "./specificHeat065";
 import { exactTemperatureTitle } from "./exactTemperature064";
 import { thermalTransferTitle } from "./thermalTransfer063";
 import { hydropowerTitle } from "./hydropower062";
@@ -155,6 +156,14 @@ export interface CheatSheet {
 
 const revisedSectionTextByLesson = new Map([
   ["isi-ve-sicaklik", new Map([
+    [specificHeatTitle, [
+      "Öz ısı örnekleri J/(kg·K) cinsindeyse 4.184’e bölerek cal/(g·°C) birimine geç. Demir 448 / 4.184 ≈ 0,107.",
+      "Cismin ısı sığası C = mc, birimi J/K. Kütle değiştiğinde ısı sığası değişir.",
+    ]],
+    [equalHeatTitle, [
+      "Hâl değişimi yoksa ΔT = Q / (mc). Eşit kütle ve enerjide küçük öz ısı, daha büyük sıcaklık farkı.",
+      "1 kg su ve 1 kg demirin her birine 4.186 J verilirse sıcaklık artışları yaklaşık 1 °C ve 9,34 °C.",
+    ]],
     [exactTemperatureTitle, [
       "K = °C + 273,15 ve °F = 9 × °C / 5 + 32. Aynı yükseklik aynı fiziksel sıcaklığa karşılık gelir.",
       "Sıcaklık farkında sabit ekleme yok. 10 °C artış, 10 K ya da 18 °F artıştır.",

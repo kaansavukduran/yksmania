@@ -1,7 +1,7 @@
 {
-  "version": "0.64.0",
+  "version": "0.65.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Celsius, Fahrenheit ve Kelvin termometrelerinde aynı sıcaklığı gör. Bir sıcaklık değeriyle iki sıcaklığın farkını ayrı hesapla."
+    "tr": "Öz ısı tablosunu iki birimde oku. Su ve demirde eşit enerjiyle oluşan sıcaklık farklarını ayrı bir çizimde karşılaştır."
   }
 }

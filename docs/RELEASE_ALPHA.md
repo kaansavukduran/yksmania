@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.65.0 · Öz ısı
+
+Yayın adayı. Yedi maddenin öz ısısını aynı ölçekte karşılaştır. Ayrı çizimde su ve demire verilen enerjiyi değiştirip oluşan sıcaklık değişimini oku.
+
 # ÖSYM Mania 0.64.0 · Üç sıcaklık ölçeği
 
 Yayın adayı. Üç termometrenin aynı fiziksel sıcaklığını bir sürgüyle değiştir. Kopya Kağıdı’nda aynı referans tablosu ve sıcaklık farkı çözümü yer alır.

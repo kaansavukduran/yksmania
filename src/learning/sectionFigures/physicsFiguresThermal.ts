@@ -1,3 +1,5 @@
+import { equalHeatTitle, specificHeatTitle } from "../specificHeat065";
+import { equalHeatFigure, specificHeatFigure } from "./specificHeatFigure065";
 import { exactTemperatureTitle } from "../exactTemperature064";
 import { exactTemperatureFigure } from "./exactTemperatureFigure064";
 import { thermalTransferTitle } from "../thermalTransfer063";
@@ -59,6 +61,8 @@ const LF = 334;
 const isi: Record<string, FigureDef> = {
   [thermalTransferTitle]: thermalTransferFigure,
   [exactTemperatureTitle]: exactTemperatureFigure,
+  [specificHeatTitle]: specificHeatFigure,
+  [equalHeatTitle]: equalHeatFigure,
   "Aynı hikâyede üç farklı nicelik": {
     caption:
       "İki su örneği de 60 °C: sıcaklıkları aynıdır. Büyük örnekte (1 kg) tanecik sayısı ve toplam iç enerji küçük örnekten (0,2 kg) fazladır. Sıcaklık eşitliği iç enerji eşitliği değildir; ısı ise yalnız sıcaklık farkıyla aktarılan enerjidir.",
