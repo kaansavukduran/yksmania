@@ -1,3 +1,10 @@
+# ÖSYM Mania 0.54.0 · Silindirin potansiyel enerjisi
+
+Yayın adayı.
+
+- Silindirin kütle merkezini bul, yer ve platform arasındaki potansiyel enerjiyi karşılaştır.
+- Sıfır düzeyi, anlatım ve Kopya Kağıdı’ndaki hesapla birlikte değişir.
+
 # ÖSYM Mania 0.53.0 · Kaynak görseliyle yanlış incelemesi
 
 Yayın adayı.

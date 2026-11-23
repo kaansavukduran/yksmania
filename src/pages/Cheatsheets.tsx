@@ -5,7 +5,7 @@ import { subjects } from "../domain/content";
 import { studyTopics } from "../domain/studyPlan";
 import { Empty, SubjectMark } from "../components/Shared";
 import { StudyTimer } from "../components/StudyTimer";
-import { builtInCheatSheets } from "../learning/cheatsheetContent";
+import { builtInCheatSheets, studyCheatSheet } from "../learning/cheatsheetContent";
 import { CheatReader } from "../learning/CheatReader";
 import { TacticLibrary } from "../learning/TacticLibraryPanel";
 import "../cheatsheets.css";
@@ -18,7 +18,7 @@ export function Cheatsheets({
   topicId?: string;
 }) {
   const { l, t } = useApp();
-  const selected = topicId ? builtInCheatSheets.get(topicId) : undefined;
+  const selected = topicId ? studyCheatSheet(topicId) : undefined;
   const [exam, setExam] = useState(
     selected?.subjectId.startsWith("ayt-") ? "AYT" : "TYT",
   );

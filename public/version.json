@@ -1,7 +1,7 @@
 {
-  "version": "0.53.0",
+  "version": "0.54.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Kaynak soru görseli ve çözüm çizimleri, yanıtın verildiği sürümle eşleştiğinde Hata Merkezi’nde açılır. Cep kitapçığında asıl soru görseli de basılır."
+    "tr": "Homojen silindirin kütle merkezini çizimde bul. Yüksekliği ve sıfır düzeyini değiştirerek potansiyel enerji ile enerji farkının nasıl değiştiğini karşılaştır."
   }
 }

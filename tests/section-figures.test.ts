@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
-import { lessonGuides } from "../src/learning/guides";
+import { studyGuide } from "../src/learning/guides";
 import { sectionFigureGuideIds } from "../src/learning/sectionFigures/figureGuideIds";
 import { sectionFigures } from "../src/learning/sectionFigures/registry";
 import { SectionFigureView } from "../src/learning/sectionFigures/figureKit";
@@ -15,7 +15,7 @@ describe("section figures", () => {
 
   for (const [guideId, figures] of Object.entries(sectionFigures)) {
     describe(guideId, () => {
-      const guide = lessonGuides.get(guideId);
+      const guide = studyGuide(guideId);
       it("belongs to an existing guide section or worked solution", () => {
         expect(guide).toBeDefined();
         const requiredTitles = [

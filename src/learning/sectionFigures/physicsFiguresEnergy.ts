@@ -16,6 +16,8 @@ import {
   type V,
   type Tone,
 } from "./figureKit";
+import { cylinderPotentialTitle } from "../cylinderPotentialEnergy";
+import { cylinderPotentialFigure } from "./cylinderPotentialEnergy054";
 
 /*
  * TYT Fizik "Enerji ve hareket" section figures. Every number on a drawing
@@ -68,6 +70,7 @@ function stack(x: number, parts: [number, string, T][], scale: number, title: st
 }
 
 const enerji: Record<string, FigureDef> = {
+  [cylinderPotentialTitle]: cylinderPotentialFigure,
   "Yorulmak ile fiziksel iş aynı değildir": {
     caption:
       "F = 10 N'luk kuvvet bloğu Δr = 4 m yürütürken açıyı değiştir: işi yalnız kuvvetin yer değiştirme yönündeki bileşeni (F·cosθ) yapar. θ = 90°'de iş 0, θ > 90°'de negatiftir.",

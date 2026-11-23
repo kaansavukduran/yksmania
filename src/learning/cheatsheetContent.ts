@@ -109,13 +109,15 @@ import { forge012HistoryTopics } from "./forge012History";
 import { forge012TurkishCheatSheets } from "./forge012Turkish";
 import { lessonById, lessons } from "../domain/content";
 import { lessonTopic, studyTopicById } from "../domain/studyPlan";
-import { lessonGuides } from "./guides";
+import { lessonGuides, studyGuide } from "./guides";
 import { clarifiedGuideView } from "./guidePresentation028";
 import { narrativeById } from "./narratives";
 import { physicsCheatSheets } from "./physicsCheatSheets";
 import { newtonTimeTitle } from "./newtonTimeComparison";
 import { forcePairsTitle } from "./newtonForcePairs";
 import { frictionThresholdTitle } from "./newtonFrictionThreshold";
+import { cylinderPotentialTitle } from "./cylinderPotentialEnergy";
+import type { LessonGuide } from "./guides/types";
 
 export interface CheatSection {
   title: string;
@@ -144,6 +146,10 @@ export interface CheatSheet {
 }
 
 const revisedSectionTextByLesson = new Map([
+  ["enerji-ve-hareket", new Map([[cylinderPotentialTitle, [
+    "Dik homojen silindirin merkezi tabandan H/2 yukarıda. Taban yerden b kadar yükselirse yere göre merkez yüksekliği b + H/2 olur.",
+    "Seçilen sıfır düzeyini iki yükseklikten de çıkar. ΔU = mgΔh, sıfır düzeyiyle değişmez.",
+  ]]])],
   ["newton", new Map([
     [newtonTimeTitle, [
       "Aynı kütle ve sürede, durgun başlayan cisim için net kuvvet iki katına çıkarsa ivme, son hız ve yer değiştirme iki katına çıkar.",
@@ -267,7 +273,7 @@ const completeSourceSheets = new Set([
 // These are original application teaching texts, never unreviewed extracted book
 // pages. A sheet is created only for an actually authored lesson or reviewed pack.
 // New reviewed lessons join automatically; an outline row alone creates no content.
-function lessonSheet(id: string): CheatSheet | undefined {
+function lessonSheet(id: string, guideOverride?: LessonGuide): CheatSheet | undefined {
   const lesson = lessonById(id);
   if (!lesson || lesson.tags.includes("soru-seti")) return undefined;
   const topic = studyTopicById(lessonTopic[id]) ?? {
@@ -275,7 +281,7 @@ function lessonSheet(id: string): CheatSheet | undefined {
     title: lesson.title.tr,
     subjectId: lesson.subjectId,
   };
-  const guide = clarifiedGuideView(lessonGuides.get(id)),
+  const guide = guideOverride ?? clarifiedGuideView(lessonGuides.get(id)),
     narrative = narrativeById.get(id),
     reviewed = physicsCheatSheets.find((sheet) => sheet.topicId === topic.id);
   const firstQuestion = lesson.questions[0];
@@ -400,3 +406,13 @@ export const builtInCheatSheets = new Map<string, CheatSheet>(
     probabilitySheet036,
   ].map((sheet) => [sheet.topicId, sheet]),
 );
+
+
+// Published additions are shown in the reader without changing the original
+// catalog snapshot used by the existing preservation checks.
+export function studyCheatSheet(topicId: string): CheatSheet | undefined {
+  const sheet = builtInCheatSheets.get(topicId);
+  if (sheet?.lessonId !== "enerji-ve-hareket") return sheet;
+  const guide = studyGuide(sheet.lessonId);
+  return guide ? lessonSheet(sheet.lessonId, guide) : sheet;
+}

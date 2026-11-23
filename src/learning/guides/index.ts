@@ -1,3 +1,5 @@
+import { withCylinderPotential } from "../cylinderPotentialEnergy";
+import { clarifiedGuideView } from "../guidePresentation028";
 import { probabilityGuide036 } from "../probabilitySource036";
 import { countingGuides034035 } from "../countingSources034035";
 import { permutationGuides032033 } from "../permutationSources032033";
@@ -308,4 +310,11 @@ for (const extension of forge020BiologyGuideExtensions) {
     recall: [...original.recall, ...extension.recall],
     source: original.source + "\n" + extension.source,
   });
+}
+
+
+// The reader can extend the catalog while preserving its historical entries.
+export function studyGuide(lessonId: string) {
+  const guide = clarifiedGuideView(lessonGuides.get(lessonId));
+  return guide?.id === "enerji-ve-hareket" ? withCylinderPotential(guide) : guide;
 }
