@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
+import { legacyPublicImages } from "./scripts/legacy-public-assets.mjs";
 const appBase = process.env.YKSMANIA_BASE_PATH || "./";
 export default defineConfig({
   base: appBase,
@@ -136,8 +137,9 @@ export default defineConfig({
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         dontCacheBustURLsMatching: /assets\/.*-[\w-]{8}\./,
         globPatterns: [
-          "**/*.{js,mjs,css,html,svg,png,woff2,wasm,bcmap,pfb,ttf}",
+          "**/*.{js,mjs,css,html,svg,png,webp,woff2,wasm,bcmap,pfb,ttf}",
         ],
+        globIgnores: [...legacyPublicImages],
         navigateFallback: `${appBase === "./" ? "" : appBase}index.html`,
         cleanupOutdatedCaches: true,
         clientsClaim: true,

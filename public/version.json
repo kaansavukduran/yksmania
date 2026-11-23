@@ -1,8 +1,8 @@
 {
-  "version": "0.72.0",
+  "version": "0.73.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Öteleme, orijinde dönme, başka merkezde dönme ve bileşkeyi dört yöntem satırında karşılaştır. Merkezli dönme çiziminde yön değişirken yarıçapın korunduğunu denetle.",
-    "en": "Compare translations, rotations and operation order in one responsive table. Use the direction control to see the unchanged radius of a centered rotation."
+    "tr": "Beş OGM öteleme örneği, kaynak çizimleri ve ayrı görsel çözümleriyle çalışılabilir. Bugün ekranının iki görseli aynı pikselleri daha küçük dosyalarla yükler.",
+    "en": "Five OGM translation examples include their source diagrams and separate visual solutions. The Today screen loads the same artwork from smaller files."
   }
 }

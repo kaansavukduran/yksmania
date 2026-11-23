@@ -9,6 +9,7 @@ import { translationQuestionFigures, translationQuestionId } from "./translation
 import {
   inverseTranslationFigures,
   inverseTranslationQuestion,
+  ogmGridTranslationExamples,
   triangleTranslationFigures,
   triangleTranslationQuestion,
 } from "./ogmTranslationPractice071";
@@ -242,6 +243,7 @@ function ogmTranslationBinding(
 const bindings = new Map<string, FigureBinding>([
   ogmTranslationBinding(inverseTranslationQuestion, 12, "Görüntünün grafiğinden başlangıç noktası", inverseTranslationFigures),
   ogmTranslationBinding(triangleTranslationQuestion, 13, "ABC üçgeninin üç köşesinin ötelenmesi", triangleTranslationFigures),
+  ...ogmGridTranslationExamples.map(({ question, page, name, figures }) => ogmTranslationBinding(question, page, name, figures)),
   [translationQuestionId, {
     stemRevision: "1616a8a36ab750",
     helpRevision: "0742676b2f632f",

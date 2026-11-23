@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useApp } from "../store";
 import atlas from "../data/aion-pixel-atlas.json";
+import textureUrl from "../assets/aion-pixel.png";
 const idle = [...Array<number>(18).fill(0), 1, 2, 3, 4, 5, 6, 7];
 const clips = {
   wave: [16, 17, 18, 17, 18, 19],
@@ -167,7 +168,7 @@ export function Aion({
         <span
           className="aion-texture"
           style={{
-            backgroundImage: `url(${import.meta.env.BASE_URL}assets/aion-pixel.png)`,
+            backgroundImage: `url("${textureUrl}")`,
             width: `${atlas.columns * 100}%`,
             height: `${atlas.rows * 100}%`,
             left: `${(-(shown % atlas.columns) + anchor.x / cell) * 100}%`,

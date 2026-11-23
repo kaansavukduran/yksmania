@@ -82,7 +82,8 @@ function compute() {
     const figureLessons = ls.filter((l) => Object.keys(sectionFigures[l.id] ?? {}).length).length;
     // An "ileri" or source question set has no lesson text of its own by design:
     // its teaching lives in the base topic, so it is not a missing topic.
-    const questionSets = ls.filter((l) => !lessonGuides.has(l.id) && /-ileri$|-kaynak-sorulari-/.test(l.id)).length;
+    const questionSets = ls.filter((l) => !lessonGuides.has(l.id) &&
+      (l.tags.includes("kaynak-sorulari") || /-ileri$|-kaynak-sorulari-/.test(l.id))).length;
     const osymMine = osymRows.filter((r) => r.subject === id);
     return {
       id,

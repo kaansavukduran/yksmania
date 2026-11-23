@@ -1,5 +1,6 @@
 import { txt, type Lesson, type Question } from "../domain/model";
 import type { SourceQuestionFigureSpec } from "./SourceQuestionFigure";
+import { placeLabels, type LabelReq, type Spot } from "./sectionFigures/labelPlacement";
 
 type Point = readonly [number, number];
 type Geometry = Extract<SourceQuestionFigureSpec, { kind: "geometry" }>;
@@ -203,17 +204,168 @@ export const triangleTranslationFigures = {
   ],
 } satisfies { figure: Geometry; hintFigure: SourceQuestionFigureSpec; stepFigures: readonly SourceQuestionFigureSpec[] };
 
+const gridCell = 21;
+const gridAt = ([x, y]: Point): Point => [249 + gridCell * x, 244 - gridCell * y];
+const gridSegments: Segment[] = [
+  { from: gridAt([-8, 0]), to: gridAt([8, 0]) },
+  { from: gridAt([0, -8]), to: gridAt([0, 8]) },
+];
+const gridLabels: Label[] = [
+  { at: [450, 251], text: "x", anchor: "middle" },
+  { at: [249, 52], text: "y", anchor: "middle" },
+];
+const ticks = [-5, 0, 5];
+for (const n of ticks) {
+  gridLabels.push(
+    { at: [gridAt([n, 0])[0], 462], text: number(n), anchor: "middle" },
+    { at: [67, gridAt([0, n])[1] + 8], text: number(n), anchor: "end" },
+  );
+}
+
+function polygonOnGrid(title: string, vertices: readonly Point[], names: readonly string[], translated = false): Geometry {
+  const suffix = translated ? "′" : "";
+  const coordinates = vertices.map((point, index) => `${names[index]}${suffix}${pair(point)}`).join(", ");
+  const outline = vertices.map((point, index) => ({
+    from: gridAt(point), to: gridAt(vertices[(index + 1) % vertices.length]), emphasis: translated,
+  }));
+  const notch = !translated && names.length === 5 ? names.indexOf("D") : -1;
+  const guide: Segment[] = notch < 0 ? [] : [{
+    from: gridAt(vertices[notch]), to: gridAt([vertices[notch][0], -0.7]), dashed: true,
+  }];
+  const segments = [...gridSegments, ...guide, ...outline];
+  const points = vertices.map((point) => ({ at: gridAt(point), emphasis: translated }));
+  const baseRequests: LabelReq[] = gridLabels.map(({ at: [x, y], text, anchor }, key) => ({
+    key, text, fs: 37, weight: 500, fixed: true, spots: [{ x, y, anchor: anchor ?? "middle", dy: 0 }],
+  }));
+  const requests: LabelReq[] = points.map(({ at: [x, y] }, index) => {
+    const label = { key: index + gridLabels.length, text: `${names[index]}${suffix}`, fs: 37, weight: 500 };
+    // Give the inward corner space below the horizontal axis at large text sizes.
+    if (index === notch) {
+      return { ...label, fixed: true, spots: [{ x, y: gridAt([0, -2.5])[1], anchor: "middle", dy: 0 }] };
+    }
+    const spots: Spot[] = [
+      { x: x + 14, y: y - 8, anchor: "start", dy: 0 },
+      { x: x - 14, y: y - 8, anchor: "end", dy: 0 },
+      { x: x + 14, y: y + 28, anchor: "start", dy: 0 },
+      { x: x - 14, y: y + 28, anchor: "end", dy: 0 },
+      { x, y: y - 15, anchor: "middle", dy: 0 },
+      { x, y: y + 44, anchor: "middle", dy: 0 },
+      { x: x + 26, y: y + 10, anchor: "start", dy: 0 },
+      { x: x - 26, y: y + 10, anchor: "end", dy: 0 },
+      { x: x + 35, y: y + 32, anchor: "start", dy: 0 },
+      { x: x - 35, y: y + 32, anchor: "end", dy: 0 },
+      { x: x + 35, y: y - 20, anchor: "start", dy: 0 },
+      { x: x - 35, y: y - 20, anchor: "end", dy: 0 },
+      { x: x + 27, y: y + 58, anchor: "start", dy: 0 },
+      { x: x - 27, y: y + 58, anchor: "end", dy: 0 },
+      { x: x + 27, y: y - 34, anchor: "start", dy: 0 },
+      { x: x - 27, y: y - 34, anchor: "end", dy: 0 },
+    ];
+    return { ...label, spots };
+  });
+  const placements = placeLabels(
+    [...baseRequests, ...requests],
+    segments.map(({ from, to }) => [...from, ...to]),
+    points.map(({ at: [x, y] }) => ({ x0: x - 5, y0: y - 5, x1: x + 5, y1: y + 5 })),
+    480,
+    484,
+  );
+  const labels: Label[] = [...baseRequests, ...requests].map(({ key, text }) => {
+    const { x, y, anchor } = placements.get(key)!.spot;
+    return { at: [x, y], text, anchor };
+  });
+  return {
+    kind: "geometry",
+    title,
+    alt: `Birim kareli koordinat düzlemi. ${translated ? "Ötelenen" : "Başlangıç"} köşeler ${coordinates}.`,
+    caption: null,
+    viewBox: [0, 0, 480, 484],
+    grid: { from: gridAt([-8, 8]), to: gridAt([8, -8]), cell: gridCell },
+    segments,
+    labels,
+    points,
+  };
+}
+
+function polygonTranslation(
+  page: number,
+  name: string,
+  vertices: readonly string[],
+  start: readonly Point[],
+  shift: Point,
+  correctIndex: number,
+) {
+  const [h, k] = shift;
+  const end = start.map((point) => add(point, shift));
+  const right = { coordinates: end, reason: `İki bileşen bütün köşelere eklendi. Sonuç ${pointsText(end)}.` };
+  const alternatives = [
+    { vector: [-h, k] as Point, reason: "Yatay bileşenin işareti ters. Düşey hareket doğru." },
+    { vector: [h, -k] as Point, reason: "Yatay hareket doğru. Düşey bileşenin işareti ters." },
+    { vector: [-h, -k] as Point, reason: "İlk verilen ötelemenin ters vektörü uygulanmış." },
+    { vector: [h, 0] as Point, reason: "Yalnız yatay hareket uygulanmış. Düşey bileşen de kullanılmalı." },
+  ].map(({ vector, reason }) => ({ coordinates: start.map((point) => add(point, vector)), reason }));
+  alternatives.splice(correctIndex, 0, right);
+  const names = vertices.join(", ");
+  const horizontal = h > 0 ? "sağa" : "sola";
+  const vertical = k > 0 ? "yukarı" : "aşağı";
+  const textVector = `${Math.abs(h)} birim ${horizontal}, ${Math.abs(k)} birim ${vertical}`;
+  const equation = `${vertices[0]}′ = ${pair(start[0])} + ${pair(shift)} = ${pair(end[0])}`;
+  const question = {
+    id: `ayt-geo-ogm-oteleme-gorsel-${page}-071`,
+    prompt: txt(`Şekildeki ${name} ${textVector} öteleniyor. ${vertices.map((vertex) => `${vertex}′`).join(", ")} köşelerinin koordinatları sırasıyla nedir?`),
+    options: alternatives.map(({ coordinates }) => txt(pointsText(coordinates))),
+    answer: correctIndex,
+    hint: txt("Birim kareleri başlangıçtan say. Aynı yatay ve düşey hareketi her köşeye uygula."),
+    explanation: txt(`${textVector} hareketin vektörü ${pair(shift)}. Her köşeye bu vektör eklenir. Sırayla ${pointsText(end)} elde edilir.`),
+    skill: "Birim kareli düzlemde köşeleri öteleme",
+    guidance: {
+      knowledge: ["Eksenlerin kesişim noktası başlangıçtır. Her kare her iki eksende bir birimdir."],
+      strategy: "Yatay hareket yalnız x'i, düşey hareket yalnız y'yi değiştirir. Köşe sırasını koru.",
+      steps: [
+        `Verilen yönlerden (Δx; Δy) = ${pair(shift)} yaz.`,
+        `${equation}. İlk köşenin iki koordinatı da değişti.`,
+        `Kalan köşelerde aynı işlemi yap. ${vertices.map((vertex, i) => `${vertex}′${pair(end[i])}`).join(", ")}.`,
+      ],
+      optionReasons: alternatives.map(({ reason }) => reason),
+      commonError: "Yönü doğru okuduktan sonra köşelerden birinde farklı bir vektör kullanma.",
+      check: `Görüntü köşelerine ${pair([-h, -k])} eklediğinde başlangıçtaki ${names} köşeleri geri gelir.`,
+    },
+  } satisfies Question;
+  const figures = {
+    figure: polygonOnGrid(`${name} · kaynakta verilen konum`, start, vertices),
+    hintFigure: {
+      kind: "table",
+      title: `${name} · yönleri eksenlere yerleştir`,
+      alt: `Yatay hareket ${textVector.split(", ")[0]}. Düşey hareket ${textVector.split(", ")[1]}.`,
+      headers: ["Eksen", "Hareket"],
+      rows: [["x", `${Math.abs(h)} birim ${horizontal}`], ["y", `${Math.abs(k)} birim ${vertical}`]],
+    },
+    stepFigures: [
+      { kind: "math", title: "Hareketi vektör olarak yaz", alt: `Öteleme vektörü ${pair(shift)}.`, expression: { kind: "text", text: `(Δx; Δy) = ${pair(shift)}` } },
+      { kind: "math", title: "İlk köşeyi taşı", alt: equation, expression: { kind: "text", text: equation } },
+      polygonOnGrid(`${name} · ötelemeden sonraki konum`, end, vertices, true),
+    ],
+  } satisfies { figure: Geometry; hintFigure: SourceQuestionFigureSpec; stepFigures: readonly SourceQuestionFigureSpec[] };
+  return { page, name, question, figures };
+}
+
+export const ogmGridTranslationExamples = [
+  polygonTranslation(17, "ABCD dörtgeni", ["A", "B", "C", "D"], [[1, 1], [5, 3], [5, 6], [2, 6]], [-6, -7], 3),
+  polygonTranslation(20, "ABC üçgeni", ["A", "B", "C"], [[3, 6], [1, 2], [5, 4]], [2, -4], 0),
+  polygonTranslation(22, "ABCDE beşgeni", ["A", "B", "C", "D", "E"], [[5, 4], [2, 4], [1, 1], [3, 2], [6, 1]], [-4, -3], 2),
+];
+
 export const ogmTranslationPractice = {
   id: "ayt-geo-ogm-oteleme-071",
   subjectId: "ayt-geometri",
   title: txt("Öteleme · OGM kaynak alıştırmaları"),
-  minutes: 6,
+  minutes: 12,
   objectives: [
     txt("Grafikten verilen görüntüyü oku ve başlangıç noktasına dön."),
     txt("Aynı ötelemeyi üçgenin bütün köşelerine uygula."),
   ],
   body: [],
   tags: ["soru-seti", "kaynak-sorulari"],
-  source: txt("OGM Materyal, Öteleme Dönüşümü, fiziksel 12–13. sayfalar. Verilen koordinatlar ve hareketler kaynak örneklerindendir. Çizimler, şıklar ve ayrıntılı çözümler uygulama için hazırlandı."),
-  questions: [inverseTranslationQuestion, triangleTranslationQuestion],
+  source: txt("OGM Materyal, Öteleme Dönüşümü, fiziksel 12, 13, 17, 20 ve 22. sayfalar. Verilen koordinatlar ve hareketler kaynak örneklerindendir. Çizimler, şıklar ve ayrıntılı çözümler uygulama için hazırlandı."),
+  questions: [inverseTranslationQuestion, triangleTranslationQuestion, ...ogmGridTranslationExamples.map(({ question }) => question)],
 } satisfies Lesson;

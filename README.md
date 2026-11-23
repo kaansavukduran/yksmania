@@ -4,6 +4,8 @@
 
 **Son yayımlanan web ve masaüstü sürümü 0.42.0**. Açıortayları ve ortak kenarlı üçgenleri çevrimdışı inceleyebilirsin. [Windows ve Linux 0.42](https://github.com/kaansavukduran/yksmania/releases/tag/v0.42.0-alpha.1) · [Android 0.42 kişisel deneme arşivi](https://github.com/kaansavukduran/yksmania/actions/runs/45187782506/artifacts/14823994107)
 
+**0.73.0 adayı** beş OGM öteleme örneğini soru, görsel ipucu ve adım adım çözümle sunuyor. Bugün ekranındaki iki görsel daha az veriyle yükleniyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+
 **0.72.0 adayı** dönüşüm yöntemlerini karşılaştıran tabloyu ve merkezli dönme çizimini dersle Kopya Kağıdı’nda bir araya getiriyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.71.0 adayı** OGM’nin iki öteleme örneğini kendi koordinat çizimleriyle soru kartına taşıyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
@@ -66,7 +68,7 @@
 
 **0.42.0 adayı** üç geometri konusunu genişletiyor. İç ve dış açıortayları aynı üçgende karşılaştırabilir, ortak kenar değişince hangi üçgenlerin çizilebildiğini görebilirsin. Üç konuya 14 özgün alıştırma, dört çözümlü örnek ve kısa Kopya Kağıdı bölümleri eklendi. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
-- **Bu daldaki içerik:** 510 hazır konu anlatımı, 510 konuluk çalışma planı ve 6.657 çalışma sorusu. **Temel İnşa (0. basamak):** isteğe bağlı 25 ön ders (10 TYT dersinin hepsi): TYT Matematik 7 (işlem önceliği, negatif sayılar, kesirler, ondalık, üslü–köklü giriş, harfli ifade ve terazi, alan modeliyle çarpanlara ayırma), Geometri 3 (nokta–doğru–açı, açıölçer ve birimler, üçgen–dörtgen tanıma), Fizik 4 (SI dönüşümleri, bilimsel gösterim, orantı, grafikte eğim ve alan), Kimya 3 (madde sınıfları, hâl değişimi, sembol ve yüzde), Biyoloji 2 (canlı–cansız ve yapı basamakları, mikro–makro ölçek), Türkçe 2 (sözcük–cümle–paragraf, kök–ek ve aktif okuma), Coğrafya (yön, ölçek, koordinat), Tarih (yüzyıl, çağ, MÖ–MS), Felsefe (argüman okuma), Din Kültürü (temel kavram haritası), sayfa sayfa ↔ tümünü gör, dokunulabilir şekil, çözümlü örnek ve özgün kontrol sorularıyla; plana, XP'ye ve tekrar takvimine girmez. Kontrol sorularında yalnız ilk cevap saklanır; bütün kontrolleri ilk denemede doğru çözülen ön dersler “Temel İnşa” kupasına sayılır. Bugün ekranında tek tıkla Akıllı oturum (15/30/60 dk karma pratik, konu etiketi gizli; önce açık hatalar) ve düşük enerjili günler için 5 dk kurtarma; F tuşuyla Zen odak modu. Deneme sonuçlarında soru sırasına göre doğruluk ve +5 Net Pusulası. Konu anlatımlarında “Sayfa sayfa (k/N)” ↔ “Tümünü gör” geçişi ve üstte yapışkan konum çubuğu var. Ders, figür, çözüm paneli ve kaynak sayıları aşağıdaki ilerleme tablosunda bulunur. Figürlerdeki seçilebilir öğelere (ör. inkılap ve Millî Mücadele olayları, su molekülünün bağları) tıklayınca ayrıntı kartı açılır. Her soruda 1–10 tahmini zorluk yıldızı (ders içi eşit dilim) ve Sınavlar'da yıldıza göre alıştırma var. Kupalar (35) özgün SVG amblemli ve bronz/gümüş/altın/platin metalli; doğru, seri, yanlış, onarım, 21. gün mührü ve kupa sesleri cihazda sentezlenir (Ayarlar'dan açılır, ses seviyesi ayarlanır). Birleşik Forge planı: [docs/FORGE_MASTER_PLAN.md](docs/FORGE_MASTER_PLAN.md). Drive kopya kâğıtlarından işlenenler ve sayılar [docs/ISLEME_SAYACI.md](docs/ISLEME_SAYACI.md)'dedir; tüm MEB/OGM/MEBİ PDF'leri ve 20 yıllık ÖSYM arşivi henüz tamamlanmadı.
+- **Bu daldaki içerik:** 510 hazır konu anlatımı, 510 konuluk çalışma planı ve 6.663 çalışma sorusu. **Temel İnşa (0. basamak):** isteğe bağlı 25 ön ders (10 TYT dersinin hepsi): TYT Matematik 7 (işlem önceliği, negatif sayılar, kesirler, ondalık, üslü–köklü giriş, harfli ifade ve terazi, alan modeliyle çarpanlara ayırma), Geometri 3 (nokta–doğru–açı, açıölçer ve birimler, üçgen–dörtgen tanıma), Fizik 4 (SI dönüşümleri, bilimsel gösterim, orantı, grafikte eğim ve alan), Kimya 3 (madde sınıfları, hâl değişimi, sembol ve yüzde), Biyoloji 2 (canlı–cansız ve yapı basamakları, mikro–makro ölçek), Türkçe 2 (sözcük–cümle–paragraf, kök–ek ve aktif okuma), Coğrafya (yön, ölçek, koordinat), Tarih (yüzyıl, çağ, MÖ–MS), Felsefe (argüman okuma), Din Kültürü (temel kavram haritası), sayfa sayfa ↔ tümünü gör, dokunulabilir şekil, çözümlü örnek ve özgün kontrol sorularıyla; plana, XP'ye ve tekrar takvimine girmez. Kontrol sorularında yalnız ilk cevap saklanır; bütün kontrolleri ilk denemede doğru çözülen ön dersler “Temel İnşa” kupasına sayılır. Bugün ekranında tek tıkla Akıllı oturum (15/30/60 dk karma pratik, konu etiketi gizli; önce açık hatalar) ve düşük enerjili günler için 5 dk kurtarma; F tuşuyla Zen odak modu. Deneme sonuçlarında soru sırasına göre doğruluk ve +5 Net Pusulası. Konu anlatımlarında “Sayfa sayfa (k/N)” ↔ “Tümünü gör” geçişi ve üstte yapışkan konum çubuğu var. Ders, figür, çözüm paneli ve kaynak sayıları aşağıdaki ilerleme tablosunda bulunur. Figürlerdeki seçilebilir öğelere (ör. inkılap ve Millî Mücadele olayları, su molekülünün bağları) tıklayınca ayrıntı kartı açılır. Her soruda 1–10 tahmini zorluk yıldızı (ders içi eşit dilim) ve Sınavlar'da yıldıza göre alıştırma var. Kupalar (35) özgün SVG amblemli ve bronz/gümüş/altın/platin metalli; doğru, seri, yanlış, onarım, 21. gün mührü ve kupa sesleri cihazda sentezlenir (Ayarlar'dan açılır, ses seviyesi ayarlanır). Birleşik Forge planı: [docs/FORGE_MASTER_PLAN.md](docs/FORGE_MASTER_PLAN.md). Drive kopya kâğıtlarından işlenenler ve sayılar [docs/ISLEME_SAYACI.md](docs/ISLEME_SAYACI.md)'dedir; tüm MEB/OGM/MEBİ PDF'leri ve 20 yıllık ÖSYM arşivi henüz tamamlanmadı.
 - **Görsel kalite:** Figür kiti etiketlerin piksel kutusunu dikeyde de hesaplar (çerçeve dışı etiket 0); eksen sayıları içerik etiketine çarparsa gizlenir. Otomatik yazı çakışma denetimi her yeni figürde 0 bulguyla geçer.
 - **Faz 1 teknik:** Giriş paketi 5,11 MB → 0,22 MB (içerik ayrı parçalarda, en büyük 3,09 MB; çevrimdışı önbellek sınırı 5 MiB). Karalama kâğıdı kapatınca korunur, Geri al ve ince/kalın kalem; şık kısayolları ve seçim çipleri sağlamlaştırıldı; yer haritaları eşit panelli, fare tekerleği ve sürüklemeyle yakınlaşır.
 - **0.35.0 yayın doğrulaması**. Ana dalda 4.505 birim, 1.438 tarayıcı testi ve Windows/Linux paket çalışması geçti. Canlı yayındaki 341 dosya paketle eşleşti. 114 içerik grubu çevrimdışı açıldı. Masaüstü yayınının altı dosyası kendi SHA-256 özetiyle eşleşti. [Ana dal CI](https://github.com/kaansavukduran/yksmania/actions/runs/45134714276) · [Pages](https://github.com/kaansavukduran/yksmania/actions/runs/45139679705) · [Geliştirme kaydı](FORGE.md)
@@ -90,26 +92,26 @@ Tablo, bu daldaki uygulama envanterini ve sürüm kayıtlarını gösterir. PDF 
 | TYT Felsefe | 17 / 17 | 10 · 35 | 190 / 190 · %100,00 | 3 / 17 · %17,65 | 89 soru · 9 kitapçık | 7 |
 | TYT Din | 20 / 20 | 14 · 52 | 371 / 371 · %100,00 | 3 / 20 · %15,00 | 46 soru · 9 kitapçık | 6 |
 | AYT Matematik | 17 / 17 | 17 · 38 | 253 / 253 · %100,00 | 2 / 17 · %11,76 | 273 soru · 9 kitapçık | 0 |
-| AYT Geometri | 4 / 5 | 4 · 52 | 42 / 42 · %100,00 | 1 / 4 · %25,00 | 87 soru · 9 kitapçık | 1 |
+| AYT Geometri | 4 / 4 | 4 · 52 | 45 / 45 · %100,00 | 1 / 4 · %25,00 | 87 soru · 9 kitapçık | 0 |
 | AYT Fizik | 46 / 46 | 41 · 152 | 541 / 541 · %100,00 | 7 / 46 · %15,22 | 126 soru · 9 kitapçık | 5 |
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 511** | **405 · 1692** | **6.660 / 6.660 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **106** |
+| **Toplam** | **510 / 510** | **405 · 1692** | **6.663 / 6.663 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
 | Tarihsel dal kaydı: okunan veya eşlenen PDF / eski envanter | 119 / 8.981 |
 | Tarihsel 99_ÖSYM kaydı: uygulama karşılığı olan / 20 Kasım envanteri | 18 / 1.001 |
 | 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 76 |
-| Kademeli çözüm paneli bulunan soru | 6.660 / 6.660 · %100,00 |
+| Kademeli çözüm paneli bulunan soru | 6.663 / 6.663 · %100,00 |
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
 | Ara hatırlama (mikro ritim): ders · soru | 505 / 510 · %99,02 · 3.052 soru |
 | Gösterim onarımı: soru alanı · ders paragrafı | 962 · 1.634 |
 | Kopya kâğıdı (kısmi aktarım / toplam) | 109 / 517 · %21,08 |
-| Resmî ana başlık · anlatımlı konu · hazır anlatım | 341 · 511 · 510 |
-| İleri ve kaynak soru seti (anlatımı ana konusunda) | 35 |
+| Resmî ana başlık · anlatımlı konu · hazır anlatım | 341 · 510 · 510 |
+| İleri ve kaynak soru seti (anlatımı ana konusunda) | 36 |
 <!-- ilerleme:bitir -->
 
 ---

@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.73.0 · Birim karelerde öteleme
+
+Yayın adayı. OGM örneklerinde önce birim karelerden köşeleri oku. İpucunda yatay ve düşey yönleri ayır. Son çözüm adımındaki görüntüyü soru kartındaki başlangıç çizimiyle aynı ölçekte karşılaştır. Bugün ekranının arka planı ve Aion çizimi daha küçük dosyalarla çevrimdışı kullanılabilir.
+
 # ÖSYM Mania 0.72.0 · Dönüşüm yöntemleri
 
 Yayın adayı. Öteleme, dönme ve işlem sırasını karşılaştır. Dönme yönünü değiştirerek merkeze uzaklığın değişmediğini çizimde gör. Aynı tablo ve çözümlü örnek ayrı Kopya Kağıdı’nda yer alır.

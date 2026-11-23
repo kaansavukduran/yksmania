@@ -26,6 +26,7 @@ export type SourceQuestionFigureSpec = FigureDescription &
     | {
         kind: "geometry";
         viewBox: readonly [number, number, number, number];
+        grid?: { from: Coordinate; to: Coordinate; cell: number };
         segments?: readonly {
           from: Coordinate;
           to: Coordinate;
@@ -271,6 +272,10 @@ function geometryIsFinite(
     figure.viewBox.every(Number.isFinite) &&
     figure.viewBox[2] > 0 &&
     figure.viewBox[3] > 0 &&
+    (!figure.grid ||
+      (finitePoint(figure.grid.from) && finitePoint(figure.grid.to) &&
+        figure.grid.to[0] > figure.grid.from[0] && figure.grid.to[1] > figure.grid.from[1] &&
+        Number.isFinite(figure.grid.cell) && figure.grid.cell > 0)) &&
     (figure.segments ?? []).every(
       (line) => finitePoint(line.from) && finitePoint(line.to),
     ) &&
@@ -355,6 +360,22 @@ export function SourceQuestionFigure({
         >
           <title id={`${uid}-title`}>{figure.title}</title>
           <desc id={`${uid}-description`}>{figure.alt}</desc>
+          {figure.grid && (
+            <>
+              <defs>
+                <pattern id={`${uid}-grid`} patternUnits="userSpaceOnUse" x={figure.grid.from[0]} y={figure.grid.from[1]} width={figure.grid.cell} height={figure.grid.cell}>
+                  <path className="source-figure-grid-line" d={`M ${figure.grid.cell} 0 H 0 V ${figure.grid.cell}`} />
+                </pattern>
+              </defs>
+              <rect
+                x={figure.grid.from[0]}
+                y={figure.grid.from[1]}
+                width={figure.grid.to[0] - figure.grid.from[0]}
+                height={figure.grid.to[1] - figure.grid.from[1]}
+                fill={`url(#${uid}-grid)`}
+              />
+            </>
+          )}
           {(figure.segments ?? []).map((line, i) => (
             <line
               key={`line-${i}`}

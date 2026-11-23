@@ -1,3 +1,9 @@
+# Birim karelerde öteleme ve çevrimdışı görseller · 0.73.0 adayı
+
+OGM Öteleme Dönüşümü fiziksel 17, 20 ve 22’deki dörtgen, üçgen ve girintili beşgen, 12 ve 13’teki iki örneğe eklendi. İlk çizimde kaynak konumu ve birim kareler gösteriliyor. İpucundaki tablo her hareketi kendi eksenine yerleştiriyor. Son çözüm adımı, hesaplanan şekli soru çizimiyle aynı ölçekte açıyor. İçerik denetimi şekle atıf yapan bir soruda, o soru sürümüne bağlı kök görselini arıyor.
+
+Bugün ekranının arka planı kayıpsız WebP olarak, saydam Aion çizimi daha küçük PNG olarak paketleniyor. İkisinin toplamı yaklaşık 931 kB azaldı. Eski PNG adresleri eski kurulumlar için kullanılabilir. Yeni uygulama çevrimdışı önbelleğe içerik imzalı güncel dosyaları alıyor. Canlı Cloudflare tam kabulü ayrı izleniyor.
+
 # Dönüşüm yöntemini seç · 0.72.0 adayı
 
 Dönüşümler Kopya Kâğıdı fiziksel 2, 7 ve 8’deki şekil ve karşılaştırma tablosu yeniden işlendi. Ders ile ayrı Kopya Kağıdı aynı dört yöntemi, örnekleri ve yakın hataları gösteriyor. Dar ekranda sütun adları her satırın yanında okunuyor. Merkezli dönme modelinde −90° için P′(0; −2), +90° için P′(4; 4). İki durumda da uzaklığın karesi 13. Kaynak grafiği ilgili çözüm adımında açılıyor.
@@ -390,26 +396,26 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Felsefe | 17 / 17 | 10 · 35 | 190 / 190 · %100,00 | 3 / 17 · %17,65 | 89 soru · 9 kitapçık | 7 |
 | TYT Din | 20 / 20 | 14 · 52 | 371 / 371 · %100,00 | 3 / 20 · %15,00 | 46 soru · 9 kitapçık | 6 |
 | AYT Matematik | 17 / 17 | 17 · 38 | 253 / 253 · %100,00 | 2 / 17 · %11,76 | 273 soru · 9 kitapçık | 0 |
-| AYT Geometri | 4 / 5 | 4 · 52 | 42 / 42 · %100,00 | 1 / 4 · %25,00 | 87 soru · 9 kitapçık | 1 |
+| AYT Geometri | 4 / 4 | 4 · 52 | 45 / 45 · %100,00 | 1 / 4 · %25,00 | 87 soru · 9 kitapçık | 0 |
 | AYT Fizik | 46 / 46 | 41 · 152 | 541 / 541 · %100,00 | 7 / 46 · %15,22 | 126 soru · 9 kitapçık | 5 |
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 511** | **405 · 1692** | **6.660 / 6.660 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **106** |
+| **Toplam** | **510 / 510** | **405 · 1692** | **6.663 / 6.663 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
 | Tarihsel dal kaydı: okunan veya eşlenen PDF / eski envanter | 119 / 8.981 |
 | Tarihsel 99_ÖSYM kaydı: uygulama karşılığı olan / 20 Kasım envanteri | 18 / 1.001 |
 | 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 76 |
-| Kademeli çözüm paneli bulunan soru | 6.660 / 6.660 · %100,00 |
+| Kademeli çözüm paneli bulunan soru | 6.663 / 6.663 · %100,00 |
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
 | Ara hatırlama (mikro ritim): ders · soru | 505 / 510 · %99,02 · 3.052 soru |
 | Gösterim onarımı: soru alanı · ders paragrafı | 962 · 1.634 |
 | Kopya kâğıdı (kısmi aktarım / toplam) | 109 / 517 · %21,08 |
-| Resmî ana başlık · anlatımlı konu · hazır anlatım | 341 · 511 · 510 |
-| İleri ve kaynak soru seti (anlatımı ana konusunda) | 35 |
+| Resmî ana başlık · anlatımlı konu · hazır anlatım | 341 · 510 · 510 |
+| İleri ve kaynak soru seti (anlatımı ana konusunda) | 36 |
 <!-- ilerleme:bitir -->
 
 # Forge051 — 0.25.0 adayı: Temel İnşa (0. basamak), kupa, hata merkezi ve tek kaynaklı konu sayısı

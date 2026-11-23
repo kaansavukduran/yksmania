@@ -4005,7 +4005,7 @@ progress::-moz-progress-bar {
 .study-landscape {
   position: absolute;
   inset: 0;
-  background-image: url("/assets/study-world.png");
+  background-image: url("./assets/study-world.webp");
   background-size: cover;
   background-position: center bottom;
   image-rendering: pixelated;

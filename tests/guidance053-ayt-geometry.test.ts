@@ -11,12 +11,13 @@ const cards = lessons
   .flatMap((l) => l.questions)
   .map((raw) => {
     const q = localizedQuestionView(raw) as never as Record<string, unknown> & { options: unknown[]; id: string; answer: number };
-    return { id: q.id, prompt: text(q.prompt), passage: q.passage ? text(q.passage) : undefined, options: q.options.map(text), answer: q.answer, explanation: text(q.explanation), hint: text(q.hint) || undefined };
+    return { id: q.id, prompt: text(q.prompt), passage: q.passage ? text(q.passage) : undefined, options: q.options.map(text), answer: q.answer, explanation: text(q.explanation), hint: text(q.hint) || undefined, guidance: raw.guidance };
   });
 
 describe("053 AYT Geometri adım adım çözüm", () => {
   it("every AYT Geometri card now has knowledge, method, steps and a reason per option", () => {
-    expect(cards).toHaveLength(40);
+    expect(rows).toHaveLength(40);
+    expect(cards).toHaveLength(45);
     for (const c of cards) {
       const g = resolvedGuidance(c);
       expect(g, c.id).toBeDefined();

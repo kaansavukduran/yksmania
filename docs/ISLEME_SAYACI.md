@@ -12,7 +12,7 @@ Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış i�
 | Belirsiz | 9.979 |
 | Toplam | 9.984 |
 
-Tam aktarımı doğrulanan güncel satır sayısı sıfır. Arşivde gerçekte kaç PDF’nin tam işlendiği belirsiz. Kanonik envanter güncellemesi okuma sayısını değiştirmedi. Daha sonra güncel üç geometri PDF’sine 36 fiziksel sayfa okuma ve kısmi öğretim bağı eklendi.
+Tam aktarımı doğrulanan güncel satır sayısı sıfır. Arşivde gerçekte kaç PDF’nin tam işlendiği belirsiz. Güncel sürüme bağlı okuma kayıtları 152 PDF ve 1.972 fiziksel sayfayı kapsıyor. Üç geometri PDF’sine 36 sayfa okuma ve kısmi öğretim bağı eklendi. OGM Öteleme Dönüşümü ve Dönüşümler Kopya Kâğıdı’nın toplam 37 fiziksel sayfası metin ve görüntü olarak incelendi. Bu iki kaynak için madde ve yayın kabulü sürüyor.
 
 ## Açı ve kenar koşulları · 23 Kasım 2026
 

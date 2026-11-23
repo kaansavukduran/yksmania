@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { legacyPublicImages, replacementImageFormats } from "./legacy-public-assets.mjs";
 
 const root = path.resolve(process.argv[2] || "dist");
 const sw = await fs.readFile(path.join(root, "sw.js"), "utf8");
@@ -12,6 +13,15 @@ for (const match of sw.matchAll(/\{url:"([^"]+)",revision:(null|"[^"]+")\}/g)) {
   cached.set(url, revision);
 }
 if (!cached.has("index.html")) throw Error("Invalid offline cache manifest");
+for (const oldImage of legacyPublicImages) {
+  await fs.access(path.join(root, oldImage));
+  if (cached.has(oldImage)) throw Error(`Legacy PNG should be served outside the current precache: ${oldImage}`);
+  const base = oldImage.slice(0, -4);
+  const extension = replacementImageFormats[oldImage];
+  const replacement = [...cached].filter(([url]) => url.startsWith(`${base}-`) && url.endsWith(`.${extension}`));
+  if (replacement.length !== 1 || replacement[0][1] !== "null")
+    throw Error(`Expected one fingerprinted offline ${extension} for ${oldImage}`);
+}
 
 async function walk(dir) {
   const files = [];
@@ -29,7 +39,8 @@ const required = (await walk(root)).filter((file) => {
   const name = path.relative(root, file).split(path.sep).join("/");
   return (
     !/^(?:sw|workbox-[^/]+)\.js$/.test(name) &&
-    /\.(?:js|mjs|css|html|svg|png|woff2|wasm|bcmap|pfb|ttf)$/.test(name)
+    !legacyPublicImages.includes(name) &&
+    /\.(?:js|mjs|css|html|svg|png|webp|woff2|wasm|bcmap|pfb|ttf)$/.test(name)
   );
 });
 let total = 0;
