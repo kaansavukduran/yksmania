@@ -1,7 +1,7 @@
 {
-  "version": "0.56.0",
+  "version": "0.57.0",
   "channel": "alpha",
   "notes": {
-    "tr": "İş ile gücü ayırmak için aynı yolu iki farklı sürede al. Çekme ve sürtünmenin işini, kinetik enerji farkını ve ortalama gücü çizimle karşılaştır."
+    "tr": "Sıkışmış yay sorusunda doğal boyu ve verilen sapmayı çizimde oku. Kuvvetin yönü ve depolanan enerji ayrı adımlarda açılır."
   }
 }

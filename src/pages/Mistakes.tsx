@@ -23,7 +23,7 @@ import { osymTopicCount } from "../domain/trapDeck";
 import { TrapDeck } from "../components/TrapDeck";
 import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
 import { sourceQuestionPresentation } from "../learning/sourceExercises024";
-import { signedWorkPracticeView } from "../learning/signedWork055";
+import { practiceQuestionView } from "../learning/practiceQuestionView";
 import { savedSourceVisuals } from "../learning/sourceVisualRevisions";
 
 const subjectOrder = subjects.map((s) => s.id);
@@ -76,7 +76,7 @@ export function Mistakes({
             : undefined;
           const progress = repairProgress(state.sessions, s, r.questionId, state.examSessions, twinId);
           const displayed = question ? localizedQuestionView(question) : undefined;
-          const helpQuestion = displayed ? signedWorkPracticeView({
+          const helpQuestion = displayed ? practiceQuestionView({
             id: displayed.id,
             passage: displayed.passage ? l(displayed.passage) : undefined,
             prompt: l(displayed.prompt),

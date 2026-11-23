@@ -3,6 +3,7 @@ import type { SourceQuestionFigureSpec } from "./SourceQuestionFigure";
 import { forceAccelerationFigures, forceAccelerationQuestion } from "./forceAccelerationPractice";
 import { forceVelocityFigureData, forceVelocityQuestion } from "./forceVelocityOptions048";
 import { signedWorkFigures, signedWorkQuestionId } from "./signedWork055";
+import { springWorkFigures, springWorkQuestionId } from "./springWork057";
 
 const crossingQuestionId = "tyt-geo-acilar-kaynak-pekitirme-032-source-001-no-parallel";
 const givenAngle = 64;
@@ -203,6 +204,14 @@ const velocityQuestion = {
 };
 
 const bindings = new Map<string, FigureBinding>([
+  [springWorkQuestionId, {
+    stemRevision: "0769df545d6ceb",
+    helpRevision: "1f4a779297adca",
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 51. sayfa, basılı 49. sayfa",
+    itemLabel: "Geri çağırıcı kuvvet ve yayda depolanan enerji, özgün veriler",
+    figures: springWorkFigures,
+  }],
   [signedWorkQuestionId, {
     stemRevision: "1db6e0681c8d4c",
     helpRevision: "103046e3ea5ea8",

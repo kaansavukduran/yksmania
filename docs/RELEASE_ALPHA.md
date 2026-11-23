@@ -1,3 +1,10 @@
+# ÖSYM Mania 0.57.0 · Sıkışan yayın kuvveti
+
+Yayın adayı.
+
+- Sıkışmış yayın doğal boyunu ve hareket yönünü aynı kartta gör.
+- Kuvvet oku ve enerji hesabı yalnız kendi çözüm adımında görünür. Son tablo eşit büyüklükte uzama ile sıkışmayı karşılaştırır.
+
 # ÖSYM Mania 0.56.0 · Aynı iş, farklı güç
 
 Yayın adayı.

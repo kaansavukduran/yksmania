@@ -1,3 +1,9 @@
+# Doğal boy ve sıkışmış yay · 0.57.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel sayfa 51, basılı sayfa 49, doğal boyu, sıkışan ve uzayan yayı, dengeye yönelen kuvveti çiziyor. Var olan Yayın Kuvveti ve Enerjisi öğretim modeli üç konumu hareketli olarak gösteriyor. Özgün soru kartının 100 N/m ve −0,20 m verilenleri kendi çiziminde duruyor. İpucu uç ile doğal boyu karşılaştırır. Kuvvet oku, karesel enerji hesabı ve eşit büyüklükteki iki sapmanın tablosu açıldıkları adımlarda gösterilir.
+
+Sıkışmada +20 N ve uzamada −20 N elde edilir. Her iki durumda 2 J depolanır. Geçmiş soru ve kişisel ipucunun içeriği korunur. Yalnız canlı soru ve yeni deneme kâğıdı açıklayıcı ipucunu alır. 320 piksel ve %200 ölçekte iki gerçek çevrimdışı soru akışı geçti. Ek denetimde kesilen eksen etiketi fark edildi; çizim yeniden yerleştirildi ve tüm etiket sınırları yeniden ölçüldü. Çözüm açma ve grafiği inceleme öğrenme kaydı oluşturmadı.
+
 # Aynı iş, farklı ortalama güç · 0.56.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel sayfa 48, basılı sayfa 46, sürtünmenin yaptığı işi yönle ve ortalama gücü birim zamanla açıklıyor. Uygulamadaki özgün 4 kg kutu 6 m yol alır. Çekmenin işi +72 J, sürtünmenin işi −24 J, kinetik enerjideki artış +48 J. Süre 2 saniyeden 1 saniyeye indiğinde çekmenin ortalama gücü 36 W’tan 72 W’a çıkar. İki farklı süre için başlangıç hızı modelde yeniden hesaplanır.

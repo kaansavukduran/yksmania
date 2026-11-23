@@ -4,7 +4,8 @@ import { localizedQuestionView } from "../src/domain/questionPresentation";
 import type { Question } from "../src/domain/model";
 import { forge026PhysicsLessons } from "../src/learning/forge026Physics";
 import { sourceQuestionPresentation } from "../src/learning/sourceExercises024";
-import { signedWorkFigures, signedWorkPracticeView, signedWorkQuestionId } from "../src/learning/signedWork055";
+import { practiceQuestionView } from "../src/learning/practiceQuestionView";
+import { signedWorkFigures, signedWorkQuestionId } from "../src/learning/signedWork055";
 
 const flat = (question: Question) => ({
   id: question.id,
@@ -20,7 +21,7 @@ it("uses the same forces as the registered card without revealing their work in 
   const raw = forge026PhysicsLessons.flatMap((lesson) => lesson.questions).find((question) => question.id === signedWorkQuestionId)!;
   const historical = flat(localizedQuestionView(raw));
   expect(historical.hint).toBe(raw.hint.tr);
-  const current = signedWorkPracticeView(historical);
+  const current = practiceQuestionView(historical);
   const presentation = sourceQuestionPresentation(current);
   expect(presentation?.figure).toBe(signedWorkFigures.figure);
   expect(presentation?.hintFigure).toBe(signedWorkFigures.hintFigure);
@@ -33,11 +34,11 @@ it("uses the same forces as the registered card without revealing their work in 
   expect(newPaper.hint).toBe(current.hint);
   expect(sourceQuestionPresentation(newPaper)?.stepFigures).toBe(signedWorkFigures.stepFigures);
   expect(sourceQuestionPresentation(flat(raw))?.hintFigure).toBeUndefined();
-  const alternate = signedWorkPracticeView({ ...historical, hint: "Önce kuvvetleri karşılaştır." });
+  const alternate = practiceQuestionView({ ...historical, hint: "Önce kuvvetleri karşılaştır." });
   expect(alternate.hint).toBe("Önce kuvvetleri karşılaştır.");
   expect(sourceQuestionPresentation(alternate)?.figure).toBe(signedWorkFigures.figure);
   expect(sourceQuestionPresentation(alternate)?.hintFigure).toBeUndefined();
   expect(sourceQuestionPresentation({ ...current, answer: 0 })).toBeUndefined();
   const stale = { ...historical, answer: 0 };
-  expect(signedWorkPracticeView(stale)).toBe(stale);
+  expect(practiceQuestionView(stale)).toBe(stale);
 });
