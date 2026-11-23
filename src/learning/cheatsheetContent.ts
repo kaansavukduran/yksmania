@@ -466,7 +466,7 @@ export const builtInCheatSheets = new Map<string, CheatSheet>(
 export function studyCheatSheet(topicId: string): CheatSheet | undefined {
   const sheet = builtInCheatSheets.get(topicId);
   const lessonId = sheet?.lessonId;
-  if (!lessonId || !["enerji-ve-hareket", "isi-ve-sicaklik", "hal-degisimi", "donusum-oteleme-donme", "durgun-elektrik"].includes(lessonId)) return sheet;
+  if (!lessonId || !["enerji-ve-hareket", "isi-ve-sicaklik", "hal-degisimi", "donusum-oteleme-donme", "durgun-elektrik", "elektrik-akimi"].includes(lessonId)) return sheet;
   const guide = studyGuide(lessonId);
   return guide ? lessonSheet(lessonId, guide) : sheet;
 }

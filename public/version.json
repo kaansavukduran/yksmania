@@ -1,8 +1,8 @@
 {
-  "version": "0.75.0",
+  "version": "0.76.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Öteleme ve Dönme dersinde iki parabolün tepe ve işaretli noktalarını aynı düzlemde karşılaştır. Yatay ve düşey hareketi değiştir, yeni kuralı çözümde izle.",
-    "en": "Compare the vertices and marked points of two parabolas. Change the horizontal and vertical translation, then read the new rule in the worked example."
+    "tr": "Elektrik Akımı dersinde telin boyunu, kesitini ve malzemesini değiştir. Çapla alanın farkını çizimden, ayrı Kopya Kağıdı’ndan ve adım adım sorudan incele.",
+    "en": "Change a wire’s length, cross-sectional area, and material. Compare diameter and area with the diagram, separate study sheet, and guided practice."
   }
 }

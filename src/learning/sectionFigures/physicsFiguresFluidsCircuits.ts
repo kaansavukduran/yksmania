@@ -18,6 +18,8 @@ import {
   type V,
 } from "./figureKit";
 
+import { wireResistanceFigures } from "./wireResistance076Figures";
+
 const rect = (x: number, y: number, w: number, h: number, tone: "a" | "b" | "c" | "muted" | "ink", fill = true): El =>
   poly([v(x, y), v(x + w, y), v(x + w, y + h), v(x, y + h)], { fill: fill ? (tone === "ink" ? "muted" : tone) : undefined, tone, thin: !fill });
 const force = (from: V, d: V, label: string, tone: "a" | "b" | "c" | "warn" = "a", at: "n" | "s" | "e" | "w" | "ne" | "se" | "nw" | "sw" = "e"): El[] => [
@@ -357,21 +359,7 @@ const elektrik: Record<string, FigureDef> = {
       };
     },
   },
-  "Telin boyu ve kesit alanı farklı etki yapar": {
-    caption:
-      "R = ρL/A. Boyu iki katına çıkan tel iki kat direnç gösterir; çapı iki katına çıkan telin kesit alanı dört kat olduğundan direnci dörtte bire iner.",
-    alt: "Üç tel: başlangıç teli; iki kat uzun tel; çapı iki kat kalın tel; yanlarında R, 2R ve R/4.",
-    draw: () => ({
-      els: [
-        rect(0, 3, 3, 0.3, "c"),
-        txt(v(3.3, 3.15), "L, A → R", "e", { small: true }),
-        rect(0, 1.6, 6, 0.3, "c"),
-        txt(v(6.3, 1.75), "2L, A → 2R", "e", { small: true, tone: "a" }),
-        rect(0, 0, 3, 0.6, "c"),
-        txt(v(3.3, 0.3), "L, çap 2 kat (A 4 kat) → R/4", "e", { small: true, tone: "b" }),
-      ],
-    }),
-  },
+  ...wireResistanceFigures,
   "Seri bağda aynı akım, paylaşılan gerilim": {
     caption:
       "12 V kaynağa seri 2 Ω ve 4 Ω: eşdeğer 6 Ω, akım 2 A her ikisinden de geçer. Gerilim dirençle orantılı paylaşılır: 4 V ve 8 V.",

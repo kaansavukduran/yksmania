@@ -7,6 +7,7 @@ import { signedWorkFigures, signedWorkQuestionId } from "./signedWork055";
 import { springWorkFigures, springWorkQuestionId } from "./springWork057";
 import { translationQuestionFigures, translationQuestionId } from "./translationQuestion069";
 import { groundingQuestionFigures, groundingQuestionId } from "./groundingQuestion074";
+import { wireDiameterQuestionFigures, wireDiameterQuestionId } from "./wireResistance076Question";
 import {
   inverseTranslationFigures,
   inverseTranslationQuestion,
@@ -245,6 +246,14 @@ const bindings = new Map<string, FigureBinding>([
   ogmTranslationBinding(inverseTranslationQuestion, 12, "Görüntünün grafiğinden başlangıç noktası", inverseTranslationFigures),
   ogmTranslationBinding(triangleTranslationQuestion, 13, "ABC üçgeninin üç köşesinin ötelenmesi", triangleTranslationFigures),
   ...ogmGridTranslationExamples.map(({ question, page, name, figures }) => ogmTranslationBinding(question, page, name, figures)),
+  [wireDiameterQuestionId, {
+    stemRevision: "0647144f869d04",
+    helpRevision: "1d04a3863e2cfd",
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 109. sayfa, basılı 107",
+    itemLabel: "Telin kesit alanı ve çapı, özgün soru",
+    figures: wireDiameterQuestionFigures,
+  }],
   [groundingQuestionId, {
     stemRevision: "04f0132ea048cb",
     helpRevision: "095446dea4a790",

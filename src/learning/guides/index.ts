@@ -2,6 +2,7 @@ import { rotationFromCenterExample, rotationFromCenterSection, transformationMet
 import { electroscopeExample, electroscopeSection } from "../electroscopeInduction070";
 import { groundingTransferExample, groundingTransferSection } from "../groundingTransfer074";
 import { parabolaTranslationExample, parabolaTranslationSection } from "../parabolaTranslation075";
+import { wireMaterialSection, wireResistanceExample, wireResistanceTitle } from "../wireResistance076";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
@@ -353,6 +354,16 @@ export function studyGuide(lessonId: string) {
       sections: [...guide.sections, electroscopeSection, groundingTransferSection],
       examples: [...guide.examples, electroscopeExample, groundingTransferExample],
       source: `${guide.source} Yüklü elektroskoba temassız yaklaşma, MEBİ TYT Fizik Konu Özetleri fiziksel 94–96, basılı 92–94. sayfalarla karşılaştırıldı. Çizimdeki yerel yükler örnek model değerleridir. Fiziksel 99–100, basılı 97–98. sayfalardaki iki topraklama şemasının elektron hareketi aynı sayısal modelde gösterilir.`,
+    };
+  }
+  if (guide?.id === "elektrik-akimi") {
+    return {
+      ...guide,
+      sections: guide.sections.flatMap((section) => section.title === wireResistanceTitle
+        ? [{ ...section, figureTitle: wireResistanceTitle }, wireMaterialSection]
+        : [section]),
+      examples: [...guide.examples, wireResistanceExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 109, basılı 107. sayfadaki telin kesiti ve uzunluğu, metal atomları, serbest elektronlar ve 20 °C öz direnç tablosu aynı öğretim akışında işlendi. Dairesel telde A kesit alanını, d çapı gösterir.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

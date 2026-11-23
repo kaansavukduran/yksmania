@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.76.0 · Telin direnci
+
+Yayın adayı. Elektrik Akımı’nda önce telin boyunu, sonra kesit alanını ve çapını değiştir. 20 °C’de üç malzemeyi aynı ölçülerde karşılaştır. Ayrı Kopya Kağıdı ve özgün sorunun şekli, ipucu ve üç çözüm adımı aynı bağıntıyı kullanır.
+
 # ÖSYM Mania 0.75.0 · İki parabolde aynı öteleme
 
 Yayın adayı. T ile T′nin koordinatlarını karşılaştır, sonra aynı hareketi C ile C′ üzerinde denetle. Öteleme miktarı değişince grafik ve iki görüntü noktası birlikte güncellenir. Ayrı Kopya Kağıdı’nda tablo ve çözümlü örnek bulunur.
