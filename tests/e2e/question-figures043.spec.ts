@@ -1,5 +1,7 @@
 import { expect, test, type Locator } from "@playwright/test";
 import { openCourse, prepare, storage } from "./helpers/revisedCourse";
+import { examDraftSchema } from "../../src/domain/examModel";
+import { lineAnglesPractice042 } from "../../src/learning/geometryConditions042Practice";
 
 test.use({
   locale: "tr-TR",
@@ -110,4 +112,86 @@ test("geometri sorusunun verilen, ipucu ve çözüm çizimleri yalnız ilgili ad
   await page.locator(".answer-options .answer").first().click();
   await page.getByRole("button", { name: "Cevabı kontrol et", exact: true }).click();
   await expect.poll(async () => (await storage(page)).draft?.responses.at(-1)?.assisted).toBe(true);
+});
+
+test("kayıtlı deneme ve sonuç sayfası yalnız eşleşen soru sürümünün çizimini açar", async ({ page, context }) => {
+  await prepare(page);
+  const existing = await storage(page);
+  const angle = lineAnglesPractice042[2];
+  const now = new Date("2026-11-23T12:00:00Z").getTime();
+  const fixture = examDraftSchema.parse({
+    id: "exam:source-figures-revision-fixture",
+    title: "Görsel sürüm denetimi",
+    kind: "branch",
+    exam: "TYT",
+    items: [
+      {
+        id: "n1",
+        lessonId: "newton",
+        subjectId: "tyt-fizik",
+        subjectName: "Fizik",
+        lessonTitle: "Kuvvet ve Newton yasaları",
+        prompt: "2 kg cisme sağa 10 N, sola 4 N uygulanıyor. İvme?",
+        options: ["Sağa 3 m/s²", "Sağa 7 m/s²", "Sola 3 m/s²"],
+        answer: 0,
+        explanation: "Fnet=10−4=6 N sağa; a=6/2=3 m/s² sağa.",
+        hint: "Önce net kuvveti bul, sonra kütleye böl.",
+      },
+      {
+        id: angle.id,
+        lessonId: "tyt-geo-acilar-kaynak-pekitirme-032",
+        subjectId: "tyt-geometri",
+        subjectName: "Geometri",
+        lessonTitle: "Geometrinin dili: kaynakla pekiştir",
+        prompt: angle.prompt.tr + " Yedekteki eski soru metni.",
+        options: angle.options.map((option) => option.tr),
+        answer: angle.answer,
+        explanation: angle.explanation.tr,
+      },
+    ],
+    answers: [null, null],
+    flagged: [],
+    index: 0,
+    startedAt: now,
+    deadline: now + 600_000,
+    durationSeconds: 600,
+    mode: "learning",
+    helpEnabled: true,
+    helpLevels: [0, 0],
+  });
+  // Represent an existing saved exam. All reopening, assistance and finish actions use the normal UI.
+  await page.evaluate((state) => new Promise<void>((resolve, reject) => {
+    const request = indexedDB.open("yksmania", 2);
+    request.onerror = () => reject(request.error);
+    request.onsuccess = () => {
+      const db = request.result;
+      const tx = db.transaction("state", "readwrite");
+      tx.objectStore("state").put(state, "current");
+      tx.oncomplete = () => { db.close(); resolve(); };
+      tx.onabort = () => { db.close(); reject(tx.error); };
+    };
+  }), { ...existing, examDraft: fixture });
+  await context.setOffline(true);
+  await page.goto("/#/exams");
+  expect((await page.reload())?.fromServiceWorker()).toBe(true);
+  const exam = page.locator(".exam-question");
+  await expect(exam.getByRole("figure", { name: "Cisme etki eden kuvvetler", exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "İpucu al", exact: true }).click();
+  await expect(exam.getByRole("figure", { name: "Sağı pozitif seç", exact: true })).toBeVisible();
+  expect((await storage(page)).examDraft?.helpLevels?.[0]).toBe(1);
+  await page.getByRole("button", { name: "Soru 2, boş", exact: true }).click();
+  await expect(exam.getByRole("heading", { level: 2 })).toContainText("Yedekteki eski soru metni.");
+  await expect(exam.locator(".source-question-figure")).toHaveCount(0);
+  await page.getByRole("button", { name: "Denemeyi bitir", exact: true }).click();
+  await page.getByRole("dialog").getByRole("button", { name: "Bitir ve sonucu gör", exact: true }).click();
+  const results = page.locator(".exam-solution");
+  await expect(results).toHaveCount(2);
+  await results.first().locator("summary").click();
+  await expect(results.first().getByRole("figure", { name: "Cisme etki eden kuvvetler", exact: true })).toBeVisible();
+  await results.last().locator("summary").click();
+  await expect(results.last().locator(".source-question-figure")).toHaveCount(0);
+  const finished = await storage(page);
+  expect(finished.examSessions.at(-1)?.items).toEqual(fixture.items);
+  expect(finished.sessions).toEqual(existing.sessions);
+  expect(finished.reviews).toEqual(existing.reviews);
 });
