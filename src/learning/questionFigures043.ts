@@ -15,6 +15,7 @@ import { pistonQuestionFigures, pistonQuestionId } from "./pascalQuestion081";
 import { bottomForceQuestionFigures, bottomForceQuestionId } from "./bottomForceQuestion082";
 import { manometerQuestionFigures, manometerQuestionId } from "./manometerQuestion084";
 import { barometerQuestionFigures, barometerQuestionId } from "./barometerQuestion086";
+import { rigidGasQuestionFigures, rigidGasQuestionId } from "./rigidGasQuestion087";
 import {
   inverseTranslationFigures,
   inverseTranslationQuestion,
@@ -276,6 +277,14 @@ const bindings = new Map<string, FigureBinding>([
     pageLabel: "Fiziksel 139. sayfa, basılı 137",
     itemLabel: "Barometrede düşey yükseklik, özgün soru",
     figures: barometerQuestionFigures,
+  }],
+  [rigidGasQuestionId, {
+    stemRevision: "1ba3bfbca1a448",
+    helpRevision: "0cc974c21ed282",
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 140. sayfa, basılı 138",
+    itemLabel: "Rijit gaz kabında sıcaklık, özgün soru",
+    figures: rigidGasQuestionFigures,
   }],
   [pistonQuestionId, {
     stemRevision: "122891ad73ac0c",

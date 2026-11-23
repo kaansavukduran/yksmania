@@ -85,6 +85,11 @@ const pressureFigureFixtures = new Map([
     description: /3 santimetrekare.*45 newton.*12 santimetrekare/,
     revisions: { visibleFigureRevision: "0d4d3e1c77d39e", solutionFigureRevision: "0ac11b83aaeaa9" },
   }],
+  ["basinc-q6", {
+    title: "Rijit kabın ilk ve son sıcaklığı",
+    description: /300 kelvin.*80 kilopaskal.*450 kelvin.*basınç bilinmiyor/,
+    revisions: { visibleFigureRevision: "169ea05ec2ac9d", solutionFigureRevision: "10ca2a427a40d4" },
+  }],
   ["basinc-q7", {
     title: "Açık uçlu su manometresi",
     description: /0,2 metre alçak.*100000 paskal/,

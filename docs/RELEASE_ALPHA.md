@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.87.0 · Rijit kapta üç gaz deneyi
+
+Yayın adayı. Önce değişmeyen nicelikleri belirle, sonra yeni sıcaklık, hacim veya gaz miktarının basınca etkisini çizimde oku.
+
 # ÖSYM Mania 0.86.0 · Barometrede düşey yükseklik ve eğim
 
 Yayın adayı. Atmosfer basıncını iki yükseklikte oku. Dik ve eğik tüpte sıvı yoğunluğunu değiştirip düşey yüksekliği karşılaştır.
