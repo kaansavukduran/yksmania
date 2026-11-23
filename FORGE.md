@@ -6,6 +6,8 @@ Zamanlayıcılar kapatıldığında kum saati ve deneme sayacı güncelleme dön
 
 Yerel `check`, derleme ve 13 tarayıcı testi geçti. Tam yerel birim koşusunda 4.046 test geçti ve değişmeyen çözüm rehberi testi 5 saniyede zaman aşımına uğradı. Aynı testi içeren 41 testlik hedefli tekrar geçti. AIONIA v1.7’nin ilgili maddeleri 23 Kasım’da canlı kaynaktan doğrulandı.
 
+Altı temel geometri dersinde etkileşimli model, ayrı yüklenen bölüm şeklinin önüne alındı. Önceki sürümde şeklin yüklenmesi üçgenin sürükleme alanını 561 piksel kaydırdı. Gecikmeli yükleme sırasında gerçek sürükleme dört tekrarda da hedef köşeye ulaştı. Çevrimdışı kayıt, klavye ve 320 px dahil beş geometri testi geçti. Dalın tam yayın doğrulaması sürüyor.
+
 Görsel çalışma bundan sonraki turda mevcut Claude dalındaki 56 ders ve 242 figür üzerinden devam eder. Figür sayıları uygulama envanterinden, PDF aktarım sayıları kanonik defterden alınır. Öğretim ve laboratuvar kabulü kendi kanıtını gerektirir.
 
 # 0.26.0 masaüstü doğrulaması

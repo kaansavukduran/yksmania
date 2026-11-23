@@ -55,6 +55,24 @@ async function open(page: Page, id: string) {
   await expect(page.locator('input[type="file"]')).toHaveCount(0);
   return lab;
 }
+const triangleChapterFigure =
+  '[data-section-figure="Üç köşe bir üçgeni nasıl oluşturur?"] svg';
+
+async function vertexDragCoordinates(vertex: Locator) {
+  return vertex.evaluate((node: SVGCircleElement) => {
+    const matrix = node.getScreenCTM();
+    if (!matrix) throw new Error("The drag handle is outside the rendered SVG");
+    const section = node.closest(".guide-section");
+    if (!section) throw new Error("The drag handle is outside the lesson section");
+    const start = new DOMPoint(node.cx.baseVal.value, node.cy.baseVal.value);
+    const target = new DOMPoint(450, 130);
+    return {
+      start: start.matrixTransform(matrix).toJSON(),
+      target: target.matrixTransform(matrix).toJSON(),
+      offset: matrix.f - section.getBoundingClientRect().top,
+    };
+  });
+}
 async function range(lab: Locator, name: string, target: number) {
   const input = lab.getByRole("slider", { name, exact: true });
   const min = Number(await input.getAttribute("min")),
@@ -265,24 +283,11 @@ test("dragging a real vertex has keyboard equivalents, ends cleanly, and survive
   await page.goto("/#/settings");
   await setThemePreference(page, "dark");
   const lab = await open(page, "ucgende-acilar");
-  // The preceding lesson figure loads separately and moves the lab when it mounts.
-  const chapterFigure = page.locator(
-    '[data-section-figure="Üç köşe bir üçgeni nasıl oluşturur?"] svg',
-  );
-  await expect(chapterFigure).toBeVisible();
+  await expect(page.locator(triangleChapterFigure)).toBeVisible();
   const before = learning(await stored(page));
   const vertex = lab.getByTestId("g031-drag-vertex");
   await vertex.scrollIntoViewIfNeeded();
-  const { start, target } = await vertex.evaluate((node: SVGCircleElement) => {
-    const matrix = node.getScreenCTM();
-    if (!matrix) throw new Error("The drag handle is outside the rendered SVG");
-    const start = new DOMPoint(node.cx.baseVal.value, node.cy.baseVal.value);
-    const target = new DOMPoint(450, 130);
-    return {
-      start: start.matrixTransform(matrix).toJSON(),
-      target: target.matrixTransform(matrix).toJSON(),
-    };
-  });
+  const { start, target } = await vertexDragCoordinates(vertex);
   await page.mouse.move(start.x, start.y);
   await page.mouse.down();
   await page.mouse.move(target.x, target.y, { steps: 12 });
@@ -314,7 +319,9 @@ test("a delayed lesson figure keeps the triangle lab in place during a drag", as
 }) => {
   await page.setViewportSize({ width: 1280, height: 1200 });
   let resumeFigure: () => void = () => {};
-  const figurePaused = new Promise<void>((resolve) => { resumeFigure = resolve; });
+  const figurePaused = new Promise<void>((resolve) => {
+    resumeFigure = resolve;
+  });
   let figureRequested = false;
   await page.route("**/assets/registry-*.js", async (route) => {
     figureRequested = true;
@@ -323,32 +330,17 @@ test("a delayed lesson figure keeps the triangle lab in place during a drag", as
   });
   try {
     const lab = await open(page, "ucgende-acilar");
-    const chapterFigure = page.locator(
-      '[data-section-figure="Üç köşe bir üçgeni nasıl oluşturur?"] svg',
-    );
+    const chapterFigure = page.locator(triangleChapterFigure);
     await expect.poll(() => figureRequested).toBe(true);
     await expect(chapterFigure).toHaveCount(0);
     const vertex = lab.getByTestId("g031-drag-vertex");
     await vertex.scrollIntoViewIfNeeded();
-    const position = () => vertex.evaluate((node: SVGCircleElement) => {
-      const matrix = node.getScreenCTM();
-      if (!matrix) throw new Error("The drag handle is outside the rendered SVG");
-      const start = new DOMPoint(node.cx.baseVal.value, node.cy.baseVal.value);
-      const target = new DOMPoint(450, 130);
-      const section = node.closest(".guide-section");
-      if (!section) throw new Error("The drag handle is outside the lesson section");
-      return {
-        start: start.matrixTransform(matrix).toJSON(),
-        target: target.matrixTransform(matrix).toJSON(),
-        offset: matrix.f - section.getBoundingClientRect().top,
-      };
-    });
-    const before = await position();
+    const before = await vertexDragCoordinates(vertex);
     await page.mouse.move(before.start.x, before.start.y);
     await page.mouse.down();
     resumeFigure();
     await expect(chapterFigure).toBeVisible();
-    const after = await position();
+    const after = await vertexDragCoordinates(vertex);
     await page.mouse.move(before.target.x, before.target.y, { steps: 12 });
     await page.mouse.up();
     expect(Math.abs(after.offset - before.offset)).toBeLessThan(1);
