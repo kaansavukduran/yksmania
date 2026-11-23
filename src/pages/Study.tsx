@@ -12,6 +12,7 @@ import {
   localDate,
 } from "../domain/scheduler";
 import type { Draft, Lesson, Session } from "../domain/model";
+import { draftQuestionCount } from "../domain/studyDraft";
 import { learningReviewPlan } from "../domain/learningReviews";
 import { Aion } from "../components/Aion";
 import { PastExamQuestions } from "../components/PastExamQuestions";
@@ -40,6 +41,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
       </section>
     );
   const subject = subjectById(lesson.subjectId)!;
+  const questionCount = draftQuestionCount(draft, lesson.questions.length);
   const question = localizedQuestionView(lesson.questions[draft.index]);
   const helpQuestion = {
     id: question.id,
@@ -116,7 +118,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
   };
   const next = async () => {
     if (!draft.checked || busy) return;
-    if (draft.index < lesson.questions.length - 1) {
+    if (draft.index < questionCount - 1) {
       patch({
         index: draft.index + 1,
         selected: null,
@@ -171,7 +173,8 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
   // opens through the regular next() step, so the session record, its order
   // and the Today counts stay exactly as before. This item keeps its own
   // (assisted) answer, which is why it must be answered first.
-  const following = lesson.questions[draft.index + 1];
+  const following =
+    draft.index + 1 < questionCount ? lesson.questions[draft.index + 1] : undefined;
   const similar: SimilarOffer = !following
     ? {
         kind: "none",
@@ -179,7 +182,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
           "Bu ders setinde bu oturumda görülmemiş soru kalmadı; benzerini sonraki tekrarında yardımsız dene.",
       }
     : (() => {
-        const label = `Soru ${draft.index + 2} / ${lesson.questions.length} (aynı ders seti${
+        const label = `Soru ${draft.index + 2} / ${questionCount} (aynı ders seti${
           following.skill && following.skill === lesson.questions[draft.index].skill ? ", aynı alt beceri" : ""
         })`;
         return draft.checked
@@ -248,7 +251,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
         <section className="panel question-panel">
           <div className="question-meta">
             <span>
-              {t("question")} {draft.index + 1} / {lesson.questions.length}
+              {t("question")} {draft.index + 1} / {questionCount}
             </span>
             <span className="small muted">
               {sourcePresentation?.source.shortLabel ?? t("original")}
@@ -257,7 +260,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
           <progress
             aria-label={t("progress")}
             value={draft.responses.length}
-            max={lesson.questions.length}
+            max={questionCount}
           />
           {question.passage && (
             <section className="question-passage" aria-label="Sorunun metni">
@@ -358,7 +361,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
                   {busy
                     ? t("saving")
                     : t(
-                        draft.index === lesson.questions.length - 1
+                        draft.index === questionCount - 1
                           ? "finish"
                           : "next",
                       )}

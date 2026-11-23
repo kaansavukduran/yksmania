@@ -264,6 +264,7 @@ function NamingLab() {
       ) : (
         <>
           <svg
+            key={sample.id}
             viewBox="0 0 520 245"
             role="img"
             aria-label={`${result.formula}: ${result.firstCount} ${sample.first} ve ${result.secondCount} ${sample.second} atomu; sayı sayımı, molekül geometrisi değildir.`}

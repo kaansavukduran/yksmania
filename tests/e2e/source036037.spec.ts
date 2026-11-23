@@ -5,6 +5,7 @@ import currentLinearCards from "../fixtures/source010-current-question-flow.json
 import { test, expect, type Page, type Locator } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import type { AppState } from "../../src/domain/model";
+import { linearEquationsSource036Lessons } from "../../src/learning/linearEquationsSource036";
 import { setThemePreference } from "./helpers/theme";
 import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
 // @ts-expect-error The shared executable acceptance harness is plain JavaScript.
@@ -516,6 +517,64 @@ test("the current systems lesson reopens its graph and amount model offline with
   expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
   await tanks.locator("svg").scrollIntoViewIfNeeded();
   await page.screenshot({ path: info.outputPath("current-system-320-offline.png") });
+});
+
+test("a restored linear-equations draft finishes at its original 42nd question offline", async ({
+  page,
+  context,
+}) => {
+  const unit = units[0];
+  const [lesson] = linearEquationsSource036Lessons;
+  const originalSize = 42;
+  const lastIndex = originalSize - 1;
+  const oldQuestion = flow.units.find((candidate) => candidate.id === unit.id)!.cards[lastIndex];
+  await page.goto("/#/settings");
+  await setThemePreference(page, "dark");
+  await ready(page);
+  const before = await stored(page);
+  expect(before).toBeDefined();
+  const draft = {
+    lessonId: unit.id,
+    phase: "practice" as const,
+    index: lastIndex,
+    responses: lesson.questions.slice(0, lastIndex).map((question) => ({
+      questionId: question.id,
+      selected: question.answer,
+      correct: true,
+      assisted: false,
+      confidence: "medium" as const,
+    })),
+    selected: lesson.questions[lastIndex].answer,
+    checked: false,
+    hint: false,
+    confidence: "medium" as const,
+    note: "Güncellemeden önceki çalışma notu",
+    startedAt: Date.now() - 60_000,
+  };
+  const backup: AppState = { ...before, draft };
+  await context.setOffline(true);
+  await page.locator('input[type="file"]').setInputFiles({
+    name: "previous-progress.json",
+    mimeType: "application/json",
+    buffer: Buffer.from(JSON.stringify(backup)),
+  });
+  await page.getByRole("dialog").getByRole("button", { name: "Yedeği geri yükle", exact: true }).click();
+  await expect(page.locator(".toast")).toHaveText("Yedek geri yüklendi.");
+  await enter(page, unit);
+  await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
+  await expect(page.locator(".question-meta")).toContainText("42 / 42");
+  await expect(page.locator(".question-panel h2")).toHaveText(typeset(oldQuestion.prompt));
+  expect((await stored(page)).draft).toEqual(draft);
+  await page.getByRole("button", { name: "Cevabı kontrol et", exact: true }).click();
+  await expect(page.locator(".feedback.correct")).toBeVisible();
+  await expect(page.getByRole("button", { name: "Sonraki soru", exact: true })).toHaveCount(0);
+  await page.getByRole("button", { name: "Çalışmayı kaydet", exact: true }).click();
+  await expect(page.locator(".result-stats > div strong")).toHaveText(["42/42", "42/42", "0"]);
+  const finished = await stored(page);
+  expect(finished.draft).toBeNull();
+  expect(finished.sessions.at(-1)?.note).toBe(draft.note);
+  expect(finished.sessions.at(-1)?.responses.slice(0, lastIndex)).toEqual(draft.responses);
+  expect(finished.sessions.at(-1)?.responses[lastIndex]?.questionId).toBe(lesson.questions[lastIndex].id);
 });
 
 for (const unit of units)

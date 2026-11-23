@@ -4,6 +4,8 @@ Yayın adayı. Birinci Dereceden Denklemler’in 18 sayfalık güncel kaynağın
 
 Önceki 42 soru aynı kimliklerle korunuyor. 2024 TYT Temel Matematik 17 için asıl kitapçık ve C anahtarı doğrulandı. Öğrencinin çözebileceği özgün süre örneği ayrıca sunuluyor. [İlerleme tablosu](ILERLEME.md)
 
+Güncellemeden önce açık olan denklem ve bilimsel gösterim oturumları kendi soru sayısıyla tamamlanır. Yeni oturum güncel soru setini açar.
+
 ---
 
 # YKSMania 0.28.0 · Güncel matematik kaynakları

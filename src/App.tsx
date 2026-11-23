@@ -232,6 +232,7 @@ export default function App() {
             lessonId: lesson.id,
             phase: "practice",
             index: 0,
+            questionCount: lesson.questions.length,
             responses: [],
             selected: null,
             checked: false,

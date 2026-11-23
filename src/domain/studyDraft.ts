@@ -1,0 +1,16 @@
+import type { Draft } from "./model";
+
+// Earlier builds stored the current question but did not store the set length.
+// Revised lessons keep the original questions in order before the new ones.
+const legacyPracticeSizes = new Map([
+  ["bilimsel-gosterim-katsayi", 10],
+  ["tyt-mat-dogrusal-denklemler-kaynak-036", 42],
+]);
+
+export function draftQuestionCount(draft: Draft, available: number): number {
+  const legacySize = legacyPracticeSizes.get(draft.lessonId);
+  const openedSize =
+    draft.questionCount ??
+    (legacySize !== undefined && draft.index < legacySize ? legacySize : available);
+  return Math.min(available, Math.max(openedSize, draft.index + 1, draft.responses.length));
+}

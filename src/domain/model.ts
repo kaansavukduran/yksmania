@@ -95,6 +95,7 @@ export const draftSchema = z.object({
   lessonId: id,
   phase: z.enum(["read", "practice", "result"]),
   index: z.number().int().min(0).max(100),
+  questionCount: z.number().int().min(1).max(100).optional(),
   responses: z.array(responseSchema).max(100),
   selected: z.number().int().min(0).max(10).nullable(),
   checked: z.boolean(),
