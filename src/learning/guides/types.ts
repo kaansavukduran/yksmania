@@ -2,12 +2,13 @@ export interface GuideSection {
   title: string;
   paragraphs: string[];
   table?: { headers: string[]; rows: string[][] };
+  figureTitle?: string;
 }
 export interface WorkedExample {
   title: string;
   prompt: string;
   strategy: string;
-  steps: { label: string; explanation: string; expression?: string }[];
+  steps: { label: string; explanation: string; expression?: string; figureTitle?: string }[];
   answer: string;
   check: string;
   pitfall: string;

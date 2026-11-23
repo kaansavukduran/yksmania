@@ -6,8 +6,8 @@ import { sectionFigureGuideIds } from "../src/learning/sectionFigures/figureGuid
 import { sectionFigures } from "../src/learning/sectionFigures/registry";
 import { SectionFigureView } from "../src/learning/sectionFigures/figureKit";
 
-// Section figures are keyed by the exact section title. A renamed section
-// must fail here instead of silently losing its drawing in the app.
+// A renamed section or example reference must fail here instead of
+// silently losing the required drawing in the app.
 describe("section figures", () => {
   it("lists exactly the guides that have figures", () => {
     expect([...sectionFigureGuideIds].sort()).toEqual(Object.keys(sectionFigures).sort());
@@ -16,10 +16,17 @@ describe("section figures", () => {
   for (const [guideId, figures] of Object.entries(sectionFigures)) {
     describe(guideId, () => {
       const guide = lessonGuides.get(guideId);
-      it("belongs to an existing guide and matches section titles", () => {
+      it("belongs to an existing guide section or worked solution", () => {
         expect(guide).toBeDefined();
-        const titles = new Set(guide!.sections.map((s) => s.title));
+        const requiredTitles = [
+          ...guide!.sections.flatMap((s) => s.figureTitle ? [s.figureTitle] : []),
+          ...guide!.examples.flatMap((example) =>
+            example.steps.flatMap((step) => step.figureTitle ? [step.figureTitle] : []),
+          ),
+        ];
+        const titles = new Set([...guide!.sections.map((s) => s.title), ...requiredTitles]);
         for (const title of Object.keys(figures)) expect(titles).toContain(title);
+        for (const title of requiredTitles) expect(figures[title], title).toBeDefined();
       });
 
       for (const [title, def] of Object.entries(figures)) {

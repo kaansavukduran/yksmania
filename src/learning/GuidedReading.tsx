@@ -60,7 +60,7 @@ function moveToSection(id: string) {
   heading?.scrollIntoView({ behavior: "instant", block: "start" });
 }
 
-function Example({ example }: { example: WorkedExample }) {
+function Example({ example, guideId }: { example: WorkedExample; guideId: string }) {
   const [count, setCount] = useState(0);
   return (
     <details className="worked-example">
@@ -77,6 +77,11 @@ function Example({ example }: { example: WorkedExample }) {
               <p className="math-expression">{step.expression}</p>
             )}
             <p>{typeset(step.explanation)}</p>
+            {step.figureTitle && (
+              <Suspense fallback={null}>
+                <SectionFigure guideId={guideId} title={step.figureTitle} />
+              </Suspense>
+            )}
           </li>
         ))}
       </ol>
@@ -407,7 +412,7 @@ export function GuidedReading({
               {i === visualSection && labBeforeSectionFigure && visualLab}
               {sectionFigureGuideIds.has(guide.id) && (
                 <Suspense fallback={null}>
-                  <SectionFigure guideId={guide.id} title={section.title} />
+                  <SectionFigure guideId={guide.id} title={section.figureTitle ?? section.title} />
                 </Suspense>
               )}
               <SectionPlaces text={[section.title, ...section.paragraphs].join(" ")} />
@@ -430,7 +435,7 @@ export function GuidedReading({
             Bunlar özgün öğretim örnekleridir.
           </p>
           {guide.examples.map((example) => (
-            <Example key={example.title} example={example} />
+            <Example key={example.title} example={example} guideId={guide.id} />
           ))}
           {paged && (
             <PageTurn

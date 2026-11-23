@@ -1,3 +1,10 @@
+# ÖSYM Mania 0.50.0 · Newton’un zaman grafikleri
+
+Yayın adayı.
+
+- Aynı kütleye uygulanan 4 N ve 8 N kuvveti, üç zaman grafiği ve hareket çizimiyle karşılaştır.
+- Konu anlatımında, çözümlü örnekte ve Kopya Kağıdı’nda aynı modeli çevrimdışı kullan.
+
 # ÖSYM Mania 0.49.0 · Grafikli yanlış incelemesi
 
 Yayın adayı.

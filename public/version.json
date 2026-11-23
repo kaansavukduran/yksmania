@@ -1,7 +1,7 @@
 {
-  "version": "0.49.0",
+  "version": "0.50.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Hata Merkezi’nde verdiğin yanıtın grafiğini, çözümde doğru grafiği incele. Cep kitapçığının çıktısında doğrulanan doğru şık grafiğini de görebilirsin."
+    "tr": "Aynı kütleye uygulanan iki sabit kuvvetin ivmesini, hızını ve yer değiştirmesini zaman çizimleriyle karşılaştır. Kopya Kağıdı ve çözümlü örnek de çevrimdışı açılır."
   }
 }

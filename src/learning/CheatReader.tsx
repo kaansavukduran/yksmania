@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import { ArrowRight, Eye, EyeOff } from "lucide-react";
 import { useApp } from "../store";
 import { lessonById } from "../domain/content";
 import type { CheatSheet } from "./cheatsheetContent";
 import { VisualLab } from "./VisualLab";
 import { typeset } from "../domain/typeset";
+import { SourceQuestionFigure } from "./SourceQuestionFigure";
+
+const SectionFigure = lazy(() =>
+  import("./sectionFigures/registry").then((module) => ({ default: module.SectionFigure })),
+);
 
 /*
  * "Kendini sına": the right-hand side of each formula (text after "=" up to
@@ -113,7 +118,20 @@ export function CheatReader({
                 <ClozeText text={typeset(text)} testing={testing} />
               </p>
             ))}
-            {section.table && (
+            {sheet.lessonId && section.figureTitle && !testing && (
+              <Suspense fallback={null}>
+                <SectionFigure guideId={sheet.lessonId} title={section.figureTitle} />
+              </Suspense>
+            )}
+            {section.table && section.figureTitle && (
+              <SourceQuestionFigure figure={{
+                kind: "table",
+                title: `${section.title} tablosu`,
+                alt: section.table.headers.join(", "),
+                ...section.table,
+              }} />
+            )}
+            {section.table && !section.figureTitle && (
               <div
                 className="cheat-comparisons"
                 role="group"
@@ -162,9 +180,19 @@ export function CheatReader({
               <details className="cheat-solution">
                 <summary>Çözümü adım adım gör</summary>
                 <ol>
-                  {example.steps.map((step, j) => (
-                    <li key={j}>{typeset(step)}</li>
-                  ))}
+                  {example.steps.map((step, j) => {
+                    const figureTitle = example.stepFigures?.[j];
+                    return (
+                      <li key={j}>
+                        {typeset(step)}
+                        {sheet.lessonId && figureTitle && (
+                          <Suspense fallback={null}>
+                            <SectionFigure guideId={sheet.lessonId} title={figureTitle} />
+                          </Suspense>
+                        )}
+                      </li>
+                    );
+                  })}
                 </ol>
                 <p>
                   <strong>Sonuç ve kontrol:</strong> {typeset(example.answer)}

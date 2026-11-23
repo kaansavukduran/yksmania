@@ -113,17 +113,20 @@ import { lessonGuides } from "./guides";
 import { clarifiedGuideView } from "./guidePresentation028";
 import { narrativeById } from "./narratives";
 import { physicsCheatSheets } from "./physicsCheatSheets";
+import { newtonTimeTitle } from "./newtonTimeComparison";
 
 export interface CheatSection {
   title: string;
   text: string[];
   table?: { headers: string[]; rows: string[][] };
+  figureTitle?: string;
 }
 export interface CheatExample {
   title: string;
   prompt: string;
   passage?: string;
   steps: string[];
+  stepFigures?: (string | undefined)[];
   answer: string;
 }
 export interface CheatSheet {
@@ -139,6 +142,10 @@ export interface CheatSheet {
 }
 
 const revisedSectionTextByLesson = new Map([
+  ["newton", new Map([[newtonTimeTitle, [
+    "Aynı kütle ve sürede, durgun başlayan cisim için net kuvvet iki katına çıkarsa ivme, son hız ve yer değiştirme iki katına çıkar.",
+    "F–t ve a–t yataydır. v–t eğimi ivmeyi, altındaki alan yer değiştirmeyi verir.",
+  ]]])],
   ["kesir-problemleri", fractionProblemsSource018SheetText],
   ["yas-problemleri", ageProblemsSource019SheetText],
   ["yuzde-problemleri", percentProblemsSource020SheetText],
@@ -268,13 +275,16 @@ function lessonSheet(id: string): CheatSheet | undefined {
         text: revisedText?.get(section.title) ??
           (complete ? section.paragraphs : section.paragraphs.slice(0, 1)),
         table: section.table,
+        ...(section.figureTitle ? { figureTitle: section.figureTitle } : {}),
       }))
     : lesson.body.map((section) => ({
         title: section.title.tr,
         text: [section.text.tr],
       }));
   const examples: CheatExample[] = guide
-    ? (complete ? guide.examples : guide.examples.slice(0, 2)).map(
+    ? guide.examples.filter((example, index) =>
+        complete || index < 2 || example.steps.some((step) => step.figureTitle),
+      ).map(
         (example) => ({
           title: example.title,
           prompt: example.prompt,
@@ -283,6 +293,9 @@ function lessonSheet(id: string): CheatSheet | undefined {
               .filter(Boolean)
               .join(" · "),
           ),
+          ...(example.steps.some((step) => step.figureTitle) ? {
+            stepFigures: example.steps.map((step) => step.figureTitle),
+          } : {}),
           answer: example.answer + " " + example.check,
         }),
       )

@@ -12,6 +12,9 @@ import {
   type FigureDef,
   type V,
 } from "./figureKit";
+import {
+  newtonDisplacementTitle, newtonDuration, newtonForces, newtonTimeAt, newtonTimeTitle, newtonVelocityTitle,
+} from "../newtonTimeComparison";
 
 /** Minimal labeled axes for physics graphs (t to the right). */
 function plotAxes(o: V, w: number, hUp: number, hDown: number, xLabel: string, yLabel: string): El[] {
@@ -32,6 +35,73 @@ const block = (x: number, y: number, w: number, h: number, label?: string): El[]
   poly([v(x, y), v(x + w, y), v(x + w, y + h), v(x, y + h)], { fill: "muted", tone: "ink" }),
   ...(label ? [txt(v(x + w / 2, y + h / 2), label, "c", { small: true, bold: true })] : []),
 ];
+
+const timeMeasures = [
+  { key: "force", title: "Kuvvet–zaman", axis: "F (N)", unit: "N", rising: false },
+  { key: "acceleration", title: "İvme–zaman", axis: "a (m/s²)", unit: "m/s²", rising: false },
+  { key: "velocity", title: "Hız–zaman", axis: "v (m/s)", unit: "m/s", rising: true },
+] as const;
+
+const newtonTimeParameter: FigureDef["param"] = {
+  label: "Zaman (s)", min: 0, max: newtonDuration, step: 0.5, init: 1, once: true,
+};
+
+function drawTimeGraph(time: number, measure: typeof timeMeasures[number]) {
+  const max = newtonTimeAt(newtonForces[1], newtonDuration)[measure.key];
+  const point = (t: number, value: number) => v(t * 1.6, (2.8 * value) / max);
+  const at = point(time, 0);
+  const els: El[] = [
+    ...plotAxes(v(0, 0), 4.8, 3.4, 0, "t (s)", measure.axis)
+      .map((element) => element.k === "text" ? { ...element, small: false } : element),
+    txt(v(0, 0), "0", "sw", { small: true }),
+    txt(point(newtonDuration, 0), String(newtonDuration), "s", { small: true }),
+    seg(at, point(time, max), { tone: "muted", thin: true }),
+  ];
+  const readings = newtonForces.map((force, i) => {
+    const start = newtonTimeAt(force, 0)[measure.key];
+    const finish = newtonTimeAt(force, newtonDuration)[measure.key];
+    const motion = newtonTimeAt(force, time);
+    const tone = i === 0 ? "a" : "b";
+    if (measure.rising) {
+      els.push(seg(point(0, finish), point(newtonDuration, finish), { tone: "muted", thin: true, dash: true }));
+    }
+    els.push(
+      seg(point(0, start), point(newtonDuration, finish), { tone, bold: true, dash: i === 1 }),
+      txt(point(0, finish), fmt(finish), "w", { tone }),
+      pt(point(time, motion[measure.key]), undefined, "n", tone),
+    );
+    return `${force} N denemesi: ${fmt(motion[measure.key])} ${measure.unit}`;
+  });
+  return { els, readout: [`t = ${fmt(time)} s · ${readings.join(" · ")}`] };
+}
+
+function drawDisplacement(time: number) {
+  const els: El[] = [];
+  const fullDistance = newtonTimeAt(newtonForces[1], newtonDuration).displacement;
+  const readings = newtonForces.map((force, index) => {
+    const y = (1 - index) * 2.6;
+    const tone = index === 0 ? "a" : "b";
+    const distance = newtonTimeAt(force, time).displacement;
+    const x = (distance / fullDistance) * 5;
+    els.push(
+      seg(v(-0.7, y), v(6, y), { tone: "muted", thin: true }),
+      seg(v(0, y - 0.55), v(0, y + 0.85), { tone: "muted", dash: true, thin: true }),
+      poly([v(x - 0.25, y), v(x + 0.25, y), v(x + 0.25, y + 0.55), v(x - 0.25, y + 0.55)], { fill: tone, tone }),
+      txt(v(-0.9, y + 0.3), `${force} N`, "w", { tone, bold: true }),
+    );
+    if (x > 0) els.push(vec(v(0, y - 0.43), v(x, y - 0.43), { tone }));
+    return `${force} N denemesi: ${fmt(distance, 2)} m`;
+  });
+  return { els, readout: [`t = ${fmt(time)} s · ${readings.join(" · ")}`] };
+}
+
+const newtonTimeFigure: FigureDef = {
+  caption: "Grafiklerde düz çizgi 4 N, kesikli çizgi 8 N denemesidir. Yer değiştirme görünümünde iki blok ortak başlangıç çizgisinden uzaklaşır.",
+  alt: "Aynı kütleyle yapılan iki deney. Kuvvet ve ivmenin zaman grafikleri yatay, hız doğruları sıfırdan yükselir. Son görünüm iki bloğun yer değiştirmesini aynı ölçekle karşılaştırır. Seçilen andaki değerler çizimin altında okunabilir.",
+  steps: [...timeMeasures.map(({ title }) => title), "Yer değiştirme"],
+  param: newtonTimeParameter,
+  draw: (time, step) => step === timeMeasures.length ? drawDisplacement(time) : drawTimeGraph(time, timeMeasures[step]),
+};
 
 const dogrusalHareket: Record<string, FigureDef> = {
   "Gittiğin yol ile vardığın yer aynı şey değil": {
@@ -350,6 +420,19 @@ const newton: Record<string, FigureDef> = {
         readout: [`Eğim = (${forceAt(4)} − ${forceAt(2)}) N / (4 − 2) m/s² = ${mass} kg`],
       };
     },
+  },
+  [newtonTimeTitle]: newtonTimeFigure,
+  [newtonVelocityTitle]: {
+    caption: "Düz çizgi 4 N, kesikli çizgi 8 N denemesini gösterir. Zamanı değiştirip iki hızı karşılaştır.",
+    alt: "İki hız doğrusu aynı başlangıçtan yükselir. 8 N denemesinin eğimi 4 N denemesinin iki katı.",
+    param: newtonTimeParameter,
+    draw: (time) => drawTimeGraph(time, timeMeasures[2]),
+  },
+  [newtonDisplacementTitle]: {
+    caption: "İki blok ortak başlangıç çizgisinden uzaklaşır. Ok uzunluğu yer değiştirmeyle orantılıdır.",
+    alt: "Yatay iki yolun başı aynı hizada. 4 N ve 8 N etiketli deneylerde bloklar seçilen zamana göre sağa ilerler. Yer değiştirme değerleri çizimin altında okunabilir.",
+    param: newtonTimeParameter,
+    draw: drawDisplacement,
   },
 };
 

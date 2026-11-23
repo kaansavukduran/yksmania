@@ -1,4 +1,5 @@
 import type { LessonGuide } from "./types";
+import { newtonDisplacementTitle, newtonTimeExampleTitle, newtonTimeRows, newtonTimeTitle, newtonVelocityTitle } from "../newtonTimeComparison";
 export const newtonGuide: LessonGuide = {
   id: "newton",
   minutes: 45,
@@ -94,6 +95,18 @@ export const newtonGuide: LessonGuide = {
       table: {
         headers: ["İvme (m/s²)", "Net kuvvet (N)"],
         rows: [["2", "8"], ["4", "16"]],
+      },
+    },
+    {
+      title: newtonTimeTitle,
+      figureTitle: newtonTimeTitle,
+      paragraphs: [
+        "Biri 4 N, diğeri 8 N sabit net kuvvetle başlayan iki deneme düşün. Cisim her seferinde durgun, kütlesi 2 kg ve kuvvetin yönü aynı. Üç saniye boyunca kuvvetin değeri değişmediği için kuvvet–zaman çizgileri yataydır. a = Fnet / m ile ivmeler 2 ve 4 m/s² bulunur. İvme–zaman çizgileri de yataydır ve düşey eksenlerinin birimi m/s²’dir.",
+        "Hız her saniyede ivme kadar artar. Bu yüzden hız–zaman doğruları sıfırdan yükselir ve eğimleri 2 ile 4 m/s²’dir. Hız grafiğinin altında kalan alan yer değiştirmedir. Başlangıç hızı sıfır olduğundan üçgenin alanı süre × son hız / 2 ile bulunur. Aynı kütle ve süreyle kuvvet iki katına çıkınca ivme, son hız ve yer değiştirme iki katına çıkar.",
+      ],
+      table: {
+        headers: ["Net kuvvet (N)", "İvme (m/s²)", "3. saniyede hız (m/s)", "3 saniyede yer değiştirme (m)"],
+        rows: newtonTimeRows,
       },
     },
   ],
@@ -211,6 +224,19 @@ export const newtonGuide: LessonGuide = {
       pitfall:
         "15 N dış kuvveti B’ye etki ediyor sanmak veya sistemi seçince iç kuvveti de bulduğunu düşünmek.",
     },
+    {
+      title: newtonTimeExampleTitle,
+      prompt: "Başlangıçta duran 2 kg cisme, iki ayrı denemede, 3 s boyunca aynı yönde sırasıyla 4 N ve 8 N net kuvvet uygulanıyor. Her denemenin son hızını ve yer değiştirmesini karşılaştır.",
+      strategy: "Önce kuvvetten ivmeye geç. Hızın her saniye ne kadar değiştiğini bul, sonra hız grafiğinin alanını hesapla.",
+      steps: [
+        { label: "Net kuvvetten ivmeye", expression: "a₁ = 4/2 = 2 m/s² · a₂ = 8/2 = 4 m/s²", explanation: "Kütle ve kuvvet sabit olduğu için her denemenin ivmesi sabittir." },
+        { label: "Hızın eğimini oku", expression: "v₁ = 2×3 = 6 m/s · v₂ = 4×3 = 12 m/s", explanation: "İki doğru da durgun başlangıçtan yükselir. İmleci 3. saniyeye getir ve hızları karşılaştır.", figureTitle: newtonVelocityTitle },
+        { label: "Altındaki alanı hesapla", expression: "Δx₁ = 3×6/2 = 9 m · Δx₂ = 3×12/2 = 18 m", explanation: "İki üçgenin tabanı eşit, ikincisinin yüksekliği iki katıdır. Hız pozitif olduğundan yer değiştirme kuvvet yönündedir.", figureTitle: newtonDisplacementTitle },
+      ],
+      answer: "Son hızlar 6 ve 12 m/s, yer değiştirmeler 9 ve 18 m.",
+      check: "Son hızı süreye böl, çıkan ivmeyi kütleyle çarp. Başlangıçtaki 4 N ve 8 N değerlerine geri dönersin.",
+      pitfall: "Son hız × süre, hızın tüm süre boyunca son değerinde kaldığını varsayar. Burada hız sıfırdan arttığı için grafik alanı üçgendir.",
+    },
   ],
   recall: [
     {
@@ -231,7 +257,7 @@ export const newtonGuide: LessonGuide = {
     },
   ],
   source:
-    "MEBİ AYT Fizik Konu Özetleri PDF s.23–24 ve 31 (basılı 21–22 ve 29) ile Aurelia TYT Fizik Newton Hareket Yasaları kopya kağıdı PDF s.1–16 doğrudan okundu. Kuvvet–ivme grafiği için MEBİ TYT Fizik Konu Özetleri PDF s.42 (basılı 40) incelendi; grafikteki sayılar özgün. Aurelia dosyasındaki diğer MEB Fizik 9/11 atıfları ve ÖSYM örneği ayrıca doğrulanmadı. Anlatım klasik sabit kütle ve belirtilen basit temas/sürtünme koşullarıyla sınırlıdır.",
+    "MEBİ AYT Fizik Konu Özetleri PDF s.23–24 ve 31 (basılı 21–22 ve 29) ile Aurelia TYT Fizik Newton Hareket Yasaları kopya kağıdı PDF s.1–16 doğrudan okundu. Kuvvet–ivme grafiği ve sabit kuvvetin iki katına çıktığı üç zaman grafiği için MEBİ TYT Fizik Konu Özetleri PDF s.42 (basılı 40) incelendi. Sayısal örnekler özgündür. Aurelia dosyasındaki diğer MEB Fizik 9/11 atıfları ve ÖSYM örneği ayrıca doğrulanmadı. Anlatım klasik sabit kütle ve belirtilen basit temas/sürtünme koşullarıyla sınırlıdır.",
 };
 
 export const electricFieldGuide: LessonGuide = {

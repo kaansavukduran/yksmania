@@ -258,7 +258,9 @@ export function beforeSource031Teaching(
           : repairedProblem ? { ...section, text: section.text.map((text) => historicalProblemText(prior.lesson, text)) } : section
       )),
       examples: sheet.examples.slice(0, sizes.examples),
-      cautions: prior.oldSheet ? sheet.cautions : sheet.cautions.slice(0, prior.examples),
+      cautions: prior.lesson === "newton"
+        ? sheet.cautions.filter((caution) => caution !== "Son hız × süre, hızın tüm süre boyunca son değerinde kaldığını varsayar. Burada hız sıfırdan arttığı için grafik alanı üçgendir.")
+        : prior.oldSheet ? sheet.cautions : sheet.cautions.slice(0, prior.examples),
       recall: sheet.recall.slice(0, sizes.recall),
       source: prior.oldSource,
     };
