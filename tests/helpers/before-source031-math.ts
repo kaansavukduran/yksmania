@@ -115,6 +115,27 @@ const revisions = [
     appendedQuestions: ["eksik-frekans", "ham-histogram", "uc-seri", "aralikta-esik"].map((id) => `veri-analizi-037-${id}`),
     oldSource: "MEBİ TYT Matematik Konu Özetleri, PDF s. 109–112 / basılı s. 107–110; Aurelia 037 Veri Analizi (İstatistik), öğretim s. 1–3 ve 5–7; OGM 9. sınıf Merkezî Eğilim ve Yayılım Ölçüleri sunusu ile Verileri Değerlendiriyorum etkinliği temelinde özgün öğretim. Soru ve örnekler özgündür; resmî ÖSYM sorusu değildir. Örneklem sapmasında n−1 ile bütün anakütle sapmasında n ayrılır; küçük sapmadan kişi hakkında güvenlik veya başarı garantisi çıkarılmaz.",
   },
+  {
+    lesson: "tyt-geo-acilar-kaynak-pekitirme-032", topic: "topic-tyt-geo-acilar-kaynak-pekitirme-032",
+    sections: 10, examples: 9, recall: 10, oldSheet: { sections: 5, examples: 2, recall: 3 },
+    appendedQuestions: ["bisectors", "parallel-complement", "no-parallel", "adjacent-sum"]
+      .map((id) => `tyt-geo-acilar-kaynak-pekitirme-032-source-001-${id}`),
+    oldSource: "Aurelia, Geometrinin Dili ve Doğruda Açılar kopya kağıdı: 14 Kasım 2026 tarihli yedi sayfalık sürüm ve önceki dört sayfalık sürüm. Kavram ve sayısal örnekler yeniden açıklanmış, özgün öğretim soruları geliştirilmiştir. Alıştırmalar resmî sınav sorusu değildir; kaynakta atıf yapılan MEB arşivinin tamamını temsil etmez.",
+  },
+  {
+    lesson: "tyt-geo-ucgende-acilar-031", topic: "topic-tyt-geo-ucgende-acilar-031",
+    sections: 7, examples: 3, recall: 4, oldSheet: { sections: 5, examples: 2, recall: 3 },
+    appendedQuestions: ["two-exterior", "mixed", "reverse", "ratio", "compound"]
+      .map((id) => `tyt-geo-ucgende-acilar-031-source-002-${id}`),
+    oldSource: "MEBİ TYT Matematik Konu Özetleri, PDF 116–117 (basılı114–115); Aurelia TYT Geometri Tüm Konular ve Formüller, PDF 2. Kaynak koşulları korunarak yazılmış özgün öğretim içeriği ve özgün sorular.",
+  },
+  {
+    lesson: "tyt-geo-ucgen-esitsizligi-031", topic: "topic-tyt-geo-ucgen-esitsizligi-031",
+    sections: 7, examples: 3, recall: 4, oldSheet: { sections: 5, examples: 2, recall: 3 },
+    appendedQuestions: ["common-integers", "touching-bounds", "perimeter", "obtuse", "order-chain"]
+      .map((id) => `tyt-geo-ucgen-esitsizligi-031-source-003-${id}`),
+    oldSource: "MEBİ TYT Matematik Konu Özetleri, PDF 118–119 (basılı116–117); Aurelia TYT Geometri Tüm Konular ve Formüller, PDF 2. Üçgen varlığı ve açık aralık koşulları denetlenerek yazılmış özgün anlatım ve özgün öğretim soruları.",
+  },
 ];
 
 const additions = new Set(revisions.flatMap(({ appendedQuestions }) => appendedQuestions));
@@ -221,16 +242,17 @@ export function beforeSource031Teaching(
   }
   if (surface === "sheets") {
     const sheet = value as CheatSheet;
+    const sizes = prior.oldSheet ?? prior;
     return {
       ...sheet,
-      sections: sheet.sections.slice(0, prior.sections).map((section) => (
+      sections: sheet.sections.slice(0, sizes.sections).map((section) => (
         prior.lesson === "mantik-onerme" && section.title === expandedConditionalTitle
           ? { ...section, title: oldConditionalTitle, text: section.text.map(historicalConditionalText) }
           : repairedProblem ? { ...section, text: section.text.map((text) => historicalProblemText(prior.lesson, text)) } : section
       )),
-      examples: sheet.examples.slice(0, prior.examples),
-      cautions: sheet.cautions.slice(0, prior.examples),
-      recall: sheet.recall.slice(0, prior.recall),
+      examples: sheet.examples.slice(0, sizes.examples),
+      cautions: prior.oldSheet ? sheet.cautions : sheet.cautions.slice(0, prior.examples),
+      recall: sheet.recall.slice(0, sizes.recall),
       source: prior.oldSource,
     };
   }

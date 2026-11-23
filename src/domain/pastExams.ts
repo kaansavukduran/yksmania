@@ -1,4 +1,7 @@
 import { probabilityReference036, statisticsReference037 } from "../learning/probabilityStatistics041Official";
+import {
+  lineAnglesReference042, triangleAnglesReference042, triangleSidesReference042,
+} from "../learning/geometryConditions042Official";
 import { combinationReference034, binomialReference035 } from "../learning/countingSources034035Official";
 import { permutationReference032, repeatedPermutationReference033 } from "../learning/permutationSources032033Official";
 import { source031Reference } from "../learning/logicSource031Official";
@@ -541,6 +544,9 @@ export const pastExamReferences: PastExamReference[] = [
   binomialReference035,
   probabilityReference036,
   statisticsReference037,
+  lineAnglesReference042,
+  triangleAnglesReference042,
+  triangleSidesReference042,
 ];
 // Selected companion links leave all earlier source records and their topic lists intact.
 const sourceCompanionReferences: Record<string, readonly string[]> = {

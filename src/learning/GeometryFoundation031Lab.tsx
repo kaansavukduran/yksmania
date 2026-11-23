@@ -7,6 +7,7 @@ import {
   type PointerEvent,
 } from "react";
 import { useExploration } from "./useExploration";
+import { GeometryConditions042Lab } from "./GeometryConditions042Lab";
 import {
   geometry031Angles,
   geometry031Bounds,
@@ -593,6 +594,7 @@ function TriangleAngles() {
         Yuvarlanan açı etiketlerinin toplamı bazen 179,9° veya 180,1°
         görünebilir; model toplamı tam olarak 180°'dir.
       </p>
+      <GeometryConditions042Lab kind="bisectors" />
     </Lab>
   );
 }
@@ -728,6 +730,7 @@ function Inequality() {
           3–4–8: çizilmez
         </button>
       </div>
+      <GeometryConditions042Lab kind="shared-side" />
     </Lab>
   );
 }

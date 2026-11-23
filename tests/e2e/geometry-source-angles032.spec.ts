@@ -376,10 +376,14 @@ for (const profile of [
         "82°",
         `${180 - 122}°`,
         `${360 / 6}°`,
+        "90°",
+        "18°",
+        "Aynı kesişimde ters açı 64°.",
+        "Dış kollar arası 80°.",
       ];
       for (let i = 0; i < independentAnswers.length; i++) {
         await expect(page.locator(".question-meta")).toContainText(
-          `Soru ${i + 1} / 18`,
+          `Soru ${i + 1} / 22`,
         );
         const chosen = page.locator(".answer").filter({
           has: page.locator("span:last-of-type", {
@@ -433,15 +437,15 @@ for (const profile of [
         }
         await page
           .getByRole("button", {
-            name: i === 17 ? "Çalışmayı kaydet" : "Sonraki soru",
+            name: i === independentAnswers.length - 1 ? "Çalışmayı kaydet" : "Sonraki soru",
             exact: true,
           })
           .click();
       }
-      await expect(page.locator(".result-stats")).toContainText("18/18");
+      await expect(page.locator(".result-stats")).toContainText("22/22");
       const finished = await state(page);
       expect(finished.sessions).toHaveLength(1);
-      expect(finished.sessions[0].responses).toHaveLength(18);
+      expect(finished.sessions[0].responses).toHaveLength(22);
       expect(
         finished.sessions[0].responses.every((r) => r.correct && !r.assisted),
       ).toBe(true);
@@ -462,7 +466,7 @@ for (const profile of [
         .locator("li")
         .filter({ hasText: "Geometrinin dili: kaynakla pekiştir" });
       await expect(row).toContainText("Konu tamamlandı");
-      await expect(row).toContainText("18 soruda 18 doğru · 0 yanlış");
+      await expect(row).toContainText("22 soruda 22 doğru · 0 yanlış");
       await page.evaluate(async () => {
         await navigator.serviceWorker.ready;
         if (!navigator.serviceWorker.controller)
@@ -477,7 +481,7 @@ for (const profile of [
       await context.setOffline(true);
       const reload = await page.reload();
       expect(reload!.fromServiceWorker()).toBe(true);
-      await expect(row).toContainText("18 soruda 18 doğru · 0 yanlış");
+      await expect(row).toContainText("22 soruda 22 doğru · 0 yanlış");
       expect(await state(page)).toEqual(finished);
       await nav(page, "Konu Anlatımı");
       await geo.locator(".subject-header").click();
@@ -509,7 +513,7 @@ for (const profile of [
           normalEntry: true,
           diagrams: true,
           workedExamples: 9,
-          independentQuestions: "18/18",
+          independentQuestions: "22/22",
           noExplorationXP: true,
           manualTheory: true,
           SRS: ["2026-11-19", "2026-11-23", "2026-12-07"],

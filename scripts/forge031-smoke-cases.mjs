@@ -57,6 +57,28 @@ export const forge031SmokeCases = [
     title: "Üçgende açılar: iç açıdan yardımcı çizgiye",
     storedKey: "g031:triangle-angles",
     persisted: { x: 0, y: 6, step: 2 },
+    supplement: {
+      selector: '[data-model="bisectors"]',
+      storedKey: "geometry-angles-source-002",
+      persisted: { a: 57, mode: "external" },
+      async act(model) {
+        await expect(model.getByRole("status")).toContainText("119°.");
+        await model
+          .getByRole("combobox", { name: "Açıortay seçimi" })
+          .selectOption("external");
+        await model
+          .getByRole("slider", { name: "A açısı (°)", exact: true })
+          .press("ArrowLeft");
+      },
+      async verify(model) {
+        await expect(model.getByRole("status")).toContainText(
+          "90° − A/2 = 61,5°.",
+        );
+        await expect(model.getByRole("img")).toHaveAccessibleName(
+          /işaretli açı 61,5°/,
+        );
+      },
+    },
     async act(lab) {
       await range(lab, "C köşesinin yatay konumu", 0);
       await range(lab, "C köşesinin yüksekliği", 6);
@@ -78,6 +100,22 @@ export const forge031SmokeCases = [
     title: "Üçgen eşitsizliği ve açı–kenar ilişkileri",
     storedKey: "g031:inequality",
     persisted: { a: 3, b: 4, c: 5 },
+    supplement: {
+      selector: '[data-model="shared-side"]',
+      storedKey: "geometry-shared-side-source-003",
+      persisted: { x: 13 },
+      async act(model) {
+        await expect(model.getByRole("status")).toContainText("7 tam sayı.");
+        await expect(model.getByRole("img").locator("polygon")).toHaveCount(2);
+        await range(model, "Ortak kenar x", 13);
+      },
+      async verify(model) {
+        await expect(model.getByRole("status")).toContainText(
+          "x = 13 ile iki üçgen birlikte kurulamaz.",
+        );
+        await expect(model.getByRole("img").locator("polygon")).toHaveCount(1);
+      },
+    },
     async act(lab) {
       await click(lab, "3–4–8: çizilmez");
       await expect(lab.locator("svg polygon")).toHaveCount(0);
@@ -212,6 +250,12 @@ async function outcome(lab, unit) {
   await unit.assertModel(lab);
 }
 
+async function openSupplement(lab, supplement) {
+  const model = lab.locator(supplement.selector);
+  await model.locator(":scope > summary").press("Enter");
+  return model;
+}
+
 export async function runForge031SmokeCase(page, navigate, unit) {
   // The caller has already established its real offline browser/native context.
   const before = learning(await readState(page));
@@ -224,12 +268,34 @@ export async function runForge031SmokeCase(page, navigate, unit) {
     .poll(async () => (await readState(page)).explorations[unit.storedKey])
     .toMatchObject(unit.persisted);
   const saved = (await readState(page)).explorations[unit.storedKey];
+  const supplement = unit.supplement;
+  let supplementState;
+  if (supplement) {
+    const model = await openSupplement(lab, supplement);
+    await supplement.act(model);
+    await supplement.verify(model);
+    await expect
+      .poll(
+        async () => (await readState(page)).explorations[supplement.storedKey],
+      )
+      .toMatchObject(supplement.persisted);
+    supplementState = (await readState(page)).explorations[
+      supplement.storedKey
+    ];
+  }
   expect(learning(await readState(page))).toEqual(before);
   await page.reload();
-  await outcome(await open(page, navigate, unit), unit);
+  const reopened = await open(page, navigate, unit);
+  await outcome(reopened, unit);
+  if (supplement) {
+    await supplement.verify(await openSupplement(reopened, supplement));
+    expect((await readState(page)).explorations[supplement.storedKey]).toEqual(
+      supplementState,
+    );
+  }
   expect((await readState(page)).explorations[unit.storedKey]).toEqual(saved);
   expect(learning(await readState(page))).toEqual(before);
-  return { id: unit.id, storedKey: unit.storedKey, saved };
+  return { id: unit.id, storedKey: unit.storedKey, saved, supplementState };
 }
 
 export async function assertForge031ProcessRestart(page, navigate, snapshots) {
@@ -242,7 +308,14 @@ export async function assertForge031ProcessRestart(page, navigate, snapshots) {
     expect((await readState(page)).explorations[snapshot.storedKey]).toEqual(
       snapshot.saved,
     );
-    await outcome(await open(page, navigate, unit), unit);
+    const lab = await open(page, navigate, unit);
+    await outcome(lab, unit);
+    if (unit.supplement) {
+      await unit.supplement.verify(await openSupplement(lab, unit.supplement));
+      expect(
+        (await readState(page)).explorations[unit.supplement.storedKey],
+      ).toEqual(snapshot.supplementState);
+    }
     expect((await readState(page)).explorations[snapshot.storedKey]).toEqual(
       snapshot.saved,
     );

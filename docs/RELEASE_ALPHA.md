@@ -1,3 +1,12 @@
+# YKSMania 0.42.0 · Açı ve kenar koşulları
+
+Yayın adayı.
+
+- Doğruda Açılar’da komşu açıların ne zaman 180° ettiğini ve paralellik kalkınca hangi eşitliğin kaldığını öğren.
+- Üçgende Açılar atölyesinde iç ve dış açıortayları değiştir. Yay ve derece birlikte güncellenir.
+- Açı Kenar Bağıntıları’nda ortak kenarı ve sınırları değiştir. Gerçek üçgen oluştuğunda çizilir.
+- 14 özgün alıştırma, dört çözümlü örnek ve Kopya Kağıtları çevrimdışı kullanılabilir. [İlerleme tablosu](ILERLEME.md)
+
 # YKSMania 0.41.0 · Olasılık ve Veri Analizi
 
 Yayın adayı.

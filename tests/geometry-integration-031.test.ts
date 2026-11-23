@@ -105,7 +105,8 @@ describe("031 additive geometry learning path", () => {
       const lesson = lessonById(id)!;
       expect(lesson.subjectId).toBe("tyt-geometri");
       expect(lesson.tags).not.toContain("soru-seti");
-      expect(lesson.questions).toHaveLength(10);
+      const revised = id === "tyt-geo-ucgende-acilar-031" || id === "tyt-geo-ucgen-esitsizligi-031";
+      expect(lesson.questions).toHaveLength(revised ? 15 : 10);
       const guide = lessonGuides.get(id)!;
       expect(guide.sections.length).toBeGreaterThanOrEqual(6);
       expect(guide.examples.length).toBeGreaterThanOrEqual(3);

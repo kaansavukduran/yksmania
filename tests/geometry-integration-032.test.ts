@@ -52,9 +52,9 @@ describe("032 source transfer retains old learning while adding usable geometry"
     expect(studyTopics.slice(0, 485)).toEqual(baseline.studyTopics);
   });
 
-  it("provides eight full lessons, distinct concise summaries and134 fully explained independent questions", () => {
+  it("provides eight full lessons, distinct concise summaries and138 fully explained independent questions", () => {
     expect(lessons).toHaveLength(545);
-    expect(lessons.flatMap((l) => l.questions)).toHaveLength(6642);
+    expect(lessons.flatMap((l) => l.questions)).toHaveLength(6656);
     expect(lessonGuides.size).toBe(510);
     expect(builtInCheatSheets.size).toBe(510);
     expect(studyTopics).toHaveLength(510);
@@ -74,9 +74,10 @@ describe("032 source transfer retains old learning while adding usable geometry"
       expect(g.recall.length).toBeGreaterThanOrEqual(4);
       expect(s.lessonId).toBe(id);
       const hasPrimeRepair = id === "tyt-mat-asal-kaynak-032";
-      expect(s.sections).toHaveLength(hasPrimeRepair ? 6 : 5);
-      expect(s.examples).toHaveLength(hasPrimeRepair ? 3 : 2);
-      expect(s.recall).toHaveLength(3);
+      const revisedAngles = id === "tyt-geo-acilar-kaynak-pekitirme-032";
+      expect(s.sections).toHaveLength(hasPrimeRepair || revisedAngles ? 6 : 5);
+      expect(s.examples).toHaveLength(hasPrimeRepair || revisedAngles ? 3 : 2);
+      expect(s.recall).toHaveLength(revisedAngles ? 5 : 3);
       const lecture = g.sections
         .flatMap((section) => section.paragraphs)
         .join(" ").length;
@@ -102,7 +103,7 @@ describe("032 source transfer retains old learning while adding usable geometry"
         expect(q.guidance!.optionReasons).toHaveLength(5);
       }
     }
-    expect(questions).toBe(134);
+    expect(questions).toBe(138);
   });
 
   it("adds independent records and authentic day3/7/21 reviews without old-topic credit or manual-study XP", () => {

@@ -1,8 +1,8 @@
 {
-  "version": "0.41.0",
+  "version": "0.42.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Olasılık ve Veri Analizi’nde koşullu zar tablosu, geri koymalı çekiş, ham veriden histogram ve gözlem dönüşümü eklendi. Sorular ve Kopya Kağıtları çevrimdışı çalışır.",
-    "en": "Probability and data analysis add interactive dice, replacement draws, histograms, and transformed observations alongside offline practice."
+    "tr": "Üç geometri konusu genişledi. İç ve dış açıortayları aynı üçgende karşılaştır, iki üçgenin ortak kenarını değiştir ve özgün sorularla koşulları çevrimdışı dene.",
+    "en": "Three geometry lessons extend angle and side conditions with interactive bisectors, shared-side triangles and offline practice."
   }
 }

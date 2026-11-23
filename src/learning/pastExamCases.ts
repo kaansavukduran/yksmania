@@ -1,4 +1,7 @@
 import { probabilityTeachingCase036, statisticsTeachingCase037 } from "./probabilityStatistics041Official";
+import {
+  lineAnglesTeachingCase042, triangleAnglesTeachingCase042, triangleSidesTeachingCase042,
+} from "./geometryConditions042Official";
 import { combinationTeachingCase034, binomialTeachingCase035 } from "./countingSources034035Official";
 import { permutationTeachingCase032, repeatedPermutationTeachingCase033 } from "./permutationSources032033Official";
 import { source031TeachingCase } from "./logicSource031Official";
@@ -347,6 +350,9 @@ export const examTeachingCases: Record<string, ExamTeachingCase> = {
   "2022-AYT-MAT-14": combinationTeachingCase034,
   "2025-TYT-MAT-30": probabilityTeachingCase036,
   "2024-TYT-MAT-16": statisticsTeachingCase037,
+  "2024-TYT-MAT-31": lineAnglesTeachingCase042,
+  "2024-TYT-MAT-32": triangleAnglesTeachingCase042,
+  "2021-TYT-MAT-32": triangleSidesTeachingCase042,
   "2025-TYT-MAT-29": permutationTeachingCase032,
   "2018-TYT-MAT-28": repeatedPermutationTeachingCase033,
 };

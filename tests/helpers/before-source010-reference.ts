@@ -31,6 +31,9 @@ const laterReferences = new Set([
   "2025-TYT-MAT-29",
   "2025-TYT-MAT-30",
   "2024-TYT-MAT-16",
+  "2024-TYT-MAT-31",
+  "2024-TYT-MAT-32",
+  "2021-TYT-MAT-32",
   "2018-TYT-MAT-28",
 ]);
 

@@ -2,6 +2,12 @@ import { txt, type Lesson, type Question } from "../domain/model";
 import type { QuestionGuidance } from "../domain/questionHelpModel";
 import type { LessonGuide, WorkedExample, GuideSection } from "./guides/types";
 import type { CheatSheet } from "./cheatsheetContent";
+import {
+  triangleAngles042, triangleSides042,
+} from "./geometryConditions042Teaching";
+import {
+  triangleAnglesPractice042, triangleSidesPractice042,
+} from "./geometryConditions042Practice";
 
 interface FoundationItem031 extends QuestionGuidance {
   prompt: string;
@@ -2550,16 +2556,21 @@ const packs031: FoundationPack031[] = [
   },
 ];
 
+const revisions042: Readonly<Record<string, (typeof triangleAngles042 & { questions: Question[] }) | undefined>> = {
+  "tyt-geo-ucgende-acilar-031": { ...triangleAngles042, questions: triangleAnglesPractice042 },
+  "tyt-geo-ucgen-esitsizligi-031": { ...triangleSides042, questions: triangleSidesPractice042 },
+};
+
 export const geometryFoundation031Topics: Record<string, string> =
   Object.fromEntries(packs031.map((p) => [p.id, `topic-${p.id}`]));
 export const geometryFoundation031Guides: LessonGuide[] = packs031.map((p) => ({
   id: p.id,
   minutes: p.minutes,
   objectives: p.objectives,
-  sections: p.sections,
-  examples: p.examples,
-  recall: p.recall,
-  source: p.source,
+  sections: [...p.sections, ...(revisions042[p.id]?.sections ?? [])],
+  examples: [...p.examples, ...(revisions042[p.id]?.examples ?? [])],
+  recall: [...p.recall, ...(revisions042[p.id]?.recall ?? [])],
+  source: revisions042[p.id] ? `${p.source} ${revisions042[p.id]!.source}.` : p.source,
 }));
 export const geometryFoundation031Lessons: Lesson[] = packs031.map(
   (p, family) => ({
@@ -2568,13 +2579,13 @@ export const geometryFoundation031Lessons: Lesson[] = packs031.map(
     title: txt(p.title),
     minutes: p.minutes,
     objectives: p.objectives.map(txt),
-    source: txt(p.source),
+    source: txt(geometryFoundation031Guides[family].source),
     tags: ["temel-geometri", "kaynakli-anlatim", "Özgün öğretim soruları"],
-    body: p.sections.map((s) => ({
+    body: geometryFoundation031Guides[family].sections.map((s) => ({
       title: txt(s.title),
       text: txt(s.paragraphs.join("\n\n")),
     })),
-    questions: p.items.map((item, index): Question => {
+    questions: [...p.items.map((item, index): Question => {
       // Keep each reason attached to its option when distributing the answer letters.
       const shift = (2 * index + family + 1) % 5;
       const order = item.options.map((_, j) => (j + shift) % 5);
@@ -2596,7 +2607,7 @@ export const geometryFoundation031Lessons: Lesson[] = packs031.map(
         skill: p.id,
         guidance,
       };
-    }),
+    }), ...(revisions042[p.id]?.questions ?? [])],
   }),
 );
 interface FoundationQuickSheet031 {
@@ -2889,14 +2900,14 @@ const quickSheets031: Record<string, FoundationQuickSheet031> = {
 };
 export const geometryFoundation031Sheets: CheatSheet[] = packs031.map((p) => {
   const summary = quickSheets031[p.id];
+  const revision = revisions042[p.id];
   return {
     topicId: `topic-${p.id}`,
     lessonId: p.id,
     title: p.title,
     subjectId: "tyt-geometri",
-    sections: summary.sections,
-    examples: summary.exampleIndexes.map((index) => {
-      const e = p.examples[index];
+    sections: [...summary.sections, ...(revision?.sheet ?? [])],
+    examples: [...summary.exampleIndexes.map((index) => p.examples[index]), ...(revision?.examples ?? [])].map((e) => {
       return {
         title: e.title,
         prompt: e.prompt,
@@ -2905,7 +2916,7 @@ export const geometryFoundation031Sheets: CheatSheet[] = packs031.map((p) => {
       };
     }),
     cautions: summary.cautions,
-    recall: summary.recallIndexes.map((index) => p.recall[index]),
-    source: p.source,
+    recall: [...summary.recallIndexes.map((index) => p.recall[index]), ...(revision?.recall ?? [])],
+    source: revision ? `${p.source} ${revision.source}.` : p.source,
   };
 });

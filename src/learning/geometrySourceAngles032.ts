@@ -2,11 +2,13 @@ import { txt, type Lesson, type Question } from "../domain/model";
 import type { QuestionGuidance } from "../domain/questionHelpModel";
 import type { LessonGuide } from "./guides/types";
 import type { CheatSheet } from "./cheatsheetContent";
+import { lineAngles042 } from "./geometryConditions042Teaching";
+import { lineAnglesPractice042 } from "./geometryConditions042Practice";
 
 export const geometrySourceAngles032Id = "tyt-geo-acilar-kaynak-pekitirme-032";
 const id = geometrySourceAngles032Id;
 const source =
-  "Aurelia, Geometrinin Dili ve Doğruda Açılar kopya kağıdı: 14 Kasım 2026 tarihli yedi sayfalık sürüm ve önceki dört sayfalık sürüm. Kavram ve sayısal örnekler yeniden açıklanmış, özgün öğretim soruları geliştirilmiştir. Alıştırmalar resmî sınav sorusu değildir; kaynakta atıf yapılan MEB arşivinin tamamını temsil etmez.";
+  `Aurelia, Geometrinin Dili ve Doğruda Açılar kopya kağıdı: 14 Kasım 2026 tarihli yedi sayfalık sürüm ve önceki dört sayfalık sürüm. Kavram ve sayısal örnekler yeniden açıklanmış, özgün öğretim soruları geliştirilmiştir. Alıştırmalar resmî sınav sorusu değildir; kaynakta atıf yapılan MEB arşivinin tamamını temsil etmez. ${lineAngles042.source}.`;
 
 const guide: LessonGuide = {
   id,
@@ -804,6 +806,10 @@ guide.sections.push({
   ],
 });
 
+guide.sections.push(...lineAngles042.sections);
+guide.examples.push(...lineAngles042.examples);
+guide.recall.push(...lineAngles042.recall);
+
 export const geometrySourceAngles032Guides: LessonGuide[] = [guide];
 export const geometrySourceAngles032Lessons: Lesson[] = [
   {
@@ -818,7 +824,7 @@ export const geometrySourceAngles032Lessons: Lesson[] = [
       title: txt(s.title),
       text: txt(s.paragraphs.join("\n\n")),
     })),
-    questions: items.map((item, index): Question => {
+    questions: [...items.map((item, index): Question => {
       const order = item.options.map((_, j) => (j + 2 * index + 1) % 5);
       const guidance: QuestionGuidance = {
         knowledge: item.knowledge,
@@ -838,7 +844,7 @@ export const geometrySourceAngles032Lessons: Lesson[] = [
         skill: id,
         guidance,
       };
-    }),
+    }), ...lineAnglesPractice042],
   },
 ];
 export const geometrySourceAngles032Sheets: CheatSheet[] = [
@@ -878,8 +884,9 @@ export const geometrySourceAngles032Sheets: CheatSheet[] = [
           "x’i bulduktan sonra açı ifadesine koy; komşu soruluyorsa180°den çıkar. Görünüşten ölçü veya paralellik çıkarma; verilen koşulu kullan.",
         ],
       },
+      ...lineAngles042.sheet,
     ],
-    examples: [guide.examples[4], guide.examples[6]].map((e) => ({
+    examples: [guide.examples[4], guide.examples[6], ...lineAngles042.examples].map((e) => ({
       title: e.title,
       prompt: e.prompt,
       steps: e.steps.map((s) => s.label + ": " + s.explanation),
@@ -890,7 +897,7 @@ export const geometrySourceAngles032Sheets: CheatSheet[] = [
       "x=25, ölçünün 25° olduğu anlamına gelmez.",
       "Ters açı ile iç ters açı farklı konumları adlandırır.",
     ],
-    recall: guide.recall.slice(0, 3),
+    recall: [...guide.recall.slice(0, 3), ...lineAngles042.recall],
     source,
   },
 ];
