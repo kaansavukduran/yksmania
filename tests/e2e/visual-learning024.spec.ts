@@ -3,6 +3,7 @@ import AxeBuilder from "@axe-core/playwright";
 import type { AppState } from "../../src/domain/model";
 import { geometrySummary024Inventory } from "./visual-geometry024-inventory";
 import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
+import { setThemePreference } from "./helpers/theme";
 
 registerOfflineBootDiagnostics();
 test.use({ locale: "tr-TR", timezoneId: "Europe/Istanbul" });
@@ -91,6 +92,8 @@ test("024 every geometry summary exposes its own teaching figure offline; changi
       "noktanin-analitigi",
     ]),
   );
+  await page.goto("/#/settings");
+  await setThemePreference(page, "matrix");
   const area = await openSheet(page, "alan-donusumleri");
   await expect(page.locator("html")).toHaveAttribute("data-theme", "matrix");
   const note = page.locator(".cheat-note").getByRole("textbox");
@@ -183,6 +186,7 @@ for (const scenario of [
   }, testInfo) => {
     test.setTimeout(90_000);
     await page.goto("/#/settings");
+    await setThemePreference(page, "matrix");
     await expect(page.locator("html")).toHaveAttribute("data-theme", "matrix");
     await page.getByLabel("Yazı tipi", { exact: true }).selectOption("lexend");
     await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");

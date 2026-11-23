@@ -142,6 +142,7 @@ const messages: Record<string, string> = {
   dyslexia: "Lexend · Disleksi dostu yazı tipi",
   fontPreview: "Çığ, ışık, öğrenmek: Çç Ğğ İı Öö Şş Üü.",
   reset: "Varsayılana dön",
+  resetAppearance: "Varsayılan görünüme dön",
   motion: "Aion animasyonu",
   motionHelp: "Sistem hareket azaltma tercihi de uygulanır.",
   sound: "Sesler (doğru, yanlış, seri, kupa)",

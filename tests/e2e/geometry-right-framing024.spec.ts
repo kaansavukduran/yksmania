@@ -1,6 +1,7 @@
 import { expect, test, type Locator, type Page } from "@playwright/test";
 import type { AppState } from "../../src/domain/model";
 import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
+import { setThemePreference } from "./helpers/theme";
 
 registerOfflineBootDiagnostics();
 test.use({
@@ -132,6 +133,7 @@ for (const profile of [
     const errors: string[] = [];
     page.on("pageerror", (error) => errors.push(error.message));
     await page.goto("/#/settings");
+    await setThemePreference(page, "matrix");
     await expect(page.locator("html")).toHaveAttribute("data-theme", "matrix");
     if (profile.large) {
       await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");

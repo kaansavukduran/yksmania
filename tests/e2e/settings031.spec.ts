@@ -96,7 +96,7 @@ test("031 current and Matrix themes preserve custom dates, independent settings 
     exact: true,
   });
   await expect(date).toHaveValue("28/02/2027");
-  await expect(page.locator("html")).toHaveAttribute("data-theme", "matrix");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
   await expect(page.getByText(/bu resmî YKS tarihi değildir/)).toBeVisible();
   const themes = page.getByRole("group", { name: "Tema", exact: true });
   await expect(themes.getByRole("button")).toHaveText([
@@ -106,13 +106,8 @@ test("031 current and Matrix themes preserve custom dates, independent settings 
     "Trans bayrağı",
   ]);
   await expect(
-    themes.getByRole("button", { name: "Matrix", exact: true }),
+    themes.getByRole("button", { name: "Mevcut tema", exact: true }),
   ).toHaveAttribute("aria-pressed", "true");
-  // Keep exercising a genuine dark→Matrix transition after checking the new default.
-  await themes
-    .getByRole("button", { name: "Mevcut tema", exact: true })
-    .click();
-  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
   await date.fill("25/05/2027");
   await page.getByLabel("Yazı tipi", { exact: true }).selectOption("lexend");
   await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("135");
@@ -170,9 +165,23 @@ test("031 current and Matrix themes preserve custom dates, independent settings 
   await expect(current).toHaveAttribute("aria-pressed", "true");
   await saved(page);
   expect(await stored(page)).toEqual(before);
+
+  await setThemePreference(page, "matrix");
+  await page.getByRole("switch", { name: /^Zamanlayıcılar/ }).uncheck();
+  await saved(page);
+  const beforeReset = await stored(page);
+  await page.getByRole("button", { name: "Varsayılan görünüme dön", exact: true }).press("Enter");
+  await expect(current).toHaveAttribute("aria-pressed", "true");
+  await saved(page);
+  await page.reload();
+  await expect(current).toHaveAttribute("aria-pressed", "true");
+  expect(await stored(page)).toEqual({
+    ...beforeReset,
+    settings: { ...beforeReset.settings, theme: "dark", scale: 100, textSize: 100, font: "system", motion: true },
+  });
 });
 
-test("024 an unset saved theme defaults to Matrix without replacing existing notes or study records", async ({
+test("an unset saved theme defaults to the current theme without replacing existing notes or study records", async ({
   page,
 }) => {
   await settings(page);
@@ -180,10 +189,10 @@ test("024 an unset saved theme defaults to Matrix without replacing existing not
   await patchStored(page, { theme: undefined }, true);
   const before = await stored(page);
   await page.reload();
-  await expect(page.locator("html")).toHaveAttribute("data-theme", "matrix");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
   expect(await stored(page)).toEqual({
     ...before,
-    settings: { ...before.settings, theme: "matrix" },
+    settings: { ...before.settings, theme: "dark" },
   });
 });
 

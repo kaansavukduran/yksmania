@@ -13,7 +13,7 @@ import { DateInput } from "../components/DateInput";
 import { parseBackup } from "../domain/storage";
 import { useConfirmationDialog } from "../components/ConfirmationDialog";
 import { ResetProgress } from "../components/ResetProgress";
-import type { Settings as SettingsType } from "../domain/model";
+import { defaultAppearance, type Settings as SettingsType } from "../domain/model";
 import { APP_VERSION } from "../version";
 import { ChoiceSelect } from "../components/ChoiceSelect";
 import { playCue, type SoundCue } from "../domain/soundEngine";
@@ -369,6 +369,18 @@ export function Settings({
             checked={state.settings.motion}
             onChange={(v) => set("motion", v)}
           />
+          <button
+            type="button"
+            className="text-button"
+            onClick={() => {
+              void update((current) => ({
+                ...current,
+                settings: { ...current.settings, ...defaultAppearance },
+              })).catch(() => {});
+            }}
+          >
+            {t("resetAppearance")}
+          </button>
           <Toggle
             label="Zamanlayıcılar"
             help="Kapalıyken kum saati, deneme sayacı ve süreye bağlı göstergeler gizlenir. Deneme zamanları kayda geçmeye devam eder. Denemeyi sen bitirirsin."

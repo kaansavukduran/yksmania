@@ -21,13 +21,21 @@ const date = z
     );
   });
 const id = z.string().min(1).max(160);
+export const defaultAppearance = {
+  theme: "dark",
+  scale: 100,
+  textSize: 100,
+  font: "system",
+  motion: true,
+} as const;
+
 export const settingsSchema = z.object({
   // Read earlier English preferences/backups without losing the rest of the state.
   locale: z.enum(["tr", "en"]).transform(() => "tr" as const),
-  // Matrix is the new/unset default; every explicit earlier preference stays.
+  // Default only an unset theme. Explicit preferences are stored as before.
   theme: z
     .enum(["dark", "light", "system", "contrast", "matrix", "axolotl", "trans"])
-    .default("matrix"),
+    .default(defaultAppearance.theme),
   scale: z
     .number()
     .int()
@@ -193,11 +201,7 @@ export const initialState = (): AppState => ({
   examSessions: [],
   settings: {
     locale: "tr",
-    theme: "matrix",
-    scale: 100,
-    textSize: 100,
-    font: "system",
-    motion: true,
+    ...defaultAppearance,
     sound: false,
     soundVolume: 60,
     gamification: true,

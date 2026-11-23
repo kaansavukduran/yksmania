@@ -6,6 +6,8 @@ Kuvvet ve Newton Yasaları kartında 2 kg’lık cisme etki eden 4 N ve 10 N, y�
 
 320 piksel, %200 arayüz ve %150 yazıda iki soru gerçek girişten çevrimdışı sınandı. Geometride geri adım, yeniden açılış ve yardımlı yanıt kaydı doğrulandı. Fizik çiziminin taşan etiketleri düzeltilip aynı ölçüm tekrar edildi. Tarihsel OGM deneme kayıtları da mevcut görsel eşleşme kontrolünü geçti. Bu bölüm iki kartın yerel kabulünü kaydeder. Görselli şık, yeni kartların deneme ve yazdırma kabulü ile diğer kaynak maddeleri açık.
 
+Görünümde yeni ve tema alanı bulunmayan kayıtlar Mevcut tema ile açılıyor. Önceden seçilen tema yükleniyor. Varsayılan görünüme dön düğmesi tema, ölçek, yazı boyutu, yazı tipi ve hareket ayarlarını geri alıyor. Zamanlayıcı tercihi, çalışma verisi ve hedef tarih korunuyor. Yeni başlangıç, Matrix seçimi, klavyeden sıfırlama ve çevrimdışı tekrar açılış tarayıcıda doğrulandı.
+
 # Doğruda Açılar, Üçgende Açılar ve Açı Kenar Bağıntıları · 0.42.0 adayı
 
 23 Kasım 2026. Güncel üç geometri kaynağının 12’şer sayfası metin ve görsel olarak incelendi. Komşu açıların dış kolları, paralellik kalkınca kalan açı eşitliği, aynı üçgendeki iç ve dış açıortaylar ile ortak kenarın sıkı sınırları anlatılıyor.
