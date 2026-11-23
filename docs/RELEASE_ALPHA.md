@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.68.0 · Gaz ve plazma
+
+Yayın adayı. İyonlaşma ve yeniden birleşmeyi karşılaştır. Yük tablosu, ayrı Kopya Kağıdı ve çözümlü örnek aynı tanecik modelini kullanır.
+
 # ÖSYM Mania 0.67.0 · Farklı ısı sığaları
 
 Yayın adayı. Aynı enerji alışverişinin iki sıcaklığı ne kadar değiştirdiğini karşılaştır. Denge sıcaklığına ait çizim ilgili çözüm adımında yer alır.

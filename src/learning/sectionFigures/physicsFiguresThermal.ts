@@ -1,3 +1,5 @@
+import { phasePlasmaTitle } from "../phasePlasma068";
+import { phasePlasmaFigure } from "./phasePlasmaFigure068";
 import { weightedBalanceTitle } from "../weightedThermalBalance067";
 import { weightedBalanceFigure } from "./weightedThermalBalanceFigure067";
 import { heatingCurveTitle } from "../heatingCurve066";
@@ -427,6 +429,7 @@ const genlesme: Record<string, FigureDef> = {
 };
 
 const hal: Record<string, FigureDef> = {
+  [phasePlasmaTitle]: phasePlasmaFigure,
   "Geçişin adını başlangıç ve sondan kur": {
     caption:
       "Altı geçiş: üst oklar enerji alarak (erime, buharlaşma, süblimleşme), alt oklar enerji vererek (donma, yoğuşma, kırağılaşma) gerçekleşir. Adı, başlangıç ve son hâlden kur.",

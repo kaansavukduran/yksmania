@@ -1,7 +1,7 @@
 {
-  "version": "0.67.0",
+  "version": "0.68.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Isı sığaları farklı iki cismin denge sıcaklığını hesapla. Sıcaklık doğrusu, orta noktadan neden ayrıldığını gösterir."
+    "tr": "Nötr gazda iyonlaşmayı ve elektronların yeniden birleşmesini iki yönlü şemada izle. Toplam yükü adım adım denetle."
   }
 }

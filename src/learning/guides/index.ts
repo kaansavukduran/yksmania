@@ -1,3 +1,4 @@
+import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
 import { equalHeatExample, equalHeatSection, specificHeatSection } from "../specificHeat065";
@@ -330,11 +331,14 @@ export function studyGuide(lessonId: string) {
   if (guide?.id === "hal-degisimi") {
     return {
       ...guide,
-      sections: guide.sections.map((section) => section.title === heatingCurveTitle
-        ? { ...section, figureTitle: heatingCurveTitle, table: heatingCurveTable }
-        : section),
-      examples: [...guide.examples, heatingCurveExample],
-      source: `${guide.source} Birikimli ısı ekseninin beş bölgesi MEBİ TYT Fizik Konu Özetleri fiziksel 71, basılı 69. sayfadaki grafikle karşılaştırıldı. Örnek malzeme katsayıları yaklaşık değerlerdir.`,
+      sections: [
+        ...guide.sections.map((section) => section.title === heatingCurveTitle
+          ? { ...section, figureTitle: heatingCurveTitle, table: heatingCurveTable }
+          : section),
+        phasePlasmaSection,
+      ],
+      examples: [...guide.examples, heatingCurveExample, phasePlasmaExample],
+      source: `${guide.source} Birikimli ısı ekseninin beş bölgesi MEBİ TYT Fizik Konu Özetleri fiziksel 71, basılı 69. sayfadaki grafikle karşılaştırıldı. Örnek malzeme katsayıları yaklaşık değerlerdir. Gaz–plazma şeması fiziksel 69–70, basılı 67–68. sayfalardaki iyonlaşma ve yeniden birleşme rollerine dayanır.`,
     };
   }
   if (guide?.id === "isi-ve-sicaklik") {
