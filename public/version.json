@@ -1,7 +1,7 @@
 {
-  "version": "0.32.0",
+  "version": "0.33.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Kesir Problemleri’nde son kalandan başlangıcı hesapla. Yaş Problemleri’nde yıl farkını, doğum gününü ve tamamlanan yaşı aynı takvimde karşılaştır. İki konuya 11 özgün soru, çözümlü örnekler ve yeni Kopya Kağıdı bölümleri eklendi."
+    "tr": "Yüzde Problemleri’nde kapların doluluğunu ve tüketilen içeriği ayrı hesapla. Kâr Zarar Problemleri’nde fireyi değiştirip toplam gideri, geliri ve başa baş fiyatını karşılaştır. İki konuya 12 yeni özgün soru ve Kopya Kağıdı bölümleri eklendi."
   }
 }

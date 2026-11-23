@@ -1,0 +1,198 @@
+{
+  "yuzde-problemleri": [
+    {
+      "id": "yuzde-problemleri-011-1",
+      "prompt": "280'in %15'i kaçtır?",
+      "correct": "42",
+      "selected": 0
+    },
+    {
+      "id": "yuzde-problemleri-011-2",
+      "prompt": "Bir sayının %24'ü 72'dir. Sayı kaçtır?",
+      "correct": "300",
+      "selected": 1
+    },
+    {
+      "id": "yuzde-problemleri-011-3",
+      "prompt": "80 TL'den 100 TL'ye çıkan bir fiyat yüzde kaç artmıştır?",
+      "correct": "%25",
+      "selected": 2
+    },
+    {
+      "id": "yuzde-problemleri-011-4",
+      "prompt": "Bir fiyat önce %20 artıyor, sonra yeni fiyatından %20 azalıyor. Başlangıca göre sonuç nedir?",
+      "correct": "%4 azalır.",
+      "selected": 3
+    },
+    {
+      "id": "yuzde-problemleri-011-5",
+      "prompt": "%25 indirimden sonra 180 TL olan bir ürünün indirim öncesi fiyatı kaç TL'dir?",
+      "correct": "240",
+      "selected": 4
+    },
+    {
+      "id": "yuzde-problemleri-011-6",
+      "prompt": "Bir katılım oranı %20'den %35'e çıkmıştır. Artış kaç yüzde puandır?",
+      "correct": "15",
+      "selected": 0
+    },
+    {
+      "id": "yuzde-problemleri-011-7",
+      "prompt": "Ayrı iki gruptan 10 kişilik grubun %20'si, 30 kişilik grubun %60'ı katılıyor. Birleşik katılım yüzdesi nedir?",
+      "correct": "%50",
+      "selected": 1
+    },
+    {
+      "id": "yuzde-problemleri-011-8",
+      "prompt": "Bir karenin kenarı %20 büyüyor. Alanı yüzde kaç büyür?",
+      "correct": "%44",
+      "selected": 2
+    },
+    {
+      "id": "yuzde-problemleri-011-9",
+      "prompt": "%80 dolu bir kaptaki mevcut sıvının %25'i tüketiliyor. Başlangıçtaki kap kapasitesi değişmiyor. Son doluluk yüzde kaçtır?",
+      "correct": "%60",
+      "selected": 3
+    },
+    {
+      "id": "yuzde-problemleri-011-10",
+      "prompt": "500 gramı 200 TL olan bir ürünün yeni paketi 400 gram ve 192 TL'dir. Gram fiyatı nasıl değişmiştir?",
+      "correct": "%20 artmıştır.",
+      "selected": 4
+    },
+    {
+      "id": "yuzde-problemleri-020-farkli-kapasite",
+      "prompt": "240 L kapasiteli ilk depo başlangıçta %50 dolu. İlk deponun içeriğinin %30’u, 150 L kapasiteli ikinci deponun içeriğinin %20’si kullanılıyor. Sonra iki depoda eşit miktarda sıvı var. İkinci depo başlangıçta yüzde kaç doludur?",
+      "correct": "%70",
+      "selected": 2
+    },
+    {
+      "id": "yuzde-problemleri-020-grup-buyuklugu",
+      "prompt": "Çakışmayan A ve B gruplarında toplam 120 öğrenci var. A’dakilerin %25’i, B’dekilerin %50’si bir yarışmaya katılıyor. Toplam 50 öğrenci katıldığına göre B grubundan kaç öğrenci katılır?",
+      "correct": "40",
+      "selected": 3
+    },
+    {
+      "id": "yuzde-problemleri-020-tutar-olcegi",
+      "prompt": "Başlangıç etiketleri aynı olan iki kulaklıktan birine %25, diğerine %10 indirim uygulanıyor. İndirimli fiyatlar arasında 36 TL fark var. İndirimli iki fiyatın toplamı kaç TL’dir?",
+      "correct": "396",
+      "selected": 4
+    },
+    {
+      "id": "yuzde-problemleri-020-kenar-kosulu",
+      "prompt": "Dikdörtgen bir panonun uzun kenarı %40 büyütülüyor, kısa kenarı %25 kısaltılıyor ve kaplamanın metrekare fiyatı %20 artıyor. Sabit ücret yok. Bu planda ve kısa kenarın değişmediği alternatif planda toplam kaplama bedeli sırasıyla yüzde kaç artar?",
+      "correct": "%26 ve %68",
+      "selected": 0
+    },
+    {
+      "id": "yuzde-problemleri-020-yuzde-ve-litre-onar",
+      "prompt": "Bir tanktaki başlangıç suyunun %30’u boşaltıldıktan sonra 84 L kalıyor. Bir öğrenci ‘84+30=114 L’ diye çözüyor. Buna benzer ikinci tankta başlangıç suyundan tam 30 L boşaltılınca 84 L kalıyor. İki tankın başlangıç miktarı sırasıyla nedir?",
+      "correct": "120 L ve 114 L",
+      "selected": 1
+    },
+    {
+      "id": "yuzde-problemleri-020-ortak-katilan",
+      "prompt": "Bir okulda 36 kişilik A kulübünden 18, 44 kişilik B kulübünden 20 öğrenci bir etkinliğe katılıyor. İki kulübe birden üye olan 10 öğrenciden 3’ü etkinliğe katıldı. En az bir kulübe üye olan farklı öğrencilerin yüzde kaçı katılmıştır?",
+      "correct": "%50",
+      "selected": 2
+    }
+  ],
+  "kar-zarar-problemleri": [
+    {
+      "id": "kar-zarar-problemleri-011-1",
+      "prompt": "160 TL maliyetli bir ürün 200 TL'ye satılıyor. Maliyete göre kâr yüzdesi nedir?",
+      "correct": "%25",
+      "selected": 0
+    },
+    {
+      "id": "kar-zarar-problemleri-011-2",
+      "prompt": "%20 zararla 280 TL'ye satılan ürünün maliyeti kaç TL'dir?",
+      "correct": "350",
+      "selected": 1
+    },
+    {
+      "id": "kar-zarar-problemleri-011-3",
+      "prompt": "Maliyeti 400 TL olan ürün %50 kâr hedefiyle etiketlenip etiketten %20 indirimle satılıyor. Gerçek kâr yüzdesi kaçtır?",
+      "correct": "%20",
+      "selected": 2
+    },
+    {
+      "id": "kar-zarar-problemleri-011-4",
+      "prompt": "500 TL maliyetli ürün 625 TL'ye etiketlenmiştir. Zarar etmeden etikete en fazla yüzde kaç indirim yapılabilir?",
+      "correct": "%20",
+      "selected": 3
+    },
+    {
+      "id": "kar-zarar-problemleri-011-5",
+      "prompt": "İki ürünün her biri 240 TL'ye satılıyor. Birinde %20 kâr, diğerinde %20 zarar vardır. Toplam sonuç nedir?",
+      "correct": "%4 zarar.",
+      "selected": 4
+    },
+    {
+      "id": "kar-zarar-problemleri-011-6",
+      "prompt": "İki ürünün her birinin maliyeti 200 TL'dir. Biri %20 kârla, diğeri %20 zararla satılıyor. Toplam sonuç nedir?",
+      "correct": "Başabaş.",
+      "selected": 0
+    },
+    {
+      "id": "kar-zarar-problemleri-011-7",
+      "prompt": "100 kg ürün kilogramı 30 TL'den alınıyor. Ek gider yok. %20'si satılamıyor; kalan kilogramı 45 TL'den satılıyor. Toplam kâr yüzdesi nedir?",
+      "correct": "%20",
+      "selected": 1
+    },
+    {
+      "id": "kar-zarar-problemleri-011-8",
+      "prompt": "Sabit gider 600 TL, birim maliyet 20 TL ve birim satış 35 TL'dir. Üretilenlerin tümü satılıyor. Kesin kâr için en az kaç ürün gerekir?",
+      "correct": "41",
+      "selected": 2
+    },
+    {
+      "id": "kar-zarar-problemleri-011-9",
+      "prompt": "Bir ürünün etiket fiyatı 750 TL'dir. Maliyeti etiketten %20 düşük, satış fiyatı etiketten %12 yüksektir. Maliyete göre kâr yüzdesi nedir?",
+      "correct": "%40",
+      "selected": 3
+    },
+    {
+      "id": "kar-zarar-problemleri-011-10",
+      "prompt": "Bir satıcı 8 ürünü tanesi 50 TL maliyetle, 2 ürünü tanesi 100 TL maliyetle alıyor. İlk grubu %50 kârla, ikinci grubu %25 zararla tamamen satıyor. Toplam kâr yüzdesi nedir?",
+      "correct": "%25",
+      "selected": 4
+    },
+    {
+      "id": "kar-zarar-problemleri-021-korunan-kar-indirim",
+      "prompt": "Maliyeti 480 TL, etiketi 720 TL olan bir üründe en az %20 kâr korunacak. Etiket fiyatına en fazla yüzde kaç indirim uygulanabilir?",
+      "correct": "%20",
+      "selected": 1
+    },
+    {
+      "id": "kar-zarar-problemleri-021-gider-adet-ayri",
+      "prompt": "Atölyenin sabit gideri 230 TL, üretim maliyeti 14 TL/adet ve satış fiyatı 39 TL/adet. n adet satıldığında n+5 adet üretiliyor ve fazladan 5 adet hiç gelir getirmiyor. Zarar etmemek, kesin kâr etmek ve en az 100 TL kâr etmek için gereken en az satış adetleri sırasıyla nedir?",
+      "correct": "12, 13 ve 16",
+      "selected": 2
+    },
+    {
+      "id": "kar-zarar-problemleri-021-fireli-gelir",
+      "prompt": "80 kg meyve 18 TL/kg’den alınıyor ve 160 TL taşıma ödeniyor. 60 kg meyve 30 TL/kg, zedelenen 20 kg da 10 TL/kg fiyatla satılıyor. Toplam kâr yüzdesi nedir?",
+      "correct": "%25",
+      "selected": 3
+    },
+    {
+      "id": "kar-zarar-problemleri-021-grupta-eksik-fiyat",
+      "prompt": "Bir satıcı A grubundaki 6 ürünü tanesi 40 TL’ye, B grubundaki 4 ürünü tanesi 55 TL’ye alıyor. A grubunun hepsini tanesi 64 TL’ye satıyor. B grubu tek bir fiyattan tamamen satılacak. Toplam maliyete göre tam %20 kâr için B grubunda bir ürün kaça satılmalı?",
+      "correct": "42 TL",
+      "selected": 4
+    },
+    {
+      "id": "kar-zarar-problemleri-021-esit-satis-farkli-oran",
+      "prompt": "İki ürünün her biri 180 TL’ye satılıyor. İlk satışta ilk ürünün maliyetine göre %50 kâr, ikinci satışta ikinci ürünün maliyetine göre %25 zarar var. Başka gider yok. Toplam satışın sonucu nedir?",
+      "correct": "Başabaş.",
+      "selected": 0
+    },
+    {
+      "id": "kar-zarar-problemleri-021-iki-satis-siniri",
+      "prompt": "Bir takımın maliyeti 2x+168 TL’dir. Ayrı satış senaryolarında takım 4x+24 TL’ye satıldığında da 2x+203 TL’ye satıldığında da kesin kâr ediliyor. x pozitif gerçek sayıysa hangi değerleri alabilir?",
+      "correct": "x>72",
+      "selected": 2
+    }
+  ]
+}

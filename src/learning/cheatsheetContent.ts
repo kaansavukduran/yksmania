@@ -1,3 +1,5 @@
+import { percentProblemsSource020SheetText } from "./percentProblemsSource020Revision";
+import { profitProblemsSource021SheetText } from "./profitProblemsSource021Revision";
 import { ageProblemsSource019SheetText } from "./ageProblemsSource019Revision";
 import { fractionProblemsSource018SheetText } from "./fractionProblemsSource018Revision";
 import { linearEquationsSource036Sheets } from "./linearEquationsSource036";
@@ -125,6 +127,8 @@ export interface CheatSheet {
 const revisedSectionTextByLesson = new Map([
   ["kesir-problemleri", fractionProblemsSource018SheetText],
   ["yas-problemleri", ageProblemsSource019SheetText],
+  ["yuzde-problemleri", percentProblemsSource020SheetText],
+  ["kar-zarar-problemleri", profitProblemsSource021SheetText],
 ]);
 
 const completeSourceSheets = new Set([

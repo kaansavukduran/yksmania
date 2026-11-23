@@ -31,6 +31,16 @@ const revisions = [
     appendedQuestions: ["tamamlanan-ve-girilen-yas", "yeni-uye-yetersiz-veri", "iki-tarih-tek-kisi-kosulu", "iki-kesin-yas-siniri", "iki-dogum-yonu", "hizmet-yili-parantez-onar"].map((id) => `yas-problemleri-019-${id}`),
     oldSource: "MEBİ TYT Matematik Konu Özetleri, basılı s.49 (PDF 51); Aurelia 019 Yaş Problemleri, öğretim s.1–6. Kişi-zaman tabloları ve özgün çözümler esas alındı; resmî kitapçık soruları bu bankaya aktarılmadı.",
   },
+  {
+    lesson: "yuzde-problemleri", topic: "detail-213", sections: 8, examples: 4, recall: 4,
+    appendedQuestions: ["farkli-kapasite", "grup-buyuklugu", "tutar-olcegi", "kenar-kosulu", "yuzde-ve-litre-onar", "ortak-katilan"].map((id) => `yuzde-problemleri-020-${id}`),
+    oldSource: "MEBİ TYT Matematik Konu Özetleri, basılı s.51 (PDF 53); Aurelia 020 Yüzde Problemleri, öğretim s.1–8. Özgün örneklerle taban, çarpan ve ağırlık kapsamı işlendi. Resmî sınav arşivinin bütünü tarandı iddiası yoktur.",
+  },
+  {
+    lesson: "kar-zarar-problemleri", topic: "detail-214", sections: 8, examples: 5, recall: 4,
+    appendedQuestions: ["korunan-kar-indirim", "gider-adet-ayri", "fireli-gelir", "grupta-eksik-fiyat", "esit-satis-farkli-oran", "iki-satis-siniri"].map((id) => `kar-zarar-problemleri-021-${id}`),
+    oldSource: "MEBİ TYT Matematik Konu Özetleri, basılı s.52 (PDF 54); Aurelia 021 Kâr Zarar Problemleri, öğretim s.1–8. Kapsama dayalı özgün anlatım, fiyat ve başabaş modelleri; sorular resmî ÖSYM maddesi olarak sunulmaz.",
+  },
 ];
 
 const additions = new Set(revisions.flatMap(({ appendedQuestions }) => appendedQuestions));
@@ -43,6 +53,8 @@ export function beforeSource032Registration(source: string) {
   const additions = [
     { prefix: "fractionProblemsSource018", pack: "fractions", source: revisions[3].oldSource },
     { prefix: "ageProblemsSource019", pack: "ages", source: revisions[4].oldSource },
+    { prefix: "percentProblemsSource020", pack: "percentages", source: revisions[5].oldSource },
+    { prefix: "profitProblemsSource021", pack: "profit", source: revisions[6].oldSource },
   ];
   for (const addition of additions) {
     const { prefix, pack } = addition;

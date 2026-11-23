@@ -9,6 +9,8 @@ import {
 } from "./forge011Math";
 import { useExploration } from "./useExploration";
 import { CalendarAgeSource019Lab } from "./CalendarAgeSource019Lab";
+import { EqualRemaindersSource020Lab } from "./EqualRemaindersSource020Lab";
+import { FireProfitSource021Lab } from "./FireProfitSource021Lab";
 import { InverseRemainderSource018Lab } from "./InverseRemainderSource018Lab";
 import { WeightedUseSource017Lab } from "./WeightedUseSource017Lab";
 import "./forge011Math.css";
@@ -949,9 +951,15 @@ export default function Forge011MathLab({ id }: { id: string }) {
           <CalendarAgeSource019Lab />
         </>
       ) : id === "yuzde-problemleri" ? (
-        <Percentages />
+        <>
+          <Percentages />
+          <EqualRemaindersSource020Lab />
+        </>
       ) : (
-        <Profit />
+        <>
+          <Profit />
+          {id === "kar-zarar-problemleri" && <FireProfitSource021Lab />}
+        </>
       )}
       <p className="f011m-limit">
         Seçimlerin ve gerekçen bu cihazda keşif kaydı olarak saklanır. Modelleri

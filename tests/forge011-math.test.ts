@@ -61,8 +61,8 @@ it("joins the next five problem headings through native lesson-to-topic mappings
     ]);
   }
   const ids = forge011MathLessons.flatMap((l) => l.questions.map((q) => q.id));
-  expect(ids).toHaveLength(65);
-  expect(new Set(ids).size).toBe(65);
+  expect(ids).toHaveLength(77);
+  expect(new Set(ids).size).toBe(77);
 });
 
 it("independently checks the fifty declared answer choices, including context and boundary items", () => {

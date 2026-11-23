@@ -8,8 +8,8 @@ it("preserves all eight accepted references/teaching variants while adding actua
   expect(pastExamReferences.slice(0, 8)).toEqual(baseline.pastExamReferences);
   for (const [id, item] of Object.entries(baseline.examTeachingCases))
     expect(examTeachingCases[id]).toEqual(item);
-  expect(pastExamReferences).toHaveLength(20);
-  expect(Object.keys(examTeachingCases)).toHaveLength(20);
+  expect(pastExamReferences).toHaveLength(21);
+  expect(Object.keys(examTeachingCases)).toHaveLength(21);
   const ref = pastExamReferences.find((r) => r.id === "2021-TYT-MAT-5")!;
   expect(ref).toMatchObject({
     bookletId: "2021-tyt",

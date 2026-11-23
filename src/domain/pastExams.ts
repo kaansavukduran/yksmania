@@ -370,11 +370,30 @@ export const pastExamReferences: PastExamReference[] = [
       "2013’te yaşların toplamı 38+12=50’dir. 1999’da anne 24 yaşında, çocuk henüz doğmamıştır. İkinci koşul çocuğun o tarihteki yaşını kullanmaz. 2025 toplamı 74, resmî anahtar E’dir.",
     ],
   },
+  {
+    id: "2026-TYT-MAT-19",
+    bookletId: "2026-tyt",
+    test: "Temel Matematik",
+    question: 19,
+    page: 30,
+    answerPage: 45,
+    answer: "E",
+    topicIds: ["detail-213"],
+    title: "İki kapta kalan miktarların eşitliği",
+    connection:
+      "Başlangıç doluluğunda kapasiteyi, tüketimde mevcut içeriği taban al. İki kabın kalan miktarını aynı birimde eşitle.",
+    solution: [
+      "Ortak pozitif kapasite C, ikinci kabın başlangıç doluluk kesri x olsun. Birinci kabın başlangıç içeriği 0,80C, kalanı 0,80·0,84C=0,672C’dir.",
+      "İkinci kapta başlangıç içeriğinin %96’sı kalır. Eşitlik 0,672C=0,96xC. Ortak C’yi sadeleştirip 0,96’ya bölersen x=0,70 çıkar.",
+      "0,70·0,96C=0,672C kontrolü iki kalanı eşitler. Başlangıç doluluğu %70, resmî anahtar E’dir. Soru fiziksel PDF sayfası 30 (basılı 28), anahtar fiziksel PDF sayfası 45’tedir.",
+    ],
+  },
 ];
 // Selected companion links leave all earlier source records and their topic lists intact.
 const sourceCompanionReferences: Record<string, readonly string[]> = {
   "topic-tyt-mat-rasyonel-kaynak-035": ["2021-TYT-MAT-1"],
   "topic-tyt-mat-dogrusal-denklemler-kaynak-036": ["2024-TYT-MAT-17"],
+  "detail-214": ["2024-TYT-MAT-8"],
 };
 export function pastExamReferencesForTopic(topicId?: string) {
   return pastExamReferences.filter((reference) => Boolean(topicId && (

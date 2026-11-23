@@ -1,3 +1,11 @@
+# YKSMania 0.33.0 · Yüzde ve Kâr Zarar Problemleri
+
+Yayın adayı. Yüzde Problemleri’nde iki kabın kapasitesini, doluluğunu ve tüketilen miktarın oranını değiştir. Kâr Zarar Problemleri’nde fire olduğunda ödenmiş maliyetin, gelirin ve başa baş fiyatının nasıl değiştiğini incele. Çizimler hesaplanan değerleri gösterir.
+
+Konu anlatımı ve Kopya Kağıtları genişledi. İki konuya 12 yeni özgün soru eklendi. Açık eski 10 soruluk çalışmalar kendi uzunluklarıyla devam eder. [İlerleme tablosu](ILERLEME.md)
+
+---
+
 # YKSMania 0.32.0 · Kesir ve Yaş Problemleri
 
 Yayın adayı. Kesir Problemleri’nde kalan miktarı ve kalan kesrini değiştirerek başlangıcın bulunup bulunamayacağını inceleyebilirsin. Yaş Problemleri’nde takvimde iki tarih seçip yıl farkını ve tamamlanan yaşı karşılaştırabilirsin. Çizimler hesapla birlikte güncellenir. Model keşfi çalışma puanı üretmez.

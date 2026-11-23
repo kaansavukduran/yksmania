@@ -68,6 +68,12 @@ const cases = [
   ["Türkçe", "zarflar", "Humanities"],
   ["Tarih", "degisim-caginda-avrupa-osmanli", "Humanities"],
 ] as const;
+const addedNumberProblemIds = [
+  "sayi-problemleri-017-kismi-ve-bos-sira",
+  "sayi-problemleri-017-kalan-ve-baslangic",
+  "sayi-problemleri-017-iki-sayimla-kullanilmayan",
+  "sayi-problemleri-017-celisen-kullanim-onar",
+];
 let lessons: Lesson[];
 const guidance = new Map<string, QuestionGuidance>();
 type ReaderMetadata = {
@@ -136,8 +142,14 @@ test.beforeAll(async ({}, info) => {
     );
     for (const [, id] of cases) {
       const lesson = lessons.find((item) => item.id === id)!;
-      expect(lesson.questions).toHaveLength(10);
-      for (const q of lesson.questions) expect(guidance.has(q.id)).toBe(true);
+      const original = lesson.questions.slice(0, 10);
+      const added = lesson.questions.slice(10);
+      expect(original).toHaveLength(10);
+      for (const q of original) expect(guidance.has(q.id)).toBe(true);
+      expect(added.map((q) => q.id)).toEqual(
+        id === "sayi-problemleri" ? addedNumberProblemIds : [],
+      );
+      for (const q of added) expect(q.guidance?.optionReasons).toHaveLength(5);
     }
     for (const target of promptFixtures) {
       const lesson = lessons.find((item) =>

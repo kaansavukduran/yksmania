@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
-import flow from "../fixtures/source032-math-question-flow.json" with { type: "json" };
+import fractionAndAgeFlow from "../fixtures/source032-math-question-flow.json" with { type: "json" };
+import percentAndProfitFlow from "../fixtures/source033-math-question-flow.json" with { type: "json" };
 import { typeset } from "../../src/domain/typeset";
 import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
 import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse";
@@ -7,6 +8,7 @@ import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse"
 registerOfflineBootDiagnostics();
 test.use({ locale: "tr-TR", timezoneId: "Europe/Istanbul" });
 
+const flow = { ...fractionAndAgeFlow, ...percentAndProfitFlow };
 const courses = [
   {
     lesson: "kesir-problemleri",
@@ -30,6 +32,26 @@ const courses = [
       { year: 2023, question: 26, page: 30, answer: "E", example: "Yaş toplamı 69." },
       { year: 2026, question: 21, page: 30, answer: "E", example: "2027’de yaş toplamı 73." },
     ],
+  },
+  {
+    lesson: "yuzde-problemleri",
+    search: "Yüzde problemleri",
+    topic: "detail-213",
+    model: "source020-equal-remainders",
+    exploration: "equal-remainders-source-020",
+    sheet: "Kalan miktarları eşitlerken kapasiteleri yaz",
+    count: 16,
+    official: [{ year: 2026, question: 19, page: 30, answer: "E", example: "İkinci akvaryum başlangıçta %80 doluydu." }],
+  },
+  {
+    lesson: "kar-zarar-problemleri",
+    search: "Kâr zarar problemleri",
+    topic: "detail-214",
+    model: "source021-fire-profit",
+    exploration: "fire-profit-source-021",
+    sheet: "İndirim sınırını korunacak kâra göre hesapla",
+    count: 16,
+    official: [{ year: 2024, question: 8, page: 26, answer: "A", example: "10.000<b<20.000 TL" }],
   },
 ] as const;
 
@@ -64,7 +86,7 @@ for (const course of courses) {
       await panel.getByRole("slider", { name: "Son kalan miktar", exact: true }).press("ArrowRight");
       await expect(result).toContainText("Çözüm yok");
       await panel.getByRole("button", { name: "2 kalan, 3/4 pay", exact: true }).click();
-    } else {
+    } else if (course.lesson === "yas-problemleri") {
       await expect(result).toContainText("Tamamlanan yaş 13");
       await panel.getByRole("button", { name: "20 Aralık 2025 örneği", exact: true }).click();
       await expect(result).toContainText("Tamamlanan yaş 14");
@@ -92,6 +114,37 @@ for (const course of courses) {
         });
       });
       expect(datesFit).toBe(true);
+    } else if (course.lesson === "yuzde-problemleri") {
+      await expect(result).toContainText("%56,25");
+      await panel.getByRole("button", { name: "Küçük B kabı", exact: true }).click();
+      await expect(result).toContainText("%112,5");
+      await expect(result).toContainText("Bu doluluk %100’ü aşıyor.");
+      expect(await graph.innerHTML()).not.toBe(original);
+      await panel.getByRole("slider", { name: "B kabının içeriğinden tüketilen", exact: true }).press("End");
+      await expect(result).toContainText("Eşit kalan mümkün değil.");
+      await panel.getByRole("slider", { name: "A kabının içeriğinden tüketilen", exact: true }).press("End");
+      await expect(result).toContainText("başlangıç doluluğu tek olarak belirlenemez.");
+      await panel.getByRole("button", { name: "Küçük B kabı", exact: true }).click();
+    } else {
+      await expect(result).toContainText("Kâr 45 TL.");
+      await panel.getByRole("button", { name: "Zarar etmeme fiyatını dene", exact: true }).click();
+      await expect(result).toContainText("Başa baş. Gelir maliyete eşit.");
+      expect(await graph.innerHTML()).not.toBe(original);
+      const units = panel.getByRole("slider", { name: "Satılabilir adet", exact: true });
+      await units.press("ArrowLeft");
+      await expect(result).toContainText("Zarar 24 TL.");
+      await expect(result).toContainText("Ödenen toplam alış maliyeti 360 TL.");
+      await expect(result).toContainText("Bu adet için tam başa baş fiyatı kuruşla yazılamaz.");
+      await panel.getByRole("button", { name: "Zarar etmeme fiyatını dene", exact: true }).click();
+      await expect(result).toContainText("Kâr 0,08 TL.");
+      await units.press("Home");
+      await expect(result).toContainText("Zarar 360 TL.");
+      await expect(result).toContainText("Satılabilir ürün başına maliyet ve başa baş fiyatı bulunamaz.");
+      await panel.getByRole("textbox", { name: "Birim satış fiyatı (TL)", exact: true }).fill("0,001");
+      await expect(result).toContainText("Geçerli bir satış fiyatı gir.");
+      await expect(graph).toHaveCount(0);
+      await panel.getByRole("button", { name: "Örneğe dön", exact: true }).click();
+      await units.press("ArrowLeft");
     }
     const note = "Şekildeki sonucu başlangıç koşuluyla denetledim.";
     const notes = page.locator(".study-notes").getByRole("textbox", { name: "Notun", exact: true });
@@ -163,7 +216,7 @@ for (const course of courses) {
       await source.getByRole("button", { name: "Çözümü adım adım aç", exact: true }).click();
       for (let step = 0; step < 2; step += 1)
         await source.getByRole("button", { name: "Sonraki çözüm adımı", exact: true }).click();
-      await expect(source.locator(".worked-conclusion")).toContainText(official.example);
+      await expect(source.locator(".worked-conclusion")).toContainText(typeset(official.example));
       await source.locator("summary").click();
       await expect(source).toContainText(`Resmî cevap: ${official.answer}`);
       await expect(source.getByRole("link", { name: /Resmî kaynak kaydı/ }))

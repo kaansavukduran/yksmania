@@ -235,4 +235,16 @@ export const examTeachingCases: Record<string, ExamTeachingCase> = {
     pitfall:
       "2016 ve 1998 için tek zaman kayması seçmek veya her koşulda iki kişiyi de geçmiş sütununa koymak.",
   },
+  "2026-TYT-MAT-19": {
+    prompt:
+      "Eşit kapasiteli iki akvaryumdan ilki başlangıçta %75 dolu. İlk akvaryumun mevcut suyunun %20’si, ikincinin mevcut suyunun %25’i boşaltılıyor. İki akvaryumda eşit miktarda su kaldığına göre ikinci akvaryum başlangıçta yüzde kaç doluydu?",
+    steps: [
+      "Ortak kapasite C, ikinci akvaryumun başlangıç doluluk kesri x olsun. İlk akvaryumda 0,75C·0,80=0,60C, ikincide xC·0,75 kalır.",
+      "Kalanları eşitle. 0,60C=0,75xC. C pozitif olduğundan 0,60=0,75x ve x=0,80.",
+      "İkinci akvaryum %80 doluysa kalan miktar 0,80C·0,75=0,60C olur. İlk akvaryumda kalanla eşleşir.",
+    ],
+    answer: "İkinci akvaryum başlangıçta %80 doluydu.",
+    pitfall:
+      "Tüketim oranını kapasiteden çıkarmak veya eşit kalanlardan başlangıç doluluklarının eşit olduğunu varsaymak.",
+  },
 };

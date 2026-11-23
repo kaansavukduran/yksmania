@@ -1,6 +1,20 @@
 import { txt, type Lesson } from "../domain/model";
 import type { GuideSection, LessonGuide, WorkedExample } from "./guides/types";
 import {
+  percentProblemsSource020Examples,
+  percentProblemsSource020Practice,
+  percentProblemsSource020Recall,
+  percentProblemsSource020Sections,
+  percentProblemsSource020Summary,
+} from "./percentProblemsSource020Revision";
+import {
+  profitProblemsSource021Examples,
+  profitProblemsSource021Practice,
+  profitProblemsSource021Recall,
+  profitProblemsSource021Sections,
+  profitProblemsSource021Summary,
+} from "./profitProblemsSource021Revision";
+import {
   ageProblemsSource019Examples,
   ageProblemsSource019Practice,
   ageProblemsSource019Recall,
@@ -791,6 +805,7 @@ const percentages: Pack = {
       "Dikdörtgenin kenarları a ve b iken alan ab'dir. Her iki kenar %10 büyürse yeni alan 1,10a·1,10b=1,21ab, yani %21 büyür. Yalnız tek kenar değişirse alanın çarpanı yalnız o kenarın çarpanıdır. Uzunluğun yüzdesini alan yüzdesi sanmak boyutları karıştırır; hacimde üç bağımsız uzunluk çarpanı bulunabilir.",
       "Toplam maliyet alanla ve birim alan fiyatıyla orantılıysa yeni toplam çarpanı alan çarpanı ile birim fiyat çarpanının çarpımıdır. Alan %44 artarken birim fiyat %25 azalırsa toplam 1,44·0,75=1,08 kat, yani %8 artar. Sabit hizmet bedeli varsa onu ayrı ekle. Sonuç kontrolünde yalnız oranlar verilmişse 100 birim temsil seçilebilir; sabit TL farkı varsa ölçeği bilinmeyenle koru.",
     ),
+    ...percentProblemsSource020Sections,
   ],
   examples: [
     example(
@@ -853,6 +868,7 @@ const percentages: Pack = {
       "Kilogram karşılıkları 400 ve 480 TL; 80/400=%20.",
       "Paket fiyatının %4 azalmasını birim fiyat azalması sanmak.",
     ),
+    ...percentProblemsSource020Examples,
   ],
   recall: [
     {
@@ -874,6 +890,7 @@ const percentages: Pack = {
       answer:
         "Her gruptaki adetleri bulup topla, toplam grup büyüklüğüne böl. Aritmetik ortalama ancak eşit ağırlık gibi uygun koşullarda geçerlidir.",
     },
+    ...percentProblemsSource020Recall,
   ],
   questions: [
     problem(
@@ -947,8 +964,7 @@ const percentages: Pack = {
       "Eski 200/500=0,40 TL/g, yeni 192/400=0,48 TL/g. Artış 0,08/0,40=%20. Paket fiyatı %4 azalmış olsa da miktar daha fazla azalmıştır; sorulan nicelik birim fiyattır.",
     ),
   ],
-  source:
-    "MEBİ TYT Matematik Konu Özetleri, basılı s.51 (PDF 53); Aurelia 020 Yüzde Problemleri, öğretim s.1–8. Özgün örneklerle taban, çarpan ve ağırlık kapsamı işlendi. Resmî sınav arşivinin bütünü tarandı iddiası yoktur.",
+  source: percentProblemsSource020Summary,
 };
 
 const profit: Pack = {
@@ -1002,6 +1018,7 @@ const profit: Pack = {
       "Yalnız oranlar verilmişse 100 birim maliyetle temsil seçmek kolaylaştırabilir. Sabit 36 TL fark, taşıma gideri veya gerçek satış tutarı verildiğinde maliyeti keyfî 100 TL seçme; 100x veya M ile ölçeği koru. Kısa yol, korunması gereken ilişkiyi saklamıyorsa işe yarar. Çarpan yöntemiyle gerçek TL hesabının aynı sonucu verdiğini en az bir örnekte kontrol et.",
       "Son cevapta tutar mı oran mı, maliyete göre mi satışa göre mi istendiğini söyle. Gelir ve giderlerin toplamını tekrar kur; yüzdeyi doğru tabana böl ve en az/en çok adayının komşusunu dene. Ara işlemlerde kesirleri erken yuvarlama. Kuruşa yuvarlama açıkça belirtilmişse yalnız belirtilen aşamada uygula; açıklanmamış bir ticari uygulama yeni bir varsayım olmamalıdır.",
     ),
+    ...profitProblemsSource021Sections,
   ],
   examples: [
     example(
@@ -1069,6 +1086,7 @@ const profit: Pack = {
       "26'da gelir 988, gider 968, kâr 20 TL; 25'te ikisi 950 TL'dir.",
       "Başabaş noktası 25'i kesin kâr cevabı yapmak.",
     ),
+    ...profitProblemsSource021Examples,
   ],
   recall: [
     {
@@ -1092,6 +1110,7 @@ const profit: Pack = {
       answer:
         "Başabaşta kâr sıfırdır. Pozitif birim katkıda kesin K>0 koşulu için n>40, ilk tam sayı 41 gerekir.",
     },
+    ...profitProblemsSource021Recall,
   ],
   questions: [
     problem(
@@ -1165,8 +1184,7 @@ const profit: Pack = {
       "Maliyet 8·50+2·100=600 TL. Gelir 8·75+2·75=750 TL; kâr 150/600=%25. Oranların düz ortalaması %12,5, iki grubun farklı toplam maliyet ağırlığını hesaba katmaz.",
     ),
   ],
-  source:
-    "MEBİ TYT Matematik Konu Özetleri, basılı s.52 (PDF 54); Aurelia 021 Kâr Zarar Problemleri, öğretim s.1–8. Kapsama dayalı özgün anlatım, fiyat ve başabaş modelleri; sorular resmî ÖSYM maddesi olarak sunulmaz.",
+  source: profitProblemsSource021Summary,
 };
 
 const packs = [numbers, fractions, ages, percentages, profit];
@@ -1212,6 +1230,8 @@ export const forge011MathLessons: Lesson[] = packs.map((p) => ({
     ...(p === numbers ? numberProblemsSource017Practice : []),
     ...(p === fractions ? fractionProblemsSource018Practice : []),
     ...(p === ages ? ageProblemsSource019Practice : []),
+    ...(p === percentages ? percentProblemsSource020Practice : []),
+    ...(p === profit ? profitProblemsSource021Practice : []),
   ],
   source: txt(p.source),
   tags: [p.topic, "Özgün öğretim soruları"],

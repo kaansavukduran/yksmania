@@ -49,7 +49,7 @@ function SplitPicture({
     <figure style={{ marginInline: 0 }}>
       <svg
         className="math093-svg"
-        viewBox={`0 0 470 ${referenceVisible ? 165 : 82}`}
+        viewBox={`0 -10 470 ${referenceVisible ? 175 : 92}`}
         role="img"
         aria-labelledby={`${id}-title`}
         aria-describedby={`${id}-caption`}

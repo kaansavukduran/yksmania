@@ -71,7 +71,7 @@ function CalendarTimeline({
     <figure style={{ marginInline: 0 }}>
       <svg
         className="f011m-diagram"
-        viewBox={`0 0 454 ${model.kind === "valid" ? 170 : 72}`}
+        viewBox={`0 -10 454 ${model.kind === "valid" ? 180 : 82}`}
         role="img"
         aria-labelledby={`${id}-title`}
         aria-describedby={`${id}-caption`}
