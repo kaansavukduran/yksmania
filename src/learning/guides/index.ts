@@ -3,6 +3,7 @@ import { electroscopeExample, electroscopeSection } from "../electroscopeInducti
 import { groundingTransferExample, groundingTransferSection } from "../groundingTransfer074";
 import { parabolaTranslationExample, parabolaTranslationSection } from "../parabolaTranslation075";
 import { wireMaterialSection, wireResistanceExample, wireResistanceTitle } from "../wireResistance076";
+import { meterConnectionsTitle, ohmMeasurementSection, ohmSlopeExample } from "../mebiOhmReadings";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
@@ -359,11 +360,15 @@ export function studyGuide(lessonId: string) {
   if (guide?.id === "elektrik-akimi") {
     return {
       ...guide,
-      sections: guide.sections.flatMap((section) => section.title === wireResistanceTitle
-        ? [{ ...section, figureTitle: wireResistanceTitle }, wireMaterialSection]
-        : [section]),
-      examples: [...guide.examples, wireResistanceExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 109, basılı 107. sayfadaki telin kesiti ve uzunluğu, metal atomları, serbest elektronlar ve 20 °C öz direnç tablosu aynı öğretim akışında işlendi. Dairesel telde A kesit alanını, d çapı gösterir.`,
+      sections: guide.sections.flatMap((section) => {
+        if (section.title === wireResistanceTitle)
+          return [{ ...section, figureTitle: wireResistanceTitle }, wireMaterialSection];
+        if (section.title === meterConnectionsTitle)
+          return [{ ...section, figureTitle: meterConnectionsTitle }, ohmMeasurementSection];
+        return [section];
+      }),
+      examples: [...guide.examples, wireResistanceExample, ohmSlopeExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 109, basılı 107. sayfadaki telin kesiti ve uzunluğu, metal atomları, serbest elektronlar ve 20 °C öz direnç tablosu aynı öğretim akışında işlendi. Fiziksel 111–112, basılı 109–110. sayfalardaki dört ölçü aleti bağlantısı ve dört V–I çifti ilgili çizimlerde kullanıldı.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

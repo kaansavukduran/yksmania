@@ -1,8 +1,8 @@
 {
-  "version": "0.77.0",
+  "version": "0.78.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Çevrimdışı kullanım için gereken dersler, çizimler ve yazı tipleri ilk kurulumda daha kısa sürede hazırlanır.",
-    "en": "Lessons, figures, and fonts required for offline use are prepared faster during the first installation."
+    "tr": "Elektrik Akımı dersinde dört V–I ölçümünün eğimini oku. Voltmetreyle ampermetrenin seri ve paralel bağlantılarını çizimden karşılaştır.",
+    "en": "Read the slope of four voltage and current measurements. Compare how a voltmeter and ammeter connect in series and parallel."
   }
 }

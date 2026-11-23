@@ -8,6 +8,7 @@ import { springWorkFigures, springWorkQuestionId } from "./springWork057";
 import { translationQuestionFigures, translationQuestionId } from "./translationQuestion069";
 import { groundingQuestionFigures, groundingQuestionId } from "./groundingQuestion074";
 import { wireDiameterQuestionFigures, wireDiameterQuestionId } from "./wireResistance076Question";
+import { ohmGraphQuestionFigures, ohmGraphQuestionId } from "./ohmGraphQuestion078";
 import {
   inverseTranslationFigures,
   inverseTranslationQuestion,
@@ -246,6 +247,14 @@ const bindings = new Map<string, FigureBinding>([
   ogmTranslationBinding(inverseTranslationQuestion, 12, "Görüntünün grafiğinden başlangıç noktası", inverseTranslationFigures),
   ogmTranslationBinding(triangleTranslationQuestion, 13, "ABC üçgeninin üç köşesinin ötelenmesi", triangleTranslationFigures),
   ...ogmGridTranslationExamples.map(({ question, page, name, figures }) => ogmTranslationBinding(question, page, name, figures)),
+  [ohmGraphQuestionId, {
+    stemRevision: "03e62ec70f5b19",
+    helpRevision: "1852f6e609d14f",
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 112. sayfa, basılı 110",
+    itemLabel: "V–I eğimi, özgün ölçüm değerleri",
+    figures: ohmGraphQuestionFigures,
+  }],
   [wireDiameterQuestionId, {
     stemRevision: "0647144f869d04",
     helpRevision: "1d04a3863e2cfd",

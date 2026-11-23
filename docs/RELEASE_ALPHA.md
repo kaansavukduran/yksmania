@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.78.0 · Akımı ve gerilimi ölç
+
+Yayın adayı. Çizimde voltmetreyi ve ampermetreyi farklı kollara yerleştir, sonra dört ölçümden gerilim–akım eğimini oku. Ayrı Kopya Kağıdı aynı tabloyu ve çözümlü örneği gösterir.
+
 # ÖSYM Mania 0.77.0 · Çevrimdışı hazırlık
 
 Yayın adayı. Tarayıcı dersleri, çizimleri ve yazı tiplerini dört eşzamanlı istekle hazırlar. Kurulum, bütün gerekli dosyalar kullanılabilir olunca tamamlanır.

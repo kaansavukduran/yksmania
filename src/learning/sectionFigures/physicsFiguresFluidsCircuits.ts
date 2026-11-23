@@ -19,6 +19,8 @@ import {
 } from "./figureKit";
 
 import { wireResistanceFigures } from "./wireResistance076Figures";
+import { ohmSlopeFigure } from "./mebiOhmFigures";
+import { meterConnections, meterConnectionsTitle, meterResistanceOhms, meterSupplyVolts } from "../mebiOhmReadings";
 
 const rect = (x: number, y: number, w: number, h: number, tone: "a" | "b" | "c" | "muted" | "ink", fill = true): El =>
   poly([v(x, y), v(x + w, y), v(x + w, y + h), v(x, y + h)], { fill: fill ? (tone === "ink" ? "muted" : tone) : undefined, tone, thin: !fill });
@@ -322,6 +324,36 @@ const kaldirma: Record<string, FigureDef> = {
 };
 
 const elektrik: Record<string, FigureDef> = {
+  ...ohmSlopeFigure,
+  [meterConnectionsTitle]: {
+    caption: "Aletin uçlarını takip et. Ayrı ölçü kolu paralel, tek akım yolu üzerinde duran alet seridir.",
+    alt: "8 volt kaynak ve 4 ohm direnç. Başlangıçta ampermetre ana kolda, voltmetre direncin iki ucunda. Dört karşılaştırma adımı aletleri ayrı ayrı seri veya paralel bağlar. Seçili durum çizimin altında yazıyor.",
+    steps: meterConnections.map(({ label }) => label),
+    draw: (_, step) => {
+      const { label, inSeries, across, current, note } = meterConnections[step];
+      const left = v(1.5, 3), right = v(4.5, 3);
+      return {
+        els: [
+          ...battery(v(6, 0), v(0, 0), `${meterSupplyVolts} V`),
+          seg(v(0, 0), v(0, 3)), seg(v(0, 3), left),
+          ...resistor(left, right, `${meterResistanceOhms} Ω`),
+          seg(right, v(6, 3)),
+          ...(across ? [
+            seg(left, v(1.5, 5)),
+            seg(v(1.5, 5), v(2.68, 5)), ...meter(v(3, 5), across, across === "A" ? "a" : "c"),
+            seg(v(3.32, 5), v(4.5, 5)), seg(v(4.5, 5), right),
+            pt(left, undefined, "n"), pt(right, undefined, "n"),
+          ] : []),
+          ...(inSeries ? [
+            seg(v(6, 3), v(6, 1.82)), ...meter(v(6, 1.5), inSeries, inSeries === "A" ? "a" : "c"),
+            seg(v(6, 1.18), v(6, 0)),
+          ] : [seg(v(6, 3), v(6, 0))]),
+          ...(current ? [vec(v(-0.45, 1), v(-0.45, 2.4), { tone: "b", bold: true })] : []),
+        ],
+        readout: [label, note],
+      };
+    },
+  },
   "Akım oku ile elektron oku ters olabilir": {
     caption:
       "Dış devrede konvansiyonel akım pilin + ucundan − ucuna doğru akar; elektronlar ters yönde sürüklenir. İkisi aynı yük akışının iki ayrı tarifidir.",
@@ -400,29 +432,6 @@ const elektrik: Record<string, FigureDef> = {
         txt(v(1, 3.6), "6 A", "n", { small: true, tone: "c" }),
       ],
       readout: ["I₁ = 12/3 = 4 A, I₂ = 12/6 = 2 A, ana akım 6 A", "1/R = 1/3 + 1/6 → R = 2 Ω"],
-    }),
-  },
-  "Ölçüm aleti devreyi değiştirmesin": {
-    caption:
-      "Ampermetre (A) ölçülecek akımın yoluna seri, voltmetre (V) ölçülecek elemanın iki ucuna paralel bağlanır. İdealde ampermetrenin direnci 0, voltmetreninki sonsuzdur.",
-    alt: "Pil, seri bağlı ampermetre ve direnç; direncin iki ucuna paralel bağlı voltmetre.",
-    draw: () => ({
-      els: [
-        ...battery(v(0, 0), v(0, 3), "ε"),
-        seg(v(0, 3), v(1.4, 3)),
-        ...meter(v(1.72, 3), "A", "a"),
-        seg(v(2.04, 3), v(3, 3)),
-        ...resistor(v(3, 3), v(6, 3), "R"),
-        seg(v(6, 3), v(6, 0)),
-        seg(v(6, 0), v(0, 0)),
-        seg(v(3, 3), v(3, 4.6)),
-        seg(v(6, 3), v(6, 4.6)),
-        seg(v(3, 4.6), v(4.18, 4.6)),
-        ...meter(v(4.5, 4.6), "V", "c"),
-        seg(v(4.82, 4.6), v(6, 4.6)),
-        txt(v(1.72, 2.4), "seri", "s", { small: true, tone: "a" }),
-        txt(v(4.5, 5.1), "paralel", "n", { small: true, tone: "c" }),
-      ],
     }),
   },
 };
