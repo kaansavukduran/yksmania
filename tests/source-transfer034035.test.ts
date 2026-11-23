@@ -1,4 +1,5 @@
-import { beforeScientificQuestions, beforeScientificRevision } from "./helpers/before-scientific-revision";
+import { beforeScientificQuestions } from "./helpers/before-scientific-revision";
+import { beforeLaterSourceRevisions } from "./helpers/before-source004-revision";
 import { ebobEkokSource034Pack } from "../src/learning/ebobEkokSource034";
 import { examTeachingCases } from "../src/learning/pastExamCases";
 import { rationalSource035Pack } from "../src/learning/rationalSource035";
@@ -70,7 +71,7 @@ it("preserves every accepted 033 lesson, guide, summary, question value and thei
   for (const type of ["lessons", "questions", "guides", "sheets"] as const)
     for (const [id, expected] of Object.entries(baseline[type])) {
       expect(maps[type].has(id), `${type}: ${id}`).toBe(true);
-      expect(hash(beforeScientificRevision(type, id, maps[type].get(id))), `${type}: ${id}`).toBe(expected);
+      expect(hash(beforeLaterSourceRevisions(type, id, maps[type].get(id))), `${type}: ${id}`).toBe(expected);
     }
   expect(lessons.slice(0, 529).map((l) => l.id)).toEqual(
     Object.keys(baseline.lessons),

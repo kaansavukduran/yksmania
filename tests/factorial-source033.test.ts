@@ -1,4 +1,5 @@
-import { beforeScientificQuestions, beforeScientificRevision } from "./helpers/before-scientific-revision";
+import { beforeScientificQuestions } from "./helpers/before-scientific-revision";
+import { beforeLaterSourceRevisions } from "./helpers/before-source004-revision";
 import { createHash } from "node:crypto";
 import { expect, it } from "vitest";
 import baseline from "./fixtures/source-stage-032-preservation.json";
@@ -47,7 +48,7 @@ it("preserves every prior6077question/528lesson/494guide/sheet value and the493-
   };
   for (const type of ["lessons", "questions", "guides", "sheets"] as const)
     for (const [key, expected] of Object.entries(baseline[type]))
-      expect(hash(beforeScientificRevision(type, key, maps[type].get(key))), `${type}:${key}`).toBe(expected);
+      expect(hash(beforeLaterSourceRevisions(type, key, maps[type].get(key))), `${type}:${key}`).toBe(expected);
   expect(lessons.slice(0, 528).map((l) => l.id)).toEqual(
     Object.keys(baseline.lessons),
   );

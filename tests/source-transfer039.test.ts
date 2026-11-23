@@ -1,4 +1,5 @@
-import { beforeScientificQuestions, beforeScientificRevision } from "./helpers/before-scientific-revision";
+import { beforeScientificQuestions } from "./helpers/before-scientific-revision";
+import { beforeLaterSourceRevisions } from "./helpers/before-source004-revision";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { expect, it } from "vitest";
@@ -29,7 +30,7 @@ it("keeps every0.23 lesson/card/guide/sheet value and complete earlier order bef
   for (const surface of ["lessons", "questions", "guides", "sheets"] as const)
     for (const [key, expected] of Object.entries(baseline[surface])) {
       expect(maps[surface].has(key), `${surface}:${key}`).toBe(true);
-      expect(hash(beforeScientificRevision(surface, key, maps[surface].get(key))), `${surface}:${key}`).toBe(expected);
+      expect(hash(beforeLaterSourceRevisions(surface, key, maps[surface].get(key))), `${surface}:${key}`).toBe(expected);
     }
   expect(lessons.slice(0, 533).map((value) => value.id)).toEqual(Object.keys(baseline.lessons));
   expect(beforeScientificQuestions(lessons.flatMap((lesson) => lesson.questions)).slice(0, 6301).map((value) => value.id)).toEqual(Object.keys(baseline.questions));

@@ -130,7 +130,7 @@ const pack: PrimePack032 = {
       title: "Yöntem seç: karar ile kontrolü birlikte yaz",
       paragraphs: [
         "Sayı asal mı sorusunda karekök sınırındaki asal bölenleri dene; çok sayıyı sınıflandırıyorsan elek seç. Örneğin 47 için 2,3,5 yeterlidir;49’da 7’yi atlamak hatadır. 31 nesne yalnız 1’li ve 31’li eş gruplara ayrılıyorsa 31 asaldır. Çarpım asal sorusunda önce çarpanlara ayır ve pozitifliği belirle:7(x−1) asal, x>1 tam ise x=2;6(x−1) için çözüm yoktur.",
-        "Asal toplamında tekliği; sade oranda ortak çarpanı; sayma sorusunda hangi sayacın istendiğini işaretle. 18=2·3² için farklı tür 2, tekrarlı çarpan 3, bütün pozitif bölen 6’dır. Çarpanları 2,3,3 diye etiketlersen iki etiket türü fakat üç etiket vardır. 8/9 karışım oranındaki aralarında asal parça sayıları 8 ve 9 olabilir; ikisi de asal değildir. Kısa yol gereksiz adayları kaldırır; ölçülmüş saniye veya başarı yüzdesi iddiası değildir.",
+        "Asal toplamında tekliği; sade oranda ortak çarpanı; sayma sorusunda hangi sayacın istendiğini işaretle. 18=2·3² için farklı tür 2, tekrarlı çarpan 3, bütün pozitif bölen 6’dır. Üç kartın üzerine sırasıyla 2, 3 ve 3 yaz. İki farklı etiket görürsün ama üç kart sayarsın. Asal çarpan türü ile tekrar adedi arasında da aynı fark vardır. 8/9 karışım oranındaki aralarında asal parça sayıları 8 ve 9 olabilir; ikisi de asal değildir. Kısa yol gereksiz adayları kaldırır; ölçülmüş saniye veya başarı yüzdesi iddiası değildir.",
       ],
     },
     {
@@ -143,7 +143,7 @@ const pack: PrimePack032 = {
     {
       title: "Destek azalt: eksik adımı ve kaybolan koşulu bul",
       paragraphs: [
-        "n pozitif tam sayı ve 3(n+1) asal olsun. 3 zaten 1’den büyük asal olduğundan öteki pozitif tam çarpan n+1=1 olmalıdır. Buradan n=0 çıkar ama pozitif koşuluna uymaz; çözüm yoktur. 0 dahil doğal sayı koşulunda n=0 ve çıktı 3 geçerli olurdu. Aynı cebirsel aday iki farklı tanım kümesinde farklı sonuca götürür.",
+        "n pozitif tam sayı ve 3(n+1) asal olsun. n+1’in alması gereken değeri ve gerekçeni yaz. Ardından bulduğun n’nin pozitif tam sayı koşuluna uyup uymadığını denetle. Çözümlü örnekler bölümündeki “Eksik adımı tamamla, sonra koşula dön” kartında adımları açabilirsin.",
         "Not açıkken yöntemi öğren; ardından yalnız ilk hamleyle yeni soruyu çözmeyi dene. 143’ü 2,3,5,7’ye bölünmedi diye asal ilan eden çözüm 11 adayı eksik bırakır. Oran 8/15 en sadedir diye 8 ve 15’i tek tek asal ilan etmek de farklı bir hatadır. n²−16 için n=5 adayını sonuç 9 olduğu halde kabul etmek üçüncü bir hatadır. Her hatada bozulan ilk gerekçeyi bul; yalnız son cevabı değiştirme.",
       ],
     },
@@ -1485,7 +1485,7 @@ const pack: PrimePack032 = {
     {
       title: "Bölen sınırı ve elek",
       text: [
-        "Asallık için p²≤n koşulundaki asal adayların tamamını dene. Tek uygun bölen bileşikliği kanıtlar. 1–50 eleğinde 1’i dışla; 2,3,5,7’nin kendisi dışındaki katlarını ele. Eşitlik dahil: 49’da 7, 121’de 11 gerekir.",
+        "Asallık için p²≤n koşulundaki asal adayların tamamını dene. Tek uygun bölen bileşikliği kanıtlar. 1–50 eleğinde 1’i dışla; 2,3,5,7’nin kendisi dışındaki katlarını ele. Eşitlik dahildir. 49 için 7’yi de dene.",
       ],
     },
     {
@@ -1498,6 +1498,7 @@ const pack: PrimePack032 = {
       title: "Aralarında asal ve üç sayaç",
       text: [
         "a,b pozitif tam sayı olsun. EBOB(a,b)=1 aralarında asallıktır; iki sayı da bileşik olabilir. a/b=m/n en sade biçimde ve a,b aralarında asalsa a=m, b=n; koşul yoksa a=mt, b=nt, t pozitif tam sayıdır. N=pᵃqᵇ, p,q farklı asal ve a,b≥1: tür 2, tekrarlı çarpan a+b, pozitif bölen (a+1)(b+1).",
+        "18=2·3² için üç kartın etiketleri 2, 3 ve 3 olsun. İki farklı etiket ve üç kart vardır. Pozitif bölen sayısı üs seçimlerinden (1+1)(2+1)=6 çıkar.",
       ],
     },
     {
@@ -1508,7 +1509,7 @@ const pack: PrimePack032 = {
     },
   ],
   source:
-    "Aurelia TYT Asal Sayılar kopya kağıdı,05.11.2026 / içerik 1.1:14 PDF sayfasının öğretim uyarlaması. Kaynak sayfaları: MEB Temel Düzey Matematik 11/Ünite 1/çevrimiçi 50; MEB Hazırlık Matematik/Ünite 1/çevrimiçi 33 (basılı 45); Matematik 10 Sayılar teması. ÖSYM 2022 TYT Temel Matematik 14: PDF 28 (basılı 26), anahtar PDF 45, B=9. Çözüm açıklaması bize aittir. Pratik kartlar resmî sınav kartı değildir. Kaynak bağlantıları: https://ogmmateryal.eba.gov.tr/panel/upload/etkilesimli/kitap/matematiktemelduzey/11/unite1/files/basic-html/page50.html ; https://ogmmateryal.eba.gov.tr/panel/upload/etkilesimli/kitap/matematik/hzr/unite1/files/basic-html/page33.html ; https://tymm.meb.gov.tr/matematik-dersi/unite/244 ; https://dokuman.osym.gov.tr/pdfdokuman/2022/YKS/TSK/yks_2022_tyt.pdf#page=28 ; anahtar: https://dokuman.osym.gov.tr/pdfdokuman/2022/YKS/TSK/yks_2022_tyt.pdf#page=45 .",
+    "Aurelia TYT Asal Sayılar kopya kağıdı, 19.11.2026, içerik 1.2. PDF’nin 14 sayfasından öğretim uyarlaması. Kaynak sayfaları: MEB Temel Düzey Matematik 11/Ünite 1/çevrimiçi 50; MEB Hazırlık Matematik/Ünite 1/çevrimiçi 33 (basılı 45); Matematik 10 Sayılar teması. ÖSYM 2022 TYT Temel Matematik 14: PDF 28 (basılı 26), anahtar PDF 45, B=9. Çözüm açıklaması bize aittir. Pratik kartlar resmî sınav kartı değildir. Kaynak bağlantıları: https://ogmmateryal.eba.gov.tr/panel/upload/etkilesimli/kitap/matematiktemelduzey/11/unite1/files/basic-html/page50.html ; https://ogmmateryal.eba.gov.tr/panel/upload/etkilesimli/kitap/matematik/hzr/unite1/files/basic-html/page33.html ; https://tymm.meb.gov.tr/matematik-dersi/unite/244 ; https://dokuman.osym.gov.tr/pdfdokuman/2022/YKS/TSK/yks_2022_tyt.pdf#page=28 ; anahtar: https://dokuman.osym.gov.tr/pdfdokuman/2022/YKS/TSK/yks_2022_tyt.pdf#page=45 .",
   id: "tyt-mat-asal-kaynak-032",
   minutes: 90,
 };
@@ -1563,24 +1564,47 @@ export const primeSource032Lessons: Lesson[] = [
     }),
   },
 ];
+const repairItems = pack.items.filter(({ code }) =>
+  ["H1", "H2", "H3"].includes(code),
+);
+
 export const primeSource032Sheets: CheatSheet[] = [
   {
     topicId: `topic-${pack.id}`,
     lessonId: pack.id,
     title: pack.title,
     subjectId: "tyt-matematik",
-    sections: pack.sheet,
+    sections: [
+      ...pack.sheet,
+      {
+        title: "Önce üç onarım sorusunu çöz",
+        text: [
+          "121’i asal saymadan önce, karekök sınırında hangi asal adayı denemelisin?",
+          "14 ile 25 aralarında asal mı? Her birinin asal olup olmadığını da söyle.",
+          "n pozitif tam sayı ve n²−1 asal. Uygun n’yi ve elde edilen asal sayıyı bul.",
+          "Üçünü de denedikten sonra aşağıdaki Onarım çözümleri bölümünü aç.",
+        ],
+      },
+    ],
     cautions: [
       "Sayı kümesi,pozitiflik,farklılık ve en küçüklük koşullarını unutma.",
       "Asal olduğuna karar vermek için gerekli adayları bitir;bir bölen bileşikliği gösterir.",
       "Bir örnek genel ispat değildir;bulunan aday ilk koşullara geri konur.",
     ],
-    examples: pack.examples.slice(2, 4).map((e) => ({
-      title: e.title,
-      prompt: e.prompt,
-      steps: e.steps.map((s) => s.explanation),
-      answer: e.answer,
-    })),
+    examples: [
+      ...pack.examples.slice(2, 4).map((e) => ({
+        title: e.title,
+        prompt: e.prompt,
+        steps: e.steps.map((s) => s.explanation),
+        answer: e.answer,
+      })),
+      {
+        title: "Onarım çözümleri",
+        prompt: "Her cevabın hangi koşula dayandığını kendi çözümünle karşılaştır.",
+        steps: repairItems.map(({ steps }) => steps.join(" ")),
+        answer: "Son aday 11’dir. 14 ile 25 aralarında asaldır ve ikisi de bileşiktir. Tek uygun n=2, elde edilen asal 3’tür.",
+      },
+    ],
     recall: pack.recall.slice(0, 3),
     source: pack.source,
   },

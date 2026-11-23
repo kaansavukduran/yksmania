@@ -1,3 +1,9 @@
+# Asal Sayılar · Kaynak 004 sürüm 1.2
+
+23 Kasım 2026. Güncel 14 sayfalık kaynak önceki sürümle karşılaştırıldı. Üç kart örneği asal çarpan türünü, kart adedini ve pozitif bölen sayısını ayırır. Eksik adım örneği öğrenciden gerekçe ister. Çözüm, mevcut çözümlü örnekten adım adım açılır. Ayrı Kopya Kağıdında üç onarım sorusu çözümlerden önce görünür.
+
+Aynı konu ve 40 soru kimliği korunur. `check`, derleme, 40 hedefli birim testi ve dört Chromium akışı geçti. 320 px’de %200 arayüz ve %150 yazıyla soru ve çözüm sırası klavyeyle çalıştı. Kopya Kağıdı notu çevrimdışı yeniden yüklemede korundu. Örnekleri açmak öğrenme kayıtlarını değiştirmedi. Bu kaynak güncellemesi ayrı yayın adayında bekliyor.
+
 # 0.27.0 · Konu anlatımı figürleri
 
 23 Kasım 2026. Bu aday, mevcut konu anlatımlarının 56’sına toplam 242 bölüm figürü ekler. Bilimsel Gösterim’e eklenen yeni şemayla birlikte Temel İnşa dışındaki konu envanterinde 405 dersin 1.669 bölüm figürü bulunur. Temel İnşa’nın 25 dersi ve 57 figürü ayrıca sayılır. TÜİK nüfus örneği yaklaşık hesabı ve açıklanan değeri ayırır. Çarpan örneği çiftlerin sırasız sayıldığını belirtir.

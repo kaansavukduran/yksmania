@@ -27,8 +27,8 @@ describe("032 Asal kaynağının koşul ve aktarım kontrolleri", () => {
     expect(guide.recall).toHaveLength(8);
     expect(lesson.questions).toHaveLength(40);
     expect(sheets[0].topicId).toBe(`topic-${lesson.id}`);
-    expect(sheets[0].sections).toHaveLength(5);
-    expect(sheets[0].examples).toHaveLength(2);
+    expect(sheets[0].sections).toHaveLength(6);
+    expect(sheets[0].examples).toHaveLength(3);
     expect(sheets[0].recall).toHaveLength(3);
     expect(new Set(lesson.questions.map((v) => v.id)).size).toBe(40);
     expect(new Set(lesson.questions.map((v) => v.answer)).size).toBe(5);
@@ -42,6 +42,18 @@ describe("032 Asal kaynağının koşul ve aktarım kontrolleri", () => {
         /yukarıdaki|önceki şekil|hangi metin/i,
       );
     }
+  });
+  it("önce deneme ve ipucu, sonra koşulu gerekçelendiren ayrı çözümler sunar", () => {
+    const reduced = guide.sections.find(({ title }) => title.startsWith("Destek azalt"))!;
+    const worked = guide.examples.find(({ title }) => title.startsWith("Eksik adımı tamamla"))!;
+    expect(reduced.paragraphs[0]).toContain(worked.title);
+    expect(reduced.paragraphs[0]).not.toMatch(/n=0|n\+1=1|çözüm(?:ü)? yok/);
+    expect(worked.answer).toBe("Pozitif tam n çözümü yok.");
+    const sheet = sheets[0];
+    expect(sheet.source).toContain("içerik 1.2");
+    expect(sheet.sections.at(-1)?.text.slice(0, 3).every((prompt) => !prompt.includes("n=2") && !prompt.includes("11’dir"))).toBe(true);
+    expect(sheet.examples.at(-1)?.steps).toHaveLength(3);
+    expect(sheet.examples.at(-1)?.answer).toContain("Tek uygun n=2");
   });
   it("kare farklarında bütün pozitif adayları bağımsız tarar ve negatifi ayrı kabul eder", () => {
     const matches = (k: number, lower = 1) =>

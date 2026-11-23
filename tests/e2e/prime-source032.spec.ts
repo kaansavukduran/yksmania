@@ -3,7 +3,7 @@ import AxeBuilder from "@axe-core/playwright";
 import type { AppState } from "../../src/domain/model";
 import { setThemePreference } from "./helpers/theme";
 import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
-import { openWorkedExamples } from "./helpers/guidePages";
+import { openGuidePage, openWorkedExamples } from "./helpers/guidePages";
 registerOfflineBootDiagnostics();
 async function stored(page: Page): Promise<AppState> {
   return page.evaluate(
@@ -39,6 +39,80 @@ const learning = (s: AppState) => ({
   unlocked: s.unlocked,
   examSessions: s.examSessions,
 });
+
+test("the revised prime guide and summary let learners try each repair before revealing answers offline", async ({ page, context }) => {
+  test.setTimeout(100_000);
+  await page.goto("/");
+  const navigate = async (name: string) => {
+    const menu = page.getByRole("button", { name: "Menüyü aç", exact: true });
+    if (await menu.isVisible()) await menu.click();
+    await page.locator(".sidebar").getByRole("button", { name, exact: true }).click();
+  };
+  await navigate("Ayarlar");
+  await setThemePreference(page, "light");
+  await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
+  await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
+  await page.setViewportSize({ width: 320, height: 844 });
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.evaluate(async () => {
+    await navigator.serviceWorker.ready;
+    if (!navigator.serviceWorker.controller) {
+      await new Promise<void>((resolve) => {
+        navigator.serviceWorker.addEventListener("controllerchange", () => resolve(), { once: true });
+      });
+    }
+  });
+  await context.setOffline(true);
+  const before = learning(await stored(page));
+  await navigate("Konu Anlatımı");
+  await page.getByRole("button", { name: "TYT", exact: true }).click();
+  await page.getByRole("textbox", { name: "Ders veya konu ara", exact: true }).fill("Asal sayılar");
+  await page.locator('[data-lesson-id="tyt-mat-asal-kaynak-032"]').click();
+  const sectionTitle = "Destek azalt: eksik adımı ve kaybolan koşulu bul";
+  await openGuidePage(page, sectionTitle);
+  const section = page.locator(".guide-section").filter({
+    has: page.getByRole("heading", { name: sectionTitle, exact: true }),
+  });
+  await expect(section).toContainText("Eksik adımı tamamla, sonra koşula dön");
+  await expect(section).not.toContainText(/n\s*=\s*0|n\s*\+\s*1\s*=\s*1|çözüm(?:ü)? yok/);
+  await openWorkedExamples(page);
+  const worked = page.locator(".worked-example").filter({
+    has: page.locator("summary", { hasText: "Eksik adımı tamamla, sonra koşula dön" }),
+  });
+  await worked.locator("summary").click();
+  await expect(worked.locator(".worked-steps li")).toHaveCount(0);
+  await worked.getByRole("button", { name: "İlk adımı göster", exact: true }).click();
+  await expect(worked.locator(".worked-steps li")).toHaveCount(1);
+  await worked.getByRole("button", { name: "Çözümün tamamını göster", exact: true }).click();
+  await expect(worked.locator(".worked-conclusion")).toContainText("Pozitif tam n çözümü yok.");
+
+  await navigate("Kopya Kağıtları");
+  await page.getByRole("textbox", { name: "Ders veya konu ara", exact: true }).fill("Asal sayılar: elekten kaynak sorularına");
+  await page.getByRole("button", { name: "Asal sayılar: elekten kaynak sorularına", exact: true }).click();
+  const sheet = page.locator(".cheat-reader");
+  await expect(sheet).toContainText("İki farklı etiket ve üç kart vardır");
+  const prompts = sheet.locator(".cheat-section").filter({ hasText: "Önce üç onarım sorusunu çöz" });
+  await expect(prompts).toContainText("121’i asal saymadan önce");
+  await expect(prompts).toContainText("14 ile 25 aralarında asal mı?");
+  await expect(prompts).toContainText(/n²\s*−\s*1 asal/);
+  const repair = sheet.locator(".worked-example").filter({ has: page.locator("summary", { hasText: "Onarım çözümleri" }) });
+  expect(await prompts.evaluate((node) => Boolean(node.compareDocumentPosition(document.querySelector(".cheat-examples")!) & Node.DOCUMENT_POSITION_FOLLOWING))).toBe(true);
+  await expect(repair).toHaveJSProperty("open", false);
+  await repair.locator(":scope > summary").press("Enter");
+  const solution = repair.locator(".cheat-solution");
+  await expect(solution).toHaveJSProperty("open", false);
+  await solution.locator("summary").press("Enter");
+  await expect(solution.locator("li")).toHaveCount(3);
+  await expect(solution).toContainText(/Son aday 11’dir.*Tek uygun n\s*=\s*2/);
+  const note = sheet.getByRole("textbox", { name: "Notun", exact: true });
+  await note.fill("Karekök sınırındaki asal çarpanı da dene.");
+  await expect(page.locator(".save-status")).toContainText("Bu cihazda kaydedildi");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+  await page.reload();
+  await expect(note).toHaveValue("Karekök sınırındaki asal çarpanı da dene.");
+  expect({ ...learning(await stored(page)), notes: before.notes }).toEqual(before);
+});
+
 for (const profile of [
   {
     name: "desktop dark",

@@ -73,8 +73,9 @@ describe("032 source transfer retains old learning while adding usable geometry"
       expect(g.examples.length).toBeGreaterThanOrEqual(4);
       expect(g.recall.length).toBeGreaterThanOrEqual(4);
       expect(s.lessonId).toBe(id);
-      expect(s.sections).toHaveLength(5);
-      expect(s.examples).toHaveLength(2);
+      const hasPrimeRepair = id === "tyt-mat-asal-kaynak-032";
+      expect(s.sections).toHaveLength(hasPrimeRepair ? 6 : 5);
+      expect(s.examples).toHaveLength(hasPrimeRepair ? 3 : 2);
       expect(s.recall).toHaveLength(3);
       const lecture = g.sections
         .flatMap((section) => section.paragraphs)
