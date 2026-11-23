@@ -1,3 +1,4 @@
+import { railEnergyExample, railEnergySection } from "../railEnergy060";
 import { bounceEnergyExample, bounceEnergySection } from "../bounceEnergy059";
 import { bicycleEnergyExample, bicycleEnergySection } from "../bicycleEnergy058";
 import { cylinderPotentialExample, cylinderPotentialSection } from "../cylinderPotentialEnergy";
@@ -322,8 +323,8 @@ export function studyGuide(lessonId: string) {
   if (guide?.id !== "enerji-ve-hareket") return guide;
   return {
     ...guide,
-    sections: [...guide.sections, averageWorkPowerSection, cylinderPotentialSection, bicycleEnergySection, bounceEnergySection],
-    examples: [...guide.examples, averageWorkPowerExample, cylinderPotentialExample, bicycleEnergyExample, bounceEnergyExample],
-    source: `${guide.source} İş ve güç, homojen silindir, bisiklet ve sıçrayan top örnekleri MEBİ TYT Fizik Konu Özetleri fiziksel 48, 50, 53 ve 54, basılı 46, 48, 51 ve 52. sayfalarla karşılaştırıldı. Sayısal örnekler özgündür. Bisiklet çizimindeki verilen hız oranları kaynak örneğindeki oranlardır.`,
+    sections: [...guide.sections, averageWorkPowerSection, cylinderPotentialSection, bicycleEnergySection, bounceEnergySection, railEnergySection],
+    examples: [...guide.examples, averageWorkPowerExample, cylinderPotentialExample, bicycleEnergyExample, bounceEnergyExample, railEnergyExample],
+    source: `${guide.source} İş ve güç, homojen silindir, bisiklet, sıçrayan top ve sürtünmeli ray örnekleri MEBİ TYT Fizik Konu Özetleri fiziksel 48, 50, 53 ve 54, basılı 46, 48, 51 ve 52. sayfalarla karşılaştırıldı. Sayısal örnekler özgündür. Bisiklet çizimindeki verilen hız oranları kaynak örneğindeki oranlardır.`,
   };
 }

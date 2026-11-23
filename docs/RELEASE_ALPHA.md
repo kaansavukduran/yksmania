@@ -1,3 +1,10 @@
+# ÖSYM Mania 0.60.0 · Sürtünmeli rayda enerji
+
+Yayın adayı.
+
+- Başlangıç, dönüş ve son duruşu U biçimli rayda sırayla incele.
+- İlk C geçişi ile son C duruşu ayrı akışta açıklanır. Örneğe ayrı Kopya Kağıdı’ndan da ulaşılır.
+
 # ÖSYM Mania 0.59.0 · Sıçramalarda enerji
 
 Yayın adayı.

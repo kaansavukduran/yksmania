@@ -117,6 +117,7 @@ import { newtonTimeTitle } from "./newtonTimeComparison";
 import { forcePairsTitle } from "./newtonForcePairs";
 import { frictionThresholdTitle } from "./newtonFrictionThreshold";
 import { cylinderPotentialTitle } from "./cylinderPotentialEnergy";
+import { railEnergyTitle } from "./railEnergy060";
 import { bounceEnergyTitle } from "./bounceEnergy059";
 import { bicycleEnergyTitle } from "./bicycleEnergy058";
 import { averageWorkPowerTitle } from "./averageWorkPower";
@@ -150,6 +151,10 @@ export interface CheatSheet {
 
 const revisedSectionTextByLesson = new Map([
   ["enerji-ve-hareket", new Map([
+    [railEnergyTitle, [
+      "C’yi sıfır düzeyi seç. Duruşlarda kalan mekanik enerji A’da 3E₀, D’de E₀, son C’de 0. E₀ = mgh.",
+      "A’dan D’ye 2E₀, dönüşte E₀ ısıl enerji gibi biçimlere aktarılır. C’den ilk geçişin hızı bu bilgilerle hesaplanamaz.",
+    ]],
     [bounceEnergyTitle, [
       "Zeminden ayrılırken kalan hız oranı e ise sonraki tepe yüksekliği e² ile çarpılır. Her tepede hız sıfır. Yeri referans alırsan kalan mekanik enerji mgh.",
       "Yere ve havaya aktarılan ısıl enerji veya ses yüzünden topun mekanik enerjisi azalır. Sayısal tablo e = 0,5 örneğini gösterir.",

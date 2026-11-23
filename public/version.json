@@ -1,7 +1,7 @@
 {
-  "version": "0.59.0",
+  "version": "0.60.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Sıçrayan topun zaman grafiğinde çarpışma hız oranını değiştir. Her tepede mekanik enerjiyle kalan biçimlere aktarılan enerjiyi karşılaştır."
+    "tr": "Sürtünmeli rayda üç duruşu karşılaştır. C’den ilk geçiş ve son duruş farklı, her aralıktaki enerji aktarımı ayrı hesaplanıyor."
   }
 }
