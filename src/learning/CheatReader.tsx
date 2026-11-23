@@ -124,10 +124,10 @@ export function CheatReader({
                 <SectionFigure guideId={sheet.lessonId} title={section.figureTitle} />
               </Suspense>
             )}
-            {section.table && section.table.headers.length >= 4 && (
+            {section.table?.layout === "table" && (
               <GuideTable title={section.title} table={section.table} />
             )}
-            {section.table && section.table.headers.length < 4 && section.figureTitle && (
+            {section.table && section.table.layout !== "table" && section.figureTitle && (
               <SourceQuestionFigure figure={{
                 kind: "table",
                 title: `${section.title} tablosu`,
@@ -135,7 +135,7 @@ export function CheatReader({
                 ...section.table,
               }} />
             )}
-            {section.table && section.table.headers.length < 4 && !section.figureTitle && (
+            {section.table && section.table.layout !== "table" && !section.figureTitle && (
               <div
                 className="cheat-comparisons"
                 role="group"

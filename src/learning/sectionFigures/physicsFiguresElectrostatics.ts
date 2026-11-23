@@ -1,3 +1,4 @@
+import { groundingChargeText, groundingTransfer, groundingTransferTitle } from "../groundingTransfer074";
 import { electroscopeChargeText, electroscopeInduction, electroscopeTitle } from "../electroscopeInduction070";
 import { ball, poly, seg, txt, v, vec, type El, type FigureDef, type Tone, type V } from "./figureKit";
 
@@ -206,12 +207,56 @@ const field: FigureDef = {
   },
 };
 
+const groundingTransferFigure: FigureDef = {
+  caption: "Yükler model biriminde. Ok, dengeye kadar olan aktarımı gösterir.",
+  alt: "Yüklü metal küre, açılıp kapanan anahtar ve Dünya bağlantısı. Elektron oku yalnız aktarım adımında çıkar. Yön ve toplam yük değişimi metinde verilir.",
+  steps: ["−3, açık", "−3, bağlı", "+3, açık", "+3, bağlı"],
+  draw: (_value, step) => {
+    const initial = step < 2 ? -3 : 3;
+    const connected = step % 2 === 1;
+    const result = groundingTransfer(initial, connected);
+    const left = v(-2, 0.4);
+    const switchStart = v(0.3, 0.4);
+    const switchEnd = v(1.35, 0.4);
+    const earthTop = v(2.6, 0.4);
+    const earthGround = v(2.6, -2.1);
+    const charge = groundingChargeText(result.conductor);
+    const elements: El[] = [
+      ball(left, 0.85, connected ? "muted" : initial < 0 ? "b" : "warn", charge),
+      seg(v(-1.15, 0.4), switchStart, { tone: "ink" }),
+      ball(switchStart, 0.06, "ink"),
+      ball(switchEnd, 0.06, "ink"),
+      seg(switchStart, connected ? switchEnd : v(1.24, 0.93), { tone: "ink" }),
+      seg(switchEnd, earthTop, { tone: "ink" }),
+      seg(earthTop, earthGround, { tone: "ink" }),
+      seg(v(2.05, -2.1), v(3.15, -2.1), { tone: "ink" }),
+      seg(v(2.25, -2.32), v(2.95, -2.32), { tone: "ink" }),
+      seg(v(2.43, -2.54), v(2.77, -2.54), { tone: "ink" }),
+      txt(v(2.6, -2.85), "Dünya", "s", { bold: true }),
+      txt(v(-2, 1.56), "Metal küre", "c", { bold: true }),
+    ];
+    if (result.direction) {
+      const towardsEarth = result.direction === "to-earth";
+      const high = v(3.1, 0.08);
+      const low = v(3.1, -1.52);
+      elements.push(vec(towardsEarth ? high : low, towardsEarth ? low : high, { tone: "b", bold: true }));
+      elements.push(txt(v(3.5, -0.65), "e⁻", "e", { tone: "b", bold: true }));
+    }
+    const direction = initial < 0 ? "küreden Dünya’ya" : "Dünya’dan küreye";
+    const readout = connected
+      ? [`Elektron: ${direction}.`, `Küre 0. Dünya’nın yük değişimi ${groundingChargeText(result.earthChange)}.`]
+      : [`Anahtar açık. Küre ${charge}.`, "Elektron geçişi yok."];
+    return { els: elements, readout };
+  },
+};
+
 export const physicsFiguresElectrostatics: Record<string, Record<string, FigureDef>> = {
   "durgun-elektrik": {
     "Dokunmada eşitlik için geometrik koşul gerekir": touch,
     "Toprak Dünya’yı da hesap sınırına ekler": induction,
     "Elektroskopta hareketi, başlangıcı ve uzaklığı birlikte oku": scope,
     [electroscopeTitle]: electroscopeInductionFigure,
+    [groundingTransferTitle]: groundingTransferFigure,
     "Kuvvet ile alanı aynı ok sanma": field,
   },
 };

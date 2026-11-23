@@ -6,6 +6,7 @@ import { forceVelocityFigureData, forceVelocityQuestion } from "./forceVelocityO
 import { signedWorkFigures, signedWorkQuestionId } from "./signedWork055";
 import { springWorkFigures, springWorkQuestionId } from "./springWork057";
 import { translationQuestionFigures, translationQuestionId } from "./translationQuestion069";
+import { groundingQuestionFigures, groundingQuestionId } from "./groundingQuestion074";
 import {
   inverseTranslationFigures,
   inverseTranslationQuestion,
@@ -244,6 +245,14 @@ const bindings = new Map<string, FigureBinding>([
   ogmTranslationBinding(inverseTranslationQuestion, 12, "Görüntünün grafiğinden başlangıç noktası", inverseTranslationFigures),
   ogmTranslationBinding(triangleTranslationQuestion, 13, "ABC üçgeninin üç köşesinin ötelenmesi", triangleTranslationFigures),
   ...ogmGridTranslationExamples.map(({ question, page, name, figures }) => ogmTranslationBinding(question, page, name, figures)),
+  [groundingQuestionId, {
+    stemRevision: "04f0132ea048cb",
+    helpRevision: "095446dea4a790",
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 99. sayfa, basılı 97",
+    itemLabel: "Negatif iletken kürenin topraklanması, özgün soru",
+    figures: groundingQuestionFigures,
+  }],
   [translationQuestionId, {
     stemRevision: "1616a8a36ab750",
     helpRevision: "0742676b2f632f",

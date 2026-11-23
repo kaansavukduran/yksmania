@@ -126,12 +126,12 @@ import { railEnergyTitle } from "./railEnergy060";
 import { bounceEnergyTitle } from "./bounceEnergy059";
 import { bicycleEnergyTitle } from "./bicycleEnergy058";
 import { averageWorkPowerTitle } from "./averageWorkPower";
-import type { LessonGuide } from "./guides/types";
+import type { GuideSection, LessonGuide } from "./guides/types";
 
 export interface CheatSection {
   title: string;
   text: string[];
-  table?: { headers: string[]; rows: string[][] };
+  table?: GuideSection["table"];
   figureTitle?: string;
 }
 export interface CheatExample {

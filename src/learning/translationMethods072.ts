@@ -19,6 +19,7 @@ export const transformationMethods: GuideSection = {
   title: transformationMethodsTitle,
   paragraphs: ["Verilen koşulu bul, ilk adımı seç ve yakındaki hatayla karşılaştır. Bileşke işlemlerde ara noktayı her sırada ayrı yaz."],
   table: {
+    layout: "table",
     headers: ["Koşul ve ilk adım", "Geçerli örnek", "Sınır veya yakın hata", "Yeni bağlam"],
     rows: [
       ["Öteleme · bileşenleri ekle", "(2; −3) + (−4; 5) = (−2; 2).", "Sola hareketin x bileşeni eksidir.", "Bir şekli taşırken bütün köşelere aynı vektörü ekle."],

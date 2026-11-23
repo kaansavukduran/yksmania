@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.74.0 · Topraklamada elektronun yönü
+
+Yayın adayı. Başlangıç yükü negatif ve pozitif iki metal küreyi karşılaştır. Anahtar kapanınca elektronların hangi yönde geçtiğini ve Dünya’nın yük değişimini çizimden ve tablodan izle. Aynı örnek Durgun Elektrik dersi ile ayrı Kopya Kağıdı’nda bulunur.
+
 # ÖSYM Mania 0.73.0 · Birim karelerde öteleme
 
 Yayın adayı. OGM örneklerinde önce birim karelerden köşeleri oku. İpucunda yatay ve düşey yönleri ayır. Son çözüm adımındaki görüntüyü soru kartındaki başlangıç çizimiyle aynı ölçekte karşılaştır. Bugün ekranının arka planı ve Aion çizimi daha küçük dosyalarla çevrimdışı kullanılabilir.

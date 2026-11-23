@@ -1,5 +1,6 @@
 import { rotationFromCenterExample, rotationFromCenterSection, transformationMethods } from "../translationMethods072";
 import { electroscopeExample, electroscopeSection } from "../electroscopeInduction070";
+import { groundingTransferExample, groundingTransferSection } from "../groundingTransfer074";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
@@ -348,9 +349,9 @@ export function studyGuide(lessonId: string) {
   if (guide?.id === "durgun-elektrik") {
     return {
       ...guide,
-      sections: [...guide.sections, electroscopeSection],
-      examples: [...guide.examples, electroscopeExample],
-      source: `${guide.source} Yüklü elektroskoba temassız yaklaşma, MEBİ TYT Fizik Konu Özetleri fiziksel 94–96, basılı 92–94. sayfalarla karşılaştırıldı. Çizimdeki yerel yükler örnek model değerleridir.`,
+      sections: [...guide.sections, electroscopeSection, groundingTransferSection],
+      examples: [...guide.examples, electroscopeExample, groundingTransferExample],
+      source: `${guide.source} Yüklü elektroskoba temassız yaklaşma, MEBİ TYT Fizik Konu Özetleri fiziksel 94–96, basılı 92–94. sayfalarla karşılaştırıldı. Çizimdeki yerel yükler örnek model değerleridir. Fiziksel 99–100, basılı 97–98. sayfalardaki iki topraklama şemasının elektron hareketi aynı sayısal modelde gösterilir.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

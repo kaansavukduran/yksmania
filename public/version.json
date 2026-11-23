@@ -1,8 +1,8 @@
 {
-  "version": "0.73.0",
+  "version": "0.74.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Beş OGM öteleme örneği, kaynak çizimleri ve ayrı görsel çözümleriyle çalışılabilir. Bugün ekranının iki görseli aynı pikselleri daha küçük dosyalarla yükler.",
-    "en": "Five OGM translation examples include their source diagrams and separate visual solutions. The Today screen loads the same artwork from smaller files."
+    "tr": "Durgun elektrik dersinde ve Kopya Kağıdı’nda, negatif ve pozitif küreyi toprağa bağlayınca elektronların hangi yönde aktarıldığını karşılaştır.",
+    "en": "Compare how electrons move when a negative or positive sphere is grounded, in the electrostatics lesson and its cheat sheet."
   }
 }

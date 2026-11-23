@@ -1,7 +1,7 @@
 export interface GuideSection {
   title: string;
   paragraphs: string[];
-  table?: { headers: string[]; rows: string[][] };
+  table?: { headers: string[]; rows: string[][]; layout?: "table" };
   figureTitle?: string;
 }
 export interface WorkedExample {

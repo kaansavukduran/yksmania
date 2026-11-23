@@ -20,11 +20,15 @@ it("conserves total charge while the same leaves close and reopen with opposite 
 it("uses the exact sharing model in the lesson, separate sheet and relevant worked step", () => {
   const active = studyGuide("durgun-elektrik")!;
   const sheet = studyCheatSheet("detail-122")!;
-  expect(active.sections.at(-1)?.figureTitle).toBe(electroscopeTitle);
-  expect(sheet.sections.at(-1)?.table?.rows).toEqual([
+  const sections = active.sections.filter((section) => section.title === electroscopeTitle);
+  const sheetSections = sheet.sections.filter((section) => section.title === electroscopeTitle);
+  const examples = sheet.examples.filter((example) => example.title === "Kapanan yapraklarla toplam yükü karşılaştır");
+  expect(sections.map((section) => section.figureTitle)).toEqual([electroscopeTitle]);
+  expect(sheetSections).toHaveLength(1);
+  expect(sheetSections[0].table?.rows).toEqual([
     ["Uzak", "+1", "Açık"], ["Yaklaşır", "0", "Kapalı"], ["Daha yakın", "−1", "Yeniden açık"],
   ]);
-  expect(sheet.examples.at(-1)?.stepFigures).toEqual([undefined, electroscopeTitle]);
+  expect(examples.map((example) => example.stepFigures)).toEqual([[undefined, electroscopeTitle]]);
   expect(lessonGuides.get("durgun-elektrik")?.sections.some((section) => section.title === electroscopeTitle)).toBe(false);
   expect(builtInCheatSheets.get("detail-122")?.sections.some((section) => section.title === electroscopeTitle)).toBe(false);
 });
