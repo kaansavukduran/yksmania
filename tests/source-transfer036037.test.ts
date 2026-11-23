@@ -1,3 +1,4 @@
+import { beforeScientificQuestions, beforeScientificRevision } from "./helpers/before-scientific-revision";
 import { createHash } from "node:crypto";
 import { expect, it } from "vitest";
 import baseline from "./fixtures/source-stage-034035-preservation.json";
@@ -32,10 +33,10 @@ it("preserves all BBB lesson, question, guide, sheet values and complete study o
   for (const type of ["lessons", "questions", "guides", "sheets"] as const)
     for (const [id, expected] of Object.entries(baseline[type])) {
       expect(maps[type].has(id), `${type}:${id}`).toBe(true);
-      expect(hash(maps[type].get(id)), `${type}:${id}`).toBe(expected);
+      expect(hash(beforeScientificRevision(type, id, maps[type].get(id))), `${type}:${id}`).toBe(expected);
     }
   expect(lessons.slice(0, 531).map((v) => v.id)).toEqual(Object.keys(baseline.lessons));
-  expect(lessons.flatMap((v) => v.questions).slice(0, 6214).map((v) => v.id)).toEqual(Object.keys(baseline.questions));
+  expect(beforeScientificQuestions(lessons.flatMap((lesson) => lesson.questions)).slice(0, 6214).map((v) => v.id)).toEqual(Object.keys(baseline.questions));
   expect(studyTopics.slice(0, 496)).toEqual(baseline.studyTopics);
   expect(pastExamReferences.slice(0, 10)).toEqual(baseline.pastExamReferences);
   expect(Object.entries(examTeachingCases).slice(0, 10)).toEqual(Object.entries(baseline.examTeachingCases));
@@ -43,8 +44,8 @@ it("preserves all BBB lesson, question, guide, sheet values and complete study o
 
 it("appends only two independent companions with87 self-contained fully guided cards", () => {
   expect(lessons).toHaveLength(540);
-  expect(lessons.flatMap((v) => v.questions)).toHaveLength(6465);
-  expect(new Set(lessons.flatMap((v) => v.questions).map((v) => v.id)).size).toBe(6465);
+  expect(lessons.flatMap((v) => v.questions)).toHaveLength(6472);
+  expect(new Set(lessons.flatMap((v) => v.questions).map((v) => v.id)).size).toBe(6472);
   expect(lessonGuides.size).toBe(505);
   expect(builtInCheatSheets.size).toBe(505);
   expect(studyTopics).toHaveLength(505);
@@ -95,8 +96,8 @@ for (const { pack, base } of packs)
   });
 
 it("keeps verified primary answers, TL units and own unscored examples distinct", () => {
-  expect(pastExamReferences).toHaveLength(12);
-  expect(Object.keys(examTeachingCases)).toHaveLength(12);
+  expect(pastExamReferences).toHaveLength(13);
+  expect(Object.keys(examTeachingCases)).toHaveLength(13);
   const branching = pastExamReferencesForTopic("topic-tyt-mat-dogrusal-denklemler-kaynak-036");
   const inequality = pastExamReferencesForTopic("topic-tyt-mat-basit-esitsizlikler-kaynak-037");
   expect(branching).toHaveLength(1);

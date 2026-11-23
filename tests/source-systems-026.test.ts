@@ -1,3 +1,4 @@
+import { beforeScientificLesson, beforeScientificRevision } from "./helpers/before-scientific-revision";
 import { createHash } from "node:crypto";
 import { expect, it } from "vitest";
 import oldQuestions from "./fixtures/source-stage-025-question-fingerprints.json";
@@ -59,12 +60,12 @@ it("keeps all5322 accepted cards,486 teaching records,452 full guides and every 
     expect(fingerprint(byId.get(id)), id).toBe(hash);
   expect(Object.keys(oldTeaching)).toHaveLength(486);
   for (const [id, hash] of Object.entries(oldTeaching)) {
-    const { questions, ...meta } = lessonById(id)!;
+    const { questions, ...meta } = beforeScientificLesson(lessonById(id)!);
     expect(fingerprint(meta), id).toBe(hash);
   }
   expect(Object.keys(oldGuides)).toHaveLength(452);
   for (const [id, hash] of Object.entries(oldGuides))
-    expect(fingerprint(lessonGuides.get(id)), id).toBe(hash);
+    expect(fingerprint(beforeScientificRevision("guides", id, lessonGuides.get(id))), id).toBe(hash);
   expect(studyTopics.slice(0, 479)).toEqual(oldTopics.studyTopics);
   for (const [id, topic] of Object.entries(oldTopics.lessonTopic))
     expect(lessonTopic[id], id).toBe(topic);

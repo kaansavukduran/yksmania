@@ -1,6 +1,6 @@
 # YKSMania 0.27.0 · Konu anlatımı figürleri
 
-Yayın adayı. Konu anlatımlarında 56 derse 242 bölüm figürü eklendi. Güncel ders ve figür envanteri, çözüm paneli sayıları ve kanıt durumu ders bazında izlenebilir. [İlerleme tablosu](ILERLEME.md)
+Yayın adayı. Konu anlatımlarında 56 derse 242 bölüm figürü eklendi. Bilimsel Gösterim dersine art arda büyütme şeması, altı yöntem karşılaştırması, üç çözümlü örnek ve yedi soru eklendi. Güncel ders ve figür envanteri, çözüm paneli sayıları ve kanıt durumu ders bazında izlenebilir. [İlerleme tablosu](ILERLEME.md)
 
 ---
 

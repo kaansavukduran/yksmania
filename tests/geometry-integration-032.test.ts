@@ -1,3 +1,4 @@
+import { beforeScientificRevision } from "./helpers/before-scientific-revision";
 import { sourceMath032Ids } from "../src/data/supplementalSourceTopics032";
 import { createHash } from "node:crypto";
 import { describe, expect, it } from "vitest";
@@ -47,13 +48,13 @@ describe("032 source transfer retains old learning while adding usable geometry"
     };
     for (const type of ["lessons", "questions", "guides", "sheets"] as const)
       for (const [id, expected] of Object.entries(baseline[type]))
-        expect(fingerprint(maps[type].get(id)), `${type}:${id}`).toBe(expected);
+        expect(fingerprint(beforeScientificRevision(type, id, maps[type].get(id))), `${type}:${id}`).toBe(expected);
     expect(studyTopics.slice(0, 485)).toEqual(baseline.studyTopics);
   });
 
   it("provides eight full lessons, distinct concise summaries and134 fully explained independent questions", () => {
     expect(lessons).toHaveLength(540);
-    expect(lessons.flatMap((l) => l.questions)).toHaveLength(6465);
+    expect(lessons.flatMap((l) => l.questions)).toHaveLength(6472);
     expect(lessonGuides.size).toBe(505);
     expect(builtInCheatSheets.size).toBe(505);
     expect(studyTopics).toHaveLength(505);

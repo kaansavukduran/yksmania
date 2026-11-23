@@ -1,3 +1,4 @@
+import { beforeScientificLesson } from "./helpers/before-scientific-revision";
 import accepted024Questions from "./fixtures/source-stage-024-question-fingerprints.json";
 import tangentBefore from "./fixtures/source-stage-023-tangent-guide.json";
 import { createHash } from "node:crypto";
@@ -48,7 +49,7 @@ it("retains4524 accepted questions and445 teaching records while adding564 compl
   }
   expect(Object.keys(beforeTeaching)).toHaveLength(445);
   for (const [id, hash] of Object.entries(beforeTeaching)) {
-    const { questions, ...teaching } = lessonById(id)!;
+    const { questions, ...teaching } = beforeScientificLesson(lessonById(id)!);
     expect(
       createHash("sha256")
         .update(JSON.stringify(canonical(teaching)))

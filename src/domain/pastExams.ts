@@ -231,6 +231,23 @@ export const pastExamReferences: PastExamReference[] = [
       "Merkez 20.000, yarıçap 10.000 TL’dir: |b−20.000|<10.000. Resmî anahtar A’dır. u=b/1000 seçilirse 10<u<30; b=20 TL denmez."
     ]
   },
+  {
+    id: "2021-TYT-MAT-3",
+    bookletId: "2021-tyt",
+    test: "Temel Matematik",
+    question: 3,
+    page: 26,
+    answerPage: 45,
+    answer: "D",
+    topicIds: ["detail-207"],
+    title: "Bağlı büyütmelerde uzunluğu bulma",
+    connection: "Bilimsel gösterimle verilen uzunluğa art arda iki birimsiz çarpan uygula.",
+    solution: [
+      "4 ve 40 toplam olarak değil, sırayla uygulanır. Toplam büyütme oranı 4·40=160’tır.",
+      "12,5×10⁻³ mm için ilk aşama 0,05 mm, son aşama 2 mm’dir.",
+      "Büyütme oranının birimi yoktur. Sonuç 2 mm ve resmî anahtar D’dir.",
+    ],
+  },
 ];
 // Selected companion links leave all earlier source records and their topic lists intact.
 const sourceCompanionReferences: Record<string, readonly string[]> = {

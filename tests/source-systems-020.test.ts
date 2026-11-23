@@ -1,3 +1,4 @@
+import { beforeScientificLesson } from "./helpers/before-scientific-revision";
 import stageQuestionFingerprints from "./fixtures/source-stage-020-question-fingerprints.json";
 import { createHash } from "node:crypto";
 import { expect, it } from "vitest";
@@ -25,7 +26,7 @@ it("preserves all3040 accepted question payloads and325 teaching records while a
   for (const question of beforeQuestions) expect(byId.get(question.id), question.id).toEqual(question);
   expect(Object.keys(beforeTeaching)).toHaveLength(325);
   for (const [id, hash] of Object.entries(beforeTeaching)) {
-    const { questions, ...teaching } = lessonById(id)!;
+    const { questions, ...teaching } = beforeScientificLesson(lessonById(id)!);
     expect(createHash("sha256").update(JSON.stringify(canonical(teaching))).digest("hex"), id).toBe(hash);
   }
   const oldIds = new Set(beforeQuestions.map((q) => q.id));

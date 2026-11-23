@@ -50,6 +50,7 @@ const stems = (text: string) => {
 interface SectionIndex {
   guideId: string;
   title: string;
+  titleStems: string[];
   weights: Map<string, number>;
 }
 let indexByGuide: Map<string, SectionIndex[]> | undefined;
@@ -60,24 +61,26 @@ function guideIndex(guideId: string): SectionIndex[] {
   const guide = lessonGuides.get(guideId);
   const sections = guide?.sections ?? [];
   const docs = sections.map((s) => {
+    const titleStems = stems(s.title);
     const tf = new Map<string, number>();
-    for (const w of stems(s.title)) tf.set(w, (tf.get(w) ?? 0) + 3);
+    for (const w of titleStems) tf.set(w, (tf.get(w) ?? 0) + 3);
     // A named phrase ("tam iç yansıma", "y = x") is stronger evidence than a word.
     for (const p of s.paragraphs)
       for (const w of stems(p)) tf.set(w, (tf.get(w) ?? 0) + (w.startsWith("#") ? 3 : 1));
-    return tf;
+    return { tf, titleStems };
   });
   const df = new Map<string, number>();
-  for (const d of docs) for (const w of d.keys()) df.set(w, (df.get(w) ?? 0) + 1);
+  for (const { tf } of docs) for (const w of tf.keys()) df.set(w, (df.get(w) ?? 0) + 1);
   const n = Math.max(docs.length, 1);
   const out = sections.map((s, i) => {
+    const { tf, titleStems } = docs[i];
     const weights = new Map<string, number>();
-    for (const [w, c] of docs[i]) {
+    for (const [w, c] of tf) {
       // Words found in most sections of the guide say little about which one.
       const idf = Math.log((n + 1) / (df.get(w) ?? 1));
       if (idf > 0) weights.set(w, Math.min(c, 4) * idf);
     }
-    return { guideId, title: s.title, weights };
+    return { guideId, title: s.title, titleStems, weights };
   });
   indexByGuide.set(guideId, out);
   return out;
@@ -147,21 +150,21 @@ export function scoreHintFigure(question: HelpQuestion): HintFigureMatch | undef
   // chosen section's title, so a figure is tied to what is actually asked.
   // Options are excluded: distractor wording would pull toward other sections.
   const own = new Set(stems([question.passage ?? "", question.prompt, question.hint ?? ""].join(" ")));
+  const requiredPhrases = [...own].filter((w) => w.startsWith("#"));
   const sections = guides.flatMap(guideIndex);
   const scored = sections
     .map((s) => {
       let score = 0;
       // The question's own wording decides; shared guidance only breaks ties.
       for (const w of q) score += (s.weights.get(w) ?? 0) * (own.has(w) ? 1 : 0.2);
-      const title = stems(s.title);
-      const echoed = title.some((w) => own.has(w) && (s.weights.get(w) ?? 0) > 0);
+      const echoed = s.titleStems.some((w) => own.has(w) && (s.weights.get(w) ?? 0) > 0);
       // A named phrase in the question must also be taught in that section.
-      const phrasesTaught = [...own].filter((w) => w.startsWith("#")).every((w) => s.weights.has(w));
+      const phrasesTaught = requiredPhrases.every((w) => s.weights.has(w));
       return {
         guideId: s.guideId,
         title: s.title,
         score,
-        ok: echoed && phrasesTaught && !contradicts(title, own),
+        ok: echoed && phrasesTaught && !contradicts(s.titleStems, own),
       };
     })
     .sort((a, b) => b.score - a.score);

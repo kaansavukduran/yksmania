@@ -1,3 +1,4 @@
+import { beforeScientificLesson } from "./helpers/before-scientific-revision";
 import { publishedQuestion } from "./helpers/publishedQuestion";
 import retainedCatalogue from "./fixtures/retained-exam-catalogue-016.json";
 import { createHash } from "node:crypto";
@@ -44,7 +45,7 @@ it("retains every published question and teaching field while adding 300 distinc
   for (const [id, hash] of Object.entries(oldTeaching)) {
     const lesson = lessonById(id)!;
     expect(lesson, id).toBeDefined();
-    const { questions: _questions, ...teaching } = lesson;
+    const { questions: _questions, ...teaching } = beforeScientificLesson(lesson);
     expect(
       createHash("sha256")
         .update(JSON.stringify(canonical(teaching)))

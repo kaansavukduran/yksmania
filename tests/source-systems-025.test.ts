@@ -1,3 +1,4 @@
+import { beforeScientificLesson } from "./helpers/before-scientific-revision";
 import accepted025Questions from "./fixtures/source-stage-025-question-fingerprints.json";
 import { createHash } from "node:crypto";
 import { expect, it } from "vitest";
@@ -46,7 +47,7 @@ it("retains5088 accepted questions and475 teaching records while adding234 compl
   }
   expect(Object.keys(beforeTeaching)).toHaveLength(475);
   for (const [id, hash] of Object.entries(beforeTeaching)) {
-    const { questions, ...teaching } = lessonById(id)!;
+    const { questions, ...teaching } = beforeScientificLesson(lessonById(id)!);
     expect(
       createHash("sha256")
         .update(JSON.stringify(canonical(teaching)))

@@ -1,3 +1,4 @@
+import { beforeScientificQuestions } from "./helpers/before-scientific-revision";
 import { describe, expect, it } from "vitest";
 import {
   absoluteMembership,
@@ -49,9 +50,10 @@ it("delivers five complete native guides and fifty independent original question
       ),
     ).toBe(true);
     expect(guide.recall.length).toBeGreaterThanOrEqual(4);
-    expect(lesson.questions).toHaveLength(10);
+    const acceptedQuestions = beforeScientificQuestions(lesson.questions);
+    expect(acceptedQuestions).toHaveLength(10);
     expect(lesson.body).toHaveLength(guide.sections.length);
-    lesson.questions.forEach((q) => {
+    acceptedQuestions.forEach((q) => {
       expect(q.options).toHaveLength(5);
       expect(new Set(q.options.map((o) => o.tr)).size).toBe(5);
       expect(q.explanation.tr.length).toBeGreaterThan(70);
@@ -65,8 +67,8 @@ it("delivers five complete native guides and fifty independent original question
     });
   }
   const ids = forge093MathLessons.flatMap((l) => l.questions.map((q) => q.id));
-  expect(ids).toHaveLength(50);
-  expect(new Set(ids).size).toBe(50);
+  expect(ids).toHaveLength(57);
+  expect(new Set(ids).size).toBe(57);
 });
 
 describe("absolute distance and boundary membership", () => {

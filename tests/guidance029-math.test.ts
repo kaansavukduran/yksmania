@@ -1,3 +1,4 @@
+import { beforeScientificQuestions } from "./helpers/before-scientific-revision";
 import { createHash } from "node:crypto";
 import { Children, createElement, isValidElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
@@ -23,7 +24,7 @@ vi.mock("../src/learning/questionHelpCatalogue.json", async (original) => {
     ],
   };
 });
-const raw = forge093MathLessons.flatMap((l) => l.questions);
+const raw = beforeScientificQuestions(forge093MathLessons.flatMap((l) => l.questions));
 const questions: HelpQuestion[] = raw.map((q) => ({
   id: q.id,
   prompt: q.prompt.tr,

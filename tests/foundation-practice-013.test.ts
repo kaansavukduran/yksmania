@@ -1,3 +1,4 @@
+import { beforeScientificLesson } from "./helpers/before-scientific-revision";
 import retainedCatalogue from "./fixtures/retained-exam-catalogue-016.json";
 import { expect, it } from "vitest";
 import acceptedQuestions from "./fixtures/0.12.0-questions.json";
@@ -115,17 +116,19 @@ it("makes every prepared theory and the first 138 ordered topics independently p
   expect(
     catalogue.find((e) => e.id === "mixed-ayt")!.items.length,
   ).toBeGreaterThanOrEqual(25);
-  for (const pack of foundation013QuestionSets) {
-    const spec = catalogue.find((s) => s.id === `branch-${pack.subjectId}`)!;
+  const selectedBySubject = new Map<string, Set<string>>();
+  const subjects = new Set(foundation013QuestionSets.map(({ subjectId }) => subjectId));
+  for (const subjectId of subjects) {
+    const spec = catalogue.find((s) => s.id === `branch-${subjectId}`)!;
     // A40-item paper cannot include every topic after the bank grows past40
     // distinct lessons. Verify each original foundation is still eligible.
     const selected = Array.from({ length: 20 }, (_, i) =>
-      selectExamVariant(spec, `foundation-coverage-${i}`),
+      selectExamVariant(spec, `foundation-coverage-${i}`).map(({ lessonId }) => lessonId),
     ).flat();
-    expect(
-      selected.some((q) => q.lessonId === pack.lessonId),
-      pack.lessonId,
-    ).toBe(true);
+    selectedBySubject.set(subjectId, new Set(selected));
+  }
+  for (const pack of foundation013QuestionSets) {
+    expect(selectedBySubject.get(pack.subjectId)?.has(pack.lessonId), pack.lessonId).toBe(true);
   }
 });
 
@@ -146,7 +149,7 @@ it("retains all pre-existing lesson identities and every non-question teaching f
   for (const id of Object.keys(oldLessonFingerprints)) {
     const lesson = lessonById(id)!;
     expect(lesson, id).toBeDefined();
-    const { questions: _questions, ...teaching } = lesson;
+    const { questions: _questions, ...teaching } = beforeScientificLesson(lesson);
     const hash = createHash("sha256")
       .update(JSON.stringify(canonical(teaching)))
       .digest("hex");

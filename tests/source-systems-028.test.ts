@@ -1,3 +1,4 @@
+import { beforeScientificLesson, beforeScientificRevision } from "./helpers/before-scientific-revision";
 import { createHash } from "node:crypto";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
@@ -138,12 +139,12 @@ describe("028 gerçek küresel yardım kayıtları ve eski kaynak koruması", ()
     for (const [id, sha] of Object.entries(oldLessons)) {
       const lesson = lessons.find((item) => item.id === id)!;
       expect(lesson, id).toBeDefined();
-      const { questions: _questions, ...metadata } = lesson;
+      const { questions: _questions, ...metadata } = beforeScientificLesson(lesson);
       expect(fingerprint(metadata), id).toBe(sha);
     }
     // The Map is the raw accepted guide collection, not a display projection.
     for (const [id, sha] of Object.entries(oldGuides))
-      expect(fingerprint(lessonGuides.get(id)), id).toBe(sha);
+      expect(fingerprint(beforeScientificRevision("guides", id, lessonGuides.get(id))), id).toBe(sha);
   });
 
   it("026'nın yerleşik 479 çalışma sırasını ve teori/rehber/özet sayılarını korur", () => {

@@ -368,6 +368,39 @@ const contrapositive: FigureDef = {
   },
 };
 
+const successiveMagnification: FigureDef = {
+  caption: "İkinci büyütmeyi değiştir. Kutular işlem sırasını, içlerindeki sayılar her aşamanın uzunluğunu gösterir.",
+  alt: "Başlangıç uzunluğundan ilk ve ikinci büyütmeye giden üç kutu. Okların yanındaki çarpanlar her aşamadaki büyütme oranıdır.",
+  param: { label: "İkinci büyütme", min: 1, max: 40, step: 1, init: 25, unit: " kat" },
+  draw: (secondFactor) => {
+    const firstFactor = 5;
+    // Integer counts of 0.0001 mm retain the same values across labels and results.
+    const initial = 32;
+    const first = initial * firstFactor;
+    const totalFactor = firstFactor * secondFactor;
+    const last = initial * totalFactor;
+    const inMillimetres = (value: number) =>
+      `${(value / 10000).toLocaleString("tr-TR", { maximumFractionDigits: 4 })} mm`;
+    const els: El[] = [
+      ...cell(0, 4.6, 4.4, 0.9, inMillimetres(initial), "a"),
+      ...cell(0, 2.3, 4.4, 0.9, inMillimetres(first), "b"),
+      ...cell(0, 0, 4.4, 0.9, inMillimetres(last), "c"),
+      vec(v(2.2, 4.45), v(2.2, 3.35), { tone: "ink" }),
+      vec(v(2.2, 2.15), v(2.2, 1.05), { tone: "ink" }),
+      txt(v(3, 3.9), `×${firstFactor}`, "e", { tone: "ink", small: true }),
+      txt(v(3, 1.6), `×${secondFactor}`, "e", { tone: "ink", small: true }),
+      ...pad(-0.5, 5.95, 4.9, -0.4),
+    ];
+    return {
+      els,
+      readout: [
+        `Toplam büyütme ${firstFactor} × ${secondFactor} = ${totalFactor} kat.`,
+        `${inMillimetres(initial)} → ${inMillimetres(first)} → ${inMillimetres(last)}`,
+      ],
+    };
+  },
+};
+
 export const mathFigures060TytAlgebra: Record<string, Record<string, FigureDef>> = {
   "carpanlara-ayirma": {
     "Tam karede uçlar kadar orta terim de önemlidir": perfectSquare,
@@ -380,6 +413,7 @@ export const mathFigures060TytAlgebra: Record<string, Record<string, FigureDef>>
     "Toplama ve çıkarmada ortak ölçek kur": commonScale,
     "Çarpma ve bölmede katsayı ile ölçeği ayır": sciMultiply,
     "Birim değişimi de 10'un kuvvetidir": unitPowers,
+    "Birbirini izleyen büyütmeleri çarp": successiveMagnification,
   },
   "kartezyen-carpim": {
     "Her ilk seçimi her ikinci seçimle eşleştir": matching,

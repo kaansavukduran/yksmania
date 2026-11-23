@@ -1,5 +1,10 @@
 import { txt, type Lesson } from "../domain/model";
 import type { LessonGuide, GuideSection, WorkedExample } from "./guides/types";
+import {
+  scientificNotationExamples,
+  scientificNotationPractice,
+  scientificNotationSections,
+} from "./scientificNotation014";
 
 type RawQuestion = [string, string[], number, string, string, string];
 type Pack = {
@@ -565,7 +570,7 @@ const scientific: Pack = {
     section(
       "Toplama ve çıkarmada ortak ölçek kur",
       "3,2×10⁵+7×10⁴ ifadesinde doğrudan katsayıları toplayamazsın; birimler gibi ölçekler eşit olmalıdır. 7×10⁴=0,7×10⁵ yazınca toplam 3,9×10⁵ olur. İstersen küçük üssü ortak alıp(32+7)×10⁴=39×10⁴ yazabilir, sonra normalleştirebilirsin. İki yöntem aynı sayıyı verir.",
-      "Çıkarmada da önce üsleri eşitle; sonuç katsayısı 1'in altına veya 10'un üstüne çıkarsa yeniden normalleştir. 5×10³−4,8×10³=0,2×10³=2×10². Toplamada üsleri toplamak çarpım kuralını yanlış yere taşır. Sayıları olağan biçime açarak kaba sonuç kontrolü yapmak sıfırların arasında kaybolmayı önler.",
+      "Çıkarmada da önce üsleri eşitle. Sonuç sıfırdan farklıysa katsayının mutlak değeri 1’den küçük veya 10’a eşit ya da büyük olduğunda yeniden normalleştir. 5×10³−4,8×10³=0,2×10³=2×10². Toplamada üsleri toplamak çarpım kuralını yanlış yere taşır. Sayıları olağan biçime açarak kaba sonuç kontrolü yapmak sıfırların arasında kaybolmayı önler.",
     ),
     section(
       "Çarpma ve bölmede katsayı ile ölçeği ayır",
@@ -587,6 +592,7 @@ const scientific: Pack = {
       "Bir sayıyı tam olarak başka biçimde yazmak yuvarlama değildir:0,00000064=6,4×10⁻⁷ eşitliği kesindir. Katsayıyı 6 diye yuvarlarsan yaklaşık değer üretirsin ve≈ işaretiyle belirtmelisin. Soru yaklaşık bir sonuç istemiyorsa rakamları sırf kısa görünsün diye atma; son karşılaştırma veya işlem sonucu değişebilir.",
       "Ölçümün anlamlı basamakları deneysel kesinlik konusudur; bilimsel gösterimde katsayı kullanmak tek başına ölçüm hatasını bildirmez. Soru verilen sayıları tam kabul ediyorsa tam işle; ölçüm hassasiyeti veya yuvarlama kuralı verilmişse onu ayrıca uygula. Son kontrol: katsayı aralıkta mı, üs tam sayı mı, işaret ve birim doğru mu, geri açılan sayı başlangıçla aynı mı?",
     ),
+    ...scientificNotationSections,
   ],
   examples: [
     worked(
@@ -667,6 +673,7 @@ const scientific: Pack = {
       "Hız birimi uzunluk/zaman; sadece üssü değil birimi de yazdın.",
       "mm ve m'yi aynı birim saymak.",
     ),
+    ...scientificNotationExamples,
   ],
   recall: [
     {
@@ -691,6 +698,10 @@ const scientific: Pack = {
     {
       prompt: "mm²'den m²'ye hangi çarpanla geçilir?",
       answer: "10⁶'ya bölünür; uzunluk dönüşümünün karesi kullanılır.",
+    },
+    {
+      prompt: "İki büyütme art arda uygulanırsa toplam oran nasıl bulunur?",
+      answer: "İlk oranı ikinci oranla çarp. Birimsiz oranların çarpımı uzunluk birimini değiştirmez.",
     },
   ],
   questions: [
@@ -776,7 +787,7 @@ const scientific: Pack = {
     ],
   ],
   source:
-    "Aurelia 014 Bilimsel Gösterim ve Katsayı, PDF s. 1–3; MEBİ TYT Matematik Konu Özeti basılı s. 39–41 (PDF 41–43) üs işlemleri temeli. Kitapta bağımsız bilimsel gösterim bölümü bulunduğu iddia edilmez. Açıklamalar ve sorular özgündür; resmî soru aktarımı değildir.",
+    "Aurelia 014 Bilimsel Gösterim ve Katsayı içerik 1.1, PDF s. 1–10. Üs işlemleri için MEBİ TYT Matematik Konu Özeti basılı s. 39–41 (PDF s. 41–43). Bu dersteki alıştırmalar özgündür. Soru çalışmasının sonunda Geçmiş sınavlardan öğren bölümündeki 2021 TYT Temel Matematik 3 kaynak kaydına ulaşabilirsin.",
 };
 
 const roots: Pack = {
@@ -1315,17 +1326,20 @@ export const forge093MathLessons: Lesson[] = packs.map((p) => ({
     title: txt(s.title),
     text: txt(s.paragraphs.join("\n\n")),
   })),
-  questions: p.questions.map(
-    ([prompt, options, answer, hint, explanation, misconception], i) => ({
-      id: `${p.id}-093-${i + 1}`,
-      prompt: txt(prompt),
-      options: options.map(txt),
-      answer,
-      hint: txt(hint),
-      explanation: txt(`${explanation} Dikkat: ${misconception}`),
-      skill: p.title,
-    }),
-  ),
+  questions: [
+    ...p.questions.map(
+      ([prompt, options, answer, hint, explanation, misconception], i) => ({
+        id: `${p.id}-093-${i + 1}`,
+        prompt: txt(prompt),
+        options: options.map(txt),
+        answer,
+        hint: txt(hint),
+        explanation: txt(`${explanation} Dikkat: ${misconception}`),
+        skill: p.title,
+      }),
+    ),
+    ...(p === scientific ? scientificNotationPractice : []),
+  ],
   source: txt(p.source),
   tags: [p.topic, "Özgün öğretim soruları"],
 }));

@@ -1,3 +1,4 @@
+import { beforeScientificQuestions, beforeScientificRevision } from "./helpers/before-scientific-revision";
 import { createHash } from "node:crypto";
 import { expect, it } from "vitest";
 import baseline from "./fixtures/source-stage-032-preservation.json";
@@ -46,21 +47,19 @@ it("preserves every prior6077question/528lesson/494guide/sheet value and the493-
   };
   for (const type of ["lessons", "questions", "guides", "sheets"] as const)
     for (const [key, expected] of Object.entries(baseline[type]))
-      expect(hash(maps[type].get(key)), `${type}:${key}`).toBe(expected);
+      expect(hash(beforeScientificRevision(type, key, maps[type].get(key))), `${type}:${key}`).toBe(expected);
   expect(lessons.slice(0, 528).map((l) => l.id)).toEqual(
     Object.keys(baseline.lessons),
   );
   expect(
-    lessons
-      .flatMap((l) => l.questions)
-      .slice(0, 6077)
+    beforeScientificQuestions(lessons.flatMap((lesson) => lesson.questions)).slice(0, 6077)
       .map((q) => q.id),
   ).toEqual(Object.keys(baseline.questions));
   expect(studyTopics.slice(0, 493)).toEqual(baseline.studyTopics);
 });
 it("registers one source unit, separate rich guide/concise summary and43 self-contained fully-guided questions", () => {
   expect(lessons).toHaveLength(540);
-  expect(lessons.flatMap((l) => l.questions)).toHaveLength(6465);
+  expect(lessons.flatMap((l) => l.questions)).toHaveLength(6472);
   expect(lessonGuides.size).toBe(505);
   expect(builtInCheatSheets.size).toBe(505);
   expect(studyTopics).toHaveLength(505);
@@ -101,7 +100,7 @@ it("registers one source unit, separate rich guide/concise summary and43 self-co
   expect(lesson.questions).toHaveLength(43);
   expect(
     new Set(lessons.flatMap((l) => l.questions).map((q) => q.id)).size,
-  ).toBe(6465);
+  ).toBe(6472);
   for (const q of lesson.questions) {
     expect(questionContentIssues(q), q.id).toEqual([]);
     expect(q.options).toHaveLength(5);

@@ -1,8 +1,14 @@
 # 0.27.0 · Konu anlatımı figürleri
 
-23 Kasım 2026. Bu aday, mevcut konu anlatımlarının 56’sına toplam 242 bölüm figürü ekler. Böylece Temel İnşa dışındaki konu envanterinde 405 dersin 1.668 bölüm figürü bulunur. Temel İnşa’nın 25 dersi ve 57 figürü ayrıca sayılır. TÜİK nüfus örneği yaklaşık hesabı ve açıklanan değeri ayırır. Çarpan örneği çiftlerin sırasız sayıldığını belirtir.
+23 Kasım 2026. Bu aday, mevcut konu anlatımlarının 56’sına toplam 242 bölüm figürü ekler. Bilimsel Gösterim’e eklenen yeni şemayla birlikte Temel İnşa dışındaki konu envanterinde 405 dersin 1.669 bölüm figürü bulunur. Temel İnşa’nın 25 dersi ve 57 figürü ayrıca sayılır. TÜİK nüfus örneği yaklaşık hesabı ve açıklanan değeri ayırır. Çarpan örneği çiftlerin sırasız sayıldığını belirtir.
 
 Bağımsız görsel inceleme dalında 2.108 hedefli birim testi, `check`, derleme ve beş Chromium testi geçti. 320 px’de yeni figürlerin tamamında ölçülen çakışma ve taşma sıfırdı. Örnek bir ders normal menüden klavyeyle açıldı. Çevrimdışı yeniden yüklemede öğrenme verisi aynı kaldı. Birleşik adayın tam CI, Pages ve paket sonuçları bekliyor.
+
+Bilimsel Gösterim ve Katsayı, 19 Kasım tarihli 1.1 kaynak sürümüne göre aynı konu altında genişletildi. Üç anlatım bölümü, üç çözümlü örnek, yedi özgün soru ve art arda büyütme şeması eklendi. Kopya Kağıtları bölümünde altı yöntemin geçerli kullanımını, yaygın hatasını ve başka bir örneğini karşılaştırabilirsin. 2021 TYT Temel Matematik 3 kaydı kitapçığın 26. PDF sayfasına ve 45. sayfadaki D anahtarına dayanır. Uygulamada adım adım açılan örneğin verileri ve çözümü ayrıca yazıldı.
+
+İpucu figürü aramasında bölüm başlıkları rehber dizinine bir kez eklenir. İyileştirme öncesindeki ve sonrasındaki 6.472 soru için puanlar, seçilen bölümler ve ikinci aday puanları aynı çıktı.
+
+23 Kasım Drive sayımında 9.984 fiziksel PDF görüldü. Son kanonik envanterdeki 8.981 kimliğin tamamı listelendi. Arşivde 1.003 yeni kimlik ve 320 değişmiş sürüm bilgisi var. Tarihsel tam aktarım kaydı bulunan yedi dosyanın güncel boyutu farklı. Güncel aktarım sayısı kaynak sürümleri doğrulandıkça belirlenebilir. [İşleme kaydı](docs/ISLEME_SAYACI.md)
 
 # Forge062 · Deneme süresi
 
@@ -62,7 +68,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
-| TYT Matematik | 40 / 40 | 33 · 109 | 735 / 735 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 7 |
+| TYT Matematik | 40 / 40 | 33 · 110 | 742 / 742 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 7 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 217 / 217 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 177 | 311 / 311 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
@@ -77,14 +83,14 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **505 / 505** | **405 · 1668** | **6.465 / 6.465 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **100** |
+| **Toplam** | **505 / 505** | **405 · 1669** | **6.472 / 6.472 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **100** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
 | Dal kaydında okunan veya eşlenen PDF / arşiv envanteri | 119 / 8.981 · %1,33 |
 | 99_ÖSYM PDF (işlenen / beyan edilen) | 18 / 1.001 · %1,80 |
 | 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 76 |
-| Kademeli çözüm paneli bulunan soru | 6.465 / 6.465 · %100,00 |
+| Kademeli çözüm paneli bulunan soru | 6.472 / 6.472 · %100,00 |
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
 | Ara hatırlama (mikro ritim): ders · soru | 505 / 505 · %100,00 · 3.052 soru |

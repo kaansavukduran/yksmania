@@ -2,6 +2,7 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it, vi } from "vitest";
 import { lessonGuides } from "../src/learning/guides";
+import { beforeScientificGuide } from "./helpers/before-scientific-revision";
 import { clarifiedGuideView } from "../src/learning/guidePresentation028";
 import { GuidedReading } from "../src/learning/GuidedReading";
 import { resolveGuideStep } from "../src/learning/guides/position";
@@ -228,7 +229,7 @@ describe("030 plant life-history worked conditions", () => {
     expect(previousViews).toHaveLength(480);
     let oldViews = 0;
     for (const previous of previousViews) {
-      const guide = lessonGuides.get(previous.id)!;
+      const guide = beforeScientificGuide(lessonGuides.get(previous.id)!);
       expect(digest(guide), previous.id).toBe(previous.rawSHA256);
       if (!["virusler", "bitkiler", "dalgalara-giris"].includes(previous.id)) {
         expect(digest(clarifiedGuideView(guide)), previous.id).toBe(

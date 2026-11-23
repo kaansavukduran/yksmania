@@ -1,3 +1,4 @@
+import { beforeScientificGuideEntry, beforeScientificLesson } from "./helpers/before-scientific-revision";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { createElement } from "react";
@@ -157,7 +158,7 @@ afterEach(() => {
 
 describe("029 three guarded presentation revisions", () => {
   it("retains all raw5883 questions,514 lesson metadata records and480 guides from separate028", () => {
-    const all = fixtures.allLessons.filter(acceptedLesson031);
+    const all = fixtures.allLessons.filter(acceptedLesson031).map(beforeScientificLesson);
     expect(all).toHaveLength(514);
     const questions = all.flatMap((l) => l.questions);
     expect(questions).toHaveLength(5883);
@@ -168,7 +169,7 @@ describe("029 three guarded presentation revisions", () => {
       digest(all.map(({ questions: _questions, ...metadata }) => metadata)),
     ).toBe("0df1fcf0d49654fd897e0ede9d5b27540c884004225c8cde09984ca96459db6e");
     expect([...lessonGuides].filter(acceptedGuide031)).toHaveLength(480);
-    expect(digest([...lessonGuides].filter(acceptedGuide031))).toBe(
+    expect(digest([...lessonGuides].filter(acceptedGuide031).map(beforeScientificGuideEntry))).toBe(
       "36a48d07e782b9f4769698d01f94860251aaeb8502f44454489cd43fe9e085f5",
     );
   });

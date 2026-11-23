@@ -1,3 +1,4 @@
+import { beforeScientificQuestions, beforeScientificRevision } from "./helpers/before-scientific-revision";
 import { ebobEkokSource034Pack } from "../src/learning/ebobEkokSource034";
 import { examTeachingCases } from "../src/learning/pastExamCases";
 import { rationalSource035Pack } from "../src/learning/rationalSource035";
@@ -69,15 +70,13 @@ it("preserves every accepted 033 lesson, guide, summary, question value and thei
   for (const type of ["lessons", "questions", "guides", "sheets"] as const)
     for (const [id, expected] of Object.entries(baseline[type])) {
       expect(maps[type].has(id), `${type}: ${id}`).toBe(true);
-      expect(hash(maps[type].get(id)), `${type}: ${id}`).toBe(expected);
+      expect(hash(beforeScientificRevision(type, id, maps[type].get(id))), `${type}: ${id}`).toBe(expected);
     }
   expect(lessons.slice(0, 529).map((l) => l.id)).toEqual(
     Object.keys(baseline.lessons),
   );
   expect(
-    lessons
-      .flatMap((l) => l.questions)
-      .slice(0, 6120)
+    beforeScientificQuestions(lessons.flatMap((lesson) => lesson.questions)).slice(0, 6120)
       .map((q) => q.id),
   ).toEqual(Object.keys(baseline.questions));
   expect(studyTopics.slice(0, 494)).toEqual(baseline.studyTopics);
@@ -85,13 +84,13 @@ it("preserves every accepted 033 lesson, guide, summary, question value and thei
 
 it("adds exactly two rich source companions and 94 fully guided self-contained cards", () => {
   expect(lessons).toHaveLength(540);
-  expect(lessons.flatMap((l) => l.questions)).toHaveLength(6465);
+  expect(lessons.flatMap((l) => l.questions)).toHaveLength(6472);
   expect(lessonGuides.size).toBe(505);
   expect(builtInCheatSheets.size).toBe(505);
   expect(studyTopics).toHaveLength(505);
   expect(
     new Set(lessons.flatMap((l) => l.questions).map((q) => q.id)).size,
-  ).toBe(6465);
+  ).toBe(6472);
   for (const pack of packs) {
     const lesson = lessonById(pack.id)!;
     const guide = lessonGuides.get(pack.id)!;
@@ -153,7 +152,7 @@ for (const pack of packs)
   });
 
 it("links only the independently checked official item for each source companion", () => {
-  expect(pastExamReferences).toHaveLength(12);
+  expect(pastExamReferences).toHaveLength(13);
   expect(
     pastExamReferencesForTopic("topic-tyt-mat-rasyonel-kaynak-035").map(
       (ref) => ref.id,

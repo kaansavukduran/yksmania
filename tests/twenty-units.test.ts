@@ -1,3 +1,4 @@
+import { beforeScientificQuestions } from "./helpers/before-scientific-revision";
 import { expect, it } from "vitest";
 import previousQuestions from "./fixtures/0.9.2-questions.json";
 import { publishedQuestion } from "./helpers/publishedQuestion";
@@ -53,7 +54,7 @@ it("teaches all twenty next workbook headings through distinct lessons, full gui
     const lesson = theory[0];
     ids.add(lesson.id);
     expect(lesson.subjectId).toBe(topic.subjectId);
-    expect(lesson.questions, topic.title).toHaveLength(10);
+    expect(beforeScientificQuestions(lesson.questions), topic.title).toHaveLength(10);
     for (const q of lesson.questions) {
       expect(q.options).toHaveLength(5);
       expect(new Set(q.options.map((o) => o.tr)).size).toBe(5);

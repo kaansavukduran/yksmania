@@ -1,3 +1,4 @@
+import { beforeScientificLesson } from "./helpers/before-scientific-revision";
 import stageQuestions from "./fixtures/source-stage-019-questions.json";
 import { publishedQuestion } from "./helpers/publishedQuestion";
 import { createHash } from "node:crypto";
@@ -44,7 +45,7 @@ it("preserves all 2740 prior question fields and adds 300 self-contained distinc
   for (const [id, hash] of Object.entries(oldTeaching)) {
     const lesson = lessonById(id)!;
     expect(lesson, id).toBeDefined();
-    const { questions: _questions, ...teaching } = lesson;
+    const { questions: _questions, ...teaching } = beforeScientificLesson(lesson);
     expect(
       createHash("sha256")
         .update(JSON.stringify(canonical(teaching)))

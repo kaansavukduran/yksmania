@@ -145,4 +145,14 @@ export const examTeachingCases: Record<string, ExamTeachingCase> = {
     "answer": "10.000<b<20.000 TL; u=b/1000 ise 10<u<20.",
     "pitfall": "Bu özgün örneğin verilerini ve sonucunu resmî soruyla eşitleme. TL ile bin TL değişkenini ayrı adlandır."
   },
+  "2021-TYT-MAT-3": {
+    prompt: "Bir tarayıcı, 2,4×10⁻³ mm genişliğindeki bir çizginin görüntüsünü 8 katına çıkarıyor. Düzenleyici, taranan görüntüyü 25 katına çıkarıyor. Son görüntüde çizgi kaç milimetre genişliğindedir?",
+    steps: [
+      "Her oran kendisinden önceki görüntüye uygulanır. Birleşik oran 8·25=200’dür.",
+      "2,4×10⁻³ mm ile 200’ü çarp. 200=2×10² olduğundan 4,8×10⁻¹ mm elde edilir.",
+      "Sırayla kontrol et. İlk aşama 0,0192 mm, ikinci aşama 0,48 mm verir.",
+    ],
+    answer: "0,48 mm.",
+    pitfall: "8+25 toplarsan ikinci oranı ilk büyümüş görüntüye uygulamazsın.",
+  },
 };

@@ -2,7 +2,7 @@
 
 Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış işi gösterir; bir PDF'nin okunması, uygulamadaki içeriğin o PDF'yi tamamen kapsadığı anlamına gelmez.
 
-23 Kasım kanonik defter geri okumasında 8.981 PDF kaydının 7’sinde tam öğretim aktarımı, 2’sinde kısmi aktarım ve 8.972’sinde belirsiz durum vardı. Bu okuma mevcut defteri doğruladı. Canlı Drive envanteri bu tarihte yeniden sayılmadı.
+23 Kasım Drive taramasında 9.984 benzersiz fiziksel PDF listelendi. Son kanonik envanterdeki 8.981 kimliğin tamamı görüldü, 1.003 yeni kimlik ve 320 değişmiş sürüm bilgisi kaydedildi. Yeni 99_ÖSYM alt ağacında 1.002 fiziksel PDF var. Kanonik defter tarihsel sürümlerde 7 tam ve 2 kısmi öğretim aktarımı ile 8.972 belirsiz kayıt içeriyor. Tam aktarım kaydı olan yedi dosyanın güncel boyutu kapanış kanıtındaki boyuttan farklı. Güncel tam aktarım sayısı belirsiz.
 
 ## Son güncelleme: 19 Kasım 2026 (Türkiye saati)
 

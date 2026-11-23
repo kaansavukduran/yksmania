@@ -1,3 +1,4 @@
+import { beforeScientificGuideEntry, beforeScientificLesson } from "./helpers/before-scientific-revision";
 import { createHash } from "node:crypto";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
@@ -231,8 +232,8 @@ describe("029 atomic membrane worked display clarification", () => {
     );
   });
   it("preserves all480 raw guides,514 lessons,5883 questions and the earlier nine display corrections", () => {
-    const previousGuides = [...lessonGuides].filter(acceptedGuide031);
-    const previousLessons = lessons.filter(acceptedLesson031);
+    const previousGuides = [...lessonGuides].filter(acceptedGuide031).map(beforeScientificGuideEntry);
+    const previousLessons = lessons.filter(acceptedLesson031).map(beforeScientificLesson);
     expect(previousGuides).toHaveLength(480);
     expect(digest(previousGuides)).toBe(
       "9ee7770f36a8114f042cf08b73cc6a7d3ee417ab0dea459829b6d9ef7119d666",

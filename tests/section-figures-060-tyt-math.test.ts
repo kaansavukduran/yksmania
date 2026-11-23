@@ -35,10 +35,12 @@ const GUIDES = [
 ];
 
 describe("Forge060 TYT Matematik bölüm figürleri", () => {
-  it("16 dersin her birine dört figür kaydeder", () => {
+  it("16 derste kayıtlı figürlerin sayısını korur", () => {
     for (const g of GUIDES) {
       expect(sectionFigureGuideIds.has(g), g).toBe(true);
-      expect(Object.keys(sectionFigures[g] ?? {}).length, g).toBe(4);
+      expect(Object.keys(sectionFigures[g] ?? {}).length, g).toBe(
+        g === "bilimsel-gosterim-katsayi" ? 5 : 4,
+      );
     }
   });
 

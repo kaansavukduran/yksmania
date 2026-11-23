@@ -6,6 +6,7 @@ const legacySectionCounts: Readonly<Record<string, number>> = {
   "elektrik-alan": 8,
   "kimyasal-denge": 11,
   "dna-eslenmesi": 7,
+  "bilimsel-gosterim-katsayi": 8,
 };
 
 export function resolveGuideStep(
