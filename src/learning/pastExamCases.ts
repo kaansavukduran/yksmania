@@ -199,4 +199,40 @@ export const examTeachingCases: Record<string, ExamTeachingCase> = {
     pitfall:
       "İkinci kesri başlangıca uygulamak veya bir kartı her taramada yeniden farklı kart saymak.",
   },
+  "2023-TYT-MAT-3": {
+    prompt:
+      "400 birim sıvıya ilk iki işlemde her defasında kapta bulunan miktarın 1/5’i ekleniyor. Sonraki iki işlemde her defasında o anda bulunan miktarın 1/4’ü boşaltılıyor. Son durumda kaç birim sıvı kalır?",
+    steps: [
+      "İlk iki işlemde o anda bulunan miktarın 6/5’i, son iki işlemde 3/4’ü elde edilir.",
+      "Hesap 400·(6/5)²·(3/4)²=400·(9/10)²=324’tür.",
+      "Adımları ayrı yaparak denetle. Miktarlar 400→480→576→432→324 olur.",
+    ],
+    answer: "324 birim sıvı kalır.",
+    pitfall:
+      "Her artış ve azalışı başlangıçtaki 400’e göre hesaplamak. İşlem her aşamada değişmiş miktara uygulanır.",
+  },
+  "2023-TYT-MAT-26": {
+    prompt:
+      "Bir gözlemevi 1996’da açıldığında rehber 19 yaşındaydı. Stajyer, gözlemevinin 18. açılış yıldönümünün olduğu yılda doğdu. Tam yıl farkı modelinde 2030’da yaşları toplamı kaçtır?",
+    steps: [
+      "Rehberin doğum yılı 1996−19=1977’dir. Stajyerin doğum yılı 1996+18=2014’tür.",
+      "2030’da rehber 2030−1977=53, stajyer 2030−2014=16 yaşındadır.",
+      "İki kişinin aynı hedef yıldaki yaşları toplamı 53+16=69’dur.",
+    ],
+    answer: "Yaş toplamı 69.",
+    pitfall:
+      "Açılış yılında 19 yaşında olmayı, açılıştan 19 yıl sonra doğmuş olmakla karıştırmak.",
+  },
+  "2026-TYT-MAT-21": {
+    prompt:
+      "Yıl modelinde 2027’de Salih ve yeğeni Ekin’in yaşları bilinmiyor. 2016’daki yaş toplamları Salih’in 2027’deki yaşına eşit. Salih’in 1998’deki yaşı, Ekin’in 2027’deki yaşına eşit. 2027 toplamını bul.",
+    steps: [
+      "Bugünkü yaşları s ve e yaz. 2016, 11 yıl önce olduğundan (s−11)+(e−11)=s. Dolayısıyla e=22.",
+      "1998, 29 yıl önce. O tarihte yalnız Salih’in yaşı gerekir. s−29=22, yani s=51.",
+      "2027 toplamı 73’tür. 2016’da 40+11=51. Ekin 2005’te doğduğu için 1998’de Ekin’in yaşı bir koşul olarak kullanılmaz.",
+    ],
+    answer: "2027’de yaş toplamı 73.",
+    pitfall:
+      "2016 ve 1998 için tek zaman kayması seçmek veya her koşulda iki kişiyi de geçmiş sütununa koymak.",
+  },
 };

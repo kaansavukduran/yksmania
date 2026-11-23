@@ -8,6 +8,8 @@ import {
   successivePercent,
 } from "./forge011Math";
 import { useExploration } from "./useExploration";
+import { CalendarAgeSource019Lab } from "./CalendarAgeSource019Lab";
+import { InverseRemainderSource018Lab } from "./InverseRemainderSource018Lab";
 import { WeightedUseSource017Lab } from "./WeightedUseSource017Lab";
 import "./forge011Math.css";
 import { ChoiceSelect } from "../components/ChoiceSelect";
@@ -937,9 +939,15 @@ export default function Forge011MathLab({ id }: { id: string }) {
           <WeightedUseSource017Lab />
         </>
       ) : id === "kesir-problemleri" ? (
-        <Fraction />
+        <>
+          <Fraction />
+          <InverseRemainderSource018Lab />
+        </>
       ) : id === "yas-problemleri" ? (
-        <Ages />
+        <>
+          <Ages />
+          <CalendarAgeSource019Lab />
+        </>
       ) : id === "yuzde-problemleri" ? (
         <Percentages />
       ) : (

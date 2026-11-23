@@ -316,6 +316,60 @@ export const pastExamReferences: PastExamReference[] = [
       "Bir kez basılan 18, iki kez basılan 6, üç kez basılan 13 tuş vardır. Bunlar 37 farklı tuş ve 18+12+39=69 basış verir. Hiç basılmayan 54−37=17 tuş, C anahtarıyla eşleşir.",
     ],
   },
+  {
+    id: "2023-TYT-MAT-3",
+    bookletId: "2023-tyt",
+    test: "Temel Matematik",
+    question: 3,
+    page: 23,
+    answerPage: 42,
+    answer: "D",
+    topicIds: ["detail-211"],
+    title: "Ardışık artışların değişen bütünleri",
+    connection:
+      "Her yıllık artış bir önceki yıla aittir. Dört kez tekrarlanan iki dönem çarpanı, iki ayrı üs olarak taşınır.",
+    solution: [
+      "810.000 başlangıç değerine ilk dört yılda her yıl 11/10, sonraki dört yılda her yıl 12/11 çarpanı uygulanır. Son değer 810.000·(11/10)⁴·(12/11)⁴ olur.",
+      "İki dönemde de dört geçiş olduğundan çarpanlar (11/10·12/11)⁴=(6/5)⁴ biçiminde birleşir. 810.000=30⁴ olduğundan sonuç (30·6/5)⁴=36⁴=6⁸=1.679.616’dır.",
+      "Bu sonuç D anahtarıyla eşleşir. Soru fiziksel PDF sayfası 23 (basılı 21), resmî cevap anahtarı fiziksel PDF sayfası 42’dedir.",
+    ],
+  },
+  {
+    id: "2023-TYT-MAT-26",
+    bookletId: "2023-tyt",
+    test: "Temel Matematik",
+    question: 26,
+    page: 30,
+    answerPage: 42,
+    answer: "E",
+    topicIds: ["detail-212"],
+    title: "Kuruluş yılıyla iki doğum yılını bulma",
+    connection:
+      "İşletmenin takvim yılı ile kuruluşundan beri geçen süreyi ayır. İki kişinin yaşını aynı hedef yılda hesapla.",
+    solution: [
+      "1949’da büyük kişi 11 yaşında olduğundan yıl modelinde doğum yılı 1949−11=1938’dir. Küçük kişinin doğum yılı işletmenin açılışından 40 yıl sonra, 1949+40=1989’dur.",
+      "2022’de yaşlar 2022−1938=84 ve 2022−1989=33’tür. Toplam 117’dir. Alternatif olarak 2022, açılıştan 73 yıl sonra olduğu için aynı yaşlar 11+73 ve 73−40 diye yazılabilir.",
+      "117 sonucu E anahtarıyla eşleşir. Soru fiziksel PDF sayfası 30 (basılı 28), anahtar fiziksel PDF sayfası 42’dedir.",
+    ],
+  },
+  {
+    id: "2026-TYT-MAT-21",
+    bookletId: "2026-tyt",
+    test: "Temel Matematik",
+    question: 21,
+    page: 30,
+    answerPage: 45,
+    answer: "E",
+    topicIds: ["detail-212"],
+    title: "İki eski tarih ve iki ayrı hedef yaş",
+    connection:
+      "2013’te iki kişinin yaşı, 1999’da yalnız annenin yaşı gerekir. Bugünkü hedefleri her eski sütunda yeniden hesaplama.",
+    solution: [
+      "Annenin 2025 yaşı A, çocuğunki Ç olsun. 2013, 12 yıl öncedir. Verilen yaş toplamı (A−12)+(Ç−12)=A eder. Buradan Ç=24 çıkar.",
+      "1999, 26 yıl öncedir. O tarihteki anne yaşı çocuğun 2025 yaşına eşit olduğu için A−26=24 ve A=50 olur.",
+      "2013’te yaşların toplamı 38+12=50’dir. 1999’da anne 24 yaşında, çocuk henüz doğmamıştır. İkinci koşul çocuğun o tarihteki yaşını kullanmaz. 2025 toplamı 74, resmî anahtar E’dir.",
+    ],
+  },
 ];
 // Selected companion links leave all earlier source records and their topic lists intact.
 const sourceCompanionReferences: Record<string, readonly string[]> = {

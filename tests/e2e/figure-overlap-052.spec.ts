@@ -4,6 +4,7 @@ import { sectionFigureGuideIds } from "../../src/learning/sectionFigures/figureG
 import { issueLine, openGuideDrawings, svgLayoutAudit } from "./helpers/svgAudit";
 
 test.use({ locale: "tr-TR", timezoneId: "Europe/Istanbul" });
+test.describe.configure({ mode: "parallel" });
 
 /*
  * Layout gate for section figures (Forge052). Every figure on every guide

@@ -1,3 +1,5 @@
+import { ageProblemsSource019SheetText } from "./ageProblemsSource019Revision";
+import { fractionProblemsSource018SheetText } from "./fractionProblemsSource018Revision";
 import { linearEquationsSource036Sheets } from "./linearEquationsSource036";
 import { basicInequalitiesSource037Sheets } from "./basicInequalitiesSource037";
 import { absoluteValueSource012Sheets } from "./absoluteValueSource012Revision";
@@ -120,6 +122,11 @@ export interface CheatSheet {
   source: string;
 }
 
+const revisedSectionTextByLesson = new Map([
+  ["kesir-problemleri", fractionProblemsSource018SheetText],
+  ["yas-problemleri", ageProblemsSource019SheetText],
+]);
+
 const completeSourceSheets = new Set([
   ...legacy026TheoryIds,
   "turev-teget",
@@ -225,10 +232,12 @@ function lessonSheet(id: string): CheatSheet | undefined {
     reviewed = physicsCheatSheets.find((sheet) => sheet.topicId === topic.id);
   const firstQuestion = lesson.questions[0];
   const complete = completeSourceSheets.has(id);
+  const revisedText = revisedSectionTextByLesson.get(id);
   const sections = guide
     ? guide.sections.map((section) => ({
         title: section.title,
-        text: complete ? section.paragraphs : section.paragraphs.slice(0, 1),
+        text: revisedText?.get(section.title) ??
+          (complete ? section.paragraphs : section.paragraphs.slice(0, 1)),
         table: section.table,
       }))
     : lesson.body.map((section) => ({

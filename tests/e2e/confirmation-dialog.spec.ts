@@ -162,6 +162,8 @@ test("YKS-067 draft replacement cancels exactly, restores focus, and confirms on
     draft: {
       lessonId: history.lessonId,
       phase: "practice",
+      questionCount: 10,
+      reviewId: undefined,
       index: 0,
       responses: [],
       selected: null,

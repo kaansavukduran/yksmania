@@ -1,0 +1,192 @@
+{
+  "kesir-problemleri": [
+    {
+      "id": "kesir-problemleri-011-1",
+      "prompt": "240 sayfalık bir kitabın 7/12'si okunmuştur. Kaç sayfa okunmuştur?",
+      "correct": "140",
+      "selected": 0
+    },
+    {
+      "id": "kesir-problemleri-011-2",
+      "prompt": "Bir miktarın 5/9'u 40'tır. Miktarın tamamı kaçtır?",
+      "correct": "72",
+      "selected": 1
+    },
+    {
+      "id": "kesir-problemleri-011-3",
+      "prompt": "Bir paranın önce 1/5'i, sonra kalanının 3/8'i harcanıyor. 250 TL kaldığına göre başlangıç parası kaç TL'dir?",
+      "correct": "500",
+      "selected": 2
+    },
+    {
+      "id": "kesir-problemleri-011-4",
+      "prompt": "Bir bütçenin başlangıçtaki 1/3'ü ve yine başlangıçtaki 1/4'ü iki ayrı gider için kullanılıyor. 1000 TL kalıyor. Bütçe kaç TL'dir?",
+      "correct": "2400",
+      "selected": 3
+    },
+    {
+      "id": "kesir-problemleri-011-5",
+      "prompt": "Pozitif bir sayının 3/4'ü ile 2/5'i arasındaki fark 42'dir. Sayı kaçtır?",
+      "correct": "120",
+      "selected": 4
+    },
+    {
+      "id": "kesir-problemleri-011-6",
+      "prompt": "Bir değer 360'tan başlayıp önce 1/3 oranında artıyor, sonra yeni değerin 1/4'ü kadar azalıyor. Son değer kaçtır?",
+      "correct": "360",
+      "selected": 0
+    },
+    {
+      "id": "kesir-problemleri-011-7",
+      "prompt": "Bir telin yalnız sol ucundan uzunluğunun 1/5'i kesiliyor. Kalan telin orta noktası 9 cm kayıyor. İlk tel kaç cm'dir?",
+      "correct": "90",
+      "selected": 1
+    },
+    {
+      "id": "kesir-problemleri-011-8",
+      "prompt": "150 soruluk bir setin 2/5'i günde 15 soru, kalan kısmı günde 10 soru çözülerek bitiriliyor. Her gün belirtilen miktar çözülüyor. Toplam kaç gün sürer?",
+      "correct": "13",
+      "selected": 2
+    },
+    {
+      "id": "kesir-problemleri-011-9",
+      "prompt": "Başlangıç parasının 3/4'ü, ardından yine başlangıç parasının 2/3'ü harcanmak isteniyor. Başlangıç para pozitif ve ek para ya da borç yok. Bu plan için ne doğrudur?",
+      "correct": "İstenen toplam harcama başlangıç parasını aşar.",
+      "selected": 3
+    },
+    {
+      "id": "kesir-problemleri-011-10",
+      "prompt": "Bir miktarın önce 1/4'ü, sonra kalanının 2/3'ü kullanılıyor. Başlangıç miktarının kaçta kaçı toplam kullanılmıştır?",
+      "correct": "3/4",
+      "selected": 4
+    },
+    {
+      "id": "kesir-problemleri-018-sifir-kalan-siniri",
+      "prompt": "Başlangıç miktarı N≥0 olan iki ayrı kayıt düşün. İki kayıtta da başlangıç miktarının tamamı kullanılmış. Birinci kayıtta kalan 0, ikinci kayıtta kalan 8 litre yazıyor. Kayıtlar başlangıç miktarını nasıl belirler?",
+      "correct": "Birincide her N≥0 uyumludur. İkincide veriler çelişir.",
+      "selected": 3
+    },
+    {
+      "id": "kesir-problemleri-018-ardisik-ekok-tam-adet",
+      "prompt": "Pozitif sayıda özdeş taşın önce 1/6’sı, sonra kalanın 1/4’ü ayrılıyor. Her iki aşamada ayrılan taş sayısı tam sayıysa en küçük başlangıç adedi kaçtır?",
+      "correct": "24",
+      "selected": 0
+    },
+    {
+      "id": "kesir-problemleri-018-bire-yakin-kesirler",
+      "prompt": "İki eşit büyüklükte kutu sırasıyla 28/29 ve 34/35 oranında dolu. Bir bütüne kalan eksiği kullanarak doğru karşılaştırmayı seç.",
+      "correct": "İkinci kutu daha dolu, çünkü 1/35<1/29.",
+      "selected": 4
+    },
+    {
+      "id": "kesir-problemleri-018-yeni-butun-sabit-pay",
+      "prompt": "14 kırmızı ve 21 beyaz kart bulunan bir kutuya yalnız beyaz kart ekleniyor. Kırmızı kartların bütün kartlara oranının 1/3’e düşmesi için kaç beyaz kart eklenmelidir?",
+      "correct": "7",
+      "selected": 1
+    },
+    {
+      "id": "kesir-problemleri-018-kesirli-sonuc-birim",
+      "prompt": "İki kayıtta da başlangıç miktarının 1/4’ü kullanılmış. İlkinde 7 L su, ikincisinde 7 kapalı kutu kaldığı yazıyor. Kutular bütün olarak kullanılıyor. Hangi değerlendirme doğrudur?",
+      "correct": "Su için başlangıç 28/3 L olabilir. Kutu kaydı tam adet koşuluyla çelişir.",
+      "selected": 2
+    }
+  ],
+  "yas-problemleri": [
+    {
+      "id": "yas-problemleri-011-1",
+      "prompt": "Bugün 24 yaşında olan biri 7 yıl önce kaç yaşındaydı?",
+      "correct": "17",
+      "selected": 0
+    },
+    {
+      "id": "yas-problemleri-011-2",
+      "prompt": "Yaşları bugün 17 ve 29 olan iki kişinin 8 yıl sonraki yaş farkı kaçtır?",
+      "correct": "12",
+      "selected": 1
+    },
+    {
+      "id": "yas-problemleri-011-3",
+      "prompt": "Aynı üç kişinin bugünkü yaş toplamı 54'tür. Beş yıl sonraki yaş toplamı kaçtır?",
+      "correct": "69",
+      "selected": 2
+    },
+    {
+      "id": "yas-problemleri-011-4",
+      "prompt": "Aynı dört kişinin iki yıl önceki yaş ortalaması 16'dır. Bugünkü yaş toplamı kaçtır?",
+      "correct": "72",
+      "selected": 3
+    },
+    {
+      "id": "yas-problemleri-011-5",
+      "prompt": "Bir çocuğun bugünkü yaşı x'tir. Bugün sabit tutulduğunda çocuk 3 yıl daha erken doğmuş olsaydı bugünkü yaşı hangi ifade olurdu?",
+      "correct": "x+3",
+      "selected": 4
+    },
+    {
+      "id": "yas-problemleri-011-6",
+      "prompt": "İki kardeşin bugünkü yaşları 3:5 oranındadır. Dört yıl sonra yaşları 2:3 oranında olacaktır. Küçük kardeş bugün kaç yaşındadır?",
+      "correct": "12",
+      "selected": 0
+    },
+    {
+      "id": "yas-problemleri-011-7",
+      "prompt": "Ada bugün 30, Bora 18 yaşındadır. Ada, Bora'nın bugünkü yaşındayken Bora kaç yaşındaydı?",
+      "correct": "6",
+      "selected": 1
+    },
+    {
+      "id": "yas-problemleri-011-8",
+      "prompt": "Dört yıl önce iki kardeşin yaş toplamı 28'di. Bugün büyük olan diğerinden 6 yaş büyüktür. Büyük kardeş bugün kaç yaşındadır?",
+      "correct": "21",
+      "selected": 2
+    },
+    {
+      "id": "yas-problemleri-011-9",
+      "prompt": "Bugün yaşları 8 ve 14 olan iki kişi için 10 yıl önceki yaşlar aynı iki kişinin doğumdan sonraki yaşları olarak alınabilir mi?",
+      "correct": "Hayır; küçük kişi o tarihte henüz doğmamıştır.",
+      "selected": 3
+    },
+    {
+      "id": "yas-problemleri-011-10",
+      "prompt": "Yaş toplamı bugün 31 olan aynı üç kişinin yaş ortalaması kaç tam yıl sonra ilk kez en az 15 olur?",
+      "correct": "5",
+      "selected": 4
+    },
+    {
+      "id": "yas-problemleri-019-tamamlanan-ve-girilen-yas",
+      "prompt": "21 Eylül 2012’de doğan birinin 5 Haziran 2027’de tamamladığı yaşı ve 2027’de gireceği yaşı sırasıyla kaçtır?",
+      "correct": "14 ve 15",
+      "selected": 2
+    },
+    {
+      "id": "yas-problemleri-019-yeni-uye-yetersiz-veri",
+      "prompt": "Dört kişilik bir ekibin bugünkü yaş toplamı 76. Üç yıl sonra beşinci bir kişi ekibe katılacak. Katılanın o tarihteki yaşı verilmemiştir. Yeni ekibin yaş ortalaması için hangi ifade doğrudur?",
+      "correct": "Katılan z yaşındaysa (88+z)/5’tir. Tek değer bulunamaz.",
+      "selected": 4
+    },
+    {
+      "id": "yas-problemleri-019-iki-tarih-tek-kisi-kosulu",
+      "prompt": "Yıl modelinde 2028’de bir anne ile çocuğu konuşuyor. 2014’te ikisinin yaş toplamı annenin 2028’deki yaşına eşitti. Annenin 1995’teki yaşı çocuğun 2028’deki yaşına eşitti. 2028’deki yaş toplamı ve çocuğun 1995’teki durumu hangisidir?",
+      "correct": "89 ve çocuk henüz doğmamıştı.",
+      "selected": 1
+    },
+    {
+      "id": "yas-problemleri-019-iki-kesin-yas-siniri",
+      "prompt": "A’nın yaşı 2k+1, B’nin yaşı k+7 ve C’nin yaşı 5’tir. B, A’dan büyüktür. A da C’den büyüktür. Pozitif tam sayı k hangi değerleri alabilir?",
+      "correct": "3, 4, 5",
+      "selected": 0
+    },
+    {
+      "id": "yas-problemleri-019-iki-dogum-yonu",
+      "prompt": "İki kişinin gerçek bugünkü yaş oranı 4:7’dir. İlk kişi bir yıl daha erken, ikinci kişi iki yıl daha geç doğmuş olsaydı aynı bugünkü tarih için oran 3:5 olurdu. İkinci kişinin gerçek bugünkü yaşı kaçtır?",
+      "correct": "77",
+      "selected": 3
+    },
+    {
+      "id": "yas-problemleri-019-hizmet-yili-parantez-onar",
+      "prompt": "İki arşiv biriminden eski olan bugün yenisinden 15 yıl daha uzun süredir açık. Üç yıl sonra eskinin hizmet süresi yeninin dört katı olacak. Yeni birimin bugünkü hizmet süresini x seçen biri x+18=4x+3 yazıyor. Doğru çözüm hangisidir?",
+      "correct": "x+18=4(x+3), x=2",
+      "selected": 2
+    }
+  ]
+}

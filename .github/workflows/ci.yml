@@ -25,7 +25,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        shard: [1, 2, 3, 4]
+        group: [functional-1, functional-2, functional-3, functional-4, layout-1, layout-2, layout-3]
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -46,11 +46,20 @@ jobs:
             sleep $((attempt * 20))
           done
           exit 1
-      - run: npm run test:e2e -- --workers=2 --shard=${{ matrix.shard }}/4
+      - name: Run browser tests
+        env:
+          BROWSER_GROUP: ${{ matrix.group }}
+        run: |
+          layout_tests='(figure-overlap-052|lab-overlap-054)\.spec\.ts'
+          if [[ "$BROWSER_GROUP" == layout-* ]]; then
+            npm run test:e2e -- "$layout_tests" --workers=2 --shard="${BROWSER_GROUP#layout-}/3"
+          else
+            npm run test:e2e -- --grep-invert "$layout_tests" --workers=2 --shard="${BROWSER_GROUP#functional-}/4"
+          fi
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         if: failure()
         with:
-          name: browser-test-report-${{ matrix.shard }}
+          name: browser-test-report-${{ matrix.group }}
           path: playwright-report/
   windows:
     needs: [verify, browser]

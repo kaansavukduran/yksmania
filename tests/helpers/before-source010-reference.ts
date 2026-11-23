@@ -6,7 +6,15 @@ const addedIds = new Set(
 );
 const newReferenceId = "2024-TYT-MAT-17";
 const movedReferenceId = "2024-TYT-MAT-3";
-const laterReferences = new Set([newReferenceId, "2023-TYT-MAT-4", "2026-TYT-MAT-2", "2026-TYT-MAT-18"]);
+const laterReferences = new Set([
+  newReferenceId,
+  "2023-TYT-MAT-4",
+  "2026-TYT-MAT-2",
+  "2026-TYT-MAT-18",
+  "2023-TYT-MAT-3",
+  "2023-TYT-MAT-26",
+  "2026-TYT-MAT-21",
+]);
 
 export function beforeCurrentQuestionAdditions<T extends { id: string }>(questions: readonly T[]) {
   return beforeScientificQuestions(questions).filter(({ id }) => !addedIds.has(id));

@@ -21,12 +21,42 @@ const revisions = [
     appendedQuestions: ["kismi-ve-bos-sira", "kalan-ve-baslangic", "iki-sayimla-kullanilmayan", "celisen-kullanim-onar"].map((id) => `sayi-problemleri-017-${id}`),
     oldSource: "MEBİ TYT Matematik Konu Özetleri, basılı s.47 (PDF 49); Aurelia 017 Sayı Problemleri, öğretim s.1–3 ve 5–6. Kaynak kapsamına göre yazılmış özgün anlatım, modeller ve alıştırmalar; resmî ÖSYM sorusu değildir.",
   },
+  {
+    lesson: "kesir-problemleri", topic: "detail-211", sections: 8, examples: 4, recall: 4,
+    appendedQuestions: ["sifir-kalan-siniri", "ardisik-ekok-tam-adet", "bire-yakin-kesirler", "yeni-butun-sabit-pay", "kesirli-sonuc-birim"].map((id) => `kesir-problemleri-018-${id}`),
+    oldSource: "MEBİ TYT Matematik Konu Özetleri, basılı s.48 (PDF 50); Aurelia 018 Kesir Problemleri, öğretim s.1–3 ve 5–6. Özgün açıklama, çubuk modeller ve alıştırmalar; kaynakların resmî arşiv atıfları yeni resmî soru sayılmaz.",
+  },
+  {
+    lesson: "yas-problemleri", topic: "detail-212", sections: 8, examples: 4, recall: 4,
+    appendedQuestions: ["tamamlanan-ve-girilen-yas", "yeni-uye-yetersiz-veri", "iki-tarih-tek-kisi-kosulu", "iki-kesin-yas-siniri", "iki-dogum-yonu", "hizmet-yili-parantez-onar"].map((id) => `yas-problemleri-019-${id}`),
+    oldSource: "MEBİ TYT Matematik Konu Özetleri, basılı s.49 (PDF 51); Aurelia 019 Yaş Problemleri, öğretim s.1–6. Kişi-zaman tabloları ve özgün çözümler esas alındı; resmî kitapçık soruları bu bankaya aktarılmadı.",
+  },
 ];
 
 const additions = new Set(revisions.flatMap(({ appendedQuestions }) => appendedQuestions));
 
 export function beforeSource031Questions<T extends { id: string }>(questions: readonly T[]) {
   return questions.filter(({ id }) => !additions.has(id));
+}
+
+export function beforeSource032Registration(source: string) {
+  const additions = [
+    { prefix: "fractionProblemsSource018", pack: "fractions", source: revisions[3].oldSource },
+    { prefix: "ageProblemsSource019", pack: "ages", source: revisions[4].oldSource },
+  ];
+  for (const addition of additions) {
+    const { prefix, pack } = addition;
+    const names = ["Examples", "Practice", "Recall", "Sections", "Summary"];
+    const imports = names.map((name) => `  ${prefix}${name},\n`).join("");
+    source = source
+      .replace(`import {\n${imports}} from "./${prefix}Revision";\n`, "")
+      .replace(`    ...${prefix}Sections,\n`, "")
+      .replace(`    ...${prefix}Examples,\n`, "")
+      .replace(`    ...${prefix}Recall,\n`, "")
+      .replace(`  source: ${prefix}Summary,\n`, `  source:\n    ${JSON.stringify(addition.source)},\n`)
+      .replace(`    ...(p === ${pack} ? ${prefix}Practice : []),\n`, "");
+  }
+  return source;
 }
 
 export function beforeSource017Registration(source: string) {

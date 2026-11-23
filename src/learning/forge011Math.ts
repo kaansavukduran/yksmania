@@ -1,6 +1,20 @@
 import { txt, type Lesson } from "../domain/model";
 import type { GuideSection, LessonGuide, WorkedExample } from "./guides/types";
 import {
+  ageProblemsSource019Examples,
+  ageProblemsSource019Practice,
+  ageProblemsSource019Recall,
+  ageProblemsSource019Sections,
+  ageProblemsSource019Summary,
+} from "./ageProblemsSource019Revision";
+import {
+  fractionProblemsSource018Examples,
+  fractionProblemsSource018Practice,
+  fractionProblemsSource018Recall,
+  fractionProblemsSource018Sections,
+  fractionProblemsSource018Summary,
+} from "./fractionProblemsSource018Revision";
+import {
   numberProblemsSource017Examples,
   numberProblemsSource017Practice,
   numberProblemsSource017Recall,
@@ -342,6 +356,7 @@ const fractions: Pack = {
       "Bir telin bir ucundan L/5 kesilirse kalan telin orta noktası, kesilen uzunluğun yarısı kadar yer değiştirir: L/10. Eski ve yeni orta noktaları aynı koordinat doğrusu üzerinde yazmak bu sonucu açıklar. Her iki uçtan eşit kesim yapılırsa orta nokta yer değiştirmez; tek uç koşulunu gözden kaçırma.",
       "Bir işin kesirli parçaları farklı hızlarla yapılıyorsa süre=miktar/hız ilişkisiyle her parçanın süresini ayrı hesapla. Örneğin sayfa/(sayfa/gün)=gün olur. Toplam sayfa ile günlük hızı doğrudan toplamak anlamlı değildir. Son aşamada tam sayı adet, pozitiflik, kalanların toplamı ve ilk verilere geri dönüş kontrolünü birlikte yap; kesirleri erken yuvarlamak özellikle ters işlemlerde hatayı büyütür.",
     ),
+    ...fractionProblemsSource018Sections,
   ],
   examples: [
     example(
@@ -396,6 +411,7 @@ const fractions: Pack = {
       "24 cm kesilir; eski orta 48, yeni orta 36 cm'de, fark 12 cm.",
       "Orta noktanın kesilen uzunluğun tamamı kadar kaydığını sanmak.",
     ),
+    ...fractionProblemsSource018Examples,
   ],
   recall: [
     {
@@ -420,6 +436,7 @@ const fractions: Pack = {
       answer:
         "Hayır. Son kalan sıfır birçok başlangıçla uyumludur; sıfır kalan çarpanına bölme yapılamaz.",
     },
+    ...fractionProblemsSource018Recall,
   ],
   questions: [
     problem(
@@ -498,8 +515,7 @@ const fractions: Pack = {
       "Son kalan (3/4)(1/3)=1/4, kullanılan 1−1/4=3/4'tür. İkinci kullanım başlangıcın (2/3)(3/4)=1/2'sidir; 1/4+1/2=3/4. 11/12 iki kesri yanlış tabanda toplar.",
     ),
   ],
-  source:
-    "MEBİ TYT Matematik Konu Özetleri, basılı s.48 (PDF 50); Aurelia 018 Kesir Problemleri, öğretim s.1–3 ve 5–6. Özgün açıklama, çubuk modeller ve alıştırmalar; kaynakların resmî arşiv atıfları yeni resmî soru sayılmaz.",
+  source: fractionProblemsSource018Summary,
 };
 
 const ages: Pack = {
@@ -553,6 +569,7 @@ const ages: Pack = {
       "Bir tabloya her kişi için bugün, istenen geçmiş ve istenen gelecek yaşını yaz. Her sütunda aynı t kaymasını uyguladığında farkların sabitliği görünür olur. Grafikte yaş doğrularının eğimi yılda bir yıldır; aynı ölçek kullanıldığında doğrular paraleldir. Çizimlerin eğimini keyfî farklı çizmek farklı hızla yaşlanma izlenimi yaratmamalıdır.",
       "Sonucun kontrolünde tek oran yetmez: tüm tarihlerde yaşlar mümkün mü, verilen fark korunuyor mu, toplam ve oran doğru sütunda mı? Soruda tam sayı yaş varsayılmışsa parite de iş görür: toplam ve fark aynı paritede olmalı ki (S±d)/2 tam sayı olsun. Tamamlanmış yaş ile kesirli süre modelinin kapsamını birbirine karıştırmadan cevabı kişi ve tarihle birlikte söyle.",
     ),
+    ...ageProblemsSource019Sections,
   ],
   examples: [
     example(
@@ -617,6 +634,7 @@ const ages: Pack = {
       "Aynı üç kişi için toplam yılda 3 artar; t=5 koşulu sağlar, t=4 sağlamaz.",
       "14/3'ü 4'e yuvarlamak veya toplamı yalnız t artırmak.",
     ),
+    ...ageProblemsSource019Examples,
   ],
   recall: [
     {
@@ -640,6 +658,7 @@ const ages: Pack = {
       answer:
         "Her zaman vermez; o yıl doğum gününün geçip geçmediği için ay/gün gerekebilir. Yıl temelli model bu ayrıntıdan ayrılır.",
     },
+    ...ageProblemsSource019Recall,
   ],
   questions: [
     problem(
@@ -718,8 +737,7 @@ const ages: Pack = {
       "31+3t≥45 ⇒ t≥14/3. İlk uygun tam sayı 5'tir; dört yıl sonra 43/3<15, beş yıl sonra 46/3≥15. En az koşulu eşitliği içerir ama 14/3'ü aşağı yuvarlatmaz.",
     ),
   ],
-  source:
-    "MEBİ TYT Matematik Konu Özetleri, basılı s.49 (PDF 51); Aurelia 019 Yaş Problemleri, öğretim s.1–6. Kişi-zaman tabloları ve özgün çözümler esas alındı; resmî kitapçık soruları bu bankaya aktarılmadı.",
+  source: ageProblemsSource019Summary,
 };
 
 const percentages: Pack = {
@@ -1192,6 +1210,8 @@ export const forge011MathLessons: Lesson[] = packs.map((p) => ({
       };
     }),
     ...(p === numbers ? numberProblemsSource017Practice : []),
+    ...(p === fractions ? fractionProblemsSource018Practice : []),
+    ...(p === ages ? ageProblemsSource019Practice : []),
   ],
   source: txt(p.source),
   tags: [p.topic, "Özgün öğretim soruları"],

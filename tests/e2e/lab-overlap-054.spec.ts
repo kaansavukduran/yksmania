@@ -4,6 +4,7 @@ import { lessonGuides } from "../../src/learning/guides";
 import { issueLine, openGuideDrawings, svgLayoutAudit } from "./helpers/svgAudit";
 
 test.use({ locale: "tr-TR", timezoneId: "Europe/Istanbul" });
+test.describe.configure({ mode: "parallel" });
 
 /*
  * Lab layout gate (Forge052/054): on every guide page every visible lab or

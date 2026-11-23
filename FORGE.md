@@ -1,3 +1,9 @@
+# Kesir ve Yaş Problemleri · 0.32.0 adayı
+
+23 Kasım 2026. Kesir Problemleri’nin güncel 10 sayfası ve Yaş Problemleri’nin güncel 14 sayfası önceki sürümleriyle karşılaştırıldı. Kesirlerde ardışık kalan çarpanlarından başlangıcı hesaplama, başlangıcın belirlenemediği sıfır kalan durumları ve tam adet koşulu ayrı örneklerle öğretiliyor. Yaşlarda aynı kişiyi farklı tarihlerde izleme, aileye yeni kişinin katılması, yıl farkı ve tamamlanan yaş için çözümlü örnekler var.
+
+Önceki 20 soru aynı kimlik ve sırayla korunur. Yeni Kesir oturumu 15, yeni Yaş oturumu 16 soru içerir. İki konuya ayrı Kopya Kağıdı bölümleri eklendi. 2023 TYT Temel Matematik 3 ve 26 ile 2026 TYT Temel Matematik 21 asıl kitapçık ve anahtarla doğrulandı. Resmî soru kayıtları Sınavlar’da açılır. Yeni öğretim kartları özgündür.
+
 # Köklü Sayılar, Oran Orantı ve Sayı Problemleri · 0.31.0 adayı
 
 23 Kasım 2026. Güncel üç kaynak 10, 11 ve 9 sayfadır. Köklü Sayılar’da kök simgesi ve kuvvet denklemi aynı ölçekli sayı doğrularında açılır. Oran Orantı’da iki oranı hesaplayabilir ve yuvarlamanın farklı kesirleri aynı gösterebildiğini görebilirsin. Sayı Problemleri’nde farklı öğe adedi ile ağırlıklı toplam kullanım aynı gruplardan hesaplanır. 55 ve 56 kullanım örneği, bir veri değişince çözümün nasıl oluştuğunu gösterir.
@@ -106,7 +112,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
-| TYT Matematik | 40 / 40 | 33 · 111 | 780 / 780 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 7 |
+| TYT Matematik | 40 / 40 | 33 · 111 | 791 / 791 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 7 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 217 / 217 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 177 | 311 / 311 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
@@ -121,14 +127,14 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **505 / 505** | **405 · 1670** | **6.510 / 6.510 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **100** |
+| **Toplam** | **505 / 505** | **405 · 1670** | **6.521 / 6.521 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **100** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
 | Dal kaydında okunan veya eşlenen PDF / arşiv envanteri | 119 / 8.981 · %1,33 |
 | 99_ÖSYM PDF (işlenen / beyan edilen) | 18 / 1.001 · %1,80 |
 | 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 76 |
-| Kademeli çözüm paneli bulunan soru | 6.510 / 6.510 · %100,00 |
+| Kademeli çözüm paneli bulunan soru | 6.521 / 6.521 · %100,00 |
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
 | Ara hatırlama (mikro ritim): ders · soru | 505 / 505 · %100,00 · 3.052 soru |

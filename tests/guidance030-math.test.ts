@@ -25,7 +25,7 @@ import {
 } from "../src/learning/questionHelp";
 import { QuestionHelp } from "../src/components/QuestionHelp";
 import { beforeScientificGuide, beforeScientificLesson } from "./helpers/before-scientific-revision";
-import { beforeSource017Registration, beforeSource031Questions } from "./helpers/before-source031-math";
+import { beforeSource017Registration, beforeSource031Questions, beforeSource032Registration } from "./helpers/before-source031-math";
 
 // This fixture stages only these reviewed rows in the actual resolver. Global
 // runtime registration remains a separate integration gate owned by root.
@@ -148,9 +148,9 @@ describe("030 exact original fifty mathematics problem cards", () => {
     expect(
       createHash("sha256")
         .update(
-          beforeSource017Registration(readFileSync(
+          beforeSource017Registration(beforeSource032Registration(readFileSync(
             new URL("../src/learning/forge011Math.ts", import.meta.url), "utf8",
-          )),
+          ))),
         )
         .digest("hex"),
     ).toBe("ad57626c1a656a535b5cfef559bfd8459969ddaa2a351d8e5099f984130064ea");

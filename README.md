@@ -2,7 +2,7 @@
 
 **Web** 0.26.0, 21 Kasım’da elle başlatılan Pages işiyle yayımlandı. Otomatik Pages yayını aynı kaynaklı tam CI başarısını gerektirir. Masaüstü paketleri GitHub Releases’ta, kişisel Android deneme paketleri ayrı Actions işinde bulunur. Yeni web sürümünü almak için **Ayarlar → Güncelleme** bölümünü kullanabilir veya sayfayı yenileyebilirsin. [Web uygulaması](https://kaansavukduran.github.io/yksmania/) · [Masaüstü yayınları](https://github.com/kaansavukduran/yksmania/releases) · [Sürüm kaydı](docs/RELEASE_ALPHA.md)
 
-**0.31.0 adayı** Köklü Sayılar, Oran Orantı ve Sayı Problemleri’ne üç etkileşimli model, 18 özgün soru ve genişletilmiş Kopya Kağıtları ekliyor. Açık 10 soruluk oturumlar kendi uzunluğuyla devam ediyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+**0.32.0 adayı** Kesir ve Yaş Problemleri’ne iki etkileşimli model, 11 özgün soru ve genişletilmiş Kopya Kağıtları ekliyor. Açık 10 soruluk oturumlar kendi uzunluğuyla devam ediyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 - **Bu daldaki içerik:** 505 hazır konu anlatımı ve 505 konuluk çalışma planı ve 6.492 özgün soru. **Temel İnşa (0. basamak):** isteğe bağlı 25 ön ders (10 TYT dersinin hepsi): TYT Matematik 7 (işlem önceliği, negatif sayılar, kesirler, ondalık, üslü–köklü giriş, harfli ifade ve terazi, alan modeliyle çarpanlara ayırma), Geometri 3 (nokta–doğru–açı, açıölçer ve birimler, üçgen–dörtgen tanıma), Fizik 4 (SI dönüşümleri, bilimsel gösterim, orantı, grafikte eğim ve alan), Kimya 3 (madde sınıfları, hâl değişimi, sembol ve yüzde), Biyoloji 2 (canlı–cansız ve yapı basamakları, mikro–makro ölçek), Türkçe 2 (sözcük–cümle–paragraf, kök–ek ve aktif okuma), Coğrafya (yön, ölçek, koordinat), Tarih (yüzyıl, çağ, MÖ–MS), Felsefe (argüman okuma), Din Kültürü (temel kavram haritası), sayfa sayfa ↔ tümünü gör, dokunulabilir şekil, çözümlü örnek ve özgün kontrol sorularıyla; plana, XP'ye ve tekrar takvimine girmez. Kontrol sorularında yalnız ilk cevap saklanır; bütün kontrolleri ilk denemede doğru çözülen ön dersler “Temel İnşa” kupasına sayılır. Bugün ekranında tek tıkla Akıllı oturum (15/30/60 dk karma pratik, konu etiketi gizli; önce açık hatalar) ve düşük enerjili günler için 5 dk kurtarma; F tuşuyla Zen odak modu. Deneme sonuçlarında soru sırasına göre doğruluk ve +5 Net Pusulası. Konu anlatımlarında “Sayfa sayfa (k/N)” ↔ “Tümünü gör” geçişi ve üstte yapışkan konum çubuğu var. Ders, figür, çözüm paneli ve kaynak sayıları aşağıdaki ilerleme tablosunda bulunur. Figürlerdeki seçilebilir öğelere (ör. inkılap ve Millî Mücadele olayları, su molekülünün bağları) tıklayınca ayrıntı kartı açılır. Her soruda 1–10 tahmini zorluk yıldızı (ders içi eşit dilim) ve Sınavlar'da yıldıza göre alıştırma var. Kupalar (35) özgün SVG amblemli ve bronz/gümüş/altın/platin metalli; doğru, seri, yanlış, onarım, 21. gün mührü ve kupa sesleri cihazda sentezlenir (Ayarlar'dan açılır, ses seviyesi ayarlanır). Birleşik Forge planı: [docs/FORGE_MASTER_PLAN.md](docs/FORGE_MASTER_PLAN.md). Drive kopya kâğıtlarından işlenenler ve sayılar [docs/ISLEME_SAYACI.md](docs/ISLEME_SAYACI.md)'dedir; tüm MEB/OGM/MEBİ PDF'leri ve 20 yıllık ÖSYM arşivi henüz tamamlanmadı.
 - **Görsel kalite:** Figür kiti etiketlerin piksel kutusunu dikeyde de hesaplar (çerçeve dışı etiket 0); eksen sayıları içerik etiketine çarparsa gizlenir. Otomatik yazı çakışma denetimi her yeni figürde 0 bulguyla geçer.
@@ -18,7 +18,7 @@ Tablo, bu daldaki uygulama envanterini ve sürüm kayıtlarını gösterir. PDF 
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
-| TYT Matematik | 40 / 40 | 33 · 111 | 780 / 780 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 7 |
+| TYT Matematik | 40 / 40 | 33 · 111 | 791 / 791 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 7 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 217 / 217 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 177 | 311 / 311 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
@@ -33,14 +33,14 @@ Tablo, bu daldaki uygulama envanterini ve sürüm kayıtlarını gösterir. PDF 
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **505 / 505** | **405 · 1670** | **6.510 / 6.510 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **100** |
+| **Toplam** | **505 / 505** | **405 · 1670** | **6.521 / 6.521 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **100** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
 | Dal kaydında okunan veya eşlenen PDF / arşiv envanteri | 119 / 8.981 · %1,33 |
 | 99_ÖSYM PDF (işlenen / beyan edilen) | 18 / 1.001 · %1,80 |
 | 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 76 |
-| Kademeli çözüm paneli bulunan soru | 6.510 / 6.510 · %100,00 |
+| Kademeli çözüm paneli bulunan soru | 6.521 / 6.521 · %100,00 |
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
 | Ara hatırlama (mikro ritim): ders · soru | 505 / 505 · %100,00 · 3.052 soru |

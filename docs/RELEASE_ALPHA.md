@@ -1,3 +1,11 @@
+# YKSMania 0.32.0 · Kesir ve Yaş Problemleri
+
+Yayın adayı. Kesir Problemleri’nde kalan miktarı ve kalan kesrini değiştirerek başlangıcın bulunup bulunamayacağını inceleyebilirsin. Yaş Problemleri’nde takvimde iki tarih seçip yıl farkını ve tamamlanan yaşı karşılaştırabilirsin. Çizimler hesapla birlikte güncellenir. Model keşfi çalışma puanı üretmez.
+
+Konu anlatımı ve Kopya Kağıtları genişledi. İki konuya 11 yeni özgün soru eklendi. Açık eski 10 soruluk çalışmalar kendi uzunluklarıyla devam eder. [İlerleme tablosu](ILERLEME.md)
+
+---
+
 # YKSMania 0.31.0 · Köklü Sayılar, Oran Orantı ve Sayı Problemleri
 
 Yayın adayı. Köklü Sayılar’da aynı sayı doğrusu ölçeğinde esas kökü ve denklem çözümlerini inceleyebilirsin. Oran Orantı’da iki parçayı değiştirip altın bölmenin iki oranını karşılaştırabilirsin. Sayı Problemleri’nde farklı öğe sayısı ve toplam kullanım için aynı veriyi iki biçimde sayabilirsin.

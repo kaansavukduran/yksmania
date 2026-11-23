@@ -1,7 +1,7 @@
 {
-  "version": "0.31.0",
+  "version": "0.32.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Köklü Sayılar’da kök simgesini ve denklem çözümlerini aynı ölçekli sayı doğrularında karşılaştır. Oran Orantı’da bütünü bölerek iki oranı hesapla. Sayı Problemleri’nde farklı öğe sayısını ve toplam kullanımı denetle. Üç konuda 18 yeni özgün soru var."
+    "tr": "Kesir Problemleri’nde son kalandan başlangıcı hesapla. Yaş Problemleri’nde yıl farkını, doğum gününü ve tamamlanan yaşı aynı takvimde karşılaştır. İki konuya 11 özgün soru, çözümlü örnekler ve yeni Kopya Kağıdı bölümleri eklendi."
   }
 }
