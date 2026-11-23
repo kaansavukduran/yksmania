@@ -1,3 +1,4 @@
+import { countingTopicMap034035, supplementalCountingTopics034035 } from "../data/supplementalCountingTopics034035";
 import { permutationTopicMap032033, supplementalPermutationTopics032033 } from "../data/supplementalPermutationTopics032033";
 import { supplementalTopics040, geometryCircle040TopicMap } from "../learning/geometryCircle040";
 import { supplementalTopics041, areaTransform041TopicMap } from "../data/supplementalTopics041";
@@ -159,6 +160,7 @@ export const studyTopics = [
     ...supplementalTopics040,
     ...supplementalTopics041,
     ...supplementalPermutationTopics032033,
+    ...supplementalCountingTopics034035,
   ].map((topic, i) => ({
     ...topic,
     order: workbookStudyTopics.length + i + 1,
@@ -181,6 +183,7 @@ export const lessonTopic: Record<string, string> = {
   ...sourceMath038TopicMap,
   ...sourceMath039TopicMap,
   ...permutationTopicMap032033,
+  ...countingTopicMap034035,
   ...legacy026Topics,
   ...forge025MathTopics,
   ...forge025ChemistryTopics,

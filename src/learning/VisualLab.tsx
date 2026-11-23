@@ -1,3 +1,4 @@
+import { binomialId, combinationId } from "../data/supplementalCountingTopics034035";
 import { permutationId, repeatedPermutationId } from "../data/supplementalPermutationTopics032033";
 import { geometryExpansion032Ids } from "../data/supplementalTopics032";
 import { geometryCircle040Ids } from "./geometryCircle040";
@@ -158,6 +159,8 @@ const QuarticRoots = lazy(() =>
   })),
 );
 const Forge014Math = lazy(() => import("./Forge014MathLab"));
+const PointChoicesSource034 = lazy(() => import("./PointChoicesSource034Lab").then((module) => ({ default: module.PointChoicesSource034Lab })));
+const SignedBinomialSource035 = lazy(() => import("./SignedBinomialSource035Lab").then((module) => ({ default: module.SignedBinomialSource035Lab })));
 const SeparatedPermutationsSource032 = lazy(() => import("./SeparatedPermutationsSource032Lab").then((module) => ({ default: module.SeparatedPermutationsSource032Lab })));
 const WaypointPathsSource033 = lazy(() => import("./WaypointPathsSource033Lab").then((module) => ({ default: module.WaypointPathsSource033Lab })));
 const Forge014Physics = lazy(() => import("./Forge014PhysicsLab"));
@@ -477,7 +480,11 @@ export function VisualLab({ id }: { id: string }) {
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
       <>
-        {id === permutationId ? (
+        {id === combinationId ? (
+          <section className="forge014-math-lab"><PointChoicesSource034 key={id} /></section>
+        ) : id === binomialId ? (
+          <section className="forge014-math-lab"><SignedBinomialSource035 key={id} /></section>
+        ) : id === permutationId ? (
           <section className="forge014-math-lab"><SeparatedPermutationsSource032 key={id} /></section>
         ) : id === repeatedPermutationId ? (
           <section className="forge014-math-lab"><WaypointPathsSource033 key={id} /></section>

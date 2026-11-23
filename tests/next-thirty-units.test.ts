@@ -77,7 +77,8 @@ it("makes workbook headings 109 through 138 reachable as independent theory, vis
     expect(sheet.lessonId).toBe(lesson.id);
     expect(sheet.sections.length).toBeGreaterThanOrEqual(8);
     expect(sheet.examples.length).toBeGreaterThanOrEqual(4);
-    const sheetText = sheet.sections.flatMap((s) => s.text).join("\n");
+    const earlierSheet = beforeSource031Teaching("sheets", topic.id, sheet) as typeof sheet;
+    const sheetText = earlierSheet.sections.flatMap((s) => s.text).join("\n");
     for (const section of guide.sections)
       for (const paragraph of section.paragraphs)
         expect(sheetText, `${topic.title}: full source coverage`).toContain(

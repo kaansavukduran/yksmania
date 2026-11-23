@@ -1,3 +1,4 @@
+import { combinationReference034, binomialReference035 } from "../learning/countingSources034035Official";
 import { permutationReference032, repeatedPermutationReference033 } from "../learning/permutationSources032033Official";
 import { source031Reference } from "../learning/logicSource031Official";
 import { source030Reference } from "../learning/cartesianSource030Official";
@@ -535,6 +536,8 @@ export const pastExamReferences: PastExamReference[] = [
   source030Reference,
   permutationReference032,
   repeatedPermutationReference033,
+  combinationReference034,
+  binomialReference035,
 ];
 // Selected companion links leave all earlier source records and their topic lists intact.
 const sourceCompanionReferences: Record<string, readonly string[]> = {

@@ -10,7 +10,7 @@ import { builtInCheatSheets } from "../src/learning/cheatsheetContent";
 
 it("appends the new learning records after all earlier topics", () => {
   expect(studyTopics.slice(0, 479)).toEqual(workbookStudyTopics);
-  expect(studyTopics.slice(-2).map(({ id }) => id)).toEqual([`topic-${permutationId}`, `topic-${repeatedPermutationId}`]);
+  expect(studyTopics.slice(505, 507).map(({ id }) => id)).toEqual([`topic-${permutationId}`, `topic-${repeatedPermutationId}`]);
   expect(lessonTopic["tyt-mat-faktoriyel-kaynak-033"]).toBe("topic-tyt-mat-faktoriyel-kaynak-033");
   for (const id of [permutationId, repeatedPermutationId]) {
     const guide = lessonGuides.get(id)!;

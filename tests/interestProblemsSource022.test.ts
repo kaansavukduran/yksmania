@@ -14,6 +14,7 @@ import { lessonTopic } from "../src/domain/studyPlan";
 import { builtInCheatSheets } from "../src/learning/cheatsheetContent";
 import { lessonGuides } from "../src/learning/guides";
 import { resolveGuideStep } from "../src/learning/guides/position";
+import { beforeScientificGuide } from "./helpers/before-scientific-revision";
 import { examTeachingCases } from "../src/learning/pastExamCases";
 import {
   helpPanels,
@@ -44,7 +45,7 @@ it("adds a distinct quick sheet after the original guide and preserves question 
   expect(lessonTopic[id]).toBe(topic);
   expect(sheet.lessonId).toBe(id);
   expect(guide.sections).toHaveLength(14);
-  expect(guide.examples).toHaveLength(6);
+  expect(guide.examples).toHaveLength(7);
   expect(guide.recall).toHaveLength(7);
   expect(guide.source).toContain("içerik 1.2");
   expect(sheet.sections).toHaveLength(14);
@@ -53,7 +54,7 @@ it("adds a distinct quick sheet after the original guide and preserves question 
   ).toEqual([3, 2]);
   expect(sheet.sections[8].text[0]).toContain("ay/12");
   expect(sheet.sections[8].text).not.toEqual(guide.sections[8].paragraphs);
-  expect(digest(guide.sections.slice(0, 8))).toBe(
+  expect(digest(beforeScientificGuide(guide).sections)).toBe(
     "92fb684e6ece0bad2327045e1b56ed39adeca9dd7379d1847f0d06be008f9fef",
   );
   expect(digest(guide.examples.slice(0, 4))).toBe(
@@ -76,6 +77,7 @@ it("adds a distinct quick sheet after the original guide and preserves question 
   expect(guide.examples.slice(4).map(({ answer }) => answer)).toEqual([
     "İlk borç 8.000 TL.",
     "Son parça 4 ay kalmalı.",
+    "Basit artış %16, bileşik artış %16,64.",
   ]);
   expect(JSON.stringify({ guide, lesson, sheet })).not.toMatch(
     /drive\.google\.com|1XIqfvG/,

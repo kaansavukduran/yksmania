@@ -190,7 +190,7 @@ export const mixtureProblemsSource023Examples: WorkedExample[] = [
     check:
       "200 g’ın %12’si 24 g. 50 g saf şeker eklenseydi (24+50)/200=%37 olurdu.",
     pitfall:
-      "Şekerun kütlesi sabit kaldığı için yüzdesinin de sabit kalacağını düşünmek.",
+      "Şekerin kütlesi sabit kaldığı için yüzdesinin de sabit kalacağını düşünmek.",
   },
   {
     title: "Gramla verilen kütleyi fiyat hesabına kat",
@@ -353,7 +353,7 @@ export const mixtureProblemsSource023Practice: Question[] = [
       "%31,25, %25 ve %25",
     ],
     answer: 1,
-    hint: "Üç kapta da ilk şeker miktarı aynı. Her işlemde şekerin da çıkıp çıkmadığını ve son toplamı ayrı yaz.",
+    hint: "Üç kapta da ilk şeker miktarı aynı. Her işlemde şekerin de çıkıp çıkmadığını ve son toplamı ayrı yaz.",
     guidance: {
       knowledge: [
         "Yalnız su uçunca şeker korunur. Homojen dökülen kısım da ilk karışımın şeker yüzdesini taşır.",

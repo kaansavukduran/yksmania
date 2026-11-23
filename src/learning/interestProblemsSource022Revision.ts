@@ -39,7 +39,7 @@ export const interestProblemsSource022Sections: GuideSection[] = [
   {
     title: titles.compare,
     paragraphs: [
-      "Aynı anapara ve zaman için F₁/F₂=r₁/r₂ eşitliği, ortak P·t ve paydadaki F₂ sıfır değilse kullanılabilir. P veya t değişirse oranların yanında değişen çarpanları da tut. Aynı anapara için süreler farklıysa getirilerin oranı r₁t₁/(r₂t₂) olur.",
+      "Aynı anapara ve zaman için F₁/F₂=r₁/r₂ eşitliği, ortak P·t ve paydadaki F₂ sıfır değilse kullanılabilir. P veya t değişirse oranların yanında değişen çarpanları da tut. Aynı pozitif anapara için süreler farklıysa ve r₂t₂≠0 ise getirilerin oranı r₁t₁/(r₂t₂) olur.",
       "Aynı P ve t ile oran farkı biliniyorsa iki denklemi çıkarabilirsin. F₁−F₂=P·t·(r₁−r₂). İkinci getiri sıfır olsa bile bu eşitlik geçerlidir. Örneğin 18 ayda iki faiz 156 ve 0 TL, oran farkı 4 yüzde puansa P=156/(1,5·0,04)=2.600 TL.",
     ],
   },
@@ -83,7 +83,7 @@ export const interestProblemsSource022Sections: GuideSection[] = [
   {
     title: titles.lastMethods,
     paragraphs: [
-      "Bir para iki kola ayrıldığında getirileri topla. Aynı para ardışık dönemlere giriyorsa her dönemin tabanını izle.",
+      "Bir para iki kola ayrıldığında getirileri topla. Aynı para ardışık dönemlere giriyorsa her dönemin tabanını izle. P>0 için toplam büyüme yüzdesi 100·(S/P−1). S/P son bakiye çarpanıdır. Örneğin 1,1664 çarpanı %116,64 son tutarı ve %16,64 artışı gösterir.",
     ],
     table: {
       headers,
@@ -143,7 +143,7 @@ export const interestProblemsSource022SheetText = new Map<string, string[]>([
   [
     titles.lastMethods,
     [
-      "Ayrı kolların getirilerini topla. Faiz yeniden işletiliyorsa dönem çarpanlarını sırayla uygula.",
+      "Ayrı kolların getirilerini topla. Faiz yeniden işletiliyorsa dönem çarpanlarını sırayla uygula. P>0 için tüm dönemin yüzde artışı 100·(S/P−1). Yıllık %8 ile iki yıl basit %16, bileşik %16,64.",
     ],
   ],
 ]);
@@ -203,6 +203,19 @@ export const interestProblemsSource022Examples: WorkedExample[] = [
     check: "120+120+6.000·0,02·4=720 TL. Bütün anaparalar 12.000 TL.",
     pitfall:
       "Aylık %2’nin zamanını yıl cinsinden yazarak son kolun getirisini küçültmek.",
+  },
+  {
+    title: "İki yıllık faizle toplam yüzde artışını bul",
+    prompt: "Başlangıç parası pozitif. Aynı yıllık %8 oranla iki yıl sonunda basit faiz ve her yıl yeniden yatırılan faiz, parayı toplam yüzde kaç artırır?",
+    strategy: "İki modelin son bakiye çarpanını yaz. Her çarpandan başlangıç payı olan 1’i çıkar.",
+    steps: [
+      { label: "Basit model", expression: "S/P=1+2·0,08=1,16", explanation: "İki yılın faizi aynı anaparaya göre eklenir." },
+      { label: "Bileşik model", expression: "S/P=(1,08)²=1,1664", explanation: "İkinci yıl, ilk yılın faizini içeren bakiye üzerinden hesaplanır." },
+      { label: "Artış yüzdesi", expression: "100·(1,16−1)=16, 100·(1,1664−1)=16,64", explanation: "Çıkarılan 1 başlangıç parasının tamamına karşılık gelir." },
+    ],
+    answer: "Basit artış %16, bileşik artış %16,64.",
+    check: "10.000 TL ile son tutarlar 11.600 ve 11.664 TL. Başlangıcın üzerindeki 1.600 ve 1.664 TL, %16 ve %16,64 artıştır.",
+    pitfall: "Son bakiye başlangıcın %116,64’ü olduğunda artışı %116,64 diye yazmak.",
   },
 ];
 

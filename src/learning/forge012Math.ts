@@ -97,7 +97,7 @@ const packs: Pack[] = [
       {
         title: "Aynı para ve aynı süre varsa ortak çarpan sadeleşir",
         paragraphs: [
-          "İki senaryoda aynı anapara ve aynı süre kullanılmışsa F₁/F₂=r₁/r₂ olur. Örneğin aynı P için bir yılda %8 ve %12 getirilerinin oranı 2/3’tür. Burada sadeleşen P·t çarpanının gerçekten ortak olduğunu cümleden doğrulaman gerekir.",
+          "İki senaryoda aynı anapara ve aynı süre kullanılmışsa ve F₂≠0 ise F₁/F₂=r₁/r₂ olur. Örneğin aynı P için bir yılda %8 ve %12 getirilerinin oranı 2/3’tür. Burada sadeleşen P·t çarpanının gerçekten ortak olduğunu cümleden doğrulaman gerekir.",
           "Farklı miktarlar veya farklı bekleme süreleri varsa yalnız oranları karşılaştırmak yetmez. 3000 TL’nin %8 ile yarım yıllık getirisi 120 TL, 2000 TL’nin %6 ile bir yıllık getirisi de 120 TL’dir. Büyük yüzde tek başına büyük getiri kanıtı değildir; P, r ve t birlikte etkilidir.",
         ],
       },
@@ -378,7 +378,7 @@ const packs: Pack[] = [
       {
         title: "Yalnız su buharlaşıyorsa çözünen korunur",
         paragraphs: [
-          "Buharlaşan yalnız su, izlenen tuz uçucu değil ve başka kayıp yoksa tuz kütlesi sabit kalır. Yeni hedef yüzde p için son toplam Tson=100 S/p bulunur. Başlangıç toplamından bunu çıkarınca kaybolan su miktarı elde edilir.",
+          "Buharlaşan yalnız su, izlenen tuz uçucu değil ve başka kayıp yoksa tuz kütlesi sabit kalır. Tuz miktarı S>0 ve hedef yüzde p>0 ise son toplam Tson=100 S/p olur. Kaybolan su T−Tson, 0 ile başlangıç suyu T−S arasında kalmalı ve son toplam pozitif olmalı. Modelde p=0, pozitif miktarda tuz korunurken elde edilemez.",
           "120 gram %20 tuzlu karışımda 24 gram tuz vardır. Yalnız su uçup oran %30 olunca son toplam 24/0,30=80 gram, uçan su 40 gramdır. 40 gramın başlangıçtaki 96 gram sudan az olduğunu kontrol et. Kaybolan karışımı homojen dökmeyle karıştırma; dökülürken tuz da gider.",
         ],
       },

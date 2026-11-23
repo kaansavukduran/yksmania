@@ -14,6 +14,7 @@ import { lessonTopic } from "../src/domain/studyPlan";
 import { builtInCheatSheets } from "../src/learning/cheatsheetContent";
 import { lessonGuides } from "../src/learning/guides";
 import { resolveGuideStep } from "../src/learning/guides/position";
+import { beforeScientificGuide } from "./helpers/before-scientific-revision";
 import { examTeachingCases } from "../src/learning/pastExamCases";
 import {
   helpPanels,
@@ -53,7 +54,7 @@ it("adds a distinct quick sheet after the original guide and preserves question 
   ).toEqual([3, 3, 3]);
   expect(sheet.sections[8].text[0]).toContain("Yalnız su kaybında");
   expect(sheet.sections[8].text).not.toEqual(guide.sections[8].paragraphs);
-  expect(digest(guide.sections.slice(0, 8))).toBe(
+  expect(digest(beforeScientificGuide(guide).sections)).toBe(
     "699ab2fdc2099f53b182bc0cac793887bd8837e7e83629d5e5c22458dc8ce28e",
   );
   expect(digest(guide.examples.slice(0, 4))).toBe(

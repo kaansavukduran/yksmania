@@ -417,9 +417,11 @@ async function open(page, navigate, unit) {
   await entry.click();
   const lab = page.locator(unit.selector);
   await expect(lab).toBeVisible();
-  await expect(
-    page.locator(".guide-section").first().locator(unit.selector),
-  ).toBeVisible();
+  const sections = page.locator(".guide-section");
+  const expectedSection = unit.sectionTitle
+    ? sections.filter({ has: page.getByRole("heading", { name: unit.sectionTitle, exact: true }) })
+    : sections.first();
+  await expect(expectedSection.locator(unit.selector)).toBeVisible();
   await expect(page.locator('input[type="file"]')).toHaveCount(0);
   return lab;
 }

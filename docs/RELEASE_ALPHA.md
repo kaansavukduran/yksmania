@@ -1,3 +1,11 @@
+# YKSMania 0.40.0 · Kombinasyon ve Binom Açılımı
+
+Yayın adayı.
+
+- Kombinasyon’da noktaları seç, aynı doğru üzerindeki üçlüleri ve aynı doğruyu belirleyen çiftleri incele.
+- Binom Açılımı’nda parantezin üssünü ve içindeki iki terimi değiştir. Pascal satırı, birleşen terimler ve işaretli katsayı grafiği birlikte güncellenir.
+- İki ders 16 özgün soru, altı çözümlü örnek ve ayrı Kopya Kağıtları içerir. Faiz’de iki yıllık toplam artışı hesaplayan örnek, Karışım’da su kaybının koşulları eklenmiştir. [İlerleme tablosu](ILERLEME.md)
+
 # YKSMania 0.39.0 · Permütasyon ve Tekrarlı Permütasyon
 
 - Kişi sayısını ve oturma biçimini değiştir. İki özel kişinin yan yana oturmadığı düzenleri çizimde ve hesapta karşılaştır.

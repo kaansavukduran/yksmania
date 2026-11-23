@@ -1,8 +1,8 @@
 {
-  "version": "0.39.0",
+  "version": "0.40.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Permütasyon ve Tekrarlı Permütasyon dersleri eklendi. Oturma biçimini ve özel kişi sayısını değiştir, seçilen duraktan geçen rotaları izle. İki konu özgün sorular ve ayrı Kopya Kağıtları içeriyor.",
-    "en": "Permutation and repeated permutation lessons add configurable seating and waypoint path diagrams, original questions, and separate cheat sheets."
+    "tr": "Kombinasyon ve Binom Açılımı dersleri eklendi. Nokta seçerek üçgenleri ve doğruları say, Pascal satırını ve işaretli katsayıları değiştir. Özgün sorular ve ayrı Kopya Kağıtları çevrimdışı kullanılabilir.",
+    "en": "Combination and binomial expansion lessons include interactive point and signed coefficient diagrams, original questions, and separate cheat sheets."
   }
 }

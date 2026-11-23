@@ -1,3 +1,4 @@
+import { countingSheets034035 } from "./countingSources034035";
 import { permutationSheets032033 } from "./permutationSources032033";
 import { logicSource031SheetText } from "./logicSource031Revision";
 import { cartesianSource030SheetText } from "./cartesianSource030Revision";
@@ -367,5 +368,6 @@ export const builtInCheatSheets = new Map<string, CheatSheet>(
   ...powersSource039Sheets,
     ...geometryCircle040Sheets,
     ...permutationSheets032033,
+    ...countingSheets034035,
   ].map((sheet) => [sheet.topicId, sheet]),
 );

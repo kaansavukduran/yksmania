@@ -1,3 +1,9 @@
+# Kombinasyon ve Binom Açılımı · 0.40.0 adayı
+
+23 Kasım 2026. Güncel iki kaynağın 12’şer sayfası metin ve görsel olarak incelendi. Kombinasyon’da zorunlu, yasak ve en az seçim koşulları ile üçgen, doğru ve köşegen sayıları işlendi. Binom’da Pascal satırı ve toplamı, terim sırası, işaret, sabit terim ve tek-çift katsayı toplamları anlatılıyor. Nokta seçimi ve katsayı grafiği değişen matematikten çizilir.
+
+İki ayrı konu önceki plan sırasına eklendi. Altı çözümlü örnek, 16 özgün soru, sekiz hatırlama ve ayrı Kopya Kağıtları var. 2022 AYT Matematik 13 ve 14, asıl fiziksel 29. sayfa ve anahtar 50. sayfa ile doğrulandı. Faiz’e toplam yüzde artışı, Karışım’a buharlaşma denkleminde pozitif payda ve kütle sınırları eklendi.
+
 # Permütasyon ve Tekrarlı Permütasyon · 0.39.0 adayı
 
 23 Kasım 2026. İki güncel kaynağın 12’şer sayfası metin ve görsel olarak incelendi. Permütasyon dersi sıralı seçim, blok, boşluk, baş sıfır ve numaralı koltukları öğretiyor. Tekrarlı Permütasyon dersi özdeş kopyalar, ilk ve son basamak, zorunlu durak ve ayrı rota örneklerini işliyor.
@@ -160,7 +166,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
-| TYT Matematik | 42 / 42 | 33 · 111 | 884 / 884 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 9 |
+| TYT Matematik | 44 / 44 | 33 · 111 | 900 / 900 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 11 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 217 / 217 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 177 | 311 / 311 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
@@ -175,20 +181,20 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **507 / 507** | **405 · 1670** | **6.614 / 6.614 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **102** |
+| **Toplam** | **509 / 509** | **405 · 1670** | **6.630 / 6.630 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **104** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
 | Dal kaydında okunan veya eşlenen PDF / arşiv envanteri | 119 / 8.981 · %1,33 |
 | 99_ÖSYM PDF (işlenen / beyan edilen) | 18 / 1.001 · %1,80 |
 | 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 76 |
-| Kademeli çözüm paneli bulunan soru | 6.614 / 6.614 · %100,00 |
+| Kademeli çözüm paneli bulunan soru | 6.630 / 6.630 · %100,00 |
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
-| Ara hatırlama (mikro ritim): ders · soru | 505 / 507 · %99,61 · 3.052 soru |
+| Ara hatırlama (mikro ritim): ders · soru | 505 / 509 · %99,21 · 3.052 soru |
 | Gösterim onarımı: soru alanı · ders paragrafı | 962 · 1.634 |
 | Kopya kâğıdı (kısmi aktarım / toplam) | 109 / 517 · %21,08 |
-| Resmî ana başlık · anlatımlı konu · hazır anlatım | 341 · 507 · 507 |
+| Resmî ana başlık · anlatımlı konu · hazır anlatım | 341 · 509 · 509 |
 | İleri ve kaynak soru seti (anlatımı ana konusunda) | 35 |
 <!-- ilerleme:bitir -->
 

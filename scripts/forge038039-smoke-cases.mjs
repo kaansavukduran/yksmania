@@ -26,12 +26,12 @@ const learning = (s) => ({
   focusTimer: s.focusTimer,
 });
 
-export async function assertForge038039ProcessRestart(page, navigate, snapshots) {
+export async function assertForge038039ProcessRestart(page, navigate, snapshots, cases = forge038039SmokeCases) {
   expect(snapshots).toHaveLength(2);
   expect(new Set(snapshots.map((snapshot) => snapshot.id)).size).toBe(2);
   const before = learning(await readState(page));
   for (const snapshot of snapshots) {
-    const unit = forge038039SmokeCases.find((item) => item.id === snapshot.id);
+    const unit = cases.find((item) => item.id === snapshot.id);
     expect(unit).toBeTruthy();
     expect(snapshot.storedKey).toBe(unit.storedKey);
     expect((await readState(page)).explorations[snapshot.storedKey]).toEqual(

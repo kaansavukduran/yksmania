@@ -167,6 +167,22 @@ function historicalConditionalText(text: string) {
     .replace(expandedConditionalSentence, oldConditionalSentence);
 }
 
+function historicalProblemText(lesson: string, text: string) {
+  if (lesson === "faiz-problemleri") {
+    return text.replace(
+      "İki senaryoda aynı anapara ve aynı süre kullanılmışsa ve F₂≠0 ise F₁/F₂=r₁/r₂ olur.",
+      "İki senaryoda aynı anapara ve aynı süre kullanılmışsa F₁/F₂=r₁/r₂ olur.",
+    );
+  }
+  if (lesson === "karisim-problemleri") {
+    return text.replace(
+      "Tuz miktarı S>0 ve hedef yüzde p>0 ise son toplam Tson=100 S/p olur. Kaybolan su T−Tson, 0 ile başlangıç suyu T−S arasında kalmalı ve son toplam pozitif olmalı. Modelde p=0, pozitif miktarda tuz korunurken elde edilemez.",
+      "Yeni hedef yüzde p için son toplam Tson=100 S/p bulunur. Başlangıç toplamından bunu çıkarınca kaybolan su miktarı elde edilir.",
+    );
+  }
+  return text;
+}
+
 export function beforeSource031Teaching(
   surface: "lessons" | "questions" | "guides" | "sheets",
   id: string,
@@ -174,12 +190,13 @@ export function beforeSource031Teaching(
 ): unknown {
   const prior = revisions.find((revision) => (surface === "sheets" ? revision.topic : revision.lesson) === id);
   if (!prior || !value) return value;
+  const repairedProblem = prior.lesson === "faiz-problemleri" || prior.lesson === "karisim-problemleri";
   if (surface === "lessons") {
     const lesson = value as Lesson;
     const body = lesson.body.slice(0, prior.sections).map((section) => (
       prior.lesson === "mantik-onerme" && section.title.tr === expandedConditionalTitle
         ? { title: txt(oldConditionalTitle), text: txt(historicalConditionalText(section.text.tr)) }
-        : section
+        : repairedProblem ? { ...section, text: txt(historicalProblemText(prior.lesson, section.text.tr)) } : section
     ));
     return { ...lesson, body, questions: beforeSource031Questions(lesson.questions), source: txt(prior.oldLessonSource ?? prior.oldSource) };
   }
@@ -190,7 +207,7 @@ export function beforeSource031Teaching(
       sections: guide.sections.slice(0, prior.sections).map((section) => (
         prior.lesson === "mantik-onerme" && section.title === expandedConditionalTitle
           ? { title: oldConditionalTitle, paragraphs: section.paragraphs.map(historicalConditionalText) }
-          : section
+          : repairedProblem ? { ...section, paragraphs: section.paragraphs.map((text) => historicalProblemText(prior.lesson, text)) } : section
       )),
       examples: guide.examples.slice(0, prior.examples),
       recall: guide.recall.slice(0, prior.recall),
@@ -204,7 +221,7 @@ export function beforeSource031Teaching(
       sections: sheet.sections.slice(0, prior.sections).map((section) => (
         prior.lesson === "mantik-onerme" && section.title === expandedConditionalTitle
           ? { ...section, title: oldConditionalTitle, text: section.text.map(historicalConditionalText) }
-          : section
+          : repairedProblem ? { ...section, text: section.text.map((text) => historicalProblemText(prior.lesson, text)) } : section
       )),
       examples: sheet.examples.slice(0, prior.examples),
       cautions: sheet.cautions.slice(0, prior.examples),
