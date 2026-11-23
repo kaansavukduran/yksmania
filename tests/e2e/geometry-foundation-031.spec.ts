@@ -55,6 +55,24 @@ async function open(page: Page, id: string) {
   await expect(page.locator('input[type="file"]')).toHaveCount(0);
   return lab;
 }
+const triangleChapterFigure =
+  '[data-section-figure="Üç köşe bir üçgeni nasıl oluşturur?"] svg';
+
+async function vertexDragCoordinates(vertex: Locator) {
+  return vertex.evaluate((node: SVGCircleElement) => {
+    const matrix = node.getScreenCTM();
+    if (!matrix) throw new Error("The drag handle is outside the rendered SVG");
+    const section = node.closest(".guide-section");
+    if (!section) throw new Error("The drag handle is outside the lesson section");
+    const start = new DOMPoint(node.cx.baseVal.value, node.cy.baseVal.value);
+    const target = new DOMPoint(450, 130);
+    return {
+      start: start.matrixTransform(matrix).toJSON(),
+      target: target.matrixTransform(matrix).toJSON(),
+      offset: matrix.f - section.getBoundingClientRect().top,
+    };
+  });
+}
 async function range(lab: Locator, name: string, target: number) {
   const input = lab.getByRole("slider", { name, exact: true });
   const min = Number(await input.getAttribute("min")),
@@ -265,20 +283,14 @@ test("dragging a real vertex has keyboard equivalents, ends cleanly, and survive
   await page.goto("/#/settings");
   await setThemePreference(page, "dark");
   const lab = await open(page, "ucgende-acilar");
+  await expect(page.locator(triangleChapterFigure)).toBeVisible();
   const before = learning(await stored(page));
   const vertex = lab.getByTestId("g031-drag-vertex");
   await vertex.scrollIntoViewIfNeeded();
-  const hit = await vertex.boundingBox(),
-    figure = await lab.locator("svg").boundingBox();
-  expect(hit).toBeTruthy();
-  expect(figure).toBeTruthy();
-  await page.mouse.move(hit!.x + hit!.width / 2, hit!.y + hit!.height / 2);
+  const { start, target } = await vertexDragCoordinates(vertex);
+  await page.mouse.move(start.x, start.y);
   await page.mouse.down();
-  await page.mouse.move(
-    figure!.x + (figure!.width * 450) / 640,
-    figure!.y + (figure!.height * 130) / 570,
-    { steps: 12 },
-  );
+  await page.mouse.move(target.x, target.y, { steps: 12 });
   await page.mouse.up();
   await expect(
     lab.getByRole("slider", { name: "C köşesinin yatay konumu", exact: true }),
@@ -301,6 +313,46 @@ test("dragging a real vertex has keyboard equivalents, ends cleanly, and survive
   ).toHaveValue("-2");
   expect(learning(await stored(page))).toEqual(before);
   expect(errors).toEqual([]);
+});
+test("a delayed lesson figure keeps the triangle lab in place during a drag", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1280, height: 1200 });
+  let resumeFigure: () => void = () => {};
+  const figurePaused = new Promise<void>((resolve) => {
+    resumeFigure = resolve;
+  });
+  let figureRequested = false;
+  await page.route("**/assets/registry-*.js", async (route) => {
+    figureRequested = true;
+    await figurePaused;
+    await route.continue();
+  });
+  try {
+    const lab = await open(page, "ucgende-acilar");
+    const chapterFigure = page.locator(triangleChapterFigure);
+    await expect.poll(() => figureRequested).toBe(true);
+    await expect(chapterFigure).toHaveCount(0);
+    const vertex = lab.getByTestId("g031-drag-vertex");
+    await vertex.scrollIntoViewIfNeeded();
+    const before = await vertexDragCoordinates(vertex);
+    await page.mouse.move(before.start.x, before.start.y);
+    await page.mouse.down();
+    resumeFigure();
+    await expect(chapterFigure).toBeVisible();
+    const after = await vertexDragCoordinates(vertex);
+    await page.mouse.move(before.target.x, before.target.y, { steps: 12 });
+    await page.mouse.up();
+    expect(Math.abs(after.offset - before.offset)).toBeLessThan(1);
+    await expect(
+      lab.getByRole("slider", { name: "C köşesinin yatay konumu", exact: true }),
+    ).toHaveValue("10");
+    await expect(
+      lab.getByRole("slider", { name: "C köşesinin yüksekliği", exact: true }),
+    ).toHaveValue("8");
+  } finally {
+    resumeFigure();
+  }
 });
 test("geometry labels and controls remain readable at 320px with maximum interface and text scales", async ({
   page,

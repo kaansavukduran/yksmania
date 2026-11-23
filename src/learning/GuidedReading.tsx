@@ -157,6 +157,9 @@ export function GuidedReading({
   // Geometry starts with the manipulable figure, so the first page explains
   // the shape the learner is looking at; other models follow the first page.
   const visualSection = visualFirstLessonIds.has(guide.id) ? 0 : 1;
+  // A separately loaded section figure must not move the geometry controls.
+  const labBeforeSectionFigure = geometryFoundation031Ids.some((id) => id === guide.id);
+  const visualLab = !geometryCircle040Ids.includes(guide.id) && <VisualLab id={guide.id} />;
   const pageId = (i: number) =>
     i < guide.sections.length
       ? `${prefix}-${i}`
@@ -401,13 +404,14 @@ export function GuidedReading({
                   </table>
                 </div>
               )}
+              {i === visualSection && labBeforeSectionFigure && visualLab}
               {sectionFigureGuideIds.has(guide.id) && (
                 <Suspense fallback={null}>
                   <SectionFigure guideId={guide.id} title={section.title} />
                 </Suspense>
               )}
               <SectionPlaces text={[section.title, ...section.paragraphs].join(" ")} />
-              {i === visualSection && !geometryCircle040Ids.includes(guide.id) && <VisualLab id={guide.id} />}
+              {i === visualSection && !labBeforeSectionFigure && visualLab}
               {checks
                 .filter((check) => check.after === i)
                 .map((check) => (
