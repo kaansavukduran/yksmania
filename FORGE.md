@@ -1,3 +1,9 @@
+# Eş dönüşlerin çizimleri · 0.45.0 adayı
+
+Doğruda Açılar’da 2024 TYT Temel Matematik 31 ile ilişkilendirilen özgün örnek, dik köşeyi ve iki eş dış parçayı başta gösterir. İlk adım tam turun sekiz eş aralığını, ikinci adım aradaki dönüşü ve son adım derece hesabını açar. 2024 TYT kitapçığındaki fiziksel 34. sayfa ve fiziksel 43. sayfadaki D anahtarı resmî kayıt olarak görünür.
+
+320 pikselde, %200 arayüz ve %150 yazıyla çevrimdışı gerçek soru sayfası sınandı. İlk denemede çözüm metni şeklin altında ikinci kez görünüyordu. Açıklama ekran okuyucuya bağlı kaldı, tekrar kaldırıldı. Daraltılan tam tur çiziminde 45° etiketi çerçeveyi aştı. Etikete yeterli alan verildi ve aynı sınır denetimi geçti. Çizimleri klavyeyle açmak ve yeniden düşünmek öğrenme kayıtlarını değiştirmedi.
+
 # ÖSYM Mania kimliği
 
 Öğrencinin gördüğü ad, tarayıcı başlığı ve kurulabilir web uygulamasının adı ÖSYM Mania. Sol üstteki Aion yüzü, projedeki onaylı pembe aksolotl referansından çizildi. Aynı çizim tarayıcı simgesine ve 192/512 piksel kurulum simgelerine kaynak olur. Kırpılabilir simge, solungaçları güvenli alanda tutar. Ayarlar’daki Hakkında alanında Fragaria Interactive imzası görünür.

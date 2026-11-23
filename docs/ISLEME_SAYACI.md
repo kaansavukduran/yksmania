@@ -2,7 +2,17 @@
 
 Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış işi gösterir; bir PDF'nin okunması, uygulamadaki içeriğin o PDF'yi tamamen kapsadığı anlamına gelmez.
 
-23 Kasım Drive taramasında 9.984 benzersiz fiziksel PDF listelendi. Son kanonik envanterdeki 8.981 kimliğin tamamı görüldü, 1.003 yeni kimlik ve 320 değişmiş sürüm bilgisi kaydedildi. Yeni 99_ÖSYM alt ağacında 1.002 fiziksel PDF var. Kanonik defter tarihsel sürümlerde 7 tam ve 2 kısmi öğretim aktarımı ile 8.972 belirsiz kayıt içeriyor. Tam aktarım kaydı olan yedi dosyanın güncel boyutu kapanış kanıtındaki boyuttan farklı. Güncel tam aktarım sayısı belirsiz.
+23 Kasım 2026 saat 13.37 UTC’de 258 klasörün sayfalaması tamamlandı. Güncel kanonik envanterde 9.984 benzersiz fiziksel PDF var. 99_ÖSYM alt ağacındaki 1.002 PDF bu toplamın içinde. Önceki envanterden 1.003 yeni kimlik ve 320 değişmiş dosya bilgisi işlendi. Tarihsel yedi tam aktarım kendi sürümünün kanıtıyla saklandı ve değişen sürümler yeniden incelemeye açıldı.
+
+| Güncel sürüm için defterdeki durum | PDF |
+| --- | ---: |
+| Tam aktarımı doğrulanan | 0 |
+| Kısmi aktarımı doğrulanan | 2 |
+| İşlenmediği doğrulanan | 0 |
+| Belirsiz | 9.982 |
+| Toplam | 9.984 |
+
+Tam aktarımı doğrulanan satır sayısı şu anda sıfır. Arşivde gerçekte kaç PDF’nin tam işlendiği belirsiz. Bu envanter güncellemesi yeni sayfa okuma veya öğretim aktarımı kaydetmedi.
 
 ## Açı ve kenar koşulları · 23 Kasım 2026
 

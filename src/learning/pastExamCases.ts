@@ -8,12 +8,17 @@ import { source031TeachingCase } from "./logicSource031Official";
 import { source030TeachingCase } from "./cartesianSource030Official";
 import { source028TeachingCase } from "./factorizationSource028Official";
 import { source029TeachingCase } from "./setsSource029Official";
+import type { SourceQuestionFigureSpec } from "./SourceQuestionFigure";
 
 export interface ExamTeachingCase {
   prompt: string;
   steps: string[];
   answer: string;
   pitfall: string;
+  illustrations?: {
+    figure: SourceQuestionFigureSpec;
+    steps: readonly SourceQuestionFigureSpec[];
+  };
 }
 // Original teaching variants. The source references are verified separately;
 // these bodies are not advertised as verbatim official examination questions.

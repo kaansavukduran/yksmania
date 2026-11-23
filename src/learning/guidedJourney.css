@@ -39,6 +39,9 @@
   min-width: 0;
   overflow-wrap: anywhere;
 }
+.exam-teaching-case .source-question-figure {
+  max-inline-size: 22rem;
+}
 
 /* Numbered pages in the single reading mode. */
 .guide-section,

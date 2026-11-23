@@ -1,3 +1,10 @@
+# ÖSYM Mania 0.45.0 · Eş dönüşleri çizimle çöz
+
+Yayın adayı.
+
+- Doğruda Açılar’daki özgün örnekte dik köşe ve iki eş dış parça baştan görünür.
+- Çözüm açıldıkça tam tur, aradaki dönüş ve derece hesabı kendi adımında gösterilir. Örnek çevrimdışı çalışır.
+
 # ÖSYM Mania 0.44.0 · Ad ve Aion simgesi
 
 Yayın adayı.

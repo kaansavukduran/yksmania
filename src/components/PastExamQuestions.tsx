@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ExternalLink } from "lucide-react";
 import { pastExamReferencesForTopic, officialBooklets } from "../domain/pastExams";
 import { examTeachingCases } from "../learning/pastExamCases";
+import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
 import { ChoiceSelect } from "./ChoiceSelect";
 import { OsymTopicPanel } from "./OsymPatterns";
 function TeachingCase({ id }: { id: string }) {
@@ -15,10 +16,17 @@ function TeachingCase({ id }: { id: string }) {
         değildir.
       </p>
       <p className="example-prompt">{item.prompt}</p>
+      {item.illustrations && <SourceQuestionFigure figure={item.illustrations.figure} />}
       <ol>
-        {item.steps.slice(0, count).map((step, i) => (
-          <li key={i}>{step}</li>
-        ))}
+        {item.steps.slice(0, count).map((step, i) => {
+          const illustration = item.illustrations?.steps[i];
+          return (
+            <li key={i}>
+              {step}
+              {illustration && <SourceQuestionFigure figure={illustration} />}
+            </li>
+          );
+        })}
       </ol>
       {count < item.steps.length ? (
         <button className="secondary" onClick={() => setCount((n) => n + 1)}>

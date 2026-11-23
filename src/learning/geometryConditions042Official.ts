@@ -1,5 +1,6 @@
 import type { PastExamReference } from "../domain/pastExams";
 import type { ExamTeachingCase } from "./pastExamCases";
+import { equalTurns, outerLabel, rotationIllustrations, turnAngle } from "./rayRotation045";
 
 export const lineAnglesReference042: PastExamReference = {
   id: "2024-TYT-MAT-31",
@@ -61,13 +62,14 @@ export const lineAnglesTeachingCase042: ExamTeachingCase = {
   prompt:
     "Bir ışın sekiz eş dönüşle ilk yönüne dönerek bir tam turu bitiriyor. İki ardışık yön bir dik açının içine düşüyor. Dik açının dış kollarıyla iki ışın arasında kalan parçalar eşit. Bu parçalardan biri kaç derece?",
   steps: [
-    "Tam tur 360°. Sekiz aralığın her biri 45°.",
-    "Dik bölgeden aradaki 45°yi çıkar. İki eş dış parça için 45° kalır.",
-    "Her bir parça 45°/2=22,5°.",
+    `Tam tur 360°. ${equalTurns} eş aralığın her biri ${turnAngle}°.`,
+    `Dik açıdan aradaki ${turnAngle}°yi çıkar. İki eş dış parça için ${90 - turnAngle}° kalır.`,
+    `Her bir parça ${90 - turnAngle}° / 2 = ${outerLabel}.`,
   ],
-  answer: "22,5°.",
+  answer: `${outerLabel}.`,
   pitfall:
     "Işınlar arasındaki bir aralığı tam turdaki ışın etiketi sayısıyla karıştırmak.",
+  illustrations: rotationIllustrations,
 };
 
 export const triangleAnglesTeachingCase042: ExamTeachingCase = {
