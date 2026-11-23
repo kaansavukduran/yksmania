@@ -12,6 +12,7 @@ import { ohmGraphQuestionFigures, ohmGraphQuestionId } from "./ohmGraphQuestion0
 import { solidPressureQuestionFigures, solidPressureQuestionId } from "./solidPressureQuestion079";
 import { equalDepthQuestionFigures, equalDepthQuestionId } from "./hydrostaticQuestion080";
 import { pistonQuestionFigures, pistonQuestionId } from "./pascalQuestion081";
+import { bottomForceQuestionFigures, bottomForceQuestionId } from "./bottomForceQuestion082";
 import {
   inverseTranslationFigures,
   inverseTranslationQuestion,
@@ -250,6 +251,14 @@ const bindings = new Map<string, FigureBinding>([
   ogmTranslationBinding(inverseTranslationQuestion, 12, "Görüntünün grafiğinden başlangıç noktası", inverseTranslationFigures),
   ogmTranslationBinding(triangleTranslationQuestion, 13, "ABC üçgeninin üç köşesinin ötelenmesi", triangleTranslationFigures),
   ...ogmGridTranslationExamples.map(({ question, page, name, figures }) => ogmTranslationBinding(question, page, name, figures)),
+  [bottomForceQuestionId, {
+    stemRevision: "0516fd028cbe28",
+    helpRevision: "0e743b10c35c90",
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 138. sayfa, basılı 136",
+    itemLabel: "Tabana dik kuvvet, özgün soru",
+    figures: bottomForceQuestionFigures,
+  }],
   [pistonQuestionId, {
     stemRevision: "122891ad73ac0c",
     helpRevision: "026adabb208057",

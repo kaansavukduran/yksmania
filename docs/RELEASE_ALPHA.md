@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.82.0 · Durgun sıvının yüzey kuvvetleri
+
+Yayın adayı. Tabanı, dik duvarı ve eğik duvarı seç. Basınç kuvvetinin yönünü ve büyüklüğünü karşılaştır. Aynı su miktarında kap şekli taban kuvvetini değiştirebilir.
+
 # ÖSYM Mania 0.81.0 · Pascal ilkesi ve bileşik kaplar
 
 Yayın adayı. Pistona uygulanan kuvveti artır, farklı derinliklerdeki iki ölçeri karşılaştır. Bileşik kapta her sıvı katmanını kendi yüksekliğiyle hesapla. Su cenderesi sorusunda ortak basıncı adım adım kullan.

@@ -1,11 +1,11 @@
-import { equalDepthTitle, fillingGraphTitle, fillingRate, fillingSeconds, fillingShapes, fillingState, waterPressureKPa } from "../mebiHydrostaticFilling";
+import { equalDepthTitle, fillingBaseArea, fillingGraphTitle, fillingRate, fillingSeconds, fillingShapes, fillingState, waterPressureKPa } from "../mebiHydrostaticFilling";
 import { fmt, poly, pt, seg, txt, v, vec, type El, type FigureDef } from "./figureKit";
 
 const fit = new Intl.NumberFormat("tr-TR", { maximumFractionDigits: 3 });
 const maximumDepth = 2.35;
 
-function vessel(center: number, change: number, level: number, scale = 1): El[] {
-  const side = (depth: number) => (4 + change * depth) * scale / 2;
+export function fillingVessel(center: number, change: number, level: number, scale = 1): El[] {
+  const side = (depth: number) => (fillingBaseArea + change * depth) * scale / 2;
   const y = (depth: number) => depth * 1.5;
   const left = (depth: number) => v(center - side(depth), y(depth));
   const right = (depth: number) => v(center + side(depth), y(depth));
@@ -27,7 +27,7 @@ export const mebiHydrostaticFillingFigures: Record<string, FigureDef> = {
           const center = 3.7 * index;
           const point = v(center, (surface - depth) * 1.5);
           return [
-            ...vessel(center, shape, surface, 0.63),
+            ...fillingVessel(center, shape, surface, 0.63),
             ...(depth === 0 ? [] : [seg(v(center, surface * 1.5), point, { tone: "a", dash: true })]),
             pt(point, undefined, "n", "a"),
             txt(v(center, -0.38), ["I", "II", "III"][index], "s", { small: true }),
@@ -52,7 +52,7 @@ export const mebiHydrostaticFillingFigures: Record<string, FigureDef> = {
       const sample = Array.from({ length: 25 }, (_, i) => at(time * i / 24));
       return {
         els: [
-          ...vessel(0, shape.change, state.depth, 0.63),
+          ...fillingVessel(0, shape.change, state.depth, 0.63),
           vec(v(graphLeft, 0), v(graphRight, 0), { tone: "ink" }),
           vec(v(graphLeft, 0), v(graphLeft, 3.25), { tone: "ink" }),
           vec(v(graphRight, 0), v(graphRight, 3.25), { tone: "ink" }),

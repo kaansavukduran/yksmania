@@ -1,5 +1,5 @@
 {
-  "version": "0.81.0",
+  "version": "0.82.0",
   "channel": "alpha",
   "notes": {
     "tr": "Elektrik Akımı dersinde dört V–I ölçümünün eğimini oku. Voltmetreyle ampermetrenin seri ve paralel bağlantılarını çizimden karşılaştır.",

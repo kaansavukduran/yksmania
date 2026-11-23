@@ -7,6 +7,7 @@ import { meterConnectionsTitle, ohmMeasurementSection, ohmSlopeExample } from ".
 import { brickPressureExample, brickPressureSection, uprightPrismSection } from "../mebiSolidPressure";
 import { equalDepthSection, fillingGraphExample, fillingGraphSection } from "../mebiHydrostaticFilling";
 import { pascalAddedPressureSection, sharedLevelExample, sharedLevelSection } from "../mebiPascalLayers";
+import { baseForceSection, surfaceForceExample, surfaceForceSection } from "../mebiHydrostaticForces";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
@@ -380,11 +381,12 @@ export function studyGuide(lessonId: string) {
       sections: guide.sections.flatMap((section) => {
         if (section.title === "Katıda önce destek kuvvetini bul") return [section, brickPressureSection, uprightPrismSection];
         if (section.title === "Durgun sıvıda düşey derinliği ölç") return [section, equalDepthSection, fillingGraphSection];
+        if (section.title === "Katmanları ve taban kuvvetini ayrı hesapla") return [section, surfaceForceSection, baseForceSection];
         if (section.title === "Pascal basınç değişimini iletir, kuvveti eşitlemez") return [section, pascalAddedPressureSection, sharedLevelSection];
         return [section];
       }),
-      examples: [...guide.examples, brickPressureExample, fillingGraphExample, sharedLevelExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 132–137, basılı 130–135. Tuğlalar, prizma kesiti, eş derinlik, dolum ve piston çizimleri bu sayfalarla karşılaştırıldı. Bileşik kapta görselin ve açıklama maddesinin gösterdiği 2h K katmanı kullanıldı. Sayısal ölçüler örnek model değerleridir.`,
+      examples: [...guide.examples, brickPressureExample, fillingGraphExample, sharedLevelExample, surfaceForceExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 132–138, basılı 130–136. Tuğlalar, prizma kesiti, eş derinlik, dolum, piston ve yüzeye dik sıvı kuvvetleri bu sayfalarla karşılaştırıldı. Bileşik kapta görselin ve açıklama maddesinin gösterdiği 2h K katmanı kullanıldı. Sayısal ölçüler örnek model değerleridir.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

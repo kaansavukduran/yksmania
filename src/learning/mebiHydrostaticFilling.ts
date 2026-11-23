@@ -7,6 +7,7 @@ export const waterDensity = 1000;
 export const modelGravity = 10;
 export const fillingRate = 2;
 export const fillingSeconds = 3;
+export const fillingBaseArea = 4;
 export const fillingShapes = [
   { label: "Dik kenarlı kap", change: 0, increase: "Sabit eğim" },
   { label: "Yukarı genişleyen kap", change: 1, increase: "Azalan eğim" },
@@ -20,9 +21,8 @@ export function waterPressureKPa(depth: number) {
 export function fillingState(time: number, shapeIndex: number) {
   const { change } = fillingShapes[shapeIndex];
   const volume = fillingRate * time;
-  const baseArea = 4;
-  const depth = 2 * volume / (baseArea + Math.sqrt(baseArea ** 2 + 2 * change * volume));
-  const area = baseArea + change * depth;
+  const depth = 2 * volume / (fillingBaseArea + Math.sqrt(fillingBaseArea ** 2 + 2 * change * volume));
+  const area = fillingBaseArea + change * depth;
   const riseRate = fillingRate / area;
   return { volume, depth, area, riseRate, pressure: waterPressureKPa(depth), pressureRate: waterPressureKPa(riseRate) };
 }
