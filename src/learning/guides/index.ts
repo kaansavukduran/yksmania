@@ -1,3 +1,4 @@
+import { rotationFromCenterExample, rotationFromCenterSection, transformationMethods } from "../translationMethods072";
 import { electroscopeExample, electroscopeSection } from "../electroscopeInduction070";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
@@ -334,13 +335,14 @@ export function studyGuide(lessonId: string) {
     const triangle = "Şekli köşe köşe taşı, bağıntıyı geri denetle";
     return {
       ...guide,
-      sections: guide.sections.map((section) =>
+      sections: [...guide.sections.map((section) =>
         section.title === components || section.title === triangle
           ? { ...section, figureTitle: section.title }
-          : section),
-      examples: guide.examples.map((example) => example.title === "Ötele ve başlangıca geri dön"
+          : section), transformationMethods, rotationFromCenterSection],
+      examples: [...guide.examples.map((example) => example.title === "Ötele ve başlangıca geri dön"
         ? { ...example, steps: example.steps.map((step, index) => index === 0 ? { ...step, figureTitle: components } : step) }
-        : example),
+        : example), rotationFromCenterExample],
+      source: `${guide.source} Dönüşümler Kopya Kâğıdı fiziksel 2, 7 ve 8. sayfalarındaki merkezli dönme çizimi, yöntemi seçme tablosu ve koşul örnekleri öğrenci rehberinde yeniden işlendi.`,
     };
   }
   if (guide?.id === "durgun-elektrik") {

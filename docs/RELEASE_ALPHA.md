@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.72.0 · Dönüşüm yöntemleri
+
+Yayın adayı. Öteleme, dönme ve işlem sırasını karşılaştır. Dönme yönünü değiştirerek merkeze uzaklığın değişmediğini çizimde gör. Aynı tablo ve çözümlü örnek ayrı Kopya Kağıdı’nda yer alır.
+
 # ÖSYM Mania 0.71.0 · Ötelemede iki OGM örneği
 
 Yayın adayı. İlk soruda görüntü noktasını grafikten oku ve başlangıca dön. İkinci soruda üç köşeye aynı vektörü uygula. Çözümün son adımı hesaplanan görüntüyü gösterir.

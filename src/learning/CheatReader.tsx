@@ -6,6 +6,7 @@ import type { CheatSheet } from "./cheatsheetContent";
 import { VisualLab } from "./VisualLab";
 import { typeset } from "../domain/typeset";
 import { SourceQuestionFigure } from "./SourceQuestionFigure";
+import { GuideTable } from "./GuideTable";
 
 const SectionFigure = lazy(() =>
   import("./sectionFigures/registry").then((module) => ({ default: module.SectionFigure })),
@@ -123,7 +124,10 @@ export function CheatReader({
                 <SectionFigure guideId={sheet.lessonId} title={section.figureTitle} />
               </Suspense>
             )}
-            {section.table && section.figureTitle && (
+            {section.table && section.table.headers.length >= 4 && (
+              <GuideTable title={section.title} table={section.table} />
+            )}
+            {section.table && section.table.headers.length < 4 && section.figureTitle && (
               <SourceQuestionFigure figure={{
                 kind: "table",
                 title: `${section.title} tablosu`,
@@ -131,7 +135,7 @@ export function CheatReader({
                 ...section.table,
               }} />
             )}
-            {section.table && !section.figureTitle && (
+            {section.table && section.table.headers.length < 4 && !section.figureTitle && (
               <div
                 className="cheat-comparisons"
                 role="group"

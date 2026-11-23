@@ -1,4 +1,5 @@
 import { typeset } from "../domain/typeset";
+import { GuideTable } from "./GuideTable";
 import { geometryExpansion032Ids } from "../data/supplementalTopics032";
 import { geometryCircle040Ids } from "./geometryCircle040";
 import { lazy, Suspense, useId, useMemo, useRef, useState, useEffect, type ReactNode } from "react";
@@ -362,52 +363,7 @@ export function GuidedReading({
                 <p key={j}>{typeset(paragraph)}</p>
               ))}
               {section.table && (
-                <div
-                  className="guide-table"
-                  role="region"
-                  tabIndex={0}
-                  aria-label={`${typeset(section.title)} tablosu`}
-                >
-                  <table role="table">
-                    <thead role="rowgroup">
-                      <tr role="row">
-                        {section.table.headers.map((header, j) => (
-                          <th
-                            scope="col"
-                            role="columnheader"
-                            id={`${prefix}-table-${i}-col-${j}`}
-                            key={j}
-                          >
-                            {typeset(header)}
-                          </th>
-                        ))}
-                      </tr>
-                    </thead>
-                    <tbody role="rowgroup">
-                      {section.table.rows.map((row, j) => (
-                        <tr role="row" key={j}>
-                          {row.map((cell, k) => (
-                            <td
-                              role="cell"
-                              headers={`${prefix}-table-${i}-col-${k}`}
-                              key={k}
-                            >
-                              <span
-                                className="guide-table-cell-label"
-                                aria-hidden="true"
-                              >
-                                {typeset(section.table!.headers[k])}
-                              </span>
-                              <span className="guide-table-cell-value">
-                                {typeset(cell)}
-                              </span>
-                            </td>
-                          ))}
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
+                <GuideTable title={section.title} table={section.table} idPrefix={`${prefix}-table-${i}`} />
               )}
               {i === visualSection && labBeforeSectionFigure && visualLab}
               {sectionFigureGuideIds.has(guide.id) && (

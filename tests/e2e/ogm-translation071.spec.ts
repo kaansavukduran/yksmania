@@ -40,6 +40,7 @@ test("iki OGM örneğinde kaynak şekli, ipucu, çözüm ve kayda bağlı çizim
     await expect(solution.getByRole("img")).toBeVisible();
   };
   await expect(inverse.getByRole("img")).toHaveAccessibleDescription(/eksi 2, y ekseninde 4/);
+  await expect(inverse.locator("figcaption")).toHaveCount(0);
   await expect(inverse.locator("svg circle")).toHaveCount(1);
   await inverse.screenshot({ path: info.outputPath("ogm-071-ters-soru.png") });
   await runHelp("Geri dönmek için yönleri tersine çevir", inverseSolution);
@@ -54,6 +55,7 @@ test("iki OGM örneğinde kaynak şekli, ipucu, çözüm ve kayda bağlı çizim
   await runHelp("Her köşe için aynı iki değişim", triangleSolution);
   await expect(triangleSolution.locator("svg circle")).toHaveCount(6);
   await expect(triangleSolution.getByRole("img")).toHaveAccessibleDescription(/A′\(−1; 1\), B′\(−2; −3\), C′\(2; −1\)/);
+  await expect(triangleSolution.locator("figcaption")).toHaveCount(0);
   await audit();
   await triangleSolution.screenshot({ path: info.outputPath("ogm-071-ucgen-cozum.png") });
   await page.locator(".answer-options .answer").nth(2).click();

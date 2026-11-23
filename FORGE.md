@@ -1,3 +1,9 @@
+# Dönüşüm yöntemini seç · 0.72.0 adayı
+
+Dönüşümler Kopya Kâğıdı fiziksel 2, 7 ve 8’deki şekil ve karşılaştırma tablosu yeniden işlendi. Ders ile ayrı Kopya Kağıdı aynı dört yöntemi, örnekleri ve yakın hataları gösteriyor. Dar ekranda sütun adları her satırın yanında okunuyor. Merkezli dönme modelinde −90° için P′(0; −2), +90° için P′(4; 4). İki durumda da uzaklığın karesi 13. Kaynak grafiği ilgili çözüm adımında açılıyor.
+
+İlk tarayıcı denetiminde sonuçta kısa eksi çizgisi görünüyordu. Readout aynı matematiksel işarete geçirildi ve beş gerçek tarayıcı senaryosu tekrar geçti. İki OGM kartının şekillerindeki uzun görsel açıklaması ekran okuyucuda korunuyor. 320 px ve %200’de şekil altında aynı açıklama yeniden yazılmıyor. Arşivdeki eski ders, tablo, öğrenci notları ve kayıtlı çözümler korunur.
+
 # Ötelemede iki OGM örneği · 0.71.0 adayı
 
 OGM Öteleme Dönüşümü fiziksel 12 ve 13’teki iki örneğin verileri korundu. İlk kart, A′ noktasını izdüşümlerinden okutuyor. İkinci kart, başlangıç üçgenini gösteriyor ve görüntü üçgenini son çözüm adımında açıyor. Yeni şık ve gerekçeler uyarlanmış örnek olarak etiketlendi. Sorular bölümündeki ayrı alıştırma, mevcut on soruyu ve kayıtları korur.
@@ -384,12 +390,12 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Felsefe | 17 / 17 | 10 · 35 | 190 / 190 · %100,00 | 3 / 17 · %17,65 | 89 soru · 9 kitapçık | 7 |
 | TYT Din | 20 / 20 | 14 · 52 | 371 / 371 · %100,00 | 3 / 20 · %15,00 | 46 soru · 9 kitapçık | 6 |
 | AYT Matematik | 17 / 17 | 17 · 38 | 253 / 253 · %100,00 | 2 / 17 · %11,76 | 273 soru · 9 kitapçık | 0 |
-| AYT Geometri | 4 / 5 | 4 · 51 | 42 / 42 · %100,00 | 1 / 4 · %25,00 | 87 soru · 9 kitapçık | 1 |
+| AYT Geometri | 4 / 5 | 4 · 52 | 42 / 42 · %100,00 | 1 / 4 · %25,00 | 87 soru · 9 kitapçık | 1 |
 | AYT Fizik | 46 / 46 | 41 · 152 | 541 / 541 · %100,00 | 7 / 46 · %15,22 | 126 soru · 9 kitapçık | 5 |
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 511** | **405 · 1691** | **6.660 / 6.660 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **106** |
+| **Toplam** | **510 / 511** | **405 · 1692** | **6.660 / 6.660 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **106** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

@@ -1,8 +1,8 @@
 {
-  "version": "0.71.0",
+  "version": "0.72.0",
   "channel": "alpha",
   "notes": {
-    "tr": "İki OGM öteleme örneğinin şekillerini soru kartından oku. Verilen görüntüden başlangıca dön, ardından bir üçgenin üç köşesini aynı vektörle taşı.",
-    "en": "Read the drawings in two OGM translation exercises. Recover the original point and translate all three vertices of a triangle."
+    "tr": "Öteleme, orijinde dönme, başka merkezde dönme ve bileşkeyi dört yöntem satırında karşılaştır. Merkezli dönme çiziminde yön değişirken yarıçapın korunduğunu denetle.",
+    "en": "Compare translations, rotations and operation order in one responsive table. Use the direction control to see the unchanged radius of a centered rotation."
   }
 }

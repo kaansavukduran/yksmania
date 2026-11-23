@@ -27,6 +27,7 @@ import {
   type V,
 } from "./figureKit";
 import { axes } from "./geometryFiguresArea";
+import { centerQuarterTurn, rotationCenter, rotationFromCenterTitle, rotationStart } from "../translationMethods072";
 
 const xy = (p: V, d = 2) => `(${fmt(p[0], d)}; ${fmt(p[1], d)})`;
 /** Visible part of ax + by + c = 0 inside a window, as a drawable line. */
@@ -64,6 +65,34 @@ const curve = (f: (x: number) => number, x0: number, x1: number, tone: "a" | "b"
   );
 
 const otelemeDonme: Record<string, FigureDef> = {
+  [rotationFromCenterTitle]: {
+    caption: "Aynı merkezde dönme yönünü değiştir ve iki yarıçapı karşılaştır.",
+    alt: "Analitik düzlemde C(2; 1) merkezi, ilk P(5; −1) ve seçilen açının görüntüsü. İlk ve son nokta C’den eşit uzaklıkta. Başlangıçta saat yönündeki 90° dönüş gösterilir.",
+    param: { label: "Merkezli dönme açısı", min: -90, max: 90, step: 90, init: -90, unit: "°" },
+    draw: (angle) => {
+      const { image, distanceSquared } = centerQuarterTurn(angle);
+      const direction = angle < 0 ? "Saat yönü" : angle > 0 ? "Saat yönünün tersi" : "Dönme yok";
+      const [centerText, startText, imageText] = [rotationCenter, rotationStart, image]
+        .map((point) => xy(point, 0).replaceAll("-", "−"));
+      return {
+        els: [
+          ...axes(-1.5, 6.5, -3.5, 5.5, 2),
+          vec(rotationCenter, rotationStart, { tone: "b", bold: true }),
+          pt(rotationCenter, "C", "nw", "ink"),
+          pt(rotationStart, angle === 0 ? "P = P′" : "P", "se", "b"),
+          ...(angle === 0 ? [] : [
+            vec(rotationCenter, image, { tone: "a", bold: true }),
+            pt(image, "P′", angle < 0 ? "sw" : "ne", "a"),
+            ang(rotationCenter, rotationStart, image, angle < 0 ? "−90°" : "+90°", { tone: "warn", r: 29 }),
+          ]),
+        ],
+        readout: [
+          `${direction}. Merkez C${centerText}, başlangıç P${startText}, görüntü P′${imageText}.`,
+          `İki uzaklığın karesi de ${distanceSquared}. Nokta değişse de merkeze uzaklık korunur.`,
+        ],
+      };
+    },
+  },
   "Bir dönüşüm her noktaya bir görüntü verir": {
     caption:
       "Öteleme her köşeye aynı vektörü ekler; şekil olduğu gibi kayar. Yalnız bir köşeyi taşımak bir dönüşüm uygulamak değildir: kenarlar ve alan değişir.",
