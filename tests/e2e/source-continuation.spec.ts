@@ -240,6 +240,11 @@ test("all twenty-eight newly taught units have independent end-to-end cases", ()
   expect(new Set(units.map((unit) => unit.id)).size).toBe(28);
 });
 
+const currentQuestionCounts: Readonly<Record<string, number>> = {
+  "grafik-problemleri": 16,
+  kumeler: 17,
+};
+
 for (const lesson of units) {
   test(`${lesson.id}: normal course entry changes the model and keeps it and its note offline without learning credit`, async ({
     page,
@@ -278,7 +283,7 @@ for (const lesson of units) {
     );
     expect(learningEvidence(await stored(page))).toEqual(before);
     await page.getByRole("button", { name: "Sorulara geç", exact: true }).tap();
-    const questionCount = lesson.id === "grafik-problemleri" ? 16 : 10;
+    const questionCount = currentQuestionCounts[lesson.id] ?? 10;
     await expect(page.locator(".question-meta")).toContainText(`Soru 1 / ${questionCount}`);
     await expect(page.locator(".answer")).toHaveCount(5);
     await expect(page.locator(".question-panel h2")).toHaveText(
