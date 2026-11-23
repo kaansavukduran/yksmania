@@ -251,6 +251,9 @@ export function questionFigures043(question: QuestionForFigures) {
     originalExerciseId: question.id,
     figure: binding.figures.figure,
     optionFigures: binding.figures.optionFigures,
+    optionFigureRevision: binding.figures.optionFigures
+      ? identityHash(JSON.stringify([binding.stemRevision, binding.figures.optionFigures]))
+      : undefined,
     hintFigure: helpMatches ? binding.figures.hintFigure : undefined,
     stepFigures: helpMatches ? binding.figures.stepFigures : undefined,
   };

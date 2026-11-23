@@ -83,6 +83,9 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
       correct: draft.selected === question.answer,
       assisted: draft.hint,
       confidence: draft.confidence,
+      ...(sourcePresentation?.optionFigureRevision
+        ? { optionFigureRevision: sourcePresentation.optionFigureRevision }
+        : {}),
       ...(draft.hint
         ? { helpLevel: visibleHelpLevel, helpPanelCount: panels.length }
         : {}),

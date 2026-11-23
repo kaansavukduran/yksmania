@@ -1,3 +1,11 @@
+# Grafikli yanlış incelemesi ve cep kitapçığı · 0.49.0 adayı
+
+Öğrencinin yanıtı, o soruda gördüğü şık grafiklerinin sürümüyle birlikte kaydedilir. Hata Merkezi seçilen grafiği kaydın yanında, doğru grafiği açıklama açıldığında gösterir. Cep kitapçığına yalnız eşleşen doğru grafik girer. Eski bir kaydın grafikleri doğrulanamıyorsa öğrenci cevap harfini hâlâ görebilir. Yeni sorunun metni, anahtarı veya grafiği eski kayda bağlanmaz.
+
+Gerçek çalışma çevrimdışı tamamlandı, Yanlışlarım klavyeyle açıldı ve Chromium PDF çıktısı üretildi. Basılı grafik, uygulama temasından bağımsız koyu çizgiler kullanır. Eski kayıt örneği yeniden açıldığında cevap harfi ve öğrenme kaydı korundu.
+
+İlk PDF denetimi, görünmez hata kartlarının sayfa düzeninde yer tutması nedeniyle 25 sayfa üretti. Kitapçığın dışındaki içerik baskı düzeninden çıkarıldı ve kâğıt için okunaklı sabit punto kullanıldı. Beş tarayıcı testi geçti. %200 arayüz ölçeği ve %150 yazı açıkken alınan A4 çıktısı tek sayfada doğru şıkkı, hız eksenini ve grafiğini gösterdi.
+
 # Hız–zaman grafikli şıklar · 0.48.0 adayı
 
 Kuvvet ve Newton Yasaları’nda sabit net kuvvet altında başlayan bir cismin hız grafiğini dört seçenek arasından seç. MEBİ TYT Fizik Konu Özetleri fiziksel sayfa 42, basılı sayfa 40, aynı sabit kuvvet ve ivmeden hızın nasıl değiştiğini grafiklerle gösterir. Alıştırmanın sayıları özgündür.

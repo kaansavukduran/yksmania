@@ -21,6 +21,8 @@ import { lessonTopic } from "../domain/studyPlan";
 import { osymRows } from "../learning/osym";
 import { osymTopicCount } from "../domain/trapDeck";
 import { TrapDeck } from "../components/TrapDeck";
+import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
+import { sourceQuestionPresentation } from "../learning/sourceExercises024";
 
 const subjectOrder = subjects.map((s) => s.id);
 export function Mistakes({
@@ -71,11 +73,24 @@ export function Mistakes({
             ? twinForMistake(lesson.questions, state.sessions, state.examSessions, s, r.questionId)
             : undefined;
           const progress = repairProgress(state.sessions, s, r.questionId, state.examSessions, twinId);
+          const displayed = question ? localizedQuestionView(question) : undefined;
+          const presentation = displayed ? sourceQuestionPresentation({
+            id: displayed.id,
+            passage: displayed.passage ? l(displayed.passage) : undefined,
+            prompt: l(displayed.prompt),
+            options: displayed.options.map(l),
+            answer: displayed.answer,
+          }) : undefined;
+          const optionFigures = presentation?.optionFigureRevision === r.optionFigureRevision
+            ? presentation?.optionFigures : undefined;
+          const figuresUnavailable = Boolean((r.optionFigureRevision || presentation?.optionFigureRevision) && !optionFigures);
           return {
             session: s,
             response: r,
             lesson,
-            question: question ? localizedQuestionView(question) : undefined,
+            question: displayed,
+            optionFigures,
+            figuresUnavailable,
             progress,
             status: statusOfStage(progress.stage),
             confident: !r.correct && r.confidence === "high",
@@ -200,16 +215,19 @@ export function Mistakes({
             />
             <PocketBooklet
               items={allItems
-                .filter((x) => x.status !== "kalici" && x.question)
+                .filter((x) => x.status !== "kalici" && x.question && !x.figuresUnavailable)
                 .map((x) => ({
                   key: mistakeKey(x.session.id, x.response.questionId),
                   lesson: x.lesson ? l(x.lesson.title) : "",
                   prompt: l(x.question!.prompt),
                   answer: l(x.question!.options[x.question!.answer]),
+                  answerFigure: x.optionFigures?.[x.question!.answer],
                 }))}
             />
-            {items.map(({ session, response, lesson, question, status, confident, stars, progress }, i) => {
+            {items.map(({ session, response, lesson, question, status, confident, stars, progress, optionFigures, figuresUnavailable }, i) => {
               const osym = lesson ? osymTopicCount(osymRows, lessonTopic[lesson.id], lesson.subjectId) : undefined;
+              const selectedFigure = optionFigures?.[response.selected];
+              const correctFigure = question ? optionFigures?.[question.answer] : undefined;
               return (
               question && lesson ? (
                 <article
@@ -241,12 +259,17 @@ export function Mistakes({
                         : `ÖSYM bu başlıktan ${osym.years} yılda doğrudan soru sormadı.`}
                     </p>
                   )}
-                  <h2 className="question-prompt">{typeset(l(question.prompt))}</h2>
+                  <h2 className="question-prompt">{figuresUnavailable ? "Kayıtlı grafikli soru" : typeset(l(question.prompt))}</h2>
                   <p>
                     <span className="muted">{t("yourAnswer")}: </span>
-                    {l(question.options[response.selected])}
+                    {figuresUnavailable ? String.fromCharCode(65 + response.selected) : l(question.options[response.selected])}
                   </p>
-                  <details>
+                  {selectedFigure && (
+                    <div className="answer-option-figure"><SourceQuestionFigure figure={selectedFigure} /></div>
+                  )}
+                  {figuresUnavailable ? (
+                    <p className="small muted">Kayda ait çizimler bulunamadı. Kaydedilmiş yanıtın korunuyor.</p>
+                  ) : <details>
                     <summary>{t("explanation")}</summary>
                     <p>
                       <strong>
@@ -254,10 +277,13 @@ export function Mistakes({
                         {l(question.options[question.answer])}
                       </strong>
                     </p>
+                    {correctFigure && (
+                      <div className="answer-option-figure"><SourceQuestionFigure figure={correctFigure} /></div>
+                    )}
                     <p>{typeset(l(question.explanation))}</p>
-                  </details>
+                  </details>}
                   <MistakeWarning storageKey={mistakeKey(session.id, response.questionId)} />
-                  <MistakeRepair
+                  {!figuresUnavailable && <MistakeRepair
                     sessionId={session.id}
                     questionId={response.questionId}
                     options={question.options.map((o) => l(o))}
@@ -270,7 +296,7 @@ export function Mistakes({
                       busy={!!state.examDraft}
                       begin={startSprint}
                     />
-                  </MistakeRepair>
+                  </MistakeRepair>}
                   <MistakeBridge lessonId={lesson.id} subjectId={lesson.subjectId} navigate={navigate} />
                   <button className="text-button" onClick={() => start(lesson)}>
                     {t("repair")}

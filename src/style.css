@@ -5054,30 +5054,55 @@ progress::-moz-progress-bar {
   color: var(--accent);
 }
 @media print {
-  body.print-booklet * {
-    visibility: hidden;
+  body.print-booklet > :not(:has(.pocket-booklet)),
+  body.print-booklet :has(.pocket-booklet) > :not(.pocket-booklet):not(:has(.pocket-booklet)) {
+    display: none !important;
   }
-  body.print-booklet .pocket-booklet,
-  body.print-booklet .pocket-booklet * {
-    visibility: visible;
+  body.print-booklet,
+  body.print-booklet :has(.pocket-booklet) {
+    position: static !important;
+    display: block !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
   }
   body.print-booklet .pocket-booklet {
-    position: absolute;
-    inset: 0 auto auto 0;
-    width: 100%;
     background: #fff;
     color: #000;
     border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+  .pocket-booklet h2 {
+    font-size: 18pt;
+  }
+  .pocket-booklet .small {
+    color: #333;
+    font-size: 10pt;
   }
   .pocket-booklet button {
     display: none;
   }
+  .pocket-booklet .source-question-figure {
+    --text: #111;
+    --accent: #111;
+    --bg: #fff;
+    max-width: 75mm;
+    margin: 3mm 0;
+  }
   .pocket-list {
+    display: block;
+    padding-inline-start: 6mm;
     max-height: none;
     overflow: visible;
   }
   .pocket-list li {
     break-inside: avoid;
+    margin-block-end: 3mm;
   }
   .pocket-warning {
     color: #000;

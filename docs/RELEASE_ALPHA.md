@@ -1,3 +1,10 @@
+# ÖSYM Mania 0.49.0 · Grafikli yanlış incelemesi
+
+Yayın adayı.
+
+- Hata Merkezi’nde seçtiğin grafiği ve çözümdeki doğru grafiği karşılaştır.
+- Cep kitapçığında doğrulanan doğru grafik de basılır.
+
 # ÖSYM Mania 0.48.0 · Hız–zaman grafikli şıklar
 
 Yayın adayı.

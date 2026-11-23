@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Printer } from "lucide-react";
 import { useApp } from "../store";
+import { SourceQuestionFigure, type SourceQuestionFigureSpec } from "../learning/SourceQuestionFigure";
 
 /*
  * "Kendime uyarı": a one-line note the learner writes to their future self
@@ -46,7 +47,13 @@ export function MistakeWarning({ storageKey }: { storageKey: string }) {
   );
 }
 
-export type BookletItem = { key: string; lesson: string; prompt: string; answer: string };
+export type BookletItem = {
+  key: string;
+  lesson: string;
+  prompt: string;
+  answer: string;
+  answerFigure?: SourceQuestionFigureSpec;
+};
 
 export function PocketBooklet({ items }: { items: BookletItem[] }) {
   const { state } = useApp();
@@ -83,6 +90,11 @@ export function PocketBooklet({ items }: { items: BookletItem[] }) {
               <p>
                 <strong>Doğru:</strong> {item.answer}
               </p>
+              {item.answerFigure && (
+                <div className="answer-option-figure">
+                  <SourceQuestionFigure figure={item.answerFigure} />
+                </div>
+              )}
               {typeof warning === "string" && warning && (
                 <p className="pocket-warning">
                   <strong>Uyarı:</strong> {warning}

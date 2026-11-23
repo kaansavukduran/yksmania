@@ -4,6 +4,8 @@
 
 **Son yayımlanan web ve masaüstü sürümü 0.42.0**. Açıortayları ve ortak kenarlı üçgenleri çevrimdışı inceleyebilirsin. [Windows ve Linux 0.42](https://github.com/kaansavukduran/yksmania/releases/tag/v0.42.0-alpha.1) · [Android 0.42 kişisel deneme arşivi](https://github.com/kaansavukduran/yksmania/actions/runs/45187782506/artifacts/14823994107)
 
+**0.49.0 adayı** Hata Merkezi ve yazdırılan cep kitapçığında, kaydedilen soru sürümünün grafiklerini gösteriyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+
 **0.48.0 adayı** hız–zaman grafiklerini kendi şıkkına, kuvvet ve ivme grafiklerini ayrı yardım adımlarına ekliyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.47.0 adayı** Üçgen eşitsizliğinde üç farklı verilen şekli ve koşullarını çizimlerle çözüyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)

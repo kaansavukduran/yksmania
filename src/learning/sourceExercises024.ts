@@ -738,6 +738,7 @@ export function sourceQuestionPresentation(question: BoundQuestion):
       source: SourceAttribution;
       figure?: SourceQuestionFigureSpec;
       optionFigures?: readonly SourceQuestionFigureSpec[];
+      optionFigureRevision?: string;
       hintFigure?: SourceQuestionFigureSpec;
       explanationFigure?: SourceQuestionFigureSpec;
       stepFigures?: readonly SourceQuestionFigureSpec[];

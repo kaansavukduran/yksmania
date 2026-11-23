@@ -70,6 +70,7 @@ export const responseSchema = z
     confidence: z.enum(["low", "medium", "high"]),
     helpLevel: helpLevelSchema.optional(),
     helpPanelCount: helpLevelSchema.optional(),
+    optionFigureRevision: z.string().regex(/^[0-9a-f]{14}$/).optional(),
   })
   .refine(
     (response) => !(response.helpLevel && !response.assisted),
