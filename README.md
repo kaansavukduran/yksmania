@@ -4,7 +4,7 @@
 
 **Son yayımlanan web ve masaüstü sürümü 0.42.0**. Açıortayları ve ortak kenarlı üçgenleri çevrimdışı inceleyebilirsin. [Windows ve Linux 0.42](https://github.com/kaansavukduran/yksmania/releases/tag/v0.42.0-alpha.1) · [Android 0.42 kişisel deneme arşivi](https://github.com/kaansavukduran/yksmania/actions/runs/45187782506/artifacts/14823994107)
 
-**0.84.0 adayı** açık ve kapalı uçlu manometreyi, ayrı Kopya Kağıdı’ndaki tabloyu ve su manometresi sorusunun çözüm çizimlerini içeriyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+**0.85.0 adayı** ders dosyalarını açılışta daha az istekle indiriyor. Açık ve kapalı uçlu manometreyi Kopya Kağıdı’ndaki tablo ve çözüm çizimleriyle çalışabilirsin. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.82.0 adayı** durgun sıvının eğik, dik ve yatay yüzeylere uyguladığı kuvveti çizimlerle açıklıyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 

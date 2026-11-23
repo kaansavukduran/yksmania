@@ -16,13 +16,13 @@ export default defineConfig({
               priority: 100,
             },
             {
-              // Keep each reviewed content pack below the offline cache limit.
-              // The model group owns their shared runtime dependencies.
+              // Co-locate adjacent content packs to reduce simultaneous startup requests.
+              // The build-cache check enforces the size limit for every group.
               name: (id) => {
                 const pack = id.match(
                   /[\\/]learning[\\/]forge(\d{3})[A-Z][^\\/]*\.ts$/,
                 );
-                return pack ? `learning-${pack[1]}` : null;
+                return pack ? `learning-group-${Math.floor(Number(pack[1]) / 3)}` : null;
               },
               test: /[\\/]learning[\\/]forge\d{3}[A-Z][^\\/]*\.ts$/,
               priority: 50,
@@ -51,11 +51,10 @@ export default defineConfig({
               priority: 40,
             },
             {
-              // Step-by-step guidance grows with every content wave; one
-              // chunk per subject keeps each file far below the limit.
+              // Subjects in the same exam share a download for solution guidance.
               name: (id) => {
                 const pack = id.match(/[\\/]learning[\\/]guidance053[\\/]([a-z-]+)\.json$/);
-                return pack ? `guidance-${pack[1]}` : null;
+                return pack ? `guidance-${pack[1].split("-")[0]}` : null;
               },
               test: /[\\/]src[\\/]learning[\\/]guidance053[\\/][a-z-]+\.json$/,
               priority: 45,

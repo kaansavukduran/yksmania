@@ -1,3 +1,9 @@
+# Açılışta daha az ders dosyası isteği · 0.85.0 adayı
+
+Aynı ders verisi daha az JavaScript dosyasıyla yükleniyor. 70 ms sunucu gecikmesiyle üçer yeni Chromium profili kullanıldı. Ön yüklenen modül sayısı 40’tan 19’a, Bugün ekranının ortanca açılışı 1.758 ms’den 1.116 ms’ye indi. Altı profilde çevrimdışı Öteleme dersi ve not yeniden açıldı.
+
+0.42’den eski Pages yolunda 0.85’e geçiş denendi. Eksik dosyada eski sürümün dersi ve notu çevrimdışı açıldı. Dosya sağlanınca uygulamanın güncelleme düğmesi notu ve %125 arayüz ölçeğini korudu. Molarite, öteleme, meristem, temel doku ve basınç akışları dahil 12 yerel tarayıcı senaryosu geçti.
+
 # Açık ve kapalı uçlu manometre · 0.84.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 142, basılı 140. Açık uçta 70 cmHg atmosfer basıncına 5 cmHg cıva farkı eklenir. Gaz kolunun sıvı yüzeyi daha yüksekse fark çıkarılır. Kapalı uçta, yaklaşık vakumda, referans basıncı yaklaşık sıfırdır. Aynı değerler Kopya Kağıdı tablosunda ve çözümlü örnekte bulunur. Kaynak sayfadaki ölçüm cihazı fotoğraflarının aktarımı açık.

@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.85.0 · Açılışta daha az dosya isteği
+
+Yayın adayı. Uygulama ders dosyalarını daha az istekle indirir. Çevrimdışı dersler, şekiller ve notlar yeniden açılır.
+
 # ÖSYM Mania 0.84.0 · Açık ve kapalı uçlu manometre
 
 Yayın adayı. Referansı seçip iki sıvı yüzeyinin düşey farkını değiştir. Kopya Kağıdı’nda kaynak örneğini çöz, sonra aynı yatay seviyeyi su manometresi sorusunda kullan.
