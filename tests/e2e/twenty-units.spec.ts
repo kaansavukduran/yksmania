@@ -71,6 +71,7 @@ export type LessonCase = {
   result: string;
   model?: string;
   exploration: string;
+  questionCount: number;
   interact: (page: Page, lab: Locator) => Promise<void>;
   assertOutcome: (page: Page, lab: Locator) => Promise<void>;
 };
@@ -227,7 +228,9 @@ for (const lesson of units) {
     );
     expect(learningEvidence(await stored(page))).toEqual(before);
     await page.getByRole("button", { name: "Sorulara geç", exact: true }).tap();
-    await expect(page.locator(".question-meta")).toContainText("Soru 1 / 10");
+    await expect(page.locator(".question-meta > span").first()).toHaveText(
+      `Soru 1 / ${lesson.questionCount}`,
+    );
     await expect(page.locator(".answer")).toHaveCount(5);
     expect(
       (await page.locator(".question-panel h2").innerText()).length,
