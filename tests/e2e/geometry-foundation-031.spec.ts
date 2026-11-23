@@ -302,6 +302,59 @@ test("dragging a real vertex has keyboard equivalents, ends cleanly, and survive
   expect(learning(await stored(page))).toEqual(before);
   expect(errors).toEqual([]);
 });
+test("a delayed lesson figure keeps the triangle lab in place during a drag", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1280, height: 1200 });
+  let resumeFigure: () => void = () => {};
+  const figurePaused = new Promise<void>((resolve) => { resumeFigure = resolve; });
+  let figureRequested = false;
+  await page.route("**/assets/registry-*.js", async (route) => {
+    figureRequested = true;
+    await figurePaused;
+    await route.continue();
+  });
+  try {
+    const lab = await open(page, "ucgende-acilar");
+    const chapterFigure = page.locator(
+      '[data-section-figure="Üç köşe bir üçgeni nasıl oluşturur?"] svg',
+    );
+    await expect.poll(() => figureRequested).toBe(true);
+    await expect(chapterFigure).toHaveCount(0);
+    const vertex = lab.getByTestId("g031-drag-vertex");
+    await vertex.scrollIntoViewIfNeeded();
+    const position = () => vertex.evaluate((node: SVGCircleElement) => {
+      const matrix = node.getScreenCTM();
+      if (!matrix) throw new Error("The drag handle is outside the rendered SVG");
+      const start = new DOMPoint(node.cx.baseVal.value, node.cy.baseVal.value);
+      const target = new DOMPoint(450, 130);
+      const section = node.closest(".guide-section");
+      if (!section) throw new Error("The drag handle is outside the lesson section");
+      return {
+        start: start.matrixTransform(matrix).toJSON(),
+        target: target.matrixTransform(matrix).toJSON(),
+        offset: matrix.f - section.getBoundingClientRect().top,
+      };
+    });
+    const before = await position();
+    await page.mouse.move(before.start.x, before.start.y);
+    await page.mouse.down();
+    resumeFigure();
+    await expect(chapterFigure).toBeVisible();
+    const after = await position();
+    await page.mouse.move(before.target.x, before.target.y, { steps: 12 });
+    await page.mouse.up();
+    expect(Math.abs(after.offset - before.offset)).toBeLessThan(1);
+    await expect(
+      lab.getByRole("slider", { name: "C köşesinin yatay konumu", exact: true }),
+    ).toHaveValue("10");
+    await expect(
+      lab.getByRole("slider", { name: "C köşesinin yüksekliği", exact: true }),
+    ).toHaveValue("8");
+  } finally {
+    resumeFigure();
+  }
+});
 test("geometry labels and controls remain readable at 320px with maximum interface and text scales", async ({
   page,
 }, info) => {
