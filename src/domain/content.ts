@@ -1,4 +1,5 @@
 import { probabilityLesson036 } from "../learning/probabilitySource036";
+import { forceAccelerationQuestion } from "../learning/forceAccelerationPractice";
 import { countingLessons034035 } from "../learning/countingSources034035";
 import { permutationLessons032033 } from "../learning/permutationSources032033";
 import { factorizationSource028Practice } from "../learning/factorizationSource028Revision";
@@ -770,6 +771,7 @@ const baseLessons: Lesson[] = [
         "Hızı korumak için net kuvvet gerekmez; hız değişimi için gerekir.",
         "newton-first",
       ),
+      forceAccelerationQuestion,
     ],
   },
   {

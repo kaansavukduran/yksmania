@@ -85,6 +85,17 @@ export const newtonGuide: LessonGuide = {
         "Düşey ekseni Fnet, yatay ekseni a olan sabit kütle grafiğinde eğim m’dir; eksenler tersse eğim 1/m olur. Uygulanan kuvvetle net kuvvet aynı değilse grafiği ayrıca yorumla. Her çözümde N/kg=m/s² birimini, seçtiğin eksene göre işareti, temas ve sürtünme koşulunu kontrol et. Hızı sorulmadıkça başlangıç hızını bulmaya çalışmak gerekli değildir.",
       ],
     },
+    {
+      title: "Kuvvet–ivme grafiğinden kütleyi oku",
+      paragraphs: [
+        "Düşeyde net kuvveti (N), yatayda ivmeyi (m/s²) bul. Sabit kütlede net kuvvet ivmeyle doğru orantılıdır. Tabloda kuvvet 8 N, ivme 2 m/s² artar. Düşey farkı yatay farka bölünce kütle 8 / 2 = 4 kg çıkar.",
+        "Sonucu ikinci satırla kontrol et: 4 kg × 4 m/s² = 16 N. Çizginin kâğıttaki açısı ölçekle değişebilir. Eksenleri yer değiştirirsen eğimin birimi kg yerine 1/kg olur ve eğim kütlenin tersini verir.",
+      ],
+      table: {
+        headers: ["İvme (m/s²)", "Net kuvvet (N)"],
+        rows: [["2", "8"], ["4", "16"]],
+      },
+    },
   ],
   examples: [
     {
@@ -220,7 +231,7 @@ export const newtonGuide: LessonGuide = {
     },
   ],
   source:
-    "MEBİ AYT Fizik Konu Özetleri PDF s.23–24 ve31 (basılı21–22 ve29) ile Aurelia TYT Fizik Newton Hareket Yasaları kopya kağıdı PDF s.1–16 doğrudan okundu. Aurelia dosyasındaki diğer MEB Fizik9/11 atıfları ve ÖSYM örneği ayrıca yeni kaynak/soru doğrulaması sayılmadı. Bu kapsamlı anlatım ve örnekler uygulama için özgün yazıldı; klasik sabit kütle ve belirtilen basit temas/sürtünme koşullarıyla sınırlıdır.",
+    "MEBİ AYT Fizik Konu Özetleri PDF s.23–24 ve 31 (basılı 21–22 ve 29) ile Aurelia TYT Fizik Newton Hareket Yasaları kopya kağıdı PDF s.1–16 doğrudan okundu. Kuvvet–ivme grafiği için MEBİ TYT Fizik Konu Özetleri PDF s.42 (basılı 40) incelendi; grafikteki sayılar özgün. Aurelia dosyasındaki diğer MEB Fizik 9/11 atıfları ve ÖSYM örneği ayrıca doğrulanmadı. Anlatım klasik sabit kütle ve belirtilen basit temas/sürtünme koşullarıyla sınırlıdır.",
 };
 
 export const electricFieldGuide: LessonGuide = {

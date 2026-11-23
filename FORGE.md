@@ -1,4 +1,8 @@
-# Soru görselleri · ilk iki kart
+# Soru görselleri
+
+Kuvvet ve Newton Yasaları anlatımında kütle sürgüsü, kuvvet–ivme doğrusunu ve eğim hesabını aynı veriden üretir. Newton Hareket Yasaları Kopya Kağıdı, kuvvet ve ivme farklarını ayrı sütunlarda gösteren çözümlü örneği içerir. Yeni özgün soruda iki sayısal nokta çizilir. İpucu, aynı noktaları satır ve sütun başlıklı bir tabloyla verir. Çözüm yardımcı çizgileri ilgili adımda ve kütle hesabını bir sonraki adımda gösterir. Eksen düzeni MEBİ TYT Fizik Konu Özetleri’nin fiziksel 42. sayfasından doğrulandı. Sorunun sayıları uygulama için yazıldı.
+
+320 pikselde, %200 arayüz ve %150 yazıda eksen adları taşıyordu. Grafikte semboller kaldı, birimler görünür açıklamaya alındı ve fark etiketine çizgiden ayrı yer açıldı. Çevrimdışı model, soru, ipucu, çözüm, ayrı Kopya Kağıdı ve kaydedilmiş deneme akışları aynı tarayıcı paketinde doğrulandı. Tarihsel soru, rehber ve özet kayıtları ilk kayıttaki özetleriyle karşılaştırılmaya devam ediyor. Tam PDF kapanışı veya üretim yayını bu çalışmaya eklenmedi.
 
 Doğruda Açılar kartında verilen kesişim çizildi. İpucu ortak kolu gösterir. Üç çözüm çizimi komşu açının bulunmasını, sonraki doğrusal çifti ve ters açıyı sırayla gösterir. Kaynak, Geometrinin Dili ve Doğruda Açılar 5.1’in fiziksel 2 ve 4. sayfalarıdır.
 
@@ -204,7 +208,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 177 | 311 / 311 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 178 | 312 / 312 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
 | TYT Biyoloji | 36 / 36 | 22 · 80 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 14 |
 | TYT Tarih | 24 / 24 | 14 · 41 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 10 |
@@ -217,14 +221,14 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **405 · 1670** | **6.656 / 6.656 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **105** |
+| **Toplam** | **510 / 510** | **405 · 1671** | **6.657 / 6.657 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
 | Dal kaydında okunan veya eşlenen PDF / arşiv envanteri | 119 / 8.981 · %1,33 |
 | 99_ÖSYM PDF (işlenen / beyan edilen) | 18 / 1.001 · %1,80 |
 | 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 76 |
-| Kademeli çözüm paneli bulunan soru | 6.656 / 6.656 · %100,00 |
+| Kademeli çözüm paneli bulunan soru | 6.657 / 6.657 · %100,00 |
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
 | Ara hatırlama (mikro ritim): ders · soru | 505 / 510 · %99,02 · 3.052 soru |

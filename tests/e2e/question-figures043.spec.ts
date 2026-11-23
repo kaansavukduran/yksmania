@@ -3,6 +3,86 @@ import { openCourse, prepare, storage } from "./helpers/revisedCourse";
 import { examDraftSchema } from "../../src/domain/examModel";
 import { lineAnglesPractice042 } from "../../src/learning/geometryConditions042Practice";
 
+test("kuvvet–ivme grafiğini, hücreleri ve eğim hesabını çevrimdışı okur", async ({ page, context }, info) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  await context.setOffline(true);
+  await openCourse(page, { lesson: "newton", search: "Kuvvet ve Newton" });
+  await page.getByText("İçindekiler", { exact: true }).click();
+  await page.getByRole("button", { name: "Kuvvet–ivme grafiğinden kütleyi oku", exact: true }).click();
+  const model = page.locator('.section-figure[data-section-figure="Kuvvet–ivme grafiğinden kütleyi oku"]');
+  const initial = await storage(page);
+  await expect(model).toContainText("= 4 kg");
+  const slider = model.getByRole("slider", { name: /Kütle/ });
+  await slider.press("End");
+  await expect(model).toContainText("(24 − 12) N");
+  await expect(model).toContainText("= 6 kg");
+  await checkFigureBounds(model);
+  expect((await storage(page)).sessions).toEqual(initial.sessions);
+  expect((await storage(page)).reviews).toEqual(initial.reviews);
+  await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
+  for (let i = 0; i < 5; i++) {
+    await page.locator(".answer-options .answer").last().click();
+    await page.getByRole("button", { name: "Cevabı kontrol et", exact: true }).click();
+    await page.getByRole("button", { name: "Sonraki soru", exact: true }).click();
+  }
+
+  const graph = page.getByRole("figure", { name: "Net kuvvet–ivme grafiği", exact: true });
+  const table = page.getByRole("table", { name: /Soru grafiğinde işaretli iki noktanın/ });
+  const delta = page.getByRole("figure", { name: "Kuvvet ve ivme farklarını oku", exact: true });
+  const mass = page.getByRole("figure", { name: "Grafiğin eğimi kütleyi verir", exact: true });
+  await expect(graph.getByRole("img")).toHaveAccessibleDescription(/P noktasında 2 m\/s² ve 6 N, Q noktasında 4 m\/s² ve 12 N/);
+  await checkFigureBounds(graph);
+  await expect(table).toHaveCount(0);
+  await expect(delta).toHaveCount(0);
+  await expect(mass).toHaveCount(0);
+  const before = await storage(page);
+  await page.getByRole("button", { name: "İpucu al", exact: true }).press("Enter");
+  await expect(table.getByRole("columnheader")).toHaveText(["Nokta", "İvme (m/s²)", "Net kuvvet (N)"]);
+  await expect(table.getByRole("rowheader")).toHaveText(["P", "Q"]);
+  await expect(table.getByRole("cell")).toHaveText(["2", "6", "4", "12"]);
+  expect((await storage(page)).draft?.helpLevel).toBe(1);
+  await expect(delta).toHaveCount(0);
+
+  await page.getByRole("button", { name: "Adım adım çözüm", exact: true }).press("Enter");
+  await page.getByRole("button", { name: "Sonraki adım", exact: true }).press("Enter");
+  await expect(delta.getByRole("img")).toHaveAccessibleDescription(/yatay fark 2 m\/s², düşey fark 6 N/);
+  await checkFigureBounds(delta);
+  const deltaLabel = delta.locator("svg text").filter({ hasText: /^ΔF$/ });
+  expect(await deltaLabel.evaluate((text: SVGTextElement) => {
+    const guide = [...text.ownerSVGElement!.querySelectorAll<SVGLineElement>("line:not(.source-figure-guide)")].at(-1)!;
+    return text.getBBox().x - guide.x1.baseVal.value;
+  })).toBeGreaterThan(4);
+  await expect(mass).toHaveCount(0);
+  await page.getByRole("button", { name: "Sonraki adım", exact: true }).press("Enter");
+  await expect(mass.getByRole("math")).toHaveAccessibleName(/Sonuç 3 kilogram/);
+  const after = await storage(page);
+  expect(after.sessions).toEqual(before.sessions);
+  expect(after.reviews).toEqual(before.reviews);
+  await graph.screenshot({ path: info.outputPath("kuvvet-ivme-320.png") });
+  await delta.screenshot({ path: info.outputPath("kuvvet-ivme-farklari-320.png") });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+});
+
+test("kuvvet–ivme örneği ayrı kopya kağıdında çevrimdışı açılır", async ({ page, context }) => {
+  await prepare(page);
+  const initial = await storage(page);
+  await context.setOffline(true);
+  await page.getByRole("button", { name: "Menüyü aç", exact: true }).click();
+  await page.locator(".sidebar").getByRole("button", { name: "Kopya Kağıtları", exact: true }).click();
+  await page.getByRole("textbox", { name: "Ders veya konu ara", exact: true }).fill("Newton hareket");
+  await page.getByRole("button", { name: "Newton hareket yasaları", exact: true }).click();
+  const section = page.locator(".cheat-section").filter({
+    has: page.getByRole("heading", { name: "Kuvvet–ivme grafiğinden kütleyi oku", exact: true }),
+  });
+  await expect(section).toContainText("8 / 2 = 4 kg");
+  await expect(section.getByText("İvme (m/s²)", { exact: true })).toHaveCount(2);
+  await expect(section.getByText("Net kuvvet (N)", { exact: true })).toHaveCount(2);
+  await expect(section.getByText("16", { exact: true })).toBeVisible();
+  expect((await storage(page)).sessions).toEqual(initial.sessions);
+  expect((await storage(page)).reviews).toEqual(initial.reviews);
+});
+
 test.use({
   locale: "tr-TR",
   timezoneId: "Europe/Istanbul",

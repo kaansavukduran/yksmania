@@ -9,6 +9,23 @@
   line-height: 1.6;
   overflow-wrap: anywhere;
 }
+.source-figure-table {
+  width: 100%;
+  max-width: 32rem;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+.source-figure-table caption {
+  padding-block-end: 0.65rem;
+  text-align: start;
+}
+.source-figure-table th,
+.source-figure-table td {
+  padding: 0.5em 0.35em;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  overflow-wrap: anywhere;
+}
 .source-figure-open {
   display: block;
   position: relative;
@@ -173,6 +190,11 @@
   stroke: none;
   font-size: 1em;
   font-family: inherit;
+}
+.source-figure-drawing .source-figure-guide {
+  stroke-dasharray: 3 4;
+  stroke-width: 1;
+  opacity: 0.65;
 }
 .source-figure-drawing .source-figure-point {
   fill: currentColor;

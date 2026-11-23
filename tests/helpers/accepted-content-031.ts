@@ -21,6 +21,11 @@ export function beforeFoundation031Registration(source: string): string {
     )
     .replace("  probabilityLesson036,\n", "")
     .replace(
+      'import { forceAccelerationQuestion } from "../learning/forceAccelerationPractice";\n',
+      "",
+    )
+    .replace("      forceAccelerationQuestion,\n", "")
+    .replace(
       'import { countingLessons034035 } from "../learning/countingSources034035";\n',
       "",
     )

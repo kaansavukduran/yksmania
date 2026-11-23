@@ -136,6 +136,13 @@ const revisions = [
       .map((id) => `tyt-geo-ucgen-esitsizligi-031-source-003-${id}`),
     oldSource: "MEBİ TYT Matematik Konu Özetleri, PDF 118–119 (basılı116–117); Aurelia TYT Geometri Tüm Konular ve Formüller, PDF 2. Üçgen varlığı ve açık aralık koşulları denetlenerek yazılmış özgün anlatım ve özgün öğretim soruları.",
   },
+  {
+    lesson: "newton", topic: "detail-117",
+    sections: 8, examples: 4, recall: 3, oldSheet: { sections: 8, examples: 2, recall: 3 },
+    appendedQuestions: ["newton-kuvvet-ivme-grafik"],
+    oldLessonSource: "MEB/OGM fizik kavramlarına dayalı özgün alıştırmalar.",
+    oldSource: "MEBİ AYT Fizik Konu Özetleri PDF s.23–24 ve31 (basılı21–22 ve29) ile Aurelia TYT Fizik Newton Hareket Yasaları kopya kağıdı PDF s.1–16 doğrudan okundu. Aurelia dosyasındaki diğer MEB Fizik9/11 atıfları ve ÖSYM örneği ayrıca yeni kaynak/soru doğrulaması sayılmadı. Bu kapsamlı anlatım ve örnekler uygulama için özgün yazıldı; klasik sabit kütle ve belirtilen basit temas/sürtünme koşullarıyla sınırlıdır.",
+  },
 ];
 
 const additions = new Set(revisions.flatMap(({ appendedQuestions }) => appendedQuestions));

@@ -22,6 +22,7 @@ export type SourceQuestionFigureSpec = FigureDescription &
   (
     | { kind: "image"; src: string; width: number; height: number }
     | { kind: "math"; expression: SourceMathNode }
+    | { kind: "table"; headers: readonly string[]; rows: readonly (readonly string[])[] }
     | {
         kind: "geometry";
         viewBox: readonly [number, number, number, number];
@@ -29,6 +30,7 @@ export type SourceQuestionFigureSpec = FigureDescription &
           from: Coordinate;
           to: Coordinate;
           emphasis?: boolean;
+          dashed?: boolean;
         }[];
         points?: readonly {
           at: Coordinate;
@@ -311,6 +313,21 @@ export function SourceQuestionFigure({
     <figure className="source-question-figure" aria-label={figure.title}>
       {figure.kind === "image" ? (
         <ImageFigure key={figure.src} figure={figure} />
+      ) : figure.kind === "table" ? (
+        <table className="source-figure-table">
+          <caption>{figure.alt}</caption>
+          <thead>
+            <tr>{figure.headers.map((header) => <th key={header} scope="col">{header}</th>)}</tr>
+          </thead>
+          <tbody>
+            {figure.rows.map(([label, ...values]) => (
+              <tr key={label}>
+                <th scope="row">{label}</th>
+                {values.map((value, i) => <td key={i}>{value}</td>)}
+              </tr>
+            ))}
+          </tbody>
+        </table>
       ) : figure.kind === "math" ? (
         <div
           className="source-math-layout"
@@ -339,7 +356,7 @@ export function SourceQuestionFigure({
               y1={line.from[1]}
               x2={line.to[0]}
               y2={line.to[1]}
-              className={line.emphasis ? "emphasized" : undefined}
+              className={line.dashed ? "source-figure-guide" : line.emphasis ? "emphasized" : undefined}
             />
           ))}
           {(figure.circles ?? []).map((circle, i) => (

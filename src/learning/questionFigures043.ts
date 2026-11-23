@@ -1,5 +1,6 @@
 import { identityHash, type HelpQuestion } from "../domain/questionHelpModel";
 import type { SourceQuestionFigureSpec } from "./SourceQuestionFigure";
+import { forceAccelerationFigures, forceAccelerationQuestion } from "./forceAccelerationPractice";
 
 const crossingQuestionId = "tyt-geo-acilar-kaynak-pekitirme-032-source-001-no-parallel";
 const givenAngle = 64;
@@ -151,6 +152,44 @@ type FigureBinding = {
   };
 };
 
+type QuestionForFigures = Omit<HelpQuestion, "options" | "explanation"> & {
+  options: readonly string[];
+  explanation?: string;
+};
+
+function stemRevision(question: QuestionForFigures) {
+  return identityHash(JSON.stringify([
+    question.id,
+    question.passage ?? null,
+    question.prompt,
+    question.options,
+    question.answer,
+  ]));
+}
+
+function helpRevision(question: QuestionForFigures, g: NonNullable<QuestionForFigures["guidance"]>) {
+  return identityHash(JSON.stringify([
+    question.hint,
+    question.explanation,
+    g.knowledge,
+    g.strategy,
+    g.steps,
+    g.optionReasons,
+    g.commonError,
+    g.check,
+  ]));
+}
+
+const graphQuestion = {
+  id: forceAccelerationQuestion.id,
+  prompt: forceAccelerationQuestion.prompt.tr,
+  options: forceAccelerationQuestion.options.map((option) => option.tr),
+  answer: forceAccelerationQuestion.answer,
+  hint: forceAccelerationQuestion.hint.tr,
+  explanation: forceAccelerationQuestion.explanation.tr,
+  guidance: forceAccelerationQuestion.guidance,
+};
+
 const bindings = new Map<string, FigureBinding>([
   [crossingQuestionId, {
     stemRevision: "1da6511ade8341",
@@ -168,34 +207,20 @@ const bindings = new Map<string, FigureBinding>([
     itemLabel: "Bileşke kuvvet ve ikinci yasanın özgün uygulaması",
     figures: forceFigures,
   }],
+  [graphQuestion.id, {
+    stemRevision: stemRevision(graphQuestion),
+    helpRevision: helpRevision(graphQuestion, graphQuestion.guidance),
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 42. sayfa, basılı 40. sayfa",
+    itemLabel: "Net kuvvet–ivme grafiğinden kütle okuma, özgün veriler",
+    figures: forceAccelerationFigures,
+  }],
 ]);
-
-type QuestionForFigures = Omit<HelpQuestion, "options" | "explanation"> & {
-  options: readonly string[];
-  explanation?: string;
-};
 
 export function questionFigures043(question: QuestionForFigures) {
   const binding = bindings.get(question.id);
-  if (!binding || identityHash(JSON.stringify([
-    question.id,
-    question.passage ?? null,
-    question.prompt,
-    question.options,
-    question.answer,
-  ])) !== binding.stemRevision) return undefined;
-
-  const g = question.guidance;
-  const helpMatches = g && identityHash(JSON.stringify([
-    question.hint,
-    question.explanation,
-    g.knowledge,
-    g.strategy,
-    g.steps,
-    g.optionReasons,
-    g.commonError,
-    g.check,
-  ])) === binding.helpRevision;
+  if (!binding || stemRevision(question) !== binding.stemRevision) return undefined;
+  const helpMatches = question.guidance && helpRevision(question, question.guidance) === binding.helpRevision;
 
   return {
     source: {

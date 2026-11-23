@@ -76,3 +76,30 @@ it("draws opposite force vectors in proportion and leaves the result to the work
   expect(view.stepFigures?.[0].alt).toContain(`+${10 - 4} N`);
   expect(view.stepFigures?.[1].alt).toContain(`saniye karede ${(10 - 4) / 2} metre ve sağa`);
 });
+
+it("retains force–acceleration values, units and revision across question and help", () => {
+  const q = lessonById("newton")!.questions.find((item) => item.id === "newton-kuvvet-ivme-grafik")!;
+  const input = {
+    id: q.id,
+    prompt: q.prompt.tr,
+    options: q.options.map((option) => option.tr),
+    answer: q.answer,
+    hint: q.hint.tr,
+    explanation: q.explanation.tr,
+    guidance: q.guidance,
+  };
+  const view = sourceQuestionPresentation(input)!;
+  expect(view.source.pageLabel).toBe("Fiziksel 42. sayfa, basılı 40. sayfa");
+  expect(view.hintFigure).toMatchObject({ kind: "table", rows: [["P", "2", "6"], ["Q", "4", "12"]] });
+  expect(view.figure?.alt).toContain("düşey eksen net kuvvet (N)");
+  expect(view.figure?.alt).not.toContain("kilogram");
+  expect(view.hintFigure?.alt).not.toContain("kilogram");
+  expect(view.stepFigures?.[0]?.alt).toContain("yatay fark 2 m/s², düşey fark 6 N");
+  expect(view.stepFigures?.[1]?.alt).toContain("Sonuç 3 kilogram.");
+  expect(input.options[input.answer]).toBe(`${(12 - 6) / (4 - 2)} kg`);
+  expect(sourceQuestionPresentation({ ...input, answer: 2 })).toBeUndefined();
+  const oldHelp = sourceQuestionPresentation({ ...input, explanation: "Eski açıklama." });
+  expect(oldHelp?.figure).toBe(view.figure);
+  expect(oldHelp?.hintFigure).toBeUndefined();
+  expect(oldHelp?.stepFigures).toBeUndefined();
+});

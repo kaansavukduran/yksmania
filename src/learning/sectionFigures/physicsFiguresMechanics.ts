@@ -328,6 +328,29 @@ const newton: Record<string, FigureDef> = {
       readout: ["a = 30 / (4 + 2) = 5 m/s²", "Temas: 2 · 5 = 10 N"],
     }),
   },
+  "Kuvvet–ivme grafiğinden kütleyi oku": {
+    caption: "Kütleyi değiştir. Aynı iki ivme değerinde gereken net kuvvetler ve doğrunun eğimi birlikte değişir.",
+    alt: "Net kuvvetin düşeyde, ivmenin yatayda olduğu grafik. Doğru orijinden geçer. İki nokta ve aralarındaki yatay ve düşey farklar işaretlidir.",
+    param: { label: "Kütle (kg)", min: 1, max: 6, step: 1, init: 4 },
+    draw: (mass) => {
+      const forceAt = (a: number) => a * mass;
+      const plot = (a: number, f: number) => v(a * 1.4, f / 6);
+      const lower = plot(2, forceAt(2));
+      const upper = plot(4, forceAt(4));
+      const corner = plot(4, forceAt(2));
+      return {
+        els: [
+          ...plotAxes(v(0, 0), 6.4, 4.3, 0, "İvme (m/s²)", "Net kuvvet (N)"),
+          curve([v(0, 0), upper]),
+          seg(lower, corner, { dash: true, tone: "muted" }),
+          seg(corner, upper, { dash: true, tone: "muted" }),
+          pt(lower, `2 m/s², ${forceAt(2)} N`, "nw", "a"),
+          pt(upper, `4 m/s², ${forceAt(4)} N`, "ne", "a"),
+        ],
+        readout: [`Eğim = (${forceAt(4)} − ${forceAt(2)}) N / (4 − 2) m/s² = ${mass} kg`],
+      };
+    },
+  },
 };
 
 export const physicsFiguresMechanics: Record<string, Record<string, FigureDef>> = {
