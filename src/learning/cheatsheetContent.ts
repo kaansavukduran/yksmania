@@ -117,6 +117,7 @@ import { newtonTimeTitle } from "./newtonTimeComparison";
 import { forcePairsTitle } from "./newtonForcePairs";
 import { frictionThresholdTitle } from "./newtonFrictionThreshold";
 import { cylinderPotentialTitle } from "./cylinderPotentialEnergy";
+import { hydropowerTitle } from "./hydropower062";
 import { lampEfficiencyTitle } from "./lampEfficiency061";
 import { railEnergyTitle } from "./railEnergy060";
 import { bounceEnergyTitle } from "./bounceEnergy059";
@@ -152,6 +153,10 @@ export interface CheatSheet {
 
 const revisedSectionTextByLesson = new Map([
   ["enerji-ve-hareket", new Map([
+    [hydropowerTitle, [
+      "Saniyede geçen su kütlesi yoğunluk × debidir. Su gücü bu kütle akışı × g × yükseklik farkı.",
+      "Elektrik gücü = su gücü × toplam dönüşüm verimi. Aynı debi ve verimde yükseklik farkı ile elektrik gücü birlikte artar.",
+    ]],
     [lampEfficiencyTitle, [
       "Yararlı çıkış ve toplam giriş aynı zaman aralığından ve aynı sistem sınırından alınır. Verim = yararlı çıkış / toplam giriş.",
       "Aynı 6 W görünür ışık için %10 ve %25 örnek verimlerde girişler 60 W ve 24 W. Bunlar örneğe ait değerlerdir.",

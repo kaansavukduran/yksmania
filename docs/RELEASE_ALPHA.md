@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.62.0 · Hidroelektrik
+
+Yayın adayı. Su seviyesi farkını değiştirerek su girişini, türbin adımını ve elektrik çıkışını incele. Aynı veriler anlatımda, adım adım örnekte ve ayrı Kopya Kağıdı’nda yer alır.
+
 # ÖSYM Mania 0.61.0 · Lamba verimi
 
 Yayın adayı.
