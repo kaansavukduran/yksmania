@@ -265,20 +265,27 @@ test("dragging a real vertex has keyboard equivalents, ends cleanly, and survive
   await page.goto("/#/settings");
   await setThemePreference(page, "dark");
   const lab = await open(page, "ucgende-acilar");
+  // The preceding lesson figure loads separately and moves the lab when it mounts.
+  const chapterFigure = page.locator(
+    '[data-section-figure="Üç köşe bir üçgeni nasıl oluşturur?"] svg',
+  );
+  await expect(chapterFigure).toBeVisible();
   const before = learning(await stored(page));
   const vertex = lab.getByTestId("g031-drag-vertex");
   await vertex.scrollIntoViewIfNeeded();
-  const hit = await vertex.boundingBox(),
-    figure = await lab.locator("svg").boundingBox();
-  expect(hit).toBeTruthy();
-  expect(figure).toBeTruthy();
-  await page.mouse.move(hit!.x + hit!.width / 2, hit!.y + hit!.height / 2);
+  const { start, target } = await vertex.evaluate((node: SVGCircleElement) => {
+    const matrix = node.getScreenCTM();
+    if (!matrix) throw new Error("The drag handle is outside the rendered SVG");
+    const start = new DOMPoint(node.cx.baseVal.value, node.cy.baseVal.value);
+    const target = new DOMPoint(450, 130);
+    return {
+      start: start.matrixTransform(matrix).toJSON(),
+      target: target.matrixTransform(matrix).toJSON(),
+    };
+  });
+  await page.mouse.move(start.x, start.y);
   await page.mouse.down();
-  await page.mouse.move(
-    figure!.x + (figure!.width * 450) / 640,
-    figure!.y + (figure!.height * 130) / 570,
-    { steps: 12 },
-  );
+  await page.mouse.move(target.x, target.y, { steps: 12 });
   await page.mouse.up();
   await expect(
     lab.getByRole("slider", { name: "C köşesinin yatay konumu", exact: true }),
