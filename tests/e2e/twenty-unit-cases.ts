@@ -29,6 +29,7 @@ function unit(
   exploration: string,
   interact: LessonCase["interact"],
   assertOutcome: LessonCase["assertOutcome"],
+  questionCount = 10,
 ): LessonCase {
   return {
     id,
@@ -42,6 +43,7 @@ function unit(
           ? ".turkish-live-sentence"
           : "svg",
     exploration,
+    questionCount,
     interact,
     assertOutcome,
   };
@@ -460,6 +462,7 @@ export const units: LessonCase[] = [
         "Tahminin bu modelde doğru.",
       );
     },
+    17,
   ),
   unit(
     "koklu-sayilar",

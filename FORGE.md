@@ -36,6 +36,8 @@ Zamanlayıcılar kapatıldığında kum saati ve deneme sayacı güncelleme dön
 
 Yerel `check`, derleme ve 13 tarayıcı testi geçti. Tam yerel birim koşusunda 4.046 test geçti ve değişmeyen çözüm rehberi testi 5 saniyede zaman aşımına uğradı. Aynı testi içeren 41 testlik hedefli tekrar geçti. AIONIA v1.7’nin ilgili maddeleri 23 Kasım’da canlı kaynaktan doğrulandı.
 
+Altı temel geometri dersinde etkileşimli model, ayrı yüklenen bölüm şeklinin önüne alındı. Önceki sürümde şeklin yüklenmesi üçgenin sürükleme alanını 561 piksel kaydırdı. Gecikmeli yükleme sırasında gerçek sürükleme dört tekrarda da hedef köşeye ulaştı. Çevrimdışı kayıt, klavye ve 320 px dahil beş geometri testi geçti. Dalın tam yayın doğrulaması sürüyor.
+
 # 0.26.0 masaüstü doğrulaması
 
 23 Kasım 2026, Türkiye saati. 21 Kasım'da `58cc739c1d0a9c90f522c9e86751636d092a2f73` kaynaklı 0.26.0 web sürümü elle başlatılan Pages işiyle yayımlandı. Aynı kaynakta tip, içerik, 4.046 birim testi ve dört gruptaki 1.393 tarayıcı testi geçti. Windows ve Linux paket testlerinde TYT karma denemesinin eski düğme adı zaman aşımına yol açtı. [Web yayını](https://github.com/kaansavukduran/yksmania/actions/runs/44912127598) · [İlk CI](https://github.com/kaansavukduran/yksmania/actions/runs/44912127339)
