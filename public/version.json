@@ -1,7 +1,7 @@
 {
-  "version": "0.47.0",
+  "version": "0.48.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Üçgen eşitsizliğinde üç ayrı şekli değerlendir. Açık kenar aralığı, eş açıların karşısındaki kenarlar ve dik üçgenin aritmetik ortalaması adım adım çevrimdışı görünür."
+    "tr": "Kuvvet ve Newton Yasaları’nda her hız–zaman grafiği kendi seçeneğinde bulunur. Aynı grafikler deneme sonuçlarında açılır. Kuvvet ve ivme grafikleri, ipucu ve çözüm adımlarında görünür."
   }
 }

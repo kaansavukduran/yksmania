@@ -590,6 +590,7 @@ function ExamRunner({
               key={q.id}
               variant="exam"
               options={q.options}
+              optionFigures={sourcePresentation?.optionFigures}
               selected={draft.answers[draft.index] ?? null}
               checked={false}
               answer={-1}
@@ -1001,13 +1002,21 @@ function ExamResults({
                 <SourceQuestionFigure figure={sourcePresentation.figure} />
               )}
               <ol type="A">
-                {q.options.map((option, i) => (
-                  <li key={i}>
-                    {option}
-                    {i === q.answer && <strong> · Doğru yanıt</strong>}
-                    {i === selected && <span> · Senin yanıtın</span>}
-                  </li>
-                ))}
+                {q.options.map((option, i) => {
+                  const figure = sourcePresentation?.optionFigures?.[i];
+                  return (
+                    <li key={i}>
+                      {option}
+                      {i === q.answer && <strong> · Doğru yanıt</strong>}
+                      {i === selected && <span> · Senin yanıtın</span>}
+                      {figure && (
+                        <div className="answer-option-figure">
+                          <SourceQuestionFigure figure={figure} />
+                        </div>
+                      )}
+                    </li>
+                  );
+                })}
               </ol>
               <div className="exam-explanation">
                 <h4>Çözümün mantığı</h4>

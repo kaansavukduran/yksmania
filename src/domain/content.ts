@@ -1,5 +1,6 @@
 import { probabilityLesson036 } from "../learning/probabilitySource036";
 import { forceAccelerationQuestion } from "../learning/forceAccelerationPractice";
+import { forceVelocityQuestion } from "../learning/forceVelocityOptions048";
 import { countingLessons034035 } from "../learning/countingSources034035";
 import { permutationLessons032033 } from "../learning/permutationSources032033";
 import { factorizationSource028Practice } from "../learning/factorizationSource028Revision";
@@ -772,6 +773,7 @@ const baseLessons: Lesson[] = [
         "newton-first",
       ),
       forceAccelerationQuestion,
+      forceVelocityQuestion,
     ],
   },
   {

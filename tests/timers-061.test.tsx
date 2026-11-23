@@ -93,6 +93,7 @@ describe("Forge061 süre dolsa da deneme açık kalır", () => {
   it("an expired exam stays open with calm extra time and no lock or alarm text", () => {
     const start = Date.now() - 2 * 3600_000;
     store061.state = beginExam(initialState(), spec(), start);
+    const optionCount = store061.state.examDraft!.items[0].options.length;
     const html = renderToStaticMarkup(<Exams navigate={() => {}} />);
     const layoutStart = html.indexOf('<div class="exam-layout">');
     expect(layoutStart).toBeGreaterThan(0);
@@ -104,7 +105,7 @@ describe("Forge061 süre dolsa da deneme açık kalır", () => {
     expect(timerAndNotices).not.toContain("değiştirilemez");
     expect(timerAndNotices).toContain("Süre dolsa da deneme sen bitirene kadar açık kalır.");
     const answerButtons = html.match(/<button\b[^>]*class="exam-answer\s[^"]*"[^>]*>/g) ?? [];
-    expect(answerButtons).toHaveLength(5);
+    expect(answerButtons).toHaveLength(optionCount);
     expect(answerButtons.every((button) => !/\sdisabled\b/.test(button))).toBe(true);
     expect(html).toMatch(/<button class="primary exam-finish"(?![^>]*disabled)/);
     expect(html).not.toMatch(/exam-number[^>]*disabled/);

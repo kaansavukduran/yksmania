@@ -38,13 +38,13 @@ vi.mock("react", async (original) => {
     if (typeof prev?.cleanup === "function") prev.cleanup();
     h.effects[idx] = { deps, cleanup: fn() };
   };
-  return { ...actual, default: actual, useState, useRef, useEffect };
+  return { ...actual, default: actual, useState, useRef, useEffect, useId: () => "answer-options-test" };
 });
 
 import { AnswerOptions } from "../src/components/AnswerOptions";
 
 type Props = Parameters<typeof AnswerOptions>[0];
-type El = ReactElement<{ children?: ReactNode; className?: string; type?: string; onClick?: () => void; "aria-label"?: string }>;
+type El = ReactElement<{ children?: ReactNode; className?: string; id?: string; type?: string; onClick?: () => void; "aria-label"?: string; "aria-describedby"?: string }>;
 function render(props: Props) {
   let tree: ReactNode;
   for (let pass = 0; pass < 5; pass++) {
@@ -105,6 +105,16 @@ describe("AnswerOptions (052)", () => {
     const list = buttons(render(base()));
     expect(list.length).toBe(6);
     expect(list.every((b) => b.props.type === "button")).toBe(true);
+  });
+  it("associates a graphic description with its option and keeps the figure outside the button", () => {
+    const tree = render(base({
+      optionFigures: [{ kind: "geometry", title: "Grafik", alt: "Doğru orijinden geçer.", viewBox: [0, 0, 100, 100] }],
+    }));
+    const [first, , second] = buttons(tree);
+    const description = all(tree).find((node) => node.props?.id === first.props["aria-describedby"]);
+    expect(description?.props.children).toBe("Doğru orijinden geçer.");
+    expect(all(first.props.children)).not.toContain(description);
+    expect(second.props["aria-describedby"]).toBeUndefined();
   });
   it("struck options reset by themselves when the question changes", () => {
     let tree = render(base());

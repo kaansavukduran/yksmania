@@ -4580,6 +4580,21 @@ progress::-moz-progress-bar {
   flex: 1 1 auto;
   min-width: 0;
 }
+.answer-row.has-option-figure {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 0.45rem;
+}
+.answer-row.has-option-figure > .answer-option-figure {
+  grid-column: 1 / -1;
+}
+.answer-option-figure .source-question-figure {
+  margin-block: 0.25rem;
+  max-inline-size: 21rem;
+}
 .answer-strike {
   flex: 0 0 auto;
   min-width: 44px;

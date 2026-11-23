@@ -7,12 +7,12 @@ Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış i�
 | Güncel sürüm için defterdeki durum | PDF |
 | --- | ---: |
 | Tam aktarımı doğrulanan | 0 |
-| Kısmi aktarımı doğrulanan | 2 |
+| Kısmi aktarımı doğrulanan | 5 |
 | İşlenmediği doğrulanan | 0 |
-| Belirsiz | 9.982 |
+| Belirsiz | 9.979 |
 | Toplam | 9.984 |
 
-Tam aktarımı doğrulanan satır sayısı şu anda sıfır. Arşivde gerçekte kaç PDF’nin tam işlendiği belirsiz. Bu envanter güncellemesi yeni sayfa okuma veya öğretim aktarımı kaydetmedi.
+Tam aktarımı doğrulanan güncel satır sayısı sıfır. Arşivde gerçekte kaç PDF’nin tam işlendiği belirsiz. Kanonik envanter güncellemesi okuma sayısını değiştirmedi. Daha sonra güncel üç geometri PDF’sine 36 fiziksel sayfa okuma ve kısmi öğretim bağı eklendi.
 
 ## Açı ve kenar koşulları · 23 Kasım 2026
 

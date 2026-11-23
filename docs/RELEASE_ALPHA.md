@@ -1,3 +1,10 @@
+# ÖSYM Mania 0.48.0 · Hız–zaman grafikli şıklar
+
+Yayın adayı.
+
+- Kuvvet ve Newton Yasaları’nda dört farklı hız–zaman grafiği arasından seçim yap.
+- İpucu ve çözüm, kuvvet ve ivme grafiklerini ilgili adımda açar. Şık grafikleri aynı kayıtlı sorunun deneme sonucunda da görünür.
+
 # ÖSYM Mania 0.47.0 · Kenar ortalaması ve gerçek üçgen
 
 Yayın adayı.

@@ -1,3 +1,13 @@
+# Hız–zaman grafikli şıklar · 0.48.0 adayı
+
+Kuvvet ve Newton Yasaları’nda sabit net kuvvet altında başlayan bir cismin hız grafiğini dört seçenek arasından seç. MEBİ TYT Fizik Konu Özetleri fiziksel sayfa 42, basılı sayfa 40, aynı sabit kuvvet ve ivmeden hızın nasıl değiştiğini grafiklerle gösterir. Alıştırmanın sayıları özgündür.
+
+Her grafiğin eksenleri, birimleri ve uç değerleri görünür. Klavyeyle seçerken ekran okuyucu şıkkın başlangıç ve bitiş değerlerini okur. İpucu kuvvetin zaman grafiğini, çözüm sonraki adımlarında ivme ve hız grafiklerini gösterir. Aynı revizyonun grafikleri deneme sonucundaki ilgili şıklarda durur. Çevrimdışı ders, yardımın kalıcı kaydı, eski deneme ve sonuç dahil yedi tarayıcı akışı geçti. Yanlış incelemesi ve yazdırma için kayıtlı soru revizyonu ayrıca bağlanacak.
+
+Tam birim çalıştırması iki eski test varsayımını yakaladı. Şık bileşeninin doğrudan çağrıldığı test düzeneğine erişilebilir bağlantı için kullanılan React kimliğinin sabit test karşılığı eklendi. Süresi dolan deneme testi, değişebilen soru seçimi için sabit beş şık bekliyordu. Test şimdi gerçek kayıtlı sorudaki her şıkkın etkin kaldığını denetliyor.
+
+0.42.0 Windows ve Linux varlıkları yayımlandı. Aynı tam commit GitHub Pages ve Cloudflare’da çalışıyor. İki sitede toplam 348’er dosya yayın girdisiyle eşleşti. GitHub Pages canlı tarayıcı denetimi 118 çevrimdışı içerik grubunu açtı. Cloudflare’dan alınan dosyalarla ayrı 4 çevrimdışı geometri akışı geçti. [Masaüstü sürümü](https://github.com/kaansavukduran/yksmania/releases/tag/v0.42.0-alpha.1) · [GitHub Pages testi](https://github.com/kaansavukduran/yksmania/actions/runs/45194454669)
+
 # Kenar ortalaması ve gerçek üçgen · 0.47.0 adayı
 
 Üçgen eşitsizliğindeki özgün soru, üç ayrı çizimde uzunluk, açı ve dik üçgen verilerini gösterir. Geometri 003 sürüm 5.1 fiziksel sayfa 6, 2021 TYT Temel Matematik 32’nin fiziksel 35. sayfası ve 45. sayfadaki B cevap kaydıyla karşılaştırıldı. Özgün çalışmada 2 ve 6 birim için açık kenar aralığı, 72° ve 36° için iki eş açı ve 6 birimlik dik kenar için 6–8–10 örneği kullanıldı.
@@ -234,7 +244,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 178 | 312 / 312 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 178 | 313 / 313 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
 | TYT Biyoloji | 36 / 36 | 22 · 80 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 14 |
 | TYT Tarih | 24 / 24 | 14 · 41 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 10 |
@@ -247,14 +257,14 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **405 · 1671** | **6.657 / 6.657 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **105** |
+| **Toplam** | **510 / 510** | **405 · 1671** | **6.658 / 6.658 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
 | Dal kaydında okunan veya eşlenen PDF / arşiv envanteri | 119 / 8.981 · %1,33 |
 | 99_ÖSYM PDF (işlenen / beyan edilen) | 18 / 1.001 · %1,80 |
 | 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 76 |
-| Kademeli çözüm paneli bulunan soru | 6.657 / 6.657 · %100,00 |
+| Kademeli çözüm paneli bulunan soru | 6.658 / 6.658 · %100,00 |
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
 | Ara hatırlama (mikro ritim): ders · soru | 505 / 510 · %99,02 · 3.052 soru |

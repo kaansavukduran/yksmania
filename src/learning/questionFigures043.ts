@@ -1,6 +1,7 @@
 import { identityHash, type HelpQuestion } from "../domain/questionHelpModel";
 import type { SourceQuestionFigureSpec } from "./SourceQuestionFigure";
 import { forceAccelerationFigures, forceAccelerationQuestion } from "./forceAccelerationPractice";
+import { forceVelocityFigureData, forceVelocityQuestion } from "./forceVelocityOptions048";
 
 const crossingQuestionId = "tyt-geo-acilar-kaynak-pekitirme-032-source-001-no-parallel";
 const givenAngle = 64;
@@ -146,7 +147,8 @@ type FigureBinding = {
   pageLabel: string;
   itemLabel: string;
   figures: {
-    figure: SourceQuestionFigureSpec;
+    figure?: SourceQuestionFigureSpec;
+    optionFigures?: readonly SourceQuestionFigureSpec[];
     hintFigure: SourceQuestionFigureSpec;
     stepFigures: readonly SourceQuestionFigureSpec[];
   };
@@ -189,6 +191,15 @@ const graphQuestion = {
   explanation: forceAccelerationQuestion.explanation.tr,
   guidance: forceAccelerationQuestion.guidance,
 };
+const velocityQuestion = {
+  id: forceVelocityQuestion.id,
+  prompt: forceVelocityQuestion.prompt.tr,
+  options: forceVelocityQuestion.options.map((option) => option.tr),
+  answer: forceVelocityQuestion.answer,
+  hint: forceVelocityQuestion.hint.tr,
+  explanation: forceVelocityQuestion.explanation.tr,
+  guidance: forceVelocityQuestion.guidance,
+};
 
 const bindings = new Map<string, FigureBinding>([
   [crossingQuestionId, {
@@ -215,6 +226,14 @@ const bindings = new Map<string, FigureBinding>([
     itemLabel: "Net kuvvet–ivme grafiğinden kütle okuma, özgün veriler",
     figures: forceAccelerationFigures,
   }],
+  [velocityQuestion.id, {
+    stemRevision: stemRevision(velocityQuestion),
+    helpRevision: helpRevision(velocityQuestion, velocityQuestion.guidance),
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 42. sayfa, basılı 40. sayfa",
+    itemLabel: "Sabit kuvvet, ivme ve hız–zaman grafiklerinin özgün uygulaması",
+    figures: forceVelocityFigureData,
+  }],
 ]);
 
 export function questionFigures043(question: QuestionForFigures) {
@@ -231,6 +250,7 @@ export function questionFigures043(question: QuestionForFigures) {
     },
     originalExerciseId: question.id,
     figure: binding.figures.figure,
+    optionFigures: binding.figures.optionFigures,
     hintFigure: helpMatches ? binding.figures.hintFigure : undefined,
     stepFigures: helpMatches ? binding.figures.stepFigures : undefined,
   };

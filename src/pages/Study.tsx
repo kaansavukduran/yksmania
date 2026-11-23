@@ -276,6 +276,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
               questionKey={`${draft.lessonId}-${draft.index}`}
             key={`options-${draft.index}`}
             options={question.options.map((option) => l(option))}
+            optionFigures={sourcePresentation?.optionFigures}
             selected={draft.selected}
             checked={draft.checked}
             answer={question.answer}

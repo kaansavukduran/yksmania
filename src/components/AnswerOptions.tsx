@@ -1,6 +1,7 @@
 import { typeset } from "../domain/typeset";
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useId, useRef, useState, type ReactNode } from "react";
 import { CheckCircle2, X } from "lucide-react";
+import { SourceQuestionFigure, type SourceQuestionFigureSpec } from "../learning/SourceQuestionFigure";
 
 /*
  * Answer choices with exam-paper habits: strike through options you have
@@ -10,6 +11,7 @@ import { CheckCircle2, X } from "lucide-react";
  */
 export function AnswerOptions({
   options,
+  optionFigures,
   selected,
   checked,
   answer,
@@ -22,6 +24,7 @@ export function AnswerOptions({
   questionKey,
 }: {
   options: ReactNode[];
+  optionFigures?: readonly SourceQuestionFigureSpec[];
   selected: number | null;
   checked: boolean;
   answer: number;
@@ -38,6 +41,7 @@ export function AnswerOptions({
    */
   questionKey?: string | number;
 }) {
+  const figureDescriptionId = useId();
   const [struck, setStruck] = useState<number[]>([]);
   const [strikeKey, setStrikeKey] = useState(questionKey);
   if (strikeKey !== questionKey) {
@@ -54,7 +58,7 @@ export function AnswerOptions({
       const { count, checked, busy, onSelect, onEnter, onHint } = latest.current;
       if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey) return;
       const el = event.target as HTMLElement | null;
-      if (el?.closest("input, textarea, select, [contenteditable='true'], canvas")) return;
+      if (el?.closest("input, textarea, select, [contenteditable='true'], canvas, .answer-option-figure")) return;
       const key = event.key.toLocaleUpperCase("tr-TR");
       const digit = Number(event.key);
       const index =
@@ -93,8 +97,10 @@ export function AnswerOptions({
     <div className={variant === "exam" ? "exam-answers answer-options-exam" : "answer-options"} role="group" aria-label={label}>
       {options.map((option, i) => {
         const isStruck = struck.includes(i) && !checked;
+        const figure = optionFigures?.[i];
+        const descriptionId = figure ? `${figureDescriptionId}-${i}` : undefined;
         return (
-          <div className="answer-row" key={i}>
+          <div className={figure ? "answer-row has-option-figure" : "answer-row"} key={i}>
             <button
               type="button"
               className={
@@ -105,6 +111,7 @@ export function AnswerOptions({
               disabled={checked || busy}
               aria-pressed={selected === i}
               aria-keyshortcuts={`${i + 1} ${letter(i)}`}
+              aria-describedby={descriptionId}
               onClick={() => {
                 if (struck.includes(i)) toggleStrike(i);
                 onSelect(i);
@@ -126,6 +133,12 @@ export function AnswerOptions({
               >
                 <X size={16} aria-hidden="true" />
               </button>
+            )}
+            {figure && (
+              <div className="answer-option-figure">
+                <span id={descriptionId} className="sr-only">{figure.alt}</span>
+                <SourceQuestionFigure figure={figure} />
+              </div>
             )}
           </div>
         );
