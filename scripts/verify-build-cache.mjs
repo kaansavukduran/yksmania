@@ -5,8 +5,12 @@ import { legacyPublicImages, replacementImageFormats } from "./legacy-public-ass
 const root = path.resolve(process.argv[2] || "dist");
 const sw = await fs.readFile(path.join(root, "sw.js"), "utf8");
 const cached = new Map();
-for (const match of sw.matchAll(/\{url:"([^"]+)",revision:(null|"[^"]+")\}/g)) {
-  const [, url, revision] = match;
+const generated = [...sw.matchAll(/\{url:"([^"]+)",revision:(null|"[^"]+")\}/g)]
+  .map(([, url, revision]) => [url, revision]);
+const injected = [...sw.matchAll(/\{"revision":(null|"[^"]+"),"url":"([^"]+)"\}/g)]
+  .map(([, revision, url]) => [url, revision]);
+if (generated.length && injected.length) throw Error("Ambiguous offline cache manifest");
+for (const [url, revision] of [...generated, ...injected]) {
   // Manifest icons may be included by both VitePWA and the asset glob.
   if (cached.has(url) && cached.get(url) !== revision)
     throw Error(`Conflicting offline asset revisions: ${url}`);

@@ -94,6 +94,9 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
+      strategies: "injectManifest",
+      srcDir: "src",
+      filename: "sw.js",
       registerType: "prompt",
       includeAssets: [],
       manifest: {
@@ -133,18 +136,13 @@ export default defineConfig({
           },
         ],
       },
-      workbox: {
+      injectManifest: {
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         dontCacheBustURLsMatching: /assets\/.*-[\w-]{8}\./,
         globPatterns: [
           "**/*.{js,mjs,css,html,svg,png,webp,woff2,wasm,bcmap,pfb,ttf}",
         ],
         globIgnores: [...legacyPublicImages],
-        navigateFallback: `${appBase === "./" ? "" : appBase}index.html`,
-        cleanupOutdatedCaches: true,
-        clientsClaim: true,
-        // Cap concurrency and retry temporary host errors during precaching.
-        importScripts: ["sw-fetch-retry.js"],
       },
     }),
   ],

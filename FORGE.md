@@ -1,3 +1,7 @@
+# Çevrimdışı hazırlık · 0.77.0 adayı
+
+Cloudflare önizlemesinde iki normal öğrenme akışında ilk çevrimdışı hazırlık yaklaşık 26 ve 22 saniye bekletti. Varsayılan Workbox kurulum döngüsü dosyaları tek tek alıyordu. Aday, aynı dosya kapsamı ve önbellek anahtarlarıyla en fazla dört kurulum isteğini eşzamanlı işler. 70 ms ek gecikmeli Chromium karşılaştırmasında ön hazırlık 29,56 saniyeden 9,38 saniyeye indi. İki kurulumda da 341 manifest girdisi ve çevrimdışı ders açılışı doğrulandı. [Önizleme denetimi](https://github.com/kaansavukduran/yksmania/actions/runs/45257305159)
+
 # Telin boyu ve kesit alanı · 0.76.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 109, basılı 107. sayfada kesit, tel boyu, temsili parçacıklar ve 20 °C öz direnç tablosu gösteriliyor. Boy iki kat olunca direnç iki kat, alan iki kat olunca direnç yarıya iner. Dairesel telde çap iki kat olunca alan dört katına çıkar. Bakır örneğinde 0,017 Ω’dan 0,00425 Ω’a inilir. Öğrenci ders ve Kopya Kağıdı’nda aynı verilenleri görür. Mevcut uygulama sorusunun şeklinde yalnız verilen çaplar ve eşit boy yer alır. Son direnç oranı ilgili çözüm adımında açılır.

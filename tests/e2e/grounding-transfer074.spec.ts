@@ -73,9 +73,12 @@ test("mevcut topraklama sorusunda elektron oku yalnız son adımda ve kaydedilen
   await expect(page.getByRole("figure", { name: "Negatif yükün ne anlattığını hatırla" }).getByRole("table")).toBeVisible();
   await expect.poll(async () => (await storage(page)).draft?.helpLevel).toBe(1);
   await page.getByRole("button", { name: "Adım adım çözüm", exact: true }).press("Enter");
+  await expect.poll(async () => (await storage(page)).draft?.helpLevel).toBe(2);
+  const nextStep = page.getByRole("button", { name: "Sonraki adım", exact: true });
   for (const level of [3, 4, 5]) {
     await expect(result).toHaveCount(0);
-    await page.getByRole("button", { name: "Sonraki adım", exact: true }).press("Enter");
+    await expect(nextStep).toBeEnabled();
+    await nextStep.press("Enter");
     await expect.poll(async () => (await storage(page)).draft?.helpLevel).toBe(level);
   }
   await expect(result.getByRole("img")).toHaveAccessibleDescription(/küreden iletken tel boyunca Dünya’ya yöneliyor/);

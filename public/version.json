@@ -1,8 +1,8 @@
 {
-  "version": "0.76.0",
+  "version": "0.77.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Elektrik Akımı dersinde telin boyunu, kesitini ve malzemesini değiştir. Çapla alanın farkını çizimden, ayrı Kopya Kağıdı’ndan ve adım adım sorudan incele.",
-    "en": "Change a wire’s length, cross-sectional area, and material. Compare diameter and area with the diagram, separate study sheet, and guided practice."
+    "tr": "Çevrimdışı kullanım için gereken dersler, çizimler ve yazı tipleri ilk kurulumda daha kısa sürede hazırlanır.",
+    "en": "Lessons, figures, and fonts required for offline use are prepared faster during the first installation."
   }
 }

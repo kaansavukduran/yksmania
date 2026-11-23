@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.77.0 · Çevrimdışı hazırlık
+
+Yayın adayı. Tarayıcı dersleri, çizimleri ve yazı tiplerini dört eşzamanlı istekle hazırlar. Kurulum, bütün gerekli dosyalar kullanılabilir olunca tamamlanır.
+
 # ÖSYM Mania 0.76.0 · Telin direnci
 
 Yayın adayı. Elektrik Akımı’nda önce telin boyunu, sonra kesit alanını ve çapını değiştir. 20 °C’de üç malzemeyi aynı ölçülerde karşılaştır. Ayrı Kopya Kağıdı ve özgün sorunun şekli, ipucu ve üç çözüm adımı aynı bağıntıyı kullanır.
