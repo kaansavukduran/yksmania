@@ -1,3 +1,4 @@
+import { electroscopeExample, electroscopeSection } from "../electroscopeInduction070";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
@@ -340,6 +341,14 @@ export function studyGuide(lessonId: string) {
       examples: guide.examples.map((example) => example.title === "Ötele ve başlangıca geri dön"
         ? { ...example, steps: example.steps.map((step, index) => index === 0 ? { ...step, figureTitle: components } : step) }
         : example),
+    };
+  }
+  if (guide?.id === "durgun-elektrik") {
+    return {
+      ...guide,
+      sections: [...guide.sections, electroscopeSection],
+      examples: [...guide.examples, electroscopeExample],
+      source: `${guide.source} Yüklü elektroskoba temassız yaklaşma, MEBİ TYT Fizik Konu Özetleri fiziksel 94–96, basılı 92–94. sayfalarla karşılaştırıldı. Çizimdeki yerel yükler örnek model değerleridir.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

@@ -1,3 +1,4 @@
+import { electroscopeChargeText, electroscopeInduction, electroscopeTitle } from "../electroscopeInduction070";
 import { ball, poly, seg, txt, v, vec, type El, type FigureDef, type Tone, type V } from "./figureKit";
 
 /*
@@ -121,18 +122,52 @@ const scope: FigureDef = {
       if (s) els.push(txt(v(-0.45, 2.95), opp, "c", { tone: opp === "+" ? "warn" : "b", bold: true }), txt(v(0.45, 2.95), opp, "c", { tone: opp === "+" ? "warn" : "b", bold: true }));
       if (s) els.push(vec(v(0.9, s === "+" ? 1.4 : 2.6), v(0.9, s === "+" ? 2.6 : 1.4), { tone: "b", thin: true }), txt(v(1.05, 2.0), s === "+" ? "e⁻ yukarı çekilir" : "e⁻ aşağı itilir", "e", { tone: "b", small: true }));
     } else {
-      els.push(txt(v(2.6, 2.4), "kapalı → cisim nötr (kesin)", "e", { tone: "ink", small: true, bold: true }));
+      els.push(txt(v(2.6, 2.4), "kapalı → etki görülmedi", "e", { tone: "ink", small: true, bold: true }));
       els.push(txt(v(2.6, 1.6), "açık → cisim yüklü", "e", { tone: "ink", small: true, bold: true }));
       els.push(txt(v(2.6, 0.9), "+ mı − mi? bu gözlemle bilinmez", "e", { tone: "warn", small: true, bold: true }));
     }
     els.push(txt(v(-2.6, 5.3), " ", "c"), txt(v(6.6, -0.9), " ", "c"));
     const rows: [string, string][] = [
-      ["Nötr cisim belirgin yük ayrışması oluşturmaz: yapraklar kapalı kalır.", "Kapalı kalma, nötr cismi ayırt eden tek gözlemdir."],
+      ["Nötr cisim belirgin yük ayrışması oluşturmaz: yapraklar kapalı kalır.", "Bu modelde belirgin etki görülmedi. Zayıf bir etkinin ölçüm sınırında kalabileceğini unutma."],
       ["Pozitif cisim elektronları topuza çeker: topuz −, yapraklar + olur ve birbirini iter.", "Elektroskobun toplam yükü hâlâ 0; yalnız dağılım değişti."],
       ["Negatif cisim elektronları yapraklara iter: topuz +, yapraklar − olur ve açılır.", "Pozitif ve negatif cisim aynı açılmayı verir: işaret ayırt edilemez."],
-      ["Başlangıçta nötr elektroskopta: açılma = yüklü, kapalı = nötr.", "Elektroskop önceden yüklüyse yaprakların kapanması nötr demek olmayabilir; zıt yük yaklaşınca da kapanabilir."],
+      ["Bilinen başlangıçta açılma, yük etkisini gösterir. Kapalı kalma tek başına nötrlüğü kanıtlamaz.", "Elektroskop önceden yüklüyse yaprakların kapanması nötr demek olmayabilir; zıt yük yaklaşınca da kapanabilir."],
     ];
     return { els, readout: rows[step] };
+  },
+};
+
+const electroscopeInductionFigure: FigureDef = {
+  caption: "Negatif çubuğun temassız etkisini artırırken topuzun ve yaprak bölgesinin işaretini karşılaştır.",
+  alt: "Cam fanus içindeki elektroskobun topuzu ve yaprakları ayrı etiketli. Negatif çubuk ile topuz arasında boşluk var. Yapraklar kapanıp ters işaretle tekrar açılabilir. Alt metin iki bölgenin yükünü ve toplamı verir.",
+  param: { label: "Temassız etki", min: 0, max: 3, step: 1, init: 0 },
+  draw: (effect) => {
+    const charge = electroscopeInduction(effect);
+    const angle = Math.min(0.72, Math.abs(charge.leaves) * 0.35);
+    const hinge = v(0, 0.55);
+    const knob = v(0, 2.5);
+    const rod = v(-3.9 + effect * 0.7, 2.5);
+    const els: El[] = [
+      poly([v(-0.5, 2), v(-1.55, 1.65), v(-1.65, -1.35), v(1.65, -1.35), v(1.55, 1.65), v(0.5, 2)], { tone: "c", open: true, thin: true }),
+      seg(knob, hinge, { tone: "muted", bold: true }),
+      ball(knob, 0.37, "warn"),
+      ball(rod, 0.47, "b", "−"),
+      txt(v(rod[0], 3.55), "Negatif çubuk", "c", { tone: "b", small: true }),
+      txt(v(1.55, 2.5), electroscopeChargeText(charge.knob), "e", { tone: "warn", bold: true }),
+    ];
+    const tone: Tone = charge.leaves < 0 ? "b" : charge.leaves > 0 ? "warn" : "muted";
+    for (const direction of [-1, 1]) {
+      const tip = v(direction * 1.35 * Math.sin(angle), hinge[1] - 1.35 * Math.cos(angle));
+      els.push(seg(hinge, tip, { tone, bold: true }));
+    }
+    els.push(txt(v(1.55, -0.62), electroscopeChargeText(charge.leaves), "e", { tone, bold: true }));
+    return {
+      els,
+      readout: [
+        `Topuz bölgesi ${electroscopeChargeText(charge.knob)}. Yaprak bölgesi ${electroscopeChargeText(charge.leaves)}. Elektroskop toplamı ${electroscopeChargeText(charge.total)} model birimi.`,
+        charge.leaves === 0 ? "Yapraklar kapalı." : charge.leaves < 0 ? "Yapraklar negatif işaretle yeniden açık." : "Yapraklar pozitif işaretle açık.",
+      ],
+    };
   },
 };
 
@@ -176,6 +211,7 @@ export const physicsFiguresElectrostatics: Record<string, Record<string, FigureD
     "Dokunmada eşitlik için geometrik koşul gerekir": touch,
     "Toprak Dünya’yı da hesap sınırına ekler": induction,
     "Elektroskopta hareketi, başlangıcı ve uzaklığı birlikte oku": scope,
+    [electroscopeTitle]: electroscopeInductionFigure,
     "Kuvvet ile alanı aynı ok sanma": field,
   },
 };

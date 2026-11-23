@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.70.0 · Elektroskop
+
+Yayın adayı. Negatif çubuğun temassız etkisini değiştir. Yapraklar kapanırken topuz, yaprak bölgesi ve toplam yükü karşılaştır. Ayrı Kopya Kağıdı’nda gözlem tablosu ve çözümlü çizim bulunur.
+
 # ÖSYM Mania 0.69.0 · Koordinat düzleminde öteleme
 
 Yayın adayı. Soru kartında başlangıç noktasını oku, ipucunda vektörün bileşenlerini ayır, son çözüm adımında yeni konumu gör. Ayrı Kopya Kağıdı’nda nokta ve üçgen öteleme çizimleri ile çözümlü örnek bulunur.

@@ -1,8 +1,8 @@
 {
-  "version": "0.69.0",
+  "version": "0.70.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Öteleme sorusunda başlangıç noktasını koordinat düzleminde oku. İpucu iki ekseni ayırır ve son çözüm çizimi hesaplanan yeni konumu gösterir.",
-    "en": "Read the starting point on a coordinate plane. The hint separates the axes and the final worked drawing shows the translated point."
+    "tr": "Negatif çubuk yaklaşınca elektroskobun yapraklarının nasıl kapanıp yeniden açıldığını izle. Çizim yaprak bölgesinin yükü ile toplam yükün neden farklı olduğunu gösterir.",
+    "en": "Follow the electroscope leaves as a negative rod approaches. The same drawing distinguishes charge near the leaves from the net charge."
   }
 }
