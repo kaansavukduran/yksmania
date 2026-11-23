@@ -4,6 +4,8 @@
 
 **Son yayımlanan web ve masaüstü sürümü 0.42.0**. Açıortayları ve ortak kenarlı üçgenleri çevrimdışı inceleyebilirsin. [Windows ve Linux 0.42](https://github.com/kaansavukduran/yksmania/releases/tag/v0.42.0-alpha.1) · [Android 0.42 kişisel deneme arşivi](https://github.com/kaansavukduran/yksmania/actions/runs/45187782506/artifacts/14823994107)
 
+**0.55.0 adayı** kuvvetlerin yönünü çiziyor ve iş ile kinetik enerji hesabını adım adım gösteriyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+
 **0.54.0 adayı** silindirin kütle merkezini ve farklı sıfır düzeylerinden okunan potansiyel enerjiyi çiziyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.53.0 adayı** kaydedilen kaynak sorunun görselini Hata Merkezi’nde ve cep kitapçığında gösteriyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)

@@ -1,7 +1,7 @@
 {
-  "version": "0.54.0",
+  "version": "0.55.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Homojen silindirin kütle merkezini çizimde bul. Yüksekliği ve sıfır düzeyini değiştirerek potansiyel enerji ile enerji farkının nasıl değiştiğini karşılaştır."
+    "tr": "İş ve enerji sorusunda verilen kuvvetler çizimde, ipucu yön tablosunda ve işin işaretleri çözüm adımlarında açılır."
   }
 }

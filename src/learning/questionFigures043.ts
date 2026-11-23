@@ -2,6 +2,7 @@ import { identityHash, type HelpQuestion } from "../domain/questionHelpModel";
 import type { SourceQuestionFigureSpec } from "./SourceQuestionFigure";
 import { forceAccelerationFigures, forceAccelerationQuestion } from "./forceAccelerationPractice";
 import { forceVelocityFigureData, forceVelocityQuestion } from "./forceVelocityOptions048";
+import { signedWorkFigures, signedWorkQuestionId } from "./signedWork055";
 
 const crossingQuestionId = "tyt-geo-acilar-kaynak-pekitirme-032-source-001-no-parallel";
 const givenAngle = 64;
@@ -202,6 +203,14 @@ const velocityQuestion = {
 };
 
 const bindings = new Map<string, FigureBinding>([
+  [signedWorkQuestionId, {
+    stemRevision: "1db6e0681c8d4c",
+    helpRevision: "103046e3ea5ea8",
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 47. sayfa, basılı 45. sayfa",
+    itemLabel: "Aynı, zıt ve dik yönlerde kuvvet işi, özgün veriler",
+    figures: signedWorkFigures,
+  }],
   [crossingQuestionId, {
     stemRevision: "1da6511ade8341",
     helpRevision: "1ad2a3f75fda5a",

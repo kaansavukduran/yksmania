@@ -1,3 +1,10 @@
+# ÖSYM Mania 0.55.0 · Kuvvet yönünden işin işaretine
+
+Yayın adayı.
+
+- İtiş, direnç ve normal kuvvetin yönlerini sorunun çiziminden oku.
+- İpucu yönleri karşılaştırır. Sonraki adımlar iş, toplam ve kinetik enerji değişimini kendi çizimleriyle açar.
+
 # ÖSYM Mania 0.54.0 · Silindirin potansiyel enerjisi
 
 Yayın adayı.

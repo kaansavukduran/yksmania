@@ -1,3 +1,9 @@
+# Kuvvet yönünden işin işaretine · 0.55.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel sayfa 47, basılı sayfa 45, bir kuvvetin yaptığı işin yer değiştirmeye göre yönle nasıl değiştiğini gösterir. Uygulamadaki özgün kart 5 m sağa hareket eden cisimde 10 N itişi, ters yönde 4 N direnci ve 20 N normal kuvveti çiziyor. İpucu yalnız yönleri gösterir. İş tablosu, toplam iş ve kinetik enerji değişimi çözümün ilgili adımlarında açılır.
+
+Özgün kartın cevap sırası ve anahtarı korundu. Benzer eski kayda yeni yardım çizimi bağlanması için soru ve yardım sürümlerinin eşleşmesi gerekir. Dar ekranda ve %200 arayüz ölçeğinde çevrimdışı kart, klavye, kalıcı yardım kaydı ve doğru cevapla birlikte saklanan görsel sürümleri denetlendi. Yardımlı cevap bağımsız doğru sayılmaz.
+
 # Silindirin kütle merkezi ve potansiyel enerji · 0.54.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel sayfa 50, basılı sayfa 48, homojen silindirin kütle merkezini tabandan H/2 yukarıda gösteriyor. Uygulamada silindiri yerden platforma taşı ve sıfır düzeyini değiştir. Merkez, çizimde ve hesapta aynı yükseklikte kalır. Potansiyel enerji değerleri değişebilir. Aynı kaldırmada enerji artışı 40 J.
