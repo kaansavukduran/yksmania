@@ -1,5 +1,6 @@
 import type { LessonGuide } from "./types";
 import { newtonDisplacementTitle, newtonTimeExampleTitle, newtonTimeRows, newtonTimeTitle, newtonVelocityTitle } from "../newtonTimeComparison";
+import { forcePairsTitle } from "../newtonForcePairs";
 export const newtonGuide: LessonGuide = {
   id: "newton",
   minutes: 45,
@@ -107,6 +108,19 @@ export const newtonGuide: LessonGuide = {
       table: {
         headers: ["Net kuvvet (N)", "İvme (m/s²)", "3. saniyede hız (m/s)", "3 saniyede yer değiştirme (m)"],
         rows: newtonTimeRows,
+      },
+    },
+    {
+      title: forcePairsTitle,
+      figureTitle: forcePairsTitle,
+      paragraphs: [
+        "Yatay masadaki 2 kg kutu, düşey bir iple 6 N yukarı çekiliyor. Kutu masayla temasını koruyor ve düşeyde ivmelenmiyor. g = 10 N/kg alırsak ağırlığı 20 N’dur. Kutunun düşey denklemi N + 6 − 20 = 0 olduğundan masanın kutuya uyguladığı normal 14 N’dur.",
+        "Kutunun masaya uyguladığı kuvvet 14 N aşağı, masanın kutuya uyguladığı kuvvet 14 N yukarıdır. İkisi aynı temasın iki tarafıdır. Dünya’nın kutuya uyguladığı 20 N aşağı çekimin çifti kutunun Dünya’ya uyguladığı 20 N yukarı çekimdir. Kütle çekimi için temas gerekmez.",
+        "Kutudaki normal ve ağırlığın ikisi de kutuya etki eder. Bu örnekte büyüklükleri de farklıdır. İp gevşek olduğunda normal 20 N olur, ama kuvvetlerin kaynakları ve hedefleri değişmediği için normal ile ağırlık yine bir etki–tepki çifti oluşturmaz.",
+      ],
+      table: {
+        headers: ["Kuvveti uygulayan", "Kuvveti alan", "Yön ve büyüklük"],
+        rows: [["Masa", "Kutu", "Yukarı 14 N"], ["Kutu", "Masa", "Aşağı 14 N"], ["Dünya", "Kutu", "Aşağı 20 N"], ["Kutu", "Dünya", "Yukarı 20 N"]],
       },
     },
   ],
@@ -257,7 +271,7 @@ export const newtonGuide: LessonGuide = {
     },
   ],
   source:
-    "MEBİ AYT Fizik Konu Özetleri PDF s.23–24 ve 31 (basılı 21–22 ve 29) ile Aurelia TYT Fizik Newton Hareket Yasaları kopya kağıdı PDF s.1–16 doğrudan okundu. Kuvvet–ivme grafiği ve sabit kuvvetin iki katına çıktığı üç zaman grafiği için MEBİ TYT Fizik Konu Özetleri PDF s.42 (basılı 40) incelendi. Sayısal örnekler özgündür. Aurelia dosyasındaki diğer MEB Fizik 9/11 atıfları ve ÖSYM örneği ayrıca doğrulanmadı. Anlatım klasik sabit kütle ve belirtilen basit temas/sürtünme koşullarıyla sınırlıdır.",
+    "MEBİ AYT Fizik Konu Özetleri PDF s.23–24 ve 31 (basılı 21–22 ve 29) ile Aurelia TYT Fizik Newton Hareket Yasaları kopya kağıdı PDF s.1–16 doğrudan okundu. Kuvvet–ivme grafiği ve sabit kuvvetin iki katına çıktığı üç zaman grafiği için MEBİ TYT Fizik Konu Özetleri PDF s.42 (basılı 40), masa ve Dünya ile kuvvet çiftleri için s.44 (basılı 42) incelendi. Kütle çekimi temas gerektirmez. Sayısal örnekler özgündür. Aurelia dosyasındaki diğer MEB Fizik 9/11 atıfları ve ÖSYM örneği ayrıca doğrulanmadı. Anlatım klasik sabit kütle ve belirtilen basit temas/sürtünme koşullarıyla sınırlıdır.",
 };
 
 export const electricFieldGuide: LessonGuide = {

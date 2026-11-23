@@ -1,3 +1,10 @@
+# ÖSYM Mania 0.51.0 · Normal ve ağırlığın çiftleri
+
+Yayın adayı.
+
+- Kutudaki kuvvetleri, masa ile temas çiftini ve Dünya ile çekim çiftini ayrı çizimlerde incele.
+- İpin çekişini değiştir. Oklar, yönler ve tabloyu karşılaştırarak hangi kuvvetin hangi cisme etki ettiğini bul.
+
 # ÖSYM Mania 0.50.0 · Newton’un zaman grafikleri
 
 Yayın adayı.

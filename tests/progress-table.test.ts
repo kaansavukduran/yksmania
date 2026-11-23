@@ -165,12 +165,12 @@ function markdown(data: ReturnType<typeof compute>) {
     `| Denemeler | ${x.specs} hazır deneme (${x.specs - x.branch} karma, ${x.branch} ders) | — | ${x.specs} denemede toplam ${tr(x.items)} soru; incelemede aynı çözüm paneli | — | ${t.osymPdfDone} / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: ${x.fullLength} |`,
   );
   const foot = [
-    `| **Toplam** | **${t.readyLessons} / ${t.topics}** | **${t.figureLessons} · ${t.figures}** | **${frac(t.stepped, t.questions)}** | **${frac(t.sheetsDone, t.sheets)}** | **${frac(t.osymPdfDone, t.osymPdfTotal)} PDF · ${tr(t.osymQuestions)} soru** | **${t.open}** |`,
+    `| **Toplam** | **${t.readyLessons} / ${t.topics}** | **${t.figureLessons} · ${t.figures}** | **${frac(t.stepped, t.questions)}** | **${frac(t.sheetsDone, t.sheets)}** | **${tr(t.osymQuestions)} uygulama soru kaydı** | **${t.open}** |`,
     "",
     "| Genel gösterge | Değer |",
     "| --- | ---: |",
-    `| Dal kaydında okunan veya eşlenen PDF / arşiv envanteri | ${frac(t.ogmPdfDone, t.ogmPdfTotal)} |`,
-    `| 99_ÖSYM PDF (işlenen / beyan edilen) | ${frac(t.osymPdfDone, t.osymPdfTotal)} |`,
+    `| Tarihsel dal kaydı: okunan veya eşlenen PDF / eski envanter | ${tr(t.ogmPdfDone)} / ${tr(t.ogmPdfTotal)} |`,
+    `| Tarihsel 99_ÖSYM kaydı: uygulama karşılığı olan / 20 Kasım envanteri | ${tr(t.osymPdfDone)} / ${tr(t.osymPdfTotal)} |`,
     `| 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | ${tr(t.osymQuestions)} · ${t.osymCitedQuestions} |`,
     `| Kademeli çözüm paneli bulunan soru | ${frac(t.stepped, t.questions)} |`,
     "| Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |",

@@ -114,6 +114,7 @@ import { clarifiedGuideView } from "./guidePresentation028";
 import { narrativeById } from "./narratives";
 import { physicsCheatSheets } from "./physicsCheatSheets";
 import { newtonTimeTitle } from "./newtonTimeComparison";
+import { forcePairsTitle } from "./newtonForcePairs";
 
 export interface CheatSection {
   title: string;
@@ -142,10 +143,16 @@ export interface CheatSheet {
 }
 
 const revisedSectionTextByLesson = new Map([
-  ["newton", new Map([[newtonTimeTitle, [
-    "Aynı kütle ve sürede, durgun başlayan cisim için net kuvvet iki katına çıkarsa ivme, son hız ve yer değiştirme iki katına çıkar.",
-    "F–t ve a–t yataydır. v–t eğimi ivmeyi, altındaki alan yer değiştirmeyi verir.",
-  ]]])],
+  ["newton", new Map([
+    [newtonTimeTitle, [
+      "Aynı kütle ve sürede, durgun başlayan cisim için net kuvvet iki katına çıkarsa ivme, son hız ve yer değiştirme iki katına çıkar.",
+      "F–t ve a–t yataydır. v–t eğimi ivmeyi, altındaki alan yer değiştirmeyi verir.",
+    ]],
+    [forcePairsTitle, [
+      "Her çift için uygulayanla alan cismi yer değiştir. Masa → kutunun çifti kutu → masadır. Dünya → kutunun çifti kutu → Dünya’dır.",
+      "Düşey dengede N + T = G. Çekiş değişince normalin iki oku birlikte değişir; ağırlık ve onun çifti aynı kalır.",
+    ]],
+  ])],
   ["kesir-problemleri", fractionProblemsSource018SheetText],
   ["yas-problemleri", ageProblemsSource019SheetText],
   ["yuzde-problemleri", percentProblemsSource020SheetText],

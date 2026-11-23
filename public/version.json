@@ -1,7 +1,7 @@
 {
-  "version": "0.50.0",
+  "version": "0.51.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Aynı kütleye uygulanan iki sabit kuvvetin ivmesini, hızını ve yer değiştirmesini zaman çizimleriyle karşılaştır. Kopya Kağıdı ve çözümlü örnek de çevrimdışı açılır."
+    "tr": "Kutudaki normal ve ağırlığın eşlerini doğru cisimlerde izle. İpin çekişi değiştiğinde temas çiftinin okları birlikte değişir, Dünya ile çekim çifti aynı kalır."
   }
 }
