@@ -1,6 +1,7 @@
 import { rotationFromCenterExample, rotationFromCenterSection, transformationMethods } from "../translationMethods072";
 import { electroscopeExample, electroscopeSection } from "../electroscopeInduction070";
 import { groundingTransferExample, groundingTransferSection } from "../groundingTransfer074";
+import { parabolaTranslationExample, parabolaTranslationSection } from "../parabolaTranslation075";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
@@ -339,11 +340,11 @@ export function studyGuide(lessonId: string) {
       sections: [...guide.sections.map((section) =>
         section.title === components || section.title === triangle
           ? { ...section, figureTitle: section.title }
-          : section), transformationMethods, rotationFromCenterSection],
+          : section), transformationMethods, rotationFromCenterSection, parabolaTranslationSection],
       examples: [...guide.examples.map((example) => example.title === "Ötele ve başlangıca geri dön"
         ? { ...example, steps: example.steps.map((step, index) => index === 0 ? { ...step, figureTitle: components } : step) }
-        : example), rotationFromCenterExample],
-      source: `${guide.source} Dönüşümler Kopya Kâğıdı fiziksel 2, 7 ve 8. sayfalarındaki merkezli dönme çizimi, yöntemi seçme tablosu ve koşul örnekleri öğrenci rehberinde yeniden işlendi.`,
+        : example), rotationFromCenterExample, parabolaTranslationExample],
+      source: `${guide.source} Dönüşümler Kopya Kâğıdı fiziksel 2, 7 ve 8. sayfalarındaki merkezli dönme çizimi, yöntemi seçme tablosu ve koşul örnekleri öğrenci rehberinde yeniden işlendi. OGM Öteleme Dönüşümü fiziksel 24. sayfadaki iki parabolün işaretli noktaları ayrı bir örnekte karşılaştırıldı.`,
     };
   }
   if (guide?.id === "durgun-elektrik") {

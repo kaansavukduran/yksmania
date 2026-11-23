@@ -4,6 +4,8 @@
 
 **Son yayımlanan web ve masaüstü sürümü 0.42.0**. Açıortayları ve ortak kenarlı üçgenleri çevrimdışı inceleyebilirsin. [Windows ve Linux 0.42](https://github.com/kaansavukduran/yksmania/releases/tag/v0.42.0-alpha.1) · [Android 0.42 kişisel deneme arşivi](https://github.com/kaansavukduran/yksmania/actions/runs/45187782506/artifacts/14823994107)
 
+**0.75.0 adayı** iki parabolün tepe ve işaretli noktalarını kaynak grafiğiyle karşılaştırıyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+
 **0.74.0 adayı** topraklamada elektronun yönünü ve toplam yükü kaynak şemalarıyla karşılaştırıyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.73.0 adayı** beş OGM öteleme örneğini soru, görsel ipucu ve adım adım çözümle sunuyor. Bugün ekranındaki iki görsel daha az veriyle yükleniyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
@@ -94,12 +96,12 @@ Tablo, bu daldaki uygulama envanterini ve sürüm kayıtlarını gösterir. PDF 
 | TYT Felsefe | 17 / 17 | 10 · 35 | 190 / 190 · %100,00 | 3 / 17 · %17,65 | 89 soru · 9 kitapçık | 7 |
 | TYT Din | 20 / 20 | 14 · 52 | 371 / 371 · %100,00 | 3 / 20 · %15,00 | 46 soru · 9 kitapçık | 6 |
 | AYT Matematik | 17 / 17 | 17 · 38 | 253 / 253 · %100,00 | 2 / 17 · %11,76 | 273 soru · 9 kitapçık | 0 |
-| AYT Geometri | 4 / 4 | 4 · 52 | 45 / 45 · %100,00 | 1 / 4 · %25,00 | 87 soru · 9 kitapçık | 0 |
+| AYT Geometri | 4 / 4 | 4 · 53 | 45 / 45 · %100,00 | 1 / 4 · %25,00 | 87 soru · 9 kitapçık | 0 |
 | AYT Fizik | 46 / 46 | 41 · 152 | 541 / 541 · %100,00 | 7 / 46 · %15,22 | 126 soru · 9 kitapçık | 5 |
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **405 · 1693** | **6.663 / 6.663 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
+| **Toplam** | **510 / 510** | **405 · 1694** | **6.663 / 6.663 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

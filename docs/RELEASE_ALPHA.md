@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.75.0 · İki parabolde aynı öteleme
+
+Yayın adayı. T ile T′nin koordinatlarını karşılaştır, sonra aynı hareketi C ile C′ üzerinde denetle. Öteleme miktarı değişince grafik ve iki görüntü noktası birlikte güncellenir. Ayrı Kopya Kağıdı’nda tablo ve çözümlü örnek bulunur.
+
 # ÖSYM Mania 0.74.0 · Topraklamada elektronun yönü
 
 Yayın adayı. Başlangıç yükü negatif ve pozitif iki metal küreyi karşılaştır. Anahtar kapanınca elektronların hangi yönde geçtiğini ve Dünya’nın yük değişimini çizimden ve tablodan izle. Aynı örnek Durgun Elektrik dersi ile ayrı Kopya Kağıdı’nda bulunur.

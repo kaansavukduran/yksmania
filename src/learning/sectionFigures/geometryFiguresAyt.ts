@@ -1,3 +1,4 @@
+import { parabolaOffsets, parabolaTranslationTitle, sourceParabola, translatedSourceParabola } from "../parabolaTranslation075";
 import {
   add,
   ang,
@@ -219,6 +220,54 @@ const otelemeDonme: Record<string, FigureDef> = {
       ],
       readout: ["g(x) = f(x − 3) + 2"],
     }),
+  },
+  [parabolaTranslationTitle]: {
+    caption: "Önce T ve T′yi karşılaştır. Aynı hareketin C ve C′ arasında da olduğunu gör.",
+    alt: "İki parabolün tepe ve işaretli noktaları aynı koordinat düzleminde. Noktaların başlangıç ve görüntü koordinatları metinde güncellenir.",
+    param: { label: "Yatay öteleme", min: -3, max: 4, step: 1, init: 3, unit: " birim" },
+    steps: ["Aşağı 1 birim", "Düşey hareket yok", "Yukarı 1 birim"],
+    draw: (horizontal, step) => {
+      const vertical = parabolaOffsets[step];
+      const result = translatedSourceParabola(horizontal, vertical);
+      const same = horizontal === 0 && vertical === 0;
+      const range = ([x, y]: readonly [number, number]) => {
+        const half = Math.sqrt(7 - y);
+        return [x - half, x + half] as const;
+      };
+      const before = v(...result.oldVertex);
+      const firstPoint = v(...result.oldMarked);
+      const after = v(...result.vertex);
+      const laterPoint = v(...result.marked);
+      const markedPoints = [
+        [before, "T", "sw", "b"], [firstPoint, "C", "nw", "b"],
+        [after, "T′", "se", "a"], [laterPoint, "C′", "ne", "a"],
+      ] as const;
+      const marks = new Map<string, { point: V; label: string; direction: "sw" | "nw" | "se" | "ne"; tone: "a" | "b" }>();
+      for (const [point, label, direction, tone] of markedPoints) {
+        const key = point.join(",");
+        const existing = marks.get(key);
+        if (existing) existing.label += ` = ${label}`;
+        else marks.set(key, { point, label, direction, tone });
+      }
+      const projector = (point: V) => [
+        ...(point[0] ? [seg(point, v(point[0], 0), { dash: true, thin: true, tone: "muted" })] : []),
+        ...(point[0] ? [seg(point, v(0, point[1]), { dash: true, thin: true, tone: "muted" })] : []),
+      ];
+      return {
+        els: [
+          ...axes(-7, 7, -1, 8, 2),
+          ...projector(before),
+          ...(same ? [] : [...projector(after), ...projector(laterPoint)]),
+          curve(sourceParabola, ...range(result.oldVertex), "b"),
+          ...(same ? [] : [curve(result.value, ...range(result.vertex), "a")]),
+          ...[...marks.values()].map(({ point, label, direction, tone }) => pt(point, label, direction, tone)),
+        ],
+        readout: [
+          `T ${xy(before)} → T′ ${xy(after)}. C ${xy(firstPoint)} → C′ ${xy(laterPoint)}.`,
+          same ? "Öteleme vektörü sıfır. İki grafik üst üste gelir." : `İki nokta da ${xy(v(horizontal, vertical))} vektörüyle kayar. Parabolün açılma yönü ve genişliği korunur.`,
+        ],
+      };
+    },
   },
   "Dönme için merkez, açı ve yön birlikte gerekir": {
     caption:

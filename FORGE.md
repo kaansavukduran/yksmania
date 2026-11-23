@@ -1,3 +1,7 @@
+# İki parabolde aynı öteleme · 0.75.0 adayı
+
+OGM Öteleme Dönüşümü fiziksel 24’te T(−1; 2) ve C(0; 3) noktaları, görüntüde T′(2; 1) ve C′(3; 2). İki nokta da üç birim sağa ve bir birim aşağı gider. Öğrenci grafikte yatay hareketi ve üç düşey durumu değiştirir. Model, aynı konuma gelen işaretli noktaları tek yerden etiketler. Kopya Kağıdı’nın tablosu iki noktanın farkını karşılaştırır. Çözümlü örnekte g(x) = f(x − 3) − 1 = (x − 2)² + 1 bulunur.
+
 # Toprak hattında elektronun yönü · 0.74.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 99–100, basılı 97–98. sayfalarda, negatif ve pozitif iletkenin topraklamadaki elektron yönlerini ayrı gösteriyor. Öğrenci açık anahtarı, iki işaret için bağlantı anını ve dengeyi inceler. Elektron küreden Dünya’ya giderse kürenin yükü artar. Dünya’dan küreye gelirse kürenin yükü azalır. Küre ile Dünya birlikte ele alındığında toplam korunur. Örnekte dışarıdan etkileyen bir yük yok. Koruyucu topraklama ve priz fotoğrafının görsel kapsamı açık.
@@ -404,12 +408,12 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Felsefe | 17 / 17 | 10 · 35 | 190 / 190 · %100,00 | 3 / 17 · %17,65 | 89 soru · 9 kitapçık | 7 |
 | TYT Din | 20 / 20 | 14 · 52 | 371 / 371 · %100,00 | 3 / 20 · %15,00 | 46 soru · 9 kitapçık | 6 |
 | AYT Matematik | 17 / 17 | 17 · 38 | 253 / 253 · %100,00 | 2 / 17 · %11,76 | 273 soru · 9 kitapçık | 0 |
-| AYT Geometri | 4 / 4 | 4 · 52 | 45 / 45 · %100,00 | 1 / 4 · %25,00 | 87 soru · 9 kitapçık | 0 |
+| AYT Geometri | 4 / 4 | 4 · 53 | 45 / 45 · %100,00 | 1 / 4 · %25,00 | 87 soru · 9 kitapçık | 0 |
 | AYT Fizik | 46 / 46 | 41 · 152 | 541 / 541 · %100,00 | 7 / 46 · %15,22 | 126 soru · 9 kitapçık | 5 |
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **405 · 1693** | **6.663 / 6.663 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
+| **Toplam** | **510 / 510** | **405 · 1694** | **6.663 / 6.663 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

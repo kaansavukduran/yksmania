@@ -1,8 +1,8 @@
 {
-  "version": "0.74.0",
+  "version": "0.75.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Durgun elektrik dersinde ve Kopya Kağıdı’nda, negatif ve pozitif küreyi toprağa bağlayınca elektronların hangi yönde aktarıldığını karşılaştır.",
-    "en": "Compare how electrons move when a negative or positive sphere is grounded, in the electrostatics lesson and its cheat sheet."
+    "tr": "Öteleme ve Dönme dersinde iki parabolün tepe ve işaretli noktalarını aynı düzlemde karşılaştır. Yatay ve düşey hareketi değiştir, yeni kuralı çözümde izle.",
+    "en": "Compare the vertices and marked points of two parabolas. Change the horizontal and vertical translation, then read the new rule in the worked example."
   }
 }
