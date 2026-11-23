@@ -4,6 +4,8 @@ import { interestProblemsSource022SheetText } from "./interestProblemsSource022R
 import { mixtureProblemsSource023SheetText } from "./mixtureProblemsSource023Revision";
 import { workerProblemsSource024SheetText } from "./workerProblemsSource024Revision";
 import { poolProblemsSource025SheetText } from "./poolProblemsSource025Revision";
+import { speedProblemsSource026SheetText } from "./speedProblemsSource026Revision";
+import { graphProblemsSource027SheetText } from "./graphProblemsSource027Revision";
 import { ageProblemsSource019SheetText } from "./ageProblemsSource019Revision";
 import { fractionProblemsSource018SheetText } from "./fractionProblemsSource018Revision";
 import { linearEquationsSource036Sheets } from "./linearEquationsSource036";
@@ -137,6 +139,8 @@ const revisedSectionTextByLesson = new Map([
   ["karisim-problemleri", mixtureProblemsSource023SheetText],
   ["isci-problemleri", workerProblemsSource024SheetText],
   ["havuz-problemleri", poolProblemsSource025SheetText],
+  ["hiz-problemleri", speedProblemsSource026SheetText],
+  ["grafik-problemleri", graphProblemsSource027SheetText],
 ]);
 
 const completeSourceSheets = new Set([

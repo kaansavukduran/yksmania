@@ -295,4 +295,40 @@ export const examTeachingCases: Record<string, ExamTeachingCase> = {
     pitfall:
       "Debileri doğrudan karşılaştırmak veya geçen süreyi geniş tankın açılışından saymak.",
   },
+  "2026-TYT-MAT-22": {
+    prompt:
+      "Bir depo robotu iki şarj istasyonu arasındaki tek hat üzerinde sabit süratle gidip geliyor. İstasyonlar arasındaki bir noktaya kurulan tarayıcı robotu ilk kez 07.12’de, üçüncü kez 09.00’da kaydediyor. Robot iki kayıtta da sağa gidiyor. Sağ istasyonda 10 dk, solda 14 dk bekliyor. Tarayıcı ile sağ istasyon arası 17 hareket dakikası. İkinci geçiş saati ve iki istasyon arasındaki tek yön hareket süresi nedir?",
+    steps: [
+      "İkinci kayıt sağ istasyona gidip dönünce alınır. İlk kayıttan 17+10+17=44 dk sonra, yani 07.56’da.",
+      "Birinci ve üçüncü kayıt arası 108 dk. Robot aynı konumdan aynı yönde geçtiği için iki tam hat uzunluğu gitmiş ve her istasyonda birer kez beklemiştir.",
+      "108−(10+14)=84 dk harekettedir. Bir yön 84/2=42 dk. Tarayıcıdan sol uca 25 dk kaldığı için ikinci ve üçüncü kayıt arası 25+14+25=64 dk olur.",
+    ],
+    answer: "İkinci geçiş 07.56’da, istasyonlar arası tek yön hareket 42 dk.",
+    pitfall:
+      "Birinci ve üçüncü kayıt arasındaki tam döngünün içinde iki istasyonun da bekleme süresini saymayı unutmak.",
+  },
+  "2026-TYT-MAT-24": {
+    prompt:
+      "Bir tarayıcı iki ayrı 12 saatlik vardiyada, çalıştığı sırada aynı sabit hızla sırasıyla 96 ve 114 eş boyutlu dosya işler. Her vardiyada çalışmadığı sürenin çalıştığı süreye oranı 1’den büyük ve 2’den küçüktür. İki vardiyaya da uygun en küçük tam sayı tarama hızı kaç dosya/saattir?",
+    steps: [
+      "Etkin süre t>0 ise 1<(12−t)/t<2. Bundan 2t<12<3t, yani 4<t<6 çıkar.",
+      "96 dosya için 16<v<24, 114 için 19<v<57/2. Kesişim 19<v<24.",
+      "19 uç değerdir ve ikinci vardiyayı 6 saate çıkarır. Bu nedenle en küçük tam sayı 20’dir. Etkin süreler 96/20=4,8 ve 114/20=5,7 saat olur.",
+    ],
+    answer: "20 dosya/saat.",
+    pitfall:
+      "Yalnız bir vardiyayı kontrol etmek veya açık aralığın alt sınırını alıp 19’u seçmek.",
+  },
+  "2018-TYT-MAT-14": {
+    prompt:
+      "Üç taşıma tarifesinin grafikleri 0≤x≤8 kg aralığında A(x)=18+x, B(x)=24−x ve C(x)=12+2x TL ile verilmiş. Hangi yük aralığında A ücreti B’den büyükken B ücreti C’ye eşit veya C’den büyük kalır?",
+    steps: [
+      "A>B koşulu 18+x>24−x ile x>3 verir. x=3’te A ve B aynı ücrettedir.",
+      "B≥C koşulu 24−x≥12+2x ile x≤4 verir. x=4’te B ve C eşittir, eşitliğe izin verilir.",
+      "0≤x≤8 içinde ortak aralık 3<x≤4 olur. Örneğin x=4’te A 22 TL, B ve C 20 TL’dir.",
+    ],
+    answer: "3<x≤4 kg.",
+    pitfall:
+      "Sıralamayı farklı yatay noktalarda okumak veya iki sınırda da eşitliği aynı şekilde ele almak.",
+  },
 };

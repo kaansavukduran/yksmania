@@ -3,6 +3,7 @@ import fractionAndAgeFlow from "../fixtures/source032-math-question-flow.json" w
 import percentAndProfitFlow from "../fixtures/source033-math-question-flow.json" with { type: "json" };
 import interestAndMixtureFlow from "../fixtures/source034-math-question-flow.json" with { type: "json" };
 import workerAndPoolFlow from "../fixtures/source035-math-question-flow.json" with { type: "json" };
+import speedAndGraphFlow from "../fixtures/source036-math-question-flow.json" with { type: "json" };
 import { typeset } from "../../src/domain/typeset";
 import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
 import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse";
@@ -10,7 +11,7 @@ import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse"
 registerOfflineBootDiagnostics();
 test.use({ locale: "tr-TR", timezoneId: "Europe/Istanbul" });
 
-const flow = { ...fractionAndAgeFlow, ...percentAndProfitFlow, ...interestAndMixtureFlow, ...workerAndPoolFlow };
+const flow = { ...fractionAndAgeFlow, ...percentAndProfitFlow, ...interestAndMixtureFlow, ...workerAndPoolFlow, ...speedAndGraphFlow };
 const courses = [
   {
     lesson: "kesir-problemleri",
@@ -95,6 +96,29 @@ const courses = [
     sheet: "Su bitince çıkış debisini yeniden belirle",
     count: 16,
     official: [{ year: 2013, exam: "YGS · Temel Matematik", filter: "YGS", question: 37, page: 39, keyUrl: "https://dokuman.osym.gov.tr/pdfdokuman/2013/OSYS/24.03.2013%20YGS.pdf#page=56", answer: "C", example: "Dar tankın girişi açıldıktan 5 saat sonra, 3 m’de eşitlenir." }],
+  },
+  {
+    lesson: "hiz-problemleri",
+    search: "Hız problemleri",
+    topic: "detail-219",
+    model: "source026-shared-speed",
+    exploration: "shared-speed-source-026",
+    sheet: "Pozitif süre aralığını sürat sınırına çevir",
+    count: 16,
+    official: [
+      { year: 2026, question: 22, page: 31, keyUrl: "https://dokuman.osym.gov.tr/pdfdokuman/2026/yks/tsk/yks_tyt_2026_kitapcik_d350.pdf#page=45", answer: "A", example: "İkinci geçiş 07.56’da, istasyonlar arası tek yön hareket 42 dk." },
+      { year: 2026, question: 24, page: 31, keyUrl: "https://dokuman.osym.gov.tr/pdfdokuman/2026/yks/tsk/yks_tyt_2026_kitapcik_d350.pdf#page=45", answer: "C", example: "20 dosya/saat." },
+    ],
+  },
+  {
+    lesson: "grafik-problemleri",
+    search: "Grafik problemleri",
+    topic: "detail-220",
+    model: "source027-piecewise-rate",
+    exploration: "piecewise-rate-source-027",
+    sheet: "Eş olmayan sürelerin değişimini birleştir",
+    count: 16,
+    official: [{ year: 2018, question: 14, page: 25, keyUrl: "https://dokuman.osym.gov.tr/pdfdokuman/2018/YKS/TYT_01072018.pdf#page=42", answer: "A", example: "3<x≤4 kg." }],
   },
 ] as const;
 
@@ -230,7 +254,7 @@ for (const course of courses) {
       await expect(duration).toHaveAttribute("aria-valuetext", "13 saat");
       await expect(result).toContainText("Birlikte süre 6,24 saat.");
       await expect(result).toContainText("Ekip, en hızlı tek çalışandan daha geç bitirir.");
-    } else {
+    } else if (course.lesson === "havuz-problemleri") {
       await expect(result).toContainText("B açıldıktan 6 dk sonra seviyeler 4,5 dm’de eşitlenir.");
       await panel.getByRole("button", { name: "Eşit yükselme örneği", exact: true }).click();
       await expect(result).toContainText("Seviyeler dolmadan yeniden eşitlenmez.");
@@ -246,6 +270,31 @@ for (const course of courses) {
       await area.press("ArrowLeft");
       await expect(area).toHaveAttribute("aria-valuetext", "7 dm²");
       await expect(result).toContainText("B açıldıktan 4,2 dk sonra seviyeler 3,6 dm’de eşitlenir.");
+    } else if (course.lesson === "hiz-problemleri") {
+      await expect(result).toContainText("Ortak sürat aralığı 12 < v < 14 km/sa.");
+      await expect(result).toContainText("Bu açık aralıktaki tek tam sayı sürat 13 km/sa.");
+      await panel.getByRole("button", { name: "Uçların değdiği örnek", exact: true }).click();
+      await expect(result).toContainText("İki güne uyan sürat yok.");
+      await expect(result).toContainText("Aralıklar yalnız 14 km/sa sınırında değiyor.");
+      await expect(panel.locator("[data-shared-speed-trial]")).toContainText("1. gün 5 sa (uymaz), 2. gün 7 sa (uymaz).");
+      expect(await graph.innerHTML()).not.toBe(original);
+      await panel.getByRole("button", { name: "Örneğe dön", exact: true }).click();
+      const distance = panel.getByRole("slider", { name: "2. günün yolu", exact: true });
+      await distance.press("ArrowLeft");
+      await expect(distance).toHaveAttribute("aria-valuetext", "83 km");
+      await expect(result).toContainText("tam sayı süratler 12 ile 13 km/sa arasında");
+    } else {
+      await expect(result).toContainText("7 saatin ortalama hızı 9/7 L/sa.");
+      await expect(result).toContainText("İki hızın basit ortalaması 2 L/sa.");
+      const duration = panel.getByRole("slider", { name: "İkinci parçanın süresi", exact: true });
+      await duration.press("ArrowLeft");
+      await expect(duration).toHaveAttribute("aria-valuetext", "3 sa");
+      await expect(result).toContainText("6 saatin ortalama hızı 3/2 L/sa.");
+      await expect(result).toContainText("Süreler eşit");
+      expect(await graph.innerHTML()).not.toBe(original);
+      await panel.getByText("Hacim ölçümlerini değiştir", { exact: true }).click();
+      await panel.getByRole("slider", { name: "Son hacim", exact: true }).press("End");
+      await expect(result).toContainText("6 saatin ortalama hızı 16/3 L/sa.");
     }
     const note = "Şekildeki sonucu başlangıç koşuluyla denetledim.";
     const notes = page.locator(".study-notes").getByRole("textbox", { name: "Notun", exact: true });

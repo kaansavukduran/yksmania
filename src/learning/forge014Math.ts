@@ -1,5 +1,12 @@
 import { txt, type Lesson } from "../domain/model";
 import type { LessonGuide } from "./guides/types";
+import {
+  graphProblemsSource027Examples,
+  graphProblemsSource027Practice,
+  graphProblemsSource027Recall,
+  graphProblemsSource027Sections,
+  graphProblemsSource027Summary,
+} from "./graphProblemsSource027Revision";
 type Problem = {
   prompt: string;
   correct: string;
@@ -83,6 +90,7 @@ const packs: Pack[] = [
           "Küçük standart sapma değerlerin ortalamaya yakınlığını anlatır; ölçümün doğru, güvenli veya araştırmanın tarafsız olduğunu tek başına kanıtlamaz. Aynı ortalamalı iki grup farklı yayılıma sahip olabilir. Sonuçta grafik ve tablo toplamlarını, yüzdelerde 100’ü, açılarda 360°’yi ve hesapta kullanılan birimi birlikte kontrol et.",
         ],
       },
+      ...graphProblemsSource027Sections,
     ],
     examples: [
       {
@@ -188,6 +196,7 @@ const packs: Pack[] = [
         check: "Açıklık 4, sapma 2; aynı ölçüt değiller.",
         pitfall: "Verilen tanıma rağmen n’e bölmek.",
       },
+      ...graphProblemsSource027Examples,
     ],
     recall: [
       {
@@ -209,9 +218,9 @@ const packs: Pack[] = [
         answer:
           "Hayır; yayılımı anlatır, ölçüm doğruluğunu veya tarafsızlığı kanıtlamaz.",
       },
+      ...graphProblemsSource027Recall,
     ],
-    source:
-      "MEBİ TYT Matematik Konu Özetleri PDF s. 109–112 (basılı s. 107–110); Aurelia 027 Grafik Problemleri ve 037 Veri Analizi (İstatistik), öğretim PDF s. 1–3,5–7. Özgün veri ve çözümler; eksen, ara değer, iki seri, frekans ve ağırlıklı ortalama koşulları korunur. Resmî sınav sorusu değildir.",
+    source: graphProblemsSource027Summary,
     questions: [
       {
         prompt:
@@ -1209,20 +1218,23 @@ export const forge014MathLessons: Lesson[] = packs.map((p) => ({
     title: txt(s.title),
     text: txt(s.paragraphs.join("\n\n")),
   })),
-  questions: p.questions.map((q, i) => {
-    const answer = i % 5,
-      options = [...q.distractors];
-    options.splice(answer, 0, q.correct);
-    return {
-      id: `${p.id}-014-${i + 1}`,
-      prompt: txt(q.prompt),
-      options: options.map(txt),
-      answer,
-      hint: txt(q.hint),
-      explanation: txt(q.explanation),
-      skill: p.title,
-    };
-  }),
+  questions: [
+    ...p.questions.map((q, i) => {
+      const answer = i % 5,
+        options = [...q.distractors];
+      options.splice(answer, 0, q.correct);
+      return {
+        id: `${p.id}-014-${i + 1}`,
+        prompt: txt(q.prompt),
+        options: options.map(txt),
+        answer,
+        hint: txt(q.hint),
+        explanation: txt(q.explanation),
+        skill: p.title,
+      };
+    }),
+    ...(p.id === "grafik-problemleri" ? graphProblemsSource027Practice : []),
+  ],
   source: txt(p.source),
   tags: [p.topic, "Özgün öğretim soruları"],
 }));

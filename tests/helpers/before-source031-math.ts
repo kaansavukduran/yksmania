@@ -73,6 +73,22 @@ const revisions = [
     ].map((id) => `havuz-problemleri-025-${id}`),
     oldSource: "Aurelia 025 İşçi-Havuz Problemleri öğretim s. 1–8; MEBİ TYT Matematik PDF 52’deki ortak iş hızı önbilgisi. Sabit debi, başlangıç ve kapasite sınırlarıyla özgün model/sorular; bağlı resmî arşiv bağımsız incelenmiş sayılmaz.",
   },
+  {
+    lesson: "hiz-problemleri", topic: "detail-219", sections: 8, examples: 4, recall: 4,
+    appendedQuestions: [
+      "ara-durak-iki-farkli-bekleme", "hareket-ve-yolculuk-ortalamasi", "iki-trenin-tam-gecisi",
+      "akinti-esiginde-kiyiya-gore", "yonlu-yay-ucuncu-karsilasma", "iki-gun-acik-surat-araligi",
+    ].map((id) => `hiz-problemleri-026-${id}`),
+    oldSource: "MEBİ TYT Matematik Konu Özetleri basılı s. 54/PDF 56; Aurelia 026 Hız Problemleri öğretim s. 1–8. İşaretli konum ve ortalama sürat ayrımıyla özgün anlatım; resmî soru/anahtar doğrulaması bu yeni sette yapılmış sayılmaz.",
+  },
+  {
+    lesson: "grafik-problemleri", topic: "detail-220", sections: 8, examples: 4, recall: 4,
+    appendedQuestions: [
+      "es-olmayan-grafik-araliklari", "iki-daire-yeni-butun", "histogram-esik-sinifin-icinde",
+      "ortak-uyelerin-kosullu-payi", "ayrik-olcum-ve-bilinmeyen-ara-deger", "siki-ve-dahil-uc-kesisimi",
+    ].map((id) => `grafik-problemleri-027-${id}`),
+    oldSource: "MEBİ TYT Matematik Konu Özetleri PDF s. 109–112 (basılı s. 107–110); Aurelia 027 Grafik Problemleri ve 037 Veri Analizi (İstatistik), öğretim PDF s. 1–3,5–7. Özgün veri ve çözümler; eksen, ara değer, iki seri, frekans ve ağırlıklı ortalama koşulları korunur. Resmî sınav sorusu değildir.",
+  },
 ];
 
 const additions = new Set(revisions.flatMap(({ appendedQuestions }) => appendedQuestions));

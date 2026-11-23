@@ -15,6 +15,8 @@ const models = [
   { lesson: "karisim-problemleri", model: "source023-target-mixture" },
   { lesson: "isci-problemleri", model: "source024-worker-team" },
   { lesson: "havuz-problemleri", model: "source025-equal-level" },
+  { lesson: "hiz-problemleri", model: "source026-shared-speed" },
+  { lesson: "grafik-problemleri", model: "source027-piecewise-rate" },
 ];
 
 for (const width of [320, 375, 1280]) {

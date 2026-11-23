@@ -1,0 +1,198 @@
+{
+  "hiz-problemleri": [
+    {
+      "id": "hiz-problemleri-012-1",
+      "prompt": "150 km yol sabit 60 km/sa ile kaç saatte alınır?",
+      "correct": "2,5",
+      "selected": 0
+    },
+    {
+      "id": "hiz-problemleri-012-2",
+      "prompt": "72 km/sa sürat kaç m/sn’dir?",
+      "correct": "20",
+      "selected": 1
+    },
+    {
+      "id": "hiz-problemleri-012-3",
+      "prompt": "60 km 30 km/sa, sonraki 60 km 60 km/sa ile gidiliyor. Molasız ortalama sürat kaçtır?",
+      "correct": "40",
+      "selected": 2
+    },
+    {
+      "id": "hiz-problemleri-012-4",
+      "prompt": "Aralarında 210 km olan araçlar birbirine doğru 50 ve 55 km/sa ile aynı anda hareket ediyor. Kaç saatte karşılaşır?",
+      "correct": "2",
+      "selected": 3
+    },
+    {
+      "id": "hiz-problemleri-012-5",
+      "prompt": "A 08.00’de 60, B 09.00’da 90 km/sa ile aynı yönde aynı yerden çıkar. B ne zaman yetişir?",
+      "correct": "11.00",
+      "selected": 4
+    },
+    {
+      "id": "hiz-problemleri-012-6",
+      "prompt": "A’nın konumu 20+40 t, B’ninki 140−20 t km. t saat cinsinden. Karşılaşma konumu kaç km’dir?",
+      "correct": "100",
+      "selected": 0
+    },
+    {
+      "id": "hiz-problemleri-012-7",
+      "prompt": "180 m tren 220 m peronu 20 m/sn sabit süratle tamamen kaç saniyede geçer?",
+      "correct": "20",
+      "selected": 1
+    },
+    {
+      "id": "hiz-problemleri-012-8",
+      "prompt": "Durgun suda 15 km/sa tekne, 3 km/sa akıntıda 36 km gidip aynı yolu dönüyor. Toplam süre kaç saattir?",
+      "correct": "5",
+      "selected": 2
+    },
+    {
+      "id": "hiz-problemleri-012-9",
+      "prompt": "400 m pistte aynı noktadan aynı yönde 6 ve 4 m/sn ile çıkanlar başlangıçtan sonra ilk kez kaç saniyede yan yana gelir?",
+      "correct": "200",
+      "selected": 3
+    },
+    {
+      "id": "hiz-problemleri-012-10",
+      "prompt": "Öndeki bisikletli 12 km/sa, 18 km arkadaki yaya 4 km/sa ile aynı yönde sabit hareket ediyor. Sonuç nedir?",
+      "correct": "Yaya yetişemez.",
+      "selected": 4
+    },
+    {
+      "id": "hiz-problemleri-026-ara-durak-iki-farkli-bekleme",
+      "prompt": "Bir tramvay batı ve doğu terminalleri arasında gidip geliyor. Her yol kesitini iki yönde de aynı sürede alıyor. Ara duraktan sırasıyla doğuya 09.18, batıya 10.10 ve doğuya 11.14’te geçiyor. Batı terminalinde 16 dk, doğuda 12 dk bekliyor. Bir terminalden ötekine beklemesiz hareket süresi kaç dakikadır?",
+      "correct": "44 dk",
+      "selected": 0
+    },
+    {
+      "id": "hiz-problemleri-026-hareket-ve-yolculuk-ortalamasi",
+      "prompt": "Sürücü 42 km’yi 42 km/sa, ardından 18 km’yi 36 km/sa sabit süratle alıyor. Arada 30 dk boyunca duruyor. Tüm yolculuk ve yalnız hareket için ortalama süratleri sırasıyla kaç km/sa olur?",
+      "correct": "30 ve 40",
+      "selected": 1
+    },
+    {
+      "id": "hiz-problemleri-026-iki-trenin-tam-gecisi",
+      "prompt": "Paralel raylarda aynı yönde giden 180 m uzunluğundaki hızlı tren 90 km/sa, 120 m uzunluğundaki diğer tren 54 km/sa sabit süratle ilerliyor. Başlangıçta hızlı trenin önü, öndeki trenin arkasının 60 m gerisinde. Bu andan itibaren hızlı trenin önü, yavaş trenin arkasıyla kaçıncı saniyede hizalanır? Hızlı trenin arkası, yavaş trenin önüne ulaştığında tam geçiş kaçıncı saniyede tamamlanır?",
+      "correct": "6 ve 36",
+      "selected": 2
+    },
+    {
+      "id": "hiz-problemleri-026-akinti-esiginde-kiyiya-gore",
+      "prompt": "Bir tekne aynı akıntıda kıyıya göre akıntıyla 21 km’yi 1,5 saatte, akıntıya karşı 20 km’yi 2,5 saatte alıyor. Sonra akıntı sürati 11 km/sa olan başka bir yerde teknenin suya göre sürati değişmiyor ve tekne akıntıya karşı yöneliyor. Durgun sudaki sürati ve bu yeni yerde kıyıya göre hareketi nedir?",
+      "correct": "11 km/sa ve kıyıya göre yerinde kalır.",
+      "selected": 3
+    },
+    {
+      "id": "hiz-problemleri-026-yonlu-yay-ucuncu-karsilasma",
+      "prompt": "Çevresi 360 m olan pistte A’nın başlangıç noktasından B’nin başlangıç noktasına saat yönündeki yay 100 m. Aynı anda A saat yönünde 7 m/sn, B ters yönde 3 m/sn sabit süratle koşuyor. Başlangıçtan sonraki üçüncü karşılaşma kaçıncı saniyededir?",
+      "correct": "82",
+      "selected": 4
+    },
+    {
+      "id": "hiz-problemleri-026-iki-gun-acik-surat-araligi",
+      "prompt": "Bir sürücü iki ayrı günün her birindeki 18 saatlik plan boyunca, araç kullandığı kısımlarda aynı sabit v süratiyle yol alıyor. İlk gün 72, ikinci gün 96 km gidiyor. Her gün plan içindeki sürüş dışı sürenin sürüş süresine oranı 2’den büyük, 7/2’den küçük. İki koşulu da sağlayan v değerleri hangileridir? Sürat birimi km/sa.",
+      "correct": "16<v<18",
+      "selected": 2
+    }
+  ],
+  "grafik-problemleri": [
+    {
+      "id": "grafik-problemleri-014-1",
+      "prompt": "Birbirinden ayrık üç kulüpte sırasıyla 20,30,50 kişi vardır. Bu 100 kişinin daire grafiğinde ikinci kulübün merkez açısı kaç derecedir?",
+      "correct": "108",
+      "selected": 0
+    },
+    {
+      "id": "grafik-problemleri-014-2",
+      "prompt": "150 kişilik ayrık grupların daire grafiğinde bir grubun açısı 72°’dir. Bu grupta kaç kişi vardır?",
+      "correct": "30",
+      "selected": 1
+    },
+    {
+      "id": "grafik-problemleri-014-3",
+      "prompt": "Bir aracın konum-zaman grafiği 2. saniyede 60 m ve 5. saniyede 90 m noktalarını bir doğru parçasıyla birleştiriyor. Bu aralıktaki sabit işaretli hız kaç m/s’dir?",
+      "correct": "10",
+      "selected": 2
+    },
+    {
+      "id": "grafik-problemleri-014-4",
+      "prompt": "A,B,C ayrık gruplarında 20,30,50 kişi var. Yalnız C’ye 20 yeni kişi ekleniyor. Yeni toplamda C’nin payı hangi kesirdir?",
+      "correct": "7/12",
+      "selected": 3
+    },
+    {
+      "id": "grafik-problemleri-014-5",
+      "prompt": "Sütun grafiğinde A=60, B=65 kişidir. Düşey eksen 50’den başlatılmış olsa da gerçek B/A kişi sayısı oranı kaçtır?",
+      "correct": "13/12",
+      "selected": 4
+    },
+    {
+      "id": "grafik-problemleri-014-6",
+      "prompt": "2,3,3,8 veri grubunun aritmetik ortalaması, ortancası ve modu sırasıyla nedir?",
+      "correct": "4;3;3",
+      "selected": 0
+    },
+    {
+      "id": "grafik-problemleri-014-7",
+      "prompt": "Bir ölçüm tablosunda değerler 1,2,3; bu değerlerin frekansları sırasıyla 2,3,1’dir. Altı gözlemin ortalaması kaçtır?",
+      "correct": "11/6",
+      "selected": 1
+    },
+    {
+      "id": "grafik-problemleri-014-8",
+      "prompt": "Eş genişlikli histogramda [0,10),[10,20),[20,30] puan aralıklarının frekansları 4,7,5’tir. Puanı en az 10 olanların bütün gruba oranı yüzde kaçtır?",
+      "correct": "75",
+      "selected": 2
+    },
+    {
+      "id": "grafik-problemleri-014-9",
+      "prompt": "2,4,6 ölçümleri için örneklem standart sapması, ortalamadan farkların kareleri toplamını n−1’e bölüp karekök alarak hesaplanıyor. Sonuç kaçtır?",
+      "correct": "2",
+      "selected": 3
+    },
+    {
+      "id": "grafik-problemleri-014-10",
+      "prompt": "5,9,1,7 verilerinin ortancası kaçtır?",
+      "correct": "6",
+      "selected": 4
+    },
+    {
+      "id": "grafik-problemleri-027-es-olmayan-grafik-araliklari",
+      "prompt": "Bir tankın zaman–hacim grafiğinde 2, 6 ve 9. saatlerdeki değerler 18, 42 ve 33 L. Ardışık noktalar arasında değişim doğrusal. 2–9. saatler arasındaki ortalama değişim hızı ve 8. saatteki hacim sırasıyla nedir?",
+      "correct": "15/7 L/saat ve 36 L",
+      "selected": 0
+    },
+    {
+      "id": "grafik-problemleri-027-iki-daire-yeni-butun",
+      "prompt": "Birbirinden ayrık 160 kişilik A grubu ve 240 kişilik B grubu için aynı etkinliğe katılanların daire dilimleri 90° ve 75°. İki grup birleştiğinde etkinliğe katılan toplam kişi sayısı ve birleşik dairedeki dilimin açısı nedir?",
+      "correct": "90 kişi ve 81°",
+      "selected": 1
+    },
+    {
+      "id": "grafik-problemleri-027-histogram-esik-sinifin-icinde",
+      "prompt": "Eş genişlikli bir histogramda [0,6), [6,12) ve [12,18) sınıflarının frekansları sırasıyla 3, 4 ve 3. Tekil ölçümler bilinmiyor. Değeri en az 10 olan gözlem sayısının alabileceği en küçük ve en büyük değer nedir?",
+      "correct": "3 ve 7",
+      "selected": 2
+    },
+    {
+      "id": "grafik-problemleri-027-ortak-uyelerin-kosullu-payi",
+      "prompt": "90 öğrenciden 48’i A kulübüne, 32’si B kulübüne, 14’ü her iki kulübe üye. En az bir kulübe üye olanlar içinde her iki kulübe üye olanların payı kaçtır?",
+      "correct": "7/33",
+      "selected": 3
+    },
+    {
+      "id": "grafik-problemleri-027-ayrik-olcum-ve-bilinmeyen-ara-deger",
+      "prompt": "Sıcaklık yalnız 1, 5 ve 8. saatlerde ölçülüyor. Sonuçlar sırasıyla 12, 20 ve 17 °C. Ölçümler arasında ve sonrasında değişimin nasıl sürdüğü verilmemiş. I. 1–5. saatlerde ortalama değişim 2 °C/saat. II. 3. saatte sıcaklığın kesin değeri bilinemez. III. 9. saatte sıcaklık kesinlikle 17 °C’nin altındadır. Hangileri çıkarılabilir?",
+      "correct": "I ve II",
+      "selected": 4
+    },
+    {
+      "id": "grafik-problemleri-027-siki-ve-dahil-uc-kesisimi",
+      "prompt": "0≤x≤7 aralığında çizilmiş üç grafiğin değerleri A(x)=16−2x, B(x)=4+x ve C(x)=7. A(x)>B(x) ve B(x)≥C(x) birlikte hangi x aralığında sağlanır?",
+      "correct": "[3,4)",
+      "selected": 2
+    }
+  ]
+}

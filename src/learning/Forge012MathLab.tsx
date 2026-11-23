@@ -11,6 +11,7 @@ import { SplitInterestSource022Lab } from "./SplitInterestSource022Lab";
 import { TargetMixtureSource023Lab } from "./TargetMixtureSource023Lab";
 import { WorkerTeamSource024Lab } from "./WorkerTeamSource024Lab";
 import { EqualLevelTanksSource025Lab } from "./EqualLevelTanksSource025Lab";
+import { SharedSpeedSource026Lab } from "./SharedSpeedSource026Lab";
 import "./forge012Math.css";
 import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number) =>
@@ -870,7 +871,10 @@ export default function Forge012MathLab({ id }: { id: string }) {
           <EqualLevelTanksSource025Lab />
         </>
       ) : (
-        <Motion />
+        <>
+          <Motion />
+          <SharedSpeedSource026Lab />
+        </>
       )}
       <p className="small muted">
         Model seçimleri ve gerekçen bu cihazda saklanır. Keşif süre, soru

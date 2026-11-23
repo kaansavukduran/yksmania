@@ -23,6 +23,7 @@ it("connects all five reviewed headings and preserves meaningful independent que
     ["karisim-problemleri", 14],
     ["isci-problemleri", 15],
     ["havuz-problemleri", 15],
+    ["hiz-problemleri", 15],
   ]);
   for (const l of forge012MathLessons) {
     const g = forge012MathGuides.find((x) => x.id === l.id)!;

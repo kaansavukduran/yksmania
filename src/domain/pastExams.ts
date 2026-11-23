@@ -470,6 +470,60 @@ export const pastExamReferences: PastExamReference[] = [
       "2+2t/5=9t/10 denklemi 20+4t=9t verir. t=4 dakikada iki seviye 3,6 m’dir. Kitapçık basılı s. 37, PDF s. 39. Aynı PDF s. 56’daki anahtar C’dir.",
     ],
   },
+  {
+    id: "2026-TYT-MAT-22",
+    bookletId: "2026-tyt",
+    test: "Temel Matematik",
+    question: 22,
+    page: 31,
+    answerPage: 45,
+    answer: "A",
+    topicIds: ["detail-219"],
+    title: "Ara durak geçişlerini belirleyen gidiş, dönüş ve bekleme",
+    connection:
+      "Bir ara noktaya geri gelene kadar alınan yol kesitini iki kez say. Uçta beklemeyi geçen saate bir kez ekle.",
+    solution: [
+      "İkinci ara durak geçişi 11.30, üçüncüsü 14.40. Arada araç ilk şehre gidip 30 dk bekler ve ara durağa döner. 190−30=160 dk iki eş harekete ait olduğundan ilk kentten ara durağa tek yön 80 dk sürer.",
+      "08.00’den ikinci geçişe 210 dk vardır. İlk 80 dk, diğer uçtaki 30 dk bekleme ve ara durakla öteki uç arasındaki iki eş yol bu süreyi oluşturur. Öteki kesit tek yönde (210−80−30)/2=50 dk sürer.",
+      "14.40’taki üçüncü geçişten sonraki dönüş 50+30+50=130 dk alır. Dördüncü geçiş 16.50, resmî anahtar A. Soru PDF s. 31 (basılı s. 29), anahtar PDF s. 45.",
+    ],
+  },
+  {
+    id: "2026-TYT-MAT-24",
+    bookletId: "2026-tyt",
+    test: "Temel Matematik",
+    question: 24,
+    page: 31,
+    answerPage: 45,
+    answer: "C",
+    topicIds: ["detail-219"],
+    title: "İki günün açık sürat aralıklarını kesiştirme",
+    connection:
+      "Pozitif sürüş süresinin sınırlarını bul. Her mesafe aynı süratle gidileceği için iki aralığı tek v üzerinde birleştir.",
+    solution: [
+      "Sürüş süresi t>0 saattir. Her 24 saatlik günde 2<(24−t)/t<3 olduğundan pozitif t ile çarp. 2t<24−t<3t, yani 6<t<8.",
+      "88 km için 11<v<44/3, 108 km için 27/2<v<18 bulunur. Ortak aralık 27/2<v<44/3’tür. Uç noktalar eşitlik verir ve dışarıda kalır.",
+      "14 km/sa için süreler 44/7 ve 54/7 saattir. İkisi de 6’dan büyük, 8’den küçüktür. Resmî anahtar C. Soru PDF s. 31 (basılı s. 29), anahtar PDF s. 45.",
+    ],
+  },
+  {
+    id: "2018-TYT-MAT-14",
+    bookletId: "2018-tyt",
+    test: "Temel Matematik",
+    question: 14,
+    page: 25,
+    answerPage: 42,
+    answer: "A",
+    topicIds: ["detail-220"],
+    title: "Üç grafikte sıralama ve koşulun başladığı aralık",
+    connection:
+      "Aynı x’teki düşey değerleri karşılaştır. Her önermede başlangıç koşulunun hangi aralıkta doğru olduğunu ayır.",
+    solution: [
+      "0<x<2 içinde üç grafiğin ortak kesişimine b de. 0<x<b olduğunda h(x)<g(x)<f(x), b<x<2 olduğunda f(x)<g(x)<h(x). x=b’de üç değer eşittir.",
+      "I’in ilk koşulu sağ aralıkta gerçekleşir ve orada g(x)<h(x) doğrudur. II’nin ilk koşulu da sağdadır fakat orada h(x)<f(x) yanlıştır. III’ün ilk koşulu soldadır ve orada f(x)<g(x) yanlıştır.",
+      "Kesişimde sıkı başlangıç koşullarının hiçbiri sağlanmaz. Sağ ve sol aralıklardaki denetim yalnız I sonucunu verir. Resmî anahtar A. Soru PDF s. 25 (basılı s. 23), anahtar PDF s. 42.",
+    ],
+  },
 ];
 // Selected companion links leave all earlier source records and their topic lists intact.
 const sourceCompanionReferences: Record<string, readonly string[]> = {

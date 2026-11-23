@@ -13,6 +13,7 @@ import {
   type Predicate,
 } from "./forge014Math";
 import { useExploration } from "./useExploration";
+import { PiecewiseRateSource027Lab } from "./PiecewiseRateSource027Lab";
 import "./forge014Math.css";
 import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number) =>
@@ -1266,7 +1267,10 @@ export default function Forge014MathLab({ lessonId }: { lessonId: string }) {
   return (
     <section className="forge014-math-lab" data-forge014={lessonId}>
       {lessonId === "grafik-problemleri" ? (
-        <Charts />
+        <>
+          <Charts />
+          <PiecewiseRateSource027Lab />
+        </>
       ) : lessonId === "kumeler" ? (
         <Sets />
       ) : lessonId === "kartezyen-carpim" ? (

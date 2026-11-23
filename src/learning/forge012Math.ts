@@ -28,6 +28,13 @@ import {
   poolProblemsSource025Sections,
   poolProblemsSource025Summary,
 } from "./poolProblemsSource025Revision";
+import {
+  speedProblemsSource026Examples,
+  speedProblemsSource026Practice,
+  speedProblemsSource026Recall,
+  speedProblemsSource026Sections,
+  speedProblemsSource026Summary,
+} from "./speedProblemsSource026Revision";
 type Problem = {
   prompt: string;
   correct: string;
@@ -1276,6 +1283,7 @@ const packs: Pack[] = [
           "Sonuçta iki aracın buluşma konumlarını ayrı hesapla. Ortalama için parça yollarını ve mola dahil süreyi tekrar topla. Negatif zaman geçmişte kesişmeyi gösterebilir; gelecekte yetişme diye sunulamaz. Birimin yanında hangi başlangıç saatinden sayıldığını yazmak saat sorularındaki son hatayı önler.",
         ],
       },
+      ...speedProblemsSource026Sections,
     ],
     examples: [
       {
@@ -1382,6 +1390,7 @@ const packs: Pack[] = [
         check: "37,5·4=150 km; yalnız hareket ortalaması farklıdır.",
         pitfall: "Molayı toplam süreden çıkarmak.",
       },
+      ...speedProblemsSource026Examples,
     ],
     recall: [
       {
@@ -1402,6 +1411,7 @@ const packs: Pack[] = [
         answer:
           "Arka ucun da çıkması için ön uç peron ve tren uzunluklarının toplamı kadar ilerler.",
       },
+      ...speedProblemsSource026Recall,
     ],
     questions: [
       {
@@ -1498,8 +1508,7 @@ const packs: Pack[] = [
           "Aralık 18+(12−4)t=18+8 t km olur ve t≥0 için büyür. 18/(12−4)=2,25 hesabı farkın yönünü atlar; gelecekte yetişme süresi değildir. Pozitif bir süre üretmek zorunda değiliz.",
       },
     ],
-    source:
-      "MEBİ TYT Matematik Konu Özetleri basılı s. 54/PDF 56; Aurelia 026 Hız Problemleri öğretim s. 1–8. İşaretli konum ve ortalama sürat ayrımıyla özgün anlatım; resmî soru/anahtar doğrulaması bu yeni sette yapılmış sayılmaz.",
+    source: speedProblemsSource026Summary,
   },
 ];
 export const forge012MathGuides: LessonGuide[] = packs.map(
@@ -1545,6 +1554,7 @@ export const forge012MathLessons: Lesson[] = packs.map((p) => ({
     ...(p.id === "karisim-problemleri" ? mixtureProblemsSource023Practice : []),
     ...(p.id === "isci-problemleri" ? workerProblemsSource024Practice : []),
     ...(p.id === "havuz-problemleri" ? poolProblemsSource025Practice : []),
+    ...(p.id === "hiz-problemleri" ? speedProblemsSource026Practice : []),
   ],
   source: txt(p.source),
   tags: [p.topic, "Özgün öğretim soruları"],

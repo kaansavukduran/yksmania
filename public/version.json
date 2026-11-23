@@ -1,7 +1,7 @@
 {
-  "version": "0.35.0",
+  "version": "0.36.0",
   "channel": "alpha",
   "notes": {
-    "tr": "İşçi Problemleri’nde çalışma hızlarını değiştir ve ekibin işi ne zaman bitireceğini hesapla. Havuz Problemleri’nde iki su seviyesinin ne zaman eşitlendiğini çizimde gör. İki konuya 12 özgün soru ve yeni Kopya Kağıdı bölümleri eklendi."
+    "tr": "Hız Problemleri’nde iki günün süre koşullarını aynı anda karşılayan süratleri bul. Grafik Problemleri’nde iki parçanın süresini ve hacmini değiştirip bütün aralığın ortalama değişim hızını hesapla. İki konuya 12 özgün soru eklendi."
   }
 }

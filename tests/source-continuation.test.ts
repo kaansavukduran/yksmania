@@ -1,4 +1,5 @@
 import { publishedQuestion } from "./helpers/publishedQuestion";
+import { beforeSource031Questions, beforeSource031Teaching } from "./helpers/before-source031-math";
 import retainedCatalogue from "./fixtures/retained-exam-catalogue-016.json";
 import accepted014Questions from "./fixtures/0.14.0-questions.json";
 import { expect, it } from "vitest";
@@ -8,6 +9,7 @@ import oldTeaching from "./fixtures/0.12.0-lesson-fingerprints.json";
 import { lessons } from "../src/domain/content";
 import { studyTopics, topicLessons } from "../src/domain/studyPlan";
 import { lessonGuides } from "../src/learning/guides";
+import type { LessonGuide } from "../src/learning/guides/types";
 import { builtInCheatSheets } from "../src/learning/cheatsheetContent";
 import { questionContentIssues } from "../src/domain/questionContent";
 import { initialState } from "../src/domain/model";
@@ -61,8 +63,9 @@ it("teaches the next thirty headings with twenty-eight new deep lessons and two 
       (l) => !l.tags.includes("soru-seti"),
     );
     expect(theory, topic.title).toHaveLength(1);
-    const lesson = theory[0],
-      guide = lessonGuides.get(lesson.id)!;
+    const lesson = theory[0];
+    const currentGuide = lessonGuides.get(lesson.id)!;
+    const guide = beforeSource031Teaching("guides", lesson.id, currentGuide) as LessonGuide;
     expect(lesson.subjectId).toBe(topic.subjectId);
     expect(guide, topic.title).toBeDefined();
     const isOld = Object.hasOwn(oldTeaching, lesson.id);
@@ -77,7 +80,9 @@ it("teaches the next thirty headings with twenty-eight new deep lessons and two 
       for (const example of guide.examples)
         expect(example.steps.length, example.title).toBeGreaterThanOrEqual(3);
       expect(guide.recall.length, topic.title).toBeGreaterThanOrEqual(4);
-      expect(lesson.questions, topic.title).toHaveLength(10);
+      expect(beforeSource031Questions(lesson.questions), topic.title).toHaveLength(10);
+      if (["hiz-problemleri", "grafik-problemleri"].includes(lesson.id))
+        expect(lesson.questions, topic.title).toHaveLength(16);
     }
     const sheet = builtInCheatSheets.get(topic.id)!;
     expect(sheet.lessonId).toBe(lesson.id);
@@ -85,7 +90,7 @@ it("teaches the next thirty headings with twenty-eight new deep lessons and two 
     for (const section of guide.sections)
       for (const paragraph of section.paragraphs)
         expect(fullSheet, topic.title).toContain(paragraph);
-    expect(sheet.examples).toHaveLength(guide.examples.length);
+    expect(sheet.examples).toHaveLength(currentGuide.examples.length);
   }
   expect(added).toHaveLength(28);
   expect(new Set(added).size).toBe(28);
