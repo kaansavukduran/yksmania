@@ -68,6 +68,13 @@ test("the revised prime guide and summary let learners try each repair before re
   await page.getByRole("button", { name: "TYT", exact: true }).click();
   await page.getByRole("textbox", { name: "Ders veya konu ara", exact: true }).fill("Asal sayılar");
   await page.locator('[data-lesson-id="tyt-mat-asal-kaynak-032"]').click();
+  const methodTitle = "Yöntem seç: karar ile kontrolü birlikte yaz";
+  await openGuidePage(page, methodTitle);
+  const method = page.locator(".guide-section").filter({
+    has: page.getByRole("heading", { name: methodTitle, exact: true }),
+  });
+  await expect(method).toContainText("İki farklı etiket görürsün ama üç kart sayarsın.");
+  await expect(method).not.toContainText("ölçülmüş saniye");
   const sectionTitle = "Destek azalt: eksik adımı ve kaybolan koşulu bul";
   await openGuidePage(page, sectionTitle);
   const section = page.locator(".guide-section").filter({
