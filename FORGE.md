@@ -1,3 +1,7 @@
+# Isıtma eğrisinin beş basamağı · 0.66.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 71, basılı 69, saf suyun sıcaklığı ve birikimli verilen ısının beş bölgesini gösteriyor. Mevcut Hâl Değişimi çiziminin 100 g, −20 °C’den 120 °C’ye ve yaklaşık 309,6 kJ toplamı varsayılan durumda korundu. Her adım aralığın başlangıcını, sonunu ve farkını gösterir. Kütleyi değiştirince enerji aralıkları kendi ölçeğinde değişir. Faz sıcaklıkları aynı basınca bağlıdır. Donarken saf madde çevreye enerji verir. İlk denetimde 320 px’de 600 kJ işareti eksen adıyla çakıştı. Eksen adı orta ve alt konuma alındı. Aynı sıkı çizim denetimi, çevrimdışı beş adım, ayrı Kopya Kağıdı ve çözüm görseli yeniden geçti.
+
 # Öz ısı ve sıcaklık değişimi · 0.65.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 65–66, basılı 63–64, öz ısı tablosu ve eşit enerjiyle ısınan su ve demiri gösteriyor. Tek veri dizisi yedi maddeyi hem J/(kg·K) hem cal/(g·°C) biçiminde veriyor. Demir için 448 J/(kg·K), yaklaşık 0,107 cal/(g·°C). Basılı kalori karşılığı 0,017, birim dönüşümüyle uyuşmuyor. Uygulamada öz ısı ve sıcaklık değişimi ayrı birimli çizimlerde. İki gerçek çevrimdışı sınama 320 px ve %200 ölçekte her iki çizimi, ayrı Kopya Kağıdı tablosunu, çözüm adımını ve korunmuş öğrenme kaydını doğruladı.

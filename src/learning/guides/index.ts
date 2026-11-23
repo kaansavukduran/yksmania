@@ -1,3 +1,4 @@
+import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
 import { equalHeatExample, equalHeatSection, specificHeatSection } from "../specificHeat065";
 import { exactTemperatureExample, exactTemperatureSection } from "../exactTemperature064";
 import { thermalTransferExample, thermalTransferSection } from "../thermalTransfer063";
@@ -325,6 +326,16 @@ for (const extension of forge020BiologyGuideExtensions) {
 // The reader can extend the catalog while preserving its historical entries.
 export function studyGuide(lessonId: string) {
   const guide = clarifiedGuideView(lessonGuides.get(lessonId));
+  if (guide?.id === "hal-degisimi") {
+    return {
+      ...guide,
+      sections: guide.sections.map((section) => section.title === heatingCurveTitle
+        ? { ...section, figureTitle: heatingCurveTitle, table: heatingCurveTable }
+        : section),
+      examples: [...guide.examples, heatingCurveExample],
+      source: `${guide.source} Birikimli ısı ekseninin beş bölgesi MEBİ TYT Fizik Konu Özetleri fiziksel 71, basılı 69. sayfadaki grafikle karşılaştırıldı. Örnek malzeme katsayıları yaklaşık değerlerdir.`,
+    };
+  }
   if (guide?.id === "isi-ve-sicaklik") {
     return {
       ...guide,

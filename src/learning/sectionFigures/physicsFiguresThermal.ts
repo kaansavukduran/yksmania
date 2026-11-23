@@ -1,3 +1,5 @@
+import { heatingCurveTitle } from "../heatingCurve066";
+import { heatingCurveFigure } from "./heatingCurveFigure066";
 import { equalHeatTitle, specificHeatTitle } from "../specificHeat065";
 import { equalHeatFigure, specificHeatFigure } from "./specificHeatFigure065";
 import { exactTemperatureTitle } from "../exactTemperature064";
@@ -493,31 +495,7 @@ const hal: Record<string, FigureDef> = {
       };
     },
   },
-  "Grafiği beş enerji basamağına ayır": {
-    caption:
-      "100 g buz −20 °C'den 120 °C buhara: buzu ısıtma 4,2 kJ, erime 33,4 kJ, suyu ısıtma 42 kJ, buharlaşma 226 kJ, buharı ısıtma 4 kJ. Yatay eksen gerçek ölçekte: en uzun basamak buharlaşmadır.",
-    alt: "Sıcaklık–enerji grafiği: kısa eğim, 0 derecede yatay, eğim, 100 derecede çok uzun yatay ve kısa eğim.",
-    draw: () => {
-      const st = [4.2, 33.4, 42, 226, 4];
-      const T = [-20, 0, 0, 100, 100, 120];
-      const sx = 0.035;
-      const sy = 0.03;
-      const xs = [0];
-      for (const q of st) xs.push(xs[xs.length - 1] + q);
-      const pts = xs.map((x, i) => v(x * sx, (T[i] + 20) * sy));
-      const names = ["buz ısınır", "erime", "su ısınır", "buharlaşma", "buhar"];
-      return {
-        els: [
-          ...axes(v(0, 0), xs[5] * sx, 140 * sy, "Q (kJ)", "T (°C)"),
-          curve(pts),
-          ...[0, 100].map((c) => txt(v(0, (c + 20) * sy), String(c), "w", { small: true, tone: "muted", soft: true })),
-          txt(v(0, 0), "−20", "w", { small: true, tone: "muted" }),
-          ...names.map((n, i) => txt(v(((xs[i] + xs[i + 1]) / 2) * sx, ((T[i] + T[i + 1]) / 2 + 20) * sy), n, i === 3 ? "s" : i === 1 ? "se" : "nw", { small: true, tone: i === 1 || i === 3 ? "a" : "muted" })),
-        ],
-        readout: ["Toplam ≈ 4,2 + 33,4 + 42 + 226 + 4 = 309,6 kJ"],
-      };
-    },
-  },
+  [heatingCurveTitle]: heatingCurveFigure,
   "Buharlaşma yüzeyde, kaynama bütün sıvıda": {
     caption:
       "Sol: buharlaşma her sıcaklıkta yalnız yüzeyden olur; kaçan tanecikler kalan sıvıyı soğutabilir. Sağ: kaynamada buhar basıncı dış basınca eşit olduğu için kabarcıklar sıvının içinde de oluşur.",

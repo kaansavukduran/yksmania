@@ -1,7 +1,7 @@
 {
-  "version": "0.65.0",
+  "version": "0.66.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Öz ısı tablosunu iki birimde oku. Su ve demirde eşit enerjiyle oluşan sıcaklık farklarını ayrı bir çizimde karşılaştır."
+    "tr": "Isıtma eğrisinde beş basamağı adım adım izle. Kütleyi değiştirip erime ve kaynama için gereken ısıyı hesapla."
   }
 }

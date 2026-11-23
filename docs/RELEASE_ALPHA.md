@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.66.0 · Isıtma eğrisi
+
+Yayın adayı. Buzdan buhara geçişin beş basamağını seç. Kütleyi değiştirerek erime ve kaynama aralığındaki gerçek ısıyı oku. Ayrı Kopya Kağıdı’nda aynı grafik ve çözümlü örnek yer alır.
+
 # ÖSYM Mania 0.65.0 · Öz ısı
 
 Yayın adayı. Yedi maddenin öz ısısını aynı ölçekte karşılaştır. Ayrı çizimde su ve demire verilen enerjiyi değiştirip oluşan sıcaklık değişimini oku.

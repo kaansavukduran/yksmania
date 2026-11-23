@@ -4,6 +4,8 @@
 
 **Son yayımlanan web ve masaüstü sürümü 0.42.0**. Açıortayları ve ortak kenarlı üçgenleri çevrimdışı inceleyebilirsin. [Windows ve Linux 0.42](https://github.com/kaansavukduran/yksmania/releases/tag/v0.42.0-alpha.1) · [Android 0.42 kişisel deneme arşivi](https://github.com/kaansavukduran/yksmania/actions/runs/45187782506/artifacts/14823994107)
 
+**0.66.0 adayı** ısıtma eğrisindeki beş basamağı kütleye bağlayan bir çizim ekliyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+
 **0.65.0 adayı** öz ısı tablosunu iki birime çeviriyor ve eşit enerjiyle ısınmayı karşılaştırıyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.64.0 adayı** Celsius, Fahrenheit ve Kelvin dönüşümünü aynı termometre çiziminde gösteriyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
