@@ -271,4 +271,28 @@ export const examTeachingCases: Record<string, ExamTeachingCase> = {
     pitfall:
       "Her iki eklemede de şeker kütlesini artırmak veya ilk toplam 12 kg’ı paydada korumak.",
   },
+  "2011-YGS-MAT-22": {
+    prompt:
+      "Dört A tipi yazıcı aynı belge paketini 18 saatte, altı B tipi yazıcı 24 saatte tamamlıyor. Her tür içinde hızlar eşit. Çıktılar çakışmadan iki A ve dört B yazıcısıyla paket kaç saatte basılır?",
+    steps: [
+      "Bir A yazıcısının hızı 1/(4·18)=1/72 paket/saat, bir B yazıcısının hızı 1/(6·24)=1/144 paket/saattir.",
+      "Yeni ekibin hızı 2/72+4/144=1/18 paket/saat. Bir paket 18 saatte tamamlanır.",
+      "18 saat sonunda iki A yazıcısı paketin 1/2’sini, dört B yazıcısı kalan 1/2’sini basar.",
+    ],
+    answer: "Paket 18 saatte basılır.",
+    pitfall:
+      "Ekibin bitirme süresini her yazıcının tek başına bitirme süresi olarak kullanmak.",
+  },
+  "2013-YGS-MAT-37": {
+    prompt:
+      "En az 4 m derinliğinde iki boş dik prizma tankın yatay kesitleri 8 m² ve 3 m². Genişe saatte 2,4 m³, dara saatte 1,8 m³ su giriyor. Geniş tankın girişi 5 saat önce açılıyor. Dar tankın girişi açıldıktan kaç saat sonra seviyeler ilk kez eşit olur ve yükseklik kaç metredir?",
+    steps: [
+      "Geniş tank saatte 2,4/8=0,3 m, dar tank saatte 1,8/3=0,6 m yükselir.",
+      "Darın girişi açıldığında geniş tank 5·0,3=1,5 m öndedir. Bu andan sonraki t saat için 1,5+0,3t=0,6t.",
+      "Fark saat başına 0,3 m azalır. t=5 saatte iki seviye 3 m olur. En az 4 m derinlik verildiği için o ana kadar taşma olmaz.",
+    ],
+    answer: "Dar tankın girişi açıldıktan 5 saat sonra, 3 m’de eşitlenir.",
+    pitfall:
+      "Debileri doğrudan karşılaştırmak veya geçen süreyi geniş tankın açılışından saymak.",
+  },
 };

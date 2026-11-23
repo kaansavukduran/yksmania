@@ -2,6 +2,7 @@ import { expect, test } from "@playwright/test";
 import fractionAndAgeFlow from "../fixtures/source032-math-question-flow.json" with { type: "json" };
 import percentAndProfitFlow from "../fixtures/source033-math-question-flow.json" with { type: "json" };
 import interestAndMixtureFlow from "../fixtures/source034-math-question-flow.json" with { type: "json" };
+import workerAndPoolFlow from "../fixtures/source035-math-question-flow.json" with { type: "json" };
 import { typeset } from "../../src/domain/typeset";
 import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
 import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse";
@@ -9,7 +10,7 @@ import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse"
 registerOfflineBootDiagnostics();
 test.use({ locale: "tr-TR", timezoneId: "Europe/Istanbul" });
 
-const flow = { ...fractionAndAgeFlow, ...percentAndProfitFlow, ...interestAndMixtureFlow };
+const flow = { ...fractionAndAgeFlow, ...percentAndProfitFlow, ...interestAndMixtureFlow, ...workerAndPoolFlow };
 const courses = [
   {
     lesson: "kesir-problemleri",
@@ -62,7 +63,7 @@ const courses = [
     exploration: "split-simple-interest-source-022",
     sheet: "İki yatırımın döneme ait katsayılarını karşılaştır",
     count: 16,
-    official: [{ year: 2013, exam: "ALES İlkbahar · Sayısal-1", question: 20, page: 7, answerPage: 61, answer: "A", example: "Anapara 3.000 TL, düşük yıllık oran %5." }],
+    official: [{ year: 2013, exam: "ALES İlkbahar · Sayısal-1", filter: "ALES", question: 20, page: 7, keyUrl: "https://dokuman.osym.gov.tr/web/eskidosyalar/2213.pdf#page=61", answer: "A", example: "Anapara 3.000 TL, düşük yıllık oran %5." }],
   },
   {
     lesson: "karisim-problemleri",
@@ -72,7 +73,28 @@ const courses = [
     exploration: "target-mixture-source-023",
     sheet: "Hedef yüzde iki kütlenin oranını belirler",
     count: 16,
-    official: [{ year: 2013, exam: "ALES İlkbahar · Sayısal-1", question: 18, page: 7, answerPage: 61, answer: "B", example: "Saf şekerle %32, şeker içermeyen unla %12." }],
+    official: [{ year: 2013, exam: "ALES İlkbahar · Sayısal-1", filter: "ALES", question: 18, page: 7, keyUrl: "https://dokuman.osym.gov.tr/web/eskidosyalar/2213.pdf#page=61", answer: "B", example: "Saf şekerle %32, şeker içermeyen unla %12." }],
+  },
+  {
+    lesson: "isci-problemleri",
+    search: "İşçi problemleri",
+    topic: "detail-217",
+    model: "source024-worker-team",
+    exploration: "worker-team-speed-source-024",
+    sheet: "Hedefler farklıysa ortak iş birimine geç",
+    count: 16,
+    official: [{ year: 2011, exam: "YGS · Temel Matematik", filter: "YGS", question: 22, page: 31, keyUrl: "https://dokuman.osym.gov.tr/web/eskidosyalar/210.pdf#page=1", answer: "B", example: "Paket 18 saatte basılır." }],
+  },
+  {
+    lesson: "havuz-problemleri",
+    search: "Havuz problemleri",
+    title: "İşçi ve havuz problemleri: net akışı ve sınırları izle",
+    topic: "detail-218",
+    model: "source025-equal-level",
+    exploration: "equal-level-tanks-source-025",
+    sheet: "Su bitince çıkış debisini yeniden belirle",
+    count: 16,
+    official: [{ year: 2013, exam: "YGS · Temel Matematik", filter: "YGS", question: 37, page: 39, keyUrl: "https://dokuman.osym.gov.tr/pdfdokuman/2013/OSYS/24.03.2013%20YGS.pdf#page=56", answer: "C", example: "Dar tankın girişi açıldıktan 5 saat sonra, 3 m’de eşitlenir." }],
   },
 ] as const;
 
@@ -182,7 +204,7 @@ for (const course of courses) {
       await principal.press("ArrowRight");
       await expect(principal).toHaveAttribute("aria-valuetext", "7300 TL");
       expect(await graph.innerHTML()).not.toBe(original);
-    } else {
+    } else if (course.lesson === "karisim-problemleri") {
       await expect(result).toContainText("50 g karışım eklenir.");
       const target = panel.getByRole("slider", { name: "Hedef yüzde", exact: true });
       await target.press("End");
@@ -197,6 +219,33 @@ for (const course of courses) {
       await expect(target).toHaveAttribute("aria-valuetext", "%31");
       await expect(result).toContainText("750/19 g karışım eklenir.");
       expect(await graph.innerHTML()).not.toBe(original);
+    } else if (course.lesson === "isci-problemleri") {
+      await expect(result).toContainText("Birlikte süre 7,2 saat.");
+      await panel.getByRole("button", { name: "Dar çalışma alanı örneği", exact: true }).click();
+      await expect(result).toContainText("Ekip ve en hızlı tek çalışan aynı sürede bitirir.");
+      expect(await graph.innerHTML()).not.toBe(original);
+      await panel.getByText("Tek başına süreleri değiştir", { exact: true }).click();
+      const duration = panel.getByRole("slider", { name: "B’nin tek başına süresi", exact: true });
+      await duration.press("ArrowRight");
+      await expect(duration).toHaveAttribute("aria-valuetext", "13 saat");
+      await expect(result).toContainText("Birlikte süre 6,24 saat.");
+      await expect(result).toContainText("Ekip, en hızlı tek çalışandan daha geç bitirir.");
+    } else {
+      await expect(result).toContainText("B açıldıktan 6 dk sonra seviyeler 4,5 dm’de eşitlenir.");
+      await panel.getByRole("button", { name: "Eşit yükselme örneği", exact: true }).click();
+      await expect(result).toContainText("Seviyeler dolmadan yeniden eşitlenmez.");
+      expect(await graph.innerHTML()).not.toBe(original);
+      await panel.getByRole("button", { name: "Örneğe dön", exact: true }).click();
+      await panel.getByText("Debileri, gecikmeyi ve kap yüksekliğini değiştir", { exact: true }).click();
+      await panel.getByRole("slider", { name: "Kapların yüksekliği", exact: true }).press("Home");
+      await expect(result).toContainText("Kaplar dolmadan eşitlenemez.");
+      await panel.getByRole("slider", { name: "B açılmadan önce geçen süre", exact: true }).press("End");
+      await expect(result).toContainText("A, B su vermeye başlamadan dolar.");
+      await panel.getByRole("button", { name: "Örneğe dön", exact: true }).click();
+      const area = panel.getByRole("slider", { name: "B kabının taban alanı", exact: true });
+      await area.press("ArrowLeft");
+      await expect(area).toHaveAttribute("aria-valuetext", "7 dm²");
+      await expect(result).toContainText("B açıldıktan 4,2 dk sonra seviyeler 3,6 dm’de eşitlenir.");
     }
     const note = "Şekildeki sonucu başlangıç koşuluyla denetledim.";
     const notes = page.locator(".study-notes").getByRole("textbox", { name: "Notun", exact: true });
@@ -267,10 +316,10 @@ for (const course of courses) {
       const source = page.locator(".past-exam-reference").filter({
         hasText: `${official.year} ${exam} · Soru ${official.question} ·`,
       });
-      if ("exam" in official) {
+      if ("filter" in official) {
         await exams.getByRole("combobox", { name: "Sınav", exact: true }).selectOption("TYT");
         await expect(source).toHaveCount(0);
-        await exams.getByRole("combobox", { name: "Sınav", exact: true }).selectOption("ALES");
+        await exams.getByRole("combobox", { name: "Sınav", exact: true }).selectOption(official.filter);
         await exams.getByRole("combobox", { name: "Yıl", exact: true }).selectOption(String(official.year));
       }
       await source.getByRole("button", { name: "Çözümü adım adım aç", exact: true }).click();
@@ -279,9 +328,9 @@ for (const course of courses) {
       await expect(source.locator(".worked-conclusion")).toContainText(typeset(official.example));
       await source.locator("summary").click();
       await expect(source).toContainText(`Resmî cevap: ${official.answer}`);
-      if ("answerPage" in official) {
+      if ("keyUrl" in official) {
         await expect(source.getByRole("link", { name: "Resmî cevap anahtarı (internet)" }))
-          .toHaveAttribute("href", `https://dokuman.osym.gov.tr/web/eskidosyalar/2213.pdf#page=${official.answerPage}`);
+          .toHaveAttribute("href", official.keyUrl);
       }
       await expect(source.getByRole("link", { name: /Resmî kaynak kaydı/ }))
         .toHaveAttribute("href", new RegExp(`^https://dokuman\\.osym\\.gov\\.tr/.+\\.pdf#page=${official.page}$`));

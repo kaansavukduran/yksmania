@@ -13,6 +13,8 @@ const models = [
   { lesson: "kar-zarar-problemleri", model: "source021-fire-profit" },
   { lesson: "faiz-problemleri", model: "source022-split-interest" },
   { lesson: "karisim-problemleri", model: "source023-target-mixture" },
+  { lesson: "isci-problemleri", model: "source024-worker-team" },
+  { lesson: "havuz-problemleri", model: "source025-equal-level" },
 ];
 
 for (const width of [320, 375, 1280]) {

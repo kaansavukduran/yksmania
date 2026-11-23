@@ -1,3 +1,11 @@
+# YKSMania 0.35.0 · İşçi ve Havuz Problemleri
+
+Yayın adayı. İşçi Problemleri’nde tek başına ve ekipte çalışma hızını değiştirip bitirme süresini incele. Havuz Problemleri’nde taban alanı, debi ve açılma gecikmesi değiştikçe iki seviyenin ne zaman eşitlendiğini gör. Çizimler ve sayısal sonuçlar aynı hesapla güncellenir.
+
+Konu anlatımları ve Kopya Kağıtları genişledi, 12 özgün soru eklendi. Açık eski 10 soruluk çalışmalar kendi uzunluklarıyla sürer. [İlerleme tablosu](ILERLEME.md)
+
+---
+
 # YKSMania 0.34.0 · Faiz ve Karışım Problemleri
 
 Yayın adayı. Faiz Problemleri’nde iki vadeyi ve oranı değiştirerek anaparanın nasıl bölündüğünü gör. Karışım Problemleri’nde hedef yüzdeyi seç ve eklenmesi gereken miktarı hesapla. Çizimler ve sonuçlar aynı değerlerden hesaplanır.

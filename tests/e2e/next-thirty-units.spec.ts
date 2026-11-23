@@ -245,6 +245,8 @@ test("all thirty newly taught units have independent end-to-end cases", () => {
 const extendedPracticeCounts: Record<string, number> = {
   "faiz-problemleri": 16,
   "karisim-problemleri": 16,
+  "isci-problemleri": 16,
+  "havuz-problemleri": 16,
 };
 
 for (const lesson of units) {

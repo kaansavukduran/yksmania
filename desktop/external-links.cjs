@@ -46,7 +46,8 @@ function isAllowedExternalUrl(value) {
       return (
         !u.search &&
         staticPageFragment(u.hash) &&
-        /^\/(?:pdfdokuman|web)\/[A-Za-z0-9_/-]+\.pdf$/.test(u.pathname)
+        (/^\/(?:pdfdokuman|web)\/[A-Za-z0-9_/-]+\.pdf$/.test(u.pathname) ||
+          u.pathname === "/pdfdokuman/2013/OSYS/24.03.2013%20YGS.pdf")
       );
     return false;
   } catch {

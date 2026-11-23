@@ -14,6 +14,20 @@ import {
   mixtureProblemsSource023Sections,
   mixtureProblemsSource023Summary,
 } from "./mixtureProblemsSource023Revision";
+import {
+  workerProblemsSource024Examples,
+  workerProblemsSource024Practice,
+  workerProblemsSource024Recall,
+  workerProblemsSource024Sections,
+  workerProblemsSource024Summary,
+} from "./workerProblemsSource024Revision";
+import {
+  poolProblemsSource025Examples,
+  poolProblemsSource025Practice,
+  poolProblemsSource025Recall,
+  poolProblemsSource025Sections,
+  poolProblemsSource025Summary,
+} from "./poolProblemsSource025Revision";
 type Problem = {
   prompt: string;
   correct: string;
@@ -679,6 +693,7 @@ const packs: Pack[] = [
           "Son kontrol: katkılar aynı iş ve zaman biriminde mi, her kişinin gerçek çalıştığı süre sayıldı mı, toplam iş tam 1 mi? 7,2 saat 7 saat 12 dakikadır; ondalık 0,2’yi 20 dakika sanma. Bulduğun süreyi hızlarla çarpıp iş paylarını yeniden toplamak modeli doğrudan doğrular.",
         ],
       },
+      ...workerProblemsSource024Sections,
     ],
     examples: [
       {
@@ -784,6 +799,7 @@ const packs: Pack[] = [
         check: "3/12+18/24=1; eski yapılan iş değişmedi.",
         pitfall: "Tüm işi baştan yarı hızla yapılmış gibi 24 saat saymak.",
       },
+      ...workerProblemsSource024Examples,
     ],
     recall: [
       {
@@ -804,6 +820,7 @@ const packs: Pack[] = [
         answer:
           "Hayır; etkin vardiya süresi gerekir. Günde 8 saatse 48 çalışma saatidir.",
       },
+      ...workerProblemsSource024Recall,
     ],
     questions: [
       {
@@ -897,8 +914,7 @@ const packs: Pack[] = [
           "Birlikte hız 1/9+1/18=1/6; 2 saatte 1/3 iş biter. B’nin kalan 2/3 için süresi (2/3)÷(1/18)=12 saattir. Toplam süre 14 olsa da sorulan ayrılmadan sonraki ek süredir.",
       },
     ],
-    source:
-      "MEBİ TYT Matematik Konu Özetleri basılı s. 50/PDF 52; Aurelia 024 İşçi Problemleri öğretim s. 1–9. Bağımsız sabit hız ve evre koşullarıyla özgün öğretim; resmî soru aktarımı yoktur.",
+    source: workerProblemsSource024Summary,
   },
   {
     id: "havuz-problemleri",
@@ -967,6 +983,7 @@ const packs: Pack[] = [
           "Süreyi saat bulup dakika istendiğinde 60 ile çarp. 4/3 saat 1 saat 20 dakikadır; 1 saat 33 dakika değildir. Sonucun hedef dolulukla aynı olduğunu yerine koyarak doğrula. Net sıfırken sonlu süre, negatif hacim veya tank içinde %100’den fazla su buluyorsan ilk bozulan koşula dön.",
         ],
       },
+      ...poolProblemsSource025Sections,
     ],
     examples: [
       {
@@ -1074,6 +1091,7 @@ const packs: Pack[] = [
           "4·5=10·2=20 m³; tankların en az 5 ve 2 m yüksek olduğu kabul edilir.",
         pitfall: "Eşit hacimden eşit yükseklik çıkarmak.",
       },
+      ...poolProblemsSource025Examples,
     ],
     recall: [
       {
@@ -1095,6 +1113,7 @@ const packs: Pack[] = [
         answer:
           "Taban alanı dört katına çıkar, yükseklik artış hızı dörtte bire iner.",
       },
+      ...poolProblemsSource025Recall,
     ],
     questions: [
       {
@@ -1188,8 +1207,7 @@ const packs: Pack[] = [
           "Üç saatte 3/8 artış, saatte 1/8 pay demektir. İlk 1/4’ten tam doluya 3/4 gerekir; (3/4)/(1/8)=6 saat. 3.saatten sonraki ek süre 3 saattir, toplamla karıştırma.",
       },
     ],
-    source:
-      "Aurelia 025 İşçi-Havuz Problemleri öğretim s. 1–8; MEBİ TYT Matematik PDF 52’deki ortak iş hızı önbilgisi. Sabit debi, başlangıç ve kapasite sınırlarıyla özgün model/sorular; bağlı resmî arşiv bağımsız incelenmiş sayılmaz.",
+    source: poolProblemsSource025Summary,
   },
   {
     id: "hiz-problemleri",
@@ -1525,6 +1543,8 @@ export const forge012MathLessons: Lesson[] = packs.map((p) => ({
     }),
     ...(p.id === "faiz-problemleri" ? interestProblemsSource022Practice : []),
     ...(p.id === "karisim-problemleri" ? mixtureProblemsSource023Practice : []),
+    ...(p.id === "isci-problemleri" ? workerProblemsSource024Practice : []),
+    ...(p.id === "havuz-problemleri" ? poolProblemsSource025Practice : []),
   ],
   source: txt(p.source),
   tags: [p.topic, "Özgün öğretim soruları"],

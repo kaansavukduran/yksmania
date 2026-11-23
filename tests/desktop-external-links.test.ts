@@ -2,6 +2,7 @@ import { createRequire } from "node:module";
 import { describe, expect, it } from "vitest";
 import catalogue from "../src/learning/videoCatalog031.json";
 import booklets from "../src/data/official-booklets.json";
+import { pastExamReferences } from "../src/domain/pastExams";
 const require = createRequire(import.meta.url);
 const { isAllowedExternalUrl: allow } =
   require("../desktop/external-links.cjs") as {
@@ -54,6 +55,8 @@ const negative = [
   "https://dokuman.osym.gov.tr/redirect?url=https://evil.example",
   "https://dokuman.osym.gov.tr/pdfdokuman/2021/YKS/booklet.exe",
   "https://dokuman.osym.gov.tr/pdfdokuman/2021/YKS/booklet.pdf/more",
+  "https://dokuman.osym.gov.tr/pdfdokuman/2013/OSYS/24.03.2013%2FYGS.pdf",
+  "https://dokuman.osym.gov.tr/pdfdokuman/2013/OSYS/24.03.2013%20YGS.pdf#page=0",
   "https://dokuman.osym.gov.tr.evil.example/pdfdokuman/2021/YKS/booklet.pdf",
   "https://user:password@dokuman.osym.gov.tr/pdfdokuman/2021/YKS/booklet.pdf",
   "https://dokuman.osym.gov.tr:444/pdfdokuman/2021/YKS/booklet.pdf",
@@ -90,6 +93,12 @@ describe("desktop public learning-link policy", () => {
     for (const booklet of booklets) {
       expect(allow(booklet.url), booklet.id).toBe(true);
       expect(allow(`${booklet.url}#page=1`), booklet.id).toBe(true);
+    }
+    for (const reference of pastExamReferences) {
+      const booklet = booklets.find(({ id }) => id === reference.bookletId)!;
+      const answerFile = reference.answerSource?.url ?? booklet.url;
+      expect(allow(`${booklet.url}#page=${reference.page}`), reference.id).toBe(true);
+      expect(allow(`${answerFile}#page=${reference.answerPage}`), reference.id).toBe(true);
     }
   });
 });

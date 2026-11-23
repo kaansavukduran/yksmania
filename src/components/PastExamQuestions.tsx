@@ -140,7 +140,7 @@ export function PastExamQuestions({
               </a>
               <a
                 className="text-button"
-                href={`${booklet.url}#page=${ref.answerPage}`}
+                href={`${ref.answerSource?.url ?? booklet.url}#page=${ref.answerPage}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

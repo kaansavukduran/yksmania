@@ -57,6 +57,22 @@ const revisions = [
     ].map((id) => `karisim-problemleri-023-${id}`),
     oldSource: "MEBİ TYT Matematik Konu Özetleri, basılı s. 53/PDF 55; Aurelia 023 Karışım Problemleri, öğretim s. 1–6. Kütle korunumuna dayalı özgün anlatım ve sorular; resmî soru aktarımı değildir.",
   },
+  {
+    lesson: "isci-problemleri", topic: "detail-217", sections: 8, examples: 4, recall: 4,
+    appendedQuestions: [
+      "ortak-dosya-birimi", "iki-grubu-kisiye-indir", "vardiyada-bitis-saati",
+      "birlikte-daha-yavas", "bitmis-urun-kapasitesi", "ara-verip-ekip-olma",
+    ].map((id) => `isci-problemleri-024-${id}`),
+    oldSource: "MEBİ TYT Matematik Konu Özetleri basılı s. 50/PDF 52; Aurelia 024 İşçi Problemleri öğretim s. 1–9. Bağımsız sabit hız ve evre koşullarıyla özgün öğretim; resmî soru aktarımı yoktur.",
+  },
+  {
+    lesson: "havuz-problemleri", topic: "detail-218", sections: 8, examples: 4, recall: 4,
+    appendedQuestions: [
+      "bosalma-sonrasi-gercek-cikis", "yan-kacak-sinirinda-dur", "gecikmeli-giris-eszamanli-kapanis",
+      "iki-kesitli-kapta-yukseklik", "iki-grafik-ayni-baslangic", "tasmanin-sonraki-evreye-etkisi",
+    ].map((id) => `havuz-problemleri-025-${id}`),
+    oldSource: "Aurelia 025 İşçi-Havuz Problemleri öğretim s. 1–8; MEBİ TYT Matematik PDF 52’deki ortak iş hızı önbilgisi. Sabit debi, başlangıç ve kapasite sınırlarıyla özgün model/sorular; bağlı resmî arşiv bağımsız incelenmiş sayılmaz.",
+  },
 ];
 
 const additions = new Set(revisions.flatMap(({ appendedQuestions }) => appendedQuestions));

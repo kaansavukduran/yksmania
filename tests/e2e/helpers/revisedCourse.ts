@@ -30,13 +30,15 @@ export function learning(state: AppState) {
   };
 }
 
-export async function openCourse(page: Page, entry: { lesson: string; search: string }) {
+export async function openCourse(page: Page, entry: { lesson: string; search: string; title?: string }) {
   const menu = page.getByRole("button", { name: "Menüyü aç", exact: true });
   if (await menu.isVisible()) await menu.click();
   await page.locator(".sidebar").getByRole("button", { name: "Konu Anlatımı", exact: true }).click();
   await page.getByRole("textbox", { name: "Ders veya konu ara", exact: true }).fill(entry.search);
   await page.locator(`.ready-topic[data-lesson-id="${entry.lesson}"]`).click();
-  await expect(page.locator(".study-title h1")).toContainText(entry.search);
+  const heading = page.locator(".study-title h1");
+  if (entry.title) await expect(heading).toHaveText(entry.title);
+  else await expect(heading).toContainText(entry.search);
 }
 
 export async function prepare(page: Page, largeText = false) {

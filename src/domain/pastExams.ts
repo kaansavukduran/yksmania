@@ -7,6 +7,11 @@ export interface PastExamReference {
   question: number;
   page: number;
   answerPage: number;
+  answerSource?: {
+    url: string;
+    pages: number;
+    sha256: string;
+  };
   answer: string;
   topicIds: string[];
   title: string;
@@ -422,6 +427,47 @@ export const pastExamReferences: PastExamReference[] = [
       "Başlangıçta 10 kg karışımın %12’si şekerdir. Şeker kütlesi 10·0,12=1,2 kg.",
       "Eklenen 1 kg saf şekerle şeker 2,2 kg, toplam karışım 11 kg olur. 100·2,2/11=%20.",
       "11 kg’ın %20’si 2,2 kg’dır. Resmî anahtar B. Soru fiziksel PDF s. 7 (basılı s. 5), anahtar fiziksel PDF s. 61.",
+    ],
+  },
+  {
+    id: "2011-YGS-MAT-22",
+    bookletId: "2011-ygs",
+    test: "Temel Matematik",
+    question: 22,
+    page: 31,
+    answerPage: 1,
+    answerSource: {
+      url: "https://dokuman.osym.gov.tr/web/eskidosyalar/210.pdf",
+      pages: 1,
+      sha256: "aa288f6ad5e2e4f5e4fff7bd26ddec15c791b916c77c48580370854f6e39671b",
+    },
+    answer: "B",
+    topicIds: ["detail-217"],
+    title: "İki farklı grup hızından yeni ekibin hızına geçme",
+    connection:
+      "2011 YGS · Aynı işi bitiren her grupta önce kişi başı günlük hızı çıkar. Yeni ekipte her türün kişi sayısını kendi hızıyla çarp.",
+    solution: [
+      "Aynı iş için ilk beş kişilik grubun günlük hızı 1/20, ikinci grubun 1/30. Her grup içinde eş hız kabul edilince kişi hızları 1/100 ve 1/150 iş/gün olur.",
+      "Her gruptan iki kişiyle yeni toplam hız 2/100+2/150=1/30 iş/gündür. Bu hızla süre 30 gündür.",
+      "30 günde ilk iki kişi 3/5, diğer iki kişi 2/5 iş yapar. Resmî anahtar B. Kitapçık M9991.01001, soru fiziksel s. 31 (basılı s. 29), ayrı cevap PDF’si s. 1.",
+    ],
+  },
+  {
+    id: "2013-YGS-MAT-37",
+    bookletId: "2013-ygs",
+    test: "Temel Matematik",
+    question: 37,
+    page: 39,
+    answerPage: 56,
+    answer: "C",
+    topicIds: ["detail-218"],
+    title: "Gecikmeli dolan depolarda eşit seviyeyi bulma",
+    connection:
+      "2013 YGS · Her deponun hacimsel debisini kendi taban alanına böl. Zamanı sorunun istediği musluğun açıldığı anda başlat.",
+    solution: [
+      "Geniş deponun kesiti 9π m², dar deponunki 4π m². Yalnız geniş depo dolarken 5 dakikada 18π m³ su girmiştir. Ortak debi 18π/5 m³/dk.",
+      "Dar deponun musluğu açıldığında genişte 2 m su vardır. Bu andan sonraki t dakikada, taşma öncesi seviyeler genişte 2+2t/5, darda 9t/10 metredir.",
+      "2+2t/5=9t/10 denklemi 20+4t=9t verir. t=4 dakikada iki seviye 3,6 m’dir. Kitapçık basılı s. 37, PDF s. 39. Aynı PDF s. 56’daki anahtar C’dir.",
     ],
   },
 ];

@@ -1,0 +1,198 @@
+{
+  "isci-problemleri": [
+    {
+      "id": "isci-problemleri-012-1",
+      "prompt": "Bir çalışan işi 24 saatte bitiriyor. Sabit hızla 9 saatte işin kaçta kaçı biter?",
+      "correct": "3/8",
+      "selected": 0
+    },
+    {
+      "id": "isci-problemleri-012-2",
+      "prompt": "A işi 10, B 15 saatte yapıyor. Bağımsız sabit hızla birlikte kaç saatte bitirirler?",
+      "correct": "6",
+      "selected": 1
+    },
+    {
+      "id": "isci-problemleri-012-3",
+      "prompt": "A işi 8, B 12 saatte bitiriyor. İkisi 2 saat çalışıp B ayrılıyor. A kalan işi kaç saatte yapar?",
+      "correct": "14/3",
+      "selected": 2
+    },
+    {
+      "id": "isci-problemleri-012-4",
+      "prompt": "6 eş hızlı işçi işi 12 günde yapıyor. Aynı verimde 9 işçi aynı işi kaç günde bitirir?",
+      "correct": "8",
+      "selected": 3
+    },
+    {
+      "id": "isci-problemleri-012-5",
+      "prompt": "A işi 5 iş gününde ve günde 6 saatle, B 20 çalışma saatinde bitirir. İkisi günde 5’er saat birlikte çalışırsa kaç iş günü gerekir?",
+      "correct": "12/5",
+      "selected": 4
+    },
+    {
+      "id": "isci-problemleri-012-6",
+      "prompt": "A bir işi 6 saatte yapar. 2 saat normal çalıştıktan sonra hızı yarıya düşüyor. Toplam bitirme süresi kaç saattir?",
+      "correct": "10",
+      "selected": 0
+    },
+    {
+      "id": "isci-problemleri-012-7",
+      "prompt": "3 eş hızlı çalışan 4 saatte 24 eş parça üretiyor. Aynı koşulda 5 çalışan 6 saatte kaç parça üretir?",
+      "correct": "60",
+      "selected": 1
+    },
+    {
+      "id": "isci-problemleri-012-8",
+      "prompt": "A işi 20, B 30 saatte bitirir. A 5 saat, ardından ikisi 6 saat çalışıyor. Kalanı A kaç saatte yapar?",
+      "correct": "5",
+      "selected": 2
+    },
+    {
+      "id": "isci-problemleri-012-9",
+      "prompt": "A işi 6, B 12 saatte yapar; birlikteyken A’nın hızı yarıya iner, B değişmez. Birlikte süre kaç saattir?",
+      "correct": "6",
+      "selected": 3
+    },
+    {
+      "id": "isci-problemleri-012-10",
+      "prompt": "A işi 9, B 18 saatte yapar. İkisi 2 saat çalışıp A ayrılır. B’nin ek çalışma süresi kaç saattir?",
+      "correct": "12",
+      "selected": 4
+    },
+    {
+      "id": "isci-problemleri-024-ortak-dosya-birimi",
+      "prompt": "A, 60 dosyayı 5 saatte, B ise aynı türden 36 dosyayı 4 saatte işliyor. İkisi aynı anda, ayrı dosyalarda ve aynı sabit hızlarla çalışırsa 84 dosya ne kadar sürede biter?",
+      "correct": "4 saat",
+      "selected": 1
+    },
+    {
+      "id": "isci-problemleri-024-iki-grubu-kisiye-indir",
+      "prompt": "Bir işi A ekibinden 4 kişi 9 günde, B ekibinden 6 kişi 8 günde bitiriyor. Her ekip içinde kişiler eş verimli, ekipler birbirinden farklı hızda olabilir. A’dan 3, B’den 2 kişi aynı işi sabit ve bağımsız hızlarla kaç günde bitirir?",
+      "correct": "8",
+      "selected": 2
+    },
+    {
+      "id": "isci-problemleri-024-vardiyada-bitis-saati",
+      "prompt": "A aynı işi, günde 6 etkin saat çalışarak 4 iş gününde, B ise 16 etkin saatte bitiriyor. İkisi aynı sabit ve bağımsız hızla her iş günü 09.00–11.00 ve 13.00–15.00 arasında birlikte çalışıyor. İlk gün 09.00’da başlarlarsa iş ne zaman biter?",
+      "correct": "3. iş günü, 10.36",
+      "selected": 3
+    },
+    {
+      "id": "isci-problemleri-024-birlikte-daha-yavas",
+      "prompt": "A aynı işi tek başına 8 saatte, B 24 saatte bitiriyor. Birlikte çalışırken A’nın hızı yarıya düşüyor, B’nin hızı değişmiyor. Bu gerçek hızlarla ikisi işi kaç saatte tamamlar?",
+      "correct": "9 saat 36 dakika",
+      "selected": 4
+    },
+    {
+      "id": "isci-problemleri-024-bitmis-urun-kapasitesi",
+      "prompt": "4 eş verimli çalışan 3 saatte 24 eş parça hazırlıyor. Aynı verimle 6 çalışan 5 saat çalışacak. Son makine saatte en çok 9 parça bitiriyor ve hammadde 52 parçaya yetiyor. Çalışma ve makine eşzamanlı başlıyor, makineye parça sürekli yetişiyor. Beş saatte en çok kaç parça bitirilebilir?",
+      "correct": "45",
+      "selected": 0
+    },
+    {
+      "id": "isci-problemleri-024-ara-verip-ekip-olma",
+      "prompt": "A aynı işi 14 saatte, B 21 saatte bitirir. A önce 4 saat tek çalışıyor, sonra 2 saat hiç kimse çalışmıyor. Aradan sonra ikisi sabit ve bağımsız hızla işi tamamlıyor. Başlangıçtan geçen toplam süre ile B’nin etkin çalışma süresi sırasıyla nedir?",
+      "correct": "12 saat ve 6 saat",
+      "selected": 2
+    }
+  ],
+  "havuz-problemleri": [
+    {
+      "id": "havuz-problemleri-012-1",
+      "prompt": "Tank %30 dolu. Sabit giriş dakikada tankın 1/20’sini getiriyor. Tam dolma süresi kaç dakikadır?",
+      "correct": "14",
+      "selected": 0
+    },
+    {
+      "id": "havuz-problemleri-012-2",
+      "prompt": "A 8, B 12 saatte doldurur; C 24 saatte boşaltır. Sabit debilerle boş tank kaç saatte dolar?",
+      "correct": "6",
+      "selected": 1
+    },
+    {
+      "id": "havuz-problemleri-012-3",
+      "prompt": "A boş tankı 6 saatte doldurur. Aynı giriş sabit bir kaçakla 9 saatte dolduruyor. Kaçak tek başına dolu tankı kaç saatte boşaltır?",
+      "correct": "18",
+      "selected": 2
+    },
+    {
+      "id": "havuz-problemleri-012-4",
+      "prompt": "900 L tankta 180 L su var. Giriş 12 L/dk, çıkış 3 L/dk. Tam dolma kaç dakika?",
+      "correct": "80",
+      "selected": 3
+    },
+    {
+      "id": "havuz-problemleri-012-5",
+      "prompt": "Tank 1/4 dolu; sabit giriş ve çıkışın net hızı 0. Aynı koşulda tam dolma süresi nasıldır?",
+      "correct": "Tank dolmaz.",
+      "selected": 4
+    },
+    {
+      "id": "havuz-problemleri-012-6",
+      "prompt": "Başlangıçta 300 L su bulunan tankta giriş 5 L/dk, çıkış 8 L/dk sabittir. Su varken boşalma kaç dakikada olur?",
+      "correct": "100",
+      "selected": 0
+    },
+    {
+      "id": "havuz-problemleri-012-7",
+      "prompt": "A 10, B 15 saatte doldurur. A boş tankta 2 saat çalıştıktan sonra B de açılır. Toplam süre kaç saattir?",
+      "correct": "34/5",
+      "selected": 1
+    },
+    {
+      "id": "havuz-problemleri-012-8",
+      "prompt": "Boş tankı A 10, B 20 saatte doldurur. B toplam 6 saat açık kalıyor ve A’nın katkısıyla tank tam doluyor. A kaç saat açıktır?",
+      "correct": "7",
+      "selected": 2
+    },
+    {
+      "id": "havuz-problemleri-012-9",
+      "prompt": "Dik silindir iki tankın yarıçapları 2 m ve 4 m. Eşit hacimde suyla, taşma yokken küçük tankın su yüksekliği büyüktekine oranı kaçtır?",
+      "correct": "4",
+      "selected": 3
+    },
+    {
+      "id": "havuz-problemleri-012-10",
+      "prompt": "Sabit net hızla dolan tankın payı 0.saatte 1/4,3.saatte 5/8. Başlangıçtan tam dolma süresi kaç saattir?",
+      "correct": "6",
+      "selected": 4
+    },
+    {
+      "id": "havuz-problemleri-025-bosalma-sonrasi-gercek-cikis",
+      "prompt": "500 L’lik tankta başlangıçta 84 L su var. Giriş 7 L/dk. Tabandaki çıkış en çok 11 L/dk çekebiliyor ve tank boşken gelen suyu birikmeden dışarı alıyor. Otuz dakika sonunda içeride kalan ve otuz dakika boyunca gerçekten çıkan su sırasıyla kaç litredir?",
+      "correct": "0 L ve 294 L",
+      "selected": 1
+    },
+    {
+      "id": "havuz-problemleri-025-yan-kacak-sinirinda-dur",
+      "prompt": "600 L’lik tankı aynı sabit giriş, delik kapalıyken boş durumdan 24 dakikada dolduruyor. Delik açıkken 240 L’den tam doluya yine 24 dakikada ulaşılıyor. Kaçak 180 L’nin üstünde sabit, o seviyede ve altında duruyor. Dolu tankta giriş kapatılırsa kaç dakika sonra kaçak durur ve kaç litre su kalır?",
+      "correct": "42 dk ve 180 L",
+      "selected": 2
+    },
+    {
+      "id": "havuz-problemleri-025-gecikmeli-giris-eszamanli-kapanis",
+      "prompt": "420 L’lik tankta başlangıçta 60 L var. Yalnız A girişi ilk 10 dk boyunca 12 L/dk su veriyor. 10. dakikada A kapanıyor, 18 L/dk veren B ve 3 L/dk çeken taban çıkışı birlikte açılıyor. Tam doluma kadar debiler sabit. Tank başlangıçtan kaç dakika sonra dolar?",
+      "correct": "26 dk",
+      "selected": 3
+    },
+    {
+      "id": "havuz-problemleri-025-iki-kesitli-kapta-yukseklik",
+      "prompt": "Boş bir kabın yatay kesit alanı tabandan 0,6 m yüksekliğe kadar 2 m², bu seviyenin üstünde 4 m²’dir. Kaba 1,6 m³ su veriliyor ve taşma olmuyor. Su yüksekliği kaç metredir?",
+      "correct": "0,7 m",
+      "selected": 4
+    },
+    {
+      "id": "havuz-problemleri-025-iki-grafik-ayni-baslangic",
+      "prompt": "500 L’lik tankta t=0’da 80 L, 4. dakikada 200 L su var. İlk aralıkta yalnız sabit bir giriş çalışıyor. A planında giriş aynı hızla sürüyor. B planında aynı giriş sürerken 4. dakikada 20 L/dk çeken bir çıkış açılıyor. İki planda tam dolum başlangıçtan sırasıyla kaçıncı dakikadadır?",
+      "correct": "14. dk ve 34. dk",
+      "selected": 0
+    },
+    {
+      "id": "havuz-problemleri-025-tasmanin-sonraki-evreye-etkisi",
+      "prompt": "370 L’lik taşabilir bir tankta başlangıçta 250 L su var. Giriş 24 L/dk, taban çıkışı 4 L/dk. İlk 10 dakika ikisi de açık. Sonra giriş kapanıyor ve çıkış 20 dakika daha çalışıyor. Tank doluyken fazla su üstten taşar. Son hacim ve toplam taşan hacim sırasıyla nedir?",
+      "correct": "290 L ve 80 L",
+      "selected": 1
+    }
+  ]
+}

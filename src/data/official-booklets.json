@@ -97,5 +97,27 @@
     "coverage": "seçili sorular doğrulandı",
     "sha256": "66c63a1a915dbae8c9555b592bde213f2ac7619350f9b794c40c6cc565756a49",
     "checkedAt": "2026-11-23"
+  },
+  {
+    "id": "2011-ygs",
+    "title": "2011 YGS",
+    "exam": "YGS",
+    "year": 2011,
+    "url": "https://dokuman.osym.gov.tr/web/eskidosyalar/209.pdf",
+    "pages": 50,
+    "coverage": "seçili soru doğrulandı",
+    "sha256": "cdd4489b4af354a3ed90ff69d4ceec17a86704e24ee35ed1056a23baa79c384e",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "id": "2013-ygs",
+    "title": "2013 YGS",
+    "exam": "YGS",
+    "year": 2013,
+    "url": "https://dokuman.osym.gov.tr/pdfdokuman/2013/OSYS/24.03.2013%20YGS.pdf",
+    "pages": 56,
+    "coverage": "seçili soru doğrulandı",
+    "sha256": "0619f79c6b6d35e7e28839c48e2057e39d9335b4134e3d3a299140a07e868b48",
+    "checkedAt": "2026-11-23"
   }
 ]

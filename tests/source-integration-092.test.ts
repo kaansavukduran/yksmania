@@ -33,11 +33,11 @@ it("connects each source heading, detailed guide and original bank to actual bra
       (e) => e.id === `branch-${lesson.subjectId}`,
     )!;
     expect(
-      Array.from({ length: 20 }, (_, attempt) =>
-        selectExamVariant(branch, `retained-source-${attempt}`),
-      )
-        .flat()
-        .some((q) => q.lessonId === id),
+      Array.from({ length: 20 }, (_, attempt) => attempt).some((attempt) =>
+        selectExamVariant(branch, `retained-source-${attempt}`).some(
+          (item) => item.lessonId === id,
+        ),
+      ),
       id,
     ).toBe(true);
   }

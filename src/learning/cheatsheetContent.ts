@@ -2,6 +2,8 @@ import { percentProblemsSource020SheetText } from "./percentProblemsSource020Rev
 import { profitProblemsSource021SheetText } from "./profitProblemsSource021Revision";
 import { interestProblemsSource022SheetText } from "./interestProblemsSource022Revision";
 import { mixtureProblemsSource023SheetText } from "./mixtureProblemsSource023Revision";
+import { workerProblemsSource024SheetText } from "./workerProblemsSource024Revision";
+import { poolProblemsSource025SheetText } from "./poolProblemsSource025Revision";
 import { ageProblemsSource019SheetText } from "./ageProblemsSource019Revision";
 import { fractionProblemsSource018SheetText } from "./fractionProblemsSource018Revision";
 import { linearEquationsSource036Sheets } from "./linearEquationsSource036";
@@ -133,6 +135,8 @@ const revisedSectionTextByLesson = new Map([
   ["kar-zarar-problemleri", profitProblemsSource021SheetText],
   ["faiz-problemleri", interestProblemsSource022SheetText],
   ["karisim-problemleri", mixtureProblemsSource023SheetText],
+  ["isci-problemleri", workerProblemsSource024SheetText],
+  ["havuz-problemleri", poolProblemsSource025SheetText],
 ]);
 
 const completeSourceSheets = new Set([

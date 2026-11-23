@@ -18,14 +18,19 @@ it("connects all five reviewed headings and preserves meaningful independent que
     "havuz-problemleri": "detail-218",
     "hiz-problemleri": "detail-219",
   });
+  const revisedSections = new Map([
+    ["faiz-problemleri", 14],
+    ["karisim-problemleri", 14],
+    ["isci-problemleri", 15],
+    ["havuz-problemleri", 15],
+  ]);
   for (const l of forge012MathLessons) {
     const g = forge012MathGuides.find((x) => x.id === l.id)!;
-    const revised =
-      l.id === "faiz-problemleri" || l.id === "karisim-problemleri";
-    expect(g.sections).toHaveLength(revised ? 14 : 8);
+    const newSectionCount = revisedSections.get(l.id);
+    expect(g.sections).toHaveLength(newSectionCount ?? 8);
     expect(g.examples.length).toBeGreaterThanOrEqual(4);
     expect(g.recall.length).toBeGreaterThanOrEqual(4);
-    expect(l.questions).toHaveLength(revised ? 16 : 10);
+    expect(l.questions).toHaveLength(newSectionCount === undefined ? 10 : 16);
     for (const q of l.questions) {
       expect(q.options).toHaveLength(5);
       expect(new Set(q.options.map((o) => o.tr)).size).toBe(5);

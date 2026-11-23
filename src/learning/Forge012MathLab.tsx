@@ -9,6 +9,8 @@ import {
 import { useExploration } from "./useExploration";
 import { SplitInterestSource022Lab } from "./SplitInterestSource022Lab";
 import { TargetMixtureSource023Lab } from "./TargetMixtureSource023Lab";
+import { WorkerTeamSource024Lab } from "./WorkerTeamSource024Lab";
+import { EqualLevelTanksSource025Lab } from "./EqualLevelTanksSource025Lab";
 import "./forge012Math.css";
 import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number) =>
@@ -858,9 +860,15 @@ export default function Forge012MathLab({ id }: { id: string }) {
           <TargetMixtureSource023Lab />
         </>
       ) : id === "isci-problemleri" ? (
-        <Workers />
+        <>
+          <Workers />
+          <WorkerTeamSource024Lab />
+        </>
       ) : id === "havuz-problemleri" ? (
-        <Pool />
+        <>
+          <Pool />
+          <EqualLevelTanksSource025Lab />
+        </>
       ) : (
         <Motion />
       )}
