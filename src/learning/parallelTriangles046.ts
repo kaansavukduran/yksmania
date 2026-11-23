@@ -128,6 +128,6 @@ const calculation: MathFigure = {
 
 export const parallelTriangles046 = {
   exteriorAngle, baseAngle, apexAngle, unknownAngle,
-  figure: given,
+  figures: [given] as const,
   steps: [transfer, split, calculation] as const,
 };

@@ -11,10 +11,11 @@ const angle = (first: Point, vertex: Point, second: Point) =>
 
 describe("özgün paralel üçgen çizimi", () => {
   it("eş kenarlar, paralellik ve çizilen kesişim açıları aynı veriden gelir", () => {
-    const [ab, bc, ca, ed, df, fe] = parallelTriangles046.figure.segments!;
+    const [given] = parallelTriangles046.figures;
+    const [ab, bc, ca, ed, df, fe] = given.segments!;
     const a = ab.from, b = ab.to, c = bc.to;
     const e = ed.from, d = ed.to, f = df.to;
-    const g = parallelTriangles046.figure.arcs![1].center;
+    const g = given.arcs![1].center;
     expect(length(a, b)).toBeCloseTo(length(a, c));
     expect(length(d, e)).toBeCloseTo(length(d, f));
     expect(length(a, b)).toBeCloseTo(length(d, e));
@@ -34,8 +35,9 @@ describe("özgün paralel üçgen çizimi", () => {
   });
 
   it("soruda yalnızca verilen açı var ve çözüm sonucu açılana kadar çizimde bulunmuyor", () => {
-    expect(parallelTriangles046.figure.labels?.map((label) => label.text)).toEqual(["A", "B", "C", "F", "E", "D", "x", "86°"]);
-    expect(parallelTriangles046.figure.alt).not.toMatch(/43|51|94/);
+    const [given] = parallelTriangles046.figures;
+    expect(given.labels?.map((label) => label.text)).toEqual(["A", "B", "C", "F", "E", "D", "x", "86°"]);
+    expect(given.alt).not.toMatch(/43|51|94/);
     expect(triangleAnglesTeachingCase042.answer).toBe("51°.");
     expect(triangleAnglesTeachingCase042.illustrations?.steps).toHaveLength(3);
     expect(triangleAnglesReference042).toMatchObject({ answer: "E", page: 34, answerPage: 43 });

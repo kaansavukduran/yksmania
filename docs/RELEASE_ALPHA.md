@@ -1,3 +1,10 @@
+# ÖSYM Mania 0.47.0 · Kenar ortalaması ve gerçek üçgen
+
+Yayın adayı.
+
+- Üçgen eşitsizliğinde üç ayrı şekil, üç farklı koşulu karşılaştırmanı sağlar.
+- Sayı doğrusu, eş açıların karşısındaki kenarlar ve 6–8–10 örneği kendi çözüm adımlarında çevrimdışı açılır.
+
 # ÖSYM Mania 0.46.0 · Paralel kenar ve dış açı
 
 Yayın adayı.

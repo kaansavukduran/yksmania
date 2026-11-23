@@ -16,7 +16,7 @@ export interface ExamTeachingCase {
   answer: string;
   pitfall: string;
   illustrations?: {
-    figure: SourceQuestionFigureSpec;
+    figures: readonly SourceQuestionFigureSpec[];
     steps: readonly SourceQuestionFigureSpec[];
   };
 }

@@ -1,7 +1,7 @@
 {
-  "version": "0.46.0",
+  "version": "0.47.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Üçgende Açılar’da iki eş ikizkenar üçgen, paralel kenarlar ve dış açı aynı çözümlü örnekte çizilir. Küçük üçgeni ve tepe açısının parçalarını adım adım çevrimdışı inceleyebilirsin."
+    "tr": "Üçgen eşitsizliğinde üç ayrı şekli değerlendir. Açık kenar aralığı, eş açıların karşısındaki kenarlar ve dik üçgenin aritmetik ortalaması adım adım çevrimdışı görünür."
   }
 }

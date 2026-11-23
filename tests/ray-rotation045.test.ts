@@ -4,7 +4,8 @@ import { rotationIllustrations } from "../src/learning/rayRotation045";
 
 describe("açı örneğinde verilen şekil ve çözüm çizimleri", () => {
   it("çizgilerden ölçülen dış açılar eşit, ışınlar arası açı 45° ve dış köşe diktir", () => {
-    const rays = rotationIllustrations.figure.segments.slice(0, 4);
+    const [given] = rotationIllustrations.figures;
+    const rays = given.segments.slice(0, 4);
     const directions = rays.map(({ from, to }) =>
       Math.atan2(from[1] - to[1], to[0] - from[0]) * 180 / Math.PI,
     );
@@ -13,8 +14,8 @@ describe("açı örneğinde verilen şekil ve çözüm çizimleri", () => {
     expect(directions[1] - directions[0]).toBeCloseTo(22.5);
     expect(directions[2] - directions[1]).toBeCloseTo(45);
     expect(directions[3] - directions[2]).toBeCloseTo(22.5);
-    expect(rotationIllustrations.figure.labels?.map(({ text }) => text)).toEqual(["x", "x"]);
-    expect(rotationIllustrations.figure.alt).not.toMatch(/22[,.]5|45/);
+    expect(given.labels?.map(({ text }) => text)).toEqual(["x", "x"]);
+    expect(given.alt).not.toMatch(/22[,.]5|45/);
   });
 
   it("tam turdaki sekiz yönü, sonuç işlemini ve resmî kaydın özgün örnekten ayrı kaldığını doğrular", () => {

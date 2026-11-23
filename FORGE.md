@@ -1,3 +1,11 @@
+# Kenar ortalaması ve gerçek üçgen · 0.47.0 adayı
+
+Üçgen eşitsizliğindeki özgün soru, üç ayrı çizimde uzunluk, açı ve dik üçgen verilerini gösterir. Geometri 003 sürüm 5.1 fiziksel sayfa 6, 2021 TYT Temel Matematik 32’nin fiziksel 35. sayfası ve 45. sayfadaki B cevap kaydıyla karşılaştırıldı. Özgün çalışmada 2 ve 6 birim için açık kenar aralığı, 72° ve 36° için iki eş açı ve 6 birimlik dik kenar için 6–8–10 örneği kullanıldı.
+
+İlk adım aday uzunlukları sayı doğrusunda karşılaştırır. İkinci adım eş açılara karşılık gelen kenarları, üçüncü adım 6–8–10 üçgenini gösterir. Üç soru şekli ve üç ayrı çözüm çizimi 320 pikselde, %200 arayüz ve %150 yazıyla klavyeden çevrimdışı açıldı. Aynı akış önceki iki geometri örneğinde de geçti. Öğrenme kayıtları ve açık çözümler birbirinden bağımsız kaldı.
+
+0.45’in uzak tarayıcı denetiminde kuvvet–ivme testi, ikinci çözüm adımı kaydedilirken sonraki düğmeye tuş gönderdi. Uzak ekran kaydı ikinci adımın doğru açıldığını ve üçüncünün kapalı kaldığını gösterdi. Klavye testi artık seçili adımı, cihaz kaydını ve düğmenin etkinliğini doğrulayıp sonra tuşa basıyor. Üçüncü adımın grafiği ve açıklaması aynı ölçütlerle denetleniyor. [Uzak test kaydı](https://github.com/kaansavukduran/yksmania/actions/runs/45191502570/job/137752228201)
+
 # Paralel kenar ve dış açı · 0.46.0 adayı
 
 Üçgende Açılar’da özgün bir soru, iki eş ikizkenar üçgeni kullanarak taban açısını taşır. Kaynak düşünme yolu Geometri 002, sürüm 5.1 fiziksel sayfa 6 ve 2024 TYT Temel Matematik 32’nin fiziksel 34. sayfasıyla karşılaştırıldı. Özgün şeklin dış açısı 86° ve sonucu 51°. Kitapçığın fiziksel 43. sayfası resmî E cevabını verir.

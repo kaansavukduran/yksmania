@@ -4,6 +4,8 @@
 
 **Son doğrulanan web ve masaüstü sürümü 0.36.0**. Hız ve Grafik Problemleri çevrimdışı çalışır. [Windows ve Linux 0.36](https://github.com/kaansavukduran/yksmania/releases/tag/v0.36.0-alpha.1) · [Android 0.36 kişisel deneme arşivi](https://github.com/kaansavukduran/yksmania/actions/runs/45143578858/artifacts/14802399865)
 
+**0.47.0 adayı** Üçgen eşitsizliğinde üç farklı verilen şekli ve koşullarını çizimlerle çözüyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+
 **0.46.0 adayı** Üçgende Açılar’da paralel kenarın taşıdığı açıyı ve tepe açısının parçalarını çizimle açıklıyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.45.0 adayı** Doğruda Açılar’daki özgün eş dönüş örneğine soru ve adım adım çözüm çizimleri ekliyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)

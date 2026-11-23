@@ -70,7 +70,7 @@ function fullTurnDiagram(): Geometry {
 }
 
 export const rotationIllustrations = {
-  figure: cornerDiagram(false),
+  figures: [cornerDiagram(false)] as const,
   steps: [
     fullTurnDiagram(),
     cornerDiagram(true),

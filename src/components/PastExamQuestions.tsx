@@ -16,7 +16,9 @@ function TeachingCase({ id }: { id: string }) {
         değildir.
       </p>
       <p className="example-prompt">{item.prompt}</p>
-      {item.illustrations && <SourceQuestionFigure figure={item.illustrations.figure} />}
+      {item.illustrations?.figures.map((figure) => (
+        <SourceQuestionFigure key={figure.title} figure={figure} />
+      ))}
       <ol>
         {item.steps.slice(0, count).map((step, i) => {
           const illustration = item.illustrations?.steps[i];

@@ -2,6 +2,7 @@ import type { PastExamReference } from "../domain/pastExams";
 import type { ExamTeachingCase } from "./pastExamCases";
 import { equalTurns, outerLabel, rotationIllustrations, turnAngle } from "./rayRotation045";
 import { parallelTriangles046 } from "./parallelTriangles046";
+import { triangleMean047 } from "./triangleMean047";
 
 export const lineAnglesReference042: PastExamReference = {
   id: "2024-TYT-MAT-31",
@@ -86,15 +87,22 @@ export const triangleAnglesTeachingCase042: ExamTeachingCase = {
   illustrations: parallelTriangles046,
 };
 
+const {
+  sides: [firstKnownSide, secondKnownSide],
+  bounds: [lowerBound, upperBound],
+  candidates: [firstCandidate, middleCandidate, lastCandidate],
+  angles: [firstKnownAngle, secondKnownAngle, remainingAngle],
+  rightSides: [rightLeg, otherLeg, hypotenuse],
+} = triangleMean047;
 export const triangleSidesTeachingCase042: ExamTeachingCase = {
-  prompt:
-    "2,3,4 ve 2,4,6 ve 1,3,5 uzunluk üçlüleri veriliyor. Ortadaki uzunluğu diğer ikisinin ortalaması olan gerçek üçgen hangisinden çizilebilir?",
+  prompt: "Bir kenarın uzunluğu diğer iki kenarın aritmetik ortalamasıysa ona ortalama üçgen diyelim. I, II ve III çizimlerindeki verilere göre hangilerinde böyle bir üçgen kurabilirsin?",
   steps: [
-    "Her üçlüde ortadaki sayı iki ucun ortalamasıdır.",
-    "2+3>4 olduğundan ilk üçlü bir üçgen yapar. İkinci 2+4=6 olduğundan doğrusal kalır.",
-    "Son üçlüde 1+3<5, uçlar kapanmaz. Yalnız ilk üçlü uygundur.",
+    `I. Üçgenin üçüncü kenarı için ${lowerBound} < u < ${upperBound}. ${firstKnownSide}, u veya ${secondKnownSide} ortalama olursa sırayla u = −${Math.abs(firstCandidate)}, ${middleCandidate} veya ${lastCandidate} çıkar. Hiçbiri aralıkta değil. Sınırdaki ${middleCandidate}, uçları aynı doğruya getirir.`,
+    `II. Eksik açı 180° − ${firstKnownAngle}° − ${secondKnownAngle}° = ${remainingAngle}°. İki açı eşit olduğundan iki kenar eşit. Üç uzunluk aritmetik diziyse iki değerin eşitliği üçünü de eşit yapar. Bu üçgen eşkenar olamadığı için II elenir.`,
+    `III. Dik üçgende bir dik kenar ${rightLeg}. Diğer dik kenarı ${otherLeg} seçersek ${rightLeg}² + ${otherLeg}² = ${hypotenuse}². Ortadaki uzunluk ${otherLeg} = (${rightLeg} + ${hypotenuse}) / 2. III mümkündür.`,
   ],
-  answer: "Yalnız 2, 3 ve 4.",
+  answer: `Yalnız III. ${rightLeg}, ${otherLeg} ve ${hypotenuse}.`,
   pitfall:
     "Ortalama koşulunun üçgen eşitsizliğini kendiliğinden sağladığını varsaymak.",
+  illustrations: triangleMean047,
 };

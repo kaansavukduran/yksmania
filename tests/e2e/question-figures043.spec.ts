@@ -1,4 +1,4 @@
-import { expect, test, type Locator } from "@playwright/test";
+import { expect, test, type Locator, type Page } from "@playwright/test";
 import { openCourse, prepare, storage } from "./helpers/revisedCourse";
 import { examDraftSchema } from "../../src/domain/examModel";
 import { lineAnglesPractice042 } from "../../src/learning/geometryConditions042Practice";
@@ -45,7 +45,7 @@ test("kuvvet–ivme grafiğini, hücreleri ve eğim hesabını çevrimdışı ok
   await expect(delta).toHaveCount(0);
 
   await page.getByRole("button", { name: "Adım adım çözüm", exact: true }).press("Enter");
-  await page.getByRole("button", { name: "Sonraki adım", exact: true }).press("Enter");
+  await advanceSavedHelp(page, 2);
   await expect(delta.getByRole("img")).toHaveAccessibleDescription(/yatay fark 2 m\/s², düşey fark 6 N/);
   await checkFigureBounds(delta);
   const deltaLabel = delta.locator("svg text").filter({ hasText: /^ΔF$/ });
@@ -54,7 +54,7 @@ test("kuvvet–ivme grafiğini, hücreleri ve eğim hesabını çevrimdışı ok
     return text.getBBox().x - guide.x1.baseVal.value;
   })).toBeGreaterThan(4);
   await expect(mass).toHaveCount(0);
-  await page.getByRole("button", { name: "Sonraki adım", exact: true }).press("Enter");
+  await advanceSavedHelp(page, 3);
   await expect(mass.getByRole("math")).toHaveAccessibleName(/Sonuç 3 kilogram/);
   const after = await storage(page);
   expect(after.sessions).toEqual(before.sessions);
@@ -101,6 +101,14 @@ async function checkFigureBounds(figure: Locator) {
   expect(outside).toEqual([]);
 }
 
+async function advanceSavedHelp(page: Page, step: number) {
+  const next = page.getByRole("button", { name: "Sonraki adım", exact: true });
+  await expect(page.locator(".help-rail button[aria-current='step']")).toHaveAccessibleName(`Adım ${step}`);
+  await expect.poll(async () => (await storage(page)).draft?.helpLevel).toBe(step);
+  await expect(next).toBeEnabled();
+  await next.press("Enter");
+}
+
 test("kuvvet kartı yönleri, işaretli ipucunu ve iki çözüm çizimini çevrimdışı gösterir", async ({ page, context }, info) => {
   await prepare(page, true);
   await context.setOffline(true);
@@ -123,11 +131,11 @@ test("kuvvet kartı yönleri, işaretli ipucunu ve iki çözüm çizimini çevri
   expect((await storage(page)).draft?.helpLevel).toBe(1);
   await expect(net).toHaveCount(0);
   await page.getByRole("button", { name: "Adım adım çözüm", exact: true }).press("Enter");
-  await page.getByRole("button", { name: "Sonraki adım", exact: true }).press("Enter");
+  await advanceSavedHelp(page, 2);
   await expect(net.locator("svg text")).toHaveText(["2 kg", "+6 N"]);
   await checkFigureBounds(net);
   await expect(acceleration).toHaveCount(0);
-  await page.getByRole("button", { name: "Sonraki adım", exact: true }).press("Enter");
+  await advanceSavedHelp(page, 3);
   await expect(acceleration.getByRole("math")).toHaveAccessibleName(/saniye karede 3 metre ve sağa doğru/);
   await net.screenshot({ path: info.outputPath("bileske-320.png") });
   expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);

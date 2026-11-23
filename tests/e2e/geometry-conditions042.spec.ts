@@ -208,7 +208,7 @@ const courses = [
     letter: "B",
     questionPage: 35,
     keyPage: 45,
-    example: "Yalnız 2, 3 ve 4.",
+    example: "Yalnız III. 6, 8 ve 10.",
   },
 ];
 
