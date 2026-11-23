@@ -15,6 +15,9 @@ const ids = [
   "tyt-geo-eslik-benzerlik-031",
   "tyt-geo-ucgen-merkezleri-031",
 ];
+const questionCounts = [10, 15, 15, 10, 10, 10];
+const sheetSections = [5, 6, 6, 5, 5, 5];
+const sheetExamples = [2, 4, 3, 2, 2, 2];
 const question = (unit: number, number: number) =>
   lessons.find((l) => l.id === ids[unit])!.questions[number - 1];
 const answer = (unit: number, number: number) => {
@@ -27,7 +30,7 @@ describe("031 temel geometri: bağımsız öğretim ve matematik denetimi", () =
     expect(lessons.map((l) => l.id)).toEqual(ids);
     expect(
       new Set(lessons.flatMap((l) => l.questions.map((q) => q.id))).size,
-    ).toBe(60);
+    ).toBe(questionCounts.reduce((total, count) => total + count, 0));
     for (const id of ids) {
       expect(topics[id]).toBe(`topic-${id}`);
       expect(sheets.find((s) => s.lessonId === id)?.topicId).toBe(
@@ -59,9 +62,12 @@ describe("031 temel geometri: bağımsız öğretim ve matematik denetimi", () =
     }
   });
 
-  it("altmış bağımsız özgün soru beş seçenek ve tam gerekçeler taşır", () => {
-    for (const lesson of lessons) {
-      expect(lesson.questions).toHaveLength(10);
+  it("özgün sorular önceki kimliklerini korur ve beş seçenek için gerekçe taşır", () => {
+    lessons.forEach((lesson, index) => {
+      expect(lesson.questions).toHaveLength(questionCounts[index]);
+      expect(lesson.questions.slice(0, 10).map((q) => q.id)).toEqual(
+        Array.from({ length: 10 }, (_, i) => `f031-${lesson.id}-${i + 1}`),
+      );
       expect(lesson.tags).toContain("Özgün öğretim soruları");
       for (const q of lesson.questions) {
         expect(q.options).toHaveLength(5);
@@ -80,17 +86,18 @@ describe("031 temel geometri: bağımsız öğretim ve matematik denetimi", () =
         expect(q.explanation.tr).toContain(guidance.check);
       }
       // Correct choices are distributed; no unit teaches the answer position.
-      expect(new Set(lesson.questions.map((q) => q.answer)).size).toBe(5);
-    }
+      expect(
+        new Set(lesson.questions.slice(0, 10).map((q) => q.answer)).size,
+      ).toBe(5);
+    });
   });
 
   it("kopya kağıtları tam anlatımdan ayrı, kısa formül ve koşul kartlarıdır", () => {
-    for (const sheet of sheets) {
-      const guide = guides.find((g) => g.id === sheet.lessonId)!;
-      expect(sheet.sections.length).toBeGreaterThanOrEqual(3);
-      expect(sheet.sections.length).toBeLessThanOrEqual(5);
-      expect(sheet.examples.length).toBeGreaterThanOrEqual(1);
-      expect(sheet.examples.length).toBeLessThanOrEqual(2);
+    for (const [index, id] of ids.entries()) {
+      const guide = guides.find((g) => g.id === id)!;
+      const sheet = sheets.find((s) => s.lessonId === id)!;
+      expect(sheet.sections).toHaveLength(sheetSections[index]);
+      expect(sheet.examples).toHaveLength(sheetExamples[index]);
       expect(sheet.cautions.length).toBeGreaterThanOrEqual(3);
       const fullText = guide.sections.flatMap((s) => s.paragraphs).join(" ");
       const quickText = sheet.sections.flatMap((s) => s.text).join(" ");

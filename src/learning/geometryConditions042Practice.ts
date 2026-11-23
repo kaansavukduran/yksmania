@@ -136,7 +136,11 @@ export const triangleAnglesPractice042 = guidedMathPractice(
       knowledge:
         "B ve C dış açıortaylarının kesişiminde B ve C’ye giden açı 90°−A/2.",
       strategy: "İki dış seçildiği için A’nın yarısını 90°den çıkar.",
-      steps: ["A/2=28°.", "∠BXC=90°−28°=62°."],
+      steps: [
+        "B ve C’de iki dış açıortay seçildiği için X’teki açı 90°−A/2.",
+        "A’nın yarısı 56°/2=28°.",
+        "∠BXC=90°−28°=62°.",
+      ],
       commonError:
         "İki dış açıortaya iç merkezdeki 90°+A/2 kuralını uygulamak.",
       check: "İç merkezdeki 118° ve bu bölge 62° toplamı 180°.",
@@ -157,7 +161,8 @@ export const triangleAnglesPractice042 = guidedMathPractice(
       strategy:
         "İki iç açıortay değerinden, tek doğrunun dik çevrilmesinin etkisini çıkar.",
       steps: [
-        "İki içte 90°+38°=128°.",
+        "A’nın yarısı 76°/2=38°.",
+        "İki iç açıortayın BIC açısı 90°+38°=128°.",
         "C doğrusu 90° döndüğü için dar bölge 38°.",
       ],
       commonError: "Bir iç bir dış seçimini iki dışla karıştırmak.",
@@ -177,7 +182,11 @@ export const triangleAnglesPractice042 = guidedMathPractice(
       answer: 2,
       knowledge: "İki iç açıortay için ∠BIC=90°+A/2.",
       strategy: "Önce 90°yi çıkar, sonra farkı iki ile çarp.",
-      steps: ["A/2=123°−90°=33°.", "A=66°."],
+      steps: [
+        "İki açıortay içte olduğundan 123°=90°+A/2.",
+        "A/2=123°−90°=33°.",
+        "Yarımı ikiyle çarpınca A=66°.",
+      ],
       commonError: "A’nın tamamı ile yarısını karıştırmak.",
       check: "90+66/2=123.",
     },
@@ -198,7 +207,11 @@ export const triangleAnglesPractice042 = guidedMathPractice(
       answer: 0,
       knowledge: "Dış açı uzak iki iç açıyı toplar, komşu iç açıyla 180° olur.",
       strategy: "5t+4t=135° yaz ve üçüncü iç açıyı ayrıca bul.",
-      steps: ["t=15°, uzak açılar 75° ve 60°.", "Komşu iç açı 180°−135°=45°."],
+      steps: [
+        "Uzak açıları 5t ve 4t yaz. Toplamları 9t=135°.",
+        "Bir pay 15°, uzak açılar 75° ve 60°.",
+        "Dış açıya komşu iç açı 180°−135°=45°.",
+      ],
       commonError: "Dış açıyı üç iç açıdan biri olarak listelemek.",
       check: "75+60+45=180 ve 75:60=5:4.",
     },
@@ -315,7 +328,11 @@ export const triangleSidesPractice042 = guidedMathPractice(
       knowledge:
         "Üçgen varlığından sonra en uzun kenarın karesiyle açı türü bulunur.",
       strategy: "Önce 2<x<16, ardından x²>7²+9² koşulunu kur.",
-      steps: ["7²+9²=130.", "12²=144 ve 12, 16’dan küçük."],
+      steps: [
+        "En uzun kenar için x≥9 ve üçgen için 2<x<16. 12 ikisini de sağlar.",
+        "Diğer iki kenarın karelerini topla: 7²+9²=130.",
+        "12²=144>130 olduğu için 12’nin karşısındaki açı geniştir.",
+      ],
       commonError: "Karesi yeterince büyük her uzunluğu geçerli üçgen sanmak.",
       check: "7+9=16>12, ayrıca 12 ikisinden de uzun.",
     },

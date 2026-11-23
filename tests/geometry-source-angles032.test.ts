@@ -68,18 +68,18 @@ describe("032 kaynak açıları: tam koşullu bağımsız pekiştirme", () => {
 
   it("anlatım, örnek, kısa özet ve geri çağırmayı ayrı sunar", () => {
     expect(guides).toHaveLength(1);
-    expect(guides[0].sections).toHaveLength(10);
-    expect(guides[0].examples).toHaveLength(9);
-    expect(guides[0].recall).toHaveLength(10);
+    expect(guides[0].sections).toHaveLength(12);
+    expect(guides[0].examples).toHaveLength(10);
+    expect(guides[0].recall).toHaveLength(12);
     expect(
       guides[0].examples.every(
         (e) => e.steps.length >= 3 && e.check && e.pitfall,
       ),
     ).toBe(true);
     expect(sheets).toHaveLength(1);
-    expect(sheets[0].sections).toHaveLength(5);
-    expect(sheets[0].examples).toHaveLength(2);
-    expect(sheets[0].recall).toHaveLength(3);
+    expect(sheets[0].sections).toHaveLength(6);
+    expect(sheets[0].examples).toHaveLength(3);
+    expect(sheets[0].recall).toHaveLength(5);
     const theoryLength = guides[0].sections
       .flatMap((s) => s.paragraphs)
       .join(" ").length;
@@ -89,13 +89,17 @@ describe("032 kaynak açıları: tam koşullu bağımsız pekiştirme", () => {
     expect(summaryLength).toBeLessThan(theoryLength * 0.4);
     expect(lessons[0].id).toBe("tyt-geo-acilar-kaynak-pekitirme-032");
     expect(sheets[0].topicId).toBe(`topic-${lessons[0].id}`);
-    expect(lessons[0].questions.every((q) => q.id.startsWith("f032-"))).toBe(
-      true,
+    expect(lessons[0].questions.map((q) => q.id)).toEqual(
+      [
+        ...Array.from({ length: 18 }, (_, i) => `f032-${lessons[0].id}-${i + 1}`),
+        ...["bisectors", "parallel-complement", "no-parallel", "adjacent-sum"].map(
+          (suffix) => `${lessons[0].id}-source-001-${suffix}`,
+        ),
+      ],
     );
   });
-  it("güncel yedi sayfalık kaynakta eklenen sayısal örnek ve karışık provayı kapsar", () => {
+  it("önceki yedi sayfalık kaynağın sayısal örneklerini ve karışık provasını korur", () => {
     const questions = lessons[0].questions;
-    expect(questions).toHaveLength(18);
     const expected = [
       (180 - 12) / 3,
       180 - 127,
@@ -108,7 +112,7 @@ describe("032 kaynak açıları: tam koşullu bağımsız pekiştirme", () => {
       180 - 122,
       360 / 6,
     ];
-    questions.slice(8).forEach((q, index) => {
+    questions.slice(8, 18).forEach((q, index) => {
       expect(q.options[q.answer].tr).toBe(`${expected[index]}°`);
       expect(questionGuidanceSchema.safeParse(q.guidance).success).toBe(true);
       expect(q.guidance!.steps.length).toBeGreaterThanOrEqual(3);
@@ -116,11 +120,10 @@ describe("032 kaynak açıları: tam koşullu bağımsız pekiştirme", () => {
       expect(new Set(q.options.map((o) => o.tr)).size).toBe(5);
     });
     expect(guides[0].source).toContain("yedi sayfalık");
-    expect(guides[0].sections.at(-1)!.paragraphs.join(" ")).toContain(
-      "360°/5=72°",
-    );
-    expect(guides[0].sections.at(-1)!.paragraphs.join(" ")).toContain(
-      "72°−9°=63°",
-    );
+    const explanation = guides[0].sections.find(
+      (section) => section.title === "Bir tam turdan ÖSYM çözümüne geç",
+    )!.paragraphs.join(" ");
+    expect(explanation).toContain("360°/5=72°");
+    expect(explanation).toContain("72°−9°=63°");
   });
 });

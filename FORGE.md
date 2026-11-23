@@ -6,6 +6,8 @@
 
 320 piksel genişlikte, %200 arayüz ölçeği ve %150 yazı boyutunda açıortay menüsü sayfayı 571 piksele genişletiyordu. Açıortay seçimi artık üç erişilebilir seçenek olarak satırlara sığar. Klavyenin yön tuşu seçimi, çizimi ve hesabı birlikte değiştirir. Derlemede dört geometri tarayıcı testi ve üç ilgili birim testi geçti. 320, 375 ve 1280 pikselde şekil sınırları, çevrimdışı not ve atölye tercihi geri okundu. Bu düzeltme yerel adayda doğrulandı.
 
+İlk dal koşusu, önceki derslerin soru ve özet sayıları genişletilen setlere uygulanınca beş hata verdi. Eski soru kimlikleri, sırası, sayısal cevapları ve ayrı özetin kısalığı denetlenmeye devam ediyor. Beş yeni çözüm ve doğruda açıortay örneği, kuralı seçme, hesabı kurma ve sonucu bulma adımlarına ayrıldı. [İlk dal koşusu](https://github.com/kaansavukduran/yksmania/actions/runs/45164479485)
+
 # Olasılık ve Veri Analizi · 0.41.0 adayı
 
 23 Kasım 2026. Olasılık’ın güncel 12 sayfası ve Veri Analizi’nin güncel 17 sayfası metin ve görsel olarak incelendi. Olasılık’ta eş olasılıklı durumları sayma, koşulla örnek uzayı daraltma, ayrıklık, bağımsızlık ve geri koymalı seçim adım adım işleniyor. Veri Analizi’nde bilinmeyen sıklığa ulaşma, standart sapmayı karşılaştırma ve ham ölçümlerden eş genişlikli sınıflar kurma tamamlandı. Etkileşimli zar tablosu ile nokta grafiği ve histogram aynı hesaplardan çizilir.
@@ -38,7 +40,9 @@ Yüzde Problemleri’ne kesri ödeme aşamasına kadar koruma, taksitten iç iç
 
 İki konuya 14 özgün soru, dört çözümlü örnek, sekiz hatırlama ve sekiz Kopya Kağıdı bölümü eklendi. 2018 TYT Temel Matematik 11 ve 13 gerçek kitapçık ve anahtarla doğrulandı. Resmî soru kaydı ile uygulama için yazılan örnekler kendi alanlarında açılır. Önceki konu, soru ve oturum kimlikleri korunur.
 
-# Hız ve Grafik Problemleri · 0.36.0 adayı
+# Hız ve Grafik Problemleri · 0.36.0 yayımlandı
+
+Kaynak `d1f2cf7b2e6b18b29d53d65692dcb7c42f3d23ab`. İki web adresi bu sürümü sundu. Cloudflare’daki 341 dosya kök derlemeyle eşleşti. Masaüstü yayınının altı dosyası SHA-256 kontrolünü geçti. İndirilen Linux AppImage ile aynı profilde gerçek yeniden açılış ve 114 çevrimdışı akış doğrulandı. [CI](https://github.com/kaansavukduran/yksmania/actions/runs/45143447181) · [GitHub Pages](https://github.com/kaansavukduran/yksmania/actions/runs/45149171902) · [Cloudflare Pages](https://yksmania.pages.dev/) · [Masaüstü](https://github.com/kaansavukduran/yksmania/releases/tag/v0.36.0-alpha.1)
 
 23 Kasım 2026. Hız Problemleri’nin güncel 10 sayfası ve Grafik Problemleri’nin güncel 12 sayfası önceki sürümleriyle karşılaştırıldı. Hızda bekleme süresi, tam tren geçişi, akıntı, pist yönü ve açık sürat aralıkları ayrı örneklerle işleniyor. Grafikte eş olmayan süreler, grupların birleşik payı, histogram eşiği ve gözlemlenmeyen ara değer açıklanıyor.
 

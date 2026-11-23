@@ -41,9 +41,14 @@ export const lineAngles042: Supplement = {
         },
         {
           label: "Yarılar",
-          expression: "78°/2 + 102°/2 = 39° + 51°",
+          expression: "(2·32+14)°/2=39°, (3·32+6)°/2=51°",
+          explanation: "İki açıortay kendi açısını iki eş parçaya böler.",
+        },
+        {
+          label: "Açıortaylar arası",
+          expression: "39°+51°=90°",
           explanation:
-            "Açıortaylar ortak kolun farklı tarafındadır. İki yarı birbirine eklenir.",
+            "Açıortaylar ortak kolun farklı taraflarında olduğu için iki yarıyı topla.",
         },
       ],
       answer: "90°.",

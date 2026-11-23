@@ -3,9 +3,13 @@ on:
   workflow_dispatch:
     inputs:
       url:
-        description: Published YKSMania origin to verify
+        description: Published YKSMania address to verify
         required: true
-        default: https://yksmania.vercel.app
+        type: choice
+        default: https://kaansavukduran.github.io/yksmania/
+        options:
+          - https://kaansavukduran.github.io/yksmania/
+          - https://yksmania.pages.dev/
 permissions:
   contents: read
 jobs:
@@ -30,11 +34,21 @@ jobs:
             sleep $((attempt * 20))
           done
           exit 1
-      - run: npm run test:e2e -- --workers=2 --trace retain-on-failure
+      - name: Verify GitHub Pages and its project path
+        if: inputs.url == 'https://kaansavukduran.github.io/yksmania/'
+        run: node scripts/test-pages.mjs
+        env:
+          YKSMANIA_PAGES_URL: ${{ inputs.url }}
+          YKSMANIA_EVIDENCE_DIR: published-pages-evidence
+      - name: Verify Cloudflare Pages
+        if: inputs.url == 'https://yksmania.pages.dev/'
+        run: npm run test:e2e -- --workers=2 --trace retain-on-failure
         env:
           BASE_URL: ${{ inputs.url }}
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
           name: published-browser-evidence
-          path: playwright-report/
+          path: |
+            published-pages-evidence/
+            playwright-report/

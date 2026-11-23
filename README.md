@@ -1,6 +1,8 @@
 # YKSMania
 
-**Son doğrulanan web sürümü 0.35.0**. İşçi ve Havuz Problemleri çevrimdışı çalışır. Kişisel Android deneme paketi ilgili Actions işinden indirilir. [Web uygulaması](https://kaansavukduran.github.io/yksmania/) · [Windows ve Linux 0.35](https://github.com/kaansavukduran/yksmania/releases/tag/v0.35.0-alpha.1) · [Android 0.35 deneme arşivi](https://github.com/kaansavukduran/yksmania/actions/runs/45134782270/artifacts/14799183302)
+[GitHub Pages](https://kaansavukduran.github.io/yksmania/) · [Cloudflare Pages](https://yksmania.pages.dev/)
+
+**Son doğrulanan web ve masaüstü sürümü 0.36.0**. Hız ve Grafik Problemleri çevrimdışı çalışır. [Windows ve Linux 0.36](https://github.com/kaansavukduran/yksmania/releases/tag/v0.36.0-alpha.1) · [Android 0.36 kişisel deneme arşivi](https://github.com/kaansavukduran/yksmania/actions/runs/45143578858/artifacts/14802399865)
 
 **0.42.0 adayı** üç geometri konusunu genişletiyor. İç ve dış açıortayları aynı üçgende karşılaştırabilir, ortak kenar değişince hangi üçgenlerin çizilebildiğini görebilirsin. Üç konuya 14 özgün alıştırma, dört çözümlü örnek ve kısa Kopya Kağıdı bölümleri eklendi. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
