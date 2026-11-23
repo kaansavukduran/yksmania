@@ -8,7 +8,7 @@ const workDirections: El[] = [
   vec(v(1, 0.55), v(3.4, 0.55), { tone: "a", bold: true }),
   txt(v(2.2, 0.55), `Çekme ${pullingForce} N`, "n", { tone: "a" }),
   vec(v(0, 0.55), v(-0.8, 0.55), { tone: "warn", bold: true }),
-  txt(v(-0.4, 0.55), `Sürtünme ${kineticFriction} N`, "n", { tone: "warn" }),
+  txt(v(-0.8, 0.55), `Sürtünme ${kineticFriction} N`, "w", { tone: "warn", small: true }),
   vec(v(0.5, -0.9), v(6.5, -0.9), { tone: "c" }),
   txt(v(3.5, -0.9), `Yer değiştirme ${pathDistance} m`, "s", { tone: "c" }),
 ];

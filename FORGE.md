@@ -4,6 +4,8 @@ MEBİ TYT Fizik Konu Özetleri fiziksel sayfa 54, basılı sayfa 52, A’dan bı
 
 Konu modeli ve ayrı Kopya Kağıdı aynı hesap ve çizimi kullanır. 320 piksel ve %200 ölçekli öğrenci akışında klavye, etiket yerleşimi ve kayıt oluşmaması doğrulandı. Ayrı Kopya Kağıdı 430 pikselde çevrimdışı açıldı.
 
+Uzak 0.56 denetimi 320 ve 375 pikselde çekme ve sürtünme etiketlerinin yaklaştığını ölçtü. Sürtünme etiketi kendi okunun ucuna alındı. Aynı koşuda eski soru sınamasının etkin ipucu beklentisi de yenilendi. [0.56 denetimi](https://github.com/kaansavukduran/yksmania/actions/runs/45221646969)
+
 # Sıçrama yüksekliği ve mekanik enerji · 0.59.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel sayfa 54, basılı sayfa 52, topun gittikçe alçalan sıçramalarını gösteriyor. Özgün ideal modelde hava direnci ihmal edilir. Çarpışmadan sonra sürat e katıysa tepe yüksekliği e² ile çarpılır. Zaman ekseni bütün ayarlarda aynı ölçeği kullanır. Her tepedeki mgh ile ısıl enerji ve ses gibi diğer biçimlere birikimli aktarım toplam 40 J eder.
