@@ -147,6 +147,29 @@ export const forge036037SmokeCases = [
       );
       await expect(lab.locator("svg rect")).toHaveCount(5);
       await onMode("tickets");
+      await click(lab, "İki bilinmeyenli sistem");
+      const systems = lab.locator(".f036-system");
+      const examples = systems.getByRole("combobox", { name: "Örnek", exact: true });
+      await examples.selectOption("parameter");
+      const parameter = systems.getByRole("slider", { name: "Ortak k katsayısı", exact: true });
+      await parameter.fill("2");
+      await expect(result(systems)).toContainText("İki denklem aynı doğruyu verir");
+      await expect(systems.getByText(/0 = 0 kaldı/)).toBeVisible();
+      await parameter.press("Home");
+      await parameter.press("ArrowRight");
+      await parameter.press("ArrowRight");
+      await expect(parameter).toHaveValue("-2");
+      await expect(result(systems)).toContainText("Doğrular paralel ve ayrıdır");
+      await expect(systems.getByText(/0 = 12 kaldı/)).toBeVisible();
+      await examples.selectOption("substitution");
+      await expect(result(systems)).toContainText("Çözüm (x, y) = (4, 3)");
+      await expect(systems.getByText(/denkleminde yerine koy.*y = 3/)).toBeVisible();
+      await examples.selectOption("intersection");
+      await expect(result(systems)).toContainText("Çözüm (x, y) = (3, 2)");
+      await expect(systems.locator(".f036-system-intersection")).toHaveAttribute("cx", "260");
+      await expect(systems.locator(".f036-system-intersection")).toHaveAttribute("cy", "160");
+      await onMode("system");
+      await click(lab, "Biletleri modelle");
     },
     async assertModel(lab) {
       await expect(lab.locator('[data-mode="tickets"]')).toBeVisible();

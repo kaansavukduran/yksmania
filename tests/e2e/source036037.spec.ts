@@ -1,6 +1,7 @@
 import { typeset } from "../../src/domain/typeset";
 import release from "../../package.json" with { type: "json" };
 import flow from "../fixtures/source036037-question-flow.json" with { type: "json" };
+import currentLinearCards from "../fixtures/source010-current-question-flow.json" with { type: "json" };
 import { test, expect, type Page, type Locator } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import type { AppState } from "../../src/domain/model";
@@ -80,16 +81,17 @@ async function renderedContrast(lab: Locator) {
       });
     }
     for (const item of root.querySelectorAll<SVGGraphicsElement>(
-      ".f036-bar-a, .f036-bar-b, .f036-dot-a, .f036-dot-b, .f037-axis",
+      ".f036-bar-a, .f036-bar-b, .f036-dot-a, .f036-dot-b, .f037-axis, .f036-system-line, .f036-system-intersection",
     )) {
       const box = item.getBBox();
       if (!box.width && !box.height) continue;
-      const style = getComputedStyle(item),
-        axis = item.classList.contains("f037-axis");
-      const color = rgb(axis ? style.stroke : style.fill);
+      const style = getComputedStyle(item);
+      const axis = item.classList.contains("f037-axis");
+      const stroke = axis || item.matches(".f036-system-line, .f036-system-intersection");
+      const color = rgb(stroke ? style.stroke : style.fill);
       const opacity =
         Number(style.opacity) *
-        Number(axis ? style.strokeOpacity : style.fillOpacity);
+        Number(stroke ? style.strokeOpacity : style.fillOpacity);
       const rendered = color.map(
         (v, i) => v * opacity + background[i] * (1 - opacity),
       );
@@ -236,7 +238,7 @@ for (const unit of units)
         locale: "tr-TR",
         reducedMotion: "reduce",
       });
-      test("seven real model modes, invalid branches, notes and first-use offline state remain unscored", async ({
+      test(`${unit.id.endsWith("036") ? "eight" : "seven"} real model modes, invalid branches, notes and first-use offline state remain unscored`, async ({
         page,
         context,
       }, info) => {
@@ -305,12 +307,18 @@ for (const unit of units)
                 ["Y yazılı yetişkin biletleri", "2 adet; her biri s+45 TL"],
                 ["Ö yazılı öğrenci biletleri", "3 adet; her biri s TL"],
               ],
+              system: [
+                ["Birinci denklem", "Kesintisiz çizgi (8, -3) ve (-3, 8) noktalarından geçiyor."],
+                ["İkinci denklem", "Kesik çizgi (8, 7) ve (-7, -8) noktalarından geçiyor."],
+              ],
             };
             for (const [label, value] of expectedValues[mode])
               await expect(
                 lab
                   .locator("[data-diagram-values] > div")
-                  .filter({ has: page.getByText(label, { exact: true }) })
+                  .filter({
+                    has: page.locator("dt").and(page.getByText(label, { exact: true })),
+                  })
                   .locator("dd"),
               ).toHaveText(value);
             if (mode === "pattern") {
@@ -385,7 +393,7 @@ for (const unit of units)
             ),
           ).toBe(true);
           for (const bounds of await lab
-            .locator("button,input[type=range],select")
+            .locator("button:visible,input[type=range]:visible,select:visible,summary:visible")
             .evaluateAll((nodes) =>
               nodes.map((node) => ({
                 width: node.getBoundingClientRect().width,
@@ -407,7 +415,7 @@ for (const unit of units)
           });
           captures.push({ mode, labels, legendMetrics });
         });
-        expect(captures).toHaveLength(7);
+        expect(captures).toHaveLength(unit.id.endsWith("036") ? 8 : 7);
         await unit.assertModel(lab);
         await expect
           .poll(async () => (await stored(page)).explorations[unit.storedKey])
@@ -454,6 +462,62 @@ for (const unit of units)
       });
     });
 
+test("the current systems lesson reopens its graph and amount model offline without learning writes", async ({ page, context }, info) => {
+  test.setTimeout(60_000);
+  await page.setViewportSize({ width: 320, height: 1000 });
+  await page.goto("/#/settings");
+  await setThemePreference(page, "matrix");
+  await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
+  await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
+  await ready(page);
+  const before = learning(await stored(page));
+  await context.setOffline(true);
+  const lab = await enter(page, units[0]);
+  await lab.getByRole("button", { name: "İki bilinmeyenli sistem", exact: true }).press("Enter");
+  const systems = lab.locator(".f036-system");
+  await expect(systems.locator(".f036-system-intersection")).toHaveAttribute("cx", "260");
+  await expect(systems.locator(".f036-system-intersection")).toHaveAttribute("cy", "160");
+  const examples = systems.getByRole("combobox", { name: "Örnek", exact: true });
+  await examples.selectOption("parameter");
+  const coefficient = systems.getByRole("slider", { name: "Ortak k katsayısı", exact: true });
+  await coefficient.press("Home");
+  await coefficient.press("ArrowRight");
+  await coefficient.press("ArrowRight");
+  await expect(coefficient).toHaveValue("-2");
+  await expect(systems.getByText(/0 = 12 kaldı/)).toBeVisible();
+  await expect(systems.locator(".f036-system-intersection")).toHaveCount(0);
+
+  const contexts = systems.locator(".f036-system-context");
+  await contexts.locator("summary").press("Enter");
+  const prices = contexts.getByRole("region", { name: "Alışveriş fiyatları", exact: true });
+  await expect(prices).toContainText("A 8 TL, B 5 TL.");
+  await prices.getByRole("slider", { name: "2 A ve 3 B için toplam (TL)", exact: true }).fill("0");
+  await expect(prices).toContainText("pozitif iki birim fiyat bulunamıyor");
+  await contexts.getByRole("button", { name: "Depoları eşitle", exact: true }).press("Enter");
+  const tanks = contexts.getByRole("region", { name: "Depolar arasında sıvı aktarımı", exact: true });
+  await expect(tanks).toContainText("Başlangıçta A 12 litre, B 6 litre.");
+  await expect(tanks).toContainText("iki depoda da 9 litre");
+  const transfer = tanks.getByRole("slider", { name: "A’dan B’ye aktarılan (litre)", exact: true });
+  await transfer.fill("10");
+  await expect(tanks).toContainText("Bu miktarda aktarım mümkün değil.");
+  await expect(tanks.locator("svg")).toHaveCount(0);
+  await transfer.fill("4");
+  await expect(tanks).toContainText("Başlangıçta A 13 litre, B 5 litre.");
+  await expect.poll(async () => (await stored(page)).explorations["linear-systems-source-010-context"])
+    .toMatchObject({ context: "tank", moved: 4 });
+  expect(learning(await stored(page))).toEqual(before);
+
+  await page.reload();
+  await expect(coefficient).toHaveValue("-2");
+  await contexts.locator("summary").press("Enter");
+  await expect(transfer).toHaveValue("4");
+  await expect(tanks).toContainText("iki depoda da 9 litre");
+  expect(learning(await stored(page))).toEqual(before);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+  await tanks.locator("svg").scrollIntoViewIfNeeded();
+  await page.screenshot({ path: info.outputPath("current-system-320-offline.png") });
+});
+
 for (const unit of units)
   test(`${unit.id}: complete reviewed card flow saves exact score, Today and original review dates offline`, async ({
     page,
@@ -462,9 +526,11 @@ for (const unit of units)
     test.setTimeout(180_000);
     const expected = flow.units.find((candidate) => candidate.id === unit.id)!;
     expect(expected).toBeDefined();
-    const count = unit.id.endsWith("036") ? 42 : 45,
+    const isLinear = unit.id.endsWith("036");
+    const cards = isLinear ? [...expected.cards, ...currentLinearCards] : expected.cards;
+    const count = isLinear ? 52 : 45,
       topicId = `topic-${unit.id}`;
-    expect(expected.cards).toHaveLength(count);
+    expect(cards).toHaveLength(count);
     const errors: string[] = [];
     page.on("pageerror", (error) => errors.push(error.message));
     await page.setViewportSize({ width: 1440, height: 1000 });
@@ -484,7 +550,7 @@ for (const unit of units)
     await page
       .getByRole("button", { name: "Sorulara geç", exact: true })
       .click();
-    for (const [index, card] of expected.cards.entries()) {
+    for (const [index, card] of cards.entries()) {
       await expect(page.locator(".question-meta")).toContainText(
         `${index + 1} / ${count}`,
       );
@@ -570,12 +636,12 @@ for (const unit of units)
       expect(await stored(page)).toEqual(saved);
     }
     await expect(official.locator(".worked-conclusion")).toContainText(
-      unit.id.endsWith("036") ? "96 parça." : "10.000<b<20.000 TL",
+      isLinear ? "28 dakika." : "10.000<b<20.000 TL",
     );
     await official.locator("summary").click();
-    await expect(official.locator("details")).toContainText("Resmî cevap: A.");
+    await expect(official.locator("details")).toContainText(`Resmî cevap: ${isLinear ? "C" : "A"}.`);
     await expect(official.locator("details")).toContainText(
-      `Soru sayfası ${unit.id.endsWith("036") ? 24 : 26}, cevap kaynağı sayfa 43.`,
+      `Soru sayfası ${isLinear ? 29 : 26}, cevap kaynağı sayfa 43.`,
     );
     await expect(
       official.getByRole("link", {
@@ -584,7 +650,7 @@ for (const unit of units)
       }),
     ).toHaveAttribute(
       "href",
-      new RegExp(`#page=${unit.id.endsWith("036") ? 24 : 26}$`),
+      new RegExp(`#page=${isLinear ? 29 : 26}$`),
     );
     expect(await stored(page)).toEqual(saved);
     await page.reload();
@@ -698,7 +764,8 @@ for (const theme of ["light", "system"] as const) {
       await unit.assertModel(page.locator(unit.selector));
     }
     expect(learning(await stored(page))).toEqual(before);
-    expect(observations).toHaveLength(14);
+    expect(observations.filter(({ unit }) => unit.endsWith("036"))).toHaveLength(8);
+    expect(observations.filter(({ unit }) => unit.endsWith("037"))).toHaveLength(7);
     const failures = observations.flatMap(({ unit, mode, rows }) =>
       rows
         .filter((row) => row.ratio + 1e-8 < row.minimum)

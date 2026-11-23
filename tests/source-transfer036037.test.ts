@@ -1,4 +1,5 @@
 import { beforeScientificQuestions } from "./helpers/before-scientific-revision";
+import { beforeSource010Cases, beforeSource010References } from "./helpers/before-source010-reference";
 import { beforeLaterSourceRevisions } from "./helpers/before-source004-revision";
 import { createHash } from "node:crypto";
 import { expect, it } from "vitest";
@@ -18,13 +19,14 @@ import { xp } from "../src/domain/scheduler";
 import { questionContentIssues } from "../src/domain/questionContent";
 import { questionGuidanceSchema } from "../src/domain/questionHelpModel";
 import { getLessonVideos031 } from "../src/learning/videoCatalog031";
+import { resolveGuideStep } from "../src/learning/guides/position";
 
 const canonical = (value: unknown): unknown =>
   Array.isArray(value) ? value.map(canonical) : value && typeof value === "object"
     ? Object.fromEntries(Object.entries(value).sort(([a], [b]) => a < b ? -1 : a > b ? 1 : 0).map(([key, item]) => [key, canonical(item)])) : value;
 const hash = (value: unknown) => createHash("sha256").update(JSON.stringify(canonical(value))).digest("hex");
 const packs = [
-  { pack: linearEquationsSource036Pack, base: "birinci-dereceden-denklemler", sections: 27, examples: 26, recall: 18, questions: 42, sheet: 10 },
+  { pack: linearEquationsSource036Pack, base: "birinci-dereceden-denklemler", sections: 40, examples: 37, recall: 26, questions: 52, sheet: 15 },
   { pack: basicInequalitiesSource037Pack, base: "basit-esitsizlikler", sections: 30, examples: 34, recall: 22, questions: 45, sheet: 12 },
 ] as const;
 
@@ -43,10 +45,10 @@ it("preserves all BBB lesson, question, guide, sheet values and complete study o
   expect(Object.entries(examTeachingCases).slice(0, 10)).toEqual(Object.entries(baseline.examTeachingCases));
 });
 
-it("appends only two independent companions with87 self-contained fully guided cards", () => {
+it("keeps two independent companions with 97 self-contained fully guided cards", () => {
   expect(lessons).toHaveLength(540);
-  expect(lessons.flatMap((v) => v.questions)).toHaveLength(6472);
-  expect(new Set(lessons.flatMap((v) => v.questions).map((v) => v.id)).size).toBe(6472);
+  expect(lessons.flatMap((v) => v.questions)).toHaveLength(6482);
+  expect(new Set(lessons.flatMap((v) => v.questions).map((v) => v.id)).size).toBe(6482);
   expect(lessonGuides.size).toBe(505);
   expect(builtInCheatSheets.size).toBe(505);
   expect(studyTopics).toHaveLength(505);
@@ -96,19 +98,36 @@ for (const { pack, base } of packs)
     expect(old.topicProgress[`topic-${pack.id}`]).toBeUndefined();
   });
 
+it("keeps the old linear reading, worked example and recall positions when systems are added", () => {
+  const id = linearEquationsSource036Pack.id;
+  expect(resolveGuideStep(id, 26, 27, 40)).toBe(26);
+  expect(resolveGuideStep(id, 27, 27, 40)).toBe(40);
+  expect(resolveGuideStep(id, 28, 27, 40)).toBe(41);
+  expect(resolveGuideStep(id, 27, 0, 40)).toBe(40);
+  expect(resolveGuideStep(id, 0, 0, 40)).toBe(0);
+});
+
 it("keeps verified primary answers, TL units and own unscored examples distinct", () => {
-  expect(pastExamReferences).toHaveLength(13);
-  expect(Object.keys(examTeachingCases)).toHaveLength(13);
-  const branching = pastExamReferencesForTopic("topic-tyt-mat-dogrusal-denklemler-kaynak-036");
+  expect(pastExamReferences).toHaveLength(14);
+  expect(Object.keys(examTeachingCases)).toHaveLength(14);
+  expect(hash(beforeSource010References(pastExamReferences))).toBe("17916955a5713fcd1c8bb8b9fba14616f4cb10773bc81960cb2a79c031f587ee");
+  expect(hash(Object.fromEntries(beforeSource010Cases(examTeachingCases)))).toBe("c7348cbd185104271c16ba6f07a4831f39180b378bf363db45b7314dfc6bf9e6");
+  const branching = pastExamReferencesForTopic("detail-206").find(({ id }) => id === "2024-TYT-MAT-3")!;
+  const linear = pastExamReferencesForTopic("topic-tyt-mat-dogrusal-denklemler-kaynak-036");
   const inequality = pastExamReferencesForTopic("topic-tyt-mat-basit-esitsizlikler-kaynak-037");
-  expect(branching).toHaveLength(1);
+  expect(linear).toHaveLength(1);
   expect(inequality).toHaveLength(1);
-  expect(branching[0]).toMatchObject({ id: "2024-TYT-MAT-3", page: 24, answerPage: 43, answer: "A" });
-  expect(branching[0].solution.join(" ")).toContain("3072");
-  expect(branching[0].connection).toContain("241→81");
+  expect(branching).toMatchObject({ id: "2024-TYT-MAT-3", page: 24, answerPage: 43, answer: "A" });
+  expect(branching.solution.join(" ")).toContain("3072");
+  expect(branching.connection).toContain("241→81");
   expect(2 ** 10 + 2 ** 11).toBe(3072);
-  expect(examTeachingCases[branching[0].id].answer).toBe("96 parça.");
+  expect(examTeachingCases[branching.id].answer).toBe("96 parça.");
   expect(2 ** 5 + 2 ** 6).toBe(96);
+  expect(linear[0]).toMatchObject({ id: "2024-TYT-MAT-17", page: 29, answerPage: 43, answer: "C" });
+  expect(hash(linear[0])).toBe("bf4e2d465d1640e5fda09a7387f96c2f19600f5be9f162115b860f3b2c9dda79");
+  expect(hash(examTeachingCases[linear[0].id])).toBe("61445b16b3a1cac3767d98efa480b4cb151d7e71424bfd5749b990751e280cd5");
+  expect(Array.from({ length: 30 }, (_, day) => 40 + (day < 15 ? day : 28 - day)).reduce((total, minutes) => total + minutes, 0)).toBe(1395);
+  expect(examTeachingCases[linear[0].id].answer).toBe("28 dakika.");
   expect(inequality[0]).toMatchObject({ id: "2024-TYT-MAT-8", page: 26, answerPage: 43, answer: "A" });
   expect(inequality[0].solution.join(" ")).toContain("10.000<b<30.000");
   expect(inequality[0].connection).toContain("u=b/1000");
@@ -117,6 +136,6 @@ it("keeps verified primary answers, TL units and own unscored examples distinct"
     expect(2 * b + 20000).toBeGreaterThan(30000 + b);
     expect(3 * b - 10000).toBeLessThan(30000 + b);
   }
-  expect(linearEquationsSource036Pack.source).toContain("atfı gerçek resmî kitapçıkla uyuşmadığından");
+  expect(linearEquationsSource036Pack.source).toContain("C seçeneği 40 dakikadır.");
   expect(basicInequalitiesSource037Pack.source).toContain("u=b/1000");
 });

@@ -4,6 +4,7 @@ import type { LessonGuide } from "../../src/learning/guides/types";
 import { beforeScientificRevision } from "./before-scientific-revision";
 import { beforeSource008Revision } from "./before-source008-revision";
 import { beforeSource009Revision } from "./before-source009-revision";
+import { beforeSource010TeachingRevision } from "./before-source010-teaching";
 
 const lessonId = "tyt-mat-asal-kaynak-032";
 const topicId = `topic-${lessonId}`;
@@ -109,5 +110,6 @@ export function beforeLaterSourceRevisions(
   const beforeScientific = beforeScientificRevision(surface, id, value);
   const before004 = beforeSource004Revision(surface, id, beforeScientific);
   const before008 = beforeSource008Revision(surface, id, before004);
-  return beforeSource009Revision(surface, id, before008);
+  const before009 = beforeSource009Revision(surface, id, before008);
+  return beforeSource010TeachingRevision(surface, id, before009);
 }

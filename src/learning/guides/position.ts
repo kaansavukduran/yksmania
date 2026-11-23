@@ -7,6 +7,7 @@ const legacySectionCounts: Readonly<Record<string, number>> = {
   "kimyasal-denge": 11,
   "dna-eslenmesi": 7,
   "bilimsel-gosterim-katsayi": 8,
+  "tyt-mat-dogrusal-denklemler-kaynak-036": 27,
 };
 
 export function resolveGuideStep(

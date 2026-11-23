@@ -135,6 +135,16 @@ export const examTeachingCases: Record<string, ExamTeachingCase> = {
     "answer": "96 parça.",
     "pitfall": "Katlanmayı sabit artış sanma; adım toplamı ile yalnız o katmandaki yeni parça sayısını karıştırma."
   },
+  "2024-TYT-MAT-17": {
+    prompt: "Özgün örnek. Bir kişi 20 gün egzersiz yapıyor. 2. günden 10. güne kadar her gün bir öncekinden 1 dakika daha uzun çalışıyor. 11. günden başlayarak her gün 1 dakika daha kısa çalışıyor. 20 günlük toplam 640 dakikaysa ilk gün kaç dakika çalıştı?",
+    steps: [
+      "İlk gün x dakika. 10. gün x+9 ve 11. gün x+8 sürer. 20. gün x−1 dakikadır.",
+      "İlk 10 günün toplamı 10x+45, son 10 günün toplamı 10x+35. 20x+80=640 ve x=28.",
+      "İlk dizinin uçları 28 ve 37, toplamı 325. İkinci dizinin uçları 36 ve 27, toplamı 315. Birlikte 640 dakika eder.",
+    ],
+    answer: "28 dakika.",
+    pitfall: "11. güne 10. günün süresini kopyalarsan en uzun günü iki kez saymış olursun.",
+  },
   "2024-TYT-MAT-8": {
     "prompt": "Özgün örnek: maliyetleri 12.000 TL, 18.000 TL ve b TL olan üç ürün birlikte satılıyor. Takım 2b+20.000 TL’ye satılırsa kâr, 3b−10.000 TL’ye satılırsa zarar ediliyor. b TL cinsindendir. İki koşulu sağlayan bütün b değerlerini bul.",
     "steps": [

@@ -201,9 +201,7 @@ export const pastExamReferences: PastExamReference[] = [
     "page": 24,
     "answerPage": 43,
     "answer": "A",
-    "topicIds": [
-      "topic-tyt-mat-dogrusal-denklemler-kaynak-036"
-    ],
+    "topicIds": ["detail-206"],
     "title": "Sabit artış ile katlanmalı örüntüyü ayırma",
     "connection": "Denklem kurmadan önce üretim kuralını belirle. Bu seçili resmî örnek katlanmalıdır; doğrusal 241→81 alıştırması bu sorunun özeti değildir.",
     "solution": [
@@ -211,6 +209,23 @@ export const pastExamReferences: PastExamReference[] = [
       "12. adım toplamından 10. adım toplamını çıkarınca yalnız 11. ve 12. katman kalır: 2¹⁰+2¹¹=3×2¹⁰=3072.",
       "Resmî A seçeneği 3×2¹⁰’dur. Sabit fark varsayımı kullanılamaz; bu özgün öğretim açıklaması resmî kurum çözümü değildir."
     ]
+  },
+  {
+    id: "2024-TYT-MAT-17",
+    bookletId: "2024-tyt",
+    test: "Temel Matematik",
+    question: 17,
+    page: 29,
+    answerPage: 43,
+    answer: "C",
+    topicIds: ["detail-210"],
+    title: "Günlük süre toplamından ilk günü bulma",
+    connection: "Birinci dereceden denklem kurarken artan ve azalan günleri ayrı say, tepe gününü bir kez al.",
+    solution: [
+      "İlk gün x dakika. 15. gün x+14, azalışın başladığı 16. gün x+13, son gün x−1 olur.",
+      "İlk 15 gün 15x+105, son 15 gün 15x+90 dakika. 30x+195=1395, yani 30x=1200.",
+      "x=40 dakika. İlk bölüm 705, ikinci bölüm 690 ve toplam 1395 dakikadır. Resmî anahtar C.",
+    ],
   },
   {
     "id": "2024-TYT-MAT-8",
@@ -252,6 +267,7 @@ export const pastExamReferences: PastExamReference[] = [
 // Selected companion links leave all earlier source records and their topic lists intact.
 const sourceCompanionReferences: Record<string, readonly string[]> = {
   "topic-tyt-mat-rasyonel-kaynak-035": ["2021-TYT-MAT-1"],
+  "topic-tyt-mat-dogrusal-denklemler-kaynak-036": ["2024-TYT-MAT-17"],
 };
 export function pastExamReferencesForTopic(topicId?: string) {
   return pastExamReferences.filter((reference) => Boolean(topicId && (

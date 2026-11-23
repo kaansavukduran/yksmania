@@ -1,0 +1,64 @@
+.f036-system-control {
+  display: grid;
+  gap: 0.4rem;
+  max-width: 100%;
+  margin-block: 0.8rem;
+}
+
+.f036-system-control select {
+  min-width: 0;
+  min-height: 44px;
+  max-width: 100%;
+}
+
+.f036-system-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 0.75rem;
+}
+
+.f036-system-fields fieldset {
+  min-width: 0;
+  margin: 0;
+  border: 1px solid var(--border);
+}
+
+.f036-system-equations {
+  padding-inline-start: 2rem;
+}
+
+.f036-system-figure {
+  max-width: 32rem;
+  margin-inline: 0;
+}
+
+.f036-system-grid {
+  stroke: var(--border);
+  stroke-width: 1;
+  fill: none;
+}
+
+.f036-system-line {
+  stroke-width: 3px;
+  vector-effect: non-scaling-stroke;
+}
+
+.f036-system-line-a { stroke: var(--f036-a); }
+.f036-system-line-b { stroke: var(--f036-b); stroke-dasharray: 5 4; }
+
+.f036-system-intersection {
+  fill: var(--panel);
+  stroke: var(--text);
+  stroke-width: 2px;
+  vector-effect: non-scaling-stroke;
+}
+
+.f036-system-context {
+  margin-block-start: 1.5rem;
+}
+
+.f036-system-context summary {
+  padding-block: 0.5rem;
+  min-height: 44px;
+  cursor: pointer;
+}

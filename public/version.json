@@ -1,7 +1,7 @@
 {
-  "version": "0.28.0",
+  "version": "0.29.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Asal Sayılar, EBOB ve EKOK ile Rasyonel Sayılar güncel kaynak örnekleriyle yenilendi. Kopya Kağıtlarında önce kendin çözebilir, ardından adımları açabilirsin."
+    "tr": "Birinci Dereceden Denklemler’de iki bilinmeyeni grafik, yerine koyma ve yok etme ile çalışabilirsin. Fiyat ve depo modelleri, ayrı prova ve 10 özgün soru eklendi."
   }
 }

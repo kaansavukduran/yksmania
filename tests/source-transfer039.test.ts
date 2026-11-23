@@ -1,4 +1,4 @@
-import { beforeScientificQuestions } from "./helpers/before-scientific-revision";
+import { beforeCurrentQuestionAdditions, beforeSource010Cases, beforeSource010References } from "./helpers/before-source010-reference";
 import { beforeLaterSourceRevisions } from "./helpers/before-source004-revision";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
@@ -33,13 +33,13 @@ it("keeps every0.23 lesson/card/guide/sheet value and complete earlier order bef
       expect(hash(beforeLaterSourceRevisions(surface, key, maps[surface].get(key))), `${surface}:${key}`).toBe(expected);
     }
   expect(lessons.slice(0, 533).map((value) => value.id)).toEqual(Object.keys(baseline.lessons));
-  expect(beforeScientificQuestions(lessons.flatMap((lesson) => lesson.questions)).slice(0, 6301).map((value) => value.id)).toEqual(Object.keys(baseline.questions));
+  expect(beforeCurrentQuestionAdditions(lessons.flatMap((lesson) => lesson.questions)).slice(0, 6301).map((value) => value.id)).toEqual(Object.keys(baseline.questions));
   expect([...lessonGuides.keys()].slice(0, 499)).toEqual(Object.keys(baseline.guides));
   expect([...builtInCheatSheets.keys()].slice(0, 499)).toEqual(Object.keys(baseline.sheets));
   expect(studyTopics.slice(0, 498)).toEqual(baseline.studyTopics);
   expect(studyTopics.slice(0, 479)).toEqual(baseline.studyTopics.slice(0, 479));
-  expect(pastExamReferences.slice(0, 12)).toEqual(baseline.pastExamReferences);
-  expect(Object.entries(examTeachingCases).slice(0, 12)).toEqual(Object.entries(baseline.examTeachingCases));
+  expect(beforeSource010References(pastExamReferences).slice(0, 12)).toEqual(baseline.pastExamReferences);
+  expect(beforeSource010Cases(examTeachingCases).slice(0, 12)).toEqual(Object.entries(baseline.examTeachingCases));
 });
 
 it("registers the complete separate039 lesson, guide, summary, topic and55 self-contained fully helped questions", () => {
@@ -105,7 +105,7 @@ it("preserves approved teaching with pinned C10 choice CSS, C7 state and C8 log 
   expect((lab.match(/usePower039State(?:<[^>]+>)?\(/g) ?? [])).toHaveLength(40);
   expect(lab).not.toMatch(/useState\(/);
   expect(lessons).toHaveLength(540);
-  expect(lessons.flatMap((value) => value.questions)).toHaveLength(6472);
+  expect(lessons.flatMap((value) => value.questions)).toHaveLength(6482);
   expect(lessonGuides.size).toBe(505);
   expect(builtInCheatSheets.size).toBe(505);
   expect(studyTopics).toHaveLength(505);

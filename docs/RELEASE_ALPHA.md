@@ -1,3 +1,11 @@
+# YKSMania 0.29.0 · İki bilinmeyenli denklem sistemleri
+
+Yayın adayı. Birinci Dereceden Denklemler’in 18 sayfalık güncel kaynağından 13 yeni anlatım bölümü, adım adım örnekler, ayrı Kopya Kağıdı ve 10 özgün soru eklendi. İki doğrunun ortak çözümü grafikte ve denklem hesabında birlikte gösteriliyor. Yerine koyma ve yok etme adımlarını, fiyat ve depo problemlerini değiştirebilirsin.
+
+Önceki 42 soru aynı kimliklerle korunuyor. 2024 TYT Temel Matematik 17 için asıl kitapçık ve C anahtarı doğrulandı. Öğrencinin çözebileceği özgün süre örneği ayrıca sunuluyor. [İlerleme tablosu](ILERLEME.md)
+
+---
+
 # YKSMania 0.28.0 · Güncel matematik kaynakları
 
 Yayın adayı. Asal Sayılar, EBOB ve EKOK ile Rasyonel Sayılar güncel PDF sürümlerinden yeniden incelendi. Asal Sayılarda çarpan türü ve kart adedi, EBOB ve EKOK’ta ortak kalan ile parça boyu, Rasyonel Sayılarda işaret ve ikinci oranın uygulandığı bütün gerçek örneklerle açıklanıyor. Ayrı Kopya Kağıtlarında çözümler öğrencinin açtığı adımlarda gösteriliyor.

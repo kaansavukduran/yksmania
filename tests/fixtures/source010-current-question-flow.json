@@ -1,0 +1,112 @@
+[
+  {
+    "prompt": "x ve y gerçek sayı. x+y=8 ve 2x−y=7 denklemlerinin ortak çözümü (x, y) hangisidir?",
+    "options": [
+      "(5, 3)",
+      "(3, 5)",
+      "(4, 4)",
+      "(5, −3)",
+      "(7, 1)"
+    ],
+    "correct": "(5, 3)"
+  },
+  {
+    "prompt": "Birinci sistem x−2y=3 ile 2x−4y=6, ikinci sistem x−2y=3 ile 2x−4y=7 denklemlerinden oluşuyor. İlk ve ikinci sistemin çözüm kümeleri sırasıyla hangisidir?",
+    "options": [
+      "x=3+2y doğrusu üzerindeki bütün çiftler ve ∅",
+      "Yalnız (3, 0) ve ∅",
+      "Bütün gerçek sayı çiftleri ve ∅",
+      "∅ ve x=3+2y doğrusu üzerindeki bütün çiftler",
+      "İki sistem için de x=3+2y doğrusu üzerindeki bütün çiftler"
+    ],
+    "correct": "x=3+2y doğrusu üzerindeki bütün çiftler ve ∅"
+  },
+  {
+    "prompt": "x gerçek sayı. (3x−6)/(x−2)=4 denklemi için başlangıç tanım koşulu ve çözüm kümesi hangisidir?",
+    "options": [
+      "x≠2, ÇK=∅",
+      "x≠2, ÇK={2}",
+      "x≠2, ÇK=ℝ∖{2}",
+      "x≠0, ÇK={2}",
+      "Kısıt yok, ÇK={2}"
+    ],
+    "correct": "x≠2, ÇK=∅"
+  },
+  {
+    "prompt": "Bir sergide 2 tam ve 3 indirimli bilet 230 TL, 3 tam ve 2 indirimli bilet 270 TL. İki alışverişte de her türün birim fiyatı aynı. Tam ve indirimli birim fiyatları sırasıyla kaç TL?",
+    "options": [
+      "70 ve 30",
+      "30 ve 70",
+      "65 ve 35",
+      "75 ve 25",
+      "60 ve 40"
+    ],
+    "correct": "70 ve 30"
+  },
+  {
+    "prompt": "x+y=6 ve x−y=2 doğrularının kesişimini bul. Hangi seçenekte hem doğru kesişim hem x+y=6 doğrusu üzerinde çizime uygun iki ayrı nokta verilmiştir?",
+    "options": [
+      "Kesişim (4, 2). Noktalar (0, 6) ve (6, 0).",
+      "Kesişim (2, 4). Noktalar (0, 6) ve (6, 0).",
+      "Kesişim (4, 2). Noktalar (0, −2) ve (2, 0).",
+      "Kesişim (3, 3). Noktalar (0, 6) ve (3, 3).",
+      "Kesişim (4, 2). Noktalar (0, 6) ve (0, 6)."
+    ],
+    "correct": "Kesişim (4, 2). Noktalar (0, 6) ve (6, 0)."
+  },
+  {
+    "prompt": "A ve B depolarında başlangıçta toplam 18 L su var. A’dan B’ye kayıpsız 3 L aktarılınca miktarlar eşit oluyor. Başlangıçta A ve B sırasıyla kaç litreydi?",
+    "options": [
+      "12 L ve 6 L",
+      "6 L ve 12 L",
+      "9 L ve 9 L",
+      "10,5 L ve 7,5 L",
+      "15 L ve 3 L"
+    ],
+    "correct": "12 L ve 6 L"
+  },
+  {
+    "prompt": "Aynı x ve y için x+y=7 ve x−y=3 veriliyor. (x, y) sıralı ikilisi hangisidir?",
+    "options": [
+      "(5, 2)",
+      "(2, 5)",
+      "(4, 3)",
+      "(3, 0)",
+      "(7, 0)"
+    ],
+    "correct": "(5, 2)"
+  },
+  {
+    "prompt": "x+2y=8 ve x−2y=4 sisteminin iki eşitliği toplanınca 2x=12 çıkıyor. Sistemin çözümünü tamamlamak için hangi adım geçerlidir?",
+    "options": [
+      "x=6’yı x+2y=8’de kullanıp y=1 bulmak",
+      "Yalnız 2x=12 ile her y’nin çözüm olduğunu söylemek",
+      "x=6 için y’yi ikinci eşitlikte 5 almak",
+      "İlk satırda 2y’yi sıfıra eşitlemek",
+      "Toplamda 2y terimini bırakıp 2x+2y=12 yazmak"
+    ],
+    "correct": "x=6’yı x+2y=8’de kullanıp y=1 bulmak"
+  },
+  {
+    "prompt": "3x+2y=13 ve x−y=1 sistemi için Δ, ilk satırın x katsayısı ile ikinci satırın y katsayısının çarpımından ilk satırın y katsayısı ile ikinci satırın x katsayısının çarpımının çıkarılmasıdır. Δ ve ortak çözüm sırasıyla hangisidir?",
+    "options": [
+      "−5 ve (3, 2)",
+      "−5 ve (2, 3)",
+      "5 ve (3, 2)",
+      "−5 ve (4, 1)",
+      "0 ve ∅"
+    ],
+    "correct": "−5 ve (3, 2)"
+  },
+  {
+    "prompt": "kx+2y=6 ve 2x+ky=6 sisteminde k gerçek bir katsayıdır. k=2, k=−2 ve k=−3 için sonuçlar sırasıyla hangisidir?",
+    "options": [
+      "x+y=3 doğrusu, ∅, (−6, −6)",
+      "(3/2, 3/2), ∅, (−6, −6)",
+      "x+y=3 doğrusu, ∅, (6, 6)",
+      "∅, x+y=3 doğrusu, (−6, −6)",
+      "x+y=3 doğrusu, x+y=3 doğrusu, ∅"
+    ],
+    "correct": "x+y=3 doğrusu, ∅, (−6, −6)"
+  }
+]

@@ -1,6 +1,8 @@
 import { useId } from "react";
 import { useApp } from "../store";
 import { useExploration } from "./useExploration";
+import { LinearSystemsSource010Panel } from "./LinearSystemsSource010Panel";
+import { DiagramLegend } from "./Source036DiagramLegend";
 import {
   eq036Balance, eq036Expand, eq036FractionEquation, eq036Excluded,
   eq036Pattern, eq036Tickets, eq036TicketDifference, eq036Words, eq036Format,
@@ -11,9 +13,6 @@ import "./linearEquationsSource036.css";
 const defaults={mode:0,a:3,b:6,c:0,d:24,x:6,xd:1,stage:0,k:4,h:3,ec:2,ed:10,u:-1,p:3,v:2,q:2,sign:1,r:6,eu:-1,ev:-1,er:2,wordM:3,wordB:5,wordT:30,grouped:false,first:1,step:3,total:241,previewN:6,adultPrice:80,studentPrice:50,people:12,money:780,priceMode:false,adults:2,students:3,priceDifference:45,priceTotal:390};
 const fraction=(q:Eq036Fraction|null)=>q?eq036Format(q):"—";
 const solution=(s:{kind:"one"|"all"|"none";root:Eq036Fraction|null})=>s.kind==="one"?`Tek kök x=${fraction(s.root)}`:s.kind==="all"?"Bütün izinli değerler çözüm":"Çözüm yok";
-function DiagramLegend({entries}:{entries:{label:string;value:string;tone?:"a"|"b"}[]}) {
-  return <dl className="f036-diagram-values" aria-label="Şekildeki değerler" data-diagram-values>{entries.map(({label,value,tone})=><div key={label} data-tone={tone}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>;
-}
 function NumberLine({values,excluded,all=false}:{values:{value:number;label:string}[];excluded?:number;all?:boolean}) {
   const bound=Math.max(10,...values.map((v)=>Math.abs(v.value)),Math.abs(excluded??0));
   const limit=Math.ceil(bound/5)*5+5, point=(x:number)=>45+(x+limit)/(2*limit)*610;
@@ -35,7 +34,7 @@ export function LinearEquationsSource036Lab() {
   const uid=useId(); const {state}=useApp();
   const [saved,set]=useExploration("linear-equations-source-036",defaults);
   const n=(key:keyof typeof defaults,fallback:number,min:number,max:number)=>{const value=saved[key];return typeof value==="number"&&Number.isFinite(value)?Math.max(min,Math.min(max,Math.round(value))):fallback;};
-  const mode=n("mode",0,0,6);
+  const mode=n("mode",0,0,7);
   const range=(key:keyof typeof defaults,label:string,value:number,min:number,max:number)=><div className="f036-range"><div><label htmlFor={`${uid}-${key}`}>{label}</label><output htmlFor={`${uid}-${key}`}>{value}</output></div><input id={`${uid}-${key}`} aria-label={label} type="range" min={min} max={max} step="1" value={value} onChange={(e)=>set({[key]:Number(e.target.value)})}/></div>;
   const balance=eq036Balance(n("a",3,-12,12),n("b",6,-60,60),n("c",0,-12,12),n("d",24,-120,120),n("x",6,-120,120),n("xd",1,1,12));
   const expanded=eq036Expand(n("k",4,-12,12),n("h",3,-20,20),n("ec",2,-12,12),n("ed",10,-120,120));
@@ -46,7 +45,7 @@ export function LinearEquationsSource036Lab() {
   const tickets=eq036Tickets(n("adultPrice",80,1,200),n("studentPrice",50,1,200),n("people",12,1,30),n("money",780,0,6000));
   const adults=n("adults",2,0,20),students=n("students",3,0,20);
   const prices=adults+students>0?eq036TicketDifference(adults,students,n("priceDifference",45,0,120),n("priceTotal",390,0,6000)):null;
-  const labels=["İki tarafı keşfet","Dağıt ve karşılaştır","Sabit paydalar","Yasak değeri koru","Sözden paranteze","Örüntüde geçişler","Biletleri modelle"];
+  const labels=["İki tarafı keşfet","Dağıt ve karşılaştır","Sabit paydalar","Yasak değeri koru","Sözden paranteze","Örüntüde geçişler","Biletleri modelle","İki bilinmeyenli sistem"];
   return <section className="f036-lab" data-forge036="linear-equations" data-motion={state.settings.motion}>
     <h3>Denklemi görünür kıl</h3>
     <p>Bir değeri değiştir, iki tarafı ve çözüm türünü birlikte izle. Şekil ile sayısal sonuç aynı hesapları kullanır; bu keşif bağımsız doğru cevap veya öğrenme puanı değildir.</p>
@@ -115,6 +114,7 @@ export function LinearEquationsSource036Lab() {
       <p data-model-result><strong>{tickets.valid?`${tickets.adult} yetişkin, ${tickets.students} öğrenci.`:tickets.allCounts?`Her tam sayı x için 0≤x≤${tickets.people}; fiyatlar aynı ve toplam ücret uygun.`:"Verilen bütün koşulları sağlayan bilet adedi yok."}</strong> {tickets.solution.root&&!tickets.valid?`Cebirsel aday ${fraction(tickets.solution.root)}; adet için tam sayı ve aralık şartını geçemedi.`:""}</p><p>Y yetişkin, Ö öğrenci. Şema yalnız bir geçerli grup ayrımı olduğunda çizilir; modelin varsayımı bütün biletlere aynı iki sabit fiyatın uygulanmasıdır.</p></>:<><p>Öğrenci fiyatı s TL; yetişkin s+fark TL. Bilinen her yetişkin adedi için bu fark ayrı eklenir.</p><div className="f036-controls">{range("adults","Yetişkin adedi",adults,0,20)}{range("students","Öğrenci adedi",students,0,20)}{range("priceDifference","Yetişkinin fiyat farkı (TL)",n("priceDifference",45,0,120),0,120)}{range("priceTotal","Toplam ücret (TL)",n("priceTotal",390,0,6000),0,6000)}</div>
       {prices?<><svg viewBox="0 0 700 340" role="img" aria-label={`${adults} yetişkin bileti s+${prices.difference}, ${students} öğrenci bileti s; her bilet ayrı gösterilir`}>{Array.from({length:adults+students},(_,i)=><g key={i} transform={`translate(${30+(i%10)*66},${20+Math.floor(i/10)*76})`}><rect width="50" height="58" rx="7" className={i<adults?"f036-box-a":"f036-box-b"}/><text x="25" y="37" textAnchor="middle">{i<adults?"Y":"Ö"}</text></g>)}</svg><DiagramLegend entries={[{label:"Y yazılı yetişkin biletleri",value:`${adults} adet; her biri s+${prices.difference} TL`,tone:"a"},{label:"Ö yazılı öğrenci biletleri",value:`${students} adet; her biri s TL`,tone:"b"}]}/><p>{adults}(s+{prices.difference})+{students}s={prices.total} → {adults+students}s+{adults*prices.difference}={prices.total}.</p><p data-model-result><strong>{prices.valid?`Öğrenci ${fraction(prices.student)} TL; yetişkin ${fraction(prices.adult)} TL.`:"Pozitif iki bilet fiyatı koşulu sağlanmıyor."}</strong> Sayısal toplam kontrolü {fraction(prices.check)} TL; beklenen {prices.total} TL. Model bütün fiyatların pozitif olduğunu varsayar.</p></>:<p role="status">En az bir bilet seç; sıfır biletin fiyatı bu toplamdan belirlenemez.</p>}</>}
     </div>}
+    {mode===7&&<LinearSystemsSource010Panel />}
     <p className="f036-note">Çözüm adımlarını kendi cümlenle açıkla; bulduğun sonucu başlangıç koşullarında denetle.</p>
   </section>;
 }
