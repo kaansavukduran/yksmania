@@ -1,3 +1,9 @@
+# YKSMania 0.39.0 · Permütasyon ve Tekrarlı Permütasyon
+
+- Kişi sayısını ve oturma biçimini değiştir. İki özel kişinin yan yana oturmadığı düzenleri çizimde ve hesapta karşılaştır.
+- Hedefi ve durağı seç. Duraktan geçen ve uğramayan rotaların sayısı ile geçerli bir örnek yol birlikte değişir.
+- İki konu 16 özgün soru, adım adım çözümler ve ayrı Kopya Kağıtları içerir. [İlerleme tablosu](ILERLEME.md)
+
 # YKSMania 0.38.0 · Kartezyen Çarpım ve Mantık
 
 - Kartezyen Çarpım’da ortak ve farklı sıralı ikilileri kendin seç. Nokta grafiği ve ikili listesi seçimlerinle birlikte güncellenir.

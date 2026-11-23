@@ -21,6 +21,8 @@ const models = [
   { lesson: "kumeler", model: "source029-three-set-count" },
   { lesson: "kartezyen-carpim", model: "source030-product-difference" },
   { lesson: "mantik-onerme", model: "source031-divisibility-implication" },
+  { lesson: "tyt-mat-permutasyon-kaynak-032", model: "source032-separated-permutations" },
+  { lesson: "tyt-mat-tekrarli-permutasyon-kaynak-033", model: "source033-waypoint-paths" },
 ];
 
 for (const width of [320, 375, 1280]) {

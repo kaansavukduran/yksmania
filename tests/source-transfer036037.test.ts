@@ -49,12 +49,12 @@ it("preserves all BBB lesson, question, guide, sheet values and complete study o
 });
 
 it("keeps two independent companions with 107 self-contained fully guided cards", () => {
-  expect(lessons).toHaveLength(540);
-  expect(lessons.flatMap((v) => v.questions)).toHaveLength(6598);
-  expect(new Set(lessons.flatMap((v) => v.questions).map((v) => v.id)).size).toBe(6598);
-  expect(lessonGuides.size).toBe(505);
-  expect(builtInCheatSheets.size).toBe(505);
-  expect(studyTopics).toHaveLength(505);
+  expect(lessons).toHaveLength(542);
+  expect(lessons.flatMap((v) => v.questions)).toHaveLength(6614);
+  expect(new Set(lessons.flatMap((v) => v.questions).map((v) => v.id)).size).toBe(6614);
+  expect(lessonGuides.size).toBe(507);
+  expect(builtInCheatSheets.size).toBe(507);
+  expect(studyTopics).toHaveLength(507);
   expect(studyTopics.slice(496, 500).map((v) => v.order)).toEqual([497, 498, 499, 500]);
   for (const expected of packs) {
     const lesson = lessonById(expected.pack.id)!;
@@ -111,8 +111,8 @@ it("keeps the old linear reading, worked example and recall positions when syste
 });
 
 it("keeps verified primary answers, TL units and own unscored examples distinct", () => {
-  expect(pastExamReferences).toHaveLength(32);
-  expect(Object.keys(examTeachingCases)).toHaveLength(32);
+  expect(pastExamReferences).toHaveLength(34);
+  expect(Object.keys(examTeachingCases)).toHaveLength(34);
   expect(hash(beforeSource010References(pastExamReferences))).toBe("17916955a5713fcd1c8bb8b9fba14616f4cb10773bc81960cb2a79c031f587ee");
   expect(hash(Object.fromEntries(beforeSource010Cases(examTeachingCases)))).toBe("c7348cbd185104271c16ba6f07a4831f39180b378bf363db45b7314dfc6bf9e6");
   const branching = pastExamReferencesForTopic("detail-206").find(({ id }) => id === "2024-TYT-MAT-3")!;

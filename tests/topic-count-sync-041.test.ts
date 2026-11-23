@@ -14,10 +14,14 @@ describe("041 lesson and plan topic counts", () => {
   it("gives every plan topic at least one lesson and equal totals", () => {
     expect(studyTopics.filter((t) => topicLessons(t.id).length === 0)).toEqual([]);
     expect(theory.length).toBe(studyTopics.length);
-    expect(studyTopics).toHaveLength(505);
+    expect(studyTopics).toHaveLength(507);
   });
   it("keeps the 479 workbook ids first and in order", () => {
     expect(studyTopics.slice(0, 479).every((t, i) => t.order === i + 1 && t.id.startsWith("detail-"))).toBe(true);
-    expect(studyTopics.at(-1)?.id).toBe("lesson:alan-donusumleri");
+    expect(studyTopics[504]?.id).toBe("lesson:alan-donusumleri");
+    expect(studyTopics.slice(505).map(({ id }) => id)).toEqual([
+      "topic-tyt-mat-permutasyon-kaynak-032",
+      "topic-tyt-mat-tekrarli-permutasyon-kaynak-033",
+    ]);
   });
 });

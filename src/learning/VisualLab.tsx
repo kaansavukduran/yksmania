@@ -1,3 +1,4 @@
+import { permutationId, repeatedPermutationId } from "../data/supplementalPermutationTopics032033";
 import { geometryExpansion032Ids } from "../data/supplementalTopics032";
 import { geometryCircle040Ids } from "./geometryCircle040";
 import { legacy026Packs, legacy026QuestionIds } from "./legacy026";
@@ -157,6 +158,8 @@ const QuarticRoots = lazy(() =>
   })),
 );
 const Forge014Math = lazy(() => import("./Forge014MathLab"));
+const SeparatedPermutationsSource032 = lazy(() => import("./SeparatedPermutationsSource032Lab").then((module) => ({ default: module.SeparatedPermutationsSource032Lab })));
+const WaypointPathsSource033 = lazy(() => import("./WaypointPathsSource033Lab").then((module) => ({ default: module.WaypointPathsSource033Lab })));
 const Forge014Physics = lazy(() => import("./Forge014PhysicsLab"));
 const Forge014Chemistry = lazy(() => import("./Forge014ChemistryLab"));
 const Forge014Biology = lazy(() => import("./Forge014BiologyLab"));
@@ -474,7 +477,11 @@ export function VisualLab({ id }: { id: string }) {
   return (
     <Suspense fallback={<p role="status">{t("loading")}</p>}>
       <>
-        {id === "tyt-mat-uslu-sayilar-kaynak-039" ? (
+        {id === permutationId ? (
+          <section className="forge014-math-lab"><SeparatedPermutationsSource032 key={id} /></section>
+        ) : id === repeatedPermutationId ? (
+          <section className="forge014-math-lab"><WaypointPathsSource033 key={id} /></section>
+        ) : id === "tyt-mat-uslu-sayilar-kaynak-039" ? (
           <PowersSource039 key={id} />
         ) : id === "tyt-mat-mutlak-deger-kaynak-038" ? (
           <AbsoluteValueSource038 key={id} />

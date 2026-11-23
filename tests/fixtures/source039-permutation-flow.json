@@ -1,0 +1,86 @@
+{
+  "tyt-mat-permutasyon-kaynak-032": [
+    {
+      "id": "tyt-mat-permutasyon-kaynak-032-uc-derece",
+      "prompt": "Sekiz farklı koşucunun yarışında eşitlik yok. Birinci, ikinci ve üçüncünün sıralı listesi kaç farklı biçimde oluşabilir?",
+      "correct": "336"
+    },
+    {
+      "id": "tyt-mat-permutasyon-kaynak-032-iki-kitap-blok",
+      "prompt": "Beş farklı kitap tek bir raftaki beş yere diziliyor. Fizik ve geometri kitapları bitişik olmak zorunda. Kaç geçerli diziliş vardır?",
+      "correct": "48"
+    },
+    {
+      "id": "tyt-mat-permutasyon-kaynak-032-uc-ozel-bosluk",
+      "prompt": "Sekiz farklı kişi bir sırada duruyor. A, B ve C’nin hiçbir ikisi komşu olmayacak. Kaç geçerli sıra vardır?",
+      "correct": "14.400"
+    },
+    {
+      "id": "tyt-mat-permutasyon-kaynak-032-cember-numarali",
+      "prompt": "Yedi farklı kişi 1–7 numaralı çember koltuklarına oturuyor. A ve B komşu olmasın. Kaç oturma planı vardır?",
+      "correct": "3360"
+    },
+    {
+      "id": "tyt-mat-permutasyon-kaynak-032-cift-sayi-ayrik-sonlar",
+      "prompt": "0, 1, 2, 4, 5 rakamlarıyla, hiçbir rakamı tekrarlamadan üç basamaklı kaç çift sayı yazılabilir?",
+      "correct": "30"
+    },
+    {
+      "id": "tyt-mat-permutasyon-kaynak-032-iki-sabit-sira",
+      "prompt": "Beş görev A, B, C, D, E birer kez yapılacak. A, B’den önce ve C, D, E bu sırada olmalı. Grupların üyeleri iç içe geçebilir. Kaç sıra vardır?",
+      "correct": "10"
+    },
+    {
+      "id": "tyt-mat-permutasyon-kaynak-032-zorunlu-bir-uye",
+      "prompt": "A, B, C, D adlı dört farklı kişi arasından başkan ve yardımcı belirlenecek. İki görevi ayrı kişiler alır ve A mutlaka bir görev alır. Kaç atama yapılabilir?",
+      "correct": "6"
+    },
+    {
+      "id": "tyt-mat-permutasyon-kaynak-032-yuva-denklemi",
+      "prompt": "Bir yarışmada birinci ve ikinci iki farklı kişi. Olası birinci ve ikinci sıralamalarının sayısı 42 ise kaç yarışmacı vardır?",
+      "correct": "7"
+    }
+  ],
+  "tyt-mat-tekrarli-permutasyon-kaynak-033": [
+    {
+      "id": "tyt-mat-tekrarli-permutasyon-kaynak-033-iki-ozdes-grup",
+      "prompt": "A, A, A, B, B, C harflerinin tamamıyla kaç farklı altı harfli dizi yazılabilir?",
+      "correct": "60"
+    },
+    {
+      "id": "tyt-mat-tekrarli-permutasyon-kaynak-033-bas-sifirli-diziler",
+      "prompt": "0, 0, 1, 3, 3 rakamlarının tamamı kullanılacak. Kaç farklı beş basamaklı doğal sayı yazılabilir?",
+      "correct": "18"
+    },
+    {
+      "id": "tyt-mat-tekrarli-permutasyon-kaynak-033-duraktan-kacin",
+      "prompt": "(0,0)’dan (5,3)’e birim adımlarla yalnız sağa ve yukarı gidiliyor. P=(2,2)’ye uğramayan kaç en kısa yol vardır?",
+      "correct": "32"
+    },
+    {
+      "id": "tyt-mat-tekrarli-permutasyon-kaynak-033-ozdes-ayri-bosluk",
+      "prompt": "A, A, B, B, C, D harflerinin hepsiyle diziler yapılıyor. İki A bitişik olmayacak. Kaç farklı dizi vardır?",
+      "correct": "120"
+    },
+    {
+      "id": "tyt-mat-tekrarli-permutasyon-kaynak-033-iki-parite-yasagi",
+      "prompt": "0, 0, 1, 1, 4, 6 rakamlarının tamamı kullanılarak kaç altı basamaklı çift sayı oluşturulabilir?",
+      "correct": "84"
+    },
+    {
+      "id": "tyt-mat-tekrarli-permutasyon-kaynak-033-izgara-disinda",
+      "prompt": "(0,0)’dan (5,2)’ye yalnız sağ ve yukarı adımlarla en kısa yollar izleniyor. P=(2,3)’ten geçmesi gereken yollar kaç tanedir?",
+      "correct": "0"
+    },
+    {
+      "id": "tyt-mat-tekrarli-permutasyon-kaynak-033-ilk-konumlar-kisitli",
+      "prompt": "A, A, A, A, B, B, B harflerinin hepsi kullanılıyor. İlk üç konumda tam iki A olursa kaç farklı dizi vardır?",
+      "correct": "18"
+    },
+    {
+      "id": "tyt-mat-tekrarli-permutasyon-kaynak-033-uc-yon-adim",
+      "prompt": "Engelsiz bir ızgarada hedefe varmak için 3 sağ, 1 yukarı ve 2 ileri birim adım gerekiyor. Geri adım yok. Kaç farklı en kısa rota vardır?",
+      "correct": "60"
+    }
+  ]
+}

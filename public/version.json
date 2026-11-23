@@ -1,8 +1,8 @@
 {
-  "version": "0.38.0",
+  "version": "0.39.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Kartezyen Çarpım ve Mantık derslerine iki etkileşimli model, 15 özgün soru, yeni çözümlü örnekler ve Kopya Kağıdı bölümleri eklendi. Yüzde ile Kâr Zarar dersleri yeni hesap adımlarıyla genişletildi.",
-    "en": "Cartesian products and logic add two interactive models, 15 original questions, worked examples, and cheat sheet sections. Percentages and profit and loss gain further calculation steps."
+    "tr": "Permütasyon ve Tekrarlı Permütasyon dersleri eklendi. Oturma biçimini ve özel kişi sayısını değiştir, seçilen duraktan geçen rotaları izle. İki konu özgün sorular ve ayrı Kopya Kağıtları içeriyor.",
+    "en": "Permutation and repeated permutation lessons add configurable seating and waypoint path diagrams, original questions, and separate cheat sheets."
   }
 }

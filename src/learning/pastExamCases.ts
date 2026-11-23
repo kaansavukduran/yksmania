@@ -1,3 +1,4 @@
+import { permutationTeachingCase032, repeatedPermutationTeachingCase033 } from "./permutationSources032033Official";
 import { source031TeachingCase } from "./logicSource031Official";
 import { source030TeachingCase } from "./cartesianSource030Official";
 import { source028TeachingCase } from "./factorizationSource028Official";
@@ -340,4 +341,6 @@ export const examTeachingCases: Record<string, ExamTeachingCase> = {
   "2018-TYT-MAT-13": source029TeachingCase,
   "2025-TYT-MAT-11": source031TeachingCase,
   "2022-AYT-MAT-12": source030TeachingCase,
+  "2025-TYT-MAT-29": permutationTeachingCase032,
+  "2018-TYT-MAT-28": repeatedPermutationTeachingCase033,
 };
