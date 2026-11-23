@@ -22,6 +22,8 @@ const laterReferences = new Set([
   "2026-TYT-MAT-22",
   "2026-TYT-MAT-24",
   "2018-TYT-MAT-14",
+  "2018-TYT-MAT-11",
+  "2018-TYT-MAT-13",
 ]);
 
 export function beforeCurrentQuestionAdditions<T extends { id: string }>(questions: readonly T[]) {

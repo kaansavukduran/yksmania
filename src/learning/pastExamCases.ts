@@ -1,3 +1,6 @@
+import { source028TeachingCase } from "./factorizationSource028Official";
+import { source029TeachingCase } from "./setsSource029Official";
+
 export interface ExamTeachingCase {
   prompt: string;
   steps: string[];
@@ -331,4 +334,6 @@ export const examTeachingCases: Record<string, ExamTeachingCase> = {
     pitfall:
       "Sıralamayı farklı yatay noktalarda okumak veya iki sınırda da eşitliği aynı şekilde ele almak.",
   },
+  "2018-TYT-MAT-11": source028TeachingCase,
+  "2018-TYT-MAT-13": source029TeachingCase,
 };

@@ -1,4 +1,6 @@
 import booklets from "../data/official-booklets.json";
+import { source028Reference } from "../learning/factorizationSource028Official";
+import { source029Reference } from "../learning/setsSource029Official";
 export const officialBooklets = booklets;
 export interface PastExamReference {
   id: string;
@@ -524,6 +526,8 @@ export const pastExamReferences: PastExamReference[] = [
       "Kesişimde sıkı başlangıç koşullarının hiçbiri sağlanmaz. Sağ ve sol aralıklardaki denetim yalnız I sonucunu verir. Resmî anahtar A. Soru PDF s. 25 (basılı s. 23), anahtar PDF s. 42.",
     ],
   },
+  source028Reference,
+  source029Reference,
 ];
 // Selected companion links leave all earlier source records and their topic lists intact.
 const sourceCompanionReferences: Record<string, readonly string[]> = {

@@ -6,6 +6,8 @@ import { workerProblemsSource024SheetText } from "./workerProblemsSource024Revis
 import { poolProblemsSource025SheetText } from "./poolProblemsSource025Revision";
 import { speedProblemsSource026SheetText } from "./speedProblemsSource026Revision";
 import { graphProblemsSource027SheetText } from "./graphProblemsSource027Revision";
+import { factorizationSource028SheetText } from "./factorizationSource028Revision";
+import { setsSource029SheetText } from "./setsSource029Revision";
 import { ageProblemsSource019SheetText } from "./ageProblemsSource019Revision";
 import { fractionProblemsSource018SheetText } from "./fractionProblemsSource018Revision";
 import { linearEquationsSource036Sheets } from "./linearEquationsSource036";
@@ -141,6 +143,8 @@ const revisedSectionTextByLesson = new Map([
   ["havuz-problemleri", poolProblemsSource025SheetText],
   ["hiz-problemleri", speedProblemsSource026SheetText],
   ["grafik-problemleri", graphProblemsSource027SheetText],
+  ["carpanlara-ayirma", factorizationSource028SheetText],
+  ["kumeler", setsSource029SheetText],
 ]);
 
 const completeSourceSheets = new Set([

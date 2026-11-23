@@ -1,6 +1,13 @@
 import { txt, type Lesson } from "../domain/model";
 import type { LessonGuide } from "./guides/types";
 import {
+  setsSource029Examples,
+  setsSource029Practice,
+  setsSource029Recall,
+  setsSource029Sections,
+  setsSource029Summary,
+} from "./setsSource029Revision";
+import {
   graphProblemsSource027Examples,
   graphProblemsSource027Practice,
   graphProblemsSource027Recall,
@@ -382,6 +389,7 @@ const packs: Pack[] = [
           "İki ayrı ölçüt tabloyla da gösterilebilir: gözlüklü/gözlüksüz ve iki grup gibi sınıflandırmalar dört ayrık hücre verir. Satır ve sütun toplamlarını aynı genel toplamla denetle. Bu ünitenin ana modeli iki kümedir; bir üçüncü küme eklenirse üçlü kesişimin ayrıca hesaba katılması gerekir, iki küme formülü körce çoğaltılamaz.",
         ],
       },
+      ...setsSource029Sections,
     ],
     examples: [
       {
@@ -486,6 +494,7 @@ const packs: Pack[] = [
         check: "Bütün listelerde a var, b yok.",
         pitfall: "Dört elemanı da serbest sayıp 16 yazmak.",
       },
+      ...setsSource029Examples,
     ],
     recall: [
       {
@@ -504,9 +513,9 @@ const packs: Pack[] = [
         prompt: "Tümleyen için hangi bilgi zorunlu?",
         answer: "Evrensel küme; A′ yalnız A’ya değil E’ye de bağlıdır.",
       },
+      ...setsSource029Recall,
     ],
-    source:
-      "MEBİ TYT Matematik Konu Özetleri PDF s. 66–70 (basılı s. 64–68); Aurelia 029 Kümeler, öğretim PDF s. 1–3,5–7. İki kümeli sayma, alt küme koşulları ve evrene bağlı tümleyenle özgün anlatım. Resmî soru değildir.",
+    source: setsSource029Summary,
     questions: [
       {
         prompt: "A={1,1,2,3} kümesinin eleman sayısı kaçtır?",
@@ -1234,6 +1243,7 @@ export const forge014MathLessons: Lesson[] = packs.map((p) => ({
       };
     }),
     ...(p.id === "grafik-problemleri" ? graphProblemsSource027Practice : []),
+    ...(p.id === "kumeler" ? setsSource029Practice : []),
   ],
   source: txt(p.source),
   tags: [p.topic, "Özgün öğretim soruları"],

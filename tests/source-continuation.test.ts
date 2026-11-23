@@ -83,6 +83,7 @@ it("teaches the next thirty headings with twenty-eight new deep lessons and two 
       expect(beforeSource031Questions(lesson.questions), topic.title).toHaveLength(10);
       if (["hiz-problemleri", "grafik-problemleri"].includes(lesson.id))
         expect(lesson.questions, topic.title).toHaveLength(16);
+      if (lesson.id === "kumeler") expect(lesson.questions, topic.title).toHaveLength(17);
     }
     const sheet = builtInCheatSheets.get(topic.id)!;
     expect(sheet.lessonId).toBe(lesson.id);

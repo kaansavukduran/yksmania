@@ -1,0 +1,180 @@
+{
+  "carpanlara-ayirma": [
+    {
+      "id": "c1",
+      "prompt": "6x + 9 ifadesinin ortak çarpanlı biçimi nedir?",
+      "selected": 0,
+      "correct": "3(2x+3)"
+    },
+    {
+      "id": "c2",
+      "prompt": "x(x−2)=0 denkleminde x’e bölmek hangi kökü kaybettirir?",
+      "selected": 0,
+      "correct": "0"
+    },
+    {
+      "id": "c3",
+      "prompt": "x²−25 nasıl çarpanlarına ayrılır?",
+      "selected": 1,
+      "correct": "(x−5)(x+5)"
+    },
+    {
+      "id": "c4",
+      "prompt": "(x−1)(x+3)=0 denkleminin kökleri nedir?",
+      "selected": 0,
+      "correct": "1 ve −3"
+    },
+    {
+      "id": "c5",
+      "prompt": "x²+6x+9 hangi ifadeye eşittir?",
+      "selected": 0,
+      "correct": "(x+3)²"
+    },
+    {
+      "id": "carpanlara-ayirma-028-gecici-negatif-koku-ele",
+      "prompt": "x⁴−x²−12=0 denkleminin gerçek çözüm kümesi nedir?",
+      "correct": "{−2, 2}",
+      "selected": 0
+    },
+    {
+      "id": "carpanlara-ayirma-028-iki-cift-koku-tani",
+      "prompt": "x⁴−8x²+16=0 denkleminin ayrı gerçek kökleri ve çoklukları nedir?",
+      "correct": "−2 ve 2, her birinin çokluğu 2",
+      "selected": 2
+    },
+    {
+      "id": "carpanlara-ayirma-028-toplam-carpim-iki-us",
+      "prompt": "Gerçek x ve y sayıları için x+y=6, xy=8. x²+y² ve x³+y³ sırasıyla kaçtır?",
+      "correct": "20 ve 72",
+      "selected": 3
+    },
+    {
+      "id": "carpanlara-ayirma-028-paydada-iki-yasak-deger",
+      "prompt": "(x³−27)/(x²−9) ifadesinin sade biçimi ve başlangıçtan gelen koşulu hangisidir?",
+      "correct": "(x²+3x+9)/(x+3), x≠−3 ve x≠3",
+      "selected": 1
+    },
+    {
+      "id": "carpanlara-ayirma-028-dogrusal-gecici-degisken",
+      "prompt": "(t+2)²−2(t+2)−3=0 denkleminin gerçek çözümleri hangisidir?",
+      "correct": "{−3, 1}",
+      "selected": 2
+    },
+    {
+      "id": "carpanlara-ayirma-028-iki-kose-kare-alani",
+      "prompt": "Bir karenin kenarı 9 cm. Üst ve sol kenarda aynı köşeden 4 cm işaretlenip bu işaretlerden karşı kenarlara paralel çizgiler çiziliyor. Oluşan dört bölgeden kare olan ikisinin alanları toplamı kaç cm²’dir?",
+      "correct": "41",
+      "selected": 4
+    },
+    {
+      "id": "carpanlara-ayirma-028-kup-toplaminin-ara-terimleri",
+      "prompt": "x³+125 için ilk çarpan x+5. Çarpım geri açıldığında yalnız x³ ve 125’in kalması için ikinci çarpan ne olmalı?",
+      "correct": "x²−5x+25",
+      "selected": 2
+    }
+  ],
+  "kumeler": [
+    {
+      "id": "kumeler-014-1",
+      "prompt": "A={1,1,2,3} kümesinin eleman sayısı kaçtır?",
+      "correct": "3",
+      "selected": 0
+    },
+    {
+      "id": "kumeler-014-2",
+      "prompt": "A={∅,{1}} kümesinin eleman sayısı kaçtır?",
+      "correct": "2",
+      "selected": 1
+    },
+    {
+      "id": "kumeler-014-3",
+      "prompt": "Beş farklı elemanlı bir kümenin kendisi dışındaki alt kümelerine öz alt küme deniyor. Bu kümenin kaç öz alt kümesi vardır?",
+      "correct": "31",
+      "selected": 2
+    },
+    {
+      "id": "kumeler-014-4",
+      "prompt": "A={a,b,c,d} kümesinin alt kümelerinde a mutlaka bulunsun, b hiç bulunmasın. Kaç farklı alt küme vardır?",
+      "correct": "4",
+      "selected": 3
+    },
+    {
+      "id": "kumeler-014-5",
+      "prompt": "Sonlu A ve B kümeleri için s(A)=18,s(B)=16,s(A∩B)=7 veriliyor. s(A∪B) kaçtır?",
+      "correct": "27",
+      "selected": 4
+    },
+    {
+      "id": "kumeler-014-6",
+      "prompt": "40 kişilik E grubunda A etkinliğine katılan 22, B’ye katılan 19, her ikisine katılan 8 kişi vardır. İki etkinliğe de katılmayan kaç kişi vardır?",
+      "correct": "7",
+      "selected": 0
+    },
+    {
+      "id": "kumeler-014-7",
+      "prompt": "E={1,2,3,4,5,6,7,8}, A={1,2,3,4}, B={3,4,5} olsun. E’ye göre (A∪B)′ hangi kümedir?",
+      "correct": "{6,7,8}",
+      "selected": 1
+    },
+    {
+      "id": "kumeler-014-8",
+      "prompt": "A={1,2,3} ve B={3,4} için A∖B hangi kümedir?",
+      "correct": "{1,2}",
+      "selected": 2
+    },
+    {
+      "id": "kumeler-014-9",
+      "prompt": "30 kişilik bir grupta A ve B etkinliklerinden hiçbirine katılmayan 5, her ikisine katılan 6 kişi vardır. Bu iki etkinlikten tam birine katılan kaç kişi vardır?",
+      "correct": "19",
+      "selected": 3
+    },
+    {
+      "id": "kumeler-014-10",
+      "prompt": "A={1,2}, B={a,b}; a ve b birbirinden ve 1,2 sayılarından farklı sembollerdir. Bu iki küme için hangi ifade doğrudur?",
+      "correct": "Eleman sayıları eşittir; kümeler eşit değildir.",
+      "selected": 4
+    },
+    {
+      "id": "kumeler-029-uc-grupta-yalniz-ikili",
+      "prompt": "Bir okulda A∩B’de 11, A∩C’de 9, B∩C’de 8 öğrenci var. 4 öğrenci üçünde birden. Tam iki gruba katılan kaç öğrenci var?",
+      "correct": "16",
+      "selected": 3
+    },
+    {
+      "id": "kumeler-029-yalniz-ikililer-verildiginde",
+      "prompt": "Evrendeki 42 kişinin 18’i A’da, 15’i B’de, 14’ü C’dedir. Yalnız A ve B’de 4, yalnız A ve C’de 3, yalnız B ve C’de 2, üçünde birden 2 kişi vardır. Hiçbir gruba katılmayan kaç kişi var?",
+      "correct": "8",
+      "selected": 0
+    },
+    {
+      "id": "kumeler-029-yalniz-ve-hicbiri",
+      "prompt": "48 kişiden 27’si müzik, 22’si tiyatro etkinliğine katılıyor. 11 kişi iki etkinliğe de katılıyor. Yalnız bir etkinliğe katılan ve hiçbirine katılmayan kişi sayıları sırasıyla kaçtır?",
+      "correct": "27 ve 10",
+      "selected": 4
+    },
+    {
+      "id": "kumeler-029-uc-sabit-karar",
+      "prompt": "Yedi farklı elemanı olan E kümesinin alt kümelerinde a ve b bulunmalı, üçüncü bir eleman olan c bulunmamalıdır. Bu koşulları sağlayan kaç öz alt küme vardır?",
+      "correct": "16",
+      "selected": 2
+    },
+    {
+      "id": "kumeler-029-kesisimin-tumleyeni",
+      "prompt": "E={1,2,3,4,5,6,7}, A={1,2,5,7} ve B={2,4,5} olduğuna göre (A∩B)′ nedir?",
+      "correct": "{1,3,4,6,7}",
+      "selected": 1
+    },
+    {
+      "id": "kumeler-029-kisi-ve-kayit-sayisi",
+      "prompt": "Bir kulüpte her üye seramik, tiyatro veya her ikisini seçmiştir. Toplam 21 farklı üye var. 6 üye iki etkinliği de seçmiş. Kulüp her seçilen etkinlik için bir kayıt açıyor. Kaç kayıt açılır?",
+      "correct": "27",
+      "selected": 2
+    },
+    {
+      "id": "kumeler-029-iki-kosul-ve-ayri-filtre",
+      "prompt": "E={1,2,3,4,5,6,7,8}, A={2,4,6,8} ve B={3,6} olsun. Önce A ile B’nin yalnız birine ait elemanları seç, sonra yalnız 3’ten büyük olanları tut. Hangi küme kalır?",
+      "correct": "{4,8}",
+      "selected": 0
+    }
+  ]
+}

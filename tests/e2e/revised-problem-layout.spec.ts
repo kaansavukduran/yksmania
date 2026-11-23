@@ -17,6 +17,8 @@ const models = [
   { lesson: "havuz-problemleri", model: "source025-equal-level" },
   { lesson: "hiz-problemleri", model: "source026-shared-speed" },
   { lesson: "grafik-problemleri", model: "source027-piecewise-rate" },
+  { lesson: "carpanlara-ayirma", model: "source028-quartic-roots" },
+  { lesson: "kumeler", model: "source029-three-set-count" },
 ];
 
 for (const width of [320, 375, 1280]) {

@@ -1,7 +1,8 @@
 {
-  "version": "0.36.0",
+  "version": "0.37.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Hız Problemleri’nde iki günün süre koşullarını aynı anda karşılayan süratleri bul. Grafik Problemleri’nde iki parçanın süresini ve hacmini değiştirip bütün aralığın ortalama değişim hızını hesapla. İki konuya 12 özgün soru eklendi."
+    "tr": "Çarpanlara Ayırma ve Kümeler derslerine kök çokluğu ile üç kümeli sayımı gösteren iki model, 14 açıklamalı soru ve yeni Kopya Kağıdı bölümleri eklendi. Mevcut yarım çalışmalar kendi soru sayısıyla devam ediyor.",
+    "en": "Factoring and sets add two interactive models for root multiplicity and three-set counts, 14 questions with explanations, and expanded cheat sheets. Unfinished practice keeps its original question count."
   }
 }

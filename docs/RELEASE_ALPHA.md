@@ -1,3 +1,11 @@
+# YKSMania 0.37.0 · Çarpanlara Ayırma ve Kümeler
+
+Yayın adayı. Çarpanlara Ayırma’da iki geçici kökü değiştir ve asıl denklemde kaç farklı gerçek kök oluştuğunu izle. Kümeler’de iki ve üç grupta ortak olanların sayılarını değiştir. Venn şeması her bölgedeki kişi sayısını aynı hesapla gösterir.
+
+Konu anlatımları ve Kopya Kağıtları genişledi. İki konuya 14 özgün soru eklendi. Önceki 5 ve 10 soruluk yarım oturumlar kendi uzunluğuyla devam eder. [İlerleme tablosu](ILERLEME.md)
+
+---
+
 # YKSMania 0.36.0 · Hız ve Grafik Problemleri
 
 Yayın adayı. Hız Problemleri’nde iki günün yolunu ve süre sınırlarını değiştirerek ortak sürat aralığını bul. Grafik Problemleri’nde bir tankın ölçüm değerlerini ve süreleri değiştirip parça eğimlerini ve bütün aralığın ortalama değişim hızını karşılaştır.

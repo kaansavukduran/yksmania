@@ -1,6 +1,12 @@
+import {
+  factorizationSource028Examples,
+  factorizationSource028Recall,
+  factorizationSource028Sections,
+  factorizationSource028Summary,
+} from "../factorizationSource028Revision";
 import type { LessonGuide } from "./types";
 
-export const factorizationGuide: LessonGuide = {
+export const factorizationGuideCore: LessonGuide = {
   id: "carpanlara-ayirma",
   minutes: 65,
   objectives: [
@@ -347,4 +353,19 @@ export const factorizationGuide: LessonGuide = {
   ],
   source:
     "MEBİ TYT Matematik Konu Özetleri PDF s.98–102 (ortak çarpan, gruplama, kare/küp özdeşlikleri, üç terim, değişken değiştirme), s.103 rasyonel ifadeler ve s.105 çarpanlarla denklem çözümü; OGM 10. Sınıf Çarpanlara Ayırma Yöntemleri sunusu PDF s.2–9 ve OGM Video Ders Notu Çarpanlara Ayırma–Polinomlar dosyasının ortak çarpan, gruplama, özdeşlik, ikinci derece ve değişken değiştirme metinleriyle karşılaştırılan özgün anlatım. Model ve bütün çözümlü örnekler uygulama için yazılmıştır; resmî sınav sorusu değildir.",
+};
+
+export const factorizationGuide: LessonGuide = {
+  ...factorizationGuideCore,
+  sections: [
+    ...factorizationGuideCore.sections,
+    ...factorizationSource028Sections,
+  ],
+  examples: [
+    ...factorizationGuideCore.examples,
+    ...factorizationSource028Examples,
+  ],
+  recall: [...factorizationGuideCore.recall, ...factorizationSource028Recall],
+  source:
+    factorizationSource028Summary + "\n\n" + factorizationGuideCore.source,
 };

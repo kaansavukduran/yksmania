@@ -151,6 +151,11 @@ const Algebra = lazy(() => import("./AlgebraExplorer"));
 const Shells = lazy(() => import("./ElectronShellExplorer"));
 const Language = lazy(() => import("./TurkishLanguageExplorer"));
 const Factorization = lazy(() => import("./FactorizationExplorer"));
+const QuarticRoots = lazy(() =>
+  import("./QuarticRootsSource028Lab").then((module) => ({
+    default: module.QuarticRootsSource028Lab,
+  })),
+);
 const Forge014Math = lazy(() => import("./Forge014MathLab"));
 const Forge014Physics = lazy(() => import("./Forge014PhysicsLab"));
 const Forge014Chemistry = lazy(() => import("./Forge014ChemistryLab"));
@@ -539,7 +544,10 @@ export function VisualLab({ id }: { id: string }) {
         ) : id === "ses-bilgisi" || id === "sozcukte-yapi" ? (
           <Language structure={id === "sozcukte-yapi"} />
         ) : id === "carpanlara-ayirma" ? (
-          <Factorization />
+          <>
+            <Factorization />
+            <QuarticRoots />
+          </>
         ) : id === "katman-elektron-dizilimi" ? (
           <Shells />
         ) : id === "birinci-dereceden-denklemler" ||

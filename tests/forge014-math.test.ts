@@ -37,7 +37,8 @@ it("adds exactly four new source headings with complete independent teaching", (
       guide.examples.every((e) => e.steps.length >= 3 && e.check && e.pitfall),
     ).toBe(true);
     expect(guide.recall.length).toBeGreaterThanOrEqual(4);
-    expect(lesson.questions).toHaveLength(lesson.id === "grafik-problemleri" ? 16 : 10);
+    const expandedPracticeSizes = new Map([["grafik-problemleri", 16], ["kumeler", 17]]);
+    expect(lesson.questions).toHaveLength(expandedPracticeSizes.get(lesson.id) ?? 10);
     for (const q of lesson.questions) {
       expect(q.options).toHaveLength(5);
       expect(new Set(q.options.map((o) => o.tr)).size).toBe(5);

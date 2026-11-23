@@ -3,6 +3,8 @@ import type { Draft } from "./model";
 // Earlier builds stored the current question but did not store the set length.
 // Revised lessons keep the original questions in order before the new ones.
 const legacyPracticeSizes = new Map([
+  ["carpanlara-ayirma", 5],
+  ["kumeler", 10],
   ["bilimsel-gosterim-katsayi", 10],
   ["kesir-problemleri", 10],
   ["yas-problemleri", 10],

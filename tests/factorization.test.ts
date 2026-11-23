@@ -67,7 +67,7 @@ describe("factorization model preserves polynomial values and signed terms", () 
   });
   it("keeps a substantial explanation, reasoned examples and domain limits in the teaching guide", () => {
     expect(factorizationGuide.sections.length).toBeGreaterThanOrEqual(12);
-    expect(factorizationGuide.examples).toHaveLength(10);
+    expect(factorizationGuide.examples).toHaveLength(12);
     expect(
       factorizationGuide.sections.map((s) => s.paragraphs.join(" ")).join(" "),
     ).toContain("x≠3");

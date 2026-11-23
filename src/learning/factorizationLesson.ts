@@ -1,5 +1,5 @@
 import { txt as t, type Lesson, type Question } from "../domain/model";
-import { factorizationGuide } from "./guides/factorization";
+import { factorizationGuideCore } from "./guides/factorization";
 const question = (
   id: string,
   prompt: string,
@@ -114,11 +114,11 @@ export const factorizationLesson: Lesson = {
   id: "carpanlara-ayirma-ileri",
   subjectId: "tyt-matematik",
   title: t("Çarpanlara ayırma: ileri alıştırmalar"),
-  minutes: factorizationGuide.minutes,
+  minutes: factorizationGuideCore.minutes,
   tags: ["carpanlara-ayirma", "kaynakli-anlatim", "soru-seti"],
-  source: t(factorizationGuide.source),
-  objectives: factorizationGuide.objectives.map(t),
-  body: factorizationGuide.sections.map((section) => ({
+  source: t(factorizationGuideCore.source),
+  objectives: factorizationGuideCore.objectives.map(t),
+  body: factorizationGuideCore.sections.map((section) => ({
     title: t(section.title),
     text: t(section.paragraphs.join("\n\n")),
   })),

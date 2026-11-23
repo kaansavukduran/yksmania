@@ -1,3 +1,4 @@
+import { factorizationSource028Practice } from "../learning/factorizationSource028Revision";
 import { linearEquationsSource036Lessons } from "../learning/linearEquationsSource036";
 import { basicInequalitiesSource037Lessons } from "../learning/basicInequalitiesSource037";
 import { absoluteValueSource012Lessons } from "../learning/absoluteValueSource012Revision";
@@ -604,6 +605,7 @@ const baseLessons: Lesson[] = [
         "(x+3)²=x²+6x+9.",
         "perfect-square",
       ),
+      ...factorizationSource028Practice,
     ],
   },
   {

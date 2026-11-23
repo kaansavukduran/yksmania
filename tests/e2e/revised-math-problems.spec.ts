@@ -4,6 +4,7 @@ import percentAndProfitFlow from "../fixtures/source033-math-question-flow.json"
 import interestAndMixtureFlow from "../fixtures/source034-math-question-flow.json" with { type: "json" };
 import workerAndPoolFlow from "../fixtures/source035-math-question-flow.json" with { type: "json" };
 import speedAndGraphFlow from "../fixtures/source036-math-question-flow.json" with { type: "json" };
+import factorizationAndSetsFlow from "../fixtures/source037-math-question-flow.json" with { type: "json" };
 import { typeset } from "../../src/domain/typeset";
 import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
 import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse";
@@ -11,7 +12,7 @@ import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse"
 registerOfflineBootDiagnostics();
 test.use({ locale: "tr-TR", timezoneId: "Europe/Istanbul" });
 
-const flow = { ...fractionAndAgeFlow, ...percentAndProfitFlow, ...interestAndMixtureFlow, ...workerAndPoolFlow, ...speedAndGraphFlow };
+const flow = { ...fractionAndAgeFlow, ...percentAndProfitFlow, ...interestAndMixtureFlow, ...workerAndPoolFlow, ...speedAndGraphFlow, ...factorizationAndSetsFlow };
 const courses = [
   {
     lesson: "kesir-problemleri",
@@ -120,9 +121,33 @@ const courses = [
     count: 16,
     official: [{ year: 2018, question: 14, page: 25, keyUrl: "https://dokuman.osym.gov.tr/pdfdokuman/2018/YKS/TYT_01072018.pdf#page=42", answer: "A", example: "3<x≤4 kg." }],
   },
+  {
+    lesson: "carpanlara-ayirma",
+    search: "Çarpanlara ayırma",
+    topic: "detail-221",
+    model: "source028-quartic-roots",
+    exploration: "quartic-roots-source-028",
+    sheet: "Geçici kökün gerçek x karşılığını bul",
+    count: 12,
+    legacyCount: 5,
+    oldOptionCount: 3,
+    official: [{ year: 2018, question: 11, page: 24, keyUrl: "https://dokuman.osym.gov.tr/pdfdokuman/2018/YKS/TYT_01072018.pdf#page=42", answer: "B", example: "58 dm²." }],
+  },
+  {
+    lesson: "kumeler",
+    search: "Kümeler",
+    topic: "detail-222",
+    model: "source029-three-set-count",
+    exploration: "three-set-count-source-029",
+    sheet: "Üç grupta önce ortak üçlüyü yerleştir",
+    count: 17,
+    official: [{ year: 2018, question: 13, page: 25, keyUrl: "https://dokuman.osym.gov.tr/pdfdokuman/2018/YKS/TYT_01072018.pdf#page=42", answer: "C", example: "3 kart." }],
+  },
 ] as const;
 
 for (const course of courses) {
+  const legacyCount = "legacyCount" in course ? course.legacyCount : 10;
+
   test(`${course.lesson}: exact models and notes persist offline at 320px without learning credit`, async ({ page, context }, info) => {
     await prepare(page, true);
     await page.setViewportSize({ width: 320, height: 844 });
@@ -283,7 +308,7 @@ for (const course of courses) {
       await distance.press("ArrowLeft");
       await expect(distance).toHaveAttribute("aria-valuetext", "83 km");
       await expect(result).toContainText("tam sayı süratler 12 ile 13 km/sa arasında");
-    } else {
+    } else if (course.lesson === "grafik-problemleri") {
       await expect(result).toContainText("7 saatin ortalama hızı 9/7 L/sa.");
       await expect(result).toContainText("İki hızın basit ortalaması 2 L/sa.");
       const duration = panel.getByRole("slider", { name: "İkinci parçanın süresi", exact: true });
@@ -295,6 +320,29 @@ for (const course of courses) {
       await panel.getByText("Hacim ölçümlerini değiştir", { exact: true }).click();
       await panel.getByRole("slider", { name: "Son hacim", exact: true }).press("End");
       await expect(result).toContainText("6 saatin ortalama hızı 16/3 L/sa.");
+    } else if (course.lesson === "carpanlara-ayirma") {
+      await expect(result).toContainText("Gerçek kökler −2, −1, 1, 2.");
+      const firstRoot = panel.getByRole("slider", { name: "İlk u kökü", exact: true });
+      await firstRoot.press("Home");
+      await expect(result).toContainText("Gerçek kökler −2, 2.");
+      expect(await graph.innerHTML()).not.toBe(original);
+      for (let step = 0; step < 5; step += 1) await firstRoot.press("ArrowRight");
+      await expect(result).toContainText("x = 0. Çokluk 2.");
+      await panel.getByRole("button", { name: "Eksen çevresine yaklaş", exact: true }).click();
+      await expect(panel.getByRole("button", { name: "Eksen çevresine yaklaş", exact: true })).toHaveAttribute("aria-pressed", "true");
+    } else {
+      await expect(result).toContainText("Birleşim 41 kişi.");
+      const includeThree = panel.getByRole("checkbox", { name: "İkili sayılara üç grupta bulunanlar da girsin" });
+      await includeThree.uncheck();
+      await expect(result).toContainText("Birleşim 32 kişi.");
+      expect(await graph.innerHTML()).not.toBe(original);
+      const three = panel.getByRole("slider", { name: "Üç grupta birden", exact: true });
+      await three.press("End");
+      await expect(result).toContainText("Bu sayılar aynı grupları tanımlayamıyor.");
+      await expect(graph).toHaveCount(0);
+      await panel.getByRole("button", { name: "Örneğe dön", exact: true }).click();
+      await three.press("ArrowLeft");
+      await expect(result).toContainText("Birleşim 40 kişi.");
     }
     const note = "Şekildeki sonucu başlangıç koşuluyla denetledim.";
     const notes = page.locator(".study-notes").getByRole("textbox", { name: "Notun", exact: true });
@@ -331,12 +379,13 @@ for (const course of courses) {
       await expect(page.locator(".question-meta > span").first()).toHaveText(`Soru ${index + 1} / ${course.count}`);
       await expect(page.locator(".question-panel h2")).toHaveText(typeset(card.prompt));
       const options = page.locator(".answer-options .answer");
-      await expect(options).toHaveCount(5);
+      const optionCount = "oldOptionCount" in course && index < legacyCount ? course.oldOptionCount : 5;
+      await expect(options).toHaveCount(optionCount);
       await options.filter({ has: page.getByText(typeset(card.correct), { exact: true }) }).click();
       await page.getByRole("button", { name: "Cevabı kontrol et", exact: true }).click();
       await expect(page.locator(".feedback.correct")).toBeVisible();
-      if (index === 9) {
-        await expect.poll(async () => (await storage(page)).draft?.responses.length).toBe(10);
+      if (index + 1 === legacyCount) {
+        await expect.poll(async () => (await storage(page)).draft?.responses.length).toBe(legacyCount);
         await page.reload();
         await expect(page.locator(".feedback.correct")).toBeVisible();
         expect((await storage(page)).sessions).toEqual(before.sessions);
@@ -387,15 +436,15 @@ for (const course of courses) {
     expect(learning(await storage(page))).toEqual(learning(saved));
   });
 
-  test(`${course.lesson}: restoration keeps the old tenth card, note and prior responses`, async ({ page, context }) => {
-    const oldCards = flow[course.lesson].slice(0, 10);
+  test(`${course.lesson}: restoration keeps the old final card, note and prior responses`, async ({ page, context }) => {
+    const oldCards = flow[course.lesson].slice(0, legacyCount);
     await prepare(page);
     const before = await storage(page);
     const draft = {
       lessonId: course.lesson,
       phase: "practice",
-      index: 9,
-      responses: oldCards.slice(0, 9).map((card) => ({
+      index: legacyCount - 1,
+      responses: oldCards.slice(0, legacyCount - 1).map((card) => ({
         questionId: card.id, selected: card.selected, correct: true,
         assisted: false, confidence: "medium",
       })),
@@ -415,8 +464,8 @@ for (const course of courses) {
     await expect(page.locator(".toast")).toHaveText("Yedek geri yüklendi.");
     await openCourse(page, course);
     await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
-    await expect(page.locator(".question-meta")).toContainText("10 / 10");
-    const last = oldCards[9];
+    await expect(page.locator(".question-meta")).toContainText(`${legacyCount} / ${legacyCount}`);
+    const last = oldCards[legacyCount - 1];
     await expect(page.locator(".question-panel h2")).toHaveText(typeset(last.prompt));
     expect((await storage(page)).draft).toEqual(draft);
     await page.locator(".answer-options .answer").filter({ has: page.getByText(typeset(last.correct), { exact: true }) }).click();
@@ -424,10 +473,11 @@ for (const course of courses) {
     await expect(page.locator(".feedback.correct")).toBeVisible();
     await expect(page.getByRole("button", { name: "Sonraki soru", exact: true })).toHaveCount(0);
     await page.getByRole("button", { name: "Çalışmayı kaydet", exact: true }).click();
-    await expect(page.locator(".result-stats > div strong")).toHaveText(["10/10", "10/10", "0"]);
+    const completed = `${legacyCount}/${legacyCount}`;
+    await expect(page.locator(".result-stats > div strong")).toHaveText([completed, completed, "0"]);
     const finished = (await storage(page)).sessions.at(-1)!;
     expect(finished.note).toBe(draft.note);
-    expect(finished.responses.slice(0, 9)).toEqual(draft.responses);
+    expect(finished.responses.slice(0, legacyCount - 1)).toEqual(draft.responses);
     expect(finished.responses.at(-1)?.questionId).toBe(last.id);
   });
 }

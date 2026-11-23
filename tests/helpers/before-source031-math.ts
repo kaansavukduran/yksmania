@@ -89,6 +89,17 @@ const revisions = [
     ].map((id) => `grafik-problemleri-027-${id}`),
     oldSource: "MEBİ TYT Matematik Konu Özetleri PDF s. 109–112 (basılı s. 107–110); Aurelia 027 Grafik Problemleri ve 037 Veri Analizi (İstatistik), öğretim PDF s. 1–3,5–7. Özgün veri ve çözümler; eksen, ara değer, iki seri, frekans ve ağırlıklı ortalama koşulları korunur. Resmî sınav sorusu değildir.",
   },
+  {
+    lesson: "carpanlara-ayirma", topic: "detail-221", sections: 13, examples: 10, recall: 5,
+    appendedQuestions: ["gecici-negatif-koku-ele", "iki-cift-koku-tani", "toplam-carpim-iki-us", "paydada-iki-yasak-deger", "dogrusal-gecici-degisken", "iki-kose-kare-alani", "kup-toplaminin-ara-terimleri"].map((id) => `carpanlara-ayirma-028-${id}`),
+    oldSource: "MEBİ TYT Matematik Konu Özetleri PDF s.98–102 (ortak çarpan, gruplama, kare/küp özdeşlikleri, üç terim, değişken değiştirme), s.103 rasyonel ifadeler ve s.105 çarpanlarla denklem çözümü; OGM 10. Sınıf Çarpanlara Ayırma Yöntemleri sunusu PDF s.2–9 ve OGM Video Ders Notu Çarpanlara Ayırma–Polinomlar dosyasının ortak çarpan, gruplama, özdeşlik, ikinci derece ve değişken değiştirme metinleriyle karşılaştırılan özgün anlatım. Model ve bütün çözümlü örnekler uygulama için yazılmıştır; resmî sınav sorusu değildir.",
+    oldLessonSource: "OGM matematik kavramlarıyla uyumlu özgün örnek ve sorular.",
+  },
+  {
+    lesson: "kumeler", topic: "detail-222", sections: 8, examples: 4, recall: 4,
+    appendedQuestions: ["uc-grupta-yalniz-ikili", "yalniz-ikililer-verildiginde", "yalniz-ve-hicbiri", "uc-sabit-karar", "kesisimin-tumleyeni", "kisi-ve-kayit-sayisi", "iki-kosul-ve-ayri-filtre"].map((id) => `kumeler-029-${id}`),
+    oldSource: "MEBİ TYT Matematik Konu Özetleri PDF s. 66–70 (basılı s. 64–68); Aurelia 029 Kümeler, öğretim PDF s. 1–3,5–7. İki kümeli sayma, alt küme koşulları ve evrene bağlı tümleyenle özgün anlatım. Resmî soru değildir.",
+  },
 ];
 
 const additions = new Set(revisions.flatMap(({ appendedQuestions }) => appendedQuestions));
@@ -143,7 +154,7 @@ export function beforeSource031Teaching(
   if (!prior || !value) return value;
   if (surface === "lessons") {
     const lesson = value as Lesson;
-    return { ...lesson, body: lesson.body.slice(0, prior.sections), questions: beforeSource031Questions(lesson.questions), source: txt(prior.oldSource) };
+    return { ...lesson, body: lesson.body.slice(0, prior.sections), questions: beforeSource031Questions(lesson.questions), source: txt(prior.oldLessonSource ?? prior.oldSource) };
   }
   if (surface === "guides") {
     const guide = value as LessonGuide;

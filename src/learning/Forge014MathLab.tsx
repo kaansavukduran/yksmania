@@ -13,6 +13,7 @@ import {
   type Predicate,
 } from "./forge014Math";
 import { useExploration } from "./useExploration";
+import { ThreeSetCountSource029Lab } from "./ThreeSetCountSource029Lab";
 import { PiecewiseRateSource027Lab } from "./PiecewiseRateSource027Lab";
 import "./forge014Math.css";
 import { ChoiceSelect } from "../components/ChoiceSelect";
@@ -1272,7 +1273,10 @@ export default function Forge014MathLab({ lessonId }: { lessonId: string }) {
           <PiecewiseRateSource027Lab />
         </>
       ) : lessonId === "kumeler" ? (
-        <Sets />
+        <>
+          <Sets />
+          <ThreeSetCountSource029Lab />
+        </>
       ) : lessonId === "kartezyen-carpim" ? (
         <Product />
       ) : (
