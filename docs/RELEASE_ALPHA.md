@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.67.0 · Farklı ısı sığaları
+
+Yayın adayı. Aynı enerji alışverişinin iki sıcaklığı ne kadar değiştirdiğini karşılaştır. Denge sıcaklığına ait çizim ilgili çözüm adımında yer alır.
+
 # ÖSYM Mania 0.66.0 · Isıtma eğrisi
 
 Yayın adayı. Buzdan buhara geçişin beş basamağını seç. Kütleyi değiştirerek erime ve kaynama aralığındaki gerçek ısıyı oku. Ayrı Kopya Kağıdı’nda aynı grafik ve çözümlü örnek yer alır.

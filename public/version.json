@@ -1,7 +1,7 @@
 {
-  "version": "0.66.0",
+  "version": "0.67.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Isıtma eğrisinde beş basamağı adım adım izle. Kütleyi değiştirip erime ve kaynama için gereken ısıyı hesapla."
+    "tr": "Isı sığaları farklı iki cismin denge sıcaklığını hesapla. Sıcaklık doğrusu, orta noktadan neden ayrıldığını gösterir."
   }
 }

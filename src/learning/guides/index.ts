@@ -1,3 +1,4 @@
+import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
 import { equalHeatExample, equalHeatSection, specificHeatSection } from "../specificHeat065";
 import { exactTemperatureExample, exactTemperatureSection } from "../exactTemperature064";
@@ -339,9 +340,22 @@ export function studyGuide(lessonId: string) {
   if (guide?.id === "isi-ve-sicaklik") {
     return {
       ...guide,
-      sections: [...guide.sections, thermalTransferSection, exactTemperatureSection, specificHeatSection, equalHeatSection],
-      examples: [...guide.examples, thermalTransferExample, exactTemperatureExample, equalHeatExample],
-      source: `${guide.source} Isı aktarımının yönü ve yalıtılmış iki cismin denge çizimi MEBİ TYT Fizik Konu Özetleri fiziksel 61 ve 72, basılı 59 ve 70. sayfalarla karşılaştırıldı. Sıcaklıklar ve ısı sığaları özgün hesap değerleridir. Üç sıcaklık ölçeği fiziksel 64, basılı 62. sayfadaki eş referanslarla karşılaştırıldı. Öz ısı tablosu ve eşit enerjiyle ısınma fiziksel 65–66, basılı 63–64. sayfalardaki öğretim örneklerine dayanır.`,
+      sections: [
+        ...guide.sections.map((section) => section.title === balanceTheoryTitle
+          ? {
+              ...section,
+              figureTitle: balanceTheoryTitle,
+              table: weightedBalanceTable,
+              paragraphs: [
+                ...section.paragraphs,
+                "Çizim eş maddeli iki su örneğini gösterir. Tabloda ise X ve Y’nin hem kütleleri hem öz ısıları farklı. Bu ikinci örneği aşağıdaki çözümde adım adım incele.",
+              ],
+            }
+          : section),
+        thermalTransferSection, exactTemperatureSection, specificHeatSection, equalHeatSection,
+      ],
+      examples: [...guide.examples, thermalTransferExample, exactTemperatureExample, equalHeatExample, weightedBalanceExample],
+      source: `${guide.source} Isı aktarımının yönü ve yalıtılmış iki cismin denge çizimi MEBİ TYT Fizik Konu Özetleri fiziksel 61 ve 72, basılı 59 ve 70. sayfalarla karşılaştırıldı. Sıcaklıklar ve ısı sığaları özgün hesap değerleridir. Üç sıcaklık ölçeği fiziksel 64, basılı 62. sayfadaki eş referanslarla karşılaştırıldı. Öz ısı tablosu ve eşit enerjiyle ısınma fiziksel 65–66, basılı 63–64. sayfalardaki öğretim örneklerine dayanır. Farklı ısı sığaları ve orta nokta karşılaştırması fiziksel 73, basılı 71. sayfadaki şemadan uyarlandı.`,
     };
   }
   if (guide?.id !== "enerji-ve-hareket") return guide;

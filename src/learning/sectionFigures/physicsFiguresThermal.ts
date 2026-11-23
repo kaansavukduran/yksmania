@@ -1,3 +1,5 @@
+import { weightedBalanceTitle } from "../weightedThermalBalance067";
+import { weightedBalanceFigure } from "./weightedThermalBalanceFigure067";
 import { heatingCurveTitle } from "../heatingCurve066";
 import { heatingCurveFigure } from "./heatingCurveFigure066";
 import { equalHeatTitle, specificHeatTitle } from "../specificHeat065";
@@ -62,6 +64,7 @@ const LF = 334;
 
 const isi: Record<string, FigureDef> = {
   [thermalTransferTitle]: thermalTransferFigure,
+  [weightedBalanceTitle]: weightedBalanceFigure,
   [exactTemperatureTitle]: exactTemperatureFigure,
   [specificHeatTitle]: specificHeatFigure,
   [equalHeatTitle]: equalHeatFigure,
