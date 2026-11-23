@@ -23,6 +23,7 @@ import { osymTopicCount } from "../domain/trapDeck";
 import { TrapDeck } from "../components/TrapDeck";
 import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
 import { sourceQuestionPresentation } from "../learning/sourceExercises024";
+import { savedSourceVisuals } from "../learning/sourceVisualRevisions";
 
 const subjectOrder = subjects.map((s) => s.id);
 export function Mistakes({
@@ -74,23 +75,25 @@ export function Mistakes({
             : undefined;
           const progress = repairProgress(state.sessions, s, r.questionId, state.examSessions, twinId);
           const displayed = question ? localizedQuestionView(question) : undefined;
-          const presentation = displayed ? sourceQuestionPresentation({
+          const helpQuestion = displayed ? {
             id: displayed.id,
             passage: displayed.passage ? l(displayed.passage) : undefined,
             prompt: l(displayed.prompt),
             options: displayed.options.map(l),
             answer: displayed.answer,
-          }) : undefined;
-          const optionFigures = presentation?.optionFigureRevision === r.optionFigureRevision
-            ? presentation?.optionFigures : undefined;
-          const figuresUnavailable = Boolean((r.optionFigureRevision || presentation?.optionFigureRevision) && !optionFigures);
+            explanation: l(displayed.explanation),
+            hint: l(displayed.hint),
+            guidance: displayed.guidance,
+          } : undefined;
+          const figures = helpQuestion
+            ? savedSourceVisuals(helpQuestion, sourceQuestionPresentation(helpQuestion), r)
+            : undefined;
           return {
             session: s,
             response: r,
             lesson,
             question: displayed,
-            optionFigures,
-            figuresUnavailable,
+            figures,
             progress,
             status: statusOfStage(progress.stage),
             confident: !r.correct && r.confidence === "high",
@@ -215,19 +218,21 @@ export function Mistakes({
             />
             <PocketBooklet
               items={allItems
-                .filter((x) => x.status !== "kalici" && x.question && !x.figuresUnavailable)
+                .filter((x) => x.status !== "kalici" && x.question && !x.figures?.figuresUnavailable)
                 .map((x) => ({
                   key: mistakeKey(x.session.id, x.response.questionId),
                   lesson: x.lesson ? l(x.lesson.title) : "",
                   prompt: l(x.question!.prompt),
                   answer: l(x.question!.options[x.question!.answer]),
-                  answerFigure: x.optionFigures?.[x.question!.answer],
+                  stemFigure: x.figures?.stem,
+                  answerFigure: x.figures?.options?.[x.question!.answer],
                 }))}
             />
-            {items.map(({ session, response, lesson, question, status, confident, stars, progress, optionFigures, figuresUnavailable }, i) => {
+            {items.map(({ session, response, lesson, question, status, confident, stars, progress, figures }, i) => {
               const osym = lesson ? osymTopicCount(osymRows, lessonTopic[lesson.id], lesson.subjectId) : undefined;
-              const selectedFigure = optionFigures?.[response.selected];
-              const correctFigure = question ? optionFigures?.[question.answer] : undefined;
+              const figuresUnavailable = figures?.figuresUnavailable;
+              const selectedFigure = figures?.options?.[response.selected];
+              const correctFigure = question ? figures?.options?.[question.answer] : undefined;
               return (
               question && lesson ? (
                 <article
@@ -260,6 +265,7 @@ export function Mistakes({
                     </p>
                   )}
                   <h2 className="question-prompt">{figuresUnavailable ? "Kayıtlı grafikli soru" : typeset(l(question.prompt))}</h2>
+                  {figures?.stem && <SourceQuestionFigure figure={figures.stem} />}
                   <p>
                     <span className="muted">{t("yourAnswer")}: </span>
                     {figuresUnavailable ? String.fromCharCode(65 + response.selected) : l(question.options[response.selected])}
@@ -280,7 +286,21 @@ export function Mistakes({
                     {correctFigure && (
                       <div className="answer-option-figure"><SourceQuestionFigure figure={correctFigure} /></div>
                     )}
-                    <p>{typeset(l(question.explanation))}</p>
+                    {figures?.solutionUnavailable ? (
+                      <p className="small muted">Kayda ait çözüm çizimleri bulunamadı.</p>
+                    ) : (
+                      <>
+                        <p>{typeset(l(question.explanation))}</p>
+                        {figures?.explanation && <SourceQuestionFigure figure={figures.explanation} />}
+                        {!!figures?.steps?.length && (
+                          <ol className="source-review-steps" aria-label="Çözüm çizimleri">
+                            {figures.steps.map((figure, index) =>
+                              <li key={index}><SourceQuestionFigure figure={figure} /></li>,
+                            )}
+                          </ol>
+                        )}
+                      </>
+                    )}
                   </details>}
                   <MistakeWarning storageKey={mistakeKey(session.id, response.questionId)} />
                   {!figuresUnavailable && <MistakeRepair

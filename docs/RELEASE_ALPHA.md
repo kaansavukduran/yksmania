@@ -1,3 +1,10 @@
+# ÖSYM Mania 0.53.0 · Kaynak görseliyle yanlış incelemesi
+
+Yayın adayı.
+
+- Hata Merkezi kayıtlı sorunun kaynaktaki görselini gösterir. Aynı sürümün çözüm çizimi açıklama açıldığında görünür.
+- Cep kitapçığında asıl soru görseli de basılır.
+
 # ÖSYM Mania 0.52.0 · Sürtünme eşiğinde ivme
 
 Yayın adayı.

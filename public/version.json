@@ -1,7 +1,7 @@
 {
-  "version": "0.52.0",
+  "version": "0.53.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Sürtünme eşiğinde duran ve kaymaya başlayan kutunun ivmesini karşılaştır. Kuvveti değiştir, grafikte açık ve dolu noktaları oku, çözümde kinetik sürtünme hesabını denetle."
+    "tr": "Kaynak soru görseli ve çözüm çizimleri, yanıtın verildiği sürümle eşleştiğinde Hata Merkezi’nde açılır. Cep kitapçığında asıl soru görseli de basılır."
   }
 }

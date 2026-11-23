@@ -20,7 +20,7 @@ type AngleArc = {
 type FigureDescription = { title: string; alt: string; caption?: string | null };
 export type SourceQuestionFigureSpec = FigureDescription &
   (
-    | { kind: "image"; src: string; width: number; height: number }
+    | { kind: "image"; src: string; width: number; height: number; assetSHA256?: string }
     | { kind: "math"; expression: SourceMathNode }
     | { kind: "table"; headers: readonly string[]; rows: readonly (readonly string[])[] }
     | {
@@ -152,13 +152,7 @@ function ImageFigure({
   const dialog = useRef<HTMLDialogElement>(null);
   const opener = useRef<HTMLButtonElement>(null);
   const closer = useRef<HTMLButtonElement>(null);
-  if (
-    !localImage(figure.src) ||
-    !Number.isFinite(figure.width) ||
-    !Number.isFinite(figure.height) ||
-    figure.width <= 0 ||
-    figure.height <= 0
-  )
+  if (!validImageFigure(figure))
     return <p className="source-figure-fallback">{figure.alt}</p>;
   return (
     <>
@@ -262,6 +256,12 @@ function ImageFigure({
   );
 }
 
+function validImageFigure(figure: Extract<SourceQuestionFigureSpec, { kind: "image" }>) {
+  return localImage(figure.src) &&
+    Number.isFinite(figure.width) && Number.isFinite(figure.height) &&
+    figure.width > 0 && figure.height > 0;
+}
+
 function geometryIsFinite(
   figure: Extract<SourceQuestionFigureSpec, { kind: "geometry" }>,
 ) {
@@ -304,15 +304,21 @@ function angleArc(arc: AngleArc) {
 
 export function SourceQuestionFigure({
   figure,
+  staticImage = false,
 }: {
   figure: SourceQuestionFigureSpec;
+  staticImage?: boolean;
 }) {
   const uid = useId().replaceAll(":", "");
   if (!figure.alt.trim()) return null;
   return (
     <figure className="source-question-figure" aria-label={figure.title}>
       {figure.kind === "image" ? (
-        <ImageFigure key={figure.src} figure={figure} />
+        staticImage ? (
+          validImageFigure(figure) ? (
+            <img className="source-figure-static" src={figure.src} alt={figure.alt} width={figure.width} height={figure.height} />
+          ) : <p className="source-figure-fallback">{figure.alt}</p>
+        ) : <ImageFigure key={figure.src} figure={figure} />
       ) : figure.kind === "table" ? (
         <table className="source-figure-table">
           <caption>{figure.alt}</caption>

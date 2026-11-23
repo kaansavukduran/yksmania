@@ -71,6 +71,8 @@ export const responseSchema = z
     helpLevel: helpLevelSchema.optional(),
     helpPanelCount: helpLevelSchema.optional(),
     optionFigureRevision: z.string().regex(/^[0-9a-f]{14}$/).optional(),
+    visibleFigureRevision: z.string().regex(/^[0-9a-f]{14}$/).optional(),
+    solutionFigureRevision: z.string().regex(/^[0-9a-f]{14}$/).optional(),
   })
   .refine(
     (response) => !(response.helpLevel && !response.assisted),

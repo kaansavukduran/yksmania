@@ -528,6 +528,14 @@ const sourceImages = [
   question05,
   question06,
 ];
+const sourceImageDigests = [
+  "e0e8cca5fb9c2ec76ec5c02509d7e5783edbbc5dc87fc0346cb96c1e52fb322a",
+  "55127356fd09e04b522268d35cfeb704e4de220b9b91239d6c47f9fd7805b118",
+  "5ea9024d8e5199b867ee9c67ad8420c4efce0d0d0bcb29ba033190bced20da70",
+  "c4a6e76a9446a8912c17181f579f39436fea1a398250d8d6effbd22fbcd7a7e6",
+  "bce0952e6f09419697642e5a4646d029cea4eabac04cf97f9315a398f9e2fd46",
+  "e52f3f2619fb5c0106de853b4cf161bd5db0f3ef4906b9ead43714638f36d71f",
+];
 const ogmHintFigures = [
   math(
     "Tabanları aynı asal tabana çevir",
@@ -652,6 +660,7 @@ export const originalOgmExercises024: OriginalSourceExercise[] = ogmData.map(
     figure: {
       kind: "image",
       src: sourceImages[i],
+      assetSHA256: sourceImageDigests[i],
       width: q.image.width,
       height: q.image.height,
       title: `OGM kaynak soru ${q.number}`,

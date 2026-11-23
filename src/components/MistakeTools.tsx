@@ -52,6 +52,7 @@ export type BookletItem = {
   lesson: string;
   prompt: string;
   answer: string;
+  stemFigure?: SourceQuestionFigureSpec;
   answerFigure?: SourceQuestionFigureSpec;
 };
 
@@ -87,12 +88,17 @@ export function PocketBooklet({ items }: { items: BookletItem[] }) {
             <li key={item.key}>
               <span className="small muted">{item.lesson}</span>
               <p className="pocket-prompt">{item.prompt}</p>
+              {item.stemFigure && (
+                <div className="answer-option-figure">
+                  <SourceQuestionFigure figure={item.stemFigure} staticImage />
+                </div>
+              )}
               <p>
                 <strong>Doğru:</strong> {item.answer}
               </p>
               {item.answerFigure && (
                 <div className="answer-option-figure">
-                  <SourceQuestionFigure figure={item.answerFigure} />
+                  <SourceQuestionFigure figure={item.answerFigure} staticImage />
                 </div>
               )}
               {typeof warning === "string" && warning && (

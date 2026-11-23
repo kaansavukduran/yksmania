@@ -4,6 +4,8 @@
 
 **Son yayımlanan web ve masaüstü sürümü 0.42.0**. Açıortayları ve ortak kenarlı üçgenleri çevrimdışı inceleyebilirsin. [Windows ve Linux 0.42](https://github.com/kaansavukduran/yksmania/releases/tag/v0.42.0-alpha.1) · [Android 0.42 kişisel deneme arşivi](https://github.com/kaansavukduran/yksmania/actions/runs/45187782506/artifacts/14823994107)
 
+**0.53.0 adayı** kaydedilen kaynak sorunun görselini Hata Merkezi’nde ve cep kitapçığında gösteriyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+
 **0.52.0 adayı** statik sürtünmeden kaymaya geçişi ivme grafiğinde gösteriyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.51.0 adayı** normal kuvvet ve ağırlığın çiftlerini doğru cisimlerde çiziyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)

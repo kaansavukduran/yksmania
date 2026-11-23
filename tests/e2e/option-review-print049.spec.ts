@@ -52,7 +52,12 @@ test("yanlış incelemesi ve yazdırma yalnız kaydedilen grafik sürümünü ku
 
   // This backup entry lacks a figure revision. Its selected letter persists,
   // but it cannot borrow the current prompt, answer, or graph.
-  const { optionFigureRevision: _revision, ...previous } = response;
+  const {
+    optionFigureRevision: _options,
+    visibleFigureRevision: _visible,
+    solutionFigureRevision: _solution,
+    ...previous
+  } = response;
   const older = { ...saved, sessions: saved.sessions.map((item) =>
     item.id === session.id ? { ...item, responses: [...item.responses.slice(0, -1), previous] } : item),
   };

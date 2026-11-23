@@ -1,3 +1,9 @@
+# Kaynak görselini kayıtla birlikte incele · 0.53.0 adayı
+
+Kaynak sorusunun şekli, şıkları ve çözüm çizimleri yanıtın verildiği içerik sürümüne bağlandı. Altı OGM görseli dosya özetiyle eşleştirildi. Hata Merkezi, aynı sürümün asıl çizimini soru yanında, çözüm çizimini açıklama açıldığında gösterir. Cep kitapçığı kaynak çizimini yazdırır. Eski kayıtta görsel bağı eksikse öğrencinin cevap harfi ve çalışması korunur.
+
+4.579 birim testi ve üç çevrimdışı tarayıcı akışı geçti. Altı OGM görselinin dosya özeti ayrı denetlendi. Gerçek Chromium A4 çıktısında 618 × 254 kaynak görseli yeniden okundu. Eski deneme kâğıdı aynı kaynağı açtı ve değiştirilmiş soru, şık veya cevap farklı bir kaynak görseli almadı.
+
 # Sürtünme eşiğinde ivme · 0.52.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel sayfa 45–46, basılı sayfa 43–44, statik sınır ve kayma kolunu anlatıyor. Uygulamadaki 5 kg kutu 25 N’da dengede kalıyor. 26 N’a geçince kinetik sürtünme 20 N ve ivme 1,2 m/s² oluyor. Dolu ve açık noktalar eşikteki değer ile sağdan yaklaşılan değeri ayırıyor. Anlatım, ayrı Kopya Kağıdı ve çözümlü örnek aynı koşulu gösterir.

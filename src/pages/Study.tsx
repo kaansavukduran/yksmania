@@ -25,6 +25,7 @@ import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
 import { AnswerOptions } from "../components/AnswerOptions";
 import { Scratchpad } from "../components/Scratchpad";
 import { sourceQuestionPresentation } from "../learning/sourceExercises024";
+import { sourceVisualRevisions } from "../learning/sourceVisualRevisions";
 export function Study({ navigate }: { navigate: (s: string) => void }) {
   const { state, t, l, update, commit, toast } = useApp();
   const [busy, setBusy] = useState(false);
@@ -86,6 +87,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
       ...(sourcePresentation?.optionFigureRevision
         ? { optionFigureRevision: sourcePresentation.optionFigureRevision }
         : {}),
+      ...sourceVisualRevisions(helpQuestion, sourcePresentation),
       ...(draft.hint
         ? { helpLevel: visibleHelpLevel, helpPanelCount: panels.length }
         : {}),
