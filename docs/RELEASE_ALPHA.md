@@ -1,3 +1,10 @@
+# ÖSYM Mania 0.61.0 · Lamba verimi
+
+Yayın adayı.
+
+- 6 W görünür ışık çıkışı sabitken LED örneğinin verimini ve elektrik girişini değiştir.
+- Çizim, örnek verimi ve diğer enerji çıkışlarını aynı ölçekte karşılaştırır. Kopya Kağıdı’nda aynı hesap bulunur.
+
 # ÖSYM Mania 0.60.0 · Sürtünmeli rayda enerji
 
 Yayın adayı.

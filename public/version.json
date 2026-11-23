@@ -1,7 +1,7 @@
 {
-  "version": "0.60.0",
+  "version": "0.61.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Sürtünmeli rayda üç duruşu karşılaştır. C’den ilk geçiş ve son duruş farklı, her aralıktaki enerji aktarımı ayrı hesaplanıyor."
+    "tr": "Aynı görünür ışık çıkışı için iki lambanın elektrik girişini karşılaştır. LED örneğinin verimini değiştir ve enerji paylarını gör."
   }
 }

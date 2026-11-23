@@ -1,3 +1,4 @@
+import { lampEfficiencyExample, lampEfficiencySection } from "../lampEfficiency061";
 import { railEnergyExample, railEnergySection } from "../railEnergy060";
 import { bounceEnergyExample, bounceEnergySection } from "../bounceEnergy059";
 import { bicycleEnergyExample, bicycleEnergySection } from "../bicycleEnergy058";
@@ -323,8 +324,8 @@ export function studyGuide(lessonId: string) {
   if (guide?.id !== "enerji-ve-hareket") return guide;
   return {
     ...guide,
-    sections: [...guide.sections, averageWorkPowerSection, cylinderPotentialSection, bicycleEnergySection, bounceEnergySection, railEnergySection],
-    examples: [...guide.examples, averageWorkPowerExample, cylinderPotentialExample, bicycleEnergyExample, bounceEnergyExample, railEnergyExample],
-    source: `${guide.source} İş ve güç, homojen silindir, bisiklet, sıçrayan top ve sürtünmeli ray örnekleri MEBİ TYT Fizik Konu Özetleri fiziksel 48, 50, 53 ve 54, basılı 46, 48, 51 ve 52. sayfalarla karşılaştırıldı. Sayısal örnekler özgündür. Bisiklet çizimindeki verilen hız oranları kaynak örneğindeki oranlardır.`,
+    sections: [...guide.sections, averageWorkPowerSection, cylinderPotentialSection, bicycleEnergySection, bounceEnergySection, railEnergySection, lampEfficiencySection],
+    examples: [...guide.examples, averageWorkPowerExample, cylinderPotentialExample, bicycleEnergyExample, bounceEnergyExample, railEnergyExample, lampEfficiencyExample],
+    source: `${guide.source} İş ve güç, homojen silindir, bisiklet, sıçrayan top, sürtünmeli ray ve lamba verimi örnekleri MEBİ TYT Fizik Konu Özetleri fiziksel 48, 50, 53, 54 ve 56, basılı 46, 48, 51, 52 ve 54. sayfalarla karşılaştırıldı. Sayısal örnekler özgündür. Bisiklet çizimindeki verilen hız oranları kaynak örneğindeki oranlardır.`,
   };
 }

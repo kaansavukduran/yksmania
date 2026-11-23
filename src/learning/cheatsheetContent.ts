@@ -117,6 +117,7 @@ import { newtonTimeTitle } from "./newtonTimeComparison";
 import { forcePairsTitle } from "./newtonForcePairs";
 import { frictionThresholdTitle } from "./newtonFrictionThreshold";
 import { cylinderPotentialTitle } from "./cylinderPotentialEnergy";
+import { lampEfficiencyTitle } from "./lampEfficiency061";
 import { railEnergyTitle } from "./railEnergy060";
 import { bounceEnergyTitle } from "./bounceEnergy059";
 import { bicycleEnergyTitle } from "./bicycleEnergy058";
@@ -151,6 +152,10 @@ export interface CheatSheet {
 
 const revisedSectionTextByLesson = new Map([
   ["enerji-ve-hareket", new Map([
+    [lampEfficiencyTitle, [
+      "Yararlı çıkış ve toplam giriş aynı zaman aralığından ve aynı sistem sınırından alınır. Verim = yararlı çıkış / toplam giriş.",
+      "Aynı 6 W görünür ışık için %10 ve %25 örnek verimlerde girişler 60 W ve 24 W. Bunlar örneğe ait değerlerdir.",
+    ]],
     [railEnergyTitle, [
       "C’yi sıfır düzeyi seç. Duruşlarda kalan mekanik enerji A’da 3E₀, D’de E₀, son C’de 0. E₀ = mgh.",
       "A’dan D’ye 2E₀, dönüşte E₀ ısıl enerji gibi biçimlere aktarılır. C’den ilk geçişin hızı bu bilgilerle hesaplanamaz.",
