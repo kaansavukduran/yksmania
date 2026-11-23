@@ -52,7 +52,17 @@ export const wireResistanceFigures: Record<string, FigureDef> = {
     picks: wireMaterialsAt20.map(({ name, coefficient }) => ({
       label: name, title: name, detail: [`20 °C’de öz direnç ${resistanceText(coefficient)} × 10⁻⁸ Ω·m.`],
     })),
-    draw: (_value, step, pick) => compareWires(pick == null || pick === -1 ? 1 : pick, step),
+    draw: (_value, step, pick) => {
+      const materialIndex = pick == null || pick === -1 ? 1 : pick;
+      const frame = compareWires(materialIndex, step);
+      const materialLabels = wireMaterialsAt20.map(({ symbol }, index) => txt(v(1 + 1.65 * index, 8.4), symbol, "c", {
+        pick: index,
+        small: true,
+        bold: index === materialIndex,
+        tone: index === materialIndex ? "a" : "ink",
+      }));
+      return { ...frame, els: [...frame.els, ...materialLabels] };
+    },
   },
   [wireDiameterSolutionTitle]: {
     caption: "Çap iki katına çıktığında dairesel kesit dört katına çıkar. İki bakır tel aynı boyda.",

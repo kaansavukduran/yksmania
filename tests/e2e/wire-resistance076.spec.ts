@@ -26,6 +26,8 @@ test("telin boyu, alanı, çapı ve malzemesi aynı fizik modelini çevrimdış�
   await expect(model).toContainText("Yeni tel 1 m, 4 mm². Direnç 0,00425 Ω.");
   await model.getByRole("button", { name: "Gümüş", exact: true }).press("Enter");
   await expect(model).toContainText("Yeni tel 1 m, 4 mm². Direnç 0,003975 Ω.");
+  await model.getByRole("img").locator("text").filter({ hasText: /^Al$/ }).click();
+  await expect(model).toContainText("Yeni tel 1 m, 4 mm². Direnç 0,00705 Ω.");
   await model.getByRole("img").screenshot({ path: info.outputPath("tel076-model.png") });
   expect((await page.evaluate(svgLayoutAudit, { scope, figuresOnly: true, explore: true })).issues).toEqual([]);
   expect(learning(await storage(page))).toEqual(before);

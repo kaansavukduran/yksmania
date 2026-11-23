@@ -3,9 +3,9 @@ import type { GuideSection, WorkedExample } from "./guides/types";
 export const wireResistanceTitle = "Telin boyu ve kesit alanı farklı etki yapar";
 export const wireDiameterSolutionTitle = "Çapı iki kat olan iki bakır teli karşılaştır";
 export const wireMaterialsAt20 = [
-  { name: "Gümüş", coefficient: 1.59 },
-  { name: "Bakır", coefficient: 1.7 },
-  { name: "Alüminyum", coefficient: 2.82 },
+  { name: "Gümüş", symbol: "Ag", coefficient: 1.59 },
+  { name: "Bakır", symbol: "Cu", coefficient: 1.7 },
+  { name: "Alüminyum", symbol: "Al", coefficient: 2.82 },
 ] as const;
 export const wireComparisons = [
   { label: "Başlangıç", length: 1, area: 1 },
