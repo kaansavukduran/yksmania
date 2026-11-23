@@ -85,7 +85,7 @@ export function QuestionHelp({
   const panels = helpPanels(question);
   const full = level > panels.length;
   const total = panels.length + 1;
-  const sourcePresentation = sourceQuestionPresentation(question);
+  const sourcePresentation = sourceQuestionPresentation({ ...question, guidance });
   // The matching theory figure is shown with the first ("Bilmen gerekenler")
   // panel; it is omitted when the question already carries its own figure.
   const conceptFigure = sourcePresentation?.hintFigure ? undefined : hintFigureFor(question);
@@ -211,6 +211,10 @@ export function QuestionHelp({
   const stepSection = (panel: Panel, index: number) => {
     const current = index + 1 === view && !fullView;
     const split = index === 1 ? givenAndAsked(question.prompt) : undefined;
+    const stepFigures = sourcePresentation?.stepFigures;
+    const stepFigure = index === 0 && stepFigures
+      ? sourcePresentation.hintFigure
+      : stepFigures?.[index - 2];
     return (
       <section key={index} className={`help-step${current ? " is-current" : ""}`}>
         <span className="help-step-chip">
@@ -242,7 +246,7 @@ export function QuestionHelp({
             ))}
           </div>
         )}
-        {index === 1 && sourcePresentation?.figure && (
+        {index === 1 && !stepFigures && sourcePresentation?.figure && (
           <div className="help-setup-figure">
             <SourceQuestionFigure figure={sourcePresentation.figure} />
           </div>
@@ -250,6 +254,7 @@ export function QuestionHelp({
         {panel.paragraphs.map((paragraph, i) => (
           <p key={i}>{show(paragraph)}</p>
         ))}
+        {stepFigure && <SourceQuestionFigure figure={stepFigure} />}
         {index === 0 && tacticsBlock}
         {index === 1 && conceptBlock("Görsel kurulum")}
       </section>
@@ -295,7 +300,9 @@ export function QuestionHelp({
       <aside className="hint-box" aria-label="Çözüm rehberi">
         <div className="help-content">
           {panels.slice(0, view).map(stepSection)}
-          {!fullView && sourcePresentation?.hintFigure && <SourceQuestionFigure figure={sourcePresentation.hintFigure} />}
+          {!fullView && !sourcePresentation?.stepFigures && sourcePresentation?.hintFigure && (
+            <SourceQuestionFigure figure={sourcePresentation.hintFigure} />
+          )}
           {fullView && finalSection}
           {fullView && retry}
           {evidence}

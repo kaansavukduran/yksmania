@@ -13,6 +13,7 @@ import question05 from "./sourceExerciseAssets024/ogm-uslu-ifadeler-soru-05.png"
 import question06 from "./sourceExerciseAssets024/ogm-uslu-ifadeler-soru-06.png";
 import { extraOriginalSourceExercises024 } from "./extraOriginalSourceExercises024";
 import { source012RevisionExercises } from "./source012RevisionExercises";
+import { questionFigures043 } from "./questionFigures043";
 
 export interface SourceAttribution {
   shortLabel: string;
@@ -738,6 +739,7 @@ export function sourceQuestionPresentation(question: BoundQuestion):
       figure?: SourceQuestionFigureSpec;
       hintFigure?: SourceQuestionFigureSpec;
       explanationFigure?: SourceQuestionFigureSpec;
+      stepFigures?: readonly SourceQuestionFigureSpec[];
       originalExerciseId: string;
     }
   | undefined {
@@ -749,7 +751,7 @@ export function sourceQuestionPresentation(question: BoundQuestion):
       q.correctIndex === question.answer &&
       JSON.stringify(q.options) === JSON.stringify(question.options),
   );
-  if (index < 0) return undefined;
+  if (index < 0) return questionFigures043(question);
   const exercise = originalOgmExercises024[index];
   const current = sourceQuestionLessons024[0].questions[index];
   // A frozen paper can keep the same stem while preserving a personal or older

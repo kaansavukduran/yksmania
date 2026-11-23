@@ -1,3 +1,11 @@
+# Soru görselleri · ilk iki kart
+
+Doğruda Açılar kartında verilen kesişim çizildi. İpucu ortak kolu gösterir. Üç çözüm çizimi komşu açının bulunmasını, sonraki doğrusal çifti ve ters açıyı sırayla gösterir. Kaynak, Geometrinin Dili ve Doğruda Açılar 5.1’in fiziksel 2 ve 4. sayfalarıdır.
+
+Kuvvet ve Newton Yasaları kartında 2 kg’lık cisme etki eden 4 N ve 10 N, yönleriyle ve orantılı oklarla çizildi. İpucunda işaretler, çözümde kuvvetlerin bileşkesi ve kütleye bölme görünür. Öğretim karşılığı MEBİ TYT Fizik Konu Özetleri’nin fiziksel 39, 41 ve 42. sayfalarıyla karşılaştırıldı. İki kart da özgün öğretim sorusudur.
+
+320 piksel, %200 arayüz ve %150 yazıda iki soru gerçek girişten çevrimdışı sınandı. Geometride geri adım, yeniden açılış ve yardımlı yanıt kaydı doğrulandı. Fizik çiziminin taşan etiketleri düzeltilip aynı ölçüm tekrar edildi. Tarihsel OGM deneme kayıtları da mevcut görsel eşleşme kontrolünü geçti. Bu bölüm iki kartın yerel kabulünü kaydeder. Görselli şık, yeni kartların deneme ve yazdırma kabulü ile diğer kaynak maddeleri açık.
+
 # Doğruda Açılar, Üçgende Açılar ve Açı Kenar Bağıntıları · 0.42.0 adayı
 
 23 Kasım 2026. Güncel üç geometri kaynağının 12’şer sayfası metin ve görsel olarak incelendi. Komşu açıların dış kolları, paralellik kalkınca kalan açı eşitliği, aynı üçgendeki iç ve dış açıortaylar ile ortak kenarın sıkı sınırları anlatılıyor.

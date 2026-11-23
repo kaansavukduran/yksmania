@@ -75,8 +75,8 @@ export const lineAnglesPractice042 = guidedMathPractice(
         ["Kesen iki doğruya da dik.", "64° ölçülen kesişim dik değildir."],
       ],
       answer: 0,
-      knowledge: "Ters açı eşitliği için ayrı iki paralel gerekmez.",
-      strategy: "Hangi seçeneğin aynı kesişimi kullandığını bul.",
+      knowledge: "İlk olarak ölçüsü verilen tek kesişime bak. Bir doğru üzerindeki iki komşu açının toplamı 180°.",
+      strategy: "64°nin komşusunu bulmak için aynı düz çizgi üzerindeki iki bölgeyi izle.",
       steps: [
         "64°ye doğrusal komşu 116°.",
         "Karşı açı da 116° ile doğrusal çift.",

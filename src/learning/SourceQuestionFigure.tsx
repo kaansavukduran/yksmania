@@ -11,7 +11,13 @@ export type SourceMathNode =
   | { kind: "root"; value: SourceMathNode; degree?: SourceMathNode };
 
 type Coordinate = readonly [number, number];
-type FigureDescription = { title: string; alt: string; caption?: string };
+type AngleArc = {
+  center: Coordinate;
+  radius: number;
+  start: number;
+  degrees: number;
+};
+type FigureDescription = { title: string; alt: string; caption?: string | null };
 export type SourceQuestionFigureSpec = FigureDescription &
   (
     | { kind: "image"; src: string; width: number; height: number }
@@ -35,6 +41,7 @@ export type SourceQuestionFigureSpec = FigureDescription &
           radius: number;
           emphasis?: boolean;
         }[];
+        arcs?: readonly AngleArc[];
         labels?: readonly {
           at: Coordinate;
           text: string;
@@ -272,8 +279,25 @@ function geometryIsFinite(
         Number.isFinite(circle.radius) &&
         circle.radius > 0,
     ) &&
+    (figure.arcs ?? []).every(
+      (arc) =>
+        finitePoint(arc.center) &&
+        Number.isFinite(arc.radius) &&
+        arc.radius > 0 &&
+        Number.isFinite(arc.start) &&
+        arc.degrees > 0 &&
+        arc.degrees < 360,
+    ) &&
     (figure.labels ?? []).every((label) => finitePoint(label.at))
   );
+}
+
+function angleArc(arc: AngleArc) {
+  const point = (degrees: number) => {
+    const angle = (degrees * Math.PI) / 180;
+    return `${arc.center[0] + arc.radius * Math.cos(angle)} ${arc.center[1] - arc.radius * Math.sin(angle)}`;
+  };
+  return `M ${point(arc.start)} A ${arc.radius} ${arc.radius} 0 ${Number(arc.degrees > 180)} 0 ${point(arc.start + arc.degrees)}`;
 }
 
 export function SourceQuestionFigure({
@@ -303,7 +327,8 @@ export function SourceQuestionFigure({
           className="source-figure-drawing"
           viewBox={figure.viewBox.join(" ")}
           role="img"
-          aria-labelledby={`${uid}-title ${uid}-description`}
+          aria-labelledby={`${uid}-title`}
+          aria-describedby={`${uid}-description`}
         >
           <title id={`${uid}-title`}>{figure.title}</title>
           <desc id={`${uid}-description`}>{figure.alt}</desc>
@@ -324,6 +349,13 @@ export function SourceQuestionFigure({
               cy={circle.center[1]}
               r={circle.radius}
               className={circle.emphasis ? "emphasized" : undefined}
+            />
+          ))}
+          {(figure.arcs ?? []).map((arc, i) => (
+            <path
+              key={`arc-${i}`}
+              className="source-figure-arc emphasized"
+              d={angleArc(arc)}
             />
           ))}
           {(figure.points ?? []).map((point, i) => (
@@ -355,7 +387,7 @@ export function SourceQuestionFigure({
       ) : (
         <p className="source-figure-fallback">{figure.alt}</p>
       )}
-      {(figure.caption || figure.kind === "geometry") && (
+      {figure.caption !== null && (figure.caption || figure.kind === "geometry") && (
         <figcaption>{figure.caption ?? figure.alt}</figcaption>
       )}
     </figure>

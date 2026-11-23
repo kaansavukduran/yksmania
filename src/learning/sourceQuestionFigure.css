@@ -161,7 +161,8 @@
   overflow: visible;
 }
 .source-figure-drawing line,
-.source-figure-drawing circle {
+.source-figure-drawing circle,
+.source-figure-drawing .source-figure-arc {
   stroke: currentColor;
   stroke-width: 2;
   fill: none;
