@@ -41,6 +41,22 @@ const revisions = [
     appendedQuestions: ["korunan-kar-indirim", "gider-adet-ayri", "fireli-gelir", "grupta-eksik-fiyat", "esit-satis-farkli-oran", "iki-satis-siniri"].map((id) => `kar-zarar-problemleri-021-${id}`),
     oldSource: "MEBİ TYT Matematik Konu Özetleri, basılı s.52 (PDF 54); Aurelia 021 Kâr Zarar Problemleri, öğretim s.1–8. Kapsama dayalı özgün anlatım, fiyat ve başabaş modelleri; sorular resmî ÖSYM maddesi olarak sunulmaz.",
   },
+  {
+    lesson: "faiz-problemleri", topic: "detail-215", sections: 8, examples: 4, recall: 4,
+    appendedQuestions: [
+      "iki-gun-kurali", "farkli-sure-iki-kol", "esit-katsayi-iki-rapor", "sifir-getiriyi-bolme",
+      "degisen-sure-karsilastirma", "donem-degisen-yeniden-yatirma",
+    ].map((id) => `faiz-problemleri-022-${id}`),
+    oldSource: "Aurelia 022 Faiz Problemleri, öğretim ve özgün örnekler s. 1–6. Kaynak kapsamına dayalı özgün öğretim ve zaman-faiz modeli; bağlantılı OGM/ÖSYM belgeleri bu ünitede bağımsız doğrulanmış sayılmaz.",
+  },
+  {
+    lesson: "karisim-problemleri", topic: "detail-216", sections: 8, examples: 4, recall: 4,
+    appendedQuestions: [
+      "hedeften-iki-kutle", "bilinmeyen-yuzde-sinir", "ayni-miktar-uc-islem",
+      "iki-kez-farkli-yerine-koy", "toplam-bedelden-birim-fiyat", "su-hedefinde-saf-tuz",
+    ].map((id) => `karisim-problemleri-023-${id}`),
+    oldSource: "MEBİ TYT Matematik Konu Özetleri, basılı s. 53/PDF 55; Aurelia 023 Karışım Problemleri, öğretim s. 1–6. Kütle korunumuna dayalı özgün anlatım ve sorular; resmî soru aktarımı değildir.",
+  },
 ];
 
 const additions = new Set(revisions.flatMap(({ appendedQuestions }) => appendedQuestions));
@@ -112,6 +128,7 @@ export function beforeSource031Teaching(
     return {
       ...sheet,
       sections: sheet.sections.slice(0, prior.sections),
+      examples: sheet.examples.slice(0, prior.examples),
       cautions: sheet.cautions.slice(0, prior.examples),
       recall: sheet.recall.slice(0, prior.recall),
       source: prior.oldSource,

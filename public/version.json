@@ -1,7 +1,7 @@
 {
-  "version": "0.33.0",
+  "version": "0.34.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Yüzde Problemleri’nde kapların doluluğunu ve tüketilen içeriği ayrı hesapla. Kâr Zarar Problemleri’nde fireyi değiştirip toplam gideri, geliri ve başa baş fiyatını karşılaştır. İki konuya 12 yeni özgün soru ve Kopya Kağıdı bölümleri eklendi."
+    "tr": "Faiz Problemleri’nde iki farklı vadeye ayrılan anaparayı bul. Karışım Problemleri’nde hedef yüzdeye ulaşmak için kaç gram gerektiğini hesapla. İki konuya 12 özgün soru, iki çizim ve yeni Kopya Kağıdı bölümleri eklendi."
   }
 }

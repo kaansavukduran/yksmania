@@ -138,6 +138,15 @@ export function PastExamQuestions({
                 Resmî kaynak kaydı (internet)
                 <ExternalLink size={15} />
               </a>
+              <a
+                className="text-button"
+                href={`${booklet.url}#page=${ref.answerPage}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resmî cevap anahtarı (internet)
+                <ExternalLink size={15} />
+              </a>
             </details>
           </article>
         );

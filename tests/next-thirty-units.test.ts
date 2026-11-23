@@ -1,4 +1,5 @@
 import { publishedQuestion } from "./helpers/publishedQuestion";
+import { beforeSource031Teaching } from "./helpers/before-source031-math";
 import { expect, it } from "vitest";
 import oldQuestions from "./fixtures/0.11.0-questions.json";
 import { lessons } from "../src/domain/content";
@@ -7,6 +8,7 @@ import { lessonGuides } from "../src/learning/guides";
 import { builtInCheatSheets } from "../src/learning/cheatsheetContent";
 import { examCatalogue, selectExamVariant } from "../src/domain/exams";
 import { questionContentIssues } from "../src/domain/questionContent";
+import type { LessonGuide } from "../src/learning/guides/types";
 
 it("preserves all 800 published question records while adding new unit and foundation practice questions", () => {
   const current = lessons.flatMap((l) => l.questions),
@@ -51,7 +53,8 @@ it("makes workbook headings 109 through 138 reachable as independent theory, vis
     const lesson = theory[0];
     ids.add(lesson.id);
     expect(lesson.subjectId).toBe(topic.subjectId);
-    expect(lesson.questions, topic.title).toHaveLength(10);
+    const expandedPractice = ["faiz-problemleri", "karisim-problemleri"].includes(lesson.id);
+    expect(lesson.questions, topic.title).toHaveLength(expandedPractice ? 16 : 10);
     for (const q of lesson.questions) {
       expect(q.options).toHaveLength(5);
       expect(new Set(q.options.map((o) => o.tr)).size).toBe(5);
@@ -60,7 +63,8 @@ it("makes workbook headings 109 through 138 reachable as independent theory, vis
         q.options[q.answer].tr.trim(),
       );
     }
-    const guide = lessonGuides.get(lesson.id)!;
+    const currentGuide = lessonGuides.get(lesson.id)!;
+    const guide = beforeSource031Teaching("guides", lesson.id, currentGuide) as LessonGuide;
     expect(guide, topic.title).toBeDefined();
     expect(guide.sections.length).toBeGreaterThanOrEqual(8);
     expect(guide.sections.every((s) => s.paragraphs.length >= 2)).toBe(true);

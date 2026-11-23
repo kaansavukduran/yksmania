@@ -86,5 +86,16 @@
     "coverage": "seçili sorular doğrulandı",
     "sha256": "5216b6fa034f6a50258670527f78f636b1d783b0b8530aee23bf7f7384594347",
     "checkedAt": "2026-11-23"
+  },
+  {
+    "id": "2013-ales-ilkbahar",
+    "title": "2013 ALES İlkbahar",
+    "exam": "ALES",
+    "year": 2013,
+    "url": "https://dokuman.osym.gov.tr/web/eskidosyalar/2213.pdf",
+    "pages": 61,
+    "coverage": "seçili sorular doğrulandı",
+    "sha256": "66c63a1a915dbae8c9555b592bde213f2ac7619350f9b794c40c6cc565756a49",
+    "checkedAt": "2026-11-23"
   }
 ]

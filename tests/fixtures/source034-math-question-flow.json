@@ -1,0 +1,198 @@
+{
+  "faiz-problemleri": [
+    {
+      "id": "faiz-problemleri-012-1",
+      "prompt": "6000 TL yıllık %12 basit faizle 5 ay yatırılıyor. Faiz kaç TL’dir?",
+      "correct": "300",
+      "selected": 0
+    },
+    {
+      "id": "faiz-problemleri-012-2",
+      "prompt": "Yıllık %10 basit faizle 2 yılda 900 TL faiz getiren anapara kaç TL’dir?",
+      "correct": "4500",
+      "selected": 1
+    },
+    {
+      "id": "faiz-problemleri-012-3",
+      "prompt": "4000 TL 6 ayda 360 TL basit faiz getiriyor. Yıllık oran yüzde kaçtır?",
+      "correct": "18",
+      "selected": 2
+    },
+    {
+      "id": "faiz-problemleri-012-4",
+      "prompt": "2000 TL yıllık %18 basit faizle 40 gün tutuluyor. Yıl 360 gün kabul edilirse faiz kaç TL’dir?",
+      "correct": "40",
+      "selected": 3
+    },
+    {
+      "id": "faiz-problemleri-012-5",
+      "prompt": "5000 TL iki tam yıl yıllık %20 basit faizle tutuluyor. Son tutar kaç TL’dir?",
+      "correct": "7000",
+      "selected": 4
+    },
+    {
+      "id": "faiz-problemleri-012-6",
+      "prompt": "5000 TL iki yıl sonunda her yılın faizi yeniden yatırılmak üzere yıllık %20 kazanıyor. Son tutar kaç TL’dir?",
+      "correct": "7200",
+      "selected": 0
+    },
+    {
+      "id": "faiz-problemleri-012-7",
+      "prompt": "10000 TL’nin x TL’si %4, kalanı %10 yıllık basit faizle 1 yıl tutuluyor. Toplam faiz 760 TL ise x kaçtır?",
+      "correct": "4000",
+      "selected": 1
+    },
+    {
+      "id": "faiz-problemleri-012-8",
+      "prompt": "Aynı anapara için yıllık %12 ile 6 ayın basit getirisi, %24 ile 3 ayın basit getirisine göre nasıldır?",
+      "correct": "Eşittir.",
+      "selected": 2
+    },
+    {
+      "id": "faiz-problemleri-012-9",
+      "prompt": "3000 TL yıllık %8 basit faizle 0 ay tutuluyor. Bu modelde faiz kaç TL’dir?",
+      "correct": "0",
+      "selected": 3
+    },
+    {
+      "id": "faiz-problemleri-012-10",
+      "prompt": "Aynı para 1 yıl için yıllık yüzde r ve r−2 ile sırasıyla 300 TL ve 200 TL basit faiz getiriyor. r kaçtır?",
+      "correct": "6",
+      "selected": 4
+    },
+    {
+      "id": "faiz-problemleri-022-iki-gun-kurali",
+      "prompt": "3.650 TL yıllık %12 basit faizle 30 gün tutuluyor. Yılın 360 gün ve 365 gün kabul edildiği iki ayrı modelde faizler sırasıyla kaç TL’dir?",
+      "correct": "36,50 TL ve 36 TL",
+      "selected": 1
+    },
+    {
+      "id": "faiz-problemleri-022-farkli-sure-iki-kol",
+      "prompt": "18.000 TL’nin bir kısmı yıllık %18 basit faizle 3 ay, kalanı yıllık %8 basit faizle 9 ay tutuluyor. Toplam faiz 990 TL ise yıllık %18’lik kola başlangıçta kaç TL ayrılmıştır?",
+      "correct": "6.000 TL",
+      "selected": 3
+    },
+    {
+      "id": "faiz-problemleri-022-esit-katsayi-iki-rapor",
+      "prompt": "8.000 TL, yıllık %12 ile 6 ay ve yıllık %8 ile 9 ay süren iki basit faiz koluna paylaştırılıyor. İlk raporda toplam faiz 480 TL, ikinci bir raporda 500 TL yazıyor. Bu iki tutarı sağlayan paylaştırma sayıları sırasıyla nasıldır?",
+      "correct": "İlki için her paylaşım, ikincisi için hiç yok.",
+      "selected": 4
+    },
+    {
+      "id": "faiz-problemleri-022-sifir-getiriyi-bolme",
+      "prompt": "Aynı pozitif anapara, 18 ay için iki ayrı basit faiz seçeneğiyle karşılaştırılıyor. İlk seçenekte 225 TL faiz, ikinci seçenekte 0 TL faiz var. İlk yıllık oran ikinci orandan 5 yüzde puan yüksek. Anapara kaç TL’dir?",
+      "correct": "3.000 TL",
+      "selected": 2
+    },
+    {
+      "id": "faiz-problemleri-022-degisen-sure-karsilastirma",
+      "prompt": "Aynı anapara için A seçeneği yıllık %9 ile 8 ay, B seçeneği yıllık %18 ile 4 ay basit faiz veriyor. B’nin süresi 6 aya çıkarılırsa B’nin yeni faizi A’nın faizinin kaç katı olur?",
+      "correct": "3/2",
+      "selected": 0
+    },
+    {
+      "id": "faiz-problemleri-022-donem-degisen-yeniden-yatirma",
+      "prompt": "6.000 TL için ilk yıl %12, ikinci yıl %25 faiz var. Bir modelde iki yılın faizi ilk anapara üzerinden hesaplanıyor. Diğer modelde ilk yılın faizi bakiyeye eklenerek ikinci yıl yeniden işletiliyor. İki modelin toplam faizleri arasındaki fark kaç TL’dir?",
+      "correct": "180 TL",
+      "selected": 2
+    }
+  ],
+  "karisim-problemleri": [
+    {
+      "id": "karisim-problemleri-012-1",
+      "prompt": "50 g %10 tuzlu su ile 150 g %30 tuzlu su birleştiriliyor. Tuz yüzdesi kaçtır?",
+      "correct": "25",
+      "selected": 0
+    },
+    {
+      "id": "karisim-problemleri-012-2",
+      "prompt": "120 g %25 şekerli suya 80 g saf su ekleniyor. Son şeker yüzdesi kaçtır?",
+      "correct": "15",
+      "selected": 1
+    },
+    {
+      "id": "karisim-problemleri-012-3",
+      "prompt": "100 g %20 tuzlu sudan yalnız 20 g su buharlaşıyor. Son tuz yüzdesi kaçtır?",
+      "correct": "25",
+      "selected": 2
+    },
+    {
+      "id": "karisim-problemleri-012-4",
+      "prompt": "200 g %25 tuzlu suya x g saf tuz eklenince oran %40 oluyor. x kaç gramdır?",
+      "correct": "50",
+      "selected": 3
+    },
+    {
+      "id": "karisim-problemleri-012-5",
+      "prompt": "100 g %30 şekerli homojen karışımın beşte biri alınıp yerine 20 g saf su ekleniyor. Son yüzde kaçtır?",
+      "correct": "24",
+      "selected": 4
+    },
+    {
+      "id": "karisim-problemleri-012-6",
+      "prompt": "80 g %10 tuzlu su ile x g %30 tuzlu su birleşince oran %20 oluyor. x kaç gramdır?",
+      "correct": "80",
+      "selected": 0
+    },
+    {
+      "id": "karisim-problemleri-012-7",
+      "prompt": "240 g %25 tuzlu suya 20 g saf tuz eklenip ardından 60 g yalnız su uçuruluyor. Son yüzde kaçtır?",
+      "correct": "40",
+      "selected": 1
+    },
+    {
+      "id": "karisim-problemleri-012-8",
+      "prompt": "100 g %40 tuzlu homojen karışımın dörtte biri alınıp yerine 25 g saf tuz konuyor. Son yüzde kaçtır?",
+      "correct": "55",
+      "selected": 2
+    },
+    {
+      "id": "karisim-problemleri-012-9",
+      "prompt": "Pozitif miktarlardaki %10 ve %40 tuzlu su yalnız birbirine karıştırılıyor. Hangi yüzde elde edilemez?",
+      "correct": "50",
+      "selected": 3
+    },
+    {
+      "id": "karisim-problemleri-012-10",
+      "prompt": "20 kg karışımın %40’ı 30 TL/kg, %60’ı 50 TL/kg değerinde. Ortalama birim fiyat kaç TL/kg’dır?",
+      "correct": "42",
+      "selected": 4
+    },
+    {
+      "id": "karisim-problemleri-023-hedeften-iki-kutle",
+      "prompt": "%12 şekerli su ile %40 şekerli sudan toplam 240 g %33 şekerli su hazırlanacak. %12’lik ve %40’lık karışımlardan sırasıyla kaç gram kullanılmalı?",
+      "correct": "60 g ve 180 g",
+      "selected": 3
+    },
+    {
+      "id": "karisim-problemleri-023-bilinmeyen-yuzde-sinir",
+      "prompt": "Şeker oranı bilinmeyen 90 g A karışımı, 60 g %35 şekerli karışımla birleştiriliyor. A saf su da olabilir. Hedefin %26 ve %12 olduğu iki ayrı denemede A’nın şeker yüzdesi ne olabilir?",
+      "correct": "İlkinde %20, ikincisi mümkün değil.",
+      "selected": 0
+    },
+    {
+      "id": "karisim-problemleri-023-ayni-miktar-uc-islem",
+      "prompt": "Her biri 180 g ve %25 şekerli üç homojen karışım var. A’dan yalnız 36 g su buharlaşıyor. B’den 36 g homojen karışım dökülüyor. C’den 36 g homojen karışım dökülüp yerine 36 g saf su konuyor. Son şeker yüzdeleri A, B, C sırasıyla nedir?",
+      "correct": "%31,25, %25 ve %20",
+      "selected": 1
+    },
+    {
+      "id": "karisim-problemleri-023-iki-kez-farkli-yerine-koy",
+      "prompt": "200 g %40 şekerli karışımdan 50 g homojen karışım dökülüp yerine 50 g saf su konuyor. Karışım yeniden homojen olduktan sonra yine 50 g dökülüp bu kez yerine 50 g saf şeker konuyor. Son şeker yüzdesi kaçtır?",
+      "correct": "%47,5",
+      "selected": 3
+    },
+    {
+      "id": "karisim-problemleri-023-toplam-bedelden-birim-fiyat",
+      "prompt": "25 kg karışımın ortalama bedeli 42 TL/kg. Karışımın 5 kg’ı 30 TL/kg, 10 kg’ı 40 TL/kg değerinde. Kalan kısmın birim bedeli kaç TL/kg’dır?",
+      "correct": "50 TL/kg",
+      "selected": 4
+    },
+    {
+      "id": "karisim-problemleri-023-su-hedefinde-saf-tuz",
+      "prompt": "Yalnız su ve tuz içeren 180 g karışımın %10’u tuz. Kaç gram saf tuz eklenirse suyun kütlece yüzdesi %75 olur? Eklenen tuzun tamamı karışıma katılıyor.",
+      "correct": "36 g",
+      "selected": 2
+    }
+  ]
+}

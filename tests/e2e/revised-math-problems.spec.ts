@@ -1,6 +1,7 @@
 import { expect, test } from "@playwright/test";
 import fractionAndAgeFlow from "../fixtures/source032-math-question-flow.json" with { type: "json" };
 import percentAndProfitFlow from "../fixtures/source033-math-question-flow.json" with { type: "json" };
+import interestAndMixtureFlow from "../fixtures/source034-math-question-flow.json" with { type: "json" };
 import { typeset } from "../../src/domain/typeset";
 import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
 import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse";
@@ -8,7 +9,7 @@ import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse"
 registerOfflineBootDiagnostics();
 test.use({ locale: "tr-TR", timezoneId: "Europe/Istanbul" });
 
-const flow = { ...fractionAndAgeFlow, ...percentAndProfitFlow };
+const flow = { ...fractionAndAgeFlow, ...percentAndProfitFlow, ...interestAndMixtureFlow };
 const courses = [
   {
     lesson: "kesir-problemleri",
@@ -52,6 +53,26 @@ const courses = [
     sheet: "İndirim sınırını korunacak kâra göre hesapla",
     count: 16,
     official: [{ year: 2024, question: 8, page: 26, answer: "A", example: "10.000<b<20.000 TL" }],
+  },
+  {
+    lesson: "faiz-problemleri",
+    search: "Faiz problemleri",
+    topic: "detail-215",
+    model: "source022-split-interest",
+    exploration: "split-simple-interest-source-022",
+    sheet: "İki yatırımın döneme ait katsayılarını karşılaştır",
+    count: 16,
+    official: [{ year: 2013, exam: "ALES İlkbahar · Sayısal-1", question: 20, page: 7, answerPage: 61, answer: "A", example: "Anapara 3.000 TL, düşük yıllık oran %5." }],
+  },
+  {
+    lesson: "karisim-problemleri",
+    search: "Karışım problemleri",
+    topic: "detail-216",
+    model: "source023-target-mixture",
+    exploration: "target-mixture-source-023",
+    sheet: "Hedef yüzde iki kütlenin oranını belirler",
+    count: 16,
+    official: [{ year: 2013, exam: "ALES İlkbahar · Sayısal-1", question: 18, page: 7, answerPage: 61, answer: "B", example: "Saf şekerle %32, şeker içermeyen unla %12." }],
   },
 ] as const;
 
@@ -125,7 +146,7 @@ for (const course of courses) {
       await panel.getByRole("slider", { name: "A kabının içeriğinden tüketilen", exact: true }).press("End");
       await expect(result).toContainText("başlangıç doluluğu tek olarak belirlenemez.");
       await panel.getByRole("button", { name: "Küçük B kabı", exact: true }).click();
-    } else {
+    } else if (course.lesson === "kar-zarar-problemleri") {
       await expect(result).toContainText("Kâr 45 TL.");
       await panel.getByRole("button", { name: "Zarar etmeme fiyatını dene", exact: true }).click();
       await expect(result).toContainText("Başa baş. Gelir maliyete eşit.");
@@ -145,6 +166,37 @@ for (const course of courses) {
       await expect(graph).toHaveCount(0);
       await panel.getByRole("button", { name: "Örneğe dön", exact: true }).click();
       await units.press("ArrowLeft");
+    } else if (course.lesson === "faiz-problemleri") {
+      await expect(result).toContainText("A’ya 3000 TL, B’ye 4200 TL ayrılır.");
+      const interest = panel.getByRole("textbox", { name: "Verilen toplam faiz (TL)", exact: true });
+      await panel.getByRole("button", { name: "Faiz çarpanlarını eşitle", exact: true }).click();
+      await expect(result).toContainText("Her bölüşüm geçerli.");
+      await expect(graph).toHaveCount(0);
+      await interest.fill("601");
+      await expect(result).toContainText("Çözüm yok.");
+      await interest.fill("-1");
+      await expect(interest).toHaveAttribute("aria-invalid", "true");
+      await expect(result).toContainText("sıfır veya pozitif bir tam sayı gir.");
+      await panel.getByRole("button", { name: "Farklı süreli örneği aç", exact: true }).click();
+      const principal = panel.getByRole("slider", { name: "Toplam anapara", exact: true });
+      await principal.press("ArrowRight");
+      await expect(principal).toHaveAttribute("aria-valuetext", "7300 TL");
+      expect(await graph.innerHTML()).not.toBe(original);
+    } else {
+      await expect(result).toContainText("50 g karışım eklenir.");
+      const target = panel.getByRole("slider", { name: "Hedef yüzde", exact: true });
+      await target.press("End");
+      await expect(result).toContainText("Hedef yüzde mümkün değil.");
+      await expect(graph).toHaveCount(0);
+      await panel.getByRole("button", { name: "Hedefi eklenen yüzdeye eşitle", exact: true }).click();
+      await expect(result).toContainText("Sonlu çözüm yok.");
+      await panel.getByRole("button", { name: "Üç yüzdeyi eşitle", exact: true }).click();
+      await expect(result).toContainText("Her ekleme miktarı hedefi verir.");
+      await panel.getByRole("button", { name: "Örneğe dön", exact: true }).click();
+      await target.press("ArrowRight");
+      await expect(target).toHaveAttribute("aria-valuetext", "%31");
+      await expect(result).toContainText("750/19 g karışım eklenir.");
+      expect(await graph.innerHTML()).not.toBe(original);
     }
     const note = "Şekildeki sonucu başlangıç koşuluyla denetledim.";
     const notes = page.locator(".study-notes").getByRole("textbox", { name: "Notun", exact: true });
@@ -209,16 +261,28 @@ for (const course of courses) {
     ]);
     await page.reload();
     expect(learning(await storage(page))).toEqual(learning(saved));
+    const exams = page.getByRole("region", { name: "Bu konunun geçmiş ÖSYM soruları", exact: true });
     for (const official of course.official) {
+      const exam = "exam" in official ? official.exam : "TYT · Temel Matematik";
       const source = page.locator(".past-exam-reference").filter({
-        hasText: `${official.year} TYT · Temel Matematik · Soru ${official.question} ·`,
+        hasText: `${official.year} ${exam} · Soru ${official.question} ·`,
       });
+      if ("exam" in official) {
+        await exams.getByRole("combobox", { name: "Sınav", exact: true }).selectOption("TYT");
+        await expect(source).toHaveCount(0);
+        await exams.getByRole("combobox", { name: "Sınav", exact: true }).selectOption("ALES");
+        await exams.getByRole("combobox", { name: "Yıl", exact: true }).selectOption(String(official.year));
+      }
       await source.getByRole("button", { name: "Çözümü adım adım aç", exact: true }).click();
       for (let step = 0; step < 2; step += 1)
         await source.getByRole("button", { name: "Sonraki çözüm adımı", exact: true }).click();
       await expect(source.locator(".worked-conclusion")).toContainText(typeset(official.example));
       await source.locator("summary").click();
       await expect(source).toContainText(`Resmî cevap: ${official.answer}`);
+      if ("answerPage" in official) {
+        await expect(source.getByRole("link", { name: "Resmî cevap anahtarı (internet)" }))
+          .toHaveAttribute("href", `https://dokuman.osym.gov.tr/web/eskidosyalar/2213.pdf#page=${official.answerPage}`);
+      }
       await expect(source.getByRole("link", { name: /Resmî kaynak kaydı/ }))
         .toHaveAttribute("href", new RegExp(`^https://dokuman\\.osym\\.gov\\.tr/.+\\.pdf#page=${official.page}$`));
     }

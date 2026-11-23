@@ -11,6 +11,8 @@ const models = [
   { lesson: "yas-problemleri", model: "source019-calendar-age" },
   { lesson: "yuzde-problemleri", model: "source020-equal-remainders" },
   { lesson: "kar-zarar-problemleri", model: "source021-fire-profit" },
+  { lesson: "faiz-problemleri", model: "source022-split-interest" },
+  { lesson: "karisim-problemleri", model: "source023-target-mixture" },
 ];
 
 for (const width of [320, 375, 1280]) {

@@ -247,4 +247,28 @@ export const examTeachingCases: Record<string, ExamTeachingCase> = {
     pitfall:
       "Tüketim oranını kapasiteden çıkarmak veya eşit kalanlardan başlangıç doluluklarının eşit olduğunu varsaymak.",
   },
+  "2013-ALES-ILKBAHAR-SAY1-20": {
+    prompt:
+      "Aynı başlangıç tutarı iki yıl için iki ayrı yıllık basit faiz seçeneğiyle değerlendiriliyor. Yüksek oran, düşük orandan 3 yüzde puan büyük. Faizler sırasıyla 480 ve 300 TL. Anaparayı ve düşük yıllık oranı bul.",
+    steps: [
+      "Faizlerin farkı 180 TL. Anapara P, süre iki yıl ve ondalık oran farkı 0,03 olduğundan 180=P·2·0,03.",
+      "180’i 0,06’ya bölünce P=3.000 TL olur. Düşük oran 300/(3.000·2)=0,05, yani yıllık %5.",
+      "Yüksek oran yıllık %8. 3.000·0,08·2=480 TL ve 3.000·0,05·2=300 TL olarak iki koşul da sağlanır.",
+    ],
+    answer: "Anapara 3.000 TL, düşük yıllık oran %5.",
+    pitfall:
+      "İki yıllık toplam faiz farkını yalnız bir yıllık katsayı farkına bölmek.",
+  },
+  "2013-ALES-ILKBAHAR-SAY1-18": {
+    prompt:
+      "12 kg’lık kuru karışımın kütlece %15’i şekerdir. İlk senaryoda 3 kg saf şeker, ikinci senaryoda 3 kg şeker içermeyen un ekleniyor. Kayıp yok. İki yeni şeker yüzdesini sırasıyla bul.",
+    steps: [
+      "İlk karışımda 12·0,15=1,8 kg şeker bulunur. Her senaryoda yeni toplam 15 kg.",
+      "Saf şeker eklenirse yeni şeker 1,8+3=4,8 kg ve 4,8/15=%32.",
+      "Şeker içermeyen un eklenirse şeker kütlesi 1,8 kg olarak kalır. 1,8/15=%12.",
+    ],
+    answer: "Saf şekerle %32, şeker içermeyen unla %12.",
+    pitfall:
+      "Her iki eklemede de şeker kütlesini artırmak veya ilk toplam 12 kg’ı paydada korumak.",
+  },
 };

@@ -7,6 +7,8 @@ import {
   relativeMotion,
 } from "./forge012Math";
 import { useExploration } from "./useExploration";
+import { SplitInterestSource022Lab } from "./SplitInterestSource022Lab";
+import { TargetMixtureSource023Lab } from "./TargetMixtureSource023Lab";
 import "./forge012Math.css";
 import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number) =>
@@ -846,9 +848,15 @@ export default function Forge012MathLab({ id }: { id: string }) {
   return (
     <section className="forge012-math-lab" data-forge012={id}>
       {id === "faiz-problemleri" ? (
-        <Interest />
+        <>
+          <Interest />
+          <SplitInterestSource022Lab />
+        </>
       ) : id === "karisim-problemleri" ? (
-        <Mixture />
+        <>
+          <Mixture />
+          <TargetMixtureSource023Lab />
+        </>
       ) : id === "isci-problemleri" ? (
         <Workers />
       ) : id === "havuz-problemleri" ? (

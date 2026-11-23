@@ -20,10 +20,12 @@ it("connects all five reviewed headings and preserves meaningful independent que
   });
   for (const l of forge012MathLessons) {
     const g = forge012MathGuides.find((x) => x.id === l.id)!;
-    expect(g.sections).toHaveLength(8);
+    const revised =
+      l.id === "faiz-problemleri" || l.id === "karisim-problemleri";
+    expect(g.sections).toHaveLength(revised ? 14 : 8);
     expect(g.examples.length).toBeGreaterThanOrEqual(4);
     expect(g.recall.length).toBeGreaterThanOrEqual(4);
-    expect(l.questions).toHaveLength(10);
+    expect(l.questions).toHaveLength(revised ? 16 : 10);
     for (const q of l.questions) {
       expect(q.options).toHaveLength(5);
       expect(new Set(q.options.map((o) => o.tr)).size).toBe(5);
@@ -40,7 +42,7 @@ it("connects all five reviewed headings and preserves meaningful independent que
     ).toBe(true);
   }
 });
-it("independently verifies the fifty authored answer keys", () => {
+it("independently verifies the original fifty authored answer keys", () => {
   const keys = [
     ["300", "4500", "18", "40", "7000", "7200", "4000", "Eşittir.", "0", "6"],
     ["25", "15", "25", "50", "24", "80", "40", "55", "50", "42"],
@@ -60,7 +62,9 @@ it("independently verifies the fifty authored answer keys", () => {
     ],
   ];
   forge012MathLessons.forEach((l, j) =>
-    expect(l.questions.map((q) => q.options[q.answer].tr)).toEqual(keys[j]),
+    expect(
+      l.questions.slice(0, keys[j].length).map((q) => q.options[q.answer].tr),
+    ).toEqual(keys[j]),
   );
   expect((6000 * 0.12 * 5) / 12).toBe(300);
   expect(900 / (0.1 * 2)).toBe(4500);

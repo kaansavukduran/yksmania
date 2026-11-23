@@ -388,6 +388,42 @@ export const pastExamReferences: PastExamReference[] = [
       "0,70·0,96C=0,672C kontrolü iki kalanı eşitler. Başlangıç doluluğu %70, resmî anahtar E’dir. Soru fiziksel PDF sayfası 30 (basılı 28), anahtar fiziksel PDF sayfası 45’tedir.",
     ],
   },
+  {
+    id: "2013-ALES-ILKBAHAR-SAY1-20",
+    bookletId: "2013-ales-ilkbahar",
+    test: "Sayısal-1",
+    question: 20,
+    page: 7,
+    answerPage: 61,
+    answer: "A",
+    topicIds: ["detail-215"],
+    title: "Aynı anaparada iki faiz oranını karşılaştırma",
+    connection:
+      "2013 ALES İlkbahar · Aynı anapara ve bir yıllık süre için faiz oranı ile TL getirisinin birimini ayrı tut.",
+    solution: [
+      "İlk yıllık yüzde p, ortak anapara P olsun. Bir yıldaki faizler P·p/100=200 ve P·(p−2)/100=100 TL’dir.",
+      "İki denklemi çıkar. 100=P·2/100 olduğundan P=5.000 TL bulunur. İlk yılın yüzdesi 200/5.000·100=4. İkinci getiri sıfır olmadığı için p/(p−2)=200/100 üzerinden de p=4 bulunabilir.",
+      "5.000 TL’nin %4’ü 200, %2’si 100 TL’dir. İlk oran %4 ve resmî anahtar A. Soru fiziksel PDF s. 7 (basılı s. 5), anahtar fiziksel PDF s. 61.",
+    ],
+  },
+  {
+    id: "2013-ALES-ILKBAHAR-SAY1-18",
+    bookletId: "2013-ales-ilkbahar",
+    test: "Sayısal-1",
+    question: 18,
+    page: 7,
+    answerPage: 61,
+    answer: "B",
+    topicIds: ["detail-216"],
+    title: "Saf bileşen eklenince toplam da büyür",
+    connection:
+      "2013 ALES İlkbahar · Eklenen saf şeker, hem ölçülen şeker miktarına hem toplam kütleye katılır.",
+    solution: [
+      "Başlangıçta 10 kg karışımın %12’si şekerdir. Şeker kütlesi 10·0,12=1,2 kg.",
+      "Eklenen 1 kg saf şekerle şeker 2,2 kg, toplam karışım 11 kg olur. 100·2,2/11=%20.",
+      "11 kg’ın %20’si 2,2 kg’dır. Resmî anahtar B. Soru fiziksel PDF s. 7 (basılı s. 5), anahtar fiziksel PDF s. 61.",
+    ],
+  },
 ];
 // Selected companion links leave all earlier source records and their topic lists intact.
 const sourceCompanionReferences: Record<string, readonly string[]> = {

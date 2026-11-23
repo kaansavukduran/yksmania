@@ -1,5 +1,19 @@
 import { txt, type Lesson } from "../domain/model";
 import type { LessonGuide } from "./guides/types";
+import {
+  interestProblemsSource022Examples,
+  interestProblemsSource022Practice,
+  interestProblemsSource022Recall,
+  interestProblemsSource022Sections,
+  interestProblemsSource022Summary,
+} from "./interestProblemsSource022Revision";
+import {
+  mixtureProblemsSource023Examples,
+  mixtureProblemsSource023Practice,
+  mixtureProblemsSource023Recall,
+  mixtureProblemsSource023Sections,
+  mixtureProblemsSource023Summary,
+} from "./mixtureProblemsSource023Revision";
 type Problem = {
   prompt: string;
   correct: string;
@@ -80,6 +94,7 @@ const packs: Pack[] = [
           "Önce bir yıllık getiriyi hesaplamak ay sorularında hızlı bir büyüklük kontrolüdür. Sekiz aylık faiz bir yıllığın 2/3’ü olmalı. Sonra bulduğun bilinmeyeni ilk eşitliğe geri koy, toplamı ve birimi doğrula. Vergi, komisyon veya değişen kur bilgisi verilmedikçe soru modeline kendiliğinden ekleme.",
         ],
       },
+      ...interestProblemsSource022Sections,
     ],
     examples: [
       {
@@ -186,6 +201,7 @@ const packs: Pack[] = [
         check: "8000·1,25²=12500; basit model 12000 olurdu.",
         pitfall: "Yeniden yatırma koşulunu atlayıp 8000·(1+2·0,25) kullanmak.",
       },
+      ...interestProblemsSource022Examples,
     ],
     recall: [
       {
@@ -205,6 +221,7 @@ const packs: Pack[] = [
         answer:
           "Aynı başlangıç ve oranla ilk yılda eşittir; sonraki dönemde bileşik faize önceki getiri katılır.",
       },
+      ...interestProblemsSource022Recall,
     ],
     questions: [
       {
@@ -303,8 +320,7 @@ const packs: Pack[] = [
           "r/(r−2)=300/200=3/2 ⇒2 r=3 r−6 ⇒r=6. Anapara 5000 TL olursa %6 getirisi 300, %4 getirisi 200 TL olur. İki getirinin farkını doğrudan yüzde sanma.",
       },
     ],
-    source:
-      "Aurelia 022 Faiz Problemleri, öğretim ve özgün örnekler s. 1–6. Kaynak kapsamına dayalı özgün öğretim ve zaman-faiz modeli; bağlantılı OGM/ÖSYM belgeleri bu ünitede bağımsız doğrulanmış sayılmaz.",
+    source: interestProblemsSource022Summary,
   },
   {
     id: "karisim-problemleri",
@@ -373,6 +389,7 @@ const packs: Pack[] = [
           "Karışık yemişin kilogram fiyatı da aynı ağırlıklı toplam yapısına sahiptir: toplam bedel/toplam kilogram. Bu kez korunan şeker değil bedel katkısıdır; gram yüzdesini fiyat yüzdesi sanma. Sonuç kontrolünde toplam miktar, seçilen bileşen, yüzde sınırı ve işlem sırasını ayrı ayrı söyle.",
         ],
       },
+      ...mixtureProblemsSource023Sections,
     ],
     examples: [
       {
@@ -478,6 +495,7 @@ const packs: Pack[] = [
         check: "%30’dan düştü; saf su eklemek derişimi artıramaz.",
         pitfall: "Dökme sırasında şeker miktarı 60 g kaldı sanmak.",
       },
+      ...mixtureProblemsSource023Examples,
     ],
     recall: [
       {
@@ -498,6 +516,7 @@ const packs: Pack[] = [
         answer:
           "Yalnız birleştirmeyle olamaz; sonuç iki başlangıç yüzdesi arasında olmalıdır.",
       },
+      ...mixtureProblemsSource023Recall,
     ],
     questions: [
       {
@@ -591,8 +610,7 @@ const packs: Pack[] = [
           "Kütleler 8 ve 12 kg; toplam değer 8·30+12·50=840 TL. 840/20=42 TL/kg. 30 ile 50’nin düz ortalaması 40, eşit olmayan kütle ağırlıklarını göz ardı eder.",
       },
     ],
-    source:
-      "MEBİ TYT Matematik Konu Özetleri, basılı s. 53/PDF 55; Aurelia 023 Karışım Problemleri, öğretim s. 1–6. Kütle korunumuna dayalı özgün anlatım ve sorular; resmî soru aktarımı değildir.",
+    source: mixtureProblemsSource023Summary,
   },
   {
     id: "isci-problemleri",
@@ -1490,20 +1508,24 @@ export const forge012MathLessons: Lesson[] = packs.map((p) => ({
     title: txt(s.title),
     text: txt(s.paragraphs.join("\n\n")),
   })),
-  questions: p.questions.map((q, i) => {
-    const answer = i % 5,
-      options = [...q.distractors];
-    options.splice(answer, 0, q.correct);
-    return {
-      id: `${p.id}-012-${i + 1}`,
-      prompt: txt(q.prompt),
-      options: options.map(txt),
-      answer,
-      hint: txt(q.hint),
-      explanation: txt(q.explanation),
-      skill: p.title,
-    };
-  }),
+  questions: [
+    ...p.questions.map((q, i) => {
+      const answer = i % 5,
+        options = [...q.distractors];
+      options.splice(answer, 0, q.correct);
+      return {
+        id: `${p.id}-012-${i + 1}`,
+        prompt: txt(q.prompt),
+        options: options.map(txt),
+        answer,
+        hint: txt(q.hint),
+        explanation: txt(q.explanation),
+        skill: p.title,
+      };
+    }),
+    ...(p.id === "faiz-problemleri" ? interestProblemsSource022Practice : []),
+    ...(p.id === "karisim-problemleri" ? mixtureProblemsSource023Practice : []),
+  ],
   source: txt(p.source),
   tags: [p.topic, "Özgün öğretim soruları"],
 }));
