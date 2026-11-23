@@ -9,6 +9,7 @@ import { basicInequalitiesSource037Lessons } from "../learning/basicInequalities
 import { absoluteValueSource012Lessons } from "../learning/absoluteValueSource012Revision";
 import { powersSource039Lessons } from "../learning/powersSource039";
 import { sourceQuestionLessons024 } from "../learning/sourceExercises024";
+import { ogmTranslationPractice } from "../learning/ogmTranslationPractice071";
 import {
   legacy026QuestionLessons,
   legacy026TheoryIds,
@@ -1050,6 +1051,7 @@ const baseLessons: Lesson[] = [
   ...absoluteValueSource012Lessons,
   ...powersSource039Lessons,
   ...sourceQuestionLessons024,
+  ogmTranslationPractice,
   ...geometryCircle040Lessons,
   ...permutationLessons032033,
   ...countingLessons034035,

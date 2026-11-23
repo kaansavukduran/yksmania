@@ -172,6 +172,7 @@ export const studyTopicById = (id: string) =>
   studyTopics.find((t) => t.id === id);
 // Only reviewed one-to-one subject/topic associations; no fuzzy learning credit.
 export const lessonTopic: Record<string, string> = {
+  "ayt-geo-ogm-oteleme-071": "detail-405",
   "tyt-mat-uslu-ifadeler-ogm-kaynak-sorulari-024":
     "topic-tyt-mat-uslu-sayilar-kaynak-039",
   ...geometryFoundation031TopicMap,

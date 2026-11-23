@@ -1,8 +1,8 @@
 {
-  "version": "0.70.0",
+  "version": "0.71.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Negatif çubuk yaklaşınca elektroskobun yapraklarının nasıl kapanıp yeniden açıldığını izle. Çizim yaprak bölgesinin yükü ile toplam yükün neden farklı olduğunu gösterir.",
-    "en": "Follow the electroscope leaves as a negative rod approaches. The same drawing distinguishes charge near the leaves from the net charge."
+    "tr": "İki OGM öteleme örneğinin şekillerini soru kartından oku. Verilen görüntüden başlangıca dön, ardından bir üçgenin üç köşesini aynı vektörle taşı.",
+    "en": "Read the drawings in two OGM translation exercises. Recover the original point and translate all three vertices of a triangle."
   }
 }

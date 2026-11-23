@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.71.0 · Ötelemede iki OGM örneği
+
+Yayın adayı. İlk soruda görüntü noktasını grafikten oku ve başlangıca dön. İkinci soruda üç köşeye aynı vektörü uygula. Çözümün son adımı hesaplanan görüntüyü gösterir.
+
 # ÖSYM Mania 0.70.0 · Elektroskop
 
 Yayın adayı. Negatif çubuğun temassız etkisini değiştir. Yapraklar kapanırken topuz, yaprak bölgesi ve toplam yükü karşılaştır. Ayrı Kopya Kağıdı’nda gözlem tablosu ve çözümlü çizim bulunur.

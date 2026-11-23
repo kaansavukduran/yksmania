@@ -1,10 +1,17 @@
 import { identityHash, type HelpQuestion } from "../domain/questionHelpModel";
+import type { Question } from "../domain/model";
 import type { SourceQuestionFigureSpec } from "./SourceQuestionFigure";
 import { forceAccelerationFigures, forceAccelerationQuestion } from "./forceAccelerationPractice";
 import { forceVelocityFigureData, forceVelocityQuestion } from "./forceVelocityOptions048";
 import { signedWorkFigures, signedWorkQuestionId } from "./signedWork055";
 import { springWorkFigures, springWorkQuestionId } from "./springWork057";
 import { translationQuestionFigures, translationQuestionId } from "./translationQuestion069";
+import {
+  inverseTranslationFigures,
+  inverseTranslationQuestion,
+  triangleTranslationFigures,
+  triangleTranslationQuestion,
+} from "./ogmTranslationPractice071";
 
 const crossingQuestionId = "tyt-geo-acilar-kaynak-pekitirme-032-source-001-no-parallel";
 const givenAngle = 64;
@@ -146,6 +153,7 @@ const forceFigures = {
 type FigureBinding = {
   stemRevision: string;
   helpRevision: string;
+  shortLabel?: string;
   title: string;
   pageLabel: string;
   itemLabel: string;
@@ -204,7 +212,36 @@ const velocityQuestion = {
   guidance: forceVelocityQuestion.guidance,
 };
 
+function ogmTranslationBinding(
+  source: Question,
+  page: number,
+  itemLabel: string,
+  figures: FigureBinding["figures"],
+): readonly [string, FigureBinding] {
+  const question = {
+    id: source.id,
+    prompt: source.prompt.tr,
+    options: source.options.map((option) => option.tr),
+    answer: source.answer,
+    hint: source.hint.tr,
+    explanation: source.explanation.tr,
+    guidance: source.guidance,
+  };
+  if (!question.guidance) throw new Error(`Missing OGM solution for ${source.id}`);
+  return [source.id, {
+    stemRevision: stemRevision(question),
+    helpRevision: helpRevision(question, question.guidance),
+    shortLabel: "OGM Materyal · uyarlanmış örnek",
+    title: "Öteleme Dönüşümü",
+    pageLabel: `Fiziksel ${page}. sayfa`,
+    itemLabel,
+    figures,
+  }];
+}
+
 const bindings = new Map<string, FigureBinding>([
+  ogmTranslationBinding(inverseTranslationQuestion, 12, "Görüntünün grafiğinden başlangıç noktası", inverseTranslationFigures),
+  ogmTranslationBinding(triangleTranslationQuestion, 13, "ABC üçgeninin üç köşesinin ötelenmesi", triangleTranslationFigures),
   [translationQuestionId, {
     stemRevision: "1616a8a36ab750",
     helpRevision: "0742676b2f632f",
@@ -270,7 +307,7 @@ export function questionFigures043(question: QuestionForFigures) {
 
   return {
     source: {
-      shortLabel: "Özgün öğretim soruları",
+      shortLabel: binding.shortLabel ?? "Özgün öğretim soruları",
       title: binding.title,
       pageLabel: binding.pageLabel,
       itemLabel: binding.itemLabel,
