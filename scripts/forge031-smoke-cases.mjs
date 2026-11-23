@@ -63,9 +63,13 @@ export const forge031SmokeCases = [
       persisted: { a: 57, mode: "external" },
       async act(model) {
         await expect(model.getByRole("status")).toContainText("119°.");
-        await model
-          .getByRole("combobox", { name: "Açıortay seçimi" })
-          .selectOption("external");
+        const modes = model.getByRole("group", { name: "Açıortay seçimi" });
+        const external = modes.getByRole("radio", {
+          name: "B ve C dış",
+          exact: true,
+        });
+        await external.check();
+        await expect(external).toBeChecked();
         await model
           .getByRole("slider", { name: "A açısı (°)", exact: true })
           .press("ArrowLeft");

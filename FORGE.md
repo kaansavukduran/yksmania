@@ -12,6 +12,8 @@ Bir sonraki koşuda 375 pikselde Binom atölyesinin “Üs” ve Olasılık atö
 
 375 pikseldeki iki tam görsel denetim grubu ve Binom/Olasılık dahil on öğrenme akışı yeniden geçti. Üç eski Kopya Kağıdı akışı, uygulamadaki 510 başlık ve özetle aynı sayıyı bekleyecek şekilde güncellendi. Çevrimdışı not, puan yazmama ve eski konu içeriği kontrolleri aynı akışlarda doğrulandı. [Önceki akış raporu](https://github.com/kaansavukduran/yksmania/actions/runs/45166754248/job/137667263599)
 
+Tam dal koşusunda birim testleri ve yedi tarayıcı grubu geçti. Windows ve Linux ortak atölye testi eski açılır menüyü beklediği için süre aşımına uğradı. Pages ve masaüstünün paylaştığı test artık dış açıortay seçeneğini işaretliyor, seçimi ve 61,5° sonucunu denetliyor. Çevrimdışı kayıt ve yeniden açılış kontrolleri sürüyor. [Dal koşusu](https://github.com/kaansavukduran/yksmania/actions/runs/45171209000)
+
 # Olasılık ve Veri Analizi · 0.41.0 adayı
 
 23 Kasım 2026. Olasılık’ın güncel 12 sayfası ve Veri Analizi’nin güncel 17 sayfası metin ve görsel olarak incelendi. Olasılık’ta eş olasılıklı durumları sayma, koşulla örnek uzayı daraltma, ayrıklık, bağımsızlık ve geri koymalı seçim adım adım işleniyor. Veri Analizi’nde bilinmeyen sıklığa ulaşma, standart sapmayı karşılaştırma ve ham ölçümlerden eş genişlikli sınıflar kurma tamamlandı. Etkileşimli zar tablosu ile nokta grafiği ve histogram aynı hesaplardan çizilir.
