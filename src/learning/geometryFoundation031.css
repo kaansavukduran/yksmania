@@ -52,6 +52,31 @@
   margin: 0;
   accent-color: var(--accent);
 }
+.g042-bisector-options {
+  min-inline-size: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.g042-bisector-options legend {
+  padding: 0;
+}
+.g042-bisector-options label {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 0.6rem;
+  min-block-size: 2.75rem;
+  padding-block: 0.2rem;
+  cursor: pointer;
+}
+.g042-bisector-options input {
+  inline-size: 1.1rem;
+  block-size: 1.1rem;
+  min-block-size: 0;
+  margin: 0;
+  accent-color: var(--accent);
+}
 .g031-check {
   display: flex;
   align-items: center;

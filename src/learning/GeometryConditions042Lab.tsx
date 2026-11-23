@@ -112,12 +112,13 @@ function arcAt(vertex: Point, first: Point, last: Point) {
 }
 
 const bisectorOptions: Record<BisectorMode, { label: string; rule: string }> = {
-  internal: { label: "B ve C iç açıortayları", rule: "90° + A/2" },
-  mixed: { label: "B iç, C dış açıortayı", rule: "A/2" },
-  external: { label: "B ve C dış açıortayları", rule: "90° − A/2" },
+  internal: { label: "B ve C iç", rule: "90° + A/2" },
+  mixed: { label: "B iç, C dış", rule: "A/2" },
+  external: { label: "B ve C dış", rule: "90° − A/2" },
 };
 
 function Bisectors() {
+  const choiceName = useId();
   const [state, set] = useExploration("geometry-angles-source-002", {
     a: 58,
     b: 63,
@@ -152,28 +153,27 @@ function Bisectors() {
           max={170 - a}
           change={(b) => set({ b })}
         />
-        <label className="g031-range">
-          <span>Açıortay seçimi</span>
-          <select
-            value={mode}
-            onChange={(e) =>
-              set({ mode: e.currentTarget.value as BisectorMode })
-            }
-          >
-            {Object.entries(bisectorOptions).map(([value, option]) => (
-              <option key={value} value={value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
-        </label>
+        <fieldset className="g042-bisector-options">
+          <legend>Açıortay seçimi</legend>
+          {(Object.keys(bisectorOptions) as BisectorMode[]).map((value) => (
+            <label key={value}>
+              <input
+                type="radio"
+                name={choiceName}
+                checked={mode === value}
+                onChange={() => set({ mode: value })}
+              />
+              <span>{bisectorOptions[value].label}</span>
+            </label>
+          ))}
+        </fieldset>
       </div>
       <p role="status" className="g031-insight">
         A {a}°, B {b}°, C {m.c}°. ∠B{vertex}C = {formula} ={" "}
         <strong>{angle}°</strong>.
       </p>
       <Drawing
-        title={`ABC üçgeninde ${bisectorOptions[mode].label}. Kesişim ${vertex}, işaretli açı ${angle}°.`}
+        title={`ABC üçgeninde açıortay seçimi ${bisectorOptions[mode].label}. Kesişim ${vertex}, işaretli açı ${angle}°.`}
       >
         <polygon
           points={[A, B, C].map(pair).join(" ")}

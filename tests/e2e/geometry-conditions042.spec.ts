@@ -59,11 +59,13 @@ test("İç ve dış açıortay seçimi aynı üçgeni ve kaydı çevrimdışı g
   const figure = model.getByRole("img");
   await expect(result).toContainText("∠BIC = 90° + A/2 = 119°.");
   const initial = await figure.innerHTML();
-  const choice = model.getByRole("combobox", { name: "Açıortay seçimi" });
-  await choice.selectOption("mixed");
+  const choices = model.getByRole("group", { name: "Açıortay seçimi" });
+  const mixed = choices.getByRole("radio", { name: "B iç, C dış", exact: true });
+  await mixed.check();
   await expect(result).toContainText("∠BXC = A/2 = 29°.");
   expect(await figure.innerHTML()).not.toBe(initial);
-  await choice.selectOption("external");
+  await mixed.press("ArrowDown");
+  await expect(choices.getByRole("radio", { name: "B ve C dış", exact: true })).toBeChecked();
   await expect(result).toContainText("∠BXC = 90° − A/2 = 61°.");
   await model
     .getByRole("slider", { name: "A açısı (°)", exact: true })

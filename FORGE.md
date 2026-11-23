@@ -4,6 +4,8 @@
 
 14 özgün soru, dört çözümlü örnek ve altı hatırlama eklendi. İki yeni atölye açıortay kolları ile ortak kenarlı üçgenleri hesaplanan noktalardan çiziyor. Kopya Kağıtlarına kısa çözüm yolları eklendi. 2024 TYT Temel Matematik 31 ve 32 ile 2021 TYT Temel Matematik 32, asıl kitapçık ve cevap anahtarıyla doğrulandı. Önceki 18, 10 ve 10 soruluk setlerden açılmış taslakların sınırları korunur.
 
+320 piksel genişlikte, %200 arayüz ölçeği ve %150 yazı boyutunda açıortay menüsü sayfayı 571 piksele genişletiyordu. Açıortay seçimi artık üç erişilebilir seçenek olarak satırlara sığar. Klavyenin yön tuşu seçimi, çizimi ve hesabı birlikte değiştirir. Derlemede dört geometri tarayıcı testi ve üç ilgili birim testi geçti. 320, 375 ve 1280 pikselde şekil sınırları, çevrimdışı not ve atölye tercihi geri okundu. Bu düzeltme yerel adayda doğrulandı.
+
 # Olasılık ve Veri Analizi · 0.41.0 adayı
 
 23 Kasım 2026. Olasılık’ın güncel 12 sayfası ve Veri Analizi’nin güncel 17 sayfası metin ve görsel olarak incelendi. Olasılık’ta eş olasılıklı durumları sayma, koşulla örnek uzayı daraltma, ayrıklık, bağımsızlık ve geri koymalı seçim adım adım işleniyor. Veri Analizi’nde bilinmeyen sıklığa ulaşma, standart sapmayı karşılaştırma ve ham ölçümlerden eş genişlikli sınıflar kurma tamamlandı. Etkileşimli zar tablosu ile nokta grafiği ve histogram aynı hesaplardan çizilir.
