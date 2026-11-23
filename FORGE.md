@@ -1,6 +1,6 @@
 # Isıtma eğrisinin beş basamağı · 0.66.0 adayı
 
-MEBİ TYT Fizik Konu Özetleri fiziksel 71, basılı 69, saf suyun sıcaklığı ve birikimli verilen ısının beş bölgesini gösteriyor. Mevcut Hâl Değişimi çiziminin 100 g, −20 °C’den 120 °C’ye ve yaklaşık 309,6 kJ toplamı varsayılan durumda korundu. Her adım aralığın başlangıcını, sonunu ve farkını gösterir. Kütleyi değiştirince enerji aralıkları kendi ölçeğinde değişir. Faz sıcaklıkları aynı basınca bağlıdır. Donarken saf madde çevreye enerji verir. İlk denetimde 320 px’de 600 kJ işareti eksen adıyla çakıştı. Eksen adı orta ve alt konuma alındı. Aynı sıkı çizim denetimi, çevrimdışı beş adım, ayrı Kopya Kağıdı ve çözüm görseli yeniden geçti.
+MEBİ TYT Fizik Konu Özetleri fiziksel 71, basılı 69, saf suyun sıcaklığı ve birikimli verilen ısının beş bölgesini gösteriyor. Mevcut Hâl Değişimi çiziminin 100 g, −20 °C’den 120 °C’ye ve yaklaşık 309,6 kJ toplamı varsayılan durumda korundu. Her adım aralığın başlangıcını, sonunu ve farkını gösterir. Kütleyi değiştirince enerji aralıkları kendi ölçeğinde değişir. Faz sıcaklıkları aynı basınca bağlıdır. Donarken saf madde çevreye enerji verir. İlk denetimde 320 px’de 600 kJ işareti eksen adıyla çakıştı. Eksen adı orta ve alt konuma alındı. Aynı sıkı çizim denetimi, çevrimdışı beş adım, ayrı Kopya Kağıdı ve çözüm görseli yeniden geçti. İlk tam denetimde arşivdeki 121 numaralı Kopya Kağıdı metni de değişmişti. Yeni tablo ve örnek, öğrenci okuyucusundaki güncel rehberden geliyor. Arşiv kaydı önceki metnine döndü.
 
 # Öz ısı ve sıcaklık değişimi · 0.65.0 adayı
 

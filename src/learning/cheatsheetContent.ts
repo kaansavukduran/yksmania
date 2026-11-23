@@ -117,7 +117,6 @@ import { newtonTimeTitle } from "./newtonTimeComparison";
 import { forcePairsTitle } from "./newtonForcePairs";
 import { frictionThresholdTitle } from "./newtonFrictionThreshold";
 import { cylinderPotentialTitle } from "./cylinderPotentialEnergy";
-import { heatingCurveTitle } from "./heatingCurve066";
 import { equalHeatTitle, specificHeatTitle } from "./specificHeat065";
 import { exactTemperatureTitle } from "./exactTemperature064";
 import { thermalTransferTitle } from "./thermalTransfer063";
@@ -156,12 +155,6 @@ export interface CheatSheet {
 }
 
 const revisedSectionTextByLesson = new Map([
-  ["hal-degisimi", new Map([
-    [heatingCurveTitle, [
-      "Yatay eksen birikimli ısıdır. Her basamağın enerjisi, bitiş ve başlangıç ısılarının farkıdır.",
-      "Eğimli basamakta Q = mcΔT, yatay basamakta Q = mL. Kütle aynı katsayılarla artınca beş enerji aralığı büyür, geçiş sıcaklıkları sabit kalır.",
-    ]],
-  ])],
   ["isi-ve-sicaklik", new Map([
     [specificHeatTitle, [
       "Öz ısı örnekleri J/(kg·K) cinsindeyse 4.184’e bölerek cal/(g·°C) birimine geç. Demir 448 / 4.184 ≈ 0,107.",
