@@ -100,6 +100,16 @@ const revisions = [
     appendedQuestions: ["uc-grupta-yalniz-ikili", "yalniz-ikililer-verildiginde", "yalniz-ve-hicbiri", "uc-sabit-karar", "kesisimin-tumleyeni", "kisi-ve-kayit-sayisi", "iki-kosul-ve-ayri-filtre"].map((id) => `kumeler-029-${id}`),
     oldSource: "MEBİ TYT Matematik Konu Özetleri PDF s. 66–70 (basılı s. 64–68); Aurelia 029 Kümeler, öğretim PDF s. 1–3,5–7. İki kümeli sayma, alt küme koşulları ve evrene bağlı tümleyenle özgün anlatım. Resmî soru değildir.",
   },
+  {
+    lesson: "kartezyen-carpim", topic: "detail-223", sections: 8, examples: 4, recall: 4,
+    appendedQuestions: ["urun-farkinda-tek-kosul", "kosullu-ikili-ve-kosegen", "toplamla-uygun-yuvayi-bul", "ortak-urun-dort-kume", "bos-urun-kaynagi", "dagilmada-cifti-tek-say", "eksende-farkli-degeri-say"].map((id) => `kartezyen-carpim-030-${id}`),
+    oldSource: "MEBİ TYT Matematik Konu Özetleri PDF s. 71 (basılı s. 69); Aurelia 030 Kümeler: Kartezyen Çarpım, öğretim PDF s. 1–3,5–7. Boş kaynak istisnası, konuma göre kesişim ve doğrudan tanımdan türetilen özgün örnekler. Resmî soru değildir.",
+  },
+  {
+    lesson: "mantik-onerme", topic: "detail-224", sections: 10, examples: 4, recall: 4,
+    appendedQuestions: ["dis-kosuldan-iceri", "karsit-ve-tersin-satiri", "tek-sayilarin-toplami", "evren-icinde-karsi-ornek", "degillemede-iki-kosul", "niceleyicinin-sirasi", "hipotez-hukum-yer-degisimi", "tanim-ve-hipotez"].map((id) => `mantik-onerme-031-${id}`),
+    oldSource: "MEBİ TYT Matematik Konu Özetleri PDF s. 58–65 (basılı s. 56–63); Aurelia 031 Mantık ve Önermeler, öğretim PDF s. 1–3,5–7. Özgün tablolar, dıştan içe koşul çözümü ve sonlu alan kanıtı. Mantıksal koşul nedensellik değildir; resmî sınav sorusu sunulmaz.",
+  },
 ];
 
 const additions = new Set(revisions.flatMap(({ appendedQuestions }) => appendedQuestions));
@@ -145,6 +155,18 @@ export function beforeSource017Registration(source: string) {
     );
 }
 
+const oldConditionalTitle = "Karşıt ters denktir; karşıt ve ters genellikle değildir";
+const expandedConditionalTitle = "Karşıt ters ilk koşula, karşıt ve ters birbirine denktir";
+const oldConditionalSentence =
+  "Buna karşılık karşıt ve ters bazı satırlarda farklı sonuç verir; ikisini koşulsuz başlangıç teoremi gibi kullanma.";
+const expandedConditionalSentence =
+  "Karşıt ve ters birbirine denktir. Bu ikisi, başlangıç koşulundan bazı satırlarda farklı sonuç verir.";
+
+function historicalConditionalText(text: string) {
+  return text.replace(expandedConditionalTitle, oldConditionalTitle)
+    .replace(expandedConditionalSentence, oldConditionalSentence);
+}
+
 export function beforeSource031Teaching(
   surface: "lessons" | "questions" | "guides" | "sheets",
   id: string,
@@ -154,13 +176,22 @@ export function beforeSource031Teaching(
   if (!prior || !value) return value;
   if (surface === "lessons") {
     const lesson = value as Lesson;
-    return { ...lesson, body: lesson.body.slice(0, prior.sections), questions: beforeSource031Questions(lesson.questions), source: txt(prior.oldLessonSource ?? prior.oldSource) };
+    const body = lesson.body.slice(0, prior.sections).map((section) => (
+      prior.lesson === "mantik-onerme" && section.title.tr === expandedConditionalTitle
+        ? { title: txt(oldConditionalTitle), text: txt(historicalConditionalText(section.text.tr)) }
+        : section
+    ));
+    return { ...lesson, body, questions: beforeSource031Questions(lesson.questions), source: txt(prior.oldLessonSource ?? prior.oldSource) };
   }
   if (surface === "guides") {
     const guide = value as LessonGuide;
     return {
       ...guide,
-      sections: guide.sections.slice(0, prior.sections),
+      sections: guide.sections.slice(0, prior.sections).map((section) => (
+        prior.lesson === "mantik-onerme" && section.title === expandedConditionalTitle
+          ? { title: oldConditionalTitle, paragraphs: section.paragraphs.map(historicalConditionalText) }
+          : section
+      )),
       examples: guide.examples.slice(0, prior.examples),
       recall: guide.recall.slice(0, prior.recall),
       source: prior.oldSource,
@@ -170,7 +201,11 @@ export function beforeSource031Teaching(
     const sheet = value as CheatSheet;
     return {
       ...sheet,
-      sections: sheet.sections.slice(0, prior.sections),
+      sections: sheet.sections.slice(0, prior.sections).map((section) => (
+        prior.lesson === "mantik-onerme" && section.title === expandedConditionalTitle
+          ? { ...section, title: oldConditionalTitle, text: section.text.map(historicalConditionalText) }
+          : section
+      )),
       examples: sheet.examples.slice(0, prior.examples),
       cautions: sheet.cautions.slice(0, prior.examples),
       recall: sheet.recall.slice(0, prior.recall),

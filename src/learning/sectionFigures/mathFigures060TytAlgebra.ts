@@ -425,6 +425,6 @@ export const mathFigures060TytAlgebra: Record<string, Record<string, FigureDef>>
     "Ve, veya, ya da üç ayrı seçme kuralıdır": connectives,
     "De Morgan bütün yapının değilini değiştirir": deMorgan,
     "İse yalnız doğru öncül ve yanlış sonuçta yanlıştır": implication,
-    "Karşıt ters denktir; karşıt ve ters genellikle değildir": contrapositive,
+    "Karşıt ters ilk koşula, karşıt ve ters birbirine denktir": contrapositive,
   },
 };

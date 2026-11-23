@@ -1,3 +1,5 @@
+import { logicSource031SheetText } from "./logicSource031Revision";
+import { cartesianSource030SheetText } from "./cartesianSource030Revision";
 import { percentProblemsSource020SheetText } from "./percentProblemsSource020Revision";
 import { profitProblemsSource021SheetText } from "./profitProblemsSource021Revision";
 import { interestProblemsSource022SheetText } from "./interestProblemsSource022Revision";
@@ -145,6 +147,8 @@ const revisedSectionTextByLesson = new Map([
   ["grafik-problemleri", graphProblemsSource027SheetText],
   ["carpanlara-ayirma", factorizationSource028SheetText],
   ["kumeler", setsSource029SheetText],
+  ["mantik-onerme", logicSource031SheetText],
+  ["kartezyen-carpim", cartesianSource030SheetText],
 ]);
 
 const completeSourceSheets = new Set([

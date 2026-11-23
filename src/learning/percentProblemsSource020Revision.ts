@@ -109,6 +109,13 @@ export const percentProblemsSource020Sections: GuideSection[] = [
       ],
     },
   },
+  {
+    title: "Kesri koru, kuruşa ödeme kuralında yuvarla",
+    paragraphs: [
+      "1/3’ün ondalık gösterimi devam eder. Ara işlemde 1/3 yerine 0,33 kullanırsan sonucu erken değiştirirsin. Tam tutar üzerinden hesap yap, yalnız soruda kuruşa yuvarlanması istenen aşamada iki ondalık basamağa yuvarla.",
+      "5 TL’nin üçte biri tam olarak 5/3 TL, kuruşa yuvarlandığında 1,67 TL’dir. 5×0,33=1,65 TL, ara kesri erken kısaltmanın sonucudur. Üç ayrı ödemenin her biri 1,67 TL’ye yuvarlanırsa 5,01 TL olur. Tek ödemede 3·(5/3)=5,00 TL’dir. Soru taksit başına mı, toplamda mı yuvarlama istediğini belirler.",
+    ],
+  },
 ];
 
 export const percentProblemsSource020SheetText = new Map<string, string[]>([
@@ -149,6 +156,14 @@ export const percentProblemsSource020SheetText = new Map<string, string[]>([
     titles.lastMethods,
     [
       "Birim nicelikte bölüm, toplam üründe çarpım, iki oranın doğrudan farkında yüzde puanı kullan.",
+    ],
+  ],
+  [
+    "Kesri koru, kuruşa ödeme kuralında yuvarla",
+    [
+      "1/3 gibi bitmeyen bir oranı kesir olarak işle. Taksit veya toplam hangi aşamada belirtiliyorsa kuruşa o aşamada yuvarla.",
+      "İç içe yüzdede taksitlerin toplamını yaz. Birbirine bağlı iki oranı çarp veya ters yönde sırayla böl.",
+      "Aynı ilk etikette iki yolun satış çarpanlarını çıkar. Parasal fark bu çarpan farkı ile ilk fiyatın çarpımıdır.",
     ],
   ],
 ]);
@@ -211,6 +226,32 @@ export const percentProblemsSource020Examples: WorkedExample[] = [
       "Grup büyüklükleri 30, 60 ve 60. Tamamlayanların toplamı 9+36+30=75.",
     pitfall:
       "B grubundaki 60 kişiyi tamamlayan sayısı olarak vermek veya üç oranı doğrudan ortalamak.",
+  },
+  {
+    title: "Taksit toplamından iki iç içe yüzdeyi geri al",
+    prompt: "Bir cihazın fiyatının %18’i servis bedeli. Servis bedelinin %25’i üç eşit 300 TL taksitte ödeniyor. Cihazın ilk fiyatı kaç TL?",
+    strategy: "Önce taksitlerin ödenen toplamını bul. Ardından iki yüzdeyi sırasıyla geri al.",
+    steps: [
+      { label: "Ödenen toplam", expression: "3·300=900 TL", explanation: "900 TL, servis bedelinin yalnız dörtte biridir." },
+      { label: "Servis bedeli", expression: "900÷(1/4)=3.600 TL", explanation: "İç yüzde kendi tabanına, servis bedeline uygulanır." },
+      { label: "Cihazın fiyatı", expression: "3.600÷(18/100)=20.000 TL", explanation: "Dış yüzde cihaz fiyatına aittir. İki oranı toplamadan geri aldık." },
+    ],
+    answer: "20.000 TL.",
+    check: "20.000·0,18·0,25=900 TL ve üçe bölünce 300 TL.",
+    pitfall: "Taksit tutarını toplam ödeme, %25’in tabanını cihaz fiyatı sanmak.",
+  },
+  {
+    title: "Aynı etikette iki indirim yolunu TL farkıyla çöz",
+    prompt: "Aynı ilk etiket fiyatına A mağazası önce %25, sonra kalan tutara %20 indirim yapıyor. B tek seferde %35 indiriyor. A’nın son fiyatı B’ninkinden 15 TL düşük. İki mağazanın son fiyatlarının toplamı kaç TL?",
+    strategy: "İki mağazanın çarpanlarını aynı ilk etikete uygula. Çarpan farkını 15 TL ile eşitle.",
+    steps: [
+      { label: "İndirim yolları", expression: "A: 0,75·0,80F=0,60F; B: 0,65F", explanation: "İki ardışık indirimde ikinci indirim yeni fiyata uygulanır." },
+      { label: "Fark", expression: "0,65F−0,60F=15 ⇒ F=300 TL", explanation: "Fark aynı pozitif başlangıç fiyatının %5’idir." },
+      { label: "Toplam", expression: "180+195=375 TL", explanation: "Son fiyatları aynı etiket üzerinden ayrı hesapla." },
+    ],
+    answer: "375 TL.",
+    check: "195−180=15 TL. A yolunda 300→225→180 TL.",
+    pitfall: "%25 ve %20’yi doğrudan toplayıp %45 indirim saymak.",
   },
 ];
 

@@ -1,3 +1,5 @@
+import { source031TeachingCase } from "./logicSource031Official";
+import { source030TeachingCase } from "./cartesianSource030Official";
 import { source028TeachingCase } from "./factorizationSource028Official";
 import { source029TeachingCase } from "./setsSource029Official";
 
@@ -336,4 +338,6 @@ export const examTeachingCases: Record<string, ExamTeachingCase> = {
   },
   "2018-TYT-MAT-11": source028TeachingCase,
   "2018-TYT-MAT-13": source029TeachingCase,
+  "2025-TYT-MAT-11": source031TeachingCase,
+  "2022-AYT-MAT-12": source030TeachingCase,
 };

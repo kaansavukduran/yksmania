@@ -19,6 +19,8 @@ const models = [
   { lesson: "grafik-problemleri", model: "source027-piecewise-rate" },
   { lesson: "carpanlara-ayirma", model: "source028-quartic-roots" },
   { lesson: "kumeler", model: "source029-three-set-count" },
+  { lesson: "kartezyen-carpim", model: "source030-product-difference" },
+  { lesson: "mantik-onerme", model: "source031-divisibility-implication" },
 ];
 
 for (const width of [320, 375, 1280]) {

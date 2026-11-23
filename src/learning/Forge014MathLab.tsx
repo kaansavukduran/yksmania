@@ -14,6 +14,8 @@ import {
 } from "./forge014Math";
 import { useExploration } from "./useExploration";
 import { ThreeSetCountSource029Lab } from "./ThreeSetCountSource029Lab";
+import { ProductDifferenceSource030Lab } from "./ProductDifferenceSource030Lab";
+import { DivisibilityImplicationSource031Lab } from "./DivisibilityImplicationSource031Lab";
 import { PiecewiseRateSource027Lab } from "./PiecewiseRateSource027Lab";
 import "./forge014Math.css";
 import { ChoiceSelect } from "../components/ChoiceSelect";
@@ -1278,9 +1280,15 @@ export default function Forge014MathLab({ lessonId }: { lessonId: string }) {
           <ThreeSetCountSource029Lab />
         </>
       ) : lessonId === "kartezyen-carpim" ? (
-        <Product />
+        <>
+          <Product />
+          <ProductDifferenceSource030Lab />
+        </>
       ) : (
-        <Logic />
+        <>
+          <Logic />
+          <DivisibilityImplicationSource031Lab />
+        </>
       )}
       <p className="f014m-footnote">
         Model seçimleri, tahminin ve gerekçen bu cihazda saklanır. Keşif, XP

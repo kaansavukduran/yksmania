@@ -5,6 +5,7 @@ import interestAndMixtureFlow from "../fixtures/source034-math-question-flow.jso
 import workerAndPoolFlow from "../fixtures/source035-math-question-flow.json" with { type: "json" };
 import speedAndGraphFlow from "../fixtures/source036-math-question-flow.json" with { type: "json" };
 import factorizationAndSetsFlow from "../fixtures/source037-math-question-flow.json" with { type: "json" };
+import cartesianAndLogicFlow from "../fixtures/source038-math-question-flow.json" with { type: "json" };
 import { typeset } from "../../src/domain/typeset";
 import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
 import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse";
@@ -12,7 +13,7 @@ import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse"
 registerOfflineBootDiagnostics();
 test.use({ locale: "tr-TR", timezoneId: "Europe/Istanbul" });
 
-const flow = { ...fractionAndAgeFlow, ...percentAndProfitFlow, ...interestAndMixtureFlow, ...workerAndPoolFlow, ...speedAndGraphFlow, ...factorizationAndSetsFlow };
+const flow = { ...fractionAndAgeFlow, ...percentAndProfitFlow, ...interestAndMixtureFlow, ...workerAndPoolFlow, ...speedAndGraphFlow, ...factorizationAndSetsFlow, ...cartesianAndLogicFlow };
 const courses = [
   {
     lesson: "kesir-problemleri",
@@ -142,6 +143,26 @@ const courses = [
     sheet: "Üç grupta önce ortak üçlüyü yerleştir",
     count: 17,
     official: [{ year: 2018, question: 13, page: 25, keyUrl: "https://dokuman.osym.gov.tr/pdfdokuman/2018/YKS/TYT_01072018.pdf#page=42", answer: "C", example: "3 kart." }],
+  },
+  {
+    lesson: "kartezyen-carpim",
+    search: "Kartezyen çarpım",
+    topic: "detail-223",
+    model: "source030-product-difference",
+    exploration: "product-difference-source-030",
+    sheet: "Bir çiftin ürün dışında kalması için tek koşul yeter",
+    count: 17,
+    official: [{ year: 2022, exam: "AYT · Matematik", filter: "AYT", question: 12, page: 28, keyUrl: "https://dokuman.osym.gov.tr/pdfdokuman/2022/YKS/TSK/yks_2022_ayt.pdf#page=50", answer: "C", example: "9 sıralı ikili." }],
+  },
+  {
+    lesson: "mantik-onerme",
+    search: "Mantık",
+    topic: "detail-224",
+    model: "source031-divisibility-implication",
+    exploration: "divisibility-implication-source-031",
+    sheet: "Tanımdan genel ispata ilerle",
+    count: 18,
+    official: [{ year: 2025, question: 11, page: 27, keyUrl: "https://dokuman.osym.gov.tr/pdfdokuman/2025/YKS/TSK/yks_tyt_2025_kitapcik_d250.pdf#page=43", answer: "A", example: "Işık kapalı, mikrofon açık, piyano hazır değil." }],
   },
 ] as const;
 
@@ -330,7 +351,7 @@ for (const course of courses) {
       await expect(result).toContainText("x = 0. Çokluk 2.");
       await panel.getByRole("button", { name: "Eksen çevresine yaklaş", exact: true }).click();
       await expect(panel.getByRole("button", { name: "Eksen çevresine yaklaş", exact: true })).toHaveAttribute("aria-pressed", "true");
-    } else {
+    } else if (course.lesson === "kumeler") {
       await expect(result).toContainText("Birleşim 41 kişi.");
       const includeThree = panel.getByRole("checkbox", { name: "İkili sayılara üç grupta bulunanlar da girsin" });
       await includeThree.uncheck();
@@ -343,6 +364,32 @@ for (const course of courses) {
       await panel.getByRole("button", { name: "Örneğe dön", exact: true }).click();
       await three.press("ArrowLeft");
       await expect(result).toContainText("Birleşim 40 kişi.");
+    } else if (course.lesson === "kartezyen-carpim") {
+      await expect(result).toContainText("8 ikili.");
+      await expect(result).toContainText("Kalan ikililerin 2 tanesinde ilk bileşen C’nin, ikinci bileşen de D’nin dışında.");
+      const labels = panel.locator("fieldset").first().locator("label");
+      const firstRow = (await labels.nth(0).boundingBox())!.y;
+      expect((await labels.nth(1).boundingBox())!.y).toBe(firstRow);
+      await panel.getByRole("button", { name: "Çarpımların kesişimi", exact: true }).click();
+      await expect(result).toContainText("4 ikili.");
+      expect(await graph.innerHTML()).not.toBe(original);
+      const first = panel.getByRole("checkbox", { name: "C kümesinde 2", exact: true });
+      await first.focus();
+      await page.keyboard.press("Space");
+      await expect(first).not.toBeChecked();
+      await expect(result).toContainText("2 ikili.");
+      await panel.getByRole("button", { name: "Çarpımların farkı", exact: true }).click();
+      await expect(result).toContainText("10 ikili.");
+    } else {
+      await expect(result).toContainText("Bütün tam sayılarda doğru.");
+      await panel.getByRole("button", { name: "Karşıt · q → p", exact: true }).click();
+      await expect(result).toContainText("Bir karşı örnek olarak n=2 alınabilir.");
+      expect(await graph.innerHTML()).not.toBe(original);
+      const divisor = panel.getByRole("slider", { name: "q önermesindeki bölen", exact: true });
+      await divisor.press("ArrowRight");
+      await expect(result).toContainText("Bir karşı örnek olarak n=3 alınabilir.");
+      await divisor.press("ArrowRight");
+      await expect(result).toContainText("Bütün tam sayılarda doğru.");
     }
     const note = "Şekildeki sonucu başlangıç koşuluyla denetledim.";
     const notes = page.locator(".study-notes").getByRole("textbox", { name: "Notun", exact: true });
@@ -481,3 +528,36 @@ for (const course of courses) {
     expect(finished.responses.at(-1)?.questionId).toBe(last.id);
   });
 }
+
+test("yüzde ve kâr zarar: ek hesap yolları çevrimdışı anlatım ve kopya kağıdında açılır", async ({ page, context }) => {
+  await prepare(page);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const percent = { lesson: "yuzde-problemleri", search: "Yüzde problemleri" };
+  await openCourse(page, percent);
+  await page.getByText("İçindekiler", { exact: true }).click();
+  await page.getByRole("button", { name: "Kesri koru, kuruşa ödeme kuralında yuvarla", exact: true }).click();
+  await expect(page.getByText(/5,01 TL olur/)).toBeVisible();
+  await page.getByRole("button", { name: "Çözümlü örnekler", exact: true }).click();
+  for (const [name, answer] of [
+    ["Taksit toplamından iki iç içe yüzdeyi geri al", "20.000 TL."],
+    ["Aynı etikette iki indirim yolunu TL farkıyla çöz", "375 TL."],
+  ]) {
+    const example = page.locator(".worked-example").filter({ has: page.getByText(name, { exact: true }) });
+    await example.locator("summary").click();
+    await example.getByRole("button", { name: "Çözümün tamamını göster", exact: true }).click();
+    await expect(example.locator(".worked-conclusion")).toContainText(answer);
+  }
+  await page.goto("/#/cheatsheets?topic=detail-213");
+  await expect(page.getByText(/kuruşa o aşamada yuvarla/)).toBeVisible();
+  const profit = { lesson: "kar-zarar-problemleri", search: "Kâr zarar problemleri" };
+  await openCourse(page, profit);
+  await page.getByText("İçindekiler", { exact: true }).click();
+  await page.getByRole("button", { name: "Eşit satışta oranların büyüklüğünü denetle", exact: true }).click();
+  await expect(page.getByText(/2S\/\(1−r²\)/)).toBeVisible();
+  await page.goto("/#/cheatsheets?topic=detail-214");
+  await expect(page.getByText(/0<r<1 ise toplam maliyet/)).toBeVisible();
+  await page.reload();
+  await expect(page.getByText(/0<r<1 ise toplam maliyet/)).toBeVisible();
+  expect(learning(await storage(page))).toEqual(before);
+});

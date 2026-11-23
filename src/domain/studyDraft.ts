@@ -5,6 +5,8 @@ import type { Draft } from "./model";
 const legacyPracticeSizes = new Map([
   ["carpanlara-ayirma", 5],
   ["kumeler", 10],
+  ["mantik-onerme", 10],
+  ["kartezyen-carpim", 10],
   ["bilimsel-gosterim-katsayi", 10],
   ["kesir-problemleri", 10],
   ["yas-problemleri", 10],

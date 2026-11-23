@@ -41,15 +41,17 @@ it("adds a concise sheet and the revised guide after the preserved native materi
   const sheet = builtInCheatSheets.get(topic)!;
   expect(lessonTopic[id]).toBe(topic);
   expect(sheet.lessonId).toBe(id);
-  expect(guide.sections).toHaveLength(14);
+  expect(guide.sections).toHaveLength(15);
   expect(guide.recall).toHaveLength(7);
-  expect(guide.examples).toHaveLength(6);
+  expect(guide.examples).toHaveLength(8);
   expect(guide.source).toContain("içerik 1.1");
-  expect(sheet.sections).toHaveLength(14);
+  expect(sheet.sections).toHaveLength(15);
   expect(
     sheet.sections.flatMap(({ table }) => (table ? [table.rows.length] : [])),
   ).toEqual([3, 3]);
   expect(sheet.sections[8].text[0]).toContain("Kalan = kapasite");
+  expect(sheet.sections.at(-1)?.text.join(" ")).toContain("kuruşa o aşamada yuvarla");
+  expect(guide.examples.slice(-2).map(({ answer }) => answer)).toEqual(["20.000 TL.", "375 TL."]);
   expect(sheet.sections[8].text).not.toEqual(guide.sections[8].paragraphs);
   expect(digest(guide.sections.slice(0, 8))).toBe(
     "21408f493d0ca1e79aff6f622e610da7065f96e6311fa1a11e5603e0b8552b0b",

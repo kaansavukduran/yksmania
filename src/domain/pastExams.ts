@@ -1,3 +1,5 @@
+import { source031Reference } from "../learning/logicSource031Official";
+import { source030Reference } from "../learning/cartesianSource030Official";
 import booklets from "../data/official-booklets.json";
 import { source028Reference } from "../learning/factorizationSource028Official";
 import { source029Reference } from "../learning/setsSource029Official";
@@ -528,6 +530,8 @@ export const pastExamReferences: PastExamReference[] = [
   },
   source028Reference,
   source029Reference,
+  source031Reference,
+  source030Reference,
 ];
 // Selected companion links leave all earlier source records and their topic lists intact.
 const sourceCompanionReferences: Record<string, readonly string[]> = {

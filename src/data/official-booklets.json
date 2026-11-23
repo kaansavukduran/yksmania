@@ -119,5 +119,27 @@
     "coverage": "seçili soru doğrulandı",
     "sha256": "0619f79c6b6d35e7e28839c48e2057e39d9335b4134e3d3a299140a07e868b48",
     "checkedAt": "2026-11-23"
+  },
+  {
+    "id": "2022-ayt",
+    "title": "2022 AYT",
+    "exam": "AYT",
+    "year": 2022,
+    "url": "https://dokuman.osym.gov.tr/pdfdokuman/2022/YKS/TSK/yks_2022_ayt.pdf",
+    "pages": 50,
+    "coverage": "seçili soru doğrulandı",
+    "sha256": "632e68e34ab2d07aa947a5a56413021659773905d95a63dd9fb50833ad8066e5",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "id": "2025-tyt",
+    "title": "2025 TYT",
+    "exam": "TYT",
+    "year": 2025,
+    "url": "https://dokuman.osym.gov.tr/pdfdokuman/2025/YKS/TSK/yks_tyt_2025_kitapcik_d250.pdf",
+    "pages": 43,
+    "coverage": "seçili soru doğrulandı",
+    "sha256": "f14164d59354dc92098b3c1722e44380b1465e6ebbef7bcaed1c0cbd8e15a1b9",
+    "checkedAt": "2026-11-23"
   }
 ]

@@ -1,8 +1,8 @@
 {
-  "version": "0.37.0",
+  "version": "0.38.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Çarpanlara Ayırma ve Kümeler derslerine kök çokluğu ile üç kümeli sayımı gösteren iki model, 14 açıklamalı soru ve yeni Kopya Kağıdı bölümleri eklendi. Mevcut yarım çalışmalar kendi soru sayısıyla devam ediyor.",
-    "en": "Factoring and sets add two interactive models for root multiplicity and three-set counts, 14 questions with explanations, and expanded cheat sheets. Unfinished practice keeps its original question count."
+    "tr": "Kartezyen Çarpım ve Mantık derslerine iki etkileşimli model, 15 özgün soru, yeni çözümlü örnekler ve Kopya Kağıdı bölümleri eklendi. Yüzde ile Kâr Zarar dersleri yeni hesap adımlarıyla genişletildi.",
+    "en": "Cartesian products and logic add two interactive models, 15 original questions, worked examples, and cheat sheet sections. Percentages and profit and loss gain further calculation steps."
   }
 }

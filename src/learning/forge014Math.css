@@ -183,6 +183,18 @@
   gap: 0.5rem;
   margin: 1rem 0;
 }
+.f014m-set-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.75rem;
+}
+.f014m-set-members > label {
+  align-items: center;
+  min-width: 44px;
+}
+.f014m-set-members input {
+  margin: 0;
+}
 .f014m-pairs > button {
   min-width: 44px;
   box-sizing: border-box;

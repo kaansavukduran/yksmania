@@ -48,6 +48,8 @@ it("extends the native guide and sheet with preserved prior activities and quest
   expect(guide.recall).toHaveLength(7);
   expect(guide.source).toContain("içerik 1.1");
   expect(sheet.sections).toHaveLength(15);
+  expect(guide.sections.flatMap(({ paragraphs }) => paragraphs).join(" ")).toContain("2S/(1−r²)");
+  expect(sheet.sections.flatMap(({ text }) => text).join(" ")).toContain("0<r<1");
   expect(
     sheet.sections.flatMap(({ table }) => (table ? [table.rows.length] : [])),
   ).toEqual([3, 3, 3]);

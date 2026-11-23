@@ -1,3 +1,10 @@
+# YKSMania 0.38.0 · Kartezyen Çarpım ve Mantık
+
+- Kartezyen Çarpım’da ortak ve farklı sıralı ikilileri kendin seç. Nokta grafiği ve ikili listesi seçimlerinle birlikte güncellenir.
+- Mantık’ta bölenleri ve koşulun biçimini değiştir. Model, bütün tam sayılar için geçerli bir çarpan ya da kuralı çürüten bir tam sayı gösterir.
+- İki konuya 15 özgün soru ve ayrı Kopya Kağıdı bölümleri eklendi. Daha önce başlatılan 10 soruluk çalışmalarda aynı son kart açılır.
+- Yüzde’de parasal fark ve taksit örnekleri, Kâr Zarar’da eşit satışın cebirsel açıklaması eklendi.
+
 # YKSMania 0.37.0 · Çarpanlara Ayırma ve Kümeler
 
 Yayın adayı. Çarpanlara Ayırma’da iki geçici kökü değiştir ve asıl denklemde kaç farklı gerçek kök oluştuğunu izle. Kümeler’de iki ve üç grupta ortak olanların sayılarını değiştir. Venn şeması her bölgedeki kişi sayısını aynı hesapla gösterir.

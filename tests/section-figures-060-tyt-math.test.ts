@@ -96,7 +96,7 @@ describe("Forge060 TYT Matematik bölüm figürleri", () => {
     expect(frame("bilimsel-gosterim-katsayi", "Çarpma ve bölmede katsayı ile ölçeği ayır", 0, 2).readout).toContain("2,4·10³");
     expect(frame("kartezyen-carpim", "Her ilk seçimi her ikinci seçimle eşleştir", 0, 1).readout).toContain("6 çift");
     expect(frame("kartezyen-carpim", "Dağılma tanımdaki “ve/veya”dan türetilir", 0, 2).readout).toContain("4 + 4 − 2 = 6");
-    const ct = fig("mantik-onerme", "Karşıt ters denktir; karşıt ve ters genellikle değildir").draw(0, 0);
+    const ct = fig("mantik-onerme", "Karşıt ters ilk koşula, karşıt ve ters birbirine denktir").draw(0, 0);
     expect(ct.els.filter((e) => e.k === "text").map((e) => (e as { s: string }).s).slice(6, 30)).toEqual("111111100110011001001111".split(""));
   });
 

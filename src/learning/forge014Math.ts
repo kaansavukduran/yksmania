@@ -1,3 +1,17 @@
+import {
+  logicSource031Examples,
+  logicSource031Practice,
+  logicSource031Recall,
+  logicSource031Sections,
+  logicSource031Summary,
+} from "./logicSource031Revision";
+import {
+  cartesianSource030Examples,
+  cartesianSource030Practice,
+  cartesianSource030Recall,
+  cartesianSource030Sections,
+  cartesianSource030Summary,
+} from "./cartesianSource030Revision";
 import { txt, type Lesson } from "../domain/model";
 import type { LessonGuide } from "./guides/types";
 import {
@@ -674,6 +688,7 @@ const packs: Pack[] = [
           "A={0,1},B={1,2} için dört ürün çifti vardır; birinci bileşeni ikinciden küçük olanlar (0,1),(0,2),(1,2) olmak üzere üçtür. Sayısal koşulu bütün çiftlere tek tek uygulamak küçük kümelerde güvenilir kontroldür. Ürün sayısını bulduktan sonra koşulu unutup dördü de cevap yapma.",
         ],
       },
+      ...cartesianSource030Sections,
     ],
     examples: [
       {
@@ -777,6 +792,7 @@ const packs: Pack[] = [
         check: "Kalan bütün çiftlerde a<b.",
         pitfall: "Ürün sayısı 4’ü koşulsuz cevaplamak.",
       },
+      ...cartesianSource030Examples,
     ],
     recall: [
       {
@@ -798,9 +814,9 @@ const packs: Pack[] = [
         answer:
           "Ancak iki kaynak da boş değilken bu çıkarım geçerlidir; boş kaynak karşı örnektir.",
       },
+      ...cartesianSource030Recall,
     ],
-    source:
-      "MEBİ TYT Matematik Konu Özetleri PDF s. 71 (basılı s. 69); Aurelia 030 Kümeler: Kartezyen Çarpım, öğretim PDF s. 1–3,5–7. Boş kaynak istisnası, konuma göre kesişim ve doğrudan tanımdan türetilen özgün örnekler. Resmî soru değildir.",
+    source: cartesianSource030Summary,
     questions: [
       {
         prompt: "A={1,2},B={3,4,5}. A×B’nin eleman sayısı kaçtır?",
@@ -942,9 +958,9 @@ const packs: Pack[] = [
         ],
       },
       {
-        title: "Karşıt ters denktir; karşıt ve ters genellikle değildir",
+        title: "Karşıt ters ilk koşula, karşıt ve ters birbirine denktir",
         paragraphs: [
-          "p⇒q’nun karşıtı q⇒p, tersi p′⇒q′, karşıt tersi q′⇒p′ olarak adlandırılır. Başlangıç koşulu karşıt tersine bütün satırlarda denktir. Buna karşılık karşıt ve ters bazı satırlarda farklı sonuç verir; ikisini koşulsuz başlangıç teoremi gibi kullanma.",
+          "p⇒q’nun karşıtı q⇒p, tersi p′⇒q′, karşıt tersi q′⇒p′ olarak adlandırılır. Başlangıç koşulu karşıt tersine bütün satırlarda denktir. Karşıt ve ters birbirine denktir. Bu ikisi, başlangıç koşulundan bazı satırlarda farklı sonuç verir.",
           "Koşulun değili ile tersi de farklıdır: (p⇒q)′=p∧q′. Değil, tam olarak kuralın bozulduğu durumu seçer; ters ise iki parçayı olumsuzlayıp yeni bir koşul kurar. “Kural yanlış” diyebilmek için öncülün doğru, sonucun yanlış olduğu bir karşı örnek gerekir.",
         ],
       },
@@ -976,6 +992,7 @@ const packs: Pack[] = [
           "p⇒q biçiminde hipotez p, hüküm q’dur. n=4k yazılabilen bir tam sayı için n=2(2k) yazarak 2’ye bölünmeyi göstermek doğrudan ispata örnektir. Tek sayısal örnek genel teoremi ispatlamaz, fakat tek geçerli karşı örnek genel yanlış yargıyı çürütebilir. Model gerekçeni kaydeder; serbest yazıyı otomatik ispat puanı saymaz.",
         ],
       },
+      ...logicSource031Sections,
     ],
     examples: [
       {
@@ -1080,6 +1097,7 @@ const packs: Pack[] = [
         check: "0 ve negatif tam sayıları da kapsar.",
         pitfall: "Yalnız 8 örneğini gösterip her n sonucuna atlamak.",
       },
+      ...logicSource031Examples,
     ],
     recall: [
       {
@@ -1098,9 +1116,9 @@ const packs: Pack[] = [
         prompt: "Bazı, mutlaka birden fazla mı?",
         answer: "Hayır; en az bir anlamındadır. Bir tanık yeterlidir.",
       },
+      ...logicSource031Recall,
     ],
-    source:
-      "MEBİ TYT Matematik Konu Özetleri PDF s. 58–65 (basılı s. 56–63); Aurelia 031 Mantık ve Önermeler, öğretim PDF s. 1–3,5–7. Özgün tablolar, dıştan içe koşul çözümü ve sonlu alan kanıtı. Mantıksal koşul nedensellik değildir; resmî sınav sorusu sunulmaz.",
+    source: logicSource031Summary,
     questions: [
       {
         prompt: "Hangi ifade, doğruluk değeri belirlenebilen bir önermedir?",
@@ -1244,6 +1262,8 @@ export const forge014MathLessons: Lesson[] = packs.map((p) => ({
     }),
     ...(p.id === "grafik-problemleri" ? graphProblemsSource027Practice : []),
     ...(p.id === "kumeler" ? setsSource029Practice : []),
+    ...(p.id === "mantik-onerme" ? logicSource031Practice : []),
+    ...(p.id === "kartezyen-carpim" ? cartesianSource030Practice : []),
   ],
   source: txt(p.source),
   tags: [p.topic, "Özgün öğretim soruları"],

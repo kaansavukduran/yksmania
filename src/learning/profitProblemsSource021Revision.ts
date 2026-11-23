@@ -36,6 +36,9 @@ export const profitProblemsSource021Sections: GuideSection[] = [
       "İki ürünün satışları eşitse her birinin maliyetini kendi satış çarpanına bölerek bul. Eşit büyüklükte zıt oranlardan çıkan r² kısa yolu, oran büyüklükleri değişince uygulanmaz.",
       "Örneğin iki ürün de 300 TL’ye satılıyor. Biri %50 kârla, diğeri %25 zararla satılmışsa maliyetler 300/1,50=200 ve 300/0,75=400 TL’dir. Gelir ve maliyet ayrı ayrı 600 TL eder. Birinci ürünün 100 TL kârı ile ikincinin 100 TL zararı dengelenir.",
       "Birleşik kâr oranı, her grubun toplam maliyetine göre ağırlıklandırılır. Kâr/zarar oranlarını r₁ ve r₂, toplam grup maliyetlerini M₁ ve M₂ yazarsan birleşik oran (M₁·r₁+M₂·r₂)/(M₁+M₂) olur. Zarar oranını eksi işaretli yaz. Grup maliyetleri eşitse düz ortalama kullanılabilir.",
+      "İki ürün de S TL’ye satılmış olsun. Biri maliyet üzerinden r oranında kâr, diğeri eşit büyüklükte zarar ile satılıyor. S>0 ve 0<r<1 iken maliyetler S/(1+r) ile S/(1−r) olur. Burada r, yüzde işaretsiz kesirdir. Örneğin %20 için r=1/5.",
+      "Toplam maliyet için paydaları eşitle. S/(1+r)+S/(1−r)=[S(1−r)+S(1+r)]/[(1+r)(1−r)]=2S/(1−r²). Toplam satış 2S olduğundan satışın maliyete oranı 1−r², maliyetin geri kazanılamayan payı r²’dir.",
+      "Örneğin r=1/5 ise r²=1/25=%4 zarar. İki satış tutarı veya oranların büyüklüğü farklıysa her maliyeti kendi çarpanından bul ve toplamları karşılaştır. Ek gider varsa onu maliyete kat.",
     ],
   },
   {
@@ -140,6 +143,7 @@ export const profitProblemsSource021SheetText = new Map<string, string[]>([
     [
       "Eşit satışlarda her maliyet kendi çarpanından bulunur. r² zarar yalnız eşit satış ve eşit büyüklükte zıt oranlarda, ek gider yoksa geçerli.",
       "Birleşik kâr oranı için toplam kâr tutarını toplam maliyete böl. Eşit grup maliyetlerinde oranların düz ortalaması alınabilir.",
+      "Her satış S>0 ve kâr ile zarar oranının büyüklüğü 0<r<1 ise toplam maliyet 2S/(1−r²), toplam satış 2S. Satış/maliyet 1−r², zarar payı r². Koşullar değişirse iki maliyet ayrı hesaplanır.",
     ],
   ],
   [

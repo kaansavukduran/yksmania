@@ -88,7 +88,7 @@ it("teaches the next thirty headings with twenty-eight new deep lessons and two 
     const sheet = builtInCheatSheets.get(topic.id)!;
     expect(sheet.lessonId).toBe(lesson.id);
     const fullSheet = sheet.sections.flatMap((s) => s.text).join("\n");
-    for (const section of guide.sections)
+    for (const section of currentGuide.sections.slice(0, guide.sections.length))
       for (const paragraph of section.paragraphs)
         expect(fullSheet, topic.title).toContain(paragraph);
     expect(sheet.examples).toHaveLength(currentGuide.examples.length);

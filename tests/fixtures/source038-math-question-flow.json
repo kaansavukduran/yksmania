@@ -1,0 +1,216 @@
+{
+  "kartezyen-carpim": [
+    {
+      "id": "kartezyen-carpim-014-1",
+      "prompt": "A={1,2},B={3,4,5}. A×B’nin eleman sayısı kaçtır?",
+      "selected": 0,
+      "correct": "6"
+    },
+    {
+      "id": "kartezyen-carpim-014-2",
+      "prompt": "A={1,2}, B={4,5}. Hangi sıralı ikili A×B’nin elemanıdır?",
+      "selected": 1,
+      "correct": "(2,4)"
+    },
+    {
+      "id": "kartezyen-carpim-014-3",
+      "prompt": "x,y gerçek sayıları için (2x+1,3)=(7,y−2) veriliyor. x+y kaçtır?",
+      "selected": 2,
+      "correct": "8"
+    },
+    {
+      "id": "kartezyen-carpim-014-4",
+      "prompt": "A=∅, B={1,2} için A×B ve B×A hakkında hangi ifade doğrudur?",
+      "selected": 3,
+      "correct": "İkisi de ∅’dir."
+    },
+    {
+      "id": "kartezyen-carpim-014-5",
+      "prompt": "A={1,2},B={2,3}. (A×B)∩(B×A) kümesinin eleman sayısı kaçtır?",
+      "selected": 4,
+      "correct": "1"
+    },
+    {
+      "id": "kartezyen-carpim-014-6",
+      "prompt": "Sonlu kümelerde s(A)=3 ve s(A×B)=12 veriliyor. s(B) kaçtır?",
+      "selected": 0,
+      "correct": "4"
+    },
+    {
+      "id": "kartezyen-carpim-014-7",
+      "prompt": "A={1,2}, B={3,4}. B’ye yeni eleman 5 ekleniyor; A değişmiyor. A×B’de kaç yeni sıralı ikili oluşur?",
+      "selected": 1,
+      "correct": "2"
+    },
+    {
+      "id": "kartezyen-carpim-014-8",
+      "prompt": "A={1,2},B={3},C={4,5} veriliyor. A×(B∪C) kümesinin eleman sayısı kaçtır?",
+      "selected": 2,
+      "correct": "6"
+    },
+    {
+      "id": "kartezyen-carpim-014-9",
+      "prompt": "Boş olmayan A×B’nin bütün elemanları (1,3),(1,5),(2,3),(2,5) olarak verilmiştir. A∪B hangi kümedir?",
+      "selected": 3,
+      "correct": "{1,2,3,5}"
+    },
+    {
+      "id": "kartezyen-carpim-014-10",
+      "prompt": "A={0,1}, B={1,2}. A×B içinde birinci bileşeni ikinci bileşenden küçük olan kaç çift vardır?",
+      "selected": 4,
+      "correct": "3"
+    },
+    {
+      "id": "kartezyen-carpim-030-urun-farkinda-tek-kosul",
+      "prompt": "A={1,4}, B={0,2,5}, C={4,6}, D={2,3}. (A×B)∖(C×D) kümesinde kaç ikili vardır?",
+      "selected": 2,
+      "correct": "5"
+    },
+    {
+      "id": "kartezyen-carpim-030-kosullu-ikili-ve-kosegen",
+      "prompt": "A altı farklı sayıdan oluşuyor. A×A içinde a<b koşulunu sağlayan kaç (a,b) ikilisi vardır?",
+      "selected": 3,
+      "correct": "15"
+    },
+    {
+      "id": "kartezyen-carpim-030-toplamla-uygun-yuvayi-bul",
+      "prompt": "A={0,2,5}, B={1,3,6}. A×B’de birinci ve ikinci bileşenlerinin toplamı 6 olan bütün ikililer hangileridir?",
+      "selected": 0,
+      "correct": "{(0,6),(5,1)}"
+    },
+    {
+      "id": "kartezyen-carpim-030-ortak-urun-dort-kume",
+      "prompt": "A={1,2,3}, B={0,4}, C={2,3,7}, D={4,8}. (A×B)∩(C×D) hangi kümedir?",
+      "selected": 2,
+      "correct": "{(2,4),(3,4)}"
+    },
+    {
+      "id": "kartezyen-carpim-030-bos-urun-kaynagi",
+      "prompt": "A={2,5} ve A×B=∅. B için hangisi kesinlikle doğrudur?",
+      "selected": 4,
+      "correct": "B=∅"
+    },
+    {
+      "id": "kartezyen-carpim-030-dagilmada-cifti-tek-say",
+      "prompt": "A={2,4}, B={1,5,6}, C={5,7}. (A×B)∪(A×C) kaç ikili içerir?",
+      "selected": 0,
+      "correct": "8"
+    },
+    {
+      "id": "kartezyen-carpim-030-eksende-farkli-degeri-say",
+      "prompt": "Tam ve boş olmayan (A∪B)×C ürününün noktalarında farklı yatay değerler {0,2,4,6,8}, farklı düşey değerler {1,3,7}. s(A)=4 ve s(B)=3 ise C×(A∩B) kaç ikili içerir?",
+      "selected": 3,
+      "correct": "6"
+    }
+  ],
+  "mantik-onerme": [
+    {
+      "id": "mantik-onerme-014-1",
+      "prompt": "Hangi ifade, doğruluk değeri belirlenebilen bir önermedir?",
+      "selected": 0,
+      "correct": "9 sayısı 3’ün katıdır."
+    },
+    {
+      "id": "mantik-onerme-014-2",
+      "prompt": "p=1,q=0 olmak üzere (p∨q)∧q′ ifadesinin doğruluk değeri kaçtır?",
+      "selected": 1,
+      "correct": "1"
+    },
+    {
+      "id": "mantik-onerme-014-3",
+      "prompt": "p=0 ve q=0 iken p⇒q koşullu önermesinin doğruluk değeri kaçtır?",
+      "selected": 2,
+      "correct": "1"
+    },
+    {
+      "id": "mantik-onerme-014-4",
+      "prompt": "p ve q önermeleri için p⇒q ifadesinin mantıksal değili hangi ifadedir?",
+      "selected": 3,
+      "correct": "p∧q′"
+    },
+    {
+      "id": "mantik-onerme-014-5",
+      "prompt": "p⇒q ile bütün doğruluk atamalarında denk olan karşıt ters ifade hangisidir?",
+      "selected": 4,
+      "correct": "q′⇒p′"
+    },
+    {
+      "id": "mantik-onerme-014-6",
+      "prompt": "p=1,q=1 iken yalnız birinin doğru olmasını isteyen p⊻q (“ya da”) ifadesinin değeri kaçtır?",
+      "selected": 0,
+      "correct": "0"
+    },
+    {
+      "id": "mantik-onerme-014-7",
+      "prompt": "E={−1,0,1} alanında “her x için x²>0” yargısını çürüten karşı örnek hangi elemandır?",
+      "selected": 1,
+      "correct": "0"
+    },
+    {
+      "id": "mantik-onerme-014-8",
+      "prompt": "“∀x∈ℝ, x²≥0” ifadesinin mantıksal değili hangisidir?",
+      "selected": 2,
+      "correct": "∃x∈ℝ, x²<0"
+    },
+    {
+      "id": "mantik-onerme-014-9",
+      "prompt": "Birbirinden bağımsız dört önermenin bütün olası doğruluk atamalarının sayısı kaçtır?",
+      "selected": 3,
+      "correct": "16"
+    },
+    {
+      "id": "mantik-onerme-014-10",
+      "prompt": "Tam sayılarda p:“n 4’e bölünür”, q:“n 2’ye bölünür” olsun. Doğru p⇒q ilişkisinde gerekli ve yeterli koşul rolleri hangisidir?",
+      "selected": 4,
+      "correct": "p, q için yeterli; q, p için gereklidir."
+    },
+    {
+      "id": "mantik-onerme-031-dis-kosuldan-iceri",
+      "prompt": "(p→q)→(q→r) bileşik önermesi yanlışsa (p,q,r) doğruluk değerleri sırasıyla nedir?",
+      "selected": 1,
+      "correct": "(0,1,0) veya (1,1,0)"
+    },
+    {
+      "id": "mantik-onerme-031-karsit-ve-tersin-satiri",
+      "prompt": "p→q koşulunun karşıtı ve tersi, hangi (p,q) satırında birlikte yanlış olur?",
+      "selected": 3,
+      "correct": "(0,1)"
+    },
+    {
+      "id": "mantik-onerme-031-tek-sayilarin-toplami",
+      "prompt": "a ve b tek tam sayılar. a+b’nin çift olduğunu bütün olası a ve b için gösteren adım hangisidir?",
+      "selected": 0,
+      "correct": "a=2k+1, b=2m+1 ⇒ a+b=2(k+m+1); k,m∈ℤ."
+    },
+    {
+      "id": "mantik-onerme-031-evren-icinde-karsi-ornek",
+      "prompt": "“Her tek pozitif tam sayı asaldır.” önermesini hangi sayı tek başına çürütür?",
+      "selected": 4,
+      "correct": "15"
+    },
+    {
+      "id": "mantik-onerme-031-degillemede-iki-kosul",
+      "prompt": "“Her öğrenci resim veya müzik kursundan en az birine katılır.” önermesinin değili hangisidir?",
+      "selected": 1,
+      "correct": "En az bir öğrenci iki kurstan hiçbirine katılmaz."
+    },
+    {
+      "id": "mantik-onerme-031-niceleyicinin-sirasi",
+      "prompt": "x ve y herhangi bir tam sayı olabilir. I: ∀x ∃y (x+y=0). II: ∃y ∀x (x+y=0). Hangileri doğrudur?",
+      "selected": 0,
+      "correct": "Yalnız I"
+    },
+    {
+      "id": "mantik-onerme-031-hipotez-hukum-yer-degisimi",
+      "prompt": "n bir tam sayı. p, n’nin 10 ile; q, n’nin 5 ile bölünmesi olsun. Hangi önerme ve tam sayı doğru bir karşı örnek oluşturur?",
+      "selected": 1,
+      "correct": "n=5, q→p için karşı örnek."
+    },
+    {
+      "id": "mantik-onerme-031-tanim-ve-hipotez",
+      "prompt": "“Bir tam sayı 6 ile bölünürse 3 ile de bölünür.” önermesinin hipotezini ve ispatın ilk geçerli adımını hangi seçenek birlikte doğru verir?",
+      "selected": 2,
+      "correct": "Hipotez 6’ya bölünmesidir. k∈ℤ için n=6k=3(2k) yazılır."
+    }
+  ]
+}

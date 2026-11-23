@@ -25,7 +25,7 @@ it("keeps unique actual exam identities, valid official pages and precise topic 
 });
 it("includes YKS and other exam families without treating partial booklets as a complete bank", () => {
   expect(new Set(officialBooklets.map((file) => file.exam))).toEqual(
-    new Set(["TYT", "ALES", "DGS", "KPSS", "YGS"]),
+    new Set(["TYT", "AYT", "ALES", "DGS", "KPSS", "YGS"]),
   );
   expect(officialBooklets.find((file) => file.id === "2026-ales2")?.year).toBe(
     2026,
