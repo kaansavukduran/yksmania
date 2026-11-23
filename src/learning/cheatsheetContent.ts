@@ -117,6 +117,7 @@ import { newtonTimeTitle } from "./newtonTimeComparison";
 import { forcePairsTitle } from "./newtonForcePairs";
 import { frictionThresholdTitle } from "./newtonFrictionThreshold";
 import { cylinderPotentialTitle } from "./cylinderPotentialEnergy";
+import { bicycleEnergyTitle } from "./bicycleEnergy058";
 import { averageWorkPowerTitle } from "./averageWorkPower";
 import type { LessonGuide } from "./guides/types";
 
@@ -148,6 +149,10 @@ export interface CheatSheet {
 
 const revisedSectionTextByLesson = new Map([
   ["enerji-ve-hareket", new Map([
+    [bicycleEnergyTitle, [
+      "Eş yükseklikte potansiyel enerji farkı sıfır. Hız 4v’den 3v’ye inerse kinetik enerji 16E₀’dan 9E₀’a iner; E₀ = mv²/2.",
+      "Bisikletin mekanik enerjisi 7E₀ azalır. Kapalı toplam hesabında bu fark, çevredeki ısıl enerji gibi başka biçimlere gider.",
+    ]],
     [averageWorkPowerTitle, [
       "Her kuvvetin işini yönüyle topla. Yatay hareket eden kutuda düşey kuvvetler iş yapmaz. Net iş kinetik enerji değişimidir.",
       "Ortalama güç = seçilen kuvvetin işi / geçen süre. Sabit kuvvet için aynı sonuç, kuvvet ile ortalama hızın noktasal çarpımından gelir.",

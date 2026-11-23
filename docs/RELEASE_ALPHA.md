@@ -1,3 +1,10 @@
+# ÖSYM Mania 0.58.0 · Bisikletin mekanik enerjisi
+
+Yayın adayı.
+
+- Beş noktadaki hız ve kinetik enerjiyi tepe çizimiyle incele.
+- Aynı seviyedeki iki noktanın enerji farkını ayrı Kopya Kağıdı’nda da hesapla.
+
 # ÖSYM Mania 0.57.0 · Sıkışan yayın kuvveti
 
 Yayın adayı.

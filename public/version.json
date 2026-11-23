@@ -1,7 +1,7 @@
 {
-  "version": "0.57.0",
+  "version": "0.58.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Sıkışmış yay sorusunda doğal boyu ve verilen sapmayı çizimde oku. Kuvvetin yönü ve depolanan enerji ayrı adımlarda açılır."
+    "tr": "Bisikletin tepeyi geçerken beş konumdaki hızını oku. Başlangıçla aynı düzeye döndüğünde mekanik enerjinin nasıl değiştiğini karşılaştır."
   }
 }

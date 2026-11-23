@@ -1,3 +1,4 @@
+import { bicycleEnergyExample, bicycleEnergySection } from "../bicycleEnergy058";
 import { cylinderPotentialExample, cylinderPotentialSection } from "../cylinderPotentialEnergy";
 import { averageWorkPowerExample, averageWorkPowerSection } from "../averageWorkPower";
 import { clarifiedGuideView } from "../guidePresentation028";
@@ -320,8 +321,8 @@ export function studyGuide(lessonId: string) {
   if (guide?.id !== "enerji-ve-hareket") return guide;
   return {
     ...guide,
-    sections: [...guide.sections, averageWorkPowerSection, cylinderPotentialSection],
-    examples: [...guide.examples, averageWorkPowerExample, cylinderPotentialExample],
-    source: `${guide.source} İş ve güç ile homojen silindir ve kütle merkezi MEBİ TYT Fizik Konu Özetleri fiziksel 48 ve 50, basılı 46 ve 48. sayfalarla karşılaştırıldı. Sayısal örnekler özgündür.`,
+    sections: [...guide.sections, averageWorkPowerSection, cylinderPotentialSection, bicycleEnergySection],
+    examples: [...guide.examples, averageWorkPowerExample, cylinderPotentialExample, bicycleEnergyExample],
+    source: `${guide.source} İş ve güç, homojen silindir ve bisiklet örneği MEBİ TYT Fizik Konu Özetleri fiziksel 48, 50 ve 53, basılı 46, 48 ve 51. sayfalarla karşılaştırıldı. Sayısal örnekler özgündür. Bisiklet çizimindeki verilen hız oranları kaynak örneğindeki oranlardır.`,
   };
 }
