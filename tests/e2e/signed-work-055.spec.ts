@@ -94,4 +94,13 @@ test("iş sorusu kuvvetleri ve yalnız açılan çözüm adımını çevrimdış
   ]);
   await page.reload();
   await expect(page.locator(".result-stats strong")).toHaveText(["1/24", "0/24", "1"]);
+
+  await page.getByRole("button", { name: "Menüyü aç", exact: true }).press("Enter");
+  await page.locator(".sidebar").getByRole("button", { name: "Yanlışlarım", exact: true }).press("Enter");
+  const reviewed = page.locator(".mistake-card").filter({ has: given });
+  await expect(reviewed).toHaveCount(1);
+  await expect(reviewed.getByRole("figure", { name: "İşaretli işleri topla", exact: true })).toHaveCount(0);
+  await reviewed.locator("details > summary").first().press("Enter");
+  await expect(reviewed.getByRole("figure", { name: "İşaretli işleri topla", exact: true })).toBeVisible();
+  expect((await storage(page)).sessions).toEqual(completed.sessions);
 });

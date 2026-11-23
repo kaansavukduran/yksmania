@@ -1,6 +1,5 @@
 import { questionIdentity, type HelpQuestion } from "./questionHelpModel";
 import type { Question } from "./model";
-import { signedWorkHintCopy, signedWorkQuestionId } from "../learning/signedWork055";
 
 // Presentation revisions add the missing conditions without rewriting any
 // accepted question, saved paper, answer, timestamp or learning record.
@@ -15,19 +14,6 @@ type QuestionPresentationRevision = {
   explanation?: string;
 };
 export const questionPresentationRevisions: QuestionPresentationRevision[] = [
-  {
-    id: signedWorkQuestionId,
-    revision: 2,
-    before: {
-      id: signedWorkQuestionId,
-      prompt: "Cisim 5 m boyunca+x yönünde gidiyor. Seçili itiş kuvveti+10 N, direnç−4 N ve yer değiştirmeye dik normal 20 N; sabitler. Başka iş yapan kuvvet yok. İtişin işi, net iş ve kinetik enerji değişimi sırasıyla nedir?",
-      options: ["+50 J;+70 J;+70 J", "+50 J;+30 J;−30 J", "+50 J;+30 J;+30 J", "+30 J;+30 J;+30 J", "+50 J;+130 J;+130 J"],
-      answer: 2,
-      hint: "İtiş işi 10·5=+50 J; direnç işi−4·5=−20 J; normal işi 0.",
-      explanation: "İtiş işi 10·5=+50 J; direnç işi−4·5=−20 J; normal işi 0. Net iş 50−20=+30 J. Kinetik enerji değişimiΔK=+30 J’dir; tek itiş işi 50 J ile karıştırılmaz.",
-    },
-    hint: signedWorkHintCopy,
-  },
   {
     id: "ns-motion-4",
     revision: 2,

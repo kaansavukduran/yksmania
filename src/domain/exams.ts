@@ -1,3 +1,4 @@
+import { signedWorkPracticeView } from "../learning/signedWork055";
 import { clarifiedQuestionView } from "./questionPresentation";
 import { lessons, subjects } from "./content";
 import type { AppState, Lesson, Subject } from "./model";
@@ -35,7 +36,7 @@ export function scaledExamSeconds(exam: "TYT" | "AYT", count: number) {
 function snapshot(lesson: Lesson): ExamItem[] {
   const subject = subjects.find((s) => s.id === lesson.subjectId)!;
   return lesson.questions.map((q) => {
-    const helpQuestion = clarifiedQuestionView({
+    const helpQuestion = signedWorkPracticeView(clarifiedQuestionView({
       id: q.id,
       prompt: q.prompt.tr,
       passage: q.passage?.tr,
@@ -44,7 +45,7 @@ function snapshot(lesson: Lesson): ExamItem[] {
       explanation: q.explanation.tr,
       hint: q.hint.tr,
       guidance: q.guidance,
-    });
+    }));
     const guidance = resolvedGuidance(helpQuestion);
     return {
       id: q.id,

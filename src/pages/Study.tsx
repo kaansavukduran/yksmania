@@ -25,6 +25,7 @@ import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
 import { AnswerOptions } from "../components/AnswerOptions";
 import { Scratchpad } from "../components/Scratchpad";
 import { sourceQuestionPresentation } from "../learning/sourceExercises024";
+import { signedWorkPracticeView } from "../learning/signedWork055";
 import { sourceVisualRevisions } from "../learning/sourceVisualRevisions";
 export function Study({ navigate }: { navigate: (s: string) => void }) {
   const { state, t, l, update, commit, toast } = useApp();
@@ -44,7 +45,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
   const subject = subjectById(lesson.subjectId)!;
   const questionCount = draftQuestionCount(draft, lesson.questions.length);
   const question = localizedQuestionView(lesson.questions[draft.index]);
-  const helpQuestion = {
+  const helpQuestion = signedWorkPracticeView({
     id: question.id,
     prompt: l(question.prompt),
     passage: question.passage ? l(question.passage) : undefined,
@@ -53,7 +54,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
     hint: l(question.hint),
     explanation: l(question.explanation),
     guidance: question.guidance,
-  };
+  });
   const sourcePresentation = sourceQuestionPresentation(helpQuestion);
   const panels = helpPanels(helpQuestion),
     previousCount = previousHelpPanelCount(helpQuestion),

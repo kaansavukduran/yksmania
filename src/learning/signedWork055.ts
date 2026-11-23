@@ -1,7 +1,28 @@
+import { questionIdentity, type HelpQuestion } from "../domain/questionHelpModel";
 import type { SourceQuestionFigureSpec } from "./SourceQuestionFigure";
 
 export const signedWorkQuestionId = "f026p-enerji-ve-hareket-1";
-export const signedWorkHintCopy = "Yer değiştirme sağa. Her kuvvet oku için yer değiştirme doğrultusuna düşen bileşeni bul. Önce yönü belirle, sonra bu bileşeni 5 m ile çarp.";
+const signedWorkHintCopy = "Yer değiştirme sağa. Her kuvvet oku için yer değiştirme doğrultusuna düşen bileşeni bul. Önce yönü belirle, sonra bu bileşeni 5 m ile çarp.";
+
+const originalWorkQuestion: HelpQuestion = {
+  id: signedWorkQuestionId,
+  prompt: "Cisim 5 m boyunca+x yönünde gidiyor. Seçili itiş kuvveti+10 N, direnç−4 N ve yer değiştirmeye dik normal 20 N; sabitler. Başka iş yapan kuvvet yok. İtişin işi, net iş ve kinetik enerji değişimi sırasıyla nedir?",
+  options: ["+50 J;+70 J;+70 J", "+50 J;+30 J;−30 J", "+50 J;+30 J;+30 J", "+30 J;+30 J;+30 J", "+50 J;+130 J;+130 J"],
+  answer: 2,
+  hint: "İtiş işi 10·5=+50 J; direnç işi−4·5=−20 J; normal işi 0.",
+  explanation: "İtiş işi 10·5=+50 J; direnç işi−4·5=−20 J; normal işi 0. Net iş 50−20=+30 J. Kinetik enerji değişimiΔK=+30 J’dir; tek itiş işi 50 J ile karıştırılmaz.",
+};
+const originalWorkIdentity = questionIdentity(originalWorkQuestion);
+
+/** Live Study and newly built papers get the directional hint. Frozen papers keep their help. */
+export function signedWorkPracticeView<T extends HelpQuestion>(question: T): T {
+  if (
+    question.id !== signedWorkQuestionId ||
+    question.hint !== originalWorkQuestion.hint ||
+    questionIdentity(question) !== originalWorkIdentity
+  ) return question;
+  return { ...question, hint: signedWorkHintCopy };
+}
 
 const displacement = 5;
 const push = 10;
