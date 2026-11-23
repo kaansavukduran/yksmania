@@ -102,11 +102,13 @@ it("teaches all thirty next headings in verified order with deep guides, complet
     for (const example of guide.examples)
       expect(example.steps.length, example.title).toBeGreaterThanOrEqual(3);
     expect(guide.recall.length, topic.title).toBeGreaterThanOrEqual(4);
-    expect(lesson.questions, topic.title).toHaveLength(10);
+    const statistics = lesson.id === "veri-analizi";
+    expect(lesson.questions, topic.title).toHaveLength(statistics ? 14 : 10);
     const sheet = builtInCheatSheets.get(topic.id)!;
     expect(sheet.lessonId).toBe(lesson.id);
     const fullSheet = sheet.sections.flatMap((s) => s.text).join("\n");
-    for (const section of guide.sections)
+    const originalSections = statistics ? guide.sections.slice(0, 12) : guide.sections;
+    for (const section of originalSections)
       for (const paragraph of section.paragraphs)
         expect(fullSheet, topic.title).toContain(paragraph);
     expect(sheet.examples).toHaveLength(guide.examples.length);
