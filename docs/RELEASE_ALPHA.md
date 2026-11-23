@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.64.0 · Üç sıcaklık ölçeği
+
+Yayın adayı. Üç termometrenin aynı fiziksel sıcaklığını bir sürgüyle değiştir. Kopya Kağıdı’nda aynı referans tablosu ve sıcaklık farkı çözümü yer alır.
+
 # ÖSYM Mania 0.63.0 · Isı aktarımı
 
 Yayın adayı. Sıcaklık farkını, aktarılan enerjiyi ve dengeyi aynı iki cisim çiziminde incele. Ayrı Kopya Kağıdı’nda aynı hesap çözümlü olarak yer alır.

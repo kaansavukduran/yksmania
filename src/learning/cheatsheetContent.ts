@@ -117,6 +117,7 @@ import { newtonTimeTitle } from "./newtonTimeComparison";
 import { forcePairsTitle } from "./newtonForcePairs";
 import { frictionThresholdTitle } from "./newtonFrictionThreshold";
 import { cylinderPotentialTitle } from "./cylinderPotentialEnergy";
+import { exactTemperatureTitle } from "./exactTemperature064";
 import { thermalTransferTitle } from "./thermalTransfer063";
 import { hydropowerTitle } from "./hydropower062";
 import { lampEfficiencyTitle } from "./lampEfficiency061";
@@ -154,6 +155,10 @@ export interface CheatSheet {
 
 const revisedSectionTextByLesson = new Map([
   ["isi-ve-sicaklik", new Map([
+    [exactTemperatureTitle, [
+      "K = °C + 273,15 ve °F = 9 × °C / 5 + 32. Aynı yükseklik aynı fiziksel sıcaklığa karşılık gelir.",
+      "Sıcaklık farkında sabit ekleme yok. 10 °C artış, 10 K ya da 18 °F artıştır.",
+    ]],
     [thermalTransferTitle, [
       "Isı, sıcaklık farkı nedeniyle aktarılan enerjidir. Net aktarım sıcak cisimden soğuğa olur ve ortak sıcaklıkta durur.",
       "Kapalı örnekte ısı sığaları eşitse denge sıcaklığı ilk iki sıcaklığın ortalamasıdır. 60 °C ve 20 °C için denge 40 °C.",

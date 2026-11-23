@@ -1,7 +1,7 @@
 {
-  "version": "0.63.0",
+  "version": "0.64.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Sıcak ve soğuk iki cismin dengeye ilerleyişini izle. Sıcaklıklar yaklaşırken geçen enerjiyi tabloyla karşılaştır."
+    "tr": "Celsius, Fahrenheit ve Kelvin termometrelerinde aynı sıcaklığı gör. Bir sıcaklık değeriyle iki sıcaklığın farkını ayrı hesapla."
   }
 }

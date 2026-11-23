@@ -1,3 +1,4 @@
+import { exactTemperatureExample, exactTemperatureSection } from "../exactTemperature064";
 import { thermalTransferExample, thermalTransferSection } from "../thermalTransfer063";
 import { hydropowerExample, hydropowerSection } from "../hydropower062";
 import { lampEfficiencyExample, lampEfficiencySection } from "../lampEfficiency061";
@@ -326,9 +327,9 @@ export function studyGuide(lessonId: string) {
   if (guide?.id === "isi-ve-sicaklik") {
     return {
       ...guide,
-      sections: [...guide.sections, thermalTransferSection],
-      examples: [...guide.examples, thermalTransferExample],
-      source: `${guide.source} Isı aktarımının yönü ve yalıtılmış iki cismin denge çizimi MEBİ TYT Fizik Konu Özetleri fiziksel 61 ve 72, basılı 59 ve 70. sayfalarla karşılaştırıldı. Sıcaklıklar ve ısı sığaları özgün hesap değerleridir.`,
+      sections: [...guide.sections, thermalTransferSection, exactTemperatureSection],
+      examples: [...guide.examples, thermalTransferExample, exactTemperatureExample],
+      source: `${guide.source} Isı aktarımının yönü ve yalıtılmış iki cismin denge çizimi MEBİ TYT Fizik Konu Özetleri fiziksel 61 ve 72, basılı 59 ve 70. sayfalarla karşılaştırıldı. Sıcaklıklar ve ısı sığaları özgün hesap değerleridir. Üç sıcaklık ölçeği fiziksel 64, basılı 62. sayfadaki eş referanslarla karşılaştırıldı.`,
     };
   }
   if (guide?.id !== "enerji-ve-hareket") return guide;
