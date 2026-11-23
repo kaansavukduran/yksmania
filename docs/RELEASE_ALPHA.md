@@ -1,3 +1,10 @@
+# ÖSYM Mania 0.56.0 · Aynı iş, farklı güç
+
+Yayın adayı.
+
+- Kuvvet oklarından sürtünmenin işaretini oku. İşleri ve ortalama güçleri aynı birimde karşılaştır.
+- Konu anlatımı, ayrı Kopya Kağıdı ve çözümlü örnek çevrimdışı açılır.
+
 # ÖSYM Mania 0.55.0 · Kuvvet yönünden işin işaretine
 
 Yayın adayı.

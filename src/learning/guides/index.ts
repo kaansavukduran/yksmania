@@ -1,4 +1,5 @@
-import { withCylinderPotential } from "../cylinderPotentialEnergy";
+import { cylinderPotentialExample, cylinderPotentialSection } from "../cylinderPotentialEnergy";
+import { averageWorkPowerExample, averageWorkPowerSection } from "../averageWorkPower";
 import { clarifiedGuideView } from "../guidePresentation028";
 import { probabilityGuide036 } from "../probabilitySource036";
 import { countingGuides034035 } from "../countingSources034035";
@@ -316,5 +317,11 @@ for (const extension of forge020BiologyGuideExtensions) {
 // The reader can extend the catalog while preserving its historical entries.
 export function studyGuide(lessonId: string) {
   const guide = clarifiedGuideView(lessonGuides.get(lessonId));
-  return guide?.id === "enerji-ve-hareket" ? withCylinderPotential(guide) : guide;
+  if (guide?.id !== "enerji-ve-hareket") return guide;
+  return {
+    ...guide,
+    sections: [...guide.sections, averageWorkPowerSection, cylinderPotentialSection],
+    examples: [...guide.examples, averageWorkPowerExample, cylinderPotentialExample],
+    source: `${guide.source} İş ve güç ile homojen silindir ve kütle merkezi MEBİ TYT Fizik Konu Özetleri fiziksel 48 ve 50, basılı 46 ve 48. sayfalarla karşılaştırıldı. Sayısal örnekler özgündür.`,
+  };
 }

@@ -1,7 +1,7 @@
 {
-  "version": "0.55.0",
+  "version": "0.56.0",
   "channel": "alpha",
   "notes": {
-    "tr": "İş ve enerji sorusunda verilen kuvvetler çizimde, ipucu yön tablosunda ve işin işaretleri çözüm adımlarında açılır."
+    "tr": "İş ile gücü ayırmak için aynı yolu iki farklı sürede al. Çekme ve sürtünmenin işini, kinetik enerji farkını ve ortalama gücü çizimle karşılaştır."
   }
 }

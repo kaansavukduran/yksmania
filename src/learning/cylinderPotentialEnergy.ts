@@ -1,4 +1,4 @@
-import type { GuideSection, LessonGuide, WorkedExample } from "./guides/types";
+import type { GuideSection, WorkedExample } from "./guides/types";
 
 export const cylinderPotentialTitle = "Silindirin kütle merkezinden potansiyel enerji";
 export const cylinderMass = 4;
@@ -36,13 +36,3 @@ export const cylinderPotentialExample: WorkedExample = {
   check: "Kütle merkezi iki durumda 1 m yükseldi. ΔU = 4 × 10 × 1 = 40 J.",
   pitfall: "Silindirin üst kenarını kütle merkezi saymak tek tek potansiyel enerji değerlerini yanlış verir.",
 };
-
-
-export function withCylinderPotential(guide: LessonGuide): LessonGuide {
-  return {
-    ...guide,
-    sections: [...guide.sections, cylinderPotentialSection],
-    examples: [...guide.examples, cylinderPotentialExample],
-    source: `${guide.source} Homojen silindir ve kütle merkezi MEBİ TYT Fizik Konu Özetleri fiziksel 50, basılı 48. sayfayla karşılaştırıldı. Sayısal örnek özgündür.`,
-  };
-}

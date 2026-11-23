@@ -18,6 +18,8 @@ import {
 } from "./figureKit";
 import { cylinderPotentialTitle } from "../cylinderPotentialEnergy";
 import { cylinderPotentialFigure } from "./cylinderPotentialEnergy054";
+import { averageWorkPowerComparisonTitle, averageWorkPowerTitle } from "../averageWorkPower";
+import { averageWorkPowerComparison, averageWorkPowerFigure } from "./averageWorkPower056";
 
 /*
  * TYT Fizik "Enerji ve hareket" section figures. Every number on a drawing
@@ -70,6 +72,8 @@ function stack(x: number, parts: [number, string, T][], scale: number, title: st
 }
 
 const enerji: Record<string, FigureDef> = {
+  [averageWorkPowerTitle]: averageWorkPowerFigure,
+  [averageWorkPowerComparisonTitle]: averageWorkPowerComparison,
   [cylinderPotentialTitle]: cylinderPotentialFigure,
   "Yorulmak ile fiziksel iş aynı değildir": {
     caption:

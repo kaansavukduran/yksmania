@@ -117,6 +117,7 @@ import { newtonTimeTitle } from "./newtonTimeComparison";
 import { forcePairsTitle } from "./newtonForcePairs";
 import { frictionThresholdTitle } from "./newtonFrictionThreshold";
 import { cylinderPotentialTitle } from "./cylinderPotentialEnergy";
+import { averageWorkPowerTitle } from "./averageWorkPower";
 import type { LessonGuide } from "./guides/types";
 
 export interface CheatSection {
@@ -146,10 +147,16 @@ export interface CheatSheet {
 }
 
 const revisedSectionTextByLesson = new Map([
-  ["enerji-ve-hareket", new Map([[cylinderPotentialTitle, [
-    "Dik homojen silindirin merkezi tabandan H/2 yukarıda. Taban yerden b kadar yükselirse yere göre merkez yüksekliği b + H/2 olur.",
-    "Seçilen sıfır düzeyini iki yükseklikten de çıkar. ΔU = mgΔh, sıfır düzeyiyle değişmez.",
-  ]]])],
+  ["enerji-ve-hareket", new Map([
+    [averageWorkPowerTitle, [
+      "Her kuvvetin işini yönüyle topla. Yatay hareket eden kutuda düşey kuvvetler iş yapmaz. Net iş kinetik enerji değişimidir.",
+      "Ortalama güç = seçilen kuvvetin işi / geçen süre. Sabit kuvvet için aynı sonuç, kuvvet ile ortalama hızın noktasal çarpımından gelir.",
+    ]],
+    [cylinderPotentialTitle, [
+      "Dik homojen silindirin merkezi tabandan H/2 yukarıda. Taban yerden b kadar yükselirse yere göre merkez yüksekliği b + H/2 olur.",
+      "Seçilen sıfır düzeyini iki yükseklikten de çıkar. ΔU = mgΔh, sıfır düzeyiyle değişmez.",
+    ]],
+  ])],
   ["newton", new Map([
     [newtonTimeTitle, [
       "Aynı kütle ve sürede, durgun başlayan cisim için net kuvvet iki katına çıkarsa ivme, son hız ve yer değiştirme iki katına çıkar.",
