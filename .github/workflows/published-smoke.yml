@@ -34,17 +34,23 @@ jobs:
             sleep $((attempt * 20))
           done
           exit 1
-      - name: Verify GitHub Pages and its project path
-        if: inputs.url == 'https://kaansavukduran.github.io/yksmania/'
-        run: node scripts/test-pages.mjs
+      - name: Verify the selected production deployment
+        run: |
+          case "$PUBLISHED_URL" in
+            https://kaansavukduran.github.io/yksmania/)
+              YKSMANIA_PAGES_URL="$PUBLISHED_URL" node scripts/test-pages.mjs
+              ;;
+            https://yksmania.pages.dev/)
+              BASE_URL="$PUBLISHED_URL" npm run test:e2e -- --workers=2 --trace retain-on-failure
+              ;;
+            *)
+              echo 'Choose one of the two production URLs.' >&2
+              exit 1
+              ;;
+          esac
         env:
-          YKSMANIA_PAGES_URL: ${{ inputs.url }}
+          PUBLISHED_URL: ${{ inputs.url }}
           YKSMANIA_EVIDENCE_DIR: published-pages-evidence
-      - name: Verify Cloudflare Pages
-        if: inputs.url == 'https://yksmania.pages.dev/'
-        run: npm run test:e2e -- --workers=2 --trace retain-on-failure
-        env:
-          BASE_URL: ${{ inputs.url }}
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
