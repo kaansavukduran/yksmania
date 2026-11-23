@@ -16,7 +16,7 @@ async function openLesson(page: Page) {
 
 test("Temel İnşa opens from the sidebar, pages one by one, checks explain wrong choices and never add plan progress", async ({ page, context }) => {
   await page.goto("/#/today");
-  await expect(page.locator(".hero-progress-chip")).toContainText("0 / 509 konu çalışıldı");
+  await expect(page.locator(".hero-progress-chip")).toContainText("0 / 510 konu çalışıldı");
   await openLesson(page);
   const modes = page.getByRole("group", { name: "Okuma biçimi" });
   await expect(modes.getByRole("button", { name: "Sayfa sayfa (1/5)" })).toHaveAttribute("aria-pressed", "true");
@@ -61,7 +61,7 @@ test("Temel İnşa opens from the sidebar, pages one by one, checks explain wron
   await page.getByRole("button", { name: /Temel İnşa/ }).first().click();
   await expect(page.locator(".foundation-card", { hasText: LESSON }).locator(".foundation-firsttry")).toContainText("İlk denemede doğru: 0 / 4 · 3 soru henüz denenmedi");
   await page.getByRole("navigation").getByRole("button", { name: "Bugün" }).click();
-  await expect(page.locator(".hero-progress-chip")).toContainText("0 / 509 konu çalışıldı");
+  await expect(page.locator(".hero-progress-chip")).toContainText("0 / 510 konu çalışıldı");
 });
 
 test("Temel İnşa covers every TYT subject and stays readable at 320 px with large text", async ({ page }) => {

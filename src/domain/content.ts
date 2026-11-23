@@ -1,3 +1,4 @@
+import { probabilityLesson036 } from "../learning/probabilitySource036";
 import { countingLessons034035 } from "../learning/countingSources034035";
 import { permutationLessons032033 } from "../learning/permutationSources032033";
 import { factorizationSource028Practice } from "../learning/factorizationSource028Revision";
@@ -1048,6 +1049,7 @@ const baseLessons: Lesson[] = [
   ...geometryCircle040Lessons,
   ...permutationLessons032033,
   ...countingLessons034035,
+  probabilityLesson036,
 ];
 export const lessons: Lesson[] = baseLessons.map((lesson) => {
   const expanded =

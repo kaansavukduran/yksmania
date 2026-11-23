@@ -1,3 +1,4 @@
+import { probabilityGuide036 } from "../probabilitySource036";
 import { countingGuides034035 } from "../countingSources034035";
 import { permutationGuides032033 } from "../permutationSources032033";
 import { linearEquationsSource036Guides } from "../linearEquationsSource036";
@@ -273,6 +274,7 @@ export const lessonGuides = new Map(
   ...powersSource039Guides,
   ...permutationGuides032033,
   ...countingGuides034035,
+  probabilityGuide036,
     ...geometryCircle040Guides,
   ].map((guide) => [guide.id, guide]),
 );

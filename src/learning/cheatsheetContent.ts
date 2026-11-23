@@ -1,3 +1,5 @@
+import { probabilitySheet036 } from "./probabilitySource036";
+import { statisticsSource037QuickText } from "./statisticsSource037Revision";
 import { countingSheets034035 } from "./countingSources034035";
 import { permutationSheets032033 } from "./permutationSources032033";
 import { logicSource031SheetText } from "./logicSource031Revision";
@@ -142,6 +144,7 @@ const revisedSectionTextByLesson = new Map([
   ["yuzde-problemleri", percentProblemsSource020SheetText],
   ["kar-zarar-problemleri", profitProblemsSource021SheetText],
   ["faiz-problemleri", interestProblemsSource022SheetText],
+  ["veri-analizi", statisticsSource037QuickText],
   ["karisim-problemleri", mixtureProblemsSource023SheetText],
   ["isci-problemleri", workerProblemsSource024SheetText],
   ["havuz-problemleri", poolProblemsSource025SheetText],
@@ -369,5 +372,6 @@ export const builtInCheatSheets = new Map<string, CheatSheet>(
     ...geometryCircle040Sheets,
     ...permutationSheets032033,
     ...countingSheets034035,
+    probabilitySheet036,
   ].map((sheet) => [sheet.topicId, sheet]),
 );

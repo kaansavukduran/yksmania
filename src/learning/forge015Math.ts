@@ -1,9 +1,11 @@
+import { statisticsPractice037 } from "./probabilityStatisticsPractice041";
+import { statisticsSource037Supplement, statisticsSource037Examples, statisticsSource037Recall } from "./statisticsSource037Revision";
 import { txt, type Lesson } from "../domain/model";
 import type { LessonGuide } from "./guides/types";
 
 const id = "veri-analizi";
 const source =
-  "MEBİ TYT Matematik Konu Özetleri, PDF s. 109–112 / basılı s. 107–110; Aurelia 037 Veri Analizi (İstatistik), öğretim s. 1–3 ve 5–7; OGM 9. sınıf Merkezî Eğilim ve Yayılım Ölçüleri sunusu ile Verileri Değerlendiriyorum etkinliği temelinde özgün öğretim. Soru ve örnekler özgündür; resmî ÖSYM sorusu değildir. Örneklem sapmasında n−1 ile bütün anakütle sapmasında n ayrılır; küçük sapmadan kişi hakkında güvenlik veya başarı garantisi çıkarılmaz.";
+  "MEBİ TYT Matematik Konu Özetleri, PDF s. 109–112 / basılı s. 107–110; Aurelia 037 Veri Analizi (İstatistik), içerik 5.3, fiziksel s. 1–17; Fen Lisesi Matematik 9 basılı s. 365 ve 372. 2024 TYT Temel Matematik 16 ve anahtar Geçmiş Sınavlar’da. Soru ve örnekler özgündür; resmî ÖSYM sorusu değildir. Örneklem sapmasında n−1 ile bütün anakütle sapmasında n ayrılır; küçük sapmadan kişi hakkında güvenlik veya başarı garantisi çıkarılmaz.";
 const objectives = [
   "Ham gözlemleri sıralı listeye ve frekans tablosuna kayıpsız dönüştür.",
   "Ortanca, mod ve ağırlıklı ortalamayı veri sayısını koruyarak hesapla.",
@@ -104,6 +106,7 @@ export const forge015MathGuides: LessonGuide[] = [
           "Aynı ortalamada bile hangi öğrencinin yarışmaya seçileceği yalnız iki sayıdan zorunlu çıkmaz; açık bir seçim kuralı gerekir. Az gözlem, yanlı örneklem veya hatalı ölçüm bütün topluluk hakkında genelleme yapmayı sınırlar. İki özelliğin birlikte değişmesi tek başına nedensellik değildir. Son kontrolde ‘Bu sayı neyi betimliyor, hangi ek iddia için veri yetmiyor?’ sorularını ayrı cevapla.",
         ],
       },
+      ...statisticsSource037Supplement,
     ],
     examples: [
       {
@@ -273,6 +276,7 @@ export const forge015MathGuides: LessonGuide[] = [
         pitfall:
           "Tek bir 3 tekrarı gördükten sonra başka eş sıklık oluşup oluşmadığını saymamak.",
       },
+      ...statisticsSource037Examples,
     ],
     recall: [
       {
@@ -305,6 +309,7 @@ export const forge015MathGuides: LessonGuide[] = [
         answer:
           "Yalnız belirtilen ölçümlerin daha az yayılması; gelecekte başarı, güvenlik veya ölçüm doğruluğu garantisi çıkmaz.",
       },
+      ...statisticsSource037Recall,
     ],
   },
 ];
@@ -433,7 +438,7 @@ export const forge015MathLessons: Lesson[] = [
     })),
     source: txt(source),
     tags: ["detail-225", "Özgün öğretim soruları"],
-    questions: questions.map((q, i) => {
+    questions: [...questions.map((q, i) => {
       const options = [q.correct, ...q.distractors],
         answer = (i * 2 + 1) % 5;
       return {
@@ -445,7 +450,7 @@ export const forge015MathLessons: Lesson[] = [
         explanation: txt(q.explanation),
         skill: id,
       };
-    }),
+    }), ...statisticsPractice037],
   },
 ];
 

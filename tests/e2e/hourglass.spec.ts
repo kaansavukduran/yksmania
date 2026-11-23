@@ -361,7 +361,7 @@ test("progress reset is cancellable and atomic, preserves legacy files and nativ
   await nav(page, "Bugün");
   await expect(
     page.getByRole("region", { name: "Konu planı", exact: true }),
-  ).toContainText("0/509");
+  ).toContainText("0/510");
   await expect(page.locator(".stat-number").first()).toHaveText("0");
   await nav(page, "Kopya Kağıtları");
   await page

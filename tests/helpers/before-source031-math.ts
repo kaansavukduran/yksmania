@@ -110,6 +110,11 @@ const revisions = [
     appendedQuestions: ["dis-kosuldan-iceri", "karsit-ve-tersin-satiri", "tek-sayilarin-toplami", "evren-icinde-karsi-ornek", "degillemede-iki-kosul", "niceleyicinin-sirasi", "hipotez-hukum-yer-degisimi", "tanim-ve-hipotez"].map((id) => `mantik-onerme-031-${id}`),
     oldSource: "MEBİ TYT Matematik Konu Özetleri PDF s. 58–65 (basılı s. 56–63); Aurelia 031 Mantık ve Önermeler, öğretim PDF s. 1–3,5–7. Özgün tablolar, dıştan içe koşul çözümü ve sonlu alan kanıtı. Mantıksal koşul nedensellik değildir; resmî sınav sorusu sunulmaz.",
   },
+  {
+    lesson: "veri-analizi", topic: "detail-225", sections: 12, examples: 6, recall: 6,
+    appendedQuestions: ["eksik-frekans", "ham-histogram", "uc-seri", "aralikta-esik"].map((id) => `veri-analizi-037-${id}`),
+    oldSource: "MEBİ TYT Matematik Konu Özetleri, PDF s. 109–112 / basılı s. 107–110; Aurelia 037 Veri Analizi (İstatistik), öğretim s. 1–3 ve 5–7; OGM 9. sınıf Merkezî Eğilim ve Yayılım Ölçüleri sunusu ile Verileri Değerlendiriyorum etkinliği temelinde özgün öğretim. Soru ve örnekler özgündür; resmî ÖSYM sorusu değildir. Örneklem sapmasında n−1 ile bütün anakütle sapmasında n ayrılır; küçük sapmadan kişi hakkında güvenlik veya başarı garantisi çıkarılmaz.",
+  },
 ];
 
 const additions = new Set(revisions.flatMap(({ appendedQuestions }) => appendedQuestions));

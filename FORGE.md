@@ -1,3 +1,9 @@
+# Olasılık ve Veri Analizi · 0.41.0 adayı
+
+23 Kasım 2026. Olasılık’ın güncel 12 sayfası ve Veri Analizi’nin güncel 17 sayfası metin ve görsel olarak incelendi. Olasılık’ta eş olasılıklı durumları sayma, koşulla örnek uzayı daraltma, ayrıklık, bağımsızlık ve geri koymalı seçim adım adım işleniyor. Veri Analizi’nde bilinmeyen sıklığa ulaşma, standart sapmayı karşılaştırma ve ham ölçümlerden eş genişlikli sınıflar kurma tamamlandı. Etkileşimli zar tablosu ile nokta grafiği ve histogram aynı hesaplardan çizilir.
+
+Beş çözümlü örnek, 12 özgün soru, altı hatırlama ve ayrı Kopya Kağıdı bölümleri eklendi. 2025 TYT Temel Matematik 30 ve 2024 TYT Temel Matematik 16 asıl kitapçık ve anahtarla doğrulandı. Önceden başlayan Veri Analizi çalışmalarında 10 soruluk oturum, önceki atölye ve çalışma planındaki sıra korunur. Yeni Olasılık dersi planın sonuna eklenir.
+
 # Kombinasyon ve Binom Açılımı · 0.40.0 adayı
 
 23 Kasım 2026. Güncel iki kaynağın 12’şer sayfası metin ve görsel olarak incelendi. Kombinasyon’da zorunlu, yasak ve en az seçim koşulları ile üçgen, doğru ve köşegen sayıları işlendi. Binom’da Pascal satırı ve toplamı, terim sırası, işaret, sabit terim ve tek-çift katsayı toplamları anlatılıyor. Nokta seçimi ve katsayı grafiği değişen matematikten çizilir.
@@ -30,7 +36,9 @@ Yüzde Problemleri’ne kesri ödeme aşamasına kadar koruma, taksitten iç iç
 
 İki konuya 12 özgün soru eklendi. Önceki 20 soru kimliği ve sırası korunur. 2026 TYT Temel Matematik 22 ve 24 ile 2018 TYT Temel Matematik 14 asıl kitapçık ve anahtarla doğrulandı. Üç kayıt kendi konusu ile ilişkilidir.
 
-# İşçi ve Havuz Problemleri · 0.35.0 adayı
+# İşçi ve Havuz Problemleri · 0.35.0 yayımlandı
+
+Ana kaynak `51612057f5a893f632bb1e829e0ca7184d43e9d7`. Ana dalda 4.505 birim, 1.438 tarayıcı ve Windows/Linux paket çalışması geçti. Canlı 341 HTTPS varlığı yayın paketiyle eşleşti. 114 içerik grubu çevrimdışı açıldı. Altı masaüstü dosyasının SHA-256 özeti ve kişisel Android test paketinin imzası doğrulandı. [Ana dal CI](https://github.com/kaansavukduran/yksmania/actions/runs/45134714276) · [Pages](https://github.com/kaansavukduran/yksmania/actions/runs/45139679705) · [Masaüstü](https://github.com/kaansavukduran/yksmania/releases/tag/v0.35.0-alpha.1)
 
 23 Kasım 2026. İşçi Problemleri’nin güncel 11 sayfası ve Havuz Problemleri’nin güncel 10 sayfası önceki sürümleriyle karşılaştırıldı. İşçi anlatımı etkin çalışma süresini, ekipte değişen hızı ve üretim kapasitesini örneklerle gösteriyor. Havuz anlatımı suyun bittiği veya taştığı anı, kabın değişen kesitini ve bir ölçümün geçerli olduğu süreyi işliyor.
 
@@ -166,7 +174,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
-| TYT Matematik | 44 / 44 | 33 · 111 | 900 / 900 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 11 |
+| TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 217 / 217 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 177 | 311 / 311 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
@@ -181,20 +189,20 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **509 / 509** | **405 · 1670** | **6.630 / 6.630 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **104** |
+| **Toplam** | **510 / 510** | **405 · 1670** | **6.642 / 6.642 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
 | Dal kaydında okunan veya eşlenen PDF / arşiv envanteri | 119 / 8.981 · %1,33 |
 | 99_ÖSYM PDF (işlenen / beyan edilen) | 18 / 1.001 · %1,80 |
 | 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 76 |
-| Kademeli çözüm paneli bulunan soru | 6.630 / 6.630 · %100,00 |
+| Kademeli çözüm paneli bulunan soru | 6.642 / 6.642 · %100,00 |
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
-| Ara hatırlama (mikro ritim): ders · soru | 505 / 509 · %99,21 · 3.052 soru |
+| Ara hatırlama (mikro ritim): ders · soru | 505 / 510 · %99,02 · 3.052 soru |
 | Gösterim onarımı: soru alanı · ders paragrafı | 962 · 1.634 |
 | Kopya kâğıdı (kısmi aktarım / toplam) | 109 / 517 · %21,08 |
-| Resmî ana başlık · anlatımlı konu · hazır anlatım | 341 · 509 · 509 |
+| Resmî ana başlık · anlatımlı konu · hazır anlatım | 341 · 510 · 510 |
 | İleri ve kaynak soru seti (anlatımı ana konusunda) | 35 |
 <!-- ilerleme:bitir -->
 

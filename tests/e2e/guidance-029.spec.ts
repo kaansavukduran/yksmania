@@ -853,7 +853,7 @@ test.describe("linked membrane guide and built-in sheet", () => {
         sheetSections: 10,
         sheetExamples: 2,
         sheetRecall: 5,
-        sheetCount: 509,
+        sheetCount: 510,
       });
       const lesson = lessons.find(
         (item) => item.id === "hucre-zarinda-madde-alisverisleri",
@@ -950,7 +950,7 @@ test.describe("linked membrane guide and built-in sheet", () => {
 
       await nav(page, "Kopya Kağıtları");
       await expect(page.locator(".page-heading")).toContainText(
-        "509 hazır kağıt",
+        "510 hazır kağıt",
       );
       await page.getByRole("button", { name: "TYT", exact: true }).click();
       await page

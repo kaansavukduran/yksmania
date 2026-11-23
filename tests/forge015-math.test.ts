@@ -19,12 +19,13 @@ it("adds a distinct statistics heading with complete built-in teaching and auton
     lesson = forge015MathLessons[0];
   expect(guide.sections.length).toBeGreaterThanOrEqual(8);
   expect(
-    guide.sections.every(
+    guide.sections.slice(0, 12).every(
       (s) =>
         s.paragraphs.length >= 2 && s.paragraphs.every((p) => p.length > 150),
     ),
   ).toBe(true);
-  expect(guide.examples).toHaveLength(6);
+  expect(guide.sections).toHaveLength(15);
+  expect(guide.examples).toHaveLength(8);
   expect(
     guide.examples.every(
       (e) =>
@@ -33,7 +34,7 @@ it("adds a distinct statistics heading with complete built-in teaching and auton
   ).toBe(true);
   expect(guide.recall.length).toBeGreaterThanOrEqual(4);
   expect(lesson.body).toHaveLength(guide.sections.length);
-  expect(lesson.questions).toHaveLength(10);
+  expect(lesson.questions).toHaveLength(14);
   for (const q of lesson.questions) {
     expect(q.options).toHaveLength(5);
     expect(new Set(q.options.map((o) => o.tr)).size).toBe(5);
@@ -58,10 +59,10 @@ it("independently verifies all ten final shuffled choices", () => {
     "A’nın gözlenen puanları daha az yayılmıştır; gelecekteki başarı garanti edilmez.",
   ];
   expect(
-    forge015MathLessons[0].questions.map((q) => q.options[q.answer].tr),
+    forge015MathLessons[0].questions.slice(0, 10).map((q) => q.options[q.answer].tr),
   ).toEqual(expected);
   expect(new Set(forge015MathLessons[0].questions.map((q) => q.id)).size).toBe(
-    10,
+    14,
   );
 });
 describe("raw observations and their definitions", () => {

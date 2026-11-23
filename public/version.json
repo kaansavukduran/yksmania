@@ -1,8 +1,8 @@
 {
-  "version": "0.40.0",
+  "version": "0.41.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Kombinasyon ve Binom Açılımı dersleri eklendi. Nokta seçerek üçgenleri ve doğruları say, Pascal satırını ve işaretli katsayıları değiştir. Özgün sorular ve ayrı Kopya Kağıtları çevrimdışı kullanılabilir.",
-    "en": "Combination and binomial expansion lessons include interactive point and signed coefficient diagrams, original questions, and separate cheat sheets."
+    "tr": "Olasılık ve Veri Analizi’nde koşullu zar tablosu, geri koymalı çekiş, ham veriden histogram ve gözlem dönüşümü eklendi. Sorular ve Kopya Kağıtları çevrimdışı çalışır.",
+    "en": "Probability and data analysis add interactive dice, replacement draws, histograms, and transformed observations alongside offline practice."
   }
 }

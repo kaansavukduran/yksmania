@@ -18,6 +18,7 @@ const legacyPracticeSizes = new Map([
   ["havuz-problemleri", 10],
   ["hiz-problemleri", 10],
   ["grafik-problemleri", 10],
+  ["veri-analizi", 10],
   ["sayi-problemleri", 10],
   ["oran-oranti", 10],
   ["koklu-sayilar", 10],

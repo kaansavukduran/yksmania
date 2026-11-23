@@ -4,7 +4,11 @@ Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış i�
 
 23 Kasım Drive taramasında 9.984 benzersiz fiziksel PDF listelendi. Son kanonik envanterdeki 8.981 kimliğin tamamı görüldü, 1.003 yeni kimlik ve 320 değişmiş sürüm bilgisi kaydedildi. Yeni 99_ÖSYM alt ağacında 1.002 fiziksel PDF var. Kanonik defter tarihsel sürümlerde 7 tam ve 2 kısmi öğretim aktarımı ile 8.972 belirsiz kayıt içeriyor. Tam aktarım kaydı olan yedi dosyanın güncel boyutu kapanış kanıtındaki boyuttan farklı. Güncel tam aktarım sayısı belirsiz.
 
-## Son güncelleme: 19 Kasım 2026 (Türkiye saati)
+## Olasılık ve Veri Analizi · 23 Kasım 2026
+
+0.41 adayı 036 Olasılık’ın 12 ve 037 Veri Analizi’nin 17 güncel sayfasını metin ve görsel olarak inceledi. Çalışma ağacında olasılık için yeni ders, mevcut Veri Analizi için ek anlatım, iki atölye, ayrı Kopya Kağıdı bölümleri, beş örnek ve 12 özgün soru var. Kanonik aktarım durumları ve envanter sayıları önceki doğrulanmış kayıttan gelir.
+
+## Tarihsel sayım · 19 Kasım 2026
 
 ### Drive PDF arşivi (Aurelia/YKS)
 

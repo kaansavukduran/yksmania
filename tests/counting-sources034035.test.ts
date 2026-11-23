@@ -29,7 +29,7 @@ it("registers two separate sets with independently checked answers, summaries an
       ["20", "216", "−80", "1.215", "1 terim, 1", "−62 ve 63", "7", "x⁰"],
     ],
   ] as const;
-  expect(studyTopics.slice(-2).map(({ id }) => id)).toEqual(
+  expect(studyTopics.slice(507, 509).map(({ id }) => id)).toEqual(
     expected.map(([id]) => `topic-${id}`),
   );
   for (const [id, referenceId, answer, keys] of expected) {

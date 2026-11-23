@@ -2,54 +2,9 @@ import {
   binomialId,
   combinationId,
 } from "../data/supplementalCountingTopics034035";
-import { txt, type Question } from "../domain/model";
+import { guidedMathPractice } from "./guidedMathPractice";
 
-type Option = readonly [value: string, reason: string];
-type CountingExercise = {
-  id: string;
-  prompt: string;
-  options: readonly [Option, Option, Option, Option, Option];
-  answer: number;
-  knowledge: string;
-  strategy: string;
-  steps: string[];
-  commonError: string;
-  check: string;
-};
-
-function practice(skill: string, items: CountingExercise[]): Question[] {
-  return items.map(
-    ({
-      id,
-      prompt,
-      options,
-      answer,
-      knowledge,
-      strategy,
-      steps,
-      commonError,
-      check,
-    }) => ({
-      id: `${skill}-${id}`,
-      skill,
-      prompt: txt(prompt),
-      options: options.map(([value]) => txt(value)),
-      answer,
-      hint: txt(strategy),
-      explanation: txt([...steps, check].join(" ")),
-      guidance: {
-        knowledge: [knowledge],
-        strategy,
-        steps,
-        optionReasons: options.map(([, reason]) => reason),
-        commonError,
-        check,
-      },
-    }),
-  );
-}
-
-export const combinationPractice034 = practice(combinationId, [
+export const combinationPractice034 = guidedMathPractice(combinationId, [
   {
     id: "ekip-rolsuz",
     prompt:
@@ -294,7 +249,7 @@ export const combinationPractice034 = practice(combinationId, [
   },
 ]);
 
-export const binomialPractice035 = practice(binomialId, [
+export const binomialPractice035 = guidedMathPractice(binomialId, [
   {
     id: "pascal-komsular",
     prompt:

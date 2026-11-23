@@ -21,6 +21,7 @@ const legacySectionCounts: Readonly<Record<string, number>> = {
   "havuz-problemleri": 8,
   "hiz-problemleri": 8,
   "grafik-problemleri": 8,
+  "veri-analizi": 12,
   "sayi-problemleri": 8,
   "oran-oranti": 9,
   "koklu-sayilar": 10,

@@ -1,3 +1,11 @@
+# YKSMania 0.41.0 · Olasılık ve Veri Analizi
+
+Yayın adayı.
+
+- Olasılık’ta iki zarın koşulunu seç, tablodaki mümkün sonuçları say. Torbada ilk topu geri koyduğunda hesabın nasıl değiştiğini incele.
+- Veri Analizi’nde ölçüm listesini değiştir, standart sapma ile histogramı karşılaştır. Önceden açtığın Veri Analizi çalışmasına kaldığın yerden devam edebilirsin.
+- İki konu 12 özgün soru, beş çözümlü örnek ve ayrı Kopya Kağıdı bölümleri içerir. [İlerleme tablosu](ILERLEME.md)
+
 # YKSMania 0.40.0 · Kombinasyon ve Binom Açılımı
 
 Yayın adayı.

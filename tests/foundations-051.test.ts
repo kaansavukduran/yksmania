@@ -6,11 +6,11 @@ import type { FigureDef } from "../src/learning/sectionFigures/figureKit";
 
 // Temel İnşa: ayrı köprü katmanı. Plan/sayaç değişmez, içerik kendi kendine yeter.
 describe("051 Temel İnşa ön dersleri", () => {
-  it("does not change the lesson list or the 509-topic plan", () => {
+  it("does not change the lesson list or the 510-topic plan", () => {
     const ids = new Set(foundationLessons.map((l) => l.id));
     expect(lessons.some((l) => ids.has(l.id))).toBe(false);
     expect(studyTopics.some((t) => ids.has(t.id))).toBe(false);
-    expect(studyTopics).toHaveLength(509);
+    expect(studyTopics).toHaveLength(510);
   });
 
   it("uses unique ids, TYT subjects and real prepared lessons", () => {

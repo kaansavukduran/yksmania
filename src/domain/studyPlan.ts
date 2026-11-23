@@ -1,3 +1,4 @@
+import { probabilityId, probabilityTopic } from "../data/supplementalProbabilityTopic036";
 import { countingTopicMap034035, supplementalCountingTopics034035 } from "../data/supplementalCountingTopics034035";
 import { permutationTopicMap032033, supplementalPermutationTopics032033 } from "../data/supplementalPermutationTopics032033";
 import { supplementalTopics040, geometryCircle040TopicMap } from "../learning/geometryCircle040";
@@ -161,6 +162,7 @@ export const studyTopics = [
     ...supplementalTopics041,
     ...supplementalPermutationTopics032033,
     ...supplementalCountingTopics034035,
+    probabilityTopic,
   ].map((topic, i) => ({
     ...topic,
     order: workbookStudyTopics.length + i + 1,
@@ -184,6 +186,7 @@ export const lessonTopic: Record<string, string> = {
   ...sourceMath039TopicMap,
   ...permutationTopicMap032033,
   ...countingTopicMap034035,
+  [probabilityId]: probabilityTopic.id,
   ...legacy026Topics,
   ...forge025MathTopics,
   ...forge025ChemistryTopics,

@@ -1,4 +1,5 @@
 import { counting040SmokeCases } from "./counting040-smoke-cases.mjs";
+import { probabilityStatistics041SmokeCases } from "./probability-statistics041-smoke-cases.mjs";
 import { runSource024OriginalSmoke } from "./source024-original-smoke.mjs";
 import { forge038039SmokeCases, runForge038039SmokeCase } from "./forge038039-smoke-cases.mjs";
 import { forge036037SmokeCases, runForge036037SmokeCase } from "./forge036037-smoke-cases.mjs";
@@ -1118,6 +1119,19 @@ try {
     }
     expect(cases).toHaveLength(116);
     expect(new Set(cases).size).toBe(116);
+    expect(probabilityStatistics041SmokeCases).toHaveLength(2);
+    const probabilityStatistics041Snapshots = [];
+    for (const unit of probabilityStatistics041SmokeCases) {
+      progress("case:begin", { id: unit.storedKey, completed: cases.length });
+      probabilityStatistics041Snapshots.push(await withinDeadline(
+        `case ${unit.storedKey}`, 120_000, () =>
+          runForge034035SmokeCase(page, nav, unit),
+      ));
+      cases.push(unit.storedKey);
+      progress("case:passed", { id: unit.storedKey, completed: cases.length });
+    }
+    expect(cases).toHaveLength(118);
+    expect(new Set(cases).size).toBe(118);
     progress("original-source-questions:begin");
     const source024Original = await withinDeadline("six original OGM question images", 120_000, () => runSource024OriginalSmoke(page, nav));
     progress("original-source-questions:passed", { questions: source024Original.questionIds.length });
@@ -1170,6 +1184,8 @@ try {
       source024OriginalQuestionsOffline: source024Original,
       forge038039FamiliesOfflineHtmlStateAndReload: forge038039Snapshots.map((item) => item.id),
       counting040FamiliesOfflineHtmlStateAndReload: counting040Snapshots.map(({ id }) => id),
+      probabilityStatistics041OfflineHtmlStateAndReload:
+        probabilityStatistics041Snapshots.map(({ id }) => id),
       url: origin,
       worker,
       manifestStart: manifest.start_url,

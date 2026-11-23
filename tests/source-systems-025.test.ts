@@ -100,10 +100,10 @@ it("retains5088 accepted questions and475 teaching records while adding234 compl
 it("offers all final11 ordered guides and built-in sheets without requiring learner imports", () => {
   expect(lessons.length).toBeGreaterThanOrEqual(486);
   expect(lessons.filter((l) => !l.tags.includes("soru-seti"))).toHaveLength(
-    509,
+    510,
   );
   expect(lessonGuides.size).toBeGreaterThanOrEqual(452);
-  expect(builtInCheatSheets.size).toBe(509);
+  expect(builtInCheatSheets.size).toBe(510);
   const ids = new Set<string>();
   for (const topic of studyTopics.slice(468, 479)) {
     const lesson = topicLessons(topic.id).find(
