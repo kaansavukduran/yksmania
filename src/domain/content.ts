@@ -1,6 +1,6 @@
 import { linearEquationsSource036Lessons } from "../learning/linearEquationsSource036";
 import { basicInequalitiesSource037Lessons } from "../learning/basicInequalitiesSource037";
-import { absoluteValueSource038Lessons } from "../learning/absoluteValueSource038";
+import { absoluteValueSource012Lessons } from "../learning/absoluteValueSource012Revision";
 import { powersSource039Lessons } from "../learning/powersSource039";
 import { sourceQuestionLessons024 } from "../learning/sourceExercises024";
 import {
@@ -1038,7 +1038,7 @@ const baseLessons: Lesson[] = [
   ...rationalSource035Lessons,
   ...linearEquationsSource036Lessons,
   ...basicInequalitiesSource037Lessons,
-  ...absoluteValueSource038Lessons,
+  ...absoluteValueSource012Lessons,
   ...powersSource039Lessons,
   ...sourceQuestionLessons024,
   ...geometryCircle040Lessons,

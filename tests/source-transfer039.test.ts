@@ -19,6 +19,7 @@ import { xp } from "../src/domain/scheduler";
 import { questionContentIssues } from "../src/domain/questionContent";
 import { questionGuidanceSchema } from "../src/domain/questionHelpModel";
 import { getLessonVideos031 } from "../src/learning/videoCatalog031";
+import { resolveGuideStep } from "../src/learning/guides/position";
 
 const id = "tyt-mat-uslu-sayilar-kaynak-039";
 const topic = `topic-${id}`;
@@ -48,10 +49,10 @@ it("registers the complete separate039 lesson, guide, summary, topic and55 self-
   const guide = lessonGuides.get(id)!;
   const sheet = builtInCheatSheets.get(topic)!;
   expect(lessons[534].id).toBe(id);
-  expect(guide.sections).toHaveLength(34);
-  expect(guide.examples).toHaveLength(47);
-  expect(guide.recall).toHaveLength(24);
-  expect(sheet.sections).toHaveLength(14);
+  expect(guide.sections).toHaveLength(40);
+  expect(guide.examples).toHaveLength(53);
+  expect(guide.recall).toHaveLength(29);
+  expect(sheet.sections).toHaveLength(16);
   expect(sheet.lessonId).toBe(id);
   expect(lesson.questions).toHaveLength(55);
   expect(new Set(lessons.flatMap((value) => value.questions).map((value) => value.id)).size).toBe(lessons.flatMap((value) => value.questions).length);
@@ -70,6 +71,16 @@ it("registers the complete separate039 lesson, guide, summary, topic and55 self-
     for (const [optionIndex, option] of question.options.entries())
       expect(question.guidance?.optionReasons[optionIndex]).toBe(sourceItem.optionReasons[sourceItem.options.indexOf(option.tr)]);
   }
+});
+
+it("preserves the old Source039 examples and recall bookmarks after adding teaching", () => {
+  const currentSectionCount = lessonGuides.get(id)!.sections.length;
+  for (const storedSectionCount of [0, 34]) {
+    expect(resolveGuideStep(id, 33, storedSectionCount, currentSectionCount)).toBe(33);
+    expect(resolveGuideStep(id, 34, storedSectionCount, currentSectionCount)).toBe(currentSectionCount);
+    expect(resolveGuideStep(id, 35, storedSectionCount, currentSectionCount)).toBe(currentSectionCount + 1);
+  }
+  expect(resolveGuideStep(id, 34, currentSectionCount, currentSectionCount)).toBe(34);
 });
 
 it("manual039 theory completion preserves old data and original day1→3/7/21 policy without questions orXP", () => {
@@ -97,7 +108,7 @@ it("manual039 theory completion preserves old data and original day1→3/7/21 po
 
 it("preserves approved teaching with pinned C10 choice CSS, C7 state and C8 log corrections", () => {
   const stable = {
-    "../src/learning/powersSource039.ts": "3498df592bba7e7d5d716bc7991fe6aaccc29a40d90e8e110e9d0574a06f897b",
+    "../src/learning/powersSource039.ts": "af9e0e68904ae392a6c7623da9451c00ed88f8456fc710b2db675010729ac707",
     "../src/learning/PowersSource039Lab.css": "acc2f37950759ab95e0a40099cbbd91d406f517b59b4f06412aeb361f98b8079",
   };
   for (const [file, expected] of Object.entries(stable))

@@ -1,6 +1,6 @@
 import { linearEquationsSource036Sheets } from "./linearEquationsSource036";
 import { basicInequalitiesSource037Sheets } from "./basicInequalitiesSource037";
-import { absoluteValueSource038Sheets } from "./absoluteValueSource038";
+import { absoluteValueSource012Sheets } from "./absoluteValueSource012Revision";
 import { powersSource039Sheets } from "./powersSource039";
 import { legacy026TheoryIds } from "./legacy026";
 import { primeSource032Sheets } from "./primeSource032";
@@ -329,7 +329,7 @@ export const builtInCheatSheets = new Map<string, CheatSheet>(
     ...rationalSource035Sheets,
     ...linearEquationsSource036Sheets,
     ...basicInequalitiesSource037Sheets,
-    ...absoluteValueSource038Sheets,
+    ...absoluteValueSource012Sheets,
   ...powersSource039Sheets,
     ...geometryCircle040Sheets,
   ].map((sheet) => [sheet.topicId, sheet]),

@@ -114,7 +114,7 @@ async function openFullHelp(
   await expect(container.locator(".help-full-solution")).toBeVisible();
 }
 
-test("46 source-reader activities and 31 visible model choices remain unscored and keep offline selections", async ({
+test("53 source-reader activities and 31 visible model choices remain unscored and keep offline selections", async ({
   page,
   context,
 }, info) => {
@@ -179,7 +179,7 @@ test("46 source-reader activities and 31 visible model choices remain unscored a
     {
       id: "tyt-mat-mutlak-deger-kaynak-038",
       title: "Mutlak değer: uzaklık, koşul ve grafiğin mantığı",
-      count: 18,
+      count: 25,
     },
     {
       id: "tyt-mat-uslu-sayilar-kaynak-039",
@@ -213,6 +213,13 @@ test("46 source-reader activities and 31 visible model choices remain unscored a
       await expect(
         reader.locator(".original-source-solution .source-question-figure"),
       ).toBeVisible();
+      if (unit.id.endsWith("038") && i === 18) {
+        await expect(reader.locator(".original-source-solution h4")).toContainText("11,6 mm");
+        await expect(reader.locator(".source-question-figure svg")).toBeVisible();
+      }
+      if (unit.id.endsWith("038") && i === 24) {
+        await expect(reader.locator(".original-source-solution h4")).toContainText("{0, 7}");
+      }
       if (unit.count === 28 && i >= 10 && i < 16) {
         const q = ogm[i - 10];
         await expect(reader.locator("article h3")).toHaveText(q.stem);
@@ -234,7 +241,7 @@ test("46 source-reader activities and 31 visible model choices remain unscored a
       }
     }
     expect(learning(await stored(page))).toEqual(learning(before));
-    if (unit.count === 18) {
+    if (unit.id.endsWith("038")) {
       const lab = page.locator("[data-forge038]");
       await lab
         .getByRole("group", { name: "Mutlak değer modeli", exact: true })
@@ -295,7 +302,7 @@ test("46 source-reader activities and 31 visible model choices remain unscored a
   expect(observed).toHaveLength(31);
   await info.attach("actual-source-reader-and-choices", {
     body: JSON.stringify({
-      sourceActivities: 46,
+      sourceActivities: 53,
       visibleChoiceActivations: 31,
       observed,
       noLearningEvidence: true,

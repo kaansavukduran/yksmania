@@ -1,3 +1,11 @@
+# YKSMania 0.30.0 · Eşitsizlikler, mutlak değer ve üsler
+
+Yayın adayı. Basit Eşitsizlikler’de aralıkların açık ve kapalı uçlarını, düzlemde üç sınırın ortak alanını ve izinli tam sayı noktalarını değiştirerek inceleyebilirsin. 45 eski soru korunur ve 10 yeni özgün soru eklenir.
+
+Mutlak Değer’e ölçüm toleransı ve altı hata onarımı alıştırması eklendi. Üslü Sayılar’da ortak kuvvet, kesirli üs, yüzde azalma ve birim başına ölçekleme ayrı örneklerle öğretilir. İki konunun 55’er soruluk setleri ve kayıtlı okuma konumları korunur. Kopya Kağıtları ayrı menüde açılır. [İlerleme tablosu](ILERLEME.md)
+
+---
+
 # YKSMania 0.29.0 · İki bilinmeyenli denklem sistemleri
 
 Yayın adayı. Birinci Dereceden Denklemler’in 18 sayfalık güncel kaynağından 13 yeni anlatım bölümü, adım adım örnekler, ayrı Kopya Kağıdı ve 10 özgün soru eklendi. İki doğrunun ortak çözümü grafikte ve denklem hesabında birlikte gösteriliyor. Yerine koyma ve yok etme adımlarını, fiyat ve depo problemlerini değiştirebilirsin.

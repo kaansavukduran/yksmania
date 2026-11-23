@@ -9,6 +9,7 @@ const legacySectionCounts: Readonly<Record<string, number>> = {
   "bilimsel-gosterim-katsayi": 8,
   "tyt-mat-dogrusal-denklemler-kaynak-036": 27,
   "tyt-mat-basit-esitsizlikler-kaynak-037": 30,
+  "tyt-mat-uslu-sayilar-kaynak-039": 34,
 };
 
 export function resolveGuideStep(

@@ -1,3 +1,9 @@
+# Basit eşitsizlikler, mutlak değer ve üslü sayılar · 0.30.0 adayı
+
+23 Kasım 2026. Basit Eşitsizlikler’in güncel 15 sayfası aralık işlemleri ve düzlemde ortak çözüm ekliyor. Yeni iki model şekli ve sonucu aynı kesin kesirlerden üretir. Önceki 45 sorunun kimliği ve açık oturumun boyu korunur. Karışık prova, güncel kaynaktaki 10 soruyu gerekçelerden önce gösterir. 2024 TYT Temel Matematik 8, gerçek PDF sayfası 26 ve anahtar 43 ile doğrulandı.
+
+Mutlak Değer’in 18 sayfalık sürümündeki 12 mm ve 0,4 mm tolerans örneği ile altı hata onarımı ayrı alıştırmalar olarak açılır. 2026 TYT Temel Matematik 7, PDF sayfası 26 ve anahtar 45, C. Üslü Sayılar’ın 16 sayfalık sürümüne 6 anlatım, 6 örnek ve 2 özet bölümü eklendi. 2019 MSÜ Temel Matematik 2’nin asıl görseli ve E anahtarı fiziksel 24. sayfada. Tam aday CI ve dağıtım doğrulaması sürüyor.
+
 # Birinci Dereceden Denklemler · Kaynak 010 sürüm 1.3
 
 23 Kasım 2026. Güncel 18 fiziksel sayfa, önceki 9 sayfalık sürümle karşılaştırıldı. İlk 27 anlatım konumu ve 42 soru kimliği korunuyor. Yeni 13 bölümde iki bilinmeyen, grafik, yerine koyma, yok etme, özel katsayılar ve fiyat ile sıvı aktarımı işleniyor. Öğrenci 14 provayı çözümünü açmadan deneyebilir. Yeni 10 soru özgün öğretim kartıdır.
@@ -94,7 +100,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
-| TYT Matematik | 40 / 40 | 33 · 110 | 752 / 752 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 7 |
+| TYT Matematik | 40 / 40 | 33 · 110 | 762 / 762 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 7 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 217 / 217 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 177 | 311 / 311 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
@@ -109,18 +115,18 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **505 / 505** | **405 · 1669** | **6.482 / 6.482 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **100** |
+| **Toplam** | **505 / 505** | **405 · 1669** | **6.492 / 6.492 · %100,00** | **109 / 517 · %21,08** | **18 / 1.001 · %1,80 PDF · 1.845 soru** | **100** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
 | Dal kaydında okunan veya eşlenen PDF / arşiv envanteri | 119 / 8.981 · %1,33 |
 | 99_ÖSYM PDF (işlenen / beyan edilen) | 18 / 1.001 · %1,80 |
 | 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 76 |
-| Kademeli çözüm paneli bulunan soru | 6.482 / 6.482 · %100,00 |
+| Kademeli çözüm paneli bulunan soru | 6.492 / 6.492 · %100,00 |
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
 | Ara hatırlama (mikro ritim): ders · soru | 505 / 505 · %100,00 · 3.052 soru |
-| Gösterim onarımı: soru alanı · ders paragrafı | 962 · 1.635 |
+| Gösterim onarımı: soru alanı · ders paragrafı | 962 · 1.634 |
 | Kopya kâğıdı (kısmi aktarım / toplam) | 109 / 517 · %21,08 |
 | Resmî ana başlık · anlatımlı konu · hazır anlatım | 341 · 505 · 505 |
 | İleri ve kaynak soru seti (anlatımı ana konusunda) | 35 |

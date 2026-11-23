@@ -1,6 +1,6 @@
 import { linearEquationsSource036Guides } from "../linearEquationsSource036";
 import { basicInequalitiesSource037Guides } from "../basicInequalitiesSource037";
-import { absoluteValueSource038Guides } from "../absoluteValueSource038";
+import { absoluteValueSource012Guides } from "../absoluteValueSource012Revision";
 import { powersSource039Guides } from "../powersSource039";
 import { legacy026Guides } from "../legacy026";
 import { primeSource032Guides } from "../primeSource032";
@@ -267,7 +267,7 @@ export const lessonGuides = new Map(
     ...rationalSource035Guides,
     ...linearEquationsSource036Guides,
     ...basicInequalitiesSource037Guides,
-    ...absoluteValueSource038Guides,
+    ...absoluteValueSource012Guides,
   ...powersSource039Guides,
     ...geometryCircle040Guides,
   ].map((guide) => [guide.id, guide]),

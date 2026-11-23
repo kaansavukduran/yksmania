@@ -79,12 +79,39 @@ describe("asıl kaynak soruları ile özgün pekiştirme ayrı kalır", () => {
     ]);
     for (const q of originalAbsoluteExercises024) {
       expect(q.options).toEqual([]);
-      expect(q.source.pageLabel).toContain("11");
+      expect(q.source.pageLabel).toContain("v1.3.0, soru s. 14, çözüm s. 16");
+      expect(q.source.pageLabel).toContain("v1.0.0 s. 11");
       expect(q.steps.length).toBeGreaterThanOrEqual(3);
       expect(q.figure).toBeDefined();
       expect(q.explanationFigure).toBeDefined();
       expect(q.scoredLessonId).toBeUndefined();
     }
+  });
+  it("güncel mutlak değer prova ve onarımlarını kaydedilmiş kart sırasının sonuna ekler", () => {
+    const lessonId = "tyt-mat-mutlak-deger-kaynak-038";
+    const exercises = originalExercisesForLesson(lessonId);
+    expect(exercises.slice(0, 18).map((q) => q.id)).toEqual([
+      ...originalAbsoluteExercises024.map((q) => q.id),
+      ...extraOriginalSourceExercises024.filter((q) => q.lessonId === lessonId).map((q) => q.id),
+    ]);
+    const updated = exercises.slice(18);
+    expect(new Set(exercises.map((q) => q.id)).size).toBe(exercises.length);
+    expect(updated.map((q) => q.id)).toEqual([
+      "s012-p6-q9-v130",
+      "s012-p6-h1-v130",
+      "s012-p6-h2-v130",
+      "s012-p6-h3-v130",
+      "s012-p6-h4-v130",
+      "s012-p6-h5-v130",
+      "s012-p6-h6-v130",
+    ]);
+    for (const q of updated) {
+      expect(q.options).toEqual([]);
+      expect(q.scoredLessonId).toBeUndefined();
+    }
+    expect(updated[0].answer).toContain("11,6");
+    expect(updated[0].answer).toContain("12,4");
+    expect(updated.at(-1)?.answer).toContain("{0, 7}");
   });
   it("üslü sayıların on alıştırmasını, asıl dört seçeneği ve koşul erratasını korur", () => {
     expect(originalPowersExercises024.map((q) => q.prompt)).toEqual([
@@ -162,7 +189,7 @@ describe("asıl kaynak soruları ile özgün pekiştirme ayrı kalır", () => {
     expect(originalSourceExercises024).toHaveLength(46);
     expect(
       originalExercisesForLesson("tyt-mat-mutlak-deger-kaynak-038"),
-    ).toHaveLength(18);
+    ).toHaveLength(25);
     expect(
       originalExercisesForLesson("tyt-mat-uslu-sayilar-kaynak-039"),
     ).toHaveLength(28);

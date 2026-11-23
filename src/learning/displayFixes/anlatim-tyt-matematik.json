@@ -658,9 +658,5 @@
  {
   "from": "Verilen kuvvetle kurulan sorularda ara taban verilmiş olabilir. 15^x=A ve 3^x=B ile 75=15²/3 olduğundan 75^(2 x)=(15^x)^4/(3^x)^2=A⁴/B². 5^x=2 iken 25^(2 x+1)=5^(4 x+2)=(5^x)^4·25=400. Önemli olan sorunun biçimini görmek, her seferinde x’i bulmak değildir. Aşağıdaki seçili altı OGM çözümü doğrudan incelenen tek sayfanın işlemlerini adım adım açıklar.",
   "to": "Verilen kuvvetle kurulan sorularda ara taban verilmiş olabilir. 15^x=A ve 3^x=B ile 75=15²/3 olduğundan 75^(2x)=(15^x)^4/(3^x)^2=A⁴/B². 5^x=2 iken 25^(2x+1)=5^(4x+2)=(5^x)^4·25=400. Önemli olan sorunun biçimini görmek, her seferinde x’i bulmak değildir."
- },
- {
-  "from": "Bu paket seçili 12 sayfalık üslü sayılar çalışma kaynağının öğretim maddeleri ve doğrudan incelenen tek OGM özet sayfasından özgün uyarlamadır. Kaynaktaki bazı bölüm numaraları ve bilimsel eksen şeması düzeltilmiştir. 2019 MSÜ atfındaki kitapçık konumu/anahtar metinsel olarak doğrulanmış olsa da özgün sayısal görseli doğrulanmadığından burada resmî soru yeniden sunulmaz. 55 kart özgün öğretim sorusudur; tüm MEB/ÖSYM kitaplarının okunduğu iddiası yoktur. Görsel keşif, okuma, süre veya elle onay ustalık/XP kanıtı değildir.",
-  "to": "Buradaki örnekler özgün öğretim sorularıdır; resmî sınav sorusu olarak sunulmaz."
  }
 ]

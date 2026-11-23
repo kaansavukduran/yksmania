@@ -2,6 +2,6 @@
   "version": "0.30.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Basit Eşitsizlikler için aralık işlemleri, düzlemde ortak bölge, 10 yeni özgün soru ve ayrı bir Kopya Kağıdı eklendi. Yarım kalan oturumlar kendi soru sayısını korur."
+    "tr": "Basit Eşitsizlikler’de aralık ve düzlem modelleriyle 10 yeni özgün soru var. Mutlak Değer’e ölçüm toleransı ve altı hata onarımı eklendi. Üslü Sayılar’da kesirli üs, yüzde azalma ve birim başına ölçekleme adımları gösteriliyor."
   }
 }

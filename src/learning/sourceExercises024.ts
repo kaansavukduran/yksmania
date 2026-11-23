@@ -12,6 +12,7 @@ import question04 from "./sourceExerciseAssets024/ogm-uslu-ifadeler-soru-04.png"
 import question05 from "./sourceExerciseAssets024/ogm-uslu-ifadeler-soru-05.png";
 import question06 from "./sourceExerciseAssets024/ogm-uslu-ifadeler-soru-06.png";
 import { extraOriginalSourceExercises024 } from "./extraOriginalSourceExercises024";
+import { source012RevisionExercises } from "./source012RevisionExercises";
 
 export interface SourceAttribution {
   shortLabel: string;
@@ -88,7 +89,7 @@ const solutionMath = (alt: string, expression: SourceMathNode) =>
 const absoluteSource = (number: number): SourceAttribution => ({
   shortLabel: "Mutlak Değer · kaynak alıştırması",
   title: "Mutlak Değer",
-  pageLabel: "Kaynak PDF, fiziksel sayfa 11",
+  pageLabel: "Kaynak PDF v1.3.0, soru s. 14, çözüm s. 16 (v1.0.0 s. 11)",
   itemLabel: `Alıştırma ${number}`,
 });
 const powersSource = (number: number): SourceAttribution => ({
@@ -669,7 +670,7 @@ export const originalSourceExercises024 = [
   ...extraOriginalSourceExercises024,
 ];
 export function originalExercisesForLesson(lessonId: string) {
-  return originalSourceExercises024.filter((q) => q.lessonId === lessonId);
+  return [...originalSourceExercises024, ...source012RevisionExercises].filter((q) => q.lessonId === lessonId);
 }
 export function isSourceQuestionLesson(lessonId: string) {
   return lessonId === originalOgmLesson024Id;

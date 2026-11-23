@@ -315,7 +315,104 @@ export const powersSource039Pack: Powers039Pack = {
       title: "Kendi kendine hatırlama ve kaynak sınırı",
       paragraphs: [
         "Not kapalıyken önce tanımı söyle, sonra iki farklı örnek çöz ve bir yanlış yönteme karşı örnek üret. İlk çalışma 1. gün, tekrarlar 3., 7. ve 21. gündür; tekrar sırasında yalnız okumak yerine yöntemi neden seçtiğini söyleyip yeni soruyu kendi başına çöz. Bir yanlışta önce tanım mı, işaret mi, koşul mu, işlem mi kaçtı onu belirle ve kısa bir düzeltme notu yaz.",
-        "Bu paket seçili 12 sayfalık üslü sayılar çalışma kaynağının öğretim maddeleri ve doğrudan incelenen tek OGM özet sayfasından özgün uyarlamadır. Kaynaktaki bazı bölüm numaraları ve bilimsel eksen şeması düzeltilmiştir. 2019 MSÜ atfındaki kitapçık konumu/anahtar metinsel olarak doğrulanmış olsa da özgün sayısal görseli doğrulanmadığından burada resmî soru yeniden sunulmaz. 55 kart özgün öğretim sorusudur; tüm MEB/ÖSYM kitaplarının okunduğu iddiası yoktur. Görsel keşif, okuma, süre veya elle onay ustalık/XP kanıtı değildir.",
+        "Bu ders güncel 16 sayfalık Üslü Sayılar kâğıdından ve daha önce doğrudan incelenen bir OGM özet sayfasından uyarlanmıştır. ÖSYM 2019 MSÜ Temel Matematik 2 için birim başına hesap ve sonuç resmî kitapçık görseliyle doğrulandı. Ders, çözüm yolunu kendi ifadeleriyle açıklar. 55 soru kartı özgün öğretim sorusudur. Sınav arşivi kısmen incelenmiştir. Ustalık ve XP için bağımsız soru yanıtları değerlendirilir.",
+      ],
+    },
+    {
+      code: "S35",
+      title: "Ortak kuvvetle toplamdan denkleme geç",
+      paragraphs: [
+        "2^(x+1)+2^x=24 denkleminde x gerçek sayı olsun. 2^(x+1)=2·2^x olduğundan sol tarafın iki terimi de 2^x çarpanı taşır. Dağıtma özelliğini ters yönde uygula: 2^x(2+1)=24. Buradan 2^x=8=2³ çıkar. Pozitif ve 1’den farklı taban 2’de eşit değerler aynı üsten gelir. Böylece x=3.",
+        "Özgün denkleme dön: 2⁴+2³=16+8=24. 2^(2x+1), soldaki iki kuvvetin çarpımını temsil eder. Toplamı bu ifadeye dönüştürürsen başka bir denklem kurarsın. 0, 1 ve negatif tabanları ayrıca incele. Örneğin 0²=0⁵=0 ve (-1)²=(-1)⁴=1; üslerin eşitliği iki örnekte de çıkmaz.",
+      ],
+    },
+    {
+      code: "S36",
+      title: "Kök, kuvvet, karşılık sırasıyla hesapla",
+      paragraphs: [
+        "16^(-3/4) için dördüncü dereceden pozitif kök 2’dir, çünkü 2⁴=16. Üs payının mutlak değeri 3 olduğu için kökü üçüncü kuvvete çıkar: 2³=8. Pay negatif olduğu için karşılığını al: 1/8. Üsteki eksi sonuç işaretini belirlemez. Kontrol olarak sonucun dördüncü kuvvetini al: (1/8)⁴=1/4096=16^-3.",
+        "a>0 iken sadeleşmiş m/n üssünde n pozitif kök derecesi, m kökün kuvvetidir. Negatif tabanda sadeleşmiş payda tekse gerçek kök vardır. (-8)^(2/6)=(-8)^(1/3)=-2, (-8)^(-1/3)=-1/2. Sadeleşmiş payda çiftse gerçek sayı sonucu yoktur. Kök tam rasyonel çıkmayabilir: 2^(1/2)=√2, yaklaşık bir ondalık yazılsa da tam sonuç köklü biçimde kalır.",
+      ],
+    },
+    {
+      code: "S37",
+      title: "Yüzde azalmadan kalan çarpana geç",
+      paragraphs: [
+        "Bir stokta her tur mevcut miktarın %p’si kayboluyorsa kalan pay p/100 değil, 1−p/100 olur. Örneğin her tur %50 azalan 800 birim stokta çarpan 1/2’dir. Başlangıçtan itibaren 800 → 400 → 200 → 100 izlenir. Dört konum, üç tamamlanan turdur. Her tur ilk stok yerine bir önceki miktarın yarısını al.",
+        "Yüzde azalma modeli 0≤p≤100 koşuluyla kullanılır. %0 için değer sabit kalır. %100’de başlangıç miktarı 0. adımda korunur ve ilk turdan itibaren miktar sıfırdır. Son durum 0^0 hesaplamasını gerektirmez. Bir miktarın her tur dörtte biri kalıyorsa azalma %75, çarpan 1/4’tür. 400 birimin üç tur sonraki değeri 400/64=25/4=6,25 birimdir.",
+      ],
+    },
+    {
+      code: "S38",
+      title: "Günlük veriyi birim başına ölçekle",
+      paragraphs: [
+        "2019 MSÜ Temel Matematik 2. sorudaki verilerle çözüm kurgusu: günlük 6 milyon ekmek üzerinden üç günde 18 milyon ekmek eder. Üç günlük eşdeğer iki okula karşılık geldiğinden okul başına 9 milyon ekmek bulunur. 81 okul için 81·9·10⁶=729·10⁶ gerekir. Önce günlük toplamı üç güne çıkar, sonra iki okula böl, ardından okul sayısıyla çarp.",
+        "81=3⁴ ve 9=3² olduğundan 81·9·10⁶=3⁶·10⁶=(3·10)⁶=30⁶=729 000 000. Standart bilimsel yazım 7,29×10⁸’dir. Kontrol için toplamı okul başına 9 milyona böl; 81 okul elde edersin. Resmî kitapçık PDF 24. sayfa, basılı 22’de E sonucunu gösterir. 8,1×10⁸ ise bu derste ayrı bir normalleştirme ve sayı doğrusu örneğidir.",
+      ],
+    },
+    {
+      code: "S39",
+      title: "İşlemin yapısına göre yöntemi seç",
+      paragraphs: [
+        "İlk sütundaki işlemi tanı, ardından kuralın hangi koşulla çalıştığını söyle. Aynı aritmetik yapıyı yeni bir bağlamda bulduğunda giriş değerlerini ve birimleri yeniden belirle. Sonucun doğru biçimde olduğunu başlangıç ifadesine dönerek denetle.",
+      ],
+      table: {
+        headers: ["Yapı", "İlk hamle ve denetim", "Başka bağlam"],
+        rows: [
+          [
+            "Aynı tabanlı çarpım ve bölüm",
+            "2³·2⁵/2²=2⁶=64. 2³+2⁵=40; toplama bu kuralı kullanmaz.",
+            "8 rafta 32’şer kutu 4 eş gruba ayrılırsa grup başına 64 kutu.",
+          ],
+          [
+            "İç içe kuvvet",
+            "(3²)⁴=3⁸; 3²·3⁴=3⁶. Parantez dışındaki üs grupla çarpımı değiştirir.",
+            "4 adım art arda 9 kat: 9⁴=(3²)⁴.",
+          ],
+          [
+            "Toplamda ortak çarpan",
+            "5^n+5^(n+1)=6·5^n. İşaret çarpım olursa 5^(2n+1) elde edilir.",
+            "25 ve 125 parçalık partilerin toplamı 25(1+5).",
+          ],
+          [
+            "Eşit değerli kuvvetler",
+            "8^(x−1)=4^(x+2) taban 2’ye iner, x=7. Taban 1’de üs eşitleme zorunlu değildir.",
+            "Kapasite 1’den başlayarak iki katına çıkıyorsa 256 için 2^t=2⁸.",
+          ],
+          [
+            "0 ile 1 arası taban",
+            "(1/3)⁴>(1/3)⁷, fakat 3⁴<3⁷. Aynı üs çiftini taban değiştirdiğinde tekrar denetle.",
+            "Dört tur sonra kalan 1/81 pay, yedi turdaki 1/2187 paydan büyüktür.",
+          ],
+          [
+            "Bilimsel gösterim",
+            "81·10⁷=8,1·10⁸; 81·10⁸=8,1·10⁹. Birliği ve aralığı geri açarak doğrula.",
+            "9 kutuda 2’şer milyon parça: 1,8·10⁷.",
+          ],
+          [
+            "Başlangıç ve tamamlanan adımlar",
+            "60·2⁵=1920. 60·2⁴=960 yalnız dört tamamlanan turu sayar.",
+            "400 birim her tur dörtte bire inerse üç tur sonunda 25/4 kalır.",
+          ],
+          [
+            "Aynı üslü çarpım",
+            "2⁵·5⁵=10⁵, 2⁵+5⁵=3157. İşlem işaretini koru.",
+            "32 kolinin her birinde 3125 parçanın toplamı 100 000.",
+          ],
+          [
+            "Rasyonel ve negatif üs",
+            "16^(-3/4)=1/8. Kök derecesini, kuvveti ve karşılığı ayrı izle.",
+            "Üç kez yarıya inen 8 cm uzunluk 8·2^-3=1 cm.",
+          ],
+        ],
+      },
+    },
+    {
+      code: "S40",
+      title: "Önce dene, ardından hatanın başladığı adımı bul",
+      paragraphs: [
+        "(9²·27)/3⁴ ifadesinde 9=3^□ ve 27=3^□. Payın toplam üssünü □ kutusuna yaz. Paydanın 4 üssünü çıkardıktan sonra sonucu bul. Kutuları doldurduğunda “Ortak tabana çevirirken boşlukları doldur” başlıklı örnekte çözümü adım adım aç.",
+        "Şimdi dört kısa işlem dene: 3²+3³’ü ortak çarpanla bul. (5²)³’ü tek kuvvet ve sayı olarak yaz. 5^-2’nin değerini ve işaretini gerekçelendir. 0,0009’u bilimsel gösterime çevirip geri aç. Sonuçları “Dört yanlışın ilk bozulduğu adım” örneğini açarak karşılaştır; ilk hatalı geçişi düzelt ve farklı sayılarla yeniden dene.",
       ],
     },
   ],
@@ -1281,6 +1378,163 @@ export const powersSource039Pack: Powers039Pack = {
         "Her sonucu özgün ifadeden yeniden aç; dört işlem dört ayrı gerekçe ister.",
       pitfall: "Bir yapı için geçerli kuralı diğer yapıya kopyalamak.",
     },
+    {
+      code: "E48",
+      title: "Ortak tabana çevirirken boşlukları doldur",
+      prompt:
+        "(9²·27)/3⁴ için 9=3^□, 27=3^□ ve payın toplam üssü □. Boşlukları ve sonucu önce kendin bul.",
+      strategy:
+        "Tabanı 3 yap. Paydaki iç içe kuvveti, aynı tabanlı çarpımdan önce hesapla.",
+      steps: [
+        {
+          label: "Adım 1",
+          explanation: "9=3² ve 27=3³; ilk iki boşluk 2 ve 3.",
+        },
+        {
+          label: "Adım 2",
+          explanation: "9²=(3²)²=3⁴. Pay 3⁴·3³=3⁷; üçüncü boşluk 7.",
+        },
+        {
+          label: "Adım 3",
+          explanation: "Paydadaki 4 çıkar: 3^(7−4)=3³=27.",
+        },
+      ],
+      answer: "Boşluklar 2, 3 ve 7. Sonuç 27.",
+      check: "9²=3⁴ olduğundan pay ve paydada 81 sadeleşir.",
+      pitfall: "Paydaki 9’un dıştaki 2 üssünü atlama.",
+    },
+    {
+      code: "E49",
+      title: "Toplamdaki ortak kuvvetten bilinmeyeni bul",
+      prompt: "x gerçek sayı iken 2^(x+1)+2^x=24 denklemini çöz.",
+      strategy: "Her terimde görülen 2^x çarpanını dışarı al.",
+      steps: [
+        {
+          label: "Adım 1",
+          explanation: "2^(x+1)=2·2^x; toplam (2+1)·2^x biçimini alır.",
+        },
+        {
+          label: "Adım 2",
+          explanation: "Her iki tarafı 3’e böl: 2^x=8=2³.",
+        },
+        {
+          label: "Adım 3",
+          explanation: "Taban 2 pozitif ve 1’den farklı olduğu için x=3.",
+        },
+      ],
+      answer: "x=3.",
+      check: "2⁴+2³=16+8=24.",
+      pitfall: "2^(2x+1) çarpımın ifadesidir.",
+    },
+    {
+      code: "E50",
+      title: "Dördüncü kökten başlayıp karşılık al",
+      prompt: "16^(-3/4) sayısını tam değerle hesapla.",
+      strategy: "Önce pozitif dördüncü kökü, sonra üçüncü kuvveti düşün.",
+      steps: [
+        {
+          label: "Adım 1",
+          explanation: "Dördüncü kök 16=2.",
+        },
+        {
+          label: "Adım 2",
+          explanation: "2³=8.",
+        },
+        {
+          label: "Adım 3",
+          explanation: "Negatif üs bu değerin karşılığını verir: 1/8.",
+        },
+      ],
+      answer: "1/8.",
+      check: "(1/8)⁴=1/4096 ve 16^-3=1/4096.",
+      pitfall: "Negatif üs nedeniyle sonucun başına eksi getirme.",
+    },
+    {
+      code: "E51",
+      title: "Kalan yüzdeyi üç tura uygula",
+      prompt:
+        "Başlangıçta 512 birim su bulunan bir tank, modelde her tur mevcut suyun %75’ini kaybediyor. Üç tamamlanan turdan sonra kaç birim kalır?",
+      strategy: "Kalan %25’i 1/4 olarak yaz ve her tur önceki miktara uygula.",
+      steps: [
+        {
+          label: "Adım 1",
+          explanation: "Adım 0’da 512 birim var.",
+        },
+        {
+          label: "Adım 2",
+          explanation: "512 → 128 → 32 → 8. Üç ok, üç tur.",
+        },
+        {
+          label: "Adım 3",
+          explanation: "Tek ifadeyle 512·(1/4)³=512/64=8.",
+        },
+      ],
+      answer: "8 birim.",
+      check: "8·4³=512 başlangıcını geri verir.",
+      pitfall:
+        "%75 kayıp, %75 kalış demek değildir. Her adımda başlangıç miktarını yeniden kullanma.",
+    },
+    {
+      code: "E52",
+      title: "Üç farklı sayıyı bir birim üzerinden ilişkilendir",
+      prompt:
+        "Özgün örnek. Bir atölye günde 8 milyon parçayı geri kazanıyor. Altı günlük geri kazanım üç eşit projenin gereksinimini karşılıyor. Aynı gereksinimde 64 proje için kaç parça gerekir? Sonucu hem tek kuvvet hem bilimsel gösterimle yaz.",
+      strategy:
+        "Önce bir proje için gerekeni, sonra 64 proje için toplamı bul.",
+      steps: [
+        {
+          label: "Adım 1",
+          explanation:
+            "Altı günlük toplam 6·8·10⁶=48·10⁶ parça. Bir proje 48·10⁶/3=16·10⁶ parça ister.",
+        },
+        {
+          label: "Adım 2",
+          explanation:
+            "64 proje 64·16·10⁶=2⁶·2⁴·10⁶=2^10·10⁶ parça ister. Tek kuvvet için 2^10·10⁶=2^16·5⁶=(2⁸·5³)²=32000².",
+        },
+        {
+          label: "Adım 3",
+          explanation: "Toplam 1 024 000 000 parça. Bilimsel yazımı 1,024×10⁹.",
+        },
+      ],
+      answer: "32000²=1,024×10⁹ parça.",
+      check: "1 024 000 000 / 16 000 000=64 proje.",
+      pitfall:
+        "Günlük geri kazanım ile proje başına gereksinimi birbirine karıştırma.",
+    },
+    {
+      code: "E53",
+      title: "Dört yanlışın ilk bozulduğu adım",
+      prompt:
+        "3²+3³’ü ortak çarpanla hesapla. (5²)³’ü tek kuvvet ve sayı olarak yaz. 5^-2’nin değerini ve işaretini açıkla. 0,0009’u bilimsel gösterime çevirip geri aç.",
+      strategy:
+        "Sonuçları görmeden dört işlem için ayrı kural ve bir kontrol yaz.",
+      steps: [
+        {
+          label: "Adım 1",
+          explanation:
+            "3²+3³=3²(1+3)=9·4=36. Çarpım kuralını toplamda kullanma.",
+        },
+        {
+          label: "Adım 2",
+          explanation:
+            "(5²)³=5^(2·3)=5⁶=15625. İç içe kuvvette 2 ve 3 çarpılır.",
+        },
+        {
+          label: "Adım 3",
+          explanation:
+            "5^-2=1/5²=1/25>0. Karşılık alınır ve pozitiflik korunur.",
+        },
+        {
+          label: "Adım 4",
+          explanation: "0,0009=9×10^-4. Geri aç: 9/10000=0,0009.",
+        },
+      ],
+      answer: "36, 5⁶=15625, 1/25 ve 9×10^-4.",
+      check:
+        "İlk hatalı ara adımı “işlem türü”, “gösterim” veya “tanım koşulu” diye adlandır ve kendin düzelt.",
+      pitfall: "Aynı hata açıklamasını dört farklı işleme uygulama.",
+    },
   ],
   recall: [
     {
@@ -1384,6 +1638,30 @@ export const powersSource039Pack: Powers039Pack = {
       prompt: "q=0 sürecinde 0. adımı nasıl yorumlarsın?",
       answer:
         "İşlem öncesi verilen başlangıç;0⁰’a sayı değeri atamadan ayrı tanımlanır.",
+    },
+    {
+      prompt: "16^(-3/4) için kök, kuvvet ve karşılık adımları ne sonuç verir?",
+      answer: "Dördüncü kök 2, üçüncü kuvvet 8, karşılık 1/8.",
+    },
+    {
+      prompt: "2^(x+1)+2^x=24 denkleminde ortak kuvveti ayırınca ne kalır?",
+      answer: "(2+1)·2^x=24. Böylece 2^x=8 ve x=3.",
+    },
+    {
+      prompt:
+        "Başlangıcı 0. adım alırsan, üç tur sonunda kaç gözlem noktası oluşur?",
+      answer:
+        "0, 1, 2 ve 3. adımlar olmak üzere dört nokta. Yalnızca üç çarpan uygulanır.",
+    },
+    {
+      prompt:
+        "Her tur %25 azalan bir miktar ile her tur dörtte biri kalan miktarın çarpanları nedir?",
+      answer: "İlkinde kalan pay 3/4. İkincisinde kalan pay 1/4, azalma %75.",
+    },
+    {
+      prompt: "0²=0⁵ örneği üs eşitleme konusunda ne gösterir?",
+      answer:
+        "Sıfır tabanında farklı pozitif üsler aynı değeri verebilir. Üs eşitleme için pozitif ve 1’den farklı taban koşulunu kontrol et.",
     },
   ],
   items: [
@@ -2719,9 +2997,25 @@ export const powersSource039Pack: Powers039Pack = {
         "Bu özet kaynaklı özgün uyarlamadır; resmî soru veya bütün arşiv tamamlandı iddiası taşımaz.",
       ],
     },
+    {
+      title: "Toplam, kesirli üs ve yüzde azalma",
+      text: [
+        "2^(x+1)+2^x=(2+1)·2^x. 24’e eşitse 2^x=8 ve x=3. Kontrolü ilk denklemde yap.",
+        "16^(-3/4): dördüncü kök 2 → üçüncü kuvvet 8 → karşılık 1/8. Sadeleşmiş payda negatif tabanda tanım koşulunu belirler.",
+        "Her tur %p azalışta kalan çarpan 1−p/100. %100’de 0. adım başlangıçtır, ilk turdan sonra miktar sıfırdır.",
+      ],
+    },
+    {
+      title: "Birim başına ölçekleme ve geri kontrol",
+      text: [
+        "Önce gün sayısıyla toplamı bul, sonra karşılık gelen birim sayısına böl. Bulduğun birim başı değeri hedef birim sayısıyla çarp.",
+        "Okul başına 9 milyon ve 81 okul için 81·9·10⁶=30⁶=7,29×10⁸. Kontrol: toplam / okul başına miktar = 81 okul.",
+        "10’un kuvvetindeki değişimi katsayıyla dengele. 81·10⁷=8,1·10⁸ ve 81·10⁸=8,1·10⁹.",
+      ],
+    },
   ],
   source:
-    "TYT Üslü Sayılar çalışma kağıdının güncel 12 sayfalık sürümü metin ve görselleriyle incelendi; ayrıca gerçek OGM Materyal Üslü Sayılar özetinin tek sayfasındaki 11 kural ve 6 örnek doğrudan kontrol edildi. Bu içerik özgün öğretim uyarlamasıdır. Kaynakta bölüm numarası ve bilimsel gösterimin logaritmik eksen yerleşimi düzeltilmiştir. 2019 MSÜ atfının metinsel konumu ve E anahtarı doğrulanmış olsa da özgün sayısal görsel doğrulanmadığından resmî soru yeniden sunulmaz. Bu çalışma bütün MEB/ÖSYM arşivinin işlendiği anlamına gelmez.",
+    "TYT Üslü Sayılar çalışma kâğıdının 19.11.2026 tarihli 1.3.0 sürümünün 16 sayfası metin ve görselleriyle incelendi. Öğretimde doğrudan incelenen bir MEB OGM özet sayfasından da yararlanıldı. ÖSYM 2019 MSÜ Temel Matematik 2. sorunun özgün görseli, verileri ve E anahtarı resmî kitapçığın 24. PDF sayfasında (basılı 22) karşılaştırıldı. Öğretici açıklamalar ve alıştırmalar özgün uyarlamadır. 2006–2026 sınav arşivi kısmen incelendi.",
 };
 const pack = powersSource039Pack;
 const objectives = [

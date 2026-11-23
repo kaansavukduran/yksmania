@@ -28,8 +28,8 @@
    "readyLessons": 40,
    "figureLessons": 33,
    "figures": 110,
-   "questions": 752,
-   "stepped": 752,
+   "questions": 762,
+   "stepped": 762,
    "sheetsDone": 5,
    "sheets": 38,
    "osymQuestions": 269,
@@ -289,8 +289,8 @@
   "readyLessons": 505,
   "figureLessons": 405,
   "figures": 1669,
-  "questions": 6482,
-  "stepped": 6482,
+  "questions": 6492,
+  "stepped": 6492,
   "sheetsDone": 109,
   "sheets": 517,
   "open": 100,
@@ -302,7 +302,7 @@
   "recallLessons": 505,
   "recallChecks": 3052,
   "displayFixCards": 962,
-  "displayFixParagraphs": 1635,
+  "displayFixParagraphs": 1634,
   "osymCitedQuestions": 76
  }
 }

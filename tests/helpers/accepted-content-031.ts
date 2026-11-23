@@ -31,6 +31,11 @@ export function beforeFoundation031Registration(source: string): string {
     )
     .replace("  ...absoluteValueSource038Lessons,\n", "")
     .replace(
+      'import { absoluteValueSource012Lessons } from "../learning/absoluteValueSource012Revision";\n',
+      "",
+    )
+    .replace("  ...absoluteValueSource012Lessons,\n", "")
+    .replace(
       'import { powersSource039Lessons } from "../learning/powersSource039";\n',
       "",
     )

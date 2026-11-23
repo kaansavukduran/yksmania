@@ -35,6 +35,26 @@ async function ready(page:Page) {
   await page.waitForFunction(()=>navigator.serviceWorker.controller?.state==="activated",undefined,{timeout:30000});
 }
 
+test("current powers methods and their separate summary open without learning writes offline", async ({ page, context }) => {
+  await page.goto("/#/settings");
+  await setThemePreference(page, "dark");
+  await ready(page);
+  const before = learning(await stored(page));
+  await context.setOffline(true);
+  await enter(page);
+  await page.getByRole("button", { name: "Tümünü gör", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "Ortak kuvvetle toplamdan denkleme geç", exact: true })).toBeVisible();
+  const scaling = page.locator(".guide-section").filter({
+    has: page.getByRole("heading", { name: "Günlük veriyi birim başına ölçekle", exact: true }),
+  });
+  await expect(scaling).toContainText("729 000 000");
+  await page.goto(`/#/cheatsheets?topic=topic-${unit.id}`);
+  await expect(page.getByRole("heading", { name: "Birim başına ölçekleme ve geri kontrol", exact: true })).toBeVisible();
+  await page.reload();
+  await expect(page.getByRole("heading", { name: "Birim başına ölçekleme ve geri kontrol", exact: true })).toBeVisible();
+  expect(learning(await stored(page))).toEqual(before);
+});
+
 test("039 normal entry saves55 unassisted cards, draft, Today and original3/7/21 dates offline",async({page,context},info)=>{
   test.setTimeout(180000);
   const cards=flow.unit.cards;expect(cards).toHaveLength(55);

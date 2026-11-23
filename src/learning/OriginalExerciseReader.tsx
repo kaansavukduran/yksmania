@@ -36,9 +36,8 @@ export function OriginalExerciseReader({
       <header>
         <h2>Kaynak alıştırmaları</h2>
         <p>
-          Kaynaktaki soruların asıl metni ve verilenleri. Önce kendin düşün;
-          sonra adım adım çözümü aç. Buradaki okuma ve çözüm gösterimi puan
-          oluşturmaz.
+          Kaynaktan alınan ve uyarlanan alıştırmalar. Önce kendin çözmeyi dene,
+          ardından adım adım çözümü aç. Bu bölümde puan kazanılmaz.
         </p>
       </header>
       <fieldset className="original-exercise-picker">
