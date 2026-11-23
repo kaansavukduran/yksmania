@@ -26,7 +26,7 @@ export const probabilityStatistics041SmokeCases = [
     async assertModel(lab) {
       await reveal(lab);
       await expect(lab.locator(".f014m-result").first()).toContainText(
-        "1/11, sade oran 1/11.",
+        "Koşul altında 1/11.",
       );
       await expect(lab.getByRole("img").locator("rect")).toHaveCount(36);
       await expect(lab.getByRole("img").locator("circle")).toHaveCount(1);

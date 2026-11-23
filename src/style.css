@@ -456,6 +456,7 @@ small,
   position: fixed;
   left: 1rem;
   top: -10rem;
+  clip-path: inset(50%);
   background: var(--accent);
   color: var(--accent-text);
   padding: 0.8rem;
@@ -463,6 +464,7 @@ small,
 }
 .skip-link:focus {
   top: 1rem;
+  clip-path: none;
 }
 .app-shell {
   display: flex;

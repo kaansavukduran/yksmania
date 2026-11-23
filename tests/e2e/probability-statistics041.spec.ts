@@ -38,7 +38,7 @@ test("Olasılık koşulu ve torba hesabı çevrimdışı dönüştürülür ve k
   await model
     .getByRole("button", { name: "Belirli zar yüzü", exact: true })
     .click();
-  await expect(result).toContainText("1/11, sade oran 1/11.");
+  await expect(result).toContainText("Koşul altında 1/11.");
   await expect(model.getByRole("img").locator("circle")).toHaveCount(1);
   const urn = model.locator("details").filter({ hasText: "Torbada iki seçim" });
   await urn.locator("summary").press("Enter");
@@ -72,10 +72,15 @@ test("Olasılık koşulu ve torba hesabı çevrimdışı dönüştürülür ve k
       await page.evaluate(() => document.documentElement.scrollWidth),
     ).toBeLessThanOrEqual(width + 1);
     await model.screenshot({ path: info.outputPath(`olasılık-${width}.png`) });
+    await expect(page.locator(".skip-link")).not.toBeFocused();
+    await expect(page.locator(".skip-link")).toHaveCSS(
+      "clip-path",
+      "inset(50%)",
+    );
   }
   await page.reload();
   await model.locator(":scope > summary").press("Enter");
-  await expect(result).toContainText("1/11, sade oran 1/11.");
+  await expect(result).toContainText("Koşul altında 1/11.");
   await expect(notes).toHaveValue("Koşul değiştiğinde paydayı yeniden saydım.");
   await page.goto(`/#/cheatsheets?topic=topic-${probability.lesson}`);
   await expect(

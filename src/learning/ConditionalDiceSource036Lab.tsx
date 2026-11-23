@@ -44,6 +44,7 @@ export function ConditionalDiceSource036Lab() {
       ? `Toplam en az ${cutoff}`
       : `En az bir zar ${face}`;
   const bound = fractionLabel(model.favorableCount, model.conditionedCount);
+  const ratio = `${model.favorableCount}/${model.conditionedCount}`;
   const field = (
     key: "cutoff" | "face" | "red" | "blue",
     label: string,
@@ -96,8 +97,8 @@ export function ConditionalDiceSource036Lab() {
           {condition}. Bunun için {model.conditionedCount} sıralı çift var.
         </p>
         <p>
-          {goal}. Koşul altında {model.favorableCount}/{model.conditionedCount},
-          sade oran {bound}.
+          {goal}. Koşul altında {ratio}
+          {bound !== ratio && `, sade oran ${bound}`}.
         </p>
         <p>
           Koşul ve hedefin birlikte olasılığı {model.favorableCount}/
