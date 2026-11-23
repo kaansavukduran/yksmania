@@ -95,6 +95,100 @@ async function mode(lab: Locator, name: string) {
     .getByRole("button", { name, exact: true })
     .click();
 }
+test("the revised rational examples match the offline lab and keep the sheet solution behind its control", async ({
+  page,
+  context,
+}, info) => {
+  test.setTimeout(60_000);
+  await page.setViewportSize({ width: 320, height: 1000 });
+  await page.goto("/#/settings");
+  await setThemePreference(page, "matrix");
+  await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
+  await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
+  await saveReady(page);
+  await offlineReady(page);
+  const before = learning(await stored(page));
+  await context.setOffline(true);
+  await enter(page);
+  const chapter = (name: string) => page.locator(".guide-section").filter({
+    has: page.getByRole("heading", { name, exact: true }),
+  });
+  await expect(chapter("Pay ve payda kısayollarının koşullarını sor")).toContainText(
+    /−3\/4\s*<\s*−3\/7/,
+  );
+  const examples = chapter("Soruyu görünüşünden değil işlem koşulundan tanı");
+  await expect(examples).toContainText("7/8=63/72 ve 8/9=64/72");
+  await expect(examples).toContainText("60−10=50 birim kalır");
+  await expect(examples).toContainText("4/11=100/275 ve 9/25=99/275");
+
+  const lab = page.locator(".r035-lab");
+  const result = lab.locator(".r035-result");
+  const changeRange = (name: string, value: string) =>
+    lab.getByRole("slider", { name, exact: true }).fill(value);
+  await mode(lab, "Üç karşılaştırma");
+  await changeRange("Birinci pay", "7");
+  await changeRange("Birinci payda", "8");
+  await changeRange("İkinci pay", "8");
+  await changeRange("İkinci payda", "9");
+  await expect(result).toHaveText("7/8 < 8/9");
+  await expect(lab.locator(".r035-comparisons")).toContainText("63/72 < 64/72");
+
+  await mode(lab, "Değişen bütün");
+  await changeRange("Başlangıç miktarı; birim", "90");
+  await changeRange("İlk kullanımın paydası", "3");
+  await changeRange("İkinci kullanımın paydası", "6");
+  await lab.getByRole("button", { name: "Kalanın kesri", exact: true }).click();
+  await expect(lab.locator(".r035-facts dd")).toHaveText([
+    "30 birim", "60 birim", "10 birim", "50 birim",
+  ]);
+  await lab.getByRole("button", { name: "Başlangıcın kesri", exact: true }).click();
+  await expect(lab.locator(".r035-facts dd")).toHaveText([
+    "30 birim", "60 birim", "15 birim", "45 birim",
+  ]);
+
+  await mode(lab, "Ondalık ve devir");
+  await lab.getByRole("textbox", { name: "Tam kısım", exact: true }).fill("0");
+  const prefix = lab.getByRole("textbox", { name: "Tekrarlamayan ondalık basamaklar", exact: true });
+  const period = lab.getByRole("textbox", { name: "Devreden blok; boşsa sonlu", exact: true });
+  await prefix.fill("");
+  await period.fill("36");
+  await expect(result).toHaveText("Tam kesir: 4/11");
+  await period.fill("");
+  await prefix.fill("36");
+  await expect(result).toHaveText("Tam kesir: 9/25");
+
+  await nav(page, "Kopya Kağıtları");
+  await page.getByRole("textbox", { name: "Ders veya konu ara", exact: true }).fill("Rasyonel sayılar");
+  await page.getByRole("button", {
+    name: "Rasyonel sayılar: bütün, işlem ve kaynak problemleri",
+    exact: true,
+  }).click();
+  const sheet = page.locator(".cheat-reader");
+  await expect(sheet).toContainText("4/11−9/25=1/275");
+  const example = sheet.locator(".worked-example").filter({
+    has: page.getByText("İlk satırı verilen modeli tamamla", { exact: true }),
+  });
+  await example.locator(":scope > summary").press("Enter");
+  await expect(example.locator(".example-prompt")).toContainText("x=18");
+  const solution = example.locator(".cheat-solution");
+  await expect(solution).not.toHaveAttribute("open", "");
+  await solution.locator("summary").press("Enter");
+  await expect(solution.getByText("30", { exact: false }).last()).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+  await solution.locator("summary").scrollIntoViewIfNeeded();
+  await page.screenshot({ path: info.outputPath("rational-source009-320-viewport.png") });
+  expect(learning(await stored(page))).toEqual(before);
+
+  const note = sheet.getByRole("textbox", { name: "Notun", exact: true });
+  const noteText = "İkinci 1/6, kalan 60 birime uygulanır.";
+  await note.fill(noteText);
+  await saveReady(page);
+  await page.reload();
+  await expect(note).toHaveValue(noteText);
+  const after = learning(await stored(page));
+  expect({ ...after, notes: before.notes }).toEqual(before);
+  expect(after.notes).toEqual({ ...before.notes, [`cheatsheet:${topicId}`]: noteText });
+});
 async function boundedDiagramText(lab: Locator) {
   for (const item of await lab.locator("svg text").evaluateAll((nodes) =>
     nodes.map((node) => {

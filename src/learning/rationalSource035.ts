@@ -95,7 +95,7 @@ export const rationalSource035Pack:Rational035Pack = {
       "code": "S11",
       "title": "Pay ve payda kısayollarının koşullarını sor",
       "paragraphs": [
-        "Paydalar aynı ve pozitifse büyük pay büyük sayıyı verir: −3/8>−5/8, çünkü −3>−5. Pozitif payları aynı olan kesirlerde ise küçük pozitif payda daha büyük parça verir: 3/4>3/7. Bu ikinci kuraldaki pozitif pay koşulunu atlama: −3/4<−3/7.",
+        "Paydalar aynı ve pozitifse büyük pay büyük sayıyı verir: −3/8>−5/8, çünkü −3>−5. Paylar aynı ve pozitifse küçük pozitif payda daha büyük kesir verir: 3/4>3/7. Paylar aynı ve negatifse pozitif paydalardaki sıra tersine döner: −3/4<−3/7. −3/4’ün sıfıra uzaklığı 3/4, −3/7’ninki 3/7’dir. Sıfırın solunda daha uzaktaki −3/4 daha küçüktür.",
         "Paylar da paydalar da değişiyorsa yalnız birine bakma. 5/8=15/24 ve 7/12=14/24 olduğundan 5/8 büyüktür. Paydaları önce pozitif yazdığında a/b<c/d karşılaştırması ad<bc ile eşdeğerdir; eşitsizliğin iki yanı pozitif bd ile çarpıldığı için yön değişmez."
       ]
     },
@@ -203,7 +203,10 @@ export const rationalSource035Pack:Rational035Pack = {
       "paragraphs": [
         "Toplam/çıkarma → eş parça, ortak payda; çarpım → ortak çarpan; bölüm → sıfır olmayan bölenin tersi; yakın kesir → işaret ve gerçek eksikler; ardışık kullanım → her adımdaki bütün; devir → tekrarlayan kuyrukların hizası. İlk yol zorlaşırsa ortak payda, doğrudan işlem veya sondan ters bölme gibi geçerli yedeğe dön.",
         "M1’in farklı yüzeyi yarım ve çeyrek litrenin toplamıdır; çarpma sorusunda aynı toplama kuralı çalışmaz. M2’nin farklı yüzeyi 2/3 L miktarı 4/5 L birimle ölçmektir: 5/6 birim. M3’te 9/10 ile 14/15’in eksikleri 1/10 ve 1/15’tir; 14/15 büyüktür, fakat 5/8 ve 7/12’de yalnız payda yeterli olmaz.",
-        "M4’te önce 1/3, sonra kalanın 1/2’si kullanılırsa 1/3 kalır. İki kullanım da ilk bütüne aitse kalan 1−1/3−1/2=1/6’dır; kalan çarpımı uygulanamaz. M5’te 0,(12) için 99x=12; sonlu 0,12 için 100x=12’dir. Sembolik olarak benzemek aynı koşulu sağlamak değildir."
+        "M4’te önce 1/3, sonra kalanın 1/2’si kullanılırsa 1/3 kalır. İki kullanım da ilk bütüne aitse kalan 1−1/3−1/2=1/6’dır; kalan çarpımı uygulanamaz. M5’te 0,(12) için 99x=12; sonlu 0,12 için 100x=12’dir. Sembolik olarak benzemek aynı koşulu sağlamak değildir.",
+        "Eş büyüklükte iki kap 7/8 ve 8/9 dolu olsun. Boş payları 1/8 ve 1/9’dur. 1/9<1/8 olduğu için 8/9 dolu olan kap daha doludur. Ortak paydada 7/8=63/72 ve 8/9=64/72 sonucu doğrular.",
+        "90 birim stokun 1/3’ü gidince 30 birim çıkar ve 60 kalır. Kalan 60 birimin 1/6’sı 10 birimdir. İkinci kullanımın ardından 60−10=50 birim kalır. İkinci kesrin bütünü 60 birimdir.",
+        "Tam ölçüm oranı 0,(36) ise 36 sonsuza dek tekrar eder. x=0,(36) için 100x=36+x olur. Buradan 99x=36 ve x=36/99=4/11 gelir. Sonlu 0,36 ise 36/100=9/25’tir. 4/11=100/275 ve 9/25=99/275 olduğundan değerler farklıdır."
       ]
     },
     {
@@ -2199,8 +2202,9 @@ export const rationalSource035Pack:Rational035Pack = {
     {
       "title": "Sıralama ve eksikler",
       "text": [
-        "Önce paydaları pozitif yaz. Ortak paydada büyük pay büyük sayıdır. Aynı pozitif pay için küçük pozitif payda büyük kesirdir; negatif payda veya negatif pay koşuluna kör taşınmaz. Çapraz karşılaştırmada pozitif paydalarla yön korunur.",
-        "7/8<11/12: ortak paylar 21/24<22/24, eksikler 1/8>1/12, çapraz 84<88. 13/16<17/20: eksikler 3/16>3/20. Farklı paylı eksiklerde yalnız payda yetmez: 5/8>7/12."
+        "Önce paydaları pozitif yaz. Aynı pozitif paydada büyük pay büyük sayıyı verir. Pozitif paydalarla ortak pay pozitifse 3/4>3/7, ortak pay negatifse −3/4<−3/7. Çapraz karşılaştırmada pozitif paydalarla yön korunur.",
+        "7/8<11/12: ortak paylar 21/24<22/24, eksikler 1/8>1/12, çapraz 84<88. 13/16<17/20: eksikler 3/16>3/20. Farklı paylı eksiklerde yalnız payda yetmez: 5/8>7/12.",
+        "7/8 ve 8/9 dolulukta boş paylar 1/8 ve 1/9’dur. 1/9 daha küçük olduğu için 8/9 dolu olan kap daha doludur."
       ]
     },
     {
@@ -2215,15 +2219,17 @@ export const rationalSource035Pack:Rational035Pack = {
       "text": [
         "0,375=375/1000=3/8. Önce sadeleştir; pozitif paydada yalnız 2 ve 5 asal çarpanı kalırsa ondalık sonludur. 3/20=0,15; 1/4=0,25; 1/6=0,1(6).",
         "0,(27)=3/11; 0,(45)=5/11, sonlu 0,45=9/20; fark 1/220. 0,(12)=4/33, sonlu 0,12=3/25.",
-        "1,2(3)=37/30: 100x−10x=111. Yalnız 3 devreder. 1,(23)=122/99; 123/99=1,(24). Yuvarlanan 0,1667 ile tam 1/6 aynı sayı değildir."
+        "1,2(3)=37/30: 100x−10x=111. Yalnız 3 devreder. 1,(23)=122/99; 123/99=1,(24). Yuvarlanan 0,1667 ile tam 1/6 aynı sayı değildir.",
+        "0,(36)=36/99=4/11. Sonlu 0,36=36/100=9/25. Bu iki sayının farkı 4/11−9/25=1/275’tir."
       ]
     },
     {
       "title": "Değişen bütün ve tersine çözüm",
       "text": [
         "Önce p, sonra kalanın q kesri giderse kalan (1−p)(1−q)x. İki kullanım da başlangıca aitse kalan (1−p−q)x. İkinci kesrin bütününü sözden seç.",
-        "1/4 sonra kalanın 1/3’ü, son 40 L → x=80 L; 80→60→40. 1/5 sonra kalanın 1/4’ü, son 18 → x=30. 1/3 sonra kalanın 1/4’ü, son 15 → x=30.",
-        "Başlangıç 24, önce 1/2 sonra kalanın 1/3’ü → 8 kalır; ikinci kullanım başlangıcın 1/3’ü olsa 4 kalır. Kalan çarpanı 0 ise son 0’dan tek başlangıç çıkarılmaz."
+        "Önce 1/4, sonra kalanın 1/3’ü kullanılır ve 40 L kalırsa başlangıç 80 L’dir. Önce 1/3, sonra kalanın 1/4’ü kullanılır ve 15 kalırsa başlangıç 30’dur. “İlk satırı verilen modeli tamamla” örneğinde başlangıcı kendin bulup çözümü açabilirsin.",
+        "Başlangıç 24, önce 1/2 sonra kalanın 1/3’ü → 8 kalır; ikinci kullanım başlangıcın 1/3’ü olsa 4 kalır. Kalan çarpanı 0 ise son 0’dan tek başlangıç çıkarılmaz.",
+        "90 birim stoktan önce 30 (başlangıcın 1/3’ü), sonra 10 (kalan 60’ın 1/6’sı) gider. Son kalan 50 birimdir."
       ]
     },
     {
@@ -2256,10 +2262,10 @@ export const rationalSource035Pack:Rational035Pack = {
       ]
     }
   ],
-  "source": "Aurelia TYT Rasyonel Sayılar kopya kağıdı V5 / içerik 1.0, 13 sayfalık sürümden öğretim uyarlaması. Seçili MEB OGM destekleri: Matematik 9 Kavram Öğretimi HTML 57/basılı 55; Rasyonel Sayılar/Ondalıklı Sayılar materyali. İlgili tanım ve işlem desteği kontrol edildi; bu materyallerin bütün sorularının aktarıldığı veya 2027 resmî kapsamının tamamlandığı anlamına gelmez. Baskı yılları belirlenmedi. 2021 TYT Temel Matematik 1 mevcut tekil kaynak bağlantısı: gerçek soru PDF 26/anahtar 45, E=5/8; uygulama metni özgün öğretim uyarlamasıdır. Özgün kartlar resmî ÖSYM soruları değildir. Kaynakta 123/99 için yazılan yanlış yakın ondalık örneği, doğru 122/99=1,(23) ve 123/99=1,(24) ayrımıyla öğretilir. Kaynaklar: https://ogmmateryal.eba.gov.tr/panel/upload/etkilesimli/kitap/kavram_calismalari/9y/matematik/files/basic-html/page57.html ; https://ogmmateryal.eba.gov.tr/panel/upload/kitap/p5nz5q2atwy.pdf ; https://dokuman.osym.gov.tr/pdfdokuman/2021/YKS/TSK/tyt_yks_2021.pdf#page=26 ; https://dokuman.osym.gov.tr/pdfdokuman/2021/YKS/TSK/tyt_yks_2021.pdf#page=45 . Seçili doğrulama bütün kitapçık, düzeltme duyuruları veya yirmi yıllık arşiv taraması değildir."
+  "source": "Aurelia TYT Rasyonel Sayılar kopya kağıdı, 19.11.2026, içerik 1.1 / Format V5. PDF’nin 13 sayfasından öğretim uyarlaması. Seçili MEB OGM destekleri: Matematik 9 Kavram Öğretimi HTML 57/basılı 55; Rasyonel Sayılar/Ondalıklı Sayılar materyali. İlgili tanım ve işlem desteği kontrol edildi; bu materyallerin bütün sorularının aktarıldığı veya 2027 resmî kapsamının tamamlandığı anlamına gelmez. Baskı yılları belirlenmedi. 2021 TYT Temel Matematik 1 mevcut tekil kaynak bağlantısı: gerçek soru PDF 26/anahtar 45, E=5/8; uygulama metni özgün öğretim uyarlamasıdır. Özgün kartlar resmî ÖSYM soruları değildir. Kaynakta 123/99 için yazılan yanlış yakın ondalık örneği, doğru 122/99=1,(23) ve 123/99=1,(24) ayrımıyla öğretilir. Kaynaklar: https://ogmmateryal.eba.gov.tr/panel/upload/etkilesimli/kitap/kavram_calismalari/9y/matematik/files/basic-html/page57.html ; https://ogmmateryal.eba.gov.tr/panel/upload/kitap/p5nz5q2atwy.pdf ; https://dokuman.osym.gov.tr/pdfdokuman/2021/YKS/TSK/tyt_yks_2021.pdf#page=26 ; https://dokuman.osym.gov.tr/pdfdokuman/2021/YKS/TSK/tyt_yks_2021.pdf#page=45 . Seçili doğrulama bütün kitapçık, düzeltme duyuruları veya yirmi yıllık arşiv taraması değildir."
 };
 const pack=rationalSource035Pack;
 const objectives=["Kesrin bütününü, işaretini ve sıfır koşullarını koru.","Dört işlem ve karşılaştırmayı gerekçeli modelle denetle.","Ondalık kuyruğunu, değişen bütünü ve birim koşullarını açıklayarak çöz."];
 export const rationalSource035Guides:LessonGuide[]=[{id:pack.id,minutes:pack.minutes,source:pack.source,objectives,sections:pack.sections,examples:pack.examples,recall:pack.recall}];
 export const rationalSource035Lessons:Lesson[]=[{id:pack.id,title:txt(pack.title),subjectId:"tyt-matematik",minutes:pack.minutes,objectives:objectives.map(txt),source:txt(pack.source),tags:["kaynakli-anlatim","Öğretim uyarlaması sorular"],body:pack.sections.map(s=>({title:txt(s.title),text:txt(s.paragraphs.join("\n\n"))})),questions:pack.items.map((item,index):Question=>{const order=item.options.map((_,i)=>(i+((2*index+1)%5))%5);return {id:`f035-${pack.id}-${index+1}`,prompt:txt(item.prompt),options:order.map(i=>txt(item.options[i])),answer:order.indexOf(0),hint:txt(item.strategy),explanation:txt(item.steps.join(" ")+" Denetim: "+item.check),skill:pack.id,guidance:{knowledge:item.knowledge,strategy:item.strategy,steps:item.steps,optionReasons:order.map(i=>item.optionReasons[i]),commonError:item.commonError,check:item.check}};})}];
-export const rationalSource035Sheets:CheatSheet[]=[{topicId:`topic-${pack.id}`,lessonId:pack.id,title:pack.title,subjectId:"tyt-matematik",sections:pack.sheet,cautions:["Payda ve bölen sıfır olamaz; negatif işaretin hangi grubu kapsadığını koru.","Yalnız çarpanlar sadeleşir; toplamın tek terimi silinmez.","İkinci kesrin bütünü, devir bloğu ve birim açık olmalıdır."],examples:[pack.examples[1],pack.examples[8]].map(e=>({title:e.title,prompt:e.prompt,steps:e.steps.map(s=>s.explanation),answer:e.answer})),recall:pack.recall.slice(0,4),source:pack.source}];
+export const rationalSource035Sheets:CheatSheet[]=[{topicId:`topic-${pack.id}`,lessonId:pack.id,title:pack.title,subjectId:"tyt-matematik",sections:pack.sheet,cautions:["Payda ve bölen sıfır olamaz; negatif işaretin hangi grubu kapsadığını koru.","Yalnız çarpanlar sadeleşir; toplamın tek terimi silinmez.","İkinci kesrin bütünü, devir bloğu ve birim açık olmalıdır."],examples:[pack.examples[1],pack.examples[8],pack.examples[11]].map(e=>({title:e.title,prompt:e.prompt,steps:e.steps.map(s=>s.explanation),answer:e.answer})),recall:pack.recall.slice(0,4),source:pack.source}];

@@ -1,3 +1,9 @@
+# Rasyonel Sayılar · Kaynak 009 sürüm 1.1
+
+23 Kasım 2026. Güncel 13 sayfalık kaynak önceki sürümle karşılaştırıldı. Pay aynı negatif sayı olduğunda iki pozitif payda için sayı doğrusundaki sıra, iki kabın doluluğu, kalan miktara uygulanan ikinci oran ve sonlu ile devirli ondalığın farkı örneklerle açıklanıyor. 2021 TYT Temel Matematik 1 sorusunun kitapçık ve cevap anahtarı yeniden doğrulandı. Kopya Kağıdına, çözümü öğrencinin açtığı bir örnek eklendi.
+
+48 eski soru ve kimlikleri korundu. Yerel `check`, derleme, 34 hedefli birim testi ve beş Chromium akışı geçti. 48 soru çevrimdışı ve bağımsız tamamlandı. Yeni örneklerde üç laboratuvar hesabı ekrandaki denetimlerden değiştirildi. Ayrı özetin çözümü klavyeyle açıldı, not çevrimdışı yeniden okundu. Öğrenme ve tekrar kayıtları aynı kaldı. Tam yayın doğrulaması bekliyor.
+
 # EBOB ve EKOK · Kaynak 008 sürüm 1.1
 
 23 Kasım 2026. Güncel 22 sayfalık kaynak önceki sürümle karşılaştırıldı. Aynı 49 nesnenin iki farklı kutu düzeni gösteriliyor. İki şeritten artan parçalar çıkarıldıktan sonra ortak parça boyu ve toplam adet ayrı hesaplanıyor. 8’e bölündüğünde 5, 12’ye bölündüğünde 7 kalan sayı bulunmadığı, 4’e göre iki farklı kalanla açıklanıyor. En küçük toplam örneğinin sonucu ayrı Kopya Kağıdında çözüm açılınca görülüyor.
