@@ -250,8 +250,10 @@ test("Veri Analizi önceki 10 soruluk çevrimdışı taslağın son kartını ko
   await openCourse(page, statistics);
   await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
   await expect(page.locator(".question-meta")).toContainText("Soru 10 / 10");
-  await expect(page.locator(".question-panel h2")).toContainText(
-    "A’nın üç deneme puanı 70,70,70",
+  await expect(page.locator(".question-panel h2")).toHaveText(
+    typeset(
+      "A’nın üç deneme puanı 70,70,70; B’nin 60,70,80’dir. n−1 tanımıyla sapmalar sırasıyla 0 ve 10, ortalamalar ikisinde 70’tir. Yalnız bu ölçümlerden hangi çıkarım geçerlidir?",
+    ),
   );
   expect((await storage(page)).draft).toEqual(draft);
   await page
