@@ -10,15 +10,29 @@ on:
         options:
           - https://kaansavukduran.github.io/yksmania/
           - https://yksmania.pages.dev/
+      source:
+        description: Exact deployed source SHA when testing a previous deployment
+        required: false
+        type: string
 permissions:
   contents: read
 jobs:
   published-web:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        group: ${{ fromJSON(inputs.url == 'https://kaansavukduran.github.io/yksmania/' && '["pages"]' || '["functional-1","functional-2","functional-3","functional-4","layout-1","layout-2","layout-3"]') }}
     steps:
+      - name: Validate deployed source input
+        env:
+          SOURCE: ${{ inputs.source || github.sha }}
+        run: |
+          [[ "$SOURCE" =~ ^[0-9a-f]{40}$ ]]
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           persist-credentials: false
+          ref: ${{ inputs.source || github.sha }}
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: "24"
@@ -36,12 +50,21 @@ jobs:
           exit 1
       - name: Verify the selected production deployment
         run: |
+          curl --fail --silent --show-error --retry 2 "${PUBLISHED_URL}version.json" > "$RUNNER_TEMP/published-version.json"
+          cmp public/version.json "$RUNNER_TEMP/published-version.json"
+          echo "Published version matched source $(git rev-parse HEAD)."
           case "$PUBLISHED_URL" in
             https://kaansavukduran.github.io/yksmania/)
               YKSMANIA_PAGES_URL="$PUBLISHED_URL" node scripts/test-pages.mjs
               ;;
             https://yksmania.pages.dev/)
-              BASE_URL="$PUBLISHED_URL" npm run test:e2e -- --workers=2 --trace retain-on-failure
+              export BASE_URL="$PUBLISHED_URL"
+              layout_tests='(figure-overlap-052|lab-overlap-054)\.spec\.ts'
+              if [[ "$BROWSER_GROUP" == layout-* ]]; then
+                npm run test:e2e -- "$layout_tests" --workers=2 --shard="${BROWSER_GROUP#layout-}/3" --trace retain-on-failure
+              else
+                npm run test:e2e -- --grep-invert "$layout_tests" --workers=2 --shard="${BROWSER_GROUP#functional-}/4" --trace retain-on-failure
+              fi
               ;;
             *)
               echo 'Choose one of the two production URLs.' >&2
@@ -50,11 +73,13 @@ jobs:
           esac
         env:
           PUBLISHED_URL: ${{ inputs.url }}
+          BROWSER_GROUP: ${{ matrix.group }}
           YKSMANIA_EVIDENCE_DIR: published-pages-evidence
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
-          name: published-browser-evidence
+          name: published-browser-evidence-${{ matrix.group }}
           path: |
             published-pages-evidence/
             playwright-report/
+            test-results/**/error-context.md
