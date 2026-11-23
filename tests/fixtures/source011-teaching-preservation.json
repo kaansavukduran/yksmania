@@ -1,0 +1,18 @@
+{
+  "source": "61cb546df6b3f191ad7ca713ab12672c78254695",
+  "sourceBefore": "Aurelia TYT Basit Eşitsizlikler kopya kağıdının 07.11.2026 tarihli güncel 9 sayfalık sürümü 17.11.2026’da metin ve görselleriyle yeniden okundu; içerik özgün öğretim uyarlamasıdır. Seçili 2024 TYT Temel Matematik 8, gerçek kitapçık fiziksel PDF 26/basılı 24 ve anahtar 43 ile doğrulandı: resmî b TL cinsinden, 10000<b<30000 ve A seçeneği |b−20000|<10000. Kaynağın bin TL ölçeği u=b/1000 adıyla açıkça ayrıldı. Resmî soru ve şekil yeniden basılmadı. Kitapçık: https://dokuman.osym.gov.tr/pdfdokuman/2024/YKS/TSK/yks_tyt_2024_kitapcik_T24kt.pdf#page=26 ; anahtar: https://dokuman.osym.gov.tr/pdfdokuman/2024/YKS/TSK/yks_tyt_2024_kitapcik_T24kt.pdf#page=43 . Kaynak bibliyografyasındaki MEB kitaplarının tamamı bu turda okunmuş sayılmaz; bu seçili doğrulama bütün ÖSYM arşivinin veya 2027 resmî kapsamının kapanışı değildir.",
+  "sourceAfter": "Aurelia 011 · TYT Matematik · Basit Eşitsizlikler, Format V5, içerik 1.1 (19.11.2026). Güncel 15 sayfanın metni ve sayfa görüntüleri önceki 9 sayfayla karşılaştırıldı. Aralık işlemleri, düzlemde doğrusal eşitsizlik, yöntem örnekleri ve karışık prova özgün öğretim uyarlamasıdır. Düzlemde sınır çizgileri ve ortak bölge için MEB OGM Matematik 9, Ünite 3, basılı s. 134–135, HTML s. 56–57. 2024 TYT Temel Matematik 8 için doğrulanmış kitapçık ve cevap anahtarı atfı korunur. Arşiv kapsamı: PARTIAL. 2024 TYT Temel Matematik 8: kitapçık fiziksel PDF s. 26, basılı s. 24 ve cevap anahtarı PDF s. 43. Resmî b, TL cinsindedir. 10000<b<30000 ve A seçeneği |b−20000|<10000. Öğretim örneğinde bin TL ölçeği u=b/1000 adıyla ayrılır. https://ogmmateryal.eba.gov.tr/panel/upload/etkilesimli/kitap/matematik/09/unite3/files/basic-html/page56.html https://ogmmateryal.eba.gov.tr/panel/upload/etkilesimli/kitap/matematik/09/unite3/files/basic-html/page57.html https://dokuman.osym.gov.tr/pdfdokuman/2024/YKS/TSK/yks_tyt_2024_kitapcik_T24kt.pdf#page=26 https://dokuman.osym.gov.tr/pdfdokuman/2024/YKS/TSK/yks_tyt_2024_kitapcik_T24kt.pdf#page=43",
+  "tails": {
+    "lessonObjectives": "1557d24c22633e0eca0a706b62e73c21b7e8432c7efd64fdb6801d3030505bb4",
+    "lessonQuestions": "5a9528b9e2a075a6f754e8c80e1dab1f73914bd7f3aa143ec8e91441904a091f",
+    "lessonBody": "c8853af3a2cdbe6aa86970c202f88dcd7fa8cb62f8e186994c0ba39c65807cec",
+    "guideObjectives": "69ae2f998cc459a4ced1a5b4426f7f7aed621c07bac38447a7f0f520f0faae01",
+    "guideExamples": "5e79f8d56556ef54caa5ae599ffc627d2a5b6aed2b8dae4658044ee49e1d330e",
+    "guideRecall": "dfccf24706853d0a9723de96221ea86df902489c03aeb35437717b97db36d9ec",
+    "guideSections": "99a78a44af6974d6644cc6b0dd179bcc9e99dbebfecdebad58f0992f6728f71a",
+    "sheetCautions": "7464d074b55c869702ea184320224ba1fd2d1be741b35aa4bf6d3630a880d134",
+    "sheetExamples": "0079ca6fca240a0ed73d01be3ae327f3adab821095e2b69acf1d8c7fe4bec9e3",
+    "sheetRecall": "2b7a7b00f6a54b26c9de92cfe0ecbaf0ebf17734215efec2d6a5345b04dafaa0",
+    "sheetSections": "097d773c1a2cdd754c9fb133711d36dabb6016963ac902682032a67ecc56e903"
+  }
+}

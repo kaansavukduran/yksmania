@@ -1,6 +1,7 @@
 import { useId } from "react";
 import { useApp } from "../store";
 import { useExploration } from "./useExploration";
+import { HalfPlaneSource011Lab, IntervalArithmeticSource011Lab } from "./BasicInequalitiesSource011Lab";
 import {
   ineq037Fraction, ineq037Format, ineq037SetLabel, ineq037Test,
   ineq037Transform, ineq037Compound, ineq037Logic, ineq037Budget,
@@ -49,7 +50,7 @@ export function BasicInequalitiesSource037Lab() {
   const uid=useId();const {state}=useApp();
   const [saved,set]=useExploration("basic-inequalities-source-037",defaults);
   const n=(key:keyof typeof defaults,fallback:number,min:number,max:number)=>{const value=saved[key];return typeof value==="number"&&Number.isFinite(value)?Math.max(min,Math.min(max,Math.round(value))):fallback;};
-  const mode=n("mode",0,0,6),operator=validOp(saved.op);
+  const mode=n("mode",0,0,8),operator=validOp(saved.op);
   const range=(key:keyof typeof defaults,label:string,value:number,min:number,max:number)=><div className="f037-range"><div><label htmlFor={`${uid}-${key}`}>{label}</label><output htmlFor={`${uid}-${key}`}>{value}</output></div><input id={`${uid}-${key}`} aria-label={label} type="range" min={min} max={max} step="1" value={value} onChange={(e)=>set({[key]:Number(e.target.value)})}/></div>;
   const signs=(key:"op"|"firstOp"|"secondOp",label:string,value:Ineq037Operator)=><label className="f037-select" htmlFor={`${uid}-${key}`}>{label}<ChoiceSelect id={`${uid}-${key}`} aria-label={label} value={value} onChange={(e)=>set({[key]:e.target.value})}>{(["<","<=",">",">="]as const).map((o)=><option value={o} key={o}>{symbol(o)}</option>)}</ChoiceSelect></label>;
   const check=(key:keyof typeof defaults,label:string)=><label className="f037-checkbox" htmlFor={`${uid}-${key}`}><input id={`${uid}-${key}`} type="checkbox" checked={saved[key]===true} onChange={(e)=>set({[key]:e.target.checked})}/>{label}</label>;
@@ -62,10 +63,10 @@ export function BasicInequalitiesSource037Lab() {
   const profit=ineq037Profit(n("u",20,-120,120),n("ud",1,1,12),saved.firstInclusive===true,saved.secondInclusive===true,saved.transfer===true);
   const parameter=ineq037Parameter(n("parameter",2,-12,12),n("px",2,-120,120),n("pxd",1,1,12));
   const factor=ineq037VariableFactor(n("px",2,-120,120),n("pxd",1,1,12));
-  const labels=["Bütün çözümler","Yön neden değişir?","İki sınır birlikte","Ve / veya","Bütçede tam sayılar","Kâr, zarar ve birim","Parametrenin işareti"];
+  const labels=["Bütün çözümler","Yön neden değişir?","İki sınır birlikte","Ve / veya","Bütçede tam sayılar","Kâr, zarar ve birim","Parametrenin işareti","Aralıklarla işlem","Düzlemde ortak bölge"];
   return <section className="f037-lab" data-forge037="basic-inequalities" data-motion={state.settings.motion}>
-    <h3>Eşitsizliği sayı doğrusunda keşfet</h3>
-    <p>İşlemi, uç kabulünü ve bağlacı değiştir; hesapla birlikte boyalı bölge de değişsin. Kesin sayısal sonuçlar şeklin altında yazılıdır. Bu keşif doğru cevap, ustalık veya XP kaydı oluşturmaz.</p>
+    <h3>Eşitsizlikleri sayı doğrusunda ve düzlemde keşfet</h3>
+    <p>İşlemi, açık ve kapalı uçları ya da düzlemdeki sınırları değiştir. Hesapla birlikte şekil de değişir. Sonuçları şeklin yanında okuyabilirsin. Bu keşif puan kazandırmaz.</p>
     <div className="f037-modes" role="group" aria-label="Eşitsizlik modeli">{labels.map((label,index)=><button className="secondary" type="button" key={label} aria-pressed={mode===index} onClick={()=>set({mode:index})}>{label}</button>)}</div>
 
     {mode===0&&<div className="f037-panel" data-mode="general">
@@ -142,6 +143,8 @@ export function BasicInequalitiesSource037Lab() {
         <p data-model-result><strong>ÇK={parameter.label}.</strong> {parameter.mayDivide?`a ${parameter.aSign==="positive"?"pozitif; yön korunur":"negatif; yön döner"}: x ${symbol(parameter.effectiveOperator)} ${f(parameter.boundary)}.`:"a=0 iken bölme yok: 0<6 her x için doğru; çözüm ℝ."} Deneme x={f(parameter.x)} için sol {f(parameter.left)}, sağ 6; koşul {parameter.holds?"doğru":"yanlış"}.</p>
       </>}
     </div>}
+    {mode === 7 && <div className="f037-panel" data-mode="interval-arithmetic"><IntervalArithmeticSource011Lab /></div>}
+    {mode === 8 && <div className="f037-panel" data-mode="half-plane"><HalfPlaneSource011Lab /></div>}
     <p className="f037-note">Çözümünü başlangıç koşullarıyla denetle. Sınır varsa eşitliğin kabul edilip edilmediğini kontrol et; ardından farklı sayılarla yeniden dene.</p>
   </section>;
 }

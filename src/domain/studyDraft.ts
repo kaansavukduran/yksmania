@@ -5,6 +5,7 @@ import type { Draft } from "./model";
 const legacyPracticeSizes = new Map([
   ["bilimsel-gosterim-katsayi", 10],
   ["tyt-mat-dogrusal-denklemler-kaynak-036", 42],
+  ["tyt-mat-basit-esitsizlikler-kaynak-037", 45],
 ]);
 
 export function draftQuestionCount(draft: Draft, available: number): number {

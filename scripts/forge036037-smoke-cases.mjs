@@ -297,6 +297,37 @@ export const forge036037SmokeCases = [
       await expect(result(lab)).toContainText(
         "Bölen negatif, yön döner: -2 > -5.",
       );
+      await click(lab, "Aralıklarla işlem");
+      const interval = lab.locator('[data-model="source011-interval-arithmetic"]');
+      await click(interval, "Pozitif aralıklar");
+      await expect(result(interval)).toContainText("a + b için (3, 7)");
+      await interval.getByRole("radio", { name: "Çıkar", exact: true }).press("Space");
+      await expect(result(interval)).toContainText("a − b için (−3, 1)");
+      await click(interval, "Karma işaretli çarpım");
+      await expect(result(interval)).toContainText("[−8, 12]");
+      await click(interval, "Aynı değişkenin karesi");
+      await expect(result(interval)).toContainText("a² için [0, 9)");
+      await click(interval, "Sıfırı geçen payda");
+      await expect(result(interval)).toContainText("(−∞, −1/2] ∪ [1/3, ∞)");
+      await click(interval, "Fark ve bölüm örneği");
+      await expect(result(interval)).toContainText("a/b için (3/2, 5]");
+      await onMode("interval-arithmetic");
+
+      await click(lab, "Düzlemde ortak bölge");
+      const plane = lab.locator('[data-model="source011-half-plane"]');
+      await click(plane, "Üçgen örneğini aç");
+      await expect(plane.locator("[data-model-vertices]")).toContainText(
+        "(1, 0) dahil, (4, 0) dahil, (1, 3) dahil",
+      );
+      await expect(plane.locator('svg [data-line="cap"]')).toHaveAttribute("data-closed", "true");
+      await click(plane, "Tam sayı örneğini aç");
+      await expect(plane.locator(".bi011-pair")).toHaveCount(16);
+      const included = plane.getByRole("checkbox", { name: "Eğik sınırı dahil et", exact: true });
+      await included.press("Space");
+      await expect(plane.locator(".bi011-pair")).toHaveCount(12);
+      await expect(plane.locator('svg [data-line="cap"]')).toHaveAttribute("data-closed", "false");
+      await onMode("half-plane");
+      await click(lab, "Parametrenin işareti");
     },
     async assertModel(lab) {
       await expect(lab.locator('[data-mode="parameter"]')).toBeVisible();

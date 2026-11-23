@@ -1,7 +1,7 @@
 {
-  "version": "0.29.0",
+  "version": "0.30.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Birinci Dereceden Denklemler’de iki bilinmeyeni grafik, yerine koyma ve yok etme ile çalışabilirsin. Fiyat ve depo modelleri, ayrı prova ve 10 özgün soru eklendi."
+    "tr": "Basit Eşitsizlikler için aralık işlemleri, düzlemde ortak bölge, 10 yeni özgün soru ve ayrı bir Kopya Kağıdı eklendi. Yarım kalan oturumlar kendi soru sayısını korur."
   }
 }

@@ -1,0 +1,195 @@
+.bi011-lab {
+  --bi011-ink: var(--text, #eae9e5);
+  --bi011-paper: var(--surface-2, #232a33);
+  --bi011-accent: var(--accent, #ffad94);
+  color: var(--bi011-ink);
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+
+.bi011-lab :where(fieldset, details) {
+  min-inline-size: 0;
+  margin-block: 1rem;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid var(--border, #58636f);
+  border-radius: 0.5rem;
+}
+
+.bi011-lab :where(legend, summary, .bi011-equation) {
+  font-weight: 650;
+}
+
+.bi011-lab summary {
+  padding-block: 0.5rem;
+  min-block-size: 2.75rem;
+  cursor: pointer;
+}
+
+.bi011-lab :where(button, summary, input):focus-visible {
+  outline: 0.16rem solid var(--bi011-accent);
+  outline-offset: 0.15rem;
+}
+
+.bi011-buttons,
+.bi011-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.bi011-buttons button {
+  min-block-size: 3rem;
+  max-inline-size: 100%;
+  white-space: normal;
+  overflow-wrap: inherit;
+  font: inherit;
+  padding: 0.5em 0.65em;
+}
+
+.bi011-choice {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.bi011-choice input {
+  flex: none;
+  inline-size: 1.1em;
+  block-size: 1.1em;
+  margin: 0;
+  accent-color: var(--bi011-accent);
+}
+
+.bi011-choice label {
+  display: flex;
+  align-items: center;
+  min-block-size: 3rem;
+  padding-inline-end: 0.5em;
+}
+
+.bi011-sliders {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  gap: 0.65rem 1rem;
+}
+
+.bi011-slider {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 0.45rem;
+}
+
+.bi011-slider input {
+  grid-column: 1 / -1;
+  inline-size: 100%;
+  min-block-size: 2.75rem;
+  margin: 0;
+  accent-color: var(--bi011-accent);
+}
+
+.bi011-figure {
+  margin: 0.75rem 0;
+}
+
+.bi011-figure svg {
+  display: block;
+  inline-size: min(100%, 26rem);
+  height: auto;
+  background: var(--bi011-paper);
+  border-radius: 0.5rem;
+}
+
+.bi011-figure figcaption {
+  margin-block-start: 0.5rem;
+}
+
+.bi011-grid {
+  stroke: var(--bi011-ink);
+  stroke-width: 0.75;
+  opacity: 0.26;
+}
+
+.bi011-axis {
+  fill: none;
+  stroke: var(--bi011-ink);
+  stroke-width: 1.25;
+}
+
+.bi011-fill {
+  fill: var(--bi011-accent);
+  opacity: 0.23;
+}
+
+.bi011-grid-label,
+.bi011-axis-label {
+  fill: var(--bi011-ink);
+  font-size: 13px;
+}
+
+.bi011-axis-label {
+  font-weight: 650;
+}
+
+.bi011-boundary,
+.bi011-interval {
+  stroke: var(--bi011-accent);
+  stroke-width: 2.5;
+  fill: none;
+}
+
+.bi011-boundary[data-closed="false"] {
+  stroke-dasharray: 6 4;
+}
+
+.bi011-vertex,
+.bi011-interval circle {
+  fill: var(--bi011-accent);
+  stroke: var(--bi011-accent);
+  stroke-width: 2;
+}
+
+.bi011-vertex[data-closed="false"],
+.bi011-interval circle[data-closed="false"] {
+  fill: var(--bi011-paper);
+}
+
+.bi011-pair {
+  fill: var(--bi011-ink);
+}
+
+.bi011-trial {
+  stroke: var(--bi011-ink);
+  stroke-width: 2;
+  fill: var(--bi011-ink);
+}
+
+.bi011-trial[data-accepted="false"] {
+  fill: var(--bi011-paper);
+}
+
+.bi011-lab table {
+  inline-size: min(100%, 26rem);
+  text-align: start;
+  border-collapse: collapse;
+}
+
+.bi011-lab :where(caption, th, td) {
+  text-align: start;
+  padding: 0.3em 0.4em;
+}
+
+.bi011-lab :where(th, td) {
+  border-block-end: 1px solid var(--border, #58636f);
+}
+
+@media (forced-colors: active) {
+  .bi011-lab {
+    --bi011-paper: Canvas;
+    --bi011-ink: CanvasText;
+    --bi011-accent: Highlight;
+  }
+
+  .bi011-figure svg {
+    forced-color-adjust: none;
+  }
+}

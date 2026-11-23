@@ -2,10 +2,11 @@ import { txt, type Lesson, type Question } from "../domain/model";
 import type { QuestionGuidance } from "../domain/questionHelpModel";
 import type { LessonGuide, GuideSection, WorkedExample } from "./guides/types";
 import type { CheatSheet, CheatSection } from "./cheatsheetContent";
+import { source011Figure, source011PracticeItemCodes, source011Revision } from "./basicInequalitiesSource011Revision";
 interface Inequality037Item extends QuestionGuidance { code:string; prompt:string; options:string[] }
 interface Inequality037Pack { id:string; title:string; minutes:number; source:string; sections:(GuideSection&{code:string})[]; examples:(WorkedExample&{code:string})[]; recall:{prompt:string;answer:string}[]; items:Inequality037Item[]; sheet:CheatSection[] }
 // Source037 companion teaching; application, publication and PDF-closure evidence remain separate.
-export const basicInequalitiesSource037Pack:Inequality037Pack = {
+const originalPack: Omit<Inequality037Pack, "source"> = {
   "id": "tyt-mat-basit-esitsizlikler-kaynak-037",
   "title": "Basit eşitsizlikler: sırayı koru, bütün çözümü gör",
   "minutes": 165,
@@ -2563,11 +2564,63 @@ export const basicInequalitiesSource037Pack:Inequality037Pack = {
         "Kaynağı kapatıp çözümü üret; iç/dış/uç dene; karşı örnekle nedenini söyle. Şekli kurcalamak, süre geçirmek ve elle çalıştım demek ustalık veya XP kanıtı değildir."
       ]
     }
-  ],
-  "source": "Aurelia TYT Basit Eşitsizlikler kopya kağıdının 07.11.2026 tarihli güncel 9 sayfalık sürümü 17.11.2026’da metin ve görselleriyle yeniden okundu; içerik özgün öğretim uyarlamasıdır. Seçili 2024 TYT Temel Matematik 8, gerçek kitapçık fiziksel PDF 26/basılı 24 ve anahtar 43 ile doğrulandı: resmî b TL cinsinden, 10000<b<30000 ve A seçeneği |b−20000|<10000. Kaynağın bin TL ölçeği u=b/1000 adıyla açıkça ayrıldı. Resmî soru ve şekil yeniden basılmadı. Kitapçık: https://dokuman.osym.gov.tr/pdfdokuman/2024/YKS/TSK/yks_tyt_2024_kitapcik_T24kt.pdf#page=26 ; anahtar: https://dokuman.osym.gov.tr/pdfdokuman/2024/YKS/TSK/yks_tyt_2024_kitapcik_T24kt.pdf#page=43 . Kaynak bibliyografyasındaki MEB kitaplarının tamamı bu turda okunmuş sayılmaz; bu seçili doğrulama bütün ÖSYM arşivinin veya 2027 resmî kapsamının kapanışı değildir."
+  ]
 };
+
+const items = [...originalPack.items, ...source011Revision.items];
+const promptsByCode = new Map(items.map(({ code, prompt }) => [code, prompt]));
+const practiceRows = source011PracticeItemCodes.map((code, index) => {
+  const prompt = promptsByCode.get(code);
+  if (prompt === undefined) throw new Error(`Missing source 011 practice item: ${code}`);
+  return [String(index + 1), prompt];
+});
+
+export const basicInequalitiesSource037Pack: Inequality037Pack = {
+  ...originalPack,
+  source: [
+    source011Revision.source,
+    "2024 TYT Temel Matematik 8: kitapçık fiziksel PDF s. 26, basılı s. 24 ve cevap anahtarı PDF s. 43. Resmî b, TL cinsindedir. 10000<b<30000 ve A seçeneği |b−20000|<10000. Öğretim örneğinde bin TL ölçeği u=b/1000 adıyla ayrılır.",
+    ...source011Figure.referencePages,
+    "https://dokuman.osym.gov.tr/pdfdokuman/2024/YKS/TSK/yks_tyt_2024_kitapcik_T24kt.pdf#page=26",
+    "https://dokuman.osym.gov.tr/pdfdokuman/2024/YKS/TSK/yks_tyt_2024_kitapcik_T24kt.pdf#page=43",
+  ].join(" "),
+  sections: [
+    ...originalPack.sections,
+    ...source011Revision.sections.map((section) => section.code === "S40"
+      ? { ...section, table: { headers: ["Sıra", "Soru"], rows: practiceRows } }
+      : section),
+  ],
+  examples: [...originalPack.examples, ...source011Revision.examples],
+  recall: [...originalPack.recall, ...source011Revision.recall],
+  items,
+  sheet: [...originalPack.sheet, ...source011Revision.sheet],
+};
+
 const pack=basicInequalitiesSource037Pack;
-const objectives=["İşlem ve işaret koşulunu açıklayarak bütün çözüm kümesini aralık ve sayı doğrusunda göster.","Bileşik koşulları, ve/veya bağlacını, açık/kapalı sınırları ve parametrenin üç işaret dalını ayır.","Bütçe ve kâr/zararı birim, tam sayı alanı ve sınır denetimiyle modelle; her seçeneğin nedenini açıkla."];
+const objectives=["İşlem ve işaret koşulunu açıklayarak bütün çözüm kümesini aralık ve sayı doğrusunda göster.","Bileşik koşulları, ve/veya bağlacını, açık/kapalı sınırları ve parametrenin üç işaret dalını ayır.","Bütçe ve kâr/zararı birim, tam sayı alanı ve sınır denetimiyle modelle; her seçeneğin nedenini açıkla.", ...source011Revision.objectives];
 export const basicInequalitiesSource037Guides:LessonGuide[]=[{id:pack.id,minutes:pack.minutes,source:pack.source,objectives,sections:pack.sections,examples:pack.examples,recall:pack.recall}];
 export const basicInequalitiesSource037Lessons:Lesson[]=[{id:pack.id,title:txt(pack.title),subjectId:"tyt-matematik",minutes:pack.minutes,objectives:objectives.map(txt),source:txt(pack.source),tags:["kaynakli-anlatim","Özgün öğretim soruları"],body:pack.sections.map((s)=>({title:txt(s.title),text:txt(s.paragraphs.join("\n\n"))})),questions:pack.items.map((item,index):Question=>{const order=item.options.map((_,i)=>(i+((2*index+1)%5))%5);return{id:`f037-${pack.id}-${index+1}`,prompt:txt(item.prompt),options:order.map((i)=>txt(item.options[i])),answer:order.indexOf(0),hint:txt(item.strategy),explanation:txt(item.steps.join(" ")+" Denetim: "+item.check),skill:pack.id,guidance:{knowledge:item.knowledge,strategy:item.strategy,steps:item.steps,optionReasons:order.map((i)=>item.optionReasons[i]),commonError:item.commonError,check:item.check}};})}];
-export const basicInequalitiesSource037Sheets:CheatSheet[]=[{topicId:`topic-${pack.id}`,lessonId:pack.id,title:pack.title,subjectId:"tyt-matematik",sections:pack.sheet,cautions:["Negatif çarpma veya bölmede yön döner; aynı sayıyı eklerken dönmez.","Sıfıra veya işareti bilinmeyen ifadeye koşulsuz bölme; parametrenin sıfır dalını ayır.","Sıkı uç, tam sayı adedi ve TL/bin TL dönüşümünü ilk koşulda denetle."],examples:[pack.examples[7],pack.examples[15],pack.examples[18]].map((e)=>({title:e.title,prompt:e.prompt,steps:e.steps.map((s)=>s.explanation),answer:e.answer})),recall:pack.recall.slice(0,4),source:pack.source}];
+export const basicInequalitiesSource037Sheets: CheatSheet[] = [{
+  topicId: `topic-${pack.id}`,
+  lessonId: pack.id,
+  title: pack.title,
+  subjectId: "tyt-matematik",
+  sections: pack.sheet,
+  cautions: [
+    "Negatif çarpma veya bölmede yön döner; aynı sayıyı eklerken dönmez.",
+    "Sıfıra veya işareti bilinmeyen ifadeye koşulsuz bölme; parametrenin sıfır dalını ayır.",
+    "Sıkı uç, tam sayı adedi ve TL/bin TL dönüşümünü ilk koşulda denetle.",
+    ...source011Revision.sheetCautions,
+  ],
+  examples: [
+    ...[pack.examples[7], pack.examples[15], pack.examples[18]].map((e) => ({
+      title: e.title,
+      prompt: e.prompt,
+      steps: e.steps.map((s) => s.explanation),
+      answer: e.answer,
+    })),
+    ...source011Revision.sheetExamples,
+  ],
+  recall: [...originalPack.recall.slice(0, 4), ...source011Revision.sheetRecall],
+  source: pack.source,
+}];

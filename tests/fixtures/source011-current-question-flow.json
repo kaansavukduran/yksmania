@@ -1,0 +1,112 @@
+[
+  {
+    "prompt": "x≥0, y≥0 ve 2x+y≤6 sistemini sağlayan kaç tam sayı (x,y) sıralı ikilisi vardır ve sınırlar dahil midir?",
+    "options": [
+      "16 ikili, üç sınır da dahil.",
+      "12 ikili, üç sınır da dahil.",
+      "15 ikili, üç sınır da dahil.",
+      "16 ikili, eğik sınır hariç.",
+      "Sonsuz ikili, üç sınır da dahil."
+    ],
+    "correct": "16 ikili, üç sınır da dahil."
+  },
+  {
+    "prompt": "a ve b bağımsız, 3<a≤5 ve 1≤b<2. a−b ve a/b hangi tam değer aralıklarını alır?",
+    "options": [
+      "a−b∈(1,4], a/b∈(3/2,5]",
+      "a−b∈[1,4], a/b∈[3/2,5]",
+      "a−b∈(1,4), a/b∈(3/2,5)",
+      "a−b∈(2,3], a/b∈(5/2,3]",
+      "a−b∈(1,4], a/b∈(3/2,5/2]"
+    ],
+    "correct": "a−b∈(1,4], a/b∈(3/2,5]"
+  },
+  {
+    "prompt": "a ve b bağımsız. −2≤a<3 ve 1≤b≤4 için ab’nin tam aralığı hangisidir?",
+    "options": [
+      "[−8,12)",
+      "(−8,12)",
+      "[−2,12)",
+      "[−8,12]",
+      "[−8,3)"
+    ],
+    "correct": "[−8,12)"
+  },
+  {
+    "prompt": "−2≤b≤3 ve b≠0 için 6/b’nin alabileceği bütün değerler hangileridir?",
+    "options": [
+      "(−∞,−3]∪[2,∞)",
+      "[−3,2]",
+      "(−∞,−3)∪(2,∞)",
+      "[2,∞)",
+      "ℝ"
+    ],
+    "correct": "(−∞,−3]∪[2,∞)"
+  },
+  {
+    "prompt": "−2<a<3, −2<b<3 ve a=b ise a−b ve ab’nin tam değer kümeleri hangileridir?",
+    "options": [
+      "a−b∈{0}, ab∈[0,9)",
+      "a−b∈(−5,5), ab∈(−6,9)",
+      "a−b∈{0}, ab∈(4,9)",
+      "a−b∈{0}, ab∈(−6,9)",
+      "a−b∈{0}, ab∈[0,9]"
+    ],
+    "correct": "a−b∈{0}, ab∈[0,9)"
+  },
+  {
+    "prompt": "Bağımsız 0≤a<4 ve 2<b<5 için ab’nin tam değer aralığı hangisidir?",
+    "options": [
+      "[0,20)",
+      "(0,20)",
+      "[0,20]",
+      "[0,8)",
+      "(8,20)"
+    ],
+    "correct": "[0,20)"
+  },
+  {
+    "prompt": "x≥1, y≥0 ve x+y<4 için (1,0), (1,3), (4,0), (2,2) ve (2,1) noktalarından hangileri ortak bölgeye dahildir?",
+    "options": [
+      "(1,0) ve (2,1)",
+      "(1,0), (1,3), (4,0) ve (2,1)",
+      "Yalnız (2,1)",
+      "(1,3) ve (4,0)",
+      "(1,0), (2,2) ve (2,1)"
+    ],
+    "correct": "(1,0) ve (2,1)"
+  },
+  {
+    "prompt": "2≤5−x<7 koşulunu sağlayan gerçek x değerleri hangi aralıktadır?",
+    "options": [
+      "(−2,3]",
+      "[−2,3)",
+      "(−2,3)",
+      "(−3,2]",
+      "[3,∞)"
+    ],
+    "correct": "(−2,3]"
+  },
+  {
+    "prompt": "Bir atölye 45 TL sabit ücret ve parça başına 14 TL alıyor. Toplam 115 TL’den az kalacaksa en çok kaç parça işlenebilir?",
+    "options": [
+      "4 parça",
+      "5 parça",
+      "3 parça",
+      "6 parça",
+      "0 parça"
+    ],
+    "correct": "4 parça"
+  },
+  {
+    "prompt": "Bir ölçüm 12 birimde başlıyor ve sabit r hızıyla değişiyor. 12+rt<18 koşulunu sağlayan t≥0 süreleri hangileridir?",
+    "options": [
+      "r>0 iken [0,6/r); r≤0 iken [0,∞).",
+      "Her r≠0 için [0,6/r); r=0 için boş küme.",
+      "r>0 iken [0,6/r]; r≤0 iken [0,∞).",
+      "r>0 iken (6/r,∞); r≤0 iken [0,∞).",
+      "r>0 iken [0,6/r); r≤0 iken boş küme."
+    ],
+    "correct": "r>0 iken [0,6/r); r≤0 iken [0,∞)."
+  }
+]

@@ -2,6 +2,7 @@ import { typeset } from "../../src/domain/typeset";
 import release from "../../package.json" with { type: "json" };
 import flow from "../fixtures/source036037-question-flow.json" with { type: "json" };
 import currentLinearCards from "../fixtures/source010-current-question-flow.json" with { type: "json" };
+import currentInequalityCards from "../fixtures/source011-current-question-flow.json" with { type: "json" };
 import { test, expect, type Page, type Locator } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import type { AppState } from "../../src/domain/model";
@@ -41,6 +42,10 @@ async function renderedContrast(lab: Locator) {
     }
     if (!ancestor) throw Error("No rendered opaque background");
     const background = rgb(getComputedStyle(ancestor).backgroundColor);
+    const graphBackground = (svg: SVGSVGElement | null) => {
+      if (!svg?.closest(".bi011-figure")) return background;
+      return rgb(getComputedStyle(svg).backgroundColor);
+    };
     const rows: {
       kind: string;
       label: string;
@@ -76,30 +81,31 @@ async function renderedContrast(lab: Locator) {
         label: text.textContent ?? "",
         ratio: ratio(
           rgb(getComputedStyle(text).fill),
-          backing ? rgb(getComputedStyle(backing).fill) : background,
+          backing ? rgb(getComputedStyle(backing).fill) : graphBackground(text.ownerSVGElement),
         ),
         minimum: 4.5,
       });
     }
     for (const item of root.querySelectorAll<SVGGraphicsElement>(
-      ".f036-bar-a, .f036-bar-b, .f036-dot-a, .f036-dot-b, .f037-axis, .f036-system-line, .f036-system-intersection",
+      ".f036-bar-a, .f036-bar-b, .f036-dot-a, .f036-dot-b, .f037-axis, .f036-system-line, .f036-system-intersection, .bi011-boundary, .bi011-interval, .bi011-vertex, .bi011-trial",
     )) {
       const box = item.getBBox();
       if (!box.width && !box.height) continue;
       const style = getComputedStyle(item);
       const axis = item.classList.contains("f037-axis");
-      const stroke = axis || item.matches(".f036-system-line, .f036-system-intersection");
+      const stroke = axis || item.matches(".f036-system-line, .f036-system-intersection, .bi011-boundary, .bi011-interval, .bi011-vertex, .bi011-trial");
+      const paper = graphBackground(item.ownerSVGElement);
       const color = rgb(stroke ? style.stroke : style.fill);
       const opacity =
         Number(style.opacity) *
         Number(stroke ? style.strokeOpacity : style.fillOpacity);
       const rendered = color.map(
-        (v, i) => v * opacity + background[i] * (1 - opacity),
+        (v, i) => v * opacity + paper[i] * (1 - opacity),
       );
       rows.push({
         kind: axis ? "axis" : "model-mark",
         label: item.getAttribute("class") ?? "",
-        ratio: ratio(rendered, background),
+        ratio: ratio(rendered, paper),
         minimum: 3,
       });
     }
@@ -239,7 +245,7 @@ for (const unit of units)
         locale: "tr-TR",
         reducedMotion: "reduce",
       });
-      test(`${unit.id.endsWith("036") ? "eight" : "seven"} real model modes, invalid branches, notes and first-use offline state remain unscored`, async ({
+      test(`${unit.id.endsWith("036") ? "eight" : "nine"} real model modes, invalid branches, notes and first-use offline state remain unscored`, async ({
         page,
         context,
       }, info) => {
@@ -416,7 +422,7 @@ for (const unit of units)
           });
           captures.push({ mode, labels, legendMetrics });
         });
-        expect(captures).toHaveLength(unit.id.endsWith("036") ? 8 : 7);
+        expect(captures).toHaveLength(unit.id.endsWith("036") ? 8 : 9);
         await unit.assertModel(lab);
         await expect
           .poll(async () => (await stored(page)).explorations[unit.storedKey])
@@ -437,6 +443,15 @@ for (const unit of units)
         expect((await stored(page)).explorations[unit.storedKey]).toEqual(
           saved.explorations[unit.storedKey],
         );
+        if (unit.id.endsWith("037")) {
+          const interval = "interval-arithmetic-source-011";
+          const plane = "half-plane-source-011";
+          expect(saved.explorations[interval]).toMatchObject({ operation: "divide", aLow: 3, aHigh: 5 });
+          expect(saved.explorations[plane]).toMatchObject({ capClosed: false, showPairs: true });
+          const reloaded = await stored(page);
+          expect(reloaded.explorations[interval]).toEqual(saved.explorations[interval]);
+          expect(reloaded.explorations[plane]).toEqual(saved.explorations[plane]);
+        }
         expect(learning(await stored(page))).toEqual(learning(saved));
         const accessibility = await new AxeBuilder({ page })
           .include(unit.selector)
@@ -586,8 +601,8 @@ for (const unit of units)
     const expected = flow.units.find((candidate) => candidate.id === unit.id)!;
     expect(expected).toBeDefined();
     const isLinear = unit.id.endsWith("036");
-    const cards = isLinear ? [...expected.cards, ...currentLinearCards] : expected.cards;
-    const count = isLinear ? 52 : 45,
+    const cards = [...expected.cards, ...(isLinear ? currentLinearCards : currentInequalityCards)];
+    const count = isLinear ? 52 : 55,
       topicId = `topic-${unit.id}`;
     expect(cards).toHaveLength(count);
     const errors: string[] = [];
@@ -599,6 +614,15 @@ for (const unit of units)
     await ready(page);
     await context.setOffline(true);
     await enter(page, unit);
+    if (!isLinear) {
+      const practice = page.getByRole("region", { name: "Karışık prova tablosu", exact: true });
+      await expect(practice.getByRole("row")).toHaveCount(11);
+      const indices = [7, 8, 9, 10, 11, 12, 13, 18, 45, 46];
+      for (const [index, cardIndex] of indices.entries()) {
+        const cells = practice.getByRole("row").nth(index + 1).locator(".guide-table-cell-value");
+        await expect(cells).toHaveText([String(index + 1), typeset(cards[cardIndex].prompt)]);
+      }
+    }
     await page
       .getByRole("textbox", { name: "Notun", exact: true })
       .fill(unit.note);
@@ -824,7 +848,7 @@ for (const theme of ["light", "system"] as const) {
     }
     expect(learning(await stored(page))).toEqual(before);
     expect(observations.filter(({ unit }) => unit.endsWith("036"))).toHaveLength(8);
-    expect(observations.filter(({ unit }) => unit.endsWith("037"))).toHaveLength(7);
+    expect(observations.filter(({ unit }) => unit.endsWith("037"))).toHaveLength(9);
     const failures = observations.flatMap(({ unit, mode, rows }) =>
       rows
         .filter((row) => row.ratio + 1e-8 < row.minimum)

@@ -4,6 +4,8 @@ import { beforeLaterSourceRevisions } from "./helpers/before-source004-revision"
 import { createHash } from "node:crypto";
 import { expect, it } from "vitest";
 import baseline from "./fixtures/source-stage-034035-preservation.json";
+import originalCardFlow from "./fixtures/source036037-question-flow.json";
+import addedInequalityCards from "./fixtures/source011-current-question-flow.json";
 import { lessons, lessonById } from "../src/domain/content";
 import { lessonGuides } from "../src/learning/guides";
 import { builtInCheatSheets } from "../src/learning/cheatsheetContent";
@@ -12,7 +14,8 @@ import { basicInequalitiesSource037Pack } from "../src/learning/basicInequalitie
 import { studyTopics, lessonTopic, setTopicCompletion, completionDates } from "../src/domain/studyPlan";
 import { pastExamReferences, pastExamReferencesForTopic } from "../src/domain/pastExams";
 import { examTeachingCases } from "../src/learning/pastExamCases";
-import { initialState } from "../src/domain/model";
+import { draftSchema, initialState } from "../src/domain/model";
+import { draftQuestionCount } from "../src/domain/studyDraft";
 import { validateState } from "../src/domain/storage";
 import { learningReviewPlan } from "../src/domain/learningReviews";
 import { xp } from "../src/domain/scheduler";
@@ -27,7 +30,7 @@ const canonical = (value: unknown): unknown =>
 const hash = (value: unknown) => createHash("sha256").update(JSON.stringify(canonical(value))).digest("hex");
 const packs = [
   { pack: linearEquationsSource036Pack, base: "birinci-dereceden-denklemler", sections: 40, examples: 37, recall: 26, questions: 52, sheet: 15 },
-  { pack: basicInequalitiesSource037Pack, base: "basit-esitsizlikler", sections: 30, examples: 34, recall: 22, questions: 45, sheet: 12 },
+  { pack: basicInequalitiesSource037Pack, base: "basit-esitsizlikler", sections: 40, examples: 44, recall: 30, questions: 55, sheet: 17 },
 ] as const;
 
 it("preserves all BBB lesson, question, guide, sheet values and complete study order before appending companions", () => {
@@ -45,10 +48,10 @@ it("preserves all BBB lesson, question, guide, sheet values and complete study o
   expect(Object.entries(examTeachingCases).slice(0, 10)).toEqual(Object.entries(baseline.examTeachingCases));
 });
 
-it("keeps two independent companions with 97 self-contained fully guided cards", () => {
+it("keeps two independent companions with 107 self-contained fully guided cards", () => {
   expect(lessons).toHaveLength(540);
-  expect(lessons.flatMap((v) => v.questions)).toHaveLength(6482);
-  expect(new Set(lessons.flatMap((v) => v.questions).map((v) => v.id)).size).toBe(6482);
+  expect(lessons.flatMap((v) => v.questions)).toHaveLength(6492);
+  expect(new Set(lessons.flatMap((v) => v.questions).map((v) => v.id)).size).toBe(6492);
   expect(lessonGuides.size).toBe(505);
   expect(builtInCheatSheets.size).toBe(505);
   expect(studyTopics).toHaveLength(505);
@@ -138,4 +141,55 @@ it("keeps verified primary answers, TL units and own unscored examples distinct"
   }
   expect(linearEquationsSource036Pack.source).toContain("C seçeneği 40 dakikadır.");
   expect(basicInequalitiesSource037Pack.source).toContain("u=b/1000");
+});
+
+
+it("keeps old inequality positions and shows the ten mixed-practice stems before worked answers", () => {
+  const { id, items } = basicInequalitiesSource037Pack;
+  const guide = lessonGuides.get(id)!;
+  const readingSize = guide.sections.length;
+  expect(resolveGuideStep(id, 29, 30, readingSize)).toBe(29);
+  expect(resolveGuideStep(id, 30, 30, readingSize)).toBe(40);
+  expect(resolveGuideStep(id, 31, 30, readingSize)).toBe(41);
+  expect(resolveGuideStep(id, 30, 0, readingSize)).toBe(40);
+  expect(resolveGuideStep(id, 31, 40, readingSize)).toBe(31);
+  const codes = ["Q08", "Q09", "Q10", "Q11", "Q12", "Q13", "Q14", "Q19", "Q46", "Q47"];
+  const practice = guide.sections.at(-1)!;
+  expect(practice.title).toBe("Karışık prova");
+  expect(practice.table?.headers).toEqual(["Sıra", "Soru"]);
+  expect(practice.table?.rows).toEqual(codes.map((code, index) => [
+    String(index + 1), items.find((item) => item.code === code)!.prompt,
+  ]));
+
+  const oldCards = originalCardFlow.units.find((unit) => unit.id === id)!.cards;
+  expect(oldCards).toHaveLength(45);
+  expect(addedInequalityCards).toHaveLength(10);
+  expect(items.map(({ prompt, options }) => ({ prompt, options, correct: options[0] })))
+    .toEqual([...oldCards, ...addedInequalityCards]);
+  const questions = lessonById(id)!.questions;
+  expect(questions.map((question) => question.id)).toEqual(
+    Array.from({ length: 55 }, (_, index) => `f037-${id}-${index + 1}`),
+  );
+  expect(questions.map((question) => question.options[question.answer].tr))
+    .toEqual([...oldCards, ...addedInequalityCards].map(({ correct }) => correct));
+});
+
+it("pins an older inequality practice draft to its 45 original questions", () => {
+  const lessonId = basicInequalitiesSource037Pack.id;
+  const restored = draftSchema.parse({
+    lessonId,
+    phase: "practice",
+    index: 44,
+    responses: [],
+    selected: null,
+    checked: false,
+    hint: false,
+    confidence: "medium",
+    note: "Kayıtlı 45 soruluk çalışma",
+    startedAt: 0,
+  });
+  expect(draftQuestionCount(restored, 55)).toBe(45);
+  expect(draftQuestionCount({ ...restored, questionCount: 45 }, 55)).toBe(45);
+  expect(draftQuestionCount({ ...restored, index: 0, questionCount: 55 }, 55)).toBe(55);
+  expect(draftQuestionCount({ ...restored, index: 45 }, 55)).toBe(55);
 });
