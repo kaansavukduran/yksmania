@@ -1,7 +1,7 @@
 {
-  "version": "0.43.0",
+  "version": "0.44.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Kuvvet–ivme grafiğini değiştir, kütleyi eğimden hesapla ve örneği Kopya Kağıdında bul. İlgili geometri ve fizik soruları çizimli ipucu ve adım adım çözümler içerir. Yeni profiller Mevcut tema ile açılır."
+    "tr": "Uygulamanın görünen adı ÖSYM Mania. Aion yüzü menüde ve kurulum simgelerinde, Fragaria Interactive imzası Ayarlar’ın Hakkında bölümünde. Büyük ölçekte görsel ve ayar kontrolleri dar alanlara sığar."
   }
 }

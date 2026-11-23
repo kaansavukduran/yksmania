@@ -19,7 +19,15 @@ test("ÖSYM Mania markası altı temada, büyük yazıda ve çevrimdışı okunu
   const menu = page.getByRole("button", { name: "Menüyü aç", exact: true });
   const brand = page.getByRole("link", { name: "ÖSYM Mania", exact: true });
   for (const theme of ["dark", "light", "contrast", "matrix", "axolotl", "trans"] as const) {
-    await setThemePreference(page, theme);
+    if (theme === "axolotl" || theme === "trans") {
+      await page.getByRole("group", { name: "Tema", exact: true }).getByRole("button", {
+        name: theme === "axolotl" ? "Axolotl pembesi" : "Trans bayrağı",
+        exact: true,
+      }).click();
+      await expect(page.locator(".save-status")).toContainText("Bu cihazda kaydedildi");
+    } else {
+      await setThemePreference(page, theme);
+    }
     await expect(page.locator("html")).toHaveAttribute("data-theme", theme);
     await menu.click();
     await expect(brand).toBeVisible();

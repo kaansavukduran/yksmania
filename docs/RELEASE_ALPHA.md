@@ -1,3 +1,12 @@
+# ÖSYM Mania 0.44.0 · Ad ve Aion simgesi
+
+Yayın adayı.
+
+- Uygulama başlığı, gezinme ve kurulabilir web sürümü ÖSYM Mania adını gösterir.
+- Aion yüzü menüde, tarayıcı sekmesinde ve web kurulum simgelerinde kullanılır.
+- Fragaria Interactive imzasını Ayarlar’ın Hakkında bölümünde bulabilirsin.
+- Büyük ölçekli arayüzde ayar kontrolleri taşmadan bir alt satıra geçer.
+
 # YKSMania 0.43.0 · Soru görselleri
 
 Yayın adayı.
