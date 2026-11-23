@@ -8,6 +8,8 @@
 
 İlk dal koşusu, önceki derslerin soru ve özet sayıları genişletilen setlere uygulanınca beş hata verdi. Eski soru kimlikleri, sırası, sayısal cevapları ve ayrı özetin kısalığı denetlenmeye devam ediyor. Beş yeni çözüm ve doğruda açıortay örneği, kuralı seçme, hesabı kurma ve sonucu bulma adımlarına ayrıldı. [İlk dal koşusu](https://github.com/kaansavukduran/yksmania/actions/runs/45164479485)
 
+Bir sonraki koşuda 375 pikselde Binom atölyesinin “Üs” ve Olasılık atölyesinin “İlk zar” etiketi 4 piksel açıklık ölçütünü kaçırdı. Grafiğin altına ve zar tablosunun soluna alan verildi. Aynı SVG denetçisi iki atölyeyi 320, 375 ve 1280 pikselde yerel Chromium üzerinde bulgusuz tamamladı. [Uzak ölçüm](https://github.com/kaansavukduran/yksmania/actions/runs/45166754248/job/137667263559)
+
 # Olasılık ve Veri Analizi · 0.41.0 adayı
 
 23 Kasım 2026. Olasılık’ın güncel 12 sayfası ve Veri Analizi’nin güncel 17 sayfası metin ve görsel olarak incelendi. Olasılık’ta eş olasılıklı durumları sayma, koşulla örnek uzayı daraltma, ayrıklık, bağımsızlık ve geri koymalı seçim adım adım işleniyor. Veri Analizi’nde bilinmeyen sıklığa ulaşma, standart sapmayı karşılaştırma ve ham ölçümlerden eş genişlikli sınıflar kurma tamamlandı. Etkileşimli zar tablosu ile nokta grafiği ve histogram aynı hesaplardan çizilir.

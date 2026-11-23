@@ -108,7 +108,7 @@ export function ConditionalDiceSource036Lab() {
       </div>
       <figure className="f040-plot">
         <svg
-          viewBox="0 0 340 347"
+          viewBox="-16 0 356 347"
           width="100%"
           role="img"
           aria-labelledby={`${id}-dice`}

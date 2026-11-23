@@ -120,7 +120,7 @@ export function SignedBinomialSource035Lab() {
       {expansion.coefficients.length > 0 && (
         <figure className="f040-plot">
           <svg
-            viewBox="0 0 440 320"
+            viewBox="0 0 440 340"
             width="100%"
             role="img"
             aria-labelledby={`${id}-chart`}
