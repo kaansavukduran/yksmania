@@ -1,3 +1,10 @@
+# ÖSYM Mania 0.52.0 · Sürtünme eşiğinde ivme
+
+Yayın adayı.
+
+- Duran kutuya uygulanan kuvveti eşik çevresinde değiştir ve ivme grafiğindeki açık ve dolu noktaları karşılaştır.
+- Aynı deneyi ayrı Kopya Kağıdı’nda ve çözümlü örnekte çevrimdışı aç.
+
 # ÖSYM Mania 0.51.0 · Normal ve ağırlığın çiftleri
 
 Yayın adayı.

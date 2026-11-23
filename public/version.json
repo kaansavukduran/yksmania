@@ -1,7 +1,7 @@
 {
-  "version": "0.51.0",
+  "version": "0.52.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Kutudaki normal ve ağırlığın eşlerini doğru cisimlerde izle. İpin çekişi değiştiğinde temas çiftinin okları birlikte değişir, Dünya ile çekim çifti aynı kalır."
+    "tr": "Sürtünme eşiğinde duran ve kaymaya başlayan kutunun ivmesini karşılaştır. Kuvveti değiştir, grafikte açık ve dolu noktaları oku, çözümde kinetik sürtünme hesabını denetle."
   }
 }

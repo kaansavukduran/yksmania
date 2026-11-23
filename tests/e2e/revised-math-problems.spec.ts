@@ -368,8 +368,12 @@ for (const course of courses) {
       await expect(result).toContainText("8 ikili.");
       await expect(result).toContainText("Kalan ikililerin 2 tanesinde ilk bileşen C’nin, ikinci bileşen de D’nin dışında.");
       const labels = panel.locator("fieldset").first().locator("label");
-      const firstRow = (await labels.nth(0).boundingBox())!.y;
-      expect((await labels.nth(1).boundingBox())!.y).toBe(firstRow);
+      await page.evaluate(() => document.fonts.ready.then(() => undefined));
+      await expect(labels.nth(1)).toBeVisible();
+      const [firstRow, secondRow] = await labels.evaluateAll((choices) =>
+        choices.slice(0, 2).map((choice) => choice.getBoundingClientRect().top),
+      );
+      expect(secondRow).toBe(firstRow);
       await panel.getByRole("button", { name: "Çarpımların kesişimi", exact: true }).click();
       await expect(result).toContainText("4 ikili.");
       expect(await graph.innerHTML()).not.toBe(original);

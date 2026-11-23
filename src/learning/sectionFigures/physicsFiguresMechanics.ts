@@ -17,6 +17,8 @@ import {
 } from "../newtonTimeComparison";
 import { forcePairsTitle } from "../newtonForcePairs";
 import { newtonForcePairsFigure } from "./newtonForcePairs051";
+import { frictionThresholdTitle } from "../newtonFrictionThreshold";
+import { frictionThresholdFigure } from "./newtonFrictionThreshold052";
 
 /** Minimal labeled axes for physics graphs (t to the right). */
 function plotAxes(o: V, w: number, hUp: number, hDown: number, xLabel: string, yLabel: string): El[] {
@@ -280,6 +282,7 @@ const dogrusalHareket: Record<string, FigureDef> = {
 
 const newton: Record<string, FigureDef> = {
   [forcePairsTitle]: newtonForcePairsFigure,
+  [frictionThresholdTitle]: frictionThresholdFigure,
   "Hareketi tarif etmek ile nedenini açıklamak": {
     caption:
       "Sağa giden ama yavaşlayan araba: hız sağa, ivme sola. Net kuvvet hızın değil ivmenin yönündedir.",

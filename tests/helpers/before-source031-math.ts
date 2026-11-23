@@ -259,7 +259,10 @@ export function beforeSource031Teaching(
       )),
       examples: sheet.examples.slice(0, sizes.examples),
       cautions: prior.lesson === "newton"
-        ? sheet.cautions.filter((caution) => caution !== "Son hız × süre, hızın tüm süre boyunca son değerinde kaldığını varsayar. Burada hız sıfırdan arttığı için grafik alanı üçgendir.")
+        ? sheet.cautions.filter((caution) => ![
+            "Son hız × süre, hızın tüm süre boyunca son değerinde kaldığını varsayar. Burada hız sıfırdan arttığı için grafik alanı üçgendir.",
+            "Kayma başladıktan sonra 25 N statik üst sınırını düşersen 0,2 m/s² bulursun. Bu aşamada sürtünen yüzeyler kaydığı için kullanılan değer 20 N’dur.",
+          ].includes(caution))
         : prior.oldSheet ? sheet.cautions : sheet.cautions.slice(0, prior.examples),
       recall: sheet.recall.slice(0, sizes.recall),
       source: prior.oldSource,

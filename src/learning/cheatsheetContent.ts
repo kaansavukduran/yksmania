@@ -115,6 +115,7 @@ import { narrativeById } from "./narratives";
 import { physicsCheatSheets } from "./physicsCheatSheets";
 import { newtonTimeTitle } from "./newtonTimeComparison";
 import { forcePairsTitle } from "./newtonForcePairs";
+import { frictionThresholdTitle } from "./newtonFrictionThreshold";
 
 export interface CheatSection {
   title: string;
@@ -151,6 +152,10 @@ const revisedSectionTextByLesson = new Map([
     [forcePairsTitle, [
       "Her çift için uygulayanla alan cismi yer değiştir. Masa → kutunun çifti kutu → masadır. Dünya → kutunun çifti kutu → Dünya’dır.",
       "Düşey dengede N + T = G. Çekiş değişince normalin iki oku birlikte değişir; ağırlık ve onun çifti aynı kalır.",
+    ]],
+    [frictionThresholdTitle, [
+      "Başlangıçta duran kutu F ≤ μₛN iken dengede kalır. Uygulanan kuvvet ile statik sürtünme eşittir.",
+      "Kayma başladıktan sonra fₖ = μₖN ve a = (F − fₖ) / m. İvme grafiğinin kayma kolunun eğimi 1/m.",
     ]],
   ])],
   ["kesir-problemleri", fractionProblemsSource018SheetText],

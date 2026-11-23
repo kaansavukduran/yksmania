@@ -1,6 +1,7 @@
 import type { LessonGuide } from "./types";
 import { newtonDisplacementTitle, newtonTimeExampleTitle, newtonTimeRows, newtonTimeTitle, newtonVelocityTitle } from "../newtonTimeComparison";
 import { forcePairsTitle } from "../newtonForcePairs";
+import { frictionThresholdExample, frictionThresholdSection } from "../newtonFrictionThreshold";
 export const newtonGuide: LessonGuide = {
   id: "newton",
   minutes: 45,
@@ -123,6 +124,7 @@ export const newtonGuide: LessonGuide = {
         rows: [["Masa", "Kutu", "Yukarı 14 N"], ["Kutu", "Masa", "Aşağı 14 N"], ["Dünya", "Kutu", "Aşağı 20 N"], ["Kutu", "Dünya", "Yukarı 20 N"]],
       },
     },
+    frictionThresholdSection,
   ],
   examples: [
     {
@@ -251,6 +253,7 @@ export const newtonGuide: LessonGuide = {
       check: "Son hızı süreye böl, çıkan ivmeyi kütleyle çarp. Başlangıçtaki 4 N ve 8 N değerlerine geri dönersin.",
       pitfall: "Son hız × süre, hızın tüm süre boyunca son değerinde kaldığını varsayar. Burada hız sıfırdan arttığı için grafik alanı üçgendir.",
     },
+    frictionThresholdExample,
   ],
   recall: [
     {
@@ -271,7 +274,7 @@ export const newtonGuide: LessonGuide = {
     },
   ],
   source:
-    "MEBİ AYT Fizik Konu Özetleri PDF s.23–24 ve 31 (basılı 21–22 ve 29) ile Aurelia TYT Fizik Newton Hareket Yasaları kopya kağıdı PDF s.1–16 doğrudan okundu. Kuvvet–ivme grafiği ve sabit kuvvetin iki katına çıktığı üç zaman grafiği için MEBİ TYT Fizik Konu Özetleri PDF s.42 (basılı 40), masa ve Dünya ile kuvvet çiftleri için s.44 (basılı 42) incelendi. Kütle çekimi temas gerektirmez. Sayısal örnekler özgündür. Aurelia dosyasındaki diğer MEB Fizik 9/11 atıfları ve ÖSYM örneği ayrıca doğrulanmadı. Anlatım klasik sabit kütle ve belirtilen basit temas/sürtünme koşullarıyla sınırlıdır.",
+    "MEBİ AYT Fizik Konu Özetleri PDF s.23–24 ve 31 (basılı 21–22 ve 29) ile Aurelia TYT Fizik Newton Hareket Yasaları kopya kağıdı PDF s.1–16 doğrudan okundu. Kuvvet–ivme grafiği ve sabit kuvvetin iki katına çıktığı üç zaman grafiği için MEBİ TYT Fizik Konu Özetleri PDF s.42 (basılı 40), masa ve Dünya ile kuvvet çiftleri için s.44 (basılı 42) ve sürtünme eşiği için s.45–46 (basılı 43–44) incelendi. Kütle çekimi temas gerektirmez. Sayısal örnekler özgündür. Aurelia dosyasındaki diğer MEB Fizik 9/11 atıfları ve ÖSYM örneği ayrıca doğrulanmadı. Anlatım klasik sabit kütle ve belirtilen basit temas/sürtünme koşullarıyla sınırlıdır.",
 };
 
 export const electricFieldGuide: LessonGuide = {
