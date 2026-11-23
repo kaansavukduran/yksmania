@@ -25,6 +25,8 @@ import { mebiHydrostaticFillingFigures } from "./mebiHydrostaticFillingFigures";
 import { mebiPascalLayersFigures } from "./mebiPascalLayersFigures";
 import { mebiHydrostaticForceFigures } from "./mebiHydrostaticForceFigures";
 import { meterConnections, meterConnectionsTitle, meterResistanceOhms, meterSupplyVolts } from "../mebiOhmReadings";
+import { manometerReferenceTitle } from "../mebiManometerReadings";
+import { mebiManometerFigure } from "./mebiManometerFigures";
 
 const rect = (x: number, y: number, w: number, h: number, tone: "a" | "b" | "c" | "muted" | "ink", fill = true): El =>
   poly([v(x, y), v(x + w, y), v(x + w, y + h), v(x, y + h)], { fill: fill ? (tone === "ink" ? "muted" : tone) : undefined, tone, thin: !fill });
@@ -70,6 +72,7 @@ function battery(a: V, b: V, label: string): El[] {
 const meter = (c: V, letter: string, tone: "a" | "c"): El[] => [circle(c, 0.32, { tone, fill: "muted" }), txt(c, letter, "c", { small: true, bold: true, tone })];
 
 const basinc: Record<string, FigureDef> = {
+  [manometerReferenceTitle]: mebiManometerFigure,
   ...mebiSolidPressureFigures,
   ...mebiHydrostaticFillingFigures,
   ...mebiPascalLayersFigures,

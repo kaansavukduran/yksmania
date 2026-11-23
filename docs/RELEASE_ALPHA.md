@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.84.0 · Açık ve kapalı uçlu manometre
+
+Yayın adayı. Referansı seçip iki sıvı yüzeyinin düşey farkını değiştir. Kopya Kağıdı’nda kaynak örneğini çöz, sonra aynı yatay seviyeyi su manometresi sorusunda kullan.
+
 # ÖSYM Mania 0.82.0 · Durgun sıvının yüzey kuvvetleri
 
 Yayın adayı. Tabanı, dik duvarı ve eğik duvarı seç. Basınç kuvvetinin yönünü ve büyüklüğünü karşılaştır. Aynı su miktarında kap şekli taban kuvvetini değiştirebilir.

@@ -85,6 +85,11 @@ const pressureFigureFixtures = new Map([
     description: /3 santimetrekare.*45 newton.*12 santimetrekare/,
     revisions: { visibleFigureRevision: "0d4d3e1c77d39e", solutionFigureRevision: "0ac11b83aaeaa9" },
   }],
+  ["basinc-q7", {
+    title: "Açık uçlu su manometresi",
+    description: /0,2 metre alçak.*100000 paskal/,
+    revisions: { visibleFigureRevision: "0646752b5ec627", solutionFigureRevision: "028e50ab707f5f" },
+  }],
   ["basinc-q9", {
     title: "Düz tabana yayılan sıvı basıncı",
     description: /0,02 metrekare.*aşağı doğru aynı 3000 paskal/,

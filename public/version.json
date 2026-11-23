@@ -1,8 +1,8 @@
 {
-  "version": "0.83.0",
+  "version": "0.84.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Basınç dersinde kuvvetleri, sıvı derinliğini ve Pascal ilkesini çizimlerle incele. Kopya Kağıdı’ndaki örnekleri ve soruların adım adım çözümlerini çevrimdışı aç.",
-    "en": "Use diagrams to explore forces, liquid depth and Pascal’s principle. Open reference examples and step-by-step question solutions offline."
+    "tr": "Manometrenin açık veya kapalı ucunu seç. Sıvı düzeylerini değiştirerek basıncı oku ve Kopya Kağıdı’nda çözümlü örneği incele.",
+    "en": "Compare open and closed manometers. Change the liquid levels to read the pressure, then use the worked reference example."
   }
 }

@@ -13,6 +13,7 @@ import { solidPressureQuestionFigures, solidPressureQuestionId } from "./solidPr
 import { equalDepthQuestionFigures, equalDepthQuestionId } from "./hydrostaticQuestion080";
 import { pistonQuestionFigures, pistonQuestionId } from "./pascalQuestion081";
 import { bottomForceQuestionFigures, bottomForceQuestionId } from "./bottomForceQuestion082";
+import { manometerQuestionFigures, manometerQuestionId } from "./manometerQuestion084";
 import {
   inverseTranslationFigures,
   inverseTranslationQuestion,
@@ -258,6 +259,14 @@ const bindings = new Map<string, FigureBinding>([
     pageLabel: "Fiziksel 138. sayfa, basılı 136",
     itemLabel: "Tabana dik kuvvet, özgün soru",
     figures: bottomForceQuestionFigures,
+  }],
+  [manometerQuestionId, {
+    stemRevision: "019bb5131ffcd8",
+    helpRevision: "02fed4f47140b9",
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 142. sayfa, basılı 140",
+    itemLabel: "Açık uçlu su manometresi, özgün soru",
+    figures: manometerQuestionFigures,
   }],
   [pistonQuestionId, {
     stemRevision: "122891ad73ac0c",
