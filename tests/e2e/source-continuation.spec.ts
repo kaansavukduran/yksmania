@@ -278,7 +278,8 @@ for (const lesson of units) {
     );
     expect(learningEvidence(await stored(page))).toEqual(before);
     await page.getByRole("button", { name: "Sorulara geç", exact: true }).tap();
-    await expect(page.locator(".question-meta")).toContainText("Soru 1 / 10");
+    const questionCount = lesson.id === "grafik-problemleri" ? 16 : 10;
+    await expect(page.locator(".question-meta")).toContainText(`Soru 1 / ${questionCount}`);
     await expect(page.locator(".answer")).toHaveCount(5);
     await expect(page.locator(".question-panel h2")).toHaveText(
       lesson.firstQuestion,
