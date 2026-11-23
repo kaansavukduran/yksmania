@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.69.0 · Koordinat düzleminde öteleme
+
+Yayın adayı. Soru kartında başlangıç noktasını oku, ipucunda vektörün bileşenlerini ayır, son çözüm adımında yeni konumu gör. Ayrı Kopya Kağıdı’nda nokta ve üçgen öteleme çizimleri ile çözümlü örnek bulunur.
+
 # ÖSYM Mania 0.68.0 · Gaz ve plazma
 
 Yayın adayı. İyonlaşma ve yeniden birleşmeyi karşılaştır. Yük tablosu, ayrı Kopya Kağıdı ve çözümlü örnek aynı tanecik modelini kullanır.

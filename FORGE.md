@@ -1,3 +1,11 @@
+# Koordinat düzleminde öteleme · 0.69.0 adayı
+
+OGM Öteleme Dönüşümü fiziksel 3 ve 6–10 ile Dönüşümler Kopya Kâğıdı fiziksel 2 ve 4 karşılaştırıldı. Kaynaktaki yatay ve düşey hareket, özgün öğretim sorusunun kendi koordinatlarıyla çizildi. Soru kökünde yalnız başlangıç noktası var. İpucu iki ekseni ve verilen işaretleri eşleştirir. İlk iki çözüm adımı bileşen hesabını, son adım hesaplanan görüntüyü gösterir. Açılan Kopya Kağıdı ilk kez iki anlatım çizimini ve ilgili çözüm adımındaki çizimi doğrudan gösterir. Arşiv metni ve şık sırası korunur.
+
+İlk tarayıcı denetimi büyük yazıda SVG etiketlerinin çakıştığını, ayrı Kopya Kağıdı’nın da iki şekli açmadığını gösterdi. Eksen birimleri korunarak etiket araları açıldı ve mevcut şekiller öğrenci okuyucusuna bağlandı. Çözümün ekranda açıldığı, kayıtlı yanıtta ise çözüm çizimi sürümünün eksik olduğu görülünce kayıt ve yanlış inceleme aynı doğrulanmış yardım içeriğini kullanacak şekilde güncellendi.
+
+Normal girişte sekiz senaryo geçti. 320 px, %200 arayüz ve %150 yazı ayarında iki çizim okunuyor. On yanıtlı çevrimdışı çalışma, yardım düzeyi, eski kâğıt sürüm ayrımı, sonuç ve yanlış incelemede doğru şeklin durumu doğrulandı. Kopya Kağıdı 430 px’de çevrimdışı açıldı. Arşiv kayıtları yeni yardım içeriğiyle sessizce güncellenmiyor.
+
 # Gaz ve plazmada elektronun yeri · 0.68.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 69–70, basılı 67–68, gaz ile plazma arasındaki iki yönü ayrı gösteriyor. Öğrenci çizimi nötr atom ile pozitif iyon ve serbest elektron modelini gösterir. Enerji okun seçilen yönüne göre eklenir veya verilir, toplam yük sıfır kalır. Önceden var olan altı geçiş şekli korunur. Kutup ışığı ve şimşek kaynak fotoğraflarının ayrı görsel rolü açık. Gerçek iki öğrenci akışında 320 px ve %200 ölçekte ters ok, değişen enerji yönü, ayrı Kopya Kağıdı, çözümlü çizim ve değişmeyen öğrenme kaydı doğrulandı.

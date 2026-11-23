@@ -4,6 +4,8 @@
 
 **Son yayımlanan web ve masaüstü sürümü 0.42.0**. Açıortayları ve ortak kenarlı üçgenleri çevrimdışı inceleyebilirsin. [Windows ve Linux 0.42](https://github.com/kaansavukduran/yksmania/releases/tag/v0.42.0-alpha.1) · [Android 0.42 kişisel deneme arşivi](https://github.com/kaansavukduran/yksmania/actions/runs/45187782506/artifacts/14823994107)
 
+**0.69.0 adayı** öteleme sorusunun başlangıç konumunu ve çözülen görüntüsünü ayrı çizimlerde gösteriyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+
 **0.68.0 adayı** gaz ile plazma arasındaki iyonlaşma ve yeniden birleşmeyi canlandırıyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.67.0 adayı** ısı sığaları farklı cisimlerin denge sıcaklığını çözümlü çizimle karşılaştırıyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)

@@ -1,7 +1,8 @@
 {
-  "version": "0.68.0",
+  "version": "0.69.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Nötr gazda iyonlaşmayı ve elektronların yeniden birleşmesini iki yönlü şemada izle. Toplam yükü adım adım denetle."
+    "tr": "Öteleme sorusunda başlangıç noktasını koordinat düzleminde oku. İpucu iki ekseni ayırır ve son çözüm çizimi hesaplanan yeni konumu gösterir.",
+    "en": "Read the starting point on a coordinate plane. The hint separates the axes and the final worked drawing shows the translated point."
   }
 }

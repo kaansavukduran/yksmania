@@ -4,6 +4,7 @@ import { forceAccelerationFigures, forceAccelerationQuestion } from "./forceAcce
 import { forceVelocityFigureData, forceVelocityQuestion } from "./forceVelocityOptions048";
 import { signedWorkFigures, signedWorkQuestionId } from "./signedWork055";
 import { springWorkFigures, springWorkQuestionId } from "./springWork057";
+import { translationQuestionFigures, translationQuestionId } from "./translationQuestion069";
 
 const crossingQuestionId = "tyt-geo-acilar-kaynak-pekitirme-032-source-001-no-parallel";
 const givenAngle = 64;
@@ -204,6 +205,14 @@ const velocityQuestion = {
 };
 
 const bindings = new Map<string, FigureBinding>([
+  [translationQuestionId, {
+    stemRevision: "1616a8a36ab750",
+    helpRevision: "0742676b2f632f",
+    title: "OGM Materyal ve Dönüşümler Kopya Kâğıdı",
+    pageLabel: "OGM fiziksel 3 ve 6–10, Kopya Kâğıdı fiziksel 2 ve 4",
+    itemLabel: "Öteleme yönü ve iki eksende yer değiştirme, özgün veriler",
+    figures: translationQuestionFigures,
+  }],
   [springWorkQuestionId, {
     stemRevision: "0769df545d6ceb",
     helpRevision: "1f4a779297adca",

@@ -19,7 +19,7 @@ import { PastExamQuestions } from "../components/PastExamQuestions";
 import { lessonTopic } from "../domain/studyPlan";
 import { StudyTimer } from "../components/StudyTimer";
 import { GuidedQuestionHelp, type SimilarOffer } from "../components/QuestionHelp";
-import { helpPanels, previousHelpPanelCount } from "../learning/questionHelp";
+import { helpPanels, previousHelpPanelCount, resolvedGuidance } from "../learning/questionHelp";
 import { effectiveHelpLevel } from "../learning/helpProgression";
 import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
 import { AnswerOptions } from "../components/AnswerOptions";
@@ -55,7 +55,8 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
     explanation: l(question.explanation),
     guidance: question.guidance,
   });
-  const sourcePresentation = sourceQuestionPresentation(helpQuestion);
+  const visualQuestion = { ...helpQuestion, guidance: resolvedGuidance(helpQuestion) };
+  const sourcePresentation = sourceQuestionPresentation(visualQuestion);
   const panels = helpPanels(helpQuestion),
     previousCount = previousHelpPanelCount(helpQuestion),
     visibleHelpLevel = effectiveHelpLevel(
@@ -88,7 +89,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
       ...(sourcePresentation?.optionFigureRevision
         ? { optionFigureRevision: sourcePresentation.optionFigureRevision }
         : {}),
-      ...sourceVisualRevisions(helpQuestion, sourcePresentation),
+      ...sourceVisualRevisions(visualQuestion, sourcePresentation),
       ...(draft.hint
         ? { helpLevel: visibleHelpLevel, helpPanelCount: panels.length }
         : {}),

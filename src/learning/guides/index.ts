@@ -328,6 +328,20 @@ for (const extension of forge020BiologyGuideExtensions) {
 // The reader can extend the catalog while preserving its historical entries.
 export function studyGuide(lessonId: string) {
   const guide = clarifiedGuideView(lessonGuides.get(lessonId));
+  if (guide?.id === "donusum-oteleme-donme") {
+    const components = "Öteleme vektörünün iki bileşenini oku";
+    const triangle = "Şekli köşe köşe taşı, bağıntıyı geri denetle";
+    return {
+      ...guide,
+      sections: guide.sections.map((section) =>
+        section.title === components || section.title === triangle
+          ? { ...section, figureTitle: section.title }
+          : section),
+      examples: guide.examples.map((example) => example.title === "Ötele ve başlangıca geri dön"
+        ? { ...example, steps: example.steps.map((step, index) => index === 0 ? { ...step, figureTitle: components } : step) }
+        : example),
+    };
+  }
   if (guide?.id === "hal-degisimi") {
     return {
       ...guide,

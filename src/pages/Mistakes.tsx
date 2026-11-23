@@ -24,6 +24,7 @@ import { TrapDeck } from "../components/TrapDeck";
 import { SourceQuestionFigure } from "../learning/SourceQuestionFigure";
 import { sourceQuestionPresentation } from "../learning/sourceExercises024";
 import { practiceQuestionView } from "../learning/practiceQuestionView";
+import { resolvedGuidance } from "../learning/questionHelp";
 import { savedSourceVisuals } from "../learning/sourceVisualRevisions";
 
 const subjectOrder = subjects.map((s) => s.id);
@@ -86,8 +87,11 @@ export function Mistakes({
             hint: l(displayed.hint),
             guidance: displayed.guidance,
           }) : undefined;
-          const figures = helpQuestion
-            ? savedSourceVisuals(helpQuestion, sourceQuestionPresentation(helpQuestion), r)
+          const visualQuestion = helpQuestion
+            ? { ...helpQuestion, guidance: resolvedGuidance(helpQuestion) }
+            : undefined;
+          const figures = visualQuestion
+            ? savedSourceVisuals(visualQuestion, sourceQuestionPresentation(visualQuestion), r)
             : undefined;
           return {
             session: s,
