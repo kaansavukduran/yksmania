@@ -1,3 +1,7 @@
+# Basınç sorularında görsel sürüm kaydı · 0.83.0 adayı
+
+0.80 tarayıcı denetiminde eski test, öğretim oturumuna kaydedilen iki görsel sürümünü beklemediği için başarısız oldu. İlk yerel düzeltme sonraki resimli soruda aynı açığı gösterdi. Dört basınç sorusunun kaynak çizimleri, sekiz kesin görsel sürümü ve çevrimdışı oturum kayıtları doğrulandı. Yerel check ve derleme ile 29 tarayıcı senaryosu geçti. [0.80 CI](https://github.com/kaansavukduran/yksmania/actions/runs/45279738908)
+
 # Durgun sıvının yüzey kuvvetleri · 0.82.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 138, basılı 136. Dik duvar, yatay taban ve eğik duvara etkiyen kuvvetler kendi yüzeylerine dik. İlk örnekte kuvvetler 200, 200 ve 300 N. Aynı hacimde su ve aynı tabanla, yan duvar eğimi değişince taban kuvveti değişiyor. Kopya Kağıdı merkez derinliği ve alanı ayrı gösteriyor. Özgün taban sorusunun kökü verilenleri, son kalıcı çözüm adımı 60 N'u gösteriyor.

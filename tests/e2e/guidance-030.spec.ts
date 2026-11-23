@@ -68,6 +68,29 @@ const cases = [
   ["Türkçe", "zarflar", "Humanities"],
   ["Tarih", "degisim-caginda-avrupa-osmanli", "Humanities"],
 ] as const;
+// Freeze the two identities independently of the production renderer.
+const pressureFigureFixtures = new Map([
+  ["basinc-q2", {
+    title: "İple desteklenen blok",
+    description: /10 kilogramlık bloğun temas alanı 0,03 metrekare.*40 newtonla yukarı/,
+    revisions: { visibleFigureRevision: "185e51b984cf86", solutionFigureRevision: "0afe66092c758c" },
+  }],
+  ["basinc-q4", {
+    title: "K ve L'nin düşey derinliği",
+    description: /0,4 metre derinde.*hava basınçları eşit/,
+    revisions: { visibleFigureRevision: "087524c50df0b2", solutionFigureRevision: "01c122209646bf" },
+  }],
+  ["basinc-q5", {
+    title: "Aynı yükseklikte iki piston",
+    description: /3 santimetrekare.*45 newton.*12 santimetrekare/,
+    revisions: { visibleFigureRevision: "0d4d3e1c77d39e", solutionFigureRevision: "0ac11b83aaeaa9" },
+  }],
+  ["basinc-q9", {
+    title: "Düz tabana yayılan sıvı basıncı",
+    description: /0,02 metrekare.*aşağı doğru aynı 3000 paskal/,
+    revisions: { visibleFigureRevision: "05e26f90b695cf", solutionFigureRevision: "0cd37644a46db0" },
+  }],
+]);
 const addedNumberProblemIds = [
   "sayi-problemleri-017-kismi-ve-bos-sira",
   "sayi-problemleri-017-kalan-ve-baslangic",
@@ -409,12 +432,23 @@ for (const [subject, lessonId] of cases) {
       assisted: i === 0,
       confidence: "medium",
       ...(i === 0 ? { helpLevel: 6, helpPanelCount: 5 } : {}),
+      ...pressureFigureFixtures.get(q.id)?.revisions,
     }));
     for (let i = 0; i < lesson.questions.length; i++) {
       const q = lesson.questions[i];
       await expect(page.locator(".question-panel h2")).toHaveText(
         shownPrompt(q),
       );
+      const expectedFigure = pressureFigureFixtures.get(q.id);
+      if (expectedFigure) {
+        const figure = page.getByRole("figure", {
+          name: expectedFigure.title,
+          exact: true,
+        });
+        await expect(figure.getByRole("img")).toHaveAccessibleDescription(
+          expectedFigure.description,
+        );
+      }
       await page.locator(".answer").nth(expectedResponses[i].selected).click();
       await page
         .getByRole("button", { name: "Cevabı kontrol et", exact: true })

@@ -1,8 +1,8 @@
 {
-  "version": "0.82.0",
+  "version": "0.83.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Elektrik Akımı dersinde dört V–I ölçümünün eğimini oku. Voltmetreyle ampermetrenin seri ve paralel bağlantılarını çizimden karşılaştır.",
-    "en": "Read the slope of four voltage and current measurements. Compare how a voltmeter and ammeter connect in series and parallel."
+    "tr": "Basınç dersinde kuvvetleri, sıvı derinliğini ve Pascal ilkesini çizimlerle incele. Kopya Kağıdı’ndaki örnekleri ve soruların adım adım çözümlerini çevrimdışı aç.",
+    "en": "Use diagrams to explore forces, liquid depth and Pascal’s principle. Open reference examples and step-by-step question solutions offline."
   }
 }
