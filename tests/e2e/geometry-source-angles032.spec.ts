@@ -167,7 +167,7 @@ for (const profile of [
       reducedMotion: "reduce",
       hasTouch: profile.large,
     });
-    test("source language figures, nine worked variants and eighteen independent questions preserve daily and offline state", async ({
+    test("source language figures, ten worked examples and 22 independent questions preserve daily and offline state", async ({
       page,
       context,
     }, info) => {
@@ -305,11 +305,12 @@ for (const profile of [
         "x=15; ortak açı 55°dir.",
         "125°.",
         "112°.",
+        `${180 / 2}°.`,
       ];
       await openWorkedExamples(page);
       const examples = page.locator(".worked-example");
-      await expect(examples).toHaveCount(9);
-      for (let i = 0; i < 9; i++) {
+      await expect(examples).toHaveCount(exampleAnswers.length);
+      for (const [i, expectedAnswer] of exampleAnswers.entries()) {
         const e = examples.nth(i);
         await e.locator("summary").click();
         await e
@@ -323,7 +324,7 @@ for (const profile of [
           await expect(e.locator(".worked-steps li")).toHaveCount(count);
         }
         await expect(e.locator(".worked-conclusion")).toContainText(
-          exampleAnswers[i],
+          expectedAnswer,
         );
       }
       const noteBox = page.getByRole("textbox", { name: "Notun", exact: true });
@@ -512,7 +513,7 @@ for (const profile of [
           profile,
           normalEntry: true,
           diagrams: true,
-          workedExamples: 9,
+          workedExamples: exampleAnswers.length,
           independentQuestions: "22/22",
           noExplorationXP: true,
           manualTheory: true,
