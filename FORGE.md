@@ -1,3 +1,9 @@
+# EBOB ve EKOK · Kaynak 008 sürüm 1.1
+
+23 Kasım 2026. Güncel 22 sayfalık kaynak önceki sürümle karşılaştırıldı. Aynı 49 nesnenin iki farklı kutu düzeni gösteriliyor. İki şeritten artan parçalar çıkarıldıktan sonra ortak parça boyu ve toplam adet ayrı hesaplanıyor. 8’e bölündüğünde 5, 12’ye bölündüğünde 7 kalan sayı bulunmadığı, 4’e göre iki farklı kalanla açıklanıyor. En küçük toplam örneğinin sonucu ayrı Kopya Kağıdında çözüm açılınca görülüyor.
+
+46 eski soru, kimlik ve puanlı çalışma sırası korundu. Yerel `check`, derleme, 42 hedefli birim testi ve beş Chromium akışı geçti. 46 soruluk bağımsız oturum ve ayrı yardımlı oturum çevrimdışı tamamlandı. Adım açma ve model keşfi öğrenme puanı üretmedi. Kaynak güncellemesi yalıtılmış yayın adayında bekliyor.
+
 # Asal Sayılar · Kaynak 004 sürüm 1.2
 
 23 Kasım 2026. Güncel 14 sayfalık kaynak önceki sürümle karşılaştırıldı. Üç kart örneği asal çarpan türünü, kart adedini ve pozitif bölen sayısını ayırır. Eksik adım örneği öğrenciden gerekçe ister. Çözüm, mevcut çözümlü örnekten adım adım açılır. Ayrı Kopya Kağıdında üç onarım sorusu çözümlerden önce görünür.

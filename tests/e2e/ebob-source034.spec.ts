@@ -105,6 +105,100 @@ const modes = [
   "EBOB ve EKOK’tan sayılar",
   "Küp sayımı",
 ];
+test("the current source shows both remainder layouts and keeps the example solution closed until requested", async ({
+  page,
+  context,
+}, info) => {
+  await page.setViewportSize({ width: 320, height: 1000 });
+  await page.goto("/");
+  await nav(page, "Ayarlar");
+  await setThemePreference(page, "dark");
+  await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
+  await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
+  await expect(page.locator(".save-status")).toContainText("Bu cihazda kaydedildi");
+  await offlineReady(page);
+  const before = learning(await stored(page));
+  await context.setOffline(true);
+  const lab = await enter(page);
+  const changeRange = (name: string, value: string) =>
+    lab.getByRole("slider", { name, exact: true }).fill(value);
+  await lab.getByRole("button", { name: "Kalan koşulu", exact: true }).click();
+  await changeRange("İlk bölen", "6");
+  await changeRange("İkinci bölen", "8");
+  await changeRange("Ortak kalan r", "1");
+  await changeRange("Hariç üst sınır", "50");
+  await expect(lab).toContainText("Adaylar: 1, 25, 49");
+
+  await lab.getByRole("button", { name: "Bilinmeyen böleni bul", exact: true }).click();
+  await changeRange("İlk sayı N", "65");
+  await changeRange("İkinci sayı M", "89");
+  await changeRange("N için kalan", "5");
+  await changeRange("M için kalan", "5");
+  await expect(lab).toContainText("En büyük bölen 12.");
+  await expect(lab).toContainText("Uygun bölenler 6, 12.");
+  await changeRange("N için kalan", "12");
+  await changeRange("M için kalan", "12");
+  await expect(lab.locator("p[role=status]")).toHaveText(
+    "Ortak bölenlerin hiçbiri bütün kalanlardan büyük değil.",
+  );
+
+  await lab.getByRole("button", { name: "Öklid adımları", exact: true }).click();
+  await changeRange("İlk sayı", "91");
+  await changeRange("İkinci sayı", "65");
+  const next = lab.getByRole("button", { name: "Sonraki bölme", exact: true });
+  for (const equation of ["91=65×1+26", "65=26×2+13", "26=13×2+0"]) {
+    await next.click();
+    await expect(lab).toContainText(equation);
+  }
+  await expect(lab).toContainText("EBOB 13; EKOK 455.");
+
+  const chapter = (name: string) => page.locator(".guide-section").filter({
+    has: page.getByRole("heading", { name, exact: true }),
+  });
+  const equal = chapter("Aynı kalanlı sayıda aralığın en iyi adayını bul");
+  await expect(equal).toContainText("49=6×8+1=8×6+1");
+  await expect(equal).toContainText("8 kutu dolar");
+  await expect(equal).toContainText("6 kutu dolar");
+  const different = chapter("Aynı fark modeli yeni kalan koşulunda bozulabilir");
+  await expect(different).toContainText("60÷12=5 ve ikinciden 84÷12=7 parça");
+  await expect(different).toContainText("Bu iki koşula uyan N yoktur.");
+  const title = "Destek azaltılan toplamı tamamla";
+  const example = page.locator(".guide-examples .worked-example").filter({
+    has: page.getByText(title, { exact: true }),
+  });
+  await example.locator("summary").press("Enter");
+  await expect(example.locator(".example-prompt")).toContainText("xy=30");
+  await expect(example.locator(".worked-conclusion")).toHaveCount(0);
+  await example.getByRole("button", { name: "Çözümün tamamını göster", exact: true }).click();
+  await expect(example.locator(".worked-conclusion")).toContainText("66");
+
+  await nav(page, "Kopya Kağıtları");
+  await page.getByRole("button", { name: "TYT", exact: true }).click();
+  await page.getByRole("textbox", { name: "Ders veya konu ara", exact: true }).fill("EBOB ve EKOK");
+  await page.locator(".cheatsheet-topic").filter({
+    has: page.getByText("EBOB ve EKOK: ortak birimden kaynak problemlerine", { exact: true }),
+  }).click();
+  const sheet = page.locator(".cheat-reader");
+  await expect(sheet.locator(".cheat-section").last()).not.toContainText("en küçük toplam 66");
+  const sheetExample = sheet.locator(".worked-example").filter({
+    has: page.getByText(title, { exact: true }),
+  });
+  await sheetExample.locator(":scope > summary").press("Enter");
+  await expect(sheetExample.locator(".example-prompt")).toContainText("xy=30");
+  const solution = sheetExample.locator(".cheat-solution");
+  await expect(solution).not.toHaveAttribute("open", "");
+  await solution.locator("summary").press("Enter");
+  await expect(solution).toHaveAttribute("open", "");
+  await expect(solution.getByText("66", { exact: false }).last()).toBeVisible();
+  await expect(page.locator(".skip-link")).not.toBeFocused();
+  await expect.poll(() => page.locator(".skip-link").evaluate(
+    (link) => link.getBoundingClientRect().bottom,
+  )).toBeLessThanOrEqual(0);
+  await solution.locator("summary").scrollIntoViewIfNeeded();
+  await page.screenshot({ path: info.outputPath("ebob-source008-f1-320-viewport.png") });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+  expect(learning(await stored(page))).toEqual(before);
+});
 for (const profile of [
   { name: "1440dark", width: 1440, large: false },
   { name: "320MatrixLexendUI200Text150", width: 320, large: true },

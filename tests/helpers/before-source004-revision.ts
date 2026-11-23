@@ -2,6 +2,7 @@ import { txt, type Lesson } from "../../src/domain/model";
 import type { CheatSheet } from "../../src/learning/cheatsheetContent";
 import type { LessonGuide } from "../../src/learning/guides/types";
 import { beforeScientificRevision } from "./before-scientific-revision";
+import { beforeSource008Revision } from "./before-source008-revision";
 
 const lessonId = "tyt-mat-asal-kaynak-032";
 const topicId = `topic-${lessonId}`;
@@ -104,5 +105,9 @@ export function beforeLaterSourceRevisions(
   id: string,
   value: unknown,
 ): unknown {
-  return beforeSource004Revision(surface, id, beforeScientificRevision(surface, id, value));
+  return beforeSource008Revision(
+    surface,
+    id,
+    beforeSource004Revision(surface, id, beforeScientificRevision(surface, id, value)),
+  );
 }

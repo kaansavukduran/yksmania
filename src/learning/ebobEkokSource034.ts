@@ -163,7 +163,7 @@ export const ebobEkokSource034Pack:Ebob034Pack = {
       "title": "Aynı kalanlı sayıda aralığın en iyi adayını bul",
       "paragraphs": [
         "8 ve 12 ile bölündüğünde 5 kalanını veren N için EKOK=24; N=24 k+5. N>100 istenirse k=3, 77 verir ve yetmez; k=4, 101 verir. Sonuç 101=8×12+5=12×8+5; 5 her iki bölenden küçüktür. Sınırdaki adayın bir öncesini elemek en küçük olduğunu açıklar.",
-        "6 ve 8 ile bölündüğünde 1 kalanını veren N<200 için N=24 k+1. k=8 →193, k=9 →217 sınırı aşar; en büyük 193’tür. Bir uygun sayı bulmak optimumu kanıtlamaz. Aynı yapı, 6’lı ve 8’li gruplandırmada bir nesne artan toplamda da kullanılır. Sayı büyürken tüm sayıları denemek yerine ortak kat dizisindeki adayları dene."
+        "6 ve 8 ile bölündüğünde 1 kalanını veren N<200 için N=24 k+1. k=8 →193, k=9 →217 sınırı aşar; en büyük 193’tür. Bir uygun sayı bulmak optimumu kanıtlamaz. 49 nesneyi altışarlı kutulara ayırınca 8 kutu dolar ve bir nesne artar. Aynı 49 nesneyi bu kez sekizerli kutulara ayırınca 6 kutu dolar ve yine bir nesne artar. 49=6×8+1=8×6+1. Bu iki ayrı düzen aynı toplamı gösterir. Sayı büyürken tüm sayıları denemek yerine ortak kat dizisindeki adayları dene."
       ]
     },
     {
@@ -258,9 +258,9 @@ export const ebobEkokSource034Pack:Ebob034Pack = {
       "code": "S28",
       "title": "Aynı fark modeli yeni kalan koşulunda bozulabilir",
       "paragraphs": [
-        "65 ve 89, aynı d’ye bölündüğünde 5 kalıyorsa d, 60 ve 84’ü böler; en büyük 12 ve 12>5 olduğundan geçerlidir. Aynı sayılarda kalan 12 olsaydı farklar 53 ve 77 olurdu; EBOB 1, fakat d>12 gerekir. Bu nedenle ikinci durumun çözümü yoktur. Sayılar değişmeden kalan değişince uygun bölenin varlığı da değişebilir.",
+        "65 ve 89, aynı d’ye bölündüğünde 5 kalıyorsa d, 60 ve 84’ü böler; en büyük 12 ve 12>5 olduğundan geçerlidir. İki şeritten de 5 cm artık bırakınca kullanılabilir uzunluklar 60 ve 84 cm olur. Kesim kaybı yoksa 12 cm boyunda, ilk şeritten 60÷12=5 ve ikinciden 84÷12=7 parça çıkar. Toplam 12 parça elde edilir. Aynı sayılarda kalan 12 olsaydı farklar 53 ve 77 olurdu; EBOB 1, fakat d>12 gerekir. Bu nedenle ikinci durumun çözümü yoktur. Sayılar değişmeden kalan değişince uygun bölenin varlığı da değişebilir.",
         "6’ya bölmede 1, 8’e bölmede 3 kalan için tek N−1 ortak kat modeli kurulmaz. İki koşulu ayrı yazarak 43=6×7+1=8×5+3 örneğini denetle. N−1=42, 8’in katı değildir; N−3=40 ise 8’in katıdır. İşlem kolay görünsün diye farklı kalanları aynılaştırma.",
-        "8’e bölmede 5, 12’ye bölmede 7 kalan verildiğinde de N−5, ikisinin ortak katı diye yazılmaz. N−5, 8’in katı; N−7, 12’nin katı olmalıdır. Aynı sayıyı farklı kalanlarla düzeltirken her bölüm eşitliğini ayrı korursun; tek ortak r varsayımı burada geçerli değildir."
+        "N’nin 8’e bölümünde kalan 5 olsaydı N−5, 8’in katı olurdu. 12’ye bölümünde kalan 7 olsaydı N−7, 12’nin katı olurdu. 8 ve 12’nin ikisi de 4’ün katı. İlk koşul N’nin 4’e bölümünde 1, ikinci koşul 3 kalmasını gerektirir. Aynı sayı 4’e bölündüğünde tek bir kalan verir. Bu iki koşula uyan N yoktur."
       ]
     },
     {
@@ -644,7 +644,7 @@ export const ebobEkokSource034Pack:Ebob034Pack = {
     {
       "code": "E17",
       "title": "Destek azaltılan toplamı tamamla",
-      "prompt": "a<b pozitif tam sayılar; EBOB(a, b)=6, EKOK(a, b)=180. En küçük a+b kaçtır?",
+      "prompt": "a<b pozitif tam sayılar ve EBOB(a, b)=6, EKOK(a, b)=180. En küçük a+b kaçtır? Çözümü açmadan a=6x, b=6y ve xy=30 ile başla. x<y ve EBOB(x,y)=1 koşullarını sağlayan çiftleri yaz. Geçerli toplamları 6 ile çarp ve bulduğun adayın EBOB ile EKOK’unu kontrol et.",
       "strategy": "Bütün çarpan çiftlerini ve aralarında asal olma koşulunu denetle.",
       "steps": [
         {
@@ -2333,14 +2333,14 @@ export const ebobEkokSource034Pack:Ebob034Pack = {
     {
       "title": "Aynı N, aynı kalan",
       "text": [
-        "N=dq+r, 0≤r<d. İki bölenle aynı r kalanı veriliyorsa N−r ortak kat, N=EKOK×k+r. 8 ve 12 bölenleri, r=5, N>100 için en küçük 101. 6 ve 8 bölenleri, r=1, N<200 için en büyük 193; komşu adayı da denetle. Farklı kalanlarda tek çıkarma geçmez."
+        "N=dq+r, 0≤r<d. İki bölenle aynı r kalanı veriliyorsa N−r ortak kat, N=EKOK×k+r. 8 ve 12 bölenleri, r=5, N>100 için en küçük 101. 6 ve 8 bölenleri, r=1, N<200 için en büyük 193; komşu adayı da denetle. Farklı kalanlarda tek çıkarma geçmez. Aynı 49 nesne altışarlı kutularda 8, sekizerli kutularda 6 kutu doldurur. 49=6×8+1=8×6+1. Her düzende bir nesne artar."
       ]
     },
     {
       "title": "Bilinmeyen bölen ve kalan sınırı",
       "text": [
         "Farklı sayılarda her sayıdan kendi kalanını çıkar; d farkların ortak böleni ve her kalandan büyük olmalı. 85 ve 133’te kalan 1 için 84 ve 132’nin EBOB’u 12. 87’de kalan 3 ve 134’te kalan 2 için yine 12. 77 ve 113’te kalan 5 için en büyük bölen 36.",
-        "Farkların EBOB’u kalan sınırını aşmıyorsa çözüm yok. 17 ve 25’te kalan 5 için EBOB(12,20)=4≤5. 65 ve 89’da kalan 5 için 12 uygun; kalan 12 için EBOB(53,77)=1 ve d>12 çelişir."
+        "Farkların EBOB’u kalan sınırını aşmıyorsa çözüm yok. 17 ve 25’te kalan 5 için EBOB(12,20)=4≤5. 65 ve 89 cm’lik iki şeritte 5’er cm artık bırakılırsa EBOB(60,84)=12 cm. Kesim kaybı olmadan 60÷12=5 ve 84÷12=7 parça çıkar. Boy 12 cm, toplam 12 parçadır. Kalan 12 olsaydı EBOB(53,77)=1 ve d>12 koşulu çelişirdi."
       ]
     },
     {
@@ -2359,8 +2359,8 @@ export const ebobEkokSource034Pack:Ebob034Pack = {
     {
       "title": "Karma prova ve koşul onarımı",
       "text": [
-        "d=6, m=180 için en küçük toplam 66; d=5, m=150 için 55; d=2, m=72 için 26. Aralarında asal çarpan çiftleri eksiksiz denetlenir. EKOK(72,90)=360. 28 ve 42 cm ipler 14 cm boyda 5 parça. 6 ve 10 dk döngülerinin [0,90) aralığındaki ortak anları 0,30,60: 3 olay.",
-        "40×56 kaplamada en büyük kenar 8→35 kare/ayrı iplerde 12 parça. Kenar özellikle 4 cm verilirse EBOB aranmaz; 140 kare. Model/koşul/birim/son kontrol ayrı tutulur."
+        "d=5, m=150 için en küçük toplam 55; d=2, m=72 için 26. Aralarında asal çarpan çiftleri eksiksiz denetlenir. EKOK(72,90)=360. 28 ve 42 cm ipler 14 cm boyda 5 parça. 6 ve 10 dk döngülerinin [0,90) aralığındaki ortak anları 0,30,60: 3 olay.",
+        "40×56 kaplamada en büyük kenar 8→35 kare/ayrı iplerde 12 parça. Kenar özellikle 4 cm verilirse EBOB aranmaz; 140 kare. Model/koşul/birim/son kontrol ayrı tutulur. 6 ve 180 ile yeni bir deneme yapmak için aşağıdaki Destek azaltılan toplamı tamamla örneğini çözümü açmadan dene."
       ]
     },
     {
@@ -2371,10 +2371,10 @@ export const ebobEkokSource034Pack:Ebob034Pack = {
       ]
     }
   ],
-  "source": "Aurelia TYT EBOB EKOK kopya kağıdı, 06.11.2026/içerik 1.0: 22 sayfalık kaynağın öğretim uyarlaması. Güncel kaynak sürümü 17.11.2026’da yeniden okunup karşılaştırıldı. Seçili 2021 TYT Temel Matematik 15: gerçek kitapçık PDF 30/basılı 28, anahtar 45, A=7; özgün açıklama. Kaynak: https://dokuman.osym.gov.tr/pdfdokuman/2021/YKS/TSK/tyt_yks_2021.pdf#page=30 ; anahtar: https://dokuman.osym.gov.tr/pdfdokuman/2021/YKS/TSK/tyt_yks_2021.pdf#page=45 . MEB OGM Dört Dörtlük TYT Matematik Bölünebilme çözümlü 19, sayfa 70 gerçek HTML metni/çözümü okundu; baskı yılı bilinmiyor. Kaynak: https://ogmmateryal.eba.gov.tr/panel/upload/etkilesimli/kitap/konu-pekistirme/tyt/matematik/files/basic-html/page70.html . Bu seçili kaynaklar bütün kitapçık, kitap, yirmi yıllık arşiv veya 2027 resmî kapsamının kapanışı değildir. Uygulama kartları özgün öğretim uyarlamalarıdır; resmî sınav sorusu diye sunulmaz."
+  "source": "Aurelia TYT EBOB EKOK kopya kağıdı, 19.11.2026, içerik 1.1. PDF’nin 22 sayfasından öğretim uyarlaması. Kaynağın 9. sayfasındaki 8’e göre 5 ve 12’ye göre 7 kalanlarını birlikte sağlayan sayı yoktur. Seçili 2021 TYT Temel Matematik 15: gerçek kitapçık PDF 30/basılı 28, anahtar 45, A=7; özgün açıklama. Kaynak: https://dokuman.osym.gov.tr/pdfdokuman/2021/YKS/TSK/tyt_yks_2021.pdf#page=30 ; anahtar: https://dokuman.osym.gov.tr/pdfdokuman/2021/YKS/TSK/tyt_yks_2021.pdf#page=45 . MEB OGM Dört Dörtlük TYT Matematik Bölünebilme çözümlü 19, sayfa 70 gerçek HTML metni/çözümü okundu; baskı yılı bilinmiyor. Kaynak: https://ogmmateryal.eba.gov.tr/panel/upload/etkilesimli/kitap/konu-pekistirme/tyt/matematik/files/basic-html/page70.html . Bu seçili kaynaklar bütün kitapçık, kitap, yirmi yıllık arşiv veya 2027 resmî kapsamının kapanışı değildir. Uygulama kartları özgün öğretim uyarlamalarıdır; resmî sınav sorusu diye sunulmaz."
 };
 const pack=ebobEkokSource034Pack;
 const objectives=["Bölen/kat yönünü, asal üsleri ve Öklid yöntemini gerekçelendir.","Kaplama, ip, zaman ve kalan problemlerini bütün koşullarıyla modelle.","EBOB/EKOK’tan sayı kur; yeni bağlamı ve hatalı ilk adımı denetle."];
 export const ebobEkokSource034Guides:LessonGuide[]=[{id:pack.id,minutes:pack.minutes,source:pack.source,objectives,sections:pack.sections,examples:pack.examples,recall:pack.recall}];
 export const ebobEkokSource034Lessons:Lesson[]=[{id:pack.id,title:txt(pack.title),subjectId:"tyt-matematik",minutes:pack.minutes,objectives:objectives.map(txt),source:txt(pack.source),tags:["kaynakli-anlatim","Öğretim uyarlaması sorular"],body:pack.sections.map((s)=>({title:txt(s.title),text:txt(s.paragraphs.join("\n\n"))})),questions:pack.items.map((item,index):Question=>{const order=item.options.map((_,i)=>(i+((2*index+1)%5))%5);return{id:`f034-${pack.id}-${index+1}`,prompt:txt(item.prompt),options:order.map((i)=>txt(item.options[i])),answer:order.indexOf(0),hint:txt(item.strategy),explanation:txt(item.steps.join(" ")+" Denetim: "+item.check),skill:pack.id,guidance:{knowledge:item.knowledge,strategy:item.strategy,steps:item.steps,optionReasons:order.map((i)=>item.optionReasons[i]),commonError:item.commonError,check:item.check}};})}];
-export const ebobEkokSource034Sheets:CheatSheet[]=[{topicId:`topic-${pack.id}`,lessonId:pack.id,title:pack.title,subjectId:"tyt-matematik",sections:pack.sheet,cautions:["En az/en büyük sözcükleri tek başına EBOB/EKOK seçtirmez; bölme yönünü yaz.","Kalan, her bölenin altında olmalı. EBOB dışarı çıkarıldıktan sonra kalan x,y çifti aralarında asal olmalı; x ve y’nin tek tek asal olması gerekmez.","Kaymış/bilinmeyen başlangıç, kesim kaybı ve karma küp boyları ayrı modellerdir."],examples:[pack.examples[1],pack.examples[11]].map((e)=>({title:e.title,prompt:e.prompt,steps:e.steps.map((s)=>s.explanation),answer:e.answer})),recall:pack.recall.slice(0,3),source:pack.source}];
+export const ebobEkokSource034Sheets:CheatSheet[]=[{topicId:`topic-${pack.id}`,lessonId:pack.id,title:pack.title,subjectId:"tyt-matematik",sections:pack.sheet,cautions:["En az/en büyük sözcükleri tek başına EBOB/EKOK seçtirmez; bölme yönünü yaz.","Kalan, her bölenin altında olmalı. EBOB dışarı çıkarıldıktan sonra kalan x,y çifti aralarında asal olmalı; x ve y’nin tek tek asal olması gerekmez.","Kaymış/bilinmeyen başlangıç, kesim kaybı ve karma küp boyları ayrı modellerdir."],examples:[pack.examples[1],pack.examples[11],pack.examples[16]].map((e)=>({title:e.title,prompt:e.prompt,steps:e.steps.map((s)=>s.explanation),answer:e.answer})),recall:pack.recall.slice(0,3),source:pack.source}];
