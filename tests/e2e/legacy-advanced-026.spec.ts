@@ -9,6 +9,7 @@ import { narrativeLesson } from "../../src/learning/narratives/types";
 import { foundation013QuestionsByLesson } from "../../src/learning/forge013FoundationQuestions";
 import type { AppState, Lesson, Question } from "../../src/domain/model";
 import type { QuestionGuidance } from "../../src/domain/questionHelpModel";
+import { practiceQuestionView } from "../../src/learning/practiceQuestionView";
 
 // Expected copy comes from the accepted production question sets. These tests
 // verify routing, staged rendering, scoring flags and durable UI state; they do
@@ -269,9 +270,21 @@ for (const { lesson, question, guidance } of cases) {
     const shownKnowledge = (
       await panels.first().locator("p").allTextContents()
     ).map((text) => text.replace(/\s+/g, " ").trim());
-    const allowedKnowledge = [question.hint.tr, ...guidance.knowledge].map(
-      (text) => text.replace(/\s+/g, " ").trim(),
-    );
+    const activeHint = practiceQuestionView({
+      id: question.id,
+      prompt: question.prompt.tr,
+      passage: question.passage?.tr,
+      options: question.options.map((option) => option.tr),
+      answer: question.answer,
+      explanation: question.explanation.tr,
+      hint: question.hint.tr,
+    }).hint;
+    const allowedKnowledge = [activeHint, ...guidance.knowledge]
+      .filter((text): text is string => text !== undefined)
+      .map((text) => typeset(text).replace(/\s+/g, " ").trim());
+    if (activeHint && activeHint !== question.hint.tr) {
+      expect(shownKnowledge).toContain(typeset(activeHint));
+    }
     expect(shownKnowledge.length).toBeGreaterThanOrEqual(
       guidance.knowledge.length,
     );
