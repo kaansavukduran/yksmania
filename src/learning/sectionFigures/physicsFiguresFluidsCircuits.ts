@@ -20,6 +20,7 @@ import {
 
 import { wireResistanceFigures } from "./wireResistance076Figures";
 import { ohmSlopeFigure } from "./mebiOhmFigures";
+import { mebiSolidPressureFigures } from "./mebiSolidPressureFigures";
 import { meterConnections, meterConnectionsTitle, meterResistanceOhms, meterSupplyVolts } from "../mebiOhmReadings";
 
 const rect = (x: number, y: number, w: number, h: number, tone: "a" | "b" | "c" | "muted" | "ink", fill = true): El =>
@@ -66,6 +67,7 @@ function battery(a: V, b: V, label: string): El[] {
 const meter = (c: V, letter: string, tone: "a" | "c"): El[] => [circle(c, 0.32, { tone, fill: "muted" }), txt(c, letter, "c", { small: true, bold: true, tone })];
 
 const basinc: Record<string, FigureDef> = {
+  ...mebiSolidPressureFigures,
   "Birim alana düşen etkiyi düşün": {
     caption:
       "Aynı 60 N yük: 0,03 m² tabanda 2000 Pa, 0,01 m² tabanda 6000 Pa basınç yapar. Kuvvet aynı, etkilendiği alan küçüldükçe basınç büyür.",

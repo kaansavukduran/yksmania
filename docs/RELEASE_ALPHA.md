@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.79.0 · Katı basıncı
+
+Yayın adayı. Üç tuğla düzeninde zeminin taşıdığı yükü ve temas alanını karşılaştır. Homojen prizmayı düşey ve yatay kes, basıncın hangi kesimde değiştiğini çizimden izle.
+
 # ÖSYM Mania 0.78.0 · Akımı ve gerilimi ölç
 
 Yayın adayı. Çizimde voltmetreyi ve ampermetreyi farklı kollara yerleştir, sonra dört ölçümden gerilim–akım eğimini oku. Ayrı Kopya Kağıdı aynı tabloyu ve çözümlü örneği gösterir.

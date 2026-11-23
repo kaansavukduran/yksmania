@@ -1,5 +1,6 @@
 import { txt, type Lesson } from "../domain/model";
 import type { GuideSection, LessonGuide, WorkedExample } from "./guides/types";
+import { brickPressureExample, brickPressureSection, uprightPrismSection } from "./mebiSolidPressure";
 
 type Q = [string, string[], string, string];
 type Pack = {
@@ -63,6 +64,8 @@ const pressure: Pack = {
       "Yatay zeminde duran ve yalnız ağırlık ile zemin kuvveti etkisindeki cismin zemine uyguladığı dik kuvvet mg’dir. Fakat yukarı çeken ip, dışarıdan bastırma veya ivme varsa F=mg kestirmesi otomatik geçmez. Durgun cisimde yukarı destek T varsa N+T=mg; zemine uygulanan ortalama basınç N/A olur. Hareket etmiyor olması bütün kuvvetlerin ağırlığa eşit olduğu anlamına gelmez.",
       "Bir blok yan çevrilince ağırlık aynı kalabilir, taban alanı değiştiği için basınç değişebilir. İki özdeş blok yan yana konunca yük ve temas alanı birlikte iki katına çıkarsa basınç sabit kalır. Aynı maddeden homojen dik prizma için P=ρgh özel sonucu, V=Ah ve yalnız kendi ağırlığı koşullarından türetilir. Her eğri veya basamaklı cismin en büyük yüksekliğini bu formüle yerleştirme.",
     ),
+    brickPressureSection,
+    uprightPrismSection,
     s(
       "Durgun sıvıda düşey derinliği ölç",
       "Homojen, durgun ve yaklaşık sıkıştırılamaz sıvıda yüzeyden h düşey derinlikte basınç artışı ρgh’dir. Yüzey basıncı P₀ ise mutlak basınç P=P₀+ρgh olur. Aynı bağlı sıvıda aynı yatay seviyedeki basınçlar eşittir; aynı derinlikte ayrı kapları karşılaştırırken yüzey basınçları ve sıvı yoğunlukları da aynı olmalıdır.",
@@ -177,6 +180,7 @@ const pressure: Pack = {
       "Atmosferden küçük olduğu için gaz kolunun daha yüksek olmasıyla uyumludur.",
       "Gaz çizimde solda diye otomatik artı seçilmez.",
     ),
+    brickPressureExample,
   ],
   recall: [
     {
