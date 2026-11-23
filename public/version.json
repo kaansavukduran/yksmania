@@ -1,8 +1,7 @@
 {
-  "version": "0.42.0",
+  "version": "0.43.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Üç geometri konusu genişledi. İç ve dış açıortayları aynı üçgende karşılaştır, iki üçgenin ortak kenarını değiştir ve özgün sorularla koşulları çevrimdışı dene.",
-    "en": "Three geometry lessons extend angle and side conditions with interactive bisectors, shared-side triangles and offline practice."
+    "tr": "Kuvvet–ivme grafiğini değiştir, kütleyi eğimden hesapla ve örneği Kopya Kağıdında bul. İlgili geometri ve fizik soruları çizimli ipucu ve adım adım çözümler içerir. Yeni profiller Mevcut tema ile açılır."
   }
 }

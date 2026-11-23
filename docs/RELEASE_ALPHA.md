@@ -1,3 +1,12 @@
+# YKSMania 0.43.0 · Soru görselleri
+
+Yayın adayı.
+
+- Kuvvet–ivme atölyesinde kütleyi değiştir. Grafikteki iki nokta ve eğim hesabı birlikte güncellenir.
+- Newton Kopya Kağıdı aynı kuralı iki ölçümün yer aldığı çözümlü örnekle açıklar.
+- Üç özgün geometri ve fizik kartında soru çizimi ile ipucu ve çözüm görselleri aynı soru sürümüne bağlıdır.
+- Yeni profiller Mevcut tema ile açılır. Görünüm sıfırlaması zamanlayıcı tercihini ve öğrenme kayıtlarını korur.
+
 # YKSMania 0.42.0 · Açı ve kenar koşulları
 
 Yayın adayı.
