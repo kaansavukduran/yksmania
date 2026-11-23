@@ -14,6 +14,7 @@ import { equalDepthQuestionFigures, equalDepthQuestionId } from "./hydrostaticQu
 import { pistonQuestionFigures, pistonQuestionId } from "./pascalQuestion081";
 import { bottomForceQuestionFigures, bottomForceQuestionId } from "./bottomForceQuestion082";
 import { manometerQuestionFigures, manometerQuestionId } from "./manometerQuestion084";
+import { barometerQuestionFigures, barometerQuestionId } from "./barometerQuestion086";
 import {
   inverseTranslationFigures,
   inverseTranslationQuestion,
@@ -267,6 +268,14 @@ const bindings = new Map<string, FigureBinding>([
     pageLabel: "Fiziksel 142. sayfa, basılı 140",
     itemLabel: "Açık uçlu su manometresi, özgün soru",
     figures: manometerQuestionFigures,
+  }],
+  [barometerQuestionId, {
+    stemRevision: "0c5601cee6731c",
+    helpRevision: "10cdb4b4196308",
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 139. sayfa, basılı 137",
+    itemLabel: "Barometrede düşey yükseklik, özgün soru",
+    figures: barometerQuestionFigures,
   }],
   [pistonQuestionId, {
     stemRevision: "122891ad73ac0c",

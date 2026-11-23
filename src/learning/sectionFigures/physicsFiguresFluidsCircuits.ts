@@ -27,6 +27,7 @@ import { mebiHydrostaticForceFigures } from "./mebiHydrostaticForceFigures";
 import { meterConnections, meterConnectionsTitle, meterResistanceOhms, meterSupplyVolts } from "../mebiOhmReadings";
 import { manometerReferenceTitle } from "../mebiManometerReadings";
 import { mebiManometerFigure } from "./mebiManometerFigures";
+import { mebiBarometerFigures } from "./mebiBarometerFigures";
 
 const rect = (x: number, y: number, w: number, h: number, tone: "a" | "b" | "c" | "muted" | "ink", fill = true): El =>
   poly([v(x, y), v(x + w, y), v(x + w, y + h), v(x, y + h)], { fill: fill ? (tone === "ink" ? "muted" : tone) : undefined, tone, thin: !fill });
@@ -72,6 +73,7 @@ function battery(a: V, b: V, label: string): El[] {
 const meter = (c: V, letter: string, tone: "a" | "c"): El[] => [circle(c, 0.32, { tone, fill: "muted" }), txt(c, letter, "c", { small: true, bold: true, tone })];
 
 const basinc: Record<string, FigureDef> = {
+  ...mebiBarometerFigures,
   [manometerReferenceTitle]: mebiManometerFigure,
   ...mebiSolidPressureFigures,
   ...mebiHydrostaticFillingFigures,
@@ -154,28 +156,6 @@ const basinc: Record<string, FigureDef> = {
       ],
       readout: ["20/0,01 = 2000 Pa = F₂/0,5 → F₂ = 1000 N", "A₁x₁ = A₂x₂: büyük piston 50 kat az yol alır"],
     }),
-  },
-  "Barometrede sütunun düşey yüksekliğine bak": {
-    caption:
-      "Cıvalı barometrede sütun eğilse de düşey yükseklik 76 cm kalır; boru boyunca sıvı uzunluğu artar ama ölçülen basıncı düşey h belirler.",
-    alt: "Cıva çanağına batırılmış iki boru: biri dik, biri eğik; ikisinde de cıva yüzeyi çanaktan 76 cm yukarıda, aynı yatay kesikli çizgide.",
-    draw: () => {
-      const h = 3.8;
-      const tilt = 0.55;
-      return {
-        els: [
-          rect(-0.5, 0, 7, 0.6, "c"),
-          rect(1, 0.3, 0.5, h, "c"),
-          poly([v(1, 0.3), v(1, 5), v(1.5, 5), v(1.5, 0.3)], { open: true }),
-          poly([v(4, 0.3), add(v(4, 0.3), mul(v(tilt, 1), h)), add(v(4.5, 0.3), mul(v(tilt, 1), h)), v(4.5, 0.3)], { fill: "c", tone: "c", thin: true }),
-          poly([v(4, 0.3), add(v(4, 0.3), mul(v(tilt, 1), 4.7)), add(v(4.5, 0.3), mul(v(tilt, 1), 4.7)), v(4.5, 0.3)], { open: true }),
-          seg(v(0, h + 0.3), v(7, h + 0.3), { dash: true, thin: true, tone: "a" }),
-          ...span(v(0.4, 0.6), v(0.4, h + 0.3), "76 cm", v(3, 2), "a"),
-          txt(v(6.6, 0.3), "cıva", "e", { small: true, tone: "c" }),
-        ],
-        readout: ["P₀ ≈ ρ_cıva·g·h (h düşey)"],
-      };
-    },
   },
   "Manometrede işareti sıvı dengesi belirler": {
     caption:

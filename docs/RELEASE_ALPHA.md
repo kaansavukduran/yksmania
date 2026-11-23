@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.86.0 · Barometrede düşey yükseklik ve eğim
+
+Yayın adayı. Atmosfer basıncını iki yükseklikte oku. Dik ve eğik tüpte sıvı yoğunluğunu değiştirip düşey yüksekliği karşılaştır.
+
 # ÖSYM Mania 0.85.0 · Açılışta daha az dosya isteği
 
 Yayın adayı. Uygulama ders dosyalarını daha az istekle indirir. Çevrimdışı dersler, şekiller ve notlar yeniden açılır.

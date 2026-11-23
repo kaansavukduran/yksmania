@@ -9,6 +9,7 @@ import { equalDepthSection, fillingGraphExample, fillingGraphSection } from "../
 import { pascalAddedPressureSection, sharedLevelExample, sharedLevelSection } from "../mebiPascalLayers";
 import { baseForceSection, surfaceForceExample, surfaceForceSection } from "../mebiHydrostaticForces";
 import { manometerReferenceExample, manometerReferenceSection } from "../mebiManometerReadings";
+import { atmosphereSection, barometerExample, barometerHeightTitle } from "../mebiBarometerReadings";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
@@ -384,11 +385,12 @@ export function studyGuide(lessonId: string) {
         if (section.title === "Durgun sıvıda düşey derinliği ölç") return [section, equalDepthSection, fillingGraphSection];
         if (section.title === "Katmanları ve taban kuvvetini ayrı hesapla") return [section, surfaceForceSection, baseForceSection];
         if (section.title === "Pascal basınç değişimini iletir, kuvveti eşitlemez") return [section, pascalAddedPressureSection, sharedLevelSection];
+        if (section.title === barometerHeightTitle) return [atmosphereSection, { ...section, figureTitle: barometerHeightTitle }];
         if (section.title === "Manometrede işareti sıvı dengesi belirler") return [section, manometerReferenceSection];
         return [section];
       }),
-      examples: [...guide.examples, brickPressureExample, fillingGraphExample, sharedLevelExample, surfaceForceExample, manometerReferenceExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 132–138, basılı 130–136. Tuğlalar, prizma kesiti, eş derinlik, dolum, piston ve yüzeye dik sıvı kuvvetleri bu sayfalarla karşılaştırıldı. Bileşik kapta görselin ve açıklama maddesinin gösterdiği 2h K katmanı kullanıldı. Bu modellerdeki sayısal ölçüler örnek değerlerdir. Manometredeki açık ve kapalı uç çizimleri fiziksel 142, basılı 140. sayfaya dayanır. 70 ve 75 cmHg değerleri kaynak örneğindendir.`,
+      examples: [...guide.examples, brickPressureExample, fillingGraphExample, sharedLevelExample, surfaceForceExample, barometerExample, manometerReferenceExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 132–138, basılı 130–136. Tuğlalar, prizma kesiti, eş derinlik, dolum, piston ve yüzeye dik sıvı kuvvetleri bu sayfalarla karşılaştırıldı. Bileşik kapta görselin ve açıklama maddesinin gösterdiği 2h K katmanı kullanıldı. Bu modellerdeki sayısal ölçüler örnek değerlerdir. Atmosfer ve barometre çizimleri fiziksel 139, basılı 137. sayfaya dayanır. 760 ve 650 mmHg kaynak değerleri, 60° eğim özgün örnek değeridir. Manometredeki açık ve kapalı uç çizimleri fiziksel 142, basılı 140. sayfaya dayanır. 70 ve 75 cmHg değerleri kaynak örneğindendir.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

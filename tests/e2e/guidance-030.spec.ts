@@ -90,6 +90,11 @@ const pressureFigureFixtures = new Map([
     description: /0,2 metre alçak.*100000 paskal/,
     revisions: { visibleFigureRevision: "0646752b5ec627", solutionFigureRevision: "028e50ab707f5f" },
   }],
+  ["basinc-q8", {
+    title: "İdeal sıvılı barometrenin ilk okuması",
+    description: /yaklaşık vakum.*düşey yüksekliği h/,
+    revisions: { visibleFigureRevision: "03c675ffd25ed9", solutionFigureRevision: "05231f7f95427d" },
+  }],
   ["basinc-q9", {
     title: "Düz tabana yayılan sıvı basıncı",
     description: /0,02 metrekare.*aşağı doğru aynı 3000 paskal/,
