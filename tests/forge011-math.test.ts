@@ -1,4 +1,6 @@
 import { describe, expect, it } from "vitest";
+import { beforeScientificGuide } from "./helpers/before-scientific-revision";
+import { beforeSource031Questions } from "./helpers/before-source031-math";
 import {
   ageShift,
   breakEvenModel,
@@ -23,7 +25,9 @@ it("joins the next five problem headings through native lesson-to-topic mappings
   expect(forge011MathLessons).toHaveLength(5);
   expect(forge011MathGuides).toHaveLength(5);
   for (const lesson of forge011MathLessons) {
-    const guide = forge011MathGuides.find((g) => g.id === lesson.id)!;
+    const currentGuide = forge011MathGuides.find((g) => g.id === lesson.id)!;
+    const guide = beforeScientificGuide(currentGuide);
+    const originalQuestions = beforeSource031Questions(lesson.questions);
     expect(guide).toBeDefined();
     expect(guide.sections.length).toBeGreaterThanOrEqual(8);
     expect(
@@ -40,10 +44,10 @@ it("joins the next five problem headings through native lesson-to-topic mappings
       ),
     ).toBe(true);
     expect(guide.recall.length).toBeGreaterThanOrEqual(4);
-    expect(lesson.body.length).toBe(guide.sections.length);
+    expect(lesson.body.length).toBe(currentGuide.sections.length);
     expect(lesson.tags).toContain(forge011MathTopics[lesson.id]);
-    expect(lesson.questions).toHaveLength(10);
-    for (const question of lesson.questions) {
+    expect(originalQuestions).toHaveLength(10);
+    for (const question of originalQuestions) {
       expect(question.options).toHaveLength(5);
       expect(new Set(question.options.map((o) => o.tr)).size).toBe(5);
       expect(question.explanation.tr.length).toBeGreaterThan(100);
@@ -52,12 +56,13 @@ it("joins the next five problem headings through native lesson-to-topic mappings
         /yukarıdaki|aşağıdaki|önceki sorudaki|seçtiğin modele göre/i,
       );
     }
-    expect(lesson.questions.map((q) => q.answer)).toEqual([
+    expect(originalQuestions.map((q) => q.answer)).toEqual([
       0, 1, 2, 3, 4, 0, 1, 2, 3, 4,
     ]);
   }
   const ids = forge011MathLessons.flatMap((l) => l.questions.map((q) => q.id));
-  expect(new Set(ids).size).toBe(50);
+  expect(ids).toHaveLength(54);
+  expect(new Set(ids).size).toBe(54);
 });
 
 it("independently checks the fifty declared answer choices, including context and boundary items", () => {
@@ -125,7 +130,7 @@ it("independently checks the fifty declared answer choices, including context an
   };
   for (const lesson of forge011MathLessons)
     expect(
-      lesson.questions.map((q) => q.options[q.answer].tr),
+      beforeSource031Questions(lesson.questions).map((q) => q.options[q.answer].tr),
       lesson.id,
     ).toEqual(expected[lesson.id]);
 });

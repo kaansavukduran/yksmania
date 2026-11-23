@@ -26,6 +26,11 @@ it("includes YKS and other exam families without treating partial booklets as a 
   expect(officialBooklets.find((file) => file.id === "2026-ales2")?.year).toBe(
     2026,
   );
-  for (const file of officialBooklets.filter((file) => file.year === 2026))
-    expect(file.coverage).toBe("%10");
+  expect(Object.fromEntries(officialBooklets.filter((file) => file.year === 2026)
+    .map(({ id, coverage }) => [id, coverage]))).toEqual({
+    "2026-ales2": "%10",
+    "2026-dgs": "%10",
+    "2026-kpss": "%10",
+    "2026-tyt": "seçili sorular doğrulandı",
+  });
 });

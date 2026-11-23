@@ -1,4 +1,4 @@
-import { beforeScientificQuestions } from "./helpers/before-scientific-revision";
+import { beforeScientificGuide, beforeScientificQuestions } from "./helpers/before-scientific-revision";
 import { describe, expect, it } from "vitest";
 import {
   absoluteMembership,
@@ -35,7 +35,8 @@ it("delivers five complete native guides and fifty independent original question
   expect(forge093MathGuides).toHaveLength(5);
   expect(forge093MathLessons).toHaveLength(5);
   for (const lesson of forge093MathLessons) {
-    const guide = forge093MathGuides.find((g) => g.id === lesson.id)!;
+    const currentGuide = forge093MathGuides.find((g) => g.id === lesson.id)!;
+    const guide = beforeScientificGuide(currentGuide);
     expect(guide.sections.length).toBeGreaterThanOrEqual(8);
     expect(
       guide.sections.every(
@@ -52,7 +53,7 @@ it("delivers five complete native guides and fifty independent original question
     expect(guide.recall.length).toBeGreaterThanOrEqual(4);
     const acceptedQuestions = beforeScientificQuestions(lesson.questions);
     expect(acceptedQuestions).toHaveLength(10);
-    expect(lesson.body).toHaveLength(guide.sections.length);
+    expect(lesson.body).toHaveLength(currentGuide.sections.length);
     acceptedQuestions.forEach((q) => {
       expect(q.options).toHaveLength(5);
       expect(new Set(q.options.map((o) => o.tr)).size).toBe(5);
@@ -67,8 +68,8 @@ it("delivers five complete native guides and fifty independent original question
     });
   }
   const ids = forge093MathLessons.flatMap((l) => l.questions.map((q) => q.id));
-  expect(ids).toHaveLength(57);
-  expect(new Set(ids).size).toBe(57);
+  expect(ids).toHaveLength(71);
+  expect(new Set(ids).size).toBe(71);
 });
 
 describe("absolute distance and boundary membership", () => {

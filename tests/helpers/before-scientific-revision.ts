@@ -1,6 +1,7 @@
 import { txt, type Lesson } from "../../src/domain/model";
 import type { CheatSheet } from "../../src/learning/cheatsheetContent";
 import type { LessonGuide } from "../../src/learning/guides/types";
+import { beforeSource031Questions, beforeSource031Teaching } from "./before-source031-math";
 
 const scientificId = "bilimsel-gosterim-katsayi";
 const originalSource =
@@ -32,10 +33,10 @@ const currentNormalization =
   "Çıkarmada da önce üsleri eşitle. Sonuç sıfırdan farklıysa katsayının mutlak değeri 1’den küçük veya 10’a eşit ya da büyük olduğunda yeniden normalleştir.";
 
 export const beforeScientificQuestions = <T extends { id: string }>(questions: readonly T[]) =>
-  questions.filter(({ id }) => !appendedQuestions.has(id));
+  beforeSource031Questions(questions).filter(({ id }) => !appendedQuestions.has(id));
 
 export function beforeScientificLesson(lesson: Lesson): Lesson {
-  if (lesson.id !== scientificId) return lesson;
+  if (lesson.id !== scientificId) return beforeSource031Teaching("lessons", lesson.id, lesson) as Lesson;
   return {
     ...lesson,
     source: txt(originalSource),
@@ -49,7 +50,7 @@ export function beforeScientificLesson(lesson: Lesson): Lesson {
 }
 
 export function beforeScientificGuide(guide: LessonGuide): LessonGuide {
-  if (guide.id !== scientificId) return guide;
+  if (guide.id !== scientificId) return beforeSource031Teaching("guides", guide.id, guide) as LessonGuide;
   return {
     ...guide,
     source: originalSource,
@@ -85,5 +86,5 @@ export function beforeScientificRevision(
       recall: sheet.recall.filter(({ prompt }) => prompt !== appendedRecall),
     };
   }
-  return value;
+  return beforeSource031Teaching(surface, id, value);
 }

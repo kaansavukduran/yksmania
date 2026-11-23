@@ -1,7 +1,7 @@
 {
-  "version": "0.30.0",
+  "version": "0.31.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Basit Eşitsizlikler’de aralık ve düzlem modelleriyle 10 yeni özgün soru var. Mutlak Değer’e ölçüm toleransı ve altı hata onarımı eklendi. Üslü Sayılar’da kesirli üs, yüzde azalma ve birim başına ölçekleme adımları gösteriliyor."
+    "tr": "Köklü Sayılar’da kök simgesini ve denklem çözümlerini aynı ölçekli sayı doğrularında karşılaştır. Oran Orantı’da bütünü bölerek iki oranı hesapla. Sayı Problemleri’nde farklı öğe sayısını ve toplam kullanımı denetle. Üç konuda 18 yeni özgün soru var."
   }
 }

@@ -1,5 +1,12 @@
 import { txt, type Lesson } from "../domain/model";
 import type { GuideSection, LessonGuide, WorkedExample } from "./guides/types";
+import {
+  numberProblemsSource017Examples,
+  numberProblemsSource017Practice,
+  numberProblemsSource017Recall,
+  numberProblemsSource017Sections,
+  numberProblemsSource017Summary,
+} from "./numberProblemsSource017Revision";
 
 type Problem = {
   prompt: string;
@@ -97,6 +104,7 @@ const numbers: Pack = {
       "Kişi, bilet ve sıra sayısı doğal sayıdır; uzunluk ve para verilen kapsamda negatif olamaz. Denklem x=−3 veya x=4,5 verirse cebir hatası olmayabilir: seçilen model ya da veriler bağlamla uyuşmuyor olabilir. Önce ifadeleri tekrar oku; çözümü zorlamak için soru metninde olmayan varsayımlar ekleme.",
       "Kontrolü dört parçada yap: birimler uyuyor mu, bütün parçalar toplamı koruyor mu, ağırlıklı toplam isteneni veriyor mu, tüm ayrıntılar sağlanıyor mu? İki bilgi birbiriyle çelişirse 'geçerli çözüm yok' sonucu anlamlıdır. Bir yöntemin adını hatırlamak yerine hangi toplamın ve hangi koşulun korunduğunu söylemek, aynı yapıyı yeni bir bağlamda tanımanı sağlar.",
     ),
+    ...numberProblemsSource017Sections,
   ],
   examples: [
     example(
@@ -176,6 +184,7 @@ const numbers: Pack = {
       "183≤200 fakat 201>200; sınırın uygun tarafındaki en büyük tam sayı 6'dır.",
       "6,94 sonucunu normal yuvarlayıp 7'yi bütçeye sığdırmak.",
     ),
+    ...numberProblemsSource017Examples,
   ],
   recall: [
     {
@@ -200,6 +209,7 @@ const numbers: Pack = {
       answer:
         "Sözel çeviri ve verilerin tutarlılığını; sıra sayısı doğal olmalı, kök bağlamda da bütün koşulları sağlamalıdır.",
     },
+    ...numberProblemsSource017Recall,
   ],
   questions: [
     problem(
@@ -278,8 +288,7 @@ const numbers: Pack = {
       "Tam 18 öğrencinin her birinde tam 2 kalem varsa toplam zorunlu olarak 36'dır; 37 koşuluyla aynı anda sağlanmaz. Bir kişinin 3 kalemi olduğunu varsaymak verilmiş 'her biri tam 2' koşulunu değiştirir; doğru teşhis tutarsızlıktır.",
     ),
   ],
-  source:
-    "MEBİ TYT Matematik Konu Özetleri, basılı s.47 (PDF 49); Aurelia 017 Sayı Problemleri, öğretim s.1–3 ve 5–6. Kaynak kapsamına göre yazılmış özgün anlatım, modeller ve alıştırmalar; resmî ÖSYM sorusu değildir.",
+  source: numberProblemsSource017Summary,
 };
 
 const fractions: Pack = {
@@ -1167,20 +1176,23 @@ export const forge011MathLessons: Lesson[] = packs.map((p) => ({
     title: txt(s.title),
     text: txt(s.paragraphs.join("\n\n")),
   })),
-  questions: p.questions.map((q, i) => {
-    const answer = i % 5;
-    const options = [...q.distractors];
-    options.splice(answer, 0, q.correct);
-    return {
-      id: `${p.id}-011-${i + 1}`,
-      prompt: txt(q.prompt),
-      options: options.map(txt),
-      answer,
-      hint: txt(q.hint),
-      explanation: txt(q.explanation),
-      skill: p.title,
-    };
-  }),
+  questions: [
+    ...p.questions.map((q, i) => {
+      const answer = i % 5;
+      const options = [...q.distractors];
+      options.splice(answer, 0, q.correct);
+      return {
+        id: `${p.id}-011-${i + 1}`,
+        prompt: txt(q.prompt),
+        options: options.map(txt),
+        answer,
+        hint: txt(q.hint),
+        explanation: txt(q.explanation),
+        skill: p.title,
+      };
+    }),
+    ...(p === numbers ? numberProblemsSource017Practice : []),
+  ],
   source: txt(p.source),
   tags: [p.topic, "Özgün öğretim soruları"],
 }));

@@ -1,0 +1,296 @@
+{
+  "koklu-sayilar": [
+    {
+      "id": "koklu-sayilar-093-1",
+      "prompt": "√49 ifadesinin esas gerçek değeri kaçtır?",
+      "correct": "7",
+      "selected": 0
+    },
+    {
+      "id": "koklu-sayilar-093-2",
+      "prompt": "x<2 için √((x−2)²) ifadesi hangisine eşittir? x gerçektir,√ esas kareköktür.",
+      "correct": "2−x",
+      "selected": 3
+    },
+    {
+      "id": "koklu-sayilar-093-3",
+      "prompt": "√72'nin en sade köklü biçimi hangisidir?",
+      "correct": "6√2",
+      "selected": 2
+    },
+    {
+      "id": "koklu-sayilar-093-4",
+      "prompt": "√12+√27 işleminin en sade sonucu hangisidir?",
+      "correct": "5√3",
+      "selected": 4
+    },
+    {
+      "id": "koklu-sayilar-093-5",
+      "prompt": "√(x−1)/√(5−x) ifadesinin gerçek sayılarda tanım kümesi hangisidir?",
+      "correct": "[1,5)",
+      "selected": 1
+    },
+    {
+      "id": "koklu-sayilar-093-6",
+      "prompt": "3/(√7−2) ifadesinin paydası rasyonelleştirilmiş eşdeğeri hangisidir?",
+      "correct": "√7+2",
+      "selected": 3
+    },
+    {
+      "id": "koklu-sayilar-093-7",
+      "prompt": "Gerçek x için √(2x+3)=x denkleminin çözüm kümesi hangisidir?",
+      "correct": "{3}",
+      "selected": 0
+    },
+    {
+      "id": "koklu-sayilar-093-8",
+      "prompt": "a=3√2 ve b=2√5 pozitif sayıları için hangi karşılaştırma doğrudur?",
+      "correct": "a<b",
+      "selected": 2
+    },
+    {
+      "id": "koklu-sayilar-093-9",
+      "prompt": "Alanı 72 birim² olan karenin çevresi kaç birimdir?",
+      "correct": "24√2",
+      "selected": 1
+    },
+    {
+      "id": "koklu-sayilar-093-10",
+      "prompt": "∛(−8)+√16 işleminin gerçek değeri kaçtır?",
+      "correct": "2",
+      "selected": 4
+    },
+    {
+      "id": "koklu-sayilar-015-benzer-kok",
+      "prompt": "√192−2√27 işleminin en sade sonucu nedir?",
+      "correct": "2√3",
+      "selected": 2
+    },
+    {
+      "id": "koklu-sayilar-015-tek-koklu-payda",
+      "prompt": "5/√6 ifadesinin paydası rasyonelleştirilirse hangisi elde edilir?",
+      "correct": "(5√6)/6",
+      "selected": 0
+    },
+    {
+      "id": "koklu-sayilar-015-pozitif-siralama",
+      "prompt": "a=3√5 ve b=2√11. Bu iki pozitif sayının sıralaması hangisidir?",
+      "correct": "a>b",
+      "selected": 4
+    },
+    {
+      "id": "koklu-sayilar-015-koklu-denklem",
+      "prompt": "√(x+11)=x−1 denkleminin gerçek çözüm kümesi hangisidir?",
+      "correct": "{5}",
+      "selected": 1
+    },
+    {
+      "id": "koklu-sayilar-015-alan-cevre",
+      "prompt": "Alanı 288 cm² olan bir karenin çevresi kaç santimetredir?",
+      "correct": "48√2",
+      "selected": 0
+    },
+    {
+      "id": "koklu-sayilar-015-kenarin-gosterimi",
+      "prompt": "Alanı 648 cm² olan bir karenin kenarı A√B cm biçiminde yazılıyor. A ve B doğal sayıdır. A=9 verildiğinde B ve A+B sırasıyla kaçtır?",
+      "correct": "8 ve 17",
+      "selected": 2
+    },
+    {
+      "id": "koklu-sayilar-015-isareti-degisen-denklem",
+      "prompt": "√(x+11)=x−1 denkleminin sağ tarafı x+1 ile değişiyor. Yeni √(x+11)=x+1 denkleminde başlangıç koşulu ve gerçek çözüm kümesi hangisidir?",
+      "correct": "x≥−1, {(−1+√41)/2}",
+      "selected": 3
+    },
+    {
+      "id": "koklu-sayilar-015-sahte-adayi-onar",
+      "prompt": "Bir öğrenci √(3x+28)=x denklemini kareleyip −4 ve 7’yi çözüm listesine yazıyor. Doğru onarım hangisidir?",
+      "correct": "Yalnız 7 kalır. −4 için sağ taraf negatiftir.",
+      "selected": 1
+    },
+    {
+      "id": "koklu-sayilar-015-sifir-eslenigi-onar",
+      "prompt": "Bir öğrenci “3/(5+√25) tanımsız, çünkü eşleniği sıfır” diyor. Hangisi doğru değerlendirmedir?",
+      "correct": "Değeri 3/10’dur, çünkü kök 5 ve asıl payda 10’dur.",
+      "selected": 3
+    }
+  ],
+  "oran-oranti": [
+    {
+      "id": "oran-oranti-093-1",
+      "prompt": "Bir kutuda 15 kırmızı ve 25 mavi boncuk vardır. Kırmızı boncuk sayısının bütün boncuk sayısına oranı kaçtır?",
+      "correct": "3/8",
+      "selected": 0
+    },
+    {
+      "id": "oran-oranti-093-2",
+      "prompt": "Pozitif A ve B miktarları için A:B=3:5 ve A+B=64 ise A kaçtır?",
+      "correct": "24",
+      "selected": 3
+    },
+    {
+      "id": "oran-oranti-093-3",
+      "prompt": "x/36=7/9 eşitliğini sağlayan gerçek x kaçtır?",
+      "correct": "28",
+      "selected": 2
+    },
+    {
+      "id": "oran-oranti-093-4",
+      "prompt": "Birim fiyatı sabit ve ek ücret yokken 4 defter 60 TL'dir. Aynı defterlerden 7 tane kaç TL'dir?",
+      "correct": "105",
+      "selected": 4
+    },
+    {
+      "id": "oran-oranti-093-5",
+      "prompt": "Aynı işi 6 eş verimli işçi 10 günde bitiriyor. Günlük saatler ve verim aynı kalırsa 15 işçi kaç günde bitirir?",
+      "correct": "4",
+      "selected": 1
+    },
+    {
+      "id": "oran-oranti-093-6",
+      "prompt": "x>0 için y=x+3 ilişkisi veriliyor. y ile x'in doğru orantılı olup olmadığına ilişkin hangi yorum doğrudur?",
+      "correct": "y/x=1+3/x sabit olmadığı için doğru orantılı değildir",
+      "selected": 3
+    },
+    {
+      "id": "oran-oranti-093-7",
+      "prompt": "Pozitif A,B,C miktarları için A:B=4:7 ve B:C=14:15. A:B:C oranı hangisidir?",
+      "correct": "8:14:15",
+      "selected": 0
+    },
+    {
+      "id": "oran-oranti-093-8",
+      "prompt": "216 jeton 3, 4 ve 6 sayılarıyla ters orantılı paylaştırılıyor. En küçük pay kaç jetondur?",
+      "correct": "48",
+      "selected": 2
+    },
+    {
+      "id": "oran-oranti-093-9",
+      "prompt": "1:25000 ölçekli haritada 7,2 cm olan uzunluk gerçekte kaç km'dir? 1 km=100000 cm.",
+      "correct": "1,8",
+      "selected": 1
+    },
+    {
+      "id": "oran-oranti-093-10",
+      "prompt": "y pozitif x'in karesiyle doğru orantılıdır. x=2 iken y=12. x=3 iken y kaçtır?",
+      "correct": "27",
+      "selected": 4
+    },
+    {
+      "id": "oran-oranti-016-karisim-butunu",
+      "prompt": "Bir içecekte elma suyu ile suyun hacim oranı 3:7’dir. Toplam içecek 40 L ise elma suyu miktarı ve karışım içindeki yüzdesi sırasıyla nedir?",
+      "correct": "12 L ve %30",
+      "selected": 3
+    },
+    {
+      "id": "oran-oranti-016-esit-gecisler",
+      "prompt": "Pozitif bir sayı dizisinde her terim, önceki terimin aynı pozitif katsayıyla çarpımıdır. 3. terim 45, 6. terim 1215 ise 1. terim kaçtır?",
+      "correct": "5",
+      "selected": 1
+    },
+    {
+      "id": "oran-oranti-016-iki-kat-is",
+      "prompt": "10 özdeş makine bir işi 12 saatte bitiriyor. İkinci işte 15 özdeş makine, ilk işin iki katı miktarda iş yapacak. Makinelerin saatlik kapasiteleri aynı ve sabit. İkinci iş kaç saat sürer?",
+      "correct": "16",
+      "selected": 0
+    },
+    {
+      "id": "oran-oranti-016-fark-ve-oran-onar",
+      "prompt": "Bir öğrenci C:D=5:9 gördüğünde C=5 ve D=9 sonucuna varıyor. C ve D pozitif, D−C=28 ise öğrencinin modelini düzelten ve C, D değerlerini sırayla veren seçenek hangisidir?",
+      "correct": "C=35, D=63",
+      "selected": 4
+    },
+    {
+      "id": "oran-oranti-016-kisi-saat-ve-gun",
+      "prompt": "5 eş verimli kişi, günde 4 saat çalışarak 3 günde 180 parça üretiyor. Aynı sabit verimle çalışan 6 kişi, günde 5 saat çalışırsa 210 parçayı ne zaman tamamlar?",
+      "correct": "Üçüncü gün 1 saat 40 dakika çalışınca",
+      "selected": 2
+    }
+  ],
+  "sayi-problemleri": [
+    {
+      "id": "sayi-problemleri-011-1",
+      "prompt": "Bir sayının 4 katının 9 fazlası 61'dir. Sayı kaçtır?",
+      "correct": "13",
+      "selected": 0
+    },
+    {
+      "id": "sayi-problemleri-011-2",
+      "prompt": "Bir sayının 6 eksiğinin 3 katı 42'dir. Sayı kaçtır?",
+      "correct": "20",
+      "selected": 1
+    },
+    {
+      "id": "sayi-problemleri-011-3",
+      "prompt": "Ardışık üç tek sayının toplamı 93'tür. Bu sayıların en büyüğü kaçtır?",
+      "correct": "33",
+      "selected": 2
+    },
+    {
+      "id": "sayi-problemleri-011-4",
+      "prompt": "Bir sınıfta ikişerli oturulduğunda 2 kişi ayakta; üçerli oturulduğunda 4 sıra tamamen boş, diğer sıralar tam doludur. Toplam kaç öğrenci vardır?",
+      "correct": "30",
+      "selected": 3
+    },
+    {
+      "id": "sayi-problemleri-011-5",
+      "prompt": "Bir otoparkta yalnız 2 tekerlekli bisikletler ve 4 tekerlekli otomobiller vardır. Toplam 16 araç ve 52 tekerlek olduğuna göre otomobil sayısı kaçtır?",
+      "correct": "10",
+      "selected": 4
+    },
+    {
+      "id": "sayi-problemleri-011-6",
+      "prompt": "Yetişkin bileti 100 TL, öğrenci bileti 60 TL olan bir etkinlikte toplam 15 biletle 1180 TL gelir elde edilmiştir. Kaç öğrenci bileti satılmıştır?",
+      "correct": "8",
+      "selected": 0
+    },
+    {
+      "id": "sayi-problemleri-011-7",
+      "prompt": "Aynı rafı 14 küçük ve 6 büyük kutu veya 8 küçük ve 8 büyük kutu tam dolduruyor. Aynı tür kutular özdeştir; boşluk farkı yoktur. Raf yalnız küçük kutularla doldurulursa kaç kutu alır?",
+      "correct": "32",
+      "selected": 1
+    },
+    {
+      "id": "sayi-problemleri-011-8",
+      "prompt": "Bir ürün 17 TL'dir. Başka ücret yoktur. 150 TL ile en çok kaç tane alınabilir?",
+      "correct": "8",
+      "selected": 2
+    },
+    {
+      "id": "sayi-problemleri-011-9",
+      "prompt": "Doğal sayı x, 'üç katı 20'den büyüktür' koşulunu sağlıyor. x'in alabileceği en küçük değer kaçtır?",
+      "correct": "7",
+      "selected": 3
+    },
+    {
+      "id": "sayi-problemleri-011-10",
+      "prompt": "Bir sınıfta 18 öğrenci olduğu ve her öğrencinin tam 2 kalemi bulunduğu söyleniyor. Aynı sınıfın toplam kalem sayısının 37 olduğu da belirtiliyor. Bu üç bilgi birlikte nasıl değerlendirilir?",
+      "correct": "Bilgiler birbiriyle çelişir.",
+      "selected": 4
+    },
+    {
+      "id": "sayi-problemleri-017-kismi-ve-bos-sira",
+      "prompt": "Bir sınıfta sıralar dörderli dolunca 3 öğrenci ayakta kalıyor. Beşerli düzende 2 sıra tamamen boş, bir sırada 2 öğrenci, öteki sıralar tam doludur. Sıra ve öğrenci sayısı sırasıyla kaçtır?",
+      "correct": "16 sıra, 67 öğrenci",
+      "selected": 1
+    },
+    {
+      "id": "sayi-problemleri-017-kalan-ve-baslangic",
+      "prompt": "İki depoda, her deponun başlangıç suyunun 1/4’ü kullanılıyor. Sonra ilk depoda kalanın 1/5’i, ikinci depoda kendi başlangıcının 1/5’i kullanılıyor. Her depoda 66 L kalıyor. Başlangıç miktarları ilk ve ikinci depo sırasıyla kaç litredir?",
+      "correct": "110 ve 120",
+      "selected": 4
+    },
+    {
+      "id": "sayi-problemleri-017-iki-sayimla-kullanilmayan",
+      "prompt": "Bir oyunda pul grubunun 1/4’ü bir kez okutuluyor. Geriye kalanların 1/3’ü iki kez, daha önce okutulmamış bazı pullar da üç kez okutuluyor. 45 farklı pul için toplam 75 okutma yapılıyor. Kaç pul hiç okutulmadı?",
+      "correct": "35",
+      "selected": 2
+    },
+    {
+      "id": "sayi-problemleri-017-celisen-kullanim-onar",
+      "prompt": "60 kartın 1/4’ü bir kez, geriye kalanların 1/3’ü iki kez, daha önce kullanılmayan bazı kartlar da üç kez kullanılıyor. Bir rapor 34 farklı kart ve 56 kullanım yazıyor. Bu rapor hakkında hangi sonuç doğrudur?",
+      "correct": "Veriler çelişir. 34 farklı kartın toplam kullanımı 57 olmalıdır.",
+      "selected": 0
+    }
+  ]
+}

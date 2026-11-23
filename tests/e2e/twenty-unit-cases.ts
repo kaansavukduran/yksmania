@@ -24,6 +24,7 @@ const titles: Record<string, string> = {
   "koklu-sayilar": "Köklü sayılar: esas değer, alan ve güvenli dönüşüm",
   "oran-oranti": "Oran orantı: sabit olanı bul, modeli doğrula",
 };
+const proportionGraph = "svg[aria-label]";
 function unit(
   id: string,
   exploration: string,
@@ -41,7 +42,9 @@ function unit(
         ? ".turkish-structure"
         : id === "sifatlar" || id === "zamirler"
           ? ".turkish-live-sentence"
-          : "svg",
+          : id === "oran-oranti"
+            ? proportionGraph
+            : "svg",
     exploration,
     questionCount,
     interact,
@@ -493,6 +496,7 @@ export const units: LessonCase[] = [
         "Tahminin bu modelde doğru.",
       );
     },
+    19,
   ),
   unit(
     "oran-oranti",
@@ -521,7 +525,7 @@ export const units: LessonCase[] = [
       await expect(lab.locator("[data-model-result]")).toContainText(
         "Sabit fark y−6x=3",
       );
-      const separatedLabels = await lab.locator("svg").evaluate((svg) => {
+      const separatedLabels = await lab.locator(proportionGraph).evaluate((svg) => {
         const labels = [...svg.querySelectorAll<SVGTextElement>("text")];
         const tick = labels
           .find((label) => label.textContent?.trim() === "12")!
@@ -536,6 +540,7 @@ export const units: LessonCase[] = [
         "Tahminin bu modelde doğru.",
       );
     },
+    15,
   ),
 
   unit(

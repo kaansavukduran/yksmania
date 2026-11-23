@@ -6,13 +6,14 @@ const addedIds = new Set(
 );
 const newReferenceId = "2024-TYT-MAT-17";
 const movedReferenceId = "2024-TYT-MAT-3";
+const laterReferences = new Set([newReferenceId, "2023-TYT-MAT-4", "2026-TYT-MAT-2", "2026-TYT-MAT-18"]);
 
 export function beforeCurrentQuestionAdditions<T extends { id: string }>(questions: readonly T[]) {
   return beforeScientificQuestions(questions).filter(({ id }) => !addedIds.has(id));
 }
 
 export function beforeSource010References(references: readonly PastExamReference[]) {
-  return references.filter(({ id }) => id !== newReferenceId).map((reference) => (
+  return references.filter(({ id }) => !laterReferences.has(id)).map((reference) => (
     reference.id === movedReferenceId && reference.topicIds.length === 1 && reference.topicIds[0] === "detail-206"
       ? { ...reference, topicIds: ["topic-tyt-mat-dogrusal-denklemler-kaynak-036"] }
       : reference
@@ -20,5 +21,5 @@ export function beforeSource010References(references: readonly PastExamReference
 }
 
 export function beforeSource010Cases<T>(cases: Record<string, T>) {
-  return Object.entries(cases).filter(([id]) => id !== newReferenceId);
+  return Object.entries(cases).filter(([id]) => !laterReferences.has(id));
 }

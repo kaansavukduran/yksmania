@@ -5,6 +5,20 @@ import {
   scientificNotationPractice,
   scientificNotationSections,
 } from "./scientificNotation014";
+import {
+  ratioSource016Examples,
+  ratioSource016Practice,
+  ratioSource016Recall,
+  ratioSource016Sections,
+  ratioSource016Summary,
+} from "./ratioSource016Revision";
+import {
+  radicalsSource015Examples,
+  radicalsSource015Practice,
+  radicalsSource015Recall,
+  radicalsSource015Sections,
+  radicalsSource015Summary,
+} from "./radicalsSource015Revision";
 
 type RawQuestion = [string, string[], number, string, string, string];
 type Pack = {
@@ -851,6 +865,7 @@ const roots: Pack = {
       "m,n≥0 için(√m+√n)²=m+n+2√(mn). Bu nedenle √(a+2√b) yapısında m+n=a ve mn=b sağlayan sayılar aranabilir; dış kök esas değeri seçer. √(7+4√3) için m=4,n=3 uygundur ve sonuç 2+√3'tür. Yapıyı iki ayrı köke dağıtmak yerine özdeşliği tersten kullanmış oluruz.",
       "Eksi durumda √(a−2√b)=|√m−√n|'dir; m≥n seçilirse mutlak değer √m−√n olur. Kök içinin gerçek ve negatif olmayan kaldığını kontrol et. Böyle bir eşleşme her verilen a,b için basit tam sayılarla bulunmayabilir; bulunamaması sayı tanımsızdır demek değildir. Yöntem seçiminde önce sorunun gerçekten bu özdeşlik yapısında olup olmadığına bak.",
     ),
+    ...radicalsSource015Sections,
   ],
   examples: [
     worked(
@@ -930,6 +945,7 @@ const roots: Pack = {
       "x=3 her iki kökü ve bölümü tanımlı yapar.",
       "Paydadaki kök için yalnız ≥0 koşulu kullanmak.",
     ),
+    ...radicalsSource015Examples,
   ],
   recall: [
     {
@@ -955,6 +971,7 @@ const roots: Pack = {
       answer:
         "m+n=a,mn=b,m,n≥0 ise sonuç |√m−√n| olur; m≥n seçmeden mutlak değeri silme.",
     },
+    ...radicalsSource015Recall,
   ],
   questions: [
     [
@@ -1038,8 +1055,7 @@ const roots: Pack = {
       "Her negatif kök içini tanımsız saymak, tek ve çift kök ayrımını kaybettirir.",
     ],
   ],
-  source:
-    "MEBİ TYT Matematik Konu Özeti, basılı s. 42–44 (PDF 44–46); Aurelia 015 Köklü Sayılar, PDF s. 1–3. Esas kök/denklem kökü ve negatif taban koşulları ayrılarak yazılmış özgün anlatım, model ve sorular; resmî soru aktarımı değildir.",
+  source: radicalsSource015Summary,
 };
 
 const ratio: Pack = {
@@ -1098,6 +1114,7 @@ const ratio: Pack = {
       "Bir nicelik x ile doğru, z ile ters orantılıysa y=kx/z yazılabilir; z≠0 ve koşullar tanımlı olmalıdır. Önce bir değişkeni sabit tutarak yönü incele, sonra sabiti verilen bir durumdan bul. Örneğin üretim miktarı aynı verimli kişi sayısı ve süreyle birlikte artabilir; hangi değişkenin sabit olduğu söylenmeden tek bir oran kurmak eksik olur.",
       "Çözüm yolu: sorulan oranı sırayla yaz, birimleri eşitle, sabit bölümü veya çarpımı belirle, ortak katsayıyı bul, yeni durumu hesapla, başlangıç verisiyle kontrol et. Değişen bir sabit ücret veya verim varsa bunu modelin dışında bırakma. Atölyedeki nokta ve tablolar, koşulları değiştirmenin neden aynı orantı sabitini korumadığını görünür kılar.",
     ),
+    ...ratioSource016Sections,
   ],
   examples: [
     worked(
@@ -1180,6 +1197,7 @@ const ratio: Pack = {
       "Ölçek uzunluk oranıdır; burada alan çarpanı kullanılmaz.",
       "180000 sonucunu birim değiştirmeden km diye etiketlemek.",
     ),
+    ...ratioSource016Examples,
   ],
   recall: [
     {
@@ -1207,6 +1225,7 @@ const ratio: Pack = {
       answer:
         "Alan 9, hacim 27 kat. İlgili sabitler alanda A/x², hacimde V/x³ biçimindedir.",
     },
+    ...ratioSource016Recall,
   ],
   questions: [
     [
@@ -1296,8 +1315,7 @@ const ratio: Pack = {
       "x'i3/2 ile çarparken y'yi de 3/2 ile çarpmak, kareyle orantıyı x ile orantı sanmaktır.",
     ],
   ],
-  source:
-    "MEBİ TYT Matematik Konu Özeti, basılı s. 45–46 (PDF 47–48); Aurelia 016 Oran Orantı, PDF s. 1–3. Verim, iş, ücret ve birim koşulları açık tutulan özgün anlatım ve sorular; resmî soru aktarımı değildir.",
+  source: ratioSource016Summary,
 };
 
 const packs: Pack[] = [absolute, exponents, scientific, roots, ratio];
@@ -1339,6 +1357,8 @@ export const forge093MathLessons: Lesson[] = packs.map((p) => ({
       }),
     ),
     ...(p === scientific ? scientificNotationPractice : []),
+    ...(p === ratio ? ratioSource016Practice : []),
+    ...(p === roots ? radicalsSource015Practice : []),
   ],
   source: txt(p.source),
   tags: [p.topic, "Özgün öğretim soruları"],

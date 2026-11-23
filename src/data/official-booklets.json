@@ -64,5 +64,27 @@
     "coverage": "seçili sorular doğrulandı",
     "sha256": "5b517eba3f596ed1e9d2073e84023696c40a1f6a2347d7db0aa8c20ece63b64e",
     "checkedAt": "2026-11-17"
+  },
+  {
+    "id": "2023-tyt",
+    "title": "2023 TYT",
+    "exam": "TYT",
+    "year": 2023,
+    "url": "https://dokuman.osym.gov.tr/pdfdokuman/2023/YKS/TSK/yks_tyt_2023_kitapcik_T23ky.pdf",
+    "pages": 42,
+    "coverage": "seçili sorular doğrulandı",
+    "sha256": "0dc9541d881211c8fa0b27524a061b37e61838c13d3f7bf4feceee549e45d1ff",
+    "checkedAt": "2026-11-23"
+  },
+  {
+    "id": "2026-tyt",
+    "title": "2026 TYT",
+    "exam": "TYT",
+    "year": 2026,
+    "url": "https://dokuman.osym.gov.tr/pdfdokuman/2026/yks/tsk/yks_tyt_2026_kitapcik_d350.pdf",
+    "pages": 45,
+    "coverage": "seçili sorular doğrulandı",
+    "sha256": "5216b6fa034f6a50258670527f78f636b1d783b0b8530aee23bf7f7384594347",
+    "checkedAt": "2026-11-23"
   }
 ]

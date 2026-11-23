@@ -13,6 +13,7 @@ import {
   type V,
 } from "./figureKit";
 import { axes } from "./geometryFiguresArea";
+import { radicalsSource015SquareFigure } from "./radicalsSource015SquareFigure";
 
 const graph = (f: (x: number) => number, x0: number, x1: number, tone: "a" | "b" | "c" = "b", dash = false): El =>
   poly(
@@ -26,6 +27,7 @@ const rect = (x: number, y: number, w: number, h: number, tone: "a" | "b" | "c" 
   poly([v(x, y), v(x + w, y), v(x + w, y + h), v(x, y + h)], { fill: tone, tone, thin });
 
 const kokluSayilar: Record<string, FigureDef> = {
+  "Sıralama, eşlenik, denklem ve alan": radicalsSource015SquareFigure,
   "Karekök bir değer, denklem iki çözüm verebilir": {
     caption:
       "a'yı değiştir: y = x² eğrisini y = a doğrusu a > 0 iken iki noktada keser, bunlar x = ±√a'dır. Kök işareti bu iki çözümden yalnız negatif olmayanı (turuncu) seçer.",

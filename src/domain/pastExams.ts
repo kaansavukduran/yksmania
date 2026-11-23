@@ -263,6 +263,59 @@ export const pastExamReferences: PastExamReference[] = [
       "Büyütme oranının birimi yoktur. Sonuç 2 mm ve resmî anahtar D’dir.",
     ],
   },
+  {
+    id: "2023-TYT-MAT-4",
+    bookletId: "2023-tyt",
+    test: "Temel Matematik",
+    question: 4,
+    page: 24,
+    answerPage: 42,
+    answer: "D",
+    topicIds: ["detail-208"],
+    title: "Kare alanından olası köklü kenar yazımlarını bulma",
+    connection: "Kenar uzunluğu A√B biçimindeyse alan A²B’dir. Doğal sayı olan A ve B, aynı uzunluğu birden çok biçimde yazabilir.",
+    solution: [
+      "720 pozitif olduğundan A ve B pozitiftir. A²B=720 ve 720=2⁴·3²·5. 720’nin asal çarpan üslerini ikiye bölüp tam kısmını al. Böylece A, 2’yi en çok iki, 3’ü en çok bir kez içerebilir. 5, A’da yer alamaz.",
+      "A değerleri 1, 2, 3, 4, 6 ve 12. Her biri için B=720/A² hesaplanınca A+B toplamları sırasıyla 721, 182, 83, 49, 26 ve 17 olur.",
+      "127 bu listede yer almaz. Kitapçıkta D olarak verilen bu sonuç, fiziksel PDF sayfası 42’deki resmî anahtarla eşleşir. Soru fiziksel PDF sayfası 24, basılı sayfa 22’dedir.",
+    ],
+  },
+  {
+    id: "2026-TYT-MAT-2",
+    bookletId: "2026-tyt",
+    test: "Temel Matematik",
+    question: 2,
+    page: 25,
+    answerPage: 45,
+    answer: "B",
+    topicIds: ["detail-209"],
+    title: "Ardışık eşit oranlarda ileri ve geri adım",
+    connection:
+      "İki bilinen değerin oranı iki geçişi kapsıyorsa önce tek geçiş katsayısını bul, sonra istenen nesle geri dön.",
+    solution: [
+      "Ardışık işlemci nesillerinin işlem sayıları aynı pozitif r katsayısıyla değişir. İkinci neslin değeri 10⁸, dördüncü neslin değeri 4·10¹² işlem/s. İkiden dörde iki geçiş olduğundan r²=(4·10¹²)/10⁸=40.000 ve r=200.",
+      "İlk nesilden ikinciye bir geçiş vardır. İlk neslin işlem sayısı 10⁸/200=5·10⁵ işlem/s’dir. Kontrol için sırayla 200 ile çarpınca 10⁸, 2·10¹⁰ ve 4·10¹² elde edilir.",
+      "Bu sonuç resmî B anahtarıyla eşleşir. Temel Matematik 2, fiziksel PDF sayfası 25 (basılı 23), cevap anahtarı fiziksel PDF sayfası 45’tedir.",
+    ],
+  },
+  {
+    id: "2026-TYT-MAT-18",
+    bookletId: "2026-tyt",
+    test: "Temel Matematik",
+    question: 18,
+    page: 30,
+    answerPage: 45,
+    answer: "C",
+    topicIds: ["detail-210"],
+    title: "Farklı tuşlarla toplam basışları ayrı sayma",
+    connection:
+      "Farklı tuş sayısı her grubu bir kez sayar. Toplam basış sayısı her grubu kullanım sıklığıyla çarpar.",
+    solution: [
+      "Toplam tuş N, üç kez kullanılan tuşların adedi t olsun. Bir kez kullanılan N/3 tuş, iki kez kullanılan ise geriye kalan 2N/3’ün altıda biri N/9 tuştur.",
+      "Farklı tuş sayısı 4N/9+t=37 ve toplam basış 5N/9+3t=69. İlk denklemin üç katından ikincisini çıkarınca 7N/9=42 olur. Buradan N=54.",
+      "Bir kez basılan 18, iki kez basılan 6, üç kez basılan 13 tuş vardır. Bunlar 37 farklı tuş ve 18+12+39=69 basış verir. Hiç basılmayan 54−37=17 tuş, C anahtarıyla eşleşir.",
+    ],
+  },
 ];
 // Selected companion links leave all earlier source records and their topic lists intact.
 const sourceCompanionReferences: Record<string, readonly string[]> = {

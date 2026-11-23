@@ -1,3 +1,11 @@
+# YKSMania 0.31.0 · Köklü Sayılar, Oran Orantı ve Sayı Problemleri
+
+Yayın adayı. Köklü Sayılar’da aynı sayı doğrusu ölçeğinde esas kökü ve denklem çözümlerini inceleyebilirsin. Oran Orantı’da iki parçayı değiştirip altın bölmenin iki oranını karşılaştırabilirsin. Sayı Problemleri’nde farklı öğe sayısı ve toplam kullanım için aynı veriyi iki biçimde sayabilirsin.
+
+Konu anlatımı ve Kopya Kağıtları genişledi. Üç konuya 18 yeni özgün soru eklendi. Açık eski 10 soruluk çalışmalar kendi uzunluklarıyla devam eder. [İlerleme tablosu](ILERLEME.md)
+
+---
+
 # YKSMania 0.30.0 · Eşitsizlikler, mutlak değer ve üsler
 
 Yayın adayı. Basit Eşitsizlikler’de aralıkların açık ve kapalı uçlarını, düzlemde üç sınırın ortak alanını ve izinli tam sayı noktalarını değiştirerek inceleyebilirsin. 45 eski soru korunur ve 10 yeni özgün soru eklenir.

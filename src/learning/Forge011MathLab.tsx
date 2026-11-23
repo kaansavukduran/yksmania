@@ -8,6 +8,7 @@ import {
   successivePercent,
 } from "./forge011Math";
 import { useExploration } from "./useExploration";
+import { WeightedUseSource017Lab } from "./WeightedUseSource017Lab";
 import "./forge011Math.css";
 import { ChoiceSelect } from "../components/ChoiceSelect";
 
@@ -931,7 +932,10 @@ export default function Forge011MathLab({ id }: { id: string }) {
   return (
     <section className="forge011-math-lab" data-forge011={id}>
       {id === "sayi-problemleri" ? (
-        <Seating />
+        <>
+          <Seating />
+          <WeightedUseSource017Lab />
+        </>
       ) : id === "kesir-problemleri" ? (
         <Fraction />
       ) : id === "yas-problemleri" ? (

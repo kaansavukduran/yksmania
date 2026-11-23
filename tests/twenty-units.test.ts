@@ -1,4 +1,4 @@
-import { beforeScientificQuestions } from "./helpers/before-scientific-revision";
+import { beforeScientificGuide, beforeScientificQuestions } from "./helpers/before-scientific-revision";
 import { expect, it } from "vitest";
 import previousQuestions from "./fixtures/0.9.2-questions.json";
 import { publishedQuestion } from "./helpers/publishedQuestion";
@@ -60,7 +60,7 @@ it("teaches all twenty next workbook headings through distinct lessons, full gui
       expect(new Set(q.options.map((o) => o.tr)).size).toBe(5);
       expect(q.explanation.tr.length, q.id).toBeGreaterThan(70);
     }
-    const guide = lessonGuides.get(lesson.id)!;
+    const guide = beforeScientificGuide(lessonGuides.get(lesson.id)!);
     expect(guide, topic.title).toBeDefined();
     expect(guide.sections.length).toBeGreaterThanOrEqual(8);
     expect(guide.sections.every((s) => s.paragraphs.length >= 2)).toBe(true);

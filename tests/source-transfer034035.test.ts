@@ -85,13 +85,13 @@ it("preserves every accepted 033 lesson, guide, summary, question value and thei
 
 it("adds exactly two rich source companions and 94 fully guided self-contained cards", () => {
   expect(lessons).toHaveLength(540);
-  expect(lessons.flatMap((l) => l.questions)).toHaveLength(6492);
+  expect(lessons.flatMap((l) => l.questions)).toHaveLength(6510);
   expect(lessonGuides.size).toBe(505);
   expect(builtInCheatSheets.size).toBe(505);
   expect(studyTopics).toHaveLength(505);
   expect(
     new Set(lessons.flatMap((l) => l.questions).map((q) => q.id)).size,
-  ).toBe(6492);
+  ).toBe(6510);
   for (const pack of packs) {
     const lesson = lessonById(pack.id)!;
     const guide = lessonGuides.get(pack.id)!;
@@ -153,7 +153,7 @@ for (const pack of packs)
   });
 
 it("links only the independently checked official item for each source companion", () => {
-  expect(pastExamReferences).toHaveLength(14);
+  expect(pastExamReferences).toHaveLength(17);
   expect(
     pastExamReferencesForTopic("topic-tyt-mat-rasyonel-kaynak-035").map(
       (ref) => ref.id,

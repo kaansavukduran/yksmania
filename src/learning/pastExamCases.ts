@@ -165,4 +165,38 @@ export const examTeachingCases: Record<string, ExamTeachingCase> = {
     answer: "0,48 mm.",
     pitfall: "8+25 toplarsan ikinci oranı ilk büyümüş görüntüye uygulamazsın.",
   },
+  "2023-TYT-MAT-4": {
+    prompt: "Alanı 675 cm² olan kare bir panonun kenarı A√B cm olarak kaydediliyor. A ve B pozitif tam sayıdır. Boya kodu A+B olarak üretiliyor. Hangi kodlar üretilebilir?",
+    steps: [
+      "Alan kenarın karesi olduğundan A²B=675. B tam sayı ise A² alanı kalansız böler.",
+      "675=3³·5². A’nın karesindeki 3 ve 5’in üsleri çifttir. 675’te bu üsler 3 ve 2 olduğundan her biri A’da en çok bir kez yer alır. Bu yüzden A, 1, 3, 5 veya 15’tir.",
+      "B=675/A² formülüyle A sırasına göre B=675, 75, 27 ve 3 buluruz. Toplamlar 676, 78, 32 ve 18’dir. Örneğin (5√27)²=25·27=675.",
+    ],
+    answer: "Olası kodlar 18, 32, 78 ve 676’dır.",
+    pitfall: "Kenar yazımında B’ye kare çarpansız olma koşulu eklemek. Bu soruda A ve B’nin pozitif tam sayı olması yeterlidir.",
+  },
+  "2026-TYT-MAT-2": {
+    prompt:
+      "Bir eğitim kanalının ardışık dört bölümünde izleyici sayısı bir önceki bölüme göre aynı katsayıyla artıyor. İkinci bölüm 120, dördüncü bölüm 270 izleyiciye ulaştı. İlk bölüm kaç izleyiciye ulaştı?",
+    steps: [
+      "İkiden dörde iki geçiş vardır, dolayısıyla r²=270/120=9/4. Pozitif katsayı r=3/2’dir.",
+      "İkinci bölümden ilkine yalnız bir geçiş geri gidilir. 120÷(3/2)=80.",
+      "Kontrol: 80, 120, 180 ve 270 sıralamasında ardışık bölüm her seferinde 3/2’dir.",
+    ],
+    answer: "İlk bölüm 80 izleyiciye ulaştı.",
+    pitfall:
+      "270/120 oranını tek geçiş katsayısı saymak, 2→3→4 aralığında iki geçiş olduğunu gözden kaçırır.",
+  },
+  "2026-TYT-MAT-18": {
+    prompt:
+      "Bir sergide toplam N kodlu kart var. Kartların 1/5’i bir kez taranıyor. Geriye kalanların 1/4’ü iki kez, önceki iki gruba girmeyen bazı kartlar da üç kez taranıyor. 39 farklı kart için toplam 72 tarama yapılmış. Kaç kart hiç taranmadı?",
+    steps: [
+      "Bir kez taranan N/5 kart, iki kez taranan (4N/5)·(1/4)=N/5 karttır. Üç kez taranan kart sayısı c olsun.",
+      "Farklı kart sayısı 2N/5+c=39. Tarama sayısı 3N/5+3c=72. İlk eşitliğin üç katından ikincisini çıkarınca 3N/5=45 ve N=75 olur.",
+      "15, 15 ve 9 kart, 39 farklı kart ve 15+30+27=72 tarama verir. Geriye 75−39=36 kart kalır.",
+    ],
+    answer: "36 kart hiç taranmadı.",
+    pitfall:
+      "İkinci kesri başlangıca uygulamak veya bir kartı her taramada yeniden farklı kart saymak.",
+  },
 };

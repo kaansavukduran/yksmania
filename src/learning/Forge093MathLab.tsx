@@ -7,6 +7,8 @@ import {
   simplifySquareRoot,
 } from "./forge093Math";
 import { useExploration } from "./useExploration";
+import { GoldenRatioSource016Lab } from "./GoldenRatioSource016Lab";
+import { RadicalsSource015RootLab } from "./RadicalsSource015RootLab";
 import "./forge093MathLab.css";
 import { ChoiceSelect } from "../components/ChoiceSelect";
 
@@ -769,6 +771,7 @@ function RootsLab() {
         choose={(guess) => set({ guess, checked: false })}
         check={() => set({ checked: true })}
       />
+      <RadicalsSource015RootLab />
     </>
   );
 }
@@ -801,6 +804,7 @@ function RatioLab() {
     mode === "direct" ? "quotient" : mode === "inverse" ? "product" : "neither";
   return (
     <>
+      <GoldenRatioSource016Lab />
       <p>
         Üç ilişkiyi aynı soruyla dene: x değişirken hangi ifade sabit kalıyor?
         Doğru orantıda bölüm, ters orantıda çarpım; sabit eklenen modelde ikisi

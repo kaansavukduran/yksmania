@@ -24,6 +24,8 @@ import {
   resolvedGuidance,
 } from "../src/learning/questionHelp";
 import { QuestionHelp } from "../src/components/QuestionHelp";
+import { beforeScientificGuide, beforeScientificLesson } from "./helpers/before-scientific-revision";
+import { beforeSource017Registration, beforeSource031Questions } from "./helpers/before-source031-math";
 
 // This fixture stages only these reviewed rows in the actual resolver. Global
 // runtime registration remains a separate integration gate owned by root.
@@ -39,7 +41,7 @@ vi.mock("../src/learning/questionHelpCatalogue.json", async (original) => {
 });
 const topics = ["sayi", "kesir", "yas", "yuzde", "kar-zarar"];
 const id = (topic: string, n: number) => `${topic}-problemleri-011-${n}`;
-const raw = forge011MathLessons.flatMap((l) => l.questions);
+const raw = beforeSource031Questions(forge011MathLessons.flatMap((l) => l.questions));
 const flat = (q: (typeof raw)[number]): HelpQuestion => ({
   id: q.id,
   prompt: q.prompt.tr,
@@ -146,9 +148,9 @@ describe("030 exact original fifty mathematics problem cards", () => {
     expect(
       createHash("sha256")
         .update(
-          readFileSync(
-            new URL("../src/learning/forge011Math.ts", import.meta.url),
-          ),
+          beforeSource017Registration(readFileSync(
+            new URL("../src/learning/forge011Math.ts", import.meta.url), "utf8",
+          )),
         )
         .digest("hex"),
     ).toBe("ad57626c1a656a535b5cfef559bfd8459969ddaa2a351d8e5099f984130064ea");
@@ -156,7 +158,7 @@ describe("030 exact original fifty mathematics problem cards", () => {
       topics.map((t) => `${t}-problemleri`),
     );
     expect(
-      forge011MathGuides.map((g) => [
+      forge011MathGuides.map(beforeScientificGuide).map((g) => [
         g.id,
         g.sections.length,
         g.examples.length,
@@ -169,10 +171,10 @@ describe("030 exact original fifty mathematics problem cards", () => {
       ["yuzde-problemleri", 8, 4, 4],
       ["kar-zarar-problemleri", 8, 5, 4],
     ]);
-    expect(sha(forge011MathGuides)).toBe(
+    expect(sha(forge011MathGuides.map(beforeScientificGuide))).toBe(
       "e8d58f705720c164fe5d153b45c5705880def2140e4c98cb15a69668ed2c529f",
     );
-    expect(sha(forge011MathLessons)).toBe(
+    expect(sha(forge011MathLessons.map(beforeScientificLesson))).toBe(
       "d666bb5839bcc2193ed378b6c50755c30c99688144bfc18a9d72acf0166dfa97",
     );
     expect(rows.map((r) => r.id)).toEqual(

@@ -267,19 +267,41 @@ const consecutiveOdd: FigureDef = {
   },
 };
 
-const CAP_STEPS = ["İki düzen", "Ortak kısmı çıkar", "b = 3a"];
+const CAP_STEPS = ["İki düzen", "Ortak kısmı çıkar", "b = 3a", "Otoparkta 57 yer"];
 const capacity: FigureDef = {
   caption:
-    "Aynı depo: 18 küçük + 8 büyük kutu = 12 küçük + 10 büyük kutu. Şeritler aynı uzunluktadır (küçük kutu a, büyük kutu b). İki satırdan ortak 12a + 8b çıkarılınca 6a = 2b kalır: bir büyük kutu üç küçük kutunun yerini alır (b = 3a).",
-  alt: "İki şerit: üstte 18 dar ve 8 geniş hücre, altta 12 dar ve 10 geniş hücre; ikinci adımda ortak kısım soluk, kalan 6 dar ile 2 geniş hücre vurgulu.",
+    "Aynı depo: 18 küçük + 8 büyük kutu = 12 küçük + 10 büyük kutu. Şeritler aynı uzunluktadır (küçük kutu a, büyük kutu b). İki satırdan ortak 12a + 8b çıkarılınca 6a = 2b kalır: bir büyük kutu üç küçük kutunun yerini alır (b = 3a). Otopark adımında aynı ilişkiyi otomobil yeriyle ölç.",
+  alt: "İki şerit: üstte 18 dar ve 8 geniş hücre, altta 12 dar ve 10 geniş hücre; ikinci adımda ortak kısım soluk, kalan 6 dar ile 2 geniş hücre vurgulu. Otopark adımında her kamyon üç otomobillik genişlikte gösterilir.",
   steps: CAP_STEPS,
   draw: (_, step) => {
     const a = 0.3, b = 0.9, els: El[] = [];
-    const row = (y: number, na: number, nb: number, keepA: number, keepB: number) => {
+    const row = (y: number, na: number, nb: number, keepA: number, keepB: number, wide = b) => {
       let x = 0;
       for (let i = 0; i < na; i++, x += a) els.push(rect(x, y, a - 0.03, 0.8, step >= 1 && i < keepA ? "muted" : "a", !(step >= 1 && i < keepA)));
-      for (let i = 0; i < nb; i++, x += b) els.push(rect(x, y, b - 0.03, 0.8, step >= 1 && i < keepB ? "muted" : "c", !(step >= 1 && i < keepB)));
+      for (let i = 0; i < nb; i++, x += wide) els.push(rect(x, y, wide - 0.03, 0.8, step >= 1 && i < keepB ? "muted" : "c", !(step >= 1 && i < keepB)));
     };
+    if (step === 3) {
+      const first = { cars: 24, trucks: 11 };
+      const second = { cars: 18, trucks: 13 };
+      const truckUnits = (first.cars - second.cars) / (second.trucks - first.trucks);
+      const firstCapacity = first.cars + first.trucks * truckUnits;
+      const secondCapacity = second.cars + second.trucks * truckUnits;
+      row(1.3, first.cars, first.trucks, 0, 0, a * truckUnits);
+      row(0, second.cars, second.trucks, 0, 0, a * truckUnits);
+      els.push(
+        txt(v(-0.2, 1.7), "İlk düzen", "w", { tone: "ink", small: true }),
+        txt(v(-0.2, 0.4), "İkinci düzen", "w", { tone: "ink", small: true }),
+        ...pad(-3.4, 3.0, 18.4, -0.9),
+      );
+      return {
+        els,
+        readout: [
+          `${first.cars} otomobil + ${first.trucks} kamyon veya ${second.cars} otomobil + ${second.trucks} kamyon aynı alanı doldurur.`,
+          `Bir kamyon ${truckUnits} otomobil yeri kaplar.`,
+          `${first.cars}+${first.trucks}·${truckUnits}=${firstCapacity} ve ${second.cars}+${second.trucks}·${truckUnits}=${secondCapacity} otomobil yeri.`,
+        ],
+      };
+    }
     row(1.3, 18, 8, 12, 8);
     row(0, 12, 10, 12, 8);
     els.push(txt(v(-0.2, 1.7), "18a + 8b", "w", { tone: "ink", small: true, bold: true }), txt(v(-0.2, 0.4), "12a + 10b", "w", { tone: "ink", small: true, bold: true }));

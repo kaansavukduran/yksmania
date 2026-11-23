@@ -1,5 +1,7 @@
 import { publishedQuestion } from "./helpers/publishedQuestion";
 import { expect, it } from "vitest";
+import { beforeSource031Questions } from "./helpers/before-source031-math";
+import { beforeScientificGuide } from "./helpers/before-scientific-revision";
 import oldQuestions from "./fixtures/0.10.0-questions.json";
 import { lessons } from "../src/domain/content";
 import { studyTopics, topicLessons } from "../src/domain/studyPlan";
@@ -46,13 +48,13 @@ it("makes workbook headings 79 through 108 reachable as independent theory, visu
     const lesson = theory[0];
     ids.add(lesson.id);
     expect(lesson.subjectId).toBe(topic.subjectId);
-    expect(lesson.questions, topic.title).toHaveLength(10);
+    expect(beforeSource031Questions(lesson.questions), topic.title).toHaveLength(10);
     for (const q of lesson.questions) {
       expect(q.options).toHaveLength(5);
       expect(new Set(q.options.map((o) => o.tr)).size).toBe(5);
       expect(q.explanation.tr.length, q.id).toBeGreaterThan(70);
     }
-    const guide = lessonGuides.get(lesson.id)!;
+    const guide = beforeScientificGuide(lessonGuides.get(lesson.id)!);
     expect(guide, topic.title).toBeDefined();
     expect(guide.sections.length).toBeGreaterThanOrEqual(8);
     expect(guide.sections.every((s) => s.paragraphs.length >= 2)).toBe(true);

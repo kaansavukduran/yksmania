@@ -4,6 +4,9 @@ import type { Draft } from "./model";
 // Revised lessons keep the original questions in order before the new ones.
 const legacyPracticeSizes = new Map([
   ["bilimsel-gosterim-katsayi", 10],
+  ["sayi-problemleri", 10],
+  ["oran-oranti", 10],
+  ["koklu-sayilar", 10],
   ["tyt-mat-dogrusal-denklemler-kaynak-036", 42],
   ["tyt-mat-basit-esitsizlikler-kaynak-037", 45],
 ]);
