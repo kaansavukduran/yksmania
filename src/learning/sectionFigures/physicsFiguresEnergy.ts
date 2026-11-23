@@ -16,6 +16,8 @@ import {
   type V,
   type Tone,
 } from "./figureKit";
+import { bounceEnergyTitle } from "../bounceEnergy059";
+import { bounceEnergyFigure } from "./bounceEnergyFigure059";
 import { bicycleEnergyTitle } from "../bicycleEnergy058";
 import { bicycleEnergyFigure } from "./bicycleEnergyFigure058";
 import { cylinderPotentialTitle } from "../cylinderPotentialEnergy";
@@ -78,6 +80,7 @@ const enerji: Record<string, FigureDef> = {
   [averageWorkPowerComparisonTitle]: averageWorkPowerComparison,
   [cylinderPotentialTitle]: cylinderPotentialFigure,
   [bicycleEnergyTitle]: bicycleEnergyFigure,
+  [bounceEnergyTitle]: bounceEnergyFigure,
   "Yorulmak ile fiziksel iş aynı değildir": {
     caption:
       "F = 10 N'luk kuvvet bloğu Δr = 4 m yürütürken açıyı değiştir: işi yalnız kuvvetin yer değiştirme yönündeki bileşeni (F·cosθ) yapar. θ = 90°'de iş 0, θ > 90°'de negatiftir.",

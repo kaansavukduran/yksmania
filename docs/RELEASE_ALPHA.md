@@ -1,3 +1,10 @@
+# ÖSYM Mania 0.59.0 · Sıçramalarda enerji
+
+Yayın adayı.
+
+- Çarpışma hız oranını değiştir ve üç sıçramanın zaman grafiğini incele.
+- Örneği ve aynı 40 J toplamın dönüşümünü ayrı Kopya Kağıdı’ndan da aç.
+
 # ÖSYM Mania 0.58.0 · Bisikletin mekanik enerjisi
 
 Yayın adayı.

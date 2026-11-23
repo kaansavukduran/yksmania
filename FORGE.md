@@ -1,3 +1,9 @@
+# Sıçrama yüksekliği ve mekanik enerji · 0.59.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel sayfa 54, basılı sayfa 52, topun gittikçe alçalan sıçramalarını gösteriyor. Özgün ideal modelde hava direnci ihmal edilir. Çarpışmadan sonra sürat e katıysa tepe yüksekliği e² ile çarpılır. Zaman ekseni bütün ayarlarda aynı ölçeği kullanır. Her tepedeki mgh ile ısıl enerji ve ses gibi diğer biçimlere birikimli aktarım toplam 40 J eder.
+
+e = 0,5 için ilk iki tepe 1 m ve 0,25 m, kalan mekanik enerji 10 J ve 2,5 J. Bu karşılaştırma konu çizimi, çözümlü örnek ve ayrı Kopya Kağıdı’nda bulunur. Dört çevrimdışı akış geçti. Top ve bisiklet çizimleri anlatım ve Kopya Kağıdı girişlerinde ayrı ayrı açıldı. Dar ekran, yüksek yazı ölçeği, klavye ve SVG çakışma taraması doğrulandı.
+
 # Aynı yüksekliğe daha yavaş dönmek · 0.58.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel sayfa 53, basılı sayfa 51, pedal çevirmeyen bisikletlinin A–E arasındaki hız büyüklüklerini 4v, 3v, v, 2v ve 3v veriyor. Uygulamada çizim yeniden kuruldu. Ara yükseklikler verilmediği için şekil ölçüm aracı olarak kullanılmaz. A ve E eş düzeydedir. Potansiyel enerji farkı sıfır olduğundan mekanik enerji değişimi 9E₀ − 16E₀ = −7E₀, E₀ = mv²/2.
@@ -310,7 +316,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 187 | 313 / 313 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 188 | 313 / 313 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
 | TYT Biyoloji | 36 / 36 | 22 · 80 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 14 |
 | TYT Tarih | 24 / 24 | 14 · 41 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 10 |
@@ -323,7 +329,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **405 · 1680** | **6.658 / 6.658 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
+| **Toplam** | **510 / 510** | **405 · 1681** | **6.658 / 6.658 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

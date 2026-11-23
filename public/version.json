@@ -1,7 +1,7 @@
 {
-  "version": "0.58.0",
+  "version": "0.59.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Bisikletin tepeyi geçerken beş konumdaki hızını oku. Başlangıçla aynı düzeye döndüğünde mekanik enerjinin nasıl değiştiğini karşılaştır."
+    "tr": "Sıçrayan topun zaman grafiğinde çarpışma hız oranını değiştir. Her tepede mekanik enerjiyle kalan biçimlere aktarılan enerjiyi karşılaştır."
   }
 }

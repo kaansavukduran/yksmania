@@ -117,6 +117,7 @@ import { newtonTimeTitle } from "./newtonTimeComparison";
 import { forcePairsTitle } from "./newtonForcePairs";
 import { frictionThresholdTitle } from "./newtonFrictionThreshold";
 import { cylinderPotentialTitle } from "./cylinderPotentialEnergy";
+import { bounceEnergyTitle } from "./bounceEnergy059";
 import { bicycleEnergyTitle } from "./bicycleEnergy058";
 import { averageWorkPowerTitle } from "./averageWorkPower";
 import type { LessonGuide } from "./guides/types";
@@ -149,6 +150,10 @@ export interface CheatSheet {
 
 const revisedSectionTextByLesson = new Map([
   ["enerji-ve-hareket", new Map([
+    [bounceEnergyTitle, [
+      "Zeminden ayrılırken kalan hız oranı e ise sonraki tepe yüksekliği e² ile çarpılır. Her tepede hız sıfır. Yeri referans alırsan kalan mekanik enerji mgh.",
+      "Yere ve havaya aktarılan ısıl enerji veya ses yüzünden topun mekanik enerjisi azalır. Sayısal tablo e = 0,5 örneğini gösterir.",
+    ]],
     [bicycleEnergyTitle, [
       "Eş yükseklikte potansiyel enerji farkı sıfır. Hız 4v’den 3v’ye inerse kinetik enerji 16E₀’dan 9E₀’a iner; E₀ = mv²/2.",
       "Bisikletin mekanik enerjisi 7E₀ azalır. Kapalı toplam hesabında bu fark, çevredeki ısıl enerji gibi başka biçimlere gider.",
