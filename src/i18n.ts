@@ -177,7 +177,7 @@ const messages: Record<string, string> = {
   closeSession: "Çalışmayı bırakmadan çık",
   draftConfirm:
     "Yarım kalan çalışma var. Bu taslak bırakılıp yeni çalışma açılsın mı?",
-  footer: `Fragaria Interactive · YKSMania ${APP_VERSION} alpha`,
+  footer: `ÖSYM Mania ${APP_VERSION} alpha`,
   scopeNote:
     "İçerikler kaynaklardan sırayla işleniyor; hazır anlatımlar ve soru setleri doğrudan uygulamada çalışır.",
   questions: "Sorular",

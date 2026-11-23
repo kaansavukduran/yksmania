@@ -1,3 +1,9 @@
+# ÖSYM Mania kimliği
+
+Öğrencinin gördüğü ad, tarayıcı başlığı ve kurulabilir web uygulamasının adı ÖSYM Mania. Sol üstteki Aion yüzü, projedeki onaylı pembe aksolotl referansından çizildi. Aynı çizim tarayıcı simgesine ve 192/512 piksel kurulum simgelerine kaynak olur. Kırpılabilir simge, solungaçları güvenli alanda tutar. Ayarlar’daki Hakkında alanında Fragaria Interactive imzası görünür.
+
+320, 375, 430 ve 1280 pikselde, altı tema ve büyük yazıyla gezinme ve ayarlar Chromium’da sınandı. 1280 pikselde büyük ölçek iki sayısal ayarın sıfırlama düğmelerini taşırıyordu. Kontrollerin kart içinde satıra sarması sorunu giderdi. İki yerel dağıtım yapısında ana logo, manifest, favicon, çevrimdışı yeniden açılış ve kayıtlı ders notu kontrol edildi. Depo adı, eski URL geçişi ve VisaNeat fontu ayrı kabul bekliyor.
+
 # Soru görselleri
 
 Kuvvet ve Newton Yasaları anlatımında kütle sürgüsü, kuvvet–ivme doğrusunu ve eğim hesabını aynı veriden üretir. Newton Hareket Yasaları Kopya Kağıdı, kuvvet ve ivme farklarını ayrı sütunlarda gösteren çözümlü örneği içerir. Yeni özgün soruda iki sayısal nokta çizilir. İpucu, aynı noktaları satır ve sütun başlıklı bir tabloyla verir. Çözüm yardımcı çizgileri ilgili adımda ve kütle hesabını bir sonraki adımda gösterir. Eksen düzeni MEBİ TYT Fizik Konu Özetleri’nin fiziksel 42. sayfasından doğrulandı. Sorunun sayıları uygulama için yazıldı.

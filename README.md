@@ -1,4 +1,4 @@
-# YKSMania
+# ÖSYM Mania
 
 [GitHub Pages](https://kaansavukduran.github.io/yksmania/) · [Cloudflare Pages](https://yksmania.pages.dev/)
 

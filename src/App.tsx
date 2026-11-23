@@ -23,7 +23,6 @@ import {
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { Capacitor } from "@capacitor/core";
 import { useApp } from "./store";
-import { Sparkle } from "./components/Sparkle";
 import { ExamDeadlineWatcher } from "./pages/ExamDeadlineWatcher";
 import { TrophyToasts } from "./components/Trophies";
 import {
@@ -306,12 +305,15 @@ export default function App() {
         inert={mobile && !menu}
       >
         <a className="brand" href="#/today">
-          <span className="brand-symbol" aria-hidden="true">
-            Y<Sparkle />
-          </span>
+          <img
+            className="brand-symbol"
+            src={`${import.meta.env.BASE_URL}icon.svg`}
+            width={40}
+            height={40}
+            alt=""
+          />
           <span>
-            yks<span>mania</span>
-            <small>FRAGARIA INTERACTIVE</small>
+            ÖSYM <span>Mania</span>
           </span>
         </a>
         <p className="sidebar-caption">{t("brandNote")}</p>
@@ -365,7 +367,7 @@ export default function App() {
             {menu ? <X /> : <Menu />}
           </button>
           <span className="breadcrumb">
-            YKSMania <span>/</span> {t(navKey)}
+            ÖSYM Mania <span>/</span> {t(navKey)}
           </span>
           <div className="topbar-status">
             <button

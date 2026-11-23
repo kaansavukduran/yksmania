@@ -482,6 +482,7 @@ export function Settings({
         </section>
         <section className="panel settings-panel">
           <h2>{t("updates")}</h2>
+          <p className="small muted">ÖSYM Mania bir Fragaria Interactive projesidir.</p>
           <p className="version-row">
             <span>{t("version")}</span>
             <strong>{APP_VERSION} alpha</strong>
