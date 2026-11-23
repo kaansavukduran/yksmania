@@ -11,6 +11,7 @@ import { wireDiameterQuestionFigures, wireDiameterQuestionId } from "./wireResis
 import { ohmGraphQuestionFigures, ohmGraphQuestionId } from "./ohmGraphQuestion078";
 import { solidPressureQuestionFigures, solidPressureQuestionId } from "./solidPressureQuestion079";
 import { equalDepthQuestionFigures, equalDepthQuestionId } from "./hydrostaticQuestion080";
+import { pistonQuestionFigures, pistonQuestionId } from "./pascalQuestion081";
 import {
   inverseTranslationFigures,
   inverseTranslationQuestion,
@@ -249,6 +250,14 @@ const bindings = new Map<string, FigureBinding>([
   ogmTranslationBinding(inverseTranslationQuestion, 12, "Görüntünün grafiğinden başlangıç noktası", inverseTranslationFigures),
   ogmTranslationBinding(triangleTranslationQuestion, 13, "ABC üçgeninin üç köşesinin ötelenmesi", triangleTranslationFigures),
   ...ogmGridTranslationExamples.map(({ question, page, name, figures }) => ogmTranslationBinding(question, page, name, figures)),
+  [pistonQuestionId, {
+    stemRevision: "122891ad73ac0c",
+    helpRevision: "026adabb208057",
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 136–137. sayfalar, basılı 134–135",
+    itemLabel: "Su cenderesi, özgün soru",
+    figures: pistonQuestionFigures,
+  }],
   [equalDepthQuestionId, {
     stemRevision: "0115896f31ade7",
     helpRevision: "02990ecc0bf23c",

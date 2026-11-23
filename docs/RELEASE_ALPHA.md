@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.81.0 · Pascal ilkesi ve bileşik kaplar
+
+Yayın adayı. Pistona uygulanan kuvveti artır, farklı derinliklerdeki iki ölçeri karşılaştır. Bileşik kapta her sıvı katmanını kendi yüksekliğiyle hesapla. Su cenderesi sorusunda ortak basıncı adım adım kullan.
+
 # ÖSYM Mania 0.80.0 · Durgun sıvıda derinlik ve dolum
 
 Yayın adayı. Aynı derinlikteki kapları karşılaştır. Dik, genişleyen ve daralan bir kaba aynı debide su ekle, yükseklik ile taban basıncını aynı eğriden oku. K ve L alıştırmasında ipucu ve çözüm adımlarını sırayla aç.

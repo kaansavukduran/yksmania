@@ -6,6 +6,7 @@ import { wireMaterialSection, wireResistanceExample, wireResistanceTitle } from 
 import { meterConnectionsTitle, ohmMeasurementSection, ohmSlopeExample } from "../mebiOhmReadings";
 import { brickPressureExample, brickPressureSection, uprightPrismSection } from "../mebiSolidPressure";
 import { equalDepthSection, fillingGraphExample, fillingGraphSection } from "../mebiHydrostaticFilling";
+import { pascalAddedPressureSection, sharedLevelExample, sharedLevelSection } from "../mebiPascalLayers";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
@@ -379,10 +380,11 @@ export function studyGuide(lessonId: string) {
       sections: guide.sections.flatMap((section) => {
         if (section.title === "Katıda önce destek kuvvetini bul") return [section, brickPressureSection, uprightPrismSection];
         if (section.title === "Durgun sıvıda düşey derinliği ölç") return [section, equalDepthSection, fillingGraphSection];
+        if (section.title === "Pascal basınç değişimini iletir, kuvveti eşitlemez") return [section, pascalAddedPressureSection, sharedLevelSection];
         return [section];
       }),
-      examples: [...guide.examples, brickPressureExample, fillingGraphExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 132–136, basılı 130–134. Tuğla düzeni, dik prizma kesiti, eş derinlik ve sabit debili dolum grafikleri bu sayfalarla karşılaştırıldı. Sayısal kap ölçüleri örnek model değerleridir.`,
+      examples: [...guide.examples, brickPressureExample, fillingGraphExample, sharedLevelExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 132–137, basılı 130–135. Tuğlalar, prizma kesiti, eş derinlik, dolum ve piston çizimleri bu sayfalarla karşılaştırıldı. Bileşik kapta görselin ve açıklama maddesinin gösterdiği 2h K katmanı kullanıldı. Sayısal ölçüler örnek model değerleridir.`,
     };
   }
   if (guide?.id === "hal-degisimi") {
