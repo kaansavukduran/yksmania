@@ -1,3 +1,13 @@
+# YKSMania 0.28.0 · Güncel matematik kaynakları
+
+Yayın adayı. Asal Sayılar, EBOB ve EKOK ile Rasyonel Sayılar güncel PDF sürümlerinden yeniden incelendi. Asal Sayılarda çarpan türü ve kart adedi, EBOB ve EKOK’ta ortak kalan ile parça boyu, Rasyonel Sayılarda işaret ve ikinci oranın uygulandığı bütün gerçek örneklerle açıklanıyor. Ayrı Kopya Kağıtlarında çözümler öğrencinin açtığı adımlarda gösteriliyor.
+
+Üç konuda 134 eski soru ve önceki çalışma kimlikleri korunuyor. 0.27.0 adayındaki 505 konu, 6.472 soru ve 405 derse yayılan 1.669 bölüm figürü bu adayda da bulunuyor. [İlerleme tablosu](ILERLEME.md)
+
+Kaynakların önceki sürümlerine ait kayıtlar korunuyor. Güncel PDF sürümlerinin tam aktarım kararı, aynı kaynaklı web ve paket kabulüyle birlikte değerlendirilecek. [Geliştirme kaydı](../FORGE.md)
+
+---
+
 # YKSMania 0.27.0 · Konu anlatımı figürleri
 
 Yayın adayı. Konu anlatımlarında 56 derse 242 bölüm figürü eklendi. Bilimsel Gösterim dersine art arda büyütme şeması, altı yöntem karşılaştırması, üç çözümlü örnek ve yedi soru eklendi. Güncel ders ve figür envanteri, çözüm paneli sayıları ve kanıt durumu ders bazında izlenebilir. [İlerleme tablosu](ILERLEME.md)
