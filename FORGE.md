@@ -1,3 +1,9 @@
+# TYT Coğrafya kopya kâğıtları · 0.144.0 adayı
+
+Forge066: TYT Coğrafya 009, 019, 029, 031 kopya kâğıtları 16 etkileşimli figür ve 4 taktik olarak aktarıldı (kopya 125 / 517). Haritalar şematik ve "ölçekli değil" notlu; TÜİK 2025 ve ÖSYM atıfları kâğıtlardan alındı, resmî kaynakla ayrıca doğrulanmadı.
+
+tsc, check, 400 dosyada 5.583 birim testi ve derleme geçti; dört dersin figür kapısı 320/375/1280, axe ve altı temada geçti. Yalnız web ve masaüstü Chromium.
+
 # Sekiz kopya kâğıdı ve figür erişilebilirliği · 0.143.0 adayı
 
 Forge064: TYT Matematik 003, 004, 019, 021 kopya kâğıtları 16 figür ve 4 taktik. Forge065: TYT Türkçe 003, 004, 005, 009 kopya kâğıtları 16 figür ve 4 taktik (kopya 121 / 517). Forge064 denetimi: 72 yeni figür altı temada, 320 / 1280 px'te axe, kontrast ve klavyeyle tarandı; axolotl/trans renk anahtarları, seçim etiketi kontrastı, uç adımda odak kaybı ve seçili öğe odak halkası düzeltildi, kalıcı e2e kapısı eklendi.

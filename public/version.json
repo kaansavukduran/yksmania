@@ -1,8 +1,8 @@
 {
-  "version": "0.143.0",
+  "version": "0.144.0",
   "channel": "alpha",
   "notes": {
-    "tr": "TYT Türkçe'de isimler, sıfatlar, zamirler ve fiilde çatı; TYT Matematik'te ardışık sayılar, asal sayılar, yaş ve kâr-zarar kopya kâğıtları tıklanabilir figürler ve taktiklerle açılıyor. Figürlerde renk anahtarları her temada ayrışıyor, adım düğmelerinde klavye odağı kaybolmuyor.",
-    "en": "Eight more cheat sheets in Turkish and Mathematics open as interactive figures with tactics. Figure colour keys stay distinct in every theme and keyboard focus no longer drops on step buttons."
+    "tr": "TYT Coğrafya'da Türkiye iklimi, yer şekilleri, dünyada nüfusun dağılışı ve Türkiye nüfusu kopya kâğıtları kesit, harita, sayım ekseni ve yaş payı figürleriyle açılıyor; dört yeni taktik soru çözümünde yol gösteriyor.",
+    "en": "Four TYT Geography cheat sheets open as interactive cross-sections, maps, census timelines and age-share figures with tactics."
   }
 }

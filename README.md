@@ -4,6 +4,8 @@
 
 **Son yayımlanan web ve masaüstü sürümü 0.123.0**. Eşit gerilen iki yayda atmanın aldığı yolu ve Kopya Kağıdı’ndaki sürat hesabını çevrimdışı inceleyebilirsin. [Windows ve Linux 0.123](https://github.com/kaansavukduran/yksmania/releases/tag/v0.123.0-alpha.1) · [Önceki 0.103 sürümü](https://github.com/kaansavukduran/yksmania/releases/tag/v0.103.0-alpha.1)
 
+**0.144.0 adayı** dört TYT Coğrafya kopya kâğıdını (iklim, yer şekilleri, dünya ve Türkiye nüfusu) figür ve taktik olarak açıyor.
+
 **0.143.0 adayı** sekiz kopya kâğıdını daha (TYT Türkçe 4, TYT Matematik 4) figür ve taktik olarak açıyor; figür renkleri ve klavye odağı altı temada düzeltildi.
 
 **0.142.0 adayı** anlatımlı 510 dersin hepsinde bölüm figürü gösteriyor; TYT Matematik kaynak dersleri ve dört TYT Geometri kopya kâğıdı figür ve taktik olarak eklendi.

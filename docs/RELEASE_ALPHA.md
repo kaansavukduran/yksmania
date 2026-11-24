@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.144.0 · Coğrafya kesitleri ve nüfus
+
+Yayın adayı (24 Kasım 2026). Türkiye iklimi, yer şekilleri, dünyada nüfusun dağılışı ve Türkiye nüfusu kopya kâğıtları kesit, harita ve sayım ekseni figürleriyle açılıyor.
+
 # ÖSYM Mania 0.143.0 · Sekiz kopya kâğıdı daha
 
 Yayın adayı (24 Kasım 2026). TYT Türkçe'de isimler, sıfatlar, zamirler ve fiilde çatı; TYT Matematik'te ardışık sayılar, asal sayılar, yaş ve kâr-zarar kâğıtları tıklanabilir figürlerle açılıyor. Figür renkleri her temada ayrışıyor ve adım düğmelerinde klavye odağı korunuyor.
