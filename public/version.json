@@ -1,8 +1,8 @@
 {
-  "version": "0.174.0",
+  "version": "0.175.0",
   "channel": "alpha",
   "notes": {
-    "tr": "K ve L kaynaklarını, opak küreyi ve perdeyi ayrı değiştir. Aynı kesitte oluşan tam gölgeyi yarı gölge halkasından ayır. TYT Matematik’te dört Kopya Kağıdı daha işlendi.",
-    "en": "Move two aligned point sources, an opaque sphere or its screen. Compare the full shadow with the penumbra ring and open four new mathematics study sheets."
+    "tr": "Eş büyüklükte küresel kaynak ve engel için perdeyi uzaklaştır. Tam gölge çapı aynı kalırken yarı gölge alanının nasıl değiştiğini ders ve Kopya Kağıdı’nda karşılaştır.",
+    "en": "Move the screen when the spherical source and blocker have equal size. Compare the fixed umbra diameter and growing penumbra area."
   }
 }

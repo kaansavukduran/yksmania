@@ -5054,6 +5054,9 @@ progress::-moz-progress-bar {
   color: var(--accent);
 }
 @media print {
+  @page mistake-pocket {
+    margin: 12mm;
+  }
   body.print-booklet > :not(:has(.pocket-booklet)),
   body.print-booklet :has(.pocket-booklet) > :not(.pocket-booklet):not(:has(.pocket-booklet)) {
     display: none !important;
@@ -5069,6 +5072,7 @@ progress::-moz-progress-bar {
     overflow: visible !important;
   }
   body.print-booklet .pocket-booklet {
+    page: mistake-pocket;
     background: #fff;
     color: #000;
     border: 0;

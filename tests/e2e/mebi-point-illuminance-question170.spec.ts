@@ -81,6 +81,7 @@ test("the two receivers, hint and worked visuals survive offline reload and wron
   await page.evaluate(() => { window.print = () => {}; });
   await pocket.getByRole("button", { name: "Yazdır", exact: true }).click();
   await page.emulateMedia({ media: "print" });
+  await expect(pocket).toHaveCSS("page", "mistake-pocket");
   await expect(printed).toBeVisible();
   await expect(page.locator(".mistake-card").filter({ has: stem })).toBeHidden();
   const file = info.outputPath("point-illuminance170-booklet.pdf");

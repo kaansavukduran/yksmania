@@ -64,6 +64,7 @@ import { crookesExample, crookesModelSection, crookesPhotoSection } from "../meb
 import { lightTransmissionExample, lightTransmissionSection } from "../mebiLightTransmission";
 import { sphereShadowExample, sphereShadowSection } from "../mebiPointSphereShadow";
 import { coaxialShadowExample, coaxialShadowSection } from "../mebiCoaxialShadow";
+import { equalExtendedShadowExample, equalExtendedShadowSection } from "../mebiEqualExtendedShadow";
 import { animalPitchExample, animalPitchSection } from "../mebiPitchSamples";
 import { bottlePitchExample, bottlePitchSection } from "../mebiBottlePitch";
 import { wirePairExample, wirePairSection } from "../mebiWirePitch";
@@ -579,10 +580,11 @@ export function studyGuide(lessonId: string) {
       sections: [lightTransmissionSection, ...guide.sections.flatMap((section) => {
         if (section.title === "Tek noktasal kaynakta sınırlar") return [section, sphereShadowSection];
         if (section.title === "İki kaynakta her gölgeyi ayrı çiz") return [section, coaxialShadowSection];
+        if (section.title === "Geniş kaynakta görünür kısmı düşün") return [equalExtendedShadowSection, section];
         return [section];
       })],
-      examples: [lightTransmissionExample, ...guide.examples, sphereShadowExample, coaxialShadowExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 172, basılı 170. Saydam pencere, buzlu cam ve metal levha gerçek lisanslı örnek fotoğraflarla karşılaştırıldı. Geçen ışınlar temsili çizimlerle aynı üç durumda incelendi. Aynı sayfadaki opak küre iki teğet ışın ve ölçülen tam gölge çapıyla yeniden modellendi. Perde uzaklıkları özgün öğretim değerleridir. Fiziksel 173, basılı 171. sayfadaki ortak eksende K ve L, perde kesiti ve önden görünümle yeniden modellendi. Dört hareket, ilk düzenle ayrı karşılaştırıldı.`,
+      examples: [lightTransmissionExample, ...guide.examples, sphereShadowExample, coaxialShadowExample, equalExtendedShadowExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 172, basılı 170. Saydam pencere, buzlu cam ve metal levha gerçek lisanslı örnek fotoğraflarla karşılaştırıldı. Geçen ışınlar temsili çizimlerle aynı üç durumda incelendi. Aynı sayfadaki opak küre iki teğet ışın ve ölçülen tam gölge çapıyla yeniden modellendi. Perde uzaklıkları özgün öğretim değerleridir. Fiziksel 173, basılı 171. sayfadaki ortak eksende K ve L, perde kesiti ve önden görünümle yeniden modellendi. Dört hareket, ilk düzenle ayrı karşılaştırıldı. Aynı sayfadaki eş büyüklükte küresel kaynak ile engelin paralel ve eğik sınırları ayrı çizildi.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

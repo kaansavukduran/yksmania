@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.175.0 · Eş büyüklükte iki küre
+
+Yayın adayı. 8 ve 12 cm uzaklıktaki perdelerde tam gölgenin çapı ve yarı gölge alanı aynı teğet ışınlardan hesaplanıyor.
+
 # ÖSYM Mania 0.174.0 · İki ışık kaynağı ve dört matematik özeti
 
 Yayın adayı. Ortak gölgeyi ve çevresindeki halkayı ayrı incele. İki alıcının görselli optik sorusu cep kitapçığına yazdırılabilir.
