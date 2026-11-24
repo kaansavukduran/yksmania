@@ -306,3 +306,48 @@ test("Three equal heights in an equilateral triangle give unequal band areas", a
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Joint divisibility keeps the shared prime requirement once", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const table = page.getByRole("region", { name: /Ayrı şartlar çarpılır mı/ }).getByRole("table");
+  await page.goto("/#/lesson?id=bolme-bolunebilme");
+  const shared = table.getByRole("row", { name: /4 ve 6/ }).getByRole("cell");
+  await expect(shared.nth(1)).toHaveAccessibleName("12");
+  await expect(shared.nth(2)).toHaveAccessibleName("24 gereksiz güçlü");
+  await expect(table.getByRole("row", { name: /3 ve 4/ })).toContainText("12 yeterli ve gerekli");
+  await page.goto("/#/cheatsheets?topic=detail-200");
+  await expect(shared.nth(1)).toHaveAccessibleName("12");
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The external bisector switches sides through the parallel case", async ({ page, context }, info) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-ucgen-merkezleri-031";
+  const model = figure(page, "Dış açıortayda nokta uzantıda olur");
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("E, B tarafındaki uzantıda.");
+  await expect(model).toContainText("12/18 = 4/6");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await next.press("Enter");
+  await expect(model).toContainText("Dış açıortay ∥ BC. Sonlu bir E noktası yok.");
+  await checkFrame(page, model);
+  const parallel = await model.getByRole("img").innerHTML();
+  await next.press("Enter");
+  await expect(model).toContainText("E, C tarafındaki uzantıda.");
+  await expect(model).toContainText("24/18 = 8/6");
+  expect(await model.getByRole("img").innerHTML()).not.toBe(parallel);
+  await checkFrame(page, model);
+  const image = model.getByRole("img");
+  await image.evaluate((svg) => svg.scrollIntoView({ block: "center" }));
+  await image.screenshot({ path: info.outputPath("dis-aciortay-c.png") });
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(model).toContainText("E, B tarafındaki uzantıda.");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

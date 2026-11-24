@@ -1,8 +1,8 @@
 {
-  "version": "0.154.0",
+  "version": "0.155.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Sayı Basamakları’nda birliklerden onluklara taşıma sınırını değiştir. Eşkenar üçgende eş yükseklikte üç şeridin alanlarını benzerlikle karşılaştır.",
-    "en": "Regroup ones into tens and compare the areas of three equal-height strips in an equilateral triangle."
+    "tr": "Bölünme koşullarında ortak katı tabloyla bul. Dış açıortayın tabanla ilişkisini üç farklı kenar durumunda incele.",
+    "en": "Compare joint divisibility conditions and three different external angle bisectors."
   }
 }

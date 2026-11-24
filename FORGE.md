@@ -3683,3 +3683,9 @@ Faktöriyel Kavramı 1.1 fiziksel 3 ve 10, İkizkenar Üçgen 5.2 fiziksel 6 ve 
 Sayı Basamakları’nda 19 birlikten 20 birliğe geçiş, eldeyi 1’den 2’ye çıkarıyor. Eşkenar Üçgen’de aynı yükseklikteki üç şeridin 9, 27 ve 45 birim² alanları tepeden biriken alan farklarıyla hesaplanıyor. Modeller konu anlatımında ve ayrı Kopya Kağıdında çalışıyor.
 
 Sayı Basamakları 1.1 fiziksel 3 ve 13, Eşkenar Üçgen 5.1 fiziksel 1 ve 4 ile karşılaştırıldı. 13 Chromium akışı ve 323 çevrimdışı varlık kontrolü geçti. Tarihsel içerik denetimi değişen kayıtları tam özetleriyle tanır. PDF sayaçları kaynak defterinin kararlarını izler.
+
+## TYT Matematik ve Geometri · 0.155.0 adayı
+
+Bölünebilme tablosu, 4 ve 6’nın ortak şartını 12 olarak hesaplıyor. Dış açıortay modeli AB küçükken B tarafını, eşitken paralelliği, AB büyükken C tarafını gösteriyor. Aynı tablo ve çizim ayrı Kopya Kağıtlarında da açılıyor.
+
+Bölme Bölünebilme Kuralları 1.1 fiziksel 3 ve 4, Açıortay 5.1 fiziksel 2 ve 5 ile karşılaştırıldı. 15 Chromium akışı ve 323 çevrimdışı varlık kontrolü geçti. Tablo hücrelerinin okunabilir adı klavye ve ekran okuyucu ağacında doğrulandı.

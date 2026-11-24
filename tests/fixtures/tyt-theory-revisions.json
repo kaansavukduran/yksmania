@@ -3361,5 +3361,516 @@
         }
       }
     ]
+  },
+  {
+    "version": "0.155.0",
+    "receipts": [
+      {
+        "surface": "lessons",
+        "id": "tyt-geo-ucgen-merkezleri-031",
+        "after": "55c533c4f5f22f7017e235be9390ee260213a5318e259dbb794d14e9984e04a3",
+        "prior": {
+          "source": {
+            "tr": "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir."
+          },
+          "body": [
+            {
+              "title": {
+                "tr": "Dört çizginin dört ayrı görevi"
+              },
+              "text": {
+                "tr": "Kenarortay bir köşeden karşı kenarın orta noktasına gider. Açıortay köşedeki açıyı iki eş açıya ayırır. Yükseklik köşeden karşı kenarın doğrusuna dik iner. Kenar orta dikmesi bir kenarın orta noktasından ona dik geçen doğrudur; genel üçgende karşı köşeden geçmesi gerekmez.\n\nBir çizginin şekle bakınca ortadan geçmesi veya dik görünmesi yeterli veri değildir. Orta nokta için eş parça işaretlerini, açıortay için eş açı işaretlerini ve yükseklik için90° işaretini ara. Genel üçgende bu görevler farklı doğrulardır; ikizkenar veya eşkenar gibi özel hâllerde birleşebilirler."
+              }
+            },
+            {
+              "title": {
+                "tr": "Açıortay eş açı kurar, eş kenar parçası zorunlu değildir"
+              },
+              "text": {
+                "tr": "A açısının iç açıortayı AD ve D∈BC olsun. ABD ile ACD üçgenlerinde A açısındaki paylar eşittir. Açıortay üzerindeki bir noktanın açının iki koluna dik uzaklıkları eşittir. Dik uzaklık, eğik bir köşeye uzaklıkla aynı şey değildir.\n\nİç açıortay teoremi BD/DC=AB/AC verir. Eş bölünen açı iken karşı kenar genellikle eş bölünmez. AB=6, AC=9 ve BC=10 için karşı kenar2:3 oranında4 ve6 olarak bölünür. Parçaları bulurken oran paylarını topla ve bütün kenarı bu toplama böl."
+              }
+            },
+            {
+              "title": {
+                "tr": "İç açıortayın uzunluğu ve alanla anlamı"
+              },
+              "text": {
+                "tr": "AB=c, AC=b, BD=m, DC=n ve AD iç açıortay olduğunda AD²=bc−mn’dir. Burada b ile c, açıortayın çıktığı köşeye komşu iki kenardır; m ile n karşı kenarın parçalarıdır. Kullanımdan önce m/n=c/b koşulu da sağlanmalıdır.\n\nABD ve ACD aynı yüksekliği paylaştığından alanları BD/DC oranındadır; dolayısıyla iç açıortayın ayırdığı alanların oranı AB/AC olur. Üçgenin kenarları5,5 ve6 ise tepe açıortayı tabanı3 ve3 böler; uzunluğu√(25−9)=4’tür. Bu özel örnekte açıortay yükseklik ve kenarortayla aynı parçadır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Dış açıortayda nokta uzantıda olur"
+              },
+              "text": {
+                "tr": "A köşesindeki bir dış açının açıortayı BC doğrusunu E’de kesiyorsa E,BC doğru parçasının dışındadır ve |BE|/|CE|=AB/AC olur. İç açıortayda parçalar toplanarak BC’yi verir; dış açıortayda ilgili büyük ve küçük uzaklığın farkı BC’dir.\n\nAB=AC ise A’daki dış açıortay BC’ye paraleldir; sonlu bir kesişim noktası varmış gibi oran denklemi kurma. AB<AC olduğunda |BE|<|CE| olacağı için E,B tarafındaki uzantıda bulunur. Önce B,C,E sırasını yerleştirmek toplam–fark hatasını önler."
+              }
+            },
+            {
+              "title": {
+                "tr": "İç merkez I: kenarlara eş dik uzaklık"
+              },
+              "text": {
+                "tr": "Üç iç açıortay üçgenin içinde tek bir I noktasında kesişir. I’nın üç kenarın doğrularına dik uzaklıkları eşittir; bu ortak r uzaklığı iç teğet çemberin yarıçapıdır. Köşelere olan IA,IB,IC uzaklıklarının eşit olması gerekmez.\n\nBIC üçgeninde B ve C açıları ana üçgendeki açıların yarılarıdır. Bu yüzden ∠BIC=180°−(B+C)/2=90°+A/2 olur. A’nın karşısındaki dış teğet çember merkezi Iₐ, B ve C’nin dış açıortaylarının uygun kesişimidir; ∠BIₐC=90°−A/2 olur. İç merkezle dış merkezdeki artı–eksi işaretlerini ayrı düşün."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kenarortay ve ağırlık merkezi G"
+              },
+              "text": {
+                "tr": "A’dan BC’nin orta noktası M’ye çizilen AM bir kenarortaydır. BM=MC olduğundan ABM ile ACM’nin tabanları eşit ve yükseklikleri ortaktır; alanları eşittir. Üç kenarortay her zaman üçgenin içinde ağırlık merkezi G’de kesişir.\n\nG her kenarortayı köşeden başlayarak2:1 oranında böler: AG=2AM/3 ve GM=AM/3. Uzun parça köşeye yakındır. Üç kenarortay birlikte altı eş alanlı küçük üçgen oluşturur. Bu eşlik alan içindir; altı küçük üçgenin kenarları genel durumda eş değildir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kenarortay uzunluğu ve dik üçgendeki özel hâl"
+              },
+              "text": {
+                "tr": "BC=a, CA=b ve AB=c ise A’dan çizilen kenarortayın uzunluğu mₐ için4mₐ²=2b²+2c²−a²’dir. Bu ifade orta noktanın iki yanındaki küçük üçgenlerde kurulan uzunluk ilişkilerinin toplamından gelir. Dik olmayan üçgende mₐ’yı yükseklik sanarak Pisagor kullanmak doğru değildir.\n\nDik üçgende hipotenüsün orta noktası üç köşeye eşit uzaklıktadır; bu nedenle dik köşeden hipotenüse çizilen kenarortay hipotenüsün yarısıdır. Bu özellik her kenara ait kenarortay için geçerli değildir. Hipotenüse ait yüksekliğin aynı değer olması ancak ikizkenar dik üçgen gibi ek bir koşulda gerçekleşir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Yükseklikler ve diklik merkezi H"
+              },
+              "text": {
+                "tr": "Bir yükseklik karşı kenarın kendisine veya uzantısına dik iner. Üç yükseklik doğrusu diklik merkezi H’de kesişir. Dar açılı üçgende H içeride, dik üçgende dik açının köşesinde, geniş açılı üçgende dışarıdadır. Geniş üçgende uzantıları çizmek hata değil tanımın gereğidir.\n\nYüksekliğin boyunu bulmak için hangi tabana ait olduğunu belirt. Aynı üçgende alan a·hₐ/2=b·hᵦ/2=c·h𝚌/2 olduğundan büyük kenara ait yükseklik daha kısa olur. Yüksekliğin dik olduğu doğruyla köşenin karşısındaki kenarın yönü aynı olmalıdır; herhangi bir90° işareti yeterli değildir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kenar orta dikmeleri ve çevrel merkez O"
+              },
+              "text": {
+                "tr": "Bir doğru parçasının orta dikmesi üzerindeki her nokta iki uca eşit uzaklıktadır. Üçgenin üç kenarının orta dikmeleri O noktasında birleşir; OA=OB=OC=R olur. O çevrel çemberin merkezidir; burada eşit olan uzaklıklar kenarlara değil köşeleredir.\n\nO dar üçgende içeride, dik üçgende hipotenüsün orta noktasında, geniş üçgende dışarıdadır. I ile O’nun eş uzaklık tanımlarını karşılaştır: I’dan kenarlara dik uzaklıklar, O’dan köşelere uzaklıklar eşittir. Bir noktaya “merkez” denmesi bu iki özelliği birlikte taşıdığını söylemez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Simetri ne zaman çizgileri ve merkezleri birleştirir?"
+              },
+              "text": {
+                "tr": "AB=AC olan ikizkenar üçgende A’dan BC tabanına çizilen açıortay, kenarortay ve yükseklik aynı doğru parçasıdır. Bu doğru aynı zamanda BC’nin orta dikmesi üzerindedir. İki küçük üçgen KAK eşliğiyle eş olur; eş parçalar ve diklik buradan gerekçelendirilebilir.\n\nEşkenar üçgende bütün yükseklik, kenarortay ve açıortay doğruları aynı üç simetri doğrusu olduğundan I,G,H,O tek noktada birleşir. Kenarı a olan eşkenarda yükseklik a√3/2’dir; ağırlık merkezi oranından R=2h/3 ve r=h/3 çıkar. Bu birleşmeyi her üçgene genelleme."
+              }
+            },
+            {
+              "title": {
+                "tr": "Merkez seçerken hangi bilgiye ihtiyacın var?"
+              },
+              "text": {
+                "tr": "“İki eş açı” verisinden iç açıortaya; “karşı kenar eş iki parça” verisinden kenarortaya; “köşeden90°” verisinden yüksekliğe; “orta noktadan90°” verisinden orta dikmeye yönel. Bir merkez sorusunda önce hangi doğruların kesiştiğini adlandır.\n\nSonra oranı veya eş uzaklığı uygula ve modelde kontrol et: G için2:1, I için kenarlara eş dik uzaklık, O için köşelere eş uzaklık, H için yüksekliklerin dikliği. Etkileşimli şekli değiştirirken genel üçgendeki bu görev farklarını izle; görseldeki tek bir özel duruma dayanarak kural çıkarma."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "tyt-geo-ucgen-merkezleri-031",
+        "after": "c5e6fa9ad863097c77b4c55720beca2708be766f4b6da83879973dd106b88e1c",
+        "prior": {
+          "sections": [
+            {
+              "title": "Dört çizginin dört ayrı görevi",
+              "paragraphs": [
+                "Kenarortay bir köşeden karşı kenarın orta noktasına gider. Açıortay köşedeki açıyı iki eş açıya ayırır. Yükseklik köşeden karşı kenarın doğrusuna dik iner. Kenar orta dikmesi bir kenarın orta noktasından ona dik geçen doğrudur; genel üçgende karşı köşeden geçmesi gerekmez.",
+                "Bir çizginin şekle bakınca ortadan geçmesi veya dik görünmesi yeterli veri değildir. Orta nokta için eş parça işaretlerini, açıortay için eş açı işaretlerini ve yükseklik için90° işaretini ara. Genel üçgende bu görevler farklı doğrulardır; ikizkenar veya eşkenar gibi özel hâllerde birleşebilirler."
+              ]
+            },
+            {
+              "title": "Açıortay eş açı kurar, eş kenar parçası zorunlu değildir",
+              "paragraphs": [
+                "A açısının iç açıortayı AD ve D∈BC olsun. ABD ile ACD üçgenlerinde A açısındaki paylar eşittir. Açıortay üzerindeki bir noktanın açının iki koluna dik uzaklıkları eşittir. Dik uzaklık, eğik bir köşeye uzaklıkla aynı şey değildir.",
+                "İç açıortay teoremi BD/DC=AB/AC verir. Eş bölünen açı iken karşı kenar genellikle eş bölünmez. AB=6, AC=9 ve BC=10 için karşı kenar2:3 oranında4 ve6 olarak bölünür. Parçaları bulurken oran paylarını topla ve bütün kenarı bu toplama böl."
+              ]
+            },
+            {
+              "title": "İç açıortayın uzunluğu ve alanla anlamı",
+              "paragraphs": [
+                "AB=c, AC=b, BD=m, DC=n ve AD iç açıortay olduğunda AD²=bc−mn’dir. Burada b ile c, açıortayın çıktığı köşeye komşu iki kenardır; m ile n karşı kenarın parçalarıdır. Kullanımdan önce m/n=c/b koşulu da sağlanmalıdır.",
+                "ABD ve ACD aynı yüksekliği paylaştığından alanları BD/DC oranındadır; dolayısıyla iç açıortayın ayırdığı alanların oranı AB/AC olur. Üçgenin kenarları5,5 ve6 ise tepe açıortayı tabanı3 ve3 böler; uzunluğu√(25−9)=4’tür. Bu özel örnekte açıortay yükseklik ve kenarortayla aynı parçadır."
+              ]
+            },
+            {
+              "title": "Dış açıortayda nokta uzantıda olur",
+              "paragraphs": [
+                "A köşesindeki bir dış açının açıortayı BC doğrusunu E’de kesiyorsa E,BC doğru parçasının dışındadır ve |BE|/|CE|=AB/AC olur. İç açıortayda parçalar toplanarak BC’yi verir; dış açıortayda ilgili büyük ve küçük uzaklığın farkı BC’dir.",
+                "AB=AC ise A’daki dış açıortay BC’ye paraleldir; sonlu bir kesişim noktası varmış gibi oran denklemi kurma. AB<AC olduğunda |BE|<|CE| olacağı için E,B tarafındaki uzantıda bulunur. Önce B,C,E sırasını yerleştirmek toplam–fark hatasını önler."
+              ]
+            },
+            {
+              "title": "İç merkez I: kenarlara eş dik uzaklık",
+              "paragraphs": [
+                "Üç iç açıortay üçgenin içinde tek bir I noktasında kesişir. I’nın üç kenarın doğrularına dik uzaklıkları eşittir; bu ortak r uzaklığı iç teğet çemberin yarıçapıdır. Köşelere olan IA,IB,IC uzaklıklarının eşit olması gerekmez.",
+                "BIC üçgeninde B ve C açıları ana üçgendeki açıların yarılarıdır. Bu yüzden ∠BIC=180°−(B+C)/2=90°+A/2 olur. A’nın karşısındaki dış teğet çember merkezi Iₐ, B ve C’nin dış açıortaylarının uygun kesişimidir; ∠BIₐC=90°−A/2 olur. İç merkezle dış merkezdeki artı–eksi işaretlerini ayrı düşün."
+              ]
+            },
+            {
+              "title": "Kenarortay ve ağırlık merkezi G",
+              "paragraphs": [
+                "A’dan BC’nin orta noktası M’ye çizilen AM bir kenarortaydır. BM=MC olduğundan ABM ile ACM’nin tabanları eşit ve yükseklikleri ortaktır; alanları eşittir. Üç kenarortay her zaman üçgenin içinde ağırlık merkezi G’de kesişir.",
+                "G her kenarortayı köşeden başlayarak2:1 oranında böler: AG=2AM/3 ve GM=AM/3. Uzun parça köşeye yakındır. Üç kenarortay birlikte altı eş alanlı küçük üçgen oluşturur. Bu eşlik alan içindir; altı küçük üçgenin kenarları genel durumda eş değildir."
+              ]
+            },
+            {
+              "title": "Kenarortay uzunluğu ve dik üçgendeki özel hâl",
+              "paragraphs": [
+                "BC=a, CA=b ve AB=c ise A’dan çizilen kenarortayın uzunluğu mₐ için4mₐ²=2b²+2c²−a²’dir. Bu ifade orta noktanın iki yanındaki küçük üçgenlerde kurulan uzunluk ilişkilerinin toplamından gelir. Dik olmayan üçgende mₐ’yı yükseklik sanarak Pisagor kullanmak doğru değildir.",
+                "Dik üçgende hipotenüsün orta noktası üç köşeye eşit uzaklıktadır; bu nedenle dik köşeden hipotenüse çizilen kenarortay hipotenüsün yarısıdır. Bu özellik her kenara ait kenarortay için geçerli değildir. Hipotenüse ait yüksekliğin aynı değer olması ancak ikizkenar dik üçgen gibi ek bir koşulda gerçekleşir."
+              ]
+            },
+            {
+              "title": "Yükseklikler ve diklik merkezi H",
+              "paragraphs": [
+                "Bir yükseklik karşı kenarın kendisine veya uzantısına dik iner. Üç yükseklik doğrusu diklik merkezi H’de kesişir. Dar açılı üçgende H içeride, dik üçgende dik açının köşesinde, geniş açılı üçgende dışarıdadır. Geniş üçgende uzantıları çizmek hata değil tanımın gereğidir.",
+                "Yüksekliğin boyunu bulmak için hangi tabana ait olduğunu belirt. Aynı üçgende alan a·hₐ/2=b·hᵦ/2=c·h𝚌/2 olduğundan büyük kenara ait yükseklik daha kısa olur. Yüksekliğin dik olduğu doğruyla köşenin karşısındaki kenarın yönü aynı olmalıdır; herhangi bir90° işareti yeterli değildir."
+              ]
+            },
+            {
+              "title": "Kenar orta dikmeleri ve çevrel merkez O",
+              "paragraphs": [
+                "Bir doğru parçasının orta dikmesi üzerindeki her nokta iki uca eşit uzaklıktadır. Üçgenin üç kenarının orta dikmeleri O noktasında birleşir; OA=OB=OC=R olur. O çevrel çemberin merkezidir; burada eşit olan uzaklıklar kenarlara değil köşeleredir.",
+                "O dar üçgende içeride, dik üçgende hipotenüsün orta noktasında, geniş üçgende dışarıdadır. I ile O’nun eş uzaklık tanımlarını karşılaştır: I’dan kenarlara dik uzaklıklar, O’dan köşelere uzaklıklar eşittir. Bir noktaya “merkez” denmesi bu iki özelliği birlikte taşıdığını söylemez."
+              ]
+            },
+            {
+              "title": "Simetri ne zaman çizgileri ve merkezleri birleştirir?",
+              "paragraphs": [
+                "AB=AC olan ikizkenar üçgende A’dan BC tabanına çizilen açıortay, kenarortay ve yükseklik aynı doğru parçasıdır. Bu doğru aynı zamanda BC’nin orta dikmesi üzerindedir. İki küçük üçgen KAK eşliğiyle eş olur; eş parçalar ve diklik buradan gerekçelendirilebilir.",
+                "Eşkenar üçgende bütün yükseklik, kenarortay ve açıortay doğruları aynı üç simetri doğrusu olduğundan I,G,H,O tek noktada birleşir. Kenarı a olan eşkenarda yükseklik a√3/2’dir; ağırlık merkezi oranından R=2h/3 ve r=h/3 çıkar. Bu birleşmeyi her üçgene genelleme."
+              ]
+            },
+            {
+              "title": "Merkez seçerken hangi bilgiye ihtiyacın var?",
+              "paragraphs": [
+                "“İki eş açı” verisinden iç açıortaya; “karşı kenar eş iki parça” verisinden kenarortaya; “köşeden90°” verisinden yüksekliğe; “orta noktadan90°” verisinden orta dikmeye yönel. Bir merkez sorusunda önce hangi doğruların kesiştiğini adlandır.",
+                "Sonra oranı veya eş uzaklığı uygula ve modelde kontrol et: G için2:1, I için kenarlara eş dik uzaklık, O için köşelere eş uzaklık, H için yüksekliklerin dikliği. Etkileşimli şekli değiştirirken genel üçgendeki bu görev farklarını izle; görseldeki tek bir özel duruma dayanarak kural çıkarma."
+              ]
+            }
+          ],
+          "source": "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir."
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "bolme-bolunebilme",
+        "after": "5c0a8c20208d9270ae8b8e90ae23a4e0eebbf24259da6d8d34ce553dec68f0fb",
+        "prior": {
+          "sections": [
+            {
+              "title": "Eşitlik tek başına bölme işlemi değildir",
+              "paragraphs": [
+                "A bölünen, b pozitif tam sayı bölen, q tam sayı bölüm, r kalan olsun. Bölme A=bq+r ve 0≤r<b koşullarının birlikte sağlanmasıdır. Örneğin 38=7×5+3 geçerlidir.38=7×4+10 da doğru bir eşitliktir ama 10 içinde bir tam 7’lik grup daha bulunduğundan bitmiş bölme değildir. Bölüm yalnız ondalık sonucu yuvarlamak anlamına gelmez.",
+                "Tam bölünme r=0 demektir.0 her pozitif tam sayıya tam bölünür; sıfıra bölme tanımsızdır. Bu rehber negatif bölünende de negatif olmayan kalan kullanır:−17=6×(−3)+1. Bölüm−3’tür, kalan 1. Nesne gruplaması doğal sayılar için uygundur; negatif sayıda aynı eşitliği sayı doğrusu üzerindeki ardışık katlarla yorumla."
+              ]
+            },
+            {
+              "title": "Son basamak kuralları onluk yapıdan gelir",
+              "paragraphs": [
+                "N=10 q+d yazıldığında 10 q,2’ye ve 5’e tam bölünür. Bu nedenle 2 ve 5 ile bölümün kalanı son rakam d ile belirlenir. Son rakam çiftse 2’ye;0 veya 5 ise 5’e tam bölünür.10’a tam bölünmek için son rakam 0 olmalıdır. Bunlar sayının bütün rakamlarını değil, tam kat olan kısmı çıkardıktan sonra kalan parçayı kullanır.",
+                "4 için N=100 q+s biçiminde son iki,8 için N=1000 q+t biçiminde son üç basamak ayrılır.100,4’ün;1000,8’in katıdır. Son blok 00 veya 000 ise sayısal değeri 0’dır ve ilgili bölenlere tam bölünür. Bir sayının başına sıfır eklemekle son bloğun sıfır içermesi aynı koşul değildir."
+              ]
+            },
+            {
+              "title": "Rakam toplamı ve dönüşümlü toplam",
+              "paragraphs": [
+                "3 ve 9’a göre 10’un her kuvveti 1 ile aynı kalanı taşır. Bu yüzden N ile rakamları toplamı aynı kalanı verir.3’e bölünen bir sayı mutlaka 9’a bölünmez; örneğin 15’in rakam toplamı 6’dır. Toplam büyükse onu da ilgili bölenle yeniden küçült; ham rakam toplamı son kalan olmak zorunda değildir.",
+                "11’e göre 10,−1 ile aynı kalan sınıfındadır. Sağdan birler için+, onlar için−, yüzler için+ işaretleriyle topla. Sonuç 11’in herhangi bir tam katıysa tam bölünür; yalnız 0 olması gerekmez. Kalan isteniyorsa işareti koru, sonra 0–10 aralığına indir. Soldan başlamak çift haneli yazımlarda işareti tersine çevirebilir."
+              ]
+            },
+            {
+              "title": "Ayrı şartlar çarpılır mı?",
+              "paragraphs": [
+                "Aralarında asal a ve b’ye tam bölünen sayı ab’ye de tam bölünür. Çünkü iki koşul birbirinde olmayan asal kuvvetleri ister.3 ve 4’ün birlikte sağlanması 12’ye yeter;2 ve 4 ise 8’e yetmez.4 koşulu 2’yi zaten içerir. Karşı örnek olarak 20,2’ye ve 4’e bölünür ama 8’e bölünmez.",
+                "Genel ortak şart EKOK(a,b)’dir.6 için 2 ve 3;12 için 3 ve 4;18 için 2 ve 9;24 için 3 ve 8 birlikte sınanır.25 için 100’ün kat kısmı çıkarıldığından son iki blok 00,25,50 veya 75 olmalıdır. Bir bileşik bölenin yalnız bazı çarpanlarını denetlemek yeterli sayılmaz; gereken bütün asal kuvvetleri karşıla."
+              ]
+            },
+            {
+              "title": "Kalanlarla işlem yap, yeniden küçült",
+              "paragraphs": [
+                "Aynı b böleninde A=bq+r ve C=bs+t yaz. Toplam A+C, b’nin bir katı+r+t; çarpım AC, b’nin bir katı+rt olur. Bu nedenle büyük sayılar yerine küçük kalanları kullanabilirsin. Ancak r+t veya rt yeniden b’ye bölünüp 0–b−1 aralığına indirilmelidir. Çıkarmada negatif ara sonuç da aynı biçimde düzeltilir.",
+                "Üslü ifadede her çarpım sonrası kalanı küçültmek sayıyı yönetilebilir tutar. Döngü uzunluğunu ilk kuvvetlerden gerçekten bul; her bölen için 4 dönem varsayma. Kalan eşitliklerinde normal kesir gibi her sayıyı sadeleştiremezsin.2 x’in 6’ya kalanı 2 ise x=1 de x=4 de uygundur; bölmenin hangi bilgi kaybını yarattığını kontrol et."
+              ]
+            },
+            {
+              "title": "Rakam ve kalan sorularında iki filtre kullan",
+              "paragraphs": [
+                "Önce yazım koşullarını uygula: ilk rakam sıfır olamaz, diğerleri 0–9’dur; farklılık ancak verildiyse zorunludur. Ardından her bölünebilme koşulunu ayrı uygula. Bir koşulu sağlayan adayların listesini oluşturup ikinciyle kesiştirmek, baştan iki denklemi karıştırmaktan daha izlenebilir olabilir.",
+                "Son rakama bağlı dar bir şart varsa ondan başla;5’e bölünmede iki son rakam adayı vardır. Rakam toplamı şartı başka rakamları daraltabilir. Adayı bulunca gerçek sayıyı oluşturup her bölen için kalanı yeniden hesapla. Etkinliğin ? işaretleri bağımsız boşluklardır; aynı harf gibi eşit olmak zorunda değildir."
+              ]
+            },
+            {
+              "title": "Bölümün tekliği ve kalan aralığı",
+              "paragraphs": [
+                "Sabit A ve b için 0≤r<b koşulu tek bir tam bölüm ve kalan seçer. İki ayrı yazım A=bq+r=bq′+r′ olsaydı b(q−q′)=r′−r olurdu. Sağ tarafın mutlak değeri b’den küçüktür; bu aralıktaki tek b katı 0 olduğundan q=q′ ve r=r′ çıkar. Eşitlik aralıkla birlikte bölmeyi tekleştirir.",
+                "Etkinliğin sayı doğrusunda q·b≤A<(q+1)·b aralığını görürsün. Bölüm, A’nın hemen solundaki b katının katsayısı; kalan, o kat ile A arasındaki uzaklıktır. Negatif A’da da aynı yön kullanılır. A tam bir kata denk gelince uzaklık 0’dır; onu önceki aralığın kalan b değeriyle gösterme."
+              ]
+            },
+            {
+              "title": "Bilinmeyen bölen ve bölüm sınırı",
+              "paragraphs": [
+                "Bölünen, bölüm ve kalan verildiğinde A=bq+r denklemini kurup b’yi bulabilirsin; q=0 ise bölme işlemi farklı biçimde yorumlanır ve bu formülle q’ya bölme yapılamaz. Bulunan b pozitif tam sayı olmalı ve r<b sağlamalıdır. Doğru denklemden çıkan her cebirsel sonuç geçerli bölme değildir.",
+                "Bölen b ve bölüm q biliniyorsa bölünen bq,bq+1,…,bq+b−1 olabilir. Bu aralıkta b tane tam sayı vardır. Üst sınır b(q+1) değildir; o sayıda bölüm bir artar. “En büyük kalan” dendiğinde b−1 kullanılır; r’nin negatif olmasına izin verilmez."
+              ]
+            },
+            {
+              "title": "Negatif sayıda kalan ve program işareti",
+              "paragraphs": [
+                "Pozitif bölenle Öklid bölmesinde bölüm A/b’nin aşağı yuvarlanmış tam sayısıdır. Örneğin−22/5=−4,4 olduğundan q=−5; r=−22−5×(−5)=3 olur. Sıfıra doğru kesmek q=−4 ve r=−2 verir; bu, burada seçilen kalan aralığına uymaz. Hangi sözleşmenin kullanıldığını belirt.",
+                "Bazı programlama dillerinde % işleci negatif bir artık döndürebilir; onu doğrudan matematiksel son kalan diye kullanma. Pozitif b için ((A%b)+b)%b ifadesi negatif olmayan sınıfa döndürür. Etkinlikte bu fark, yalnız yazılan bir sonuç değil, sayının iki komşu kat arasındaki gerçek konumuyla gösterilir."
+              ]
+            },
+            {
+              "title": "Son blok kuralının sınırı",
+              "paragraphs": [
+                "Son k basamağın tek başına aynı kalanı vermesi için 10^k’nin bölenin katı olması gerekir.4 için k=2,8 için k=3,25 için k=2 bu şartı sağlar. Örneğin yalnız son rakama bakarak 4’e karar vermek,10’un 4’e tam bölünmemesi nedeniyle genel olarak geçerli değildir.",
+                "“Son iki basamak iki basamaklı sayı” ifadesinde 07 bloğunun değeri 7’dir; blok genişliği 2 kalır. Bölünebilmede tam bölünen ön bloğu atmak sayıyı değiştirse de ilgili kalanı değiştirmez. Kalanın korunması ile sayısal değerin korunmasını ayır; yöntem bütün sayıyı son blokla eşit saymaz."
+              ]
+            },
+            {
+              "title": "3 ve 9 için kalan neden korunur?",
+              "paragraphs": [
+                "100 a+10 b+c−(a+b+c)=99 a+9 b olur. Bu fark 9’un, dolayısıyla 3’ün katıdır. Bu cebir, rakam toplamının hem tam bölünme hem de kalan bulma amacıyla kullanılmasını gerekçelendirir. Daha çok basamakta 10^j−1 sayıları da 9’a bölündüğü için aynı düşünce sürer.",
+                "Rakam toplamını tek haneye kadar indirmek bazı sorularda yardımcıdır ama son kalanla karıştırılmamalıdır. Toplam 9 ise 9’a kalan 0’dır; tek haneli 9’u kalan diye bırakma.0 sayısının bütün rakam toplamı 0’dır ve bu kurallarla tutarlıdır. Her adımda hedef böleni aynı tut."
+              ]
+            },
+            {
+              "title": "11 için işaretli ağırlık tablosu",
+              "paragraphs": [
+                "Sağdan ağırlıklar 1,−1,1,−1,… seçilir. Böylece dört haneli [abcd] için d−c+b−a kullanılır. Başlangıç soldan yapılıp a−b+c−d bulunursa bunun negatifi elde edilir; tam bölünmede ikisi birlikte 0 sınıfındadır, ama sıfırdan farklı kalanları genellikle aynı değildir.",
+                "Dönüşümlü toplam−13 ise 11’e göre kalan 9’dur:−13=11×(−2)+9. Toplam 22 ise kalan 0’dır. Etkinlikte her rakamın işaretli ağırlığı ve katkısı ayrı HTML satırlarında, toplamın kalana indirgenmesi sonuçta görünür. İşaretleri keyfî mutlak değere çevirmek kalan bilgisini kaybettirebilir."
+              ]
+            },
+            {
+              "title": "7 testi ile aynı kalanı ayır",
+              "paragraphs": [
+                "N=10 q+d için M=q−2 d düşün.2 N=20 q+2 d,21 q−2 N=q−2 d=M olduğundan N’nin 7’ye bölünmesi M’nin 7’ye bölünmesine denktir. Bu yöntem 7’ye tam bölünmeyi sınar; N ile M’nin 7’ye kalanının eşit olduğunu söylemez. Katsayı tersliği nedeniyle kalan başka bir sınıfa gidebilir.",
+                "Kalan isteniyorsa uzun bölme veya 10’un kuvvetlerinin 7’ye kalanlarıyla ağırlık tablosu güvenlidir. Bir kısa testin “tam bölünür/bölünmez” kararı vermesi, her aritmetik bilgiyi koruduğunu göstermez. Yeni bir kuralı kullanırken hangi niceliğin korunduğunu bir eşitlikle açıkla."
+              ]
+            },
+            {
+              "title": "Kalan toplamı, çarpımı ve çıkarma",
+              "paragraphs": [
+                "A ve B aynı bölen m ile inceleniyorsa kalanları r ve s üzerinden A²+AB−B gibi bir ifade r²+rs−s ile aynı sınıfa iner. İşlem önceliğini koru; önce üs ve çarpım, sonra toplama/çıkarma yapılır. Ara değer negatif veya m’den büyükse son adımda yeniden normalleştir.",
+                "Farklı bölenlere ait kalanları tek bir modda doğrudan karıştırma. “A’nın 5’e kalanı 2, B’nin 7’ye kalanı 3” bilgisi A+B’nin 7’ye kalanını tek başına belirlemez. Koşulları ayrı denklemler olarak yaz; yeterli bilgi yoksa tek sayısal cevap üretme. Bir karşı örnek, eksik bilginin sonucu nasıl değiştirdiğini gösterebilir."
+              ]
+            },
+            {
+              "title": "Kuvvetlerde döngü ve başlangıç",
+              "paragraphs": [
+                "Taban kalanı r olsun; r,r²,r³,… değerlerini her çarpım sonrası aynı bölenle küçült.1’e dönüş varsa buradan bir dönem kurulabilir. r bölenle ortak çarpan taşıdığında 0’a yerleşme veya farklı bir başlangıç kuyruğu oluşabilir; bütün diziler ilk terimden aynı kalıpla dönmez.",
+                "Üs dönem uzunluğuna tam bölünüyorsa dönemin son terimi seçilir; sıfırıncı terimle rastgele değiştirilmez. Örneğin dönem 4 ise üs 4 k olan kuvvet dönemin 4. konumundadır.0’ın sıfırıncı kuvveti gibi ayrı tanım sorunlarını, verilen pozitif üslerin doğal tekrar çarpımı modeline taşımadan sınırla."
+              ]
+            },
+            {
+              "title": "Kalan eşitliğini ne zaman bölebilirsin?",
+              "paragraphs": [
+                "kx≡ky(mod m) ifadesi m’nin k(x−y)’yi böldüğünü anlatır. k ile m aralarında asal ise x≡y(mod m) sonucu çıkar. Aralarında asal değillerse aynı m ile sadeleştirme yeni çözümleri kaybettirebilir. Örneğin 3 x’in 9’a kalanı 3 iken x=1,4,7 aynı koşulu sağlar.",
+                "Başlangıç düzeyinde güvenli yol x’in 0–m−1 adaylarını sınamaktır. Bu adaylar bütün kalan sınıflarını kapsar. Denklemden çıkan adayın yalnız ilk kalana değil, asıl ifadeye de uyduğunu kontrol et. Kesirle bölme, tam sayı bölme ve modüler sadeleştirme farklı işlemlerdir; aynı işaret görünümü koşulları birleştirmez."
+              ]
+            },
+            {
+              "title": "İki kalan koşulu ve çözüm aralığı",
+              "paragraphs": [
+                "N≡r(mod a), N≡s(mod b) koşulları ayrı ayrı N=ak+r ve N=bℓ+s demektir. Aynı kalan varsa N−r ortak kattır. Farklı kalanlarda tek bir r çıkarıp iki koşulu birden elde edemezsin. Küçük adaylarda bir diziyi üretip diğerinin kalanı ile filtrelemek güvenlidir.",
+                "Bir aday bulunduğunda EKOK(a,b) kadar eklemek her iki kalanı da korur. Ancak önce adayın varlığını ve ilk uygun değeri denetle. EBOB(a,b), s−r farkını bölmüyorsa hiç çözüm yoktur. Aralık uçlarının dahil olup olmadığı, bulunan dizide kaç aday sayılacağını belirler; negatif veya sıfır bölüm iznini kökten oku."
+              ]
+            },
+            {
+              "title": "Sıralı döngü ve son kontrol",
+              "paragraphs": [
+                "Renk, görev veya gün dizisi 1’den sayılıyorsa kalanı 0 olan sıra tam grubun son elemanına karşılık gelir.0’dan sayılan dizide ise eşleme değişir. Takvimde “12. kez” ilk olay zaten sayılmışsa 11 aralık geçmiştir; olay sayısı ile zaman aralığı adedini ayır. Başlangıç anını açık yazmak belirsizliği giderir.",
+                "Her cevapta A=bq+r eşitliğini ve kalan aralığını geri kontrol et. Bölünebilme sorusunda gerçek sayıyı her bölenle sınamak, rakam sorusunda bütün adayları tüketmek, kuvvette dönemi ve üssün sırasını doğrulamak ayrı kontrollerdir. Etkinlik ve özgün alıştırmalar bu kontrolü öğretir; öğrenme veya tamamlanma kaydı oluşturmaz."
+              ]
+            }
+          ],
+          "source": "MEBİ TYT Matematik Bölünebilme Kuralları 1–2, OGM 9 Kalanlı Bölme/Bölünebilme özetleri ve Aurelia ilgili notunun okunan bölümleriyle karşılaştırılan özgün anlatım. Yeni örnekler ve sorular resmî sınav sorusu değildir."
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-geo-ucgen-merkezleri-031",
+        "after": "824006476997f61fe9a6a99560f60d03020098d9c69992d17b05977c31f4a4b5",
+        "prior": {
+          "sections": [
+            {
+              "title": "Dört ayrı görev",
+              "text": [
+                "Kenarortay:köşeden karşı kenarın orta noktasına. Açıortay:köşedeki açıyı ikiye. Yükseklik:köşeden karşı kenarın doğrusuna dik.",
+                "Orta dikme:bir kenarın orta noktasından ona dik geçen doğru; genel durumda karşı köşeden geçmez."
+              ]
+            },
+            {
+              "title": "İç ve dış açıortay",
+              "text": [
+                "AD iç açıortay,D∈BC; AB=c,AC=b,BD=m,DC=n ise m/n=c/b ve AD²=bc−mn. Alan(ABD)/Alan(ACD)=m/n.",
+                "Dış açıortay BC’yi E’de keserse E uzantıdadır,BE/CE=AB/AC; büyük–küçük uzaklık farkı BC’dir. AB=AC ise dış açıortay BC’ye paraleldir.",
+                "İç merkez I için ∠BIC=90°+A/2. A karşısındaki dış teğet merkez Iₐ için ∠BIₐC=90°−A/2."
+              ]
+            },
+            {
+              "title": "Kenarortay ve ağırlık merkezi",
+              "text": [
+                "M,BC’nin ortası ve G ağırlık merkezi:AG:GM=2:1,AG=2AM/3,GM=AM/3. Bir kenarortay iki eş alan;üçü birlikte altı eş alan verir.",
+                "BC=a,CA=b,AB=c için4mₐ²=2b²+2c²−a². Altı küçük üçgenin alanları eşit diye kenarları eşit değildir."
+              ]
+            },
+            {
+              "title": "Merkezlerin eş uzaklıkları ve konumu",
+              "text": [
+                "I:iç açıortaylar;kenarlara eş dik uzaklık r. O:orta dikmeler;köşelere eş uzaklık R. H:yükseklikler. G:kenarortaylar.",
+                "I ve G her zaman içeride. H ve O dar üçgende içeride,genişte dışarıda;dik üçgende H dik köşede,O hipotenüsün ortasında."
+              ]
+            },
+            {
+              "title": "Özel üçgen ve ortak alan",
+              "text": [
+                "AB=AC ise A’dan tabana çizilen açıortay,kenarortay,yükseklik çakışır. Eşkenarda I,G,H,O tek noktadır.",
+                "Eşkenarda h=a√3/2,R=2h/3,r=h/3. Dik üçgende hipotenüse ait kenarortay hipotenüsün yarısıdır.",
+                "Her üçgende alan=a·hₐ/2=b·hᵦ/2=c·h𝚌/2; büyük kenara ait yükseklik daha kısadır."
+              ]
+            }
+          ],
+          "source": "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir."
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "detail-200",
+        "after": "2817280d20ca3a1590c4093166df2c731b2a4bde8a8f1bdf4cb52e23c682ba8e",
+        "prior": {
+          "sections": [
+            {
+              "title": "Eşitlik tek başına bölme işlemi değildir",
+              "text": [
+                "A bölünen, b pozitif tam sayı bölen, q tam sayı bölüm, r kalan olsun. Bölme A=bq+r ve 0≤r<b koşullarının birlikte sağlanmasıdır. Örneğin 38=7×5+3 geçerlidir.38=7×4+10 da doğru bir eşitliktir ama 10 içinde bir tam 7’lik grup daha bulunduğundan bitmiş bölme değildir. Bölüm yalnız ondalık sonucu yuvarlamak anlamına gelmez.",
+                "Tam bölünme r=0 demektir.0 her pozitif tam sayıya tam bölünür; sıfıra bölme tanımsızdır. Bu rehber negatif bölünende de negatif olmayan kalan kullanır:−17=6×(−3)+1. Bölüm−3’tür, kalan 1. Nesne gruplaması doğal sayılar için uygundur; negatif sayıda aynı eşitliği sayı doğrusu üzerindeki ardışık katlarla yorumla."
+              ]
+            },
+            {
+              "title": "Son basamak kuralları onluk yapıdan gelir",
+              "text": [
+                "N=10 q+d yazıldığında 10 q,2’ye ve 5’e tam bölünür. Bu nedenle 2 ve 5 ile bölümün kalanı son rakam d ile belirlenir. Son rakam çiftse 2’ye;0 veya 5 ise 5’e tam bölünür.10’a tam bölünmek için son rakam 0 olmalıdır. Bunlar sayının bütün rakamlarını değil, tam kat olan kısmı çıkardıktan sonra kalan parçayı kullanır.",
+                "4 için N=100 q+s biçiminde son iki,8 için N=1000 q+t biçiminde son üç basamak ayrılır.100,4’ün;1000,8’in katıdır. Son blok 00 veya 000 ise sayısal değeri 0’dır ve ilgili bölenlere tam bölünür. Bir sayının başına sıfır eklemekle son bloğun sıfır içermesi aynı koşul değildir."
+              ]
+            },
+            {
+              "title": "Rakam toplamı ve dönüşümlü toplam",
+              "text": [
+                "3 ve 9’a göre 10’un her kuvveti 1 ile aynı kalanı taşır. Bu yüzden N ile rakamları toplamı aynı kalanı verir.3’e bölünen bir sayı mutlaka 9’a bölünmez; örneğin 15’in rakam toplamı 6’dır. Toplam büyükse onu da ilgili bölenle yeniden küçült; ham rakam toplamı son kalan olmak zorunda değildir.",
+                "11’e göre 10,−1 ile aynı kalan sınıfındadır. Sağdan birler için+, onlar için−, yüzler için+ işaretleriyle topla. Sonuç 11’in herhangi bir tam katıysa tam bölünür; yalnız 0 olması gerekmez. Kalan isteniyorsa işareti koru, sonra 0–10 aralığına indir. Soldan başlamak çift haneli yazımlarda işareti tersine çevirebilir."
+              ]
+            },
+            {
+              "title": "Ayrı şartlar çarpılır mı?",
+              "text": [
+                "Aralarında asal a ve b’ye tam bölünen sayı ab’ye de tam bölünür. Çünkü iki koşul birbirinde olmayan asal kuvvetleri ister.3 ve 4’ün birlikte sağlanması 12’ye yeter;2 ve 4 ise 8’e yetmez.4 koşulu 2’yi zaten içerir. Karşı örnek olarak 20,2’ye ve 4’e bölünür ama 8’e bölünmez.",
+                "Genel ortak şart EKOK(a,b)’dir.6 için 2 ve 3;12 için 3 ve 4;18 için 2 ve 9;24 için 3 ve 8 birlikte sınanır.25 için 100’ün kat kısmı çıkarıldığından son iki blok 00,25,50 veya 75 olmalıdır. Bir bileşik bölenin yalnız bazı çarpanlarını denetlemek yeterli sayılmaz; gereken bütün asal kuvvetleri karşıla."
+              ]
+            },
+            {
+              "title": "Kalanlarla işlem yap, yeniden küçült",
+              "text": [
+                "Aynı b böleninde A=bq+r ve C=bs+t yaz. Toplam A+C, b’nin bir katı+r+t; çarpım AC, b’nin bir katı+rt olur. Bu nedenle büyük sayılar yerine küçük kalanları kullanabilirsin. Ancak r+t veya rt yeniden b’ye bölünüp 0–b−1 aralığına indirilmelidir. Çıkarmada negatif ara sonuç da aynı biçimde düzeltilir.",
+                "Üslü ifadede her çarpım sonrası kalanı küçültmek sayıyı yönetilebilir tutar. Döngü uzunluğunu ilk kuvvetlerden gerçekten bul; her bölen için 4 dönem varsayma. Kalan eşitliklerinde normal kesir gibi her sayıyı sadeleştiremezsin.2 x’in 6’ya kalanı 2 ise x=1 de x=4 de uygundur; bölmenin hangi bilgi kaybını yarattığını kontrol et."
+              ]
+            },
+            {
+              "title": "Rakam ve kalan sorularında iki filtre kullan",
+              "text": [
+                "Önce yazım koşullarını uygula: ilk rakam sıfır olamaz, diğerleri 0–9’dur; farklılık ancak verildiyse zorunludur. Ardından her bölünebilme koşulunu ayrı uygula. Bir koşulu sağlayan adayların listesini oluşturup ikinciyle kesiştirmek, baştan iki denklemi karıştırmaktan daha izlenebilir olabilir.",
+                "Son rakama bağlı dar bir şart varsa ondan başla;5’e bölünmede iki son rakam adayı vardır. Rakam toplamı şartı başka rakamları daraltabilir. Adayı bulunca gerçek sayıyı oluşturup her bölen için kalanı yeniden hesapla. Etkinliğin ? işaretleri bağımsız boşluklardır; aynı harf gibi eşit olmak zorunda değildir."
+              ]
+            },
+            {
+              "title": "Bölümün tekliği ve kalan aralığı",
+              "text": [
+                "Sabit A ve b için 0≤r<b koşulu tek bir tam bölüm ve kalan seçer. İki ayrı yazım A=bq+r=bq′+r′ olsaydı b(q−q′)=r′−r olurdu. Sağ tarafın mutlak değeri b’den küçüktür; bu aralıktaki tek b katı 0 olduğundan q=q′ ve r=r′ çıkar. Eşitlik aralıkla birlikte bölmeyi tekleştirir.",
+                "Etkinliğin sayı doğrusunda q·b≤A<(q+1)·b aralığını görürsün. Bölüm, A’nın hemen solundaki b katının katsayısı; kalan, o kat ile A arasındaki uzaklıktır. Negatif A’da da aynı yön kullanılır. A tam bir kata denk gelince uzaklık 0’dır; onu önceki aralığın kalan b değeriyle gösterme."
+              ]
+            },
+            {
+              "title": "Bilinmeyen bölen ve bölüm sınırı",
+              "text": [
+                "Bölünen, bölüm ve kalan verildiğinde A=bq+r denklemini kurup b’yi bulabilirsin; q=0 ise bölme işlemi farklı biçimde yorumlanır ve bu formülle q’ya bölme yapılamaz. Bulunan b pozitif tam sayı olmalı ve r<b sağlamalıdır. Doğru denklemden çıkan her cebirsel sonuç geçerli bölme değildir.",
+                "Bölen b ve bölüm q biliniyorsa bölünen bq,bq+1,…,bq+b−1 olabilir. Bu aralıkta b tane tam sayı vardır. Üst sınır b(q+1) değildir; o sayıda bölüm bir artar. “En büyük kalan” dendiğinde b−1 kullanılır; r’nin negatif olmasına izin verilmez."
+              ]
+            },
+            {
+              "title": "Negatif sayıda kalan ve program işareti",
+              "text": [
+                "Pozitif bölenle Öklid bölmesinde bölüm A/b’nin aşağı yuvarlanmış tam sayısıdır. Örneğin−22/5=−4,4 olduğundan q=−5; r=−22−5×(−5)=3 olur. Sıfıra doğru kesmek q=−4 ve r=−2 verir; bu, burada seçilen kalan aralığına uymaz. Hangi sözleşmenin kullanıldığını belirt.",
+                "Bazı programlama dillerinde % işleci negatif bir artık döndürebilir; onu doğrudan matematiksel son kalan diye kullanma. Pozitif b için ((A%b)+b)%b ifadesi negatif olmayan sınıfa döndürür. Etkinlikte bu fark, yalnız yazılan bir sonuç değil, sayının iki komşu kat arasındaki gerçek konumuyla gösterilir."
+              ]
+            },
+            {
+              "title": "Son blok kuralının sınırı",
+              "text": [
+                "Son k basamağın tek başına aynı kalanı vermesi için 10^k’nin bölenin katı olması gerekir.4 için k=2,8 için k=3,25 için k=2 bu şartı sağlar. Örneğin yalnız son rakama bakarak 4’e karar vermek,10’un 4’e tam bölünmemesi nedeniyle genel olarak geçerli değildir.",
+                "“Son iki basamak iki basamaklı sayı” ifadesinde 07 bloğunun değeri 7’dir; blok genişliği 2 kalır. Bölünebilmede tam bölünen ön bloğu atmak sayıyı değiştirse de ilgili kalanı değiştirmez. Kalanın korunması ile sayısal değerin korunmasını ayır; yöntem bütün sayıyı son blokla eşit saymaz."
+              ]
+            },
+            {
+              "title": "3 ve 9 için kalan neden korunur?",
+              "text": [
+                "100 a+10 b+c−(a+b+c)=99 a+9 b olur. Bu fark 9’un, dolayısıyla 3’ün katıdır. Bu cebir, rakam toplamının hem tam bölünme hem de kalan bulma amacıyla kullanılmasını gerekçelendirir. Daha çok basamakta 10^j−1 sayıları da 9’a bölündüğü için aynı düşünce sürer.",
+                "Rakam toplamını tek haneye kadar indirmek bazı sorularda yardımcıdır ama son kalanla karıştırılmamalıdır. Toplam 9 ise 9’a kalan 0’dır; tek haneli 9’u kalan diye bırakma.0 sayısının bütün rakam toplamı 0’dır ve bu kurallarla tutarlıdır. Her adımda hedef böleni aynı tut."
+              ]
+            },
+            {
+              "title": "11 için işaretli ağırlık tablosu",
+              "text": [
+                "Sağdan ağırlıklar 1,−1,1,−1,… seçilir. Böylece dört haneli [abcd] için d−c+b−a kullanılır. Başlangıç soldan yapılıp a−b+c−d bulunursa bunun negatifi elde edilir; tam bölünmede ikisi birlikte 0 sınıfındadır, ama sıfırdan farklı kalanları genellikle aynı değildir.",
+                "Dönüşümlü toplam−13 ise 11’e göre kalan 9’dur:−13=11×(−2)+9. Toplam 22 ise kalan 0’dır. Etkinlikte her rakamın işaretli ağırlığı ve katkısı ayrı HTML satırlarında, toplamın kalana indirgenmesi sonuçta görünür. İşaretleri keyfî mutlak değere çevirmek kalan bilgisini kaybettirebilir."
+              ]
+            },
+            {
+              "title": "7 testi ile aynı kalanı ayır",
+              "text": [
+                "N=10 q+d için M=q−2 d düşün.2 N=20 q+2 d,21 q−2 N=q−2 d=M olduğundan N’nin 7’ye bölünmesi M’nin 7’ye bölünmesine denktir. Bu yöntem 7’ye tam bölünmeyi sınar; N ile M’nin 7’ye kalanının eşit olduğunu söylemez. Katsayı tersliği nedeniyle kalan başka bir sınıfa gidebilir.",
+                "Kalan isteniyorsa uzun bölme veya 10’un kuvvetlerinin 7’ye kalanlarıyla ağırlık tablosu güvenlidir. Bir kısa testin “tam bölünür/bölünmez” kararı vermesi, her aritmetik bilgiyi koruduğunu göstermez. Yeni bir kuralı kullanırken hangi niceliğin korunduğunu bir eşitlikle açıkla."
+              ]
+            },
+            {
+              "title": "Kalan toplamı, çarpımı ve çıkarma",
+              "text": [
+                "A ve B aynı bölen m ile inceleniyorsa kalanları r ve s üzerinden A²+AB−B gibi bir ifade r²+rs−s ile aynı sınıfa iner. İşlem önceliğini koru; önce üs ve çarpım, sonra toplama/çıkarma yapılır. Ara değer negatif veya m’den büyükse son adımda yeniden normalleştir.",
+                "Farklı bölenlere ait kalanları tek bir modda doğrudan karıştırma. “A’nın 5’e kalanı 2, B’nin 7’ye kalanı 3” bilgisi A+B’nin 7’ye kalanını tek başına belirlemez. Koşulları ayrı denklemler olarak yaz; yeterli bilgi yoksa tek sayısal cevap üretme. Bir karşı örnek, eksik bilginin sonucu nasıl değiştirdiğini gösterebilir."
+              ]
+            },
+            {
+              "title": "Kuvvetlerde döngü ve başlangıç",
+              "text": [
+                "Taban kalanı r olsun; r,r²,r³,… değerlerini her çarpım sonrası aynı bölenle küçült.1’e dönüş varsa buradan bir dönem kurulabilir. r bölenle ortak çarpan taşıdığında 0’a yerleşme veya farklı bir başlangıç kuyruğu oluşabilir; bütün diziler ilk terimden aynı kalıpla dönmez.",
+                "Üs dönem uzunluğuna tam bölünüyorsa dönemin son terimi seçilir; sıfırıncı terimle rastgele değiştirilmez. Örneğin dönem 4 ise üs 4 k olan kuvvet dönemin 4. konumundadır.0’ın sıfırıncı kuvveti gibi ayrı tanım sorunlarını, verilen pozitif üslerin doğal tekrar çarpımı modeline taşımadan sınırla."
+              ]
+            },
+            {
+              "title": "Kalan eşitliğini ne zaman bölebilirsin?",
+              "text": [
+                "kx≡ky(mod m) ifadesi m’nin k(x−y)’yi böldüğünü anlatır. k ile m aralarında asal ise x≡y(mod m) sonucu çıkar. Aralarında asal değillerse aynı m ile sadeleştirme yeni çözümleri kaybettirebilir. Örneğin 3 x’in 9’a kalanı 3 iken x=1,4,7 aynı koşulu sağlar.",
+                "Başlangıç düzeyinde güvenli yol x’in 0–m−1 adaylarını sınamaktır. Bu adaylar bütün kalan sınıflarını kapsar. Denklemden çıkan adayın yalnız ilk kalana değil, asıl ifadeye de uyduğunu kontrol et. Kesirle bölme, tam sayı bölme ve modüler sadeleştirme farklı işlemlerdir; aynı işaret görünümü koşulları birleştirmez."
+              ]
+            },
+            {
+              "title": "İki kalan koşulu ve çözüm aralığı",
+              "text": [
+                "N≡r(mod a), N≡s(mod b) koşulları ayrı ayrı N=ak+r ve N=bℓ+s demektir. Aynı kalan varsa N−r ortak kattır. Farklı kalanlarda tek bir r çıkarıp iki koşulu birden elde edemezsin. Küçük adaylarda bir diziyi üretip diğerinin kalanı ile filtrelemek güvenlidir.",
+                "Bir aday bulunduğunda EKOK(a,b) kadar eklemek her iki kalanı da korur. Ancak önce adayın varlığını ve ilk uygun değeri denetle. EBOB(a,b), s−r farkını bölmüyorsa hiç çözüm yoktur. Aralık uçlarının dahil olup olmadığı, bulunan dizide kaç aday sayılacağını belirler; negatif veya sıfır bölüm iznini kökten oku."
+              ]
+            },
+            {
+              "title": "Sıralı döngü ve son kontrol",
+              "text": [
+                "Renk, görev veya gün dizisi 1’den sayılıyorsa kalanı 0 olan sıra tam grubun son elemanına karşılık gelir.0’dan sayılan dizide ise eşleme değişir. Takvimde “12. kez” ilk olay zaten sayılmışsa 11 aralık geçmiştir; olay sayısı ile zaman aralığı adedini ayır. Başlangıç anını açık yazmak belirsizliği giderir.",
+                "Her cevapta A=bq+r eşitliğini ve kalan aralığını geri kontrol et. Bölünebilme sorusunda gerçek sayıyı her bölenle sınamak, rakam sorusunda bütün adayları tüketmek, kuvvette dönemi ve üssün sırasını doğrulamak ayrı kontrollerdir. Etkinlik ve özgün alıştırmalar bu kontrolü öğretir; öğrenme veya tamamlanma kaydı oluşturmaz."
+              ]
+            }
+          ],
+          "source": "MEBİ TYT Matematik Bölünebilme Kuralları 1–2, OGM 9 Kalanlı Bölme/Bölünebilme özetleri ve Aurelia ilgili notunun okunan bölümleriyle karşılaştırılan özgün anlatım. Yeni örnekler ve sorular resmî sınav sorusu değildir."
+        }
+      }
+    ]
   }
 ]

@@ -857,8 +857,21 @@ export const forge026MathGuides: LessonGuide[] = [
         title: "Ayrı şartlar çarpılır mı?",
         paragraphs: [
           "Aralarında asal a ve b’ye tam bölünen sayı ab’ye de tam bölünür. Çünkü iki koşul birbirinde olmayan asal kuvvetleri ister.3 ve 4’ün birlikte sağlanması 12’ye yeter;2 ve 4 ise 8’e yetmez.4 koşulu 2’yi zaten içerir. Karşı örnek olarak 20,2’ye ve 4’e bölünür ama 8’e bölünmez.",
-          "Genel ortak şart EKOK(a,b)’dir.6 için 2 ve 3;12 için 3 ve 4;18 için 2 ve 9;24 için 3 ve 8 birlikte sınanır.25 için 100’ün kat kısmı çıkarıldığından son iki blok 00,25,50 veya 75 olmalıdır. Bir bileşik bölenin yalnız bazı çarpanlarını denetlemek yeterli sayılmaz; gereken bütün asal kuvvetleri karşıla.",
+          "Genel ortak şart EKOK(a,b)’dir.6 için 2 ve 3;12 için 3 ve 4;18 için 2 ve 9;24 için 3 ve 8 birlikte sınanır.25 için 100’ün kat kısmı çıkarıldığından son iki blok 00,25,50 veya 75 olmalıdır. Bir bileşik bölenin gereken bütün asal kuvvetlerini karşıla. 4 ve 6’nın küçük ortak katları 12, 24, 36’dır. Tabloda 12’nin iki koşula yettiğini, 24’ün gerekmediğini gör.",
         ],
+        table: {
+          layout: "table",
+          headers: ["İki tam bölünme şartı", "En küçük ortak kat", "Bölenleri çarparsan"],
+          rows: [[2, 4], [3, 4], [4, 6]].map(([first, second]) => {
+            const shared = gcd026(first, second);
+            const product = first * second;
+            return [
+              `${first} ve ${second}`,
+              String(product / shared),
+              shared === 1 ? `${product} yeterli ve gerekli` : `${product} gereksiz güçlü`,
+            ];
+          }),
+        },
       },
       {
         title: "Kalanlarla işlem yap, yeniden küçült",
@@ -1157,7 +1170,7 @@ export const forge026MathGuides: LessonGuide[] = [
       },
     ],
     source:
-      "MEBİ TYT Matematik Bölünebilme Kuralları 1–2, OGM 9 Kalanlı Bölme/Bölünebilme özetleri ve Aurelia ilgili notunun okunan bölümleriyle karşılaştırılan özgün anlatım. Yeni örnekler ve sorular resmî sınav sorusu değildir.",
+      "MEBİ TYT Matematik Bölünebilme Kuralları 1–2, OGM 9 Kalanlı Bölme/Bölünebilme özetleri ve Aurelia ilgili notunun okunan bölümleriyle karşılaştırılan özgün anlatım. Bölme Bölünebilme Kuralları 1.1 fiziksel s. 3–4: ortak kat karşılaştırması. Yeni örnekler ve sorular resmî sınav sorusu değildir.",
   },
   {
     id: "ebob-ekok",

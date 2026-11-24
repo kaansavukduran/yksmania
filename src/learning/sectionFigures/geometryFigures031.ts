@@ -1425,35 +1425,52 @@ const ucgenMerkezleri: Record<string, FigureDef> = {
     },
   },
   "Dış açıortayda nokta uzantıda olur": {
-    caption:
-      "AB < AC olduğunda A'daki dış açıortay BC doğrusunu B tarafındaki uzantıda keser. Oran yine |BE|/|CE| = AB/AC, ama BC artık bir farktır.",
-    alt: "ABC üçgeni; CA kenarı A'nın ötesine uzatılmış ve A'daki dış açının açıortayı çizilmiş. Bu açıortay BC doğrusunu B'nin solundaki E noktasında kesiyor.",
-    draw: () => {
+    caption: "AC ve BC altışar birim. AB’nin değerini değiştirerek dış açıortayın hangi uzantıyı kestiğini gör.",
+    alt: "A köşesinden dış açıortayı çizilmiş ABC üçgeni. Eş yan kenarlarda dış açıortay tabana paralel. Farklı uzunluklarda E uzantıda işaretli.",
+    steps: ["AB < AC", "AB = AC", "AB > AC"],
+    draw: (_, step) => {
+      const ab = [4, 6, 8][step];
+      const ac = 6;
+      const bc = 6;
       const B = v(0, 0);
-      const C = v(6, 0);
-      const A = v(1, 3);
+      const C = v(bc, 0);
+      const A = fromSides(bc, ab, ac)!;
       const inner = add(unit(sub(B, A)), unit(sub(C, A)));
-      const ext = rot(inner, 90);
-      const E = meet(A, add(A, ext), B, C);
-      const X = add(A, mul(unit(sub(A, C)), 2));
-      const ab = dist(A, B);
-      const ac = dist(A, C);
+      const exterior = rot(inner, 90);
+      const frame = [
+        tri(A, B, C),
+        dim(B, A, String(ab), C),
+        dim(A, C, String(ac), B),
+        pt(A, "A", "n"),
+        pt(B, "B", "s"),
+        pt(C, "C", "s"),
+      ];
+      if (ab === ac) {
+        return {
+          els: [...frame, line(v(-1, A[1]), v(7, A[1]), { tone: "a", ext: 0.25 })],
+          readout: ["AB = AC = 6", "Dış açıortay ∥ BC. Sonlu bir E noktası yok."],
+        };
+      }
+      const E = meet(A, add(A, exterior), B, C);
+      const near = ab < ac ? B : C;
+      const far = ab < ac ? C : B;
+      const continuation = add(A, mul(unit(sub(A, far)), 1.5));
+      const be = dist(B, E);
+      const ce = dist(C, E);
       return {
         els: [
-          tri(A, B, C),
-          seg(A, X, { dash: true, tone: "muted" }),
-          seg(E, B, { dash: true, tone: "muted" }),
+          ...frame,
+          seg(E, near, { dash: true, tone: "muted" }),
+          seg(A, continuation, { dash: true, tone: "muted" }),
           seg(A, E, { tone: "a" }),
-          ang(A, X, E, undefined, { tone: "a", r: 30 }),
-          ang(A, E, B, undefined, { tone: "a", r: 36 }),
-          pt(A, "A", "n"),
-          pt(B, "B", "s"),
-          pt(C, "C", "se"),
+          ang(A, near, E, undefined, { tone: "a", r: 26 }),
+          ang(A, E, continuation, undefined, { tone: "a", r: 26 }),
           pt(E, "E", "s", "a"),
         ],
         readout: [
-          `|BE|/|CE| ≈ ${fmt(dist(B, E), 2)}/${fmt(dist(C, E), 2)} ≈ ${fmt(dist(B, E) / dist(C, E), 3)}`,
-          `AB/AC = √10/√34 ≈ ${fmt(ab / ac, 3)}`,
+          ab < ac ? "E, B tarafındaki uzantıda." : "E, C tarafındaki uzantıda.",
+          `|BE|/|CE| = ${fmt(be)}/${fmt(ce)} = ${ab}/${ac}`,
+          `Uzaklıkların farkı: ${fmt(Math.max(be, ce))} − ${fmt(Math.min(be, ce))} = ${bc}`,
         ],
       };
     },

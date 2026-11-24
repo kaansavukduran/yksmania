@@ -2120,7 +2120,7 @@ const packs031: FoundationPack031[] = [
     title: "Üçgende yardımcı elemanlar: açıortay, kenarortay ve merkezler",
     minutes: 55,
     source:
-      "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir.",
+      "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Açıortay 5.1 fiziksel s. 2 ve 5: dış açıortay koşulları. Sorular resmî sınav sorusu değildir.",
     objectives: [
       "Açıortay, kenarortay, yükseklik ve orta dikmenin farklı tanımlarını ayır.",
       "İç ve dış açıortay oranlarını noktanın konumuyla uygula.",
@@ -2154,6 +2154,7 @@ const packs031: FoundationPack031[] = [
         paragraphs: [
           "A köşesindeki bir dış açının açıortayı BC doğrusunu E’de kesiyorsa E,BC doğru parçasının dışındadır ve |BE|/|CE|=AB/AC olur. İç açıortayda parçalar toplanarak BC’yi verir; dış açıortayda ilgili büyük ve küçük uzaklığın farkı BC’dir.",
           "AB=AC ise A’daki dış açıortay BC’ye paraleldir; sonlu bir kesişim noktası varmış gibi oran denklemi kurma. AB<AC olduğunda |BE|<|CE| olacağı için E,B tarafındaki uzantıda bulunur. Önce B,C,E sırasını yerleştirmek toplam–fark hatasını önler.",
+          "AB>AC olduğunda |BE|>|CE|, yani E, C tarafındadır. Üç durumu gösteren modelde aynı AC ve BC uzunluklarını koruyup AB’yi değiştir. Dış açıortayın BC ile kesiştiği taraf, iki yan kenarın karşılaştırmasına bağlıdır.",
         ],
       },
       {
@@ -2898,6 +2899,7 @@ const quickSheets031: Record<string, FoundationQuickSheet031> = {
       },
       {
         title: "İç ve dış açıortay",
+        figureTitle: "Dış açıortayda nokta uzantıda olur",
         text: [
           "AD iç açıortay,D∈BC; AB=c,AC=b,BD=m,DC=n ise m/n=c/b ve AD²=bc−mn. Alan(ABD)/Alan(ACD)=m/n.",
           "Dış açıortay BC’yi E’de keserse E uzantıdadır,BE/CE=AB/AC; büyük–küçük uzaklık farkı BC’dir. AB=AC ise dış açıortay BC’ye paraleldir.",
