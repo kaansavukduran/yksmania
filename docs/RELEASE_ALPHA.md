@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.104.0 · Genlik ve denge seviyesi
+
+Yayın adayı. Genliği değiştirip bir tam periyodun dört işaretini karşılaştır. Su şemasında durgun seviyeyi bul. Kopya Kağıdı’nda genliği ve iki uç arasındaki düşey uzaklığı ayrı hesapla.
+
 # ÖSYM Mania 0.103.0 · Dalga önünün konumu
 
 Yayın adayı. Zamanı değiştirerek dalga önünün yarım ve tam periyotta ne kadar ilerlediğini gör. Kopya Kağıdı’nda hesabı ve çözüm çizimini aç. Çevrimdışı hazırlık sırasında bir dosya geçici sunucu hatası verdiğinde uygulama yeniden deniyor.

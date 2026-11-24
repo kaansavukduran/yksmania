@@ -1,8 +1,8 @@
 {
-  "version": "0.103.0",
+  "version": "0.104.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Dalga önünün yarım ve tam periyotta ne kadar ilerlediğini çizimle incele. Çevrimdışı dosya hazırlığı geçici sunucu hatasında yeniden deniyor.",
-    "en": "See how far a wavefront travels after half and one full period. Offline preparation retries a temporary server error."
+    "tr": "Genliği zaman grafiğinden ölç. Su yüzeyinde denge çizgisini, çukuru ve tepeyi karşılaştır. Kopya Kağıdı’nda düşey uzaklığı adım adım hesapla.",
+    "en": "Measure amplitude in a time plot, compare crest and trough with a still water level, and work through the vertical-distance example."
   }
 }

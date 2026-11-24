@@ -18,6 +18,7 @@ import {
 } from "./figureKit";
 import { wavelengthMarkers, wavelengthTitle, wavePeriodTitle, waveRopeTitle, waveTiming } from "../mebiWaveBasics";
 import { waveTravelAt, waveTravelFrequencyHz, waveTravelSpeedMps, waveTravelTitle, waveTravelWavelengthM } from "../mebiWaveTravel";
+import { waterAmplitudeTitle, waveAmplitudeBounds, waveAmplitudeInitialCm, waveAmplitudeTitle } from "../mebiWaveAmplitude";
 
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
@@ -109,6 +110,54 @@ const giris: Record<string, FigureDef> = {
         ...span(v(10, -3), v(10, 3), "6 cm = 2A", v(0, 0), "warn"),
       ],
     }),
+  },
+  [waveAmplitudeTitle]: {
+    caption: "Grafik, telin aynı noktasını bir periyot boyunca izliyor. Genlik, sıfır çizgisinden tepeye ya da çukura ölçülen uzaklık.",
+    alt: "Uzanım–zaman grafiği. Nokta T/4’te +A, 3T/4’te −A değerine ulaşıyor. 0, T/2 ve T anlarında denge çizgisinden geçiyor.",
+    param: { label: "Genlik A", min: 1, max: 4, step: 1, init: waveAmplitudeInitialCm, unit: " cm" },
+    draw: (amplitude) => {
+      const { maximumCm, minimumCm, spanCm } = waveAmplitudeBounds(amplitude);
+      const marks = ["T/4", "T/2", "3T/4", "T"];
+      return {
+        els: [
+          vec(v(0, -4.45), v(0, 4.8), { tone: "muted", thin: true }),
+          vec(v(0, 0), v(9.55, 0), { tone: "muted", thin: true }),
+          txt(v(0, 4.8), "Uzanım (cm)", "n", { small: true, tone: "muted" }),
+          txt(v(9.55, 0), "Zaman (s)", "e", { small: true, tone: "muted" }),
+          wave(sine(0, 8, amplitude, 8)),
+          base(0, 2, maximumCm),
+          base(0, 6, minimumCm),
+          txt(v(0, maximumCm), "+A", "w", { small: true, tone: "a" }),
+          txt(v(0, minimumCm), "−A", "w", { small: true, tone: "c" }),
+          pt(v(2, maximumCm), "", "n", "a"),
+          pt(v(6, minimumCm), "", "n", "c"),
+          ...marks.flatMap((mark, index) => {
+            const x = 2 * (index + 1);
+            return [seg(v(x, -0.12), v(x, 0.12), { tone: "muted", thin: true }), txt(v(x, -0.20), mark, "s", { small: true })];
+          }),
+        ],
+        readout: [`Genlik: ${amplitude} cm. Tepe: +${maximumCm} cm. Çukur: −${-minimumCm} cm.`, `İki uç arası düşey uzaklık: ${spanCm} cm.`],
+      };
+    },
+  },
+  [waterAmplitudeTitle]: {
+    caption: "Bir anda çekilmiş ideal su profili. Kesik çizgi, suyun durgun seviyesidir. Durgun seviyeye dik uzaklık iki uçta da 3 cm.",
+    alt: "Kesikli durgun su çizgisinin altında bir çukur, üstünde bir tepe var. İkisi de durgun seviyeye 3 santimetre uzaklıkta.",
+    draw: () => {
+      const { maximumCm, minimumCm } = waveAmplitudeBounds(waveAmplitudeInitialCm);
+      return {
+        els: [
+          base(0, 8.5),
+          wave(sine(0, 8.5, -maximumCm, 8)),
+          pt(v(2, minimumCm), "−3 cm", "s", "c"),
+          pt(v(6, maximumCm), "+3 cm", "n", "a"),
+          ...span(v(2, minimumCm), v(2, 0), "A", 1, "c"),
+          ...span(v(6, 0), v(6, maximumCm), "A", -1, "a"),
+          txt(v(8.5, 0), "Durgun seviye", "e", { small: true, tone: "muted" }),
+        ],
+        readout: ["İki düşey ölçü de genlik A. Yatay yön konumu gösterir."],
+      };
+    },
   },
   [wavelengthTitle]: {
     caption:
