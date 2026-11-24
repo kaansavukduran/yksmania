@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.137.0 · Su derinliği ve tepe aralığı
+
+Yayın adayı. İki leğenin yan kesitini ve kâğıt şeritlerini aynı ölçekte incele. Ortak sınırda iki geçiş yönünü seç ve kaynağın frekansı aynı kalırken tepe aralığının nasıl değiştiğini gör. Kopya Kağıdı periyodu ve iki dalga boyunu kendi çiziminde hesaplıyor.
+
 # ÖSYM Mania 0.136.0 · Çizimli yansıma sorusu
 
 Yayın adayı. Düz engelin üzerindeki tepe çizgilerinden açıyı ve aralığı oku. İpucu hangi doğruya bakacağını hatırlatıyor. Yansıyan açı ve tepe aralığı, çözümün kendi çiziminde ve tablosunda açılıyor.

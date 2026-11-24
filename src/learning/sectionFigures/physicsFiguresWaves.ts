@@ -53,6 +53,8 @@ import { sourceDistanceCm, virtualWaterAt, virtualWaterReflectionTitle, virtualW
 
 import { convexFocusCm, convexWater, convexWaterReflectedTitle, convexWaterTitle, surfaceNormalTitle } from "../mebiConvexWater";
 
+import { interfaceDepth, joinCm, tankLengthCm, twoTankDepthTitle, waterDepthAt, waterDepthTimes, waterDepthTitle } from "../mebiWaterDepth";
+
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
  * Waves are sampled from y = A·sin(2π(x − x0)/λ); pulses from a smooth bump.
@@ -1292,8 +1294,16 @@ const su: Record<string, FigureDef> = {
   ...Object.fromEntries(concaveStepFigureTitles.map((title, step) => [
     title,
     {
-      caption: concaveModes[step],
-      alt: concaveWaterFigure.alt,
+      caption: [
+        "Düz gelen cephelerin yansıyan hız oklarını F odağına kadar izle.",
+        "F odağındaki kaynaktan gelen okların engelden yaklaşık paralel döndüğünü izle.",
+        "M merkezindeki kaynaktan gelen okların kendi doğrultularında geri döndüğünü izle.",
+      ][step],
+      alt: [
+        "Düz gelen cepheler çukur engele ulaşır. Yansıyan hız okları F çevresine yönelir.",
+        "F odağındaki kaynaktan gelen eğri cepheler çukur engele ulaşır. Yansıyan oklar yaklaşık paraleldir.",
+        "M merkezindeki kaynaktan çıkan cepheler çukur engele dik gelir ve merkeze doğru geri döner.",
+      ][step],
       draw: () => concaveWaterFigure.draw(0, step),
     } satisfies FigureDef,
   ])),
@@ -1517,22 +1527,79 @@ const su: Record<string, FigureDef> = {
     alt: virtualWaterFigure.alt,
     draw: () => virtualWaterFigure.draw(sourceDistanceCm.initial, 1),
   },
-  "Derinlik değişince kaynak değişmez": {
-    caption:
-      "Üstten görünüm, dik geliş. Derin bölgede v₁ = 12 cm/s, sığ bölgede v₂ = 6 cm/s; frekans 4 Hz'de aynı kalır. Bu yüzden λ 3 cm'den 1,5 cm'ye iner ve tepe çizgileri sığda sıklaşır.",
-    alt: "Ortada dikey sınır; solda geniş aralıklı, sağda yarı aralıklı paralel tepe çizgileri; her iki bölgede λ ölçüsü.",
-    draw: () => {
-      const sc = 0.8;
-      const els: El[] = [poly([v(6 * sc * 2, -2.4), v(12 * sc * 1.5, -2.4), v(12 * sc * 1.5, 2.4), v(6 * sc * 2, 2.4)], { fill: "muted", tone: "muted", thin: true })];
-      for (let x = 3; x <= 12; x += 3) els.push(seg(v(x * sc, -2), v(x * sc, 2), { tone: "b" }));
-      for (let x = 13.5; x <= 18; x += 1.5) els.push(seg(v(x * sc, -2), v(x * sc, 2), { tone: "c" }));
-      els.push(
-        ...span(v(3 * sc, -2.5), v(6 * sc, -2.5), "λ₁ = 3 cm", -1, "b"),
-        ...span(v(13.5 * sc, -2.5), v(15 * sc, -2.5), "λ₂ = 1,5", -1, "c"),
-        txt(v(6 * sc, 2.4), "derin: v₁ = 12 cm/s", "n", { small: true }),
-        txt(v(15 * sc, 2.4), "sığ: v₂ = 6 cm/s", "n", { small: true }),
-      );
-      return { els, readout: ["f = 12/3 = 6/1,5 = 4 Hz"] };
+  [twoTankDepthTitle]: {
+    caption: "İki leğenin yan kesitini ve kâğıt şeritlerini aynı yatay ölçekte oku. İki çubuk da 4 Hz ile titreşir.",
+    alt: "Üstte sığ leğen ve sık tepe şeritleri, altta derin leğen ve daha aralıklı şeritler. Her kesitin altında ayrı kâğıt görünümü var.",
+    maxHeight: 660,
+    param: {
+      label: "Gözlem süresi", min: waterDepthTimes.min, max: waterDepthTimes.max,
+      step: waterDepthTimes.step, init: waterDepthTimes.initial, unit: " s",
+    },
+    draw: (time) => {
+      const panels = [
+        { depth: "shallow", origin: 10.3, tone: "a", label: "Sığ leğen", base: 1.0 },
+        { depth: "deep", origin: 2.1, tone: "c", label: "Derin leğen", base: 1.6 },
+      ] as const;
+      const els = panels.flatMap(({ depth, origin, tone, label, base }): El[] => {
+        const state = waterDepthAt(time, depth, depth);
+        const water = Array.from({ length: 161 }, (_, index) => {
+          const x = index * tankLengthCm / 160;
+          return v(x, origin + state.height(x) * 0.61);
+        });
+        const paper = origin - 2.35;
+        const [leftCrest, rightCrest] = state.crests.filter((x) => x >= 2.5);
+        return [
+          txt(v(0, origin + 1.25), label, "e", { tone, small: true }),
+          poly([v(0, origin - base), ...water, v(tankLengthCm, origin - base)], { fill: "b", tone: "b", thin: true }),
+          seg(v(0, origin - base), v(0, origin + 0.63), { tone, bold: true }),
+          poly([v(0, paper), v(tankLengthCm, paper), v(tankLengthCm, paper - 0.85), v(0, paper - 0.85)], { tone: "muted", thin: true }),
+          ...state.crests.map((x) => seg(v(x, paper), v(x, paper - 0.85), { tone: "b", bold: true })),
+          ...state.troughs.map((x) => seg(v(x, paper), v(x, paper - 0.85), { tone: "muted", thin: true, dash: true })),
+          txt(v(tankLengthCm, paper - 0.85), "Kâğıt", "s", { tone: "muted", small: true }),
+          ...span(v(leftCrest, paper - 1.1), v(rightCrest, paper - 1.1), `${fmt(state.firstWavelength)} cm`, -1, tone),
+        ];
+      });
+      return { els, readout: ["Sığ leğen: 6 cm/s ve 1,5 cm. Derin leğen: 12 cm/s ve 3 cm.", "Frekans ikisinde de 4 Hz. Periyot 0,25 s."] };
+    },
+  },
+  [waterDepthTitle]: {
+    caption: "Tek çubuk iki bölgede aynı frekansı sürdürür. Bölge sırasını ve zamanı değiştir. Yan kesitte tepe, üstte aynı tepenin çizgisi ilerler.",
+    alt: "İki derinlikli dalga leğeni, orta birleşim dik kesikli. Üstte derinlik kesiti ve su profili, altta üstten görünümde aynı tepe çizgileri var.",
+    param: {
+      label: "Gözlem süresi", min: waterDepthTimes.min, max: waterDepthTimes.max,
+      step: waterDepthTimes.step, init: waterDepthTimes.initial, unit: " s",
+    },
+    steps: ["Sığdan derine", "Derinden sığa"],
+    draw: (time, step) => {
+      const state = interfaceDepth(time, step === 0 ? "sığdan derine" : "derinden sığa");
+      const base1 = state.first.label === "Sığ" ? 3.2 : 2.6;
+      const base2 = state.second.label === "Sığ" ? 3.2 : 2.6;
+      const water = Array.from({ length: 161 }, (_, index) => {
+        const x = index * tankLengthCm / 160;
+        return v(x, 4.4 + 0.65 * state.height(x));
+      });
+      const cap = 5.8;
+      const [firstA, firstB] = state.crests.filter((x) => x >= 2 && x < joinCm);
+      const [nextA, nextB] = state.crests.filter((x) => x >= joinCm + 1);
+      return {
+        els: [
+          poly([v(0, base1), ...water, v(tankLengthCm, base2), v(joinCm, base2), v(joinCm, base1)], { fill: "b", tone: "b", thin: true }),
+          poly([v(0, 0.3), v(tankLengthCm, 0.3), v(tankLengthCm, 1.8), v(0, 1.8)], { tone: "muted" }),
+          seg(v(joinCm, 0.3), v(joinCm, cap), { tone: "muted", dash: true }),
+          ...state.crests.map((x) => seg(v(x, 0.3), v(x, 1.8), { tone: "b", bold: true })),
+          vec(v(4, 2.2), v(4 + state.firstWavelength, 2.2), { tone: "a" }),
+          vec(v(16, 2.2), v(16 + state.secondWavelength, 2.2), { tone: "c" }),
+          txt(v(5.5, cap), state.first.label, "n", { tone: "a", small: true }),
+          txt(v(18.5, cap), state.second.label, "n", { tone: "c", small: true }),
+          ...span(v(firstA, 0), v(firstB, 0), `${fmt(state.firstWavelength)} cm`, -1, "a"),
+          ...span(v(nextA, 0), v(nextB, 0), `${fmt(state.secondWavelength)} cm`, -1, "c"),
+        ],
+        readout: [
+          `${state.first.label}: ${state.first.speed} cm/s, λ = ${fmt(state.firstWavelength)} cm.`,
+          `${state.second.label}: ${state.second.speed} cm/s, λ = ${fmt(state.secondWavelength)} cm.`,
+          "Frekans 4 Hz. Periyot 0,25 s. Çizimde iletilen dalga gösteriliyor.",
+        ],
+      };
     },
   },
   "Kırılma açısını normalden denetle": {
