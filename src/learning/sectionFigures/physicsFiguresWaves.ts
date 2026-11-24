@@ -22,6 +22,7 @@ import { waterAmplitudeTitle, waveAmplitudeBounds, waveAmplitudeInitialCm, waveA
 import { waveClassificationExamples, waveClassificationTitle } from "../mebiWaveClassification";
 import { tuningForkSnapshot, tuningForkTitle } from "../mebiTuningFork";
 import { pulseMarkerM, pulseSpeedMps, pulseSupportM, pulseWidthM, springPulseAt, springPulseTitle } from "../mebiSpringPulse";
+import { surfaceAmplitudeM, surfaceCrestX, surfaceMarkerM, surfaceWavePosition, surfaceWaveTitle } from "../mebiSurfaceWave";
 
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
@@ -643,24 +644,29 @@ const yay: Record<string, FigureDef> = {
 };
 
 const su: Record<string, FigureDef> = {
-  "Su taşınırken mi dalga ilerler?": {
-    caption:
-      "Yüzey kesiti: tepe sağa doğru ilerlerken mantar yaklaşık aynı yerde küçük bir daire çizer; hareketinde hem düşey hem yatay bileşen vardır. Zamanı ilerlet.",
-    alt: "Sinüs biçimli su yüzeyi, x = 4 metrede küçük kesikli daire ve daire üzerinde mantar noktası.",
-    param: { label: "t", min: 0, max: 1, step: 0.125, init: 0, unit: " T" },
-    draw: (t) => {
-      const lam = 4;
-      const shift = lam * t;
-      const phase = (TAU * (4 - shift)) / lam;
-      const cork = v(4 - 0.5 * Math.cos(phase), 0.5 * Math.sin(phase));
+  [surfaceWaveTitle]: {
+    caption: "Zamanı ilerlet. P işareti kesik çemberi dolaşır. Tepe etiketi sağa doğru ilerler. Başlangıçta P ve izlenen tepe aynı konumdadır.",
+    alt: "Su yüzeyinin yandan görünümü. Üç metre çevresindeki P işareti çember çizer. Tepe etiketi, su yüzeyinde sağa ilerleyen tepeyi izler.",
+    param: { label: "Geçen süre", min: 0, max: 1, step: 0.125, init: 0, unit: " T" },
+    draw: (time) => {
+      const position = surfaceWavePosition(surfaceMarkerM, time);
+      const crest = surfaceCrestX(time);
+      const surface = Array.from({ length: 121 }, (_, index) => {
+        const { x, y } = surfaceWavePosition(index / 10, time);
+        return v(x, y);
+      });
       return {
         els: [
-          wave(sine(0, 9, 0.5, lam, shift)),
-          circle(v(4, 0), 0.5, { dash: true, tone: "muted" }),
-          pt(cork, "mantar", "n", "a"),
-          vec(v(7, 1.2), v(8.4, 1.2), { tone: "c" }),
-          txt(v(8.4, 1.2), "dalga", "e", { small: true, tone: "c" }),
+          base(0, 12),
+          wave(surface),
+          circle(v(surfaceMarkerM, 0), surfaceAmplitudeM, { dash: true, tone: "a" }),
+          pt(v(position.x, position.y), "P", "sw", "a"),
+          seg(v(crest, surfaceAmplitudeM + 0.05), v(crest, 1.03), { tone: "c", dash: true }),
+          txt(v(crest, 1.03), "Tepe", "n", { tone: "c", small: true, bold: true }),
+          vec(v(8, 1.92), v(10.5, 1.92), { tone: "b" }),
+          txt(v(9.25, 2.1), "Yayılma", "n", { small: true }),
         ],
+        readout: [`P’nin yatay konumu ${fmt(position.x, 2)} m. İzlenen tepenin yatay konumu ${fmt(crest, 2)} m.`],
       };
     },
   },

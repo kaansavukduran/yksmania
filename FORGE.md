@@ -1,3 +1,9 @@
+# Su yüzeyinde işaret ve ilerleyen tepe · 0.109.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. Su dalgası yüzey kesitinde yeniden çizildi. P işareti, yüzey ve seçili tepe aynı modelden hesaplanıyor. P bir periyotta başlangıç konumuna dönerken tepe 6 m ilerliyor. Kopya Kağıdı çeyrek periyot tablosunu ve çözümlü örneği içeriyor. Bu küçük genlikli derin su yaklaşımıdır.
+
+Önceki çizimde tepedeki su işareti ilk anda ters yöne hareket ediyordu ve yüzey eğrisiyle ayrı hesaplanıyordu. Yeni çizimde ikisi aynı konum modeline bağlı. Check, 28 birim, derleme ve altı çevrimdışı tarayıcı testi geçti. 375 px çizim incelendi. Sıradaki fiziksel 151 kaynağı fay ve yer dalgası çizimi.
+
 # Soru görsellerinin içerik denetimi · 0.108.0 adayı
 
 İçerik denetimi, gereksinimi kaydedilmiş 10 kartta kök, ilgili şıklar, ipucu ve çözüm rollerini ayrı kontrol ediyor. Çizimi eksik şık, eksik çözüm adımı veya kaynak dosya kimliği bulunmayan görüntü denetimi durduruyor. Görsel gereksinimleri, geçmiş soru kayıtlarının dışında tutuluyor. Dalga sınıflandırmasındaki altı örneğe çizimden veya klavyeyle ulaşılabiliyor.

@@ -1,8 +1,8 @@
 {
-  "version": "0.108.0",
+  "version": "0.109.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Kaynak görseli beklenen sorularda kök, şık, ipucu ve çözüm çizimleri ayrı denetleniyor. Bir görsel yanlış sürüme bağlıysa içerik denetimi bunu yakalıyor.",
-    "en": "Required diagrams are checked separately in question stems, options, hints and solutions. The content check catches missing diagrams or mismatched revisions."
+    "tr": "Su yüzeyindeki bir noktayı dairesel hareketinde izle. Yayılan tepenin aldığı yolu yüzeydeki noktanın yer değiştirmesiyle Kopya Kağıdı’nda karşılaştır.",
+    "en": "Follow a point as it moves around a circle on a water wave. Compare the distance traveled by the crest with the point’s displacement in a worked example."
   }
 }

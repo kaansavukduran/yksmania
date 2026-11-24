@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.109.0 · Su yüzeyinde bir nokta ve bir tepe
+
+Yayın adayı. Yüzeydeki P işaretini çember üzerinde, tepeyi yayılma yönünde izle. Kopya Kağıdı’nda bir tam periyotta ikisinin yer değiştirmesini hesapla.
+
 # ÖSYM Mania 0.108.0 · Soru görsellerinde eksik rol denetimi
 
 Yayın adayı. Kaynakta görsel gerektirdiği kaydedilen sorularda kök, şık, ipucu ve çözüm ayrı denetleniyor. Dalga sınıflandırmasındaki her örneği çizimdeki düğmesinden de seçebilirsin.
