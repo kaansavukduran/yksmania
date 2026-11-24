@@ -1,8 +1,8 @@
 {
-  "version": "0.132.0",
+  "version": "0.133.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Düz cepheyi, F odağındaki ve M merkezindeki kaynağı aynı çukur engelde karşılaştır. Her durumun yansıyan cephelerini Kopya Kağıdı’nda incele.",
-    "en": "Compare a plane front, a source at F, and a source at M with the same concave barrier. Review each reflection in the cheat sheet."
+    "tr": "Dairesel tepeleri düz engele gönder. Yansıyan hız oklarının uzantılarından O′ konumunu ve iki tepe arasındaki uzaklığı ölç.",
+    "en": "Send circular crests toward a wall. Find O′ from the extensions of reflected directions and measure the crest spacing."
   }
 }

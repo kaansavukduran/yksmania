@@ -49,6 +49,8 @@ import { reflectedCrestsTitle, waterReflectionAngles, waterReflectionAt, waterRe
 
 import { concaveCenterX, concaveFocusX, concaveModes, concaveRadius, concaveStepFigureTitles, concaveWaterAt, concaveWaterTitle } from "../mebiConcaveWater";
 
+import { sourceDistanceCm, virtualWaterAt, virtualWaterReflectionTitle, virtualWaterTitle } from "../mebiVirtualWater";
+
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
  * Waves are sampled from y = A·sin(2π(x − x0)/λ); pulses from a smooth bump.
@@ -1182,6 +1184,53 @@ const concaveWaterFigure: FigureDef = {
   },
 };
 
+const virtualWaterFigure: FigureDef = {
+  caption: "Kaynağın engele uzaklığını değiştir. İlk aşamada gerçek kaynak O, ikinci aşamada yansıyan okların kesikli uzantılarından O′ görünür.",
+  alt: "Dikey düz engelin solunda gerçek O noktası var. Gelen daire parçaları O çevresinde. Yansıyan cephe parçaları yine engelin solunda ve kesikli hız uzantıları sağdaki sanal O′ noktasında kesişiyor.",
+  param: {
+    label: "Kaynak uzaklığı",
+    min: sourceDistanceCm.min,
+    max: sourceDistanceCm.max,
+    step: sourceDistanceCm.step,
+    init: sourceDistanceCm.initial,
+    unit: " cm",
+  },
+  steps: ["Gelen dairesel tepeler", "Yansıyan tepeler ve O′"],
+  draw: (distance, step) => {
+    const state = virtualWaterAt(distance);
+    const incoming = step === 0;
+    const toVector = ([x, y]: readonly [number, number]) => v(x, y);
+    const real = toVector(state.real);
+    const virtual = toVector(state.virtual);
+    const fronts = incoming ? state.incoming : state.outgoing;
+    const outer = fronts[fronts.length - 1];
+    const lower = outer[incoming ? 2 : 38];
+    const upper = outer[incoming ? 38 : 2];
+    return {
+      els: [
+        seg(v(0, -4.6), v(0, 4.6), { tone: "ink", bold: true }),
+        txt(v(0, 7.2), "Düz engel", "c", { small: true }),
+        ...fronts.map((front) => poly(front.map(toVector), { open: true, tone: "b", bold: true })),
+        ...state.rays.flatMap(({ hit, end }) => incoming
+          ? [vec(v(real[0] * 0.35, hit[1] * 0.65), toVector(hit), { tone: "a" })]
+          : [seg(toVector(hit), virtual, { dash: true, tone: "muted" }), vec(toVector(hit), toVector(end), { tone: "c" })]),
+        pt(real, "O", "w", "a"),
+        ...(!incoming ? [pt(virtual, "O′", "e", "muted", true)] : []),
+        pt(toVector(lower), "K", "s", "b"),
+        pt(toVector(upper), "L", "n", "b"),
+        ...span(v(real[0], -4.3), v(0, -4.3), `${fmt(distance)} cm`, -1, "a"),
+        ...(!incoming ? span(v(0, -4.3), v(virtual[0], -4.3), `${fmt(distance)} cm`, -1, "muted") : []),
+      ],
+      readout: [
+        incoming
+          ? `O, düz engelin ${fmt(distance)} cm önünde.`
+          : `O′, düz engelin ${fmt(distance)} cm arkasında. Yansıyan hız oklarının uzantıları O′’de kesişir.`,
+        `Ardışık tepe aralığı ${fmt(state.wavelength)} cm.`,
+      ],
+    };
+  },
+};
+
 const su: Record<string, FigureDef> = {
   [concaveWaterTitle]: concaveWaterFigure,
   ...Object.fromEntries(concaveStepFigureTitles.map((title, step) => [
@@ -1406,24 +1455,11 @@ const su: Record<string, FigureDef> = {
     alt: "Üç yansıyan tepe çizgisi aynı aralıkta. Hız oku yüzey normalinden 35 derece açılır.",
     draw: () => flatWaterReflectionFigure.draw(waterReflectionAngles.initial, 1),
   },
-  "Dairesel ve eğri engelleri karşılaştır": {
-    caption:
-      "Noktasal kaynak K, düz engelden 2 birim uzakta. Yansıyan cepheler engelin arkasındaki simetrik nokta K′'den çıkıyormuş gibi yayılır; K′ gerçek bir titreştirici değildir.",
-    alt: "Dikey düz engel; solunda kaynak K ve çevresinde daire yayları, sağında kesikli sanal kaynak K′; K′ merkezli kesikli yaylar engelin sol tarafına dönmüş.",
-    draw: () => {
-      const K = v(-2, 0);
-      const K2 = v(2, 0);
-      const arc = (c: V, r: number, a0: number, a1: number, tone: Tone, dash = false): El =>
-        poly(Array.from({ length: 41 }, (_, i) => add(c, pol(r, a0 + ((a1 - a0) * i) / 40))), { open: true, tone, dash, bold: !dash });
-      const els: El[] = [seg(v(0, -4), v(0, 4), { tone: "ink", bold: true }), pt(K, "K", "w", "a"), pt(K2, "K′", "e", "muted", true)];
-      for (const r of [1, 2]) els.push(arc(K, r, 0, 360, "b"));
-      for (const r of [3, 4]) {
-        const a = deg(Math.acos(2 / r));
-        els.push(arc(K, r, a, 360 - a, "b"), arc(K2, r, 180 - a, 180 + a, "c"));
-      }
-      els.push(...span(K, v(0, 0), "2", -1), ...span(v(0, 0), K2, "2", -1, "muted"));
-      return { els };
-    },
+  [virtualWaterTitle]: virtualWaterFigure,
+  [virtualWaterReflectionTitle]: {
+    caption: "Yansıyan okların geriye doğru uzantıları O′’de kesişir.",
+    alt: virtualWaterFigure.alt,
+    draw: () => virtualWaterFigure.draw(sourceDistanceCm.initial, 1),
   },
   "Derinlik değişince kaynak değişmez": {
     caption:

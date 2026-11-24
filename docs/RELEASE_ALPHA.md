@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.133.0 · Düz engelde sanal kaynak
+
+Yayın adayı. O’nun engele uzaklığını değiştir. Sonraki adımda kesikli hız uzantılarını O′’ye kadar izle. Ayrı Kopya Kağıdı, gerçek ve sanal kaynak uzaklıkları ile tepe aralığını kendi çizimlerinde ölçüyor.
+
 # ÖSYM Mania 0.132.0 · Çukur engelde odak ve merkez
 
 Yayın adayı. Düz cepheyi seç ve yansıyan okları F’ye doğru izle. Kaynağı F’ye yerleştirince cepheler yaklaşık düzleşiyor. M’deki kaynak için oklar kendi doğruları üzerinden merkeze dönüyor. Kopya Kağıdı her durumu kendi çiziminde açıyor.
