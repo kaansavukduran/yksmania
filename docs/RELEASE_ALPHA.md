@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.97.0 · İlk hareket ve son denge
+
+Yayın adayı. A, B ve C’yi bırakınca oluşan kuvvetleri ve son konumları iki çizimde karşılaştır. Kopya Kağıdı’nda A’nın çözümünü, özgün soruda batık hacim hesabını aç.
+
 # ÖSYM Mania 0.96.0 · Taşırma kabında üç denge
 
 Yayın adayı. Blok yoğunluğunu değiştirip taşan suyu ve kuvvetleri karşılaştır. Kopya Kağıdı’nda su ve taban desteğinin ağırlığı nasıl paylaştığını adım adım incele.

@@ -1,8 +1,8 @@
 {
-  "version": "0.96.0",
+  "version": "0.97.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Taşırma kabında yüzen, askıda kalan ve tabana inen bloğu karşılaştır. Kuvvet okları ve yan kaba dolan su aynı hesaba bağlıdır.",
-    "en": "Compare floating, suspended and bottom-supported blocks in an overflow tank. The force arrows and collected water use the same calculations."
+    "tr": "A, B ve C’nin ilk hareketini son dengeleriyle karşılaştır. Yeni yüzme sorusunda batık hacim ile hacim oranını adım adım ayır.",
+    "en": "Compare the starting motion of A, B and C with their equilibrium. A practice question distinguishes immersed volume from the fraction submerged."
   }
 }

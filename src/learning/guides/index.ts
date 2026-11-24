@@ -20,6 +20,7 @@ import { airFlowManometerExample, airFlowManometerSection } from "../mebiAirFlow
 import { doorPressureSection, liquidSuctionExample, liquidSuctionSection } from "../mebiDoorSuction";
 import { submergedBlockExample, submergedBlockSection, submergedBlockTitle } from "../mebiArchimedesPressure";
 import { overflowExample, overflowSection, overflowTitle } from "../mebiArchimedesOverflow";
+import { buoyancyEquilibriumExample, buoyancyEquilibriumSection } from "../mebiBuoyancyEquilibrium";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
@@ -413,13 +414,14 @@ export function studyGuide(lessonId: string) {
   if (guide?.id === "sivilarin-kaldirma-kuvveti") {
     return {
       ...guide,
-      sections: guide.sections.map((section) => {
-        if (section.title === submergedBlockTitle) return submergedBlockSection;
-        if (section.title === overflowTitle) return overflowSection;
-        return section;
+      sections: guide.sections.flatMap((section) => {
+        if (section.title === submergedBlockTitle) return [submergedBlockSection];
+        if (section.title === overflowTitle) return [overflowSection];
+        if (section.title === "Askıda kalma ile dibe oturmayı ayır") return [section, buoyancyEquilibriumSection];
+        return [section];
       }),
-      examples: [submergedBlockExample, overflowExample, ...guide.examples],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 146, basılı 144. sayfadaki üst, alt ve iki yan yüz kuvveti ile Arşimet bağıntısı karşılaştırıldı. Taşma oluğu ve üç denge örneği fiziksel 146–147, basılı 144–145. sayfalara dayanır. Çizimlerin sayısal değerleri özgün örnektir.`,
+      examples: [submergedBlockExample, overflowExample, buoyancyEquilibriumExample, ...guide.examples],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 146, basılı 144. sayfadaki üst, alt ve iki yan yüz kuvveti ile Arşimet bağıntısı karşılaştırıldı. Taşma oluğu ve üç denge örneği fiziksel 146–147, basılı 144–145. sayfalara dayanır. Fiziksel 147’nin altındaki A, B ve C’nin ilk hareketi ile denge konumları iki adım halinde gösterilir. Çizimlerin sayısal değerleri özgün örnektir.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

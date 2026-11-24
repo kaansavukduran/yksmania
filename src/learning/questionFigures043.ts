@@ -18,6 +18,7 @@ import { barometerQuestionFigures, barometerQuestionId } from "./barometerQuesti
 import { rigidGasQuestionFigures, rigidGasQuestionId } from "./rigidGasQuestion087";
 import { bernoulliChannelQuestionFigures, bernoulliChannelQuestionId } from "./bernoulliChannelQuestion091";
 import { archimedesQuestionFigures, archimedesQuestionId } from "./archimedesQuestion095";
+import { buoyancyFloatingQuestionFigures, buoyancyFloatingQuestionId } from "./buoyancyFloatingQuestion097";
 import {
   inverseTranslationFigures,
   inverseTranslationQuestion,
@@ -303,6 +304,14 @@ const bindings = new Map<string, FigureBinding>([
     pageLabel: "Fiziksel 146. sayfa, basılı 144",
     itemLabel: "Tam batık cismin kaldırma kuvveti, özgün soru",
     figures: archimedesQuestionFigures,
+  }],
+  [buoyancyFloatingQuestionId, {
+    stemRevision: "08d6e5f31bb205",
+    helpRevision: "05b17323d6d489",
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 147. sayfa, basılı 145",
+    itemLabel: "Serbest yüzen cismin batık hacmi, özgün soru",
+    figures: buoyancyFloatingQuestionFigures,
   }],
   [pistonQuestionId, {
     stemRevision: "122891ad73ac0c",
