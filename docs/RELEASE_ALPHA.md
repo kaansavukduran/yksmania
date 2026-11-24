@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.173.0 · Tam gölge
+
+Yayın adayı. Opak kürenin perdeye düşen tam gölgesini kaynağa 10 ve 14 cm uzaklıkta karşılaştır.
+
 # ÖSYM Mania 0.172.0 · Çevrimdışı açılış ve görselli optik
 
 Yayın adayı. Bağlantı göstergesi açık sayfanın çevrimdışı çalışana bağlandığını bildirir. Dört TYT Geometri kopya kağıdı ve MEBİ optik görselleri bu sürüm adayıyla geliyor.

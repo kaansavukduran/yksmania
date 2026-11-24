@@ -62,6 +62,7 @@ import { pointSourcePlaneExample, pointSourcePlaneSection } from "../mebiPointSo
 import { beamDistanceExample, beamDistanceSection } from "../mebiBeamDistance";
 import { crookesExample, crookesModelSection, crookesPhotoSection } from "../mebiCrookesRadiometer";
 import { lightTransmissionExample, lightTransmissionSection } from "../mebiLightTransmission";
+import { sphereShadowExample, sphereShadowSection } from "../mebiPointSphereShadow";
 import { animalPitchExample, animalPitchSection } from "../mebiPitchSamples";
 import { bottlePitchExample, bottlePitchSection } from "../mebiBottlePitch";
 import { wirePairExample, wirePairSection } from "../mebiWirePitch";
@@ -574,9 +575,11 @@ export function studyGuide(lessonId: string) {
   if (guide?.id === "golge-yari-golge") {
     return {
       ...guide,
-      sections: [lightTransmissionSection, ...guide.sections],
-      examples: [lightTransmissionExample, ...guide.examples],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 172, basılı 170. Saydam pencere, buzlu cam ve metal levha gerçek lisanslı örnek fotoğraflarla karşılaştırıldı. Geçen ışınlar temsili çizimlerle aynı üç durumda incelendi.`,
+      sections: [lightTransmissionSection, ...guide.sections.flatMap((section) =>
+        section.title === "Tek noktasal kaynakta sınırlar" ? [section, sphereShadowSection] : [section],
+      )],
+      examples: [lightTransmissionExample, ...guide.examples, sphereShadowExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 172, basılı 170. Saydam pencere, buzlu cam ve metal levha gerçek lisanslı örnek fotoğraflarla karşılaştırıldı. Geçen ışınlar temsili çizimlerle aynı üç durumda incelendi. Aynı sayfadaki opak küre iki teğet ışın ve ölçülen tam gölge çapıyla yeniden modellendi. Perde uzaklıkları özgün öğretim değerleridir.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

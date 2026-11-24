@@ -1,8 +1,8 @@
 {
-  "version": "0.172.0",
+  "version": "0.173.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Çevrimdışı çalışma hazır olduğunda tarayıcı açık sayfayı doğru çalışana bağlar. TYT Geometri kopya kağıtları, optik çizimler ve bir görselli soru bu adayda birlikte.",
-    "en": "Reconnect an uncontrolled page to the installed offline worker. Includes TYT geometry study sheets, optics lessons and a question with staged visuals."
+    "tr": "Perde uzaklığını değiştir. Bir küreye teğet sınır ışınları ile tam gölgenin çapı aynı çizimde. Kopya Kağıdı iki perde konumunu kendi çözüm çizimlerinde gösterir.",
+    "en": "Move the screen and see how tangent rays bound the full shadow of a sphere."
   }
 }
