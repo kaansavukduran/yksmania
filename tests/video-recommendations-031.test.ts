@@ -115,8 +115,17 @@ describe("031 source-bound optional video recommendations", () => {
     const groups = videoCatalog031.filter(group => Object.hasOwn(expected, group.topic));
     expect(Object.fromEntries(groups.map(group => [group.topic, group.lessonIds[0]]))).toEqual(expected);
     const identities = groups.flatMap(group => [...group.recommended, ...group.alternatives].map(video => videoIdentity031(video.url)));
-    expect(identities).toHaveLength(82);
-    expect(new Set(identities).size).toBe(79);
+    expect(identities).toHaveLength(84);
+    expect(new Set(identities).size).toBe(80);
+    const previous = new Set(videoCatalog031
+      .filter((group) => !groups.includes(group))
+      .flatMap((group) => [...group.recommended, ...group.alternatives])
+      .map((link) => videoIdentity031(link.url)));
+    expect(new Set(identities.filter((identity) => !previous.has(identity))).size).toBe(79);
+    const shared = getLessonVideos031("tyt-geo-ucgende-acilar-031").alternatives
+      .filter((video) => videoIdentity031(video.url) === "bVTPfha9eIs@0:");
+    expect(shared).toHaveLength(1);
+    expect(shared[0].topics).toEqual(["İkizkenar Üçgen", "Eşkenar Üçgen"]);
     for (const [topic, id] of Object.entries(expected)) {
       expect(getLessonVideos031(id).recommended.some(video => video.topics.includes(topic))).toBe(true);
     }
