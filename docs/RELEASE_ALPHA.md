@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.158.0 · Depremin büyüklüğü ve şiddeti
+
+Yayın adayı. Bir depremde iki yerin neden farklı etkilendiğini incele. Büyüklük farkını değiştirip genlik ve yaklaşık enerji oranlarını oku.
+
 # ÖSYM Mania 0.157.0 · Görselli sonar sorusu
 
 Yayın adayı. Tekne şemasından yankının dönüş süresini ve sesin süratini oku. İpucu ile iki ayrı çözüm adımı kendi şekil ve tablolarında açılıyor. Video önerileri dersle birlikte yükleniyor.

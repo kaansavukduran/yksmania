@@ -8,6 +8,7 @@ import { ultrasoundFigures } from "./mebiUltrasoundFigures";
 import { roomAcousticsFigures } from "./mebiRoomAcousticsFigures";
 import { noiseFigures } from "./mebiNoiseFigures";
 import { magneticResonanceFigures } from "./mebiMagneticResonanceFigures";
+import { earthquakeMagnitudeFigures } from "./mebiEarthquakeMagnitudeFigures";
 import { echoDistanceM, echoSpeedMS, echoTravelSeconds } from "../mebiEcho";
 import { bellJarCases, bellJarTitle } from "../mebiSoundMedium";
 import { timbreAt, timbreCases, timbreFrequencyHz, timbreHarmonicTitle, timbreModes, timbreTitle, timbreWaveTitle } from "../mebiSoundTimbre";
@@ -605,6 +606,7 @@ export const physicsFiguresSound: Record<string, Record<string, FigureDef>> = {
     ...noiseFigures,
     ...magneticResonanceFigures,
     ...mebiSeismicFocusFigure,
+    ...earthquakeMagnitudeFigures,
     "Ses bir ortam titreşimidir": longitudinal,
     [bellJarTitle]: bellJar,
     ...Object.fromEntries(bellJarCases.map(({ solutionTitle, detail }, step) => [

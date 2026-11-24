@@ -1,8 +1,8 @@
 {
-  "version": "0.157.0",
+  "version": "0.158.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Sonar sorusunda verilen yankı süresini teknenin şemasından oku. İpucu ve çözüm, dönüş süresiyle tek yön mesafesini ayrı adımlarda gösteriyor.",
-    "en": "Read the sonar echo time from the boat diagram. The hint and solution show how to use the round-trip time to calculate the one-way distance."
+    "tr": "Aynı depremin iki konumdaki etkisini karşılaştır. Büyüklük farkını değiştir ve genlik ile yaklaşık enerji oranlarını iki ayrı işaretten oku.",
+    "en": "Compare the effects of one earthquake at two locations. Change the magnitude difference and read separate amplitude and approximate energy ratios."
   }
 }
