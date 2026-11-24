@@ -14,6 +14,7 @@ const requirements = new Map<string, RequiredSourceVisuals>([
   ["yay-dalgalari-tepe-cukur-karsilasma-sekli", { stem: true, hint: true, stepIndexes: [0, 1] }],
   ["su-dalgalari-duz-engel-cephe-acisi", { stem: true, hint: true, stepIndexes: [0, 1] }],
   ["ses-deprem-dalgalari-desibel-isaretleri", { stem: true, hint: true, stepIndexes: [0, 1] }],
+  ["ses-deprem-dalgalari-sonar-sure-sekil", { stem: true, hint: true, stepIndexes: [0, 1] }],
   ["yay-dalgalari-esit-kutle-yogunluk-cizimi", { stem: true, hint: true, stepIndexes: [0, 1] }],
   ["sivilarin-kaldirma-kuvveti-havada-balon", { stem: true, hint: true, stepIndexes: [0, 1, 2] }],
   ["newton-kuvvet-ivme-grafik", { stem: true, hint: true, stepIndexes: [0, 1] }],

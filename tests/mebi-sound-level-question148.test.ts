@@ -2,6 +2,7 @@ import { expect, test } from "vitest";
 import { lessons } from "../src/domain/content";
 import { forge012PhysicsLessons } from "../src/learning/forge012Physics";
 import { practiceQuestionView } from "../src/learning/practiceQuestionView";
+import { sonarDistanceQuestion } from "../src/learning/sonarQuestion157";
 import { soundLevelQuestion, soundLevelQuestionFigures } from "../src/learning/soundLevelQuestion148";
 import { sourceQuestionPresentation } from "../src/learning/sourceExercises024";
 import { requiredSourceVisuals } from "../src/learning/sourceVisualRequirements";
@@ -10,8 +11,8 @@ import { missingRequiredSourceVisuals } from "../src/learning/sourceVisualRevisi
 test("the added question preserves old snapshots and uses the scale as its only source of values", () => {
   const previous = forge012PhysicsLessons.find(({ id }) => id === "ses-deprem-dalgalari")!;
   const lesson = lessons.find(({ id }) => id === previous.id)!;
-  expect(lesson.questions).toEqual([...previous.questions, soundLevelQuestion]);
-  const { id, prompt, options, answer, hint, explanation, guidance } = lesson.questions.at(-1)!;
+  expect(lesson.questions).toEqual([...previous.questions, soundLevelQuestion, sonarDistanceQuestion]);
+  const { id, prompt, options, answer, hint, explanation, guidance } = lesson.questions[10]!;
   const question = practiceQuestionView({
     id, prompt: prompt.tr, options: options.map(({ tr }) => tr), answer,
     hint: hint.tr, explanation: explanation.tr, guidance,

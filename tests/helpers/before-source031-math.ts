@@ -153,6 +153,7 @@ additions.add("yay-dalgalari-esit-kutle-yogunluk-cizimi");
 additions.add("yay-dalgalari-tepe-cukur-karsilasma-sekli");
 additions.add("su-dalgalari-duz-engel-cephe-acisi");
 additions.add("ses-deprem-dalgalari-desibel-isaretleri");
+additions.add("ses-deprem-dalgalari-sonar-sure-sekil");
 
 export function beforeSource031Questions<T extends { id: string }>(questions: readonly T[]) {
   return questions.filter(({ id }) => !additions.has(id));

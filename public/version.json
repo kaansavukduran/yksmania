@@ -1,8 +1,8 @@
 {
-  "version": "0.156.0",
+  "version": "0.157.0",
   "channel": "alpha",
   "notes": {
-    "tr": "MR’deki radyo darbesini çekirdeklerin model frekansıyla eşleştir. Alıcı bobinin sinyalini ultrasonun yankı çizimiyle karşılaştır.",
-    "en": "Match the MRI radio pulse to the model resonance. Compare the receiving coil with the distinct echo path used in ultrasound."
+    "tr": "Sonar sorusunda verilen yankı süresini teknenin şemasından oku. İpucu ve çözüm, dönüş süresiyle tek yön mesafesini ayrı adımlarda gösteriyor.",
+    "en": "Read the sonar echo time from the boat diagram. The hint and solution show how to use the round-trip time to calculate the one-way distance."
   }
 }

@@ -216,3 +216,28 @@ for (const profile of [
     });
   });
 }
+
+test.describe("course entry without an independent video module", () => {
+  test.use({ serviceWorkers: "block" });
+
+  test("a failing request for the former video chunk leaves the course and recommendations visible", async ({ page }) => {
+    const formerChunkRequests: string[] = [];
+    const pageErrors: string[] = [];
+    page.on("pageerror", (error) => pageErrors.push(error.message));
+    await page.route("**/assets/VideoRecommendations031-*.js", (route) => {
+      formerChunkRequests.push(route.request().url());
+      return route.fulfill({ status: 500, contentType: "text/plain", body: "Test HTTP 500" });
+    });
+
+    await page.goto("/#/lesson?id=ayt-periyodik-sistem-atom-capi");
+    await expect(page.getByRole("heading", { name: "Periyodik sistem: konumdan yarıçapın koşullarına", exact: true })).toBeVisible();
+    const atomVideos = page.locator('[data-video-lesson031="ayt-periyodik-sistem-atom-capi"]');
+    await expect(atomVideos.locator(".video-preferred031 a")).toHaveAttribute("href", "https://www.youtube.com/watch?v=7gy5OYmicxo");
+
+    await page.goto("/#/lesson?id=kimya-guvenlik");
+    const videos = page.locator('[data-video-lesson031="kimya-guvenlik"]');
+    await expect(videos.getByRole("link", { name: /Levent Özdede/ })).toBeVisible();
+    expect(formerChunkRequests).toEqual([]);
+    expect(pageErrors).toEqual([]);
+  });
+});

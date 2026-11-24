@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.157.0 · Görselli sonar sorusu
+
+Yayın adayı. Tekne şemasından yankının dönüş süresini ve sesin süratini oku. İpucu ile iki ayrı çözüm adımı kendi şekil ve tablolarında açılıyor. Video önerileri dersle birlikte yükleniyor.
+
 # ÖSYM Mania 0.156.0 · Manyetik rezonans
 
 Yayın adayı. Model frekansını radyo darbesiyle eşleştir ve darbe sonrası alıcı bobine giden sinyali izle. Kopya Kağıdı MR ve ultrasonun alım yollarını ayrı adımlarda gösteriyor.

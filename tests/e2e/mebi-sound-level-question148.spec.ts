@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
 import { forge012PhysicsLessons } from "../../src/learning/forge012Physics";
+import { sonarDistanceQuestion } from "../../src/learning/sonarQuestion157";
 import { soundLevelQuestion, soundLevelQuestionFigures } from "../../src/learning/soundLevelQuestion148";
 import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse";
 
@@ -18,7 +19,7 @@ test("the decibel question keeps its scale, saved help, solution table and wrong
     await page.getByRole("button", { name: "Cevabı kontrol et", exact: true }).click();
     await page.getByRole("button", { name: "Sonraki soru", exact: true }).click();
   }
-  await expect(page.locator(".question-meta")).toContainText("Soru 11 / 11");
+  await expect(page.locator(".question-meta")).toContainText("Soru 11 / 12");
   await expect(page.locator(".question-meta")).toContainText("Özgün öğretim soruları");
   const { figure, hintFigure, stepFigures } = soundLevelQuestionFigures;
   const given = page.getByRole("figure", { name: figure.title, exact: true });
@@ -71,10 +72,13 @@ test("the decibel question keeps its scale, saved help, solution table and wrong
   await expect(ratio).toBeVisible();
   await page.locator(".answer-options .answer").nth(2).click();
   await page.getByRole("button", { name: "Cevabı kontrol et", exact: true }).click();
+  await page.getByRole("button", { name: "Sonraki soru", exact: true }).click();
+  await page.locator(".answer-options .answer").nth(sonarDistanceQuestion.answer).click();
+  await page.getByRole("button", { name: "Cevabı kontrol et", exact: true }).click();
   await page.getByRole("button", { name: "Çalışmayı kaydet", exact: true }).click();
   await expect(page.locator(".result-page")).toBeVisible();
   const saved = await storage(page);
-  const response = saved.sessions.at(-1)!.responses.at(-1)!;
+  const response = saved.sessions.at(-1)!.responses.find(({ questionId }) => questionId === soundLevelQuestion.id)!;
   expect(response).toMatchObject({ questionId: soundLevelQuestion.id, selected: 2, correct: false, assisted: true });
   expect(response.visibleFigureRevision).toMatch(/^[a-f0-9]{14}$/);
   expect(response.solutionFigureRevision).toMatch(/^[a-f0-9]{14}$/);

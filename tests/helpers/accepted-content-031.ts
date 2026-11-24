@@ -17,8 +17,9 @@ export function beforeFoundation031Registration(source: string): string {
   return source
     .replace('import { waterReflectionQuestion } from "../learning/waterReflectionQuestion136";\n', "")
     .replace('import { soundLevelQuestion } from "../learning/soundLevelQuestion148";\n', "")
+    .replace('import { sonarDistanceQuestion } from "../learning/sonarQuestion157";\n', "")
     .replace(
-      '  ...forge012PhysicsLessons.map((lesson) => {\n    if (lesson.id === "su-dalgalari") return { ...lesson, questions: [...lesson.questions, waterReflectionQuestion] };\n    if (lesson.id === "ses-deprem-dalgalari") return { ...lesson, questions: [...lesson.questions, soundLevelQuestion] };\n    return lesson;\n  }),\n',
+      '  ...forge012PhysicsLessons.map((lesson) => {\n    if (lesson.id === "su-dalgalari") return { ...lesson, questions: [...lesson.questions, waterReflectionQuestion] };\n    if (lesson.id === "ses-deprem-dalgalari") return { ...lesson, questions: [...lesson.questions, soundLevelQuestion, sonarDistanceQuestion] };\n    return lesson;\n  }),\n',
       "  ...forge012PhysicsLessons,\n",
     )
     .replace('import { airBuoyancyQuestion } from "../learning/airBuoyancyQuestion098";\n', "")

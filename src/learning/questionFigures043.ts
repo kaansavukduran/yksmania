@@ -25,6 +25,7 @@ import { waveDirectionsFigures, waveDirectionsQuestion } from "./waveDirectionsQ
 import { springOverlapQuestion, springOverlapQuestionFigures } from "./springOverlapQuestion128";
 import { waterReflectionQuestion, waterReflectionQuestionFigures } from "./waterReflectionQuestion136";
 import { soundLevelQuestion, soundLevelQuestionFigures } from "./soundLevelQuestion148";
+import { sonarDistanceQuestion, sonarDistanceQuestionFigures } from "./sonarQuestion157";
 import { springDensityQuestion, springDensityQuestionFigures } from "./springDensityQuestion124";
 import {
   inverseTranslationFigures,
@@ -290,6 +291,16 @@ const decibelQuestion = {
   guidance: soundLevelQuestion.guidance,
 };
 
+const sonarQuestion = {
+  id: sonarDistanceQuestion.id,
+  prompt: sonarDistanceQuestion.prompt.tr,
+  options: sonarDistanceQuestion.options.map((option) => option.tr),
+  answer: sonarDistanceQuestion.answer,
+  hint: sonarDistanceQuestion.hint.tr,
+  explanation: sonarDistanceQuestion.explanation.tr,
+  guidance: sonarDistanceQuestion.guidance,
+};
+
 const densityQuestion = {
   id: springDensityQuestion.id,
   prompt: springDensityQuestion.prompt.tr,
@@ -434,6 +445,14 @@ const bindings = new Map<string, FigureBinding>([
     pageLabel: "Fiziksel 165. sayfa, basılı 163",
     itemLabel: "Desibel ölçeğinden şiddet oranı, özgün öğretim sorusu",
     figures: soundLevelQuestionFigures,
+  }],
+  [sonarQuestion.id, {
+    stemRevision: stemRevision(sonarQuestion),
+    helpRevision: helpRevision(sonarQuestion, sonarQuestion.guidance),
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 166. sayfa, basılı 164",
+    itemLabel: "Sonar şemasından yankı süresi ve derinlik, özgün öğretim sorusu",
+    figures: sonarDistanceQuestionFigures,
   }],
   [densityQuestion.id, {
     stemRevision: stemRevision(densityQuestion),

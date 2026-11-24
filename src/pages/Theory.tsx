@@ -14,14 +14,10 @@ import { TopicCompletion } from "../components/StudyPlanning";
 import { lessonTopic, topicLessons } from "../domain/studyPlan";
 import { OsymTopicPanel } from "../components/OsymPatterns";
 import { OriginalExerciseReader } from "../learning/OriginalExerciseReader";
+import { VideoRecommendations031 } from "../learning/VideoRecommendations031";
 const NarrativeRecall = lazy(() =>
   import("../learning/NarrativeExplorer").then((module) => ({
     default: module.NarrativeRecall,
-  })),
-);
-const VideoRecommendations031 = lazy(() =>
-  import("../learning/VideoRecommendations031").then((module) => ({
-    default: module.VideoRecommendations031,
   })),
 );
 export function Theory({
@@ -114,9 +110,7 @@ export function Theory({
               if (set) practice(set);
             }}
           />
-          <Suspense fallback={<p role="status">Video önerileri açılıyor…</p>}>
-            <VideoRecommendations031 lessonId={lesson.id} />
-          </Suspense>
+          <VideoRecommendations031 lessonId={lesson.id} />
           {relatedTopic && <OsymTopicPanel topicId={relatedTopic} subjectId={lesson.subjectId} embedded />}
           <div className="source-box">
             <strong>{t("sourceInfo")}</strong>
