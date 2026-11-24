@@ -1,8 +1,8 @@
 {
-  "version": "0.110.0",
+  "version": "0.111.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Yer kesitinde fay, odak, dış merkez ve istasyonu incele. İstasyonu kaydırıp P ve S dalgalarının varış sürelerini örnek hesapla karşılaştır.",
-    "en": "Explore a fault cross-section with a focus, epicenter and station. Move the station and compare P- and S-wave arrival times in a worked example."
+    "tr": "Radyo vericisinin frekansını değiştir ve komşu cepheler arasındaki uzaklığı incele. Kopya Kağıdı’nda MHz dönüşümü ve dalga boyu hesabı var.",
+    "en": "Change a radio transmitter’s frequency to compare wavefront spacing. The cheat sheet includes converting MHz to Hz and calculating wavelength."
   }
 }

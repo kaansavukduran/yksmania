@@ -31,6 +31,7 @@ import { tuningForkExample, tuningForkSection } from "../mebiTuningFork";
 import { springPulseExample, springPulseSection } from "../mebiSpringPulse";
 import { surfaceWaveExample, surfaceWaveSection, surfaceWaveTitle } from "../mebiSurfaceWave";
 import { seismicFocusExample, seismicFocusSection, seismicFocusTitle } from "../mebiSeismicFocus";
+import { radioWaveExample, radioWaveSection } from "../mebiRadioWaves";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
@@ -440,9 +441,9 @@ export function studyGuide(lessonId: string) {
       ...guide,
       sections: [...guide.sections.map((section) => section.title === wavelengthTitle
         ? { ...section, figureTitle: wavelengthTitle }
-        : section), waveRopeSection, waveTravelSection, waveAmplitudeSection, waterAmplitudeSection, waveClassificationSection, tuningForkSection],
-      examples: [...guide.examples, wavePeriodExample, waveTravelExample, waveAmplitudeExample, waveClassificationExample, tuningForkExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 149, basılı 147. sayfasındaki tepe ve çukur çiftlerinin dalga boyu ile kaynak ve sabit uç arasındaki bir tam tel deseni yeniden çizildi. Fiziksel 150, basılı 148. sayfadaki yayılma, zaman grafiğinde uzanım, su yüzeyinde genlik ve iki ölçütlü sınıflandırma çizimleri yeniden oluşturuldu. Sınıflandırmada mekanik ve elektromanyetik dalgalar ortam gereksinimine göre ayrılır. Fiziksel 151, basılı 149. sayfadaki tokmak ve diyapazon, havanın ileri geri salınımı ve sıkışma bölgeleriyle gösterildi. Sayısal değerler özgün örnektir.`,
+        : section), waveRopeSection, waveTravelSection, waveAmplitudeSection, waterAmplitudeSection, waveClassificationSection, tuningForkSection, radioWaveSection],
+      examples: [...guide.examples, wavePeriodExample, waveTravelExample, waveAmplitudeExample, waveClassificationExample, tuningForkExample, radioWaveExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 149, basılı 147. sayfasındaki tepe ve çukur çiftlerinin dalga boyu ile kaynak ve sabit uç arasındaki bir tam tel deseni yeniden çizildi. Fiziksel 150, basılı 148. sayfadaki yayılma, zaman grafiğinde uzanım, su yüzeyinde genlik ve iki ölçütlü sınıflandırma çizimleri yeniden oluşturuldu. Sınıflandırmada mekanik ve elektromanyetik dalgalar ortam gereksinimine göre ayrılır. Fiziksel 151, basılı 149. sayfadaki tokmak ve diyapazon, havanın ileri geri salınımı ve sıkışma bölgeleriyle gösterildi. Radyo vericisinin çevresindeki dalga cepheleri frekansa bağlı aralıklarla yeniden çizildi. Sayısal değerler özgün örnektir.`,
     };
   }
   if (guide?.id === "yay-dalgalari") {

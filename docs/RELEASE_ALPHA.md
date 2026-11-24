@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.111.0 · Radyo dalgasının cephe aralığı
+
+Yayın adayı. Radyo vericisinin frekansını değiştir ve iki cephenin aralığını ölç. Kopya Kağıdı’nda MHz dönüşümü ve örnek dalga boyu hesabı var.
+
 # ÖSYM Mania 0.110.0 · Fay ve dalgaların istasyona ulaşması
 
 Yayın adayı. Yer kesitinde istasyonu kaydır ve odaktan başlayıp ona ulaşan yolu oku. Kopya Kağıdı’nda yol uzunluğu ve iki dalganın varış süresini hesapla.

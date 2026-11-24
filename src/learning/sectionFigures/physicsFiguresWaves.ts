@@ -23,6 +23,7 @@ import { waveClassificationExamples, waveClassificationTitle } from "../mebiWave
 import { tuningForkSnapshot, tuningForkTitle } from "../mebiTuningFork";
 import { pulseMarkerM, pulseSpeedMps, pulseSupportM, pulseWidthM, springPulseAt, springPulseTitle } from "../mebiSpringPulse";
 import { surfaceAmplitudeM, surfaceCrestX, surfaceMarkerM, surfaceWavePosition, surfaceWaveTitle } from "../mebiSurfaceWave";
+import { radioFrequencyMHz, radioWavefrontPoints, radioWavefrontRadii, radioWavelengthMeters, radioWaveTitle } from "../mebiRadioWaves";
 
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
@@ -367,6 +368,28 @@ const giris: Record<string, FigureDef> = {
           txt(v(origin + rarefied.center, -1.01), "Seyrelme", "s", { tone: "b", small: true, bold: true }),
         ],
         readout: ["Sıkışmada noktalar daha yakın. Seyrelmede araları daha açık.", "İşaretli nokta kendi denge çizgisi çevresinde yatay salınır."],
+      };
+    },
+  },
+  [radioWaveTitle]: {
+    caption: "Frekansı değiştir. Verici aynı yerde kalır. Alttaki ölçü çizgisi, ardışık iki cephenin arasındaki bir dalga boyunu gösterir.",
+    alt: "Bir radyo vericisi kulesinin tepesindeki antenin her iki yanında dalga cepheleri çizili. Ölçü çizgisi ardışık iki cephenin radyal uzaklığını gösteriyor.",
+    param: { label: "Verici frekansı", min: radioFrequencyMHz.min, max: radioFrequencyMHz.max, step: radioFrequencyMHz.step, init: radioFrequencyMHz.initial, unit: " MHz", plain: true },
+    draw: (frequency) => {
+      const radii = radioWavefrontRadii(frequency);
+      const wavelength = radioWavelengthMeters(frequency);
+      return {
+        els: [
+          ...radii.flatMap((radius, i) => [wave(radioWavefrontPoints(radius, 1), i < 2 ? "b" : "muted"), wave(radioWavefrontPoints(radius, -1), i < 2 ? "b" : "muted")]),
+          poly([v(-2.1, -8.8), v(0, 0), v(2.1, -8.8)], { open: true, tone: "ink", bold: true }),
+          ...[-3.6, -5.7, -7.65].map((y) => seg(v(y * 0.235, y), v(-y * 0.235, y), { tone: "ink" })),
+          circle(v(0, 0), 0.25, { tone: "a", fill: "a" }),
+          txt(v(-3.4, -9.1), "Verici", "w", { small: true, bold: true }),
+          seg(v(-12, -11.8), v(12, -11.8), { tone: "muted", thin: true }),
+          txt(v(0, 10), " "),
+          ...span(v(wavelength, -10.6), v(2 * wavelength, -10.6), `${fmt(wavelength, 2)} m`, 1, "a"),
+        ],
+        readout: [`${fmt(frequency)} MHz. Boşlukta komşu iki cephe arası ${fmt(wavelength, 2)} m.`],
       };
     },
   },
