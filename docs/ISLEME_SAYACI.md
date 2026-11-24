@@ -2,7 +2,7 @@
 
 Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış işi gösterir; bir PDF'nin okunması, uygulamadaki içeriğin o PDF'yi tamamen kapsadığı anlamına gelmez.
 
-24 Kasım 2026 saat 16.49 UTC’de 258 klasör ve 9.984 PDF yeniden tarandı. 15.42 taramasından beri dosya ve klasör üyeliği ile revizyon bilgilerinde değişiklik görülmedi. Kanonik defter 0 tam, 6 kısmi, 0 işlenmediği doğrulanan ve 9.978 belirsiz güncel kayıt gösteriyor. 99_ÖSYM alt ağacındaki 1.002 PDF bu toplamın içinde.
+24 Kasım 2026 saat 17.31 UTC’de 258 klasör ve 9.984 PDF yeniden tarandı. 16.49 taramasından beri dosya ve klasör üyeliği ile revizyon bilgilerinde değişiklik görülmedi. Kanonik defter 0 tam, 6 kısmi, 0 işlenmediği doğrulanan ve 9.978 belirsiz güncel kayıt gösteriyor. 99_ÖSYM alt ağacındaki 1.002 PDF bu toplamın içinde.
 
 ## 23 Kasım envanter uzlaştırması
 

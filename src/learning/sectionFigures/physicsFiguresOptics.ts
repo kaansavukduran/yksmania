@@ -7,6 +7,7 @@ import { extendedShadowConeFigures } from "./mebiExtendedShadowConeFigures";
 import { parallelLitSphereFigures } from "./mebiParallelLitSphereFigures";
 import { lightWaterReflectionFigures } from "./mebiLightWaterReflectionFigures";
 import { visibleByReflectionFigures } from "./mebiVisibleByReflectionFigures";
+import { roughSurfaceReflectionFigures } from "./mebiRoughSurfaceReflectionFigures";
 import {
   span,
   add,
@@ -191,32 +192,6 @@ const duzlemAyna: Record<string, FigureDef> = {
         ],
         readout: [`i = r = ${i}° · yüzeyle açı ${90 - i}°`],
       };
-    },
-  },
-  "Düzgün ve dağınık yansıma aynı yasaya uyar": {
-    caption:
-      "Solda düz yüzeyde paralel ışınlar paralel yansır. Sağda pürüzlü yüzeyin her parçasının normali farklıdır; her ışın yine kendi normaline göre yansır ama yönler dağılır.",
-    alt: "Solda düz yüzeye paralel gelen üç ışın paralel yansıyor; sağda zikzak yüzeyde her ışın kendi kesikli normaline göre farklı yöne yansıyor.",
-    draw: () => {
-      const els: El[] = [seg(v(-0.5, 0), v(3.5, 0), { bold: true })];
-      [0.6, 1.5, 2.4].forEach((x) => {
-        const P = v(x, 0);
-        els.push(...ray(add(P, mul(pol(1, 125), 2.4)), P, "a"), ...ray(P, add(P, mul(pol(1, 55), 2.4)), "b"));
-      });
-      const tilts = [18, -14, 10];
-      const xs = [5.6, 6.6, 7.6];
-      xs.forEach((x, k) => {
-        const n = pol(1, 90 + tilts[k]);
-        const t = v(n[1], -n[0]);
-        const P = v(x, 0);
-        els.push(seg(sub(P, mul(t, 0.45)), add(P, mul(t, 0.45)), { bold: true }));
-        els.push(seg(P, add(P, mul(n, 1.2)), { dash: true, thin: true, tone: "muted" }));
-        const inc = unit(pol(1, -55));
-        const out = sub(inc, mul(n, 2 * (inc[0] * n[0] + inc[1] * n[1])));
-        els.push(...ray(sub(P, mul(inc, 2.4)), P, "a"), ...ray(P, add(P, mul(out, 2.2)), "b"));
-      });
-      els.push(txt(v(1.5, -0.7), "düzgün", "c", { small: true }), txt(v(6.6, -0.7), "dağınık", "c", { small: true }));
-      return { els };
     },
   },
   "Görüntüyü ışın uzantılarıyla kur": {
@@ -940,7 +915,7 @@ function twoSources(s: number) {
 }
 
 export const physicsFiguresOptics: Record<string, Record<string, FigureDef>> = {
-  "duzlem-ayna": { ...duzlemAyna, ...lightWaterReflectionFigures, ...visibleByReflectionFigures },
+  "duzlem-ayna": { ...duzlemAyna, ...lightWaterReflectionFigures, ...visibleByReflectionFigures, ...roughSurfaceReflectionFigures },
   "kuresel-aynalar": kureselAynalar,
   "isigin-kirilmasi": kirilma,
   mercekler,

@@ -1,3 +1,9 @@
+# Üç yerel normal · 0.182.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 177, basılı 175. Üç paralel ışın, her temas noktasında yüzeye dik kesik normal ve o normale göre yansıyan ok. Kopya Kağıdı düzgün yüzeyi ve üç farklı eğimi ayrı gösteriyor.
+
+TypeScript, 6.673 kart, 335 çevrimdışı dosya, beş dosyada 8 birim ve yedi Chromium akışı geçti. Orta başlangıçtan klavyeyle düz duruma geçildiğinde üç açı 35° kaldı. Eğim artırılınca ayrı normallere göre 15°, 45° ve 28,3° okundu. Her noktada gösterilen gelme ve yansıma açıları eşit. 320 px ve çevrimdışı Kopya Kağıdı iki ayrı çözüm çizimi açtı. Sıradaki fiziksel 178, basılı 176, iki ışınla K′ ve L′ uçlarının kurulması.
+
 # Toptan göze yansıyan ışık · 0.181.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 177, basılı 175. Lamba, top ve göz arasındaki iki ışın aynı yüzey noktasını paylaşıyor. Koyu top aydınlatılınca bir miktar ışık yansıtıyor. Tam karanlık odada lamba kapatıldığında iki ışın da kayboluyor. [Yansıma](https://openstax.org/books/university-physics-volume-3/pages/1-2-the-law-of-reflection) · [Renk algısı](https://openstax.org/books/biology/pages/36-5-vision)
@@ -1073,7 +1079,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
 | TYT Matematik | 45 / 45 | 45 · 184 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
 | TYT Geometri | 19 / 19 | 19 · 176 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 402 | 323 / 323 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 404 | 323 / 323 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 139 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 0 |
 | TYT Tarih | 24 / 24 | 24 · 76 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 0 |
@@ -1086,7 +1092,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2394** | **6.673 / 6.673 · %100,00** | **121 / 517 · %23,40** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2396** | **6.673 / 6.673 · %100,00** | **121 / 517 · %23,40** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

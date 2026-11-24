@@ -1,8 +1,8 @@
 {
-  "version": "0.181.0",
+  "version": "0.182.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Bir topun görünmesi için lambadan topa ve toptan göze giden ışığı izle. Aynı lambada açık ve koyu yüzeyi karşılaştır, sonra ışığı kapat.",
-    "en": "Trace the path from a lamp to a ball and from the ball to the eye. Compare two surfaces under the same light, then switch the lamp off."
+    "tr": "Üç paralel ışını aynı anda düz ve pürüzlü yüzeye gönder. Yüzey parçalarını eğerek her noktadaki normal ve eş dönüş açısının nasıl değiştiğini incele.",
+    "en": "Send three parallel rays toward flat and rough surfaces. Tilt the surface patches to compare the normal and equal angles at each point."
   }
 }

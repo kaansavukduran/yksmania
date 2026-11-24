@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.182.0 · Düzgün ve dağınık yansıma
+
+Yayın adayı. Üç paralel gelen ışın aynı kalırken her temas noktasının normalini ve dönen ışının yönünü karşılaştır.
+
 # ÖSYM Mania 0.181.0 · Toptan göze yansıyan ışık
 
 Yayın adayı. Üç aydınlatma durumunda topu, lambayı ve göze giden ışığı ayrı incele.

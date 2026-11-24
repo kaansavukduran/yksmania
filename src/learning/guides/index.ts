@@ -70,6 +70,7 @@ import { extendedConeExample, extendedConeSection } from "../mebiExtendedShadowC
 import { parallelLitSphereExample, parallelLitSphereSection } from "../mebiParallelLitSphere";
 import { lightWaterReflectionExample, lightWaterReflectionSection } from "../mebiLightWaterReflection";
 import { visibleByReflectionExample, visibleByReflectionSection } from "../mebiVisibleByReflection";
+import { roughSurfaceExample } from "../mebiRoughSurfaceReflection";
 import { animalPitchExample, animalPitchSection } from "../mebiPitchSamples";
 import { bottlePitchExample, bottlePitchSection } from "../mebiBottlePitch";
 import { wirePairExample, wirePairSection } from "../mebiWirePitch";
@@ -596,8 +597,8 @@ export function studyGuide(lessonId: string) {
     return {
       ...guide,
       sections: [lightWaterReflectionSection, visibleByReflectionSection, ...guide.sections],
-      examples: [lightWaterReflectionExample, visibleByReflectionExample, ...guide.examples],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 176, basılı 174. Kıyı, deniz yüzeyi ve sualtı görünümü için lisanslı fotoğraf örnekleri kullanıldı. Dik ve eğik yansımada ışık yönü ile su cephesi, aynı açı girdisinden ayrı çizildi. Fiziksel 177, basılı 175. sayfadaki kaynak, top ve göz için aydınlık ve karanlık örnekleri aynı ışık yoluna bağlandı. Yansıma payları öğretim değerleridir.`,
+      examples: [lightWaterReflectionExample, visibleByReflectionExample, roughSurfaceExample, ...guide.examples],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 176, basılı 174. Kıyı, deniz yüzeyi ve sualtı görünümü için lisanslı fotoğraf örnekleri kullanıldı. Dik ve eğik yansımada ışık yönü ile su cephesi, aynı açı girdisinden ayrı çizildi. Fiziksel 177, basılı 175. sayfadaki kaynak, top ve göz için aydınlık ve karanlık örnekleri aynı ışık yoluna bağlandı. Yansıma payları öğretim değerleridir. Aynı sayfada düzgün ve dağınık yansıma, her temas noktasındaki normal ile yeniden çizildi.`,
     };
   }
   if (guide?.id === "hal-degisimi") {
