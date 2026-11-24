@@ -60,6 +60,7 @@ import { photometryUnitsExample, photometryUnitsSection } from "../mebiPhotometr
 import { parallelFluxExample, parallelFluxSection } from "../mebiParallelFlux";
 import { pointSourcePlaneExample, pointSourcePlaneSection } from "../mebiPointSourcePlane";
 import { beamDistanceExample, beamDistanceSection } from "../mebiBeamDistance";
+import { crookesExample, crookesModelSection, crookesPhotoSection } from "../mebiCrookesRadiometer";
 import { animalPitchExample, animalPitchSection } from "../mebiPitchSamples";
 import { bottlePitchExample, bottlePitchSection } from "../mebiBottlePitch";
 import { wirePairExample, wirePairSection } from "../mebiWirePitch";
@@ -560,12 +561,13 @@ export function studyGuide(lessonId: string) {
       ...guide,
       sections: guide.sections.flatMap((section) => {
         if (section.title === lightModelsTitle) return [lightModelsSection];
+        if (section.title === crookesPhotoSection) return [section, crookesModelSection];
         if (section.title === "Candela, lümen ve lüksü yerlerine koy") return [section, photometryUnitsSection, parallelFluxSection];
         if (section.title === "Ters kareyi geometriden türet") return [section, pointSourcePlaneSection, beamDistanceSection];
         return [section];
       }),
-      examples: [...guide.examples, lightModelsExample, photometryUnitsExample, parallelFluxExample, pointSourcePlaneExample, beamDistanceExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 169, basılı 167. Işın, dalga ve foton rolleri kaynak gruplaması ve OpenStax ile karşılaştırıldı. Çift yarık aralığı, dalga boyu ve ekran uzaklığı öğretim modeli değerleridir. Fiziksel 170, basılı 168. sayfadaki lamba ışınları, 1 m yarıçaplı küre ve dönen yüzey ayrı çizildi. Birimler BIPM fotometri tanımlarıyla karşılaştırıldı. Fiziksel 171, basılı 169. sayfadaki A ve B ışınları, normal ve eğik uzaklıkla yeniden çizildi. Noktasal ve paralel demet iki ayrı uzaklık ölçümünde birlikte karşılaştırıldı. Ölçüm değerleri özgün ideal örneklerdir.`,
+      examples: [...guide.examples, lightModelsExample, photometryUnitsExample, parallelFluxExample, pointSourcePlaneExample, beamDistanceExample, crookesExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 169, basılı 167. Işın, dalga ve foton rolleri kaynak gruplaması ve OpenStax ile karşılaştırıldı. Çift yarık aralığı, dalga boyu ve ekran uzaklığı öğretim modeli değerleridir. Fiziksel 170, basılı 168. sayfadaki lamba ışınları, 1 m yarıçaplı küre ve dönen yüzey ayrı çizildi. Birimler BIPM fotometri tanımlarıyla karşılaştırıldı. Fiziksel 171, basılı 169. sayfadaki A ve B ışınları, normal ve eğik uzaklıkla yeniden çizildi. Noktasal ve paralel demet iki ayrı uzaklık ölçümünde birlikte karşılaştırıldı. Ölçüm değerleri özgün ideal örneklerdir. Aynı sayfadaki Crookes düzeneği için Timeline’ın CC BY-SA 3.0 fotoğrafı kullanıldı. Kanat kesiti ve düşük basınçlı gazın hareketi ayrıca çizildi.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

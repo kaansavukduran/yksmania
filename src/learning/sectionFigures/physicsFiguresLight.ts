@@ -4,6 +4,7 @@ import { photometryUnitsFigures } from "./mebiPhotometryUnitsFigures";
 import { parallelFluxFigures } from "./mebiParallelFluxFigures";
 import { pointSourcePlaneFigures } from "./mebiPointSourcePlaneFigures";
 import { beamDistanceFigures } from "./mebiBeamDistanceFigures";
+import { crookesRadiometerFigures } from "./mebiCrookesRadiometerFigures";
 
 /*
  * Işık bilgisi: I (cd), Φ (lm), E (lx). The inverse-square figure shows the
@@ -169,5 +170,6 @@ export const physicsFiguresLight: Record<string, Record<string, FigureDef>> = {
     ...parallelFluxFigures,
     ...pointSourcePlaneFigures,
     ...beamDistanceFigures,
+    ...crookesRadiometerFigures,
   },
 };

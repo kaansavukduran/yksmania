@@ -1,3 +1,9 @@
+# Crookes radyometresinin fotoğrafı ve kanat kesiti · 0.169.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 171, basılı 169. Tarihsel cihazın lisanslı fotoğrafı büyütülebiliyor. Özgün kesit, koyu yüzün ısınmasını ve düşük basınçlı gazın kanat kenarındaki etkisini iki adımda gösteriyor. [Timeline fotoğrafı](https://commons.wikimedia.org/w/index.php?title=File:Crookes_radiometer.jpg&oldid=871293119) · [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) · [ASU deney açıklaması](https://pirt.asu.edu/node/5971)
+
+TypeScript, 6.671 kart için içerik denetimi, 330 çevrimdışı dosyalı derleme, 88 dosyada 207 birim ve 11 Chromium akışı geçti. Paket fotoğrafı lisanslı JPEG ile bayt düzeyinde aynı. Fotoğraf ve iki çözüm çizimi 320 px ve çevrimdışı açıldı. Sıradaki fiziksel 171, basılı 169 iki alıcı için ayrı kök, ipucu ve çözüm çizimi.
+
 # Noktasal ve paralel ışığın geometri farkı · 0.168.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 171, basılı 169. Aynı yüzeyde A ve B için yol, normal açı ve lüks aynı geometriden üretiliyor. 2 ve 4 m ölçüm düzlemlerinde noktasal ve ideal paralel demet ayrı çizimini aç. [BIPM fotometri](https://www.bipm.org/documents/20126/27085544/bipm%20publication-ID-3320.pdf/)
@@ -978,7 +984,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 33 · 128 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 0 |
 | TYT Matematik | 45 / 45 | 45 · 168 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 0 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 369 | 321 / 321 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 372 | 321 / 321 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 139 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 0 |
 | TYT Tarih | 24 / 24 | 24 · 76 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 0 |
@@ -991,7 +997,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2327** | **6.671 / 6.671 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2330** | **6.671 / 6.671 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

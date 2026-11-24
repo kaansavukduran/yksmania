@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.169.0 · Crookes radyometresi
+
+Yayın adayı. Gerçek cihazın kanatlarını fotoğrafta incele. Koyu yüzün ısınmasını ve gazın hareketini ayrı çizimlerde oku.
+
 # ÖSYM Mania 0.168.0 · İki noktada aydınlanma
 
 Yayın adayı. Duvardaki A noktasını kaydır. Işık yolu ile normal açısı aynı üçgenden hesaplanır. İki uzaklıkta noktasal kaynak ve paralel demet ayrı çizimlerde açılır.

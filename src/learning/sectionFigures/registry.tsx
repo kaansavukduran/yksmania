@@ -41,6 +41,8 @@ import { physicsFiguresMagnetism } from "./physicsFiguresMagnetism";
 import { physicsFiguresSound } from "./physicsFiguresSound";
 import { physicsFiguresPrism } from "./physicsFiguresPrism";
 import { physicsFiguresLight } from "./physicsFiguresLight";
+import { crookesPhotoSection } from "../mebiCrookesRadiometer";
+import { crookesPhoto } from "./mebiCrookesPhoto";
 import { physicsFiguresMatter } from "./physicsFiguresMatter";
 import { biologyFiguresPedigree } from "./biologyFiguresPedigree";
 import { biologyFiguresGenetics } from "./biologyFiguresGenetics";
@@ -498,6 +500,7 @@ const soundPhotoGroups: Record<string, { name: string; photos: readonly LessonPh
 };
 export const sectionImageFigures = new Map<string, Map<string, LessonPhoto>>([
   ["dalgalara-giris", waveLessonPhotos],
+  ["isik-bilgisi", new Map([[crookesPhotoSection, crookesPhoto]])],
   ["ses-deprem-dalgalari", new Map([[shakingDamageTitle, golbasiDamagePhoto]])],
   ["su-dalgalari", new Map([[coastalWaterPhoto.title, {
     figure: coastalWaterPhoto,

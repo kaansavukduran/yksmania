@@ -1,8 +1,8 @@
 {
-  "version": "0.168.0",
+  "version": "0.169.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Duvardaki iki ışık alıcısının açısını, uzaklığını ve lüks değerini aynı çizimde karşılaştır. Noktasal ve paralel demeti iki ölçüm düzleminde incele.",
-    "en": "Read distance, angle and lux for two receivers on a wall. Compare point-source and parallel light at the same two measurement planes."
+    "tr": "Crookes radyometresinin gerçek fotoğrafını büyüt. İki adımda kanadın ısınmasını ve gazın kenardaki hareketini incele.",
+    "en": "Open a credited Crookes radiometer photograph and follow two steps showing vane heating and gas motion at its edge."
   }
 }
