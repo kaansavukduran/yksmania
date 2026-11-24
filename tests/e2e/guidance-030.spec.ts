@@ -617,7 +617,8 @@ for (const target of guardedCases) {
   }, info) => {
     test.setTimeout(120_000);
     const lesson = lessons.find((item) => item.id === target.lessonId)!;
-    expect(lesson.questions).toHaveLength(10);
+    const expectedQuestionCount = target.lessonId === "dalgalara-giris" ? 11 : 10;
+    expect(lesson.questions).toHaveLength(expectedQuestionCount);
     const original = lesson.questions[target.index],
       help = guidance.get(target.id)!;
     expect(original.id).toBe(target.id);
@@ -667,7 +668,7 @@ for (const target of guardedCases) {
     }
     await expect(page.locator(".question-panel h2")).toHaveText(typeset(target.prompt));
     await expect(page.locator(".question-panel")).toContainText(
-      `Soru ${target.index + 1} / 10`,
+      `Soru ${target.index + 1} / ${expectedQuestionCount}`,
     );
     await expect(page.locator(".answer > span:nth-child(2)")).toHaveText(
       target.options,

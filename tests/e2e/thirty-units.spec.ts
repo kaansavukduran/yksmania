@@ -197,6 +197,7 @@ const extendedPracticeCounts: Record<string, number> = {
   "yuzde-problemleri": 16,
   "kar-zarar-problemleri": 16,
   "sivilarin-kaldirma-kuvveti": 11,
+  "dalgalara-giris": 11,
   "yay-dalgalari": 11,
 };
 

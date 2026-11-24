@@ -31,6 +31,7 @@ import { pulseDirectionAt, pulseDirectionCases, pulseDirectionTitle, verticalDir
 import { generatingPulseAt, pulseGenerationTime, pulseGenerationTitle } from "../mebiPulseGeneration";
 import { pulseDampingAt, pulseDampingTime, pulseDampingTitle } from "../mebiPulseDamping";
 import { periodicSpringAt, periodicSpringTime, periodicSpringTitle, periodicSpringWavelengthM } from "../mebiPeriodicSpring";
+import { springDensityAt, springDensityMass, springDensityTitle } from "../mebiSpringDensity";
 
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
@@ -560,6 +561,43 @@ const giris: Record<string, FigureDef> = {
 };
 
 const yay: Record<string, FigureDef> = {
+  [springDensityTitle]: {
+    caption: "Alt yayın kütlesini değiştir. Üst yay sabit kalır. Turuncu ölçüler aynı sürede iki atmanın önünün kaynaktan ne kadar ilerlediğini gösterir.",
+    alt: "Eşit uzunlukta, aynı kuvvetle gerilmiş iki yay çizimi. Atmalar soldan sağa ilerliyor. Üst yay sabit kütleli. Altta daha ağır bir yay seçildiğinde aynı sürede daha kısa bir ölçü görünüyor.",
+    param: {
+      label: "Alt yayın kütlesi",
+      min: springDensityMass.min,
+      max: springDensityMass.max,
+      step: springDensityMass.step,
+      init: springDensityMass.initial,
+      unit: " g",
+    },
+    draw: (mass) => {
+      const state = springDensityAt(mass);
+      const lines = [
+        { y: 3.6, title: "Üst yay", reading: state.reference, tone: "b" as const },
+        { y: 0, title: "Alt yay", reading: state.comparison, tone: "ink" as const },
+      ];
+      return {
+        els: [
+          ...lines.flatMap(({ y, title, reading, tone }) => [
+            base(0, state.spanM, y),
+            wave(pulseLine(0, state.spanM, (x) => bump(x, reading.travelledM - reading.widthM / 2, reading.widthM, 0.63), y, 160), tone),
+            circle(v(0, y), 0.09, { tone: "c", fill: "c" }),
+            txt(v(0, y + 1.18), title, "ne", { tone, bold: true, small: true }),
+            vec(v(state.spanM - 2.3, y + 0.55), v(state.spanM, y + 0.55), { tone, bold: true }),
+            txt(v(state.spanM, y + 0.71), `F = ${state.tensionN} N`, "nw", { tone, small: true }),
+            ...span(v(0, y - 0.63), v(reading.travelledM, y - 0.63), `${fmt(reading.travelledM, 2)} m`, -1, "a"),
+          ]),
+        ],
+        readout: [
+          `Üst yay: ${fmt(state.reference.speedMps, 2)} m/s. Alt yay: ${fmt(state.comparison.speedMps, 2)} m/s.`,
+          `İki yay da ${state.tensionN} N ile gerili. Ölçüm süresi ${fmt(state.observationS, 2)} s.`,
+          `Alt yayın boyca kütle yoğunluğu ${fmt(state.comparison.linearDensity, 3)} kg/m.`,
+        ],
+      };
+    },
+  },
   [periodicSpringTitle]: {
     caption: "Zamanı ilerlet. Üstte işaretli nokta düşey, altta işaretli halka yatay hareket eder. Dalganın ilerleme yönü büyük okla gösterilir.",
     alt: "Üstte sol kaynaktan sağa ilerleyen enine yay dalgası ve iki komşu tepe arasında yatay dalga boyu. Altta sağ kaynaktan sola ilerleyen boyuna dalga. Bir halka kendi denge konumu çevresinde sağa ve sola yer değiştirir.",

@@ -1,3 +1,9 @@
+# Eşit gerilimde yayların sürati · 0.123.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 154, basılı 152. İki 10 m yay aynı 4 N kuvvetle geriliyor. Alt yayın kütlesi değişirken atmaların sürati, genişliği ve aynı sürede aldığı yol birlikte hesaplanıyor. 100 g ve 400 g örneğinde süratler 20 m/s ve 10 m/s. Ayrı Kopya Kağıdı ölçü tablosu ve çizimli çözüm içeriyor.
+
+Check, 2.194 birim, 322 çevrimdışı dosya, dokuz gerçek tarayıcı senaryosu ve 320 px çizim geçti. Dalgalara Giriş artık 11 soru içeriyor ve eski on soru aynı sırada. Üç eski test bu sayıyı kendi beklenen değerinde doğruluyor. Çözüm klavye testi, ikinci adımın IndexedDB kaydını ve sonraki düğmenin etkinleşmesini bekledikten sonra aynı işlemi deniyor. Sıradaki iş aynı fiziksel sayfadan özgün, şekilli boyca kütle yoğunluğu sorusu.
+
 # Periyodik enine ve boyuna yay dalgası · 0.122.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 154, basılı 152. Soldan başlayan enine dalga, sağdan başlayan boyuna dalga ve iki yay noktasının yerel hareketi aynı zaman sürgüsüne bağlı. Ardışık tepe işaretleri 3 m’yi gösteriyor. Ayrı Kopya Kağıdı titreşim doğrultularını tabloda ve dalga boyunu kendi çözüm adımında gösteriyor.
@@ -688,7 +694,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 258 | 316 / 316 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 259 | 316 / 316 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
 | TYT Biyoloji | 36 / 36 | 22 · 80 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 14 |
 | TYT Tarih | 24 / 24 | 14 · 41 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 10 |
@@ -701,7 +707,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **405 · 1753** | **6.666 / 6.666 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
+| **Toplam** | **510 / 510** | **405 · 1754** | **6.666 / 6.666 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

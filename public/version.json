@@ -1,8 +1,8 @@
 {
-  "version": "0.122.0",
+  "version": "0.123.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Yay ucu hareketi tekrarladığında oluşan enine ve boyuna dalgaları karşılaştır. Komşu tepeler arasındaki dalga boyunu ölç.",
-    "en": "Compare transverse and longitudinal waves as the spring source repeats its motion. Measure the wavelength between neighbouring crests."
+    "tr": "Alt yayın kütlesini değiştir. Eşit gerilimde iki atmanın aynı sürede aldığı yolu ölç ve Kopya Kağıdı’nda süratlerini hesapla.",
+    "en": "Change the mass of the lower spring. Compare how far two pulses travel under the same tension, then calculate their speeds in the cheat sheet."
   }
 }

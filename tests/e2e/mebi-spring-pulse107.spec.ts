@@ -80,9 +80,12 @@ test("the independent question exposes its given diagram, then persists help bef
   await expect(hint.getByRole("math")).toBeVisible();
   await expect(answer).toHaveCount(0);
   await page.getByRole("button", { name: "Adım adım çözüm", exact: true }).press("Enter");
+  await expect.poll(async () => (await storage(page)).draft?.helpLevel).toBe(2);
+  const nextStep = page.getByRole("button", { name: "Sonraki adım", exact: true });
   for (const level of [3, 4]) {
     await expect(answer).toHaveCount(0);
-    await page.getByRole("button", { name: "Sonraki adım", exact: true }).press("Enter");
+    await expect(nextStep).toBeEnabled();
+    await nextStep.press("Enter");
     await expect.poll(async () => (await storage(page)).draft?.helpLevel).toBe(level);
   }
   await expect(answer.getByRole("math")).toBeVisible();

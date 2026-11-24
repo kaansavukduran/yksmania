@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.123.0 · Eşit gerilimde iki yay
+
+Yayın adayı. Alt yayın kütlesini değiştir ve iki atmanın aynı sürede aldığı yolu ölç. Kopya Kağıdı kütleyi kilogram cinsine çevirip metre başına kütleyi ve atmanın süratini adım adım hesaplıyor.
+
 # ÖSYM Mania 0.122.0 · Periyodik yay dalgaları
 
 Yayın adayı. Üst yayda enine dalganın tepeleri sağa gider. Alt yayda boyuna dalganın sıkışmaları sola gider. Zamanı değiştirip işaretli nokta ve halkayı izle. Kopya Kağıdı, iki tepe arasındaki uzaklığı aynı çizimde hesaplıyor.
