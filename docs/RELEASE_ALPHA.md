@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.120.0 · Atmanın kaynaktan oluşumu
+
+Yayın adayı. Yayın sol ucunun önce yukarı ya da aşağı hareketini seç. Geçen süreyi değiştirerek atmanın ön ve arka sınırlarını izle. Kopya Kağıdı, kaynak dengeye döndüğünde atmanın genişliğini nasıl bulacağını gösterir.
+
 # ÖSYM Mania 0.119.0 · Atmanın ön ve arka eğimleri
 
 Yayın adayı. Sağa ve sola giden tepe ve çukur biçimlerini seç. P ve K noktalarının düşey hareketini karşılaştır. Kopya Kağıdı’nda sola ilerleyen çukurun çözümünü aç.

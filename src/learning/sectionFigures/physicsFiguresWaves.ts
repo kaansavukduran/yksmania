@@ -28,6 +28,7 @@ import { microwaveOvenEnergyPath, microwaveOvenStages, microwaveOvenTitle, micro
 import { boundaryWavelength, ultravioletBoundaryTitle, visibleBoundaryNm, wavelengthRegion } from "../mebiUltravioletBoundary";
 import { gammaPhotonStages, gammaPhotonTitle, xRayDetectorTitle, xRayLayers, xRaySignal } from "../mebiXAndGamma";
 import { pulseDirectionAt, pulseDirectionCases, pulseDirectionTitle, verticalDirection } from "../mebiPulseDirection";
+import { generatingPulseAt, pulseGenerationTime, pulseGenerationTitle } from "../mebiPulseGeneration";
 
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
@@ -557,6 +558,34 @@ const giris: Record<string, FigureDef> = {
 };
 
 const yay: Record<string, FigureDef> = {
+  [pulseGenerationTitle]: {
+    caption: "Kaynağın ilk hareketini ve zamanı seç. Sol uç dengeye dönünce iki sınır da sağa ilerler.",
+    alt: "Sol uçta hareket edebilen kaynak noktası, sağda sabit destek var. Kaynağın ilk hareketine göre denge çizgisinin üstünde bir tepe veya altında bir çukur görülüyor.",
+    param: { label: "Geçen süre", min: pulseGenerationTime.min, max: pulseGenerationTime.max, step: pulseGenerationTime.step, init: pulseGenerationTime.initial, unit: " s" },
+    picks: [
+      { label: "Tepe", title: "Tepe atması", detail: ["Sol uç önce yukarı çıkar, sonra dengeye iner."] },
+      { label: "Çukur", title: "Çukur atması", detail: ["Sol uç önce aşağı iner, sonra dengeye çıkar."] },
+    ],
+    draw: (time, _step, pick) => {
+      const state = generatingPulseAt(time, pick === 1 ? -1 : 1);
+      return {
+        els: [
+          base(0, 8),
+          ...wall(8, -1.6, 1.6),
+          wave(pulseLine(0, 8, state.height, 0, 160), "b"),
+          seg(v(0, -1.48), v(0, 1.48), { tone: "muted", dash: true }),
+          circle(v(0, state.sourceHeight), 0.09, { tone: "a", fill: "a" }),
+          txt(v(0, 1.75), "Kaynak ucu", "n", { small: true }),
+          vec(v(3.2, 1.75), v(6.5, 1.75), { tone: "ink", bold: true }),
+          txt(v(4.85, 1.9), "İlerleme", "n", { small: true, bold: true }),
+          ...(state.width >= 1 ? span(v(state.rear, -1.62), v(state.front, -1.62), `${fmt(state.width, 2)} m`, 1, "a") : []),
+          txt(v(2, -2.75), "Tepe", "c", { pick: 0, small: true, bold: pick !== 1 }),
+          txt(v(6, -2.75), "Çukur", "c", { pick: 1, small: true, bold: pick === 1 }),
+        ],
+        readout: [`Kaynak ucu ${fmt(state.sourceHeight, 2)} m. Arka sınır ${fmt(state.rear, 2)} m, ön sınır ${fmt(state.front, 2)} m. Genişlik ${fmt(state.width, 2)} m.`],
+      };
+    },
+  },
   [pulseDirectionTitle]: {
     caption: "Tepe veya çukuru seç. İlerleme okuna göre P ön eğimde, K ise arka eğimde işaretlenir.",
     alt: "Yay kesitinde denge çizgisi, yatay ilerleme oku ve atmanın iki eğiminde düşey hareket okları var. P ilerleme tarafını, K arka tarafı gösteriyor.",
@@ -580,7 +609,9 @@ const yay: Record<string, FigureDef> = {
             vec(v(x, y), v(x, y + Math.sign(verticalVelocity) * 0.63), { tone, bold: true }),
             txt(v(x + 0.16, y + Math.sign(verticalVelocity) * 0.45), name, "e", { small: true, bold: true, tone }),
           ]),
-          txt(v(4, -1.95), " "),
+          ...pulseDirectionCases.map(({ label }, index) => txt(v(1.8 + (index % 2) * 4.4, -2.25 - Math.floor(index / 2) * 1.0), label, "c", {
+            pick: index, small: true, bold: index === (pick < 0 ? 0 : pick),
+          })),
         ],
         readout: [snapshot.label, `P ${verticalDirection(snapshot.front.verticalVelocity)} · K ${verticalDirection(snapshot.rear.verticalVelocity)}`],
       };

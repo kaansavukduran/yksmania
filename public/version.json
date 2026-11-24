@@ -1,8 +1,8 @@
 {
-  "version": "0.119.0",
+  "version": "0.120.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Sağa ve sola ilerleyen tepe ve çukurlarda ön ve arka yay noktalarının düşey hareketini karşılaştır. Kopya Kağıdı’nda sola giden çukur örneğini aç.",
-    "en": "Compare the vertical movement at the front and rear of crests and troughs traveling in either direction. Open the left-moving trough example in the reference sheet."
+    "tr": "Kaynağın önce yukarı veya aşağı hareketini seç. Tepe ve çukurun nasıl oluştuğunu, kaynak durduktan sonra genişliğin nasıl korunduğunu izle.",
+    "en": "Choose whether the source first moves up or down. Watch a crest or trough form and see how its width is preserved after the source stops."
   }
 }

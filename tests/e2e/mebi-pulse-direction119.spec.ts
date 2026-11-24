@@ -24,7 +24,7 @@ test("tepe ve çukur yönleri çevrimdışı çalışır ve öğrenme puanı ver
   expect(await drawing.innerHTML()).not.toBe(initial);
   expect((await page.evaluate(svgLayoutAudit, { scope: selector, figuresOnly: true, explore: true })).issues).toEqual([]);
   await drawing.screenshot({ path: info.outputPath("mebi-pulse-direction119.png") });
-  await figure.getByRole("button", { name: "Tepe sola", exact: true }).press("Enter");
+  await drawing.getByText("Tepe sola", { exact: true }).click();
   await expect(figure).toContainText("P yukarı · K aşağı");
   expect(learning(await storage(page))).toEqual(before);
 });
