@@ -25,6 +25,10 @@
   --sf-c: #376c4e;
 }
 .sf-svg {
+  /* Base label sizes in user units, read by the narrow-screen fit
+     (figureKit useNarrowFit); keep them equal to the font sizes below. */
+  --sf-fs-label: 21;
+  --sf-fs-small: 17;
   display: block;
   width: 100%;
   height: auto;
@@ -75,7 +79,7 @@
 .sf-label {
   fill: var(--sf, var(--text));
   font-family: inherit;
-  font-size: 21px;
+  font-size: max(21px, var(--sf-min-fs, 0px));
   font-weight: 600;
   paint-order: stroke;
   stroke: var(--bg);
@@ -83,7 +87,7 @@
   stroke-linejoin: round;
 }
 .sf-small {
-  font-size: 17px;
+  font-size: max(17px, var(--sf-min-fs, 0px));
   font-weight: 500;
 }
 .sf-strong { font-weight: 700; }
@@ -152,8 +156,25 @@
   max-width: 68ch;
 }
 @media (max-width: 520px) {
-  .sf-label { font-size: 25px; }
-  .sf-small { font-size: 21px; }
+  .sf-svg {
+    --sf-fs-label: 25;
+    --sf-fs-small: 21;
+  }
+  .sf-label { font-size: max(25px, var(--sf-min-fs, 0px)); }
+  .sf-small { font-size: max(21px, var(--sf-min-fs, 0px)); }
+}
+/* Forge066: on a phone the drawing uses the whole width of the lesson card,
+   up to the card's border (the side padding of .lesson-article at ≤ 560 px
+   in style.css). The card's own border frames it at the sides, so only the
+   top and bottom hairlines remain. Text around the drawing keeps its inset. */
+@media (max-width: 560px) {
+  .lesson-article .guide-section > .section-figure > .sf-svg {
+    --sf-bleed: clamp(12px, 3vw, 18px);
+    width: calc(100% + 2 * var(--sf-bleed));
+    margin-inline: calc(-1 * var(--sf-bleed));
+    border-inline-width: 0;
+    border-radius: 0;
+  }
 }
 
 .sf-legend {

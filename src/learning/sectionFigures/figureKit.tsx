@@ -4,6 +4,7 @@ import {
   useLayoutEffect,
   useRef,
   useState,
+  type CSSProperties,
   type ReactNode,
 } from "react";
 import {
@@ -17,6 +18,7 @@ import {
   type Seg,
   type Spot,
 } from "./labelPlacement";
+import { floorFor, narrowFit, sameFit, unionRect, type Fit, type Rect } from "./narrowFit";
 
 /*
  * Section figures: one static or lightly interactive diagram for a single
@@ -404,7 +406,7 @@ function dimLabelPoint(el: Extract<El, { k: "dim" }>, scale: number): V {
 }
 
 /** Fit math coordinates into the SVG; returns mapper and height. */
-function layout(els: El[], maxH = MAX_H) {
+function layout(els: El[], maxH = MAX_H, floor = 0) {
   const base = els
     .flatMap(extendPoints)
     .filter((p) => p.every(Number.isFinite));
@@ -433,6 +435,7 @@ function layout(els: El[], maxH = MAX_H) {
       anchor = anchorFor(at);
       shift = baselineShift(at);
       if (el.k === "text" && el.small) fs = SMALL_FS;
+      fs = Math.max(fs, floor);
       if (el.k === "text") weight = el.small ? 500 : el.bold ? 700 : 600;
       // A pickable capsule reaches 7 units beyond its text.
       if (el.k === "text" && el.pick !== undefined) pad = 7;
@@ -627,6 +630,8 @@ function planLabels(
   scale: number,
   height: number,
   pickable: boolean,
+  /** Narrow-screen font floor (user units): labels are placed at their real size. */
+  floor = 0,
 ) {
   const segs: Seg[] = [];
   const dots: Box[] = [];
@@ -758,7 +763,7 @@ function planLabels(
             anchor: anchorFor(d),
             dy: baselineShift(d),
           });
-      reqs.push({ key: i, text: el.label, fs: LABEL_FS, weight: 600, spots, rank: 0 });
+      reqs.push({ key: i, text: el.label, fs: Math.max(LABEL_FS, floor), weight: 600, spots, rank: 0 });
     } else if (el.k === "text" && el.s.trim()) {
       const [x, y] = P(el.p);
       const at = el.at ?? "c";
@@ -769,7 +774,7 @@ function planLabels(
         anchor: anchorFor(at),
         dy: baselineShift(at),
       };
-      const fs = el.small ? SMALL_FS : LABEL_FS;
+      const fs = Math.max(el.small ? SMALL_FS : LABEL_FS, floor);
       const weight = el.small ? 500 : el.bold ? 700 : 600;
       if (el.pick !== undefined && pickable) {
         reqs.push({ key: i, text: el.s, fs, weight, spots: [base], fixed: true, plate: true });
@@ -805,12 +810,12 @@ function planLabels(
             anchor: "middle",
             dy: 0.35,
           });
-      reqs.push({ key: i, text: el.label, fs: LABEL_FS, weight: 600, spots, rank: 2 });
+      reqs.push({ key: i, text: el.label, fs: Math.max(LABEL_FS, floor), weight: 600, spots, rank: 2 });
     } else if (el.k === "angle" && el.label?.trim()) {
       reqs.push({
         key: i,
         text: el.label,
-        fs: LABEL_FS,
+        fs: Math.max(LABEL_FS, floor),
         weight: 600,
         plate: true,
         rank: 1,
@@ -837,6 +842,7 @@ function PickLabel({
   size,
   onPick,
   plate,
+  minFs,
   children,
 }: {
   x: number;
@@ -849,6 +855,8 @@ function PickLabel({
   size: number;
   onPick?: () => void;
   plate?: boolean;
+  /** Narrow-screen font floor: the capsule re-measures when it changes. */
+  minFs?: number;
   children: string;
 }) {
   const ref = useRef<SVGTextElement>(null);
@@ -900,7 +908,7 @@ function PickLabel({
       live = false;
       ro?.disconnect();
     };
-  }, [children, x, y, className]);
+  }, [children, x, y, className, minFs]);
   return (
     <g
       className={`${tone} ${plate ? "sf-plate-group" : "sf-pick-group"}`}
@@ -928,6 +936,230 @@ function PickLabel({
   );
 }
 
+/** Smallest base font size (user units) of the visible text in a drawing. */
+function baseFont(svg: SVGSVGElement) {
+  const cs = getComputedStyle(svg);
+  const label = parseFloat(cs.getPropertyValue("--sf-fs-label")) || 21;
+  const small = parseFloat(cs.getPropertyValue("--sf-fs-small")) || 17;
+  let min = Infinity;
+  for (const t of svg.querySelectorAll("text")) {
+    if (!t.textContent?.trim()) continue;
+    const own = Number(t.getAttribute("data-fs"));
+    min = Math.min(min, own > 0 ? own : t.classList.contains("sf-small") ? small : label);
+  }
+  return min;
+}
+
+/** Box of a pill or plate as PickLabel sizes it from its text (user units). */
+function pillBox(t: SVGTextElement): Box | null {
+  const b = t.getBBox();
+  if (!(b.width > 0)) return null;
+  const s = t.textContent ?? "";
+  const fs = b.height / 1.21;
+  const sub = /[₀-₉₊₋]/.test(s) ? 0.28 * fs : 0;
+  const sup = /[⁰-⁹⁺⁻¹²³]/.test(s) ? 0.12 * fs : 0;
+  return { x0: b.x - 7, x1: b.x + b.width + 7, y0: b.y - 2 - sup, y1: b.y + b.height + 2 + sub };
+}
+
+/**
+ * Content box of a drawing (user units): every shape and label, with pills
+ * and plates taken from their text. A pill re-measures itself one render
+ * later, so its rectangle may still show an earlier size or place.
+ */
+function contentBox(svg: SVGSVGElement): Rect | null {
+  let x0 = Infinity;
+  let y0 = Infinity;
+  let x1 = -Infinity;
+  let y1 = -Infinity;
+  try {
+    for (const el of svg.children) {
+      if (!(el instanceof SVGGraphicsElement)) continue;
+      let b: Box | null;
+      if (el.matches(".sf-pick-group, .sf-plate-group")) {
+        const t = el.querySelector("text");
+        b = t ? pillBox(t) : null;
+      } else {
+        const r = el.getBBox();
+        b = r.width > 0 || r.height > 0 ? { x0: r.x, y0: r.y, x1: r.x + r.width, y1: r.y + r.height } : null;
+      }
+      if (!b) continue;
+      x0 = Math.min(x0, b.x0);
+      y0 = Math.min(y0, b.y0);
+      x1 = Math.max(x1, b.x1);
+      y1 = Math.max(y1, b.y1);
+    }
+  } catch {
+    return null;
+  }
+  return x1 > x0 && y1 > y0 ? { x: x0, y: y0, width: x1 - x0, height: y1 - y0 } : null;
+}
+
+/**
+ * Whether two visible labels come closer than `gap` user units, by the rule
+ * of the figure layout gate (tests/e2e/helpers/svgAudit.ts): plain text
+ * counts with its ink band (the font box less 15 % at top and bottom), a
+ * label on a pill or plate with its pill, sized as PickLabel will size it
+ * from the text box (its own re-measure runs after this check). Two plates
+ * may touch when the text inside them keeps the gap. Labels inside a ball
+ * belong to the ball and are not counted. No label may cover a marker dot
+ * (a plain circle at most 14 px wide on screen); `k` is user units per px.
+ */
+function labelsCollide(svg: SVGSVGElement, k: number) {
+  const gap = 2.5 * k;
+  const items: { ink: Box; outer: Box; plated: boolean }[] = [];
+  try {
+    for (const t of svg.querySelectorAll("text")) {
+      const s = t.textContent ?? "";
+      if (!s.trim() || t.classList.contains("sf-ball-label")) continue;
+      const b = t.getBBox();
+      if (!(b.width > 0)) continue;
+      const iy = 0.15 * b.height;
+      const ink = { x0: b.x, x1: b.x + b.width, y0: b.y + iy, y1: b.y + b.height - iy };
+      const plated = !!t.closest(".sf-pick-group, .sf-plate-group");
+      items.push({ ink, outer: (plated && pillBox(t)) || ink, plated });
+    }
+  } catch {
+    return false;
+  }
+  const apart = (a: Box, c: Box) => Math.max(c.x0 - a.x1, a.x0 - c.x1, c.y0 - a.y1, a.y0 - c.y1);
+  const dots: Box[] = [];
+  for (const c of svg.querySelectorAll("circle")) {
+    if (c.matches(".sf-ball") || c.closest(".sf-pick-group, .sf-plate-group")) continue;
+    const b = c.getBBox();
+    const w = (b.width + 2) / k;
+    if (w >= 2 && w <= 15) dots.push({ x0: b.x - 1, x1: b.x + b.width + 1, y0: b.y - 1, y1: b.y + b.height + 1 });
+  }
+  for (const a of items) {
+    const w = a.ink.x1 - a.ink.x0;
+    const core = { x0: a.ink.x0 + 0.04 * w, x1: a.ink.x1 - 0.04 * w, y0: a.ink.y0, y1: a.ink.y1 };
+    const cx = (a.ink.x0 + a.ink.x1) / 2;
+    const cy = (a.ink.y0 + a.ink.y1) / 2;
+    for (const d of dots) {
+      if (cx >= d.x0 && cx <= d.x1 && cy >= d.y0 && cy <= d.y1) continue;
+      if (apart(core, d) < k) return true;
+    }
+  }
+  for (let i = 0; i < items.length; i++)
+    for (let j = i + 1; j < items.length; j++) {
+      const a = items[i];
+      const c = items[j];
+      const g = apart(a.outer, c.outer);
+      if (g >= gap) continue;
+      if (a.plated && c.plated && g >= -0.5 * k && apart(a.ink, c.ink) >= gap) continue;
+      return true;
+    }
+  return false;
+}
+
+/**
+ * Narrow-screen fit (see narrowFit.ts): after each commit, before paint, the
+ * drawing's content box is measured and the viewBox cropped (and, if needed,
+ * a font floor set) so its smallest text stays readable on a phone. The box
+ * is the union of every state seen at this width, so stepping or playing a
+ * figure never shrinks it back and the drawing does not jump between frames.
+ * The floor is dropped for good at this width (the crop stays) when the
+ * larger text would hide a secondary label or bring two labels together
+ * that the original size kept apart.
+ */
+function useNarrowFit() {
+  /** Canvas height of the current layout, set by the renderer. */
+  const heightRef = useRef(0);
+  const ref = useRef<SVGSVGElement>(null);
+  const [fit, setFit] = useState<Fit | null>(null);
+  const [, setTick] = useState(0);
+  const seen = useRef<{ px: number; box?: Rect; n: number; noFloor: boolean }>({
+    px: 0,
+    n: 0,
+    noFloor: false,
+  });
+  useLayoutEffect(() => {
+    const svg = ref.current;
+    if (!svg || typeof svg.getBBox !== "function") return;
+    const st = seen.current;
+    const px = svg.getBoundingClientRect().width;
+    if (Math.abs(px - st.px) > 0.5) {
+      st.px = px;
+      st.box = undefined;
+      st.n = 0;
+      st.noFloor = false;
+    }
+    const k = fit ? fit.viewBox.width / px : 0;
+    if (fit?.minFs && !st.noFloor && labelsCollide(svg, k)) {
+      st.noFloor = true;
+      st.box = undefined;
+      st.n = 0;
+      setFit(null);
+      return;
+    }
+    const box = contentBox(svg);
+    if (!box) return;
+    st.box = unionRect(st.box, box);
+    let next = narrowFit({
+      px,
+      bbox: st.box,
+      minFont: baseFont(svg),
+      width: W,
+      height: heightRef.current,
+      floor: !st.noFloor,
+    });
+    // With a floor, the box and the floor only grow at this width: moved
+    // labels cannot make the fit swing back and forth.
+    if (fit?.minFs && next?.minFs) {
+      const vb = unionRect(fit.viewBox, next.viewBox);
+      next = { viewBox: vb, minFs: Math.max(fit.minFs, next.minFs, floorFor(vb.width, px)) };
+    }
+    if (sameFit(fit, next)) st.n = 0;
+    // The floor enlarges text, which can enlarge the box once or twice more.
+    else if (st.n++ < 8) setFit(next);
+    // A line too long for the screen at the floor size widens the box as
+    // fast as the floor grows: it never settles, so keep the crop only.
+    else if (!st.noFloor) {
+      st.noFloor = true;
+      st.box = undefined;
+      st.n = 0;
+      setFit(null);
+    }
+  });
+  useEffect(() => {
+    const svg = ref.current;
+    if (!svg) return;
+    let live = true;
+    const again = () => live && setTick((t) => t + 1);
+    // Web fonts change every text box: start the fit afresh at this width.
+    document.fonts?.ready
+      .then(() => {
+        seen.current.px = 0;
+        again();
+      })
+      .catch(() => undefined);
+    let last = svg.getBoundingClientRect().width;
+    const ro =
+      typeof ResizeObserver === "function"
+        ? new ResizeObserver(() => {
+            const w = svg.getBoundingClientRect().width;
+            if (Math.abs(w - last) > 0.5) {
+              last = w;
+              again();
+            }
+          })
+        : undefined;
+    ro?.observe(svg);
+    return () => {
+      live = false;
+      ro?.disconnect();
+    };
+  }, []);
+  /** Called while rendering: keep the crop, drop the floor at this width. */
+  const dropFloor = () => {
+    const st = seen.current;
+    if (st.noFloor) return;
+    st.noFloor = true;
+    st.box = undefined;
+    st.n = 0;
+  };
+  return { ref, fit, dropFloor, height: heightRef };
+}
+
 function Render({
   els,
   title,
@@ -942,8 +1174,26 @@ function Render({
   maxHeight?: number;
 }) {
   const tid = useId();
-  const { P, height, s: layoutScale } = layout(els, maxHeight);
-  const plan = planLabels(els, P, layoutScale, height, !!onPick);
+  const fit = useNarrowFit();
+  let minFs = fit.fit?.minFs;
+  // With a font floor the layout makes room for the larger side labels and
+  // the placer places every label at its real size.
+  let { P, height, s: layoutScale } = layout(els, maxHeight, minFs ?? 0);
+  let plan = planLabels(els, P, layoutScale, height, !!onPick, minFs ?? 0);
+  if (minFs) {
+    // The floor may not cost a label: a secondary label the original size
+    // shows must not be hidden by the larger text.
+    const hidden = (m: Map<number, { hidden: boolean }>) => [...m.values()].filter((x) => x.hidden).length;
+    const base = layout(els, maxHeight);
+    const basePlan = planLabels(els, base.P, base.s, base.height, !!onPick);
+    if (hidden(plan) > hidden(basePlan)) {
+      fit.dropFloor();
+      minFs = undefined;
+      ({ P, height, s: layoutScale } = base);
+      plan = basePlan;
+    }
+  }
+  fit.height.current = height;
   const plates: ReactNode[] = [];
   /** A planned label: plain text, or drawn last on a plate. */
   const label = (
@@ -969,6 +1219,7 @@ function Render({
           className={className}
           estimate={textWidth(s, fs, weight)}
           size={fs}
+          minFs={minFs}
           plate
         >
           {s}
@@ -1083,7 +1334,8 @@ function Render({
                 x={r2(cx)}
                 y={r2(cy + rr * 0.32)}
                 className="sf-ball-label"
-                style={{ fontSize: `${Math.max(12, rr * 0.85).toFixed(0)}px` }}
+                data-fs={Math.max(12, rr * 0.85).toFixed(0)}
+                style={{ fontSize: `max(${Math.max(12, rr * 0.85).toFixed(0)}px, var(--sf-min-fs, 0px))` }}
               >
                 {el.label}
               </text>
@@ -1235,6 +1487,7 @@ function Render({
               className={`${cls(el.tone)} sf-label${el.small ? " sf-small" : ""}${el.bold ? " sf-strong" : ""} sf-pickable`}
               estimate={textWidth(el.s, el.small ? 17 : 21, el.small ? 500 : el.bold ? 700 : 600)}
               size={el.small ? 17 : 21}
+              minFs={minFs}
               onPick={() => onPick(pick)}
             >
               {el.s}
@@ -1256,8 +1509,15 @@ function Render({
   });
   return (
     <svg
-      viewBox={`0 0 ${W} ${height}`}
+      ref={fit.ref}
+      viewBox={
+        fit.fit
+          ? `${fit.fit.viewBox.x} ${fit.fit.viewBox.y} ${fit.fit.viewBox.width} ${fit.fit.viewBox.height}`
+          : `0 0 ${W} ${height}`
+      }
       className="sf-svg"
+      data-fit={fit.fit ? (minFs ? "floor" : "crop") : undefined}
+      style={minFs ? ({ "--sf-min-fs": `${minFs}px` } as CSSProperties) : undefined}
       role="img"
       aria-labelledby={`${tid}-t ${tid}-d`}
     >
