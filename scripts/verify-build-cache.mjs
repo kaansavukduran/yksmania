@@ -44,7 +44,7 @@ const required = (await walk(root)).filter((file) => {
   return (
     !/^(?:sw|workbox-[^/]+)\.js$/.test(name) &&
     !legacyPublicImages.includes(name) &&
-    /\.(?:js|mjs|css|html|svg|png|webp|woff2|wasm|bcmap|pfb|ttf)$/.test(name)
+    /\.(?:js|mjs|css|html|svg|png|jpe?g|webp|woff2|wasm|bcmap|pfb|ttf)$/.test(name)
   );
 });
 let total = 0;

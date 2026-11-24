@@ -242,7 +242,7 @@ function ImageFigure({
         <div
           className="source-figure-scroll"
           tabIndex={0}
-          aria-label="Büyütülmüş soru görseli; yön tuşlarıyla kaydırabilirsin"
+          aria-label="Büyütülmüş görsel. Yön tuşlarıyla kaydırabilirsin."
         >
           <img
             src={figure.src}

@@ -139,7 +139,7 @@ export default defineConfig({
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         dontCacheBustURLsMatching: /assets\/.*-[\w-]{8}\./,
         globPatterns: [
-          "**/*.{js,mjs,css,html,svg,png,webp,woff2,wasm,bcmap,pfb,ttf}",
+          "**/*.{js,mjs,css,html,svg,png,jpg,jpeg,webp,woff2,wasm,bcmap,pfb,ttf}",
         ],
         globIgnores: [...legacyPublicImages],
       },

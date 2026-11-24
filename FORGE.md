@@ -1,3 +1,9 @@
+# Termal kamera ekranında renk ve ölçüm · 0.112.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. Kızılötesi örneği için ayrı bir gerçek termal ekran fotoğrafı kullanılıyor. Fotoğrafın renk ölçeği, merkez işareti ve °F birimi okunuyor. Kopya Kağıdı’nda ölçümün °C karşılığı hesaplanıyor. MEBİ sayfasındaki fotoğrafın yeniden kullanım durumu açık. [MartinThoma’nın CC0 fotoğrafı](https://commons.wikimedia.org/w/index.php?title=File:Thermal-image.jpg&oldid=1278846404)
+
+Check, 31 birim, derleme ve altı Chromium senaryosu geçti. Öğrenci ekranında 375 px ve büyük yazıyla yakınlaştırma, klavye odağı ve çevrimdışı JPEG doğrulandı. Görsel inceleme öğrenme kaydı üretmedi. Sıradaki madde aynı sayfadaki mikrodalga fırın örneği.
+
 # Radyo vericisinde dalga boyu · 0.111.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. Radyo kulesi ve çevresindeki cepheler yeniden çizildi. 50–150 MHz aralığında boşluktaki dalga boyu, yayılan cephelerle birlikte 6 m’den 2 m’ye değişiyor. Kopya Kağıdı frekans tablosunu, birim dönüşümünü ve çözüm çizimini içeriyor.

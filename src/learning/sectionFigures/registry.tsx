@@ -1,5 +1,8 @@
 import "./sectionFigures.css";
 import { SectionFigureView, type FigureDef } from "./figureKit";
+import { SourceQuestionFigure } from "../SourceQuestionFigure";
+import { thermographySourceURL } from "../mebiThermography";
+import { thermographyPhoto } from "./mebiThermographyPhoto";
 import { geometryFigures031 } from "./geometryFigures031";
 import { geometryFigures032a } from "./geometryFigures032a";
 import { geometryFigures032b } from "./geometryFigures032b";
@@ -394,11 +397,21 @@ export function SectionFigure({
   label?: string;
 }) {
   const def = sectionFigures[guideId]?.[title];
-  if (!def) return null;
+  const photo = guideId === "dalgalara-giris" && title === thermographyPhoto.title
+    ? thermographyPhoto
+    : undefined;
+  if (!def && !photo) return null;
   return (
     <>
       {label && <p className="small muted">{label}</p>}
-      <SectionFigureView def={def} title={title} />
+      {photo ? (
+        <>
+          <SourceQuestionFigure figure={photo} />
+          <a className="small" href={thermographySourceURL} target="_blank" rel="noopener noreferrer">
+            MartinThoma · Wikimedia Commons · CC0 1.0
+          </a>
+        </>
+      ) : def && <SectionFigureView def={def} title={title} />}
     </>
   );
 }

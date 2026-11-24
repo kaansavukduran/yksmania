@@ -139,6 +139,8 @@ if (!process.env.YKSMANIA_PAGES_URL) {
     ".css": "text/css",
     ".svg": "image/svg+xml",
     ".png": "image/png",
+    ".jpg": "image/jpeg",
+    ".jpeg": "image/jpeg",
     ".woff2": "font/woff2",
   };
   server = createServer(async (req, res) => {

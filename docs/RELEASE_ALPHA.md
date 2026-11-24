@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.112.0 · Termal kamera ekranı
+
+Yayın adayı. Gerçek bir termal kamera ekranında renk ölçeğini, merkez işaretini ve birimi bul. Kopya Kağıdı’nda merkezdeki ekran değerini °C’ye çevir. Fotoğraf çevrimdışı ve yakınlaştırılabilir. [Fotoğraf ve CC0 lisansı](https://commons.wikimedia.org/w/index.php?title=File:Thermal-image.jpg&oldid=1278846404)
+
 # ÖSYM Mania 0.111.0 · Radyo dalgasının cephe aralığı
 
 Yayın adayı. Radyo vericisinin frekansını değiştir ve iki cephenin aralığını ölç. Kopya Kağıdı’nda MHz dönüşümü ve örnek dalga boyu hesabı var.
