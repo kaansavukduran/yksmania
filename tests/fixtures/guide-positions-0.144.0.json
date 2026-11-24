@@ -1,0 +1,103 @@
+{
+  "ses-deprem-dalgalari": {
+    "sections": [
+      "Ses bir ortam titreşimidir",
+      "Fanusta ses hangi yoldan ulaşır?",
+      "Sürati kaynaktan ayır",
+      "Yükseklik sözcüğünün iki anlamını çöz",
+      "Şiddet ile desibeli karıştırma",
+      "Tını ve rezonansı farklı sorularla ölç",
+      "Kaynağı değiştirerek notayı değiştir",
+      "Yankıda mesafeyi iki kez say",
+      "Depremi odak ve dalga yollarıyla düşün",
+      "Büyüklük ve yerel şiddet farklıdır",
+      "Kanıtın sınırını koru"
+    ],
+    "examples": [
+      "Yankının dönüş yolu",
+      "Frekans değişti, ortam değişmedi",
+      "Şiddet ve düzey",
+      "P–S geliş farkı",
+      "6 km derinlikteki odaktan istasyona ulaşım",
+      "Saat neden titreştiği hâlde duyulmuyor?",
+      "Aynı sıcaklıkta su ile deniz suyunu karşılaştır"
+    ],
+    "examplePage": 11
+  },
+  "isik-bilgisi": {
+    "sections": [
+      "Işın çizimi neyi temsil eder?",
+      "Dalga ve foton modellerini birlikte düşün",
+      "Kaynak olanla görüneni ayır",
+      "Candela, lümen ve lüksü yerlerine koy",
+      "Ters kareyi geometriden türet",
+      "Açıyı yüzeyle değil normalle ölç",
+      "Birden fazla kaynağı ve alanı ayrı değiştir",
+      "Işık enerji ve momentum taşır"
+    ],
+    "examples": [
+      "Mesafeyi iki katına çıkar",
+      "Yüzey açısını dönüştür",
+      "Toplam akı ve alan",
+      "İki lambanın katkısı"
+    ],
+    "examplePage": 8
+  },
+  "golge-yari-golge": {
+    "sections": [
+      "Işık yolu ve opak engel",
+      "Tek noktasal kaynakta sınırlar",
+      "Kaynağa ve perdeye yaklaşmayı ayrı değiştir",
+      "İki kaynakta her gölgeyi ayrı çiz",
+      "Örtüşme var mı, önce onu sor",
+      "Geniş kaynakta görünür kısmı düşün",
+      "Gözlemci ve perde aynı kanıtı paylaşır",
+      "Çözümü çizim ve birimle doğrula"
+    ],
+    "examples": [
+      "Perde uzaklığını doğru topla",
+      "Boy ve alan",
+      "İki gölgenin kesişimi",
+      "Kaynaklardan birini kapat"
+    ],
+    "examplePage": 8
+  },
+  "duzlem-ayna": {
+    "sections": [
+      "Yansıma normalle başlar",
+      "Düzgün ve dağınık yansıma aynı yasaya uyar",
+      "Görüntüyü ışın uzantılarıyla kur",
+      "Sanal, düz ve eş boylu ne demektir?",
+      "Sonlu aynada görüntünün yeri ile görünmesi farklıdır",
+      "Tam boy aynayı yarım boy kılan benzerlik",
+      "Görüş alanı sorusunda neyin sabit olduğunu söyle",
+      "Hareketi sabit bir referansa göre çöz"
+    ],
+    "examples": [
+      "Yüzeyle 35°",
+      "Cisim ve görüntü aralığı",
+      "Ayna hareket ediyor",
+      "En küçük tam boy ayna"
+    ],
+    "examplePage": 8
+  },
+  "kuresel-aynalar": {
+    "sections": [
+      "Kürenin hangi yüzü yansıtıyor?",
+      "Çukur ayna her zaman büyütmez",
+      "Özel ışınları yansıma yasasından türet",
+      "Gerçek ile sanal, ışınla uzantı ayrımıdır",
+      "İki odak çevresindeki beş konum",
+      "Odakta sonlu görüntü çizme",
+      "Tümsek aynadaki dar görüntüyü açıkla",
+      "Her sonuca üç kontrol koy"
+    ],
+    "examples": [
+      "Uzak cisim, küçük görüntü",
+      "Odak içindeki cisim",
+      "Tümsek örnek",
+      "Odağın tam üzerinde"
+    ],
+    "examplePage": 8
+  }
+}

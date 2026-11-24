@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.188.0 · Altı çukur ayna ışını
+
+Yayın adayı. Yerel normalden yansıyan altı ayrı yolu izle. Gerçek kesişimi ve sanal geri uzantıyı karşılaştır.
+
 # ÖSYM Mania 0.187.0 · Normalden iki eş açı
 
 Yayın adayı. Hem R ile f ilişkisini ölç hem de N temas noktasında iki eş açıyı ayrı ışın kollarında izle.

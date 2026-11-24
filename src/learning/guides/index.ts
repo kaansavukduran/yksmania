@@ -76,6 +76,7 @@ import { mirrorFieldExample, mirrorFieldSection, mirrorWritingSection } from "..
 import { mirrorBodyWallExample, mirrorBodyWallSection } from "../mebiMirrorBodyWall";
 import { sphericalAxisSection, sphericalMirrorExample, sphericalSurfaceSection } from "../mebiSphericalMirror";
 import { concaveNormalExample, concaveNormalSection, curvatureFocusSection } from "../mebiConcaveRay";
+import { concaveSpecialExample, concaveSpecialSection } from "../mebiConcaveSpecialRays";
 import { animalPitchExample, animalPitchSection } from "../mebiPitchSamples";
 import { bottlePitchExample, bottlePitchSection } from "../mebiBottlePitch";
 import { wirePairExample, wirePairSection } from "../mebiWirePitch";
@@ -557,30 +558,37 @@ export function studyGuide(lessonId: string) {
   if (guide?.id === "ses-deprem-dalgalari") {
     return {
       ...guide,
-      sections: guide.sections.flatMap((section) => {
-        if (section.title === seismicFocusTitle) return [seismicFocusSection, seismicWavefrontSection, seismicRecordSection, magnitudeSection, magnitudeRatioSection, earthquakeSequenceSection, tsunamiFormationSection, tsunamiDepthSection, shakingDamageSection, isolationSection, earthquakeCoverSection, tsunamiCoastSection, earthquakePreparationSection];
-        if (section.title === "Ses bir ortam titreşimidir") return [{ ...section, figureTitle: section.title }, bellJarSection];
-        if (section.title === "Sürati kaynaktan ayır") return [{ ...section, table: soundMediumTable }];
-        if (section.title === "Yükseklik sözcüğünün iki anlamını çöz") return [section, animalPitchSection, bottlePitchSection, soundLevelSection, timbreSection];
-        if (section.title === "Tını ve rezonansı farklı sorularla ölç") return [section, resonanceSection, tacomaSection, magneticResonanceSection];
-        if (section.title === "Kaynağı değiştirerek notayı değiştir") return [section, wirePairSection, tensionComparisonSection, lengthComparisonSection];
-        if (section.title === "Yankıda mesafeyi iki kez say") return [section, echoSection, sonarSection, ultrasoundSection, roomAcousticsSection, noiseSection];
-        return [section];
-      }),
-      examples: [...guide.examples, seismicFocusExample, seismicRecordExample, earthquakeSequenceExample, tsunamiExample, isolationExample, earthquakeCoverExample, tsunamiCoastExample, earthquakePreparationExample, soundBellExample, soundSpeedExample, animalPitchExample, bottlePitchExample, wirePairExample, tensionLengthExample, soundLevelExample, timbreExample, resonanceExample, tacomaExample, echoExample, sonarExample, ultrasoundExample, roomAcousticsExample, noiseExample, magneticResonanceExample, magnitudeExample],
+      sections: [
+        ...guide.sections.flatMap((section) => {
+          if (section.title === seismicFocusTitle) return [seismicFocusSection];
+          if (section.title === "Ses bir ortam titreşimidir") return [{ ...section, figureTitle: section.title }, bellJarSection];
+          if (section.title === "Sürati kaynaktan ayır") return [{ ...section, table: soundMediumTable }];
+          return [section];
+        }),
+        animalPitchSection, bottlePitchSection, wirePairSection, tensionComparisonSection, lengthComparisonSection,
+        soundLevelSection, timbreSection, resonanceSection, tacomaSection, echoSection, sonarSection,
+        ultrasoundSection, roomAcousticsSection, noiseSection, magneticResonanceSection,
+        seismicWavefrontSection, seismicRecordSection, magnitudeSection, magnitudeRatioSection, earthquakeSequenceSection,
+        tsunamiFormationSection, tsunamiDepthSection, shakingDamageSection, isolationSection, earthquakeCoverSection,
+        tsunamiCoastSection, earthquakePreparationSection,
+      ],
+      examples: [
+        ...guide.examples, seismicFocusExample, soundBellExample, soundSpeedExample,
+        animalPitchExample, bottlePitchExample, wirePairExample, tensionLengthExample, soundLevelExample, timbreExample,
+        resonanceExample, tacomaExample, echoExample, sonarExample, ultrasoundExample, roomAcousticsExample, noiseExample,
+        magneticResonanceExample, seismicRecordExample, magnitudeExample, earthquakeSequenceExample, tsunamiExample,
+        isolationExample, earthquakeCoverExample, tsunamiCoastExample, earthquakePreparationExample,
+      ],
       source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfadaki yer dalgası kesiti fay ve kaya parçalarıyla yeniden çizildi. Yol uzunlukları ve süratler özgün düzgün kaya modeline aittir. Fiziksel 163, basılı 161. sayfadaki ses kaynağı ve hava tanecikleri çizildi. Cam fanus ve çalar saat modeli, aynı sayfanın üç ses sürati karşılaştırmasıyla çalışılıyor. Fiziksel 164, basılı 162. sayfadaki iki ses kaynağı ayrı lisanslı fotoğraflar ve temsilî eş zaman grafikleriyle karşılaştırılıyor. Aynı sayfanın metal çubuklu su şişeleri, vurma ve üflemede ayrı titreşim çizimleriyle gösteriliyor. Aynı sayfanın K ve L telleri, eşit G ağırlıkları ve çaplarıyla yeniden çizildi. Fiziksel 165, basılı 163. sayfadaki K ve M gerilimleri ile uzun ve kısa K düzenekleri aynı tel denklemiyle çalışılıyor. Aynı sayfanın desibel cetveli 15 temsilî giriş ve şiddet hesabıyla yeniden oluşturuldu. Aynı sayfanın keman ve piyano örneğinde eş periyotlu çizgiler ve üç harmonik payı karşılaştırılıyor. Fiziksel 166, basılı 164. sayfadaki iki diyapazon, hava yoluyla zorlama ve sonlu model tepkisiyle karşılaştırılıyor. Aynı sayfadaki Tacoma örneği Barney Elliot’ın 1940 arşiv kareleri, Washington Eyaleti Ulaştırma Bakanlığının incelemesi ve özgün tabliye kesitiyle işleniyor. Aynı sayfanın yankı örneği iki yönlü ölçüm ve kendi çözüm çizimleriyle genişletildi. Tekne, sonar başlığı ve balık sürüsü aynı sayfadaki şemaya göre yeniden çizildi. Düşey ölçüm değerleri öğretim modeline aittir. Aynı fiziksel sayfadaki ultrason örneği gerçek başlık fotoğrafı ve eş hızda iki yankı yoluyla genişletildi. Yumuşak doku değerleri örnek modele aittir. Aynı sayfadaki Selimiye Camii iç fotoğrafı ve tiyatro akustiği örneği, doğrudan ve yansıyan ses çizimleriyle karşılaştırılıyor. Salon ölçüleri öğretim modeline aittir. Aynı sayfanın gürültü maddesi bir ila dört bağımsız eş kaynağın şiddet toplamı ve desibel farkıyla örneklendi. Fiziksel 166 sayfadaki MR örneği ayrı frekans eşleşmesi ve radyo sinyali çizimleriyle işlendi. Ultrason yankısıyla karşılaştırıldı. Fiziksel 167, basılı 165. sayfadaki büyüklük ve şiddet karşılaştırması kaynak ve iki yerel gözlemle çizildi. Genlik ve enerji oranları güncel USGS açıklamasıyla denetlendi. Aynı sayfadaki sismograf ve dalga türleri, odak hesabından gelen P ve S varışlarıyla örnek sismogramda gösterildi. Aynı sayfadaki odak halkaları, sabit süratte farklı zamanlar için kesitte çizildi. Öncü, ana ve artçı dizisi USGS tanımlarıyla karşılaştırıldı. Aynı sayfadaki tsunami oluşumu ve yayılımı, NOAA fizik açıklamasıyla karşılaştırıldı. İki derinlikte hesaplanan tepe aralıkları ortak ölçekte çizildi. Fiziksel 168, basılı 166. sayfadaki yerel hasar ve kolon altı yalıtım örneği, Gölbaşı ve Pasadena gerçek fotoğraflarıyla işlendi. Bağlantı hareketi ayrı kesitte çizildi. Aynı sayfadaki Çök, Kapan, Tutun, kıyı uyarısı ve evde hazırlık, AFAD ve NOAA açıklamalarıyla karşılaştırıldı. Üç korunma pozu, yükselen tahliye oku, ev planı ve çanta ayrı adımlarda işlendi.`,
     };
   }
   if (guide?.id === "isik-bilgisi") {
     return {
       ...guide,
-      sections: guide.sections.flatMap((section) => {
-        if (section.title === lightModelsTitle) return [lightModelsSection];
-        if (section.title === crookesPhotoSection) return [section, crookesModelSection];
-        if (section.title === "Candela, lümen ve lüksü yerlerine koy") return [section, photometryUnitsSection, parallelFluxSection];
-        if (section.title === "Ters kareyi geometriden türet") return [section, pointSourcePlaneSection, beamDistanceSection];
-        return [section];
-      }),
+      sections: [
+        ...guide.sections.map((section) => section.title === lightModelsTitle ? lightModelsSection : section),
+        photometryUnitsSection, parallelFluxSection, pointSourcePlaneSection, beamDistanceSection, crookesModelSection,
+      ],
       examples: [...guide.examples, lightModelsExample, photometryUnitsExample, parallelFluxExample, pointSourcePlaneExample, beamDistanceExample, crookesExample],
       source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 169, basılı 167. Işın, dalga ve foton rolleri kaynak gruplaması ve OpenStax ile karşılaştırıldı. Çift yarık aralığı, dalga boyu ve ekran uzaklığı öğretim modeli değerleridir. Fiziksel 170, basılı 168. sayfadaki lamba ışınları, 1 m yarıçaplı küre ve dönen yüzey ayrı çizildi. Birimler BIPM fotometri tanımlarıyla karşılaştırıldı. Fiziksel 171, basılı 169. sayfadaki A ve B ışınları, normal ve eğik uzaklıkla yeniden çizildi. Noktasal ve paralel demet iki ayrı uzaklık ölçümünde birlikte karşılaştırıldı. Ölçüm değerleri özgün ideal örneklerdir. Aynı sayfadaki Crookes düzeneği için Timeline’ın CC BY-SA 3.0 fotoğrafı kullanıldı. Kanat kesiti ve düşük basınçlı gazın hareketi ayrıca çizildi.`,
     };
@@ -588,32 +596,34 @@ export function studyGuide(lessonId: string) {
   if (guide?.id === "golge-yari-golge") {
     return {
       ...guide,
-      sections: [lightTransmissionSection, ...guide.sections.flatMap((section) => {
-        if (section.title === "Tek noktasal kaynakta sınırlar") return [section, sphereShadowSection];
-        if (section.title === "İki kaynakta her gölgeyi ayrı çiz") return [section, coaxialShadowSection, stackedShadowSection];
-        if (section.title === "Geniş kaynakta görünür kısmı düşün") return [equalExtendedShadowSection, section, extendedConeSection, parallelLitSphereSection];
-        return [section];
-      })],
-      examples: [lightTransmissionExample, ...guide.examples, sphereShadowExample, coaxialShadowExample, stackedShadowExample, equalExtendedShadowExample, extendedConeExample, parallelLitSphereExample],
+      sections: [
+        ...guide.sections, lightTransmissionSection, sphereShadowSection, coaxialShadowSection, stackedShadowSection,
+        equalExtendedShadowSection, extendedConeSection, parallelLitSphereSection,
+      ],
+      examples: [...guide.examples, lightTransmissionExample, sphereShadowExample, coaxialShadowExample, stackedShadowExample, equalExtendedShadowExample, extendedConeExample, parallelLitSphereExample],
       source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 172, basılı 170. Saydam pencere, buzlu cam ve metal levha gerçek lisanslı örnek fotoğraflarla karşılaştırıldı. Geçen ışınlar temsili çizimlerle aynı üç durumda incelendi. Aynı sayfadaki opak küre iki teğet ışın ve ölçülen tam gölge çapıyla yeniden modellendi. Perde uzaklıkları özgün öğretim değerleridir. Fiziksel 173, basılı 171. sayfadaki ortak eksende K ve L, perde kesiti ve önden görünümle yeniden modellendi. Dört hareket, ilk düzenle ayrı karşılaştırıldı. Aynı sayfadaki eş büyüklükte küresel kaynak ile engelin paralel ve eğik sınırları ayrı çizildi. Aynı sayfada düşey doğrultuda sıralanan K ve L için her kaynağın perde kesiti ve önden görünümü kendi teğetlerinden hesaplandı. Fiziksel 174, basılı 172. sayfadaki üç perde, tam gölge konisinin önünde, ucunda ve ardında ayrı çizildi. Fiziksel 175, basılı 173. sayfada paralel ışık alan topun yandan görülen yarım diski yeniden çizildi. Gözlem açısı değişen örneğin ölçüleri özgün öğretim modelidir.`,
     };
   }
   if (guide?.id === "duzlem-ayna") {
     return {
       ...guide,
-      sections: [lightWaterReflectionSection, visibleByReflectionSection, ...guide.sections.flatMap((section) =>
-        section.title === "Görüntüyü ışın uzantılarıyla kur" ? [section, mirrorEndpointsSection, mirrorWritingSection, mirrorFieldSection, mirrorBodyWallSection] : [section],
-      )],
-      examples: [lightWaterReflectionExample, visibleByReflectionExample, roughSurfaceExample, mirrorEndpointsExample, mirrorFieldExample, mirrorBodyWallExample, ...guide.examples],
+      sections: [
+        ...guide.sections, lightWaterReflectionSection, visibleByReflectionSection, mirrorEndpointsSection,
+        mirrorWritingSection, mirrorFieldSection, mirrorBodyWallSection,
+      ],
+      examples: [...guide.examples, lightWaterReflectionExample, visibleByReflectionExample, roughSurfaceExample, mirrorEndpointsExample, mirrorFieldExample, mirrorBodyWallExample],
       source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 176, basılı 174. Kıyı, deniz yüzeyi ve sualtı görünümü için lisanslı fotoğraf örnekleri kullanıldı. Dik ve eğik yansımada ışık yönü ile su cephesi, aynı açı girdisinden ayrı çizildi. Fiziksel 177, basılı 175. sayfadaki kaynak, top ve göz için aydınlık ve karanlık örnekleri aynı ışık yoluna bağlandı. Yansıma payları öğretim değerleridir. Aynı sayfada düzgün ve dağınık yansıma, her temas noktasındaki normal ile yeniden çizildi. Fiziksel 178, basılı 176. sayfadaki K ile K′ ve eğik KL ile K′L′ görüntüsü, iki gerçek ışın ve ayrı geri uzantılarıyla modellendi. Fiziksel 179, basılı 177. sayfadaki ambulans örneği lisanslı fotoğraf ve yatay yansıma modeliyle gösterildi. Üç görüş alanı yöntemi ve beden-duvar karşılaştırması ayrı çizildi.`,
     };
   }
   if (guide?.id === "kuresel-aynalar") {
     return {
       ...guide,
-      sections: [sphericalSurfaceSection, sphericalAxisSection, curvatureFocusSection, concaveNormalSection, ...guide.sections],
-      examples: [sphericalMirrorExample, concaveNormalExample, ...guide.examples],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 180, basılı 178. Kürenin iç ve dış yüzü, merkez, odak, tepe, asal eksen ve paralel ışın çizimleri yeniden kuruldu. Sayısal modelde küresel aynanın eksen dışındaki ışınları tam yansıma yasasıyla hesaplanıyor. Fiziksel 181, basılı 179. sayfadaki R ve iki eş f aralığı ile N noktasının normaline göre eş açılar etkileşimli çizildi.`,
+      sections: [
+        ...guide.sections, sphericalSurfaceSection, sphericalAxisSection, curvatureFocusSection,
+        concaveNormalSection, concaveSpecialSection,
+      ],
+      examples: [...guide.examples, sphericalMirrorExample, concaveNormalExample, concaveSpecialExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 180, basılı 178. Kürenin iç ve dış yüzü, merkez, odak, tepe, asal eksen ve paralel ışın çizimleri yeniden kuruldu. Sayısal modelde küresel aynanın eksen dışındaki ışınları tam yansıma yasasıyla hesaplanıyor. Fiziksel 181, basılı 179. sayfadaki R ve iki eş f aralığı ile N noktasının normaline göre eş açılar etkileşimli çizildi. Fiziksel 182, basılı 180. sayfadaki altı çukur ayna ışını, her temasın yerel normali ve gerçek/sanal kesişimle ayrı kuruldu.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

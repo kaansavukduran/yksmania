@@ -1,8 +1,8 @@
 {
-  "version": "0.187.0",
+  "version": "0.188.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Küresel aynanın yarıçapını değiştir ve iki eş odak aralığını ölç. Çukur aynada temas noktasının normalinden gelme ve yansıma açılarını karşılaştır.",
-    "en": "Change the spherical mirror radius and measure its two equal focal intervals. Compare the angles of incidence and reflection from the local normal."
+    "tr": "Çukur aynadaki altı ışın yolunu ayrı aç. Gerçek kesişim ile kesik geri uzantıyı karşılaştır. Önceden kaydedilen fizik okuma sayfaları yerinde duruyor.",
+    "en": "Open all six concave-mirror rays and compare real and backward-extension intersections. Previously saved physics reading positions are preserved."
   }
 }
