@@ -1,8 +1,8 @@
 {
-  "version": "0.151.0",
+  "version": "0.152.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Yankının gidiş ve dönüş oklarını aç. Ölçülen süreyi değiştirip duvara olan tek yönlü uzaklığı bul. Animasyonda sesin duvara vardığı ve kaynağa döndüğü iki anı gör.",
-    "en": "Follow outgoing and returning echo paths. Change the measured delay to find the one-way distance to the wall. Watch the pulse reach the wall and return to the source."
+    "tr": "Teknenin sonar başlığından sürüye giden ve geri dönen sesi izle. Ölçülen süreyi değiştirip balık sürüsünün düşey uzaklığını bul.",
+    "en": "Follow sound from the boat to the shoal and back. Change the measured delay to find the vertical distance to the fish."
   }
 }

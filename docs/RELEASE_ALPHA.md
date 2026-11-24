@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.152.0 · Sonar ve balık sürüsü
+
+Yayın adayı. Teknenin sonar başlığından balık sürüsüne inen oku izle. Dönüş süresini değiştirip sürünün düşey uzaklığını ölç. Kopya Kağıdında 120 ms’nin iki yolu kapsadığını iki çizimle gör.
+
 # ÖSYM Mania 0.151.0 · Yankı ve uzaklık
 
 Yayın adayı. Ölçümün ne zaman tamamlandığını atma animasyonunda izle. Dönüş süresini değiştirip duvara olan tek yön mesafesini bul. Kopya Kağıdı gidiş-dönüşü ve tek yönü ayrı açıklıyor.
