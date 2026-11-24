@@ -2239,6 +2239,58 @@ export const questionTactics: QuestionTactic[] = [
       "2016 LYS Biyoloji 19 mantığı: üçer alelli iki lokusta 6 × 6 = 36 genotip; 3 × 3 = 9 alel sayısını genotip sanmaktır.",
     ],
   },
+  {
+    id: "osmanli-yon-rakip-sonuc",
+    guides: ["dunya-gucu-osmanli"],
+    match: /savaş|sefer|antlaşma|fetih|kuşatma|rakip|Safevi|Habsburg|Venedik|Portekiz|Memlûk|deniz|donanma/i,
+    title: "Olayı yön, rakip, araç ve sonuçla kodla",
+    steps: [
+      "Yılı ve yönü yaz: batıda kara (Habsburg), doğuda Safevi, güneyde Memlûk, denizde Venedik, İspanya ve Portekiz.",
+      "Fiili ayır: kuşatma, meydan savaşı, antlaşma ve üs kazanımı farklı sonuç türleridir; kuşatılan yer alınmış sayılmaz.",
+      "Hedef ile erişilen sonucu ayrı satıra yaz: Diu ve Hürmüz hedefti ama alınamadı; Aden, Basra ve Maskat alındı.",
+      "Kazanım ile bedeli birlikte oku: 1566 sonrasında Kıbrıs ve Tunus kazanılırken uzun savaşlar para ve asker yükünü büyüttü.",
+      "“Tamamen, bütün denizler, sona erdi” gibi kapsam sözcüklerinde karşı örnek ara. 2023 AYT TDE–Sosyal Bilimler-1 29 mantığı: unvanı siyasi iddiaya, iddiayı olaya bağla.",
+    ],
+  },
+  {
+    id: "devrim-mekanizma-zinciri",
+    guides: ["devrimler-caginda-devlet-toplum"],
+    match: /devrim|sanayi|ihtilal|milliyetçilik|yurttaş|ferman|anayasa|meşrutiyet|ordu|ocak|reform|eşitlik/i,
+    title: "Devrimden sonuca mekanizma zinciriyle git",
+    steps: [
+      "Sonuç sorusunda devrimin mekanizmasını bir fiille yaz: makine üretir, fabrika yoğunlaştırır, millet egemenliği temsil ister.",
+      "Her seçeneği bu zincire bağla; aynı yüzyılda olmak bağ sayılmaz. Ulus-devletlerin zayıflaması sanayileşme zincirinden çıkmaz.",
+      "Yurttaşlıkta hak ile yükümlülüğü birlikte ara: eşitlik, düzenli vergi ve zorunlu askerlik birlikte geliyorsa aranan modern yurttaşlıktır.",
+      "Ordu reformunda eski ocak ile yeni birliğin ilişkisini sor: yan yana mı kuruldu, ocak kaldırıldıktan sonra mı?",
+      "2020 TYT Sosyal Bilimler 3 ve 2024 AYT Sosyal Bilimler-2 5 mantığı: birleştirici çözümü ve devrimin doğrudan sonucunu kanıtla seç.",
+    ],
+  },
+  {
+    id: "denge-tehdit-ortak-bedel",
+    guides: ["denge-stratejisi"],
+    match: /denge|ittifak|antlaşma|Rusya|İngiltere|Fransa|Avusturya|Almanya|Boğaz|destek|müdahale/i,
+    title: "Tehdidi, ortağı ve bedeli sırayla yaz",
+    steps: [
+      "Tarihi ve o andaki en büyük tehdidi yaz: 1798'de Fransa, 1833'te Mehmet Ali Paşa, 1853'te Rusya.",
+      "Bu tehdidi sınırlamak isteyen gücü bul; dün rakip olan devlet bugün ortak olabilir.",
+      "Desteğin bedelini ara: 1878'de Kıbrıs, 1854 sonrasında borçlanma. Garanti hukuki tanınmadır, güç eşitliği değildir.",
+      "Amaç sorusunda korunanı yaz: siyasi varlık ve var olan sınırlar. Fetih, sömürge ya da imtiyazları kaldırmak denge siyasetinin tanımı değildir.",
+      "2023 TYT Sosyal Bilimler 3 ve 2023 AYT Sosyal Bilimler-2 Tarih-2 9 mantığı: büyük devletlerin tepkisini o anki çıkarlarıyla açıkla.",
+    ],
+  },
+  {
+    id: "yuzyil-basi-neden-cephe",
+    guides: ["yirminci-yuzyil-baslarinda-osmanli"],
+    match: /savaş|cephe|ateşkes|Mondros|Balkan|Trablusgarp|akım|Meşrutiyet|ittifak|itilaf/i,
+    title: "Yapısal neden, tetikleyici ve cephe amacını ayır",
+    steps: [
+      "Kökün zamanını işaretle: savaş öncesi (1908–1913), savaş sırası (1914–1918) ya da ateşkes sonrası.",
+      "Neden sorusunda yapısal nedeni ve yakın tetikleyiciyi ayrı yaz: rekabet ve güvenlik arayışı ortamdır, Karadeniz harekâtı tetikleyicidir.",
+      "Özel adları işleve çevir: Yavuz ve Midilli gemi, Odesa ve Sivastopol hedef, savaşa giriş sonuçtur.",
+      "Cepheyi amacıyla eşle (sınır savunması, Boğaz ve başkent, müttefike destek, imparatorluk çevresi); hedef ile gerçekleşen sonucu eşitleme.",
+      "Fikir akımını birlik bağından bul: ortak vatandaşlık Osmanlıcılık, halifelik İslamcılık, dil ve kültür Türkçülük. 2025 AYT TDE–Sosyal Bilimler-1 Tarih-1 31 mantığı.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

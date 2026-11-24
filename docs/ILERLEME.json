@@ -117,10 +117,10 @@
    "questionSets": 10,
    "readyLessons": 24,
    "figureLessons": 24,
-   "figures": 76,
+   "figures": 92,
    "questions": 390,
    "stepped": 390,
-   "sheetsDone": 4,
+   "sheetsDone": 8,
    "sheets": 24,
    "osymQuestions": 45,
    "osymBooklets": 9,
@@ -288,13 +288,13 @@
   "questionSets": 36,
   "readyLessons": 510,
   "figureLessons": 510,
-  "figures": 2307,
+  "figures": 2323,
   "questions": 6669,
   "stepped": 6669,
-  "sheetsDone": 129,
+  "sheetsDone": 133,
   "sheets": 517,
   "open": 0,
-  "ogmPdfDone": 139,
+  "ogmPdfDone": 143,
   "ogmPdfTotal": 8981,
   "osymPdfDone": 18,
   "osymPdfTotal": 1001,
@@ -303,6 +303,6 @@
   "recallChecks": 3052,
   "displayFixCards": 962,
   "displayFixParagraphs": 1634,
-  "osymCitedQuestions": 96
+  "osymCitedQuestions": 99
  }
 }
