@@ -2343,6 +2343,58 @@ export const questionTactics: QuestionTactic[] = [
       "Olumsuz kökte her seçeneğin metindeki kanıtını göster; süre, sayı ya da sembol metinde yoksa ekleme. 2025 TYT Sosyal Bilimler 20 mantığı.",
     ],
   },
+  {
+    id: "hareket-pay-payda",
+    guides: ["dogrusal-hareket"],
+    match: /ortalama|sürat|yol|yer değiştirme|bekle|grafi|konum/i,
+    title: "Önce payı ve paydayı ayrı yaz",
+    steps: [
+      "Pozitif yönü ve sıfırı seç; konum, yer değiştirme (Δx) ve yolu (L) üç ayrı satıra yaz.",
+      "Ortalama hız Δx/Δt, ortalama sürat L/Δt: payda ikisinde de bekleme dâhil bütün süredir.",
+      "v–t grafiğinde alanı hızın sıfır olduğu anda böl; işaretli toplam Δx, büyüklüklerin toplamı yol verir.",
+      "İki sürat görünce önce koşulu oku: eşit sürede (u + w)/2, eşit yolda 2uw/(u + w); bekleme varsa genel tanıma dön.",
+      "2018 TYT Fen 2 mantığı: sonlu bir tablo “olabilir” sorusunda bir grafiğe uyar; aralardaki her anı kesinleştirmez.",
+    ],
+  },
+  {
+    id: "enerji-model-esik",
+    guides: ["enerji-ve-hareket"],
+    match: /dur|sürtünme|eşik|ulaş|sistem|korun|aktar/i,
+    title: "Modeli seç, eşiği denetle",
+    steps: [
+      "Sistemi ve başlangıç–son durumlarını yaz; kuvvet kaynaklarını (ip, zemin, Dünya) tek tek say.",
+      "Yerçekimini ya işte ya potansiyel enerjide say, ikisinde birden değil; dik kuvvetlerin işi 0'dır.",
+      "Bilanço: Eson = Eilk + girişler − kayıplar. Sürtünme mekanik enerjiyi iç enerjiye aktarır, yok etmez.",
+      "Sonuç negatif kinetik enerji veriyorsa cisim daha önce durmuştur: durma yolu = Ek,ilk / f.",
+      "2019 TYT Fen 3 mantığı: aynı iş daha kısa sürede yapılırsa iş değil güç büyür; verim için giriş enerjisi gerekir.",
+    ],
+  },
+  {
+    id: "akim-dugum-guc",
+    guides: ["elektrik-akimi"],
+    match: /akım|ampul|lamba|parlak|anahtar|seri|paralel|ampermetre|direnç/i,
+    title: "Düğümleri yeniden çiz, sonra I ve P'yi sırala",
+    steps: [
+      "Yükü coulomba, süreyi saniyeye çevir: I = q/t; elektron sayısı verilirse önce q = N·e.",
+      "Seri tek yolda akım her noktada aynıdır; lamba yükü tüketmez, enerjiyi dönüştürür.",
+      "Anahtarın her konumu için aynı tele bağlı noktaları tek düğüm say; kısa devre edilen kolun gerilimi 0'dır.",
+      "Sıra: eşdeğer direnç → ana akım → kol akımları → özdeş lambalarda P = I²R ile parlaklık.",
+      "2023 TYT Fen 5 mantığı: ana kol akımı değişmiyor diye kollardaki lambaların da aynı kaldığını varsayma.",
+    ],
+  },
+  {
+    id: "kaldirma-durum-sec",
+    guides: ["sivilarin-kaldirma-kuvveti"],
+    match: /kaldırma|yüz|bat|ip|tekne|özkütle|yoğun|sıvı/i,
+    title: "Önce durumu seç: serbest yüzme, tam batık ya da tutulmuş",
+    steps: [
+      "Serbest yüzüyorsa Fk = G; tam batıksa Fk = ρs·g·V; ip ya da el varsa okları çizip dengeyi yaz.",
+      "İp yönünü verilenden oku: Fk > G olan tam batık cisim alttan aşağı çekilerek tutulur (Fk = G + T).",
+      "Teknedeki yük ağırlığı kadar (m/ρs), dipteki yük hacmi kadar su yer değiştirir; düzey farkı bu ikisinin farkıdır.",
+      "Litreyi m³'e çevir ve sonucu 0 ≤ Vb ≤ V ile denetle; ρ akışkanın özkütlesidir.",
+      "2020 TYT Fen 3 mantığı: serbest yüzen cisimde sıvı yoğunlaşınca Fk değişmez, batan hacim azalır.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
