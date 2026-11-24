@@ -1,8 +1,8 @@
 {
-  "version": "0.143.0",
+  "version": "0.144.0",
   "channel": "alpha",
   "notes": {
-    "tr": "İki özdeş şişenin birine su ekle. Vurma ve üfleme adımlarında hangi bölümün titreştiğini ve frekansın nasıl değiştiğini karşılaştır.",
-    "en": "Add water to one of two identical bottles. Compare the vibrating region and the pitch change when you strike or blow across the bottles."
+    "tr": "Eşit gerilimli iki telden birinin çapını değiştir. İkisini aynı zaman grafiğinde karşılaştır ve frekans oranını ölç.",
+    "en": "Change the diameter of one of two strings held at equal tension. Compare their oscillations on the same time axis and read the frequency ratio."
   }
 }

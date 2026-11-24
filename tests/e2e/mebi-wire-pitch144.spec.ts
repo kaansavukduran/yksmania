@@ -1,0 +1,50 @@
+import { expect, test } from "@playwright/test";
+import { wireDrawingTitle, wireFrequencyTitle, wirePairExample, wirePairTitle } from "../../src/learning/mebiWirePitch";
+import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse";
+import { svgLayoutAudit } from "./helpers/svgAudit";
+
+test("eşit ağırlıklarda çap değişimi telin frekansını ve aynı süredeki grafiğini değiştirir", async ({ page, context }, info) => {
+  await page.setViewportSize({ width: 320, height: 870 });
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  await openCourse(page, { lesson: "ses-deprem-dalgalari", search: "Ses ve deprem" });
+  const toc = page.getByRole("navigation", { name: "Anlatım içeriği", exact: true });
+  const choice = toc.getByRole("button", { name: wirePairTitle, exact: true });
+  if (!(await choice.isVisible())) await toc.getByText("İçindekiler", { exact: true }).press("Enter");
+  await choice.press("Enter");
+  const scope = `figure[data-section-figure="${wirePairTitle}"]`;
+  const figure = page.locator(scope);
+  const svg = figure.getByRole("img");
+  await expect(svg).toHaveAccessibleName(/eşit G ağırlıkları/i);
+  await expect(svg.getByText("G", { exact: true })).toHaveCount(2);
+  await expect(figure).toContainText("Gerilimleri 20 N.");
+  await expect(figure).toContainText("L’nin frekansı K’nın 0,5 katı.");
+  await svg.evaluate(node => node.scrollIntoView({ block: "center", inline: "nearest" }));
+  await svg.screenshot({ path: info.outputPath("wires-rig144.png") });
+  const diameter = figure.getByRole("slider", { name: "L telinin çapı", exact: true });
+  await diameter.press("Home");
+  await expect(figure).toContainText("L’nin frekansı K’nın 1 katı.");
+  await diameter.press("End");
+  await expect(figure).toContainText("L’nin frekansı K’nın 0,33 katı.");
+  await figure.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await expect(figure).toContainText("Grafiklerin zaman ekseni aynı.");
+  await expect(svg.getByText("G", { exact: true })).toHaveCount(0);
+  await svg.evaluate(node => node.scrollIntoView({ block: "center", inline: "nearest" }));
+  await svg.screenshot({ path: info.outputPath("wires-frequency144.png") });
+  expect((await page.evaluate(svgLayoutAudit, { scope, figuresOnly: true, explore: true })).issues).toEqual([]);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Kopya Kağıdı eşit gerilimi ve salınım grafiklerini iki çözüm adımında açar", async ({ page, context }) => {
+  await prepare(page);
+  await context.setOffline(true);
+  await page.goto("/#/cheatsheets?topic=detail-130");
+  const example = page.locator(".cheat-examples .worked-example").filter({ hasText: wirePairExample.title });
+  await example.locator(":scope > summary").press("Enter");
+  const solution = example.locator(".cheat-solution");
+  await expect(solution.getByRole("img")).toHaveCount(0);
+  await solution.locator("summary").press("Enter");
+  await expect(solution.locator(`figure[data-section-figure="${wireDrawingTitle}"]`)).toContainText("ağırlık G ile gösterilir.");
+  await expect(solution.locator(`figure[data-section-figure="${wireFrequencyTitle}"]`)).toContainText("L’nin frekansı K’nın 0,5 katı.");
+});

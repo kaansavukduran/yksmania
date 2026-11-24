@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.144.0 · İki telin kalınlığı
+
+Yayın adayı. İki telin gerilimi ve boyu eşitken birinin çapını değiştir. Sonraki adımda frekansları aynı zaman grafiğinde karşılaştır. Kopya Kağıdı eşit ağırlıkları ve yarım frekans oranını iki ayrı çizimle açıklıyor.
+
 # ÖSYM Mania 0.143.0 · Şişeye vurmak ve üflemek
 
 Yayın adayı. İki özdeş şişeden birine su ekle. Vurma ve üflemede titreşen bölgeyi ayrı incele. Kopya Kağıdı yarı dolu şişenin iki sonucunu kendi çiziminde gösteriyor.
