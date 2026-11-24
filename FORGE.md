@@ -1,3 +1,9 @@
+# Çök, Kapan, Tutun · 0.163.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 168, basılı 166. Yakındaki sağlam masa örneği AFAD kılavuzuna göre diz çökme, baş ve enseyi kapatma, masa bacağına tutunma olarak çizildi. Kopya Kağıdı sınıf örneğinde üç konumu aynı çizimlerden adım adım açıyor. [AFAD Güvenli Yaşam 1](https://cankiri.afad.gov.tr/kurumlar/cankiri.afad/dOKUMANLAR/Guvenli_Yasam_Klavuzu/gy_1_egitim_kitapcigi.pdf)
+
+Check, 329 dosyalı çevrimdışı derleme, 32 dosyada 2.916 birim ve 13 Chromium akışı geçti. Üç poz 320 px, %200 arayüz, %150 yazı ve klavyeyle açıldı. Görsel incelemesi öğrenme kaydını değiştirmedi. Sıradaki fiziksel 168, basılı 166 kıyıdaki su çekilmesi ve yüksek yere giden tahliye yönü.
+
 # Gölbaşı gözlemi ve kolon altı izolatör · 0.162.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 168, basılı 166. Gölbaşı yapı hasarı fotoğrafında kırılan beton ve donatılar, Pasadena fotoğrafında kolon altı izolatör görülebiliyor. Ayrı kesit temel ile üst yapı arasındaki hareket payını gösteriyor. Kopya Kağıdı iki bağlantıyı ayrı adımlarda karşılaştırıyor. [Gölbaşı fotoğrafı](https://commons.wikimedia.org/w/index.php?oldid=1115195060&title=File%3AHeavily_damaged_apartment_buildings_after_7%2C8_massive_earthquake_in_Turkey.jpg) · [Pasadena fotoğrafı](https://commons.wikimedia.org/w/index.php?oldid=1058520311&title=File%3ABase_isolator_beneath_the_Pasadena%2C_California%2C_City_Hall.jpg)
@@ -940,7 +946,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 33 · 128 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 0 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 343 | 321 / 321 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 347 | 321 / 321 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 139 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 0 |
 | TYT Tarih | 24 / 24 | 24 · 76 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 0 |
@@ -953,7 +959,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **498 · 2244** | **6.671 / 6.671 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **12** |
+| **Toplam** | **510 / 510** | **498 · 2248** | **6.671 / 6.671 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **12** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

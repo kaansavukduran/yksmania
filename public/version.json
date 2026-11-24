@@ -1,8 +1,8 @@
 {
-  "version": "0.162.0",
+  "version": "0.163.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Gölbaşı’ndaki hasarı ve bir kolon altı izolatörünü gerçek fotoğraflarda incele. Temel ve üst yapı arasındaki bağlantıyı iki kesitte karşılaştır.",
-    "en": "Inspect real photos of building damage in Gölbaşı and an installed isolator. Compare the foundation and upper structure in two cross-sections."
+    "tr": "Deprem sırasında yakınındaki sağlam masa örneğinde Çök, Kapan, Tutun adımlarını incele. Kopya Kağıdı her korunma konumunu ayrı çizimle gösteriyor.",
+    "en": "Explore Drop, Cover, and Hold On with a nearby sturdy table during earthquake shaking. The study sheet illustrates each protective position separately."
   }
 }

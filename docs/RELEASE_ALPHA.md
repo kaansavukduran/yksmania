@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.163.0 · Çök, Kapan, Tutun
+
+Yayın adayı. Sınıfta sarsıntı sırasında yakındaki sağlam sıra örneğinde üç korunma pozunu sırayla incele. Üç çizimi Kopya Kağıdı’nda ayrı çözüm adımlarında aç.
+
 # ÖSYM Mania 0.162.0 · Deprem hasarı ve izolatör
 
 Yayın adayı. Gerçek iki fotoğrafı büyüt ve kolon ile temel arasındaki bağlantının yerini bul. Modelde doğrudan bağlı yapı ile izolatörlü yapıyı karşılaştır.
