@@ -254,9 +254,9 @@ test("all five math models first open offline at 320px, keep large controls and 
     "Bu cihazda kaydedildi",
   );
   await page.emulateMedia({ reducedMotion: "reduce" });
-  await page.evaluate(async () => {
-    await navigator.serviceWorker.ready;
-  });
+  await page.waitForFunction(
+    () => navigator.serviceWorker.controller?.state === "activated",
+  );
   await context.setOffline(true);
   for (let i = 0; i < titles.length; i++) {
     await openMath(page, i);

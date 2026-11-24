@@ -41,6 +41,8 @@ import { heavyLightTitle, lightHeavyTitle, pulseInterfaceAt, pulseInterfaceFrame
 
 import { pulseOverlapAt, pulseOverlapCases, pulseOverlapTime, pulseOverlapTitle } from "../mebiPulseOverlap";
 
+import { waveTankAt, waveTankSetupTitle, waveTankTime, waveTankTitle, waveTankWavelengthCm, waveTankWidthCm } from "../mebiWaveTank";
+
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
  * Waves are sampled from y = A·sin(2π(x − x0)/λ); pulses from a smooth bump.
@@ -1044,6 +1046,12 @@ const yay: Record<string, FigureDef> = {
           txt(v(9.5, 11.3), "L sola", "n", { tone: "c" }),
           vec(v(2.1, 10.9), v(3.05, 10.9), { tone: "a" }),
           vec(v(9.9, 10.9), v(8.95, 10.9), { tone: "c" }),
+          ...pulseOverlapCases.map(({ shortLabel }, index) =>
+            txt(v(1.35 + index * 4.65, -7.5), shortLabel, "n", {
+              pick: index,
+              tone: index === Math.max(0, picked ?? -1) ? "a" : "ink",
+              small: true,
+            })),
         ],
         readout: [
           `K merkezi ${fmt(kCenter, 2)} m, L merkezi ${fmt(lCenter, 2)} m.`,
@@ -1075,6 +1083,101 @@ const yay: Record<string, FigureDef> = {
 };
 
 const su: Record<string, FigureDef> = {
+  [waveTankSetupTitle]: {
+    caption: "Işık üstte, çubuk suyun K–L kenarında, şeritlerin göründüğü kâğıt altta. Parçaları sırayla seç.",
+    alt: "Üstte ışık kaynağı. Ortada dikdörtgen su leğeni ve sol kenarında suya değen çubuk. Leğenin altındaki kâğıtta çubuğa paralel şeritler görülüyor.",
+    picks: [
+      { label: "Işık", title: "Üstteki ışık", detail: ["Işık su yüzeyinden geçer ve leğenin altındaki kâğıda ulaşır."] },
+      { label: "Çubuk", title: "K–L kenarındaki çubuk", detail: ["Çubuk düzenli olarak yukarı aşağı hareket eder. Sudaki tepe çizgileri çubuğa paraleldir."] },
+      { label: "Kâğıt", title: "Alttaki kâğıt", detail: ["İlerleyen tepe ve çukurlar kâğıtta paralel şeritler olarak gözlenir."] },
+    ],
+    draw: (_value, _step, pick) => {
+      const surface = [v(1, 4), v(8.6, 4), v(10.5, 6.75), v(2.9, 6.75)];
+      const paper = surface.map(([x, y]) => v(x, y - 3.5));
+      return {
+        els: [
+          poly(paper, { tone: pick === 2 ? "a" : "muted", fill: "muted" }),
+          ...[2.2, 3.7, 5.2, 6.7].flatMap((x) => [
+            seg(v(x, 0.68), v(x + 1.68, 3.08), { tone: "b", bold: pick === 2 }),
+            seg(v(x + 0.68, 0.68), v(x + 2.36, 3.08), { tone: "ink", dash: true, thin: true }),
+          ]),
+          seg(surface[0], paper[0], { tone: "muted", thin: true }),
+          seg(surface[1], paper[1], { tone: "muted", thin: true }),
+          seg(surface[2], paper[2], { tone: "muted", thin: true }),
+          poly(surface, { tone: "b", fill: "b" }),
+          ...[2.3, 3.8, 5.3, 6.8].map((x) => seg(v(x, 4.16), v(x + 1.7, 6.57), { tone: "b" })),
+          seg(surface[0], surface[3], { tone: "a", bold: true }),
+          vec(v(0.48, 4.65), v(0.48, 6), { tone: "a", bold: pick === 1 }),
+          vec(v(0.06, 6), v(0.06, 4.65), { tone: "a", bold: pick === 1 }),
+          circle(v(5.5, 10.5), 0.45, { tone: "a", fill: "a" }),
+          ...[4.1, 5.5, 6.9].map((x) => vec(v(5.5, 9.75), v(x, 7.65), { tone: "a", bold: pick === 0 })),
+          txt(v(5.5, 11.35), "Işık", "n", { pick: 0 }),
+          txt(v(0.1, 7.9), "Çubuk", "ne", { pick: 1 }),
+          txt(v(5.65, -0.25), "Kâğıt", "s", { pick: 2 }),
+        ],
+      };
+    },
+  },
+  [waveTankTitle]: {
+    caption: "Düz çubuk K–L kenarında. Zamanı değiştir ve seçili tepeyi üstten görünüm, su kesiti ve kâğıt üzerindeki şeritte birlikte izle.",
+    alt: "Yukarıdaki leğen yüzeyinde dik şeritler paralel. Ortada yandan su yüzeyi, altta aynı konumlardaki aydınlık ve karanlık şeritler var. Dalga soldan sağa ilerliyor.",
+    param: {
+      label: "Geçen süre",
+      min: waveTankTime.min,
+      max: waveTankTime.max,
+      step: waveTankTime.step,
+      init: waveTankTime.initial,
+      unit: " s",
+    },
+    draw: (timeS) => {
+      const { crests, troughs, heightAt, shiftCm, speedCmS } = waveTankAt(timeS);
+      const width = waveTankWidthCm;
+      const lambda = waveTankWavelengthCm;
+      const top = [9.35, 11.65] as const;
+      const paper = [0.4, 2.55] as const;
+      const sectionY = 6.25;
+      const nextCrest = shiftCm + lambda;
+      const middleTrough = shiftCm + lambda / 2;
+      const rectangle = (first: number, last: number, y: readonly [number, number], tone: Tone) =>
+        poly([v(first, y[0]), v(last, y[0]), v(last, y[1]), v(first, y[1])], { tone, fill: tone });
+      return {
+        els: [
+          rectangle(0, width, top, "muted"),
+          rectangle(0, width, paper, "muted"),
+          seg(v(0, top[0]), v(0, top[1]), { tone: "a", bold: true }),
+          ...crests.flatMap((x) => [
+            seg(v(x, top[0]), v(x, top[1]), { tone: "b", bold: true }),
+            rectangle(Math.max(0, x - 0.14), Math.min(width, x + 0.14), paper, "b"),
+          ]),
+          ...troughs.flatMap((x) => [
+            seg(v(x, top[0]), v(x, top[1]), { tone: "muted", dash: true }),
+            rectangle(Math.max(0, x - 0.12), Math.min(width, x + 0.12), paper, "ink"),
+          ]),
+          ...[shiftCm, middleTrough, nextCrest].map((x) =>
+            seg(v(x, paper[1]), v(x, top[0]), { tone: "muted", dash: true, thin: true })),
+          base(0, width, sectionY),
+          wave(pulseLine(0, width, (x) => heightAt(x) * 0.65, sectionY, 180), "b"),
+          pt(v(shiftCm, sectionY + heightAt(shiftCm) * 0.65), "T", "n", "a"),
+          pt(v(middleTrough, sectionY + heightAt(middleTrough) * 0.65), "Ç", "s", "ink"),
+          vec(v(11.8, 12.9), v(14.2, 12.9), { tone: "ink", bold: true }),
+          txt(v(13, 13.1), "İlerleme", "n", { small: true }),
+          txt(v(-0.38, top[1]), "K", "w", { small: true }),
+          txt(v(-0.38, top[0]), "L", "w", { small: true }),
+          txt(v(width + 0.38, top[1]), "M", "e", { small: true }),
+          txt(v(width + 0.38, top[0]), "N", "e", { small: true }),
+          txt(v(0, 12.3), "Üstten", "ne", { small: true }),
+          txt(v(0, 7.9), "Yandan", "ne", { small: true }),
+          txt(v(0, 3.22), "Kâğıt", "ne", { small: true }),
+          ...span(v(shiftCm, -0.7), v(nextCrest, -0.7), `${lambda} cm`, -1, "a"),
+        ],
+        readout: [
+          `İki aydınlık şerit ${fmt(shiftCm)} cm ve ${fmt(nextCrest)} cm konumunda. Araları ${lambda} cm.`,
+          `Ortadaki karanlık şerit ${fmt(middleTrough)} cm konumunda. En yakın aydınlığa ${lambda / 2} cm.`,
+          `İlerleme doğrultusu şeritlere dik. Modelde dalga sağa ${speedCmS} cm/s ile ilerler.`,
+        ],
+      };
+    },
+  },
   [surfaceWaveTitle]: {
     caption: "Zamanı ilerlet. P işareti kesik çemberi dolaşır. Tepe etiketi sağa doğru ilerler. Başlangıçta P ve izlenen tepe aynı konumdadır.",
     alt: "Su yüzeyinin yandan görünümü. Üç metre çevresindeki P işareti çember çizer. Tepe etiketi, su yüzeyinde sağa ilerleyen tepeyi izler.",

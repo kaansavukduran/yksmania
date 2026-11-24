@@ -1,8 +1,8 @@
 {
-  "version": "0.128.0",
+  "version": "0.129.0",
   "channel": "alpha",
   "notes": {
-    "tr": "İki atmayı üç farklı durumda karşılaştır. Yayın toplam uzanımını çizimde ölç ve karşılaşma sorusunu çöz.",
-    "en": "Compare three pulse encounters. Read the total displacement in the diagram and solve the illustrated practice question."
+    "tr": "Dalga leğenini üstten, yandan ve kâğıt üzerinde karşılaştır. Tepe ve çukurların şerit aralıklarını ölç.",
+    "en": "Compare the ripple tank from above, from the side, and on paper. Measure the spacing of bands produced by crests and troughs."
   }
 }

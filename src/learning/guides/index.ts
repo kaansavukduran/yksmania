@@ -34,6 +34,7 @@ import { pulseGenerationExample, pulseGenerationSection } from "../mebiPulseGene
 import { pulseDampingExample, pulseDampingSection } from "../mebiPulseDamping";
 import { periodicSpringExample, periodicSpringSection } from "../mebiPeriodicSpring";
 import { springDensityExample, springDensitySection } from "../mebiSpringDensity";
+import { waveTankExample, waveTankSection, waveTankSetupSection } from "../mebiWaveTank";
 import { pulseOverlapExample, pulseOverlapTable, pulseOverlapTitle } from "../mebiPulseOverlap";
 import { heavyLightTitle, lightHeavyTitle, pulseInterfaceExample, pulseInterfaceTable } from "../mebiPulseInterface";
 import { pulseReflectionExample } from "../mebiPulseReflection";
@@ -483,9 +484,9 @@ export function studyGuide(lessonId: string) {
   if (guide?.id === "su-dalgalari") {
     return {
       ...guide,
-      sections: guide.sections.map((section) => section.title === surfaceWaveTitle ? surfaceWaveSection : section),
-      examples: [...guide.examples, surfaceWaveExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfasındaki su dalgası, yüzey işareti ve ilerleyen tepeyle yan kesitte yeniden gösterildi. Modelin sayısal değerleri özgün.`,
+      sections: [...guide.sections.map((section) => section.title === surfaceWaveTitle ? surfaceWaveSection : section), waveTankSetupSection, waveTankSection],
+      examples: [...guide.examples, surfaceWaveExample, waveTankExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfasındaki su dalgası, yüzey işareti ve ilerleyen tepeyle yan kesitte yeniden gösterildi. Fiziksel 158, basılı 156. sayfadaki düz çubuklu leğen üstten görünüm, yan kesit ve aydınlık/karanlık şeritlerle aynı ölçekte çizildi. Modelin sayısal değerleri özgün.`,
     };
   }
   if (guide?.id === "ses-deprem-dalgalari") {

@@ -4,9 +4,9 @@ import type { GuideSection, WorkedExample } from "./guides/types";
 export const pulseOverlapTitle = "Üst üste binmede işaretli toplam al";
 export const pulseOverlapTime = { min: 0, max: 3, step: 0.5, initial: 0, contact: 1.5 };
 export const pulseOverlapCases = [
-  { label: "İki tepe", leftCm: 4, rightCm: 3, type: "tepe" },
-  { label: "Tepe ve büyük çukur", leftCm: 4, rightCm: -7, type: "çukur" },
-  { label: "Eşit tepe ve çukur", leftCm: 4, rightCm: -4, type: "düz görünüm" },
+  { label: "İki tepe", shortLabel: "İki tepe", leftCm: 4, rightCm: 3, type: "tepe" },
+  { label: "Tepe ve büyük çukur", shortLabel: "Büyük çukur", leftCm: 4, rightCm: -7, type: "çukur" },
+  { label: "Eşit tepe ve çukur", shortLabel: "Eşit çukur", leftCm: 4, rightCm: -4, type: "düz görünüm" },
 ] as const;
 const widthM = 3;
 const speedMps = 2;

@@ -27,6 +27,10 @@ test("atmaların üç karşılaşma biçimi ve ayrı Kopya Kağıdı çevrimdı�
   await expect(figure).toContainText("O’da K 4 cm, L -4 cm. Toplam 0 cm.");
   await expect(figure).toContainText("Bu anda yay düz görünür.");
   const image = figure.getByRole("img");
+  await image.getByText("İki tepe", { exact: true }).click();
+  await expect(figure).toContainText("O’da K 4 cm, L 3 cm. Toplam 7 cm.");
+  await image.getByText("Eşit çukur", { exact: true }).click();
+  await expect(figure).toContainText("Bu anda yay düz görünür.");
   expect((await page.evaluate(svgLayoutAudit, { scope: selector, figuresOnly: true, explore: true })).issues).toEqual([]);
   await image.evaluate((svg) => svg.scrollIntoView({ block: "center", behavior: "instant" }));
   await page.screenshot({ path: info.outputPath("mebi-overlap-contact128.png") });

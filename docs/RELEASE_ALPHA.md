@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.129.0 · Dalga leğeninde üç görünüş
+
+Yayın adayı. Düzenekte ışığı, kaynak çubuğunu ve kâğıdı seç. Zamanı değiştirip aynı dalga tepesini üstten, yandan ve kâğıt üzerinde izle. Ayrı Kopya Kağıdı, tepe aralığı ile komşu aydınlık ve karanlık şerit aralığını aynı çizimde hesaplıyor.
+
 # ÖSYM Mania 0.128.0 · İki atmanın karşılaşması
 
 Yayın adayı. İki tepeyi ve iki ayrı tepe-çukur örneğini karşılaştır. Tam karşılaşma ile ayrıldıktan sonraki biçimleri aynı çizimde izle. Özgün sorunun kökü, ipucu ve adım adım çözümü gerekli verileri kendi görsellerinde gösteriyor.
