@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.143.0 · Sekiz kopya kâğıdı daha
+
+Yayın adayı (24 Kasım 2026). TYT Türkçe'de isimler, sıfatlar, zamirler ve fiilde çatı; TYT Matematik'te ardışık sayılar, asal sayılar, yaş ve kâr-zarar kâğıtları tıklanabilir figürlerle açılıyor. Figür renkleri her temada ayrışıyor ve adım düğmelerinde klavye odağı korunuyor.
+
 # ÖSYM Mania 0.142.0 · Her derste figür
 
 Yayın adayı (24 Kasım 2026). Anlatımlı her ders artık bölüm figürüyle açılıyor; TYT Matematik'te sayılar, denklemler ve sayma figürleri, TYT Geometri'de dik üçgen, merkezler, alan ve dikdörtgen için sürgülü figürler ve taktikler eklendi.

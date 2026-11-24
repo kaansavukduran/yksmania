@@ -1,8 +1,8 @@
 {
-  "version": "0.142.0",
+  "version": "0.143.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Anlatımlı her derste artık bölüm figürü var: TYT Matematik'in son 12 dersi asal, faktöriyel, EBOB-EKOK, denklem, eşitsizlik, üslü sayı ve sayma figürleri aldı. TYT Geometri'de dik üçgen, üçgende merkezler, alan ve dikdörtgen kopya kâğıtları sürgülü figürlerle ve taktiklerle açılıyor.",
-    "en": "Every guided lesson now has section figures, including the last 12 TYT Mathematics lessons. Four TYT Geometry cheat sheets open as interactive figures with tactics."
+    "tr": "TYT Türkçe'de isimler, sıfatlar, zamirler ve fiilde çatı; TYT Matematik'te ardışık sayılar, asal sayılar, yaş ve kâr-zarar kopya kâğıtları tıklanabilir figürler ve taktiklerle açılıyor. Figürlerde renk anahtarları her temada ayrışıyor, adım düğmelerinde klavye odağı kaybolmuyor.",
+    "en": "Eight more cheat sheets in Turkish and Mathematics open as interactive figures with tactics. Figure colour keys stay distinct in every theme and keyboard focus no longer drops on step buttons."
   }
 }
