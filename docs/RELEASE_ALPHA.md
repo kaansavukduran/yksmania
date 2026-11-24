@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.186.0 · Küresel aynada odak
+
+Yayın adayı. Çukur ile tümseği değiştir, paralel ışınları yüzeyin orta kısmından kenara taşı ve kesişim uzaklığını oku.
+
 # ÖSYM Mania 0.185.0 · Düzlem aynada beden ve duvar
 
 Yayın adayı. Aynaya yaklaşırken bedeninde ve sabit duvarda gördüğün aralığı iki çizimle karşılaştır. Güncel TYT Coğrafya kesitleri ve nüfus kopya kağıtları da pakette.

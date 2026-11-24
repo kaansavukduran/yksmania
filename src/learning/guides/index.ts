@@ -74,6 +74,7 @@ import { roughSurfaceExample } from "../mebiRoughSurfaceReflection";
 import { mirrorEndpointsExample, mirrorEndpointsSection } from "../mebiMirrorEndpoints";
 import { mirrorFieldExample, mirrorFieldSection, mirrorWritingSection } from "../mebiMirrorField";
 import { mirrorBodyWallExample, mirrorBodyWallSection } from "../mebiMirrorBodyWall";
+import { sphericalAxisSection, sphericalMirrorExample, sphericalSurfaceSection } from "../mebiSphericalMirror";
 import { animalPitchExample, animalPitchSection } from "../mebiPitchSamples";
 import { bottlePitchExample, bottlePitchSection } from "../mebiBottlePitch";
 import { wirePairExample, wirePairSection } from "../mebiWirePitch";
@@ -603,7 +604,15 @@ export function studyGuide(lessonId: string) {
         section.title === "Görüntüyü ışın uzantılarıyla kur" ? [section, mirrorEndpointsSection, mirrorWritingSection, mirrorFieldSection, mirrorBodyWallSection] : [section],
       )],
       examples: [lightWaterReflectionExample, visibleByReflectionExample, roughSurfaceExample, mirrorEndpointsExample, mirrorFieldExample, mirrorBodyWallExample, ...guide.examples],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 176, basılı 174. Kıyı, deniz yüzeyi ve sualtı görünümü için lisanslı fotoğraf örnekleri kullanıldı. Dik ve eğik yansımada ışık yönü ile su cephesi, aynı açı girdisinden ayrı çizildi. Fiziksel 177, basılı 175. sayfadaki kaynak, top ve göz için aydınlık ve karanlık örnekleri aynı ışık yoluna bağlandı. Yansıma payları öğretim değerleridir. Aynı sayfada düzgün ve dağınık yansıma, her temas noktasındaki normal ile yeniden çizildi. Fiziksel 178, basılı 176. sayfadaki K ile K′ ve eğik KL ile K′L′ görüntüsü, iki gerçek ışın ve ayrı geri uzantılarıyla modellendi.`,
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 176, basılı 174. Kıyı, deniz yüzeyi ve sualtı görünümü için lisanslı fotoğraf örnekleri kullanıldı. Dik ve eğik yansımada ışık yönü ile su cephesi, aynı açı girdisinden ayrı çizildi. Fiziksel 177, basılı 175. sayfadaki kaynak, top ve göz için aydınlık ve karanlık örnekleri aynı ışık yoluna bağlandı. Yansıma payları öğretim değerleridir. Aynı sayfada düzgün ve dağınık yansıma, her temas noktasındaki normal ile yeniden çizildi. Fiziksel 178, basılı 176. sayfadaki K ile K′ ve eğik KL ile K′L′ görüntüsü, iki gerçek ışın ve ayrı geri uzantılarıyla modellendi. Fiziksel 179, basılı 177. sayfadaki ambulans örneği lisanslı fotoğraf ve yatay yansıma modeliyle gösterildi. Üç görüş alanı yöntemi ve beden-duvar karşılaştırması ayrı çizildi.`,
+    };
+  }
+  if (guide?.id === "kuresel-aynalar") {
+    return {
+      ...guide,
+      sections: [sphericalSurfaceSection, sphericalAxisSection, ...guide.sections],
+      examples: [sphericalMirrorExample, ...guide.examples],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 180, basılı 178. Kürenin iç ve dış yüzü, merkez, odak, tepe, asal eksen ve paralel ışın çizimleri yeniden kuruldu. Sayısal modelde küresel aynanın eksen dışındaki ışınları tam yansıma yasasıyla hesaplanıyor.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

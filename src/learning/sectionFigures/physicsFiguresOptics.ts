@@ -11,6 +11,7 @@ import { roughSurfaceReflectionFigures } from "./mebiRoughSurfaceReflectionFigur
 import { mirrorEndpointFigures } from "./mebiMirrorEndpointFigures";
 import { mirrorFieldFigures } from "./mebiMirrorFieldFigures";
 import { mirrorBodyWallFigures } from "./mebiMirrorBodyWallFigures";
+import { sphericalMirrorFigures } from "./mebiSphericalMirrorFigures";
 import {
   span,
   add,
@@ -919,7 +920,7 @@ function twoSources(s: number) {
 
 export const physicsFiguresOptics: Record<string, Record<string, FigureDef>> = {
   "duzlem-ayna": { ...duzlemAyna, ...lightWaterReflectionFigures, ...visibleByReflectionFigures, ...roughSurfaceReflectionFigures, ...mirrorEndpointFigures, ...mirrorFieldFigures, ...mirrorBodyWallFigures },
-  "kuresel-aynalar": kureselAynalar,
+  "kuresel-aynalar": { ...kureselAynalar, ...sphericalMirrorFigures },
   "isigin-kirilmasi": kirilma,
   mercekler,
   "golge-yari-golge": golge,
