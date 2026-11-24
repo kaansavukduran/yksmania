@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.127.0 · İki yayın birleşiminde yansıma ve iletim
+
+Yayın adayı. Atmayı ince yaydan kalına ve kalından inceye gönder. O noktasındaki ortak hareketi izle, ardından ayrılan iki atmanın yönünü ve genişliğini ölç. Kopya Kağıdı her iki yönün hesabını ayrı şekille açıyor.
+
 # ÖSYM Mania 0.126.0 · Sabit ve serbest uçta yansıma
 
 Yayın adayı. Atma uca yaklaşırken, tam uçtayken ve geri dönerken çizimi adım adım incele. Sabit uç denge çizgisinde kalır. Serbest halkadaki yükselme geçicidir. Kopya Kağıdı iki sınırın hesabını kendi şekliyle açıyor.

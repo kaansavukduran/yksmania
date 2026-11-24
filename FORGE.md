@@ -1,3 +1,9 @@
+# İki yayın birleşiminde atma · 0.127.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 156, basılı 154. O birleşiminde her iki yayın uzanımı aynıdır. Yansıyan atma geldiği yayda aynı sürat ve genişlikle döner. İletilen tepe ince yaydan kalına geçince daralır, kalından inceye geçince genişler. Ayrı Kopya Kağıdı 4 N gerilimle iki yönü aynı uygulama çizimleriyle hesaplıyor.
+
+Check, 2.193 birim, 322 çevrimdışı dosya ve altı gerçek Chromium akışı geçti. İlk 320 px ölçümünde yay adları genişlik ölçülerine değiyordu. Etiketlere ayrı satır açıldı ve iki kaynak çiziminin üç aşaması tekrar denetlendi. Sıradaki madde fiziksel 157, basılı 155’te iki atmanın karşılaşması.
+
 # Sabit ve serbest uçta atmanın yansıması · 0.126.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 155, basılı 153. Eski temas çiziminde sabit uç hafifçe yer değiştiriyordu. Yeni çizim gelen ve yansıyan uzanımları topluyor. Sabit uç üç adımda da 0 m. Serbest halkada iki katkı temas anında toplam 2,50 m, ayrılan atmanın genliği 1,25 m. Kopya Kağıdı iki sınırı kendi adımlarındaki şekillerle açıklıyor.

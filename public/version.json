@@ -1,8 +1,8 @@
 {
-  "version": "0.126.0",
+  "version": "0.127.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Atmanın sabit ve serbest uçta nasıl yansıdığını karşılaştır. Duvarın ve halkanın uzanımını üç aşamada incele.",
-    "en": "Compare a pulse reflecting from fixed and free ends. Follow the motion at the wall and the ring across three stages."
+    "tr": "İnce ve kalın yayların birleşiminde yansıyan ve iletilen atmanın yönünü, süratini ve genişliğini karşılaştır.",
+    "en": "Compare the directions, speeds and widths of pulses reflected and transmitted where two springs meet."
   }
 }

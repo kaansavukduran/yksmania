@@ -13,6 +13,7 @@ import {
   vec,
   type El,
   type FigureDef,
+  type FigureFrame,
   type Tone,
   type V,
 } from "./figureKit";
@@ -35,6 +36,8 @@ import { springDensityAt, springDensityMass, springDensityTitle } from "../mebiS
 import { pulleyTensionAt, pulleyTensionTitle, pulleyTensionWaterG } from "../mebiPulleyTension";
 
 import { fixedReflectionTitle, freeReflectionTitle, reflectingPulseAt, reflectionEndM, reflectionFrameTimes } from "../mebiPulseReflection";
+
+import { heavyLightTitle, lightHeavyTitle, pulseInterfaceAt, pulseInterfaceFrameTimes, pulseInterfaceJoinM } from "../mebiPulseInterface";
 
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
@@ -104,6 +107,52 @@ function pulseReflectionFigure(boundary: "fixed" | "free", step: number) {
           : "Gelen ve yansıyan tepe uçta birleşir. Bu anda halka başlangıç genliğinin iki katı kadar yükselir."
         : `${incoming ? "Gelen tepe" : boundary === "fixed" ? "Yansıyan çukur" : "Yansıyan tepe"} ${incoming ? "sağa" : "sola"} ${fmt(state.speedMps)} m/s ile ilerler. Genişlik ${fmt(state.widthM)} m.`,
       `Uç uzanımı ${fmt(state.endpoint, 2)} m.`,
+    ],
+  };
+}
+
+function pulseInterfaceFigure(boundary: "heavy" | "light", stage: number): FigureFrame {
+  const state = pulseInterfaceAt(pulseInterfaceFrameTimes[stage], boundary);
+  const join = pulseInterfaceJoinM;
+  const firstHeavy = boundary === "light";
+  const basis: El[] = [
+    seg(v(0, 0), v(join, 0), { tone: "muted", bold: firstHeavy, thin: !firstHeavy }),
+    seg(v(join, 0), v(14, 0), { tone: "muted", bold: !firstHeavy, thin: firstHeavy }),
+    wave(pulseLine(0, join, state.left, 0, 140), "b"),
+    wave(pulseLine(join, 14, state.right, 0, 140), "a"),
+    pt(v(join, state.left(join)), "O", "n", "ink"),
+    txt(v(2.9, -4.3), firstHeavy ? "Kalın yay" : "İnce yay", "n", { small: true }),
+    txt(v(11.1, -4.3), firstHeavy ? "İnce yay" : "Kalın yay", "n", { small: true }),
+  ];
+  if (stage === 0) {
+    const x = state.incomingCenterM;
+    basis.push(
+      vec(v(x, 2.8), v(x + 1.35, 2.8), { tone: "b" }),
+      txt(v(x + 0.67, 3.0), "Gelen", "n", { small: true }),
+    );
+  }
+  if (stage === 2) {
+    const left = state.reflectedCenterM;
+    const right = state.transmittedCenterM;
+    basis.push(
+      vec(v(left, 3.1), v(left - 1.35, 3.1), { tone: "b" }),
+      txt(v(left - 0.67, 3.3), "Yansıyan", "n", { small: true }),
+      vec(v(right, 3.1), v(right + 1.35, 3.1), { tone: "a" }),
+      txt(v(right + 0.67, 3.3), "İletilen", "n", { small: true }),
+      ...span(v(left - state.leftWidthM / 2, -1.3), v(left + state.leftWidthM / 2, -1.3), `${fmt(state.leftWidthM, 2)} m`, -1, "b"),
+      ...span(v(right - state.rightWidthM / 2, -1.3), v(right + state.rightWidthM / 2, -1.3), `${fmt(state.rightWidthM, 2)} m`, -1, "a"),
+    );
+  }
+  return {
+    els: basis,
+    readout: stage === 0 ? [
+      `Gelen tepe sağa ${fmt(state.speed1)} m/s ile ilerler. Genişliği ${fmt(state.leftWidthM, 2)} m.`,
+    ] : stage === 1 ? [
+      `O noktasında iki yayın uzanımı aynı. Birleşim çizimde ${fmt(state.left(join), 2)} m yükselir.`,
+    ] : [
+      `Yansıyan ${firstHeavy ? "tepe" : "çukur"} sola ${fmt(state.speed1)} m/s ile gider. Genişliği ${fmt(state.leftWidthM, 2)} m.`,
+      `İletilen tepe sağa ${fmt(state.speed2)} m/s ile gider. Genişliği ${fmt(state.rightWidthM, 2)} m.`,
+      `Gelen genlik ${fmt(state.amplitudeM, 2)} m. Yansıyanın genlik büyüklüğü ${fmt(Math.abs(state.reflectedAmplitudeM), 2)} m, iletilenin ${fmt(state.transmittedAmplitudeM, 2)} m.`,
     ],
   };
 }
@@ -942,45 +991,17 @@ const yay: Record<string, FigureDef> = {
     steps: ["Gelen tepe sağa gider", "Halka en yüksek noktaya çıkar", "Yansıyan tepe sola döner"],
     draw: (_, step) => pulseReflectionFigure("free", step),
   },
-  "Hafiften ağıra geçişte iki ayrı atma oluşur": {
-    caption:
-      "Aynı gerilimde ince (hafif) ipten kalın (ağır) ipe: yansıyan atma ilk ipte çukur olarak ve aynı süratle döner, iletilen atma tepe olarak ağır ipte daha yavaş ve daha dar ilerler.",
-    alt: "Ortada birleşme noktası; solda ince, sağda kalın ip. Önce gelen tepe, sonra solda sola giden küçük çukur ve sağda daha dar tepe.",
-    steps: ["Gelen tepe ince ipte", "Yansıyan çukur + iletilen dar tepe"],
-    draw: (_, step) => {
-      const els: El[] = [seg(v(0, 0), v(6, 0), { tone: "muted", thin: true }), seg(v(6, 0), v(12, 0), { tone: "ink", bold: true }), pt(v(6, 0), "", "n", "ink")];
-      if (step === 0) els.push(pulseOnly(3, 2.4, 1.5), vec(v(3.5, 2), v(5, 2), { tone: "b" }));
-      else
-        els.push(
-          pulseOnly(3, 2.4, -0.6),
-          vec(v(3, -1.2), v(1.5, -1.2), { tone: "b" }),
-          pulseOnly(8, 1.2, 0.9, "c"),
-          vec(v(8.3, 1.3), v(9.1, 1.3), { tone: "c" }),
-          txt(v(9.1, 1.3), "yavaş", "e", { small: true, tone: "c" }),
-        );
-      els.push(txt(v(3, -2), "hafif ip", "s", { small: true, tone: "muted" }), txt(v(9, -2), "ağır ip", "s", { small: true }));
-      return { els };
-    },
+  [lightHeavyTitle]: {
+    caption: "İnce yaydan kalına geçen tepe daralır. İlk yaydaki çukur, gelen tepenin genişliğiyle geri döner. O, iki yayın birleştiği noktadır.",
+    alt: "İnce ve kalın yay O noktasında bağlı. Üç adımda gelen, birleşen ve ayrılan atmaların biçimi, yönü ve genişliği gösteriliyor.",
+    steps: ["Gelen tepe birleşime yaklaşır", "Tepe O noktasına ulaşır", "Yansıyan ve iletilen atmalar ayrılır"],
+    draw: (_, step) => pulseInterfaceFigure("heavy", step),
   },
-  "Ağırdan hafife geçişte yansıma düzdür": {
-    caption:
-      "Aynı gerilimde kalın (ağır) ipten ince (hafif) ipe: yansıyan atma tepe olarak döner (ters dönmez), iletilen tepe hafif ipte daha hızlı ve daha geniştir.",
-    alt: "Solda kalın, sağda ince ip; önce gelen tepe, sonra solda sola giden küçük tepe ve sağda daha geniş tepe.",
-    steps: ["Gelen tepe ağır ipte", "Yansıyan tepe + iletilen geniş tepe"],
-    draw: (_, step) => {
-      const els: El[] = [seg(v(0, 0), v(6, 0), { tone: "ink", bold: true }), seg(v(6, 0), v(14, 0), { tone: "muted", thin: true }), pt(v(6, 0), "", "n", "ink")];
-      if (step === 0) els.push(pulseOnly(3, 1.8, 1.5), vec(v(3.5, 2), v(5, 2), { tone: "b" }));
-      else
-        els.push(
-          pulseOnly(3, 1.8, 0.6),
-          vec(v(3, 1), v(1.5, 1), { tone: "b" }),
-          pulseOnly(10, 3.6, 1.8, "c"),
-          vec(v(11.6, 2.1), v(13, 2.1), { tone: "c" }),
-          txt(v(13, 2.1), "hızlı", "e", { small: true, tone: "c" }),
-        );
-      els.push(txt(v(3, -1), "ağır ip", "s", { small: true }), txt(v(10, -1), "hafif ip", "s", { small: true, tone: "muted" }));
-      return { els };
-    },
+  [heavyLightTitle]: {
+    caption: "Kalın yaydan inceye geçen tepe genişler. İlk yaydaki tepe, geldiği ortamın süratiyle sola döner. O, iki yayın birleştiği noktadır.",
+    alt: "Kalın ve ince yay O noktasında bağlı. Üç adımda gelen, birleşen ve ayrılan atmaların biçimi, yönü ve genişliği gösteriliyor.",
+    steps: ["Gelen tepe birleşime yaklaşır", "Tepe O noktasına ulaşır", "Yansıyan ve iletilen atmalar ayrılır"],
+    draw: (_, step) => pulseInterfaceFigure("light", step),
   },
   "Üst üste binmede işaretli toplam al": {
     caption:
