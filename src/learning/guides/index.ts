@@ -34,6 +34,7 @@ import { pulseGenerationExample, pulseGenerationSection } from "../mebiPulseGene
 import { pulseDampingExample, pulseDampingSection } from "../mebiPulseDamping";
 import { periodicSpringExample, periodicSpringSection } from "../mebiPeriodicSpring";
 import { springDensityExample, springDensitySection } from "../mebiSpringDensity";
+import { pulseOverlapExample, pulseOverlapTable, pulseOverlapTitle } from "../mebiPulseOverlap";
 import { heavyLightTitle, lightHeavyTitle, pulseInterfaceExample, pulseInterfaceTable } from "../mebiPulseInterface";
 import { pulseReflectionExample } from "../mebiPulseReflection";
 import { pulleyTensionExample, pulleyTensionSection } from "../mebiPulleyTension";
@@ -470,12 +471,13 @@ export function studyGuide(lessonId: string) {
             paragraphs: [...section.paragraphs, "İnceden kalına geçişte gelen atmanın genliği, ayrılan iki atmanın genliklerinden büyüktür. Yansıyan ile iletilen arasındaki sıra iki yayın boyca kütle oranına bağlıdır."],
           };
           if (section.title === heavyLightTitle) return { ...section, figureTitle: heavyLightTitle, table: pulseInterfaceTable };
+          if (section.title === pulseOverlapTitle) return { ...section, figureTitle: pulseOverlapTitle, table: pulseOverlapTable };
           return section;
         }),
         springPulseSection, pulseDirectionSection, pulseGenerationSection, pulseDampingSection, periodicSpringSection, springDensitySection, pulleyTensionSection,
       ],
-      examples: [...guide.examples, springPulseExample, pulseDirectionExample, pulseGenerationExample, pulseDampingExample, periodicSpringExample, springDensityExample, pulleyTensionExample, pulseReflectionExample, pulseInterfaceExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfadaki tek atma ve sabit destek, yansıma öncesindeki kesitte yeniden çizildi. Fiziksel 153, basılı 151. sayfadaki oluşum ve titreşim oklarına göre tepe, çukur, genişlik ve genlik çizimleri hazırlandı. Fiziksel 154, basılı 152. sayfadaki periyodik dalga ve eşit gerilim çizimleri iki yay üzerinden yeniden oluşturuldu. Fiziksel 155, basılı 153. sayfadaki makara ve su kovası düzeneği, değişen gerilimi aynı süre ölçüsüyle gösteriyor. Aynı sayfadaki duvar ve hareketli halka çizimleri, gelen ve yansıyan atmaların toplamına bağlı. Fiziksel 156, basılı 154. sayfadaki ince ve kalın yay çizimleri O birleşiminde, iki yönde yansıma ve iletimle yeniden kuruldu. Sayısal modeller ve örnek sorular özgün.`,
+      examples: [...guide.examples, springPulseExample, pulseDirectionExample, pulseGenerationExample, pulseDampingExample, periodicSpringExample, springDensityExample, pulleyTensionExample, pulseReflectionExample, pulseInterfaceExample, pulseOverlapExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfadaki tek atma ve sabit destek, yansıma öncesindeki kesitte yeniden çizildi. Fiziksel 153, basılı 151. sayfadaki oluşum ve titreşim oklarına göre tepe, çukur, genişlik ve genlik çizimleri hazırlandı. Fiziksel 154, basılı 152. sayfadaki periyodik dalga ve eşit gerilim çizimleri iki yay üzerinden yeniden oluşturuldu. Fiziksel 155, basılı 153. sayfadaki makara ve su kovası düzeneği, değişen gerilimi aynı süre ölçüsüyle gösteriyor. Aynı sayfadaki duvar ve hareketli halka çizimleri, gelen ve yansıyan atmaların toplamına bağlı. Fiziksel 156, basılı 154. sayfadaki ince ve kalın yay çizimleri O birleşiminde, iki yönde yansıma ve iletimle yeniden kuruldu. Fiziksel 157, basılı 155. sayfadaki iki tepe, büyük çukur ve eş simetrik atmalar, ayrı uzanım ve toplam çizimleriyle gösteriliyor. Sayısal modeller ve örnek sorular özgün.`,
     };
   }
   if (guide?.id === "su-dalgalari") {

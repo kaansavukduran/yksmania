@@ -24,6 +24,7 @@ test("the twelfth question keeps all previous IDs and requires the correct stem 
     ...Array.from({ length: 10 }, (_, index) => `yay-dalgalari-q${index + 1}`),
     "yay-dalgalari-atma-uretme-suresi",
     springDensityQuestion.id,
+    "yay-dalgalari-tepe-cukur-karsilasma-sekli",
   ]);
   const q = questions[11];
   const view = practiceQuestionView({

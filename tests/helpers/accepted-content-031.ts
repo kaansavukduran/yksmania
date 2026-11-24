@@ -18,6 +18,8 @@ export function beforeFoundation031Registration(source: string): string {
     .replace('import { airBuoyancyQuestion } from "../learning/airBuoyancyQuestion098";\n', "")
     .replace('import { springPulseQuestion } from "../learning/springPulseQuestion107";\n', "")
     .replace('import { waveDirectionsQuestion } from "../learning/waveDirectionsQuestion118";\n', "")
+    .replace('import { springOverlapQuestion } from "../learning/springOverlapQuestion128";\n', "")
+    .replace(", springOverlapQuestion", "")
     .replace('import { springDensityQuestion } from "../learning/springDensityQuestion124";\n', "")
     .replace("springPulseQuestion, springDensityQuestion", "springPulseQuestion")
     .replace('    if (lesson.id === "dalgalara-giris") return { ...lesson, questions: [...lesson.questions, waveDirectionsQuestion] };\n', "")

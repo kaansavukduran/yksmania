@@ -11,6 +11,7 @@ export interface RequiredSourceVisuals {
 const requirements = new Map<string, RequiredSourceVisuals>([
   ["yay-dalgalari-atma-uretme-suresi", { stem: true, hint: true, stepIndexes: [0, 1] }],
   ["dalgalara-giris-titresim-yonu-cizimleri", { stem: true, hint: true, stepIndexes: [0, 1] }],
+  ["yay-dalgalari-tepe-cukur-karsilasma-sekli", { stem: true, hint: true, stepIndexes: [0, 1] }],
   ["yay-dalgalari-esit-kutle-yogunluk-cizimi", { stem: true, hint: true, stepIndexes: [0, 1] }],
   ["sivilarin-kaldirma-kuvveti-havada-balon", { stem: true, hint: true, stepIndexes: [0, 1, 2] }],
   ["newton-kuvvet-ivme-grafik", { stem: true, hint: true, stepIndexes: [0, 1] }],

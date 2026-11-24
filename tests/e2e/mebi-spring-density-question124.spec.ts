@@ -13,7 +13,7 @@ test("soru çizimi verilenleri, iki çözüm tablosu kalıcı kayıttan sonraki 
     await page.getByRole("button", { name: "Cevabı kontrol et", exact: true }).click();
     await page.getByRole("button", { name: "Sonraki soru", exact: true }).click();
   }
-  await expect(page.locator(".question-meta")).toContainText("Soru 12 / 12");
+  await expect(page.locator(".question-meta")).toContainText("Soru 12 / 13");
   const given = page.getByRole("figure", { name: "A ve B yaylarında uzunluk, kütle ve gerilim", exact: true });
   const hint = page.getByRole("figure", { name: "Her yay için önce metre başına kütle", exact: true });
   const density = page.getByRole("figure", { name: "Boyca kütle yoğunlukları", exact: true });

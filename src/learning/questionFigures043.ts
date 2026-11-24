@@ -22,6 +22,7 @@ import { buoyancyFloatingQuestionFigures, buoyancyFloatingQuestionId } from "./b
 import { airBuoyancyQuestion, airBuoyancyQuestionFigures } from "./airBuoyancyQuestion098";
 import { springPulseQuestion, springPulseQuestionFigures } from "./springPulseQuestion107";
 import { waveDirectionsFigures, waveDirectionsQuestion } from "./waveDirectionsQuestion118";
+import { springOverlapQuestion, springOverlapQuestionFigures } from "./springOverlapQuestion128";
 import { springDensityQuestion, springDensityQuestionFigures } from "./springDensityQuestion124";
 import {
   inverseTranslationFigures,
@@ -257,6 +258,16 @@ const directionsQuestion = {
   guidance: waveDirectionsQuestion.guidance,
 };
 
+const overlapQuestion = {
+  id: springOverlapQuestion.id,
+  prompt: springOverlapQuestion.prompt.tr,
+  options: springOverlapQuestion.options.map((option) => option.tr),
+  answer: springOverlapQuestion.answer,
+  hint: springOverlapQuestion.hint.tr,
+  explanation: springOverlapQuestion.explanation.tr,
+  guidance: springOverlapQuestion.guidance,
+};
+
 const densityQuestion = {
   id: springDensityQuestion.id,
   prompt: springDensityQuestion.prompt.tr,
@@ -377,6 +388,14 @@ const bindings = new Map<string, FigureBinding>([
     pageLabel: "Fiziksel 152. sayfa, basılı 150",
     itemLabel: "Tel ve sarmal yayda titreşim doğrultuları, özgün öğretim sorusu",
     figures: waveDirectionsFigures,
+  }],
+  [overlapQuestion.id, {
+    stemRevision: stemRevision(overlapQuestion),
+    helpRevision: helpRevision(overlapQuestion, overlapQuestion.guidance),
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 157. sayfa, basılı 155",
+    itemLabel: "Simetrik atmaların üst üste binmesi, özgün öğretim sorusu",
+    figures: springOverlapQuestionFigures,
   }],
   [densityQuestion.id, {
     stemRevision: stemRevision(densityQuestion),

@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.128.0 · İki atmanın karşılaşması
+
+Yayın adayı. İki tepeyi ve iki ayrı tepe-çukur örneğini karşılaştır. Tam karşılaşma ile ayrıldıktan sonraki biçimleri aynı çizimde izle. Özgün sorunun kökü, ipucu ve adım adım çözümü gerekli verileri kendi görsellerinde gösteriyor.
+
 # ÖSYM Mania 0.127.0 · İki yayın birleşiminde yansıma ve iletim
 
 Yayın adayı. Atmayı ince yaydan kalına ve kalından inceye gönder. O noktasındaki ortak hareketi izle, ardından ayrılan iki atmanın yönünü ve genişliğini ölç. Kopya Kağıdı her iki yönün hesabını ayrı şekille açıyor.

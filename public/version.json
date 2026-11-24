@@ -1,8 +1,8 @@
 {
-  "version": "0.127.0",
+  "version": "0.128.0",
   "channel": "alpha",
   "notes": {
-    "tr": "İnce ve kalın yayların birleşiminde yansıyan ve iletilen atmanın yönünü, süratini ve genişliğini karşılaştır.",
-    "en": "Compare the directions, speeds and widths of pulses reflected and transmitted where two springs meet."
+    "tr": "İki atmayı üç farklı durumda karşılaştır. Yayın toplam uzanımını çizimde ölç ve karşılaşma sorusunu çöz.",
+    "en": "Compare three pulse encounters. Read the total displacement in the diagram and solve the illustrated practice question."
   }
 }

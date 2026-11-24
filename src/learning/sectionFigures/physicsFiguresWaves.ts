@@ -39,6 +39,8 @@ import { fixedReflectionTitle, freeReflectionTitle, reflectingPulseAt, reflectio
 
 import { heavyLightTitle, lightHeavyTitle, pulseInterfaceAt, pulseInterfaceFrameTimes, pulseInterfaceJoinM } from "../mebiPulseInterface";
 
+import { pulseOverlapAt, pulseOverlapCases, pulseOverlapTime, pulseOverlapTitle } from "../mebiPulseOverlap";
+
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
  * Waves are sampled from y = A·sin(2π(x − x0)/λ); pulses from a smooth bump.
@@ -1003,33 +1005,51 @@ const yay: Record<string, FigureDef> = {
     steps: ["Gelen tepe birleşime yaklaşır", "Tepe O noktasına ulaşır", "Yansıyan ve iletilen atmalar ayrılır"],
     draw: (_, step) => pulseInterfaceFigure("light", step),
   },
-  "Üst üste binmede işaretli toplam al": {
-    caption:
-      "+4 cm'lik tepe ile −7 cm'lik çukur aynı noktada tam üst üste gelince uzanımlar işaretleriyle toplanır: 4 + (−7) = −3 cm. Büyüklükleri toplamak (11 cm) yanlıştır.",
-    alt: "Adım adım: önce birbirine yaklaşan bir tepe ve bir çukur, sonra çakıştıkları anda −3 santimetrelik küçük çukur.",
-    steps: ["Yaklaşırken", "Tam çakışma anı"],
-    draw: (_, step) => {
-      const sc = 0.3;
-      if (step === 0)
-        return {
-          els: [
-            base(0, 12),
-            wave(pulseLine(0, 12, (x) => bump(x, 3, 2.4, 4 * sc) + bump(x, 9, 2.4, -7 * sc))),
-            txt(v(3, 4 * sc), "+4 cm", "n", { small: true, tone: "a" }),
-            txt(v(9, -7 * sc), "−7 cm", "s", { small: true, tone: "warn" }),
-            vec(v(4.2, 0.4), v(5.4, 0.4), { tone: "b" }),
-            vec(v(7.8, 0.4), v(6.6, 0.4), { tone: "b" }),
-          ],
-        };
+  [pulseOverlapTitle]: {
+    caption: "Üstte K ve L’nin uzanımları ayrı, altta ikisinin toplamı. Bir durum seç, ardından 1,5 s’deki tam karşılaşmayı ve son durumu incele.",
+    alt: "Üst sıradaki iki atma birbirine doğru ilerler. Alttaki yay her konumda bu iki atmanın toplamını gösterir. Ortadaki O, atmaların tam karşılaşacağı yerdir.",
+    param: {
+      label: "Geçen süre",
+      min: pulseOverlapTime.min,
+      max: pulseOverlapTime.max,
+      step: pulseOverlapTime.step,
+      init: pulseOverlapTime.initial,
+      unit: " s",
+      once: true,
+    },
+    picks: pulseOverlapCases.map(({ label }) => ({
+      label,
+      title: label,
+      detail: ["Geçen süreyi değiştirip iki atmanın O’da buluştuğu ve ayrıldığı anları karşılaştır."],
+    })),
+    draw: (timeS, _, picked) => {
+      const state = pulseOverlapAt(timeS, picked ?? -1);
+      const upper = 7;
+      const lower = 0;
+      const scale = 0.34;
+      const { k, l, total, joinM, kCenter, lCenter } = state;
       return {
         els: [
-          base(0, 12),
-          pulseOnly(6, 2.4, 4 * sc, "muted", true),
-          pulseOnly(6, 2.4, -7 * sc, "muted", true),
-          wave(pulseLine(0, 12, (x) => bump(x, 6, 2.4, -3 * sc)), "c"),
-          txt(v(6.6, -3 * sc), "−3 cm", "e", { small: true, tone: "c", bold: true }),
+          base(0, 12, upper),
+          base(0, 12, lower),
+          wave(pulseLine(0, 12, (x) => k(x) * scale, upper, 180), "a"),
+          wave(pulseLine(0, 12, (x) => l(x) * scale, upper, 180), "c", true),
+          wave(pulseLine(0, 12, (x) => total(x) * scale, lower, 180), "b"),
+          seg(v(joinM, -2.8), v(joinM, 9.9), { tone: "muted", thin: true, dash: true }),
+          pt(v(joinM, state.joinDisplacementCm * scale), "", "e", "b"),
+          txt(v(joinM, -2.9), "O", "s", { small: true }),
+          txt(v(1.1, 9.5), "Ayrı uzanımlar", "ne", { small: true }),
+          txt(v(1.1, 2.45), "Toplam uzanım", "ne", { small: true }),
+          txt(v(2.5, 11.3), "K sağa", "n", { tone: "a" }),
+          txt(v(9.5, 11.3), "L sola", "n", { tone: "c" }),
+          vec(v(2.1, 10.9), v(3.05, 10.9), { tone: "a" }),
+          vec(v(9.9, 10.9), v(8.95, 10.9), { tone: "c" }),
         ],
-        readout: ["y = (+4) + (−7) = −3 cm"],
+        readout: [
+          `K merkezi ${fmt(kCenter, 2)} m, L merkezi ${fmt(lCenter, 2)} m.`,
+          `O’da K ${fmt(k(joinM), 2)} cm, L ${fmt(l(joinM), 2)} cm. Toplam ${fmt(state.joinDisplacementCm, 2)} cm.`,
+          ...(timeS === pulseOverlapTime.contact && state.scenario.type === "düz görünüm" ? ["Bu anda yay düz görünür. Zaman ilerleyince iki atma ayrılır."] : []),
+        ],
       };
     },
   },
