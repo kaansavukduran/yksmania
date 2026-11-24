@@ -1,7 +1,8 @@
-import { circle, poly, pt, seg, txt, v, vec, type El, type FigureDef, type FigureFrame, type Tone, type V } from "./figureKit";
+import { circle, fmt, poly, pt, seg, txt, v, vec, type El, type FigureDef, type FigureFrame, type Tone, type V } from "./figureKit";
 import { mebiSeismicFocusFigure } from "./mebiSeismicFocusFigure";
 import { bellJarCases, bellJarTitle } from "../mebiSoundMedium";
 import { animalPitchAt, animalPitchEqualTitle, animalPitchTitle, pitchStageLabels, pitchWindowMs } from "../mebiPitchSamples";
+import { bottleBlowTitle, bottleFill, bottlePitchAt, bottlePitchModes, bottlePitchTitle, bottleStrikeTitle } from "../mebiBottlePitch";
 
 /*
  * Ses ve deprem dalgaları. The longitudinal wave moves real particle positions
@@ -126,6 +127,53 @@ const longitudinal: FigureDef = {
       ],
     };
   },
+};
+
+function bottlePitchFrame(percent: number, blowing: boolean): FigureFrame {
+  const state = bottlePitchAt(percent, blowing ? "Şişeye üfle" : "Şişeye vur");
+  const outline = (x: number): V[] => [
+    v(x-0.98, 0.22), v(x-0.98, 3.26), v(x-0.65, 3.72), v(x-0.33, 4.04),
+    v(x-0.33, 4.85), v(x+0.33, 4.85), v(x+0.33, 4.04), v(x+0.65, 3.72),
+    v(x+0.98, 3.26), v(x+0.98, 0.22),
+  ];
+  const elements = [2.7, 8.8].flatMap((x, index): El[] => {
+    const loaded = index === 1;
+    const waterLine = 0.29 + (loaded ? 3 * state.fill : 0);
+    const label = loaded ? `Su %${percent}` : "Boş";
+    const tone = index === 0 ? "a" : "c";
+    return [
+      poly(outline(x), { tone: "ink", fill: "muted", bold: true }),
+      ...(loaded && state.fill > 0 ? [
+        poly([v(x-0.91, 0.29), v(x+0.91, 0.29), v(x+0.91, waterLine), v(x-0.91, waterLine)], { tone: "b", fill: "b" }),
+      ] : []),
+      seg(v(x-0.45, 4.87), v(x+0.45, 4.87), { tone: "ink", bold: true }),
+      ...(blowing ? [
+        vec(v(x-1.28, 5.03), v(x+0.46, 5.03), { tone, bold: true }),
+        vec(v(x, 4.33), v(x, Math.max(waterLine + 0.48, 2.28)), { tone, thin: true }),
+      ] : [
+        seg(v(x-2.06, 2.37), v(x-1.02, 3.22), { tone, bold: true }),
+        vec(v(x-1.71, 3.35), v(x-1.09, 3.47), { tone }),
+        poly([v(x+1.24, 2.62), v(x+1.42, 2.82), v(x+1.24, 3.0)], { open: true, tone, thin: true }),
+      ]),
+      txt(v(x, -0.03), label, "s", { tone, small: true }),
+    ];
+  });
+  return {
+    els: elements,
+    readout: [
+      blowing ? "Üfleme: su üstündeki hava titreşir." : "Vurma: cam ve varsa su birlikte titreşir.",
+      `Boş şişe: 1 kat. Su eklenen şişe: ${fmt(state.frequencyRatio, 2)} kat frekans.`,
+      blowing ? `Sağ şişede başlangıçtaki hava hacminin %${Math.round(100 * state.airVolumeRatio)} kadarı kaldı.` : "Gösterge yaklaşık model değerini verir.",
+    ],
+  };
+}
+
+const bottlePitch: FigureDef = {
+  caption: "İki şişedeki su düzeyini karşılaştır. Vurma ve üfleme adımlarında hangi bölgenin titreştiğini göster.",
+  alt: "Özdeş iki cam şişe yan yana. Soldaki boş, sağdaki su seviyesi değiştirilebilir. Vurma adımında camın yanında çubuk, üfleme adımında şişe ağzında hava oku var.",
+  param: { label: "Sağ şişedeki su", min: bottleFill.min, max: bottleFill.max, step: bottleFill.step, init: bottleFill.initial, unit: "%" },
+  steps: [...bottlePitchModes],
+  draw: (percent, step) => bottlePitchFrame(percent, step === 1),
 };
 
 const animalPitch: FigureDef = {
@@ -341,6 +389,17 @@ export const physicsFiguresSound: Record<string, Record<string, FigureDef>> = {
     ])),
     "Yükseklik sözcüğünün iki anlamını çöz": pitch,
     [animalPitchTitle]: animalPitch,
+    [bottlePitchTitle]: bottlePitch,
+    [bottleStrikeTitle]: {
+      caption: "Metal çubukla aynı yerden vur ve yarı dolu şişenin camıyla suya bak.",
+      alt: "Boş ve yarı dolu iki özdeş şişe, camın yanına gelen iki metal çubukla gösterilir.",
+      draw: () => bottlePitchFrame(bottleFill.initial, false),
+    },
+    [bottleBlowTitle]: {
+      caption: "İki ağza aynı yönde üfle ve su üstünde kalan hava boşluklarını karşılaştır.",
+      alt: "Oklar, boş ve yarı dolu şişenin ağızlarından geçen havayı ve içeride titreşen hava boşluklarını gösteriyor.",
+      draw: () => bottlePitchFrame(bottleFill.initial, true),
+    },
     [animalPitchEqualTitle]: {
       caption: "Genlikler eşitken aynı 10 ms içinde iki çizginin salınımlarını say.",
       alt: "Eşit genlikli iki dalga aynı süreye çizilmiş. Üstte bir, altta üç tam salınım var.",

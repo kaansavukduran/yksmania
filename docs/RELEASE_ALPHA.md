@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.143.0 · Şişeye vurmak ve üflemek
+
+Yayın adayı. İki özdeş şişeden birine su ekle. Vurma ve üflemede titreşen bölgeyi ayrı incele. Kopya Kağıdı yarı dolu şişenin iki sonucunu kendi çiziminde gösteriyor.
+
 # ÖSYM Mania 0.142.0 · Genlik ve frekans
 
 Yayın adayı. İki fotoğrafı ve aynı süreye çizilmiş örnek dalgaları aç. Genlikleri eşitleyip kaç tam salınım olduğunu say. Kopya Kağıdı bu sayılardan frekansı hesaplıyor.
