@@ -1,8 +1,8 @@
 {
-  "version": "0.89.0",
+  "version": "0.90.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Basınç dersinde esnek zarın ayırdığı iki gazı ve esnek balonun dış basınçla dengesini incele. Kopya Kağıdı’nda denge tablosu ve iki çizimli çözüm var.",
-    "en": "Compare gas on either side of a flexible membrane and a balloon balancing atmospheric pressure. The cheat sheet includes a table and two worked diagrams."
+    "tr": "Basınç dersinde kaynama eşiğini açık ve kapalı kaplarda karşılaştır. Saf su tablosu, buz ve bakır grafiği, iki kaplı örnek ve ayrı Kopya Kağıdı eklendi.",
+    "en": "Compare the boiling threshold at different pressures. Includes a pure-water saturation table, an ice and copper melting plot, a two-vessel example and a separate cheat sheet."
   }
 }

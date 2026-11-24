@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.90.0 · Basınç, erime ve kaynama
+
+Yayın adayı. Buz ve bakırın erime eğilimlerini karşılaştır. Basıncı ve sıcaklığı değiştir, suyun kaynama eşiğine ne zaman ulaştığını kap çiziminde gör. Kopya Kağıdı saf su verilerini ve iki kaplı örneği açar.
+
 # ÖSYM Mania 0.89.0 · Esnek zar ve balonda gaz dengesi
 
 Yayın adayı. X gazını ısıt, zarın iki yanında hacmin nasıl dağıldığını izle. Ardından balonun sıcaklığını, gaz miktarını ve dış basıncını ayrı deneylerde karşılaştır. Kopya Kağıdı’nda iki örneği çözüm çizimleriyle aç.
