@@ -4,7 +4,7 @@ import {
 } from "../mebiSphericalMirror";
 import { add, circle, fmt, mul, poly, pt, seg, v, vec, type El, type FigureDef } from "./figureKit";
 
-function mirrorArc(surface: MirrorSurface) {
+export function mirrorArc(surface: MirrorSurface) {
   const points = Array.from({ length: 25 }, (_, index) => {
     const y = -1.9 + 3.8 * index / 24;
     return sphericalMirrorAt(surface, y).hit;

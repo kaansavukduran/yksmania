@@ -1,8 +1,8 @@
 {
-  "version": "0.188.0",
+  "version": "0.189.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Çukur aynadaki altı ışın yolunu ayrı aç. Gerçek kesişim ile kesik geri uzantıyı karşılaştır. Önceden kaydedilen fizik okuma sayfaları yerinde duruyor.",
-    "en": "Open all six concave-mirror rays and compare real and backward-extension intersections. Previously saved physics reading positions are preserved."
+    "tr": "Tümsek aynada dört geliş yolunu aç. Temas yüksekliği değişirken gerçek yönleri, F ve M’ye olan kesik doğrultuları izle.",
+    "en": "Open the four convex-mirror ray paths. Move the height of incidence and compare the real paths with the dashed directions toward F and M."
   }
 }

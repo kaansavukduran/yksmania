@@ -6,6 +6,14 @@ export type Point = readonly [number, number];
 export const sphericalMirrorRadius = 3.6;
 export const sphericalMirrorVertex: Point = [0, 0];
 
+export function reflectMirrorDirection(incoming: Point, normal: Point): Point {
+  const dot = incoming[0] * normal[0] + incoming[1] * normal[1];
+  return [
+    incoming[0] - 2 * dot * normal[0],
+    incoming[1] - 2 * dot * normal[1],
+  ];
+}
+
 export function sphericalMirrorAt(surface: MirrorSurface, height: number) {
   const radius = sphericalMirrorRadius;
   const side = surface === "concave" ? -1 : 1;
@@ -14,7 +22,7 @@ export function sphericalMirrorAt(surface: MirrorSurface, height: number) {
   const offset = Math.sqrt(radius ** 2 - height ** 2);
   const hit: Point = [center[0] - side * offset, height];
   const normal: Point = [-side * offset / radius, height / radius];
-  const reflected: Point = [1 - 2 * normal[0] ** 2, -2 * normal[0] * normal[1]];
+  const reflected = reflectMirrorDirection([1, 0], normal);
   const axisDistance = height === 0 ? null : -height / reflected[1];
   const crossing: Point | null = axisDistance === null ? null : [hit[0] + axisDistance * reflected[0], 0];
   return { center, focus, hit, normal, reflected, crossing, distanceToAxis: axisDistance };
@@ -59,3 +67,14 @@ export const sphericalMirrorExample: WorkedExample = {
   check: "Aynı yarıçap ve geliş yüksekliği kullanıldığında kesişim uzaklıklarının büyüklükleri eşit.",
   pitfall: "Tümsek aynanın arkasındaki kesik çizgileri ışığın geçtiği yol gibi okuma.",
 };
+
+export function traceSphericalRay(surface: MirrorSurface, source: Point, height: number) {
+  const base = sphericalMirrorAt(surface, height);
+  const horizontal = base.hit[0] - source[0], vertical = base.hit[1] - source[1];
+  const length = Math.hypot(horizontal, vertical);
+  const incoming: Point = [horizontal / length, vertical / length];
+  const reflected = reflectMirrorDirection(incoming, base.normal);
+  const distance = height !== 0 && Math.abs(reflected[1]) > 1e-12 ? -height / reflected[1] : null;
+  const crossing: Point | null = distance === null ? null : [base.hit[0] + distance * reflected[0], 0];
+  return { source, hit: base.hit, incoming, reflected, distance, crossing, center: base.center, focus: base.focus, normal: base.normal };
+}

@@ -1,5 +1,5 @@
 import type { GuideSection, WorkedExample } from "./guides/types";
-import { sphericalMirrorAt, sphericalMirrorRadius, type Point } from "./mebiSphericalMirror";
+import { sphericalMirrorAt, sphericalMirrorRadius, traceSphericalRay } from "./mebiSphericalMirror";
 
 export const concaveSpecialTitle = "Çukur aynada altı ışın yolu";
 export const concaveSpecialSteps = [
@@ -39,38 +39,23 @@ export const concaveSpecialExample: WorkedExample = {
   pitfall: "Kesik çizgiden geçen bir ışın varmış gibi okuma; kesik çizgi gerçek yansımanın geriye uzatılmış doğrultusudur.",
 };
 
-function fromSource(source: Point, height: number) {
-  const base = sphericalMirrorAt("concave", height);
-  const horizontal = base.hit[0] - source[0], vertical = base.hit[1] - source[1];
-  const length = Math.hypot(horizontal, vertical);
-  const incoming: Point = [horizontal / length, vertical / length];
-  const dot = incoming[0] * base.normal[0] + incoming[1] * base.normal[1];
-  const reflected: Point = [
-    incoming[0] - 2 * dot * base.normal[0],
-    incoming[1] - 2 * dot * base.normal[1],
-  ];
-  const distance = height !== 0 && Math.abs(reflected[1]) > 1e-12 ? -height / reflected[1] : null;
-  const crossing: Point | null = distance === null ? null : [base.hit[0] + distance * reflected[0], 0];
-  return { source, hit: base.hit, incoming, reflected, distance, crossing, center: base.center, focus: base.focus };
-}
-
 export function concaveSpecialRayAt(step: number) {
   switch (step) {
     case 0:
-      return fromSource([-5.8, 0.4], 0.4);
+      return traceSphericalRay("concave", [-5.8, 0.4], 0.4);
     case 1: {
       const { crossing } = sphericalMirrorAt("concave", 0.4);
       if (!crossing) throw Error("Near-axis parallel ray must have a real crossing");
-      return fromSource(crossing, 0.4);
+      return traceSphericalRay("concave", crossing, 0.4);
     }
     case 2:
-      return fromSource([-sphericalMirrorRadius, 0], 0.72);
+      return traceSphericalRay("concave", [-sphericalMirrorRadius, 0], 0.72);
     case 3:
-      return fromSource([-3, Math.sqrt(3)], 0);
+      return traceSphericalRay("concave", [-3, Math.sqrt(3)], 0);
     case 4:
-      return fromSource([-2.7, 0], 0.8);
+      return traceSphericalRay("concave", [-2.7, 0], 0.8);
     case 5:
-      return fromSource([-0.8, 0], 0.8);
+      return traceSphericalRay("concave", [-0.8, 0], 0.8);
     default:
       throw Error("Unknown concave mirror ray step");
   }

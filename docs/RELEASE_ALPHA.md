@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.189.0 · Dört tümsek ayna ışını
+
+Yayın adayı. Gerçek ışınları ve kesik doğrultuları dört ayrı geliş yolunda karşılaştır.
+
 # ÖSYM Mania 0.188.0 · Altı çukur ayna ışını
 
 Yayın adayı. Yerel normalden yansıyan altı ayrı yolu izle. Gerçek kesişimi ve sanal geri uzantıyı karşılaştır.

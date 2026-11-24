@@ -1,4 +1,5 @@
 import type { GuideSection, WorkedExample } from "./guides/types";
+import { reflectMirrorDirection } from "./mebiSphericalMirror";
 
 type Point = readonly [number, number];
 
@@ -14,11 +15,7 @@ export function concaveRayAt(radius: number, hitHeight: number, incidenceDegrees
   const inwardNormal: Point = [-horizontal / radius, -hitHeight / radius];
   const fromHitTowardSource = rotate(inwardNormal, incidenceDegrees * Math.PI / 180);
   const incoming: Point = [-fromHitTowardSource[0], -fromHitTowardSource[1]];
-  const projection = incoming[0] * inwardNormal[0] + incoming[1] * inwardNormal[1];
-  const reflected: Point = [
-    incoming[0] - 2 * projection * inwardNormal[0],
-    incoming[1] - 2 * projection * inwardNormal[1],
-  ];
+  const reflected = reflectMirrorDirection(incoming, inwardNormal);
   return { hit, center, inwardNormal, incoming, fromHitTowardSource, reflected, focus: -radius / 2 };
 }
 
