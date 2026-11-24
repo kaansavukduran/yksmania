@@ -2,6 +2,7 @@ import { identityHash, type HelpQuestion } from "../domain/questionHelpModel";
 import type { Question } from "../domain/model";
 import type { SourceQuestionFigureSpec } from "./SourceQuestionFigure";
 import { rightTriangleQuestionFigures, schematicTriangleOption } from "./rightTriangleQuestionFigures";
+import { molarMassQuestionFigures, solarAltitudeQuestionFigures } from "./existingMolAndSolarFigures";
 import { forceAccelerationFigures, forceAccelerationQuestion } from "./forceAccelerationPractice";
 import { forceVelocityFigureData, forceVelocityQuestion } from "./forceVelocityOptions048";
 import { signedWorkFigures, signedWorkQuestionId } from "./signedWork055";
@@ -528,6 +529,22 @@ const bindings = new Map<string, FigureBinding>([
     pageLabel: "İçerik 5.1 · fiziksel 2 ve 4. sayfalar",
     itemLabel: "Ters ve komşu açı ilişkilerinin özgün uygulaması",
     figures: crossingFigures,
+  }],
+  ["m1", {
+    stemRevision: "0b80eb34e861ae",
+    helpRevision: "1973d6e85e4c49",
+    title: "MEBİ TYT Kimya Konu Özetleri",
+    pageLabel: "Fiziksel 63 ve 65. sayfalar, basılı 61 ve 63",
+    itemLabel: "Mol kütlesi tablosu ve mol hesabının özgün uygulaması",
+    figures: molarMassQuestionFigures,
+  }],
+  ["f020-geo-dunya-sekli-hareket-1", {
+    stemRevision: "1aa616daeb1dc3",
+    helpRevision: "00c6c617eeb12b",
+    title: "MEBİ TYT Coğrafya Konu Özetleri",
+    pageLabel: "Fiziksel 18. sayfa, basılı 16",
+    itemLabel: "Dönence ve enlem çiziminin özgün ideal öğle uygulaması",
+    figures: solarAltitudeQuestionFigures,
   }],
   ["n1", {
     stemRevision: "1091ad1048de51",
