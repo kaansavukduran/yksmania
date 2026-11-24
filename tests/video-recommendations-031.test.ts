@@ -79,7 +79,7 @@ describe("031 source-bound optional video recommendations", () => {
             "tyt-mat-uslu-sayilar-kaynak-039",
           ].includes(id),
       ),
-    ).toHaveLength(485);
+    ).toHaveLength(492);
     expect(foundationIds.every((id) => seen.has(id))).toBe(true);
     expect(seen.has("tyt-mat-ebob-ekok-kaynak-034")).toBe(true);
     expect(seen.has("tyt-mat-rasyonel-kaynak-035")).toBe(true);
@@ -93,6 +93,33 @@ describe("031 source-bound optional video recommendations", () => {
     expect(JSON.stringify(videoCatalog031)).not.toMatch(
       /docs\.google|drive\.google|todoist|NIGHT_SPLIT|PROGRAM_|task_|28 Şubat|2027-02/i,
     );
+  });
+
+  it("keeps 79 new video identities across the 14 verified math and geometry topics", () => {
+    const expected = {
+      "Permütasyon": "tyt-mat-permutasyon-kaynak-032",
+      "Tekrarlı Permütasyon": "tyt-mat-tekrarli-permutasyon-kaynak-033",
+      "Kombinasyon": "tyt-mat-kombinasyon-kaynak-034",
+      "Binom açılımı": "tyt-mat-binom-kaynak-035",
+      "Olasılık": "tyt-mat-olasilik-kaynak-036",
+      "İkizkenar Üçgen": "tyt-geo-ucgende-acilar-031",
+      "Eşkenar Üçgen": "tyt-geo-ucgende-acilar-031",
+      "Üçgende Alan": "alan-donusumleri",
+      "Çemberde Açılar": "tyt-geo-cember-aci-040",
+      "Çemberde Uzunluk": "tyt-geo-cember-aci-040",
+      "Dairede Alan": "tyt-geo-daire-040",
+      "Silindir": "tyt-geo-silindir-koni-kure-040",
+      "Koni": "tyt-geo-silindir-koni-kure-040",
+      "Küre": "tyt-geo-silindir-koni-kure-040",
+    };
+    const groups = videoCatalog031.filter(group => Object.hasOwn(expected, group.topic));
+    expect(Object.fromEntries(groups.map(group => [group.topic, group.lessonIds[0]]))).toEqual(expected);
+    const identities = groups.flatMap(group => [...group.recommended, ...group.alternatives].map(video => videoIdentity031(video.url)));
+    expect(identities).toHaveLength(82);
+    expect(new Set(identities).size).toBe(79);
+    for (const [topic, id] of Object.entries(expected)) {
+      expect(getLessonVideos031(id).recommended.some(video => video.topics.includes(topic))).toBe(true);
+    }
   });
 
   it("keeps subtopic labels for the combined geometry units", () => {

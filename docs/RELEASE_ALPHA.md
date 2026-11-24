@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.147.0 · Matematik ve geometri videoları
+
+25 Kasım 2026. 14 başlıkta 79 ayrı YouTube bağlantısı eklendi. Önerilen ve alternatif videolar ilgili konu anlatımından açılır.
+
 # ÖSYM Mania 0.146.0 · Rönesans, Bergson ve Ahilik
 
 Yayın adayı (24 Kasım 2026). Rönesans ve çağdaş felsefe, Anadolu'da İslam ve tasavvufi yorumlar kopya kâğıtları argüman adımları, düşünür tabloları ve karşılaştırma figürleriyle açılıyor.

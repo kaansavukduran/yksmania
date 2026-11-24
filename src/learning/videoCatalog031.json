@@ -16043,5 +16043,561 @@
         "url": "https://www.youtube.com/watch?v=jgsFlsqnNqU"
       }
     ]
+  },
+  {
+    "subjectId": "tyt-matematik",
+    "topic": "Permütasyon",
+    "lessonIds": [
+      "tyt-mat-permutasyon-kaynak-032"
+    ],
+    "recommended": [
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "detail": "1",
+        "url": "https://www.youtube.com/watch?v=dfq_6Bm3lw0"
+      },
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "detail": "2",
+        "url": "https://www.youtube.com/watch?v=tUhcf4w3uWs"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=JHMENIAC_X8&list=PLxSXQclq3muCBnV2nFrC8FGaAFk9yJNRN&index=20&pp=iAQB"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=qgRcS8RaEco&list=PL2wqvRc1FjTlt-yzGniaw8APzbPI4fTxm&index=104&pp=iAQB"
+      },
+      {
+        "channel": "Soner Akıncı",
+        "detail": "Başlangıç bölümü",
+        "url": "https://www.youtube.com/watch?v=UjxQlk1yQ-c"
+      },
+      {
+        "channel": "Barıştıran Matematik",
+        "detail": "Başlangıç bölümü",
+        "url": "https://www.youtube.com/watch?v=HaDXAtUQuP4"
+      },
+      {
+        "channel": "Yaşar Hoca",
+        "detail": "Tekrar",
+        "url": "https://www.youtube.com/watch?v=q7iiUY3h6rw"
+      },
+      {
+        "channel": "SML Matematik",
+        "detail": "Seriden bir bölüm",
+        "url": "https://www.youtube.com/watch?v=Q1GzG0CEMW0"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-matematik",
+    "topic": "Tekrarlı Permütasyon",
+    "lessonIds": [
+      "tyt-mat-tekrarli-permutasyon-kaynak-033"
+    ],
+    "recommended": [
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "url": "https://www.youtube.com/watch?v=vd_84ibWAuw"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Tekrarlı permütasyon, bölüm 1",
+        "url": "https://www.youtube.com/watch?v=t0bVOPI0El4"
+      },
+      {
+        "channel": "3D Yayınları",
+        "detail": "Tekrar",
+        "url": "https://www.youtube.com/watch?v=QXny03IAmn8"
+      },
+      {
+        "channel": "Hocalara Geldik 10. sınıf",
+        "detail": "Tekrar",
+        "url": "https://www.youtube.com/watch?v=Kyc4shMs2fQ"
+      },
+      {
+        "channel": "Hocalara Geldik",
+        "detail": "Tekrar",
+        "url": "https://www.youtube.com/watch?v=MqBgwdJbv-w"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-matematik",
+    "topic": "Kombinasyon",
+    "lessonIds": [
+      "tyt-mat-kombinasyon-kaynak-034"
+    ],
+    "recommended": [
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "detail": "1",
+        "url": "https://www.youtube.com/watch?v=ugMCEKtWpOc"
+      },
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "detail": "2",
+        "url": "https://www.youtube.com/watch?v=tNqR14vTtDk"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=CxxjhL3zDso&list=PLxSXQclq3muCBnV2nFrC8FGaAFk9yJNRN&index=22&pp=iAQB"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=J1U1ul2i1Tk&list=PL2wqvRc1FjTlt-yzGniaw8APzbPI4fTxm&index=108&pp=iAQB"
+      },
+      {
+        "channel": "Soner Akıncı",
+        "detail": "Başlangıç bölümü",
+        "url": "https://www.youtube.com/watch?v=3R3op8vgGtM"
+      },
+      {
+        "channel": "Barıştıran Matematik",
+        "detail": "Başlangıç bölümü",
+        "url": "https://www.youtube.com/watch?v=RcQ_Qjkg3wI"
+      },
+      {
+        "channel": "Yaşar Hoca",
+        "detail": "Tekrar",
+        "url": "https://www.youtube.com/watch?v=q7iiUY3h6rw"
+      },
+      {
+        "channel": "SML Matematik",
+        "detail": "Seriden bir bölüm",
+        "url": "https://www.youtube.com/watch?v=KGrJ2A9tAQk"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-matematik",
+    "topic": "Binom açılımı",
+    "lessonIds": [
+      "tyt-mat-binom-kaynak-035"
+    ],
+    "recommended": [
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "url": "https://www.youtube.com/watch?v=bLrABO76GSo"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=0z4T6paM5mg&list=PLxSXQclq3muCBnV2nFrC8FGaAFk9yJNRN&index=24&pp=iAQB"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=L26aou1LKDU&list=PL2wqvRc1FjTlt-yzGniaw8APzbPI4fTxm&index=113&pp=iAQB"
+      },
+      {
+        "channel": "Soner Akıncı",
+        "detail": "Seriden bir bölüm",
+        "url": "https://www.youtube.com/watch?v=Feyglw7Hj5Q"
+      },
+      {
+        "channel": "Barıştıran Matematik",
+        "detail": "Seriden bir bölüm",
+        "url": "https://www.youtube.com/watch?v=VvKUrF0wPvw"
+      },
+      {
+        "channel": "Tunç Kurt",
+        "detail": "Tekrar",
+        "url": "https://www.youtube.com/watch?v=ylSPdVRYPqA"
+      },
+      {
+        "channel": "Yaşar Hoca",
+        "detail": "Tekrar",
+        "url": "https://www.youtube.com/watch?v=q7iiUY3h6rw"
+      },
+      {
+        "channel": "Hasan Hocanın Evreni",
+        "detail": "Seriden bir bölüm",
+        "url": "https://www.youtube.com/watch?v=4EA9BO6AqPA"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-matematik",
+    "topic": "Olasılık",
+    "lessonIds": [
+      "tyt-mat-olasilik-kaynak-036"
+    ],
+    "recommended": [
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "detail": "1",
+        "url": "https://www.youtube.com/watch?v=7nOEaZij1hA"
+      },
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "detail": "2",
+        "url": "https://www.youtube.com/watch?v=vJwi5dwG0Hc"
+      },
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "detail": "3",
+        "url": "https://www.youtube.com/watch?v=R6b_V5bhA7k"
+      },
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "detail": "4",
+        "url": "https://www.youtube.com/watch?v=-0e9cMgd-pk"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=wWLodePjvUA&list=PLxSXQclq3muCBnV2nFrC8FGaAFk9yJNRN&index=28&pp=iAQB"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=V8XQYrwAoYw&list=PL2wqvRc1FjTlt-yzGniaw8APzbPI4fTxm&index=114&pp=iAQB"
+      },
+      {
+        "channel": "Soner Akıncı",
+        "detail": "Başlangıç bölümü",
+        "url": "https://www.youtube.com/watch?v=RY0EVI9uilA"
+      },
+      {
+        "channel": "Barıştıran Matematik",
+        "detail": "Seriden bir bölüm",
+        "url": "https://www.youtube.com/watch?v=_m-EUj0QgI4"
+      },
+      {
+        "channel": "Yaşar Hoca",
+        "detail": "Tekrar",
+        "url": "https://www.youtube.com/watch?v=q7iiUY3h6rw"
+      },
+      {
+        "channel": "SML Matematik",
+        "detail": "Soru çözümü",
+        "url": "https://www.youtube.com/watch?v=384KI2Nn7tA"
+      },
+      {
+        "channel": "Moz Akademi",
+        "detail": "Soru çözümü",
+        "url": "https://www.youtube.com/watch?v=rGYPp6DLb4A"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "İkizkenar Üçgen",
+    "lessonIds": [
+      "tyt-geo-ucgende-acilar-031"
+    ],
+    "recommended": [
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "url": "https://www.youtube.com/watch?v=f-QHEWqdlEI"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=YyisvG8RHOs&list=PLxSXQclq3muBKKBXwyEAJP0shmedtEZQr&index=12&pp=iAQB0gcJCUEMAYcqIYzv"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=LhrteTJtUnc&list=PL2wqvRc1FjTm9WF6YPcoYo5nMufCcAg2t&index=22&pp=iAQB"
+      },
+      {
+        "channel": "Barıştıran Matematik",
+        "detail": "Seriden bir bölüm",
+        "url": "https://www.youtube.com/watch?v=foOGkzb0oU4"
+      },
+      {
+        "channel": "Yaşar Hoca",
+        "detail": "Başlangıç bölümü",
+        "url": "https://www.youtube.com/watch?v=Yt7cPX-C0So"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Eşkenar Üçgen",
+    "lessonIds": [
+      "tyt-geo-ucgende-acilar-031"
+    ],
+    "recommended": [
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "url": "https://www.youtube.com/watch?v=6He2GBB2UGQ"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=f4X7lIh0HHE&list=PLxSXQclq3muBKKBXwyEAJP0shmedtEZQr&index=14&pp=iAQB"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=B82CX5oCm88&list=PL2wqvRc1FjTm9WF6YPcoYo5nMufCcAg2t&index=25&pp=iAQB0gcJCUEMAYcqIYzv"
+      },
+      {
+        "channel": "Barıştıran Matematik",
+        "detail": "Seriden bir bölüm",
+        "url": "https://www.youtube.com/watch?v=q3aKgPRYcQQ"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Üçgende Alan",
+    "lessonIds": [
+      "alan-donusumleri"
+    ],
+    "recommended": [
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "url": "https://www.youtube.com/watch?v=yVXn0p6ojAc"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=5iTvWZgLHmY&list=PLxSXQclq3muBKKBXwyEAJP0shmedtEZQr&index=24&pp=iAQB0gcJCUEMAYcqIYzv"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=_U4MVUKBa5Q&list=PL2wqvRc1FjTm9WF6YPcoYo5nMufCcAg2t&index=42&pp=iAQB"
+      },
+      {
+        "channel": "Barıştıran Matematik",
+        "detail": "Başlangıç bölümü",
+        "url": "https://www.youtube.com/watch?v=s0Of_qFUBSA"
+      },
+      {
+        "channel": "Rehber Matematik",
+        "detail": "Seriden bir bölüm",
+        "url": "https://www.youtube.com/watch?v=iNzGBo0_-Dw"
+      },
+      {
+        "channel": "Yaşar Hoca",
+        "detail": "Başlangıç bölümü",
+        "url": "https://www.youtube.com/watch?v=V-L2ZCiulos"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Çemberde Açılar",
+    "lessonIds": [
+      "tyt-geo-cember-aci-040"
+    ],
+    "recommended": [
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "url": "https://www.youtube.com/watch?v=lQCK9pDPIK0"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=xqkW5PJIXMM&list=PLxSXQclq3muBKKBXwyEAJP0shmedtEZQr&index=62&pp=iAQB"
+      },
+      {
+        "channel": "Barıştıran Matematik",
+        "detail": "Başlangıç bölümü",
+        "url": "https://www.youtube.com/watch?v=8TFCKlzwmzI"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Çemberde Uzunluk",
+    "lessonIds": [
+      "tyt-geo-cember-aci-040"
+    ],
+    "recommended": [
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "url": "https://www.youtube.com/watch?v=kWr4IXmH4MQ"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=LBDtzd5_ihQ&list=PLxSXQclq3muBKKBXwyEAJP0shmedtEZQr&index=66&pp=iAQB"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=RU5KtvZ-oEI&list=PL2wqvRc1FjTm9WF6YPcoYo5nMufCcAg2t&index=84&pp=iAQB"
+      },
+      {
+        "channel": "Barıştıran Matematik",
+        "detail": "Seriden bir bölüm",
+        "url": "https://www.youtube.com/watch?v=eN1Yvcafon8"
+      },
+      {
+        "channel": "Kenan Kara",
+        "detail": "Tekrar",
+        "url": "https://www.youtube.com/watch?v=D7C7h45WmFQ"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Dairede Alan",
+    "lessonIds": [
+      "tyt-geo-daire-040"
+    ],
+    "recommended": [
+      {
+        "channel": "Matematiğin Güler Yüzü",
+        "url": "https://www.youtube.com/watch?v=z0tGGh-kHoI"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=4Gu6vkai0R8&list=PLxSXQclq3muBKKBXwyEAJP0shmedtEZQr&index=70&pp=iAQB"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=R665mkqsO34&list=PL2wqvRc1FjTm9WF6YPcoYo5nMufCcAg2t&index=85&pp=iAQB"
+      },
+      {
+        "channel": "Barıştıran Matematik",
+        "detail": "Başlangıç bölümü",
+        "url": "https://www.youtube.com/watch?v=D7tuRX_cjrE"
+      },
+      {
+        "channel": "Kenan Kara",
+        "detail": "Tekrar",
+        "url": "https://www.youtube.com/watch?v=eynDCzs44Mg"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Silindir",
+    "lessonIds": [
+      "tyt-geo-silindir-koni-kure-040"
+    ],
+    "recommended": [
+      {
+        "channel": "Kenan Kara",
+        "detail": "1",
+        "url": "https://www.youtube.com/watch?v=MO623DL6sSM"
+      },
+      {
+        "channel": "Kenan Kara",
+        "detail": "2",
+        "url": "https://www.youtube.com/watch?v=G9Rk5o_jP-g"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=NptKniWEKIk&list=PLxSXQclq3muBKKBXwyEAJP0shmedtEZQr&index=80&pp=iAQB"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=M6Ly8Tx_swk&list=PL2wqvRc1FjTm9WF6YPcoYo5nMufCcAg2t&index=94&pp=iAQB0gcJCUEMAYcqIYzv"
+      },
+      {
+        "channel": "Soner Akıncı",
+        "detail": "Seriden bir bölüm",
+        "url": "https://www.youtube.com/watch?v=5I0mxnTOoFQ"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Koni",
+    "lessonIds": [
+      "tyt-geo-silindir-koni-kure-040"
+    ],
+    "recommended": [
+      {
+        "channel": "Kenan Kara",
+        "detail": "1",
+        "url": "https://www.youtube.com/watch?v=c8ItuZMIQyA"
+      },
+      {
+        "channel": "Kenan Kara",
+        "detail": "2",
+        "url": "https://www.youtube.com/watch?v=E6mAsdgwIoA"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=l-Z8vjL93L8&list=PLxSXQclq3muBKKBXwyEAJP0shmedtEZQr&index=84&pp=iAQB"
+      },
+      {
+        "channel": "Bıyıklı Matematik",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=dhT7wjk-azc&list=PL2wqvRc1FjTm9WF6YPcoYo5nMufCcAg2t&index=96&pp=iAQB"
+      },
+      {
+        "channel": "Soner Akıncı",
+        "detail": "Seriden bir bölüm",
+        "url": "https://www.youtube.com/watch?v=AjCelbH0fZU"
+      }
+    ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Küre",
+    "lessonIds": [
+      "tyt-geo-silindir-koni-kure-040"
+    ],
+    "recommended": [
+      {
+        "channel": "Kenan Kara",
+        "detail": "1",
+        "url": "https://www.youtube.com/watch?v=4SbDWb6XTIw"
+      },
+      {
+        "channel": "Kenan Kara",
+        "detail": "2",
+        "url": "https://www.youtube.com/watch?v=9jHvhHHEbzE"
+      }
+    ],
+    "alternatives": [
+      {
+        "channel": "Mert Hoca",
+        "detail": "Bölüm 1",
+        "url": "https://www.youtube.com/watch?v=ysgwiPxNOZk&list=PLxSXQclq3muBKKBXwyEAJP0shmedtEZQr&index=86&pp=iAQB"
+      },
+      {
+        "channel": "Soner Akıncı",
+        "detail": "Seriden bir bölüm",
+        "url": "https://www.youtube.com/watch?v=uWP54kF6REY"
+      }
+    ]
   }
 ]

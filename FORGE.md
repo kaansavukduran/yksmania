@@ -1,3 +1,9 @@
+# Matematik ve geometri video aktarımı · 0.147.0
+
+25 Kasım 2026. Drive çalışma listesindeki 79 eksik YouTube kimliği, 14 başlıkta 82 konu bağlantısı olarak eklendi. Bir video dört sayma/olasılık başlığına bağlı. Önceki 2.294 bağlantı kaydı korundu. Özel Drive içeriği, tarih ve görev kimliği kataloğa aktarılmadı.
+
+Check, 8 hedefli birim testi, PWA derlemesi ve 4 masaüstü/dar ekran video tarayıcı senaryosu geçti.
+
 # TYT Felsefe ve Din Kültürü kopya kâğıtları · 0.146.0 adayı
 
 Forge069: TYT Felsefe 013, 017 ve Din Kültürü 017, 018 kopya kâğıtları 16 etkileşimli figür ve 4 taktik olarak aktarıldı (kopya 137 / 517). Din Kültürü figürleri betimleyici ve tarafsız; ÖSYM atıfları kâğıtların beyanına dayanıyor.
