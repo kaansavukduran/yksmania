@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.106.0 · Diyapazon ve havada ses
+
+Yayın adayı. Zaman kontrolüyle diyapazonun kollarını ve havadaki sıkışma ve seyrelmeyi izle. Kopya Kağıdı’nda bir hava noktasının salınmasıyla sesin ilerlemesini karşılaştır.
+
 # ÖSYM Mania 0.105.0 · Dalgaları iki özelliğe göre sınıflandır
 
 Yayın adayı. Ses, ışık, su, tel ve yer dalgası örneklerinin yayılma ortamını ve titreşim doğrultusunu ayrı ayrı karşılaştır. Kopya Kağıdı’nda iki ölçütü aynı örneğe uygula.

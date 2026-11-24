@@ -20,6 +20,7 @@ import { wavelengthMarkers, wavelengthTitle, wavePeriodTitle, waveRopeTitle, wav
 import { waveTravelAt, waveTravelFrequencyHz, waveTravelSpeedMps, waveTravelTitle, waveTravelWavelengthM } from "../mebiWaveTravel";
 import { waterAmplitudeTitle, waveAmplitudeBounds, waveAmplitudeInitialCm, waveAmplitudeTitle } from "../mebiWaveAmplitude";
 import { waveClassificationExamples, waveClassificationTitle } from "../mebiWaveClassification";
+import { tuningForkSnapshot, tuningForkTitle } from "../mebiTuningFork";
 
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
@@ -334,6 +335,34 @@ const giris: Record<string, FigureDef> = {
             }),
           ]),
         ],
+      };
+    },
+  },
+  [tuningForkTitle]: {
+    caption: "Zamanı ilerlet ve farklı renkli hava noktasını izle. İnce çizgi denge konumunu, noktalar anlık konumu gösterir. Birbirine yakın noktalar sıkışmayı gösterir. Dikey işaretlerin gösterdiği bölgeler ilerlerken hava noktaları denge çevresinde kalır.",
+    alt: "Solda plastik tokmak ve iki kollu diyapazon. Sağda denge işaretleri çevresinde yatay salınan hava noktaları, sıkışma ve seyrelme işaretleri ile sağa bakan yayılma oku.",
+    param: { label: "Geçen süre", min: 0, max: 1, step: 0.125, init: 0, unit: " T" },
+    draw: (time) => {
+      const { tineOffset, resting, moving, compressed, rarefied } = tuningForkSnapshot(time);
+      const origin = 2.8;
+      const observed = 10;
+      return {
+        els: [
+          seg(v(-0.35, -0.85), v(0.05, 0.8), { tone: "warn", bold: true }),
+          circle(v(0.05, 0.8), 0.14, { tone: "warn", fill: "warn" }),
+          poly([v(0.55 - tineOffset, 1.18), v(0.55, -0.4), v(0.77, -0.67), v(1.09, -0.67), v(1.31, -0.4), v(1.31 + tineOffset, 1.18)], { open: true, tone: "ink", bold: true }),
+          seg(v(0.93, -0.67), v(0.93, -1.25), { tone: "ink", bold: true }),
+          txt(v(0.6, -1.62), "Diyapazon", "c", { small: true }),
+          vec(v(4, 1.38), v(8.1, 1.38), { tone: "b" }),
+          txt(v(6.05, 1.52), "Sesin yayılması", "n", { small: true, bold: true }),
+          ...resting.map((x, index) => seg(v(origin + x, -0.16), v(origin + x, -0.51), { tone: index === observed ? "a" : "muted", thin: true })),
+          ...moving.map((x, index) => circle(v(origin + x, 0), 0.058, { tone: index === observed ? "a" : "ink", fill: index === observed ? "a" : "ink" })),
+          seg(v(origin + compressed.center, 0.15), v(origin + compressed.center, 0.64), { tone: "a" }),
+          txt(v(origin + compressed.center, 0.64), "Sıkışma", "n", { tone: "a", small: true, bold: true }),
+          seg(v(origin + rarefied.center, -0.55), v(origin + rarefied.center, -1.01), { tone: "b" }),
+          txt(v(origin + rarefied.center, -1.01), "Seyrelme", "s", { tone: "b", small: true, bold: true }),
+        ],
+        readout: ["Sıkışmada noktalar daha yakın. Seyrelmede araları daha açık.", "İşaretli nokta kendi denge çizgisi çevresinde yatay salınır."],
       };
     },
   },
