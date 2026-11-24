@@ -1,3 +1,7 @@
+# K ve L’nin düzlem aynadaki görüntüsü · 0.183.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 178, basılı 176. Her uç için iki yansıyan ışın ve onlara ait kesik geri uzantılar ayrı çizildi. Son adım iki görüntü ucunu birleştiriyor ve boyları karşılaştırıyor. Dokuz odaklı birim testi, sekiz Chromium akışı ve 320 px büyük yazı erişilebilirlik akışı geçti. Çevrimdışı pakette 335 dosya doğrulandı.
+
 # Üç yerel normal · 0.182.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 177, basılı 175. Üç paralel ışın, her temas noktasında yüzeye dik kesik normal ve o normale göre yansıyan ok. Kopya Kağıdı düzgün yüzeyi ve üç farklı eğimi ayrı gösteriyor.
@@ -1079,7 +1083,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
 | TYT Matematik | 45 / 45 | 45 · 184 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
 | TYT Geometri | 19 / 19 | 19 · 176 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 404 | 323 / 323 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 408 | 323 / 323 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 139 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 0 |
 | TYT Tarih | 24 / 24 | 24 · 76 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 0 |
@@ -1092,7 +1096,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2396** | **6.673 / 6.673 · %100,00** | **121 / 517 · %23,40** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2400** | **6.673 / 6.673 · %100,00** | **121 / 517 · %23,40** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

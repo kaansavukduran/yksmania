@@ -1,8 +1,8 @@
 {
-  "version": "0.182.0",
+  "version": "0.183.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Üç paralel ışını aynı anda düz ve pürüzlü yüzeye gönder. Yüzey parçalarını eğerek her noktadaki normal ve eş dönüş açısının nasıl değiştiğini incele.",
-    "en": "Send three parallel rays toward flat and rough surfaces. Tilt the surface patches to compare the normal and equal angles at each point."
+    "tr": "K ve L uçlarının aynaya yansıyan ışınlarını ayrı izle. Kesik geri uzantılarla görüntü uçlarını bul ve iki eğik parçanın uzunluğunu karşılaştır.",
+    "en": "Trace each endpoint from the object to the mirror. Follow the dashed extensions and compare the lengths of the two slanted segments."
   }
 }

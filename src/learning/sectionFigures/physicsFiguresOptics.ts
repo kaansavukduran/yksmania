@@ -8,6 +8,7 @@ import { parallelLitSphereFigures } from "./mebiParallelLitSphereFigures";
 import { lightWaterReflectionFigures } from "./mebiLightWaterReflectionFigures";
 import { visibleByReflectionFigures } from "./mebiVisibleByReflectionFigures";
 import { roughSurfaceReflectionFigures } from "./mebiRoughSurfaceReflectionFigures";
+import { mirrorEndpointFigures } from "./mebiMirrorEndpointFigures";
 import {
   span,
   add,
@@ -915,7 +916,7 @@ function twoSources(s: number) {
 }
 
 export const physicsFiguresOptics: Record<string, Record<string, FigureDef>> = {
-  "duzlem-ayna": { ...duzlemAyna, ...lightWaterReflectionFigures, ...visibleByReflectionFigures, ...roughSurfaceReflectionFigures },
+  "duzlem-ayna": { ...duzlemAyna, ...lightWaterReflectionFigures, ...visibleByReflectionFigures, ...roughSurfaceReflectionFigures, ...mirrorEndpointFigures },
   "kuresel-aynalar": kureselAynalar,
   "isigin-kirilmasi": kirilma,
   mercekler,

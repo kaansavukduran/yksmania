@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.183.0 · Eğik parçanın ayna görüntüsü
+
+Yayın adayı. K′ ve L′ uçlarını ayrı kur, sonra birleştirip görüntünün boyunu karşılaştır.
+
 # ÖSYM Mania 0.182.0 · Düzgün ve dağınık yansıma
 
 Yayın adayı. Üç paralel gelen ışın aynı kalırken her temas noktasının normalini ve dönen ışının yönünü karşılaştır.
