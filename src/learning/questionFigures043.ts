@@ -24,6 +24,7 @@ import { springPulseQuestion, springPulseQuestionFigures } from "./springPulseQu
 import { waveDirectionsFigures, waveDirectionsQuestion } from "./waveDirectionsQuestion118";
 import { springOverlapQuestion, springOverlapQuestionFigures } from "./springOverlapQuestion128";
 import { waterReflectionQuestion, waterReflectionQuestionFigures } from "./waterReflectionQuestion136";
+import { soundLevelQuestion, soundLevelQuestionFigures } from "./soundLevelQuestion148";
 import { springDensityQuestion, springDensityQuestionFigures } from "./springDensityQuestion124";
 import {
   inverseTranslationFigures,
@@ -279,6 +280,16 @@ const waterQuestion = {
   guidance: waterReflectionQuestion.guidance,
 };
 
+const decibelQuestion = {
+  id: soundLevelQuestion.id,
+  prompt: soundLevelQuestion.prompt.tr,
+  options: soundLevelQuestion.options.map((option) => option.tr),
+  answer: soundLevelQuestion.answer,
+  hint: soundLevelQuestion.hint.tr,
+  explanation: soundLevelQuestion.explanation.tr,
+  guidance: soundLevelQuestion.guidance,
+};
+
 const densityQuestion = {
   id: springDensityQuestion.id,
   prompt: springDensityQuestion.prompt.tr,
@@ -415,6 +426,14 @@ const bindings = new Map<string, FigureBinding>([
     pageLabel: "Fiziksel 159. sayfa, basılı 157",
     itemLabel: "Düz engelde cephe ve ilerleme açısı, özgün öğretim sorusu",
     figures: waterReflectionQuestionFigures,
+  }],
+  [decibelQuestion.id, {
+    stemRevision: stemRevision(decibelQuestion),
+    helpRevision: helpRevision(decibelQuestion, decibelQuestion.guidance),
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 165. sayfa, basılı 163",
+    itemLabel: "Desibel ölçeğinden şiddet oranı, özgün öğretim sorusu",
+    figures: soundLevelQuestionFigures,
   }],
   [densityQuestion.id, {
     stemRevision: stemRevision(densityQuestion),

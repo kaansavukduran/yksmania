@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.148.0 · Şekilli desibel sorusu
+
+Yayın adayı. X ve Y işaretlerini sorunun ölçeğinden oku. İpucu bir 10 dB adımını gösterir. Çözümde 20 dB farkı çizimden ve şiddet oranını tablodan kontrol et. Kayıtlı yanlışın kendi çizimi çevrimdışı açılır.
+
 # ÖSYM Mania 0.147.0 · Aynı nota, farklı tını
 
 Yayın adayı. Örnek keman ve piyano dalgalarında 3,33 ms periyodu ölç. 300 Hz temel bileşeni sabitken 600 ve 900 Hz bileşenlerini değiştir. Kopya Kağıdı dalgayı ve göreli genlikleri ayrı çözüm adımlarında gösteriyor.

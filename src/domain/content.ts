@@ -6,6 +6,7 @@ import { springPulseQuestion } from "../learning/springPulseQuestion107";
 import { waveDirectionsQuestion } from "../learning/waveDirectionsQuestion118";
 import { springOverlapQuestion } from "../learning/springOverlapQuestion128";
 import { waterReflectionQuestion } from "../learning/waterReflectionQuestion136";
+import { soundLevelQuestion } from "../learning/soundLevelQuestion148";
 import { springDensityQuestion } from "../learning/springDensityQuestion124";
 import { countingLessons034035 } from "../learning/countingSources034035";
 import { permutationLessons032033 } from "../learning/permutationSources032033";
@@ -1029,9 +1030,11 @@ const baseLessons: Lesson[] = [
   ...forge014GeographyLessons,
   ...forge014TurkishLessons,
   ...forge012MathLessons,
-  ...forge012PhysicsLessons.map((lesson) => lesson.id === "su-dalgalari"
-    ? { ...lesson, questions: [...lesson.questions, waterReflectionQuestion] }
-    : lesson),
+  ...forge012PhysicsLessons.map((lesson) => {
+    if (lesson.id === "su-dalgalari") return { ...lesson, questions: [...lesson.questions, waterReflectionQuestion] };
+    if (lesson.id === "ses-deprem-dalgalari") return { ...lesson, questions: [...lesson.questions, soundLevelQuestion] };
+    return lesson;
+  }),
   ...forge012ChemistryLessons,
   ...forge012BiologyLessons,
   ...forge012TurkishLessons,
