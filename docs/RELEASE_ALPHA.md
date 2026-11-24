@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.172.0 · Çevrimdışı açılış ve görselli optik
+
+Yayın adayı. Bağlantı göstergesi açık sayfanın çevrimdışı çalışana bağlandığını bildirir. Dört TYT Geometri kopya kağıdı ve MEBİ optik görselleri bu sürüm adayıyla geliyor.
+
 # ÖSYM Mania 0.171.0 · Işığın yüzeyden geçişi
 
 Yayın adayı. Pencere camını, buzlu camı ve kalın metal levhayı fotoğrafla incele. Gelen ışığın her yüzeyin arkasına nasıl ulaştığını üç çizimde karşılaştır.
@@ -117,6 +121,10 @@ Yayın adayı. İki özdeş şişeden birine su ekle. Vurma ve üflemede titreş
 # ÖSYM Mania 0.142.0 · Genlik ve frekans
 
 Yayın adayı. İki fotoğrafı ve aynı süreye çizilmiş örnek dalgaları aç. Genlikleri eşitleyip kaç tam salınım olduğunu say. Kopya Kağıdı bu sayılardan frekansı hesaplıyor.
+
+# ÖSYM Mania 0.142.0 · Her derste figür
+
+Yayın adayı (24 Kasım 2026). Anlatımlı her ders artık bölüm figürüyle açılıyor; TYT Matematik'te sayılar, denklemler ve sayma figürleri, TYT Geometri'de dik üçgen, merkezler, alan ve dikdörtgen için sürgülü figürler ve taktikler eklendi.
 
 # ÖSYM Mania 0.141.0 · Fanusta ses ve ortam
 

@@ -74,46 +74,6 @@ const alan: Record<string, FigureDef> = {
       };
     },
   },
-  "Tabanı seçtiğinde yüksekliği de yeniden seçmiş olursun": {
-    caption:
-      "Her taban, karşı köşenin o kenarın DOĞRUSUNA olan dik uzaklığıyla eşleşir. Geniş açılı üçgende dikmenin ayağı kenarın uzantısına düşer; alan değişmez.",
-    alt: "B'de geniş açılı ABC üçgeni; adıma göre BC tabanına A'dan ya da AB tabanına C'den uzantıya inen dik yükseklik kesikli.",
-    steps: ["Taban BC, yükseklik A'dan", "Taban AB, yükseklik C'den"],
-    draw: (_, step) => {
-      const B = v(0, 0);
-      const C = v(6, 0);
-      const A = v(-1.6, 3);
-      const els: El[] = [poly([A, B, C], { fill: "muted" })];
-      if (step === 0) {
-        const H = foot(A, B, C);
-        els.push(
-          seg(B, C, { tone: "b", bold: true }),
-          seg(H, B, { dash: true, tone: "muted" }),
-          seg(A, H, { tone: "a", dash: true }),
-          right(H, C, A, "a"),
-          dim(A, H, "hₐ = 3", C, "a"),
-          dim(B, C, "a = 6", A, "b"),
-          pt(H, "H", "s", "a"),
-        );
-        els.push(...labelAll([A, B, C], ["A", "B", "C"], ["n", "s", "se"]));
-        return { els, readout: ["Alan = 6 · 3 / 2 = 9"] };
-      }
-      const H = foot(C, A, B);
-      const ab = dist(A, B);
-      els.push(
-        seg(A, B, { tone: "b", bold: true }),
-        seg(B, H, { dash: true, tone: "muted" }),
-        seg(C, H, { tone: "a", dash: true }),
-        right(H, C, A, "a"),
-        pt(H, "H", "w", "a"),
-        ...labelAll([A, B, C], ["A", "B", "C"], ["n", "s", "se"]),
-      );
-      return {
-        els,
-        readout: [`AB ≈ ${fmt(ab, 2)}, h ≈ ${fmt(dist(C, H), 2)} ⇒ alan ≈ ${fmt((ab * dist(C, H)) / 2, 2)}`],
-      };
-    },
-  },
   "Parçaları taşırken hangi işlemler alanı korur?": {
     caption:
       "Üçgeni iki kenarın orta noktalarından kes ve üst parçayı orta nokta etrafında 180° döndür. Parça büyümez, boşluk ya da örtüşme oluşmaz: alan aynı kalır, şekil paralelkenar olur.",
@@ -165,60 +125,6 @@ const alan: Record<string, FigureDef> = {
           dim(A, D, s === 0 ? "4 (yan kenar = yükseklik)" : fmt(side, 2), s < 0 ? v(-20, 2) : B),
         ],
         readout: [`Alan = 10 · 4 = 40`, `Yan kenar ≈ ${fmt(side, 2)} · Çevre ≈ ${fmt(20 + 2 * side, 2)}`],
-      };
-    },
-  },
-  "Üçgen alanındaki yarım nereden gelir?": {
-    caption:
-      "Üçgenin eş bir kopyasını 180° döndürüp yanına koyunca tabanı b, yüksekliği h olan paralelkenar oluşur. Üçgen bu bütünün tam yarısıdır: b·h/2.",
-    alt: "Üçgen ve 180° döndürülmüş eş kopyası birlikte bir paralelkenar oluşturuyor; iki parça iki renkte.",
-    steps: ["Üçgen", "Eş kopyayı döndür ve ekle"],
-    draw: (_, step) => {
-      const A = v(1.8, 3.4);
-      const B = v(0, 0);
-      const C = v(6, 0);
-      const M = mid(A, C);
-      const B2 = rot(B, 180, M);
-      const H = foot(A, B, C);
-      return {
-        els: [
-          poly([A, B, C], { fill: "b" }),
-          ...(step === 1 ? [poly([A, C, B2], { fill: "a", tone: "a" })] : []),
-          seg(A, H, { dash: true, tone: "a" }),
-          right(H, C, A, "a"),
-          dim(A, H, "h", C, "a"),
-          dim(B, C, "b", A),
-        ],
-        readout: step === 1 ? ["Paralelkenar: b·h", "Her üçgen: b·h/2"] : ["Üçgen: ?"],
-      };
-    },
-  },
-  "Alan oranını bulurken ortak olan büyüklüğü sadeleştir": {
-    caption:
-      "D'yi BC üzerinde kaydır. ABD ile ADC aynı A yüksekliğini paylaşır; alanlarının oranı tabanların oranına, BD/DC'ye eşittir.",
-    alt: "ABC üçgeninde BC üzerinde D noktası; ABD ve ADC iki renkte, A'dan BC'ye ortak dik yükseklik kesikli.",
-    param: { label: "BD", min: 1, max: 5, step: 0.5, init: 2.4 },
-    draw: (bd) => {
-      const B = v(0, 0);
-      const C = v(6, 0);
-      const A = v(2, 3.6);
-      const D = v(bd, 0);
-      const H = foot(A, B, C);
-      const a1 = triArea(A, B, D);
-      const a2 = triArea(A, D, C);
-      return {
-        els: [
-          poly([A, B, D], { fill: "a", thin: true }),
-          poly([A, D, C], { fill: "b", thin: true }),
-          poly([A, B, C]),
-          seg(A, D),
-          seg(A, H, { dash: true, tone: "muted" }),
-          right(H, C, A, "muted"),
-          dim(B, D, fmt(bd), A, "a"),
-          dim(D, C, fmt(6 - bd), A, "b"),
-          ...labelAll([A, B, C, D], ["A", "B", "C", "D"], ["n", "sw", "se", "s"]),
-        ],
-        readout: [`A(ABD) : A(ADC) = ${fmt(a1, 2)} : ${fmt(a2, 2)} = ${fmt(bd)} : ${fmt(6 - bd)}`],
       };
     },
   },

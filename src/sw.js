@@ -45,4 +45,5 @@ registerRoute(new NavigationRoute(controller.createHandlerBoundToURL("index.html
 
 self.addEventListener("message", (event) => {
   if (event.data?.type === "SKIP_WAITING") event.waitUntil(self.skipWaiting());
+  if (event.data?.type === "CLAIM_CLIENTS") event.waitUntil(self.clients.claim());
 });

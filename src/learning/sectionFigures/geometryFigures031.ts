@@ -796,61 +796,6 @@ const dikUcgen: Record<string, FigureDef> = {
       };
     },
   },
-  "Ters Pisagor ve ölçünün gerçekliği": {
-    caption:
-      "Sık görülen üç dik üçgen ailesi. Hepsinde hipotenüs en uzun kenar ve a² + b² = c²; katları da aynı şekli korur.",
-    alt: "Yan yana 3–4–5, 5–12–13 ve 8–15–17 dik üçgenleri aynı yüksekliğe ölçeklenmiş, kenar uzunlukları yazılı.",
-    draw: () => {
-      const make = (x0: number, a: number, b: number, c: number): El[] => {
-        const k = 3.2 / b;
-        const P = v(x0, 0);
-        const Q = v(x0 + a * k, 0);
-        const R = v(x0, b * k);
-        return [
-          tri(P, Q, R),
-          right(P, Q, R),
-          dim(P, Q, String(a), R),
-          dim(R, P, String(b), Q),
-          dim(Q, R, String(c), P, "a"),
-        ];
-      };
-      return {
-        els: [...make(0, 3, 4, 5), ...make(4.4, 5, 12, 13), ...make(7.8, 8, 15, 17)],
-        readout: ["9 + 16 = 25 · 25 + 144 = 169 · 64 + 225 = 289"],
-      };
-    },
-  },
-  "Özel üçgenler: açı hangi kenarın karşısında?": {
-    caption:
-      "Solda 45°–45°–90°: eş dik kenarlar a, hipotenüs a√2. Sağda 30°–60°–90°: 30° karşısı a, 60° karşısı a√3, hipotenüs 2a.",
-    alt: "İki dik üçgen yan yana. Birinde iki 45° açı ve kenarlar a, a, a√2; diğerinde 30° ve 60° açılar ve kenarlar a, a√3, 2a.",
-    draw: () => {
-      const P = v(0, 0);
-      const Q = v(3, 0);
-      const R = v(0, 3);
-      const S = v(5, 0);
-      const T = v(5 + 2 * Math.sqrt(3), 0);
-      const U = v(5, 2);
-      return {
-        els: [
-          tri(P, Q, R),
-          right(P, Q, R),
-          ang(Q, R, P, "45°", { fill: true }),
-          ang(R, P, Q, "45°", { fill: true }),
-          dim(P, Q, "a", R),
-          dim(R, P, "a", Q),
-          dim(Q, R, "a√2", P, "a"),
-          tri(S, T, U),
-          right(S, T, U),
-          ang(T, U, S, "30°", { fill: true, tone: "b", r: 40 }),
-          ang(U, S, T, "60°", { fill: true, tone: "c" }),
-          dim(U, S, "a", T, "b"),
-          dim(S, T, "a√3", U, "c"),
-          dim(T, U, "2a", S, "a"),
-        ],
-      };
-    },
-  },
   "Hipotenüse yükseklik indir: üç benzer üçgen": {
     caption:
       "AH yüksekliği ABC'yi iki küçük dik üçgene böler. Üçü de benzerdir; her dik kenar, hipotenüs ile kendi izdüşümünün çarpımının köküdür.",
@@ -944,36 +889,6 @@ const dikUcgen: Record<string, FigureDef> = {
           txt(v(0, 5.3), "duvar", "n", { small: true, tone: "muted" }),
         ],
         readout: [`Yükseklik = √(5² − ${fmt(d)}²) ≈ ${fmt(h, 2)} m`],
-      };
-    },
-  },
-  "Son kontrol: en uzun kenar, birim ve iki bağımsız eşitlik": {
-    caption:
-      "Hipotenüsün orta noktası M üç köşeye eşit uzaklıktadır; bu yüzden AM = BC/2. Aynı köşeden inen yükseklik AH ise farklı bir parçadır.",
-    alt: "6–8–10 dik üçgen; M merkezli, üç köşeden geçen çember. A'dan M'ye kenarortay ve A'dan H'ye yükseklik ayrı çizilmiş.",
-    draw: () => {
-      const B = v(0, 0);
-      const C = v(10, 0);
-      const A = v(3.6, 4.8);
-      const M = v(5, 0);
-      const H = v(3.6, 0);
-      return {
-        els: [
-          circle(M, 5, { dash: true, thin: true, tone: "muted" }),
-          tri(A, B, C),
-          right(A, B, C),
-          seg(A, M, { tone: "a" }),
-          seg(A, H, { tone: "b", dash: true }),
-          right(H, C, A, "b"),
-          ticks(B, M, 1, "a"),
-          ticks(M, C, 1, "a"),
-          pt(A, "A", "n"),
-          pt(B, "B", "w"),
-          pt(C, "C", "e"),
-          pt(M, "M", "s", "a"),
-          pt(H, "H", "s", "b"),
-        ],
-        readout: ["AM = BM = MC = 5", "AH = 4,8 ≠ AM"],
       };
     },
   },
@@ -1394,75 +1309,6 @@ const ucgenMerkezleri: Record<string, FigureDef> = {
       };
     },
   },
-  "İç merkez I: kenarlara eş dik uzaklık": {
-    caption:
-      "I'dan üç kenara inen dikmeler aynı r uzunluğundadır; bu yüzden I iç teğet çemberin merkezidir. I'nın köşelere uzaklıkları ise farklıdır.",
-    alt: "ABC üçgeni, iç merkez I, I'dan kenarlara inen üç eşit dikme ve iç teğet çember. IA, IB, IC kesikli ve farklı uzunlukta.",
-    draw: () => {
-      const [A, B, C] = fromAngles(7, 64, 46);
-      const I = incenter(A, B, C);
-      const fs = [foot(I, B, C), foot(I, C, A), foot(I, A, B)];
-      const r = dist(I, fs[0]);
-      const a = angleAt(A, B, C);
-      return {
-        els: [
-          circle(I, r, { tone: "b", thin: true }),
-          tri(A, B, C),
-          ...[A, B, C].map((p) => seg(I, p, { tone: "muted", dash: true, thin: true })),
-          ...fs.map((f) => seg(I, f, { tone: "b" })),
-          right(fs[0], C, I, "b"),
-          right(fs[1], A, I, "b"),
-          right(fs[2], B, I, "b"),
-          ...fs.map((f) => ticks(I, f, 1, "b")),
-          ang(I, C, B, `${fmt(90 + a / 2)}°`, { r: 22, tone: "a" }),
-          pt(A, "A", "n"),
-          pt(B, "B", "sw"),
-          pt(C, "C", "se"),
-          pt(I, "I", "nw", "a"),
-        ],
-        readout: [`A = ${fmt(a)}° ⇒ ∠BIC = 90° + A/2 = ${fmt(90 + a / 2)}°`],
-      };
-    },
-  },
-  "Kenarortay ve ağırlık merkezi G": {
-    caption:
-      "Üç kenarortay G'de kesişir ve üçgeni eş alanlı altı parçaya böler. G her kenarortayı köşeden başlayarak 2:1 oranında ayırır.",
-    alt: "ABC üçgeninde üç kenarortay G'de kesişiyor; altı küçük üçgen sırayla iki renkte boyalı. AG iki, GM bir birim olarak işaretli.",
-    draw: () => {
-      const A = v(2, 5);
-      const B = v(0, 0);
-      const C = v(7, 0);
-      const G = centroid(A, B, C);
-      const Ma = mid(B, C);
-      const Mb = mid(C, A);
-      const Mc = mid(A, B);
-      const parts: [V, V][] = [
-        [A, Mc],
-        [Mc, B],
-        [B, Ma],
-        [Ma, C],
-        [C, Mb],
-        [Mb, A],
-      ];
-      return {
-        els: [
-          ...parts.map(([p, q], i) => poly([G, p, q], { fill: i % 2 ? "b" : "c", thin: true })),
-          tri(A, B, C),
-          seg(A, Ma, { tone: "a" }),
-          seg(B, Mb),
-          seg(C, Mc),
-          dim(A, G, "2k", C, "a"),
-          dim(G, Ma, "k", C, "a"),
-          pt(A, "A", "n"),
-          pt(B, "B", "sw"),
-          pt(C, "C", "se"),
-          pt(Ma, "M", "s", "a"),
-          pt(G, "G", "e", "a"),
-        ],
-        readout: ["AG : GM = 2 : 1", "Altı parçanın alanı eşit"],
-      };
-    },
-  },
   "Kenarortay uzunluğu ve dik üçgendeki özel hâl": {
     caption:
       "a = 6, b = 7, c = 5 için 4mₐ² = 2·49 + 2·25 − 36 = 112. Kenarortay AM ile yükseklik AH aynı köşeden çıksa da farklı parçalardır.",
@@ -1566,73 +1412,6 @@ const ucgenMerkezleri: Record<string, FigureDef> = {
         ],
         readout: [`OA = OB = OC = R ≈ ${fmt(R, 2)}`, `Üçgen ${kind}`],
       };
-    },
-  },
-  "Simetri ne zaman çizgileri ve merkezleri birleştirir?": {
-    caption:
-      "Eşkenar üçgende yükseklik, kenarortay ve açıortay aynı üç doğrudur; I, G, H, O tek noktada buluşur. Kenar 6 için R = 2h/3, r = h/3.",
-    alt: "Kenarı 6 olan eşkenar üçgen; üç simetri doğrusu, ortak merkez, iç teğet ve çevrel çember.",
-    draw: () => {
-      const [A, B, C] = fromAngles(6, 60, 60);
-      const G = centroid(A, B, C);
-      const h = 3 * Math.sqrt(3);
-      return {
-        els: [
-          circle(G, (2 * h) / 3, { tone: "b", thin: true, dash: true }),
-          circle(G, h / 3, { tone: "c", thin: true }),
-          tri(A, B, C),
-          ...[A, B, C].map((p, i) => {
-            const q = [mid(B, C), mid(C, A), mid(A, B)][i];
-            return seg(p, q, { tone: "a", thin: true });
-          }),
-          right(mid(B, C), C, A, "a"),
-          pt(A, "A", "n"),
-          pt(B, "B", "sw"),
-          pt(C, "C", "se"),
-          pt(G, "I = G = H = O", "e", "a"),
-        ],
-        readout: [`h = 3√3 ≈ ${fmt(h, 2)} · R = 2√3 ≈ ${fmt((2 * h) / 3, 2)} · r = √3 ≈ ${fmt(h / 3, 2)}`],
-      };
-    },
-  },
-  "Merkez seçerken hangi bilgiye ihtiyacın var?": {
-    caption:
-      "Soruda gördüğün işaret hangi doğruya gideceğini söyler: eş açı → açıortay (I), eş parça → kenarortay (G), köşeden 90° → yükseklik (H), orta noktadan 90° → orta dikme (O).",
-    alt: "Dört küçük üçgen yan yana. Birinde eş açı yayları, birinde eş parça çentikleri, birinde köşeden dik iniş, birinde orta noktadan dikme.",
-    draw: () => {
-      const mk = (x: number): [V, V, V] => [v(x + 1.1, 2.6), v(x, 0), v(x + 3, 0)];
-      const out: El[] = [];
-      const names: [string, string][] = [
-        ["eş açı", "→ I"],
-        ["eş parça", "→ G"],
-        ["köşeden 90°", "→ H"],
-        ["ortadan 90°", "→ O"],
-      ];
-      names.forEach(([n, c], i) => {
-        const [A, B, C] = mk(i * 4.4);
-        out.push(
-          tri(A, B, C),
-          txt(v(i * 4.4 + 1.5, -0.7), n, "c", { small: true }),
-          txt(v(i * 4.4 + 1.5, -1.5), c, "c", { small: true, bold: true }),
-        );
-        if (i === 0) {
-          const D = meet(A, add(A, add(unit(sub(B, A)), unit(sub(C, A)))), B, C);
-          out.push(seg(A, D, { tone: "b" }), ang(A, B, D, undefined, { tone: "b", r: 26 }), ang(A, D, C, undefined, { tone: "b", r: 32 }));
-        }
-        if (i === 1) {
-          const M = mid(B, C);
-          out.push(seg(A, M, { tone: "a" }), ticks(B, M, 1, "a"), ticks(M, C, 1, "a"));
-        }
-        if (i === 2) {
-          const H = foot(A, B, C);
-          out.push(seg(A, H, { tone: "c" }), right(H, C, A, "c"));
-        }
-        if (i === 3) {
-          const M = mid(B, C);
-          out.push(seg(M, add(M, v(0, 2.4)), { tone: "warn" }), right(M, C, add(M, v(0, 1)), "warn"));
-        }
-      });
-      return { els: out };
     },
   },
 };

@@ -2,6 +2,10 @@
 
 Her geliştirme turunda güncellenir. Sayılar yalnız gerçekten yapılmış işi gösterir; bir PDF'nin okunması, uygulamadaki içeriğin o PDF'yi tamamen kapsadığı anlamına gelmez.
 
+24 Kasım 2026 saat 15.42 UTC’de 258 klasör ve 9.984 PDF tekrar tarandı. Kanonik defter 0 tam, 6 kısmi, 0 işlenmediği doğrulanan ve 9.978 belirsiz güncel kayıt gösteriyor. 99_ÖSYM alt ağacındaki 1.002 PDF bu toplamın içinde.
+
+## 23 Kasım envanter uzlaştırması
+
 23 Kasım 2026 saat 13.37 UTC’de 258 klasörün sayfalaması tamamlandı. Güncel kanonik envanterde 9.984 benzersiz fiziksel PDF var. 99_ÖSYM alt ağacındaki 1.002 PDF bu toplamın içinde. Önceki envanterden 1.003 yeni kimlik ve 320 değişmiş dosya bilgisi işlendi. Tarihsel yedi tam aktarım kendi sürümünün kanıtıyla saklandı ve değişen sürümler yeniden incelemeye açıldı.
 
 | Güncel sürüm için defterdeki durum | PDF |
@@ -31,8 +35,8 @@ Tam aktarımı doğrulanan güncel satır sayısı sıfır. Arşivde gerçekte k
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 119 |
-| Okunduğu doğrulanan PDF toplamı (bu dal) | 119 / 8.981 (%1,33) |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 123 |
+| Okunduğu doğrulanan PDF toplamı (bu dal) | 123 / 8.981 (%1,37) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
 
@@ -44,7 +48,7 @@ Klasördeki numaralı kopya kâğıtları ders ders sayıldı (517 kopya kâğı
 | --- | ---: | ---: | ---: |
 | TYT Türkçe | 33 | 4 | %12,1 |
 | TYT Matematik | 38 | 5 | %13,2 |
-| TYT Geometri | 32 | 1 | %3,1 |
+| TYT Geometri | 32 | 5 | %15,6 |
 | TYT Fizik | 24 | 7 | %29,2 |
 | TYT Kimya | 56 | 38 | %67,9 |
 | TYT Biyoloji | 36 | 7 | %19,4 |
@@ -52,14 +56,14 @@ Klasördeki numaralı kopya kâğıtları ders ders sayıldı (517 kopya kâğı
 | TYT Coğrafya | 40 | 5 | %12,5 |
 | TYT Felsefe | 17 | 3 | %17,6 |
 | TYT Din Kültürü | 20 | 3 | %15,0 |
-| **TYT toplam** | **320** | **77** | **%24,1** |
+| **TYT toplam** | **320** | **81** | **%25,3** |
 | AYT Matematik | 17 | 2 | %11,8 |
 | AYT Geometri | 4 | 1 | %25,0 |
 | AYT Fizik | 46 | 7 | %15,2 |
 | AYT Kimya | 55 | 11 | %20,0 |
 | AYT Biyoloji | 75 | 11 | %14,7 |
 | **AYT toplam** | **197** | **32** | **%16,2** |
-| **Genel toplam** | **517** | **109** | **%21,1** |
+| **Genel toplam** | **517** | **113** | **%21,9** |
 
 Notlar: TYT Türkçe'de 028 numarası iki farklı konuda kullanılmış (33 dosya, 32 numara). TYT Kimya'da 031 aynı adla iki kez var (eski ve yeni sürüm; 55 farklı konu). TYT Matematik ve Geometri'de 000 numaralı genel özetler var. AYT klasöründeki 7 durum raporu “232 konu” diyor ama klasörlerde 197 AYT kopya kâğıdı bulunuyor; 35 konunun kopya kâğıdı Drive'da yok. Bu tablodaki sıfırlar, o derste kopya kâğıdından figür/taktik aktarılmadığını söyler; uygulamada o dersin anlatımı ve soruları yine vardır (ayrıntı aşağıdaki kapsam tablosunda).
 
@@ -184,6 +188,10 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 045 TYT Kimya – Karışım problemleri (kopya kâğıdı) | `tepkimeli-karisim` dört figürü: tıklanabilir alaşım × HCl/NaOH tablosu (2025 TYT Fen 14, cevap C: Cu–Sn), tıklanabilir gaz ve kütle doğrularının kesişimi (Mg–Zn, Mg–Al), Zn kütlesi kaydırıcısıyla olabilirlik aralığı (0,137–0,371 mol), tıklanabilir mol/kütle yüzdesi; iki bağımsız denklem taktiği | Kısmi |
 | 027 TYT Kimya – Gazlar, hâl değişim grafiği ve plazma (kopya kâğıdı) | `gazlar-hal-degisim-plazma` dört figürü: tıklanabilir I–V ısıtma bölgeleri (saf su, 1 atm), tıklanabilir ısıtma/soğutma yönü ve plato adları, 2+ iyon kaydırıcısıyla plazma yük dengesi, sıcaklık kaydırıcısıyla 2023 TYT Fen 11 cıva eşik doğrusu (cevap A); eşik–plato–yük taşıyıcısı taktiği | Kısmi |
 | 024 TYT Kimya – Katılar ve viskozite (kopya kâğıdı) | `katilar-viskozite` dört figürü: tıklanabilir kristal/amorf tanecik düzeni, tıklanabilir dört kristal türü örgüsü (NaCl, I₂, elmas, Zn; tutan etkileşim ve iletkenlik), tıklanabilir 2020 TYT Fen 11 viskozite çubukları (cevap C), tıklanabilir tek değişkenli kıyas grafiği (kurmaca A/B); tür–birim–tek değişken taktiği | Kısmi |
+| 004 TYT Geometri – Dik Üçgenler (kopya kâğıdı) | `tyt-geo-dik-ucgen-031` üç figürü yenilendi: c sürgüsüyle ters Pisagor (12, 16 sabit; yalnız c = 20 dik, kısa c dar, uzun c geniş), özel üçgenlerde üç adım (eşkenar 8 → 4, 4√3; 60° karşısı 6 → a = 2√3, hipotenüs 4√3), son denetimde 20 + 21 = 41 yol ile 29 hipotenüs; `tyt-geo-trigonometrik-oranlar-040` figürsüz bölümüne tıklanabilir 8–15–17 açı seçimi (karşı/komşu, k ile kurma, sin² + cos² = 1); kenar rolü taktiği; 2024 TYT Temel Matematik 33 mantığı | Kısmi |
+| 009 TYT Geometri – Üçgende Merkezler (kopya kâğıdı) | `tyt-geo-ucgen-merkezleri-031` dört figürü yenilendi: 12–5–13 dik üçgende tıklanabilir I / O / G / H (I = (2; 2), O = (6; 2,5), G = (4; 5/3), H = A), iç merkezde alan = r·s (12–16–20: 4 · 24 = 96) ve A'ya karşı dış teğet rₐ = 24, tepe açısı sürgülü ikizkenarda dört merkezin eksendeki yeri (60°'de buluşma, 90° ve geniş açıda O, H), koordinatta G = (2; 3) ve 2 : 1; eşit uzaklık taktiği; 2026 TYT Temel Matematik 35 mantığı | Kısmi |
+| 013 TYT Geometri – Üçgende Alan (kopya kâğıdı) | `alan-donusumleri` figürsüz son denetim bölümüne B açısı sürgülü yan kenar ≠ yükseklik figürü (12 cm, 5 cm; en çok 30 cm², geniş açıda uzantı); üç figür yenilendi: açı iki kenarın arasında (15) ve arada değil (≈ 22,1), ortak tepe oranı ve paralelde kayan tepe (alan 12 sabit), 10–17–21 üçgeninde üç taban tek alan 84 ve Heron; veri seçimi taktiği; 2024 TYT Temel Matematik 34 mantığı | Kısmi |
+| 019 TYT Geometri – Dikdörtgen (kopya kâğıdı) | `tyt-geo-paralelkenar-ozel-dortgenler-032` üç figürü yenilendi: eş köşegen, eş ama dik değil (≈ 106,3° / 73,7°), çevre 62 ve köşegen 25'ten 2ab ile alan 168; çevre 24 sabitken genişlik sürgüsü (kare 36 en büyük); aile ağacına karşı köşe kareleri (17 + 61 = 37 + 41), ortak genişlik (8h = 40) ve çerçeve (126 − 50 = 76) adımları; yarı çevre–köşegen–2ab taktiği; 2026 TYT Temel Matematik 37 mantığı | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -195,7 +203,7 @@ Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî ko
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | TYT Türkçe | 22 | 34 | 33 | 380 | 4 (%11,8) | 15 | 4 | 4 / 33 (%12,1) |
 | TYT Matematik | 31 | 45 | 40 | 735 | 17 (%37,8) | 45 | 21 | 5 / 38 (%13,2) |
-| TYT Geometri | 16 | 19 | 19 | 217 | 19 (%100,0) | 174 | 15 | 1 / 32 (%3,1) |
+| TYT Geometri | 16 | 19 | 19 | 217 | 19 (%100,0) | 174 | 15 | 5 / 32 (%15,6) |
 | TYT Fizik | 20 | 28 | 24 | 311 | 24 (%85,7) | 177 | 23 | 7 / 24 (%29,2) |
 | TYT Kimya | 17 | 57 | 55 | 535 | 41 (%71,9) | 179 | 40 | 38 / 56 (%67,9) |
 | TYT Biyoloji | 18 | 45 | 36 | 515 | 12 (%26,7) | 37 | 14 | 7 / 36 (%19,4) |
@@ -208,9 +216,9 @@ Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî ko
 | AYT Fizik | 32 | 47 | 46 | 541 | 11 (%23,4) | 26 | 15 | 7 / 46 (%15,2) |
 | AYT Kimya | 34 | 56 | 55 | 680 | 18 (%32,1) | 19 | 14 | 11 / 55 (%20,0) |
 | AYT Biyoloji | 29 | 76 | 75 | 907 | 16 (%21,1) | 39 | 12 | 11 / 75 (%14,7) |
-| **Toplam** | **341** | **540** | **505** | **6.465** | **200 (%37,0)** | **830** | **182** | **109 / 517 (%21,1)** |
+| **Toplam** | **341** | **540** | **505** | **6.465** | **200 (%37,0)** | **830** | **182** | **113 / 517 (%21,9)** |
 
-Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %37) ve kopya kâğıtlarından aktarım (%21,1). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
+Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %37) ve kopya kâğıtlarından aktarım (%21,9). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
 
 Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan konular):
 

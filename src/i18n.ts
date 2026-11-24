@@ -24,6 +24,8 @@ const messages: Record<string, string> = {
   loadError: "Kayıt açılamadı. Mevcut verinin üzerine yazılmadı.",
   online: "Çevrimdışı hazır",
   offline: "Çevrimdışı çalışıyor",
+  connected: "Bağlı",
+  disconnected: "Bağlantı yok",
   localFirst: "İlerlemen bu cihazda",
   brandNote: "Öğren. Hatırla. Keşfet.",
   heroTitle: "Bugün küçük bir adım, yarın sağlam bir bilgi.",

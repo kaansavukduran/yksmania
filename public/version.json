@@ -1,8 +1,8 @@
 {
-  "version": "0.171.0",
+  "version": "0.172.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Saydam cam, buzlu cam ve kalın metal levhayı gerçek fotoğraflarla karşılaştır. Geçen ışınları ayrı ayrı izle.",
-    "en": "Compare clear glass, frosted glass and an opaque metal sheet in credited photographs and three ray diagrams."
+    "tr": "Çevrimdışı çalışma hazır olduğunda tarayıcı açık sayfayı doğru çalışana bağlar. TYT Geometri kopya kağıtları, optik çizimler ve bir görselli soru bu adayda birlikte.",
+    "en": "Reconnect an uncontrolled page to the installed offline worker. Includes TYT geometry study sheets, optics lessons and a question with staged visuals."
   }
 }

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { APP_VERSION } from "./version";
+import { followOfflineWorker } from "./workerControl";
 import {
   BookOpen,
   Blocks,
@@ -116,6 +117,14 @@ export default function App() {
   const startLock = useRef(false);
   const [route, setRoute] = useState(() => location.hash.slice(1) || "/today");
   const [online, setOnline] = useState(navigator.onLine);
+  const webUpdates = !Capacitor.isNativePlatform() && ["http:", "https:"].includes(location.protocol);
+  const [workerControlled, setWorkerControlled] = useState(false);
+  const offlineAvailable = !webUpdates || workerControlled;
+  useEffect(() => {
+    if (!webUpdates || !("serviceWorker" in navigator)) return;
+    const scope = new URL(import.meta.env.BASE_URL, location.href).href;
+    return followOfflineWorker(navigator.serviceWorker, scope, setWorkerControlled);
+  }, [webUpdates]);
   const [menu, setMenu] = useState(false);
   const [mobile, setMobile] = useState(
     () => matchMedia("(max-width:850px)").matches,
@@ -318,10 +327,7 @@ export default function App() {
       {confirmationDialog}
       <ExamDeadlineWatcher />
       <TrophyToasts />
-      {!Capacitor.isNativePlatform() &&
-        ["http:", "https:"].includes(location.protocol) && (
-          <WebUpdates onReady={updateCallback} />
-        )}
+      {webUpdates && <WebUpdates onReady={updateCallback} />}
       <a
         className="skip-link"
         href="#main-content"
@@ -434,7 +440,9 @@ export default function App() {
             </span>
             <span className="connection">
               {online ? <Wifi size={15} /> : <WifiOff size={15} />}
-              <span>{t(online ? "online" : "offline")}</span>
+              <span>{t(offlineAvailable
+                ? (online ? "online" : "offline")
+                : (online ? "connected" : "disconnected"))}</span>
             </span>
           </div>
         </header>

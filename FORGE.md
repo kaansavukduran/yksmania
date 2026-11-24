@@ -1,3 +1,9 @@
+# Açık sayfanın çevrimdışı çalışanla bağlanması · 0.172.0 adayı
+
+0.166 GitHub CI’ında kayıt etkin ve sayfa kontrolsüz kaldı. Yeni sayfa uygulama kapsamındaki etkin çalışandan kontrolü tekrar istiyor. Üst çubuk çevrimdışı durumu sayfa gerçekten kontrol altına alındığında gösteriyor. Forge063 Geometri 004, 009, 013 ve 019 kopya kağıtları ve 15 figür aynı adayda korundu. [Önceki CI](https://github.com/kaansavukduran/yksmania/actions/runs/45424564984) · [Clients.claim](https://developer.mozilla.org/en-US/docs/Web/API/Clients/claim)
+
+Yerelde TypeScript, 6.672 kartın içerik denetimi, 333 dosyalı çevrimdışı derleme, 93 dosyada 223 birim ve 20 Chromium akışı geçti. İlk kontrol çağrısını kaybeden gerçek tarayıcı 0.166’da açılan sayfaya bağlanmadı. 0.172 aynı deneyde çalışana bağlandı, çevrimdışı yeniden açıldı ve yazı ölçeğini korudu. Önceki marka testinin kontrolleri aynı kaldı. Sıradaki fiziksel 172, basılı 170 küreye teğet iki ışın ve tam gölge.
+
 # Saydam cam, buzlu cam ve metal · 0.171.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 172, basılı 170. Üç malzeme örneğinin lisanslı fotoğrafları, ışın modeli ve seçilebilir karşılaştırma tablosu ders ile Kopya Kağıdı’na bağlandı. [OpenStax ışın modeli](https://openstax.org/books/university-physics-volume-3/pages/1-1-the-propagation-of-light)
@@ -183,6 +189,12 @@ Check, 325 dosyalı çevrimdışı derleme, 2.206 birim ve altı Chromium akış
 MEBİ TYT Fizik Konu Özetleri fiziksel 164, basılı 162. Aslan ve kanarya fotoğrafları iki örnek ses kaynağını tanıtıyor. Temsilî grafikler aynı 10 ms içinde bir ve üç salınım gösteriyor. Genlikleri eşitleme, salınım sayısını değiştirmiyor. Kopya Kağıdı genlikleri eşit olan iki çizimi hesabın kendi adımlarında açıyor.
 
 İlk 320 px ve büyük yazı görüntüsünde iki fotoğrafın düğme ve kaynak metinleri çok uzundu. Tür adı ve büyütme simgesi, kısa kaynak ve lisans bağlantılarıyla birlikte kullanılıyor. Klavyeden açma, Escape, odak dönüşü ve çevrimdışı yükleme doğrulandı. Altı Chromium akışı ve 325 dosyalı derleme geçti. Sıradaki iş aynı sayfadaki boş ve su eklenen özdeş şişeler. [Aslan fotoğrafı, Kevin Pluck, CC BY 2.0](https://commons.wikimedia.org/w/index.php?oldid=1196427540&title=File%3ALion_waiting_in_Namibia_%28cropped%29.jpg) · [Kanarya fotoğrafı, L. E. MacDonald, CC BY-SA 2.0](https://commons.wikimedia.org/w/index.php?oldid=1208751877&title=File%3ADomestic_Canary_-_Serinus_canaria.jpg)
+
+# Figürsüz ders kalmadı · 0.142.0 adayı
+
+Forge062: TYT Matematik'in 12 kaynak dersine 57 bölüm figürü; artık rehberli 510 dersin 510'u figürlü (2.241 figür). Forge063: TYT Geometri 004, 009, 013 ve 019 kopya kâğıtları 15 etkileşimli figür ve 4 taktik olarak aktarıldı (kopya 113 / 517).
+
+tsc, check, 397 dosyada 5.513 birim testi, derleme, figür ve yerleşim kapıları (16/16), anlatım ve ÖSYM marka akışları geçti. Yalnız web ve masaüstü Chromium; yerel paket ve fiziksel cihaz denenmedi.
 
 # Sesin ortamda yayılması · 0.141.0 adayı
 
@@ -995,7 +1007,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 33 · 128 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 0 |
 | TYT Matematik | 45 / 45 | 45 · 168 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 0 |
-| TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
+| TYT Geometri | 19 / 19 | 19 · 176 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 376 | 322 / 322 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 139 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 0 |
@@ -1009,19 +1021,19 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2334** | **6.672 / 6.672 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2336** | **6.672 / 6.672 · %100,00** | **113 / 517 · %21,86** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
-| Tarihsel dal kaydı: okunan veya eşlenen PDF / eski envanter | 119 / 8.981 |
+| Tarihsel dal kaydı: okunan veya eşlenen PDF / eski envanter | 123 / 8.981 |
 | Tarihsel 99_ÖSYM kaydı: uygulama karşılığı olan / 20 Kasım envanteri | 18 / 1.001 |
-| 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 76 |
+| 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 80 |
 | Kademeli çözüm paneli bulunan soru | 6.672 / 6.672 · %100,00 |
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
 | Ara hatırlama (mikro ritim): ders · soru | 505 / 510 · %99,02 · 3.052 soru |
 | Gösterim onarımı: soru alanı · ders paragrafı | 962 · 1.634 |
-| Kopya kâğıdı (kısmi aktarım / toplam) | 109 / 517 · %21,08 |
+| Kopya kâğıdı (kısmi aktarım / toplam) | 113 / 517 · %21,86 |
 | Resmî ana başlık · anlatımlı konu · hazır anlatım | 341 · 510 · 510 |
 | İleri ve kaynak soru seti (anlatımı ana konusunda) | 36 |
 <!-- ilerleme:bitir -->

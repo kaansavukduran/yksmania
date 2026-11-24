@@ -373,7 +373,7 @@ test("numeric discoveries handle zero, chain count, pH ratio, BCE and signed vel
     "8 − 3 = 5 glikozit bağı",
   );
   await open(page, "su-asit-baz-tuz");
-  const phModel = page.getByRole("slider", { name: "pH", exact: true });
+  const phModel = page.locator(".concept-model").getByRole("slider", { name: "pH", exact: true });
   const phFigure = page.locator('figure[data-section-figure="pH ölçeği eşit miktarlı bir cetvel değildir"]');
   const phComparison = phFigure.getByRole("slider", { name: "Karşılaştırılan pH", exact: true });
   await expect(phComparison).toHaveValue("4");
