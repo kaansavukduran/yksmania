@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.160.0 · Dalga halkaları ve deprem dizisi
+
+Yayın adayı. Odaktan yayılan halkaların yarıçapını zamanla değiştir. İlk sarsıntı, ana deprem ve artçının sırasını iki farklı zaman çizgisinde incele.
+
 # ÖSYM Mania 0.159.0 · Sismogram
 
 Yayın adayı. İstasyonu değiştir, P ve S başlangıçlarını saniye ekseninde oku. Kopya Kağıdı 8 km örneğinde kaydı ve iki başlangıç zamanı arasındaki farkı ayrı çiziyor.

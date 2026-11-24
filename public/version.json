@@ -1,8 +1,8 @@
 {
-  "version": "0.159.0",
+  "version": "0.160.0",
   "channel": "alpha",
   "notes": {
-    "tr": "İstasyonun uzaklığını değiştir ve örnek sismogramda P ile S’nin ilk varışlarını karşılaştır. Kopya Kağıdı kayıt ile zaman farkını ayrı çiziyor.",
-    "en": "Move the station to compare P and S arrival times. The cheat sheet shows the model record and the interval with separate drawings."
+    "tr": "Odaktan genişleyen dalga cephesini izle. Sonra deprem kayıtlarını sırayla aç ve ilk sarsıntıya ne zaman öncü denebildiğini çizimde gör.",
+    "en": "Follow the wavefront as it expands from the focus. Open the earthquake records in order to see when the first event can be called a foreshock."
   }
 }

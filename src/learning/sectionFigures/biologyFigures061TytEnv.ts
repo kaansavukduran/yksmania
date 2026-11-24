@@ -88,7 +88,7 @@ const phScale: FigureDef = {
   caption:
     "25 °C ideal sulu ortamda pH 7 nötr, altı asidik, üstü baziktir. pH ≈ −log₁₀[H⁺]: [H⁺] = 10⁻⁴ mol/L ise pH 4. Bir pH birimi on kat derişim farkıdır; iki pH sayısını bölmek derişim oranını vermez. Sürgüyle pH'yi değiştir; okuma satırı pH 7'ye göre katı aynı hesaptan verir.",
   alt: "0'dan 14'e yatay pH ekseni; 7'nin solu asidik, sağı bazik bölge. Seçilen pH'de bir işaret ve üstünde [H⁺] = 10 üssü eksi pH mol/L yazısı. Eksen boyunca her birim aralığın altında '×10'.",
-  param: { label: "pH", min: 1, max: 13, step: 1, init: 4, plain: true },
+  param: { label: "Karşılaştırılan pH", min: 1, max: 13, step: 1, init: 4, plain: true },
   draw: (pRaw) => {
     const p = Math.round(pRaw);
     const X = (x: number) => 0.4 + x * 0.8;
