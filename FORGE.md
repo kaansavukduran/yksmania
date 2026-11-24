@@ -1,3 +1,9 @@
+# ÖSYM Mania dünyası ve lore belgeleri · 0.147.0 adayı
+
+[Dünya ve Aion](docs/lore/README.md), [anlatım dili](docs/lore/anlatim-dili.md) ve [karar kaydı](docs/lore/kararlar.md) depoda bir araya getirildi. Aion’un mevcut piksel varlıkları, çalışma sahnesi ve Fragaria Interactive ibaresi belgelendi. Lore belgelerine README’den ulaşılır.
+
+İçerik sırasındaki sonraki paket, güncel YKS görev listesinden 14 konuya ait 79 YouTube bağlantısının anlatım ekranlarıyla eşleştirilmesi.
+
 # TYT Felsefe ve Din Kültürü kopya kâğıtları · 0.146.0 adayı
 
 Forge069: TYT Felsefe 013, 017 ve Din Kültürü 017, 018 kopya kâğıtları 16 etkileşimli figür ve 4 taktik olarak aktarıldı (kopya 137 / 517). Din Kültürü figürleri betimleyici ve tarafsız; ÖSYM atıfları kâğıtların beyanına dayanıyor.

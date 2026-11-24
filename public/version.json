@@ -1,8 +1,8 @@
 {
-  "version": "0.146.0",
+  "version": "0.147.0",
   "channel": "alpha",
   "notes": {
-    "tr": "TYT Felsefe'de Rönesans ve çağdaş felsefe, TYT Din Kültürü'nde Anadolu'da İslam ve tasavvufi yorumlar kopya kâğıtları argüman adımları, düşünür tabloları ve karşılaştırma figürleriyle açılıyor.",
-    "en": "Four TYT Philosophy and Religious Culture cheat sheets open as argument steps, thinker tables and comparison figures with tactics."
+    "tr": "ÖSYM Mania’nın çalışma dünyası, Aion’un rolü ve anlatım dili GitHub’daki yeni belgelerde bir araya geldi. Belgelere deponun ana sayfasından ulaşabilirsin.",
+    "en": "The repository now documents the study setting, Aion’s role and the language used throughout the app."
   }
 }
