@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { stroboscopeExample, stroboscopeTitle } from "../../src/learning/mebiStroboscope";
+import { strobeSchoolCases, stroboscopeExample, stroboscopeTitle } from "../../src/learning/mebiStroboscope";
 import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse";
 import { svgLayoutAudit } from "./helpers/svgAudit";
 
@@ -46,6 +46,13 @@ test("Kopya Kağıdı ölçümün iki adımında da doğru şekli gösterir", as
   const solution = example.locator(".cheat-solution");
   await expect(solution.getByRole("img")).toHaveCount(0);
   await solution.locator("summary").press("Enter");
-  await expect(solution.locator(`figure[data-section-figure="${stroboscopeTitle}"]`)).toHaveCount(2);
+  for (const { slots, matchedRate, solutionTitle } of strobeSchoolCases) {
+    const figure = solution.locator(`figure[data-section-figure="${solutionTitle}"]`);
+    await expect(figure.getByRole("img")).toHaveAccessibleName(
+      `${solutionTitle}: şekil ${slots} radyal yarıklı disk. İlk ve ikinci bakışta 3 cm aralıklı tepe çizgileri aynı yerde.`,
+    );
+    await expect(figure).toContainText(`${slots} × ${matchedRate} = 16 bakış/s.`);
+    await expect(figure.getByRole("slider")).toHaveCount(0);
+  }
   await expect(solution).toContainText("Her iki disk için bakışlar arası 1/16 s.");
 });

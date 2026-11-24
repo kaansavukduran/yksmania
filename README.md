@@ -4,6 +4,8 @@
 
 **Son yayımlanan web ve masaüstü sürümü 0.123.0**. Eşit gerilen iki yayda atmanın aldığı yolu ve Kopya Kağıdı’ndaki sürat hesabını çevrimdışı inceleyebilirsin. [Windows ve Linux 0.123](https://github.com/kaansavukduran/yksmania/releases/tag/v0.123.0-alpha.1) · [Önceki 0.103 sürümü](https://github.com/kaansavukduran/yksmania/releases/tag/v0.103.0-alpha.1)
 
+**0.139.0 adayı** leğenin eğimli tabanında tepe aralığının yavaş yavaş açıldığını gösteriyor. Yan kesiti ve kâğıt şeritlerini aynı ölçekte incele. Stroboskop çözümünün her adımı kendi yarık sayısıyla açılıyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+
 **0.138.0 adayı** dört ve sekiz yarıklı stroboskopta iki ardışık bakışı karşılaştırıyor. Diskin tur sayısını değiştirip 3 cm tepe aralığını ölçebilirsin. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.137.0 adayı** sığ ve derin leğenlerde aynı kaynak frekansıyla oluşan iki tepe aralığını gösteriyor. Yan kesiti, kâğıt şeritlerini ve ortak sınırı çevrimdışı karşılaştırabilirsin. [Aday kapsamı](docs/RELEASE_ALPHA.md)

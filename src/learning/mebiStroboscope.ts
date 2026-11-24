@@ -2,8 +2,8 @@ import type { GuideSection, WorkedExample } from "./guides/types";
 
 export const stroboscopeTitle = "Stroboskop görüntüsü gerçek durma değildir";
 export const strobeSchoolCases = [
-  { slots: 8, label: "8 yarık" },
-  { slots: 4, label: "4 yarık" },
+  { slots: 8, label: "8 yarık", matchedRate: 2, solutionTitle: "Sekiz yarıkla eşleşen iki bakış" },
+  { slots: 4, label: "4 yarık", matchedRate: 4, solutionTitle: "Dört yarıkla eşleşen iki bakış" },
 ] as const;
 export const strobeDiskRate = { min: 1, max: 6, step: 1, initial: 2 };
 export const strobeWaveFrequencyHz = 16;
@@ -42,8 +42,8 @@ export const stroboscopeExample: WorkedExample = {
   prompt: "Sekiz yarıklı disk saniyede iki tur atıyor. Her bakışta bir sonraki tepe öncekinin yerinde. Dalga frekansı nedir? Dört yarıkla aynı bakış aralığı için disk saniyede kaç tur atmalı?",
   strategy: "Diskin bir turda kaç bakış verdiğini yaz. İkinci durumda bir saniyedeki bakış sayısını aynı tut.",
   steps: [
-    { label: "Sekiz yarıklı diski say", explanation: "Bir tur 8 bakış verir. İki turda 16 bakış olur. Verilen eşleşmede her bakışta bir periyot ilerler.", expression: "f = 8 × 2 = 16 Hz", figureTitle: stroboscopeTitle },
-    { label: "Dört yarığa geç", explanation: "Her tur yarısı kadar bakış verdiği için tur sayısını iki katına çıkar.", expression: "fₛ = 16 ÷ 4 = 4 tur/s", figureTitle: stroboscopeTitle },
+    { label: "Sekiz yarıklı diski say", explanation: "Bir tur 8 bakış verir. İki turda 16 bakış olur. Verilen eşleşmede her bakışta bir periyot ilerler.", expression: "f = 8 × 2 = 16 Hz", figureTitle: strobeSchoolCases[0].solutionTitle },
+    { label: "Dört yarığa geç", explanation: "Her tur yarısı kadar bakış verdiği için tur sayısını iki katına çıkar.", expression: "fₛ = 16 ÷ 4 = 4 tur/s", figureTitle: strobeSchoolCases[1].solutionTitle },
   ],
   answer: "Dalga frekansı 16 Hz. Dört yarıklı disk saniyede 4 tur atar.",
   check: "8 × 2 ve 4 × 4 aynı. Her iki disk için bakışlar arası 1/16 s.",

@@ -54,6 +54,7 @@ import { sourceDistanceCm, virtualWaterAt, virtualWaterReflectionTitle, virtualW
 import { convexFocusCm, convexWater, convexWaterReflectedTitle, convexWaterTitle, surfaceNormalTitle } from "../mebiConvexWater";
 
 import { strobeDiskRate, strobeSchoolCases, strobeSnapshot, strobeWavelengthCm, stroboscopeTitle } from "../mebiStroboscope";
+import { waterSlopeAt, waterSlopePhase, waterSlopeRatio, waterSlopeTitle } from "../mebiWaterSlope";
 import { interfaceDepth, joinCm, tankLengthCm, twoTankDepthTitle, waterDepthAt, waterDepthTimes, waterDepthTitle } from "../mebiWaterDepth";
 
 /*
@@ -1269,6 +1270,52 @@ const convexWaterFigure: FigureDef = {
   },
 };
 
+const stroboscopeFigure: FigureDef = {
+  caption: "Yarıkları say. İki bakış anında tepe çizgilerinin konumunu karşılaştır. Disk süratini değiştir.",
+  alt: "Solda 8 veya 4 eş aralıklı radyal yarık. Sağda ilk iki bakıştaki paralel tepe çizgileri. Tam sayıda periyot geçince iki görüntü örtüşür.",
+  param: {
+    label: "Diskin tur sayısı",
+    min: strobeDiskRate.min, max: strobeDiskRate.max,
+    step: strobeDiskRate.step, init: strobeDiskRate.initial, unit: " tur/s",
+  },
+  steps: strobeSchoolCases.map(({ label }) => label),
+  draw: (rate, step) => {
+    const { slots } = strobeSchoolCases[step] ?? strobeSchoolCases[0];
+    const state = strobeSnapshot(slots, rate);
+    const center = v(2.6, 3.6);
+    const waveStart = 7;
+    const waveWidth = 13;
+    const wavelength = strobeWavelengthCm;
+    const look = (height: number, phase: number, label: string): El[] => [
+      poly([v(waveStart, height), v(waveStart + waveWidth, height), v(waveStart + waveWidth, height - 1.8), v(waveStart, height - 1.8)], { tone: "muted", thin: true }),
+      ...Array.from({ length: 5 }, (_, index) => waveStart + wavelength * (index + phase))
+        .filter((x) => x <= waveStart + waveWidth)
+        .map((x) => seg(v(x, height), v(x, height - 1.8), { tone: "b", bold: true })),
+      txt(v(waveStart, height + 0.38), label, "ne", { small: true }),
+    ];
+    return {
+      els: [
+        circle(center, 2.1, { tone: "ink", bold: true }),
+        ...state.shutters.map(([dx, dy]) => seg(
+          add(center, v(dx * 0.35, dy * 0.35)),
+          add(center, v(dx * 2.0, dy * 2.0)),
+          { tone: "c", bold: true }
+        )),
+        circle(center, 0.14, { tone: "ink" }),
+        txt(v(center[0], 0.75), `${slots} yarık`, "s", { small: true }),
+        ...look(6.1, 0, "İlk bakış"),
+        ...look(2.4, state.relativePhase, "İkinci bakış"),
+        ...span(v(waveStart + 2 * wavelength, 4), v(waveStart + 3 * wavelength, 4), `${wavelength} cm`, -1, "a"),
+      ],
+      readout: [
+        `${slots} × ${rate} = ${state.viewsPerSecond} bakış/s. Bakış aralığı 1/${state.viewsPerSecond} s.`,
+        `İki bakış arasında ${fmt(state.rawAdvanceCycles, 3)} periyot geçer.`,
+        state.relativePhase === 0 ? "Tepeler aynı yerlerde görünür." : "İkinci bakışta tepeler farklı yerlerde görünür.",
+      ],
+    };
+  },
+};
+
 const su: Record<string, FigureDef> = {
   [convexWaterTitle]: convexWaterFigure,
   [convexWaterReflectedTitle]: {
@@ -1603,6 +1650,47 @@ const su: Record<string, FigureDef> = {
       };
     },
   },
+  [waterSlopeTitle]: {
+    caption: "Sağdaki derinliği değiştir. Yan kesitteki tepeleri ve kâğıttaki şeritleri aynı yatay ölçekte karşılaştır.",
+    alt: "Üstte tabanı sağa doğru derinleşen leğenin profili, altta aynı tepelerin kâğıt çizgileri. Derinlik eşitken şeritler eşit aralıklı. Taban derinleştiğinde sağa doğru aralıkları büyür.",
+    param: {
+      label: "Sağ derinliğin sola oranı",
+      min: waterSlopeRatio.min, max: waterSlopeRatio.max, step: waterSlopeRatio.step, init: waterSlopeRatio.initial, unit: " kat",
+    },
+    steps: ["İlk görünüm", "Yarım periyot sonra"],
+    draw: (depth, step) => {
+      const state = waterSlopeAt(depth, waterSlopePhase[step] ?? waterSlopePhase[0]);
+      const xValues = Array.from({ length: 161 }, (_, index) => index * tankLengthCm / 160);
+      const surface = xValues.map(x => v(x, 4.55 + state.heightAt(x) * 0.51));
+      const floor = xValues.map(x => v(x, 3.45 - 0.52 * state.depthRatioAt(x)));
+      const [leftA, leftB] = state.crests.filter(x => x >= 2);
+      const [rightA, rightB] = state.crests.filter(x => x <= 22).slice(-2);
+      const paperY = 0.65;
+      const paperBottom = -0.5;
+      const dimensionY = paperBottom - 0.35;
+      return {
+        els: [
+          poly([...surface, ...[...floor].reverse()], { fill: "b", tone: "b", thin: true }),
+          poly(floor, { open: true, tone: "ink", bold: true }),
+          seg(v(0, 2.93), v(0, 5.12), { tone: "a", bold: true }),
+          txt(v(4.5, 6.15), "Giriş", "n", { tone: "a" }),
+          txt(v(19.5, 6.15), "Çıkış", "n", { tone: "c" }),
+          vec(v(4, 5.57), v(4 + state.speedAt(4) / 3, 5.57), { tone: "a" }),
+          vec(v(19, 5.57), v(19 + state.speedAt(19) / 3, 5.57), { tone: "c" }),
+          poly([v(0, paperY), v(tankLengthCm, paperY), v(tankLengthCm, paperBottom), v(0, paperBottom)], { tone: "muted", thin: true }),
+          ...state.crests.map(x => seg(v(x, paperY), v(x, paperBottom), { tone: "b", bold: true })),
+          ...state.troughs.map(x => seg(v(x, paperY), v(x, paperBottom), { tone: "muted", thin: true, dash: true })),
+          ...span(v(leftA, dimensionY), v(leftB, dimensionY), `${fmt(leftB - leftA, 2)} cm`, -1, "a"),
+          ...span(v(rightA, dimensionY), v(rightB, dimensionY), `${fmt(rightB - rightA, 2)} cm`, -1, "c"),
+        ],
+        readout: [
+          `Girişte ${fmt(state.speedAt(0))} cm/s, yerel λ ${fmt(state.entryLocalWavelength)} cm.`,
+          `Çıkışta ${fmt(state.speedAt(tankLengthCm))} cm/s, yerel λ ${fmt(state.exitLocalWavelength)} cm.`,
+          "Kaynak frekansı 4 Hz. Bir tepenin ardından yeni tepe 0,25 s sonra gelir.",
+        ],
+      };
+    },
+  },
   "Kırılma açısını normalden denetle": {
     caption:
       "Derinden (v₁ = 2 birim) sığa (v₂ = 1 birim) geçen ışının gelme açısını değiştir: sin i / sin r = v₁/v₂ = 2. Yavaş bölgeye giren ışın normale yaklaşır.",
@@ -1647,51 +1735,15 @@ const su: Record<string, FigureDef> = {
       return { els, readout: [`a/λ = ${fmt(a)}: yayılma ${a <= 1 ? "çok belirgin" : a <= 2 ? "belirgin" : "zayıf"}`] };
     },
   },
-  [stroboscopeTitle]: {
-    caption: "Yarıkları say. İki bakış anında tepe çizgilerinin konumunu karşılaştır. Disk süratini değiştir.",
-    alt: "Solda 8 veya 4 eş aralıklı radyal yarık. Sağda ilk iki bakıştaki paralel tepe çizgileri. Tam sayıda periyot geçince iki görüntü örtüşür.",
-    param: {
-      label: "Diskin tur sayısı",
-      min: strobeDiskRate.min, max: strobeDiskRate.max,
-      step: strobeDiskRate.step, init: strobeDiskRate.initial, unit: " tur/s",
-    },
-    steps: strobeSchoolCases.map(({ label }) => label),
-    draw: (rate, step) => {
-      const { slots } = strobeSchoolCases[step] ?? strobeSchoolCases[0];
-      const state = strobeSnapshot(slots, rate);
-      const center = v(2.6, 3.6);
-      const waveStart = 7;
-      const waveWidth = 13;
-      const wavelength = strobeWavelengthCm;
-      const look = (height: number, phase: number, label: string): El[] => [
-        poly([v(waveStart, height), v(waveStart + waveWidth, height), v(waveStart + waveWidth, height - 1.8), v(waveStart, height - 1.8)], { tone: "muted", thin: true }),
-        ...Array.from({ length: 5 }, (_, index) => waveStart + wavelength * (index + phase))
-          .filter((x) => x <= waveStart + waveWidth)
-          .map((x) => seg(v(x, height), v(x, height - 1.8), { tone: "b", bold: true })),
-        txt(v(waveStart, height + 0.38), label, "ne", { small: true }),
-      ];
-      return {
-        els: [
-          circle(center, 2.1, { tone: "ink", bold: true }),
-          ...state.shutters.map(([dx, dy]) => seg(
-            add(center, v(dx * 0.35, dy * 0.35)),
-            add(center, v(dx * 2.0, dy * 2.0)),
-            { tone: "c", bold: true }
-          )),
-          circle(center, 0.14, { tone: "ink" }),
-          txt(v(center[0], 0.75), `${slots} yarık`, "s", { small: true }),
-          ...look(6.1, 0, "İlk bakış"),
-          ...look(2.4, state.relativePhase, "İkinci bakış"),
-          ...span(v(waveStart + 2 * wavelength, 4), v(waveStart + 3 * wavelength, 4), `${wavelength} cm`, -1, "a"),
-        ],
-        readout: [
-          `${slots} × ${rate} = ${state.viewsPerSecond} bakış/s. Bakış aralığı 1/${state.viewsPerSecond} s.`,
-          `İki bakış arasında ${fmt(state.rawAdvanceCycles, 3)} periyot geçer.`,
-          state.relativePhase === 0 ? "Tepeler aynı yerlerde görünür." : "İkinci bakışta tepeler farklı yerlerde görünür.",
-        ],
-      };
-    },
-  },
+  [stroboscopeTitle]: stroboscopeFigure,
+  ...Object.fromEntries(strobeSchoolCases.map(({ slots, matchedRate, solutionTitle }, step) => [
+    solutionTitle,
+    {
+      caption: `${slots} yarıklı disk saniyede ${matchedRate} tur atarken iki bakıştaki tepeleri karşılaştır.`,
+      alt: `${slots} radyal yarıklı disk. İlk ve ikinci bakışta 3 cm aralıklı tepe çizgileri aynı yerde.`,
+      draw: () => stroboscopeFigure.draw(matchedRate, step),
+    } satisfies FigureDef,
+  ])),
 };
 
 export const physicsFiguresWaves: Record<string, Record<string, FigureDef>> = {

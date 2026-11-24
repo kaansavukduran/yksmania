@@ -1,8 +1,8 @@
 {
-  "version": "0.138.0",
+  "version": "0.139.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Dört ve sekiz yarıklı stroboskopta disk hızını değiştir. İki bakışın tepe konumlarından dalganın ölçülebilen aralığını karşılaştır.",
-    "en": "Change the speed of four-slot and eight-slot stroboscopes. Compare two snapshots to see when the same moving wave crests appear aligned."
+    "tr": "Leğenin sağındaki derinliği değiştir. Tepe aralığının taban eğiminde nasıl açıldığını aynı kaynak frekansında izle.",
+    "en": "Change the depth at one end of the tank. Watch the crest spacing grow over the sloped floor while the source frequency stays fixed."
   }
 }

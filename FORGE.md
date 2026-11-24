@@ -1,3 +1,9 @@
+# Eğimli leğen tabanı ve tepe ölçümü · 0.139.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 162, basılı 160. Derinlik doğrusal arttığında sürat sığ su modelinde derinliğin kareköküne göre değişiyor. Aynı kaynağın tepeleri, yan kesit ve kâğıt şeritlerinde bir arada izleniyor. Ayrı Kopya Kağıdı giriş ve çıkış için yerel dalga boyunu hesaplıyor.
+
+İlk ekran görüntüsünde eğimli taban çizgisi sağda kâğıt alanına değiyordu. Aralık artırıldı ve gerçek SVG ölçümüyle yeniden doğrulandı. İki stroboskop çözümü artık 8 ve 4 yarıklı kendi çizimleriyle açılıyor. Ekran okuyucu adı ve her adımda doğru bakış sayısı doğrulandı. Check, 323 dosyalı derleme, 2.195 birim ve altı çevrimdışı Chromium akışı geçti. 0.137 dalının tam birim kümesi 4.882/4.882 geçti. Sıradaki şekil aynı fiziksel sayfanın üç aşamalı KOL kırılması. [0.137 CI](https://github.com/kaansavukduran/yksmania/actions/runs/45369055762)
+
 # Stroboskopta iki ardışık bakış · 0.138.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 162, basılı 160. Dört ve sekiz yarıklı disk, iki ardışık bakışta aynı dalgayı gösteriyor. Her bakışta bir periyot ilerlerse 8 × 2 ve 4 × 4 eşleşmelerinin ikisinde de saniyede 16 bakış var. İki periyot ilerlediğinde de tepeler aynı yerde görünebilir. Kopya Kağıdı iki hesap adımını kendi çizimiyle açıyor.

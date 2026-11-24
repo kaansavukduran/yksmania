@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.139.0 · Eğimli tabanda dalga boyu
+
+Yayın adayı. Leğenin sağındaki derinliği değiştir. Bir tepeden diğerine olan uzaklığın yavaş yavaş açıldığını yan kesitte ve kâğıt şeritlerinde gör. Kopya Kağıdı giriş ve çıkış için sürat ile dalga boyunu hesaplıyor. Stroboskop çözümü, her adımda ilgili diski doğrudan açıyor.
+
 # ÖSYM Mania 0.138.0 · Stroboskopla tepe aralığı
 
 Yayın adayı. Disk yarıklarını ve saniyedeki tur sayısını değiştir. İki bakışta tepelerin konumlarını karşılaştır. Kopya Kağıdı 8 × 2 ve 4 × 4 durumlarında bakış aralığını adım adım hesaplıyor.
