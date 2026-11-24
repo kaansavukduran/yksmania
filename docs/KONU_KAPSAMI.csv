@@ -1,0 +1,511 @@
+﻿Sınav;Ders;Konu;Konu kimliği;Ders kimliği;Sıra;Anlatım bölümü;Çözümlü örnek;Kopya kağıdı bölümü;Kopya kağıdı örneği;Önerilen video;Alternatif video
+TYT;Kimya;Simyadan kimyaya;detail-139;simyadan-kimyaya;1;9;4;9;2;1;3
+TYT;Kimya;Kimya disiplinleri;detail-140;kimya-disiplinleri;2;6;3;6;2;1;3
+TYT;Kimya;Kimyanın sembolik dili;detail-141;sembolik-dil;3;8;4;8;2;1;3
+TYT;Kimya;Kimyada iş sağlığı ve güvenliği;detail-142;kimya-guvenlik;4;6;3;6;2;1;3
+TYT;Kimya;Atom modelleri;detail-143;atom-modelleri;5;7;3;7;2;1;3
+TYT;Matematik;Temel Kavramlar;detail-194;temel-kavramlar;6;7;4;7;2;1;5
+TYT;Matematik;Tek Çift Pozitif Negatif Sayılar;detail-195;tek-cift-isaret;7;6;4;6;2;1;5
+TYT;Matematik;Ardışık Sayılar;detail-196;ardisik-sayilar;8;6;4;6;2;1;5
+TYT;Matematik;Asal Sayılar;detail-197;asal-sayilar;9;6;4;6;2;1;6
+TYT;Matematik;Faktöriyel Kavramı;detail-198;faktoriyel;10;6;5;6;2;1;7
+TYT;Biyoloji;Canlıların Karakteristik Özellikleri;detail-1;canli-ozellikleri;11;20;6;20;6;1;5
+TYT;Biyoloji;Bilimsel Yöntem ve Çalışma Basamakları;detail-2;bilimsel-yontem;12;22;6;22;6;1;4
+TYT;Biyoloji;Mineraller;detail-3;mineraller;13;22;6;22;6;1;3
+TYT;Matematik;Sayı Basamakları;detail-199;sayi-basamaklari;14;18;6;18;6;1;6
+TYT;Tarih;Tarih ve Zaman;detail-226;tarih-zaman;15;15;4;15;4;1;4
+TYT;Tarih;İnsanlığın İlk Dönemleri;detail-227;insanligin-ilk-donemleri;16;20;6;20;6;1;3
+TYT;Fizik;Fizik Bilimine Giriş;detail-114;fizik-bilimine-giris;17;22;8;22;8;1;5
+TYT;Fizik;Madde bilgisi;detail-115;madde-ozkutle;18;24;8;24;8;1;4
+TYT;Fizik;Doğrusal hareket;detail-116;dogrusal-hareket;19;24;8;24;8;1;4
+TYT;Tarih;Orta Çağda Dünya;detail-228;ortacag-dunya;20;22;6;22;6;1;3
+TYT;Tarih;İlk ve Orta Çağlarda Türk Dünyası;detail-229;ilk-turk-dunyasi;21;20;6;20;6;2;3
+TYT;Biyoloji;Su, Asit-Baz ve Tuz;detail-4;su-asit-baz-tuz;22;22;6;22;6;1;3
+TYT;Biyoloji;Karbohidratlar;detail-5;karbohidratlar;23;18;6;18;6;1;6
+TYT;Biyoloji;Lipitler - Yağlar;detail-6;lipitler;24;18;6;18;6;1;5
+TYT;Tarih;İslam Medeniyetinin Doğuşu;detail-230;islam-medeniyetinin-dogusu;25;20;6;20;6;2;2
+TYT;Tarih;Türklerin İslamiyeti Kabulü;detail-231;turklerin-islamiyeti-kabulu;26;20;6;20;6;2;3
+TYT;Biyoloji;Proteinler;detail-7;proteinler;27;20;6;20;6;1;5
+TYT;Kimya;Atomun temel tanecikleri;detail-144;atomun-temel-tanecikleri;28;20;6;20;6;1;3
+TYT;Kimya;Atom türleri izotop izoton izobar izoelektronik;detail-145;izotop-izoton-izobar;29;20;6;20;6;1;3
+TYT;Kimya;Periyodik cetvel genel özellikler;detail-146;periyodik-sistem;30;7;4;7;2;1;3
+TYT;Fizik;Newton hareket yasaları;detail-117;newton;31;12;6;12;4;1;3
+TYT;Fizik;Enerji ve hareket;detail-118;enerji-ve-hareket;32;31;15;31;15;1;4
+TYT;Matematik;Bölme Bölünebilme Kuralları;detail-200;bolme-bolunebilme;33;18;6;18;6;1;6
+TYT;Matematik;Ebob Ekok;detail-201;ebob-ekok;34;18;6;18;6;1;6
+TYT;Matematik;Rasyonel Sayılar;detail-202;rasyonel-sayilar;35;10;6;10;2;1;6
+TYT;Türkçe;Ses bilgisi;detail-250;ses-bilgisi;36;11;12;11;2;1;4
+TYT;Türkçe;Sözcükte yapı;detail-251;sozcukte-yapi;37;12;12;12;2;1;5
+TYT;Biyoloji;Enzimler;detail-8;enzimler;38;20;6;20;6;2;5
+TYT;Biyoloji;Vitaminler;detail-9;vitaminler;39;20;6;20;6;1;5
+TYT;Matematik;Birinci Dereceden Denklemler;detail-203;birinci-dereceden-denklemler;40;6;5;6;2;1;6
+TYT;Matematik;Basit Eşitsizlikler;detail-204;basit-esitsizlikler;41;7;5;7;2;1;7
+TYT;Tarih;Yerleşme ve Devletleşme Sürecinde Selçuklu;detail-232;selcuklu-yerlesme-devletlesme;42;20;6;20;6;1;4
+TYT;Kimya;Katman elektron dizilimi;detail-147;katman-elektron-dizilimi;43;6;3;6;2;1;2
+TYT;Tarih;Beylikten Devlete Osmanlı Siyaseti;detail-233;osmanli-kurulus-siyaseti;44;15;4;15;4;1;5
+TYT;Tarih;Devletleşme Sürecinde Savaşçılar ve Askerler;detail-234;osmanli-askeri-teskilat;45;15;4;15;4;1;3
+TYT;Kimya;Elementlerin sınıflandırılması;detail-148;elementlerin-siniflandirilmasi;46;6;3;6;2;1;3
+TYT;Kimya;Atom çapı karşılaştırma;detail-149;atom-capi-karsilastirma;47;6;3;6;2;1;3
+TYT;Kimya;İyonlaşma enerjisi;detail-150;iyonlasma-enerjisi;48;6;3;6;2;1;3
+TYT;Kimya;Elektron ilgisi / elektronegatiflik / metalik ametalik özellik;detail-151;elektron-ilgisi-elektronegatiflik;49;6;3;6;2;1;3
+TYT;Tarih;Beylikten Devlete Osmanlı Medeniyeti;detail-235;osmanli-medeniyeti;50;16;4;16;4;1;3
+TYT;Tarih;Dünya Gücü Osmanlı;detail-236;dunya-gucu-osmanli;51;13;5;13;2;2;5
+TYT;Kimya;Kimyasal türler / lewis yapısı;detail-152;kimyasal-turler-lewis;52;12;6;12;2;1;3
+TYT;Fizik;Isı ve sıcaklık;detail-119;isi-ve-sicaklik;53;14;10;14;6;1;4
+TYT;Biyoloji;Nükleik Asitler DNA ve RNA;detail-10;nukleik-asitler;54;11;6;11;2;1;3
+AYT;Biyoloji;ATP ve Metabolizma;detail-283;atp-metabolizma;55;7;4;7;2;1;3
+TYT;Biyoloji;Hücre Organelleri;detail-11;hucre-organelleri;56;8;4;8;2;2;7
+TYT;Kimya;Güçlü etkileşimler / iyonik bağ;detail-153;iyonik-bag-ve-guclu-etkilesimler;57;8;4;8;2;1;3
+TYT;Kimya;İyonik bileşiklerin sistematik adlandırılması;detail-154;iyonik-bilesik-adlandirma;58;8;4;8;2;1;4
+TYT;Kimya;Kovalent bağ / polar apolar bağ;detail-155;kovalent-bag-polar-apolar;59;10;5;10;2;1;3
+TYT;Kimya;Moleküllerde polarlık apolarlık;detail-156;molekullerde-polarlik-apolarlik;60;10;5;10;2;1;4
+TYT;Fizik;Genleşme;detail-120;genlesme;61;8;4;8;2;1;4
+TYT;Fizik;Isı ve Sıcaklık: Hâl Değişimi;detail-121;hal-degisimi;62;9;7;9;4;1;3
+TYT;Matematik;Mutlak Değer;detail-205;mutlak-deger;63;8;5;8;2;1;7
+TYT;Matematik;Üslü Sayılar;detail-206;uslu-sayilar;64;9;4;9;2;1;7
+TYT;Biyoloji;Hücre Zarında Madde Alışverişleri;detail-12;hucre-zarinda-madde-alisverisleri;65;10;4;10;2;2;4
+TYT;Biyoloji;Canlıların Sınıflandırılması;detail-13;canlilarin-siniflandirilmasi;66;10;4;10;2;1;4
+TYT;Fizik;Durgun elektrik;detail-122;durgun-elektrik;67;10;6;10;4;1;3
+TYT;Fizik;Elektrik akımı;detail-123;elektrik-akimi;68;12;7;16;5;1;4
+TYT;Türkçe;İsimler / isim tamlaması;detail-252;isimler-isim-tamlamasi;69;11;5;11;2;1;4
+TYT;Türkçe;Sıfatlar;detail-253;sifatlar;70;11;5;11;2;1;4
+TYT;Türkçe;Zamirler;detail-254;zamirler;71;10;5;10;2;1;4
+TYT;Matematik;Bilimsel Gösterim ve Katsayı;detail-207;bilimsel-gosterim-katsayi;72;11;8;11;2;1;2
+TYT;Fizik;Mıknatıslar ve manyetik alan;detail-124;miknatislar-ve-manyetik-alan;73;8;4;8;2;1;3
+TYT;Tarih;Sultan ve Osmanlı Merkez Teşkilatı;detail-237;sultan-osmanli-merkez-teskilati;74;10;4;10;2;1;3
+TYT;Tarih;Klasik Çağda Osmanlı Toplum Düzeni;detail-238;klasik-cag-osmanli-toplum-duzeni;75;10;4;10;2;1;3
+TYT;Tarih;Değişen Dünya Dengeleri Osmanlı;detail-239;degisen-dunya-dengeleri-osmanli;76;11;4;11;2;1;3
+TYT;Matematik;Köklü Sayılar;detail-208;koklu-sayilar;77;16;7;16;2;1;7
+TYT;Matematik;Oran Orantı;detail-209;oran-oranti;78;15;7;15;2;1;7
+TYT;Matematik;Sayı Problemleri;detail-210;sayi-problemleri;79;12;5;12;2;1;7
+TYT;Biyoloji;Virüsler;detail-14;virusler;80;8;4;8;2;1;4
+TYT;Biyoloji;Bakteri ve Arke;detail-15;bakteri-ve-arke;81;8;4;8;2;1;4
+TYT;Biyoloji;Protista;detail-16;protista;82;8;4;8;2;1;4
+TYT;Biyoloji;Bitki;detail-17;bitkiler;83;8;4;8;2;1;5
+TYT;Biyoloji;Mantar;detail-18;mantarlar;84;8;4;8;2;1;4
+TYT;Biyoloji;Omurgasızlar;detail-19;omurgasizlar;85;10;4;10;2;1;3
+TYT;Biyoloji;Omurgalılar;detail-20;omurgalilar;86;10;4;10;2;1;2
+TYT;Matematik;Kesir Problemleri;detail-211;kesir-problemleri;87;14;5;14;2;1;7
+TYT;Tarih;Değişim Çağında Avrupa ve Osmanlı;detail-240;degisim-caginda-avrupa-osmanli;88;10;4;10;2;2;4
+TYT;Tarih;Devrimler Çağında Değişen Devlet Toplum;detail-241;devrimler-caginda-devlet-toplum;89;10;4;10;2;1;4
+TYT;Tarih;Uluslararası İlişkilerde Denge Stratejisi;detail-242;denge-stratejisi;90;10;4;10;2;2;3
+TYT;Tarih;XIX ve XX. Yüzyılda Değişen Sosyoekonomik Hayat;detail-243;degisen-sosyoekonomik-hayat;91;10;4;10;2;1;3
+TYT;Kimya;Kovalent bileşiklerde isimlendirme / metalik bağ;detail-157;kovalent-adlandirma-metalik-bag;92;8;4;8;2;1;3
+TYT;Türkçe;Zarflar;detail-255;zarflar;93;10;5;10;2;1;3
+TYT;Biyoloji;Hücre Bölünmeleri - Mitoz;detail-21;mitoz;94;10;4;10;2;1;5
+TYT;Biyoloji;Eşeysiz Üreme;detail-22;eseysiz-ureme;95;10;4;10;2;1;5
+TYT;Biyoloji;Hücre Bölünmeleri - Mayoz;detail-23;mayoz;96;10;4;10;2;1;6
+TYT;Kimya;Zayıf etkileşimler;detail-158;zayif-etkilesimler;97;8;4;8;2;1;3
+TYT;Kimya;Hidrojen bağı;detail-159;hidrojen-bagi;98;8;4;8;2;1;3
+TYT;Tarih;20.Yüzyıl Başlarında Osmanlı ve Dünya;detail-244;yirminci-yuzyil-baslarinda-osmanli;99;12;4;12;2;2;4
+TYT;Fizik;Basınç;detail-125;basinc;100;31;20;35;19;1;4
+TYT;Fizik;Sıvılarda kaldırma kuvveti;detail-126;sivilarin-kaldirma-kuvveti;101;12;8;16;5;1;4
+TYT;Fizik;Dalgalara giriş;detail-127;dalgalara-giris;102;24;17;24;15;1;3
+TYT;Fizik;Yay dalgaları;detail-128;yay-dalgalari;103;17;14;17;12;1;4
+TYT;Kimya;Fiziksel ve Kimyasal Değişimler;detail-160;fiziksel-kimyasal-degisimler;104;8;4;8;2;1;2
+TYT;Kimya;Maddenin halleri;detail-161;maddenin-halleri;105;10;5;10;2;1;3
+TYT;Matematik;Yaş Problemleri;detail-212;yas-problemleri;106;15;6;15;2;1;7
+TYT;Matematik;Yüzde Problemleri;detail-213;yuzde-problemleri;107;15;8;15;2;1;7
+TYT;Matematik;Kar Zarar Problemleri;detail-214;kar-zarar-problemleri;108;15;7;15;2;1;7
+TYT;Matematik;Faiz Problemleri;detail-215;faiz-problemleri;109;14;7;14;7;1;1
+TYT;Matematik;Karışım Problemleri;detail-216;karisim-problemleri;110;14;6;14;6;1;7
+TYT;Tarih;Milli Mücadele Dönemi;detail-245;milli-mucadele;111;10;4;10;4;6;4
+TYT;Kimya;Katılar / viskozite;detail-162;katilar-viskozite;112;9;4;9;4;1;4
+TYT;Kimya;Buharlaşma / buhar basıncı;detail-163;buharlasma-buhar-basinci;113;8;4;8;4;1;3
+TYT;Kimya;Kaynama , bağıl nem , sıvılar karma test;detail-164;kaynama-bagil-nem;114;9;4;9;4;1;3
+TYT;Tarih;Atatürkçülük ve Türk İnkılabı;detail-246;ataturkculuk-inkilap;115;10;4;10;4;3;3
+TYT;Kimya;Gazlar , hal değişim grafiği , plazma;detail-165;gazlar-hal-degisim-plazma;116;9;4;9;4;1;3
+TYT;Türkçe;Edat / bağlaç / ünlem;detail-256;edat-baglac-unlem;117;10;5;10;5;1;4
+TYT;Biyoloji;Eşeyli Üreme;detail-24;eseyli-ureme;118;8;4;8;4;1;5
+TYT;Biyoloji;Kalıtıma Giriş;detail-25;kalitima-giris;119;8;4;8;4;1;5
+TYT;Biyoloji;Mendel Genetiği;detail-26;mendel-genetigi;120;8;4;8;4;1;5
+TYT;Matematik;İşçi Problemleri;detail-217;isci-problemleri;121;15;6;15;6;1;7
+TYT;Matematik;İşçi - Havuz Problemleri;detail-218;havuz-problemleri;122;15;6;15;6;1;7
+TYT;Matematik;Hız Problemleri;detail-219;hiz-problemleri;123;15;6;15;6;1;7
+TYT;Türkçe;Fiiller;detail-257;fiiller;124;10;5;10;5;1;4
+TYT;Kimya;Doğa ve kimya;detail-166;doga-ve-kimya;125;9;4;9;4;1;3
+TYT;Türkçe;Fiilde çatı;detail-258;fiilde-cati;126;10;5;10;5;1;3
+TYT;Fizik;Su dalgaları;detail-129;su-dalgalari;127;19;16;19;16;1;4
+TYT;Fizik;Ses ve deprem dalgaları;detail-130;ses-deprem-dalgalari;128;11;7;11;7;1;4
+TYT;Fizik;Işık bilgisi;detail-131;isik-bilgisi;129;8;4;8;4;1;3
+TYT;Fizik;Gölge ve yarı gölge;detail-132;golge-yari-golge;130;8;4;8;4;1;3
+TYT;Fizik;Düzlem ayna;detail-133;duzlem-ayna;131;8;4;8;4;1;2
+TYT;Tarih;İki Savaş Arasındaki Dönemde Türkiye ve Dünya;detail-247;iki-savas-arasi-turkiye-dunya;132;10;4;10;4;2;2
+TYT;Tarih;İki Küresel Savaş Arasında Türkiye ve Dünya;detail-248;kuresel-savaslar-arasinda-turkiye-dunya;133;9;4;9;4;1;1
+TYT;Biyoloji;Mendel'den Sapmalar;detail-27;mendelden-sapmalar;134;8;4;8;4;1;4
+TYT;Biyoloji;Kan Grupları;detail-28;kan-gruplari;135;8;4;8;4;1;4
+TYT;Biyoloji;Eşeyin Belirlenmesi X ve Y Kromozomları;detail-29;eseyin-belirlenmesi;136;8;4;8;4;1;5
+TYT;Biyoloji;Soy Ağaçları;detail-30;soy-agaclari;137;8;4;8;4;1;3
+TYT;Tarih;II. Dünya Savaşı Sürecinde ve Sonrasında Türkiye ve Dünya;detail-249;ikinci-dunya-savasi-sonrasi;138;10;4;10;4;1;1
+TYT;Kimya;Su, Hayat ve Çevre Kimyası;detail-167;su-hayat-cevre;139;9;4;9;4;3;2
+TYT;Kimya;Kütle korunumu ve sabit oranlar kanunu;detail-168;kutle-korunumu-sabit-oran;140;9;4;9;4;1;4
+TYT;Kimya;Sabit oranlar kanunu sınırlayıcı ( aşırı ) madde problemleri;detail-169;sinirlayici-artan-madde;141;9;4;9;4;1;2
+TYT;Kimya;Katlı oranlar kanunu;detail-170;katli-oranlar;142;9;4;9;4;1;3
+TYT;Kimya;Mol kavramı mol tanecik ilişkisi;detail-171;mol;143;8;5;8;5;1;4
+TYT;Kimya;Mol tanecik ilişkisi;detail-172;mol-tanecik-iliskisi;144;9;4;9;4;1;3
+TYT;Coğrafya;Doğa ve insan - Coğrafyanın Bölümleri;detail-37;doga-insan-cografya;145;8;4;8;4;1;2
+TYT;Coğrafya;Coğrafyanın Tarihi Gelişimi;detail-38;cografyanin-tarihi-gelisimi;146;8;8;8;8;1;1
+TYT;Coğrafya;Yerel saat ve hesaplama;detail-39;yerel-saat;147;8;6;8;6;1;1
+TYT;Matematik;Grafik Problemleri;detail-220;grafik-problemleri;148;15;6;15;6;1;6
+TYT;Matematik;Çarpanlara Ayırma;detail-221;carpanlara-ayirma;149;17;12;17;12;1;5
+TYT;Matematik;Kümeler;detail-222;kumeler;150;12;6;12;6;1;7
+TYT;Kimya;Mol kütle ilişkisi;detail-173;mol-kutle-iliskisi;151;9;4;9;4;1;3
+TYT;Biyoloji;Ekoloji Giriş;detail-31;ekoloji-giris;152;8;4;8;4;1;4
+TYT;Biyoloji;Besin Piramidi;detail-32;besin-piramidi;153;8;4;8;4;1;3
+TYT;Biyoloji;Besin Zinciri ve Ağı;detail-33;besin-zinciri-agi;154;8;4;8;4;1;3
+TYT;Biyoloji;Madde Döngüleri;detail-34;madde-donguleri;155;10;4;10;4;1;3
+TYT;Biyoloji;Güncel Çevre Sorunları;detail-35;guncel-cevre-sorunlari;156;9;4;9;4;1;3
+TYT;Biyoloji;Doğal kaynaklar ve sürdürebilirlik;detail-36;dogal-kaynaklar-surdurulebilirlik;157;9;4;9;4;1;2
+TYT;Coğrafya;Atmosferin Katmanları ve Özellikleri;detail-40;atmosfer-katmanlari;158;8;4;8;4;1;2
+TYT;Coğrafya;Sıcaklık;detail-41;cografya-sicaklik;159;8;6;8;6;1;3
+TYT;Fizik;Küresel aynalar;detail-134;kuresel-aynalar;160;8;4;8;4;1;4
+TYT;Coğrafya;Basınç ve Rüzgarlar;detail-42;basinc-ruzgarlar;161;8;5;8;5;1;3
+TYT;Coğrafya;Nem ve Yağış;detail-43;nem-yagis;162;8;4;8;4;1;3
+TYT;Matematik;Kümeler: Kartezyen Çarpım;detail-223;kartezyen-carpim;163;12;6;12;6;1;5
+TYT;Matematik;Mantık Önerme;detail-224;mantik-onerme;164;14;6;14;6;1;6
+TYT;Fizik;Işığın kırılması;detail-135;isigin-kirilmasi;165;8;4;8;4;1;1
+TYT;Fizik;Mercekler;detail-136;mercekler;166;8;4;8;4;1;4
+TYT;Fizik;Prizmalar ve renkler;detail-137;prizmalar-renkler;167;8;4;8;4;1;2
+TYT;Türkçe;Ek fiil;detail-259;ek-fiil;168;8;4;8;4;1;3
+TYT;Türkçe;Fiilimsiler;detail-260;fiilimsiler;169;8;4;8;4;1;4
+AYT;Biyoloji;Genetik Çeşitlilik;detail-284;genetik-cesitlilik;170;8;4;8;4;1;2
+AYT;Biyoloji;Sinir Sistemi Nöron ve Glialar;detail-285;sinir-sistemi-noron-ve-glialar;171;8;4;8;4;1;3
+AYT;Biyoloji;Sinir Sistemi Aksiyon Potansiyeli;detail-286;sinir-sistemi-aksiyon-potansiyeli;172;8;4;8;4;1;4
+AYT;Biyoloji;Sinir Sistemi Ön Beyin;detail-287;sinir-sistemi-on-beyin;173;8;4;8;4;1;3
+AYT;Fizik;Vektörler;detail-358;vektorler;174;8;4;8;4;2;6
+TYT;Kimya;Gerçek kütle / AKB / normal koşullarda hacim;detail-174;gercek-kutle-akb-nk;175;8;4;8;4;1;3
+TYT;Kimya;Kimyasal tepkimeler ve denklemler;detail-175;tepkimeler-denklemler;176;8;4;8;4;1;4
+TYT;Kimya;Kimyasal tepkime türleri;detail-176;tepkime-turleri;177;8;4;8;4;1;3
+TYT;Kimya;Denklemli miktar geçiş hesaplamaları;detail-177;denklemli-miktar-gecisi;178;8;4;8;4;1;4
+TYT;Kimya;Sınırlayıcı bileşen hesaplamaları;detail-178;sinirlayici-bilesen;179;8;4;8;4;2;3
+TYT;Kimya;Kimyasal hesaplamalar katı kütlesi değişim problemleri;detail-179;kati-kutlesi-degisimi;180;8;4;8;4;1;1
+TYT;Coğrafya;Büyük İklim Tipleri;detail-44;buyuk-iklim-tipleri;181;8;4;8;4;1;3
+TYT;Coğrafya;Türkiye İklimi;detail-45;turkiye-iklimi;182;8;4;8;4;1;3
+TYT;Coğrafya;Dünyanın Tektonik oluşumu;detail-46;dunyanin-tektonik-olusumu;183;9;4;9;4;1;2
+TYT;Türkçe;Cümlenin öğeleri;detail-261;cumlenin-ogeleri;184;8;4;8;4;1;4
+TYT;Türkçe;Cümle türleri;detail-262;cumle-turleri;185;8;4;8;4;1;4
+AYT;Biyoloji;Sinir Sistemi Orta ve Arka Beyin;detail-288;sinir-sistemi-orta-arka-beyin;186;8;4;8;4;1;3
+AYT;Biyoloji;Sinir Sistemi Omurilik;detail-289;sinir-sistemi-omurilik;187;8;4;8;4;1;3
+AYT;Biyoloji;Sinir Sistemi ÇSS ve Hastalıklar;detail-290;sinir-sistemi-css-hastaliklar;188;8;4;8;4;1;3
+TYT;Kimya;Yüzde verim hesaplama;detail-180;yuzde-verim;189;8;4;8;4;1;5
+TYT;Kimya;Safsızlık problemleri;detail-181;safsizlik-problemleri;190;8;4;8;4;1;4
+AYT;Fizik;Bağıl hareket;detail-359;bagil-hareket;191;8;4;8;4;1;4
+TYT;Kimya;Atom kütlesi hesaplama problemleri;detail-182;atom-kutlesi-hesaplari;192;8;4;8;4;1;2
+TYT;Kimya;Kimyasal hesaplamalar karışım problemleri;detail-183;tepkimeli-karisim;193;8;4;8;4;1;4
+TYT;Kimya;Karışımların sınıflandırılması / çözünme süreci;detail-184;karisim-sinif-cozunme;194;8;4;8;4;1;5
+TYT;Kimya;Çözeltilerde derişim;detail-185;cozelti-derisimi;195;8;4;8;4;1;4
+AYT;Fizik;Nehir problemleri;detail-360;nehir-problemleri;196;8;4;8;4;1;3
+TYT;Matematik;Veri Analizi (İstatistik);detail-225;veri-analizi;197;15;8;15;8;1;3
+TYT;Coğrafya;İç kuvvetler;detail-47;ic-kuvvetler;198;8;4;8;4;1;3
+TYT;Coğrafya;Kayaçlar;detail-48;cografya-kayaclar;199;8;4;8;4;1;3
+TYT;Coğrafya;Türkiye'de iç kuvvetler;detail-49;turkiye-ic-kuvvetler;200;8;4;8;4;1;2
+TYT;Coğrafya;Dış kuvvetler Akarsular;detail-50;dis-kuvvetler-akarsular;201;8;4;8;4;1;2
+AYT;Biyoloji;Endokrin Sistem Hipotalamus;detail-291;endokrin-hipotalamus;202;10;4;10;4;1;3
+AYT;Biyoloji;Endokrin Sistem Hipofiz;detail-292;endokrin-hipofiz;203;9;4;9;4;1;4
+AYT;Biyoloji;Endokrin Sistem Tiroit;detail-293;endokrin-tiroit;204;10;4;10;4;1;4
+TYT;Coğrafya;Dış kuvvetler Karstik şekiller;detail-51;karstik-sekiller;205;8;4;8;4;1;1
+TYT;Coğrafya;Rüzgar ve buzul;detail-52;ruzgar-ve-buzul;206;8;4;8;4;1;2
+TYT;Coğrafya;Dalga ve Akıntılar - Kıyı tipleri;detail-53;dalga-akinti-kiyi-tipleri;207;8;4;8;4;1;2
+TYT;Kimya;Koligatif özellikler / karışımların ayrılması;detail-186;koligatif-ayirma;208;15;4;15;4;1;6
+TYT;Kimya;Asit baz ve tuzlar genel özellikler;detail-187;asit-baz-tuz-ozellikleri;209;12;4;12;4;1;5
+TYT;Kimya;Asit baz tepkimeleri;detail-188;asit-baz-tepkimeleri;210;12;4;12;4;1;4
+AYT;Fizik;Newton hareket yasaları;detail-361;ayt-newton-hareket-yasalari;211;10;4;10;4;2;1
+AYT;Fizik;Bir boyutta sabit ivmeli hareket;detail-362;bir-boyutta-sabit-ivmeli-hareket;212;9;4;9;4;1;4
+AYT;Biyoloji;Endokrin Sistem Paratiroit;detail-294;endokrin-paratiroit;213;9;4;9;4;1;4
+AYT;Biyoloji;Endokrin Sistem Böbrek Üstü Bezi;detail-295;endokrin-bobrek-ustu;214;10;4;10;4;1;4
+AYT;Biyoloji;Endokrin Sistem Pankreas;detail-296;endokrin-pankreas;215;9;4;9;4;1;3
+AYT;Biyoloji;Endokrin Sistem Epifiz;detail-297;endokrin-epifiz;216;9;4;9;4;1;2
+AYT;Biyoloji;Duyu Organları Deri;detail-298;duyu-organlari-deri;217;10;4;10;4;1;3
+AYT;Biyoloji;Duyu Organları Dil Burun;detail-299;duyu-organlari-dil-burun;218;9;4;9;4;1;3
+AYT;Biyoloji;Duyu Organları Göz;detail-300;duyu-organlari-goz;219;12;4;12;4;2;4
+TYT;Türkçe;Yazım kuralları;detail-263;yazim-kurallari;220;20;6;20;6;1;5
+TYT;Türkçe;Noktalama işaretleri;detail-264;noktalama-isaretleri;221;18;6;18;6;1;5
+TYT;Coğrafya;Türkiye'de Dış Kuvvetler;detail-54;turkiye-dis-kuvvetler;222;8;4;8;4;1;3
+TYT;Coğrafya;Türkiye'nin yer şekilleri;detail-55;turkiye-yer-sekilleri;223;8;4;8;4;1;2
+TYT;Coğrafya;Dünya'da sular;detail-56;dunyada-sular;224;8;4;8;4;1;2
+AYT;Fizik;Bir boyutta sabit ivmeli hareket grafikleri;detail-363;sabit-ivmeli-hareket-grafikleri;225;9;4;9;4;1;1
+AYT;Biyoloji;Duyu Organları Kulak;detail-301;duyu-organlari-kulak;226;10;4;10;4;1;3
+AYT;Biyoloji;Destek Hareket Sistemi Kemik;detail-302;destek-hareket-kemik;227;12;4;12;4;1;3
+AYT;Biyoloji;Destek Hareket Sistemi Kıkırdak ve Eklem;detail-303;destek-hareket-kikirdak-eklem;228;10;4;10;4;1;3
+TYT;Kimya;Asit ve bazların metallerle tepkimeleri;detail-189;asit-baz-metaller;229;12;4;12;4;1;3
+TYT;Kimya;Hayatımızdaki asit ve bazlar;detail-190;hayatimizda-asit-baz;230;13;4;13;4;1;4
+TYT;Kimya;Sabun, Deterjan ve Temizlik Maddeleri;detail-191;sabun-deterjan-temizlik;231;13;4;13;4;1;3
+TYT;Türkçe;Anlatım bozuklukları;detail-265;anlatim-bozukluklari;232;18;6;18;6;1;4
+AYT;Fizik;Atış hareketleri serbest düşme ve limit hız;detail-364;serbest-dusme-limit-hiz;233;10;4;10;4;1;2
+AYT;Fizik;Düşey atış hareketleri;detail-365;dusey-atis;234;10;4;10;4;1;2
+TYT;Coğrafya;Türkiye'de sular;detail-57;turkiye-sulari;235;13;4;13;4;1;1
+TYT;Coğrafya;Dünya'da topraklar;detail-58;dunya-topraklari;236;12;4;12;4;1;3
+AYT;Fizik;Yatay atış hareketi;detail-366;yatay-atis;237;10;4;10;4;1;3
+AYT;Fizik;Eğik atış hareketi;detail-367;egik-atis;238;10;4;10;4;1;3
+TYT;Kimya;Polimerler, Kozmetik Ürünler ve İlaçlar;detail-192;polimer-kozmetik-ilac;239;12;4;12;4;1;3
+TYT;Kimya;Polimer - hazır gıda - ilaç - yağ;detail-193;polimer-gida-ilac-yag;240;12;4;12;4;1;3
+AYT;Biyoloji;Destek Hareket Sistemi Kas Doku;detail-304;kas-doku;241;15;4;15;4;2;4
+AYT;Fizik;Enerji ve hareket;detail-368;ayt-enerji-hareket;242;15;4;15;4;2;2
+AYT;Kimya;Modern atom teorisi / elektron dizilimi;detail-408;ayt-modern-atom-elektron-dizilimi;243;10;4;10;4;2;4
+AYT;Kimya;Kuantum sayıları;detail-409;ayt-kuantum-sayilari;244;10;4;10;4;1;3
+AYT;Kimya;Periyodik sisteme giriş ve atom çapı;detail-410;ayt-periyodik-sistem-atom-capi;245;10;4;10;4;1;4
+TYT;Coğrafya;Türkiye'de topraklar;detail-59;turkiye-topraklari;246;13;4;13;4;1;2
+TYT;Coğrafya;Dünya'da bitkiler;detail-60;dunya-bitkileri;247;12;4;12;4;1;3
+TYT;Coğrafya;Türkiye'de bitkiler;detail-61;turkiye-bitkileri;248;13;4;13;4;1;2
+TYT;Coğrafya;Dünya'da Yerleşmeler;detail-62;dunya-yerlesmeleri;249;12;4;12;4;1;2
+TYT;Coğrafya;Türkiye'de Yerleşmeler;detail-63;turkiye-yerlesmeleri;250;13;4;13;4;1;3
+TYT;Coğrafya;Nüfusun önemi ve özellikleri;detail-64;nufus-onemi-ozellikleri;251;15;4;15;4;1;2
+AYT;Kimya;İyonlaşma enerjisi / elektron ilgisi / elektronegatiflik;detail-411;ayt-iyonlasma-elektron-ilgisi-en;252;10;4;10;4;1;4
+AYT;Kimya;Metalik ametalik özellik, elementleri tanıyalım,yükseltgenme basamağı;detail-412;ayt-elementler-yukseltgenme;253;12;4;12;4;1;5
+AYT;Kimya;Gazların özellikleri ve gaz yasaları;detail-413;ayt-gaz-ozellikleri;254;10;4;10;4;1;6
+AYT;Kimya;Gaz yasaları;detail-414;ayt-gaz-yasalari;255;12;4;12;4;2;4
+AYT;Biyoloji;Sindirim Sistemi Ağız Yutak Yemek Borusu;detail-305;sindirim-agiz-yutak-yemek-borusu;256;12;4;12;4;1;4
+AYT;Biyoloji;Sindirim Sistemi Mide;detail-306;sindirim-mide;257;12;4;12;4;1;3
+TYT;Türkçe;Sözcükte anlam;detail-266;sozcukte-anlam;258;21;6;21;6;1;4
+AYT;Biyoloji;Sindirim Sistemi Bağırsaklar;detail-307;sindirim-bagirsaklar;259;10;4;10;4;1;3
+AYT;Biyoloji;Sindirim Sistemi Enzimler ve Hormonal Düzenleme;detail-308;sindirim-enzimler-hormonlar;260;10;4;10;4;1;3
+AYT;Biyoloji;Sindirim Sistemi Karaciğer ve Safra Kesesi;detail-309;sindirim-karaciger-safra;261;11;4;11;4;1;3
+TYT;Türkçe;Deyimler ve Atasözleri;detail-267;deyimler-ve-atasozleri;262;12;4;12;4;1;1
+TYT;Türkçe;Cümlede anlam;detail-268;cumlede-anlam;263;21;4;21;4;1;4
+AYT;Fizik;İtme ve momentum;detail-369;itme-momentum;264;10;4;10;4;3;4
+AYT;Fizik;Kesişen kuvvetlerin dengesi;detail-370;kesisen-kuvvetler-dengesi;265;10;4;10;4;2;3
+AYT;Biyoloji;Sindirim Sistemi Pankreas;detail-310;sindirim-pankreas;266;10;4;10;4;1;3
+AYT;Biyoloji;Dolaşım Sistemi Kalp;detail-311;dolasim-kalp;267;10;4;10;4;2;4
+AYT;Biyoloji;Dolaşım Sistemi Damarlar ve Starling;detail-312;dolasim-damarlar-starling;268;10;4;10;4;1;3
+AYT;Fizik;Tork ve denge;detail-371;tork-denge;269;10;4;10;4;2;4
+AYT;Kimya;Kinetik teori, ideal gaz denklemi, yoğunluk;detail-415;ayt-kinetik-yogunluk;270;12;4;12;4;1;7
+AYT;Kimya;Kısmi basınç/gaz karışımları/gazların su üstünde toplanması;detail-416;ayt-kismi-basinci-suustu;271;12;4;12;4;1;6
+AYT;Kimya;Gerçek gaz / ideal gaz / faz diyagramı / kritik sıcaklık;detail-417;ayt-gercek-gaz-faz;272;12;4;12;4;1;4
+TYT;Coğrafya;Dünya'da nüfusun dağılışı;detail-65;dunya-nufus-dagilisi;273;13;4;13;4;1;2
+TYT;Coğrafya;Nüfus piramitleri;detail-66;nufus-piramitleri;274;10;4;10;4;1;3
+TYT;Coğrafya;Türkiye'de nüfus;detail-67;turkiye-nufusu;275;13;4;13;4;1;3
+AYT;Fizik;Kütle ve ağırlık merkezi;detail-372;kutle-agirlik-merkezi;276;10;4;10;4;2;4
+AYT;Kimya;Çözücü çözünen etkileşimleri ve çözeltilerde derişim;detail-418;ayt-cozucu-cozunen;277;11;4;11;4;1;6
+AYT;Kimya;Molarite;detail-419;ayt-molarite;278;10;4;10;4;1;4
+AYT;Kimya;Molarite / iyon derişimi;detail-420;ayt-iyon-derisimi;279;12;4;12;4;1;4
+TYT;Coğrafya;Dünya ve Türkiye'de göçler;detail-68;dunya-turkiye-gocler;280;15;4;15;4;1;3
+TYT;Coğrafya;Ekonomik faaliyetler;detail-69;ekonomik-faaliyetler;281;12;4;12;4;1;2
+TYT;Geometri;Noktanın Analitiği;detail-138;noktanin-analitigi;282;18;6;18;6;1;4
+TYT;Türkçe;Paragrafa Giriş;detail-269;paragrafa-giris;283;16;4;16;4;1;3
+AYT;Fizik;Basit makineler;detail-373;basit-makineler-ayt;284;12;4;12;4;3;4
+AYT;Fizik;Elektriksel kuvvet;detail-374;elektriksel-kuvvet-ayt;285;12;4;12;4;1;4
+AYT;Biyoloji;Dolaşım Sistemi Kan Doku;detail-313;dolasim-kan-doku;286;11;4;11;4;1;3
+AYT;Biyoloji;Lenf Sistemi;detail-314;lenf-sistemi;287;10;4;10;4;1;5
+AYT;Biyoloji;Bağışıklık Sistemi;detail-315;bagisiklik-sistemi;288;13;4;13;4;2;5
+TYT;Türkçe;Paragrafta ana düşünce;detail-270;paragraf;289;17;8;17;8;1;3
+TYT;Türkçe;Paragrafta yardımcı düşünce;detail-271;yardimci-dusunce;290;15;4;15;4;1;3
+AYT;Geometri;Doğrunun Analitiği;detail-404;dogrunun-analitigi;291;20;8;20;8;1;4
+AYT;Biyoloji;Solunum Sistemi Organlar;detail-316;solunum-organlar;292;13;4;13;4;1;4
+AYT;Biyoloji;Solunum Sistemi Soluk Alışverişi;detail-317;soluk-alisverisi;293;12;4;12;4;1;2
+TYT;Coğrafya;Bölge ve bölge türleri;detail-70;bolge-turleri;294;12;4;12;4;1;3
+TYT;Coğrafya;Ulaşım;detail-71;ulasim-aglari;295;14;4;14;4;1;2
+AYT;Kimya;Molalite /koligatif özellikler;detail-421;ayt-molalite-koligatif;296;10;4;10;4;1;3
+AYT;Kimya;Çözünürlük;detail-422;ayt-cozunurluk;297;10;4;10;4;1;4
+AYT;Kimya;Kimyasal tepkimelerde enerji;detail-423;ayt-tepkimelerde-enerji;298;10;4;10;4;1;4
+TYT;Coğrafya;Çevre ve Toplum;detail-72;cevre-toplum;299;21;4;21;4;1;3
+TYT;Coğrafya;Afetler;detail-73;afetler-risk;300;23;4;23;4;1;2
+AYT;Fizik;Elektriksel alan;detail-375;elektrik-alan;301;16;8;16;8;1;4
+AYT;Fizik;Elektriksel potansiyel enerji;detail-376;elektriksel-potansiyel-enerji;302;10;4;10;4;1;4
+AYT;Kimya;Entalpi / bağ enerjileri/hess yasası;detail-424;ayt-entalpi-bag-hess;303;11;4;11;4;1;4
+AYT;Kimya;Kimyasal tepkimelerde hız;detail-425;ayt-tepkime-hizi;304;12;4;12;4;3;4
+AYT;Biyoloji;Solunum Sistemi Gazların Taşınması;detail-318;solunum-gaz-tasinmasi;305;12;4;12;4;1;4
+AYT;Biyoloji;Üriner Sistem Organlar;detail-319;uriner-organlar;306;13;4;13;4;1;3
+AYT;Biyoloji;Üriner Sistem Nefronun İşleyişi;detail-320;nefron-isleyisi;307;15;4;15;4;1;3
+AYT;Biyoloji;Üreme Sistemi Erkek Üreme Organları;detail-321;erkek-ureme-organlari;308;14;4;14;4;1;4
+AYT;Kimya;Kimyasal tepkimelerde denge;detail-426;kimyasal-denge;309;20;9;20;9;1;4
+AYT;Kimya;Denge hesaplamaları;detail-427;ayt-denge-hesaplari;310;11;4;11;4;1;4
+AYT;Kimya;Dengeye etki eden faktörler/derişim etkisi;detail-428;ayt-denge-derisim;311;10;4;10;4;1;1
+AYT;Kimya;Dengeye etki eden faktörler/sıcaklık etkisi/denge kesri;detail-429;ayt-denge-sicaklik-kesir;312;11;4;11;4;1;4
+AYT;Fizik;Elektriksel potansiyel;detail-377;elektriksel-potansiyel;313;10;4;10;4;1;4
+AYT;Fizik;Düzgün elektrik alan ve paralel levhalar;detail-378;duzgun-alan-paralel-levhalar;314;12;4;12;4;1;3
+AYT;Fizik;Sığaçlar-kondansatörler;detail-379;sigaclar-kondansatorler;315;12;4;12;4;1;3
+TYT;Türkçe;Paragrafta ikiye bölme;detail-272;ikiye-bolme;316;15;4;15;4;1;1
+TYT;Türkçe;Paragrafta akışı bozan cümleler;detail-273;akisi-bozan-cumle;317;15;4;15;4;1;1
+AYT;Fizik;Manyetik alan;detail-380;manyetik-alan-ayt;318;12;4;12;4;1;3
+AYT;Biyoloji;Üreme Sistemi Kadın Üreme Organları;detail-322;ureme-kadin-organlar;319;11;4;11;4;1;3
+AYT;Biyoloji;Üreme Sistemi Gametogenez;detail-323;ureme-gametogenez;320;12;4;12;4;1;2
+AYT;Biyoloji;Üreme Sistemi Menstrual Döngü;detail-324;ureme-menstrual-dongu;321;12;4;12;4;1;2
+TYT;Coğrafya;Dünya'nın şekli ve hareketleri;detail-74;dunya-sekli-hareket;322;19;4;19;4;1;2
+TYT;Coğrafya;Coğrafi konum;detail-75;cografi-konum;323;15;4;15;4;1;2
+TYT;Coğrafya;Harita bilgisi;detail-76;harita-bilgisi;324;20;4;20;4;1;3
+AYT;Kimya;Dengeye etki eden faktörler/basınç-hacim etkisi;detail-430;ayt-denge-basinc-hacim;325;12;4;12;4;1;2
+AYT;Kimya;Sulu çözeltilerde denge/asit baz dengesi;detail-431;ayt-sulu-asit-baz-denge;326;12;4;12;4;1;4
+TYT;Felsefe;Felsefeyi Tanıma;detail-97;felsefeyi-tanima;327;20;4;20;4;1;3
+TYT;Felsefe;Felsefe ile Düşünme;detail-98;felsefe-ile-dusunme;328;16;4;16;4;1;3
+TYT;Felsefe;Varlık Felsefesi;detail-99;varlik-felsefesi;329;19;4;19;4;1;2
+AYT;Biyoloji;Üreme Sistemi Embriyonik Gelişim;detail-325;ureme-embriyonik-gelisim;330;16;4;16;4;1;4
+AYT;Biyoloji;Komünite Ekolojisi;detail-326;ekoloji-komunite;331;19;4;19;4;3;4
+AYT;Fizik;Manyetik kuvvet;detail-381;manyetik-kuvvet;332;12;4;12;4;1;4
+AYT;Fizik;Elektromanyetik indüksiyon;detail-382;elektromanyetik-induksiyon;333;14;4;14;4;1;3
+AYT;Fizik;Alternatif akım;detail-383;alternatif-akim;334;14;4;14;4;1;4
+AYT;Fizik;Transformatör;detail-384;transformatorler;335;12;4;12;4;1;2
+AYT;Fizik;Çembersel hareket;detail-385;cembersel-hareket;336;16;4;16;4;3;4
+AYT;Kimya;Zayıf asit bazlarda denge tampon çözeltiler tuzlarda asitlik bazlık;detail-432;ayt-zayif-asit-baz-tampon;337;12;4;12;4;1;4
+AYT;Kimya;Hidroliz;detail-433;ayt-hidroliz;338;12;4;12;4;1;3
+AYT;Kimya;Nötralleşme tepkimeleri;detail-434;ayt-notrallesme;339;12;4;12;4;1;3
+AYT;Biyoloji;Popülasyon Ekolojisi;detail-327;ekoloji-populasyon;340;14;4;14;4;2;4
+AYT;Biyoloji;Nükleik Asitler;detail-328;nukleik-asitler-yapi;341;16;4;16;4;1;5
+AYT;Biyoloji;Kalıtım Molekülünün Keşfi;detail-329;kalitim-molekulu-kesfi;342;11;4;11;4;1;4
+AYT;Biyoloji;DNA Replikasyonu;detail-330;dna-eslenmesi;343;17;8;17;8;1;5
+TYT;Felsefe;Bilgi Felsefesi;detail-100;bilgi-felsefesi;344;21;4;21;4;1;2
+TYT;Felsefe;Bilim Felsefesi;detail-101;bilim-felsefesi;345;20;4;20;4;1;2
+TYT;Felsefe;Ahlak Felsefesi;detail-102;ahlak-felsefesi;346;23;4;23;4;1;2
+AYT;Kimya;Titrasyon;detail-435;ayt-titrasyon;347;12;4;12;4;1;3
+AYT;Kimya;ÇÖZÜNÜRLÜK DENGESİ / MOLAR ÇÖZÜNÜRLÜK Kç İLİŞKİSİ;detail-436;ayt-cozunurluk-dengesi;348;12;4;12;4;1;4
+AYT;Fizik;Dönerek öteleme hareketi;detail-386;donerek-oteleme-hareketi;349;13;4;13;4;1;3
+AYT;Geometri;Dönüşümler: Öteleme ve Dönme;detail-405;donusum-oteleme-donme;350;15;6;15;6;1;3
+AYT;Geometri;Dönüşümler: Yansıma ve Simetri;detail-406;donusum-yansima-simetri;351;12;4;12;4;1;3
+AYT;Geometri;Çemberin analitiği;detail-407;cemberin-analitigi;352;14;4;14;4;2;5
+AYT;Matematik;Fonksiyonlar;detail-463;ayt-fonksiyonlar;353;20;4;20;4;1;7
+TYT;Felsefe;Din Felsefesi;detail-103;din-felsefesi;354;18;4;18;4;1;1
+TYT;Felsefe;Siyaset Felsefesi;detail-104;siyaset-felsefesi;355;22;4;22;4;1;2
+TYT;Felsefe;Sanat Felsefesi;detail-105;sanat-felsefesi;356;20;4;20;4;1;2
+AYT;Kimya;Çözünürlük dengesine etki eden faktörler/sıcaklık ve ortak iyon etkisi;detail-437;cozunurluk-faktorleri;357;14;4;14;4;1;3
+AYT;Kimya;Elektrokimya redox denkleştirme;detail-438;redoks-denklestirme;358;16;4;16;4;2;4
+TYT;Türkçe;Paragrafta sıralama;detail-274;paragrafta-siralama;359;14;4;14;4;1;2
+TYT;Türkçe;Paragrafta cümle ekleme;detail-275;paragrafta-cumle-ekleme;360;14;4;14;4;1;1
+TYT;Türkçe;Paragrafta boşluk doldurma;detail-276;paragrafta-bosluk-doldurma;361;14;4;14;4;1;2
+AYT;Biyoloji;Kodon Antikodon İlişkisi;detail-331;ayt-kodon-antikodon;362;12;4;12;4;1;1
+AYT;Biyoloji;Protein Sentezi;detail-332;ayt-protein-sentezi;363;12;4;12;4;1;6
+AYT;Biyoloji;Biyoteknoloji;detail-333;ayt-biyoteknoloji;364;18;4;18;4;2;6
+AYT;Biyoloji;Fotosentez: Genel Kurallar;detail-334;ayt-fotosentez-genel;365;12;4;12;4;1;5
+AYT;Fizik;Açısal momentum;detail-387;acisal-momentum;366;12;4;12;4;1;4
+AYT;Fizik;Newton genel çekim yasası;detail-388;newton-genel-cekim-yasasi;367;14;4;14;4;1;2
+AYT;Fizik;Kepler yasaları;detail-389;kepler-yasalari;368;13;4;13;4;1;4
+AYT;Matematik;Polinomlar;detail-464;ayt-polinomlar;369;14;4;14;4;1;7
+AYT;Biyoloji;Fotosentez: Tepkimeler;detail-335;ayt-fotosentez-tepkimeler;370;14;4;14;4;1;4
+AYT;Biyoloji;Fotosentez: Çevresel ve Genetik Faktörler;detail-336;fotosentez-hiz-faktorleri;371;15;6;15;6;1;2
+TYT;Felsefe;Felsefi Okuma ve Yazma;detail-106;felsefi-okuma-ve-yazma;372;12;4;12;4;1;2
+TYT;Felsefe;İlk Çağ Felsefesi;detail-107;ilk-cag-felsefesi;373;21;4;21;4;1;2
+TYT;Felsefe;Orta Çağ Felsefesi;detail-108;orta-cag-felsefesi;374;21;4;21;4;1;2
+AYT;Biyoloji;Kemosentez;detail-337;kemosentez-enerji-karbon;375;14;6;14;6;1;4
+AYT;Biyoloji;Oksijenli Solunum;detail-338;solunum-oksijenli-bilanco;376;18;6;18;6;1;3
+AYT;Biyoloji;Oksijensiz Solunum;detail-339;solunum-oksijensiz-alicilar;377;14;6;14;6;1;3
+AYT;Kimya;Elektrokimya aktiflik;detail-439;metalik-aktiflik;378;16;4;16;4;1;3
+AYT;Matematik;2.Dereceden Denklemler;detail-465;ayt-ikinci-dereceden-denklemler;379;18;7;18;7;1;7
+AYT;Matematik;Karmaşık Sayılar;detail-466;ayt-karmasik-sayilar;380;16;6;16;6;1;5
+AYT;Kimya;Elektrokimyasal piller;detail-440;elektrokimyasal-piller;381;17;4;17;4;1;3
+AYT;Kimya;Pil gerilimine etki eden faktörler ve derişim pilleri;detail-441;pil-gerilimi-derisim-pilleri;382;15;4;15;4;1;5
+AYT;Kimya;Elektroliz;detail-442;elektroliz;383;15;4;15;4;1;4
+AYT;Fizik;Basit harmonik hareket;detail-390;basit-harmonik-hareket;384;18;6;18;6;3;4
+TYT;Türkçe;Paragrafta anlatım biçimleri;detail-277;paragrafta-anlatim-bicimleri;385;18;4;18;4;1;4
+TYT;Felsefe;Rönesans Felsefesi;detail-109;ronesans-felsefesi;386;16;4;16;4;1;2
+TYT;Felsefe;15–17. Yüzyıl Felsefesi: Hümanizm, Bilimsel Yöntem, Kartezyen Düşünce ve Hukuk Felsefesi;detail-110;15-17-yuzyil-felsefesi;387;28;6;28;6;2;1
+TYT;Felsefe;Aydınlanma Felsefesi;detail-111;aydinlanma-felsefesi;388;18;4;18;4;1;2
+TYT;Felsefe;18–19. Yüzyıl Felsefesi: Akıl-Deney ve Birey-Devlet İlişkisi;detail-112;18-19-yuzyil-felsefesi;389;29;6;29;6;2;1
+AYT;Kimya;Elektroliz faraday yasaları;detail-443;faraday-yasalari;390;15;4;15;4;1;3
+AYT;Kimya;Korozyon, Katodik Koruma;detail-444;korozyon-katodik-koruma;391;15;4;15;4;1;2
+AYT;Kimya;Karbon kimyasına giriş;detail-445;karbon-kimyasina-giris;392;21;6;21;6;1;3
+AYT;Kimya;Basit ve Molekül Formül;detail-446;basit-ve-molekul-formul;393;18;9;18;9;1;2
+AYT;Kimya;Hibritleşme;detail-447;hibritlesme;394;18;6;18;6;1;3
+AYT;Kimya;Molekül geometrisi;detail-448;molekul-geometrisi;395;21;7;21;7;1;3
+TYT;Felsefe;Çağdaş Felsefe;detail-113;cagdas-felsefe;396;35;8;35;8;1;2
+AYT;Matematik;Eşitsizlikler;detail-467;ayt-esitsizlikler;397;16;7;16;7;1;5
+AYT;Matematik;Parabol;detail-468;ayt-parabol;398;20;9;20;9;1;6
+AYT;Fizik;Su dalgalarında kırınım;detail-391;su-dalgalarinda-kirinim;399;13;4;13;4;1;3
+AYT;Fizik;Su dalgalarında girişim;detail-392;su-dalgalarinda-girisim;400;15;5;15;5;1;3
+AYT;Matematik;Trigonometri;detail-469;ayt-trigonometri;401;35;14;35;14;1;7
+AYT;Kimya;Alkanlar;detail-449;alkanlar;402;28;10;28;10;2;3
+AYT;Biyoloji;Fermentasyon;detail-340;ayt-fermantasyon;403;12;4;12;4;2;4
+AYT;Biyoloji;Fotosentez - solunum ilişkisi;detail-341;ayt-fotosentez-solunum;404;13;4;13;4;1;3
+AYT;Biyoloji;Bitkisel Dokular - Meristem Doku;detail-342;ayt-meristem-doku;405;13;4;13;4;1;2
+AYT;Biyoloji;Bitkisel Dokular - Temel Doku;detail-343;ayt-temel-doku;406;13;4;13;4;1;2
+AYT;Biyoloji;Bitkisel Dokular - İletim Doku;detail-344;ayt-iletim-doku;407;13;4;13;4;1;2
+TYT;Din Kültürü;Bilgi ve inanç;detail-77;bilgi-ve-inanc;408;22;4;22;4;1;3
+TYT;Din Kültürü;Din ve islam;detail-78;din-ve-islam;409;20;4;20;4;1;2
+TYT;Din Kültürü;İslam ve ibadet;detail-79;islam-ve-ibadet;410;22;4;22;4;1;3
+TYT;Din Kültürü;Ahlak ve değerler - ahlaki tutum ve davranışlar;detail-80;ahlaki-tutum-ve-davranislar;411;24;4;24;4;1;2
+AYT;Kimya;Sikloalkanlar ve izomerlik;detail-450;ayt-sikloalkanlar;412;18;5;18;5;1;3
+AYT;Kimya;Alkenler;detail-451;ayt-alkenler;413;18;5;18;5;2;3
+TYT;Din Kültürü;Gençlik ve Değerler;detail-81;genclik-ve-degerler;414;16;4;16;4;1;0
+TYT;Din Kültürü;Gönül coğrafyamız;detail-82;gonul-cografyamiz;415;23;4;23;4;1;1
+AYT;Matematik;Toplam-Fark ve Yarım Açı Formülleri;detail-470;ayt-toplam-fark-yarim-aci;416;14;6;14;6;1;4
+AYT;Fizik;Işık teorileri;detail-393;isik-teorileri;417;19;6;19;6;2;3
+AYT;Fizik;Doppler etkisi;detail-394;doppler-etkisi;418;14;6;14;6;1;3
+AYT;Fizik;Elektromanyetik dalgalar;detail-395;elektromanyetik-dalgalar;419;16;6;16;6;1;4
+AYT;Fizik;Atom modelleri;detail-396;atom-modelleri-fizik;420;22;6;22;6;3;3
+AYT;Matematik;Trigonometrik Denklemler;detail-471;ayt-trigonometrik-denklemler;421;16;6;16;6;1;3
+TYT;Türkçe;Paragrafta soru cevap;detail-278;paragrafta-soru-cevap;422;18;6;18;6;1;2
+TYT;Türkçe;Paragrafta röportaj;detail-279;paragrafta-roportaj;423;20;6;20;6;1;2
+AYT;Biyoloji;Bitkisel Dokular - Örtü Doku;detail-345;bitki-ortu-doku;424;18;6;18;6;1;2
+AYT;Kimya;Alkinler;detail-452;ayt-alkinler;425;19;5;19;5;2;3
+AYT;Kimya;Aromatik bileşikler /arenler;detail-453;ayt-arenler;426;17;5;17;5;1;3
+AYT;Kimya;Fonksiyonel gruplar / alkoller;detail-454;ayt-alkoller;427;25;5;25;5;1;3
+AYT;Matematik;Logaritma;detail-472;ayt-logaritma;428;18;6;18;6;1;7
+TYT;Din Kültürü;Din ve hayat;detail-83;din-ve-hayat;429;25;4;25;4;1;1
+TYT;Din Kültürü;Hz. muhammed ve gençler;detail-84;hz-muhammed-ve-gencler;430;22;6;22;6;1;1
+TYT;Din Kültürü;Allah ve insan ilişkisi;detail-85;allah-ve-insan-iliskisi;431;23;6;23;6;1;1
+TYT;Din Kültürü;İslam düşüncesinde mezhepler;detail-86;islam-dusuncesinde-mezhepler;432;23;6;23;6;1;2
+TYT;Din Kültürü;Kur'ana göre hz.muhammed;detail-87;kur-ana-gore-hz-muhammed;433;20;6;20;6;1;2
+AYT;Biyoloji;Bitkisel Organlar - Kök;detail-346;bitki-kok-anatomisi;434;20;6;20;6;1;3
+AYT;Matematik;Diziler;detail-473;ayt-diziler;435;16;6;16;6;1;7
+AYT;Matematik;Limit ve süreklilik;detail-474;ayt-limit-sureklilik;436;18;6;18;6;1;5
+TYT;Din Kültürü;Kur'anda geçen bazı kavramlar;detail-88;kur-anda-gecen-bazi-kavramlar;437;24;6;24;6;1;2
+TYT;Din Kültürü;İnanç ile ilgili meseleler;detail-89;inanc-ile-ilgili-meseleler;438;25;6;25;6;1;1
+TYT;Din Kültürü;Dünya ve ahiret;detail-90;dunya-ve-ahiret;439;20;6;20;6;1;1
+TYT;Türkçe;Paragrafta çoklu sorular;detail-280;paragrafta-coklu-sorular;440;18;6;18;6;1;3
+TYT;Türkçe;Paragrafta konu;detail-281;paragrafta-konu;441;18;6;18;6;1;2
+AYT;Biyoloji;Bitkisel Organlar - Gövde;detail-347;ayt-govde-yapisi;442;18;6;18;6;1;3
+AYT;Biyoloji;Bitkisel Organlar - Yaprak;detail-348;ayt-yaprak-yapisi;443;19;6;19;6;1;3
+AYT;Biyoloji;Bitkilerde Madde Taşınması;detail-349;bitki-madde-tasinmasi;444;22;6;22;6;1;7
+AYT;Biyoloji;Bitkilerde Stoma, Nodül ve Mikoriza;detail-350;stoma-nodul-mikoriza;445;18;6;18;6;1;3
+AYT;Fizik;Bigbang teorisi ve atomaltı parçacıklar;detail-397;buyuk-patlama-atomalti;446;20;6;20;6;1;2
+AYT;Fizik;Radyoaktivite;detail-398;radyoaktivite;447;18;6;18;6;1;4
+AYT;Matematik;Türev Alma Kuralları;detail-475;ayt-turev-alma-kurallari;448;18;10;18;10;1;5
+AYT;Matematik;Türevin Geometrik Yorumu;detail-476;turev-teget;449;19;12;19;12;1;5
+AYT;Fizik;Modern fizik izafiyet teorisi;detail-399;ozel-gorelilik;450;18;6;18;6;1;2
+AYT;Fizik;Siyah cisim ışıması ve foton;detail-400;siyah-cisim-foton;451;16;6;16;6;1;2
+AYT;Fizik;Fotoelektrik olay;detail-401;fotoelektrik-olay;452;18;6;18;6;1;4
+AYT;Biyoloji;Bitkisel Hormonlar;detail-351;bitki-hormonlari;453;18;6;18;6;1;6
+AYT;Biyoloji;Bitkilerde Hareket;detail-352;bitkilerde-hareket;454;18;6;18;6;1;7
+AYT;Biyoloji;Fotoperiyodizm;detail-353;bitki-fotoperiyodizm;455;16;6;16;6;1;2
+AYT;Biyoloji;Bitkilerde Üreme Çiçek Yapısı;detail-354;cicek-yapisi-ureme;456;20;6;20;6;1;3
+AYT;Biyoloji;Bitkilerde Üreme Tozlaşma;detail-355;bitki-tozlasma;457;18;6;18;6;1;4
+TYT;Din Kültürü;Yahudilik ve hristiyanlık;detail-91;yahudilik-ve-hristiyanlik;458;26;6;26;6;1;2
+TYT;Din Kültürü;İslam ve bilim;detail-92;islam-ve-bilim;459;25;6;25;6;1;0
+TYT;Din Kültürü;Anadoluda islam;detail-93;anadoluda-islam;460;24;6;24;6;1;0
+AYT;Kimya;Alkollerin eldesi ve kimyasal tepkimeleri;detail-455;ayt-alkol-eldesi-tepkimeleri;461;20;5;20;5;1;3
+AYT;Kimya;Eterler;detail-456;ayt-eterler;462;18;5;18;5;1;3
+AYT;Kimya;Aldehit ve ketonlar;detail-457;ayt-aldehit-keton;463;22;5;22;5;2;3
+AYT;Kimya;Karboksilik asitler;detail-458;ayt-karboksilik-asitler;464;22;5;22;5;1;3
+AYT;Kimya;Esterler;detail-459;ayt-esterler;465;20;5;20;5;1;3
+AYT;Fizik;Compton Saçılması ve De Broglie Dalga Boyu;detail-402;compton-debroglie;466;18;6;18;6;1;4
+AYT;Fizik;Modern fiziğin teknolojideki uygulamaları;detail-403;modern-fizik-teknoloji;467;25;6;25;6;1;4
+TYT;Türkçe;Metin, Tablo ve Görsel Yorumlama;detail-282;metin-tablo-gorsel-yorumlama;468;18;6;18;6;1;1
+AYT;Matematik;Belirsiz İntegral;detail-477;ayt-belirsiz-integral;469;14;6;14;6;1;3
+AYT;Matematik;Belirli İntegral;detail-478;ayt-belirli-integral;470;14;6;14;6;1;3
+AYT;Matematik;Alan ve Riemann;detail-479;ayt-alan-riemann;471;15;6;15;6;1;5
+AYT;Kimya;Enerji Kaynakları ve Bilimsel Gelişmeler;detail-460;ayt-enerji-kaynaklari-gelismeler;472;24;6;24;6;1;3
+TYT;Din Kültürü;İslam düşüncesinde tasavvufi yorumlar;detail-94;islam-dusuncesinde-tasavvufi-yorumlar;473;29;6;29;6;1;1
+TYT;Din Kültürü;Güncel dini meseleler;detail-95;guncel-dini-meseleler;474;31;6;31;6;1;0
+TYT;Din Kültürü;Hint ve çin dinleri;detail-96;hint-ve-cin-dinleri;475;34;6;34;6;1;1
+AYT;Kimya;Sürdürülebilirlik ve Geri Dönüşüm;detail-461;ayt-surdurulebilirlik-geri-donusum;476;22;6;22;6;1;2
+AYT;Kimya;Nanoteknoloji ve Bilimsel Gelişmeler;detail-462;ayt-nanoteknoloji-gelismeler;477;18;6;18;6;1;2
+AYT;Biyoloji;Bitkilerde Döllenme ve Çimlenme;detail-356;bitkilerde-dollenme-cimlenme;478;24;8;24;8;1;5
+AYT;Biyoloji;Canlılar ve Çevre;detail-357;canlilar-ve-cevre;479;24;8;24;8;1;3
+TYT;Geometri;Temel açılar ve paralel doğrular;topic-tyt-geo-temel-acilar-031;tyt-geo-temel-acilar-031;480;7;3;5;2;1;7
+TYT;Geometri;Üçgende açılar;topic-tyt-geo-ucgende-acilar-031;tyt-geo-ucgende-acilar-031;481;9;5;6;4;3;16
+TYT;Geometri;Üçgen eşitsizliği ve açı–kenar ilişkisi;topic-tyt-geo-ucgen-esitsizligi-031;tyt-geo-ucgen-esitsizligi-031;482;10;4;6;3;1;4
+TYT;Geometri;Dik üçgen: Pisagor ve Öklid;topic-tyt-geo-dik-ucgen-031;tyt-geo-dik-ucgen-031;483;8;4;5;2;1;6
+TYT;Geometri;Üçgenlerde eşlik ve benzerlik;topic-tyt-geo-eslik-benzerlik-031;tyt-geo-eslik-benzerlik-031;484;8;3;5;2;3;8
+TYT;Geometri;Üçgende yardımcı elemanlar ve merkezler;topic-tyt-geo-ucgen-merkezleri-031;tyt-geo-ucgen-merkezleri-031;485;11;4;5;2;3;11
+TYT;Geometri;Çokgenler: açı, köşegen ve düzgünlük;topic-tyt-geo-cokgenler-032;tyt-geo-cokgenler-032;486;10;4;5;2;1;3
+TYT;Geometri;Dörtgenlerin özellikleri ve aile ilişkileri;topic-tyt-geo-dortgen-hiyerarsi-032;tyt-geo-dortgen-hiyerarsi-032;487;12;5;5;2;1;3
+TYT;Geometri;Yamuk ve deltoid;topic-tyt-geo-yamuk-deltoid-032;tyt-geo-yamuk-deltoid-032;488;10;4;5;2;2;6
+TYT;Geometri;Paralelkenar, dikdörtgen, eşkenar dörtgen ve kare;topic-tyt-geo-paralelkenar-ozel-dortgenler-032;tyt-geo-paralelkenar-ozel-dortgenler-032;489;10;4;5;2;4;13
+TYT;Geometri;Dik prizmalar: açınım, alan ve hacim;topic-tyt-geo-dik-prizmalar-032;tyt-geo-dik-prizmalar-032;490;8;4;5;2;7;5
+TYT;Geometri;Piramitler: yükseklik, yüzey ve kesit;topic-tyt-geo-piramitler-032;tyt-geo-piramitler-032;491;8;4;5;2;2;3
+TYT;Geometri;Geometrinin dili: kaynakla pekiştirme;topic-tyt-geo-acilar-kaynak-pekitirme-032;tyt-geo-acilar-kaynak-pekitirme-032;492;12;10;6;3;1;7
+TYT;Matematik;Asal sayılar: elekten kaynak sorularına;topic-tyt-mat-asal-kaynak-032;tyt-mat-asal-kaynak-032;493;20;12;6;3;1;6
+TYT;Matematik;Faktöriyel: çarpımdan kaynak problemlerine;topic-tyt-mat-faktoriyel-kaynak-033;tyt-mat-faktoriyel-kaynak-033;494;20;16;8;2;1;7
+TYT;Matematik;EBOB ve EKOK: ortak birimden kaynak problemlerine;topic-tyt-mat-ebob-ekok-kaynak-034;tyt-mat-ebob-ekok-kaynak-034;495;29;24;12;3;1;6
+TYT;Matematik;Rasyonel sayılar: bütün, işlem ve kaynak problemleri;topic-tyt-mat-rasyonel-kaynak-035;tyt-mat-rasyonel-kaynak-035;496;26;20;12;3;1;6
+TYT;Matematik;Birinci dereceden denklemler: eşitliği koru, modeli kur;topic-tyt-mat-dogrusal-denklemler-kaynak-036;tyt-mat-dogrusal-denklemler-kaynak-036;497;40;37;15;4;1;6
+TYT;Matematik;Basit eşitsizlikler: sırayı koru, bütün çözümü gör;topic-tyt-mat-basit-esitsizlikler-kaynak-037;tyt-mat-basit-esitsizlikler-kaynak-037;498;40;44;17;5;1;7
+TYT;Matematik;Mutlak değer: uzaklık, koşul ve grafiğin mantığı;topic-tyt-mat-mutlak-deger-kaynak-038;tyt-mat-mutlak-deger-kaynak-038;499;34;38;14;3;1;7
+TYT;Matematik;Üslü sayılar: çarpan, koşul ve ölçeğin mantığı;topic-tyt-mat-uslu-sayilar-kaynak-039;tyt-mat-uslu-sayilar-kaynak-039;500;40;53;16;3;1;7
+TYT;Geometri;Çemberde açı, kiriş ve teğet;topic-tyt-geo-cember-aci-040;tyt-geo-cember-aci-040;501;11;3;4;3;2;6
+TYT;Geometri;Daire, daire dilimi, çevre ve alan;topic-tyt-geo-daire-040;tyt-geo-daire-040;502;10;3;4;3;1;4
+TYT;Geometri;Silindir, koni ve küre;topic-tyt-geo-silindir-koni-kure-040;tyt-geo-silindir-koni-kure-040;503;10;3;4;3;6;8
+TYT;Geometri;Dik üçgende trigonometrik oranlar;topic-tyt-geo-trigonometrik-oranlar-040;tyt-geo-trigonometrik-oranlar-040;504;9;3;4;3;0;0
+TYT;Geometri;Üçgen ve paralelkenarda alan;lesson:alan-donusumleri;alan-donusumleri;505;10;6;10;2;1;5
+TYT;Matematik;Permütasyon;topic-tyt-mat-permutasyon-kaynak-032;tyt-mat-permutasyon-kaynak-032;506;7;3;5;3;2;6
+TYT;Matematik;Tekrarlı permütasyon;topic-tyt-mat-tekrarli-permutasyon-kaynak-033;tyt-mat-tekrarli-permutasyon-kaynak-033;507;6;3;5;3;1;4
+TYT;Matematik;Kombinasyon;topic-tyt-mat-kombinasyon-kaynak-034;tyt-mat-kombinasyon-kaynak-034;508;6;3;5;3;2;6
+TYT;Matematik;Binom açılımı;topic-tyt-mat-binom-kaynak-035;tyt-mat-binom-kaynak-035;509;6;3;5;3;1;7
+TYT;Matematik;Olasılık;topic-tyt-mat-olasilik-kaynak-036;tyt-mat-olasilik-kaynak-036;510;6;3;5;3;4;7

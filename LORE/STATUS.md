@@ -1,5 +1,5 @@
 # Güncel durum
 
-25 Kasım 2026 · `main` · ürün sürümü `0.147.0`. Drive listesinden 14 başlığa 79 video eklendi. Sırada konu bazında anlatım, örnek, Kopya Kağıdı ve video kapsamı var. [Son Forge](../FORGE.md) · [Sürüm notları](../docs/RELEASE_ALPHA.md)
+25 Kasım 2026 · 0.148.0 kapsam adayı. Ana daldaki 0.147.0, teknik LORE yapısını ve 79 yeni video bağlantısını içerir. [0.147.0 CI](https://github.com/kaansavukduran/yksmania/actions/runs/45496807471)
 
-Sayaçların kaynağı koddan üretilen [İlerleme](../docs/ILERLEME.md). Geçmiş kabul sonuçları [QA](../docs/QA.md) içindedir.
+[Konu kapsamı](../docs/KONU_KAPSAMI.md) 510 başlığı anlatım, örnek, Kopya Kağıdı ve video açısından sayar. Kaynak kâğıdı aktarımı [İlerleme](../docs/ILERLEME.md) tablosunda ayrı tutulur. Sonraki iş TYT Matematik ve Geometri kaynak kâğıtlarını karşılaştırmak. [Forge](../FORGE.md)

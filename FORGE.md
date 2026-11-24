@@ -1,3 +1,11 @@
+# TYT ve AYT Sayısal konu kapsamı · 0.148.0 adayı
+
+[Konu kapsamı](docs/KONU_KAPSAMI.md) ve [ayrıntılı CSV](docs/KONU_KAPSAMI.csv), normal ders girişine bağlı 510 başlığı gösteriyor. Yerleşik anlatım, çözümlü örnek, Kopya Kağıdı ve video ayrı sütunlarda. Kaynak kâğıdı aktarımının ayrı paydası 137 / 517. Bu sayaç kısmi aktarımı izler.
+
+Kaynak listesindeki ortak video İkizkenar ve Eşkenar Üçgen etiketleriyle bağlandı. Eşleme sonrasında video bulunan 509 konu var. Dik üçgende trigonometrik oranlar için doğrulanmış ayrı video eşlemesi açık.
+
+Sıradaki paket TYT Matematik ve Geometri kaynak kâğıtlarından başlayarak anlatım ile ayrı Kopya Kağıtlarını iyileştirir.
+
 # Matematik ve geometri video aktarımı · 0.147.0
 
 25 Kasım 2026. Drive çalışma listesindeki 79 eksik YouTube kimliği, 14 başlıkta 82 konu bağlantısı olarak eklendi. Bir video dört sayma/olasılık başlığına bağlı. Önceki 2.294 bağlantı kaydı korundu. Özel Drive içeriği, tarih ve görev kimliği kataloğa aktarılmadı.

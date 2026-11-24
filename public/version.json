@@ -1,8 +1,8 @@
 {
-  "version": "0.147.0",
+  "version": "0.148.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Permütasyon, olasılık, üçgen, çember ve katı cisimler dahil 14 başlıkta 79 video bağlantısı eklendi. Bağlantılar ilgili konu anlatımında önerilen ve alternatif seçeneklerle açılır.",
-    "en": "Added 79 video links across 14 mathematics and geometry topics."
+    "tr": "TYT ve AYT Sayısal konu takip tablosu, yerleşik anlatım ve Kopya Kağıtlarını kaynak aktarımından ayrı gösteriyor. İki üçgen başlığının ortak videosu doğru konu etiketleriyle açılıyor.",
+    "en": "The coverage report separates built-in theory and cheat sheets from source transfers. Both triangle topics now label their shared video."
   }
 }
