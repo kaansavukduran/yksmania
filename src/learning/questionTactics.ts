@@ -2136,6 +2136,58 @@ export const questionTactics: QuestionTactic[] = [
       "2017 YGS Türkçe 14 mantığı: “geçişli yüklem vardır” yargısını yalnız çekimli yüklemlerle sına, fiilimsilerle değil.",
     ],
   },
+  {
+    id: "yer-sekli-bicim-koken-konum",
+    guides: ["turkiye-yer-sekilleri"],
+    match: /ova|plato|köken|yükselti|dağ|rota|düzlük|yüzey/i,
+    title: "Yer şeklinde üç kararı ayrı ver: biçim, köken, konum",
+    steps: [
+      "Biçim: yüzey çevresine göre alçak ve az eğimliyse ova; akarsuyla yarılmış ve çevresine göre yüksekse plato. Mutlak rakam (1500 m, 300 m) tek başına bu kararı vermez.",
+      "Köken: kıvrımlı tabaka, normal fay bloğu, lav–kül ya da kıyıda biriken alüvyon kanıtını ayrıca yaz; plato ya da dağ adı tek bir kökeni söylemez.",
+      "Konum ve doğrultu: kıyıya paralel kuşaklar iç bağlantıyı geçit ve vadilerde toplar; kıyıya dik koridorlar deniz etkisini ve yolu içeri taşıyabilir.",
+      "Genel örüntüyü (doğuya yükselti artışı) iki noktanın ölçülmüş karşılaştırmasıyla karıştırma; ortalama tek noktayı sıralamaz.",
+      "2026 TYT Sosyal Bilimler 7 mantığı: haritadaki dağlık görünüşü volkanik köken kanıtı sayma; işaretli yerin kökenini ayrı oku.",
+    ],
+  },
+  {
+    id: "iklim-etkeni-ayir",
+    guides: ["turkiye-iklimi"],
+    match: /enlem|kıyı|yağış|karasal|rüzgâr|poyraz|yamaç|istasyon|sıcaklı|kış/i,
+    title: "İklim farkında değişen etkeni tek tek listele",
+    steps: [
+      "İki yeri karşılaştırmadan önce neyin aynı neyin farklı olduğunu yaz: enlem, yükselti, denizden uzaklık, dağların uzanışı, bakı ve dönem.",
+      "Aynı enlem verilmişse enlem farkını açıklama yapma; kalan etkenlerden (yükselti, karasallık) hangisinin veriyle desteklendiğini seç. İkisinin payını derece olarak bölüştürme.",
+      "Yağışta süreci adlandır: cephe, yamaç ya da yükselim. Rüzgâr adı geldiği yönü söyler, sıcaklık ve yağış etkisi geçtiği yüzeye ve neme bağlıdır.",
+      "Grafikte doğrudan okunanı (aylık mm, aylık ortalama °C, mevsim toplamı) ayrı, çıkarımı ayrı yaz; yağışın kar olduğunu aylık ortalamadan kesinleştirme.",
+      "2023 TYT Sosyal Bilimler 6 mantığı: sütun toplamı miktarı verir, yağış türünü vermez.",
+    ],
+  },
+  {
+    id: "nufus-olcu-neden-kanit",
+    guides: ["dunya-nufus-dagilisi"],
+    match: /yoğunluk|seyrek|yoğun|harita|nüfus/i,
+    title: "Önce ölçüyü, sonra nedeni kanıtla seç",
+    steps: [
+      "Ölçüyü adlandır: toplam kişi mi, kişi/km² mi, artış mı? Pay ve payda aynı sınır ve yıla ait olmalı; birleşik alanda önce kişileri ve alanları ayrı topla.",
+      "Seyrek alan sorusunda her işaret için kısıtı ayrı sor: su, sıcaklık, eğim, ulaşım. Ortak sonuç (seyrek nüfus) ortak neden demek değildir; soğuk çöller de vardır.",
+      "Yoğun alanda doğal koşulu (ova, su) beşerî süreçten (liman, yol, sanayi, hizmet) ayır; yalnız toprağa bağlayan açıklama çoğu kez eksiktir.",
+      "Karşı örnekle dene: çok yağışlı muson ovası yoğun, çok yağışlı orman içi seyrek olabilir; hız düşerken toplam artabilir.",
+      "2026 TYT Sosyal Bilimler 8 mantığı: soruda iki koşul birlikte isteniyorsa ikisini birden sağlayan işaretleri seç.",
+    ],
+  },
+  {
+    id: "tr-nufus-tarih-payda-sinir",
+    guides: ["turkiye-nufusu"],
+    match: /sayım|artış|doğum|göç|ziyaretçi|pay|yoğunlaşma|seyrek|beklenen|kent/i,
+    title: "Türkiye nüfusunda tarih, payda ve sınırı birlikte yaz",
+    steps: [
+      "Tarih: veri yılını açıklama yılından ayır (2007 ADNKS sonuçları 2008'de açıklandı); 1831 sayımı amaç ve kapsam bakımından modern sayımla eşit değildir.",
+      "Payda: yüzde hangi gruba ait? Çalışan payı çalışanlara, okuryazarlık ilgili yaş grubuna, yaş payı toplam nüfusa bölünür. Pay değişimi kişi değişimi değildir.",
+      "Sınır: doğal fark (doğum − ölüm) ve net göçü (gelen − giden) aynı sınır ve dönem için iki satırda topla; iller arası taşınma ülke toplamını değiştirmez, ziyaretçi adres nüfusuna eklenmez.",
+      "Dağılışta her işaretin kendi nedenini yaz: Tuz Gölü çevresinde kuraklık ve toprak, Hakkâri'de yükselti ve erişim, sanayi kuşağında iş ve bağlantı.",
+      "2025 TYT Sosyal Bilimler 8 mantığı: verilen nedeni işaretli konumun gerçek koşuluyla sına.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

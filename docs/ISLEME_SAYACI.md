@@ -31,8 +31,8 @@ Tam aktarımı doğrulanan güncel satır sayısı sıfır. Arşivde gerçekte k
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 131 |
-| Okunduğu doğrulanan PDF toplamı (bu dal) | 131 / 8.981 (%1,46) |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 135 |
+| Okunduğu doğrulanan PDF toplamı (bu dal) | 135 / 8.981 (%1,50) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
 
@@ -49,17 +49,17 @@ Klasördeki numaralı kopya kâğıtları ders ders sayıldı (517 kopya kâğı
 | TYT Kimya | 56 | 38 | %67,9 |
 | TYT Biyoloji | 36 | 7 | %19,4 |
 | TYT Tarih | 24 | 4 | %16,7 |
-| TYT Coğrafya | 40 | 5 | %12,5 |
+| TYT Coğrafya | 40 | 9 | %22,5 |
 | TYT Felsefe | 17 | 3 | %17,6 |
 | TYT Din Kültürü | 20 | 3 | %15,0 |
-| **TYT toplam** | **320** | **89** | **%27,8** |
+| **TYT toplam** | **320** | **93** | **%29,1** |
 | AYT Matematik | 17 | 2 | %11,8 |
 | AYT Geometri | 4 | 1 | %25,0 |
 | AYT Fizik | 46 | 7 | %15,2 |
 | AYT Kimya | 55 | 11 | %20,0 |
 | AYT Biyoloji | 75 | 11 | %14,7 |
 | **AYT toplam** | **197** | **32** | **%16,2** |
-| **Genel toplam** | **517** | **121** | **%23,4** |
+| **Genel toplam** | **517** | **125** | **%24,2** |
 
 Notlar: TYT Türkçe'de 028 numarası iki farklı konuda kullanılmış (33 dosya, 32 numara). TYT Kimya'da 031 aynı adla iki kez var (eski ve yeni sürüm; 55 farklı konu). TYT Matematik ve Geometri'de 000 numaralı genel özetler var. AYT klasöründeki 7 durum raporu “232 konu” diyor ama klasörlerde 197 AYT kopya kâğıdı bulunuyor; 35 konunun kopya kâğıdı Drive'da yok. Bu tablodaki sıfırlar, o derste kopya kâğıdından figür/taktik aktarılmadığını söyler; uygulamada o dersin anlatımı ve soruları yine vardır (ayrıntı aşağıdaki kapsam tablosunda).
 
@@ -196,6 +196,10 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 004 TYT Türkçe – Sıfatlar (kopya kâğıdı) | `sifatlar` figürsüz dört bölümüne: tıklanabilir ok yönü cümlesi (çok → yorgun zarf, yorgun → yolcular sıfat, hızlı → koştu zarf), soru sözcüğü tablosu (hangi / hangisi / kaç / kaçıncı / nasıl bir / nasıl geldin), “bir yerine iki koy” seçim panosu (asıl sayı, belgisiz), yapı ek şeridi (dar, tuz-lu, hayırsever, kısa saç-lı öbeği); ok yönü taktiği; 2023 TYT Türkçe 8 mantığı | Kısmi |
 | 005 TYT Türkçe – Zamirler (kopya kâğıdı) | `zamirler` figürsüz dört bölümüne: durum seçimli altı kişi zamiri kartı (bana, sana düzensiz; o + n), tıklanabilir kendi gönderim okları (tamlayan ve vurgu, ikisi de özneye), dört adımlı onun belirsizliği (iki okuma, ikisi birden, adla onarım), belgisiz sıfat / zamir çiftleri tablosu; açılım–gönderim taktiği; 2017 TYT örnek kitapçık Türkçe 12 mantığı | Kısmi |
 | 009 TYT Türkçe – Fiilde Çatı (kopya kâğıdı) | `fiilde-cati` figürsüz dört bölümüne: dört adımlı ilk kapı (asıl yüklem isim mi fiil mi; fiilimsi kesik çerçeve), “neyi?” denemesi tablosu (dinle-, otur-, yaz-, kork-, bekle-), kökten karar ek şeridi (uyu-t, kork-ut, otur-t oldurgan; iç-ir ettirgen), işteşlik iki kanıt tablosu (-ış eki + ortak iş; serinleşti ve koştu işteş değil); iki eksen taktiği; 2017 YGS Türkçe 14 mantığı | Kısmi |
+| 009 TYT Coğrafya – Türkiye İklimi (kopya kâğıdı) | `turkiye-iklimi` figürsüz dört bölümüne: enlem sürgülü Türkiye haritası (21 Haziran 90° − (φ − 23°27′), 21 Aralık 90° − (φ + 23°27′); 39° K için 74°27′ ve 27°33′), sekiz adlı tıklanabilir rüzgâr gülü (adın geldiği yön), üç iç alan seçimli harita (İç Anadolu ilkbahar, Erzurum–Kars yaz başı, Güneydoğu kış), üç adımlı cephe / yamaç / yükselim yağışı kesiti; etken ayırma taktiği; 2023 TYT Sosyal Bilimler 6 mantığı | Kısmi |
+| 019 TYT Coğrafya – Türkiye’nin Yer Şekilleri (kopya kâğıdı) | `turkiye-yer-sekilleri` figürsüz dört bölümüne: üç adımlı 11 noktalı özgün batı–doğu kesiti (en küçük kareler eğilimi +163 m / 2 km; batıda P 2100 m > doğuda Q 1300 m; %35 yamaç ile %0 düz yüzey), dört adımlı köken haritası (kıvrım, kırık, volkanik), üç ova kesiti (taban 10 / 100 / 1600 m, çevreden 490 / 1100 / 900 m alçak), on bir seçilebilir plato etiketi; biçim–köken–konum taktiği; 2026 TYT Sosyal Bilimler 7 mantığı | Kısmi |
+| 029 TYT Coğrafya – Dünyada Nüfusun Dağılışı (kopya kâğıdı) | `dunya-nufus-dagilisi` figürsüz dört bölümüne: alan orantılı üç bölgede toplam nüfus ve yoğunluk göstergesi (A en kalabalık 200.000, B en yoğun 200 kişi/km²), beş adımlı koy–liman–hinterland–kent–maden zinciri, dönem sürgülü hız ve miktar modeli (%2 → %0,4 düşerken 1.000 → 1.061,4; −%0,2'de ilk düşüş), seçilebilir ekvatoral kesit (ideal 27 °C − m/200: yüksek düzlük 14,4 °C); ölçü–neden taktiği; 2026 TYT Sosyal Bilimler 8 mantığı | Kısmi |
+| 031 TYT Coğrafya – Türkiye’de Nüfus (kopya kâğıdı) | `turkiye-nufusu` figürsüz dört bölümüne: ölçekli sayım ekseni (1831, 1927, 1935–1990 beş yılda bir 12 sayım, 2000, 2007 ADNKS: veri yılı 2007 / açıklama 2008), yaş payları 2023 MEBİ ile 2025 TÜİK (21,4 / 68,3 / 10,2 → 20,4 / 68,5 / 11,1; −1 / +0,2 / +0,9 puan), çalışan paydası ve yanlış toplam nüfus paydası (≈ 13,49 milyon hatası), beş adımlı seyrek alan nedenleri ve yoğun merkezler haritası; tarih–payda–sınır taktiği; 2025 TYT Sosyal Bilimler 8 mantığı | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -212,7 +216,7 @@ Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî ko
 | TYT Kimya | 17 | 57 | 55 | 535 | 41 (%71,9) | 179 | 40 | 38 / 56 (%67,9) |
 | TYT Biyoloji | 18 | 45 | 36 | 515 | 12 (%26,7) | 37 | 14 | 7 / 36 (%19,4) |
 | TYT Tarih | 22 | 34 | 24 | 390 | 6 (%17,6) | 16 | 4 | 4 / 24 (%16,7) |
-| TYT Coğrafya | 21 | 40 | 40 | 400 | 8 (%20,0) | 17 | 5 | 5 / 40 (%12,5) |
+| TYT Coğrafya | 21 | 40 | 40 | 400 | 8 (%20,0) | 17 | 5 | 9 / 40 (%22,5) |
 | TYT Felsefe | 15 | 17 | 17 | 190 | 3 (%17,6) | 7 | 3 | 3 / 17 (%17,6) |
 | TYT Din | 19 | 20 | 20 | 371 | 4 (%20,0) | 9 | 3 | 3 / 20 (%15,0) |
 | AYT Matematik | 36 | 18 | 17 | 253 | 13 (%72,2) | 19 | 5 | 2 / 17 (%11,8) |
@@ -220,9 +224,9 @@ Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî ko
 | AYT Fizik | 32 | 47 | 46 | 541 | 11 (%23,4) | 26 | 15 | 7 / 46 (%15,2) |
 | AYT Kimya | 34 | 56 | 55 | 680 | 18 (%32,1) | 19 | 14 | 11 / 55 (%20,0) |
 | AYT Biyoloji | 29 | 76 | 75 | 907 | 16 (%21,1) | 39 | 12 | 11 / 75 (%14,7) |
-| **Toplam** | **341** | **540** | **505** | **6.465** | **200 (%37,0)** | **830** | **182** | **121 / 517 (%23,4)** |
+| **Toplam** | **341** | **540** | **505** | **6.465** | **200 (%37,0)** | **830** | **182** | **125 / 517 (%24,2)** |
 
-Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %37) ve kopya kâğıtlarından aktarım (%23,4). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
+Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %37) ve kopya kâğıtlarından aktarım (%24,2). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
 
 Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan konular):
 
