@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.126.0 · Sabit ve serbest uçta yansıma
+
+Yayın adayı. Atma uca yaklaşırken, tam uçtayken ve geri dönerken çizimi adım adım incele. Sabit uç denge çizgisinde kalır. Serbest halkadaki yükselme geçicidir. Kopya Kağıdı iki sınırın hesabını kendi şekliyle açıyor.
+
 # ÖSYM Mania 0.125.0 · Kova, makara ve yay gerilimi
 
 Yayın adayı. Kovadaki suyu değiştirerek ipin gerilimini, atmanın süratini ve aldığı yolu karşılaştır. Kopya Kağıdı, tam dolu kovada süratin neden iki katına çıktığını aynı düzenekle gösteriyor.

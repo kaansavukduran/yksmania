@@ -34,6 +34,7 @@ import { pulseGenerationExample, pulseGenerationSection } from "../mebiPulseGene
 import { pulseDampingExample, pulseDampingSection } from "../mebiPulseDamping";
 import { periodicSpringExample, periodicSpringSection } from "../mebiPeriodicSpring";
 import { springDensityExample, springDensitySection } from "../mebiSpringDensity";
+import { pulseReflectionExample } from "../mebiPulseReflection";
 import { pulleyTensionExample, pulleyTensionSection } from "../mebiPulleyTension";
 import { surfaceWaveExample, surfaceWaveSection, surfaceWaveTitle } from "../mebiSurfaceWave";
 import { seismicFocusExample, seismicFocusSection, seismicFocusTitle } from "../mebiSeismicFocus";
@@ -461,8 +462,8 @@ export function studyGuide(lessonId: string) {
     return {
       ...guide,
       sections: [...guide.sections, springPulseSection, pulseDirectionSection, pulseGenerationSection, pulseDampingSection, periodicSpringSection, springDensitySection, pulleyTensionSection],
-      examples: [...guide.examples, springPulseExample, pulseDirectionExample, pulseGenerationExample, pulseDampingExample, periodicSpringExample, springDensityExample, pulleyTensionExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfadaki tek atma ve sabit destek, yansıma öncesindeki kesitte yeniden çizildi. Fiziksel 153, basılı 151. sayfadaki oluşum ve titreşim oklarına göre tepe, çukur, genişlik ve genlik çizimleri hazırlandı. Fiziksel 154, basılı 152. sayfadaki periyodik dalga ve eşit gerilim çizimleri iki yay üzerinden yeniden oluşturuldu. Fiziksel 155, basılı 153. sayfadaki makara ve su kovası düzeneği, değişen gerilimi aynı süre ölçüsüyle gösteriyor. Sayısal modeller ve örnek sorular özgün.`,
+      examples: [...guide.examples, springPulseExample, pulseDirectionExample, pulseGenerationExample, pulseDampingExample, periodicSpringExample, springDensityExample, pulleyTensionExample, pulseReflectionExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfadaki tek atma ve sabit destek, yansıma öncesindeki kesitte yeniden çizildi. Fiziksel 153, basılı 151. sayfadaki oluşum ve titreşim oklarına göre tepe, çukur, genişlik ve genlik çizimleri hazırlandı. Fiziksel 154, basılı 152. sayfadaki periyodik dalga ve eşit gerilim çizimleri iki yay üzerinden yeniden oluşturuldu. Fiziksel 155, basılı 153. sayfadaki makara ve su kovası düzeneği, değişen gerilimi aynı süre ölçüsüyle gösteriyor. Aynı sayfadaki duvar ve hareketli halka çizimleri, gelen ve yansıyan atmaların toplamına bağlı. Sayısal modeller ve örnek sorular özgün.`,
     };
   }
   if (guide?.id === "su-dalgalari") {

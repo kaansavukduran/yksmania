@@ -34,6 +34,8 @@ import { periodicSpringAt, periodicSpringTime, periodicSpringTitle, periodicSpri
 import { springDensityAt, springDensityMass, springDensityTitle } from "../mebiSpringDensity";
 import { pulleyTensionAt, pulleyTensionTitle, pulleyTensionWaterG } from "../mebiPulleyTension";
 
+import { fixedReflectionTitle, freeReflectionTitle, reflectingPulseAt, reflectionEndM, reflectionFrameTimes } from "../mebiPulseReflection";
+
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
  * Waves are sampled from y = A·sin(2π(x − x0)/λ); pulses from a smooth bump.
@@ -65,6 +67,47 @@ const wall = (x: number, y0: number, y1: number): El[] => [
   seg(v(x, y0), v(x, y1), { tone: "ink", bold: true }),
   ...Array.from({ length: Math.floor((y1 - y0) / 0.4) }, (_, i) => seg(v(x, y0 + i * 0.4 + 0.4), v(x + 0.3, y0 + i * 0.4 + 0.1), { thin: true, tone: "muted" })),
 ];
+function pulseReflectionFigure(boundary: "fixed" | "free", step: number) {
+  const state = reflectingPulseAt(reflectionFrameTimes[step], boundary);
+  const end = reflectionEndM;
+  const contact = step === 1;
+  const incoming = step === 0;
+  const center = incoming ? state.incomingCenterM : state.reflectedCenterM;
+  const direction = incoming ? 1 : -1;
+  const boundaryShape = boundary === "fixed"
+    ? wall(end, -2.2, 3.0)
+    : [
+        seg(v(end + 0.11, -2), v(end + 0.11, 3.1), { tone: "ink", bold: true }),
+        circle(v(end + 0.11, state.endpoint), 0.17, { tone: "a" }),
+      ];
+  const components = contact ? [
+    wave(pulseLine(0, end, state.incoming, 0, 160), "a", true),
+    ...(boundary === "fixed" ? [wave(pulseLine(0, end, state.reflected, 0, 160), "c", true)] : []),
+  ] : [];
+  return {
+    els: [
+      base(0, end),
+      ...boundaryShape,
+      ...components,
+      wave(pulseLine(0, end, state.height, 0, 160), "b"),
+      circle(v(end, state.endpoint), 0.09, { tone: "a", fill: "a" }),
+      ...(!contact ? [
+        vec(v(center, 2.25), v(center + 1.6 * direction, 2.25), { tone: "ink", bold: true }),
+        txt(v(center + 0.8 * direction, 2.41), "İlerleme", "n", { small: true }),
+      ] : []),
+      txt(v(8.15, -2.2), boundary === "fixed" ? "Sabit uç" : "Serbest uç", "n", { small: true }),
+    ],
+    readout: [
+      contact
+        ? boundary === "fixed"
+          ? "Uçtaki iki uzanım birbirini götürür. Sabit uç denge çizgisinde kalır."
+          : "Gelen ve yansıyan tepe uçta birleşir. Bu anda halka başlangıç genliğinin iki katı kadar yükselir."
+        : `${incoming ? "Gelen tepe" : boundary === "fixed" ? "Yansıyan çukur" : "Yansıyan tepe"} ${incoming ? "sağa" : "sola"} ${fmt(state.speedMps)} m/s ile ilerler. Genişlik ${fmt(state.widthM)} m.`,
+      `Uç uzanımı ${fmt(state.endpoint, 2)} m.`,
+    ],
+  };
+}
+
 const deg = (r: number) => (r * 180) / Math.PI;
 const rad = (d: number) => (d * Math.PI) / 180;
 
@@ -885,43 +928,19 @@ const yay: Record<string, FigureDef> = {
       };
     },
   },
-  "Sabit uç neden ters yansıtır?": {
+  [fixedReflectionTitle]: {
     caption:
-      "Duvara bağlı uç yer değiştiremez. Gelen tepe sınırda ters döner ve çukur olarak geri gelir; sürat, genişlik ve genlik büyüklüğü ideal kayıpsız uçta korunur.",
+      "Duvara bağlı uç yer değiştiremez. Orta adımda kesikli tepe ve çukur birbirini dengeler. Son adımda kayan çukurun sürati, genişliği ve genlik büyüklüğü korunur.",
     alt: "Sağda duvar; adım adım önce sağa giden tepe, sonra duvarda biçimi, en son sola giden çukur.",
     steps: ["Gelen tepe sağa gider", "Uçta toplam uzanım sıfır kalır", "Yansıyan çukur sola döner"],
-    draw: (_, step) => {
-      const c = [4, 8.2, 4][step];
-      const A = [1.5, 0.3, -1.5][step];
-      return {
-        els: [
-          ...wall(9, -2, 2),
-          base(0, 9),
-          wave(pulseLine(0, 9, (x) => bump(x, c, 2.4, A) * (x <= 9 ? 1 : 0))),
-          vec(v(c, step === 2 ? -2 : 2), v(step === 2 ? c - 1.5 : c + 1.5, step === 2 ? -2 : 2), { tone: "b", bold: true }),
-        ],
-      };
-    },
+    draw: (_, step) => pulseReflectionFigure("fixed", step),
   },
-  "Serbest uç yer değiştirebilir": {
+  [freeReflectionTitle]: {
     caption:
-      "Uç sürtünmesiz çubuk üzerindeki halkaya bağlı, serbestçe kayabilir. Gelen tepe ters dönmeden tepe olarak yansır; yalnız ilerleme yönü tersine döner.",
+      "Halka sürtünmesiz çubukta kayabilir. Orta adımda iki eş katkı aynı kesikli eğri üzerinde çakışır. Kesintisiz eğri toplam uzanımı gösterir.",
     alt: "Sağda dikey çubuk ve halka; adım adım sağa giden tepe, uçta yükselmiş halka ve sola dönen tepe.",
-    steps: ["Gelen tepe sağa gider", "Uç yükselir, toplam anlık iki kat", "Yansıyan tepe sola döner"],
-    draw: (_, step) => {
-      const c = [4, 9, 4][step];
-      const A = [1.5, 3, 1.5][step];
-      const yEnd = step === 1 ? 3 : 0;
-      return {
-        els: [
-          seg(v(9.15, -2), v(9.15, 3.6), { tone: "ink", bold: true }),
-          circle(v(9.15, yEnd), 0.2, { tone: "a" }),
-          base(0, 9),
-          wave(pulseLine(0, 9, (x) => (step === 1 ? bump(x, 9, 2.4, 3) : bump(x, c, 2.4, A)))),
-          vec(v(step === 1 ? 6 : c, 2.2), v(step === 2 ? c - 1.5 : (step === 1 ? 6 : c) + 1.5, 2.2), { tone: "b", bold: true }),
-        ],
-      };
-    },
+    steps: ["Gelen tepe sağa gider", "Halka en yüksek noktaya çıkar", "Yansıyan tepe sola döner"],
+    draw: (_, step) => pulseReflectionFigure("free", step),
   },
   "Hafiften ağıra geçişte iki ayrı atma oluşur": {
     caption:

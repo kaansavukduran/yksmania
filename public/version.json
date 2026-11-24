@@ -1,8 +1,8 @@
 {
-  "version": "0.125.0",
+  "version": "0.126.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Makara düzeneğinde kovadaki suyu artır, yayın gerilmesini değiştir ve atmanın aynı sürede ne kadar ilerlediğini çizimde ölç.",
-    "en": "Add water to the bucket on the pulley setup, then compare how tension changes the distance travelled by the pulse in the same time."
+    "tr": "Atmanın sabit ve serbest uçta nasıl yansıdığını karşılaştır. Duvarın ve halkanın uzanımını üç aşamada incele.",
+    "en": "Compare a pulse reflecting from fixed and free ends. Follow the motion at the wall and the ring across three stages."
   }
 }

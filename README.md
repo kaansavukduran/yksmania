@@ -4,6 +4,8 @@
 
 **Son yayımlanan web ve masaüstü sürümü 0.103.0**. Dalga önünün bir periyotta aldığı yolu ve Kopya Kağıdı’ndaki örneği çevrimdışı inceleyebilirsin. [Windows ve Linux 0.103](https://github.com/kaansavukduran/yksmania/releases/tag/v0.103.0-alpha.1) · [Önceki 0.42 sürümü](https://github.com/kaansavukduran/yksmania/releases/tag/v0.42.0-alpha.1) · [Android 0.42 kişisel deneme arşivi](https://github.com/kaansavukduran/yksmania/actions/runs/45187782506/artifacts/14823994107)
 
+**0.126.0 adayı** atmanın duvardan ve hareketli halkadan nasıl döndüğünü üç adımda gösteriyor. Kopya Kağıdı uçtaki toplam uzanımı iki ayrı çizimle açıklıyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+
 **0.125.0 adayı** kovadaki suyu değiştirince aynı çizimde ipin gerilimini, atmanın süratini ve aldığı yolu güncelliyor. Kopya Kağıdı hesabı aynı düzenekle açıklıyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.124.0 adayı** iki yayın kütlesini, uzunluğunu ve gerilimini sorunun çiziminde veriyor. İpucu birimleri gösteriyor, çözüm adımları yoğunlukları ve süratleri ayrı tablolarda hesaplıyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)

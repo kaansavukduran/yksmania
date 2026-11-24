@@ -1,3 +1,9 @@
+# Sabit ve serbest uçta atmanın yansıması · 0.126.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 155, basılı 153. Eski temas çiziminde sabit uç hafifçe yer değiştiriyordu. Yeni çizim gelen ve yansıyan uzanımları topluyor. Sabit uç üç adımda da 0 m. Serbest halkada iki katkı temas anında toplam 2,50 m, ayrılan atmanın genliği 1,25 m. Kopya Kağıdı iki sınırı kendi adımlarındaki şekillerle açıklıyor.
+
+Check, 2.192 birim, 322 çevrimdışı dosya ve yedi gerçek Chromium senaryosu geçti. 320 px’de %200 arayüz ve %150 yazıyla iki çizim incelendi. Şekil adımları klavyeyle çalışıyor, görsel keşif öğrenme kaydı oluşturmuyor. Sıradaki kaynak fiziksel 156, basılı 154’te ince ve kalın yayların birleşimindeki yansıma ve iletim.
+
 # Kova ve makarayla yay gerilimi · 0.125.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 155, basılı 153. İdeal makarada kova durgunken ipin gerilimi ağırlığa eşittir. Kovaya su eklendiğinde başlangıç gerilimi çizimde 1 N’den 4 N’ye, atma sürati 10 m/s’den 20 m/s’ye çıkıyor. Kopya Kağıdı kütleyi kilogram cinsine çevirip karekök oranıyla sürati ve 0,15 saniyede alınan yolu hesaplıyor.
