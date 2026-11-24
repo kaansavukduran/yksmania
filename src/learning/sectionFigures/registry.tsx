@@ -395,6 +395,7 @@ const waveLessonPhotos = new Map([
   [visibleMirrorPhoto.title, { figure: visibleMirrorPhoto, url: visibleMirrorPhotoSource, credit: "Jake Weirick · Wikimedia Commons · CC0 1.0" }],
   [handRadiograph.title, { figure: handRadiograph, url: handRadiographSource, credit: "Jochen Lengerke · Wikimedia Commons · CC0 1.0" }],
 ]);
+export const sectionImageFigures = new Map([["dalgalara-giris", waveLessonPhotos]]);
 
 export function SectionFigure({
   guideId,
@@ -407,7 +408,7 @@ export function SectionFigure({
   label?: string;
 }) {
   const def = sectionFigures[guideId]?.[title];
-  const photo = guideId === "dalgalara-giris" ? waveLessonPhotos.get(title) : undefined;
+  const photo = sectionImageFigures.get(guideId)?.get(title);
   if (!def && !photo) return null;
   return (
     <>

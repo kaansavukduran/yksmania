@@ -29,6 +29,7 @@ import { waterAmplitudeSection, waveAmplitudeExample, waveAmplitudeSection } fro
 import { waveClassificationExample, waveClassificationSection } from "../mebiWaveClassification";
 import { tuningForkExample, tuningForkSection } from "../mebiTuningFork";
 import { springPulseExample, springPulseSection } from "../mebiSpringPulse";
+import { pulseDirectionExample, pulseDirectionSection } from "../mebiPulseDirection";
 import { surfaceWaveExample, surfaceWaveSection, surfaceWaveTitle } from "../mebiSurfaceWave";
 import { seismicFocusExample, seismicFocusSection, seismicFocusTitle } from "../mebiSeismicFocus";
 import { radioWaveExample, radioWaveSection } from "../mebiRadioWaves";
@@ -454,9 +455,9 @@ export function studyGuide(lessonId: string) {
   if (guide?.id === "yay-dalgalari") {
     return {
       ...guide,
-      sections: [...guide.sections, springPulseSection],
-      examples: [...guide.examples, springPulseExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfadaki tek atma ve sabit destek, yansıma öncesindeki kesitte yeniden çizildi. Sayı ve örnek soru özgün.`,
+      sections: [...guide.sections, springPulseSection, pulseDirectionSection],
+      examples: [...guide.examples, springPulseExample, pulseDirectionExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfadaki tek atma ve sabit destek, yansıma öncesindeki kesitte yeniden çizildi. Fiziksel 153, basılı 151. sayfadaki ön ve arka eğim okları, iki ilerleme yönü ve iki atma biçimiyle karşılaştırıldı. Sayı ve örnek sorular özgün.`,
     };
   }
   if (guide?.id === "su-dalgalari") {

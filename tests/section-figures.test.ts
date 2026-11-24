@@ -3,17 +3,20 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { studyGuide } from "../src/learning/guides";
 import { sectionFigureGuideIds } from "../src/learning/sectionFigures/figureGuideIds";
-import { sectionFigures } from "../src/learning/sectionFigures/registry";
+import { SectionFigure, sectionFigures, sectionImageFigures } from "../src/learning/sectionFigures/registry";
 import { SectionFigureView } from "../src/learning/sectionFigures/figureKit";
 
 // A renamed section or example reference must fail here instead of
 // silently losing the required drawing in the app.
 describe("section figures", () => {
+  const guideIds = [...new Set([...Object.keys(sectionFigures), ...sectionImageFigures.keys()])];
   it("lists exactly the guides that have figures", () => {
-    expect([...sectionFigureGuideIds].sort()).toEqual(Object.keys(sectionFigures).sort());
+    expect([...sectionFigureGuideIds].sort()).toEqual([...guideIds].sort());
   });
 
-  for (const [guideId, figures] of Object.entries(sectionFigures)) {
+  for (const guideId of guideIds) {
+    const figures = sectionFigures[guideId] ?? {};
+    const photos = sectionImageFigures.get(guideId);
     describe(guideId, () => {
       const guide = studyGuide(guideId);
       it("belongs to an existing guide section or worked solution", () => {
@@ -25,9 +28,24 @@ describe("section figures", () => {
           ),
         ];
         const titles = new Set([...guide!.sections.map((s) => s.title), ...requiredTitles]);
-        for (const title of Object.keys(figures)) expect(titles).toContain(title);
-        for (const title of requiredTitles) expect(figures[title], title).toBeDefined();
+        for (const title of [...Object.keys(figures), ...(photos?.keys() ?? [])]) expect(titles).toContain(title);
+        for (const title of requiredTitles) expect(figures[title] ?? photos?.get(title), title).toBeDefined();
       });
+
+      for (const [title, photo] of photos ?? []) {
+        it(`renders the source image and its attribution: ${title}`, () => {
+          expect(figures[title]).toBeUndefined();
+          expect(photo.figure.assetSHA256).toMatch(/^[a-f0-9]{64}$/);
+          expect(photo.figure.width).toBeGreaterThan(0);
+          expect(photo.figure.height).toBeGreaterThan(0);
+          expect(photo.figure.alt.length).toBeGreaterThan(20);
+          const html = renderToStaticMarkup(createElement(SectionFigure, { guideId, title }));
+          expect(html).toContain("<img");
+          expect(html).toContain(photo.figure.alt);
+          expect(html).toContain(photo.credit);
+          expect(html).toContain(photo.url.replaceAll("&", "&amp;"));
+        });
+      }
 
       for (const [title, def] of Object.entries(figures)) {
         it(`draws finite geometry: ${title}`, () => {

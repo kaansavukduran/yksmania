@@ -27,6 +27,7 @@ import { radioFrequencyMHz, radioWavefrontPoints, radioWavefrontRadii, radioWave
 import { microwaveOvenEnergyPath, microwaveOvenStages, microwaveOvenTitle, microwaveOvenWavelengthLabel } from "../mebiMicrowaveOven";
 import { boundaryWavelength, ultravioletBoundaryTitle, visibleBoundaryNm, wavelengthRegion } from "../mebiUltravioletBoundary";
 import { gammaPhotonStages, gammaPhotonTitle, xRayDetectorTitle, xRayLayers, xRaySignal } from "../mebiXAndGamma";
+import { pulseDirectionAt, pulseDirectionCases, pulseDirectionTitle, verticalDirection } from "../mebiPulseDirection";
 
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
@@ -556,6 +557,35 @@ const giris: Record<string, FigureDef> = {
 };
 
 const yay: Record<string, FigureDef> = {
+  [pulseDirectionTitle]: {
+    caption: "Tepe veya çukuru seç. İlerleme okuna göre P ön eğimde, K ise arka eğimde işaretlenir.",
+    alt: "Yay kesitinde denge çizgisi, yatay ilerleme oku ve atmanın iki eğiminde düşey hareket okları var. P ilerleme tarafını, K arka tarafı gösteriyor.",
+    picks: pulseDirectionCases.map(({ label }, index) => {
+      const { front, rear } = pulseDirectionAt(index);
+      return { label, title: label, detail: [`Öndeki P ${verticalDirection(front.verticalVelocity)}, arkadaki K ${verticalDirection(rear.verticalVelocity)} hareket eder.`] };
+    }),
+    draw: (_value, _step, pick = -1) => {
+      const snapshot = pulseDirectionAt(pick);
+      const forward = snapshot.direction === 1;
+      const points = [{ ...snapshot.front, name: "P", tone: "a" as const }, { ...snapshot.rear, name: "K", tone: "b" as const }];
+      return {
+        els: [
+          base(0, 8),
+          wave(pulseLine(0, 8, snapshot.height, 0, 160), "ink"),
+          vec(v(forward ? 1.15 : 6.85, 2.18), v(forward ? 6.85 : 1.15, 2.18), { tone: "ink", bold: true }),
+          txt(v(4, 2.38), "İlerleme", "n", { small: true, bold: true }),
+          txt(v(7.7, -0.18), "Denge", "s", { small: true }),
+          ...points.flatMap(({ x, y, verticalVelocity, name, tone }) => [
+            circle(v(x, y), 0.07, { tone, fill: tone }),
+            vec(v(x, y), v(x, y + Math.sign(verticalVelocity) * 0.63), { tone, bold: true }),
+            txt(v(x + 0.16, y + Math.sign(verticalVelocity) * 0.45), name, "e", { small: true, bold: true, tone }),
+          ]),
+          txt(v(4, -1.95), " "),
+        ],
+        readout: [snapshot.label, `P ${verticalDirection(snapshot.front.verticalVelocity)} · K ${verticalDirection(snapshot.rear.verticalVelocity)}`],
+      };
+    },
+  },
   [springPulseTitle]: {
     caption: "Solda bir kez hareket eden kaynak, sağda sabit destek var. Zamanı değiştirince atma sağa ilerler. P kendi düşey çizgisinde kalır. Genişliği iki uç arasından oku.",
     alt: "Bir ucu kaynağa, diğer ucu sabit duvara bağlı yay. Tek tepeli atma sağa ilerliyor. P işaretli nokta aynı yatay konumda yukarı ve aşağı hareket ediyor.",

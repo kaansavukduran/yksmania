@@ -1,8 +1,8 @@
 {
-  "version": "0.118.0",
+  "version": "0.119.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Okları karşılaştırarak enine ve boyuna dalgayı ayır. Özgün alıştırmada ipucu çizimini ve iki ayrı çözüm tablosunu aç.",
-    "en": "Compare arrows to distinguish transverse and longitudinal waves. Open the hint diagram and two solution tables in the practice question."
+    "tr": "Sağa ve sola ilerleyen tepe ve çukurlarda ön ve arka yay noktalarının düşey hareketini karşılaştır. Kopya Kağıdı’nda sola giden çukur örneğini aç.",
+    "en": "Compare the vertical movement at the front and rear of crests and troughs traveling in either direction. Open the left-moving trough example in the reference sheet."
   }
 }

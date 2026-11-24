@@ -8,13 +8,15 @@ export const pulseAmplitude = 1.25;
 export const pulseMarkerM = 4.5;
 export const pulseSupportM = 10;
 
+export function pulseProfileAt(distanceFromLeft: number) {
+  if (distanceFromLeft <= 0 || distanceFromLeft >= pulseWidthM) return 0;
+  return pulseAmplitude * (1 - Math.cos(2 * Math.PI * distanceFromLeft / pulseWidthM)) / 2;
+}
+
 export function springPulseAt(timeS: number) {
   const leftM = pulseLeftM + pulseSpeedMps * timeS;
   const rightM = leftM + pulseWidthM;
-  const displacement = (x: number) => {
-    if (x <= leftM || x >= rightM) return 0;
-    return pulseAmplitude * (1 - Math.cos(2 * Math.PI * (x - leftM) / pulseWidthM)) / 2;
-  };
+  const displacement = (x: number) => pulseProfileAt(x - leftM);
   return { leftM, rightM, displacement };
 }
 

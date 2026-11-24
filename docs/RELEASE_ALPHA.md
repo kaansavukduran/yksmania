@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.119.0 · Atmanın ön ve arka eğimleri
+
+Yayın adayı. Sağa ve sola giden tepe ve çukur biçimlerini seç. P ve K noktalarının düşey hareketini karşılaştır. Kopya Kağıdı’nda sola ilerleyen çukurun çözümünü aç.
+
 # ÖSYM Mania 0.118.0 · İlerleme ve titreşim okları
 
 Yayın adayı. İki düzeneğin oklarını karşılaştırarak dalgaları sınıflandır. İpucu çizimi dik ve paralel doğrultuyu hatırlatır. Çözümde iki düzeneğin tablosu kendi adımında açılır.
