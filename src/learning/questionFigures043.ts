@@ -17,6 +17,7 @@ import { manometerQuestionFigures, manometerQuestionId } from "./manometerQuesti
 import { barometerQuestionFigures, barometerQuestionId } from "./barometerQuestion086";
 import { rigidGasQuestionFigures, rigidGasQuestionId } from "./rigidGasQuestion087";
 import { bernoulliChannelQuestionFigures, bernoulliChannelQuestionId } from "./bernoulliChannelQuestion091";
+import { archimedesQuestionFigures, archimedesQuestionId } from "./archimedesQuestion095";
 import {
   inverseTranslationFigures,
   inverseTranslationQuestion,
@@ -294,6 +295,14 @@ const bindings = new Map<string, FigureBinding>([
     pageLabel: "Fiziksel 144. sayfa, basılı 142",
     itemLabel: "Daralan yatay boruda Bernoulli, özgün soru",
     figures: bernoulliChannelQuestionFigures,
+  }],
+  [archimedesQuestionId, {
+    stemRevision: "1ff6f0a2eabb75",
+    helpRevision: "01736023a9b8b8",
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 146. sayfa, basılı 144",
+    itemLabel: "Tam batık cismin kaldırma kuvveti, özgün soru",
+    figures: archimedesQuestionFigures,
   }],
   [pistonQuestionId, {
     stemRevision: "122891ad73ac0c",

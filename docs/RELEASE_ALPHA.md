@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.95.0 · Tam batık blokta kaldırma kuvveti
+
+Yayın adayı. Bloğu aşağı indir ve üst, alt ve yan kuvvetleri karşılaştır. Kopya Kağıdı’nda iki derinliği hesapla. Özgün soruda litre dönüşümünü, yer değiştiren sıvının kütlesini ve kaldırma kuvvetini sırayla bul.
+
 # ÖSYM Mania 0.94.0 · Kapı ve dar boruda basınç
 
 Yayın adayı. Kapının iki yanındaki basıncı değiştir ve kuvvet yönünü oku. Musluğu açıp depo sıvısının boru girişine ulaştığı sınırı incele. Kopya Kağıdı’nda 4 kPa örneğini çöz.
