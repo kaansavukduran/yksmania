@@ -8,6 +8,7 @@ import order from "../src/data/study-order.json";
 import { lessonTopic, studyTopics } from "../src/domain/studyPlan";
 import { localizedQuestionView, clarifiedQuestionView } from "../src/domain/questionPresentation";
 import { helpPanels, resolvedGuidance } from "../src/learning/questionHelp";
+import { practiceQuestionView } from "../src/learning/practiceQuestionView";
 import { sourceQuestionPresentation } from "../src/learning/sourceExercises024";
 import { missingRequiredSourceVisuals } from "../src/learning/sourceVisualRevisions";
 import { requiredSourceVisuals } from "../src/learning/sourceVisualRequirements";
@@ -45,7 +46,8 @@ const cards = lessons.flatMap((lesson) =>
       guidance: q.guidance as HelpQuestion["guidance"],
     };
     const view = clarifiedQuestionView(card);
-    const presentation = sourceQuestionPresentation(view);
+    const practice = practiceQuestionView(view);
+    const presentation = sourceQuestionPresentation({ ...practice, guidance: resolvedGuidance(practice) });
     const hasFigure = Boolean((raw as { figure?: unknown }).figure || presentation?.figure);
     const visualRoles = {
       stem: hasFigure,

@@ -1,6 +1,8 @@
 import { identityHash, type HelpQuestion } from "../domain/questionHelpModel";
 import type { Question } from "../domain/model";
 import type { SourceQuestionFigureSpec } from "./SourceQuestionFigure";
+import { rightTriangleQuestionFigures, schematicTriangleOption } from "./rightTriangleQuestionFigures";
+import { molarMassQuestionFigures, solarAltitudeQuestionFigures } from "./existingMolAndSolarFigures";
 import { forceAccelerationFigures, forceAccelerationQuestion } from "./forceAccelerationPractice";
 import { forceVelocityFigureData, forceVelocityQuestion } from "./forceVelocityOptions048";
 import { signedWorkFigures, signedWorkQuestionId } from "./signedWork055";
@@ -316,7 +318,31 @@ function ogmTranslationBinding(
   }];
 }
 
+const rightTriangleRevisions = [
+  ["1dc9e8c30b641d", "1fc542320eb0e2"],
+  ["06efa4b382ea05", "1bae31cdf409af"],
+  ["1d5ad7a00eec5b", "13b2d40ccc4eec"],
+  ["0e72fed7bbe1df", "028e078b9b857b"],
+  ["037f5e4a7b412a", "18d869919a1b33"],
+  ["1c0b81e78fd691", "084094651f691b"],
+  ["0402e3a651e102", "1475ff94be98b1"],
+  ["1098d69d515113", "1c52e6bdfe2a28"],
+  ["0765b759139021", "1c2e0db946430f"],
+  ["0c14bc43393f89", "000d3418ead420"],
+] as const;
+
+const rightTriangleOptionFigures = ["6, 8, 11", "7, 8, 10", "8, 15, 17", "4, 5, 6", "5, 6, 8"].map(schematicTriangleOption);
+
 const bindings = new Map<string, FigureBinding>([
+  ...rightTriangleRevisions.map(([stemRevision, helpRevision], index): [string, FigureBinding] => [
+    `f031-tyt-geo-dik-ucgen-031-${index + 1}`,
+    {
+      stemRevision, helpRevision, title: "MEBİ TYT Matematik Konu Özetleri",
+      pageLabel: index === 8 ? "Fiziksel 130, basılı 128" : "Fiziksel 134–135, basılı 132–133",
+      itemLabel: "Dik üçgen, özgün öğretim sorusu",
+      figures: { ...rightTriangleQuestionFigures[index], optionFigures: index === 2 ? rightTriangleOptionFigures : undefined },
+    },
+  ]),
   ogmTranslationBinding(inverseTranslationQuestion, 12, "Görüntünün grafiğinden başlangıç noktası", inverseTranslationFigures),
   ogmTranslationBinding(triangleTranslationQuestion, 13, "ABC üçgeninin üç köşesinin ötelenmesi", triangleTranslationFigures),
   ...ogmGridTranslationExamples.map(({ question, page, name, figures }) => ogmTranslationBinding(question, page, name, figures)),
@@ -503,6 +529,22 @@ const bindings = new Map<string, FigureBinding>([
     pageLabel: "İçerik 5.1 · fiziksel 2 ve 4. sayfalar",
     itemLabel: "Ters ve komşu açı ilişkilerinin özgün uygulaması",
     figures: crossingFigures,
+  }],
+  ["m1", {
+    stemRevision: "0b80eb34e861ae",
+    helpRevision: "1973d6e85e4c49",
+    title: "MEBİ TYT Kimya Konu Özetleri",
+    pageLabel: "Fiziksel 63 ve 65. sayfalar, basılı 61 ve 63",
+    itemLabel: "Mol kütlesi tablosu ve mol hesabının özgün uygulaması",
+    figures: molarMassQuestionFigures,
+  }],
+  ["f020-geo-dunya-sekli-hareket-1", {
+    stemRevision: "1aa616daeb1dc3",
+    helpRevision: "00c6c617eeb12b",
+    title: "MEBİ TYT Coğrafya Konu Özetleri",
+    pageLabel: "Fiziksel 18. sayfa, basılı 16",
+    itemLabel: "Dönence ve enlem çiziminin özgün ideal öğle uygulaması",
+    figures: solarAltitudeQuestionFigures,
   }],
   ["n1", {
     stemRevision: "1091ad1048de51",

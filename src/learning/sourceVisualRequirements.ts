@@ -9,6 +9,14 @@ export interface RequiredSourceVisuals {
 // These are the reviewed roles the current app must display. Keep this list
 // independent of the renderer's figure bindings and of frozen question data.
 const requirements = new Map<string, RequiredSourceVisuals>([
+  ...Array.from({ length: 10 }, (_, index): [string, RequiredSourceVisuals] => [
+    `f031-tyt-geo-dik-ucgen-031-${index + 1}`,
+    { stem: true, hint: true, stepIndexes: [0, 1, 2], ...(index === 2 ? { optionIndexes: [0, 1, 2, 3, 4] } : {}) },
+  ]),
+  ["n1", { stem: true, hint: true, stepIndexes: [0, 1] }],
+  ["f021-donusum-oteleme-donme-1", { stem: true, hint: true, stepIndexes: [0, 1, 2] }],
+  ["m1", { stem: true, hint: true, stepIndexes: [0, 1, 2] }],
+  ["f020-geo-dunya-sekli-hareket-1", { stem: true, hint: true, stepIndexes: [0, 1, 2] }],
   ["yay-dalgalari-atma-uretme-suresi", { stem: true, hint: true, stepIndexes: [0, 1] }],
   ["dalgalara-giris-titresim-yonu-cizimleri", { stem: true, hint: true, stepIndexes: [0, 1] }],
   ["yay-dalgalari-tepe-cukur-karsilasma-sekli", { stem: true, hint: true, stepIndexes: [0, 1] }],
