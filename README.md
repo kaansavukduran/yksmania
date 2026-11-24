@@ -4,6 +4,8 @@
 
 **Son yayımlanan web ve masaüstü sürümü 0.123.0**. Eşit gerilen iki yayda atmanın aldığı yolu ve Kopya Kağıdı’ndaki sürat hesabını çevrimdışı inceleyebilirsin. [Windows ve Linux 0.123](https://github.com/kaansavukduran/yksmania/releases/tag/v0.123.0-alpha.1) · [Önceki 0.103 sürümü](https://github.com/kaansavukduran/yksmania/releases/tag/v0.103.0-alpha.1)
 
+**0.135.0 adayı** Valletta’daki gerçek dalgakıran fotoğrafını çevrimdışı açıyor. Kopya Kağıdı, fotoğraftan görülenlerle ayrıca ölçülmesi gerekenleri ayırıyor. Büyütülen fotoğrafı klavyeyle kaydırabilirsin. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+
 **0.134.0 adayı** tümsek engelde cephelerin nasıl dağıldığını ve sanal F’nin yerini gösteriyor. Yüzey normali ve diklik işareti Kopya Kağıdı’nda ayrı çizimde açılıyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.133.0 adayı** dairesel dalga düz engelden dönünce, yansıyan okların uzantısının yansıma çiziminde nerede birleştiğini gösteriyor. Kopya Kağıdı gerçek O ile sanal O′’nün uzaklığını ölçüyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)

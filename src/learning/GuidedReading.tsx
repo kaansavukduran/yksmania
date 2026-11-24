@@ -260,7 +260,7 @@ export function GuidedReading({
       if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey) return;
       if (event.key !== "ArrowRight" && event.key !== "ArrowLeft") return;
       const el = event.target as HTMLElement | null;
-      if (el?.closest("input, textarea, select, [contenteditable='true'], [role='slider'], [role='tablist'], [role='radiogroup'], [role='radio'], [role='listbox'], [role='menu'], [role='grid'], svg, .visual-lab")) return;
+      if (el?.closest("dialog, [role='dialog'], input, textarea, select, [contenteditable='true'], [role='slider'], [role='tablist'], [role='radiogroup'], [role='radio'], [role='listbox'], [role='menu'], [role='grid'], svg, .visual-lab")) return;
       const next = event.key === "ArrowRight" ? current + 1 : current - 1;
       if (next < 0 || next > stages - 1) return;
       event.preventDefault();

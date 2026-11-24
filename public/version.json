@@ -1,8 +1,8 @@
 {
-  "version": "0.134.0",
+  "version": "0.135.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Düz cepheleri tümsek engele gönder. Dönen cephelerin nasıl dağıldığını, normalin ve sanal odağın yerini ayrı çizimlerde incele.",
-    "en": "Send plane crests toward a convex barrier. See how the reflections spread, and locate the normal and virtual focus in separate figures."
+    "tr": "Valletta limanındaki gerçek dalgakıran fotoğrafını incele. Köpükten neyi görebileceğini ve hangi büyüklüklerin ayrı ölçüm istediğini ayır.",
+    "en": "Inspect an actual breakwater photo from Valletta. Separate what you can see from the quantities that require measurement."
   }
 }

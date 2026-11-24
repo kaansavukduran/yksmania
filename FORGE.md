@@ -1,3 +1,9 @@
+# Dalgakıran fotoğrafı ve klavye · 0.135.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 160, basılı 158. Kıyı engelinin rolü Valletta’daki ayrı bir gerçek fotoğrafla açıklanıyor. Kopya Kağıdı çözümde aynı fotoğrafı açıyor. Fotoğraf 960 px, RenataAp, Wikimedia Commons, CC BY-SA 4.0. [Fotoğraf](https://commons.wikimedia.org/w/index.php?oldid=1180557315&title=File%3AHuge_waves_crash_against_the_breakwater_and_Fort_Ricasoli_at_the_entrance_to_Valletta%27s_Grand_Harbour%2C_Malta.jpg) · [Lisans](https://creativecommons.org/licenses/by-sa/4.0/)
+
+Büyütülmüş görsel açıkken sağ ok arkadaki anlatım sayfasını çeviriyordu. Anlatımın kısayolu diyalog odaklıyken devreden çıkıyor. Aynı klavye akışı ve sayfa gezinmesi tekrar geçti. Check, 323 çevrimdışı dosya, ilk yedi ve son altı gerçek Chromium akışı geçti. Sıradaki iş fiziksel 159’daki düz engelin açı ve tepe aralığını ölçen özgün soru.
+
 # Tümsek engelde sanal odak ve normal · 0.134.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 160, basılı 158. Düz cepheler tümsek engelden döndükten sonra birbirinden uzaklaşır. Kesikli çizgiler sanal F’nin yaklaşık yerini gösterir. Ayrı Kopya Kağıdı temas noktasındaki 90° işaretini ve yansıyan cepheleri kendi adımlarında açıyor.

@@ -1,8 +1,10 @@
 import "./sectionFigures.css";
 import { SectionFigureView, type FigureDef } from "./figureKit";
-import { SourceQuestionFigure } from "../SourceQuestionFigure";
+import { SourceQuestionFigure, type SourceQuestionFigureSpec } from "../SourceQuestionFigure";
 import { thermographySourceURL } from "../mebiThermography";
 import { thermographyPhoto } from "./mebiThermographyPhoto";
+import { coastalWaterLicence, coastalWaterSource } from "../mebiCoastalWater";
+import { coastalWaterPhoto } from "./mebiCoastalWaterPhoto";
 import { visibleMirrorRayTitle } from "../mebiVisibleMirror";
 import { visibleMirrorPhoto, visibleMirrorPhotoSource } from "./mebiVisibleMirrorPhoto";
 import { handRadiograph, handRadiographSource } from "./mebiHandRadiograph";
@@ -395,7 +397,21 @@ const waveLessonPhotos = new Map([
   [visibleMirrorPhoto.title, { figure: visibleMirrorPhoto, url: visibleMirrorPhotoSource, credit: "Jake Weirick · Wikimedia Commons · CC0 1.0" }],
   [handRadiograph.title, { figure: handRadiograph, url: handRadiographSource, credit: "Jochen Lengerke · Wikimedia Commons · CC0 1.0" }],
 ]);
-export const sectionImageFigures = new Map([["dalgalara-giris", waveLessonPhotos]]);
+type LessonPhoto = {
+  figure: Extract<SourceQuestionFigureSpec, { kind: "image" }>;
+  url: string;
+  credit: string;
+  licence?: string;
+};
+export const sectionImageFigures = new Map<string, Map<string, LessonPhoto>>([
+  ["dalgalara-giris", waveLessonPhotos],
+  ["su-dalgalari", new Map([[coastalWaterPhoto.title, {
+    figure: coastalWaterPhoto,
+    url: coastalWaterSource,
+    credit: "RenataAp · Wikimedia Commons · 960 px",
+    licence: coastalWaterLicence,
+  }]])],
+]);
 
 export function SectionFigure({
   guideId,
@@ -419,6 +435,12 @@ export function SectionFigure({
           <a className="small" href={photo.url} target="_blank" rel="noopener noreferrer">
             {photo.credit}
           </a>
+          {photo.licence && (
+            <>
+              {" · "}
+              <a className="small" href={photo.licence} target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+            </>
+          )}
         </>
       ) : def && <SectionFigureView def={def} title={title} />}
     </>
