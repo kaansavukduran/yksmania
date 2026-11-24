@@ -13,6 +13,8 @@ import { ultrasoundTitle } from "../mebiUltrasound";
 import { ultrasoundPhoto } from "./mebiUltrasoundPhoto";
 import { roomAcousticsTitle } from "../mebiRoomAcoustics";
 import { selimiyePhoto } from "./mebiSelimiyePhoto";
+import { isolationTitle, shakingDamageTitle } from "../mebiSeismicIsolation";
+import { golbasiDamagePhoto, pasadenaBearingPhoto } from "./mebiSeismicObservationsPhotos";
 import { visibleMirrorRayTitle } from "../mebiVisibleMirror";
 import { visibleMirrorPhoto, visibleMirrorPhotoSource } from "./mebiVisibleMirrorPhoto";
 import { handRadiograph, handRadiographSource } from "./mebiHandRadiograph";
@@ -225,6 +227,15 @@ import { turkishFigures061Meaning } from "./turkishFigures061Meaning";
 import { turkishFigures061Grammar } from "./turkishFigures061Grammar";
 import { philosophyFigures061Modern } from "./philosophyFigures061Modern";
 import { philosophyFigures061Intro } from "./philosophyFigures061Intro";
+import { biologyFigures062Animals } from "./biologyFigures062Animals";
+import { biologyFigures062Method } from "./biologyFigures062Method";
+import { biologyFigures062Molecules } from "./biologyFigures062Molecules";
+import { biologyFigures062Vitamins } from "./biologyFigures062Vitamins";
+import { geographyFigures062Water } from "./geographyFigures062Water";
+import { geographyFigures062Human } from "./geographyFigures062Human";
+import { religionFigures062Rulings } from "./religionFigures062Rulings";
+import { religionFigures062Values } from "./religionFigures062Values";
+import { religionFigures062Belief } from "./religionFigures062Belief";
 
 /*
  * Figure packs are merged per guide. A plain object spread replaced a whole
@@ -442,6 +453,15 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   turkishFigures061Grammar,
   philosophyFigures061Modern,
   philosophyFigures061Intro,
+  biologyFigures062Animals,
+  biologyFigures062Method,
+  biologyFigures062Molecules,
+  biologyFigures062Vitamins,
+  geographyFigures062Water,
+  geographyFigures062Human,
+  religionFigures062Rulings,
+  religionFigures062Values,
+  religionFigures062Belief,
 ];
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {};
 for (const pack of figurePacks)
@@ -466,9 +486,11 @@ const soundPhotoGroups: Record<string, { name: string; photos: readonly LessonPh
   [tacomaTitle]: { name: "Tacoma Narrows arşiv kareleri", photos: tacomaPhotos },
   [ultrasoundTitle]: { name: "Ultrason cihazı fotoğrafı", photos: [ultrasoundPhoto] },
   [roomAcousticsTitle]: { name: "Selimiye Camii fotoğrafı", photos: [selimiyePhoto] },
+  [isolationTitle]: { name: "İzolatör fotoğrafı", photos: [pasadenaBearingPhoto] },
 };
 export const sectionImageFigures = new Map<string, Map<string, LessonPhoto>>([
   ["dalgalara-giris", waveLessonPhotos],
+  ["ses-deprem-dalgalari", new Map([[shakingDamageTitle, golbasiDamagePhoto]])],
   ["su-dalgalari", new Map([[coastalWaterPhoto.title, {
     figure: coastalWaterPhoto,
     url: coastalWaterSource,

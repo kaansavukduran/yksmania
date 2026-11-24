@@ -4,6 +4,8 @@
 
 **Web ve masaüstü sürümü 0.141.0**. Fanusta hava azalırken sesin hangi yoldan taşındığını ve saatin çalışmasını incele. Kopya Kağıdı deney çizimlerini ve sürat tablolarını çevrimdışı açıyor. [Windows ve Linux 0.141](https://github.com/kaansavukduran/yksmania/releases/tag/v0.141.0-alpha.1) · [Önceki 0.123 sürümü](https://github.com/kaansavukduran/yksmania/releases/tag/v0.123.0-alpha.1)
 
+**0.162.0 adayı** deprem hasarı ile kolon altı izolatörü gerçek fotoğraflarda gösteriyor. Temel ile üst yapı bağlantısını ayrı kesitlerde karşılaştır. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+
 **0.161.0 adayı** deniz tabanının suyu hareket ettirmesini ve iki derinlikteki tepe aralığını gösteriyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.160.0 adayı** deprem dalgasının odaktan yayılan halkalarını ve zaman içinde adlandırılan öncü, ana ve artçı dizisini çiziyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
@@ -230,20 +232,20 @@ Tablo, bu daldaki uygulama envanterini ve sürüm kayıtlarını gösterir. PDF 
 | TYT Türkçe | 33 / 33 | 33 · 128 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 0 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 340 | 321 / 321 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 343 | 321 / 321 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
-| TYT Biyoloji | 36 / 36 | 28 · 93 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 8 |
+| TYT Biyoloji | 36 / 36 | 36 · 139 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 0 |
 | TYT Tarih | 24 / 24 | 24 · 76 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 0 |
-| TYT Coğrafya | 40 / 40 | 34 · 126 | 400 / 400 · %100,00 | 5 / 40 · %12,50 | 45 soru · 9 kitapçık | 6 |
+| TYT Coğrafya | 40 / 40 | 40 · 159 | 400 / 400 · %100,00 | 5 / 40 · %12,50 | 45 soru · 9 kitapçık | 0 |
 | TYT Felsefe | 17 / 17 | 17 · 61 | 190 / 190 · %100,00 | 3 / 17 · %17,65 | 89 soru · 9 kitapçık | 0 |
-| TYT Din | 20 / 20 | 14 · 52 | 371 / 371 · %100,00 | 3 / 20 · %15,00 | 46 soru · 9 kitapçık | 6 |
+| TYT Din | 20 / 20 | 20 · 90 | 371 / 371 · %100,00 | 3 / 20 · %15,00 | 46 soru · 9 kitapçık | 0 |
 | AYT Matematik | 17 / 17 | 17 · 38 | 253 / 253 · %100,00 | 2 / 17 · %11,76 | 273 soru · 9 kitapçık | 0 |
 | AYT Geometri | 4 / 4 | 4 · 53 | 45 / 45 · %100,00 | 1 / 4 · %25,00 | 87 soru · 9 kitapçık | 0 |
 | AYT Fizik | 46 / 46 | 46 · 175 | 541 / 541 · %100,00 | 7 / 46 · %15,22 | 126 soru · 9 kitapçık | 0 |
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **478 · 2124** | **6.671 / 6.671 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **32** |
+| **Toplam** | **510 / 510** | **498 · 2244** | **6.671 / 6.671 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **12** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

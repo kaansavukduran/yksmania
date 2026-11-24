@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.162.0 · Deprem hasarı ve izolatör
+
+Yayın adayı. Gerçek iki fotoğrafı büyüt ve kolon ile temel arasındaki bağlantının yerini bul. Modelde doğrudan bağlı yapı ile izolatörlü yapıyı karşılaştır.
+
 # ÖSYM Mania 0.161.0 · Tsunaminin oluşumu
 
 Yayın adayı. Deniz tabanı yükseldiğinde suyun hareketini üç adımda izle. Aynı periyotta derinliği değiştir ve tepe aralıklarını ortak ölçekte karşılaştır.
