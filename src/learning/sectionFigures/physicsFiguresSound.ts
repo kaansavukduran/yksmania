@@ -4,6 +4,7 @@ import { bellJarCases, bellJarTitle } from "../mebiSoundMedium";
 import { animalPitchAt, animalPitchEqualTitle, animalPitchTitle, pitchStageLabels, pitchWindowMs } from "../mebiPitchSamples";
 import { bottleBlowTitle, bottleFill, bottlePitchAt, bottlePitchModes, bottlePitchTitle, bottleStrikeTitle } from "../mebiBottlePitch";
 import { wireAt, wireDiameter, wireDrawingTitle, wireFrequencyTitle, wireLengthM, wirePairTitle, wireStages, wireTensionN } from "../mebiWirePitch";
+import { lengthComparisonTitle, lengthExampleFigure, tensionComparisonTitle, tensionExampleFigure, tensionMultiples, vibratingLength } from "../mebiWireTensionLength";
 
 /*
  * Ses ve deprem dalgaları. The longitudinal wave moves real particle positions
@@ -130,16 +131,23 @@ const longitudinal: FigureDef = {
   },
 };
 
-function wirePairFrame(diameter: number, showFrequency: boolean): FigureFrame {
-  const kWire = wireAt(wireDiameter.min);
-  const lWire = wireAt(diameter);
-  const cycleWindowS = 2 / kWire.frequencyHz;
+type WireMeasure = "diameterMm" | "tensionN" | "lengthM";
+
+function wirePairFrame(second: ReturnType<typeof wireAt>, showFrequency: boolean, measure: WireMeasure = "diameterMm"): FigureFrame {
+  const first = wireAt(wireDiameter.min);
+  const cycleWindowS = 2 / first.frequencyHz;
+  const caseLabels = {
+    diameterMm: { names: ["K", "L"], unit: "mm", shared: `İki tel de ${fmt(wireLengthM)} m. Gerilimleri ${wireTensionN} N.` },
+    tensionN: { names: ["K", "M"], unit: "N", shared: `Tel boyu ${fmt(wireLengthM)} m, çap ${fmt(wireDiameter.min)} mm.` },
+    lengthM: { names: ["Uzun K", "Kısa K"], unit: "m", shared: `İki gerilim ${wireTensionN} N. Tel çapı ${fmt(wireDiameter.min)} mm.` },
+  }[measure];
+  const [firstName, secondName] = caseLabels.names;
   const wires = [
-    { name: "K", state: kWire, tone: "a", y: 6.0 },
-    { name: "L", state: lWire, tone: "c", y: 2.15 },
+    { name: firstName, state: first, tone: "a", y: 6.0 },
+    { name: secondName, state: second, tone: "c", y: 2.15 },
   ] as const;
   const elements = wires.flatMap(({ name, state, tone, y }): El[] => {
-    const label = `${name}: ${fmt(state.diameterMm)} mm`;
+    const label = `${name}: ${fmt(state[measure], 3)} ${caseLabels.unit}`;
     if (showFrequency) {
       const cycles = state.frequencyHz * cycleWindowS;
       const wave = Array.from({ length: 141 }, (_, i) =>
@@ -152,15 +160,21 @@ function wirePairFrame(diameter: number, showFrequency: boolean): FigureFrame {
       ];
     }
     const thickness = state.diameterMm * 0.10;
+    const end = 1 + 7.58 * state.lengthM / wireLengthM;
+    const loadCount = state.tensionN / wireTensionN;
+    const weights = Array.from({ length: loadCount }, (_, i) => {
+      const top = y - 1.02 - i * 0.56;
+      return poly([v(end+0.30, top), v(end+0.96, top), v(end+0.96, top-0.48), v(end+0.30, top-0.48)], { tone: "ink", fill: "muted" });
+    });
     return [
-      poly([v(0.45, y-0.28), v(8.5, y-0.28), v(8.5, y-0.7), v(0.45, y-0.7)], { tone: "muted", fill: "muted" }),
+      poly([v(0.45, y-0.28), v(end-0.08, y-0.28), v(end-0.08, y-0.7), v(0.45, y-0.7)], { tone: "muted", fill: "muted" }),
       seg(v(1, y-0.4), v(1, y+0.24), { tone: "ink", bold: true }),
-      poly([v(1, y-thickness), v(8.58, y-thickness), v(8.58, y+thickness), v(1, y+thickness)], { tone, fill: tone, thin: true }),
-      circle(v(8.9, y-0.26), 0.36, { tone: "ink", fill: "muted" }),
-      poly([v(8.58, y+thickness), v(8.87, y+0.1), v(9.21, y-0.12), v(9.21, y-1.02)], { tone, open: true, bold: true }),
-      poly([v(8.88, y-1.02), v(9.54, y-1.02), v(9.54, y-1.56), v(8.88, y-1.56)], { tone: "ink", fill: "muted" }),
-      txt(v(9.74, y-1.25), "G", "e", { small: true }),
-      txt(v(1, y+0.3), label, "ne", { tone, small: true }),
+      poly([v(1, y-thickness), v(end, y-thickness), v(end, y+thickness), v(1, y+thickness)], { tone, fill: tone, thin: true }),
+      circle(v(end+0.32, y-0.26), 0.36, { tone: "ink", fill: "muted" }),
+      poly([v(end, y+thickness), v(end+0.29, y+0.1), v(end+0.63, y-0.12), v(end+0.63, y-1.02)], { tone, open: true, bold: true }),
+      ...weights,
+      txt(v(end+1.16, y-1.25), loadCount === 1 ? "G" : `${loadCount}G`, "e", { small: true }),
+      txt(v(1, y+0.45), label, "ne", { tone, small: true }),
     ];
   });
   return {
@@ -172,9 +186,12 @@ function wirePairFrame(diameter: number, showFrequency: boolean): FigureFrame {
       ] : []),
     ],
     readout: [
-      `İki tel de ${fmt(wireLengthM)} m. Gerilimleri ${wireTensionN} N.`,
-      `K: ${fmt(kWire.frequencyHz, 1)} Hz. L: ${fmt(lWire.frequencyHz, 1)} Hz. L’nin frekansı K’nın ${fmt(lWire.frequencyHz / kWire.frequencyHz, 2)} katı.`,
-      showFrequency ? "Grafiklerin zaman ekseni aynı." : "Her iki makaranın ucundaki ağırlık G ile gösterilir.",
+      caseLabels.shared,
+      `${firstName}: ${fmt(first.frequencyHz, 1)} Hz. ${secondName}: ${fmt(second.frequencyHz, 1)} Hz.`,
+      measure === "diameterMm" ? `L’nin frekansı K’nın ${fmt(second.frequencyHz / first.frequencyHz, 2)} katı.`
+        : `İkinci telin frekansı ilkinin ${fmt(second.frequencyHz / first.frequencyHz, 2)} katı.`,
+      showFrequency ? "Grafiklerin zaman ekseni aynı." :
+        measure === "tensionN" ? "G bir ağırlığı, 2G iki eş ağırlığı gösterir." : "Her iki makaranın ucundaki ağırlık G ile gösterilir.",
     ],
   };
 }
@@ -184,7 +201,25 @@ const wirePair: FigureDef = {
   alt: "Aynı uzunluktaki iki tel, makaralar üzerinden eşit G ağırlıklarıyla gerilir. Sonraki adım iki telin titreşimini aynı zaman ölçeğinde gösterir.",
   param: { label: "L telinin çapı", min: wireDiameter.min, max: wireDiameter.max, step: wireDiameter.step, init: wireDiameter.initial, unit: " mm" },
   steps: [...wireStages],
-  draw: (diameter, step) => wirePairFrame(diameter, step === 1),
+  draw: (diameter, step) => wirePairFrame(wireAt(diameter), step === 1),
+};
+
+const tensionComparison: FigureDef = {
+  caption: "K ve M tellerinin boyu eşit. M telinin ağırlık sayısını değiştir ve aynı süreli iki grafiği karşılaştır.",
+  alt: "K telinin makarasına bir G, aynı boy ve çaptaki M telinin makarasına ayarlanabilir sayıda eş G ağırlığı asılı. Sonraki adım eş süreli iki tel grafiğini gösterir.",
+  param: { label: "M telindeki ağırlık", min: tensionMultiples.min, max: tensionMultiples.max,
+    step: tensionMultiples.step, init: tensionMultiples.initial, unit: "G" },
+  steps: [...wireStages],
+  draw: (multiple, step) => wirePairFrame(wireAt(wireDiameter.min, wireTensionN * multiple), step === 1, "tensionN"),
+};
+
+const lengthComparison: FigureDef = {
+  caption: "K telinin titreşen boyunu değiştir. İki G ağırlığını sabit tutup aynı sürede kaç salınım olduğunu gör.",
+  alt: "Uzun K ve kısa K telinin sağdaki makaraları farklı konumda. Her makaranın altında bir G ağırlığı. Sonraki adımda iki grafiğin zamanı eşit.",
+  param: { label: "Kısa bölümün boyu", min: vibratingLength.min, max: vibratingLength.max,
+    step: vibratingLength.step, init: vibratingLength.initial, unit: " m" },
+  steps: [...wireStages],
+  draw: (length, step) => wirePairFrame(wireAt(wireDiameter.min, wireTensionN, length), step === 1, "lengthM"),
 };
 
 function bottlePitchFrame(percent: number, blowing: boolean): FigureFrame {
@@ -449,15 +484,27 @@ export const physicsFiguresSound: Record<string, Record<string, FigureDef>> = {
     [animalPitchTitle]: animalPitch,
     [bottlePitchTitle]: bottlePitch,
     [wirePairTitle]: wirePair,
+    [tensionComparisonTitle]: tensionComparison,
+    [lengthComparisonTitle]: lengthComparison,
+    [tensionExampleFigure]: {
+      caption: "Bir ve dört G karşılaştırması. İki grafikte eşit süredeki salınımları say.",
+      alt: "Aynı sürede bir G ile gerilen tel iki, dört G ile gerilen tel dört tam salınım yapıyor.",
+      draw: () => wirePairFrame(wireAt(wireDiameter.min, wireTensionN * 4), true, "tensionN"),
+    },
+    [lengthExampleFigure]: {
+      caption: "Gerilimler eşit. Boy yarıya indiğinde aynı süredeki salınım sayısını karşılaştır.",
+      alt: "Aynı sürede uzun K iki, yarı uzunluktaki K dört tam salınım yapıyor.",
+      draw: () => wirePairFrame(wireAt(wireDiameter.min, wireTensionN, wireLengthM / 2), true, "lengthM"),
+    },
     [wireDrawingTitle]: {
       caption: "İki makarada aynı G ağırlığı var. Tellerin boylarını ve farklı çaplarını karşılaştır.",
       alt: "K ve L telleri aynı boyda, uçlarında aynı G ağırlıkları asılı. Alt sıradaki L teli daha kalın.",
-      draw: () => wirePairFrame(wireDiameter.initial, false),
+      draw: () => wirePairFrame(wireAt(wireDiameter.initial), false),
     },
     [wireFrequencyTitle]: {
       caption: "Aynı zaman aralığında ince telin iki, kalın telin bir salınımını karşılaştır.",
       alt: "Aynı zaman aralığında K telinde iki, L telinde bir tam salınım görünüyor.",
-      draw: () => wirePairFrame(wireDiameter.initial, true),
+      draw: () => wirePairFrame(wireAt(wireDiameter.initial), true),
     },
     [bottleStrikeTitle]: {
       caption: "Metal çubukla aynı yerden vur ve yarı dolu şişenin camıyla suya bak.",

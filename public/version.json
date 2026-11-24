@@ -1,8 +1,8 @@
 {
-  "version": "0.144.0",
+  "version": "0.145.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Eşit gerilimli iki telden birinin çapını değiştir. İkisini aynı zaman grafiğinde karşılaştır ve frekans oranını ölç.",
-    "en": "Change the diameter of one of two strings held at equal tension. Compare their oscillations on the same time axis and read the frequency ratio."
+    "tr": "Eş tellerde gerilim veya titreşen boyu değiştir. İki ayrı düzenekte de sesin frekansını aynı süreli grafiklerle karşılaştır.",
+    "en": "Adjust string tension or vibrating length in two shared-time models. Compare the results and work out how to double the pitch."
   }
 }

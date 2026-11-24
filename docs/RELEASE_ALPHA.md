@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.145.0 · Gerilim, tel boyu ve frekans
+
+Yayın adayı. İlk düzende ağırlık sayısını, ikincide titreşen tel boyunu değiştir. Kopya Kağıdı her iki deneyde frekansın hangi değişimle iki katına çıktığını gösteriyor.
+
 # ÖSYM Mania 0.144.0 · İki telin kalınlığı
 
 Yayın adayı. İki telin gerilimi ve boyu eşitken birinin çapını değiştir. Sonraki adımda frekansları aynı zaman grafiğinde karşılaştır. Kopya Kağıdı eşit ağırlıkları ve yarım frekans oranını iki ayrı çizimle açıklıyor.

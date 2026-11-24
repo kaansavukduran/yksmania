@@ -9,12 +9,12 @@ export const wireLengthM = 0.75;
 export const wireTensionN = 20;
 const steelDensityKgM3 = 7850;
 
-export function wireAt(diameterMm: number) {
+export function wireAt(diameterMm: number, tensionN = wireTensionN, lengthM = wireLengthM) {
   const radiusM = diameterMm / 2000;
   const areaM2 = Math.PI * radiusM ** 2;
   const linearDensityKgM = steelDensityKgM3 * areaM2;
-  const speedMps = Math.sqrt(wireTensionN / linearDensityKgM);
-  return { diameterMm, linearDensityKgM, frequencyHz: speedMps / (2 * wireLengthM) };
+  const speedMps = Math.sqrt(tensionN / linearDensityKgM);
+  return { diameterMm, tensionN, lengthM, linearDensityKgM, frequencyHz: speedMps / (2 * lengthM) };
 }
 
 export const wirePairSection: GuideSection = {
