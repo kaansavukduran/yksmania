@@ -1,8 +1,8 @@
 {
-  "version": "0.152.0",
+  "version": "0.153.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Teknenin sonar başlığından sürüye giden ve geri dönen sesi izle. Ölçülen süreyi değiştirip balık sürüsünün düşey uzaklığını bul.",
-    "en": "Follow sound from the boat to the shoal and back. Change the measured delay to find the vertical distance to the fish."
+    "tr": "Ultrason başlığını gerçek fotoğrafta gör. Jel ve doku çiziminde iki yankı süresini karşılaştırıp hangi sınırın daha yakın olduğunu bul.",
+    "en": "Open a real ultrasound photograph. Compare the echo times of two tissue boundaries to find which is closer to the probe."
   }
 }

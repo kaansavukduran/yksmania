@@ -1,4 +1,5 @@
 import type { GuideSection, WorkedExample } from "./guides/types";
+import { reflectedDistanceM } from "./reflectedDistance";
 
 export const sonarTitle = "Sonar balık sürüsüne olan uzaklığı ölçer";
 export const sonarPulseTitle = "Ses teknenin altından suya gönderilir";
@@ -7,7 +8,7 @@ export const sonarSpeedMS = 1500;
 export const sonarDelay = { min: 40, max: 160, step: 20, init: 120 } as const;
 
 export function sonarDistanceM(delayMs: number) {
-  return sonarSpeedMS * delayMs / 2000;
+  return reflectedDistanceM(sonarSpeedMS, delayMs / 1000);
 }
 
 export const sonarSection: GuideSection = {

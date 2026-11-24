@@ -1,4 +1,5 @@
 import type { GuideSection, WorkedExample } from "./guides/types";
+import { reflectedDistanceM } from "./reflectedDistance";
 
 export const echoTitle = "Yankının iki yönlü yolunu ölç";
 export const echoOutwardTitle = "0,20 saniye iki yönü kapsar";
@@ -8,7 +9,7 @@ export const echoTravelSeconds = 0.6;
 export const echoTimeMs = { min: 100, max: 400, step: 50, init: 200 } as const;
 
 export function echoDistanceM(roundTripMs: number) {
-  return echoSpeedMS * roundTripMs / 2000;
+  return reflectedDistanceM(echoSpeedMS, roundTripMs / 1000);
 }
 
 export const echoSection: GuideSection = {
