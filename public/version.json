@@ -1,8 +1,8 @@
 {
-  "version": "0.169.0",
+  "version": "0.170.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Crookes radyometresinin gerçek fotoğrafını büyüt. İki adımda kanadın ısınmasını ve gazın kenardaki hareketini incele.",
-    "en": "Open a credited Crookes radiometer photograph and follow two steps showing vane heating and gas motion at its edge."
+    "tr": "Aynı duvardaki iki alıcının aydınlanmasını karşılaştır. Soru çizimi, ipucu ve adım adım çözüm kendi sırasında açılır.",
+    "en": "Compare two receivers on one wall. The stem, hint and worked solution each show their own evidence."
   }
 }

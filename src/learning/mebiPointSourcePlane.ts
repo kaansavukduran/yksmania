@@ -6,11 +6,19 @@ export const obliqueSpotTitle = "Işığın eğik ulaştığı A noktası";
 export const normalDistanceM = 3;
 export const intensityCd = 225;
 
-export function lightAtOffset(offsetM: number) {
-  const distanceM = Math.hypot(normalDistanceM, offsetM);
-  const normalCosine = normalDistanceM / distanceM;
-  const angleDeg = Math.atan2(offsetM, normalDistanceM) * 180 / Math.PI;
+export function pointSourceIlluminance({ intensityCd, normalM, offsetM }: {
+  intensityCd: number;
+  normalM: number;
+  offsetM: number;
+}) {
+  const distanceM = Math.hypot(normalM, offsetM);
+  const normalCosine = normalM / distanceM;
+  const angleDeg = Math.atan2(offsetM, normalM) * 180 / Math.PI;
   return { distanceM, normalCosine, angleDeg, illuminanceLux: intensityCd * normalCosine / distanceM ** 2 };
+}
+
+export function lightAtOffset(offsetM: number) {
+  return pointSourceIlluminance({ intensityCd, normalM: normalDistanceM, offsetM });
 }
 
 export const pointSourcePlaneSection: GuideSection = {

@@ -8,6 +8,7 @@ import { springOverlapQuestion } from "../learning/springOverlapQuestion128";
 import { waterReflectionQuestion } from "../learning/waterReflectionQuestion136";
 import { soundLevelQuestion } from "../learning/soundLevelQuestion148";
 import { sonarDistanceQuestion } from "../learning/sonarQuestion157";
+import { pointIlluminanceQuestion } from "../learning/pointIlluminanceQuestion170";
 import { springDensityQuestion } from "../learning/springDensityQuestion124";
 import { countingLessons034035 } from "../learning/countingSources034035";
 import { permutationLessons032033 } from "../learning/permutationSources032033";
@@ -1032,6 +1033,7 @@ const baseLessons: Lesson[] = [
   ...forge014TurkishLessons,
   ...forge012MathLessons,
   ...forge012PhysicsLessons.map((lesson) => {
+    if (lesson.id === "isik-bilgisi") return { ...lesson, questions: [...lesson.questions, pointIlluminanceQuestion] };
     if (lesson.id === "su-dalgalari") return { ...lesson, questions: [...lesson.questions, waterReflectionQuestion] };
     if (lesson.id === "ses-deprem-dalgalari") return { ...lesson, questions: [...lesson.questions, soundLevelQuestion, sonarDistanceQuestion] };
     return lesson;

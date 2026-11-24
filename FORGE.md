@@ -1,3 +1,9 @@
+# İki ışık alıcısı sorusu · 0.170.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 171, basılı 169. A ve B ışın geometrisi özgün sayılarla soruya taşındı. İlk çizim verilenleri, ipucu normal ile eğik ışını, çözüm iki ışık yolunu ve aydınlanma tablosunu gösteriyor.
+
+6.672 kartın içerik denetimi, TypeScript, 330 çevrimdışı dosyalı derleme, 7 dosyada 15 birim ve 7 Chromium akışı geçti. 320 px ekranda üç çizim ayrı aşamada okunuyor. İpucu ve çözümün kayıtları çevrimdışı yeniden yüklemede korundu. Yanlış seçim, aynı soru ve görsel revizyonlarıyla açıldı. Sıradaki fiziksel 172, basılı 170. Saydam, yarı saydam ve opak yüzeylerin arkasında ışığın nasıl dağıldığını gösteren örnekler.
+
 # Crookes radyometresinin fotoğrafı ve kanat kesiti · 0.169.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 171, basılı 169. Tarihsel cihazın lisanslı fotoğrafı büyütülebiliyor. Özgün kesit, koyu yüzün ısınmasını ve düşük basınçlı gazın kanat kenarındaki etkisini iki adımda gösteriyor. [Timeline fotoğrafı](https://commons.wikimedia.org/w/index.php?title=File:Crookes_radiometer.jpg&oldid=871293119) · [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) · [ASU deney açıklaması](https://pirt.asu.edu/node/5971)
@@ -984,7 +990,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 33 · 128 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 0 |
 | TYT Matematik | 45 / 45 | 45 · 168 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 0 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 372 | 321 / 321 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 372 | 322 / 322 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 139 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 0 |
 | TYT Tarih | 24 / 24 | 24 · 76 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 0 |
@@ -997,14 +1003,14 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2330** | **6.671 / 6.671 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2330** | **6.672 / 6.672 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
 | Tarihsel dal kaydı: okunan veya eşlenen PDF / eski envanter | 119 / 8.981 |
 | Tarihsel 99_ÖSYM kaydı: uygulama karşılığı olan / 20 Kasım envanteri | 18 / 1.001 |
 | 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 76 |
-| Kademeli çözüm paneli bulunan soru | 6.671 / 6.671 · %100,00 |
+| Kademeli çözüm paneli bulunan soru | 6.672 / 6.672 · %100,00 |
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
 | Ara hatırlama (mikro ritim): ders · soru | 505 / 510 · %99,02 · 3.052 soru |

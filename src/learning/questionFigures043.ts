@@ -26,6 +26,7 @@ import { springOverlapQuestion, springOverlapQuestionFigures } from "./springOve
 import { waterReflectionQuestion, waterReflectionQuestionFigures } from "./waterReflectionQuestion136";
 import { soundLevelQuestion, soundLevelQuestionFigures } from "./soundLevelQuestion148";
 import { sonarDistanceQuestion, sonarDistanceQuestionFigures } from "./sonarQuestion157";
+import { pointIlluminanceQuestion, pointIlluminanceQuestionFigures } from "./pointIlluminanceQuestion170";
 import { springDensityQuestion, springDensityQuestionFigures } from "./springDensityQuestion124";
 import {
   inverseTranslationFigures,
@@ -301,6 +302,16 @@ const sonarQuestion = {
   guidance: sonarDistanceQuestion.guidance,
 };
 
+const illuminationQuestion = {
+  id: pointIlluminanceQuestion.id,
+  prompt: pointIlluminanceQuestion.prompt.tr,
+  options: pointIlluminanceQuestion.options.map((option) => option.tr),
+  answer: pointIlluminanceQuestion.answer,
+  hint: pointIlluminanceQuestion.hint.tr,
+  explanation: pointIlluminanceQuestion.explanation.tr,
+  guidance: pointIlluminanceQuestion.guidance,
+};
+
 const densityQuestion = {
   id: springDensityQuestion.id,
   prompt: springDensityQuestion.prompt.tr,
@@ -453,6 +464,14 @@ const bindings = new Map<string, FigureBinding>([
     pageLabel: "Fiziksel 166. sayfa, basılı 164",
     itemLabel: "Sonar şemasından yankı süresi ve derinlik, özgün öğretim sorusu",
     figures: sonarDistanceQuestionFigures,
+  }],
+  [illuminationQuestion.id, {
+    stemRevision: stemRevision(illuminationQuestion),
+    helpRevision: helpRevision(illuminationQuestion, illuminationQuestion.guidance),
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 171. sayfa, basılı 169",
+    itemLabel: "İki alıcıda uzaklık ve geliş açısı, özgün öğretim sorusu",
+    figures: pointIlluminanceQuestionFigures,
   }],
   [densityQuestion.id, {
     stemRevision: stemRevision(densityQuestion),

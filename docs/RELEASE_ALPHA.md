@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.170.0 · Işık alıcıları sorusu
+
+Yayın adayı. İki alıcıyı kendi şekli, ayrı ipucu çizimi ve aşamalı çözüm tablosuyla karşılaştır.
+
 # ÖSYM Mania 0.169.0 · Crookes radyometresi
 
 Yayın adayı. Gerçek cihazın kanatlarını fotoğrafta incele. Koyu yüzün ısınmasını ve gazın hareketini ayrı çizimlerde oku.
