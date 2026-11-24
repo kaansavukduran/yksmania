@@ -76,3 +76,97 @@ for (const width of [320, 375, 1280]) {
     }
   });
 }
+
+/*
+ * Forge064: the TYT Matematik source lessons (Forge062) and the TYT Geometri
+ * cheat-sheet figures (Forge063) in all six themes at 320 and 1280 px. Each
+ * theme keeps three distinct colour keys (axolotl and trans had collapsed
+ * them into one blue), a selectable label keeps 4.5:1 on its pill, axe finds
+ * nothing in the figures, and the keyboard keeps its place: a step button
+ * that becomes disabled at either end hands focus to the other step button,
+ * and a focused selected item still shows the focus outline.
+ */
+const pillContrast = () => {
+  const rgb = (c: string) => {
+    const s = c.match(/color\(srgb ([^)]+)\)/);
+    if (s) return s[1].split(/[ /]+/).slice(0, 3).map((x) => +x * 255);
+    const m = c.match(/rgba?\(([^)]+)\)/);
+    return (m ? m[1] : "0,0,0").split(/[ ,/]+/).slice(0, 3).map(Number);
+  };
+  const lum = (c: number[]) => {
+    const [r, g, b] = c.map((x) => (x / 255 <= 0.03928 ? x / 255 / 12.92 : ((x / 255 + 0.055) / 1.055) ** 2.4));
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  };
+  const out: string[] = [];
+  for (const t of document.querySelectorAll("figure.section-figure .sf-pick-group text")) {
+    const pill = t.parentElement?.querySelector(".sf-pick-pill");
+    if (!pill) continue;
+    const a = lum(rgb(getComputedStyle(t).fill));
+    const b = lum(rgb(getComputedStyle(pill).fill));
+    const k = (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+    if (k < 4.5) out.push(`${t.textContent} ${k.toFixed(2)}:1`);
+  }
+  return out;
+};
+for (const width of [320, 1280])
+  test(`064 TYT kaynak ve kopya figürleri altı temada ${width}px`, async ({ page }) => {
+    test.setTimeout(240_000);
+    await page.emulateMedia({ reducedMotion: "reduce" });
+    await page.setViewportSize({ width, height: 900 });
+    for (const guide of ["tyt-mat-asal-kaynak-032", "tyt-mat-olasilik-kaynak-036", "tyt-geo-ucgen-merkezleri-031"]) {
+      await openGuideDrawings(page, guide);
+      await expect(page.locator("figure.section-figure svg").first()).toBeVisible();
+      for (const theme of THEMES) {
+        await page.evaluate((t) => document.documentElement.setAttribute("data-theme", t), theme);
+        const keys = await page.evaluate(() => {
+          const fig = document.querySelector("figure.section-figure")!;
+          return ["--sf-a", "--sf-b", "--sf-c"].map((v) => {
+            const el = document.createElement("span");
+            el.style.color = `var(${v})`;
+            fig.append(el);
+            const c = getComputedStyle(el).color;
+            el.remove();
+            return c;
+          });
+        });
+        expect(new Set(keys).size, `${guide} · ${theme} renk anahtarları ${keys.join(" ")}`).toBe(3);
+        expect(await page.evaluate(pillContrast), `${guide} · ${theme} seçim etiketi`).toEqual([]);
+        const r = (await page.evaluate(svgLayoutAudit, { figuresOnly: true })) as { issues: Issue[] };
+        expect(r.issues.map((i) => issueLine(guide, i)), `${guide} · ${theme}`).toEqual([]);
+        const axe = await new AxeBuilder({ page }).include("figure.section-figure").analyze();
+        expect(axe.violations.map((v) => `${v.id}: ${v.nodes.length}`), `${guide} · ${theme} axe`).toEqual([]);
+      }
+      await page.evaluate(() => document.documentElement.setAttribute("data-theme", "dark"));
+      // Keyboard only: walk the first stepped figure to its end and back.
+      const fig = page
+        .locator("figure.section-figure")
+        .filter({ has: page.getByRole("button", { name: "İleri", exact: true }) })
+        .first();
+      const next = fig.getByRole("button", { name: "İleri", exact: true });
+      const back = fig.getByRole("button", { name: "Geri", exact: true });
+      await next.focus();
+      while (!(await next.isDisabled())) await page.keyboard.press("Enter");
+      await expect(back, `${guide} son adımda odak Geri'de`).toBeFocused();
+      while (!(await back.isDisabled())) await page.keyboard.press("Enter");
+      await expect(next, `${guide} ilk adımda odak İleri'de`).toBeFocused();
+      const range = page.locator("figure.section-figure input[type=range]").first();
+      if (await range.count()) {
+        await range.focus();
+        await page.keyboard.press("End");
+        expect(await range.inputValue(), `${guide} kaydırıcı End`).toBe(await range.getAttribute("max"));
+        await page.keyboard.press("Home");
+        expect(await range.inputValue(), `${guide} kaydırıcı Home`).toBe(await range.getAttribute("min"));
+      }
+      const pick = page.locator("figure.section-figure .sf-pick").first();
+      if (await pick.count()) {
+        await pick.focus();
+        await page.keyboard.press("Space");
+        await expect(pick).toHaveAttribute("aria-pressed", "true");
+        const ring = await pick.evaluate((e) => [e.matches(":focus-visible"), getComputedStyle(e).outlineStyle]);
+        expect(ring, `${guide} seçili öğede odak halkası`).toEqual([true, "solid"]);
+        // The selection itself is an inner ring, not the focus outline.
+        expect(await pick.evaluate((e) => getComputedStyle(e).boxShadow), `${guide} seçim işareti`).toContain("inset");
+        await page.keyboard.press("Space");
+      }
+    }
+  });

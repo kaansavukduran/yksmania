@@ -1307,6 +1307,17 @@ export function SectionFigureView({
   const [playing, setPlaying] = useState(false);
   const [pick, setPick] = useState(-1);
   const raf = useRef<number | undefined>(undefined);
+  // A step button that becomes disabled at either end would drop keyboard
+  // focus to the page; hand it to the other step button instead.
+  const backRef = useRef<HTMLButtonElement>(null);
+  const nextRef = useRef<HTMLButtonElement>(null);
+  const refocus = useRef<"back" | "next" | null>(null);
+  useEffect(() => {
+    const target = refocus.current;
+    refocus.current = null;
+    if (target === "back") backRef.current?.focus();
+    else if (target === "next") nextRef.current?.focus();
+  }, [step]);
   const frame = def.draw(value, step, pick);
   const togglePick = (i: number) => setPick((cur) => (cur === i ? -1 : i));
   const p = def.param;
@@ -1442,20 +1453,26 @@ export function SectionFigureView({
           {def.steps && (
             <div className="sf-steps" role="group" aria-label="Şekil adımları">
               <button
+                ref={backRef}
                 type="button"
                 className="secondary"
                 disabled={step === 0}
-                onClick={() => setStep((s) => Math.max(0, s - 1))}
+                onClick={(e) => {
+                  if (step <= 1 && document.activeElement === e.currentTarget) refocus.current = "next";
+                  setStep((s) => Math.max(0, s - 1));
+                }}
               >
                 Geri
               </button>
               <button
+                ref={nextRef}
                 type="button"
                 className="secondary"
                 disabled={step === def.steps.length - 1}
-                onClick={() =>
-                  setStep((s) => Math.min(def.steps!.length - 1, s + 1))
-                }
+                onClick={(e) => {
+                  if (step >= def.steps!.length - 2 && document.activeElement === e.currentTarget) refocus.current = "back";
+                  setStep((s) => Math.min(def.steps!.length - 1, s + 1));
+                }}
               >
                 İleri
               </button>
