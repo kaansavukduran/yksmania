@@ -204,6 +204,13 @@ import { biologyFigures061Chemo } from "./biologyFigures061Chemo";
 import { biologyFigures061Env } from "./biologyFigures061Env";
 import { physicsFigures061Motion } from "./physicsFigures061Motion";
 import { physicsFigures061Modern } from "./physicsFigures061Modern";
+import { historyFigures061TytWorld } from "./historyFigures061TytWorld";
+import { historyFigures061TytOttoman } from "./historyFigures061TytOttoman";
+import { historyFigures061TytEarly } from "./historyFigures061TytEarly";
+import { chemistryFigures061TytAtoms } from "./chemistryFigures061TytAtoms";
+import { chemistryFigures061TytLab } from "./chemistryFigures061TytLab";
+import { biologyFigures061TytLife } from "./biologyFigures061TytLife";
+import { biologyFigures061TytEnv } from "./biologyFigures061TytEnv";
 
 /*
  * Figure packs are merged per guide. A plain object spread replaced a whole
@@ -408,6 +415,13 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   biologyFigures061Env,
   physicsFigures061Motion,
   physicsFigures061Modern,
+  historyFigures061TytWorld,
+  historyFigures061TytOttoman,
+  historyFigures061TytEarly,
+  chemistryFigures061TytAtoms,
+  chemistryFigures061TytLab,
+  biologyFigures061TytLife,
+  biologyFigures061TytEnv,
 ];
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {};
 for (const pack of figurePacks)
