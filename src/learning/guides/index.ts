@@ -77,6 +77,7 @@ import { mirrorBodyWallExample, mirrorBodyWallSection } from "../mebiMirrorBodyW
 import { sphericalAxisSection, sphericalMirrorExample, sphericalSurfaceSection } from "../mebiSphericalMirror";
 import { concaveNormalExample, concaveNormalSection, curvatureFocusSection } from "../mebiConcaveRay";
 import { concaveSpecialExample, concaveSpecialSection } from "../mebiConcaveSpecialRays";
+import { concaveBoundaryExample, concaveBoundarySection } from "../mebiConcaveFocusBoundary";
 import { mirrorUsesExample, mirrorUsesSection } from "../mebiMirrorUses";
 import { concaveImageZonesExample, concaveImageZonesSection } from "../mebiConcaveImageZones";
 import { convexSpecialExample, convexSpecialSection } from "../mebiConvexSpecialRays";
@@ -623,10 +624,10 @@ export function studyGuide(lessonId: string) {
       ...guide,
       sections: [
         ...guide.sections, sphericalSurfaceSection, sphericalAxisSection, curvatureFocusSection,
-        concaveNormalSection, concaveSpecialSection, convexSpecialSection, concaveImageZonesSection, mirrorUsesSection,
+        concaveNormalSection, concaveSpecialSection, convexSpecialSection, concaveImageZonesSection, mirrorUsesSection, concaveBoundarySection,
       ],
-      examples: [...guide.examples, sphericalMirrorExample, concaveNormalExample, concaveSpecialExample, convexSpecialExample, concaveImageZonesExample, mirrorUsesExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 180, basılı 178. Kürenin iç ve dış yüzü, merkez, odak, tepe, asal eksen ve paralel ışın çizimleri yeniden kuruldu. Sayısal modelde küresel aynanın eksen dışındaki ışınları tam yansıma yasasıyla hesaplanıyor. Fiziksel 181, basılı 179. sayfadaki R ve iki eş f aralığı ile N noktasının normaline göre eş açılar etkileşimli çizildi. Fiziksel 182, basılı 180. sayfadaki altı çukur ayna ışını, her temasın yerel normali ve gerçek/sanal kesişimle ayrı kuruldu. Fiziksel 183, basılı 181. sayfanın dört tümsek ayna çiziminde F ve M doğrultuları kesik, gerçek yansıma kolları ön tarafta gösterildi. Fiziksel 184, basılı 182. sayfadaki paralel demet, merkez dışı ve merkez konumu çizimleri eksene yakın ışın modeliyle yeniden kuruldu. Aynı sayfadaki el, diş ve araç yan aynası kullanımları lisanslı gözlem fotoğrafları ve ayrı ışın modelleriyle eşlendi.`,
+      examples: [...guide.examples, sphericalMirrorExample, concaveNormalExample, concaveSpecialExample, convexSpecialExample, concaveImageZonesExample, mirrorUsesExample, concaveBoundaryExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 180, basılı 178. Kürenin iç ve dış yüzü, merkez, odak, tepe, asal eksen ve paralel ışın çizimleri yeniden kuruldu. Sayısal modelde küresel aynanın eksen dışındaki ışınları tam yansıma yasasıyla hesaplanıyor. Fiziksel 181, basılı 179. sayfadaki R ve iki eş f aralığı ile N noktasının normaline göre eş açılar etkileşimli çizildi. Fiziksel 182, basılı 180. sayfadaki altı çukur ayna ışını, her temasın yerel normali ve gerçek/sanal kesişimle ayrı kuruldu. Fiziksel 183, basılı 181. sayfanın dört tümsek ayna çiziminde F ve M doğrultuları kesik, gerçek yansıma kolları ön tarafta gösterildi. Fiziksel 184, basılı 182. sayfadaki paralel demet, merkez dışı ve merkez konumu çizimleri eksene yakın ışın modeliyle yeniden kuruldu. Aynı sayfadaki el, diş ve araç yan aynası kullanımları lisanslı gözlem fotoğrafları ve ayrı ışın modelleriyle eşlendi. Fiziksel 185, basılı 183 için merkez içi, odak ve tepe arası çizimleri ile uzaklık ve büyütme tablosu oluşturuldu.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

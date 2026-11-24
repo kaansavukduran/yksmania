@@ -1,3 +1,7 @@
+# Çukur aynada odak sınırı · 0.192.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 185, basılı 183. F ile M arasında gerçek ters görüntü, F’de paralel kollar ve T ile F arasında sanal düz görüntü ayrı çiziliyor. Beş uzaklık tablosu, cismin yön ve boyunu hesapla karşılaştırıyor. Önceki öğretim konumları korunarak bölüm sona eklendi. 3.036 odaklı birim, altı Chromium ve 320 px Axe geçti.
+
 # Günlük kullanımda üç ayna · 0.191.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 184, basılı 182. El aynası, diş aynası ve dış yan ayna için üç lisanslı fotoğrafla kullanım bağlamı korunuyor. Çukur büyütme, eş açılı dönüş ve tümsek küçültme ayrı çiziliyor. Kopya Kağıdı her çözüm adımını kendi çizimiyle açıyor. 320 px büyük yazıda klavye, fotoğraf büyütme, kaynak bağlantısı, Axe ve çevrimdışı kullanım geçti. Optik çalışması 0.145.0 tabanındaki sekiz Biyoloji ve Tarih kopyasını da içeriyor.
@@ -1126,7 +1130,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
 | TYT Matematik | 45 / 45 | 45 · 184 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
 | TYT Geometri | 19 / 19 | 19 · 176 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 442 | 323 / 323 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 446 | 323 / 323 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 155 | 515 / 515 · %100,00 | 11 / 36 · %30,56 | 54 soru · 9 kitapçık | 0 |
 | TYT Tarih | 24 / 24 | 24 · 92 | 390 / 390 · %100,00 | 8 / 24 · %33,33 | 45 soru · 9 kitapçık | 0 |
@@ -1139,7 +1143,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2482** | **6.673 / 6.673 · %100,00** | **133 / 517 · %25,73** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2486** | **6.673 / 6.673 · %100,00** | **133 / 517 · %25,73** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

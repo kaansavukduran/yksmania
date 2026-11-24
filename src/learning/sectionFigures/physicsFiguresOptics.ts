@@ -14,6 +14,7 @@ import { mirrorBodyWallFigures } from "./mebiMirrorBodyWallFigures";
 import { sphericalMirrorFigures } from "./mebiSphericalMirrorFigures";
 import { concaveRayFigures } from "./mebiConcaveRayFigures";
 import { concaveSpecialRayFigures } from "./mebiConcaveSpecialRayFigures";
+import { concaveBoundarySteps, concaveBoundaryTitle } from "../mebiConcaveFocusBoundary";
 import { mirrorUsesSteps, mirrorUsesTitle } from "../mebiMirrorUses";
 import { concaveImageZonesSteps, concaveImageZonesTitle } from "../mebiConcaveImageZones";
 import { convexSpecialRayFigures } from "./mebiConvexSpecialRayFigures";
@@ -423,7 +424,32 @@ const mirrorUseFrames: readonly FigureDef[] = [
   },
 ];
 
+const focusBoundaryFrames: readonly FigureDef[] = [
+  {
+    caption: "Cisim F ile M arasında. Gerçek yansıma kolları M’nin dışında ve asal eksenin altında birleşir.",
+    alt: "Cisim oku F ile M arasında. İki yansıma M’nin ötesinde, cisimden daha uzun ve ters görüntü okunun ucunda birleşiyor.",
+    draw: () => rayDiagram("mirror", 2, 3, 1, { centerLabel: "M", pathFromFocus: true }),
+  },
+  {
+    caption: "Cisim F’ye geldiğinde çıkan kollar paralel. Çizimde sonlu bir görüntü oku bulunmuyor.",
+    alt: "Cisim F’nin üzerinde. Çukur aynadan dönen iki ışın aynı yönde, birbirine paralel ilerliyor.",
+    draw: () => rayDiagram("mirror", 2, 2, 1, { centerLabel: "M" }),
+  },
+  {
+    caption: "Cisim T ile F arasında. Kesik geri uzantılar aynanın arkasında düz, büyük görüntünün ucunda buluşur.",
+    alt: "Küçük dik cisim oku F ile ayna arasında. Arkadaki kesik doğrular daha büyük, dik ve kesik görüntü okunda buluşuyor.",
+    draw: () => rayDiagram("mirror", 2, 1, 1, { centerLabel: "M" }),
+  },
+];
+
 const kureselAynalar: Record<string, FigureDef> = {
+  [concaveBoundaryTitle]: {
+    caption: "Cismi F’nin dışına, tam F’ye ve F’nin içine al. Işınların ya da geri uzantıların nerede buluştuğunu karşılaştır.",
+    alt: "Çukur aynanın odak sınırı için üç çizim. Görüntü türü ve boyu her adımın altında yazıyor.",
+    steps: [...concaveBoundarySteps],
+    draw: (_, step) => focusBoundaryFrames[step].draw(0, 0),
+  },
+  ...Object.fromEntries(concaveBoundarySteps.map((title, step) => [title, focusBoundaryFrames[step]])),
   [mirrorUsesTitle]: {
     caption: "Her fotoğraftaki kullanımı sırayla düşün. Modelde görüntünün yönünü, boyunu veya ışının dönüşünü oku.",
     alt: "Yakın büyütme, yön değiştirme ve yan aynanın küçültmesi için üç ayrı ışın çizimi.",

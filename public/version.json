@@ -1,8 +1,8 @@
 {
-  "version": "0.191.0",
+  "version": "0.192.0",
   "channel": "alpha",
   "notes": {
-    "tr": "El aynası, diş aynası ve dış yan aynayı fotoğraflarla tanı. Görüntünün boyunu ve ışının yönünü ayrı çizimlerde karşılaştır.",
-    "en": "Explore hand, dental and side-view mirrors in credited photos. Compare image size and ray direction in separate diagrams."
+    "tr": "Çukur aynada cismi odağın iki yanına al. Gerçek görüntüyü, paralel ışınları ve sanal görüntüyü çizimlerle karşılaştır.",
+    "en": "Move an object across the concave mirror focus. Compare real and virtual images with the parallel-ray boundary."
   }
 }

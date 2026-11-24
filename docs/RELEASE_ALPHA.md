@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.192.0 · Odak sınırı
+
+Yayın adayı. Aynı çukur aynada odağın üç durumu ve beş cisim konumu bir ders bölümünde karşılaştırılıyor. Kopya Kağıdı gerçek, paralel ve sanal ışınları üç ayrı çözüm adımında çiziyor.
+
 # ÖSYM Mania 0.191.0 · El, diş ve dış yan aynası
 
 Yayın adayı. Üç ayna türünün günlük kullanımını lisanslı fotoğraflarda ve ayrı ışın çizimlerinde incele. TYT Biyoloji ve Tarih kopya kâğıtları ile yeni fizik çizimleri aynı adayda.
