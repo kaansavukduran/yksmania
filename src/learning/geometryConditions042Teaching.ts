@@ -210,6 +210,17 @@ export const triangleAngles042: Supplement = {
   ],
 };
 
+const angleClassAfterExistence = {
+  layout: "table" as const,
+  headers: ["x", "Karar", "Gerekçe"],
+  rows: [8, 9, 10, 11, 12].map((x) => {
+    const squares = 5 ** 2 + 7 ** 2;
+    if (x >= 5 + 7) return [String(x), "Üçgen kurulmaz", `5 + 7 = ${x}. Köşeler aynı doğru üzerinde.`];
+    const obtuse = x ** 2 > squares;
+    return [String(x), obtuse ? "Geniş açılı" : "Dar açılı", `${x ** 2} ${obtuse ? ">" : "<"} ${squares}`];
+  }),
+};
+
 export const triangleSides042: Supplement = {
   source: "Aurelia 003 Açı Kenar Bağıntıları, içerik 5.1, fiziksel s. 1–12",
   sections: [
@@ -233,6 +244,14 @@ export const triangleSides042: Supplement = {
         "ABC’de A=72°, B=51°, C=57° ise BC>AB. Aynı BC kenarlı BCD’de C=73°, D=64°, B=43° ise BD>BC. Artık BD>BC>AB zincirini yazabilirsin. Eşit veya ortak bir kenar kurulamazsa iki üçgendeki açı ölçülerini doğrudan karşılaştırarak kenar uzunluğu çıkarma.",
         "Katlama, şekli kat çizgisine göre yansıtır. Bir noktayla görüntüsünün kat çizgisine uzaklıkları eşittir, kat çizgisi üzerindeki noktalara olan uzaklık da korunur. Eş uzunluk için bu ilişkiyi kullan ve sonra açının karşısındaki kenarı bul. Kâğıdın çizimdeki genişliğini ölçü sayma.",
       ],
+    },
+    {
+      title: "Açı koşulunu yalnız kurulabilen üçgenlerde dene",
+      paragraphs: [
+        "Kenarlar 5, 7 ve x olsun. x en uzun kenarsa ve üçgen kurulacaksa 7<x<12. Geniş açı için x²>5²+7²=74 gerekir. Önce üçgenin koşulunu denetle, sonra kareleri karşılaştır.",
+        "x=8 uzunlukça geçerlidir ama 64<74 olduğundan dar açılıdır. x=9, 10, 11 iki koşulu da sağlar. x=12’de kare karşılaştırması tek başına büyük görünür, fakat şekil kapanamaz.",
+      ],
+      table: angleClassAfterExistence,
     },
   ],
   examples: [
@@ -265,6 +284,18 @@ export const triangleSides042: Supplement = {
       pitfall:
         "11 ve 13 sınırın parçası. İkisinde de en az bir üçgenin alanı sıfırdır.",
     },
+    {
+      title: "En uzun kenarın iki koşulu",
+      prompt: "Kenarları 4, 9 ve x cm olan üçgen geniş açılı. x diğer iki kenardan uzun ve tam sayıysa x hangi değerleri alır?",
+      strategy: "Üçgenin kapanması için üst sınırı bul, sonra kare karşılaştırmasını uygula.",
+      steps: [
+        { label: "Üçgenin izin verdiği uzunluk", expression: "9<x<4+9=13", explanation: "x, 9’dan uzun. En uzun kenar, öteki ikisinin toplamından kısa olmalı." },
+        { label: "Açı sınıfı", expression: "x²>4²+9²=97", explanation: "En küçük aday 10 ve 10²=100. 10, 11 ve 12 sınırların içindedir." },
+      ],
+      answer: "10, 11 ve 12 cm.",
+      check: "4+9=13 olduğundan 12 üçgen kurar, 13 sınırda kalır.",
+      pitfall: "13²>97 olsa da 13 bir üçgen kenarı olamaz.",
+    },
   ],
   recall: [
     {
@@ -284,6 +315,11 @@ export const triangleSides042: Supplement = {
         "Ortak kenar için alt sınırların büyüğünü, üst sınırların küçüğünü seç. Sınırlar birbirine eşit olsa bile aralık boştur.",
         "En büyük açı geniş olacaksa en uzun kenarın karesi öteki iki karenin toplamından büyük. Önce üçgen eşitsizliği, sonra kare karşılaştırması.",
       ],
+    },
+    {
+      title: "Önce üçgen, sonra açı sınıfı",
+      text: ["5 ve 7 sabit, x en uzunsa 7<x<12. Geniş açı için x²>74 koşulu da gerekir. Tam sayı x değerleri 9, 10 ve 11."],
+      table: angleClassAfterExistence,
     },
   ],
 };

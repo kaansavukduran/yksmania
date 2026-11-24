@@ -2,6 +2,7 @@
 // Adding teaching before those tabs must keep the learner on the same activity.
 const legacySectionCounts: Readonly<Record<string, number>> = {
   "temel-kavramlar": 7,
+  "ardisik-sayilar": 6,
   "carpanlara-ayirma": 13,
   kumeler: 8,
   "mantik-onerme": 10,

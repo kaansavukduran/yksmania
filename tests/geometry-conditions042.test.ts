@@ -104,12 +104,12 @@ it("appends distinct course cards, examples and quick paths without changing fir
     {
       id: "tyt-geo-ucgen-esitsizligi-031",
       old: 10,
-      sections: 10,
-      examples: 1,
+      sections: 11,
+      examples: 2,
       first: "f031-tyt-geo-ucgen-esitsizligi-031-1",
       official: ["2021-TYT-MAT-32", "B", 35, 45],
       answers: ["3", "Hayır.", "10", "12 birim", "BD>BC>AB"],
-      sheet: "Açık sınırı koru, sonra ek koşulu uygula",
+      sheet: "Önce üçgen, sonra açı sınıfı",
     },
   ] as const;
   for (const {
@@ -135,6 +135,12 @@ it("appends distinct course cards, examples and quick paths without changing fir
     const topic = `topic-${id}`;
     const summary = builtInCheatSheets.get(topic)!;
     expect(summary.sections.at(-1)?.title).toBe(sheet);
+    if (id === "tyt-geo-ucgen-esitsizligi-031") {
+      expect(summary.sections.map((section) => section.title)).toContain("Açık sınırı koru, sonra ek koşulu uygula");
+      const table = summary.sections.at(-1)?.table;
+      expect(table?.rows.filter((row) => row[1] === "Geniş açılı").map((row) => row[0])).toEqual(["9", "10", "11"]);
+      expect(table?.rows.at(-1)?.slice(0, 2)).toEqual(["12", "Üçgen kurulmaz"]);
+    }
     if (id === "tyt-geo-ucgende-acilar-031") {
       expect(summary.sections.map((section) => section.title)).toContain("Üç açıortay kesişimini ayır");
       expect(lessonGuides.get(id)?.examples.at(-1)?.answer).toBe("100°.");

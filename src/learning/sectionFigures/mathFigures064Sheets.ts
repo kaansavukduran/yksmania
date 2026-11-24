@@ -612,9 +612,38 @@ const satilmayan: FigureDef = {
   },
 };
 
+const missingSequenceTerm: FigureDef = {
+  caption: "Kalan toplamı değiştir. Adayın bir sayı noktasına denk gelip gelmediğini kontrol et.",
+  alt: "4’ten 31’e üçer artan eşit aralıklı noktalar. Silinmiş olabilecek sayı okla işaretli.",
+  param: { label: "Kalan toplam", min: 140, max: 174, step: 1, init: 161 },
+  draw: (remaining) => {
+    const first = 4;
+    const step = 3;
+    const terms = Array.from({ length: 10 }, (_, index) => first + index * step);
+    const completeSum = terms.reduce((sum, term) => sum + term, 0);
+    const candidate = completeSum - remaining;
+    const member = terms.includes(candidate);
+    const position = (candidate - first) / step;
+    const els: El[] = [
+      vec(v(-1.2, 0), v(10.8, 0), { tone: "muted", thin: true }),
+      ...terms.map((value, index) => pt(v(index, 0), [4, 13, 16, 31].includes(value) ? String(value) : undefined, "s", "ink")),
+      vec(v(position, 1.2), v(position, 0.18), { tone: member ? "a" : "warn", bold: true }),
+      txt(v(position, 1.3), String(candidate), "n", { tone: member ? "a" : "warn", bold: true }),
+    ];
+    return {
+      els,
+      readout: [
+        `Aday: ${completeSum} − ${remaining} = ${candidate}.`,
+        member ? `${candidate} listede. Bu terim silinebilir.` : `${candidate} listede yok. Bu toplam mümkün değil.`,
+      ],
+    };
+  },
+};
+
 export const mathFigures064Sheets: Record<string, Record<string, FigureDef>> = {
   "ardisik-sayilar": {
     "Ardışıklık yalnız farklı olmak değildir": ardisikTur,
+    "Silinen terim adayını listede doğrula": missingSequenceTerm,
     "Toplam formülü neden çalışır?": tekKare,
     "Ortalama her zaman bir terim olmak zorunda değildir": dortArdisik,
     "Sorudaki sırayı ve terim numarasını açık tut": uyelik,

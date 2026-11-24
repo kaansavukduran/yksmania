@@ -134,3 +134,42 @@ test("An angle bisector and a median mark different equalities in the same trian
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("A removed-term candidate can fall between two sequence terms", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  await page.goto("/#/lesson?id=ardisik-sayilar");
+  const title = "Silinen terim adayını listede doğrula";
+  const panel = figure(page, title);
+  await expect(panel).toContainText("14 listede yok");
+  const beforeImage = await panel.getByRole("img").innerHTML();
+  await panel.getByRole("slider", { name: /Kalan toplam/ }).press("ArrowRight");
+  await expect(panel).toContainText("13 listede.");
+  expect(await panel.getByRole("img").innerHTML()).not.toBe(beforeImage);
+  await checkFrame(page, panel);
+  await page.goto("/#/cheatsheets?topic=detail-196");
+  await expect(panel).toContainText("14 listede yok");
+  await panel.getByRole("slider", { name: /Kalan toplam/ }).press("ArrowRight");
+  await expect(panel).toContainText("13 listede.");
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Triangle existence is checked before wide-angle classification", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-ucgen-esitsizligi-031";
+  await page.goto(`/#/lesson?id=${lesson}`);
+  const table = page.getByRole("region", { name: /Açı koşulunu yalnız kurulabilen üçgenlerde dene/ }).getByRole("table");
+  await expect(table.getByRole("row")).toHaveCount(6);
+  await expect(table.getByRole("row").filter({ hasText: "Dar açılı" })).toContainText("64 < 74");
+  await expect(table.getByRole("row").filter({ hasText: "Geniş açılı" })).toHaveCount(3);
+  await expect(table.getByRole("row").filter({ hasText: "Üçgen kurulmaz" })).toContainText("12");
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  const sheet = page.getByRole("region", { name: /Önce üçgen, sonra açı sınıfı/ }).getByRole("table");
+  await expect(sheet.getByRole("row").filter({ hasText: "Üçgen kurulmaz" })).toContainText("12");
+  expect(learning(await storage(page))).toEqual(before);
+});

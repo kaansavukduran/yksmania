@@ -3659,3 +3659,9 @@ Adayda TypeScript, 23 birim, 7 Chromium ve 323 çevrimdışı varlık kontrolü 
 Tek–Çift ve İşaret’te bölümü sınıflandırmadan önce sıfır ve tam sayı koşulunu denetleyen tablo. İki çarpan sayısı tek ve çift bölümleri örneklerle ayırıyor. Üçgende Açılar’da B’den çıkan açıortay ile kenarortay aynı üçgende adım adım karşılaştırılıyor. İki anlatımın ayrı Kopya Kağıdı aynı verileri gösteriyor.
 
 Kaynaklar güncel 5.1 Tek Çift Pozitif Negatif Sayılar fiziksel 2, 5, 10 ve 14, Üçgende Açılar fiziksel 8 ve 12. TypeScript, içerik, 24 birim, 9 Chromium ve 323 çevrimdışı varlık geçti. Sonraki maddeler Ardışık Sayılar fiziksel 5, silinen terimin üyeliği ve Açı Kenar Bağıntıları fiziksel 5, üçgen varlığı ile açı türünün ortak koşulu.
+
+## TYT Matematik ve Geometri · 0.151.0 adayı
+
+Ardışık Sayılar’da silinen terim adayı sayı doğrusunda denetleniyor. Uçların arasında bulunan 14’ün listeye ait olmadığı, kalan toplam değiştiğinde 13’ün listede olduğu gösteriliyor. Üçgen Eşitsizliği’nde tablo önce üçgenin kurulmasını, sonra en büyük açı türünü sınar. İki öğretim karşılığı ayrı Kopya Kağıdında da çalışır.
+
+Ardışık Sayılar 5.1 fiziksel 5 E6 ve 6 görsel, Açı Kenar Bağıntıları 5.1 fiziksel 5 G2 kaynaklarıyla karşılaştırıldı. TypeScript, 32 birim, 11 Chromium, içerik, üretim ve 323 çevrimdışı varlık kontrolü geçti. Sırada Asal Sayılar ve Dik Üçgenler kaynakları.

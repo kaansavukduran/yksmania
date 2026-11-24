@@ -181,3 +181,17 @@ it("places the angle bisector and the median at different points on AC", () => {
   expect(bisector.readout?.join(" ")).toContain("= 95°");
   expect(median.els.filter((el) => el.k === "ticks")).toHaveLength(2);
 });
+
+it("requires a missing sequence term to occupy one of the given positions", () => {
+  const def = fig("ardisik-sayilar", "Silinen terim adayını listede doğrula");
+  expect(def.draw(161, 0).readout).toEqual([
+    "Aday: 175 − 161 = 14.",
+    "14 listede yok. Bu toplam mümkün değil.",
+  ]);
+  expect(def.draw(162, 0).readout).toEqual([
+    "Aday: 175 − 162 = 13.",
+    "13 listede. Bu terim silinebilir.",
+  ]);
+  expect(def.draw(140, 0).readout?.[1]).toContain("35 listede yok");
+  expect(def.draw(144, 0).readout?.[1]).toContain("31 listede.");
+});
