@@ -2,6 +2,8 @@ import { ang, ball, circle, poly, seg, txt, v, vec, type El, type FigureDef, typ
 import { lightModelsFigures } from "./mebiLightModelsFigures";
 import { photometryUnitsFigures } from "./mebiPhotometryUnitsFigures";
 import { parallelFluxFigures } from "./mebiParallelFluxFigures";
+import { pointSourcePlaneFigures } from "./mebiPointSourcePlaneFigures";
+import { beamDistanceFigures } from "./mebiBeamDistanceFigures";
 
 /*
  * Işık bilgisi: I (cd), Φ (lm), E (lx). The inverse-square figure shows the
@@ -165,5 +167,7 @@ export const physicsFiguresLight: Record<string, Record<string, FigureDef>> = {
     ...lightModelsFigures,
     ...photometryUnitsFigures,
     ...parallelFluxFigures,
+    ...pointSourcePlaneFigures,
+    ...beamDistanceFigures,
   },
 };

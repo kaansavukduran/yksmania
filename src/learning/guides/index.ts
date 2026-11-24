@@ -58,6 +58,8 @@ import { earthquakePreparationExample, earthquakePreparationSection } from "../m
 import { lightModelsExample, lightModelsSection, lightModelsTitle } from "../mebiLightModels";
 import { photometryUnitsExample, photometryUnitsSection } from "../mebiPhotometryUnits";
 import { parallelFluxExample, parallelFluxSection } from "../mebiParallelFlux";
+import { pointSourcePlaneExample, pointSourcePlaneSection } from "../mebiPointSourcePlane";
+import { beamDistanceExample, beamDistanceSection } from "../mebiBeamDistance";
 import { animalPitchExample, animalPitchSection } from "../mebiPitchSamples";
 import { bottlePitchExample, bottlePitchSection } from "../mebiBottlePitch";
 import { wirePairExample, wirePairSection } from "../mebiWirePitch";
@@ -559,10 +561,11 @@ export function studyGuide(lessonId: string) {
       sections: guide.sections.flatMap((section) => {
         if (section.title === lightModelsTitle) return [lightModelsSection];
         if (section.title === "Candela, lümen ve lüksü yerlerine koy") return [section, photometryUnitsSection, parallelFluxSection];
+        if (section.title === "Ters kareyi geometriden türet") return [section, pointSourcePlaneSection, beamDistanceSection];
         return [section];
       }),
-      examples: [...guide.examples, lightModelsExample, photometryUnitsExample, parallelFluxExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 169, basılı 167. Işın, dalga ve foton rolleri kaynak gruplaması ve OpenStax ile karşılaştırıldı. Çift yarık aralığı, dalga boyu ve ekran uzaklığı öğretim modeli değerleridir. Fiziksel 170, basılı 168. sayfadaki lamba ışınları, 1 m yarıçaplı küre ve dönen yüzey ayrı çizildi. Birimler BIPM fotometri tanımlarıyla karşılaştırıldı.`,
+      examples: [...guide.examples, lightModelsExample, photometryUnitsExample, parallelFluxExample, pointSourcePlaneExample, beamDistanceExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 169, basılı 167. Işın, dalga ve foton rolleri kaynak gruplaması ve OpenStax ile karşılaştırıldı. Çift yarık aralığı, dalga boyu ve ekran uzaklığı öğretim modeli değerleridir. Fiziksel 170, basılı 168. sayfadaki lamba ışınları, 1 m yarıçaplı küre ve dönen yüzey ayrı çizildi. Birimler BIPM fotometri tanımlarıyla karşılaştırıldı. Fiziksel 171, basılı 169. sayfadaki A ve B ışınları, normal ve eğik uzaklıkla yeniden çizildi. Noktasal ve paralel demet iki ayrı uzaklık ölçümünde birlikte karşılaştırıldı. Ölçüm değerleri özgün ideal örneklerdir.`,
     };
   }
   if (guide?.id === "hal-degisimi") {
