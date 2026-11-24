@@ -12,6 +12,7 @@ import { earthquakeMagnitudeFigures } from "./mebiEarthquakeMagnitudeFigures";
 import { seismicRecordFigures } from "./mebiSeismicRecordFigures";
 import { seismicWavefrontFigures } from "./mebiSeismicWavefrontFigure";
 import { earthquakeSequenceFigures } from "./mebiEarthquakeSequenceFigures";
+import { tsunamiFormationFigures } from "./mebiTsunamiFormationFigures";
 import { echoDistanceM, echoSpeedMS, echoTravelSeconds } from "../mebiEcho";
 import { bellJarCases, bellJarTitle } from "../mebiSoundMedium";
 import { timbreAt, timbreCases, timbreFrequencyHz, timbreHarmonicTitle, timbreModes, timbreTitle, timbreWaveTitle } from "../mebiSoundTimbre";
@@ -612,6 +613,7 @@ export const physicsFiguresSound: Record<string, Record<string, FigureDef>> = {
     ...seismicRecordFigures,
     ...seismicWavefrontFigures,
     ...earthquakeSequenceFigures,
+    ...tsunamiFormationFigures,
     ...earthquakeMagnitudeFigures,
     "Ses bir ortam titreşimidir": longitudinal,
     [bellJarTitle]: bellJar,

@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.161.0 · Tsunaminin oluşumu
+
+Yayın adayı. Deniz tabanı yükseldiğinde suyun hareketini üç adımda izle. Aynı periyotta derinliği değiştir ve tepe aralıklarını ortak ölçekte karşılaştır.
+
 # ÖSYM Mania 0.160.0 · Dalga halkaları ve deprem dizisi
 
 Yayın adayı. Odaktan yayılan halkaların yarıçapını zamanla değiştir. İlk sarsıntı, ana deprem ve artçının sırasını iki farklı zaman çizgisinde incele.
