@@ -10,7 +10,8 @@ import { lessonGuides } from "../src/learning/guides";
 // ders. Her figür gerçek bir bölüm başlığına bağlanır; okunan sonuçlar
 // bölümdeki örneklerle aynı hesaptan gelir; figürler öğrenme kaydı üretmez.
 const COUNTS: Record<string, number> = {
-  "tyt-mat-asal-kaynak-032": 5,
+  // Forge064 üç figürsüz bölüme figür ekledi (elek, mod 3 üçlüsü, basamak filtresi).
+  "tyt-mat-asal-kaynak-032": 8,
   "tyt-mat-faktoriyel-kaynak-033": 5,
   "tyt-mat-ebob-ekok-kaynak-034": 5,
   "tyt-mat-rasyonel-kaynak-035": 5,

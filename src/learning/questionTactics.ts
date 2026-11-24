@@ -2033,6 +2033,57 @@ export const questionTactics: QuestionTactic[] = [
       "Çerçeve ve boşlukta payı iki yandan çıkar; aynı çevrede en büyük alan karededir.",
     ],
   },
+  {
+    id: "ardisik-model-kosul",
+    guides: ["ardisik-sayilar"],
+    match: /ardışık|kaçıncı|terim|olabilir/i,
+    title: "Ardışıkta önce türü ve adımı yaz, sonucu koşula geri koy",
+    steps: [
+      "Türü seç: tam sayıda adım 1; tek ve çiftte adım 2 ve başlangıcın türü ayrıca korunur. Tek sayıda terimde ortadakine x de: toplam n · x olur.",
+      "Olabilir mi sorusunda genel modeli yaz: dört ardışık tam sayının toplamı 4a + 6, yani a = (S − 6)/4 tam sayı olmalı.",
+      "Üyelik: k = (x − ilk)/adım + 1. k kesirliyse yuvarlama; x listede yoktur.",
+      "İlk n tek sayının toplamı n² yalnız 1'den başlayan listede geçerlidir; değilse eksik baştaki kareyi çıkar.",
+      "Basamaklı sayılarda AB = 10A + B yaz, büyük − küçük = adım kur ve rakamların farklılık koşuluyla adayları ele (2022 TYT Temel Matematik 15 mantığı).",
+    ],
+  },
+  {
+    id: "asal-kosul-filtre",
+    guides: ["asal-sayilar", "tyt-mat-asal-kaynak-032"],
+    match: /asal|bölen|bölün|çarpan/i,
+    title: "Asal koşulunu çarpanlarına ayırıp filtre gibi uygula",
+    steps: [
+      "Asal: 1'den büyük ve tam iki pozitif böleni olan sayı. 1 ne asal ne bileşiktir; 2 tek çift asaldır.",
+      "Asallık için karesi n'yi aşmayan asalları dene; çok sayıyı birlikte sınıflandırırken eleği kullan.",
+      "Pozitif tam çarpanların çarpımı asalsa çarpanlardan biri 1'dir; adayı bulduktan sonra öteki çarpanın asal olduğunu denetle.",
+      "p + q tekse biri 2'dir. q − 2, q, q + 2 üçlüsünden biri 3'e bölünür; hepsi asal ancak 3, 5, 7'de olur.",
+      "Bölünebilme koşulunu asal çarpanlara ayır ve her birini ayrı uygula (2022 TYT Temel Matematik 14 mantığı: 30 = 2 · 3 · 5).",
+    ],
+  },
+  {
+    id: "yas-sabit-hedef",
+    guides: ["yas-problemleri"],
+    match: /yaş|yaşında|doğ/i,
+    title: "Yaşta sabit hedefi ve zaman kaymasını ayrı yaz",
+    steps: [
+      "Kişi sayısını yaz: aynı n kişide toplam n · t, ortalama yalnız t kayar. Kişi eklenirse toplamı yeniden kur.",
+      "Oranı verildiği tarihte kur: 3k ve 7k; başka tarihte süre yaşlara eklenir, k'ya değil.",
+      "“B'nin bugünkü yaşındayken” cümlesinde B'nin bugünkü yaşı sabittir; kayma iki kişiye aynı işaretle uygulanır.",
+      "Yıl modelinde yaş = yıl − doğum yılı; farklı tarihler için ayrı t kullan (2023 TYT Temel Matematik 26 ve 2026 TYT Temel Matematik 21 mantığı).",
+      "En az, en çok ve tam yıl koşulunda sınırı hesapla, sonra ilk tam sayıyı geri koyarak dene.",
+    ],
+  },
+  {
+    id: "kar-zarar-esit-olan",
+    guides: ["kar-zarar-problemleri"],
+    match: /kâr|zarar|fire|maliyet|satış/i,
+    title: "Kâr–zararda neyin eşit, neyin sabit olduğunu işaretle",
+    steps: [
+      "Kâr ve zarar yüzdesinin tabanı maliyettir; aynı farkı satışa bölmek satış marjını verir.",
+      "Satışlar eşitse maliyetleri satış/(1 ± r) ile ayrı bul; yalnız maliyetler eşitse %r kâr ve %r zarar birbirini götürür.",
+      "Fire ve satılmayan ürün geliri azaltır, ödenmiş maliyeti silmez: gider üretilen adetle, gelir satılan adetle hesaplanır.",
+      "Kâr için > 0, zarar etmemek için ≥ 0 kur; adet tam sayıysa sınırdaki komşu değeri dene.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

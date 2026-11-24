@@ -6,12 +6,17 @@ export const farScreenTitle = "Uzak perdedeki gölge çapı";
 export const sphereRadiusCm = 3;
 export const sourceToCentreCm = 5;
 
-export function sphereShadowAt(screenCm: number) {
-  const tangentLength = Math.sqrt(sourceToCentreCm ** 2 - sphereRadiusCm ** 2);
-  const tangentX = tangentLength ** 2 / sourceToCentreCm;
-  const tangentY = sphereRadiusCm * tangentLength / sourceToCentreCm;
-  const shadowRadius = screenCm * sphereRadiusCm / tangentLength;
+export function sphereShadowProjection(sourceCm: number, centreCm: number, radiusCm: number, screenCm: number) {
+  const centreDistance = centreCm - sourceCm;
+  const tangentLength = Math.sqrt(centreDistance ** 2 - radiusCm ** 2);
+  const tangentX = centreCm - radiusCm ** 2 / centreDistance;
+  const tangentY = radiusCm * tangentLength / centreDistance;
+  const shadowRadius = (screenCm - sourceCm) * radiusCm / tangentLength;
   return { tangentX, tangentY, tangentLength, shadowRadius, diameter: 2 * shadowRadius };
+}
+
+export function sphereShadowAt(screenCm: number) {
+  return sphereShadowProjection(0, sourceToCentreCm, sphereRadiusCm, screenCm);
 }
 
 export const sphereShadowSection: GuideSection = {

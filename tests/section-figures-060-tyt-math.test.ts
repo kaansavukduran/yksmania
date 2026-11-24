@@ -38,8 +38,9 @@ describe("Forge060 TYT Matematik bölüm figürleri", () => {
   it("16 derste kayıtlı figürlerin sayısını korur", () => {
     for (const g of GUIDES) {
       expect(sectionFigureGuideIds.has(g), g).toBe(true);
+      // Forge064 asal-sayilar tanım bölümüne beşinci figürü ekledi.
       expect(Object.keys(sectionFigures[g] ?? {}).length, g).toBe(
-        g === "bilimsel-gosterim-katsayi" ? 5 : 4,
+        g === "bilimsel-gosterim-katsayi" || g === "asal-sayilar" ? 5 : 4,
       );
     }
   });

@@ -72,4 +72,21 @@ test("the two receivers, hint and worked visuals survive offline reload and wron
   await page.getByRole("button", { name: "Menüyü aç", exact: true }).press("Enter");
   await page.locator(".sidebar").getByRole("button", { name: "Yanlışlarım", exact: true }).press("Enter");
   await expect(page.locator(".mistake-card").filter({ has: stem }).getByRole("img")).toHaveAccessibleDescription(/80 cd.*4 m.*3 m/);
+
+  const saved = await storage(page);
+  const pocket = page.getByRole("region", { name: "Sınav sabahı cep kitapçığı", exact: true });
+  const printed = pocket.getByRole("figure", { name: figure.title, exact: true }).getByRole("img");
+  await expect(printed).toHaveAccessibleDescription(/80 cd.*4 m.*3 m/);
+  await expect(pocket.getByText("64/125", { exact: false })).toBeVisible();
+  await page.evaluate(() => { window.print = () => {}; });
+  await pocket.getByRole("button", { name: "Yazdır", exact: true }).click();
+  await page.emulateMedia({ media: "print" });
+  await expect(printed).toBeVisible();
+  await expect(page.locator(".mistake-card").filter({ has: stem })).toBeHidden();
+  const file = info.outputPath("point-illuminance170-booklet.pdf");
+  const document = await page.pdf({ format: "A4", path: file });
+  expect(document.subarray(0, 4).toString()).toBe("%PDF");
+  await page.evaluate(() => window.dispatchEvent(new Event("afterprint")));
+  await page.emulateMedia({ media: "screen" });
+  expect((await storage(page)).sessions).toEqual(saved.sessions);
 });

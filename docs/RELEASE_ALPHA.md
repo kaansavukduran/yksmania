@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.174.0 · İki ışık kaynağı ve dört matematik özeti
+
+Yayın adayı. Ortak gölgeyi ve çevresindeki halkayı ayrı incele. İki alıcının görselli optik sorusu cep kitapçığına yazdırılabilir.
+
 # ÖSYM Mania 0.173.0 · Tam gölge
 
 Yayın adayı. Opak kürenin perdeye düşen tam gölgesini kaynağa 10 ve 14 cm uzaklıkta karşılaştır.

@@ -1,8 +1,8 @@
 {
-  "version": "0.173.0",
+  "version": "0.174.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Perde uzaklığını değiştir. Bir küreye teğet sınır ışınları ile tam gölgenin çapı aynı çizimde. Kopya Kağıdı iki perde konumunu kendi çözüm çizimlerinde gösterir.",
-    "en": "Move the screen and see how tangent rays bound the full shadow of a sphere."
+    "tr": "K ve L kaynaklarını, opak küreyi ve perdeyi ayrı değiştir. Aynı kesitte oluşan tam gölgeyi yarı gölge halkasından ayır. TYT Matematik’te dört Kopya Kağıdı daha işlendi.",
+    "en": "Move two aligned point sources, an opaque sphere or its screen. Compare the full shadow with the penumbra ring and open four new mathematics study sheets."
   }
 }
