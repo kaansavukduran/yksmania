@@ -1,0 +1,60 @@
+import { expect, test } from "@playwright/test";
+import { flowSurfaceTitle, umbrellaPressureExample, umbrellaPressureTitle } from "../../src/learning/mebiFlowSurfaces";
+import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse";
+import { svgLayoutAudit } from "./helpers/svgAudit";
+
+const course = { lesson: "basinc", search: "Basınç" };
+const diagram = (title: string) => `figure[data-section-figure="${title}"]`;
+test.use({ viewport: { width: 320, height: 860 }, reducedMotion: "reduce" });
+
+test("çatıdan şemsiyeye basınç ve kuvvet yönleri çevrimdışı değişir", async ({ page, context }, info) => {
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  await openCourse(page, course);
+  const toc = page.getByRole("navigation", { name: "Anlatım içeriği" });
+  await toc.getByText("İçindekiler", { exact: true }).press("Enter");
+  await toc.getByRole("button", { name: flowSurfaceTitle, exact: true }).press("Enter");
+  const figure = page.locator(diagram(flowSurfaceTitle));
+  const next = figure.getByRole("button", { name: "İleri", exact: true });
+  const slider = figure.getByRole("slider", { name: /Alt ve üst basınç farkı/ });
+  await expect(figure).toContainText("İç basınç: 100 kPa. Dış basınç: 99,8 kPa.");
+  await expect(figure).toContainText("Net basınç kuvveti: Yukarı 100 N.");
+  await slider.press("Home");
+  await expect(figure).toContainText("Net basınç kuvveti: 0 N.");
+  await slider.press("ArrowRight");
+  await expect(figure).toContainText("Net basınç kuvveti: Yukarı 50 N.");
+  await next.press("Enter");
+  await expect(figure).toContainText("2/3 · Kanat");
+  await expect(figure).toContainText("Alt basınç: 100 kPa. Üst basınç: 99,9 kPa.");
+  await next.press("Enter");
+  await expect(figure).toContainText("3/3 · Şemsiye");
+  await slider.press("End");
+  await expect(figure).toContainText("Net basınç kuvveti: Yukarı 100 N.");
+  const svg = figure.getByRole("img");
+  await expect(svg).toHaveAccessibleName(/Üstten aşağı ve alttan yukarı/);
+  await svg.evaluate((element) => element.scrollIntoView({ block: "center" }));
+  await svg.screenshot({ path: info.outputPath("flow092-umbrella.png") });
+  expect((await page.evaluate(svgLayoutAudit, { scope: diagram(flowSurfaceTitle), figuresOnly: true, explore: true })).issues).toEqual([]);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("ayrı Kopya Kağıdı üç koşulu ve şemsiye örneğinin son çizimini içerir", async ({ page, context }) => {
+  await page.setViewportSize({ width: 430, height: 860 });
+  await prepare(page);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  await page.goto("/#/cheatsheets?topic=detail-125");
+  const row = page.locator(".cheat-section").filter({ has: page.getByRole("heading", { name: flowSurfaceTitle, exact: true }) });
+  await expect(row.getByRole("columnheader")).toHaveText(["Yüzey", "Kaynak örneğinde daha büyük basınç", "Basınç farkının etkisi"]);
+  await expect(row.locator(".guide-table-cell-value")).toHaveText(["Çatı", "İç", "Yukarı yönlü", "Kanat", "Alt", "Yukarı yönlü", "Şemsiye", "Alt", "Yukarı yönlü"]);
+  const example = page.locator(".cheat-examples .worked-example").filter({ hasText: umbrellaPressureExample.title });
+  await example.locator(":scope > summary").press("Enter");
+  const solution = example.locator(".cheat-solution");
+  await expect(solution.getByRole("img")).toHaveCount(0);
+  await solution.locator("summary").press("Enter");
+  const figure = solution.locator(diagram(umbrellaPressureTitle));
+  await expect(figure.getByRole("img")).toBeVisible();
+  await expect(figure).toContainText("Net basınç kuvveti: Yukarı 100 N.");
+  expect(learning(await storage(page))).toEqual(before);
+});

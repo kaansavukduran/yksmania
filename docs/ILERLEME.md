@@ -8,7 +8,7 @@ Bu dosya `npm run progress` ile koddan üretilir; elle düzenlenmez.
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 225 | 313 / 313 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 227 | 313 / 313 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
 | TYT Biyoloji | 36 / 36 | 22 · 80 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 14 |
 | TYT Tarih | 24 / 24 | 14 · 41 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 10 |
@@ -21,7 +21,7 @@ Bu dosya `npm run progress` ile koddan üretilir; elle düzenlenmez.
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **405 · 1720** | **6.663 / 6.663 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
+| **Toplam** | **510 / 510** | **405 · 1722** | **6.663 / 6.663 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

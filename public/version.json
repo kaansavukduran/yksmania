@@ -1,8 +1,8 @@
 {
-  "version": "0.91.0",
+  "version": "0.92.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Su kanalındaki kaynak ölçümlerini ve yatay borunun ideal Bernoulli modelini ayrı incele. Kopya Kağıdı, soru çizimi, görselli ipucu ve üç çözüm adımı eklendi.",
-    "en": "Compare the reported channel measurements with a separate ideal Bernoulli model. Includes a cheat sheet, a question diagram, a visual hint and three solution steps."
+    "tr": "Çatı, kanat ve şemsiyede basınç farkının düşey etkisini karşılaştır. Ayrı Kopya Kağıdı ve şemsiyenin net kuvvetini gösteren çözümlü örnek eklendi.",
+    "en": "Compare the vertical effect of pressure differences on a roof, wing and umbrella. Includes a separate cheat sheet and a worked umbrella example."
   }
 }

@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.92.0 · Çatı, kanat ve şemsiyede basınç farkı
+
+Yayın adayı. Üç kesiti seçip basınç farkını değiştir. Net düşey kuvveti, üstten ve alttan etkiyen basınçlarla birlikte oku. Şemsiye örneği Kopya Kağıdı’nda adımlarıyla açılır.
+
 # ÖSYM Mania 0.91.0 · Su kanalı ölçümü ve Bernoulli
 
 Yayın adayı. Kaynaktaki iki hız ve basınç ölçümünü oku. Ayrı yatay boru modelinde alanı değiştirip sabit debiyi gözle. Özgün sorunun şekli ve ipucundan sonra son çözüm tablosunu aç.
