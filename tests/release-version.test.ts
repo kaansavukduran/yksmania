@@ -6,7 +6,7 @@ import metadata from "../public/version.json";
 import { APP_VERSION } from "../src/version";
 const read = (file: string) =>
   readFileSync(new URL(`../${file}`, import.meta.url), "utf8");
-const androidVersionCode = 140;
+const androidVersionCode = 141;
 
 it("keeps update discovery, visible labels, lockfile and native release on the same version", () => {
   expect(metadata.version).toBe(pkg.version);

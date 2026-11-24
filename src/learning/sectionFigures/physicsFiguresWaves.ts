@@ -43,6 +43,8 @@ import { pulseOverlapAt, pulseOverlapCases, pulseOverlapTime, pulseOverlapTitle 
 
 import { waveTankAt, waveTankSetupTitle, waveTankTime, waveTankTitle, waveTankWavelengthCm, waveTankWidthCm } from "../mebiWaveTank";
 
+import { circularMaxRadiusCm, circularWaveAt, circularWaveTime, circularWaveTitle } from "../mebiCircularWave";
+
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
  * Waves are sampled from y = A·sin(2π(x − x0)/λ); pulses from a smooth bump.
@@ -1083,6 +1085,57 @@ const yay: Record<string, FigureDef> = {
 };
 
 const su: Record<string, FigureDef> = {
+  [circularWaveTitle]: {
+    caption: "Aynı damlanın yüzeydeki halkalarını ve kâğıttaki çizgilerini zamanla karşılaştır. Oklar her yönde O’dan dışarı bakar.",
+    alt: "Üstte su yüzeyinde O merkezli dalga tepeleri ve dışarı doğru hız okları var. Alttaki izdüşümde tepe halkaları kesintisiz, aradaki çukur halkaları kesikli.",
+    param: {
+      label: "Geçen süre",
+      min: circularWaveTime.min,
+      max: circularWaveTime.max,
+      step: circularWaveTime.step,
+      init: circularWaveTime.initial,
+      unit: " s",
+    },
+    maxHeight: 560,
+    draw: (time) => {
+      const state = circularWaveAt(time);
+      const surface = v(0, 10.6);
+      const paper = v(0, -10.6);
+      const [first, trough, second] = state.markedRadii;
+      const projected = (radius: number) => v(radius, paper[1]);
+      const waterRadius = circularMaxRadiusCm;
+      const midpoint = (first + second) / 2;
+      return {
+        els: [
+          circle(surface, waterRadius + 0.24, { tone: "muted", fill: "b" }),
+          circle(paper, waterRadius + 0.24, { tone: "muted" }),
+          ...state.crests.flatMap((radius) => [
+            circle(surface, radius, { tone: "b", bold: true }),
+            circle(paper, radius, { tone: "b", bold: true }),
+          ]),
+          ...state.troughs.map((radius) => circle(paper, radius, { tone: "ink", thin: true, dash: true })),
+          ...state.radialDirections.map(([x, y]) =>
+            vec(v(2.4 * x, surface[1] + 2.4 * y), v(3.8 * x, surface[1] + 3.8 * y), { tone: "a" })),
+          circle(surface, 0.22, { tone: "a", fill: "a" }),
+          circle(paper, 0.22, { tone: "a", fill: "a" }),
+          ...[first, trough, second].map((radius) => circle(projected(radius), 0.16, { tone: "a", fill: "a" })),
+          seg(paper, projected(second + 0.45), { tone: "a", thin: true }),
+          txt(v(0, surface[1] + 9.3), "Su yüzeyi", "n", { small: true }),
+          txt(v(0, paper[1] + 9.1), "Kâğıt", "n", { small: true }),
+          txt(v(-0.45, paper[1] - 0.55), "O", "w", { small: true }),
+          seg(v(first, paper[1] - 6.45), v(second, paper[1] - 6.45), { tone: "a", bold: true }),
+          seg(v(first, paper[1] - 6.75), v(first, paper[1] - 6.15), { tone: "a" }),
+          seg(v(second, paper[1] - 6.75), v(second, paper[1] - 6.15), { tone: "a" }),
+          txt(v(midpoint, paper[1] - 8.55), "2 cm", "s", { tone: "a", small: true }),
+        ],
+        readout: [
+          `Tepeler merkeze ${fmt(first)} cm ve ${fmt(second)} cm uzak. Araları 2 cm.`,
+          `Aradaki çukur O’dan ${fmt(trough)} cm uzakta.`,
+          `Halka ${state.speedCmS} cm/s ile her yönde merkezin dışına ilerliyor.`,
+        ],
+      };
+    },
+  },
   [waveTankSetupTitle]: {
     caption: "Işık üstte, çubuk suyun K–L kenarında, şeritlerin göründüğü kâğıt altta. Parçaları sırayla seç.",
     alt: "Üstte ışık kaynağı. Ortada dikdörtgen su leğeni ve sol kenarında suya değen çubuk. Leğenin altındaki kâğıtta çubuğa paralel şeritler görülüyor.",

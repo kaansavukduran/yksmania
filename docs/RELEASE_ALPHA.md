@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.130.0 · Dairesel su dalgaları
+
+Yayın adayı. Zamanı değiştir ve noktasal kaynaktan yayılan halkaları izle. Üstten görünüşte hız okları yönü gösteriyor. Kopya Kağıdı’nda aynı tür iki halkadan dalga boyunu, aradaki halkadan çukurun yerini bul.
+
 # ÖSYM Mania 0.129.0 · Dalga leğeninde üç görünüş
 
 Yayın adayı. Düzenekte ışığı, kaynak çubuğunu ve kâğıdı seç. Zamanı değiştirip aynı dalga tepesini üstten, yandan ve kâğıt üzerinde izle. Ayrı Kopya Kağıdı, tepe aralığı ile komşu aydınlık ve karanlık şerit aralığını aynı çizimde hesaplıyor.
