@@ -1,8 +1,8 @@
-# ÖSYM Mania dünyası ve lore belgeleri · 0.147.0 adayı
+# Kısa proje bağlamı ve devir · 0.147.0 adayı
 
-[Dünya ve Aion](docs/lore/README.md), [anlatım dili](docs/lore/anlatim-dili.md) ve [karar kaydı](docs/lore/kararlar.md) depoda bir araya getirildi. Aion’un mevcut piksel varlıkları, çalışma sahnesi ve Fragaria Interactive ibaresi belgelendi. Lore belgelerine README’den ulaşılır.
+AGENTS.md kısa bir yönlendirmeye dönüştü. Mimari, veri, içerik, işletim ve kalıcı kararlar [LORE](LORE/README.md) altında. Yeni oturumlar [güncel durumdan](LORE/STATUS.md) başlar.
 
-İçerik sırasındaki sonraki paket, güncel YKS görev listesinden 14 konuya ait 79 YouTube bağlantısının anlatım ekranlarıyla eşleştirilmesi.
+Sonraki içerik paketi YKS görev listesindeki 14 konuya ait eksik YouTube bağlantılarıdır.
 
 # TYT Felsefe ve Din Kültürü kopya kâğıtları · 0.146.0 adayı
 

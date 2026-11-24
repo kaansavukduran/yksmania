@@ -2,7 +2,7 @@
 
 [GitHub Pages](https://kaansavukduran.github.io/yksmania/) · [Cloudflare Pages](https://yksmania.pages.dev/)
 
-[ÖSYM Mania dünyası ve Aion](docs/lore/README.md)
+[Geliştirme belgeleri ve güncel durum](LORE/README.md)
 
 **Son yayımlanan web ve masaüstü sürümü 0.123.0**. Eşit gerilen iki yayda atmanın aldığı yolu ve Kopya Kağıdı’ndaki sürat hesabını çevrimdışı inceleyebilirsin. [Windows ve Linux 0.123](https://github.com/kaansavukduran/yksmania/releases/tag/v0.123.0-alpha.1) · [Önceki 0.103 sürümü](https://github.com/kaansavukduran/yksmania/releases/tag/v0.103.0-alpha.1)
 

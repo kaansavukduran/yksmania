@@ -2,7 +2,7 @@
   "version": "0.147.0",
   "channel": "alpha",
   "notes": {
-    "tr": "ÖSYM Mania’nın çalışma dünyası, Aion’un rolü ve anlatım dili GitHub’daki yeni belgelerde bir araya geldi. Belgelere deponun ana sayfasından ulaşabilirsin.",
-    "en": "The repository now documents the study setting, Aion’s role and the language used throughout the app."
+    "tr": "ÖSYM Mania’nın geliştirme kuralları, kalıcı kararları ve güncel çalışma sırası GitHub’daki LORE dizininde düzenlendi. Belgelere deponun ana sayfasından ulaşabilirsin.",
+    "en": "The repository now organizes development guidance, enduring decisions and the work handoff in LORE."
   }
 }
