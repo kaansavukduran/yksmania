@@ -28,7 +28,7 @@ describe("physical page 179 plane mirror light paths", () => {
   });
 
   test("study sheet retains distinct drawings and the computed answer", () => {
-    const sheet = studyCheatSheet("duzlem-ayna");
+    const sheet = studyCheatSheet("detail-133");
     expect(sheet?.examples.some((example) => example.title === mirrorFieldExample.title)).toBe(true);
     expect(mirrorFieldExample.steps.map((step) => step.figureTitle)).toEqual([...mirrorFieldMethods]);
     expect(mirrorFieldExample.answer).toContain("−3 ile 5");

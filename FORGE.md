@@ -1,3 +1,7 @@
+# Aynada beden ve sabit duvar · 0.185.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 179, basılı 177. Bedenin görünen aralığı gözle aynı dik uzaklıkta hareket ettiği için sabit kalıyor. Sabit duvarda iki sınır ışını benzer üçgenlerle hesaplanıyor. Ayrı Kopya Kağıdı iki çözüm modelini açıyor. 0.144 Forge066’nın dört TYT Coğrafya kopya kağıdı ve soru taktikleri iki ebeveynli birleşimde korunuyor. TypeScript, 6.673 kartın içerik denetimi, 336 dosyalı çevrimdışı derleme, 17 dosyada 3.042 birim testi, yedi Chromium ve 320 px Axe akışı geçti. Bedende 0,50 m kaldı. Duvarda 0,75 m’den 1,25 m’ye çıktı.
+
 # Düzlem aynada üç görüş alanı yöntemi · 0.184.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 179, basılı 177. Gerçek ambulans fotoğrafı ve aynı fotoğrafın yatay ayna modeli. Gözün konumu değişirken yansıma, gözün sanal görüntüsü ve normale eş uzaklık yöntemleri aynı görme sınırlarını üretiyor. Ayrı Kopya Kağıdı üç çözümü ayrı çiziyor. Dokuz odaklı Chromium akışı ve 320 px büyük yazı erişilebilirlik kontrolü geçti. Çevrimdışı pakette 336 dosya doğrulandı. İki ek optik sorusu güncel bankada dururken eski aktarım testlerinin kaynak özetleri aynı tarihsel içeriği karşılaştırıyor. [Fotoğraf ve lisans](https://commons.wikimedia.org/wiki/File:Turkey_ambulance_02.JPG) · [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
@@ -261,6 +265,11 @@ Check, 325 dosyalı çevrimdışı derleme, 2.206 birim ve altı Chromium akış
 MEBİ TYT Fizik Konu Özetleri fiziksel 164, basılı 162. Aslan ve kanarya fotoğrafları iki örnek ses kaynağını tanıtıyor. Temsilî grafikler aynı 10 ms içinde bir ve üç salınım gösteriyor. Genlikleri eşitleme, salınım sayısını değiştirmiyor. Kopya Kağıdı genlikleri eşit olan iki çizimi hesabın kendi adımlarında açıyor.
 
 İlk 320 px ve büyük yazı görüntüsünde iki fotoğrafın düğme ve kaynak metinleri çok uzundu. Tür adı ve büyütme simgesi, kısa kaynak ve lisans bağlantılarıyla birlikte kullanılıyor. Klavyeden açma, Escape, odak dönüşü ve çevrimdışı yükleme doğrulandı. Altı Chromium akışı ve 325 dosyalı derleme geçti. Sıradaki iş aynı sayfadaki boş ve su eklenen özdeş şişeler. [Aslan fotoğrafı, Kevin Pluck, CC BY 2.0](https://commons.wikimedia.org/w/index.php?oldid=1196427540&title=File%3ALion_waiting_in_Namibia_%28cropped%29.jpg) · [Kanarya fotoğrafı, L. E. MacDonald, CC BY-SA 2.0](https://commons.wikimedia.org/w/index.php?oldid=1208751877&title=File%3ADomestic_Canary_-_Serinus_canaria.jpg)
+# TYT Coğrafya kopya kâğıtları · 0.144.0 adayı
+
+Forge066: TYT Coğrafya 009, 019, 029, 031 kopya kâğıtları 16 etkileşimli figür ve 4 taktik olarak aktarıldı (kopya 125 / 517). Haritalar şematik ve "ölçekli değil" notlu; TÜİK 2025 ve ÖSYM atıfları kâğıtlardan alındı, resmî kaynakla ayrıca doğrulanmadı.
+
+tsc, check, 400 dosyada 5.583 birim testi ve derleme geçti; dört dersin figür kapısı 320/375/1280, axe ve altı temada geçti. Yalnız web ve masaüstü Chromium.
 
 # Sekiz kopya kâğıdı ve figür erişilebilirliği · 0.143.0 adayı
 
@@ -1087,11 +1096,11 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
 | TYT Matematik | 45 / 45 | 45 · 184 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
 | TYT Geometri | 19 / 19 | 19 · 176 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 412 | 323 / 323 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 415 | 323 / 323 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 139 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 0 |
 | TYT Tarih | 24 / 24 | 24 · 76 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 0 |
-| TYT Coğrafya | 40 / 40 | 40 · 159 | 400 / 400 · %100,00 | 5 / 40 · %12,50 | 45 soru · 9 kitapçık | 0 |
+| TYT Coğrafya | 40 / 40 | 40 · 175 | 400 / 400 · %100,00 | 9 / 40 · %22,50 | 45 soru · 9 kitapçık | 0 |
 | TYT Felsefe | 17 / 17 | 17 · 61 | 190 / 190 · %100,00 | 3 / 17 · %17,65 | 89 soru · 9 kitapçık | 0 |
 | TYT Din | 20 / 20 | 20 · 90 | 371 / 371 · %100,00 | 3 / 20 · %15,00 | 46 soru · 9 kitapçık | 0 |
 | AYT Matematik | 17 / 17 | 17 · 38 | 253 / 253 · %100,00 | 2 / 17 · %11,76 | 273 soru · 9 kitapçık | 0 |
@@ -1100,19 +1109,19 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2404** | **6.673 / 6.673 · %100,00** | **121 / 517 · %23,40** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2423** | **6.673 / 6.673 · %100,00** | **125 / 517 · %24,18** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
-| Tarihsel dal kaydı: okunan veya eşlenen PDF / eski envanter | 131 / 8.981 |
+| Tarihsel dal kaydı: okunan veya eşlenen PDF / eski envanter | 135 / 8.981 |
 | Tarihsel 99_ÖSYM kaydı: uygulama karşılığı olan / 20 Kasım envanteri | 18 / 1.001 |
-| 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 86 |
+| 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 90 |
 | Kademeli çözüm paneli bulunan soru | 6.673 / 6.673 · %100,00 |
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
 | Ara hatırlama (mikro ritim): ders · soru | 505 / 510 · %99,02 · 3.052 soru |
 | Gösterim onarımı: soru alanı · ders paragrafı | 962 · 1.634 |
-| Kopya kâğıdı (kısmi aktarım / toplam) | 121 / 517 · %23,40 |
+| Kopya kâğıdı (kısmi aktarım / toplam) | 125 / 517 · %24,18 |
 | Resmî ana başlık · anlatımlı konu · hazır anlatım | 341 · 510 · 510 |
 | İleri ve kaynak soru seti (anlatımı ana konusunda) | 36 |
 <!-- ilerleme:bitir -->

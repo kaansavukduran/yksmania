@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.185.0 · Düzlem aynada beden ve duvar
+
+Yayın adayı. Aynaya yaklaşırken bedeninde ve sabit duvarda gördüğün aralığı iki çizimle karşılaştır. Güncel TYT Coğrafya kesitleri ve nüfus kopya kağıtları da pakette.
+
 # ÖSYM Mania 0.184.0 · Aynada görüş alanı ve ambulans yazısı
 
 Yayın adayı. Ambulansta kaput ve ayna görünümünü karşılaştır, sonra gözün yatay konumunu değiştirip aynanın görme sınırlarını üç yöntemle bul.
@@ -169,6 +173,9 @@ Yayın adayı. İki özdeş şişeden birine su ekle. Vurma ve üflemede titreş
 # ÖSYM Mania 0.142.0 · Genlik ve frekans
 
 Yayın adayı. İki fotoğrafı ve aynı süreye çizilmiş örnek dalgaları aç. Genlikleri eşitleyip kaç tam salınım olduğunu say. Kopya Kağıdı bu sayılardan frekansı hesaplıyor.
+# ÖSYM Mania 0.144.0 · Coğrafya kesitleri ve nüfus
+
+Yayın adayı (24 Kasım 2026). Türkiye iklimi, yer şekilleri, dünyada nüfusun dağılışı ve Türkiye nüfusu kopya kâğıtları kesit, harita ve sayım ekseni figürleriyle açılıyor.
 
 # ÖSYM Mania 0.143.0 · Sekiz kopya kâğıdı daha
 

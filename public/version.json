@@ -1,8 +1,8 @@
 {
-  "version": "0.184.0",
+  "version": "0.185.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Ambulansın kaputundaki ters yazıyı aynadaki görünümle karşılaştır. Düzlem aynanın görüş sınırlarını üç farklı yoldan çiz.",
-    "en": "Compare a real ambulance’s hood lettering with its reflected view. Find a plane mirror’s field boundaries using three equivalent methods."
+    "tr": "Aynaya yaklaşırken bedende görünen aralık ile sabit duvarda görünen aralığı ölç. TYT Coğrafya kopya kâğıtlarındaki dört yeni figür ve taktik paketi korunuyor.",
+    "en": "Measure the visible interval on a person and on a fixed wall as the observer moves toward the mirror. The four TYT Geography study-sheet figure and tactics packs are preserved."
   }
 }
