@@ -54,6 +54,7 @@ import { sourceDistanceCm, virtualWaterAt, virtualWaterReflectionTitle, virtualW
 import { convexFocusCm, convexWater, convexWaterReflectedTitle, convexWaterTitle, surfaceNormalTitle } from "../mebiConvexWater";
 
 import { strobeDiskRate, strobeSchoolCases, strobeSnapshot, strobeWavelengthCm, stroboscopeTitle } from "../mebiStroboscope";
+import { refractionAngle, refractionCaseTitles, refractionStages, waterRefractionAt, waterRefractionTitle } from "../mebiWaterRefraction";
 import { waterSlopeAt, waterSlopePhase, waterSlopeRatio, waterSlopeTitle } from "../mebiWaterSlope";
 import { interfaceDepth, joinCm, tankLengthCm, twoTankDepthTitle, waterDepthAt, waterDepthTimes, waterDepthTitle } from "../mebiWaterDepth";
 
@@ -1270,6 +1271,76 @@ const convexWaterFigure: FigureDef = {
   },
 };
 
+const drawWaterRefraction: FigureDef["draw"] = (degrees, step) => {
+  const state = waterRefractionAt(degrees, step);
+  const point = ([x, y]: readonly [number, number]) => v(x, y);
+  const drawWave = (line: readonly (readonly [number, number])[], direction: readonly [number, number], tone: "a" | "c"): El[] => {
+    if (line.length !== 2) return [];
+    const [a, b] = line.map(point);
+    const mid = v((a[0] + b[0]) / 2, (a[1] + b[1]) / 2);
+    const tip = v(mid[0] + direction[0] * 1.1, mid[1] + direction[1] * 1.1);
+    return [seg(a, b, { tone, bold: true }), vec(mid, tip, { tone })];
+  };
+  const O = point(state.O);
+  const refracted = fmt(state.refractedDegrees, 1);
+  return {
+    els: [
+      poly([v(-5, -4.25), v(0, -4.25), v(0, 4.25), v(-5, 4.25)], { tone: "muted", fill: "muted", thin: true }),
+      poly([v(0, -4.25), v(9.6, -4.25), v(9.6, 4.25), v(0, 4.25)], { tone: "b", fill: "b", thin: true }),
+      seg(v(0, -4.25), v(0, 4.25), { tone: "ink", bold: true }),
+      seg(v(-4.8, 0), v(8.7, 0), { tone: "muted", dash: true, thin: true }),
+      txt(v(-3.15, 5.03), "Sığ", "n", { tone: "a", small: true }),
+      txt(v(7, 5.03), "Derin", "n", { tone: "c", small: true }),
+      ...drawWave(state.incoming, state.incidentDirection, "a"),
+      ...drawWave(state.transmitted, state.transmittedDirection, "c"),
+      pt(point(state.K), "K", "n", step === 0 ? "a" : "c"),
+      pt(point(state.L), "L", "s", step === 2 ? "c" : "a"),
+      ...(step === 1 && degrees > 0 ? [
+        ang(O, v(0, -1), point(state.L), "i", { tone: "a", r: 46 }),
+        ang(O, v(0, 1), point(state.K), "r", { tone: "c", r: 46 }),
+        pt(O, "O", "e", "ink"),
+      ] : []),
+    ],
+    readout: [
+      `Gelme açısı i = ${degrees}°. Kırılma açısı r = ${refracted}°.`,
+      `Kaynak ${state.frequencyHz} Hz. Sığda ${state.shallowSpeed} cm/s ve ${state.shallowWavelength} cm. Derinde ${state.deepSpeed} cm/s ve ${state.deepWavelength} cm.`,
+      degrees === 0 ? "Cephe yönü değişmeden sınırı geçer. Dalga boyu yine değişir."
+        : ["K tarafı sınıra önce yaklaşır.", "O sınırda. K tarafı derinde, L tarafı sığda.", "K ve L derinde. Cephe yeni doğrultuda ilerler."][step],
+    ],
+  };
+};
+
+const waterRefractionFigure: FigureDef = {
+  caption: "KOL cephesini üç aşamada izle. Gelme açısını değiştir ve ilk derine ulaşan ucun doğrultusunu takip et.",
+  alt: "Dikey sınırın solu sığ, sağı derin. K ve L dalga cephesinin uçları. Eğik gelişte K önce derine girer ve cephe O noktasında yön değiştirir.",
+  param: {
+    label: "Gelme açısı", min: refractionAngle.min, max: refractionAngle.max,
+    step: refractionAngle.step, init: refractionAngle.initial, unit: "°",
+  },
+  steps: [...refractionStages],
+  draw: drawWaterRefraction,
+};
+
+function waterRefractionSpacing(deep: boolean): FigureDef {
+  const state = waterRefractionAt(refractionAngle.initial, 1);
+  const wavelength = deep ? state.deepWavelength : state.shallowWavelength;
+  const speed = deep ? state.deepSpeed : state.shallowSpeed;
+  const label = deep ? "Derin bölüm" : "Sığ bölüm";
+  const tone = deep ? "c" : "a";
+  return {
+    caption: `${label} için aynı türde iki tepe çizgisinin aralığını ölç.`,
+    alt: `${label} çiziminde birbirine paralel dört tepe çizgisi var. İki komşu tepe arasındaki ölçü ${wavelength} santimetre.`,
+    draw: () => ({
+      els: [
+        poly([v(-1, 0.25), v(9.8, 0.25), v(9.8, 2), v(-1, 2)], { tone: "muted", thin: true }),
+        ...Array.from({ length: 4 }, (_, index) => seg(v(index * wavelength, 0.25), v(index * wavelength, 2), { tone, bold: true })),
+        ...span(v(wavelength, 0), v(2 * wavelength, 0), `${wavelength} cm`, -1, tone),
+      ],
+      readout: [`${speed} cm/s ÷ ${state.frequencyHz} Hz = ${wavelength} cm`],
+    }),
+  };
+}
+
 const stroboscopeFigure: FigureDef = {
   caption: "Yarıkları say. İki bakış anında tepe çizgilerinin konumunu karşılaştır. Disk süratini değiştir.",
   alt: "Solda 8 veya 4 eş aralıklı radyal yarık. Sağda ilk iki bakıştaki paralel tepe çizgileri. Tam sayıda periyot geçince iki görüntü örtüşür.",
@@ -1691,31 +1762,14 @@ const su: Record<string, FigureDef> = {
       };
     },
   },
-  "Kırılma açısını normalden denetle": {
-    caption:
-      "Derinden (v₁ = 2 birim) sığa (v₂ = 1 birim) geçen ışının gelme açısını değiştir: sin i / sin r = v₁/v₂ = 2. Yavaş bölgeye giren ışın normale yaklaşır.",
-    alt: "Yatay sınır, dikey kesikli normal; üst bölgeden gelen ışın sınırda kırılıp alt bölgede normale daha yakın ilerliyor; iki açı etiketli.",
-    param: { label: "i", min: 0, max: 80, step: 5, init: 40, unit: "°" },
-    draw: (i) => {
-      const r = deg(Math.asin(Math.sin(rad(i)) / 2));
-      const o = v(0, 0);
-      const inP = add(o, pol(4, 90 + i));
-      const outP = add(o, pol(4, -90 + r));
-      return {
-        els: [
-          poly([v(-5, 0), v(5, 0), v(5, -4.3), v(-5, -4.3)], { fill: "muted", tone: "muted", thin: true }),
-          seg(v(-5, 0), v(5, 0), { tone: "ink" }),
-          seg(v(0, 4.3), v(0, -4.3), { dash: true, tone: "muted" }),
-          vec(inP, o, { tone: "a", bold: true }),
-          vec(o, outP, { tone: "c", bold: true }),
-          ...(i > 0 ? [ang(o, v(0, 1), inP, "i", { tone: "a", r: 44 }), ang(o, v(0, -1), outP, "r", { tone: "c", r: 44 })] : []),
-          txt(v(-5, 3.6), "derin (hızlı)", "e", { small: true }),
-          txt(v(-5, -3.8), "sığ (yavaş)", "e", { small: true }),
-        ],
-        readout: [`sin r = sin ${i}° / 2 = ${fmt(Math.sin(rad(i)) / 2, 3)} → r ≈ ${fmt(r)}°`],
-      };
-    },
+  [waterRefractionTitle]: waterRefractionFigure,
+  [refractionCaseTitles[0]]: {
+    caption: "O sınırı kesiyor. Derindeki K ve sığdaki L işaretlerini kendi cephelerinde izle.",
+    alt: "O sınır çizgisinde. OK bölümü derinde ve OL bölümü sığda. İki farklı tepe yönü O noktasında birleşir.",
+    draw: () => drawWaterRefraction(refractionAngle.initial, 1),
   },
+  [refractionCaseTitles[1]]: waterRefractionSpacing(false),
+  [refractionCaseTitles[2]]: waterRefractionSpacing(true),
   "Kırılma ve kırınımı ayır": {
     caption:
       "λ = 1 birimlik düz dalga bir açıklıktan geçiyor. Açıklığı daralt: a/λ küçüldükçe dalga açıklıktan sonra daha geniş açıyla yayılır (kırınım). Ortam aynı olduğu için λ ve f değişmez; bu kırılma değildir. Yayılma açısı nitel çizilmiştir.",

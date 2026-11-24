@@ -35,6 +35,7 @@ import { pulseDampingExample, pulseDampingSection } from "../mebiPulseDamping";
 import { periodicSpringExample, periodicSpringSection } from "../mebiPeriodicSpring";
 import { springDensityExample, springDensitySection } from "../mebiSpringDensity";
 import { stroboscopeExample, stroboscopeSection, stroboscopeTitle } from "../mebiStroboscope";
+import { waterRefractionExample, waterRefractionSection, waterRefractionTitle } from "../mebiWaterRefraction";
 import { waterSlopeExample, waterSlopeSection } from "../mebiWaterSlope";
 import { twoTankDepthSection, waterDepthExample } from "../mebiWaterDepth";
 import { coastalWaterExample, coastalWaterSection } from "../mebiCoastalWater";
@@ -499,12 +500,13 @@ export function studyGuide(lessonId: string) {
           if (section.title === waterReflectionTitle) return { ...section, figureTitle: waterReflectionTitle, table: waterReflectionTable };
           if (section.title === "Dairesel ve eğri engelleri karşılaştır") return virtualWaterSection;
           if (section.title === stroboscopeTitle) return stroboscopeSection;
+          if (section.title === waterRefractionTitle) return waterRefractionSection;
           return section;
         }),
         waveTankSetupSection, waveTankSection, circularWaveSection, concaveSection, convexSection, surfaceNormalSection, coastalWaterSection, twoTankDepthSection, waterSlopeSection,
       ],
-      examples: [...guide.examples, surfaceWaveExample, waveTankExample, circularWaveExample, waterReflectionExample, concaveExample, virtualWaterExample, convexExample, coastalWaterExample, waterDepthExample, stroboscopeExample, waterSlopeExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfasındaki su dalgası, yüzey işareti ve ilerleyen tepeyle yan kesitte yeniden gösterildi. Fiziksel 158, basılı 156. sayfadaki düz çubuklu leğen üstten görünüm, yan kesit ve aydınlık/karanlık şeritlerle aynı ölçekte çizildi. Aynı sayfadaki dairesel dalga, üstten su yüzeyi, kâğıt, tepe ve çukur halkalarıyla yeniden çizildi. Fiziksel 159, basılı 157. sayfadaki düz engelde dik ve eğik yansıma, cepheler ve hız oklarıyla iki aşamada gösterildi. Aynı sayfadaki çukur engel için düz geliş, F odağındaki kaynak ve M merkezindeki kaynak ortak geometriyle yeniden çizildi. Fiziksel 160, basılı 158. sayfadaki noktasal kaynağın yansıması, O ve O′ ile iki sahnede gösterildi. Aynı sayfadaki tümsek engel ve yüzey normali, gelen ve yansıyan çizimlerde yeniden oluşturuldu. Kıyı koruması farklı bir gerçek kıyı fotoğrafı ve ayrı gözlem sorusuyla incelendi. Fiziksel 161, basılı 159. sayfadaki iki leğen ve ortak sınır kesiti, aynı fizik verisinden üretildi. Fiziksel 162, basılı 160. sayfadaki 8 ve 4 yarıklı disk çizimleri ardışık bakış çizgileriyle gösteriliyor. Aynı sayfanın eğimli tabanında hız ve aralık sürekli değişiyor. Modellerin sayısal değerleri özgün.`,
+      examples: [...guide.examples, surfaceWaveExample, waveTankExample, circularWaveExample, waterReflectionExample, concaveExample, virtualWaterExample, convexExample, coastalWaterExample, waterDepthExample, stroboscopeExample, waterSlopeExample, waterRefractionExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfasındaki su dalgası, yüzey işareti ve ilerleyen tepeyle yan kesitte yeniden gösterildi. Fiziksel 158, basılı 156. sayfadaki düz çubuklu leğen üstten görünüm, yan kesit ve aydınlık/karanlık şeritlerle aynı ölçekte çizildi. Aynı sayfadaki dairesel dalga, üstten su yüzeyi, kâğıt, tepe ve çukur halkalarıyla yeniden çizildi. Fiziksel 159, basılı 157. sayfadaki düz engelde dik ve eğik yansıma, cepheler ve hız oklarıyla iki aşamada gösterildi. Aynı sayfadaki çukur engel için düz geliş, F odağındaki kaynak ve M merkezindeki kaynak ortak geometriyle yeniden çizildi. Fiziksel 160, basılı 158. sayfadaki noktasal kaynağın yansıması, O ve O′ ile iki sahnede gösterildi. Aynı sayfadaki tümsek engel ve yüzey normali, gelen ve yansıyan çizimlerde yeniden oluşturuldu. Kıyı koruması farklı bir gerçek kıyı fotoğrafı ve ayrı gözlem sorusuyla incelendi. Fiziksel 161, basılı 159. sayfadaki iki leğen ve ortak sınır kesiti, aynı fizik verisinden üretildi. Fiziksel 162, basılı 160. sayfadaki 8 ve 4 yarıklı disk çizimleri ardışık bakış çizgileriyle gösteriliyor. Aynı sayfanın eğimli tabanında hız ve aralık sürekli değişiyor. Aynı sayfadaki KOL cephesi sığ ve derin bölgede, sınırdan önce, sınırda ve sonra yeniden modellendi. Modellerin sayısal değerleri özgün.`,
     };
   }
   if (guide?.id === "ses-deprem-dalgalari") {

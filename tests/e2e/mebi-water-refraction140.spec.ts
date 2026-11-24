@@ -1,0 +1,56 @@
+import { expect, test } from "@playwright/test";
+import { refractionCaseTitles, waterRefractionExample, waterRefractionTitle } from "../../src/learning/mebiWaterRefraction";
+import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse";
+import { svgLayoutAudit } from "./helpers/svgAudit";
+
+test("KOL cephesi sınırdan önce, sınırda ve sonra çevrimdışı çizilir", async ({ page, context }, info) => {
+  await page.setViewportSize({ width: 320, height: 870 });
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  await openCourse(page, { lesson: "su-dalgalari", search: "Su dalgaları" });
+  const toc = page.getByRole("navigation", { name: "Anlatım içeriği", exact: true });
+  const section = toc.getByRole("button", { name: waterRefractionTitle, exact: true });
+  if (!(await section.isVisible())) await toc.getByText("İçindekiler", { exact: true }).press("Enter");
+  await section.press("Enter");
+  const scope = `figure[data-section-figure="${waterRefractionTitle}"]`;
+  const figure = page.locator(scope);
+  await expect(figure.getByRole("img")).toHaveAccessibleName(/K ve L dalga cephesinin uçları/i);
+  await expect(figure).toContainText("K tarafı sınıra önce yaklaşır.");
+  const svg = figure.getByRole("img");
+  await expect(svg.getByText("O", { exact: true })).toHaveCount(0);
+  await svg.screenshot({ path: info.outputPath("water-refraction-before140.png") });
+  const next = figure.getByRole("button", { name: "İleri", exact: true });
+  await next.press("Enter");
+  await expect(figure).toContainText("O sınırda. K tarafı derinde, L tarafı sığda.");
+  await expect(figure).toContainText("Gelme açısı i = 20°.");
+  const incident = figure.getByRole("slider", { name: "Gelme açısı", exact: true });
+  await incident.press("Home");
+  await expect(figure).toContainText("Gelme açısı i = 0°. Kırılma açısı r = 0°.");
+  await expect(figure).toContainText("Cephe yönü değişmeden sınırı geçer.");
+  await incident.press("End");
+  await expect(figure).toContainText("Gelme açısı i = 30°. Kırılma açısı r = 48,6°.");
+  for (const label of ["O", "i", "r"]) await expect(svg.getByText(label, { exact: true })).toBeVisible();
+  await svg.screenshot({ path: info.outputPath("water-refraction-crossing140.png") });
+  await next.press("Enter");
+  await expect(figure).toContainText("K ve L derinde. Cephe yeni doğrultuda ilerler.");
+  await expect(svg.getByText("O", { exact: true })).toHaveCount(0);
+  await svg.screenshot({ path: info.outputPath("water-refraction-after140.png") });
+  expect((await page.evaluate(svgLayoutAudit, { scope, figuresOnly: true, explore: true })).issues).toEqual([]);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Kopya Kağıdı sınırı ve iki aralığı kendi çözüm adımlarında açar", async ({ page, context }) => {
+  await prepare(page);
+  await context.setOffline(true);
+  await page.goto("/#/cheatsheets?topic=detail-129");
+  const example = page.locator(".cheat-examples .worked-example").filter({ hasText: waterRefractionExample.title });
+  await example.locator(":scope > summary").press("Enter");
+  const solution = example.locator(".cheat-solution");
+  await expect(solution.getByRole("img")).toHaveCount(0);
+  await solution.locator("summary").press("Enter");
+  const figures = refractionCaseTitles.map((title) => solution.locator(`figure[data-section-figure="${title}"]`));
+  await expect(figures[0]).toContainText("O sınırda. K tarafı derinde, L tarafı sığda.");
+  await expect(figures[1]).toContainText("8 cm/s ÷ 4 Hz = 2 cm");
+  await expect(figures[2]).toContainText("12 cm/s ÷ 4 Hz = 3 cm");
+});

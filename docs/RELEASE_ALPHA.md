@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.140.0 · Sınırda dönen su cephesi
+
+Yayın adayı. KOL cephesini üç aşamada izle. Gelme açısını değiştirip normalden ölçülen iki açıyı karşılaştır. Kopya Kağıdı sığ bölümdeki 2 cm ve derin bölümdeki 3 cm aralığını iki ayrı çizimde hesaplıyor.
+
 # ÖSYM Mania 0.139.0 · Eğimli tabanda dalga boyu
 
 Yayın adayı. Leğenin sağındaki derinliği değiştir. Bir tepeden diğerine olan uzaklığın yavaş yavaş açıldığını yan kesitte ve kâğıt şeritlerinde gör. Kopya Kağıdı giriş ve çıkış için sürat ile dalga boyunu hesaplıyor. Stroboskop çözümü, her adımda ilgili diski doğrudan açıyor.

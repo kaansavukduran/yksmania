@@ -1,8 +1,8 @@
 {
-  "version": "0.139.0",
+  "version": "0.140.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Leğenin sağındaki derinliği değiştir. Tepe aralığının taban eğiminde nasıl açıldığını aynı kaynak frekansında izle.",
-    "en": "Change the depth at one end of the tank. Watch the crest spacing grow over the sloped floor while the source frequency stays fixed."
+    "tr": "Su dalgası cephesinin hangi ucunun derine önce geçtiğini izle. Sınırda gelme ve kırılma açısını ayrı ayrı ölç.",
+    "en": "Follow the water-wave front before, at, and after the boundary. Measure the angles on both sides and compare the two wavelengths."
   }
 }
