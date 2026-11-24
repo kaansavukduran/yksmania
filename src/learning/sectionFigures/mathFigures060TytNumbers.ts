@@ -509,6 +509,35 @@ const appendDigit: FigureDef = {
   },
 };
 
+const carryGroups: FigureDef = {
+  caption: "Üçüncü toplananı değiştir. Her tamamlanan onluk soldaki sütuna geçer, artan birlikler sağdaki sütunda kalır.",
+  alt: "Onlar ve birler başlıklı iki sütun. Onlar sütununda on birlikten oluşan tam gruplar, birler sütununda artan kareler.",
+  param: { label: "Üçüncü toplanan", min: 0, max: 9, step: 1, init: 9 },
+  draw: (thirdDigit) => {
+    const sum = 9 + 9 + thirdDigit;
+    const tens = Math.floor(sum / 10);
+    const ones = sum % 10;
+    const els: El[] = [
+      txt(v(1.6, 3.8), "Onlar", "c", { bold: true }),
+      txt(v(4.8, 3.8), "Birler", "c", { bold: true }),
+      seg(v(3.2, 0), v(3.2, 3.5), { tone: "muted", thin: true }),
+      ...pad(-0.15, 4.2, 6.4, -0.4),
+    ];
+    for (let group = 0; group < tens; group++) {
+      const y = 2.15 - group * 1.15;
+      els.push(rect(0.25, y - 0.18, 2.7, 0.88, "a"));
+      for (let i = 0; i < 10; i++) {
+        els.push(rect(0.43 + (i % 5) * 0.47, y + Math.floor(i / 5) * 0.38, 0.3, 0.28, "a"));
+      }
+    }
+    for (let i = 0; i < ones; i++) {
+      els.push(rect(4.0 + (i % 3) * 0.56, 2.5 - Math.floor(i / 3) * 0.52, 0.36, 0.36, "b"));
+    }
+    els.push(txt(v(4.8, 0.2), `${ones} birlik`, "c", { tone: "b" }));
+    return { els, readout: [`9 + 9 + ${thirdDigit} = ${sum}`, `${sum} = ${tens} · 10 + ${ones}`, `Elde ${tens} onluk. Birler basamağı ${ones}.`] };
+  },
+};
+
 const digitCount: FigureDef = {
   caption:
     "1’den b’ye kadar ardışık numaraları yazmak için kaç rakam gerekir? Aralığı basamak sınırlarında böl: 1–9 birer, 10–99 ikişer, 100–999 üçer rakam. Sürgüyle b’yi değiştir; her blokta adet × basamak sayısı alınır. Uçlar dahil adet b − a + 1’dir.",
@@ -648,6 +677,7 @@ export const mathFigures060TytNumbers: Record<string, Record<string, FigureDef>>
   "sayi-basamaklari": {
     "Rakam yer değiştirirse değer de değişebilir": weights6206,
     "Sola eklemek ve sağa eklemek farklıdır": appendDigit,
+    "Birlikleri onluklara grupla": carryGroups,
     "Numara sayısı ile yazılan rakam sayısı": digitCount,
     "Basamak aralığı ve 10’un kuvvetleri": digitRange,
   },

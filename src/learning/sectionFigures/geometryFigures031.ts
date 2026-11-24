@@ -1005,6 +1005,45 @@ const dikUcgen: Record<string, FigureDef> = {
 };
 
 const eslikBenzerlik: Record<string, FigureDef> = {
+  "Eş yükseklik, farklı alan": {
+    caption: "İki kesim tabana paralel. Sürgüyle bir şerit seç ve alanını tepeden biriken iki alanın farkında gör.",
+    alt: "Eşkenar üçgen, tabana paralel iki çizgiyle eş yükseklikte üç şeride ayrılmış. Seçilen şerit vurgulanıyor.",
+    param: { label: "Şerit", min: 1, max: 3, step: 1, init: 2 },
+    draw: (band) => {
+      const wholeArea = 81;
+      const width = Math.sqrt(4 * wholeArea / Math.sqrt(3));
+      const A = v(0, width * Math.sqrt(3) / 2);
+      const B = v(-width / 2, 0);
+      const C = v(width / 2, 0);
+      const outer = band / 3;
+      const inner = (band - 1) / 3;
+      const lower = [lerp(A, B, outer), lerp(A, C, outer)];
+      const upper = [lerp(A, B, inner), lerp(A, C, inner)];
+      const selected: V[] = band === 1
+        ? [A, lower[0], lower[1]]
+        : [upper[0], lower[0], lower[1], upper[1]];
+      const cumulativeArea = (ratio: number) => wholeArea * ratio ** 2;
+      const lowerArea = cumulativeArea(outer);
+      const upperArea = cumulativeArea(inner);
+      return {
+        els: [
+          poly(selected, { fill: "a", tone: "a" }),
+          tri(A, B, C),
+          seg(lerp(A, B, 1 / 3), lerp(A, C, 1 / 3), { tone: "muted" }),
+          seg(lerp(A, B, 2 / 3), lerp(A, C, 2 / 3), { tone: "muted" }),
+          txt(lerp(A, C, 1 / 3), "1/3", "e"),
+          txt(lerp(A, C, 2 / 3), "2/3", "e"),
+          pt(A, "A", "n"),
+          pt(B, "B", "sw"),
+          pt(C, "C", "se"),
+        ],
+        readout: [
+          `Şerit ${band}: ${fmt(lowerArea)} − ${fmt(upperArea)} = ${fmt(lowerArea - upperArea)} birim²`,
+          "Üç şerit birlikte: 9 + 27 + 45 = 81 birim².",
+        ],
+      };
+    },
+  },
   "Aynı biçim ile aynı büyüklüğü ayır": {
     caption:
       "Ortadaki üçgen soldakinin döndürülmüş kopyasıdır: eştir. Sağdaki her kenarı 2 katına çıkmış hâlidir: açıları aynı, büyüklüğü farklı; benzerdir.",

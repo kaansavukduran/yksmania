@@ -525,9 +525,11 @@ export const forge026MathGuides: LessonGuide[] = [
       },
       {
         title: "Elde ve sıfır kısıtlarını son aşamaya bırakma",
+        figureTitle: "Birlikleri onluklara grupla",
         paragraphs: [
           "Bir sütundaki rakamların ve önceki eldenin toplamı T olsun. Sütuna T’nin 10’a bölümünden kalan yazılır; sonraki sütuna tam bölüm taşınır. İki rakam toplanırken elde en çok 1, üç rakam toplanırken en çok 2 olabilir. Örneğin birler toplamı 26 ise 6 yazılır, 2 onluk taşınır. Elde, gizli bir rakam değil tam bir onluk aktarımıdır.",
           "Sayı kurarken ilk konumu sıfır olmayan rakamla doldur. Verilen rakamları birer kez kullanarak en küçük yazımda başa en küçük sıfır olmayanı, ardından varsa sıfırı ve kalanları artan sırayla koy. En büyükte büyük rakamları yüksek ağırlıklara yerleştir. Rakam tekrarına izin verilip verilmediğini her adımda koru; kullanılmamış rakam listesini güncelle.",
+          "9+9+d modelinde d, üçüncü toplananın birler rakamıdır. d=1 iken 19 birliğin 10’u taşınır, 9’u kalır. d=2 olunca 20 birlik iki tam onluk eder, bu yüzden birler hanesine 0 yazılır. d=9 iken 27 birlikten 20’si taşınır ve 7’si kalır.",
         ],
       },
       {
@@ -819,7 +821,7 @@ export const forge026MathGuides: LessonGuide[] = [
       },
     ],
     source:
-      "MEBİ TYT Matematik Sayı Basamakları ve Aurelia ilgili kopya kâğıdının okunan bölümleriyle karşılaştırılmış özgün ayrıntılı anlatım. Yeni örnekler ve alıştırmalar resmî sınav sorusu değildir.",
+      "MEBİ TYT Matematik Sayı Basamakları ve Aurelia ilgili kopya kâğıdının okunan bölümleriyle karşılaştırılmış özgün anlatım. Elde modeli Sayı Basamakları 1.1 fiziksel s. 3 ve 13 ile eşleşir. Yeni örnekler ve alıştırmalar resmî sınav sorusu değildir.",
   },
   {
     id: "bolme-bolunebilme",

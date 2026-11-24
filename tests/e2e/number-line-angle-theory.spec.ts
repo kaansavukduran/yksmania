@@ -260,3 +260,49 @@ test("Two perpendicular distances exchange area while their sum stays constant",
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Changing the third addend crosses the one-to-two tens boundary", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Birlikleri onluklara grupla");
+  await page.goto("/#/lesson?id=sayi-basamaklari");
+  await expect(model).toContainText("27 = 2 · 10 + 7");
+  const dial = model.getByRole("slider", { name: /Üçüncü toplanan/ });
+  await dial.press("Home");
+  await dial.press("ArrowRight");
+  await expect(model).toContainText("19 = 1 · 10 + 9");
+  const previous = await model.getByRole("img").innerHTML();
+  await dial.press("ArrowRight");
+  await expect(model).toContainText("20 = 2 · 10 + 0");
+  expect(await model.getByRole("img").innerHTML()).not.toBe(previous);
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-199");
+  await expect(model).toContainText("27 = 2 · 10 + 7");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Three equal heights in an equilateral triangle give unequal band areas", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-eslik-benzerlik-031";
+  const model = figure(page, "Eş yükseklik, farklı alan").first();
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("36 − 9 = 27 birim²");
+  const dial = model.getByRole("slider", { name: /Şerit/ });
+  await dial.press("Home");
+  await expect(model).toContainText("9 − 0 = 9 birim²");
+  const previous = await model.getByRole("img").innerHTML();
+  await dial.press("End");
+  await expect(model).toContainText("81 − 36 = 45 birim²");
+  expect(await model.getByRole("img").innerHTML()).not.toBe(previous);
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(model).toContainText("36 − 9 = 27 birim²");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

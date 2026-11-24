@@ -42,6 +42,7 @@ describe("Forge060 TYT Matematik bölüm figürleri", () => {
         "temel-kavramlar": 6,
         "bilimsel-gosterim-katsayi": 5,
         "asal-sayilar": 5,
+        "sayi-basamaklari": 5,
       };
       expect(Object.keys(sectionFigures[g] ?? {}).length, g).toBe(expectedCounts[g] ?? 4);
     }

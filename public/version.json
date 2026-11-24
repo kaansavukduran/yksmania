@@ -1,8 +1,8 @@
 {
-  "version": "0.153.0",
+  "version": "0.154.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Faktöriyelde bileşik bölenin hangi asal çarpanla sınırlandığını tablodan oku. İkizkenar üçgende bir noktanın iki yan kenara dik uzaklığını hareketli şekil üzerinde karşılaştır.",
-    "en": "Compare prime factor limits in factorials and explore perpendicular distances to an isosceles triangle’s equal sides."
+    "tr": "Sayı Basamakları’nda birliklerden onluklara taşıma sınırını değiştir. Eşkenar üçgende eş yükseklikte üç şeridin alanlarını benzerlikle karşılaştır.",
+    "en": "Regroup ones into tens and compare the areas of three equal-height strips in an equilateral triangle."
   }
 }
