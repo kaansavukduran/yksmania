@@ -102,6 +102,14 @@ export const triangleAngles042: Supplement = {
         "Bir dış açının 120° olduğunu bilmek iki uzak iç açının ayrı ayrı 60° olduğunu göstermez. 50° ve 70° de mümkündür. Eş kenar ya da eş açı bilgisi gelirse iki uzak açı eşitlenebilir. İç açıortay verilen köşe açısını ikiye böler, bir kenarortay yalnızca karşı kenarı eşler.",
       ],
     },
+    {
+      title: "Orta nokta ile açıortayın kestiği noktayı ayır",
+      figureTitle: "Açıortay ve orta nokta",
+      paragraphs: [
+        "B köşesinden AC’nin orta noktasına çizilen BM, AC’yi iki eş parçaya ayırır. B açısını ikiye bölmek için BD açıortayı gerekir. Şekilde D ile M ayrı noktalardır. B’nin çevresindeki açı işaretlerini ve AC’deki eş uzunluk çizgilerini ayrı oku.",
+        "D, AC üzerinde olduğu için ∠BCD, büyük üçgendeki C açısıyla aynıdır. B açısı 50°, C açısı 60° ise ∠DBC=25° ve küçük BDC üçgeninde ∠BDC=180°−60°−25°=95° olur.",
+      ],
+    },
   ],
   examples: [
     {
@@ -161,6 +169,18 @@ export const triangleAngles042: Supplement = {
       pitfall:
         "D köşesinde ∠BDA’yı hesapladıysan bütünlerini alarak ∠BDC’ye geç.",
     },
+    {
+      title: "Bölünen açıyı küçük üçgende kullan",
+      prompt: "B=64° ve C=48° olan ABC üçgeninde B’nin iç açıortayı AC’yi D’de kesiyor. ∠BDC kaç derece?",
+      strategy: "B açısının yarısını al. C açısının aynı kaldığını gör ve BDC üçgenini tamamla.",
+      steps: [
+        { label: "B açısının yarısı", expression: "64° ÷ 2 = 32°", explanation: "D, açıortay üzerinde olduğu için ∠DBC=32°." },
+        { label: "Küçük üçgenin üçüncü açısı", expression: "180°−48°−32°=100°", explanation: "D, A ile C arasında ve ∠BCD=48°." },
+      ],
+      answer: "100°.",
+      check: "32°+48°+100°=180°.",
+      pitfall: "AC’nin orta noktasını seçmek B açısının bölündüğünü göstermez.",
+    },
   ],
   recall: [
     {
@@ -181,6 +201,11 @@ export const triangleAngles042: Supplement = {
         "B ile C’de iki iç açıortay için ∠BIC=90°+A/2. B iç ve C dış için dar açı A/2. İki dış için B ve C’ye giden kollar arasında 90°−A/2.",
         "Her dış açıortay aynı köşedeki iç açıortaya diktir. Önce iki köşeyi, sonra kesişimdeki yayı açıkça seç.",
       ],
+    },
+    {
+      title: "Açıortay ve kenarortay",
+      figureTitle: "Açıortay ve orta nokta",
+      text: ["Açıortay köşedeki açıyı, kenarortay karşı kenarı ikiye böler. C açısı aynı kalan BDC’de B’nin yarısını ve C’yi 180°den çıkar."],
     },
   ],
 };

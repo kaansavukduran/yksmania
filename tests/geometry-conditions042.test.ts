@@ -94,12 +94,12 @@ it("appends distinct course cards, examples and quick paths without changing fir
     {
       id: "tyt-geo-ucgende-acilar-031",
       old: 10,
-      sections: 9,
-      examples: 2,
+      sections: 10,
+      examples: 3,
       first: "f031-tyt-geo-ucgende-acilar-031-1",
       official: ["2024-TYT-MAT-32", "E", 34, 43],
       answers: ["62°", "38°", "66°", "75°, 60°, 45°", "95°"],
-      sheet: "Üç açıortay kesişimini ayır",
+      sheet: "Açıortay ve kenarortay",
     },
     {
       id: "tyt-geo-ucgen-esitsizligi-031",
@@ -135,6 +135,10 @@ it("appends distinct course cards, examples and quick paths without changing fir
     const topic = `topic-${id}`;
     const summary = builtInCheatSheets.get(topic)!;
     expect(summary.sections.at(-1)?.title).toBe(sheet);
+    if (id === "tyt-geo-ucgende-acilar-031") {
+      expect(summary.sections.map((section) => section.title)).toContain("Üç açıortay kesişimini ayır");
+      expect(lessonGuides.get(id)?.examples.at(-1)?.answer).toBe("100°.");
+    }
     expect(summary.examples.length).toBeGreaterThanOrEqual(examples + 2);
     expect(pastExamReferences.find((r) => r.id === official[0])).toMatchObject({
       answer: official[1],

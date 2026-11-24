@@ -160,3 +160,24 @@ describe("Forge060 TYT Matematik bölüm figürleri", () => {
     expect(frame("sayi-problemleri", "En az ve en çok eşitlikten fazlasını söyler", 95).readout).toContain("En çok 7 tane: 7·12 = 84 ≤ 95 < 96");
   });
 });
+
+it("places the angle bisector and the median at different points on AC", () => {
+  const def = fig("tyt-geo-ucgende-acilar-031", "Açıortay ve orta nokta");
+  const bisector = def.draw(0, 0);
+  const median = def.draw(0, 1);
+  const points = (elements: typeof bisector.els) => new Map(
+    elements.filter((el) => el.k === "pt").map((point) => [point.label, point.p]),
+  );
+  const { A, C, D, M } = {
+    A: points(bisector.els).get("A")!,
+    C: points(bisector.els).get("C")!,
+    D: points(bisector.els).get("D")!,
+    M: points(median.els).get("M")!,
+  };
+  const dist = (p: typeof A, q: typeof A) => Math.hypot(p[0] - q[0], p[1] - q[1]);
+  expect(dist(M, A)).toBeCloseTo(dist(M, C), 10);
+  expect(dist(D, M)).toBeGreaterThan(0.01);
+  expect(dist(A, D) + dist(D, C)).toBeCloseTo(dist(A, C), 10);
+  expect(bisector.readout?.join(" ")).toContain("= 95°");
+  expect(median.els.filter((el) => el.k === "ticks")).toHaveLength(2);
+});

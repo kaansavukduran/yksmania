@@ -1,8 +1,8 @@
 {
-  "version": "0.149.0",
+  "version": "0.150.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Temel Kavramlar’da sayı sırası, uzaklık ve tam sayı sınırları sayı doğrusunda görülüyor. Doğruda Açılar’da komşu doğrusal çift ve açıortaylar etkileşimli çizimde inceleniyor.",
-    "en": "The number line shows order, distance and integer bounds. An interactive diagram shows angle bisectors of a linear pair."
+    "tr": "Tek–çift anlatımında iki tam sayının bölümünü ve 2 çarpanlarını bir tabloda karşılaştır. Üçgende açıortay ile kenarortayın hangi parçaları eşitlediğini aynı çizimde adım adım izle.",
+    "en": "Compare parity conditions in a division table, and step through a triangle to see what its angle bisector and median divide equally."
   }
 }

@@ -4,7 +4,9 @@
 
 [Geliştirici lore dizini](LORE/README.md) · [Konu kapsamı](docs/KONU_KAPSAMI.md)
 
-**Son yayımlanan web ve masaüstü sürümü 0.123.0**. Eşit gerilen iki yayda atmanın aldığı yolu ve Kopya Kağıdı’ndaki sürat hesabını çevrimdışı inceleyebilirsin. [Windows ve Linux 0.123](https://github.com/kaansavukduran/yksmania/releases/tag/v0.123.0-alpha.1) · [Önceki 0.103 sürümü](https://github.com/kaansavukduran/yksmania/releases/tag/v0.103.0-alpha.1)
+Canlı web sürümünü her yayının kendi sürüm kaydından takip edebilirsin. [GitHub Pages sürümü](https://kaansavukduran.github.io/yksmania/version.json) · [Cloudflare Pages sürümü](https://yksmania.pages.dev/version.json)
+
+Masaüstü paketleri GitHub Releases arşivindedir. [Sürümler](https://github.com/kaansavukduran/yksmania/releases) · [Windows ve Linux 0.123](https://github.com/kaansavukduran/yksmania/releases/tag/v0.123.0-alpha.1) · [Önceki 0.103 sürümü](https://github.com/kaansavukduran/yksmania/releases/tag/v0.103.0-alpha.1)
 
 **0.147.0** 14 matematik ve geometri başlığında 79 video bağlantısı ekler.
 

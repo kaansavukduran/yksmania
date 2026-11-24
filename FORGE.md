@@ -3653,3 +3653,9 @@ Dik üçgende trigonometrik oranlar için [Khan Academy Türkçe videosu](https:
 TYT Matematik ve Geometri kaynak kâğıdı klasörleri 38 ve 32 dosya içeriyor. 70 dosya kimliği özel kanonik defterle eşleşti. 68 dosyanın boyutu kayıtlı envanterden farklı. Sonraki uygulama eşlemeleri Tek Çift Pozitif Negatif Sayılar fiziksel 5 ve 10. sayfalardaki bölüm koşulları ve Üçgende Açılar fiziksel 8. sayfadaki açıortay ile kenarortay ayrımı.
 
 Adayda TypeScript, 23 birim, 7 Chromium ve 323 çevrimdışı varlık kontrolü geçti. 320 px, %200 arayüz ve %150 yazı ayarında normal anlatım, çözümlü örnek ve Kopya Kağıdı test edildi. İlk testlerin başlık ve tek video paneli beklentileri gerçek ekran davranışına göre düzeltildi ve aynı akışlar yeniden geçti.
+
+## TYT Matematik ve Geometri · 0.150.0 adayı
+
+Tek–Çift ve İşaret’te bölümü sınıflandırmadan önce sıfır ve tam sayı koşulunu denetleyen tablo. İki çarpan sayısı tek ve çift bölümleri örneklerle ayırıyor. Üçgende Açılar’da B’den çıkan açıortay ile kenarortay aynı üçgende adım adım karşılaştırılıyor. İki anlatımın ayrı Kopya Kağıdı aynı verileri gösteriyor.
+
+Kaynaklar güncel 5.1 Tek Çift Pozitif Negatif Sayılar fiziksel 2, 5, 10 ve 14, Üçgende Açılar fiziksel 8 ve 12. TypeScript, içerik, 24 birim, 9 Chromium ve 323 çevrimdışı varlık geçti. Sonraki maddeler Ardışık Sayılar fiziksel 5, silinen terimin üyeliği ve Açı Kenar Bağıntıları fiziksel 5, üçgen varlığı ile açı türünün ortak koşulu.

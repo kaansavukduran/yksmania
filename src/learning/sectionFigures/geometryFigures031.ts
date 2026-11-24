@@ -317,6 +317,43 @@ const temelAcilar: Record<string, FigureDef> = {
 };
 
 const ucgendeAcilar: Record<string, FigureDef> = {
+  "Açıortay ve orta nokta": {
+    caption: "Aynı üçgende B’den iki farklı çizgi dene. Açıortay köşedeki iki açıyı eşitler. Kenarortay AC’deki iki parçayı eşitler.",
+    alt: "ABC üçgeninin AC kenarında seçilen bir nokta. Açıortay adımında B açısı iki eş yaya ayrılıyor. Kenarortay adımında AC üzerindeki eş parçalar çizgiyle işaretleniyor.",
+    steps: ["Açıortay BD", "Kenarortay BM"],
+    draw: (_, step) => {
+      const b = 50;
+      const c = 60;
+      const halfB = b / 2;
+      const angleAtD = 180 - c - halfB;
+      const [A, B, C] = fromAngles(6, b, c);
+      const bisector = step === 0;
+      const X = bisector ? meet(B, pol(1, halfB), A, C) : mid(A, C);
+      const els = [
+        tri(A, B, C),
+        seg(B, X, { tone: "a", bold: true }),
+        pt(A, "A", "n"),
+        pt(B, "B", "sw"),
+        pt(C, "C", "se"),
+        pt(X, bisector ? "D" : "M", "ne", "a"),
+      ];
+      if (bisector) {
+        els.push(
+          ang(B, C, X, `${halfB}°`, { tone: "a", r: 45 }),
+          ang(B, X, A, `${halfB}°`, { tone: "a", r: 45 }),
+          ang(X, B, C, `${angleAtD}°`, { tone: "b", r: 34 }),
+        );
+      } else {
+        els.push(ticks(A, X, 1, "a"), ticks(X, C, 1, "a"));
+      }
+      return {
+        els,
+        readout: bisector
+          ? [`B: ${halfB}° + ${halfB}° = ${b}°.`, `BDC üçgeninde D: 180° − ${c}° − ${halfB}° = ${angleAtD}°.`]
+          : ["AM = MC.", `B’deki parçalar yaklaşık ${fmt(angleAt(B, C, X))}° ve ${fmt(angleAt(B, X, A))}°.`],
+      };
+    },
+  },
   "Üç köşe bir üçgeni nasıl oluşturur?": {
     caption:
       "D eklendiğinde A köşesinde iki farklı açı adı oluşur: ∠BAD, ∠BAC'nin yalnız bir parçasıdır. Ölçüyü tam olarak ait olduğu iki kolun arasına yaz.",

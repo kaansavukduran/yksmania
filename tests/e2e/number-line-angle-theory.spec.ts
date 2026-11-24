@@ -84,3 +84,53 @@ test("Linear pair and bisector step use the same model in theory and cheat sheet
   await checkFrame(page, explanation);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Division conditions are readable as a table in the lesson and cheat sheet", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  await openCourse(page, {
+    lesson: "tek-cift-isaret",
+    search: "iki ayrı özellik",
+    title: "Tek–çift ve işaret: iki ayrı özellik",
+  });
+  const panel = page.getByRole("region", { name: /Bölümün paritesinden önce tam sayı oluşunu denetle/ });
+  const table = panel.getByRole("table");
+  await expect(table.getByRole("columnheader")).toHaveCount(3);
+  await expect(table.getByRole("row")).toHaveCount(6);
+  await expect(table.getByRole("row").filter({ hasText: "−18 ÷ 6" })).toContainText("Sonuç tek.");
+  await expect(table.getByRole("row").filter({ hasText: "14 ÷ 6" })).toContainText("tam sayı değildir");
+  await table.getByRole("row").filter({ hasText: "12 ÷ 0" }).scrollIntoViewIfNeeded();
+  await expect(table.getByRole("row").filter({ hasText: "12 ÷ 0" })).toContainText("Bölüm tanımsızdır");
+  await page.goto("/#/cheatsheets?topic=detail-195");
+  await expect(table.getByRole("row")).toHaveCount(6);
+  await panel.focus();
+  await expect(panel).toBeFocused();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("An angle bisector and a median mark different equalities in the same triangle", async ({ page, context }, info) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-ucgende-acilar-031";
+  await openCourse(page, { lesson, search: "Üçgende açılar" });
+  const model = figure(page, "Açıortay ve orta nokta");
+  await expect(model).toContainText("25° + 25° = 50°");
+  await expect(model).toContainText("= 95°");
+  const original = await model.getByRole("img").innerHTML();
+  await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await expect(model).toContainText("AM = MC.");
+  expect(await model.getByRole("img").innerHTML()).not.toBe(original);
+  await checkFrame(page, model);
+  await model.screenshot({ path: info.outputPath("kenarortay.png") });
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(model).toContainText("25° + 25° = 50°");
+  await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await expect(model).toContainText("AM = MC.");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
