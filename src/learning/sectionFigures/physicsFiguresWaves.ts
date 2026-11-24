@@ -19,6 +19,7 @@ import {
 import { wavelengthMarkers, wavelengthTitle, wavePeriodTitle, waveRopeTitle, waveTiming } from "../mebiWaveBasics";
 import { waveTravelAt, waveTravelFrequencyHz, waveTravelSpeedMps, waveTravelTitle, waveTravelWavelengthM } from "../mebiWaveTravel";
 import { waterAmplitudeTitle, waveAmplitudeBounds, waveAmplitudeInitialCm, waveAmplitudeTitle } from "../mebiWaveAmplitude";
+import { waveClassificationExamples, waveClassificationTitle } from "../mebiWaveClassification";
 
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
@@ -295,6 +296,44 @@ const giris: Record<string, FigureDef> = {
           txt(v(11, -1.6), "v₂ = 2 m/s", "s", { small: true }),
         ],
         readout: ["f = 4/4 = 2/2 = 1 Hz (aynı)"],
+      };
+    },
+  },
+  [waveClassificationTitle]: {
+    caption: "Üst dalda ortam gereksinimi, alt dalda titreşim doğrultusu okunur. Bir örnek seçtiğinde sonuçları çizgide ve kartta görürsün.",
+    alt: "Dalga türleri iki kola ayrılıyor. Ortam kolu mekanik ve elektromanyetiğe, titreşim yönü kolu enine ve boyunaya ayrılıyor.",
+    picks: waveClassificationExamples.map((example) => ({
+      label: example.name,
+      title: `${example.medium} · ${example.direction.toLocaleLowerCase("tr-TR")}`,
+      detail: [example.explanation],
+    })),
+    draw: (_value, _step, pick = -1) => {
+      const selected = waveClassificationExamples[pick];
+      const groups = [
+        { title: "Ortam", y: 1.55, endings: ["Mekanik", "Elektromanyetik"], current: selected?.medium },
+        { title: "Titreşim yönü", y: -1.55, endings: ["Enine", "Boyuna"], current: selected?.direction },
+      ];
+      return {
+        els: [
+          txt(v(0, 0), "Dalgalar", "w", { bold: true }),
+          seg(v(0, 0), v(0.8, 0), { tone: "muted" }),
+          seg(v(0.8, -1.55), v(0.8, 1.55), { tone: "muted" }),
+          ...groups.flatMap(({ title, y, endings, current }) => [
+            seg(v(0.8, y), v(1.4, y), { tone: "muted" }),
+            txt(v(1.4, y), title, "e", { bold: true }),
+            seg(v(5.2, y), v(5.8, y), { tone: "muted" }),
+            ...endings.flatMap((ending, index) => {
+              const nextY = y + (index === 0 ? 0.65 : -0.65);
+              const active = current === ending;
+              const tone = active ? "a" : "muted";
+              return [
+                seg(v(5.8, y), v(5.8, nextY), { tone, bold: active }),
+                seg(v(5.8, nextY), v(6.5, nextY), { tone, bold: active }),
+                txt(v(6.5, nextY), ending, "e", { tone: active ? "a" : "ink", bold: active }),
+              ];
+            }),
+          ]),
+        ],
       };
     },
   },

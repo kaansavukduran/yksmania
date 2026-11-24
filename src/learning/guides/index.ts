@@ -26,6 +26,7 @@ import { atomizerExample, atomizerSection } from "../mebiAtomizer";
 import { wavelengthTitle, wavePeriodExample, waveRopeSection } from "../mebiWaveBasics";
 import { waveTravelExample, waveTravelSection } from "../mebiWaveTravel";
 import { waterAmplitudeSection, waveAmplitudeExample, waveAmplitudeSection } from "../mebiWaveAmplitude";
+import { waveClassificationExample, waveClassificationSection } from "../mebiWaveClassification";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
@@ -435,9 +436,9 @@ export function studyGuide(lessonId: string) {
       ...guide,
       sections: [...guide.sections.map((section) => section.title === wavelengthTitle
         ? { ...section, figureTitle: wavelengthTitle }
-        : section), waveRopeSection, waveTravelSection, waveAmplitudeSection, waterAmplitudeSection],
-      examples: [...guide.examples, wavePeriodExample, waveTravelExample, waveAmplitudeExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 149, basılı 147. sayfasındaki tepe ve çukur çiftlerinin dalga boyu ile kaynak ve sabit uç arasındaki bir tam tel deseni yeniden çizildi. Fiziksel 150, basılı 148. sayfadaki yayılma, zaman grafiğinde uzanım ve su yüzeyinde genlik şemaları yeniden çizildi. Sayısal değerler özgün örnektir.`,
+        : section), waveRopeSection, waveTravelSection, waveAmplitudeSection, waterAmplitudeSection, waveClassificationSection],
+      examples: [...guide.examples, wavePeriodExample, waveTravelExample, waveAmplitudeExample, waveClassificationExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 149, basılı 147. sayfasındaki tepe ve çukur çiftlerinin dalga boyu ile kaynak ve sabit uç arasındaki bir tam tel deseni yeniden çizildi. Fiziksel 150, basılı 148. sayfadaki yayılma, zaman grafiğinde uzanım, su yüzeyinde genlik ve iki ölçütlü sınıflandırma çizimleri yeniden oluşturuldu. Sınıflandırmada mekanik ve elektromanyetik dalgalar ortam gereksinimine göre ayrılır. Sayısal değerler özgün örnektir.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

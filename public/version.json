@@ -1,8 +1,8 @@
 {
-  "version": "0.104.0",
+  "version": "0.105.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Genliği zaman grafiğinden ölç. Su yüzeyinde denge çizgisini, çukuru ve tepeyi karşılaştır. Kopya Kağıdı’nda düşey uzaklığı adım adım hesapla.",
-    "en": "Measure amplitude in a time plot, compare crest and trough with a still water level, and work through the vertical-distance example."
+    "tr": "Ses, tel, ışık ve deprem dalgalarını ortam ve titreşim doğrultusuna göre karşılaştır. Kopya Kağıdı’nda iki ölçütü aynı örnekte uygula.",
+    "en": "Classify sound, rope, light and seismic waves by medium and direction, and apply both criteria in the worked cheat-sheet example."
   }
 }

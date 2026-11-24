@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.105.0 · Dalgaları iki özelliğe göre sınıflandır
+
+Yayın adayı. Ses, ışık, su, tel ve yer dalgası örneklerinin yayılma ortamını ve titreşim doğrultusunu ayrı ayrı karşılaştır. Kopya Kağıdı’nda iki ölçütü aynı örneğe uygula.
+
 # ÖSYM Mania 0.104.0 · Genlik ve denge seviyesi
 
 Yayın adayı. Genliği değiştirip bir tam periyodun dört işaretini karşılaştır. Su şemasında durgun seviyeyi bul. Kopya Kağıdı’nda genliği ve iki uç arasındaki düşey uzaklığı ayrı hesapla.
