@@ -4,6 +4,8 @@
 
 **Son yayımlanan web ve masaüstü sürümü 0.42.0**. Açıortayları ve ortak kenarlı üçgenleri çevrimdışı inceleyebilirsin. [Windows ve Linux 0.42](https://github.com/kaansavukduran/yksmania/releases/tag/v0.42.0-alpha.1) · [Android 0.42 kişisel deneme arşivi](https://github.com/kaansavukduran/yksmania/actions/runs/45187782506/artifacts/14823994107)
 
+**0.117.0 adayı** gerçek el röntgenini ve ton farkını yorumlayan ayrı Kopya Kağıdı örneğini içeriyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+
 **0.116.0 adayı** X ışınının dokudan geçişini ve bir çekirdeğin gama ışını yaymasını ayrı çizimlerle gösteriyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.115.0 adayı** dalga boyu ölçeğinde morötesi ve görünür bölgenin yaklaşık sınırını gösteriyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)

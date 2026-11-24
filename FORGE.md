@@ -1,3 +1,9 @@
+# Gerçek el röntgeninde ton farkı · 0.117.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 152, basılı 150. Kaynaktan algılayıcıya giden çizimin ardından ayrı bir gerçek el röntgeni açılıyor. Parmak kemiği ile çevresindeki dokuyu ton farkından karşılaştır. Ayrı Kopya Kağıdı aynı görüntüyü çözümde açıyor. [Görüntü kaynağı ve CC0](https://commons.wikimedia.org/w/index.php?title=File:X-ray_of_hand.jpg&oldid=1099028774)
+
+Check, 14 birim, derleme ve altı gerçek Chromium senaryosu geçti. 375 px büyük yazıda görüntünün açık alanı ölçüldü. Yeniden açılış, klavye odağı, çevrimdışı görüntü ve puan kaydının korunması sınandı. Sıradaki kaynak fiziksel 152’de tel ve sarmal yay için titreşim ve yayılma yönleri.
+
 # X ışını yolları ve gama geçişi · 0.116.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 152, basılı 150. X ışını kaynağı ile algılayıcı arasındaki iki yol, kalınlıkla değişen temsili sinyali gösteriyor. Çekirdeğin gama fotonu yayması ayrı enerji düzeyleri çiziminde açılıyor. İki örneğin çözüm çizimi ve X ışını tablosu ayrı Kopya Kağıdı’nda. [FDA görüntüleme ilkesi](https://www.fda.gov/radiation-emitting-products/medical-imaging/medical-x-ray-imaging) · [NASA gama ışınları](https://science.nasa.gov/ems/12_gammarays/)

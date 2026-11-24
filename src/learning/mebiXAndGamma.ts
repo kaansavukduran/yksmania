@@ -1,6 +1,8 @@
 import type { GuideSection, WorkedExample } from "./guides/types";
 
 export const xRayDetectorTitle = "X ışını kaynaktan algılayıcıya nasıl ulaşır?";
+export const handRadiographTitle = "El röntgeninde açık ve koyu bölgeler";
+export const handRadiographPhotoTitle = "Gerçek el röntgeni";
 export const gammaPhotonTitle = "Çekirdek enerji kaybedince gama ışını";
 
 export const xRayLayers = { min: 1, max: 3, initial: 1 };
@@ -19,7 +21,7 @@ export const xRayDetectorSection: GuideSection = {
   paragraphs: [
     "X ışını görünmeyen bir elektromanyetik dalgadır. Röntgen ve bilgisayarlı tomografi, X ışınlarının vücuttan geçerken farklı miktarlarda azalmasından yararlanır. Bazı güvenlik tarayıcıları da kapalı bir nesnenin içinden geçen X ışınlarını ölçer.",
     "Şemada kaynaktan aynı miktarda ışın iki yola çıkar. Yolların biri yumuşak dokuyu, öteki kemik içeren yolu temsil eder. Algılayıcıya gelen ışın miktarı iki yolda farklıdır. Böylece görüntüde farklı bölgeler ayırt edilebilir.",
-    "Kalınlığı artırıp iki algılayıcıdaki sinyali karşılaştır. Yüzdeler farkı anlatan bir modelden hesaplanır. Gerçek bir röntgen görüntüsünün ya da bir güvenlik taramasının değerleri değildir.",
+    "Kalınlığı artırıp iki algılayıcıdaki sinyali karşılaştır. Yüzdeler, iki yol arasındaki farkı anlatan bir öğretim modelinden hesaplanır.",
   ],
   table: {
     layout: "table",
@@ -44,6 +46,28 @@ export const xRayDetectorExample: WorkedExample = {
   pitfall: "Yüzdeler algılanan kısmı gösterir. Kaybolan payı istersen yüzde 100’den bu değeri çıkar.",
 };
 
+export const handRadiographSection: GuideSection = {
+  title: handRadiographTitle,
+  figureTitle: handRadiographPhotoTitle,
+  paragraphs: [
+    "Gerçek el röntgeninde parmak ve bilek kemikleri daha açık, etraflarındaki yumuşak doku çizgileri daha koyu görünür. Görüntüde R sağ eli işaretler. A–H harfleri görüntüyü yayımlayan kişinin eklediği bilek kemiği etiketleridir.",
+    "Algılayıcıya ulaşan X ışını miktarı kemiğin olduğu yollarda daha az olabilir. Bu röntgende ışının yol boyunca daha çok zayıfladığı bölgeler açık tonda. Röntgeni tonlarına bakarak, önceki şemayı yüzdelerine bakarak karşılaştır.",
+  ],
+};
+
+export const handRadiographExample: WorkedExample = {
+  title: "El röntgeninde parmak kemiğinin tonunu oku",
+  prompt: "Görüntüde parmağın açık renkli iç parçasıyla çevresindeki daha koyu doku çizgisini karşılaştır. Bu gösterimde daha az X ışını hangi yoldan algılayıcıya ulaşmıştır?",
+  strategy: "Önce iki bölgeyi görüntüde bul. Sonra röntgendeki açık tonun bu gösterimde neyi anlattığını hatırla.",
+  steps: [
+    { label: "Açık ve koyu iki bölge seç", expression: "Parmak kemiği · çevre doku", explanation: "Ortadaki parmakta peş peşe açık renkli kemikler var. Parmağın dış çizgisinin içinde daha koyu yumuşak doku görünüyor.", figureTitle: handRadiographPhotoTitle },
+    { label: "Tonu algılayıcıyla ilişkilendir", expression: "Daha açık → daha az ulaşan ışın", explanation: "Bu görüntünün ton eşlemesinde kemiğin daha açık görünmesi, o yoldaki X ışınlarının daha çok azaldığıyla uyumlu." },
+  ],
+  answer: "Daha açık görünen kemiğin bulunduğu yoldan algılayıcıya daha az ışın ulaşmıştır.",
+  check: "Doku şemasında da aynı kalınlıkta kemikli yolun algılayıcı çubuğu daha kısadır.",
+  pitfall: "Görüntüdeki tonlardan yalnızca bu iki bölgenin karşılaştırmasını yap. Sayısal sinyal için ölçüm verisi gerekir.",
+};
+
 export const gammaPhotonStages = ["Yüksek enerjili çekirdek", "Gama ışını yayılması"];
 
 export const gammaPhotonSection: GuideSection = {
@@ -51,7 +75,7 @@ export const gammaPhotonSection: GuideSection = {
   figureTitle: gammaPhotonTitle,
   paragraphs: [
     "Gama ışını yüksek enerjili elektromanyetik ışınımdır. Radyoaktif bozunmadan sonra bazı çekirdekler yüksek enerjili durumda kalabilir. Çekirdek daha düşük enerjiye geçerken aradaki enerjiyi bir gama fotonuyla taşıyabilir.",
-    "Şemanın düşey yönü enerjiyi gösterir. Aşağı ok çekirdeğin daha düşük enerji düzeyine geçtiğini anlatır. Sağdaki dalgalı çizgi çıkan fotonun simgesidir. Çizginin rengi ve boyu bir ölçüm değildir.",
+    "Şemanın düşey yönü enerjiyi gösterir. Aşağı ok çekirdeğin daha düşük enerji düzeyine geçtiğini anlatır. Sağdaki dalgalı çizgi, çıkan fotonu simgeler.",
     "X ışını ve gama ışını boşlukta yayılabilir. Bir X ışını tüpünde ışın, elektronların hedefle etkileşiminden oluşabilir. Buradaki gama örneğinde kaynak çekirdeğin enerji değişimidir. Bazı tedavilerde gama ışınından yararlanılır.",
   ],
 };
@@ -66,5 +90,5 @@ export const gammaPhotonExample: WorkedExample = {
   ],
   answer: "Gama fotonu yayıldığında çekirdeğin enerjisi azalır.",
   check: "Aşağı ok çekirdeğin enerji kaybını, sağa giden dalgalı ok taşınan enerjiyi gösterir.",
-  pitfall: "Düşey ok, çekirdeğin uzayda aşağı taşındığını göstermez. Bu çizimin düşey ekseni enerjidir.",
+  pitfall: "Düşey ekseni enerji olarak oku. Aşağı yön, daha düşük enerji düzeyine geçişi gösterir.",
 };

@@ -1,8 +1,8 @@
 {
-  "version": "0.116.0",
+  "version": "0.117.0",
   "channel": "alpha",
   "notes": {
-    "tr": "X ışınlarının iki doku yolundan geçişini ve çekirdeğin gama fotonu yaydığı enerji geçişini ayrı çizimlerde incele. Kopya Kağıdı’nda iki örneği çöz.",
-    "en": "Compare X-ray transmission through two paths and a nuclear transition that emits a gamma photon. Work through both examples in the reference sheet."
+    "tr": "Gerçek el röntgenini büyüt, kemik ve çevre dokuların tonunu karşılaştır. Kopya Kağıdı’nda gözlemli çözümü aç.",
+    "en": "Zoom into a real hand radiograph and compare the shades of bones and surrounding tissue. Open the observational worked solution in the reference sheet."
   }
 }

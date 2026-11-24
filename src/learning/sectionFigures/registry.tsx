@@ -5,6 +5,7 @@ import { thermographySourceURL } from "../mebiThermography";
 import { thermographyPhoto } from "./mebiThermographyPhoto";
 import { visibleMirrorRayTitle } from "../mebiVisibleMirror";
 import { visibleMirrorPhoto, visibleMirrorPhotoSource } from "./mebiVisibleMirrorPhoto";
+import { handRadiograph, handRadiographSource } from "./mebiHandRadiograph";
 import { geometryFigures031 } from "./geometryFigures031";
 import { geometryFigures032a } from "./geometryFigures032a";
 import { geometryFigures032b } from "./geometryFigures032b";
@@ -392,6 +393,7 @@ for (const pack of figurePacks)
 const waveLessonPhotos = new Map([
   [thermographyPhoto.title, { figure: thermographyPhoto, url: thermographySourceURL, credit: "MartinThoma · Wikimedia Commons · CC0 1.0" }],
   [visibleMirrorPhoto.title, { figure: visibleMirrorPhoto, url: visibleMirrorPhotoSource, credit: "Jake Weirick · Wikimedia Commons · CC0 1.0" }],
+  [handRadiograph.title, { figure: handRadiograph, url: handRadiographSource, credit: "Jochen Lengerke · Wikimedia Commons · CC0 1.0" }],
 ]);
 
 export function SectionFigure({

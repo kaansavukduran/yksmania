@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.117.0 · Gerçek el röntgeni
+
+Yayın adayı. El röntgenini büyüt, kemiğin ve çevresindeki dokunun tonunu karşılaştır. Kopya Kağıdı aynı görüntüyü çözüm adımında açar. [Görüntü kaynağı ve CC0](https://commons.wikimedia.org/w/index.php?title=File:X-ray_of_hand.jpg&oldid=1099028774)
+
 # ÖSYM Mania 0.116.0 · X ışını ve gama ışını
 
 Yayın adayı. Kalınlığı değiştirip X ışınının iki yoldan algılayıcıya ne kadar ulaştığını karşılaştır. Gama çiziminde çekirdeğin üst düzeyden alt düzeye geçişini aç. Kopya Kağıdı iki ayrı çözümlü örnek içeriyor.
