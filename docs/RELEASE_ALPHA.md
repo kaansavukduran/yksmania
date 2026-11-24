@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.159.0 · Sismogram
+
+Yayın adayı. İstasyonu değiştir, P ve S başlangıçlarını saniye ekseninde oku. Kopya Kağıdı 8 km örneğinde kaydı ve iki başlangıç zamanı arasındaki farkı ayrı çiziyor.
+
 # ÖSYM Mania 0.158.0 · Depremin büyüklüğü ve şiddeti
 
 Yayın adayı. Bir depremde iki yerin neden farklı etkilendiğini incele. Büyüklük farkını değiştirip genlik ve yaklaşık enerji oranlarını oku.

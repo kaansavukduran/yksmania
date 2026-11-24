@@ -9,6 +9,7 @@ import { roomAcousticsFigures } from "./mebiRoomAcousticsFigures";
 import { noiseFigures } from "./mebiNoiseFigures";
 import { magneticResonanceFigures } from "./mebiMagneticResonanceFigures";
 import { earthquakeMagnitudeFigures } from "./mebiEarthquakeMagnitudeFigures";
+import { seismicRecordFigures } from "./mebiSeismicRecordFigures";
 import { echoDistanceM, echoSpeedMS, echoTravelSeconds } from "../mebiEcho";
 import { bellJarCases, bellJarTitle } from "../mebiSoundMedium";
 import { timbreAt, timbreCases, timbreFrequencyHz, timbreHarmonicTitle, timbreModes, timbreTitle, timbreWaveTitle } from "../mebiSoundTimbre";
@@ -606,6 +607,7 @@ export const physicsFiguresSound: Record<string, Record<string, FigureDef>> = {
     ...noiseFigures,
     ...magneticResonanceFigures,
     ...mebiSeismicFocusFigure,
+    ...seismicRecordFigures,
     ...earthquakeMagnitudeFigures,
     "Ses bir ortam titreşimidir": longitudinal,
     [bellJarTitle]: bellJar,

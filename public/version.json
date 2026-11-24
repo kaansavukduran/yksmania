@@ -1,8 +1,8 @@
 {
-  "version": "0.158.0",
+  "version": "0.159.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Aynı depremin iki konumdaki etkisini karşılaştır. Büyüklük farkını değiştir ve genlik ile yaklaşık enerji oranlarını iki ayrı işaretten oku.",
-    "en": "Compare the effects of one earthquake at two locations. Change the magnitude difference and read separate amplitude and approximate energy ratios."
+    "tr": "İstasyonun uzaklığını değiştir ve örnek sismogramda P ile S’nin ilk varışlarını karşılaştır. Kopya Kağıdı kayıt ile zaman farkını ayrı çiziyor.",
+    "en": "Move the station to compare P and S arrival times. The cheat sheet shows the model record and the interval with separate drawings."
   }
 }
