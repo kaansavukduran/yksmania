@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.164.0 · Kıyıda tsunami uyarısı
+
+Yayın adayı. Aynı kıyı kesitinde önce suyun çekilmesini, sonra kıyıdan uzaklaşan ve yükselen tahliye yönünü incele.
+
 # ÖSYM Mania 0.163.0 · Çök, Kapan, Tutun
 
 Yayın adayı. Sınıfta sarsıntı sırasında yakındaki sağlam sıra örneğinde üç korunma pozunu sırayla incele. Üç çizimi Kopya Kağıdı’nda ayrı çözüm adımlarında aç.

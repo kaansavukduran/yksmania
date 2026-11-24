@@ -1,8 +1,8 @@
 {
-  "version": "0.163.0",
+  "version": "0.164.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Deprem sırasında yakınındaki sağlam masa örneğinde Çök, Kapan, Tutun adımlarını incele. Kopya Kağıdı her korunma konumunu ayrı çizimle gösteriyor.",
-    "en": "Explore Drop, Cover, and Hold On with a nearby sturdy table during earthquake shaking. The study sheet illustrates each protective position separately."
+    "tr": "Kıyıda olağandışı su çekilmesini ve yüksek yere giden tahliye yönünü ayrı çizimlerde incele. Kopya Kağıdı gözlem ve tahliye adımlarını açıyor.",
+    "en": "Read unusual sea retreat and an uphill evacuation route on separate coastal diagrams. The study sheet opens the observation and evacuation steps."
   }
 }
