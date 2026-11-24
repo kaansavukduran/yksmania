@@ -61,6 +61,7 @@ import { parallelFluxExample, parallelFluxSection } from "../mebiParallelFlux";
 import { pointSourcePlaneExample, pointSourcePlaneSection } from "../mebiPointSourcePlane";
 import { beamDistanceExample, beamDistanceSection } from "../mebiBeamDistance";
 import { crookesExample, crookesModelSection, crookesPhotoSection } from "../mebiCrookesRadiometer";
+import { lightTransmissionExample, lightTransmissionSection } from "../mebiLightTransmission";
 import { animalPitchExample, animalPitchSection } from "../mebiPitchSamples";
 import { bottlePitchExample, bottlePitchSection } from "../mebiBottlePitch";
 import { wirePairExample, wirePairSection } from "../mebiWirePitch";
@@ -568,6 +569,14 @@ export function studyGuide(lessonId: string) {
       }),
       examples: [...guide.examples, lightModelsExample, photometryUnitsExample, parallelFluxExample, pointSourcePlaneExample, beamDistanceExample, crookesExample],
       source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 169, basılı 167. Işın, dalga ve foton rolleri kaynak gruplaması ve OpenStax ile karşılaştırıldı. Çift yarık aralığı, dalga boyu ve ekran uzaklığı öğretim modeli değerleridir. Fiziksel 170, basılı 168. sayfadaki lamba ışınları, 1 m yarıçaplı küre ve dönen yüzey ayrı çizildi. Birimler BIPM fotometri tanımlarıyla karşılaştırıldı. Fiziksel 171, basılı 169. sayfadaki A ve B ışınları, normal ve eğik uzaklıkla yeniden çizildi. Noktasal ve paralel demet iki ayrı uzaklık ölçümünde birlikte karşılaştırıldı. Ölçüm değerleri özgün ideal örneklerdir. Aynı sayfadaki Crookes düzeneği için Timeline’ın CC BY-SA 3.0 fotoğrafı kullanıldı. Kanat kesiti ve düşük basınçlı gazın hareketi ayrıca çizildi.`,
+    };
+  }
+  if (guide?.id === "golge-yari-golge") {
+    return {
+      ...guide,
+      sections: [lightTransmissionSection, ...guide.sections],
+      examples: [lightTransmissionExample, ...guide.examples],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 172, basılı 170. Saydam pencere, buzlu cam ve metal levha gerçek lisanslı örnek fotoğraflarla karşılaştırıldı. Geçen ışınlar temsili çizimlerle aynı üç durumda incelendi.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

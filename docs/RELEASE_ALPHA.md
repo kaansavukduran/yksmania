@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.171.0 · Işığın yüzeyden geçişi
+
+Yayın adayı. Pencere camını, buzlu camı ve kalın metal levhayı fotoğrafla incele. Gelen ışığın her yüzeyin arkasına nasıl ulaştığını üç çizimde karşılaştır.
+
 # ÖSYM Mania 0.170.0 · Işık alıcıları sorusu
 
 Yayın adayı. İki alıcıyı kendi şekli, ayrı ipucu çizimi ve aşamalı çözüm tablosuyla karşılaştır.

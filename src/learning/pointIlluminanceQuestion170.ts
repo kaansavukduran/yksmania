@@ -74,7 +74,7 @@ function normalDrawing(solved: boolean): Pick<Geometry, "viewBox" | "points" | "
       ...rays.labels,
       { at: [a[0] - 137, a[1] - 40], text: "θ" },
       { at: [a[0] - 110, a[1] + 32], text: "Normal" },
-      { at: [254, 260], text: solved ? `${oblique.distanceM} m` : "d" },
+      { at: [240, 280], text: solved ? `${oblique.distanceM} m` : "d" },
     ],
   };
 }

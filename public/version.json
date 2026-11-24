@@ -1,8 +1,8 @@
 {
-  "version": "0.170.0",
+  "version": "0.171.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Aynı duvardaki iki alıcının aydınlanmasını karşılaştır. Soru çizimi, ipucu ve adım adım çözüm kendi sırasında açılır.",
-    "en": "Compare two receivers on one wall. The stem, hint and worked solution each show their own evidence."
+    "tr": "Saydam cam, buzlu cam ve kalın metal levhayı gerçek fotoğraflarla karşılaştır. Geçen ışınları ayrı ayrı izle.",
+    "en": "Compare clear glass, frosted glass and an opaque metal sheet in credited photographs and three ray diagrams."
   }
 }

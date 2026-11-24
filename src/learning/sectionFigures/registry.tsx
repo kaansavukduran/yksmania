@@ -43,6 +43,8 @@ import { physicsFiguresPrism } from "./physicsFiguresPrism";
 import { physicsFiguresLight } from "./physicsFiguresLight";
 import { crookesPhotoSection } from "../mebiCrookesRadiometer";
 import { crookesPhoto } from "./mebiCrookesPhoto";
+import { transmissionTitle } from "../mebiLightTransmission";
+import { lightTransmissionPhotos } from "./mebiLightTransmissionPhotos";
 import { physicsFiguresMatter } from "./physicsFiguresMatter";
 import { biologyFiguresPedigree } from "./biologyFiguresPedigree";
 import { biologyFiguresGenetics } from "./biologyFiguresGenetics";
@@ -491,12 +493,17 @@ type LessonPhoto = {
   licenceLabel?: string;
   imageLabel?: string;
 };
-const soundPhotoGroups: Record<string, { name: string; photos: readonly LessonPhoto[] }> = {
-  [animalPitchTitle]: { name: "Aslan ve kanarya fotoğrafları", photos: pitchSamplePhotos },
-  [tacomaTitle]: { name: "Tacoma Narrows arşiv kareleri", photos: tacomaPhotos },
-  [ultrasoundTitle]: { name: "Ultrason cihazı fotoğrafı", photos: [ultrasoundPhoto] },
-  [roomAcousticsTitle]: { name: "Selimiye Camii fotoğrafı", photos: [selimiyePhoto] },
-  [isolationTitle]: { name: "İzolatör fotoğrafı", photos: [pasadenaBearingPhoto] },
+export const sectionPhotoGroups: Record<string, Record<string, { name: string; photos: readonly LessonPhoto[] }>> = {
+  "ses-deprem-dalgalari": {
+    [animalPitchTitle]: { name: "Aslan ve kanarya fotoğrafları", photos: pitchSamplePhotos },
+    [tacomaTitle]: { name: "Tacoma Narrows arşiv kareleri", photos: tacomaPhotos },
+    [ultrasoundTitle]: { name: "Ultrason cihazı fotoğrafı", photos: [ultrasoundPhoto] },
+    [roomAcousticsTitle]: { name: "Selimiye Camii fotoğrafı", photos: [selimiyePhoto] },
+    [isolationTitle]: { name: "İzolatör fotoğrafı", photos: [pasadenaBearingPhoto] },
+  },
+  "golge-yari-golge": {
+    [transmissionTitle]: { name: "Saydam, yarı saydam ve opak örnekler", photos: lightTransmissionPhotos },
+  },
 };
 export const sectionImageFigures = new Map<string, Map<string, LessonPhoto>>([
   ["dalgalara-giris", waveLessonPhotos],
@@ -540,7 +547,7 @@ export function SectionFigure({
 }) {
   const def = sectionFigures[guideId]?.[title];
   const photo = sectionImageFigures.get(guideId)?.get(title);
-  const group = guideId === "ses-deprem-dalgalari" ? soundPhotoGroups[title] : undefined;
+  const group = sectionPhotoGroups[guideId]?.[title];
   if (!def && !photo && !group) return null;
   return (
     <>

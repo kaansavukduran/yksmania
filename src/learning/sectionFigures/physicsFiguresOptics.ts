@@ -1,3 +1,4 @@
+import { lightTransmissionFigures } from "./mebiLightTransmissionFigures";
 import {
   span,
   add,
@@ -776,6 +777,7 @@ const mercekler: Record<string, FigureDef> = {
 };
 
 const golge: Record<string, FigureDef> = {
+  ...lightTransmissionFigures,
   "Işık yolu ve opak engel": {
     caption:
       "Noktasal kaynaktan çıkan doğrusal ışınlar opak engelin iki ucuna teğet geçer. Aradaki bölgeye doğrudan ışık ulaşmaz: perdede tam gölge oluşur.",
