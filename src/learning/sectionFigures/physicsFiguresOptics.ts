@@ -14,6 +14,7 @@ import { mirrorBodyWallFigures } from "./mebiMirrorBodyWallFigures";
 import { sphericalMirrorFigures } from "./mebiSphericalMirrorFigures";
 import { concaveRayFigures } from "./mebiConcaveRayFigures";
 import { concaveSpecialRayFigures } from "./mebiConcaveSpecialRayFigures";
+import { concaveImageZonesSteps, concaveImageZonesTitle } from "../mebiConcaveImageZones";
 import { convexSpecialRayFigures } from "./mebiConvexSpecialRayFigures";
 import {
   span,
@@ -61,7 +62,10 @@ const arrow = (x: number, h: number, tone: "ink" | "a" | "b" | "c" = "ink", dash
  * optical element sits at x = 0, the real object at x = −u with height h.
  * f > 0 converging (concave / convex lens), f < 0 diverging.
  */
-function rayDiagram(kind: "mirror" | "lens", f: number, u: number, h = 3) {
+function rayDiagram(
+  kind: "mirror" | "lens", f: number, u: number, h = 3,
+  { centerLabel = "2F", pathFromFocus = false } = {},
+) {
   const side = kind === "mirror" ? -1 : 1;
   const span = Math.max(u, 2 * Math.abs(f)) + 2;
   const tip = v(-u, h);
@@ -99,18 +103,19 @@ function rayDiagram(kind: "mirror" | "lens", f: number, u: number, h = 3) {
   for (const k of [1, 2])
     for (const s of focusSides) {
       const x = s * k * Math.abs(f);
-      if (Math.abs(x) <= span) els.push(pt(v(x, 0), k === 1 ? "F" : "2F", "s", "muted"));
+      if (Math.abs(x) <= span) els.push(pt(v(x, 0), k === 1 ? "F" : centerLabel, "s", "muted"));
     }
   els.push(arrow(-u, h), txt(tip, "cisim", "n", { small: true }));
   const objLabel = els.length - 1;
   const P1 = v(0, h);
-  const O = v(0, 0);
+  const crossesFocus = pathFromFocus && f > 0 && u > f;
+  const P2 = v(0, crossesFocus ? -f * h / (u - f) : 0);
   const d1 = unit(mul(sub(F, P1), Math.sign(f)));
-  const d2 = unit(v(side * u, -h));
-  els.push(...ray(tip, P1, "a"), ...ray(tip, O, "c"));
+  const d2 = crossesFocus ? v(side, 0) : unit(v(side * u, -h));
+  els.push(...ray(tip, P1, "a"), ...ray(tip, P2, "c"));
   const atF = Math.abs(u - f) < 1e-9;
   if (atF) {
-    els.push(...ray(P1, add(P1, mul(d1, span)), "a"), ...ray(O, add(O, mul(d2, span)), "c"));
+    els.push(...ray(P1, add(P1, mul(d1, span)), "a"), ...ray(P2, add(P2, mul(d2, span)), "c"));
     return { els, readout: ["u = f: çıkan ışınlar paralel, sonlu görüntü yok"] };
   }
   const vv = (f * u) / (u - f);
@@ -125,8 +130,8 @@ function rayDiagram(kind: "mirror" | "lens", f: number, u: number, h = 3) {
     const t = real ? Math.hypot(I[0] - p[0], I[1] - p[1]) + 1 : span * 0.8;
     return add(p, mul(d, t));
   };
-  els.push(...ray(P1, reach(P1, d1), "a"), ...ray(O, reach(O, d2), "c"));
-  if (!real) els.push(seg(P1, I, { dash: true, thin: true, tone: "a" }), seg(O, I, { dash: true, thin: true, tone: "c" }));
+  els.push(...ray(P1, reach(P1, d1), "a"), ...ray(P2, reach(P2, d2), "c"));
+  if (!real) els.push(seg(P1, I, { dash: true, thin: true, tone: "a" }), seg(P2, I, { dash: true, thin: true, tone: "c" }));
   // Upright images share the object's side of the axis: push the two labels
   // apart horizontally. Inverted images keep their label clear of F/2F marks.
   const right = I[0] > -u;
@@ -135,7 +140,7 @@ function rayDiagram(kind: "mirror" | "lens", f: number, u: number, h = 3) {
   const marks = focusSides.flatMap((sd) => [1, 2].map((k) => sd * k * Math.abs(f)));
   const near = marks.reduce((b, x) => (Math.abs(x - I[0]) < Math.abs(b - I[0]) ? x : b), Infinity);
   const imgAt = right ? "ne" : "nw";
-  const crowded = Math.abs(near - I[0]) < 1.2 && Math.abs(I[1]) < 2;
+  const crowded = Math.abs(near - I[0]) < 1.2 && Math.abs(I[1]) < 2 && (!pathFromFocus || I[1] >= 0);
   els.push(
     arrow(I[0], I[1], "b", !real),
     crowded
@@ -365,7 +370,50 @@ const duzlemAyna: Record<string, FigureDef> = {
   },
 };
 
+const concaveImageCaptions = [
+  "Eksene paralel dört ışın F’de odaklanır. Bu eksene yakın çizimde görüntü bir nokta.",
+  "Cisim M’nin dışında. Yansıyan iki kol aynanın önünde, F ile M arasında buluşur.",
+  "Cisim M’de. Ters görüntü aynı düşey doğru üzerinde ve eş boyda oluşur.",
+] as const;
+
+const concaveImageAlt = [
+  "Paralel gelen dört ok ve aynadan F’ye doğru yansıyan dört ok. F, M ile T arasında.",
+  "Yukarı bakan cisim oku M’nin dışında. İki yansıma F ile M arasında aşağı bakan daha kısa okun ucunda kesişiyor.",
+  "M’de eş uzunluklu iki düşey ok. Cisim yukarıya, görüntü aşağıya bakıyor ve yansıyan ışınlar görüntünün ucunda birleşiyor.",
+] as const;
+
+function drawConcaveImageZone(step: number) {
+  if (step !== 0) {
+    return rayDiagram("mirror", 2, step === 1 ? 6 : 4, 1, { centerLabel: "M", pathFromFocus: true });
+  }
+  const focus = v(-2, 0);
+  const els: El[] = [
+    seg(v(-6, 0), v(0.4, 0), { tone: "muted", thin: true }),
+    poly(Array.from({ length: 21 }, (_, i) => {
+      const y = (i - 10) * 0.13;
+      return v(-0.03 * y * y, y);
+    }), { open: true, bold: true }),
+    pt(v(-4, 0), "M", "s", "muted"),
+    pt(v(0, 0), "T", "s", "muted"),
+  ];
+  for (const y of [-1, -0.5, 0.5, 1]) {
+    const hit = v(-0.03 * y * y, y);
+    els.push(...ray(v(-5.6, y), hit, "a"), ...ray(hit, focus, "b"));
+  }
+  els.push(pt(focus, "F", "s", "ink"));
+  return { els, readout: ["F: aynanın 2 cm önünde, nokta görüntü."] };
+}
+
 const kureselAynalar: Record<string, FigureDef> = {
+  [concaveImageZonesTitle]: {
+    caption: "Paralel demet, merkez dışındaki cisim ve M’deki cisim arasında geçiş yap. Gerçek yansımaların nerede birbirine ulaştığını izle.",
+    alt: "Çukur aynada üç ışın çizimi. Her adımın altında kesişim yeri ve varsa görüntü boyu yazılı.",
+    steps: [...concaveImageZonesSteps],
+    draw: (_, step) => drawConcaveImageZone(step),
+  },
+  ...Object.fromEntries(concaveImageZonesSteps.map((title, step) => [
+    title, { caption: concaveImageCaptions[step], alt: concaveImageAlt[step], draw: () => drawConcaveImageZone(step) },
+  ])),
   "Kürenin hangi yüzü yansıtıyor?": {
     caption:
       "Kürenin içi yansıtıyorsa çukur, dışı yansıtıyorsa tümsek ayna olur. Normal her noktada o noktayı M merkezine bağlayan doğrudur; F, TM'nin ortasındadır (f ≈ R/2).",

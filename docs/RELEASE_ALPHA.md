@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.190.0 · Çukur aynada üç görüntü
+
+Yayın adayı. Paralel demetin F’de birleşmesini, merkez dışındaki ve merkezdeki cismin oluşturduğu ters görüntüleri üç çizimde karşılaştır. Ayrı Kopya Kağıdı her çizimi çözüm adımında açıyor.
+
 # ÖSYM Mania 0.189.0 · Dört tümsek ayna ışını
 
 Yayın adayı. Gerçek ışınları ve kesik doğrultuları dört ayrı geliş yolunda karşılaştır.

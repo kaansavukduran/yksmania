@@ -1,8 +1,8 @@
 {
-  "version": "0.189.0",
+  "version": "0.190.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Tümsek aynada dört geliş yolunu aç. Temas yüksekliği değişirken gerçek yönleri, F ve M’ye olan kesik doğrultuları izle.",
-    "en": "Open the four convex-mirror ray paths. Move the height of incidence and compare the real paths with the dashed directions toward F and M."
+    "tr": "Çukur aynada paralel demeti, merkezin dışındaki cismi ve merkezdeki cismi üç ayrı ışın çiziminde karşılaştır.",
+    "en": "Compare a parallel beam, an object beyond the centre and an object at the centre with three concave mirror ray diagrams."
   }
 }
