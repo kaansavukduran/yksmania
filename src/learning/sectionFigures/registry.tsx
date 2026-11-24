@@ -211,6 +211,12 @@ import { chemistryFigures061TytAtoms } from "./chemistryFigures061TytAtoms";
 import { chemistryFigures061TytLab } from "./chemistryFigures061TytLab";
 import { biologyFigures061TytLife } from "./biologyFigures061TytLife";
 import { biologyFigures061TytEnv } from "./biologyFigures061TytEnv";
+import { turkishFigures061Paragraph } from "./turkishFigures061Paragraph";
+import { turkishFigures061Structure } from "./turkishFigures061Structure";
+import { turkishFigures061Meaning } from "./turkishFigures061Meaning";
+import { turkishFigures061Grammar } from "./turkishFigures061Grammar";
+import { philosophyFigures061Modern } from "./philosophyFigures061Modern";
+import { philosophyFigures061Intro } from "./philosophyFigures061Intro";
 
 /*
  * Figure packs are merged per guide. A plain object spread replaced a whole
@@ -422,6 +428,12 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   chemistryFigures061TytLab,
   biologyFigures061TytLife,
   biologyFigures061TytEnv,
+  turkishFigures061Paragraph,
+  turkishFigures061Structure,
+  turkishFigures061Meaning,
+  turkishFigures061Grammar,
+  philosophyFigures061Modern,
+  philosophyFigures061Intro,
 ];
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {};
 for (const pack of figurePacks)
