@@ -20,6 +20,7 @@ export const resonanceSection: GuideSection = {
     "Yan yana duran iki özdeş diyapazondan birine plastik çekiçle hafifçe vur. Uçları ileri geri hareket eder ve havadaki basıncı değiştirir. Bu basınç değişimi ikinci diyapazona ulaşınca onun uçlarını da periyodik olarak iter.",
     "İkinci diyapazonun doğal frekansı gelen sesin frekansına yakınsa zorlanmaya daha güçlü tepki verir. İki özdeş diyapazon aynı doğal frekansa sahiptir. Birinciyi durdurup ikinciye dokunmadan dinlersen onun da titreştiğini fark edebilirsin.",
     "Grafik için ilk diyapazonun 440 Hz’de aynı genlikle titreştiğini varsay. İkinci diyapazonun doğal frekansını değiştirip göreli tepki genliğini karşılaştır. 1, eşleşmedeki model genliğidir. Gerçekte tek vuruştan sonra titreşim zamanla azalır.",
+    "Çalgının gövdesi bazı titreşimlere daha güçlü tepki verir ve çıkan sesi etkiler. Radyo alıcısındaki ayarlı devre de seçilen frekans çevresindeki sinyali ayırmaya yardım eder.",
   ],
   table: {
     layout: "table",

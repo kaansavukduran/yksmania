@@ -1,0 +1,54 @@
+import { expect, test } from "@playwright/test";
+import { magneticMatchTitle, magneticResonanceExample, magneticResonanceTitle, magneticSignalTitle } from "../../src/learning/mebiMagneticResonance";
+import { ultrasoundDepthTitle } from "../../src/learning/mebiUltrasound";
+import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse";
+import { svgLayoutAudit } from "./helpers/svgAudit";
+
+test("radyo frekansı ve manyetik alıcı çevrimdışı ayrı adımlarda görülebilir", async ({ page, context }, info) => {
+  await page.setViewportSize({ width: 320, height: 870 });
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  await openCourse(page, { lesson: "ses-deprem-dalgalari", search: "Ses ve deprem" });
+  const toc = page.getByRole("navigation", { name: "Anlatım içeriği", exact: true });
+  const item = toc.getByRole("button", { name: magneticResonanceTitle, exact: true });
+  if (!(await item.isVisible())) await toc.getByText("İçindekiler", { exact: true }).press("Enter");
+  await item.press("Enter");
+  const scope = `figure[data-section-figure="${magneticResonanceTitle}"]`;
+  const figure = page.locator(scope);
+  const svg = figure.getByRole("img");
+  const control = figure.getByRole("slider", { name: "Radyo darbesi frekansı", exact: true });
+  await expect(figure).toContainText("İki frekans eşleşiyor.");
+  await control.press("Home");
+  await expect(figure).toContainText("Radyo darbesi 85 birim.");
+  await expect(figure).toContainText("İşaretler ayrı.");
+  await control.press("ArrowRight");
+  await control.press("ArrowRight");
+  await control.press("ArrowRight");
+  await expect(control).toHaveValue("100");
+  await expect(figure).toContainText("İki frekans eşleşiyor.");
+  await svg.evaluate(node => node.scrollIntoView({ block: "center" }));
+  await svg.screenshot({ path: info.outputPath("mr-frequency156.png") });
+  await figure.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await expect(svg.getByText("Alıcı bobin", { exact: true })).toBeVisible();
+  await expect(figure).toContainText("Radyo darbesi bitti.");
+  await svg.evaluate(node => node.scrollIntoView({ block: "center" }));
+  await svg.screenshot({ path: info.outputPath("mr-receiver156.png") });
+  expect((await page.evaluate(svgLayoutAudit, { scope, figuresOnly: true, explore: true })).issues).toEqual([]);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Kopya Kağıdı MR ve ultrasonun farklı alım yollarını gösterir", async ({ page, context }) => {
+  await prepare(page);
+  await context.setOffline(true);
+  await page.goto("/#/cheatsheets?topic=detail-130");
+  const example = page.locator(".cheat-examples .worked-example").filter({ hasText: magneticResonanceExample.title });
+  await example.locator(":scope > summary").press("Enter");
+  const solution = example.locator(".cheat-solution");
+  await expect(solution.getByRole("img")).toHaveCount(0);
+  await solution.locator("summary").press("Enter");
+  await expect(solution.locator(`figure[data-section-figure="${magneticMatchTitle}"]`)).toContainText("İki frekans eşleşiyor.");
+  await expect(solution.locator(`figure[data-section-figure="${magneticSignalTitle}"]`)).toContainText("alıcı bobin sinyali ölçer");
+  await expect(solution.locator(`figure[data-section-figure="${ultrasoundDepthTitle}"]`)).toContainText("Kesik oklar geri dönen sesi gösterir.");
+  await expect(solution).toContainText("yansıyan mekanik ses ultrasona aittir");
+});

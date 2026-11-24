@@ -17,7 +17,7 @@ export const sonarSection: GuideSection = {
   paragraphs: [
     "Teknenin altındaki sonar başlığı suya kısa bir ses dalgası gönderir. Sesin bir bölümü balıklardan yansır. Geri alınan dalga, yansımaya neden olan hedef hakkında bilgi verir.",
     "Sonar, dalganın gönderilmesi ile geri alınması arasındaki süreyi ölçer. Dalga sürüsüne inip başlığa geri geldiği için bu süre iki yolu kapsar. Çizimde sonar sürünün tam üstünde. Buradaki uzaklık, başlıktan sürüye düşey uzaklıktır.",
-    "Sudaki ses sürati yaklaşık 1.500 m/s ise 120 ms gidiş-dönüş, 90 m düşey uzaklığa karşılık gelir. Ölçülen süreyi değiştir ve sürünün çizimdeki yerini izle. Birden fazla ölçüm sürünün nerede veya hangi yönde hareket ettiğini anlamaya yardım eder. Tek yankı süresinden balık sayısı çıkarılamaz.",
+    "Sudaki ses sürati yaklaşık 1.500 m/s ise 120 ms gidiş-dönüş, 90 m düşey uzaklığa karşılık gelir. Ölçülen süreyi değiştir ve sürünün çizimdeki yerini izle. Yön, yankı şiddeti ve birden fazla ölçüm birlikte değerlendirilince sürünün hareketi ve yaklaşık miktarı hakkında bilgi edinilebilir.",
   ],
   table: {
     layout: "table",

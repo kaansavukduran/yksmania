@@ -7,6 +7,7 @@ import { sonarFigures } from "./mebiSonarFigures";
 import { ultrasoundFigures } from "./mebiUltrasoundFigures";
 import { roomAcousticsFigures } from "./mebiRoomAcousticsFigures";
 import { noiseFigures } from "./mebiNoiseFigures";
+import { magneticResonanceFigures } from "./mebiMagneticResonanceFigures";
 import { echoDistanceM, echoSpeedMS, echoTravelSeconds } from "../mebiEcho";
 import { bellJarCases, bellJarTitle } from "../mebiSoundMedium";
 import { timbreAt, timbreCases, timbreFrequencyHz, timbreHarmonicTitle, timbreModes, timbreTitle, timbreWaveTitle } from "../mebiSoundTimbre";
@@ -602,6 +603,7 @@ export const physicsFiguresSound: Record<string, Record<string, FigureDef>> = {
     ...ultrasoundFigures,
     ...roomAcousticsFigures,
     ...noiseFigures,
+    ...magneticResonanceFigures,
     ...mebiSeismicFocusFigure,
     "Ses bir ortam titreşimidir": longitudinal,
     [bellJarTitle]: bellJar,

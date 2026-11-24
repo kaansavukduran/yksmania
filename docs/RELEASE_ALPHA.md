@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.156.0 · Manyetik rezonans
+
+Yayın adayı. Model frekansını radyo darbesiyle eşleştir ve darbe sonrası alıcı bobine giden sinyali izle. Kopya Kağıdı MR ve ultrasonun alım yollarını ayrı adımlarda gösteriyor.
+
 # ÖSYM Mania 0.155.0 · Birden çok ses kaynağı
 
 Yayın adayı. Aynı ölçüm noktasına ulaşan kaynakların şiddet bloklarını topla. İkinci adımda toplam düzey ile tek kaynak düzeyi arasındaki desibel farkını oku.

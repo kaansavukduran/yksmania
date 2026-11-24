@@ -19,6 +19,7 @@ export const ultrasoundSection: GuideSection = {
     "Fotoğrafta cilde tutulan ultrason başlığını ve ekrandaki görüntüyü bul. Başlık duyabileceğimizden yüksek frekansta kısa ses dalgaları gönderir. Başlık ile cilt arasındaki jel, arada hava kalmasını önleyerek sesin iletilmesine yardım eder.",
     "Ses doku sınırlarından kısmen yansır. Başlık geri gelen sesi algılar. Aynı sürati kabul ettiğimizde daha derindeki sınırdan gelen yankı daha geç alınır. Yankının gücü de görüntüdeki açıklık ve koyuluk hakkında bilgi taşır.",
     "Model jel tabakasının kalınlığını hesaba katmadan yumuşak dokuda 1.540 m/s kullanır. İki sınırın dönüş süresini karşılaştır. Cihaz birçok yönde ölçüm yaparak kesit oluşturabilir. Peş peşe alınan görüntüler kalp kapakları gibi yapıların hareketini gösterebilir. Bazı cihazlar birden çok kesitten üç boyutlu görüntü de kurabilir.",
+    "Bu görüntüler gebelikte bebeğin gelişimini izlemeye ve bazı dokular ile kitlelerin özelliklerini incelemeye yardımcı olur.",
   ],
   table: {
     layout: "table",

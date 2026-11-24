@@ -1,8 +1,8 @@
 {
-  "version": "0.155.0",
+  "version": "0.156.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Bir ila dört bağımsız ses kaynağını karşılaştır. Toplam şiddeti bloklardan oku ve iki eş kaynakla düzeyin neden yaklaşık 3 dB arttığını gör.",
-    "en": "Compare one to four independent sound sources. Add the intensity blocks and see why doubling equal sources raises the level by about 3 dB."
+    "tr": "MR’deki radyo darbesini çekirdeklerin model frekansıyla eşleştir. Alıcı bobinin sinyalini ultrasonun yankı çizimiyle karşılaştır.",
+    "en": "Match the MRI radio pulse to the model resonance. Compare the receiving coil with the distinct echo path used in ultrasound."
   }
 }
