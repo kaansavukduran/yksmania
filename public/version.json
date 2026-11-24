@@ -1,8 +1,8 @@
 {
-  "version": "0.90.0",
+  "version": "0.91.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Basınç dersinde kaynama eşiğini açık ve kapalı kaplarda karşılaştır. Saf su tablosu, buz ve bakır grafiği, iki kaplı örnek ve ayrı Kopya Kağıdı eklendi.",
-    "en": "Compare the boiling threshold at different pressures. Includes a pure-water saturation table, an ice and copper melting plot, a two-vessel example and a separate cheat sheet."
+    "tr": "Su kanalındaki kaynak ölçümlerini ve yatay borunun ideal Bernoulli modelini ayrı incele. Kopya Kağıdı, soru çizimi, görselli ipucu ve üç çözüm adımı eklendi.",
+    "en": "Compare the reported channel measurements with a separate ideal Bernoulli model. Includes a cheat sheet, a question diagram, a visual hint and three solution steps."
   }
 }

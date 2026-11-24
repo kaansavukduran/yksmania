@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.91.0 · Su kanalı ölçümü ve Bernoulli
+
+Yayın adayı. Kaynaktaki iki hız ve basınç ölçümünü oku. Ayrı yatay boru modelinde alanı değiştirip sabit debiyi gözle. Özgün sorunun şekli ve ipucundan sonra son çözüm tablosunu aç.
+
 # ÖSYM Mania 0.90.0 · Basınç, erime ve kaynama
 
 Yayın adayı. Buz ve bakırın erime eğilimlerini karşılaştır. Basıncı ve sıcaklığı değiştir, suyun kaynama eşiğine ne zaman ulaştığını kap çiziminde gör. Kopya Kağıdı saf su verilerini ve iki kaplı örneği açar.

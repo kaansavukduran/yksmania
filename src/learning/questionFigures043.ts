@@ -16,6 +16,7 @@ import { bottomForceQuestionFigures, bottomForceQuestionId } from "./bottomForce
 import { manometerQuestionFigures, manometerQuestionId } from "./manometerQuestion084";
 import { barometerQuestionFigures, barometerQuestionId } from "./barometerQuestion086";
 import { rigidGasQuestionFigures, rigidGasQuestionId } from "./rigidGasQuestion087";
+import { bernoulliChannelQuestionFigures, bernoulliChannelQuestionId } from "./bernoulliChannelQuestion091";
 import {
   inverseTranslationFigures,
   inverseTranslationQuestion,
@@ -285,6 +286,14 @@ const bindings = new Map<string, FigureBinding>([
     pageLabel: "Fiziksel 140. sayfa, basılı 138",
     itemLabel: "Rijit gaz kabında sıcaklık, özgün soru",
     figures: rigidGasQuestionFigures,
+  }],
+  [bernoulliChannelQuestionId, {
+    stemRevision: "1cfe3de4d1ad0d",
+    helpRevision: "17562fb99fc777",
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 144. sayfa, basılı 142",
+    itemLabel: "Daralan yatay boruda Bernoulli, özgün soru",
+    figures: bernoulliChannelQuestionFigures,
   }],
   [pistonQuestionId, {
     stemRevision: "122891ad73ac0c",

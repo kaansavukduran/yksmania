@@ -105,6 +105,11 @@ const pressureFigureFixtures = new Map([
     description: /0,02 metrekare.*aşağı doğru aynı 3000 paskal/,
     revisions: { visibleFigureRevision: "05e26f90b695cf", solutionFigureRevision: "0cd37644a46db0" },
   }],
+  ["basinc-q10", {
+    title: "Geniş ve dar bölümleri olan yatay boru",
+    description: /sol tarafı geniş.*sağ tarafı dar.*merkezleri aynı seviyede/,
+    revisions: { visibleFigureRevision: "104935975235d7", solutionFigureRevision: "0d7e14311371be" },
+  }],
 ]);
 const addedNumberProblemIds = [
   "sayi-problemleri-017-kismi-ve-bos-sira",
