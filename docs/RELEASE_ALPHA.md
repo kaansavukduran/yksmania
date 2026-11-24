@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.180.0 · Işık ile su cephesinde yansıma
+
+Yayın adayı. Kıyı, dalgalı yüzey ve sualtı fotoğraflarını incele. Düz sınırda 0° ve 35° dönüşleri ayrı çizimlerde izle.
+
 # ÖSYM Mania 0.179.0 · Paralel ışık altında küre
 
 Yayın adayı. Yandan ve 30° yukarıdan aynı küreye bak. Görünen diskin aydınlık payını iki çizimle karşılaştır.

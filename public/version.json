@@ -1,8 +1,8 @@
 {
-  "version": "0.179.0",
+  "version": "0.180.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Üstten paralel ışık alan küreye yandan ve yukarıdan bak. Aynı aydınlık yüzün gözlemciye görünen payını ders ve Kopya Kağıdı çizimlerinde karşılaştır.",
-    "en": "View a sphere under parallel light from the side and from above. Compare the visible lit fraction in the lesson and study sheet."
+    "tr": "Işığın ve su cephesinin düz sınırda nasıl döndüğünü karşılaştır. Açıları normalden ölç, dik gelen ve eğik gelen hareketi ayrı çizimlerde izle.",
+    "en": "Compare a light ray and water wavefront at a straight boundary. Measure along the normal and observe head-on and oblique reflection."
   }
 }

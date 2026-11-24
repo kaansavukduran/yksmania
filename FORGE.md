@@ -1,3 +1,11 @@
+# Işık ile su cephesinde yansıma · 0.180.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 176, basılı 174. Kıyı dalgası, deniz yüzeyinde ışık ve sualtından görünüm için üç gerçek fotoğraf. İki yansıma çiziminde doğrultular ve su tepelerinin dikliği aynı açıdan üretiliyor. Kopya Kağıdı 0° ve 35°’yi ayrı açıyor. [Kıyı fotoğrafı](https://commons.wikimedia.org/w/index.php?oldid=1180557315) · [Deniz yüzeyi fotoğrafı](https://commons.wikimedia.org/w/index.php?oldid=1304759656) · [Sualtı fotoğrafı](https://commons.wikimedia.org/w/index.php?oldid=1121102760)
+
+TypeScript, 6.673 kart, 335 çevrimdışı dosya, yedi dosyada 22 birim ve sekiz Chromium akışı geçti. İlk TypeScript işlemi bellek sınırında kesildi ve aynı denetim tekrar geçti. İlk Kopya Kağıdı testi önceki ders görünümünü buldu. Güncel ders bağlantısı eklendi ve 0° ile 35° adımları ayrı açıldı. Fotoğraflar çevrimdışı, klavyeyle ve kaynak baytlarıyla doğrulandı. Sıradaki fiziksel 177, basılı 175 beyaz ışık, top ve göz arasındaki ışık yolu.
+
+Soru bankası ölçümünde 6.673 kartın 41’inde en az bir görsel var. 40 kökte, 1 kartta şıkta, 24 ipucunda ve 24 çözümde görsel var. Kaynak gerekliliği kaydedilen 18 kartın görselleri denetimden geçti. Kaynak taraması sürüyor.
+
 # Paralel ışık ve aydınlık yüz · 0.179.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 175, basılı 173. Paralel ışınlar ve aydınlık üst yarımküre sabit. Gözlem açısı hareket ettikçe görünen disk aynı geometriyle güncelleniyor. 0.143 ana dalındaki TYT Türkçe kopya kâğıtları, altı tema ve adım odağı değişiklikleri aynı kaynak geçmişinde korundu.
@@ -1057,7 +1065,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
 | TYT Matematik | 45 / 45 | 45 · 184 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
 | TYT Geometri | 19 / 19 | 19 · 176 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 396 | 323 / 323 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 399 | 323 / 323 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 139 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 0 |
 | TYT Tarih | 24 / 24 | 24 · 76 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 0 |
@@ -1070,7 +1078,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2388** | **6.673 / 6.673 · %100,00** | **121 / 517 · %23,40** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2391** | **6.673 / 6.673 · %100,00** | **121 / 517 · %23,40** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

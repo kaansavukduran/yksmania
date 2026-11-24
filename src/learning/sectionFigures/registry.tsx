@@ -45,6 +45,8 @@ import { crookesPhotoSection } from "../mebiCrookesRadiometer";
 import { crookesPhoto } from "./mebiCrookesPhoto";
 import { transmissionTitle } from "../mebiLightTransmission";
 import { lightTransmissionPhotos } from "./mebiLightTransmissionPhotos";
+import { lightWaterReflectionTitle } from "../mebiLightWaterReflection";
+import { lightWaterReflectionPhotos } from "./mebiLightWaterReflectionPhotos";
 import { physicsFiguresMatter } from "./physicsFiguresMatter";
 import { biologyFiguresPedigree } from "./biologyFiguresPedigree";
 import { biologyFiguresGenetics } from "./biologyFiguresGenetics";
@@ -506,6 +508,9 @@ export const sectionPhotoGroups: Record<string, Record<string, { name: string; p
     [ultrasoundTitle]: { name: "Ultrason cihazı fotoğrafı", photos: [ultrasoundPhoto] },
     [roomAcousticsTitle]: { name: "Selimiye Camii fotoğrafı", photos: [selimiyePhoto] },
     [isolationTitle]: { name: "İzolatör fotoğrafı", photos: [pasadenaBearingPhoto] },
+  },
+  "duzlem-ayna": {
+    [lightWaterReflectionTitle]: { name: "Kıyı ve su yüzeyi fotoğrafları", photos: lightWaterReflectionPhotos },
   },
   "golge-yari-golge": {
     [transmissionTitle]: { name: "Saydam, yarı saydam ve opak örnekler", photos: lightTransmissionPhotos },

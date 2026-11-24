@@ -68,6 +68,7 @@ import { equalExtendedShadowExample, equalExtendedShadowSection } from "../mebiE
 import { stackedShadowExample, stackedShadowSection } from "../mebiStackedPointShadows";
 import { extendedConeExample, extendedConeSection } from "../mebiExtendedShadowCone";
 import { parallelLitSphereExample, parallelLitSphereSection } from "../mebiParallelLitSphere";
+import { lightWaterReflectionExample, lightWaterReflectionSection } from "../mebiLightWaterReflection";
 import { animalPitchExample, animalPitchSection } from "../mebiPitchSamples";
 import { bottlePitchExample, bottlePitchSection } from "../mebiBottlePitch";
 import { wirePairExample, wirePairSection } from "../mebiWirePitch";
@@ -588,6 +589,14 @@ export function studyGuide(lessonId: string) {
       })],
       examples: [lightTransmissionExample, ...guide.examples, sphereShadowExample, coaxialShadowExample, stackedShadowExample, equalExtendedShadowExample, extendedConeExample, parallelLitSphereExample],
       source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 172, basılı 170. Saydam pencere, buzlu cam ve metal levha gerçek lisanslı örnek fotoğraflarla karşılaştırıldı. Geçen ışınlar temsili çizimlerle aynı üç durumda incelendi. Aynı sayfadaki opak küre iki teğet ışın ve ölçülen tam gölge çapıyla yeniden modellendi. Perde uzaklıkları özgün öğretim değerleridir. Fiziksel 173, basılı 171. sayfadaki ortak eksende K ve L, perde kesiti ve önden görünümle yeniden modellendi. Dört hareket, ilk düzenle ayrı karşılaştırıldı. Aynı sayfadaki eş büyüklükte küresel kaynak ile engelin paralel ve eğik sınırları ayrı çizildi. Aynı sayfada düşey doğrultuda sıralanan K ve L için her kaynağın perde kesiti ve önden görünümü kendi teğetlerinden hesaplandı. Fiziksel 174, basılı 172. sayfadaki üç perde, tam gölge konisinin önünde, ucunda ve ardında ayrı çizildi. Fiziksel 175, basılı 173. sayfada paralel ışık alan topun yandan görülen yarım diski yeniden çizildi. Gözlem açısı değişen örneğin ölçüleri özgün öğretim modelidir.`,
+    };
+  }
+  if (guide?.id === "duzlem-ayna") {
+    return {
+      ...guide,
+      sections: [lightWaterReflectionSection, ...guide.sections],
+      examples: [lightWaterReflectionExample, ...guide.examples],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 176, basılı 174. Kıyı, deniz yüzeyi ve sualtı görünümü için lisanslı fotoğraf örnekleri kullanıldı. Dik ve eğik yansımada ışık yönü ile su cephesi, aynı açı girdisinden ayrı çizildi.`,
     };
   }
   if (guide?.id === "hal-degisimi") {
