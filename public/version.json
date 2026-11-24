@@ -1,8 +1,8 @@
 {
-  "version": "0.150.0",
+  "version": "0.151.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Tacoma Narrows arşiv karelerini aç. Tabliyenin iki kenarını izleyip düşey hareket ile burulmayı karşılaştır.",
-    "en": "Open the Tacoma Narrows archive frames. Follow both deck edges to compare vertical motion and twisting."
+    "tr": "Yankının gidiş ve dönüş oklarını aç. Ölçülen süreyi değiştirip duvara olan tek yönlü uzaklığı bul. Animasyonda sesin duvara vardığı ve kaynağa döndüğü iki anı gör.",
+    "en": "Follow outgoing and returning echo paths. Change the measured delay to find the one-way distance to the wall. Watch the pulse reach the wall and return to the source."
   }
 }

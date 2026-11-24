@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.151.0 · Yankı ve uzaklık
+
+Yayın adayı. Ölçümün ne zaman tamamlandığını atma animasyonunda izle. Dönüş süresini değiştirip duvara olan tek yön mesafesini bul. Kopya Kağıdı gidiş-dönüşü ve tek yönü ayrı açıklıyor.
+
 # ÖSYM Mania 0.150.0 · Tacoma arşivi ve tabliye kesiti
 
 Yayın adayı. İki arşiv karesini büyüt ve 1940’taki tabliyeyi incele. Çizimde iki kenarın aynı ve zıt yönlere hareketini karşılaştır. Kopya Kağıdı fotoğraf gözlemini ve burulma açıklamasını ayrı adımlarda açıyor.

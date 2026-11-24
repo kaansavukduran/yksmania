@@ -1,0 +1,63 @@
+import { expect, test } from "@playwright/test";
+import { echoExample, echoOutwardTitle, echoReturnTitle, echoTitle } from "../../src/learning/mebiEcho";
+import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse";
+import { svgLayoutAudit } from "./helpers/svgAudit";
+
+test("yankı ancak dönüşte tamamlanır ve değişen süre duvarı aynı ölçekte taşır", async ({ page, context }, info) => {
+  await page.setViewportSize({ width: 320, height: 870 });
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  await openCourse(page, { lesson: "ses-deprem-dalgalari", search: "Ses ve deprem" });
+  const toc = page.getByRole("navigation", { name: "Anlatım içeriği", exact: true });
+  const old = toc.getByRole("button", { name: "Yankıda mesafeyi iki kez say", exact: true });
+  if (!(await old.isVisible())) await toc.getByText("İçindekiler", { exact: true }).press("Enter");
+  await old.press("Enter");
+  const animation = page.locator('figure[data-section-figure="Yankıda mesafeyi iki kez say"]');
+  const time = animation.getByRole("slider", { name: "Zaman (s)", exact: true });
+  await time.press("End");
+  await expect(animation).toContainText("Yankı duyuldu. Toplam 204 m");
+  await time.press("ArrowLeft");
+  await expect(time).toHaveValue("0.59");
+  await expect(animation).toContainText("geri dönüyor");
+  await expect(animation).not.toContainText("Yankı duyuldu.");
+
+  const target = toc.getByRole("button", { name: echoTitle, exact: true });
+  if (!(await target.isVisible())) await toc.getByText("İçindekiler", { exact: true }).press("Enter");
+  await target.press("Enter");
+  const scope = `figure[data-section-figure="${echoTitle}"]`;
+  const figure = page.locator(scope);
+  const svg = figure.getByRole("img");
+  await expect(svg.getByText("Gidiş", { exact: true })).toBeVisible();
+  await expect(svg.getByText("Dönüş", { exact: true })).toHaveCount(0);
+  await figure.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await expect(svg.getByText("Dönüş", { exact: true })).toBeVisible();
+  await expect(figure).toContainText("Duvara uzaklık 34 m.");
+  const delay = figure.getByRole("slider", { name: "Gidiş-dönüş süresi", exact: true });
+  await delay.press("Home");
+  await expect(figure).toContainText("Duvara uzaklık 17 m.");
+  await delay.press("End");
+  await expect(figure).toContainText("Duvara uzaklık 68 m.");
+  await svg.evaluate(node => node.scrollIntoView({ block: "center" }));
+  await svg.screenshot({ path: info.outputPath("echo-return151.png") });
+  expect((await page.evaluate(svgLayoutAudit, { scope, figuresOnly: true, explore: true })).issues).toEqual([]);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Kopya Kağıdı gidiş-dönüşü ve tek yön mesafesini ayrı çizimlerde açar", async ({ page, context }) => {
+  await prepare(page);
+  await context.setOffline(true);
+  await page.goto("/#/cheatsheets?topic=detail-130");
+  const section = page.locator(".cheat-section").filter({ has: page.getByRole("heading", { name: echoTitle, exact: true }) });
+  await expect(section.getByRole("row", { name: "200 34", exact: true })).toBeVisible();
+  const example = page.locator(".cheat-examples .worked-example").filter({ hasText: echoExample.title });
+  await example.locator(":scope > summary").press("Enter");
+  const solution = example.locator(".cheat-solution");
+  await expect(solution.getByRole("img")).toHaveCount(0);
+  await solution.locator("summary").press("Enter");
+  const total = solution.locator(`figure[data-section-figure="${echoOutwardTitle}"]`);
+  await expect(total).toContainText("Toplam ses yolu 68 m.");
+  await expect(total.getByRole("img").getByText("34 m", { exact: true })).toHaveCount(0);
+  const distance = solution.locator(`figure[data-section-figure="${echoReturnTitle}"]`);
+  await expect(distance.getByRole("img").getByText("34 m", { exact: true })).toBeVisible();
+});

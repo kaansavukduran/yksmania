@@ -2,6 +2,8 @@ import { circle, fmt, poly, pt, seg, txt, v, vec, type El, type FigureDef, type 
 import { mebiSeismicFocusFigure } from "./mebiSeismicFocusFigure";
 import { tuningForkFigures } from "./mebiTuningForkFigures";
 import { tacomaFigures } from "./mebiTacomaFigures";
+import { echoFigures } from "./mebiEchoFigures";
+import { echoDistanceM, echoSpeedMS, echoTravelSeconds } from "../mebiEcho";
 import { bellJarCases, bellJarTitle } from "../mebiSoundMedium";
 import { timbreAt, timbreCases, timbreFrequencyHz, timbreHarmonicTitle, timbreModes, timbreTitle, timbreWaveTitle } from "../mebiSoundTimbre";
 import { intensityRatio, soundLevelCases, soundLevelDifferenceTitle, soundLevelLimits, soundLevelRatioTitle, soundLevelTitle } from "../mebiSoundLevel";
@@ -460,12 +462,13 @@ const echo: FigureDef = {
   caption:
     "Sürgüyle zamanı ilerlet: ses 340 m/s ile duvara gider (0,30 s), yansıyıp aynı noktaya döner (0,30 s). Yankı 0,60 s'de duyulur; toplam yol 2d olduğundan d = v·t / 2 = 102 m.",
   alt: "Solda hoparlör ve kulak, sağda tuğla duvar. Aralarındaki yolda sağa giden, sonra sola dönen bir ses atması; altta 0 ile 0,60 s arası zaman çizgisi.",
-  param: { label: "Zaman (s)", min: 0, max: 0.6, step: 0.01, init: 0, unit: "s", playMs: 6000 },
+  param: { label: "Zaman (s)", min: 0, max: echoTravelSeconds, step: 0.01, init: 0, unit: "s", playMs: 6000 },
   draw: (t) => {
     const D = 8; // 102 m drawn as 8 units
-    const vd = D / 0.3;
-    const out = t <= 0.3;
-    const x = out ? t * vd : D - (t - 0.3) * vd;
+    const turningPoint = echoTravelSeconds / 2;
+    const vd = D / turningPoint;
+    const out = t <= turningPoint;
+    const x = out ? t * vd : D - (t - turningPoint) * vd;
     const els: El[] = [];
     // Speaker.
     els.push(poly([v(-0.9, -0.35), v(-0.5, -0.35), v(-0.1, -0.7), v(-0.1, 0.7), v(-0.5, 0.35), v(-0.9, 0.35)], { tone: "ink", fill: "muted" }));
@@ -485,14 +488,19 @@ const echo: FigureDef = {
     els.push(vec(v(0.2, 1.3), v(D - 0.2, 1.3), { tone: "c", thin: !out }), txt(v(D / 2, 1.45), "gidiş: d", "n", { tone: "c", small: true }));
     els.push(vec(v(D - 0.2, -1.3), v(0.2, -1.3), { tone: "b", thin: out }), txt(v(D / 2, -1.45), "dönüş: d", "s", { tone: "b", small: true }));
     // Time line.
-    els.push(seg(v(0, -2.6), v(D, -2.6), { tone: "muted" }), pt(v((t / 0.6) * D, -2.6), undefined, "c", "warn"), txt(v(0, -2.8), "0 s", "s", { tone: "muted", small: true }), txt(v(D, -2.8), "0,60 s", "s", { tone: "muted", small: true }));
+    els.push(seg(v(0, -2.6), v(D, -2.6), { tone: "muted" }), pt(v((t / echoTravelSeconds) * D, -2.6), undefined, "c", "warn"), txt(v(0, -2.8), "0 s", "s", { tone: "muted", small: true }), txt(v(D, -2.8), "0,60 s", "s", { tone: "muted", small: true }));
     els.push(txt(v(-1.4, 2.2), " ", "c"), txt(v(D + 1.6, -3.4), " ", "c"));
-    const gone = 340 * t;
+    const distance = echoDistanceM(echoTravelSeconds * 1000);
+    const time = t.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const phase = t < turningPoint ? "Ses henüz duvara ulaşmadı."
+      : t === turningPoint ? "Ses duvara ulaştı."
+      : t < echoTravelSeconds ? "Ses duvardan yansıdı, geri dönüyor."
+      : `Yankı duyuldu. Toplam ${2 * distance} m, duvara uzaklık ${distance} m.`;
     return {
       els,
       readout: [
-        `t = ${t.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} s · sesin aldığı toplam yol = 340 × t = ${Math.round(gone)} m`,
-        t >= 0.59 ? "Yankı duyuldu: toplam yol 204 m = 2d → d = 102 m. Kaynak ile alıcı ayrı yerdeyse /2 kuralını körlemesine kullanma." : out ? "Ses henüz duvara ulaşmadı." : "Ses duvardan yansıdı, geri dönüyor.",
+        `Zaman ${time} s. Sesin şimdiye kadar aldığı yol ${fmt(echoSpeedMS * t, 1)} m.`,
+        phase,
       ],
     };
   },
@@ -585,6 +593,7 @@ export const physicsFiguresSound: Record<string, Record<string, FigureDef>> = {
   "ses-deprem-dalgalari": {
     ...tuningForkFigures,
     ...tacomaFigures,
+    ...echoFigures,
     ...mebiSeismicFocusFigure,
     "Ses bir ortam titreşimidir": longitudinal,
     [bellJarTitle]: bellJar,
