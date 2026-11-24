@@ -153,6 +153,14 @@ try {
     await page.getByRole("button", { name: new RegExp(title) }).click();
     await page.locator(".visual-lab").waitFor();
   };
+  const openFullTheoryPlan = async () => {
+    const plan = page.getByRole("region", { name: "Konu planı", exact: true });
+    const fullOrder = plan.locator("details.plan-full-order");
+    if ((await fullOrder.getAttribute("open")) === null) {
+      await fullOrder.locator("summary").click();
+    }
+    return fullOrder.locator("li.planned-topic");
+  };
   await navigate("Ayarlar");
   await expect(
     page.getByRole("textbox", { name: "Hedef sınav tarihi", exact: true }),
@@ -186,6 +194,12 @@ try {
       ).toBeVisible();
     }
   }
+  await navigate("Bugün");
+  const completedChemistry = (await openFullTheoryPlan()).filter({ hasText: "Simyadan kimyaya" });
+  await expect(completedChemistry).toContainText("Konu tamamlandı");
+  const chemistryCompletion = completedChemistry.getByText(/^Çalışıldı: \d{2}\/\d{2}\/\d{4}$/);
+  await expect(chemistryCompletion).toBeVisible();
+  const savedChemistryDate = await chemistryCompletion.innerText();
   const newSourceUnits = [
     {
       id: "uslu-sayilar",
@@ -939,15 +953,12 @@ try {
   );
   await navigate("Bugün");
   await expect(page.locator(".stat-number").first()).toHaveText("1");
-  const dailyTheory = page
-    .getByRole("region", { name: "Konu planı", exact: true })
-    .getByRole("list", { name: "Bugünün konuları", exact: true });
-  await expect(
-    dailyTheory.locator("li").filter({ hasText: "Simyadan kimyaya" }),
-  ).toContainText("Konu tamamlandı");
-  const rationalRow = dailyTheory
-    .locator("li")
-    .filter({ hasText: "Rasyonel Sayılar" });
+  // A packed desktop run may span midnight. Its finished lessons keep their original dates.
+  const theoryRows = await openFullTheoryPlan();
+  const restoredChemistry = theoryRows.filter({ hasText: "Simyadan kimyaya" });
+  await expect(restoredChemistry).toContainText("Konu tamamlandı");
+  await expect(restoredChemistry.getByText(savedChemistryDate, { exact: true })).toBeVisible();
+  const rationalRow = theoryRows.filter({ hasText: "Rasyonel Sayılar" });
   await expect(rationalRow).toContainText("5 soruda 5 doğru · 0 yanlış");
   await rationalRow
     .getByRole("button", { name: "Sonucu gör", exact: true })

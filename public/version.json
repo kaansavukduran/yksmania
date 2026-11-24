@@ -1,8 +1,8 @@
 {
-  "version": "0.87.0",
+  "version": "0.88.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Üç gaz deneyinde sıcaklığı, hacmi ve gaz miktarını sırayla değiştir. Her deneyde basınç göstergesini ve Kopya Kağıdı’ndaki tabloyu karşılaştır.",
-    "en": "Change temperature, volume and gas amount in three separate experiments. Compare the pressure gauges and the reference table."
+    "tr": "Hareketli pistonda ısıtma, gaz ekleme, yük ve dış basıncı karşılaştır. Son basıncı ve hacmi çizimden ve tablodan oku.",
+    "en": "Compare heating, added gas, piston load and external pressure. Read the final pressure and volume from the model and reference table."
   }
 }

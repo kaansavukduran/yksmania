@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.88.0 · Hareketli pistonun son dengesi
+
+Yayın adayı. Isıtılan gazı, gaz eklemeyi, piston yükünü ve dış basıncı ayrı deneylerde karşılaştır. İlk ve son dengeyi aynı çizimde oku. Kopya Kağıdı’nda 450 K örneğinin hacim adımında ilgili çizimi aç.
+
 # ÖSYM Mania 0.87.0 · Rijit kapta üç gaz deneyi
 
 Yayın adayı. Önce değişmeyen nicelikleri belirle, sonra yeni sıcaklık, hacim veya gaz miktarının basınca etkisini çizimde oku.
