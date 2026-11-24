@@ -30,6 +30,7 @@ import { waveClassificationExample, waveClassificationSection } from "../mebiWav
 import { tuningForkExample, tuningForkSection } from "../mebiTuningFork";
 import { springPulseExample, springPulseSection } from "../mebiSpringPulse";
 import { surfaceWaveExample, surfaceWaveSection, surfaceWaveTitle } from "../mebiSurfaceWave";
+import { seismicFocusExample, seismicFocusSection, seismicFocusTitle } from "../mebiSeismicFocus";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
@@ -458,6 +459,14 @@ export function studyGuide(lessonId: string) {
       sections: guide.sections.map((section) => section.title === surfaceWaveTitle ? surfaceWaveSection : section),
       examples: [...guide.examples, surfaceWaveExample],
       source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfasındaki su dalgası, yüzey işareti ve ilerleyen tepeyle yan kesitte yeniden gösterildi. Modelin sayısal değerleri özgün.`,
+    };
+  }
+  if (guide?.id === "ses-deprem-dalgalari") {
+    return {
+      ...guide,
+      sections: guide.sections.map((section) => section.title === seismicFocusTitle ? seismicFocusSection : section),
+      examples: [...guide.examples, seismicFocusExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfadaki yer dalgası kesiti fay ve kaya parçalarıyla yeniden çizildi. Yol uzunlukları ve süratler özgün düzgün kaya modeline aittir.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.110.0 · Fay ve dalgaların istasyona ulaşması
+
+Yayın adayı. Yer kesitinde istasyonu kaydır ve odaktan başlayıp ona ulaşan yolu oku. Kopya Kağıdı’nda yol uzunluğu ve iki dalganın varış süresini hesapla.
+
 # ÖSYM Mania 0.109.0 · Su yüzeyinde bir nokta ve bir tepe
 
 Yayın adayı. Yüzeydeki P işaretini çember üzerinde, tepeyi yayılma yönünde izle. Kopya Kağıdı’nda bir tam periyotta ikisinin yer değiştirmesini hesapla.

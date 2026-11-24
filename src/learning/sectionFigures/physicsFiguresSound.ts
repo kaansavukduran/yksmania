@@ -1,4 +1,5 @@
 import { circle, poly, pt, seg, txt, v, vec, type El, type FigureDef, type Tone, type V } from "./figureKit";
+import { mebiSeismicFocusFigure } from "./mebiSeismicFocusFigure";
 
 /*
  * Ses ve deprem dalgaları. The longitudinal wave moves real particle positions
@@ -227,6 +228,7 @@ const quake: FigureDef = {
 
 export const physicsFiguresSound: Record<string, Record<string, FigureDef>> = {
   "ses-deprem-dalgalari": {
+    ...mebiSeismicFocusFigure,
     "Ses bir ortam titreşimidir": longitudinal,
     "Yükseklik sözcüğünün iki anlamını çöz": pitch,
     "Yankıda mesafeyi iki kez say": echo,

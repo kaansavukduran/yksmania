@@ -1,8 +1,8 @@
 {
-  "version": "0.109.0",
+  "version": "0.110.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Su yüzeyindeki bir noktayı dairesel hareketinde izle. Yayılan tepenin aldığı yolu yüzeydeki noktanın yer değiştirmesiyle Kopya Kağıdı’nda karşılaştır.",
-    "en": "Follow a point as it moves around a circle on a water wave. Compare the distance traveled by the crest with the point’s displacement in a worked example."
+    "tr": "Yer kesitinde fay, odak, dış merkez ve istasyonu incele. İstasyonu kaydırıp P ve S dalgalarının varış sürelerini örnek hesapla karşılaştır.",
+    "en": "Explore a fault cross-section with a focus, epicenter and station. Move the station and compare P- and S-wave arrival times in a worked example."
   }
 }
