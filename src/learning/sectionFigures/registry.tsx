@@ -3,6 +3,8 @@ import { SectionFigureView, type FigureDef } from "./figureKit";
 import { SourceQuestionFigure } from "../SourceQuestionFigure";
 import { thermographySourceURL } from "../mebiThermography";
 import { thermographyPhoto } from "./mebiThermographyPhoto";
+import { visibleMirrorRayTitle } from "../mebiVisibleMirror";
+import { visibleMirrorPhoto, visibleMirrorPhotoSource } from "./mebiVisibleMirrorPhoto";
 import { geometryFigures031 } from "./geometryFigures031";
 import { geometryFigures032a } from "./geometryFigures032a";
 import { geometryFigures032b } from "./geometryFigures032b";
@@ -206,6 +208,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   physicsFiguresFluidsCircuits,
   physicsFiguresEnergy,
   physicsFiguresWaves,
+  { "dalgalara-giris": { [visibleMirrorRayTitle]: physicsFiguresOptics["duzlem-ayna"][visibleMirrorRayTitle] } },
   physicsFiguresThermal,
   geometryFiguresCircle040,
   historyFiguresSeljuk,
@@ -386,6 +389,11 @@ for (const pack of figurePacks)
   for (const [guide, figures] of Object.entries(pack))
     sectionFigures[guide] = { ...(sectionFigures[guide] ?? {}), ...figures };
 
+const waveLessonPhotos = new Map([
+  [thermographyPhoto.title, { figure: thermographyPhoto, url: thermographySourceURL, credit: "MartinThoma · Wikimedia Commons · CC0 1.0" }],
+  [visibleMirrorPhoto.title, { figure: visibleMirrorPhoto, url: visibleMirrorPhotoSource, credit: "Jake Weirick · Wikimedia Commons · CC0 1.0" }],
+]);
+
 export function SectionFigure({
   guideId,
   title,
@@ -397,18 +405,16 @@ export function SectionFigure({
   label?: string;
 }) {
   const def = sectionFigures[guideId]?.[title];
-  const photo = guideId === "dalgalara-giris" && title === thermographyPhoto.title
-    ? thermographyPhoto
-    : undefined;
+  const photo = guideId === "dalgalara-giris" ? waveLessonPhotos.get(title) : undefined;
   if (!def && !photo) return null;
   return (
     <>
       {label && <p className="small muted">{label}</p>}
       {photo ? (
         <>
-          <SourceQuestionFigure figure={photo} />
-          <a className="small" href={thermographySourceURL} target="_blank" rel="noopener noreferrer">
-            MartinThoma · Wikimedia Commons · CC0 1.0
+          <SourceQuestionFigure figure={photo.figure} />
+          <a className="small" href={photo.url} target="_blank" rel="noopener noreferrer">
+            {photo.credit}
           </a>
         </>
       ) : def && <SectionFigureView def={def} title={title} />}

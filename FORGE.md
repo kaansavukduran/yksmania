@@ -1,3 +1,9 @@
+# Görünür ışık ve gerçek yan ayna · 0.114.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. Yolun ve gün batımının yan aynadaki yansıması için ayrı bir gerçek fotoğraf var. Işığın sahne, ayna ve göz arasındaki yolu iki satırlı tabloda okunuyor. Kopya Kağıdı, normalden ölçülen 35° için mevcut optik çizimini çözüm adımında açıyor. [Fotoğraf ve CC0 kaydı](https://commons.wikimedia.org/w/index.php?title=File:Our_Past_is_Behind_Us._%28Unsplash%29.jpg&oldid=914430380)
+
+Check, 12 birim, derleme ve altı çevrimdışı Chromium senaryosu geçti. 375 px fotoğraf görünümü, klavye odağı, JPEG dosyası ve öğrenme kaydı koruması doğrulandı. Sıradaki madde aynı fiziksel sayfadaki morötesi ışık görseli.
+
 # Mikrodalga fırında üretim, yansıma ve soğurulma · 0.113.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. Fırının kaynak, iç metal duvar ve yiyecek ilişkisi üç adımda açılan bir kesitle işlendi. Yansıyan çizginin normale göre açısı gelen çizgiyle aynı. Ayrı Kopya Kağıdı’nda 2,45 GHz için boşluktaki 12,2 cm örneği ve birim dönüşümü var. [FDA](https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-ovens) · [Frekans ve soğurulma teknik kaynağı](https://www.fda.gov/media/103619/download)
@@ -628,7 +634,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 250 | 315 / 315 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 251 | 315 / 315 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
 | TYT Biyoloji | 36 / 36 | 22 · 80 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 14 |
 | TYT Tarih | 24 / 24 | 14 · 41 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 10 |
@@ -641,7 +647,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **405 · 1745** | **6.665 / 6.665 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
+| **Toplam** | **510 / 510** | **405 · 1746** | **6.665 / 6.665 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

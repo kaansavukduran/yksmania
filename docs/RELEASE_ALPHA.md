@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.114.0 · Yan aynada görünür ışık
+
+Yayın adayı. Fotoğrafta yan aynanın gösterdiği yolu bul. Kopya Kağıdı’nda 55° yüzey açısını normalden ölçülen açıya çevir, ışın çizimiyle kontrol et. [Fotoğraf ve CC0 kaydı](https://commons.wikimedia.org/w/index.php?title=File:Our_Past_is_Behind_Us._%28Unsplash%29.jpg&oldid=914430380)
+
 # ÖSYM Mania 0.113.0 · Mikrodalga fırın kesiti
 
 Yayın adayı. Üç adımda dalgayı kaynaktan metal duvara, oradan yiyeceğe kadar izle. Kopya Kağıdı’nda 2,45 GHz için boşluktaki dalga boyunu santimetreyle hesapla.
