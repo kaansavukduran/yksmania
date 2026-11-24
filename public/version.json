@@ -1,8 +1,8 @@
 {
-  "version": "0.176.0",
+  "version": "0.177.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Üst üste duran iki noktasal kaynağı birbirinden uzaklaştır. Perdede tam gölgenin kaybolduğu ve iki yarı gölgenin ayrıldığı durumu adım adım incele.",
-    "en": "Separate two vertically stacked point sources and use their tangent rays to see where the full shadow vanishes and the two partial shadows separate."
+    "tr": "Büyük ışık kaynağının arkasındaki üç perdeyi karşılaştır. Tam gölgenin noktaya indiği yeri ve daha uzakta kaynağın halka biçiminde görüldüğü bölgeyi izle.",
+    "en": "Compare three screen positions relative to the shadow cone. See the umbra narrow to a point and a ring-shaped view appear farther away."
   }
 }

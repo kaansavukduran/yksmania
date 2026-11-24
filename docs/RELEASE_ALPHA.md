@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.177.0 · Tam gölge konisinin ucu
+
+Yayın adayı. Üç perde konisiyle tam gölgeden noktasal sınıra ve halkalı görünüme geçişi karşılaştır.
+
 # ÖSYM Mania 0.176.0 · Üst üste iki noktasal kaynak
 
 Yayın adayı. K ve L’nin teğet ışınları ve ayrı gölge aralıkları, perdedeki ortak karanlığın hangi düzenle kaybolduğunu gösteriyor.

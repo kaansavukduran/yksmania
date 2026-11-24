@@ -3,6 +3,7 @@ import { pointSphereShadowFigures } from "./mebiPointSphereShadowFigures";
 import { coaxialShadowFigures } from "./mebiCoaxialShadowFigures";
 import { equalExtendedShadowFigures } from "./mebiEqualExtendedShadowFigures";
 import { stackedPointShadowFigures } from "./mebiStackedPointShadowFigures";
+import { extendedShadowConeFigures } from "./mebiExtendedShadowConeFigures";
 import {
   span,
   add,
@@ -786,6 +787,7 @@ const golge: Record<string, FigureDef> = {
   ...coaxialShadowFigures,
   ...equalExtendedShadowFigures,
   ...stackedPointShadowFigures,
+  ...extendedShadowConeFigures,
   "Işık yolu ve opak engel": {
     caption:
       "Noktasal kaynaktan çıkan doğrusal ışınlar opak engelin iki ucuna teğet geçer. Aradaki bölgeye doğrudan ışık ulaşmaz: perdede tam gölge oluşur.",
