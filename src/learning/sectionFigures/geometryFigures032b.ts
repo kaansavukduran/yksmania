@@ -183,29 +183,6 @@ const paralelkenar: Record<string, FigureDef> = {
       };
     },
   },
-  "Dikdörtgende eş köşegenin kaynağı": {
-    caption:
-      "8 × 6 dikdörtgende her köşegen 10'dur. Köşegenler O'da birbirini ortaladığı için O dört köşeye 5 uzaklıktadır; köşeler R = 5 yarıçaplı çember üzerindedir.",
-    alt: "Kenarları 8 ve 6 olan dikdörtgen, iki eşit köşegeni ve O merkezli, dört köşeden geçen kesikli çember.",
-    draw: () => {
-      const [A, B, C, D] = [v(0, 0), v(8, 0), v(8, 6), v(0, 6)];
-      const O = v(4, 3);
-      return {
-        els: [
-          circle(O, 5, { dash: true, thin: true, tone: "muted" }),
-          poly([A, B, C, D], { fill: "muted" }),
-          seg(A, C, { tone: "a" }),
-          seg(B, D, { tone: "a" }),
-          right(A, B, D),
-          dim(A, B, "8", D),
-          dim(B, C, "6", A),
-          dim(O, C, "5", B, "a"),
-          ...labelAll([A, B, C, D, O], ["A", "B", "C", "D", "O"], ["sw", "se", "ne", "nw", "s"]),
-        ],
-        readout: ["d² = 8² + 6² = 100 ⇒ d = 10", "Alan 48 · çevre 28"],
-      };
-    },
-  },
   "Eşkenar dörtgende diklik ve yarım köşegen": {
     caption:
       "Köşegenleri 8 ve 6 olan eşkenar dörtgen: yarımlar 4 ve 3, kenar 5. Alan 8·6/2 = 24; iç teğet çemberin yarıçapı 24/(2·5) = 2,4.",
@@ -227,30 +204,6 @@ const paralelkenar: Record<string, FigureDef> = {
           ...labelAll([A, B, C, D, O], ["A", "B", "C", "D", "O"], ["w", "s", "e", "n", "sw"]),
         ],
         readout: ["Alan = 8·6/2 = 24 · r = 24/10 = 2,4"],
-      };
-    },
-  },
-  "Kare iki ailenin özelliklerini birlikte taşır": {
-    caption:
-      "Karede köşegenler eş, dik, birbirini ortalar ve köşe açılarını 45° + 45° böler. Kenar 6 için d = 6√2; iç çember r = 3, çevrel çember R = 3√2.",
-    alt: "Kenarı 6 olan kare; iki köşegen dik kesişiyor, köşede 45° yaylar, içte teğet çember, dışta köşelerden geçen çember.",
-    draw: () => {
-      const [A, B, C, D] = [v(0, 0), v(6, 0), v(6, 6), v(0, 6)];
-      const O = v(3, 3);
-      return {
-        els: [
-          circle(O, 3 * Math.SQRT2, { dash: true, thin: true, tone: "muted" }),
-          circle(O, 3, { thin: true, tone: "b" }),
-          poly([A, B, C, D]),
-          seg(A, C, { tone: "a" }),
-          seg(B, D, { tone: "a" }),
-          right(O, C, D, "a"),
-          ang(A, B, C, "45°", { tone: "c" }),
-          ang(A, C, D, "45°", { tone: "c", r: 36 }),
-          dim(A, B, "6", D),
-          ...labelAll([A, B, C, D], ["A", "B", "C", "D"], ["sw", "se", "ne", "nw"]),
-        ],
-        readout: [`d = 6√2 ≈ ${fmt(6 * Math.SQRT2, 2)} · alan 36 = d²/2`],
       };
     },
   },
@@ -282,42 +235,6 @@ const paralelkenar: Record<string, FigureDef> = {
         readout: [
           `S = 8·6·sin ${th}°/2 ≈ ${fmt(24 * Math.sin((th * Math.PI) / 180), 2)}`,
           `2(a² + b²) ≈ ${fmt(2 * (a * a + b * b), 1)} = 8² + 6² = 100`,
-        ],
-      };
-    },
-  },
-  "Koşulu en kısa yöntemle sonuca bağla": {
-    caption:
-      "Önce aileyi belirle. Paralelkenara dik açı eklersen dikdörtgen, eş kenar eklersen eşkenar dörtgen, ikisini birden eklersen kare elde edersin.",
-    alt: "Ağaç şeması: paralelkenardan dik açı koşuluyla dikdörtgene, eş kenar koşuluyla eşkenar dörtgene, ikisinden kareye oklar.",
-    draw: () => {
-      const icon = (o: V, ps: V[]) => poly(ps.map((p) => add(o, p)), { fill: "muted", thin: true });
-      const P = v(0, 2);
-      const R = v(5, 4);
-      const Rh = v(5, 0);
-      const S = v(10, 2);
-      const arrow = (a: V, b: V, label: string) => {
-        const d = unit(sub(b, a));
-        const m = mid(a, b);
-        return [
-          vec(add(a, mul(d, 1.5)), sub(b, mul(d, 1.5)), { tone: "a", thin: true }),
-          txt(add(m, v(0, 0.6)), label, "c", { small: true, tone: "a" }),
-        ];
-      };
-      return {
-        els: [
-          icon(P, [v(-1.1, -0.6), v(0.6, -0.6), v(1.1, 0.6), v(-0.6, 0.6)]),
-          icon(R, [v(-1.1, -0.6), v(1.1, -0.6), v(1.1, 0.6), v(-1.1, 0.6)]),
-          icon(Rh, [v(-0.9, 0), v(0, -0.65), v(0.9, 0), v(0, 0.65)]),
-          icon(S, [v(-0.65, -0.65), v(0.65, -0.65), v(0.65, 0.65), v(-0.65, 0.65)]),
-          ...arrow(P, R, "+ dik açı"),
-          ...arrow(P, Rh, "+ eş kenar"),
-          ...arrow(R, S, "+ eş kenar"),
-          ...arrow(Rh, S, "+ dik açı"),
-          txt(add(P, v(0, -1.1)), "paralelkenar", "c", { small: true }),
-          txt(add(R, v(0, -1.1)), "dikdörtgen", "c", { small: true }),
-          txt(add(Rh, v(0, -1.1)), "eşkenar dörtgen", "c", { small: true }),
-          txt(add(S, v(0, -1.1)), "kare", "c", { small: true, bold: true }),
         ],
       };
     },

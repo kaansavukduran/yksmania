@@ -1981,6 +1981,58 @@ export const questionTactics: QuestionTactic[] = [
       "Tek değişkenli kıyas: aynı sıvıda iki sıcaklık ya da aynı sıcaklıkta iki sıvı. İkisi birden değişirse neden seçilemez; bilye süresi oranı η oranı değildir, viskoziteden yoğunluk çıkmaz.",
     ],
   },
+  {
+    id: "dik-ucgen-kenar-rolu",
+    guides: ["tyt-geo-dik-ucgen-031", "tyt-geo-trigonometrik-oranlar-040"],
+    match: /hipotenüs|dik kenar|Pisagor|30°|60°|45°|sin|cos|tan/i,
+    title: "Dik üçgende önce kenarın rolünü yaz",
+    steps: [
+      "90°'yi bul, karşısına hipotenüs yaz. Diklik verilmemişse en uzun kenarın karesini öbür ikisinin kareleri toplamıyla karşılaştır: eşit dik, küçük dar, büyük geniş.",
+      "Özel açıda kenarı açının karşısına bağla: 30° karşısı a, 60° karşısı a√3, hipotenüs 2a; 45°'de a, a, a√2. Verilen kenar 60°'nin karşısındaysa a = kenar/√3.",
+      "Trigonometride önce açıyı seç: sin = karşı/hipotenüs, cos = komşu/hipotenüs, tan = karşı/komşu. Hipotenüs tan paydasına girmez.",
+      "Yatay ve düşey farklar dik kenardır (merdiven, ip, koordinat). 2024 TYT Temel Matematik 33 mantığı: iki konumda değişmeyen yatay açıklığı bir konumdan bul, öbür konuma taşı.",
+      "Denetim: hipotenüs her dik kenardan uzun, ikisinin toplamından kısadır; kenarlar değil kareleri toplanır.",
+    ],
+  },
+  {
+    id: "merkez-esit-uzaklik",
+    guides: ["tyt-geo-ucgen-merkezleri-031"],
+    match: /merkez|çevrel|teğet|yarıçap|ağırlık|diklik/i,
+    title: "Merkezde “neye eşit uzaklık?” sorusuyla başla",
+    steps: [
+      "Köşelere eşit uzaklık → O (orta dikmeler); kenar doğrularına eşit dik uzaklık → I (açıortaylar).",
+      "Dik üçgende O hipotenüsün ortası (R = c/2), H dik köşe, r = (a + b − c)/2. Geniş açılıda O ve H dışarıda; I ve G her zaman içeride.",
+      "Alan = r·s: üçgeni I'dan üç parçaya böl, her parçanın yüksekliği r. Çevre verildiyse s = çevre/2.",
+      "G köşe koordinatlarının ortalamasıdır; kenarortayı köşeden 2 : 1 böler.",
+      "Kenar doğrularına eşit uzak bir nokta dışarıdaysa dış teğet merkezidir. Katlamada kat çizgisi eşlenen iki noktanın orta dikmesidir (2026 TYT Temel Matematik 35 mantığı).",
+    ],
+  },
+  {
+    id: "ucgen-alan-veri-sec",
+    guides: ["alan-donusumleri"],
+    match: /alan/i,
+    title: "Üçgen alanında veriye göre yöntem seç",
+    steps: [
+      "Tabanı seç; yüksekliği karşı köşeden o tabanın doğrusuna dik çiz. Eğik kenar ancak 90° işaretliyse yüksekliktir.",
+      "İki kenar ve açı: açı iki kenarın arasındaysa S = ab·sinθ/2; değilse önce yüksekliği ve tabanı ayrı bul (2024 TYT Temel Matematik 34 mantığı).",
+      "Ortak tepe → alan oranı taban oranı; ortak taban → yükseklik oranı. Tepe tabana paralel doğruda kayarsa alan değişmez.",
+      "Üç kenar verildiyse önce üçgen eşitsizliği, sonra Heron √(s(s − a)(s − b)(s − c)); sonucu başka bir taban ve yükseklikle denetle.",
+      "Sonuç kare birimle yazılır; parçaları toplarken örtüşen bölgeyi iki kez sayma.",
+    ],
+  },
+  {
+    id: "dikdortgen-cevre-kosegen",
+    guides: ["tyt-geo-paralelkenar-ozel-dortgenler-032"],
+    match: /dikdörtgen|çevre|köşegen/i,
+    title: "Dikdörtgende yarı çevre, köşegen karesi ve 2ab",
+    steps: [
+      "Çevreden önce yarı çevreyi (a + b) yaz; köşegenden a² + b² = d². Alan için 2ab = (a + b)² − (a² + b²).",
+      "Ortak genişlikte alan oranı yükseklik oranıdır; çevre farkı yükseklik farkının iki katıdır (2026 TYT Temel Matematik 37 mantığı).",
+      "Köşegenler eş ve birbirini ortalar; dik kesişmeleri yalnız karede vardır.",
+      "Herhangi bir P için PA² + PC² = PB² + PD²: karşı köşeleri eşleştir, uzunlukları değil karelerini topla.",
+      "Çerçeve ve boşlukta payı iki yandan çıkar; aynı çevrede en büyük alan karededir.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
