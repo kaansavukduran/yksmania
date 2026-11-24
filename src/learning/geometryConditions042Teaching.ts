@@ -85,7 +85,7 @@ export const lineAngles042: Supplement = {
 };
 
 export const triangleAngles042: Supplement = {
-  source: "Aurelia 002 Üçgende Açılar, içerik 5.1, fiziksel s. 1–12",
+  source: "Aurelia 002 Üçgende Açılar, içerik 5.1, fiziksel s. 1–12. Aurelia 005 İkizkenar Üçgen 5.2, fiziksel s. 6–7",
   sections: [
     {
       title: "Açıortay dışarı çıkarsa kesişimdeki açı değişir",
@@ -108,6 +108,14 @@ export const triangleAngles042: Supplement = {
       paragraphs: [
         "B köşesinden AC’nin orta noktasına çizilen BM, AC’yi iki eş parçaya ayırır. B açısını ikiye bölmek için BD açıortayı gerekir. Şekilde D ile M ayrı noktalardır. B’nin çevresindeki açı işaretlerini ve AC’deki eş uzunluk çizgilerini ayrı oku.",
         "D, AC üzerinde olduğu için ∠BCD, büyük üçgendeki C açısıyla aynıdır. B açısı 50°, C açısı 60° ise ∠DBC=25° ve küçük BDC üçgeninde ∠BDC=180°−60°−25°=95° olur.",
+      ],
+    },
+    {
+      title: "Tabandaki noktadan eş kenarlara dik uzaklık",
+      figureTitle: "İki dik uzaklığın toplamı",
+      paragraphs: [
+        "AB=AC=a ve P, BC doğru parçası üzerinde olsun. P’den AB ve AC doğrularına dik indir. Bu dik parçaların uzunlukları d₁ ve d₂’dir. AP çizgisi üçgeni ABP ve APC olarak ikiye ayırır. Bu iki alanın tabanları eş uzunluktadır, dolayısıyla S=a·d₁/2+a·d₂/2=a(d₁+d₂)/2.",
+        "Aynı üçgenin alanını AB tabanı ve ona ait yükseklikle yaz: S=a·hₐ/2. Buradan d₁+d₂=hₐ=2S/a. Tepe yüksekliği A’dan BC’ye ölçülür. P’yi tabandan üçgenin içine alırsan BPC alanı toplamın dışında kalır. Buna karşılık hareketli modelde P, BC üzerinde kaldığı sürece bir uzaklık artarken diğeri aynı miktarda azalır.",
       ],
     },
   ],
@@ -182,6 +190,19 @@ export const triangleAngles042: Supplement = {
       check: "32°+48°+100°=180°.",
       pitfall: "AC’nin orta noktasını seçmek B açısının bölündüğünü göstermez.",
     },
+    {
+      title: "Tepe yüksekliğini yan yüksekliğe dönüştür",
+      prompt: "AB=AC=5, BC=6. P, BC parçasında ve AC’ye dik uzaklığı 8/5. AB’ye dik uzaklığı bul.",
+      strategy: "Önce alanı BC ile bul, sonra eş yan kenarlara ait iki alanı topla.",
+      steps: [
+        { label: "Alanı bul", expression: "h²=5²−3²=16 → S=6·4/2=12", explanation: "Tepe yüksekliği, 6 birimlik tabanı iki eş parçaya ayırır." },
+        { label: "İki dik uzaklığın toplamı", expression: "d₁+d₂=2·12/5=24/5", explanation: "İki küçük üçgenin taban olarak alınan yan kenarları 5’er birimdir." },
+        { label: "Verilen uzaklığı çıkar", expression: "24/5−8/5=16/5", figureTitle: "İki dik uzaklığın toplamı", explanation: "AB’ye ait dik uzaklığı kalan alan belirler." },
+      ],
+      answer: "AB’ye dik uzaklık 16/5 birim.",
+      check: "5·(16/5)/2+5·(8/5)/2=8+4=12.",
+      pitfall: "Tepe yüksekliği 4’ten değil, yan yüksekliği 24/5’ten çıkar.",
+    },
   ],
   recall: [
     {
@@ -207,6 +228,13 @@ export const triangleAngles042: Supplement = {
       title: "Açıortay ve kenarortay",
       figureTitle: "Açıortay ve orta nokta",
       text: ["Açıortay köşedeki açıyı, kenarortay karşı kenarı ikiye böler. C açısı aynı kalan BDC’de B’nin yarısını ve C’yi 180°den çıkar."],
+    },
+    {
+      title: "Eş kenarlara inen dik uzaklıklar",
+      figureTitle: "İki dik uzaklığın toplamı",
+      text: [
+        "AB=AC=a ve P ∈ [BC] ise alan toplamından d₁+d₂=2S/a. Bu AB’ye veya AC’ye ait yüksekliktir. P taban dışına çıktığında bu toplamı doğrudan kullanma.",
+      ],
     },
   ],
 };

@@ -3671,3 +3671,9 @@ Ardışık Sayılar 5.1 fiziksel 5 E6 ve 6 görsel, Açı Kenar Bağıntıları 
 Asal Sayılar’da 72’nin 12 pozitif böleni asal üs çiftlerinden üretilen tabloda okunuyor. Dik Üçgenler’de rampanın yatay uzaklığı, yüksekliği, eğimi ve hipotenüsü aynı ölçülerden hesaplanıyor. İki model de konu anlatımı ve ayrı Kopya Kağıdı içinde çalışıyor.
 
 Asal Sayılar 1.2 fiziksel 3 ve Dik Üçgenler 5.2 fiziksel 2, 5 ve 8. sayfalarıyla eşleştirildi. TypeScript, 53 birim, 13 Chromium, içerik ve 323 çevrimdışı varlık kontrolü geçti. Geniş birim denetimi önceki iki geometri örneğinde eksik ara adımı yakaladı. Ara adımlar eklendi ve aynı denetim tekrar geçti.
+
+## TYT Matematik ve Geometri · 0.153.0 adayı
+
+Faktöriyel Kavramı anlatımı ve Kopya Kağıdı, 10! ve 15! için 12’nin tam bölen en büyük kuvvetini aynı asal çarpan tablosuyla gösteriyor. Üçgende Açılar’da tabandaki bir noktadan dik çizilen iki uzaklık ayrı ayrı değişirken toplamları 4,8 birim kalıyor. Model konu, çözümlü örnek ve ayrı Kopya Kağıdında çalışıyor.
+
+Faktöriyel Kavramı 1.1 fiziksel 3 ve 10, İkizkenar Üçgen 5.2 fiziksel 6 ve 7 ile karşılaştırıldı. 42 birim, 11 Chromium ve 323 çevrimdışı varlık kontrolü geçti. Kopya Kağıdı’ndaki sütun ilişkileri yerel tabloda yeniden sınandı.

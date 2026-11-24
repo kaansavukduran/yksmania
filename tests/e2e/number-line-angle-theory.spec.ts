@@ -215,3 +215,48 @@ test("A ramp’s horizontal distance and hypotenuse stay distinct across the sli
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("A composite divisor is limited by the scarcer complete group", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-mat-faktoriyel-kaynak-033";
+  await page.goto(`/#/lesson?id=${lesson}`);
+  const course = page.getByRole("region", { name: /Bileşik böleni iki bütçeyle kur/ }).getByRole("table");
+  const smaller = course.getByRole("row", { name: /10!/ });
+  const larger = course.getByRole("row", { name: /15!/ });
+  await expect(smaller).toContainText("min(4, 4) = 4");
+  await expect(larger).toContainText("11 → 5");
+  await expect(larger).toContainText("6 → 6");
+  await expect(larger).toContainText("min(5, 6) = 5");
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  const sheet = page.getByRole("region", { name: /Asal kuvvet bütçesi/ }).getByRole("table");
+  await expect(sheet.getByRole("row", { name: /15!/ })).toContainText("min(5, 6) = 5");
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Two perpendicular distances exchange area while their sum stays constant", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-ucgende-acilar-031";
+  await page.goto(`/#/lesson?id=${lesson}`);
+  const model = figure(page, "İki dik uzaklığın toplamı").first();
+  await expect(model).toContainText("d₁ = 3,2, d₂ = 1,6");
+  await expect(model).toContainText("d₁ + d₂ = 4,8 birim");
+  await expect(model).toContainText("8 + 4 = 12 birim²");
+  const original = await model.getByRole("img").innerHTML();
+  await model.getByRole("slider", { name: /P’nin yatay konumu/ }).press("Home");
+  await expect(model).toContainText("d₁ = 0,8, d₂ = 4");
+  await expect(model).toContainText("d₁ + d₂ = 4,8 birim");
+  await expect(model).toContainText("2 + 10 = 12 birim²");
+  expect(await model.getByRole("img").innerHTML()).not.toBe(original);
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(model).toContainText("d₁ = 3,2, d₂ = 1,6");
+  await expect(model).toContainText("Tepe yüksekliği 4 birim.");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

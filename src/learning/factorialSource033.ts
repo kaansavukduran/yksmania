@@ -2,6 +2,21 @@ import { txt, type Lesson, type Question } from "../domain/model";
 import type { QuestionGuidance } from "../domain/questionHelpModel";
 import type { LessonGuide, GuideSection, WorkedExample } from "./guides/types";
 import type { CheatSheet, CheatSection } from "./cheatsheetContent";
+import { factorial033Budget } from "./factorialSource033Model";
+
+const compositePowerTable = {
+  layout: "table" as const,
+  headers: ["Faktöriyel", "2 sayısı → ikili grup", "3 sayısı → tekli grup", "En büyük k"],
+  rows: [10, 15].map((n) => {
+    const { rows: [twos, threes], maxPower } = factorial033Budget(n, 12);
+    return [
+      `${n}!`,
+      `${twos.available} → ${twos.possible}`,
+      `${threes.available} → ${threes.possible}`,
+      `min(${twos.possible}, ${threes.possible}) = ${maxPower}`,
+    ];
+  }),
+};
 interface Factorial033Item extends QuestionGuidance {
   code: string;
   prompt: string;
@@ -116,21 +131,10 @@ export const factorialSource033Pack: Factorial033Pack = {
       paragraphs: [
         "10! içinde v₂=5+2+1=8’dir. İlk beş kopya 2,4,6,8,10’dan; ek iki kopya 4,8’den; son kopya 8’den gelir. v₅(10!)=2’dir: 5 ve 10 birer 5 verir. v₃(10!)=3+1=4’tür: 3,6,9 ve 9’un ikinci 3’ü.",
         "Bölen bileşikse asal formülüne tek parça olarak koyma. 12=2²·3 olduğundan bir 12 iki tane 2 ve bir tane 3 ister. 10! için en çok min(⌊8/2⌋,⌊4/1⌋)=4 tane 12 ayrılır. k=5, on tane 2 ve beş tane 3 ister; bütçeler yetmez. “Kaç 12 katı var?” ile “12’nin en büyük kuvveti tam böler mi?” aynı soru değildir.",
+        "Tablonun ikinci satırında 15! için 2’den 11 kopya, 3’ten 6 kopya var. İkişerli 2 grupları 5 tane kurulabilir. Altıncı 12 için 6 tane 3 yeter ama 12 tane 2 gerekir. Kalan 1 tane 2 ile 1 tane 3 yeni bir 12 kuramaz.",
         "min, verilen sayılardan küçük olanını seç demektir. Örneğin min(4,4)=4 ve min(7,2)=2. İki gereksinim aynı anda karşılanmalıysa bol olan bütçe tek başına yeterli değildir; önce tükenen bütçe kaç tam grup kurulabileceğini sınırlar.",
       ],
-      table: {
-        headers: [
-          "Asal",
-          "10! içindeki kopya",
-          "Bir 12 için ihtiyaç",
-          "Yetebilen 12 sayısı",
-        ],
-        rows: [
-          ["2", "8", "2", "4"],
-          ["3", "4", "1", "4"],
-          ["Darboğaz", "İki koşul birlikte", "İkisi de gerekli", "min(4,4)=4"],
-        ],
-      },
+      table: compositePowerTable,
     },
     {
       code: "S12",
@@ -1615,6 +1619,7 @@ export const factorialSource033Pack: Factorial033Pack = {
     },
     {
       title: "Asal kuvvet bütçesi",
+      table: compositePowerTable,
       text: [
         "p asal: vₚ(n!)=⌊n/p⌋+⌊n/p²⌋+…; sıfır terimde dur. 10!’ta v₂=8, v₃=4, v₅=2; 15!’ta v₃=6, 20!’ta v₃=8. Bileşik böleni önce asallara ayır.",
         "12=2²·3 için 10!/12ᵏ tam sayılık koşulları 2k≤8, k≤4; en büyük k=4. 8!/6ᵏ için k=2; 6!/4ᵏ için k=2. Her bölen için bütün asal gereksinimleri birlikte gerekir.",
@@ -1643,7 +1648,7 @@ export const factorialSource033Pack: Factorial033Pack = {
     },
   ],
   source:
-    "Aurelia TYT Faktöriyel Kavramı kopya kağıdı, 05.11.2026 / içerik 1.0: 15 sayfalık kaynağın öğretim uyarlaması adayı. Kaynağın atıfları MEB Matematik 10 Ünite 1 basılı 20–21 / çevrimiçi 8–9; baskı yılı ve 2027 resmî kapsamı bu adayda bağımsız doğrulanmadı. 2021 TYT Temel Matematik 5, incelenen gerçek kitapçık PDF 27 / anahtar PDF 45: C=14!/10!. Bu seçili soru ve anahtar doğrulamasıdır; güncel düzeltme duyurularının yokluğu veya bütün kitapçığın incelendiği iddia edilmez. Kaynak: https://dokuman.osym.gov.tr/pdfdokuman/2021/YKS/TSK/tyt_yks_2021.pdf#page=27 ; anahtar: https://dokuman.osym.gov.tr/pdfdokuman/2021/YKS/TSK/tyt_yks_2021.pdf#page=45 . Pratikler ve sayısal model kendi öğretim uyarlamalarıdır; resmî soru veya resmî kurum çözümü değildir. Atıf yapılan bütün kitaplar, videolar ve yirmi yıllık sınav arşivi bu üniteyle tamamlanmış sayılmaz.",
+    "Aurelia TYT Faktöriyel Kavramı kopya kağıdı, 19.11.2026 / içerik 1.1: Fiziksel 3 ve 10. sayfalardaki asal çarpan tablosu ve karar yolu güncellendi. Önceki öğretim uyarlaması, aşağıdaki ayrı kaynak denetimini korur. Kaynağın atıfları MEB Matematik 10 Ünite 1 basılı 20–21 / çevrimiçi 8–9; baskı yılı ve 2027 resmî kapsamı bu adayda bağımsız doğrulanmadı. 2021 TYT Temel Matematik 5, incelenen gerçek kitapçık PDF 27 / anahtar PDF 45: C=14!/10!. Bu seçili soru ve anahtar doğrulamasıdır; güncel düzeltme duyurularının yokluğu veya bütün kitapçığın incelendiği iddia edilmez. Kaynak: https://dokuman.osym.gov.tr/pdfdokuman/2021/YKS/TSK/tyt_yks_2021.pdf#page=27 ; anahtar: https://dokuman.osym.gov.tr/pdfdokuman/2021/YKS/TSK/tyt_yks_2021.pdf#page=45 . Pratikler ve sayısal model kendi öğretim uyarlamalarıdır; resmî soru veya resmî kurum çözümü değildir. Atıf yapılan bütün kitaplar, videolar ve yirmi yıllık sınav arşivi bu üniteyle tamamlanmış sayılmaz.",
 };
 const pack = factorialSource033Pack;
 const objectives = [

@@ -317,6 +317,49 @@ const temelAcilar: Record<string, FigureDef> = {
 };
 
 const ucgendeAcilar: Record<string, FigureDef> = {
+  "İki dik uzaklığın toplamı": {
+    caption: "P’yi taban boyunca kaydır. ABP ile APC alanları değişir. Eş yan kenarlara inen iki dik uzaklığın toplamı yan yüksekliğe eşit kalır.",
+    alt: "AB ve AC beşer birim, BC altı birim olan ikizkenar üçgen. Taban üzerindeki P noktası A ile birleşiyor. P’den AB ve AC’ye iki dik parça çizilmiş.",
+    param: { label: "P’nin yatay konumu", min: -2, max: 2, step: 1, init: 1 },
+    draw: (x) => {
+      const A = v(0, 4);
+      const B = v(-3, 0);
+      const C = v(3, 0);
+      const D = v(0, 0);
+      const P = v(x, 0);
+      const F = foot(P, A, B);
+      const G = foot(P, A, C);
+      const leftDistance = dist(P, F);
+      const rightDistance = dist(P, G);
+      return {
+        els: [
+          poly([A, B, P], { fill: "a", thin: true }),
+          poly([A, P, C], { fill: "b", thin: true }),
+          tri(A, B, C),
+          seg(A, D, { tone: "muted", dash: true }),
+          seg(A, P, { thin: true }),
+          seg(P, F, { tone: "a", bold: true }),
+          seg(P, G, { tone: "b", bold: true }),
+          right(F, A, P, "a"),
+          right(G, A, P, "b"),
+          dim(B, A, "5", C),
+          dim(A, C, "5", B),
+          txt(mid(P, F), "d₁", "nw", { tone: "a" }),
+          txt(mid(P, G), "d₂", "ne", { tone: "b" }),
+          pt(A, "A", "n"),
+          pt(B, "B", "sw"),
+          pt(C, "C", "se"),
+          pt(P, "P", "s"),
+        ],
+        readout: [
+          `d₁ = ${fmt(leftDistance, 1)}, d₂ = ${fmt(rightDistance, 1)}`,
+          `d₁ + d₂ = ${fmt(leftDistance + rightDistance, 1)} birim`,
+          `Alanlar: ${fmt(5 * leftDistance / 2, 1)} + ${fmt(5 * rightDistance / 2, 1)} = 12 birim²`,
+          "Tepe yüksekliği 4 birim.",
+        ],
+      };
+    },
+  },
   "Açıortay ve orta nokta": {
     caption: "Aynı üçgende B’den iki farklı çizgi dene. Açıortay köşedeki iki açıyı eşitler. Kenarortay AC’deki iki parçayı eşitler.",
     alt: "ABC üçgeninin AC kenarında seçilen bir nokta. Açıortay adımında B açısı iki eş yaya ayrılıyor. Kenarortay adımında AC üzerindeki eş parçalar çizgiyle işaretleniyor.",
