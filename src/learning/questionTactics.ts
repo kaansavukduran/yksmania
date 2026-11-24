@@ -2084,6 +2084,58 @@ export const questionTactics: QuestionTactic[] = [
       "Kâr için > 0, zarar etmemek için ≥ 0 kur; adet tam sayıysa sınırdaki komşu değeri dene.",
     ],
   },
+  {
+    id: "isim-ek-bag-oku",
+    guides: ["isimler-isim-tamlamasi"],
+    match: /tamlama|sayı bakımından|yapı bakımından|-i eklerinin|aitlik|sınıflandır/i,
+    title: "Ekli adı bağlandığı sözcüğe okla bağla",
+    steps: [
+      "Önce yüklemi bul; sonra her ekli adın fiile mi başka bir ada mı bağlandığını sor. Durum ekleri adı yükleme, ilgi eki adı başka bir ada bağlar.",
+      "Aynı -i için iki soru sor: “Kimin nesi?” anlamlıysa iyelik, “Neyi?” yüklemde yanıt buluyorsa belirtme. defter-i-n-i gibi biçimlerde ikisi sırayla bulunabilir.",
+      "Tamlamada tamlayanı ve tamlananı ayır: ikisi de ekliyse belirtili, tamlayan yalınsa belirtisiz; bir uç kendi içinde tamlamaysa zincirleme. Düşen tamlayanı (benim) ya da düşen tamlananı (-ki) açarak geri koy.",
+      "Yapı sorusunda çekim eklerini at, kalan tabana bak; sayı sorusunda -lar ekini ve anlamdaki çokluğu ayrı yaz (koro tekil biçimde topluluk adıdır).",
+      "2023 TYT Türkçe 8 mantığı: her yargıyı kendi söz grubunda ayrı kanıtla; bir isim tamlamasını edat öbeği sanma.",
+    ],
+  },
+  {
+    id: "sifat-ok-yonu",
+    guides: ["sifatlar"],
+    match: /sıfat|görevi|görevleri|grubu|sözcüğü/i,
+    title: "Sözcüğün okunu çiz: ada giden sıfat, başka yere giden değil",
+    steps: [
+      "Önce adı bul, sonra aday sözcükten o ada ok çiz. Ok açık bir ada gidiyorsa sıfat; fiile, sıfata ya da zarfa gidiyorsa zarf olasılığını dene.",
+      "Ad düşmüşse: işaret ve belgisiz sözcük zamire döner (bunu, bazıları); niteleme sözcüğü adlaşmış sıfat olur (yaşlılar).",
+      "Soru sözcüğünde yanıtın neyi tamamladığını yaz: adın kimliği, miktarı ya da niteliği soru sıfatı; adın yeri soru zamiri; eylemin biçimi soru zarfı.",
+      "Bir sözcüğünde “bir yerine iki koy” denemesini yap: yalnız sayı değişiyorsa asıl sayı, anlam bozuluyorsa belgisiz.",
+      "Sıfat öbeğinde (kısa saçlı) ek ada bağlanan bütüne gelir; öbeği tek sıfat olarak göster. Sıfat-fiilde fiil kökünü ve adı niteleme görevini birlikte kanıtla.",
+    ],
+  },
+  {
+    id: "zamir-acilim-gonderim",
+    guides: ["zamirler"],
+    match: /zamir|kendi|onu|onun|bana|hepsi|kimi|-ki|türdedir/i,
+    title: "Zamiri aç: yerine hangi ad geliyor, kaç ad gelebiliyor?",
+    steps: [
+      "Zamirin yerine adı koy ve cümle anlamını koruyor mu bak: onu = kalemi, kendini = Ece’yi.",
+      "Yanında açık ad varsa aynı sözcük sıfattır (bu kitap, bazı öğrenciler); ad düşüp sözcük onun yerini tutuyorsa zamirdir (bunu, bazıları).",
+      "Kişi zamirini durum ekiyle birlikte çöz: bana ve sana düzensiz yönelme biçimleridir; yüklemdeki kişi eki (geldim) açık zamir değildir.",
+      "Kendi her zaman bir kişiye döner: dönüşü (kendini gördü) ve vurguyu (kendisi yaptı) ayır.",
+      "İki ad aday olabiliyorsa (onun notu) kesin sahibi uydurma; belirsizliği söyle ya da adı tekrarlayarak onar.",
+    ],
+  },
+  {
+    id: "cati-kapi-iki-eksen",
+    guides: ["fiilde-cati"],
+    match: /çatı|yüklem|işteş|uyut|kestir|edilgen|sözde özne|nesne/i,
+    title: "Çatıda önce kapıyı aç, sonra iki ekseni ayrı sor",
+    steps: [
+      "İlk kapı: asıl yüklem çekimli fiil mi? İsim yüklemde çatı aranmaz; cümledeki fiilimsi (yapılan, boyanan) yüklem değildir.",
+      "Özne ekseni: “Kim yaptı?” Gerçek özne açık ya da gizliyse etken; etkilenen özne konumundaysa edilgen; yapan ve etkilenen aynıysa dönüşlü; birden çok katılımcı birlikte ya da karşılıklı yapıyorsa işteş. Ek sesi tek başına kanıt değildir.",
+      "Nesne ekseni: fiilin o anlamda “neyi?” sorusuna doğal yanıt alıp alamadığını dene; nesnenin yazılmaması geçişliliği silmez, yönelme ve ayrılma ekli adlar nesne değildir.",
+      "Oldurgan ve ettirgende eki değil kökü yaz: geçişsiz kök ekle nesne alıyorsa oldurgan, geçişli kök başkasına yaptırılıyorsa ettirgen.",
+      "2017 YGS Türkçe 14 mantığı: “geçişli yüklem vardır” yargısını yalnız çekimli yüklemlerle sına, fiilimsilerle değil.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

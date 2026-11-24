@@ -31,8 +31,8 @@ Tam aktarımı doğrulanan güncel satır sayısı sıfır. Arşivde gerçekte k
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 127 |
-| Okunduğu doğrulanan PDF toplamı (bu dal) | 127 / 8.981 (%1,41) |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 131 |
+| Okunduğu doğrulanan PDF toplamı (bu dal) | 131 / 8.981 (%1,46) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
 
@@ -42,7 +42,7 @@ Klasördeki numaralı kopya kâğıtları ders ders sayıldı (517 kopya kâğı
 
 | Ders | Kopya kâğıdı | İşlendi | Oran |
 | --- | ---: | ---: | ---: |
-| TYT Türkçe | 33 | 4 | %12,1 |
+| TYT Türkçe | 33 | 8 | %24,2 |
 | TYT Matematik | 38 | 9 | %23,7 |
 | TYT Geometri | 32 | 5 | %15,6 |
 | TYT Fizik | 24 | 7 | %29,2 |
@@ -52,14 +52,14 @@ Klasördeki numaralı kopya kâğıtları ders ders sayıldı (517 kopya kâğı
 | TYT Coğrafya | 40 | 5 | %12,5 |
 | TYT Felsefe | 17 | 3 | %17,6 |
 | TYT Din Kültürü | 20 | 3 | %15,0 |
-| **TYT toplam** | **320** | **85** | **%26,6** |
+| **TYT toplam** | **320** | **89** | **%27,8** |
 | AYT Matematik | 17 | 2 | %11,8 |
 | AYT Geometri | 4 | 1 | %25,0 |
 | AYT Fizik | 46 | 7 | %15,2 |
 | AYT Kimya | 55 | 11 | %20,0 |
 | AYT Biyoloji | 75 | 11 | %14,7 |
 | **AYT toplam** | **197** | **32** | **%16,2** |
-| **Genel toplam** | **517** | **117** | **%22,6** |
+| **Genel toplam** | **517** | **121** | **%23,4** |
 
 Notlar: TYT Türkçe'de 028 numarası iki farklı konuda kullanılmış (33 dosya, 32 numara). TYT Kimya'da 031 aynı adla iki kez var (eski ve yeni sürüm; 55 farklı konu). TYT Matematik ve Geometri'de 000 numaralı genel özetler var. AYT klasöründeki 7 durum raporu “232 konu” diyor ama klasörlerde 197 AYT kopya kâğıdı bulunuyor; 35 konunun kopya kâğıdı Drive'da yok. Bu tablodaki sıfırlar, o derste kopya kâğıdından figür/taktik aktarılmadığını söyler; uygulamada o dersin anlatımı ve soruları yine vardır (ayrıntı aşağıdaki kapsam tablosunda).
 
@@ -192,6 +192,10 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 004 TYT Matematik – Asal Sayılar (kopya kâğıdı) | `asal-sayilar` tanım bölümüne n sürgülü dikdörtgen dizilimler (asalda yalnız 1 × n); `tyt-mat-asal-kaynak-032` figürsüz üç bölümüne: altı adımlı 1–50 eleği (15 asal, 7² ≤ 50 < 11²), q sürgülü q − 2, q, q + 2 mod 3 üçlüsü (yalnız q = 5), dört adımlı AB · BA ve 30 filtresi (81 → 17 → 8 → 2: 45, 54); çarpan filtresi taktiği; 2022 TYT Temel Matematik 14 mantığı | Kısmi |
 | 019 TYT Matematik – Yaş Problemleri (kopya kâğıdı) | `yas-problemleri` figürsüz dört bölümüne: t sürgülü üç kişilik grup (toplam 51 + 3t, ortalama 17 + t), dört adımlı 3k : 7k blok modeli (2(3k + 4) = 7k + 4, k = 4), üç adımlı çapraz zaman çizgisi (31 ve 19: 12 yıl önce B 7, 12 yıl sonra A 43), t sürgülü en az ortalama çubukları ((31 + 3t)/3 ≥ 15, ilk tam yıl 5); sabit hedef taktiği; 2023 TYT Temel Matematik 26 ve 2026 TYT Temel Matematik 21 mantığı | Kısmi |
 | 021 TYT Matematik – Kâr Zarar Problemleri (kopya kâğıdı) | `kar-zarar-problemleri` figürsüz dört bölümüne: satış sürgülü maliyet tabanı (160 → 200: kâr %25, marj %20), r sürgülü eşit satış / eşit maliyet toplamları (zarar r², eşit maliyette başabaş), fire sürgülü 60 kg ızgarası ve sabit 1800 TL maliyet (başabaş fire 1/3), satılan adet sürgülü üretilen–satılan kâr çubukları (başabaş 30 ve 20); eşit olan tutar taktiği | Kısmi |
+| 003 TYT Türkçe – İsimler ve İsim Tamlaması (kopya kâğıdı) | `isimler-isim-tamlamasi` figürsüz dört bölümüne: tıklanabilir bağ okları (ilgi eki ada, durum ekleri yükleme bağlanır; kızı iyelik ama yalın özne), çekim eki atılınca kalan taban ek şeridi (yollarımızdan basit, yolcularımızdan türemiş, gökkuşağından birleşik), -lar eki × anlamdaki çokluk tablosu (koro topluluk, halamlar aile), düşen ve ortak tamlayan/tamlanan okları (benim, seninki, iki tamlayan tek tamlanan); ek–bağ taktiği; 2023 TYT Türkçe 8 mantığı | Kısmi |
+| 004 TYT Türkçe – Sıfatlar (kopya kâğıdı) | `sifatlar` figürsüz dört bölümüne: tıklanabilir ok yönü cümlesi (çok → yorgun zarf, yorgun → yolcular sıfat, hızlı → koştu zarf), soru sözcüğü tablosu (hangi / hangisi / kaç / kaçıncı / nasıl bir / nasıl geldin), “bir yerine iki koy” seçim panosu (asıl sayı, belgisiz), yapı ek şeridi (dar, tuz-lu, hayırsever, kısa saç-lı öbeği); ok yönü taktiği; 2023 TYT Türkçe 8 mantığı | Kısmi |
+| 005 TYT Türkçe – Zamirler (kopya kâğıdı) | `zamirler` figürsüz dört bölümüne: durum seçimli altı kişi zamiri kartı (bana, sana düzensiz; o + n), tıklanabilir kendi gönderim okları (tamlayan ve vurgu, ikisi de özneye), dört adımlı onun belirsizliği (iki okuma, ikisi birden, adla onarım), belgisiz sıfat / zamir çiftleri tablosu; açılım–gönderim taktiği; 2017 TYT örnek kitapçık Türkçe 12 mantığı | Kısmi |
+| 009 TYT Türkçe – Fiilde Çatı (kopya kâğıdı) | `fiilde-cati` figürsüz dört bölümüne: dört adımlı ilk kapı (asıl yüklem isim mi fiil mi; fiilimsi kesik çerçeve), “neyi?” denemesi tablosu (dinle-, otur-, yaz-, kork-, bekle-), kökten karar ek şeridi (uyu-t, kork-ut, otur-t oldurgan; iç-ir ettirgen), işteşlik iki kanıt tablosu (-ış eki + ortak iş; serinleşti ve koştu işteş değil); iki eksen taktiği; 2017 YGS Türkçe 14 mantığı | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -201,7 +205,7 @@ Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî ko
 
 | Ders | Resmî konu | Uygulama dersi | Anlatımlı | Soru | Figürlü ders | Bölüm figürü | Taktikli ders | Kopya kâğıdı işlenen |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| TYT Türkçe | 22 | 34 | 33 | 380 | 4 (%11,8) | 15 | 4 | 4 / 33 (%12,1) |
+| TYT Türkçe | 22 | 34 | 33 | 380 | 4 (%11,8) | 15 | 4 | 8 / 33 (%24,2) |
 | TYT Matematik | 31 | 45 | 40 | 735 | 17 (%37,8) | 45 | 21 | 9 / 38 (%23,7) |
 | TYT Geometri | 16 | 19 | 19 | 217 | 19 (%100,0) | 174 | 15 | 5 / 32 (%15,6) |
 | TYT Fizik | 20 | 28 | 24 | 311 | 24 (%85,7) | 177 | 23 | 7 / 24 (%29,2) |
@@ -216,9 +220,9 @@ Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî ko
 | AYT Fizik | 32 | 47 | 46 | 541 | 11 (%23,4) | 26 | 15 | 7 / 46 (%15,2) |
 | AYT Kimya | 34 | 56 | 55 | 680 | 18 (%32,1) | 19 | 14 | 11 / 55 (%20,0) |
 | AYT Biyoloji | 29 | 76 | 75 | 907 | 16 (%21,1) | 39 | 12 | 11 / 75 (%14,7) |
-| **Toplam** | **341** | **540** | **505** | **6.465** | **200 (%37,0)** | **830** | **182** | **117 / 517 (%22,6)** |
+| **Toplam** | **341** | **540** | **505** | **6.465** | **200 (%37,0)** | **830** | **182** | **121 / 517 (%23,4)** |
 
-Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %37) ve kopya kâğıtlarından aktarım (%22,6). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
+Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %37) ve kopya kâğıtlarından aktarım (%23,4). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
 
 Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan konular):
 

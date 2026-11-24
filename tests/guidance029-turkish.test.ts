@@ -10,6 +10,7 @@ import { describe, expect, it, vi } from "vitest";
 import rows from "../src/learning/guidance029Turkish.json";
 import { lessons } from "../src/domain/content";
 import { QuestionHelp } from "../src/components/QuestionHelp";
+import { tacticsFor } from "../src/learning/questionTactics";
 import {
   helpPanels,
   resolvedGuidance,
@@ -351,7 +352,10 @@ describe("029 Turkish old30 individual staged guidance", () => {
           expect(html).toContain(escape(q.explanation));
           for (const t of [...g.optionReasons, g.commonError, g.check])
             expect(html).toContain(escape(t));
-          expect((html.match(/<li>/g) ?? []).length).toBe(5);
+          // Beş seçenek gerekçesi; Forge065 bu derslere soru tipi taktiği
+          // ekledi, taktik adımları da <li> olarak aynı panelde görünür.
+          const tacticSteps = tacticsFor(q).reduce((n, t) => n + t.steps.length, 0);
+          expect((html.match(/<li>/g) ?? []).length).toBe(5 + tacticSteps);
           expect(
             nextButton(QuestionHelp({ question: q, level, onLevel })),
           ).toBeUndefined();
