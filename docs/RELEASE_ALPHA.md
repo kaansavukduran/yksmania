@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.154.0 · Salon akustiği
+
+Yayın adayı. Selimiye Camii’nin iç fotoğrafını büyüt. Örnek salonda doğrudan ve tavandan yansıyan yolu karşılaştır. Tavanın soğurduğu payı değiştirip iki yolu ve enerjiyi kendi çözüm çizimlerinde incele.
+
 # ÖSYM Mania 0.153.0 · Ultrason ve doku sınırları
 
 Yayın adayı. Gerçek fotoğrafta ultrason başlığını ve ekranı incele. İki yankının dönüş süresini değiştirerek doku sınırlarını karşılaştır. Kopya Kağıdı başlığın gönderim ve alımını ayrı çizimlerde gösteriyor.

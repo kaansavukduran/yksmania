@@ -1,8 +1,8 @@
 {
-  "version": "0.153.0",
+  "version": "0.154.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Ultrason başlığını gerçek fotoğrafta gör. Jel ve doku çiziminde iki yankı süresini karşılaştırıp hangi sınırın daha yakın olduğunu bul.",
-    "en": "Open a real ultrasound photograph. Compare the echo times of two tissue boundaries to find which is closer to the probe."
+    "tr": "Selimiye Camii’nin iç fotoğrafını incele. Örnek salonda sesin iki yolunu çizimden oku ve tavanın soğurduğu payı değiştir.",
+    "en": "Explore a photo inside Selimiye Mosque. In a sample room, compare direct and reflected sound and change the absorbed share."
   }
 }

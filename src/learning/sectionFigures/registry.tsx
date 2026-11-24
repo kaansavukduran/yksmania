@@ -11,6 +11,8 @@ import { tacomaTitle } from "../mebiTacoma";
 import { tacomaPhotos } from "./mebiTacomaPhotos";
 import { ultrasoundTitle } from "../mebiUltrasound";
 import { ultrasoundPhoto } from "./mebiUltrasoundPhoto";
+import { roomAcousticsTitle } from "../mebiRoomAcoustics";
+import { selimiyePhoto } from "./mebiSelimiyePhoto";
 import { visibleMirrorRayTitle } from "../mebiVisibleMirror";
 import { visibleMirrorPhoto, visibleMirrorPhotoSource } from "./mebiVisibleMirrorPhoto";
 import { handRadiograph, handRadiographSource } from "./mebiHandRadiograph";
@@ -415,6 +417,7 @@ const soundPhotoGroups: Record<string, { name: string; photos: readonly LessonPh
   [animalPitchTitle]: { name: "Aslan ve kanarya fotoğrafları", photos: pitchSamplePhotos },
   [tacomaTitle]: { name: "Tacoma Narrows arşiv kareleri", photos: tacomaPhotos },
   [ultrasoundTitle]: { name: "Ultrason cihazı fotoğrafı", photos: [ultrasoundPhoto] },
+  [roomAcousticsTitle]: { name: "Selimiye Camii fotoğrafı", photos: [selimiyePhoto] },
 };
 export const sectionImageFigures = new Map<string, Map<string, LessonPhoto>>([
   ["dalgalara-giris", waveLessonPhotos],
