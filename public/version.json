@@ -1,8 +1,8 @@
 {
-  "version": "0.177.0",
+  "version": "0.178.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Büyük ışık kaynağının arkasındaki üç perdeyi karşılaştır. Tam gölgenin noktaya indiği yeri ve daha uzakta kaynağın halka biçiminde görüldüğü bölgeyi izle.",
-    "en": "Compare three screen positions relative to the shadow cone. See the umbra narrow to a point and a ring-shaped view appear farther away."
+    "tr": "K, L ve M’nin ışık kaynağına üç ayrı bakışını karşılaştır. Soruyu verilen şekille çöz, ipucunda iki teğeti izle ve çözümde örtülen diskleri kontrol et.",
+    "en": "Compare what three observers see of a light source. Read the given drawing, use the tangent-ray hint, and check the visible disks in the worked solution."
   }
 }

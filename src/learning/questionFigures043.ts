@@ -27,6 +27,7 @@ import { waterReflectionQuestion, waterReflectionQuestionFigures } from "./water
 import { soundLevelQuestion, soundLevelQuestionFigures } from "./soundLevelQuestion148";
 import { sonarDistanceQuestion, sonarDistanceQuestionFigures } from "./sonarQuestion157";
 import { pointIlluminanceQuestion, pointIlluminanceQuestionFigures } from "./pointIlluminanceQuestion170";
+import { shadowObserversQuestion, shadowObserversQuestionFigures } from "./shadowObserversQuestion178";
 import { springDensityQuestion, springDensityQuestionFigures } from "./springDensityQuestion124";
 import {
   inverseTranslationFigures,
@@ -312,6 +313,16 @@ const illuminationQuestion = {
   guidance: pointIlluminanceQuestion.guidance,
 };
 
+const observerQuestion = {
+  id: shadowObserversQuestion.id,
+  prompt: shadowObserversQuestion.prompt.tr,
+  options: shadowObserversQuestion.options.map(option => option.tr),
+  answer: shadowObserversQuestion.answer,
+  hint: shadowObserversQuestion.hint.tr,
+  explanation: shadowObserversQuestion.explanation.tr,
+  guidance: shadowObserversQuestion.guidance,
+};
+
 const densityQuestion = {
   id: springDensityQuestion.id,
   prompt: springDensityQuestion.prompt.tr,
@@ -472,6 +483,14 @@ const bindings = new Map<string, FigureBinding>([
     pageLabel: "Fiziksel 171. sayfa, basılı 169",
     itemLabel: "İki alıcıda uzaklık ve geliş açısı, özgün öğretim sorusu",
     figures: pointIlluminanceQuestionFigures,
+  }],
+  [observerQuestion.id, {
+    stemRevision: stemRevision(observerQuestion),
+    helpRevision: helpRevision(observerQuestion, observerQuestion.guidance),
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 174. sayfa, basılı 172",
+    itemLabel: "Üç gözlemcinin gördüğü ışık diski, özgün öğretim sorusu",
+    figures: shadowObserversQuestionFigures,
   }],
   [densityQuestion.id, {
     stemRevision: stemRevision(densityQuestion),

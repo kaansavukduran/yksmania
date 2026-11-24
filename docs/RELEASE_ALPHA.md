@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.178.0 · Üç gözlemci ve ışık diski
+
+Yayın adayı. Kök, teğet ipucu, üç çözüm diski ve sonuç tablosu ayrı açılıyor.
+
 # ÖSYM Mania 0.177.0 · Tam gölge konisinin ucu
 
 Yayın adayı. Üç perde konisiyle tam gölgeden noktasal sınıra ve halkalı görünüme geçişi karşılaştır.
