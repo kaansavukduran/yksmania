@@ -1,8 +1,8 @@
 {
-  "version": "0.130.0",
+  "version": "0.131.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Dairesel su dalgalarını üstten ve kâğıt üzerinde izle. İki tepe halkasından dalga boyunu bul, aradaki çukurun merkezden uzaklığını ölç.",
-    "en": "Follow circular water waves from above and on paper. Find the wavelength between two crests and measure the trough's distance from the center."
+    "tr": "Düz engele gelen ve yansıyan su dalgası cephelerini karşılaştır. Açıyı normalden ölç ve ardışık iki tepe arasındaki uzaklığın nasıl korunduğunu incele.",
+    "en": "Compare incoming and reflected wavefronts at a straight barrier. Measure the angle from the normal."
   }
 }

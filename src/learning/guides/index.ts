@@ -34,6 +34,7 @@ import { pulseGenerationExample, pulseGenerationSection } from "../mebiPulseGene
 import { pulseDampingExample, pulseDampingSection } from "../mebiPulseDamping";
 import { periodicSpringExample, periodicSpringSection } from "../mebiPeriodicSpring";
 import { springDensityExample, springDensitySection } from "../mebiSpringDensity";
+import { waterReflectionExample, waterReflectionTable, waterReflectionTitle } from "../mebiWaterReflection";
 import { circularWaveExample, circularWaveSection } from "../mebiCircularWave";
 import { waveTankExample, waveTankSection, waveTankSetupSection } from "../mebiWaveTank";
 import { pulseOverlapExample, pulseOverlapTable, pulseOverlapTitle } from "../mebiPulseOverlap";
@@ -485,9 +486,16 @@ export function studyGuide(lessonId: string) {
   if (guide?.id === "su-dalgalari") {
     return {
       ...guide,
-      sections: [...guide.sections.map((section) => section.title === surfaceWaveTitle ? surfaceWaveSection : section), waveTankSetupSection, waveTankSection, circularWaveSection],
-      examples: [...guide.examples, surfaceWaveExample, waveTankExample, circularWaveExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfasındaki su dalgası, yüzey işareti ve ilerleyen tepeyle yan kesitte yeniden gösterildi. Fiziksel 158, basılı 156. sayfadaki düz çubuklu leğen üstten görünüm, yan kesit ve aydınlık/karanlık şeritlerle aynı ölçekte çizildi. Aynı sayfadaki dairesel dalga, üstten su yüzeyi, kâğıt, tepe ve çukur halkalarıyla yeniden çizildi. Modelin sayısal değerleri özgün.`,
+      sections: [
+        ...guide.sections.map((section) => {
+          if (section.title === surfaceWaveTitle) return surfaceWaveSection;
+          if (section.title === waterReflectionTitle) return { ...section, figureTitle: waterReflectionTitle, table: waterReflectionTable };
+          return section;
+        }),
+        waveTankSetupSection, waveTankSection, circularWaveSection,
+      ],
+      examples: [...guide.examples, surfaceWaveExample, waveTankExample, circularWaveExample, waterReflectionExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfasındaki su dalgası, yüzey işareti ve ilerleyen tepeyle yan kesitte yeniden gösterildi. Fiziksel 158, basılı 156. sayfadaki düz çubuklu leğen üstten görünüm, yan kesit ve aydınlık/karanlık şeritlerle aynı ölçekte çizildi. Aynı sayfadaki dairesel dalga, üstten su yüzeyi, kâğıt, tepe ve çukur halkalarıyla yeniden çizildi. Fiziksel 159, basılı 157. sayfadaki düz engelde dik ve eğik yansıma, cepheler ve hız oklarıyla iki aşamada gösterildi. Modellerin sayısal değerleri özgün.`,
     };
   }
   if (guide?.id === "ses-deprem-dalgalari") {

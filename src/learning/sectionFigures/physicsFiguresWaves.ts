@@ -45,6 +45,8 @@ import { waveTankAt, waveTankSetupTitle, waveTankTime, waveTankTitle, waveTankWa
 
 import { circularMaxRadiusCm, circularWaveAt, circularWaveTime, circularWaveTitle } from "../mebiCircularWave";
 
+import { reflectedCrestsTitle, waterReflectionAngles, waterReflectionAt, waterReflectionTitle } from "../mebiWaterReflection";
+
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
  * Waves are sampled from y = A·sin(2π(x − x0)/λ); pulses from a smooth bump.
@@ -1084,6 +1086,51 @@ const yay: Record<string, FigureDef> = {
   },
 };
 
+const flatWaterReflectionFigure: FigureDef = {
+  caption: "İki aşamada tepe cephelerini ve hız oklarını izle. Hız kendi cephesini, normal engeli dik keser. Açıyı değiştirip i ve r’yi karşılaştır.",
+  alt: "Altta yatay düz engel, ortada dik normal. Gelen ve yansıyan üç tepe çizgisi ayrı aşamalarda gösteriliyor. Hız her aşamada kendi tepe çizgilerine dik.",
+  param: {
+    label: "Gelme açısı i",
+    min: waterReflectionAngles.min,
+    max: waterReflectionAngles.max,
+    step: waterReflectionAngles.step,
+    init: waterReflectionAngles.initial,
+    unit: "°",
+  },
+  steps: ["Gelen cepheler", "Yansıyan cepheler"],
+  draw: (i, step) => {
+    const state = waterReflectionAt(i);
+    const isIncoming = step === 0;
+    const o = v(0, 0);
+    const ray = isIncoming ? state.incident : state.reflected;
+    const direction = isIncoming ? -1 : 1;
+    const tip = v(4.8 * ray[0] * direction, 4.8 * ray[1] * direction);
+    const crests = isIncoming ? state.incomingCrests : state.outgoingCrests;
+    const tone = isIncoming ? "a" : "c";
+    return {
+      els: [
+        seg(v(-7.4, 0), v(7.4, 0), { tone: "ink", bold: true }),
+        ...Array.from({ length: 21 }, (_, k) =>
+          seg(v(-7.05 + k * 0.7, 0), v(-7.35 + k * 0.7, -0.32), { thin: true, tone: "muted" })),
+        seg(o, v(0, 7.1), { dash: true, tone: "muted" }),
+        txt(v(0, 7.1), "Normal", "n", { small: true }),
+        txt(v(-6.9, -0.9), "Düz engel", "e", { small: true }),
+        ...crests.map(({ from, to }) => seg(from, to, { tone: "b", bold: true })),
+        ...(isIncoming ? [vec(tip, o, { tone, bold: true })] : [vec(o, tip, { tone, bold: true })]),
+        ...(i > 0 ? [isIncoming
+          ? ang(o, v(0, 1), tip, "i", { tone, r: 44 })
+          : ang(o, tip, v(0, 1), "r", { tone, r: 44 })] : []),
+        txt(v(direction * 4.6, 7.2), isIncoming ? "Gelen cepheler" : "Yansıyan cepheler", "n", { tone, small: true }),
+      ],
+      readout: [
+        `i = r = ${i}°`,
+        `Engel ile hız oku arası ${90 - i}°. Engel ile tepe çizgisi arası ${i}°.`,
+        `Aynı derinlikte tepe arası ${state.crestSpacingCm} cm. Dalganın sürati ${state.speedCmS} cm/s.`,
+      ],
+    };
+  },
+};
+
 const su: Record<string, FigureDef> = {
   [circularWaveTitle]: {
     caption: "Aynı damlanın yüzeydeki halkalarını ve kâğıttaki çizgilerini zamanla karşılaştır. Oklar her yönde O’dan dışarı bakar.",
@@ -1293,29 +1340,11 @@ const su: Record<string, FigureDef> = {
       };
     },
   },
-  "Düz engelde yansımayı kur": {
-    caption:
-      "Gelme açısını değiştir: açılar engelin normalinden ölçülür ve r = i'dir. Işın ile engel arasındaki açı 90° − i'dir; onu i sanmak tümleyen hatasıdır.",
-    alt: "Yatay engel, ondan dik çıkan kesikli normal; normalle i açısı yapan gelen ışın ve aynı açıyla yansıyan ışın.",
-    param: { label: "i", min: 0, max: 75, step: 5, init: 35, unit: "°" },
-    draw: (i) => {
-      const o = v(0, 0);
-      const inP = add(o, pol(4, 90 + i));
-      const outP = add(o, pol(4, 90 - i));
-      return {
-        els: [
-          seg(v(-5, 0), v(5, 0), { tone: "ink", bold: true }),
-          ...Array.from({ length: 16 }, (_, k) => seg(v(-4.8 + k * 0.6, 0), v(-5.1 + k * 0.6, -0.3), { thin: true, tone: "muted" })),
-          seg(o, v(0, 4.4), { dash: true, tone: "muted" }),
-          txt(v(0, 4.4), "normal", "n", { small: true, tone: "muted" }),
-          vec(inP, o, { tone: "a", bold: true }),
-          vec(o, outP, { tone: "c", bold: true }),
-          ...(i > 0 ? [ang(o, v(0, 1), inP, "i", { tone: "a", r: 44 }), ang(o, outP, v(0, 1), "r", { tone: "c", r: 64 })] : []),
-          ...(i > 0 && i < 75 ? [ang(o, v(-1, 0), inP, "", { tone: "warn", r: 26 })] : []),
-        ],
-        readout: [`i = r = ${i}°`, `Engel ile ışın arası (turuncu yay) = 90° − ${i}° = ${90 - i}°`],
-      };
-    },
+  [waterReflectionTitle]: flatWaterReflectionFigure,
+  [reflectedCrestsTitle]: {
+    caption: "Yansıyan hız oku kendi tepe çizgisini dik keser.",
+    alt: "Üç yansıyan tepe çizgisi aynı aralıkta. Hız oku yüzey normalinden 35 derece açılır.",
+    draw: () => flatWaterReflectionFigure.draw(waterReflectionAngles.initial, 1),
   },
   "Dairesel ve eğri engelleri karşılaştır": {
     caption:

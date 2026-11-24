@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.131.0 · Düz engelde su dalgalarının yansıması
+
+Yayın adayı. İki aşamada gelen ve yansıyan tepeleri izle. Gelme açısını değiştirerek hızın cepheye ve normalin engele dik olduğunu kontrol et. Kopya Kağıdı, açıyı ve tepe aralığını ayrı şekillerde açıklar.
+
 # ÖSYM Mania 0.130.0 · Dairesel su dalgaları
 
 Yayın adayı. Zamanı değiştir ve noktasal kaynaktan yayılan halkaları izle. Üstten görünüşte hız okları yönü gösteriyor. Kopya Kağıdı’nda aynı tür iki halkadan dalga boyunu, aradaki halkadan çukurun yerini bul.
