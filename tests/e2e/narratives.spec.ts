@@ -373,7 +373,10 @@ test("numeric discoveries handle zero, chain count, pH ratio, BCE and signed vel
     "8 − 3 = 5 glikozit bağı",
   );
   await open(page, "su-asit-baz-tuz");
-  await page.getByRole("slider", { name: "pH", exact: true }).fill("5");
+  await page
+    .locator(".concept-model")
+    .getByRole("slider", { name: "pH", exact: true })
+    .fill("5");
   await expect(page.locator(".model-result")).toContainText("Asidik");
   await expect(page.locator(".concept-model")).toContainText(
     "10’un 2. kuvveti",

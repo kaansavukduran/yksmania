@@ -1,3 +1,9 @@
+# Figürsüz ders kalmadı · 0.142.0 adayı
+
+Forge062: TYT Matematik'in 12 kaynak dersine 57 bölüm figürü; artık rehberli 510 dersin 510'u figürlü (2.241 figür). Forge063: TYT Geometri 004, 009, 013 ve 019 kopya kâğıtları 15 etkileşimli figür ve 4 taktik olarak aktarıldı (kopya 113 / 517).
+
+tsc, check, 397 dosyada 5.513 birim testi, derleme, figür ve yerleşim kapıları (16/16), anlatım ve ÖSYM marka akışları geçti. Yalnız web ve masaüstü Chromium; yerel paket ve fiziksel cihaz denenmedi.
+
 # Sesin ortamda yayılması · 0.141.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 163, basılı 161. Aynı boyuna dalgada ses kaynağı, tanecik doğrultusu ve yayılma oku ayrı. Fanus hava dolu, hava azaltılmış ve ideal boşluk durumlarında saatin titreşimini gösteriyor. Hava, demir, su ve deniz suyu verileri sıcaklık, ortam ve tuzluluk gruplarıyla tabloya alındı.

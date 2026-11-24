@@ -1,8 +1,8 @@
 {
-  "version": "0.141.0",
+  "version": "0.142.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Fanustaki havayı değiştir ve çalar saatin ses yolunu izle. Ses süratini sıcaklık, ortam ve tuzluluk tablolarıyla karşılaştır.",
-    "en": "Compare how sound travels from a clock inside a bell jar. Read speed data by temperature, medium, and salinity in accessible tables."
+    "tr": "Anlatımlı her derste artık bölüm figürü var: TYT Matematik'in son 12 dersi asal, faktöriyel, EBOB-EKOK, denklem, eşitsizlik, üslü sayı ve sayma figürleri aldı. TYT Geometri'de dik üçgen, üçgende merkezler, alan ve dikdörtgen kopya kâğıtları sürgülü figürlerle ve taktiklerle açılıyor.",
+    "en": "Every guided lesson now has section figures, including the last 12 TYT Mathematics lessons. Four TYT Geometry cheat sheets open as interactive figures with tactics."
   }
 }

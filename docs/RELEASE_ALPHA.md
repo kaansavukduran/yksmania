@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.142.0 · Her derste figür
+
+Yayın adayı (24 Kasım 2026). Anlatımlı her ders artık bölüm figürüyle açılıyor; TYT Matematik'te sayılar, denklemler ve sayma figürleri, TYT Geometri'de dik üçgen, merkezler, alan ve dikdörtgen için sürgülü figürler ve taktikler eklendi.
+
 # ÖSYM Mania 0.141.0 · Fanusta ses ve ortam
 
 Yayın adayı. Taneciğin titreşim yönünü ve sıkışmanın ilerleyişini ayrı izle. Fanustaki hava azalırken çalar saat çalışmaya devam eder. Kopya Kağıdı üç gözlem durumunu ve sıcaklık, ortam, tuzluluk tablolarını çevrimdışı açıyor.
