@@ -54,15 +54,19 @@ const routes = [
   { route: "/world", key: "world", Icon: Compass },
   { route: "/settings", key: "settings", Icon: Settings2 },
 ];
-function WebUpdates({
+const workerRegistrationRetryDelays = [400, 1200];
+
+function WorkerRegistration({
   onReady,
+  onError,
 }: {
   onReady: (ready: boolean, apply?: () => void) => void;
+  onError: () => void;
 }) {
   const {
     needRefresh: [ready],
     updateServiceWorker,
-  } = useRegisterSW();
+  } = useRegisterSW({ onRegisterError: onError });
   // The development PWA hook can return a fresh updater each render. Keep
   // its latest implementation without turning an App state notification into
   // an effect/setApply/render loop. Production still invokes the latest worker.
@@ -77,6 +81,35 @@ function WebUpdates({
   );
   return null;
 }
+
+function WebUpdates({ onReady }: {
+  onReady: (ready: boolean, apply?: () => void) => void;
+}) {
+  const [attempt, setAttempt] = useState(0);
+  const [failedAttempt, setFailedAttempt] = useState(-1);
+
+  useEffect(() => {
+    const delay = workerRegistrationRetryDelays[attempt];
+    if (failedAttempt !== attempt || delay === undefined) return;
+    let timer: number | undefined;
+    const retry = () => {
+      timer = window.setTimeout(() => setAttempt(attempt + 1), delay);
+    };
+    if (navigator.onLine) retry();
+    else window.addEventListener("online", retry, { once: true });
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener("online", retry);
+    };
+  }, [attempt, failedAttempt]);
+
+  return <WorkerRegistration
+    key={attempt}
+    onReady={onReady}
+    onError={() => setFailedAttempt((previous) => Math.max(previous, attempt))}
+  />;
+}
+
 export default function App() {
   const { state, t, commit, status, retry, toast } = useApp();
   const { confirm, confirmationDialog } = useConfirmationDialog();
