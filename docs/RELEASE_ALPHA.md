@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.179.0 · Paralel ışık altında küre
+
+Yayın adayı. Yandan ve 30° yukarıdan aynı küreye bak. Görünen diskin aydınlık payını iki çizimle karşılaştır.
+
 # ÖSYM Mania 0.178.0 · Üç gözlemci ve ışık diski
 
 Yayın adayı. Kök, teğet ipucu, üç çözüm diski ve sonuç tablosu ayrı açılıyor.
@@ -145,6 +149,11 @@ Yayın adayı. İki özdeş şişeden birine su ekle. Vurma ve üflemede titreş
 # ÖSYM Mania 0.142.0 · Genlik ve frekans
 
 Yayın adayı. İki fotoğrafı ve aynı süreye çizilmiş örnek dalgaları aç. Genlikleri eşitleyip kaç tam salınım olduğunu say. Kopya Kağıdı bu sayılardan frekansı hesaplıyor.
+
+# ÖSYM Mania 0.143.0 · Sekiz kopya kâğıdı daha
+
+Yayın adayı (24 Kasım 2026). TYT Türkçe'de isimler, sıfatlar, zamirler ve fiilde çatı; TYT Matematik'te ardışık sayılar, asal sayılar, yaş ve kâr-zarar kâğıtları tıklanabilir figürlerle açılıyor. Figür renkleri her temada ayrışıyor ve adım düğmelerinde klavye odağı korunuyor.
+
 
 # ÖSYM Mania 0.142.0 · Her derste figür
 

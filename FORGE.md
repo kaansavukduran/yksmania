@@ -1,3 +1,9 @@
+# Paralel ışık ve aydınlık yüz · 0.179.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 175, basılı 173. Paralel ışınlar ve aydınlık üst yarımküre sabit. Gözlem açısı hareket ettikçe görünen disk aynı geometriyle güncelleniyor. 0.143 ana dalındaki TYT Türkçe kopya kâğıtları, altı tema ve adım odağı değişiklikleri aynı kaynak geçmişinde korundu.
+
+TypeScript, 6.673 soru, 333 dosyalı çevrimdışı derleme, yedi dosyada 25 birim ve sekiz Chromium akışı geçti. 320 px ekranda yandan %50, 30° yukarıda %75 aydınlık disk açıldı ve öğrenme kaydı aynı kaldı. İki altı temalı denetim 320 ve 1280 px’te renk anahtarlarını, kontrastı ve adım odağını yeniden sınadı. Sıradaki fiziksel 176, basılı 174. Düz sınırda ışının ve su cephesinin dik ve eğik yansıması.
+
 # Üç gözlemci ve ışık diski · 0.178.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 174, basılı 172. K, L ve M’nin konumları kökte. L’nin iki teğeti ipucunda. Işık kaynağının üç görünümü aynı açısal hesaptan ayrı çözüm çizimine ve tabloya bağlandı.
@@ -225,6 +231,13 @@ Check, 325 dosyalı çevrimdışı derleme, 2.206 birim ve altı Chromium akış
 MEBİ TYT Fizik Konu Özetleri fiziksel 164, basılı 162. Aslan ve kanarya fotoğrafları iki örnek ses kaynağını tanıtıyor. Temsilî grafikler aynı 10 ms içinde bir ve üç salınım gösteriyor. Genlikleri eşitleme, salınım sayısını değiştirmiyor. Kopya Kağıdı genlikleri eşit olan iki çizimi hesabın kendi adımlarında açıyor.
 
 İlk 320 px ve büyük yazı görüntüsünde iki fotoğrafın düğme ve kaynak metinleri çok uzundu. Tür adı ve büyütme simgesi, kısa kaynak ve lisans bağlantılarıyla birlikte kullanılıyor. Klavyeden açma, Escape, odak dönüşü ve çevrimdışı yükleme doğrulandı. Altı Chromium akışı ve 325 dosyalı derleme geçti. Sıradaki iş aynı sayfadaki boş ve su eklenen özdeş şişeler. [Aslan fotoğrafı, Kevin Pluck, CC BY 2.0](https://commons.wikimedia.org/w/index.php?oldid=1196427540&title=File%3ALion_waiting_in_Namibia_%28cropped%29.jpg) · [Kanarya fotoğrafı, L. E. MacDonald, CC BY-SA 2.0](https://commons.wikimedia.org/w/index.php?oldid=1208751877&title=File%3ADomestic_Canary_-_Serinus_canaria.jpg)
+
+# Sekiz kopya kâğıdı ve figür erişilebilirliği · 0.143.0 adayı
+
+Forge064: TYT Matematik 003, 004, 019, 021 kopya kâğıtları 16 figür ve 4 taktik. Forge065: TYT Türkçe 003, 004, 005, 009 kopya kâğıtları 16 figür ve 4 taktik (kopya 121 / 517). Forge064 denetimi: 72 yeni figür altı temada, 320 / 1280 px'te axe, kontrast ve klavyeyle tarandı; axolotl/trans renk anahtarları, seçim etiketi kontrastı, uç adımda odak kaybı ve seçili öğe odak halkası düzeltildi, kalıcı e2e kapısı eklendi.
+
+tsc, check, 399 dosyada 5.560 birim testi, derleme ve figür kapısı (12/12) geçti. Yalnız web ve masaüstü Chromium; yerel paket ve fiziksel cihaz denenmedi.
+
 
 # Figürsüz ders kalmadı · 0.142.0 adayı
 
@@ -1041,10 +1054,10 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | Ders | Hazır konu / toplam | Bölüm figürleri (konu · figür) | Kademeli çözüm paneli | Kısmi kopya kâğıdı aktarımı | 99_ÖSYM | Figürsüz konu |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
-| TYT Türkçe | 33 / 33 | 33 · 128 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 0 |
+| TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
 | TYT Matematik | 45 / 45 | 45 · 184 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
 | TYT Geometri | 19 / 19 | 19 · 176 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 393 | 323 / 323 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 396 | 323 / 323 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 139 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 0 |
 | TYT Tarih | 24 / 24 | 24 · 76 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 0 |
@@ -1057,19 +1070,19 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2369** | **6.673 / 6.673 · %100,00** | **117 / 517 · %22,63** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2388** | **6.673 / 6.673 · %100,00** | **121 / 517 · %23,40** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
-| Tarihsel dal kaydı: okunan veya eşlenen PDF / eski envanter | 127 / 8.981 |
+| Tarihsel dal kaydı: okunan veya eşlenen PDF / eski envanter | 131 / 8.981 |
 | Tarihsel 99_ÖSYM kaydı: uygulama karşılığı olan / 20 Kasım envanteri | 18 / 1.001 |
-| 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 84 |
+| 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 86 |
 | Kademeli çözüm paneli bulunan soru | 6.673 / 6.673 · %100,00 |
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
 | Ara hatırlama (mikro ritim): ders · soru | 505 / 510 · %99,02 · 3.052 soru |
 | Gösterim onarımı: soru alanı · ders paragrafı | 962 · 1.634 |
-| Kopya kâğıdı (kısmi aktarım / toplam) | 117 / 517 · %22,63 |
+| Kopya kâğıdı (kısmi aktarım / toplam) | 121 / 517 · %23,40 |
 | Resmî ana başlık · anlatımlı konu · hazır anlatım | 341 · 510 · 510 |
 | İleri ve kaynak soru seti (anlatımı ana konusunda) | 36 |
 <!-- ilerleme:bitir -->

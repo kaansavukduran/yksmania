@@ -1,8 +1,8 @@
 {
-  "version": "0.178.0",
+  "version": "0.179.0",
   "channel": "alpha",
   "notes": {
-    "tr": "K, L ve M’nin ışık kaynağına üç ayrı bakışını karşılaştır. Soruyu verilen şekille çöz, ipucunda iki teğeti izle ve çözümde örtülen diskleri kontrol et.",
-    "en": "Compare what three observers see of a light source. Read the given drawing, use the tangent-ray hint, and check the visible disks in the worked solution."
+    "tr": "Üstten paralel ışık alan küreye yandan ve yukarıdan bak. Aynı aydınlık yüzün gözlemciye görünen payını ders ve Kopya Kağıdı çizimlerinde karşılaştır.",
+    "en": "View a sphere under parallel light from the side and from above. Compare the visible lit fraction in the lesson and study sheet."
   }
 }
