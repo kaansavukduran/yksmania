@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.94.0 · Kapı ve dar boruda basınç
+
+Yayın adayı. Kapının iki yanındaki basıncı değiştir ve kuvvet yönünü oku. Musluğu açıp depo sıvısının boru girişine ulaştığı sınırı incele. Kopya Kağıdı’nda 4 kPa örneğini çöz.
+
 # ÖSYM Mania 0.93.0 · U borusunda hava basıncı farkı
 
 Yayın adayı. Hava hızını değiştir, iki kolun basıncını ve su seviyesini karşılaştır. Ayrı Kopya Kağıdı debi, basınç farkı ve su yüksekliği hesabını aynı örnekte gösterir.

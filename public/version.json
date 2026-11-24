@@ -1,8 +1,8 @@
 {
-  "version": "0.93.0",
+  "version": "0.94.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Hava hızı değiştiğinde U borusundaki M ve L su seviyelerini karşılaştır. Kopya Kağıdı’nda durgun ve akan hava tablosu ve 1,8 cm çözümü var.",
-    "en": "Compare the water levels in an air-flow U-tube at different speeds. Includes a still-versus-flowing table and a 1.8 cm worked example."
+    "tr": "Kapının iki yanındaki basıncı karşılaştır. Dar boruda musluğu açıp yükselme eşiğini dene. Ayrı Kopya Kağıdı koşul tablosunu ve çizimli bir çözümü açar.",
+    "en": "Compare pressure on both sides of a door and open the valve to explore the intake threshold. The cheat sheet adds a conditions table and a worked diagram."
   }
 }
