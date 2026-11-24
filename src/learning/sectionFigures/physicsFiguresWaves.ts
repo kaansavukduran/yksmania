@@ -53,6 +53,7 @@ import { sourceDistanceCm, virtualWaterAt, virtualWaterReflectionTitle, virtualW
 
 import { convexFocusCm, convexWater, convexWaterReflectedTitle, convexWaterTitle, surfaceNormalTitle } from "../mebiConvexWater";
 
+import { strobeDiskRate, strobeSchoolCases, strobeSnapshot, strobeWavelengthCm, stroboscopeTitle } from "../mebiStroboscope";
 import { interfaceDepth, joinCm, tankLengthCm, twoTankDepthTitle, waterDepthAt, waterDepthTimes, waterDepthTitle } from "../mebiWaterDepth";
 
 /*
@@ -1646,21 +1647,50 @@ const su: Record<string, FigureDef> = {
       return { els, readout: [`a/λ = ${fmt(a)}: yayılma ${a <= 1 ? "çok belirgin" : a <= 2 ? "belirgin" : "zayıf"}`] };
     },
   },
-  "Stroboskop görüntüsü gerçek durma değildir": {
-    caption:
-      "Yarık sayısını değiştir: disk saniyede 3 tur dönerken saniyede n·3 bakış sağlar. Dalga frekansı bu bakış sayısına eşitse her bakışta cepheler aynı yerde görünür ve dalga duruyormuş gibi algılanır.",
-    alt: "Dairesel disk ve kenarında eşit aralıklı yarık işaretleri; yanında yarık sayısı ile frekans çarpımı.",
-    param: { label: "n", min: 2, max: 12, step: 1, init: 6, unit: " yarık" },
-    draw: (n) => ({
-      els: [
-        circle(v(0, 0), 2.5, { tone: "ink", fill: "muted" }),
-        pt(v(0, 0), "", "n", "ink"),
-        ...Array.from({ length: n }, (_, k) => seg(pol(1.9, (360 * k) / n), pol(2.5, (360 * k) / n), { tone: "a", bold: true })),
-        txt(v(3.2, 0.6), "fdisk = 3 tur/s", "e", { small: true }),
-        txt(v(3.2, -0.6), `f = ${n} · 3 = ${3 * n} Hz`, "e", { small: true, bold: true, tone: "a" }),
-      ],
-      readout: [`Duran görüntü için en basit eşleşme: f = ${3 * n} Hz`],
-    }),
+  [stroboscopeTitle]: {
+    caption: "Yarıkları say. İki bakış anında tepe çizgilerinin konumunu karşılaştır. Disk süratini değiştir.",
+    alt: "Solda 8 veya 4 eş aralıklı radyal yarık. Sağda ilk iki bakıştaki paralel tepe çizgileri. Tam sayıda periyot geçince iki görüntü örtüşür.",
+    param: {
+      label: "Diskin tur sayısı",
+      min: strobeDiskRate.min, max: strobeDiskRate.max,
+      step: strobeDiskRate.step, init: strobeDiskRate.initial, unit: " tur/s",
+    },
+    steps: strobeSchoolCases.map(({ label }) => label),
+    draw: (rate, step) => {
+      const { slots } = strobeSchoolCases[step] ?? strobeSchoolCases[0];
+      const state = strobeSnapshot(slots, rate);
+      const center = v(2.6, 3.6);
+      const waveStart = 7;
+      const waveWidth = 13;
+      const wavelength = strobeWavelengthCm;
+      const look = (height: number, phase: number, label: string): El[] => [
+        poly([v(waveStart, height), v(waveStart + waveWidth, height), v(waveStart + waveWidth, height - 1.8), v(waveStart, height - 1.8)], { tone: "muted", thin: true }),
+        ...Array.from({ length: 5 }, (_, index) => waveStart + wavelength * (index + phase))
+          .filter((x) => x <= waveStart + waveWidth)
+          .map((x) => seg(v(x, height), v(x, height - 1.8), { tone: "b", bold: true })),
+        txt(v(waveStart, height + 0.38), label, "ne", { small: true }),
+      ];
+      return {
+        els: [
+          circle(center, 2.1, { tone: "ink", bold: true }),
+          ...state.shutters.map(([dx, dy]) => seg(
+            add(center, v(dx * 0.35, dy * 0.35)),
+            add(center, v(dx * 2.0, dy * 2.0)),
+            { tone: "c", bold: true }
+          )),
+          circle(center, 0.14, { tone: "ink" }),
+          txt(v(center[0], 0.75), `${slots} yarık`, "s", { small: true }),
+          ...look(6.1, 0, "İlk bakış"),
+          ...look(2.4, state.relativePhase, "İkinci bakış"),
+          ...span(v(waveStart + 2 * wavelength, 4), v(waveStart + 3 * wavelength, 4), `${wavelength} cm`, -1, "a"),
+        ],
+        readout: [
+          `${slots} × ${rate} = ${state.viewsPerSecond} bakış/s. Bakış aralığı 1/${state.viewsPerSecond} s.`,
+          `İki bakış arasında ${fmt(state.rawAdvanceCycles, 3)} periyot geçer.`,
+          state.relativePhase === 0 ? "Tepeler aynı yerlerde görünür." : "İkinci bakışta tepeler farklı yerlerde görünür.",
+        ],
+      };
+    },
   },
 };
 

@@ -1,3 +1,9 @@
+# Stroboskopta iki ardışık bakış · 0.138.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 162, basılı 160. Dört ve sekiz yarıklı disk, iki ardışık bakışta aynı dalgayı gösteriyor. Her bakışta bir periyot ilerlerse 8 × 2 ve 4 × 4 eşleşmelerinin ikisinde de saniyede 16 bakış var. İki periyot ilerlediğinde de tepeler aynı yerde görünebilir. Kopya Kağıdı iki hesap adımını kendi çizimiyle açıyor.
+
+Check, 323 dosyalı çevrimdışı derleme, 3 odaklı birim ve dört Chromium akışı geçti. 320 px büyük yazıda çizimdeki yarıklar, bakışlar ve 3 cm ölçüsü incelendi. Öğrenme kaydı değişmedi. Sıradaki madde aynı fiziksel sayfanın eğimli taban bölümü. 0.137 dalının tam CI’ı sürüyor. [0.137 CI](https://github.com/kaansavukduran/yksmania/actions/runs/45369055762)
+
 # Su derinliği ve tepe aralığı · 0.137.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 161, basılı 159. İki leğenin yan kesiti ve kâğıt şeritleri aynı yatay ölçekte. Ortak sınır çiziminde dalga sığdan derine ve derinden sığa geçebiliyor. Ayrı Kopya Kağıdı 4 Hz, 0,25 s, 1,5 cm ve 3 cm değerlerini aynı çizimle açıklıyor.

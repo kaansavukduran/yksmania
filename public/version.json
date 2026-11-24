@@ -1,8 +1,8 @@
 {
-  "version": "0.137.0",
+  "version": "0.138.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Sığ ve derin su düzeneklerini yan kesitte ve üstten karşılaştır. Tek kaynakla dalga boyunun değiştiğini, frekansın aynı kaldığını izle.",
-    "en": "Compare shallow and deep tanks from above and in section. See how one source produces a fixed frequency and two wavelengths."
+    "tr": "Dört ve sekiz yarıklı stroboskopta disk hızını değiştir. İki bakışın tepe konumlarından dalganın ölçülebilen aralığını karşılaştır.",
+    "en": "Change the speed of four-slot and eight-slot stroboscopes. Compare two snapshots to see when the same moving wave crests appear aligned."
   }
 }

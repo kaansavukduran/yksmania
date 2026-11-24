@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.138.0 · Stroboskopla tepe aralığı
+
+Yayın adayı. Disk yarıklarını ve saniyedeki tur sayısını değiştir. İki bakışta tepelerin konumlarını karşılaştır. Kopya Kağıdı 8 × 2 ve 4 × 4 durumlarında bakış aralığını adım adım hesaplıyor.
+
 # ÖSYM Mania 0.137.0 · Su derinliği ve tepe aralığı
 
 Yayın adayı. İki leğenin yan kesitini ve kâğıt şeritlerini aynı ölçekte incele. Ortak sınırda iki geçiş yönünü seç ve kaynağın frekansı aynı kalırken tepe aralığının nasıl değiştiğini gör. Kopya Kağıdı periyodu ve iki dalga boyunu kendi çiziminde hesaplıyor.
