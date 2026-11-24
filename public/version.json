@@ -1,8 +1,8 @@
 {
-  "version": "0.112.0",
+  "version": "0.113.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Gerçek termal kamera ekranını büyüt ve renk ölçeğini oku. Kopya Kağıdı’nda ekranın Fahrenheit değerini Celsius’a çeviren örneği aç.",
-    "en": "Zoom in on an actual thermal camera display and read its color scale. In the worked example, convert the display’s Fahrenheit reading to Celsius."
+    "tr": "Mikrodalga fırın kesitinde dalganın kaynağını, yansımayı ve yiyecekte soğurulmayı izle. Kopya Kağıdı’nda 2,45 GHz örneğinin dalga boyunu hesapla.",
+    "en": "Follow wave production, reflection, and absorption in a microwave oven cutaway. Work out the wavelength of a 2.45 GHz example in the reference sheet."
   }
 }

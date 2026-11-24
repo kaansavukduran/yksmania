@@ -24,6 +24,7 @@ import { tuningForkSnapshot, tuningForkTitle } from "../mebiTuningFork";
 import { pulseMarkerM, pulseSpeedMps, pulseSupportM, pulseWidthM, springPulseAt, springPulseTitle } from "../mebiSpringPulse";
 import { surfaceAmplitudeM, surfaceCrestX, surfaceMarkerM, surfaceWavePosition, surfaceWaveTitle } from "../mebiSurfaceWave";
 import { radioFrequencyMHz, radioWavefrontPoints, radioWavefrontRadii, radioWavelengthMeters, radioWaveTitle } from "../mebiRadioWaves";
+import { microwaveOvenEnergyPath, microwaveOvenStages, microwaveOvenTitle, microwaveOvenWavelengthLabel } from "../mebiMicrowaveOven";
 
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
@@ -390,6 +391,35 @@ const giris: Record<string, FigureDef> = {
           ...span(v(wavelength, -10.6), v(2 * wavelength, -10.6), `${fmt(wavelength, 2)} m`, 1, "a"),
         ],
         readout: [`${fmt(frequency)} MHz. Boşlukta komşu iki cephe arası ${fmt(wavelength, 2)} m.`],
+      };
+    },
+  },
+  [microwaveOvenTitle]: {
+    caption: "Adımları aç ve enerjiyi kaynaktan yiyeceğe kadar izle. Kesit ve oklar şematiktir.",
+    alt: "Fırın kesitinde sağda kaynak, üstte metal iç duvar ve altta yiyecek var. Oklar önce kaynak girişini, sonra üst duvardan yansımayı ve sonunda yiyeceğe ulaşmayı gösteriyor.",
+    steps: microwaveOvenStages.map(({ label }) => label),
+    draw: (_value, step) => {
+      const path = microwaveOvenEnergyPath;
+      const entry = v(path.entry.x, path.entry.y);
+      const reflection = v(path.reflection.x, path.reflection.y);
+      const food = v(path.food.x, path.food.y);
+      const ceilingLeft = v(1, path.reflection.y);
+      const ceilingRight = v(path.entry.x, path.reflection.y);
+      return {
+        els: [
+          poly([v(0, 0), v(12.6, 0), v(12.6, 6.4), v(0, 6.4)], { tone: "ink", bold: true }),
+          poly([ceilingLeft, v(1, 0.75), v(path.entry.x, 0.75), entry, ceilingRight], { open: true, tone: "muted" }),
+          seg(ceilingLeft, ceilingRight, { tone: step === 1 ? "a" : "muted", bold: true }),
+          txt(v(6, 5.55), "Metal duvar", "n", { small: true, bold: step === 1 }),
+          poly([v(10, 2.8), v(11.9, 2.8), v(11.9, 4), v(10, 4)], { tone: "b", fill: "b" }),
+          txt(v(10.95, 4.27), "Kaynak", "n", { small: true, bold: step === 0 }),
+          poly([v(2.4, 1.3), v(4.4, 1.3), v(4.15, 2.15), v(2.65, 2.15)], { tone: "c", fill: "c" }),
+          txt(v(3.4, -0.2), "Yiyecek", "s", { small: true, bold: step === 2 }),
+          vec(v(10, 3.4), entry, { tone: "b", bold: true }),
+          ...(step >= 1 ? [vec(entry, reflection, { tone: "a", bold: true })] : []),
+          ...(step >= 2 ? [vec(reflection, food, { tone: "c", bold: true })] : []),
+        ],
+        readout: [microwaveOvenStages[step].detail, `2,45 GHz için boşlukta bir dalga boyu yaklaşık ${microwaveOvenWavelengthLabel}.`],
       };
     },
   },

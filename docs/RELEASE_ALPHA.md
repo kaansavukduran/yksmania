@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.113.0 · Mikrodalga fırın kesiti
+
+Yayın adayı. Üç adımda dalgayı kaynaktan metal duvara, oradan yiyeceğe kadar izle. Kopya Kağıdı’nda 2,45 GHz için boşluktaki dalga boyunu santimetreyle hesapla.
+
 # ÖSYM Mania 0.112.0 · Termal kamera ekranı
 
 Yayın adayı. Gerçek bir termal kamera ekranında renk ölçeğini, merkez işaretini ve birimi bul. Kopya Kağıdı’nda merkezdeki ekran değerini °C’ye çevir. Fotoğraf çevrimdışı ve yakınlaştırılabilir. [Fotoğraf ve CC0 lisansı](https://commons.wikimedia.org/w/index.php?title=File:Thermal-image.jpg&oldid=1278846404)
