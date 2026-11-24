@@ -79,7 +79,7 @@ describe("031 source-bound optional video recommendations", () => {
             "tyt-mat-uslu-sayilar-kaynak-039",
           ].includes(id),
       ),
-    ).toHaveLength(485);
+    ).toHaveLength(492);
     expect(foundationIds.every((id) => seen.has(id))).toBe(true);
     expect(seen.has("tyt-mat-ebob-ekok-kaynak-034")).toBe(true);
     expect(seen.has("tyt-mat-rasyonel-kaynak-035")).toBe(true);
@@ -174,4 +174,36 @@ describe("031 source-bound optional video recommendations", () => {
       vi.unstubAllGlobals();
     }
   });
+});
+
+it("maps all fourteen recovered source topics to their matching lesson and keeps their link roles", () => {
+  const expected = [
+    ["Permütasyon", "tyt-mat-permutasyon-kaynak-032", 2, 6],
+    ["Tekrarlı Permütasyon", "tyt-mat-tekrarli-permutasyon-kaynak-033", 1, 4],
+    ["Kombinasyon", "tyt-mat-kombinasyon-kaynak-034", 2, 6],
+    ["Binom açılımı", "tyt-mat-binom-kaynak-035", 1, 7],
+    ["Olasılık", "tyt-mat-olasilik-kaynak-036", 4, 7],
+    ["İkizkenar Üçgen", "tyt-geo-ucgende-acilar-031", 1, 5],
+    ["Eşkenar Üçgen", "tyt-geo-ucgende-acilar-031", 1, 4],
+    ["Üçgende Alan", "alan-donusumleri", 1, 5],
+    ["Çemberde Açılar", "tyt-geo-cember-aci-040", 1, 2],
+    ["Çemberde Uzunluk", "tyt-geo-cember-aci-040", 1, 4],
+    ["Dairede Alan", "tyt-geo-daire-040", 1, 4],
+    ["Silindir", "tyt-geo-silindir-koni-kure-040", 2, 3],
+    ["Koni", "tyt-geo-silindir-koni-kure-040", 2, 3],
+    ["Küre", "tyt-geo-silindir-koni-kure-040", 2, 2],
+  ] as const;
+  expect(videoCatalog031).toHaveLength(514);
+  for (const [topic, lessonId, recommended, alternatives] of expected) {
+    const group = videoCatalog031.filter((entry) => entry.topic === topic);
+    expect(group, topic).toHaveLength(1);
+    expect(group[0].lessonIds).toEqual([lessonId]);
+    expect(group[0].recommended).toHaveLength(recommended);
+    expect(group[0].alternatives).toHaveLength(alternatives);
+    const shown = getLessonVideos031(lessonId);
+    const shownForTopic = [...shown.recommended, ...shown.alternatives]
+      .filter((entry) => entry.topics.includes(topic));
+    const unique = new Set([...group[0].recommended, ...group[0].alternatives].map((entry) => videoIdentity031(entry.url)));
+    expect(new Set(shownForTopic.map((entry) => videoIdentity031(entry.url)))).toEqual(unique);
+  }
 });
