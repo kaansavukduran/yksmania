@@ -175,7 +175,8 @@ export const triangleAngles042: Supplement = {
       strategy: "B açısının yarısını al. C açısının aynı kaldığını gör ve BDC üçgenini tamamla.",
       steps: [
         { label: "B açısının yarısı", expression: "64° ÷ 2 = 32°", explanation: "D, açıortay üzerinde olduğu için ∠DBC=32°." },
-        { label: "Küçük üçgenin üçüncü açısı", expression: "180°−48°−32°=100°", explanation: "D, A ile C arasında ve ∠BCD=48°." },
+        { label: "C açısını küçük üçgene taşı", expression: "∠BCD=48°", explanation: "D, A ile C arasında olduğu için CD ve CA aynı yöndedir." },
+        { label: "Küçük üçgenin üçüncü açısı", expression: "180°−48°−32°=100°", explanation: "BDC üçgeninde B ve C açıları belli, D açısı toplamı 180°ye tamamlar." },
       ],
       answer: "100°.",
       check: "32°+48°+100°=180°.",
