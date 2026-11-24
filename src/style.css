@@ -1324,13 +1324,13 @@ small,
   margin-bottom: 2rem;
   color: var(--muted);
 }
-.lesson-article > section {
+:is(.lesson-article, .guided-reader) > section {
   margin-bottom: 2rem;
 }
-.lesson-article > section h2 {
+:is(.lesson-article, .guided-reader) > section h2 {
   font-size: 1.25em;
 }
-.lesson-article > section p {
+:is(.lesson-article, .guided-reader) > section p {
   line-height: 1.95;
   color: var(--muted);
 }

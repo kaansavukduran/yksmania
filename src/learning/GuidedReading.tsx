@@ -5,7 +5,7 @@ import { geometryCircle040Ids } from "./geometryCircle040";
 import { lazy, Suspense, useId, useMemo, useRef, useState, useEffect, type ReactNode } from "react";
 import { useExploration } from "./useExploration";
 import "./guidedJourney.css";
-import { ArrowRight, RotateCcw } from "lucide-react";
+import { ArrowLeft, ArrowRight, RotateCcw } from "lucide-react";
 import { VisualLab } from "./VisualLab";
 import { sectionFigureGuideIds } from "./sectionFigures/figureGuideIds";
 import { placesIn } from "./geo/gazetteer";
@@ -280,7 +280,7 @@ export function GuidedReading({
         : "Bakmadan hatırla";
 
   return (
-    <>
+    <div className="guided-reader">
       <div
         className="learning-journey"
         role="group"
@@ -302,17 +302,38 @@ export function GuidedReading({
           değildir.
         </p>
       </div>
-      <div
-        className="guide-progress"
-        role="progressbar"
-        aria-label="Anlatımda konum"
-        aria-valuemin={1}
-        aria-valuemax={stages}
-        aria-valuenow={current + 1}
-        aria-valuetext={`Sayfa ${current + 1} / ${stages}`}
-      >
-        <span style={{ width: `${((current + 1) / stages) * 100}%` }} />
-      </div>
+      <nav className="journey-actions journey-sticky" aria-label="Anlatım sayfaları">
+        <div
+          className="guide-progress"
+          role="progressbar"
+          aria-label="Anlatımda konum"
+          aria-valuemin={1}
+          aria-valuemax={stages}
+          aria-valuenow={current + 1}
+          aria-valuetext={`Sayfa ${current + 1} / ${stages}`}
+        >
+          <span style={{ width: `${((current + 1) / stages) * 100}%` }} />
+        </div>
+        <button
+          className="secondary"
+          aria-label="Önceki sayfa"
+          disabled={current === 0}
+          onClick={() => goTo(current - 1)}
+        >
+          <ArrowLeft size={17} aria-hidden="true" />
+          <span className="journey-action-label">Önceki sayfa</span>
+        </button>
+        <span className="small muted">{current + 1} / {stages}</span>
+        <button
+          className="primary"
+          aria-label="Sonraki sayfa"
+          disabled={current === stages - 1}
+          onClick={() => goTo(current + 1)}
+        >
+          <span className="journey-action-label">Sonraki sayfa</span>
+          <ArrowRight size={17} aria-hidden="true" />
+        </button>
+      </nav>
       <nav className="guide-contents" aria-label="Anlatım içeriği">
         <p className="small muted">
           Yaklaşık {guide.minutes} dk · Anlatım, etkileşim ve örneklerle çalışma
@@ -418,26 +439,7 @@ export function GuidedReading({
           {recallSupplement}
         </section>
       )}
-      <nav className="journey-actions journey-sticky" aria-label="Anlatım sayfaları">
-        <button
-          className="secondary"
-          disabled={current === 0}
-          onClick={() => goTo(current - 1)}
-        >
-          Önceki sayfa
-        </button>
-        <span className="small muted">
-          {current + 1} / {stages}
-        </span>
-        <button
-          className="primary"
-          disabled={current === stages - 1}
-          onClick={() => goTo(current + 1)}
-        >
-          Sonraki sayfa <ArrowRight size={17} />
-        </button>
-      </nav>
-    </>
+    </div>
   );
 }
 

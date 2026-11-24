@@ -232,12 +232,14 @@ test("guided study advances meaningful sections, keeps its place and notes offli
   // turn focuses the next heading and the position line names that section.
   await expect(sections.getByRole("button", { name: /^Sonraki sayfa:/ })).toHaveCount(0);
   const pager = page.getByRole("navigation", { name: "Anlatım sayfaları" });
+  const nextPage = pager.getByRole("button", { name: /^Sonraki sayfa/ });
+  await expect(nextPage).toBeInViewport();
   const focused = page.locator(".guide-section > h2:focus");
-  await pager.getByRole("button", { name: /^Sonraki sayfa/ }).click();
+  await nextPage.click();
   await expect(focused).toHaveCount(1);
   const first = titles.indexOf(await focused.innerText());
   expect(first).toBeGreaterThan(0);
-  await pager.getByRole("button", { name: /^Sonraki sayfa/ }).click();
+  await nextPage.click();
   await expect(sections.nth(first + 1).locator(":scope > h2")).toBeFocused();
   await expect(journey).toContainText(`Sayfa ${first + 2} / ${sectionCount + 2} · ${titles[first + 1]}`);
   await expect(page.locator(".save-status")).toContainText(

@@ -40,11 +40,24 @@ test("theory pages switch between page-by-page and full view with a sticky posit
 
 test("page mode stays usable at 320 px without horizontal scrolling", async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 800 });
+  await page.goto("/#/settings");
+  await page.getByLabel("Arayüz ölçeği %", { exact: true }).fill("200");
+  await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
+  await expect(page.locator(".save-status")).toContainText("Bu cihazda kaydedildi");
   await page.goto("/#/lesson?id=basit-esitsizlikler");
   const modes = page.getByRole("group", { name: "Okuma biçimi" });
   await modes.getByRole("button", { name: /^Sayfa sayfa/ }).click();
   await expect(page.locator(".guide-section")).toHaveCount(1);
+  const pager = page.getByRole("navigation", { name: "Anlatım sayfaları" });
+  const next = pager.getByRole("button", { name: "Sonraki sayfa", exact: true });
+  await expect(next).toBeInViewport({ ratio: 1 });
+  const before = await pager.boundingBox();
+  expect(before?.height).toBeLessThanOrEqual(96);
+  await next.press("Enter");
+  const heading = page.locator(".guide-section > h2");
+  await expect(heading).toBeFocused();
+  await expect(heading).toBeInViewport();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);
-  const axe = await new AxeBuilder({ page }).include(".learning-journey").include(".guide-progress").analyze();
+  const axe = await new AxeBuilder({ page }).include(".learning-journey").include(".guide-progress").include(".journey-actions").analyze();
   expect(axe.violations).toEqual([]);
 });

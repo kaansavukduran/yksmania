@@ -10,19 +10,51 @@
   min-width: 0;
   overflow-wrap: anywhere;
 }
+.guided-reader {
+  min-width: 0;
+  container: guided-reader / inline-size;
+}
 .journey-actions {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
-  justify-content: space-between;
-  gap: 0.8rem;
-  padding-block: 1.25rem;
-  border-block-start: 1px solid var(--border);
+  column-gap: 0.5rem;
+  padding-block-start: 3px;
+  border-block-end: 1px solid var(--border);
+  background: var(--surface);
 }
 .journey-actions button {
   min-width: 0;
   max-width: 100%;
+  min-height: 44px;
+  padding: 0.125rem 0.5rem;
   overflow-wrap: anywhere;
+}
+.journey-actions button:first-of-type {
+  justify-self: start;
+}
+.journey-actions button:last-child {
+  justify-self: end;
+}
+.journey-actions button svg {
+  flex: none;
+}
+@container guided-reader (max-width: 28rem) {
+  .journey-action-label {
+    display: none;
+  }
+  .journey-actions button:first-of-type,
+  .journey-actions button:last-child {
+    justify-self: stretch;
+  }
+}
+.journey-sticky {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 5;
+}
+:is(.guide-contents, .guide-section, .guide-examples, .guide-recall) :where(a, button, input, select, summary, textarea, [tabindex]) {
+  scroll-margin-block-start: 6rem;
 }
 .exam-teaching-case {
   border-inline-start: 3px solid var(--accent);
@@ -47,7 +79,7 @@
 .guide-section,
 .guide-examples,
 .guide-recall {
-  scroll-margin-top: 1rem;
+  scroll-margin-block-start: 6rem;
 }
 .page-label {
   margin: 0 0 0.25rem;
@@ -70,11 +102,11 @@
   margin-bottom: 0.5rem;
 }
 .guide-progress {
-  position: sticky;
-  top: 0;
-  z-index: 6;
-  height: 0.3rem;
-  margin-block: 0.25rem 0.75rem;
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline: 0;
+  height: 3px;
+  pointer-events: none;
   border-radius: 1rem;
   background: var(--surface-2);
   overflow: hidden;

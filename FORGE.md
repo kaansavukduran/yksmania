@@ -1,3 +1,9 @@
+# Konu anlatımında sayfa geçişi · 0.101.0 adayı
+
+0.96’nın Cloudflare önizlemesinde sayfa düğmesine ulaşmak için yapılan kaydırma, okuma konumunu sona taşıdı. Önceki ve sonraki sayfa düğmeleri ile konum göstergesi, anlatımın başındaki tek çubukta birleşti. Dar alanda iki yön oku kalıyor. Düğmelerin erişilebilir adları ve gidilen bölüm başlığına taşınan odak korunuyor.
+
+İlk yerleşim dar ekranda okuma biçimi ve içindekiler düğmelerini kapattı. Üst konuma taşınan çubukta metin büyük yazıda hâlâ fazla uzuyordu. Son yerleşimde 320 px, %200 arayüz, %150 yazı, dokunma, klavye ve çevrimdışı yeniden açılış dahil sekiz tarayıcı senaryosu geçti. 0.99 adayının bir CI senaryosu önceki on soruyu sayıyordu. On birinci balon sorusu için testte tam sayı 11 oldu. İlk soruya, kaydedilmiş nota ve çevrimdışı akışa ilişkin denetimler aynen çalışıyor.
+
 # Sprey şişesinde basınç ve sıvı yükselmesi · 0.100.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 148, basılı 146. Sayfadaki hava haznesi, yatay kanal, düşey sıvı borusu ve çıkış damlacıkları ayrı öğelerle yeniden çizildi. Modelde 15 cm su sütunu 1,5 kPa farkta uca erişiyor. Eşik aşılınca hava akımı damlacık oluşturabiliyor. Ayrı Kopya Kağıdı, dört basınç durumunu tabloyla ve 2 kPa örneğini çözüm çizimiyle gösteriyor.

@@ -196,6 +196,7 @@ const extendedPracticeCounts: Record<string, number> = {
   "yas-problemleri": 16,
   "yuzde-problemleri": 16,
   "kar-zarar-problemleri": 16,
+  "sivilarin-kaldirma-kuvveti": 11,
 };
 
 for (const lesson of units) {

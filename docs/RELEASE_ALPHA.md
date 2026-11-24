@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.101.0 · Anlatımda sayfa geçişi
+
+Yayın adayı. Konu anlatımının sayfa düğmeleri okurken ekranda kalıyor. Düğmeyi kullandığında odak ilgili bölüm başlığına geçiyor. Dar ekranda iki yönde ok var.
+
 # ÖSYM Mania 0.100.0 · Sprey şişesi
 
 Yayın adayı. Hava borusunun ağzındaki basınç farkını değiştir. Suyun çıkışa ne zaman ulaştığını ve püskürtmenin hangi koşulda başlayabildiğini çizimde karşılaştır. Kopya Kağıdı’nda dört durumu ve 2 kPa hesabını aç.

@@ -4,6 +4,8 @@
 
 **Son yayımlanan web ve masaüstü sürümü 0.42.0**. Açıortayları ve ortak kenarlı üçgenleri çevrimdışı inceleyebilirsin. [Windows ve Linux 0.42](https://github.com/kaansavukduran/yksmania/releases/tag/v0.42.0-alpha.1) · [Android 0.42 kişisel deneme arşivi](https://github.com/kaansavukduran/yksmania/actions/runs/45187782506/artifacts/14823994107)
 
+**0.101.0 adayı** konu anlatımında önceki ve sonraki sayfa düğmelerini görünür tutuyor. Sayfa değişince odak bölüm başlığına geçiyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+
 **0.100.0 adayı** sprey şişesindeki sıvı yüksekliğini ve püskürtme eşiğini aynı çizimde gösteriyor. Ayrı Kopya Kağıdı dört durumu ve 2 kPa çözümünü içeriyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.99.0 adayı** geçici bir service worker kayıt hatasından sonra sayfayı yenilemeden yeniden deniyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
