@@ -1,0 +1,51 @@
+import { expect, test } from "@playwright/test";
+import { resonanceExample, resonanceResponseTitle, resonanceTitle, resonanceTransferTitle } from "../../src/learning/mebiSoundResonance";
+import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse";
+import { svgLayoutAudit } from "./helpers/svgAudit";
+
+test("diyapazon düzeneği ve sonlu tepki tepesi çevrimdışı aynı kontrolle değişir", async ({ page, context }, info) => {
+  await page.setViewportSize({ width: 320, height: 870 });
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  await openCourse(page, { lesson: "ses-deprem-dalgalari", search: "Ses ve deprem" });
+  const toc = page.getByRole("navigation", { name: "Anlatım içeriği", exact: true });
+  const item = toc.getByRole("button", { name: resonanceTitle, exact: true });
+  if (!(await item.isVisible())) await toc.getByText("İçindekiler", { exact: true }).press("Enter");
+  await item.press("Enter");
+  const scope = `figure[data-section-figure="${resonanceTitle}"]`;
+  const figure = page.locator(scope);
+  const svg = figure.getByRole("img");
+  const slider = figure.getByRole("slider", { name: "İkinci diyapazonun doğal frekansı", exact: true });
+  await expect(figure).toContainText("İkinci diyapazonun doğal frekansı 440 Hz.");
+  await slider.press("ArrowLeft");
+  await expect(slider).toHaveValue("430");
+  await expect(figure).toContainText("İkinci diyapazonun doğal frekansı 430 Hz.");
+  await expect(svg.getByText("430 Hz doğal", { exact: true })).toBeVisible();
+  await svg.evaluate(node => node.scrollIntoView({ block: "center" }));
+  await svg.screenshot({ path: info.outputPath("tuning-fork-transfer149.png") });
+  await figure.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await expect(figure).toContainText("Doğal frekans 430 Hz, göreli genlik 0,9");
+  await slider.press("ArrowRight");
+  await expect(figure).toContainText("Doğal frekans 440 Hz, göreli genlik 1.");
+  await expect(svg.getByText("Doğal frekans (Hz)", { exact: true })).toBeVisible();
+  await svg.evaluate(node => node.scrollIntoView({ block: "center" }));
+  await svg.screenshot({ path: info.outputPath("tuning-fork-response149.png") });
+  expect((await page.evaluate(svgLayoutAudit, { scope, figuresOnly: true, explore: true })).issues).toEqual([]);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Kopya Kağıdı hava aktarımını ve iki tepki noktasını kendi çözümünde açar", async ({ page, context }) => {
+  await prepare(page);
+  await context.setOffline(true);
+  await page.goto("/#/cheatsheets?topic=detail-130");
+  const section = page.locator(".cheat-section").filter({ has: page.getByRole("heading", { name: resonanceTitle, exact: true }) });
+  await expect(section.getByRole("row", { name: "440 440 1,00", exact: true })).toBeVisible();
+  const example = page.locator(".cheat-examples .worked-example").filter({ hasText: resonanceExample.title });
+  await example.locator(":scope > summary").press("Enter");
+  const solution = example.locator(".cheat-solution");
+  await expect(solution.getByRole("img")).toHaveCount(0);
+  await solution.locator("summary").press("Enter");
+  await expect(solution.locator(`figure[data-section-figure="${resonanceTransferTitle}"]`)).toContainText("Havadaki zorlama frekansı 440 Hz.");
+  await expect(solution.locator(`figure[data-section-figure="${resonanceResponseTitle}"]`)).toContainText("440 Hz’de göreli genlik 1.");
+});

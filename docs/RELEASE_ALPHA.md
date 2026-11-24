@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.149.0 · İki diyapazonda rezonans
+
+Yayın adayı. İlk diyapazondan ikinciye sesin havadan ulaştığını çizimde izle. İkinci diyapazonun doğal frekansını değiştir. Kopya Kağıdı 400 ve 440 Hz’deki tepkiyi ayrı örnekte karşılaştırıyor.
+
 # ÖSYM Mania 0.148.0 · Şekilli desibel sorusu
 
 Yayın adayı. X ve Y işaretlerini sorunun ölçeğinden oku. İpucu bir 10 dB adımını gösterir. Çözümde 20 dB farkı çizimden ve şiddet oranını tablodan kontrol et. Kayıtlı yanlışın kendi çizimi çevrimdışı açılır.

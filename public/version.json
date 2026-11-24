@@ -1,5 +1,5 @@
 {
-  "version": "0.148.0",
+  "version": "0.149.0",
   "channel": "alpha",
   "notes": {
     "tr": "Keman ve piyano örneklerinde aynı periyodu bul. Üç harmonik bileşeni karşılaştırarak tını farkını incele.",

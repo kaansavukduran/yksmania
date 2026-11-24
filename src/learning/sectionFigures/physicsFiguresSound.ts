@@ -1,5 +1,6 @@
 import { circle, fmt, poly, pt, seg, txt, v, vec, type El, type FigureDef, type FigureFrame, type Tone, type V } from "./figureKit";
 import { mebiSeismicFocusFigure } from "./mebiSeismicFocusFigure";
+import { tuningForkFigures } from "./mebiTuningForkFigures";
 import { bellJarCases, bellJarTitle } from "../mebiSoundMedium";
 import { timbreAt, timbreCases, timbreFrequencyHz, timbreHarmonicTitle, timbreModes, timbreTitle, timbreWaveTitle } from "../mebiSoundTimbre";
 import { intensityRatio, soundLevelCases, soundLevelDifferenceTitle, soundLevelLimits, soundLevelRatioTitle, soundLevelTitle } from "../mebiSoundLevel";
@@ -581,6 +582,7 @@ const quake: FigureDef = {
 
 export const physicsFiguresSound: Record<string, Record<string, FigureDef>> = {
   "ses-deprem-dalgalari": {
+    ...tuningForkFigures,
     ...mebiSeismicFocusFigure,
     "Ses bir ortam titreşimidir": longitudinal,
     [bellJarTitle]: bellJar,

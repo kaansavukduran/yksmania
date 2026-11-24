@@ -38,6 +38,7 @@ import { stroboscopeExample, stroboscopeSection, stroboscopeTitle } from "../meb
 import { bellJarSection, soundBellExample, soundMediumTable, soundSpeedExample } from "../mebiSoundMedium";
 import { soundLevelExample, soundLevelSection } from "../mebiSoundLevel";
 import { timbreExample, timbreSection } from "../mebiSoundTimbre";
+import { resonanceExample, resonanceSection } from "../mebiSoundResonance";
 import { animalPitchExample, animalPitchSection } from "../mebiPitchSamples";
 import { bottlePitchExample, bottlePitchSection } from "../mebiBottlePitch";
 import { wirePairExample, wirePairSection } from "../mebiWirePitch";
@@ -524,11 +525,12 @@ export function studyGuide(lessonId: string) {
         if (section.title === "Ses bir ortam titreşimidir") return [{ ...section, figureTitle: section.title }, bellJarSection];
         if (section.title === "Sürati kaynaktan ayır") return [{ ...section, table: soundMediumTable }];
         if (section.title === "Yükseklik sözcüğünün iki anlamını çöz") return [section, animalPitchSection, bottlePitchSection, soundLevelSection, timbreSection];
+        if (section.title === "Tını ve rezonansı farklı sorularla ölç") return [section, resonanceSection];
         if (section.title === "Kaynağı değiştirerek notayı değiştir") return [section, wirePairSection, tensionComparisonSection, lengthComparisonSection];
         return [section];
       }),
-      examples: [...guide.examples, seismicFocusExample, soundBellExample, soundSpeedExample, animalPitchExample, bottlePitchExample, wirePairExample, tensionLengthExample, soundLevelExample, timbreExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfadaki yer dalgası kesiti fay ve kaya parçalarıyla yeniden çizildi. Yol uzunlukları ve süratler özgün düzgün kaya modeline aittir. Fiziksel 163, basılı 161. sayfadaki ses kaynağı ve hava tanecikleri çizildi. Cam fanus ve çalar saat modeli, aynı sayfanın üç ses sürati karşılaştırmasıyla çalışılıyor. Fiziksel 164, basılı 162. sayfadaki iki ses kaynağı ayrı lisanslı fotoğraflar ve temsilî eş zaman grafikleriyle karşılaştırılıyor. Aynı sayfanın metal çubuklu su şişeleri, vurma ve üflemede ayrı titreşim çizimleriyle gösteriliyor. Aynı sayfanın K ve L telleri, eşit G ağırlıkları ve çaplarıyla yeniden çizildi. Fiziksel 165, basılı 163. sayfadaki K ve M gerilimleri ile uzun ve kısa K düzenekleri aynı tel denklemiyle çalışılıyor. Aynı sayfanın desibel cetveli 15 temsilî giriş ve şiddet hesabıyla yeniden oluşturuldu. Aynı sayfanın keman ve piyano örneğinde eş periyotlu çizgiler ve üç harmonik payı karşılaştırılıyor.`,
+      examples: [...guide.examples, seismicFocusExample, soundBellExample, soundSpeedExample, animalPitchExample, bottlePitchExample, wirePairExample, tensionLengthExample, soundLevelExample, timbreExample, resonanceExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfadaki yer dalgası kesiti fay ve kaya parçalarıyla yeniden çizildi. Yol uzunlukları ve süratler özgün düzgün kaya modeline aittir. Fiziksel 163, basılı 161. sayfadaki ses kaynağı ve hava tanecikleri çizildi. Cam fanus ve çalar saat modeli, aynı sayfanın üç ses sürati karşılaştırmasıyla çalışılıyor. Fiziksel 164, basılı 162. sayfadaki iki ses kaynağı ayrı lisanslı fotoğraflar ve temsilî eş zaman grafikleriyle karşılaştırılıyor. Aynı sayfanın metal çubuklu su şişeleri, vurma ve üflemede ayrı titreşim çizimleriyle gösteriliyor. Aynı sayfanın K ve L telleri, eşit G ağırlıkları ve çaplarıyla yeniden çizildi. Fiziksel 165, basılı 163. sayfadaki K ve M gerilimleri ile uzun ve kısa K düzenekleri aynı tel denklemiyle çalışılıyor. Aynı sayfanın desibel cetveli 15 temsilî giriş ve şiddet hesabıyla yeniden oluşturuldu. Aynı sayfanın keman ve piyano örneğinde eş periyotlu çizgiler ve üç harmonik payı karşılaştırılıyor. Fiziksel 166, basılı 164. sayfadaki iki diyapazon, hava yoluyla zorlama ve sonlu model tepkisiyle karşılaştırılıyor.`,
     };
   }
   if (guide?.id === "hal-degisimi") {
