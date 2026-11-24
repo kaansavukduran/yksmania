@@ -6,6 +6,7 @@ import { stackedPointShadowFigures } from "./mebiStackedPointShadowFigures";
 import { extendedShadowConeFigures } from "./mebiExtendedShadowConeFigures";
 import { parallelLitSphereFigures } from "./mebiParallelLitSphereFigures";
 import { lightWaterReflectionFigures } from "./mebiLightWaterReflectionFigures";
+import { visibleByReflectionFigures } from "./mebiVisibleByReflectionFigures";
 import {
   span,
   add,
@@ -939,7 +940,7 @@ function twoSources(s: number) {
 }
 
 export const physicsFiguresOptics: Record<string, Record<string, FigureDef>> = {
-  "duzlem-ayna": { ...duzlemAyna, ...lightWaterReflectionFigures },
+  "duzlem-ayna": { ...duzlemAyna, ...lightWaterReflectionFigures, ...visibleByReflectionFigures },
   "kuresel-aynalar": kureselAynalar,
   "isigin-kirilmasi": kirilma,
   mercekler,

@@ -69,6 +69,7 @@ import { stackedShadowExample, stackedShadowSection } from "../mebiStackedPointS
 import { extendedConeExample, extendedConeSection } from "../mebiExtendedShadowCone";
 import { parallelLitSphereExample, parallelLitSphereSection } from "../mebiParallelLitSphere";
 import { lightWaterReflectionExample, lightWaterReflectionSection } from "../mebiLightWaterReflection";
+import { visibleByReflectionExample, visibleByReflectionSection } from "../mebiVisibleByReflection";
 import { animalPitchExample, animalPitchSection } from "../mebiPitchSamples";
 import { bottlePitchExample, bottlePitchSection } from "../mebiBottlePitch";
 import { wirePairExample, wirePairSection } from "../mebiWirePitch";
@@ -594,9 +595,9 @@ export function studyGuide(lessonId: string) {
   if (guide?.id === "duzlem-ayna") {
     return {
       ...guide,
-      sections: [lightWaterReflectionSection, ...guide.sections],
-      examples: [lightWaterReflectionExample, ...guide.examples],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 176, basılı 174. Kıyı, deniz yüzeyi ve sualtı görünümü için lisanslı fotoğraf örnekleri kullanıldı. Dik ve eğik yansımada ışık yönü ile su cephesi, aynı açı girdisinden ayrı çizildi.`,
+      sections: [lightWaterReflectionSection, visibleByReflectionSection, ...guide.sections],
+      examples: [lightWaterReflectionExample, visibleByReflectionExample, ...guide.examples],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 176, basılı 174. Kıyı, deniz yüzeyi ve sualtı görünümü için lisanslı fotoğraf örnekleri kullanıldı. Dik ve eğik yansımada ışık yönü ile su cephesi, aynı açı girdisinden ayrı çizildi. Fiziksel 177, basılı 175. sayfadaki kaynak, top ve göz için aydınlık ve karanlık örnekleri aynı ışık yoluna bağlandı. Yansıma payları öğretim değerleridir.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

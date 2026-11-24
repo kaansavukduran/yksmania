@@ -1,8 +1,8 @@
 {
-  "version": "0.180.0",
+  "version": "0.181.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Işığın ve su cephesinin düz sınırda nasıl döndüğünü karşılaştır. Açıları normalden ölç, dik gelen ve eğik gelen hareketi ayrı çizimlerde izle.",
-    "en": "Compare a light ray and water wavefront at a straight boundary. Measure along the normal and observe head-on and oblique reflection."
+    "tr": "Bir topun görünmesi için lambadan topa ve toptan göze giden ışığı izle. Aynı lambada açık ve koyu yüzeyi karşılaştır, sonra ışığı kapat.",
+    "en": "Trace the path from a lamp to a ball and from the ball to the eye. Compare two surfaces under the same light, then switch the lamp off."
   }
 }

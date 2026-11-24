@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.181.0 · Toptan göze yansıyan ışık
+
+Yayın adayı. Üç aydınlatma durumunda topu, lambayı ve göze giden ışığı ayrı incele.
+
 # ÖSYM Mania 0.180.0 · Işık ile su cephesinde yansıma
 
 Yayın adayı. Kıyı, dalgalı yüzey ve sualtı fotoğraflarını incele. Düz sınırda 0° ve 35° dönüşleri ayrı çizimlerde izle.
