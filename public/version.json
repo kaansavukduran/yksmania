@@ -1,8 +1,8 @@
 {
-  "version": "0.154.0",
+  "version": "0.155.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Selimiye Camii’nin iç fotoğrafını incele. Örnek salonda sesin iki yolunu çizimden oku ve tavanın soğurduğu payı değiştir.",
-    "en": "Explore a photo inside Selimiye Mosque. In a sample room, compare direct and reflected sound and change the absorbed share."
+    "tr": "Bir ila dört bağımsız ses kaynağını karşılaştır. Toplam şiddeti bloklardan oku ve iki eş kaynakla düzeyin neden yaklaşık 3 dB arttığını gör.",
+    "en": "Compare one to four independent sound sources. Add the intensity blocks and see why doubling equal sources raises the level by about 3 dB."
   }
 }

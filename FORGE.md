@@ -1,3 +1,9 @@
+# Birden çok ses kaynağı · 0.155.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 166, basılı 164 gürültü maddesi. Aynı ölçüm noktasında bir ila dört bağımsız kaynağın katkısı birer şiddet bloğu. Tek kaynak 55 dB, iki kaynak 58,01 dB. Kopya Kağıdı önce katkıları, sonra desibel hesabını gösteriyor. [OSHA teknik ses açıklaması](https://www.osha.gov/otm/section-3-health-hazards/chapter-5)
+
+Check, 329 dosyalı çevrimdışı derleme, 2.298 birim ve yedi Chromium akışı geçti. 320 px büyük yazıda bloklar ve desibel hesabı incelendi. Sıradaki aynı sayfanın manyetik rezonans açıklaması. Radyo darbesi, frekans eşleşmesi ve alıcı bobin üç ayrı öğe olarak okunacak.
+
 # Selimiye Camii ve salon akustiği · 0.154.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 166, basılı 164. Selimiye Camii’nin gerçek iç fotoğrafında kemerler, kubbeler ve zemin inceleniyor. Ayrı bir örnek salonda 8 m doğrudan ve 10 m yansıyan yol çiziliyor. Tavanın konumu sabitken soğurulan ve yansıyan enerji payları değişiyor. [Fotoğraf ve lisans](https://commons.wikimedia.org/w/index.php?title=File:Selimiye_Mosque_inside.jpg&oldid=1279870927) · [UNESCO Selimiye kaydı](https://whc.unesco.org/en/list/1366/)
@@ -888,7 +894,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 318 | 320 / 320 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 321 | 320 / 320 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
 | TYT Biyoloji | 36 / 36 | 22 · 80 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 14 |
 | TYT Tarih | 24 / 24 | 14 · 41 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 10 |
@@ -901,7 +907,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **405 · 1813** | **6.670 / 6.670 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
+| **Toplam** | **510 / 510** | **405 · 1816** | **6.670 / 6.670 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

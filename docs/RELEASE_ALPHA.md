@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.155.0 · Birden çok ses kaynağı
+
+Yayın adayı. Aynı ölçüm noktasına ulaşan kaynakların şiddet bloklarını topla. İkinci adımda toplam düzey ile tek kaynak düzeyi arasındaki desibel farkını oku.
+
 # ÖSYM Mania 0.154.0 · Salon akustiği
 
 Yayın adayı. Selimiye Camii’nin iç fotoğrafını büyüt. Örnek salonda doğrudan ve tavandan yansıyan yolu karşılaştır. Tavanın soğurduğu payı değiştirip iki yolu ve enerjiyi kendi çözüm çizimlerinde incele.
