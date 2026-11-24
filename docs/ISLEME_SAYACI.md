@@ -31,8 +31,8 @@ Tam aktarımı doğrulanan güncel satır sayısı sıfır. Arşivde gerçekte k
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 143 |
-| Okunduğu doğrulanan PDF toplamı (bu dal) | 143 / 8.981 (%1,59) |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 147 |
+| Okunduğu doğrulanan PDF toplamı (bu dal) | 147 / 8.981 (%1,64) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
 
@@ -50,16 +50,16 @@ Klasördeki numaralı kopya kâğıtları ders ders sayıldı (517 kopya kâğı
 | TYT Biyoloji | 36 | 11 | %30,6 |
 | TYT Tarih | 24 | 8 | %33,3 |
 | TYT Coğrafya | 40 | 9 | %22,5 |
-| TYT Felsefe | 17 | 3 | %17,6 |
-| TYT Din Kültürü | 20 | 3 | %15,0 |
-| **TYT toplam** | **320** | **101** | **%31,6** |
+| TYT Felsefe | 17 | 5 | %29,4 |
+| TYT Din Kültürü | 20 | 5 | %25,0 |
+| **TYT toplam** | **320** | **105** | **%32,8** |
 | AYT Matematik | 17 | 2 | %11,8 |
 | AYT Geometri | 4 | 1 | %25,0 |
 | AYT Fizik | 46 | 7 | %15,2 |
 | AYT Kimya | 55 | 11 | %20,0 |
 | AYT Biyoloji | 75 | 11 | %14,7 |
 | **AYT toplam** | **197** | **32** | **%16,2** |
-| **Genel toplam** | **517** | **133** | **%25,7** |
+| **Genel toplam** | **517** | **137** | **%26,5** |
 
 Notlar: TYT Türkçe'de 028 numarası iki farklı konuda kullanılmış (33 dosya, 32 numara). TYT Kimya'da 031 aynı adla iki kez var (eski ve yeni sürüm; 55 farklı konu). TYT Matematik ve Geometri'de 000 numaralı genel özetler var. AYT klasöründeki 7 durum raporu “232 konu” diyor ama klasörlerde 197 AYT kopya kâğıdı bulunuyor; 35 konunun kopya kâğıdı Drive'da yok. Bu tablodaki sıfırlar, o derste kopya kâğıdından figür/taktik aktarılmadığını söyler; uygulamada o dersin anlatımı ve soruları yine vardır (ayrıntı aşağıdaki kapsam tablosunda).
 
@@ -208,6 +208,10 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 016 TYT Tarih – Devrimler Çağında Değişen Devlet ve Toplum (kopya kâğıdı) | `devrimler-caginda-devlet-toplum` figürsüz dört bölümüne: iki sütunlu sanayi zinciri (üretim ve toplum, dört kat) ve zincire bağlanmayan “ulus-devletlerin zayıflaması” kartı, hak / ikisi birden / yükümlülük yurttaşlık panosu (yedi seçilebilir kutu; 1839, 1869, 1876 karşılıkları), dört adımlı milliyetçilik zinciri (1789 → yayılma → bölücü ve birleştirici etki → Osmanlıcılık), üç ordu girişimi karşılaştırması (1793 Nizam-ı Cedit, 1808 Sekban-ı Cedit, 1826 Asakir-i Mansure); mekanizma zinciri taktiği; 2020 TYT Sosyal Bilimler 3 ve 2024 AYT Sosyal Bilimler-2 5 mantığı | Kısmi |
 | 017 TYT Tarih – Uluslararası İlişkilerde Denge Stratejisi (kopya kâğıdı) | `denge-stratejisi` figürsüz dört bölümüne: altı adımlı 1798 Mısır seferi şematik haritası (Malta, İskenderiye, Ebukır, 1799 ittifak, Akka, 1801–1802 çekiliş ve Paris), dört büyük devletin çıkar panosu (1815 Viyana; Osmanlı katılmadı), altı seçilebilir Kırım Savaşı konumu ve Paris hükmü (Sinop 1853, Sivastopol, Kars, tarafsız Karadeniz ve 1871, Şubat 1856 Islahat), 1878–1914 değişen destek kutuları (Kıbrıs, Tunus, Mısır, Bağdat Demiryolu, 1907, 1914); tehdit–ortak–bedel taktiği; 2023 TYT Sosyal Bilimler 3 ve 2023 AYT Sosyal Bilimler-2 Tarih-2 9 mantığı | Kısmi |
 | 019 TYT Tarih – 20. Yüzyıl Başlarında Osmanlı ve Dünya (kopya kâğıdı) | `yirminci-yuzyil-baslarinda-osmanli` figürsüz dört bölümüne: beş özgün kanıt cümlesiyle fikir akımı eşlemesi (son cümlede iki akım birlikte), satır satır I. ve II. Balkan Savaşı karşılaştırması (taraflar, Edirne Mart ve Temmuz 1913, Londra 30 Mayıs 1913, Bükreş / İstanbul / Atina), Kafkas ve Kanal cephelerinde hedef ile sonuç (Sarıkamış, 1915 ve 1916 kanal saldırıları, Brest-Litovsk), sekiz seçilebilir cephe şematik haritası (dört amaç grubu); neden–tetikleyici–cephe taktiği; 2025 AYT TDE–Sosyal Bilimler-1 Tarih-1 31 mantığı (kâğıdın beyanı) | Kısmi |
+| 013 TYT Felsefe – Rönesans Felsefesi (kopya kâğıdı) | `ronesans-felsefesi` figürsüz dört bölümüne: beş adımlı tümel iddia çözümlemesi (iddia, gerekçe, Petrarca karşı örneği, sonuç, ters genelleme sınırı), kaynak kullanımı × gerekçe denetimi 2×2 tutum panosu (eleştirel kullanım, kaynaksız tartışma, ünle kabul, gerekçesiz ret), Galileo gemi direği düşünce deneyi öncül–sonuç–kapsam adımları, altı satırlı düşünür–eser–görüş tablosu (Petrarca, Pico della Mirandola, Erasmus, Machiavelli, Thomas More, Montaigne); kapsam–odak–dayanak taktiği; 2025 TYT Sosyal Bilimler 14 mantığı (kâğıdın beyanı) | Kısmi |
+| 017 TYT Felsefe – Çağdaş Felsefe (kopya kâğıdı) | `cagdas-felsefe` figürsüz dört bölümüne: masa / insan / aşırı genelleme satırlarıyla Sartre’ın varoluş–öz tablosu, Bergson’da aynı dört notalık ezginin ölçülen zaman ve yaşanan süre olarak üç adımlı çizimi, on Türk düşünürün çalışma alanı tablosu, altı örnek cümleyi yürüten beş soruluk yöntem merdiveni (hermeneutik, fenomenoloji, yanlışlanabilirlik, tarihsel materyalizm, varoluşçuluk; Hartmann örneği dışarıda kalır); problem–yöntem taktiği; 2021 TYT Sosyal Bilimler 15 mantığı (kâğıdın beyanı) | Kısmi |
+| 017 TYT Din Kültürü – Anadolu’da İslam (kopya kâğıdı) | `anadoluda-islam` figürsüz dört bölümüne: beş örnek cümleyi yürüten dört soruluk alan merdiveni (fıkıh, kelam, tasavvuf, Ahilik; 751 örneği süreç sorusuna düşer), dört adımlı ribat işlevi akışı (askerî, eğitim ve tasavvuf, yol ve konaklama, okuma kuralı), Ahilik hizmetleri ve temel hizmet olmayan seçenek tablosu, Nisâ 69’da (4:69) anılan dört grup ile ayette bulunmayan iki ekleme; alan–iki kanıt taktiği; 2023 AYT Sosyal Bilimler-2 40 mantığı (kâğıdın beyanı) | Kısmi |
+| 018 TYT Din Kültürü – İslam Düşüncesinde Tasavvufi Yorumlar (kopya kâğıdı) | `islam-dusuncesinde-tasavvufi-yorumlar` figürsüz dört bölümüne: sema / semah / yalnız “dönmek” ipucu tablosu, sema sembolleri ile metinde anlamı verilmeyen süre ve katılımcı sayısı tablosu, mal × gönül bağlılığı 2×2 zühd panosu, beş adımlı ikrar–razılık–barışma–iade–sınır akışı; ölçek–metin kanıtı taktiği; 2025 TYT Sosyal Bilimler 20 mantığı (kâğıdın beyanı) | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -225,16 +229,16 @@ Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî ko
 | TYT Biyoloji | 18 | 45 | 36 | 515 | 12 (%26,7) | 37 | 14 | 11 / 36 (%30,6) |
 | TYT Tarih | 22 | 34 | 24 | 390 | 6 (%17,6) | 16 | 4 | 8 / 24 (%33,3) |
 | TYT Coğrafya | 21 | 40 | 40 | 400 | 8 (%20,0) | 17 | 5 | 9 / 40 (%22,5) |
-| TYT Felsefe | 15 | 17 | 17 | 190 | 3 (%17,6) | 7 | 3 | 3 / 17 (%17,6) |
-| TYT Din | 19 | 20 | 20 | 371 | 4 (%20,0) | 9 | 3 | 3 / 20 (%15,0) |
+| TYT Felsefe | 15 | 17 | 17 | 190 | 3 (%17,6) | 7 | 3 | 5 / 17 (%29,4) |
+| TYT Din | 19 | 20 | 20 | 371 | 4 (%20,0) | 9 | 3 | 5 / 20 (%25,0) |
 | AYT Matematik | 36 | 18 | 17 | 253 | 13 (%72,2) | 19 | 5 | 2 / 17 (%11,8) |
 | AYT Geometri | 9 | 4 | 4 | 40 | 4 (%100,0) | 51 | 4 | 1 / 4 (%25,0) |
 | AYT Fizik | 32 | 47 | 46 | 541 | 11 (%23,4) | 26 | 15 | 7 / 46 (%15,2) |
 | AYT Kimya | 34 | 56 | 55 | 680 | 18 (%32,1) | 19 | 14 | 11 / 55 (%20,0) |
 | AYT Biyoloji | 29 | 76 | 75 | 907 | 16 (%21,1) | 39 | 12 | 11 / 75 (%14,7) |
-| **Toplam** | **341** | **540** | **505** | **6.465** | **200 (%37,0)** | **830** | **182** | **133 / 517 (%25,7)** |
+| **Toplam** | **341** | **540** | **505** | **6.465** | **200 (%37,0)** | **830** | **182** | **137 / 517 (%26,5)** |
 
-Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %37) ve kopya kâğıtlarından aktarım (%25,7). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
+Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %37) ve kopya kâğıtlarından aktarım (%26,5). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
 
 Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan konular):
 

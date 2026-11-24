@@ -1,8 +1,8 @@
 {
-  "version": "0.145.0",
+  "version": "0.146.0",
   "channel": "alpha",
   "notes": {
-    "tr": "TYT Biyoloji'de hücre organelleri, besin ağı, sınıflandırma ve Mendel'den sapmalar; TYT Tarih'te dünya gücü Osmanlı, devrimler çağı, denge stratejisi ve 20. yüzyıl başları kopya kâğıtları tıklanabilir figürler, şematik haritalar ve taktiklerle açılıyor.",
-    "en": "Eight more cheat sheets in TYT Biology and History open as interactive figures, schematic maps and tactics."
+    "tr": "TYT Felsefe'de Rönesans ve çağdaş felsefe, TYT Din Kültürü'nde Anadolu'da İslam ve tasavvufi yorumlar kopya kâğıtları argüman adımları, düşünür tabloları ve karşılaştırma figürleriyle açılıyor.",
+    "en": "Four TYT Philosophy and Religious Culture cheat sheets open as argument steps, thinker tables and comparison figures with tactics."
   }
 }
