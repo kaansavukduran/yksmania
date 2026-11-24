@@ -47,6 +47,8 @@ import { transmissionTitle } from "../mebiLightTransmission";
 import { lightTransmissionPhotos } from "./mebiLightTransmissionPhotos";
 import { lightWaterReflectionTitle } from "../mebiLightWaterReflection";
 import { lightWaterReflectionPhotos } from "./mebiLightWaterReflectionPhotos";
+import { mirrorWritingTitle } from "../mebiMirrorField";
+import { mirrorWritingPhotos } from "./mebiMirrorWritingPhotos";
 import { physicsFiguresMatter } from "./physicsFiguresMatter";
 import { biologyFiguresPedigree } from "./biologyFiguresPedigree";
 import { biologyFiguresGenetics } from "./biologyFiguresGenetics";
@@ -500,6 +502,7 @@ type LessonPhoto = {
   licence?: string;
   licenceLabel?: string;
   imageLabel?: string;
+  horizontalReflection?: boolean;
 };
 export const sectionPhotoGroups: Record<string, Record<string, { name: string; photos: readonly LessonPhoto[] }>> = {
   "ses-deprem-dalgalari": {
@@ -511,6 +514,7 @@ export const sectionPhotoGroups: Record<string, Record<string, { name: string; p
   },
   "duzlem-ayna": {
     [lightWaterReflectionTitle]: { name: "Kıyı ve su yüzeyi fotoğrafları", photos: lightWaterReflectionPhotos },
+    [mirrorWritingTitle]: { name: "Kaputtaki yazı ve yatay ayna görüntüsü", photos: mirrorWritingPhotos },
   },
   "golge-yari-golge": {
     [transmissionTitle]: { name: "Saydam, yarı saydam ve opak örnekler", photos: lightTransmissionPhotos },
@@ -567,7 +571,9 @@ export function SectionFigure({
       {group && (
         <div className="section-reference-photos" role="group" aria-label={group.name}>
           {group.photos.map((reference) => (
-            <div key={reference.figure.title}><LessonPhotoView photo={reference} /></div>
+            <div key={reference.figure.title} data-horizontal-reflection={reference.horizontalReflection || undefined}>
+              <LessonPhotoView photo={reference} />
+            </div>
           ))}
         </div>
       )}

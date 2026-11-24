@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.184.0 · Aynada görüş alanı ve ambulans yazısı
+
+Yayın adayı. Ambulansta kaput ve ayna görünümünü karşılaştır, sonra gözün yatay konumunu değiştirip aynanın görme sınırlarını üç yöntemle bul.
+
 # ÖSYM Mania 0.183.0 · Eğik parçanın ayna görüntüsü
 
 Yayın adayı. K′ ve L′ uçlarını ayrı kur, sonra birleştirip görüntünün boyunu karşılaştır.

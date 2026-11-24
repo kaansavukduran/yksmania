@@ -36,6 +36,6 @@ function visibleSphere(elevation: number): FigureFrame {
 const alt = "Üstten paralel ışınlar opak kürenin üst yarısını aydınlatıyor. Soldaki gözlemcinin yönü kesik çizgiyle, gördüğü aydınlık alan sağdaki dairede gösteriliyor.";
 export const parallelLitSphereFigures: Record<string, FigureDef> = {
   [parallelLitSphereTitle]: { caption: "Gözü yukarı veya aşağı taşı. Sağdaki diskte aydınlık alanı izle.", alt, param: { label: "Gözlemcinin yataya göre açısı", min: -60, max: 60, step: 15, init: 0, unit: "°" }, draw: visibleSphere },
-  [sideLitSphereTitle]: { caption: "Göz tam yanda.", alt, draw: () => visibleSphere(0) },
+  [sideLitSphereTitle]: { caption: "Yandan bakan göz, diskin yarısını aydınlık görür.", alt, draw: () => visibleSphere(0) },
   [raisedLitSphereTitle]: { caption: "Göz yatayın 30° üstünde.", alt, draw: () => visibleSphere(30) },
 };

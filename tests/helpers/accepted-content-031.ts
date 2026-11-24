@@ -18,6 +18,10 @@ export function beforeFoundation031Registration(source: string): string {
     .replace('import { waterReflectionQuestion } from "../learning/waterReflectionQuestion136";\n', "")
     .replace('import { soundLevelQuestion } from "../learning/soundLevelQuestion148";\n', "")
     .replace('import { sonarDistanceQuestion } from "../learning/sonarQuestion157";\n', "")
+    .replace('import { pointIlluminanceQuestion } from "../learning/pointIlluminanceQuestion170";\n', "")
+    .replace('import { shadowObserversQuestion } from "../learning/shadowObserversQuestion178";\n', "")
+    .replace('    if (lesson.id === "isik-bilgisi") return { ...lesson, questions: [...lesson.questions, pointIlluminanceQuestion] };\n', "")
+    .replace('    if (lesson.id === "golge-yari-golge") return { ...lesson, questions: [...lesson.questions, shadowObserversQuestion] };\n', "")
     .replace(
       '  ...forge012PhysicsLessons.map((lesson) => {\n    if (lesson.id === "su-dalgalari") return { ...lesson, questions: [...lesson.questions, waterReflectionQuestion] };\n    if (lesson.id === "ses-deprem-dalgalari") return { ...lesson, questions: [...lesson.questions, soundLevelQuestion, sonarDistanceQuestion] };\n    return lesson;\n  }),\n',
       "  ...forge012PhysicsLessons,\n",

@@ -3,13 +3,17 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { studyGuide } from "../src/learning/guides";
 import { sectionFigureGuideIds } from "../src/learning/sectionFigures/figureGuideIds";
-import { SectionFigure, sectionFigures, sectionImageFigures } from "../src/learning/sectionFigures/registry";
+import { SectionFigure, sectionFigures, sectionImageFigures, sectionPhotoGroups } from "../src/learning/sectionFigures/registry";
 import { SectionFigureView } from "../src/learning/sectionFigures/figureKit";
 
 // A renamed section or example reference must fail here instead of
 // silently losing the required drawing in the app.
 describe("section figures", () => {
-  const guideIds = [...new Set([...Object.keys(sectionFigures), ...sectionImageFigures.keys()])];
+  const guideIds = [...new Set([
+    ...Object.keys(sectionFigures),
+    ...sectionImageFigures.keys(),
+    ...Object.keys(sectionPhotoGroups),
+  ])];
   it("lists exactly the guides that have figures", () => {
     expect([...sectionFigureGuideIds].sort()).toEqual([...guideIds].sort());
   });
@@ -17,6 +21,8 @@ describe("section figures", () => {
   for (const guideId of guideIds) {
     const figures = sectionFigures[guideId] ?? {};
     const photos = sectionImageFigures.get(guideId);
+    const groups = Object.entries(sectionPhotoGroups[guideId] ?? {});
+    const photoGroupTitles = new Set(groups.map(([title]) => title));
     describe(guideId, () => {
       const guide = studyGuide(guideId);
       it("belongs to an existing guide section or worked solution", () => {
@@ -28,8 +34,12 @@ describe("section figures", () => {
           ),
         ];
         const titles = new Set([...guide!.sections.map((s) => s.title), ...requiredTitles]);
-        for (const title of [...Object.keys(figures), ...(photos?.keys() ?? [])]) expect(titles).toContain(title);
-        for (const title of requiredTitles) expect(figures[title] ?? photos?.get(title), title).toBeDefined();
+        for (const title of [...Object.keys(figures), ...(photos?.keys() ?? []), ...photoGroupTitles]) {
+          expect(titles).toContain(title);
+        }
+        for (const title of requiredTitles) {
+          expect(Boolean(figures[title] ?? photos?.get(title)) || photoGroupTitles.has(title), title).toBe(true);
+        }
       });
 
       for (const [title, photo] of photos ?? []) {
@@ -44,6 +54,22 @@ describe("section figures", () => {
           expect(html).toContain(photo.figure.alt);
           expect(html).toContain(photo.credit);
           expect(html).toContain(photo.url.replaceAll("&", "&amp;"));
+        });
+      }
+
+      for (const [title, group] of groups) {
+        it(`renders every credited image in the source photo group: ${title}`, () => {
+          const html = renderToStaticMarkup(createElement(SectionFigure, { guideId, title }));
+          expect(group.photos.length).toBeGreaterThan(0);
+          for (const photo of group.photos) {
+            expect(photo.figure.assetSHA256).toMatch(/^[a-f0-9]{64}$/);
+            expect(photo.figure.width).toBeGreaterThan(0);
+            expect(photo.figure.height).toBeGreaterThan(0);
+            expect(photo.figure.alt.length).toBeGreaterThan(20);
+            expect(html).toContain(photo.figure.alt.replaceAll("&", "&amp;"));
+            expect(html).toContain(photo.credit);
+            expect(html).toContain(photo.url.replaceAll("&", "&amp;"));
+          }
         });
       }
 

@@ -245,6 +245,14 @@
   margin: 0 0 0.35rem;
 }
 
+.section-reference-photos:has([data-horizontal-reflection]) {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+}
+
+.section-reference-photos [data-horizontal-reflection] img {
+  scale: -1 1;
+}
+
 .source-figure-zoom-compact {
   display: flex;
   align-items: center;

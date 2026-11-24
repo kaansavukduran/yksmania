@@ -56,7 +56,13 @@ it("makes workbook headings 109 through 138 reachable as independent theory, vis
     const expandedPractice = [
       "faiz-problemleri", "karisim-problemleri", "isci-problemleri", "havuz-problemleri", "hiz-problemleri",
     ].includes(lesson.id);
-    const questionCount = lesson.id === "ses-deprem-dalgalari" ? 12 : lesson.id === "su-dalgalari" ? 11 : expandedPractice ? 16 : 10;
+    const additionalPractice: Record<string, number> = {
+      "ses-deprem-dalgalari": 2,
+      "su-dalgalari": 1,
+      "isik-bilgisi": 1,
+      "golge-yari-golge": 1,
+    };
+    const questionCount = 10 + (expandedPractice ? 6 : additionalPractice[lesson.id] ?? 0);
     expect(lesson.questions, topic.title).toHaveLength(questionCount);
     for (const q of lesson.questions) {
       expect(q.options).toHaveLength(5);

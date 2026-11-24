@@ -58,6 +58,6 @@ const alt = "Yandan büyük kaynak, opak küre, teğet ışınlar ve perde var. 
 export const extendedShadowConeFigures: Record<string, FigureDef> = {
   [extendedConeTitle]: { caption: "Perdeyi üç konuma taşı. Yandan sınır ışınlarına, önden iç ve dış bölgelere bak.", alt, param: { label: "Kaynak ile perde arası", min: 10, max: 14, step: 2, init: 10, unit: "cm" }, draw: coneAt },
   [beforeApexTitle]: { caption: "10 cm, koni ucundan önce.", alt, draw: () => coneAt(10) },
-  [apexScreenTitle]: { caption: "12 cm, koni ucunda.", alt, draw: () => coneAt(12) },
+  [apexScreenTitle]: { caption: "Perde 12 cm’de, iç gölge konisinin tam ucunda.", alt, draw: () => coneAt(12) },
   [afterApexTitle]: { caption: "14 cm, koni ucunun arkasında.", alt, draw: () => coneAt(14) },
 };

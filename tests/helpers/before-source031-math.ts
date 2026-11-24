@@ -154,6 +154,8 @@ additions.add("yay-dalgalari-tepe-cukur-karsilasma-sekli");
 additions.add("su-dalgalari-duz-engel-cephe-acisi");
 additions.add("ses-deprem-dalgalari-desibel-isaretleri");
 additions.add("ses-deprem-dalgalari-sonar-sure-sekil");
+additions.add("isik-bilgisi-ayni-duvarda-iki-alici");
+additions.add("golge-yari-golge-uc-gozlemci-k-l-m");
 
 export function beforeSource031Questions<T extends { id: string }>(questions: readonly T[]) {
   return questions.filter(({ id }) => !additions.has(id));
@@ -229,7 +231,7 @@ export function beforeSource031Teaching(
   id: string,
   value: unknown,
 ): unknown {
-  if (surface === "lessons" && (id === "sivilarin-kaldirma-kuvveti" || id === "yay-dalgalari" || id === "dalgalara-giris" || id === "su-dalgalari" || id === "ses-deprem-dalgalari") && value) {
+  if (surface === "lessons" && (id === "sivilarin-kaldirma-kuvveti" || id === "yay-dalgalari" || id === "dalgalara-giris" || id === "su-dalgalari" || id === "ses-deprem-dalgalari" || id === "isik-bilgisi" || id === "golge-yari-golge") && value) {
     const lesson = value as Lesson;
     return { ...lesson, questions: beforeSource031Questions(lesson.questions) };
   }
