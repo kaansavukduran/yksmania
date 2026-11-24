@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.146.0 · Ses düzeyi ve şiddet
+
+Yayın adayı. Desibel ölçeğinde bir ses örneği seç. Her 10 dB artışın şiddeti nasıl değiştirdiğini gör. Kopya Kağıdı 15 düzeylik tabloyu ve 20 dB farkın hesabını iki ayrı çözüm çiziminde açıyor.
+
 # ÖSYM Mania 0.145.0 · Gerilim, tel boyu ve frekans
 
 Yayın adayı. İlk düzende ağırlık sayısını, ikincide titreşen tel boyunu değiştir. Kopya Kağıdı her iki deneyde frekansın hangi değişimle iki katına çıktığını gösteriyor.

@@ -1,3 +1,9 @@
+# Desibel ve ses şiddeti · 0.146.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 165, basılı 163. 0–140 dB cetvelindeki 15 değer ve yaklaşık örnekleri ayrı semantik tabloda duruyor. Hareketli işaret dB düzeyinin hangi şiddete karşılık geldiğini W/m² ile gösteriyor. 50, 60 ve 70 dB işaretli ayrı iki çözüm çizimi 20 dB ile 100 kat şiddet oranını açıklıyor.
+
+Check, 325 çevrimdışı dosya, 2.216 odaklı birim ve altı Chromium akışı geçti. 320 px büyük yazıda uç değerler, kaynak tablosu ve çözüm adımları incelendi. Sıradaki aynı fiziksel sayfanın keman ve piyano tınıları.
+
 # Tel gerilimi ve titreşen boy · 0.145.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 165, basılı 163. İlk düzende K ve M tellerinin boyu ve çapı aynı. Bir ve iki G ağırlığından başlayıp gerilimi dört G’ye çıkar. İkinci düzende iki ağırlığı sabit tutup titreşen K telini kısalt. İki deneyin grafiği aynı zaman ölçeğinde frekans oranını gösteriyor.
@@ -834,7 +840,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 295 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 298 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
 | TYT Biyoloji | 36 / 36 | 22 · 80 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 14 |
 | TYT Tarih | 24 / 24 | 14 · 41 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 10 |
@@ -847,7 +853,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **405 · 1790** | **6.669 / 6.669 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
+| **Toplam** | **510 / 510** | **405 · 1793** | **6.669 / 6.669 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

@@ -1,6 +1,7 @@
 import { circle, fmt, poly, pt, seg, txt, v, vec, type El, type FigureDef, type FigureFrame, type Tone, type V } from "./figureKit";
 import { mebiSeismicFocusFigure } from "./mebiSeismicFocusFigure";
 import { bellJarCases, bellJarTitle } from "../mebiSoundMedium";
+import { intensityRatio, soundLevelCases, soundLevelDifferenceTitle, soundLevelLimits, soundLevelRatioTitle, soundLevelTitle } from "../mebiSoundLevel";
 import { animalPitchAt, animalPitchEqualTitle, animalPitchTitle, pitchStageLabels, pitchWindowMs } from "../mebiPitchSamples";
 import { bottleBlowTitle, bottleFill, bottlePitchAt, bottlePitchModes, bottlePitchTitle, bottleStrikeTitle } from "../mebiBottlePitch";
 import { wireAt, wireDiameter, wireDrawingTitle, wireFrequencyTitle, wireLengthM, wirePairTitle, wireStages, wireTensionN } from "../mebiWirePitch";
@@ -269,6 +270,54 @@ const bottlePitch: FigureDef = {
   draw: (percent, step) => bottlePitchFrame(percent, step === 1),
 };
 
+function soundLevelFrame(db: number, compare?: "difference" | "ratio"): FigureFrame {
+  const x = db / 10;
+  const label = soundLevelCases.find(([value]) => value === db)?.[1] ?? "Ölçekte seçilen düzey";
+  const ticks = soundLevelCases.flatMap(([value]): El[] => {
+    const major = value % 30 === 0 || value === 140;
+    return [
+      seg(v(value / 10, 0.78), v(value / 10, major ? 0.1 : 0.46), { tone: "ink", thin: true }),
+      ...(major ? [txt(v(value / 10, -0.07), String(value), "s", { tone: "ink", small: true })] : []),
+    ];
+  });
+  const exponent = Math.log10(intensityRatio(0, db)) - 12;
+  const exponentText = String(exponent).replace("-", "−");
+  return {
+    els: [
+      poly([v(0, 0.78), v(14, 0.78), v(14, 1.09), v(0, 1.09)], { tone: "b", fill: "b", thin: true }),
+      ...ticks,
+      ...(compare ? [
+        seg(v(5, 1.09), v(5, 1.67), { tone: "a" }),
+        seg(v(6, 1.09), v(6, 1.67), { tone: "b" }),
+        seg(v(7, 1.09), v(7, 1.67), { tone: "c" }),
+        vec(v(5, 1.76), v(6, 1.76), { tone: "a" }),
+        vec(v(6, 1.76), v(7, 1.76), { tone: "c" }),
+        txt(v(6, 2.55), "20 dB fark", "n", { tone: "ink", small: true }),
+      ] : [
+        circle(v(x, 1.08), 0.17, { tone: "a", fill: "a", bold: true }),
+        seg(v(x, 1.26), v(x, 2.05), { tone: "a", bold: true }),
+        txt(v(x, 2.17), `${db} dB`, "n", { tone: "a", small: true }),
+      ]),
+    ],
+    readout: compare === "ratio" ? [
+      "50 dB’den 60 dB’ye 10 kat. 60 dB’den 70 dB’ye 10 kat.",
+      `Toplam şiddet oranı ${intensityRatio(50, 70)}.`,
+    ] : compare === "difference" ? ["50, 60 ve 70 dB ölçek üzerinde. İki adım toplam 20 dB."] : [
+      `${label}, ${db} dB. Örnek koşullardaki temsilî düzey.`,
+      `Bu düzeyin şiddeti 10 üzeri ${exponentText} W/m².`,
+      "Her 10 dB adımında şiddet on katına çıkar.",
+    ],
+  };
+}
+
+const soundLevel: FigureDef = {
+  caption: "0 ile 140 dB arasında gez. Aynı büyüklükteki 10 dB aralıklarının şiddette on kat değişime karşılık geldiğini izle.",
+  alt: "Yatay desibel ölçeğinde 0 ile 140 arasında eşit aralıklı işaretler. Dikey işaret, seçilen temsilî ses düzeyini gösterir.",
+  param: { label: "Temsilî ses düzeyi", min: soundLevelLimits.min, max: soundLevelLimits.max,
+    step: soundLevelLimits.step, init: soundLevelLimits.initial, unit: " dB" },
+  draw: (db) => soundLevelFrame(db),
+};
+
 const animalPitch: FigureDef = {
   caption: "İki çizgide de aynı 10 ms içinde tam salınımları say. Sonraki adımda genlikleri eşitle ve sayıları yeniden kontrol et.",
   alt: "Aslanın temsilî basınç grafiği üstte, kanaryanınki altta. İkisi de sıfırdan 10 milisaniyeye kadar uzanır. Üstte bir, altta üç tam salınım vardır.",
@@ -482,6 +531,17 @@ export const physicsFiguresSound: Record<string, Record<string, FigureDef>> = {
     ])),
     "Yükseklik sözcüğünün iki anlamını çöz": pitch,
     [animalPitchTitle]: animalPitch,
+    [soundLevelTitle]: soundLevel,
+    [soundLevelDifferenceTitle]: {
+      caption: "Ölçekte 50 dB’den 70 dB’ye uzanan iki adımı say.",
+      alt: "Desibel ölçeğinde 50, 60 ve 70 işaretli. Oklar 10 dB’lik iki artışı gösterir.",
+      draw: () => soundLevelFrame(70, "difference"),
+    },
+    [soundLevelRatioTitle]: {
+      caption: "Her 10 dB adımında şiddet çarpanını onla çarp.",
+      alt: "50, 60 ve 70 dB arasında iki ok. Her okun şiddet çarpanı on, toplam oran yüz.",
+      draw: () => soundLevelFrame(70, "ratio"),
+    },
     [bottlePitchTitle]: bottlePitch,
     [wirePairTitle]: wirePair,
     [tensionComparisonTitle]: tensionComparison,

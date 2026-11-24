@@ -1,8 +1,8 @@
 {
-  "version": "0.145.0",
+  "version": "0.146.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Eş tellerde gerilim veya titreşen boyu değiştir. İki ayrı düzenekte de sesin frekansını aynı süreli grafiklerle karşılaştır.",
-    "en": "Adjust string tension or vibrating length in two shared-time models. Compare the results and work out how to double the pitch."
+    "tr": "Desibel ölçeğinde bir örnek ses seç. Ses düzeyi ile şiddeti kendi birimleriyle oku ve 20 dB farkın oranını hesapla.",
+    "en": "Choose a sound on the decibel scale. Read sound level and intensity in their own units and calculate the intensity ratio for a 20 dB change."
   }
 }

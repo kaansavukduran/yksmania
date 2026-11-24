@@ -1,0 +1,52 @@
+import { expect, test } from "@playwright/test";
+import { soundLevelDifferenceTitle, soundLevelExample, soundLevelRatioTitle, soundLevelTitle } from "../../src/learning/mebiSoundLevel";
+import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse";
+import { svgLayoutAudit } from "./helpers/svgAudit";
+
+test("desibel işaretleri çevrimdışı şiddeti ayrı birimle ve doğru çarpanla gösterir", async ({ page, context }, info) => {
+  await page.setViewportSize({ width: 320, height: 870 });
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  await openCourse(page, { lesson: "ses-deprem-dalgalari", search: "Ses ve deprem" });
+  const toc = page.getByRole("navigation", { name: "Anlatım içeriği", exact: true });
+  const item = toc.getByRole("button", { name: soundLevelTitle, exact: true });
+  if (!(await item.isVisible())) await toc.getByText("İçindekiler", { exact: true }).press("Enter");
+  await item.press("Enter");
+  const scope = `figure[data-section-figure="${soundLevelTitle}"]`;
+  const figure = page.locator(scope);
+  const svg = figure.getByRole("img");
+  await expect(svg).toHaveAccessibleName(/0 ile 140 arasında/i);
+  await expect(figure).toContainText("Trafikteki otomobil, 70 dB.");
+  const level = figure.getByRole("slider", { name: "Temsilî ses düzeyi", exact: true });
+  await level.press("Home");
+  await expect(figure).toContainText("Referans düzey, 0 dB.");
+  await expect(figure).toContainText("10 üzeri −12 W/m².");
+  await level.press("End");
+  await expect(figure).toContainText("Havai fişek, 140 dB.");
+  await expect(figure).toContainText("10 üzeri 2 W/m².");
+  await svg.evaluate(node => node.scrollIntoView({ block: "center" }));
+  await svg.screenshot({ path: info.outputPath("sound-level146.png") });
+  expect((await page.evaluate(svgLayoutAudit, { scope, figuresOnly: true, explore: true })).issues).toEqual([]);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Kopya Kağıdı 15 kaynak düzeyini ve 100 kat sonucu kendi çiziminde açar", async ({ page, context }) => {
+  await prepare(page);
+  await context.setOffline(true);
+  await page.goto("/#/cheatsheets?topic=detail-130");
+  const section = page.locator(".cheat-section").filter({ has: page.getByRole("heading", { name: soundLevelTitle, exact: true }) });
+  const table = section.getByRole("table");
+  await expect(table.locator("tbody tr")).toHaveCount(15);
+  await expect(table.getByRole("row", { name: "0 Referans düzey", exact: true })).toBeVisible();
+  await expect(table.getByRole("row", { name: "140 Havai fişek", exact: true })).toBeVisible();
+  const example = page.locator(".cheat-examples .worked-example").filter({ hasText: soundLevelExample.title });
+  await example.locator(":scope > summary").press("Enter");
+  const solution = example.locator(".cheat-solution");
+  await expect(solution.getByRole("img")).toHaveCount(0);
+  await solution.locator("summary").press("Enter");
+  const difference = solution.locator(`figure[data-section-figure="${soundLevelDifferenceTitle}"]`);
+  const ratio = solution.locator(`figure[data-section-figure="${soundLevelRatioTitle}"]`);
+  await expect(difference).toContainText("İki adım toplam 20 dB.");
+  await expect(ratio).toContainText("Toplam şiddet oranı 100.");
+});
