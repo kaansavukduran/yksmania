@@ -15,11 +15,13 @@ export function doorPressureState(innerMinusOuter: number) {
 export const intakeHeightM = 0.3;
 const density = 1000;
 const gravity = 10;
-export const intakeThresholdKPa = intakeHeightM * density * gravity / 1000;
+export const liquidLiftThresholdKPa = (heightM: number) => heightM * density * gravity / 1000;
+export const intakeThresholdKPa = liquidLiftThresholdKPa(intakeHeightM);
 
-export function liquidIntakeState(dropKPa: number, valveOpen: boolean) {
+export function liquidIntakeState(dropKPa: number, valveOpen: boolean, heightM = intakeHeightM) {
   const riseM = valveOpen ? dropKPa * 1000 / (density * gravity) : 0;
-  return { riseM, reachedInlet: valveOpen && dropKPa >= intakeThresholdKPa, canEnter: valveOpen && dropKPa > intakeThresholdKPa };
+  const threshold = liquidLiftThresholdKPa(heightM);
+  return { riseM, reachedInlet: valveOpen && dropKPa >= threshold, canEnter: valveOpen && dropKPa > threshold };
 }
 
 export const doorPressureSection: GuideSection = {
