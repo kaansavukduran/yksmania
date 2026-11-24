@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.116.0 · X ışını ve gama ışını
+
+Yayın adayı. Kalınlığı değiştirip X ışınının iki yoldan algılayıcıya ne kadar ulaştığını karşılaştır. Gama çiziminde çekirdeğin üst düzeyden alt düzeye geçişini aç. Kopya Kağıdı iki ayrı çözümlü örnek içeriyor.
+
 # ÖSYM Mania 0.115.0 · Mor ışık ve morötesi
 
 Yayın adayı. Dalga boyu işaretini yaklaşık 380 nm sınırından geçir. Kopya Kağıdı’nda 350 ve 440 nm’yi aynı ölçekle karşılaştır.

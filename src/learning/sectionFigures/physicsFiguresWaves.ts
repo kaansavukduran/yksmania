@@ -26,6 +26,7 @@ import { surfaceAmplitudeM, surfaceCrestX, surfaceMarkerM, surfaceWavePosition, 
 import { radioFrequencyMHz, radioWavefrontPoints, radioWavefrontRadii, radioWavelengthMeters, radioWaveTitle } from "../mebiRadioWaves";
 import { microwaveOvenEnergyPath, microwaveOvenStages, microwaveOvenTitle, microwaveOvenWavelengthLabel } from "../mebiMicrowaveOven";
 import { boundaryWavelength, ultravioletBoundaryTitle, visibleBoundaryNm, wavelengthRegion } from "../mebiUltravioletBoundary";
+import { gammaPhotonStages, gammaPhotonTitle, xRayDetectorTitle, xRayLayers, xRaySignal } from "../mebiXAndGamma";
 
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
@@ -442,6 +443,63 @@ const giris: Record<string, FigureDef> = {
         poly([v(nm - 3, 9), v(nm + 3, 9), v(nm, 2)], { tone: "a", fill: "a", bold: true }),
       ],
       readout: [`${fmt(nm)} nm · ${wavelengthRegion(nm)}`],
+    }),
+  },
+  [xRayDetectorTitle]: {
+    caption: "Kalınlığı artır. Sağdaki algılayıcı çubukları, iki yoldan geçebilen ışın payını gösterir.",
+    alt: "Soldaki X ışını kaynağından iki eşit demet çıkıyor. Üstte yumuşak doku yolu ve altta kemik içeren yol var. Sağdaki iki çubuk, algılayıcıda ölçülen temsili sinyalleri gösteriyor.",
+    param: { label: "Model kalınlığı", min: xRayLayers.min, max: xRayLayers.max, step: 1, init: xRayLayers.initial, unit: " birim" },
+    draw: (layers) => {
+      const { soft, bone } = xRaySignal(layers);
+      const paths = [{ y: 4.6, signal: soft, label: "Yumuşak doku", tone: "b" as const }, { y: 0, signal: bone, label: "Kemikli yol", tone: "c" as const }];
+      const detectorX = 11.4;
+      const detectorWidth = 4.2;
+      return {
+        els: [
+          txt(v(0.8, 6.72), "Kaynak", "n", { small: true, bold: true }),
+          txt(v(13.5, 6.72), "Algılayıcı", "n", { small: true, bold: true }),
+          ...paths.flatMap(({ y, signal, label, tone }) => {
+            const end = 4 + layers * 1.15;
+            const observed = detectorX + detectorWidth * signal / 100;
+            return [
+              circle(v(0.8, y), 0.27, { tone: "a", fill: "a" }),
+              vec(v(1.2, y), v(3.85, y), { tone: "a", bold: true }),
+              poly([v(4, y - 0.55), v(end, y - 0.55), v(end, y + 0.55), v(4, y + 0.55)], { tone, fill: tone }),
+              txt(v(5.73, y + 1.2), label, "n", { small: true, bold: true }),
+              vec(v(end + 0.15, y), v(10.25, y), { tone, thin: true }),
+              seg(v(10.45, y - 0.75), v(10.45, y + 0.75), { tone: "ink", bold: true }),
+              seg(v(detectorX, y), v(detectorX + detectorWidth, y), { tone: "muted", thin: true }),
+              seg(v(detectorX, y), v(observed, y), { tone, bold: true }),
+              txt(v(13.5, y - 0.55), `%${fmt(signal, 0)}`, "s", { small: true, bold: true }),
+            ];
+          }),
+        ],
+        readout: [`Yumuşak doku yolu %${fmt(soft, 0)}, kemikli yol %${fmt(bone, 0)}.`],
+      };
+    },
+  },
+  [gammaPhotonTitle]: {
+    caption: "İleri düğmesiyle çekirdeğin enerji değişimini ve çıkan gama fotonunu göster.",
+    alt: "Düşey eksende çekirdeğin üst ve alt enerji düzeyi gösteriliyor. Aşağı geçiş oku ve sağa çıkan dalgalı gama fotonu çizgisi ikinci adımda açılır.",
+    steps: gammaPhotonStages,
+    draw: (_value, step) => ({
+      els: [
+        vec(v(0.3, 0.2), v(0.3, 5.8), { tone: "ink" }),
+        txt(v(0.3, 6.05), "Enerji", "n", { small: true, bold: true }),
+        seg(v(1.65, 4.55), v(6.15, 4.55), { tone: "b", bold: true }),
+        seg(v(1.65, 1.05), v(6.15, 1.05), { tone: "c", bold: true }),
+        txt(v(3.85, 4.83), "Başlangıç", "n", { small: true }),
+        txt(v(3.85, 0.79), "Son düzey", "s", { small: true }),
+        txt(v(12.7, 2.8), " "),
+        circle(v(3.85, step === 0 ? 4.55 : 1.05), 0.16, { tone: "a", fill: "a" }),
+        ...(step === 1 ? [
+          vec(v(3.85, 4.35), v(3.85, 1.32), { tone: "a", bold: true }),
+          wave(sine(6.75, 11.63, 0.25, 1.22, 6.75, 2.8), "a"),
+          vec(v(11.66, 2.8), v(12.4, 2.8), { tone: "a" }),
+          txt(v(9.3, 3.35), "Gama fotonu", "n", { small: true, bold: true }),
+        ] : []),
+      ],
+      readout: [step === 0 ? "Çekirdek üst enerji düzeyinde." : "Çekirdek alt enerji düzeyinde. Enerjinin bir kısmı gama fotonuyla taşındı."],
     }),
   },
   "Mekanik ve elektromanyetik ayrımı ortam gereksinimidir": {

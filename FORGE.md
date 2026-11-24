@@ -1,3 +1,9 @@
+# X ışını yolları ve gama geçişi · 0.116.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 152, basılı 150. X ışını kaynağı ile algılayıcı arasındaki iki yol, kalınlıkla değişen temsili sinyali gösteriyor. Çekirdeğin gama fotonu yayması ayrı enerji düzeyleri çiziminde açılıyor. İki örneğin çözüm çizimi ve X ışını tablosu ayrı Kopya Kağıdı’nda. [FDA görüntüleme ilkesi](https://www.fda.gov/radiation-emitting-products/medical-imaging/medical-x-ray-imaging) · [NASA gama ışınları](https://science.nasa.gov/ems/12_gammarays/)
+
+Check, 14 birim, derleme ve altı gerçek Chromium akışı geçti. İlk tarayıcı testinde açık olan İçindekiler yeniden kapatılıyordu. Test, bölüm düğmesi gizliyse İçindekiler’i açacak şekilde düzeltildi ve aynı akış tekrar geçti. İki 375 px çizim, klavye ve çevrimdışı veri sınandı. Sıradaki kaynak görseli X ışınıyla oluşan el görüntüsü.
+
 # Görünür ışığın mor ucu ve morötesi · 0.115.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. Morötesi örneği, 300–500 nm aralığının büyütüldüğü bir ölçekle açıklanıyor. Yaklaşık 380 nm çizgisi ile 350 ve 440 nm’nin konumları aynı modelden okunuyor. Ayrı Kopya Kağıdı sınır tablosunu ve çizimli çözümü içeriyor. [NASA görünür ışık ve mor uç](https://science.nasa.gov/ems/09_visiblelight/) · [NASA morötesi sözlük girdisi](https://science.nasa.gov/glossary/u/)
@@ -640,7 +646,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 252 | 315 / 315 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 254 | 315 / 315 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
 | TYT Biyoloji | 36 / 36 | 22 · 80 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 14 |
 | TYT Tarih | 24 / 24 | 14 · 41 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 10 |
@@ -653,7 +659,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **405 · 1747** | **6.665 / 6.665 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
+| **Toplam** | **510 / 510** | **405 · 1749** | **6.665 / 6.665 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
