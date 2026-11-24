@@ -1,8 +1,8 @@
 {
-  "version": "0.88.0",
+  "version": "0.89.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Hareketli pistonda ısıtma, gaz ekleme, yük ve dış basıncı karşılaştır. Son basıncı ve hacmi çizimden ve tablodan oku.",
-    "en": "Compare heating, added gas, piston load and external pressure. Read the final pressure and volume from the model and reference table."
+    "tr": "Basınç dersinde esnek zarın ayırdığı iki gazı ve esnek balonun dış basınçla dengesini incele. Kopya Kağıdı’nda denge tablosu ve iki çizimli çözüm var.",
+    "en": "Compare gas on either side of a flexible membrane and a balloon balancing atmospheric pressure. The cheat sheet includes a table and two worked diagrams."
   }
 }

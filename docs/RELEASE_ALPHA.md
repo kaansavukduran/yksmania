@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.89.0 · Esnek zar ve balonda gaz dengesi
+
+Yayın adayı. X gazını ısıt, zarın iki yanında hacmin nasıl dağıldığını izle. Ardından balonun sıcaklığını, gaz miktarını ve dış basıncını ayrı deneylerde karşılaştır. Kopya Kağıdı’nda iki örneği çözüm çizimleriyle aç.
+
 # ÖSYM Mania 0.88.0 · Hareketli pistonun son dengesi
 
 Yayın adayı. Isıtılan gazı, gaz eklemeyi, piston yükünü ve dış basıncı ayrı deneylerde karşılaştır. İlk ve son dengeyi aynı çizimde oku. Kopya Kağıdı’nda 450 K örneğinin hacim adımında ilgili çizimi aç.
