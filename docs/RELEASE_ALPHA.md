@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.100.0 · Sprey şişesi
+
+Yayın adayı. Hava borusunun ağzındaki basınç farkını değiştir. Suyun çıkışa ne zaman ulaştığını ve püskürtmenin hangi koşulda başlayabildiğini çizimde karşılaştır. Kopya Kağıdı’nda dört durumu ve 2 kPa hesabını aç.
+
 # ÖSYM Mania 0.99.0 · Çevrimdışı hazırlığı yeniden dene
 
 Yayın adayı. Çevrimdışı hazırlık geçici bir kayıt hatasıyla durduğunda uygulama aynı sayfadan yeniden deniyor. Bağlantı yoksa geri geldiğinde devam ediyor.

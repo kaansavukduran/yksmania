@@ -1,8 +1,8 @@
 {
-  "version": "0.99.0",
+  "version": "0.100.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Çevrimdışı hazırlık geçici bir kayıt hatasıyla durduğunda uygulama aynı sayfada yeniden dener. Bağlantı yoksa geri gelmesini bekler.",
-    "en": "When a temporary service worker registration error interrupts offline preparation, the app retries without reloading the page."
+    "tr": "Sprey şişesinde hava akımını ve düşey su sütununu takip et. Kopya Kağıdı’nda 1,5 kPa eşiğini ve çizimli örneği incele.",
+    "en": "Follow the air stream and the rising water column in an atomizer. The cheat sheet includes the threshold and a worked diagram."
   }
 }
