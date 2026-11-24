@@ -1,8 +1,8 @@
 {
-  "version": "0.141.0",
+  "version": "0.142.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Fanustaki havayı değiştir ve çalar saatin ses yolunu izle. Ses süratini sıcaklık, ortam ve tuzluluk tablolarıyla karşılaştır.",
-    "en": "Compare how sound travels from a clock inside a bell jar. Read speed data by temperature, medium, and salinity in accessible tables."
+    "tr": "Aslan ve kanarya örneğinde aynı süredeki salınımları say. Genlikleri eşitle ve frekansın nasıl korunduğunu incele.",
+    "en": "Count cycles over the same time window for the lion and canary examples. Equalize their amplitudes and compare the unchanged frequencies."
   }
 }

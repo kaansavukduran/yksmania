@@ -1,6 +1,7 @@
 import { circle, poly, pt, seg, txt, v, vec, type El, type FigureDef, type FigureFrame, type Tone, type V } from "./figureKit";
 import { mebiSeismicFocusFigure } from "./mebiSeismicFocusFigure";
 import { bellJarCases, bellJarTitle } from "../mebiSoundMedium";
+import { animalPitchAt, animalPitchEqualTitle, animalPitchTitle, pitchStageLabels, pitchWindowMs } from "../mebiPitchSamples";
 
 /*
  * Ses ve deprem dalgaları. The longitudinal wave moves real particle positions
@@ -122,6 +123,42 @@ const longitudinal: FigureDef = {
       readout: [
         `Kırmızı taneciğin denge konumundan uzaklığı: ${(disp(xT) / A).toLocaleString("tr-TR", { maximumFractionDigits: 2 })} × genlik (hep −1 ile +1 arasında kalır)`,
         "Sıkışmada basınç yüksek, seyrelmede düşüktür. Dalga boyu: iki ardışık sıkışma arası. Maddesiz boşlukta (vakum) bu titreşim kurulamaz.",
+      ],
+    };
+  },
+};
+
+const animalPitch: FigureDef = {
+  caption: "İki çizgide de aynı 10 ms içinde tam salınımları say. Sonraki adımda genlikleri eşitle ve sayıları yeniden kontrol et.",
+  alt: "Aslanın temsilî basınç grafiği üstte, kanaryanınki altta. İkisi de sıfırdan 10 milisaniyeye kadar uzanır. Üstte bir, altta üç tam salınım vardır.",
+  steps: [...pitchStageLabels],
+  draw: (_, step) => {
+    const samples = animalPitchAt(step === 1);
+    const chartLeft = 0;
+    const chartRight = pitchWindowMs;
+    const plots = samples.flatMap((sample, index): El[] => {
+      const base = 5.6 - 3.9 * index;
+      const values = Array.from({ length: 121 }, (_, i) => {
+        const x = pitchWindowMs * i / 120;
+        return v(x, base + sample.valueAt(x));
+      });
+      const tone = index === 0 ? "a" : "c";
+      return [
+        poly([v(chartLeft, base-1.2), v(chartRight, base-1.2), v(chartRight, base+1.2), v(chartLeft, base+1.2)], { tone: "muted", thin: true }),
+        seg(v(chartLeft, base), v(chartRight, base), { tone: "muted", thin: true }),
+        poly(values, { open: true, tone, bold: true }),
+        txt(v(chartLeft, base + 1.55), sample.label, "e", { tone, small: true }),
+      ];
+    });
+    return {
+      els: [
+        ...plots,
+        txt(v(chartLeft, -0.05), "0 ms", "e", { tone: "muted", small: true }),
+        txt(v(chartRight, -0.05), "10 ms", "w", { tone: "muted", small: true }),
+      ],
+      readout: [
+        ...samples.map(({ label, cycles, frequencyHz }) => `${label} örneği: 10 ms’de ${cycles} tam salınım. ${frequencyHz} Hz.`),
+        step === 1 ? "Genlikler eşit. Salınım sayıları ve frekanslar aynı kaldı." : "Düşey eksen basınç farkı. Örnek frekanslar öğretim için seçildi.",
       ],
     };
   },
@@ -303,6 +340,12 @@ export const physicsFiguresSound: Record<string, Record<string, FigureDef>> = {
       } satisfies FigureDef,
     ])),
     "Yükseklik sözcüğünün iki anlamını çöz": pitch,
+    [animalPitchTitle]: animalPitch,
+    [animalPitchEqualTitle]: {
+      caption: "Genlikler eşitken aynı 10 ms içinde iki çizginin salınımlarını say.",
+      alt: "Eşit genlikli iki dalga aynı süreye çizilmiş. Üstte bir, altta üç tam salınım var.",
+      draw: () => animalPitch.draw(0, 1),
+    },
     "Yankıda mesafeyi iki kez say": echo,
     "Kaynağı değiştirerek notayı değiştir": stringLen,
     "Büyüklük ve yerel şiddet farklıdır": quake,

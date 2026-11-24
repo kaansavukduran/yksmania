@@ -1,4 +1,5 @@
 import { useId, useRef, useState, type ReactNode } from "react";
+import { ZoomIn } from "lucide-react";
 import "./sourceQuestionFigure.css";
 
 export type SourceMathNode =
@@ -143,8 +144,10 @@ function localImage(src: string) {
 
 function ImageFigure({
   figure,
+  imageLabel,
 }: {
   figure: Extract<SourceQuestionFigureSpec, { kind: "image" }>;
+  imageLabel?: string;
 }) {
   const descriptionId = useId();
   const [failed, setFailed] = useState(false);
@@ -191,7 +194,10 @@ function ImageFigure({
             height={figure.height}
             onError={() => setFailed(true)}
           />
-          <span className="source-figure-zoom-label">Görseli büyüt</span>
+          <span className={imageLabel ? "source-figure-zoom-label source-figure-zoom-compact" : "source-figure-zoom-label"}>
+            {imageLabel ?? "Görseli büyüt"}
+            {imageLabel && <ZoomIn aria-hidden="true" size="1em" />}
+          </span>
         </button>
       )}
       <span id={descriptionId} className="sr-only">
@@ -310,9 +316,11 @@ function angleArc(arc: AngleArc) {
 export function SourceQuestionFigure({
   figure,
   staticImage = false,
+  imageLabel,
 }: {
   figure: SourceQuestionFigureSpec;
   staticImage?: boolean;
+  imageLabel?: string;
 }) {
   const uid = useId().replaceAll(":", "");
   if (!figure.alt.trim()) return null;
@@ -323,7 +331,7 @@ export function SourceQuestionFigure({
           validImageFigure(figure) ? (
             <img className="source-figure-static" src={figure.src} alt={figure.alt} width={figure.width} height={figure.height} />
           ) : <p className="source-figure-fallback">{figure.alt}</p>
-        ) : <ImageFigure key={figure.src} figure={figure} />
+        ) : <ImageFigure key={figure.src} figure={figure} imageLabel={imageLabel} />
       ) : figure.kind === "table" ? (
         <table className="source-figure-table">
           <caption>{figure.alt}</caption>

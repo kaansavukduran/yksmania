@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.142.0 · Genlik ve frekans
+
+Yayın adayı. İki fotoğrafı ve aynı süreye çizilmiş örnek dalgaları aç. Genlikleri eşitleyip kaç tam salınım olduğunu say. Kopya Kağıdı bu sayılardan frekansı hesaplıyor.
+
 # ÖSYM Mania 0.141.0 · Fanusta ses ve ortam
 
 Yayın adayı. Taneciğin titreşim yönünü ve sıkışmanın ilerleyişini ayrı izle. Fanustaki hava azalırken çalar saat çalışmaya devam eder. Kopya Kağıdı üç gözlem durumunu ve sıcaklık, ortam, tuzluluk tablolarını çevrimdışı açıyor.

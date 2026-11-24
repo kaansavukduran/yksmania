@@ -36,6 +36,7 @@ import { periodicSpringExample, periodicSpringSection } from "../mebiPeriodicSpr
 import { springDensityExample, springDensitySection } from "../mebiSpringDensity";
 import { stroboscopeExample, stroboscopeSection, stroboscopeTitle } from "../mebiStroboscope";
 import { bellJarSection, soundBellExample, soundMediumTable, soundSpeedExample } from "../mebiSoundMedium";
+import { animalPitchExample, animalPitchSection } from "../mebiPitchSamples";
 import { waterRefractionExample, waterRefractionSection, waterRefractionTitle } from "../mebiWaterRefraction";
 import { waterSlopeExample, waterSlopeSection } from "../mebiWaterSlope";
 import { twoTankDepthSection, waterDepthExample } from "../mebiWaterDepth";
@@ -517,10 +518,11 @@ export function studyGuide(lessonId: string) {
         if (section.title === seismicFocusTitle) return [seismicFocusSection];
         if (section.title === "Ses bir ortam titreşimidir") return [{ ...section, figureTitle: section.title }, bellJarSection];
         if (section.title === "Sürati kaynaktan ayır") return [{ ...section, table: soundMediumTable }];
+        if (section.title === "Yükseklik sözcüğünün iki anlamını çöz") return [section, animalPitchSection];
         return [section];
       }),
-      examples: [...guide.examples, seismicFocusExample, soundBellExample, soundSpeedExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfadaki yer dalgası kesiti fay ve kaya parçalarıyla yeniden çizildi. Yol uzunlukları ve süratler özgün düzgün kaya modeline aittir. Fiziksel 163, basılı 161. sayfadaki ses kaynağı ve hava tanecikleri çizildi. Cam fanus ve çalar saat modeli, aynı sayfanın üç ses sürati karşılaştırmasıyla çalışılıyor.`,
+      examples: [...guide.examples, seismicFocusExample, soundBellExample, soundSpeedExample, animalPitchExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfadaki yer dalgası kesiti fay ve kaya parçalarıyla yeniden çizildi. Yol uzunlukları ve süratler özgün düzgün kaya modeline aittir. Fiziksel 163, basılı 161. sayfadaki ses kaynağı ve hava tanecikleri çizildi. Cam fanus ve çalar saat modeli, aynı sayfanın üç ses sürati karşılaştırmasıyla çalışılıyor. Fiziksel 164, basılı 162. sayfadaki iki ses kaynağı ayrı lisanslı fotoğraflar ve temsilî eş zaman grafikleriyle karşılaştırılıyor.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

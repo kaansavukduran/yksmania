@@ -5,6 +5,8 @@ import { thermographySourceURL } from "../mebiThermography";
 import { thermographyPhoto } from "./mebiThermographyPhoto";
 import { coastalWaterLicence, coastalWaterSource } from "../mebiCoastalWater";
 import { coastalWaterPhoto } from "./mebiCoastalWaterPhoto";
+import { animalPitchTitle } from "../mebiPitchSamples";
+import { pitchSamplePhotos } from "./mebiPitchSamplePhotos";
 import { visibleMirrorRayTitle } from "../mebiVisibleMirror";
 import { visibleMirrorPhoto, visibleMirrorPhotoSource } from "./mebiVisibleMirrorPhoto";
 import { handRadiograph, handRadiographSource } from "./mebiHandRadiograph";
@@ -402,6 +404,8 @@ type LessonPhoto = {
   url: string;
   credit: string;
   licence?: string;
+  licenceLabel?: string;
+  imageLabel?: string;
 };
 export const sectionImageFigures = new Map<string, Map<string, LessonPhoto>>([
   ["dalgalara-giris", waveLessonPhotos],
@@ -410,8 +414,26 @@ export const sectionImageFigures = new Map<string, Map<string, LessonPhoto>>([
     url: coastalWaterSource,
     credit: "RenataAp · Wikimedia Commons · 960 px",
     licence: coastalWaterLicence,
+    licenceLabel: "CC BY-SA 4.0",
   }]])],
 ]);
+
+function LessonPhotoView({ photo }: { photo: LessonPhoto }) {
+  return (
+    <>
+      <SourceQuestionFigure figure={photo.figure} imageLabel={photo.imageLabel} />
+      <a className="small" href={photo.url} target="_blank" rel="noopener noreferrer">
+        {photo.credit}
+      </a>
+      {photo.licence && (
+        <>
+          {" · "}
+          <a className="small" href={photo.licence} target="_blank" rel="noopener noreferrer">{photo.licenceLabel ?? "Lisans"}</a>
+        </>
+      )}
+    </>
+  );
+}
 
 export function SectionFigure({
   guideId,
@@ -429,20 +451,15 @@ export function SectionFigure({
   return (
     <>
       {label && <p className="small muted">{label}</p>}
-      {photo ? (
-        <>
-          <SourceQuestionFigure figure={photo.figure} />
-          <a className="small" href={photo.url} target="_blank" rel="noopener noreferrer">
-            {photo.credit}
-          </a>
-          {photo.licence && (
-            <>
-              {" · "}
-              <a className="small" href={photo.licence} target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
-            </>
-          )}
-        </>
-      ) : def && <SectionFigureView def={def} title={title} />}
+      {photo && <LessonPhotoView photo={photo} />}
+      {guideId === "ses-deprem-dalgalari" && title === animalPitchTitle && (
+        <div className="section-reference-photos">
+          {pitchSamplePhotos.map((reference) => (
+            <div key={reference.figure.title}><LessonPhotoView photo={reference} /></div>
+          ))}
+        </div>
+      )}
+      {def && <SectionFigureView def={def} title={title} />}
     </>
   );
 }

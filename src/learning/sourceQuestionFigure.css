@@ -228,3 +228,34 @@
     border-color: var(--accent);
   }
 }
+
+.section-reference-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
+  gap: 1rem;
+  margin-block: 0.75rem;
+}
+
+.section-reference-photos > div {
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+
+.section-reference-photos .source-question-figure {
+  margin: 0 0 0.35rem;
+}
+
+.source-figure-zoom-compact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25em;
+  padding: 0.4em 0.25em;
+  overflow-wrap: normal;
+}
+
+.source-figure-zoom-compact svg {
+  flex: none;
+  inline-size: 0.7em;
+  block-size: 0.7em;
+}
