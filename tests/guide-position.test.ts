@@ -8,6 +8,7 @@ it("keeps legacy worked-example and recall activities after new teaching is appe
     ["elektrik-alan", 8, 16],
     ["kimyasal-denge", 11, 20],
     ["dna-eslenmesi", 7, 17],
+    ["temel-kavramlar", 7, 8],
   ] as const) {
     expect(resolveGuideStep(id, oldCount, 0, count), id).toBe(count);
     expect(resolveGuideStep(id, oldCount + 1, 0, count), id).toBe(count + 1);

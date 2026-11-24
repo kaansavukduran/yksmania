@@ -38,10 +38,12 @@ describe("Forge060 TYT Matematik bölüm figürleri", () => {
   it("16 derste kayıtlı figürlerin sayısını korur", () => {
     for (const g of GUIDES) {
       expect(sectionFigureGuideIds.has(g), g).toBe(true);
-      // Forge064 asal-sayilar tanım bölümüne beşinci figürü ekledi.
-      expect(Object.keys(sectionFigures[g] ?? {}).length, g).toBe(
-        g === "bilimsel-gosterim-katsayi" || g === "asal-sayilar" ? 5 : 4,
-      );
+      const expectedCounts: Record<string, number> = {
+        "temel-kavramlar": 6,
+        "bilimsel-gosterim-katsayi": 5,
+        "asal-sayilar": 5,
+      };
+      expect(Object.keys(sectionFigures[g] ?? {}).length, g).toBe(expectedCounts[g] ?? 4);
     }
   });
 
@@ -72,6 +74,35 @@ describe("Forge060 TYT Matematik bölüm figürleri", () => {
     expect(frame("asal-sayilar", "Bölen denemesi neden karekökte biter?", 121).readout).toContain("121 = 11 × 11");
     expect(frame("asal-sayilar", "Asal toplamlarında 2’yi ayrı düşün", 19).readout).toContain("s = 19: 2 + 17.");
     expect(frame("asal-sayilar", "Asal toplamlarında 2’yi ayrı düşün", 12).readout).toContain("5 + 7");
+  });
+
+  it("draws number-line points and exact integer bounds from the same values", () => {
+    const compare = fig("temel-kavramlar", "Sayı doğrusunda sırayı ve uzaklığı ayır");
+    for (let b = -6; b <= 6; b++) {
+      const result = compare.draw(b, 0);
+      const points = result.els.filter((el) => el.k === "pt");
+      expect(points.map((point) => point.p[0])).toEqual(b === -3 ? [-3] : [-3, b]);
+    }
+    const example = fig("temel-kavramlar", "Açık ve kapalı sınırdan tam sayıları bul").draw(0, 0);
+    const points = example.els.filter((el) => el.k === "pt");
+    const endpoints = points.filter((point) => point.p[1] === 0);
+    expect(endpoints.map((point) => [point.p[0], point.hollow])).toEqual([[-4, false], [2, true]]);
+    expect(points.filter((point) => point.p[1] > 0).map((point) => point.p[0]))
+      .toEqual(Array.from({ length: 13 }, (_, n) => n - 7).filter((n) => -7 <= 2 * n + 1 && 2 * n + 1 < 5));
+  });
+
+  it("draws both linear-pair bisectors at a right angle throughout the slider", () => {
+    const diagram = fig("tyt-geo-acilar-kaynak-pekitirme-032", "Doğrusal çiftte açıortaylar");
+    for (let angle = 30; angle <= 150; angle += 2) {
+      const result = diagram.draw(angle, 0);
+      const rays = result.els.filter((el) => el.k === "ray").filter((ray) => ray.dash);
+      expect(rays).toHaveLength(2);
+      const [first, second] = rays.map((ray) => Math.atan2(ray.b[1], ray.b[0]) * 180 / Math.PI);
+      expect(first).toBeCloseTo(angle * 0.5, 10);
+      expect(second - first).toBeCloseTo(90, 10);
+      expect(result.els.filter((el) => el.k === "right")).toHaveLength(1);
+      expect(result.readout?.join(" ")).toContain("= 90°");
+    }
   });
 
   it("faktöriyel, basamak ve bölünebilme", () => {

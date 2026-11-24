@@ -17,18 +17,24 @@ const lessons = [
   "tyt-geo-cember-aci-040",
   "tyt-geo-daire-040",
   "tyt-geo-silindir-koni-kure-040",
+  "tyt-geo-trigonometrik-oranlar-040",
 ];
 
 test.use({ viewport: { width: 320, height: 900 } });
 
-test("the recovered task-list links appear with source topic labels in each normal lesson", async ({ page }) => {
+test("the verified study video links appear with source topic labels in each normal lesson", async ({ page }) => {
   test.setTimeout(120_000);
   for (const lessonId of lessons) {
     await page.goto(`./#/lesson?id=${lessonId}`);
     const panel = page.locator(`[data-video-lesson031="${lessonId}"]`);
     const groups = catalogue.filter((group) => group.lessonIds.includes(lessonId));
     await expect(panel.getByRole("heading", { name: "Konuyla ilgili videolar" })).toBeVisible();
-    await panel.locator("summary").press("Enter");
+    const alternatives = panel.locator("summary");
+    if (groups.some((group) => group.alternatives.length > 0)) {
+      await alternatives.press("Enter");
+    } else {
+      await expect(alternatives).toHaveCount(0);
+    }
     const displayed = await panel.locator("a").evaluateAll((links) => links.map((link) => ({
       href: link.getAttribute("href"),
       topics: link.querySelector(".video-topic031")?.textContent?.split(" · ") ?? [],

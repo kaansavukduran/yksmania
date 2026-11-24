@@ -60,6 +60,14 @@ export const basicsGuide: LessonGuide = {
         "Soruyu bitirirken küçük bir kontrol rutini kullan: ifade tanımlı mı, işaret mantıklı mı, seçtiğim sayı izinli mi, işlem yaklaşık mı kesin mi? Kesir sonucu için ondalık kontrol yararlı olabilir; 1/3≈0,333 yazarken yaklaşık işaretini koru. Hesap makinesi yuvarlamasını kesin eşitlik diye aktarma.",
       ],
     },
+    {
+      title: "Sayı doğrusunda sırayı ve uzaklığı ayır",
+      figureTitle: "Sayı doğrusunda sırayı ve uzaklığı ayır",
+      paragraphs: [
+        "Sayı doğrusunda sağdaki sayı büyüktür. −3 solda, 2 sağda olduğu için −3<2. Mutlak değer, sıfıra uzaklıktır. −3 sıfırdan 3 birim, 2 ise 2 birim uzaktadır. Bu yüzden |−3|>|2|. Sayı sırası ile sıfıra uzaklık iki ayrı karşılaştırmadır.",
+        "İki sınır arasındaki tam sayıları sayarken önce uçların dahil olup olmadığına bak. −2<x≤1 aralığında adaylar −1, 0 ve 1’dir. Açık sınır boş, dahil sınır dolu noktayla gösterilir.",
+      ],
+    },
   ],
   examples: [
     {
@@ -133,6 +141,27 @@ export const basicsGuide: LessonGuide = {
       pitfall: "Sonucun sabit olması bütün gerçek x değerlerine izin vermez.",
     },
     {
+      title: "Açık ve kapalı sınırdan tam sayıları bul",
+      prompt: "−7≤2x+1<5 koşulunu sağlayan tam sayıları bul.",
+      strategy: "Üç ifadeye aynı işlemi yap. Sonra uçları kendi eşitsizlik işaretleriyle oku.",
+      steps: [
+        {
+          label: "Başlangıçtaki sınırları dönüştür",
+          expression: "−8≤2x<4 → −4≤x<2",
+          explanation: "Her ifadeden 1 çıkar. Sonra her ifadeyi pozitif 2’ye böl. İşaretlerin yönü korunur.",
+        },
+        {
+          label: "Sınırları ve adayları işaretle",
+          expression: "−4, −3, −2, −1, 0, 1",
+          explanation: "−4 dahil olduğu için dolu, 2 hariç olduğu için boş nokta çiz. Aradaki tam sayıları sırala.",
+          figureTitle: "Açık ve kapalı sınırdan tam sayıları bul",
+        },
+      ],
+      answer: "Altı tam sayı vardır.",
+      check: "x=−4 için 2x+1=−7, sol sınır sağlanır. x=2 için 2x+1=5, sağ koşul sağlanmaz.",
+      pitfall: "Sağ uçta < işareti var. x=2’yi listeye ekleme.",
+    },
+    {
       title: "Farklı rakamlarla en büyük değer",
       prompt:
         "a ve b farklı rakamlar, a≠0. 3a−b ifadesinin en büyük değeri kaçtır?",
@@ -179,7 +208,7 @@ export const basicsGuide: LessonGuide = {
     },
   ],
   source:
-    "MEBİ TYT Matematik Konu Özetleri PDF s.11–13 (basılı 9–11); OGM Video Ders Notu Temel Kavramlar–Sayılar PDF s.1–2; Aurelia Temel Kavramlar kopya kağıdı s.1–4 ile karşılaştırılmış özgün anlatım, modeller ve çözümler. Resmî soru değildir.",
+    "MEBİ TYT Matematik Konu Özetleri PDF s.11–13 (basılı 9–11); OGM Video Ders Notu Temel Kavramlar–Sayılar PDF s.1–2; Aurelia Temel Kavramlar kopya kağıdı içerik 5.1, fiziksel s.1–6 ve 11 ile karşılaştırılmış özgün anlatım, modeller ve çözümler. Resmî soru değildir.",
 };
 
 export const parityGuide: LessonGuide = {

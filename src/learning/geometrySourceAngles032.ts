@@ -889,7 +889,8 @@ export const geometrySourceAngles032Sheets: CheatSheet[] = [
     examples: [guide.examples[4], guide.examples[6], ...lineAngles042.examples].map((e) => ({
       title: e.title,
       prompt: e.prompt,
-      steps: e.steps.map((s) => s.label + ": " + s.explanation),
+      steps: e.steps.map((s) => [s.label, s.expression, s.explanation].filter(Boolean).join(" · ")),
+      ...(e.steps.some((step) => step.figureTitle) ? { stepFigures: e.steps.map((step) => step.figureTitle) } : {}),
       answer: e.answer + " " + e.check,
     })),
     cautions: [
