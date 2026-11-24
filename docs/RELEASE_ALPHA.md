@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.102.0 · Dalga boyu, periyot ve frekans
+
+Yayın adayı. Dalga boyunu değiştir ve iki ölçü çizgisinin birlikte değişmesini izle. Kopya Kağıdı’nda telin kaynak ve sabit uçlarını incele. Tam titreşim sayısını grafikten bulup periyodu ve frekansı hesapla.
+
 # ÖSYM Mania 0.101.0 · Anlatımda sayfa geçişi
 
 Yayın adayı. Konu anlatımının sayfa düğmeleri okurken ekranda kalıyor. Düğmeyi kullandığında odak ilgili bölüm başlığına geçiyor. Dar ekranda iki yönde ok var.

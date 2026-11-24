@@ -16,6 +16,7 @@ import {
   type Tone,
   type V,
 } from "./figureKit";
+import { wavelengthMarkers, wavelengthTitle, wavePeriodTitle, waveRopeTitle, waveTiming } from "../mebiWaveBasics";
 
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
@@ -108,32 +109,63 @@ const giris: Record<string, FigureDef> = {
       ],
     }),
   },
-  "Dalga boyu eş fazlı komşuların arasıdır": {
+  [wavelengthTitle]: {
     caption:
-      "Ardışık iki tepe arası λ, tepe ile sonraki çukur arası λ/2'dir. Dört ardışık tepe arasında üç aralık vardır: 3λ. Nokta sayısını değil aralık sayısını say.",
-    alt: "Dört tepesi görünen sinüs dalgası; komşu tepeler arasında λ ölçüsü, tepe ile çukur arasında λ/2 ve ilk ile dördüncü tepe arasında 3λ ölçüsü.",
-    draw: () => {
-      const lam = 2.5;
-      const crests = [0, 1, 2, 3].map((k) => lam / 4 + k * lam);
+      "Yatay kesik çizgi denge konumudur. Hem tepeden sonraki tepeye hem çukurdan sonraki çukura bir dalga boyu vardır. Dalga boyunu değiştir ve ölçü çizgilerinin birlikte değiştiğini gör.",
+    alt: "Dört tepe ve iki çukur işaretli. Komşu tepe ve çukur çiftlerinin her birinde λ uzunluğu, dört tepe boyunca 3λ ölçüsü.",
+    param: { label: "Dalga boyu λ", min: 1.5, max: 3, step: 0.25, init: 2.5, unit: " m" },
+    draw: (lam) => {
+      const { crests, troughs } = wavelengthMarkers(lam);
       return {
         els: [
-          base(0, 10),
-          wave(sine(0, 10, 1, lam)),
-          ...crests.map((x, i) => pt(v(x, 1), String(i + 1), "n", "a")),
-          ...span(v(crests[0], 1.6), v(crests[1], 1.6), "λ", 1, "a"),
-          ...span(v(crests[1], -1.4), v(crests[1] + lam / 2, -1.4), "λ/2", -1, "c"),
-          ...span(v(crests[0], 2.4), v(crests[3], 2.4), "3λ", 1, "b"),
+          base(0, 10.5),
+          wave(sine(0, 10.5, 1, lam, 0, 0, 150)),
+          ...crests.map((x, i) => pt(v(x, 1), i === 0 ? "Tepe 1" : String(i + 1), "n", "a")),
+          ...troughs.map((x, i) => pt(v(x, -1), i === 0 ? "Çukur" : "", "s", "c")),
+          ...span(v(crests[0], 2.05), v(crests[1], 2.05), "λ", 1, "a"),
+          ...span(v(troughs[0], -2), v(troughs[1], -2), "λ", -1, "c"),
+          ...span(v(crests[0], 3), v(crests[3], 3), "3λ", 1, "b"),
+          txt(v(10.5, 0), "Konum (m)", "e", { small: true, tone: "muted" }),
         ],
+        readout: [`Tepe aralığı: ${fmt(lam, 2)} m. Çukur aralığı: ${fmt(lam, 2)} m.`, `En yakın tepe–çukur: ${fmt(lam / 2, 3)} m. Dört tepe boyunca: ${fmt(3 * lam, 2)} m.`],
       };
     },
   },
-  "Periyot ve frekansı ters çevir": {
+  [waveRopeTitle]: {
+    caption: "Sol uç yukarı ve aşağı titreşir. Bir tam dalga deseni tel boyunca sağa ilerler ve sağdaki sabit uca henüz ulaşmamıştır.",
+    alt: "Kaynak ucunda düşey iki ok. Tel, başlangıçtan sonra bir çukur ve bir tepe yaparak dengeye döner. Bir dalga boyu işaretli. Sağ uç sabit duvara bağlı.",
+    draw: () => {
+      const wavelength = 4;
+      const start = 0;
+      const wallX = 7.25;
+      return {
+        els: [
+          base(start, wallX),
+          wave(sine(start, wavelength, -0.85, wavelength)),
+          seg(v(wavelength, 0), v(wallX, 0), { tone: "b", bold: true }),
+          ...wall(wallX, -0.75, 0.85),
+          pt(v(start, 0), "", "n", "a"),
+          pt(v(wallX, 0), "", "n", "ink"),
+          vec(v(-0.65, 0.1), v(-0.65, 0.95), { tone: "a" }),
+          vec(v(-0.65, -0.1), v(-0.65, -0.95), { tone: "a" }),
+          txt(v(start, 1.3), "Kaynak ucu", "n", { small: true, tone: "a" }),
+          txt(v(wallX, 1.3), "Sabit uç", "n", { small: true }),
+          vec(v(2.65, 1.55), v(4.9, 1.55), { tone: "b" }),
+          txt(v(3.77, 1.55), "Yayılma yönü", "n", { small: true, tone: "b" }),
+          ...span(v(start, -1.55), v(wavelength, -1.55), "λ", -1, "c"),
+        ],
+        readout: ["Telin şekli: bir çukur, bir tepe ve yeniden denge. Desenin yatay boyu λ."],
+      };
+    },
+  },
+  [wavePeriodTitle]: {
     caption:
       "Aynı noktanın uzanım–zaman grafiği: t = 0'daki ilk tepe ile t = 2 s'deki beşinci tepe arasında 4 tam titreşim vardır. T = 2/4 = 0,5 s, f = 1/T = 2 Hz ve f·T = 1.",
     alt: "Yatay ekseni zaman olan kosinüs grafiği; beş tepe numaralı, ilk ve son tepe arası 2 saniye ölçülü.",
     draw: () => {
       const sx = 4;
-      const pts = Array.from({ length: 161 }, (_, i) => { const t = (2.2 * i) / 160; return v(t * sx, Math.cos(TAU * 2 * t)); });
+      const { elapsedS, cycles, periodS, frequencyHz } = waveTiming;
+      const pts = Array.from({ length: 161 }, (_, i) => { const t = ((elapsedS + 0.2) * i) / 160; return v(t * sx, Math.cos(TAU * frequencyHz * t)); });
       return {
         els: [
           vec(v(0, -1.4), v(0, 1.7), { tone: "muted", thin: true }),
@@ -141,11 +173,11 @@ const giris: Record<string, FigureDef> = {
           txt(v(9.2, 0), "t (s)", "se", { small: true, tone: "muted" }),
           txt(v(0, 1.7), "y", "w", { small: true, tone: "muted" }),
           wave(pts),
-          ...[0, 1, 2, 3, 4].map((k) => pt(v(k * 0.5 * sx, 1), String(k + 1), "n", "a")),
-          ...span(v(0, -1.6), v(8, -1.6), "2 s = 4T", -1, "c"),
-          txt(v(2, 0), "0,5", "s", { small: true }),
+          ...Array.from({ length: cycles + 1 }, (_, k) => pt(v(k * periodS * sx, 1), String(k + 1), "n", "a")),
+          ...span(v(0, -1.6), v(elapsedS * sx, -1.6), `${elapsedS} s = ${cycles}T`, -1, "c"),
+          txt(v(periodS * sx, 0), fmt(periodS, 2), "s", { small: true }),
         ],
-        readout: ["T = 2 s / 4 = 0,5 s", "f = 1 / 0,5 = 2 Hz; f·T = 1"],
+        readout: [`T = ${elapsedS} s / ${cycles} = ${fmt(periodS, 2)} s`, `f = 1 / ${fmt(periodS, 2)} = ${frequencyHz} Hz; f·T = 1`],
       };
     },
   },

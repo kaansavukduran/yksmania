@@ -23,6 +23,7 @@ import { overflowExample, overflowSection, overflowTitle } from "../mebiArchimed
 import { buoyancyEquilibriumExample, buoyancyEquilibriumSection } from "../mebiBuoyancyEquilibrium";
 import { airBuoyancyExample, airBuoyancySection } from "../mebiAirBuoyancy";
 import { atomizerExample, atomizerSection } from "../mebiAtomizer";
+import { wavelengthTitle, wavePeriodExample, waveRopeSection } from "../mebiWaveBasics";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
@@ -425,6 +426,16 @@ export function studyGuide(lessonId: string) {
       }),
       examples: [submergedBlockExample, overflowExample, buoyancyEquilibriumExample, airBuoyancyExample, ...guide.examples],
       source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 146, basılı 144. sayfadaki üst, alt ve iki yan yüz kuvveti ile Arşimet bağıntısı karşılaştırıldı. Taşma oluğu ve üç denge örneği fiziksel 146–147, basılı 144–145. sayfalara dayanır. Fiziksel 147’nin altındaki A, B ve C’nin ilk hareketi ile denge konumları iki adım halinde gösterilir. Fiziksel 148, basılı 146. sayfadaki K ve L balonlarının ilk hareket yönleri yeniden çizildi. Çizimlerin sayısal değerleri özgün örnektir.`,
+    };
+  }
+  if (guide?.id === "dalgalara-giris") {
+    return {
+      ...guide,
+      sections: [...guide.sections.map((section) => section.title === wavelengthTitle
+        ? { ...section, figureTitle: wavelengthTitle }
+        : section), waveRopeSection],
+      examples: [...guide.examples, wavePeriodExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 149, basılı 147. sayfasındaki tepe ve çukur çiftlerinin dalga boyu ile kaynak ve sabit uç arasındaki bir tam tel deseni yeniden çizildi. Periyot örneğindeki süre ve tekrar sayısı özgün örnek değerleridir.`,
     };
   }
   if (guide?.id === "hal-degisimi") {
