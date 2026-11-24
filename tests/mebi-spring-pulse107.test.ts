@@ -26,6 +26,7 @@ test("the new question keeps previous IDs and requires matching stem and help re
   expect(questions.map(({ id }) => id)).toEqual([
     ...Array.from({ length: 10 }, (_, index) => `yay-dalgalari-q${index + 1}`),
     springPulseQuestion.id,
+    "yay-dalgalari-esit-kutle-yogunluk-cizimi",
   ]);
   const q = questions[10];
   const view = practiceQuestionView({ id: q.id, prompt: q.prompt.tr, options: q.options.map(({ tr }) => tr), answer: q.answer, hint: q.hint.tr, explanation: q.explanation.tr, guidance: q.guidance });

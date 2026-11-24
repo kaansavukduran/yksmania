@@ -58,7 +58,7 @@ test("the independent question exposes its given diagram, then persists help bef
     await page.getByRole("button", { name: "Cevabı kontrol et", exact: true }).click();
     await page.getByRole("button", { name: "Sonraki soru", exact: true }).click();
   }
-  await expect(page.locator(".question-meta")).toContainText("Soru 11 / 11");
+  await expect(page.locator(".question-meta")).toContainText("Soru 11 / 12");
   const given = page.getByRole("figure", { name: "Yaydaki atmanın yatay sınırları", exact: true });
   const hint = page.getByRole("figure", { name: "Genişliği iki yatay sınırdan oku", exact: true });
   const answer = page.getByRole("figure", { name: "Atmanın üretim süresini hesapla", exact: true });

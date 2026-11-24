@@ -1,8 +1,8 @@
 {
-  "version": "0.123.0",
+  "version": "0.124.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Alt yayın kütlesini değiştir. Eşit gerilimde iki atmanın aynı sürede aldığı yolu ölç ve Kopya Kağıdı’nda süratlerini hesapla.",
-    "en": "Change the mass of the lower spring. Compare how far two pulses travel under the same tension, then calculate their speeds in the cheat sheet."
+    "tr": "İki yayın kütlesini, uzunluğunu ve gerilimini soru çiziminden oku. İpucu ve çözüm tablolarıyla atma süratlerinin oranını hesapla.",
+    "en": "Read mass, length and tension in the new spring question. Use its separate hint and worked tables to compare the pulse speeds."
   }
 }

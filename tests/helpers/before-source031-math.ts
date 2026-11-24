@@ -149,6 +149,7 @@ const additions = new Set(revisions.flatMap(({ appendedQuestions }) => appendedQ
 additions.add("sivilarin-kaldirma-kuvveti-havada-balon");
 additions.add("yay-dalgalari-atma-uretme-suresi");
 additions.add("dalgalara-giris-titresim-yonu-cizimleri");
+additions.add("yay-dalgalari-esit-kutle-yogunluk-cizimi");
 
 export function beforeSource031Questions<T extends { id: string }>(questions: readonly T[]) {
   return questions.filter(({ id }) => !additions.has(id));

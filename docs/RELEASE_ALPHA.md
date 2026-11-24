@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.124.0 · Yay süratini şekilden hesapla
+
+Yayın adayı. İki yayın kütleleri eşit ve uzunlukları farklı. Şekildeki verilenleri kullanarak süratlerini karşılaştır. İpucu doğru birimleri hatırlatıyor. Çözümün iki tablosu önce boyca kütle yoğunluğunu, sonra sürati gösteriyor.
+
 # ÖSYM Mania 0.123.0 · Eşit gerilimde iki yay
 
 Yayın adayı. Alt yayın kütlesini değiştir ve iki atmanın aynı sürede aldığı yolu ölç. Kopya Kağıdı kütleyi kilogram cinsine çevirip metre başına kütleyi ve atmanın süratini adım adım hesaplıyor.

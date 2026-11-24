@@ -22,6 +22,7 @@ import { buoyancyFloatingQuestionFigures, buoyancyFloatingQuestionId } from "./b
 import { airBuoyancyQuestion, airBuoyancyQuestionFigures } from "./airBuoyancyQuestion098";
 import { springPulseQuestion, springPulseQuestionFigures } from "./springPulseQuestion107";
 import { waveDirectionsFigures, waveDirectionsQuestion } from "./waveDirectionsQuestion118";
+import { springDensityQuestion, springDensityQuestionFigures } from "./springDensityQuestion124";
 import {
   inverseTranslationFigures,
   inverseTranslationQuestion,
@@ -256,6 +257,16 @@ const directionsQuestion = {
   guidance: waveDirectionsQuestion.guidance,
 };
 
+const densityQuestion = {
+  id: springDensityQuestion.id,
+  prompt: springDensityQuestion.prompt.tr,
+  options: springDensityQuestion.options.map((option) => option.tr),
+  answer: springDensityQuestion.answer,
+  hint: springDensityQuestion.hint.tr,
+  explanation: springDensityQuestion.explanation.tr,
+  guidance: springDensityQuestion.guidance,
+};
+
 function ogmTranslationBinding(
   source: Question,
   page: number,
@@ -366,6 +377,14 @@ const bindings = new Map<string, FigureBinding>([
     pageLabel: "Fiziksel 152. sayfa, basılı 150",
     itemLabel: "Tel ve sarmal yayda titreşim doğrultuları, özgün öğretim sorusu",
     figures: waveDirectionsFigures,
+  }],
+  [densityQuestion.id, {
+    stemRevision: stemRevision(densityQuestion),
+    helpRevision: helpRevision(densityQuestion, densityQuestion.guidance),
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 154. sayfa, basılı 152",
+    itemLabel: "Aynı gerilimde boyca kütle yoğunluğu, özgün öğretim sorusu",
+    figures: springDensityQuestionFigures,
   }],
   [pistonQuestionId, {
     stemRevision: "122891ad73ac0c",
