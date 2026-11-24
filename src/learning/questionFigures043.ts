@@ -20,6 +20,7 @@ import { bernoulliChannelQuestionFigures, bernoulliChannelQuestionId } from "./b
 import { archimedesQuestionFigures, archimedesQuestionId } from "./archimedesQuestion095";
 import { buoyancyFloatingQuestionFigures, buoyancyFloatingQuestionId } from "./buoyancyFloatingQuestion097";
 import { airBuoyancyQuestion, airBuoyancyQuestionFigures } from "./airBuoyancyQuestion098";
+import { springPulseQuestion, springPulseQuestionFigures } from "./springPulseQuestion107";
 import {
   inverseTranslationFigures,
   inverseTranslationQuestion,
@@ -235,6 +236,15 @@ const balloonQuestion = {
   explanation: airBuoyancyQuestion.explanation.tr,
   guidance: airBuoyancyQuestion.guidance,
 };
+const pulseQuestion = {
+  id: springPulseQuestion.id,
+  prompt: springPulseQuestion.prompt.tr,
+  options: springPulseQuestion.options.map((option) => option.tr),
+  answer: springPulseQuestion.answer,
+  hint: springPulseQuestion.hint.tr,
+  explanation: springPulseQuestion.explanation.tr,
+  guidance: springPulseQuestion.guidance,
+};
 
 function ogmTranslationBinding(
   source: Question,
@@ -330,6 +340,14 @@ const bindings = new Map<string, FigureBinding>([
     pageLabel: "Fiziksel 148. sayfa, basılı 146",
     itemLabel: "K ve L balonlarının ilk hareketi, özgün öğretim sorusu",
     figures: airBuoyancyQuestionFigures,
+  }],
+  [pulseQuestion.id, {
+    stemRevision: stemRevision(pulseQuestion),
+    helpRevision: helpRevision(pulseQuestion, pulseQuestion.guidance),
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 151. sayfa, basılı 149",
+    itemLabel: "Sabit uçlu yayda tek atma, özgün öğretim sorusu",
+    figures: springPulseQuestionFigures,
   }],
   [pistonQuestionId, {
     stemRevision: "122891ad73ac0c",

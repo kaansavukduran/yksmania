@@ -2,6 +2,7 @@ import { probabilityLesson036 } from "../learning/probabilitySource036";
 import { forceAccelerationQuestion } from "../learning/forceAccelerationPractice";
 import { forceVelocityQuestion } from "../learning/forceVelocityOptions048";
 import { airBuoyancyQuestion } from "../learning/airBuoyancyQuestion098";
+import { springPulseQuestion } from "../learning/springPulseQuestion107";
 import { countingLessons034035 } from "../learning/countingSources034035";
 import { permutationLessons032033 } from "../learning/permutationSources032033";
 import { factorizationSource028Practice } from "../learning/factorizationSource028Revision";
@@ -1030,9 +1031,11 @@ const baseLessons: Lesson[] = [
   ...forge012TurkishLessons,
   ...forge012HistoryLessons,
   ...forge011MathLessons,
-  ...forge011PhysicsLessons.map((lesson) => lesson.id === "sivilarin-kaldirma-kuvveti"
-    ? { ...lesson, questions: [...lesson.questions, airBuoyancyQuestion] }
-    : lesson),
+  ...forge011PhysicsLessons.map((lesson) => {
+    if (lesson.id === "sivilarin-kaldirma-kuvveti") return { ...lesson, questions: [...lesson.questions, airBuoyancyQuestion] };
+    if (lesson.id === "yay-dalgalari") return { ...lesson, questions: [...lesson.questions, springPulseQuestion] };
+    return lesson;
+  }),
   ...forge011ChemistryLessons,
   ...forge011BiologyALessons,
   ...forge011BiologyBLessons,

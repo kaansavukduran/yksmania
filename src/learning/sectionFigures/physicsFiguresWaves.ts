@@ -21,6 +21,7 @@ import { waveTravelAt, waveTravelFrequencyHz, waveTravelSpeedMps, waveTravelTitl
 import { waterAmplitudeTitle, waveAmplitudeBounds, waveAmplitudeInitialCm, waveAmplitudeTitle } from "../mebiWaveAmplitude";
 import { waveClassificationExamples, waveClassificationTitle } from "../mebiWaveClassification";
 import { tuningForkSnapshot, tuningForkTitle } from "../mebiTuningFork";
+import { pulseMarkerM, pulseSpeedMps, pulseSupportM, pulseWidthM, springPulseAt, springPulseTitle } from "../mebiSpringPulse";
 
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
@@ -420,6 +421,30 @@ const giris: Record<string, FigureDef> = {
 };
 
 const yay: Record<string, FigureDef> = {
+  [springPulseTitle]: {
+    caption: "Solda bir kez hareket eden kaynak, sağda sabit destek var. Zamanı değiştirince atma sağa ilerler. P kendi düşey çizgisinde kalır. Genişliği iki uç arasından oku.",
+    alt: "Bir ucu kaynağa, diğer ucu sabit duvara bağlı yay. Tek tepeli atma sağa ilerliyor. P işaretli nokta aynı yatay konumda yukarı ve aşağı hareket ediyor.",
+    param: { label: "Geçen süre", min: 0, max: 1.5, step: 0.25, init: 0, unit: " s" },
+    draw: (time) => {
+      const { leftM, rightM, displacement } = springPulseAt(time);
+      return {
+        els: [
+          base(0, pulseSupportM),
+          wave(pulseLine(0, pulseSupportM, displacement)),
+          ...wall(pulseSupportM, -0.7, 0.7),
+          seg(v(0, -0.4), v(0, 0.62), { tone: "warn", dash: true }),
+          txt(v(0, -0.61), "Kaynak", "s", { small: true }),
+          txt(v(pulseSupportM, -0.81), "Sabit uç", "s", { small: true }),
+          seg(v(pulseMarkerM, -0.09), v(pulseMarkerM, 1.5), { tone: "a", dash: true, thin: true }),
+          pt(v(pulseMarkerM, displacement(pulseMarkerM)), "P", "n", "a"),
+          vec(v(6.5, 1.62), v(9.3, 1.62), { tone: "b" }),
+          txt(v(7.9, 1.75), "Atmanın yönü", "n", { small: true }),
+          ...span(v(leftM, -0.42), v(rightM, -0.42), "3 m", -1, "c"),
+        ],
+        readout: [`${fmt(time, 2)} s sonra sol uç ${fmt(leftM)} m, sağ uç ${fmt(rightM)} m. Genişlik ${pulseWidthM} m.`, `Atma sağa ${pulseSpeedMps} m/s ile ilerler. P’nin yatay konumu ${fmt(pulseMarkerM)} m.`],
+      };
+    },
+  },
   "Atmanın genişliği, genliği ve yönü ayrı": {
     caption:
       "v = 2 m/s yayda kaynağın sarsılma süresini değiştir: genişlik w = v·Δt ile değişir, genlik (A = 1 birim) aynı kalır. İlerleme oku ile uzanımın yukarı olması ayrı bilgilerdir.",

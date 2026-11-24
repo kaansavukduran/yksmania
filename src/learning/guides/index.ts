@@ -28,6 +28,7 @@ import { waveTravelExample, waveTravelSection } from "../mebiWaveTravel";
 import { waterAmplitudeSection, waveAmplitudeExample, waveAmplitudeSection } from "../mebiWaveAmplitude";
 import { waveClassificationExample, waveClassificationSection } from "../mebiWaveClassification";
 import { tuningForkExample, tuningForkSection } from "../mebiTuningFork";
+import { springPulseExample, springPulseSection } from "../mebiSpringPulse";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
@@ -440,6 +441,14 @@ export function studyGuide(lessonId: string) {
         : section), waveRopeSection, waveTravelSection, waveAmplitudeSection, waterAmplitudeSection, waveClassificationSection, tuningForkSection],
       examples: [...guide.examples, wavePeriodExample, waveTravelExample, waveAmplitudeExample, waveClassificationExample, tuningForkExample],
       source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 149, basılı 147. sayfasındaki tepe ve çukur çiftlerinin dalga boyu ile kaynak ve sabit uç arasındaki bir tam tel deseni yeniden çizildi. Fiziksel 150, basılı 148. sayfadaki yayılma, zaman grafiğinde uzanım, su yüzeyinde genlik ve iki ölçütlü sınıflandırma çizimleri yeniden oluşturuldu. Sınıflandırmada mekanik ve elektromanyetik dalgalar ortam gereksinimine göre ayrılır. Fiziksel 151, basılı 149. sayfadaki tokmak ve diyapazon, havanın ileri geri salınımı ve sıkışma bölgeleriyle gösterildi. Sayısal değerler özgün örnektir.`,
+    };
+  }
+  if (guide?.id === "yay-dalgalari") {
+    return {
+      ...guide,
+      sections: [...guide.sections, springPulseSection],
+      examples: [...guide.examples, springPulseExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfadaki tek atma ve sabit destek, yansıma öncesindeki kesitte yeniden çizildi. Sayı ve örnek soru özgün.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

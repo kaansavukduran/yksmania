@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.107.0 · Sabit uçlu yayda tek atma
+
+Yayın adayı. Zamanı ilerletip atmanın genişliğini ve P noktasının hareketini karşılaştır. Kopya Kağıdı’nda yarım saniye örneğini, alıştırmada zaman hesabının ipucu ve çözüm çizimlerini aç.
+
 # ÖSYM Mania 0.106.0 · Diyapazon ve havada ses
 
 Yayın adayı. Zaman kontrolüyle diyapazonun kollarını ve havadaki sıkışma ve seyrelmeyi izle. Kopya Kağıdı’nda bir hava noktasının salınmasıyla sesin ilerlemesini karşılaştır.
