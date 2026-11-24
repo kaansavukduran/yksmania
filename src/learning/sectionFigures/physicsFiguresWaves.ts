@@ -17,6 +17,7 @@ import {
   type V,
 } from "./figureKit";
 import { wavelengthMarkers, wavelengthTitle, wavePeriodTitle, waveRopeTitle, waveTiming } from "../mebiWaveBasics";
+import { waveTravelAt, waveTravelFrequencyHz, waveTravelSpeedMps, waveTravelTitle, waveTravelWavelengthM } from "../mebiWaveTravel";
 
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
@@ -178,6 +179,34 @@ const giris: Record<string, FigureDef> = {
           txt(v(periodS * sx, 0), fmt(periodS, 2), "s", { small: true }),
         ],
         readout: [`T = ${elapsedS} s / ${cycles} = ${fmt(periodS, 2)} s`, `f = 1 / ${fmt(periodS, 2)} = ${frequencyHz} Hz; f·T = 1`],
+      };
+    },
+  },
+  [waveTravelTitle]: {
+    caption: "Zamanı değiştir ve dalga önünün kaynaktan uzaklaşmasını izle. Bir tam periyot sonunda kaynaktan dalga önüne kadar bir dalga boyu ölçülür.",
+    alt: "Telin solunda kaynak, sağında sabit uç. Bozunumun önüne kadar dalga çizgisi, onun ötesinde düz tel var. Düşey işaret ve yatay ölçü, dalga önünün konumunu gösteriyor.",
+    param: { label: "Geçen süre t", min: 0, max: 1, step: 0.25, init: 1, unit: " T" },
+    draw: (periods) => {
+      const wallX = 3.55;
+      const { elapsedS, distanceM } = waveTravelAt(periods);
+      const displacement = (x: number) => 0.6 * Math.sin(TAU * waveTravelFrequencyHz * (elapsedS - x / waveTravelSpeedMps));
+      return {
+        els: [
+          base(0, wallX),
+          seg(v(distanceM, 0), v(wallX, 0), { tone: "muted" }),
+          ...wall(wallX, -0.63, 0.7),
+          ...(distanceM > 0 ? [
+            wave(pulseLine(0, distanceM, displacement, 0, 80)),
+            seg(v(distanceM, 0), v(distanceM, 0.82), { dash: true, thin: true, tone: "a" }),
+            pt(v(distanceM, 0), "", "n", "a"),
+            txt(v(distanceM, 0.85), "Dalga önü", "n", { small: true, tone: "a" }),
+            ...span(v(0, -0.96), v(distanceM, -0.96), periods === 1 ? "λ" : "x", -1, "c"),
+          ] : []),
+          pt(v(0, displacement(0)), "", "n", "b"),
+          txt(v(0, 0), "Kaynak", "w", { small: true, tone: "b" }),
+          pt(v(wallX, 0), "", "n", "ink"),
+        ],
+        readout: [`Geçen süre: ${fmt(elapsedS, 3)} s. Dalga önünün uzaklığı: ${fmt(distanceM, 2)} m.`, `Yayılma sürati: ${waveTravelSpeedMps} m/s. Bir tam desenin boyu: ${waveTravelWavelengthM} m.`],
       };
     },
   },

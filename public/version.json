@@ -1,8 +1,8 @@
 {
-  "version": "0.102.0",
+  "version": "0.103.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Bir dalga boyunu tepeler ve çukurlar arasında karşılaştır. Telde bir tam deseni ve periyot hesabını Kopya Kağıdı’nda incele.",
-    "en": "Measure the same wavelength between crests and troughs. The cheat sheet shows a full rope pattern and a worked period calculation."
+    "tr": "Dalga önünün yarım ve tam periyotta ne kadar ilerlediğini çizimle incele. Çevrimdışı dosya hazırlığı geçici sunucu hatasında yeniden deniyor.",
+    "en": "See how far a wavefront travels after half and one full period. Offline preparation retries a temporary server error."
   }
 }

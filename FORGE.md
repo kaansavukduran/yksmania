@@ -1,3 +1,9 @@
+# Dalga önünün aldığı yol ve çevrimdışı hazırlık · 0.103.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 150, basılı 148. Kaynak çalışmaya başladığında dalga önü sağa ilerliyor. Çeyrek, yarım ve tam periyot konumları aynı 4 m/s modelinden hesaplanıyor. Kopya Kağıdı’nda 0,25 s’de 1 m ve 0,5 s’de 2 m için tablo ve son adım çizimi var. Sıradaki kaynak aynı sayfadaki zaman grafiğinde genlik ve iki eksenli dalga sınıflandırması.
+
+0.99 Cloudflare denetiminde iki önbellek dosyası HTTP 500 döndü. Yeni aday, çevrimdışı hazırlık sırasında bu yanıtı mevcut sınırlı aralıklarla yeniden deniyor. Aynı CSS isteği ilk seferde 500 döndürüldüğünde 0.101’de işçi etkinleşmedi. 0.103’te ikinci istek 200 döndü, işçi etkinleşti ve Basınç dersi çevrimdışı açıldı. Check, 15 odaklı birim, ilerleme tablosu ve dört çevrimdışı Chromium akışı geçti.
+
 # Ardışık tepeler, çukurlar ve tel deseni · 0.102.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 149, basılı 147. Dalga boyu aynı eğride ardışık tepeler ve ardışık çukurlardan ölçülüyor. Kontrol, eğriyi ve iki ölçü çizgisini birlikte güncelliyor. Sabit uca ulaşmamış bir tam tel deseni, kaynak ucunun düşey hareketini yayılma yönünden ayırıyor. Ayrı Kopya Kağıdı konum, süre ve frekansı tabloyla gösteriyor. Beş tepe arasındaki dört titreşim, zaman grafiğiyle son çözüm adımında açılıyor.
@@ -560,7 +566,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 241 | 314 / 314 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 242 | 314 / 314 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
 | TYT Biyoloji | 36 / 36 | 22 · 80 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 14 |
 | TYT Tarih | 24 / 24 | 14 · 41 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 10 |
@@ -573,7 +579,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **405 · 1736** | **6.664 / 6.664 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
+| **Toplam** | **510 / 510** | **405 · 1737** | **6.664 / 6.664 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

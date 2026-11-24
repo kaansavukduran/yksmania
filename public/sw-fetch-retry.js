@@ -26,7 +26,7 @@
       queue.push(() => task().then(resolve, reject));
       pump();
     });
-  const temporary = (status) => status === 429 || status === 502 || status === 503 || status === 504;
+  const temporary = (status) => status === 429 || status === 500 || status === 502 || status === 503 || status === 504;
   const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
   self.fetch = (input, init) =>
     limited(async () => {

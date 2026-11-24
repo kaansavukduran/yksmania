@@ -21,14 +21,14 @@ describe("MEBİ physical page 149 wave diagrams", () => {
     const guide = studyGuide(id)!;
     const oldCount = oldGuide.sections.length;
     expect(guide.sections.slice(0, oldCount).map((section) => section.title)).toEqual(oldGuide.sections.map((section) => section.title));
-    expect(guide.sections.at(-1)?.figureTitle).toBe(waveRopeTitle);
+    expect(guide.sections[oldCount]?.figureTitle).toBe(waveRopeTitle);
     expect(resolveGuideStep(id, 3, oldCount, guide.sections.length)).toBe(3);
     expect(resolveGuideStep(id, oldCount, oldCount, guide.sections.length)).toBe(guide.sections.length);
     expect(resolveGuideStep(id, oldCount + 1, oldCount, guide.sections.length)).toBe(guide.sections.length + 1);
-    expect(guide.examples.at(-1)).toEqual(wavePeriodExample);
+    expect(guide.examples[oldGuide.examples.length]).toEqual(wavePeriodExample);
     const sheet = studyCheatSheet("detail-127")!;
-    expect(sheet.sections.at(-1)?.figureTitle).toBe(waveRopeTitle);
-    expect(sheet.examples.at(-1)?.title).toBe(wavePeriodExample.title);
+    expect(sheet.sections.find((section) => section.title === waveRopeTitle)?.figureTitle).toBe(waveRopeTitle);
+    expect(sheet.examples.filter((example) => example.title === wavePeriodExample.title)).toHaveLength(1);
     expect(waveTiming.cycles * waveTiming.periodS).toBe(waveTiming.elapsedS);
     expect(waveTiming.periodS * waveTiming.frequencyHz).toBe(1);
   });

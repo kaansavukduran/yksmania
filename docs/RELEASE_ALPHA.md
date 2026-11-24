@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.103.0 · Dalga önünün konumu
+
+Yayın adayı. Zamanı değiştirerek dalga önünün yarım ve tam periyotta ne kadar ilerlediğini gör. Kopya Kağıdı’nda hesabı ve çözüm çizimini aç. Çevrimdışı hazırlık sırasında bir dosya geçici sunucu hatası verdiğinde uygulama yeniden deniyor.
+
 # ÖSYM Mania 0.102.0 · Dalga boyu, periyot ve frekans
 
 Yayın adayı. Dalga boyunu değiştir ve iki ölçü çizgisinin birlikte değişmesini izle. Kopya Kağıdı’nda telin kaynak ve sabit uçlarını incele. Tam titreşim sayısını grafikten bulup periyodu ve frekansı hesapla.

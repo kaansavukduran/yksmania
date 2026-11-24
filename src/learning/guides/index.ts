@@ -24,6 +24,7 @@ import { buoyancyEquilibriumExample, buoyancyEquilibriumSection } from "../mebiB
 import { airBuoyancyExample, airBuoyancySection } from "../mebiAirBuoyancy";
 import { atomizerExample, atomizerSection } from "../mebiAtomizer";
 import { wavelengthTitle, wavePeriodExample, waveRopeSection } from "../mebiWaveBasics";
+import { waveTravelExample, waveTravelSection } from "../mebiWaveTravel";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
@@ -433,9 +434,9 @@ export function studyGuide(lessonId: string) {
       ...guide,
       sections: [...guide.sections.map((section) => section.title === wavelengthTitle
         ? { ...section, figureTitle: wavelengthTitle }
-        : section), waveRopeSection],
-      examples: [...guide.examples, wavePeriodExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 149, basılı 147. sayfasındaki tepe ve çukur çiftlerinin dalga boyu ile kaynak ve sabit uç arasındaki bir tam tel deseni yeniden çizildi. Periyot örneğindeki süre ve tekrar sayısı özgün örnek değerleridir.`,
+        : section), waveRopeSection, waveTravelSection],
+      examples: [...guide.examples, wavePeriodExample, waveTravelExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 149, basılı 147. sayfasındaki tepe ve çukur çiftlerinin dalga boyu ile kaynak ve sabit uç arasındaki bir tam tel deseni yeniden çizildi. Fiziksel 150, basılı 148. sayfadaki bir periyotta dalga boyu kadar yayılma, çalışma anından itibaren bir uç konumu izlenerek gösterildi. Sayısal değerler özgün örnektir.`,
     };
   }
   if (guide?.id === "hal-degisimi") {
