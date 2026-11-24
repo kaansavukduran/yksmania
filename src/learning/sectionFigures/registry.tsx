@@ -239,6 +239,7 @@ import { historyFigures068Sheets } from "./historyFigures068Sheets";
 import { humanitiesFigures069Sheets } from "./humanitiesFigures069Sheets";
 import { physicsFigures070Sheets } from "./physicsFigures070Sheets";
 import { chemistryFigures071Sheets } from "./chemistryFigures071Sheets";
+import { biologyFigures072Sheets } from "./biologyFigures072Sheets";
 
 /*
  * Figure packs are merged per guide. A plain object spread replaced a whole
@@ -478,6 +479,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   humanitiesFigures069Sheets,
   physicsFigures070Sheets,
   chemistryFigures071Sheets,
+  biologyFigures072Sheets,
 ];
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {};
 for (const pack of figurePacks)

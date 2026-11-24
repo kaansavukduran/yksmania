@@ -31,8 +31,8 @@ Tam aktarımı doğrulanan güncel satır sayısı sıfır. Arşivde gerçekte k
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 155 |
-| Okunduğu doğrulanan PDF toplamı (bu dal) | 155 / 8.981 (%1,73) |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 159 |
+| Okunduğu doğrulanan PDF toplamı (bu dal) | 159 / 8.981 (%1,77) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
 
@@ -57,9 +57,9 @@ Klasördeki numaralı kopya kâğıtları ders ders sayıldı (517 kopya kâğı
 | AYT Geometri | 4 | 1 | %25,0 |
 | AYT Fizik | 46 | 7 | %15,2 |
 | AYT Kimya | 55 | 15 | %27,3 |
-| AYT Biyoloji | 75 | 11 | %14,7 |
-| **AYT toplam** | **197** | **36** | **%18,3** |
-| **Genel toplam** | **517** | **145** | **%28,0** |
+| AYT Biyoloji | 75 | 15 | %20,0 |
+| **AYT toplam** | **197** | **40** | **%20,3** |
+| **Genel toplam** | **517** | **149** | **%28,8** |
 
 Notlar: TYT Türkçe'de 028 numarası iki farklı konuda kullanılmış (33 dosya, 32 numara). TYT Kimya'da 031 aynı adla iki kez var (eski ve yeni sürüm; 55 farklı konu). TYT Matematik ve Geometri'de 000 numaralı genel özetler var. AYT klasöründeki 7 durum raporu “232 konu” diyor ama klasörlerde 197 AYT kopya kâğıdı bulunuyor; 35 konunun kopya kâğıdı Drive'da yok. Bu tablodaki sıfırlar, o derste kopya kâğıdından figür/taktik aktarılmadığını söyler; uygulamada o dersin anlatımı ve soruları yine vardır (ayrıntı aşağıdaki kapsam tablosunda).
 
@@ -220,6 +220,10 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 020 AYT Kimya – Denge hesaplamaları (kopya kâğıdı) | `ayt-denge-hesaplari` figürsüz dört bölümüne: hacim sürgülü H₂ + I₂ ⇌ 2HI ve N₂O₄ ⇌ 2NO₂ Q çubukları (Δn = 0'da V sadeleşir, değilse Q = 0,80/V), ilerleme sürgülü Ni(k) + 4CO ⇌ Ni(CO)₄ kısmi basınç çubukları (toplam 2,5 − 3x, 1,0 atm'de x = 0,50, Kp = 8), seçimli üç aday karışımda K ve atom stoku testi (X₂ ⇌ 2X, x ≈ 0,390), başlangıç [B] sürgülü Q–K doğrusu ve korunan A + B ile denge çubukları; tek ilerleme–iki test taktiği; 2026 AYT Fen 22 mantığı | Kısmi |
 | 021 AYT Kimya – Dengeye etki eden faktörler: derişim etkisi (kopya kâğıdı) | `ayt-denge-derisim` figürsüz dört bölümüne: dört adımlı A ⇌ B (K = 4) derişim–zaman grafiği (0,20/0,80 → ani 0,40 → 0,24/0,96), eklenen B sürgülü 2A ⇌ B (K = 0,5) eski / ani / yeni denge çubukları ve A birimi stoku, seçimli üç aday değişim panosu (−x, −x, +x geçerli), He sürgülü sabit hacim / pistonlu kap tanecik diyagramı (CO + H₂O ⇌ CO₂ + H₂; kısmi basınç ve Q = 1); üç an taktiği; 2024 AYT Fen 21 mantığı | Kısmi |
 | 013 AYT Kimya – Molarite / iyon derişimi (kopya kâğıdı) | `ayt-iyon-derisimi` figürsüz dört bölümüne: seçimli NaCl / CaCl₂ / AlCl₃ / K₂SO₄ formül birimi → iyon kutuları (sayı ile yük ayrımı), dört adımlı Na₃PO₄ + Na₂SO₄ stok defteri (0,150 mol Na⁺, buharlaşma sonrası 300 mL, 0,50 M ve yük denetimi), Al₂(SO₄)₃ sürgülü iyon molaritesi ve yük derişimi çubukları, AgNO₃ hacmi sürgülü NaCl + AgNO₃ çökelme çubukları (eşdeğerlik 200 mL, 2,87 g AgCl); iyon stok defteri taktiği; 2026 AYT Fen 18 mantığı | Kısmi |
+| 029 AYT Biyoloji – Dolaşım sistemi: kalp (kopya kâğıdı) | `dolasim-kalp` figürsüz dört bölümüne: odacık ve septum seçimli önden şema (giriş/çıkış damarları, kalın sol duvar), triküspit / mitral / pulmoner / aort ve korda + papiller kas seçimli akış şeması (AV'de üç ve iki yaprak, yarımay kapağında korda yok), dört adımlı duvar kesiti (perikart → endokart, aort kökünden koroner giriş, koroner sinüsle dönüş, aksayan dalda O₂ yetersiz bölge), SA düğümüne vagus / sempatik / adrenalin / tiroit / kafein yön ve yol panosu; yol–kapak–sıra taktiği; 2026 AYT Fen 32 mantığı | Kısmi |
+| 030 AYT Biyoloji – Dolaşım sistemi: damarlar ve Starling (kopya kâğıdı) | `dolasim-damarlar-starling` figürsüz dört bölümüne: atardamar / arteriyol / toplardamar / kılcal seçimli enine kesitler (tabakalar, ölçeksiz), kılcalda su / O₂ / glikoz / CO₂ / protein / eritrosit geçiş panosu (süzülme ile difüzyon ayrı), seçimli ortalama basınç profili (95 → 2 mmHg modeli, arteriyolde 85 → 35, atardamarda 120/80 dalgası), Pc / π / protein / lenf seçimli ödem mekanizmaları; yapı–model–birim taktiği; 2023 AYT Fen 28 mantığı | Kısmi |
+| 035 AYT Biyoloji – Solunum sistemi: soluk alışverişi (kopya kâğıdı) | `soluk-alisverisi` figürsüz üç bölümüne: dört adımlı kaburga geometrisi (28° → 14°, ön–arka çap 230 → 252 birim, Palv 759 < Patm 760, eşitlenince akış durur), sakin / zorlu veriş karşılaştırması (gevşeme ve elastik geri dönüş; karın kasları ve iç interkostaller yalnız zorlu verişte), dört adımlı denetim döngüsü (kemoreseptör, afferent, soğan ve pons, efferent, negatif geri bildirim); kas–hacim–basınç–akış taktiği; 2019 AYT Fen 34 aktarımı | Kısmi |
+| 036 AYT Biyoloji – Solunum sistemi: gazların taşınması (kopya kâğıdı) | `solunum-gaz-tasinmasi` figürsüz beş bölümüne: dört adımlı O₂ yolu (difüzyon, plazmada çözünme, Hb–O₂, toplu taşıma, dokuda bırakma), Hb sürgülü içerik çubukları (PO₂ 95 ve %97 sabit; 1,34 × Hb × 0,97 + 0,29 mL/dL), seçimli akciğer / doku kılcalı ve akciğer atar / toplardamarı kısmi basınç devresi, deniz düzeyi / rakım / CO seçimli PO₂ = 0,21 × P ve Hb yeri panosu, derinlik sürgülü çözünen azot (P = 1 + d/10, pN₂ = 0,78P); kısmi basınç–biçim taktiği; 2019 AYT Fen 34 mantığı | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -243,10 +247,10 @@ Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî ko
 | AYT Geometri | 9 | 4 | 4 | 40 | 4 (%100,0) | 51 | 4 | 1 / 4 (%25,0) |
 | AYT Fizik | 32 | 47 | 46 | 541 | 11 (%23,4) | 26 | 15 | 7 / 46 (%15,2) |
 | AYT Kimya | 34 | 56 | 55 | 680 | 18 (%32,1) | 19 | 14 | 15 / 55 (%27,3) |
-| AYT Biyoloji | 29 | 76 | 75 | 907 | 16 (%21,1) | 39 | 12 | 11 / 75 (%14,7) |
-| **Toplam** | **341** | **540** | **505** | **6.465** | **200 (%37,0)** | **830** | **182** | **145 / 517 (%28,0)** |
+| AYT Biyoloji | 29 | 76 | 75 | 907 | 16 (%21,1) | 39 | 12 | 15 / 75 (%20,0) |
+| **Toplam** | **341** | **540** | **505** | **6.465** | **200 (%37,0)** | **830** | **182** | **149 / 517 (%28,8)** |
 
-Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %37) ve kopya kâğıtlarından aktarım (%28,0). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
+Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %37) ve kopya kâğıtlarından aktarım (%28,8). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
 
 Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan konular):
 

@@ -2447,6 +2447,58 @@ export const questionTactics: QuestionTactic[] = [
       "Yük denkliğiyle denetle. 2026 AYT Fen 18 mantığı: buharlaşan hacmi çıkarmadan bölmek ilk yanlış adımdır.",
     ],
   },
+  {
+    id: "kalp-yol-kapak-sira",
+    guides: ["dolasim-kalp"],
+    match: /kalp|kapak|atriyum|ventrikül|kulakçık|karıncık|düğüm|debi|atım|koroner|aort/i,
+    title: "Yolu damarın yönüyle, kapağı basınçla, zamanı sırayla kur",
+    steps: [
+      "Odacık sorusunda kanın girdiği damardan başla: ana toplardamarlar sağ atriyuma, akciğer toplardamarları sol atriyuma gelir.",
+      "Damarı oksijenle değil kalbe göre yönle adlandır: akciğer atardamarı O₂'si görece düşük kanı taşır.",
+      "Kapak durumunu iki komşu bölmenin basıncını karşılaştırarak yaz; kapak itmez, korda ve papiller kas yalnız tutar.",
+      "Zamanı sırala: SA düğümü → atriyum kasılması → AV gecikmesi → ventrikül kasılması. Kalp duvarını koroner damarlar besler.",
+      "2026 AYT Fen 32 mantığı: atriyum ve ventrikülün eş zamanlı kasıldığını öne süren seçenek yanlıştır.",
+    ],
+  },
+  {
+    id: "damar-yapi-model-birim",
+    guides: ["dolasim-damarlar-starling"],
+    match: /damar|kılcal|onkotik|hidrostatik|ödem|lenf|kesit|basınç|Starling/i,
+    title: "Yapıyı göreve, hesabı verilen modele, birimi niceliğe bağla",
+    steps: [
+      "Damar sınıfını akış yönüyle seç; duvarı tabakalarla karşılaştır (kılcalda yalnız endotel ve bazal lamina).",
+      "Basınç (mmHg), hız (cm/s) ve akım (cm³/s) ayrı niceliklerdir; v = Q/A'da toplam kesiti kullan.",
+      "Sıvı için verilen modeli uygula: klasik şemada net = Pc − π, artı dışa, eksi içe. Gazın yönünü kendi kısmi basıncından bul.",
+      "Ödemde mekanizmayı ayır: itme artışı, protein azalışı, geçirgenlik artışı ya da lenf tıkanması.",
+      "2023 AYT Fen 28 mantığı: kılcal duvarına kas ve bağ doku katmanları yükleyen ifade yanlıştır.",
+    ],
+  },
+  {
+    id: "soluk-kas-hacim-basinc",
+    guides: ["soluk-alisverisi"],
+    match: /diyafram|kaburga|interkostal|soluk|nefes|alveol|ventilasyon|solunum/i,
+    title: "Kas → hacim → basınç → akış sırasını koru",
+    steps: [
+      "Önce kası yaz: diyafram kasılınca iner, dış interkostaller kaburgaları kaldırır; sakin verişte bu kaslar gevşer.",
+      "Hacim değişiminden basıncı çıkar: hacim büyürse alveol basıncı atmosferin altına, küçülürse üstüne geçer.",
+      "Akışı farktan bul: yüksek basınçtan düşüğe; basınçlar eşitse toplu akış yoktur, gaz difüzyonu sürebilir.",
+      "Sakin ve zorlu verişi ayır: karın kasları ve iç interkostaller yalnız zorlu verişte gerekir.",
+      "2019 AYT Fen 34 aktarımı: hava akışını toplam basınç farkı, O₂ geçişini O₂'nin kısmi basınç farkı açıklar.",
+    ],
+  },
+  {
+    id: "gaz-kismi-basinc-bicim",
+    guides: ["solunum-gaz-tasinmasi"],
+    match: /O₂|CO₂|oksijen|karbondioksit|hemoglobin|bikarbonat|kısmi|doygun|pH|Bohr/i,
+    title: "Her gaza kendi kısmi basıncını, her yüke kendi biçimini yaz",
+    steps: [
+      "Yönü her gaz için ayrı kur: aynı gazın iki taraftaki kısmi basıncını karşılaştır; toplam basıncı kullanma.",
+      "Biçimi seç: O₂'nin çoğu hemoglobine bağlı, azı çözünmüş; CO₂'nin çoğu bikarbonat, kalanı Hb'ye bağlı ve çözünmüş.",
+      "Kısmi basınç, doygunluk ve içerik ayrı niceliklerdir; hemoglobin azsa aynı doygunlukta içerik azalır.",
+      "Koşulu oku: CO₂ artışı ve pH düşüşü dokuda O₂ bırakmayı kolaylaştırır; CO, hemoglobin yerlerini kapatır.",
+      "2019 AYT Fen 34 mantığı: pH düştüğünde hemoglobinin O₂'ye ilgisinin arttığını söyleyen ifade yanlıştır.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
