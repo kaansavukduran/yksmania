@@ -1,8 +1,8 @@
 {
-  "version": "0.190.0",
+  "version": "0.191.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Çukur aynada paralel demeti, merkezin dışındaki cismi ve merkezdeki cismi üç ayrı ışın çiziminde karşılaştır.",
-    "en": "Compare a parallel beam, an object beyond the centre and an object at the centre with three concave mirror ray diagrams."
+    "tr": "El aynası, diş aynası ve dış yan aynayı fotoğraflarla tanı. Görüntünün boyunu ve ışının yönünü ayrı çizimlerde karşılaştır.",
+    "en": "Explore hand, dental and side-view mirrors in credited photos. Compare image size and ray direction in separate diagrams."
   }
 }

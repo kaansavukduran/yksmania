@@ -14,6 +14,7 @@ import { mirrorBodyWallFigures } from "./mebiMirrorBodyWallFigures";
 import { sphericalMirrorFigures } from "./mebiSphericalMirrorFigures";
 import { concaveRayFigures } from "./mebiConcaveRayFigures";
 import { concaveSpecialRayFigures } from "./mebiConcaveSpecialRayFigures";
+import { mirrorUsesSteps, mirrorUsesTitle } from "../mebiMirrorUses";
 import { concaveImageZonesSteps, concaveImageZonesTitle } from "../mebiConcaveImageZones";
 import { convexSpecialRayFigures } from "./mebiConvexSpecialRayFigures";
 import {
@@ -404,7 +405,32 @@ function drawConcaveImageZone(step: number) {
   return { els, readout: ["F: aynanın 2 cm önünde, nokta görüntü."] };
 }
 
+const mirrorUseFrames: readonly FigureDef[] = [
+  {
+    caption: "Çukur yüzün odak içinde kalan yakını, aynanın arkasında düz ve büyük görünür.",
+    alt: "Çukur aynanın önünde F ile ayna arasında cisim. Arkada geri uzantıların birleştiği düz ve daha büyük görüntü.",
+    draw: () => rayDiagram("mirror", 2, 1, 1),
+  },
+  {
+    caption: "Küçük bir aynayı çevirerek yüzeyden gelen ışını göze ulaştırabilirsin. Bu örnekte ışını düz bir yüzeyden yansıtıyoruz.",
+    alt: "Bir ışın düz yansıtıcıya eğik geliyor ve yüzeye dik kesikli normalin diğer tarafında eşit açıyla dönüyor.",
+    draw: () => duzlemAyna["Yansıma normalle başlar"].draw(35, 0),
+  },
+  {
+    caption: "Tümsek aynada görüntü düz ve küçüktür. Gerçek ışık ön tarafta, kesik uzantılar arka tarafta.",
+    alt: "Tümsek aynanın önünde uzun dik cisim oku, arkasında aynı yöne bakan daha kısa görüntü oku. Gerçek ışınların arka uzantıları kesik.",
+    draw: () => rayDiagram("mirror", -2, 4, 1),
+  },
+];
+
 const kureselAynalar: Record<string, FigureDef> = {
+  [mirrorUsesTitle]: {
+    caption: "Her fotoğraftaki kullanımı sırayla düşün. Modelde görüntünün yönünü, boyunu veya ışının dönüşünü oku.",
+    alt: "Yakın büyütme, yön değiştirme ve yan aynanın küçültmesi için üç ayrı ışın çizimi.",
+    steps: [...mirrorUsesSteps],
+    draw: (_, step) => mirrorUseFrames[step].draw(0, 0),
+  },
+  ...Object.fromEntries(mirrorUsesSteps.map((title, step) => [title, mirrorUseFrames[step]])),
   [concaveImageZonesTitle]: {
     caption: "Paralel demet, merkez dışındaki cisim ve M’deki cisim arasında geçiş yap. Gerçek yansımaların nerede birbirine ulaştığını izle.",
     alt: "Çukur aynada üç ışın çizimi. Her adımın altında kesişim yeri ve varsa görüntü boyu yazılı.",

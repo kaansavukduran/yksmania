@@ -1,3 +1,11 @@
+# ÖSYM Mania 0.191.0 · El, diş ve dış yan aynası
+
+Yayın adayı. Üç ayna türünün günlük kullanımını lisanslı fotoğraflarda ve ayrı ışın çizimlerinde incele. TYT Biyoloji ve Tarih kopya kâğıtları ile yeni fizik çizimleri aynı adayda.
+
+# ÖSYM Mania 0.145.0 · Organeller ve Osmanlı cepheleri
+
+Yayın adayı (24 Kasım 2026). TYT Biyoloji'de organeller, besin ağı, sınıflandırma ve kalıtımda sapmalar; TYT Tarih'te Osmanlı'nın dünya gücü dönemi, devrimler çağı, denge stratejisi ve 20. yüzyıl başı cepheleri figürlerle açılıyor.
+
 # ÖSYM Mania 0.190.0 · Çukur aynada üç görüntü
 
 Yayın adayı. Paralel demetin F’de birleşmesini, merkez dışındaki ve merkezdeki cismin oluşturduğu ters görüntüleri üç çizimde karşılaştır. Ayrı Kopya Kağıdı her çizimi çözüm adımında açıyor.

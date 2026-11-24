@@ -12,6 +12,7 @@ import rows from "../src/learning/guidance030Humanities.json";
 import { lessons } from "../src/domain/content";
 import { lessonGuides } from "../src/learning/guides";
 import { QuestionHelp } from "../src/components/QuestionHelp";
+import { tacticsFor } from "../src/learning/questionTactics";
 import {
   helpPanels,
   resolvedGuidance,
@@ -556,7 +557,11 @@ describe("030 Humanities old60 individual staged guidance", () => {
           expect(rendered).toContain(escape(q.explanation));
           for (const t of [...g.optionReasons, g.commonError, g.check])
             expect(rendered).toContain(escape(t));
-          expect((rendered.match(/<li>/g) ?? []).length).toBe(5);
+          // Beş şık gerekçesi; bu derslerin soru taktikleri (Forge068) tam
+          // çözümde kendi adımlarını ayrı listede ekler.
+          expect((rendered.match(/<li>/g) ?? []).length).toBe(
+            5 + tacticsFor(q).reduce((s, t) => s + t.steps.length, 0),
+          );
           expect(
             nextButton(QuestionHelp({ question: q, level, onLevel })),
           ).toBeUndefined();
