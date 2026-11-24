@@ -2395,6 +2395,58 @@ export const questionTactics: QuestionTactic[] = [
       "2020 TYT Fen 3 mantığı: serbest yüzen cisimde sıvı yoğunlaşınca Fk değişmez, batan hacim azalır.",
     ],
   },
+  {
+    id: "hiz-katsayi-us",
+    guides: ["ayt-tepkime-hizi"],
+    match: /hız|mertebe|tüken|harcan|oluş|deney|M\/s/i,
+    title: "Katsayıyı hız oranında, üssü deneyde kullan",
+    steps: [
+      "Hangi türün hızı soruluyor, yaz: giren için −Δ[ ]/Δt, ürün için +Δ[ ]/Δt; birim M/s.",
+      "Ortak hız için her tür hızını kendi katsayısına böl; iki tür hızı yalnız katsayılar eşitse eşittir.",
+      "Hız yasasındaki üsleri net denklemden değil, tek derişimin değiştiği iki deneyden ya da verilen yavaş adımdan al.",
+      "k birimini r/[ ]ⁿ ile denetle; sabit sıcaklıkta tepkime ilerledikçe k değişmez, değişen derişimdir.",
+      "2024 AYT Fen 20 mantığı: derişim azalınca hız azalabilir, hız sabiti azalmaz.",
+    ],
+  },
+  {
+    id: "denge-ilerleme-kok",
+    guides: ["ayt-denge-hesaplari"],
+    match: /denge|K[cp]?\b|ilerle|başlangıç|kök|basınç/i,
+    title: "Tek ilerleme yaz, kökü iki testle seç",
+    steps: [
+      "Net denklemi fazlarıyla yaz; saf katı ve sıvıyı bağıntıya koyma, stok tablosunda tut.",
+      "Molleri hacme bölerek derişime çevir; Δn ≠ 0 ise V bağıntıda sadeleşmez.",
+      "Bütün türlerin değişimini aynı x ve katsayılarla yaz; toplam basınç verildiyse gaz katsayı farkıyla x'e bağla.",
+      "Kökü seç: hiçbir son miktar eksi olmamalı; K'yi ve atom stokunu yeniden hesapla.",
+      "2026 AYT Fen 22 mantığı: toplam basınç düşüşünden ilerlemeyi bul, katı nikeli Kp'ye katma.",
+    ],
+  },
+  {
+    id: "derisim-uc-an",
+    guides: ["ayt-denge-derisim"],
+    match: /ekle|çek|derişim|inert|soy gaz|helyum|hacim|kayma|yön/i,
+    title: "Eski, ani ve yeni durumu ayrı yaz",
+    steps: [
+      "Eski dengede Q = K. Müdahaleyi yalnız etkilediği türe uygula: tek tür eklemede yalnız o tür sıçrar.",
+      "Ani değerlerle Q'yu yeniden hesapla; Q < K ileri, Q > K geri. Sıcaklık değişmediyse K aynıdır.",
+      "Yeni dengeyi aynı ilerlemeyle bul: (ani + katsayı × x) değerlerini K'ye koy; eski değerlere dönmek gerekmez.",
+      "Soy gazda kabı sor: sabit hacimde kısmi basınçlar aynı, pistonlu kapta hepsi aynı oranda düşer.",
+      "2024 AYT Fen 21 mantığı: sabit hacimde toplam basıncın artması her gazın kısmi basıncının arttığı anlamına gelmez.",
+    ],
+  },
+  {
+    id: "iyon-stok-defteri",
+    guides: ["ayt-iyon-derisimi"],
+    match: /iyon|tuz|karış|buhar|seyrelt|çök|Cl⁻|Na⁺/i,
+    title: "İyon mollerini topla, ortak son hacme böl",
+    steps: [
+      "Her kaynak için önce n(tuz) = M × V(L) yaz; formül birimi iyonlarına ayrılır.",
+      "Katsayıyı bir kez kullan: n(iyon) = alt indis × n(tuz). Yük, iyon sayısı değildir.",
+      "Aynı iyonun bütün kaynaklarını topla; tepkime ya da çökelme varsa önce harcananı düş.",
+      "Son hacmi hesapla (karışım toplamı, eklenen su, buharlaşan su) ve bütün iyonları aynı hacme böl.",
+      "Yük denkliğiyle denetle. 2026 AYT Fen 18 mantığı: buharlaşan hacmi çıkarmadan bölmek ilk yanlış adımdır.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.

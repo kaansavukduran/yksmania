@@ -850,22 +850,22 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Matematik | 17 / 17 | 17 · 38 | 253 / 253 · %100,00 | 2 / 17 · %11,76 | 273 soru · 9 kitapçık | 0 |
 | AYT Geometri | 4 / 4 | 4 · 53 | 45 / 45 · %100,00 | 1 / 4 · %25,00 | 87 soru · 9 kitapçık | 0 |
 | AYT Fizik | 46 / 46 | 46 · 175 | 541 / 541 · %100,00 | 7 / 46 · %15,22 | 126 soru · 9 kitapçık | 0 |
-| AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
+| AYT Kimya | 55 / 55 | 55 · 164 | 680 / 680 · %100,00 | 15 / 55 · %27,27 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2354** | **6.669 / 6.669 · %100,00** | **141 / 517 · %27,27** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2370** | **6.669 / 6.669 · %100,00** | **145 / 517 · %28,05** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
-| Tarihsel dal kaydı: okunan veya eşlenen PDF / eski envanter | 151 / 8.981 |
+| Tarihsel dal kaydı: okunan veya eşlenen PDF / eski envanter | 155 / 8.981 |
 | Tarihsel 99_ÖSYM kaydı: uygulama karşılığı olan / 20 Kasım envanteri | 18 / 1.001 |
-| 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 107 |
+| 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 111 |
 | Kademeli çözüm paneli bulunan soru | 6.669 / 6.669 · %100,00 |
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
 | Ara hatırlama (mikro ritim): ders · soru | 505 / 510 · %99,02 · 3.052 soru |
 | Gösterim onarımı: soru alanı · ders paragrafı | 962 · 1.634 |
-| Kopya kâğıdı (kısmi aktarım / toplam) | 141 / 517 · %27,27 |
+| Kopya kâğıdı (kısmi aktarım / toplam) | 145 / 517 · %28,05 |
 | Resmî ana başlık · anlatımlı konu · hazır anlatım | 341 · 510 · 510 |
 | İleri ve kaynak soru seti (anlatımı ana konusunda) | 36 |
 <!-- ilerleme:bitir -->

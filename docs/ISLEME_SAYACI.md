@@ -31,8 +31,8 @@ Tam aktarımı doğrulanan güncel satır sayısı sıfır. Arşivde gerçekte k
 | Kayıtlı toplam PDF (kanonik envanter, 17 Kasım taraması) | 8.981 |
 | Kanonik defterde öğretim aktarımı **tam** | 7 |
 | Kanonik defterde **kısmi** | 2 |
-| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 151 |
-| Okunduğu doğrulanan PDF toplamı (bu dal) | 151 / 8.981 (%1,68) |
+| Bu dalda (Claude turları) okunup uygulamaya eşlenen PDF | 155 |
+| Okunduğu doğrulanan PDF toplamı (bu dal) | 155 / 8.981 (%1,73) |
 
 Arşivdeki PDF'lerin büyük kısmı aynı konunun farklı biçimleridir (TYT konu özeti, “Dersler Cepte” sunumu, etkinlik, okuma metni, deneme). Bu yüzden PDF yüzdesi konu kapsamını ölçmez; konu kapsamı aşağıdaki rehber tablosundadır.
 
@@ -56,10 +56,10 @@ Klasördeki numaralı kopya kâğıtları ders ders sayıldı (517 kopya kâğı
 | AYT Matematik | 17 | 2 | %11,8 |
 | AYT Geometri | 4 | 1 | %25,0 |
 | AYT Fizik | 46 | 7 | %15,2 |
-| AYT Kimya | 55 | 11 | %20,0 |
+| AYT Kimya | 55 | 15 | %27,3 |
 | AYT Biyoloji | 75 | 11 | %14,7 |
-| **AYT toplam** | **197** | **32** | **%16,2** |
-| **Genel toplam** | **517** | **141** | **%27,3** |
+| **AYT toplam** | **197** | **36** | **%18,3** |
+| **Genel toplam** | **517** | **145** | **%28,0** |
 
 Notlar: TYT Türkçe'de 028 numarası iki farklı konuda kullanılmış (33 dosya, 32 numara). TYT Kimya'da 031 aynı adla iki kez var (eski ve yeni sürüm; 55 farklı konu). TYT Matematik ve Geometri'de 000 numaralı genel özetler var. AYT klasöründeki 7 durum raporu “232 konu” diyor ama klasörlerde 197 AYT kopya kâğıdı bulunuyor; 35 konunun kopya kâğıdı Drive'da yok. Bu tablodaki sıfırlar, o derste kopya kâğıdından figür/taktik aktarılmadığını söyler; uygulamada o dersin anlatımı ve soruları yine vardır (ayrıntı aşağıdaki kapsam tablosunda).
 
@@ -216,6 +216,10 @@ Bu dalda okunan PDF'ler (metin çıkarımıyla; matematik sembolleri kısmen boz
 | 005 TYT Fizik – Enerji ve Hareket (kopya kâğıdı) | `enerji-ve-hareket` figürsüz dört bölümüne: santral verimi sürgülü kaynak → santral → elektrik taşıyıcı → aygıt zinciri (2 kW × 0,5 h = 1 kWh = 3,6 MJ, giriş = yararlı/verim), aynı kaldırmada üç model seçimi (10 kg, 2 m, 5 s; Wnet 0, ΔEp 200 J, 40 W ve %80 verimde 250 J), yol sürgülü Ek–d eşik grafiği (20 J, 2 N, 10 m'de durma, ötesi model dışı), beş adımlı bilanço planı (10 N çekme, 2 N sürtünme, 3 m; √33 m/s); model–eşik taktiği; 2019 TYT Fen 3 mantığı | Kısmi |
 | 010 TYT Fizik – Elektrik Akımı (kopya kâğıdı) | `elektrik-akimi` figürsüz üç bölümüne: üç ampermetreli seri devrede üç veri seçimi (10 C / 2 s, 10 mC / 2 ms, 6 × 10¹⁹ elektron / 3 s), R₂ sürgülü potansiyel merdiveni (18 V, 2 Ω + R₂; yük başına enerji), K seri ve L ∥ M parlaklık panosu (S açık 16 / 4 / 4 W, M kolu açık 9 / 9 W, S kapalı 36 W ve aşırı akım); düğüm–güç taktiği; 2023 TYT Fen 5 mantığı | Kısmi |
 | 013 TYT Fizik – Sıvılarda Kaldırma Kuvveti (kopya kâğıdı) | `sivilarin-kaldirma-kuvveti` figürsüz üç bölümüne: kütle sürgülü tekne / dip karşılaştırması (8000 kg/m³ top, m L ile m/8 L, 500 cm² kapta düzey düşüşü), hacim sürgülü su / yağ / hava kaldırma çubukları (aynı hacimde 20, 16 ve 0,024 N), dört adımlı ip–kesme–yüzme–veri denetimi (0,3 kg, 1 L; T 7 N aşağı, Vb 0,3 L); durum seçme taktiği; 2020 TYT Fen 3 mantığı | Kısmi |
+| 018 AYT Kimya – Kimyasal tepkimelerde hız (kopya kâğıdı) | `ayt-tepkime-hizi` figürsüz dört bölümüne: dört adımlı A → C iki ölçüm çubuğu (0,80 → 0,20 M, 4 s; imzalı Δ −0,60 M, 0,15 M/s, 9,0 M/dk), N₂ hızı sürgülü N₂ + 3H₂ → 2NH₃ tür hızı çubukları (1 : 3 : 2, ortak r), seçimli 0–3. mertebe panosu (k birimi ve 2ⁿ, 3ⁿ kat çubukları), dört adımlı iki basamaklı mekanizma (ara ürün HI, r = k[H₂][ICl]); katsayı–üs taktiği; 2024 AYT Fen 20 mantığı | Kısmi |
+| 020 AYT Kimya – Denge hesaplamaları (kopya kâğıdı) | `ayt-denge-hesaplari` figürsüz dört bölümüne: hacim sürgülü H₂ + I₂ ⇌ 2HI ve N₂O₄ ⇌ 2NO₂ Q çubukları (Δn = 0'da V sadeleşir, değilse Q = 0,80/V), ilerleme sürgülü Ni(k) + 4CO ⇌ Ni(CO)₄ kısmi basınç çubukları (toplam 2,5 − 3x, 1,0 atm'de x = 0,50, Kp = 8), seçimli üç aday karışımda K ve atom stoku testi (X₂ ⇌ 2X, x ≈ 0,390), başlangıç [B] sürgülü Q–K doğrusu ve korunan A + B ile denge çubukları; tek ilerleme–iki test taktiği; 2026 AYT Fen 22 mantığı | Kısmi |
+| 021 AYT Kimya – Dengeye etki eden faktörler: derişim etkisi (kopya kâğıdı) | `ayt-denge-derisim` figürsüz dört bölümüne: dört adımlı A ⇌ B (K = 4) derişim–zaman grafiği (0,20/0,80 → ani 0,40 → 0,24/0,96), eklenen B sürgülü 2A ⇌ B (K = 0,5) eski / ani / yeni denge çubukları ve A birimi stoku, seçimli üç aday değişim panosu (−x, −x, +x geçerli), He sürgülü sabit hacim / pistonlu kap tanecik diyagramı (CO + H₂O ⇌ CO₂ + H₂; kısmi basınç ve Q = 1); üç an taktiği; 2024 AYT Fen 21 mantığı | Kısmi |
+| 013 AYT Kimya – Molarite / iyon derişimi (kopya kâğıdı) | `ayt-iyon-derisimi` figürsüz dört bölümüne: seçimli NaCl / CaCl₂ / AlCl₃ / K₂SO₄ formül birimi → iyon kutuları (sayı ile yük ayrımı), dört adımlı Na₃PO₄ + Na₂SO₄ stok defteri (0,150 mol Na⁺, buharlaşma sonrası 300 mL, 0,50 M ve yük denetimi), Al₂(SO₄)₃ sürgülü iyon molaritesi ve yük derişimi çubukları, AgNO₃ hacmi sürgülü NaCl + AgNO₃ çökelme çubukları (eşdeğerlik 200 mL, 2,87 g AgCl); iyon stok defteri taktiği; 2026 AYT Fen 18 mantığı | Kısmi |
 
 PDF içeriği depoya kopyalanmaz; sorular özgündür, resmî ÖSYM sorusu olarak etiketlenmez.
 
@@ -238,11 +242,11 @@ Bu tablo her turda uygulamanın kendi verisinden yeniden üretilir. “Resmî ko
 | AYT Matematik | 36 | 18 | 17 | 253 | 13 (%72,2) | 19 | 5 | 2 / 17 (%11,8) |
 | AYT Geometri | 9 | 4 | 4 | 40 | 4 (%100,0) | 51 | 4 | 1 / 4 (%25,0) |
 | AYT Fizik | 32 | 47 | 46 | 541 | 11 (%23,4) | 26 | 15 | 7 / 46 (%15,2) |
-| AYT Kimya | 34 | 56 | 55 | 680 | 18 (%32,1) | 19 | 14 | 11 / 55 (%20,0) |
+| AYT Kimya | 34 | 56 | 55 | 680 | 18 (%32,1) | 19 | 14 | 15 / 55 (%27,3) |
 | AYT Biyoloji | 29 | 76 | 75 | 907 | 16 (%21,1) | 39 | 12 | 11 / 75 (%14,7) |
-| **Toplam** | **341** | **540** | **505** | **6.465** | **200 (%37,0)** | **830** | **182** | **141 / 517 (%27,3)** |
+| **Toplam** | **341** | **540** | **505** | **6.465** | **200 (%37,0)** | **830** | **182** | **145 / 517 (%28,0)** |
 
-Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %37) ve kopya kâğıtlarından aktarım (%27,3). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
+Okuma: anlatım ve soru bütün derslerde var (505 / 540 derste anlatım, 6.465 özgün soru); eksik olan en çok görsel/etkileşimli katman (figürlü ders %37) ve kopya kâğıtlarından aktarım (%28,0). AYT Matematik ve AYT Geometri'de resmî konu sayısı uygulama dersinden fazladır, çünkü bu derslerde birkaç resmî konu tek derste toplanmıştır.
 
 Bulunan gerçek boşluklar (resmî listede olup uygulamada ayrı dersi olmayan konular):
 
