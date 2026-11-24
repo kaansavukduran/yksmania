@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.145.0 · Organeller ve Osmanlı cepheleri
+
+Yayın adayı (24 Kasım 2026). TYT Biyoloji'de organeller, besin ağı, sınıflandırma ve kalıtımda sapmalar; TYT Tarih'te Osmanlı'nın dünya gücü dönemi, devrimler çağı, denge stratejisi ve 20. yüzyıl başı cepheleri figürlerle açılıyor.
+
 # ÖSYM Mania 0.144.0 · Coğrafya kesitleri ve nüfus
 
 Yayın adayı (24 Kasım 2026). Türkiye iklimi, yer şekilleri, dünyada nüfusun dağılışı ve Türkiye nüfusu kopya kâğıtları kesit, harita ve sayım ekseni figürleriyle açılıyor.
