@@ -29,6 +29,7 @@ import { boundaryWavelength, ultravioletBoundaryTitle, visibleBoundaryNm, wavele
 import { gammaPhotonStages, gammaPhotonTitle, xRayDetectorTitle, xRayLayers, xRaySignal } from "../mebiXAndGamma";
 import { pulseDirectionAt, pulseDirectionCases, pulseDirectionTitle, verticalDirection } from "../mebiPulseDirection";
 import { generatingPulseAt, pulseGenerationTime, pulseGenerationTitle } from "../mebiPulseGeneration";
+import { pulseDampingAt, pulseDampingTime, pulseDampingTitle } from "../mebiPulseDamping";
 
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
@@ -558,6 +559,43 @@ const giris: Record<string, FigureDef> = {
 };
 
 const yay: Record<string, FigureDef> = {
+  [pulseDampingTitle]: {
+    caption: "Zamanı değiştir ve aynı yatay ölçekle çizilen iki atmanın tepelerini karşılaştır. Genlik düşey, genişlik yatay ölçülür.",
+    alt: "İki paralel yay kesiti. Üstte ideal atma, altta genliği zamanla azalan örnek. İki tepe yatayda aynı konuma ilerliyor. Yatay genişlik ve dengeden tepeye düşey genlik ayrı işaretli.",
+    param: {
+      label: "Geçen süre",
+      min: pulseDampingTime.min,
+      max: pulseDampingTime.max,
+      step: pulseDampingTime.step,
+      init: pulseDampingTime.initial,
+      unit: " s",
+    },
+    draw: (time) => {
+      const state = pulseDampingAt(time);
+      const peak = (state.leftM + state.rightM) / 2;
+      const cmInDiagram = 0.32;
+      const lines = [
+        { title: "İdeal yay", y: 3.2, height: state.idealHeightCm, amplitude: state.idealAmplitudeCm, tone: "b" as const },
+        { title: "Sönümlü örnek", y: 0, height: state.dampedHeightCm, amplitude: state.dampedAmplitudeCm, tone: "a" as const },
+      ];
+      return {
+        els: [
+          ...lines.flatMap(({ title, y, height, amplitude, tone }) => [
+            base(0, 10, y),
+            wave(pulseLine(0, 10, (x) => height(x) * cmInDiagram, y), tone),
+            ...span(v(peak, y), v(peak, y + amplitude * cmInDiagram), "A", -1, tone),
+            txt(v(0, y + 1.65), title, "ne", { bold: true, small: true, tone }),
+          ]),
+          ...span(v(state.leftM, -0.65), v(state.rightM, -0.65), `${fmt(state.widthM)} m`, -1, "c"),
+        ],
+        readout: [
+          `İdeal yay: genlik ${fmt(state.idealAmplitudeCm)} cm.`,
+          `Sönümlü örnek: genlik ${fmt(state.dampedAmplitudeCm, 2)} cm.`,
+          `Her iki çizimde genişlik ${fmt(state.widthM)} m.`,
+        ],
+      };
+    },
+  },
   [pulseGenerationTitle]: {
     caption: "Kaynağın ilk hareketini ve zamanı seç. Sol uç dengeye dönünce iki sınır da sağa ilerler.",
     alt: "Sol uçta hareket edebilen kaynak noktası, sağda sabit destek var. Kaynağın ilk hareketine göre denge çizgisinin üstünde bir tepe veya altında bir çukur görülüyor.",

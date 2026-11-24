@@ -30,19 +30,17 @@ async function coeff(
 async function point(lab: Locator, name: string, x: number, y: number) {
   const dot = lab.locator(`[data-names~="${name}"]`);
   await expect(dot).toHaveCount(1);
-  expect(Number(await dot.getAttribute("data-x"))).toBeCloseTo(x, 8);
-  expect(Number(await dot.getAttribute("data-y"))).toBeCloseTo(y, 8);
-  const limit = Number(
-    await lab.locator("svg").getAttribute("data-axis-limit"),
-  );
-  expect(Number(await dot.getAttribute("cx"))).toBeCloseTo(
-    360 + (x / limit) * 260,
-    8,
-  );
-  expect(Number(await dot.getAttribute("cy"))).toBeCloseTo(
-    320 - (y / limit) * 260,
-    8,
-  );
+  const { dataX, dataY, cx, cy, limit } = await dot.evaluate((node) => ({
+    dataX: Number(node.getAttribute("data-x")),
+    dataY: Number(node.getAttribute("data-y")),
+    cx: Number(node.getAttribute("cx")),
+    cy: Number(node.getAttribute("cy")),
+    limit: Number(node.closest("svg")?.getAttribute("data-axis-limit")),
+  }));
+  expect(dataX).toBeCloseTo(x, 8);
+  expect(dataY).toBeCloseTo(y, 8);
+  expect(cx).toBeCloseTo(360 + (x / limit) * 260, 8);
+  expect(cy).toBeCloseTo(320 - (y / limit) * 260, 8);
 }
 async function realLine(
   lab: Locator,
@@ -53,14 +51,16 @@ async function realLine(
 ) {
   const line = lab.locator(`[data-math-line="${name}"]`);
   await expect(line).toHaveCount(1);
-  const limit = Number(
-    await lab.locator("svg").getAttribute("data-axis-limit"),
-  );
-  for (const suffix of ["1", "2"]) {
-    const x =
-      ((Number(await line.getAttribute(`x${suffix}`)) - 360) * limit) / 260;
-    const y =
-      ((320 - Number(await line.getAttribute(`y${suffix}`))) * limit) / 260;
+  const { limit, endpoints } = await line.evaluate((node) => ({
+    limit: Number(node.closest("svg")?.getAttribute("data-axis-limit")),
+    endpoints: ["1", "2"].map((suffix) => [
+      Number(node.getAttribute(`x${suffix}`)),
+      Number(node.getAttribute(`y${suffix}`)),
+    ]),
+  }));
+  for (const [cx, cy] of endpoints) {
+    const x = ((cx - 360) * limit) / 260;
+    const y = ((320 - cy) * limit) / 260;
     expect(a * x + b * y + c).toBeCloseTo(0, 8);
     expect(
       Math.min(Math.abs(Math.abs(x) - limit), Math.abs(Math.abs(y) - limit)),

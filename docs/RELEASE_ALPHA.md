@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.121.0 · Atmanın genişliği ve genliği
+
+Yayın adayı. Zamanı değiştirip iki atmanın tepelerini karşılaştır. Yatay genişliği denge çizgisi boyunca, genliği denge çizgisinden tepeye doğru oku. Kopya Kağıdı sönümlü örneğin genliğini iki adımda hesaplıyor.
+
 # ÖSYM Mania 0.120.0 · Atmanın kaynaktan oluşumu
 
 Yayın adayı. Yayın sol ucunun önce yukarı ya da aşağı hareketini seç. Geçen süreyi değiştirerek atmanın ön ve arka sınırlarını izle. Kopya Kağıdı, kaynak dengeye döndüğünde atmanın genişliğini nasıl bulacağını gösterir.

@@ -1,8 +1,8 @@
 {
-  "version": "0.120.0",
+  "version": "0.121.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Kaynağın önce yukarı veya aşağı hareketini seç. Tepe ve çukurun nasıl oluştuğunu, kaynak durduktan sonra genişliğin nasıl korunduğunu izle.",
-    "en": "Choose whether the source first moves up or down. Watch a crest or trough form and see how its width is preserved after the source stops."
+    "tr": "Yay atmasının genişliğini ve genliğini ayrı ölç. Zamanı değiştirerek ideal yayla sönümlü bir örneği aynı çizimde karşılaştır.",
+    "en": "Measure pulse width and amplitude separately. Change the time to compare an ideal spring with a damped example."
   }
 }

@@ -1,8 +1,8 @@
 // The page shows typeset text (display repairs and spacing); expectations use the same view.
 import { typeset } from "../../src/domain/typeset";
-import { expect, type Locator } from "@playwright/test";
 import type { Lesson } from "../../src/domain/model";
 import type { LessonCase } from "./thirty-units.spec";
+export { setRange } from "./helpers/keyboardRange";
 export type SourceLessonCase = LessonCase & {
   firstExplanation: string;
   questionCount: number;
@@ -32,20 +32,4 @@ export function forge021Case(
     interact,
     assertOutcome,
   };
-}
-export async function setRange(lab: Locator, label: string, value: number) {
-  const slider = lab.getByRole("slider", { name: label, exact: true });
-  const min = Number(await slider.getAttribute("min")),
-    max = Number(await slider.getAttribute("max")),
-    step = Number((await slider.getAttribute("step")) || 1),
-    current = Number(await slider.inputValue());
-  const start = [
-    { at: current, key: "" },
-    { at: min, key: "Home" },
-    { at: max, key: "End" },
-  ].sort((a, b) => Math.abs(a.at - value) - Math.abs(b.at - value))[0];
-  if (start.key) await slider.press(start.key);
-  for (let i = 0; i < Math.round(Math.abs(value - start.at) / step); i++)
-    await slider.press(value > start.at ? "ArrowRight" : "ArrowLeft");
-  await expect(slider).toHaveValue(String(value));
 }
