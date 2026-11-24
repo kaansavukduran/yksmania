@@ -1,8 +1,8 @@
 {
-  "version": "0.121.0",
+  "version": "0.122.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Yay atmasının genişliğini ve genliğini ayrı ölç. Zamanı değiştirerek ideal yayla sönümlü bir örneği aynı çizimde karşılaştır.",
-    "en": "Measure pulse width and amplitude separately. Change the time to compare an ideal spring with a damped example."
+    "tr": "Yay ucu hareketi tekrarladığında oluşan enine ve boyuna dalgaları karşılaştır. Komşu tepeler arasındaki dalga boyunu ölç.",
+    "en": "Compare transverse and longitudinal waves as the spring source repeats its motion. Measure the wavelength between neighbouring crests."
   }
 }

@@ -30,6 +30,7 @@ import { gammaPhotonStages, gammaPhotonTitle, xRayDetectorTitle, xRayLayers, xRa
 import { pulseDirectionAt, pulseDirectionCases, pulseDirectionTitle, verticalDirection } from "../mebiPulseDirection";
 import { generatingPulseAt, pulseGenerationTime, pulseGenerationTitle } from "../mebiPulseGeneration";
 import { pulseDampingAt, pulseDampingTime, pulseDampingTitle } from "../mebiPulseDamping";
+import { periodicSpringAt, periodicSpringTime, periodicSpringTitle, periodicSpringWavelengthM } from "../mebiPeriodicSpring";
 
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
@@ -559,6 +560,59 @@ const giris: Record<string, FigureDef> = {
 };
 
 const yay: Record<string, FigureDef> = {
+  [periodicSpringTitle]: {
+    caption: "Zamanı ilerlet. Üstte işaretli nokta düşey, altta işaretli halka yatay hareket eder. Dalganın ilerleme yönü büyük okla gösterilir.",
+    alt: "Üstte sol kaynaktan sağa ilerleyen enine yay dalgası ve iki komşu tepe arasında yatay dalga boyu. Altta sağ kaynaktan sola ilerleyen boyuna dalga. Bir halka kendi denge konumu çevresinde sağa ve sola yer değiştirir.",
+    param: {
+      label: "Geçen süre",
+      min: periodicSpringTime.min,
+      max: periodicSpringTime.max,
+      step: periodicSpringTime.step,
+      init: periodicSpringTime.initial,
+      unit: " s",
+    },
+    draw: (time) => {
+      const state = periodicSpringAt(time);
+      const upperY = 4.5;
+      const marker = 4.25;
+      const ringCount = 44;
+      const positions = Array.from({ length: ringCount + 1 }, (_, index) =>
+        state.longitudinalPositionM(index * pulseSupportM / ringCount),
+      );
+      const markerX = state.longitudinalPositionM(marker);
+      const [first, second] = state.crestDistancesM;
+      return {
+        els: [
+          txt(v(0, upperY + 1.87), "Enine", "ne", { tone: "b", bold: true, small: true }),
+          vec(v(5.8, upperY + 1.37), v(8.75, upperY + 1.37), { tone: "ink", bold: true }),
+          txt(v(7.27, upperY + 1.51), "İlerleme", "n", { small: true }),
+          base(0, pulseSupportM, upperY),
+          wave(pulseLine(0, pulseSupportM, (x) => 2.8 * state.transverseHeightM(x), upperY, 160)),
+          ...wall(pulseSupportM, upperY - 0.65, upperY + 0.65),
+          circle(v(0, upperY + 2.8 * state.transverseHeightM(0)), 0.12, { tone: "c", fill: "c" }),
+          seg(v(marker, upperY - 0.82), v(marker, upperY + 0.82), { tone: "a", dash: true }),
+          circle(v(marker, upperY + 2.8 * state.transverseHeightM(marker)), 0.11, { tone: "a", fill: "a" }),
+          ...(second === undefined ? [] : span(v(second, upperY - 1.1), v(first, upperY - 1.1), `λ = ${fmt(periodicSpringWavelengthM)} m`, -1, "c")),
+          txt(v(0, 1.45), "Boyuna", "ne", { tone: "b", bold: true, small: true }),
+          vec(v(8.75, 1.05), v(5.8, 1.05), { tone: "ink", bold: true }),
+          txt(v(7.27, 1.19), "İlerleme", "n", { small: true }),
+          base(0, pulseSupportM),
+          ...wall(0, -0.54, 0.54),
+          ...positions.map((x) => seg(v(x, -0.27), v(x, 0.27), { tone: "b", thin: true })),
+          circle(v(state.longitudinalPositionM(pulseSupportM), 0), 0.12, { tone: "c", fill: "c" }),
+          seg(v(marker, -0.36), v(marker, -0.86), { tone: "muted", dash: true }),
+          circle(v(markerX, 0), 0.11, { tone: "a", fill: "a" }),
+          ...(Math.abs(markerX - marker) < 0.04 ? [] : [seg(v(markerX, -0.34), v(markerX, -0.56), { tone: "a", thin: true })]),
+        ],
+        readout: [
+          `İlk etki kaynaktan ${fmt(state.leadingDistanceM, 2)} m uzakta.`,
+          "Enine: nokta düşey titreşir, dalga sağa ilerler.",
+          "Boyuna: halka yatay titreşir, sıkışmalar sola ilerler.",
+          ...(second === undefined ? ["Dalga boyunu göstermek için iki tepenin oluşmasına kadar süreyi artır."] : [`Komşu tepeler arası ${fmt(periodicSpringWavelengthM)} m.`]),
+        ],
+      };
+    },
+  },
   [pulseDampingTitle]: {
     caption: "Zamanı değiştir ve aynı yatay ölçekle çizilen iki atmanın tepelerini karşılaştır. Genlik düşey, genişlik yatay ölçülür.",
     alt: "İki paralel yay kesiti. Üstte ideal atma, altta genliği zamanla azalan örnek. İki tepe yatayda aynı konuma ilerliyor. Yatay genişlik ve dengeden tepeye düşey genlik ayrı işaretli.",

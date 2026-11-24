@@ -32,6 +32,7 @@ import { springPulseExample, springPulseSection } from "../mebiSpringPulse";
 import { pulseDirectionExample, pulseDirectionSection } from "../mebiPulseDirection";
 import { pulseGenerationExample, pulseGenerationSection } from "../mebiPulseGeneration";
 import { pulseDampingExample, pulseDampingSection } from "../mebiPulseDamping";
+import { periodicSpringExample, periodicSpringSection } from "../mebiPeriodicSpring";
 import { surfaceWaveExample, surfaceWaveSection, surfaceWaveTitle } from "../mebiSurfaceWave";
 import { seismicFocusExample, seismicFocusSection, seismicFocusTitle } from "../mebiSeismicFocus";
 import { radioWaveExample, radioWaveSection } from "../mebiRadioWaves";
@@ -457,8 +458,8 @@ export function studyGuide(lessonId: string) {
   if (guide?.id === "yay-dalgalari") {
     return {
       ...guide,
-      sections: [...guide.sections, springPulseSection, pulseDirectionSection, pulseGenerationSection, pulseDampingSection],
-      examples: [...guide.examples, springPulseExample, pulseDirectionExample, pulseGenerationExample, pulseDampingExample],
+      sections: [...guide.sections, springPulseSection, pulseDirectionSection, pulseGenerationSection, pulseDampingSection, periodicSpringSection],
+      examples: [...guide.examples, springPulseExample, pulseDirectionExample, pulseGenerationExample, pulseDampingExample, periodicSpringExample],
       source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfadaki tek atma ve sabit destek, yansıma öncesindeki kesitte yeniden çizildi. Fiziksel 153, basılı 151. sayfadaki ön ve arka eğim okları, iki ilerleme yönü ve iki atma biçimiyle karşılaştırıldı. Aynı sayfadaki kaynak hareketinden tepe ve çukur oluşumu tek zaman modelinden çizildi. Sayı ve örnek sorular özgün.`,
     };
   }

@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.122.0 · Periyodik yay dalgaları
+
+Yayın adayı. Üst yayda enine dalganın tepeleri sağa gider. Alt yayda boyuna dalganın sıkışmaları sola gider. Zamanı değiştirip işaretli nokta ve halkayı izle. Kopya Kağıdı, iki tepe arasındaki uzaklığı aynı çizimde hesaplıyor.
+
 # ÖSYM Mania 0.121.0 · Atmanın genişliği ve genliği
 
 Yayın adayı. Zamanı değiştirip iki atmanın tepelerini karşılaştır. Yatay genişliği denge çizgisi boyunca, genliği denge çizgisinden tepeye doğru oku. Kopya Kağıdı sönümlü örneğin genliğini iki adımda hesaplıyor.
