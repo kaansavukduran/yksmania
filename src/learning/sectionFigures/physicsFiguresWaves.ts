@@ -32,6 +32,7 @@ import { generatingPulseAt, pulseGenerationTime, pulseGenerationTitle } from "..
 import { pulseDampingAt, pulseDampingTime, pulseDampingTitle } from "../mebiPulseDamping";
 import { periodicSpringAt, periodicSpringTime, periodicSpringTitle, periodicSpringWavelengthM } from "../mebiPeriodicSpring";
 import { springDensityAt, springDensityMass, springDensityTitle } from "../mebiSpringDensity";
+import { pulleyTensionAt, pulleyTensionTitle, pulleyTensionWaterG } from "../mebiPulleyTension";
 
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
@@ -561,6 +562,53 @@ const giris: Record<string, FigureDef> = {
 };
 
 const yay: Record<string, FigureDef> = {
+  [pulleyTensionTitle]: {
+    caption: "Su kütlesini değiştir. Kova durduktan sonra atmanın aynı sürede sola doğru aldığı yolu ölç.",
+    alt: "Sol ucu duvara bağlı yay, sağdaki makaradan geçen iple su kovasına bağlı. Atma yayda sola ilerliyor. Aynı süre ölçüsünde su ve gerilme arttıkça atma daha uzakta.",
+    param: {
+      label: "Kovadaki su kütlesi",
+      min: pulleyTensionWaterG.min,
+      max: pulleyTensionWaterG.max,
+      step: pulleyTensionWaterG.step,
+      init: pulleyTensionWaterG.initial,
+      unit: " g",
+    },
+    draw: (waterG) => {
+      const state = pulleyTensionAt(waterG);
+      const wheelX = 8.65;
+      const wheelY = 2.5;
+      const wheelRadius = 0.48;
+      const stringY = wheelY + wheelRadius;
+      const hangingX = wheelX + wheelRadius;
+      const startX = 7.55;
+      const frontX = startX - state.travelledM;
+      const bottomY = -1.1;
+      const surfaceY = bottomY + state.waterFraction * 1.02;
+      return {
+        els: [
+          ...wall(0, 1.95, 3.65),
+          base(0, wheelX, stringY),
+          wave(pulseLine(0, wheelX, (x) => bump(x, frontX + state.widthM / 2, state.widthM, 0.68), stringY, 160)),
+          vec(v(5.5, 4.48), v(2.6, 4.48), { tone: "ink", bold: true }),
+          txt(v(4.05, 4.66), "Atmanın yönü", "n", { small: true }),
+          ...span(v(frontX, 2.38), v(startX, 2.38), `${fmt(state.travelledM, 2)} m`, -1, "a"),
+          circle(v(wheelX, wheelY), wheelRadius, { tone: "ink" }),
+          circle(v(wheelX, wheelY), 0.1, { tone: "muted", fill: "muted" }),
+          txt(v(wheelX, wheelY + 1.02), "Makara", "n", { small: true }),
+          seg(v(hangingX, wheelY), v(hangingX, 0.65), { tone: "ink" }),
+          seg(v(hangingX, 0.65), v(hangingX - 0.7, 0.08), { tone: "ink" }),
+          seg(v(hangingX, 0.65), v(hangingX + 0.7, 0.08), { tone: "ink" }),
+          ...(waterG === 0 ? [] : [poly([v(hangingX - 0.66, bottomY), v(hangingX + 0.66, bottomY), v(hangingX + 0.66, surfaceY), v(hangingX - 0.66, surfaceY)], { tone: "b", fill: "b" })]),
+          poly([v(hangingX - 0.72, 0.08), v(hangingX - 0.72, bottomY - 0.06), v(hangingX + 0.72, bottomY - 0.06), v(hangingX + 0.72, 0.08)], { tone: "ink", open: true }),
+          txt(v(hangingX, bottomY - 0.32), "Kova", "s", { small: true }),
+        ],
+        readout: [
+          `Toplam kütle: ${fmt(state.totalMassKg, 2)} kg. Gerilme: ${fmt(state.tensionN, 2)} N.`,
+          `Atma sürati ${fmt(state.speedMps, 2)} m/s. ${fmt(state.timeS, 2)} s’de sola ${fmt(state.travelledM, 2)} m ilerler.`,
+        ],
+      };
+    },
+  },
   [springDensityTitle]: {
     caption: "Alt yayın kütlesini değiştir. Üst yay sabit kalır. Turuncu ölçüler aynı sürede iki atmanın önünün kaynaktan ne kadar ilerlediğini gösterir.",
     alt: "Eşit uzunlukta, aynı kuvvetle gerilmiş iki yay çizimi. Atmalar soldan sağa ilerliyor. Üst yay sabit kütleli. Altta daha ağır bir yay seçildiğinde aynı sürede daha kısa bir ölçü görünüyor.",

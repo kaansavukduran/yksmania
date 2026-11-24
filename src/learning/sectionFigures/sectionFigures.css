@@ -90,12 +90,15 @@
 }
 .sf-range > span {
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.75rem;
 }
 .sf-range output {
+  margin-inline-start: auto;
   font-variant-numeric: tabular-nums;
   font-weight: 600;
+  white-space: nowrap;
 }
 .sf-range input {
   width: 100%;

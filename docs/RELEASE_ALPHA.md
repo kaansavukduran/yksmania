@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.125.0 · Kova, makara ve yay gerilimi
+
+Yayın adayı. Kovadaki suyu değiştirerek ipin gerilimini, atmanın süratini ve aldığı yolu karşılaştır. Kopya Kağıdı, tam dolu kovada süratin neden iki katına çıktığını aynı düzenekle gösteriyor.
+
 # ÖSYM Mania 0.124.0 · Yay süratini şekilden hesapla
 
 Yayın adayı. İki yayın kütleleri eşit ve uzunlukları farklı. Şekildeki verilenleri kullanarak süratlerini karşılaştır. İpucu doğru birimleri hatırlatıyor. Çözümün iki tablosu önce boyca kütle yoğunluğunu, sonra sürati gösteriyor.

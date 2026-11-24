@@ -1,3 +1,9 @@
+# Kova ve makarayla yay gerilimi · 0.125.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 155, basılı 153. İdeal makarada kova durgunken ipin gerilimi ağırlığa eşittir. Kovaya su eklendiğinde başlangıç gerilimi çizimde 1 N’den 4 N’ye, atma sürati 10 m/s’den 20 m/s’ye çıkıyor. Kopya Kağıdı kütleyi kilogram cinsine çevirip karekök oranıyla sürati ve 0,15 saniyede alınan yolu hesaplıyor.
+
+Check, 2.182 birim, 322 çevrimdışı dosya ve yedi gerçek tarayıcı akışı geçti. 320 px, %200 arayüz ölçeği ve %150 yazı boyutunda sürgünün 300 g değeri rakam rakam bölünüyordu. Sürgünün adı ve değeri gerektiğinde ayrı satıra geçiyor, sayı birimiyle birlikte kalıyor. Çizimin tamamı, klavye, çevrimdışı açılış ve görsel keşfin öğrenme kaydı oluşturmaması tekrar sınandı. Sıradaki içerik yine fiziksel 155, basılı 153’te atmanın sabit ve serbest uçtan yansıması.
+
 # Aynı kütleli yayların sürat oranı · 0.124.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 154, basılı 152. Özgün sorunun çiziminde aynı kuvvet, eşit kütle ve iki farklı uzunluk veriliyor. Uzunluk çizgileri ortak ölçekle gösteriliyor. İpucu birimler tablosunu, çözüm ise iki ayrı tabloda boyca kütle yoğunluğu ve sürat hesabını açıyor. Daha önceki 11 soru aynı sırada kalıyor.
@@ -702,7 +708,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 259 | 317 / 317 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 260 | 317 / 317 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
 | TYT Biyoloji | 36 / 36 | 22 · 80 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 14 |
 | TYT Tarih | 24 / 24 | 14 · 41 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 10 |
@@ -715,7 +721,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **405 · 1754** | **6.667 / 6.667 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
+| **Toplam** | **510 / 510** | **405 · 1755** | **6.667 / 6.667 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

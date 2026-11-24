@@ -1,8 +1,8 @@
 {
-  "version": "0.124.0",
+  "version": "0.125.0",
   "channel": "alpha",
   "notes": {
-    "tr": "İki yayın kütlesini, uzunluğunu ve gerilimini soru çiziminden oku. İpucu ve çözüm tablolarıyla atma süratlerinin oranını hesapla.",
-    "en": "Read mass, length and tension in the new spring question. Use its separate hint and worked tables to compare the pulse speeds."
+    "tr": "Makara düzeneğinde kovadaki suyu artır, yayın gerilmesini değiştir ve atmanın aynı sürede ne kadar ilerlediğini çizimde ölç.",
+    "en": "Add water to the bucket on the pulley setup, then compare how tension changes the distance travelled by the pulse in the same time."
   }
 }
