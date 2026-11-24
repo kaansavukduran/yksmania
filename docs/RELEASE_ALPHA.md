@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.187.0 · Normalden iki eş açı
+
+Yayın adayı. Hem R ile f ilişkisini ölç hem de N temas noktasında iki eş açıyı ayrı ışın kollarında izle.
+
 # ÖSYM Mania 0.186.0 · Küresel aynada odak
 
 Yayın adayı. Çukur ile tümseği değiştir, paralel ışınları yüzeyin orta kısmından kenara taşı ve kesişim uzaklığını oku.

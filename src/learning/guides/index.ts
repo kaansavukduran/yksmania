@@ -75,6 +75,7 @@ import { mirrorEndpointsExample, mirrorEndpointsSection } from "../mebiMirrorEnd
 import { mirrorFieldExample, mirrorFieldSection, mirrorWritingSection } from "../mebiMirrorField";
 import { mirrorBodyWallExample, mirrorBodyWallSection } from "../mebiMirrorBodyWall";
 import { sphericalAxisSection, sphericalMirrorExample, sphericalSurfaceSection } from "../mebiSphericalMirror";
+import { concaveNormalExample, concaveNormalSection, curvatureFocusSection } from "../mebiConcaveRay";
 import { animalPitchExample, animalPitchSection } from "../mebiPitchSamples";
 import { bottlePitchExample, bottlePitchSection } from "../mebiBottlePitch";
 import { wirePairExample, wirePairSection } from "../mebiWirePitch";
@@ -610,9 +611,9 @@ export function studyGuide(lessonId: string) {
   if (guide?.id === "kuresel-aynalar") {
     return {
       ...guide,
-      sections: [sphericalSurfaceSection, sphericalAxisSection, ...guide.sections],
-      examples: [sphericalMirrorExample, ...guide.examples],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 180, basılı 178. Kürenin iç ve dış yüzü, merkez, odak, tepe, asal eksen ve paralel ışın çizimleri yeniden kuruldu. Sayısal modelde küresel aynanın eksen dışındaki ışınları tam yansıma yasasıyla hesaplanıyor.`,
+      sections: [sphericalSurfaceSection, sphericalAxisSection, curvatureFocusSection, concaveNormalSection, ...guide.sections],
+      examples: [sphericalMirrorExample, concaveNormalExample, ...guide.examples],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 180, basılı 178. Kürenin iç ve dış yüzü, merkez, odak, tepe, asal eksen ve paralel ışın çizimleri yeniden kuruldu. Sayısal modelde küresel aynanın eksen dışındaki ışınları tam yansıma yasasıyla hesaplanıyor. Fiziksel 181, basılı 179. sayfadaki R ve iki eş f aralığı ile N noktasının normaline göre eş açılar etkileşimli çizildi.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

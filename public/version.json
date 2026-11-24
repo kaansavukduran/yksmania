@@ -1,8 +1,8 @@
 {
-  "version": "0.186.0",
+  "version": "0.187.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Çukur ve tümsek yüzeyi değiştir. Gerçek ışınların ve kesik uzantıların asal eksene nerede ulaştığını karşılaştır.",
-    "en": "Switch between concave and convex surfaces and compare where real rays and their backward extensions meet the principal axis."
+    "tr": "Küresel aynanın yarıçapını değiştir ve iki eş odak aralığını ölç. Çukur aynada temas noktasının normalinden gelme ve yansıma açılarını karşılaştır.",
+    "en": "Change the spherical mirror radius and measure its two equal focal intervals. Compare the angles of incidence and reflection from the local normal."
   }
 }
