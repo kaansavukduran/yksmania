@@ -1,3 +1,4 @@
+import { beforeTytTheoryRevisions } from "./before-tyt-theory-revisions";
 import { txt, type Lesson } from "../../src/domain/model";
 import type { CheatSheet } from "../../src/learning/cheatsheetContent";
 import type { LessonGuide } from "../../src/learning/guides/types";
@@ -36,7 +37,7 @@ export const beforeScientificQuestions = <T extends { id: string }>(questions: r
   beforeSource031Questions(questions).filter(({ id }) => !appendedQuestions.has(id));
 
 export function beforeScientificLesson(lesson: Lesson): Lesson {
-  if (lesson.id !== scientificId) return beforeSource031Teaching("lessons", lesson.id, lesson) as Lesson;
+  if (lesson.id !== scientificId) return beforeSource031Teaching("lessons", lesson.id, beforeTytTheoryRevisions("lessons", lesson.id, lesson)) as Lesson;
   return {
     ...lesson,
     source: txt(originalSource),
@@ -50,7 +51,7 @@ export function beforeScientificLesson(lesson: Lesson): Lesson {
 }
 
 export function beforeScientificGuide(guide: LessonGuide): LessonGuide {
-  if (guide.id !== scientificId) return beforeSource031Teaching("guides", guide.id, guide) as LessonGuide;
+  if (guide.id !== scientificId) return beforeSource031Teaching("guides", guide.id, beforeTytTheoryRevisions("guides", guide.id, guide)) as LessonGuide;
   return {
     ...guide,
     source: originalSource,
@@ -86,5 +87,5 @@ export function beforeScientificRevision(
       recall: sheet.recall.filter(({ prompt }) => prompt !== appendedRecall),
     };
   }
-  return beforeSource031Teaching(surface, id, value);
+  return beforeSource031Teaching(surface, id, beforeTytTheoryRevisions(surface, id, value));
 }
