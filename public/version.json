@@ -1,8 +1,8 @@
 {
-  "version": "0.146.0",
+  "version": "0.147.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Desibel ölçeğinde bir örnek ses seç. Ses düzeyi ile şiddeti kendi birimleriyle oku ve 20 dB farkın oranını hesapla.",
-    "en": "Choose a sound on the decibel scale. Read sound level and intensity in their own units and calculate the intensity ratio for a 20 dB change."
+    "tr": "Keman ve piyano örneklerinde aynı periyodu bul. Üç harmonik bileşeni karşılaştırarak tını farkını incele.",
+    "en": "Find the shared period in violin and piano examples. Compare three harmonic components to see what changes the timbre."
   }
 }

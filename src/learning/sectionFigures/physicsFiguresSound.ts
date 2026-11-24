@@ -1,6 +1,7 @@
 import { circle, fmt, poly, pt, seg, txt, v, vec, type El, type FigureDef, type FigureFrame, type Tone, type V } from "./figureKit";
 import { mebiSeismicFocusFigure } from "./mebiSeismicFocusFigure";
 import { bellJarCases, bellJarTitle } from "../mebiSoundMedium";
+import { timbreAt, timbreCases, timbreFrequencyHz, timbreHarmonicTitle, timbreModes, timbreTitle, timbreWaveTitle } from "../mebiSoundTimbre";
 import { intensityRatio, soundLevelCases, soundLevelDifferenceTitle, soundLevelLimits, soundLevelRatioTitle, soundLevelTitle } from "../mebiSoundLevel";
 import { animalPitchAt, animalPitchEqualTitle, animalPitchTitle, pitchStageLabels, pitchWindowMs } from "../mebiPitchSamples";
 import { bottleBlowTitle, bottleFill, bottlePitchAt, bottlePitchModes, bottlePitchTitle, bottleStrikeTitle } from "../mebiBottlePitch";
@@ -318,6 +319,68 @@ const soundLevel: FigureDef = {
   draw: (db) => soundLevelFrame(db),
 };
 
+function timbreFrame(showHarmonics: boolean): FigureFrame {
+  const [violin, piano] = timbreCases;
+  const base = timbreFrequencyHz;
+  const windowMs = 2000 / base;
+  if (showHarmonics) {
+    return {
+      els: [
+        seg(v(0.25, 0.8), v(11.75, 0.8), { tone: "muted" }),
+        seg(v(0.25, 0.8), v(0.25, 4.8), { tone: "muted", thin: true }),
+        txt(v(0.10, 0.80), "0", "w", { tone: "muted", small: true }),
+        txt(v(0.10, 4.80), "1", "w", { tone: "muted", small: true }),
+        txt(v(6, 6.55), "Göreli genlik", "n", { small: true }),
+        ...violin.harmonics.flatMap((height, i): El[] => {
+          const x = 2 + i * 4;
+          const bar = (center: number, value: number, tone: Tone) => poly(
+            [v(center-0.42, 0.8), v(center+0.42, 0.8), v(center+0.42, 0.8+4*value), v(center-0.42, 0.8+4*value)],
+            { tone, fill: tone, thin: true },
+          );
+          return [
+            bar(x-0.60, height, "a"),
+            bar(x+0.60, piano.harmonics[i], "c"),
+            txt(v(x, 0.35), `${(i + 1) * base} Hz`, "s", { small: true }),
+          ];
+        }),
+        txt(v(2.4, 5.25), "Keman", "n", { tone: "a", small: true }),
+        txt(v(8.2, 5.25), "Piyano", "n", { tone: "c", small: true }),
+      ],
+      readout: [
+        `Her ikisinde de temel bileşen ${base} Hz ve bir birim. Her çiftte solda keman, sağda piyano.`,
+        ...[1, 2].map(i => `${(i + 1) * base} Hz bileşeni keman örneğinde ${fmt(violin.harmonics[i], 2)}, piyanoda ${fmt(piano.harmonics[i], 2)}.`),
+      ],
+    };
+  }
+  return {
+    els: [
+      ...timbreCases.flatMap(({ label, harmonics }, index): El[] => {
+        const y = 6.1 - 4.35 * index;
+        const tone = index === 0 ? "a" : "c";
+        const curve = Array.from({ length: 151 }, (_, i) => v(i * 12 / 150, y + 0.9 * timbreAt(i * 2 / 150, harmonics)));
+        return [
+          poly([v(0, y-1.5), v(12, y-1.5), v(12, y+1.5), v(0, y+1.5)], { tone: "muted", thin: true }),
+          seg(v(0,y), v(12,y), { tone: "muted", thin: true }),
+          seg(v(6,y-1.5), v(6,y+1.5), { tone: "muted", thin: true, dash: true }),
+          poly(curve, { tone, open: true, bold: true }),
+          txt(v(0.3, y+1.7), label, "ne", { small: true, tone }),
+        ];
+      }),
+      txt(v(0,0), "0 ms", "s", { tone: "muted", small: true }),
+      txt(v(6,0), `${fmt(windowMs / 2, 2)} ms`, "s", { tone: "muted", small: true }),
+      txt(v(12,0), `${fmt(windowMs, 2)} ms`, "s", { tone: "muted", small: true }),
+    ],
+    readout: [`İki temel frekans da ${base} Hz. Periyot yaklaşık ${fmt(windowMs / 2, 2)} ms.`, "Eğriler göreli basınç değişimini gösterir. Biçimleri farklı, tekrar aralıkları eşit."],
+  };
+}
+
+const timbre: FigureDef = {
+  caption: "Önce aynı zaman penceresindeki iki dalgayı oku. Sonraki adımda temel frekansı ve katlarındaki bileşenleri eşleştir.",
+  alt: "Keman ve piyano için eş periyotlu iki temsilî eğri. İkinci adımda 300, 600 ve 900 Hz bileşenleri iki kaynak için yan yana çubuklarla verilir.",
+  steps: [...timbreModes],
+  draw: (_, step) => timbreFrame(step === 1),
+};
+
 const animalPitch: FigureDef = {
   caption: "İki çizgide de aynı 10 ms içinde tam salınımları say. Sonraki adımda genlikleri eşitle ve sayıları yeniden kontrol et.",
   alt: "Aslanın temsilî basınç grafiği üstte, kanaryanınki altta. İkisi de sıfırdan 10 milisaniyeye kadar uzanır. Üstte bir, altta üç tam salınım vardır.",
@@ -531,6 +594,17 @@ export const physicsFiguresSound: Record<string, Record<string, FigureDef>> = {
     ])),
     "Yükseklik sözcüğünün iki anlamını çöz": pitch,
     [animalPitchTitle]: animalPitch,
+    [timbreTitle]: timbre,
+    [timbreWaveTitle]: {
+      caption: "İki dalgayı sıfırdan 6,67 ms’ye kadar aynı ölçekle karşılaştır.",
+      alt: "Keman ve piyano örnekleri aynı aralıkta tekrar eder. Eğriler farklı biçimdedir.",
+      draw: () => timbreFrame(false),
+    },
+    [timbreHarmonicTitle]: {
+      caption: "300, 600 ve 900 Hz’de iki sesin göreli genliklerini oku.",
+      alt: "300 Hz çiftinde çubuklar eşit. Keman örneğinde 600, piyano örneğinde 900 Hz bileşeni görece daha büyük.",
+      draw: () => timbreFrame(true),
+    },
     [soundLevelTitle]: soundLevel,
     [soundLevelDifferenceTitle]: {
       caption: "Ölçekte 50 dB’den 70 dB’ye uzanan iki adımı say.",

@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.147.0 · Aynı nota, farklı tını
+
+Yayın adayı. Örnek keman ve piyano dalgalarında 3,33 ms periyodu ölç. 300 Hz temel bileşeni sabitken 600 ve 900 Hz bileşenlerini değiştir. Kopya Kağıdı dalgayı ve göreli genlikleri ayrı çözüm adımlarında gösteriyor.
+
 # ÖSYM Mania 0.146.0 · Ses düzeyi ve şiddet
 
 Yayın adayı. Desibel ölçeğinde bir ses örneği seç. Her 10 dB artışın şiddeti nasıl değiştirdiğini gör. Kopya Kağıdı 15 düzeylik tabloyu ve 20 dB farkın hesabını iki ayrı çözüm çiziminde açıyor.
