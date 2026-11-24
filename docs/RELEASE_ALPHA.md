@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.165.0 · Evde deprem hazırlığı
+
+Yayın adayı. Dolap ve yatak, korunma ile buluşma planı ve acil durum çantası ayrı çizimlerde. Ders ve Kopya Kağıdı hazırlık maddelerini seçilebilir tabloda gösteriyor.
+
 # ÖSYM Mania 0.164.0 · Kıyıda tsunami uyarısı
 
 Yayın adayı. Aynı kıyı kesitinde önce suyun çekilmesini, sonra kıyıdan uzaklaşan ve yükselen tahliye yönünü incele.

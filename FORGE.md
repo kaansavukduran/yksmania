@@ -1,3 +1,9 @@
+# Evde deprem hazırlığı · 0.165.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 168, basılı 166. Sekiz hazırlık maddesi yapı, oda, ev planı, tesisat, çanta ve ilk yardım üzerine. Oda, sarsıntı sonrası çıkış ve çanta aynı çizimlerle Kopya Kağıdı örneğine bağlandı. [AFAD deprem rehberi](https://afad.gov.tr/deprem-oncesi-ani-ve-sonrasi-onlemini-al-guvende-kal) · [AFAD acil durum çantası](https://www.afad.gov.tr/afet-ve-acil-durum-cantasi-nasil-hazirlanmali)
+
+Check, 329 dosyalı çevrimdışı derleme, 34 dosyada 2.925 birim ve 17 Chromium akışı geçti. 320 px, büyük yazı ve klavyede hazırlık tablosu ve üç konum açıldı. Kopya Kağıdı aynı tabloyu ve adım çizimlerini ayrı gösterdi. Sıradaki fiziksel 169, basılı 167 ışık davranışı ve Young çizimi.
+
 # Kıyıda doğal uyarı ve tahliye yönü · 0.164.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 168, basılı 166. Kıyı kesitinde olağandışı çekilen su ve yüksek yere yönelen tahliye oku ayrı adımlara ayrıldı. Kopya Kağıdı önce doğal uyarıyı, sonra sarsıntı sonrası hareket yönünü aynı iki çizimle açıyor. [AFAD deprem rehberi](https://afad.gov.tr/deprem-oncesi-ani-ve-sonrasi-onlemini-al-guvende-kal) · [NOAA tsunami rehberi](https://www.noaa.gov/explainers/science-behind-tsunamis)
@@ -952,7 +958,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 33 · 128 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 0 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 350 | 321 / 321 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 354 | 321 / 321 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 139 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 0 |
 | TYT Tarih | 24 / 24 | 24 · 76 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 0 |
@@ -965,7 +971,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **498 · 2251** | **6.671 / 6.671 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **12** |
+| **Toplam** | **510 / 510** | **498 · 2255** | **6.671 / 6.671 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **12** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

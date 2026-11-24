@@ -1,8 +1,8 @@
 {
-  "version": "0.164.0",
+  "version": "0.165.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Kıyıda olağandışı su çekilmesini ve yüksek yere giden tahliye yönünü ayrı çizimlerde incele. Kopya Kağıdı gözlem ve tahliye adımlarını açıyor.",
-    "en": "Read unusual sea retreat and an uphill evacuation route on separate coastal diagrams. The study sheet opens the observation and evacuation steps."
+    "tr": "Evde deprem hazırlığını oda düzeni, buluşma planı ve acil durum çantası çizimleriyle incele. Ders ve Kopya Kağıdı hazırlık tablosunu açıyor.",
+    "en": "Review household earthquake preparation with a secure room, meeting plan and emergency bag. The lesson and study sheet include the preparation checklist."
   }
 }
