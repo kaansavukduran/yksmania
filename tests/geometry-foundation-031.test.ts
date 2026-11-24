@@ -16,8 +16,8 @@ const ids = [
   "tyt-geo-ucgen-merkezleri-031",
 ];
 const questionCounts = [10, 15, 15, 10, 10, 10];
-const sheetSections = [5, 6, 6, 5, 5, 5];
-const sheetExamples = [2, 4, 3, 2, 2, 2];
+const sheetSections = [5, 7, 7, 5, 5, 5];
+const sheetExamples = [2, 5, 4, 2, 2, 2];
 const question = (unit: number, number: number) =>
   lessons.find((l) => l.id === ids[unit])!.questions[number - 1];
 const answer = (unit: number, number: number) => {
