@@ -2291,6 +2291,58 @@ export const questionTactics: QuestionTactic[] = [
       "Fikir akımını birlik bağından bul: ortak vatandaşlık Osmanlıcılık, halifelik İslamcılık, dil ve kültür Türkçülük. 2025 AYT TDE–Sosyal Bilimler-1 Tarih-1 31 mantığı.",
     ],
   },
+  {
+    id: "ronesans-kapsam-odak-dayanak",
+    guides: ["ronesans-felsefesi"],
+    match: /hümanis|Rönesans|antik|klasik|otorite|Petrarca|yeniden doğuş|skolastik|çeviri|matbaa|Orta Çağ/i,
+    title: "Kapsam sözcüğünü, odak değişimini ve dayanağı ayır",
+    steps: [
+      "Kökteki kapsam sözcüğünü işaretle: bütün, hiçbir, yalnız ve tek neden gibi sözler tek uygun karşı örnekle sınanır.",
+      "Odak değişimini inanç ya da kopuş hükmüne çevirme: insana ve klasik metne yönelmek dinî düşünceyi ve Orta Çağ birikimini kendiliğinden silmez.",
+      "Kaynakla ilişkiyi oku: yeniden incelemek, eleştirmek ve yorumlamak koşulsuz kabul değildir; ün de gerekçenin yerine geçmez.",
+      "Etken ile yeterli nedeni ayrı sütuna yaz: çeviri, matbaa, kent ekonomisi ve himaye katkıdır, tek başına belirleyici değildir.",
+      "Düşünce deneyinde çürüyen itirazı tam yaz; rakip görüşün bütünüyle ispatlandığını ekleme. 2025 TYT Sosyal Bilimler 14 mantığı.",
+    ],
+  },
+  {
+    id: "cagdas-problem-yontem",
+    guides: ["cagdas-felsefe"],
+    match: /Sartre|Husserl|Popper|Kuhn|Marx|Bergson|Hartmann|Gadamer|Dilthey|varoluş|fenomen|hermeneuti|yanlışlan|paradigma|epoché|diyalekti|pozitivi/i,
+    title: "Filozof adını değil, problemi ve yöntemi eşle",
+    steps: [
+      "Adı kapat ve cümlenin problemini yaz: insan varoluşu, deneyimin verilişi, metnin anlamı, bilimsel sınama ya da toplumsal değişim.",
+      "Sartre’ın savı insana özgüdür: üretilen aracın önceden tasarlanması insanın önceden belirlenmiş bir özü olduğunu göstermez.",
+      "Askıya almayı yok saymaya çevirme: Husserl varlık hükmünü ertelediğinde dünyayı reddetmiş olmaz.",
+      "Yanlışlanabilir ile yanlışlanmış ayrıdır; yeni bir ölçüm aleti de paradigma değişimi değildir. Ortak çerçeve değişti mi diye sor.",
+      "Bir metin birkaç yöntemi birlikte anıyorsa her cümleyi ayrı düşünüre bağla. 2021 TYT Sosyal Bilimler 15 mantığı.",
+    ],
+  },
+  {
+    id: "anadolu-alan-iki-kanit",
+    guides: ["anadoluda-islam"],
+    match: /Ahi|fütüvvet|Mâtürîdî|Eş’arî|Ebû Hanîfe|Şâfiî|Yesevî|Mevlânâ|Yunus|Saltuk|Bayrâm|Talas|ribat|esnaf|fıkıh|kelam|itikad/i,
+    title: "Önce alanı seç, sonra iki bağımsız kanıtla eşle",
+    steps: [
+      "Alanı belirle: hüküm ve yöntem fıkıh, inanç esasları kelam, manevi öğüt tasavvuf, meslek ve dayanışma Ahiliktir.",
+      "Kişi eşleştirmesinde en az iki özgül ipucu kullan: yer, eser ya da kurum. Şiir ya da dayanışma gibi genel bir sözcük yetmez.",
+      "Etki alanını doğum ya da yaşam yeri sanma; eserler ve takipçiler bir düşünceyi başka coğrafyaya taşıyabilir.",
+      "Olumsuz kökte kurumun çekirdek hizmetlerini listele; toplumsal etkiyi ana görev sayma. 2023 AYT Sosyal Bilimler-2 40 mantığı.",
+      "Tarih sorusunda tek olayı uzun süreçle eşitleme: Talas bir dönemeçtir, İslamlaşmanın bir günde tamamlanması değildir.",
+    ],
+  },
+  {
+    id: "tasavvuf-olcek-metin-kaniti",
+    guides: ["islam-dusuncesinde-tasavvufi-yorumlar"],
+    match: /tasavvuf|sema|semah|cem|musahip|zühd|ihlas|edep|Mevlevi|Alevi|Bektaşi|Yesevi|Kadiri|Rifai|Nakşibendi|zikir|gülbank|lokma/i,
+    title: "Sorulan nesnenin ölçeğini seç, metin dışı ayrıntı ekleme",
+    steps: [
+      "Sorunun istediği nesneyi yaz: kişi, gelenek, tören, mekân, görev, niyet ya da ahlaki ilke.",
+      "Ad benzerliğinde geleneği oku: semazen ve Mesnevî Mevlevi semasını, cem ve dede Alevi-Bektaşi semahını gösterir; yalnız dönmek yetmez.",
+      "Niyeti dış davranıştan kesinleştirme: edep görünen davranıştır, ihlas niyetin içtenliğidir; niyet açıkça verilmedikçe ihlas kesin değildir.",
+      "Zikir, zühd ve güzel ahlak birçok gelenekte vardır; ekolü kurucu adı ya da eser gibi ikinci bir özgül veriyle bul.",
+      "Olumsuz kökte her seçeneğin metindeki kanıtını göster; süre, sayı ya da sembol metinde yoksa ekleme. 2025 TYT Sosyal Bilimler 20 mantığı.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
