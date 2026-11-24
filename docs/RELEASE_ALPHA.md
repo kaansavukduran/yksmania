@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.146.0 · Rönesans, Bergson ve Ahilik
+
+Yayın adayı (24 Kasım 2026). Rönesans ve çağdaş felsefe, Anadolu'da İslam ve tasavvufi yorumlar kopya kâğıtları argüman adımları, düşünür tabloları ve karşılaştırma figürleriyle açılıyor.
+
 # ÖSYM Mania 0.145.0 · Organeller ve Osmanlı cepheleri
 
 Yayın adayı (24 Kasım 2026). TYT Biyoloji'de organeller, besin ağı, sınıflandırma ve kalıtımda sapmalar; TYT Tarih'te Osmanlı'nın dünya gücü dönemi, devrimler çağı, denge stratejisi ve 20. yüzyıl başı cepheleri figürlerle açılıyor.

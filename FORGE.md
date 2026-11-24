@@ -1,3 +1,9 @@
+# TYT Felsefe ve Din Kültürü kopya kâğıtları · 0.146.0 adayı
+
+Forge069: TYT Felsefe 013, 017 ve Din Kültürü 017, 018 kopya kâğıtları 16 etkileşimli figür ve 4 taktik olarak aktarıldı (kopya 137 / 517). Din Kültürü figürleri betimleyici ve tarafsız; ÖSYM atıfları kâğıtların beyanına dayanıyor.
+
+tsc, check, 403 dosyada 5.653 birim testi ve derleme geçti; dört dersin figür kapısı 320/375/1280, axe ve altı temada geçti. Yalnız web ve masaüstü Chromium.
+
 # TYT Biyoloji ve Tarih kopya kâğıtları · 0.145.0 adayı
 
 Forge067: TYT Biyoloji 011, 013, 027, 033 kopya kâğıtları 16 figür ve 4 taktik. Forge068: TYT Tarih 011, 016, 017, 019 kopya kâğıtları 16 figür ve 4 taktik; haritalar şematik ve ölçekli değil (kopya 133 / 517). AYT atıfları ve kâğıtta olmayan bazı yıllar kaynakla ayrıca doğrulanmadı.
