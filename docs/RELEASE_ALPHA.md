@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.99.0 · Çevrimdışı hazırlığı yeniden dene
+
+Yayın adayı. Çevrimdışı hazırlık geçici bir kayıt hatasıyla durduğunda uygulama aynı sayfadan yeniden deniyor. Bağlantı yoksa geri geldiğinde devam ediyor.
+
 # ÖSYM Mania 0.98.0 · Havada kaldırma
 
 Yayın adayı. İki balonun ortak kaldırmasını ve ayrı ağırlıklarını karşılaştır. Kopya Kağıdı’nda üç hareket durumunu incele. Özgün soruda verilen ivme yönlerinden yoğunlukları karşılaştır.

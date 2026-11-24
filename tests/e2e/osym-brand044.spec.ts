@@ -1,6 +1,9 @@
 import { expect, test } from "@playwright/test";
+import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
 import { openCourse, storage } from "./helpers/revisedCourse";
 import { setThemePreference } from "./helpers/theme";
+
+registerOfflineBootDiagnostics();
 
 test("ÖSYM Mania markası altı temada, büyük yazıda ve çevrimdışı okunur", async ({ page, context }, info) => {
   await page.setViewportSize({ width: 320, height: 850 });

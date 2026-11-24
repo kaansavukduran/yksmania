@@ -1,3 +1,11 @@
+# Çevrimdışı hazırlıkta geçici kayıt hatasından dönüş · 0.99.0 adayı
+
+0.85’in iki ana dal denemesinde aynı marka testi service worker denetiminde zaman aşımına uğradı. Kontrollü Chromium denemesinde ilk `sw.js` isteğine HTTP 503 verildi. Eski derlemede sayfa açık kaldığı sürece yeni kayıt isteği gelmedi. Uzak CI kaydı HTTP yanıtını göstermiyor.
+
+Yeni kod, geçici kayıt hatasından sonra aynı sayfada en fazla iki kez yeniden dener. Çevrimdışıysa bağlantının gelmesini bekler. Mevcut marka testinin süre sınırı ve kabul adımları aynı. Başarısızlık kanıtı için mevcut tarayıcı tanılama kaydı bağlandı.
+
+İlk sürüm notu 100 karakterlik mevcut yayın denetimine takıldı. Bağlantı dönünce ne olduğunu açıklayan metinle aynı test geçti. Check, beş odaklı birim, derleme ve 11 Chromium senaryosu geçti. Gerçek bir 503 yanıtından sonra aynı sayfada iki işçi komut dosyası isteği görüldü. İkinci istekten sonra çevrimdışı açılış doğrulandı.
+
 # Havada kaldırma ve balonların ilk hareketi · 0.98.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 148, basılı 146. Aynı 10 L hacimli K ve L balonlarına 0,12 N kaldırma etki ediyor. L’nin toplam kütlesi 12 g sınırını geçince ilk net kuvvet aşağı dönüyor. Kopya Kağıdı yükselme, denge ve düşmeyi karşılaştırıyor. Kaynakta verilen zıt ilk ivme yönlerini koruyan özgün soru, önceki on sorunun ardından açılıyor.

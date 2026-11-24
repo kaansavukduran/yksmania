@@ -4,6 +4,8 @@
 
 **Son yayımlanan web ve masaüstü sürümü 0.42.0**. Açıortayları ve ortak kenarlı üçgenleri çevrimdışı inceleyebilirsin. [Windows ve Linux 0.42](https://github.com/kaansavukduran/yksmania/releases/tag/v0.42.0-alpha.1) · [Android 0.42 kişisel deneme arşivi](https://github.com/kaansavukduran/yksmania/actions/runs/45187782506/artifacts/14823994107)
 
+**0.99.0 adayı** geçici bir service worker kayıt hatasından sonra sayfayı yenilemeden yeniden deniyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+
 **0.98.0 adayı** farklı kütledeki iki balonun havadaki ilk hareketini çizim ve hesapla gösteriyor. Yeni sorunun kökü, ipucu ve çözümü ayrı görseller içeriyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.82.0 adayı** durgun sıvının eğik, dik ve yatay yüzeylere uyguladığı kuvveti çizimlerle açıklıyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)

@@ -1,8 +1,8 @@
 {
-  "version": "0.98.0",
+  "version": "0.99.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Eşit hacimli balonların kütlesini ve yer değiştirdiği havayı karşılaştır. Yeni çizimli soru iki ilk hareket yönünü yoğunlukla ilişkilendirir.",
-    "en": "Compare the mass and displaced air of equal-volume balloons. A new illustrated question links their initial motion to density."
+    "tr": "Çevrimdışı hazırlık geçici bir kayıt hatasıyla durduğunda uygulama aynı sayfada yeniden dener. Bağlantı yoksa geri gelmesini bekler.",
+    "en": "When a temporary service worker registration error interrupts offline preparation, the app retries without reloading the page."
   }
 }
