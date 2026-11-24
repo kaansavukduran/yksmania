@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.141.0 · Fanusta ses ve ortam
+
+Yayın adayı. Taneciğin titreşim yönünü ve sıkışmanın ilerleyişini ayrı izle. Fanustaki hava azalırken çalar saat çalışmaya devam eder. Kopya Kağıdı üç gözlem durumunu ve sıcaklık, ortam, tuzluluk tablolarını çevrimdışı açıyor.
+
 # ÖSYM Mania 0.140.0 · Sınırda dönen su cephesi
 
 Yayın adayı. KOL cephesini üç aşamada izle. Gelme açısını değiştirip normalden ölçülen iki açıyı karşılaştır. Kopya Kağıdı sığ bölümdeki 2 cm ve derin bölümdeki 3 cm aralığını iki ayrı çizimde hesaplıyor.

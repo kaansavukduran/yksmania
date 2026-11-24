@@ -1,5 +1,6 @@
-import { circle, poly, pt, seg, txt, v, vec, type El, type FigureDef, type Tone, type V } from "./figureKit";
+import { circle, poly, pt, seg, txt, v, vec, type El, type FigureDef, type FigureFrame, type Tone, type V } from "./figureKit";
 import { mebiSeismicFocusFigure } from "./mebiSeismicFocusFigure";
+import { bellJarCases, bellJarTitle } from "../mebiSoundMedium";
 
 /*
  * Ses ve deprem dalgaları. The longitudinal wave moves real particle positions
@@ -12,10 +13,61 @@ import { mebiSeismicFocusFigure } from "./mebiSeismicFocusFigure";
 const TAU = Math.PI * 2;
 
 /* ---------- 1. Boyuna dalga: sıkışma ve seyrelme ---------- */
+function bellJarFrame(step: number): FigureFrame {
+  const stage = bellJarCases[step] ?? bellJarCases[0];
+  const chamber = [
+    v(1.0, 1.0), v(1.0, 4.7), v(1.4, 5.1), v(2.2, 5.37),
+    v(5.1, 5.37), v(5.9, 5.1), v(6.3, 4.7), v(6.3, 1.0),
+  ];
+  const clockCenter = v(3.65, 2.2);
+  const particleGrid = [
+    v(2.03, 4.33), v(5.2, 3.83), v(1.8, 2.95), v(2.1, 1.57), v(5.36, 2.24),
+    v(5.48, 4.64), v(2.84, 4.65), v(4.64, 4.63), v(3.07, 3.53),
+    v(4.16, 3.52), v(5.34, 1.58), v(2.87, 1.31),
+  ];
+  return {
+    els: [
+      poly(chamber, { fill: "b", tone: "b", bold: true }),
+      seg(v(0.8, 1.0), v(6.5, 1.0), { tone: "ink", bold: true }),
+      poly([v(-2.1, 1.55), v(-0.45, 1.55), v(-0.45, 2.15), v(-2.1, 2.15)], { tone: "ink", fill: "muted" }),
+      seg(v(-2.2, 1.85), v(-2.8, 1.85), { tone: "ink", bold: true }),
+      seg(v(-2.8, 1.54), v(-2.8, 2.18), { tone: "ink", bold: true }),
+      poly([v(-0.46, 1.84), v(0.35, 1.84), v(0.35, 1.35), v(1.05, 1.35)], { open: true, tone: "muted", bold: true }),
+      ...(step === 1 ? [vec(v(-0.5, 2.55), v(-1.9, 2.55), { tone: "a" })] : []),
+      ...particleGrid.slice(0, stage.particles).map((point) => circle(point, 0.055, { fill: "b", tone: "b" })),
+      circle(clockCenter, 0.72, { tone: "warn", fill: "muted", bold: true }),
+      seg(clockCenter, v(3.65, 2.58), { tone: "ink" }),
+      seg(clockCenter, v(3.97, 2.12), { tone: "ink" }),
+      seg(v(2.48, 2.66), v(2.75, 2.38), { tone: "warn" }),
+      seg(v(4.82, 2.66), v(4.55, 2.38), { tone: "warn" }),
+      ...Array.from({ length: stage.outgoingWaves }, (_, index) => {
+        const x = 6.73 + 0.58 * index;
+        const y = 0.49 + 0.24 * index;
+        const arc = Array.from({ length: 17 }, (_, i) => {
+          const angle = Math.PI * (i - 8) / 30;
+          return v(x + 0.55 * Math.cos(angle), 2.8 + y * Math.sin(angle));
+        });
+        return poly(arc, { open: true, tone: "c", bold: true });
+      }),
+      txt(v(3.65, 5.87), stage.inside, "n", { tone: "a", small: true }),
+      txt(v(-1.68, 1.12), "Tulumba", "s", { tone: "muted", small: true }),
+      txt(v(3.65, 0.55), "Çalar saat", "s", { tone: "warn", small: true }),
+    ],
+    readout: [stage.detail, "Şekildeki dalga işaretleri nitel gözlemi gösterir."],
+  };
+}
+
+const bellJar: FigureDef = {
+  caption: "Fanustaki havayı üç durumda karşılaştır. Saatin titreşimini ve dışarı giden ses işaretlerini aynı çizimde izle.",
+  alt: "Cam fanusun içindeki çalar saat her aşamada titreşiyor. Solda hava tulumbası, sağda havadan dışarı taşınan sesi gösteren yay çizgileri var.",
+  steps: bellJarCases.map(({ label }) => label),
+  draw: (_, step) => bellJarFrame(step),
+};
+
 const longitudinal: FigureDef = {
   caption:
-    "Oynat'a bas ya da sürgüyü sürükle: sıkışma (yoğun) ve seyrelme (seyrek) bölgeleri sağa ilerler, ama kırmızı tanecik yalnız kendi yerinin çevresinde ileri geri titreşir. Ses enerjiyi taşır, maddeyi taşımaz.",
-  alt: "Beş sıra küçük noktadan oluşan hava tanecikleri; yer yer sıkışmış ve seyrelmiş bölgeler. Bir tanecik kırmızı ve kendi denge konumu kesik çizgiyle işaretli. Altta basınç eğrisi.",
+    "Sürgüyle zamanı değiştir. Sıkışma ve seyrelme sağa ilerler. İşaretli tanecik kendi denge konumunun iki yanında titreşir.",
+  alt: "Solda ses kaynağı var. Hava tanecikleri sağa doğru sıkışma ve seyrelme sıraları oluşturuyor. İşaretli tanecik yatay titreşiyor. Altta basınç değişimi eğrisi.",
   param: { label: "Zaman (periyot)", min: 0, max: 2, step: 0.02, init: 0, playMs: 8000 },
   draw: (t) => {
     const els: El[] = [];
@@ -31,6 +83,11 @@ const longitudinal: FigureDef = {
         els.push(circle(p, tracked ? 0.09 : 0.05, { tone: tracked ? "warn" : "b", fill: tracked ? "warn" : "b", thin: true }));
       }
     }
+    els.push(
+      poly([v(-2.0, 0.47), v(-1.42, 0.47), v(-0.72, 0.14), v(-0.72, 1.12), v(-1.42, 0.80), v(-2.0, 0.80)], { tone: "a", fill: "muted" }),
+      seg(v(-1.72, 0.48), v(-1.72, 0.15), { tone: "a", bold: true }),
+      txt(v(-1.42, 1.5), "Ses kaynağı", "n", { tone: "a", small: true }),
+    );
     const xT = 15 * 0.3;
     els.push(seg(v(xT, -0.25), v(xT, 1.55), { tone: "warn", dash: true, thin: true }));
     // Pressure (density) curve: compression where displacement gradient is negative.
@@ -52,7 +109,13 @@ const longitudinal: FigureDef = {
       const x = x0 < 2.5 ? x0 + lam : x0;
       els.push(txt(v(x, -1.85), s, "s", { tone, small: true, bold: true }), seg(v(x, -1.75), v(x, -0.45), { tone, dash: true, thin: true }));
     }
-    els.push(vec(v(8.6, 2.35), v(11.2, 2.35), { tone: "ink", thin: true }), txt(v(8.5, 2.35), "yayılma yönü", "w", { tone: "ink", small: true }));
+    els.push(
+      vec(v(8.6, 2.35), v(11.2, 2.35), { tone: "ink", thin: true }),
+      txt(v(8.5, 2.35), "Yayılma yönü", "w", { tone: "ink", small: true }),
+      vec(v(xT, 1.75), v(xT - 0.7, 1.75), { tone: "warn", thin: true }),
+      vec(v(xT, 1.75), v(xT + 0.7, 1.75), { tone: "warn", thin: true }),
+      txt(v(xT, 2.83), "Tanecik", "n", { tone: "warn", small: true }),
+    );
     els.push(txt(v(-0.4, 2.7), " ", "c"), txt(v(13.6, -2), " ", "c"));
     return {
       els,
@@ -230,6 +293,15 @@ export const physicsFiguresSound: Record<string, Record<string, FigureDef>> = {
   "ses-deprem-dalgalari": {
     ...mebiSeismicFocusFigure,
     "Ses bir ortam titreşimidir": longitudinal,
+    [bellJarTitle]: bellJar,
+    ...Object.fromEntries(bellJarCases.map(({ solutionTitle, detail }, step) => [
+      solutionTitle,
+      {
+        caption: "Fanustaki hava durumunu ve saatin titreşim çizgilerini karşılaştır.",
+        alt: detail,
+        draw: () => bellJarFrame(step),
+      } satisfies FigureDef,
+    ])),
     "Yükseklik sözcüğünün iki anlamını çöz": pitch,
     "Yankıda mesafeyi iki kez say": echo,
     "Kaynağı değiştirerek notayı değiştir": stringLen,

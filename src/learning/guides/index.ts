@@ -35,6 +35,7 @@ import { pulseDampingExample, pulseDampingSection } from "../mebiPulseDamping";
 import { periodicSpringExample, periodicSpringSection } from "../mebiPeriodicSpring";
 import { springDensityExample, springDensitySection } from "../mebiSpringDensity";
 import { stroboscopeExample, stroboscopeSection, stroboscopeTitle } from "../mebiStroboscope";
+import { bellJarSection, soundBellExample, soundMediumTable, soundSpeedExample } from "../mebiSoundMedium";
 import { waterRefractionExample, waterRefractionSection, waterRefractionTitle } from "../mebiWaterRefraction";
 import { waterSlopeExample, waterSlopeSection } from "../mebiWaterSlope";
 import { twoTankDepthSection, waterDepthExample } from "../mebiWaterDepth";
@@ -512,9 +513,14 @@ export function studyGuide(lessonId: string) {
   if (guide?.id === "ses-deprem-dalgalari") {
     return {
       ...guide,
-      sections: guide.sections.map((section) => section.title === seismicFocusTitle ? seismicFocusSection : section),
-      examples: [...guide.examples, seismicFocusExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfadaki yer dalgası kesiti fay ve kaya parçalarıyla yeniden çizildi. Yol uzunlukları ve süratler özgün düzgün kaya modeline aittir.`,
+      sections: guide.sections.flatMap((section) => {
+        if (section.title === seismicFocusTitle) return [seismicFocusSection];
+        if (section.title === "Ses bir ortam titreşimidir") return [{ ...section, figureTitle: section.title }, bellJarSection];
+        if (section.title === "Sürati kaynaktan ayır") return [{ ...section, table: soundMediumTable }];
+        return [section];
+      }),
+      examples: [...guide.examples, seismicFocusExample, soundBellExample, soundSpeedExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. sayfadaki yer dalgası kesiti fay ve kaya parçalarıyla yeniden çizildi. Yol uzunlukları ve süratler özgün düzgün kaya modeline aittir. Fiziksel 163, basılı 161. sayfadaki ses kaynağı ve hava tanecikleri çizildi. Cam fanus ve çalar saat modeli, aynı sayfanın üç ses sürati karşılaştırmasıyla çalışılıyor.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

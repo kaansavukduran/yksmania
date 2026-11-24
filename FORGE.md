@@ -1,3 +1,9 @@
+# Sesin ortamda yayılması · 0.141.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 163, basılı 161. Aynı boyuna dalgada ses kaynağı, tanecik doğrultusu ve yayılma oku ayrı. Fanus hava dolu, hava azaltılmış ve ideal boşluk durumlarında saatin titreşimini gösteriyor. Hava, demir, su ve deniz suyu verileri sıcaklık, ortam ve tuzluluk gruplarıyla tabloya alındı.
+
+Check, 323 dosyalı çevrimdışı derleme, 2.200 odaklı birim ve altı Chromium akışı geçti. 320 px ve büyük yazıda fanus, tulumba, tanecik ve ses yolu incelendi. Kopya Kağıdı üç deney adımını ayrı çizimle, sürat verilerini gerçek tabloyla açtı. Sıradaki fiziksel 164, basılı 162’deki aslan ve kanarya karşılaştırması, özdeş şişeler ve iki tel düzeneği.
+
 # Su cephesi sığdan derine geçerken · 0.140.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 162, basılı 160. KOL cephesi sınıra gelmeden ve geçtikten sonra düz, O sınırdayken iki ayrı doğrultuda çiziliyor. Normal ve cephe açıları aynı geometriden hesaplanıyor. Dik gelişte cephenin yönü korunuyor ve tepe aralığı değişiyor. Kopya Kağıdı O sınırını, 2 cm ve 3 cm aralıklarını üç ayrı adımda açıyor.

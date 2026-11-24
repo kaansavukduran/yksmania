@@ -4,6 +4,8 @@
 
 **Son yayımlanan web ve masaüstü sürümü 0.123.0**. Eşit gerilen iki yayda atmanın aldığı yolu ve Kopya Kağıdı’ndaki sürat hesabını çevrimdışı inceleyebilirsin. [Windows ve Linux 0.123](https://github.com/kaansavukduran/yksmania/releases/tag/v0.123.0-alpha.1) · [Önceki 0.103 sürümü](https://github.com/kaansavukduran/yksmania/releases/tag/v0.103.0-alpha.1)
 
+**0.141.0 adayı** ses kaynağını, titreşen taneciği ve ilerleyen sıkışmayı aynı çizimde gösteriyor. Fanusta hava azalırken saatin çalışmasını ve sesin hangi yoldan taşındığını izle. Kopya Kağıdı deney çizimlerini ve üç sürat karşılaştırmasını içeriyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+
 **0.140.0 adayı** su cephesini sınırdan önce, sınırda ve sonra çiziyor. O noktasında gelme ve kırılma açılarını ayrı ölç. Kopya Kağıdı iki tepe aralığını kendi çizimlerinde hesaplıyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.139.0 adayı** leğenin eğimli tabanında tepe aralığının yavaş yavaş açıldığını gösteriyor. Yan kesiti ve kâğıt şeritlerini aynı ölçekte incele. Stroboskop çözümünün her adımı kendi yarık sayısıyla açılıyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
