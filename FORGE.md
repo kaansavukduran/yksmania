@@ -1,3 +1,9 @@
+# Çukur engelde odak ve merkez · 0.132.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 159, basılı 157. Düz cepheden yansıyan oklar F çevresine, M’den gelen oklar aynı doğrular üzerinden M’ye yöneliyor. F kaynağı yaklaşık paralel cepheler veriyor. Kopya Kağıdı üç sonucu ayrı çözüm çizimleriyle gösteriyor.
+
+Check, derleme, 322 çevrimdışı dosya ve yedi Chromium akışı geçti. 320 px büyük yazıyla üç çizim incelendi. İlk incelemeden sonra F ve M’ye giden doğrular çizime eklendi, aynı kullanıcı akışları tekrar sınandı. Sıradaki madde fiziksel 160, basılı 158’de düz engelin arkasındaki sanal O′.
+
 # Düz engelde gelen ve yansıyan cepheler · 0.131.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 159, basılı 157. 0° ile 75° arasında gelme açısı değişiyor. Hız oku kendi tepe çizgisini, engel ise normali dik kesiyor. Gelen ve yansıyan tepeler 2 cm aralıklı. Ayrı Kopya Kağıdı ilk adımda gelen cepheyi, ikinci adımda yansıyan cepheyi gösteriyor.
@@ -744,7 +750,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 264 | 318 / 318 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 268 | 318 / 318 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
 | TYT Biyoloji | 36 / 36 | 22 · 80 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 14 |
 | TYT Tarih | 24 / 24 | 14 · 41 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 10 |
@@ -757,7 +763,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **405 · 1759** | **6.668 / 6.668 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
+| **Toplam** | **510 / 510** | **405 · 1763** | **6.668 / 6.668 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.132.0 · Çukur engelde odak ve merkez
+
+Yayın adayı. Düz cepheyi seç ve yansıyan okları F’ye doğru izle. Kaynağı F’ye yerleştirince cepheler yaklaşık düzleşiyor. M’deki kaynak için oklar kendi doğruları üzerinden merkeze dönüyor. Kopya Kağıdı her durumu kendi çiziminde açıyor.
+
 # ÖSYM Mania 0.131.0 · Düz engelde su dalgalarının yansıması
 
 Yayın adayı. İki aşamada gelen ve yansıyan tepeleri izle. Gelme açısını değiştirerek hızın cepheye ve normalin engele dik olduğunu kontrol et. Kopya Kağıdı, açıyı ve tepe aralığını ayrı şekillerde açıklar.

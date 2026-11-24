@@ -1,8 +1,8 @@
 {
-  "version": "0.131.0",
+  "version": "0.132.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Düz engele gelen ve yansıyan su dalgası cephelerini karşılaştır. Açıyı normalden ölç ve ardışık iki tepe arasındaki uzaklığın nasıl korunduğunu incele.",
-    "en": "Compare incoming and reflected wavefronts at a straight barrier. Measure the angle from the normal."
+    "tr": "Düz cepheyi, F odağındaki ve M merkezindeki kaynağı aynı çukur engelde karşılaştır. Her durumun yansıyan cephelerini Kopya Kağıdı’nda incele.",
+    "en": "Compare a plane front, a source at F, and a source at M with the same concave barrier. Review each reflection in the cheat sheet."
   }
 }

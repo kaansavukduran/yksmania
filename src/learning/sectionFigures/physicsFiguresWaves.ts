@@ -47,6 +47,8 @@ import { circularMaxRadiusCm, circularWaveAt, circularWaveTime, circularWaveTitl
 
 import { reflectedCrestsTitle, waterReflectionAngles, waterReflectionAt, waterReflectionTitle } from "../mebiWaterReflection";
 
+import { concaveCenterX, concaveFocusX, concaveModes, concaveRadius, concaveStepFigureTitles, concaveWaterAt, concaveWaterTitle } from "../mebiConcaveWater";
+
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
  * Waves are sampled from y = A·sin(2π(x − x0)/λ); pulses from a smooth bump.
@@ -1131,7 +1133,65 @@ const flatWaterReflectionFigure: FigureDef = {
   },
 };
 
+const concaveWaterFigure: FigureDef = {
+  caption: "Düz cepheyi, F odağındaki ve M merkezindeki kaynağı seç. Aynı dairesel engelde gelen hız okları ve yansıyan cepheler birlikte değişir.",
+  alt: "Sağda dairesel çukur engel. Yatay eksende M merkezi ve F odağı var. Gelen ve yansıyan cephelerin kesitleri, engelde yön değiştiren hız oklarıyla gösteriliyor.",
+  steps: [...concaveModes],
+  draw: (_, step) => {
+    const mode = step === 1 ? 1 : step === 2 ? 2 : 0;
+    const state = concaveWaterAt(mode);
+    const rayExamples = [state.rays[0], state.rays[5], state.rays[10]];
+    const incoming: El[] = [2.4, 3.6, 4.8].map((distance) =>
+      poly(state.rays.map((ray) => mode === 0
+        ? v(concaveRadius - distance, ray.hit[1])
+        : v(state.sourceX + ray.toward[0] * distance, ray.toward[1] * distance)),
+      { open: true, tone: "a", dash: true })
+    );
+    const reflected = state.fronts.map((front) =>
+      poly(front.map(([x, y]) => v(x, y)), { open: true, tone: "b" })
+    );
+    return {
+      els: [
+        seg(v(-0.8, 0), v(concaveRadius, 0), { tone: "muted", dash: true }),
+        poly(state.rays.map(({ hit: [x, y] }) => v(x, y)), { open: true, tone: "ink", bold: true }),
+        ...rayExamples.flatMap(({ hit: [x, y], reflected: [dx, dy], reflectedXAtAxis }) => {
+          if (mode === 1 || reflectedXAtAxis === undefined) return [];
+          return [seg(v(x + 2.8 * dx, y + 2.8 * dy), v(reflectedXAtAxis, 0), { tone: "muted", thin: true, dash: true })];
+        }),
+        ...incoming,
+        ...reflected,
+        ...rayExamples.flatMap(({ hit: [x, y], toward, reflected: [dx, dy] }) => [
+          vec(v(x - 1.8 * toward[0], y - 1.8 * toward[1]), v(x, y), { tone: "a" }),
+          vec(v(x, y), v(x + 2.8 * dx, y + 2.8 * dy), { tone: "c" }),
+        ]),
+        pt(v(concaveCenterX, 0), "M", "s", "ink"),
+        pt(v(concaveFocusX, 0), "F", "s", "ink"),
+        ...(mode ? [circle(v(state.sourceX, 0), 0.25, { tone: "warn", bold: true })] : []),
+        txt(v(1.4, 5.2), "Gelen cephe", "e", { small: true, tone: "a" }),
+        txt(v(1.4, 4.1), "Yansıyan cephe", "e", { small: true, tone: "b" }),
+        txt(v(concaveRadius, 4.3), "Çukur engel", "n", { small: true }),
+      ],
+      readout: [
+        mode === 0
+          ? "Düz cephelerden dönen oklar F çevresine yönelir."
+          : mode === 1 ? "F’deki kaynaktan gelen oklar yaklaşık paralel döner."
+            : "M’deki kaynaktan gelen oklar aynı doğrultu üzerinden merkeze döner.",
+        "M engelden 12 cm, F yaklaşık 6 cm uzakta.",
+      ],
+    };
+  },
+};
+
 const su: Record<string, FigureDef> = {
+  [concaveWaterTitle]: concaveWaterFigure,
+  ...Object.fromEntries(concaveStepFigureTitles.map((title, step) => [
+    title,
+    {
+      caption: concaveModes[step],
+      alt: concaveWaterFigure.alt,
+      draw: () => concaveWaterFigure.draw(0, step),
+    } satisfies FigureDef,
+  ])),
   [circularWaveTitle]: {
     caption: "Aynı damlanın yüzeydeki halkalarını ve kâğıttaki çizgilerini zamanla karşılaştır. Oklar her yönde O’dan dışarı bakar.",
     alt: "Üstte su yüzeyinde O merkezli dalga tepeleri ve dışarı doğru hız okları var. Alttaki izdüşümde tepe halkaları kesintisiz, aradaki çukur halkaları kesikli.",
