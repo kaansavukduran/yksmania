@@ -10,18 +10,18 @@ Bu dosya `npm run progress` ile koddan üretilir; elle düzenlenmez.
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 283 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
-| TYT Biyoloji | 36 / 36 | 28 · 93 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 8 |
+| TYT Biyoloji | 36 / 36 | 36 · 139 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 0 |
 | TYT Tarih | 24 / 24 | 24 · 76 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 0 |
-| TYT Coğrafya | 40 / 40 | 34 · 126 | 400 / 400 · %100,00 | 5 / 40 · %12,50 | 45 soru · 9 kitapçık | 6 |
+| TYT Coğrafya | 40 / 40 | 40 · 159 | 400 / 400 · %100,00 | 5 / 40 · %12,50 | 45 soru · 9 kitapçık | 0 |
 | TYT Felsefe | 17 / 17 | 17 · 61 | 190 / 190 · %100,00 | 3 / 17 · %17,65 | 89 soru · 9 kitapçık | 0 |
-| TYT Din | 20 / 20 | 14 · 52 | 371 / 371 · %100,00 | 3 / 20 · %15,00 | 46 soru · 9 kitapçık | 6 |
+| TYT Din | 20 / 20 | 20 · 90 | 371 / 371 · %100,00 | 3 / 20 · %15,00 | 46 soru · 9 kitapçık | 0 |
 | AYT Matematik | 17 / 17 | 17 · 38 | 253 / 253 · %100,00 | 2 / 17 · %11,76 | 273 soru · 9 kitapçık | 0 |
 | AYT Geometri | 4 / 4 | 4 · 53 | 45 / 45 · %100,00 | 1 / 4 · %25,00 | 87 soru · 9 kitapçık | 0 |
 | AYT Fizik | 46 / 46 | 46 · 175 | 541 / 541 · %100,00 | 7 / 46 · %15,22 | 126 soru · 9 kitapçık | 0 |
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **478 · 2067** | **6.669 / 6.669 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **32** |
+| **Toplam** | **510 / 510** | **498 · 2184** | **6.669 / 6.669 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **12** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
