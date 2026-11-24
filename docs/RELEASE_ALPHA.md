@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.93.0 · U borusunda hava basıncı farkı
+
+Yayın adayı. Hava hızını değiştir, iki kolun basıncını ve su seviyesini karşılaştır. Ayrı Kopya Kağıdı debi, basınç farkı ve su yüksekliği hesabını aynı örnekte gösterir.
+
 # ÖSYM Mania 0.92.0 · Çatı, kanat ve şemsiyede basınç farkı
 
 Yayın adayı. Üç kesiti seçip basınç farkını değiştir. Net düşey kuvveti, üstten ve alttan etkiyen basınçlarla birlikte oku. Şemsiye örneği Kopya Kağıdı’nda adımlarıyla açılır.

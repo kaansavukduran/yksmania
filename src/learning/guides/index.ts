@@ -16,6 +16,7 @@ import { compressedBalloonExample, elasticBalloonSection, gasMembraneSection, he
 import { lowPressureBoilingExample, pressureMeltingSection, waterBoilingSection } from "../mebiPhasePressure";
 import { idealChannelExample, idealChannelSection, measuredChannelSection } from "../mebiBernoulliChannel";
 import { flowSurfaceSection, umbrellaPressureExample } from "../mebiFlowSurfaces";
+import { airFlowManometerExample, airFlowManometerSection } from "../mebiAirFlowManometer";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
@@ -397,11 +398,13 @@ export function studyGuide(lessonId: string) {
         if (section.title === barometerHeightTitle) return [atmosphereSection, { ...section, figureTitle: barometerHeightTitle }];
         if (section.title === "Manometrede işareti sıvı dengesi belirler") return [section, manometerReferenceSection];
         if (section.title === "Basıncın hâl değişimine etkisini koşullandır") return [pressureMeltingSection, waterBoilingSection];
-        if (section.title === "Akış varsa durgun sıvı kuralını kör uygulama") return [measuredChannelSection, idealChannelSection, flowSurfaceSection];
+        if (section.title === "Akış varsa durgun sıvı kuralını kör uygulama") {
+          return [measuredChannelSection, idealChannelSection, flowSurfaceSection, airFlowManometerSection];
+        }
         return [section];
       }),
-      examples: [...guide.examples, brickPressureExample, fillingGraphExample, sharedLevelExample, surfaceForceExample, rigidGasExample, heatedPistonExample, heatedMembraneExample, compressedBalloonExample, barometerExample, manometerReferenceExample, lowPressureBoilingExample, idealChannelExample, umbrellaPressureExample],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 132–138, basılı 130–136. Tuğlalar, prizma kesiti, eş derinlik, dolum, piston ve yüzeye dik sıvı kuvvetleri bu sayfalarla karşılaştırıldı. Bileşik kapta görselin ve açıklama maddesinin gösterdiği 2h K katmanı kullanıldı. Bu modellerdeki sayısal ölçüler örnek değerlerdir. Atmosfer ve barometre çizimleri fiziksel 139, basılı 137. sayfaya dayanır. 760 ve 650 mmHg kaynak değerleri, 60° eğim özgün örnek değeridir. Rijit gaz kabı fiziksel 140, basılı 138. sayfaya dayanır. Hareketli piston, bölmeli kapta esnek zar ve balon fiziksel 141, basılı 139. sayfaya dayanır. Bu sayfadaki gaz hesaplarında kullanılan sayılar özgün örneklerdir. Manometredeki açık ve kapalı uç çizimleri fiziksel 142, basılı 140. sayfaya dayanır. 70 ve 75 cmHg değerleri kaynak örneğindendir. Erime ve kaynama fiziksel 143, basılı 141. sayfadaki kap çizimi ve koşullarla karşılaştırıldı. Saf su tablosu NIST Chemistry WebBook SRD 69 doygunluk verileridir. Su kanalı ölçümleri fiziksel 144, basılı 142. sayfadandır. Yatay boru ve sayısal Bernoulli uygulaması ayrı ideal örnektir. Aynı sayfadaki çatı, kanat ve şemsiye, verilen basınç farkıyla sınırlandırılan örnek çizimlerle açıklanır.`,
+      examples: [...guide.examples, brickPressureExample, fillingGraphExample, sharedLevelExample, surfaceForceExample, rigidGasExample, heatedPistonExample, heatedMembraneExample, compressedBalloonExample, barometerExample, manometerReferenceExample, lowPressureBoilingExample, idealChannelExample, umbrellaPressureExample, airFlowManometerExample],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 132–138, basılı 130–136. Tuğlalar, prizma kesiti, eş derinlik, dolum, piston ve yüzeye dik sıvı kuvvetleri bu sayfalarla karşılaştırıldı. Bileşik kapta görselin ve açıklama maddesinin gösterdiği 2h K katmanı kullanıldı. Bu modellerdeki sayısal ölçüler örnek değerlerdir. Atmosfer ve barometre çizimleri fiziksel 139, basılı 137. sayfaya dayanır. 760 ve 650 mmHg kaynak değerleri, 60° eğim özgün örnek değeridir. Rijit gaz kabı fiziksel 140, basılı 138. sayfaya dayanır. Hareketli piston, bölmeli kapta esnek zar ve balon fiziksel 141, basılı 139. sayfaya dayanır. Bu sayfadaki gaz hesaplarında kullanılan sayılar özgün örneklerdir. Manometredeki açık ve kapalı uç çizimleri fiziksel 142, basılı 140. sayfaya dayanır. 70 ve 75 cmHg değerleri kaynak örneğindendir. Erime ve kaynama fiziksel 143, basılı 141. sayfadaki kap çizimi ve koşullarla karşılaştırıldı. Saf su tablosu NIST Chemistry WebBook SRD 69 doygunluk verileridir. Su kanalı ölçümleri fiziksel 144, basılı 142. sayfadandır. Yatay boru ve sayısal Bernoulli uygulaması ayrı ideal örnektir. Aynı sayfadaki çatı, kanat ve şemsiye, verilen basınç farkıyla sınırlandırılan örnek çizimlerle açıklanır. Fiziksel 145, basılı 143. sayfadaki M ve L kolları ve su seviyeleri durgun ve akan hava için yeniden çizildi.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

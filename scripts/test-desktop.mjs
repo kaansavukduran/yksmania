@@ -195,7 +195,8 @@ try {
     }
   }
   await navigate("Bugün");
-  const completedChemistry = (await openFullTheoryPlan()).filter({ hasText: "Simyadan kimyaya" });
+  const chemistryTitle = () => page.getByText("Simyadan kimyaya", { exact: true });
+  const completedChemistry = (await openFullTheoryPlan()).filter({ has: chemistryTitle() });
   await expect(completedChemistry).toContainText("Konu tamamlandı");
   const chemistryCompletion = completedChemistry.getByText(/^Çalışıldı: \d{2}\/\d{2}\/\d{4}$/);
   await expect(chemistryCompletion).toBeVisible();
@@ -955,10 +956,11 @@ try {
   await expect(page.locator(".stat-number").first()).toHaveText("1");
   // A packed desktop run may span midnight. Its finished lessons keep their original dates.
   const theoryRows = await openFullTheoryPlan();
-  const restoredChemistry = theoryRows.filter({ hasText: "Simyadan kimyaya" });
+  const restoredChemistry = theoryRows.filter({ has: chemistryTitle() });
   await expect(restoredChemistry).toContainText("Konu tamamlandı");
   await expect(restoredChemistry.getByText(savedChemistryDate, { exact: true })).toBeVisible();
-  const rationalRow = theoryRows.filter({ hasText: "Rasyonel Sayılar" });
+  const rationalRow = theoryRows.filter({ has: page.getByText("Rasyonel Sayılar", { exact: true }) });
+  await expect(rationalRow).toHaveCount(1);
   await expect(rationalRow).toContainText("5 soruda 5 doğru · 0 yanlış");
   await rationalRow
     .getByRole("button", { name: "Sonucu gör", exact: true })

@@ -1,8 +1,8 @@
 {
-  "version": "0.92.0",
+  "version": "0.93.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Çatı, kanat ve şemsiyede basınç farkının düşey etkisini karşılaştır. Ayrı Kopya Kağıdı ve şemsiyenin net kuvvetini gösteren çözümlü örnek eklendi.",
-    "en": "Compare the vertical effect of pressure differences on a roof, wing and umbrella. Includes a separate cheat sheet and a worked umbrella example."
+    "tr": "Hava hızı değiştiğinde U borusundaki M ve L su seviyelerini karşılaştır. Kopya Kağıdı’nda durgun ve akan hava tablosu ve 1,8 cm çözümü var.",
+    "en": "Compare the water levels in an air-flow U-tube at different speeds. Includes a still-versus-flowing table and a 1.8 cm worked example."
   }
 }
