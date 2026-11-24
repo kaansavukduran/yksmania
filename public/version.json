@@ -1,8 +1,8 @@
 {
-  "version": "0.114.0",
+  "version": "0.115.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Gerçek yan aynada görünen yolu incele. Kopya Kağıdı’nda aynaya dik çizgiye göre gelme ve yansıma açılarını ölç.",
-    "en": "Look at the road reflected in a real side mirror. In the reference sheet, measure the incident and reflected angles from the mirror normal."
+    "tr": "Yakınlaştırılmış dalga boyu ölçeğinde morötesinden görünür bölgeye geç. Kopya Kağıdı’nda 350 nm ile 440 nm’yi karşılaştır.",
+    "en": "Move across the ultraviolet and visible boundary on a wavelength scale. Compare 350 nm and 440 nm in the reference sheet."
   }
 }

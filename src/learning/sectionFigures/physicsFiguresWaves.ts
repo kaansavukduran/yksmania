@@ -25,6 +25,7 @@ import { pulseMarkerM, pulseSpeedMps, pulseSupportM, pulseWidthM, springPulseAt,
 import { surfaceAmplitudeM, surfaceCrestX, surfaceMarkerM, surfaceWavePosition, surfaceWaveTitle } from "../mebiSurfaceWave";
 import { radioFrequencyMHz, radioWavefrontPoints, radioWavefrontRadii, radioWavelengthMeters, radioWaveTitle } from "../mebiRadioWaves";
 import { microwaveOvenEnergyPath, microwaveOvenStages, microwaveOvenTitle, microwaveOvenWavelengthLabel } from "../mebiMicrowaveOven";
+import { boundaryWavelength, ultravioletBoundaryTitle, visibleBoundaryNm, wavelengthRegion } from "../mebiUltravioletBoundary";
 
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
@@ -422,6 +423,26 @@ const giris: Record<string, FigureDef> = {
         readout: [microwaveOvenStages[step].detail, `2,45 GHz için boşlukta bir dalga boyu yaklaşık ${microwaveOvenWavelengthLabel}.`],
       };
     },
+  },
+  [ultravioletBoundaryTitle]: {
+    caption: "Sürgüyle dalga boyunu değiştir. İşaret, kısa dalga boyları solda olan yakınlaştırılmış bir ölçek üzerinde hareket eder.",
+    alt: "300 ile 500 nanometre arası yatay ölçek. 380 nanometrede kesikli sınır var. Sol bölüm morötesi, sağ bölüm görünür ışık. Üçgen işaret seçilen dalga boyunu gösteriyor.",
+    param: { label: "Dalga boyu", min: boundaryWavelength.min, max: boundaryWavelength.max, step: boundaryWavelength.step, init: boundaryWavelength.initial, unit: " nm", plain: true },
+    draw: (nm) => ({
+      els: [
+        seg(v(300, 0), v(visibleBoundaryNm, 0), { tone: "muted", bold: true }),
+        seg(v(visibleBoundaryNm, 0), v(500, 0), { tone: "b", bold: true }),
+        seg(v(visibleBoundaryNm, -5), v(visibleBoundaryNm, 18), { tone: "ink", dash: true }),
+        txt(v(338, 20), "Morötesi", "n", { small: true, bold: true }),
+        txt(v(445, 20), "Görünür", "n", { small: true, bold: true }),
+        ...[300, visibleBoundaryNm, 500].flatMap((value) => [
+          seg(v(value, -4), v(value, 3), { tone: "ink", thin: true }),
+          txt(v(value, -7), value === visibleBoundaryNm ? `≈ ${value} nm` : `${value} nm`, "s", { small: true }),
+        ]),
+        poly([v(nm - 3, 9), v(nm + 3, 9), v(nm, 2)], { tone: "a", fill: "a", bold: true }),
+      ],
+      readout: [`${fmt(nm)} nm · ${wavelengthRegion(nm)}`],
+    }),
   },
   "Mekanik ve elektromanyetik ayrımı ortam gereksinimidir": {
     caption:

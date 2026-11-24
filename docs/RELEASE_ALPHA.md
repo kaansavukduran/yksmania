@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.115.0 · Mor ışık ve morötesi
+
+Yayın adayı. Dalga boyu işaretini yaklaşık 380 nm sınırından geçir. Kopya Kağıdı’nda 350 ve 440 nm’yi aynı ölçekle karşılaştır.
+
 # ÖSYM Mania 0.114.0 · Yan aynada görünür ışık
 
 Yayın adayı. Fotoğrafta yan aynanın gösterdiği yolu bul. Kopya Kağıdı’nda 55° yüzey açısını normalden ölçülen açıya çevir, ışın çizimiyle kontrol et. [Fotoğraf ve CC0 kaydı](https://commons.wikimedia.org/w/index.php?title=File:Our_Past_is_Behind_Us._%28Unsplash%29.jpg&oldid=914430380)
