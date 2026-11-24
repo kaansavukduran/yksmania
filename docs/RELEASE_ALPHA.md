@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.134.0 · Tümsek engelde sanal odak
+
+Yayın adayı. Düz cephenin tümsek engelden dönünce nasıl dağıldığını incele. Kesikli uzantılardan F’yi bul. Kopya Kağıdı normalin 90° işaretini ve sanal odak çizimini ayrı çözüm adımlarında açıyor.
+
 # ÖSYM Mania 0.133.0 · Düz engelde sanal kaynak
 
 Yayın adayı. O’nun engele uzaklığını değiştir. Sonraki adımda kesikli hız uzantılarını O′’ye kadar izle. Ayrı Kopya Kağıdı, gerçek ve sanal kaynak uzaklıkları ile tepe aralığını kendi çizimlerinde ölçüyor.
@@ -40,7 +44,7 @@ Yayın adayı. İki yayın kütleleri eşit ve uzunlukları farklı. Şekildeki 
 
 # ÖSYM Mania 0.123.0 · Eşit gerilimde iki yay
 
-Yayın adayı. Alt yayın kütlesini değiştir ve iki atmanın aynı sürede aldığı yolu ölç. Kopya Kağıdı kütleyi kilogram cinsine çevirip metre başına kütleyi ve atmanın süratini adım adım hesaplıyor.
+GitHub Pages, Cloudflare, Windows ve Linux’ta yayımlandı. Alt yayın kütlesini değiştir ve iki atmanın aynı sürede aldığı yolu ölç. Kopya Kağıdı kütleyi kilogram cinsine çevirip metre başına kütleyi ve atmanın süratini adım adım hesaplıyor. [Windows ve Linux](https://github.com/kaansavukduran/yksmania/releases/tag/v0.123.0-alpha.1)
 
 # ÖSYM Mania 0.122.0 · Periyodik yay dalgaları
 

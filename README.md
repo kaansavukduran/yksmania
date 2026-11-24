@@ -2,7 +2,9 @@
 
 [GitHub Pages](https://kaansavukduran.github.io/yksmania/) · [Cloudflare Pages](https://yksmania.pages.dev/)
 
-**Son yayımlanan web ve masaüstü sürümü 0.103.0**. Dalga önünün bir periyotta aldığı yolu ve Kopya Kağıdı’ndaki örneği çevrimdışı inceleyebilirsin. [Windows ve Linux 0.103](https://github.com/kaansavukduran/yksmania/releases/tag/v0.103.0-alpha.1) · [Önceki 0.42 sürümü](https://github.com/kaansavukduran/yksmania/releases/tag/v0.42.0-alpha.1) · [Android 0.42 kişisel deneme arşivi](https://github.com/kaansavukduran/yksmania/actions/runs/45187782506/artifacts/14823994107)
+**Son yayımlanan web ve masaüstü sürümü 0.123.0**. Eşit gerilen iki yayda atmanın aldığı yolu ve Kopya Kağıdı’ndaki sürat hesabını çevrimdışı inceleyebilirsin. [Windows ve Linux 0.123](https://github.com/kaansavukduran/yksmania/releases/tag/v0.123.0-alpha.1) · [Önceki 0.103 sürümü](https://github.com/kaansavukduran/yksmania/releases/tag/v0.103.0-alpha.1)
+
+**0.134.0 adayı** tümsek engelde cephelerin nasıl dağıldığını ve sanal F’nin yerini gösteriyor. Yüzey normali ve diklik işareti Kopya Kağıdı’nda ayrı çizimde açılıyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.133.0 adayı** dairesel dalga düz engelden dönünce, yansıyan okların uzantısının yansıma çiziminde nerede birleştiğini gösteriyor. Kopya Kağıdı gerçek O ile sanal O′’nün uzaklığını ölçüyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
@@ -24,7 +26,7 @@
 
 **0.124.0 adayı** iki yayın kütlesini, uzunluğunu ve gerilimini sorunun çiziminde veriyor. İpucu birimleri gösteriyor, çözüm adımları yoğunlukları ve süratleri ayrı tablolarda hesaplıyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
-**0.123.0 adayı** eşit gerilen iki yayda metre başına kütlenin atma süratini nasıl değiştirdiğini çiziyor. Alt yayın kütlesini değiştirip ölçüleri karşılaştırabilirsin. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+**0.123.0 sürümünde** alt yayın kütlesini değiştirip eşit gerilimde iki atmanın süratini ve aynı sürede aldığı yolu karşılaştırabilirsin. [Sürüm kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.122.0 adayı** iki yayda enine ve boyuna dalgaları yan yana karşılaştırıyor. Geçen süreyi değiştir, işaretli noktaların hareketini izle ve dalga boyunu ölç. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
@@ -174,7 +176,7 @@ Tablo, bu daldaki uygulama envanterini ve sürüm kayıtlarını gösterir. PDF 
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 269 | 318 / 318 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 272 | 318 / 318 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
 | TYT Biyoloji | 36 / 36 | 22 · 80 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 14 |
 | TYT Tarih | 24 / 24 | 14 · 41 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 10 |
@@ -187,7 +189,7 @@ Tablo, bu daldaki uygulama envanterini ve sürüm kayıtlarını gösterir. PDF 
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **405 · 1764** | **6.668 / 6.668 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
+| **Toplam** | **510 / 510** | **405 · 1767** | **6.668 / 6.668 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

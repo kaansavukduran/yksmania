@@ -1,8 +1,8 @@
 {
-  "version": "0.133.0",
+  "version": "0.134.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Dairesel tepeleri düz engele gönder. Yansıyan hız oklarının uzantılarından O′ konumunu ve iki tepe arasındaki uzaklığı ölç.",
-    "en": "Send circular crests toward a wall. Find O′ from the extensions of reflected directions and measure the crest spacing."
+    "tr": "Düz cepheleri tümsek engele gönder. Dönen cephelerin nasıl dağıldığını, normalin ve sanal odağın yerini ayrı çizimlerde incele.",
+    "en": "Send plane crests toward a convex barrier. See how the reflections spread, and locate the normal and virtual focus in separate figures."
   }
 }

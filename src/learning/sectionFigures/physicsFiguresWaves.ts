@@ -51,6 +51,8 @@ import { concaveCenterX, concaveFocusX, concaveModes, concaveRadius, concaveStep
 
 import { sourceDistanceCm, virtualWaterAt, virtualWaterReflectionTitle, virtualWaterTitle } from "../mebiVirtualWater";
 
+import { convexFocusCm, convexWater, convexWaterReflectedTitle, convexWaterTitle, surfaceNormalTitle } from "../mebiConvexWater";
+
 /*
  * TYT Fizik wave figures (dalgalara giriş, yay dalgaları, su dalgaları).
  * Waves are sampled from y = A·sin(2π(x − x0)/λ); pulses from a smooth bump.
@@ -1231,7 +1233,61 @@ const virtualWaterFigure: FigureDef = {
   },
 };
 
+const convexWaterFigure: FigureDef = {
+  caption: "Gelen düz cepheyi ve dışarı açılan yansıyan cepheleri sırayla göster. Kesikli uzantılar sanal F’nin yerini açıklar.",
+  alt: "Ortada tümsek engel. Sol tarafta önce sağa ilerleyen dik tepe çizgileri, sonra birbirinden uzaklaşan eğri cepheler. Yansıyan okların uzantıları sağdaki sanal F yakınında kesişir.",
+  steps: ["Gelen düz cepheler", "Yansıyan eğri cepheler"],
+  draw: (_, step) => {
+    const incoming = step === 0;
+    const { rays, crests } = convexWater();
+    return {
+      els: [
+        seg(v(-6, 0), v(6.7, 0), { tone: "muted", dash: true }),
+        poly(rays.map(({ hit: [x, y] }) => v(x, y)), { open: true, tone: "ink", bold: true }),
+        txt(v(0, 3.6), "Tümsek engel", "n", { small: true }),
+        ...(incoming
+          ? [-4.8, -3.6, -2.4].map((x) => seg(v(x, -2.75), v(x, 2.75), { tone: "b", bold: true }))
+          : crests.map((crest) => poly(crest.map(([x, y]) => v(x, y)), { open: true, tone: "b", bold: true }))),
+        ...[rays[0], rays[5], rays[10]].flatMap(({ hit: [x, y], reflected: [dx, dy], virtualAxisIntercept }) =>
+          incoming
+            ? [vec(v(x - 2.4, y), v(x, y), { tone: "a", bold: true })]
+            : [
+                vec(v(x, y), v(x + 2.8 * dx, y + 2.8 * dy), { tone: "c", bold: true }),
+                ...(virtualAxisIntercept === undefined ? [] : [seg(v(x, y), v(virtualAxisIntercept, 0), { tone: "muted", dash: true })]),
+              ]
+        ),
+        ...(!incoming ? [pt(v(convexFocusCm, 0), "F", "e", "muted", true)] : []),
+      ],
+      readout: [
+        incoming ? "Düz tepeler su tarafında sağa ilerliyor." : "Yansıyan oklar birbirinden uzaklaşır. F engelin arkasında, tepeye yaklaşık 6 cm uzaklıkta.",
+        "Derinlik ve kaynak değişmediği için dalga boyu ve sürat aynı kalır.",
+      ],
+    };
+  },
+};
+
 const su: Record<string, FigureDef> = {
+  [convexWaterTitle]: convexWaterFigure,
+  [convexWaterReflectedTitle]: {
+    caption: "Yansıma sol tarafta görülür. Sağa uzatılan çizgiler F çevresine gider.",
+    alt: convexWaterFigure.alt,
+    draw: () => convexWaterFigure.draw(0, 1),
+  },
+  [surfaceNormalTitle]: {
+    caption: "P noktasındaki yüzey normali N, temas yüzeyini dik keser.",
+    alt: "Yatay yüzey üzerindeki P’den yukarıya çıkan kesikli normal N. P’de 90 derece diklik işareti bulunuyor.",
+    draw: () => ({
+      els: [
+        seg(v(-3.2, 0), v(3.2, 0), { tone: "ink", bold: true }),
+        seg(v(0, 0), v(0, 2.6), { tone: "muted", dash: true }),
+        poly([v(0, 0.42), v(0.42, 0.42), v(0.42, 0)], { open: true, tone: "c" }),
+        pt(v(0, 0), "P", "s", "ink"),
+        txt(v(0, 2.6), "N", "n", { tone: "muted" }),
+        txt(v(2.4, 0), "Yüzey", "s", { small: true }),
+      ],
+      readout: ["N ile yüzeyin arası 90°."],
+    }),
+  },
   [concaveWaterTitle]: concaveWaterFigure,
   ...Object.fromEntries(concaveStepFigureTitles.map((title, step) => [
     title,
