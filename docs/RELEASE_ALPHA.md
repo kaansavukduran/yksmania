@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.98.0 · Havada kaldırma
+
+Yayın adayı. İki balonun ortak kaldırmasını ve ayrı ağırlıklarını karşılaştır. Kopya Kağıdı’nda üç hareket durumunu incele. Özgün soruda verilen ivme yönlerinden yoğunlukları karşılaştır.
+
 # ÖSYM Mania 0.97.0 · İlk hareket ve son denge
 
 Yayın adayı. A, B ve C’yi bırakınca oluşan kuvvetleri ve son konumları iki çizimde karşılaştır. Kopya Kağıdı’nda A’nın çözümünü, özgün soruda batık hacim hesabını aç.

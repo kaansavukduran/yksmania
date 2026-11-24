@@ -19,6 +19,7 @@ import { rigidGasQuestionFigures, rigidGasQuestionId } from "./rigidGasQuestion0
 import { bernoulliChannelQuestionFigures, bernoulliChannelQuestionId } from "./bernoulliChannelQuestion091";
 import { archimedesQuestionFigures, archimedesQuestionId } from "./archimedesQuestion095";
 import { buoyancyFloatingQuestionFigures, buoyancyFloatingQuestionId } from "./buoyancyFloatingQuestion097";
+import { airBuoyancyQuestion, airBuoyancyQuestionFigures } from "./airBuoyancyQuestion098";
 import {
   inverseTranslationFigures,
   inverseTranslationQuestion,
@@ -225,6 +226,15 @@ const velocityQuestion = {
   explanation: forceVelocityQuestion.explanation.tr,
   guidance: forceVelocityQuestion.guidance,
 };
+const balloonQuestion = {
+  id: airBuoyancyQuestion.id,
+  prompt: airBuoyancyQuestion.prompt.tr,
+  options: airBuoyancyQuestion.options.map((option) => option.tr),
+  answer: airBuoyancyQuestion.answer,
+  hint: airBuoyancyQuestion.hint.tr,
+  explanation: airBuoyancyQuestion.explanation.tr,
+  guidance: airBuoyancyQuestion.guidance,
+};
 
 function ogmTranslationBinding(
   source: Question,
@@ -312,6 +322,14 @@ const bindings = new Map<string, FigureBinding>([
     pageLabel: "Fiziksel 147. sayfa, basılı 145",
     itemLabel: "Serbest yüzen cismin batık hacmi, özgün soru",
     figures: buoyancyFloatingQuestionFigures,
+  }],
+  [balloonQuestion.id, {
+    stemRevision: stemRevision(balloonQuestion),
+    helpRevision: helpRevision(balloonQuestion, balloonQuestion.guidance),
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 148. sayfa, basılı 146",
+    itemLabel: "K ve L balonlarının ilk hareketi, özgün öğretim sorusu",
+    figures: airBuoyancyQuestionFigures,
   }],
   [pistonQuestionId, {
     stemRevision: "122891ad73ac0c",

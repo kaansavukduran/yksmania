@@ -15,6 +15,11 @@ export function beforeFoundation031Registration(source: string): string {
   // Reverse only additive registration lines; every earlier byte is
   // still compared with the unchanged historical SHA-256 by the source gate.
   return source
+    .replace('import { airBuoyancyQuestion } from "../learning/airBuoyancyQuestion098";\n', "")
+    .replace(
+      '  ...forge011PhysicsLessons.map((lesson) => lesson.id === "sivilarin-kaldirma-kuvveti"\n    ? { ...lesson, questions: [...lesson.questions, airBuoyancyQuestion] }\n    : lesson),\n',
+      "  ...forge011PhysicsLessons,\n",
+    )
     .replace(
       'import { ogmTranslationPractice } from "../learning/ogmTranslationPractice071";\n',
       "",

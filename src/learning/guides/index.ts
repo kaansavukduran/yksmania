@@ -21,6 +21,7 @@ import { doorPressureSection, liquidSuctionExample, liquidSuctionSection } from 
 import { submergedBlockExample, submergedBlockSection, submergedBlockTitle } from "../mebiArchimedesPressure";
 import { overflowExample, overflowSection, overflowTitle } from "../mebiArchimedesOverflow";
 import { buoyancyEquilibriumExample, buoyancyEquilibriumSection } from "../mebiBuoyancyEquilibrium";
+import { airBuoyancyExample, airBuoyancySection } from "../mebiAirBuoyancy";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
@@ -418,10 +419,11 @@ export function studyGuide(lessonId: string) {
         if (section.title === submergedBlockTitle) return [submergedBlockSection];
         if (section.title === overflowTitle) return [overflowSection];
         if (section.title === "Askıda kalma ile dibe oturmayı ayır") return [section, buoyancyEquilibriumSection];
+        if (section.title === "Gazlar da kaldırır, fakat her yükselme Arşimet değildir") return [section, airBuoyancySection];
         return [section];
       }),
-      examples: [submergedBlockExample, overflowExample, buoyancyEquilibriumExample, ...guide.examples],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 146, basılı 144. sayfadaki üst, alt ve iki yan yüz kuvveti ile Arşimet bağıntısı karşılaştırıldı. Taşma oluğu ve üç denge örneği fiziksel 146–147, basılı 144–145. sayfalara dayanır. Fiziksel 147’nin altındaki A, B ve C’nin ilk hareketi ile denge konumları iki adım halinde gösterilir. Çizimlerin sayısal değerleri özgün örnektir.`,
+      examples: [submergedBlockExample, overflowExample, buoyancyEquilibriumExample, airBuoyancyExample, ...guide.examples],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 146, basılı 144. sayfadaki üst, alt ve iki yan yüz kuvveti ile Arşimet bağıntısı karşılaştırıldı. Taşma oluğu ve üç denge örneği fiziksel 146–147, basılı 144–145. sayfalara dayanır. Fiziksel 147’nin altındaki A, B ve C’nin ilk hareketi ile denge konumları iki adım halinde gösterilir. Fiziksel 148, basılı 146. sayfadaki K ve L balonlarının ilk hareket yönleri yeniden çizildi. Çizimlerin sayısal değerleri özgün örnektir.`,
     };
   }
   if (guide?.id === "hal-degisimi") {

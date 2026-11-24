@@ -41,6 +41,7 @@ import { mebiDoorSuctionFigures } from "./mebiDoorSuctionFigures";
 import { mebiArchimedesPressureFigures } from "./mebiArchimedesPressureFigures";
 import { mebiArchimedesOverflowFigures } from "./mebiArchimedesOverflowFigures";
 import { mebiBuoyancyEquilibriumFigures } from "./mebiBuoyancyEquilibriumFigures";
+import { mebiAirBuoyancyFigures } from "./mebiAirBuoyancyFigures";
 
 const rect = (x: number, y: number, w: number, h: number, tone: "a" | "b" | "c" | "muted" | "ink", fill = true): El =>
   poly([v(x, y), v(x + w, y), v(x + w, y + h), v(x, y + h)], { fill: fill ? (tone === "ink" ? "muted" : tone) : undefined, tone, thin: !fill });
@@ -213,6 +214,7 @@ const kaldirma: Record<string, FigureDef> = {
   ...mebiArchimedesPressureFigures,
   ...mebiArchimedesOverflowFigures,
   ...mebiBuoyancyEquilibriumFigures,
+  ...mebiAirBuoyancyFigures,
   "Arşimet: yer değiştiren sıvının ağırlığı": {
     caption:
       "Aynı 2 L hacimli cisim tamamen batık: suda Fk = 1000·10·0,002 = 20 N, yağda (800 kg/m³) 16 N. Formüldeki yoğunluk cismin değil sıvınındır.",

@@ -146,6 +146,7 @@ const revisions = [
 ];
 
 const additions = new Set(revisions.flatMap(({ appendedQuestions }) => appendedQuestions));
+additions.add("sivilarin-kaldirma-kuvveti-havada-balon");
 
 export function beforeSource031Questions<T extends { id: string }>(questions: readonly T[]) {
   return questions.filter(({ id }) => !additions.has(id));
@@ -221,6 +222,10 @@ export function beforeSource031Teaching(
   id: string,
   value: unknown,
 ): unknown {
+  if (surface === "lessons" && id === "sivilarin-kaldirma-kuvveti" && value) {
+    const lesson = value as Lesson;
+    return { ...lesson, questions: beforeSource031Questions(lesson.questions) };
+  }
   const prior = revisions.find((revision) => (surface === "sheets" ? revision.topic : revision.lesson) === id);
   if (!prior || !value) return value;
   const repairedProblem = prior.lesson === "faiz-problemleri" || prior.lesson === "karisim-problemleri";

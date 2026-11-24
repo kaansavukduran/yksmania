@@ -1,8 +1,8 @@
 {
-  "version": "0.97.0",
+  "version": "0.98.0",
   "channel": "alpha",
   "notes": {
-    "tr": "A, B ve C’nin ilk hareketini son dengeleriyle karşılaştır. Yeni yüzme sorusunda batık hacim ile hacim oranını adım adım ayır.",
-    "en": "Compare the starting motion of A, B and C with their equilibrium. A practice question distinguishes immersed volume from the fraction submerged."
+    "tr": "Eşit hacimli balonların kütlesini ve yer değiştirdiği havayı karşılaştır. Yeni çizimli soru iki ilk hareket yönünü yoğunlukla ilişkilendirir.",
+    "en": "Compare the mass and displaced air of equal-volume balloons. A new illustrated question links their initial motion to density."
   }
 }

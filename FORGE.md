@@ -1,3 +1,9 @@
+# Havada kaldırma ve balonların ilk hareketi · 0.98.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 148, basılı 146. Aynı 10 L hacimli K ve L balonlarına 0,12 N kaldırma etki ediyor. L’nin toplam kütlesi 12 g sınırını geçince ilk net kuvvet aşağı dönüyor. Kopya Kağıdı yükselme, denge ve düşmeyi karşılaştırıyor. Kaynakta verilen zıt ilk ivme yönlerini koruyan özgün soru, önceki on sorunun ardından açılıyor.
+
+İlk tam denetim üç eski ilerleme çıktısını ve tek yeni kayıt nedeniyle tarihsel kaynak özetini bildirdi. Çıktılar yeniden üretildi. Tarihsel SHA-256 karşılaştırması, yeni sorunun yalnız iki kayıt satırı çıkarılarak tekrar yapıldı. 4.719 birim, check, derleme ve altı çevrimdışı Chromium akışı geçti. Sorunun kök çizimi, ipucu ve son yoğunluk tablosu ayrı açılıyor. Dar ekranda büyük yazı, klavye ve kalıcı yardım kaydı sınandı. Sıradaki kaynak fiziksel 148’in üstündeki sprey şeması, kanat basıncı ve gerçek yelken/çatı fotoğrafları.
+
 # İlk hareket ve son denge · 0.97.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 147, basılı 145. İlk çizimde üç cisim de tam batık. Ortak 20 N kaldırmaya karşın A yukarı, C aşağı hareket etmeye başlar ve B askıda kalır. İkinci çizimde A yüzeyde, B aynı derinlikte ve C sıvının altına eriştiği desteğin üstünde dengededir. Kopya Kağıdı ilk net kuvvetleri ve son konumları karşılaştırır.
@@ -528,7 +534,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 236 | 313 / 313 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 238 | 314 / 314 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
 | TYT Biyoloji | 36 / 36 | 22 · 80 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 14 |
 | TYT Tarih | 24 / 24 | 14 · 41 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 10 |
@@ -541,14 +547,14 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **405 · 1731** | **6.663 / 6.663 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
+| **Toplam** | **510 / 510** | **405 · 1733** | **6.664 / 6.664 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
 | Tarihsel dal kaydı: okunan veya eşlenen PDF / eski envanter | 119 / 8.981 |
 | Tarihsel 99_ÖSYM kaydı: uygulama karşılığı olan / 20 Kasım envanteri | 18 / 1.001 |
 | 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 76 |
-| Kademeli çözüm paneli bulunan soru | 6.663 / 6.663 · %100,00 |
+| Kademeli çözüm paneli bulunan soru | 6.664 / 6.664 · %100,00 |
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
 | Ara hatırlama (mikro ritim): ders · soru | 505 / 510 · %99,02 · 3.052 soru |
