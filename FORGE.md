@@ -3665,3 +3665,9 @@ Kaynaklar güncel 5.1 Tek Çift Pozitif Negatif Sayılar fiziksel 2, 5, 10 ve 14
 Ardışık Sayılar’da silinen terim adayı sayı doğrusunda denetleniyor. Uçların arasında bulunan 14’ün listeye ait olmadığı, kalan toplam değiştiğinde 13’ün listede olduğu gösteriliyor. Üçgen Eşitsizliği’nde tablo önce üçgenin kurulmasını, sonra en büyük açı türünü sınar. İki öğretim karşılığı ayrı Kopya Kağıdında da çalışır.
 
 Ardışık Sayılar 5.1 fiziksel 5 E6 ve 6 görsel, Açı Kenar Bağıntıları 5.1 fiziksel 5 G2 kaynaklarıyla karşılaştırıldı. TypeScript, 32 birim, 11 Chromium, içerik, üretim ve 323 çevrimdışı varlık kontrolü geçti. Sırada Asal Sayılar ve Dik Üçgenler kaynakları.
+
+## TYT Matematik ve Geometri · 0.152.0 adayı
+
+Asal Sayılar’da 72’nin 12 pozitif böleni asal üs çiftlerinden üretilen tabloda okunuyor. Dik Üçgenler’de rampanın yatay uzaklığı, yüksekliği, eğimi ve hipotenüsü aynı ölçülerden hesaplanıyor. İki model de konu anlatımı ve ayrı Kopya Kağıdı içinde çalışıyor.
+
+Asal Sayılar 1.2 fiziksel 3 ve Dik Üçgenler 5.2 fiziksel 2, 5 ve 8. sayfalarıyla eşleştirildi. TypeScript, 53 birim, 13 Chromium, içerik ve 323 çevrimdışı varlık kontrolü geçti. Geniş birim denetimi önceki iki geometri örneğinde eksik ara adımı yakaladı. Ara adımlar eklendi ve aynı denetim tekrar geçti.

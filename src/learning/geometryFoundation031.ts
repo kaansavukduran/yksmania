@@ -1263,7 +1263,7 @@ const packs031: FoundationPack031[] = [
     title: "Dik üçgen: Pisagor, özel açılar ve Öklid bağıntıları",
     minutes: 46,
     source:
-      "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir.",
+      "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Eğim, Aurelia Dik Üçgenler 5.2, fiziksel s.5 ve 8 ile karşılaştırıldı. Sorular resmî sınav sorusu değildir.",
     objectives: [
       "Hipotenüsü doğru seçerek Pisagor bağıntısını ve tersini uygula.",
       "30°–60°–90° ve 45°–45°–90° üçgenlerinde karşılıkları ayır.",
@@ -1325,6 +1325,14 @@ const packs031: FoundationPack031[] = [
         paragraphs: [
           "Hipotenüs bulunan her sonuç diğer iki kenardan büyük olmalıdır. Öklid modelinde BH+HC=BC ve AH²=BH·HC birlikte sağlanmalıdır. Alanla AB·AC=BC·AH eşitliğini ayrıca denetlemek yanlış parçayla çarpımı yakalar.",
           "Hipotenüsün orta noktasına dik köşeden çizilen kenarortay hipotenüsün yarısıdır; bu parça üç köşeye eş uzaklık özelliğiyle açıklanır. Kenarortayı hipotenüse ait yükseklikle karıştırma: bunlar genel bir dik üçgende farklı parçalardır. Çizimdeki kareler alan gösteriyorsa sayının birimi cm²; kenar veya yükseklik gösteriyorsa cm’dir. Her soru için bir kez “H hangi doğru üzerinde, dik açı nerede, en büyük kenar hangisi?” diye sor. Hatırlama çalışmasında şekli kapatıp bu üç bilgiyle modeli yeniden kur.",
+        ],
+      },
+      {
+        title: "Eğim için yatay uzunluğu bul",
+        figureTitle: "Dik yolda eğim ve uzunluk",
+        paragraphs: [
+          "Bir yol 12 m yatay ilerleyip 5 m yükseliyor. Yolun yatayla yaptığı α açısında karşı dik kenar 5 m, komşu dik kenar 12 m’dir. Eğim, bu iki uzunluğun oranı olan tan α=5/12’dir. İki kenar aynı birimde ölçülür, oran birimsizdir.",
+          "Eğik yol, Pisagor’la √(12²+5²)=13 m bulunur. 5/13 oranı aynı açının sinüsüdür. Eğim sorusunda payda yatay ilerleme, eğik yol uzunluğu değildir. Şekilde yükselmeyi değiştirirken yatay ilerleme 12 m kalır.",
         ],
       },
     ],
@@ -2792,6 +2800,11 @@ const quickSheets031: Record<string, FoundationQuickSheet031> = {
           "Dik köşeden hipotenüsün orta noktasına çizilen kenarortay hipotenüsün yarısıdır. Genel dik üçgende hipotenüs yüksekliğiyle farklıdır.",
           "Uzunluk cm, karelerin alanı cm² ile ifade edilir. Duvar–zemin gibi uygulamalarda dikliğin verildiğini belirt; çizimden özel açı varsayma.",
         ],
+      },
+      {
+        title: "Eğim ile eğik yol ayrı büyüklüklerdir",
+        figureTitle: "Dik yolda eğim ve uzunluk",
+        text: ["Eğim = dikey fark / yatay ilerleme. 5 m yükselme ve 12 m yatay ilerleme eğimi 5/12 yapar. Eğik yol 13 m, sinüs 5/13."],
       },
     ],
     cautions: [

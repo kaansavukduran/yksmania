@@ -778,6 +778,34 @@ const ucgenEsitsizligi: Record<string, FigureDef> = {
 };
 
 const dikUcgen: Record<string, FigureDef> = {
+  "Dik yolda eğim ve uzunluk": {
+    caption: "Yükselmeyi değiştir. Yatay ilerleme sabit kalır. Eğim için yatay kenarı, sinüs için eğik kenarı kullan.",
+    alt: "Yatay tabanı 12 metre olan dik üçgen. Düşey yükselme, eğik yol ve yolun yatayla yaptığı açı işaretlidir.",
+    param: { label: "Dikey yükselme", min: 1, max: 9, step: 1, init: 5, unit: " m" },
+    draw: (rise) => {
+      const run = 12;
+      const length = Math.hypot(run, rise);
+      const origin = v(0, 0);
+      const corner = v(run, 0);
+      const end = v(run, rise);
+      return {
+        els: [
+          tri(origin, corner, end),
+          right(corner, origin, end),
+          ang(origin, corner, end, "α", { tone: "a", r: 42 }),
+          dim(origin, corner, `${run} m`, end),
+          dim(corner, end, `${rise} m`, origin, "b"),
+          dim(origin, end, `${fmt(length, 2)} m`, corner, "a"),
+          txt(v(-0.5, -1.5), "", "c"),
+          txt(v(13, 10.2), "", "c"),
+        ],
+        readout: [
+          `Eğim: tan α = ${rise}/${run}.`,
+          `Eğik yol: √(${run}² + ${rise}²) ${Number.isInteger(length) ? "=" : "≈"} ${fmt(length, 2)} m.`,
+        ],
+      };
+    },
+  },
   "Dik köşeyi ve hipotenüsü önce işaretle": {
     caption:
       "Çizimi döndür: hipotenüs her konumda dik açının karşısındaki en uzun kenardır. Yön, tanımı değiştirmez.",

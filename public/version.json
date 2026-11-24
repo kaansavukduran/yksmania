@@ -1,8 +1,8 @@
 {
-  "version": "0.151.0",
+  "version": "0.152.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Ardışık Sayılar’da silinen terim adayını sayı doğrusunda doğrula. Üçgen Eşitsizliği’nde önce üçgenin kurulup kurulmadığını, sonra en büyük açının türünü sınayan tabloyu kullan.",
-    "en": "Check a missing term on the number line, and use a table to decide whether a triangle exists before classifying its largest angle."
+    "tr": "Asal Sayılar’da 72’nin pozitif bölenlerini iki asalın kuvvetlerinden oluştur. Dik Üçgenler’de eğimi yatay ilerlemeyle, eğik yolu Pisagor’la aynı şekil üzerinde hesapla.",
+    "en": "Build the positive divisors of 72 from prime powers, then compare a ramp’s slope and length on one right-triangle diagram."
   }
 }

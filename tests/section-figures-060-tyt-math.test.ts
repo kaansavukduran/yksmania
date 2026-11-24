@@ -195,3 +195,13 @@ it("requires a missing sequence term to occupy one of the given positions", () =
   expect(def.draw(140, 0).readout?.[1]).toContain("35 listede yok");
   expect(def.draw(144, 0).readout?.[1]).toContain("31 listede.");
 });
+
+it("computes ramp slope and hypotenuse from its displayed side lengths", () => {
+  const def = fig("tyt-geo-dik-ucgen-031", "Dik yolda eğim ve uzunluk");
+  expect(def.draw(5, 0).readout).toEqual([
+    "Eğim: tan α = 5/12.",
+    "Eğik yol: √(12² + 5²) = 13 m.",
+  ]);
+  expect(def.draw(9, 0).readout?.[1]).toContain("= 15 m");
+  expect(def.draw(6, 0).readout?.[1]).toContain("≈ 13,42 m");
+});

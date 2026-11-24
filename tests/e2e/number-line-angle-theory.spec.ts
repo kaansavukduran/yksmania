@@ -173,3 +173,45 @@ test("Triangle existence is checked before wide-angle classification", async ({ 
   await expect(sheet.getByRole("row").filter({ hasText: "Üçgen kurulmaz" })).toContainText("12");
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("The prime-power grid contains every positive divisor once in both reading routes", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-mat-asal-kaynak-032";
+  const verifyDivisors = async (name: RegExp) => {
+    const table = page.getByRole("region", { name }).getByRole("table");
+    await expect(table.getByRole("columnheader")).toHaveCount(5);
+    const cells = await table.locator("tbody td:not(:first-child) .guide-table-cell-value").allTextContents();
+    const numbers = cells.map(Number).sort((a, b) => a - b);
+    expect(numbers).toEqual(Array.from({ length: 72 }, (_, index) => index + 1).filter((n) => 72 % n === 0));
+  };
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await verifyDivisors(/Bütün pozitif bölenleri bağımsız seçimle say/);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await verifyDivisors(/Aralarında asal ve üç sayaç/);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("A ramp’s horizontal distance and hypotenuse stay distinct across the slider", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-dik-ucgen-031";
+  await page.goto(`/#/lesson?id=${lesson}`);
+  const model = figure(page, "Dik yolda eğim ve uzunluk");
+  await expect(model).toContainText("tan α = 5/12");
+  await expect(model).toContainText("= 13 m");
+  const original = await model.getByRole("img").innerHTML();
+  await model.getByRole("slider", { name: /Dikey yükselme/ }).press("End");
+  await expect(model).toContainText("tan α = 9/12");
+  await expect(model).toContainText("= 15 m");
+  expect(await model.getByRole("img").innerHTML()).not.toBe(original);
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(model).toContainText("tan α = 5/12");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

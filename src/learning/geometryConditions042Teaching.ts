@@ -175,7 +175,8 @@ export const triangleAngles042: Supplement = {
       strategy: "B açısının yarısını al. C açısının aynı kaldığını gör ve BDC üçgenini tamamla.",
       steps: [
         { label: "B açısının yarısı", expression: "64° ÷ 2 = 32°", explanation: "D, açıortay üzerinde olduğu için ∠DBC=32°." },
-        { label: "Küçük üçgenin üçüncü açısı", expression: "180°−48°−32°=100°", explanation: "D, A ile C arasında ve ∠BCD=48°." },
+        { label: "C açısını küçük üçgene taşı", expression: "∠BCD=48°", explanation: "D, A ile C arasında olduğu için CD ve CA aynı yöndedir." },
+        { label: "Küçük üçgenin üçüncü açısı", expression: "180°−48°−32°=100°", explanation: "BDC üçgeninde B ve C açıları belli, D açısı toplamı 180°ye tamamlar." },
       ],
       answer: "100°.",
       check: "32°+48°+100°=180°.",
@@ -290,7 +291,8 @@ export const triangleSides042: Supplement = {
       strategy: "Üçgenin kapanması için üst sınırı bul, sonra kare karşılaştırmasını uygula.",
       steps: [
         { label: "Üçgenin izin verdiği uzunluk", expression: "9<x<4+9=13", explanation: "x, 9’dan uzun. En uzun kenar, öteki ikisinin toplamından kısa olmalı." },
-        { label: "Açı sınıfı", expression: "x²>4²+9²=97", explanation: "En küçük aday 10 ve 10²=100. 10, 11 ve 12 sınırların içindedir." },
+        { label: "Açı sınıfının sınırı", expression: "x²>4²+9²=97", explanation: "x en uzun kenar olduğu için bu eşitsizlik onun karşısındaki açıyı geniş yapar." },
+        { label: "Tam sayıları seç", expression: "10²=100>97 → x=10, 11, 12", explanation: "10 en küçük tam sayı adayıdır. Daha büyük adayların kareleri de koşulu sağlar, ancak 13’e ulaşılamaz." },
       ],
       answer: "10, 11 ve 12 cm.",
       check: "4+9=13 olduğundan 12 üçgen kurar, 13 sınırda kalır.",
