@@ -197,6 +197,10 @@ import { mathFigures060TytNumbers } from "./mathFigures060TytNumbers";
 import { mathFigures060TytAlgebra } from "./mathFigures060TytAlgebra";
 import { mathFigures060TytData } from "./mathFigures060TytData";
 import { mathFigures060TytProblems } from "./mathFigures060TytProblems";
+import { mathFigures062TytNumbers } from "./mathFigures062TytNumbers";
+import { mathFigures062TytRational } from "./mathFigures062TytRational";
+import { mathFigures062TytAlgebra } from "./mathFigures062TytAlgebra";
+import { mathFigures062TytCounting } from "./mathFigures062TytCounting";
 import { religionFigures061Worship } from "./religionFigures061Worship";
 import { religionFigures061Anatolia } from "./religionFigures061Anatolia";
 import { religionFigures061Life } from "./religionFigures061Life";
@@ -462,6 +466,10 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   religionFigures062Rulings,
   religionFigures062Values,
   religionFigures062Belief,
+  mathFigures062TytNumbers,
+  mathFigures062TytRational,
+  mathFigures062TytAlgebra,
+  mathFigures062TytCounting,
 ];
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {};
 for (const pack of figurePacks)
