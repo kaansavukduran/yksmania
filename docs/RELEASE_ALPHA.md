@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.150.0 · Tacoma arşivi ve tabliye kesiti
+
+Yayın adayı. İki arşiv karesini büyüt ve 1940’taki tabliyeyi incele. Çizimde iki kenarın aynı ve zıt yönlere hareketini karşılaştır. Kopya Kağıdı fotoğraf gözlemini ve burulma açıklamasını ayrı adımlarda açıyor.
+
 # ÖSYM Mania 0.149.0 · İki diyapazonda rezonans
 
 Yayın adayı. İlk diyapazondan ikinciye sesin havadan ulaştığını çizimde izle. İkinci diyapazonun doğal frekansını değiştir. Kopya Kağıdı 400 ve 440 Hz’deki tepkiyi ayrı örnekte karşılaştırıyor.

@@ -1,8 +1,8 @@
 {
-  "version": "0.149.0",
+  "version": "0.150.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Keman ve piyano örneklerinde aynı periyodu bul. Üç harmonik bileşeni karşılaştırarak tını farkını incele.",
-    "en": "Find the shared period in violin and piano examples. Compare three harmonic components to see what changes the timbre."
+    "tr": "Tacoma Narrows arşiv karelerini aç. Tabliyenin iki kenarını izleyip düşey hareket ile burulmayı karşılaştır.",
+    "en": "Open the Tacoma Narrows archive frames. Follow both deck edges to compare vertical motion and twisting."
   }
 }

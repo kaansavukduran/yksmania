@@ -14,7 +14,7 @@ test("iki gerçek kaynak fotoğrafı ve eşit süreli grafik çevrimdışı birl
   if (!(await selection.isVisible())) await toc.getByText("İçindekiler", { exact: true }).press("Enter");
   await selection.press("Enter");
 
-  const pair = page.locator(".section-reference-photos");
+  const pair = page.getByRole("group", { name: "Aslan ve kanarya fotoğrafları", exact: true });
   const pictures = pair.locator("button img");
   await expect(pictures).toHaveCount(2);
   for (const picture of await pictures.all()) {

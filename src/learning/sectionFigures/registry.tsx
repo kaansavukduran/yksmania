@@ -7,6 +7,8 @@ import { coastalWaterLicence, coastalWaterSource } from "../mebiCoastalWater";
 import { coastalWaterPhoto } from "./mebiCoastalWaterPhoto";
 import { animalPitchTitle } from "../mebiPitchSamples";
 import { pitchSamplePhotos } from "./mebiPitchSamplePhotos";
+import { tacomaTitle } from "../mebiTacoma";
+import { tacomaPhotos } from "./mebiTacomaPhotos";
 import { visibleMirrorRayTitle } from "../mebiVisibleMirror";
 import { visibleMirrorPhoto, visibleMirrorPhotoSource } from "./mebiVisibleMirrorPhoto";
 import { handRadiograph, handRadiographSource } from "./mebiHandRadiograph";
@@ -407,6 +409,10 @@ type LessonPhoto = {
   licenceLabel?: string;
   imageLabel?: string;
 };
+const soundPhotoGroups: Record<string, { name: string; photos: readonly LessonPhoto[] }> = {
+  [animalPitchTitle]: { name: "Aslan ve kanarya fotoğrafları", photos: pitchSamplePhotos },
+  [tacomaTitle]: { name: "Tacoma Narrows arşiv kareleri", photos: tacomaPhotos },
+};
 export const sectionImageFigures = new Map<string, Map<string, LessonPhoto>>([
   ["dalgalara-giris", waveLessonPhotos],
   ["su-dalgalari", new Map([[coastalWaterPhoto.title, {
@@ -447,14 +453,15 @@ export function SectionFigure({
 }) {
   const def = sectionFigures[guideId]?.[title];
   const photo = sectionImageFigures.get(guideId)?.get(title);
-  if (!def && !photo) return null;
+  const group = guideId === "ses-deprem-dalgalari" ? soundPhotoGroups[title] : undefined;
+  if (!def && !photo && !group) return null;
   return (
     <>
       {label && <p className="small muted">{label}</p>}
       {photo && <LessonPhotoView photo={photo} />}
-      {guideId === "ses-deprem-dalgalari" && title === animalPitchTitle && (
-        <div className="section-reference-photos">
-          {pitchSamplePhotos.map((reference) => (
+      {group && (
+        <div className="section-reference-photos" role="group" aria-label={group.name}>
+          {group.photos.map((reference) => (
             <div key={reference.figure.title}><LessonPhotoView photo={reference} /></div>
           ))}
         </div>
