@@ -1,8 +1,8 @@
 {
-  "version": "0.135.0",
+  "version": "0.136.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Valletta limanındaki gerçek dalgakıran fotoğrafını incele. Köpükten neyi görebileceğini ve hangi büyüklüklerin ayrı ölçüm istediğini ayır.",
-    "en": "Inspect an actual breakwater photo from Valletta. Separate what you can see from the quantities that require measurement."
+    "tr": "Şekilli su dalgası sorusunda engel açısını ve tepe aralığını oku. İpucu ve çözüm şekillerini kendi adımlarında incele.",
+    "en": "Read the barrier angle and crest spacing from the illustrated water-wave question. Reveal the hint and solution figures in their own steps."
   }
 }

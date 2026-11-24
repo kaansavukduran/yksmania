@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.136.0 · Çizimli yansıma sorusu
+
+Yayın adayı. Düz engelin üzerindeki tepe çizgilerinden açıyı ve aralığı oku. İpucu hangi doğruya bakacağını hatırlatıyor. Yansıyan açı ve tepe aralığı, çözümün kendi çiziminde ve tablosunda açılıyor.
+
 # ÖSYM Mania 0.135.0 · Dalgakıran fotoğrafını incele
 
 Yayın adayı. Valletta’daki kıyı engelini ve yukarı sıçrayan suyu incele. Büyütülen fotoğrafı yön tuşlarıyla kaydır. Kopya Kağıdı fotoğrafta gördüğünü ölçüm gerektiren büyüklüklerden ayırıyor. [Fotoğraf ve lisans](https://commons.wikimedia.org/w/index.php?oldid=1180557315&title=File%3AHuge_waves_crash_against_the_breakwater_and_Fort_Ricasoli_at_the_entrance_to_Valletta%27s_Grand_Harbour%2C_Malta.jpg)

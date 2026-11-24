@@ -1,0 +1,91 @@
+import { expect, test } from "@playwright/test";
+import { forge012PhysicsLessons } from "../../src/learning/forge012Physics";
+import { waterReflectionQuestion, waterReflectionQuestionFigures } from "../../src/learning/waterReflectionQuestion136";
+import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse";
+
+test("dalga sorusu denk çizimi, kalıcı yardımı, yanlış kartını ve cep kitapçığını açar", async ({ page, context }, info) => {
+  test.setTimeout(90_000);
+  await page.setViewportSize({ width: 320, height: 870 });
+  await prepare(page, true);
+  await context.setOffline(true);
+  await openCourse(page, { lesson: "su-dalgalari", search: "Su dalgaları" });
+  await page.getByRole("button", { name: "Sorulara geç", exact: true }).click();
+  const inherited = forge012PhysicsLessons.find(({ id }) => id === "su-dalgalari")!.questions;
+  expect(inherited).toHaveLength(10);
+  for (const { answer } of inherited) {
+    await page.locator(".answer-options .answer").nth(answer).click();
+    await page.getByRole("button", { name: "Cevabı kontrol et", exact: true }).click();
+    await page.getByRole("button", { name: "Sonraki soru", exact: true }).click();
+  }
+  await expect(page.locator(".question-meta")).toContainText("Soru 11 / 11");
+  await expect(page.locator(".question-meta")).toContainText("Özgün öğretim soruları");
+  const given = page.getByRole("figure", { name: waterReflectionQuestionFigures.figure.title, exact: true });
+  const hint = page.getByRole("figure", { name: waterReflectionQuestionFigures.hintFigure.title, exact: true });
+  const [angle, table] = waterReflectionQuestionFigures.stepFigures.map(({ title }) => page.getByRole("figure", { name: title, exact: true }));
+  const drawing = given.getByRole("img");
+  await expect(drawing).toHaveAccessibleDescription(/35 derece.*2 santimetre/);
+  await expect(given.getByText("35°", { exact: true })).toBeVisible();
+  await expect(given.getByText("2 cm", { exact: true })).toBeVisible();
+  await expect(hint).toHaveCount(0);
+  await expect(angle).toHaveCount(0);
+  await expect(table).toHaveCount(0);
+  expect(await drawing.evaluate((svg) => {
+    const view = (svg as unknown as SVGSVGElement).viewBox.baseVal;
+    const labels = [...svg.querySelectorAll("text")].map((element) => ({ text: element.textContent, box: element.getBBox() }));
+    const outside = labels.filter(({ box }) => box.x < view.x || box.y < view.y || box.x + box.width > view.x + view.width || box.y + box.height > view.y + view.height).map(({ text }) => text);
+    const overlap = labels.flatMap(({ box: a, text }, i) => labels.slice(i + 1).filter(({ box: b }) => a.x < b.x + b.width && a.x + a.width > b.x && a.y < b.y + b.height && a.y + a.height > b.y).map(other => [text, other.text]));
+    return { outside, overlap };
+  })).toEqual({ outside: [], overlap: [] });
+  await drawing.screenshot({ path: info.outputPath("water-reflection-question136.png") });
+
+  const before = await storage(page);
+  await page.getByRole("button", { name: "İpucu al", exact: true }).press("Enter");
+  await expect.poll(async () => (await storage(page)).draft?.helpLevel).toBe(1);
+  await expect(hint.getByRole("row", { name: "İlerleme oku Dalga cephesine dik", exact: true })).toBeVisible();
+  await expect(angle).toHaveCount(0);
+  await page.getByRole("button", { name: "Adım adım çözüm", exact: true }).press("Enter");
+  await expect.poll(async () => (await storage(page)).draft?.helpLevel).toBe(2);
+  const next = page.getByRole("button", { name: "Sonraki adım", exact: true });
+  await expect(next).toBeEnabled();
+  await next.press("Enter");
+  await expect.poll(async () => (await storage(page)).draft?.helpLevel).toBe(3);
+  await expect(angle.getByRole("img")).toHaveAccessibleDescription(/35 derece.*55 derece/);
+  await angle.getByRole("img").screenshot({ path: info.outputPath("water-reflection-question136-solution.png") });
+  await expect(table).toHaveCount(0);
+  await expect(next).toBeEnabled();
+  await next.press("Enter");
+  await expect.poll(async () => (await storage(page)).draft?.helpLevel).toBe(4);
+  await expect(table.getByRole("row", { name: "2 cm 2 cm Aynı sürat ve kaynak frekansı", exact: true })).toBeVisible();
+  expect(learning({ ...(await storage(page)), draft: before.draft })).toEqual(learning(before));
+
+  await page.reload();
+  await expect(table).toBeVisible();
+  await page.locator(".answer-options .answer").first().click();
+  await page.getByRole("button", { name: "Cevabı kontrol et", exact: true }).click();
+  await page.getByRole("button", { name: "Çalışmayı kaydet", exact: true }).click();
+  await expect(page.locator(".result-page")).toBeVisible();
+  const saved = await storage(page);
+  const response = saved.sessions.at(-1)!.responses.at(-1)!;
+  expect(response).toMatchObject({ questionId: waterReflectionQuestion.id, selected: 0, correct: false, assisted: true });
+  expect(response.visibleFigureRevision).toMatch(/^[a-f0-9]{14}$/);
+  expect(response.solutionFigureRevision).toMatch(/^[a-f0-9]{14}$/);
+
+  await page.getByRole("button", { name: "Menüyü aç", exact: true }).press("Enter");
+  await page.locator(".sidebar").getByRole("button", { name: "Yanlışlarım", exact: true }).press("Enter");
+  const card = page.locator(".mistake-card").filter({ has: given });
+  await expect(card.getByRole("img")).toBeVisible();
+  const pocket = page.getByRole("region", { name: "Sınav sabahı cep kitapçığı", exact: true });
+  const printedFigure = pocket.getByRole("figure", { name: waterReflectionQuestionFigures.figure.title, exact: true });
+  await expect(printedFigure.getByRole("img")).toBeVisible();
+  await page.evaluate(() => { window.print = () => {}; });
+  await pocket.getByRole("button", { name: "Yazdır", exact: true }).click();
+  await page.emulateMedia({ media: "print" });
+  await expect(printedFigure.getByRole("img")).toBeVisible();
+  await expect(card).toBeHidden();
+  const path = info.outputPath("water-reflection-question136-booklet.pdf");
+  const pdf = await page.pdf({ format: "A4", path });
+  expect(pdf.subarray(0, 4).toString()).toBe("%PDF");
+  await page.evaluate(() => window.dispatchEvent(new Event("afterprint")));
+  await page.emulateMedia({ media: "screen" });
+  expect((await storage(page)).sessions).toEqual(saved.sessions);
+});

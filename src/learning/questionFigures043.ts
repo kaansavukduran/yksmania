@@ -23,6 +23,7 @@ import { airBuoyancyQuestion, airBuoyancyQuestionFigures } from "./airBuoyancyQu
 import { springPulseQuestion, springPulseQuestionFigures } from "./springPulseQuestion107";
 import { waveDirectionsFigures, waveDirectionsQuestion } from "./waveDirectionsQuestion118";
 import { springOverlapQuestion, springOverlapQuestionFigures } from "./springOverlapQuestion128";
+import { waterReflectionQuestion, waterReflectionQuestionFigures } from "./waterReflectionQuestion136";
 import { springDensityQuestion, springDensityQuestionFigures } from "./springDensityQuestion124";
 import {
   inverseTranslationFigures,
@@ -268,6 +269,16 @@ const overlapQuestion = {
   guidance: springOverlapQuestion.guidance,
 };
 
+const waterQuestion = {
+  id: waterReflectionQuestion.id,
+  prompt: waterReflectionQuestion.prompt.tr,
+  options: waterReflectionQuestion.options.map((option) => option.tr),
+  answer: waterReflectionQuestion.answer,
+  hint: waterReflectionQuestion.hint.tr,
+  explanation: waterReflectionQuestion.explanation.tr,
+  guidance: waterReflectionQuestion.guidance,
+};
+
 const densityQuestion = {
   id: springDensityQuestion.id,
   prompt: springDensityQuestion.prompt.tr,
@@ -396,6 +407,14 @@ const bindings = new Map<string, FigureBinding>([
     pageLabel: "Fiziksel 157. sayfa, basılı 155",
     itemLabel: "Simetrik atmaların üst üste binmesi, özgün öğretim sorusu",
     figures: springOverlapQuestionFigures,
+  }],
+  [waterQuestion.id, {
+    stemRevision: stemRevision(waterQuestion),
+    helpRevision: helpRevision(waterQuestion, waterQuestion.guidance),
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 159. sayfa, basılı 157",
+    itemLabel: "Düz engelde cephe ve ilerleme açısı, özgün öğretim sorusu",
+    figures: waterReflectionQuestionFigures,
   }],
   [densityQuestion.id, {
     stemRevision: stemRevision(densityQuestion),
