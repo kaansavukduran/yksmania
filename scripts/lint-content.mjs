@@ -31,6 +31,7 @@ export const CONTENT_CEILINGS = {
   missingHint: 0,
   /** Cards without a step-by-step solution (help panels < 3). */
   missingSteps: 0,
+  missingRequiredVisuals: 0,
 };
 const LABELS = {
   missingReasons: "Eksik çeldirici açıklaması",
@@ -39,6 +40,7 @@ const LABELS = {
   orphanTopics: "Yetim müfredat konusu",
   missingHint: "İpucu olmayan kart",
   missingSteps: "Adım adım çözümü olmayan kart",
+  missingRequiredVisuals: "Gereken kaynak görseli eksik olan kart",
 };
 
 /** Compares an audit report with the ceilings. */

@@ -311,6 +311,7 @@ const giris: Record<string, FigureDef> = {
     })),
     draw: (_value, _step, pick = -1) => {
       const selected = waveClassificationExamples[pick];
+      const figureChoices = ["Tel", "Ses", "Işık", "Su", "P dalgası", "S dalgası"];
       const groups = [
         { title: "Ortam", y: 1.55, endings: ["Mekanik", "Elektromanyetik"], current: selected?.medium },
         { title: "Titreşim yönü", y: -1.55, endings: ["Enine", "Boyuna"], current: selected?.direction },
@@ -335,6 +336,7 @@ const giris: Record<string, FigureDef> = {
               ];
             }),
           ]),
+          ...figureChoices.map((label, index) => txt(v(0.7 + (index % 3) * 3.9, -3.45 - Math.floor(index / 3) * 0.9), label, "c", { pick: index, small: true, bold: index === pick })),
         ],
       };
     },

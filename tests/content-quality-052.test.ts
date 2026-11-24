@@ -9,6 +9,8 @@ import { lessonTopic, studyTopics } from "../src/domain/studyPlan";
 import { localizedQuestionView, clarifiedQuestionView } from "../src/domain/questionPresentation";
 import { helpPanels, resolvedGuidance } from "../src/learning/questionHelp";
 import { sourceQuestionPresentation } from "../src/learning/sourceExercises024";
+import { missingRequiredSourceVisuals } from "../src/learning/sourceVisualRevisions";
+import { requiredSourceVisuals } from "../src/learning/sourceVisualRequirements";
 import type { HelpQuestion } from "../src/domain/questionHelpModel";
 // Ceilings live with the lint script so `npm run check` and this test share them.
 import { CONTENT_CEILINGS } from "../scripts/lint-content.mjs";
@@ -27,7 +29,9 @@ import { CONTENT_CEILINGS } from "../scripts/lint-content.mjs";
 const text = (v: unknown) => (typeof v === "string" ? v : ((v as { tr?: string } | undefined)?.tr ?? ""));
 
 type Card = HelpQuestion & { lessonId: string; hasFigure: boolean };
-const cards: Card[] = lessons.flatMap((lesson) =>
+const allVisualRoles = ["stem", "options", "hint", "solution"] as const;
+type VisualRole = typeof allVisualRoles[number];
+const cards = lessons.flatMap((lesson) =>
   lesson.questions.map((raw) => {
     const q = localizedQuestionView(raw) as unknown as Record<string, unknown> & { id: string; answer: number; options: unknown[] };
     const card: HelpQuestion = {
@@ -42,9 +46,35 @@ const cards: Card[] = lessons.flatMap((lesson) =>
     };
     const view = clarifiedQuestionView(card);
     const presentation = sourceQuestionPresentation(view);
-    return { ...view, lessonId: lesson.id, hasFigure: Boolean((raw as { figure?: unknown }).figure || presentation?.figure) };
+    const hasFigure = Boolean((raw as { figure?: unknown }).figure || presentation?.figure);
+    const visualRoles = {
+      stem: hasFigure,
+      options: Boolean(presentation?.optionFigures?.some(Boolean)),
+      hint: Boolean(presentation?.hintFigure),
+      solution: Boolean(presentation?.explanationFigure || presentation?.stepFigures?.some(Boolean)),
+    };
+    const required = requiredSourceVisuals.get(raw.id);
+    return { ...view, lessonId: lesson.id, subjectId: lesson.subjectId, hasFigure, visualRoles,
+      hasRequiredVisuals: Boolean(required), missingVisualRoles: missingRequiredSourceVisuals(required, presentation) };
   }),
 );
+
+function visualAudit() {
+  const bySubject: Record<string, Record<VisualRole | "total" | "anyVisual" | "required", number>> = {};
+  const missing: { id: string; lessonId: string; kind: string; detail: string }[] = [];
+  const uncovered = new Set(requiredSourceVisuals.keys());
+  for (const card of cards) {
+    const totals = bySubject[card.subjectId] ??= { total: 0, anyVisual: 0, required: 0, stem: 0, options: 0, hint: 0, solution: 0 };
+    totals.total++;
+    if (allVisualRoles.some((role) => card.visualRoles[role])) totals.anyVisual++;
+    for (const role of allVisualRoles) if (card.visualRoles[role]) totals[role]++;
+    if (card.hasRequiredVisuals) totals.required++;
+    uncovered.delete(card.id);
+    if (card.missingVisualRoles.length) missing.push({ id: card.id, lessonId: card.lessonId, kind: "gereken kaynak görseli eksik", detail: card.missingVisualRoles.join(", ") });
+  }
+  for (const id of uncovered) missing.push({ id, lessonId: "", kind: "gereken kaynak görseli eksik", detail: "soru kartı bulunamadı" });
+  return { bySubject, missing };
+}
 
 // Wording that points outside the card.
 const CROSS_CARD = /(?<!\p{L})(bir )?önceki (soru|sayfa|bölüm|kart)|sonraki soru|yukarıdaki (soru|sayfa)|önceki (örnek|etkinlik)/iu;
@@ -111,10 +141,12 @@ function audit() {
       .map(([lesson, topic]) => `${lesson} → ${topic}: bağlı konu yok`),
   ];
   for (const o of orphans) findings.push({ id: o.split(":")[0], lessonId: "", kind: "yetim müfredat konusu", detail: o });
+  const visual = visualAudit();
   return {
     cards: cards.length,
-    counts: { missingReasons, emptyReasons, dependent, orphanTopics: orphans.length, missingHint, missingSteps },
-    findings,
+    counts: { missingReasons, emptyReasons, dependent, orphanTopics: orphans.length, missingHint, missingSteps, missingRequiredVisuals: visual.missing.length },
+    findings: [...findings, ...visual.missing],
+    visualCardsBySubject: visual.bySubject,
   };
 }
 
@@ -140,5 +172,15 @@ describe("052 içerik kalite denetimi", () => {
   it("finds the cards, reasons and topics it counts", () => {
     expect(report.cards).toBeGreaterThan(1000);
     expect(details.length).toBe(479);
+  });
+  it("fails an absent required role, including a missing source image identity or a single option", () => {
+    const source = { shortLabel: "Özgün", title: "Fizik", pageLabel: "151", itemLabel: "Tek atma" };
+    const fig = { kind: "math", title: "İşlem", alt: "a", expression: { kind: "text", text: "a" } } as const;
+    const image = { kind: "image", title: "Çizim", alt: "Yay", src: "/ornek.png", width: 200, height: 80 } as const;
+    const roles = { stem: true, hint: true, optionIndexes: [0, 1], stepIndexes: [0, 1] } as const;
+    const visible = { source, figure: image, optionFigures: [fig], stepFigures: [fig] };
+    expect(missingRequiredSourceVisuals(roles, visible)).toEqual(["soru kökü", "ipucu", "2. şık", "2. çözüm adımı"]);
+    expect(missingRequiredSourceVisuals(roles, { ...visible, figure: { ...image, assetSHA256: "f".repeat(64) }, hintFigure: fig, optionFigures: [fig, fig], stepFigures: [fig, fig] })).toEqual([]);
+    expect(Object.values(report.visualCardsBySubject).reduce((sum, row) => sum + row.total, 0)).toBe(cards.length);
   });
 });

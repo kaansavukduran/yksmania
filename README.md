@@ -4,6 +4,8 @@
 
 **Son yayımlanan web ve masaüstü sürümü 0.42.0**. Açıortayları ve ortak kenarlı üçgenleri çevrimdışı inceleyebilirsin. [Windows ve Linux 0.42](https://github.com/kaansavukduran/yksmania/releases/tag/v0.42.0-alpha.1) · [Android 0.42 kişisel deneme arşivi](https://github.com/kaansavukduran/yksmania/actions/runs/45187782506/artifacts/14823994107)
 
+**0.108.0 adayı** soru görselinin kök, şık, ipucu ve çözüm rollerini ayrı denetliyor. Dalga sınıflandırmasında örnekler doğrudan çizimden de seçiliyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
+
 **0.107.0 adayı** tek yay atmasını, ayrı Kopya Kağıdı’nı ve çizimli alıştırmayı içeriyor. İpucu ve adım adım çözüm kendi görsellerini açıyor. [Aday kapsamı](docs/RELEASE_ALPHA.md)
 
 **0.106.0 adayı** diyapazonun havada oluşturduğu sıkışma ve seyrelmeyi hareketli çizimle gösteriyor. Kopya Kağıdı’nda boyuna dalga örneği var. [Aday kapsamı](docs/RELEASE_ALPHA.md)

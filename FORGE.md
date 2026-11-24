@@ -1,3 +1,11 @@
+# Soru görsellerinin içerik denetimi · 0.108.0 adayı
+
+İçerik denetimi, gereksinimi kaydedilmiş 10 kartta kök, ilgili şıklar, ipucu ve çözüm rollerini ayrı kontrol ediyor. Çizimi eksik şık, eksik çözüm adımı veya kaynak dosya kimliği bulunmayan görüntü denetimi durduruyor. Görsel gereksinimleri, geçmiş soru kayıtlarının dışında tutuluyor. Dalga sınıflandırmasındaki altı örneğe çizimden veya klavyeyle ulaşılabiliyor.
+
+6.665 normal çalışma kartında 33 kartın en az bir kayıtlı görsel rolü var. 32 kartta kök, bir kartta görselli şıklar, 16 kartta ipucu ve 16 kartta çözüm görseli var. Aynı kart birden çok rolde sayılabilir. Bu sayımın paydası uygulamanın kartları. Kaynak PDF’lerde görsel gerektiren bütün maddeler için sayım sürüyor.
+
+Check, derleme, 79 odaklı birim, dokuz gerçek tarayıcı ve dar ekran görsel incelemesi geçti. Sonuç, yanlış inceleme ve yazdırma dahil. Eski soru ve ders hash’leri korunarak tarihsel örneklemden yalnız 0.107’de eklenen soru kimliği çıkarıldı.
+
 # Sabit uçlu yayda tek atma · 0.107.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 151, basılı 149. Sabit uca varmadan ilerleyen atmanın genişliği 3 m kalıyor. P kendi düşey çizgisinde salınıyor. Ayrı Kopya Kağıdı yarım saniye örneğini içeriyor. Özgün soruda hazırlama süresi kökteki çizimden hesaplanıyor. İpucu genişliğin nasıl okunacağını, çözüm adımları ise tablo ve hesabı açıyor.

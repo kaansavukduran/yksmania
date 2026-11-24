@@ -1,0 +1,24 @@
+export interface RequiredSourceVisuals {
+  stem?: true;
+  optionIndexes?: readonly number[];
+  hint?: true;
+  explanation?: true;
+  stepIndexes?: readonly number[];
+}
+
+// These are the reviewed roles the current app must display. Keep this list
+// independent of the renderer's figure bindings and of frozen question data.
+const requirements = new Map<string, RequiredSourceVisuals>([
+  ["yay-dalgalari-atma-uretme-suresi", { stem: true, hint: true, stepIndexes: [0, 1] }],
+  ["sivilarin-kaldirma-kuvveti-havada-balon", { stem: true, hint: true, stepIndexes: [0, 1, 2] }],
+  ["newton-kuvvet-ivme-grafik", { stem: true, hint: true, stepIndexes: [0, 1] }],
+  ["newton-sabit-kuvvet-hiz-zaman-gorselli", { optionIndexes: [0, 1, 2, 3], hint: true, stepIndexes: [0, 1] }],
+  ["source-ogm-uslu-ifadeler-p01-q01", { stem: true, hint: true, explanation: true }],
+  ["source-ogm-uslu-ifadeler-p01-q02", { stem: true, hint: true, explanation: true }],
+  ["source-ogm-uslu-ifadeler-p01-q03", { stem: true, hint: true, explanation: true }],
+  ["source-ogm-uslu-ifadeler-p01-q04", { stem: true, hint: true, explanation: true }],
+  ["source-ogm-uslu-ifadeler-p01-q05", { stem: true, hint: true, explanation: true }],
+  ["source-ogm-uslu-ifadeler-p01-q06", { stem: true, hint: true, explanation: true }],
+]);
+
+export const requiredSourceVisuals: ReadonlyMap<string, RequiredSourceVisuals> = requirements;

@@ -1,8 +1,8 @@
 {
-  "version": "0.107.0",
+  "version": "0.108.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Yayın tek atmasını zamanla ilerlet. İşaretli noktanın salınımını ve atmanın genişliğini karşılaştır. Çizimli alıştırmada atmanın üretim süresini hesapla.",
-    "en": "Move a single pulse along a spring. Compare the motion of a marked point with the pulse width, then read the diagram to calculate the pulse duration."
+    "tr": "Kaynak görseli beklenen sorularda kök, şık, ipucu ve çözüm çizimleri ayrı denetleniyor. Bir görsel yanlış sürüme bağlıysa içerik denetimi bunu yakalıyor.",
+    "en": "Required diagrams are checked separately in question stems, options, hints and solutions. The content check catches missing diagrams or mismatched revisions."
   }
 }

@@ -1,4 +1,5 @@
 import { identityHash, type HelpQuestion } from "../domain/questionHelpModel";
+import type { RequiredSourceVisuals } from "./sourceVisualRequirements";
 import type { SourceQuestionFigureSpec } from "./SourceQuestionFigure";
 import type { SourceAttribution } from "./sourceExercises024";
 
@@ -7,6 +8,7 @@ type SourceVisuals = {
   figure?: SourceQuestionFigureSpec;
   optionFigures?: readonly SourceQuestionFigureSpec[];
   optionFigureRevision?: string;
+  hintFigure?: SourceQuestionFigureSpec;
   explanationFigure?: SourceQuestionFigureSpec;
   stepFigures?: readonly SourceQuestionFigureSpec[];
 };
@@ -20,6 +22,20 @@ function figureIdentity(figure?: SourceQuestionFigureSpec) {
   if (!figure || figure.kind !== "image") return figure;
   const { src: _src, ...identity } = figure;
   return /^[0-9a-f]{64}$/.test(identity.assetSHA256 ?? "") ? identity : undefined;
+}
+
+export function missingRequiredSourceVisuals(requirements: RequiredSourceVisuals | undefined, visuals: SourceVisuals | undefined) {
+  const missing: string[] = [];
+  if (requirements?.stem && !figureIdentity(visuals?.figure)) missing.push("soru kökü");
+  if (requirements?.hint && !figureIdentity(visuals?.hintFigure)) missing.push("ipucu");
+  if (requirements?.explanation && !figureIdentity(visuals?.explanationFigure)) missing.push("çözüm");
+  for (const index of requirements?.optionIndexes ?? []) {
+    if (!figureIdentity(visuals?.optionFigures?.[index])) missing.push(`${index + 1}. şık`);
+  }
+  for (const index of requirements?.stepIndexes ?? []) {
+    if (!figureIdentity(visuals?.stepFigures?.[index])) missing.push(`${index + 1}. çözüm adımı`);
+  }
+  return missing;
 }
 
 export function sourceVisualRevisions(question: HelpQuestion, visuals: SourceVisuals | undefined): FigureRevisions {

@@ -50,8 +50,8 @@ it("preserves all BBB lesson, question, guide, sheet values and complete study o
 
 it("keeps two independent companions with 107 self-contained fully guided cards", () => {
   expect(lessons).toHaveLength(546);
-  expect(lessons.flatMap((v) => v.questions)).toHaveLength(6664);
-  expect(new Set(lessons.flatMap((v) => v.questions).map((v) => v.id)).size).toBe(6664);
+  expect(lessons.flatMap((v) => v.questions)).toHaveLength(6665);
+  expect(new Set(lessons.flatMap((v) => v.questions).map((v) => v.id)).size).toBe(6665);
   expect(lessonGuides.size).toBe(510);
   expect(builtInCheatSheets.size).toBe(510);
   expect(studyTopics).toHaveLength(510);

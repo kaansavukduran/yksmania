@@ -5,6 +5,7 @@ export declare const CONTENT_CEILINGS: {
   orphanTopics: number;
   missingHint: number;
   missingSteps: number;
+  missingRequiredVisuals: number;
 };
 export declare function compareAudit(
   counts: Record<string, number>,

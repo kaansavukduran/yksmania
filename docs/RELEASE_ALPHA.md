@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.108.0 · Soru görsellerinde eksik rol denetimi
+
+Yayın adayı. Kaynakta görsel gerektirdiği kaydedilen sorularda kök, şık, ipucu ve çözüm ayrı denetleniyor. Dalga sınıflandırmasındaki her örneği çizimdeki düğmesinden de seçebilirsin.
+
 # ÖSYM Mania 0.107.0 · Sabit uçlu yayda tek atma
 
 Yayın adayı. Zamanı ilerletip atmanın genişliğini ve P noktasının hareketini karşılaştır. Kopya Kağıdı’nda yarım saniye örneğini, alıştırmada zaman hesabının ipucu ve çözüm çizimlerini aç.

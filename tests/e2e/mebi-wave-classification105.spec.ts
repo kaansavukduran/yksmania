@@ -24,7 +24,8 @@ test("dalga ağacında klavyeyle ortam ve titreşim yönü birlikte seçilir", a
   await expect(figure.locator(".sf-pick-card")).toContainText("Mekanik · boyuna");
   expect(await svg.innerHTML()).not.toBe(original);
   await svg.screenshot({ path: info.outputPath("wave-classification105-sound.png") });
-  await figure.getByRole("button", { name: "Boşlukta ışık", exact: true }).press("Enter");
+  await svg.getByText("Işık", { exact: true }).click();
+  await expect(figure.getByRole("button", { name: "Boşlukta ışık", exact: true })).toHaveAttribute("aria-pressed", "true");
   await expect(sound).toHaveAttribute("aria-pressed", "false");
   await expect(figure.locator(".sf-pick-card")).toContainText("Elektromanyetik · enine");
   await figure.getByRole("button", { name: "Su yüzeyi", exact: true }).press("Enter");
