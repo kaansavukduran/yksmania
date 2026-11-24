@@ -1,3 +1,11 @@
+# Görev listesindeki video bağlantıları · 0.147.0 adayı
+
+Matematik ve geometride 14 başlık, 10 mevcut dersin video alanına yerleşti. Kaynaktaki 84 konu ve video ilişkisi korundu. Bunlar katalogda daha önce bulunmayan 79 farklı bağlantı içeriyor. Önerilen/alternatif rolleri, açıklamalar ve video başlangıç zamanları kaynakla karşılaştırıldı. Katalogda 514 başlık ve videolu 509 ders kimliği var.
+
+Yerel içerik denetimi ve Vite derlemesi geçti. Tarayıcıda 10 dersin bağlantıları ve alt konu etiketleri normal ders girişinden açıldı. Dört mevcut video ve çevrimdışı kayıt regresyonuyla birlikte beş tarayıcı testi geçti.
+
+Sıradaki iş TYT ve AYT Sayısal konu kapsamını anlatım, çözümlü örnek, Kopya Kağıdı ve video üzerinden çıkarmaktır.
+
 # TYT Felsefe ve Din Kültürü kopya kâğıtları · 0.146.0 adayı
 
 Forge069: TYT Felsefe 013, 017 ve Din Kültürü 017, 018 kopya kâğıtları 16 etkileşimli figür ve 4 taktik olarak aktarıldı (kopya 137 / 517). Din Kültürü figürleri betimleyici ve tarafsız; ÖSYM atıfları kâğıtların beyanına dayanıyor.

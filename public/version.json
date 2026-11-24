@@ -1,8 +1,8 @@
 {
-  "version": "0.146.0",
+  "version": "0.147.0",
   "channel": "alpha",
   "notes": {
-    "tr": "TYT Felsefe'de Rönesans ve çağdaş felsefe, TYT Din Kültürü'nde Anadolu'da İslam ve tasavvufi yorumlar kopya kâğıtları argüman adımları, düşünür tabloları ve karşılaştırma figürleriyle açılıyor.",
-    "en": "Four TYT Philosophy and Religious Culture cheat sheets open as argument steps, thinker tables and comparison figures with tactics."
+    "tr": "Permütasyon, olasılık, üçgen, çember ve katı cisimler dahil 14 başlıkta, görev listesindeki önerilen ve alternatif videolar artık ilgili konu anlatımının altında açılıyor.",
+    "en": "Fourteen mathematics and geometry topics now include the recommended and alternative video links from the study list."
   }
 }
