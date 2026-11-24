@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.96.0 · Taşırma kabında üç denge
+
+Yayın adayı. Blok yoğunluğunu değiştirip taşan suyu ve kuvvetleri karşılaştır. Kopya Kağıdı’nda su ve taban desteğinin ağırlığı nasıl paylaştığını adım adım incele.
+
 # ÖSYM Mania 0.95.0 · Tam batık blokta kaldırma kuvveti
 
 Yayın adayı. Bloğu aşağı indir ve üst, alt ve yan kuvvetleri karşılaştır. Kopya Kağıdı’nda iki derinliği hesapla. Özgün soruda litre dönüşümünü, yer değiştiren sıvının kütlesini ve kaldırma kuvvetini sırayla bul.

@@ -1,8 +1,8 @@
 {
-  "version": "0.95.0",
+  "version": "0.96.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Tam batık bloğu derine indir ve karşılıklı basınç oklarını karşılaştır. Kopya Kağıdı iki derinlikteki hesabı, özgün soru ise hacim dönüşümünü gösterir.",
-    "en": "Lower a submerged block and compare the pressure arrows. The cheat sheet compares two depths, and a practice question shows the volume conversion."
+    "tr": "Taşırma kabında yüzen, askıda kalan ve tabana inen bloğu karşılaştır. Kuvvet okları ve yan kaba dolan su aynı hesaba bağlıdır.",
+    "en": "Compare floating, suspended and bottom-supported blocks in an overflow tank. The force arrows and collected water use the same calculations."
   }
 }

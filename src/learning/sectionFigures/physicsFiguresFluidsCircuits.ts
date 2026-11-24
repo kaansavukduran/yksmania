@@ -39,6 +39,7 @@ import { mebiFlowSurfaceFigures } from "./mebiFlowSurfaceFigures";
 import { mebiAirFlowManometerFigures } from "./mebiAirFlowManometerFigures";
 import { mebiDoorSuctionFigures } from "./mebiDoorSuctionFigures";
 import { mebiArchimedesPressureFigures } from "./mebiArchimedesPressureFigures";
+import { mebiArchimedesOverflowFigures } from "./mebiArchimedesOverflowFigures";
 
 const rect = (x: number, y: number, w: number, h: number, tone: "a" | "b" | "c" | "muted" | "ink", fill = true): El =>
   poly([v(x, y), v(x + w, y), v(x + w, y + h), v(x, y + h)], { fill: fill ? (tone === "ink" ? "muted" : tone) : undefined, tone, thin: !fill });
@@ -209,6 +210,7 @@ const basinc: Record<string, FigureDef> = {
 
 const kaldirma: Record<string, FigureDef> = {
   ...mebiArchimedesPressureFigures,
+  ...mebiArchimedesOverflowFigures,
   "Arşimet: yer değiştiren sıvının ağırlığı": {
     caption:
       "Aynı 2 L hacimli cisim tamamen batık: suda Fk = 1000·10·0,002 = 20 N, yağda (800 kg/m³) 16 N. Formüldeki yoğunluk cismin değil sıvınındır.",
@@ -299,22 +301,6 @@ const kaldirma: Record<string, FigureDef> = {
         rect(3.8, 0.6, 1.4, 1.2, "ink"),
         ...force(v(1.5, 4.4), v(0, 0.9), "Fk", "a", "e"),
         ...force(v(4.5, 1.8), v(0, 0.9), "Fk (aynı)", "a", "e"),
-      ],
-    }),
-  },
-  "Taşırma kabında başlangıç seviyesi önemlidir": {
-    caption:
-      "Ağzına kadar dolu kaba bırakılan cisim yüzüyorsa taşan suyun ağırlığı cismin ağırlığına eşittir; batıyorsa taşan su, cismin ağırlığından azdır.",
-    alt: "Ağzına kadar dolu taşırma kabında yüzen blok; yan oluktan taşan su kaba akıyor.",
-    draw: () => ({
-      els: [
-        ...water(0, 0, 4, 4),
-        tank(0, 0, 4, 4),
-        poly([v(4, 3.8), v(5.2, 3.4), v(5.2, 3.3), v(4, 3.6)], { fill: "b", tone: "b", thin: true }),
-        poly([v(5.5, 0), v(7.5, 0), v(7.5, 1.6), v(5.5, 1.6)], { open: true }),
-        rect(5.5, 0, 2, 0.8, "b"),
-        rect(1.2, 3.2, 1.6, 1.2, "ink"),
-        txt(v(6.5, -0.5), "taşan su: G kadar", "c", { small: true, tone: "b" }),
       ],
     }),
   },

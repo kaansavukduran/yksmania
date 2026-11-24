@@ -19,6 +19,7 @@ import { flowSurfaceSection, umbrellaPressureExample } from "../mebiFlowSurfaces
 import { airFlowManometerExample, airFlowManometerSection } from "../mebiAirFlowManometer";
 import { doorPressureSection, liquidSuctionExample, liquidSuctionSection } from "../mebiDoorSuction";
 import { submergedBlockExample, submergedBlockSection, submergedBlockTitle } from "../mebiArchimedesPressure";
+import { overflowExample, overflowSection, overflowTitle } from "../mebiArchimedesOverflow";
 import { phasePlasmaExample, phasePlasmaSection } from "../phasePlasma068";
 import { balanceTheoryTitle, weightedBalanceExample, weightedBalanceTable } from "../weightedThermalBalance067";
 import { heatingCurveExample, heatingCurveTable, heatingCurveTitle } from "../heatingCurve066";
@@ -412,9 +413,13 @@ export function studyGuide(lessonId: string) {
   if (guide?.id === "sivilarin-kaldirma-kuvveti") {
     return {
       ...guide,
-      sections: guide.sections.map((section) => section.title === submergedBlockTitle ? submergedBlockSection : section),
-      examples: [submergedBlockExample, ...guide.examples],
-      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 146, basılı 144. sayfadaki üst, alt ve iki yan yüz kuvveti ile Arşimet bağıntısı karşılaştırıldı. Çizimin sayısal değerleri özgün örnektir.`,
+      sections: guide.sections.map((section) => {
+        if (section.title === submergedBlockTitle) return submergedBlockSection;
+        if (section.title === overflowTitle) return overflowSection;
+        return section;
+      }),
+      examples: [submergedBlockExample, overflowExample, ...guide.examples],
+      source: `${guide.source} MEBİ TYT Fizik Konu Özetleri fiziksel 146, basılı 144. sayfadaki üst, alt ve iki yan yüz kuvveti ile Arşimet bağıntısı karşılaştırıldı. Taşma oluğu ve üç denge örneği fiziksel 146–147, basılı 144–145. sayfalara dayanır. Çizimlerin sayısal değerleri özgün örnektir.`,
     };
   }
   if (guide?.id === "hal-degisimi") {
