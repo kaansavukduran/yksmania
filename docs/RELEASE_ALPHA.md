@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.176.0 · Üst üste iki noktasal kaynak
+
+Yayın adayı. K ve L’nin teğet ışınları ve ayrı gölge aralıkları, perdedeki ortak karanlığın hangi düzenle kaybolduğunu gösteriyor.
+
 # ÖSYM Mania 0.175.0 · Eş büyüklükte iki küre
 
 Yayın adayı. 8 ve 12 cm uzaklıktaki perdelerde tam gölgenin çapı ve yarı gölge alanı aynı teğet ışınlardan hesaplanıyor.

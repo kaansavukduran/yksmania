@@ -1,8 +1,8 @@
 {
-  "version": "0.175.0",
+  "version": "0.176.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Eş büyüklükte küresel kaynak ve engel için perdeyi uzaklaştır. Tam gölge çapı aynı kalırken yarı gölge alanının nasıl değiştiğini ders ve Kopya Kağıdı’nda karşılaştır.",
-    "en": "Move the screen when the spherical source and blocker have equal size. Compare the fixed umbra diameter and growing penumbra area."
+    "tr": "Üst üste duran iki noktasal kaynağı birbirinden uzaklaştır. Perdede tam gölgenin kaybolduğu ve iki yarı gölgenin ayrıldığı durumu adım adım incele.",
+    "en": "Separate two vertically stacked point sources and use their tangent rays to see where the full shadow vanishes and the two partial shadows separate."
   }
 }
