@@ -1,0 +1,7 @@
+# Öğretim içeriği
+
+- Konu ve ders kimliklerini [müfredat](../src/data/curriculum.json), [ayrıntılı konular](../src/data/detail-topics.json) ve [içerik kaydından](../src/domain/content.ts) oku. İlk çalışma sırası, onaylı çalışma kitabındaki 479 ayrıntılı başlığı izler. Kişisel çalışma kitabı ilerlemesi uygulama ilerlemesi sayılmaz. [Çalışma planı](../src/domain/studyPlan.ts)
+- [Rehberler](../src/learning/guides/index.ts) anlatım, örnek ve hatırlamayı sağlar. [Kopya Kağıdı](../src/learning/cheatsheetContent.ts) ayrı ekrandadır. [Video kataloğu](../src/learning/videoCatalog031.json) halka açık adresleri, ders kimliğini, öneri/alternatif rolünü ve zaman damgalarını korur.
+- Soruyu kendi kartından çözülebilir yaz. Pasajı, adlandırılmış noktaları ve gereken model/veri varsayımlarını ekle. YKS-015'te ortak metin beş paragraf sorusunun tamamında kökten önce gösterilir. Teori ve cümle keşfi aynı metni kullanır. [İçerik doğrulaması](../src/domain/questionContent.ts) · [QA](../docs/QA.md)
+- Özgün alıştırmaları özgün olarak etiketle. Öğretim, özet, soru ve denemeler yerleşiktir. Hazırlanmamış başlık açıkça kullanılamaz görünür. PDF, kaynak veya kitapçık yükleme akışı ekleme. Önceden kayıtlı özel dosyalar cihazda görünmeden korunur.
+- Yeni soruyu doğrudan Sorular ekranında, çevrimdışı ve mobilde dene. `npm run lint:content` içerik kontrolüdür. Sayaç değişiminde `npm run progress` çalıştır. [İşleme sayacı](../docs/ISLEME_SAYACI.md)
