@@ -231,6 +231,7 @@ import { religionFigures062Rulings } from "./religionFigures062Rulings";
 import { religionFigures062Values } from "./religionFigures062Values";
 import { religionFigures062Belief } from "./religionFigures062Belief";
 import { geometryFigures063Sheets } from "./geometryFigures063Sheets";
+import { mathFigures064Sheets } from "./mathFigures064Sheets";
 
 /*
  * Figure packs are merged per guide. A plain object spread replaced a whole
@@ -462,6 +463,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   mathFigures062TytAlgebra,
   mathFigures062TytCounting,
   geometryFigures063Sheets,
+  mathFigures064Sheets,
 ];
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {};
 for (const pack of figurePacks)
