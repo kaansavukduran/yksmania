@@ -25,7 +25,7 @@ test("Tacoma arşiv kareleri ve tabliye hareketi dar ekranda çevrimdışı aç�
     })).toEqual([640, 480]);
   }
   await expect(photographs.getByRole("link", { name: "Kamu malı", exact: true })).toHaveCount(2);
-  const imageButton = photographs.getByRole("button", { name: "Tacoma, tabliye bükülürken: görseli büyüt", exact: true });
+  const imageButton = photographs.getByRole("button", { name: "Bükülme: görseli büyüt", exact: true });
   await imageButton.press("Enter");
   const dialog = page.getByRole("dialog");
   await expect(dialog.getByRole("img")).toHaveAccessibleName(/tabliyesi belirgin biçimde bükülüyor/);

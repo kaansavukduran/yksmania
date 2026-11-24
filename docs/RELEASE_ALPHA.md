@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.166.0 · Işığın davranışı
+
+Yayın adayı. Işın, dalga ve foton modellerini deneylerdeki rolleriyle karşılaştır. Çift yarıkta dalga boyunu ve saçak aralığını değiştir. İki çözüm çiziminde dalgaların toplamını oku.
+
 # ÖSYM Mania 0.165.0 · Evde deprem hazırlığı
 
 Yayın adayı. Dolap ve yatak, korunma ile buluşma planı ve acil durum çantası ayrı çizimlerde. Ders ve Kopya Kağıdı hazırlık maddelerini seçilebilir tabloda gösteriyor.

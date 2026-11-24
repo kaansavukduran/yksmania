@@ -1,8 +1,8 @@
 {
-  "version": "0.165.0",
+  "version": "0.166.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Evde deprem hazırlığını oda düzeni, buluşma planı ve acil durum çantası çizimleriyle incele. Ders ve Kopya Kağıdı hazırlık tablosunu açıyor.",
-    "en": "Review household earthquake preparation with a secure room, meeting plan and emergency bag. The lesson and study sheet include the preparation checklist."
+    "tr": "Çift yarık çiziminde dalga boyunu değiştir ve saçak aralığını oku. Kopya Kağıdı aydınlık ve karanlık saçakların oluşumunu ayrı dalgalarla gösteriyor.",
+    "en": "Change wavelength in a double-slit diagram and read fringe spacing. The study sheet shows the two waves that form bright and dark fringes."
   }
 }

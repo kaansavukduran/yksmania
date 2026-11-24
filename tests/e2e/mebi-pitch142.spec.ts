@@ -27,9 +27,9 @@ test("iki gerçek kaynak fotoğrafı ve eşit süreli grafik çevrimdışı birl
   await expect(pair.getByRole("link", { name: "CC BY 2.0", exact: true })).toHaveAttribute("href", "https://creativecommons.org/licenses/by/2.0/");
   await expect(pair.getByRole("link", { name: "CC BY-SA 2.0", exact: true })).toHaveAttribute("href", "https://creativecommons.org/licenses/by-sa/2.0/");
   expect(await pair.evaluate(node => node.scrollWidth - node.clientWidth)).toBeLessThanOrEqual(1);
-  const lion = pair.getByRole("button", { name: "Aslan örneği: görseli büyüt", exact: true });
+  const lion = pair.getByRole("button", { name: "Aslan: görseli büyüt", exact: true });
   await expect(lion.getByText("Aslan", { exact: true })).toBeVisible();
-  const canaryLabel = pair.getByRole("button", { name: "Kanarya örneği: görseli büyüt", exact: true }).locator(".source-figure-zoom-label");
+  const canaryLabel = pair.getByRole("button", { name: "Kanarya: görseli büyüt", exact: true }).locator(".source-figure-zoom-label");
   expect(await canaryLabel.evaluate(node => {
     const text = [...node.childNodes].find(child => child.nodeType === Node.TEXT_NODE && child.textContent?.trim() === "Kanarya");
     if (!text) throw new Error("Kanarya düğme etiketi yok");

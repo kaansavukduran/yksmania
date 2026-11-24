@@ -13,7 +13,7 @@ test("ultrasonun gerçek fotoğrafı ve iki farklı yankı yolu çevrimdışı a
   const item = toc.getByRole("button", { name: ultrasoundTitle, exact: true });
   if (!(await item.isVisible())) await toc.getByText("İçindekiler", { exact: true }).press("Enter");
   await item.press("Enter");
-  const enlarge = page.getByRole("button", { name: "Cilde tutulan ultrason başlığı ve ekran: görseli büyüt", exact: true });
+  const enlarge = page.getByRole("button", { name: "Ultrason fotoğrafı: görseli büyüt", exact: true });
   const photo = enlarge.getByRole("img");
   await photo.scrollIntoViewIfNeeded();
   await expect.poll(() => photo.evaluate(node => {

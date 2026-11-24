@@ -13,7 +13,7 @@ test("Selimiye fotoğrafı çevrimdışı açılır ve salon çizimi iki ses yol
   const item = toc.getByRole("button", { name: roomAcousticsTitle, exact: true });
   if (!(await item.isVisible())) await toc.getByText("İçindekiler", { exact: true }).press("Enter");
   await item.press("Enter");
-  const enlarge = page.getByRole("button", { name: "Edirne Selimiye Camii’nin içi: görseli büyüt", exact: true });
+  const enlarge = page.getByRole("button", { name: "Selimiye’nin içi: görseli büyüt", exact: true });
   const image = enlarge.getByRole("img");
   await image.scrollIntoViewIfNeeded();
   await expect.poll(() => image.evaluate(node => {

@@ -179,7 +179,7 @@ function ImageFigure({
           type="button"
           ref={opener}
           className="source-figure-open"
-          aria-label={`${figure.title}: görseli büyüt`}
+          aria-label={`${imageLabel ?? figure.title}: görseli büyüt`}
           aria-describedby={descriptionId}
           onClick={() => {
             dialog.current?.showModal();

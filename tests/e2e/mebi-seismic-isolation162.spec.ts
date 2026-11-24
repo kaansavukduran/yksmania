@@ -13,13 +13,13 @@ test("real damage and bearing photos open with their own credits offline", async
   const photos = [
     {
       section: shakingDamageTitle,
-      title: "Gölbaşı’nda 2023 depremleri sonrası yapı hasarı",
+      label: "Gölbaşı yapı hasarı fotoğrafı",
       size: [4032, 3024], credit: "Adem", sourceRevision: "1115195060",
       description: /çelik donatılar dışarı çıkmış/,
     },
     {
       section: isolationTitle,
-      title: "Pasadena Belediye Binası’nda kolon altı izolatör",
+      label: "Kolon altı izolatör fotoğrafı",
       size: [1600, 1200], credit: "Keithalanporter", sourceRevision: "1058520311",
       description: /mavi üst ve alt plakaların arasında siyah silindir/,
     },
@@ -31,7 +31,9 @@ test("real damage and bearing photos open with their own credits offline", async
     const group = page.locator(".guide-section").filter({
       has: page.getByRole("heading", { name: photo.section, exact: true }),
     });
-    const enlarge = group.getByRole("button", { name: `${photo.title}: görseli büyüt`, exact: true });
+    const enlarge = group.getByRole("button", { name: `${photo.label}: görseli büyüt`, exact: true });
+    await expect(enlarge).toContainText(photo.label);
+    await expect(enlarge).toHaveAccessibleDescription(photo.description);
     const image = enlarge.getByRole("img");
     await image.scrollIntoViewIfNeeded();
     await expect.poll(() => image.evaluate(element => {
