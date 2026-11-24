@@ -198,7 +198,7 @@ Tablo, bu daldaki uygulama envanterini ve sürüm kayıtlarını gösterir. PDF 
 | TYT Geometri | 19 / 19 | 19 · 176 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 283 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
-| TYT Biyoloji | 36 / 36 | 36 · 139 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 0 |
+| TYT Biyoloji | 36 / 36 | 36 · 155 | 515 / 515 · %100,00 | 11 / 36 · %30,56 | 54 soru · 9 kitapçık | 0 |
 | TYT Tarih | 24 / 24 | 24 · 76 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 0 |
 | TYT Coğrafya | 40 / 40 | 40 · 175 | 400 / 400 · %100,00 | 9 / 40 · %22,50 | 45 soru · 9 kitapçık | 0 |
 | TYT Felsefe | 17 / 17 | 17 · 61 | 190 / 190 · %100,00 | 3 / 17 · %17,65 | 89 soru · 9 kitapçık | 0 |
@@ -209,19 +209,19 @@ Tablo, bu daldaki uygulama envanterini ve sürüm kayıtlarını gösterir. PDF 
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2291** | **6.669 / 6.669 · %100,00** | **125 / 517 · %24,18** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2307** | **6.669 / 6.669 · %100,00** | **129 / 517 · %24,95** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
-| Tarihsel dal kaydı: okunan veya eşlenen PDF / eski envanter | 135 / 8.981 |
+| Tarihsel dal kaydı: okunan veya eşlenen PDF / eski envanter | 139 / 8.981 |
 | Tarihsel 99_ÖSYM kaydı: uygulama karşılığı olan / 20 Kasım envanteri | 18 / 1.001 |
-| 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 90 |
+| 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 96 |
 | Kademeli çözüm paneli bulunan soru | 6.669 / 6.669 · %100,00 |
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
 | Ara hatırlama (mikro ritim): ders · soru | 505 / 510 · %99,02 · 3.052 soru |
 | Gösterim onarımı: soru alanı · ders paragrafı | 962 · 1.634 |
-| Kopya kâğıdı (kısmi aktarım / toplam) | 125 / 517 · %24,18 |
+| Kopya kâğıdı (kısmi aktarım / toplam) | 129 / 517 · %24,95 |
 | Resmî ana başlık · anlatımlı konu · hazır anlatım | 341 · 510 · 510 |
 | İleri ve kaynak soru seti (anlatımı ana konusunda) | 36 |
 <!-- ilerleme:bitir -->

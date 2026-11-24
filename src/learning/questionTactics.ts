@@ -2188,6 +2188,57 @@ export const questionTactics: QuestionTactic[] = [
       "2025 TYT Sosyal Bilimler 8 mantığı: verilen nedeni işaretli konumun gerçek koşuluyla sına.",
     ],
   },
+  {
+    id: "organel-fiil-kanit",
+    guides: ["hucre-organelleri"],
+    match: /organel|ribozom|golgi|lizozom|peroksizom|mitokondri|kloroplast|koful|ökaryot|prokaryot|çekirdek/i,
+    title: "Organeli fiilden, hücre tipini zarlı yapıdan bul",
+    steps: [
+      "Sorudaki fiili işaretle: bağ kurar ve sentezler → ribozom; değiştirir, sınıflar, paketler → Golgi; hidrolizle sindirir → lizozom ya da koful; H₂O₂'yi ayırır → peroksizom; enerji dönüştürür → mitokondri ya da kloroplast.",
+      "Bir işlevi yürütmek, o işin enzimini üretmek değildir: enzim proteinlerini ribozom ve ER yapar, Golgi paketler.",
+      "“Kesin ökaryot” için zarla çevrili çekirdek ya da zarlı organel ara; ribozom, hücre duvarı, kamçı ve halkasal DNA tek başına yetmez.",
+      "Yokluk iddialarını istisnayla sına: kök hücresinde kloroplast, olgun alyuvarda çekirdek yoktur; prokaryot mitokondrisiz ATP üretir.",
+      "Deney bulgusu tek organeli göstermiyorsa “uyumludur” de. 2023 TYT Fen 15 ve 2026 TYT Fen 17 mantığı: koful enzimini üretmez; mitokondri ökaryotluğu kanıtlar.",
+    ],
+  },
+  {
+    id: "besin-agi-son-ok",
+    guides: ["besin-zinciri-agi"],
+    match: /azal|art|kaldır|ortadan|yok olur|etki|baskı|doğrudan|dolaylı/i,
+    title: "Son oku ve neden zincirini ayrı yaz",
+    steps: [
+      "Doğrudan ilişki için yalnız hedefe gelen son oka bak; araya basamak giren yol dolaylı kaynaktır.",
+      "Bir tür azalınca önce kesin değişeni yaz: hangi oklar kalkar, hangi avlanma ya da tüketim baskısı değişir.",
+      "Dolaylı etkiyi basamak basamak yaz (avcı azalır → av artabilir → avın besini azalabilir) ve “diğer koşullar sabit” varsayımını açıkça koy.",
+      "Alternatif besin, başka avcı, göç ve kaynak sınırı yönü değiştirebilir; bağlantıdan kesin sayı ya da süre çıkarma.",
+    ],
+  },
+  {
+    id: "siniflandirma-yon-kapsam",
+    guides: ["canlilarin-siniflandirilmasi"],
+    match: /basamak|takson|cins|familya|takım|âlem|tür|sınıflandır|ad/i,
+    title: "Basamakta yönü, kapsamı ve kesinliği ayır",
+    steps: [
+      "Yön okunu yaz: üst âlemden türe inerken kapsam ve çeşitlilik azalır, ortak özellik ve akrabalık artar.",
+      "Aynı alt takson, üstündeki bütün basamakları kesin paylaştırır; alttaki basamakları, kromozom sayısını, yaşam alanını ya da verimli dölü paylaştırmaz.",
+      "İkili adı cins | tamamlayıcı ad diye böl; aynı ikinci sözcük aynı tür ya da cins demek değildir.",
+      "“Hepsi, kesinlikle, daima” iddiasını koşullarını taşıyan tek gerçek karşı örnekle sına; karşı örnek yalnız o iddiayı bozar.",
+      "2020, 2021 ve 2024 TYT Fen 17 mantığı: takson üye sayısı eşit değildir, aynı cins kromozom eşitliği getirmez, aşağı inildikçe ortaklık artar.",
+    ],
+  },
+  {
+    id: "sapma-degisken-sec",
+    guides: ["mendelden-sapmalar"],
+    match: /baskın|alel|genotip|fenotip|lokus|oran|çaprazla/i,
+    title: "Önce hangi Mendel varsayımının değiştiğini yaz",
+    steps: [
+      "Fenotip sözlüğünü kur: heterozigot baskınla aynı mı (tam), ara mı (eksik), iki işaret birlikte mi (eş baskınlık)?",
+      "Genotip oranını gametlerden bul; fenotip oranı ancak sözlükle çıkar. Rr × Rr genotipte her zaman 1:2:1'dir.",
+      "Çok alellilikte birey yine iki alel taşır; tek lokusta genotip çeşidi n(n + 1)/2, iki bağımsız lokusta çarpım ancak bütün birleşimler mümkünse.",
+      "Bir gen iki özelliği etkiliyorsa pleiotropi; bir lokus ötekini örtüyorsa epistazi. Bağımsızlık verilmeden olasılıkları çarpma.",
+      "2016 LYS Biyoloji 19 mantığı: üçer alelli iki lokusta 6 × 6 = 36 genotip; 3 × 3 = 9 alel sayısını genotip sanmaktır.",
+    ],
+  },
 ];
 
 // Method tactics from the tactic library join the topic tactics in hints.
