@@ -1,8 +1,8 @@
 {
-  "version": "0.166.0",
+  "version": "0.167.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Çift yarık çiziminde dalga boyunu değiştir ve saçak aralığını oku. Kopya Kağıdı aydınlık ve karanlık saçakların oluşumunu ayrı dalgalarla gösteriyor.",
-    "en": "Change wavelength in a double-slit diagram and read fringe spacing. The study sheet shows the two waves that form bright and dark fringes."
+    "tr": "Candela, lümen ve lüksü lamba, küre ve dönen yüzey çizimlerinde ayır. Yüzeyin açısını değiştir ve gelen akıyı Kopya Kağıdı’ndaki iki adımla çöz.",
+    "en": "Compare candela, lumen and lux with a lamp, sphere and tilting surface. Work through the flux at two angles in the study sheet."
   }
 }

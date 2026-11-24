@@ -1,5 +1,7 @@
 import { ang, ball, circle, poly, seg, txt, v, vec, type El, type FigureDef, type V } from "./figureKit";
 import { lightModelsFigures } from "./mebiLightModelsFigures";
+import { photometryUnitsFigures } from "./mebiPhotometryUnitsFigures";
+import { parallelFluxFigures } from "./mebiParallelFluxFigures";
 
 /*
  * Işık bilgisi: I (cd), Φ (lm), E (lx). The inverse-square figure shows the
@@ -161,5 +163,7 @@ export const physicsFiguresLight: Record<string, Record<string, FigureDef>> = {
     "Ters kareyi geometriden türet": inverse,
     "Açıyı yüzeyle değil normalle ölç": tilt,
     ...lightModelsFigures,
+    ...photometryUnitsFigures,
+    ...parallelFluxFigures,
   },
 };

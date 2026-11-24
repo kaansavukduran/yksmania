@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.167.0 · Işık şiddeti, akı ve yüzey
+
+Yayın adayı. Watt etiketini örnek candela ölçümünden ayır. Bir metrekare ve bütün küre akısını karşılaştır. Yüzeyin eğiminde ışına dik izdüşümü ve akıyı oku.
+
 # ÖSYM Mania 0.166.0 · Işığın davranışı
 
 Yayın adayı. Işın, dalga ve foton modellerini deneylerdeki rolleriyle karşılaştır. Çift yarıkta dalga boyunu ve saçak aralığını değiştir. İki çözüm çiziminde dalgaların toplamını oku.
