@@ -1,8 +1,8 @@
 {
-  "version": "0.117.0",
+  "version": "0.118.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Gerçek el röntgenini büyüt, kemik ve çevre dokuların tonunu karşılaştır. Kopya Kağıdı’nda gözlemli çözümü aç.",
-    "en": "Zoom into a real hand radiograph and compare the shades of bones and surrounding tissue. Open the observational worked solution in the reference sheet."
+    "tr": "Okları karşılaştırarak enine ve boyuna dalgayı ayır. Özgün alıştırmada ipucu çizimini ve iki ayrı çözüm tablosunu aç.",
+    "en": "Compare arrows to distinguish transverse and longitudinal waves. Open the hint diagram and two solution tables in the practice question."
   }
 }

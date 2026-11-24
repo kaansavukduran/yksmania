@@ -3,6 +3,7 @@ import { forceAccelerationQuestion } from "../learning/forceAccelerationPractice
 import { forceVelocityQuestion } from "../learning/forceVelocityOptions048";
 import { airBuoyancyQuestion } from "../learning/airBuoyancyQuestion098";
 import { springPulseQuestion } from "../learning/springPulseQuestion107";
+import { waveDirectionsQuestion } from "../learning/waveDirectionsQuestion118";
 import { countingLessons034035 } from "../learning/countingSources034035";
 import { permutationLessons032033 } from "../learning/permutationSources032033";
 import { factorizationSource028Practice } from "../learning/factorizationSource028Revision";
@@ -1034,6 +1035,7 @@ const baseLessons: Lesson[] = [
   ...forge011PhysicsLessons.map((lesson) => {
     if (lesson.id === "sivilarin-kaldirma-kuvveti") return { ...lesson, questions: [...lesson.questions, airBuoyancyQuestion] };
     if (lesson.id === "yay-dalgalari") return { ...lesson, questions: [...lesson.questions, springPulseQuestion] };
+    if (lesson.id === "dalgalara-giris") return { ...lesson, questions: [...lesson.questions, waveDirectionsQuestion] };
     return lesson;
   }),
   ...forge011ChemistryLessons,

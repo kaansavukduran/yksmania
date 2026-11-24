@@ -1,3 +1,13 @@
+# Enine ve boyuna dalga çizimli soru · 0.118.0 adayı
+
+MEBİ TYT Fizik Konu Özetleri fiziksel 152, basılı 150. Özgün alıştırmada tel ve sarmal yay için ilerleme oku ile titreşim oku ayrı çiziliyor. İpucu dik ve paralel doğrultuları gösteriyor, çözüm adımlarında A ve B kendi tablolarını açıyor. Önceki on sorunun kimliği ve geçmişi korunuyor.
+
+İçerik ölçümünde 6.666 normal çalışma kartının 34’ünde kayıtlı görsel var. Kök görseli 33, görselli şık bir, ipucu 17 ve çözüm 17 kartta. Roller aynı kartta kesişebilir. Gereksinimi doğrulanmış 11 kartın bütün kayıtlı rolleri mevcut. Bu ölçüm, uygulama kartı envanterine aittir.
+
+Check, 44 odaklı birim, derleme ve altı gerçek Chromium akışı geçti. İlk görünümde 320 px ve büyük yazı üst etiketi kesiyordu. SVG alanı genişletildi ve son testte etiket kutuları çizim içinde ölçüldü. Yardım kaydı görünümden önce tamamlandı. Arşiv testleri geçmiş ders kimliklerini aynı hash’lerle denetliyor.
+
+0.103.0 iki web adresinde ve Windows/Linux dağıtımında yayımlandı. Pages 118 gerçek çevrimdışı akışı geçti. İki hostun 330’ar dosyası eşleşti ve 0.42’den eski not ve ölçek taşındı. Fiziksel 150’nin dalga önü ve ayrı Kopya Kağıdı özel deftere kısmi kayıt olarak işlendi. 9.984 güncel PDF içinde 6 kısmi, 9.978 belirsiz ve 0 doğrulanmış güncel tam karar var. [GitHub Pages](https://kaansavukduran.github.io/yksmania/) · [Cloudflare](https://yksmania.pages.dev/) · [Masaüstü](https://github.com/kaansavukduran/yksmania/releases/tag/v0.103.0-alpha.1)
+
 # Gerçek el röntgeninde ton farkı · 0.117.0 adayı
 
 MEBİ TYT Fizik Konu Özetleri fiziksel 152, basılı 150. Kaynaktan algılayıcıya giden çizimin ardından ayrı bir gerçek el röntgeni açılıyor. Parmak kemiği ile çevresindeki dokuyu ton farkından karşılaştır. Ayrı Kopya Kağıdı aynı görüntüyü çözümde açıyor. [Görüntü kaynağı ve CC0](https://commons.wikimedia.org/w/index.php?title=File:X-ray_of_hand.jpg&oldid=1099028774)
@@ -652,7 +662,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 15 · 58 | 380 / 380 · %100,00 | 4 / 33 · %12,12 | 360 soru · 9 kitapçık | 18 |
 | TYT Matematik | 45 / 45 | 33 · 111 | 912 / 912 · %100,00 | 5 / 38 · %13,16 | 269 soru · 9 kitapçık | 12 |
 | TYT Geometri | 19 / 19 | 19 · 174 | 231 / 231 · %100,00 | 1 / 32 · %3,13 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 254 | 315 / 315 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 254 | 316 / 316 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 47 · 198 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 8 |
 | TYT Biyoloji | 36 / 36 | 22 · 80 | 515 / 515 · %100,00 | 7 / 36 · %19,44 | 54 soru · 9 kitapçık | 14 |
 | TYT Tarih | 24 / 24 | 14 · 41 | 390 / 390 · %100,00 | 4 / 24 · %16,67 | 45 soru · 9 kitapçık | 10 |
@@ -665,14 +675,14 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 56 · 229 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 19 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **405 · 1749** | **6.665 / 6.665 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
+| **Toplam** | **510 / 510** | **405 · 1749** | **6.666 / 6.666 · %100,00** | **109 / 517 · %21,08** | **1.845 uygulama soru kaydı** | **105** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
 | Tarihsel dal kaydı: okunan veya eşlenen PDF / eski envanter | 119 / 8.981 |
 | Tarihsel 99_ÖSYM kaydı: uygulama karşılığı olan / 20 Kasım envanteri | 18 / 1.001 |
 | 99_ÖSYM: soru soru çözümlenen · figür ve taktikte atıf yapılan | 1.845 · 76 |
-| Kademeli çözüm paneli bulunan soru | 6.665 / 6.665 · %100,00 |
+| Kademeli çözüm paneli bulunan soru | 6.666 / 6.666 · %100,00 |
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
 | Ara hatırlama (mikro ritim): ders · soru | 505 / 510 · %99,02 · 3.052 soru |

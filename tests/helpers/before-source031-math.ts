@@ -148,6 +148,7 @@ const revisions = [
 const additions = new Set(revisions.flatMap(({ appendedQuestions }) => appendedQuestions));
 additions.add("sivilarin-kaldirma-kuvveti-havada-balon");
 additions.add("yay-dalgalari-atma-uretme-suresi");
+additions.add("dalgalara-giris-titresim-yonu-cizimleri");
 
 export function beforeSource031Questions<T extends { id: string }>(questions: readonly T[]) {
   return questions.filter(({ id }) => !additions.has(id));
@@ -223,7 +224,7 @@ export function beforeSource031Teaching(
   id: string,
   value: unknown,
 ): unknown {
-  if (surface === "lessons" && (id === "sivilarin-kaldirma-kuvveti" || id === "yay-dalgalari") && value) {
+  if (surface === "lessons" && (id === "sivilarin-kaldirma-kuvveti" || id === "yay-dalgalari" || id === "dalgalara-giris") && value) {
     const lesson = value as Lesson;
     return { ...lesson, questions: beforeSource031Questions(lesson.questions) };
   }

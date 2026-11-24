@@ -21,6 +21,7 @@ import { archimedesQuestionFigures, archimedesQuestionId } from "./archimedesQue
 import { buoyancyFloatingQuestionFigures, buoyancyFloatingQuestionId } from "./buoyancyFloatingQuestion097";
 import { airBuoyancyQuestion, airBuoyancyQuestionFigures } from "./airBuoyancyQuestion098";
 import { springPulseQuestion, springPulseQuestionFigures } from "./springPulseQuestion107";
+import { waveDirectionsFigures, waveDirectionsQuestion } from "./waveDirectionsQuestion118";
 import {
   inverseTranslationFigures,
   inverseTranslationQuestion,
@@ -245,6 +246,15 @@ const pulseQuestion = {
   explanation: springPulseQuestion.explanation.tr,
   guidance: springPulseQuestion.guidance,
 };
+const directionsQuestion = {
+  id: waveDirectionsQuestion.id,
+  prompt: waveDirectionsQuestion.prompt.tr,
+  options: waveDirectionsQuestion.options.map((option) => option.tr),
+  answer: waveDirectionsQuestion.answer,
+  hint: waveDirectionsQuestion.hint.tr,
+  explanation: waveDirectionsQuestion.explanation.tr,
+  guidance: waveDirectionsQuestion.guidance,
+};
 
 function ogmTranslationBinding(
   source: Question,
@@ -348,6 +358,14 @@ const bindings = new Map<string, FigureBinding>([
     pageLabel: "Fiziksel 151. sayfa, basılı 149",
     itemLabel: "Sabit uçlu yayda tek atma, özgün öğretim sorusu",
     figures: springPulseQuestionFigures,
+  }],
+  [directionsQuestion.id, {
+    stemRevision: stemRevision(directionsQuestion),
+    helpRevision: helpRevision(directionsQuestion, directionsQuestion.guidance),
+    title: "MEBİ TYT Fizik Konu Özetleri",
+    pageLabel: "Fiziksel 152. sayfa, basılı 150",
+    itemLabel: "Tel ve sarmal yayda titreşim doğrultuları, özgün öğretim sorusu",
+    figures: waveDirectionsFigures,
   }],
   [pistonQuestionId, {
     stemRevision: "122891ad73ac0c",

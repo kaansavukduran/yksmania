@@ -1,3 +1,7 @@
+# ÖSYM Mania 0.118.0 · İlerleme ve titreşim okları
+
+Yayın adayı. İki düzeneğin oklarını karşılaştırarak dalgaları sınıflandır. İpucu çizimi dik ve paralel doğrultuyu hatırlatır. Çözümde iki düzeneğin tablosu kendi adımında açılır.
+
 # ÖSYM Mania 0.117.0 · Gerçek el röntgeni
 
 Yayın adayı. El röntgenini büyüt, kemiğin ve çevresindeki dokunun tonunu karşılaştır. Kopya Kağıdı aynı görüntüyü çözüm adımında açar. [Görüntü kaynağı ve CC0](https://commons.wikimedia.org/w/index.php?title=File:X-ray_of_hand.jpg&oldid=1099028774)
