@@ -20,6 +20,16 @@ interface TheorySupplement {
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const theorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "dogrunun-analitigi": [{
+    title: "Paralel doğruların dik uzaklığını bul",
+    figureTitle: "Paralel doğruların dik uzaklığını bul",
+    paragraphs: [
+      "2x−y+3=0 ve 2x−y−3=0 doğruları aynı x ve y katsayılarına sahip. İkinci denkleme birinci doğru üzerindeki P(0;3) noktasını yazınca −6 elde edilir. Mutlak değeri 6, normal vektörü (2;−1) ve uzunluğu √5. Dik uzaklık 6/√5 birim.",
+      "P’den ikinci doğruya inen dik ayağı işaretle: H(2,4;1,8). 2·2,4−1,8−3=0 olduğu için H ikinci doğru üzerindedir. Sabitleri eşitlersen iki doğru çakışır. Katsayılar farklı ölçekte yazılmışsa uzaklık hesabından önce denklemleri aynı ölçeğe getir.",
+    ],
+    summary: "2x−y±3=0 doğrularının dik uzaklığı |3−(−3)|/√(2²+(−1)²)=6/√5. Dik ayak H(2,4;1,8). Sabitler eşitse uzaklık sıfır.",
+    appendSection: true,
+  }],
   "ayt-fonksiyonlar": [{
     title: "Parçalı fonksiyonda açık ve dolu ucu ayır",
     figureTitle: "Parçalı fonksiyonda açık ve dolu ucu ayır",

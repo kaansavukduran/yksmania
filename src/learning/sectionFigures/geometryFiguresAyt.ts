@@ -929,7 +929,40 @@ const cember: Record<string, FigureDef> = {
   },
 };
 
+const parallelDistance: FigureDef = {
+  caption: "Önce iki denklemi aynı x ve y katsayılarıyla yaz. Sabit terimler farkının mutlak değeri, normal vektörün uzunluğuna bölünür. Dik ayak H, P’den ikinci doğruya en kısa yolu gösterir.",
+  alt: "Eşit ölçekli eksenlerde 2x − y + 3 = 0 ve başlangıçta 2x − y − 3 = 0 doğruları. P(0,3) ile ikinci doğru üzerindeki dik ayak H arasındaki parça işaretli.",
+  param: { label: "İkinci doğrunun sabit terimi", min: -3, max: 3, step: 1, init: -3 },
+  draw: (constant) => {
+    const window = [-3.4, 4.2, -3.8, 5.4] as const;
+    const p = v(0, 3);
+    const h = foot(p, v(0, constant), v(1, constant + 2));
+    const difference = 3 - constant;
+    const equation = `2x − y${constant === 0 ? "" : constant > 0 ? ` + ${constant}` : ` − ${Math.abs(constant)}`} = 0`;
+    const els = [
+      ...axes(...window),
+      lineEq(2, -1, 3, ...window, { tone: "b", bold: true })!,
+      pt(p, "P", "w", "b"),
+    ];
+    if (difference > 0) {
+      els.push(
+        lineEq(2, -1, constant, ...window, { tone: "a", dash: true, bold: true })!,
+        seg(p, h, { tone: "warn", bold: true }),
+        right(h, p, add(h, v(-1, -2)), "warn"),
+        pt(h, "H", "e", "warn"),
+      );
+    }
+    return { els, readout: [
+      `İkinci doğru ${equation}. Dik ayak H${xy(h)}.`,
+      difference === 0
+        ? "Sabitler eşit. Doğrular çakışır, uzaklık 0 birim."
+        : `Sabitlerin farkı ${difference}. Uzaklık ${difference}/√5 ≈ ${fmt(dist(p, h), 2)} birim.`,
+    ] };
+  },
+};
+
 const dogru: Record<string, FigureDef> = {
+  "Paralel doğruların dik uzaklığını bul": parallelDistance,
   "Denklem, bir nokta kümesini anlatır": {
     caption:
       "x + y = 4 denklemini (0; 4), (1; 3) ve (4; 0) sağlar. Bunlar aynı doğrunun farklı noktalarıdır.",

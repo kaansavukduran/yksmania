@@ -1,8 +1,8 @@
 {
-  "version": "0.190.0",
+  "version": "0.191.0",
   "channel": "alpha",
   "notes": {
-    "tr": "AYT Fonksiyonlarda parçalı kuralın hangi aralığa ait olduğunu, açık ve dolu noktayı ve sınırdaki tek çıktıyı grafikten oku.",
-    "en": "Read piecewise rules, open and closed endpoints, and the unique output at the boundary in AYT functions."
+    "tr": "AYT Geometride paralel doğruların dik uzaklığını sabit terimleri değiştirerek incele ve çakışma durumunda sıfır uzaklığı doğrula.",
+    "en": "Compare perpendicular separation of parallel lines and check the coincident case in AYT analytic geometry."
   }
 }

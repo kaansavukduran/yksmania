@@ -2118,3 +2118,25 @@ test("AYT piecewise graph includes only the filled boundary point", async ({ pag
   }
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("AYT parallel separation follows the perpendicular foot and reaches zero", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Paralel doğruların dik uzaklığını bul");
+  for (const route of ["/#/lesson?id=dogrunun-analitigi", "/#/cheatsheets?topic=detail-404"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Dik ayak H(2,4; 1,8).");
+    await expect(model).toContainText("Uzaklık 6/√5 ≈ 2,68 birim.");
+    const input = model.getByRole("slider", { name: /İkinci doğrunun sabit terimi/ });
+    await input.press("End");
+    await expect(model).toContainText("Doğrular çakışır, uzaklık 0 birim.");
+    await expect(model).toContainText("Dik ayak H(0; 3).");
+    await input.press("ArrowLeft");
+    await expect(model).toContainText("Dik ayak H(0,4; 2,8).");
+    await expect(model).toContainText("Uzaklık 1/√5 ≈ 0,45 birim.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
