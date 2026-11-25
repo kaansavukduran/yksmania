@@ -325,20 +325,27 @@ export function SourceQuestionFigure({
           ) : <p className="source-figure-fallback">{figure.alt}</p>
         ) : <ImageFigure key={figure.src} figure={figure} />
       ) : figure.kind === "table" ? (
-        <table className="source-figure-table">
-          <caption>{figure.alt}</caption>
-          <thead>
-            <tr>{figure.headers.map((header) => <th key={header} scope="col">{header}</th>)}</tr>
-          </thead>
-          <tbody>
-            {figure.rows.map(([label, ...values]) => (
-              <tr key={label}>
-                <th scope="row">{label}</th>
-                {values.map((value, i) => <td key={i}>{value}</td>)}
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <div
+          className="source-figure-table-scroll"
+          role="region"
+          aria-label={figure.title}
+          tabIndex={staticImage ? undefined : 0}
+        >
+          <table className="source-figure-table">
+            <caption>{figure.alt}</caption>
+            <thead>
+              <tr>{figure.headers.map((header) => <th key={header} scope="col">{header}</th>)}</tr>
+            </thead>
+            <tbody>
+              {figure.rows.map(([label, ...values]) => (
+                <tr key={label}>
+                  <th scope="row">{label}</th>
+                  {values.map((value, i) => <td key={i}>{value}</td>)}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       ) : figure.kind === "math" ? (
         <div
           className="source-math-layout"
