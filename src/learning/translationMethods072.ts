@@ -52,3 +52,36 @@ export const rotationFromCenterExample: WorkedExample = {
   check: "Orijin etrafında doğrudan döndürseydin (−1; −5) çıkardı. Verilen merkezden uzaklık aynı kalmazdı.",
   pitfall: "Yatay ve düşey farkları doğrudan noktanın koordinatları olarak yazma. Merkezi geri ekle.",
 };
+
+
+export const reverseTransformationTitle = "Öteleme ve dönmeyi sondan geri al";
+
+export const reverseTransformation = (() => {
+  const final = [-3, 5] as const;
+  const [dx, dy] = [2, -1];
+  const translated = [final[1], -final[0]] as const;
+  const initial = [translated[0] - dx, translated[1] - dy] as const;
+  return { final, translated, initial };
+})();
+
+export const reverseTransformationSection: GuideSection = {
+  title: reverseTransformationTitle,
+  figureTitle: reverseTransformationTitle,
+  paragraphs: [
+    "İleri yol önce (2; −1) ötelemesi, sonra orijinde +90° dönmedir. Sonuç Q(−3; 5) verilince en son yapılan dönmeyi önce geri al. (x; y) → (y; −x) ile Q’dan (5; 3) noktasına gel.",
+    "Şimdi ileri ötelemeyi çıkar. (5; 3) − (2; −1) = (3; 4). İleri yolu denetle. (3; 4) ötelenince (5; 3), +90° dönünce (−3; 5) çıkar.",
+  ],
+};
+
+export const reverseTransformationExample: WorkedExample = {
+  title: "Son noktadan ilk noktaya dön",
+  prompt: "P önce (2; −1) kadar öteleniyor, sonra orijin çevresinde +90° dönüyor. Son nokta Q(−3; 5). İlk P noktası nedir?",
+  strategy: "Son işlemin tersini önce yap. Dönmeyi geri alınca çıkan ara noktadan öteleme vektörünü çıkar.",
+  steps: [
+    { label: "Dönmeyi geri al", expression: "(−3; 5) → (5; 3)", explanation: "−90° yönünde (x; y) → (y; −x).", figureTitle: reverseTransformationTitle },
+    { label: "Ötelemeyi geri al", expression: "(5; 3) − (2; −1) = (3; 4)", explanation: "2 sola ve 1 yukarı hareket et." },
+  ],
+  answer: "P(3; 4).",
+  check: "İleri yönde (3; 4) → (5; 3) → (−3; 5).",
+  pitfall: "Ötelemeyi önce geri alırsan (−5; 6), sonra dönünce (6; 5) çıkar. Bu noktadan ileri yol Q’ya ulaşmaz.",
+};

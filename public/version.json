@@ -1,8 +1,8 @@
 {
-  "version": "0.195.0",
+  "version": "0.196.0",
   "channel": "alpha",
   "notes": {
-    "tr": "AYT Matematikte ikinci derece bölenin iki kökünü kullanarak kalanı bul. Polinom ile kalanı aynı eksenlerde karşılaştır.",
-    "en": "Use the roots of a quadratic divisor to find the remainder, then compare both curves on the same axes."
+    "tr": "AYT Geometride son noktadan başla, önce dönmeyi sonra ötelemeyi geri al. Ara noktayı çizimde izle ve başlangıç noktasını ileri işlemlerle denetle.",
+    "en": "Start from the resulting point, undo the rotation, and undo the translation. Follow the intermediate point on the diagram and check the answer with the original forward steps."
   }
 }

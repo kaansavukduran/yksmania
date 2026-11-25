@@ -28,7 +28,7 @@ import {
   type V,
 } from "./figureKit";
 import { axes } from "./geometryFiguresArea";
-import { centerQuarterTurn, rotationCenter, rotationFromCenterTitle, rotationStart } from "../translationMethods072";
+import { centerQuarterTurn, reverseTransformation, reverseTransformationTitle, rotationCenter, rotationFromCenterTitle, rotationStart } from "../translationMethods072";
 
 const xy = (p: V, d = 2) => `(${fmt(p[0], d)}; ${fmt(p[1], d)})`;
 /** Visible part of ax + by + c = 0 inside a window, as a drawable line. */
@@ -66,6 +66,36 @@ const curve = (f: (x: number) => number, x0: number, x1: number, tone: "a" | "b"
   );
 
 const otelemeDonme: Record<string, FigureDef> = {
+  [reverseTransformationTitle]: {
+    caption: "En son yapılan dönmeyi geri al. Sonraki adımda ötelemeyi geri alarak başlangıcı bul.",
+    alt: "Koordinat düzleminde Q’dan başlayan ters yol. Birinci adımda saat yönünde dönme, ikinci adımda sola ve yukarı öteleme görülür.",
+    steps: ["Son noktayı oku", "−90° döndür", "Ötelemeyi çıkar"],
+    draw: (_, step) => {
+      const { final, translated, initial } = reverseTransformation;
+      const origin = v(0, 0);
+      const els: El[] = [
+        ...axes(-4, 6, -1, 6, 2),
+        pt(final, "Q", "nw", "b"),
+        seg(origin, final, { tone: "b", dash: true, thin: true }),
+      ];
+      const readout = [`Verilen son nokta Q${xy(final).replaceAll("-", "−")}.`];
+      if (step >= 1) {
+        const arc = Array.from({ length: 25 }, (_, i) => rot(final, -90 * i / 24));
+        els.push(
+          poly(arc, { tone: "a", open: true }),
+          vec(arc[23], translated, { tone: "a" }),
+          seg(origin, translated, { tone: "a", dash: true, thin: true }),
+          pt(translated, "Ara nokta", "se", "a"),
+        );
+        readout.push(`−90° dönüşten sonra ara nokta ${xy(translated)}.`);
+      }
+      if (step === 2) {
+        els.push(vec(translated, initial, { tone: "c", bold: true }), pt(initial, "P", "sw", "c"));
+        readout.push(`Ötelemeyi çıkarınca başlangıç P${xy(initial)}. 2 sola, 1 yukarı.`);
+      }
+      return { els, readout };
+    },
+  },
   [rotationFromCenterTitle]: {
     caption: "Aynı merkezde dönme yönünü değiştir ve iki yarıçapı karşılaştır.",
     alt: "Analitik düzlemde C(2; 1) merkezi, ilk P(5; −1) ve seçilen açının görüntüsü. İlk ve son nokta C’den eşit uzaklıkta. Başlangıçta saat yönündeki 90° dönüş gösterilir.",
