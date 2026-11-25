@@ -187,9 +187,51 @@ const breakEven: FigureDef = {
 const ages: FigureDef = {
   caption:
     "Sürgüyle zamanı ileri ya da geri al. Bugün anne 30, çocuk 6 yaşında. Herkes aynı süre yaşlandığı için yaş farkı hep 24 kalır; oran ise değişir: bugün 5 kat, 6 yıl sonra 36 / 12 = 3 kat. Oranı, verildiği andaki yaşlarla kur.",
-  alt: "İki yatay çubuk: anne ve çocuğun yaşları. Sürgüyle iki çubuk birlikte uzayıp kısalır; aradaki fark parçası hep aynı uzunlukta kalır.",
+  alt: "İki yaş çubuğu veya iki paralel yaş doğrusu. Zaman sürgüsü iki yaşı birlikte değiştirir. Aynı zamandaki fark sabit kalır.",
   param: { label: "Yıl (bugün = 0)", min: -6, max: 18, step: 1, init: 0 },
-  draw: (t) => {
+  steps: ["Anne ve çocuk", "Deniz ile Işıl’ın yaş grafiği"],
+  draw: (t, step) => {
+    if (step === 1) {
+      const scale = 0.29;
+      const x = (year: number) => (year + 6) * 0.65;
+      const point = (year: number, age: number) => v(x(year), age * scale);
+      const oldAge = 30 + t;
+      const youngAge = 16 + t;
+      const start = -6;
+      const end = 18;
+      const els: El[] = [
+        vec(v(0, 0), v(16.6, 0), { tone: "muted" }),
+        vec(v(0, 0), v(0, 15.4), { tone: "muted" }),
+        txt(v(16, -1.25), "Yıl", "s", { small: true }),
+        txt(v(0, 15.4), "Yaş", "n", { small: true }),
+      ];
+      for (const year of [-6, 0, 6, 12, 18]) {
+        els.push(txt(v(x(year), -0.15), String(year), "s", { small: true }));
+      }
+      for (const age of [10, 20, 30, 40, 50]) {
+        els.push(seg(point(start, age), point(end, age), { tone: "muted", thin: true, dash: true }));
+        els.push(txt(point(start, age), String(age), "w", { small: true }));
+      }
+      els.push(
+        seg(point(start, 30 + start), point(end, 30 + end), { tone: "b", bold: true }),
+        seg(point(start, 16 + start), point(end, 16 + end), { tone: "c", bold: true }),
+        seg(point(t, 0), point(t, youngAge), { tone: "muted", thin: true, dash: true }),
+        seg(point(t, youngAge), point(t, oldAge), { tone: "warn", bold: true }),
+        ball(point(t, oldAge), 0.13, "b"),
+        ball(point(t, youngAge), 0.13, "c"),
+      );
+      return {
+        els,
+        legend: [
+          { code: "D", label: "Deniz", tone: "b" },
+          { code: "I", label: "Işıl", tone: "c" },
+        ],
+        readout: [
+          `${t === 0 ? "Bugün" : t > 0 ? `${t} yıl sonra` : `${-t} yıl önce`}: Deniz ${oldAge}, Işıl ${youngAge} yaşında.`,
+          `${oldAge} − ${youngAge} = ${oldAge - youngAge} yıl fark. Yaş oranı ${oldAge}/${youngAge}.`,
+        ],
+      };
+    }
     const mom = 30 + t;
     const kid = 6 + t;
     const k = 0.15;

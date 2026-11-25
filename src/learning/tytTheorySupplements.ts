@@ -33,6 +33,14 @@ export const tytTheorySupplements: Readonly<Record<string, TheorySupplement | un
     ],
     summary: "10a+4b=4a+7b eşitliğinde ortak terimleri çıkar. 6a=3b ve b=2a. İki düzenin kapasitesi 18 küçük kutu yeridir.",
   },
+  "yas-problemleri": {
+    title: "Aynı anda herkes aynı süre yaşlanır",
+    figureTitle: "Aynı anda herkes aynı süre yaşlanır",
+    paragraphs: [
+      "İkinci çizimde Deniz bugün 30 ve Işıl 16 yaşında. Dört yıl sonra 34 ve 20 yaşındalar. Aynı tarihte düşey uzaklık hep 14 yıldır. Yaş oranını hesaplamak için iki yaşı da aynı tarihten oku.",
+    ],
+    summary: "30−16=14. Dört yıl sonra 34−20=14. Yaş farkı sabit kalırken oran değişir.",
+  },
   "kesir-problemleri": {
     title: "Kalanın kesri yeni bir taban kullanır",
     figureTitle: "Kalanın kesri yeni bir taban kullanır",

@@ -860,3 +860,46 @@ test("Doubling both rhombus diagonals doubles the circle radius and quadruples a
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Two age lines have the same vertical gap at any shared date", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Aynı anda herkes aynı süre yaşlanır");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  const slider = model.getByRole("slider", { name: /bugün = 0/ });
+  await page.goto("/#/lesson?id=yas-problemleri");
+  await next.press("Enter");
+  await expect(model).toContainText("30 − 16 = 14 yıl fark");
+  await slider.fill("4");
+  await expect(model).toContainText("34 − 20 = 14 yıl fark");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-212");
+  await next.press("Enter");
+  await slider.fill("-4");
+  await expect(model).toContainText("26 − 12 = 14 yıl fark");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The known perimeter and diagonal determine the two rectangle sides", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-paralelkenar-ozel-dortgenler-032";
+  const model = figure(page, "Dikdörtgende eş köşegenin kaynağı");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto(`/#/lesson?id=${lesson}`);
+  for (let step = 0; step < 2; step++) await next.press("Enter");
+  await expect(model).toContainText("alan 168 ⇒ 24 ve 7");
+  await next.press("Enter");
+  await expect(model).toContainText("2ab = 17² − 169 = 120 ⇒ alan 60 ⇒ 12 ve 5");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  for (let step = 0; step < 3; step++) await next.press("Enter");
+  await expect(model).toContainText("alan 60 ⇒ 12 ve 5");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

@@ -1,8 +1,8 @@
 {
-  "version": "0.166.0",
+  "version": "0.167.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Aynı kesirleri ara kalana ve ilk bütüne uygulayarak farkı gör. Eşkenar dörtgende yarım köşegenlerden kenar, alan ve iç yarıçapı bul.",
-    "en": "Compare taking a fraction of the remainder with taking it from the original amount. Derive a rhombus’s side length, area and inradius."
+    "tr": "Aynı tarihte iki yaşın farkını grafikten izle. Çevresi ve köşegeni verilen dikdörtgenin kenarlarını adım adım bul.",
+    "en": "Follow two ages at the same date and derive a rectangle’s sides from its perimeter and diagonal."
   }
 }

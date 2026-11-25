@@ -3755,3 +3755,9 @@ Sayı Problemleri fiziksel 1 ve 7 ile Paralelkenar fiziksel 2 ve 5 karşılaşt�
 Kesir Problemleri’nde 120 birimden önce 30 alınıyor. İkinci kesir 90’ın üçte biriyse 60 birim, 120’nin üçte biriyse 50 birim kalıyor. Eşkenar Dörtgen’de köşegenler 16 ve 12 olunca yarımlardan kenar 10, alan 96 ve iç yarıçap 4,8 bulunuyor.
 
 Kesir Problemleri fiziksel 6, Eşkenar Dörtgen fiziksel 2–3 ve 5 karşılaştırıldı. Yeni köklü denklem, ters orantı, kapasite ve kesir örnekleri öğrenci anlatımı ile Kopya Kağıtlarında açılıyor. Eski ders kayıtları ile eski kapasite çiziminin dört adımı kendi doğrulamasını geçiyor. TypeScript, 45 birim, 37 Chromium, 323 çevrimdışı varlık ve 66 görsel yerleşim kontrolü geçti. Sırada Yaş Problemleri fiziksel 1 ve Dikdörtgen fiziksel 2 ile 5 var.
+
+## TYT Matematik ve Geometri · 0.167.0 adayı
+
+Yaş Problemleri’nde iki paralel doğru aynı tarihteki yaşları gösteriyor. Deniz ve Işıl bugün 30 ve 16, dört yıl sonra 34 ve 20 yaşında. Düşey fark her iki anda 14 yıl. Dikdörtgen’de çevre 34 ve köşegen 13 bilgileri alanı 60, kenarları 12 ve 5 olarak belirliyor.
+
+Yaş Problemleri fiziksel 1 ve Dikdörtgen fiziksel 2 ile 5 karşılaştırıldı. TypeScript, 28 hedef birim ve 39 Chromium akışı geçti. 323 çevrimdışı varlık ve 320, 375 ve 1280 pikselde 24 görsel denetlendi. Sırada Yüzde Problemleri fiziksel 12 ve Kare fiziksel 2 ile 5 var.

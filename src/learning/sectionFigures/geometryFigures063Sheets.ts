@@ -906,27 +906,36 @@ const rect = (w: number, h: number, o: V = v(0, 0)): [V, V, V, V] => [o, add(o, 
 
 const dikdortgen: Record<string, FigureDef> = {
   "Dikdörtgende eş köşegenin kaynağı": {
-    caption:
-      "Adım 1: 8 × 6 dikdörtgende iki köşegen 10'dur ve O'da birbirini ortalar; köşeler R = 5 çemberindedir. Adım 2: aynı köşegenler O'da yaklaşık 106,3° ve 73,7° açı yapar; eşlik diklik getirmez. Adım 3: çevre 62, köşegen 25 verilirse (a + b)² − (a² + b²) = 2ab ile alan 168, kenarlar 24 ve 7 bulunur.",
-    alt: "Üç adım: kenarları 8 ve 6 olan dikdörtgen, eş köşegenler ve köşelerden geçen çember; aynı dikdörtgende köşegenler arasındaki iki farklı açı; kenarları 24 ve 7, köşegeni 25 olan dikdörtgen.",
-    steps: ["Eş köşegen, ortak merkez", "Eş ama dik değil", "Çevre ve köşegenden alan"],
+    caption: "Eş köşegenler birbirini ortalar. Çevre ve köşegen biliniyorsa yarı çevrenin karesinden köşegenin karesini çıkar. Alan, farkın yarısıdır.",
+    alt: "Önce eş köşegenler ve köşelerden geçen çember. Sonra köşegenlerin kesişme açıları. Son iki adımda çevre ve köşegenden türetilen iki dikdörtgen.",
+    steps: ["Eş köşegen, ortak merkez", "Eş ama dik değil", "Çevre 62 ve köşegen 25", "Çevre 34 ve köşegen 13"],
     draw: (_, step) => {
-      if (step === 2) {
-        const [A, B, C, D] = rect(24, 7);
+      if (step >= 2) {
+        const perimeter = step === 2 ? 62 : 34;
+        const diagonal = step === 2 ? 25 : 13;
+        const halfPerimeter = perimeter / 2;
+        const twiceArea = halfPerimeter ** 2 - diagonal ** 2;
+        const difference = Math.sqrt(halfPerimeter ** 2 - 2 * twiceArea);
+        const width = (halfPerimeter + difference) / 2;
+        const height = (halfPerimeter - difference) / 2;
+        const [A, B, C, D] = rect(width, height);
         return {
           els: [
             poly([A, B, C, D], { fill: "muted" }),
             seg(A, C, { tone: "a" }),
             right(A, B, D),
-            dim(A, B, "24", D),
-            dim(B, C, "7", A),
-            txt(mid(A, C), "25", "nw", { tone: "a", bold: true }),
+            dim(A, B, String(width), D),
+            dim(B, C, String(height), A),
+            txt(mid(A, C), String(diagonal), "nw", { tone: "a", bold: true }),
             pt(A, "A", "sw"),
             pt(B, "B", "se"),
             pt(C, "C", "ne"),
             pt(D, "D", "nw"),
           ],
-          readout: ["a + b = 62/2 = 31 · a² + b² = 25² = 625", "2ab = 31² − 625 = 336 ⇒ alan 168 ⇒ 24 ve 7"],
+          readout: [
+            `a + b = ${perimeter}/2 = ${halfPerimeter} · a² + b² = ${diagonal}² = ${diagonal ** 2}`,
+            `2ab = ${halfPerimeter}² − ${diagonal ** 2} = ${twiceArea} ⇒ alan ${twiceArea / 2} ⇒ ${width} ve ${height}`,
+          ],
         };
       }
       const [A, B, C, D] = rect(8, 6);
