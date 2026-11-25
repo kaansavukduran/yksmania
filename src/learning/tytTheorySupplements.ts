@@ -20,6 +20,32 @@ interface TheorySupplement {
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "ses-bilgisi": [{
+    title: "Ünlü düşmesi ile daralma: eksildi mi, değişti mi?",
+    figureTitle: "Ünlü düşmesi ile daralma: eksildi mi, değişti mi?",
+    paragraphs: [],
+    summary: "Başlangıç biçimiyle karşılaştır. Kökte ses eksilirse düşme, a/e dar ünlüye dönerse daralma. Evi sözcüğündeki i ekin kendi sesidir.",
+    table: {
+      headers: ["Önce", "Sonra", "Kanıt"],
+      rows: [
+        ["burun + u", "burnu", "Kökteki ikinci u düşer"],
+        ["bekle + yor", "bekliyor", "Kökün sonundaki e, i olur"],
+        ["ev + i", "evi", "i, ekin kendi ünlüsüdür"],
+        ["ben + e", "bana", "Geniş e, geniş a olur"],
+      ],
+      layout: "table",
+    },
+  }],
+  "tarih-zaman": [{
+    title: "Yıl etiketleri ile geçen süreyi ayır",
+    figureTitle: "Yıl etiketleri ile geçen süreyi ayır",
+    paragraphs: [
+      "Geleneksel tarihsel numaralandırmada MÖ 1’in ardından MS 1 gelir. Aynı ay ve gün için MÖ 2’den MS 3’e sırasıyla dört aralık geçilir. Başlangıç ve bitiş etiketlerini birlikte sayınca beş yıl adı yazılır.",
+      "Miladın iki tarafında aynı günler arasındaki süre a+b−1 yıl. Aynı tarafta iki yıl numarasının farkı kullanılır. Ay ve gün bilgisi verilmedikçe kesin gün sayısı bulunmaz.",
+    ],
+    summary: "MÖ 2 → MÖ 1 → MS 1 → MS 2 → MS 3 dizisinde dört aralık, beş etiket var. Süreyi ve iki uç dahil etiket sayısını ayrı hesapla.",
+    appendSection: true,
+  }],
   "isi-ve-sicaklik": [{
     title: "Isı sığasını enerji grafiğinin eğiminden oku",
     figureTitle: "Isı sığasını enerji grafiğinin eğiminden oku",

@@ -1,8 +1,8 @@
 {
-  "version": "0.187.0",
+  "version": "0.188.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Isı sığasını grafik eğiminden bul, atom yüklerini aynı veriden çizilen grafik ve tabloyla karşılaştır ve fosfolipidin iki sulu yüzünü aç.",
-    "en": "Read heat capacity from a slope, compare atomic charges in a shared graph and table, and examine both aqueous faces of a phospholipid bilayer."
+    "tr": "Türkçede önce ve sonra biçimlerinden ses olayını kanıtla. Tarihte geçen yılı ve iki uç dahil yıl etiketlerini bir zaman çizgisinde say.",
+    "en": "Compare word forms to identify vowel changes, and use a timeline to distinguish elapsed years from counted year labels."
   }
 }

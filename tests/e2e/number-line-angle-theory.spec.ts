@@ -1976,3 +1976,52 @@ test("Both aqueous faces remain visible in the lipid bilayer", async ({ page, co
   }
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Vowel evidence table matches four before and after word forms", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Ünlü düşmesi ile daralma: eksildi mi, değişti mi?");
+  const table = page.getByRole("table").filter({
+    has: page.getByRole("columnheader", { name: "Kanıt", exact: true }),
+  }).filter({ has: page.getByRole("cell", { name: "burnu", exact: true }) });
+  for (const route of ["/#/lesson?id=ses-bilgisi", "/#/cheatsheets?topic=detail-250"]) {
+    await page.goto(route);
+    await expect(table.getByRole("row")).toHaveCount(5);
+    const next = model.getByRole("button", { name: "İleri", exact: true });
+    for (const [index, output] of ["burnu", "bekliyor", "evi", "bana"].entries()) {
+      await expect(table.getByRole("row").nth(index + 1).getByRole("cell", { name: output, exact: true })).toBeVisible();
+      await expect(model.getByRole("img").getByText(output, { exact: true })).toBeVisible();
+      if (index < 3) await next.press("Enter");
+    }
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Calendar boundary strip distinguishes intervals from labels", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Yıl etiketleri ile geçen süreyi ayır");
+  for (const route of ["/#/lesson?id=tarih-zaman", "/#/cheatsheets?topic=detail-226"]) {
+    await page.goto(route);
+    await expect(model).toContainText("MÖ 2 ile MS 3 arasında 4 yıl geçer.");
+    await expect(model).toContainText("İki uç dahil 5 yıl etiketi vardır.");
+    const svg = model.getByRole("img");
+    await expect(svg.locator("text").filter({ hasText: /^(MÖ|MS) 0$/ })).toHaveCount(0);
+    const end = model.getByRole("slider", { name: /Bitiş yılı/ });
+    await end.press("Home");
+    await expect(model).toContainText("MÖ 2 ile MS 1 arasında 2 yıl geçer.");
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await end.press("Home");
+    await expect(model).toContainText("MS 1 ile MS 1 arasında 0 yıl geçer.");
+    await expect(model).toContainText("İki uç dahil 1 yıl etiketi vardır.");
+    await end.press("End");
+    await expect(model).toContainText("MS 1 ile MS 3 arasında 2 yıl geçer.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
