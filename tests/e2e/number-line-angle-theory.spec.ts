@@ -2090,3 +2090,31 @@ test("Three knowledge routes agree with the evidence table", async ({ page, cont
   }
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("AYT piecewise graph includes only the filled boundary point", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Parçalı fonksiyonda açık ve dolu ucu ayır");
+  for (const route of ["/#/lesson?id=ayt-fonksiyonlar", "/#/cheatsheets?topic=detail-463"]) {
+    await page.goto(route);
+    await expect(model).toContainText("x = 1 için 2x + 2 kullanılır. g(x) = 4.");
+    const image = model.getByRole("img");
+    const open = image.locator("circle.sf-nofill").first();
+    const filled = image.locator("circle.sf-ball").nth(1);
+    await expect(open).toBeVisible();
+    await expect(filled).toBeVisible();
+    expect(await open.getAttribute("cx")).toEqual(await filled.getAttribute("cx"));
+    expect(Number(await open.getAttribute("cy"))).toBeGreaterThan(Number(await filled.getAttribute("cy")));
+    const input = model.getByRole("slider", { name: /Girdi x/ });
+    await input.press("ArrowLeft");
+    await expect(model).toContainText("x = 0,5 için x + 2 kullanılır. g(x) = 2,5.");
+    await input.press("Home");
+    await expect(model).toContainText("x = −2 için x + 2 kullanılır. g(x) = 0.");
+    await input.press("End");
+    await expect(model).toContainText("x = 3 için 2x + 2 kullanılır. g(x) = 8.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});

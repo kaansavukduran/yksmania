@@ -19,7 +19,17 @@ interface TheorySupplement {
 
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
-export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+export const theorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "ayt-fonksiyonlar": [{
+    title: "Parçalı fonksiyonda açık ve dolu ucu ayır",
+    figureTitle: "Parçalı fonksiyonda açık ve dolu ucu ayır",
+    paragraphs: [
+      "Girdinin hangi aralığa ait olduğunu belirle. −2≤x<1 için g(x)=x+2. 1≤x≤3 için g(x)=2x+2. Birinci kuraldan hesaplanan (1,3), x=1 bu aralığın dışında kaldığından açık işaretlenir.",
+      "İkinci aralık x=1’i içerir. g(1)=2·1+2=4 ve (1,4) doludur. Aynı düşey doğru sınırda tek dolu noktaya denk gelir. Diğer örnekler: g(0)=2, g(2)=6. Tanım kümesi [−2,3].",
+    ],
+    summary: "−2≤x<1 için x+2, 1≤x≤3 için 2x+2. x=1 sınırında (1,3) açık, (1,4) dolu, g(1)=4.",
+    appendSection: true,
+  }],
   "doga-insan-cografya": [{
     title: "Aynı akarsuyu üç farklı soruyla incele",
     figureTitle: "Aynı akarsuyu üç farklı soruyla incele",

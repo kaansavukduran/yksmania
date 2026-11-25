@@ -1,4 +1,4 @@
-import { tytTheorySupplements } from "../tytTheorySupplements";
+import { theorySupplements } from "../theorySupplements";
 import { rotationFromCenterExample, rotationFromCenterSection, transformationMethods } from "../translationMethods072";
 import { electroscopeExample, electroscopeSection } from "../electroscopeInduction070";
 import { groundingTransferExample, groundingTransferSection } from "../groundingTransfer074";
@@ -569,7 +569,7 @@ export function studyGuideWithSourceRevisions(lessonId: string) {
 // Apply theory additions after the guide's published source revisions.
 export function studyGuide(lessonId: string) {
   const guide = studyGuideWithSourceRevisions(lessonId);
-  const supplements = tytTheorySupplements[lessonId];
+  const supplements = theorySupplements[lessonId];
   if (guide && supplements) {
     let sections = guide.sections;
     let examples = guide.examples;
