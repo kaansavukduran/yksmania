@@ -47,9 +47,11 @@ export const geometryDepthGuide: LessonGuide = {
     },
     {
       title: "Alan oranını bulurken ortak olan büyüklüğü sadeleştir",
+      figureTitle: "Alan oranını bulurken ortak olan büyüklüğü sadeleştir",
       paragraphs: [
         "A ve D köşelerinin BC doğrusuna olan dik uzaklıkları h₁,h₂ ise ABC ve DBC üçgenleri aynı BC tabanını paylaşır: alan oranı h₁/h₂’dir. A ile D aynı paralel üzerinde ve bu paralel BC’ye paralelse yükseklikler eşittir; alanlar da eşittir. İki şeklin eş alanlı olması tek başına eş veya benzer olduklarını kanıtlamaz.",
         "ABC üçgeninde D, BC üzerinde bir nokta olsun. ABD ve ADC üçgenlerinin A’dan BC doğrusuna yükseklikleri aynıdır; A(ABD)/A(ADC)=BD/DC. Örneğin BD:DC=2:3 ise alanlar da 2:3 oranında paylaşılır. Büyük üçgenin alanını küçük parçalara bölerken oran paylarının toplamını kullan: toplam 5 paydır. Tabanların aynı doğru üzerinde oluşu ortak yükseklik gerekçesi için önemlidir.",
+        "PAB üçgeninde alan 75 ve P’den AB’ye dik uzaklık 6 birim. AB=2·75/6=25. A, D ve B bu sıradaysa AD:DB=2:3, AD=10 ve DB=15. İki parça aynı 6 birim yüksekliği kullanır ve alanları 30 ile 45 olur. P sola veya sağa kaydığında dik uzaklık aynı kaldığı sürece alanlar değişmez.",
       ],
     },
     {
@@ -244,5 +246,5 @@ export const geometryDepthGuide: LessonGuide = {
     },
   ],
   source:
-    "MEBİ TYT Matematik Konu Özetleri PDF s.139–140 ve 147–148 (basılı 137–138 ve 145–146): üçgende alan, ortak taban/yükseklik, kenarortay/ağırlık merkezi, benzerlik, sinüs ve paralelkenarda alan ilişkileriyle karşılaştırılan özgün açıklamalar. Modelin mevcut kesme-birleştirme yapısı korunur; buradaki çözümlü örnekler resmî sınav sorusu değildir.",
+    "MEBİ TYT Matematik Konu Özetleri PDF s.139–140 ve 147–148 (basılı 137–138 ve 145–146): üçgende alan, ortak taban/yükseklik, kenarortay/ağırlık merkezi, benzerlik, sinüs ve paralelkenarda alan ilişkileriyle karşılaştırılan özgün açıklamalar. Üçgende Alan 5.2.1 fiziksel s. 5, ortak yüksekliğe sahip iki bölge; buradaki çözümlü örnekler resmî sınav sorusu değildir.",
 };

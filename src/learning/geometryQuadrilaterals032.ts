@@ -1,7 +1,7 @@
 import { txt, type Lesson, type Question } from "../domain/model";
 import type { QuestionGuidance } from "../domain/questionHelpModel";
 import type { LessonGuide, GuideSection, WorkedExample } from "./guides/types";
-import type { CheatSheet } from "./cheatsheetContent";
+import type { CheatSection, CheatSheet } from "./cheatsheetContent";
 interface QuadrilateralItem032 extends QuestionGuidance {
   prompt: string;
   options: string[];
@@ -62,7 +62,7 @@ const packs: QuadrilateralPack032[] = [
         title: "İkizkenar yamukta simetriyi gerçekten doğrula",
         paragraphs: [
           "Taban uzunlukları farklı olan bir yamukta iki yan kenar eşitse, tabanların orta dikmesi simetri eksenidir. Aynı tabana komşu iki iç açı, köşegenler ve köşegenlerin eksene göre eş parçaları eşittir. Karşı açılar bütünlerdir; bu yamuk çemberseldir. Kapsayıcı yamuk tanımında tabanları eşit paralelkenarda yalnız yan kenar eşliği bu simetriyi kanıtlamaz; böyle bir durumda ayrıca simetri veya taban açı eşliği gerekir.",
-          "Uzun taban b, kısa taban a ve yan kenar ℓ olsun. Kısa tabanın uçlarından uzun tabana dikmeler indir; iki yandaki yatay fark eşit olduğundan her biri (b−a)/2 olur. Pisagor ile h²=ℓ²−((b−a)/2)² bulunur. Sağ taraf pozitif olmalıdır. Örneğin b=20, a=8, ℓ=10 için yatay parça 6 ve yükseklik 8’dir; 12’lik taban farkının tamamını tek üçgene koymak yanlıştır.",
+          "İki dikme, uzun taban b ile kısa taban a’nın farkını d=(b−a)/2 uzunluğunda iki parçaya böler. Yan kenar ℓ hipotenüstür. ℓ>d ise Pisagor’dan h=√(ℓ²−d²) çıkar. İlk çizimde tabanlar 20 ve 8, yan kenar 10, d=6 ve h=8’dir. İkinci çizimde tabanlar 18 ve 8, yan kenar 13, d=5 ve h=12’dir. Alan (18+8)·12/2=156 birim². Eğik yan kenarı yükseklik kabul edersen 169 bulursun.",
         ],
       },
       {
@@ -521,7 +521,7 @@ const packs: QuadrilateralPack032[] = [
       },
     ],
     source:
-      "MEBİ TYT Matematik Konu Özetleri: basılı 141–143 ve 151; Aurelia TYT Geometri Tüm Konular ve Formüller: yamuk/deltoid özetiyle karşılaştırılmış özgün anlatım ve sorular. Kaynağın bütün PDF kapsamı değildir.",
+      "MEBİ TYT Matematik Konu Özetleri: basılı 141–143 ve 151; Aurelia TYT Geometri Tüm Konular ve Formüller: yamuk/deltoid özeti ile Yamuk PDF fiziksel 2 ve 5 (G1) karşılaştırılmış özgün anlatım ve sorular. Kaynağın bütün PDF kapsamı değildir.",
   },
   {
     id: "tyt-geo-paralelkenar-ozel-dortgenler-032",
@@ -559,7 +559,7 @@ const packs: QuadrilateralPack032[] = [
         title: "Alanı taban ve dik uzaklıkla kur",
         paragraphs: [
           "AB=a ve DC doğrusunun AB’ye dik uzaklığı hₐ ise S=a·hₐ’dır. Eğik bir köşeden yükseklik indirip kenardaki dik üçgeni öteki tarafa taşıdığında aynı taban ve yüksekliğe sahip bir dikdörtgen oluşur. Bu parçalama alanın neden taban çarpı yükseklik olduğunu açıklar. Kenar b eğikse b yerine yüksekliği bulmak gerekir.",
-          "Komşu kenarlar a ve b, aralarındaki açı α ise hₐ=b·sinα ve S=ab·sinα olur. Açı 30° ise yükseklik b/2’dir. Aynı alan b·hᵦ ile de bulunur; dolayısıyla a·hₐ=b·hᵦ eşitliği ikinci denetimdir. Formüllerdeki açı seçilen iki kenarın arasındaki açıdır; sinüsünü aldığın açıyı önce işaretle.",
+          "Komşu kenarlar a ve b, aralarındaki açı α ise hₐ=b·sinα, S=ab·sinα ve a·hₐ=b·hᵦ olur. 30° için hₐ=b/2’dir. Koordinat adımında A(1; 1), B(7; 1) ve D(3; 5) verilir. AB ile DC aynı yönlü olduğundan C=B+D−A=(9; 5). AB=6 ve dik yükseklik 4 olduğundan alan 24 birim²; köşegenler (5; 3) noktasında birbirini ortalar.",
         ],
       },
       {
@@ -580,7 +580,7 @@ const packs: QuadrilateralPack032[] = [
         title: "Eşkenar dörtgende diklik ve yarım köşegen",
         paragraphs: [
           "Dört kenarı da a olan paralelkenar eşkenar dörtgendir. Köşegenler birbirini ortalar; ayrıca bir köşegenin iki yanındaki eş üçgenler köşe açısını ikiye böler. Komşu bütünler açıların yarılarından köşegenlerin dik kesiştiği de görülür. Dört köşenin dik olması zorunlu değildir; bu ek koşul kareyi verir.",
-          "Köşegenler e ve f ise yarımlarıyla kenar bir dik üçgen kurar: (e/2)²+(f/2)²=a². Alan S=ef/2=a·h=a²sinα, çevre 4a’dır. İç teğet çember için yarıçap r=h/2=S/(2a) olur; çünkü karşı paralel kenarlara teğet çemberin çapı bu kenarlar arasındaki uzaklıktır. Radyal uzunluğu alanla veya çevreyle karıştırma.",
+          "Köşegenler e ve f ise yarımlarıyla kenar bir dik üçgen kurar: (e/2)²+(f/2)²=a². Alan S=ef/2=a·h=a²sinα, çevre 4a’dır. Çemberin çapı karşı kenarlar arasındaki h uzaklığıdır. 16 ve 12 köşegenlerinden 8 ve 6 yarıları, kenar 10, alan 96 ve yarı çevre 20 çıkar. Yarıçap r=S/(2a)=96/20=4,8 birimdir. Alanı kenara bölünce bulunan 9,6 yüksekliğinin yarısı da 4,8’dir.",
         ],
       },
       {
@@ -1039,7 +1039,7 @@ export const geometryQuadrilaterals032Lessons: Lesson[] = packs.map(
     }),
   }),
 );
-const summaries: Record<string, { title: string; text: string[] }[]> = {
+const summaries: Record<string, CheatSection[]> = {
   "tyt-geo-yamuk-deltoid-032": [
     {
       title: "Taban ve açı",
@@ -1057,6 +1057,7 @@ const summaries: Record<string, { title: string; text: string[] }[]> = {
     },
     {
       title: "Özel yamuk koşulları",
+      figureTitle: "İkizkenar yamukta simetriyi gerçekten doğrula",
       text: [
         "Farklı tabanlı ikizkenar yamuk: h²=ℓ²−((b−a)/2)².",
         "Dik yamukta eğik kenar²=h²+(a−c)². Dik köşegen de varsa h²=ac.",
@@ -1088,6 +1089,7 @@ const summaries: Record<string, { title: string; text: string[] }[]> = {
     },
     {
       title: "Alan ve parçalama",
+      figureTitle: "Alanı taban ve dik uzaklıkla kur",
       text: [
         "S=a·hₐ=b·hᵦ=ab·sinα. Kenarla yüksekliği eşleştir.",
         "Köşegen alanı yarılar; iki köşegenin dört üçgeni eş alanlıdır.",
@@ -1103,6 +1105,7 @@ const summaries: Record<string, { title: string; text: string[] }[]> = {
     },
     {
       title: "Eşkenar dörtgen",
+      figureTitle: "Eşkenar dörtgende diklik ve yarım köşegen",
       text: [
         "S=ef/2=a·h; Ç=4a. Köşegenler dik, birbirini ortalayan ve açıortay parçalardır.",
         "(e/2)²+(f/2)²=a²; iç yarıçap r=S/(2a)=h/2.",

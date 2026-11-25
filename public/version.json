@@ -1,8 +1,8 @@
 {
-  "version": "0.160.0",
+  "version": "0.166.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Mutlak Değer’de iki noktaya uzaklık toplamının sabit kaldığı aralığı keşfet. Üçgende Benzerlik’te 25 eş parçanın alan paylarını karşılaştır.",
-    "en": "Explore constant sums of distances and use 25 equal units to find areas in similar triangles."
+    "tr": "Aynı kesirleri ara kalana ve ilk bütüne uygulayarak farkı gör. Eşkenar dörtgende yarım köşegenlerden kenar, alan ve iç yarıçapı bul.",
+    "en": "Compare taking a fraction of the remainder with taking it from the original amount. Derive a rhombus’s side length, area and inradius."
   }
 }

@@ -371,11 +371,12 @@ const contrapositive: FigureDef = {
 const successiveMagnification: FigureDef = {
   caption: "İkinci büyütmeyi değiştir. Kutular işlem sırasını, içlerindeki sayılar her aşamanın uzunluğunu gösterir.",
   alt: "Başlangıç uzunluğundan ilk ve ikinci büyütmeye giden üç kutu. Okların yanındaki çarpanlar her aşamadaki büyütme oranıdır.",
+  steps: ["0,0032 mm ve ilk büyütme 5 kat", "0,0125 mm ve ilk büyütme 4 kat"],
   param: { label: "İkinci büyütme", min: 1, max: 40, step: 1, init: 25, unit: " kat" },
-  draw: (secondFactor) => {
-    const firstFactor = 5;
+  draw: (secondFactor, step) => {
+    const firstFactor = step === 0 ? 5 : 4;
     // Integer counts of 0.0001 mm retain the same values across labels and results.
-    const initial = 32;
+    const initial = step === 0 ? 32 : 125;
     const first = initial * firstFactor;
     const totalFactor = firstFactor * secondFactor;
     const last = initial * totalFactor;

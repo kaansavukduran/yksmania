@@ -1,3 +1,4 @@
+import { power039Fraction, power039Scalar, power039ScientificInput } from "../powersSource039Model";
 import { poly, pt, seg, txt, v, vec, type El, type FigureDef, type Tone } from "./figureKit";
 import { cell, frac, nf, pad, rect, sup, tn } from "./mathFigures062TytKit";
 
@@ -364,6 +365,41 @@ const growth: FigureDef = {
   },
 };
 
+const scientificNormalization: FigureDef = {
+  caption: "Katsayı 1 ile 10 arasına geldiğinde 10’un üssü ters yönde değişir. Üst ve alt satırın aynı sonucu vermesi, virgülü kaydırırken değerin korunduğunu gösterir.",
+  alt: "Üstte başlangıç katsayısı ve 10’un üssü, altta normalleştirilmiş eşdeğer yazım. İki ok katsayı ve üssün değişimini ayrı ayrı gösterir.",
+  steps: ["24 × 10⁴", "0,36 × 10⁸"],
+  draw: (_, step) => {
+    const coefficient = step === 0 ? power039Fraction(24) : power039Fraction(36, 100);
+    const exponent = step === 0 ? 4 : 8;
+    const result = power039ScientificInput(coefficient, exponent);
+    if (!result.ok || result.normalized.kind !== "normalized") throw new Error("SCIENTIFIC_CASE");
+    const normalized = result.normalized;
+    const change = normalized.exponent - exponent;
+    const start = nf(power039Scalar(coefficient));
+    const end = nf(power039Scalar(normalized.coefficient));
+    return {
+      els: [
+        txt(v(0, 2), start, "c", {tone: "a", bold: true}),
+        txt(v(4, 2), `10${sup(exponent)}`, "c", {tone: "c", bold: true}),
+        txt(v(2, 2), "×", "c"),
+        vec(v(0, 1.7), v(0, 0.3), {tone: "a", thin: true}),
+        vec(v(4, 1.7), v(4, 0.3), {tone: "c", thin: true}),
+        txt(v(0, 0), end, "c", {tone: "a", bold: true}),
+        txt(v(4, 0), `10${sup(normalized.exponent)}`, "c", {tone: "c", bold: true}),
+        txt(v(2, 0), "×", "c"),
+        txt(v(-0.3, 1), change > 0 ? "÷ 10" : "× 10", "w", {tone: "a"}),
+        txt(v(4.3, 1), change > 0 ? "üs +1" : "üs −1", "e", {tone: "c"}),
+        ...pad(-2, 2.7, 6, -0.8),
+      ],
+      readout: [
+        `${start} × 10${sup(exponent)} = ${end} × 10${sup(normalized.exponent)} = ${tn(power039Scalar(result.value))}`,
+        "İki satır aynı sayıyı gösterir. Son katsayının mutlak değeri 1’e eşit veya büyük, 10’dan küçüktür.",
+      ],
+    };
+  },
+};
+
 export const mathFigures062TytRational: Record<string, Record<string, FigureDef>> = {
   "tyt-mat-rasyonel-kaynak-035": {
     "Denk kesirler aynı noktaya ulaşır": equivalent,
@@ -374,6 +410,7 @@ export const mathFigures062TytRational: Record<string, Record<string, FigureDef>
     "Önce tekrarlayan kuyrukları hizala": repeating,
   },
   "tyt-mat-uslu-sayilar-kaynak-039": {
+    "Normalleştirirken miktarı korumak": scientificNormalization,
     "Negatif üs: karşılık, eksi sonuç değil": ladderPow,
     "İç içe kuvvet: çarpım nerede ortaya çıkar?": nested,
     "Asal tabana geçmek neden işe yarar?": primeBase,

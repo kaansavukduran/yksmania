@@ -852,7 +852,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
-| TYT Matematik | 45 / 45 | 45 · 191 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
+| TYT Matematik | 45 / 45 | 45 · 193 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
 | TYT Geometri | 19 / 19 | 19 · 183 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 283 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
@@ -867,7 +867,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2353** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2355** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
@@ -3719,3 +3719,39 @@ Basit Eşitsizlikler 1.1 fiziksel 7 ve Açı-Kenar-Açı/Kenar-Kenar-Kenar Eşli
 Mutlak Değer’de artık 1 ve 4 uçları için iki uzaklık birlikte değiştirilebiliyor. Toplam ara bölgede 3 kalıyor. Hedef 5 için x=0 ve x=5 doğrulanıyor. Üçgende Benzerlik’te 25 eş birimin 9’u üst üçgeni, 16’sı yamuğu veriyor. Yamuk 64 birim² ise bütün 100, üst üçgen 36 birim². Modeller ayrı Kopya Kağıtlarında da çalışıyor.
 
 Mutlak Değer 1.3.0 fiziksel 8 ve Üçgende Benzerlik 5.1 fiziksel 4–5 ile eşleştirildi. TypeScript, 81 birim, 25 Chromium akışı ve 323 çevrimdışı varlık denetlendi. Seçilen 10 çizim 320, 375 ve 1280 pikselde aynı çakışma denetiminden geçti. Sırada Üslü Sayılar fiziksel 4 ve 7, Üçgende Alan fiziksel 5 var.
+
+## TYT Matematik ve Geometri · 0.161.0 adayı
+
+Üslü Sayılar’da 24 × 10⁴ ve 0,36 × 10⁸ ifadeleri bilimsel gösterime çevrilirken sonuç sabit kalıyor. Üçgende Alan’da tepe tabana paralel taşınınca 30 ve 45 birim²’lik iki alan korunuyor. Aynı modeller ayrı Kopya Kağıtlarından açılıyor.
+
+Üslü Sayılar 1.3.0 fiziksel 4 ve 7 ile Üçgende Alan 5.2.1 fiziksel 5 karşılaştırıldı. TypeScript, 91 birim testi, 27 Chromium akışı ve 323 çevrimdışı varlık doğrulandı. 12 görsel 320, 375 ve 1280 pikselde denetlendi. Sırada Bilimsel Gösterim ve Katsayı ile Çokgenler var.
+
+## TYT Matematik ve Geometri · 0.162.0 adayı
+
+Bilimsel Gösterim ve Katsayı’da 0,0125 mm önce 4, sonra 40 kat büyütülüyor. Model ara uzunluğu 0,05 mm, son uzunluğu 2 mm olarak gösteriyor. Çokgenler’de kenar sayısı değişince komşu köşeler sayımın dışında kalıyor. Düzgün yedigenin 14 köşegeni ve 900/7° iç açısı aynı modelden okunuyor.
+
+Bilimsel Gösterim ve Katsayı fiziksel 5 ile Çokgenler fiziksel 2 ve 5 karşılaştırıldı. TypeScript, 37 birim, 29 Chromium akışı ve 323 çevrimdışı varlık doğrulandı. 14 görsel 320, 375 ve 1280 pikselde çakışmasız açıldı. Sırada Köklü Sayılar fiziksel 8 ve Genel Dörtgenler fiziksel 2 ile 5 var.
+
+## TYT Matematik ve Geometri · 0.163.0 adayı
+
+Köklü Sayılar’da kök eğrisi, negatif dal ve y=x doğrusu, kare alınınca gelen −3 adayının neden elendiğini gösteriyor. Genel Dörtgenler’de dik köşegenler yatay taşıma sırasında 8 ve 14 birim kalıyor. Kenar orta noktalarından oluşan dikdörtgen 4×7 birim, çevresi 22 ve alanı 28 birim².
+
+Köklü Sayılar fiziksel 8 ile Genel Dörtgenler fiziksel 2 ve 5 karşılaştırıldı. TypeScript, 21 birim, 31 Chromium akışı ve 323 çevrimdışı varlık geçti. 16 çizim 320, 375 ve 1280 pikselde denetlendi. Sırada Oran Orantı fiziksel 8 ve Yamuk fiziksel 2 ile 5 var.
+
+## TYT Matematik ve Geometri · 0.164.0 adayı
+
+Oran Orantı’da 120 pompa-saatlik iş, 8 pompayla 15 ve 12 pompayla 10 saatte tamamlanıyor. İş ikiye katlanınca 12 pompa için süre 20 saate çıkıyor. Yamuk dersinde 18 ve 8 tabanlı, yan kenarı 13 birim olan ikizkenar yamukta dikmeler 5’er birimlik iki parça bırakıyor. Yükseklik 12, alan 156 birim².
+
+Oran Orantı fiziksel 8 ve Yamuk fiziksel 2 ile 5 kullanıldı. TypeScript, 10 birim, 33 Chromium akışı ve 323 çevrimdışı varlık doğrulandı. 18 çizim 320, 375 ve 1280 pikselde çakışmasız açıldı. Sırada Sayı Problemleri fiziksel 7 ve Paralelkenar fiziksel 2 ile 5 var.
+
+## TYT Matematik ve Geometri · 0.165.0 adayı
+
+Sayı Problemleri’nde aynı kapasiteyi dolduran iki kutu şeridinden ortak terimler çıkarılıyor. Kalan 6a=3b ilişkisi bir büyük kutunun iki küçük kutu kadar yer kapladığını gösteriyor. Paralelkenar’da verilen üç köşeden dördüncü köşe (9; 5), ortak köşegen ortası (5; 3) ve alan 24 birim² bulunuyor.
+
+Sayı Problemleri fiziksel 1 ve 7 ile Paralelkenar fiziksel 2 ve 5 karşılaştırıldı. 22 birim, 35 gerçek Chromium akışı, 323 çevrimdışı varlık ve üç ekran genişliğinde 20 çizim denetlendi. Sırada Kesir Problemleri fiziksel 6 ve Eşkenar Dörtgen fiziksel 2–3 ile 5 var.
+
+## TYT Matematik ve Geometri · 0.166.0 adayı
+
+Kesir Problemleri’nde 120 birimden önce 30 alınıyor. İkinci kesir 90’ın üçte biriyse 60 birim, 120’nin üçte biriyse 50 birim kalıyor. Eşkenar Dörtgen’de köşegenler 16 ve 12 olunca yarımlardan kenar 10, alan 96 ve iç yarıçap 4,8 bulunuyor.
+
+Kesir Problemleri fiziksel 6, Eşkenar Dörtgen fiziksel 2–3 ve 5 karşılaştırıldı. Yeni köklü denklem, ters orantı, kapasite ve kesir örnekleri öğrenci anlatımı ile Kopya Kağıtlarında açılıyor. Eski ders kayıtları ile eski kapasite çiziminin dört adımı kendi doğrulamasını geçiyor. TypeScript, 45 birim, 37 Chromium, 323 çevrimdışı varlık ve 66 görsel yerleşim kontrolü geçti. Sırada Yaş Problemleri fiziksel 1 ve Dikdörtgen fiziksel 2 ile 5 var.

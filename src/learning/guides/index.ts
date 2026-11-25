@@ -1,3 +1,4 @@
+import { tytTheorySupplements } from "../tytTheorySupplements";
 import { rotationFromCenterExample, rotationFromCenterSection, transformationMethods } from "../translationMethods072";
 import { electroscopeExample, electroscopeSection } from "../electroscopeInduction070";
 import { groundingTransferExample, groundingTransferSection } from "../groundingTransfer074";
@@ -388,6 +389,18 @@ for (const extension of forge020BiologyGuideExtensions) {
 // The reader can extend the catalog while preserving its historical entries.
 export function studyGuide(lessonId: string) {
   const guide = clarifiedGuideView(lessonGuides.get(lessonId));
+  const supplement = tytTheorySupplements[lessonId];
+  if (guide && supplement) {
+    const { title, figureTitle, paragraphs, appendSection } = supplement;
+    const sections = appendSection
+      ? [...guide.sections, { title, figureTitle, paragraphs }]
+      : guide.sections.map((section) =>
+          section.title === title
+            ? { ...section, paragraphs: [...section.paragraphs, ...paragraphs], figureTitle }
+            : section
+        );
+    return { ...guide, sections };
+  }
   if (guide?.id === "donusum-oteleme-donme") {
     const components = "Öteleme vektörünün iki bileşenini oku";
     const triangle = "Şekli köşe köşe taşı, bağıntıyı geri denetle";

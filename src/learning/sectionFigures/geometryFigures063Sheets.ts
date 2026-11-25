@@ -748,10 +748,37 @@ const alan: Record<string, FigureDef> = {
   "Alan oranını bulurken ortak olan büyüklüğü sadeleştir": {
     caption:
       "Adım 1: D'yi BC üzerinde kaydır; ABD ile ADC aynı A yüksekliğini paylaşır, toplam 12 birimkare BD : DC oranında bölünür. Adım 2: tepe BC'ye paralel bir doğru üzerinde kayarsa taban 6 ve yükseklik 4 değişmez, alan 12 kalır; eş alan eş üçgen demek değildir.",
-    alt: "İki adım: tabanı 6, yüksekliği 4 olan ABC üçgeninde BC üzerinde kayan D ve iki tonda ABD, ADC; BC'ye paralel kesikli doğru üzerinde kayan P tepesi ve PBC üçgeni.",
-    steps: ["Ortak tepe: taban oranı", "Ortak taban: tepe paralelde"],
+    alt: "Ortak yüksekliği olan iki renkli üçgen. Son adımda taban 25, yükseklik 6, alan payları 30 ve 45 birim². P yatay konumunu değiştirir.",
+    steps: ["Ortak tepe: taban oranı", "Ortak taban: tepe paralelde", "Alan 75, parçalar 30 ve 45"],
     param: { label: "Noktayı kaydır", min: 1, max: 5, step: 0.5, init: 2 },
     draw: (t, step) => {
+      if (step === 2) {
+        const height = 6;
+        const area = 75;
+        const whole = 2 * area / height;
+        const part = whole * 2 / 5;
+        const topX = (t - 1) * (whole + 10) / 4 - 5;
+        const scaled = (x: number, y: number) => v(x / 4, y / 4);
+        const A = scaled(0, 0);
+        const D = scaled(part, 0);
+        const B = scaled(whole, 0);
+        const P = scaled(topX, height);
+        const H = scaled(topX, 0);
+        return {
+          els: [
+            line(scaled(-6, 0), scaled(31, 0), {tone: "muted", thin: true, dash: true, ext: 0}),
+            poly([P, A, D], {fill: "a", thin: true}),
+            poly([P, D, B], {fill: "b", thin: true}),
+            seg(P, H, {tone: "c", dash: true}),
+            right(H, topX < whole / 2 ? B : A, P, "c"),
+            pt(P, "P", "n"), pt(A, "A", "sw"), pt(D, "D", "s"), pt(B, "B", "se"),
+          ],
+          readout: [
+            `AB = 2 · ${area} / ${height} = ${whole} birim. AD = ${part}, DB = ${whole - part}.`,
+            `Alan(PAD) = ${part * height / 2}; alan(PDB) = ${(whole - part) * height / 2} birim². Yükseklik ${height} kalır.`,
+          ],
+        };
+      }
       const B = v(0, 0);
       const C = v(6, 0);
       const A = v(2, 4);

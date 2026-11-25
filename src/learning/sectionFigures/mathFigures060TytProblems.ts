@@ -165,14 +165,38 @@ const usedLeft: FigureDef = {
   },
 };
 
-const CHAIN_STEPS = ["Bütünün 1/4’ü", "Kalanın 2/3’ü", "Son kalan"];
+const CHAIN_STEPS = ["Bütünün 1/4’ü", "Kalanın 2/3’ü", "Son kalan", "120 birimde iki farklı bütün"];
 const chainFraction: FigureDef = {
   caption:
     "Önce bütünün 1/4’ü, sonra kalanın 2/3’ü harcanıyor. Çubuk 12 eşit parça: ilk harcama 3 parça, kalan 9 parçanın 2/3’ü 6 parça (N/2), son kalan 3 parça (N/4). İkinci kesrin tabanı başlangıç değil ara kalandır; N − N/4 − 2N/3 yanlış modeldir.",
-  alt: "On iki hücreli çubuk; adım adım ilk üç hücre, sonra altı hücre harcanmış renkte; kalan hücreler vurgulu.",
+  alt: "On iki eşit hücreli çubuk, ilk ve ikinci kullanım farklı renkte. Son adımda ara kalanla ilk bütünden alınan iki ayrı miktar karşılaştırılır.",
   steps: CHAIN_STEPS,
   draw: (_, step) => {
     const w = 0.62, els: El[] = [];
+    if (step === 3) {
+      const total = 120;
+      const cellAmount = total / 12;
+      const first = total / 4;
+      const remainder = total - first;
+      const rows = [
+        { label: "Ara kalanın 1/3’ü", y: 1.55, second: remainder / 3 },
+        { label: "İlk bütünün 1/3’ü", y: 0, second: total / 3 },
+      ];
+      for (const row of rows) {
+        for (let i = 0; i < 12; i++) {
+          const tone = i * cellAmount < first ? "warn" : i * cellAmount < first + row.second ? "c" : "a";
+          els.push(rect(i * w, row.y, w - 0.06, 0.9, tone));
+        }
+        els.push(txt(v(0, row.y + 1.05), row.label, "ne", { small: true }));
+      }
+      return {
+        els: [...els, ...pad(-0.55, 3.2, 12 * w + 0.4, -0.4)],
+        readout: [
+          `İlk pay ${first}. Ara kalan ${remainder}; ikinci pay ${rows[0].second}. ${total} − ${first} − ${rows[0].second} = ${remainder - rows[0].second} birim kalır.`,
+          `İkinci pay ilk bütünden alınırsa ${rows[1].second}. ${total} − ${first} − ${rows[1].second} = ${remainder - rows[1].second} birim kalır.`,
+        ],
+      };
+    }
     for (let i = 0; i < 12; i++) {
       const tone: Tone = i < 3 ? "warn" : i < 9 && step >= 1 ? "c" : "a";
       els.push(rect(i * w, 0, w - 0.06, 0.9, tone));
@@ -302,6 +326,28 @@ const capacity: FigureDef = {
         ],
       };
     }
+    if (step === 4) {
+      const first = { small: 10, large: 4 };
+      const second = { small: 4, large: 7 };
+      const extraSmall = first.small - second.small;
+      const extraLarge = second.large - first.large;
+      const largeUnits = extraSmall / extraLarge;
+      row(1.3, first.small, first.large, second.small, first.large, a * largeUnits);
+      row(0, second.small, second.large, second.small, first.large, a * largeUnits);
+      els.push(
+        txt(v(-0.2, 1.7), "10a + 4b", "w", { tone: "ink", small: true }),
+        txt(v(-0.2, 0.4), "4a + 7b", "w", { tone: "ink", small: true }),
+        ...pad(-2.3, 2.8, 6.0, -0.7),
+      );
+      return {
+        els,
+        readout: [
+          `Soluk 4a ve 4b iki satırda aynı. Kalan: ${extraSmall}a = ${extraLarge}b, b = ${largeUnits}a.`,
+          `İlk düzen: 10 + 4·${largeUnits} = ${first.small + first.large * largeUnits} küçük kutu yeri.`,
+          `İkinci düzen: 4 + 7·${largeUnits} = ${second.small + second.large * largeUnits} küçük kutu yeri.`,
+        ],
+      };
+    }
     row(1.3, 18, 8, 12, 8);
     row(0, 12, 10, 12, 8);
     els.push(txt(v(-0.2, 1.7), "18a + 8b", "w", { tone: "ink", small: true, bold: true }), txt(v(-0.2, 0.4), "12a + 10b", "w", { tone: "ink", small: true, bold: true }));
@@ -310,6 +356,11 @@ const capacity: FigureDef = {
     const lines = [["İki düzen aynı alanı doldurur: 18a + 8b = 12a + 10b.", "Şerit boyları eşit."], ["Ortak 12a + 8b çıkar: 6a = 2b.", "Soluk hücreler iki satırda aynı."], ["b = 3a: bir büyük kutu = üç küçük kutu.", "a’nın gerçek değeri gerekmez."]];
     return { els, readout: lines[step] };
   },
+};
+
+export const capacityWithBoxExample: FigureDef = {
+  ...capacity,
+  steps: [...CAP_STEPS, "Başka iki kutu düzeni"],
 };
 
 const budget: FigureDef = {

@@ -1,3 +1,4 @@
+import { tytTheorySupplements } from "./tytTheorySupplements";
 import { probabilitySheet036 } from "./probabilitySource036";
 import { statisticsSource037QuickText } from "./statisticsSource037Revision";
 import { countingSheets034035 } from "./countingSources034035";
@@ -155,6 +156,11 @@ export interface CheatSheet {
 }
 
 const revisedSectionTextByLesson = new Map([
+  ["bilimsel-gosterim-katsayi", new Map([
+    ["Birbirini izleyen büyütmeleri çarp", [
+      "İkinci çarpanı artık büyümüş uzunluğa uygula. 0,0125 mm önce 4 katıyla 0,05 mm, sonra 40 katıyla 2 mm olur. Tek işlemde çarpan 4·40=160 olur. Katsayıların birimi yoktur.",
+    ]],
+  ])],
   ["isi-ve-sicaklik", new Map([
     [specificHeatTitle, [
       "Öz ısı örnekleri J/(kg·K) cinsindeyse 4.184’e bölerek cal/(g·°C) birimine geç. Demir 448 / 4.184 ≈ 0,107.",
@@ -452,7 +458,14 @@ export const builtInCheatSheets = new Map<string, CheatSheet>(
     ...linearEquationsSource036Sheets,
     ...basicInequalitiesSource037Sheets,
     ...absoluteValueSource012Sheets,
-  ...powersSource039Sheets,
+    ...powersSource039Sheets.map((sheet) => ({
+      ...sheet,
+      sections: sheet.sections.map((section) =>
+        section.title === "Bilimsel standart"
+          ? { ...section, figureTitle: "Normalleştirirken miktarı korumak" }
+          : section
+      ),
+    })),
     ...geometryCircle040Sheets,
     ...permutationSheets032033,
     ...countingSheets034035,
@@ -466,6 +479,18 @@ export const builtInCheatSheets = new Map<string, CheatSheet>(
 export function studyCheatSheet(topicId: string): CheatSheet | undefined {
   const sheet = builtInCheatSheets.get(topicId);
   const lessonId = sheet?.lessonId;
+  const supplement = lessonId ? tytTheorySupplements[lessonId] : undefined;
+  if (sheet && supplement) {
+    const { title, figureTitle, summary, appendSection } = supplement;
+    const sections = appendSection
+      ? [...sheet.sections, { title, figureTitle, text: [summary] }]
+      : sheet.sections.map((section) =>
+          section.title === title
+            ? { ...section, text: [...section.text, summary], figureTitle }
+            : section
+        );
+    return { ...sheet, sections };
+  }
   if (!lessonId || !["enerji-ve-hareket", "isi-ve-sicaklik", "hal-degisimi", "donusum-oteleme-donme", "durgun-elektrik", "elektrik-akimi", "basinc", "sivilarin-kaldirma-kuvveti", "dalgalara-giris", "yay-dalgalari", "su-dalgalari", "ses-deprem-dalgalari"].includes(lessonId)) return sheet;
   const guide = studyGuide(lessonId);
   return guide ? lessonSheet(lessonId, guide) : sheet;

@@ -7658,5 +7658,1764 @@
         }
       }
     ]
+  },
+  {
+    "version": "0.161.0",
+    "receipts": [
+      {
+        "surface": "guides",
+        "id": "alan-donusumleri",
+        "after": "e8db8d8608883b12d5bb51288ef42db44dacee936df360d6e46da586a404503a",
+        "prior": {
+          "sections": [
+            {
+              "title": "Alan, kaplanan bölgenin ölçüsüdür",
+              "paragraphs": [
+                "Uzunluk bir çizginin, çevre sınırın toplam uzunluğunun, alan ise düzlemde kaplanan bölgenin ölçüsüdür. Dikdörtgende 4 cm ve 7 cm kenarların alanı 28 cm², çevresi 22 cm olur. 4 ile 7’yi toplayıp alan bulamayız. Şeklin eğik görünmesi alanın bulunamayacağı anlamına gelmez; uygun bir taban ve ona ait dik uzaklık aranır.",
+                "Uzunluklar aynı birime getirildikten sonra çarpılır. 1 m=100 cm olduğundan 1 m²=10 000 cm²’dir; yalnız 100 ile çarpmak alan dönüşümünü tamamlamaz. Örneğin 50 cm ile 0,8 m kenarlı dikdörtgenin alanı 50·80=4000 cm²=0,4 m². Birim kareleri sayma fikri, formüllerde neden iki uzunluğun çarpıldığını açıklar."
+              ]
+            },
+            {
+              "title": "Tabanı seçtiğinde yüksekliği de yeniden seçmiş olursun",
+              "paragraphs": [
+                "ABC üçgeninde BC’yi taban seçersek yükseklik, A’dan BC doğrusuna indirilen dikmenin uzunluğudur. Aynı şekil için AB başka bir taban olabilir; bu durumda yükseklik C’den AB doğrusuna olan dik uzaklıktır. Her kenar kendi karşısındaki köşenin o kenar doğrusuna uzaklığıyla eşleştirilmelidir. Bir kenarın yanına yazılmış her sayı yükseklik değildir.",
+                "Dar açılı üçgende yüksekliklerin ayakları kenarların üzerinde olabilir. Geniş açılı üçgende seçilen tabana ait dikmenin ayağı kenarın uzantısına düşebilir; alan formülü değişmez. Dik üçgende dik kenarlardan biri taban, diğeri onun yüksekliği olur. Eğik kenarı yüksekliğin yerine kullanmak, dik uzaklıkla yan uzunluğu karıştırmaktır. Çizim ölçekli değilse dikliği görünüşten değil verilen işaret ve koşullardan çıkar."
+              ]
+            },
+            {
+              "title": "Parçaları taşırken hangi işlemler alanı korur?",
+              "paragraphs": [
+                "Bir parçayı düzlemde kaydırmak, döndürmek veya yansıtmak uzunluklarını ve alanını değiştirmez; bu işlemler parçanın eş bir görüntüsünü oluşturur. Parçaları boşluksuz ve üst üste binmeden yeniden birleştirirsek toplam alan aynı kalır. Bir parçayı büyütmek, küçültmek, silmek veya aynı bölgeyi iki kez saymak bu gerekçeyi bozar.",
+                "Modelde paralelkenarın bir yanındaki üçgen karşı boşluğa taşınır. Taşınan üçgenin büyüklüğü değişmez; kalan parçayla birlikte tabanı b, yüksekliği h olan dikdörtgen olur. Modelde tabanı veya yüksekliği değiştirmek yeni bir şekil üretir; bununla yalnız taşıma adımını aynı şey sanma. Bir şekilden diğerine geçerken alanın korunup korunmadığını her parçayı izleyerek denetle."
+              ]
+            },
+            {
+              "title": "Paralelkenarda alan: eğikliği değil dik uzaklığı kullan",
+              "paragraphs": [
+                "Paralelkenarın karşılıklı kenarları paraleldir. Seçilen taban boyunca iki paralel doğru arasındaki dik uzaklık sabittir. Kesip yeniden yerleştirme, A=b·h formülünü dikdörtgene bağlar. Yan kenar 7 cm ve taban 10 cm verildiğinde alanı 70 cm² diyemeyiz; yan kenarın tabana dik olduğu veya ona ait uygun yüksekliğin verildiği bilinmelidir.",
+                "İki komşu kenar a,b ve aralarındaki açı α biliniyorsa ilgili yükseklik b·sinα olur; A=a·b·sinα. Açının hangi iki kenar arasında olduğunu denetle. Dikdörtgende α=90° olduğundan sinα=1 ve a·b elde edilir. Taban ve dik yükseklik aynı kaldıkça paralelkenarın eğiminin değişmesi alanı değiştirmez; çevre ise değişebilir."
+              ]
+            },
+            {
+              "title": "Üçgen alanındaki yarım nereden gelir?",
+              "paragraphs": [
+                "Bir üçgenin eş bir kopyası uygun biçimde döndürülüp yanına getirildiğinde tabanı b, dik yüksekliği h olan paralelkenar oluşur. Toplam alan b·h, iki eş üçgenin her birinin alanı b·h/2 olur. 1/2 katsayısı bir ezber düzeltmesi değil, iki eş parçanın aynı bütünü paylaşmasının sonucudur. Geniş açılı üçgende de taban doğrusu ve dik uzaklık kullanılarak aynı formül geçerlidir.",
+                "ABC üçgeninin BC=a, CA=b, AB=c kenarlarına ait dik yükseklikleri sırasıyla hₐ,hᵦ,h𝒸 olsun. Aynı alan A=a·hₐ/2=b·hᵦ/2=c·h𝒸/2 ile hesaplanır. Dik üçgende iki dik kenarın çarpımının yarısı kullanılabilir. İki kenar b,c ve aralarındaki açı α biliniyorsa A=b·c·sinα/2; arada olmayan açı bu formüle doğrudan yazılamaz."
+              ]
+            },
+            {
+              "title": "Alan oranını bulurken ortak olan büyüklüğü sadeleştir",
+              "paragraphs": [
+                "A ve D köşelerinin BC doğrusuna olan dik uzaklıkları h₁,h₂ ise ABC ve DBC üçgenleri aynı BC tabanını paylaşır: alan oranı h₁/h₂’dir. A ile D aynı paralel üzerinde ve bu paralel BC’ye paralelse yükseklikler eşittir; alanlar da eşittir. İki şeklin eş alanlı olması tek başına eş veya benzer olduklarını kanıtlamaz.",
+                "ABC üçgeninde D, BC üzerinde bir nokta olsun. ABD ve ADC üçgenlerinin A’dan BC doğrusuna yükseklikleri aynıdır; A(ABD)/A(ADC)=BD/DC. Örneğin BD:DC=2:3 ise alanlar da 2:3 oranında paylaşılır. Büyük üçgenin alanını küçük parçalara bölerken oran paylarının toplamını kullan: toplam 5 paydır. Tabanların aynı doğru üzerinde oluşu ortak yükseklik gerekçesi için önemlidir."
+              ]
+            },
+            {
+              "title": "Kenarortay ve ağırlık merkezinde eş alanlar",
+              "paragraphs": [
+                "Bir kenarortay, köşeyi karşı kenarın orta noktasına birleştirir. BC’nin orta noktası D ise BD=DC; ortak yükseklikten ABD ve ADC eş alanlıdır. Kenarortay iki küçük üçgenin her durumda eş üçgenler olduğunu söylemez; kenar ve açıları ayrıca denetlemeden eşlik sonucu çıkarılmaz.",
+                "Üç kenarortay ağırlık merkezinde kesişir. Kenarların orta noktalarıyla birlikte çizilen üç kenarortay, başlangıç üçgenini altı eş alanlı küçük üçgene ayırır. Bu eş alanlı parçalar genel bir üçgende aynı biçimde olmak zorunda değildir. Toplam alan 72 birim² ise her küçük parçanın alanı 12 birim² olur; şeklin kaç küçük parçayı birleştirdiğini sayarak daha büyük bölgeler bulunabilir."
+              ]
+            },
+            {
+              "title": "Benzerlikte uzunluk oranı ile alan oranını ayır",
+              "paragraphs": [
+                "Benzer iki üçgende karşılıklı uzunluklar k katına çıkıyorsa yükseklik de k katına çıkar. Alan b·h/2 olduğundan alan k² katına çıkar. Uzunluk oranı 3/2 ise alan oranı 9/4; alan oranı 25/9 ise pozitif uzunluk oranı 5/3’tür. Yalnız bir tabanın üç kat olması, yükseklik sabitken alanı üç kat yapar; iki şeklin benzerliği verilmeden otomatik dokuz kat sonucu çıkarma.",
+                "Eşlik, karşılıklı uzunlukların ve açıların korunduğu daha özel durumdur; benzerlik oranı 1 olan benzer şekiller eştir. Alanların eşitliği tek başına ne eşlik ne benzerliktir. Kenarları 2 ve 6 olan dikdörtgenle 3 ve 4 olan dikdörtgenin alanları 12’dir ama kenar oranları uyuşmadığından benzer değillerdir. Çevresi eş olan şekillerin de alanları farklı olabilir."
+              ]
+            },
+            {
+              "title": "Paralelkenarı bölen doğrularda alan ilişkileri",
+              "paragraphs": [
+                "ABCD sıralı köşeli bir paralelkenar olsun. AC köşegeni ABC ve ADC üçgenlerini eş alanlara ayırır; karşı kenarlar eşit ve paralel olduğundan iki üçgen eştir. E, DC kenarı üzerindeyse ABE üçgeninin tabanı AB ve yüksekliği bütün paralelkenarın yüksekliğidir. Bu yüzden A(ABE)=A(ABCD)/2; kalan ADE ile BCE alanlarının toplamı da öteki yarıdır.",
+                "K, paralelkenarın içindeki herhangi bir nokta olsun. ADK ile BCK üçgenlerinin AD ve BC tabanları eşittir; bu tabanlara K’dan olan uzaklıkların toplamı iki paralel doğru arasındaki uzaklıktır. Bu nedenle A(ADK)+A(BCK)=A(ABCD)/2. Aynı şekilde A(ABK)+A(CDK)=A(ABCD)/2. Bu toplamlar eş olsa da tek tek dört üçgenin alanları her K için aynı değildir.",
+                "Daha ayrıntılı kesmede O, AC köşegeni üzerinde seçilsin. O’dan AB’ye paralel çizilen doğru AD ve BC’yi N,L’de; AD’ye paralel çizilen doğru DC ve AB’yi M,K’da kessin. Oluşan DNOM ile KBLO küçük paralelkenarlarının alanları eşittir. O’nun köşegen üzerinde olması ve doğruların belirtilen paralellikleri bu sonuç için gereklidir; herhangi bir iç noktaya aynı sonucu koşulsuz uygulama. Orta noktalı ve paralelli şekillerde önce eş taban/yükseklik veya kenarortay ilişkilerini kur, sonra alan paylarını etiketle; resmin görünüşüne bakarak sayı ezberleme."
+              ]
+            },
+            {
+              "title": "Bir çözümün son denetimi: şekil, diklik, parça ve birim",
+              "paragraphs": [
+                "Verilen şekil üçgen mi paralelkenar mı? Taban ile ona ait yükseklik doğru eşleştirildi mi? Üçgendeki 1/2 katsayısı kullanıldı mı? Bir bölge çıkarılıyorsa alan gerçekten bütünden mi çıkarılıyor? Taşınan parçalar eş boyutta mı, yeni dizilişte örtüşme veya boşluk var mı? Sonuç uzunluk birimiyle değil kare birimle yazılmalıdır.",
+                "Çizim yardımcıdır; açıkça verilmemiş diklik, paralellik, orta nokta veya eşliği göz kararı ekleme. Sonuç şüpheliyse daha basit bir özel durumu deneyebilirsin: paralelkenarı dikdörtgene, dik üçgeni iki katı dikdörtgene dönüştür. Ancak tek bir çizim veya sayısal deneme genel teoremin kanıtı değildir. Model bir örnek düzeni gösterir; genelleme hangi uzunluk ve ilişkilerin korunduğuyla gerekçelendirilir."
+              ]
+            }
+          ],
+          "source": "MEBİ TYT Matematik Konu Özetleri PDF s.139–140 ve 147–148 (basılı 137–138 ve 145–146): üçgende alan, ortak taban/yükseklik, kenarortay/ağırlık merkezi, benzerlik, sinüs ve paralelkenarda alan ilişkileriyle karşılaştırılan özgün açıklamalar. Modelin mevcut kesme-birleştirme yapısı korunur; buradaki çözümlü örnekler resmî sınav sorusu değildir."
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "lesson:alan-donusumleri",
+        "after": "18eb701d94164e9062e03a49d4f35931dfa349f3bfc7f3d72dd47c41c64cc2d7",
+        "prior": {
+          "sections": [
+            {
+              "title": "Alan, kaplanan bölgenin ölçüsüdür",
+              "text": [
+                "Uzunluk bir çizginin, çevre sınırın toplam uzunluğunun, alan ise düzlemde kaplanan bölgenin ölçüsüdür. Dikdörtgende 4 cm ve 7 cm kenarların alanı 28 cm², çevresi 22 cm olur. 4 ile 7’yi toplayıp alan bulamayız. Şeklin eğik görünmesi alanın bulunamayacağı anlamına gelmez; uygun bir taban ve ona ait dik uzaklık aranır."
+              ]
+            },
+            {
+              "title": "Tabanı seçtiğinde yüksekliği de yeniden seçmiş olursun",
+              "text": [
+                "ABC üçgeninde BC’yi taban seçersek yükseklik, A’dan BC doğrusuna indirilen dikmenin uzunluğudur. Aynı şekil için AB başka bir taban olabilir; bu durumda yükseklik C’den AB doğrusuna olan dik uzaklıktır. Her kenar kendi karşısındaki köşenin o kenar doğrusuna uzaklığıyla eşleştirilmelidir. Bir kenarın yanına yazılmış her sayı yükseklik değildir."
+              ]
+            },
+            {
+              "title": "Parçaları taşırken hangi işlemler alanı korur?",
+              "text": [
+                "Bir parçayı düzlemde kaydırmak, döndürmek veya yansıtmak uzunluklarını ve alanını değiştirmez; bu işlemler parçanın eş bir görüntüsünü oluşturur. Parçaları boşluksuz ve üst üste binmeden yeniden birleştirirsek toplam alan aynı kalır. Bir parçayı büyütmek, küçültmek, silmek veya aynı bölgeyi iki kez saymak bu gerekçeyi bozar."
+              ]
+            },
+            {
+              "title": "Paralelkenarda alan: eğikliği değil dik uzaklığı kullan",
+              "text": [
+                "Paralelkenarın karşılıklı kenarları paraleldir. Seçilen taban boyunca iki paralel doğru arasındaki dik uzaklık sabittir. Kesip yeniden yerleştirme, A=b·h formülünü dikdörtgene bağlar. Yan kenar 7 cm ve taban 10 cm verildiğinde alanı 70 cm² diyemeyiz; yan kenarın tabana dik olduğu veya ona ait uygun yüksekliğin verildiği bilinmelidir."
+              ]
+            },
+            {
+              "title": "Üçgen alanındaki yarım nereden gelir?",
+              "text": [
+                "Bir üçgenin eş bir kopyası uygun biçimde döndürülüp yanına getirildiğinde tabanı b, dik yüksekliği h olan paralelkenar oluşur. Toplam alan b·h, iki eş üçgenin her birinin alanı b·h/2 olur. 1/2 katsayısı bir ezber düzeltmesi değil, iki eş parçanın aynı bütünü paylaşmasının sonucudur. Geniş açılı üçgende de taban doğrusu ve dik uzaklık kullanılarak aynı formül geçerlidir."
+              ]
+            },
+            {
+              "title": "Alan oranını bulurken ortak olan büyüklüğü sadeleştir",
+              "text": [
+                "A ve D köşelerinin BC doğrusuna olan dik uzaklıkları h₁,h₂ ise ABC ve DBC üçgenleri aynı BC tabanını paylaşır: alan oranı h₁/h₂’dir. A ile D aynı paralel üzerinde ve bu paralel BC’ye paralelse yükseklikler eşittir; alanlar da eşittir. İki şeklin eş alanlı olması tek başına eş veya benzer olduklarını kanıtlamaz."
+              ]
+            },
+            {
+              "title": "Kenarortay ve ağırlık merkezinde eş alanlar",
+              "text": [
+                "Bir kenarortay, köşeyi karşı kenarın orta noktasına birleştirir. BC’nin orta noktası D ise BD=DC; ortak yükseklikten ABD ve ADC eş alanlıdır. Kenarortay iki küçük üçgenin her durumda eş üçgenler olduğunu söylemez; kenar ve açıları ayrıca denetlemeden eşlik sonucu çıkarılmaz."
+              ]
+            },
+            {
+              "title": "Benzerlikte uzunluk oranı ile alan oranını ayır",
+              "text": [
+                "Benzer iki üçgende karşılıklı uzunluklar k katına çıkıyorsa yükseklik de k katına çıkar. Alan b·h/2 olduğundan alan k² katına çıkar. Uzunluk oranı 3/2 ise alan oranı 9/4; alan oranı 25/9 ise pozitif uzunluk oranı 5/3’tür. Yalnız bir tabanın üç kat olması, yükseklik sabitken alanı üç kat yapar; iki şeklin benzerliği verilmeden otomatik dokuz kat sonucu çıkarma."
+              ]
+            },
+            {
+              "title": "Paralelkenarı bölen doğrularda alan ilişkileri",
+              "text": [
+                "ABCD sıralı köşeli bir paralelkenar olsun. AC köşegeni ABC ve ADC üçgenlerini eş alanlara ayırır; karşı kenarlar eşit ve paralel olduğundan iki üçgen eştir. E, DC kenarı üzerindeyse ABE üçgeninin tabanı AB ve yüksekliği bütün paralelkenarın yüksekliğidir. Bu yüzden A(ABE)=A(ABCD)/2; kalan ADE ile BCE alanlarının toplamı da öteki yarıdır."
+              ]
+            },
+            {
+              "title": "Bir çözümün son denetimi: şekil, diklik, parça ve birim",
+              "text": [
+                "Verilen şekil üçgen mi paralelkenar mı? Taban ile ona ait yükseklik doğru eşleştirildi mi? Üçgendeki 1/2 katsayısı kullanıldı mı? Bir bölge çıkarılıyorsa alan gerçekten bütünden mi çıkarılıyor? Taşınan parçalar eş boyutta mı, yeni dizilişte örtüşme veya boşluk var mı? Sonuç uzunluk birimiyle değil kare birimle yazılmalıdır."
+              ]
+            }
+          ],
+          "source": "MEBİ TYT Matematik Konu Özetleri PDF s.139–140 ve 147–148 (basılı 137–138 ve 145–146): üçgende alan, ortak taban/yükseklik, kenarortay/ağırlık merkezi, benzerlik, sinüs ve paralelkenarda alan ilişkileriyle karşılaştırılan özgün açıklamalar. Modelin mevcut kesme-birleştirme yapısı korunur; buradaki çözümlü örnekler resmî sınav sorusu değildir."
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-mat-uslu-sayilar-kaynak-039",
+        "after": "a1fe4244bb9ec1e38d929752210061c17fe01986cf067f97fbee0230173c430c",
+        "prior": {
+          "sections": [
+            {
+              "title": "Tanım ve parantez",
+              "text": [
+                "a^n, n pozitif tam sayıysa n tane a çarpanıdır. 3⁴=81;4·3=12.",
+                "-2⁴=-16; (-2)⁴=16. Tek üslerde değerlerin çakışması genel eşitlik değildir."
+              ]
+            },
+            {
+              "title": "Sıfır, bir ve negatif taban",
+              "text": [
+                "a¹=a; a≠0 iken a⁰=1. 0ⁿ=0 yalnız pozitif üslerde. 0⁰ ve 0’ın negatif kuvvetleri bu kapsamda tanımsız.",
+                "Negatif tabanda tam sayı üs çiftse pozitif, tekse negatif; (-1)^çift=1, (-1)^tek=-1."
+              ]
+            },
+            {
+              "title": "Negatif üs",
+              "text": [
+                "a≠0 için a^-n=1/aⁿ. Negatif üs sonuç işareti demek değildir.",
+                "(3/4)^-2=16/9; (-2)^-3=-1/8."
+              ]
+            },
+            {
+              "title": "Çarpım, bölüm, iç içe kuvvet",
+              "text": [
+                "Aynı tabanda a^m a^n=a^(m+n); a≠0 için a^m/a^n=a^(m-n).",
+                "Tam sayı üslerde tanımlı ifadeler için(a^m)^n=a^(mn). Rasyonel genel özdeşlikte pozitif taban koşulunu koru."
+              ]
+            },
+            {
+              "title": "Ortak üs ve işlem türü",
+              "text": [
+                "(ab)^n=a^n b^n; (a/b)^n=a^n/b^n; payda 0 olamaz. Sıfır veya negatif üslerde sıfır tabanı da dışlanır.",
+                "2⁵·5⁵=10⁵. Fakat 2³+2⁴=24;2⁷ değil. (1+2)²=9;1²+2²=5."
+              ]
+            },
+            {
+              "title": "Ortak asal ve ortak çarpan",
+              "text": [
+                "4=2²,8=2³,9=3²,27=3³. (4³·8²)/2⁵=2⁷=128.",
+                "c a^n+d a^n=(c+d)a^n. 5^(n+3)-2·5^(n+2)=3·5^(n+2)."
+              ]
+            },
+            {
+              "title": "Verilen kuvvetten yararlan",
+              "text": [
+                "2^x=A,3^x=B→6^x=AB. 3^x=A,5^x=B→75^x=AB².",
+                "2^x=A,3^x=B,5^x=C için 0,18^x=B²/(AC²); asal çarpanların pay/payda yerini koru."
+              ]
+            },
+            {
+              "title": "Denklem",
+              "text": [
+                "a>0, a≠1 iken a^u=a^v⇔u=v. 8^(x-1)=4^(x+2)→x=7. 9^(x-1)=27→x=5/2.",
+                "Taban 1’de üs eşitliği zorunlu değildir; her x çözüm olabilir. Üsler çelişkiye giderse çözüm yoktur. Negatif tabanda tanım alanı/çiftlik ayrı incelenir."
+              ]
+            },
+            {
+              "title": "Karşılaştırma",
+              "text": [
+                "Aynı pozitif tabanda a>1 ise büyük üs büyük;0<a<1 ise büyük üs küçük değer verir. a=1’de eşit.",
+                "2¹⁸=8⁶;3⁵=243>5³=125. Ortak üs pozitif tam sayıysa pozitif taban sırası korunur; negatif üste ters döner."
+              ]
+            },
+            {
+              "title": "Rasyonel üs ve sınırlar",
+              "text": [
+                "a>0 için a^(m/n)=(ⁿ√a)^m, n>0; üssü sadeleştir. 27^(-2/3)=1/9.",
+                "Negatif tabanda en sade payda tekse gerçek kök olabilir: (-8)^(1/3)=-2; çiftse gerçek değil. (-8)^(2/6)=-2.",
+                "((-1)²)^(1/2)=1 ama(-1)^(2·1/2)=-1; negatif tabanda iç içe rasyonel kural koşulsuz değildir."
+              ]
+            },
+            {
+              "title": "Bilimsel standart",
+              "text": [
+                "Sıfırdan farklı sayıda a×10^n, n tam sayı,1≤|a|<10. -3×10⁴ de geçerlidir. Sıfır ayrı yazılır.",
+                "810000000=8,1×10⁸;0,00042=4,2×10^-4. 72×10⁵=7,2×10⁶;0,36×10⁸=3,6×10⁷."
+              ]
+            },
+            {
+              "title": "Bilimsel işlemler ve karşılaştırma",
+              "text": [
+                "Çarpımda katsayılar çarpılır, üsler toplanır; bölümde katsayılar bölünür, üsler çıkarılır; sonra normalleştirilir.",
+                "Toplam/farkta ortak 10 kuvveti gerekir:6×10⁵+4×10⁶=4,6×10⁶. Pozitif normalleşmiş sayıda önce üs; negatiflerde mutlak değer sırası ters döner."
+              ]
+            },
+            {
+              "title": "Eksen ve süreç",
+              "text": [
+                "Logaritmik eksende eşit aralık eşit oran demektir;8,1×10⁸,10⁹’un tam üstünde değildir. Yaklaşık konumu 8,9085’tir.",
+                "Başlangıç N adım 0’dadır. Pozitif q için adım t: Nq^t. 200·2⁶=12800;80·(1/2)⁴=5.",
+                "q=0’da 0. adım başlangıç,1. adımdan sonra 0’dır; bu 0⁰’a değer atamaz."
+              ]
+            },
+            {
+              "title": "Yöntem, denetim ve hatırlama",
+              "text": [
+                "Önce parantez/tanım alanı; sonra işlem türü ve kuralın koşulu; sonra özgün ifadede kontrol.",
+                "İlk gün 1; tekrar 3., 7., 21. gün. Not kapalıyken yeni örneği gerekçelendir. Görsel keşif, okuma, süre veya manuel onay ustalık/XP kanıtı değildir.",
+                "Bu özet kaynaklı özgün uyarlamadır; resmî soru veya bütün arşiv tamamlandı iddiası taşımaz."
+              ]
+            },
+            {
+              "title": "Toplam, kesirli üs ve yüzde azalma",
+              "text": [
+                "2^(x+1)+2^x=(2+1)·2^x. 24’e eşitse 2^x=8 ve x=3. Kontrolü ilk denklemde yap.",
+                "16^(-3/4): dördüncü kök 2 → üçüncü kuvvet 8 → karşılık 1/8. Sadeleşmiş payda negatif tabanda tanım koşulunu belirler.",
+                "Her tur %p azalışta kalan çarpan 1−p/100. %100’de 0. adım başlangıçtır, ilk turdan sonra miktar sıfırdır."
+              ]
+            },
+            {
+              "title": "Birim başına ölçekleme ve geri kontrol",
+              "text": [
+                "Önce gün sayısıyla toplamı bul, sonra karşılık gelen birim sayısına böl. Bulduğun birim başı değeri hedef birim sayısıyla çarp.",
+                "Okul başına 9 milyon ve 81 okul için 81·9·10⁶=30⁶=7,29×10⁸. Kontrol: toplam / okul başına miktar = 81 okul.",
+                "10’un kuvvetindeki değişimi katsayıyla dengele. 81·10⁷=8,1·10⁸ ve 81·10⁸=8,1·10⁹."
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.162.0",
+    "receipts": [
+      {
+        "surface": "lessons",
+        "id": "tyt-geo-cokgenler-032",
+        "after": "47171eab465044847f67e0f334a66852c45dad808a24d5d8d021957b99cf8f89",
+        "prior": {
+          "source": {
+            "tr": "MEBİ TYT Matematik Konu Özetleri: Çokgenler (basılı 139/PDF 141); Aurelia Tüm Geometri Özeti PDF 9. Kaynak kavramlarından yazılmış özgün anlatım ve öğretim soruları."
+          },
+          "body": [
+            {
+              "title": {
+                "tr": "Önce kapalı şekli ve köşeleri tanı"
+              },
+              "text": {
+                "tr": "Çokgen, düzlemde doğru parçalarının sırayla birleşip kapandığı şekildir. Bu derste kenarlar yalnız komşu uçlarda kesişir; üst üste binmez ve birbirini ortadan kesmez. Böylece basit çokgenlerden söz ederiz. Bir köşede doğrusal devam eden iki parçayı ayrı iki kenar saymayız. En az üç köşe gerekir; n kenar sayısıysa n≥3 bir tam sayıdır.\n\nKenar iki komşu köşeyi birleştirir. Köşegen ise komşu olmayan iki köşeyi birleştiren doğru parçasıdır. Dört köşeli bir şeklin dört kenarı ve dört köşesi vardır; kenarı uzatmak yeni köşe oluşturmaz. Kendi içinden geçen yıldız çizimlerine bu dersteki açı toplamlarını doğrudan uygulama."
+              }
+            },
+            {
+              "title": {
+                "tr": "Dışbükey ve içbükey: çizimdeki fark"
+              },
+              "text": {
+                "tr": "Her iç açı 180°den küçükse basit çokgen dışbükeydir. En az bir iç açı 180°den büyükse içbükeydir; o köşede şekil içeri çöker. İçbükey bir çokgen de basit ve kapalı olabilir. Çizimin görünüşünü kontrol ederken bir kenar uzantısını yeni kenar diye sayma.\n\nDışbükey bir çokgende seçtiğin köşeden diğer uygun köşelere çizilen köşegenler içeride kalır. İçbükeyde bazı köşegenler dışarı taşabilir. Bu nedenle bütün köşegenleri tek köşeden çizerek üçgenlere ayırma açıklamasını dışbükey şekil üzerinde yaparız; basit içbükey çokgen de uygun köşegenlerle n−2 üçgene ayrılır."
+              }
+            },
+            {
+              "title": {
+                "tr": "İç açı toplamını üçgenlerden çıkar"
+              },
+              "text": {
+                "tr": "Dışbükey n kenarlı bir çokgende bir köşeden başlayıp komşu olmayan bütün köşelere köşegen çiz. Şekil n−2 üçgene ayrılır. Her üçgende iç açı toplamı 180° olduğundan toplam (n−2)·180°dir. Örneğin yedigen beş üçgene ayrılır ve toplam 900° olur.\n\nBu toplam için kenarların veya açıların eşit olması gerekmez. Fakat toplamı n’ye bölüp tek bir iç açıyı bulmak için bütün iç açıların eşit olduğu ayrıca bilinmelidir. Bir açı 180°den büyükse toplam formülü bozulmaz; içbükey açıyı küçük açıyla değiştirmek toplamı bozar."
+              }
+            },
+            {
+              "title": {
+                "tr": "Dış açıda aynı dönüş yönünü koru"
+              },
+              "text": {
+                "tr": "Dışbükey çokgenin çevresinde aynı yönde yürüdüğünü düşün. Her köşede ileriye uzatılmış kenardan sonraki kenara dönersin. Her köşeden bu biçimde bir dış açı seçince bir tam dönüş yapılır: toplam 360°dir. Her iç açı ile yanındaki böyle bir dış açı bütünlerdir; toplamları 180°dir.\n\nAynı köşedeki iki farklı dış açıyı birden toplama ve bazı köşelerde yön değiştirme. İçbükey çokgende yönlü dönüşler kullanılır; içeri çöken köşenin dönüşü ters işaretlidir. Bütün dönüş büyüklüklerini pozitif alarak 360° demek genel olarak doğru değildir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Köşegenleri çift saymadan say"
+              },
+              "text": {
+                "tr": "Bir köşeden kendisine veya iki komşusuna köşegen çizilemez; bu yüzden o köşeden n−3 köşegen çıkar. Bütün n köşede sayarsan n(n−3) elde edersin; fakat her köşegeni iki ucundan da saymış olursun. Farklı köşegen sayısı D=n(n−3)/2 olur.\n\nSekizgende bir köşeden 5, toplamda 20 köşegen vardır. Bir köşeden çizilen köşegen sayısı ile ortaya çıkan üçgen sayısı aynı değildir: ilki n−3, ikincisi n−2’dir. D verilen bir soruda n≥3 tam sayı koşulunu sağlayan kökü seç; negatif kök bir çokgeni temsil etmez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Düzgün olmak iki eşitlik ister"
+              },
+              "text": {
+                "tr": "Düzgün çokgende bütün kenar uzunlukları birbirine eşit ve bütün iç açı ölçüleri birbirine eşittir. Yalnız eş kenarlı bir eşkenar dörtgenin açıları 60° ve 120° olabilir; düzgün değildir. Yalnız eş açılı bir dikdörtgenin komşu kenarları 3 ve 5 olabilir; o da düzgün değildir.\n\nDüzgün n-gende bir dış açı δ=360°/n, bir iç açı α=180°−δ olur. Tersi yönde n=360°/δ=360°/(180°−α) yazılır. Sonuç en az 3 olan tam sayı değilse verilen açıyla düzgün çokgen yoktur. Örneğin 145° iç açı 35° dış açı verir; 360/35 tam sayı değildir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Merkez açısı, çevre ve alanı ilişkilendir"
+              },
+              "text": {
+                "tr": "Düzgün çokgenin merkezi bütün köşelere aynı R uzaklığındadır; R çevrel çember yarıçapıdır. Merkezi ardışık iki köşeye bağladığında merkez açısı 360°/n olur. Bu merkez açısı bir dış açıyla aynı ölçüdedir; farklı yerlerdeki iki açıdan söz ediyoruz. Kenar uzunluğu a ise çevre Ç=n·a’dır.\n\nMerkezden bir kenara indirilen dik uzaklığa apotem denir ve ρ ile gösterilir. Merkezden bütün köşelere çizilen parçalar n eş ikizkenar üçgen oluşturur. Her birinin tabanı a, yüksekliği ρ olduğundan toplam alan S=n·a·ρ/2=Ç·ρ/2 olur. Köşeye uzaklık R ile kenara dik uzaklık ρ’yu birbirine karıştırma."
+              }
+            },
+            {
+              "title": {
+                "tr": "Düzgün altıgeni altı eşkenar üçgenle gör"
+              },
+              "text": {
+                "tr": "Düzgün altıgende merkez açısı 60°dir. Merkezden komşu iki köşeye çizilen R uzunlukları bir ikizkenar üçgen kurar; tepe açısı 60° olunca öteki iki açı da 60° olur. Üçgen eşkenardır, bu yüzden R=a’dır. Apotem bu üçgenin yüksekliğidir: ρ=a√3/2.\n\nAltı eşkenar üçgenin alanından S=6·a²√3/4=3√3·a²/2 bulunur. Çevre 6 a’dır. Bir köşe atlayan kısa köşegen a√3, karşı köşelere giden uzun köşegen 2 a’dır. Örneğin a=4 ise kısa köşegen 4√3, uzun köşegen 8 ve alan 24√3 olur."
+              }
+            },
+            {
+              "title": {
+                "tr": "Genel çember formülünün arkasındaki dik üçgen"
+              },
+              "text": {
+                "tr": "Düzgün n-genin merkezini ve bir kenarının iki ucunu birleştir; sonra merkezden kenara dikme indir. İkizkenar üçgen iki eş dik üçgene ayrılır. Bu yarım üçgende açı θ=180°/n, hipotenüs R, karşı kenar a/2 ve komşu kenar ρ’dur. Dik üçgende sin θ=karşı/hipotenüs, cos θ=komşu/hipotenüs, tan θ=karşı/komşu olarak tanımlanır.\n\nBuradan a=2 R·sin(180°/n), ρ=R·cos(180°/n), S=nR²·sin(360°/n)/2 ve S=n·a²/[4 tan(180°/n)] elde edilir. Bu tamamlayıcı bağıntılarda açı birimi derecedir. Önce şekli tanıdığın üçgenlere ayırmak, özellikle kare ve altıgende daha az işlem gerektirir; trigonometrik bağıntılar bu ayrımın genel yazımıdır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Beşgenin özel oranı ve sonuç denetimi"
+              },
+              "text": {
+                "tr": "Düzgün beşgende iç açı 108°, dış açı 72°dir. Köşegenin kenara oranı (1+√5)/2’dir; bu sayıya altın oran denir. Kenar a ise her köşegen a·(1+√5)/2 olur. Bu bağıntı düzgün beşgene aittir; sıradan beşgenin köşegenleri eşit olmak zorunda değildir.\n\nÇözüm sonunda hem n’nin tam sayı olduğunu hem de istenenin açı mı uzunluk mu alan mı olduğunu denetle. Uzunluk birimle, alan birimkareyle yazılır. Düzgünlük yoksa eşit açı veya eşit kenar varsayma. Modelde köşegenleri açıp kapatmak bir açıklama aracıdır; bağımsız soru başarısının yerine geçmez."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "lessons",
+        "id": "bilimsel-gosterim-katsayi",
+        "after": "e1999d11c4c142ae9601969d670a1b514e2842f8724ed14ea560aef7604c8fba",
+        "prior": {
+          "body": [
+            {
+              "title": {
+                "tr": "Katsayı sayı türünü, üs ölçeği görünür kılar"
+              },
+              "text": {
+                "tr": "Sıfırdan farklı bir gerçek sayı a×10ⁿ biçiminde,1≤|a|<10 ve n tam sayı koşullarıyla yazıldığında standart bilimsel gösterimdedir. a katsayı, n üs; 10ⁿ ise ölçek çarpanıdır. 4,7×10⁵ ile 470000 aynı sayıdır. Burada 10⁵, katsayıya beş eklemek değil 100000 ile çarpmaktır.\n\nNegatif sayılar da bu tanıma girer:−6,2×10³ geçerlidir, çünkü katsayının mutlak değeri 6,2'dir. 10 veya −10 katsayıları sınırın dışında; 1 ve −1 içindedir. Sıfır için 1≤|a| koşulu sağlanamaz; standart sıfırdan farklı sayı tanımı içinde zorla bir katsayı seçilmez. Atölye sıfırı ayrıca belirtir ve sahte normalleştirme üretmez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Virgülün yeri ile üs birlikte hareket eder"
+              },
+              "text": {
+                "tr": "Olağan sayıdan bilimsel gösterime geçerken ilk sıfır olmayan rakamdan sonra virgül bırak. 720000 sayısında 7,2 elde etmek için beş basamak sola gidilir; sayı 7,2×10⁵'tir. Virgülün başlangıcı son sıfırın sağıdır; onu 7 ile 2 arasına taşıyan hareketleri say. Basamakları tek tek saymak ezberlenmiş sıfır sayısından daha güvenilirdir.\n\n0,000072 için 7,2'ye ulaşmak virgülü beş basamak sağa götürür; üs −5 olur. Bilimsel gösterimden olağan yazıma dönerken 10'un pozitif kuvveti virgülü sağa, negatif kuvveti sola taşır. İki dönüşümün yönünü karıştırmamak için çarpanı açık yaz:10⁻⁵=0,00001; 7,2 katı 0,000072'dir. Yaklaşık büyüklük kontrolü son basamak kadar önemlidir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Normalleştirmede değeri koru"
+              },
+              "text": {
+                "tr": "84×10⁻⁵ bir sayıyı doğru belirtir ama katsayı 84 olduğu için standart biçimde değildir. 84=8,4×10 olduğundan 84×10⁻⁵=8,4×10⁻⁴ yapılır. Katsayı 10'a bölünürken üs 1 artar; iki değişim birbirini dengeler. 0,84×10⁻⁵'te katsayı 10 ile çarpılırken üs 1 azalır:8,4×10⁻⁶.\n\nAtölyedeki katsayıyı 10'a böl veya 10 ile çarp işlemleri tam bu dengeyi gösterir. Ölçek değişirken olağan sayı sabit kalmalıdır. Katsayı 10'a eşit olduğunda hâlâ bir adım gerekir; doğru sınır 1≤|a|<10'dur. Son sayıdaki işaret normalleştirme sırasında korunur; negatif katsayıyı pozitif yapmak değeri koruyan işlem değildir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Toplama ve çıkarmada ortak ölçek kur"
+              },
+              "text": {
+                "tr": "3,2×10⁵+7×10⁴ ifadesinde doğrudan katsayıları toplayamazsın; birimler gibi ölçekler eşit olmalıdır. 7×10⁴=0,7×10⁵ yazınca toplam 3,9×10⁵ olur. İstersen küçük üssü ortak alıp(32+7)×10⁴=39×10⁴ yazabilir, sonra normalleştirebilirsin. İki yöntem aynı sayıyı verir.\n\nÇıkarmada da önce üsleri eşitle. Sonuç sıfırdan farklıysa katsayının mutlak değeri 1’den küçük veya 10’a eşit ya da büyük olduğunda yeniden normalleştir. 5×10³−4,8×10³=0,2×10³=2×10². Toplamada üsleri toplamak çarpım kuralını yanlış yere taşır. Sayıları olağan biçime açarak kaba sonuç kontrolü yapmak sıfırların arasında kaybolmayı önler."
+              }
+            },
+            {
+              "title": {
+                "tr": "Çarpma ve bölmede katsayı ile ölçeği ayır"
+              },
+              "text": {
+                "tr": "(a×10ᵐ)(b×10ⁿ)=(ab)×10ᵐ⁺ⁿ'dir. Katsayılar çarpılır, üsler toplanır; ardından standart katsayı aralığı denetlenir. Örneğin(6×10⁻³)(4×10⁵)=24×10²=2,4×10³. Ara katsayı 24 geçerlilik hatası değildir; sadece son bilimsel biçime henüz getirilmemiştir.\n\nBölmede b≠0 koşuluyla katsayılar bölünür ve üsler çıkarılır:(a×10ᵐ)/(b×10ⁿ)=(a/b)×10ᵐ⁻ⁿ. Paydadaki üs negatifse çıkarılan eksi işaretini koru. Bir sonucun üssünü söylemek tek başına sayıyı belirlemez; katsayı, işaret ve varsa fiziksel birim birlikte yazılmalıdır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Karşılaştırmada önce işaret ve standart biçim"
+              },
+              "text": {
+                "tr": "Pozitif, standart bilimsel gösterimlerde üs daha büyükse sayı daha büyüktür; üsler eşitse katsayıya bakılır. 9×10⁻⁸,2×10⁻⁹'dan büyüktür:−8>−9 veya ilkini 90×10⁻⁹ yazarak görebilirsin. Katsayılar standart değilse yalnız üs karşılaştırması güvenilir değildir; 0,01×10⁶ ile 9×10⁵ bunun nedenini gösterir.\n\nNegatif sayılarda önce mutlak büyüklüğü karşılaştırıp sayı doğrusundaki yönü hatırla:−8×10⁴=−80000,−2×10³=−2000'den küçüktür. Negatif bir üs sayıyı negatif yapmaz; işaret katsayıdan gelir. 10'un eşit üs aralıklarını gösteren çizgi logaritmik bir ölçektir; eşit aralıklar eşit toplamsal fark değil, eşit çarpan değişimi belirtir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Birim değişimi de 10'un kuvvetidir"
+              },
+              "text": {
+                "tr": "1 m=10³ mm olduğundan milimetre değerini metreye çevirirken 10³'e böl. 3,2×10⁶ mm=3,2×10³ m. Sayıdaki üssün değişmesi tek başına ölçülen uzunluğun değiştiği anlamına gelmez; kullanılan birim büyümüştür. Birim dönüşümü yapılmadan iki uzunluk sayısını doğrudan oranlamak yanlış model kurabilir.\n\nAlan ve hacim dönüşümünde uzunluk çarpanını sırasıyla karesine ve küpüne yükselt:1 m²=10⁶ mm²,1 m³=10⁹ mm³. Hız gibi türetilmiş birimlerde pay ve paydayı ayrı dönüştür. Bilimsel gösterim yalnız sıfırları kısaltma tekniği değil, işlemde boyutu ve büyüklüğü korumayı kolaylaştıran bir yazımdır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kesin değer, yaklaşık değer ve ölçüm ayrımı"
+              },
+              "text": {
+                "tr": "Bir sayıyı tam olarak başka biçimde yazmak yuvarlama değildir:0,00000064=6,4×10⁻⁷ eşitliği kesindir. Katsayıyı 6 diye yuvarlarsan yaklaşık değer üretirsin ve≈ işaretiyle belirtmelisin. Soru yaklaşık bir sonuç istemiyorsa rakamları sırf kısa görünsün diye atma; son karşılaştırma veya işlem sonucu değişebilir.\n\nÖlçümün anlamlı basamakları deneysel kesinlik konusudur; bilimsel gösterimde katsayı kullanmak tek başına ölçüm hatasını bildirmez. Soru verilen sayıları tam kabul ediyorsa tam işle; ölçüm hassasiyeti veya yuvarlama kuralı verilmişse onu ayrıca uygula. Son kontrol: katsayı aralıkta mı, üs tam sayı mı, işaret ve birim doğru mu, geri açılan sayı başlangıçla aynı mı?"
+              }
+            },
+            {
+              "title": {
+                "tr": "Birbirini izleyen büyütmeleri çarp"
+              },
+              "text": {
+                "tr": "Büyütme katsayısı, sonraki uzunluğun önceki uzunluğa oranıdır. Bir görüntü önce 5 katına, sonra oluşan görüntü 25 katına çıkarılırsa toplam oran 5·25=125 olur. İki katsayının birimi yoktur. Bu yüzden 3,2×10⁻³ mm genişliğindeki bir çizgi 125 ile çarpıldığında sonuç 0,4 mm olur.\n\nAşama aşama kontrol et. 0,0032 mm ilk çarpımdan sonra 0,016 mm, ikinci çarpımdan sonra 0,4 mm olur. 5+25 toplarsan 30 kat bulur ve ikinci büyütmeyi ilk görüntüye uygulamamış olursun. Şemadaki kutular işlem sırasını gösterir. Fiziksel uzunluğu kutunun içindeki değerden oku."
+              }
+            },
+            {
+              "title": {
+                "tr": "Bir çözüm yolunu seçmeden önce koşulunu ara"
+              },
+              "text": {
+                "tr": "Olağan sayıyı kısaltmak için ilk sıfır olmayan rakamı bul. Katsayı aralık dışındaysa virgülü taşıdığın kadar üssü ters yönde değiştir. Çarpım ve bölümde katsayıları ayrı işle. Bölenin üssü negatifse 5−(−3)=8 gibi parantezle yaz. Toplama ve çıkarmada sayıları önce aynı 10 kuvvetiyle ifade et. Bir birim dönüşümü gerekiyorsa niceliğin birimini her adımda yaz.\n\nYalnız pozitif ve standart biçimde olan iki sayıda büyük üs tek başına daha büyük sayıyı gösterir. 0,004×10⁷=4×10⁴ iken 7×10⁵ daha büyüktür. İlk ifadenin 7 üssünü doğrudan karşılaştırmak yanıltır. İki negatif sayıda önce büyüklükleri karşılaştır ve sıralamayı ters çevir. ‘En az 10⁶’ ifadesinde 10⁶ sınırı dahildir. ‘En çok 10⁻³’ ifadesinde 10⁻³ sınırı dahildir."
+              }
+            },
+            {
+              "title": {
+                "tr": "İlk bozulan eşitliği bulup yeniden dene"
+              },
+              "text": {
+                "tr": "Bir sonuç beklediğinden çok farklıysa ilk adımı denetle. 2,6×10⁵+9×10⁴ için (2,6+9)×10⁹ yazmak iki farklı ölçeği aynı sayar ve çarpım kuralını toplama işlemine taşır. İlk doğru dönüşüm 9×10⁴=0,9×10⁵’tir. (2,6+0,9)×10⁵=3,5×10⁵ sonucu, 260.000+90.000=350.000 işlemiyle doğrulanır.\n\nAynı onarımı yeni sayılarla uygula. 7,3×10⁵+2×10⁴ ifadesini çözmeden önce ikinci terimin ortak ölçekte kaç yüz binlik olduğunu tahmin et. 2×10⁴=0,2×10⁵ olduğu için toplam 7,5×10⁵’tir. Hatalı sonucun işlem türünden, sıralamadan ya da birimden kaynaklandığını bulursan bir sonraki denemede hangi adımı kontrol edeceğini bilirsin."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "tyt-geo-cokgenler-032",
+        "after": "c51ab3621d8938adde8d8adf81df3ea55756c6eb566bc98623d3aaa0aed402b0",
+        "prior": {
+          "source": "MEBİ TYT Matematik Konu Özetleri: Çokgenler (basılı 139/PDF 141); Aurelia Tüm Geometri Özeti PDF 9. Kaynak kavramlarından yazılmış özgün anlatım ve öğretim soruları.",
+          "sections": [
+            {
+              "title": "Önce kapalı şekli ve köşeleri tanı",
+              "paragraphs": [
+                "Çokgen, düzlemde doğru parçalarının sırayla birleşip kapandığı şekildir. Bu derste kenarlar yalnız komşu uçlarda kesişir; üst üste binmez ve birbirini ortadan kesmez. Böylece basit çokgenlerden söz ederiz. Bir köşede doğrusal devam eden iki parçayı ayrı iki kenar saymayız. En az üç köşe gerekir; n kenar sayısıysa n≥3 bir tam sayıdır.",
+                "Kenar iki komşu köşeyi birleştirir. Köşegen ise komşu olmayan iki köşeyi birleştiren doğru parçasıdır. Dört köşeli bir şeklin dört kenarı ve dört köşesi vardır; kenarı uzatmak yeni köşe oluşturmaz. Kendi içinden geçen yıldız çizimlerine bu dersteki açı toplamlarını doğrudan uygulama."
+              ]
+            },
+            {
+              "title": "Dışbükey ve içbükey: çizimdeki fark",
+              "paragraphs": [
+                "Her iç açı 180°den küçükse basit çokgen dışbükeydir. En az bir iç açı 180°den büyükse içbükeydir; o köşede şekil içeri çöker. İçbükey bir çokgen de basit ve kapalı olabilir. Çizimin görünüşünü kontrol ederken bir kenar uzantısını yeni kenar diye sayma.",
+                "Dışbükey bir çokgende seçtiğin köşeden diğer uygun köşelere çizilen köşegenler içeride kalır. İçbükeyde bazı köşegenler dışarı taşabilir. Bu nedenle bütün köşegenleri tek köşeden çizerek üçgenlere ayırma açıklamasını dışbükey şekil üzerinde yaparız; basit içbükey çokgen de uygun köşegenlerle n−2 üçgene ayrılır."
+              ]
+            },
+            {
+              "title": "İç açı toplamını üçgenlerden çıkar",
+              "paragraphs": [
+                "Dışbükey n kenarlı bir çokgende bir köşeden başlayıp komşu olmayan bütün köşelere köşegen çiz. Şekil n−2 üçgene ayrılır. Her üçgende iç açı toplamı 180° olduğundan toplam (n−2)·180°dir. Örneğin yedigen beş üçgene ayrılır ve toplam 900° olur.",
+                "Bu toplam için kenarların veya açıların eşit olması gerekmez. Fakat toplamı n’ye bölüp tek bir iç açıyı bulmak için bütün iç açıların eşit olduğu ayrıca bilinmelidir. Bir açı 180°den büyükse toplam formülü bozulmaz; içbükey açıyı küçük açıyla değiştirmek toplamı bozar."
+              ]
+            },
+            {
+              "title": "Dış açıda aynı dönüş yönünü koru",
+              "paragraphs": [
+                "Dışbükey çokgenin çevresinde aynı yönde yürüdüğünü düşün. Her köşede ileriye uzatılmış kenardan sonraki kenara dönersin. Her köşeden bu biçimde bir dış açı seçince bir tam dönüş yapılır: toplam 360°dir. Her iç açı ile yanındaki böyle bir dış açı bütünlerdir; toplamları 180°dir.",
+                "Aynı köşedeki iki farklı dış açıyı birden toplama ve bazı köşelerde yön değiştirme. İçbükey çokgende yönlü dönüşler kullanılır; içeri çöken köşenin dönüşü ters işaretlidir. Bütün dönüş büyüklüklerini pozitif alarak 360° demek genel olarak doğru değildir."
+              ]
+            },
+            {
+              "title": "Köşegenleri çift saymadan say",
+              "paragraphs": [
+                "Bir köşeden kendisine veya iki komşusuna köşegen çizilemez; bu yüzden o köşeden n−3 köşegen çıkar. Bütün n köşede sayarsan n(n−3) elde edersin; fakat her köşegeni iki ucundan da saymış olursun. Farklı köşegen sayısı D=n(n−3)/2 olur.",
+                "Sekizgende bir köşeden 5, toplamda 20 köşegen vardır. Bir köşeden çizilen köşegen sayısı ile ortaya çıkan üçgen sayısı aynı değildir: ilki n−3, ikincisi n−2’dir. D verilen bir soruda n≥3 tam sayı koşulunu sağlayan kökü seç; negatif kök bir çokgeni temsil etmez."
+              ]
+            },
+            {
+              "title": "Düzgün olmak iki eşitlik ister",
+              "paragraphs": [
+                "Düzgün çokgende bütün kenar uzunlukları birbirine eşit ve bütün iç açı ölçüleri birbirine eşittir. Yalnız eş kenarlı bir eşkenar dörtgenin açıları 60° ve 120° olabilir; düzgün değildir. Yalnız eş açılı bir dikdörtgenin komşu kenarları 3 ve 5 olabilir; o da düzgün değildir.",
+                "Düzgün n-gende bir dış açı δ=360°/n, bir iç açı α=180°−δ olur. Tersi yönde n=360°/δ=360°/(180°−α) yazılır. Sonuç en az 3 olan tam sayı değilse verilen açıyla düzgün çokgen yoktur. Örneğin 145° iç açı 35° dış açı verir; 360/35 tam sayı değildir."
+              ]
+            },
+            {
+              "title": "Merkez açısı, çevre ve alanı ilişkilendir",
+              "paragraphs": [
+                "Düzgün çokgenin merkezi bütün köşelere aynı R uzaklığındadır; R çevrel çember yarıçapıdır. Merkezi ardışık iki köşeye bağladığında merkez açısı 360°/n olur. Bu merkez açısı bir dış açıyla aynı ölçüdedir; farklı yerlerdeki iki açıdan söz ediyoruz. Kenar uzunluğu a ise çevre Ç=n·a’dır.",
+                "Merkezden bir kenara indirilen dik uzaklığa apotem denir ve ρ ile gösterilir. Merkezden bütün köşelere çizilen parçalar n eş ikizkenar üçgen oluşturur. Her birinin tabanı a, yüksekliği ρ olduğundan toplam alan S=n·a·ρ/2=Ç·ρ/2 olur. Köşeye uzaklık R ile kenara dik uzaklık ρ’yu birbirine karıştırma."
+              ]
+            },
+            {
+              "title": "Düzgün altıgeni altı eşkenar üçgenle gör",
+              "paragraphs": [
+                "Düzgün altıgende merkez açısı 60°dir. Merkezden komşu iki köşeye çizilen R uzunlukları bir ikizkenar üçgen kurar; tepe açısı 60° olunca öteki iki açı da 60° olur. Üçgen eşkenardır, bu yüzden R=a’dır. Apotem bu üçgenin yüksekliğidir: ρ=a√3/2.",
+                "Altı eşkenar üçgenin alanından S=6·a²√3/4=3√3·a²/2 bulunur. Çevre 6 a’dır. Bir köşe atlayan kısa köşegen a√3, karşı köşelere giden uzun köşegen 2 a’dır. Örneğin a=4 ise kısa köşegen 4√3, uzun köşegen 8 ve alan 24√3 olur."
+              ]
+            },
+            {
+              "title": "Genel çember formülünün arkasındaki dik üçgen",
+              "paragraphs": [
+                "Düzgün n-genin merkezini ve bir kenarının iki ucunu birleştir; sonra merkezden kenara dikme indir. İkizkenar üçgen iki eş dik üçgene ayrılır. Bu yarım üçgende açı θ=180°/n, hipotenüs R, karşı kenar a/2 ve komşu kenar ρ’dur. Dik üçgende sin θ=karşı/hipotenüs, cos θ=komşu/hipotenüs, tan θ=karşı/komşu olarak tanımlanır.",
+                "Buradan a=2 R·sin(180°/n), ρ=R·cos(180°/n), S=nR²·sin(360°/n)/2 ve S=n·a²/[4 tan(180°/n)] elde edilir. Bu tamamlayıcı bağıntılarda açı birimi derecedir. Önce şekli tanıdığın üçgenlere ayırmak, özellikle kare ve altıgende daha az işlem gerektirir; trigonometrik bağıntılar bu ayrımın genel yazımıdır."
+              ]
+            },
+            {
+              "title": "Beşgenin özel oranı ve sonuç denetimi",
+              "paragraphs": [
+                "Düzgün beşgende iç açı 108°, dış açı 72°dir. Köşegenin kenara oranı (1+√5)/2’dir; bu sayıya altın oran denir. Kenar a ise her köşegen a·(1+√5)/2 olur. Bu bağıntı düzgün beşgene aittir; sıradan beşgenin köşegenleri eşit olmak zorunda değildir.",
+                "Çözüm sonunda hem n’nin tam sayı olduğunu hem de istenenin açı mı uzunluk mu alan mı olduğunu denetle. Uzunluk birimle, alan birimkareyle yazılır. Düzgünlük yoksa eşit açı veya eşit kenar varsayma. Modelde köşegenleri açıp kapatmak bir açıklama aracıdır; bağımsız soru başarısının yerine geçmez."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "bilimsel-gosterim-katsayi",
+        "after": "ee8cacef437de0ae24fd64c509faac78b489d540a0085a442dff617084fcaa57",
+        "prior": {
+          "sections": [
+            {
+              "title": "Katsayı sayı türünü, üs ölçeği görünür kılar",
+              "paragraphs": [
+                "Sıfırdan farklı bir gerçek sayı a×10ⁿ biçiminde,1≤|a|<10 ve n tam sayı koşullarıyla yazıldığında standart bilimsel gösterimdedir. a katsayı, n üs; 10ⁿ ise ölçek çarpanıdır. 4,7×10⁵ ile 470000 aynı sayıdır. Burada 10⁵, katsayıya beş eklemek değil 100000 ile çarpmaktır.",
+                "Negatif sayılar da bu tanıma girer:−6,2×10³ geçerlidir, çünkü katsayının mutlak değeri 6,2'dir. 10 veya −10 katsayıları sınırın dışında; 1 ve −1 içindedir. Sıfır için 1≤|a| koşulu sağlanamaz; standart sıfırdan farklı sayı tanımı içinde zorla bir katsayı seçilmez. Atölye sıfırı ayrıca belirtir ve sahte normalleştirme üretmez."
+              ]
+            },
+            {
+              "title": "Virgülün yeri ile üs birlikte hareket eder",
+              "paragraphs": [
+                "Olağan sayıdan bilimsel gösterime geçerken ilk sıfır olmayan rakamdan sonra virgül bırak. 720000 sayısında 7,2 elde etmek için beş basamak sola gidilir; sayı 7,2×10⁵'tir. Virgülün başlangıcı son sıfırın sağıdır; onu 7 ile 2 arasına taşıyan hareketleri say. Basamakları tek tek saymak ezberlenmiş sıfır sayısından daha güvenilirdir.",
+                "0,000072 için 7,2'ye ulaşmak virgülü beş basamak sağa götürür; üs −5 olur. Bilimsel gösterimden olağan yazıma dönerken 10'un pozitif kuvveti virgülü sağa, negatif kuvveti sola taşır. İki dönüşümün yönünü karıştırmamak için çarpanı açık yaz:10⁻⁵=0,00001; 7,2 katı 0,000072'dir. Yaklaşık büyüklük kontrolü son basamak kadar önemlidir."
+              ]
+            },
+            {
+              "title": "Normalleştirmede değeri koru",
+              "paragraphs": [
+                "84×10⁻⁵ bir sayıyı doğru belirtir ama katsayı 84 olduğu için standart biçimde değildir. 84=8,4×10 olduğundan 84×10⁻⁵=8,4×10⁻⁴ yapılır. Katsayı 10'a bölünürken üs 1 artar; iki değişim birbirini dengeler. 0,84×10⁻⁵'te katsayı 10 ile çarpılırken üs 1 azalır:8,4×10⁻⁶.",
+                "Atölyedeki katsayıyı 10'a böl veya 10 ile çarp işlemleri tam bu dengeyi gösterir. Ölçek değişirken olağan sayı sabit kalmalıdır. Katsayı 10'a eşit olduğunda hâlâ bir adım gerekir; doğru sınır 1≤|a|<10'dur. Son sayıdaki işaret normalleştirme sırasında korunur; negatif katsayıyı pozitif yapmak değeri koruyan işlem değildir."
+              ]
+            },
+            {
+              "title": "Toplama ve çıkarmada ortak ölçek kur",
+              "paragraphs": [
+                "3,2×10⁵+7×10⁴ ifadesinde doğrudan katsayıları toplayamazsın; birimler gibi ölçekler eşit olmalıdır. 7×10⁴=0,7×10⁵ yazınca toplam 3,9×10⁵ olur. İstersen küçük üssü ortak alıp(32+7)×10⁴=39×10⁴ yazabilir, sonra normalleştirebilirsin. İki yöntem aynı sayıyı verir.",
+                "Çıkarmada da önce üsleri eşitle. Sonuç sıfırdan farklıysa katsayının mutlak değeri 1’den küçük veya 10’a eşit ya da büyük olduğunda yeniden normalleştir. 5×10³−4,8×10³=0,2×10³=2×10². Toplamada üsleri toplamak çarpım kuralını yanlış yere taşır. Sayıları olağan biçime açarak kaba sonuç kontrolü yapmak sıfırların arasında kaybolmayı önler."
+              ]
+            },
+            {
+              "title": "Çarpma ve bölmede katsayı ile ölçeği ayır",
+              "paragraphs": [
+                "(a×10ᵐ)(b×10ⁿ)=(ab)×10ᵐ⁺ⁿ'dir. Katsayılar çarpılır, üsler toplanır; ardından standart katsayı aralığı denetlenir. Örneğin(6×10⁻³)(4×10⁵)=24×10²=2,4×10³. Ara katsayı 24 geçerlilik hatası değildir; sadece son bilimsel biçime henüz getirilmemiştir.",
+                "Bölmede b≠0 koşuluyla katsayılar bölünür ve üsler çıkarılır:(a×10ᵐ)/(b×10ⁿ)=(a/b)×10ᵐ⁻ⁿ. Paydadaki üs negatifse çıkarılan eksi işaretini koru. Bir sonucun üssünü söylemek tek başına sayıyı belirlemez; katsayı, işaret ve varsa fiziksel birim birlikte yazılmalıdır."
+              ]
+            },
+            {
+              "title": "Karşılaştırmada önce işaret ve standart biçim",
+              "paragraphs": [
+                "Pozitif, standart bilimsel gösterimlerde üs daha büyükse sayı daha büyüktür; üsler eşitse katsayıya bakılır. 9×10⁻⁸,2×10⁻⁹'dan büyüktür:−8>−9 veya ilkini 90×10⁻⁹ yazarak görebilirsin. Katsayılar standart değilse yalnız üs karşılaştırması güvenilir değildir; 0,01×10⁶ ile 9×10⁵ bunun nedenini gösterir.",
+                "Negatif sayılarda önce mutlak büyüklüğü karşılaştırıp sayı doğrusundaki yönü hatırla:−8×10⁴=−80000,−2×10³=−2000'den küçüktür. Negatif bir üs sayıyı negatif yapmaz; işaret katsayıdan gelir. 10'un eşit üs aralıklarını gösteren çizgi logaritmik bir ölçektir; eşit aralıklar eşit toplamsal fark değil, eşit çarpan değişimi belirtir."
+              ]
+            },
+            {
+              "title": "Birim değişimi de 10'un kuvvetidir",
+              "paragraphs": [
+                "1 m=10³ mm olduğundan milimetre değerini metreye çevirirken 10³'e böl. 3,2×10⁶ mm=3,2×10³ m. Sayıdaki üssün değişmesi tek başına ölçülen uzunluğun değiştiği anlamına gelmez; kullanılan birim büyümüştür. Birim dönüşümü yapılmadan iki uzunluk sayısını doğrudan oranlamak yanlış model kurabilir.",
+                "Alan ve hacim dönüşümünde uzunluk çarpanını sırasıyla karesine ve küpüne yükselt:1 m²=10⁶ mm²,1 m³=10⁹ mm³. Hız gibi türetilmiş birimlerde pay ve paydayı ayrı dönüştür. Bilimsel gösterim yalnız sıfırları kısaltma tekniği değil, işlemde boyutu ve büyüklüğü korumayı kolaylaştıran bir yazımdır."
+              ]
+            },
+            {
+              "title": "Kesin değer, yaklaşık değer ve ölçüm ayrımı",
+              "paragraphs": [
+                "Bir sayıyı tam olarak başka biçimde yazmak yuvarlama değildir:0,00000064=6,4×10⁻⁷ eşitliği kesindir. Katsayıyı 6 diye yuvarlarsan yaklaşık değer üretirsin ve≈ işaretiyle belirtmelisin. Soru yaklaşık bir sonuç istemiyorsa rakamları sırf kısa görünsün diye atma; son karşılaştırma veya işlem sonucu değişebilir.",
+                "Ölçümün anlamlı basamakları deneysel kesinlik konusudur; bilimsel gösterimde katsayı kullanmak tek başına ölçüm hatasını bildirmez. Soru verilen sayıları tam kabul ediyorsa tam işle; ölçüm hassasiyeti veya yuvarlama kuralı verilmişse onu ayrıca uygula. Son kontrol: katsayı aralıkta mı, üs tam sayı mı, işaret ve birim doğru mu, geri açılan sayı başlangıçla aynı mı?"
+              ]
+            },
+            {
+              "title": "Birbirini izleyen büyütmeleri çarp",
+              "paragraphs": [
+                "Büyütme katsayısı, sonraki uzunluğun önceki uzunluğa oranıdır. Bir görüntü önce 5 katına, sonra oluşan görüntü 25 katına çıkarılırsa toplam oran 5·25=125 olur. İki katsayının birimi yoktur. Bu yüzden 3,2×10⁻³ mm genişliğindeki bir çizgi 125 ile çarpıldığında sonuç 0,4 mm olur.",
+                "Aşama aşama kontrol et. 0,0032 mm ilk çarpımdan sonra 0,016 mm, ikinci çarpımdan sonra 0,4 mm olur. 5+25 toplarsan 30 kat bulur ve ikinci büyütmeyi ilk görüntüye uygulamamış olursun. Şemadaki kutular işlem sırasını gösterir. Fiziksel uzunluğu kutunun içindeki değerden oku."
+              ]
+            },
+            {
+              "title": "Bir çözüm yolunu seçmeden önce koşulunu ara",
+              "paragraphs": [
+                "Olağan sayıyı kısaltmak için ilk sıfır olmayan rakamı bul. Katsayı aralık dışındaysa virgülü taşıdığın kadar üssü ters yönde değiştir. Çarpım ve bölümde katsayıları ayrı işle. Bölenin üssü negatifse 5−(−3)=8 gibi parantezle yaz. Toplama ve çıkarmada sayıları önce aynı 10 kuvvetiyle ifade et. Bir birim dönüşümü gerekiyorsa niceliğin birimini her adımda yaz.",
+                "Yalnız pozitif ve standart biçimde olan iki sayıda büyük üs tek başına daha büyük sayıyı gösterir. 0,004×10⁷=4×10⁴ iken 7×10⁵ daha büyüktür. İlk ifadenin 7 üssünü doğrudan karşılaştırmak yanıltır. İki negatif sayıda önce büyüklükleri karşılaştır ve sıralamayı ters çevir. ‘En az 10⁶’ ifadesinde 10⁶ sınırı dahildir. ‘En çok 10⁻³’ ifadesinde 10⁻³ sınırı dahildir."
+              ],
+              "table": {
+                "headers": [
+                  "Yöntem",
+                  "Geçerli yol",
+                  "Sık hata",
+                  "Başka bir örnek"
+                ],
+                "rows": [
+                  [
+                    "Olağan sayıdan gösterime",
+                    "0,00068 = 6,8×10⁻⁴",
+                    "Üssü pozitif yazmak 68.000 verir.",
+                    "0,00068 m = 0,68 mm"
+                  ],
+                  [
+                    "Katsayıyı normalleştir",
+                    "0,54×10⁶ = 5,4×10⁵",
+                    "Katsayı büyürken üs aynı kalırsa sayı 10 kat büyür.",
+                    "54 milyon = 5,4×10⁷"
+                  ],
+                  [
+                    "Çarpma ve bölme",
+                    "(9×10⁴) ÷ (3×10⁻³) = 3×10⁷",
+                    "Üsleri toplamak 3×10¹ verir.",
+                    "Her biri 4×10² g olan 6×10³ kutunun toplam kütlesi 2,4×10³ kg’dır."
+                  ],
+                  [
+                    "Aynı ölçekle topla",
+                    "4,8×10⁸ + 3×10⁷ = 5,1×10⁸",
+                    "İkinci terimi 3×10⁸ saymak onu 10 kat büyütür.",
+                    "480 milyon + 30 milyon = 510 milyon"
+                  ],
+                  [
+                    "İşareti ve katsayıyı kontrol et",
+                    "2,3×10⁶ > 8,7×10⁵",
+                    "Standart dışı 0,002×10⁶ için büyük üs kuralı geçmez.",
+                    "−2.300.000 < −870.000"
+                  ],
+                  [
+                    "Birimi dönüştür",
+                    "6,4×10⁶ mm = 6,4×10³ m",
+                    "Alanı uzunluk çarpanıyla dönüştürmek yanlıştır.",
+                    "6,4×10⁶ mm² = 6,4 m²"
+                  ]
+                ]
+              }
+            },
+            {
+              "title": "İlk bozulan eşitliği bulup yeniden dene",
+              "paragraphs": [
+                "Bir sonuç beklediğinden çok farklıysa ilk adımı denetle. 2,6×10⁵+9×10⁴ için (2,6+9)×10⁹ yazmak iki farklı ölçeği aynı sayar ve çarpım kuralını toplama işlemine taşır. İlk doğru dönüşüm 9×10⁴=0,9×10⁵’tir. (2,6+0,9)×10⁵=3,5×10⁵ sonucu, 260.000+90.000=350.000 işlemiyle doğrulanır.",
+                "Aynı onarımı yeni sayılarla uygula. 7,3×10⁵+2×10⁴ ifadesini çözmeden önce ikinci terimin ortak ölçekte kaç yüz binlik olduğunu tahmin et. 2×10⁴=0,2×10⁵ olduğu için toplam 7,5×10⁵’tir. Hatalı sonucun işlem türünden, sıralamadan ya da birimden kaynaklandığını bulursan bir sonraki denemede hangi adımı kontrol edeceğini bilirsin."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-geo-cokgenler-032",
+        "after": "f64b7f445578c26fb30ded80cde6993d78b7b69cc9149bd54d97c185f378e041",
+        "prior": {
+          "source": "MEBİ TYT Matematik Konu Özetleri: Çokgenler (basılı 139/PDF 141); Aurelia Tüm Geometri Özeti PDF 9. Kaynak kavramlarından yazılmış özgün anlatım ve öğretim soruları.",
+          "sections": [
+            {
+              "title": "Çokgen ve köşegen",
+              "text": [
+                "Basit çokgende n≥3 tam sayı; köşegen komşu olmayan köşeleri birleştirir. Bir köşeden n−3, tümünde n(n−3)/2 köşegen."
+              ]
+            },
+            {
+              "title": "İç ve dış açı toplamları",
+              "text": [
+                "Basit n-gende iç açı toplamı(n−2)·180°. Dışbükeyde aynı yönde birer dış açı toplam 360°; içbükeyde yönlü dönüş işareti gerekir."
+              ]
+            },
+            {
+              "title": "Düzgünlük ve varlık",
+              "text": [
+                "Bütün kenarlar ve bütün iç açılar eşit olmalı. δ=360°/n, α=180°−δ. n=360°/δ en az 3 tam sayı olmalı."
+              ]
+            },
+            {
+              "title": "Merkez, çevre ve alan",
+              "text": [
+                "Kenar a, apotemρ ise Ç=na, S=naρ/2. Çevrel yarıçap R: a=2 Rsin(180°/n),ρ=Rcos(180°/n)."
+              ]
+            },
+            {
+              "title": "Altıgen ve beşgen",
+              "text": [
+                "Düzgün altıgende R=a,ρ=a√3/2, S=3√3 a²/2; kısa köşegen a√3, uzun 2 a. Düzgün beşgende köşegen/kenar=(1+√5)/2."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "detail-207",
+        "after": "16f61df6146bc0c9f69a18f4a39a2fdd044cb022d0269995bdee9d3bc5f583bc",
+        "prior": {
+          "sections": [
+            {
+              "title": "Katsayı sayı türünü, üs ölçeği görünür kılar",
+              "text": [
+                "Sıfırdan farklı bir gerçek sayı a×10ⁿ biçiminde,1≤|a|<10 ve n tam sayı koşullarıyla yazıldığında standart bilimsel gösterimdedir. a katsayı, n üs; 10ⁿ ise ölçek çarpanıdır. 4,7×10⁵ ile 470000 aynı sayıdır. Burada 10⁵, katsayıya beş eklemek değil 100000 ile çarpmaktır."
+              ]
+            },
+            {
+              "title": "Virgülün yeri ile üs birlikte hareket eder",
+              "text": [
+                "Olağan sayıdan bilimsel gösterime geçerken ilk sıfır olmayan rakamdan sonra virgül bırak. 720000 sayısında 7,2 elde etmek için beş basamak sola gidilir; sayı 7,2×10⁵'tir. Virgülün başlangıcı son sıfırın sağıdır; onu 7 ile 2 arasına taşıyan hareketleri say. Basamakları tek tek saymak ezberlenmiş sıfır sayısından daha güvenilirdir."
+              ]
+            },
+            {
+              "title": "Normalleştirmede değeri koru",
+              "text": [
+                "84×10⁻⁵ bir sayıyı doğru belirtir ama katsayı 84 olduğu için standart biçimde değildir. 84=8,4×10 olduğundan 84×10⁻⁵=8,4×10⁻⁴ yapılır. Katsayı 10'a bölünürken üs 1 artar; iki değişim birbirini dengeler. 0,84×10⁻⁵'te katsayı 10 ile çarpılırken üs 1 azalır:8,4×10⁻⁶."
+              ]
+            },
+            {
+              "title": "Toplama ve çıkarmada ortak ölçek kur",
+              "text": [
+                "3,2×10⁵+7×10⁴ ifadesinde doğrudan katsayıları toplayamazsın; birimler gibi ölçekler eşit olmalıdır. 7×10⁴=0,7×10⁵ yazınca toplam 3,9×10⁵ olur. İstersen küçük üssü ortak alıp(32+7)×10⁴=39×10⁴ yazabilir, sonra normalleştirebilirsin. İki yöntem aynı sayıyı verir."
+              ]
+            },
+            {
+              "title": "Çarpma ve bölmede katsayı ile ölçeği ayır",
+              "text": [
+                "(a×10ᵐ)(b×10ⁿ)=(ab)×10ᵐ⁺ⁿ'dir. Katsayılar çarpılır, üsler toplanır; ardından standart katsayı aralığı denetlenir. Örneğin(6×10⁻³)(4×10⁵)=24×10²=2,4×10³. Ara katsayı 24 geçerlilik hatası değildir; sadece son bilimsel biçime henüz getirilmemiştir."
+              ]
+            },
+            {
+              "title": "Karşılaştırmada önce işaret ve standart biçim",
+              "text": [
+                "Pozitif, standart bilimsel gösterimlerde üs daha büyükse sayı daha büyüktür; üsler eşitse katsayıya bakılır. 9×10⁻⁸,2×10⁻⁹'dan büyüktür:−8>−9 veya ilkini 90×10⁻⁹ yazarak görebilirsin. Katsayılar standart değilse yalnız üs karşılaştırması güvenilir değildir; 0,01×10⁶ ile 9×10⁵ bunun nedenini gösterir."
+              ]
+            },
+            {
+              "title": "Birim değişimi de 10'un kuvvetidir",
+              "text": [
+                "1 m=10³ mm olduğundan milimetre değerini metreye çevirirken 10³'e böl. 3,2×10⁶ mm=3,2×10³ m. Sayıdaki üssün değişmesi tek başına ölçülen uzunluğun değiştiği anlamına gelmez; kullanılan birim büyümüştür. Birim dönüşümü yapılmadan iki uzunluk sayısını doğrudan oranlamak yanlış model kurabilir."
+              ]
+            },
+            {
+              "title": "Kesin değer, yaklaşık değer ve ölçüm ayrımı",
+              "text": [
+                "Bir sayıyı tam olarak başka biçimde yazmak yuvarlama değildir:0,00000064=6,4×10⁻⁷ eşitliği kesindir. Katsayıyı 6 diye yuvarlarsan yaklaşık değer üretirsin ve≈ işaretiyle belirtmelisin. Soru yaklaşık bir sonuç istemiyorsa rakamları sırf kısa görünsün diye atma; son karşılaştırma veya işlem sonucu değişebilir."
+              ]
+            },
+            {
+              "title": "Birbirini izleyen büyütmeleri çarp",
+              "text": [
+                "Büyütme katsayısı, sonraki uzunluğun önceki uzunluğa oranıdır. Bir görüntü önce 5 katına, sonra oluşan görüntü 25 katına çıkarılırsa toplam oran 5·25=125 olur. İki katsayının birimi yoktur. Bu yüzden 3,2×10⁻³ mm genişliğindeki bir çizgi 125 ile çarpıldığında sonuç 0,4 mm olur."
+              ]
+            },
+            {
+              "title": "Bir çözüm yolunu seçmeden önce koşulunu ara",
+              "text": [
+                "Olağan sayıyı kısaltmak için ilk sıfır olmayan rakamı bul. Katsayı aralık dışındaysa virgülü taşıdığın kadar üssü ters yönde değiştir. Çarpım ve bölümde katsayıları ayrı işle. Bölenin üssü negatifse 5−(−3)=8 gibi parantezle yaz. Toplama ve çıkarmada sayıları önce aynı 10 kuvvetiyle ifade et. Bir birim dönüşümü gerekiyorsa niceliğin birimini her adımda yaz."
+              ],
+              "table": {
+                "headers": [
+                  "Yöntem",
+                  "Geçerli yol",
+                  "Sık hata",
+                  "Başka bir örnek"
+                ],
+                "rows": [
+                  [
+                    "Olağan sayıdan gösterime",
+                    "0,00068 = 6,8×10⁻⁴",
+                    "Üssü pozitif yazmak 68.000 verir.",
+                    "0,00068 m = 0,68 mm"
+                  ],
+                  [
+                    "Katsayıyı normalleştir",
+                    "0,54×10⁶ = 5,4×10⁵",
+                    "Katsayı büyürken üs aynı kalırsa sayı 10 kat büyür.",
+                    "54 milyon = 5,4×10⁷"
+                  ],
+                  [
+                    "Çarpma ve bölme",
+                    "(9×10⁴) ÷ (3×10⁻³) = 3×10⁷",
+                    "Üsleri toplamak 3×10¹ verir.",
+                    "Her biri 4×10² g olan 6×10³ kutunun toplam kütlesi 2,4×10³ kg’dır."
+                  ],
+                  [
+                    "Aynı ölçekle topla",
+                    "4,8×10⁸ + 3×10⁷ = 5,1×10⁸",
+                    "İkinci terimi 3×10⁸ saymak onu 10 kat büyütür.",
+                    "480 milyon + 30 milyon = 510 milyon"
+                  ],
+                  [
+                    "İşareti ve katsayıyı kontrol et",
+                    "2,3×10⁶ > 8,7×10⁵",
+                    "Standart dışı 0,002×10⁶ için büyük üs kuralı geçmez.",
+                    "−2.300.000 < −870.000"
+                  ],
+                  [
+                    "Birimi dönüştür",
+                    "6,4×10⁶ mm = 6,4×10³ m",
+                    "Alanı uzunluk çarpanıyla dönüştürmek yanlıştır.",
+                    "6,4×10⁶ mm² = 6,4 m²"
+                  ]
+                ]
+              }
+            },
+            {
+              "title": "İlk bozulan eşitliği bulup yeniden dene",
+              "text": [
+                "Bir sonuç beklediğinden çok farklıysa ilk adımı denetle. 2,6×10⁵+9×10⁴ için (2,6+9)×10⁹ yazmak iki farklı ölçeği aynı sayar ve çarpım kuralını toplama işlemine taşır. İlk doğru dönüşüm 9×10⁴=0,9×10⁵’tir. (2,6+0,9)×10⁵=3,5×10⁵ sonucu, 260.000+90.000=350.000 işlemiyle doğrulanır."
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.163.0",
+    "receipts": [
+      {
+        "surface": "lessons",
+        "id": "tyt-geo-dortgen-hiyerarsi-032",
+        "after": "d3651c93e443a0f556770ff138e173bcd12752edb46f0bc04c9f568ae430beb5",
+        "prior": {
+          "source": {
+            "tr": "MEBİ TYT Matematik Konu Özetleri: Dörtgenler ve Özellikleri, Özel Dörtgenler (basılı 140–141/PDF 142–143); Aurelia Tüm Geometri Özeti PDF 8. Kaynak kavramlarından yazılmış özgün anlatım ve öğretim soruları."
+          },
+          "body": [
+            {
+              "title": {
+                "tr": "Dört köşe, iki köşegen ve bir kapalı çevre"
+              },
+              "text": {
+                "tr": "Dörtgeni adlandırırken köşeleri çevre boyunca sırayla yaz: ABCD dörtgeninde kenarlar AB, BC, CD, DA; köşegenler AC veBD’dir. Birbirini kesen papyon çizimini bu dersteki basit dörtgenler sınıfına katmayız. Herhangi üç köşenin aynı doğru üzerinde olmadığı, kenarların yalnız komşu uçlarda birleştiği durumları inceleriz.\n\nDışbükey dörtgenin bütün iç açıları 180°den küçüktür ve iki köşegen de içeride kalır. İçbükey dörtgende bir iç açı 180°den büyüktür. Çizimdeki küçük boşluğu ölçüp iç açı yerine koymak hatalıdır; hangi bölgenin şeklin içinde kaldığını belirle."
+              }
+            },
+            {
+              "title": {
+                "tr": "360° toplamının gerekçesi"
+              },
+              "text": {
+                "tr": "Dışbükey bir dörtgende bir köşegen şekli iki üçgene böler. İki üçgenin açıları birlikte dörtgenin dört iç açısını verir; toplam 180°+180°=360°dir. Basit içbükey dörtgende uygun iç köşegenle yine iki üçgen oluşur ve iç açı toplamı 360°kalır.\n\nDışbükeyde çevre boyunca aynı yönde seçilen birer dış açının toplamı da 360°dir. Dışbükey olmak bütün açıların eşit olduğunu söylemez. Dört iç açı eşitse her biri 90°olur; şekil dikdörtgendir, ama kare demek için kenar eşitliği de gerekir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Sınıfları birbiri içinde oku"
+              },
+              "text": {
+                "tr": "Bu derste MEBİ’nin kapsayıcı tanımı kullanılır: en az bir çift karşı kenarı paralel olan dörtgen yamuktur. İki karşı kenar çifti paralelse paralelkenardır; bu yüzden her paralelkenar aynı zamanda yamuktur. Bazı kaynaklar yamuğu yalnız bir paralel kenar çiftiyle sınırlar; böyle bir soruda verilen tanım ayrıca okunmalıdır.\n\nDikdörtgen dört dik açılı paralelkenardır. Eşkenar dörtgen dört eş kenarlı paralelkenardır. Kare ikisinin ortak özel durumudur: dört kenarı ve dört açısı eşittir. Eşkenar dörtgen aynı zamanda deltoiddir. Bir kareye dikdörtgen demek yanlış değildir; bu sözcük ek özelliği yok saymaz, daha geniş sınıfı belirtir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Deltoidde komşu eş çiftleri bul"
+              },
+              "text": {
+                "tr": "Dışbükey ABCD dörtgeninde AB=AD veCB=CD ise şekil bir deltoiddir. Eş uzunluklar komşu kenarlardadır; yalnız AB=CD veBC=AD yazmak deltoid tanımı değil, karşı kenar eşitliğidir. ABC ileADC üçgenleri üç kenardan eştir.\n\nAC doğrusu simetri eksenidir; A veC açılarını ikiye böler, BD’ye diktir veBD’yi ortalar. B ileD açıları eşittir. BD’nin AC’yi ortalaması veya köşegenlerin eşit olması genel olarak gerekmez. Köşegenler dik olduğu için alan S=AC·BD/2’dir. AB=a, BC=b ise çevre 2(a+b) olur."
+              }
+            },
+            {
+              "title": {
+                "tr": "Paralel tabanlar açıları ve alanı bağlar"
+              },
+              "text": {
+                "tr": "AB∥CD olan dışbükey yamukta AB veCD tabandır. Bu tabanlar arasındaki dik uzaklık h yüksekliktir; eğik yan kenar h değildir. AD yan kenarındaki A veD iç açıları, BC yan kenarındaki B veC iç açıları bütünlerdir. Genel yamukta aynı tabanın iki açısı eşit olmak zorunda değildir.\n\nTaban uzunlukları a veb ise alan S=(a+b)h/2 olur. İki eş yamuğu ters yönlerle birleştirdiğinde tabanı a+b, yüksekliği h olan paralelkenar oluşur; bir yamuğun alanı bunun yarısıdır. Alanla çevreyi ayır: çevre için dört kenar gerekir, taban ve yükseklik tek başına yetmez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Orta taban ve köşegenlerdeki küçük parçalar"
+              },
+              "text": {
+                "tr": "Yamuğun paralel olmayan yan kenarlarının orta noktalarını birleştiren EF parçası tabanlara paraleldir ve orta tabandır. Uzunluğu(a+b)/2’dir. Bu yüzden alanı orta taban·yükseklik olarak da yazabilirsin. Orta taban köşegen değildir; uçları karşı köşeler değil, kenar orta noktalarıdır.\n\nAlt taban a≥b üst taban olsun. Köşegenlerin orta tabanla kesiştiği iki nokta arasındaki parça(a−b)/2, orta tabanın iki ucunda kalan parçalar b/2’dir. Toplam b/2+(a−b)/2+b/2=(a+b)/2 olur. a=b olduğunda ortadaki parça sıfırdır; paralelkenarın köşegenleri aynı orta noktada buluşur."
+              }
+            },
+            {
+              "title": {
+                "tr": "Dik ve ikizkenar yamukta yardımcı dikmeler"
+              },
+              "text": {
+                "tr": "Dik yamukta tabanlara dik olan yan kenar yüksekliktir. Diğer yan kenar h ve|a−b| ile dik üçgen oluşturur; uzunluğu√(h²+(a−b)²) olur. Çizimde diklik verilmeden bir yan kenarı yükseklik sayma.\n\nİkizkenar yamukta yan kenarlar eşittir; aynı tabana komşu açılar ve iki köşegen eşittir. Tabanlar a≥b, yan kenar ℓ ise kısa tabanın uçlarından dikmeler inince fark ikiye bölünür:(a−b)/2. Pisagor’dan h=√(ℓ²−((a−b)/2)²) çıkar. Yükseklik pozitif olmalıdır. Paralelkenar sınırında ek dik açı koşulu yoksa eş yan kenar tek başına klasik ikizkenar yamuk simetrisini zorunlu kılmaz; bu paragrafta a>b durumu kullanılır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Köşegenleri dik olan her şekil kare değildir"
+              },
+              "text": {
+                "tr": "Dışbükey dörtgende köşegenler AC veBD O’da dik kesişsin. Dört küçük dik üçgen için Pisagor yazıldığında AB²=AO²+BO², BC²=CO²+BO², CD²=CO²+DO² veDA²=AO²+DO² olur. Böylece AB²+CD²=BC²+DA² elde edilir.\n\nBu kareler toplamı eşitliği köşegenleri dik olan genel dörtgene aittir; bütün kenarların veya köşegenlerin eşit olduğu anlamına gelmez. Dik köşegenli dışbükey dörtgenin alanı AC·BD/2’dir. Köşegenler arasında θ açısı varsa genel alan AC·BD·sinθ/2 olur;θ=90°için sinθ=1’e iner."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kenar orta noktaları gizli bir paralelkenar kurar"
+              },
+              "text": {
+                "tr": "Dışbükey ABCD dörtgeninde E, F, G, H sırasıyla AB, BC, CD, DA’nın orta noktaları olsun. ABC üçgeninin orta tabanından EF∥AC veEF=AC/2 bulunur. ADC üçgeninden HG∥AC veHG=AC/2 gelir. Benzer biçimde FG veEH, BD’ye paralel veBD/2 uzunluğundadır.\n\nBu nedenle EFGH her zaman paralelkenardır; ilk dörtgenin de paralelkenar olması gerekmez. Çevresi AC+BD, alanı ilk dörtgenin alanının yarısıdır. Köşegenler dikse orta noktalar şekli dikdörtgen; köşegenler eşitse eşkenar dörtgen olur. Hem dik hem eş köşegenler varsa orta noktalar şekli karedir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Açıortaylarda hangi açıları yarıya böldüğünü yaz"
+              },
+              "text": {
+                "tr": "Dışbükey ABCD dörtgeninde B veC iç açılarının açıortayları E’de kesişsin. BEC üçgeninde B açısı B/2, C açısı C/2’dir. O halde ∠BEC=180°−(B+C)/2=(A+D)/2 olur. Formülün harfleri, hangi komşu iki köşenin açıortayını aldığınla birlikte okunmalıdır.\n\nKarşı iki köşenin açıortay doğruları için küçük açı, diğer karşı açılar farkının mutlak değerinin yarısına bağlıdır. Örneğin B veD açıortay doğruları kesişiyorsa küçük açı |A−C|/2’dir. A=C sınırında doğrular paralel veya çakışık olabilir; her durumda varmış gibi bir kesişim noktası tanımlama. Şekil içindeki belirli bir geniş açıyı soruyorsa küçük açının bütünlerine geçmek gerekebilir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Yamukta köşegen oranı ve benzerlik"
+              },
+              "text": {
+                "tr": "AB∥CD, AB=a, CD=b olan dışbükey yamukta köşegenler O’da kesişsin. AOB ileCOD üçgenlerinin tepe açıları ters, açı çiftleri paralellikten eşittir; iki üçgen benzerdir. Karşılıkları A↔C, B↔D olduğundan AO/OC=BO/OD=a/b’dir.\n\nOranı rastgele çaprazlamadan önce büyük ve küçük tabanı aynı sırayla yaz. a=b olduğunda oran 1 olur ve köşegenler birbirini ortalar; bu paralelkenar durumudur. Genel yamukta bir köşegenin iki parçasının eşit olduğunu varsayma. Orta tabanla kesişim noktaları ile iki köşegenin kendi kesişimini de ayrı adlandır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Çember koşulları ve kullanmadan önce kontrol"
+              },
+              "text": {
+                "tr": "Dışbükey bir dörtgenin bütün köşeleri aynı çember üzerindeyse çemberseldir; karşı iç açıları toplam 180°dir. Bir dış açı da karşı köşedeki iç açıya eşittir. Bu özellik, üzerinde çember çizilmemiş herhangi bir dörtgende kendiliğinden kullanılamaz.\n\nBir çember dışbükey dörtgenin dört kenarına içeriden teğetse aynı köşeden çıkan teğet parçaları eşittir. Buradan karşı kenar toplamları AB+CD=BC+DA ve alan S=r·s çıkar; r içteğet çemberin yarıçapı, s çevrenin yarısıdır. Yarıçapı bulurken çember merkezinin kenarlara dik uzaklıklarının eşitliğini kullan. Çevre bilgisi tek başına yarıçapın sayısal değerini vermez."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "tyt-geo-dortgen-hiyerarsi-032",
+        "after": "6326e0e78df8f24d465ba86c212147b3966f8f8b6ee4dc42bb13e829e2a6db7a",
+        "prior": {
+          "source": "MEBİ TYT Matematik Konu Özetleri: Dörtgenler ve Özellikleri, Özel Dörtgenler (basılı 140–141/PDF 142–143); Aurelia Tüm Geometri Özeti PDF 8. Kaynak kavramlarından yazılmış özgün anlatım ve öğretim soruları.",
+          "sections": [
+            {
+              "title": "Dört köşe, iki köşegen ve bir kapalı çevre",
+              "paragraphs": [
+                "Dörtgeni adlandırırken köşeleri çevre boyunca sırayla yaz: ABCD dörtgeninde kenarlar AB, BC, CD, DA; köşegenler AC veBD’dir. Birbirini kesen papyon çizimini bu dersteki basit dörtgenler sınıfına katmayız. Herhangi üç köşenin aynı doğru üzerinde olmadığı, kenarların yalnız komşu uçlarda birleştiği durumları inceleriz.",
+                "Dışbükey dörtgenin bütün iç açıları 180°den küçüktür ve iki köşegen de içeride kalır. İçbükey dörtgende bir iç açı 180°den büyüktür. Çizimdeki küçük boşluğu ölçüp iç açı yerine koymak hatalıdır; hangi bölgenin şeklin içinde kaldığını belirle."
+              ]
+            },
+            {
+              "title": "360° toplamının gerekçesi",
+              "paragraphs": [
+                "Dışbükey bir dörtgende bir köşegen şekli iki üçgene böler. İki üçgenin açıları birlikte dörtgenin dört iç açısını verir; toplam 180°+180°=360°dir. Basit içbükey dörtgende uygun iç köşegenle yine iki üçgen oluşur ve iç açı toplamı 360°kalır.",
+                "Dışbükeyde çevre boyunca aynı yönde seçilen birer dış açının toplamı da 360°dir. Dışbükey olmak bütün açıların eşit olduğunu söylemez. Dört iç açı eşitse her biri 90°olur; şekil dikdörtgendir, ama kare demek için kenar eşitliği de gerekir."
+              ]
+            },
+            {
+              "title": "Sınıfları birbiri içinde oku",
+              "paragraphs": [
+                "Bu derste MEBİ’nin kapsayıcı tanımı kullanılır: en az bir çift karşı kenarı paralel olan dörtgen yamuktur. İki karşı kenar çifti paralelse paralelkenardır; bu yüzden her paralelkenar aynı zamanda yamuktur. Bazı kaynaklar yamuğu yalnız bir paralel kenar çiftiyle sınırlar; böyle bir soruda verilen tanım ayrıca okunmalıdır.",
+                "Dikdörtgen dört dik açılı paralelkenardır. Eşkenar dörtgen dört eş kenarlı paralelkenardır. Kare ikisinin ortak özel durumudur: dört kenarı ve dört açısı eşittir. Eşkenar dörtgen aynı zamanda deltoiddir. Bir kareye dikdörtgen demek yanlış değildir; bu sözcük ek özelliği yok saymaz, daha geniş sınıfı belirtir."
+              ]
+            },
+            {
+              "title": "Deltoidde komşu eş çiftleri bul",
+              "paragraphs": [
+                "Dışbükey ABCD dörtgeninde AB=AD veCB=CD ise şekil bir deltoiddir. Eş uzunluklar komşu kenarlardadır; yalnız AB=CD veBC=AD yazmak deltoid tanımı değil, karşı kenar eşitliğidir. ABC ileADC üçgenleri üç kenardan eştir.",
+                "AC doğrusu simetri eksenidir; A veC açılarını ikiye böler, BD’ye diktir veBD’yi ortalar. B ileD açıları eşittir. BD’nin AC’yi ortalaması veya köşegenlerin eşit olması genel olarak gerekmez. Köşegenler dik olduğu için alan S=AC·BD/2’dir. AB=a, BC=b ise çevre 2(a+b) olur."
+              ]
+            },
+            {
+              "title": "Paralel tabanlar açıları ve alanı bağlar",
+              "paragraphs": [
+                "AB∥CD olan dışbükey yamukta AB veCD tabandır. Bu tabanlar arasındaki dik uzaklık h yüksekliktir; eğik yan kenar h değildir. AD yan kenarındaki A veD iç açıları, BC yan kenarındaki B veC iç açıları bütünlerdir. Genel yamukta aynı tabanın iki açısı eşit olmak zorunda değildir.",
+                "Taban uzunlukları a veb ise alan S=(a+b)h/2 olur. İki eş yamuğu ters yönlerle birleştirdiğinde tabanı a+b, yüksekliği h olan paralelkenar oluşur; bir yamuğun alanı bunun yarısıdır. Alanla çevreyi ayır: çevre için dört kenar gerekir, taban ve yükseklik tek başına yetmez."
+              ]
+            },
+            {
+              "title": "Orta taban ve köşegenlerdeki küçük parçalar",
+              "paragraphs": [
+                "Yamuğun paralel olmayan yan kenarlarının orta noktalarını birleştiren EF parçası tabanlara paraleldir ve orta tabandır. Uzunluğu(a+b)/2’dir. Bu yüzden alanı orta taban·yükseklik olarak da yazabilirsin. Orta taban köşegen değildir; uçları karşı köşeler değil, kenar orta noktalarıdır.",
+                "Alt taban a≥b üst taban olsun. Köşegenlerin orta tabanla kesiştiği iki nokta arasındaki parça(a−b)/2, orta tabanın iki ucunda kalan parçalar b/2’dir. Toplam b/2+(a−b)/2+b/2=(a+b)/2 olur. a=b olduğunda ortadaki parça sıfırdır; paralelkenarın köşegenleri aynı orta noktada buluşur."
+              ]
+            },
+            {
+              "title": "Dik ve ikizkenar yamukta yardımcı dikmeler",
+              "paragraphs": [
+                "Dik yamukta tabanlara dik olan yan kenar yüksekliktir. Diğer yan kenar h ve|a−b| ile dik üçgen oluşturur; uzunluğu√(h²+(a−b)²) olur. Çizimde diklik verilmeden bir yan kenarı yükseklik sayma.",
+                "İkizkenar yamukta yan kenarlar eşittir; aynı tabana komşu açılar ve iki köşegen eşittir. Tabanlar a≥b, yan kenar ℓ ise kısa tabanın uçlarından dikmeler inince fark ikiye bölünür:(a−b)/2. Pisagor’dan h=√(ℓ²−((a−b)/2)²) çıkar. Yükseklik pozitif olmalıdır. Paralelkenar sınırında ek dik açı koşulu yoksa eş yan kenar tek başına klasik ikizkenar yamuk simetrisini zorunlu kılmaz; bu paragrafta a>b durumu kullanılır."
+              ]
+            },
+            {
+              "title": "Köşegenleri dik olan her şekil kare değildir",
+              "paragraphs": [
+                "Dışbükey dörtgende köşegenler AC veBD O’da dik kesişsin. Dört küçük dik üçgen için Pisagor yazıldığında AB²=AO²+BO², BC²=CO²+BO², CD²=CO²+DO² veDA²=AO²+DO² olur. Böylece AB²+CD²=BC²+DA² elde edilir.",
+                "Bu kareler toplamı eşitliği köşegenleri dik olan genel dörtgene aittir; bütün kenarların veya köşegenlerin eşit olduğu anlamına gelmez. Dik köşegenli dışbükey dörtgenin alanı AC·BD/2’dir. Köşegenler arasında θ açısı varsa genel alan AC·BD·sinθ/2 olur;θ=90°için sinθ=1’e iner."
+              ]
+            },
+            {
+              "title": "Kenar orta noktaları gizli bir paralelkenar kurar",
+              "paragraphs": [
+                "Dışbükey ABCD dörtgeninde E, F, G, H sırasıyla AB, BC, CD, DA’nın orta noktaları olsun. ABC üçgeninin orta tabanından EF∥AC veEF=AC/2 bulunur. ADC üçgeninden HG∥AC veHG=AC/2 gelir. Benzer biçimde FG veEH, BD’ye paralel veBD/2 uzunluğundadır.",
+                "Bu nedenle EFGH her zaman paralelkenardır; ilk dörtgenin de paralelkenar olması gerekmez. Çevresi AC+BD, alanı ilk dörtgenin alanının yarısıdır. Köşegenler dikse orta noktalar şekli dikdörtgen; köşegenler eşitse eşkenar dörtgen olur. Hem dik hem eş köşegenler varsa orta noktalar şekli karedir."
+              ]
+            },
+            {
+              "title": "Açıortaylarda hangi açıları yarıya böldüğünü yaz",
+              "paragraphs": [
+                "Dışbükey ABCD dörtgeninde B veC iç açılarının açıortayları E’de kesişsin. BEC üçgeninde B açısı B/2, C açısı C/2’dir. O halde ∠BEC=180°−(B+C)/2=(A+D)/2 olur. Formülün harfleri, hangi komşu iki köşenin açıortayını aldığınla birlikte okunmalıdır.",
+                "Karşı iki köşenin açıortay doğruları için küçük açı, diğer karşı açılar farkının mutlak değerinin yarısına bağlıdır. Örneğin B veD açıortay doğruları kesişiyorsa küçük açı |A−C|/2’dir. A=C sınırında doğrular paralel veya çakışık olabilir; her durumda varmış gibi bir kesişim noktası tanımlama. Şekil içindeki belirli bir geniş açıyı soruyorsa küçük açının bütünlerine geçmek gerekebilir."
+              ]
+            },
+            {
+              "title": "Yamukta köşegen oranı ve benzerlik",
+              "paragraphs": [
+                "AB∥CD, AB=a, CD=b olan dışbükey yamukta köşegenler O’da kesişsin. AOB ileCOD üçgenlerinin tepe açıları ters, açı çiftleri paralellikten eşittir; iki üçgen benzerdir. Karşılıkları A↔C, B↔D olduğundan AO/OC=BO/OD=a/b’dir.",
+                "Oranı rastgele çaprazlamadan önce büyük ve küçük tabanı aynı sırayla yaz. a=b olduğunda oran 1 olur ve köşegenler birbirini ortalar; bu paralelkenar durumudur. Genel yamukta bir köşegenin iki parçasının eşit olduğunu varsayma. Orta tabanla kesişim noktaları ile iki köşegenin kendi kesişimini de ayrı adlandır."
+              ]
+            },
+            {
+              "title": "Çember koşulları ve kullanmadan önce kontrol",
+              "paragraphs": [
+                "Dışbükey bir dörtgenin bütün köşeleri aynı çember üzerindeyse çemberseldir; karşı iç açıları toplam 180°dir. Bir dış açı da karşı köşedeki iç açıya eşittir. Bu özellik, üzerinde çember çizilmemiş herhangi bir dörtgende kendiliğinden kullanılamaz.",
+                "Bir çember dışbükey dörtgenin dört kenarına içeriden teğetse aynı köşeden çıkan teğet parçaları eşittir. Buradan karşı kenar toplamları AB+CD=BC+DA ve alan S=r·s çıkar; r içteğet çemberin yarıçapı, s çevrenin yarısıdır. Yarıçapı bulurken çember merkezinin kenarlara dik uzaklıklarının eşitliğini kullan. Çevre bilgisi tek başına yarıçapın sayısal değerini vermez."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-geo-dortgen-hiyerarsi-032",
+        "after": "dba38a02dceec5baf3efaa67faf777140f8fa8756849f4035270e66ed4d61c5f",
+        "prior": {
+          "source": "MEBİ TYT Matematik Konu Özetleri: Dörtgenler ve Özellikleri, Özel Dörtgenler (basılı 140–141/PDF 142–143); Aurelia Tüm Geometri Özeti PDF 8. Kaynak kavramlarından yazılmış özgün anlatım ve öğretim soruları.",
+          "sections": [
+            {
+              "title": "Dörtgen ve sınıflar",
+              "text": [
+                "Basit dörtgende iç açı toplam 360°. Dışbükeyde bütün iç açılar 180°den küçük. Bu derste yamuk:en az bir paralel karşı kenar çifti. Kare, hem dikdörtgen hem eşkenar dörtgendir."
+              ]
+            },
+            {
+              "title": "Yamuk",
+              "text": [
+                "Tabanlar a, b; dik yükseklik h. Orta taban(a+b)/2, alan(a+b)h/2. Aynı yan kenarın iki iç açısı toplam 180°.",
+                "a≥b iken orta tabanda köşegenler arasındaki parça(a−b)/2; uç parçalar b/2. Köşegen kesişiminde AO/OC=BO/OD=a/b."
+              ]
+            },
+            {
+              "title": "Deltoid ve dik köşegen",
+              "text": [
+                "AB=AD, CB=CD ise AC⊥BD; AC, BD’yi ortalar. Alan AC·BD/2. Dik köşegenli genel dörtgende AB²+CD²=BC²+DA²."
+              ]
+            },
+            {
+              "title": "Orta noktalar ve açıortay",
+              "text": [
+                "Kenar orta noktaları paralelkenar kurar; çevresi AC+BD, alanı eski alanın yarısıdır. B, C iç açıortayları E’de kesişiyorsa ∠BEC=(A+D)/2."
+              ]
+            },
+            {
+              "title": "Ek koşulu önce oku",
+              "text": [
+                "İkizkenar yamukta farklı tabanlar a>b için h=√(ℓ²−((a−b)/2)²). Çembersel dörtgende karşı açılar 180°. İçteğet çemberde AB+CD=BC+DA ve S=r·s; r yarıçap, s yarı çevredir."
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.164.0",
+    "receipts": [
+      {
+        "surface": "lessons",
+        "id": "tyt-geo-yamuk-deltoid-032",
+        "after": "b152891629706b77faad3502e68b592d91084a06cb243f5b441ec466d2a458c1",
+        "prior": {
+          "source": {
+            "tr": "MEBİ TYT Matematik Konu Özetleri: basılı 141–143 ve 151; Aurelia TYT Geometri Tüm Konular ve Formüller: yamuk/deltoid özetiyle karşılaştırılmış özgün anlatım ve sorular. Kaynağın bütün PDF kapsamı değildir."
+          },
+          "body": [
+            {
+              "title": {
+                "tr": "İsimden önce verilen dörtgeni oku"
+              },
+              "text": {
+                "tr": "Bu ünitede A, B, C, D köşeleri sınır boyunca sıralanmış, kenarları kesişmeyen dışbükey dörtgenler kullanılır. AB∥CD demek, AB ile CD doğrularının paralel olmasıdır. Bu iki kenara taban, AD ve BC’ye yan kenar denir. Köşegenler ise komşu olmayan köşeleri birleştiren AC ve BD’dir; bir köşegen, yan kenar değildir.\n\nBurada MEBİ’nin kapsayıcı tanımı kullanılır: en az bir çift karşı kenarı paralel olan dörtgen yamuktur. Bu yüzden paralelkenar da bir yamuk çeşididir. Yamuğun iki tabanını seçtikten sonra hangi bağıntının genel yamuğa, hangisinin ek simetri koşuluna dayandığını ayır. Çizimin düzgün görünmesi yeni bir eşitlik vermez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Paralellik açıları, yükseklik ise alanı belirler"
+              },
+              "text": {
+                "tr": "AD doğrusu paralel AB ve CD’yi keser. Bu nedenle A ile D’deki iç açıların toplamı 180°dir; B ile C için de aynı sonuç geçerlidir. A=72° verilirse D=108° bulunur. A ile B’nin eşit olması genel yamuk özelliği değildir.\n\nYükseklik h, iki paralel taban doğrusu arasındaki dik uzaklıktır. Yan kenar eğikse uzunluğu h’den büyüktür; alan formülündeki h yerine onu yazamazsın. Dikmenin ayağı taban parçasının dışında kalsa bile doğrular arasındaki uzaklık aynıdır. Önce diklik işaretini bul, sonra uzunluğu kullan."
+              }
+            },
+            {
+              "title": {
+                "tr": "Orta tabanı ortalama olarak kur"
+              },
+              "text": {
+                "tr": "E, AD’nin; F, BC’nin orta noktası olsun. EF tabanlara paraleldir ve |EF|=(|AB|+|CD|)/2 olur. Bu doğru parçası yamuğun yüksekliğinin yarısında yer alır. Köşegenle iki üçgene ayırıp üçgenin orta tabanlarını kullanmak, iki yarım tabanın neden toplandığını gösterir.\n\nUzun taban a, kısa taban c ve a>c olsun. EF üzerindeki köşegen kesişimlerini soldan sağa K ve L diye adlandırırsan |EK|=|LF|=c/2, |KL|=(a−c)/2 olur. Dolayısıyla EF=c/2+(a−c)/2+c/2=(a+c)/2 çıkar. Köşegenlerin kendi orta noktaları arasındaki uzaklık da |a−c|/2’dir; bu uzunluğu orta tabanın tamamıyla karıştırma."
+              }
+            },
+            {
+              "title": {
+                "tr": "Alan formülünü iki üçgenden çıkar"
+              },
+              "text": {
+                "tr": "AC köşegenini çiz. ABC ve ACD üçgenlerinin, sırasıyla AB ve CD tabanlarına ait yükseklikleri aynı h’dir. Alanları ah/2 ve ch/2 olduğundan toplam alan S=(a+c)h/2’dir. Orta taban m=(a+c)/2 ise aynı sonuç S=m·h diye yazılır. Birim uzunluk değil, birimkaredir.\n\nAB∥CD ve E, AD’nin orta noktası ise BEC üçgeninin alanı yamuğun yarısıdır. Bunu üçgen ABD ve BCD’de eş yüksekliğe sahip parçalarla gösterebilirsin. Alt taban üzerindeki bir E noktası için AED ve EBC üçgenlerinin alanları sırasıyla |AE|h/2 ve |EB|h/2’dir. Paylaşılan yüksekliği çizmek, alan oranını şeklin görünüşünden tahmin etmekten güvenlidir."
+              }
+            },
+            {
+              "title": {
+                "tr": "İkizkenar yamukta simetriyi gerçekten doğrula"
+              },
+              "text": {
+                "tr": "Taban uzunlukları farklı olan bir yamukta iki yan kenar eşitse, tabanların orta dikmesi simetri eksenidir. Aynı tabana komşu iki iç açı, köşegenler ve köşegenlerin eksene göre eş parçaları eşittir. Karşı açılar bütünlerdir; bu yamuk çemberseldir. Kapsayıcı yamuk tanımında tabanları eşit paralelkenarda yalnız yan kenar eşliği bu simetriyi kanıtlamaz; böyle bir durumda ayrıca simetri veya taban açı eşliği gerekir.\n\nUzun taban b, kısa taban a ve yan kenar ℓ olsun. Kısa tabanın uçlarından uzun tabana dikmeler indir; iki yandaki yatay fark eşit olduğundan her biri (b−a)/2 olur. Pisagor ile h²=ℓ²−((b−a)/2)² bulunur. Sağ taraf pozitif olmalıdır. Örneğin b=20, a=8, ℓ=10 için yatay parça 6 ve yükseklik 8’dir; 12’lik taban farkının tamamını tek üçgene koymak yanlıştır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Dik yamuk ve dik köşegen koşulunu ayır"
+              },
+              "text": {
+                "tr": "Dik yamukta bir yan kenar tabanlara diktir ve yüksekliğe eşittir. Diğer yan kenar, h ve |a−c| dik kenarlı bir üçgenin hipotenüsüdür. Tabanlar 14 ve 5, yükseklik 12 ise eğik kenar √(9²+12²)=15’tir. Bir açının dik olması, köşegenlerin de dik olduğu anlamına gelmez.\n\nAB=a, CD=c, AD=h olan dik yamukta A=(0,0), B=(a,0), D=(0,h), C=(c,h) seç. AC ve BD vektörlerinin skaler çarpımı −ac+h²’dir. Köşegenler ayrıca dikse h²=ac bulunur. Simetrik ikizkenar yamukta dik köşegen koşulu ise h=(a+c)/2 verir; bunun alanı h² olur. İki özel şeklin bağıntılarını birbirinin yerine kullanma."
+              }
+            },
+            {
+              "title": {
+                "tr": "Köşegen kesişiminden oran ve alan çıkar"
+              },
+              "text": {
+                "tr": "AB∥CD, |AB|=a, |CD|=c ve köşegenlerin kesişimi O olsun. AOB ile COD üçgenleri ters ve iç ters açılardan benzerdir. Buna göre AO/OC=BO/OD=a/c, alanlarının oranı ise a²/c² olur. Uzunluk oranını doğrudan alan oranı olarak kullanma.\n\nCOD’nin alanına S₁, COB’ninkine S₂, AOB’ninkine S₃, AOD’ninkine S₄ de. Aynı taban ve yükseklik ilişkilerinden S₂=S₄ ve S₂·S₄=S₁·S₃ bulunur. S₁=9 ve S₃=25 ise iki yan alan √(9·25)=15, toplam alan 64’tür. Buradaki harfler köşe sırasına ve tanımlanan üçgenlere bağlıdır; şekilsiz bir soruda önce hangi bölgenin adlandırıldığını oku."
+              }
+            },
+            {
+              "title": {
+                "tr": "Deltoidin simetri köşegenini eş kenarlardan bul"
+              },
+              "text": {
+                "tr": "AB=AD ve CB=CD olan dışbükey ABCD dörtgeninde A ile C, B ve D’ye eşit uzaklıktadır. Bu nedenle AC doğrusu BD’nin orta dikmesidir. AC ile BD dik kesişir; kesişim K ise BK=DK olur. ABC ve ADC eş üçgenlerinden AC’nin A ve C açılarını ortaladığı, B ve D açılarının eşit olduğu da çıkar.\n\nGenel deltoidde AC’nin BD’yi ortalaması, BD’nin de AC’yi ortaladığı anlamına gelmez. AK ile KC farklı olabilir. İki köşegenin birbirini ortalaması ek olarak varsa şekil eşkenar dörtgene dönüşür. Deltoidin bütün kenarları ya da köşegenleri eşit diye varsayma; hangi komşu kenar çiftinin eş olduğunu işaretle."
+              }
+            },
+            {
+              "title": {
+                "tr": "Deltoidde alanı dört dik üçgenle tamamla"
+              },
+              "text": {
+                "tr": "AC=e, BD=f ve köşegenler dik olduğundan dört küçük üçgenin alanları toplamı S=ef/2’dir. AB=AD=u, BC=CD=v ise çevre 2(u+v)’dir. Alan için iki köşegenin tamamı gerekir; sadece yarım BD’yi kullanırsan sonucu yarıya düşürürsün.\n\nBK=DK=f/2 olduğunda ABK ile CBK dik üçgenlerinde AK²=u²−(f/2)² ve CK²=v²−(f/2)² yazılır. Dışbükeylikte K iki köşegenin içindedir; AC=AK+KC olur. u=13, v=15, f=24 için AK=5, KC=9 ve AC=14 bulunur. Alan 168, çevre 56’dır; AK=KC dayatmak iki ayrı kenar verisini bozar."
+              }
+            },
+            {
+              "title": {
+                "tr": "Soruda işe yarayan yardımcı çizgiyi seç"
+              },
+              "text": {
+                "tr": "Yamukta önce tabanları işaretle. Açı aranıyorsa paralellik, uzunluk aranıyorsa uygun dikmeler veya orta taban, alan aranıyorsa ortak taban/yükseklik genellikle hesabı kısaltır. Deltoidde ise simetri köşegeniyle başla; yarım köşegen ve bir kenar dik üçgen kuruyorsa Pisagor kullan. Yardımcı çizginin neden çizildiğini bir cümleyle söyle.\n\nSonucu bulduğunda bütün başlangıç koşullarına geri dön: bir kenar hipotenüsten uzun mu, karekök içi pozitif mi, alan birimi doğru mu, özel bağıntı için gerekli diklik veya simetri verilmiş mi? Denetim başka bir formülle de yapılabiliyorsa yap. Bir ezber formülü seçmekten çok, formülün hangi koşulda çalıştığını bilmek benzer sorulara aktarımı sağlar."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "tyt-geo-yamuk-deltoid-032",
+        "after": "0993c3f35f7d07b72af03149b95c3af9f5245d49e8f1f33c6154067e68d7aa76",
+        "prior": {
+          "sections": [
+            {
+              "title": "İsimden önce verilen dörtgeni oku",
+              "paragraphs": [
+                "Bu ünitede A, B, C, D köşeleri sınır boyunca sıralanmış, kenarları kesişmeyen dışbükey dörtgenler kullanılır. AB∥CD demek, AB ile CD doğrularının paralel olmasıdır. Bu iki kenara taban, AD ve BC’ye yan kenar denir. Köşegenler ise komşu olmayan köşeleri birleştiren AC ve BD’dir; bir köşegen, yan kenar değildir.",
+                "Burada MEBİ’nin kapsayıcı tanımı kullanılır: en az bir çift karşı kenarı paralel olan dörtgen yamuktur. Bu yüzden paralelkenar da bir yamuk çeşididir. Yamuğun iki tabanını seçtikten sonra hangi bağıntının genel yamuğa, hangisinin ek simetri koşuluna dayandığını ayır. Çizimin düzgün görünmesi yeni bir eşitlik vermez."
+              ]
+            },
+            {
+              "title": "Paralellik açıları, yükseklik ise alanı belirler",
+              "paragraphs": [
+                "AD doğrusu paralel AB ve CD’yi keser. Bu nedenle A ile D’deki iç açıların toplamı 180°dir; B ile C için de aynı sonuç geçerlidir. A=72° verilirse D=108° bulunur. A ile B’nin eşit olması genel yamuk özelliği değildir.",
+                "Yükseklik h, iki paralel taban doğrusu arasındaki dik uzaklıktır. Yan kenar eğikse uzunluğu h’den büyüktür; alan formülündeki h yerine onu yazamazsın. Dikmenin ayağı taban parçasının dışında kalsa bile doğrular arasındaki uzaklık aynıdır. Önce diklik işaretini bul, sonra uzunluğu kullan."
+              ]
+            },
+            {
+              "title": "Orta tabanı ortalama olarak kur",
+              "paragraphs": [
+                "E, AD’nin; F, BC’nin orta noktası olsun. EF tabanlara paraleldir ve |EF|=(|AB|+|CD|)/2 olur. Bu doğru parçası yamuğun yüksekliğinin yarısında yer alır. Köşegenle iki üçgene ayırıp üçgenin orta tabanlarını kullanmak, iki yarım tabanın neden toplandığını gösterir.",
+                "Uzun taban a, kısa taban c ve a>c olsun. EF üzerindeki köşegen kesişimlerini soldan sağa K ve L diye adlandırırsan |EK|=|LF|=c/2, |KL|=(a−c)/2 olur. Dolayısıyla EF=c/2+(a−c)/2+c/2=(a+c)/2 çıkar. Köşegenlerin kendi orta noktaları arasındaki uzaklık da |a−c|/2’dir; bu uzunluğu orta tabanın tamamıyla karıştırma."
+              ]
+            },
+            {
+              "title": "Alan formülünü iki üçgenden çıkar",
+              "paragraphs": [
+                "AC köşegenini çiz. ABC ve ACD üçgenlerinin, sırasıyla AB ve CD tabanlarına ait yükseklikleri aynı h’dir. Alanları ah/2 ve ch/2 olduğundan toplam alan S=(a+c)h/2’dir. Orta taban m=(a+c)/2 ise aynı sonuç S=m·h diye yazılır. Birim uzunluk değil, birimkaredir.",
+                "AB∥CD ve E, AD’nin orta noktası ise BEC üçgeninin alanı yamuğun yarısıdır. Bunu üçgen ABD ve BCD’de eş yüksekliğe sahip parçalarla gösterebilirsin. Alt taban üzerindeki bir E noktası için AED ve EBC üçgenlerinin alanları sırasıyla |AE|h/2 ve |EB|h/2’dir. Paylaşılan yüksekliği çizmek, alan oranını şeklin görünüşünden tahmin etmekten güvenlidir."
+              ]
+            },
+            {
+              "title": "İkizkenar yamukta simetriyi gerçekten doğrula",
+              "paragraphs": [
+                "Taban uzunlukları farklı olan bir yamukta iki yan kenar eşitse, tabanların orta dikmesi simetri eksenidir. Aynı tabana komşu iki iç açı, köşegenler ve köşegenlerin eksene göre eş parçaları eşittir. Karşı açılar bütünlerdir; bu yamuk çemberseldir. Kapsayıcı yamuk tanımında tabanları eşit paralelkenarda yalnız yan kenar eşliği bu simetriyi kanıtlamaz; böyle bir durumda ayrıca simetri veya taban açı eşliği gerekir.",
+                "Uzun taban b, kısa taban a ve yan kenar ℓ olsun. Kısa tabanın uçlarından uzun tabana dikmeler indir; iki yandaki yatay fark eşit olduğundan her biri (b−a)/2 olur. Pisagor ile h²=ℓ²−((b−a)/2)² bulunur. Sağ taraf pozitif olmalıdır. Örneğin b=20, a=8, ℓ=10 için yatay parça 6 ve yükseklik 8’dir; 12’lik taban farkının tamamını tek üçgene koymak yanlıştır."
+              ]
+            },
+            {
+              "title": "Dik yamuk ve dik köşegen koşulunu ayır",
+              "paragraphs": [
+                "Dik yamukta bir yan kenar tabanlara diktir ve yüksekliğe eşittir. Diğer yan kenar, h ve |a−c| dik kenarlı bir üçgenin hipotenüsüdür. Tabanlar 14 ve 5, yükseklik 12 ise eğik kenar √(9²+12²)=15’tir. Bir açının dik olması, köşegenlerin de dik olduğu anlamına gelmez.",
+                "AB=a, CD=c, AD=h olan dik yamukta A=(0,0), B=(a,0), D=(0,h), C=(c,h) seç. AC ve BD vektörlerinin skaler çarpımı −ac+h²’dir. Köşegenler ayrıca dikse h²=ac bulunur. Simetrik ikizkenar yamukta dik köşegen koşulu ise h=(a+c)/2 verir; bunun alanı h² olur. İki özel şeklin bağıntılarını birbirinin yerine kullanma."
+              ]
+            },
+            {
+              "title": "Köşegen kesişiminden oran ve alan çıkar",
+              "paragraphs": [
+                "AB∥CD, |AB|=a, |CD|=c ve köşegenlerin kesişimi O olsun. AOB ile COD üçgenleri ters ve iç ters açılardan benzerdir. Buna göre AO/OC=BO/OD=a/c, alanlarının oranı ise a²/c² olur. Uzunluk oranını doğrudan alan oranı olarak kullanma.",
+                "COD’nin alanına S₁, COB’ninkine S₂, AOB’ninkine S₃, AOD’ninkine S₄ de. Aynı taban ve yükseklik ilişkilerinden S₂=S₄ ve S₂·S₄=S₁·S₃ bulunur. S₁=9 ve S₃=25 ise iki yan alan √(9·25)=15, toplam alan 64’tür. Buradaki harfler köşe sırasına ve tanımlanan üçgenlere bağlıdır; şekilsiz bir soruda önce hangi bölgenin adlandırıldığını oku."
+              ]
+            },
+            {
+              "title": "Deltoidin simetri köşegenini eş kenarlardan bul",
+              "paragraphs": [
+                "AB=AD ve CB=CD olan dışbükey ABCD dörtgeninde A ile C, B ve D’ye eşit uzaklıktadır. Bu nedenle AC doğrusu BD’nin orta dikmesidir. AC ile BD dik kesişir; kesişim K ise BK=DK olur. ABC ve ADC eş üçgenlerinden AC’nin A ve C açılarını ortaladığı, B ve D açılarının eşit olduğu da çıkar.",
+                "Genel deltoidde AC’nin BD’yi ortalaması, BD’nin de AC’yi ortaladığı anlamına gelmez. AK ile KC farklı olabilir. İki köşegenin birbirini ortalaması ek olarak varsa şekil eşkenar dörtgene dönüşür. Deltoidin bütün kenarları ya da köşegenleri eşit diye varsayma; hangi komşu kenar çiftinin eş olduğunu işaretle."
+              ]
+            },
+            {
+              "title": "Deltoidde alanı dört dik üçgenle tamamla",
+              "paragraphs": [
+                "AC=e, BD=f ve köşegenler dik olduğundan dört küçük üçgenin alanları toplamı S=ef/2’dir. AB=AD=u, BC=CD=v ise çevre 2(u+v)’dir. Alan için iki köşegenin tamamı gerekir; sadece yarım BD’yi kullanırsan sonucu yarıya düşürürsün.",
+                "BK=DK=f/2 olduğunda ABK ile CBK dik üçgenlerinde AK²=u²−(f/2)² ve CK²=v²−(f/2)² yazılır. Dışbükeylikte K iki köşegenin içindedir; AC=AK+KC olur. u=13, v=15, f=24 için AK=5, KC=9 ve AC=14 bulunur. Alan 168, çevre 56’dır; AK=KC dayatmak iki ayrı kenar verisini bozar."
+              ]
+            },
+            {
+              "title": "Soruda işe yarayan yardımcı çizgiyi seç",
+              "paragraphs": [
+                "Yamukta önce tabanları işaretle. Açı aranıyorsa paralellik, uzunluk aranıyorsa uygun dikmeler veya orta taban, alan aranıyorsa ortak taban/yükseklik genellikle hesabı kısaltır. Deltoidde ise simetri köşegeniyle başla; yarım köşegen ve bir kenar dik üçgen kuruyorsa Pisagor kullan. Yardımcı çizginin neden çizildiğini bir cümleyle söyle.",
+                "Sonucu bulduğunda bütün başlangıç koşullarına geri dön: bir kenar hipotenüsten uzun mu, karekök içi pozitif mi, alan birimi doğru mu, özel bağıntı için gerekli diklik veya simetri verilmiş mi? Denetim başka bir formülle de yapılabiliyorsa yap. Bir ezber formülü seçmekten çok, formülün hangi koşulda çalıştığını bilmek benzer sorulara aktarımı sağlar."
+              ]
+            }
+          ],
+          "source": "MEBİ TYT Matematik Konu Özetleri: basılı 141–143 ve 151; Aurelia TYT Geometri Tüm Konular ve Formüller: yamuk/deltoid özetiyle karşılaştırılmış özgün anlatım ve sorular. Kaynağın bütün PDF kapsamı değildir."
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-geo-yamuk-deltoid-032",
+        "after": "2b86e995a56bc28c7cb378b9054eb950cda4dbf3cc12fc00165ff3dc7955d62b",
+        "prior": {
+          "sections": [
+            {
+              "title": "Taban ve açı",
+              "text": [
+                "AB∥CD tabanları seç. Aynı yan kenardaki iki iç açı toplamı 180°dir.",
+                "Kapsayıcı tanımda paralelkenar da yamuktur."
+              ]
+            },
+            {
+              "title": "Orta taban ve alan",
+              "text": [
+                "m=(a+c)/2; S=m·h=(a+c)h/2. h tabanlara dik uzaklıktır.",
+                "Köşegen orta noktaları arası |a−c|/2; orta tabanın tamamı değildir."
+              ]
+            },
+            {
+              "title": "Özel yamuk koşulları",
+              "text": [
+                "Farklı tabanlı ikizkenar yamuk: h²=ℓ²−((b−a)/2)².",
+                "Dik yamukta eğik kenar²=h²+(a−c)². Dik köşegen de varsa h²=ac.",
+                "Simetrik ikizkenar yamukta dik köşegenler varsa h=(a+c)/2."
+              ]
+            },
+            {
+              "title": "Köşegen kesişimi",
+              "text": [
+                "AO/OC=BO/OD=a/c. Benzer taban üçgenleri alan oranı a²/c².",
+                "İki yan üçgen alanı eş; her biri diğer iki alanın çarpımının pozitif kareköküdür."
+              ]
+            },
+            {
+              "title": "Deltoid",
+              "text": [
+                "AB=AD ve CB=CD ise AC, BD’nin orta dikmesidir. BD, AC’yi genelde ortalamaz.",
+                "S=AC·BD/2; Ç=2(AB+BC). Yarım BD ve kenarla Pisagor kur."
+              ]
+            }
+          ],
+          "source": "MEBİ TYT Matematik Konu Özetleri: basılı 141–143 ve 151; Aurelia TYT Geometri Tüm Konular ve Formüller: yamuk/deltoid özetiyle karşılaştırılmış özgün anlatım ve sorular. Kaynağın bütün PDF kapsamı değildir."
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.165.0",
+    "receipts": [
+      {
+        "surface": "lessons",
+        "id": "tyt-geo-paralelkenar-ozel-dortgenler-032",
+        "after": "176b71fa11f2e9716fdf3e51c9b6f921130394b094aa0eb2385e303f54e22917",
+        "prior": {
+          "body": [
+            {
+              "title": {
+                "tr": "Paralelkenarı iki çift paralellikle tanı"
+              },
+              "text": {
+                "tr": "Dışbükey ABCD dörtgeninde AB∥DC ve AD∥BC ise şekil paralelkenardır. AC köşegenini çizince iç ters açılar ve ortak kenar iki eş üçgen oluşturur. Böylece karşı kenarların uzunlukları ve karşı köşelerin açıları eşittir. Bir çift karşı kenarın yalnız eşit olması tek başına yeterli değildir; aynı çift ayrıca paralelse paralelkenar sonucu çıkarılabilir.\n\nBir köşenin açısı α ise komşusu 180°−α, karşısı yine α’dır. Ardışık açılar bütünlerdir; dört açının toplamı 360° olur. Bu eşitlikler bütün açıların 90° olduğunu söylemez. Çizimi döndürmek veya paralel doğrular boyunca kaydırmak, verilen koşulları değiştirmez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Köşegenlerin kesişimi ile orta noktayı ayır"
+              },
+              "text": {
+                "tr": "Paralelkenarda köşegenlerin kesişimi O ise AO=OC ve BO=OD olur. İki köşegen birbirini ortalar; ancak AO ile BO’nun eşit olması gerekmez. Ters yönde de dışbükey bir dörtgende köşegenler birbirini ortalıyorsa dörtgen paralelkenardır. Nokta adları köşegen parçalarının hangi bütüne ait olduğunu belirler.\n\nGenel paralelkenarın köşegenleri eşit, dik veya açıortay olmak zorunda değildir. Eş köşegen ek koşulu dikdörtgene, dik köşegen ek koşulu eşkenar dörtgene götürür. İki koşul birlikte varsa kare elde edilir. Sadece bir resimde çizgiler dik görünüyorsa bu çıkarımları yapamazsın; diklik işareti ya da yazılı koşul gerekir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Açıortaylar neden dik olur?"
+              },
+              "text": {
+                "tr": "Komşu A ve B iç açılarının toplamı 180°dir. İç açıortayların ilgili açı parçaları α/2 ve (180°−α)/2 olup toplamları 90°dir. Açıortayların kesiştiği üçgende kalan açı da 90° olduğundan iki açıortay diktir. Bu sonuç köşegenlerin dikliği değildir; hangi doğru parçalarının açıortay olduğuna dikkat et.\n\nParalelkenarda bir köşenin açıortayı karşı kenarı kesiyorsa, paralellerle taşınan eş açılardan ikizkenar bir üçgen oluşabilir. Önce eş açıların yerini göster, sonra karşılarındaki kenarları eşitle. Açıortay uzunluğu veya kestiği nokta için yalnız şeklin ortasında görünmesine dayanma; orta nokta ayrıca kanıtlanır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Alanı taban ve dik uzaklıkla kur"
+              },
+              "text": {
+                "tr": "AB=a ve DC doğrusunun AB’ye dik uzaklığı hₐ ise S=a·hₐ’dır. Eğik bir köşeden yükseklik indirip kenardaki dik üçgeni öteki tarafa taşıdığında aynı taban ve yüksekliğe sahip bir dikdörtgen oluşur. Bu parçalama alanın neden taban çarpı yükseklik olduğunu açıklar. Kenar b eğikse b yerine yüksekliği bulmak gerekir.\n\nKomşu kenarlar a ve b, aralarındaki açı α ise hₐ=b·sinα ve S=ab·sinα olur. Açı 30° ise yükseklik b/2’dir. Aynı alan b·hᵦ ile de bulunur; dolayısıyla a·hₐ=b·hᵦ eşitliği ikinci denetimdir. Formüllerdeki açı seçilen iki kenarın arasındaki açıdır; sinüsünü aldığın açıyı önce işaretle."
+              }
+            },
+            {
+              "title": {
+                "tr": "Üçgenlere bölmek alanı görünür kılar"
+              },
+              "text": {
+                "tr": "Bir köşegen paralelkenarı eş alanlı iki üçgene ayırır. Her iki köşegen çizildiğinde oluşan dört küçük üçgenin alanları eşittir; köşegenlerin yarıları eş olduğundan aynı dik uzaklığa sahip üçgen çiftleri karşılaştırılabilir. Köşegenler eşit uzunlukta olmasa da bu alan eşitlikleri geçerlidir.\n\nİçeride herhangi bir P noktası seç. PAB ile PCD üçgenlerinin alanları toplamı S/2’dir; çünkü eş uzunluktaki paralel AB ve CD tabanlarına ait iki yüksekliğin toplamı paralelkenarın yüksekliğidir. Benzer biçimde PAD ile PBC’nin toplamı da S/2 olur. P’nin merkez olması gerekmez. DC üzerindeki herhangi bir E için ABE’nin alanı yine S/2’dir; ortak yükseklik değişmez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Dikdörtgende eş köşegenin kaynağı"
+              },
+              "text": {
+                "tr": "Bir paralelkenarın bir açısı 90° ise komşu açılar ve karşı açı eşitliklerinden bütün açıları 90°dir; bu şekil dikdörtgendir. Komşu kenarları a ve b ise çevre 2(a+b), alan ab’dir. Köşegen bir dik üçgenin hipotenüsü olduğundan d²=a²+b² çıkar.\n\nİki köşegen eş uzunluktadır ve birbirini ortalar. Bu nedenle kesişim O’dan dört köşeye uzaklık d/2’dir; dört köşe aynı çemberdedir ve çevrel yarıçap R=d/2 olur. Kare olmayan dikdörtgende köşegenler genel olarak dik veya açıortay değildir. Köşegen uzunluğunu bir kenar yerine kullanmak alanı yanlış büyütür."
+              }
+            },
+            {
+              "title": {
+                "tr": "Eşkenar dörtgende diklik ve yarım köşegen"
+              },
+              "text": {
+                "tr": "Dört kenarı da a olan paralelkenar eşkenar dörtgendir. Köşegenler birbirini ortalar; ayrıca bir köşegenin iki yanındaki eş üçgenler köşe açısını ikiye böler. Komşu bütünler açıların yarılarından köşegenlerin dik kesiştiği de görülür. Dört köşenin dik olması zorunlu değildir; bu ek koşul kareyi verir.\n\nKöşegenler e ve f ise yarımlarıyla kenar bir dik üçgen kurar: (e/2)²+(f/2)²=a². Alan S=ef/2=a·h=a²sinα, çevre 4a’dır. İç teğet çember için yarıçap r=h/2=S/(2a) olur; çünkü karşı paralel kenarlara teğet çemberin çapı bu kenarlar arasındaki uzaklıktır. Radyal uzunluğu alanla veya çevreyle karıştırma."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kare iki ailenin özelliklerini birlikte taşır"
+              },
+              "text": {
+                "tr": "Dört eş kenarı ve dört dik açısı olan kare hem dikdörtgen hem eşkenar dörtgendir. Bu yüzden köşegenleri eş, dik, birbirini ortalayan ve köşe açılarını ikiye bölen parçalardır. Her köşegenin ayırdığı köşe açıları 45° ve 45°dir. Kenar a ise d=a√2, alan a²=d²/2, çevre 4a’dır.\n\nİç teğet çemberin yarıçapı r=a/2, çevrel çemberinki R=d/2=a√2/2’dir. Bunlar farklı çemberlerdir; çevrel çember köşelerden geçer, iç çember kenarlara teğettir. Köşegen 12 ise alan 72’dir; 144 köşegeni kenar sayma hatasıdır. Karede köşegen kullanırken hangi uzunluğun tamam, hangisinin yarım olduğunu işaretle."
+              }
+            },
+            {
+              "title": {
+                "tr": "Köşegenlerle genel alan ve uzunluk denetimi"
+              },
+              "text": {
+                "tr": "Paralelkenarın köşegenleri d₁,d₂, aralarındaki açı θ ise alan S=d₁d₂sinθ/2’dir. Bu formül dışbükey dörtgenlerde de geçerlidir; dört küçük üçgenin alanlarını toplamaktan çıkar. Köşegenler dik değilse sinθ çarpanı atılamaz. Eşkenar dörtgende θ=90° olduğu için tanıdık ef/2 biçimine iner.\n\nKomşu kenarlar a,b olan paralelkenarda d₁²+d₂²=2(a²+b²) bağıntısı vardır. Köşegen vektörleri u+v ve u−v’nin karelerini toplayınca skaler çarpımlar birbirini götürür; geriye 2|u|²+2|v|² kalır. Bu bağıntı iki köşegen eşit demek değildir. Örneğin a=5,b=7,d₁=6 ise d₂²=2(25+49)−36=112 bulunur."
+              }
+            },
+            {
+              "title": {
+                "tr": "Koşulu en kısa yöntemle sonuca bağla"
+              },
+              "text": {
+                "tr": "İlk adım hangi ailede olduğunu belirlemektir: yalnız karşı kenarlar paralelse genel özelliklerle başla; dik açı, eş kenar veya köşegen koşulu varsa ilgili alt aileye geç. Alan sorusunda taban/yükseklik veya dik köşegen; uzunluk sorusunda Pisagor, orta nokta ya da eş üçgen; açı sorusunda paralellik ve açıortay çoğu zaman yeterlidir.\n\nBir parçalama sorusunda adı verilen her bölgenin köşelerini belirle. Aynı taban, aynı yükseklik veya yarım taban sonucu veren eş alanı gerekçelendir; renkten dolayı eşit sanma. Sonuçta uzunluk birimini, alanın kare birimini ve hangi ek koşulu kullandığını denetle. İkinci bir hesap veya uygun karşı örnek, ezberin sınırını kontrol etmeye yardım eder."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "tyt-geo-paralelkenar-ozel-dortgenler-032",
+        "after": "cbb4a6460d5e5bb7ed6dd620d2c64ad043089486398137ddfe83c04a80a7e0c5",
+        "prior": {
+          "sections": [
+            {
+              "title": "Paralelkenarı iki çift paralellikle tanı",
+              "paragraphs": [
+                "Dışbükey ABCD dörtgeninde AB∥DC ve AD∥BC ise şekil paralelkenardır. AC köşegenini çizince iç ters açılar ve ortak kenar iki eş üçgen oluşturur. Böylece karşı kenarların uzunlukları ve karşı köşelerin açıları eşittir. Bir çift karşı kenarın yalnız eşit olması tek başına yeterli değildir; aynı çift ayrıca paralelse paralelkenar sonucu çıkarılabilir.",
+                "Bir köşenin açısı α ise komşusu 180°−α, karşısı yine α’dır. Ardışık açılar bütünlerdir; dört açının toplamı 360° olur. Bu eşitlikler bütün açıların 90° olduğunu söylemez. Çizimi döndürmek veya paralel doğrular boyunca kaydırmak, verilen koşulları değiştirmez."
+              ]
+            },
+            {
+              "title": "Köşegenlerin kesişimi ile orta noktayı ayır",
+              "paragraphs": [
+                "Paralelkenarda köşegenlerin kesişimi O ise AO=OC ve BO=OD olur. İki köşegen birbirini ortalar; ancak AO ile BO’nun eşit olması gerekmez. Ters yönde de dışbükey bir dörtgende köşegenler birbirini ortalıyorsa dörtgen paralelkenardır. Nokta adları köşegen parçalarının hangi bütüne ait olduğunu belirler.",
+                "Genel paralelkenarın köşegenleri eşit, dik veya açıortay olmak zorunda değildir. Eş köşegen ek koşulu dikdörtgene, dik köşegen ek koşulu eşkenar dörtgene götürür. İki koşul birlikte varsa kare elde edilir. Sadece bir resimde çizgiler dik görünüyorsa bu çıkarımları yapamazsın; diklik işareti ya da yazılı koşul gerekir."
+              ]
+            },
+            {
+              "title": "Açıortaylar neden dik olur?",
+              "paragraphs": [
+                "Komşu A ve B iç açılarının toplamı 180°dir. İç açıortayların ilgili açı parçaları α/2 ve (180°−α)/2 olup toplamları 90°dir. Açıortayların kesiştiği üçgende kalan açı da 90° olduğundan iki açıortay diktir. Bu sonuç köşegenlerin dikliği değildir; hangi doğru parçalarının açıortay olduğuna dikkat et.",
+                "Paralelkenarda bir köşenin açıortayı karşı kenarı kesiyorsa, paralellerle taşınan eş açılardan ikizkenar bir üçgen oluşabilir. Önce eş açıların yerini göster, sonra karşılarındaki kenarları eşitle. Açıortay uzunluğu veya kestiği nokta için yalnız şeklin ortasında görünmesine dayanma; orta nokta ayrıca kanıtlanır."
+              ]
+            },
+            {
+              "title": "Alanı taban ve dik uzaklıkla kur",
+              "paragraphs": [
+                "AB=a ve DC doğrusunun AB’ye dik uzaklığı hₐ ise S=a·hₐ’dır. Eğik bir köşeden yükseklik indirip kenardaki dik üçgeni öteki tarafa taşıdığında aynı taban ve yüksekliğe sahip bir dikdörtgen oluşur. Bu parçalama alanın neden taban çarpı yükseklik olduğunu açıklar. Kenar b eğikse b yerine yüksekliği bulmak gerekir.",
+                "Komşu kenarlar a ve b, aralarındaki açı α ise hₐ=b·sinα ve S=ab·sinα olur. Açı 30° ise yükseklik b/2’dir. Aynı alan b·hᵦ ile de bulunur; dolayısıyla a·hₐ=b·hᵦ eşitliği ikinci denetimdir. Formüllerdeki açı seçilen iki kenarın arasındaki açıdır; sinüsünü aldığın açıyı önce işaretle."
+              ]
+            },
+            {
+              "title": "Üçgenlere bölmek alanı görünür kılar",
+              "paragraphs": [
+                "Bir köşegen paralelkenarı eş alanlı iki üçgene ayırır. Her iki köşegen çizildiğinde oluşan dört küçük üçgenin alanları eşittir; köşegenlerin yarıları eş olduğundan aynı dik uzaklığa sahip üçgen çiftleri karşılaştırılabilir. Köşegenler eşit uzunlukta olmasa da bu alan eşitlikleri geçerlidir.",
+                "İçeride herhangi bir P noktası seç. PAB ile PCD üçgenlerinin alanları toplamı S/2’dir; çünkü eş uzunluktaki paralel AB ve CD tabanlarına ait iki yüksekliğin toplamı paralelkenarın yüksekliğidir. Benzer biçimde PAD ile PBC’nin toplamı da S/2 olur. P’nin merkez olması gerekmez. DC üzerindeki herhangi bir E için ABE’nin alanı yine S/2’dir; ortak yükseklik değişmez."
+              ]
+            },
+            {
+              "title": "Dikdörtgende eş köşegenin kaynağı",
+              "paragraphs": [
+                "Bir paralelkenarın bir açısı 90° ise komşu açılar ve karşı açı eşitliklerinden bütün açıları 90°dir; bu şekil dikdörtgendir. Komşu kenarları a ve b ise çevre 2(a+b), alan ab’dir. Köşegen bir dik üçgenin hipotenüsü olduğundan d²=a²+b² çıkar.",
+                "İki köşegen eş uzunluktadır ve birbirini ortalar. Bu nedenle kesişim O’dan dört köşeye uzaklık d/2’dir; dört köşe aynı çemberdedir ve çevrel yarıçap R=d/2 olur. Kare olmayan dikdörtgende köşegenler genel olarak dik veya açıortay değildir. Köşegen uzunluğunu bir kenar yerine kullanmak alanı yanlış büyütür."
+              ]
+            },
+            {
+              "title": "Eşkenar dörtgende diklik ve yarım köşegen",
+              "paragraphs": [
+                "Dört kenarı da a olan paralelkenar eşkenar dörtgendir. Köşegenler birbirini ortalar; ayrıca bir köşegenin iki yanındaki eş üçgenler köşe açısını ikiye böler. Komşu bütünler açıların yarılarından köşegenlerin dik kesiştiği de görülür. Dört köşenin dik olması zorunlu değildir; bu ek koşul kareyi verir.",
+                "Köşegenler e ve f ise yarımlarıyla kenar bir dik üçgen kurar: (e/2)²+(f/2)²=a². Alan S=ef/2=a·h=a²sinα, çevre 4a’dır. İç teğet çember için yarıçap r=h/2=S/(2a) olur; çünkü karşı paralel kenarlara teğet çemberin çapı bu kenarlar arasındaki uzaklıktır. Radyal uzunluğu alanla veya çevreyle karıştırma."
+              ]
+            },
+            {
+              "title": "Kare iki ailenin özelliklerini birlikte taşır",
+              "paragraphs": [
+                "Dört eş kenarı ve dört dik açısı olan kare hem dikdörtgen hem eşkenar dörtgendir. Bu yüzden köşegenleri eş, dik, birbirini ortalayan ve köşe açılarını ikiye bölen parçalardır. Her köşegenin ayırdığı köşe açıları 45° ve 45°dir. Kenar a ise d=a√2, alan a²=d²/2, çevre 4a’dır.",
+                "İç teğet çemberin yarıçapı r=a/2, çevrel çemberinki R=d/2=a√2/2’dir. Bunlar farklı çemberlerdir; çevrel çember köşelerden geçer, iç çember kenarlara teğettir. Köşegen 12 ise alan 72’dir; 144 köşegeni kenar sayma hatasıdır. Karede köşegen kullanırken hangi uzunluğun tamam, hangisinin yarım olduğunu işaretle."
+              ]
+            },
+            {
+              "title": "Köşegenlerle genel alan ve uzunluk denetimi",
+              "paragraphs": [
+                "Paralelkenarın köşegenleri d₁,d₂, aralarındaki açı θ ise alan S=d₁d₂sinθ/2’dir. Bu formül dışbükey dörtgenlerde de geçerlidir; dört küçük üçgenin alanlarını toplamaktan çıkar. Köşegenler dik değilse sinθ çarpanı atılamaz. Eşkenar dörtgende θ=90° olduğu için tanıdık ef/2 biçimine iner.",
+                "Komşu kenarlar a,b olan paralelkenarda d₁²+d₂²=2(a²+b²) bağıntısı vardır. Köşegen vektörleri u+v ve u−v’nin karelerini toplayınca skaler çarpımlar birbirini götürür; geriye 2|u|²+2|v|² kalır. Bu bağıntı iki köşegen eşit demek değildir. Örneğin a=5,b=7,d₁=6 ise d₂²=2(25+49)−36=112 bulunur."
+              ]
+            },
+            {
+              "title": "Koşulu en kısa yöntemle sonuca bağla",
+              "paragraphs": [
+                "İlk adım hangi ailede olduğunu belirlemektir: yalnız karşı kenarlar paralelse genel özelliklerle başla; dik açı, eş kenar veya köşegen koşulu varsa ilgili alt aileye geç. Alan sorusunda taban/yükseklik veya dik köşegen; uzunluk sorusunda Pisagor, orta nokta ya da eş üçgen; açı sorusunda paralellik ve açıortay çoğu zaman yeterlidir.",
+                "Bir parçalama sorusunda adı verilen her bölgenin köşelerini belirle. Aynı taban, aynı yükseklik veya yarım taban sonucu veren eş alanı gerekçelendir; renkten dolayı eşit sanma. Sonuçta uzunluk birimini, alanın kare birimini ve hangi ek koşulu kullandığını denetle. İkinci bir hesap veya uygun karşı örnek, ezberin sınırını kontrol etmeye yardım eder."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-geo-paralelkenar-ozel-dortgenler-032",
+        "after": "06a262f6ac0c0a58ec4c2c6b5e8894809539c4ca449819b2f165ce9e4ab01158",
+        "prior": {
+          "sections": [
+            {
+              "title": "Paralelkenar",
+              "text": [
+                "Karşı kenarlar/açılar eş; komşu açılar bütünler. Köşegenler birbirini ortalar.",
+                "Eş köşegen, dik köşegen veya açıortaylık genel özellik değildir."
+              ]
+            },
+            {
+              "title": "Alan ve parçalama",
+              "text": [
+                "S=a·hₐ=b·hᵦ=ab·sinα. Kenarla yüksekliği eşleştir.",
+                "Köşegen alanı yarılar; iki köşegenin dört üçgeni eş alanlıdır.",
+                "Rastgele iç P için S(PAB)+S(PCD)=S/2; tek tek eşlik gerekmez."
+              ]
+            },
+            {
+              "title": "Dikdörtgen",
+              "text": [
+                "S=ab; Ç=2(a+b); d²=a²+b². Köşegenler eş ve birbirini ortalar.",
+                "Çevrel çember yarıçapı R=d/2; kare olmadıkça diklik/açıortaylık zorunlu değildir."
+              ]
+            },
+            {
+              "title": "Eşkenar dörtgen",
+              "text": [
+                "S=ef/2=a·h; Ç=4a. Köşegenler dik, birbirini ortalayan ve açıortay parçalardır.",
+                "(e/2)²+(f/2)²=a²; iç yarıçap r=S/(2a)=h/2."
+              ]
+            },
+            {
+              "title": "Kare ve genel köşegen denetimi",
+              "text": [
+                "Kare: S=a²=d²/2, d=a√2, r=a/2, R=d/2.",
+                "Paralelkenar: d₁²+d₂²=2(a²+b²).",
+                "Dışbükey dörtgende köşegen açısı θ ise S=d₁d₂sinθ/2."
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "0.166.0",
+    "receipts": [
+      {
+        "surface": "lessons",
+        "id": "tyt-geo-paralelkenar-ozel-dortgenler-032",
+        "after": "5ecc72995e59d287b29f322c3e268d3a49bac0cf354fce228d72b6df477bd340",
+        "prior": {
+          "body": [
+            {
+              "title": {
+                "tr": "Paralelkenarı iki çift paralellikle tanı"
+              },
+              "text": {
+                "tr": "Dışbükey ABCD dörtgeninde AB∥DC ve AD∥BC ise şekil paralelkenardır. AC köşegenini çizince iç ters açılar ve ortak kenar iki eş üçgen oluşturur. Böylece karşı kenarların uzunlukları ve karşı köşelerin açıları eşittir. Bir çift karşı kenarın yalnız eşit olması tek başına yeterli değildir; aynı çift ayrıca paralelse paralelkenar sonucu çıkarılabilir.\n\nBir köşenin açısı α ise komşusu 180°−α, karşısı yine α’dır. Ardışık açılar bütünlerdir; dört açının toplamı 360° olur. Bu eşitlikler bütün açıların 90° olduğunu söylemez. Çizimi döndürmek veya paralel doğrular boyunca kaydırmak, verilen koşulları değiştirmez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Köşegenlerin kesişimi ile orta noktayı ayır"
+              },
+              "text": {
+                "tr": "Paralelkenarda köşegenlerin kesişimi O ise AO=OC ve BO=OD olur. İki köşegen birbirini ortalar; ancak AO ile BO’nun eşit olması gerekmez. Ters yönde de dışbükey bir dörtgende köşegenler birbirini ortalıyorsa dörtgen paralelkenardır. Nokta adları köşegen parçalarının hangi bütüne ait olduğunu belirler.\n\nGenel paralelkenarın köşegenleri eşit, dik veya açıortay olmak zorunda değildir. Eş köşegen ek koşulu dikdörtgene, dik köşegen ek koşulu eşkenar dörtgene götürür. İki koşul birlikte varsa kare elde edilir. Sadece bir resimde çizgiler dik görünüyorsa bu çıkarımları yapamazsın; diklik işareti ya da yazılı koşul gerekir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Açıortaylar neden dik olur?"
+              },
+              "text": {
+                "tr": "Komşu A ve B iç açılarının toplamı 180°dir. İç açıortayların ilgili açı parçaları α/2 ve (180°−α)/2 olup toplamları 90°dir. Açıortayların kesiştiği üçgende kalan açı da 90° olduğundan iki açıortay diktir. Bu sonuç köşegenlerin dikliği değildir; hangi doğru parçalarının açıortay olduğuna dikkat et.\n\nParalelkenarda bir köşenin açıortayı karşı kenarı kesiyorsa, paralellerle taşınan eş açılardan ikizkenar bir üçgen oluşabilir. Önce eş açıların yerini göster, sonra karşılarındaki kenarları eşitle. Açıortay uzunluğu veya kestiği nokta için yalnız şeklin ortasında görünmesine dayanma; orta nokta ayrıca kanıtlanır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Alanı taban ve dik uzaklıkla kur"
+              },
+              "text": {
+                "tr": "AB=a ve DC doğrusunun AB’ye dik uzaklığı hₐ ise S=a·hₐ’dır. Eğik bir köşeden yükseklik indirip kenardaki dik üçgeni öteki tarafa taşıdığında aynı taban ve yüksekliğe sahip bir dikdörtgen oluşur. Bu parçalama alanın neden taban çarpı yükseklik olduğunu açıklar. Kenar b eğikse b yerine yüksekliği bulmak gerekir.\n\nKomşu kenarlar a ve b, aralarındaki açı α ise hₐ=b·sinα, S=ab·sinα ve a·hₐ=b·hᵦ olur. 30° için hₐ=b/2’dir. Koordinat adımında A(1; 1), B(7; 1) ve D(3; 5) verilir. AB ile DC aynı yönlü olduğundan C=B+D−A=(9; 5). AB=6 ve dik yükseklik 4 olduğundan alan 24 birim²; köşegenler (5; 3) noktasında birbirini ortalar."
+              }
+            },
+            {
+              "title": {
+                "tr": "Üçgenlere bölmek alanı görünür kılar"
+              },
+              "text": {
+                "tr": "Bir köşegen paralelkenarı eş alanlı iki üçgene ayırır. Her iki köşegen çizildiğinde oluşan dört küçük üçgenin alanları eşittir; köşegenlerin yarıları eş olduğundan aynı dik uzaklığa sahip üçgen çiftleri karşılaştırılabilir. Köşegenler eşit uzunlukta olmasa da bu alan eşitlikleri geçerlidir.\n\nİçeride herhangi bir P noktası seç. PAB ile PCD üçgenlerinin alanları toplamı S/2’dir; çünkü eş uzunluktaki paralel AB ve CD tabanlarına ait iki yüksekliğin toplamı paralelkenarın yüksekliğidir. Benzer biçimde PAD ile PBC’nin toplamı da S/2 olur. P’nin merkez olması gerekmez. DC üzerindeki herhangi bir E için ABE’nin alanı yine S/2’dir; ortak yükseklik değişmez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Dikdörtgende eş köşegenin kaynağı"
+              },
+              "text": {
+                "tr": "Bir paralelkenarın bir açısı 90° ise komşu açılar ve karşı açı eşitliklerinden bütün açıları 90°dir; bu şekil dikdörtgendir. Komşu kenarları a ve b ise çevre 2(a+b), alan ab’dir. Köşegen bir dik üçgenin hipotenüsü olduğundan d²=a²+b² çıkar.\n\nİki köşegen eş uzunluktadır ve birbirini ortalar. Bu nedenle kesişim O’dan dört köşeye uzaklık d/2’dir; dört köşe aynı çemberdedir ve çevrel yarıçap R=d/2 olur. Kare olmayan dikdörtgende köşegenler genel olarak dik veya açıortay değildir. Köşegen uzunluğunu bir kenar yerine kullanmak alanı yanlış büyütür."
+              }
+            },
+            {
+              "title": {
+                "tr": "Eşkenar dörtgende diklik ve yarım köşegen"
+              },
+              "text": {
+                "tr": "Dört kenarı da a olan paralelkenar eşkenar dörtgendir. Köşegenler birbirini ortalar; ayrıca bir köşegenin iki yanındaki eş üçgenler köşe açısını ikiye böler. Komşu bütünler açıların yarılarından köşegenlerin dik kesiştiği de görülür. Dört köşenin dik olması zorunlu değildir; bu ek koşul kareyi verir.\n\nKöşegenler e ve f ise yarımlarıyla kenar bir dik üçgen kurar: (e/2)²+(f/2)²=a². Alan S=ef/2=a·h=a²sinα, çevre 4a’dır. İç teğet çember için yarıçap r=h/2=S/(2a) olur; çünkü karşı paralel kenarlara teğet çemberin çapı bu kenarlar arasındaki uzaklıktır. Radyal uzunluğu alanla veya çevreyle karıştırma."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kare iki ailenin özelliklerini birlikte taşır"
+              },
+              "text": {
+                "tr": "Dört eş kenarı ve dört dik açısı olan kare hem dikdörtgen hem eşkenar dörtgendir. Bu yüzden köşegenleri eş, dik, birbirini ortalayan ve köşe açılarını ikiye bölen parçalardır. Her köşegenin ayırdığı köşe açıları 45° ve 45°dir. Kenar a ise d=a√2, alan a²=d²/2, çevre 4a’dır.\n\nİç teğet çemberin yarıçapı r=a/2, çevrel çemberinki R=d/2=a√2/2’dir. Bunlar farklı çemberlerdir; çevrel çember köşelerden geçer, iç çember kenarlara teğettir. Köşegen 12 ise alan 72’dir; 144 köşegeni kenar sayma hatasıdır. Karede köşegen kullanırken hangi uzunluğun tamam, hangisinin yarım olduğunu işaretle."
+              }
+            },
+            {
+              "title": {
+                "tr": "Köşegenlerle genel alan ve uzunluk denetimi"
+              },
+              "text": {
+                "tr": "Paralelkenarın köşegenleri d₁,d₂, aralarındaki açı θ ise alan S=d₁d₂sinθ/2’dir. Bu formül dışbükey dörtgenlerde de geçerlidir; dört küçük üçgenin alanlarını toplamaktan çıkar. Köşegenler dik değilse sinθ çarpanı atılamaz. Eşkenar dörtgende θ=90° olduğu için tanıdık ef/2 biçimine iner.\n\nKomşu kenarlar a,b olan paralelkenarda d₁²+d₂²=2(a²+b²) bağıntısı vardır. Köşegen vektörleri u+v ve u−v’nin karelerini toplayınca skaler çarpımlar birbirini götürür; geriye 2|u|²+2|v|² kalır. Bu bağıntı iki köşegen eşit demek değildir. Örneğin a=5,b=7,d₁=6 ise d₂²=2(25+49)−36=112 bulunur."
+              }
+            },
+            {
+              "title": {
+                "tr": "Koşulu en kısa yöntemle sonuca bağla"
+              },
+              "text": {
+                "tr": "İlk adım hangi ailede olduğunu belirlemektir: yalnız karşı kenarlar paralelse genel özelliklerle başla; dik açı, eş kenar veya köşegen koşulu varsa ilgili alt aileye geç. Alan sorusunda taban/yükseklik veya dik köşegen; uzunluk sorusunda Pisagor, orta nokta ya da eş üçgen; açı sorusunda paralellik ve açıortay çoğu zaman yeterlidir.\n\nBir parçalama sorusunda adı verilen her bölgenin köşelerini belirle. Aynı taban, aynı yükseklik veya yarım taban sonucu veren eş alanı gerekçelendir; renkten dolayı eşit sanma. Sonuçta uzunluk birimini, alanın kare birimini ve hangi ek koşulu kullandığını denetle. İkinci bir hesap veya uygun karşı örnek, ezberin sınırını kontrol etmeye yardım eder."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "tyt-geo-paralelkenar-ozel-dortgenler-032",
+        "after": "ec5a9613b4a14cdd35d3215708a8944c84cfd6bffb6a33fb8e86d177c0a65688",
+        "prior": {
+          "sections": [
+            {
+              "title": "Paralelkenarı iki çift paralellikle tanı",
+              "paragraphs": [
+                "Dışbükey ABCD dörtgeninde AB∥DC ve AD∥BC ise şekil paralelkenardır. AC köşegenini çizince iç ters açılar ve ortak kenar iki eş üçgen oluşturur. Böylece karşı kenarların uzunlukları ve karşı köşelerin açıları eşittir. Bir çift karşı kenarın yalnız eşit olması tek başına yeterli değildir; aynı çift ayrıca paralelse paralelkenar sonucu çıkarılabilir.",
+                "Bir köşenin açısı α ise komşusu 180°−α, karşısı yine α’dır. Ardışık açılar bütünlerdir; dört açının toplamı 360° olur. Bu eşitlikler bütün açıların 90° olduğunu söylemez. Çizimi döndürmek veya paralel doğrular boyunca kaydırmak, verilen koşulları değiştirmez."
+              ]
+            },
+            {
+              "title": "Köşegenlerin kesişimi ile orta noktayı ayır",
+              "paragraphs": [
+                "Paralelkenarda köşegenlerin kesişimi O ise AO=OC ve BO=OD olur. İki köşegen birbirini ortalar; ancak AO ile BO’nun eşit olması gerekmez. Ters yönde de dışbükey bir dörtgende köşegenler birbirini ortalıyorsa dörtgen paralelkenardır. Nokta adları köşegen parçalarının hangi bütüne ait olduğunu belirler.",
+                "Genel paralelkenarın köşegenleri eşit, dik veya açıortay olmak zorunda değildir. Eş köşegen ek koşulu dikdörtgene, dik köşegen ek koşulu eşkenar dörtgene götürür. İki koşul birlikte varsa kare elde edilir. Sadece bir resimde çizgiler dik görünüyorsa bu çıkarımları yapamazsın; diklik işareti ya da yazılı koşul gerekir."
+              ]
+            },
+            {
+              "title": "Açıortaylar neden dik olur?",
+              "paragraphs": [
+                "Komşu A ve B iç açılarının toplamı 180°dir. İç açıortayların ilgili açı parçaları α/2 ve (180°−α)/2 olup toplamları 90°dir. Açıortayların kesiştiği üçgende kalan açı da 90° olduğundan iki açıortay diktir. Bu sonuç köşegenlerin dikliği değildir; hangi doğru parçalarının açıortay olduğuna dikkat et.",
+                "Paralelkenarda bir köşenin açıortayı karşı kenarı kesiyorsa, paralellerle taşınan eş açılardan ikizkenar bir üçgen oluşabilir. Önce eş açıların yerini göster, sonra karşılarındaki kenarları eşitle. Açıortay uzunluğu veya kestiği nokta için yalnız şeklin ortasında görünmesine dayanma; orta nokta ayrıca kanıtlanır."
+              ]
+            },
+            {
+              "title": "Alanı taban ve dik uzaklıkla kur",
+              "paragraphs": [
+                "AB=a ve DC doğrusunun AB’ye dik uzaklığı hₐ ise S=a·hₐ’dır. Eğik bir köşeden yükseklik indirip kenardaki dik üçgeni öteki tarafa taşıdığında aynı taban ve yüksekliğe sahip bir dikdörtgen oluşur. Bu parçalama alanın neden taban çarpı yükseklik olduğunu açıklar. Kenar b eğikse b yerine yüksekliği bulmak gerekir.",
+                "Komşu kenarlar a ve b, aralarındaki açı α ise hₐ=b·sinα, S=ab·sinα ve a·hₐ=b·hᵦ olur. 30° için hₐ=b/2’dir. Koordinat adımında A(1; 1), B(7; 1) ve D(3; 5) verilir. AB ile DC aynı yönlü olduğundan C=B+D−A=(9; 5). AB=6 ve dik yükseklik 4 olduğundan alan 24 birim²; köşegenler (5; 3) noktasında birbirini ortalar."
+              ]
+            },
+            {
+              "title": "Üçgenlere bölmek alanı görünür kılar",
+              "paragraphs": [
+                "Bir köşegen paralelkenarı eş alanlı iki üçgene ayırır. Her iki köşegen çizildiğinde oluşan dört küçük üçgenin alanları eşittir; köşegenlerin yarıları eş olduğundan aynı dik uzaklığa sahip üçgen çiftleri karşılaştırılabilir. Köşegenler eşit uzunlukta olmasa da bu alan eşitlikleri geçerlidir.",
+                "İçeride herhangi bir P noktası seç. PAB ile PCD üçgenlerinin alanları toplamı S/2’dir; çünkü eş uzunluktaki paralel AB ve CD tabanlarına ait iki yüksekliğin toplamı paralelkenarın yüksekliğidir. Benzer biçimde PAD ile PBC’nin toplamı da S/2 olur. P’nin merkez olması gerekmez. DC üzerindeki herhangi bir E için ABE’nin alanı yine S/2’dir; ortak yükseklik değişmez."
+              ]
+            },
+            {
+              "title": "Dikdörtgende eş köşegenin kaynağı",
+              "paragraphs": [
+                "Bir paralelkenarın bir açısı 90° ise komşu açılar ve karşı açı eşitliklerinden bütün açıları 90°dir; bu şekil dikdörtgendir. Komşu kenarları a ve b ise çevre 2(a+b), alan ab’dir. Köşegen bir dik üçgenin hipotenüsü olduğundan d²=a²+b² çıkar.",
+                "İki köşegen eş uzunluktadır ve birbirini ortalar. Bu nedenle kesişim O’dan dört köşeye uzaklık d/2’dir; dört köşe aynı çemberdedir ve çevrel yarıçap R=d/2 olur. Kare olmayan dikdörtgende köşegenler genel olarak dik veya açıortay değildir. Köşegen uzunluğunu bir kenar yerine kullanmak alanı yanlış büyütür."
+              ]
+            },
+            {
+              "title": "Eşkenar dörtgende diklik ve yarım köşegen",
+              "paragraphs": [
+                "Dört kenarı da a olan paralelkenar eşkenar dörtgendir. Köşegenler birbirini ortalar; ayrıca bir köşegenin iki yanındaki eş üçgenler köşe açısını ikiye böler. Komşu bütünler açıların yarılarından köşegenlerin dik kesiştiği de görülür. Dört köşenin dik olması zorunlu değildir; bu ek koşul kareyi verir.",
+                "Köşegenler e ve f ise yarımlarıyla kenar bir dik üçgen kurar: (e/2)²+(f/2)²=a². Alan S=ef/2=a·h=a²sinα, çevre 4a’dır. İç teğet çember için yarıçap r=h/2=S/(2a) olur; çünkü karşı paralel kenarlara teğet çemberin çapı bu kenarlar arasındaki uzaklıktır. Radyal uzunluğu alanla veya çevreyle karıştırma."
+              ]
+            },
+            {
+              "title": "Kare iki ailenin özelliklerini birlikte taşır",
+              "paragraphs": [
+                "Dört eş kenarı ve dört dik açısı olan kare hem dikdörtgen hem eşkenar dörtgendir. Bu yüzden köşegenleri eş, dik, birbirini ortalayan ve köşe açılarını ikiye bölen parçalardır. Her köşegenin ayırdığı köşe açıları 45° ve 45°dir. Kenar a ise d=a√2, alan a²=d²/2, çevre 4a’dır.",
+                "İç teğet çemberin yarıçapı r=a/2, çevrel çemberinki R=d/2=a√2/2’dir. Bunlar farklı çemberlerdir; çevrel çember köşelerden geçer, iç çember kenarlara teğettir. Köşegen 12 ise alan 72’dir; 144 köşegeni kenar sayma hatasıdır. Karede köşegen kullanırken hangi uzunluğun tamam, hangisinin yarım olduğunu işaretle."
+              ]
+            },
+            {
+              "title": "Köşegenlerle genel alan ve uzunluk denetimi",
+              "paragraphs": [
+                "Paralelkenarın köşegenleri d₁,d₂, aralarındaki açı θ ise alan S=d₁d₂sinθ/2’dir. Bu formül dışbükey dörtgenlerde de geçerlidir; dört küçük üçgenin alanlarını toplamaktan çıkar. Köşegenler dik değilse sinθ çarpanı atılamaz. Eşkenar dörtgende θ=90° olduğu için tanıdık ef/2 biçimine iner.",
+                "Komşu kenarlar a,b olan paralelkenarda d₁²+d₂²=2(a²+b²) bağıntısı vardır. Köşegen vektörleri u+v ve u−v’nin karelerini toplayınca skaler çarpımlar birbirini götürür; geriye 2|u|²+2|v|² kalır. Bu bağıntı iki köşegen eşit demek değildir. Örneğin a=5,b=7,d₁=6 ise d₂²=2(25+49)−36=112 bulunur."
+              ]
+            },
+            {
+              "title": "Koşulu en kısa yöntemle sonuca bağla",
+              "paragraphs": [
+                "İlk adım hangi ailede olduğunu belirlemektir: yalnız karşı kenarlar paralelse genel özelliklerle başla; dik açı, eş kenar veya köşegen koşulu varsa ilgili alt aileye geç. Alan sorusunda taban/yükseklik veya dik köşegen; uzunluk sorusunda Pisagor, orta nokta ya da eş üçgen; açı sorusunda paralellik ve açıortay çoğu zaman yeterlidir.",
+                "Bir parçalama sorusunda adı verilen her bölgenin köşelerini belirle. Aynı taban, aynı yükseklik veya yarım taban sonucu veren eş alanı gerekçelendir; renkten dolayı eşit sanma. Sonuçta uzunluk birimini, alanın kare birimini ve hangi ek koşulu kullandığını denetle. İkinci bir hesap veya uygun karşı örnek, ezberin sınırını kontrol etmeye yardım eder."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-geo-paralelkenar-ozel-dortgenler-032",
+        "after": "86d00d7c6519726b65f592915a2ccb63e384143cff55d045496a02eac9a71ffe",
+        "prior": {
+          "sections": [
+            {
+              "title": "Paralelkenar",
+              "text": [
+                "Karşı kenarlar/açılar eş; komşu açılar bütünler. Köşegenler birbirini ortalar.",
+                "Eş köşegen, dik köşegen veya açıortaylık genel özellik değildir."
+              ]
+            },
+            {
+              "title": "Alan ve parçalama",
+              "figureTitle": "Alanı taban ve dik uzaklıkla kur",
+              "text": [
+                "S=a·hₐ=b·hᵦ=ab·sinα. Kenarla yüksekliği eşleştir.",
+                "Köşegen alanı yarılar; iki köşegenin dört üçgeni eş alanlıdır.",
+                "Rastgele iç P için S(PAB)+S(PCD)=S/2; tek tek eşlik gerekmez."
+              ]
+            },
+            {
+              "title": "Dikdörtgen",
+              "text": [
+                "S=ab; Ç=2(a+b); d²=a²+b². Köşegenler eş ve birbirini ortalar.",
+                "Çevrel çember yarıçapı R=d/2; kare olmadıkça diklik/açıortaylık zorunlu değildir."
+              ]
+            },
+            {
+              "title": "Eşkenar dörtgen",
+              "text": [
+                "S=ef/2=a·h; Ç=4a. Köşegenler dik, birbirini ortalayan ve açıortay parçalardır.",
+                "(e/2)²+(f/2)²=a²; iç yarıçap r=S/(2a)=h/2."
+              ]
+            },
+            {
+              "title": "Kare ve genel köşegen denetimi",
+              "text": [
+                "Kare: S=a²=d²/2, d=a√2, r=a/2, R=d/2.",
+                "Paralelkenar: d₁²+d₂²=2(a²+b²).",
+                "Dışbükey dörtgende köşegen açısı θ ise S=d₁d₂sinθ/2."
+              ]
+            }
+          ]
+        }
+      }
+    ]
   }
 ]

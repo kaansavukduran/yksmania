@@ -27,6 +27,7 @@ import {
   type FigureDef,
   type V,
 } from "./figureKit";
+import { axes } from "./geometryFiguresArea";
 import { linearPairBisectors031 } from "./geometryFigures031";
 import { prism, proj, pyramid, regularBase, solid, type P3 } from "./solidKit";
 
@@ -131,9 +132,31 @@ const paralelkenar: Record<string, FigureDef> = {
   "Alanı taban ve dik uzaklıkla kur": {
     caption:
       "D'den inen yükseklik bir dik üçgen keser. Bu üçgeni karşı tarafa taşıyınca aynı taban ve yükseklikte bir dikdörtgen oluşur: S = a·h.",
-    alt: "Paralelkenar; ikinci adımda D'den tabana yükseklik, üçüncü adımda soldaki dik üçgen sağa taşınmış ve dikdörtgen tamamlanmış.",
-    steps: ["Paralelkenar", "Yüksekliği indir", "Üçgeni taşı"],
+    alt: "Paralelkenar, tabana indirilen yükseklik ve eş alanlı dikdörtgen. Son adımda koordinatlar, dik yükseklik ve köşegenlerin ortak orta noktası gösterilir.",
+    steps: ["Paralelkenar", "Yüksekliği indir", "Üçgeni taşı", "Verilen koordinatları kullan"],
     draw: (_, step) => {
+      if (step === 3) {
+        const A = v(1, 1), B = v(7, 1), D = v(3, 5);
+        const C = add(B, sub(D, A));
+        const H = v(D[0], A[1]);
+        const O = mid(A, C);
+        return {
+          els: [
+            ...axes(-0.5, 10.5, -0.5, 7, 2),
+            poly([A, B, C, D], { fill: "muted" }),
+            seg(A, C, { dash: true, tone: "a" }),
+            seg(B, D, { dash: true, tone: "b" }),
+            seg(D, H, { dash: true, tone: "c" }),
+            right(H, B, D, "c"),
+            ...labelAll([A, B, C, D, O], ["A", "B", "C", "D", "O"], ["w", "se", "ne", "nw", "s"]),
+          ],
+          readout: [
+            `A(1; 1), B(7; 1), D(3; 5). C = B + D − A = (${C[0]}; ${C[1]}).`,
+            `Alan = ${dist(A, B)} × ${dist(D, H)} = ${area([A, B, C, D])} birim².`,
+            `Ortak orta nokta O(${O[0]}; ${O[1]}).`,
+          ],
+        };
+      }
       const [A, B, C, D] = pgram(6, 3.4, 62);
       const H = v(D[0], 0);
       const H2 = v(C[0], 0);
@@ -186,25 +209,37 @@ const paralelkenar: Record<string, FigureDef> = {
   },
   "Eşkenar dörtgende diklik ve yarım köşegen": {
     caption:
-      "Köşegenleri 8 ve 6 olan eşkenar dörtgen: yarımlar 4 ve 3, kenar 5. Alan 8·6/2 = 24; iç teğet çemberin yarıçapı 24/(2·5) = 2,4.",
-    alt: "Eşkenar dörtgen; köşegenler O'da dik kesişiyor, yarım köşegenler 4 ve 3, kenar 5. İçinde dört kenara teğet çember.",
-    draw: () => {
+      "Yarım köşegenler ve kenar bir dik üçgen oluşturur. İkinci adımda köşegenler iki katına çıkar. Çemberin yarıçapını alanı yarı çevreye bölerek karşılaştır.",
+    alt: "Eşkenar dörtgen, dik kesişen iki köşegen ve kenarlara teğet çember. Ölçüler ikinci adımda büyür.",
+    steps: ["8 ve 6 birim köşegen", "16 ve 12 birim köşegen"],
+    draw: (_, step) => {
+      const halfWidth = step === 0 ? 4 : 8;
+      const halfHeight = step === 0 ? 3 : 6;
       const O = v(0, 0);
-      const [A, B, C, D] = [v(-4, 0), v(0, -3), v(4, 0), v(0, 3)];
+      const [A, B, C, D] = [v(-halfWidth, 0), v(0, -halfHeight), v(halfWidth, 0), v(0, halfHeight)];
+      const side = Math.hypot(halfWidth, halfHeight);
+      const shapeArea = area([A, B, C, D]);
+      const radius = shapeArea / (2 * side);
       return {
         els: [
-          circle(O, 2.4, { tone: "b", thin: true }),
+          txt(v(-9, -7), " ", "c"),
+          txt(v(9, 7), " ", "c"),
+          circle(O, radius, { tone: "b", thin: true }),
           poly([A, B, C, D], { fill: "muted" }),
           seg(A, C, { tone: "a" }),
           seg(B, D, { tone: "a" }),
           right(O, C, D),
           ...[A, B, C, D].map((p, i) => ticks(p, [B, C, D, A][i], 1)),
-          dim(O, C, "4", D, "a"),
-          dim(O, D, "3", A, "a"),
-          dim(C, D, "5", O),
+          dim(O, C, String(halfWidth), D, "a"),
+          dim(O, D, String(halfHeight), A, "a"),
+          dim(C, D, String(side), O),
           ...labelAll([A, B, C, D, O], ["A", "B", "C", "D", "O"], ["w", "s", "e", "n", "sw"]),
         ],
-        readout: ["Alan = 8·6/2 = 24 · r = 24/10 = 2,4"],
+        readout: [
+          `Yarı köşegenler ${halfWidth} ve ${halfHeight}. Kenar = √(${halfWidth}² + ${halfHeight}²) = ${side} birim.`,
+          `Alan = ${2 * halfWidth}·${2 * halfHeight}/2 = ${shapeArea} birim².`,
+          `r = ${shapeArea}/${2 * side} = ${fmt(radius)} birim. Yükseklik = ${fmt(2 * radius)} birim.`,
+        ],
       };
     },
   },

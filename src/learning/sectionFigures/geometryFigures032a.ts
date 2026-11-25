@@ -162,19 +162,30 @@ const cokgenler: Record<string, FigureDef> = {
   },
   "Köşegenleri çift saymadan say": {
     caption:
-      "Sekizgende A'dan 8 − 3 = 5 köşegen çıkar (turuncu). Her köşeden sayınca 8·5 = 40 olur, ama her köşegen iki ucundan sayıldığı için 20 farklı köşegen vardır.",
-    alt: "Düzgün sekizgen; A köşesinden çıkan beş köşegen kalın, diğer bütün köşegenler ince çizgiyle.",
-    draw: () => {
-      const ps = regular(8, 3, 112.5);
+      "A köşesinden çıkan köşegenler kalın çizgiyle gösterilir. Her köşegen iki uçtan sayıldığı için toplamı ikiye böl. Kenar sayısı değişirken köşegen toplamının ne zaman kenar sayısının iki katına eşit olduğunu bul.",
+    alt: "Değişen kenar sayısına sahip düzgün çokgen. A’dan çıkan köşegenler kalın, diğer köşegenler ince çizgiyle gösterilir.",
+    param: { label: "Kenar sayısı", min: 3, max: 12, step: 1, init: 8 },
+    draw: (n) => {
+      const ps = regular(n, 3, 112.5);
+      const fromOne = n - 3;
+      const all = n * fromOne / 2;
       const els: El[] = [];
-      for (let i = 0; i < 8; i++)
-        for (let j = i + 2; j < 8; j++) {
-          if (i === 0 && j === 7) continue;
+      for (let i = 0; i < n; i++)
+        for (let j = i + 2; j < n; j++) {
+          if (i === 0 && j === n - 1) continue;
           if (i !== 0) els.push(seg(ps[i], ps[j], { thin: true, tone: "muted" }));
         }
-      for (let j = 2; j <= 6; j++) els.push(seg(ps[0], ps[j], { tone: "a" }));
+      for (let j = 2; j <= n - 2; j++) els.push(seg(ps[0], ps[j], { tone: "a" }));
       els.push(poly(ps), ...ps.map((p, i) => pt(p, i === 0 ? "A" : undefined, "nw")));
-      return { els, readout: ["Bir köşeden: 5", "Toplam: 8·5/2 = 20"] };
+      return {
+        els,
+        readout: [
+          `Bir köşeden: ${fromOne}`,
+          `Toplam: ${n}·${fromOne}/2 = ${all}`,
+          `Kenar sayısının iki katı: ${2 * n}.`,
+          ...(all === 2 * n ? ["Eşitlik sağlanır. Düzgün yedigenin bir iç açısı 900/7° olur."] : []),
+        ],
+      };
     },
   },
   "Düzgün olmak iki eşitlik ister": {
@@ -571,14 +582,15 @@ const dortgenHiyerarsi: Record<string, FigureDef> = {
   },
   "Kenar orta noktaları gizli bir paralelkenar kurar": {
     caption:
-      "D köşesini kaydır: ABCD hangi biçime girerse girsin kenar orta noktalarını birleştiren EFGH paralelkenardır ve alanı ABCD'nin yarısıdır.",
+      "D köşesini kaydır. Orta noktaların oluşturduğu paralelkenar, dörtgenin alanının yarısını kaplar. İkinci adımda BD köşegeni bütün olarak kayar ve EFGH dikdörtgen kalır.",
     alt: "Dışbükey ABCD dörtgeni ve kenarlarının orta noktaları E, F, G, H; EFGH paralelkenarı boyalı, karşılıklı kenarlarında paralellik işaretleri.",
     param: { label: "D'nin yatay konumu", min: -1.5, max: 2.5, step: 0.25, init: 0.5 },
-    draw: (x) => {
-      const A = v(0, 0);
-      const B = v(5, -0.4);
-      const C = v(5.6, 3);
-      const D = v(x, 3.6);
+    steps: ["D köşesi değişirken", "Köşegenler 8 ve 14 birim"],
+    draw: (x, step) => {
+      const A = step === 0 ? v(0, 0) : v(-3, 0);
+      const B = step === 0 ? v(5, -0.4) : v(x, -6);
+      const C = step === 0 ? v(5.6, 3) : v(5, 0);
+      const D = step === 0 ? v(x, 3.6) : v(x, 8);
       const [E, F, G, H] = [mid(A, B), mid(B, C), mid(C, D), mid(D, A)];
       const area = (ps: V[]) =>
         Math.abs(ps.reduce((s, p, i) => s + p[0] * ps[(i + 1) % ps.length][1] - ps[(i + 1) % ps.length][0] * p[1], 0)) / 2;
@@ -592,10 +604,18 @@ const dortgenHiyerarsi: Record<string, FigureDef> = {
           par(H, G, 1, "a"),
           par(F, G, 2, "a"),
           par(E, H, 2, "a"),
+          ...(step === 0 ? [] : [right(E, F, H, "a")]),
           ...labelAll([A, B, C, D], ["A", "B", "C", "D"], ["sw", "se", "ne", "nw"]),
           ...labelAll([E, F, G, H], ["E", "F", "G", "H"], ["s", "e", "n", "w"]),
         ],
-        readout: [`Alan(EFGH) / Alan(ABCD) = ${fmt(area([E, F, G, H]) / area([A, B, C, D]), 3)}`],
+        readout: [
+          `Alan(EFGH) / Alan(ABCD) = ${fmt(area([E, F, G, H]) / area([A, B, C, D]), 3)}`,
+          ...(step === 0 ? [] : [
+            `AC = ${fmt(dist(A, C))} ve BD = ${fmt(dist(B, D))} birim. Dik köşegenlere paralel kenarlar dik açı kurar.`,
+            `EF = ${fmt(dist(E, F))}, FG = ${fmt(dist(F, G))}. Çevre ${fmt(2 * (dist(E, F) + dist(F, G)))} birim.`,
+            `Alan(ABCD) = ${fmt(area([A, B, C, D]))}, Alan(EFGH) = ${fmt(area([E, F, G, H]))} birim².`,
+          ]),
+        ],
       };
     },
   },
@@ -807,16 +827,24 @@ const yamukDeltoid: Record<string, FigureDef> = {
   },
   "İkizkenar yamukta simetriyi gerçekten doğrula": {
     caption:
-      "b = 20, a = 8, ℓ = 10: kısa tabanın uçlarından inen dikmeler 12'lik farkı iki yana 6 ve 6 olarak böler; h = √(100 − 36) = 8.",
-    alt: "Alt tabanı 20, üst tabanı 8, yan kenarları 10 olan ikizkenar yamuk; kesikli simetri ekseni, iki dikme ve yanlarda 6'şar birimlik parçalar.",
-    draw: () => {
-      const [A, B, C, D] = trap(20, 8, 8, 6).map((p) => mul(p, 0.4));
+      "Kısa tabanın uçlarından dikmeleri indir. İki yatay parça eşit olduğundan taban farkını ikiye böl. Ardından Pisagor ile yüksekliği bul.",
+    alt: "İkizkenar yamuk. Kısa tabanın her ucundan uzun tabana dikme iniyor. İki dış parça eşit, yan kenar bir dik üçgenin hipotenüsü.",
+    steps: ["20 ve 8 taban, 10 yan kenar", "18 ve 8 taban, 13 yan kenar"],
+    draw: (_, step) => {
+      const longBase = step === 0 ? 20 : 18;
+      const shortBase = 8;
+      const side = step === 0 ? 10 : 13;
+      const offset = (longBase - shortBase) / 2;
+      const height = Math.sqrt(side ** 2 - offset ** 2);
+      const scale = 0.4;
+      const [A, B, C, D] = trap(longBase, shortBase, height, offset).map((p) => mul(p, scale));
+      const center = longBase * scale / 2;
       const H1 = foot(D, A, B);
       const H2 = foot(C, A, B);
       return {
         els: [
           quad([A, B, C, D], "muted"),
-          seg(v(4, -0.4), v(4, 3.2), { dash: true, tone: "a" }),
+          seg(v(center, -0.4), v(center, height * scale), { dash: true, tone: "a" }),
           seg(D, H1, { dash: true, tone: "b" }),
           seg(C, H2, { dash: true, tone: "b" }),
           right(H1, B, D, "b"),
@@ -825,14 +853,18 @@ const yamukDeltoid: Record<string, FigureDef> = {
           ticks(B, C, 1),
           ang(A, B, D, undefined, { tone: "c" }),
           ang(B, C, A, undefined, { tone: "c" }),
-          dim(A, H1, "6", D, "b"),
-          dim(H2, B, "6", C, "b"),
-          dim(D, H1, "8", B),
-          dim(A, D, "10", B),
-          dim(D, C, "8", A),
+          dim(A, H1, String(offset), D, "b"),
+          dim(H2, B, String(offset), C, "b"),
+          dim(D, H1, String(height), B),
+          dim(A, D, String(side), B),
+          dim(D, C, String(shortBase), A),
           ...labelAll([A, B, C, D], ["A", "B", "C", "D"], ["sw", "se", "ne", "nw"]),
         ],
-        readout: ["(20 − 8)/2 = 6", "h = √(10² − 6²) = 8"],
+        readout: [
+          `(${longBase} − ${shortBase})/2 = ${offset}`,
+          `h = √(${side}² − ${offset}²) = ${height}`,
+          `Alan = (${longBase} + ${shortBase}) × ${height} / 2 = ${(longBase + shortBase) * height / 2} birim².`,
+        ],
       };
     },
   },
