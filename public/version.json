@@ -1,8 +1,8 @@
 {
-  "version": "0.159.0",
+  "version": "0.160.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Düzlemde eğik eşitsizlik sınırının hangi noktaları dışarıda bıraktığını gör. Üç kenar eşlemesinde eşlik ile benzerliği çizimde karşılaştır.",
-    "en": "Compare included and excluded inequality boundaries and distinguish congruent triangles from scaled copies."
+    "tr": "Mutlak Değer’de iki noktaya uzaklık toplamının sabit kaldığı aralığı keşfet. Üçgende Benzerlik’te 25 eş parçanın alan paylarını karşılaştır.",
+    "en": "Explore constant sums of distances and use 25 equal units to find areas in similar triangles."
   }
 }

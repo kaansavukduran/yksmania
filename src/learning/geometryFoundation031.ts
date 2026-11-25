@@ -1693,7 +1693,7 @@ const packs031: FoundationPack031[] = [
     title: "Üçgenlerde eşlik ve benzerlik: eşleme, ölçek ve paralellik",
     minutes: 47,
     source:
-      "Kenar-Açı-Kenar Eşliği 5.1 fiziksel s. 2, arada olmayan açı karşı örneği. Açı-Kenar-Açı ve Kenar-Kenar-Kenar Eşliği 5.1 fiziksel s. 2 ve 8. MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir. Eşkenar Üçgen 5.1, fiziksel s. 1 ve 4: eş yükseklikli alan şeritleri.",
+      "Kenar-Açı-Kenar Eşliği 5.1 fiziksel s. 2, arada olmayan açı karşı örneği. Açı-Kenar-Açı ve Kenar-Kenar-Kenar Eşliği 5.1 fiziksel s. 2 ve 8. Üçgende Benzerlik 5.1 fiziksel s. 4 ve 5. MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir. Eşkenar Üçgen 5.1, fiziksel s. 1 ve 4: eş yükseklikli alan şeritleri.",
     objectives: [
       "Karşılıklı köşeleri belirterek eşlik ve benzerliği ayır.",
       "KKK, KAK, AKA eşlik ve AA, KAK, KKK benzerlik koşullarını gerekçelendir.",
@@ -1748,6 +1748,7 @@ const packs031: FoundationPack031[] = [
         paragraphs: [
           "Benzerlik oranı yeni/eski=k ise her kenar, çevre, yükseklik, kenarortay ve açıortay uzunluğu k ile çarpılır. Alan taban×yükseklik/2 olduğundan iki bağımsız uzunluk da k ile değişir; alan k² ile çarpılır. Hacim sorularında benzer cisim için k³ gerekir, fakat bu ünite düzlem üçgenleri üzerinde çalışır.",
           "Alan oranı 9/25 ise aynı yöndeki pozitif uzunluk oranı 3/5’tir. DE∥BC modelinde t=2/3 için üst üçgenin alanı ana alanın 4/9’u, kalan yamuğun alanı 5/9’udur. Yamuğun alanını doğrudan t ile çarpmak şekillerin hangisinin benzer olduğunu unutmaya yol açar.",
+          "Üst üçgenin uzunluk oranı 3/5 ise alan payı 9/25, kalan yamuğun payı 16/25 olur. Yamuk 64 birim² verildiğinde bütün alan 64 ÷ (16/25)=100 birim² ve üst kısım 36 birim² çıkar. Şekilde boyalı 9 birimin yanındaki 16 birim yamuğu temsil eder.",
         ],
       },
       {
@@ -2890,7 +2891,9 @@ const quickSheets031: Record<string, FoundationQuickSheet031> = {
       },
       {
         title: "Uzunluk k,alan k²",
+        figureTitle: "Uzunluk k iken alan neden k²?",
         text: [
+          "Yamuk 64 birim² ve alan payı 16/25 ise bütün alan 100 birim². Üst üçgenin alanı 36 birim².",
           "Yeni/eski uzunluk oranı k>0 ise kenar,çevre,yükseklik,kenarortay,açıortay oranı k; alan oranı k².",
           "Paralel kesitte üst küçük üçgenin alanı t², kalan yamuğun alanı1−t² katıdır. Alan oranı9/25 ise aynı yöndeki uzunluk oranı3/5’tir.",
         ],

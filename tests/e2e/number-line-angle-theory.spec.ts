@@ -544,3 +544,52 @@ test("Scaling all corresponding sides keeps similarity but loses congruence", as
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("The two-focus distance equation has two outside roots and a flat minimum", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-mat-mutlak-deger-kaynak-038";
+  const model = figure(page, "İki noktaya uzaklık toplamı neden arada sabit?");
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("Toplam = 2 + 5 = 7");
+  await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  const x = model.getByRole("slider", { name: /^x/ });
+  await x.fill("2");
+  await expect(model).toContainText("Toplam = 2 + 1 = 3");
+  await expect(model).toContainText("x arada: toplam iki nokta arası uzaklık, 3.");
+  await x.fill("0");
+  await expect(model).toContainText("Toplam = 4 + 1 = 5");
+  await expect(model).toContainText("Bu x, hedef toplamı 5 yapar.");
+  await x.fill("5");
+  await expect(model).toContainText("Toplam = 1 + 4 = 5");
+  await expect(model).toContainText("Bu x, hedef toplamı 5 yapar.");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(model).toContainText("Toplam = 2 + 5 = 7");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Nine out of twenty-five cells leave sixteen equal cells in the strip", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-eslik-benzerlik-031";
+  const model = figure(page, "Uzunluk k iken alan neden k²?");
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("Uzunluk oranı 2/3 ⇒ alan oranı 4/9");
+  await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await expect(model).toContainText("Uzunluk oranı 3/5 ⇒ alan oranı 9/25");
+  await expect(model).toContainText("Yamuk DBCE: 16/25");
+  await expect(model).toContainText("üst üçgen 36 birim².");
+  await expect(model.getByRole("img").locator("polygon.sf-fill-a")).toHaveCount(9);
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await expect(model).toContainText("64 ÷ (16/25) = 100 birim²");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

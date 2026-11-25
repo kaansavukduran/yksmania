@@ -3713,3 +3713,9 @@ Birinci Dereceden Denklemler 1.3.0 fiziksel 3 ve Kenar-Açı-Kenar Eşliği 5.1 
 Basit Eşitsizlikler’de eğik sınırı açınca iki köşe çıkar ve diğer köşe çözümde kalır. Eşlik ve Benzerlik’te ters yönlü iki 6–8–10 üçgeni eşken, ikinci üçgenin tüm kenarları 1,5 kat olunca benzerlik kalır. Çizimler anlatım ve ayrı Kopya Kağıdında çalışır.
 
 Basit Eşitsizlikler 1.1 fiziksel 7 ve Açı-Kenar-Açı/Kenar-Kenar-Kenar Eşliği 5.1 fiziksel 2 ile 8 seçildi. 77 birim, TypeScript, 23 Chromium akışı ve 323 çevrimdışı varlık doğrulandı. Önceki açıortay çiziminde üst üste binen ikinci 25° etiketi kaldırıldı. Eş açılar ve hesap korunurken 320, 375 ve 1280 pikselde çakışma kalmadı. Sırada Mutlak Değer fiziksel 8 ve Üçgende Benzerlik fiziksel 4–5 var.
+
+## TYT Matematik ve Geometri · 0.160.0 adayı
+
+Mutlak Değer’de artık 1 ve 4 uçları için iki uzaklık birlikte değiştirilebiliyor. Toplam ara bölgede 3 kalıyor. Hedef 5 için x=0 ve x=5 doğrulanıyor. Üçgende Benzerlik’te 25 eş birimin 9’u üst üçgeni, 16’sı yamuğu veriyor. Yamuk 64 birim² ise bütün 100, üst üçgen 36 birim². Modeller ayrı Kopya Kağıtlarında da çalışıyor.
+
+Mutlak Değer 1.3.0 fiziksel 8 ve Üçgende Benzerlik 5.1 fiziksel 4–5 ile eşleştirildi. TypeScript, 81 birim, 25 Chromium akışı ve 323 çevrimdışı varlık denetlendi. Seçilen 10 çizim 320, 375 ve 1280 pikselde aynı çakışma denetiminden geçti. Sırada Üslü Sayılar fiziksel 4 ve 7, Üçgende Alan fiziksel 5 var.

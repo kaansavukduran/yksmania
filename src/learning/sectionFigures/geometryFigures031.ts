@@ -1155,7 +1155,7 @@ const eslikBenzerlik: Record<string, FigureDef> = {
         seg(A, H, {tone: "muted", dash: true}),
         right(H, B, A),
         circle(A, radius, {tone: "a", thin: true}),
-        ang(B, A, along, "30°", {tone: "b", r: 28}),
+        ang(B, A, along, undefined, {tone: "b", r: 28}),
         pt(A, "A", "s"), pt(B, "B", "sw"), pt(H, "H", "n", "muted"),
       ];
       for (const [index, length] of candidates.entries()) {
@@ -1322,37 +1322,43 @@ const eslikBenzerlik: Record<string, FigureDef> = {
   },
   "Uzunluk k iken alan neden k²?": {
     caption:
-      "Kenarları üçe bölünen üçgen 9 eş küçük üçgene ayrılır. t = 2/3 olan üst üçgen bunların 4'ünü kapsar: alan oranı (2/3)² = 4/9, kalan yamuk 5/9.",
-    alt: "Kenarları üç eş parçaya bölünmüş üçgen, kenarlara paralel çizgilerle dokuz eş küçük üçgene ayrılmış; üstteki dört küçük üçgen boyalı.",
-    draw: () => {
+      "Paralel kesitin üstündeki küçük üçgende kenar ve yükseklik aynı oranda değişir. Küçük üçgenin kapladığı birimleri say. Kalan yamuğun alanı, bütün alan eksi küçük üçgenin alanıdır.",
+    alt: "Kenarlarına paralel çizgilerle eş küçük üçgenlere ayrılan büyük üçgen. Üstteki küçük üçgen boyalı. İkinci adımda 25 birimden 9’u boyalı.",
+    steps: ["2/3 uzunluk", "3/5 uzunluk ve kalan 64 birim²"],
+    draw: (_, step) => {
+      const divisions = step === 0 ? 3 : 5;
+      const small = step === 0 ? 2 : 3;
       const A = v(3, 3 * Math.sqrt(3));
       const B = v(0, 0);
       const C = v(6, 0);
       const g = (i: number, j: number): V =>
-        // i steps from A toward B, j steps from A toward C (thirds).
-        add(add(A, mul(sub(B, A), i / 3)), mul(sub(C, A), j / 3));
+        add(add(A, mul(sub(B, A), i / divisions)), mul(sub(C, A), j / divisions));
       const cells: El[] = [];
-      for (let i = 0; i < 3; i++)
-        for (let j = 0; i + j < 3; j++) {
+      for (let i = 0; i < divisions; i++)
+        for (let j = 0; i + j < divisions; j++) {
           const up = [g(i, j), g(i + 1, j), g(i, j + 1)];
-          cells.push(poly(up, { fill: i + j < 2 ? "a" : undefined, thin: true }));
-          if (i + j < 2) {
+          cells.push(poly(up, { fill: i + j < small ? "a" : undefined, thin: true }));
+          if (i + j < divisions - 1) {
             const down = [g(i + 1, j), g(i + 1, j + 1), g(i, j + 1)];
-            cells.push(poly(down, { fill: i + j < 1 ? "a" : undefined, thin: true }));
+            cells.push(poly(down, { fill: i + j < small - 1 ? "a" : undefined, thin: true }));
           }
         }
       return {
         els: [
           ...cells,
           tri(A, B, C),
-          seg(g(2, 0), g(0, 2), { tone: "a", bold: true }),
+          seg(g(small, 0), g(0, small), { tone: "a", bold: true }),
           pt(A, "A", "n"),
           pt(B, "B", "sw"),
           pt(C, "C", "se"),
-          pt(g(2, 0), "D", "w", "a"),
-          pt(g(0, 2), "E", "e", "a"),
+          pt(g(small, 0), "D", "w", "a"),
+          pt(g(0, small), "E", "e", "a"),
         ],
-        readout: ["Uzunluk oranı 2/3 ⇒ alan oranı 4/9", "Yamuk DBCE: 5/9"],
+        readout: [
+          `Uzunluk oranı ${small}/${divisions} ⇒ alan oranı ${small ** 2}/${divisions ** 2}`,
+          `Yamuk DBCE: ${divisions ** 2 - small ** 2}/${divisions ** 2}`,
+          ...(step === 1 ? ["Yamuk 64 birim² ise bütün 64 ÷ (16/25) = 100 birim², üst üçgen 36 birim²."] : []),
+        ],
       };
     },
   },
