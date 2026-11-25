@@ -14,7 +14,7 @@ const COUNTS: Record<string, number> = {
   "tyt-mat-asal-kaynak-032": 8,
   "tyt-mat-faktoriyel-kaynak-033": 5,
   "tyt-mat-ebob-ekok-kaynak-034": 6,
-  "tyt-mat-rasyonel-kaynak-035": 5,
+  "tyt-mat-rasyonel-kaynak-035": 6,
   "tyt-mat-dogrusal-denklemler-kaynak-036": 5,
   "tyt-mat-basit-esitsizlikler-kaynak-037": 7,
   "tyt-mat-uslu-sayilar-kaynak-039": 5,
@@ -66,6 +66,13 @@ describe("Forge062 TYT Matematik kaynak dersleri bölüm figürleri", () => {
         expect(html).toContain("<figcaption>");
       }
     }
+  });
+
+  it("negatif rasyoneller yansıdığında sıralama tersine döner", () => {
+    const guide = "tyt-mat-rasyonel-kaynak-035";
+    const title = "Negatif noktaları uzaklıklarıyla karıştırma";
+    expect(out(guide, title, 0, 0)).toContain("−3/4 < −1/2");
+    expect(out(guide, title, 0, 1)).toContain("3/4 > 1/2");
   });
 
   it("asal sayılar: deneme tablosu, bölme merdiveni, bölen ızgarası, kare farkı, asal çiftler", () => {

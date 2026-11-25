@@ -852,7 +852,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
-| TYT Matematik | 45 / 45 | 45 · 189 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
+| TYT Matematik | 45 / 45 | 45 · 190 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
 | TYT Geometri | 19 / 19 | 19 · 181 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 283 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
@@ -867,7 +867,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2349** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2350** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
@@ -3695,3 +3695,9 @@ Bölme Bölünebilme Kuralları 1.1 fiziksel 3 ve 4, Açıortay 5.1 fiziksel 2 v
 EBOB–EKOK zaman çizgisi, iki olay dizisinin başlangıcı kaydığında ortak dakikaların ötelendiği veya kalmadığı durumları aynı veriden hesaplıyor. Kenarortay modeli, taban uzadığında orta noktaya çizilen parça ile dik uzaklığın nasıl değiştiğini gösteriyor. İki model de anlatımda ve ayrı Kopya Kağıdında açılıyor.
 
 EBOB ve EKOK 1.1 fiziksel 8 ve Kenarortay 5.1 fiziksel 5 ile karşılaştırıldı. TypeScript, 127 birim, 17 Chromium akışı ve 323 çevrimdışı varlık denetimi geçti. Tarihsel uygulama verileri kayıtlı kimlikleriyle devam eder. Sonraki çalışma Rasyonel Sayılar ve Üçgende Merkezler.
+
+## TYT Matematik ve Geometri · 0.157.0 adayı
+
+Rasyonel Sayılar’da noktalar sıfıra göre yansırken işaretli sıralama tersine dönüyor ve uzaklıklar aynı kalıyor. Üçgende Merkezler’de 6, 8 ve 10 kenarlı dik üçgen için iç çemberin yarıçapı 2, A karşısındaki dış çemberin yarıçapı 12 birim. Model, temas edilen kenarları ve uzantıları hesaplıyor. İki görsel ayrı Kopya Kağıtlarında da açılıyor.
+
+Rasyonel Sayılar 1.1 fiziksel 3 ve Üçgende Merkezler 5.2 fiziksel 6–7 ile karşılaştırıldı. TypeScript, 91 birim, 19 Chromium akışı ve 323 çevrimdışı varlık doğrulandı. Sırada Birinci Dereceden Denklemler fiziksel 3 ve Kenar-Açı-Kenar Eşliği fiziksel 2 var.

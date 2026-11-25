@@ -2209,6 +2209,7 @@ export const rationalSource035Pack:Rational035Pack = {
     },
     {
       "title": "Negatif noktalar ve aralık",
+      "figureTitle": "Negatif noktaları uzaklıklarıyla karıştırma",
       "text": [
         "Sağdaki sayı büyüktür: −3/4<−1/2. Uzaklıklar 3/4>1/2 olsa da işaretli değerler ters sıradadır. −5/6>−7/8.",
         "İki farklı rasyonelin ortalaması aralarındadır. −2/3<−19/30<−3/5; −7/10<−41/60<−2/3. Eşit uçlarda kesin aralık yoktur."

@@ -394,3 +394,53 @@ test("Median length follows the actual side lengths as the base moves", async ({
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Distance from zero stays the same when signed fractions reverse order", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-mat-rasyonel-kaynak-035";
+  const model = figure(page, "Negatif noktaları uzaklıklarıyla karıştırma");
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("−3/4 < −1/2.");
+  const negative = await model.getByRole("img").innerHTML();
+  await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await expect(model).toContainText("3/4 > 1/2.");
+  await expect(model).toContainText("Sıfıra uzaklıklar 3/4 ve 1/2 birimdir.");
+  expect(await model.getByRole("img").innerHTML()).not.toBe(negative);
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(model).toContainText("−3/4 < −1/2.");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("In the same triangle the excircle touches the two side extensions", async ({ page, context }, info) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-ucgen-merkezleri-031";
+  const model = figure(page, "İç merkez I: kenarlara eş dik uzaklık");
+  await page.goto(`/#/lesson?id=${lesson}`);
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  for (let i = 0; i < 3; i++) await next.press("Enter");
+  await expect(model).toContainText("r = S / s = 2 birim.");
+  await expect(model).toContainText("I = (2; 2).");
+  const inside = await model.getByRole("img").innerHTML();
+  await next.press("Enter");
+  await expect(model).toContainText("rₐ = S / (s − a) = 12 birim.");
+  await expect(model).toContainText("BC’ye teğet noktası (2,4; 4,8).");
+  await expect(model).toContainText("BC parçası ile AB ve AC uzantılarına teğet.");
+  expect(await model.getByRole("img").innerHTML()).not.toBe(inside);
+  await checkFrame(page, model);
+  const image = model.getByRole("img");
+  await image.evaluate((svg) => svg.scrollIntoView({ block: "center" }));
+  await image.screenshot({ path: info.outputPath("dis-teget-cember.png") });
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  for (let i = 0; i < 3; i++) await next.press("Enter");
+  await expect(model).toContainText("r = S / s = 2 birim.");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

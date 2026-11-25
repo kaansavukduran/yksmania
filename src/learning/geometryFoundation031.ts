@@ -2120,7 +2120,7 @@ const packs031: FoundationPack031[] = [
     title: "Üçgende yardımcı elemanlar: açıortay, kenarortay ve merkezler",
     minutes: 55,
     source:
-      "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Açıortay 5.1 fiziksel s. 2 ve 5: dış açıortay koşulları. Kenarortay 5.1 fiziksel s. 2 ve 5: Apollonius bağıntısı. Sorular resmî sınav sorusu değildir.",
+      "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Açıortay 5.1 fiziksel s. 2 ve 5: dış açıortay koşulları. Kenarortay 5.1 fiziksel s. 2 ve 5: Apollonius bağıntısı. Üçgende Merkezler 5.2 fiziksel s. 6 ve 7: iç ve dış teğet çemberler. Sorular resmî sınav sorusu değildir.",
     objectives: [
       "Açıortay, kenarortay, yükseklik ve orta dikmenin farklı tanımlarını ayır.",
       "İç ve dış açıortay oranlarını noktanın konumuyla uygula.",
@@ -2162,6 +2162,8 @@ const packs031: FoundationPack031[] = [
         paragraphs: [
           "Üç iç açıortay üçgenin içinde tek bir I noktasında kesişir. I’nın üç kenarın doğrularına dik uzaklıkları eşittir; bu ortak r uzaklığı iç teğet çemberin yarıçapıdır. Köşelere olan IA,IB,IC uzaklıklarının eşit olması gerekmez.",
           "BIC üçgeninde B ve C açıları ana üçgendeki açıların yarılarıdır. Bu yüzden ∠BIC=180°−(B+C)/2=90°+A/2 olur. A’nın karşısındaki dış teğet çember merkezi Iₐ, B ve C’nin dış açıortaylarının uygun kesişimidir; ∠BIₐC=90°−A/2 olur. İç merkezle dış merkezdeki artı–eksi işaretlerini ayrı düşün.",
+          "ABC dik üçgeninde A=(0; 0), B=(6; 0), C=(0; 8). Pisagor’la BC=10, alan 24 ve yarı çevre 12 birim bulunur. İç yarıçap alanın yarı çevreye bölümüdür: r=24/12=2. A’ya komşu kenar doğrularına dik uzaklık 2 olduğunda merkez I=(2; 2) olur.",
+          "A karşısındaki çemberde yan kenarlara teğetler B ve C’nin ötesindedir. Dış merkezle AB ve AC’nin kurduğu iki üçgenin alanları toplamından BC’ye ait alanı çıkar: 24=rₐ·(6+8−10)/2. Böylece rₐ=24/(12−10)=12 ve Iₐ=(12; 12). Modelde çizgilerin hangi parçasına dokunduğunu karşılaştır.",
         ],
       },
       {
@@ -2917,7 +2919,9 @@ const quickSheets031: Record<string, FoundationQuickSheet031> = {
       },
       {
         title: "Merkezlerin eş uzaklıkları ve konumu",
+        figureTitle: "İç merkez I: kenarlara eş dik uzaklık",
         text: [
+          "S alan, s yarı çevre ve a=BC ise iç yarıçap r=S/s; A karşısındaki dış yarıçap rₐ=S/(s−a). 6, 8, 10 dik üçgeninde S=24, s=12, r=2 ve rₐ=12. Dış çember BC’ye ve iki yan kenarın uzantısına teğettir.",
           "I:iç açıortaylar;kenarlara eş dik uzaklık r. O:orta dikmeler;köşelere eş uzaklık R. H:yükseklikler. G:kenarortaylar.",
           "I ve G her zaman içeride. H ve O dar üçgende içeride,genişte dışarıda;dik üçgende H dik köşede,O hipotenüsün ortasında.",
         ],
