@@ -685,3 +685,48 @@ test("Polygon diagonal counting excludes adjacent vertices and counts each pair 
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("The squared radical equation includes a candidate from the negative branch", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Köklü denklemde önce koşul, sonra kare");
+  await page.goto("/#/lesson?id=koklu-sayilar");
+  await expect(model).toContainText("x = 3 veya x = −1");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await next.press("Enter");
+  await expect(model).toContainText("x = 4 veya x = −3");
+  await expect(model).toContainText("√16 = 4; √9 = 3 ≠ −3");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-208");
+  await next.press("Enter");
+  await expect(model).toContainText("√16 = 4; √9 = 3 ≠ −3");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Perpendicular diagonals keep the midpoint rectangle dimensions as the diagonal moves", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-dortgen-hiyerarsi-032";
+  const model = figure(page, "Kenar orta noktaları gizli bir paralelkenar kurar");
+  await page.goto(`/#/lesson?id=${lesson}`);
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await next.press("Enter");
+  const slide = model.getByRole("slider", { name: /D.nin yatay konumu/ });
+  await slide.press("Home");
+  const left = await model.getByRole("img").innerHTML();
+  await slide.press("End");
+  expect(await model.getByRole("img").innerHTML()).not.toBe(left);
+  await expect(model).toContainText("EF = 4, FG = 7. Çevre 22 birim.");
+  await expect(model).toContainText("Alan(ABCD) = 56, Alan(EFGH) = 28 birim².");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await next.press("Enter");
+  await expect(model).toContainText("Alan(ABCD) = 56, Alan(EFGH) = 28 birim².");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

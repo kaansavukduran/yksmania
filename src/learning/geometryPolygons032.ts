@@ -634,6 +634,7 @@ const packs: PolygonPack032[] = [
         title: "Kenar orta noktaları gizli bir paralelkenar kurar",
         paragraphs: [
           "Dışbükey ABCD dörtgeninde E, F, G, H sırasıyla AB, BC, CD, DA’nın orta noktaları olsun. ABC üçgeninin orta tabanından EF∥AC veEF=AC/2 bulunur. ADC üçgeninden HG∥AC veHG=AC/2 gelir. Benzer biçimde FG veEH, BD’ye paralel veBD/2 uzunluğundadır.",
+          "Dik köşegenli örnekte AC=8, BD=14 birim olsun. Orta noktaların kurduğu dikdörtgenin kenarları 4 ve 7, çevresi 22 birim ve alanı 28 birim²’dir. İlk dörtgenin alanı 8·14/2=56 olduğundan sonuç alanın yarısıdır.",
           "Bu nedenle EFGH her zaman paralelkenardır; ilk dörtgenin de paralelkenar olması gerekmez. Çevresi AC+BD, alanı ilk dörtgenin alanının yarısıdır. Köşegenler dikse orta noktalar şekli dikdörtgen; köşegenler eşitse eşkenar dörtgen olur. Hem dik hem eş köşegenler varsa orta noktalar şekli karedir.",
         ],
       },
@@ -1169,6 +1170,7 @@ const packs: PolygonPack032[] = [
       },
       {
         title: "Orta noktalar ve açıortay",
+        figureTitle: "Kenar orta noktaları gizli bir paralelkenar kurar",
         text: [
           "Kenar orta noktaları paralelkenar kurar; çevresi AC+BD, alanı eski alanın yarısıdır. B, C iç açıortayları E’de kesişiyorsa ∠BEC=(A+D)/2.",
         ],
@@ -1181,7 +1183,7 @@ const packs: PolygonPack032[] = [
       },
     ],
     source:
-      "MEBİ TYT Matematik Konu Özetleri: Dörtgenler ve Özellikleri, Özel Dörtgenler (basılı 140–141/PDF 142–143); Aurelia Tüm Geometri Özeti PDF 8. Kaynak kavramlarından yazılmış özgün anlatım ve öğretim soruları.",
+      "MEBİ TYT Matematik Konu Özetleri: Dörtgenler ve Özellikleri, Özel Dörtgenler (basılı 140–141/PDF 142–143); Aurelia Tüm Geometri Özeti PDF 8 ve Genel Dörtgenler PDF fiziksel 2 ve 5 (G2). Kaynak kavramlarından yazılmış özgün anlatım ve öğretim soruları.",
     minutes: 48,
     id: "tyt-geo-dortgen-hiyerarsi-032",
   },

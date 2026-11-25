@@ -224,20 +224,34 @@ const kokluSayilar: Record<string, FigureDef> = {
     },
   },
   "Köklü denklemde önce koşul, sonra kare": {
-    caption:
-      "√(2x + 3) = x: turuncu eğri ile mavi doğru yalnız x = 3'te kesişir. Kare almak −√(2x + 3) dalını da (kesikli) ekler; x = −1 o dalın kesişimidir, ilk denklemin çözümü değildir.",
-    alt: "y = √(2x + 3) eğrisi, onun kesikli negatif dalı ve y = x doğrusu; (3; 3) gerçek kesişim, (−1; −1) yalnız kesikli dalla kesişim.",
-    draw: () => ({
-      els: [
-        ...axes(-2.5, 5, -3, 5),
-        graph((x) => Math.sqrt(2 * x + 3), -1.5, 4.8, "a"),
-        graph((x) => -Math.sqrt(2 * x + 3), -1.5, 4.8, "a", true),
-        line(v(-2.4, -2.4), v(4.8, 4.8), { tone: "b", ext: 0 }),
-        pt(v(3, 3), "x = 3 ✓", "nw", "c"),
-        pt(v(-1, -1), "x = −1 sahte", "sw", "warn", true),
-      ],
-      readout: ["Kare: x² = 2x + 3 → x = 3 veya x = −1", "x ≥ 0 koşulu: yalnız 3"],
-    }),
+    caption: "Kök eğrisi ve y = x doğrusunu karşılaştır. Karesi alınmış eşitlik, kesikli negatif daldaki kesişimi de içerir. Sol taraf karekök olduğu için negatif aday ilk eşitliği sağlayamaz.",
+    alt: "Pozitif karekök eğrisi, kesikli negatif dal ve y = x doğrusu. Dolu nokta ilk eşitliğin çözümünü, boş nokta yalnız karesi alınmış eşitliğin adayını gösterir.",
+    steps: ["√(2x + 3) = x", "√(x + 12) = x"],
+    draw: (_value, step) => {
+      const [a, b] = step === 0 ? [2, 3] : [1, 12];
+      const discriminantRoot = Math.sqrt(a * a + 4 * b);
+      const positive = (a + discriminantRoot) / 2;
+      const negative = (a - discriminantRoot) / 2;
+      const radical = (x: number) => Math.sqrt(a * x + b);
+      const plotLeft = step === 0 ? -2.5 : -5;
+      const graphStart = Math.max(-b / a, plotLeft + 0.15);
+      const lineStart = Math.max(-4.3, plotLeft + 0.2);
+      const linearTerm = a === 1 ? "x" : `${a}x`;
+      return {
+        els: [
+          ...axes(plotLeft, 5.4, -4.6, 5.4),
+          graph(radical, graphStart, 5, "a"),
+          graph((x) => -radical(x), graphStart, 5, "a", true),
+          line(v(lineStart, lineStart), v(5, 5), { tone: "b", ext: 0 }),
+          pt(v(positive, positive), String(positive), "nw", "c"),
+          pt(v(negative, negative), `−${-negative}`, "sw", "warn", true),
+        ],
+        readout: [
+          `Kare: x² = ${linearTerm} + ${b} → x = ${positive} veya x = −${-negative}`,
+          `x ≥ 0 koşulu: yalnız ${positive}. √${a * positive + b} = ${positive}; √${a * negative + b} = ${-negative} ≠ −${-negative}.`,
+        ],
+      };
+    },
   },
   "Özel kökü açarken eşleşen toplam ve çarpımı bul": {
     caption:

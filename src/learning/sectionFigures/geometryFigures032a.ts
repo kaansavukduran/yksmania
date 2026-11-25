@@ -582,14 +582,15 @@ const dortgenHiyerarsi: Record<string, FigureDef> = {
   },
   "Kenar orta noktaları gizli bir paralelkenar kurar": {
     caption:
-      "D köşesini kaydır: ABCD hangi biçime girerse girsin kenar orta noktalarını birleştiren EFGH paralelkenardır ve alanı ABCD'nin yarısıdır.",
+      "D köşesini kaydır. Orta noktaların oluşturduğu paralelkenar, dörtgenin alanının yarısını kaplar. İkinci adımda BD köşegeni bütün olarak kayar ve EFGH dikdörtgen kalır.",
     alt: "Dışbükey ABCD dörtgeni ve kenarlarının orta noktaları E, F, G, H; EFGH paralelkenarı boyalı, karşılıklı kenarlarında paralellik işaretleri.",
     param: { label: "D'nin yatay konumu", min: -1.5, max: 2.5, step: 0.25, init: 0.5 },
-    draw: (x) => {
-      const A = v(0, 0);
-      const B = v(5, -0.4);
-      const C = v(5.6, 3);
-      const D = v(x, 3.6);
+    steps: ["D köşesi değişirken", "Köşegenler 8 ve 14 birim"],
+    draw: (x, step) => {
+      const A = step === 0 ? v(0, 0) : v(-3, 0);
+      const B = step === 0 ? v(5, -0.4) : v(x, -6);
+      const C = step === 0 ? v(5.6, 3) : v(5, 0);
+      const D = step === 0 ? v(x, 3.6) : v(x, 8);
       const [E, F, G, H] = [mid(A, B), mid(B, C), mid(C, D), mid(D, A)];
       const area = (ps: V[]) =>
         Math.abs(ps.reduce((s, p, i) => s + p[0] * ps[(i + 1) % ps.length][1] - ps[(i + 1) % ps.length][0] * p[1], 0)) / 2;
@@ -603,10 +604,18 @@ const dortgenHiyerarsi: Record<string, FigureDef> = {
           par(H, G, 1, "a"),
           par(F, G, 2, "a"),
           par(E, H, 2, "a"),
+          ...(step === 0 ? [] : [right(E, F, H, "a")]),
           ...labelAll([A, B, C, D], ["A", "B", "C", "D"], ["sw", "se", "ne", "nw"]),
           ...labelAll([E, F, G, H], ["E", "F", "G", "H"], ["s", "e", "n", "w"]),
         ],
-        readout: [`Alan(EFGH) / Alan(ABCD) = ${fmt(area([E, F, G, H]) / area([A, B, C, D]), 3)}`],
+        readout: [
+          `Alan(EFGH) / Alan(ABCD) = ${fmt(area([E, F, G, H]) / area([A, B, C, D]), 3)}`,
+          ...(step === 0 ? [] : [
+            `AC = ${fmt(dist(A, C))} ve BD = ${fmt(dist(B, D))} birim. Dik köşegenlere paralel kenarlar dik açı kurar.`,
+            `EF = ${fmt(dist(E, F))}, FG = ${fmt(dist(F, G))}. Çevre ${fmt(2 * (dist(E, F) + dist(F, G)))} birim.`,
+            `Alan(ABCD) = ${fmt(area([A, B, C, D]))}, Alan(EFGH) = ${fmt(area([E, F, G, H]))} birim².`,
+          ]),
+        ],
       };
     },
   },

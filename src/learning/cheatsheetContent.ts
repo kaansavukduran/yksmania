@@ -155,6 +155,11 @@ export interface CheatSheet {
 }
 
 const revisedSectionTextByLesson = new Map([
+  ["koklu-sayilar", new Map([
+    ["Köklü denklemde önce koşul, sonra kare", [
+      "√(x+12)=x için x≥0 gerekir. Karesi alınan eşitlikten 4 ve −3 çıkar. √16=4 eşitliği sağlanır, √9=3 değeri −3’e eşit değildir.",
+    ]],
+  ])],
   ["bilimsel-gosterim-katsayi", new Map([
     ["Birbirini izleyen büyütmeleri çarp", [
       "İkinci çarpanı artık büyümüş uzunluğa uygula. 0,0125 mm önce 4 katıyla 0,05 mm, sonra 40 katıyla 2 mm olur. Tek işlemde çarpan 4·40=160 olur. Katsayıların birimi yoktur.",

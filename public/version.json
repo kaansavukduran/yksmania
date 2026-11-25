@@ -1,8 +1,8 @@
 {
-  "version": "0.162.0",
+  "version": "0.163.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Ardışık büyütmeleri adım adım karşılaştır. Kenar sayısını değiştirerek bir köşeden çıkan köşegenleri ve çokgenin toplam köşegen sayısını karşılaştır.",
-    "en": "Compare two successive magnifications and count each diagonal of a polygon once."
+    "tr": "Köklü denklemde adayları ilk eşitliğe geri koy. Dörtgende orta noktaların oluşturduğu dikdörtgenin çevresini ve alanını çizimle doğrula.",
+    "en": "Check radical equation candidates in the original equation and find the perimeter and area of a quadrilateral’s midpoint rectangle."
   }
 }

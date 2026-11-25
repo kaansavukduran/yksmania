@@ -3731,3 +3731,9 @@ Mutlak Değer 1.3.0 fiziksel 8 ve Üçgende Benzerlik 5.1 fiziksel 4–5 ile eş
 Bilimsel Gösterim ve Katsayı’da 0,0125 mm önce 4, sonra 40 kat büyütülüyor. Model ara uzunluğu 0,05 mm, son uzunluğu 2 mm olarak gösteriyor. Çokgenler’de kenar sayısı değişince komşu köşeler sayımın dışında kalıyor. Düzgün yedigenin 14 köşegeni ve 900/7° iç açısı aynı modelden okunuyor.
 
 Bilimsel Gösterim ve Katsayı fiziksel 5 ile Çokgenler fiziksel 2 ve 5 karşılaştırıldı. TypeScript, 37 birim, 29 Chromium akışı ve 323 çevrimdışı varlık doğrulandı. 14 görsel 320, 375 ve 1280 pikselde çakışmasız açıldı. Sırada Köklü Sayılar fiziksel 8 ve Genel Dörtgenler fiziksel 2 ile 5 var.
+
+## TYT Matematik ve Geometri · 0.163.0 adayı
+
+Köklü Sayılar’da kök eğrisi, negatif dal ve y=x doğrusu, kare alınınca gelen −3 adayının neden elendiğini gösteriyor. Genel Dörtgenler’de dik köşegenler yatay taşıma sırasında 8 ve 14 birim kalıyor. Kenar orta noktalarından oluşan dikdörtgen 4×7 birim, çevresi 22 ve alanı 28 birim².
+
+Köklü Sayılar fiziksel 8 ile Genel Dörtgenler fiziksel 2 ve 5 karşılaştırıldı. TypeScript, 21 birim, 31 Chromium akışı ve 323 çevrimdışı varlık geçti. 16 çizim 320, 375 ve 1280 pikselde denetlendi. Sırada Oran Orantı fiziksel 8 ve Yamuk fiziksel 2 ile 5 var.

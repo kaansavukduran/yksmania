@@ -855,11 +855,15 @@ const roots: Pack = {
       "25<30<36 olduğundan 5<√30<6. Karekök, negatif olmayan sayılarda artandır; kök içlerinin sırası korunur. 3√2 ile 2√5 pozitif olduğundan karelerini karşılaştırabiliriz:18<20, yani 3√2<2√5. Her iki tarafın negatif olmadığını söylemek yöntemin parçasıdır.",
       "Negatif iki sayıda kareleri karşılaştırmak aynı yönü korumaz; −5<−2 fakat 25>4'tür. Farklı derecelerde kökler için iç değer 1'in hangi yanında olduğuna dikkat et:8'in karekökü küpkökünden büyükken 1/8'in karekökü küpkökünden küçüktür. Kök derecesi büyürse değer daima küçülür gibi koşulsuz bir ezber kullanma.",
     ),
-    section(
-      "Köklü denklemde önce koşul, sonra kare",
-      "√(2x+3)=x denkleminde sol taraf ≥0 olduğundan x≥0 gerekir. Kare almak x²=2x+3 verir; bundan çıkan −1 ve 3 adaylarından yalnız 3 ön koşulu ve özgün eşitliği sağlar. Kare alma iki farklı işareti aynı sonuca götürebildiği için geri dönüşü otomatik eşdeğer değildir.",
-      "Önce köklü terimi yalnız bırak; iki tarafın işaretini incele; sonra uygun kuvvet al. Birden fazla kök varsa bu işlemi kademeli yap. Adayları yalnız karesi alınmış son denklemde değil ilk köklü denklemde dene. Koşulu sağlamayan adaya sahte kök demek, bütün cebir yanlış demek değildir; dönüşümün aday kümesini genişletmiş olduğunu anlatır.",
-    ),
+    {
+      title: "Köklü denklemde önce koşul, sonra kare",
+      figureTitle: "Köklü denklemde önce koşul, sonra kare",
+      paragraphs: [
+        "√(2x+3)=x denkleminde sol taraf ≥0 olduğundan x≥0 gerekir. Kare almak x²=2x+3 verir. −1 ve 3 adaylarından yalnız 3 özgün eşitliği sağlar.",
+        "Köklü terimi yalnız bırak, iki tarafın işaretini incele, sonra uygun kuvvet al. Birden fazla kök varsa bu işlemi kademeli yap. Her adayı ilk köklü denklemde dene.",
+        "İkinci çizimde √(x+12)=x için önce x≥0 yaz. Kare alınca x²−x−12=(x−4)(x+3)=0 olur. 4 için √16=4 sağlanır. −3 için √9=3 çıkar ve 3, −3’e eşit değildir. Karesi alınan iki tarafın eşit olması işaretlerinin de eşit olduğunu göstermez.",
+      ],
+    },
     section(
       "Özel kökü açarken eşleşen toplam ve çarpımı bul",
       "m,n≥0 için(√m+√n)²=m+n+2√(mn). Bu nedenle √(a+2√b) yapısında m+n=a ve mn=b sağlayan sayılar aranabilir; dış kök esas değeri seçer. √(7+4√3) için m=4,n=3 uygundur ve sonuç 2+√3'tür. Yapıyı iki ayrı köke dağıtmak yerine özdeşliği tersten kullanmış oluruz.",

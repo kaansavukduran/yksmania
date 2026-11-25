@@ -8507,5 +8507,750 @@
         }
       }
     ]
+  },
+  {
+    "version": "0.163.0",
+    "receipts": [
+      {
+        "surface": "lessons",
+        "id": "tyt-geo-dortgen-hiyerarsi-032",
+        "after": "d3651c93e443a0f556770ff138e173bcd12752edb46f0bc04c9f568ae430beb5",
+        "prior": {
+          "source": {
+            "tr": "MEBİ TYT Matematik Konu Özetleri: Dörtgenler ve Özellikleri, Özel Dörtgenler (basılı 140–141/PDF 142–143); Aurelia Tüm Geometri Özeti PDF 8. Kaynak kavramlarından yazılmış özgün anlatım ve öğretim soruları."
+          },
+          "body": [
+            {
+              "title": {
+                "tr": "Dört köşe, iki köşegen ve bir kapalı çevre"
+              },
+              "text": {
+                "tr": "Dörtgeni adlandırırken köşeleri çevre boyunca sırayla yaz: ABCD dörtgeninde kenarlar AB, BC, CD, DA; köşegenler AC veBD’dir. Birbirini kesen papyon çizimini bu dersteki basit dörtgenler sınıfına katmayız. Herhangi üç köşenin aynı doğru üzerinde olmadığı, kenarların yalnız komşu uçlarda birleştiği durumları inceleriz.\n\nDışbükey dörtgenin bütün iç açıları 180°den küçüktür ve iki köşegen de içeride kalır. İçbükey dörtgende bir iç açı 180°den büyüktür. Çizimdeki küçük boşluğu ölçüp iç açı yerine koymak hatalıdır; hangi bölgenin şeklin içinde kaldığını belirle."
+              }
+            },
+            {
+              "title": {
+                "tr": "360° toplamının gerekçesi"
+              },
+              "text": {
+                "tr": "Dışbükey bir dörtgende bir köşegen şekli iki üçgene böler. İki üçgenin açıları birlikte dörtgenin dört iç açısını verir; toplam 180°+180°=360°dir. Basit içbükey dörtgende uygun iç köşegenle yine iki üçgen oluşur ve iç açı toplamı 360°kalır.\n\nDışbükeyde çevre boyunca aynı yönde seçilen birer dış açının toplamı da 360°dir. Dışbükey olmak bütün açıların eşit olduğunu söylemez. Dört iç açı eşitse her biri 90°olur; şekil dikdörtgendir, ama kare demek için kenar eşitliği de gerekir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Sınıfları birbiri içinde oku"
+              },
+              "text": {
+                "tr": "Bu derste MEBİ’nin kapsayıcı tanımı kullanılır: en az bir çift karşı kenarı paralel olan dörtgen yamuktur. İki karşı kenar çifti paralelse paralelkenardır; bu yüzden her paralelkenar aynı zamanda yamuktur. Bazı kaynaklar yamuğu yalnız bir paralel kenar çiftiyle sınırlar; böyle bir soruda verilen tanım ayrıca okunmalıdır.\n\nDikdörtgen dört dik açılı paralelkenardır. Eşkenar dörtgen dört eş kenarlı paralelkenardır. Kare ikisinin ortak özel durumudur: dört kenarı ve dört açısı eşittir. Eşkenar dörtgen aynı zamanda deltoiddir. Bir kareye dikdörtgen demek yanlış değildir; bu sözcük ek özelliği yok saymaz, daha geniş sınıfı belirtir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Deltoidde komşu eş çiftleri bul"
+              },
+              "text": {
+                "tr": "Dışbükey ABCD dörtgeninde AB=AD veCB=CD ise şekil bir deltoiddir. Eş uzunluklar komşu kenarlardadır; yalnız AB=CD veBC=AD yazmak deltoid tanımı değil, karşı kenar eşitliğidir. ABC ileADC üçgenleri üç kenardan eştir.\n\nAC doğrusu simetri eksenidir; A veC açılarını ikiye böler, BD’ye diktir veBD’yi ortalar. B ileD açıları eşittir. BD’nin AC’yi ortalaması veya köşegenlerin eşit olması genel olarak gerekmez. Köşegenler dik olduğu için alan S=AC·BD/2’dir. AB=a, BC=b ise çevre 2(a+b) olur."
+              }
+            },
+            {
+              "title": {
+                "tr": "Paralel tabanlar açıları ve alanı bağlar"
+              },
+              "text": {
+                "tr": "AB∥CD olan dışbükey yamukta AB veCD tabandır. Bu tabanlar arasındaki dik uzaklık h yüksekliktir; eğik yan kenar h değildir. AD yan kenarındaki A veD iç açıları, BC yan kenarındaki B veC iç açıları bütünlerdir. Genel yamukta aynı tabanın iki açısı eşit olmak zorunda değildir.\n\nTaban uzunlukları a veb ise alan S=(a+b)h/2 olur. İki eş yamuğu ters yönlerle birleştirdiğinde tabanı a+b, yüksekliği h olan paralelkenar oluşur; bir yamuğun alanı bunun yarısıdır. Alanla çevreyi ayır: çevre için dört kenar gerekir, taban ve yükseklik tek başına yetmez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Orta taban ve köşegenlerdeki küçük parçalar"
+              },
+              "text": {
+                "tr": "Yamuğun paralel olmayan yan kenarlarının orta noktalarını birleştiren EF parçası tabanlara paraleldir ve orta tabandır. Uzunluğu(a+b)/2’dir. Bu yüzden alanı orta taban·yükseklik olarak da yazabilirsin. Orta taban köşegen değildir; uçları karşı köşeler değil, kenar orta noktalarıdır.\n\nAlt taban a≥b üst taban olsun. Köşegenlerin orta tabanla kesiştiği iki nokta arasındaki parça(a−b)/2, orta tabanın iki ucunda kalan parçalar b/2’dir. Toplam b/2+(a−b)/2+b/2=(a+b)/2 olur. a=b olduğunda ortadaki parça sıfırdır; paralelkenarın köşegenleri aynı orta noktada buluşur."
+              }
+            },
+            {
+              "title": {
+                "tr": "Dik ve ikizkenar yamukta yardımcı dikmeler"
+              },
+              "text": {
+                "tr": "Dik yamukta tabanlara dik olan yan kenar yüksekliktir. Diğer yan kenar h ve|a−b| ile dik üçgen oluşturur; uzunluğu√(h²+(a−b)²) olur. Çizimde diklik verilmeden bir yan kenarı yükseklik sayma.\n\nİkizkenar yamukta yan kenarlar eşittir; aynı tabana komşu açılar ve iki köşegen eşittir. Tabanlar a≥b, yan kenar ℓ ise kısa tabanın uçlarından dikmeler inince fark ikiye bölünür:(a−b)/2. Pisagor’dan h=√(ℓ²−((a−b)/2)²) çıkar. Yükseklik pozitif olmalıdır. Paralelkenar sınırında ek dik açı koşulu yoksa eş yan kenar tek başına klasik ikizkenar yamuk simetrisini zorunlu kılmaz; bu paragrafta a>b durumu kullanılır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Köşegenleri dik olan her şekil kare değildir"
+              },
+              "text": {
+                "tr": "Dışbükey dörtgende köşegenler AC veBD O’da dik kesişsin. Dört küçük dik üçgen için Pisagor yazıldığında AB²=AO²+BO², BC²=CO²+BO², CD²=CO²+DO² veDA²=AO²+DO² olur. Böylece AB²+CD²=BC²+DA² elde edilir.\n\nBu kareler toplamı eşitliği köşegenleri dik olan genel dörtgene aittir; bütün kenarların veya köşegenlerin eşit olduğu anlamına gelmez. Dik köşegenli dışbükey dörtgenin alanı AC·BD/2’dir. Köşegenler arasında θ açısı varsa genel alan AC·BD·sinθ/2 olur;θ=90°için sinθ=1’e iner."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kenar orta noktaları gizli bir paralelkenar kurar"
+              },
+              "text": {
+                "tr": "Dışbükey ABCD dörtgeninde E, F, G, H sırasıyla AB, BC, CD, DA’nın orta noktaları olsun. ABC üçgeninin orta tabanından EF∥AC veEF=AC/2 bulunur. ADC üçgeninden HG∥AC veHG=AC/2 gelir. Benzer biçimde FG veEH, BD’ye paralel veBD/2 uzunluğundadır.\n\nBu nedenle EFGH her zaman paralelkenardır; ilk dörtgenin de paralelkenar olması gerekmez. Çevresi AC+BD, alanı ilk dörtgenin alanının yarısıdır. Köşegenler dikse orta noktalar şekli dikdörtgen; köşegenler eşitse eşkenar dörtgen olur. Hem dik hem eş köşegenler varsa orta noktalar şekli karedir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Açıortaylarda hangi açıları yarıya böldüğünü yaz"
+              },
+              "text": {
+                "tr": "Dışbükey ABCD dörtgeninde B veC iç açılarının açıortayları E’de kesişsin. BEC üçgeninde B açısı B/2, C açısı C/2’dir. O halde ∠BEC=180°−(B+C)/2=(A+D)/2 olur. Formülün harfleri, hangi komşu iki köşenin açıortayını aldığınla birlikte okunmalıdır.\n\nKarşı iki köşenin açıortay doğruları için küçük açı, diğer karşı açılar farkının mutlak değerinin yarısına bağlıdır. Örneğin B veD açıortay doğruları kesişiyorsa küçük açı |A−C|/2’dir. A=C sınırında doğrular paralel veya çakışık olabilir; her durumda varmış gibi bir kesişim noktası tanımlama. Şekil içindeki belirli bir geniş açıyı soruyorsa küçük açının bütünlerine geçmek gerekebilir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Yamukta köşegen oranı ve benzerlik"
+              },
+              "text": {
+                "tr": "AB∥CD, AB=a, CD=b olan dışbükey yamukta köşegenler O’da kesişsin. AOB ileCOD üçgenlerinin tepe açıları ters, açı çiftleri paralellikten eşittir; iki üçgen benzerdir. Karşılıkları A↔C, B↔D olduğundan AO/OC=BO/OD=a/b’dir.\n\nOranı rastgele çaprazlamadan önce büyük ve küçük tabanı aynı sırayla yaz. a=b olduğunda oran 1 olur ve köşegenler birbirini ortalar; bu paralelkenar durumudur. Genel yamukta bir köşegenin iki parçasının eşit olduğunu varsayma. Orta tabanla kesişim noktaları ile iki köşegenin kendi kesişimini de ayrı adlandır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Çember koşulları ve kullanmadan önce kontrol"
+              },
+              "text": {
+                "tr": "Dışbükey bir dörtgenin bütün köşeleri aynı çember üzerindeyse çemberseldir; karşı iç açıları toplam 180°dir. Bir dış açı da karşı köşedeki iç açıya eşittir. Bu özellik, üzerinde çember çizilmemiş herhangi bir dörtgende kendiliğinden kullanılamaz.\n\nBir çember dışbükey dörtgenin dört kenarına içeriden teğetse aynı köşeden çıkan teğet parçaları eşittir. Buradan karşı kenar toplamları AB+CD=BC+DA ve alan S=r·s çıkar; r içteğet çemberin yarıçapı, s çevrenin yarısıdır. Yarıçapı bulurken çember merkezinin kenarlara dik uzaklıklarının eşitliğini kullan. Çevre bilgisi tek başına yarıçapın sayısal değerini vermez."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "lessons",
+        "id": "koklu-sayilar",
+        "after": "6b5090b106fb534b4c217ed494330778a7b5a1be75706643afb2e45786583180",
+        "prior": {
+          "body": [
+            {
+              "title": {
+                "tr": "Karekök bir değer, denklem iki çözüm verebilir"
+              },
+              "text": {
+                "tr": "a≥0 için √a, karesi a olan sayıların negatif olmayanıdır; esas karekök denir. √49=7'dir. Buna karşılık x²=49 denkleminin iki gerçek çözümü x=7 ve x=−7'dir. Kök işaretinin sonucu ile denklemin çözüm kümesi farklı sorulardır; √a'nın önüne kendiliğinden± eklenmez.\n\nAlanı a birim² olan karenin kenar uzunluğu √a birimdir; uzunluk negatif olamaz. Atölyede alanı değiştirirken karenin kenarı doğrusal değil karekök ilişkisiyle değişir. Alan dört katına çıkarsa kenar iki katına çıkar. Bu model, esas kökün neden tek ve negatif olmayan değer seçtiğini geometrik olarak görünür kılar."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kök derecesi ve gerçek sayı koşulu"
+              },
+              "text": {
+                "tr": "Kök derecesi n,2 veya daha büyük bir tam sayıdır. Çift dereceli gerçek kökte kök içi ≥0 olmalıdır; √(−4) gerçek sayı değildir. Tek dereceli kökler negatif değerlerde de tanımlıdır:∛(−8)=−2. Negatif sayının çift dereceden kökünü gerçek sayı gibi kullanarak işlem kuralı uygulama.\n\nKöklü ifade paydadaysa hem kökün tanımı hem paydanın sıfır olmaması gerekir. √(x−1)/√(5−x) için x−1≥0 ve 5−x>0 birlikte x∈[1,5) verir. İlk kökün sıfır olması serbest, paydadakinin sıfır olması yasaktır. Tanım kümesini işlem sonunda değil başta yazmak sadeleştirmede kaybolan yasak değerleri korur."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kareden çıkarken mutlak değer kalır"
+              },
+              "text": {
+                "tr": "Gerçek A için √(A²)=|A|; çünkü esas karekök negatif değildir. A=−6 iken √36=6, A'nın kendisi −6 değildir. Çift derece n içinⁿ √(Aⁿ)=|A|; tek derece için aynı yapı A verir. Kuralın hangi derecede olduğunu söylemeden kökle kuvveti silmek işareti kaybettirir.\n\n√((x−2)²) ifadesi x≥2'de x−2, x<2'de 2−x'tir. Atölyede negatif bir x seçip kare alanından geri döndüğünde kenarın |x| olduğunu izle. Buradaki x işaretli bir cebirsel sayı, karenin kenarı ise uzunluktur; ikisinin aynı sembolle temsil edilmesi ancak x≥0 koşuluyla yapılabilir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Tam kare çarpanı dışarı çıkar"
+              },
+              "text": {
+                "tr": "√72=√(36·2)=6√2. Kök içini en büyük tam kare çarpan ile kalan biçiminde ayırmak en sade gösterime hızlı ulaştırır. Küçük bir kareyle başlamak da doğrudur:√72=√(4·18)=2√18; fakat √18'in hâlâ sadeleşmesi gerekir. Dışarı çıkan sayının karesi, içeriden çıkardığın çarpanı vermelidir.\n\nPozitif katsayıyı kök içine alırken karesini al:3√5=√45. Negatif katsayıyı kare içine gizleyip işaretini yok etme:−3√5=−√45'tir. Kök içinden değişkenli kare çarpan çıkarırken √(x²y)=|x|√y için y≥0 koşulunu koru. Sayısal yöntem, değişkende mutlak değer ve tanım denetimine ihtiyaç duyar."
+              }
+            },
+            {
+              "title": {
+                "tr": "Toplamada önce benzer kökü oluştur"
+              },
+              "text": {
+                "tr": "a√m+b√m=(a+b)√m; burada ortak kök yapısı aynıdır. √12+√27 önce 2√3+3√3'e, sonra 5√3'e dönüşür. √2+√3 için bu birleştirme yapılamaz; kök içlerini toplayıp √5 yazmak geçersizdir. Bir terimin kök dışı katsayısının görünmemesi 1 olduğu anlamına gelir.\n\nÇıkarmada da kökleri önce sadeleştir ve katsayıların işaretlerini koru. 5√12−2√27=10√3−6√3=4√3. Sonucu kontrol etmek için yaklaşık değer veya karesini alma kullanılabilir; fakat karesini alırken çapraz terimleri unutma.(√a+√b)²=a+b+2√(ab), yalnız a+b değildir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Çarpma ve bölmede tanımı koru"
+              },
+              "text": {
+                "tr": "a,b≥0 için √a·√b=√(ab). a≥0,b>0 için √a/√b=√(a/b). Koşullar, gerçek kareköklerin ve bölümün tanımlı olmasını sağlar. √2·√8=√16=4'tür. √(−1)·√(−1) için bu gerçek sayı kuralını kullanıp yanlış sonuca gitme; ilk iki ifade zaten bu alanda tanımlı değildir.\n\nKatsayıları ve kök içlerini ayrı çarp: (2√3)(5√6)=10√18=30√2. Farklı kök derecelerini eşitleme işlemi özellikle negatif içlerde işaret sorunu çıkarabilir; bu derste böyle genişletmeler pozitif içlerle sınırlanır. İç içe kökte derece çarpımı, pozitif tanım koşulları altında kullanılabilir; parantezin hangi bölümü kapsadığı açık olmalıdır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Eşlenik değeri değil gösterimi değiştirir"
+              },
+              "text": {
+                "tr": "Paydayı rasyonelleştirmek için payı ve paydayı aynı sıfırdan farklı ifadeyle çarparız; aslında 1 ile çarpmış oluruz. 3/√5=3√5/5. İki terimli √7−2 paydasında eşlenik √7+2 seçilirse çarpım 7−4=3 olur. Böylece 3/(√7−2)=√7+2 elde edilir.\n\nBu derste eşlenik sözcüğü, karekök içeren iki terimde ortadaki işaretin değiştirilmesini anlatır: (a+√b)(a−√b)=a²−b. Payda ve çarpan sıfır olmamalıdır. Rasyonelleştirme zorunlu bir sayı değişimi değildir; eşdeğer yazım sağlar. Soru hangi biçimi istiyorsa o biçimde yanıtla ve sadeleşen ifadenin başlangıçtaki tanım kümesini sakla."
+              }
+            },
+            {
+              "title": {
+                "tr": "Sıralamada pozitiflik ve tam kare aralığı"
+              },
+              "text": {
+                "tr": "25<30<36 olduğundan 5<√30<6. Karekök, negatif olmayan sayılarda artandır; kök içlerinin sırası korunur. 3√2 ile 2√5 pozitif olduğundan karelerini karşılaştırabiliriz:18<20, yani 3√2<2√5. Her iki tarafın negatif olmadığını söylemek yöntemin parçasıdır.\n\nNegatif iki sayıda kareleri karşılaştırmak aynı yönü korumaz; −5<−2 fakat 25>4'tür. Farklı derecelerde kökler için iç değer 1'in hangi yanında olduğuna dikkat et:8'in karekökü küpkökünden büyükken 1/8'in karekökü küpkökünden küçüktür. Kök derecesi büyürse değer daima küçülür gibi koşulsuz bir ezber kullanma."
+              }
+            },
+            {
+              "title": {
+                "tr": "Köklü denklemde önce koşul, sonra kare"
+              },
+              "text": {
+                "tr": "√(2x+3)=x denkleminde sol taraf ≥0 olduğundan x≥0 gerekir. Kare almak x²=2x+3 verir; bundan çıkan −1 ve 3 adaylarından yalnız 3 ön koşulu ve özgün eşitliği sağlar. Kare alma iki farklı işareti aynı sonuca götürebildiği için geri dönüşü otomatik eşdeğer değildir.\n\nÖnce köklü terimi yalnız bırak; iki tarafın işaretini incele; sonra uygun kuvvet al. Birden fazla kök varsa bu işlemi kademeli yap. Adayları yalnız karesi alınmış son denklemde değil ilk köklü denklemde dene. Koşulu sağlamayan adaya sahte kök demek, bütün cebir yanlış demek değildir; dönüşümün aday kümesini genişletmiş olduğunu anlatır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Özel kökü açarken eşleşen toplam ve çarpımı bul"
+              },
+              "text": {
+                "tr": "m,n≥0 için(√m+√n)²=m+n+2√(mn). Bu nedenle √(a+2√b) yapısında m+n=a ve mn=b sağlayan sayılar aranabilir; dış kök esas değeri seçer. √(7+4√3) için m=4,n=3 uygundur ve sonuç 2+√3'tür. Yapıyı iki ayrı köke dağıtmak yerine özdeşliği tersten kullanmış oluruz.\n\nEksi durumda √(a−2√b)=|√m−√n|'dir; m≥n seçilirse mutlak değer √m−√n olur. Kök içinin gerçek ve negatif olmayan kaldığını kontrol et. Böyle bir eşleşme her verilen a,b için basit tam sayılarla bulunmayabilir; bulunamaması sayı tanımsızdır demek değildir. Yöntem seçiminde önce sorunun gerçekten bu özdeşlik yapısında olup olmadığına bak."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kök işareti ile kuvvet denklemini ayrı oku"
+              },
+              "text": {
+                "tr": "n, en az 2 olan bir tam sayı, a gerçek sayı olsun. Çift n için ⁿ√a yalnız a≥0 iken gerçektir ve n’inci kuvveti a olan negatif olmayan değeri gösterir. Örneğin ∜81=3. x⁴=81 denkleminde −3 ve 3 ayrı çözümlerdir, çünkü ikisinin de dördüncü kuvveti 81’dir. Çift derecede a=0 için tek çözüm x=0, a<0 için gerçek çözüm yoktur.\n\nTek n için xⁿ gerçek sayılarda sürekli artar ve tüm gerçek değerleri alır. Her a için yalnız bir x vardır. ∛(−64)=−4 ve x³=−64 denkleminin tek çözümü −4’tür. Pozitif a için a^(m/n)=(ⁿ√a)ᵐ, m bir tam sayıdır. Örneğin 27^(−2/3)=(∛27)⁻²=3⁻²=1/9. Negatif üs, sıfıra bölmeme koşulu getirir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kök derecelerini eşitlemeden önce işareti gör"
+              },
+              "text": {
+                "tr": "Küpkök içindeki tam küp dışarı çıkar. ∛128+∛54=4∛2+3∛2=7∛2. 128=64·2 ve 54=27·2 olduğu için her iki terimde de ortak birim ∛2’dir. Bir terim karekök, öbürü küpkök olsaydı benzer terim kuralı bu biçimde çalışmazdı.\n\nPozitif kök içleri için farklı dereceleri ortak dereceye taşı. √3·∛3=3^(1/2+1/3)=3^(5/6)=⁶√243. Ortak derece 6, 2 ile 3’ün en küçük ortak katıdır. Eşdeğer yazım √3=⁶√27 ve ∛3=⁶√9 verir. Negatif bir küpkökü bu yolla çift dereceye çevirirsen işaret kaybolur: ∛(−8)=−2 iken ⁶√64=2. Önce ∛(−8)=−∛8 biçiminde işareti dışarı alabilirsin."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kareye tamamlayıp adayı özgün denklemde denetle"
+              },
+              "text": {
+                "tr": "√(x+6)=x−2 için kök içi x≥−6, negatif olmayan sağ taraf x≥2 ister. Birlikte x≥2 gerekir. Kare alıp düzenleyince x²−5x=2 kalır. (2x−5)²=4x²−20x+25 olduğundan iki tarafı 4 ile çarp ve ikisine 25 ekle. Böylece (2x−5)²=33 elde edilir.\n\n2x−5=±√33 ve x=(5±√33)/2. √33>1 olduğu için eksi aday x≥2 şartını sağlamaz. Artı adayda x−2=(1+√33)/2>0 ve (x−2)²=(17+√33)/2=x+6 olur. Dolayısıyla esas karekök gerçekten x−2’dir. Genel olarak √f(x)=g(x) için g(x)≥0 ile f(x)=g(x)² birlikte özgün eşitliği sağlar. Bu iki koşul sağlandığında f(x)≥0 kendiliğinden gelir."
+              }
+            },
+            {
+              "title": {
+                "tr": "İşlem seçimi için kısa kontrol"
+              },
+              "text": {
+                "tr": "Sadeleştirmede en büyük tam kuvvet çarpanını ara. Toplama ve çıkarmada önce kökleri sadeleştir. Hem derece hem kalan kök içi aynıysa katsayıları birleştir. Pozitif köklü bir sayıyı konumlandırmak için komşu tam kareleri kullan. 49<58<64 olduğu için 7<√58<8.\n\nKök paydadaysa önce tanım ve sıfır kontrolü yap. Tek kök için aynı kökle, iki terim için sıfırdan farklı eşlenikle payı ve paydayı çarp. Sıralamada önce işaretleri belirle. Köklü denklemde kökü yalnız bırak, işaret koşulunu yaz, uygun kuvveti al ve sonucu özgün eşitliğe koy. A√B biçiminde pozitif kenar ve alan verilirse A²B=alan eşitliğinden başla."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kök çıkarma, benzer terim, derece ve bölüm"
+              },
+              "text": {
+                "tr": "Her satırdaki ilk işlemi seçmeden önce veriyi oku. Yanındaki örnek aynı kuralın dayandığı koşulu görünür kılar."
+              }
+            },
+            {
+              "title": {
+                "tr": "Sıralama, eşlenik, denklem ve alan"
+              },
+              "text": {
+                "tr": "Sonucu hızlandıran işlem, ancak dayandığı koşulu sağladığında geçerlidir. Özellikle sıfır, negatif işaret ve doğal sayı kısıtlarına bak."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "tyt-geo-dortgen-hiyerarsi-032",
+        "after": "6326e0e78df8f24d465ba86c212147b3966f8f8b6ee4dc42bb13e829e2a6db7a",
+        "prior": {
+          "source": "MEBİ TYT Matematik Konu Özetleri: Dörtgenler ve Özellikleri, Özel Dörtgenler (basılı 140–141/PDF 142–143); Aurelia Tüm Geometri Özeti PDF 8. Kaynak kavramlarından yazılmış özgün anlatım ve öğretim soruları.",
+          "sections": [
+            {
+              "title": "Dört köşe, iki köşegen ve bir kapalı çevre",
+              "paragraphs": [
+                "Dörtgeni adlandırırken köşeleri çevre boyunca sırayla yaz: ABCD dörtgeninde kenarlar AB, BC, CD, DA; köşegenler AC veBD’dir. Birbirini kesen papyon çizimini bu dersteki basit dörtgenler sınıfına katmayız. Herhangi üç köşenin aynı doğru üzerinde olmadığı, kenarların yalnız komşu uçlarda birleştiği durumları inceleriz.",
+                "Dışbükey dörtgenin bütün iç açıları 180°den küçüktür ve iki köşegen de içeride kalır. İçbükey dörtgende bir iç açı 180°den büyüktür. Çizimdeki küçük boşluğu ölçüp iç açı yerine koymak hatalıdır; hangi bölgenin şeklin içinde kaldığını belirle."
+              ]
+            },
+            {
+              "title": "360° toplamının gerekçesi",
+              "paragraphs": [
+                "Dışbükey bir dörtgende bir köşegen şekli iki üçgene böler. İki üçgenin açıları birlikte dörtgenin dört iç açısını verir; toplam 180°+180°=360°dir. Basit içbükey dörtgende uygun iç köşegenle yine iki üçgen oluşur ve iç açı toplamı 360°kalır.",
+                "Dışbükeyde çevre boyunca aynı yönde seçilen birer dış açının toplamı da 360°dir. Dışbükey olmak bütün açıların eşit olduğunu söylemez. Dört iç açı eşitse her biri 90°olur; şekil dikdörtgendir, ama kare demek için kenar eşitliği de gerekir."
+              ]
+            },
+            {
+              "title": "Sınıfları birbiri içinde oku",
+              "paragraphs": [
+                "Bu derste MEBİ’nin kapsayıcı tanımı kullanılır: en az bir çift karşı kenarı paralel olan dörtgen yamuktur. İki karşı kenar çifti paralelse paralelkenardır; bu yüzden her paralelkenar aynı zamanda yamuktur. Bazı kaynaklar yamuğu yalnız bir paralel kenar çiftiyle sınırlar; böyle bir soruda verilen tanım ayrıca okunmalıdır.",
+                "Dikdörtgen dört dik açılı paralelkenardır. Eşkenar dörtgen dört eş kenarlı paralelkenardır. Kare ikisinin ortak özel durumudur: dört kenarı ve dört açısı eşittir. Eşkenar dörtgen aynı zamanda deltoiddir. Bir kareye dikdörtgen demek yanlış değildir; bu sözcük ek özelliği yok saymaz, daha geniş sınıfı belirtir."
+              ]
+            },
+            {
+              "title": "Deltoidde komşu eş çiftleri bul",
+              "paragraphs": [
+                "Dışbükey ABCD dörtgeninde AB=AD veCB=CD ise şekil bir deltoiddir. Eş uzunluklar komşu kenarlardadır; yalnız AB=CD veBC=AD yazmak deltoid tanımı değil, karşı kenar eşitliğidir. ABC ileADC üçgenleri üç kenardan eştir.",
+                "AC doğrusu simetri eksenidir; A veC açılarını ikiye böler, BD’ye diktir veBD’yi ortalar. B ileD açıları eşittir. BD’nin AC’yi ortalaması veya köşegenlerin eşit olması genel olarak gerekmez. Köşegenler dik olduğu için alan S=AC·BD/2’dir. AB=a, BC=b ise çevre 2(a+b) olur."
+              ]
+            },
+            {
+              "title": "Paralel tabanlar açıları ve alanı bağlar",
+              "paragraphs": [
+                "AB∥CD olan dışbükey yamukta AB veCD tabandır. Bu tabanlar arasındaki dik uzaklık h yüksekliktir; eğik yan kenar h değildir. AD yan kenarındaki A veD iç açıları, BC yan kenarındaki B veC iç açıları bütünlerdir. Genel yamukta aynı tabanın iki açısı eşit olmak zorunda değildir.",
+                "Taban uzunlukları a veb ise alan S=(a+b)h/2 olur. İki eş yamuğu ters yönlerle birleştirdiğinde tabanı a+b, yüksekliği h olan paralelkenar oluşur; bir yamuğun alanı bunun yarısıdır. Alanla çevreyi ayır: çevre için dört kenar gerekir, taban ve yükseklik tek başına yetmez."
+              ]
+            },
+            {
+              "title": "Orta taban ve köşegenlerdeki küçük parçalar",
+              "paragraphs": [
+                "Yamuğun paralel olmayan yan kenarlarının orta noktalarını birleştiren EF parçası tabanlara paraleldir ve orta tabandır. Uzunluğu(a+b)/2’dir. Bu yüzden alanı orta taban·yükseklik olarak da yazabilirsin. Orta taban köşegen değildir; uçları karşı köşeler değil, kenar orta noktalarıdır.",
+                "Alt taban a≥b üst taban olsun. Köşegenlerin orta tabanla kesiştiği iki nokta arasındaki parça(a−b)/2, orta tabanın iki ucunda kalan parçalar b/2’dir. Toplam b/2+(a−b)/2+b/2=(a+b)/2 olur. a=b olduğunda ortadaki parça sıfırdır; paralelkenarın köşegenleri aynı orta noktada buluşur."
+              ]
+            },
+            {
+              "title": "Dik ve ikizkenar yamukta yardımcı dikmeler",
+              "paragraphs": [
+                "Dik yamukta tabanlara dik olan yan kenar yüksekliktir. Diğer yan kenar h ve|a−b| ile dik üçgen oluşturur; uzunluğu√(h²+(a−b)²) olur. Çizimde diklik verilmeden bir yan kenarı yükseklik sayma.",
+                "İkizkenar yamukta yan kenarlar eşittir; aynı tabana komşu açılar ve iki köşegen eşittir. Tabanlar a≥b, yan kenar ℓ ise kısa tabanın uçlarından dikmeler inince fark ikiye bölünür:(a−b)/2. Pisagor’dan h=√(ℓ²−((a−b)/2)²) çıkar. Yükseklik pozitif olmalıdır. Paralelkenar sınırında ek dik açı koşulu yoksa eş yan kenar tek başına klasik ikizkenar yamuk simetrisini zorunlu kılmaz; bu paragrafta a>b durumu kullanılır."
+              ]
+            },
+            {
+              "title": "Köşegenleri dik olan her şekil kare değildir",
+              "paragraphs": [
+                "Dışbükey dörtgende köşegenler AC veBD O’da dik kesişsin. Dört küçük dik üçgen için Pisagor yazıldığında AB²=AO²+BO², BC²=CO²+BO², CD²=CO²+DO² veDA²=AO²+DO² olur. Böylece AB²+CD²=BC²+DA² elde edilir.",
+                "Bu kareler toplamı eşitliği köşegenleri dik olan genel dörtgene aittir; bütün kenarların veya köşegenlerin eşit olduğu anlamına gelmez. Dik köşegenli dışbükey dörtgenin alanı AC·BD/2’dir. Köşegenler arasında θ açısı varsa genel alan AC·BD·sinθ/2 olur;θ=90°için sinθ=1’e iner."
+              ]
+            },
+            {
+              "title": "Kenar orta noktaları gizli bir paralelkenar kurar",
+              "paragraphs": [
+                "Dışbükey ABCD dörtgeninde E, F, G, H sırasıyla AB, BC, CD, DA’nın orta noktaları olsun. ABC üçgeninin orta tabanından EF∥AC veEF=AC/2 bulunur. ADC üçgeninden HG∥AC veHG=AC/2 gelir. Benzer biçimde FG veEH, BD’ye paralel veBD/2 uzunluğundadır.",
+                "Bu nedenle EFGH her zaman paralelkenardır; ilk dörtgenin de paralelkenar olması gerekmez. Çevresi AC+BD, alanı ilk dörtgenin alanının yarısıdır. Köşegenler dikse orta noktalar şekli dikdörtgen; köşegenler eşitse eşkenar dörtgen olur. Hem dik hem eş köşegenler varsa orta noktalar şekli karedir."
+              ]
+            },
+            {
+              "title": "Açıortaylarda hangi açıları yarıya böldüğünü yaz",
+              "paragraphs": [
+                "Dışbükey ABCD dörtgeninde B veC iç açılarının açıortayları E’de kesişsin. BEC üçgeninde B açısı B/2, C açısı C/2’dir. O halde ∠BEC=180°−(B+C)/2=(A+D)/2 olur. Formülün harfleri, hangi komşu iki köşenin açıortayını aldığınla birlikte okunmalıdır.",
+                "Karşı iki köşenin açıortay doğruları için küçük açı, diğer karşı açılar farkının mutlak değerinin yarısına bağlıdır. Örneğin B veD açıortay doğruları kesişiyorsa küçük açı |A−C|/2’dir. A=C sınırında doğrular paralel veya çakışık olabilir; her durumda varmış gibi bir kesişim noktası tanımlama. Şekil içindeki belirli bir geniş açıyı soruyorsa küçük açının bütünlerine geçmek gerekebilir."
+              ]
+            },
+            {
+              "title": "Yamukta köşegen oranı ve benzerlik",
+              "paragraphs": [
+                "AB∥CD, AB=a, CD=b olan dışbükey yamukta köşegenler O’da kesişsin. AOB ileCOD üçgenlerinin tepe açıları ters, açı çiftleri paralellikten eşittir; iki üçgen benzerdir. Karşılıkları A↔C, B↔D olduğundan AO/OC=BO/OD=a/b’dir.",
+                "Oranı rastgele çaprazlamadan önce büyük ve küçük tabanı aynı sırayla yaz. a=b olduğunda oran 1 olur ve köşegenler birbirini ortalar; bu paralelkenar durumudur. Genel yamukta bir köşegenin iki parçasının eşit olduğunu varsayma. Orta tabanla kesişim noktaları ile iki köşegenin kendi kesişimini de ayrı adlandır."
+              ]
+            },
+            {
+              "title": "Çember koşulları ve kullanmadan önce kontrol",
+              "paragraphs": [
+                "Dışbükey bir dörtgenin bütün köşeleri aynı çember üzerindeyse çemberseldir; karşı iç açıları toplam 180°dir. Bir dış açı da karşı köşedeki iç açıya eşittir. Bu özellik, üzerinde çember çizilmemiş herhangi bir dörtgende kendiliğinden kullanılamaz.",
+                "Bir çember dışbükey dörtgenin dört kenarına içeriden teğetse aynı köşeden çıkan teğet parçaları eşittir. Buradan karşı kenar toplamları AB+CD=BC+DA ve alan S=r·s çıkar; r içteğet çemberin yarıçapı, s çevrenin yarısıdır. Yarıçapı bulurken çember merkezinin kenarlara dik uzaklıklarının eşitliğini kullan. Çevre bilgisi tek başına yarıçapın sayısal değerini vermez."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "koklu-sayilar",
+        "after": "6d76ef9725e17df200fefa05623871503f322201d7fe00745a379e0b8a75ad11",
+        "prior": {
+          "sections": [
+            {
+              "title": "Karekök bir değer, denklem iki çözüm verebilir",
+              "paragraphs": [
+                "a≥0 için √a, karesi a olan sayıların negatif olmayanıdır; esas karekök denir. √49=7'dir. Buna karşılık x²=49 denkleminin iki gerçek çözümü x=7 ve x=−7'dir. Kök işaretinin sonucu ile denklemin çözüm kümesi farklı sorulardır; √a'nın önüne kendiliğinden± eklenmez.",
+                "Alanı a birim² olan karenin kenar uzunluğu √a birimdir; uzunluk negatif olamaz. Atölyede alanı değiştirirken karenin kenarı doğrusal değil karekök ilişkisiyle değişir. Alan dört katına çıkarsa kenar iki katına çıkar. Bu model, esas kökün neden tek ve negatif olmayan değer seçtiğini geometrik olarak görünür kılar."
+              ]
+            },
+            {
+              "title": "Kök derecesi ve gerçek sayı koşulu",
+              "paragraphs": [
+                "Kök derecesi n,2 veya daha büyük bir tam sayıdır. Çift dereceli gerçek kökte kök içi ≥0 olmalıdır; √(−4) gerçek sayı değildir. Tek dereceli kökler negatif değerlerde de tanımlıdır:∛(−8)=−2. Negatif sayının çift dereceden kökünü gerçek sayı gibi kullanarak işlem kuralı uygulama.",
+                "Köklü ifade paydadaysa hem kökün tanımı hem paydanın sıfır olmaması gerekir. √(x−1)/√(5−x) için x−1≥0 ve 5−x>0 birlikte x∈[1,5) verir. İlk kökün sıfır olması serbest, paydadakinin sıfır olması yasaktır. Tanım kümesini işlem sonunda değil başta yazmak sadeleştirmede kaybolan yasak değerleri korur."
+              ]
+            },
+            {
+              "title": "Kareden çıkarken mutlak değer kalır",
+              "paragraphs": [
+                "Gerçek A için √(A²)=|A|; çünkü esas karekök negatif değildir. A=−6 iken √36=6, A'nın kendisi −6 değildir. Çift derece n içinⁿ √(Aⁿ)=|A|; tek derece için aynı yapı A verir. Kuralın hangi derecede olduğunu söylemeden kökle kuvveti silmek işareti kaybettirir.",
+                "√((x−2)²) ifadesi x≥2'de x−2, x<2'de 2−x'tir. Atölyede negatif bir x seçip kare alanından geri döndüğünde kenarın |x| olduğunu izle. Buradaki x işaretli bir cebirsel sayı, karenin kenarı ise uzunluktur; ikisinin aynı sembolle temsil edilmesi ancak x≥0 koşuluyla yapılabilir."
+              ]
+            },
+            {
+              "title": "Tam kare çarpanı dışarı çıkar",
+              "paragraphs": [
+                "√72=√(36·2)=6√2. Kök içini en büyük tam kare çarpan ile kalan biçiminde ayırmak en sade gösterime hızlı ulaştırır. Küçük bir kareyle başlamak da doğrudur:√72=√(4·18)=2√18; fakat √18'in hâlâ sadeleşmesi gerekir. Dışarı çıkan sayının karesi, içeriden çıkardığın çarpanı vermelidir.",
+                "Pozitif katsayıyı kök içine alırken karesini al:3√5=√45. Negatif katsayıyı kare içine gizleyip işaretini yok etme:−3√5=−√45'tir. Kök içinden değişkenli kare çarpan çıkarırken √(x²y)=|x|√y için y≥0 koşulunu koru. Sayısal yöntem, değişkende mutlak değer ve tanım denetimine ihtiyaç duyar."
+              ]
+            },
+            {
+              "title": "Toplamada önce benzer kökü oluştur",
+              "paragraphs": [
+                "a√m+b√m=(a+b)√m; burada ortak kök yapısı aynıdır. √12+√27 önce 2√3+3√3'e, sonra 5√3'e dönüşür. √2+√3 için bu birleştirme yapılamaz; kök içlerini toplayıp √5 yazmak geçersizdir. Bir terimin kök dışı katsayısının görünmemesi 1 olduğu anlamına gelir.",
+                "Çıkarmada da kökleri önce sadeleştir ve katsayıların işaretlerini koru. 5√12−2√27=10√3−6√3=4√3. Sonucu kontrol etmek için yaklaşık değer veya karesini alma kullanılabilir; fakat karesini alırken çapraz terimleri unutma.(√a+√b)²=a+b+2√(ab), yalnız a+b değildir."
+              ]
+            },
+            {
+              "title": "Çarpma ve bölmede tanımı koru",
+              "paragraphs": [
+                "a,b≥0 için √a·√b=√(ab). a≥0,b>0 için √a/√b=√(a/b). Koşullar, gerçek kareköklerin ve bölümün tanımlı olmasını sağlar. √2·√8=√16=4'tür. √(−1)·√(−1) için bu gerçek sayı kuralını kullanıp yanlış sonuca gitme; ilk iki ifade zaten bu alanda tanımlı değildir.",
+                "Katsayıları ve kök içlerini ayrı çarp: (2√3)(5√6)=10√18=30√2. Farklı kök derecelerini eşitleme işlemi özellikle negatif içlerde işaret sorunu çıkarabilir; bu derste böyle genişletmeler pozitif içlerle sınırlanır. İç içe kökte derece çarpımı, pozitif tanım koşulları altında kullanılabilir; parantezin hangi bölümü kapsadığı açık olmalıdır."
+              ]
+            },
+            {
+              "title": "Eşlenik değeri değil gösterimi değiştirir",
+              "paragraphs": [
+                "Paydayı rasyonelleştirmek için payı ve paydayı aynı sıfırdan farklı ifadeyle çarparız; aslında 1 ile çarpmış oluruz. 3/√5=3√5/5. İki terimli √7−2 paydasında eşlenik √7+2 seçilirse çarpım 7−4=3 olur. Böylece 3/(√7−2)=√7+2 elde edilir.",
+                "Bu derste eşlenik sözcüğü, karekök içeren iki terimde ortadaki işaretin değiştirilmesini anlatır: (a+√b)(a−√b)=a²−b. Payda ve çarpan sıfır olmamalıdır. Rasyonelleştirme zorunlu bir sayı değişimi değildir; eşdeğer yazım sağlar. Soru hangi biçimi istiyorsa o biçimde yanıtla ve sadeleşen ifadenin başlangıçtaki tanım kümesini sakla."
+              ]
+            },
+            {
+              "title": "Sıralamada pozitiflik ve tam kare aralığı",
+              "paragraphs": [
+                "25<30<36 olduğundan 5<√30<6. Karekök, negatif olmayan sayılarda artandır; kök içlerinin sırası korunur. 3√2 ile 2√5 pozitif olduğundan karelerini karşılaştırabiliriz:18<20, yani 3√2<2√5. Her iki tarafın negatif olmadığını söylemek yöntemin parçasıdır.",
+                "Negatif iki sayıda kareleri karşılaştırmak aynı yönü korumaz; −5<−2 fakat 25>4'tür. Farklı derecelerde kökler için iç değer 1'in hangi yanında olduğuna dikkat et:8'in karekökü küpkökünden büyükken 1/8'in karekökü küpkökünden küçüktür. Kök derecesi büyürse değer daima küçülür gibi koşulsuz bir ezber kullanma."
+              ]
+            },
+            {
+              "title": "Köklü denklemde önce koşul, sonra kare",
+              "paragraphs": [
+                "√(2x+3)=x denkleminde sol taraf ≥0 olduğundan x≥0 gerekir. Kare almak x²=2x+3 verir; bundan çıkan −1 ve 3 adaylarından yalnız 3 ön koşulu ve özgün eşitliği sağlar. Kare alma iki farklı işareti aynı sonuca götürebildiği için geri dönüşü otomatik eşdeğer değildir.",
+                "Önce köklü terimi yalnız bırak; iki tarafın işaretini incele; sonra uygun kuvvet al. Birden fazla kök varsa bu işlemi kademeli yap. Adayları yalnız karesi alınmış son denklemde değil ilk köklü denklemde dene. Koşulu sağlamayan adaya sahte kök demek, bütün cebir yanlış demek değildir; dönüşümün aday kümesini genişletmiş olduğunu anlatır."
+              ]
+            },
+            {
+              "title": "Özel kökü açarken eşleşen toplam ve çarpımı bul",
+              "paragraphs": [
+                "m,n≥0 için(√m+√n)²=m+n+2√(mn). Bu nedenle √(a+2√b) yapısında m+n=a ve mn=b sağlayan sayılar aranabilir; dış kök esas değeri seçer. √(7+4√3) için m=4,n=3 uygundur ve sonuç 2+√3'tür. Yapıyı iki ayrı köke dağıtmak yerine özdeşliği tersten kullanmış oluruz.",
+                "Eksi durumda √(a−2√b)=|√m−√n|'dir; m≥n seçilirse mutlak değer √m−√n olur. Kök içinin gerçek ve negatif olmayan kaldığını kontrol et. Böyle bir eşleşme her verilen a,b için basit tam sayılarla bulunmayabilir; bulunamaması sayı tanımsızdır demek değildir. Yöntem seçiminde önce sorunun gerçekten bu özdeşlik yapısında olup olmadığına bak."
+              ]
+            },
+            {
+              "title": "Kök işareti ile kuvvet denklemini ayrı oku",
+              "paragraphs": [
+                "n, en az 2 olan bir tam sayı, a gerçek sayı olsun. Çift n için ⁿ√a yalnız a≥0 iken gerçektir ve n’inci kuvveti a olan negatif olmayan değeri gösterir. Örneğin ∜81=3. x⁴=81 denkleminde −3 ve 3 ayrı çözümlerdir, çünkü ikisinin de dördüncü kuvveti 81’dir. Çift derecede a=0 için tek çözüm x=0, a<0 için gerçek çözüm yoktur.",
+                "Tek n için xⁿ gerçek sayılarda sürekli artar ve tüm gerçek değerleri alır. Her a için yalnız bir x vardır. ∛(−64)=−4 ve x³=−64 denkleminin tek çözümü −4’tür. Pozitif a için a^(m/n)=(ⁿ√a)ᵐ, m bir tam sayıdır. Örneğin 27^(−2/3)=(∛27)⁻²=3⁻²=1/9. Negatif üs, sıfıra bölmeme koşulu getirir."
+              ]
+            },
+            {
+              "title": "Kök derecelerini eşitlemeden önce işareti gör",
+              "paragraphs": [
+                "Küpkök içindeki tam küp dışarı çıkar. ∛128+∛54=4∛2+3∛2=7∛2. 128=64·2 ve 54=27·2 olduğu için her iki terimde de ortak birim ∛2’dir. Bir terim karekök, öbürü küpkök olsaydı benzer terim kuralı bu biçimde çalışmazdı.",
+                "Pozitif kök içleri için farklı dereceleri ortak dereceye taşı. √3·∛3=3^(1/2+1/3)=3^(5/6)=⁶√243. Ortak derece 6, 2 ile 3’ün en küçük ortak katıdır. Eşdeğer yazım √3=⁶√27 ve ∛3=⁶√9 verir. Negatif bir küpkökü bu yolla çift dereceye çevirirsen işaret kaybolur: ∛(−8)=−2 iken ⁶√64=2. Önce ∛(−8)=−∛8 biçiminde işareti dışarı alabilirsin."
+              ]
+            },
+            {
+              "title": "Kareye tamamlayıp adayı özgün denklemde denetle",
+              "paragraphs": [
+                "√(x+6)=x−2 için kök içi x≥−6, negatif olmayan sağ taraf x≥2 ister. Birlikte x≥2 gerekir. Kare alıp düzenleyince x²−5x=2 kalır. (2x−5)²=4x²−20x+25 olduğundan iki tarafı 4 ile çarp ve ikisine 25 ekle. Böylece (2x−5)²=33 elde edilir.",
+                "2x−5=±√33 ve x=(5±√33)/2. √33>1 olduğu için eksi aday x≥2 şartını sağlamaz. Artı adayda x−2=(1+√33)/2>0 ve (x−2)²=(17+√33)/2=x+6 olur. Dolayısıyla esas karekök gerçekten x−2’dir. Genel olarak √f(x)=g(x) için g(x)≥0 ile f(x)=g(x)² birlikte özgün eşitliği sağlar. Bu iki koşul sağlandığında f(x)≥0 kendiliğinden gelir."
+              ]
+            },
+            {
+              "title": "İşlem seçimi için kısa kontrol",
+              "paragraphs": [
+                "Sadeleştirmede en büyük tam kuvvet çarpanını ara. Toplama ve çıkarmada önce kökleri sadeleştir. Hem derece hem kalan kök içi aynıysa katsayıları birleştir. Pozitif köklü bir sayıyı konumlandırmak için komşu tam kareleri kullan. 49<58<64 olduğu için 7<√58<8.",
+                "Kök paydadaysa önce tanım ve sıfır kontrolü yap. Tek kök için aynı kökle, iki terim için sıfırdan farklı eşlenikle payı ve paydayı çarp. Sıralamada önce işaretleri belirle. Köklü denklemde kökü yalnız bırak, işaret koşulunu yaz, uygun kuvveti al ve sonucu özgün eşitliğe koy. A√B biçiminde pozitif kenar ve alan verilirse A²B=alan eşitliğinden başla."
+              ]
+            },
+            {
+              "title": "Kök çıkarma, benzer terim, derece ve bölüm",
+              "paragraphs": [
+                "Her satırdaki ilk işlemi seçmeden önce veriyi oku. Yanındaki örnek aynı kuralın dayandığı koşulu görünür kılar."
+              ],
+              "table": {
+                "headers": [
+                  "İlk hamle",
+                  "Burada çalışır",
+                  "Benzer görünen hata",
+                  "Başka bir durumda"
+                ],
+                "rows": [
+                  [
+                    "Tam kuvveti kökten çıkar",
+                    "√80=4√5, çünkü 80=16·5.",
+                    "x=−7 için √(x²)=7. Burada dışarı |x| çıkar.",
+                    "80 cm² karede kenar 4√5 cm, çevre 16√5 cm."
+                  ],
+                  [
+                    "Benzer kökü oluştur",
+                    "√28+√63=2√7+3√7=5√7.",
+                    "√28+√63 ifadesinin karesi 175 olur. √91’in karesi 91’dir.",
+                    "2√7 m ve 3√7 m uzunluğundaki iki şeridi uç uca koyunca 5√7 m elde edilir."
+                  ],
+                  [
+                    "Ortak dereceye geç",
+                    "√5·∛5=⁶√(5⁵). İki iç değer pozitiftir.",
+                    "√5·∛5 için √25 yazmak küpkökü karekök sayar.",
+                    "Kenarları √5 cm ve ∛5 cm olan dikdörtgenin alanı ⁶√(5⁵) cm²’dir."
+                  ],
+                  [
+                    "Bölüm ve tek köklü payda",
+                    "√63/√7=3. 2/√7=(2√7)/7.",
+                    "b=−7 iken b≠0 sağlanır ama √b gerçek değildir. √a/√b için b>0 gerekir.",
+                    "4 L sıvının √7 L’lik kapa oranı 4√7/7’dir. √7<4<2√7 olduğundan bir kap tam dolar."
+                  ]
+                ]
+              }
+            },
+            {
+              "title": "Sıralama, eşlenik, denklem ve alan",
+              "paragraphs": [
+                "Sonucu hızlandıran işlem, ancak dayandığı koşulu sağladığında geçerlidir. Özellikle sıfır, negatif işaret ve doğal sayı kısıtlarına bak."
+              ],
+              "table": {
+                "headers": [
+                  "İlk hamle",
+                  "Burada çalışır",
+                  "Benzer görünen hata",
+                  "Başka bir durumda"
+                ],
+                "rows": [
+                  [
+                    "Sıralamada işareti ayır",
+                    "3√6 ve 4√3 pozitiftir. Kareleri 54>48, dolayısıyla 3√6>4√3.",
+                    "−3√6 ile 4√3 zıt işaretlidir. Karelere bakmadan −3√6<4√3 sonucuna ulaşılır.",
+                    "54 cm² alanlı karenin kenarı 48 cm² alanlı kareninkinden uzundur."
+                  ],
+                  [
+                    "Asıl paydayı ve eşleniği denetle",
+                    "1/(5+√6)=(5−√6)/19. İki çarpan da sıfırdan farklıdır.",
+                    "1/(4+√16)=1/8. Eşlenik sıfırdır, bu yüzden 0/0 ile genişletme yapılamaz.",
+                    "Kenarları √13−√5 ve √13+√5 olan dikdörtgenin alanı 13−5=8 birim²’dir."
+                  ],
+                  [
+                    "Kare al ve geri dön",
+                    "√(x+20)=x için x≥0. Kareli denklem (x−5)(x+4)=0 verir. Yalnız 5 ilk eşitliği sağlar.",
+                    "−4 karesi alınmış eşitliği sağlar. Özgün denklemde √16=4≠−4 olduğu için elenir.",
+                    "Pozitif bir uzunluğun sayısal değeri L=√(L+20) modelini sağlıyorsa uzunluk 5 birimdir."
+                  ],
+                  [
+                    "Alanı veren kare bölenleri tara",
+                    "A²B=252=2²·3²·7 için A=1, 2, 3, 6 ve B=252, 63, 28, 7 sırasıyla eşleşir.",
+                    "B’yi baştan kare çarpansız seçmek üç geçerli gösterimi atlar.",
+                    "Alanı 252 birim² olan bir karenin kenarı √252, 2√63, 3√28 veya 6√7 olarak yazılabilir."
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-geo-dortgen-hiyerarsi-032",
+        "after": "dba38a02dceec5baf3efaa67faf777140f8fa8756849f4035270e66ed4d61c5f",
+        "prior": {
+          "source": "MEBİ TYT Matematik Konu Özetleri: Dörtgenler ve Özellikleri, Özel Dörtgenler (basılı 140–141/PDF 142–143); Aurelia Tüm Geometri Özeti PDF 8. Kaynak kavramlarından yazılmış özgün anlatım ve öğretim soruları.",
+          "sections": [
+            {
+              "title": "Dörtgen ve sınıflar",
+              "text": [
+                "Basit dörtgende iç açı toplam 360°. Dışbükeyde bütün iç açılar 180°den küçük. Bu derste yamuk:en az bir paralel karşı kenar çifti. Kare, hem dikdörtgen hem eşkenar dörtgendir."
+              ]
+            },
+            {
+              "title": "Yamuk",
+              "text": [
+                "Tabanlar a, b; dik yükseklik h. Orta taban(a+b)/2, alan(a+b)h/2. Aynı yan kenarın iki iç açısı toplam 180°.",
+                "a≥b iken orta tabanda köşegenler arasındaki parça(a−b)/2; uç parçalar b/2. Köşegen kesişiminde AO/OC=BO/OD=a/b."
+              ]
+            },
+            {
+              "title": "Deltoid ve dik köşegen",
+              "text": [
+                "AB=AD, CB=CD ise AC⊥BD; AC, BD’yi ortalar. Alan AC·BD/2. Dik köşegenli genel dörtgende AB²+CD²=BC²+DA²."
+              ]
+            },
+            {
+              "title": "Orta noktalar ve açıortay",
+              "text": [
+                "Kenar orta noktaları paralelkenar kurar; çevresi AC+BD, alanı eski alanın yarısıdır. B, C iç açıortayları E’de kesişiyorsa ∠BEC=(A+D)/2."
+              ]
+            },
+            {
+              "title": "Ek koşulu önce oku",
+              "text": [
+                "İkizkenar yamukta farklı tabanlar a>b için h=√(ℓ²−((a−b)/2)²). Çembersel dörtgende karşı açılar 180°. İçteğet çemberde AB+CD=BC+DA ve S=r·s; r yarıçap, s yarı çevredir."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "detail-208",
+        "after": "48107dc4bceb031e192be5e247714dcd901d2174bc73a8ceea62553475268a40",
+        "prior": {
+          "sections": [
+            {
+              "title": "Karekök bir değer, denklem iki çözüm verebilir",
+              "text": [
+                "a≥0 için √a, karesi a olan sayıların negatif olmayanıdır; esas karekök denir. √49=7'dir. Buna karşılık x²=49 denkleminin iki gerçek çözümü x=7 ve x=−7'dir. Kök işaretinin sonucu ile denklemin çözüm kümesi farklı sorulardır; √a'nın önüne kendiliğinden± eklenmez."
+              ]
+            },
+            {
+              "title": "Kök derecesi ve gerçek sayı koşulu",
+              "text": [
+                "Kök derecesi n,2 veya daha büyük bir tam sayıdır. Çift dereceli gerçek kökte kök içi ≥0 olmalıdır; √(−4) gerçek sayı değildir. Tek dereceli kökler negatif değerlerde de tanımlıdır:∛(−8)=−2. Negatif sayının çift dereceden kökünü gerçek sayı gibi kullanarak işlem kuralı uygulama."
+              ]
+            },
+            {
+              "title": "Kareden çıkarken mutlak değer kalır",
+              "text": [
+                "Gerçek A için √(A²)=|A|; çünkü esas karekök negatif değildir. A=−6 iken √36=6, A'nın kendisi −6 değildir. Çift derece n içinⁿ √(Aⁿ)=|A|; tek derece için aynı yapı A verir. Kuralın hangi derecede olduğunu söylemeden kökle kuvveti silmek işareti kaybettirir."
+              ]
+            },
+            {
+              "title": "Tam kare çarpanı dışarı çıkar",
+              "text": [
+                "√72=√(36·2)=6√2. Kök içini en büyük tam kare çarpan ile kalan biçiminde ayırmak en sade gösterime hızlı ulaştırır. Küçük bir kareyle başlamak da doğrudur:√72=√(4·18)=2√18; fakat √18'in hâlâ sadeleşmesi gerekir. Dışarı çıkan sayının karesi, içeriden çıkardığın çarpanı vermelidir."
+              ]
+            },
+            {
+              "title": "Toplamada önce benzer kökü oluştur",
+              "text": [
+                "a√m+b√m=(a+b)√m; burada ortak kök yapısı aynıdır. √12+√27 önce 2√3+3√3'e, sonra 5√3'e dönüşür. √2+√3 için bu birleştirme yapılamaz; kök içlerini toplayıp √5 yazmak geçersizdir. Bir terimin kök dışı katsayısının görünmemesi 1 olduğu anlamına gelir."
+              ]
+            },
+            {
+              "title": "Çarpma ve bölmede tanımı koru",
+              "text": [
+                "a,b≥0 için √a·√b=√(ab). a≥0,b>0 için √a/√b=√(a/b). Koşullar, gerçek kareköklerin ve bölümün tanımlı olmasını sağlar. √2·√8=√16=4'tür. √(−1)·√(−1) için bu gerçek sayı kuralını kullanıp yanlış sonuca gitme; ilk iki ifade zaten bu alanda tanımlı değildir."
+              ]
+            },
+            {
+              "title": "Eşlenik değeri değil gösterimi değiştirir",
+              "text": [
+                "Paydayı rasyonelleştirmek için payı ve paydayı aynı sıfırdan farklı ifadeyle çarparız; aslında 1 ile çarpmış oluruz. 3/√5=3√5/5. İki terimli √7−2 paydasında eşlenik √7+2 seçilirse çarpım 7−4=3 olur. Böylece 3/(√7−2)=√7+2 elde edilir."
+              ]
+            },
+            {
+              "title": "Sıralamada pozitiflik ve tam kare aralığı",
+              "text": [
+                "25<30<36 olduğundan 5<√30<6. Karekök, negatif olmayan sayılarda artandır; kök içlerinin sırası korunur. 3√2 ile 2√5 pozitif olduğundan karelerini karşılaştırabiliriz:18<20, yani 3√2<2√5. Her iki tarafın negatif olmadığını söylemek yöntemin parçasıdır."
+              ]
+            },
+            {
+              "title": "Köklü denklemde önce koşul, sonra kare",
+              "text": [
+                "√(2x+3)=x denkleminde sol taraf ≥0 olduğundan x≥0 gerekir. Kare almak x²=2x+3 verir; bundan çıkan −1 ve 3 adaylarından yalnız 3 ön koşulu ve özgün eşitliği sağlar. Kare alma iki farklı işareti aynı sonuca götürebildiği için geri dönüşü otomatik eşdeğer değildir."
+              ]
+            },
+            {
+              "title": "Özel kökü açarken eşleşen toplam ve çarpımı bul",
+              "text": [
+                "m,n≥0 için(√m+√n)²=m+n+2√(mn). Bu nedenle √(a+2√b) yapısında m+n=a ve mn=b sağlayan sayılar aranabilir; dış kök esas değeri seçer. √(7+4√3) için m=4,n=3 uygundur ve sonuç 2+√3'tür. Yapıyı iki ayrı köke dağıtmak yerine özdeşliği tersten kullanmış oluruz."
+              ]
+            },
+            {
+              "title": "Kök işareti ile kuvvet denklemini ayrı oku",
+              "text": [
+                "n, en az 2 olan bir tam sayı, a gerçek sayı olsun. Çift n için ⁿ√a yalnız a≥0 iken gerçektir ve n’inci kuvveti a olan negatif olmayan değeri gösterir. Örneğin ∜81=3. x⁴=81 denkleminde −3 ve 3 ayrı çözümlerdir, çünkü ikisinin de dördüncü kuvveti 81’dir. Çift derecede a=0 için tek çözüm x=0, a<0 için gerçek çözüm yoktur."
+              ]
+            },
+            {
+              "title": "Kök derecelerini eşitlemeden önce işareti gör",
+              "text": [
+                "Küpkök içindeki tam küp dışarı çıkar. ∛128+∛54=4∛2+3∛2=7∛2. 128=64·2 ve 54=27·2 olduğu için her iki terimde de ortak birim ∛2’dir. Bir terim karekök, öbürü küpkök olsaydı benzer terim kuralı bu biçimde çalışmazdı."
+              ]
+            },
+            {
+              "title": "Kareye tamamlayıp adayı özgün denklemde denetle",
+              "text": [
+                "√(x+6)=x−2 için kök içi x≥−6, negatif olmayan sağ taraf x≥2 ister. Birlikte x≥2 gerekir. Kare alıp düzenleyince x²−5x=2 kalır. (2x−5)²=4x²−20x+25 olduğundan iki tarafı 4 ile çarp ve ikisine 25 ekle. Böylece (2x−5)²=33 elde edilir."
+              ]
+            },
+            {
+              "title": "İşlem seçimi için kısa kontrol",
+              "text": [
+                "Sadeleştirmede en büyük tam kuvvet çarpanını ara. Toplama ve çıkarmada önce kökleri sadeleştir. Hem derece hem kalan kök içi aynıysa katsayıları birleştir. Pozitif köklü bir sayıyı konumlandırmak için komşu tam kareleri kullan. 49<58<64 olduğu için 7<√58<8."
+              ]
+            },
+            {
+              "title": "Kök çıkarma, benzer terim, derece ve bölüm",
+              "text": [
+                "Her satırdaki ilk işlemi seçmeden önce veriyi oku. Yanındaki örnek aynı kuralın dayandığı koşulu görünür kılar."
+              ],
+              "table": {
+                "headers": [
+                  "İlk hamle",
+                  "Burada çalışır",
+                  "Benzer görünen hata",
+                  "Başka bir durumda"
+                ],
+                "rows": [
+                  [
+                    "Tam kuvveti kökten çıkar",
+                    "√80=4√5, çünkü 80=16·5.",
+                    "x=−7 için √(x²)=7. Burada dışarı |x| çıkar.",
+                    "80 cm² karede kenar 4√5 cm, çevre 16√5 cm."
+                  ],
+                  [
+                    "Benzer kökü oluştur",
+                    "√28+√63=2√7+3√7=5√7.",
+                    "√28+√63 ifadesinin karesi 175 olur. √91’in karesi 91’dir.",
+                    "2√7 m ve 3√7 m uzunluğundaki iki şeridi uç uca koyunca 5√7 m elde edilir."
+                  ],
+                  [
+                    "Ortak dereceye geç",
+                    "√5·∛5=⁶√(5⁵). İki iç değer pozitiftir.",
+                    "√5·∛5 için √25 yazmak küpkökü karekök sayar.",
+                    "Kenarları √5 cm ve ∛5 cm olan dikdörtgenin alanı ⁶√(5⁵) cm²’dir."
+                  ],
+                  [
+                    "Bölüm ve tek köklü payda",
+                    "√63/√7=3. 2/√7=(2√7)/7.",
+                    "b=−7 iken b≠0 sağlanır ama √b gerçek değildir. √a/√b için b>0 gerekir.",
+                    "4 L sıvının √7 L’lik kapa oranı 4√7/7’dir. √7<4<2√7 olduğundan bir kap tam dolar."
+                  ]
+                ]
+              }
+            },
+            {
+              "title": "Sıralama, eşlenik, denklem ve alan",
+              "text": [
+                "Sonucu hızlandıran işlem, ancak dayandığı koşulu sağladığında geçerlidir. Özellikle sıfır, negatif işaret ve doğal sayı kısıtlarına bak."
+              ],
+              "table": {
+                "headers": [
+                  "İlk hamle",
+                  "Burada çalışır",
+                  "Benzer görünen hata",
+                  "Başka bir durumda"
+                ],
+                "rows": [
+                  [
+                    "Sıralamada işareti ayır",
+                    "3√6 ve 4√3 pozitiftir. Kareleri 54>48, dolayısıyla 3√6>4√3.",
+                    "−3√6 ile 4√3 zıt işaretlidir. Karelere bakmadan −3√6<4√3 sonucuna ulaşılır.",
+                    "54 cm² alanlı karenin kenarı 48 cm² alanlı kareninkinden uzundur."
+                  ],
+                  [
+                    "Asıl paydayı ve eşleniği denetle",
+                    "1/(5+√6)=(5−√6)/19. İki çarpan da sıfırdan farklıdır.",
+                    "1/(4+√16)=1/8. Eşlenik sıfırdır, bu yüzden 0/0 ile genişletme yapılamaz.",
+                    "Kenarları √13−√5 ve √13+√5 olan dikdörtgenin alanı 13−5=8 birim²’dir."
+                  ],
+                  [
+                    "Kare al ve geri dön",
+                    "√(x+20)=x için x≥0. Kareli denklem (x−5)(x+4)=0 verir. Yalnız 5 ilk eşitliği sağlar.",
+                    "−4 karesi alınmış eşitliği sağlar. Özgün denklemde √16=4≠−4 olduğu için elenir.",
+                    "Pozitif bir uzunluğun sayısal değeri L=√(L+20) modelini sağlıyorsa uzunluk 5 birimdir."
+                  ],
+                  [
+                    "Alanı veren kare bölenleri tara",
+                    "A²B=252=2²·3²·7 için A=1, 2, 3, 6 ve B=252, 63, 28, 7 sırasıyla eşleşir.",
+                    "B’yi baştan kare çarpansız seçmek üç geçerli gösterimi atlar.",
+                    "Alanı 252 birim² olan bir karenin kenarı √252, 2√63, 3√28 veya 6√7 olarak yazılabilir."
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
   }
 ]
