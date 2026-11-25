@@ -1,5 +1,5 @@
 import { theorySupplements } from "../theorySupplements";
-import { rotationFromCenterExample, rotationFromCenterSection, transformationMethods } from "../translationMethods072";
+import { reverseTransformationExample, reverseTransformationSection, rotationFromCenterExample, rotationFromCenterSection, transformationMethods } from "../translationMethods072";
 import { electroscopeExample, electroscopeSection } from "../electroscopeInduction070";
 import { groundingTransferExample, groundingTransferSection } from "../groundingTransfer074";
 import { parabolaTranslationExample, parabolaTranslationSection } from "../parabolaTranslation075";
@@ -396,11 +396,11 @@ export function studyGuideWithSourceRevisions(lessonId: string) {
       sections: [...guide.sections.map((section) =>
         section.title === components || section.title === triangle
           ? { ...section, figureTitle: section.title }
-          : section), transformationMethods, rotationFromCenterSection, parabolaTranslationSection],
+          : section), transformationMethods, rotationFromCenterSection, reverseTransformationSection, parabolaTranslationSection],
       examples: [...guide.examples.map((example) => example.title === "Ötele ve başlangıca geri dön"
         ? { ...example, steps: example.steps.map((step, index) => index === 0 ? { ...step, figureTitle: components } : step) }
-        : example), rotationFromCenterExample, parabolaTranslationExample],
-      source: `${guide.source} Dönüşümler Kopya Kâğıdı fiziksel 2, 7 ve 8. sayfalarındaki merkezli dönme çizimi, yöntemi seçme tablosu ve koşul örnekleri öğrenci rehberinde yeniden işlendi. OGM Öteleme Dönüşümü fiziksel 24. sayfadaki iki parabolün işaretli noktaları ayrı bir örnekte karşılaştırıldı.`,
+        : example), rotationFromCenterExample, reverseTransformationExample, parabolaTranslationExample],
+      source: `${guide.source} Dönüşümler Kopya Kâğıdı fiziksel 2, 5, 7 ve 8. sayfalarındaki merkezli dönme çizimi, ters dönüşüm, yöntemi seçme tablosu ve koşul örnekleri öğrenci rehberinde yeniden işlendi. OGM Öteleme Dönüşümü fiziksel 24. sayfadaki iki parabolün işaretli noktaları ayrı bir örnekte karşılaştırıldı.`,
     };
   }
   if (guide?.id === "durgun-elektrik") {

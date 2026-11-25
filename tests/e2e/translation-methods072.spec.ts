@@ -1,5 +1,5 @@
 import { expect, test, type Page } from "@playwright/test";
-import { rotationFromCenterTitle, transformationMethodsTitle } from "../../src/learning/translationMethods072";
+import { reverseTransformationTitle, rotationFromCenterTitle, transformationMethodsTitle } from "../../src/learning/translationMethods072";
 import { learning, prepare, storage } from "./helpers/revisedCourse";
 import { svgLayoutAudit } from "./helpers/svgAudit";
 
@@ -70,5 +70,42 @@ test("ayrı Kopya Kağıdı aynı tabloyu, çizimi ve çözümlü örneği göst
   await solution.locator("summary").press("Enter");
   await expect(solution.locator(scope).getByRole("img")).toBeVisible();
   await expect(solution).toContainText("Merkeze uzaklığın karesi 13.");
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+
+test("ters dönüşüm çalışma sırasını ders ve Kopya Kağıdı'nda gösterir", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await page.setViewportSize({ width: 320, height: 880 });
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const selector = `figure[data-section-figure="${reverseTransformationTitle}"]`;
+  for (const entry of [
+    { route: "/#/lesson?id=donusum-oteleme-donme", parent: ".guide-section" },
+    { route: "/#/cheatsheets?topic=detail-405", parent: ".cheat-section" },
+  ]) {
+    await page.goto(entry.route);
+    const model = page.locator(entry.parent).locator(selector);
+    await expect(model.getByRole("img")).toBeVisible();
+    await expect(model).toContainText("Verilen son nokta Q(−3; 5).");
+    await expect(model).not.toContainText("Ara nokta (5; 3)");
+    const next = model.getByRole("button", { name: "İleri", exact: true });
+    await next.press("Enter");
+    await expect(model).toContainText("−90° dönüşten sonra ara nokta (5; 3).");
+    await expect(model).not.toContainText("başlangıç P(3; 4)");
+    await next.press("Enter");
+    await expect(model).toContainText("Ötelemeyi çıkarınca başlangıç P(3; 4).");
+    const audit = await page.evaluate(svgLayoutAudit, { scope: `${entry.parent} ${selector}`, figuresOnly: true, explore: true });
+    expect(audit.issues).toEqual([]);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+  }
+  const example = page.locator(".cheat-examples .worked-example").filter({ hasText: "Son noktadan ilk noktaya dön" });
+  await example.locator(":scope > summary").press("Enter");
+  const solution = example.locator(".cheat-solution");
+  await expect(solution.getByRole("img")).toHaveCount(0);
+  await solution.locator("summary").press("Enter");
+  await expect(solution.locator(selector).getByRole("img")).toBeVisible();
+  await expect(solution).toContainText("P(3; 4).");
   expect(learning(await storage(page))).toEqual(before);
 });
