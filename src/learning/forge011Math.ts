@@ -343,11 +343,14 @@ const fractions: Pack = {
       "Bir paranın 2/7'si kullanıldıysa 5/7'si kalır; kullanılan ve kalan kesirlerin toplamı 1'dir. 350 TL için kullanılan 100, kalan 250 TL'dir. 'Geriye 250 TL kalmıştır' bilgisi (5/7)N=250 denklemini kurdurur. 2/7 ile 250'yi çarpmak, kalan verisini başlangıç sanmak olur.",
       "Çubuk modelde bütün tek bir uzunlukla temsil edilir; kullanılan bölüm ile kalan bölüm bu çubuğu tam kaplar. Bu miktar bölünebilir bir para veya sıvı olabilir. Kişi veya kitap adedi ise kesirli sonuç bağlama uygun olmayabilir. Örneğin 10 kişinin 1/3'ü ifadesi tam bir kişi grubu vermediğinden gerçek adet bilgisini yeniden denetlemek gerekir.",
     ),
-    section(
-      "Kalanın kesri yeni bir taban kullanır",
-      "Önce bütünün 1/4'ü, sonra kalanın 2/3'ü harcanırsa ilk kalan 3N/4'tür. İkinci harcama (2/3)(3N/4)=N/2, son kalan (1/3)(3N/4)=N/4 olur. Sonuç N−N/4−2N/3 değildir; ikinci kesir başlangıç N'ye değil, ara kalana aittir. Her adımda eski kalan, yeni işlemin bütünü olur.",
-      "Birden fazla aşama için kalan çarpanları çarpılır: N·(1−r₁)·(1−r₂)… . Bu zincir yalnız her kesir bir önceki kalana uygulanıyorsa geçerlidir. Atölyede ikinci kesrin referansını değiştir; aynı kesirlerle farklı bir sonucun çıkması bir hesap hatası değil, farklı bir cümlenin modellenmesidir. Harcanan toplamı son kalanı başlangıçtan çıkararak ayrıca denetleyebilirsin.",
-    ),
+    {
+      title: "Kalanın kesri yeni bir taban kullanır",
+      figureTitle: "Kalanın kesri yeni bir taban kullanır",
+      paragraphs: [
+        "Önce bütünün 1/4’ü, sonra kalanın 2/3’ü kullanıldığında ilk kalan 3N/4, ikinci kullanım N/2, son kalan N/4 olur. Her adımda kalan, bir sonraki işlemin bütünü olur.",
+        "120 birimde önce 30 kullan ve 90 bırak. Kalanın 1/3’ü 30 birimdir ve 60 kalır. İkinci kesir ilk bütünün 1/3’ü olsaydı 40 kullanılır, 50 kalırdı. İki şeritte aynı sayıda eş parça var. İkinci kullanımın hangi bütüne ait olduğuna bak.",
+      ],
+    },
     section(
       "Aynı başlangıçtan verilen parçalar toplanır",
       "Bir bütçenin 1/4'ü kiraya ve başlangıç bütçesinin 1/3'ü ulaşıma ayrılıyorsa toplam pay 1/4+1/3=7/12'dir. Kalan 5/12 olur. İki kesrin aynı bütüne ait olması toplama için gerekli bilgidir. 'Sonra' sözcüğü tek başına kalanın kesri anlamına gelmez; referansı açık metinden bulmalısın.",

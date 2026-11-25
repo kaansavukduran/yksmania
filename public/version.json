@@ -1,8 +1,8 @@
 {
-  "version": "0.165.0",
+  "version": "0.166.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Aynı alanı dolduran iki kutu düzenini karşılaştır. Üç köşesi verilen paralelkenarın eksik köşesini ve alanını koordinatlarla bul.",
-    "en": "Compare two arrangements with the same capacity and use coordinates to find a parallelogram’s missing vertex and area."
+    "tr": "Aynı kesirleri ara kalana ve ilk bütüne uygulayarak farkı gör. Eşkenar dörtgende yarım köşegenlerden kenar, alan ve iç yarıçapı bul.",
+    "en": "Compare taking a fraction of the remainder with taking it from the original amount. Derive a rhombus’s side length, area and inradius."
   }
 }

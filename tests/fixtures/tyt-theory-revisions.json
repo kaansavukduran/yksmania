@@ -10612,5 +10612,680 @@
         }
       }
     ]
+  },
+  {
+    "version": "0.166.0",
+    "receipts": [
+      {
+        "surface": "lessons",
+        "id": "tyt-geo-paralelkenar-ozel-dortgenler-032",
+        "after": "5ecc72995e59d287b29f322c3e268d3a49bac0cf354fce228d72b6df477bd340",
+        "prior": {
+          "body": [
+            {
+              "title": {
+                "tr": "Paralelkenarı iki çift paralellikle tanı"
+              },
+              "text": {
+                "tr": "Dışbükey ABCD dörtgeninde AB∥DC ve AD∥BC ise şekil paralelkenardır. AC köşegenini çizince iç ters açılar ve ortak kenar iki eş üçgen oluşturur. Böylece karşı kenarların uzunlukları ve karşı köşelerin açıları eşittir. Bir çift karşı kenarın yalnız eşit olması tek başına yeterli değildir; aynı çift ayrıca paralelse paralelkenar sonucu çıkarılabilir.\n\nBir köşenin açısı α ise komşusu 180°−α, karşısı yine α’dır. Ardışık açılar bütünlerdir; dört açının toplamı 360° olur. Bu eşitlikler bütün açıların 90° olduğunu söylemez. Çizimi döndürmek veya paralel doğrular boyunca kaydırmak, verilen koşulları değiştirmez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Köşegenlerin kesişimi ile orta noktayı ayır"
+              },
+              "text": {
+                "tr": "Paralelkenarda köşegenlerin kesişimi O ise AO=OC ve BO=OD olur. İki köşegen birbirini ortalar; ancak AO ile BO’nun eşit olması gerekmez. Ters yönde de dışbükey bir dörtgende köşegenler birbirini ortalıyorsa dörtgen paralelkenardır. Nokta adları köşegen parçalarının hangi bütüne ait olduğunu belirler.\n\nGenel paralelkenarın köşegenleri eşit, dik veya açıortay olmak zorunda değildir. Eş köşegen ek koşulu dikdörtgene, dik köşegen ek koşulu eşkenar dörtgene götürür. İki koşul birlikte varsa kare elde edilir. Sadece bir resimde çizgiler dik görünüyorsa bu çıkarımları yapamazsın; diklik işareti ya da yazılı koşul gerekir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Açıortaylar neden dik olur?"
+              },
+              "text": {
+                "tr": "Komşu A ve B iç açılarının toplamı 180°dir. İç açıortayların ilgili açı parçaları α/2 ve (180°−α)/2 olup toplamları 90°dir. Açıortayların kesiştiği üçgende kalan açı da 90° olduğundan iki açıortay diktir. Bu sonuç köşegenlerin dikliği değildir; hangi doğru parçalarının açıortay olduğuna dikkat et.\n\nParalelkenarda bir köşenin açıortayı karşı kenarı kesiyorsa, paralellerle taşınan eş açılardan ikizkenar bir üçgen oluşabilir. Önce eş açıların yerini göster, sonra karşılarındaki kenarları eşitle. Açıortay uzunluğu veya kestiği nokta için yalnız şeklin ortasında görünmesine dayanma; orta nokta ayrıca kanıtlanır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Alanı taban ve dik uzaklıkla kur"
+              },
+              "text": {
+                "tr": "AB=a ve DC doğrusunun AB’ye dik uzaklığı hₐ ise S=a·hₐ’dır. Eğik bir köşeden yükseklik indirip kenardaki dik üçgeni öteki tarafa taşıdığında aynı taban ve yüksekliğe sahip bir dikdörtgen oluşur. Bu parçalama alanın neden taban çarpı yükseklik olduğunu açıklar. Kenar b eğikse b yerine yüksekliği bulmak gerekir.\n\nKomşu kenarlar a ve b, aralarındaki açı α ise hₐ=b·sinα, S=ab·sinα ve a·hₐ=b·hᵦ olur. 30° için hₐ=b/2’dir. Koordinat adımında A(1; 1), B(7; 1) ve D(3; 5) verilir. AB ile DC aynı yönlü olduğundan C=B+D−A=(9; 5). AB=6 ve dik yükseklik 4 olduğundan alan 24 birim²; köşegenler (5; 3) noktasında birbirini ortalar."
+              }
+            },
+            {
+              "title": {
+                "tr": "Üçgenlere bölmek alanı görünür kılar"
+              },
+              "text": {
+                "tr": "Bir köşegen paralelkenarı eş alanlı iki üçgene ayırır. Her iki köşegen çizildiğinde oluşan dört küçük üçgenin alanları eşittir; köşegenlerin yarıları eş olduğundan aynı dik uzaklığa sahip üçgen çiftleri karşılaştırılabilir. Köşegenler eşit uzunlukta olmasa da bu alan eşitlikleri geçerlidir.\n\nİçeride herhangi bir P noktası seç. PAB ile PCD üçgenlerinin alanları toplamı S/2’dir; çünkü eş uzunluktaki paralel AB ve CD tabanlarına ait iki yüksekliğin toplamı paralelkenarın yüksekliğidir. Benzer biçimde PAD ile PBC’nin toplamı da S/2 olur. P’nin merkez olması gerekmez. DC üzerindeki herhangi bir E için ABE’nin alanı yine S/2’dir; ortak yükseklik değişmez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Dikdörtgende eş köşegenin kaynağı"
+              },
+              "text": {
+                "tr": "Bir paralelkenarın bir açısı 90° ise komşu açılar ve karşı açı eşitliklerinden bütün açıları 90°dir; bu şekil dikdörtgendir. Komşu kenarları a ve b ise çevre 2(a+b), alan ab’dir. Köşegen bir dik üçgenin hipotenüsü olduğundan d²=a²+b² çıkar.\n\nİki köşegen eş uzunluktadır ve birbirini ortalar. Bu nedenle kesişim O’dan dört köşeye uzaklık d/2’dir; dört köşe aynı çemberdedir ve çevrel yarıçap R=d/2 olur. Kare olmayan dikdörtgende köşegenler genel olarak dik veya açıortay değildir. Köşegen uzunluğunu bir kenar yerine kullanmak alanı yanlış büyütür."
+              }
+            },
+            {
+              "title": {
+                "tr": "Eşkenar dörtgende diklik ve yarım köşegen"
+              },
+              "text": {
+                "tr": "Dört kenarı da a olan paralelkenar eşkenar dörtgendir. Köşegenler birbirini ortalar; ayrıca bir köşegenin iki yanındaki eş üçgenler köşe açısını ikiye böler. Komşu bütünler açıların yarılarından köşegenlerin dik kesiştiği de görülür. Dört köşenin dik olması zorunlu değildir; bu ek koşul kareyi verir.\n\nKöşegenler e ve f ise yarımlarıyla kenar bir dik üçgen kurar: (e/2)²+(f/2)²=a². Alan S=ef/2=a·h=a²sinα, çevre 4a’dır. İç teğet çember için yarıçap r=h/2=S/(2a) olur; çünkü karşı paralel kenarlara teğet çemberin çapı bu kenarlar arasındaki uzaklıktır. Radyal uzunluğu alanla veya çevreyle karıştırma."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kare iki ailenin özelliklerini birlikte taşır"
+              },
+              "text": {
+                "tr": "Dört eş kenarı ve dört dik açısı olan kare hem dikdörtgen hem eşkenar dörtgendir. Bu yüzden köşegenleri eş, dik, birbirini ortalayan ve köşe açılarını ikiye bölen parçalardır. Her köşegenin ayırdığı köşe açıları 45° ve 45°dir. Kenar a ise d=a√2, alan a²=d²/2, çevre 4a’dır.\n\nİç teğet çemberin yarıçapı r=a/2, çevrel çemberinki R=d/2=a√2/2’dir. Bunlar farklı çemberlerdir; çevrel çember köşelerden geçer, iç çember kenarlara teğettir. Köşegen 12 ise alan 72’dir; 144 köşegeni kenar sayma hatasıdır. Karede köşegen kullanırken hangi uzunluğun tamam, hangisinin yarım olduğunu işaretle."
+              }
+            },
+            {
+              "title": {
+                "tr": "Köşegenlerle genel alan ve uzunluk denetimi"
+              },
+              "text": {
+                "tr": "Paralelkenarın köşegenleri d₁,d₂, aralarındaki açı θ ise alan S=d₁d₂sinθ/2’dir. Bu formül dışbükey dörtgenlerde de geçerlidir; dört küçük üçgenin alanlarını toplamaktan çıkar. Köşegenler dik değilse sinθ çarpanı atılamaz. Eşkenar dörtgende θ=90° olduğu için tanıdık ef/2 biçimine iner.\n\nKomşu kenarlar a,b olan paralelkenarda d₁²+d₂²=2(a²+b²) bağıntısı vardır. Köşegen vektörleri u+v ve u−v’nin karelerini toplayınca skaler çarpımlar birbirini götürür; geriye 2|u|²+2|v|² kalır. Bu bağıntı iki köşegen eşit demek değildir. Örneğin a=5,b=7,d₁=6 ise d₂²=2(25+49)−36=112 bulunur."
+              }
+            },
+            {
+              "title": {
+                "tr": "Koşulu en kısa yöntemle sonuca bağla"
+              },
+              "text": {
+                "tr": "İlk adım hangi ailede olduğunu belirlemektir: yalnız karşı kenarlar paralelse genel özelliklerle başla; dik açı, eş kenar veya köşegen koşulu varsa ilgili alt aileye geç. Alan sorusunda taban/yükseklik veya dik köşegen; uzunluk sorusunda Pisagor, orta nokta ya da eş üçgen; açı sorusunda paralellik ve açıortay çoğu zaman yeterlidir.\n\nBir parçalama sorusunda adı verilen her bölgenin köşelerini belirle. Aynı taban, aynı yükseklik veya yarım taban sonucu veren eş alanı gerekçelendir; renkten dolayı eşit sanma. Sonuçta uzunluk birimini, alanın kare birimini ve hangi ek koşulu kullandığını denetle. İkinci bir hesap veya uygun karşı örnek, ezberin sınırını kontrol etmeye yardım eder."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "lessons",
+        "id": "kesir-problemleri",
+        "after": "3af7659951ed617ad26d7b584e66322ab4ae8caae237e8b2189a6813474eec9f",
+        "prior": {
+          "body": [
+            {
+              "title": {
+                "tr": "Kesir hangi bütünün parçası?"
+              },
+              "text": {
+                "tr": "a/b kesri, bir bütün eşit b parçaya ayrıldığında bunların a tanesini anlatır; b sıfır olamaz. Bir miktarın 3/8'i, o miktarın 3/8 ile çarpımıdır. 160 sayfanın 3/8'i 60 sayfadır. Kesir bir orandır; sayfa veya litre birimi bütünden gelir. Aynı kesir farklı büyüklükteki bütünlerde aynı miktarı üretmez.\n\nSoruda bütüne N, parçaya P dersen P=(a/b)N yazarsın. Aranan N ise işlem tersine döner: N=P·b/a ve burada a da sıfır olmamalıdır. Bütün 0 değilken kesir 0 ise parça 0 olur; yalnız bu bilgi bütünü belirlemez. Denklem kurmadan önce '3/8'i neyin?' sorusunu cevaplamak gereksiz işlemi azaltır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kullanılanı ve kalanı birbirinden ayır"
+              },
+              "text": {
+                "tr": "Bir paranın 2/7'si kullanıldıysa 5/7'si kalır; kullanılan ve kalan kesirlerin toplamı 1'dir. 350 TL için kullanılan 100, kalan 250 TL'dir. 'Geriye 250 TL kalmıştır' bilgisi (5/7)N=250 denklemini kurdurur. 2/7 ile 250'yi çarpmak, kalan verisini başlangıç sanmak olur.\n\nÇubuk modelde bütün tek bir uzunlukla temsil edilir; kullanılan bölüm ile kalan bölüm bu çubuğu tam kaplar. Bu miktar bölünebilir bir para veya sıvı olabilir. Kişi veya kitap adedi ise kesirli sonuç bağlama uygun olmayabilir. Örneğin 10 kişinin 1/3'ü ifadesi tam bir kişi grubu vermediğinden gerçek adet bilgisini yeniden denetlemek gerekir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kalanın kesri yeni bir taban kullanır"
+              },
+              "text": {
+                "tr": "Önce bütünün 1/4'ü, sonra kalanın 2/3'ü harcanırsa ilk kalan 3N/4'tür. İkinci harcama (2/3)(3N/4)=N/2, son kalan (1/3)(3N/4)=N/4 olur. Sonuç N−N/4−2N/3 değildir; ikinci kesir başlangıç N'ye değil, ara kalana aittir. Her adımda eski kalan, yeni işlemin bütünü olur.\n\nBirden fazla aşama için kalan çarpanları çarpılır: N·(1−r₁)·(1−r₂)… . Bu zincir yalnız her kesir bir önceki kalana uygulanıyorsa geçerlidir. Atölyede ikinci kesrin referansını değiştir; aynı kesirlerle farklı bir sonucun çıkması bir hesap hatası değil, farklı bir cümlenin modellenmesidir. Harcanan toplamı son kalanı başlangıçtan çıkararak ayrıca denetleyebilirsin."
+              }
+            },
+            {
+              "title": {
+                "tr": "Aynı başlangıçtan verilen parçalar toplanır"
+              },
+              "text": {
+                "tr": "Bir bütçenin 1/4'ü kiraya ve başlangıç bütçesinin 1/3'ü ulaşıma ayrılıyorsa toplam pay 1/4+1/3=7/12'dir. Kalan 5/12 olur. İki kesrin aynı bütüne ait olması toplama için gerekli bilgidir. 'Sonra' sözcüğü tek başına kalanın kesri anlamına gelmez; referansı açık metinden bulmalısın.\n\nKesirlerin toplamı 1'i aşıyorsa, borçlanma veya ek kaynak belirtilmedikçe tümünü harcamak mümkün değildir. Başlangıcın 3/4'ü ile yine başlangıcın 2/3'ü, 17/12 eder; kalan miktarı negatif bir para diye sessizce kabul etme. Model bu durumda verilerin uygulanamaz olduğunu göstermelidir. Aynı iki kesir kalana ardışık uygulanırsa son kalan pozitiftir; koşul değişmiştir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Parçaların farkından bütüne dön"
+              },
+              "text": {
+                "tr": "Aynı pozitif bütünün a/b'si ve c/d'si arasındaki miktar farkı F ise |a/b−c/d|·N=F yazılır. Paydaları eşitlemek ya da kesirleri ortak ölçekte karşılaştırmak gerekir. 3/4 ile 2/5'in farkı 15/20−8/20=7/20'dir. Farkın hangi yönde alındığı metinde belliyse büyük parçadan küçük çıkarılır.\n\nİki parça farklı bütünlere aitse tek N çarpanı çıkartılamaz. Örneğin Ayşe'nin parasının yarısı ile Bora'nın parasının üçte biri arasında fark verilmişse Ayşe ve Bora'nın başlangıç paralarını aynı harfle yazmak ek bir eşitlik varsaymaktır. Oran veya başka ilişki verilmişse iki bütünü o ilişkiyle bağla. Sıfır fark ve eşit kesir de bütünü tek başına belirlemez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Geriye doğru çözüm hangi aşamayı geri alır?"
+              },
+              "text": {
+                "tr": "Son kalan R ve son aşamanın kalan oranı k biliniyorsa bir önceki miktar R/k'dır; k sıfır olmamalıdır. N'nin önce 1/3'ü, sonra kalanın 1/4'ü harcansın. Son kalan 90 ise sondan geri 90/(3/4)=120, sonra 120/(2/3)=180 bulunur. İleri model 180·2/3·3/4=90 ile aynı yapıdır.\n\nBir aşamada tamamı tüketilmişse kalan çarpanı 0 olur. Sonuç 0'dan başlangıcı tek olarak geri getiremezsin; 10,100 veya başka birçok miktar sıfıra inebilir. Ters işlem yöntemi miktarın gerçekten o aşamadaki kalan olmasına bağlıdır. Harcanan miktar verilmişse onu kalmış gibi bölme; önce hangi parçanın bilindiğini açıkça adlandır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kesirli büyüme ve kesirli azalma da çarpan kullanır"
+              },
+              "text": {
+                "tr": "Bir miktar 1/5 oranında artarsa yeni değer 6N/5'tir; 1/5'i kalır denirse N/5'tir. '1/5 azalır' ise 4N/5 olur. Benzer görünen bu ifadeler farklı çarpanlar üretir. İki kez aynı oranda artışta ikinci artış büyümüş miktara uygulanır; her seferinde aynı sabit miktarı eklemiş olmazsın.\n\nÖrneğin 450'nin önce 1/3 artması 600, sonra yeni değerin 1/4 azalması 450 verir. Çarpanlar (4/3)(3/4)=1 olduğu için başlangıca dönülür; eşit oranlar oldukları için değil. +1/5 ve −1/5 art arda uygulanırsa (6/5)(4/5)=24/25 kalır. Bu yapı yüzde problemlerindeki değişen tabanın da temelidir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Uzunluk, hız ve birim kontrolü"
+              },
+              "text": {
+                "tr": "Bir telin bir ucundan L/5 kesilirse kalan telin orta noktası, kesilen uzunluğun yarısı kadar yer değiştirir: L/10. Eski ve yeni orta noktaları aynı koordinat doğrusu üzerinde yazmak bu sonucu açıklar. Her iki uçtan eşit kesim yapılırsa orta nokta yer değiştirmez; tek uç koşulunu gözden kaçırma.\n\nBir işin kesirli parçaları farklı hızlarla yapılıyorsa süre=miktar/hız ilişkisiyle her parçanın süresini ayrı hesapla. Örneğin sayfa/(sayfa/gün)=gün olur. Toplam sayfa ile günlük hızı doğrudan toplamak anlamlı değildir. Son aşamada tam sayı adet, pozitiflik, kalanların toplamı ve ilk verilere geri dönüş kontrolünü birlikte yap; kesirleri erken yuvarlamak özellikle ters işlemlerde hatayı büyütür."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kalan sıfırsa önce kalan oranına bak"
+              },
+              "text": {
+                "tr": "Başlangıç x≥0, kullanılan oran r ve son kalan R olsun. Tüketim modelinde 0≤r≤1 ve R=(1−r)x. r<1 ise kalan çarpanı pozitiftir. R≥0 için tek cebirsel aday x=R/(1−r) olur. Birim ve adet koşullarını bu adayda ayrıca denetle.\n\nr=1 iken kalan çarpanı sıfırdır. R=0 ise her x≥0 denklemle uyumludur ve başlangıç tek değer olarak bulunamaz. R>0 verilirse veri tutarsızdır. Örneğin boşalan kaptan önceki hacmi çıkaramayız. 5x/6=13’ün sonucu 78/5 L ise hacim için uygundur, 78/5 tane kapalı kutu ise geçerli bir adet değildir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Bütün değişirse sabit kalan parçayı izle"
+              },
+              "text": {
+                "tr": "16 kırmızı ve 24 mavi parçanın kırmızı oranı 16/40=2/5’tir. Yalnız 8 mavi parça eklenirse kırmızı sayı 16, bütün 48 olur. Yeni oran 16/48=1/3’tür. Buradaki oran değişikliği payın artmasından değil, karşılaştırılan bütünün büyümesinden gelir.\n\nPaydaların aynı olması bütünleri aynı yapmaz. 24 parçalık grubun 1/3’ü 8, 45 parçalık başka grubun 1/3’ü 15’tir. Bu parçalar arasındaki fark 7’dir. (1/3−1/3)x=0 hesabı iki farklı grubu tek x ile temsil ettiği için geçersizdir. Önce hangi bütünün kullanıldığını yaz, sonra kesri uygula."
+              }
+            },
+            {
+              "title": {
+                "tr": "Deneme bütününü gerçek miktardan ayır"
+              },
+              "text": {
+                "tr": "Başlangıcın 1/6’sı ve 1/4’ü aynı bütün üzerinden hesaplanıyorsa 12 birimlik deneme bütünü seçebilirsin. Parçalar 2 ve 3, toplamları 5, kalan 7 birimdir. Bu, gerçek kalanın bütüne oranının 7/12 olduğunu gösterir. Kalan gerçekte 42 ise (7/12)x=42, yani x=72 olur. Deneme bütünü yalnız oranı görmeye yarar.\n\nİkinci kesir kalana uygulanıyorsa paydaların EKOK’unu almak her ara adedi tam yapmaz. Önce 12 parçanın 1/4’ü çıkarılırsa 9 kalır. Onun altıda biri 3/2 olur. Tam parçalar gerekiyorsa ikinci kullanımı başlangıcın (3/4)(1/6)=1/8’i olarak yaz. İlk ve ikinci kullanımın sade paydaları 4 ve 8’dir. Her iki kullanımın da tam sayı olması için en küçük pozitif başlangıç 8 parçadır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Bir bütüne kalan eksiği karşılaştır"
+              },
+              "text": {
+                "tr": "Her biri 0 ile 1 arasında olan iki kesir 1’e yakınsa açıklarını yazmak işlemi kısaltabilir. 18/19’un açığı 1/19, 30/31’in açığı 1/31’dir. 1/31<1/19 olduğundan 30/31 daha büyüktür. Bir bütünü tamamlamak için daha küçük pay kalan kesir, bütünün daha büyük bir bölümünü doldurur.\n\nPayda büyüdüğü için her zaman daha büyük kesir seçemezsin. Burada iki açığın payı 1 olduğu için onları kolayca sıraladık. İşaretler karışık veya oranlar 1’in üstündeyse genel ortak payda ya da çapraz çarpım yolunu kullan. −30/31 ile −18/19 karşılaştırıldığında, pozitif değerlerin sırası eksi işaretiyle tersine döner."
+              }
+            },
+            {
+              "title": {
+                "tr": "Parça, kalan ve ortak bütün için yöntem seç"
+              },
+              "text": {
+                "tr": "İlk iş, verilen miktarın ne olduğunu ve hangi bütüne ait olduğunu yazmak. Sonra bu miktarı doğrudan hesaplaman mı, yoksa ondan geriye doğru gitmen mi gerektiğine karar ver."
+              }
+            },
+            {
+              "title": {
+                "tr": "Fark, değişim ve büyüklük için yöntem seç"
+              },
+              "text": {
+                "tr": "Hangi miktarın sabit kaldığını, adımların hangi değere uygulandığını ve sonucun kesirli olup olamayacağını birlikte denetle."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "tyt-geo-paralelkenar-ozel-dortgenler-032",
+        "after": "ec5a9613b4a14cdd35d3215708a8944c84cfd6bffb6a33fb8e86d177c0a65688",
+        "prior": {
+          "sections": [
+            {
+              "title": "Paralelkenarı iki çift paralellikle tanı",
+              "paragraphs": [
+                "Dışbükey ABCD dörtgeninde AB∥DC ve AD∥BC ise şekil paralelkenardır. AC köşegenini çizince iç ters açılar ve ortak kenar iki eş üçgen oluşturur. Böylece karşı kenarların uzunlukları ve karşı köşelerin açıları eşittir. Bir çift karşı kenarın yalnız eşit olması tek başına yeterli değildir; aynı çift ayrıca paralelse paralelkenar sonucu çıkarılabilir.",
+                "Bir köşenin açısı α ise komşusu 180°−α, karşısı yine α’dır. Ardışık açılar bütünlerdir; dört açının toplamı 360° olur. Bu eşitlikler bütün açıların 90° olduğunu söylemez. Çizimi döndürmek veya paralel doğrular boyunca kaydırmak, verilen koşulları değiştirmez."
+              ]
+            },
+            {
+              "title": "Köşegenlerin kesişimi ile orta noktayı ayır",
+              "paragraphs": [
+                "Paralelkenarda köşegenlerin kesişimi O ise AO=OC ve BO=OD olur. İki köşegen birbirini ortalar; ancak AO ile BO’nun eşit olması gerekmez. Ters yönde de dışbükey bir dörtgende köşegenler birbirini ortalıyorsa dörtgen paralelkenardır. Nokta adları köşegen parçalarının hangi bütüne ait olduğunu belirler.",
+                "Genel paralelkenarın köşegenleri eşit, dik veya açıortay olmak zorunda değildir. Eş köşegen ek koşulu dikdörtgene, dik köşegen ek koşulu eşkenar dörtgene götürür. İki koşul birlikte varsa kare elde edilir. Sadece bir resimde çizgiler dik görünüyorsa bu çıkarımları yapamazsın; diklik işareti ya da yazılı koşul gerekir."
+              ]
+            },
+            {
+              "title": "Açıortaylar neden dik olur?",
+              "paragraphs": [
+                "Komşu A ve B iç açılarının toplamı 180°dir. İç açıortayların ilgili açı parçaları α/2 ve (180°−α)/2 olup toplamları 90°dir. Açıortayların kesiştiği üçgende kalan açı da 90° olduğundan iki açıortay diktir. Bu sonuç köşegenlerin dikliği değildir; hangi doğru parçalarının açıortay olduğuna dikkat et.",
+                "Paralelkenarda bir köşenin açıortayı karşı kenarı kesiyorsa, paralellerle taşınan eş açılardan ikizkenar bir üçgen oluşabilir. Önce eş açıların yerini göster, sonra karşılarındaki kenarları eşitle. Açıortay uzunluğu veya kestiği nokta için yalnız şeklin ortasında görünmesine dayanma; orta nokta ayrıca kanıtlanır."
+              ]
+            },
+            {
+              "title": "Alanı taban ve dik uzaklıkla kur",
+              "paragraphs": [
+                "AB=a ve DC doğrusunun AB’ye dik uzaklığı hₐ ise S=a·hₐ’dır. Eğik bir köşeden yükseklik indirip kenardaki dik üçgeni öteki tarafa taşıdığında aynı taban ve yüksekliğe sahip bir dikdörtgen oluşur. Bu parçalama alanın neden taban çarpı yükseklik olduğunu açıklar. Kenar b eğikse b yerine yüksekliği bulmak gerekir.",
+                "Komşu kenarlar a ve b, aralarındaki açı α ise hₐ=b·sinα, S=ab·sinα ve a·hₐ=b·hᵦ olur. 30° için hₐ=b/2’dir. Koordinat adımında A(1; 1), B(7; 1) ve D(3; 5) verilir. AB ile DC aynı yönlü olduğundan C=B+D−A=(9; 5). AB=6 ve dik yükseklik 4 olduğundan alan 24 birim²; köşegenler (5; 3) noktasında birbirini ortalar."
+              ]
+            },
+            {
+              "title": "Üçgenlere bölmek alanı görünür kılar",
+              "paragraphs": [
+                "Bir köşegen paralelkenarı eş alanlı iki üçgene ayırır. Her iki köşegen çizildiğinde oluşan dört küçük üçgenin alanları eşittir; köşegenlerin yarıları eş olduğundan aynı dik uzaklığa sahip üçgen çiftleri karşılaştırılabilir. Köşegenler eşit uzunlukta olmasa da bu alan eşitlikleri geçerlidir.",
+                "İçeride herhangi bir P noktası seç. PAB ile PCD üçgenlerinin alanları toplamı S/2’dir; çünkü eş uzunluktaki paralel AB ve CD tabanlarına ait iki yüksekliğin toplamı paralelkenarın yüksekliğidir. Benzer biçimde PAD ile PBC’nin toplamı da S/2 olur. P’nin merkez olması gerekmez. DC üzerindeki herhangi bir E için ABE’nin alanı yine S/2’dir; ortak yükseklik değişmez."
+              ]
+            },
+            {
+              "title": "Dikdörtgende eş köşegenin kaynağı",
+              "paragraphs": [
+                "Bir paralelkenarın bir açısı 90° ise komşu açılar ve karşı açı eşitliklerinden bütün açıları 90°dir; bu şekil dikdörtgendir. Komşu kenarları a ve b ise çevre 2(a+b), alan ab’dir. Köşegen bir dik üçgenin hipotenüsü olduğundan d²=a²+b² çıkar.",
+                "İki köşegen eş uzunluktadır ve birbirini ortalar. Bu nedenle kesişim O’dan dört köşeye uzaklık d/2’dir; dört köşe aynı çemberdedir ve çevrel yarıçap R=d/2 olur. Kare olmayan dikdörtgende köşegenler genel olarak dik veya açıortay değildir. Köşegen uzunluğunu bir kenar yerine kullanmak alanı yanlış büyütür."
+              ]
+            },
+            {
+              "title": "Eşkenar dörtgende diklik ve yarım köşegen",
+              "paragraphs": [
+                "Dört kenarı da a olan paralelkenar eşkenar dörtgendir. Köşegenler birbirini ortalar; ayrıca bir köşegenin iki yanındaki eş üçgenler köşe açısını ikiye böler. Komşu bütünler açıların yarılarından köşegenlerin dik kesiştiği de görülür. Dört köşenin dik olması zorunlu değildir; bu ek koşul kareyi verir.",
+                "Köşegenler e ve f ise yarımlarıyla kenar bir dik üçgen kurar: (e/2)²+(f/2)²=a². Alan S=ef/2=a·h=a²sinα, çevre 4a’dır. İç teğet çember için yarıçap r=h/2=S/(2a) olur; çünkü karşı paralel kenarlara teğet çemberin çapı bu kenarlar arasındaki uzaklıktır. Radyal uzunluğu alanla veya çevreyle karıştırma."
+              ]
+            },
+            {
+              "title": "Kare iki ailenin özelliklerini birlikte taşır",
+              "paragraphs": [
+                "Dört eş kenarı ve dört dik açısı olan kare hem dikdörtgen hem eşkenar dörtgendir. Bu yüzden köşegenleri eş, dik, birbirini ortalayan ve köşe açılarını ikiye bölen parçalardır. Her köşegenin ayırdığı köşe açıları 45° ve 45°dir. Kenar a ise d=a√2, alan a²=d²/2, çevre 4a’dır.",
+                "İç teğet çemberin yarıçapı r=a/2, çevrel çemberinki R=d/2=a√2/2’dir. Bunlar farklı çemberlerdir; çevrel çember köşelerden geçer, iç çember kenarlara teğettir. Köşegen 12 ise alan 72’dir; 144 köşegeni kenar sayma hatasıdır. Karede köşegen kullanırken hangi uzunluğun tamam, hangisinin yarım olduğunu işaretle."
+              ]
+            },
+            {
+              "title": "Köşegenlerle genel alan ve uzunluk denetimi",
+              "paragraphs": [
+                "Paralelkenarın köşegenleri d₁,d₂, aralarındaki açı θ ise alan S=d₁d₂sinθ/2’dir. Bu formül dışbükey dörtgenlerde de geçerlidir; dört küçük üçgenin alanlarını toplamaktan çıkar. Köşegenler dik değilse sinθ çarpanı atılamaz. Eşkenar dörtgende θ=90° olduğu için tanıdık ef/2 biçimine iner.",
+                "Komşu kenarlar a,b olan paralelkenarda d₁²+d₂²=2(a²+b²) bağıntısı vardır. Köşegen vektörleri u+v ve u−v’nin karelerini toplayınca skaler çarpımlar birbirini götürür; geriye 2|u|²+2|v|² kalır. Bu bağıntı iki köşegen eşit demek değildir. Örneğin a=5,b=7,d₁=6 ise d₂²=2(25+49)−36=112 bulunur."
+              ]
+            },
+            {
+              "title": "Koşulu en kısa yöntemle sonuca bağla",
+              "paragraphs": [
+                "İlk adım hangi ailede olduğunu belirlemektir: yalnız karşı kenarlar paralelse genel özelliklerle başla; dik açı, eş kenar veya köşegen koşulu varsa ilgili alt aileye geç. Alan sorusunda taban/yükseklik veya dik köşegen; uzunluk sorusunda Pisagor, orta nokta ya da eş üçgen; açı sorusunda paralellik ve açıortay çoğu zaman yeterlidir.",
+                "Bir parçalama sorusunda adı verilen her bölgenin köşelerini belirle. Aynı taban, aynı yükseklik veya yarım taban sonucu veren eş alanı gerekçelendir; renkten dolayı eşit sanma. Sonuçta uzunluk birimini, alanın kare birimini ve hangi ek koşulu kullandığını denetle. İkinci bir hesap veya uygun karşı örnek, ezberin sınırını kontrol etmeye yardım eder."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "kesir-problemleri",
+        "after": "58e8dcce50871c2a53106d24ec9823bc3144ac17cd98d17e1ecc248b8ad71a20",
+        "prior": {
+          "sections": [
+            {
+              "title": "Kesir hangi bütünün parçası?",
+              "paragraphs": [
+                "a/b kesri, bir bütün eşit b parçaya ayrıldığında bunların a tanesini anlatır; b sıfır olamaz. Bir miktarın 3/8'i, o miktarın 3/8 ile çarpımıdır. 160 sayfanın 3/8'i 60 sayfadır. Kesir bir orandır; sayfa veya litre birimi bütünden gelir. Aynı kesir farklı büyüklükteki bütünlerde aynı miktarı üretmez.",
+                "Soruda bütüne N, parçaya P dersen P=(a/b)N yazarsın. Aranan N ise işlem tersine döner: N=P·b/a ve burada a da sıfır olmamalıdır. Bütün 0 değilken kesir 0 ise parça 0 olur; yalnız bu bilgi bütünü belirlemez. Denklem kurmadan önce '3/8'i neyin?' sorusunu cevaplamak gereksiz işlemi azaltır."
+              ]
+            },
+            {
+              "title": "Kullanılanı ve kalanı birbirinden ayır",
+              "paragraphs": [
+                "Bir paranın 2/7'si kullanıldıysa 5/7'si kalır; kullanılan ve kalan kesirlerin toplamı 1'dir. 350 TL için kullanılan 100, kalan 250 TL'dir. 'Geriye 250 TL kalmıştır' bilgisi (5/7)N=250 denklemini kurdurur. 2/7 ile 250'yi çarpmak, kalan verisini başlangıç sanmak olur.",
+                "Çubuk modelde bütün tek bir uzunlukla temsil edilir; kullanılan bölüm ile kalan bölüm bu çubuğu tam kaplar. Bu miktar bölünebilir bir para veya sıvı olabilir. Kişi veya kitap adedi ise kesirli sonuç bağlama uygun olmayabilir. Örneğin 10 kişinin 1/3'ü ifadesi tam bir kişi grubu vermediğinden gerçek adet bilgisini yeniden denetlemek gerekir."
+              ]
+            },
+            {
+              "title": "Kalanın kesri yeni bir taban kullanır",
+              "paragraphs": [
+                "Önce bütünün 1/4'ü, sonra kalanın 2/3'ü harcanırsa ilk kalan 3N/4'tür. İkinci harcama (2/3)(3N/4)=N/2, son kalan (1/3)(3N/4)=N/4 olur. Sonuç N−N/4−2N/3 değildir; ikinci kesir başlangıç N'ye değil, ara kalana aittir. Her adımda eski kalan, yeni işlemin bütünü olur.",
+                "Birden fazla aşama için kalan çarpanları çarpılır: N·(1−r₁)·(1−r₂)… . Bu zincir yalnız her kesir bir önceki kalana uygulanıyorsa geçerlidir. Atölyede ikinci kesrin referansını değiştir; aynı kesirlerle farklı bir sonucun çıkması bir hesap hatası değil, farklı bir cümlenin modellenmesidir. Harcanan toplamı son kalanı başlangıçtan çıkararak ayrıca denetleyebilirsin."
+              ]
+            },
+            {
+              "title": "Aynı başlangıçtan verilen parçalar toplanır",
+              "paragraphs": [
+                "Bir bütçenin 1/4'ü kiraya ve başlangıç bütçesinin 1/3'ü ulaşıma ayrılıyorsa toplam pay 1/4+1/3=7/12'dir. Kalan 5/12 olur. İki kesrin aynı bütüne ait olması toplama için gerekli bilgidir. 'Sonra' sözcüğü tek başına kalanın kesri anlamına gelmez; referansı açık metinden bulmalısın.",
+                "Kesirlerin toplamı 1'i aşıyorsa, borçlanma veya ek kaynak belirtilmedikçe tümünü harcamak mümkün değildir. Başlangıcın 3/4'ü ile yine başlangıcın 2/3'ü, 17/12 eder; kalan miktarı negatif bir para diye sessizce kabul etme. Model bu durumda verilerin uygulanamaz olduğunu göstermelidir. Aynı iki kesir kalana ardışık uygulanırsa son kalan pozitiftir; koşul değişmiştir."
+              ]
+            },
+            {
+              "title": "Parçaların farkından bütüne dön",
+              "paragraphs": [
+                "Aynı pozitif bütünün a/b'si ve c/d'si arasındaki miktar farkı F ise |a/b−c/d|·N=F yazılır. Paydaları eşitlemek ya da kesirleri ortak ölçekte karşılaştırmak gerekir. 3/4 ile 2/5'in farkı 15/20−8/20=7/20'dir. Farkın hangi yönde alındığı metinde belliyse büyük parçadan küçük çıkarılır.",
+                "İki parça farklı bütünlere aitse tek N çarpanı çıkartılamaz. Örneğin Ayşe'nin parasının yarısı ile Bora'nın parasının üçte biri arasında fark verilmişse Ayşe ve Bora'nın başlangıç paralarını aynı harfle yazmak ek bir eşitlik varsaymaktır. Oran veya başka ilişki verilmişse iki bütünü o ilişkiyle bağla. Sıfır fark ve eşit kesir de bütünü tek başına belirlemez."
+              ]
+            },
+            {
+              "title": "Geriye doğru çözüm hangi aşamayı geri alır?",
+              "paragraphs": [
+                "Son kalan R ve son aşamanın kalan oranı k biliniyorsa bir önceki miktar R/k'dır; k sıfır olmamalıdır. N'nin önce 1/3'ü, sonra kalanın 1/4'ü harcansın. Son kalan 90 ise sondan geri 90/(3/4)=120, sonra 120/(2/3)=180 bulunur. İleri model 180·2/3·3/4=90 ile aynı yapıdır.",
+                "Bir aşamada tamamı tüketilmişse kalan çarpanı 0 olur. Sonuç 0'dan başlangıcı tek olarak geri getiremezsin; 10,100 veya başka birçok miktar sıfıra inebilir. Ters işlem yöntemi miktarın gerçekten o aşamadaki kalan olmasına bağlıdır. Harcanan miktar verilmişse onu kalmış gibi bölme; önce hangi parçanın bilindiğini açıkça adlandır."
+              ]
+            },
+            {
+              "title": "Kesirli büyüme ve kesirli azalma da çarpan kullanır",
+              "paragraphs": [
+                "Bir miktar 1/5 oranında artarsa yeni değer 6N/5'tir; 1/5'i kalır denirse N/5'tir. '1/5 azalır' ise 4N/5 olur. Benzer görünen bu ifadeler farklı çarpanlar üretir. İki kez aynı oranda artışta ikinci artış büyümüş miktara uygulanır; her seferinde aynı sabit miktarı eklemiş olmazsın.",
+                "Örneğin 450'nin önce 1/3 artması 600, sonra yeni değerin 1/4 azalması 450 verir. Çarpanlar (4/3)(3/4)=1 olduğu için başlangıca dönülür; eşit oranlar oldukları için değil. +1/5 ve −1/5 art arda uygulanırsa (6/5)(4/5)=24/25 kalır. Bu yapı yüzde problemlerindeki değişen tabanın da temelidir."
+              ]
+            },
+            {
+              "title": "Uzunluk, hız ve birim kontrolü",
+              "paragraphs": [
+                "Bir telin bir ucundan L/5 kesilirse kalan telin orta noktası, kesilen uzunluğun yarısı kadar yer değiştirir: L/10. Eski ve yeni orta noktaları aynı koordinat doğrusu üzerinde yazmak bu sonucu açıklar. Her iki uçtan eşit kesim yapılırsa orta nokta yer değiştirmez; tek uç koşulunu gözden kaçırma.",
+                "Bir işin kesirli parçaları farklı hızlarla yapılıyorsa süre=miktar/hız ilişkisiyle her parçanın süresini ayrı hesapla. Örneğin sayfa/(sayfa/gün)=gün olur. Toplam sayfa ile günlük hızı doğrudan toplamak anlamlı değildir. Son aşamada tam sayı adet, pozitiflik, kalanların toplamı ve ilk verilere geri dönüş kontrolünü birlikte yap; kesirleri erken yuvarlamak özellikle ters işlemlerde hatayı büyütür."
+              ]
+            },
+            {
+              "title": "Kalan sıfırsa önce kalan oranına bak",
+              "paragraphs": [
+                "Başlangıç x≥0, kullanılan oran r ve son kalan R olsun. Tüketim modelinde 0≤r≤1 ve R=(1−r)x. r<1 ise kalan çarpanı pozitiftir. R≥0 için tek cebirsel aday x=R/(1−r) olur. Birim ve adet koşullarını bu adayda ayrıca denetle.",
+                "r=1 iken kalan çarpanı sıfırdır. R=0 ise her x≥0 denklemle uyumludur ve başlangıç tek değer olarak bulunamaz. R>0 verilirse veri tutarsızdır. Örneğin boşalan kaptan önceki hacmi çıkaramayız. 5x/6=13’ün sonucu 78/5 L ise hacim için uygundur, 78/5 tane kapalı kutu ise geçerli bir adet değildir."
+              ]
+            },
+            {
+              "title": "Bütün değişirse sabit kalan parçayı izle",
+              "paragraphs": [
+                "16 kırmızı ve 24 mavi parçanın kırmızı oranı 16/40=2/5’tir. Yalnız 8 mavi parça eklenirse kırmızı sayı 16, bütün 48 olur. Yeni oran 16/48=1/3’tür. Buradaki oran değişikliği payın artmasından değil, karşılaştırılan bütünün büyümesinden gelir.",
+                "Paydaların aynı olması bütünleri aynı yapmaz. 24 parçalık grubun 1/3’ü 8, 45 parçalık başka grubun 1/3’ü 15’tir. Bu parçalar arasındaki fark 7’dir. (1/3−1/3)x=0 hesabı iki farklı grubu tek x ile temsil ettiği için geçersizdir. Önce hangi bütünün kullanıldığını yaz, sonra kesri uygula."
+              ]
+            },
+            {
+              "title": "Deneme bütününü gerçek miktardan ayır",
+              "paragraphs": [
+                "Başlangıcın 1/6’sı ve 1/4’ü aynı bütün üzerinden hesaplanıyorsa 12 birimlik deneme bütünü seçebilirsin. Parçalar 2 ve 3, toplamları 5, kalan 7 birimdir. Bu, gerçek kalanın bütüne oranının 7/12 olduğunu gösterir. Kalan gerçekte 42 ise (7/12)x=42, yani x=72 olur. Deneme bütünü yalnız oranı görmeye yarar.",
+                "İkinci kesir kalana uygulanıyorsa paydaların EKOK’unu almak her ara adedi tam yapmaz. Önce 12 parçanın 1/4’ü çıkarılırsa 9 kalır. Onun altıda biri 3/2 olur. Tam parçalar gerekiyorsa ikinci kullanımı başlangıcın (3/4)(1/6)=1/8’i olarak yaz. İlk ve ikinci kullanımın sade paydaları 4 ve 8’dir. Her iki kullanımın da tam sayı olması için en küçük pozitif başlangıç 8 parçadır."
+              ]
+            },
+            {
+              "title": "Bir bütüne kalan eksiği karşılaştır",
+              "paragraphs": [
+                "Her biri 0 ile 1 arasında olan iki kesir 1’e yakınsa açıklarını yazmak işlemi kısaltabilir. 18/19’un açığı 1/19, 30/31’in açığı 1/31’dir. 1/31<1/19 olduğundan 30/31 daha büyüktür. Bir bütünü tamamlamak için daha küçük pay kalan kesir, bütünün daha büyük bir bölümünü doldurur.",
+                "Payda büyüdüğü için her zaman daha büyük kesir seçemezsin. Burada iki açığın payı 1 olduğu için onları kolayca sıraladık. İşaretler karışık veya oranlar 1’in üstündeyse genel ortak payda ya da çapraz çarpım yolunu kullan. −30/31 ile −18/19 karşılaştırıldığında, pozitif değerlerin sırası eksi işaretiyle tersine döner."
+              ]
+            },
+            {
+              "title": "Parça, kalan ve ortak bütün için yöntem seç",
+              "paragraphs": [
+                "İlk iş, verilen miktarın ne olduğunu ve hangi bütüne ait olduğunu yazmak. Sonra bu miktarı doğrudan hesaplaman mı, yoksa ondan geriye doğru gitmen mi gerektiğine karar ver."
+              ],
+              "table": {
+                "headers": [
+                  "İlk hamle",
+                  "Geçerli örnek",
+                  "Yöntemin durduğu yer",
+                  "Aynı yapıda bir uygulama"
+                ],
+                "rows": [
+                  [
+                    "Bütünden parçayı bul",
+                    "108 sayfanın 5/9’u 60 sayfadır.",
+                    "108 kalan sayfaysa aynı çarpımı doğrudan kullanma.",
+                    "108 m ipliğin 5/9’u 60 m’dir."
+                  ],
+                  [
+                    "Parçadan bütüne dön",
+                    "Deponun 7/10’u 35 L ise 35÷(7/10)=50 L.",
+                    "35 L bütünse 7/10’u 24,5 L’dir. Bu kez çarpılır.",
+                    "Etiket fiyatının 3/4’ü 180 TL ise etiket 240 TL’dir."
+                  ],
+                  [
+                    "Kalan çarpanlarını çarp",
+                    "Önce 1/5, sonra kalanın 1/4’ü kullanılırsa (4/5)(3/4)=3/5 kalır.",
+                    "İkisi de başlangıcın kesri olsaydı 1−1/5−1/4=11/20 kalırdı.",
+                    "75 L’nin 4/5’i ilk filtreden, onun 3/4’ü ikinciden geçerse 45 L çıkar."
+                  ],
+                  [
+                    "Aynı bütünün ayrı parçalarını topla",
+                    "200 TL’nin ayrı 1/5’i ve 3/10’u harcanırsa 100 TL kalır.",
+                    "Aynı payda iki farklı büyüklüğün aynı bütüne ait olduğunu göstermez.",
+                    "200 g malzemenin 40 g ve 60 g’lık ayrı payları alınırsa 100 g kalır."
+                  ]
+                ]
+              }
+            },
+            {
+              "title": "Fark, değişim ve büyüklük için yöntem seç",
+              "paragraphs": [
+                "Hangi miktarın sabit kaldığını, adımların hangi değere uygulandığını ve sonucun kesirli olup olamayacağını birlikte denetle."
+              ],
+              "table": {
+                "headers": [
+                  "İlk hamle",
+                  "Geçerli örnek",
+                  "Yöntemin durduğu yer",
+                  "Aynı yapıda bir uygulama"
+                ],
+                "rows": [
+                  [
+                    "Parça farkını ortak bütüne bağla",
+                    "Aynı x’in 5/6’sı ile 1/2’si arasındaki fark 18 ise x/3=18, x=54.",
+                    "Farklı bütünden gelen parçalar tek x ile karşılaştırılamaz.",
+                    "54 cm’lik şeritte 45 cm ile 27 cm işaretleri arası 18 cm’dir."
+                  ],
+                  [
+                    "Her adımın yeni tabanını kullan",
+                    "80 önce 1/8 artıp yeni miktarın 1/9’u azalırsa 80·(9/8)·(8/9)=80.",
+                    "Aynı artış ve azalış oranı birbirini götürmez. 80·(9/8)·(7/8)=78,75.",
+                    "240 TL’ye önce 1/4 indirim ve yeni fiyata 1/3 artış uygulanırsa fiyat yine 240 TL olur."
+                  ],
+                  [
+                    "Bir bütüne eksiği karşılaştır",
+                    "20/21’in açığı 1/21, 24/25’in açığı 1/25’tir. 24/25 büyüktür.",
+                    "Negatiflere aynı sırayı taşıma. −24/25<−20/21.",
+                    "İki eşit tanktan %96 dolu olanın açığı, 20/21 dolu tanktan küçüktür."
+                  ],
+                  [
+                    "Sabit parçayı ve tam adedi denetle",
+                    "8 işaretli ve 16 işaretsiz parçaya 8 işaretsiz eklenirse işaretli pay 8/32=1/4.",
+                    "5 kişinin 1/2’si tam kişi adedi olarak 2,5 olamaz.",
+                    "8 L boya ile 16 L su karışımına 8 L su eklenirse boya oranı 1/4 olur."
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-geo-paralelkenar-ozel-dortgenler-032",
+        "after": "86d00d7c6519726b65f592915a2ccb63e384143cff55d045496a02eac9a71ffe",
+        "prior": {
+          "sections": [
+            {
+              "title": "Paralelkenar",
+              "text": [
+                "Karşı kenarlar/açılar eş; komşu açılar bütünler. Köşegenler birbirini ortalar.",
+                "Eş köşegen, dik köşegen veya açıortaylık genel özellik değildir."
+              ]
+            },
+            {
+              "title": "Alan ve parçalama",
+              "figureTitle": "Alanı taban ve dik uzaklıkla kur",
+              "text": [
+                "S=a·hₐ=b·hᵦ=ab·sinα. Kenarla yüksekliği eşleştir.",
+                "Köşegen alanı yarılar; iki köşegenin dört üçgeni eş alanlıdır.",
+                "Rastgele iç P için S(PAB)+S(PCD)=S/2; tek tek eşlik gerekmez."
+              ]
+            },
+            {
+              "title": "Dikdörtgen",
+              "text": [
+                "S=ab; Ç=2(a+b); d²=a²+b². Köşegenler eş ve birbirini ortalar.",
+                "Çevrel çember yarıçapı R=d/2; kare olmadıkça diklik/açıortaylık zorunlu değildir."
+              ]
+            },
+            {
+              "title": "Eşkenar dörtgen",
+              "text": [
+                "S=ef/2=a·h; Ç=4a. Köşegenler dik, birbirini ortalayan ve açıortay parçalardır.",
+                "(e/2)²+(f/2)²=a²; iç yarıçap r=S/(2a)=h/2."
+              ]
+            },
+            {
+              "title": "Kare ve genel köşegen denetimi",
+              "text": [
+                "Kare: S=a²=d²/2, d=a√2, r=a/2, R=d/2.",
+                "Paralelkenar: d₁²+d₂²=2(a²+b²).",
+                "Dışbükey dörtgende köşegen açısı θ ise S=d₁d₂sinθ/2."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "detail-211",
+        "after": "bfe6c3d0b17ce93742675f18d6321e616d155a611fd9eb0a93333a9f08939039",
+        "prior": {
+          "sections": [
+            {
+              "title": "Kesir hangi bütünün parçası?",
+              "text": [
+                "a/b kesri, bir bütün eşit b parçaya ayrıldığında bunların a tanesini anlatır; b sıfır olamaz. Bir miktarın 3/8'i, o miktarın 3/8 ile çarpımıdır. 160 sayfanın 3/8'i 60 sayfadır. Kesir bir orandır; sayfa veya litre birimi bütünden gelir. Aynı kesir farklı büyüklükteki bütünlerde aynı miktarı üretmez."
+              ]
+            },
+            {
+              "title": "Kullanılanı ve kalanı birbirinden ayır",
+              "text": [
+                "Bir paranın 2/7'si kullanıldıysa 5/7'si kalır; kullanılan ve kalan kesirlerin toplamı 1'dir. 350 TL için kullanılan 100, kalan 250 TL'dir. 'Geriye 250 TL kalmıştır' bilgisi (5/7)N=250 denklemini kurdurur. 2/7 ile 250'yi çarpmak, kalan verisini başlangıç sanmak olur."
+              ]
+            },
+            {
+              "title": "Kalanın kesri yeni bir taban kullanır",
+              "text": [
+                "Önce bütünün 1/4'ü, sonra kalanın 2/3'ü harcanırsa ilk kalan 3N/4'tür. İkinci harcama (2/3)(3N/4)=N/2, son kalan (1/3)(3N/4)=N/4 olur. Sonuç N−N/4−2N/3 değildir; ikinci kesir başlangıç N'ye değil, ara kalana aittir. Her adımda eski kalan, yeni işlemin bütünü olur."
+              ]
+            },
+            {
+              "title": "Aynı başlangıçtan verilen parçalar toplanır",
+              "text": [
+                "Bir bütçenin 1/4'ü kiraya ve başlangıç bütçesinin 1/3'ü ulaşıma ayrılıyorsa toplam pay 1/4+1/3=7/12'dir. Kalan 5/12 olur. İki kesrin aynı bütüne ait olması toplama için gerekli bilgidir. 'Sonra' sözcüğü tek başına kalanın kesri anlamına gelmez; referansı açık metinden bulmalısın."
+              ]
+            },
+            {
+              "title": "Parçaların farkından bütüne dön",
+              "text": [
+                "Aynı pozitif bütünün a/b'si ve c/d'si arasındaki miktar farkı F ise |a/b−c/d|·N=F yazılır. Paydaları eşitlemek ya da kesirleri ortak ölçekte karşılaştırmak gerekir. 3/4 ile 2/5'in farkı 15/20−8/20=7/20'dir. Farkın hangi yönde alındığı metinde belliyse büyük parçadan küçük çıkarılır."
+              ]
+            },
+            {
+              "title": "Geriye doğru çözüm hangi aşamayı geri alır?",
+              "text": [
+                "Son kalan R ve son aşamanın kalan oranı k biliniyorsa bir önceki miktar R/k'dır; k sıfır olmamalıdır. N'nin önce 1/3'ü, sonra kalanın 1/4'ü harcansın. Son kalan 90 ise sondan geri 90/(3/4)=120, sonra 120/(2/3)=180 bulunur. İleri model 180·2/3·3/4=90 ile aynı yapıdır."
+              ]
+            },
+            {
+              "title": "Kesirli büyüme ve kesirli azalma da çarpan kullanır",
+              "text": [
+                "Bir miktar 1/5 oranında artarsa yeni değer 6N/5'tir; 1/5'i kalır denirse N/5'tir. '1/5 azalır' ise 4N/5 olur. Benzer görünen bu ifadeler farklı çarpanlar üretir. İki kez aynı oranda artışta ikinci artış büyümüş miktara uygulanır; her seferinde aynı sabit miktarı eklemiş olmazsın."
+              ]
+            },
+            {
+              "title": "Uzunluk, hız ve birim kontrolü",
+              "text": [
+                "Bir telin bir ucundan L/5 kesilirse kalan telin orta noktası, kesilen uzunluğun yarısı kadar yer değiştirir: L/10. Eski ve yeni orta noktaları aynı koordinat doğrusu üzerinde yazmak bu sonucu açıklar. Her iki uçtan eşit kesim yapılırsa orta nokta yer değiştirmez; tek uç koşulunu gözden kaçırma."
+              ]
+            },
+            {
+              "title": "Kalan sıfırsa önce kalan oranına bak",
+              "text": [
+                "R=(1−r)x ve x≥0. 0≤r<1 ise x=R/(1−r). r=1, R=0 iken x belirlenemez. r=1, R>0 iken veriler çelişir. Hacim kesirli olabilir, tam nesne adedi olamaz."
+              ]
+            },
+            {
+              "title": "Bütün değişirse sabit kalan parçayı izle",
+              "text": [
+                "Sabit parça sayısını yeni bütüne böl. 16/40 oranında yalnız bütüne 8 eklenirse 16/48=1/3 olur. Aynı payda, aynı bütün demek değildir."
+              ]
+            },
+            {
+              "title": "Deneme bütününü gerçek miktardan ayır",
+              "text": [
+                "Başlangıca bağlı paylar için paydaların EKOK’u deneme bütünü olabilir. Gerçek bütünü verilerle çöz. Ardışık kesirlerde önce payı başlangıcın kesri olarak yaz, sonra tam sayı adedini denetle."
+              ]
+            },
+            {
+              "title": "Bir bütüne kalan eksiği karşılaştır",
+              "text": [
+                "0 ile 1 arasındaki iki kesrin 1’e açıklarını yaz. Daha küçük açık daha büyük kesir demektir. 30/31>18/19, çünkü 1/31<1/19."
+              ]
+            },
+            {
+              "title": "Parça, kalan ve ortak bütün için yöntem seç",
+              "text": [
+                "İstenen ve bilinen miktarı ayır. Her kesrin bütünü açık olmalı."
+              ],
+              "table": {
+                "headers": [
+                  "İlk hamle",
+                  "Geçerli örnek",
+                  "Yöntemin durduğu yer",
+                  "Aynı yapıda bir uygulama"
+                ],
+                "rows": [
+                  [
+                    "Bütünden parçayı bul",
+                    "108 sayfanın 5/9’u 60 sayfadır.",
+                    "108 kalan sayfaysa aynı çarpımı doğrudan kullanma.",
+                    "108 m ipliğin 5/9’u 60 m’dir."
+                  ],
+                  [
+                    "Parçadan bütüne dön",
+                    "Deponun 7/10’u 35 L ise 35÷(7/10)=50 L.",
+                    "35 L bütünse 7/10’u 24,5 L’dir. Bu kez çarpılır.",
+                    "Etiket fiyatının 3/4’ü 180 TL ise etiket 240 TL’dir."
+                  ],
+                  [
+                    "Kalan çarpanlarını çarp",
+                    "Önce 1/5, sonra kalanın 1/4’ü kullanılırsa (4/5)(3/4)=3/5 kalır.",
+                    "İkisi de başlangıcın kesri olsaydı 1−1/5−1/4=11/20 kalırdı.",
+                    "75 L’nin 4/5’i ilk filtreden, onun 3/4’ü ikinciden geçerse 45 L çıkar."
+                  ],
+                  [
+                    "Aynı bütünün ayrı parçalarını topla",
+                    "200 TL’nin ayrı 1/5’i ve 3/10’u harcanırsa 100 TL kalır.",
+                    "Aynı payda iki farklı büyüklüğün aynı bütüne ait olduğunu göstermez.",
+                    "200 g malzemenin 40 g ve 60 g’lık ayrı payları alınırsa 100 g kalır."
+                  ]
+                ]
+              }
+            },
+            {
+              "title": "Fark, değişim ve büyüklük için yöntem seç",
+              "text": [
+                "Ortak bütünü, adımların sırasını ve tam sayı koşulunu denetle."
+              ],
+              "table": {
+                "headers": [
+                  "İlk hamle",
+                  "Geçerli örnek",
+                  "Yöntemin durduğu yer",
+                  "Aynı yapıda bir uygulama"
+                ],
+                "rows": [
+                  [
+                    "Parça farkını ortak bütüne bağla",
+                    "Aynı x’in 5/6’sı ile 1/2’si arasındaki fark 18 ise x/3=18, x=54.",
+                    "Farklı bütünden gelen parçalar tek x ile karşılaştırılamaz.",
+                    "54 cm’lik şeritte 45 cm ile 27 cm işaretleri arası 18 cm’dir."
+                  ],
+                  [
+                    "Her adımın yeni tabanını kullan",
+                    "80 önce 1/8 artıp yeni miktarın 1/9’u azalırsa 80·(9/8)·(8/9)=80.",
+                    "Aynı artış ve azalış oranı birbirini götürmez. 80·(9/8)·(7/8)=78,75.",
+                    "240 TL’ye önce 1/4 indirim ve yeni fiyata 1/3 artış uygulanırsa fiyat yine 240 TL olur."
+                  ],
+                  [
+                    "Bir bütüne eksiği karşılaştır",
+                    "20/21’in açığı 1/21, 24/25’in açığı 1/25’tir. 24/25 büyüktür.",
+                    "Negatiflere aynı sırayı taşıma. −24/25<−20/21.",
+                    "İki eşit tanktan %96 dolu olanın açığı, 20/21 dolu tanktan küçüktür."
+                  ],
+                  [
+                    "Sabit parçayı ve tam adedi denetle",
+                    "8 işaretli ve 16 işaretsiz parçaya 8 işaretsiz eklenirse işaretli pay 8/32=1/4.",
+                    "5 kişinin 1/2’si tam kişi adedi olarak 2,5 olamaz.",
+                    "8 L boya ile 16 L su karışımına 8 L su eklenirse boya oranı 1/4 olur."
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
   }
 ]

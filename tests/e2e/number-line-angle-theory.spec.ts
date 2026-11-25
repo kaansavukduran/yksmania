@@ -818,3 +818,45 @@ test("The missing vertex and both diagonal midpoints follow the same coordinates
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Taking the same fraction from the remainder and from the original amount gives different results", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Kalanın kesri yeni bir taban kullanır");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto("/#/lesson?id=kesir-problemleri");
+  for (let step = 0; step < 3; step++) await next.press("Enter");
+  await expect(model).toContainText("120 − 30 − 30 = 60 birim kalır");
+  await expect(model).toContainText("120 − 30 − 40 = 50 birim kalır");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-211");
+  for (let step = 0; step < 3; step++) await next.press("Enter");
+  await expect(model).toContainText("120 − 30 − 40 = 50 birim kalır");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Doubling both rhombus diagonals doubles the circle radius and quadruples area", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-paralelkenar-ozel-dortgenler-032";
+  const model = figure(page, "Eşkenar dörtgende diklik ve yarım köşegen");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("Alan = 8·6/2 = 24 birim²");
+  await expect(model).toContainText("r = 24/10 = 2,4 birim");
+  await next.press("Enter");
+  await expect(model).toContainText("Kenar = √(8² + 6²) = 10 birim");
+  await expect(model).toContainText("Alan = 16·12/2 = 96 birim²");
+  await expect(model).toContainText("r = 96/20 = 4,8 birim");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await next.press("Enter");
+  await expect(model).toContainText("r = 96/20 = 4,8 birim");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

@@ -155,6 +155,11 @@ export interface CheatSheet {
 }
 
 const revisedSectionTextByLesson = new Map([
+  ["kesir-problemleri", new Map([
+    ["Kalanın kesri yeni bir taban kullanır", [
+      "120’den önce 1/4, sonra ara kalanın 1/3’ü alınırsa 60 kalır. İki kesir de ilk bütüne aitse 50 kalır. İkinci kesri hangi miktarla çarptığını yaz.",
+    ]],
+  ])],
   ["sayi-problemleri", new Map([
     ["Kapasite eşitliği birimlerin oranını buldurur", [
       "Toplam kapasite eşit. 10a+4b=4a+7b için ortak terimleri çıkarınca 6a=3b ve b=2a. İki düzen de 18 küçük kutunun yerini kullanır.",

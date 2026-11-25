@@ -580,7 +580,7 @@ const packs: QuadrilateralPack032[] = [
         title: "Eşkenar dörtgende diklik ve yarım köşegen",
         paragraphs: [
           "Dört kenarı da a olan paralelkenar eşkenar dörtgendir. Köşegenler birbirini ortalar; ayrıca bir köşegenin iki yanındaki eş üçgenler köşe açısını ikiye böler. Komşu bütünler açıların yarılarından köşegenlerin dik kesiştiği de görülür. Dört köşenin dik olması zorunlu değildir; bu ek koşul kareyi verir.",
-          "Köşegenler e ve f ise yarımlarıyla kenar bir dik üçgen kurar: (e/2)²+(f/2)²=a². Alan S=ef/2=a·h=a²sinα, çevre 4a’dır. İç teğet çember için yarıçap r=h/2=S/(2a) olur; çünkü karşı paralel kenarlara teğet çemberin çapı bu kenarlar arasındaki uzaklıktır. Radyal uzunluğu alanla veya çevreyle karıştırma.",
+          "Köşegenler e ve f ise yarımlarıyla kenar bir dik üçgen kurar: (e/2)²+(f/2)²=a². Alan S=ef/2=a·h=a²sinα, çevre 4a’dır. Çemberin çapı karşı kenarlar arasındaki h uzaklığıdır. 16 ve 12 köşegenlerinden 8 ve 6 yarıları, kenar 10, alan 96 ve yarı çevre 20 çıkar. Yarıçap r=S/(2a)=96/20=4,8 birimdir. Alanı kenara bölünce bulunan 9,6 yüksekliğinin yarısı da 4,8’dir.",
         ],
       },
       {
@@ -1105,6 +1105,7 @@ const summaries: Record<string, CheatSection[]> = {
     },
     {
       title: "Eşkenar dörtgen",
+      figureTitle: "Eşkenar dörtgende diklik ve yarım köşegen",
       text: [
         "S=ef/2=a·h; Ç=4a. Köşegenler dik, birbirini ortalayan ve açıortay parçalardır.",
         "(e/2)²+(f/2)²=a²; iç yarıçap r=S/(2a)=h/2.",
