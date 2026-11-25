@@ -2,7 +2,7 @@
 TYT;Kimya;Simyadan kimyaya;detail-139;simyadan-kimyaya;1;9;4;9;2;1;3
 TYT;Kimya;Kimya disiplinleri;detail-140;kimya-disiplinleri;2;7;3;7;2;1;3
 TYT;Kimya;Kimyanın sembolik dili;detail-141;sembolik-dil;3;8;4;8;2;1;3
-TYT;Kimya;Kimyada iş sağlığı ve güvenliği;detail-142;kimya-guvenlik;4;6;3;6;2;1;3
+TYT;Kimya;Kimyada iş sağlığı ve güvenliği;detail-142;kimya-guvenlik;4;7;3;7;2;1;3
 TYT;Kimya;Atom modelleri;detail-143;atom-modelleri;5;7;3;7;2;1;3
 TYT;Matematik;Temel Kavramlar;detail-194;temel-kavramlar;6;8;5;8;3;1;5
 TYT;Matematik;Tek Çift Pozitif Negatif Sayılar;detail-195;tek-cift-isaret;7;6;4;6;2;1;5
@@ -20,7 +20,7 @@ TYT;Fizik;Madde bilgisi;detail-115;madde-ozkutle;18;25;8;25;8;1;4
 TYT;Fizik;Doğrusal hareket;detail-116;dogrusal-hareket;19;25;8;25;8;1;4
 TYT;Tarih;Orta Çağda Dünya;detail-228;ortacag-dunya;20;22;6;22;6;1;3
 TYT;Tarih;İlk ve Orta Çağlarda Türk Dünyası;detail-229;ilk-turk-dunyasi;21;20;6;20;6;2;3
-TYT;Biyoloji;Su, Asit-Baz ve Tuz;detail-4;su-asit-baz-tuz;22;22;6;22;6;1;3
+TYT;Biyoloji;Su, Asit-Baz ve Tuz;detail-4;su-asit-baz-tuz;22;23;6;23;6;1;3
 TYT;Biyoloji;Karbohidratlar;detail-5;karbohidratlar;23;18;6;18;6;1;6
 TYT;Biyoloji;Lipitler - Yağlar;detail-6;lipitler;24;18;6;18;6;1;5
 TYT;Tarih;İslam Medeniyetinin Doğuşu;detail-230;islam-medeniyetinin-dogusu;25;20;6;20;6;2;2
@@ -29,7 +29,7 @@ TYT;Biyoloji;Proteinler;detail-7;proteinler;27;20;6;20;6;1;5
 TYT;Kimya;Atomun temel tanecikleri;detail-144;atomun-temel-tanecikleri;28;20;6;20;6;1;3
 TYT;Kimya;Atom türleri izotop izoton izobar izoelektronik;detail-145;izotop-izoton-izobar;29;20;6;20;6;1;3
 TYT;Kimya;Periyodik cetvel genel özellikler;detail-146;periyodik-sistem;30;7;4;7;2;1;3
-TYT;Fizik;Newton hareket yasaları;detail-117;newton;31;12;6;12;4;1;3
+TYT;Fizik;Newton hareket yasaları;detail-117;newton;31;13;6;13;4;1;3
 TYT;Fizik;Enerji ve hareket;detail-118;enerji-ve-hareket;32;31;15;31;15;1;4
 TYT;Matematik;Bölme Bölünebilme Kuralları;detail-200;bolme-bolunebilme;33;18;6;18;6;1;6
 TYT;Matematik;Ebob Ekok;detail-201;ebob-ekok;34;18;6;18;6;1;6

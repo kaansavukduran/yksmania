@@ -18,6 +18,36 @@ interface TheorySupplement {
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "newton": [{
+    title: "Yatay ve düşey kuvvetleri ayrı topla",
+    figureTitle: "Yatay ve düşey kuvvetleri ayrı topla",
+    paragraphs: [
+      "Önce hedefi tek seç: 4 kg kutu. İp 18 N sağa, sürtünme 6 N sola, yüzey 40 N yukarı, Dünya 40 N aşağı kuvvet uygular. Sağ ve yukarı pozitif. Hız ve ivme kuvvet oku değildir.",
+      "Yatay toplam 18−6=12 N sağa, düşey toplam 40−40=0. Düşey ivme sıfır, yatay ivme 12/4=3 m/s² sağa. Ağırlık ile normal aynı kutuya etki ettiği için bir etki-tepki çifti oluşturmaz.",
+    ],
+    summary: "Yatay kuvvet 12 N sağa, düşey kuvvet toplamı 0 N. İvme 3 m/s² sağa. Bileşkeyi kuvvet listesine ikinci kez ekleme.",
+    appendSection: true,
+  }],
+  "kimya-guvenlik": [{
+    title: "İlk ve son büret okumasının farkını al",
+    figureTitle: "İlk ve son büret okumasının farkını al",
+    paragraphs: [
+      "Bu bürette sayılar yukarıdan aşağıya artar. İki okuma aynı aletten ve aynı ölçekten gelirse 7,5−2,0=5,5 mL verilmiş olur. Son okuma tek başına aktarılan hacmi göstermez.",
+      "Su gibi camı ıslatan sıvının yüzeyi çukur görünebilir. Göz hizasını ölçü çizgisiyle eşleştir ve uygun durumda çukurun alt noktasını oku. Sıvı değiştiğinde aynı yüzey biçimini varsayma.",
+    ],
+    summary: "İlk okuma 2,0 mL ve son okuma 7,5 mL ise fark 5,5 mL. Aynı aletten okunmuş iki ölçek değeri gerekir.",
+    appendSection: true,
+  }],
+  "su-asit-baz-tuz": [{
+    title: "Eşit enerjide iki sıvının sıcaklık artışını karşılaştır",
+    figureTitle: "Eşit enerjide iki sıvının sıcaklık artışını karşılaştır",
+    paragraphs: [
+      "Öz ısı, bir gram maddenin sıcaklığını 1 °C değiştirmek için gereken enerjidir. Her sıvı 100 g. A’nın öz ısısı 4, B’ninki 2 J/(g·°C). Isı kaybı ve hâl değişimi yok.",
+      "Her birine 800 J verildiğinde ΔT=Q/(m·c). A’da 800/400=2 °C, B’de 800/200=4 °C. Daha büyük öz ısı, aynı kütle ve enerjide daha küçük sıcaklık artışı demektir.",
+    ],
+    summary: "100 g ve 800 J için A 2 °C, B 4 °C ısınır. Hâl değişimi yoksa ΔT=Q/(m·c). Sıcaklık artışı ile verilen enerjiyi ayır.",
+    appendSection: true,
+  }],
   "dogrusal-hareket": [{
     title: "Hız sıfırı geçince alanı ayrı hesapla",
     figureTitle: "Hız sıfırı geçince alanı ayrı hesapla",

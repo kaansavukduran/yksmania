@@ -1774,3 +1774,68 @@ test("Mineral limitation follows fraction of the requirement and can tie", async
   }
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Newton diagram maps four interactions to two force sums", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Yatay ve düşey kuvvetleri ayrı topla");
+  for (const route of ["/#/lesson?id=newton", "/#/cheatsheets?topic=detail-117"]) {
+    await page.goto(route);
+    const image = model.getByRole("img");
+    for (const label of ["İp 18 N", "Sürtünme 6 N", "Normal 40 N", "Ağırlık 40 N"]) {
+      await expect(image.locator("text").filter({ hasText: label })).toHaveCount(1);
+    }
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("Yatay: 18 − 6 = 12 N sağa. Düşey: 40 − 40 = 0 N.");
+    await expect(model).toContainText("Yatay ivme 12 ÷ 4 = 3 m/s² sağa.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("A burette reading is a difference on the same downward scale", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "İlk ve son büret okumasının farkını al");
+  for (const route of ["/#/lesson?id=kimya-guvenlik", "/#/cheatsheets?topic=detail-142"]) {
+    await page.goto(route);
+    await expect(model).toContainText("7,5 − 2 = 5,5 mL");
+    const slider = model.getByRole("slider", { name: /Son büret okuması/ });
+    const original = await model.getByRole("img").innerHTML();
+    await slider.press("Home");
+    await expect(model).toContainText("2 − 2 = 0 mL");
+    await slider.press("End");
+    await expect(model).toContainText("10 − 2 = 8 mL");
+    expect(await model.getByRole("img").innerHTML()).not.toBe(original);
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("A shared energy value drives both specific heat bars", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Eşit enerjide iki sıvının sıcaklık artışını karşılaştır");
+  for (const route of ["/#/lesson?id=su-asit-baz-tuz", "/#/cheatsheets?topic=detail-4"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Sıvı A: 800 ÷ (100 × 4) = 2 °C.");
+    await expect(model).toContainText("Sıvı B: 800 ÷ (100 × 2) = 4 °C.");
+    const slider = model.getByRole("slider", { name: /Her sıvıya verilen enerji/ });
+    const original = await model.getByRole("img").innerHTML();
+    await slider.press("Home");
+    await expect(model).toContainText("Sıvı A: 0 ÷ (100 × 4) = 0 °C.");
+    await expect(model).toContainText("Sıvı B: 0 ÷ (100 × 2) = 0 °C.");
+    await slider.press("End");
+    await expect(model).toContainText("Sıvı A: 1200 ÷ (100 × 4) = 3 °C.");
+    await expect(model).toContainText("Sıvı B: 1200 ÷ (100 × 2) = 6 °C.");
+    expect(await model.getByRole("img").innerHTML()).not.toBe(original);
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});

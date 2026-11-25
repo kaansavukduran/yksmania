@@ -1,8 +1,8 @@
 {
-  "version": "0.184.0",
+  "version": "0.185.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Doğrusal harekette işaretli alan, kimyasal formülde parantez ve katsayı, mineral gereksiniminde karşılanma oranı kaynak örnekleriyle karşılaştırılır.",
-    "en": "Signed motion areas, grouped formula coefficients and mineral requirement ratios use worked source examples."
+    "tr": "Newton kuvvetlerini iki eksende topla, aynı bürette iki okumanın farkını al ve eşit enerjide iki sıvının sıcaklık değişimini grafikle karşılaştır.",
+    "en": "Separate force sums by axis, subtract two readings on one burette, and compare temperature change for two liquids receiving the same energy."
   }
 }

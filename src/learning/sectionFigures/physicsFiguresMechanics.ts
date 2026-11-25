@@ -323,7 +323,35 @@ const dogrusalHareket: Record<string, FigureDef> = {
   },
 };
 
+const separateForceAxes: FigureDef = {
+  caption: "Yatay ve düşey kuvvetleri ayrı topla. Oklar yön gösterir, ortak kuvvet ölçeğiyle çizilmemiştir.",
+  alt: "4 kg kutuya ip sağa 18 N, zemin sola sürtünmeyle 6 N uygular. Zemin 40 N yukarı, Dünya 40 N aşağı kuvvet uygular.",
+  steps: ["Etkileşimleri göster", "Bileşkeleri ve ivmeyi bul"],
+  draw: (_, step) => {
+    const mass = 4, tension = 18, friction = 6, weight = mass * 10, normal = weight;
+    const netX = tension - friction, netY = normal - weight;
+    return {
+      els: [
+        ...block(-0.8, -0.45, 1.6, 0.9, "4 kg"),
+        ...force(v(0.8, 0), v(1.8, 0), `İp ${tension} N`, "a", "n"),
+        ...force(v(-0.8, 0), v(-1.8, 0), `Sürtünme ${friction} N`, "warn", "n"),
+        ...force(v(0, 0.45), v(0, 1.25), `Normal ${normal} N`, "b", "n"),
+        ...force(v(0, -0.45), v(0, -1.25), `Ağırlık ${weight} N`, "b", "s"),
+        txt(v(-4.5, 2.5), "", "c"),
+        txt(v(4.5, -2.5), "", "c"),
+      ],
+      readout: step === 0
+        ? ["İp sağa, sürtünme sola yönelir. Normal yukarı, ağırlık aşağı yönelir."]
+        : [
+          `Yatay: ${tension} − ${friction} = ${netX} N sağa. Düşey: ${normal} − ${weight} = ${netY} N.`,
+          `Yatay ivme ${netX} ÷ ${mass} = ${netX / mass} m/s² sağa.`,
+        ],
+    };
+  },
+};
+
 const newton: Record<string, FigureDef> = {
+  "Yatay ve düşey kuvvetleri ayrı topla": separateForceAxes,
   [forcePairsTitle]: newtonForcePairsFigure,
   [frictionThresholdTitle]: frictionThresholdFigure,
   "Hareketi tarif etmek ile nedenini açıklamak": {

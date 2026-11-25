@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { sectionFigures } from "../src/learning/sectionFigures/registry";
 import { sectionFigureGuideIds } from "../src/learning/sectionFigures/figureGuideIds";
-import { lessonGuides } from "../src/learning/guides";
+import { lessonGuides, studyGuide } from "../src/learning/guides";
 import { historyFigures061TytWorld } from "../src/learning/sectionFigures/historyFigures061TytWorld";
 import { historyFigures061TytOttoman } from "../src/learning/sectionFigures/historyFigures061TytOttoman";
 import { historyFigures061TytEarly } from "../src/learning/sectionFigures/historyFigures061TytEarly";
@@ -41,7 +41,7 @@ describe("Forge061 TYT bölüm figürleri", () => {
   it("her figür başlığı rehberdeki bir bölüm başlığıyla birebir eşleşir", () => {
     for (const p of PACKS)
       for (const [g, figs] of Object.entries(p)) {
-        const titles = new Set((lessonGuides.get(g)?.sections ?? []).map((s) => s.title));
+        const titles = new Set((studyGuide(g)?.sections ?? []).map((s) => s.title));
         for (const t of Object.keys(figs)) expect(titles.has(t), `${g} / ${t}`).toBe(true);
       }
   });
