@@ -261,7 +261,19 @@ export const parityGuide: LessonGuide = {
       paragraphs: [
         "Bölen sıfır olamaz. Bölüm tanımlı olsa da tam sayı olmak zorunda değildir. Çift/çift için 14/2=7 tek, 16/2=8 çift, 2/4=1/2 ise tam sayı değildir. Bu nedenle çift/çift için tek sonuç yazan bir tablo yanlıştır.",
         "Tek bir tam sayının çift bir tam sayıya bölümü tam sayı olamaz; çift×tam sayı sonucu tek olamazdı. Tek/tek bölüm tam sayıysa tek, çift/tek bölüm tam sayıysa çifttir. Örneğin 15/3=5 tek; fakat 3/5 için tek–çift denmez. İşaret ile pariteyi iki ayrı satırda kontrol et.",
+        "Bölüm tam sayıysa bölünen = bölen × bölüm yaz. Sıfır olmayan iki sayıda 2 çarpanlarının sayısını karşılaştır. Bu sayı bölünende ve bölende aynıysa bölüm tek, bölünende daha çoksa çifttir. Çünkü bölen ile bölüm çarpılırken ikisinin 2 çarpanları birleşir. Bölünen 0 ise bölen sıfırdan farklı olduğu sürece bölüm 0 ve çifttir.",
       ],
+      table: {
+        layout: "table",
+        headers: ["İşlem", "Bölüm", "Tek–çift kontrolü"],
+        rows: [
+          ["−18 ÷ 6", "−3 tam sayıdır", "Her iki sayıda da bir 2 var. Sonuç tek."],
+          ["24 ÷ 6", "4 tam sayıdır", "24’te üç, 6’da bir 2 var. Sonuç çift."],
+          ["14 ÷ 6", "7/3 tam sayı değildir", "Tek veya çift sınıflaması yapılamaz."],
+          ["0 ÷ 6", "0 tam sayıdır", "Sıfır çift."],
+          ["12 ÷ 0", "Bölüm tanımsızdır", "Sınıflandırılacak sonuç yok."],
+        ],
+      },
     },
     {
       title: "Kesinlik sorularında koşulları cebirle birleştir",
@@ -324,7 +336,7 @@ export const parityGuide: LessonGuide = {
         {
           label: "İki tam sayı örneği",
           expression: "18/6=3; 24/6=4",
-          explanation: "Aynı koşullardan hem tek hem çift sonuç elde edilir.",
+          explanation: "18 ve 6’da birer 2 çarpanı var. 24’te üç, 6’da bir 2 çarpanı var. Koşullar aynı görünse de bölümün tek–çift özelliği değişir.",
         },
         {
           label: "Tam sayı olmayan örnek",
@@ -376,5 +388,5 @@ export const parityGuide: LessonGuide = {
     },
   ],
   source:
-    "MEBİ TYT Matematik Konu Özetleri PDF s.14–16 (basılı 12–14); OGM Temel Kavramlar–Sayılar PDF s.4,8; Aurelia Tek Çift Pozitif Negatif Sayılar s.1–4. Özgün açıklama, etkileşim ve öğretim örnekleri; resmî soru değildir.",
+    "MEBİ TYT Matematik Konu Özetleri PDF s.14–16 (basılı 12–14); OGM Temel Kavramlar–Sayılar PDF s.4,8; Aurelia Tek Çift Pozitif Negatif Sayılar içerik 5.1, fiziksel s.1–5, 10 ve 14. Özgün açıklama, etkileşim ve öğretim örnekleri; resmî soru değildir.",
 };

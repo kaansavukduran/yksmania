@@ -42,6 +42,7 @@ describe("Forge060 TYT Matematik bölüm figürleri", () => {
         "temel-kavramlar": 6,
         "bilimsel-gosterim-katsayi": 5,
         "asal-sayilar": 5,
+        "sayi-basamaklari": 5,
       };
       expect(Object.keys(sectionFigures[g] ?? {}).length, g).toBe(expectedCounts[g] ?? 4);
     }
@@ -159,4 +160,49 @@ describe("Forge060 TYT Matematik bölüm figürleri", () => {
     expect(frame("sayi-problemleri", "İşlemin cümledeki sırasını parantezle koru", 10).readout).toContain("4x − 3 = 37, 4(x − 3) = 28");
     expect(frame("sayi-problemleri", "En az ve en çok eşitlikten fazlasını söyler", 95).readout).toContain("En çok 7 tane: 7·12 = 84 ≤ 95 < 96");
   });
+});
+
+it("places the angle bisector and the median at different points on AC", () => {
+  const def = fig("tyt-geo-ucgende-acilar-031", "Açıortay ve orta nokta");
+  const bisector = def.draw(0, 0);
+  const median = def.draw(0, 1);
+  const points = (elements: typeof bisector.els) => new Map(
+    elements.filter((el) => el.k === "pt").map((point) => [point.label, point.p]),
+  );
+  const { A, C, D, M } = {
+    A: points(bisector.els).get("A")!,
+    C: points(bisector.els).get("C")!,
+    D: points(bisector.els).get("D")!,
+    M: points(median.els).get("M")!,
+  };
+  const dist = (p: typeof A, q: typeof A) => Math.hypot(p[0] - q[0], p[1] - q[1]);
+  expect(dist(M, A)).toBeCloseTo(dist(M, C), 10);
+  expect(dist(D, M)).toBeGreaterThan(0.01);
+  expect(dist(A, D) + dist(D, C)).toBeCloseTo(dist(A, C), 10);
+  expect(bisector.readout?.join(" ")).toContain("= 95°");
+  expect(median.els.filter((el) => el.k === "ticks")).toHaveLength(2);
+});
+
+it("requires a missing sequence term to occupy one of the given positions", () => {
+  const def = fig("ardisik-sayilar", "Silinen terim adayını listede doğrula");
+  expect(def.draw(161, 0).readout).toEqual([
+    "Aday: 175 − 161 = 14.",
+    "14 listede yok. Bu toplam mümkün değil.",
+  ]);
+  expect(def.draw(162, 0).readout).toEqual([
+    "Aday: 175 − 162 = 13.",
+    "13 listede. Bu terim silinebilir.",
+  ]);
+  expect(def.draw(140, 0).readout?.[1]).toContain("35 listede yok");
+  expect(def.draw(144, 0).readout?.[1]).toContain("31 listede.");
+});
+
+it("computes ramp slope and hypotenuse from its displayed side lengths", () => {
+  const def = fig("tyt-geo-dik-ucgen-031", "Dik yolda eğim ve uzunluk");
+  expect(def.draw(5, 0).readout).toEqual([
+    "Eğim: tan α = 5/12.",
+    "Eğik yol: √(12² + 5²) = 13 m.",
+  ]);
+  expect(def.draw(9, 0).readout?.[1]).toContain("= 15 m");
+  expect(def.draw(6, 0).readout?.[1]).toContain("≈ 13,42 m");
 });

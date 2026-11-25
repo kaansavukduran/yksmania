@@ -525,9 +525,11 @@ export const forge026MathGuides: LessonGuide[] = [
       },
       {
         title: "Elde ve sıfır kısıtlarını son aşamaya bırakma",
+        figureTitle: "Birlikleri onluklara grupla",
         paragraphs: [
           "Bir sütundaki rakamların ve önceki eldenin toplamı T olsun. Sütuna T’nin 10’a bölümünden kalan yazılır; sonraki sütuna tam bölüm taşınır. İki rakam toplanırken elde en çok 1, üç rakam toplanırken en çok 2 olabilir. Örneğin birler toplamı 26 ise 6 yazılır, 2 onluk taşınır. Elde, gizli bir rakam değil tam bir onluk aktarımıdır.",
           "Sayı kurarken ilk konumu sıfır olmayan rakamla doldur. Verilen rakamları birer kez kullanarak en küçük yazımda başa en küçük sıfır olmayanı, ardından varsa sıfırı ve kalanları artan sırayla koy. En büyükte büyük rakamları yüksek ağırlıklara yerleştir. Rakam tekrarına izin verilip verilmediğini her adımda koru; kullanılmamış rakam listesini güncelle.",
+          "9+9+d modelinde d, üçüncü toplananın birler rakamıdır. d=1 iken 19 birliğin 10’u taşınır, 9’u kalır. d=2 olunca 20 birlik iki tam onluk eder, bu yüzden birler hanesine 0 yazılır. d=9 iken 27 birlikten 20’si taşınır ve 7’si kalır.",
         ],
       },
       {
@@ -819,7 +821,7 @@ export const forge026MathGuides: LessonGuide[] = [
       },
     ],
     source:
-      "MEBİ TYT Matematik Sayı Basamakları ve Aurelia ilgili kopya kâğıdının okunan bölümleriyle karşılaştırılmış özgün ayrıntılı anlatım. Yeni örnekler ve alıştırmalar resmî sınav sorusu değildir.",
+      "MEBİ TYT Matematik Sayı Basamakları ve Aurelia ilgili kopya kâğıdının okunan bölümleriyle karşılaştırılmış özgün anlatım. Elde modeli Sayı Basamakları 1.1 fiziksel s. 3 ve 13 ile eşleşir. Yeni örnekler ve alıştırmalar resmî sınav sorusu değildir.",
   },
   {
     id: "bolme-bolunebilme",
@@ -855,8 +857,21 @@ export const forge026MathGuides: LessonGuide[] = [
         title: "Ayrı şartlar çarpılır mı?",
         paragraphs: [
           "Aralarında asal a ve b’ye tam bölünen sayı ab’ye de tam bölünür. Çünkü iki koşul birbirinde olmayan asal kuvvetleri ister.3 ve 4’ün birlikte sağlanması 12’ye yeter;2 ve 4 ise 8’e yetmez.4 koşulu 2’yi zaten içerir. Karşı örnek olarak 20,2’ye ve 4’e bölünür ama 8’e bölünmez.",
-          "Genel ortak şart EKOK(a,b)’dir.6 için 2 ve 3;12 için 3 ve 4;18 için 2 ve 9;24 için 3 ve 8 birlikte sınanır.25 için 100’ün kat kısmı çıkarıldığından son iki blok 00,25,50 veya 75 olmalıdır. Bir bileşik bölenin yalnız bazı çarpanlarını denetlemek yeterli sayılmaz; gereken bütün asal kuvvetleri karşıla.",
+          "Genel ortak şart EKOK(a,b)’dir.6 için 2 ve 3;12 için 3 ve 4;18 için 2 ve 9;24 için 3 ve 8 birlikte sınanır.25 için 100’ün kat kısmı çıkarıldığından son iki blok 00,25,50 veya 75 olmalıdır. Bir bileşik bölenin gereken bütün asal kuvvetlerini karşıla. 4 ve 6’nın küçük ortak katları 12, 24, 36’dır. Tabloda 12’nin iki koşula yettiğini, 24’ün gerekmediğini gör.",
         ],
+        table: {
+          layout: "table",
+          headers: ["İki tam bölünme şartı", "En küçük ortak kat", "Bölenleri çarparsan"],
+          rows: [[2, 4], [3, 4], [4, 6]].map(([first, second]) => {
+            const shared = gcd026(first, second);
+            const product = first * second;
+            return [
+              `${first} ve ${second}`,
+              String(product / shared),
+              shared === 1 ? `${product} yeterli ve gerekli` : `${product} gereksiz güçlü`,
+            ];
+          }),
+        },
       },
       {
         title: "Kalanlarla işlem yap, yeniden küçült",
@@ -1155,7 +1170,7 @@ export const forge026MathGuides: LessonGuide[] = [
       },
     ],
     source:
-      "MEBİ TYT Matematik Bölünebilme Kuralları 1–2, OGM 9 Kalanlı Bölme/Bölünebilme özetleri ve Aurelia ilgili notunun okunan bölümleriyle karşılaştırılan özgün anlatım. Yeni örnekler ve sorular resmî sınav sorusu değildir.",
+      "MEBİ TYT Matematik Bölünebilme Kuralları 1–2, OGM 9 Kalanlı Bölme/Bölünebilme özetleri ve Aurelia ilgili notunun okunan bölümleriyle karşılaştırılan özgün anlatım. Bölme Bölünebilme Kuralları 1.1 fiziksel s. 3–4: ortak kat karşılaştırması. Yeni örnekler ve sorular resmî sınav sorusu değildir.",
   },
   {
     id: "ebob-ekok",

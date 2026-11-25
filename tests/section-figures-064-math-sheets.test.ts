@@ -30,8 +30,8 @@ const entries = Object.entries(mathFigures064Sheets).flatMap(([g, defs]) => Obje
 const read = (def: FigureDef, value: number, step = 0, pick = -1) => (def.draw(value, step, pick).readout ?? []).join(" | ");
 
 describe("Forge064 TYT Matematik kopya kâğıdı figürleri", () => {
-  it("16 figür, gerçek bölüm başlıkları, kayıtta etkin tanım ve önceden figürsüz bölümler", () => {
-    expect(entries.length).toBe(16);
+  it("17 figür, gerçek bölüm başlıkları, kayıtta etkin tanım ve önceden figürsüz bölümler", () => {
+    expect(entries.length).toBe(17);
     for (const [g, t] of entries) {
       expect(sectionFigureGuideIds.has(g), g).toBe(true);
       expect(new Set(lessonGuides.get(g)?.sections.map((s) => s.title)).has(t), `${g} / ${t}`).toBe(true);

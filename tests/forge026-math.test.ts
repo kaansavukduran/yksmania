@@ -7,6 +7,7 @@ import {
   type ReactNode,
 } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
+import { beforeTytTheoryRevisions } from "./helpers/before-tyt-theory-revisions";
 import { describe, expect, it, vi } from "vitest";
 import {
   placeChange026,
@@ -110,7 +111,8 @@ describe("026 temel matematik: eski anlatı korunumu ve özgün derinlik", () =>
       qs = forge026MathLessons.flatMap((l) => l.questions);
     expect(qs).toHaveLength(60);
     expect(new Set(qs.map((q) => q.id)).size).toBe(60);
-    for (const g of forge026MathGuides) {
+    for (const current of forge026MathGuides) {
+      const g = beforeTytTheoryRevisions("guides", current.id, current);
       expect(g.examples).toHaveLength(6);
       expect(g.recall).toHaveLength(6);
       for (const s of g.sections) {

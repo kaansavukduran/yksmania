@@ -317,6 +317,86 @@ const temelAcilar: Record<string, FigureDef> = {
 };
 
 const ucgendeAcilar: Record<string, FigureDef> = {
+  "İki dik uzaklığın toplamı": {
+    caption: "P’yi taban boyunca kaydır. ABP ile APC alanları değişir. Eş yan kenarlara inen iki dik uzaklığın toplamı yan yüksekliğe eşit kalır.",
+    alt: "AB ve AC beşer birim, BC altı birim olan ikizkenar üçgen. Taban üzerindeki P noktası A ile birleşiyor. P’den AB ve AC’ye iki dik parça çizilmiş.",
+    param: { label: "P’nin yatay konumu", min: -2, max: 2, step: 1, init: 1 },
+    draw: (x) => {
+      const A = v(0, 4);
+      const B = v(-3, 0);
+      const C = v(3, 0);
+      const D = v(0, 0);
+      const P = v(x, 0);
+      const F = foot(P, A, B);
+      const G = foot(P, A, C);
+      const leftDistance = dist(P, F);
+      const rightDistance = dist(P, G);
+      return {
+        els: [
+          poly([A, B, P], { fill: "a", thin: true }),
+          poly([A, P, C], { fill: "b", thin: true }),
+          tri(A, B, C),
+          seg(A, D, { tone: "muted", dash: true }),
+          seg(A, P, { thin: true }),
+          seg(P, F, { tone: "a", bold: true }),
+          seg(P, G, { tone: "b", bold: true }),
+          right(F, A, P, "a"),
+          right(G, A, P, "b"),
+          dim(B, A, "5", C),
+          dim(A, C, "5", B),
+          txt(mid(P, F), "d₁", "nw", { tone: "a" }),
+          txt(mid(P, G), "d₂", "ne", { tone: "b" }),
+          pt(A, "A", "n"),
+          pt(B, "B", "sw"),
+          pt(C, "C", "se"),
+          pt(P, "P", "s"),
+        ],
+        readout: [
+          `d₁ = ${fmt(leftDistance, 1)}, d₂ = ${fmt(rightDistance, 1)}`,
+          `d₁ + d₂ = ${fmt(leftDistance + rightDistance, 1)} birim`,
+          `Alanlar: ${fmt(5 * leftDistance / 2, 1)} + ${fmt(5 * rightDistance / 2, 1)} = 12 birim²`,
+          "Tepe yüksekliği 4 birim.",
+        ],
+      };
+    },
+  },
+  "Açıortay ve orta nokta": {
+    caption: "Aynı üçgende B’den iki farklı çizgi dene. Açıortay köşedeki iki açıyı eşitler. Kenarortay AC’deki iki parçayı eşitler.",
+    alt: "ABC üçgeninin AC kenarında seçilen bir nokta. Açıortay adımında B açısı iki eş yaya ayrılıyor. Kenarortay adımında AC üzerindeki eş parçalar çizgiyle işaretleniyor.",
+    steps: ["Açıortay BD", "Kenarortay BM"],
+    draw: (_, step) => {
+      const b = 50;
+      const c = 60;
+      const halfB = b / 2;
+      const angleAtD = 180 - c - halfB;
+      const [A, B, C] = fromAngles(6, b, c);
+      const bisector = step === 0;
+      const X = bisector ? meet(B, pol(1, halfB), A, C) : mid(A, C);
+      const els = [
+        tri(A, B, C),
+        seg(B, X, { tone: "a", bold: true }),
+        pt(A, "A", "n"),
+        pt(B, "B", "sw"),
+        pt(C, "C", "se"),
+        pt(X, bisector ? "D" : "M", "ne", "a"),
+      ];
+      if (bisector) {
+        els.push(
+          ang(B, C, X, `${halfB}°`, { tone: "a", r: 45 }),
+          ang(B, X, A, undefined, { tone: "a", r: 45 }),
+          ang(X, B, C, `${angleAtD}°`, { tone: "b", r: 34 }),
+        );
+      } else {
+        els.push(ticks(A, X, 1, "a"), ticks(X, C, 1, "a"));
+      }
+      return {
+        els,
+        readout: bisector
+          ? [`B: ${halfB}° + ${halfB}° = ${b}°.`, `BDC üçgeninde D: 180° − ${c}° − ${halfB}° = ${angleAtD}°.`]
+          : ["AM = MC.", `B’deki parçalar yaklaşık ${fmt(angleAt(B, C, X))}° ve ${fmt(angleAt(B, X, A))}°.`],
+      };
+    },
+  },
   "Üç köşe bir üçgeni nasıl oluşturur?": {
     caption:
       "D eklendiğinde A köşesinde iki farklı açı adı oluşur: ∠BAD, ∠BAC'nin yalnız bir parçasıdır. Ölçüyü tam olarak ait olduğu iki kolun arasına yaz.",
@@ -741,6 +821,34 @@ const ucgenEsitsizligi: Record<string, FigureDef> = {
 };
 
 const dikUcgen: Record<string, FigureDef> = {
+  "Dik yolda eğim ve uzunluk": {
+    caption: "Yükselmeyi değiştir. Yatay ilerleme sabit kalır. Eğim için yatay kenarı, sinüs için eğik kenarı kullan.",
+    alt: "Yatay tabanı 12 metre olan dik üçgen. Düşey yükselme, eğik yol ve yolun yatayla yaptığı açı işaretlidir.",
+    param: { label: "Dikey yükselme", min: 1, max: 9, step: 1, init: 5, unit: " m" },
+    draw: (rise) => {
+      const run = 12;
+      const length = Math.hypot(run, rise);
+      const origin = v(0, 0);
+      const corner = v(run, 0);
+      const end = v(run, rise);
+      return {
+        els: [
+          tri(origin, corner, end),
+          right(corner, origin, end),
+          ang(origin, corner, end, "α", { tone: "a", r: 42 }),
+          dim(origin, corner, `${run} m`, end),
+          dim(corner, end, `${rise} m`, origin, "b"),
+          dim(origin, end, `${fmt(length, 2)} m`, corner, "a"),
+          txt(v(-0.5, -1.5), "", "c"),
+          txt(v(13, 10.2), "", "c"),
+        ],
+        readout: [
+          `Eğim: tan α = ${rise}/${run}.`,
+          `Eğik yol: √(${run}² + ${rise}²) ${Number.isInteger(length) ? "=" : "≈"} ${fmt(length, 2)} m.`,
+        ],
+      };
+    },
+  },
   "Dik köşeyi ve hipotenüsü önce işaretle": {
     caption:
       "Çizimi döndür: hipotenüs her konumda dik açının karşısındaki en uzun kenardır. Yön, tanımı değiştirmez.",
@@ -897,6 +1005,45 @@ const dikUcgen: Record<string, FigureDef> = {
 };
 
 const eslikBenzerlik: Record<string, FigureDef> = {
+  "Eş yükseklik, farklı alan": {
+    caption: "İki kesim tabana paralel. Sürgüyle bir şerit seç ve alanını tepeden biriken iki alanın farkında gör.",
+    alt: "Eşkenar üçgen, tabana paralel iki çizgiyle eş yükseklikte üç şeride ayrılmış. Seçilen şerit vurgulanıyor.",
+    param: { label: "Şerit", min: 1, max: 3, step: 1, init: 2 },
+    draw: (band) => {
+      const wholeArea = 81;
+      const width = Math.sqrt(4 * wholeArea / Math.sqrt(3));
+      const A = v(0, width * Math.sqrt(3) / 2);
+      const B = v(-width / 2, 0);
+      const C = v(width / 2, 0);
+      const outer = band / 3;
+      const inner = (band - 1) / 3;
+      const lower = [lerp(A, B, outer), lerp(A, C, outer)];
+      const upper = [lerp(A, B, inner), lerp(A, C, inner)];
+      const selected: V[] = band === 1
+        ? [A, lower[0], lower[1]]
+        : [upper[0], lower[0], lower[1], upper[1]];
+      const cumulativeArea = (ratio: number) => wholeArea * ratio ** 2;
+      const lowerArea = cumulativeArea(outer);
+      const upperArea = cumulativeArea(inner);
+      return {
+        els: [
+          poly(selected, { fill: "a", tone: "a" }),
+          tri(A, B, C),
+          seg(lerp(A, B, 1 / 3), lerp(A, C, 1 / 3), { tone: "muted" }),
+          seg(lerp(A, B, 2 / 3), lerp(A, C, 2 / 3), { tone: "muted" }),
+          txt(lerp(A, C, 1 / 3), "1/3", "e"),
+          txt(lerp(A, C, 2 / 3), "2/3", "e"),
+          pt(A, "A", "n"),
+          pt(B, "B", "sw"),
+          pt(C, "C", "se"),
+        ],
+        readout: [
+          `Şerit ${band}: ${fmt(lowerArea)} − ${fmt(upperArea)} = ${fmt(lowerArea - upperArea)} birim²`,
+          "Üç şerit birlikte: 9 + 27 + 45 = 81 birim².",
+        ],
+      };
+    },
+  },
   "Aynı biçim ile aynı büyüklüğü ayır": {
     caption:
       "Ortadaki üçgen soldakinin döndürülmüş kopyasıdır: eştir. Sağdaki her kenarı 2 katına çıkmış hâlidir: açıları aynı, büyüklüğü farklı; benzerdir.",
@@ -1278,35 +1425,52 @@ const ucgenMerkezleri: Record<string, FigureDef> = {
     },
   },
   "Dış açıortayda nokta uzantıda olur": {
-    caption:
-      "AB < AC olduğunda A'daki dış açıortay BC doğrusunu B tarafındaki uzantıda keser. Oran yine |BE|/|CE| = AB/AC, ama BC artık bir farktır.",
-    alt: "ABC üçgeni; CA kenarı A'nın ötesine uzatılmış ve A'daki dış açının açıortayı çizilmiş. Bu açıortay BC doğrusunu B'nin solundaki E noktasında kesiyor.",
-    draw: () => {
+    caption: "AC ve BC altışar birim. AB’nin değerini değiştirerek dış açıortayın hangi uzantıyı kestiğini gör.",
+    alt: "A köşesinden dış açıortayı çizilmiş ABC üçgeni. Eş yan kenarlarda dış açıortay tabana paralel. Farklı uzunluklarda E uzantıda işaretli.",
+    steps: ["AB < AC", "AB = AC", "AB > AC"],
+    draw: (_, step) => {
+      const ab = [4, 6, 8][step];
+      const ac = 6;
+      const bc = 6;
       const B = v(0, 0);
-      const C = v(6, 0);
-      const A = v(1, 3);
+      const C = v(bc, 0);
+      const A = fromSides(bc, ab, ac)!;
       const inner = add(unit(sub(B, A)), unit(sub(C, A)));
-      const ext = rot(inner, 90);
-      const E = meet(A, add(A, ext), B, C);
-      const X = add(A, mul(unit(sub(A, C)), 2));
-      const ab = dist(A, B);
-      const ac = dist(A, C);
+      const exterior = rot(inner, 90);
+      const frame = [
+        tri(A, B, C),
+        dim(B, A, String(ab), C),
+        dim(A, C, String(ac), B),
+        pt(A, "A", "n"),
+        pt(B, "B", "s"),
+        pt(C, "C", "s"),
+      ];
+      if (ab === ac) {
+        return {
+          els: [...frame, line(v(-1, A[1]), v(7, A[1]), { tone: "a", ext: 0.25 })],
+          readout: ["AB = AC = 6", "Dış açıortay ∥ BC. Sonlu bir E noktası yok."],
+        };
+      }
+      const E = meet(A, add(A, exterior), B, C);
+      const near = ab < ac ? B : C;
+      const far = ab < ac ? C : B;
+      const continuation = add(A, mul(unit(sub(A, far)), 1.5));
+      const be = dist(B, E);
+      const ce = dist(C, E);
       return {
         els: [
-          tri(A, B, C),
-          seg(A, X, { dash: true, tone: "muted" }),
-          seg(E, B, { dash: true, tone: "muted" }),
+          ...frame,
+          seg(E, near, { dash: true, tone: "muted" }),
+          seg(A, continuation, { dash: true, tone: "muted" }),
           seg(A, E, { tone: "a" }),
-          ang(A, X, E, undefined, { tone: "a", r: 30 }),
-          ang(A, E, B, undefined, { tone: "a", r: 36 }),
-          pt(A, "A", "n"),
-          pt(B, "B", "s"),
-          pt(C, "C", "se"),
+          ang(A, near, E, undefined, { tone: "a", r: 26 }),
+          ang(A, E, continuation, undefined, { tone: "a", r: 26 }),
           pt(E, "E", "s", "a"),
         ],
         readout: [
-          `|BE|/|CE| ≈ ${fmt(dist(B, E), 2)}/${fmt(dist(C, E), 2)} ≈ ${fmt(dist(B, E) / dist(C, E), 3)}`,
-          `AB/AC = √10/√34 ≈ ${fmt(ab / ac, 3)}`,
+          ab < ac ? "E, B tarafındaki uzantıda." : "E, C tarafındaki uzantıda.",
+          `|BE|/|CE| = ${fmt(be)}/${fmt(ce)} = ${ab}/${ac}`,
+          `Uzaklıkların farkı: ${fmt(Math.max(be, ce))} − ${fmt(Math.min(be, ce))} = ${bc}`,
         ],
       };
     },

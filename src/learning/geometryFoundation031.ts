@@ -1263,7 +1263,7 @@ const packs031: FoundationPack031[] = [
     title: "Dik üçgen: Pisagor, özel açılar ve Öklid bağıntıları",
     minutes: 46,
     source:
-      "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir.",
+      "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Eğim, Aurelia Dik Üçgenler 5.2, fiziksel s.5 ve 8 ile karşılaştırıldı. Sorular resmî sınav sorusu değildir.",
     objectives: [
       "Hipotenüsü doğru seçerek Pisagor bağıntısını ve tersini uygula.",
       "30°–60°–90° ve 45°–45°–90° üçgenlerinde karşılıkları ayır.",
@@ -1325,6 +1325,14 @@ const packs031: FoundationPack031[] = [
         paragraphs: [
           "Hipotenüs bulunan her sonuç diğer iki kenardan büyük olmalıdır. Öklid modelinde BH+HC=BC ve AH²=BH·HC birlikte sağlanmalıdır. Alanla AB·AC=BC·AH eşitliğini ayrıca denetlemek yanlış parçayla çarpımı yakalar.",
           "Hipotenüsün orta noktasına dik köşeden çizilen kenarortay hipotenüsün yarısıdır; bu parça üç köşeye eş uzaklık özelliğiyle açıklanır. Kenarortayı hipotenüse ait yükseklikle karıştırma: bunlar genel bir dik üçgende farklı parçalardır. Çizimdeki kareler alan gösteriyorsa sayının birimi cm²; kenar veya yükseklik gösteriyorsa cm’dir. Her soru için bir kez “H hangi doğru üzerinde, dik açı nerede, en büyük kenar hangisi?” diye sor. Hatırlama çalışmasında şekli kapatıp bu üç bilgiyle modeli yeniden kur.",
+        ],
+      },
+      {
+        title: "Eğim için yatay uzunluğu bul",
+        figureTitle: "Dik yolda eğim ve uzunluk",
+        paragraphs: [
+          "Bir yol 12 m yatay ilerleyip 5 m yükseliyor. Yolun yatayla yaptığı α açısında karşı dik kenar 5 m, komşu dik kenar 12 m’dir. Eğim, bu iki uzunluğun oranı olan tan α=5/12’dir. İki kenar aynı birimde ölçülür, oran birimsizdir.",
+          "Eğik yol, Pisagor’la √(12²+5²)=13 m bulunur. 5/13 oranı aynı açının sinüsüdür. Eğim sorusunda payda yatay ilerleme, eğik yol uzunluğu değildir. Şekilde yükselmeyi değiştirirken yatay ilerleme 12 m kalır.",
         ],
       },
     ],
@@ -1685,7 +1693,7 @@ const packs031: FoundationPack031[] = [
     title: "Üçgenlerde eşlik ve benzerlik: eşleme, ölçek ve paralellik",
     minutes: 47,
     source:
-      "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir.",
+      "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir. Eşkenar Üçgen 5.1, fiziksel s. 1 ve 4: eş yükseklikli alan şeritleri.",
     objectives: [
       "Karşılıklı köşeleri belirterek eşlik ve benzerliği ayır.",
       "KKK, KAK, AKA eşlik ve AA, KAK, KKK benzerlik koşullarını gerekçelendir.",
@@ -1747,6 +1755,14 @@ const packs031: FoundationPack031[] = [
         paragraphs: [
           "Aynı anda düz zemindeki dik nesneler için güneş ışınları paralel kabul edilirse, yükseklik–gölge üçgenleri AA ile benzerdir. Yükseklik/gölge oranı ortaktır. Farklı saatte veya eğimli zeminde aynı oranı gerekçe vermeden kullanmak modelin koşullarını değiştirir.",
           "Soru çözümünde üç kısa kontrol yeterlidir: karşılıklı köşe sırası, bütün oranların yönü, uzunluk–alan ayrımı. Bir figürün büyütülmesi açıyı büyütmez; açıların eşit kalması benzerliğin bir parçasıdır. Sonucu ikinci bir kenar çifti veya alan oranıyla denetle.",
+        ],
+      },
+      {
+        title: "Eş yükseklikli şeritlerin alanları neden farklı?",
+        figureTitle: "Eş yükseklik, farklı alan",
+        paragraphs: [
+          "Eşkenar üçgende tabana paralel kesimler yüksekliği tepeden itibaren üç eş parçaya ayırsın. Tepeden birinci ve ikinci kesime kadar olan şekiller, büyük üçgene sırasıyla 1/3 ve 2/3 uzunluk oranıyla benzerdir. Yükseklik oranı kadar taban oranı da değişir. Bu yüzden biriken alan payları 1/9, 4/9 ve 1 olur.",
+          "Şerit alanı bulmak için iki biriken alanı çıkar. Baştan sona eş yükseklikli üç şeridin alan payları 1/9, 3/9 ve 5/9’dur. En alttaki şerit daha geniş tabanlara yayıldığı için en büyüktür. Eğer kesimler paralel değilse önce benzerliğin geçerli olup olmadığını kontrol et.",
         ],
       },
     ],
@@ -1828,6 +1844,19 @@ const packs031: FoundationPack031[] = [
         answer: "6 m",
         check: "6/8=1,5/2=0,75.",
         pitfall: "Gölge farkını nesne boyuna eklemek aynı ölçeği korumaz.",
+      },
+      {
+        title: "Orta şeridin alanını ayır",
+        prompt: "Alanı 81 birim² olan eşkenar üçgenin yüksekliği tabana paralel çizgilerle üç eş parçaya ayrılıyor. Ortadaki şerit kaç birim²?",
+        strategy: "Tepeden biriken alanları bul. İki biriken alanın farkını al.",
+        steps: [
+          { label: "Uzunluk oranları", expression: "1/3 ve 2/3", explanation: "Tabana paralel kesimlerin oluşturduğu iki küçük üçgen ana üçgene benzerdir." },
+          { label: "Biriken alanlar", expression: "81·(1/3)²=9, 81·(2/3)²=36", explanation: "Hem taban hem yükseklik değişir. Alan için uzunluk oranının karesi gerekir." },
+          { label: "Orta şeridi ayır", expression: "36−9=27", figureTitle: "Eş yükseklik, farklı alan", explanation: "İkinci kesimin üstündeki 36 birim² içinde ilk 9 birim² de bulunur." },
+        ],
+        answer: "27 birim².",
+        check: "Üst, orta ve alt şeritler sırasıyla 9, 27 ve 45 birim². Toplam 81.",
+        pitfall: "Eş yüksekliklerden üç eş alan sonucu çıkmaz. Bu örnekte yalnız orta şerit 27 çıkar.",
       },
     ],
     recall: [
@@ -2091,7 +2120,7 @@ const packs031: FoundationPack031[] = [
     title: "Üçgende yardımcı elemanlar: açıortay, kenarortay ve merkezler",
     minutes: 55,
     source:
-      "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir.",
+      "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Açıortay 5.1 fiziksel s. 2 ve 5: dış açıortay koşulları. Sorular resmî sınav sorusu değildir.",
     objectives: [
       "Açıortay, kenarortay, yükseklik ve orta dikmenin farklı tanımlarını ayır.",
       "İç ve dış açıortay oranlarını noktanın konumuyla uygula.",
@@ -2125,6 +2154,7 @@ const packs031: FoundationPack031[] = [
         paragraphs: [
           "A köşesindeki bir dış açının açıortayı BC doğrusunu E’de kesiyorsa E,BC doğru parçasının dışındadır ve |BE|/|CE|=AB/AC olur. İç açıortayda parçalar toplanarak BC’yi verir; dış açıortayda ilgili büyük ve küçük uzaklığın farkı BC’dir.",
           "AB=AC ise A’daki dış açıortay BC’ye paraleldir; sonlu bir kesişim noktası varmış gibi oran denklemi kurma. AB<AC olduğunda |BE|<|CE| olacağı için E,B tarafındaki uzantıda bulunur. Önce B,C,E sırasını yerleştirmek toplam–fark hatasını önler.",
+          "AB>AC olduğunda |BE|>|CE|, yani E, C tarafındadır. Üç durumu gösteren modelde aynı AC ve BC uzunluklarını koruyup AB’yi değiştir. Dış açıortayın BC ile kesiştiği taraf, iki yan kenarın karşılaştırmasına bağlıdır.",
         ],
       },
       {
@@ -2793,6 +2823,11 @@ const quickSheets031: Record<string, FoundationQuickSheet031> = {
           "Uzunluk cm, karelerin alanı cm² ile ifade edilir. Duvar–zemin gibi uygulamalarda dikliğin verildiğini belirt; çizimden özel açı varsayma.",
         ],
       },
+      {
+        title: "Eğim ile eğik yol ayrı büyüklüklerdir",
+        figureTitle: "Dik yolda eğim ve uzunluk",
+        text: ["Eğim = dikey fark / yatay ilerleme. 5 m yükselme ve 12 m yatay ilerleme eğimi 5/12 yapar. Eğik yol 13 m, sinüs 5/13."],
+      },
     ],
     cautions: [
       "Sıradan üçgendeki herhangi bir yükseklik için h²=pq kullanılmaz; ana üçgenin dikliği gerekir.",
@@ -2839,13 +2874,18 @@ const quickSheets031: Record<string, FoundationQuickSheet031> = {
           "Paralel kesitte üst küçük üçgenin alanı t², kalan yamuğun alanı1−t² katıdır. Alan oranı9/25 ise aynı yöndeki uzunluk oranı3/5’tir.",
         ],
       },
+      {
+        title: "Üç eş yükseklikli şerit",
+        figureTitle: "Eş yükseklik, farklı alan",
+        text: ["Tepeden alan payları 1/9 → 4/9 → 9/9 birikir. Ardışık farklar 1/9, 3/9 ve 5/9. Toplam alan 81 ise şeritler 9, 27 ve 45 birim²."],
+      },
     ],
     cautions: [
       "Parça/parça AD/DB ile parça/bütün AD/AB aynı oran değildir.",
       "Alanı uzunluk oranıyla çarpma;k² gerekir.",
       "Gölge modeli aynı anda,düz zemin,dik nesne ve paralel ışın koşullarına dayanır.",
     ],
-    exampleIndexes: [0, 1],
+    exampleIndexes: [0, 1, 3],
     recallIndexes: [0, 1, 2],
   },
   "tyt-geo-ucgen-merkezleri-031": {
@@ -2859,6 +2899,7 @@ const quickSheets031: Record<string, FoundationQuickSheet031> = {
       },
       {
         title: "İç ve dış açıortay",
+        figureTitle: "Dış açıortayda nokta uzantıda olur",
         text: [
           "AD iç açıortay,D∈BC; AB=c,AC=b,BD=m,DC=n ise m/n=c/b ve AD²=bc−mn. Alan(ABD)/Alan(ACD)=m/n.",
           "Dış açıortay BC’yi E’de keserse E uzantıdadır,BE/CE=AB/AC; büyük–küçük uzaklık farkı BC’dir. AB=AC ise dış açıortay BC’ye paraleldir.",

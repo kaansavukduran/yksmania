@@ -85,7 +85,7 @@ export const lineAngles042: Supplement = {
 };
 
 export const triangleAngles042: Supplement = {
-  source: "Aurelia 002 Üçgende Açılar, içerik 5.1, fiziksel s. 1–12",
+  source: "Aurelia 002 Üçgende Açılar, içerik 5.1, fiziksel s. 1–12. Aurelia 005 İkizkenar Üçgen 5.2, fiziksel s. 6–7",
   sections: [
     {
       title: "Açıortay dışarı çıkarsa kesişimdeki açı değişir",
@@ -100,6 +100,22 @@ export const triangleAngles042: Supplement = {
       paragraphs: [
         "Dış açı 132° ve uzak iki iç açı 5:6 oranında olsun. Bir oran payına t dersen 5t+6t=132° ve t=12° olur. Uzak açılar 60° ve 72°. Dış açıya komşu iç açı 180°−132°=48°. Üç iç açının toplamını geri kontrol et.",
         "Bir dış açının 120° olduğunu bilmek iki uzak iç açının ayrı ayrı 60° olduğunu göstermez. 50° ve 70° de mümkündür. Eş kenar ya da eş açı bilgisi gelirse iki uzak açı eşitlenebilir. İç açıortay verilen köşe açısını ikiye böler, bir kenarortay yalnızca karşı kenarı eşler.",
+      ],
+    },
+    {
+      title: "Orta nokta ile açıortayın kestiği noktayı ayır",
+      figureTitle: "Açıortay ve orta nokta",
+      paragraphs: [
+        "B köşesinden AC’nin orta noktasına çizilen BM, AC’yi iki eş parçaya ayırır. B açısını ikiye bölmek için BD açıortayı gerekir. Şekilde D ile M ayrı noktalardır. B’nin çevresindeki açı işaretlerini ve AC’deki eş uzunluk çizgilerini ayrı oku.",
+        "D, AC üzerinde olduğu için ∠BCD, büyük üçgendeki C açısıyla aynıdır. B açısı 50°, C açısı 60° ise ∠DBC=25° ve küçük BDC üçgeninde ∠BDC=180°−60°−25°=95° olur.",
+      ],
+    },
+    {
+      title: "Tabandaki noktadan eş kenarlara dik uzaklık",
+      figureTitle: "İki dik uzaklığın toplamı",
+      paragraphs: [
+        "AB=AC=a ve P, BC doğru parçası üzerinde olsun. P’den AB ve AC doğrularına dik indir. Bu dik parçaların uzunlukları d₁ ve d₂’dir. AP çizgisi üçgeni ABP ve APC olarak ikiye ayırır. Bu iki alanın tabanları eş uzunluktadır, dolayısıyla S=a·d₁/2+a·d₂/2=a(d₁+d₂)/2.",
+        "Aynı üçgenin alanını AB tabanı ve ona ait yükseklikle yaz: S=a·hₐ/2. Buradan d₁+d₂=hₐ=2S/a. Tepe yüksekliği A’dan BC’ye ölçülür. P’yi tabandan üçgenin içine alırsan BPC alanı toplamın dışında kalır. Buna karşılık hareketli modelde P, BC üzerinde kaldığı sürece bir uzaklık artarken diğeri aynı miktarda azalır.",
       ],
     },
   ],
@@ -161,6 +177,32 @@ export const triangleAngles042: Supplement = {
       pitfall:
         "D köşesinde ∠BDA’yı hesapladıysan bütünlerini alarak ∠BDC’ye geç.",
     },
+    {
+      title: "Bölünen açıyı küçük üçgende kullan",
+      prompt: "B=64° ve C=48° olan ABC üçgeninde B’nin iç açıortayı AC’yi D’de kesiyor. ∠BDC kaç derece?",
+      strategy: "B açısının yarısını al. C açısının aynı kaldığını gör ve BDC üçgenini tamamla.",
+      steps: [
+        { label: "B açısının yarısı", expression: "64° ÷ 2 = 32°", explanation: "D, açıortay üzerinde olduğu için ∠DBC=32°." },
+        { label: "C açısını küçük üçgene taşı", expression: "∠BCD=48°", explanation: "D, A ile C arasında olduğu için CD ve CA aynı yöndedir." },
+        { label: "Küçük üçgenin üçüncü açısı", expression: "180°−48°−32°=100°", explanation: "BDC üçgeninde B ve C açıları belli, D açısı toplamı 180°ye tamamlar." },
+      ],
+      answer: "100°.",
+      check: "32°+48°+100°=180°.",
+      pitfall: "AC’nin orta noktasını seçmek B açısının bölündüğünü göstermez.",
+    },
+    {
+      title: "Tepe yüksekliğini yan yüksekliğe dönüştür",
+      prompt: "AB=AC=5, BC=6. P, BC parçasında ve AC’ye dik uzaklığı 8/5. AB’ye dik uzaklığı bul.",
+      strategy: "Önce alanı BC ile bul, sonra eş yan kenarlara ait iki alanı topla.",
+      steps: [
+        { label: "Alanı bul", expression: "h²=5²−3²=16 → S=6·4/2=12", explanation: "Tepe yüksekliği, 6 birimlik tabanı iki eş parçaya ayırır." },
+        { label: "İki dik uzaklığın toplamı", expression: "d₁+d₂=2·12/5=24/5", explanation: "İki küçük üçgenin taban olarak alınan yan kenarları 5’er birimdir." },
+        { label: "Verilen uzaklığı çıkar", expression: "24/5−8/5=16/5", figureTitle: "İki dik uzaklığın toplamı", explanation: "AB’ye ait dik uzaklığı kalan alan belirler." },
+      ],
+      answer: "AB’ye dik uzaklık 16/5 birim.",
+      check: "5·(16/5)/2+5·(8/5)/2=8+4=12.",
+      pitfall: "Tepe yüksekliği 4’ten değil, yan yüksekliği 24/5’ten çıkar.",
+    },
   ],
   recall: [
     {
@@ -182,7 +224,30 @@ export const triangleAngles042: Supplement = {
         "Her dış açıortay aynı köşedeki iç açıortaya diktir. Önce iki köşeyi, sonra kesişimdeki yayı açıkça seç.",
       ],
     },
+    {
+      title: "Açıortay ve kenarortay",
+      figureTitle: "Açıortay ve orta nokta",
+      text: ["Açıortay köşedeki açıyı, kenarortay karşı kenarı ikiye böler. C açısı aynı kalan BDC’de B’nin yarısını ve C’yi 180°den çıkar."],
+    },
+    {
+      title: "Eş kenarlara inen dik uzaklıklar",
+      figureTitle: "İki dik uzaklığın toplamı",
+      text: [
+        "AB=AC=a ve P ∈ [BC] ise alan toplamından d₁+d₂=2S/a. Bu AB’ye veya AC’ye ait yüksekliktir. P taban dışına çıktığında bu toplamı doğrudan kullanma.",
+      ],
+    },
   ],
+};
+
+const angleClassAfterExistence = {
+  layout: "table" as const,
+  headers: ["x", "Karar", "Gerekçe"],
+  rows: [8, 9, 10, 11, 12].map((x) => {
+    const squares = 5 ** 2 + 7 ** 2;
+    if (x >= 5 + 7) return [String(x), "Üçgen kurulmaz", `5 + 7 = ${x}. Köşeler aynı doğru üzerinde.`];
+    const obtuse = x ** 2 > squares;
+    return [String(x), obtuse ? "Geniş açılı" : "Dar açılı", `${x ** 2} ${obtuse ? ">" : "<"} ${squares}`];
+  }),
 };
 
 export const triangleSides042: Supplement = {
@@ -208,6 +273,14 @@ export const triangleSides042: Supplement = {
         "ABC’de A=72°, B=51°, C=57° ise BC>AB. Aynı BC kenarlı BCD’de C=73°, D=64°, B=43° ise BD>BC. Artık BD>BC>AB zincirini yazabilirsin. Eşit veya ortak bir kenar kurulamazsa iki üçgendeki açı ölçülerini doğrudan karşılaştırarak kenar uzunluğu çıkarma.",
         "Katlama, şekli kat çizgisine göre yansıtır. Bir noktayla görüntüsünün kat çizgisine uzaklıkları eşittir, kat çizgisi üzerindeki noktalara olan uzaklık da korunur. Eş uzunluk için bu ilişkiyi kullan ve sonra açının karşısındaki kenarı bul. Kâğıdın çizimdeki genişliğini ölçü sayma.",
       ],
+    },
+    {
+      title: "Açı koşulunu yalnız kurulabilen üçgenlerde dene",
+      paragraphs: [
+        "Kenarlar 5, 7 ve x olsun. x en uzun kenarsa ve üçgen kurulacaksa 7<x<12. Geniş açı için x²>5²+7²=74 gerekir. Önce üçgenin koşulunu denetle, sonra kareleri karşılaştır.",
+        "x=8 uzunlukça geçerlidir ama 64<74 olduğundan dar açılıdır. x=9, 10, 11 iki koşulu da sağlar. x=12’de kare karşılaştırması tek başına büyük görünür, fakat şekil kapanamaz.",
+      ],
+      table: angleClassAfterExistence,
     },
   ],
   examples: [
@@ -240,6 +313,19 @@ export const triangleSides042: Supplement = {
       pitfall:
         "11 ve 13 sınırın parçası. İkisinde de en az bir üçgenin alanı sıfırdır.",
     },
+    {
+      title: "En uzun kenarın iki koşulu",
+      prompt: "Kenarları 4, 9 ve x cm olan üçgen geniş açılı. x diğer iki kenardan uzun ve tam sayıysa x hangi değerleri alır?",
+      strategy: "Üçgenin kapanması için üst sınırı bul, sonra kare karşılaştırmasını uygula.",
+      steps: [
+        { label: "Üçgenin izin verdiği uzunluk", expression: "9<x<4+9=13", explanation: "x, 9’dan uzun. En uzun kenar, öteki ikisinin toplamından kısa olmalı." },
+        { label: "Açı sınıfının sınırı", expression: "x²>4²+9²=97", explanation: "x en uzun kenar olduğu için bu eşitsizlik onun karşısındaki açıyı geniş yapar." },
+        { label: "Tam sayıları seç", expression: "10²=100>97 → x=10, 11, 12", explanation: "10 en küçük tam sayı adayıdır. Daha büyük adayların kareleri de koşulu sağlar, ancak 13’e ulaşılamaz." },
+      ],
+      answer: "10, 11 ve 12 cm.",
+      check: "4+9=13 olduğundan 12 üçgen kurar, 13 sınırda kalır.",
+      pitfall: "13²>97 olsa da 13 bir üçgen kenarı olamaz.",
+    },
   ],
   recall: [
     {
@@ -259,6 +345,11 @@ export const triangleSides042: Supplement = {
         "Ortak kenar için alt sınırların büyüğünü, üst sınırların küçüğünü seç. Sınırlar birbirine eşit olsa bile aralık boştur.",
         "En büyük açı geniş olacaksa en uzun kenarın karesi öteki iki karenin toplamından büyük. Önce üçgen eşitsizliği, sonra kare karşılaştırması.",
       ],
+    },
+    {
+      title: "Önce üçgen, sonra açı sınıfı",
+      text: ["5 ve 7 sabit, x en uzunsa 7<x<12. Geniş açı için x²>74 koşulu da gerekir. Tam sayı x değerleri 9, 10 ve 11."],
+      table: angleClassAfterExistence,
     },
   ],
 };

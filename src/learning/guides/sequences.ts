@@ -50,6 +50,14 @@ export const sequencesGuide: LessonGuide = {
         "Bir soruyu çözerken dört satır yeterli bir iskelet verir: ilk/son, adım, terim sayısı, toplam. Birim veya sıra varsa satırına ekle: merdiven basamakları, koltuk numaraları, günler gibi bağlamlarda ‘kaç boşluk’ ile ‘kaç nesne’ farklıdır. Küçük bir üç terimli liste kurarak +1’in gerekip gerekmediğini hızlıca kontrol edebilirsin.",
       ],
     },
+    {
+      title: "Silinen terim adayını listede doğrula",
+      figureTitle: "Silinen terim adayını listede doğrula",
+      paragraphs: [
+        "Liste tamken toplamı hesapla. Kalan toplamı çıkarınca silinmiş olabilecek sayı bulunur. Bir adayın uçlar arasında bulunması yetmez. İlk terimden adımın tam katı kadar uzakta olmalıdır.",
+        "4, 7, …, 31 listesi 10 terim ve 175 toplam verir. Kalan toplam 161 ise aday 14 olur. 14, 13 ile 16 arasındadır ve listede yoktur. Kalan 162 ise aday 13’tür ve listede vardır. Sürgüyle kalan toplamı değiştir, adayın noktaya denk gelip gelmediğine bak.",
+      ],
+    },
   ],
   examples: [
     {
@@ -134,6 +142,19 @@ export const sequencesGuide: LessonGuide = {
       check: "Her iki adayda ifadeler çift ve mutlak farkları 2’dir.",
       pitfall: "Yazılış sırası, küçükten büyüğe sıralama değildir.",
     },
+    {
+      title: "Çıkarma sonucu her zaman listede değildir",
+      prompt: "6, 10, 14, …, 30 listesinden bir sayı silindi. Kalan toplam 107 olabilir mi? Kalan toplam 104 olsaydı hangi terim silinirdi?",
+      strategy: "Tam toplamı çıkar. Elde edilen sayının ilk terimden adımın tam katı kadar ileride olup olmadığına bak.",
+      steps: [
+        { label: "Tam toplam", expression: "n=(30−6)/4+1=7; S=7×18=126", explanation: "Sonda belirtilen 30, gerçekten listede bulunur." },
+        { label: "107 için aday", expression: "126−107=19", explanation: "19 uçlar arasında. Ancak (19−6)/4=13/4 tam sayı olmadığı için 19 bir terim değil." },
+        { label: "104 için aday", expression: "126−104=22", explanation: "(22−6)/4=4 tam sayıdır. 22, dizinin beşinci terimidir." },
+      ],
+      answer: "107 mümkün değildir. 104 kalmışsa 22 silinmiştir.",
+      check: "6+10+14+18+26+30=104.",
+      pitfall: "Adayı ilk ve son terimin arasında bulunca üyelik denetimini atlama.",
+    },
   ],
   recall: [
     {
@@ -152,5 +173,5 @@ export const sequencesGuide: LessonGuide = {
     },
   ],
   source:
-    "MEBİ TYT Matematik Konu Özetleri PDF s.17 (basılı 15); OGM Temel Kavramlar–Sayılar PDF s.5–7; Aurelia Ardışık Sayılar s.1–4. Açıklama, model ve çözümler özgündür; resmî sınav sorusu değildir.",
+    "MEBİ TYT Matematik Konu Özetleri PDF s.17 (basılı 15); OGM Temel Kavramlar–Sayılar PDF s.5–7; Aurelia Ardışık Sayılar içerik 5.1, fiziksel s.1–6 ve 10. Açıklama, model ve çözümler özgündür; resmî sınav sorusu değildir.",
 };

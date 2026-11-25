@@ -76,8 +76,8 @@
   "to": "Aralarında asal a ve b’ye tam bölünen sayı ab’ye de tam bölünür. Çünkü iki koşul birbirinde olmayan asal kuvvetleri ister. 3 ve 4’ün birlikte sağlanması 12’ye yeter; 2 ve 4 ise 8’e yetmez. 4 koşulu 2’yi zaten içerir. Karşı örnek olarak 20, 2’ye ve 4’e bölünür ama 8’e bölünmez."
  },
  {
-  "from": "Genel ortak şart EKOK(a,b)’dir.6 için 2 ve 3;12 için 3 ve 4;18 için 2 ve 9;24 için 3 ve 8 birlikte sınanır.25 için 100’ün kat kısmı çıkarıldığından son iki blok 00,25,50 veya 75 olmalıdır. Bir bileşik bölenin yalnız bazı çarpanlarını denetlemek yeterli sayılmaz; gereken bütün asal kuvvetleri karşıla.",
-  "to": "Genel ortak şart EKOK(a,b)’dir. 6 için 2 ve 3; 12 için 3 ve 4; 18 için 2 ve 9; 24 için 3 ve 8 birlikte sınanır. 25 için 100’ün kat kısmı çıkarıldığından son iki blok 00, 25, 50 veya 75 olmalıdır. Bir bileşik bölenin yalnız bazı çarpanlarını denetlemek yeterli sayılmaz; gereken bütün asal kuvvetleri karşıla."
+  "from": "Genel ortak şart EKOK(a,b)’dir.6 için 2 ve 3;12 için 3 ve 4;18 için 2 ve 9;24 için 3 ve 8 birlikte sınanır.25 için 100’ün kat kısmı çıkarıldığından son iki blok 00,25,50 veya 75 olmalıdır. Bir bileşik bölenin gereken bütün asal kuvvetlerini karşıla. 4 ve 6’nın küçük ortak katları 12, 24, 36’dır. Tabloda 12’nin iki koşula yettiğini, 24’ün gerekmediğini gör.",
+  "to": "Genel ortak şart EKOK(a,b)’dir. 6 için 2 ve 3, 12 için 3 ve 4, 18 için 2 ve 9, 24 için 3 ve 8 birlikte sınanır. 25 için 100’ün kat kısmı çıkarıldığından son iki blok 00, 25, 50 veya 75 olmalıdır. Bir bileşik bölenin gereken bütün asal kuvvetlerini karşıla. 4 ve 6’nın küçük ortak katları 12, 24, 36’dır. Tabloda 12’nin iki koşula yettiğini, 24’ün gerekmediğini gör."
  },
  {
   "from": "Üslü ifadede her çarpım sonrası kalanı küçültmek sayıyı yönetilebilir tutar. Döngü uzunluğunu ilk kuvvetlerden gerçekten bul; her bölen için 4 dönem varsayma. Kalan eşitliklerinde normal kesir gibi her sayıyı sadeleştiremezsin.2 x’in 6’ya kalanı 2 ise x=1 de x=4 de uygundur; bölmenin hangi bilgi kaybını yarattığını kontrol et.",

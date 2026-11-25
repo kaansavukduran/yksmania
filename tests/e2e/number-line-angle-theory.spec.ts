@@ -84,3 +84,270 @@ test("Linear pair and bisector step use the same model in theory and cheat sheet
   await checkFrame(page, explanation);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Division conditions are readable as a table in the lesson and cheat sheet", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  await openCourse(page, {
+    lesson: "tek-cift-isaret",
+    search: "iki ayrı özellik",
+    title: "Tek–çift ve işaret: iki ayrı özellik",
+  });
+  const panel = page.getByRole("region", { name: /Bölümün paritesinden önce tam sayı oluşunu denetle/ });
+  const table = panel.getByRole("table");
+  await expect(table.getByRole("columnheader")).toHaveCount(3);
+  await expect(table.getByRole("row")).toHaveCount(6);
+  await expect(table.getByRole("row").filter({ hasText: "−18 ÷ 6" })).toContainText("Sonuç tek.");
+  await expect(table.getByRole("row").filter({ hasText: "14 ÷ 6" })).toContainText("tam sayı değildir");
+  await table.getByRole("row").filter({ hasText: "12 ÷ 0" }).scrollIntoViewIfNeeded();
+  await expect(table.getByRole("row").filter({ hasText: "12 ÷ 0" })).toContainText("Bölüm tanımsızdır");
+  await page.goto("/#/cheatsheets?topic=detail-195");
+  await expect(table.getByRole("row")).toHaveCount(6);
+  await panel.focus();
+  await expect(panel).toBeFocused();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("An angle bisector and a median mark different equalities in the same triangle", async ({ page, context }, info) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-ucgende-acilar-031";
+  await openCourse(page, { lesson, search: "Üçgende açılar" });
+  const model = figure(page, "Açıortay ve orta nokta");
+  await expect(model).toContainText("25° + 25° = 50°");
+  await expect(model).toContainText("= 95°");
+  const original = await model.getByRole("img").innerHTML();
+  await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await expect(model).toContainText("AM = MC.");
+  expect(await model.getByRole("img").innerHTML()).not.toBe(original);
+  await checkFrame(page, model);
+  await model.screenshot({ path: info.outputPath("kenarortay.png") });
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(model).toContainText("25° + 25° = 50°");
+  await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await expect(model).toContainText("AM = MC.");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("A removed-term candidate can fall between two sequence terms", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  await page.goto("/#/lesson?id=ardisik-sayilar");
+  const title = "Silinen terim adayını listede doğrula";
+  const panel = figure(page, title);
+  await expect(panel).toContainText("14 listede yok");
+  const beforeImage = await panel.getByRole("img").innerHTML();
+  await panel.getByRole("slider", { name: /Kalan toplam/ }).press("ArrowRight");
+  await expect(panel).toContainText("13 listede.");
+  expect(await panel.getByRole("img").innerHTML()).not.toBe(beforeImage);
+  await checkFrame(page, panel);
+  await page.goto("/#/cheatsheets?topic=detail-196");
+  await expect(panel).toContainText("14 listede yok");
+  await panel.getByRole("slider", { name: /Kalan toplam/ }).press("ArrowRight");
+  await expect(panel).toContainText("13 listede.");
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Triangle existence is checked before wide-angle classification", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-ucgen-esitsizligi-031";
+  await page.goto(`/#/lesson?id=${lesson}`);
+  const table = page.getByRole("region", { name: /Açı koşulunu yalnız kurulabilen üçgenlerde dene/ }).getByRole("table");
+  await expect(table.getByRole("row")).toHaveCount(6);
+  await expect(table.getByRole("row").filter({ hasText: "Dar açılı" })).toContainText("64 < 74");
+  await expect(table.getByRole("row").filter({ hasText: "Geniş açılı" })).toHaveCount(3);
+  await expect(table.getByRole("row").filter({ hasText: "Üçgen kurulmaz" })).toContainText("12");
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  const sheet = page.getByRole("region", { name: /Önce üçgen, sonra açı sınıfı/ }).getByRole("table");
+  await expect(sheet.getByRole("row").filter({ hasText: "Üçgen kurulmaz" })).toContainText("12");
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The prime-power grid contains every positive divisor once in both reading routes", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-mat-asal-kaynak-032";
+  const verifyDivisors = async (name: RegExp) => {
+    const table = page.getByRole("region", { name }).getByRole("table");
+    await expect(table.getByRole("columnheader")).toHaveCount(5);
+    const cells = await table.locator("tbody td:not(:first-child) .guide-table-cell-value").allTextContents();
+    const numbers = cells.map(Number).sort((a, b) => a - b);
+    expect(numbers).toEqual(Array.from({ length: 72 }, (_, index) => index + 1).filter((n) => 72 % n === 0));
+  };
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await verifyDivisors(/Bütün pozitif bölenleri bağımsız seçimle say/);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await verifyDivisors(/Aralarında asal ve üç sayaç/);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("A ramp’s horizontal distance and hypotenuse stay distinct across the slider", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-dik-ucgen-031";
+  await page.goto(`/#/lesson?id=${lesson}`);
+  const model = figure(page, "Dik yolda eğim ve uzunluk");
+  await expect(model).toContainText("tan α = 5/12");
+  await expect(model).toContainText("= 13 m");
+  const original = await model.getByRole("img").innerHTML();
+  await model.getByRole("slider", { name: /Dikey yükselme/ }).press("End");
+  await expect(model).toContainText("tan α = 9/12");
+  await expect(model).toContainText("= 15 m");
+  expect(await model.getByRole("img").innerHTML()).not.toBe(original);
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(model).toContainText("tan α = 5/12");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("A composite divisor is limited by the scarcer complete group", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-mat-faktoriyel-kaynak-033";
+  await page.goto(`/#/lesson?id=${lesson}`);
+  const course = page.getByRole("region", { name: /Bileşik böleni iki bütçeyle kur/ }).getByRole("table");
+  const smaller = course.getByRole("row", { name: /10!/ });
+  const larger = course.getByRole("row", { name: /15!/ });
+  await expect(smaller).toContainText("min(4, 4) = 4");
+  await expect(larger).toContainText("11 → 5");
+  await expect(larger).toContainText("6 → 6");
+  await expect(larger).toContainText("min(5, 6) = 5");
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  const sheet = page.getByRole("region", { name: /Asal kuvvet bütçesi/ }).getByRole("table");
+  await expect(sheet.getByRole("row", { name: /15!/ })).toContainText("min(5, 6) = 5");
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Two perpendicular distances exchange area while their sum stays constant", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-ucgende-acilar-031";
+  await page.goto(`/#/lesson?id=${lesson}`);
+  const model = figure(page, "İki dik uzaklığın toplamı").first();
+  await expect(model).toContainText("d₁ = 3,2, d₂ = 1,6");
+  await expect(model).toContainText("d₁ + d₂ = 4,8 birim");
+  await expect(model).toContainText("8 + 4 = 12 birim²");
+  const original = await model.getByRole("img").innerHTML();
+  await model.getByRole("slider", { name: /P’nin yatay konumu/ }).press("Home");
+  await expect(model).toContainText("d₁ = 0,8, d₂ = 4");
+  await expect(model).toContainText("d₁ + d₂ = 4,8 birim");
+  await expect(model).toContainText("2 + 10 = 12 birim²");
+  expect(await model.getByRole("img").innerHTML()).not.toBe(original);
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(model).toContainText("d₁ = 3,2, d₂ = 1,6");
+  await expect(model).toContainText("Tepe yüksekliği 4 birim.");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Changing the third addend crosses the one-to-two tens boundary", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Birlikleri onluklara grupla");
+  await page.goto("/#/lesson?id=sayi-basamaklari");
+  await expect(model).toContainText("27 = 2 · 10 + 7");
+  const dial = model.getByRole("slider", { name: /Üçüncü toplanan/ });
+  await dial.press("Home");
+  await dial.press("ArrowRight");
+  await expect(model).toContainText("19 = 1 · 10 + 9");
+  const previous = await model.getByRole("img").innerHTML();
+  await dial.press("ArrowRight");
+  await expect(model).toContainText("20 = 2 · 10 + 0");
+  expect(await model.getByRole("img").innerHTML()).not.toBe(previous);
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-199");
+  await expect(model).toContainText("27 = 2 · 10 + 7");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Three equal heights in an equilateral triangle give unequal band areas", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-eslik-benzerlik-031";
+  const model = figure(page, "Eş yükseklik, farklı alan").first();
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("36 − 9 = 27 birim²");
+  const dial = model.getByRole("slider", { name: /Şerit/ });
+  await dial.press("Home");
+  await expect(model).toContainText("9 − 0 = 9 birim²");
+  const previous = await model.getByRole("img").innerHTML();
+  await dial.press("End");
+  await expect(model).toContainText("81 − 36 = 45 birim²");
+  expect(await model.getByRole("img").innerHTML()).not.toBe(previous);
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(model).toContainText("36 − 9 = 27 birim²");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Joint divisibility keeps the shared prime requirement once", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const table = page.getByRole("region", { name: /Ayrı şartlar çarpılır mı/ }).getByRole("table");
+  await page.goto("/#/lesson?id=bolme-bolunebilme");
+  const shared = table.getByRole("row", { name: /4 ve 6/ }).getByRole("cell");
+  await expect(shared.nth(1)).toHaveAccessibleName("12");
+  await expect(shared.nth(2)).toHaveAccessibleName("24 gereksiz güçlü");
+  await expect(table.getByRole("row", { name: /3 ve 4/ })).toContainText("12 yeterli ve gerekli");
+  await page.goto("/#/cheatsheets?topic=detail-200");
+  await expect(shared.nth(1)).toHaveAccessibleName("12");
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The external bisector switches sides through the parallel case", async ({ page, context }, info) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-ucgen-merkezleri-031";
+  const model = figure(page, "Dış açıortayda nokta uzantıda olur");
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("E, B tarafındaki uzantıda.");
+  await expect(model).toContainText("12/18 = 4/6");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await next.press("Enter");
+  await expect(model).toContainText("Dış açıortay ∥ BC. Sonlu bir E noktası yok.");
+  await checkFrame(page, model);
+  const parallel = await model.getByRole("img").innerHTML();
+  await next.press("Enter");
+  await expect(model).toContainText("E, C tarafındaki uzantıda.");
+  await expect(model).toContainText("24/18 = 8/6");
+  expect(await model.getByRole("img").innerHTML()).not.toBe(parallel);
+  await checkFrame(page, model);
+  const image = model.getByRole("img");
+  await image.evaluate((svg) => svg.scrollIntoView({ block: "center" }));
+  await image.screenshot({ path: info.outputPath("dis-aciortay-c.png") });
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(model).toContainText("E, B tarafındaki uzantıda.");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

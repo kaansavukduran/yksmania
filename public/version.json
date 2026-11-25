@@ -1,8 +1,8 @@
 {
-  "version": "0.149.0",
+  "version": "0.155.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Temel Kavramlar’da sayı sırası, uzaklık ve tam sayı sınırları sayı doğrusunda görülüyor. Doğruda Açılar’da komşu doğrusal çift ve açıortaylar etkileşimli çizimde inceleniyor.",
-    "en": "The number line shows order, distance and integer bounds. An interactive diagram shows angle bisectors of a linear pair."
+    "tr": "Bölünme koşullarında ortak katı tabloyla bul. Dış açıortayın tabanla ilişkisini üç farklı kenar durumunda incele.",
+    "en": "Compare joint divisibility conditions and three different external angle bisectors."
   }
 }

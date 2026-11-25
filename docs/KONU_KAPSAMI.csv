@@ -6,7 +6,7 @@ TYT;Kimya;Kimyada iş sağlığı ve güvenliği;detail-142;kimya-guvenlik;4;6;3
 TYT;Kimya;Atom modelleri;detail-143;atom-modelleri;5;7;3;7;2;1;3
 TYT;Matematik;Temel Kavramlar;detail-194;temel-kavramlar;6;8;5;8;3;1;5
 TYT;Matematik;Tek Çift Pozitif Negatif Sayılar;detail-195;tek-cift-isaret;7;6;4;6;2;1;5
-TYT;Matematik;Ardışık Sayılar;detail-196;ardisik-sayilar;8;6;4;6;2;1;5
+TYT;Matematik;Ardışık Sayılar;detail-196;ardisik-sayilar;8;7;5;7;2;1;5
 TYT;Matematik;Asal Sayılar;detail-197;asal-sayilar;9;6;4;6;2;1;6
 TYT;Matematik;Faktöriyel Kavramı;detail-198;faktoriyel;10;6;5;6;2;1;7
 TYT;Biyoloji;Canlıların Karakteristik Özellikleri;detail-1;canli-ozellikleri;11;20;6;20;6;1;5
@@ -479,10 +479,10 @@ AYT;Kimya;Nanoteknoloji ve Bilimsel Gelişmeler;detail-462;ayt-nanoteknoloji-gel
 AYT;Biyoloji;Bitkilerde Döllenme ve Çimlenme;detail-356;bitkilerde-dollenme-cimlenme;478;24;8;24;8;1;5
 AYT;Biyoloji;Canlılar ve Çevre;detail-357;canlilar-ve-cevre;479;24;8;24;8;1;3
 TYT;Geometri;Temel açılar ve paralel doğrular;topic-tyt-geo-temel-acilar-031;tyt-geo-temel-acilar-031;480;7;3;5;2;1;7
-TYT;Geometri;Üçgende açılar;topic-tyt-geo-ucgende-acilar-031;tyt-geo-ucgende-acilar-031;481;9;5;6;4;3;16
-TYT;Geometri;Üçgen eşitsizliği ve açı–kenar ilişkisi;topic-tyt-geo-ucgen-esitsizligi-031;tyt-geo-ucgen-esitsizligi-031;482;10;4;6;3;1;4
-TYT;Geometri;Dik üçgen: Pisagor ve Öklid;topic-tyt-geo-dik-ucgen-031;tyt-geo-dik-ucgen-031;483;8;4;5;2;1;6
-TYT;Geometri;Üçgenlerde eşlik ve benzerlik;topic-tyt-geo-eslik-benzerlik-031;tyt-geo-eslik-benzerlik-031;484;8;3;5;2;3;8
+TYT;Geometri;Üçgende açılar;topic-tyt-geo-ucgende-acilar-031;tyt-geo-ucgende-acilar-031;481;11;7;8;6;3;16
+TYT;Geometri;Üçgen eşitsizliği ve açı–kenar ilişkisi;topic-tyt-geo-ucgen-esitsizligi-031;tyt-geo-ucgen-esitsizligi-031;482;11;5;7;4;1;4
+TYT;Geometri;Dik üçgen: Pisagor ve Öklid;topic-tyt-geo-dik-ucgen-031;tyt-geo-dik-ucgen-031;483;9;4;6;2;1;6
+TYT;Geometri;Üçgenlerde eşlik ve benzerlik;topic-tyt-geo-eslik-benzerlik-031;tyt-geo-eslik-benzerlik-031;484;9;4;6;3;3;8
 TYT;Geometri;Üçgende yardımcı elemanlar ve merkezler;topic-tyt-geo-ucgen-merkezleri-031;tyt-geo-ucgen-merkezleri-031;485;11;4;5;2;3;11
 TYT;Geometri;Çokgenler: açı, köşegen ve düzgünlük;topic-tyt-geo-cokgenler-032;tyt-geo-cokgenler-032;486;10;4;5;2;1;3
 TYT;Geometri;Dörtgenlerin özellikleri ve aile ilişkileri;topic-tyt-geo-dortgen-hiyerarsi-032;tyt-geo-dortgen-hiyerarsi-032;487;12;5;5;2;1;3

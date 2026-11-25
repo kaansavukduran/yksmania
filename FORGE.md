@@ -852,8 +852,8 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
-| TYT Matematik | 45 / 45 | 45 · 186 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
-| TYT Geometri | 19 / 19 | 19 · 177 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
+| TYT Matematik | 45 / 45 | 45 · 188 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
+| TYT Geometri | 19 / 19 | 19 · 181 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 283 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 155 | 515 / 515 · %100,00 | 11 / 36 · %30,56 | 54 soru · 9 kitapçık | 0 |
@@ -867,7 +867,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2342** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2348** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
@@ -3653,3 +3653,39 @@ Dik üçgende trigonometrik oranlar için [Khan Academy Türkçe videosu](https:
 TYT Matematik ve Geometri kaynak kâğıdı klasörleri 38 ve 32 dosya içeriyor. 70 dosya kimliği özel kanonik defterle eşleşti. 68 dosyanın boyutu kayıtlı envanterden farklı. Sonraki uygulama eşlemeleri Tek Çift Pozitif Negatif Sayılar fiziksel 5 ve 10. sayfalardaki bölüm koşulları ve Üçgende Açılar fiziksel 8. sayfadaki açıortay ile kenarortay ayrımı.
 
 Adayda TypeScript, 23 birim, 7 Chromium ve 323 çevrimdışı varlık kontrolü geçti. 320 px, %200 arayüz ve %150 yazı ayarında normal anlatım, çözümlü örnek ve Kopya Kağıdı test edildi. İlk testlerin başlık ve tek video paneli beklentileri gerçek ekran davranışına göre düzeltildi ve aynı akışlar yeniden geçti.
+
+## TYT Matematik ve Geometri · 0.150.0 adayı
+
+Tek–Çift ve İşaret’te bölümü sınıflandırmadan önce sıfır ve tam sayı koşulunu denetleyen tablo. İki çarpan sayısı tek ve çift bölümleri örneklerle ayırıyor. Üçgende Açılar’da B’den çıkan açıortay ile kenarortay aynı üçgende adım adım karşılaştırılıyor. İki anlatımın ayrı Kopya Kağıdı aynı verileri gösteriyor.
+
+Kaynaklar güncel 5.1 Tek Çift Pozitif Negatif Sayılar fiziksel 2, 5, 10 ve 14, Üçgende Açılar fiziksel 8 ve 12. TypeScript, içerik, 24 birim, 9 Chromium ve 323 çevrimdışı varlık geçti. Sonraki maddeler Ardışık Sayılar fiziksel 5, silinen terimin üyeliği ve Açı Kenar Bağıntıları fiziksel 5, üçgen varlığı ile açı türünün ortak koşulu.
+
+## TYT Matematik ve Geometri · 0.151.0 adayı
+
+Ardışık Sayılar’da silinen terim adayı sayı doğrusunda denetleniyor. Uçların arasında bulunan 14’ün listeye ait olmadığı, kalan toplam değiştiğinde 13’ün listede olduğu gösteriliyor. Üçgen Eşitsizliği’nde tablo önce üçgenin kurulmasını, sonra en büyük açı türünü sınar. İki öğretim karşılığı ayrı Kopya Kağıdında da çalışır.
+
+Ardışık Sayılar 5.1 fiziksel 5 E6 ve 6 görsel, Açı Kenar Bağıntıları 5.1 fiziksel 5 G2 kaynaklarıyla karşılaştırıldı. TypeScript, 32 birim, 11 Chromium, içerik, üretim ve 323 çevrimdışı varlık kontrolü geçti. Sırada Asal Sayılar ve Dik Üçgenler kaynakları.
+
+## TYT Matematik ve Geometri · 0.152.0 adayı
+
+Asal Sayılar’da 72’nin 12 pozitif böleni asal üs çiftlerinden üretilen tabloda okunuyor. Dik Üçgenler’de rampanın yatay uzaklığı, yüksekliği, eğimi ve hipotenüsü aynı ölçülerden hesaplanıyor. İki model de konu anlatımı ve ayrı Kopya Kağıdı içinde çalışıyor.
+
+Asal Sayılar 1.2 fiziksel 3 ve Dik Üçgenler 5.2 fiziksel 2, 5 ve 8. sayfalarıyla eşleştirildi. TypeScript, 53 birim, 13 Chromium, içerik ve 323 çevrimdışı varlık kontrolü geçti. Geniş birim denetimi önceki iki geometri örneğinde eksik ara adımı yakaladı. Ara adımlar eklendi ve aynı denetim tekrar geçti.
+
+## TYT Matematik ve Geometri · 0.153.0 adayı
+
+Faktöriyel Kavramı anlatımı ve Kopya Kağıdı, 10! ve 15! için 12’nin tam bölen en büyük kuvvetini aynı asal çarpan tablosuyla gösteriyor. Üçgende Açılar’da tabandaki bir noktadan dik çizilen iki uzaklık ayrı ayrı değişirken toplamları 4,8 birim kalıyor. Model konu, çözümlü örnek ve ayrı Kopya Kağıdında çalışıyor.
+
+Faktöriyel Kavramı 1.1 fiziksel 3 ve 10, İkizkenar Üçgen 5.2 fiziksel 6 ve 7 ile karşılaştırıldı. 42 birim, 11 Chromium ve 323 çevrimdışı varlık kontrolü geçti. Kopya Kağıdı’ndaki sütun ilişkileri yerel tabloda yeniden sınandı.
+
+## TYT Matematik ve Geometri · 0.154.0 adayı
+
+Sayı Basamakları’nda 19 birlikten 20 birliğe geçiş, eldeyi 1’den 2’ye çıkarıyor. Eşkenar Üçgen’de aynı yükseklikteki üç şeridin 9, 27 ve 45 birim² alanları tepeden biriken alan farklarıyla hesaplanıyor. Modeller konu anlatımında ve ayrı Kopya Kağıdında çalışıyor.
+
+Sayı Basamakları 1.1 fiziksel 3 ve 13, Eşkenar Üçgen 5.1 fiziksel 1 ve 4 ile karşılaştırıldı. 13 Chromium akışı ve 323 çevrimdışı varlık kontrolü geçti. Tarihsel içerik denetimi değişen kayıtları tam özetleriyle tanır. PDF sayaçları kaynak defterinin kararlarını izler.
+
+## TYT Matematik ve Geometri · 0.155.0 adayı
+
+Bölünebilme tablosu, 4 ve 6’nın ortak şartını 12 olarak hesaplıyor. Dış açıortay modeli AB küçükken B tarafını, eşitken paralelliği, AB büyükken C tarafını gösteriyor. Aynı tablo ve çizim ayrı Kopya Kağıtlarında da açılıyor.
+
+Bölme Bölünebilme Kuralları 1.1 fiziksel 3 ve 4, Açıortay 5.1 fiziksel 2 ve 5 ile karşılaştırıldı. 15 Chromium akışı ve 323 çevrimdışı varlık kontrolü geçti. Tablo hücrelerinin okunabilir adı klavye ve ekran okuyucu ağacında doğrulandı.

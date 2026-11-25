@@ -18,6 +18,15 @@ interface PrimePack032 {
   items: PrimeItem032[];
   sheet: CheatSection[];
 }
+const divisorsOf72 = {
+  layout: "table" as const,
+  headers: ["3 kuvveti", "2⁰", "2¹", "2²", "2³"],
+  rows: ["3⁰","3¹","3²"].map((label, exponent) => [
+    label,
+    ...[0, 1, 2, 3].map((power) => String(3 ** exponent * 2 ** power)),
+  ]),
+};
+
 const pack: PrimePack032 = {
   title: "Asal sayılar: sıfırdan kanıta ve problem çözümüne",
   sections: [
@@ -61,7 +70,9 @@ const pack: PrimePack032 = {
       paragraphs: [
         "N=pᵃ qᵇ, p ve q farklı asal, a, b pozitif tam sayı olsun. Her bölen p’nin 0…a, q’nun 0…b kuvvetlerini bağımsız seçer. Böylece(a+1)(b+1) pozitif bölen bulunur. 12=2²·3 için 3·2=6 bölen vardır:1,2,3,4,6,12.",
         "Asal p’nin karesi p² yalnız 1, p, p² olmak üzere 3 pozitif bölen taşır. 1’in yalnız 1 böleni vardır. Bileşik tabanla formülü uygulama:36=4·9 diye 4 bölen sayılmaz;36=2²·3² olduğundan 9 bölen vardır. 180=2²·3²·5 için tür 3, bütün pozitif bölen 3·3·2=18’dir.",
+        "Tabloda bir 2 kuvveti ve bir 3 kuvveti seç. Örneğin 2² ile 3¹ kesişiminde 4×3=12 vardır. Üs 0 seçmek, o asalın bölenin içinde bulunmadığı anlamına gelir. Her hücre başka bir bölen verir. 72 için 4 sütun ve 3 veri satırı 12 bölen oluşturur.",
       ],
+      table: divisorsOf72,
     },
     {
       title: "Asal çıkan çarpımın birim çarpan koşulu",
@@ -1496,6 +1507,7 @@ const pack: PrimePack032 = {
     },
     {
       title: "Aralarında asal ve üç sayaç",
+      table: divisorsOf72,
       text: [
         "a,b pozitif tam sayı olsun. EBOB(a,b)=1 aralarında asallıktır; iki sayı da bileşik olabilir. a/b=m/n en sade biçimde ve a,b aralarında asalsa a=m, b=n; koşul yoksa a=mt, b=nt, t pozitif tam sayıdır. N=pᵃqᵇ, p,q farklı asal ve a,b≥1: tür 2, tekrarlı çarpan a+b, pozitif bölen (a+1)(b+1).",
         "18=2·3² için üç kartın etiketleri 2, 3 ve 3 olsun. İki farklı etiket ve üç kart vardır. Pozitif bölen sayısı üs seçimlerinden (1+1)(2+1)=6 çıkar.",
