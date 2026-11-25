@@ -2140,3 +2140,26 @@ test("AYT parallel separation follows the perpendicular foot and reaches zero", 
   }
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("AYT three vectors add and balance their signed components", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Üç kuvveti ekle ve dengeleyiciyi çiz");
+  for (const route of ["/#/lesson?id=vektorler", "/#/cheatsheets?topic=detail-358"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Düşey toplam 0 N. R = (4; 0) N.");
+    const prior = figure(page, "Bileşen işaretini bölgeden bul");
+    await prior.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(prior).toContainText("θ = 53,1°");
+    const slider = model.getByRole("slider", { name: /C’nin düşey bileşeni/ });
+    await slider.press("End");
+    await expect(model).toContainText("Düşey toplam 2√3 N. R = (4; 2√3) N.");
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await slider.press("End");
+    await expect(model).toContainText("D = (−4; −2√3) N. R + D = (0; 0) N.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});

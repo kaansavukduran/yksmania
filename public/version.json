@@ -1,8 +1,8 @@
 {
-  "version": "0.191.0",
+  "version": "0.192.0",
   "channel": "alpha",
   "notes": {
-    "tr": "AYT Geometride paralel doğruların dik uzaklığını sabit terimleri değiştirerek incele ve çakışma durumunda sıfır uzaklığı doğrula.",
-    "en": "Compare perpendicular separation of parallel lines and check the coincident case in AYT analytic geometry."
+    "tr": "AYT Fizik Vektörlerde üç kuvveti uç uca ekle, düşey bileşeni değiştir ve bileşke ile dengeleyicinin her iki eksende sıfır toplam verdiğini gör.",
+    "en": "Add three forces head to tail, change the vertical component, and inspect the equal and opposite balancing vector."
   }
 }

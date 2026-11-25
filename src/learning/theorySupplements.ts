@@ -20,6 +20,21 @@ interface TheorySupplement {
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const theorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "vektorler": [{
+    title: "Bileşen işaretini bölgeden bul",
+    figureTitle: "Bileşen işaretini bölgeden bul",
+    paragraphs: [],
+    summary: "+x yönünde 3 N ve +y yönünde 4 N bileşke 5 N verir. +x’ten ölçülen açı yaklaşık 53,1°.",
+  }, {
+    title: "Üç kuvveti ekle ve dengeleyiciyi çiz",
+    figureTitle: "Üç kuvveti ekle ve dengeleyiciyi çiz",
+    paragraphs: [
+      "A=(6;0) N. B, +x ekseninden saat yönünün tersine 120° ve büyüklüğü 4 N. B’nin yatay bileşeni 4·cos120°=−2 N, düşey bileşeni 4·sin120°=2√3 N. C=(0;−2√3) N.",
+      "A, B ve C’yi uç uca ekle. Yatay toplam 6−2=4 N, düşey toplam 2√3−2√3=0 N. R=(4;0) N. Dengeleyici D=(−4;0) N. C değişirse R ve D’yi yeni düşey toplamdan çıkar.",
+    ],
+    summary: "A=(6;0), B=(−2;2√3), C=(0;−2√3). R=(4;0) ve D=(−4;0) N. Her iki eksende R+D=0.",
+    appendSection: true,
+  }],
   "dogrunun-analitigi": [{
     title: "Paralel doğruların dik uzaklığını bul",
     figureTitle: "Paralel doğruların dik uzaklığını bul",
