@@ -6905,5 +6905,392 @@
         }
       }
     ]
+  },
+  {
+    "version": "0.159.0",
+    "receipts": [
+      {
+        "surface": "lessons",
+        "id": "tyt-geo-eslik-benzerlik-031",
+        "after": "9617a455f51352eb3fc6281e53545eac6d3c72867b00244fadec4591936e0d34",
+        "prior": {
+          "source": {
+            "tr": "Kenar-Açı-Kenar Eşliği 5.1 fiziksel s. 2, arada olmayan açı karşı örneği. MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir. Eşkenar Üçgen 5.1, fiziksel s. 1 ve 4: eş yükseklikli alan şeritleri."
+          },
+          "body": [
+            {
+              "title": {
+                "tr": "Aynı biçim ile aynı büyüklüğü ayır"
+              },
+              "text": {
+                "tr": "İki üçgen eştir denildiğinde karşılıklı açıları eşit ve karşılıklı kenarları aynı uzunluktadır. Birini döndürmek, taşımak veya yansıtmak eşliği bozmaz. Eşlik, şeklin sayfa üzerindeki yönünden bağımsızdır; kenar uzunlukları ve açı ölçüleri korunur.\n\nBenzer üçgenlerde karşılıklı açılar eşit, karşılıklı kenarlar aynı pozitif oranda değişmiştir. Eş üçgenler benzerliğin oranı 1 olan özel hâlidir. Yalnız üç açının eşitliği boyutu belirlemez: 3–4–5 ile 6–8–10 üçgenleri benzerdir, eş değildir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Köşe sırası bir bilgi taşır"
+              },
+              "text": {
+                "tr": "ABC∼DEF yazımı A↔D, B↔E ve C↔F eşlemesini belirtir. Buna göre AB↔DE, AC↔DF ve BC↔EF olur. Eşlik yazımında da aynı sıra okunur. Kâğıtta soldaki kenarın karşılık olarak mutlaka soldaki kenara gitmesi gerekmez; şekil dönebilir.\n\nOranı yeni/eski veya küçük/büyük olarak bir kez seçip bütün kenarlarda koru. AB/DE yazdıysan sonraki oran AC/DF olmalıdır; DF/AC yazmak oranı ters çevirir. Önce eş açıları aynı işaretle göster, sonra karşılarındaki kenarları eşleştir; çıplak sayıların yakınlığına göre eşleme yapma."
+              }
+            },
+            {
+              "title": {
+                "tr": "Eşliği hangi veriler kanıtlar?"
+              },
+              "text": {
+                "tr": "KKK eşliğinde üç karşılıklı kenar eşittir. KAK eşliğinde iki karşılıklı kenar ve bu iki kenarın ARASINDA kalan açı eşittir. AKA eşliğinde iki karşılıklı açı ve aralarındaki kenar eşittir; iki açı üçüncüyü de belirlediği için uygun karşılıklı bir kenarla da eşlik kurulabilir.\n\n“Üç eleman eşitse her zaman eşlik vardır” genellemesi yanlıştır. Üç açı yalnız benzerlik verir; rastgele iki kenar ve aralarında olmayan açı da genel durumda tek üçgen belirlemez. Dik üçgenlerde hipotenüs ve bir dik kenar eşitse Pisagor diğer dik kenarı da eşitler ve KKK ile eşlik kurulabilir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Benzerliği hangi veriler kanıtlar?"
+              },
+              "text": {
+                "tr": "AA benzerliğinde iki karşılıklı açı eşit olunca üçüncü açılar da 180° toplamından eşit olur. KAK benzerliğinde iki karşılıklı kenar aynı oranda ve aralarındaki açılar eşit olmalıdır. KKK benzerliğinde üç karşılıklı kenar oranı aynıdır.\n\nBir oran yazmak benzerlik kanıtı değildir; önce bu üç koşuldan birini kur. İki üçgende birer açı eşit ve birer kenar orantılı verilmesi yeterli olmaz. Kum saati görünümünde ortak köşedeki ters açı eşliği yalnız bir açı çifti sağlar; ikinci açı için paralellik veya başka açık bir veri gerekir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Paralel kesitte küçük üçgeni gör"
+              },
+              "text": {
+                "tr": "ABC üçgeninde D, AB üzerinde; E, AC üzerinde ve DE∥BC olsun. ADE ile ABC üçgenleri A açısını paylaşır; paralellik diğer karşılıklı açıları eşitler. Bu nedenle AD/AB=AE/AC=DE/BC=t olur. D ve E iç nokta ise 0<t<1’dir.\n\nAynı modelde AD/DB=AE/EC de doğrudur; fakat bu parça/parça oranı t ile aynı sayı değildir. Örneğin AD/AB=2/5 iken DB/AB=3/5 ve AD/DB=2/3 olur. Denklemde AD+DB=AB toplamını görünür tutmak yanlış payda seçimini önler."
+              }
+            },
+            {
+              "title": {
+                "tr": "Orta taban ve Thales: ayrı şekiller, aynı oran fikri"
+              },
+              "text": {
+                "tr": "İki kenarın orta noktalarını birleştiren doğru parçası üçüncü kenara paraleldir ve onun yarısıdır. Küçük üçgenin bütün uzunlukları ana üçgenin yarısı, çevresi de yarısı olur. Orta taban yalnız ortadan geçtiği açıkça verilmiş ya da kanıtlanmış noktalar için kullanılır.\n\nÜç veya daha çok paralel doğru iki keseni keserse, kesenlerde karşılıklı aralıklar orantılıdır. Bir kesendeki üst aralık / alt aralık oranını, diğer kesendeki üst aralık / alt aralık ile eşleştir. Aralık yerine bütün uzunluğu kullanacaksan iki kesende de aynı tür toplamı seç."
+              }
+            },
+            {
+              "title": {
+                "tr": "Uzunluk k iken alan neden k²?"
+              },
+              "text": {
+                "tr": "Benzerlik oranı yeni/eski=k ise her kenar, çevre, yükseklik, kenarortay ve açıortay uzunluğu k ile çarpılır. Alan taban×yükseklik/2 olduğundan iki bağımsız uzunluk da k ile değişir; alan k² ile çarpılır. Hacim sorularında benzer cisim için k³ gerekir, fakat bu ünite düzlem üçgenleri üzerinde çalışır.\n\nAlan oranı 9/25 ise aynı yöndeki pozitif uzunluk oranı 3/5’tir. DE∥BC modelinde t=2/3 için üst üçgenin alanı ana alanın 4/9’u, kalan yamuğun alanı 5/9’udur. Yamuğun alanını doğrudan t ile çarpmak şekillerin hangisinin benzer olduğunu unutmaya yol açar."
+              }
+            },
+            {
+              "title": {
+                "tr": "Gölge ve ölçek problemlerinde varsayımı yaz"
+              },
+              "text": {
+                "tr": "Aynı anda düz zemindeki dik nesneler için güneş ışınları paralel kabul edilirse, yükseklik–gölge üçgenleri AA ile benzerdir. Yükseklik/gölge oranı ortaktır. Farklı saatte veya eğimli zeminde aynı oranı gerekçe vermeden kullanmak modelin koşullarını değiştirir.\n\nSoru çözümünde üç kısa kontrol yeterlidir: karşılıklı köşe sırası, bütün oranların yönü, uzunluk–alan ayrımı. Bir figürün büyütülmesi açıyı büyütmez; açıların eşit kalması benzerliğin bir parçasıdır. Sonucu ikinci bir kenar çifti veya alan oranıyla denetle."
+              }
+            },
+            {
+              "title": {
+                "tr": "Eş yükseklikli şeritlerin alanları neden farklı?"
+              },
+              "text": {
+                "tr": "Eşkenar üçgende tabana paralel kesimler yüksekliği tepeden itibaren üç eş parçaya ayırsın. Tepeden birinci ve ikinci kesime kadar olan şekiller, büyük üçgene sırasıyla 1/3 ve 2/3 uzunluk oranıyla benzerdir. Yükseklik oranı kadar taban oranı da değişir. Bu yüzden biriken alan payları 1/9, 4/9 ve 1 olur.\n\nŞerit alanı bulmak için iki biriken alanı çıkar. Baştan sona eş yükseklikli üç şeridin alan payları 1/9, 3/9 ve 5/9’dur. En alttaki şerit daha geniş tabanlara yayıldığı için en büyüktür. Eğer kesimler paralel değilse önce benzerliğin geçerli olup olmadığını kontrol et."
+              }
+            },
+            {
+              "title": {
+                "tr": "Arada olmayan açı iki üçgene izin verebilir"
+              },
+              "text": {
+                "tr": "AB=5 ve ∠B=30° iken C’nin yeri B’den 30° ile çıkan ışın üzerindedir. AC=4 şartı C’yi A merkezli, yarıçapı 4 olan çemberin üzerine koyar. Çember ışını iki yerde keser. Bu iki üçgende AB, AC ve B açısı aynı olsa da BC uzunlukları farklıdır.\n\nA’dan ışına indirilen dikme 5·sin 30°=2,5 birimdir. AC daha kısaysa kesişim yoktur. AC=2,5’te çember ışına bir kez teğet olur. AC=4’te iki kesişimi de görürsün. AC=5 olduğunda kesişimlerden biri B’nin kendisidir ve üçgen oluşturmaz."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "tyt-geo-eslik-benzerlik-031",
+        "after": "ded64616dc4fde31694888ea2ec27c6d0522558e3551d5871a2f30be9bfd2f1e",
+        "prior": {
+          "sections": [
+            {
+              "title": "Aynı biçim ile aynı büyüklüğü ayır",
+              "paragraphs": [
+                "İki üçgen eştir denildiğinde karşılıklı açıları eşit ve karşılıklı kenarları aynı uzunluktadır. Birini döndürmek, taşımak veya yansıtmak eşliği bozmaz. Eşlik, şeklin sayfa üzerindeki yönünden bağımsızdır; kenar uzunlukları ve açı ölçüleri korunur.",
+                "Benzer üçgenlerde karşılıklı açılar eşit, karşılıklı kenarlar aynı pozitif oranda değişmiştir. Eş üçgenler benzerliğin oranı 1 olan özel hâlidir. Yalnız üç açının eşitliği boyutu belirlemez: 3–4–5 ile 6–8–10 üçgenleri benzerdir, eş değildir."
+              ]
+            },
+            {
+              "title": "Köşe sırası bir bilgi taşır",
+              "paragraphs": [
+                "ABC∼DEF yazımı A↔D, B↔E ve C↔F eşlemesini belirtir. Buna göre AB↔DE, AC↔DF ve BC↔EF olur. Eşlik yazımında da aynı sıra okunur. Kâğıtta soldaki kenarın karşılık olarak mutlaka soldaki kenara gitmesi gerekmez; şekil dönebilir.",
+                "Oranı yeni/eski veya küçük/büyük olarak bir kez seçip bütün kenarlarda koru. AB/DE yazdıysan sonraki oran AC/DF olmalıdır; DF/AC yazmak oranı ters çevirir. Önce eş açıları aynı işaretle göster, sonra karşılarındaki kenarları eşleştir; çıplak sayıların yakınlığına göre eşleme yapma."
+              ]
+            },
+            {
+              "title": "Eşliği hangi veriler kanıtlar?",
+              "paragraphs": [
+                "KKK eşliğinde üç karşılıklı kenar eşittir. KAK eşliğinde iki karşılıklı kenar ve bu iki kenarın ARASINDA kalan açı eşittir. AKA eşliğinde iki karşılıklı açı ve aralarındaki kenar eşittir; iki açı üçüncüyü de belirlediği için uygun karşılıklı bir kenarla da eşlik kurulabilir.",
+                "“Üç eleman eşitse her zaman eşlik vardır” genellemesi yanlıştır. Üç açı yalnız benzerlik verir; rastgele iki kenar ve aralarında olmayan açı da genel durumda tek üçgen belirlemez. Dik üçgenlerde hipotenüs ve bir dik kenar eşitse Pisagor diğer dik kenarı da eşitler ve KKK ile eşlik kurulabilir."
+              ]
+            },
+            {
+              "title": "Benzerliği hangi veriler kanıtlar?",
+              "paragraphs": [
+                "AA benzerliğinde iki karşılıklı açı eşit olunca üçüncü açılar da 180° toplamından eşit olur. KAK benzerliğinde iki karşılıklı kenar aynı oranda ve aralarındaki açılar eşit olmalıdır. KKK benzerliğinde üç karşılıklı kenar oranı aynıdır.",
+                "Bir oran yazmak benzerlik kanıtı değildir; önce bu üç koşuldan birini kur. İki üçgende birer açı eşit ve birer kenar orantılı verilmesi yeterli olmaz. Kum saati görünümünde ortak köşedeki ters açı eşliği yalnız bir açı çifti sağlar; ikinci açı için paralellik veya başka açık bir veri gerekir."
+              ]
+            },
+            {
+              "title": "Paralel kesitte küçük üçgeni gör",
+              "paragraphs": [
+                "ABC üçgeninde D, AB üzerinde; E, AC üzerinde ve DE∥BC olsun. ADE ile ABC üçgenleri A açısını paylaşır; paralellik diğer karşılıklı açıları eşitler. Bu nedenle AD/AB=AE/AC=DE/BC=t olur. D ve E iç nokta ise 0<t<1’dir.",
+                "Aynı modelde AD/DB=AE/EC de doğrudur; fakat bu parça/parça oranı t ile aynı sayı değildir. Örneğin AD/AB=2/5 iken DB/AB=3/5 ve AD/DB=2/3 olur. Denklemde AD+DB=AB toplamını görünür tutmak yanlış payda seçimini önler."
+              ]
+            },
+            {
+              "title": "Orta taban ve Thales: ayrı şekiller, aynı oran fikri",
+              "paragraphs": [
+                "İki kenarın orta noktalarını birleştiren doğru parçası üçüncü kenara paraleldir ve onun yarısıdır. Küçük üçgenin bütün uzunlukları ana üçgenin yarısı, çevresi de yarısı olur. Orta taban yalnız ortadan geçtiği açıkça verilmiş ya da kanıtlanmış noktalar için kullanılır.",
+                "Üç veya daha çok paralel doğru iki keseni keserse, kesenlerde karşılıklı aralıklar orantılıdır. Bir kesendeki üst aralık / alt aralık oranını, diğer kesendeki üst aralık / alt aralık ile eşleştir. Aralık yerine bütün uzunluğu kullanacaksan iki kesende de aynı tür toplamı seç."
+              ]
+            },
+            {
+              "title": "Uzunluk k iken alan neden k²?",
+              "paragraphs": [
+                "Benzerlik oranı yeni/eski=k ise her kenar, çevre, yükseklik, kenarortay ve açıortay uzunluğu k ile çarpılır. Alan taban×yükseklik/2 olduğundan iki bağımsız uzunluk da k ile değişir; alan k² ile çarpılır. Hacim sorularında benzer cisim için k³ gerekir, fakat bu ünite düzlem üçgenleri üzerinde çalışır.",
+                "Alan oranı 9/25 ise aynı yöndeki pozitif uzunluk oranı 3/5’tir. DE∥BC modelinde t=2/3 için üst üçgenin alanı ana alanın 4/9’u, kalan yamuğun alanı 5/9’udur. Yamuğun alanını doğrudan t ile çarpmak şekillerin hangisinin benzer olduğunu unutmaya yol açar."
+              ]
+            },
+            {
+              "title": "Gölge ve ölçek problemlerinde varsayımı yaz",
+              "paragraphs": [
+                "Aynı anda düz zemindeki dik nesneler için güneş ışınları paralel kabul edilirse, yükseklik–gölge üçgenleri AA ile benzerdir. Yükseklik/gölge oranı ortaktır. Farklı saatte veya eğimli zeminde aynı oranı gerekçe vermeden kullanmak modelin koşullarını değiştirir.",
+                "Soru çözümünde üç kısa kontrol yeterlidir: karşılıklı köşe sırası, bütün oranların yönü, uzunluk–alan ayrımı. Bir figürün büyütülmesi açıyı büyütmez; açıların eşit kalması benzerliğin bir parçasıdır. Sonucu ikinci bir kenar çifti veya alan oranıyla denetle."
+              ]
+            },
+            {
+              "title": "Eş yükseklikli şeritlerin alanları neden farklı?",
+              "figureTitle": "Eş yükseklik, farklı alan",
+              "paragraphs": [
+                "Eşkenar üçgende tabana paralel kesimler yüksekliği tepeden itibaren üç eş parçaya ayırsın. Tepeden birinci ve ikinci kesime kadar olan şekiller, büyük üçgene sırasıyla 1/3 ve 2/3 uzunluk oranıyla benzerdir. Yükseklik oranı kadar taban oranı da değişir. Bu yüzden biriken alan payları 1/9, 4/9 ve 1 olur.",
+                "Şerit alanı bulmak için iki biriken alanı çıkar. Baştan sona eş yükseklikli üç şeridin alan payları 1/9, 3/9 ve 5/9’dur. En alttaki şerit daha geniş tabanlara yayıldığı için en büyüktür. Eğer kesimler paralel değilse önce benzerliğin geçerli olup olmadığını kontrol et."
+              ]
+            },
+            {
+              "title": "Arada olmayan açı iki üçgene izin verebilir",
+              "paragraphs": [
+                "AB=5 ve ∠B=30° iken C’nin yeri B’den 30° ile çıkan ışın üzerindedir. AC=4 şartı C’yi A merkezli, yarıçapı 4 olan çemberin üzerine koyar. Çember ışını iki yerde keser. Bu iki üçgende AB, AC ve B açısı aynı olsa da BC uzunlukları farklıdır.",
+                "A’dan ışına indirilen dikme 5·sin 30°=2,5 birimdir. AC daha kısaysa kesişim yoktur. AC=2,5’te çember ışına bir kez teğet olur. AC=4’te iki kesişimi de görürsün. AC=5 olduğunda kesişimlerden biri B’nin kendisidir ve üçgen oluşturmaz."
+              ]
+            }
+          ],
+          "source": "Kenar-Açı-Kenar Eşliği 5.1 fiziksel s. 2, arada olmayan açı karşı örneği. MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir. Eşkenar Üçgen 5.1, fiziksel s. 1 ve 4: eş yükseklikli alan şeritleri."
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-geo-eslik-benzerlik-031",
+        "after": "df17bf7d6dae23938078006b897d4b12454a8883fc1eec9d50a3d9f72e500fc2",
+        "prior": {
+          "sections": [
+            {
+              "title": "Eşleme ve ölçeğin yönü",
+              "text": [
+                "ABC∼DEF demek A↔D,B↔E,C↔F demektir:AB↔DE,AC↔DF,BC↔EF.",
+                "Bütün oranları aynı yönde kur. Benzerlik aynı biçim; eşlik aynı biçim ve aynı büyüklüktür. Eşlik,benzerlik oranının1 olduğu durumdur."
+              ]
+            },
+            {
+              "title": "Eşlik için yeterli koşullar",
+              "figureTitle": "Arada olmayan açı iki üçgene izin verebilir",
+              "text": [
+                "AB=5, AC=4 ve ∠B=30° ile C, bir ışın ile A merkezli çemberin iki kesişiminden biri olabilir. İki BC uzunluğu farklıdır. KAK için verilen açı iki verilen kenarın ortak köşesinde olmalıdır.",
+                "KKK:üç karşılıklı kenar eş. KAK:iki karşılıklı kenar ve ARALARINDAKİ açı eş. AKA:iki karşılıklı açı ve aralarındaki kenar eş.",
+                "Dik üçgende hipotenüs+bir dik kenar eşliği yeterlidir. Yalnız üç açı eşliği veya rastgele iki kenar+aralarında olmayan açı genel olarak eşliği belirlemez."
+              ]
+            },
+            {
+              "title": "Benzerlik için yeterli koşullar",
+              "text": [
+                "AA:iki karşılıklı açı eş. KAK:iki karşılıklı kenar aynı oranda ve aralarındaki açılar eş. KKK:üç karşılıklı kenar oranı aynı.",
+                "Önce benzerliği kanıtla,sonra oran yaz. Kum saati görünümünde ters açı yalnız bir açı çifti verir; ikinci çift için gerekçe gerekir."
+              ]
+            },
+            {
+              "title": "Paralel kesit,orta taban,Thales",
+              "text": [
+                "D∈AB,E∈AC iç noktaları ve DE∥BC ise AD/AB=AE/AC=DE/BC=t; AD/DB=AE/EC=t/(1−t).",
+                "D,E orta noktaysa t=1/2,DE=BC/2. En az üç paralelin iki kesende ayırdığı karşılıklı aralıklar orantılıdır; aralık/bütün ayrımını koru."
+              ]
+            },
+            {
+              "title": "Uzunluk k,alan k²",
+              "text": [
+                "Yeni/eski uzunluk oranı k>0 ise kenar,çevre,yükseklik,kenarortay,açıortay oranı k; alan oranı k².",
+                "Paralel kesitte üst küçük üçgenin alanı t², kalan yamuğun alanı1−t² katıdır. Alan oranı9/25 ise aynı yöndeki uzunluk oranı3/5’tir."
+              ]
+            },
+            {
+              "title": "Üç eş yükseklikli şerit",
+              "figureTitle": "Eş yükseklik, farklı alan",
+              "text": [
+                "Tepeden alan payları 1/9 → 4/9 → 9/9 birikir. Ardışık farklar 1/9, 3/9 ve 5/9. Toplam alan 81 ise şeritler 9, 27 ve 45 birim²."
+              ]
+            }
+          ],
+          "source": "Kenar-Açı-Kenar Eşliği 5.1 fiziksel s. 2, arada olmayan açı karşı örneği. MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir. Eşkenar Üçgen 5.1, fiziksel s. 1 ve 4: eş yükseklikli alan şeritleri."
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-mat-basit-esitsizlikler-kaynak-037",
+        "after": "c573984199204aead5127c1a811a379f37d719f97452299fe9f5325d6ea48eb2",
+        "prior": {
+          "sections": [
+            {
+              "title": "İşaret ve uç kabulü",
+              "text": [
+                "<, >: eşit sınır hariç, açık nokta. ≤, ≥: sınır dahil, dolu nokta. Çözüm tek örnek değil, bütün uygun değerlerin kümesidir.",
+                "x<3 → (−∞,3); x≥−1 → [−1,∞); −2<x≤5 → (−2,5]. Sonsuz tarafta her zaman yuvarlak parantez kullan."
+              ]
+            },
+            {
+              "title": "Eşdeğer dönüşüm",
+              "text": [
+                "Aynı sayıyı eklemek/çıkarmak yönü korur; aynı pozitif sayıyla çarpmak/bölmek korur; aynı negatif sayıyla çarpmak/bölmek yönü ters çevirir.",
+                "Bölen sıfır olamaz. 0 ile çarpma çözüm bilgisini korumaz: 1<2 → 0<0 yanlış. İşareti bilinmeyen çarpan/bölen için pozitif, negatif, sıfır durumlarını ayır."
+              ]
+            },
+            {
+              "title": "Eksiye değil, işleme bak",
+              "text": [
+                "−3x>12 → x<−4; x−3>12 → x>15. İlkinde negatif katsayıya bölme, ikincisinde iki tarafa +3 ekleme var.",
+                "−2x<8 → x>−4; −5x≤20 → x≥−4. Negatif bölmede yön döner ama eşitlik kabulü korunur."
+              ]
+            },
+            {
+              "title": "Altı adım",
+              "text": [
+                "Sayı alanını/tek değişkenli doğrusal yapıyı tanı; parantezi aç; benzer terimleri topla; değişken/sabiti ayır; son katsayının işaretine göre çöz; aralık/şekil ve ilk ifadede kontrol et.",
+                "3(2x−5)≤4x+7 → 6x−15≤4x+7 → 2x≤22 → x≤11. Bütün terimleri koru."
+              ]
+            },
+            {
+              "title": "Sıfır katsayı ve parametre",
+              "text": [
+                "a·x<6: a>0 ise x<6/a; a<0 ise x>6/a; a=0 ise 0<6 doğru olduğundan ℝ.",
+                "5(x−2)<5x−7 → −10<−7 → ℝ. Aynı ifadede > kullanılırsa ∅. Sıfıra bölerek sınır üretme."
+              ]
+            },
+            {
+              "title": "Bileşik eşitsizlik",
+              "text": [
+                "−2<3x+1≤10 → −3<3x≤9 → −1<x≤3, yani (−1,3].",
+                "2≤(x−1)/3<5 → 6≤x−1<15 → 7≤x<16, yani [7,16). Pozitif paydada üç tarafı birlikte değiştir.",
+                "−4≤(x+2)/2<5 → −10≤x<8, yani [−10,8). Ek negatif katsayı denemesinde iki koşulu ayrı çözerek yönü kontrol et."
+              ]
+            },
+            {
+              "title": "Ve, veya ve temas",
+              "text": [
+                "Ve: kesişim. x>1 ve x≤4 → (1,4]. x≤−2 ve x>3 → ∅.",
+                "Veya: birleşim. x≤−2 veya x>3 → (−∞,−2]∪(3,∞).",
+                "Ek uç denemeleri: x≥2 ve x≤2 → {2}; x<2 veya x>2, yalnız 2’yi dışarıda bırakır."
+              ]
+            },
+            {
+              "title": "Sözcük ve sayı alanı",
+              "text": [
+                "En az / zarar etmez eşitliği kabul eder: ≥. En çok: ≤. Daha fazla / kâr: >. Daha az / zarar: <.",
+                "Adet için n∈{0,1,2,…}. n<8 en fazla 7, n≤8 en fazla 8 verir. Her zaman bulunan adedi ve hemen sonrakini ilk giderde denetle."
+              ]
+            },
+            {
+              "title": "Kurs ve konser bütçesi",
+              "text": [
+                "240+80n≤880 → n≤8 → en çok 8 ders; 8 için 880 TL, 9 için 960 TL.",
+                "1200+60n≤4200 → n≤50 → en çok 50 kişi; 50 için 4200 TL, 51 için 4260 TL. Sabit ücret n=0’da da uygulanır, birim gider pozitiftir."
+              ]
+            },
+            {
+              "title": "Kâr/zarar aralığı",
+              "text": [
+                "Maliyet 40+u, ilk gelir 2u+30 ve kâr: u>10. İkinci gelir 3u−20 ve zarar: u<30. İkisi birlikte (10,30).",
+                "İlk koşul zarar etmez diye değişirse [10,30) olur. Maliyet 80+b, gelir 2b+20 ve zarar etmez koşulu b≥60 verir."
+              ]
+            },
+            {
+              "title": "Birim ve seçili resmî atıf",
+              "text": [
+                "u=b/1000: u bin TL cinsinden sayısal değer, b TL. 10<u<30 ⇔ 10000<b<30000. b ile u’nun sayısal değerlerini karıştırma.",
+                "Aralığın merkezi 20000, yarıçapı 10000 TL; |b−20000|<10000. Seçili gerçek 2024 TYT Matematik 8 ve A anahtarı doğrulandı. Genel mutlak değer konusu veya bütün ÖSYM arşivi işlenmiş sayılmaz."
+              ]
+            },
+            {
+              "title": "Hata onarma ve hatırlama",
+              "text": [
+                "İlk yanlış dönüşümü bul: negatif bölmede unutulan yön, toplamada gereksiz yön, sıkı uçta dolu nokta, bilinmeyen işarete kör bölme, adet yerine kesirli sonuç.",
+                "Kaynağı kapatıp çözümü üret; iç/dış/uç dene; karşı örnekle nedenini söyle. Şekli kurcalamak, süre geçirmek ve elle çalıştım demek ustalık veya XP kanıtı değildir."
+              ]
+            },
+            {
+              "title": "Aralık hesabı: işareti ve uçları seç",
+              "text": [
+                "Bağımsız değişkenlerle a+b için alt-alt ve üst-üst. a−b için alt-üst ve üst-alt. Farkta −b’nin sınırlarını yönleriyle yeniden yaz.",
+                "Pozitif çarpanlarda çarpım her iki girdiyle artar. İşaretler değişiyorsa sonlu aralıkların dört köşe çarpımını karşılaştır. Her uç için sonucu veren izinli bir çift ara. 0≤a<2 ve 1<b<3 için a=0, b=2 alt ucu verir: 0≤ab<6."
+              ],
+              "table": {
+                "headers": [
+                  "Bağımsız 1<a<3, 2≤b≤4",
+                  "Tam aralık"
+                ],
+                "rows": [
+                  [
+                    "a+b",
+                    "(3,7)"
+                  ],
+                  [
+                    "a−b",
+                    "(−3,1)"
+                  ],
+                  [
+                    "ab",
+                    "(2,12)"
+                  ],
+                  [
+                    "a/b",
+                    "(1/4,3/2)"
+                  ]
+                ]
+              }
+            },
+            {
+              "title": "Ters alma ve bölme: önce sıfırı ayır",
+              "text": [
+                "Payda 0 olamaz. 1/b, sıfırın her bir tarafında b büyüdükçe küçülür. Negatif ve pozitif dalları ayrı ters çevir, sonra birleştir. Örnek: −2≤b≤3, b≠0 → 1/b∈(−∞,−1/2]∪[1/3,∞).",
+                "a/b=a·(1/b). Bağımsız 3<a≤5 ve 1≤b<2 için 3/2<a/b≤5. (5,1) ile 5 alınır. Aynı çift a−b=4 verir ve fark 1<a−b≤4 aralığındadır."
+              ]
+            },
+            {
+              "title": "Bağlı değişkenler ve sıfır katsayı",
+              "text": [
+                "a=b iken a−b=0, ab=a². −2<a<3 için 0≤a²<9. Sıfır içeride, 9’u verecek ±3 dışarıda.",
+                "ax<b eşitsizliğinde a=0 ise 0<b doğru olduğunda bütün gerçekler, yanlış olduğunda boş küme. Diğer dallarda bölme yönünü a’nın işareti belirler."
+              ]
+            },
+            {
+              "title": "Düzlemde eşitsizlik sistemi",
+              "text": [
+                "ax+by=c sınırını çiz, a ve b birlikte 0 olmasın. < ve > kesikli, ≤ ve ≥ kesiksiz. Sınır üzerinde olmayan bir deneme noktası seç. Her koşulun kabul ettiği tarafı bul, sonra ortak bölgeyi al.",
+                "x yatay, y düşey eksendir. Ortak bölge x=1’in sağında, y=0’ın üstünde ve x+y=4’ün (0,0)’ı içeren tarafındadır. (1,0), (4,0) ve (1,3) köşelerinin belirlediği üçgenin içi ve kenarları dahildir.",
+                "x+y<4 olursa eğik kenarın tamamı, (4,0) ve (1,3) dahil, dışarıda kalır. (1,0) ve kalan iki kenarın eğik kenara ulaşmadan önceki bölümleri içeridedir."
+              ]
+            },
+            {
+              "title": "Düzlemde tam sayı ikilileri",
+              "text": [
+                "x≥0, y≥0, 2x+y≤6 için x∈{0,1,2,3}. Her x için 0≤y≤6−2x ve y tam sayı. Sırasıyla 7, 5, 3, 1 değer, toplam 16 sıralı ikili.",
+                "Başlangıç 0 dahilse üst sınır 6 için 7 değer vardır. Bu örnekte üç sınır kapalıdır. Gerçek sayı ikilileri, tam sayılarla sınırlanmadığında sonsuzdur."
+              ]
+            }
+          ]
+        }
+      }
+    ]
   }
 ]

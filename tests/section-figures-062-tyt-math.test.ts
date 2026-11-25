@@ -16,7 +16,7 @@ const COUNTS: Record<string, number> = {
   "tyt-mat-ebob-ekok-kaynak-034": 6,
   "tyt-mat-rasyonel-kaynak-035": 6,
   "tyt-mat-dogrusal-denklemler-kaynak-036": 5,
-  "tyt-mat-basit-esitsizlikler-kaynak-037": 7,
+  "tyt-mat-basit-esitsizlikler-kaynak-037": 8,
   "tyt-mat-uslu-sayilar-kaynak-039": 5,
   "tyt-mat-permutasyon-kaynak-032": 4,
   "tyt-mat-tekrarli-permutasyon-kaynak-033": 4,

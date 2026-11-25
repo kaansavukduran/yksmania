@@ -852,8 +852,8 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
-| TYT Matematik | 45 / 45 | 45 · 190 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
-| TYT Geometri | 19 / 19 | 19 · 182 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
+| TYT Matematik | 45 / 45 | 45 · 191 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
+| TYT Geometri | 19 / 19 | 19 · 183 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 283 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 155 | 515 / 515 · %100,00 | 11 / 36 · %30,56 | 54 soru · 9 kitapçık | 0 |
@@ -867,7 +867,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2351** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2353** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
@@ -3707,3 +3707,9 @@ Rasyonel Sayılar 1.1 fiziksel 3 ve Üçgende Merkezler 5.2 fiziksel 6–7 ile k
 Birinci Dereceden Denklemler’de çözüm türleri yerel tabloyla okunuyor. Mevcut grafik, çözümlü örnek ve ayrı Kopya Kağıdından da açılıyor. Aynı (3; 2) noktası iki başlangıç eşitliğinde denetleniyor. Eşlik ve Benzerlik’te A merkezli çember ve B’den çıkan 30° ışını, verilen açının iki kenarın arasında olmadığı durumda birden çok üçgen çıkabildiğini gösteriyor.
 
 Birinci Dereceden Denklemler 1.3.0 fiziksel 3 ve Kenar-Açı-Kenar Eşliği 5.1 fiziksel 2 ile karşılaştırıldı. TypeScript, 77 birim, 21 Chromium akışı ve 323 çevrimdışı varlık denetlendi. Sırada Basit Eşitsizlikler fiziksel 7 ve AKA/KKK Eşliği fiziksel 2 ile 8 var.
+
+## TYT Matematik ve Geometri · 0.159.0 adayı
+
+Basit Eşitsizlikler’de eğik sınırı açınca iki köşe çıkar ve diğer köşe çözümde kalır. Eşlik ve Benzerlik’te ters yönlü iki 6–8–10 üçgeni eşken, ikinci üçgenin tüm kenarları 1,5 kat olunca benzerlik kalır. Çizimler anlatım ve ayrı Kopya Kağıdında çalışır.
+
+Basit Eşitsizlikler 1.1 fiziksel 7 ve Açı-Kenar-Açı/Kenar-Kenar-Kenar Eşliği 5.1 fiziksel 2 ile 8 seçildi. 77 birim, TypeScript, 23 Chromium akışı ve 323 çevrimdışı varlık doğrulandı. Önceki açıortay çiziminde üst üste binen ikinci 25° etiketi kaldırıldı. Eş açılar ve hesap korunurken 320, 375 ve 1280 pikselde çakışma kalmadı. Sırada Mutlak Değer fiziksel 8 ve Üçgende Benzerlik fiziksel 4–5 var.

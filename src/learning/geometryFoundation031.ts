@@ -1693,7 +1693,7 @@ const packs031: FoundationPack031[] = [
     title: "Üçgenlerde eşlik ve benzerlik: eşleme, ölçek ve paralellik",
     minutes: 47,
     source:
-      "Kenar-Açı-Kenar Eşliği 5.1 fiziksel s. 2, arada olmayan açı karşı örneği. MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir. Eşkenar Üçgen 5.1, fiziksel s. 1 ve 4: eş yükseklikli alan şeritleri.",
+      "Kenar-Açı-Kenar Eşliği 5.1 fiziksel s. 2, arada olmayan açı karşı örneği. Açı-Kenar-Açı ve Kenar-Kenar-Kenar Eşliği 5.1 fiziksel s. 2 ve 8. MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir. Eşkenar Üçgen 5.1, fiziksel s. 1 ve 4: eş yükseklikli alan şeritleri.",
     objectives: [
       "Karşılıklı köşeleri belirterek eşlik ve benzerliği ayır.",
       "KKK, KAK, AKA eşlik ve AA, KAK, KKK benzerlik koşullarını gerekçelendir.",
@@ -1770,6 +1770,13 @@ const packs031: FoundationPack031[] = [
         paragraphs: [
           "AB=5 ve ∠B=30° iken C’nin yeri B’den 30° ile çıkan ışın üzerindedir. AC=4 şartı C’yi A merkezli, yarıçapı 4 olan çemberin üzerine koyar. Çember ışını iki yerde keser. Bu iki üçgende AB, AC ve B açısı aynı olsa da BC uzunlukları farklıdır.",
           "A’dan ışına indirilen dikme 5·sin 30°=2,5 birimdir. AC daha kısaysa kesişim yoktur. AC=2,5’te çember ışına bir kez teğet olur. AC=4’te iki kesişimi de görürsün. AC=5 olduğunda kesişimlerden biri B’nin kendisidir ve üçgen oluşturmaz.",
+        ],
+      },
+      {
+        title: "Üç kenarı eşleştir, ölçeği ayır",
+        paragraphs: [
+          "6, 8 ve 10 birimlik iki üçgenin karşılıklı kenarları eşleşirse yönleri ters olsa da KKK eşliği vardır. A ile D, B ile E, C ile F karşılıklıysa AB ile DE, AC ile DF, BC ile EF aynı çiftlerdir.",
+          "İkincide uzunluklar 9, 12 ve 15 olursa her oran 3/2 çıkar. Karşılıklı açılar ve üçgenin biçimi korunur. Uzunlukların aynı olması şartı sağlanmadığı için bu durumda KKK benzerliği vardır.",
         ],
       },
     ],
@@ -2867,7 +2874,9 @@ const quickSheets031: Record<string, FoundationQuickSheet031> = {
       },
       {
         title: "Benzerlik için yeterli koşullar",
+        figureTitle: "Üç kenarı eşleştir, ölçeği ayır",
         text: [
+          "6–8–10 ile 9–12–15 için karşılıklı kenar oranı 3/2’dir. İki üçgen aynı biçimde ve farklı büyüklüktedir.",
           "AA:iki karşılıklı açı eş. KAK:iki karşılıklı kenar aynı oranda ve aralarındaki açılar eş. KKK:üç karşılıklı kenar oranı aynı.",
           "Önce benzerliği kanıtla,sonra oran yaz. Kum saati görünümünde ters açı yalnız bir açı çifti verir; ikinci çift için gerekçe gerekir.",
         ],

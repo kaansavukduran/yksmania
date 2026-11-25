@@ -383,7 +383,7 @@ const ucgendeAcilar: Record<string, FigureDef> = {
       if (bisector) {
         els.push(
           ang(B, C, X, `${halfB}°`, { tone: "a", r: 45 }),
-          ang(B, X, A, `${halfB}°`, { tone: "a", r: 45 }),
+          ang(B, X, A, undefined, { tone: "a", r: 45 }),
           ang(X, B, C, `${angleAtD}°`, { tone: "b", r: 34 }),
         );
       } else {
@@ -1171,6 +1171,32 @@ const eslikBenzerlik: Record<string, FigureDef> = {
           `AB = 5 ve ∠B = 30°. Dik uzaklık AH = ${fmt(height)} birim. AC = ${fmt(radius)} birim.`,
           verdict,
           ...(candidates.length ? [`Olası BC uzunlukları: ${candidates.map((length) => fmt(length, 2)).join(" ve ")} birim.`] : []),
+        ],
+      };
+    },
+  },
+  "Üç kenarı eşleştir, ölçeği ayır": {
+    caption: "İkinci üçgenin yönü ters. Üç karşılıklı kenar aynı uzunluktayken eşlik vardır. İkinci üçgenin bütün uzunluklarını aynı oranda değiştirince açıları kalır, boyutu değişir.",
+    alt: "Birbirine bakan iki dik üçgen. A, B ve C, sırasıyla D, E ve F ile eşleşir. İkinci üçgenin boyutu iki adım arasında değişir.",
+    steps: ["Üç kenar aynı", "Her kenar 1,5 kat"],
+    draw: (_, step) => {
+      const A = v(0, 0), B = v(6, 0), C = v(0, 8);
+      const scale = step === 0 ? 1 : 1.5;
+      const D = v(18, 0);
+      const convert = ([x, y]: V) => v(D[0] - scale * x, D[1] + scale * y);
+      const E = convert(B), F = convert(C);
+      const first = [dist(A, B), dist(A, C), dist(B, C)];
+      const second = [dist(D, E), dist(D, F), dist(E, F)];
+      return {
+        els: [
+          tri(A, B, C, "a"), tri(D, E, F, "c"),
+          right(A, B, C), right(D, E, F),
+          pt(A, "A", "sw"), pt(B, "B", "se"), pt(C, "C", "nw"),
+          pt(D, "D", "se"), pt(E, "E", "sw"), pt(F, "F", "ne"),
+        ],
+        readout: [
+          `AB, AC, BC: ${first.map((n) => fmt(n)).join(" · ")}. DE, DF, EF: ${second.map((n) => fmt(n)).join(" · ")}.`,
+          scale === 1 ? "ABC ≅ DEF. Üç karşılıklı kenar eşit." : "ABC ∼ DEF. Boyut oranı 1,5 olduğu için eş değiller.",
         ],
       };
     },

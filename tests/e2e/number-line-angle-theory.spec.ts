@@ -500,3 +500,47 @@ test("The angle between the wrong pair of sides can leave two triangles", async 
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Opening the slanted constraint excludes just that edge", async ({ page, context }, info) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-mat-basit-esitsizlikler-kaynak-037";
+  const model = figure(page, "Üç yarı düzlemin ortak bölgesi");
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("(1; 0), (4; 0) ve (1; 3) çözümde.");
+  const closed = await model.getByRole("img").innerHTML();
+  await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await expect(model).toContainText("(4; 0) ve (1; 3) dışarıda. (1; 0) çözümde kalır.");
+  expect(await model.getByRole("img").innerHTML()).not.toBe(closed);
+  await checkFrame(page, model);
+  const image = model.getByRole("img");
+  await image.evaluate((svg) => svg.scrollIntoView({ block: "center" }));
+  await image.screenshot({ path: info.outputPath("acik-esitsizlik-siniri.png") });
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(model).toContainText("(1; 0), (4; 0) ve (1; 3) çözümde.");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Scaling all corresponding sides keeps similarity but loses congruence", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-eslik-benzerlik-031";
+  const model = figure(page, "Üç kenarı eşleştir, ölçeği ayır");
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("ABC ≅ DEF. Üç karşılıklı kenar eşit.");
+  const congruent = await model.getByRole("img").innerHTML();
+  await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await expect(model).toContainText("DE, DF, EF: 9 · 12 · 15.");
+  await expect(model).toContainText("ABC ∼ DEF.");
+  expect(await model.getByRole("img").innerHTML()).not.toBe(congruent);
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(model).toContainText("ABC ≅ DEF. Üç karşılıklı kenar eşit.");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

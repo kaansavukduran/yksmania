@@ -1,4 +1,5 @@
-import { pt, seg, txt, v, vec, type El, type FigureDef, type Tone, type V } from "./figureKit";
+import { source011Figure } from "../basicInequalitiesSource011Revision";
+import { poly, pt, seg, txt, v, vec, type El, type FigureDef, type Tone, type V } from "./figureKit";
 import { cell, numberLine, pad, rect, table, tn, zs } from "./mathFigures062TytKit";
 
 /*
@@ -373,6 +374,39 @@ const corners: FigureDef = {
   },
 };
 
+const planeBoundary: FigureDef = {
+  caption: "Üç koşulun ortak bölgesi boyalıdır. Eğik kenardaki eşitlik kaldırıldığında üçgenin içi kalır. Kesikli eğik çizgi ile bu çizgi üzerindeki boş noktalar artık çözüm değildir.",
+  alt: "Koordinat düzlemindeki ortak üçgensel bölge. Yatay ve düşey kenarın birleştiği nokta dolu kalır. Eğik kenar ve üzerindeki iki köşenin durumu seçilen eşitsizliğe göre değişir.",
+  steps: ["Eğik sınır dahil: x + y ≤ 4", "Eğik sınır hariç: x + y < 4"],
+  draw: (_, step) => {
+    const [base, right, top] = source011Figure.vertices;
+    const bounds: [number, number, number, number] = [-0.45, 4.85, -0.55, 4.35];
+    const [first, last] = clip(1, 1, right[0], ...bounds);
+    const strict = step === 1;
+    return {
+      els: [
+        poly([base, right, top], {fill: "a", bare: true}),
+        ...axes(...bounds, 1, [1, 2, 3, 4], [1, 2, 3, 4]),
+        seg(base, right, {tone: "a", bold: true}),
+        seg(base, top, {tone: "a", bold: true}),
+        seg(first, last, {tone: "b", dash: strict}),
+        pt(base, "(1; 0)", "se", "a"),
+        pt(right, "(4; 0)", "ne", "b", strict),
+        pt(top, "(1; 3)", "ne", "b", strict),
+        pt(v(2, 1), "(2; 1)", "n", "a"),
+        pt(v(0, 2), "(0; 2)", "e", "muted", true),
+        ...pad(-0.9, 4.8, 5.5, -1.05),
+      ],
+      readout: [
+        "(2; 1) içeride. (0; 2) dışarıda çünkü x ≥ 1 koşulunu sağlamıyor.",
+        strict
+          ? "(4; 0) ve (1; 3) dışarıda. (1; 0) çözümde kalır."
+          : "(1; 0), (4; 0) ve (1; 3) çözümde.",
+      ],
+    };
+  },
+};
+
 export const mathFigures062TytAlgebra: Record<string, Record<string, FigureDef>> = {
   "tyt-mat-dogrusal-denklemler-kaynak-036": {
     "Katsayı sıfır olduğunda tür değişir": typeGraph,
@@ -389,5 +423,6 @@ export const mathFigures062TytAlgebra: Record<string, Record<string, FigureDef>>
     "Sabit ücret ve ders başı ücret": budget,
     "Bağımsız aralıklarda toplam ve fark": sumDiff,
     "Çarpımda işaret ve uç kabulü": corners,
+    "Üç yarı düzlemin ortak bölgesi": planeBoundary,
   },
 };
