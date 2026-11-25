@@ -1,8 +1,8 @@
 {
-  "version": "0.188.0",
+  "version": "0.189.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Türkçede önce ve sonra biçimlerinden ses olayını kanıtla. Tarihte geçen yılı ve iki uç dahil yıl etiketlerini bir zaman çizgisinde say.",
-    "en": "Compare word forms to identify vowel changes, and use a timeline to distinguish elapsed years from counted year labels."
+    "tr": "Aynı akarsuda farklı coğrafya soruları sor, felsefede iki paylaştırma ilkesini karşılaştır ve bilgi yollarını somut kanıtlarıyla incele.",
+    "en": "Explore three questions about one river, compare two rules for sharing, and examine the evidence behind three ways of knowing."
   }
 }

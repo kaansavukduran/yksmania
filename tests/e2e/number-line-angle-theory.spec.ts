@@ -2025,3 +2025,68 @@ test("Calendar boundary strip distinguishes intervals from labels", async ({ pag
   }
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("A single river supports three geography questions", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Aynı akarsuyu üç farklı soruyla incele");
+  for (const route of ["/#/lesson?id=doga-insan-cografya", "/#/cheatsheets?topic=detail-37"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Suyun akımını hidrografya inceler.");
+    const next = model.getByRole("button", { name: "İleri", exact: true });
+    await next.press("Enter");
+    await expect(model).toContainText("Canlı topluluklarının dağılışını biyocoğrafya inceler.");
+    await next.press("Enter");
+    await expect(model).toContainText("Tarımsal etkinliğin konumu ekonomik coğrafyanın sorusudur.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Two distribution rules keep four units while changing shares", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Aynı toplamı iki dağıtım ilkesiyle karşılaştır");
+  for (const route of ["/#/lesson?id=felsefeyi-tanima", "/#/cheatsheets?topic=detail-97"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Eşit miktar: A 2, B 2 birim. Varsayılan ihtiyaç: A 1, B 3 birim.");
+    const slider = model.getByRole("slider", { name: /A’nın varsayılan ihtiyacı/ });
+    await slider.press("ArrowRight");
+    await expect(model).toContainText("Varsayılan ihtiyaç: A 2, B 2 birim.");
+    await slider.press("End");
+    await expect(model).toContainText("Eşit miktar: A 2, B 2 birim. Varsayılan ihtiyaç: A 3, B 1 birim.");
+    await expect(model).toContainText("Toplam iki dağıtımda da 4 birim.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Three knowledge routes agree with the evidence table", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Üç kaynak birlikte iş görebilir");
+  const table = page.getByRole("table").filter({
+    has: page.getByRole("columnheader", { name: "Bilgi yolu", exact: true }),
+  });
+  for (const route of ["/#/lesson?id=bilgi-ve-inanc", "/#/cheatsheets?topic=detail-77"]) {
+    await page.goto(route);
+    await expect(table.getByRole("row")).toHaveCount(4);
+    for (const [index, values] of [
+      ["Salim duyular", "Sağlıklı işleyen duyular"],
+      ["Selim akıl", "veriler arasında ilişki kurar"],
+      ["Sadık haber", "Doğru veya güvenilir haber"],
+    ].entries()) {
+      await expect(table.getByRole("row").nth(index + 1).getByRole("cell", { name: values[0], exact: true })).toBeVisible();
+      await model.getByRole("button", { name: values[0], exact: true }).press("Enter");
+      await expect(model).toContainText(values[1]);
+    }
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});

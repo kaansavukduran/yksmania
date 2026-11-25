@@ -858,8 +858,8 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Kimya | 55 / 55 | 55 · 226 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 159 | 515 / 515 · %100,00 | 11 / 36 · %30,56 | 54 soru · 9 kitapçık | 0 |
 | TYT Tarih | 24 / 24 | 24 · 93 | 390 / 390 · %100,00 | 8 / 24 · %33,33 | 45 soru · 9 kitapçık | 0 |
-| TYT Coğrafya | 40 / 40 | 40 · 175 | 400 / 400 · %100,00 | 9 / 40 · %22,50 | 45 soru · 9 kitapçık | 0 |
-| TYT Felsefe | 17 / 17 | 17 · 69 | 190 / 190 · %100,00 | 5 / 17 · %29,41 | 89 soru · 9 kitapçık | 0 |
+| TYT Coğrafya | 40 / 40 | 40 · 176 | 400 / 400 · %100,00 | 9 / 40 · %22,50 | 45 soru · 9 kitapçık | 0 |
+| TYT Felsefe | 17 / 17 | 17 · 70 | 190 / 190 · %100,00 | 5 / 17 · %29,41 | 89 soru · 9 kitapçık | 0 |
 | TYT Din | 20 / 20 | 20 · 98 | 371 / 371 · %100,00 | 5 / 20 · %25,00 | 46 soru · 9 kitapçık | 0 |
 | AYT Matematik | 17 / 17 | 17 · 38 | 253 / 253 · %100,00 | 2 / 17 · %11,76 | 273 soru · 9 kitapçık | 0 |
 | AYT Geometri | 4 / 4 | 4 · 53 | 45 / 45 · %100,00 | 1 / 4 · %25,00 | 87 soru · 9 kitapçık | 0 |
@@ -867,7 +867,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2390** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2392** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
@@ -3895,3 +3895,9 @@ Isı sığası grafiği 0,2 ve 0,3 kg suyun Q–ΔT eğimlerini karşılaştır�
 Ses Bilgisi anlatımı ve Kopya Kağıdında dört örnek önceki ve sonraki biçimleriyle aynı tabloda okunuyor. Tarih çizgisi MÖ 2’den MS 3’e dört yıllık süreyi ve iki uç dahil beş yıl etiketini ayrı gösteriyor. Bitiş yılını değiştirerek sıfır süreyi ve iki başlangıç koşulunu dene.
 
 34 fiziksel kaynak sayfası incelendi. TypeScript, 31 hedefli birim, dört normal tarayıcı akışı, altı çizim yerleşimi ve 323 çevrimdışı varlık geçti. Ham soru ve rehber kataloğu baytları eş. Sonraki paket Coğrafya, Felsefe ve Din Kültürü için açık kaynak maddelerini izler.
+
+## 0.189.0 adayı · Coğrafya, Felsefe ve Din Kültürü
+
+Aynı akarsu akım, bitki dağılışı ve tarımsal kullanım sorularıyla inceleniyor. Dört birimin iki dağıtım ilkesine göre sütunları ortak ölçekte çiziliyor. Bilgi ve İnanç dersinde üç bilgi edinme yolunun şeması ile örnek tablosu aynı bölümde bulunuyor.
+
+Beş güncel Sosyal kaynak PDF’sinin 67 fiziksel sayfası incelendi. İlk paketteki 134 konu 268 çevrimdışı rotada açıldı. Son değişiklik TypeScript, 29 hedefli birim, beş tarayıcı senaryosu, dokuz çizim yerleşimi ve 323 çevrimdışı varlıkla doğrulandı. Kanonik PDF kararları ayrı izleniyor.

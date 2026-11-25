@@ -1,4 +1,4 @@
-import type { FigureDef } from "./figureKit";
+import { poly, seg, txt, v, type El, type FigureDef } from "./figureKit";
 import { argFig, flowFig, rowsFig, tableFig } from "./turkishFigures060Kit";
 
 /*
@@ -197,6 +197,43 @@ const fields = tableFig({
   foot: "Laboratuvar sözcüğünü görünce her soruyu otomatik bilim felsefesi sayma.",
 });
 
+const twoDistributionRules: FigureDef = {
+  caption: "Dört birim payı iki ilkeye göre dağıt. Eşit miktarda her kişi iki birim alır. Varsayılan ihtiyaca göre pay verince kimin ne kadar aldığı değişebilir. Felsefi soru, hangi ilke için hangi gerekçenin kullanılacağıdır.",
+  alt: "Aynı ölçekte dört sütun. Solda eşit pay A ve B için 2 ve 2. Sağda varsayılan ihtiyaç başlangıçta A için 1, B için 3. Sürgü sağdaki varsayımı değiştirir.",
+  param: { label: "A’nın varsayılan ihtiyacı (birim)", min: 1, max: 3, step: 1, init: 1 },
+  draw: (needA) => {
+    const total = 4, needB = total - needA;
+    const bars = [
+      { label: "A", x: 1.3, value: total / 2, tone: "a" },
+      { label: "B", x: 2.8, value: total / 2, tone: "b" },
+      { label: "A", x: 5.0, value: needA, tone: "a" },
+      { label: "B", x: 6.5, value: needB, tone: "b" },
+    ] as const;
+    const els: El[] = [
+      seg(v(0, 0), v(7.55, 0), { tone: "ink" }),
+      seg(v(0, 0), v(0, 3.8), { tone: "ink" }),
+      txt(v(0, 3.95), "Pay (birim)", "e", { small: true, bold: true }),
+      txt(v(2.05, -0.72), "Eşit miktar", "s", { small: true, bold: true }),
+      txt(v(5.75, -0.72), "Varsayılan ihtiyaç", "s", { small: true, bold: true }),
+      ...[1, 2, 3].flatMap((tick) => [
+        txt(v(-0.16, tick), String(tick), "w", { small: true }),
+        seg(v(0, tick), v(7.55, tick), { tone: "muted", thin: true, dash: true }),
+      ]),
+      txt(v(-0.75, 4.4), "", "c"),
+      txt(v(7.95, -1.5), "", "c"),
+    ];
+    for (const {label, x, value, tone} of bars) {
+      els.push(poly([v(x - 0.4, 0), v(x + 0.4, 0), v(x + 0.4, value), v(x - 0.4, value)], { tone, fill: tone, thin: true }));
+      els.push(txt(v(x, value + 0.1), String(value), "n", { small: true, bold: true }));
+      els.push(txt(v(x, -0.12), label, "s", { small: true }));
+    }
+    return { els, readout: [
+      `Eşit miktar: A ${total / 2}, B ${total / 2} birim. Varsayılan ihtiyaç: A ${needA}, B ${needB} birim.`,
+      "Toplam iki dağıtımda da 4 birim. Adalet yargısı için pay ölçütünü gerekçelendir.",
+    ] };
+  },
+};
+
 export const philosophyFigures061Intro: Record<string, Record<string, FigureDef>> = {
   "sanat-felsefesi": {
     "Sanatçı, eser ve izleyici": artTriad,
@@ -211,6 +248,7 @@ export const philosophyFigures061Intro: Record<string, Record<string, FigureDef>
     "Yazma planını problemden çıkar": plan,
   },
   "felsefeyi-tanima": {
+    "Aynı toplamı iki dağıtım ilkesiyle karşılaştır": twoDistributionRules,
     "Felsefi soru ile olgu sorusunu ayır": questionKinds,
     "Refleksiyon: kendi düşüncene geri dön": reflection,
     "Felsefenin alanlarını sorularıyla tanı": fields,
