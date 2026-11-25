@@ -1437,3 +1437,48 @@ test("A sphere section shrinks to a point at a tangent plane", async ({ page, co
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Three special people use three distinct numbered gaps offline", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-mat-permutasyon-kaynak-032";
+  const model = figure(page, "Birbirinden ayrı kişilere ayrı boşluklar ver");
+  for (const route of [`/#/lesson?id=${id}`, `/#/cheatsheets?topic=topic-${id}`]) {
+    await page.goto(route);
+    await expect(model).toContainText("4 sıradan kişi 5 boşluk bırakır");
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("Seçili 1, 3, 5 boşluklarına A, B, C için 6 sıra");
+    await expect(model).toContainText("toplam 1.440 düzen");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The waypoint chart separates both parts before counting its complement", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-mat-tekrarli-permutasyon-kaynak-033";
+  const model = figure(page, "Zorunlu durakta yolu böl, kaçınanı tümleyenden bul");
+  for (const route of [`/#/lesson?id=${id}`, `/#/cheatsheets?topic=topic-${id}`]) {
+    await page.goto(route);
+    await expect(model).toContainText("P’ye kadar 3 yol. P’den hedefe 6 yol. P’den geçen 18 tam yol");
+    const image = model.getByRole("img");
+    await expect(image).toBeVisible();
+    const dashedSegments = image.locator("line.sf-dash");
+    await expect(dashedSegments).toHaveCount(4);
+    expect(await dashedSegments.evaluateAll((lines) => lines.every((line) => {
+      const style = getComputedStyle(line);
+      return style.strokeDasharray !== "none" && style.stroke !== "none"
+        && (line.getAttribute("x1") !== line.getAttribute("x2")
+          || line.getAttribute("y1") !== line.getAttribute("y2"));
+    }))).toBe(true);
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("Bütün 35 yoldan 18 geçen yol çıkar. P’ye uğramayan 17 yol");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});

@@ -10,6 +10,20 @@ interface TheorySupplement {
 }
 
 export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "tyt-mat-permutasyon-kaynak-032": [{
+    title: "Birbirinden ayrı kişilere ayrı boşluklar ver",
+    figureTitle: "Birbirinden ayrı kişilere ayrı boşluklar ver",
+    sheetTitle: "Boşluklar",
+    paragraphs: [],
+    summary: "Dört sıradan kişi için beş boşluğun üçü seçilir. Her seçimde farklı A, B ve C altı sırada yerleşir. 4!·C(5,3)·3!=1.440.",
+  }],
+  "tyt-mat-tekrarli-permutasyon-kaynak-033": [{
+    title: "Zorunlu durakta yolu böl, kaçınanı tümleyenden bul",
+    figureTitle: "Zorunlu durakta yolu böl, kaçınanı tümleyenden bul",
+    sheetTitle: "Zorunlu durak",
+    paragraphs: [],
+    summary: "(0,0) → P(2,1) → (4,3) için 3·6=18 geçen yol. Bütün 35 yoldan bunları çıkarınca 17 yol kalır.",
+  }],
   "koklu-sayilar": [{
     title: "Köklü denklemde önce koşul, sonra kare",
     figureTitle: "Köklü denklemde önce koşul, sonra kare",

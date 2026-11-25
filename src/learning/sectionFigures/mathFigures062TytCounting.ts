@@ -1,3 +1,5 @@
+import { separatedPermutations032 } from "../separatedPermutationsSource032Model";
+import { waypointPaths033 } from "../waypointPathsSource033Model";
 import { circle, pt, seg, txt, v, vec, type El, type FigureDef, type Tone } from "./figureKit";
 import { cell, choose, fact, frac, pad, rect, sup, table, tn, token } from "./mathFigures062TytKit";
 
@@ -140,6 +142,32 @@ const adjacent: FigureDef = {
     els.push(txt(v(6 * (w + 0.3) + 0.1, 0.4), "A önde", "e", { tone: "warn", small: true, bold: true }), txt(v(6 * (w + 0.3) + 0.1, -0.9), "B önde", "e", { tone: "muted", small: true }));
     els.push(...pad(-0.3, 1.2, 9.0, -1.0));
     return { els, readout: ["Her sıra, A ile B’yi değiştiren eşiyle çift oluşturur.", "Tam yarısında A önde: 720/2 = 360."] };
+  },
+};
+
+const separateSpecialPeople: FigureDef = {
+  caption: "Dört sıradan kişi iki uç dahil beş boşluk bırakır. Önce üç boşluk seç, sonra farklı üç kişiyi bu yerlere sırala.",
+  alt: "Dört sıradan kişinin çevresindeki beş boşluk soldan sağa numaralı. İkinci çizimde A, B ve C birinci, üçüncü ve beşinci boşlukları doldurur.",
+  steps: ["Beş boşluğu bul", "A, B ve C’yi yerleştir"],
+  draw: (_, step) => {
+    const counts = separatedPermutations032(7, 3, "row");
+    const example = ["A", "", "B", "", "C"];
+    const els: El[] = [];
+    for (let i = 0; i < counts.gaps; i++) {
+      const x = i * 2.2;
+      const person = step === 1 ? example[i] : "";
+      els.push(...cell(x, 0, 0.95, 0.82, person || "?", person ? "a" : "muted", { fill: person !== "" }));
+      els.push(txt(v(x + 0.475, -0.18), String(i + 1), "s", { tone: "ink", small: true }));
+      if (i < counts.ordinary) {
+        els.push(...cell(x + 1.1, 0, 0.95, 0.82, `K${i + 1}`, "c"));
+      }
+    }
+    els.push(...pad(-0.15, 1.18, 10, -0.82));
+    return { els, readout: [
+      `${counts.ordinary} sıradan kişi ${counts.gaps} boşluk bırakır. Üçünü seçmenin C(5, 3) = ${counts.allocations} yolu var.`,
+      step === 0 ? "Ortadaki aralıkları ve iki ucu ayrı ayrı say."
+        : `Seçili 1, 3, 5 boşluklarına A, B, C için ${counts.specialOrders} sıra. Sıradan kişilerin ${counts.ordinaryOrders} sırasıyla toplam ${tn(counts.separated)} düzen.`,
+    ] };
   },
 };
 
@@ -299,6 +327,42 @@ const leadingZero: FigureDef = {
       ["30 − 12 = 18 beş basamaklı sayı.", "Kodda baştaki 0’a izin varsa 30 kalır."],
     ];
     return { els, readout: lines[step] };
+  },
+};
+
+const waypointRoute: FigureDef = {
+  caption: "Örnek yol P’den önce ve sonra iki parçaya ayrılır. Her ilk yol her son yolla birleştirilir. P’ye uğramayanlar bütün yollardan geçenler çıkarılarak bulunur.",
+  alt: "Yatay sağ adım ve düşey yukarı adım eksenleri. Başlangıç 0, 0. P 2, 1. Hedef 4, 3. İlk görünüm P’den geçen, ikinci görünüm P’ye uğramayan bir yol çizer.",
+  steps: ["P’den geçen yol", "P’ye uğramayan yol"],
+  draw: (_, step) => {
+    const target = { x: 4, y: 3 };
+    const stop = { x: 2, y: 1 };
+    const model = waypointPaths033(target, stop);
+    const remaining = choose(target.x + target.y - stop.x - stop.y, target.y - stop.y);
+    const route = model.sampleRoute(step === 0 ? "via" : "avoiding") ?? [];
+    const els: El[] = [];
+    for (let x = 0; x <= target.x; x++) {
+      els.push(seg(v(x, 0), v(x, target.y), { tone: "muted", thin: true }));
+      els.push(txt(v(x, -0.14), String(x), "s", { tone: "ink", small: true, soft: true }));
+    }
+    for (let y = 0; y <= target.y; y++) {
+      els.push(seg(v(0, y), v(target.x, y), { tone: "muted", thin: true }));
+      els.push(txt(v(-0.14, y), String(y), "w", { tone: "ink", small: true, soft: true }));
+    }
+    els.push(txt(v(2, -0.62), "Sağ adım", "s", { tone: "ink", small: true }));
+    els.push(txt(v(0, 3.35), "Yukarı adım", "n", { tone: "ink", small: true }));
+    route.slice(1).forEach((end, index) => {
+      const start = route[index];
+      const afterStop = step === 0 && start.x + start.y >= stop.x + stop.y;
+      els.push(seg(v(start.x, start.y), v(end.x, end.y), { tone: afterStop ? "c" : "a", dash: afterStop, bold: true }));
+    });
+    els.push(pt(v(stop.x, stop.y), "P", "nw", "warn", true), pt(v(target.x, target.y), "Hedef", "ne", "ink"));
+    els.push(...pad(-0.65, 3.9, 4.65, -0.95));
+    return { els, readout: step === 0
+      ? [`P’ye kadar ${model.waypoint.total} yol. P’den hedefe ${remaining} yol. P’den geçen ${model.target.via} tam yol.`,
+        "Düz çizgi P’ye kadar olan örnek parçayı, kesikli çizgi P’den sonraki parçayı gösterir."]
+      : [`Bütün ${model.target.total} yoldan ${model.target.via} geçen yol çıkar. P’ye uğramayan ${model.target.avoiding} yol kalır.`,
+        "Çizilen örnek yol, P işaretine basmadan hedefe ulaşır."] };
   },
 };
 
@@ -593,12 +657,14 @@ export const mathFigures062TytCounting: Record<string, Record<string, FigureDef>
     "Sabit, gerekli ve yasak öğeler açık bir yuva hesabı ister": digitSlots,
     "Komşu olanları birlikte say, sadece önce gelenleri eşleştir": adjacent,
     "Birbirine karışabilen gruplara önce yer ayır": positions,
+    "Birbirinden ayrı kişilere ayrı boşluklar ver": separateSpecialPeople,
   },
   "tyt-mat-tekrarli-permutasyon-kaynak-033": {
     "Etiketleri silince aynı kalan dizileri bir say": eraseLabels,
     "Sabit yeri çıkar, kalan tür adetlerini güncelle": fixedPlaces,
     "Özdeş kartlar ayrı boşluklara giderken iç sıra oluşmaz": gaps,
     "Sayıda ilk sıfır yasak, kodda koşulu açık oku": leadingZero,
+    "Zorunlu durakta yolu böl, kaçınanı tümleyenden bul": waypointRoute,
   },
   "tyt-mat-kombinasyon-kaynak-034": {
     "Boş seçim ve dışarıda kalanlar": complement,

@@ -18,8 +18,8 @@ const COUNTS: Record<string, number> = {
   "tyt-mat-dogrusal-denklemler-kaynak-036": 5,
   "tyt-mat-basit-esitsizlikler-kaynak-037": 8,
   "tyt-mat-uslu-sayilar-kaynak-039": 6,
-  "tyt-mat-permutasyon-kaynak-032": 4,
-  "tyt-mat-tekrarli-permutasyon-kaynak-033": 4,
+  "tyt-mat-permutasyon-kaynak-032": 5,
+  "tyt-mat-tekrarli-permutasyon-kaynak-033": 5,
   "tyt-mat-kombinasyon-kaynak-034": 4,
   "tyt-mat-binom-kaynak-035": 4,
   "tyt-mat-olasilik-kaynak-036": 4,
@@ -48,6 +48,28 @@ describe("Forge062 TYT Matematik kaynak dersleri bölüm figürleri", () => {
       const sections = new Set(lessonGuides.get(g)?.sections.map((s) => s.title));
       for (const t of titles) expect(sections.has(t), `${g} / ${t}`).toBe(true);
     }
+  });
+
+  it("beş boşluğu ve P durağının iki yol parçasını kaynak verileriyle sayar", () => {
+    const perm = "tyt-mat-permutasyon-kaynak-032";
+    const repeat = "tyt-mat-tekrarli-permutasyon-kaynak-033";
+    expect(Object.keys(sectionFigures[perm])).toEqual([
+      "Her dolan yuva bir seçeneği eksiltir",
+      "Sabit, gerekli ve yasak öğeler açık bir yuva hesabı ister",
+      "Komşu olanları birlikte say, sadece önce gelenleri eşleştir",
+      "Birbirine karışabilen gruplara önce yer ayır",
+      "Birbirinden ayrı kişilere ayrı boşluklar ver",
+    ]);
+    expect(Object.keys(sectionFigures[repeat])).toEqual([
+      "Etiketleri silince aynı kalan dizileri bir say",
+      "Sabit yeri çıkar, kalan tür adetlerini güncelle",
+      "Özdeş kartlar ayrı boşluklara giderken iç sıra oluşmaz",
+      "Sayıda ilk sıfır yasak, kodda koşulu açık oku",
+      "Zorunlu durakta yolu böl, kaçınanı tümleyenden bul",
+    ]);
+    expect(out(perm, "Birbirinden ayrı kişilere ayrı boşluklar ver", 0, 1)).toContain("toplam 1.440 düzen");
+    expect(out(repeat, "Zorunlu durakta yolu böl, kaçınanı tümleyenden bul")).toContain("3 yol. P’den hedefe 6 yol. P’den geçen 18");
+    expect(out(repeat, "Zorunlu durakta yolu böl, kaçınanı tümleyenden bul", 0, 1)).toContain("uğramayan 17 yol");
   });
 
   it("her adım ve sürgü ucu çizilir; erişilebilir ad, açıklama ve figcaption var; süs karakteri yok", () => {
