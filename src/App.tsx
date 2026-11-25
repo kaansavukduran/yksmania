@@ -66,7 +66,19 @@ function WorkerRegistration({
   const {
     needRefresh: [ready],
     updateServiceWorker,
-  } = useRegisterSW({ onRegisterError: onError });
+  } = useRegisterSW({
+    onRegisterError: onError,
+    // register() resolves before precaching finishes. If that first install
+    // fails, the worker turns redundant without a register error, so report
+    // it and let WebUpdates retry on the same page.
+    onRegisteredSW: (_url, registration) => {
+      const worker = registration?.installing;
+      if (!worker || registration.active) return;
+      worker.addEventListener("statechange", () => {
+        if (worker.state === "redundant" && !registration.active) onError();
+      });
+    },
+  });
   // The development PWA hook can return a fresh updater each render. Keep
   // its latest implementation without turning an App state notification into
   // an effect/setApply/render loop. Production still invokes the latest worker.
