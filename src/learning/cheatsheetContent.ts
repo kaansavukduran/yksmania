@@ -155,6 +155,11 @@ export interface CheatSheet {
 }
 
 const revisedSectionTextByLesson = new Map([
+  ["sayi-problemleri", new Map([
+    ["Kapasite eşitliği birimlerin oranını buldurur", [
+      "Toplam kapasite eşit. 10a+4b=4a+7b için ortak terimleri çıkarınca 6a=3b ve b=2a. İki düzen de 18 küçük kutunun yerini kullanır.",
+    ]],
+  ])],
   ["koklu-sayilar", new Map([
     ["Köklü denklemde önce koşul, sonra kare", [
       "√(x+12)=x için x≥0 gerekir. Karesi alınan eşitlikten 4 ve −3 çıkar. √16=4 eşitliği sağlanır, √9=3 değeri −3’e eşit değildir.",

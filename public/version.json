@@ -1,8 +1,8 @@
 {
-  "version": "0.164.0",
+  "version": "0.165.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Ters orantıda pompa sayısı ve çalışma süresini ilişkilendir. İkizkenar yamukta dik yükseklikten alanı adım adım bul.",
-    "en": "Relate pump count to working time and use the vertical height to find an isosceles trapezoid’s area."
+    "tr": "Aynı alanı dolduran iki kutu düzenini karşılaştır. Üç köşesi verilen paralelkenarın eksik köşesini ve alanını koordinatlarla bul.",
+    "en": "Compare two arrangements with the same capacity and use coordinates to find a parallelogram’s missing vertex and area."
   }
 }

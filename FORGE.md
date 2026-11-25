@@ -3743,3 +3743,9 @@ Köklü Sayılar fiziksel 8 ile Genel Dörtgenler fiziksel 2 ve 5 karşılaştı
 Oran Orantı’da 120 pompa-saatlik iş, 8 pompayla 15 ve 12 pompayla 10 saatte tamamlanıyor. İş ikiye katlanınca 12 pompa için süre 20 saate çıkıyor. Yamuk dersinde 18 ve 8 tabanlı, yan kenarı 13 birim olan ikizkenar yamukta dikmeler 5’er birimlik iki parça bırakıyor. Yükseklik 12, alan 156 birim².
 
 Oran Orantı fiziksel 8 ve Yamuk fiziksel 2 ile 5 kullanıldı. TypeScript, 10 birim, 33 Chromium akışı ve 323 çevrimdışı varlık doğrulandı. 18 çizim 320, 375 ve 1280 pikselde çakışmasız açıldı. Sırada Sayı Problemleri fiziksel 7 ve Paralelkenar fiziksel 2 ile 5 var.
+
+## TYT Matematik ve Geometri · 0.165.0 adayı
+
+Sayı Problemleri’nde aynı kapasiteyi dolduran iki kutu şeridinden ortak terimler çıkarılıyor. Kalan 6a=3b ilişkisi bir büyük kutunun iki küçük kutu kadar yer kapladığını gösteriyor. Paralelkenar’da verilen üç köşeden dördüncü köşe (9; 5), ortak köşegen ortası (5; 3) ve alan 24 birim² bulunuyor.
+
+Sayı Problemleri fiziksel 1 ve 7 ile Paralelkenar fiziksel 2 ve 5 karşılaştırıldı. 22 birim, 35 gerçek Chromium akışı, 323 çevrimdışı varlık ve üç ekran genişliğinde 20 çizim denetlendi. Sırada Kesir Problemleri fiziksel 6 ve Eşkenar Dörtgen fiziksel 2–3 ile 5 var.

@@ -9964,5 +9964,653 @@
         }
       }
     ]
+  },
+  {
+    "version": "0.165.0",
+    "receipts": [
+      {
+        "surface": "lessons",
+        "id": "tyt-geo-paralelkenar-ozel-dortgenler-032",
+        "after": "176b71fa11f2e9716fdf3e51c9b6f921130394b094aa0eb2385e303f54e22917",
+        "prior": {
+          "body": [
+            {
+              "title": {
+                "tr": "Paralelkenarı iki çift paralellikle tanı"
+              },
+              "text": {
+                "tr": "Dışbükey ABCD dörtgeninde AB∥DC ve AD∥BC ise şekil paralelkenardır. AC köşegenini çizince iç ters açılar ve ortak kenar iki eş üçgen oluşturur. Böylece karşı kenarların uzunlukları ve karşı köşelerin açıları eşittir. Bir çift karşı kenarın yalnız eşit olması tek başına yeterli değildir; aynı çift ayrıca paralelse paralelkenar sonucu çıkarılabilir.\n\nBir köşenin açısı α ise komşusu 180°−α, karşısı yine α’dır. Ardışık açılar bütünlerdir; dört açının toplamı 360° olur. Bu eşitlikler bütün açıların 90° olduğunu söylemez. Çizimi döndürmek veya paralel doğrular boyunca kaydırmak, verilen koşulları değiştirmez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Köşegenlerin kesişimi ile orta noktayı ayır"
+              },
+              "text": {
+                "tr": "Paralelkenarda köşegenlerin kesişimi O ise AO=OC ve BO=OD olur. İki köşegen birbirini ortalar; ancak AO ile BO’nun eşit olması gerekmez. Ters yönde de dışbükey bir dörtgende köşegenler birbirini ortalıyorsa dörtgen paralelkenardır. Nokta adları köşegen parçalarının hangi bütüne ait olduğunu belirler.\n\nGenel paralelkenarın köşegenleri eşit, dik veya açıortay olmak zorunda değildir. Eş köşegen ek koşulu dikdörtgene, dik köşegen ek koşulu eşkenar dörtgene götürür. İki koşul birlikte varsa kare elde edilir. Sadece bir resimde çizgiler dik görünüyorsa bu çıkarımları yapamazsın; diklik işareti ya da yazılı koşul gerekir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Açıortaylar neden dik olur?"
+              },
+              "text": {
+                "tr": "Komşu A ve B iç açılarının toplamı 180°dir. İç açıortayların ilgili açı parçaları α/2 ve (180°−α)/2 olup toplamları 90°dir. Açıortayların kesiştiği üçgende kalan açı da 90° olduğundan iki açıortay diktir. Bu sonuç köşegenlerin dikliği değildir; hangi doğru parçalarının açıortay olduğuna dikkat et.\n\nParalelkenarda bir köşenin açıortayı karşı kenarı kesiyorsa, paralellerle taşınan eş açılardan ikizkenar bir üçgen oluşabilir. Önce eş açıların yerini göster, sonra karşılarındaki kenarları eşitle. Açıortay uzunluğu veya kestiği nokta için yalnız şeklin ortasında görünmesine dayanma; orta nokta ayrıca kanıtlanır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Alanı taban ve dik uzaklıkla kur"
+              },
+              "text": {
+                "tr": "AB=a ve DC doğrusunun AB’ye dik uzaklığı hₐ ise S=a·hₐ’dır. Eğik bir köşeden yükseklik indirip kenardaki dik üçgeni öteki tarafa taşıdığında aynı taban ve yüksekliğe sahip bir dikdörtgen oluşur. Bu parçalama alanın neden taban çarpı yükseklik olduğunu açıklar. Kenar b eğikse b yerine yüksekliği bulmak gerekir.\n\nKomşu kenarlar a ve b, aralarındaki açı α ise hₐ=b·sinα ve S=ab·sinα olur. Açı 30° ise yükseklik b/2’dir. Aynı alan b·hᵦ ile de bulunur; dolayısıyla a·hₐ=b·hᵦ eşitliği ikinci denetimdir. Formüllerdeki açı seçilen iki kenarın arasındaki açıdır; sinüsünü aldığın açıyı önce işaretle."
+              }
+            },
+            {
+              "title": {
+                "tr": "Üçgenlere bölmek alanı görünür kılar"
+              },
+              "text": {
+                "tr": "Bir köşegen paralelkenarı eş alanlı iki üçgene ayırır. Her iki köşegen çizildiğinde oluşan dört küçük üçgenin alanları eşittir; köşegenlerin yarıları eş olduğundan aynı dik uzaklığa sahip üçgen çiftleri karşılaştırılabilir. Köşegenler eşit uzunlukta olmasa da bu alan eşitlikleri geçerlidir.\n\nİçeride herhangi bir P noktası seç. PAB ile PCD üçgenlerinin alanları toplamı S/2’dir; çünkü eş uzunluktaki paralel AB ve CD tabanlarına ait iki yüksekliğin toplamı paralelkenarın yüksekliğidir. Benzer biçimde PAD ile PBC’nin toplamı da S/2 olur. P’nin merkez olması gerekmez. DC üzerindeki herhangi bir E için ABE’nin alanı yine S/2’dir; ortak yükseklik değişmez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Dikdörtgende eş köşegenin kaynağı"
+              },
+              "text": {
+                "tr": "Bir paralelkenarın bir açısı 90° ise komşu açılar ve karşı açı eşitliklerinden bütün açıları 90°dir; bu şekil dikdörtgendir. Komşu kenarları a ve b ise çevre 2(a+b), alan ab’dir. Köşegen bir dik üçgenin hipotenüsü olduğundan d²=a²+b² çıkar.\n\nİki köşegen eş uzunluktadır ve birbirini ortalar. Bu nedenle kesişim O’dan dört köşeye uzaklık d/2’dir; dört köşe aynı çemberdedir ve çevrel yarıçap R=d/2 olur. Kare olmayan dikdörtgende köşegenler genel olarak dik veya açıortay değildir. Köşegen uzunluğunu bir kenar yerine kullanmak alanı yanlış büyütür."
+              }
+            },
+            {
+              "title": {
+                "tr": "Eşkenar dörtgende diklik ve yarım köşegen"
+              },
+              "text": {
+                "tr": "Dört kenarı da a olan paralelkenar eşkenar dörtgendir. Köşegenler birbirini ortalar; ayrıca bir köşegenin iki yanındaki eş üçgenler köşe açısını ikiye böler. Komşu bütünler açıların yarılarından köşegenlerin dik kesiştiği de görülür. Dört köşenin dik olması zorunlu değildir; bu ek koşul kareyi verir.\n\nKöşegenler e ve f ise yarımlarıyla kenar bir dik üçgen kurar: (e/2)²+(f/2)²=a². Alan S=ef/2=a·h=a²sinα, çevre 4a’dır. İç teğet çember için yarıçap r=h/2=S/(2a) olur; çünkü karşı paralel kenarlara teğet çemberin çapı bu kenarlar arasındaki uzaklıktır. Radyal uzunluğu alanla veya çevreyle karıştırma."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kare iki ailenin özelliklerini birlikte taşır"
+              },
+              "text": {
+                "tr": "Dört eş kenarı ve dört dik açısı olan kare hem dikdörtgen hem eşkenar dörtgendir. Bu yüzden köşegenleri eş, dik, birbirini ortalayan ve köşe açılarını ikiye bölen parçalardır. Her köşegenin ayırdığı köşe açıları 45° ve 45°dir. Kenar a ise d=a√2, alan a²=d²/2, çevre 4a’dır.\n\nİç teğet çemberin yarıçapı r=a/2, çevrel çemberinki R=d/2=a√2/2’dir. Bunlar farklı çemberlerdir; çevrel çember köşelerden geçer, iç çember kenarlara teğettir. Köşegen 12 ise alan 72’dir; 144 köşegeni kenar sayma hatasıdır. Karede köşegen kullanırken hangi uzunluğun tamam, hangisinin yarım olduğunu işaretle."
+              }
+            },
+            {
+              "title": {
+                "tr": "Köşegenlerle genel alan ve uzunluk denetimi"
+              },
+              "text": {
+                "tr": "Paralelkenarın köşegenleri d₁,d₂, aralarındaki açı θ ise alan S=d₁d₂sinθ/2’dir. Bu formül dışbükey dörtgenlerde de geçerlidir; dört küçük üçgenin alanlarını toplamaktan çıkar. Köşegenler dik değilse sinθ çarpanı atılamaz. Eşkenar dörtgende θ=90° olduğu için tanıdık ef/2 biçimine iner.\n\nKomşu kenarlar a,b olan paralelkenarda d₁²+d₂²=2(a²+b²) bağıntısı vardır. Köşegen vektörleri u+v ve u−v’nin karelerini toplayınca skaler çarpımlar birbirini götürür; geriye 2|u|²+2|v|² kalır. Bu bağıntı iki köşegen eşit demek değildir. Örneğin a=5,b=7,d₁=6 ise d₂²=2(25+49)−36=112 bulunur."
+              }
+            },
+            {
+              "title": {
+                "tr": "Koşulu en kısa yöntemle sonuca bağla"
+              },
+              "text": {
+                "tr": "İlk adım hangi ailede olduğunu belirlemektir: yalnız karşı kenarlar paralelse genel özelliklerle başla; dik açı, eş kenar veya köşegen koşulu varsa ilgili alt aileye geç. Alan sorusunda taban/yükseklik veya dik köşegen; uzunluk sorusunda Pisagor, orta nokta ya da eş üçgen; açı sorusunda paralellik ve açıortay çoğu zaman yeterlidir.\n\nBir parçalama sorusunda adı verilen her bölgenin köşelerini belirle. Aynı taban, aynı yükseklik veya yarım taban sonucu veren eş alanı gerekçelendir; renkten dolayı eşit sanma. Sonuçta uzunluk birimini, alanın kare birimini ve hangi ek koşulu kullandığını denetle. İkinci bir hesap veya uygun karşı örnek, ezberin sınırını kontrol etmeye yardım eder."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "lessons",
+        "id": "sayi-problemleri",
+        "after": "8bfdcc0858449bffcef0ca97e197f3d72e8ffd6acbb47d66494220381ce97466",
+        "prior": {
+          "body": [
+            {
+              "title": {
+                "tr": "Önce sorulan niceliğe isim ver"
+              },
+              "text": {
+                "tr": "Problemdeki her sayı aynı tür bilgi değildir: kişi sayısı, sıra sayısı, bir kişinin ödediği ücret ve toplam gelir farklı niceliklerdir. İlk okumada verilenleri birimleriyle ayır; ikinci okumada tam olarak neyin sorulduğunu söyle. Aranana x demek çoğu kez işi kolaylaştırır, fakat x'in kişi mi lira mı olduğunu yazmak denklemin anlamını korur.\n\nBir ilişkiden yalnız bir ifade çıkıyorsa henüz denklem kurmuş olmazsın. 'İki katının beş fazlası' 2x+5 ifadesidir; bunun 29'a eşit olduğu da söylenirse 2x+5=29 denklemi oluşur. Bilinmeyeni bulduktan sonra sorulan nicelik başka bir toplam olabilir. Son sayının yanına birim koymak yanlış niceliği cevaplamayı önler."
+              }
+            },
+            {
+              "title": {
+                "tr": "İşlemin cümledeki sırasını parantezle koru"
+              },
+              "text": {
+                "tr": "Bir sayının 4 katının 3 eksiği 4x−3, 3 eksiğinin 4 katı 4(x−3)'tür. 'A, B'nin 2 katından 7 fazladır' ifadesi A=2B+7 anlamına gelir. A ile B'nin yerini değiştirerek aynı ilişkiyi korumuş olmazsın. 'Toplamlarının yarısı' (x+y)/2 iken x+y/2 yalnız ikinci sayıyı yarıya indirir.\n\nKısa bir sayıyla anlam kontrolü yap: x=10 için 4x−3=37, 4(x−3)=28 çıkar. İki sözel ifade farklı sonuç verdiği için parantezin süs olmadığını görürsün. İşlem kurallarını bilmek kadar hangi niceliğin hangi işlemden geçtiğini bilmek de gerekir. MEBİ'nin ilgili tablo satırındaki 14 eksiği ifadesinin karşılığı 5x−14 olmalıdır; eksik basılmış rakamı kural diye öğrenme."
+              }
+            },
+            {
+              "title": {
+                "tr": "Ardışıklık ortak farkı belirler"
+              },
+              "text": {
+                "tr": "Ardışık tam sayılar n,n+1,n+2; ardışık çift veya tek sayılar n,n+2,n+4 biçiminde yazılır. Tek sayıda terim varsa ortadaki sayıyı seçmek toplamı kısaltır: üç ardışık tek sayı x−2,x,x+2 olduğunda toplam 3x'tir. x'in de tek olması gerekir; denklem bu koşulu kendiliğinden her zaman sağlamaz.\n\nDört ardışık çift sayı için tek bir tam sayı orta terim yoktur; n,n+2,n+4,n+6 yazımı güvenlidir. 'Üç tek sayı' ifadesi tek başına ardışıklık vermez. Örneğin 3,9,15 tek sayılardır fakat ardışık tek sayı değildir. Önce ortak farkı metinden çıkar, sonra toplama yap; sonucu her terimin çiftliği veya tekliğiyle birlikte denetle."
+              }
+            },
+            {
+              "title": {
+                "tr": "İki düzen aynı insanları sayar"
+              },
+              "text": {
+                "tr": "Sıralar ikişer dolup a kişi ayakta kalıyorsa öğrenci sayısı 2s+a'dır. Üçerli oturunca b sıra tamamen boş, diğer sıralar tam doluysa aynı sayı 3(s−b) olur. Eşitlenen şey oturma sayıları değil, değişmeyen öğrenci toplamıdır. 'Bir sırada bir kişi' gibi kısmi doluluk ayrıca belirtilirse o sırayı tam dolulardan çıkarıp tek kişiyi ayrıca eklemelisin.\n\nAtölyede sıra sayısını değiştirince iki düzenin saydığı öğrenciler farklılaşabilir. Bu, gerçek öğrencilerin kaybolması değil, seçilen sıra değerinin aynı sınıfı açıklamaya henüz uymamasıdır. Dengeyi kuran değeri bulduğunda iki toplam eşit olur. Boş sıra sayısı toplam sıradan büyük olamaz; ayakta kalan bir sayı zaten bütün sıra sayısına eklenir."
+              }
+            },
+            {
+              "title": {
+                "tr": "İki tür nesnede sayım ve ağırlığı ayır"
+              },
+              "text": {
+                "tr": "Bir etkinlikte 20 bilet satılması ile 1700 TL gelir elde edilmesi iki farklı bilgidir. Öğrenci bileti x ise yetişkin bileti 20−x olur; her türün sayısı kendi fiyatıyla çarpılır. Bilet sayılarının toplamı 20, gelirlerin toplamı 1700 olmalıdır. Ücretlerle kişi sayılarını doğrudan toplamak birimleri karıştırır.\n\nAynı yöntem iki ve dört tekerlekli araçlarda, farklı puanlı sorularda veya farklı kapasitedeki masalarda kullanılır. Hepsi birinci türden olsaydı toplamı hesaplamak da geçerli bir başlangıçtır; gerçek toplamla farkı, tür değişiminin birim etkisine bölersin. Bu kısa yol her türün katkısının sabit olduğu koşulda çalışır; değişken indirim veya kademeli puan varsa modeli yeniden kur."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kapasite eşitliği birimlerin oranını buldurur"
+              },
+              "text": {
+                "tr": "Aynı depo, her kutunun türüne göre farklı sayıda kutu alabilir. Küçük kutunun kapladığı alan a, büyük kutununki b ise 18 küçük+8 büyük ile 12 küçük+10 büyük aynı alanı doldurduğunda 18a+8b=12a+10b yazılır. Buradan 6a=2b ve b=3a çıkar; bir büyük üç küçük kutunun yerini alır.\n\nBurada a'yı keyfî bir santimetrekare değeri seçmek zorunda değilsin; istenen çoğu kez oran veya tek türden kapasitedir. Fakat bütün kutuların kendi türleri içinde aynı büyüklükte olduğu, boşluk veya istif farkı olmadığı belirtilmelidir. Başka bir düzende farklı boşluk payı varsa iki toplamı eşitlemek doğru olmaz. Bilinmeyenlerin gereksiz gerçek değerini aramadan sorulan yapıyı yakala."
+              }
+            },
+            {
+              "title": {
+                "tr": "En az ve en çok eşitlikten fazlasını söyler"
+              },
+              "text": {
+                "tr": "'En az 30' x≥30, '30'dan fazla' x>30 demektir. Tam sayılı bir sonuç için x>7,2 koşulunun ilk uygun değeri 8'dir; x≥7 koşulunda 7 kabul edilir. Bütçe veya kapasite koşullarında denklem yerine eşitsizlik gerekir. Yalnız eşitliği çözmek sınırı verir; sınırın hangi tarafının uygun olduğunu ayrıca belirlemelisin.\n\nSonucu bir alt ve bir üst adayla kontrol etmek güçlü bir son adımdır. 95 TL bütçeyle tanesi 12 TL olan üründen en çok 7 tane alınır: 7 tanesi 84 TL, 8 tanesi 96 TL'dir. Bölme sonucu 7,916… bir ürün adedi değildir. Sorunun doğası tam sayı gerektiriyorsa yuvarlama yönünü 'en az/en çok' koşulu belirler; normal yuvarlama kullanma."
+              }
+            },
+            {
+              "title": {
+                "tr": "Denklemin kökü bağlamda da çözüm olmalı"
+              },
+              "text": {
+                "tr": "Kişi, bilet ve sıra sayısı doğal sayıdır; uzunluk ve para verilen kapsamda negatif olamaz. Denklem x=−3 veya x=4,5 verirse cebir hatası olmayabilir: seçilen model ya da veriler bağlamla uyuşmuyor olabilir. Önce ifadeleri tekrar oku; çözümü zorlamak için soru metninde olmayan varsayımlar ekleme.\n\nKontrolü dört parçada yap: birimler uyuyor mu, bütün parçalar toplamı koruyor mu, ağırlıklı toplam isteneni veriyor mu, tüm ayrıntılar sağlanıyor mu? İki bilgi birbiriyle çelişirse 'geçerli çözüm yok' sonucu anlamlıdır. Bir yöntemin adını hatırlamak yerine hangi toplamın ve hangi koşulun korunduğunu söylemek, aynı yapıyı yeni bir bağlamda tanımanı sağlar."
+              }
+            },
+            {
+              "title": {
+                "tr": "İkinci kesrin hangi miktara ait olduğunu yaz"
+              },
+              "text": {
+                "tr": "Başlangıç miktarı N olsun. Önce bunun p/q’si kullanılırsa ara miktar K=N·(1−p/q) olur. “Kalanın r/s’si” ifadesi rK/s kadar ikinci kullanım demektir. “Başlangıcın r/s’si” denirse aynı kesir rN/s kadar kullanımı anlatır. Aradaki fark, iki cümlenin hangi bütünü seçtiğidir.\n\nÖrneğin 120 L suyun önce 1/3’ü kullanılırsa 80 L kalır. Kalanın 1/4’ü 20 L eder, son durumda 60 L kalır. İkinci kullanım başlangıcın 1/4’ü olsaydı 30 L kullanılır ve 50 L kalırdı. Bir sayı adedi soruluyorsa her ara grubun tam sayı olduğunu da denetle."
+              }
+            },
+            {
+              "title": {
+                "tr": "Farklı nesne sayısı ile toplam kullanımı ayrı say"
+              },
+              "text": {
+                "tr": "Her kullanım grubunu ayrı tut. Bir kez kullanılan a, iki kez kullanılan b, üç kez kullanılan c farklı nesne varsa D=a+b+c farklı nesne, U=a+2b+3c kullanım vardır. İlk denklemin her nesneye verdiği katsayı 1’dir. İkincide katsayı o gruptaki her nesnenin kaç kez kullanıldığını gösterir.\n\nKısa yol işe yarar: 3D−U=2a+b olur. Üç kez kullanılan grubun katsayısı 3−3=0 olduğu için c sadeleşir. Bu yoldan bulunan değerleri her iki denkleme geri koy. D≤N ve a,b,c’nin negatif olmayan tam sayılar olması gerekir. Yalnız D’yi kullanıp N−D bulmak diğer verilerin geçerli olduğunu göstermez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kapasiteyi tek birimle say"
+              },
+              "text": {
+                "tr": "Bir alan ya 24 otomobil ve 11 kamyon ya da 18 otomobil ve 13 kamyon alıyor. Otomobil başına alan a, kamyon başına alan b olsun. Aynı alan dolduğundan 24a+11b=18a+13b yazılır. Her iki taraftan 18a+11b çıkarınca 6a=2b kalır. Bir kamyon üç otomobillik yer kaplar. Kapasite her iki düzende 24+11·3=18+13·3=57 otomobil yeridir.\n\n24+11=35, ilk düzende duran araçların toplam adedidir. Kapasiteyi ‘yalnız otomobil’ birimiyle sayarken her kamyonun ne kadar yer tuttuğunu hesaba kat. Düzenler aynı alanı doldurmalı ve her araç kendi türünde aynı büyüklükte olmalı."
+              }
+            },
+            {
+              "title": {
+                "tr": "Denklemi seç, sonra hangi koşula dayandığını kontrol et"
+              },
+              "text": {
+                "tr": "Sorulan niceliğin adını ve birimini yaz. Bir cümledeki işlem sırasını parantezle göster, iki düzeni aynı toplamı anlatıyorsa eşitle. Ardışık sayılarda ortak farkı metinden al. Bir sonucun geçerli olması için yalnız denklemin kökü olmak yetmez. Tam sayı adedini, boş ve kısmi grupları, kalan miktarı ve ağırlıklı toplamı denetle.\n\nKısa yol, normal çözümde hangi bilginin kullanıldığını görünür tutmalıdır. Birden çok bilgi verilmişse birini kullanarak sonuç bulduktan sonra diğerlerini de yerine koy. Farklı nesne sayısı sağlanırken kullanım sayısı sağlanmıyorsa, matematiksel olarak uygulanabilir bir model kurulamamıştır."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "tyt-geo-paralelkenar-ozel-dortgenler-032",
+        "after": "cbb4a6460d5e5bb7ed6dd620d2c64ad043089486398137ddfe83c04a80a7e0c5",
+        "prior": {
+          "sections": [
+            {
+              "title": "Paralelkenarı iki çift paralellikle tanı",
+              "paragraphs": [
+                "Dışbükey ABCD dörtgeninde AB∥DC ve AD∥BC ise şekil paralelkenardır. AC köşegenini çizince iç ters açılar ve ortak kenar iki eş üçgen oluşturur. Böylece karşı kenarların uzunlukları ve karşı köşelerin açıları eşittir. Bir çift karşı kenarın yalnız eşit olması tek başına yeterli değildir; aynı çift ayrıca paralelse paralelkenar sonucu çıkarılabilir.",
+                "Bir köşenin açısı α ise komşusu 180°−α, karşısı yine α’dır. Ardışık açılar bütünlerdir; dört açının toplamı 360° olur. Bu eşitlikler bütün açıların 90° olduğunu söylemez. Çizimi döndürmek veya paralel doğrular boyunca kaydırmak, verilen koşulları değiştirmez."
+              ]
+            },
+            {
+              "title": "Köşegenlerin kesişimi ile orta noktayı ayır",
+              "paragraphs": [
+                "Paralelkenarda köşegenlerin kesişimi O ise AO=OC ve BO=OD olur. İki köşegen birbirini ortalar; ancak AO ile BO’nun eşit olması gerekmez. Ters yönde de dışbükey bir dörtgende köşegenler birbirini ortalıyorsa dörtgen paralelkenardır. Nokta adları köşegen parçalarının hangi bütüne ait olduğunu belirler.",
+                "Genel paralelkenarın köşegenleri eşit, dik veya açıortay olmak zorunda değildir. Eş köşegen ek koşulu dikdörtgene, dik köşegen ek koşulu eşkenar dörtgene götürür. İki koşul birlikte varsa kare elde edilir. Sadece bir resimde çizgiler dik görünüyorsa bu çıkarımları yapamazsın; diklik işareti ya da yazılı koşul gerekir."
+              ]
+            },
+            {
+              "title": "Açıortaylar neden dik olur?",
+              "paragraphs": [
+                "Komşu A ve B iç açılarının toplamı 180°dir. İç açıortayların ilgili açı parçaları α/2 ve (180°−α)/2 olup toplamları 90°dir. Açıortayların kesiştiği üçgende kalan açı da 90° olduğundan iki açıortay diktir. Bu sonuç köşegenlerin dikliği değildir; hangi doğru parçalarının açıortay olduğuna dikkat et.",
+                "Paralelkenarda bir köşenin açıortayı karşı kenarı kesiyorsa, paralellerle taşınan eş açılardan ikizkenar bir üçgen oluşabilir. Önce eş açıların yerini göster, sonra karşılarındaki kenarları eşitle. Açıortay uzunluğu veya kestiği nokta için yalnız şeklin ortasında görünmesine dayanma; orta nokta ayrıca kanıtlanır."
+              ]
+            },
+            {
+              "title": "Alanı taban ve dik uzaklıkla kur",
+              "paragraphs": [
+                "AB=a ve DC doğrusunun AB’ye dik uzaklığı hₐ ise S=a·hₐ’dır. Eğik bir köşeden yükseklik indirip kenardaki dik üçgeni öteki tarafa taşıdığında aynı taban ve yüksekliğe sahip bir dikdörtgen oluşur. Bu parçalama alanın neden taban çarpı yükseklik olduğunu açıklar. Kenar b eğikse b yerine yüksekliği bulmak gerekir.",
+                "Komşu kenarlar a ve b, aralarındaki açı α ise hₐ=b·sinα ve S=ab·sinα olur. Açı 30° ise yükseklik b/2’dir. Aynı alan b·hᵦ ile de bulunur; dolayısıyla a·hₐ=b·hᵦ eşitliği ikinci denetimdir. Formüllerdeki açı seçilen iki kenarın arasındaki açıdır; sinüsünü aldığın açıyı önce işaretle."
+              ]
+            },
+            {
+              "title": "Üçgenlere bölmek alanı görünür kılar",
+              "paragraphs": [
+                "Bir köşegen paralelkenarı eş alanlı iki üçgene ayırır. Her iki köşegen çizildiğinde oluşan dört küçük üçgenin alanları eşittir; köşegenlerin yarıları eş olduğundan aynı dik uzaklığa sahip üçgen çiftleri karşılaştırılabilir. Köşegenler eşit uzunlukta olmasa da bu alan eşitlikleri geçerlidir.",
+                "İçeride herhangi bir P noktası seç. PAB ile PCD üçgenlerinin alanları toplamı S/2’dir; çünkü eş uzunluktaki paralel AB ve CD tabanlarına ait iki yüksekliğin toplamı paralelkenarın yüksekliğidir. Benzer biçimde PAD ile PBC’nin toplamı da S/2 olur. P’nin merkez olması gerekmez. DC üzerindeki herhangi bir E için ABE’nin alanı yine S/2’dir; ortak yükseklik değişmez."
+              ]
+            },
+            {
+              "title": "Dikdörtgende eş köşegenin kaynağı",
+              "paragraphs": [
+                "Bir paralelkenarın bir açısı 90° ise komşu açılar ve karşı açı eşitliklerinden bütün açıları 90°dir; bu şekil dikdörtgendir. Komşu kenarları a ve b ise çevre 2(a+b), alan ab’dir. Köşegen bir dik üçgenin hipotenüsü olduğundan d²=a²+b² çıkar.",
+                "İki köşegen eş uzunluktadır ve birbirini ortalar. Bu nedenle kesişim O’dan dört köşeye uzaklık d/2’dir; dört köşe aynı çemberdedir ve çevrel yarıçap R=d/2 olur. Kare olmayan dikdörtgende köşegenler genel olarak dik veya açıortay değildir. Köşegen uzunluğunu bir kenar yerine kullanmak alanı yanlış büyütür."
+              ]
+            },
+            {
+              "title": "Eşkenar dörtgende diklik ve yarım köşegen",
+              "paragraphs": [
+                "Dört kenarı da a olan paralelkenar eşkenar dörtgendir. Köşegenler birbirini ortalar; ayrıca bir köşegenin iki yanındaki eş üçgenler köşe açısını ikiye böler. Komşu bütünler açıların yarılarından köşegenlerin dik kesiştiği de görülür. Dört köşenin dik olması zorunlu değildir; bu ek koşul kareyi verir.",
+                "Köşegenler e ve f ise yarımlarıyla kenar bir dik üçgen kurar: (e/2)²+(f/2)²=a². Alan S=ef/2=a·h=a²sinα, çevre 4a’dır. İç teğet çember için yarıçap r=h/2=S/(2a) olur; çünkü karşı paralel kenarlara teğet çemberin çapı bu kenarlar arasındaki uzaklıktır. Radyal uzunluğu alanla veya çevreyle karıştırma."
+              ]
+            },
+            {
+              "title": "Kare iki ailenin özelliklerini birlikte taşır",
+              "paragraphs": [
+                "Dört eş kenarı ve dört dik açısı olan kare hem dikdörtgen hem eşkenar dörtgendir. Bu yüzden köşegenleri eş, dik, birbirini ortalayan ve köşe açılarını ikiye bölen parçalardır. Her köşegenin ayırdığı köşe açıları 45° ve 45°dir. Kenar a ise d=a√2, alan a²=d²/2, çevre 4a’dır.",
+                "İç teğet çemberin yarıçapı r=a/2, çevrel çemberinki R=d/2=a√2/2’dir. Bunlar farklı çemberlerdir; çevrel çember köşelerden geçer, iç çember kenarlara teğettir. Köşegen 12 ise alan 72’dir; 144 köşegeni kenar sayma hatasıdır. Karede köşegen kullanırken hangi uzunluğun tamam, hangisinin yarım olduğunu işaretle."
+              ]
+            },
+            {
+              "title": "Köşegenlerle genel alan ve uzunluk denetimi",
+              "paragraphs": [
+                "Paralelkenarın köşegenleri d₁,d₂, aralarındaki açı θ ise alan S=d₁d₂sinθ/2’dir. Bu formül dışbükey dörtgenlerde de geçerlidir; dört küçük üçgenin alanlarını toplamaktan çıkar. Köşegenler dik değilse sinθ çarpanı atılamaz. Eşkenar dörtgende θ=90° olduğu için tanıdık ef/2 biçimine iner.",
+                "Komşu kenarlar a,b olan paralelkenarda d₁²+d₂²=2(a²+b²) bağıntısı vardır. Köşegen vektörleri u+v ve u−v’nin karelerini toplayınca skaler çarpımlar birbirini götürür; geriye 2|u|²+2|v|² kalır. Bu bağıntı iki köşegen eşit demek değildir. Örneğin a=5,b=7,d₁=6 ise d₂²=2(25+49)−36=112 bulunur."
+              ]
+            },
+            {
+              "title": "Koşulu en kısa yöntemle sonuca bağla",
+              "paragraphs": [
+                "İlk adım hangi ailede olduğunu belirlemektir: yalnız karşı kenarlar paralelse genel özelliklerle başla; dik açı, eş kenar veya köşegen koşulu varsa ilgili alt aileye geç. Alan sorusunda taban/yükseklik veya dik köşegen; uzunluk sorusunda Pisagor, orta nokta ya da eş üçgen; açı sorusunda paralellik ve açıortay çoğu zaman yeterlidir.",
+                "Bir parçalama sorusunda adı verilen her bölgenin köşelerini belirle. Aynı taban, aynı yükseklik veya yarım taban sonucu veren eş alanı gerekçelendir; renkten dolayı eşit sanma. Sonuçta uzunluk birimini, alanın kare birimini ve hangi ek koşulu kullandığını denetle. İkinci bir hesap veya uygun karşı örnek, ezberin sınırını kontrol etmeye yardım eder."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "sayi-problemleri",
+        "after": "ca4ad1a01abbfb46c93e869eb9ff0a2afe4fa04e1461aec340d673a313e52fab",
+        "prior": {
+          "sections": [
+            {
+              "title": "Önce sorulan niceliğe isim ver",
+              "paragraphs": [
+                "Problemdeki her sayı aynı tür bilgi değildir: kişi sayısı, sıra sayısı, bir kişinin ödediği ücret ve toplam gelir farklı niceliklerdir. İlk okumada verilenleri birimleriyle ayır; ikinci okumada tam olarak neyin sorulduğunu söyle. Aranana x demek çoğu kez işi kolaylaştırır, fakat x'in kişi mi lira mı olduğunu yazmak denklemin anlamını korur.",
+                "Bir ilişkiden yalnız bir ifade çıkıyorsa henüz denklem kurmuş olmazsın. 'İki katının beş fazlası' 2x+5 ifadesidir; bunun 29'a eşit olduğu da söylenirse 2x+5=29 denklemi oluşur. Bilinmeyeni bulduktan sonra sorulan nicelik başka bir toplam olabilir. Son sayının yanına birim koymak yanlış niceliği cevaplamayı önler."
+              ]
+            },
+            {
+              "title": "İşlemin cümledeki sırasını parantezle koru",
+              "paragraphs": [
+                "Bir sayının 4 katının 3 eksiği 4x−3, 3 eksiğinin 4 katı 4(x−3)'tür. 'A, B'nin 2 katından 7 fazladır' ifadesi A=2B+7 anlamına gelir. A ile B'nin yerini değiştirerek aynı ilişkiyi korumuş olmazsın. 'Toplamlarının yarısı' (x+y)/2 iken x+y/2 yalnız ikinci sayıyı yarıya indirir.",
+                "Kısa bir sayıyla anlam kontrolü yap: x=10 için 4x−3=37, 4(x−3)=28 çıkar. İki sözel ifade farklı sonuç verdiği için parantezin süs olmadığını görürsün. İşlem kurallarını bilmek kadar hangi niceliğin hangi işlemden geçtiğini bilmek de gerekir. MEBİ'nin ilgili tablo satırındaki 14 eksiği ifadesinin karşılığı 5x−14 olmalıdır; eksik basılmış rakamı kural diye öğrenme."
+              ]
+            },
+            {
+              "title": "Ardışıklık ortak farkı belirler",
+              "paragraphs": [
+                "Ardışık tam sayılar n,n+1,n+2; ardışık çift veya tek sayılar n,n+2,n+4 biçiminde yazılır. Tek sayıda terim varsa ortadaki sayıyı seçmek toplamı kısaltır: üç ardışık tek sayı x−2,x,x+2 olduğunda toplam 3x'tir. x'in de tek olması gerekir; denklem bu koşulu kendiliğinden her zaman sağlamaz.",
+                "Dört ardışık çift sayı için tek bir tam sayı orta terim yoktur; n,n+2,n+4,n+6 yazımı güvenlidir. 'Üç tek sayı' ifadesi tek başına ardışıklık vermez. Örneğin 3,9,15 tek sayılardır fakat ardışık tek sayı değildir. Önce ortak farkı metinden çıkar, sonra toplama yap; sonucu her terimin çiftliği veya tekliğiyle birlikte denetle."
+              ]
+            },
+            {
+              "title": "İki düzen aynı insanları sayar",
+              "paragraphs": [
+                "Sıralar ikişer dolup a kişi ayakta kalıyorsa öğrenci sayısı 2s+a'dır. Üçerli oturunca b sıra tamamen boş, diğer sıralar tam doluysa aynı sayı 3(s−b) olur. Eşitlenen şey oturma sayıları değil, değişmeyen öğrenci toplamıdır. 'Bir sırada bir kişi' gibi kısmi doluluk ayrıca belirtilirse o sırayı tam dolulardan çıkarıp tek kişiyi ayrıca eklemelisin.",
+                "Atölyede sıra sayısını değiştirince iki düzenin saydığı öğrenciler farklılaşabilir. Bu, gerçek öğrencilerin kaybolması değil, seçilen sıra değerinin aynı sınıfı açıklamaya henüz uymamasıdır. Dengeyi kuran değeri bulduğunda iki toplam eşit olur. Boş sıra sayısı toplam sıradan büyük olamaz; ayakta kalan bir sayı zaten bütün sıra sayısına eklenir."
+              ]
+            },
+            {
+              "title": "İki tür nesnede sayım ve ağırlığı ayır",
+              "paragraphs": [
+                "Bir etkinlikte 20 bilet satılması ile 1700 TL gelir elde edilmesi iki farklı bilgidir. Öğrenci bileti x ise yetişkin bileti 20−x olur; her türün sayısı kendi fiyatıyla çarpılır. Bilet sayılarının toplamı 20, gelirlerin toplamı 1700 olmalıdır. Ücretlerle kişi sayılarını doğrudan toplamak birimleri karıştırır.",
+                "Aynı yöntem iki ve dört tekerlekli araçlarda, farklı puanlı sorularda veya farklı kapasitedeki masalarda kullanılır. Hepsi birinci türden olsaydı toplamı hesaplamak da geçerli bir başlangıçtır; gerçek toplamla farkı, tür değişiminin birim etkisine bölersin. Bu kısa yol her türün katkısının sabit olduğu koşulda çalışır; değişken indirim veya kademeli puan varsa modeli yeniden kur."
+              ]
+            },
+            {
+              "title": "Kapasite eşitliği birimlerin oranını buldurur",
+              "paragraphs": [
+                "Aynı depo, her kutunun türüne göre farklı sayıda kutu alabilir. Küçük kutunun kapladığı alan a, büyük kutununki b ise 18 küçük+8 büyük ile 12 küçük+10 büyük aynı alanı doldurduğunda 18a+8b=12a+10b yazılır. Buradan 6a=2b ve b=3a çıkar; bir büyük üç küçük kutunun yerini alır.",
+                "Burada a'yı keyfî bir santimetrekare değeri seçmek zorunda değilsin; istenen çoğu kez oran veya tek türden kapasitedir. Fakat bütün kutuların kendi türleri içinde aynı büyüklükte olduğu, boşluk veya istif farkı olmadığı belirtilmelidir. Başka bir düzende farklı boşluk payı varsa iki toplamı eşitlemek doğru olmaz. Bilinmeyenlerin gereksiz gerçek değerini aramadan sorulan yapıyı yakala."
+              ]
+            },
+            {
+              "title": "En az ve en çok eşitlikten fazlasını söyler",
+              "paragraphs": [
+                "'En az 30' x≥30, '30'dan fazla' x>30 demektir. Tam sayılı bir sonuç için x>7,2 koşulunun ilk uygun değeri 8'dir; x≥7 koşulunda 7 kabul edilir. Bütçe veya kapasite koşullarında denklem yerine eşitsizlik gerekir. Yalnız eşitliği çözmek sınırı verir; sınırın hangi tarafının uygun olduğunu ayrıca belirlemelisin.",
+                "Sonucu bir alt ve bir üst adayla kontrol etmek güçlü bir son adımdır. 95 TL bütçeyle tanesi 12 TL olan üründen en çok 7 tane alınır: 7 tanesi 84 TL, 8 tanesi 96 TL'dir. Bölme sonucu 7,916… bir ürün adedi değildir. Sorunun doğası tam sayı gerektiriyorsa yuvarlama yönünü 'en az/en çok' koşulu belirler; normal yuvarlama kullanma."
+              ]
+            },
+            {
+              "title": "Denklemin kökü bağlamda da çözüm olmalı",
+              "paragraphs": [
+                "Kişi, bilet ve sıra sayısı doğal sayıdır; uzunluk ve para verilen kapsamda negatif olamaz. Denklem x=−3 veya x=4,5 verirse cebir hatası olmayabilir: seçilen model ya da veriler bağlamla uyuşmuyor olabilir. Önce ifadeleri tekrar oku; çözümü zorlamak için soru metninde olmayan varsayımlar ekleme.",
+                "Kontrolü dört parçada yap: birimler uyuyor mu, bütün parçalar toplamı koruyor mu, ağırlıklı toplam isteneni veriyor mu, tüm ayrıntılar sağlanıyor mu? İki bilgi birbiriyle çelişirse 'geçerli çözüm yok' sonucu anlamlıdır. Bir yöntemin adını hatırlamak yerine hangi toplamın ve hangi koşulun korunduğunu söylemek, aynı yapıyı yeni bir bağlamda tanımanı sağlar."
+              ]
+            },
+            {
+              "title": "İkinci kesrin hangi miktara ait olduğunu yaz",
+              "paragraphs": [
+                "Başlangıç miktarı N olsun. Önce bunun p/q’si kullanılırsa ara miktar K=N·(1−p/q) olur. “Kalanın r/s’si” ifadesi rK/s kadar ikinci kullanım demektir. “Başlangıcın r/s’si” denirse aynı kesir rN/s kadar kullanımı anlatır. Aradaki fark, iki cümlenin hangi bütünü seçtiğidir.",
+                "Örneğin 120 L suyun önce 1/3’ü kullanılırsa 80 L kalır. Kalanın 1/4’ü 20 L eder, son durumda 60 L kalır. İkinci kullanım başlangıcın 1/4’ü olsaydı 30 L kullanılır ve 50 L kalırdı. Bir sayı adedi soruluyorsa her ara grubun tam sayı olduğunu da denetle."
+              ]
+            },
+            {
+              "title": "Farklı nesne sayısı ile toplam kullanımı ayrı say",
+              "paragraphs": [
+                "Her kullanım grubunu ayrı tut. Bir kez kullanılan a, iki kez kullanılan b, üç kez kullanılan c farklı nesne varsa D=a+b+c farklı nesne, U=a+2b+3c kullanım vardır. İlk denklemin her nesneye verdiği katsayı 1’dir. İkincide katsayı o gruptaki her nesnenin kaç kez kullanıldığını gösterir.",
+                "Kısa yol işe yarar: 3D−U=2a+b olur. Üç kez kullanılan grubun katsayısı 3−3=0 olduğu için c sadeleşir. Bu yoldan bulunan değerleri her iki denkleme geri koy. D≤N ve a,b,c’nin negatif olmayan tam sayılar olması gerekir. Yalnız D’yi kullanıp N−D bulmak diğer verilerin geçerli olduğunu göstermez."
+              ],
+              "table": {
+                "headers": [
+                  "Grup",
+                  "Farklı nesne sayısına katkı",
+                  "Kullanım sayısına katkı"
+                ],
+                "rows": [
+                  [
+                    "Bir kez kullanılan",
+                    "a",
+                    "a"
+                  ],
+                  [
+                    "İki kez kullanılan",
+                    "b",
+                    "2b"
+                  ],
+                  [
+                    "Üç kez kullanılan",
+                    "c",
+                    "3c"
+                  ],
+                  [
+                    "Hiç kullanılmayan",
+                    "0",
+                    "0"
+                  ]
+                ]
+              }
+            },
+            {
+              "title": "Kapasiteyi tek birimle say",
+              "paragraphs": [
+                "Bir alan ya 24 otomobil ve 11 kamyon ya da 18 otomobil ve 13 kamyon alıyor. Otomobil başına alan a, kamyon başına alan b olsun. Aynı alan dolduğundan 24a+11b=18a+13b yazılır. Her iki taraftan 18a+11b çıkarınca 6a=2b kalır. Bir kamyon üç otomobillik yer kaplar. Kapasite her iki düzende 24+11·3=18+13·3=57 otomobil yeridir.",
+                "24+11=35, ilk düzende duran araçların toplam adedidir. Kapasiteyi ‘yalnız otomobil’ birimiyle sayarken her kamyonun ne kadar yer tuttuğunu hesaba kat. Düzenler aynı alanı doldurmalı ve her araç kendi türünde aynı büyüklükte olmalı."
+              ]
+            },
+            {
+              "title": "Denklemi seç, sonra hangi koşula dayandığını kontrol et",
+              "paragraphs": [
+                "Sorulan niceliğin adını ve birimini yaz. Bir cümledeki işlem sırasını parantezle göster, iki düzeni aynı toplamı anlatıyorsa eşitle. Ardışık sayılarda ortak farkı metinden al. Bir sonucun geçerli olması için yalnız denklemin kökü olmak yetmez. Tam sayı adedini, boş ve kısmi grupları, kalan miktarı ve ağırlıklı toplamı denetle.",
+                "Kısa yol, normal çözümde hangi bilginin kullanıldığını görünür tutmalıdır. Birden çok bilgi verilmişse birini kullanarak sonuç bulduktan sonra diğerlerini de yerine koy. Farklı nesne sayısı sağlanırken kullanım sayısı sağlanmıyorsa, matematiksel olarak uygulanabilir bir model kurulamamıştır."
+              ],
+              "table": {
+                "headers": [
+                  "İlk hamle",
+                  "Geçerli örnek",
+                  "Yöntemin durduğu yer",
+                  "Aynı yapıda bir uygulama"
+                ],
+                "rows": [
+                  [
+                    "Cümlenin sıra düzenini koru",
+                    "3 katının 4 fazlası: 3x+4.",
+                    "4 fazlasının 3 katı: 3(x+4). x=2’de sonuçlar 10 ve 18’dir.",
+                    "Üç çıtanın her biri x cm ve her birine 4 cm eklenirse toplam 3(x+4) cm gerekir."
+                  ],
+                  [
+                    "Ortak farkı belirle",
+                    "15, 19, 23 eşit aralıklıdır. Ortadaki 19 ve fark 4 diğerlerini belirler.",
+                    "Yalnız toplam 57 bilinirse 14, 18, 25 de mümkün olur; bu üçü eşit aralıklı değildir.",
+                    "Saat 10.05, 10.10, 10.15 ölçümlerinin aralığı beş dakikadır."
+                  ],
+                  [
+                    "Aynı toplamı iki kez yaz",
+                    "Üçerli kutulamada 2 artıyor, dörderli kutulamada 2 kutu boş: 3s+2=4(s−2). s=10 ve toplam 32.",
+                    "Boş kutuları sayarsan ikinci toplam hatalı olarak 4s olur.",
+                    "Bir sırada iki kişi varsa tam dolu sıralardan ayrı sayılıp iki kişi eklenir."
+                  ],
+                  [
+                    "Her kesrin tabanını adlandır",
+                    "80 L’nin 1/4’ü, sonra kalanın 1/3’ü kullanılırsa 40 L kalır.",
+                    "İki kesri de 80 L’ye uygulamak farklı bir cümleyi çözer.",
+                    "Aynı kesirle yapılan iki indirimde ikinci indirim yeni fiyattan hesaplanır."
+                  ],
+                  [
+                    "Nesne adedi ile katkıyı ayır",
+                    "8 paketten x’i 5 kg, kalanları 2 kg ve toplam 25 kg ise 5x+2(8−x)=25. x=3.",
+                    "x+(8−x)=25 yazmak paket adedine kilogram değeri yükler.",
+                    "Bir, iki ve üç defa okunan kartların her biri bir farklı karttır; okumaya katkıları değişir."
+                  ],
+                  [
+                    "Büyüklükleri aynı birime çevir",
+                    "12 dar+4 geniş veya 6 dar+7 geniş bölme aynı yeri doldurur. Bir geniş iki dar, toplam 20 dar yer.",
+                    "Bir düzende daha çok boşluk varsa kullanılan alanları doğrudan eşitleme.",
+                    "12 tek ve 4 çift koltuk, 6 tek ve 7 çift koltukla aynı 20 kişilik kapasiteyi verir."
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-geo-paralelkenar-ozel-dortgenler-032",
+        "after": "06a262f6ac0c0a58ec4c2c6b5e8894809539c4ca449819b2f165ce9e4ab01158",
+        "prior": {
+          "sections": [
+            {
+              "title": "Paralelkenar",
+              "text": [
+                "Karşı kenarlar/açılar eş; komşu açılar bütünler. Köşegenler birbirini ortalar.",
+                "Eş köşegen, dik köşegen veya açıortaylık genel özellik değildir."
+              ]
+            },
+            {
+              "title": "Alan ve parçalama",
+              "text": [
+                "S=a·hₐ=b·hᵦ=ab·sinα. Kenarla yüksekliği eşleştir.",
+                "Köşegen alanı yarılar; iki köşegenin dört üçgeni eş alanlıdır.",
+                "Rastgele iç P için S(PAB)+S(PCD)=S/2; tek tek eşlik gerekmez."
+              ]
+            },
+            {
+              "title": "Dikdörtgen",
+              "text": [
+                "S=ab; Ç=2(a+b); d²=a²+b². Köşegenler eş ve birbirini ortalar.",
+                "Çevrel çember yarıçapı R=d/2; kare olmadıkça diklik/açıortaylık zorunlu değildir."
+              ]
+            },
+            {
+              "title": "Eşkenar dörtgen",
+              "text": [
+                "S=ef/2=a·h; Ç=4a. Köşegenler dik, birbirini ortalayan ve açıortay parçalardır.",
+                "(e/2)²+(f/2)²=a²; iç yarıçap r=S/(2a)=h/2."
+              ]
+            },
+            {
+              "title": "Kare ve genel köşegen denetimi",
+              "text": [
+                "Kare: S=a²=d²/2, d=a√2, r=a/2, R=d/2.",
+                "Paralelkenar: d₁²+d₂²=2(a²+b²).",
+                "Dışbükey dörtgende köşegen açısı θ ise S=d₁d₂sinθ/2."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "detail-210",
+        "after": "e71f29f6ada9f4285173108040a7d78e26f72c393f16657fd8b0d46b394a7333",
+        "prior": {
+          "sections": [
+            {
+              "title": "Önce sorulan niceliğe isim ver",
+              "text": [
+                "Problemdeki her sayı aynı tür bilgi değildir: kişi sayısı, sıra sayısı, bir kişinin ödediği ücret ve toplam gelir farklı niceliklerdir. İlk okumada verilenleri birimleriyle ayır; ikinci okumada tam olarak neyin sorulduğunu söyle. Aranana x demek çoğu kez işi kolaylaştırır, fakat x'in kişi mi lira mı olduğunu yazmak denklemin anlamını korur."
+              ]
+            },
+            {
+              "title": "İşlemin cümledeki sırasını parantezle koru",
+              "text": [
+                "Bir sayının 4 katının 3 eksiği 4x−3, 3 eksiğinin 4 katı 4(x−3)'tür. 'A, B'nin 2 katından 7 fazladır' ifadesi A=2B+7 anlamına gelir. A ile B'nin yerini değiştirerek aynı ilişkiyi korumuş olmazsın. 'Toplamlarının yarısı' (x+y)/2 iken x+y/2 yalnız ikinci sayıyı yarıya indirir."
+              ]
+            },
+            {
+              "title": "Ardışıklık ortak farkı belirler",
+              "text": [
+                "Ardışık tam sayılar n,n+1,n+2; ardışık çift veya tek sayılar n,n+2,n+4 biçiminde yazılır. Tek sayıda terim varsa ortadaki sayıyı seçmek toplamı kısaltır: üç ardışık tek sayı x−2,x,x+2 olduğunda toplam 3x'tir. x'in de tek olması gerekir; denklem bu koşulu kendiliğinden her zaman sağlamaz."
+              ]
+            },
+            {
+              "title": "İki düzen aynı insanları sayar",
+              "text": [
+                "Sıralar ikişer dolup a kişi ayakta kalıyorsa öğrenci sayısı 2s+a'dır. Üçerli oturunca b sıra tamamen boş, diğer sıralar tam doluysa aynı sayı 3(s−b) olur. Eşitlenen şey oturma sayıları değil, değişmeyen öğrenci toplamıdır. 'Bir sırada bir kişi' gibi kısmi doluluk ayrıca belirtilirse o sırayı tam dolulardan çıkarıp tek kişiyi ayrıca eklemelisin."
+              ]
+            },
+            {
+              "title": "İki tür nesnede sayım ve ağırlığı ayır",
+              "text": [
+                "Bir etkinlikte 20 bilet satılması ile 1700 TL gelir elde edilmesi iki farklı bilgidir. Öğrenci bileti x ise yetişkin bileti 20−x olur; her türün sayısı kendi fiyatıyla çarpılır. Bilet sayılarının toplamı 20, gelirlerin toplamı 1700 olmalıdır. Ücretlerle kişi sayılarını doğrudan toplamak birimleri karıştırır."
+              ]
+            },
+            {
+              "title": "Kapasite eşitliği birimlerin oranını buldurur",
+              "text": [
+                "Aynı depo, her kutunun türüne göre farklı sayıda kutu alabilir. Küçük kutunun kapladığı alan a, büyük kutununki b ise 18 küçük+8 büyük ile 12 küçük+10 büyük aynı alanı doldurduğunda 18a+8b=12a+10b yazılır. Buradan 6a=2b ve b=3a çıkar; bir büyük üç küçük kutunun yerini alır."
+              ]
+            },
+            {
+              "title": "En az ve en çok eşitlikten fazlasını söyler",
+              "text": [
+                "'En az 30' x≥30, '30'dan fazla' x>30 demektir. Tam sayılı bir sonuç için x>7,2 koşulunun ilk uygun değeri 8'dir; x≥7 koşulunda 7 kabul edilir. Bütçe veya kapasite koşullarında denklem yerine eşitsizlik gerekir. Yalnız eşitliği çözmek sınırı verir; sınırın hangi tarafının uygun olduğunu ayrıca belirlemelisin."
+              ]
+            },
+            {
+              "title": "Denklemin kökü bağlamda da çözüm olmalı",
+              "text": [
+                "Kişi, bilet ve sıra sayısı doğal sayıdır; uzunluk ve para verilen kapsamda negatif olamaz. Denklem x=−3 veya x=4,5 verirse cebir hatası olmayabilir: seçilen model ya da veriler bağlamla uyuşmuyor olabilir. Önce ifadeleri tekrar oku; çözümü zorlamak için soru metninde olmayan varsayımlar ekleme."
+              ]
+            },
+            {
+              "title": "İkinci kesrin hangi miktara ait olduğunu yaz",
+              "text": [
+                "Başlangıç miktarı N olsun. Önce bunun p/q’si kullanılırsa ara miktar K=N·(1−p/q) olur. “Kalanın r/s’si” ifadesi rK/s kadar ikinci kullanım demektir. “Başlangıcın r/s’si” denirse aynı kesir rN/s kadar kullanımı anlatır. Aradaki fark, iki cümlenin hangi bütünü seçtiğidir."
+              ]
+            },
+            {
+              "title": "Farklı nesne sayısı ile toplam kullanımı ayrı say",
+              "text": [
+                "Her kullanım grubunu ayrı tut. Bir kez kullanılan a, iki kez kullanılan b, üç kez kullanılan c farklı nesne varsa D=a+b+c farklı nesne, U=a+2b+3c kullanım vardır. İlk denklemin her nesneye verdiği katsayı 1’dir. İkincide katsayı o gruptaki her nesnenin kaç kez kullanıldığını gösterir."
+              ],
+              "table": {
+                "headers": [
+                  "Grup",
+                  "Farklı nesne sayısına katkı",
+                  "Kullanım sayısına katkı"
+                ],
+                "rows": [
+                  [
+                    "Bir kez kullanılan",
+                    "a",
+                    "a"
+                  ],
+                  [
+                    "İki kez kullanılan",
+                    "b",
+                    "2b"
+                  ],
+                  [
+                    "Üç kez kullanılan",
+                    "c",
+                    "3c"
+                  ],
+                  [
+                    "Hiç kullanılmayan",
+                    "0",
+                    "0"
+                  ]
+                ]
+              }
+            },
+            {
+              "title": "Kapasiteyi tek birimle say",
+              "text": [
+                "Bir alan ya 24 otomobil ve 11 kamyon ya da 18 otomobil ve 13 kamyon alıyor. Otomobil başına alan a, kamyon başına alan b olsun. Aynı alan dolduğundan 24a+11b=18a+13b yazılır. Her iki taraftan 18a+11b çıkarınca 6a=2b kalır. Bir kamyon üç otomobillik yer kaplar. Kapasite her iki düzende 24+11·3=18+13·3=57 otomobil yeridir."
+              ]
+            },
+            {
+              "title": "Denklemi seç, sonra hangi koşula dayandığını kontrol et",
+              "text": [
+                "Sorulan niceliğin adını ve birimini yaz. Bir cümledeki işlem sırasını parantezle göster, iki düzeni aynı toplamı anlatıyorsa eşitle. Ardışık sayılarda ortak farkı metinden al. Bir sonucun geçerli olması için yalnız denklemin kökü olmak yetmez. Tam sayı adedini, boş ve kısmi grupları, kalan miktarı ve ağırlıklı toplamı denetle."
+              ],
+              "table": {
+                "headers": [
+                  "İlk hamle",
+                  "Geçerli örnek",
+                  "Yöntemin durduğu yer",
+                  "Aynı yapıda bir uygulama"
+                ],
+                "rows": [
+                  [
+                    "Cümlenin sıra düzenini koru",
+                    "3 katının 4 fazlası: 3x+4.",
+                    "4 fazlasının 3 katı: 3(x+4). x=2’de sonuçlar 10 ve 18’dir.",
+                    "Üç çıtanın her biri x cm ve her birine 4 cm eklenirse toplam 3(x+4) cm gerekir."
+                  ],
+                  [
+                    "Ortak farkı belirle",
+                    "15, 19, 23 eşit aralıklıdır. Ortadaki 19 ve fark 4 diğerlerini belirler.",
+                    "Yalnız toplam 57 bilinirse 14, 18, 25 de mümkün olur; bu üçü eşit aralıklı değildir.",
+                    "Saat 10.05, 10.10, 10.15 ölçümlerinin aralığı beş dakikadır."
+                  ],
+                  [
+                    "Aynı toplamı iki kez yaz",
+                    "Üçerli kutulamada 2 artıyor, dörderli kutulamada 2 kutu boş: 3s+2=4(s−2). s=10 ve toplam 32.",
+                    "Boş kutuları sayarsan ikinci toplam hatalı olarak 4s olur.",
+                    "Bir sırada iki kişi varsa tam dolu sıralardan ayrı sayılıp iki kişi eklenir."
+                  ],
+                  [
+                    "Her kesrin tabanını adlandır",
+                    "80 L’nin 1/4’ü, sonra kalanın 1/3’ü kullanılırsa 40 L kalır.",
+                    "İki kesri de 80 L’ye uygulamak farklı bir cümleyi çözer.",
+                    "Aynı kesirle yapılan iki indirimde ikinci indirim yeni fiyattan hesaplanır."
+                  ],
+                  [
+                    "Nesne adedi ile katkıyı ayır",
+                    "8 paketten x’i 5 kg, kalanları 2 kg ve toplam 25 kg ise 5x+2(8−x)=25. x=3.",
+                    "x+(8−x)=25 yazmak paket adedine kilogram değeri yükler.",
+                    "Bir, iki ve üç defa okunan kartların her biri bir farklı karttır; okumaya katkıları değişir."
+                  ],
+                  [
+                    "Büyüklükleri aynı birime çevir",
+                    "12 dar+4 geniş veya 6 dar+7 geniş bölme aynı yeri doldurur. Bir geniş iki dar, toplam 20 dar yer.",
+                    "Bir düzende daha çok boşluk varsa kullanılan alanları doğrudan eşitleme.",
+                    "12 tek ve 4 çift koltuk, 6 tek ve 7 çift koltukla aynı 20 kişilik kapasiteyi verir."
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
   }
 ]

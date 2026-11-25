@@ -267,7 +267,7 @@ const consecutiveOdd: FigureDef = {
   },
 };
 
-const CAP_STEPS = ["İki düzen", "Ortak kısmı çıkar", "b = 3a", "Otoparkta 57 yer"];
+const CAP_STEPS = ["İki düzen", "Ortak kısmı çıkar", "b = 3a", "Otoparkta 57 yer", "Başka iki kutu düzeni"];
 const capacity: FigureDef = {
   caption:
     "Aynı depo: 18 küçük + 8 büyük kutu = 12 küçük + 10 büyük kutu. Şeritler aynı uzunluktadır (küçük kutu a, büyük kutu b). İki satırdan ortak 12a + 8b çıkarılınca 6a = 2b kalır: bir büyük kutu üç küçük kutunun yerini alır (b = 3a). Otopark adımında aynı ilişkiyi otomobil yeriyle ölç.",
@@ -299,6 +299,28 @@ const capacity: FigureDef = {
           `${first.cars} otomobil + ${first.trucks} kamyon veya ${second.cars} otomobil + ${second.trucks} kamyon aynı alanı doldurur.`,
           `Bir kamyon ${truckUnits} otomobil yeri kaplar.`,
           `${first.cars}+${first.trucks}·${truckUnits}=${firstCapacity} ve ${second.cars}+${second.trucks}·${truckUnits}=${secondCapacity} otomobil yeri.`,
+        ],
+      };
+    }
+    if (step === 4) {
+      const first = { small: 10, large: 4 };
+      const second = { small: 4, large: 7 };
+      const extraSmall = first.small - second.small;
+      const extraLarge = second.large - first.large;
+      const largeUnits = extraSmall / extraLarge;
+      row(1.3, first.small, first.large, second.small, first.large, a * largeUnits);
+      row(0, second.small, second.large, second.small, first.large, a * largeUnits);
+      els.push(
+        txt(v(-0.2, 1.7), "10a + 4b", "w", { tone: "ink", small: true }),
+        txt(v(-0.2, 0.4), "4a + 7b", "w", { tone: "ink", small: true }),
+        ...pad(-2.3, 2.8, 6.0, -0.7),
+      );
+      return {
+        els,
+        readout: [
+          `Soluk 4a ve 4b iki satırda aynı. Kalan: ${extraSmall}a = ${extraLarge}b, b = ${largeUnits}a.`,
+          `İlk düzen: 10 + 4·${largeUnits} = ${first.small + first.large * largeUnits} küçük kutu yeri.`,
+          `İkinci düzen: 4 + 7·${largeUnits} = ${second.small + second.large * largeUnits} küçük kutu yeri.`,
         ],
       };
     }

@@ -117,11 +117,14 @@ const numbers: Pack = {
       "Bir etkinlikte 20 bilet satılması ile 1700 TL gelir elde edilmesi iki farklı bilgidir. Öğrenci bileti x ise yetişkin bileti 20−x olur; her türün sayısı kendi fiyatıyla çarpılır. Bilet sayılarının toplamı 20, gelirlerin toplamı 1700 olmalıdır. Ücretlerle kişi sayılarını doğrudan toplamak birimleri karıştırır.",
       "Aynı yöntem iki ve dört tekerlekli araçlarda, farklı puanlı sorularda veya farklı kapasitedeki masalarda kullanılır. Hepsi birinci türden olsaydı toplamı hesaplamak da geçerli bir başlangıçtır; gerçek toplamla farkı, tür değişiminin birim etkisine bölersin. Bu kısa yol her türün katkısının sabit olduğu koşulda çalışır; değişken indirim veya kademeli puan varsa modeli yeniden kur.",
     ),
-    section(
-      "Kapasite eşitliği birimlerin oranını buldurur",
-      "Aynı depo, her kutunun türüne göre farklı sayıda kutu alabilir. Küçük kutunun kapladığı alan a, büyük kutununki b ise 18 küçük+8 büyük ile 12 küçük+10 büyük aynı alanı doldurduğunda 18a+8b=12a+10b yazılır. Buradan 6a=2b ve b=3a çıkar; bir büyük üç küçük kutunun yerini alır.",
-      "Burada a'yı keyfî bir santimetrekare değeri seçmek zorunda değilsin; istenen çoğu kez oran veya tek türden kapasitedir. Fakat bütün kutuların kendi türleri içinde aynı büyüklükte olduğu, boşluk veya istif farkı olmadığı belirtilmelidir. Başka bir düzende farklı boşluk payı varsa iki toplamı eşitlemek doğru olmaz. Bilinmeyenlerin gereksiz gerçek değerini aramadan sorulan yapıyı yakala.",
-    ),
+    {
+      title: "Kapasite eşitliği birimlerin oranını buldurur",
+      figureTitle: "Kapasite eşitliği birimlerin oranını buldurur",
+      paragraphs: [
+        "Aynı alanı dolduran iki düzende küçük kutunun alanı a, büyüğün alanı b olsun. İlk çizimde 18a+8b=12a+10b olduğundan ortak terimleri çıkarınca 6a=2b, yani b=3a bulunur. Her türün alanı ve iki düzendeki doluluk koşulları aynı olmalı.",
+        "Son çizimde 10a+4b=4a+7b olur. Her iki toplamdan 4a ve 4b çıkarınca 6a=3b kalır. Bu kez büyük kutu iki küçük kutu kadar yer kaplar. Kapasiteyi iki yoldan denetle: 10+4·2=18 ve 4+7·2=18 küçük kutu yeri.",
+      ],
+    },
     section(
       "En az ve en çok eşitlikten fazlasını söyler",
       "'En az 30' x≥30, '30'dan fazla' x>30 demektir. Tam sayılı bir sonuç için x>7,2 koşulunun ilk uygun değeri 8'dir; x≥7 koşulunda 7 kabul edilir. Bütçe veya kapasite koşullarında denklem yerine eşitsizlik gerekir. Yalnız eşitliği çözmek sınırı verir; sınırın hangi tarafının uygun olduğunu ayrıca belirlemelisin.",

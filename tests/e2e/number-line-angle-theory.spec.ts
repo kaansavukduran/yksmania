@@ -777,3 +777,44 @@ test("Trapezoid height comes from the horizontal half-difference and slanted sid
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Capacity stays equal after removing the shared parts in a second pair of arrangements", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Kapasite eşitliği birimlerin oranını buldurur");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto("/#/lesson?id=sayi-problemleri");
+  for (let step = 0; step < 4; step++) await next.press("Enter");
+  await expect(model).toContainText("6a = 3b, b = 2a");
+  await expect(model).toContainText("10 + 4·2 = 18 küçük kutu yeri");
+  await expect(model).toContainText("4 + 7·2 = 18 küçük kutu yeri");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-210");
+  for (let step = 0; step < 4; step++) await next.press("Enter");
+  await expect(model).toContainText("4 + 7·2 = 18 küçük kutu yeri");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The missing vertex and both diagonal midpoints follow the same coordinates", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-paralelkenar-ozel-dortgenler-032";
+  const model = figure(page, "Alanı taban ve dik uzaklıkla kur");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto(`/#/lesson?id=${lesson}`);
+  for (let step = 0; step < 3; step++) await next.press("Enter");
+  await expect(model).toContainText("C = B + D − A = (9; 5)");
+  await expect(model).toContainText("Alan = 6 × 4 = 24 birim²");
+  await expect(model).toContainText("Ortak orta nokta O(5; 3)");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  for (let step = 0; step < 3; step++) await next.press("Enter");
+  await expect(model).toContainText("Alan = 6 × 4 = 24 birim²");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

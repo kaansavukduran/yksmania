@@ -27,6 +27,7 @@ import {
   type FigureDef,
   type V,
 } from "./figureKit";
+import { axes } from "./geometryFiguresArea";
 import { linearPairBisectors031 } from "./geometryFigures031";
 import { prism, proj, pyramid, regularBase, solid, type P3 } from "./solidKit";
 
@@ -131,9 +132,31 @@ const paralelkenar: Record<string, FigureDef> = {
   "Alanı taban ve dik uzaklıkla kur": {
     caption:
       "D'den inen yükseklik bir dik üçgen keser. Bu üçgeni karşı tarafa taşıyınca aynı taban ve yükseklikte bir dikdörtgen oluşur: S = a·h.",
-    alt: "Paralelkenar; ikinci adımda D'den tabana yükseklik, üçüncü adımda soldaki dik üçgen sağa taşınmış ve dikdörtgen tamamlanmış.",
-    steps: ["Paralelkenar", "Yüksekliği indir", "Üçgeni taşı"],
+    alt: "Paralelkenar, tabana indirilen yükseklik ve eş alanlı dikdörtgen. Son adımda koordinatlar, dik yükseklik ve köşegenlerin ortak orta noktası gösterilir.",
+    steps: ["Paralelkenar", "Yüksekliği indir", "Üçgeni taşı", "Verilen koordinatları kullan"],
     draw: (_, step) => {
+      if (step === 3) {
+        const A = v(1, 1), B = v(7, 1), D = v(3, 5);
+        const C = add(B, sub(D, A));
+        const H = v(D[0], A[1]);
+        const O = mid(A, C);
+        return {
+          els: [
+            ...axes(-0.5, 10.5, -0.5, 7, 2),
+            poly([A, B, C, D], { fill: "muted" }),
+            seg(A, C, { dash: true, tone: "a" }),
+            seg(B, D, { dash: true, tone: "b" }),
+            seg(D, H, { dash: true, tone: "c" }),
+            right(H, B, D, "c"),
+            ...labelAll([A, B, C, D, O], ["A", "B", "C", "D", "O"], ["w", "se", "ne", "nw", "s"]),
+          ],
+          readout: [
+            `A(1; 1), B(7; 1), D(3; 5). C = B + D − A = (${C[0]}; ${C[1]}).`,
+            `Alan = ${dist(A, B)} × ${dist(D, H)} = ${area([A, B, C, D])} birim².`,
+            `Ortak orta nokta O(${O[0]}; ${O[1]}).`,
+          ],
+        };
+      }
       const [A, B, C, D] = pgram(6, 3.4, 62);
       const H = v(D[0], 0);
       const H2 = v(C[0], 0);

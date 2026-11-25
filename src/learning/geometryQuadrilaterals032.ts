@@ -559,7 +559,7 @@ const packs: QuadrilateralPack032[] = [
         title: "Alanı taban ve dik uzaklıkla kur",
         paragraphs: [
           "AB=a ve DC doğrusunun AB’ye dik uzaklığı hₐ ise S=a·hₐ’dır. Eğik bir köşeden yükseklik indirip kenardaki dik üçgeni öteki tarafa taşıdığında aynı taban ve yüksekliğe sahip bir dikdörtgen oluşur. Bu parçalama alanın neden taban çarpı yükseklik olduğunu açıklar. Kenar b eğikse b yerine yüksekliği bulmak gerekir.",
-          "Komşu kenarlar a ve b, aralarındaki açı α ise hₐ=b·sinα ve S=ab·sinα olur. Açı 30° ise yükseklik b/2’dir. Aynı alan b·hᵦ ile de bulunur; dolayısıyla a·hₐ=b·hᵦ eşitliği ikinci denetimdir. Formüllerdeki açı seçilen iki kenarın arasındaki açıdır; sinüsünü aldığın açıyı önce işaretle.",
+          "Komşu kenarlar a ve b, aralarındaki açı α ise hₐ=b·sinα, S=ab·sinα ve a·hₐ=b·hᵦ olur. 30° için hₐ=b/2’dir. Koordinat adımında A(1; 1), B(7; 1) ve D(3; 5) verilir. AB ile DC aynı yönlü olduğundan C=B+D−A=(9; 5). AB=6 ve dik yükseklik 4 olduğundan alan 24 birim²; köşegenler (5; 3) noktasında birbirini ortalar.",
         ],
       },
       {
@@ -1089,6 +1089,7 @@ const summaries: Record<string, CheatSection[]> = {
     },
     {
       title: "Alan ve parçalama",
+      figureTitle: "Alanı taban ve dik uzaklıkla kur",
       text: [
         "S=a·hₐ=b·hᵦ=ab·sinα. Kenarla yüksekliği eşleştir.",
         "Köşegen alanı yarılar; iki köşegenin dört üçgeni eş alanlıdır.",
