@@ -688,6 +688,41 @@ const kati: Record<string, FigureDef> = {
       };
     },
   },
+  "Kâğıdı iki yönde sar ve hacimleri karşılaştır": {
+    caption: "Aynı dikdörtgende turuncu kenar taban çevresi olur. Diğer kenar yüksekliği belirler. Kısa kenarı değiştirerek iki sarımın hacmini karşılaştır.",
+    alt: "Solda boyutları ölçülü dikdörtgen. İki adımda farklı kenarı taban çevresi olarak vurgulanır. Sağdaki silindirin yüksekliği ve taban yarıçapı aynı ölçekle hesaplanır.",
+    steps: ["Uzun kenar çevre", "Kısa kenar çevre"],
+    param: { label: "Kısa kenar", min: 4, max: 12, step: 1, init: 8, unit: " cm" },
+    draw: (side, step) => {
+      const scale = 0.16;
+      const longSide = 12 * Math.PI;
+      const shortAround = step === 1;
+      const circumference = shortAround ? side : longSide;
+      const radius = circumference / (2 * Math.PI);
+      const height = shortAround ? longSide : side;
+      const width = longSide * scale;
+      const length = side * scale;
+      const O = v(width + 2.3, 0);
+      const corner = v(0, 0);
+      const others = [v(width, 0), v(width, length), v(0, length)];
+      const volume = shortAround ? String(3 * side ** 2) : `${36 * side}π`;
+      return {
+        els: [
+          { k: "poly", ps: [corner, ...others], fill: "b", tone: "b", thin: true },
+          seg(corner, shortAround ? others[2] : others[0], { tone: "a", bold: true }),
+          txt(v(width / 2, 0), "12π cm", "s", { small: true, tone: "ink" }),
+          txt(v(0, length / 2), `${side} cm`, "w", { small: true, tone: "ink" }),
+          ...cylinder(O, radius * scale, height * scale, "ink"),
+          seg(O, add(O, v(radius * scale, 0)), { tone: "a" }),
+        ],
+        readout: [
+          `Çevre ${shortAround ? side : "12π"} cm. Yarıçap ${shortAround ? `${side}/(2π)` : "6"} cm. Yükseklik ${shortAround ? "12π" : side} cm.`,
+          `Yan alan ${12 * side}π cm². Bu sarımın hacmi ${volume} cm³.`,
+          `Hacim oranı V₁/V₂ = 12π/${side}${side === 8 ? " = 3π/2" : ""}.`,
+        ],
+      };
+    },
+  },
   "Silindirin açınımı bir dikdörtgen ve iki dairedir": {
     caption: "h = 4. Yarıçapı değiştir: yan yüz açılınca eni 2πr, boyu h olan dikdörtgen olur; iki taban daire eklenir.",
     alt: "Ortada uzun dikdörtgen, üstünde ve altında birer daire: silindirin açınımı.",

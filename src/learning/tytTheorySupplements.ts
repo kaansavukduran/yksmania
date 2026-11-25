@@ -187,6 +187,26 @@ export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupple
     ],
     summary: "İlk eğim +6, ikinci −2 L/saat. 4. saatte 28 L. Bütün aralık 6/5=1,2 L/saat.",
   }],
+  "carpanlara-ayirma": [{
+    title: "x² yerine u yazarak dört kökü bul",
+    figureTitle: "x² yerine u yazarak dört kökü bul",
+    paragraphs: [
+      "x⁴−5x²+4 ifadesinde u=x² yazınca (u−1)(u−4) elde edilir. u=1 veya u=4. x²=1 iki işaretli kök −1 ve 1, x²=4 ise −2 ve 2 verir. Grafiğin yatay ekseni bu dört noktada kesilir.",
+      "u bir gerçek sayının karesiyse u≥0 olmalıdır. Yerine koyma adımı, negatif u değerini gerçek x kökü diye yazmayı önler.",
+    ],
+    summary: "u=x² için (u−1)(u−4)=0. x²=1 veya x²=4. Kökler −2, −1, 1 ve 2.",
+    appendSection: true,
+  }],
+  "tyt-geo-silindir-koni-kure-040": [{
+    title: "Kâğıdı iki yönde sar ve hacimleri karşılaştır",
+    figureTitle: "Kâğıdı iki yönde sar ve hacimleri karşılaştır",
+    paragraphs: [
+      "12π×8 dikdörtgende uzun kenar çevre olursa r=6 ve h=8. Hacim π·36·8=288π. Kısa kenar çevre olursa r=4/π ve h=12π. Hacim 192. Oran 288π/192=3π/2.",
+      "Her iki durumda yan alan 96π olur. Tabanların yarıçapı değiştiği için hacim ve kapalı yüzey alanı farklı çıkar. Tabanlar ayrıca eklenir.",
+    ],
+    summary: "12π×8 dikdörtgenin iki sarımı 288π ve 192 cm³ verir. Oran 3π/2, yan alan her ikisinde 96π cm².",
+    appendSection: true,
+  }],
   "kesir-problemleri": [{
     title: "Kalanın kesri yeni bir taban kullanır",
     figureTitle: "Kalanın kesri yeni bir taban kullanır",

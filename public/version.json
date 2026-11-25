@@ -1,8 +1,8 @@
 {
-  "version": "0.175.0",
+  "version": "0.176.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Grafik Problemleri’nde iki farklı eğimin bütün aralığa katkısını karşılaştır. Küpün hacmi korunurken ayrılan parçaların toplam yüzey alanı artsın.",
-    "en": "Compare duration-weighted slopes on a piecewise graph and calculate surface area when a cube becomes separate smaller cubes."
+    "tr": "Çarpanlara Ayırma’da x² yerine u yazarak dört gerçek kökü grafikte gör. Silindir’de aynı dikdörtgenin iki sarımının farklı hacimlerini karşılaştır.",
+    "en": "See four real roots by substituting for x squared and compare the volumes from rolling one rectangular sheet in two directions."
   }
 }

@@ -1,5 +1,5 @@
 import { poly, pt, seg, txt, v, vec, type El, type FigureDef, type Tone, type V } from "./figureKit";
-import { cell, numberLine, pad, rect, zs } from "./mathFigures060TytKit";
+import { cell, nf, numberLine, pad, rect, zs } from "./mathFigures060TytKit";
 
 /*
  * TYT Matematik (Forge060) · çarpanlara ayırma, bilimsel gösterim, kartezyen
@@ -402,12 +402,48 @@ const successiveMagnification: FigureDef = {
   },
 };
 
+const fourthDegreeRoots: FigureDef = {
+  caption: "x’i sürgüyle değiştir. Grafiğin yatay ekseni kestiği noktada en az bir çarpan sıfır olur.",
+  alt: "Grafik y eksenine göre simetrik. Yatay ekseni eksi iki, eksi bir, bir ve iki noktalarında keser. Sürgü seçilen x için eğrideki noktayı gösterir.",
+  param: { label: "x", min: -2.25, max: 2.25, step: 0.25, init: 1 },
+  draw: (x) => {
+    const f = (t: number) => (t ** 2 - 1) * (t ** 2 - 4);
+    const px = (t: number) => 1.58 * t;
+    const py = (y: number) => 0.61 * y;
+    const point = (t: number, y: number) => v(px(t), py(y));
+    const roots = [-2, -1, 1, 2];
+    const curve = Array.from({ length: 91 }, (_, index) => {
+      const t = -2.25 + index * 0.05;
+      return point(t, f(t));
+    });
+    const els: El[] = [
+      vec(point(-2.48, 0), point(2.48, 0), { tone: "ink" }),
+      vec(point(0, -2.65), point(0, 5.1), { tone: "ink" }),
+      txt(point(2.48, 0), "x", "se", { small: true }),
+      txt(point(0, 5.1), "f(x)", "n", { small: true }),
+      poly(curve, { tone: "a", bold: true, open: true }),
+      ...roots.map((r) => pt(point(r, 0), String(r).replace("-", "−"), "s", "b")),
+      seg(point(x, 0), point(x, f(x)), { tone: "muted", dash: true }),
+      pt(point(x, f(x)), undefined, "n", "warn"),
+    ];
+    return {
+      els,
+      readout: [
+        `x = ${nf(x, 2)} için f(x) = ${nf(f(x), 2)}.`,
+        "u=x². u²−5u+4=(u−1)(u−4). x²=1 veya x²=4.",
+        "Kökler −2, −1, 1, 2. Grafikte dört noktada f(x)=0.",
+      ],
+    };
+  },
+};
+
 export const mathFigures060TytAlgebra: Record<string, Record<string, FigureDef>> = {
   "carpanlara-ayirma": {
     "Tam karede uçlar kadar orta terim de önemlidir": perfectSquare,
     "İki kare farkı: toplam ile farkın çarpımı": diffSquares,
     "x²+bx+c için toplam ve çarpımı birlikte ara": sumProduct,
     "Baş katsayı 1 değilse çapraz terimlerin toplamını denetle": crossTerms,
+    "x² yerine u yazarak dört kökü bul": fourthDegreeRoots,
   },
   "bilimsel-gosterim-katsayi": {
     "Virgülün yeri ile üs birlikte hareket eder": commaHops,

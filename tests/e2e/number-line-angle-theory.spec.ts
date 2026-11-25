@@ -1269,3 +1269,48 @@ test("Separating equal cubes preserves volume and adds exposed faces", async ({ 
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Substitution gives four real roots on the plotted polynomial", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "x² yerine u yazarak dört kökü bul");
+  await page.goto("/#/lesson?id=carpanlara-ayirma");
+  await expect(model).toContainText("Kökler −2, −1, 1, 2");
+  const input = model.getByRole("slider", { name: /^x/ });
+  for (const root of [-2, -1, 1, 2]) {
+    await input.fill(String(root));
+    await expect(model).toContainText("için f(x) = 0.");
+  }
+  await input.fill("0");
+  await expect(model).toContainText("x = 0 için f(x) = 4.");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-221");
+  await expect(model).toContainText("Kökler −2, −1, 1, 2");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Two rolls of the same paper keep lateral area and change volume", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-geo-silindir-koni-kure-040";
+  const model = figure(page, "Kâğıdı iki yönde sar ve hacimleri karşılaştır");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto(`/#/lesson?id=${id}`);
+  await expect(model).toContainText("Yan alan 96π cm². Bu sarımın hacmi 288π cm³");
+  await next.press("Enter");
+  await expect(model).toContainText("Yan alan 96π cm². Bu sarımın hacmi 192 cm³");
+  await expect(model).toContainText("12π/8 = 3π/2");
+  await model.getByRole("slider", { name: /Kısa kenar/ }).press("Home");
+  await expect(model).toContainText("Yan alan 48π cm². Bu sarımın hacmi 48 cm³");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${id}`);
+  await next.press("Enter");
+  await expect(model).toContainText("96π cm². Bu sarımın hacmi 192 cm³");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
