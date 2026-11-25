@@ -20,8 +20,8 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: kaansavukduran/yksmania
       BUILD_RUN: ${{ inputs.build_run }}
-      RELEASE_VERSION: "0.189.0"
-      ANDROID_VERSION_CODE: "200"
+      RELEASE_VERSION: "0.194.0"
+      ANDROID_VERSION_CODE: "205"
       INCLUDE_ANDROID: ${{ inputs.include_android }}
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683

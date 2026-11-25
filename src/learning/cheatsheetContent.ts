@@ -1,4 +1,4 @@
-import { tytTheorySupplements } from "./tytTheorySupplements";
+import { theorySupplements } from "./theorySupplements";
 import { probabilitySheet036 } from "./probabilitySource036";
 import { statisticsSource037QuickText } from "./statisticsSource037Revision";
 import { countingSheets034035 } from "./countingSources034035";
@@ -485,7 +485,7 @@ export function studyCheatSheet(topicId: string): CheatSheet | undefined {
     ? studyGuideWithSourceRevisions(lessonId)
     : undefined;
   const sheet = guide ? lessonSheet(lessonId, guide) : storedSheet;
-  const supplements = tytTheorySupplements[lessonId];
+  const supplements = theorySupplements[lessonId];
   if (sheet && supplements) {
     let sections = sheet.sections;
     let examples = sheet.examples;

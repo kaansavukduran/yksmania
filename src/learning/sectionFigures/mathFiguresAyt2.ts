@@ -164,9 +164,49 @@ const rotation: FigureDef = {
   },
 };
 
+const piecewiseDomain: FigureDef = {
+  caption: "x = 1 iki kuralın sınırı. Açık nokta x + 2 kuralının dışarıda kalan ucunu gösterir. Dolu nokta 2x + 2 kuralına göre g(1) değeridir.",
+  alt: "Parçalı grafik. (−2,0) dolu ile (1,3) boş arasında bir doğru parçası. (1,4) dolu ile (3,8) dolu arasında başka doğru parçası. Düşey kesikli çizgi seçilen girdiden geçer.",
+  param: { label: "Girdi x", min: -2, max: 3, step: 0.5, init: 1 },
+  draw: (x) => {
+    const left = (n: number) => n + 2;
+    const right = (n: number) => 2 * n + 2;
+    const value = x < 1 ? left(x) : right(x);
+    const point = (a: number, b: number) => v(a * 1.2, b * 0.52);
+    const open = point(1, left(1));
+    const included = point(1, right(1));
+    const els: El[] = [
+      ...axes(-3.0, 4.35, -0.45, 4.65, "x", "g(x)"),
+      seg(point(x, -0.35), point(x, 8.45), { tone: "muted", dash: true }),
+      seg(point(-2, left(-2)), point(0.91, left(0.91)), { tone: "a", bold: true }),
+      seg(included, point(3, right(3)), { tone: "b", bold: true }),
+      circle(open, 0.12, { tone: "a" }),
+      ball(point(-2, left(-2)), 0.09, "a"),
+      ball(included, 0.105, "b"),
+      ball(point(3, right(3)), 0.105, "b"),
+      circle(point(x, value), 0.18, { tone: "warn" }),
+      txt(v(-3.22, 5.12), "", "c"),
+      txt(v(4.92, -0.8), "", "c"),
+    ];
+    for (const tick of [-2, -1, 0, 1, 2, 3]) {
+      els.push(txt(point(tick, -0.42), fmt(tick).replace("-", "−"), "s", { small: true }));
+    }
+    for (const tick of [2, 4, 6, 8]) {
+      els.push(txt(point(-0.12, tick), String(tick), "w", { small: true }));
+    }
+    return { els, readout: [
+      `x = ${fmt(x).replace("-", "−")} için ${x < 1 ? "x + 2" : "2x + 2"} kullanılır. g(x) = ${fmt(value)}.`,
+      "Sınırda (1, 3) açık, (1, 4) doludur. x = 1 için g(1) = 4.",
+    ] };
+  },
+};
+
 export const mathFiguresAyt2: Record<string, Record<string, FigureDef>> = {
   "ayt-trigonometrik-denklemler": { "Sinüste iki simetrik aileyi kur": sinFamilies },
-  "ayt-fonksiyonlar": { "Grafik noktaları ve iki doğru testi": lineTest },
+  "ayt-fonksiyonlar": {
+    "Grafik noktaları ve iki doğru testi": lineTest,
+    "Parçalı fonksiyonda açık ve dolu ucu ayır": piecewiseDomain,
+  },
   "ayt-diziler": { "Aritmetik toplamı eşleştirerek türet": gauss },
   "ayt-polinomlar": { "Doğrusal bölenin kökü kalanı verir": remainder },
   "ayt-toplam-fark-yarim-aci": { "Dönme, iki koordinatı birlikte değiştirir": rotation },

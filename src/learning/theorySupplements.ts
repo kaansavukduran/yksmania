@@ -19,7 +19,67 @@ interface TheorySupplement {
 
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
-export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+export const theorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "atp-metabolizma": [{
+    title: "ATP’nin parçalarını say, besinle rolünü karıştırma",
+    figureTitle: "ATP’nin parçalarını say, besinle rolünü karıştırma",
+    paragraphs: [],
+    summary: "ATP; adenin, riboz ve üç fosfat taşır. Hidrolizde uç fosfat ayrılır ve ADP ile serbest fosfat (Pi) oluşur.",
+  }, {
+    title: "ATP miktarını sentez ve hidrolizle hesapla",
+    figureTitle: "ATP miktarını sentez ve hidrolizle hesapla",
+    paragraphs: [
+      "Başlangıçta 100 ATP molekülü var. Modelde aynı zaman aralığında 20 ATP sentezleniyor ve 35’i hidrolizleniyor. Tepkimeler için yeterli başlangıç ADP ve fosfatı var. Son ATP 100+20−35=85.",
+      "Her sentez bir ADP ve bir serbest fosfatı kullanır. Her hidroliz birer ADP ve serbest fosfat oluşturur. İkisinin de net artışı 15. Bu iki tepkimeyle sınırlı modelde ATP ve ADP moleküllerinin toplamı korunur.",
+    ],
+    summary: "Son ATP = başlangıç + sentez − hidroliz. 100+20−35=85. ADP ve serbest fosfatın her biri net 15 artar.",
+    appendSection: true,
+  }],
+  "ayt-modern-atom-elektron-dizilimi": [{
+    title: "2p kutularında önce tek elektronları yerleştir",
+    figureTitle: "2p kutularında önce tek elektronları yerleştir",
+    paragraphs: [
+      "Her kutu bir orbital, her ok bir elektrondur. 2p alt kabuğunda mₗ değerleri −1, 0 ve +1 olan üç orbital bulunur. Hund kuralına göre eş enerjili kutular önce aynı spinli birer elektron alır.",
+      "Azot: 1s² 2s² 2p³, üç eşleşmemiş elektron. Oksijen: 1s² 2s² 2p⁴, ilk üçü ayrı kutularda, dördüncü elektron bir kutuda zıt spinle eşleşir. İki eşleşmemiş elektron kalır. Eş enerjili kutularda çiftin gösterildiği yer çizim tercihidir.",
+    ],
+    summary: "N: 2p³ kutu dolulukları 1,1,1 ve üç eşleşmemiş elektron. O: 2p⁴ doluluklar 2,1,1 ve iki eşleşmemiş elektron. Bir kutudaki eşleşmede spinler zıttır.",
+    appendSection: true,
+  }],
+  "vektorler": [{
+    title: "Bileşen işaretini bölgeden bul",
+    figureTitle: "Bileşen işaretini bölgeden bul",
+    paragraphs: [],
+    summary: "+x yönünde 3 N ve +y yönünde 4 N bileşke 5 N verir. +x’ten ölçülen açı yaklaşık 53,1°.",
+  }, {
+    title: "Üç kuvveti ekle ve dengeleyiciyi çiz",
+    figureTitle: "Üç kuvveti ekle ve dengeleyiciyi çiz",
+    paragraphs: [
+      "A=(6;0) N. B, +x ekseninden saat yönünün tersine 120° ve büyüklüğü 4 N. B’nin yatay bileşeni 4·cos120°=−2 N, düşey bileşeni 4·sin120°=2√3 N. C=(0;−2√3) N.",
+      "A, B ve C’yi uç uca ekle. Yatay toplam 6−2=4 N, düşey toplam 2√3−2√3=0 N. R=(4;0) N. Dengeleyici D=(−4;0) N. C değişirse R ve D’yi yeni düşey toplamdan çıkar.",
+    ],
+    summary: "A=(6;0), B=(−2;2√3), C=(0;−2√3). R=(4;0) ve D=(−4;0) N. Her iki eksende R+D=0.",
+    appendSection: true,
+  }],
+  "dogrunun-analitigi": [{
+    title: "Paralel doğruların dik uzaklığını bul",
+    figureTitle: "Paralel doğruların dik uzaklığını bul",
+    paragraphs: [
+      "2x−y+3=0 ve 2x−y−3=0 doğruları aynı x ve y katsayılarına sahip. İkinci denkleme birinci doğru üzerindeki P(0;3) noktasını yazınca −6 elde edilir. Mutlak değeri 6, normal vektörü (2;−1) ve uzunluğu √5. Dik uzaklık 6/√5 birim.",
+      "P’den ikinci doğruya inen dik ayağı işaretle: H(2,4;1,8). 2·2,4−1,8−3=0 olduğu için H ikinci doğru üzerindedir. Sabitleri eşitlersen iki doğru çakışır. Katsayılar farklı ölçekte yazılmışsa uzaklık hesabından önce denklemleri aynı ölçeğe getir.",
+    ],
+    summary: "2x−y±3=0 doğrularının dik uzaklığı |3−(−3)|/√(2²+(−1)²)=6/√5. Dik ayak H(2,4;1,8). Sabitler eşitse uzaklık sıfır.",
+    appendSection: true,
+  }],
+  "ayt-fonksiyonlar": [{
+    title: "Parçalı fonksiyonda açık ve dolu ucu ayır",
+    figureTitle: "Parçalı fonksiyonda açık ve dolu ucu ayır",
+    paragraphs: [
+      "Girdinin hangi aralığa ait olduğunu belirle. −2≤x<1 için g(x)=x+2. 1≤x≤3 için g(x)=2x+2. Birinci kuraldan hesaplanan (1,3), x=1 bu aralığın dışında kaldığından açık işaretlenir.",
+      "İkinci aralık x=1’i içerir. g(1)=2·1+2=4 ve (1,4) doludur. Aynı düşey doğru sınırda tek dolu noktaya denk gelir. Diğer örnekler: g(0)=2, g(2)=6. Tanım kümesi [−2,3].",
+    ],
+    summary: "−2≤x<1 için x+2, 1≤x≤3 için 2x+2. x=1 sınırında (1,3) açık, (1,4) dolu, g(1)=4.",
+    appendSection: true,
+  }],
   "doga-insan-cografya": [{
     title: "Aynı akarsuyu üç farklı soruyla incele",
     figureTitle: "Aynı akarsuyu üç farklı soruyla incele",

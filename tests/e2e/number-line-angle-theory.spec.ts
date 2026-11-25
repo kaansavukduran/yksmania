@@ -2102,3 +2102,127 @@ test("Three knowledge routes agree with the evidence table", async ({ page, cont
   }
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("AYT piecewise graph includes only the filled boundary point", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Parçalı fonksiyonda açık ve dolu ucu ayır");
+  for (const route of ["/#/lesson?id=ayt-fonksiyonlar", "/#/cheatsheets?topic=detail-463"]) {
+    await page.goto(route);
+    await expect(model).toContainText("x = 1 için 2x + 2 kullanılır. g(x) = 4.");
+    const image = model.getByRole("img");
+    const open = image.locator("circle.sf-nofill").first();
+    const filled = image.locator("circle.sf-ball").nth(1);
+    await expect(open).toBeVisible();
+    await expect(filled).toBeVisible();
+    expect(await open.getAttribute("cx")).toEqual(await filled.getAttribute("cx"));
+    expect(Number(await open.getAttribute("cy"))).toBeGreaterThan(Number(await filled.getAttribute("cy")));
+    const input = model.getByRole("slider", { name: /Girdi x/ });
+    await input.press("ArrowLeft");
+    await expect(model).toContainText("x = 0,5 için x + 2 kullanılır. g(x) = 2,5.");
+    await input.press("Home");
+    await expect(model).toContainText("x = −2 için x + 2 kullanılır. g(x) = 0.");
+    await input.press("End");
+    await expect(model).toContainText("x = 3 için 2x + 2 kullanılır. g(x) = 8.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("AYT parallel separation follows the perpendicular foot and reaches zero", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Paralel doğruların dik uzaklığını bul");
+  for (const route of ["/#/lesson?id=dogrunun-analitigi", "/#/cheatsheets?topic=detail-404"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Dik ayak H(2,4; 1,8).");
+    await expect(model).toContainText("Uzaklık 6/√5 ≈ 2,68 birim.");
+    const input = model.getByRole("slider", { name: /İkinci doğrunun sabit terimi/ });
+    await input.press("End");
+    await expect(model).toContainText("Doğrular çakışır, uzaklık 0 birim.");
+    await expect(model).toContainText("Dik ayak H(0; 3).");
+    await input.press("ArrowLeft");
+    await expect(model).toContainText("Dik ayak H(0,4; 2,8).");
+    await expect(model).toContainText("Uzaklık 1/√5 ≈ 0,45 birim.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("AYT three vectors add and balance their signed components", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Üç kuvveti ekle ve dengeleyiciyi çiz");
+  for (const route of ["/#/lesson?id=vektorler", "/#/cheatsheets?topic=detail-358"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Düşey toplam 0 N. R = (4; 0) N.");
+    const prior = figure(page, "Bileşen işaretini bölgeden bul");
+    await prior.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(prior).toContainText("θ = 53,1°");
+    const slider = model.getByRole("slider", { name: /C’nin düşey bileşeni/ });
+    await slider.press("End");
+    await expect(model).toContainText("Düşey toplam 2√3 N. R = (4; 2√3) N.");
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await slider.press("End");
+    await expect(model).toContainText("D = (−4; −2√3) N. R + D = (0; 0) N.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("AYT p orbital arrows pair only after three single electrons", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "2p kutularında önce tek elektronları yerleştir");
+  for (const route of ["/#/lesson?id=ayt-modern-atom-elektron-dizilimi", "/#/cheatsheets?topic=detail-408"]) {
+    await page.goto(route);
+    const image = model.getByRole("img");
+    await expect(model).toContainText("Kutu dolulukları 1, 1, 1. 2p’de 3 elektron, 3 eşleşmemiş elektron.");
+    await expect(image.locator("polyline.sf-head")).toHaveCount(3);
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("Kutu dolulukları 2, 1, 1. 2p’de 4 elektron, 2 eşleşmemiş elektron.");
+    await expect(image.locator("polyline.sf-head")).toHaveCount(4);
+    expect(await image.locator("line").evaluateAll((lines) =>
+      lines.map((line) => Number(line.getAttribute("y2")) < Number(line.getAttribute("y1"))))
+    ).toEqual([true, false, true, true]);
+    await checkFrame(page, model);
+  }
+  await page.goto("/#/lesson?id=ayt-modern-atom-elektron-dizilimi");
+  const prior = figure(page, "Cr ve Cu: doğrulanmış iki istisna");
+  await prior.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await expect(prior).toContainText("Gerçek Cr: 4s¹ 3d⁵");
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("AYT ATP pool keeps synthesis and hydrolysis separate", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "ATP miktarını sentez ve hidrolizle hesapla");
+  for (const route of ["/#/lesson?id=atp-metabolizma", "/#/cheatsheets?topic=detail-283"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Son ATP = 100 + 20 − 35 = 85 molekül.");
+    await expect(model).toContainText("net değişim +15 adet.");
+    const structure = figure(page, "ATP’nin parçalarını say, besinle rolünü karıştırma");
+    await structure.getByRole("button", { name: "γ fosfat", exact: true }).press("Enter");
+    await expect(structure).toContainText("Uç fosfat: hidrolizde ayrılır, ATP + H₂O → ADP + Pi.");
+    const slider = model.getByRole("slider", { name: /Hidrolizlenen ATP/ });
+    await slider.press("Home");
+    await expect(model).toContainText("Son ATP = 100 + 20 − 0 = 120 molekül.");
+    await expect(model).toContainText("net değişim −20 adet.");
+    await slider.press("End");
+    await expect(model).toContainText("Son ATP = 100 + 20 − 60 = 60 molekül.");
+    await expect(model).toContainText("net değişim +40 adet.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});

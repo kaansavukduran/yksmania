@@ -168,6 +168,42 @@ const daniell: FigureDef = {
   },
 };
 
+function orbitalBox(x: number, electrons: number, tone: Tone): El[] {
+  const els = [poly([v(x, 0), v(x + 0.9, 0), v(x + 0.9, 1.1), v(x, 1.1)], { tone: "ink", thin: true })];
+  if (electrons >= 1) els.push(vec(v(x + 0.3, 0.15), v(x + 0.3, 0.95), { tone, bold: true }));
+  if (electrons >= 2) els.push(vec(v(x + 0.6, 0.95), v(x + 0.6, 0.15), { tone, bold: true }));
+  return els;
+}
+
+function hundOccupancy(electrons: number, orbitalCount: number): number[] {
+  return Array.from({ length: orbitalCount }, (_, i) =>
+    Number(electrons > i) + Number(electrons > orbitalCount + i));
+}
+
+const pOrbitalPairs: FigureDef = {
+  caption: "Eş enerjili üç 2p orbitalini önce birer elektronla doldur. Oksijendeki dördüncü elektron bir kutuda zıt spinle eşleşir.",
+  alt: "Yan yana üç 2p orbital kutusu. Azotta her kutuda bir yukarı ok. Oksijende ilk kutuda yukarı ve aşağı ok, diğer ikisinde birer yukarı ok.",
+  steps: ["Azot 2p³", "Oksijen 2p⁴"],
+  draw: (_, step) => {
+    const count = 3 + step;
+    const occupancy = hundOccupancy(count, 3);
+    const unpaired = occupancy.filter((n) => n === 1).length;
+    const els = [
+      ...occupancy.flatMap((n, i) => [
+        ...orbitalBox(i * 1.45, n, "b"),
+        txt(v(i * 1.45 + 0.45, -0.1), ["mₗ = −1", "mₗ = 0", "mₗ = +1"][i], "s", { small: true }),
+      ]),
+      txt(v(1.9, 1.5), step === 0 ? "N · 2p³" : "O · 2p⁴", "n", { small: true, bold: true }),
+      txt(v(-0.45, 2.0), "", "c"),
+      txt(v(4.4, -0.67), "", "c"),
+    ];
+    return { els, readout: [
+      `Kutu dolulukları ${occupancy.join(", ")}. 2p’de ${count} elektron, ${unpaired} eşleşmemiş elektron.`,
+      "Pauli: bir kutudaki çiftin spinleri zıttır. Hund: eş enerjili kutulara önce birer elektron yerleşir.",
+    ] };
+  },
+};
+
 /* ---------- 5. Cr ve Cu istisnası ---------- */
 const exception: FigureDef = {
   caption:
@@ -183,19 +219,10 @@ const exception: FigureDef = {
     ];
     const c = configs[step];
     const els: El[] = [];
-    const box = (x: number, n: number, tone: Tone) => {
-      els.push(poly([v(x, 0), v(x + 0.9, 0), v(x + 0.9, 1.1), v(x, 1.1)], { tone: "ink", thin: true }));
-      if (n >= 1) els.push(vec(v(x + 0.3, 0.15), v(x + 0.3, 0.95), { tone, bold: true }));
-      if (n >= 2) els.push(vec(v(x + 0.6, 0.95), v(x + 0.6, 0.15), { tone, bold: true }));
-    };
     const tone: Tone = c.real ? "c" : "muted";
-    box(0, c.s, tone);
+    els.push(...orbitalBox(0, c.s, tone));
     els.push(txt(v(0.45, 0), "4s", "s", { tone: "ink", small: true, bold: true }));
-    // 3d: fill singly first (Hund), then pair.
-    for (let i = 0; i < 5; i++) {
-      const n = c.d >= 5 + i + 1 ? 2 : c.d > i ? 1 : 0;
-      box(1.6 + i * 0.95, n, tone);
-    }
+    hundOccupancy(c.d, 5).forEach((n, i) => els.push(...orbitalBox(1.6 + i * 0.95, n, tone)));
     els.push(txt(v(1.6 + 2 * 0.95 + 0.45, 0), "3d", "s", { tone: "ink", small: true, bold: true }));
     els.push(txt(v(3.4, 1.4), c.label, "n", { tone: c.real ? "c" : "ink", small: true, bold: true }));
     els.push(txt(v(-0.4, 2.4), " ", "c"), txt(v(6.6, -0.9), " ", "c"));
@@ -214,5 +241,8 @@ export const chemistryFiguresAyt: Record<string, Record<string, FigureDef>> = {
   "kimyasal-denge": { "Derişim grafiğinde önce etki anını bul": disturb },
   "ayt-titrasyon": { "Eğrinin eksenlerini oku": titration },
   "elektrokimyasal-piller": { "Galvanik pilde kutuplar ve dış devre": daniell },
-  "ayt-modern-atom-elektron-dizilimi": { "Cr ve Cu: doğrulanmış iki istisna": exception },
+  "ayt-modern-atom-elektron-dizilimi": {
+    "Cr ve Cu: doğrulanmış iki istisna": exception,
+    "2p kutularında önce tek elektronları yerleştir": pOrbitalPairs,
+  },
 };

@@ -90,6 +90,43 @@ const addition: FigureDef = {
   },
 };
 
+const threeVectorBalance: FigureDef = {
+  caption: "Üç kuvveti uç uca ekle. Yatay ve düşey bileşenleri ayrı topla. Dengeleyici, bileşke ile aynı büyüklükte ve ters yönde olur.",
+  alt: "A pozitif x boyunca 6 N. B sola ve yukarı, C aşağı yönlü. İlk adım üç oku uç uca gösterir. İkinci adım bileşkeyi ve zıt yönlü dengeleyiciyi ortak başlangıçtan çizer.",
+  steps: ["Uç uca ekle", "Dengeleyiciyi göster"],
+  param: { label: "C’nin düşey bileşeni (√3 N)", min: -3, max: 0, step: 1, init: -2 },
+  draw: (c, step) => {
+    const root = Math.sqrt(3);
+    const origin = v(0, 0), a = v(6, 0), b = v(-2, 2 * root);
+    const afterB = v(a[0] + b[0], b[1]);
+    const vertical = 2 + c;
+    const result = v(afterB[0], vertical * root);
+    const balance = v(-result[0], -result[1]);
+    const yTerm = (coefficient: number) => coefficient === 0 ? "0" : `${nf(coefficient)}√3`;
+    const els: El[] = [
+      ...plane(-4.9, 7.0, -4.25, 4.45),
+      ...pad(-5.3, 4.85, 7.5, -4.62),
+    ];
+    if (step === 0) {
+      els.push(vec(origin, a, { tone: "a", bold: true }), txt(v(3, -0.23), "A", "s", { small: true, bold: true }));
+      els.push(vec(a, afterB, { tone: "b", bold: true }), txt(v(5.35, 2), "B", "e", { small: true, bold: true }));
+      if (c !== 0) {
+        els.push(vec(afterB, result, { tone: "c", bold: true }));
+        els.push(txt(v(3.8, (afterB[1] + result[1]) / 2), "C", "w", { small: true, bold: true }));
+      }
+      els.push(pt(result, undefined, "n", "warn"));
+    } else {
+      els.push(vec(origin, result, { tone: "a", bold: true }), vec(origin, balance, { tone: "warn", dash: true, bold: true }));
+      els.push(txt(v(result[0] * 0.72, result[1] * 0.72), "R", "s", { small: true, bold: true }));
+      els.push(txt(v(balance[0] * 0.72, balance[1] * 0.72), "D", "n", { small: true, bold: true }));
+    }
+    return { els, readout: [
+      `Yatay toplam 6 − 2 = 4 N. Düşey toplam ${yTerm(vertical)} N. R = (4; ${yTerm(vertical)}) N.`,
+      ...(step === 1 ? [`D = (−4; ${yTerm(-vertical)}) N. R + D = (0; 0) N.`] : []),
+    ] };
+  },
+};
+
 const DA: V = v(2, -3), DB: V = v(-1, 4);
 const subtraction: FigureDef = {
   caption:
@@ -489,6 +526,7 @@ const vtArea: FigureDef = {
 export const physicsFigures058Kinematics: Record<string, Record<string, FigureDef>> = {
   vektorler: {
     "Bileşen işaretini bölgeden bul": components,
+    "Üç kuvveti ekle ve dengeleyiciyi çiz": threeVectorBalance,
     "Toplamı uçlarla ve sayılarla kur": addition,
     "Çıkarma, ters vektörü eklemektir": subtraction,
     "Açı, bileşkenin mümkün aralığını belirler": angleRange,

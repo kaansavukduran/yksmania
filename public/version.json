@@ -1,8 +1,8 @@
 {
-  "version": "0.189.0",
+  "version": "0.194.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Aynı akarsuda farklı coğrafya soruları sor, felsefede iki paylaştırma ilkesini karşılaştır ve bilgi yollarını somut kanıtlarıyla incele.",
-    "en": "Explore three questions about one river, compare two rules for sharing, and examine the evidence behind three ways of knowing."
+    "tr": "AYT Biyolojide ATP’nin parçalarını incele ve başlangıç, sentez ve hidrolizden son ATP miktarını aynı ölçekli modelle hesapla.",
+    "en": "Inspect ATP parts and calculate final ATP from the starting amount, synthesis, and hydrolysis on one shared scale."
   }
 }
