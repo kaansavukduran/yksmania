@@ -92,6 +92,45 @@ const shellCount: FigureDef = {
   },
 };
 
+const filteredShellCapacity: FigureDef = {
+  caption: "Kutular orbitalleri gösterir. Oklar seçilen koşulda izinli spin durumlarını saydırır. Bunlar bir atomun gerçek elektron dizilimi değil, kapasite hesabıdır.",
+  alt: "Her alt kabuk bir satır. Kutuların altında mℓ değerleri var. Koşul değiştikçe seçilen kutularda yukarı veya aşağı oklar görünür.",
+  steps: ["Tüm durumlar", "Yalnız mℓ = 0", "Yalnız spin +½", "İki koşul birlikte"],
+  param: { label: "Katman numarası n", min: 1, max: 4, step: 1, init: 3, plain: true },
+  draw: (n, step) => {
+    const restrictOrbital = step === 1 || step === 3;
+    const oneSpin = step >= 2;
+    const els: El[] = [];
+    let orbitalCount = 0;
+    let capacity = 0;
+    const width = 0.86;
+    for (let l = 0; l < n; l++) {
+      const y = 3.7 - l * 1.27;
+      els.push(txt(v(0.72, y + 0.38), `${n}${SUB[l]}`, "w", { small: true, bold: true }));
+      for (let m = -l; m <= l; m++) {
+        const x = 1 + width * (m + l);
+        const enabled = !restrictOrbital || m === 0;
+        const spins = enabled ? (oneSpin ? 1 : 2) : 0;
+        orbitalCount += Number(enabled);
+        capacity += spins;
+        boxes(els, x, y, 1, spins, "c", width);
+        els.push(txt(v(x + width / 2, y - 0.07), String(m).replace("-", "−"), "s", { small: true, tone: "muted" }));
+      }
+    }
+    els.push(...pad(-0.32, 4.84, 7.35, -0.85));
+    return {
+      els,
+      readout: [
+        `n = ${n}: ${orbitalCount} uygun orbital, en çok ${capacity} elektron.`,
+        restrictOrbital
+          ? "Her alt kabukta mℓ = 0 olan bir orbital seçilir."
+          : `${Array.from({ length: n }, (_, l) => 2 * l + 1).join(", ")} kutu seçili alt kabukların orbital sayılarını verir.`,
+        oneSpin ? "Her seçili orbitale en fazla bir +½ spin sığar." : "Her seçili orbitale iki zıt spin sığar.",
+      ],
+    };
+  },
+};
+
 /* ---------- ayt-periyodik-sistem-atom-capi ---------- */
 
 /** Katman modeli: çekirdek ve iç içe katmanlar; r dış katman yarıçapı. */
@@ -182,6 +221,7 @@ export const chemistryFigures059Atom: Record<string, Record<string, FigureDef>> 
     "l: katmanın içindeki alt kabuk": allowedL,
     "Bir alt kabuğu say": subshell,
     "Bir katmanı say": shellCount,
+    "Katmanda orbital ve spin koşulunu birlikte say": filteredShellCapacity,
   },
   "ayt-periyodik-sistem-atom-capi": {
     "Aynı periyotta genel küçülme": period,

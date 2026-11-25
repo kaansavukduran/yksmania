@@ -2287,3 +2287,30 @@ test("Relative motion uses the same time for both positions even when paths cros
   }
   expect(learning(await storage(page))).toEqual(before);
 });
+
+
+test("Orbital and spin filters count capacity from the same shell boxes", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Katmanda orbital ve spin koşulunu birlikte say");
+  for (const route of ["/#/lesson?id=ayt-kuantum-sayilari", "/#/cheatsheets?topic=detail-409"]) {
+    await page.goto(route);
+    const chart = model.getByRole("img");
+    await expect(chart).toBeVisible();
+    const next = model.getByRole("button", { name: "İleri", exact: true });
+    for (const [orbitals, count] of [[9, 18], [3, 6], [9, 9], [3, 3]]) {
+      await expect(model).toContainText(`n = 3: ${orbitals} uygun orbital, en çok ${count} elektron.`);
+      await expect(chart.locator("polyline.sf-head")).toHaveCount(count);
+      if (count !== 3) await next.press("Enter");
+    }
+    const shell = model.getByRole("slider", { name: /Katman numarası n/ });
+    await shell.press("End");
+    await expect(model).toContainText("n = 4: 4 uygun orbital, en çok 4 elektron.");
+    await expect(chart.locator("polyline.sf-head")).toHaveCount(4);
+    await expect(chart.locator("text").filter({ hasText: /^4f$/ })).toBeVisible();
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
