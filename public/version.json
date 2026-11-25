@@ -1,8 +1,8 @@
 {
-  "version": "0.199.0",
+  "version": "0.200.0",
   "channel": "alpha",
   "notes": {
-    "tr": "AYT Biyolojide tek mayozun dört ürününü ve bu ürünlerde kaç genotip bulunduğunu ayrı say. İki yönelimi karşılaştırıp bütün olası genotipleri çizimde gör.",
-    "en": "Count the four products of one meiosis and the number of genotypes separately, then compare orientations to find the full set of possible genotypes."
+    "tr": "İlk açılışta çevrimdışı hazırlık bir dosyada yarıda kalırsa uygulama aynı sayfada en fazla iki kez yeniden dener. Bağlantı dalgalansa da yeniden yüklemeden çevrimdışı kullanıma geçebilirsin.",
+    "en": "If offline preparation stops on one file at first launch, the app retries up to twice on the same page, so it can become available offline without a reload."
   }
 }

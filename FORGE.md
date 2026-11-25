@@ -1,3 +1,9 @@
+# İlk çevrimdışı kurulum hatasından aynı sayfada dönüş · 0.200.0 adayı
+
+0.194.0 ve 0.197.0 ana dal CI koşularında iki ayrı çevrimdışı testte service worker hiç etkinleşmedi; aynı ağaç PR ve elle tetiklenen koşularda geçti. `register()` ön bellek kurulumu bitmeden başarılı döner. 328 dosyalık kurulumdan biri düşünce işçi `redundant` olur, kayıt hatası gelmez ve 0.99'daki yeniden deneme çalışmaz.
+
+Yeni kod bu durumu aynı sınırlı yeniden denemeye bildirir: aynı sayfada en fazla iki kez, çevrimdışıysa bağlantıyı bekleyerek. Bir CSS dosyası ilk kurulumda bir kez 404 verince eski derleme takıldı, yeni derleme yeniden yüklemeden çevrimdışı açıldı. Kalıcı hatada üç kurulumdan sonra durur ve kayıtlar yazılmaya devam eder. Süreler ve mevcut kabul adımları değişmedi.
+
 # Tek mayozun ürünleri ve türleri · 0.199.0 adayı
 
 AYT Biyolojide dört gamet paneli her üründeki iki ayrı kromozomu gösterir. Parça değişimi olmayan bağımsız AaBb örneğinde iki kutup yöneliminin her biri dört ürün ve iki tür verir. İki yönelimin toplam olasılık havuzunda dört tür bulunur. Ders ve ayrı Kopya Kağıdı aynı modeli açar.
