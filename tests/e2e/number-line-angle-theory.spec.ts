@@ -1601,3 +1601,61 @@ test("Changing the labelled triangle base changes height but keeps area offline"
   }
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("The same return can yield six meters travelled and zero displacement", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const picture = figure(page, "Geri dönüşte yolu ve yer değiştirmeyi ayır");
+  for (const route of ["/#/lesson?id=fizik-bilimine-giris", "/#/cheatsheets?topic=detail-114"]) {
+    await page.goto(route);
+    await expect(picture).toContainText("Alınan yol 3 + 3 = 6 m");
+    await expect(picture).toContainText("Yer değiştirme 3 − 3 = 0 m");
+    const west = picture.getByRole("slider", { name: /Batıya gidilen mesafe/ });
+    await west.press("End");
+    await expect(picture).toContainText("Alınan yol 3 + 4 = 7 m");
+    await expect(picture).toContainText("Yer değiştirme 3 − 4 = −1 m");
+    await checkFrame(page, picture);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The closed system table counts twelve and eight grams together", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const table = page.getByRole("table").filter({ hasText: "Terazinin kapsadığı" });
+  const picture = figure(page, "Kütleyi hangi sistemde ölçtüğünü belirle");
+  for (const route of ["/#/lesson?id=simyadan-kimyaya", "/#/cheatsheets?topic=detail-139"]) {
+    await page.goto(route);
+    const closed = table.getByRole("row").filter({ has: page.getByRole("cell", { name: "Kapalı", exact: true }) });
+    await expect(closed.getByRole("cell", { name: "Bütün 12 g A ve 8 g B", exact: true })).toBeVisible();
+    await expect(closed.getByRole("cell", { name: "Kap hariç ürün 20 g", exact: true })).toBeVisible();
+    await expect(picture).toContainText("toplam 148 g");
+    await picture.getByRole("slider").press("End");
+    await expect(picture).toContainText("gösterge 144 g");
+    await checkFrame(page, picture);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The cell table shows ribosomes in both normal cell plans offline", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const table = page.getByRole("table").filter({ hasText: "Tipik prokaryot" });
+  const picture = figure(page, "İki farklı sınıflama ekseni");
+  for (const route of ["/#/lesson?id=canli-ozellikleri", "/#/cheatsheets?topic=detail-1"]) {
+    await page.goto(route);
+    const row = table.getByRole("row").filter({ has: page.getByRole("cell", { name: "Ribozom", exact: true }) });
+    await expect(row.getByRole("cell", { name: "Var, zarsız", exact: true })).toHaveCount(2);
+    await expect(picture).toContainText("zarsız ribozom vardır.");
+    await picture.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(picture).toContainText("DNA çift zarlı çekirdekte");
+    await checkFrame(page, picture);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});

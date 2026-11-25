@@ -17,6 +17,49 @@ interface TheorySupplement {
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "fizik-bilimine-giris": [{
+    title: "Geri dönüşte yolu ve yer değiştirmeyi ayır",
+    figureTitle: "Geri dönüşte yolu ve yer değiştirmeyi ayır",
+    paragraphs: [
+      "Konum, seçilen başlangıca göre nerede olduğunu söyler. 0’dan 3 m doğuya gidip 3 m batıya dönersen yine 0’dasın. Yol, iki parça uzunluğunun toplamıdır: 6 m. Yer değiştirme, son konum eksi başlangıç konumudur: 0 m.",
+      "Doğuyu pozitif seçtiğinde 4 m batıya dönersen son konum −1 m olur ve toplam yol 7 m olur. Ortalamaları çıkarmak için toplam süreyi ayrıca bilmen gerekir. Aynı m/s birimi kullanılsa da ortalama süratin payı yol, ortalama hızın payı yer değiştirmedir.",
+    ],
+    summary: "3 m doğu, 3 m batı. Alınan yol 6 m. Başlangıca dönüldüğü için yer değiştirme 0 m.",
+    appendSection: true,
+  }],
+  "simyadan-kimyaya": [{
+    title: "Kütleyi hangi sistemde ölçtüğünü belirle",
+    figureTitle: "Kütleyi hangi sistemde ölçtüğünü belirle",
+    paragraphs: [
+      "Kapalı kaptaki 12 g A ve 8 g B tek bir ürüne tamamen dönüşüyorsa ürün 20 g olur. Her iki tartımda aynı kabın darası çıkarılır. Çizimde başka bir başlangıç kütlesiyle aynı sistem sınırı kuralını denetle.",
+    ],
+    summary: "Dara sabitken ve madde çıkışı yokken 12 g + 8 g = 20 g. Gaz çıkarsa yalnız kapta kalan kütle daha az ölçülebilir.",
+    table: {
+      headers: ["Sistem", "Terazinin kapsadığı", "Çıkarım"],
+      rows: [
+        ["Kapalı", "Bütün 12 g A ve 8 g B", "Kap hariç ürün 20 g"],
+        ["Açık, gaz çıkıyor", "Yalnız içeride kalanlar", "Çıkan gaz dahil toplam madde kütlesi 20 g"],
+      ],
+      layout: "table",
+    },
+  }],
+  "canli-ozellikleri": [{
+    title: "İki farklı sınıflama ekseni",
+    figureTitle: "İki farklı sınıflama ekseni",
+    paragraphs: [
+      "Şema tipik hücre planını gösterir. İnsan alyuvarının olgunlaşırken çekirdeğini ve ribozomlarını kaybetmesi onu prokaryot yapmaz. Örnek hücrenin yapısı ile canlının genel hücre planını ayrı düşün.",
+    ],
+    summary: "Çekirdek zarının bulunmaması ribozomun yokluğu demek değildir. Ribozom zarsızdır. Maya tek hücreli bir ökaryottur.",
+    table: {
+      headers: ["Yapı", "Tipik prokaryot", "Tipik ökaryot"],
+      rows: [
+        ["DNA’nın yeri", "Sitoplazmadaki DNA bölgesi", "Zarla çevrili çekirdek"],
+        ["Ribozom", "Var, zarsız", "Var, zarsız"],
+        ["Mitokondri", "Yok", "Bu hücre planında bulunabilir"],
+      ],
+      layout: "table",
+    },
+  }],
   "temel-kavramlar": [{
     title: "Sayı kümelerinde önce değeri hesapla",
     figureTitle: "Sayı kümelerinde önce değeri hesapla",
