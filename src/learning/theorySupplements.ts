@@ -20,6 +20,17 @@ interface TheorySupplement {
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const theorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "bagil-hareket": [{
+    title: "Yollar kesişse de zamanı karşılaştır",
+    figureTitle: "Yollar kesişse de zamanı karşılaştır",
+    paragraphs: [
+      "Yere göre A, (0; 0) m noktasından (3; 1) m/s ile gider. B, (12; 8) m noktasından (0; −1) m/s ile iner. t saniyede A(3t; t), B(12; 8−t) olur. Buluşmak için iki koordinatı aynı t’de eşitle.",
+      "Yatayda 3t=12, düşeyde t=8−t. Her ikisi t=4 s verir ve ortak konum (12; 4) m olur. B’nin ilk y’si 9 m olursa yatay eşitlik yine 4 s, düşey eşitlik 4,5 s ister. 4 s’de A(12; 4), B(12; 5) konumundadır.",
+      "İkinci durumda iki yol (12; 4) noktasından geçer. A t=4 s’de, B t=5 s’de oradadır. Aynı nokta ve aynı an koşullarını ayrı kontrol et.",
+    ],
+    summary: "A(3t; t), B(12; 8−t) için iki eşitlik de t=4 s ve (12; 4) m verir. B(12; 9−t) olursa eşitlikler 4 s ve 4,5 s ister, buluşma olmaz.",
+    appendSection: true,
+  }],
   "ayt-polinomlar": [{
     title: "İkinci derece bölenin iki köküyle kalanı kur",
     figureTitle: "İkinci derece bölenin iki köküyle kalanı kur",
