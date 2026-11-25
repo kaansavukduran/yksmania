@@ -20,6 +20,67 @@ interface TheorySupplement {
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "doga-insan-cografya": [{
+    title: "Aynı akarsuyu üç farklı soruyla incele",
+    figureTitle: "Aynı akarsuyu üç farklı soruyla incele",
+    paragraphs: [
+      "Önce araştırmacının neyi ölçtüğünü sor. Aylık akım değişimi suya, kıyı bitkilerinin dağılışı canlılara, tarım parsellerinin konumu ekonomik yaşama ilişkin veri ister.",
+      "Hepsi aynı akarsuda araştırılabilir. Su akımı için hidrografyayı, bitki dağılışı için biyocoğrafyayı, tarımsal etkinliğin konumu için ekonomik coğrafyayı seç.",
+    ],
+    summary: "Aynı akarsuda akım → hidrografya, bitki dağılışı → biyocoğrafya, kıyıdaki tarımsal kullanım → ekonomik coğrafya. Alt dalı ölçülecek ilişki belirler.",
+    appendSection: true,
+  }],
+  "felsefeyi-tanima": [{
+    title: "Aynı toplamı iki dağıtım ilkesiyle karşılaştır",
+    figureTitle: "Aynı toplamı iki dağıtım ilkesiyle karşılaştır",
+    paragraphs: [
+      "Dört birimi eşit miktarda bölünce iki kişi de ikişer birim alır. İhtiyaçlar 1 ve 3 birim kabul edilip pay buna göre dağıtıldığında A bir, B üç birim alır. İki toplam da 4.",
+      "Hangi ölçütün adil sayılacağını tartışırken gerekçe kur. Herkese aynı miktarı vermeyi savunan biri eşit muameleyi, ihtiyaca göre vermeyi savunan biri de ihtiyacın karşılanmasını öne çıkarabilir. Verilen ihtiyaç varsayımı değişirse ikinci dağıtım da değişir.",
+    ],
+    summary: "Eşit miktar 2+2, varsayılan ihtiyaca göre 1+3. Toplam eşit kaldığı hâlde paylar değişebilir. Ölçütün gerekçesini söyle.",
+    appendSection: true,
+  }],
+  "bilgi-ve-inanc": [{
+    title: "Üç kaynak birlikte iş görebilir",
+    figureTitle: "Üç kaynak birlikte iş görebilir",
+    paragraphs: [],
+    summary: "İslam din eğitimi bağlamında salim duyular doğrudan algılama, selim akıl gerekçeli çıkarım, sadık haber güvenilir aktarım sağlar. Metinde sorulan bilginin hangi yolla edinildiğini ara.",
+    table: {
+      headers: ["Bilgi yolu", "Göstergesi", "Örnek"],
+      rows: [
+        ["Salim duyular", "Doğrudan gözlem", "Ezan sesini işitmek"],
+        ["Selim akıl", "Karşılaştırma ve çıkarım", "İki gözlemi karşılaştırıp ilişki kurmak"],
+        ["Sadık haber", "Vahiy veya güvenilir aktarım", "İslam din eğitimi bağlamında vahiy bilgisi"],
+      ],
+      layout: "table",
+    },
+  }],
+  "ses-bilgisi": [{
+    title: "Ünlü düşmesi ile daralma: eksildi mi, değişti mi?",
+    figureTitle: "Ünlü düşmesi ile daralma: eksildi mi, değişti mi?",
+    paragraphs: [],
+    summary: "Başlangıç biçimiyle karşılaştır. Kökte ses eksilirse düşme, a/e dar ünlüye dönerse daralma. Evi sözcüğündeki i ekin kendi sesidir.",
+    table: {
+      headers: ["Önce", "Sonra", "Kanıt"],
+      rows: [
+        ["burun + u", "burnu", "Kökteki ikinci u düşer"],
+        ["bekle + yor", "bekliyor", "Kökün sonundaki e, i olur"],
+        ["ev + i", "evi", "i, ekin kendi ünlüsüdür"],
+        ["ben + e", "bana", "Geniş e, geniş a olur"],
+      ],
+      layout: "table",
+    },
+  }],
+  "tarih-zaman": [{
+    title: "Yıl etiketleri ile geçen süreyi ayır",
+    figureTitle: "Yıl etiketleri ile geçen süreyi ayır",
+    paragraphs: [
+      "Geleneksel tarihsel numaralandırmada MÖ 1’in ardından MS 1 gelir. Aynı ay ve gün için MÖ 2’den MS 3’e sırasıyla dört aralık geçilir. Başlangıç ve bitiş etiketlerini birlikte sayınca beş yıl adı yazılır.",
+      "Miladın iki tarafında aynı günler arasındaki süre a+b−1 yıl. Aynı tarafta iki yıl numarasının farkı kullanılır. Ay ve gün bilgisi verilmedikçe kesin gün sayısı bulunmaz.",
+    ],
+    summary: "MÖ 2 → MÖ 1 → MS 1 → MS 2 → MS 3 dizisinde dört aralık, beş etiket var. Süreyi ve iki uç dahil etiket sayısını ayrı hesapla.",
+    appendSection: true,
+  }],
   "isi-ve-sicaklik": [{
     title: "Isı sığasını enerji grafiğinin eğiminden oku",
     figureTitle: "Isı sığasını enerji grafiğinin eğiminden oku",

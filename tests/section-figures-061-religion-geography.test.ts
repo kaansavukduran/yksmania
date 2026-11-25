@@ -4,7 +4,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { sectionFigures } from "../src/learning/sectionFigures/registry";
 import { sectionFigureGuideIds } from "../src/learning/sectionFigures/figureGuideIds";
 import { SectionFigureView } from "../src/learning/sectionFigures/figureKit";
-import { lessonGuides } from "../src/learning/guides";
+import { studyGuide } from "../src/learning/guides";
 
 // Forge061 TYT Din Kültürü ve TYT Coğrafya figürleri: her figür rehberdeki
 // gerçek bir bölüm başlığına bağlanır, her adım, seçim ve sürgü ucunda
@@ -53,7 +53,7 @@ describe("Forge061 Din Kültürü ve Coğrafya bölüm figürleri", () => {
       expect(sectionFigureGuideIds.has(g), g).toBe(true);
       const titles = Object.keys(sectionFigures[g] ?? {});
       expect(titles.length, g).toBeGreaterThanOrEqual(3);
-      const sections = new Set(lessonGuides.get(g)?.sections.map((s) => s.title));
+      const sections = new Set(studyGuide(g)?.sections.map((s) => s.title));
       for (const t of titles) expect(sections.has(t), `${g} / ${t}`).toBe(true);
     }
   });

@@ -62,6 +62,39 @@ const centuryStrip: FigureDef = {
   },
 };
 
+const spanAtCalendarBoundary: FigureDef = {
+  caption: "Geçen süre çizgideki aralıkların sayısıdır. İki uç dahil yıl etiketlerini sayarsan aralık sayısına bir ekle. Başlangıç ve bitiş aynı ay ve gün.",
+  alt: "Eşit aralıklarla soldan sağa MÖ 3, MÖ 2, MÖ 1, MS 1, MS 2, MS 3. Seçilen başlangıç ve bitiş arasındaki aralıklar birer yıl olarak işaretli.",
+  steps: ["MÖ 2’den say", "MS 1’den say"],
+  param: { label: "Bitiş yılı (MS)", min: 1, max: 3, step: 1, init: 3 },
+  draw: (endYear, step) => {
+    const years = [-3, -2, -1, 1, 2, 3];
+    const left = years.indexOf(step === 0 ? -2 : 1);
+    const right = years.indexOf(endYear);
+    const x = (index: number) => index * 1.85;
+    const els: El[] = [];
+    years.forEach((year, index) => {
+      const selected = index >= left && index <= right;
+      if (index < years.length - 1) {
+        const active = index >= left && index < right;
+        els.push(seg(v(x(index), 0), v(x(index + 1), 0), { tone: active ? "a" : "muted", bold: active, dash: !active }));
+        if (active) els.push(txt(v(x(index + 0.5), 0.28), "1", "n", { tone: "ink", small: true }));
+      }
+      els.push(ball(v(x(index), 0), 0.11, selected ? "a" : "muted"));
+      els.push(txt(v(x(index), -0.18), label(year), "s", { tone: "ink", small: true, bold: selected }));
+    });
+    els.push(txt(v(-0.8, 1.0), "", "c"), txt(v(10.05, -0.85), "", "c"));
+    const length = right - left;
+    return { els, readout: [
+      `${label(years[left])} ile ${label(years[right])} arasında ${length} yıl geçer.`,
+      `İki uç dahil ${length + 1} yıl etiketi vardır.`,
+    ] };
+  },
+};
+
 export const historyFiguresTime: Record<string, Record<string, FigureDef>> = {
-  "tarih-zaman": { "Yarı ve çeyrek için kronolojik konumu kullan": centuryStrip },
+  "tarih-zaman": {
+    "Yarı ve çeyrek için kronolojik konumu kullan": centuryStrip,
+    "Yıl etiketleri ile geçen süreyi ayır": spanAtCalendarBoundary,
+  },
 };

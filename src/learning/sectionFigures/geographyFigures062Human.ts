@@ -1,4 +1,4 @@
-import { type El, type FigureDef } from "./figureKit";
+import { poly, seg, txt, v, type El, type FigureDef } from "./figureKit";
 import { axis, BAR_R, barRow, LABEL_W } from "./geographyFigures061Kit";
 import { flowFig, mapFig, tableFig, timelineFig, treeFig } from "./turkishFigures060Kit";
 import { drawFig, lines } from "./biologyFigures062Kit";
@@ -307,6 +307,38 @@ const strip = timelineFig({
   foot: "Bir eserin adı ya da ölçüm tarihi verilmemişse yalnız dönemden türetme.",
 });
 
+const riverStudySubjects: FigureDef = {
+  caption: "Aynı akarsu üzerinde üç araştırma sorusu izle. Konuyu, ölçülecek ya da karşılaştırılacak ilişkiye göre seç.",
+  alt: "Ortada kıvrılan akarsu, solda kıyı bitkileri, sağda üç tarla basamağı. Adımlar akarsu akımını, bitki dağılışını ve tarımsal kullanım ilişkisini vurgular.",
+  steps: ["Akım", "Kıyı bitkileri", "Tarımsal kullanım"],
+  draw: (_, step) => {
+    const landTone = step === 2 ? "warn" : "muted";
+    const plantTone = step === 1 ? "c" : "muted";
+    const els: El[] = [
+      poly([v(4.3, 3.3), v(3.7, 2.7), v(4.2, 1.9), v(4.5, 1.25), v(3.9, 0.5)], { open: true, tone: "b", bold: step === 0 }),
+      txt(v(4.2, 0.18), "Akarsu", "s", { tone: "b", small: true, bold: step === 0 }),
+      txt(v(1.5, 0.18), "Bitki örtüsü", "s", { tone: plantTone, small: true, bold: step === 1 }),
+      txt(v(7.1, 0.18), "Tarlalar", "s", { tone: landTone, small: true, bold: step === 2 }),
+      txt(v(-0.45, 3.65), "", "c"),
+      txt(v(8.85, -0.75), "", "c"),
+    ];
+    for (const [x, y] of [[0.9, 1.15], [1.55, 1.45], [2.2, 1.75]]) {
+      els.push(seg(v(x, y), v(x, y + 0.3), { tone: plantTone }));
+      els.push(poly([v(x - 0.25, y + 0.3), v(x, y + 0.9), v(x + 0.25, y + 0.3)], { tone: plantTone, fill: plantTone }));
+    }
+    for (let i = 0; i < 3; i += 1) {
+      const x = 6.0 + i * 0.44, y = 1.1 + i * 0.45;
+      els.push(poly([v(x, y), v(x + 1.1, y), v(x + 1.4, y + 0.23), v(x + 0.3, y + 0.23)], { tone: landTone, fill: landTone, thin: true }));
+    }
+    const notes = [
+      "Akarsu akımı aylara göre nasıl değişir? Suyun akımını hidrografya inceler.",
+      "Kıyı bitkileri hangi alanlarda toplanır? Canlı topluluklarının dağılışını biyocoğrafya inceler.",
+      "Suya yakınlık tarlaların dağılışını nasıl etkiler? Tarımsal etkinliğin konumu ekonomik coğrafyanın sorusudur.",
+    ];
+    return { els, readout: [notes[step]] };
+  },
+};
+
 export const geographyFigures062Human: Record<string, Record<string, FigureDef>> = {
   "turkiye-yerlesmeleri": {
     "Yayla ve başka mevsimlik kullanımlarda takvim": calendar,
@@ -316,6 +348,7 @@ export const geographyFigures062Human: Record<string, Record<string, FigureDef>>
     "İşlev haritasını takvimle karıştırma": order,
   },
   "doga-insan-cografya": {
+    "Aynı akarsuyu üç farklı soruyla incele": riverStudySubjects,
     "Dört ortam birbiriyle etkileşir": spheres,
     "Doğal ortamdan coğrafi ortama": milieu,
     "İnsan çevreyi değiştirir; etkiyi izle": impact,
