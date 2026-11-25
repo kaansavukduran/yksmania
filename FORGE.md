@@ -1,3 +1,9 @@
+# Sayı temellerinde tablo ve çözümlü örnek · 0.202.0 adayı
+
+TYT Matematik derinleştirmesinin ikinci turu Tek Çift Pozitif Negatif Sayılar, Asal Sayılar ve Faktöriyel derslerini ele aldı. Bu üç rehberin kabul edilmiş içeriği parmak iziyle korunduğu için değiştirilmedi. Görüntüleme katmanındaki ek düzeneği artık çözümlü örnek de ekleyebiliyor. Ek örnekler derse ve Kopya Kağıdına, tuzakları da Kopya Kağıdının uyarılarına eklenir.
+
+Eklenen tablolar şunlar: −3’ten 4’e parite, (−1)ⁿ, n² ve n(n+1); 1–50 asalları onluk gruplarda ve deneme sınırı; 5!–30! için sondaki sıfırlar ve 2 sayısı. Satırlar ve paragraflardaki sayılar aynı fonksiyonlardan gelir. Altı yeni örnek doğrudan hesapla sınandı: tek parite, üç işaret, 19/37/73, p=3, n=8 ve birler basamağı 3. Tabloların hepsi BigInt ve elek ile yeniden hesaplandı. Görsel keşif öğrenme kaydı, XP veya ustalık yazmaz.
+
 # Sayma ve olasılıkta aynı veriden tablo ve çözümlü örnek · 0.201.0 adayı
 
 TYT Matematik içerik derinleştirmesinin ilk turu, kapsam tablosundaki en ince beş başlığı ele aldı: Permütasyon, Tekrarlı permütasyon, Kombinasyon, Binom açılımı ve Olasılık. Her derse bir tablo bölümü ve iki çözümlü örnek eklendi. P(6,r) ile C(6,r), tekrar bölenleri, C(7,r) ile "en az r" toplamı, Pascal satırları ve iki zarın toplam olasılıkları aynı fonksiyonlardan üretilir. Paragraflardaki sayılar da bu fonksiyonlardan gelir, Kopya Kağıdı aynı tablo nesnesini gösterir.

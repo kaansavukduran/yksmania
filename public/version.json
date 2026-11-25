@@ -1,8 +1,8 @@
 {
-  "version": "0.201.0",
+  "version": "0.202.0",
   "channel": "alpha",
   "notes": {
-    "tr": "TYT Matematik sayma ve olasılık derslerine aynı veriden üretilen beş tablo ve on yeni çözümlü örnek eklendi. Permütasyon, tekrarlı permütasyon, kombinasyon, binom ve olasılık tabloları Kopya Kağıtlarında da açılır.",
-    "en": "TYT Mathematics counting and probability lessons gain five data tables and ten new worked examples, also shown in their cheat sheets."
+    "tr": "TYT Matematik'te Tek-çift ve işaret, Asal sayılar ve Faktöriyel derslerine aynı veriden üretilen birer tablo ve ikişer yeni çözümlü örnek eklendi. Tablolar ve örnekler Kopya Kağıtlarında da görünür.",
+    "en": "TYT Mathematics parity and sign, primes and factorial lessons gain a data table and two worked examples each, also shown in their cheat sheets."
   }
 }

@@ -1,7 +1,8 @@
 import { particleCoordinatesSource006 } from "./particleCoordinatesSource006";
 import { glucoseSource005 } from "./glucoseSource005";
 import { germinationSource002, germinationTotal } from "./germinationSource002";
-import type { GuideSection } from "./guides/types";
+import type { GuideSection, WorkedExample } from "./guides/types";
+import { numberDepth202Supplements } from "./numberDepth202";
 import { signedBinomial035 } from "./signedBinomialSource035Model";
 import { statisticsSource037Classes } from "./statisticsSource037Revision";
 
@@ -15,11 +16,14 @@ interface TheorySupplement {
   tableLayout?: "table";
   table?: GuideSection["table"];
   workedStep?: { title: string; index: number };
+  /** Extra worked examples appended after the accepted guide examples (display only). */
+  examples?: readonly WorkedExample[];
 }
 
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const theorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  ...numberDepth202Supplements,
   "genetik-cesitlilik": [{
     title: "Tek mayozun ürünleriyle olası türleri ayır",
     figureTitle: "Tek mayozun ürünleriyle olası türleri ayır",

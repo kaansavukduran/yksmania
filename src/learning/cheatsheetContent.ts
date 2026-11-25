@@ -489,7 +489,17 @@ export function studyCheatSheet(topicId: string): CheatSheet | undefined {
   if (sheet && supplements) {
     let sections = sheet.sections;
     let examples = sheet.examples;
-    for (const { title, figureTitle, summary, appendSection, sheetTitle = title, workedStep, tableLayout, table } of supplements) {
+    let cautions = sheet.cautions;
+    for (const { title, figureTitle, summary, appendSection, sheetTitle = title, workedStep, tableLayout, table, examples: extra } of supplements) {
+      if (extra) {
+        examples = [...examples, ...extra.map((example) => ({
+          title: example.title,
+          prompt: example.prompt,
+          steps: example.steps.map((step) => [step.label, step.expression, step.explanation].filter(Boolean).join(" · ")),
+          answer: example.answer + " " + example.check,
+        }))];
+        cautions = [...cautions, ...extra.map(({ pitfall }) => pitfall)];
+      }
       sections = appendSection
         ? [...sections, { title, figureTitle, text: summary ? [summary] : [], table }]
         : sections.map((section) => section.title === sheetTitle
@@ -508,7 +518,7 @@ export function studyCheatSheet(topicId: string): CheatSheet | undefined {
           : example);
       }
     }
-    return { ...sheet, sections, examples };
+    return { ...sheet, sections, examples, cautions };
   }
   return sheet;
 }
