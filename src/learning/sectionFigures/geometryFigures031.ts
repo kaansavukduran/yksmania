@@ -1134,6 +1134,47 @@ const eslikBenzerlik: Record<string, FigureDef> = {
       };
     },
   },
+  "Arada olmayan açı iki üçgene izin verebilir": {
+    caption: "AB = 5 birim ve B açısı 30° sabit. AC uzunluğu, A merkezli çemberin yarıçapıdır. C ancak çember ile B’den çıkan ışının B dışındaki kesişiminde olabilir.",
+    alt: "B’den çıkan yatay kenar ve 30 derece eğimli ışın. A merkezli çember ve A’dan ışına inen dikme. Çemberin izin verdiği C noktaları ışın üzerinde gösterilir.",
+    param: {label: "AC uzunluğu", min: 2, max: 5.5, step: 0.5, init: 4, unit: "birim"},
+    draw: (radius) => {
+      const B = v(0, 0);
+      const A = v(5, 0);
+      const along = pol(1, 30);
+      const H = foot(A, B, along);
+      const height = dist(A, H);
+      const projected = dist(B, H);
+      const delta = radius ** 2 - height ** 2;
+      const candidates = delta < -1e-9 ? [] : Math.abs(delta) < 1e-9
+        ? [projected]
+        : [projected - Math.sqrt(delta), projected + Math.sqrt(delta)].filter((value) => value > 1e-9);
+      const els: El[] = [
+        ray(B, pol(11, 30), {thin: true}),
+        seg(A, B),
+        seg(A, H, {tone: "muted", dash: true}),
+        right(H, B, A),
+        circle(A, radius, {tone: "a", thin: true}),
+        ang(B, A, along, "30°", {tone: "b", r: 28}),
+        pt(A, "A", "s"), pt(B, "B", "sw"), pt(H, "H", "n", "muted"),
+      ];
+      for (const [index, length] of candidates.entries()) {
+        const C = mul(along, length);
+        const tone = index === 0 ? "c" : "b";
+        const name = candidates.length === 1 ? "C" : index === 0 ? "C₁" : "C₂";
+        els.push(seg(A, C, {tone}), pt(C, name, index === 0 ? "nw" : "ne", tone));
+      }
+      const verdict = ["Üçgen kurulamaz.", "Tek üçgen kurulur.", "İki farklı üçgen kurulur."][candidates.length];
+      return {
+        els,
+        readout: [
+          `AB = 5 ve ∠B = 30°. Dik uzaklık AH = ${fmt(height)} birim. AC = ${fmt(radius)} birim.`,
+          verdict,
+          ...(candidates.length ? [`Olası BC uzunlukları: ${candidates.map((length) => fmt(length, 2)).join(" ve ")} birim.`] : []),
+        ],
+      };
+    },
+  },
   "Benzerliği hangi veriler kanıtlar?": {
     caption:
       "Kum saati görünümünde O'daki ters açılar yalnız bir çift eşit açı verir. AB ∥ DC verildiğinde iç ters açılar ikinci çifti sağlar ve AA benzerliği kurulur.",

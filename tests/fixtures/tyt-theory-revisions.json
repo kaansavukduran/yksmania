@@ -5054,5 +5054,1856 @@
         }
       }
     ]
+  },
+  {
+    "version": "0.158.0",
+    "receipts": [
+      {
+        "surface": "lessons",
+        "id": "tyt-geo-eslik-benzerlik-031",
+        "after": "58d384790e08a6a733d6ffddd674de7d580526a1e52841236dcf1b017914c05c",
+        "prior": {
+          "source": {
+            "tr": "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir. Eşkenar Üçgen 5.1, fiziksel s. 1 ve 4: eş yükseklikli alan şeritleri."
+          },
+          "body": [
+            {
+              "title": {
+                "tr": "Aynı biçim ile aynı büyüklüğü ayır"
+              },
+              "text": {
+                "tr": "İki üçgen eştir denildiğinde karşılıklı açıları eşit ve karşılıklı kenarları aynı uzunluktadır. Birini döndürmek, taşımak veya yansıtmak eşliği bozmaz. Eşlik, şeklin sayfa üzerindeki yönünden bağımsızdır; kenar uzunlukları ve açı ölçüleri korunur.\n\nBenzer üçgenlerde karşılıklı açılar eşit, karşılıklı kenarlar aynı pozitif oranda değişmiştir. Eş üçgenler benzerliğin oranı 1 olan özel hâlidir. Yalnız üç açının eşitliği boyutu belirlemez: 3–4–5 ile 6–8–10 üçgenleri benzerdir, eş değildir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Köşe sırası bir bilgi taşır"
+              },
+              "text": {
+                "tr": "ABC∼DEF yazımı A↔D, B↔E ve C↔F eşlemesini belirtir. Buna göre AB↔DE, AC↔DF ve BC↔EF olur. Eşlik yazımında da aynı sıra okunur. Kâğıtta soldaki kenarın karşılık olarak mutlaka soldaki kenara gitmesi gerekmez; şekil dönebilir.\n\nOranı yeni/eski veya küçük/büyük olarak bir kez seçip bütün kenarlarda koru. AB/DE yazdıysan sonraki oran AC/DF olmalıdır; DF/AC yazmak oranı ters çevirir. Önce eş açıları aynı işaretle göster, sonra karşılarındaki kenarları eşleştir; çıplak sayıların yakınlığına göre eşleme yapma."
+              }
+            },
+            {
+              "title": {
+                "tr": "Eşliği hangi veriler kanıtlar?"
+              },
+              "text": {
+                "tr": "KKK eşliğinde üç karşılıklı kenar eşittir. KAK eşliğinde iki karşılıklı kenar ve bu iki kenarın ARASINDA kalan açı eşittir. AKA eşliğinde iki karşılıklı açı ve aralarındaki kenar eşittir; iki açı üçüncüyü de belirlediği için uygun karşılıklı bir kenarla da eşlik kurulabilir.\n\n“Üç eleman eşitse her zaman eşlik vardır” genellemesi yanlıştır. Üç açı yalnız benzerlik verir; rastgele iki kenar ve aralarında olmayan açı da genel durumda tek üçgen belirlemez. Dik üçgenlerde hipotenüs ve bir dik kenar eşitse Pisagor diğer dik kenarı da eşitler ve KKK ile eşlik kurulabilir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Benzerliği hangi veriler kanıtlar?"
+              },
+              "text": {
+                "tr": "AA benzerliğinde iki karşılıklı açı eşit olunca üçüncü açılar da 180° toplamından eşit olur. KAK benzerliğinde iki karşılıklı kenar aynı oranda ve aralarındaki açılar eşit olmalıdır. KKK benzerliğinde üç karşılıklı kenar oranı aynıdır.\n\nBir oran yazmak benzerlik kanıtı değildir; önce bu üç koşuldan birini kur. İki üçgende birer açı eşit ve birer kenar orantılı verilmesi yeterli olmaz. Kum saati görünümünde ortak köşedeki ters açı eşliği yalnız bir açı çifti sağlar; ikinci açı için paralellik veya başka açık bir veri gerekir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Paralel kesitte küçük üçgeni gör"
+              },
+              "text": {
+                "tr": "ABC üçgeninde D, AB üzerinde; E, AC üzerinde ve DE∥BC olsun. ADE ile ABC üçgenleri A açısını paylaşır; paralellik diğer karşılıklı açıları eşitler. Bu nedenle AD/AB=AE/AC=DE/BC=t olur. D ve E iç nokta ise 0<t<1’dir.\n\nAynı modelde AD/DB=AE/EC de doğrudur; fakat bu parça/parça oranı t ile aynı sayı değildir. Örneğin AD/AB=2/5 iken DB/AB=3/5 ve AD/DB=2/3 olur. Denklemde AD+DB=AB toplamını görünür tutmak yanlış payda seçimini önler."
+              }
+            },
+            {
+              "title": {
+                "tr": "Orta taban ve Thales: ayrı şekiller, aynı oran fikri"
+              },
+              "text": {
+                "tr": "İki kenarın orta noktalarını birleştiren doğru parçası üçüncü kenara paraleldir ve onun yarısıdır. Küçük üçgenin bütün uzunlukları ana üçgenin yarısı, çevresi de yarısı olur. Orta taban yalnız ortadan geçtiği açıkça verilmiş ya da kanıtlanmış noktalar için kullanılır.\n\nÜç veya daha çok paralel doğru iki keseni keserse, kesenlerde karşılıklı aralıklar orantılıdır. Bir kesendeki üst aralık / alt aralık oranını, diğer kesendeki üst aralık / alt aralık ile eşleştir. Aralık yerine bütün uzunluğu kullanacaksan iki kesende de aynı tür toplamı seç."
+              }
+            },
+            {
+              "title": {
+                "tr": "Uzunluk k iken alan neden k²?"
+              },
+              "text": {
+                "tr": "Benzerlik oranı yeni/eski=k ise her kenar, çevre, yükseklik, kenarortay ve açıortay uzunluğu k ile çarpılır. Alan taban×yükseklik/2 olduğundan iki bağımsız uzunluk da k ile değişir; alan k² ile çarpılır. Hacim sorularında benzer cisim için k³ gerekir, fakat bu ünite düzlem üçgenleri üzerinde çalışır.\n\nAlan oranı 9/25 ise aynı yöndeki pozitif uzunluk oranı 3/5’tir. DE∥BC modelinde t=2/3 için üst üçgenin alanı ana alanın 4/9’u, kalan yamuğun alanı 5/9’udur. Yamuğun alanını doğrudan t ile çarpmak şekillerin hangisinin benzer olduğunu unutmaya yol açar."
+              }
+            },
+            {
+              "title": {
+                "tr": "Gölge ve ölçek problemlerinde varsayımı yaz"
+              },
+              "text": {
+                "tr": "Aynı anda düz zemindeki dik nesneler için güneş ışınları paralel kabul edilirse, yükseklik–gölge üçgenleri AA ile benzerdir. Yükseklik/gölge oranı ortaktır. Farklı saatte veya eğimli zeminde aynı oranı gerekçe vermeden kullanmak modelin koşullarını değiştirir.\n\nSoru çözümünde üç kısa kontrol yeterlidir: karşılıklı köşe sırası, bütün oranların yönü, uzunluk–alan ayrımı. Bir figürün büyütülmesi açıyı büyütmez; açıların eşit kalması benzerliğin bir parçasıdır. Sonucu ikinci bir kenar çifti veya alan oranıyla denetle."
+              }
+            },
+            {
+              "title": {
+                "tr": "Eş yükseklikli şeritlerin alanları neden farklı?"
+              },
+              "text": {
+                "tr": "Eşkenar üçgende tabana paralel kesimler yüksekliği tepeden itibaren üç eş parçaya ayırsın. Tepeden birinci ve ikinci kesime kadar olan şekiller, büyük üçgene sırasıyla 1/3 ve 2/3 uzunluk oranıyla benzerdir. Yükseklik oranı kadar taban oranı da değişir. Bu yüzden biriken alan payları 1/9, 4/9 ve 1 olur.\n\nŞerit alanı bulmak için iki biriken alanı çıkar. Baştan sona eş yükseklikli üç şeridin alan payları 1/9, 3/9 ve 5/9’dur. En alttaki şerit daha geniş tabanlara yayıldığı için en büyüktür. Eğer kesimler paralel değilse önce benzerliğin geçerli olup olmadığını kontrol et."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "tyt-geo-eslik-benzerlik-031",
+        "after": "8e3ffbe3093cb4f54b9b1af3866a2ef96b786ab8cbb415bd32b9445eff52d5c0",
+        "prior": {
+          "sections": [
+            {
+              "title": "Aynı biçim ile aynı büyüklüğü ayır",
+              "paragraphs": [
+                "İki üçgen eştir denildiğinde karşılıklı açıları eşit ve karşılıklı kenarları aynı uzunluktadır. Birini döndürmek, taşımak veya yansıtmak eşliği bozmaz. Eşlik, şeklin sayfa üzerindeki yönünden bağımsızdır; kenar uzunlukları ve açı ölçüleri korunur.",
+                "Benzer üçgenlerde karşılıklı açılar eşit, karşılıklı kenarlar aynı pozitif oranda değişmiştir. Eş üçgenler benzerliğin oranı 1 olan özel hâlidir. Yalnız üç açının eşitliği boyutu belirlemez: 3–4–5 ile 6–8–10 üçgenleri benzerdir, eş değildir."
+              ]
+            },
+            {
+              "title": "Köşe sırası bir bilgi taşır",
+              "paragraphs": [
+                "ABC∼DEF yazımı A↔D, B↔E ve C↔F eşlemesini belirtir. Buna göre AB↔DE, AC↔DF ve BC↔EF olur. Eşlik yazımında da aynı sıra okunur. Kâğıtta soldaki kenarın karşılık olarak mutlaka soldaki kenara gitmesi gerekmez; şekil dönebilir.",
+                "Oranı yeni/eski veya küçük/büyük olarak bir kez seçip bütün kenarlarda koru. AB/DE yazdıysan sonraki oran AC/DF olmalıdır; DF/AC yazmak oranı ters çevirir. Önce eş açıları aynı işaretle göster, sonra karşılarındaki kenarları eşleştir; çıplak sayıların yakınlığına göre eşleme yapma."
+              ]
+            },
+            {
+              "title": "Eşliği hangi veriler kanıtlar?",
+              "paragraphs": [
+                "KKK eşliğinde üç karşılıklı kenar eşittir. KAK eşliğinde iki karşılıklı kenar ve bu iki kenarın ARASINDA kalan açı eşittir. AKA eşliğinde iki karşılıklı açı ve aralarındaki kenar eşittir; iki açı üçüncüyü de belirlediği için uygun karşılıklı bir kenarla da eşlik kurulabilir.",
+                "“Üç eleman eşitse her zaman eşlik vardır” genellemesi yanlıştır. Üç açı yalnız benzerlik verir; rastgele iki kenar ve aralarında olmayan açı da genel durumda tek üçgen belirlemez. Dik üçgenlerde hipotenüs ve bir dik kenar eşitse Pisagor diğer dik kenarı da eşitler ve KKK ile eşlik kurulabilir."
+              ]
+            },
+            {
+              "title": "Benzerliği hangi veriler kanıtlar?",
+              "paragraphs": [
+                "AA benzerliğinde iki karşılıklı açı eşit olunca üçüncü açılar da 180° toplamından eşit olur. KAK benzerliğinde iki karşılıklı kenar aynı oranda ve aralarındaki açılar eşit olmalıdır. KKK benzerliğinde üç karşılıklı kenar oranı aynıdır.",
+                "Bir oran yazmak benzerlik kanıtı değildir; önce bu üç koşuldan birini kur. İki üçgende birer açı eşit ve birer kenar orantılı verilmesi yeterli olmaz. Kum saati görünümünde ortak köşedeki ters açı eşliği yalnız bir açı çifti sağlar; ikinci açı için paralellik veya başka açık bir veri gerekir."
+              ]
+            },
+            {
+              "title": "Paralel kesitte küçük üçgeni gör",
+              "paragraphs": [
+                "ABC üçgeninde D, AB üzerinde; E, AC üzerinde ve DE∥BC olsun. ADE ile ABC üçgenleri A açısını paylaşır; paralellik diğer karşılıklı açıları eşitler. Bu nedenle AD/AB=AE/AC=DE/BC=t olur. D ve E iç nokta ise 0<t<1’dir.",
+                "Aynı modelde AD/DB=AE/EC de doğrudur; fakat bu parça/parça oranı t ile aynı sayı değildir. Örneğin AD/AB=2/5 iken DB/AB=3/5 ve AD/DB=2/3 olur. Denklemde AD+DB=AB toplamını görünür tutmak yanlış payda seçimini önler."
+              ]
+            },
+            {
+              "title": "Orta taban ve Thales: ayrı şekiller, aynı oran fikri",
+              "paragraphs": [
+                "İki kenarın orta noktalarını birleştiren doğru parçası üçüncü kenara paraleldir ve onun yarısıdır. Küçük üçgenin bütün uzunlukları ana üçgenin yarısı, çevresi de yarısı olur. Orta taban yalnız ortadan geçtiği açıkça verilmiş ya da kanıtlanmış noktalar için kullanılır.",
+                "Üç veya daha çok paralel doğru iki keseni keserse, kesenlerde karşılıklı aralıklar orantılıdır. Bir kesendeki üst aralık / alt aralık oranını, diğer kesendeki üst aralık / alt aralık ile eşleştir. Aralık yerine bütün uzunluğu kullanacaksan iki kesende de aynı tür toplamı seç."
+              ]
+            },
+            {
+              "title": "Uzunluk k iken alan neden k²?",
+              "paragraphs": [
+                "Benzerlik oranı yeni/eski=k ise her kenar, çevre, yükseklik, kenarortay ve açıortay uzunluğu k ile çarpılır. Alan taban×yükseklik/2 olduğundan iki bağımsız uzunluk da k ile değişir; alan k² ile çarpılır. Hacim sorularında benzer cisim için k³ gerekir, fakat bu ünite düzlem üçgenleri üzerinde çalışır.",
+                "Alan oranı 9/25 ise aynı yöndeki pozitif uzunluk oranı 3/5’tir. DE∥BC modelinde t=2/3 için üst üçgenin alanı ana alanın 4/9’u, kalan yamuğun alanı 5/9’udur. Yamuğun alanını doğrudan t ile çarpmak şekillerin hangisinin benzer olduğunu unutmaya yol açar."
+              ]
+            },
+            {
+              "title": "Gölge ve ölçek problemlerinde varsayımı yaz",
+              "paragraphs": [
+                "Aynı anda düz zemindeki dik nesneler için güneş ışınları paralel kabul edilirse, yükseklik–gölge üçgenleri AA ile benzerdir. Yükseklik/gölge oranı ortaktır. Farklı saatte veya eğimli zeminde aynı oranı gerekçe vermeden kullanmak modelin koşullarını değiştirir.",
+                "Soru çözümünde üç kısa kontrol yeterlidir: karşılıklı köşe sırası, bütün oranların yönü, uzunluk–alan ayrımı. Bir figürün büyütülmesi açıyı büyütmez; açıların eşit kalması benzerliğin bir parçasıdır. Sonucu ikinci bir kenar çifti veya alan oranıyla denetle."
+              ]
+            },
+            {
+              "title": "Eş yükseklikli şeritlerin alanları neden farklı?",
+              "figureTitle": "Eş yükseklik, farklı alan",
+              "paragraphs": [
+                "Eşkenar üçgende tabana paralel kesimler yüksekliği tepeden itibaren üç eş parçaya ayırsın. Tepeden birinci ve ikinci kesime kadar olan şekiller, büyük üçgene sırasıyla 1/3 ve 2/3 uzunluk oranıyla benzerdir. Yükseklik oranı kadar taban oranı da değişir. Bu yüzden biriken alan payları 1/9, 4/9 ve 1 olur.",
+                "Şerit alanı bulmak için iki biriken alanı çıkar. Baştan sona eş yükseklikli üç şeridin alan payları 1/9, 3/9 ve 5/9’dur. En alttaki şerit daha geniş tabanlara yayıldığı için en büyüktür. Eğer kesimler paralel değilse önce benzerliğin geçerli olup olmadığını kontrol et."
+              ]
+            }
+          ],
+          "source": "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir. Eşkenar Üçgen 5.1, fiziksel s. 1 ve 4: eş yükseklikli alan şeritleri."
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "tyt-mat-dogrusal-denklemler-kaynak-036",
+        "after": "243dde8fe5ecb916920ade7108fcb880cd2522552cabe9a845022864f60ebff5",
+        "prior": {
+          "sections": [
+            {
+              "code": "S01",
+              "title": "Eşittir işareti bir ilişki kurar",
+              "paragraphs": [
+                "3+4 bir sayısal ifade, 3+4=7 iki ifadenin aynı değeri verdiğini bildiren bir eşitliktir. x, değeri aranabilen bir değişken; 2x+3 ise x’e bağlı bir ifadedir. 2x+3 tek başına denklem değildir. 2x+3=11, içinde değişken bulunan bir eşitlik ve bu ünite için bir denklemdir. 2x, 2×x anlamına gelir; 2+x ile aynı değildir.",
+                "Denklemi çözmek, x’i tahmin edip bırakmak değil, eşitliği doğru yapan bütün izinli değerleri bulmaktır. 2×4+3=11 olduğundan 4 bir köktür. x=3 denenirse sol 9, sağ 11 olur; 3 kök değildir. Aynı x değeri eşitliğin bütün x’lerine yazılır. = eşit, ≠ eşit değil, ℝ gerçek sayılar, ∅ boş küme, ÇK çözüm kümesi demektir."
+              ]
+            },
+            {
+              "code": "S02",
+              "title": "Kök ile çözüm kümesini ayır",
+              "paragraphs": [
+                "Bir kök bir sayıdır; çözüm kümesi bütün köklerin kümesidir. x=4 ile ÇK={4} aynı tek çözümlü durumu iki farklı dille anlatır. {0}, yalnız 0 sayısını içerir; ∅ hiçbir sayı içermez. Bu ikisini aynı görmek, çözümlü bir denklemi çözümsüz sanmana yol açar.",
+                "Başta sayı alanını oku. Bu ünitede aksi söylenmedikçe x gerçek sayıdır. Bilet adedi gibi bağlamlarda ayrıca tam sayı, pozitiflik veya 0≤x≤toplam koşulu gerekir. Cebirsel kök bu koşulu sağlamıyorsa problemde geçerli çözüm yoktur; kesirli insan sayısı veya 80,7. adım kabul edilmez."
+              ]
+            },
+            {
+              "code": "S03",
+              "title": "Katsayı sıfır olduğunda tür değişir",
+              "paragraphs": [
+                "ax+b=0 biçiminde a ve b sabit gerçek sayılar, x değişkendir. a≠0 ise x’in katsayısına bölerek tek kök x=−b/a bulunur. a=0 olduğunda denklem artık birinci dereceden değildir. 0x=0 her gerçek sayıda doğru; 0x=7 her gerçek sayıda yanlıştır.",
+                "Her denklemde hemen bölmeye başlama. Sadeleştirmeden sonra Ax=B biçiminde A≠0 ise bir kök; A=0 ve B=0 ise ℝ; A=0 ve B≠0 ise ∅ çıkar. Hem x’li terimlerin hem sabitlerin eşit olması, yalnız x=0 bulmak değil bütün x’lerin çalışmasıdır."
+              ],
+              "table": {
+                "headers": [
+                  "Son durum",
+                  "Gerekçe",
+                  "ÇK"
+                ],
+                "rows": [
+                  [
+                    "5x=20",
+                    "5 sıfır değil, x=4",
+                    "{4}"
+                  ],
+                  [
+                    "0x=0",
+                    "Her x için 0=0",
+                    "ℝ"
+                  ],
+                  [
+                    "0x=7",
+                    "0 hiçbir x için 7 olmaz",
+                    "∅"
+                  ]
+                ]
+              }
+            },
+            {
+              "code": "S04",
+              "title": "İki tarafa aynı toplama veya çıkarma",
+              "paragraphs": [
+                "x+5=12’de +5 etkisini kaldırmak için eşitliğin iki tarafından da 5 çıkar: x+5−5=12−5, böylece x=7. İşlemi yalnız solda yaparsan iki taraf arasındaki eşitliği garanti edemezsin. “Karşıya geçince işaret değişti” cümlesinin arkasında bu iki taraflı işlem vardır.",
+                "3x+5=20 için iki taraftan 5 çıkarınca 3x=15 olur. +5’in öbür tarafta −5 gibi görünmesi bir taşıma sihri değil, iki tarafa −5 eklemenin kısa yazımıdır. Çıkarma da negatif bir sayı eklemektir; bu işlem her gerçek sayı için geri alınabilir."
+              ]
+            },
+            {
+              "code": "S05",
+              "title": "Çarpma ve bölmede tersinirlik koşulu",
+              "paragraphs": [
+                "İki tarafı aynı sıfır olmayan sayıyla çarpmak veya bölmek çözüm kümesini korur; işlemin tersi vardır. x/3=4’ü 3 ile çarpınca x=12, 4x=20’yi 4’e bölünce x=5 olur. Sıfıra bölme tanımsızdır. Çözerken değişkenli bir ifadeye bölmek de o ifadenin sıfır olabileceğini ayrıca incelemeyi gerektirir.",
+                "İki doğru eşit taraf 0 ile çarpıldığında yine eşit olur; fakat bu dönüşüm aynı çözüm kümesini korumaz. x=1’i 0 ile çarparsan 0=0 elde edilir ve x bilgisi kaybolur. Bu yüzden çözüm zincirinde “aynı sayıyla çarp” kuralına sıfır olmayan koşulu eklenir. “Doğru eşitlikten doğru eşitlik çıkması” ile “eşdeğer denklem” aynı iddia değildir."
+              ]
+            },
+            {
+              "code": "S06",
+              "title": "Görsel modelde iki tarafı birlikte izle",
+              "paragraphs": [
+                "3x+6=24’ü üç eş x parçası ve altı birimlik ek olarak düşün. Önce iki taraftan 6 çıkar: 3x=18. Ardından iki tarafı 3’e böl: x=6. Görsel keşifte x’i değiştirerek sol ve sağ sayıları karşılaştır; eşit oldukları yerde kökü görürsün.",
+                "İnteraktif kutular işaretli cebir parçalarıdır; negatif sayıları fiziksel negatif kütle gibi yorumlama. Sayı çizgisindeki konum ve metin sonucu aynı hesaptan gelir. Birkaç deneme tek kökü fark etmeyi sağlar; bütün çözüm kümesi için cebirsel tür ayrımı da yapılır. Keşif yapmak bağımsız doğru cevap, ustalık veya XP üretmez."
+              ]
+            },
+            {
+              "code": "S07",
+              "title": "Dağıtmayı her terime uygula",
+              "paragraphs": [
+                "k(a+b)=ka+kb dağıtma özelliğidir. 3(x−2)=3x−6; yalnız x’i çarpıp 3x−2 yazmak yanlış olur. Negatif dış katsayıda her işareti açık çarp: −2(x−3)=−2×x+(−2)×(−3)=−2x+6.",
+                "Parantezin içi bir bütündür. 4(x−3) ile 4x−3 eşit ifadeler değildir: x=0 için ilki −12, ikincisi −3 verir. İki ifadenin farklılığını tek karşı örnek kanıtlar; bir değerde aynı çıkması ise her x’te aynı olduklarını tek başına kanıtlamaz."
+              ]
+            },
+            {
+              "code": "S08",
+              "title": "İki tarafta x varsa aynı terimi çıkar",
+              "paragraphs": [
+                "4x−12=2x+10’da iki taraftan 2x çıkar: 2x−12=10. İki tarafa 12 ekle: 2x=22. İkiye böl: x=11. x’li terimi ve sabiti aynı anda zihinden geçirirken işaret hatası yapıyorsan bir satırda yalnız bir işlemi açık yaz.",
+                "Genel ax+b=cx+d eşitliğinde iki taraftan cx ve b çıkarılınca (a−c)x=d−b olur. a=c durumunda x’li terim yok olur; bölmeden önce sabitlerin eşitliğine bak. İnteraktif görünüm katsayıları eşitlemene ve tek çözümün özdeşlik ya da çelişkiye dönüşmesini görmene izin verir."
+              ]
+            },
+            {
+              "code": "S09",
+              "title": "İlk eşitlikte kontrol et",
+              "paragraphs": [
+                "Bir parantez hatası yaptıktan sonra türettiğin yanlış son satıra kökü koyarsan o yanlış satır yine doğru çıkabilir. Bu, başlangıç sorusunu çözdüğünü göstermez. Bulduğun değeri başlangıçtaki sol ve sağ ifadelere ayrı ayrı yaz ve iki sayıyı karşılaştır.",
+                "4(x−3)=2x+10 için x=11 denemesi solda 4×8=32, sağda 22+10=32 verir. Kontrol ayrıca istenen birim ve sayı alanını kapsar: 6 yetişkin ve 6 öğrenci toplam 12 kişi eder; 780 TL şartı da ayrıca doğrulanır."
+              ]
+            },
+            {
+              "code": "S10",
+              "title": "Çözümün beş duraklı düzeni",
+              "paragraphs": [
+                "Önce tanı: eşitlik, sayı alanı ve değişkenin yerini belirle. Sonra aç: parantezleri her terime dağıt, kesir çizgisinin bütün payını koru. Ardından topla: benzer terimleri birleştir ve iki tarafa aynı işlemlerle Ax=B’ye ulaş. Bölmeden önce A=0 türünü ayır. Son olarak ilk denklemde kontrol et.",
+                "Sadece “en büyük kuvvet 1” demek her görünen ifadeyi doğrudan doğrusal yapmaz; değişkenin paydada olması ayrıca tanım koşulu gerektirir. İki bilinmeyenli doğrusal sistemleri bu rehberin devamında göreceksin. Mutlak değer ve ikinci derece denklemler kendi konu anlatımlarındadır. Sadeleşerek doğrusal koşula inen kesirli örneklerde baştaki yasak değer saklanır."
+              ]
+            },
+            {
+              "code": "S11",
+              "title": "Kesir çizgisinin tamamını oku",
+              "paragraphs": [
+                "(x+3)/2, x+3 toplamının yarısıdır; x+3/2 ise yalnız 3’ün yarısının x’e eklenmesidir. x=1 için ilk ifade 2, ikincisi 5/2 olur. Düz metinde payın bütününü parantezle; kesir çizgisinin kapsamını gözden kaybetme.",
+                "(x−1)/3+(x+2)/2=6’da paydalar sabit, sıfır olmayan 3 ve 2’dir. İki tarafı 6 ile çarpmak soldaki iki terimi ve sağdaki 6’yı birlikte etkiler: 2(x−1)+3(x+2)=36. “Paydaları sil” ezberi yerine hangi bütün tarafı hangi sayıyla çarptığını söyle."
+              ]
+            },
+            {
+              "code": "S12",
+              "title": "Ortak kat kısa yolunun gerekçesi",
+              "paragraphs": [
+                "6, hem 2’nin hem 3’ün katıdır; 6/3=2 ve 6/2=3 çarpanları kalır. 2x−2+3x+6=36 → 5x+4=36 → 5x=32 → x=32/5. Kesirli bir kök bir gerçek sayı denkleminde tamamen geçerlidir; zorla tam sayıya yuvarlanmaz.",
+                "Çıkarma varsa ikinci payın bütününü koru. (x+2)/4−(x−1)/3=1 için 12 ile çarpınca 3(x+2)−4(x−1)=12 olur. −4(x−1), −4x+4’tür. Bu artı 4’ün kaybı kökü değiştirir. İnteraktif payda görünümü aynı ortak katı ve iki ayrı çarpanı hesaplar."
+              ]
+            },
+            {
+              "code": "S13",
+              "title": "Paydada değişken varsa yasak değeri sakla",
+              "paragraphs": [
+                "(x+1)/(x−1)=2’de x≠1 şartı başlangıçta yazılır. İzinli x’lerde iki tarafı x−1 ile çarp: x+1=2x−2, buradan x=3. 3 yasak değil; başlangıçta 4/2=2 verir. Bu kesirli denklem, alanı korunarak doğrusal bir koşula dönüştürülen yardımcı örnektir.",
+                "(x−1)/(x−1)=2’de aynı işlem x=1 adayı çıkarır; fakat başlangıç paydası 0 olur. Bu aday atılır ve çözüm kümesi ∅’dir. Buna karşılık (x−1)/(x−1)=1, x≠1 olan bütün gerçek sayılar için doğrudur; cevap ℝ değil, ℝ’den 1’in çıkarılmasıdır. Sadeleştirme baştaki tanımsızlığı onarmaz."
+              ]
+            },
+            {
+              "code": "S14",
+              "title": "Özdeşlik bir özel değere indirgenmez",
+              "paragraphs": [
+                "3(x+2)=3x+6 iki tarafta da aynı 3x+6 ifadesidir. Çıkarma sonunda 0=0 gelir; her gerçek x sağlar. x=0 deneyip doğru bulmak, yalnız 0’ın çözüm olduğunu söylemez. Bütün değerlerin çalışması, iki ifadenin cebirsel özdeşliğinden anlaşılır.",
+                "5(x−2)=5x−10 ve 4(x+3)=4x+12 de aynı türdedir. ÇK=ℝ yazılır. Her sayı çözüm demek, bağlamın sayı alanını unutmak değildir: başta x doğal sayı denseydi çözümler o alanın bütün elemanları olurdu."
+              ]
+            },
+            {
+              "code": "S15",
+              "title": "Çelişkide bilinmeyene yeni değer arama",
+              "paragraphs": [
+                "2(x−1)=2x+5 açılınca 2x−2=2x+5; iki taraftan 2x çıkarınca −2=5 kalır. Bu eşitlik yanlış ve artık x’e bağlı değildir. Hiçbir x bunu değiştiremez; ÇK=∅.",
+                "4(x−3)=4x+10 için aynı mantık −12=10 çelişkisini verir. Son satırdaki sabitlerden birini x diye yazma, 0’a bölme ve “x’ler gitti, x=0” deme. 0x=B’de B≠0 ise kök yoktur; B=0 ise bütün alan çözümdür."
+              ]
+            },
+            {
+              "code": "S16",
+              "title": "Parametreyi önce durumlara ayır",
+              "paragraphs": [
+                "k(x−1)=2x−k’de k, denklem çözülürken sabit tutulan bir parametredir. Dağıt: kx−k=2x−k. İki tarafa k ekle ve 2x çıkar: (k−2)x=0. Şimdi k−2’nin sıfır olup olmadığını ayır.",
+                "k≠2 için sıfır olmayan k−2’ye bölünür, x=0 tek köktür. k=2 için 0x=0 çıkar ve her gerçek x çözümdür. Doğrudan k−2’ye bölüp yalnız x=0 demek k=2 durumunu kaybettirir. İnteraktif iki taraf modelinde a=c ve b=d seçmek bu ayrımı görselleştirir."
+              ]
+            },
+            {
+              "code": "S17",
+              "title": "Sözcüklerin sırası parantezi belirler",
+              "paragraphs": [
+                "“Bir sayının 3 katının 5 fazlası” 3x+5; “bir sayının 5 fazlasının 3 katı” 3(x+5)’tir. İlkinde üç katı aldıktan sonra 5 eklenir; ikincisinde x+5 bütünü üçle çarpılır. Sözcük sırası bir işlem ağacı gibi içten dışa okunur.",
+                "“Bir sayının yarısının 4 eksiği” x/2−4; “bir sayının 4 eksiğinin yarısı” (x−4)/2 olur. “Bir sayının 7 eksiği 20’dir” sözünde “dir” eşitlik ilişkisini kurar: x−7=20. Sayılardan önce bilinmeyeni, ardından her grubun anlamını yaz."
+              ]
+            },
+            {
+              "code": "S18",
+              "title": "Benzer iki üçte bir ifadesi",
+              "paragraphs": [
+                "“Bir sayının üçte birinin 4 fazlası 11” x/3+4=11 demektir. İki taraftan 4 çıkarınca x/3=7; üçle çarpınca x=21 bulunur. “Bir sayının 4 fazlasının üçte biri 11” ise (x+4)/3=11’dir; üçle çarpınca x+4=33 ve x=29 olur.",
+                "İki model yalnız bir kelime dizilişiyle ayrılır ama kökleri farklıdır. İlk cümlede 21/3+4=11, ikinci cümlede (29+4)/3=11 doğrulanır. Cümleyi tek tek işlem anahtarlarına çevirmek yerine hangi niceliğin üçe bölündüğünü açıkça söyle."
+              ]
+            },
+            {
+              "code": "S19",
+              "title": "İlişkiyi birimle kur",
+              "paragraphs": [
+                "Bir problemde x’in neyi ölçtüğünü başta yaz: kişi adedi mi, TL cinsinden ücret mi, adım numarası mı? TL ile kuruş, dakika ile saat aynı tür nicelikler olsa da önce ortak birime çevrilir. 150 kuruş=1,50 TL’dir; 150 ile 1,50’yi doğrudan aynı birimdeymiş gibi toplama.",
+                "Bir sayının 4 katının 7 fazlası, 2 katının 19 fazlasına eşitse 4x+7=2x+19 kurulur. İki taraftan 2x çıkar, ardından 7 çıkar, ikiye böl: x=6. Sözel kontrolde iki ifade de 31 verir. Rastgele sayıları çarpıp toplamak yerine eşit olan iki niceliği belirlemek çözümü yönetir."
+              ]
+            },
+            {
+              "code": "S20",
+              "title": "İki grubun toplamını tek bilinmeyenle koru",
+              "paragraphs": [
+                "Yetişkin bileti 80 TL, öğrenci bileti 50 TL; toplam 12 kişi 780 TL ödüyor. Yetişkin sayısı x ise öğrenci sayısı 12−x olur. Her grubun kişi sayısı ile kendi fiyatı çarpılır: 80x+50(12−x)=780.",
+                "Dağıtınca 30x+600=780 → x=6. 6 yetişkin ve 6 öğrenci hem 12 kişi hem 780 TL koşulunu sağlar. 80x+50x yazmak iki gruba aynı adedi verip toplam koşulunu kaybettirir. Kökün 0≤x≤12 aralığında bir tam sayı olması gerekir; 780 yerine 781 TL seçilirse kesirli aday gerçek bilet sayısı vermez."
+              ]
+            },
+            {
+              "code": "S21",
+              "title": "Adet belli, fiyat farkı belli",
+              "paragraphs": [
+                "İki yetişkin ve üç öğrenci bileti toplam 390 TL; yetişkin bileti öğrenci biletinden 45 TL pahalı olsun. Öğrenci fiyatı s TL ise yetişkin s+45 TL’dir. Toplam denklem 2(s+45)+3s=390; 5s+90=390 → s=60 TL olur.",
+                "Yetişkin 105 TL’dir; 2×105+3×60=390 ve 105−60=45 iki koşulu da sağlar. 45 farkının sadece bir bilet için değil her yetişkin biletine uygulandığını gör: iki yetişkin olduğundan toplam fark katkısı 90 TL’dir. Bu soruda x fiyat olduğu için kesirli TL miktarı sırf kesir diye reddedilmez; para alt birimi ve problem koşulu ayrıca okunur."
+              ]
+            },
+            {
+              "code": "S22",
+              "title": "Sabit artışta geçiş sayısı n−1",
+              "paragraphs": [
+                "İlk adımın değeri a₁, her geçişte eklenen sabit sayı d ise n. adım aₙ=a₁+d(n−1) olur. 1. adımdan 1. adıma sıfır geçiş; 1. adımdan 4. adıma üç geçiş vardır. n=1 yazıldığında sonuç a₁ olmalı; bu küçük uç kontrolü bir kaymayı hemen yakalar.",
+                "Özgün öğretim modeli: ilk adım 1, sabit artış 3, hedef terim 241. 1+3(n−1)=241 → 3(n−1)=240 → n=81. Bu model için ilk terim 2 olsaydı n=242/3 bulunurdu ve pozitif tam sayı bir adım olmazdı. “Yaklaşık 81” diye yuvarlamak eşitliği bozar."
+              ]
+            },
+            {
+              "code": "S23",
+              "title": "Sabit artış ile katlanmayı karıştırma",
+              "paragraphs": [
+                "Kuralı “her geçişte 3 ekle” diye verilen 1,4,7,… modelinde farklar 3,3,…; bu doğrusal örüntüdür. Kuralı “her yeni katmanı öncekinin iki katı yap” diye verilen 1,2,4,… modelinde oran 2,2,…; farklar 1,2,… olduğundan sabit artış yoktur. Yalnız birkaç sayısal terim bütün gelecek için tek bir kuralı ispatlamaz; burada üretim kuralı da açıkça verilmiştir. Benzer bir dallanma resmi aynı cebirsel kural anlamına gelmez.",
+                "2024 TYT Temel Matematik 17’de 30 günlük yürüyüş süresi 2. günden 15. güne kadar her gün 1 dakika artar. 16. günden başlayarak her gün 1 dakika azalır. İlk gün x dakikaysa 15. gün x+14, 16. gün x+13, 30. gün x−1 olur. İlk 15 günün toplamı 15x+105, son 15 gününki 15x+90’dır. 30x+195=1395 denklemi x=40 dakika verir. İlk 15 gün 705, son 15 gün 690 dakika eder. Tepe süresini yalnız 15. günde say."
+              ]
+            },
+            {
+              "code": "S24",
+              "title": "Ortak çarpanı bütün taraf üzerinde küçült",
+              "paragraphs": [
+                "6(x−2)=3x+12’de iki tarafı 3’e böl: 2(x−2)=x+4. Katsayılar küçülür; dağıtınca 2x−4=x+4 ve x=8 olur. Dağıtarak 6x−12=3x+12 yoluyla çözmek de aynı kökü verir. Daha kısa yol, aynı geçerli adımları daha küçük sayılarla kurabilir.",
+                "6x−2=3x+12’de yalnız 6x’i üçe bölmek yanlış olur. İki tarafın bütününü üçe bölmek ise tamamen geçerlidir: 2x−2/3=x+4; sadece bütün katsayılar tam sayıya sadeleşmediği için aynı pratik avantajı sunmaz. Normal yoldan 3x=14 ve x=14/3 elde edilir. “Ortak çarpan yoksa bölmek yasak” gibi yanlış bir kural çıkarma."
+              ]
+            },
+            {
+              "code": "S25",
+              "title": "Kısa yolun doğruluk ölçütü",
+              "paragraphs": [
+                "Önce hangi yapıyla karşılaştığını belirle: ax+b=c’de sabiti ayır; ortak çarpan varsa bütün tarafı küçült; parantezde her terime dağıt; sabit paydalarda ortak kat kullan; sözel durumda ilişkiyi ve birimi kur; sabit artışta ilk terimi ve n−1 geçişi koru. Tek bir anahtar sözcük her soruda aynı işlemi seçtirmez.",
+                "İki yöntem aynı başlangıç koşullarını, sayı alanını ve eşitliği koruyorsa ikisi de geçerlidir. Bir terimi atlamak, sıfır koşulunu gizlemek veya ilk denklem kontrolünü engellemek kısa yol değildir. Kişisel hız veya net artışı ölçülmedi; daha az satır yazmak tek başına daha iyi öğrenme kanıtı sayılmaz."
+              ]
+            },
+            {
+              "code": "S26",
+              "title": "İlk bozulan satırı bul ve onar",
+              "paragraphs": [
+                "3(x−2)=12 → 3x−2=12 zincirinde ilk hata dağıtmadır; doğru açılış 3x−6=12. 4x+7=2x+19 → 2x=26 zincirinde 7 yanlış işlem görmüştür; iki taraftan 7 çıkarınca 2x=12 olmalı. Sonuç sayısını ezberlemek yerine hatanın ilk oluştuğu eşitliği düzelt.",
+                "5(x−2)=5x−10 için yalnız x=0 demek özdeşliği tek değere indirger. aₙ=3n yazıp ilk terimi 1 kabul etmek başlangıcı kaydırır. Her onarımdan sonra ilk denklem, sayı alanı ve birim kontrolünü yeniden yap; doğru sonuca tesadüfen ulaşılmış olması bozuk yöntemi geçerli yapmaz."
+              ]
+            },
+            {
+              "code": "S27",
+              "title": "Desteği azaltarak farklı bağlamda dene",
+              "paragraphs": [
+                "İlk örnekte bütün işlem ve nedenleri oku. Sonraki örnekte yalnız ilk hamleyi aç ve ara satırları kendin yaz. Ardından notu kapatarak soruyu çöz, bulduğun değeri başlangıçta kontrol et ve kendi gerekçeni verilen çözümle karşılaştır. Yardım alarak çözmek değerlidir; bağımsız çözümle aynı kayıt değildir.",
+                "Bir yanlışta soruyu hemen baştan ezberleme: dağıtma mı, işaret mi, tanım koşulu mu, model mi bozulduğunu ayır. Aynı yapıyı farklı sayıda ve farklı bağlamda yeniden kur. Görsele bakmak, süre doldurmak veya “çalıştım” demek otomatik ustalık/XP sayılmaz; tekrarlar öğrenme gününü 1 sayan 3/7/21 düzeninde uygulamanın kayıtlarıyla izlenir."
+              ]
+            },
+            {
+              "code": "S28",
+              "title": "İki koşulu aynı sayı çiftiyle sağla",
+              "paragraphs": [
+                "Bir masada elma ve armut olduğunu düşün. Elma adedine x, armut adedine y diyelim. x ve y iki ayrı bilinmeyendir. x+y=5, ikisinin toplamını söyler. Bu koşulla (0, 5), (1, 4) ve (3, 2) gibi birçok çift mümkündür. Parantezde ilk sayı x’in, ikinci sayı y’nin değeridir. Bu yüzden (3, 2) ve (2, 3) iki farklı durumdur.",
+                "İkinci koşul x−y=1 olursa, elma sayısı armuttan bir fazladır. (3, 2) için 3+2=5 ve 3−2=1, ikisi de doğru. (2, 3) için toplam yine 5 fakat 2−3=−1. Denklem sistemi, aynı bilinmeyenlerin aynı değerleriyle birden çok koşulu birlikte ister. Tek denklemin çözümünü sistemin çözümü saymadan önce öteki koşulu denetle.",
+                "Yaş, para ve uzunlukta bilinmeyenlerin birimlerini yaz. Adetlerde negatif ve kesirli değerler genellikle kabul edilmez. Denklem sistemi önce cebirsel adayları verir. Bulduğun çifti iki eşitliğe ve metindeki sayı alanına ayrı ayrı geri koy."
+              ]
+            },
+            {
+              "code": "S29",
+              "title": "Bir doğruyu iki noktadan çiz",
+              "paragraphs": [
+                "Yatay eksen x’in, düşey eksen y’nin değerini gösterir. (3, 2) noktasına ulaşmak için başlangıçtan 3 birim sağa, 2 birim yukarı git. Eşit çizgi aralıkları kullan. ax+by=c biçiminde a ve b, sırasıyla x’in ve y’nin katsayıları, c sabit sayıdır. a ile b aynı anda sıfır değilse denklemin gerçek sayı çiftleri bir doğru oluşturur.",
+                "x+y=5 için x=0 yazınca y=5, y=0 yazınca x=5 olur. (0, 5) ve (5, 0) noktalarını birleştir. x−y=1 için x=0 iken y=−1, y=0 iken x=1. İkinci doğru (0, −1) ile (1, 0) üzerinden geçer. İki doğrunun kesiştiği (3, 2) noktasını ilk iki denklemde doğrula. Kesik ve düz çizgiyle denklemler ayırt edilebilir.",
+                "x=2 doğrusu düşeydir. Örneğin (2, 0) ile (2, 3) aynı doğru üzerindedir. y=3 doğrusu yataydır ve (0, 3) ile (2, 3) üzerinden geçer. İki eksen kesişimi yöntemi ayrı iki nokta üretmezse başka bir değer seç. Örneğin x+y=0 iki ekseni de (0, 0)’da keser, ikinci nokta olarak (1, −1) kullanılabilir."
+              ]
+            },
+            {
+              "code": "S30",
+              "title": "Bir bilinmeyenin yerine eşit ifadeyi yaz",
+              "paragraphs": [
+                "Yerine koyma, aynı sayıyı eşit bir ifadeyle değiştirmektir. x+y=7 denkleminden iki taraftan x çıkararak y=7−x elde et. 2x−y=5 denklemindeki y yerine 7−x yazınca yalnız x kalır. Parantez y’nin bütün değerini temsil eder. 2x−(7−x)=5 açıldığında 2x−7+x=5 olur.",
+                "Buradan x=4 bulunur. y=7−x bağıntısına dönünce y=3. Yerine koyduğun eşitliği elde tutmak ikinci bilinmeyeni geri bulmanı sağlar. y=7−x ifadesini çıkarıldığı x+y=7 denklemine koyarsan 7=7 olur. Bu satır, ikinci koşulu hiç kullanmadığı için ortak çifti seçemez.",
+                "Bir terimi ayırmak için bölüyorsan katsayının sıfır olmadığını denetle. y=x+1 gibi bir bilinmeyen önceden ayrılmışsa yerine koyma kısa bir başlangıçtır. Eşitliği değiştirdikten sonra bulduğun x ve y’yi ilk biçimlerde kontrol et."
+              ]
+            },
+            {
+              "code": "S31",
+              "title": "Toplayarak veya çıkararak bir bilinmeyeni yok et",
+              "paragraphs": [
+                "İki doğru eşitlikte sol tarafları kendi arasında, sağ tarafları kendi arasında toplarsan yeni eşitlik de doğrudur. Aynı işlem çıkarma için geçerlidir. Örneğin x+2y=8 ve x−y=2 denklemlerinde x katsayıları eşit. İkinci eşitliği ilkinden çıkarırsan x−x=0 ve 2y−(−y)=3y kalır. Sağda 8−2=6 olduğundan y=2 bulunur.",
+                "İki katsayı zıt ve aynı büyüklükteyse topla. Gerekirse bir denklemin iki tarafının tamamını aynı sıfır olmayan sayıyla çarp. 2x+3y=12’yi 2 ile ve 3x−2y=5’i 3 ile çarpınca 4x+6y=24 ve 9x−6y=15 olur. Topladığında y gider, 13x=39 kalır. 12’yi çarpmayı unutursan daha ilk satırda denklemi bozarsın.",
+                "Yok edilen bilinmeyeni geri bulmak için başlangıç denklemlerinden birini sakla. Burada 13x=39, x’i belirler ve y hakkında tek başına hiçbir şey söylemez. x=3’ü 2x+3y=12’ye koyunca y=2 olur. Son çift hem 6+6=12’yi hem 9−4=5’i sağlamalıdır."
+              ]
+            },
+            {
+              "code": "S32",
+              "title": "Denklem sistemi hangi çözüm türünü veriyor?",
+              "paragraphs": [
+                "İki denklem de gerçek bir doğruysa üç durum vardır. Kesişim tek noktadaysa tek bir sayı çifti bulunur. Farklı paralel doğruların ortak noktası yoktur. Çakışan doğruların bütün noktaları ortaktır, ancak bu noktalar yalnız o doğru üzerindedir. Örneğin x+y=4 ve 2x+2y=8 aynı doğruyu verir. (0, 4) ve (3, 1) çözümdür, (0, 0) çözüm değildir.",
+                "Bir katsayıyı yok ettikten sonra 0=0 kalması o yeni satırın her çift için doğru olduğunu gösterir. Elde kalan bağımsız denklemi yine kullan. x+y=4 ve 2x+2y=9 denklemlerinde ilk satırı ikiyle çarpıp karşılaştırınca 8=9 kalır. Çelişki varsa hiçbir çift iki koşulu birden sağlayamaz.",
+                "a ve b sıfırsa ax+by=c bir doğru denklemi olmaz. 0x+0y=0 her çifte izin verir ve öteki denklem çözüm kümesini belirler. 0x+0y=5 hiçbir çifte izin vermez. İki denklem de 0=0 ise sistemin çözümü bütün gerçek sayı çiftleridir. Bütçe örneğinde A ve B’nin negatif olamayacağı söylenirse A+B=4 doğrusunun sadece (0, 4) ile (4, 0) arasındaki parçası kalır."
+              ],
+              "table": {
+                "headers": [
+                  "İki gerçek doğrunun durumu",
+                  "Cebirsel işaret",
+                  "Ortak çözüm"
+                ],
+                "rows": [
+                  [
+                    "Bir noktada kesişir",
+                    "Her bilinmeyen tek değere belirlenir.",
+                    "Bir sıralı ikili"
+                  ],
+                  [
+                    "Paralel ve farklı",
+                    "Yok etmede 0=3 gibi yanlış eşitlik kalır.",
+                    "Boş küme ∅"
+                  ],
+                  [
+                    "Çakışır",
+                    "Bir satır ötekinin sıfır olmayan katıdır.",
+                    "Aynı doğru üzerindeki sonsuz çift"
+                  ]
+                ]
+              }
+            },
+            {
+              "code": "S33",
+              "title": "Katsayıların çapraz farkı neyi söyler?",
+              "paragraphs": [
+                "ax+by=c ve dx+ey=f yazalım. Katsayılar x ile y’nin önündeki sayılardır. İlk denklemi e, ikincisini b ile çarpıp ikincisini ilkinden çıkarınca y gider. Elde edilen eşitlik (ae−bd)x=ce−bf olur. Buradaki a×e−b×d farkına katsayı determinantı denir ve Δ ile gösterilebilir. Eşitlikten çıkarılan bu bilgi başlangıç denklemlerini denetlemenin kısa bir yoludur.",
+                "Δ sıfırdan farklıysa x=(ce−bf)/Δ olur. Öteki bilinmeyen de aynı yöntemle y=(af−cd)/Δ olur. x katsayısını yok etmek için ikinci eşitliği a ile, ilkini d ile çarp ve ilkini ikinciden çıkar. Böylece (ae−bd)y=af−cd çıkar. x ve y’yi iki başlangıç eşitliğinde denetle. Sıfır katsayı bulunan bir satır da bu yönteme girebilir. Türetilen sonuçları başlangıç satırlarının yerine tek başlarına koyma.",
+                "Δ=0 ise bu formüllerle bölme yapılamaz. Her iki denklem birer doğruysa (a,b) ve (d,e) katsayı çiftlerinden biri diğerinin sıfırdan farklı katıdır. Bir katsayı sıfır olsa da çiftleri karşılaştırmak için ona bölmen gerekmez. Sağ sabitlerin de aynı çarpanı taşıyıp taşımadığını yok etme ile denetle. Örneğin x+y=4’ün iki katından 2x+2y=8’i çıkarınca 0=0 kalır. İkinci eşitliğin sağında 9 varsa aynı işlem 0=−1 verir. Bir satırın iki katsayısı da sıfırsa önce o satırı değerlendir."
+              ]
+            },
+            {
+              "code": "S34",
+              "title": "Parametre değişince çözüm türünü yeniden kontrol et",
+              "paragraphs": [
+                "k, denklemlerin katsayısı olarak önce değeri seçilebilen bir parametredir. Her k için kx+2y=6 ve 2x+ky=6 sistemini düşünüyoruz. Çözülmesi istenen çift x ile y’dir. k değiştiğinde doğruların eğimi ve kesişim durumu değişebilir.",
+                "k=2 seçilirse iki eşitlik de 2x+2y=6 olur. Çözüm x+y=3 doğrusu üzerindeki bütün çiftlerdir. k=−2 seçilirse iki eşitliği topladığında 0=12 kalır. Bu k değerinde çözüm yoktur. Özel değerleri ayırmadan k−2 veya k+2 ile bölmek, sıfıra bölme riskini gizler.",
+                "k≠2 ve k≠−2 iken birinci denklemden ikinciyi çıkar. (k−2)(x−y)=0 olduğundan x=y. Böylece (k+2)x=6, x=y=6/(k+2). Örneğin k=1 iken x=y=2 ve iki denklem de 6 verir. Δ=k²−4=(k−2)(k+2) de özel değerlerin niçin tam olarak 2 ile −2 olduğunu gösterir."
+              ]
+            },
+            {
+              "code": "S35",
+              "title": "Paydada değişken varsa kökü başlangıç alanına geri koy",
+              "paragraphs": [
+                "(x+2)/(x−1)=2 denkleminde x=1 yasaktır. Diğer x değerlerinde iki tarafı x−1 ile çarparsak x+2=2x−2, buradan x=4. Başlangıçta 6/3=2 ve payda sıfır olmadığı için 4 geçerli köktür.",
+                "(2x−2)/(x−1)=3 için yine x≠1 gerekir. Payda ile çarpınca 2x−2=3x−3, cebirsel aday x=1 olur. Bu aday başlangıç kesrini tanımsız yaptığından çözüm kümesi ∅. Doğrudan kontrol: izinli her x için 2x−2=2(x−1) ve kesrin değeri 2, dolayısıyla 3 olamaz.",
+                "Bir dönüşüm yalnız yazdığın sayı alanında eşdeğerdir. Paydadan kurtulduğunda yasak değer görünmez olabilir. İşlem sonuna kadar x≠1 koşulunu kenarda tut."
+              ]
+            },
+            {
+              "code": "S36",
+              "title": "Fiyat ve aktarım problemlerinde iki bağıntı yaz",
+              "paragraphs": [
+                "Bir defterin birim fiyatı d TL, bir kalemin birim fiyatı k TL olsun. İki defterle üç kalem 31 TL, üç defterle iki kalem 34 TL ise 2d+3k=31 ve 3d+2k=34. Çarpanlar alınan adet, katsayının yanındaki bilinmeyen ise bir ürünün fiyatıdır. Her terimin birimi TL olur. Birinci eşitliğin üç katından ikincinin iki katını çıkarınca 5k=25 elde edilir. k=5, d=8. İki alışverişi 16+15=31 ve 24+10=34 biçiminde geri kontrol et.",
+                "Aktarımda iki nicelik zıt yönde değişir. Özgün örnekte A ve B kaplarında toplam 26 L var. A’dan B’ye 4 L aktarılınca ikisi eşit oluyor. Başlangıç miktarları a ve b litre ise a+b=26, a−4=b+4. İkinci eşitlik a−b=8 olur. Toplamla birleştirince a=17 ve b=9 çıkar. Son durumda iki kapta 13’er litre var, toplam yine 26 L.",
+                "Aktaran kapta aktarılacak kadar su bulunmalı. İki kaptaki başlangıç miktarları da negatif olamaz. Fiyatla çalışırken aynı ürünün iki alışverişteki birim fiyatı sabit kalır. Yalnız toplamı veya yalnız farkı bilmek, iki başlangıç miktarını birden bulmaya yetmez."
+              ]
+            },
+            {
+              "code": "S37",
+              "title": "Tek bilinmeyende uygun ilk hamleyi seç",
+              "paragraphs": [
+                "İki tarafı aynı sıfır olmayan sayıyla çarpıp geri dönebilirsin. Örneğin x=3 eşitliğini 0 ile çarparsan 0=0 elde edersin, ama yeni satır x’i tek bir değere belirlemez. Aynı kural bir katsayıya bölmeden önce de geçerlidir.",
+                "aₙ gösterimi n’inci terim, a₁ ilk terim ve d her geçişte eklenen sabit sayıdır. İlk terim 4, d=3 ise a₅=4+3×4=16. Beşinci terime ulaşmak için dört kez artış yapılır. Artışların sayısını ve her artışın büyüklüğünü ayrı yaz.",
+                "Tabloda her satır önce geçerli bir yol, sonra tek koşulu bozduğunda ne değiştiğini, son olarak aynı fikrin başka bir kullanımını gösterir. Sonuçları baştaki eşitliğe yazarak denetle."
+              ],
+              "table": {
+                "headers": [
+                  "Yöntem",
+                  "Geçerli koşul",
+                  "Yakın hata",
+                  "Başka bağlam"
+                ],
+                "rows": [
+                  [
+                    "Sabiti ayır",
+                    "3x+2=17. 2 çıkar, 3’e böl, x=5.",
+                    "0x+2=17 için 0’a bölünmez. 2=17 çelişkisi kalır.",
+                    "2 L başlangıçlı depo dakikada 3 L alır. 2+3t=17, t=5 dakika."
+                  ],
+                  [
+                    "Bütün tarafı böl",
+                    "6(x−2)=3x+12. İki tarafı 3’e böl. x=8 ve 36=36.",
+                    "6x−2=3x+12’de tek başına 6x’i bölme. 3x=14 ve x=14/3.",
+                    "Kargo bedelleri 6(t−2) TL ve 3t+12 TL. Eşitlik t=8’de iki bedeli 36 TL yapar."
+                  ],
+                  [
+                    "Parantezi dağıt",
+                    "2−3(x−1)=11. 2−3x+3=11, x=−2.",
+                    "−3(x−1) açılınca −3x+3 olur. x=0 için doğru değer 3’tür. Yanlış açılım −3x−1 ise aynı denemede −1 verir.",
+                    "5 pakette her biri n−2 parça, toplam 35. 5(n−2)=35, n=9."
+                  ],
+                  [
+                    "Paydalarla çalış",
+                    "(x−1)/2+(x+1)/3=4. 6 ile çarp, 5x−1=24, x=5.",
+                    "(x−1)/(x−1)=2’de x≠1. Payda ile çarpınca çıkan x=1 başlangıçta yasaktır.",
+                    "İki iş süresi x/2 ve x/3 saat. Toplam 5 saatse x=6, süreler 3 ve 2 saattir."
+                  ],
+                  [
+                    "Bilinmeyeni birimle tanımla",
+                    "9 ürün 5 veya 8 TL, toplam 54 TL. 5(9−x)+8x=54, x=3 pahalı ürün.",
+                    "5(9−x)+8=54 yazmak bir pahalı ürünün ücretini sayar. x tane varsa ücret 8x.",
+                    "7 araç 10 ya da 14 koltuklu, toplam 82. 10(7−x)+14x=82, x=3 büyük araç."
+                  ],
+                  [
+                    "Sabit artışı say",
+                    "İlk 4, artış 3. 4+3(n−1)=31, n=10.",
+                    "4, 7, 11, 16 dizisinde artışlar 3, 4, 5. Sabit 3 varsayımı üçüncü terimi 10 yapar.",
+                    "İlk sırada 12 koltuk, her sonraki sırada 2 fazla. 12+2(n−1)=30, n=10."
+                  ]
+                ]
+              }
+            },
+            {
+              "code": "S38",
+              "title": "İki bilinmeyende yöntemin koşulunu karşılaştır",
+              "paragraphs": [
+                "Bir bilinmeyen zaten yalnızsa yerine koymayla başla. Aynı veya zıt bir katsayı görünüyorsa, eşitlikleri çıkararak veya toplayarak yok etme kısa olabilir. Sadeleştirdikten sonra ikinci bilinmeyen için bir başlangıç eşitliğine dön ve iki koşulu kontrol et.",
+                "Katsayılar ve sabit aynı oranda değişiyorsa aynı doğruyu yeniden yazmış olabilirsin. Sadece katsayılar aynı orandaysa sağ tarafta çelişki oluşabilir. Grafikteki noktaları denkleme koyarak aynı çizgiyi veya ayrı paralel çizgileri sınayabilirsin."
+              ],
+              "table": {
+                "headers": [
+                  "Yöntem",
+                  "Geçerli örnek",
+                  "Yakın hata",
+                  "Başka bağlam"
+                ],
+                "rows": [
+                  [
+                    "Yerine koyma",
+                    "y=x+1 ve x+y=7. x+(x+1)=7, (x, y)=(3, 4).",
+                    "y=x+1’i yine kendisine koymak x+1=x+1 verir. Toplam koşulu kullanılmadı.",
+                    "Kırmızı sayısı maviden 1 fazla, toplam 7. k=m+1 ve k+m=7, m=3, k=4."
+                  ],
+                  [
+                    "Yok etme",
+                    "x+2y=8 ve x−y=2. İkinciyi çıkar. 3y=6, (x, y)=(4, 2).",
+                    "Bu iki satırı toplarsan 2y−y=y kalır. Aynı x katsayılarını yok etmek için çıkar.",
+                    "Bir ürünün bedeli x TL, ek işlem tutarı y TL. İki ek işlemle alış 8 TL, aynı tutarda bir indirimle alış 2 TL. x=4 ve y=2."
+                  ],
+                  [
+                    "Çözüm türü",
+                    "x+y=4 ve 2x+2y=8 aynı doğru. y=4−x olduğunda iki koşul sağlanır.",
+                    "İkinci sabit 9 olursa ilk denklemin iki katı ile 8=9 çelişkisi çıkar.",
+                    "Bütçede A+B=4, 2A+2B=8. A,B≥0 ise (0, 4) ve (4, 0) arasındaki doğru parçası kalır."
+                  ]
+                ]
+              }
+            },
+            {
+              "code": "S39",
+              "title": "Prova · Tek bilinmeyenli ilk yedi soru",
+              "paragraphs": [
+                "Önce 1–7’yi, sonra ikinci prova sayfasındaki 8–14’ü çöz. Her soruda ilk işlemini ve nedenini yaz. Bir sayıyı kök olarak bulduğunda ilk eşitliğe dön. Bir çözüm kümesi isteniyorsa tek bir örnek değeriyle yetinme.",
+                "İlk denemeyi süre tutmadan yapabilirsin. Takılırsan önce yalnız ilk hamleyi yaz. Çözümleri bütün istemleri gördükten sonra aç."
+              ],
+              "table": {
+                "headers": [
+                  "Soru",
+                  "İstem"
+                ],
+                "rows": [
+                  [
+                    "1. soru",
+                    "x gerçek sayı. 7x−9=40 denklemini çöz ve başlangıçta denetle."
+                  ],
+                  [
+                    "2. soru",
+                    "x gerçek sayı. 3(2x−5)=x+20 denklemini çöz. İlk eşitliğin iki tarafını ayrı ayrı hesapla."
+                  ],
+                  [
+                    "3. soru",
+                    "x gerçek sayı. (x+2)/4−(x−1)/3=1 denklemini çöz."
+                  ],
+                  [
+                    "4. soru",
+                    "x gerçek sayı. 5(x−2)=5x−10 denkleminin çözüm kümesini belirle."
+                  ],
+                  [
+                    "5. soru",
+                    "Bir sayının üçte birinin 4 fazlası 11. Sayı kaçtır?"
+                  ],
+                  [
+                    "6. soru",
+                    "Bir örüntünün ilk terimi 5 ve her sonraki terimi bir öncekinden 4 fazla. Terim 69 olduğunda sıra numarası nedir?"
+                  ],
+                  [
+                    "7. soru",
+                    "İki yetişkin ve üç öğrenci bileti 390 TL. Yetişkin bileti öğrenci biletinden 45 TL pahalı. Bir öğrenci bileti kaç TL?"
+                  ]
+                ]
+              }
+            },
+            {
+              "code": "S40",
+              "title": "Prova · Ortak koşul, grafik ve aktarım",
+              "paragraphs": [
+                "8–14. sorularda adımları görünür yaz. Bir sistemde bulduğun çifti her iki denklemde denetle. Değişken paydada baştaki yasak değeri yaz, para ve miktar sorusunda birimleri koru.",
+                "Çözüm bölümüne geçmeden iki kısa başlangıcı dene. İlkinde hazır eşitlikten iki tarafta hangi terimi çıkaracağını bul. İkincide iki denklem toplandığında kalan katsayıyı belirle. İki durumda da kendi yerine koyma kontrolünü yaz.",
+                "4x+7=2x+19 ile başla. İki taraftan ____ çıkarınca 2x+7=19. Ardından ____ çıkar, ____’ye böl. Bulduğun değeri ilk iki ifadede denetle.",
+                "x+y=9 ve 2x−y=3. Toplayınca ____×x=12. x=____, y=____. İki eşitlikte de denetle."
+              ],
+              "table": {
+                "headers": [
+                  "Soru",
+                  "İstem"
+                ],
+                "rows": [
+                  [
+                    "8. soru",
+                    "x+y=8 ve 2x−y=7 sisteminin çözümünü bul. Çifti her iki denklemde denetle."
+                  ],
+                  [
+                    "9. soru",
+                    "Birinci sistem x−2y=3 ve 2x−4y=6. İkinci sistemde ilk denklem aynı, diğeri 2x−4y=7. Çözüm kümelerini karşılaştır."
+                  ],
+                  [
+                    "10. soru",
+                    "x gerçek sayı. (3x−6)/(x−2)=4 denklemini çöz. İlk satırda paydayı sıfır yapan değeri yaz."
+                  ],
+                  [
+                    "11. soru",
+                    "Aynı tarifede 2 tam ve 3 indirimli giriş 230 TL, 3 tam ve 2 indirimli giriş 270 TL. Her türün birim fiyatını bul."
+                  ],
+                  [
+                    "12. soru",
+                    "4(x+3)=4x+12 denkleminin gerçek çözüm kümesi nedir? Yalnız x=0 demek neden yetmez?"
+                  ],
+                  [
+                    "13. soru",
+                    "x+y=6 ve x−y=2 doğrularının ortak noktasını hesapla. x+y=6 doğrusu üzerinde iki ayrı nokta daha yaz."
+                  ],
+                  [
+                    "14. soru",
+                    "A ve B depolarında toplam 18 L su var. A’dan B’ye 3 L aktarılınca miktarlar eşit oluyor. Başlangıçtaki iki miktarı ve son toplamı bul."
+                  ]
+                ]
+              }
+            }
+          ],
+          "examples": [
+            {
+              "code": "E01",
+              "title": "Bir kökü gerçekten denetle",
+              "prompt": "2x+3=11 denklemini gerçek sayılarda çöz.",
+              "strategy": "Önce +3 etkisini iki taraftan kaldır.",
+              "steps": [
+                {
+                  "label": "Sabitleri ayır",
+                  "explanation": "İki taraftan 3 çıkarmak eşitliği korur.",
+                  "expression": "2x+3−3=11−3"
+                },
+                {
+                  "label": "Katsayıyı kaldır",
+                  "explanation": "2 sıfır olmadığı için iki tarafı 2’ye bölebilirsin.",
+                  "expression": "2x=8 → x=4"
+                }
+              ],
+              "answer": "ÇK={4}",
+              "check": "2×4+3=11.",
+              "pitfall": "2x’i 2+x sanma; x=3 denemesinde 9≠11 olur."
+            },
+            {
+              "code": "E02",
+              "title": "Üç eş parçanın değerini bul",
+              "prompt": "3x+6=24 denklemini çöz.",
+              "strategy": "Önce altı birimi iki taraftan çıkar.",
+              "steps": [
+                {
+                  "label": "Ek kısmı kaldır",
+                  "explanation": "Üç eş x parçasına toplam 18 kalır.",
+                  "expression": "3x+6−6=24−6 → 3x=18"
+                },
+                {
+                  "label": "Eş böl",
+                  "explanation": "Her parça aynı olduğundan 18 üç eş gruba bölünür.",
+                  "expression": "x=18/3=6"
+                }
+              ],
+              "answer": "x=6",
+              "check": "3×6+6=24.",
+              "pitfall": "Sağ tarafı 6 ile değiştirmeden soldaki +6’yı silme."
+            },
+            {
+              "code": "E03",
+              "title": "Negatif sabitin ters etkisi",
+              "prompt": "5x−7=18 denklemini çöz.",
+              "strategy": "İki tarafa 7 ekleyerek başla.",
+              "steps": [
+                {
+                  "label": "Yediyi ekle",
+                  "explanation": "−7 ile +7 birbirini götürür; sağ taraf da değişir.",
+                  "expression": "5x−7+7=18+7 → 5x=25"
+                },
+                {
+                  "label": "Beşe böl",
+                  "explanation": "5 sıfır değildir.",
+                  "expression": "x=25/5=5"
+                }
+              ],
+              "answer": "x=5",
+              "check": "5×5−7=18.",
+              "pitfall": "18−7 yaparsan doğru ters işlemi uygulamamış olursun."
+            },
+            {
+              "code": "E04",
+              "title": "Parantezi aç, iki taraftaki x’i ayır",
+              "prompt": "4(x−3)=2x+10 denklemini çöz.",
+              "strategy": "Önce her parantez terimini 4 ile çarp.",
+              "steps": [
+                {
+                  "label": "Dağıt",
+                  "explanation": "4, x’e ve −3’e ayrı uygulanır.",
+                  "expression": "4x−12=2x+10"
+                },
+                {
+                  "label": "İki taraftan 2x çıkar",
+                  "explanation": "Her iki x’li ifade arasındaki fark 2x olur.",
+                  "expression": "2x−12=10"
+                },
+                {
+                  "label": "On iki ekle",
+                  "explanation": "İki tarafa +12 uygulanır.",
+                  "expression": "2x=22"
+                },
+                {
+                  "label": "İkiye böl",
+                  "explanation": "Sıfır olmayan 2’ye bölünür.",
+                  "expression": "x=11"
+                }
+              ],
+              "answer": "x=11",
+              "check": "4(11−3)=32 ve 2×11+10=32.",
+              "pitfall": "4(x−3)’ü 4x−3 diye açmak farklı bir denklem üretir."
+            },
+            {
+              "code": "E05",
+              "title": "Aynı denklemi daha küçük katsayıyla çöz",
+              "prompt": "4(x−3)=2x+10 denklemini önce ikiye bölerek çöz.",
+              "strategy": "Sağ taraftaki iki terimin de 2’ye bölündüğünü göster.",
+              "steps": [
+                {
+                  "label": "Bütün iki tarafı küçült",
+                  "explanation": "(2x+10)/2=x+5; yalnız 2x değil, +10 da bölünür.",
+                  "expression": "2(x−3)=x+5"
+                },
+                {
+                  "label": "Dağıt ve topla",
+                  "explanation": "İki taraftan x çıkar.",
+                  "expression": "2x−6=x+5 → x−6=5"
+                },
+                {
+                  "label": "Altıyı ekle",
+                  "explanation": "İki tarafın +6 ile değişimi eşitliği korur.",
+                  "expression": "x=11"
+                }
+              ],
+              "answer": "x=11",
+              "check": "İlk denklemde iki taraf 32’dir; önceki yolun köküyle aynı.",
+              "pitfall": "Bu yöntem geçerlidir; fakat her denklemde önce bölmek işlem sayısını azaltmaz."
+            },
+            {
+              "code": "E06",
+              "title": "İki sabit paydayı bir çarpımla yönet",
+              "prompt": "(x−1)/3+(x+2)/2=6 denklemini çöz.",
+              "strategy": "Paydaların ortak katı 6 ile bütün iki tarafı çarp.",
+              "steps": [
+                {
+                  "label": "Ortak katla çarp",
+                  "explanation": "6/3=2 ve 6/2=3; sağdaki 6 da 6 ile çarpılır.",
+                  "expression": "2(x−1)+3(x+2)=36"
+                },
+                {
+                  "label": "Parantezleri aç",
+                  "explanation": "Her çarpan kendi payının tamamına dağılır.",
+                  "expression": "2x−2+3x+6=36"
+                },
+                {
+                  "label": "Benzerleri topla",
+                  "explanation": "Sabitlerin toplamı −2+6=4’tür.",
+                  "expression": "5x+4=36 → 5x=32"
+                },
+                {
+                  "label": "Beşe böl",
+                  "explanation": "Kesirli kök gerçek sayılarda geçerlidir.",
+                  "expression": "x=32/5"
+                }
+              ],
+              "answer": "x=32/5",
+              "check": "İlk kesirler 9/5 ve 21/5; toplam 30/5=6.",
+              "pitfall": "Sadece paydalara çizgi atıp sağ tarafı aynı bırakmak eşitliği korumaz."
+            },
+            {
+              "code": "E07",
+              "title": "Özdeşlikte bütün kökleri gör",
+              "prompt": "3(x+2)=3x+6 denkleminin çözüm kümesini bul.",
+              "strategy": "İki taraftaki ifadeleri sadeleştir.",
+              "steps": [
+                {
+                  "label": "Dağıt",
+                  "explanation": "İki taraf aynı ifadeye dönüştü.",
+                  "expression": "3x+6=3x+6"
+                },
+                {
+                  "label": "Eş ifadeleri çıkar",
+                  "explanation": "Bu doğru eşitlik x’in her gerçek değerinde geçerlidir.",
+                  "expression": "0=0"
+                }
+              ],
+              "answer": "ÇK=ℝ",
+              "check": "x=0 da x=7 de çalışır; asıl kanıt iki ifadenin cebirsel özdeşliğidir.",
+              "pitfall": "Yalnız denediğin x=0’ı cevap verme; istenen bütün çözüm kümesidir."
+            },
+            {
+              "code": "E08",
+              "title": "x yok olurken yanlış bir eşitlik kalırsa",
+              "prompt": "2(x−1)=2x+5 denkleminin çözüm kümesini bul.",
+              "strategy": "Dağıttıktan sonra iki taraftan 2x çıkar.",
+              "steps": [
+                {
+                  "label": "Dağıt",
+                  "explanation": "2×(−1)=−2.",
+                  "expression": "2x−2=2x+5"
+                },
+                {
+                  "label": "x’leri çıkar",
+                  "explanation": "Son satır x’ten bağımsız ve yanlıştır.",
+                  "expression": "−2=5"
+                }
+              ],
+              "answer": "ÇK=∅",
+              "check": "Her x’te sol taraf sağdan 7 küçüktür; eşit olamaz.",
+              "pitfall": "x’lerin kaybolması her zaman bütün sayılar çözüm demek değildir; sabitleri karşılaştır."
+            },
+            {
+              "code": "E09",
+              "title": "Bölmeden önce parametrenin sıfır durumunu ayır",
+              "prompt": "k gerçek parametre olmak üzere k(x−1)=2x−k denklemini çöz.",
+              "strategy": "k−2’ye hemen bölme; iki durumu koru.",
+              "steps": [
+                {
+                  "label": "Dağıt ve topla",
+                  "explanation": "İki tarafa k ekleyip 2x çıkarırsın.",
+                  "expression": "kx−k=2x−k → (k−2)x=0"
+                },
+                {
+                  "label": "Sıfır olmayan katsayı",
+                  "explanation": "Bu durumda k−2’ye bölme geçerlidir.",
+                  "expression": "k≠2 ise x=0"
+                },
+                {
+                  "label": "Sıfır katsayı",
+                  "explanation": "Bu durumda her gerçek x eşitliği sağlar.",
+                  "expression": "k=2 ise 0x=0"
+                }
+              ],
+              "answer": "k≠2: ÇK={0}; k=2: ÇK=ℝ",
+              "check": "k=2’de başlangıç 2x−2=2x−2 olur; k=3’te x=0 iki tarafta −3 verir.",
+              "pitfall": "k−2’ye koşulsuz bölmek k=2 durumunu kaybettirir."
+            },
+            {
+              "code": "E10",
+              "title": "İki bilet grubunu tek bilinmeyenle kur",
+              "prompt": "Yetişkin bileti 80 TL, öğrenci bileti 50 TL. Toplam 12 kişi 780 TL ödüyor. Yetişkin sayısı kaçtır?",
+              "strategy": "x yetişkin sayısıysa öğrenci sayısını 12−x yaz.",
+              "steps": [
+                {
+                  "label": "Grupları kur",
+                  "explanation": "Her grubun adedi kendi TL fiyatıyla çarpılır.",
+                  "expression": "80x+50(12−x)=780"
+                },
+                {
+                  "label": "Dağıt ve birleştir",
+                  "explanation": "Öğrenci adedindeki −x, −50x katkısını verir.",
+                  "expression": "80x+600−50x=780 → 30x=180"
+                },
+                {
+                  "label": "Çöz ve alana bak",
+                  "explanation": "0≤6≤12 ve 6 tam sayıdır.",
+                  "expression": "x=6"
+                }
+              ],
+              "answer": "6 yetişkin, 6 öğrenci",
+              "check": "6+6=12; 6×80+6×50=780 TL.",
+              "pitfall": "İki grubu da x saymak toplam 12 kişi şartını kaybettirir."
+            },
+            {
+              "code": "E11",
+              "title": "Desteği azaltılmış sözel denklem",
+              "prompt": "Bir sayının 4 katının 7 fazlası, aynı sayının 2 katının 19 fazlasına eşittir. Sayı kaçtır?",
+              "strategy": "Önce hangi iki niceliğin eşit olduğunu yaz.",
+              "steps": [
+                {
+                  "label": "Model",
+                  "explanation": "İki tarafta da aynı bilinmeyen sayı kullanılır.",
+                  "expression": "4x+7=2x+19"
+                },
+                {
+                  "label": "x’leri azalt",
+                  "explanation": "İki taraftan 2x çıkar.",
+                  "expression": "2x+7=19"
+                },
+                {
+                  "label": "Sabiti kaldır",
+                  "explanation": "İki taraftan 7 çıkar.",
+                  "expression": "2x=12"
+                },
+                {
+                  "label": "Yalnız bırak",
+                  "explanation": "İkiyi sıfır olmayan katsayı olarak böl.",
+                  "expression": "x=6"
+                }
+              ],
+              "answer": "x=6",
+              "check": "4×6+7=31; 2×6+19=31.",
+              "pitfall": "19+7 yapıp 26’ya gitme; +7 etkisini −7 ile kaldır."
+            },
+            {
+              "code": "E12",
+              "title": "Ortak çarpanı bütün tarafta azalt",
+              "prompt": "6(x−2)=3x+12 denklemini çöz.",
+              "strategy": "Her iki tarafın tamamını 3’e böl.",
+              "steps": [
+                {
+                  "label": "Ortak çarpanı azalt",
+                  "explanation": "Solun dış katsayısı ve sağın iki terimi birlikte bölünür.",
+                  "expression": "2(x−2)=x+4"
+                },
+                {
+                  "label": "Dağıt",
+                  "explanation": "2×(−2)=−4.",
+                  "expression": "2x−4=x+4"
+                },
+                {
+                  "label": "Topla",
+                  "explanation": "İki taraftan x çıkar, 4 ekle.",
+                  "expression": "x=8"
+                }
+              ],
+              "answer": "x=8",
+              "check": "6(8−2)=36; 3×8+12=36.",
+              "pitfall": "Ortak çarpanı iptal etmek yalnız bir seçilmiş terimi bölmek değildir."
+            },
+            {
+              "code": "E13",
+              "title": "Yakın görünen örnekte bütün tarafı koru",
+              "prompt": "6x−2=3x+12 denklemini çöz; iki tarafı 3’e bölmenin geçerli olup olmadığını açıkla.",
+              "strategy": "İlk denklemde benzer terimleri ayır; bölme karşılaştırmasını ayrıca yap.",
+              "steps": [
+                {
+                  "label": "Normal yol",
+                  "explanation": "İki taraftan 3x çıkar, ardından 2 ekle.",
+                  "expression": "3x−2=12 → 3x=14"
+                },
+                {
+                  "label": "Kök",
+                  "explanation": "Son katsayı 3 sıfır değildir.",
+                  "expression": "x=14/3"
+                },
+                {
+                  "label": "Geçerli bölme yolu",
+                  "explanation": "Bütün iki taraf 3’e bölünürse −2 de üçe bölünür; bu adım geçerlidir.",
+                  "expression": "2x−2/3=x+4"
+                }
+              ],
+              "answer": "x=14/3; bütün iki tarafı 3’e bölmek geçerli",
+              "check": "6×14/3−2=26; 3×14/3+12=26.",
+              "pitfall": "2x−2=x+4 yazmak yalnız bazı terimleri bölmüş olur ve geçersizdir."
+            },
+            {
+              "code": "E14",
+              "title": "Eksi terimi kaldır",
+              "prompt": "7x−9=40 denklemini çöz.",
+              "strategy": "İki tarafa 9 ekle.",
+              "steps": [
+                {
+                  "label": "Dokuzu ekle",
+                  "explanation": "−9 etkisi +9 ile kaldırılır.",
+                  "expression": "7x=49"
+                },
+                {
+                  "label": "Yediye böl",
+                  "explanation": "49/7=7.",
+                  "expression": "x=7"
+                }
+              ],
+              "answer": "x=7",
+              "check": "7×7−9=40.",
+              "pitfall": "40−9 yapma; −9’un ters işlemi +9’dur."
+            },
+            {
+              "code": "E15",
+              "title": "Önce dağıtmayı tam yap",
+              "prompt": "3(2x−5)=x+20 denklemini çöz.",
+              "strategy": "3’ü 2x ve −5’in ikisine uygula.",
+              "steps": [
+                {
+                  "label": "Dağıt",
+                  "explanation": "3×2x=6x ve 3×(−5)=−15.",
+                  "expression": "6x−15=x+20"
+                },
+                {
+                  "label": "x’leri ve sabitleri ayır",
+                  "explanation": "İki taraftan x çıkar ve 15 ekle.",
+                  "expression": "5x=35"
+                },
+                {
+                  "label": "Katsayıyı kaldır",
+                  "explanation": "5 sıfır olmadığı için bölme yapılır.",
+                  "expression": "x=7"
+                }
+              ],
+              "answer": "x=7",
+              "check": "3(2×7−5)=27; 7+20=27.",
+              "pitfall": "3(2x−5)’i 6x−5 diye açmak ilk hatadır."
+            },
+            {
+              "code": "E16",
+              "title": "Kesirli çıkarmada ikinci payı birlikte değiştir",
+              "prompt": "(x+2)/4−(x−1)/3=1 denklemini çöz.",
+              "strategy": "İki tarafı 12 ile çarp, eksi işaretini ikinci parantezle birlikte tut.",
+              "steps": [
+                {
+                  "label": "Ortak kat",
+                  "explanation": "12/4=3, 12/3=4.",
+                  "expression": "3(x+2)−4(x−1)=12"
+                },
+                {
+                  "label": "Dağıt",
+                  "explanation": "−4×(−1)=+4.",
+                  "expression": "3x+6−4x+4=12"
+                },
+                {
+                  "label": "Topla ve çöz",
+                  "explanation": "Son adımda iki taraf −1’e bölünür.",
+                  "expression": "−x+10=12 → −x=2 → x=−2"
+                }
+              ],
+              "answer": "x=−2",
+              "check": "İlk kesirler 0/4 ve −3/3; 0−(−1)=1.",
+              "pitfall": "İkinci paya eksi dağıtılırken +4’ü −4 yazma."
+            },
+            {
+              "code": "E17",
+              "title": "Bir değer bulmak yerine küme belirle",
+              "prompt": "5(x−2)=5x−10 denkleminin çözüm kümesini bul.",
+              "strategy": "Sol tarafı açıp iki tarafın aynı olduğunu göster.",
+              "steps": [
+                {
+                  "label": "Dağıt",
+                  "explanation": "Bütün terimler aynı.",
+                  "expression": "5x−10=5x−10"
+                },
+                {
+                  "label": "Çıkar",
+                  "explanation": "Her gerçek x başlangıç eşitliğini sağlar.",
+                  "expression": "0=0"
+                }
+              ],
+              "answer": "ÇK=ℝ",
+              "check": "x=0 yalnız bir örnek; 5x−10 ifadesinin iki tarafta aynı olması bütün değerleri kapsar.",
+              "pitfall": "Cevap {0} değildir; bu yalnız çözümlerin küçük bir alt kümesidir."
+            },
+            {
+              "code": "E18",
+              "title": "Üçte biri alındıktan sonra ekle",
+              "prompt": "Bir sayının üçte birinin 4 fazlası 11’dir. Sayıyı bul.",
+              "strategy": "Dilimlenen niceliğin x olduğunu belirle.",
+              "steps": [
+                {
+                  "label": "Model",
+                  "explanation": "4 ekleme üçte birden sonra yapılır.",
+                  "expression": "x/3+4=11"
+                },
+                {
+                  "label": "Dördü çıkar",
+                  "explanation": "İki taraftan 4 çıkarılır.",
+                  "expression": "x/3=7"
+                },
+                {
+                  "label": "Üçle çarp",
+                  "explanation": "Paydadaki 3 sıfır değildir.",
+                  "expression": "x=21"
+                }
+              ],
+              "answer": "21",
+              "check": "21/3+4=7+4=11.",
+              "pitfall": "(x+4)/3 yazarsan başka bir cümleyi modelliyorsun."
+            },
+            {
+              "code": "E19",
+              "title": "Örüntüde başlangıç artış değildir",
+              "prompt": "İlk terimi 5 olan bir örüntü her adımda 4 artıyor. Terim 69 olduğunda adım kaçtır?",
+              "strategy": "n−1 geçiş olduğunu başta yaz.",
+              "steps": [
+                {
+                  "label": "Model",
+                  "explanation": "İlk değer 5, her geçiş 4 ekler.",
+                  "expression": "5+4(n−1)=69"
+                },
+                {
+                  "label": "Başlangıcı çıkar",
+                  "explanation": "İki taraftan 5 çıkarılır.",
+                  "expression": "4(n−1)=64"
+                },
+                {
+                  "label": "Geçiş ve adım",
+                  "explanation": "16 geçiş için 17 adım vardır.",
+                  "expression": "n−1=16 → n=17"
+                }
+              ],
+              "answer": "17. adım",
+              "check": "5+4×16=69; n=1 koyunca 5 çıkar.",
+              "pitfall": "4n+5 yazmak ilk adımı 9 yapar ve bir adım kaydırır."
+            },
+            {
+              "code": "E20",
+              "title": "Bilinen fiyat farkını her bilete uygula",
+              "prompt": "İki yetişkin ve üç öğrenci bileti 390 TL. Yetişkin bileti öğrenci biletinden 45 TL pahalıdır. Öğrenci bileti kaç TL?",
+              "strategy": "s öğrenci fiyatı olsun; yetişkin s+45 olur.",
+              "steps": [
+                {
+                  "label": "Model",
+                  "explanation": "İki yetişkinin her birinin farkı 45 TL’dir.",
+                  "expression": "2(s+45)+3s=390"
+                },
+                {
+                  "label": "Dağıt",
+                  "explanation": "2×45=90.",
+                  "expression": "5s+90=390"
+                },
+                {
+                  "label": "Çöz",
+                  "explanation": "İki taraftan 90 çıkar, 5’e böl.",
+                  "expression": "5s=300 → s=60"
+                }
+              ],
+              "answer": "60 TL",
+              "check": "Yetişkin 105 TL; 2×105+3×60=390 TL.",
+              "pitfall": "Toplam farkı 45 sanmak yetişkin adedini unutmak olur."
+            },
+            {
+              "code": "E21",
+              "title": "Başlangıç değişince tam sayı adımı kalıyor mu?",
+              "prompt": "İlk terim 2, sabit artış 3 olan örüntüde tam olarak 241 değerine ulaşılan pozitif tam sayı adımı var mı?",
+              "strategy": "Modeli değiştirdikten sonra n’nin sayı alanını denetle.",
+              "steps": [
+                {
+                  "label": "Doğru başlangıç",
+                  "explanation": "İlk adım artık 2’dir.",
+                  "expression": "2+3(n−1)=241"
+                },
+                {
+                  "label": "Cebirsel aday",
+                  "explanation": "Bölme doğru ama sonuç tam sayı değil.",
+                  "expression": "3n−1=241 → n=242/3"
+                },
+                {
+                  "label": "Adım koşulu",
+                  "explanation": "Bu modelde hedef 241’e tam bir adımda ulaşılmaz.",
+                  "expression": "242/3∉pozitif tam sayılar"
+                }
+              ],
+              "answer": "Pozitif tam sayı adımı yok",
+              "check": "80. adım 239, 81. adım 242; aralarında 241 bulunur ama adım numarası kesirli olamaz.",
+              "pitfall": "242/3’ü 81’e yuvarlayıp eşitliğin sağlandığını sanma."
+            },
+            {
+              "code": "E22",
+              "title": "Katlanma örüntüsünü doğrusal modelden ayır",
+              "prompt": "Yeni katman adedi 1,2,4,… olan iki katlanmalı modelde ilk 12 katmanın toplamı ile ilk 10 katmanın toplamı arasındaki farkı bul.",
+              "strategy": "İlk 10 ortak katmanı çıkar; kalan iki katmanı say.",
+              "steps": [
+                {
+                  "label": "Katman kuralı",
+                  "explanation": "İlk katman 2⁰=1, ikinci 2¹=2, üçüncü 2²=4.",
+                  "expression": "k. katmanda 2^(k−1)"
+                },
+                {
+                  "label": "Ortak kısmı kaldır",
+                  "explanation": "11. ve 12. katman kalır; bütün toplamı ayrıca hesaplamak gerekmez.",
+                  "expression": "T₁₂−T₁₀=2¹⁰+2¹¹"
+                },
+                {
+                  "label": "Ortak çarpan",
+                  "explanation": "2¹¹=2×2¹⁰ olduğundan ortak çarpan çıkarılır.",
+                  "expression": "2¹⁰(1+2)=3×2¹⁰=3072"
+                }
+              ],
+              "answer": "3072",
+              "check": "İlk üç katman 1+2+4=7; sabit +3 artış modeli bu veriyi sağlamaz.",
+              "pitfall": "Bu özgün sayı modeli resmî şeklin yeniden basımı değildir; sabit artıştaki 81 sonucunu buraya taşıma."
+            },
+            {
+              "code": "E23",
+              "title": "Aday kökü başlangıç alanından geçir",
+              "prompt": "(x−1)/(x−1)=2 denklemini gerçek sayılarda çöz.",
+              "strategy": "Önce paydayı sıfır yapan değeri çıkar.",
+              "steps": [
+                {
+                  "label": "Alan",
+                  "explanation": "Payda 0 olamaz.",
+                  "expression": "x≠1"
+                },
+                {
+                  "label": "İzinli alanda çarp",
+                  "explanation": "Çarpma yalnız x−1≠0 iken tersinirdir.",
+                  "expression": "x−1=2x−2 → x=1"
+                },
+                {
+                  "label": "Adayı ele",
+                  "explanation": "Başlangıç ifadesi 0/0 olur; bir çözüm değildir.",
+                  "expression": "x=1 yasak"
+                }
+              ],
+              "answer": "ÇK=∅",
+              "check": "İzinli her x için sol taraf 1’dir; 2 olamaz.",
+              "pitfall": "Sadeleştirme, başlangıçta yasak olan 1’i geri getirmez."
+            },
+            {
+              "code": "E24",
+              "title": "Negatif dış katsayıda iki çarpımı da göster",
+              "prompt": "−2(x−3)=10 denklemini çöz.",
+              "strategy": "−2’yi x ve −3 ile ayrı çarp.",
+              "steps": [
+                {
+                  "label": "Dağıt",
+                  "explanation": "İki negatif çarpan pozitif +6 verir.",
+                  "expression": "−2x+6=10"
+                },
+                {
+                  "label": "Altıyı çıkar",
+                  "explanation": "İki taraftan 6 çıkar.",
+                  "expression": "−2x=4"
+                },
+                {
+                  "label": "Negatif katsayıya böl",
+                  "explanation": "Sıfır olmayan −2’ye bölme geçerlidir.",
+                  "expression": "x=−2"
+                }
+              ],
+              "answer": "x=−2",
+              "check": "−2(−2−3)=−2×(−5)=10.",
+              "pitfall": "−2(x−3)=−2x−6 açılışı işaret hatasıdır."
+            },
+            {
+              "code": "E25",
+              "title": "Bir sözcük parantezi değiştirir",
+              "prompt": "Bir sayının 4 fazlasının üçte biri 11 ise sayı kaçtır?",
+              "strategy": "Önce x+4 bütününü oluştur; sonra üçe böl.",
+              "steps": [
+                {
+                  "label": "Model",
+                  "explanation": "“4 fazlasının” ifadesi bölünen bütünün x+4 olduğunu söyler.",
+                  "expression": "(x+4)/3=11"
+                },
+                {
+                  "label": "Üçle çarp",
+                  "explanation": "Paydanın etkisi iki tarafa 3 uygulayarak kaldırılır.",
+                  "expression": "x+4=33"
+                },
+                {
+                  "label": "Dördü çıkar",
+                  "explanation": "33−4=29.",
+                  "expression": "x=29"
+                }
+              ],
+              "answer": "29",
+              "check": "(29+4)/3=33/3=11.",
+              "pitfall": "x/3+4=11 modeli farklı bir cümleye ait olup 21 sonucunu verir."
+            },
+            {
+              "code": "E26",
+              "title": "Aynı toplam ile farklı çözüm türü",
+              "prompt": "4(x−3)=4x+10 denkleminin çözüm kümesini bul.",
+              "strategy": "İki tarafın x katsayısı aynı olduğunda sabitleri karşılaştır.",
+              "steps": [
+                {
+                  "label": "Dağıt",
+                  "explanation": "Solun sabiti −12, sağın sabiti +10.",
+                  "expression": "4x−12=4x+10"
+                },
+                {
+                  "label": "x’leri çıkar",
+                  "explanation": "Yanlış ve x’ten bağımsız eşitlik kalır.",
+                  "expression": "−12=10"
+                }
+              ],
+              "answer": "ÇK=∅",
+              "check": "Her x için iki taraf arasındaki fark −22’dir; hiç sıfır olmaz.",
+              "pitfall": "İki tarafta 4x görülmesi tek başına özdeşlik değildir; sabitler de aynı olmalıdır."
+            },
+            {
+              "code": "E27",
+              "title": "İki doğruyu çiz ve ortak noktayı denetle",
+              "prompt": "x+y=5 ve x−y=1 doğrularını her biri için iki nokta seçerek çiz. Ortak noktayı bul ve iki denklemde kontrol et.",
+              "strategy": "Her denklemde sırayla x=0 ve y=0 yazarak iki nokta bul.",
+              "steps": [
+                {
+                  "label": "Birinci doğrunun iki noktasını seç",
+                  "expression": "(0, 5) ve (5, 0)",
+                  "explanation": "İki çiftin de bileşenleri toplandığında 5 olur."
+                },
+                {
+                  "label": "İkinci doğrunun iki noktasını seç",
+                  "expression": "(0, −1) ve (1, 0)",
+                  "explanation": "Her iki çiftte x−y=1. İki ayrı çift ikinci doğrunun yönünü belirler."
+                },
+                {
+                  "label": "Kesişim değerini eşitlikle doğrula",
+                  "expression": "2x=6, x=3, y=2",
+                  "explanation": "İki başlangıç denklemini topladığında y gider. x=3 iken ilk koşul y=2 verir."
+                }
+              ],
+              "answer": "Kesişim (3, 2). ÇK={(3, 2)}.",
+              "check": "3+2=5 ve 3−2=1. Her iki koşul aynı çiftle sağlanır.",
+              "pitfall": "(2, 3) birinci doğru üzerindedir. 2−3=−1 olduğu için ortak nokta değildir."
+            },
+            {
+              "code": "E28",
+              "title": "İkinci eşitlikte yerine koy",
+              "prompt": "x+y=7 ve 2x−y=5 sistemini yerine koymayla çöz.",
+              "strategy": "İlk denklemde y’yi yalnız bırak, bulduğun ifadeyi ikinci denkleme taşı.",
+              "steps": [
+                {
+                  "label": "Birinci bağıntıdan y’yi ayır",
+                  "expression": "y=7−x",
+                  "explanation": "İlk denklemin iki tarafından x çıkar."
+                },
+                {
+                  "label": "İkinci denklemde parantezi aç",
+                  "expression": "2x−(7−x)=5 → 3x−7=5",
+                  "explanation": "− işareti hem 7’ye hem −x’e uygulanır. Böylece ikinci x terimi pozitif olur."
+                },
+                {
+                  "label": "x’i bul, sonra y’ye dön",
+                  "expression": "3x=12, x=4, y=7−4=3",
+                  "explanation": "Birinci eşitlik kalan bilinmeyenin değerini belirler."
+                }
+              ],
+              "answer": "ÇK={(4, 3)}.",
+              "check": "4+3=7 ve 2×4−3=5.",
+              "pitfall": "y=7−x’i tekrar ilk denkleme koyunca 7=7 çıkar. Bu işlem ikinci koşulu kullanmaz."
+            },
+            {
+              "code": "E29",
+              "title": "Bütün denklemi çarp ve zıt katsayıları topla",
+              "prompt": "2x+3y=12 ve 3x−2y=5 sistemini y terimini yok ederek çöz.",
+              "strategy": "3 ile −2’nin büyüklüğünü aynı sayı yap. Çarpanı sağ tarafa da uygula.",
+              "steps": [
+                {
+                  "label": "İlk satırı 2, ikinciyi 3 ile çarp",
+                  "expression": "4x+6y=24 ve 9x−6y=15",
+                  "explanation": "Her eşitliğin iki tarafı kendi çarpanıyla değiştirilir."
+                },
+                {
+                  "label": "Satırları topla",
+                  "expression": "13x=39, x=3",
+                  "explanation": "6y ile −6y birbirini götürür. Sağ tarafta 24 ile 15 toplanır."
+                },
+                {
+                  "label": "Korunan bir eşitlikle y’yi bul",
+                  "expression": "2×3+3y=12, y=2",
+                  "explanation": "Toplam satırı yalnız x’i verirdi. İlk denklemi sakladığımız için y’yi bulabiliyoruz."
+                }
+              ],
+              "answer": "ÇK={(3, 2)}.",
+              "check": "2×3+3×2=12 ve 3×3−2×2=5.",
+              "pitfall": "Satırın yalnız y terimini çarpma. Bir denklemi toplama sonucuyla değiştiriyorsan diğerini kaybetme."
+            },
+            {
+              "code": "E30",
+              "title": "Eşit katsayıları çıkararak kaldır",
+              "prompt": "x+2y=8 ve x−y=2 sistemini çöz. Bu iki satırı toplamanın y’yi neden yok etmediğini de açıkla.",
+              "strategy": "İki x katsayısı aynı. İkinci eşitliği bütün olarak ilkinden çıkar.",
+              "steps": [
+                {
+                  "label": "İkinci satırı ilkinden çıkar",
+                  "expression": "(x+2y)−(x−y)=8−2 → 3y=6",
+                  "explanation": "x−x=0 ve 2y−(−y)=3y olur. İkisini toplamak 2y−y=y bırakır."
+                },
+                {
+                  "label": "y’yi sonraki kontrolde kullan",
+                  "expression": "y=2, x−2=2, x=4",
+                  "explanation": "Başlangıçtaki ikinci denklem x’i verir."
+                }
+              ],
+              "answer": "ÇK={(4, 2)}.",
+              "check": "4+2×2=8 ve 4−2=2.",
+              "pitfall": "Bir parantezi çıkarırken parantezdeki bütün terimlerin işareti hesaba katılır."
+            },
+            {
+              "code": "E31",
+              "title": "Sabit değişince çakışma ve paralelliği ayır",
+              "prompt": "x+y=4 denklemini önce 2x+2y=8, sonra 2x+2y=9 ile ayrı ayrı sistem yap. İki çözüm kümesini karşılaştır. İlk sistemde x ve y negatif olamazsa hangi bölüm kalır?",
+              "strategy": "Birinci denklemin iki katını yaz, ikinci denklemle karşılaştır.",
+              "steps": [
+                {
+                  "label": "İki eşitlik de 8 verirse",
+                  "expression": "x+y=4 → 2x+2y=8",
+                  "explanation": "Aynı doğru iki kez verilir. y=4−x ile her x’e karşılık bir çift vardır."
+                },
+                {
+                  "label": "Diğer sabit 9 olursa",
+                  "expression": "2x+2y=8 ve 2x+2y=9",
+                  "explanation": "Aynı sol taraf iki farklı değer alamaz. Ortak nokta yoktur."
+                },
+                {
+                  "label": "Sayı alanını daralt",
+                  "expression": "0≤x≤4, y=4−x",
+                  "explanation": "x ve y negatif değilse aynı doğrunun (0, 4) ile (4, 0) arasındaki parçası kalır."
+                }
+              ],
+              "answer": "İlk sistemin çözümleri aynı doğru üzerinde sonsuzdur. İkinci sistemin çözümü yoktur. Negatif olmayan koşul ilk doğruyu kapalı bir parçaya sınırlar.",
+              "check": "(1, 3) ilk sistemde 4 ve 8 verir. (0, 0) ilk sistemi sağlamaz.",
+              "pitfall": "Sonsuz çözüm, düzlemdeki her çiftin çözüm olduğu anlamına gelmez."
+            },
+            {
+              "code": "E32",
+              "title": "Çapraz katsayı farkıyla tek çözümü bul",
+              "prompt": "2x+y=7 ve x−y=2 denklemlerini katsayıların çapraz farkıyla çöz.",
+              "strategy": "a=2, b=1, c=7 ve d=1, e=−1, f=2 değerlerini satır sırasıyla yaz.",
+              "steps": [
+                {
+                  "label": "Bölmenin tanımlı olduğunu gör",
+                  "expression": "Δ=2×(−1)−1×1=−3",
+                  "explanation": "Δ sıfır olmadığı için iki bilinmeyen de tek değere belirlenir."
+                },
+                {
+                  "label": "Önce x’i, sonra y’yi hesapla",
+                  "expression": "x=(7×(−1)−1×2)/(−3)=3; y=(2×2−7×1)/(−3)=1",
+                  "explanation": "x’in payını y’yi yok eden işlemden, y’nin payını x’i yok eden işlemden bul."
+                }
+              ],
+              "answer": "ÇK={(3, 1)}.",
+              "check": "2×3+1=7 ve 3−1=2.",
+              "pitfall": "Sağ sabitleri x ve y’nin katsayılarıyla karıştırma. Δ=0 olsaydı bölme yerine çözüm türü denetimi gerekirdi."
+            },
+            {
+              "code": "E33",
+              "title": "Parametrede iki sınır durumunu ayrı çöz",
+              "prompt": "Gerçek k için kx+2y=6, 2x+ky=6 sistemini çöz. k=2 ve k=−2 için çözüm türünü ayrıca yaz.",
+              "strategy": "k−2 veya k+2 ile bölmeden önce bu iki çarpanın ne zaman sıfır olduğunu bul.",
+              "steps": [
+                {
+                  "label": "k=2 ile k=−2’yi doğrudan yaz",
+                  "expression": "k=2 → x+y=3; k=−2 → 0=12",
+                  "explanation": "k=2 iken iki satır aynı doğrultudadır ve aynı doğruyu verir. k=−2 iken iki satırın toplamı çelişir."
+                },
+                {
+                  "label": "Diğer değerlerde önce farkı al",
+                  "expression": "(k−2)(x−y)=0 → x=y",
+                  "explanation": "İki satırı çıkar. Bu durumda k−2 sıfır değildir ve bölünebilir."
+                },
+                {
+                  "label": "Birinci koşula geri dön",
+                  "expression": "(k+2)x=6 → x=y=6/(k+2)",
+                  "explanation": "k+2 de sıfır olmadığı için iki değer belirlenir."
+                }
+              ],
+              "answer": "k=2 iken x+y=3 doğrusu, k=−2 iken ∅, diğer değerlerde tek çift (6/(k+2), 6/(k+2)).",
+              "check": "k=1’de (2, 2) iki eşitlikte de 6 verir. Diğer izinli k değerlerinde her sol taraf (k+2)×6/(k+2)=6.",
+              "pitfall": "Genel ifadeyi önce bulup k=−2 için 6/0 yazma. k=2’de tek çift seçmek aynı doğru üzerindeki diğer çözümleri atlar."
+            },
+            {
+              "code": "E34",
+              "title": "İki alışverişten birim fiyatları çıkar",
+              "prompt": "Bir alışverişte 2 defter ve 3 kalem toplam 31 TL. Aynı birim fiyatlarla 3 defter ve 2 kalem 34 TL. Bir defter ve bir kalem kaç TL?",
+              "strategy": "Defter fiyatına d, kalem fiyatına k de. Her toplamı ayrı yaz.",
+              "steps": [
+                {
+                  "label": "Alışverişleri ayrı eşitlik kur",
+                  "expression": "2d+3k=31 ve 3d+2k=34",
+                  "explanation": "Adet ile o ürünün birim fiyatının çarpımı TL cinsinden giderdir."
+                },
+                {
+                  "label": "Defter katsayılarını eşitle ve çıkar",
+                  "expression": "(6d+9k)−(6d+4k)=93−68 → 5k=25",
+                  "explanation": "İlk denklem üç katına, ikinci denklem iki katına çıkar. Eşit d katsayıları çıkarıldığında kalemin fiyatı belirlenir."
+                },
+                {
+                  "label": "Defter fiyatını geri bul",
+                  "expression": "k=5, 2d+15=31, d=8",
+                  "explanation": "İlk toplamı 5 TL kalem fiyatıyla kurunca 2 defterin bedeli 16 TL olur."
+                }
+              ],
+              "answer": "Bir defter 8 TL, bir kalem 5 TL.",
+              "check": "2×8+3×5=31 TL ve 3×8+2×5=34 TL.",
+              "pitfall": "Toplamları ürün adediyle karıştırma. Bu sayılar varsayımsal alıştırma fiyatlarıdır."
+            },
+            {
+              "code": "E35",
+              "title": "Bir kökün geçerli, ötekinin yasak olduğunu ayır",
+              "prompt": "(x+2)/(x−1)=2 ve (2x−2)/(x−1)=3 denklemlerini ayrı ayrı çöz. Her iki denklem için başlangıç koşulunu yaz.",
+              "strategy": "Paydayı sıfır yapan değeri işleme başlamadan ayır.",
+              "steps": [
+                {
+                  "label": "İki başlangıç alanını yaz",
+                  "expression": "x−1≠0 → x≠1",
+                  "explanation": "Her iki kesirde payda aynıdır."
+                },
+                {
+                  "label": "Birinci denklemde payda ile çarp",
+                  "expression": "x+2=2(x−1) → x=4",
+                  "explanation": "4 izinli ve 6/3=2 olduğundan geçerli bir köktür."
+                },
+                {
+                  "label": "İkinci denklemde adayı ele",
+                  "expression": "2x−2=3(x−1) → x=1",
+                  "explanation": "Bu aday başlangıç kesrinin paydasını sıfır yapar. İzinli x’lerde kesir zaten 2 olduğu için 3 olamaz."
+                }
+              ],
+              "answer": "Birinci ÇK={4}, ikinci ÇK=∅.",
+              "check": "İzinli 4 birinci eşitliği sağlar. İkinci denklemde yasak 1 denemesi 0/0 üretir.",
+              "pitfall": "Payda sadeleştiğinde başlangıçtaki bilginin de silindiğini sanma."
+            },
+            {
+              "code": "E36",
+              "title": "Aktarımda toplamı ve farkı ayrı kur",
+              "prompt": "A ve B kaplarında toplam 26 L su var. A’dan B’ye 4 L aktarılınca miktarlar eşit oluyor. Başlangıçta her kapta kaç litre vardı?",
+              "strategy": "Toplam için başlangıç miktarlarını, eşitlik için aktarım sonrasını kullan.",
+              "steps": [
+                {
+                  "label": "Başlangıç miktarlarını yaz",
+                  "expression": "a+b=26",
+                  "explanation": "a ve b başlangıçtaki litre miktarlarıdır. Aktarım toplamı değiştirmez."
+                },
+                {
+                  "label": "Son durumu denkleme çevir",
+                  "expression": "a−4=b+4 → a−b=8",
+                  "explanation": "A’dan 4 L azaldığı sırada B’ye 4 L eklenir."
+                },
+                {
+                  "label": "İki eşitliği birleştir",
+                  "expression": "2a=34, a=17, b=9",
+                  "explanation": "Toplama, b’yi yok eder. İlk toplamdan b=9 elde edilir."
+                }
+              ],
+              "answer": "A’da 17 L, B’de 9 L vardı.",
+              "check": "17−4=13 ve 9+4=13. Son toplam 26 L, A’da aktarım için yeterli su var.",
+              "pitfall": "Aktarım miktarı 4 L’dir ama başlangıç farkı 8 L’dir. Biri azalırken öteki artar."
+            },
+            {
+              "code": "E37",
+              "title": "Prova çözümlerini sırayla aç",
+              "prompt": "Provanın 14 sorusunu ve iki kısa başlangıcı denediysen her çözümü sırayla aç.",
+              "strategy": "Kendi ilk adımını yazdıktan sonra ilk farklı satırı bul. Bir yöntem farklı olsa da ilk denklemleri koruyorsa geçerli olabilir.",
+              "steps": [
+                {
+                  "label": "1. soru",
+                  "explanation": "İki tarafa 9 ekle. 7x=49. 7’ye böl. Denetim 7×7−9=40. x=7."
+                },
+                {
+                  "label": "2. soru",
+                  "explanation": "Dağıtınca 6x−15=x+20 olur. İki taraftan x çıkar, 15 ekle. 5x=35, x=7. Sol 3(14−5)=27, sağ 7+20=27. x=7."
+                },
+                {
+                  "label": "3. soru",
+                  "explanation": "4 ve 3’ün ortak katı olan 12 ile iki tarafı çarp. 3(x+2)−4(x−1)=12. İkinci payın tamamını çıkar. −x+10=12, x=−2. Denetim 0/4−(−3)/3=1. x=−2."
+                },
+                {
+                  "label": "4. soru",
+                  "explanation": "Solda 5x−10 elde edilir ve iki taraf aynı ifadeye dönüşür. İki taraftan 5x−10 çıkarınca 0=0 kalır. Bütün gerçek sayılar koşulu sağlar. ÇK=ℝ."
+                },
+                {
+                  "label": "5. soru",
+                  "explanation": "Önce üçte biri, sonra 4 fazlası. x/3+4=11. 4 çıkarınca x/3=7. Üçle çarpınca x=21. Denetim 21/3+4=11. 21."
+                },
+                {
+                  "label": "6. soru",
+                  "explanation": "İlk terimde henüz artış yok. n. terim 5+4(n−1). 5+4(n−1)=69, 4(n−1)=64, n=17. 16 geçişte 16×4 artar ve 5+64=69. 17. sıra."
+                },
+                {
+                  "label": "7. soru",
+                  "explanation": "Öğrenci s TL ise yetişkin s+45 TL. 2(s+45)+3s=390. 5s+90=390, 5s=300, s=60. Yetişkin 105 TL. 2×105+3×60=390 ve fark 45 TL. 60 TL."
+                },
+                {
+                  "label": "8. soru",
+                  "explanation": "y ve −y’yi yok etmek için iki satırı topla. 3x=15. x=5’i ilk denklemde kullan. y=8−5=3. 5+3=8 ve 2×5−3=7. ÇK={(5, 3)}."
+                },
+                {
+                  "label": "9. soru",
+                  "explanation": "İlk eşitliği ikiyle çarpınca 2x−4y=6. Birinci sistemde bu, diğer eşitliğin aynısıdır. Birinci sistemin her çözümü x=3+2y doğrusu üzerindedir. Örneğin (3, 0) ve (5, 1) çözüm, (0, 0) çözüm değildir. İkinci sistem aynı sol tarafın 6 ve 7 olmasını ister. Bu çelişki ortak çifti eler. İlkinde x=3+2y doğrusu üzerinde sonsuz çift. İkincide ∅."
+                },
+                {
+                  "label": "10. soru",
+                  "explanation": "x=2’de payda sıfır. Yalnız x≠2 için payda ile çarpılabilir. 3x−6=4x−8, aday x=2. Başlangıçta yasak olduğu için elenir. İzinli her x’te kesir 3(x−2)/(x−2)=3 olur. Bu yüzden 4 olamaz. x≠2. ÇK=∅."
+                },
+                {
+                  "label": "11. soru",
+                  "explanation": "t tam, s indirimli fiyat olsun. 2t+3s=230 ve 3t+2s=270. İlk eşitliği 3, ikincisini 2 ile çarp. İlkinden ikinciyi çıkar: 5s=150, s=30. 2t+90=230 olduğundan t=70. Her iki toplam 140+90=230 ve 210+60=270. Tam 70 TL, indirimli 30 TL."
+                },
+                {
+                  "label": "12. soru",
+                  "explanation": "Sol taraf 4x+12 olur. Aynı ifade iki tarafta bulunur. Kalan 0=0 bütün gerçek sayılar için doğrudur. 0 bir çözümdür, 1 ve −5 de çözümdür. ÇK=ℝ."
+                },
+                {
+                  "label": "13. soru",
+                  "explanation": "Toplayınca 2x=8, x=4. x+y=6’da y=2. 4+2=6 ve 4−2=2. İki eşitlik aynı çifti kabul eder. x=0 seçince y=6. y=0 seçince x=6. İkisi de ilk doğru üzerinde. Kesişim (4, 2). Örnek iki ayrı nokta (0, 6) ve (6, 0)."
+                },
+                {
+                  "label": "14. soru",
+                  "explanation": "a ve b başlangıç litreleri. a+b=18. Aktarım sonrası a−3=b+3, dolayısıyla a−b=6. a en az 3 L olmalı. İki eşitliği topla. 2a=24, a=12 ve b=6. 12−3=9, 6+3=9. Toplam 9+9=18 L. A başlangıç 12 L, B başlangıç 6 L. Aktarımdan sonra toplam 18 L."
+                },
+                {
+                  "label": "İlk kısa başlangıç",
+                  "explanation": "İki taraftan 2x çıkar. 2x+7=19. 7 çıkarınca 2x=12, 2’ye bölünce x=6. 4×6+7=31 ve 2×6+19=31. Boşluklar 2x, 7, 2. x=6."
+                },
+                {
+                  "label": "İkinci kısa başlangıç",
+                  "explanation": "İki denklemi topla. Sağda 9+3=12, solda y−y=0 ve 3x. 3x=12 ile x=4. İlk eşitliğe dön, y=9−4=5. 4+5=9 ve 2×4−5=3. Boşluklar 3, 4, 5. ÇK={(4, 5)}."
+                }
+              ],
+              "answer": "Her çözümün ilk denklem, sayı alanı ve birim koşullarını karşılaştır.",
+              "check": "Çözüm türü sorusunda tek bir örnek çift yerine bütün kümeyi belirttiğini kontrol et.",
+              "pitfall": "Yalnız son sayıyı kontrol etmek, yanlış yöntem veya unutulan tanım koşulunu gizleyebilir."
+            }
+          ]
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-geo-eslik-benzerlik-031",
+        "after": "7971667ede2f98debc3c87753bc8b4ee49b2aeead131eaffa58214c42a3de25f",
+        "prior": {
+          "sections": [
+            {
+              "title": "Eşleme ve ölçeğin yönü",
+              "text": [
+                "ABC∼DEF demek A↔D,B↔E,C↔F demektir:AB↔DE,AC↔DF,BC↔EF.",
+                "Bütün oranları aynı yönde kur. Benzerlik aynı biçim; eşlik aynı biçim ve aynı büyüklüktür. Eşlik,benzerlik oranının1 olduğu durumdur."
+              ]
+            },
+            {
+              "title": "Eşlik için yeterli koşullar",
+              "text": [
+                "KKK:üç karşılıklı kenar eş. KAK:iki karşılıklı kenar ve ARALARINDAKİ açı eş. AKA:iki karşılıklı açı ve aralarındaki kenar eş.",
+                "Dik üçgende hipotenüs+bir dik kenar eşliği yeterlidir. Yalnız üç açı eşliği veya rastgele iki kenar+aralarında olmayan açı genel olarak eşliği belirlemez."
+              ]
+            },
+            {
+              "title": "Benzerlik için yeterli koşullar",
+              "text": [
+                "AA:iki karşılıklı açı eş. KAK:iki karşılıklı kenar aynı oranda ve aralarındaki açılar eş. KKK:üç karşılıklı kenar oranı aynı.",
+                "Önce benzerliği kanıtla,sonra oran yaz. Kum saati görünümünde ters açı yalnız bir açı çifti verir; ikinci çift için gerekçe gerekir."
+              ]
+            },
+            {
+              "title": "Paralel kesit,orta taban,Thales",
+              "text": [
+                "D∈AB,E∈AC iç noktaları ve DE∥BC ise AD/AB=AE/AC=DE/BC=t; AD/DB=AE/EC=t/(1−t).",
+                "D,E orta noktaysa t=1/2,DE=BC/2. En az üç paralelin iki kesende ayırdığı karşılıklı aralıklar orantılıdır; aralık/bütün ayrımını koru."
+              ]
+            },
+            {
+              "title": "Uzunluk k,alan k²",
+              "text": [
+                "Yeni/eski uzunluk oranı k>0 ise kenar,çevre,yükseklik,kenarortay,açıortay oranı k; alan oranı k².",
+                "Paralel kesitte üst küçük üçgenin alanı t², kalan yamuğun alanı1−t² katıdır. Alan oranı9/25 ise aynı yöndeki uzunluk oranı3/5’tir."
+              ]
+            },
+            {
+              "title": "Üç eş yükseklikli şerit",
+              "figureTitle": "Eş yükseklik, farklı alan",
+              "text": [
+                "Tepeden alan payları 1/9 → 4/9 → 9/9 birikir. Ardışık farklar 1/9, 3/9 ve 5/9. Toplam alan 81 ise şeritler 9, 27 ve 45 birim²."
+              ]
+            }
+          ],
+          "source": "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir. Eşkenar Üçgen 5.1, fiziksel s. 1 ve 4: eş yükseklikli alan şeritleri."
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-mat-dogrusal-denklemler-kaynak-036",
+        "after": "413c5892767f40ae393b33bf5b5e8f0d05538ecfb21497cfc3cc1e92ac7bb441",
+        "prior": {
+          "sections": [
+            {
+              "title": "Denklem ve bütün kökler",
+              "text": [
+                "İfade: 2x+3. Denklem: 2x+3=11. Kök 4, ÇK={4}. {0}≠∅. Sayı alanını başta yaz.",
+                "ax+b=cx+d → (a−c)x=d−b. Katsayı ≠0: tek kök; katsayı 0 ve sağ 0: bütün izinli değerler; katsayı 0 ve sağ ≠0: ∅."
+              ]
+            },
+            {
+              "title": "Eşdeğer dönüşüm",
+              "text": [
+                "İki tarafa aynı toplama veya çıkarma; iki tarafı aynı sıfır olmayan sayıyla çarpma veya bölme. 0 ile çarpma bilgi kaybettirir; 0’a bölme tanımsızdır.",
+                "“Taşıma” yerine iki taraflı işlemi söyle. Kökü ilk eşitliğin iki tarafında ayrı denetle."
+              ]
+            },
+            {
+              "title": "Parantez ve işaret",
+              "text": [
+                "k(a+b)=ka+kb. 3(x−2)=3x−6; −2(x−3)=−2x+6.",
+                "4(x−3)=2x+10 → 4x−12=2x+10 → 2x=22 → x=11. Önce bütün iki tarafı 2’ye bölmek de aynı kökü verir."
+              ]
+            },
+            {
+              "title": "Kesir ve tanım koşulu",
+              "text": [
+                "(x+3)/2, x+3/2 ile aynı değildir. Sabit paydalarda sıfır olmayan ortak katla her iki tarafın tamamını çarp.",
+                "(x−1)/3+(x+2)/2=6 → 2(x−1)+3(x+2)=36 → 5x=32 → x=32/5.",
+                "Paydada değişken varsa yasak değeri başta yaz; sadeleşse bile koru. (x−1)/(x−1)=2 için x=1 adayı yasaktır, ÇK=∅."
+              ]
+            },
+            {
+              "title": "Özdeşlik, çelişki ve parametre",
+              "text": [
+                "3(x+2)=3x+6 → 0=0 → ℝ. 2(x−1)=2x+5 → −2=5 → ∅.",
+                "k(x−1)=2x−k → (k−2)x=0. k≠2: x=0; k=2: bütün gerçek x. Sıfır olabilecek ifadeye koşulsuz bölme."
+              ]
+            },
+            {
+              "title": "Sözel sırayı koru",
+              "text": [
+                "3 katının 5 fazlası: 3x+5. 5 fazlasının 3 katı: 3(x+5). Yarısının 4 eksiği: x/2−4; 4 eksiğinin yarısı: (x−4)/2.",
+                "Üçte birinin 4 fazlası 11: x/3+4=11 → x=21. 4 fazlasının üçte biri 11: (x+4)/3=11 → x=29. Birimleri ortak hale getir."
+              ]
+            },
+            {
+              "title": "Bilette adet ve fiyat",
+              "text": [
+                "12 kişi, 80/50 TL, toplam 780 TL: x yetişkin, 12−x öğrenci; 80x+50(12−x)=780 → 6 yetişkin, 6 öğrenci. Adet tam sayı ve 0 ile 12 arasında olmalı.",
+                "2 yetişkin, 3 öğrenci, 45 TL fark, 390 TL toplam: 2(s+45)+3s=390 → s=60, yetişkin 105 TL. Her yetişkin için farkı ayrı say."
+              ]
+            },
+            {
+              "title": "Sabit artışın başlangıcı",
+              "text": [
+                "aₙ=a₁+d(n−1). n=1 kontrolü a₁ vermeli. İlk 5, artış 4, hedef 69 → n=17.",
+                "Özgün ilk 1, +3 artış, hedef 241 → n=81. İlk 2 olsaydı n=242/3, pozitif tam sayı adımı yok. 2024 TYT 17’de ilk gün x, 15. gün x+14, 16. gün x+13. İki 15 günlük toplamı birleştir: (15x+105)+(15x+90)=1395, x=40 dakika."
+              ]
+            },
+            {
+              "title": "Geçerli kısa yol ve yakın örnek",
+              "text": [
+                "6(x−2)=3x+12 → iki tarafı 3’e böl → 2(x−2)=x+4 → x=8.",
+                "6x−2=3x+12 → x=14/3. İki tarafı 3’e bölmek yine geçerli: 2x−2/3=x+4. Yalnız 6x’i bölmek geçersiz. Bütün terimleri ve koşulları koruyan yolu seç."
+              ]
+            },
+            {
+              "title": "İlk hatayı onar",
+              "text": [
+                "3(x−2)=12 → 3x−2 ilk dağıtma hatası; doğru açılım 3x−6. 4x+7=2x+19 → 2x=26 yanlış; doğru 2x=12.",
+                "Özdeşlikte yalnız x=0 deme; örüntüde artış sayısının n−1 olduğunu gör; başlangıç denklemi, birim ve sayı alanı kontrolünü yenile."
+              ]
+            },
+            {
+              "title": "Sistem kur ve iki eşitliği denetle",
+              "text": [
+                "(x, y) sırasıyla iki bilinmeyenin değeridir. Ortak çözüm her iki eşitliği sağlar. x+y=5 ve x−y=1 için (3, 2) çözüm, (2, 3) yalnız ilk denklemin çözümüdür.",
+                "x+y=5 doğrusunda (0, 5) ve (5, 0), x−y=1 doğrusunda (0, −1) ve (1, 0) noktalarını birleştir. Düşey x=2 ve yatay y=3 doğruları da aynı iki nokta kuralına uyar.",
+                "Kesişme bir çift, farklı paralel doğrular boş küme, çakışma ortak doğru üzerinde sonsuz çift verir. 0=0 her çifti kabul eden satır, 0=5 bütün çiftleri eleyen satırdır."
+              ]
+            },
+            {
+              "title": "Yerine koy, yok et, çapraz farkı denetle",
+              "text": [
+                "Bir bilinmeyen yalnızsa değerini öteki denklemde kullan. x+y=7 → y=7−x. 2x−y=5’te 2x−(7−x)=5 olur. (4, 3) çiftini her iki eşitlikte denetle.",
+                "Eşit katsayıyı çıkar, zıt katsayıyı topla. Gerekirse bir eşitliğin iki tarafının tamamını sıfır olmayan aynı sayıyla çarp. Bir başlangıç eşitliğini sakla ve diğer bilinmeyene geri dön.",
+                "ax+by=c ve dx+ey=f için Δ=ae−bd. Δ≠0 ise x=(ce−bf)/Δ, y=(af−cd)/Δ. Δ=0 iken bölme yapma, sabitlerle birlikte çözüm türünü belirle."
+              ]
+            },
+            {
+              "title": "Parametre, fiyat ve aktarım",
+              "text": [
+                "kx+2y=6 ve 2x+ky=6 sisteminde k=2 → aynı doğru x+y=3. k=−2 → 0=12, çözüm yok. Diğer k’larda x=y=6/(k+2). Katsayıyla bölmeden önce özel durumları ayır.",
+                "2 defter ile 3 kalem 31 TL, 3 defter ile 2 kalem 34 TL. 2d+3k=31 ve 3d+2k=34. Birinciyi 3, ikinciyi 2 ile çarp ve çıkar. k=5 ve d=8 TL. İki toplamı geri hesapla.",
+                "26 L toplamın 4 L’si A’dan B’ye geçince miktarlar eşitse a+b=26 ve a−4=b+4. a−b=8, başlangıç 17 ve 9 L. Son 13 ve 13 L. Hacim aktarımda korunur."
+              ]
+            },
+            {
+              "title": "Tek bilinmeyende yöntemi seç",
+              "text": [
+                "3x+2=17’de sabiti çıkar, x=5. 0x+2=17 için sıfıra bölme, çözüm yoktur. 2 L başlangıç ve dakikada 3 L artışla 17 L’ye ulaşmak için 5 dakika gerekir.",
+                "6(x−2)=3x+12’de iki tarafı 3’e böl ve x=8 bul. 6x−2=3x+12’de yalnız 6x’i bölme. Doğru sonuç 14/3. Kargo maliyetleri 6(t−2) ve 3t+12 olduğunda t=8 için iki bedel 36 TL.",
+                "2−3(x−1)=11’de açılım 2−3x+3, kök −2. −3(x−1)’de x=0 koyduğunda +3 çıkar. Beş paketin her birinde n−2 parça varsa 5(n−2)=35 koşulu n=9 verir.",
+                "(x−1)/2+(x+1)/3=4 için 6 ile çarp ve x=5 bul. (x−1)/(x−1)=2 için cebirsel aday x=1 başlangıçta yasaktır. x/2 ve x/3 saat toplam 5 saat ise x=6.",
+                "9 ürün 5 ya da 8 TL ve toplam 54 TL ise 5(9−x)+8x=54, x=3. 8x yerine 8, bir ürünü sayar. 7 araç 10 ya da 14 koltuk ve toplam 82 ise 10(7−x)+14x=82, x=3 büyük araç.",
+                "İlk terim 4, artış 3, hedef 31 ise n=10. 4, 7, 11, 16’da artışlar 3, 4, 5 olduğu için bir ortak d yoktur. İlk sıra 12 ve her sıra 2 fazla ise 30 koltuklu sıra 10. sıradır."
+              ]
+            },
+            {
+              "title": "İki bilinmeyende yöntemin sınırı",
+              "text": [
+                "y=x+1 ve x+y=7 → (3, 4). İkinci denklem yerine y=x+1’i yeniden kullanmak yalnız özdeşlik verir. Kırmızı adedi maviden 1 fazla ve toplam 7 ise mavi 3, kırmızı 4’tür.",
+                "x+2y=8 ve x−y=2 için çıkar: 3y=6, (4, 2). Toplarsan y kalır. Bir ürün iki y tutarı eklenince 8 TL, bir y tutarı indirilince 2 TL ise ürün 4 TL ve tutar 2 TL.",
+                "x+y=4 ile 2x+2y=8 çakışır. Sağ sabit 9 olursa çözüm yoktur. A ve B negatif olmayan bütçe tutarıysa A+B=4, (0, 4) ile (4, 0) arasındaki doğru parçasına daralır."
+              ]
+            }
+          ]
+        }
+      }
+    ]
   }
 ]

@@ -295,6 +295,7 @@ export const linearEquationsSource036Pack:Linear036Pack = {
         "a ve b sıfırsa ax+by=c bir doğru denklemi olmaz. 0x+0y=0 her çifte izin verir ve öteki denklem çözüm kümesini belirler. 0x+0y=5 hiçbir çifte izin vermez. İki denklem de 0=0 ise sistemin çözümü bütün gerçek sayı çiftleridir. Bütçe örneğinde A ve B’nin negatif olamayacağı söylenirse A+B=4 doğrusunun sadece (0, 4) ile (4, 0) arasındaki parçası kalır."
       ],
       "table": {
+        "layout": "table",
         "headers": [
           "İki gerçek doğrunun durumu",
           "Cebirsel işaret",
@@ -1207,6 +1208,7 @@ export const linearEquationsSource036Pack:Linear036Pack = {
         },
         {
           "label": "Kesişim değerini eşitlikle doğrula",
+          "figureTitle": "Bir doğruyu iki noktadan çiz",
           "expression": "2x=6, x=3, y=2",
           "explanation": "İki başlangıç denklemini topladığında y gider. x=3 iken ilk koşul y=2 verir."
         }
@@ -3211,6 +3213,7 @@ export const linearEquationsSource036Pack:Linear036Pack = {
     },
     {
       "title": "Sistem kur ve iki eşitliği denetle",
+      "figureTitle": "Bir doğruyu iki noktadan çiz",
       "text": [
         "(x, y) sırasıyla iki bilinmeyenin değeridir. Ortak çözüm her iki eşitliği sağlar. x+y=5 ve x−y=1 için (3, 2) çözüm, (2, 3) yalnız ilk denklemin çözümüdür.",
         "x+y=5 doğrusunda (0, 5) ve (5, 0), x−y=1 doğrusunda (0, −1) ve (1, 0) noktalarını birleştir. Düşey x=2 ve yatay y=3 doğruları da aynı iki nokta kuralına uyar.",

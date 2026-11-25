@@ -1,8 +1,8 @@
 {
-  "version": "0.157.0",
+  "version": "0.158.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Rasyonel Sayılar’da sıfıra uzaklıkla sıralamayı ayır. Üçgende Merkezler’de iç çemberi ve kenar uzantılarına teğet dış çemberi karşılaştır.",
-    "en": "Compare signed fractions on a number line and see how incircles and excircles touch a triangle."
+    "tr": "Denklem sisteminin ortak noktasını çözümlü örnekte ve Kopya Kağıdı’nda izle. Arada olmayan açının iki farklı üçgene izin verdiğini gör.",
+    "en": "Follow intersections in worked linear systems and see why two sides with a nonincluded angle can allow two triangles."
   }
 }

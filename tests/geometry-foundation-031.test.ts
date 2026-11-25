@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { questionGuidanceSchema } from "../src/domain/questionHelpModel";
+import { geometryFigures031 } from "../src/learning/sectionFigures/geometryFigures031";
 import {
   geometryFoundation031Guides as guides,
   geometryFoundation031Lessons as lessons,
@@ -26,6 +27,23 @@ const answer = (unit: number, number: number) => {
 };
 
 describe("031 temel geometri: bağımsız öğretim ve matematik denetimi", () => {
+  it("keeps only positive intersections on the ray for the nonincluded angle", () => {
+    const figure = geometryFigures031["tyt-geo-eslik-benzerlik-031"]["Arada olmayan açı iki üçgene izin verebilir"];
+    for (const [radius, count] of [[2, 0], [2.5, 1], [4, 2], [5, 1], [5.5, 1]]) {
+      const frame = figure.draw(radius, 0, -1);
+      const positions = frame.els.flatMap((element) =>
+        element.k === "pt" && element.label?.startsWith("C") ? [element.p] : []
+      );
+      expect(positions).toHaveLength(count);
+      for (const [x, y] of positions) {
+        expect(x).toBeGreaterThan(0);
+        expect(y / x).toBeCloseTo(Math.tan(Math.PI / 6), 10);
+        expect(Math.hypot(x - 5, y)).toBeCloseTo(radius, 10);
+      }
+      if (count === 2) expect(positions[0][0]).toBeLessThan(positions[1][0]);
+    }
+  });
+
   it("altı yeni birimi eski çalışma kimliklerine bağlamadan ekler", () => {
     expect(lessons.map((l) => l.id)).toEqual(ids);
     expect(

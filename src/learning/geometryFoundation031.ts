@@ -1693,7 +1693,7 @@ const packs031: FoundationPack031[] = [
     title: "Üçgenlerde eşlik ve benzerlik: eşleme, ölçek ve paralellik",
     minutes: 47,
     source:
-      "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir. Eşkenar Üçgen 5.1, fiziksel s. 1 ve 4: eş yükseklikli alan şeritleri.",
+      "Kenar-Açı-Kenar Eşliği 5.1 fiziksel s. 2, arada olmayan açı karşı örneği. MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir. Eşkenar Üçgen 5.1, fiziksel s. 1 ve 4: eş yükseklikli alan şeritleri.",
     objectives: [
       "Karşılıklı köşeleri belirterek eşlik ve benzerliği ayır.",
       "KKK, KAK, AKA eşlik ve AA, KAK, KKK benzerlik koşullarını gerekçelendir.",
@@ -1763,6 +1763,13 @@ const packs031: FoundationPack031[] = [
         paragraphs: [
           "Eşkenar üçgende tabana paralel kesimler yüksekliği tepeden itibaren üç eş parçaya ayırsın. Tepeden birinci ve ikinci kesime kadar olan şekiller, büyük üçgene sırasıyla 1/3 ve 2/3 uzunluk oranıyla benzerdir. Yükseklik oranı kadar taban oranı da değişir. Bu yüzden biriken alan payları 1/9, 4/9 ve 1 olur.",
           "Şerit alanı bulmak için iki biriken alanı çıkar. Baştan sona eş yükseklikli üç şeridin alan payları 1/9, 3/9 ve 5/9’dur. En alttaki şerit daha geniş tabanlara yayıldığı için en büyüktür. Eğer kesimler paralel değilse önce benzerliğin geçerli olup olmadığını kontrol et.",
+        ],
+      },
+      {
+        title: "Arada olmayan açı iki üçgene izin verebilir",
+        paragraphs: [
+          "AB=5 ve ∠B=30° iken C’nin yeri B’den 30° ile çıkan ışın üzerindedir. AC=4 şartı C’yi A merkezli, yarıçapı 4 olan çemberin üzerine koyar. Çember ışını iki yerde keser. Bu iki üçgende AB, AC ve B açısı aynı olsa da BC uzunlukları farklıdır.",
+          "A’dan ışına indirilen dikme 5·sin 30°=2,5 birimdir. AC daha kısaysa kesişim yoktur. AC=2,5’te çember ışına bir kez teğet olur. AC=4’te iki kesişimi de görürsün. AC=5 olduğunda kesişimlerden biri B’nin kendisidir ve üçgen oluşturmaz.",
         ],
       },
     ],
@@ -2851,7 +2858,9 @@ const quickSheets031: Record<string, FoundationQuickSheet031> = {
       },
       {
         title: "Eşlik için yeterli koşullar",
+        figureTitle: "Arada olmayan açı iki üçgene izin verebilir",
         text: [
+          "AB=5, AC=4 ve ∠B=30° ile C, bir ışın ile A merkezli çemberin iki kesişiminden biri olabilir. İki BC uzunluğu farklıdır. KAK için verilen açı iki verilen kenarın ortak köşesinde olmalıdır.",
           "KKK:üç karşılıklı kenar eş. KAK:iki karşılıklı kenar ve ARALARINDAKİ açı eş. AKA:iki karşılıklı açı ve aralarındaki kenar eş.",
           "Dik üçgende hipotenüs+bir dik kenar eşliği yeterlidir. Yalnız üç açı eşliği veya rastgele iki kenar+aralarında olmayan açı genel olarak eşliği belirlemez.",
         ],
