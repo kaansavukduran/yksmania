@@ -1,8 +1,8 @@
 {
-  "version": "0.167.0",
+  "version": "0.168.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Aynı tarihte iki yaşın farkını grafikten izle. Çevresi ve köşegeni verilen dikdörtgenin kenarlarını adım adım bul.",
-    "en": "Follow two ages at the same date and derive a rectangle’s sides from its perimeter and diagonal."
+    "tr": "Yüzde Problemleri’nde iki paketin gram fiyatını karşılaştır. Karede kenarların orta noktalarını birleştirerek oluşan iç karenin alanını dört eş üçgenle hesapla.",
+    "en": "Compare the price per gram of two packages and derive the area of the inner square by joining the side midpoints."
   }
 }

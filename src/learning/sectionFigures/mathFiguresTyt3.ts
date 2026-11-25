@@ -77,8 +77,34 @@ const unitPrice: FigureDef = {
   caption:
     "İleri ile paketi ve gram fiyatını karşılaştır. 500 g 200 TL iken 400 g 192 TL olmuş. Paket %4 ucuzladı ama gram fiyatı 0,40'tan 0,48 TL'ye çıktı: %20 artış. Kısa yol: fiyat çarpanı ÷ miktar çarpanı = 0,96 ÷ 0,80 = 1,20.",
   alt: "Solda iki paket: eskisi daha büyük, yenisi daha küçük; üzerlerinde gram ve fiyat. Sağda iki çubuk: eski ve yeni TL/g; yeni çubuk %20 daha yüksek.",
-  steps: ["Paketler", "Gram fiyatı"],
+  steps: ["Paketler", "Gram fiyatı", "480 g ve 400 g örneği"],
   draw: (_v, step) => {
+    if (step === 2) {
+      const oldAmount = 480, nextAmount = 400;
+      const oldPrice = 240, nextPrice = 280;
+      const oldUnit = oldPrice / oldAmount;
+      const nextUnit = nextPrice / nextAmount;
+      const percent = Math.round((nextUnit / oldUnit - 1) * 100);
+      const unitText = new Intl.NumberFormat("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      return {
+        els: [
+          rect(0, 0, 1.6, oldAmount / 200, "b"),
+          rect(2.1, 0, 1.6, nextAmount / 200, "c"),
+          txt(v(0.8, oldAmount / 200), `${oldAmount} g · ${oldPrice} TL`, "n", { small: true }),
+          txt(v(2.9, nextAmount / 200), `${nextAmount} g · ${nextPrice} TL`, "n", { small: true }),
+          txt(v(1.85, 0), "Paket", "s", { small: true }),
+          rect(5.6, 0, 1.2, 4 * oldUnit, "b"),
+          rect(7.4, 0, 1.2, 4 * nextUnit, "warn"),
+          txt(v(6.2, 4 * oldUnit), `${unitText.format(oldUnit)} TL/g`, "n", { small: true }),
+          txt(v(8.0, 4 * nextUnit), `${unitText.format(nextUnit)} TL/g`, "n", { small: true }),
+          txt(v(7.1, 0), "Gram fiyatı", "s", { small: true }),
+        ],
+        readout: [
+          `Eski ${oldPrice}/${oldAmount} = ${unitText.format(oldUnit)} TL/g. Yeni ${nextPrice}/${nextAmount} = ${unitText.format(nextUnit)} TL/g.`,
+          `Gram fiyatı %${percent} arttı. Kilogram karşılaştırması ${oldUnit * 1000} TL → ${nextUnit * 1000} TL.`,
+        ],
+      };
+    }
     const els: El[] = [];
     els.push(rect(0, 0, 1.6, 2.5, "b"), rect(2.1, 0, 1.6, 2.0, "c"));
     els.push(txt(v(0.8, 2.5), "500 g · 200 TL", "n", { tone: "ink", small: true, bold: true }), txt(v(2.9, 2.0), "400 g · 192 TL", "n", { tone: "ink", small: true, bold: true }));

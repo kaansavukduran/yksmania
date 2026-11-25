@@ -230,7 +230,7 @@ import { geographyFigures062Human } from "./geographyFigures062Human";
 import { religionFigures062Rulings } from "./religionFigures062Rulings";
 import { religionFigures062Values } from "./religionFigures062Values";
 import { religionFigures062Belief } from "./religionFigures062Belief";
-import { geometryFigures063Sheets } from "./geometryFigures063Sheets";
+import { geometryFigures063Sheets, squareFromMidpoints } from "./geometryFigures063Sheets";
 import { mathFigures064Sheets } from "./mathFigures064Sheets";
 import { turkishFigures065Sheets } from "./turkishFigures065Sheets";
 import { geographyFigures066Sheets } from "./geographyFigures066Sheets";
@@ -502,6 +502,7 @@ export const sectionImageFigures = new Map<string, Map<string, LessonPhoto>>([
 ]);
 
 const publishedSectionFigures: Record<string, Record<string, FigureDef>> = {
+  "tyt-geo-paralelkenar-ozel-dortgenler-032": { "Orta noktalarla iç kareyi kur": squareFromMidpoints },
   "sayi-problemleri": { "Kapasite eşitliği birimlerin oranını buldurur": capacityWithBoxExample },
 };
 

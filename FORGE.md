@@ -3761,3 +3761,9 @@ Kesir Problemleri fiziksel 6, Eşkenar Dörtgen fiziksel 2–3 ve 5 karşılaşt
 Yaş Problemleri’nde iki paralel doğru aynı tarihteki yaşları gösteriyor. Deniz ve Işıl bugün 30 ve 16, dört yıl sonra 34 ve 20 yaşında. Düşey fark her iki anda 14 yıl. Dikdörtgen’de çevre 34 ve köşegen 13 bilgileri alanı 60, kenarları 12 ve 5 olarak belirliyor.
 
 Yaş Problemleri fiziksel 1 ve Dikdörtgen fiziksel 2 ile 5 karşılaştırıldı. TypeScript, 28 hedef birim ve 39 Chromium akışı geçti. 323 çevrimdışı varlık ve 320, 375 ve 1280 pikselde 24 görsel denetlendi. Sırada Yüzde Problemleri fiziksel 12 ve Kare fiziksel 2 ile 5 var.
+
+## TYT Matematik ve Geometri · 0.168.0 adayı
+
+Yüzde Problemleri’nde 480 g ve 240 TL ile 400 g ve 280 TL verileri gram başına fiyatla karşılaştırılıyor. 0,50 TL/g’den 0,70 TL/g’ye geçiş %40 artış. Karede dört kenarın orta noktaları birleştiriliyor. Dış kenar 8 iken iç kenar 4√2, iç alan 32 ve dört köşe üçgeninin toplam alanı 32.
+
+Yüzde Problemleri fiziksel 12 ve Kare fiziksel 2 ile 5 doğrulandı. TypeScript, 26 hedef birim, 6 gerçek Chromium akışı, 12 çizim yerleşimi ve 323 çevrimdışı varlık geçti. Ham soru ve ders kayıtları bayt düzeyinde eş. Sırada Kâr Zarar fiziksel 12 ve Deltoid fiziksel 5 var.

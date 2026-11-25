@@ -904,6 +904,34 @@ const alan: Record<string, FigureDef> = {
 
 const rect = (w: number, h: number, o: V = v(0, 0)): [V, V, V, V] => [o, add(o, v(w, 0)), add(o, v(w, h)), add(o, v(0, h))];
 
+export const squareFromMidpoints: FigureDef = {
+  caption: "Dış karenin kenarı değişirken dört eş dik üçgenin ve ortadaki karenin alanlarını karşılaştır.",
+  alt: "Dış kare ve kenar orta noktalarına oturan iç kare. Dört dış köşe üçgeninin her iki dik kenarı dış karenin kenarının yarısı.",
+  param: { label: "Dış karenin kenarı", min: 4, max: 14, step: 1, init: 8, unit: " birim" },
+  draw: (side) => {
+    const corners = rect(side, side);
+    const inner = corners.map((point, i) => mid(point, corners[(i + 1) % 4]));
+    const half = side / 2;
+    const triangleArea = half * half / 2;
+    const outerArea = side ** 2;
+    const insideArea = outerArea - 4 * triangleArea;
+    return {
+      els: [
+        ...corners.map((corner, i) => poly([corner, inner[i], inner[(i + 3) % 4]], { fill: "muted", thin: true })),
+        poly(inner, { tone: "b", fill: "b" }),
+        poly(corners),
+        ...inner.map((point) => pt(point)),
+        ...corners.map((point, i) => pt(point, ["A","B","C","D"][i], ["sw","se","ne","nw"][i] as "sw" | "se" | "ne" | "nw")),
+      ],
+      readout: [
+        `İç karenin kenarı ${fmt(half)}√2 birim. Dış karenin alanı ${fmt(outerArea)} birim².`,
+        `Her köşe üçgeni ${fmt(triangleArea)} birim². Dört üçgen toplam ${fmt(4 * triangleArea)} birim².`,
+        `İç karenin alanı ${fmt(insideArea)} birim², dış alanın yarısı.`,
+      ],
+    };
+  },
+};
+
 const dikdortgen: Record<string, FigureDef> = {
   "Dikdörtgende eş köşegenin kaynağı": {
     caption: "Eş köşegenler birbirini ortalar. Çevre ve köşegen biliniyorsa yarı çevrenin karesinden köşegenin karesini çıkar. Alan, farkın yarısıdır.",

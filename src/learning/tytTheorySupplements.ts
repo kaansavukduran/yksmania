@@ -41,6 +41,24 @@ export const tytTheorySupplements: Readonly<Record<string, TheorySupplement | un
     ],
     summary: "30−16=14. Dört yıl sonra 34−20=14. Yaş farkı sabit kalırken oran değişir.",
   },
+  "yuzde-problemleri": {
+    title: "Paket fiyatıyla birim fiyat aynı değişken değildir",
+    figureTitle: "Paket fiyatıyla birim fiyat aynı değişken değildir",
+    paragraphs: [
+      "480 g için 240 TL, 400 g için 280 TL ödendiğinde gram fiyatları 0,50 ve 0,70 TL olur. Artış 0,20 TL/g’yi eski 0,50 TL/g’ye bölünce %40 çıkar. 280/240 oranı sadece paket ücretini karşılaştırır. Aynı sonucu kilogram fiyatlarında 500 TL’den 700 TL’ye çıkışla denetle.",
+    ],
+    summary: "240/480=0,50 ve 280/400=0,70 TL/g. Ölçü birimini eşitle. Birim fiyat artışı %40.",
+  },
+  "tyt-geo-paralelkenar-ozel-dortgenler-032": {
+    title: "Orta noktalarla iç kareyi kur",
+    figureTitle: "Orta noktalarla iç kareyi kur",
+    paragraphs: [
+      "Kenarları 8 birim olan karenin ardışık kenar orta noktaları arasındaki yatay ve düşey farklar 4 ve 4’tür. İç karenin kenarı √(4²+4²)=4√2 ve alanı 32 birim² olur. Dış alan 64 birim². Arada kalan dört dik üçgenin her biri 8 birim² olduğundan toplamları da 32’dir.",
+      "Bu sonuç, seçilen noktaların kenar orta noktaları olmasına bağlıdır. Çizimde kenarı değiştir ve her yeni ölçüde dış alanın nasıl iki eş yarıya ayrıldığını denetle.",
+    ],
+    summary: "Dış kenar a ise iç kenar (a/2)√2, iç alan a²/2. Dıştaki dört eş üçgenin toplam alanı da a²/2.",
+    appendSection: true,
+  },
   "kesir-problemleri": {
     title: "Kalanın kesri yeni bir taban kullanır",
     figureTitle: "Kalanın kesri yeni bir taban kullanır",

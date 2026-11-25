@@ -903,3 +903,46 @@ test("The known perimeter and diagonal determine the two rectangle sides", async
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Package price and price per gram use different amounts", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Paket fiyatıyla birim fiyat aynı değişken değildir");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto("/#/lesson?id=yuzde-problemleri");
+  await next.press("Enter");
+  await next.press("Enter");
+  await expect(model).toContainText("240/480 = 0,50 TL/g");
+  await expect(model).toContainText("280/400 = 0,70 TL/g");
+  await expect(model).toContainText("Gram fiyatı %40 arttı");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-213");
+  await next.press("Enter");
+  await next.press("Enter");
+  await expect(model).toContainText("Gram fiyatı %40 arttı");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Joining midpoints divides a square into two equal area groups", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-paralelkenar-ozel-dortgenler-032";
+  const model = figure(page, "Orta noktalarla iç kareyi kur");
+  const slider = model.getByRole("slider", { name: /Dış karenin kenarı/ });
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("İç karenin kenarı 4√2 birim");
+  await expect(model).toContainText("İç karenin alanı 32 birim²");
+  await expect(model).toContainText("Dört üçgen toplam 32 birim²");
+  await slider.press("Home");
+  await expect(model).toContainText("İç karenin alanı 8 birim²");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(model).toContainText("Dört üçgen toplam 32 birim²");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
