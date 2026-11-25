@@ -1,6 +1,6 @@
 {
   "name": "yksmania",
-  "version": "0.194.0",
+  "version": "0.195.0",
   "description": "Offline-first YKS learning with spaced retrieval and AIONIA companions",
   "main": "desktop/main.cjs",
   "scripts": {

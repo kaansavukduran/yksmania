@@ -201,6 +201,47 @@ const piecewiseDomain: FigureDef = {
   },
 };
 
+const quadraticRemainder: FigureDef = {
+  caption: "İki yüksekliği aynı x değerinde karşılaştır. Sürekli eğri P, kesikli doğru kalandır. Sürgüyü 1 ve 2 köklerine, ardından 0’a getir.",
+  alt: "Aynı koordinat sisteminde P(x) = x³ + 2x + 1 kübik eğrisi ve R(x) = 9x − 5 kesikli doğrusu. 1 ve 2 kökleri aynı yüksekliği verir. Sürgü seçilen x’te iki değeri gösterir.",
+  param: { label: "Karşılaştırılan x", min: 0, max: 2.5, step: 0.25, init: 1 },
+  draw: (x) => {
+    const polynomial = (a: number) => a ** 3 + 2 * a + 1;
+    const slope = polynomial(2) - polynomial(1);
+    const remaining = (a: number) => polynomial(1) + slope * (a - 1);
+    const divisor = (x - 1) * (x - 2);
+    const point = (a: number, y: number) => v(a * 2.5, y * 0.24);
+    const show = (n: number) => fmt(n).replace("-", "−");
+    const p = polynomial(x);
+    const r = remaining(x);
+    const start = -0.25;
+    const end = 2.5;
+    const els: El[] = [
+      ...axes(-1, 6.65, -2.05, 5.55, "x", "y"),
+      poly(curve(polynomial, start, end, 88).map(([a, y]) => point(a, y)), { tone: "b", open: true, bold: true }),
+      seg(point(start, remaining(start)), point(end, remaining(end)), { tone: "warn", dash: true, bold: true }),
+      seg(point(x, 0), point(x, Math.max(p, r)), { tone: "muted", thin: true, dash: true }),
+      ball(point(x, p), 0.105, p === r ? "c" : "b"),
+      txt(v(-1.9, 6.3), "", "c"),
+      txt(v(7.1, -2.65), "", "c"),
+    ];
+    if (p !== r) {
+      els.push(seg(point(x, p), point(x, r), { tone: "a", dash: true }), ball(point(x, r), 0.105, "warn"));
+    }
+    for (const a of [0, 1, 2]) els.push(txt(point(a, -1), String(a), "s", { small: true }));
+    for (const y of [-5, 5, 10, 15, 20]) els.push(txt(point(-0.06, y), show(y), "w", { small: true }));
+    return {
+      els,
+      readout: [
+        `x = ${show(x)} için P(x) = ${show(p)}, R(x) = ${show(r)}.`,
+        divisor === 0
+          ? "D(x) = 0. x bu bölenin kökü olduğu için P(x) ile R(x) eşit."
+          : `P(x) − R(x) = ${show(p - r)}. Bu fark D(x) · (x + 3) çarpımından gelir.`,
+      ],
+    };
+  },
+};
+
 export const mathFiguresAyt2: Record<string, Record<string, FigureDef>> = {
   "ayt-trigonometrik-denklemler": { "Sinüste iki simetrik aileyi kur": sinFamilies },
   "ayt-fonksiyonlar": {
@@ -208,6 +249,9 @@ export const mathFiguresAyt2: Record<string, Record<string, FigureDef>> = {
     "Parçalı fonksiyonda açık ve dolu ucu ayır": piecewiseDomain,
   },
   "ayt-diziler": { "Aritmetik toplamı eşleştirerek türet": gauss },
-  "ayt-polinomlar": { "Doğrusal bölenin kökü kalanı verir": remainder },
+  "ayt-polinomlar": {
+    "Doğrusal bölenin kökü kalanı verir": remainder,
+    "İkinci derece bölenin iki köküyle kalanı kur": quadraticRemainder,
+  },
   "ayt-toplam-fark-yarim-aci": { "Dönme, iki koordinatı birlikte değiştirir": rotation },
 };

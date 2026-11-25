@@ -1,8 +1,8 @@
 {
-  "version": "0.194.0",
+  "version": "0.195.0",
   "channel": "alpha",
   "notes": {
-    "tr": "AYT Biyolojide ATP’nin parçalarını incele ve başlangıç, sentez ve hidrolizden son ATP miktarını aynı ölçekli modelle hesapla.",
-    "en": "Inspect ATP parts and calculate final ATP from the starting amount, synthesis, and hydrolysis on one shared scale."
+    "tr": "AYT Matematikte ikinci derece bölenin iki kökünü kullanarak kalanı bul. Polinom ile kalanı aynı eksenlerde karşılaştır.",
+    "en": "Use the roots of a quadratic divisor to find the remainder, then compare both curves on the same axes."
   }
 }

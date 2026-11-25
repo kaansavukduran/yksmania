@@ -1,3 +1,9 @@
+# İkinci derece bölenle polinom bölmesi · 0.195.0 adayı
+
+AYT Matematik Polinomlar dersinde, iki farklı kökte `P(x)=R(x)` eşitliğinden kalan doğrusunu kuran çizim eklendi. Sürgü 1 ve 2’de ortak yüksekliği, 0 ve 2,5’te yükseklik farkını gösterir. Çift katlı kök için polinom bölmesi açıklanır. İçerik ayrı Kopya Kağıdı'nda da açılır.
+
+12 fiziksel sayfalık kaynağın 2, 5 ve 8. sayfaları bu öğretim maddelerine bağlandı. İki öğrenci rotası çevrimdışı ve büyük yazıyla çalıştı. Üç ekran genişliğinde grafik etiketleri ve yatay taşma denetlendi.
+
 # AYT Sayısal kaynak paketleri · 0.194.0 adayı
 
 | Ders | Konu anlatımı ve Kopya Kağıdı |
@@ -875,13 +881,13 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Coğrafya | 40 / 40 | 40 · 176 | 400 / 400 · %100,00 | 9 / 40 · %22,50 | 45 soru · 9 kitapçık | 0 |
 | TYT Felsefe | 17 / 17 | 17 · 70 | 190 / 190 · %100,00 | 5 / 17 · %29,41 | 89 soru · 9 kitapçık | 0 |
 | TYT Din | 20 / 20 | 20 · 98 | 371 / 371 · %100,00 | 5 / 20 · %25,00 | 46 soru · 9 kitapçık | 0 |
-| AYT Matematik | 17 / 17 | 17 · 39 | 253 / 253 · %100,00 | 2 / 17 · %11,76 | 273 soru · 9 kitapçık | 0 |
+| AYT Matematik | 17 / 17 | 17 · 40 | 253 / 253 · %100,00 | 2 / 17 · %11,76 | 273 soru · 9 kitapçık | 0 |
 | AYT Geometri | 4 / 4 | 4 · 54 | 45 / 45 · %100,00 | 1 / 4 · %25,00 | 87 soru · 9 kitapçık | 0 |
 | AYT Fizik | 46 / 46 | 46 · 176 | 541 / 541 · %100,00 | 7 / 46 · %15,22 | 126 soru · 9 kitapçık | 0 |
 | AYT Kimya | 55 / 55 | 55 · 149 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 326 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2397** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2398** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
