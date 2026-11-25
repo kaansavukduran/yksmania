@@ -351,3 +351,46 @@ test("The external bisector switches sides through the parallel case", async ({ 
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("A shifted start can move or remove the first common event", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-mat-ebob-ekok-kaynak-034";
+  const model = figure(page, "Başlangıç kayarsa iki ayrı diziyi karşılaştır");
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("Ortak dakikalar: 24, 60.");
+  const delay = model.getByRole("slider", { name: /B’nin ilk anı/ });
+  await delay.press("Home");
+  await expect(model).toContainText("Ortak dakikalar: 0, 36, 72.");
+  await delay.press("ArrowRight");
+  await expect(model).toContainText("Ortak dakika yok.");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(model).toContainText("Ortak dakikalar: 24, 60.");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Median length follows the actual side lengths as the base moves", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-ucgen-merkezleri-031";
+  const model = figure(page, "Kenarortay uzunluğu ve dik üçgendeki özel hâl");
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("AM = 7 birim");
+  const base = model.getByRole("slider", { name: /BC tabanı/ });
+  await base.press("End");
+  await expect(model).toContainText("BM = MC = 7 birim");
+  await expect(model).toContainText("AM = 4 birim");
+  await base.press("Home");
+  await expect(model).toContainText("AM ≈ 7,81 birim");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(model).toContainText("AM = 7 birim");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

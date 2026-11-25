@@ -2120,7 +2120,7 @@ const packs031: FoundationPack031[] = [
     title: "Üçgende yardımcı elemanlar: açıortay, kenarortay ve merkezler",
     minutes: 55,
     source:
-      "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Açıortay 5.1 fiziksel s. 2 ve 5: dış açıortay koşulları. Sorular resmî sınav sorusu değildir.",
+      "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Açıortay 5.1 fiziksel s. 2 ve 5: dış açıortay koşulları. Kenarortay 5.1 fiziksel s. 2 ve 5: Apollonius bağıntısı. Sorular resmî sınav sorusu değildir.",
     objectives: [
       "Açıortay, kenarortay, yükseklik ve orta dikmenin farklı tanımlarını ayır.",
       "İç ve dış açıortay oranlarını noktanın konumuyla uygula.",
@@ -2176,6 +2176,7 @@ const packs031: FoundationPack031[] = [
         paragraphs: [
           "BC=a, CA=b ve AB=c ise A’dan çizilen kenarortayın uzunluğu mₐ için4mₐ²=2b²+2c²−a²’dir. Bu ifade orta noktanın iki yanındaki küçük üçgenlerde kurulan uzunluk ilişkilerinin toplamından gelir. Dik olmayan üçgende mₐ’yı yükseklik sanarak Pisagor kullanmak doğru değildir.",
           "Dik üçgende hipotenüsün orta noktası üç köşeye eşit uzaklıktadır; bu nedenle dik köşeden hipotenüse çizilen kenarortay hipotenüsün yarısıdır. Bu özellik her kenara ait kenarortay için geçerli değildir. Hipotenüse ait yüksekliğin aynı değer olması ancak ikizkenar dik üçgen gibi ek bir koşulda gerçekleşir.",
+          "AB=7, AC=9 ve BC=8 için AM²=(2·7²+2·9²−8²)/4=49. AM=7 birim. Modelde tabanı 14 yapınca AM=4 olur. Taban 4’e inince H uzantıya çıkabilir. M her zaman BC’nin ortasındadır.",
         ],
       },
       {
@@ -2908,6 +2909,7 @@ const quickSheets031: Record<string, FoundationQuickSheet031> = {
       },
       {
         title: "Kenarortay ve ağırlık merkezi",
+        figureTitle: "Kenarortay uzunluğu ve dik üçgendeki özel hâl",
         text: [
           "M,BC’nin ortası ve G ağırlık merkezi:AG:GM=2:1,AG=2AM/3,GM=AM/3. Bir kenarortay iki eş alan;üçü birlikte altı eş alan verir.",
           "BC=a,CA=b,AB=c için4mₐ²=2b²+2c²−a². Altı küçük üçgenin alanları eşit diye kenarları eşit değildir.",

@@ -1,3 +1,4 @@
+import { ebob034Timeline } from "../ebobEkokSource034Model";
 import { dim, poly, pt, seg, txt, v, vec, type El, type FigureDef, type Tone } from "./figureKit";
 import { cell, factor, fact, gcd, isPrime, lcm, numberLine, pad, rect, sup, table, tn, token, vp } from "./mathFigures062TytKit";
 
@@ -519,6 +520,36 @@ const moments: FigureDef = {
   },
 };
 
+const offsetMoments: FigureDef = {
+  caption: "A, 0’da ve her 12 dakikada bir çalışır. B’nin ilk anını kaydır ve iki dizinin ortak dakikalarını izle.",
+  alt: "Ölçekli iki zaman doğrusu. A üstte 12 dakikada bir, B altta 18 dakikada bir işaretli. Ortak anlarda iki sıra kesikli çizgiyle birleşiyor.",
+  param: { label: "B’nin ilk anı", min: 0, max: 12, step: 1, init: 6, unit: " dk" },
+  draw: (offset) => {
+    const model = ebob034Timeline(12, 18, offset, 72, true, true);
+    const scale = 0.16;
+    const row = (name: string, moments: number[], y: number, tone: Tone): El[] => [
+      seg(v(0, y), v(72 * scale, y), { tone, thin: true }),
+      txt(v(-0.35, y), name, "w", { tone, bold: true }),
+      ...moments.flatMap((minute) => [
+        pt(v(minute * scale, y), undefined, "n", tone),
+        txt(v(minute * scale, y + 0.27), String(minute), "n", { tone, small: true }),
+      ]),
+    ];
+    return {
+      els: [
+        ...row("A", model.a, 2, "a"),
+        ...row("B", model.b, 0, "b"),
+        ...model.common.map((minute) => seg(v(minute * scale, 0.3), v(minute * scale, 1.7), { tone: "warn", dash: true })),
+        ...pad(-1.1, 3, 72 * scale + 0.55, -0.6),
+      ],
+      readout: [
+        model.count ? `Ortak dakikalar: ${model.common.join(", ")}.` : "Ortak dakika yok.",
+        model.first === null ? `B’nin 6’ya göre kalanı ${offset % 6}. A’nın kalanı 0.` : `0’dan sonraki ilk ortak an: ${model.first}. dakika.`,
+      ],
+    };
+  },
+};
+
 const strips: FigureDef = {
   caption:
     "Kalan şeritleri (ölçekli). 85 ve 133 birimlik şeritler d uzunluğunda parçalara kesilir; sondaki kısa parça kalandır. İki kalan da 1 ise d hem 84’ü hem 132’yi böler ve d > 1 olmalıdır. Bu koşulu sağlayan en büyük d, EBOB(84, 132) = 12’dir.",
@@ -571,6 +602,7 @@ export const mathFigures062TytNumbers: Record<string, Record<string, FigureDef>>
     "Öklid: büyük sayıyı aynı ortak bölenlerle küçült": euclid,
     "Kareyle kaplama: kenarın bölen olması gerekir": tiling,
     "Uçları ve saati doğru say": moments,
+    "Başlangıç kayarsa iki ayrı diziyi karşılaştır": offsetMoments,
     "Bilinmeyen bölen: her sayıdan kendi kalanını çıkar": strips,
   },
 };

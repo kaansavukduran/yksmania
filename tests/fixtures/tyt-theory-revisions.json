@@ -3872,5 +3872,845 @@
         }
       }
     ]
+  },
+  {
+    "version": "0.156.0",
+    "receipts": [
+      {
+        "surface": "lessons",
+        "id": "tyt-geo-ucgen-merkezleri-031",
+        "after": "512610f0c3120ed11d56a70eaf2e8c792ff6d5be2a25339b4997eea0af0b7a34",
+        "prior": {
+          "source": {
+            "tr": "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Açıortay 5.1 fiziksel s. 2 ve 5: dış açıortay koşulları. Sorular resmî sınav sorusu değildir."
+          },
+          "body": [
+            {
+              "title": {
+                "tr": "Dört çizginin dört ayrı görevi"
+              },
+              "text": {
+                "tr": "Kenarortay bir köşeden karşı kenarın orta noktasına gider. Açıortay köşedeki açıyı iki eş açıya ayırır. Yükseklik köşeden karşı kenarın doğrusuna dik iner. Kenar orta dikmesi bir kenarın orta noktasından ona dik geçen doğrudur; genel üçgende karşı köşeden geçmesi gerekmez.\n\nBir çizginin şekle bakınca ortadan geçmesi veya dik görünmesi yeterli veri değildir. Orta nokta için eş parça işaretlerini, açıortay için eş açı işaretlerini ve yükseklik için90° işaretini ara. Genel üçgende bu görevler farklı doğrulardır; ikizkenar veya eşkenar gibi özel hâllerde birleşebilirler."
+              }
+            },
+            {
+              "title": {
+                "tr": "Açıortay eş açı kurar, eş kenar parçası zorunlu değildir"
+              },
+              "text": {
+                "tr": "A açısının iç açıortayı AD ve D∈BC olsun. ABD ile ACD üçgenlerinde A açısındaki paylar eşittir. Açıortay üzerindeki bir noktanın açının iki koluna dik uzaklıkları eşittir. Dik uzaklık, eğik bir köşeye uzaklıkla aynı şey değildir.\n\nİç açıortay teoremi BD/DC=AB/AC verir. Eş bölünen açı iken karşı kenar genellikle eş bölünmez. AB=6, AC=9 ve BC=10 için karşı kenar2:3 oranında4 ve6 olarak bölünür. Parçaları bulurken oran paylarını topla ve bütün kenarı bu toplama böl."
+              }
+            },
+            {
+              "title": {
+                "tr": "İç açıortayın uzunluğu ve alanla anlamı"
+              },
+              "text": {
+                "tr": "AB=c, AC=b, BD=m, DC=n ve AD iç açıortay olduğunda AD²=bc−mn’dir. Burada b ile c, açıortayın çıktığı köşeye komşu iki kenardır; m ile n karşı kenarın parçalarıdır. Kullanımdan önce m/n=c/b koşulu da sağlanmalıdır.\n\nABD ve ACD aynı yüksekliği paylaştığından alanları BD/DC oranındadır; dolayısıyla iç açıortayın ayırdığı alanların oranı AB/AC olur. Üçgenin kenarları5,5 ve6 ise tepe açıortayı tabanı3 ve3 böler; uzunluğu√(25−9)=4’tür. Bu özel örnekte açıortay yükseklik ve kenarortayla aynı parçadır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Dış açıortayda nokta uzantıda olur"
+              },
+              "text": {
+                "tr": "A köşesindeki bir dış açının açıortayı BC doğrusunu E’de kesiyorsa E,BC doğru parçasının dışındadır ve |BE|/|CE|=AB/AC olur. İç açıortayda parçalar toplanarak BC’yi verir; dış açıortayda ilgili büyük ve küçük uzaklığın farkı BC’dir.\n\nAB=AC ise A’daki dış açıortay BC’ye paraleldir; sonlu bir kesişim noktası varmış gibi oran denklemi kurma. AB<AC olduğunda |BE|<|CE| olacağı için E,B tarafındaki uzantıda bulunur. Önce B,C,E sırasını yerleştirmek toplam–fark hatasını önler.\n\nAB>AC olduğunda |BE|>|CE|, yani E, C tarafındadır. Üç durumu gösteren modelde aynı AC ve BC uzunluklarını koruyup AB’yi değiştir. Dış açıortayın BC ile kesiştiği taraf, iki yan kenarın karşılaştırmasına bağlıdır."
+              }
+            },
+            {
+              "title": {
+                "tr": "İç merkez I: kenarlara eş dik uzaklık"
+              },
+              "text": {
+                "tr": "Üç iç açıortay üçgenin içinde tek bir I noktasında kesişir. I’nın üç kenarın doğrularına dik uzaklıkları eşittir; bu ortak r uzaklığı iç teğet çemberin yarıçapıdır. Köşelere olan IA,IB,IC uzaklıklarının eşit olması gerekmez.\n\nBIC üçgeninde B ve C açıları ana üçgendeki açıların yarılarıdır. Bu yüzden ∠BIC=180°−(B+C)/2=90°+A/2 olur. A’nın karşısındaki dış teğet çember merkezi Iₐ, B ve C’nin dış açıortaylarının uygun kesişimidir; ∠BIₐC=90°−A/2 olur. İç merkezle dış merkezdeki artı–eksi işaretlerini ayrı düşün."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kenarortay ve ağırlık merkezi G"
+              },
+              "text": {
+                "tr": "A’dan BC’nin orta noktası M’ye çizilen AM bir kenarortaydır. BM=MC olduğundan ABM ile ACM’nin tabanları eşit ve yükseklikleri ortaktır; alanları eşittir. Üç kenarortay her zaman üçgenin içinde ağırlık merkezi G’de kesişir.\n\nG her kenarortayı köşeden başlayarak2:1 oranında böler: AG=2AM/3 ve GM=AM/3. Uzun parça köşeye yakındır. Üç kenarortay birlikte altı eş alanlı küçük üçgen oluşturur. Bu eşlik alan içindir; altı küçük üçgenin kenarları genel durumda eş değildir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kenarortay uzunluğu ve dik üçgendeki özel hâl"
+              },
+              "text": {
+                "tr": "BC=a, CA=b ve AB=c ise A’dan çizilen kenarortayın uzunluğu mₐ için4mₐ²=2b²+2c²−a²’dir. Bu ifade orta noktanın iki yanındaki küçük üçgenlerde kurulan uzunluk ilişkilerinin toplamından gelir. Dik olmayan üçgende mₐ’yı yükseklik sanarak Pisagor kullanmak doğru değildir.\n\nDik üçgende hipotenüsün orta noktası üç köşeye eşit uzaklıktadır; bu nedenle dik köşeden hipotenüse çizilen kenarortay hipotenüsün yarısıdır. Bu özellik her kenara ait kenarortay için geçerli değildir. Hipotenüse ait yüksekliğin aynı değer olması ancak ikizkenar dik üçgen gibi ek bir koşulda gerçekleşir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Yükseklikler ve diklik merkezi H"
+              },
+              "text": {
+                "tr": "Bir yükseklik karşı kenarın kendisine veya uzantısına dik iner. Üç yükseklik doğrusu diklik merkezi H’de kesişir. Dar açılı üçgende H içeride, dik üçgende dik açının köşesinde, geniş açılı üçgende dışarıdadır. Geniş üçgende uzantıları çizmek hata değil tanımın gereğidir.\n\nYüksekliğin boyunu bulmak için hangi tabana ait olduğunu belirt. Aynı üçgende alan a·hₐ/2=b·hᵦ/2=c·h𝚌/2 olduğundan büyük kenara ait yükseklik daha kısa olur. Yüksekliğin dik olduğu doğruyla köşenin karşısındaki kenarın yönü aynı olmalıdır; herhangi bir90° işareti yeterli değildir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kenar orta dikmeleri ve çevrel merkez O"
+              },
+              "text": {
+                "tr": "Bir doğru parçasının orta dikmesi üzerindeki her nokta iki uca eşit uzaklıktadır. Üçgenin üç kenarının orta dikmeleri O noktasında birleşir; OA=OB=OC=R olur. O çevrel çemberin merkezidir; burada eşit olan uzaklıklar kenarlara değil köşeleredir.\n\nO dar üçgende içeride, dik üçgende hipotenüsün orta noktasında, geniş üçgende dışarıdadır. I ile O’nun eş uzaklık tanımlarını karşılaştır: I’dan kenarlara dik uzaklıklar, O’dan köşelere uzaklıklar eşittir. Bir noktaya “merkez” denmesi bu iki özelliği birlikte taşıdığını söylemez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Simetri ne zaman çizgileri ve merkezleri birleştirir?"
+              },
+              "text": {
+                "tr": "AB=AC olan ikizkenar üçgende A’dan BC tabanına çizilen açıortay, kenarortay ve yükseklik aynı doğru parçasıdır. Bu doğru aynı zamanda BC’nin orta dikmesi üzerindedir. İki küçük üçgen KAK eşliğiyle eş olur; eş parçalar ve diklik buradan gerekçelendirilebilir.\n\nEşkenar üçgende bütün yükseklik, kenarortay ve açıortay doğruları aynı üç simetri doğrusu olduğundan I,G,H,O tek noktada birleşir. Kenarı a olan eşkenarda yükseklik a√3/2’dir; ağırlık merkezi oranından R=2h/3 ve r=h/3 çıkar. Bu birleşmeyi her üçgene genelleme."
+              }
+            },
+            {
+              "title": {
+                "tr": "Merkez seçerken hangi bilgiye ihtiyacın var?"
+              },
+              "text": {
+                "tr": "“İki eş açı” verisinden iç açıortaya; “karşı kenar eş iki parça” verisinden kenarortaya; “köşeden90°” verisinden yüksekliğe; “orta noktadan90°” verisinden orta dikmeye yönel. Bir merkez sorusunda önce hangi doğruların kesiştiğini adlandır.\n\nSonra oranı veya eş uzaklığı uygula ve modelde kontrol et: G için2:1, I için kenarlara eş dik uzaklık, O için köşelere eş uzaklık, H için yüksekliklerin dikliği. Etkileşimli şekli değiştirirken genel üçgendeki bu görev farklarını izle; görseldeki tek bir özel duruma dayanarak kural çıkarma."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "lessons",
+        "id": "tyt-mat-ebob-ekok-kaynak-034",
+        "after": "47b5f51daa2bf600f041c3c70c22186dc20268589945bd63f5f2e66a0af6127e",
+        "prior": {
+          "body": [
+            {
+              "title": {
+                "tr": "Bölen ile katın yönünü ayır"
+              },
+              "text": {
+                "tr": "Pozitif tam sayılar 1, 2, 3, … biçimindedir; bu ünitede başlangıç sayıları sıfır veya negatif değildir. a=d×k yazılabiliyor ve k bir tam sayı oluyorsa d, a’yı kalansız böler. d|a işareti “d, a’yı böler” diye okunur. 12=3×4 olduğundan 3|12; aynı bağıntıda 12, 3’ün katıdır. Bölen sayının içine sığan ortak birim, kat ise sayının tam tekrarlarıdır.\n\n5, 12’nin böleni değildir: 12=5×2+2; kalan 2’dir. × çarpma, / bölme, = eşitlik; < küçük, ≤ küçük veya eşit, > büyük anlamına gelir. Bir uzunluğu ortak parçalara bölmekle iki düzenin aynı toplamı üretmesini ayır: ilkinde ortak bölen, ikincisinde ortak kat ararsın. “En az” sözcüğünü görüp işlem seçmek yerine aranan niceliğin neyi böldüğünü yaz."
+              }
+            },
+            {
+              "title": {
+                "tr": "Önce ortak küme, sonra en büyük veya en küçük"
+              },
+              "text": {
+                "tr": "EBOB, En Büyük Ortak Bölen; EKOK, En Küçük Ortak Kat demektir. 12’nin pozitif bölenleri 1, 2, 3, 4, 6, 12; 18’inkiler 1, 2, 3, 6, 9, 18’dir. Ortak küme 1, 2, 3, 6 olduğundan EBOB(12, 18)=6. Bir ortak bölen bulmak en büyüğü bulmak değildir: 3 de ortaktır ama 6 daha büyüktür.\n\nPozitif katlar 12, 24, 36,… ve 18, 36, 54,… diye ilerler. İlk pozitif kesişim 36 olduğundan EKOK(12, 18)=36. 0 her iki sayının katı olsa da EKOK için pozitif kat aranır. 72 ortak kattır fakat en küçüğü değildir. Kontrol olarak EBOB başlangıç sayılarının her birini bölmeli, EKOK da her birine tam bölünmelidir; bu bölme kontrolü tek başına en büyük/en küçük olmayı kanıtlamaz."
+              }
+            },
+            {
+              "title": {
+                "tr": "Asal kopyaları üslerle say"
+              },
+              "text": {
+                "tr": "Asal sayı 1’den büyük olup yalnız 1 ve kendisine tam bölünür: 2, 3, 5, 7 gibi. 1 asal değildir. Üs, aynı çarpanın tekrarını sayar: 2³=2×2×2=8. 72’yi 2’ye üç, ardından 3’e iki kez bölerek 1’e ulaşırsın; bu yüzden 72=2³×3². Çarpanları yeniden çarparak ayrılışı denetle.\n\n120=2³×3×5. Ortak bölenin her asal kopyası iki sayıda da bulunmalı; bu nedenle her asal için küçük üs alınır. 72’de 5 yoktur; bunun üssü 0’dır ve 5⁰=1 çarpımı değiştirmez. Ortak kat ise her iki sayının bütün gereksinimini karşılamalı; her asal için büyük üs gerekir. “Küçük sayının bütün çarpanları” değil, her ayrı asalın küçük üssü seçilir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Üs kuralının neden en iyiyi verdiğini açıkla"
+              },
+              "text": {
+                "tr": "72 ve 120’de EBOB=2³×3=24; EKOK=2³×3²×5=360. Ortak bölenin 3 üssünü 2 yapsaydın 120’nin tek 3’ü yetmezdi. 5 ekleseydin 72’de hiç 5 bulunmadığından ortaklık bozulurdu. 24’e daha fazla asal kopyası eklenememesi en büyük oluşunun gerekçesidir.\n\n360’tan bir 3 kopyası çıkarsaydın 72’de gereken iki 3 kalmazdı; 5’i çıkarsaydın 120’nin gereksinimi eksik olurdu. Her asalın gerekli en yüksek üssünü almak ortak katı gereksiz büyütmeden kurar. Son bölme denetimi: 72/24=3, 120/24=5; 360/72=5, 360/120=3. Bütün bölümler tam sayıdır."
+              }
+            },
+            {
+              "title": {
+                "tr": "İki sayının çarpım bağını doğru kapsamda kullan"
+              },
+              "text": {
+                "tr": "a, b pozitif tam sayı, d=EBOB(a, b) ve m=EKOK(a, b) için a×b=d×m. Her asalın başlangıçtaki iki üssünün toplamı, küçük üs ile büyük üssün toplamına eşittir. Bu yüzden EKOK=(a/EBOB)×b. Önce tam bölmeyi yapmak gereksiz büyük bir ara çarpımı azaltır: (72/24)×120=360.\n\nBu özdeşlik iki sayı içindir. Üç sayıda aynı ürün kuralını kullanma: 2×4×8=64, fakat EBOB(2, 4, 8)×EKOK(2, 4, 8)=2×8=16. Üç veya daha çok sayının EBOB/EKOK’unu her asalın küçük/büyük üssüyle bulabilir veya ikili ilerleyebilirsin: EBOB(a, b, c)=EBOB(EBOB(a, b), c); EKOK için de aynı yapı geçerlidir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Aralarında asal, ikisi de asal demek değildir"
+              },
+              "text": {
+                "tr": "EBOB(a, b)=1 ise iki sayı aralarında asaldır. 8 ile 9 bileşik olsalar da ortak pozitif bölenleri yalnız 1’dir; EKOK’ları 8×9=72 olur. 6 ve 10 farklı sayılardır fakat EBOB=2; EKOK=60/2=30. “Farklı” olmak çarpımı doğrudan EKOK yapmaz.\n\na, b’yi bölüyorsa EBOB=a ve EKOK=b’dir: 4|20 için 4 ve 20 bulunur. Ortak bölen 4’ten büyük olamaz; ortak katın en küçüğü zaten 20’dir. Aralarında asal iki sayının toplamı mutlaka asal değildir: 4 ve 5 için toplam 9’dur. Tek geçerli karşı örnek “daima” iddiasını çürütür; tek olumlu örnek ise her durumu kanıtlamaz."
+              }
+            },
+            {
+              "title": {
+                "tr": "Ortak böleni dışarı çıkar, kalan koşulu koru"
+              },
+              "text": {
+                "tr": "EBOB(a, b)=d ise a=dx, b=dy yaz. Burada x, y pozitif tam sayı ve EBOB(x, y)=1 olmalıdır; ortak bölenin hepsi dışarı çıkarılmıştır. x, y’nin ortak böleni 2 olsaydı a, b’nin ortak böleni en az 2 d olur, d’nin en büyük olduğu iddiası bozulurdu. EKOK=dxy olduğundan xy=m/d elde edilir.\n\nÖnce d|m koşulunu denetle: d=3, m=20 için m/d tam sayı değildir ve uygun iki pozitif tam sayı yoktur. d=6, m=180 için xy=30; (2, 15) çifti a, b=(12, 90), (5, 6) çifti (30, 36) verir. Sadece çarpımı tutturmak yetmez; her çifti aralarında asal olma koşuluyla ele."
+              }
+            },
+            {
+              "title": {
+                "tr": "En küçük toplamı adayları tüketerek kanıtla"
+              },
+              "text": {
+                "tr": "d=4, m=48 için xy=12. Küçükten büyüğe x≤y çarpan çiftleri (1, 12),(2, 6),(3, 4) ile biter. İlk ve son çift aralarında asaldır; (2, 6) ortak 2 yüzünden geçersizdir. Gerçek sayılar (4, 48) veya (12, 16); toplamlar 52 ve 28’dir. En küçük 28, en büyük 52; ters çiftler yeni toplam üretmez.\n\nSabit pozitif çarpımda yakın çarpanlar daha küçük toplam verir, fakat tam sayı ve aralarında asal koşullarını kaldırmaz. xy=36 için en yakın (6, 6) geçersizdir; geçerli (1, 36) ve (4, 9) çiftlerine bakılır. Bir adayı göstermek “olabilir”i kanıtlar; en küçük/en büyük için bütün daha iyi adayların neden elendiğini de açıklamak gerekir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Öklid: büyük sayıyı aynı ortak bölenlerle küçült"
+              },
+              "text": {
+                "tr": "a=bq+r, 0≤r<b ise EBOB(a, b)=EBOB(b, r). a ile b’yi bölen d, a−bq=r’yi de böler. Tersine b ile r’yi bölen d, bq+r=a’yı da böler. İki çiftin ortak bölen kümeleri aynı olduğundan en büyükleri aynıdır. q bölüm, r kalan demektir.\n\n252=198×1+54; 198=54×3+36; 54=36×1+18; 36=18×2+0. Son sıfır olmayan kalan 18 EBOB’dur. Son 0, ortak bölen değil işlemin durma işaretidir. EKOK=(252/18)×198=2772; 2772/252=11 ve 2772/198=14. Küçük sayıda bölen listesi de yedektir; büyük sayıda Öklid daha az adayla sonuca götürür."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kareyle kaplama: kenarın bölen olması gerekir"
+              },
+              "text": {
+                "tr": "36 cm ×24 cm dikdörtgeni eş karelerle doldururken karelerin kenarları dikdörtgene paralel, boşluk ve kesim kaybı yok olsun. Kare kenarı s ise 36/s ve 24/s pozitif tam sayı olmalı. En az kare için s olabildiğince büyük; s=EBOB(36, 24)=12 cm. Üç sütun ve iki satır, 6 kare verir.\n\nAlan kontrolü 36×24/12²=864/144=6’dır. cm uzunluğu, cm² alanı ölçer. Alanların bölünebilmesi tek başına kare kenarının her iki kenara tam uyduğunu kanıtlamaz; önce iki kenar bölümünü denetle. s=18, 36’ya uyar ama 24’e uymaz. s=6 geçerlidir fakat 24 kare gerektirir. Döndürülmüş karma kaplama, derz aralığı veya kesme kaybı farklı modeldir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Aynı boy, üç farklı adet hesabı"
+              },
+              "text": {
+                "tr": "36 ve 24 cm iki ipi ayrı ayrı en uzun eş boy parçalara ayırırsan boy yine 12 cm’dir. Parça adedi 36/12+24/12=3+2=5: dikdörtgendeki satır×sütun burada toplama dönüşür. Her ip ayrı kesiliyorsa 3−1+2−1=3 kesim gerekir. Üst üste kesme izni, kesim sayısını değiştiren ayrı bir koşuldur.\n\nAynı 36×24 dikdörtgenin kapalı çevresine, her köşeye gelecek en büyük eşit aralıklarla işaret koyarsan aralık 12 cm; çevre 2(36+24)=120 cm ve 120/12=10 işarettir. Kapalı çevrede başlangıç ve bitiş aynı noktadır; +1 ekleme. Açık doğru parçasında iki uç da dahilse nokta sayısı aralık sayısından 1 fazladır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Periyot: ilk yeniden ortak an pozitif ortak kattır"
+              },
+              "text": {
+                "tr": "Başlangıçta birlikte çalışan A her 12 dakikada, B her 18 dakikada çalışsın. A’nın anları 0, 12, 24, 36,…; B’ninkiler 0, 18, 36,… olur. İlk yeniden ortak çalışma EKOK(12, 18)=36 dakika sonradır. 36/12=3 ve 36/18=2 tam döngüdür. EBOB olan 6 dakika iki cihazın döngüsünü bile tamamlamaz.\n\nBaşlangıcın ortak ve aralıkların sabit olması gerekir. “Yeniden” sıfırdan sonraki ilk ortak anı ister; 0 başlangıçtır. 10’lu ve 15’li paketlerle ayrı ayrı tam paketlenebilen en küçük pozitif toplam da EKOK(10, 15)=30’dur; yüzey değişir, ortak kat yapısı kalır. Burada nesneleri kesip ortak parça üretmiyorsun."
+              }
+            },
+            {
+              "title": {
+                "tr": "Uçları ve saati doğru say"
+              },
+              "text": {
+                "tr": "12 ve 18 dakikalık ortak başlangıçlı döngülerin [0, 72] aralığındaki ortak anları 0, 36, 72: üç olay. Köşeli parantez uç dahil, yuvarlak parantez uç hariç demektir. [0, 72) aralığında 0 ve 36, başlangıç hariç (0, 72] aralığında 36 ve 72 bulunur. 72/36=2 aralık sayar; iki uç dahil olay sayısı 3’tür.\n\nBaşlangıç saati 09.50 ise 36 dakika sonrası 10.26’dır. Önce 10 dakika ile 10.00’a, kalan 26 dakika ile 10.26’ya git. Saatin dakika alanı 60 tabanındadır; 09.86 yazılmaz. Her soruda olayın kaçıncı anı mı, geçen süre mi, saat gösterimi mi istendiğini ayır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Başlangıç kayarsa iki ayrı diziyi karşılaştır"
+              },
+              "text": {
+                "tr": "A ilk kez 0’da, sonra her 12 dakikada; B ilk kez 6’da, sonra her 18 dakikada çalışırsa B’nin anları 6, 24, 42,… olur. A’nın 0, 12, 24,… dizisiyle ilk ortak an 24’tür. EKOK(12, 18)=36, ortak anlar bulunursa aralarındaki tekrar süresini anlatır; kaymış başlangıçtaki ilk anı tek başına vermez.\n\nÖrneğin 10 dakikalık A, 0’da; 15 dakikalık B, 5’te başlarsa ilk ortak an 20’dir: A 0, 10, 20; B 5, 20. Başlangıç bilgisi hiç verilmezse periyotlar tek başına ilk ortak anı belirlemez. Verilmeyen başlangıcı 0 kabul edip kesin sonuç uydurma. Küçük örnekte ayrı kat listeleri güvenli ve görünür bir yoldur."
+              }
+            },
+            {
+              "title": {
+                "tr": "Bölme eşitliğinde kalan mutlaka bölenden küçüktür"
+              },
+              "text": {
+                "tr": "N=dq+r eşitliğinde N sayı, d pozitif bölen, q tam sayı bölüm ve 0≤r<d kalandır. 29=6×4+5 için kalan 5 geçerlidir; 6 ile bölmede kalan 6 olamaz. Kalansız bölme r=0 durumudur. Kalanı çıkarınca N−r=dq, yani d’nin tam katı kalır.\n\nN hem a hem b ile bölündüğünde aynı r kalanı veriyorsa N−r ikisinin ortak katıdır: N=EKOK(a, b)×k+r. Ayrıca r<a ve r<b gerekir. Farklı kalanlar varsa tek r çıkaramazsın: 6’ya bölünmede 1, 8’e bölünmede 3 kalanını veren 43 için 43−1=42, 8’in katı değildir; her ayrı koşulu kendi kalanı ile yaz."
+              }
+            },
+            {
+              "title": {
+                "tr": "Aynı kalanlı sayıda aralığın en iyi adayını bul"
+              },
+              "text": {
+                "tr": "8 ve 12 ile bölündüğünde 5 kalanını veren N için EKOK=24; N=24 k+5. N>100 istenirse k=3, 77 verir ve yetmez; k=4, 101 verir. Sonuç 101=8×12+5=12×8+5; 5 her iki bölenden küçüktür. Sınırdaki adayın bir öncesini elemek en küçük olduğunu açıklar.\n\n6 ve 8 ile bölündüğünde 1 kalanını veren N<200 için N=24 k+1. k=8 →193, k=9 →217 sınırı aşar; en büyük 193’tür. Bir uygun sayı bulmak optimumu kanıtlamaz. 49 nesneyi altışarlı kutulara ayırınca 8 kutu dolar ve bir nesne artar. Aynı 49 nesneyi bu kez sekizerli kutulara ayırınca 6 kutu dolar ve yine bir nesne artar. 49=6×8+1=8×6+1. Bu iki ayrı düzen aynı toplamı gösterir. Sayı büyürken tüm sayıları denemek yerine ortak kat dizisindeki adayları dene."
+              }
+            },
+            {
+              "title": {
+                "tr": "Bilinmeyen bölen: her sayıdan kendi kalanını çıkar"
+              },
+              "text": {
+                "tr": "85 ve 133, aynı d’ye bölündüğünde 1 kalıyorsa d|84 ve d|132; ayrıca d>1. En büyük aday EBOB(84, 132)=12’dir. 85=12×7+1 ve 133=12×11+1. Kalanlar farklı olduğunda da her sayıyı kendine göre düzelt: 87’de 3, 134’te 2 kalan için yine 84 ve 132 kalır; d>3 koşuluyla 12 geçerlidir.\n\nEBOB, kalan sınırını kendiliğinden sağlamaz. 17 ve 25’te kalan 5 olsun: d, 12 ve 20’yi bölmeli, dolayısıyla d≤4; öte yandan d>5 gerekir. İki koşul çeliştiğinden çözüm yoktur. EBOB küçükse onun daha küçük bölenleri de sorunu çözemez. Artıkları modelleyen şeritlerde de kesim boyu aynı biçimde her kalansız kalanı böler."
+              }
+            },
+            {
+              "title": {
+                "tr": "Üç sayıda her asalın gereksinimini birlikte denetle"
+              },
+              "text": {
+                "tr": "18=2×3², 24=2³×3, 30=2×3×5. Her üçünün küçük üsleri EBOB=2×3=6; büyük üsleri EKOK=2³×3²×5=360 yapar. 5, ilk iki sayıda bulunmadığı için ortak bölenin içine girmez ama ortak kat için gerekir. EBOB bölümleri 3, 4, 5; EKOK bölümleri 20, 15, 12’dir.\n\n18×24×30=12.960 iken 6×360=2.160’tır; iki sayılı çarpım bağının üç sayıya taşınmadığını gör. Sayı adedi arttığında kuralı değil, her asal için karşılaştırdığın satır sayısını artırırsın. İkili hesap yaptığında da önce iki sayının sonucunu, sonra üçüncü sayıyla aynı işlemi uygula."
+              }
+            },
+            {
+              "title": {
+                "tr": "Bilinmeyen üçüncü sayı iki koşulu da sağlamalı"
+              },
+              "text": {
+                "tr": "EBOB(18, 12, x)=6 ve EKOK(18, 12, x)=360 olsun. İlk iki sayının EBOB’u 6, EKOK’u 36=2²×3². Hedef 360=2³×3²×5 olduğundan x, eksik 2³ ve 5’i taşımalıdır. EBOB(6, x)=6 koşulu ise 6|x gerektirir; dolayısıyla en az bir 3 de bulunmalıdır.\n\nEn küçük x=2³×3×5=120. 40, EKOK’u 360 yapsa da 6’ya bölünmediği için EBOB’u bozar; 360 uygundur ama en küçük değildir. Çözüm sonunda EBOB(18, 12, 120)=6 ve EKOK(...)=360 diye iki ayrı yerine koyma yap. Sadece hedef EKOK’u kurmak eksik bir çözümdür."
+              }
+            },
+            {
+              "title": {
+                "tr": "Ortak bölenleri sayarken üs seçeneklerini çarp"
+              },
+              "text": {
+                "tr": "72 ve 120’nin ortak pozitif bölenleri tam olarak EBOB’ları 24’ün pozitif bölenleridir. 24=2³×3 için bölen 2ⁱ×3ʲ biçimindedir. i=0, 1, 2, 3 dört seçenek; j=0, 1 iki seçenek verir. 4×2=8 bölen: 1, 2, 3, 4, 6, 8, 12, 24. Burada i ve j sayıları değil asalın kaç kopyasını aldığını sayar.\n\nGenel olarak p, q farklı asal sayılar ve u, v negatif olmayan tam sayılar iken d=pᵘ×qᵛ için pozitif bölen sayısı (u+1)(v+1) olur; her 0 üssü de bir seçimdir. EBOB=1 için yalnız 1 ortak pozitif bölen vardır. Negatif ortak bölenler sorulursa pozitiflerin −1,−2,… biçimindeki eşleri de vardır: 24’ün 8 pozitif, 8 negatif, toplam 16 tam sayı böleni bulunur. Sıfır bölen değildir; varsayılan pozitif sayımı toplamla karıştırma."
+              }
+            },
+            {
+              "title": {
+                "tr": "Küp kurarken kenar oranının küpü alınır"
+              },
+              "text": {
+                "tr": "12 cm’lik tek renk küplerle bir dolu büyük küp; 18 cm’lik başka renk küplerle ayrı, eş büyüklükte bir dolu küp kurulsun. Küpler kesilmiyor, kenarlar paralel ve aynı büyük küp içinde iki boy karıştırılmıyor. Büyük kenar her iki küçük kenarın pozitif ortak katı; en küçüğü EKOK(12, 18)=36 cm’dir.\n\n12 cm’liklerde her eksende 3 küp; toplam 3×3×3=27. 18 cm’liklerde eksen başına 2; toplam 2³=8. 27×12³=8×18³=36³=46.656 cm³ hacim denetimini verir. Kenar cm, yüzey cm², dolu hacim cm³ birimindedir. Kenar oranını yalnız bir kez kullanmak 3 boyutlu sayımı eksiltir; keserek veya iki boyu karıştırarak doldurma farklı modeldir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Yöntemi sözcüğe değil bölme yönüne göre seç"
+              },
+              "text": {
+                "tr": "Aranan boy bütün verileri kalansız bölecekse ortak bölen; aranan toplam her düzenin tam tekrarıysa ortak kat ararsın. EBOB ve EKOK birlikte verilmişse a=dx, b=dy ve aralarında asal x, y kullan. Aynı N aynı r kalanı veriyorsa N−r ortak kat; farklı sayılar bilinmeyen d’ye bölünüyorsa her sayıdan kendi kalanını çıkar, ortak bölen ara.\n\nBüyük sayılarda Öklid, küçük örnekte bölen/kat listesi ve seçeneklerde yerine koyma yedek olabilir. Modeli, koşulu, birimi ve son denetimi ayır. Çözümü açmak veya şekille oynamak bağımsız çözüm değildir. Not açık tam örnek → ilk hamle ipucu → yeni bağlamı bağımsız deneme basamakları kullanılabilir; süre için herkese aynı saniye sınırı koyulmaz."
+              }
+            },
+            {
+              "title": {
+                "tr": "Geçerli, yakın geçersiz ve başka yüzey"
+              },
+              "text": {
+                "tr": "30 ve 42 cm ipte ortak en büyük boy 6; aynı kenarlı dikdörtgende 5×7=35 kare bulunur. İpleri önce 72 cm tek ip yapmak başlangıçtaki iki ölçünün ortak bölen sorusu değildir. 10 ve 15 dakika ortak başlangıçta 30; B 5 dakika geç başlarsa ilk ortak 20. Periyotları korumak başlangıcı korumak demek değildir.\n\nd=3, m=30 için xy=10, geçerli (1, 10),(2, 5) çiftleri; en küçük kenarlar 6 ve 15 olduğundan en küçük dikdörtgen çevresi 2(6+15)=42. d=3, m=20 ise uygun sayı yoktur. Aynı kalan örneği N=24 k+1’i farklı kalanlara taşıma. Öklid’de son sıfırı değil, önceki sıfır olmayan kalanı al. Bir değişen koşulu özellikle adlandırmak ezberle model arasında bağlantı kurar."
+              }
+            },
+            {
+              "title": {
+                "tr": "Aralarında asal koşulundan cebirsel bilinmeyene"
+              },
+              "text": {
+                "tr": "Pozitif a, b aralarında asal ve EBOB(a, b)=n²−6 n+10 verilsin. Aralarında asal olma EBOB=1 demektir. n²−6 n+10=1 →n²−6 n+9=0 →(n−3)²=0 →n=3. Çünkü bir gerçek sayının karesi sıfırsa kendisi sıfırdır. (n−3)² açılımı n²−3 n−3 n+9=n²−6 n+9’dur.\n\nAyrıca EKOK(a, b)=n⁴+9 verilirse 3⁴+9=90 ve ab=90 olur. Çarpan çiftleri (1, 90),(2, 45),(3, 30),(5, 18),(6, 15),(9, 10). Ortak böleni 1 olmayan (3, 30),(6, 15) elenir; geçerli toplamlar 91, 47, 23, 19; en küçük 19. Bu, kaynağın MEB destek örneğindeki yöntemin kendi anlatımıdır; ÖSYM sorusu veya yeni resmî doğrulama diye sunulmaz."
+              }
+            },
+            {
+              "title": {
+                "tr": "Rakam şartı ile ortak katı birlikte kullan"
+              },
+              "text": {
+                "tr": "Üç basamaklı AAB=110 A+B ve ABA=101 A+10 B için A, 1…9; B, 0…9 rakamı olsun. İkisinin de 9’a bölünmesi rakam toplamı 2 A+B’nin 9’un katı olmasını ister. Sayılardan biri 5’e, diğeri 12’ye bölünüyorsa hangi sayının hangi koşula girdiğini iki ayrı durum olarak denetlersin. 9 ve 12’ye birlikte bölünmek 108’e bölünmek değildir; EKOK(9, 12)=36, örneğin 36 karşı örnektir.\n\nAAB 5’e bölünürse B=0 veya 5. B=0 için A=9 çıkar fakat ABA=909, 12’ye bölünmez. B=5 için A=2; 225 ve 252 bütün koşulları sağlar. Ters atamada ABA 5’e bölünürse A=5; 9 koşulundan B=8; AAB=558, 12’ye bölünmez. Tek uygun rakam çifti A=2, B=5 ve toplam 7. Bu kısa matematik çözümü kaynağın seçili 2021 TYT 15 atfıyla ilişkilidir; özgün öğretim kartları resmî sınav sorusu diye etiketlenmez."
+              }
+            },
+            {
+              "title": {
+                "tr": "İlk yanlış adımı bul ve yeni soruya aktar"
+              },
+              "text": {
+                "tr": "“60 ve 84 farklı, o halde EKOK=5040” cümlesinde ilk yanlış farklılık ile aralarında asallığı eşitlemektir. Yeni 72, 90 için EBOB 18, EKOK 360 hesaplayarak kuralı yeniden dene. “20×32 dikdörtgene en az kare için EKOK 160” cümlesinde yanlış işlemden önce yanlış bölme yönü vardır; kare kenarı ölçüleri bölmeliydi. Yeni 28 ve 42 cm ipte 14 cm ve 5 parça bul.\n\nd=3, m=108 için xy=36 yazıp x=y=6 seçmek aralarında asal koşulunu kaybeder. Yeni d=2, m=72 için geçerli (x, y)=(4, 9), en küçük toplam 26’dır. [0, 72] ortak olaylarını 72/36=2 saymak başlangıcı eksiltir; yeni 6, 10 döngülerinin [0, 90) ortak anları 0, 30, 60’tır. İlgili çözümü kapatıp yeni durumu çöz; aynı cevabı hatırlamak yeni bağlama aktarımı tek başına göstermez."
+              }
+            },
+            {
+              "title": {
+                "tr": "İstersen çözümden önce iki ön tahmin yap"
+              },
+              "text": {
+                "tr": "Tahmin zorunlu değildir; henüz bilmiyorsan şekli inceleyebilirsin. 36 cm×24 cm dikdörtgene kesmeden tam uyan en büyük kare kenarı 12 cm mi 72 cm mi? İkinci soruda, 0’da birlikte başlayan 12 ve 18 dakikalık iki döngü ilk yeniden 6 dakika sonra mı 36 dakika sonra mı ortak olur?\n\nİlk durumda kare kenarı her ölçüyü bölmelidir: 12 her iki kenarı böler, 72 ise kenarlardan büyüktür. İkinci durumda geçen süre her periyodun tam katıdır: 36 uyar, 6 uymaz. Tahminini bu iki gerekçeyle karşılaştırmak yöntem seçimini açar; bir ön tahmin, bu konunun bütün alt becerilerinin öğrenildiği kaydı değildir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Aynı fark modeli yeni kalan koşulunda bozulabilir"
+              },
+              "text": {
+                "tr": "65 ve 89, aynı d’ye bölündüğünde 5 kalıyorsa d, 60 ve 84’ü böler; en büyük 12 ve 12>5 olduğundan geçerlidir. İki şeritten de 5 cm artık bırakınca kullanılabilir uzunluklar 60 ve 84 cm olur. Kesim kaybı yoksa 12 cm boyunda, ilk şeritten 60÷12=5 ve ikinciden 84÷12=7 parça çıkar. Toplam 12 parça elde edilir. Aynı sayılarda kalan 12 olsaydı farklar 53 ve 77 olurdu; EBOB 1, fakat d>12 gerekir. Bu nedenle ikinci durumun çözümü yoktur. Sayılar değişmeden kalan değişince uygun bölenin varlığı da değişebilir.\n\n6’ya bölmede 1, 8’e bölmede 3 kalan için tek N−1 ortak kat modeli kurulmaz. İki koşulu ayrı yazarak 43=6×7+1=8×5+3 örneğini denetle. N−1=42, 8’in katı değildir; N−3=40 ise 8’in katıdır. İşlem kolay görünsün diye farklı kalanları aynılaştırma.\n\nN’nin 8’e bölümünde kalan 5 olsaydı N−5, 8’in katı olurdu. 12’ye bölümünde kalan 7 olsaydı N−7, 12’nin katı olurdu. 8 ve 12’nin ikisi de 4’ün katı. İlk koşul N’nin 4’e bölümünde 1, ikinci koşul 3 kalmasını gerektirir. Aynı sayı 4’e bölündüğünde tek bir kalan verir. Bu iki koşula uyan N yoktur."
+              }
+            },
+            {
+              "title": {
+                "tr": "Bir örnek ile bütün uygun durumları ayır"
+              },
+              "text": {
+                "tr": "EBOB(a,b)=6 olması a,b’nin mutlaka 6 ve 12 olduğu anlamına gelmez: 18 ve 24 için de en büyük ortak bölen 6’dır. EBOB bilgisi birden çok sayı çifti bırakır; EKOK veya aralık gibi ikinci bir koşul adayları daraltabilir. “Olabilir” için koşulları sağlayan tek çift yeterlidir; “kesin” demek bütün uygun çiftlerde doğru olmasını ister.\n\nEn küçük/en büyük sorusunda bir uygun çift göstermek yalnız varlığını kanıtlar. Daha iyi aday bulunmadığını çarpan çiftlerini eksiksiz tüketerek veya gerekli bir sınırla açıklamalısın. Bir olumlu örnek genel doğruluk kanıtı değildir; ön koşulu sağlayıp sonucu bozan tek karşı örnek ise yanlışlığı gösterir. Gerekçeyi bu kapsam sözcükleriyle uyumlu tut."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "tyt-geo-ucgen-merkezleri-031",
+        "after": "80f3ee8917352613bee8fcb28fa5416c869195be0e23d8d4310f4011f41561e1",
+        "prior": {
+          "sections": [
+            {
+              "title": "Dört çizginin dört ayrı görevi",
+              "paragraphs": [
+                "Kenarortay bir köşeden karşı kenarın orta noktasına gider. Açıortay köşedeki açıyı iki eş açıya ayırır. Yükseklik köşeden karşı kenarın doğrusuna dik iner. Kenar orta dikmesi bir kenarın orta noktasından ona dik geçen doğrudur; genel üçgende karşı köşeden geçmesi gerekmez.",
+                "Bir çizginin şekle bakınca ortadan geçmesi veya dik görünmesi yeterli veri değildir. Orta nokta için eş parça işaretlerini, açıortay için eş açı işaretlerini ve yükseklik için90° işaretini ara. Genel üçgende bu görevler farklı doğrulardır; ikizkenar veya eşkenar gibi özel hâllerde birleşebilirler."
+              ]
+            },
+            {
+              "title": "Açıortay eş açı kurar, eş kenar parçası zorunlu değildir",
+              "paragraphs": [
+                "A açısının iç açıortayı AD ve D∈BC olsun. ABD ile ACD üçgenlerinde A açısındaki paylar eşittir. Açıortay üzerindeki bir noktanın açının iki koluna dik uzaklıkları eşittir. Dik uzaklık, eğik bir köşeye uzaklıkla aynı şey değildir.",
+                "İç açıortay teoremi BD/DC=AB/AC verir. Eş bölünen açı iken karşı kenar genellikle eş bölünmez. AB=6, AC=9 ve BC=10 için karşı kenar2:3 oranında4 ve6 olarak bölünür. Parçaları bulurken oran paylarını topla ve bütün kenarı bu toplama böl."
+              ]
+            },
+            {
+              "title": "İç açıortayın uzunluğu ve alanla anlamı",
+              "paragraphs": [
+                "AB=c, AC=b, BD=m, DC=n ve AD iç açıortay olduğunda AD²=bc−mn’dir. Burada b ile c, açıortayın çıktığı köşeye komşu iki kenardır; m ile n karşı kenarın parçalarıdır. Kullanımdan önce m/n=c/b koşulu da sağlanmalıdır.",
+                "ABD ve ACD aynı yüksekliği paylaştığından alanları BD/DC oranındadır; dolayısıyla iç açıortayın ayırdığı alanların oranı AB/AC olur. Üçgenin kenarları5,5 ve6 ise tepe açıortayı tabanı3 ve3 böler; uzunluğu√(25−9)=4’tür. Bu özel örnekte açıortay yükseklik ve kenarortayla aynı parçadır."
+              ]
+            },
+            {
+              "title": "Dış açıortayda nokta uzantıda olur",
+              "paragraphs": [
+                "A köşesindeki bir dış açının açıortayı BC doğrusunu E’de kesiyorsa E,BC doğru parçasının dışındadır ve |BE|/|CE|=AB/AC olur. İç açıortayda parçalar toplanarak BC’yi verir; dış açıortayda ilgili büyük ve küçük uzaklığın farkı BC’dir.",
+                "AB=AC ise A’daki dış açıortay BC’ye paraleldir; sonlu bir kesişim noktası varmış gibi oran denklemi kurma. AB<AC olduğunda |BE|<|CE| olacağı için E,B tarafındaki uzantıda bulunur. Önce B,C,E sırasını yerleştirmek toplam–fark hatasını önler.",
+                "AB>AC olduğunda |BE|>|CE|, yani E, C tarafındadır. Üç durumu gösteren modelde aynı AC ve BC uzunluklarını koruyup AB’yi değiştir. Dış açıortayın BC ile kesiştiği taraf, iki yan kenarın karşılaştırmasına bağlıdır."
+              ]
+            },
+            {
+              "title": "İç merkez I: kenarlara eş dik uzaklık",
+              "paragraphs": [
+                "Üç iç açıortay üçgenin içinde tek bir I noktasında kesişir. I’nın üç kenarın doğrularına dik uzaklıkları eşittir; bu ortak r uzaklığı iç teğet çemberin yarıçapıdır. Köşelere olan IA,IB,IC uzaklıklarının eşit olması gerekmez.",
+                "BIC üçgeninde B ve C açıları ana üçgendeki açıların yarılarıdır. Bu yüzden ∠BIC=180°−(B+C)/2=90°+A/2 olur. A’nın karşısındaki dış teğet çember merkezi Iₐ, B ve C’nin dış açıortaylarının uygun kesişimidir; ∠BIₐC=90°−A/2 olur. İç merkezle dış merkezdeki artı–eksi işaretlerini ayrı düşün."
+              ]
+            },
+            {
+              "title": "Kenarortay ve ağırlık merkezi G",
+              "paragraphs": [
+                "A’dan BC’nin orta noktası M’ye çizilen AM bir kenarortaydır. BM=MC olduğundan ABM ile ACM’nin tabanları eşit ve yükseklikleri ortaktır; alanları eşittir. Üç kenarortay her zaman üçgenin içinde ağırlık merkezi G’de kesişir.",
+                "G her kenarortayı köşeden başlayarak2:1 oranında böler: AG=2AM/3 ve GM=AM/3. Uzun parça köşeye yakındır. Üç kenarortay birlikte altı eş alanlı küçük üçgen oluşturur. Bu eşlik alan içindir; altı küçük üçgenin kenarları genel durumda eş değildir."
+              ]
+            },
+            {
+              "title": "Kenarortay uzunluğu ve dik üçgendeki özel hâl",
+              "paragraphs": [
+                "BC=a, CA=b ve AB=c ise A’dan çizilen kenarortayın uzunluğu mₐ için4mₐ²=2b²+2c²−a²’dir. Bu ifade orta noktanın iki yanındaki küçük üçgenlerde kurulan uzunluk ilişkilerinin toplamından gelir. Dik olmayan üçgende mₐ’yı yükseklik sanarak Pisagor kullanmak doğru değildir.",
+                "Dik üçgende hipotenüsün orta noktası üç köşeye eşit uzaklıktadır; bu nedenle dik köşeden hipotenüse çizilen kenarortay hipotenüsün yarısıdır. Bu özellik her kenara ait kenarortay için geçerli değildir. Hipotenüse ait yüksekliğin aynı değer olması ancak ikizkenar dik üçgen gibi ek bir koşulda gerçekleşir."
+              ]
+            },
+            {
+              "title": "Yükseklikler ve diklik merkezi H",
+              "paragraphs": [
+                "Bir yükseklik karşı kenarın kendisine veya uzantısına dik iner. Üç yükseklik doğrusu diklik merkezi H’de kesişir. Dar açılı üçgende H içeride, dik üçgende dik açının köşesinde, geniş açılı üçgende dışarıdadır. Geniş üçgende uzantıları çizmek hata değil tanımın gereğidir.",
+                "Yüksekliğin boyunu bulmak için hangi tabana ait olduğunu belirt. Aynı üçgende alan a·hₐ/2=b·hᵦ/2=c·h𝚌/2 olduğundan büyük kenara ait yükseklik daha kısa olur. Yüksekliğin dik olduğu doğruyla köşenin karşısındaki kenarın yönü aynı olmalıdır; herhangi bir90° işareti yeterli değildir."
+              ]
+            },
+            {
+              "title": "Kenar orta dikmeleri ve çevrel merkez O",
+              "paragraphs": [
+                "Bir doğru parçasının orta dikmesi üzerindeki her nokta iki uca eşit uzaklıktadır. Üçgenin üç kenarının orta dikmeleri O noktasında birleşir; OA=OB=OC=R olur. O çevrel çemberin merkezidir; burada eşit olan uzaklıklar kenarlara değil köşeleredir.",
+                "O dar üçgende içeride, dik üçgende hipotenüsün orta noktasında, geniş üçgende dışarıdadır. I ile O’nun eş uzaklık tanımlarını karşılaştır: I’dan kenarlara dik uzaklıklar, O’dan köşelere uzaklıklar eşittir. Bir noktaya “merkez” denmesi bu iki özelliği birlikte taşıdığını söylemez."
+              ]
+            },
+            {
+              "title": "Simetri ne zaman çizgileri ve merkezleri birleştirir?",
+              "paragraphs": [
+                "AB=AC olan ikizkenar üçgende A’dan BC tabanına çizilen açıortay, kenarortay ve yükseklik aynı doğru parçasıdır. Bu doğru aynı zamanda BC’nin orta dikmesi üzerindedir. İki küçük üçgen KAK eşliğiyle eş olur; eş parçalar ve diklik buradan gerekçelendirilebilir.",
+                "Eşkenar üçgende bütün yükseklik, kenarortay ve açıortay doğruları aynı üç simetri doğrusu olduğundan I,G,H,O tek noktada birleşir. Kenarı a olan eşkenarda yükseklik a√3/2’dir; ağırlık merkezi oranından R=2h/3 ve r=h/3 çıkar. Bu birleşmeyi her üçgene genelleme."
+              ]
+            },
+            {
+              "title": "Merkez seçerken hangi bilgiye ihtiyacın var?",
+              "paragraphs": [
+                "“İki eş açı” verisinden iç açıortaya; “karşı kenar eş iki parça” verisinden kenarortaya; “köşeden90°” verisinden yüksekliğe; “orta noktadan90°” verisinden orta dikmeye yönel. Bir merkez sorusunda önce hangi doğruların kesiştiğini adlandır.",
+                "Sonra oranı veya eş uzaklığı uygula ve modelde kontrol et: G için2:1, I için kenarlara eş dik uzaklık, O için köşelere eş uzaklık, H için yüksekliklerin dikliği. Etkileşimli şekli değiştirirken genel üçgendeki bu görev farklarını izle; görseldeki tek bir özel duruma dayanarak kural çıkarma."
+              ]
+            }
+          ],
+          "source": "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Açıortay 5.1 fiziksel s. 2 ve 5: dış açıortay koşulları. Sorular resmî sınav sorusu değildir."
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "tyt-mat-ebob-ekok-kaynak-034",
+        "after": "af832d8597ad7915281457540068247101076368b6c414550f125a80e62ac6e8",
+        "prior": {
+          "sections": [
+            {
+              "code": "S01",
+              "title": "Bölen ile katın yönünü ayır",
+              "paragraphs": [
+                "Pozitif tam sayılar 1, 2, 3, … biçimindedir; bu ünitede başlangıç sayıları sıfır veya negatif değildir. a=d×k yazılabiliyor ve k bir tam sayı oluyorsa d, a’yı kalansız böler. d|a işareti “d, a’yı böler” diye okunur. 12=3×4 olduğundan 3|12; aynı bağıntıda 12, 3’ün katıdır. Bölen sayının içine sığan ortak birim, kat ise sayının tam tekrarlarıdır.",
+                "5, 12’nin böleni değildir: 12=5×2+2; kalan 2’dir. × çarpma, / bölme, = eşitlik; < küçük, ≤ küçük veya eşit, > büyük anlamına gelir. Bir uzunluğu ortak parçalara bölmekle iki düzenin aynı toplamı üretmesini ayır: ilkinde ortak bölen, ikincisinde ortak kat ararsın. “En az” sözcüğünü görüp işlem seçmek yerine aranan niceliğin neyi böldüğünü yaz."
+              ]
+            },
+            {
+              "code": "S02",
+              "title": "Önce ortak küme, sonra en büyük veya en küçük",
+              "paragraphs": [
+                "EBOB, En Büyük Ortak Bölen; EKOK, En Küçük Ortak Kat demektir. 12’nin pozitif bölenleri 1, 2, 3, 4, 6, 12; 18’inkiler 1, 2, 3, 6, 9, 18’dir. Ortak küme 1, 2, 3, 6 olduğundan EBOB(12, 18)=6. Bir ortak bölen bulmak en büyüğü bulmak değildir: 3 de ortaktır ama 6 daha büyüktür.",
+                "Pozitif katlar 12, 24, 36,… ve 18, 36, 54,… diye ilerler. İlk pozitif kesişim 36 olduğundan EKOK(12, 18)=36. 0 her iki sayının katı olsa da EKOK için pozitif kat aranır. 72 ortak kattır fakat en küçüğü değildir. Kontrol olarak EBOB başlangıç sayılarının her birini bölmeli, EKOK da her birine tam bölünmelidir; bu bölme kontrolü tek başına en büyük/en küçük olmayı kanıtlamaz."
+              ]
+            },
+            {
+              "code": "S03",
+              "title": "Asal kopyaları üslerle say",
+              "paragraphs": [
+                "Asal sayı 1’den büyük olup yalnız 1 ve kendisine tam bölünür: 2, 3, 5, 7 gibi. 1 asal değildir. Üs, aynı çarpanın tekrarını sayar: 2³=2×2×2=8. 72’yi 2’ye üç, ardından 3’e iki kez bölerek 1’e ulaşırsın; bu yüzden 72=2³×3². Çarpanları yeniden çarparak ayrılışı denetle.",
+                "120=2³×3×5. Ortak bölenin her asal kopyası iki sayıda da bulunmalı; bu nedenle her asal için küçük üs alınır. 72’de 5 yoktur; bunun üssü 0’dır ve 5⁰=1 çarpımı değiştirmez. Ortak kat ise her iki sayının bütün gereksinimini karşılamalı; her asal için büyük üs gerekir. “Küçük sayının bütün çarpanları” değil, her ayrı asalın küçük üssü seçilir."
+              ],
+              "table": {
+                "headers": [
+                  "Asal",
+                  "72 içindeki üs",
+                  "120 içindeki üs",
+                  "EBOB / EKOK üssü"
+                ],
+                "rows": [
+                  [
+                    "2",
+                    "3",
+                    "3",
+                    "3 / 3"
+                  ],
+                  [
+                    "3",
+                    "2",
+                    "1",
+                    "1 / 2"
+                  ],
+                  [
+                    "5",
+                    "0",
+                    "1",
+                    "0 / 1"
+                  ]
+                ]
+              }
+            },
+            {
+              "code": "S04",
+              "title": "Üs kuralının neden en iyiyi verdiğini açıkla",
+              "paragraphs": [
+                "72 ve 120’de EBOB=2³×3=24; EKOK=2³×3²×5=360. Ortak bölenin 3 üssünü 2 yapsaydın 120’nin tek 3’ü yetmezdi. 5 ekleseydin 72’de hiç 5 bulunmadığından ortaklık bozulurdu. 24’e daha fazla asal kopyası eklenememesi en büyük oluşunun gerekçesidir.",
+                "360’tan bir 3 kopyası çıkarsaydın 72’de gereken iki 3 kalmazdı; 5’i çıkarsaydın 120’nin gereksinimi eksik olurdu. Her asalın gerekli en yüksek üssünü almak ortak katı gereksiz büyütmeden kurar. Son bölme denetimi: 72/24=3, 120/24=5; 360/72=5, 360/120=3. Bütün bölümler tam sayıdır."
+              ]
+            },
+            {
+              "code": "S05",
+              "title": "İki sayının çarpım bağını doğru kapsamda kullan",
+              "paragraphs": [
+                "a, b pozitif tam sayı, d=EBOB(a, b) ve m=EKOK(a, b) için a×b=d×m. Her asalın başlangıçtaki iki üssünün toplamı, küçük üs ile büyük üssün toplamına eşittir. Bu yüzden EKOK=(a/EBOB)×b. Önce tam bölmeyi yapmak gereksiz büyük bir ara çarpımı azaltır: (72/24)×120=360.",
+                "Bu özdeşlik iki sayı içindir. Üç sayıda aynı ürün kuralını kullanma: 2×4×8=64, fakat EBOB(2, 4, 8)×EKOK(2, 4, 8)=2×8=16. Üç veya daha çok sayının EBOB/EKOK’unu her asalın küçük/büyük üssüyle bulabilir veya ikili ilerleyebilirsin: EBOB(a, b, c)=EBOB(EBOB(a, b), c); EKOK için de aynı yapı geçerlidir."
+              ]
+            },
+            {
+              "code": "S06",
+              "title": "Aralarında asal, ikisi de asal demek değildir",
+              "paragraphs": [
+                "EBOB(a, b)=1 ise iki sayı aralarında asaldır. 8 ile 9 bileşik olsalar da ortak pozitif bölenleri yalnız 1’dir; EKOK’ları 8×9=72 olur. 6 ve 10 farklı sayılardır fakat EBOB=2; EKOK=60/2=30. “Farklı” olmak çarpımı doğrudan EKOK yapmaz.",
+                "a, b’yi bölüyorsa EBOB=a ve EKOK=b’dir: 4|20 için 4 ve 20 bulunur. Ortak bölen 4’ten büyük olamaz; ortak katın en küçüğü zaten 20’dir. Aralarında asal iki sayının toplamı mutlaka asal değildir: 4 ve 5 için toplam 9’dur. Tek geçerli karşı örnek “daima” iddiasını çürütür; tek olumlu örnek ise her durumu kanıtlamaz."
+              ]
+            },
+            {
+              "code": "S07",
+              "title": "Ortak böleni dışarı çıkar, kalan koşulu koru",
+              "paragraphs": [
+                "EBOB(a, b)=d ise a=dx, b=dy yaz. Burada x, y pozitif tam sayı ve EBOB(x, y)=1 olmalıdır; ortak bölenin hepsi dışarı çıkarılmıştır. x, y’nin ortak böleni 2 olsaydı a, b’nin ortak böleni en az 2 d olur, d’nin en büyük olduğu iddiası bozulurdu. EKOK=dxy olduğundan xy=m/d elde edilir.",
+                "Önce d|m koşulunu denetle: d=3, m=20 için m/d tam sayı değildir ve uygun iki pozitif tam sayı yoktur. d=6, m=180 için xy=30; (2, 15) çifti a, b=(12, 90), (5, 6) çifti (30, 36) verir. Sadece çarpımı tutturmak yetmez; her çifti aralarında asal olma koşuluyla ele."
+              ]
+            },
+            {
+              "code": "S08",
+              "title": "En küçük toplamı adayları tüketerek kanıtla",
+              "paragraphs": [
+                "d=4, m=48 için xy=12. Küçükten büyüğe x≤y çarpan çiftleri (1, 12),(2, 6),(3, 4) ile biter. İlk ve son çift aralarında asaldır; (2, 6) ortak 2 yüzünden geçersizdir. Gerçek sayılar (4, 48) veya (12, 16); toplamlar 52 ve 28’dir. En küçük 28, en büyük 52; ters çiftler yeni toplam üretmez.",
+                "Sabit pozitif çarpımda yakın çarpanlar daha küçük toplam verir, fakat tam sayı ve aralarında asal koşullarını kaldırmaz. xy=36 için en yakın (6, 6) geçersizdir; geçerli (1, 36) ve (4, 9) çiftlerine bakılır. Bir adayı göstermek “olabilir”i kanıtlar; en küçük/en büyük için bütün daha iyi adayların neden elendiğini de açıklamak gerekir."
+              ]
+            },
+            {
+              "code": "S09",
+              "title": "Öklid: büyük sayıyı aynı ortak bölenlerle küçült",
+              "paragraphs": [
+                "a=bq+r, 0≤r<b ise EBOB(a, b)=EBOB(b, r). a ile b’yi bölen d, a−bq=r’yi de böler. Tersine b ile r’yi bölen d, bq+r=a’yı da böler. İki çiftin ortak bölen kümeleri aynı olduğundan en büyükleri aynıdır. q bölüm, r kalan demektir.",
+                "252=198×1+54; 198=54×3+36; 54=36×1+18; 36=18×2+0. Son sıfır olmayan kalan 18 EBOB’dur. Son 0, ortak bölen değil işlemin durma işaretidir. EKOK=(252/18)×198=2772; 2772/252=11 ve 2772/198=14. Küçük sayıda bölen listesi de yedektir; büyük sayıda Öklid daha az adayla sonuca götürür."
+              ]
+            },
+            {
+              "code": "S10",
+              "title": "Kareyle kaplama: kenarın bölen olması gerekir",
+              "paragraphs": [
+                "36 cm ×24 cm dikdörtgeni eş karelerle doldururken karelerin kenarları dikdörtgene paralel, boşluk ve kesim kaybı yok olsun. Kare kenarı s ise 36/s ve 24/s pozitif tam sayı olmalı. En az kare için s olabildiğince büyük; s=EBOB(36, 24)=12 cm. Üç sütun ve iki satır, 6 kare verir.",
+                "Alan kontrolü 36×24/12²=864/144=6’dır. cm uzunluğu, cm² alanı ölçer. Alanların bölünebilmesi tek başına kare kenarının her iki kenara tam uyduğunu kanıtlamaz; önce iki kenar bölümünü denetle. s=18, 36’ya uyar ama 24’e uymaz. s=6 geçerlidir fakat 24 kare gerektirir. Döndürülmüş karma kaplama, derz aralığı veya kesme kaybı farklı modeldir."
+              ]
+            },
+            {
+              "code": "S11",
+              "title": "Aynı boy, üç farklı adet hesabı",
+              "paragraphs": [
+                "36 ve 24 cm iki ipi ayrı ayrı en uzun eş boy parçalara ayırırsan boy yine 12 cm’dir. Parça adedi 36/12+24/12=3+2=5: dikdörtgendeki satır×sütun burada toplama dönüşür. Her ip ayrı kesiliyorsa 3−1+2−1=3 kesim gerekir. Üst üste kesme izni, kesim sayısını değiştiren ayrı bir koşuldur.",
+                "Aynı 36×24 dikdörtgenin kapalı çevresine, her köşeye gelecek en büyük eşit aralıklarla işaret koyarsan aralık 12 cm; çevre 2(36+24)=120 cm ve 120/12=10 işarettir. Kapalı çevrede başlangıç ve bitiş aynı noktadır; +1 ekleme. Açık doğru parçasında iki uç da dahilse nokta sayısı aralık sayısından 1 fazladır."
+              ]
+            },
+            {
+              "code": "S12",
+              "title": "Periyot: ilk yeniden ortak an pozitif ortak kattır",
+              "paragraphs": [
+                "Başlangıçta birlikte çalışan A her 12 dakikada, B her 18 dakikada çalışsın. A’nın anları 0, 12, 24, 36,…; B’ninkiler 0, 18, 36,… olur. İlk yeniden ortak çalışma EKOK(12, 18)=36 dakika sonradır. 36/12=3 ve 36/18=2 tam döngüdür. EBOB olan 6 dakika iki cihazın döngüsünü bile tamamlamaz.",
+                "Başlangıcın ortak ve aralıkların sabit olması gerekir. “Yeniden” sıfırdan sonraki ilk ortak anı ister; 0 başlangıçtır. 10’lu ve 15’li paketlerle ayrı ayrı tam paketlenebilen en küçük pozitif toplam da EKOK(10, 15)=30’dur; yüzey değişir, ortak kat yapısı kalır. Burada nesneleri kesip ortak parça üretmiyorsun."
+              ]
+            },
+            {
+              "code": "S13",
+              "title": "Uçları ve saati doğru say",
+              "paragraphs": [
+                "12 ve 18 dakikalık ortak başlangıçlı döngülerin [0, 72] aralığındaki ortak anları 0, 36, 72: üç olay. Köşeli parantez uç dahil, yuvarlak parantez uç hariç demektir. [0, 72) aralığında 0 ve 36, başlangıç hariç (0, 72] aralığında 36 ve 72 bulunur. 72/36=2 aralık sayar; iki uç dahil olay sayısı 3’tür.",
+                "Başlangıç saati 09.50 ise 36 dakika sonrası 10.26’dır. Önce 10 dakika ile 10.00’a, kalan 26 dakika ile 10.26’ya git. Saatin dakika alanı 60 tabanındadır; 09.86 yazılmaz. Her soruda olayın kaçıncı anı mı, geçen süre mi, saat gösterimi mi istendiğini ayır."
+              ]
+            },
+            {
+              "code": "S14",
+              "title": "Başlangıç kayarsa iki ayrı diziyi karşılaştır",
+              "paragraphs": [
+                "A ilk kez 0’da, sonra her 12 dakikada; B ilk kez 6’da, sonra her 18 dakikada çalışırsa B’nin anları 6, 24, 42,… olur. A’nın 0, 12, 24,… dizisiyle ilk ortak an 24’tür. EKOK(12, 18)=36, ortak anlar bulunursa aralarındaki tekrar süresini anlatır; kaymış başlangıçtaki ilk anı tek başına vermez.",
+                "Örneğin 10 dakikalık A, 0’da; 15 dakikalık B, 5’te başlarsa ilk ortak an 20’dir: A 0, 10, 20; B 5, 20. Başlangıç bilgisi hiç verilmezse periyotlar tek başına ilk ortak anı belirlemez. Verilmeyen başlangıcı 0 kabul edip kesin sonuç uydurma. Küçük örnekte ayrı kat listeleri güvenli ve görünür bir yoldur."
+              ]
+            },
+            {
+              "code": "S15",
+              "title": "Bölme eşitliğinde kalan mutlaka bölenden küçüktür",
+              "paragraphs": [
+                "N=dq+r eşitliğinde N sayı, d pozitif bölen, q tam sayı bölüm ve 0≤r<d kalandır. 29=6×4+5 için kalan 5 geçerlidir; 6 ile bölmede kalan 6 olamaz. Kalansız bölme r=0 durumudur. Kalanı çıkarınca N−r=dq, yani d’nin tam katı kalır.",
+                "N hem a hem b ile bölündüğünde aynı r kalanı veriyorsa N−r ikisinin ortak katıdır: N=EKOK(a, b)×k+r. Ayrıca r<a ve r<b gerekir. Farklı kalanlar varsa tek r çıkaramazsın: 6’ya bölünmede 1, 8’e bölünmede 3 kalanını veren 43 için 43−1=42, 8’in katı değildir; her ayrı koşulu kendi kalanı ile yaz."
+              ]
+            },
+            {
+              "code": "S16",
+              "title": "Aynı kalanlı sayıda aralığın en iyi adayını bul",
+              "paragraphs": [
+                "8 ve 12 ile bölündüğünde 5 kalanını veren N için EKOK=24; N=24 k+5. N>100 istenirse k=3, 77 verir ve yetmez; k=4, 101 verir. Sonuç 101=8×12+5=12×8+5; 5 her iki bölenden küçüktür. Sınırdaki adayın bir öncesini elemek en küçük olduğunu açıklar.",
+                "6 ve 8 ile bölündüğünde 1 kalanını veren N<200 için N=24 k+1. k=8 →193, k=9 →217 sınırı aşar; en büyük 193’tür. Bir uygun sayı bulmak optimumu kanıtlamaz. 49 nesneyi altışarlı kutulara ayırınca 8 kutu dolar ve bir nesne artar. Aynı 49 nesneyi bu kez sekizerli kutulara ayırınca 6 kutu dolar ve yine bir nesne artar. 49=6×8+1=8×6+1. Bu iki ayrı düzen aynı toplamı gösterir. Sayı büyürken tüm sayıları denemek yerine ortak kat dizisindeki adayları dene."
+              ]
+            },
+            {
+              "code": "S17",
+              "title": "Bilinmeyen bölen: her sayıdan kendi kalanını çıkar",
+              "paragraphs": [
+                "85 ve 133, aynı d’ye bölündüğünde 1 kalıyorsa d|84 ve d|132; ayrıca d>1. En büyük aday EBOB(84, 132)=12’dir. 85=12×7+1 ve 133=12×11+1. Kalanlar farklı olduğunda da her sayıyı kendine göre düzelt: 87’de 3, 134’te 2 kalan için yine 84 ve 132 kalır; d>3 koşuluyla 12 geçerlidir.",
+                "EBOB, kalan sınırını kendiliğinden sağlamaz. 17 ve 25’te kalan 5 olsun: d, 12 ve 20’yi bölmeli, dolayısıyla d≤4; öte yandan d>5 gerekir. İki koşul çeliştiğinden çözüm yoktur. EBOB küçükse onun daha küçük bölenleri de sorunu çözemez. Artıkları modelleyen şeritlerde de kesim boyu aynı biçimde her kalansız kalanı böler."
+              ]
+            },
+            {
+              "code": "S18",
+              "title": "Üç sayıda her asalın gereksinimini birlikte denetle",
+              "paragraphs": [
+                "18=2×3², 24=2³×3, 30=2×3×5. Her üçünün küçük üsleri EBOB=2×3=6; büyük üsleri EKOK=2³×3²×5=360 yapar. 5, ilk iki sayıda bulunmadığı için ortak bölenin içine girmez ama ortak kat için gerekir. EBOB bölümleri 3, 4, 5; EKOK bölümleri 20, 15, 12’dir.",
+                "18×24×30=12.960 iken 6×360=2.160’tır; iki sayılı çarpım bağının üç sayıya taşınmadığını gör. Sayı adedi arttığında kuralı değil, her asal için karşılaştırdığın satır sayısını artırırsın. İkili hesap yaptığında da önce iki sayının sonucunu, sonra üçüncü sayıyla aynı işlemi uygula."
+              ]
+            },
+            {
+              "code": "S19",
+              "title": "Bilinmeyen üçüncü sayı iki koşulu da sağlamalı",
+              "paragraphs": [
+                "EBOB(18, 12, x)=6 ve EKOK(18, 12, x)=360 olsun. İlk iki sayının EBOB’u 6, EKOK’u 36=2²×3². Hedef 360=2³×3²×5 olduğundan x, eksik 2³ ve 5’i taşımalıdır. EBOB(6, x)=6 koşulu ise 6|x gerektirir; dolayısıyla en az bir 3 de bulunmalıdır.",
+                "En küçük x=2³×3×5=120. 40, EKOK’u 360 yapsa da 6’ya bölünmediği için EBOB’u bozar; 360 uygundur ama en küçük değildir. Çözüm sonunda EBOB(18, 12, 120)=6 ve EKOK(...)=360 diye iki ayrı yerine koyma yap. Sadece hedef EKOK’u kurmak eksik bir çözümdür."
+              ]
+            },
+            {
+              "code": "S20",
+              "title": "Ortak bölenleri sayarken üs seçeneklerini çarp",
+              "paragraphs": [
+                "72 ve 120’nin ortak pozitif bölenleri tam olarak EBOB’ları 24’ün pozitif bölenleridir. 24=2³×3 için bölen 2ⁱ×3ʲ biçimindedir. i=0, 1, 2, 3 dört seçenek; j=0, 1 iki seçenek verir. 4×2=8 bölen: 1, 2, 3, 4, 6, 8, 12, 24. Burada i ve j sayıları değil asalın kaç kopyasını aldığını sayar.",
+                "Genel olarak p, q farklı asal sayılar ve u, v negatif olmayan tam sayılar iken d=pᵘ×qᵛ için pozitif bölen sayısı (u+1)(v+1) olur; her 0 üssü de bir seçimdir. EBOB=1 için yalnız 1 ortak pozitif bölen vardır. Negatif ortak bölenler sorulursa pozitiflerin −1,−2,… biçimindeki eşleri de vardır: 24’ün 8 pozitif, 8 negatif, toplam 16 tam sayı böleni bulunur. Sıfır bölen değildir; varsayılan pozitif sayımı toplamla karıştırma."
+              ]
+            },
+            {
+              "code": "S21",
+              "title": "Küp kurarken kenar oranının küpü alınır",
+              "paragraphs": [
+                "12 cm’lik tek renk küplerle bir dolu büyük küp; 18 cm’lik başka renk küplerle ayrı, eş büyüklükte bir dolu küp kurulsun. Küpler kesilmiyor, kenarlar paralel ve aynı büyük küp içinde iki boy karıştırılmıyor. Büyük kenar her iki küçük kenarın pozitif ortak katı; en küçüğü EKOK(12, 18)=36 cm’dir.",
+                "12 cm’liklerde her eksende 3 küp; toplam 3×3×3=27. 18 cm’liklerde eksen başına 2; toplam 2³=8. 27×12³=8×18³=36³=46.656 cm³ hacim denetimini verir. Kenar cm, yüzey cm², dolu hacim cm³ birimindedir. Kenar oranını yalnız bir kez kullanmak 3 boyutlu sayımı eksiltir; keserek veya iki boyu karıştırarak doldurma farklı modeldir."
+              ]
+            },
+            {
+              "code": "S22",
+              "title": "Yöntemi sözcüğe değil bölme yönüne göre seç",
+              "paragraphs": [
+                "Aranan boy bütün verileri kalansız bölecekse ortak bölen; aranan toplam her düzenin tam tekrarıysa ortak kat ararsın. EBOB ve EKOK birlikte verilmişse a=dx, b=dy ve aralarında asal x, y kullan. Aynı N aynı r kalanı veriyorsa N−r ortak kat; farklı sayılar bilinmeyen d’ye bölünüyorsa her sayıdan kendi kalanını çıkar, ortak bölen ara.",
+                "Büyük sayılarda Öklid, küçük örnekte bölen/kat listesi ve seçeneklerde yerine koyma yedek olabilir. Modeli, koşulu, birimi ve son denetimi ayır. Çözümü açmak veya şekille oynamak bağımsız çözüm değildir. Not açık tam örnek → ilk hamle ipucu → yeni bağlamı bağımsız deneme basamakları kullanılabilir; süre için herkese aynı saniye sınırı koyulmaz."
+              ]
+            },
+            {
+              "code": "S23",
+              "title": "Geçerli, yakın geçersiz ve başka yüzey",
+              "paragraphs": [
+                "30 ve 42 cm ipte ortak en büyük boy 6; aynı kenarlı dikdörtgende 5×7=35 kare bulunur. İpleri önce 72 cm tek ip yapmak başlangıçtaki iki ölçünün ortak bölen sorusu değildir. 10 ve 15 dakika ortak başlangıçta 30; B 5 dakika geç başlarsa ilk ortak 20. Periyotları korumak başlangıcı korumak demek değildir.",
+                "d=3, m=30 için xy=10, geçerli (1, 10),(2, 5) çiftleri; en küçük kenarlar 6 ve 15 olduğundan en küçük dikdörtgen çevresi 2(6+15)=42. d=3, m=20 ise uygun sayı yoktur. Aynı kalan örneği N=24 k+1’i farklı kalanlara taşıma. Öklid’de son sıfırı değil, önceki sıfır olmayan kalanı al. Bir değişen koşulu özellikle adlandırmak ezberle model arasında bağlantı kurar."
+              ]
+            },
+            {
+              "code": "S24",
+              "title": "Aralarında asal koşulundan cebirsel bilinmeyene",
+              "paragraphs": [
+                "Pozitif a, b aralarında asal ve EBOB(a, b)=n²−6 n+10 verilsin. Aralarında asal olma EBOB=1 demektir. n²−6 n+10=1 →n²−6 n+9=0 →(n−3)²=0 →n=3. Çünkü bir gerçek sayının karesi sıfırsa kendisi sıfırdır. (n−3)² açılımı n²−3 n−3 n+9=n²−6 n+9’dur.",
+                "Ayrıca EKOK(a, b)=n⁴+9 verilirse 3⁴+9=90 ve ab=90 olur. Çarpan çiftleri (1, 90),(2, 45),(3, 30),(5, 18),(6, 15),(9, 10). Ortak böleni 1 olmayan (3, 30),(6, 15) elenir; geçerli toplamlar 91, 47, 23, 19; en küçük 19. Bu, kaynağın MEB destek örneğindeki yöntemin kendi anlatımıdır; ÖSYM sorusu veya yeni resmî doğrulama diye sunulmaz."
+              ]
+            },
+            {
+              "code": "S25",
+              "title": "Rakam şartı ile ortak katı birlikte kullan",
+              "paragraphs": [
+                "Üç basamaklı AAB=110 A+B ve ABA=101 A+10 B için A, 1…9; B, 0…9 rakamı olsun. İkisinin de 9’a bölünmesi rakam toplamı 2 A+B’nin 9’un katı olmasını ister. Sayılardan biri 5’e, diğeri 12’ye bölünüyorsa hangi sayının hangi koşula girdiğini iki ayrı durum olarak denetlersin. 9 ve 12’ye birlikte bölünmek 108’e bölünmek değildir; EKOK(9, 12)=36, örneğin 36 karşı örnektir.",
+                "AAB 5’e bölünürse B=0 veya 5. B=0 için A=9 çıkar fakat ABA=909, 12’ye bölünmez. B=5 için A=2; 225 ve 252 bütün koşulları sağlar. Ters atamada ABA 5’e bölünürse A=5; 9 koşulundan B=8; AAB=558, 12’ye bölünmez. Tek uygun rakam çifti A=2, B=5 ve toplam 7. Bu kısa matematik çözümü kaynağın seçili 2021 TYT 15 atfıyla ilişkilidir; özgün öğretim kartları resmî sınav sorusu diye etiketlenmez."
+              ]
+            },
+            {
+              "code": "S26",
+              "title": "İlk yanlış adımı bul ve yeni soruya aktar",
+              "paragraphs": [
+                "“60 ve 84 farklı, o halde EKOK=5040” cümlesinde ilk yanlış farklılık ile aralarında asallığı eşitlemektir. Yeni 72, 90 için EBOB 18, EKOK 360 hesaplayarak kuralı yeniden dene. “20×32 dikdörtgene en az kare için EKOK 160” cümlesinde yanlış işlemden önce yanlış bölme yönü vardır; kare kenarı ölçüleri bölmeliydi. Yeni 28 ve 42 cm ipte 14 cm ve 5 parça bul.",
+                "d=3, m=108 için xy=36 yazıp x=y=6 seçmek aralarında asal koşulunu kaybeder. Yeni d=2, m=72 için geçerli (x, y)=(4, 9), en küçük toplam 26’dır. [0, 72] ortak olaylarını 72/36=2 saymak başlangıcı eksiltir; yeni 6, 10 döngülerinin [0, 90) ortak anları 0, 30, 60’tır. İlgili çözümü kapatıp yeni durumu çöz; aynı cevabı hatırlamak yeni bağlama aktarımı tek başına göstermez."
+              ]
+            },
+            {
+              "code": "S27",
+              "title": "İstersen çözümden önce iki ön tahmin yap",
+              "paragraphs": [
+                "Tahmin zorunlu değildir; henüz bilmiyorsan şekli inceleyebilirsin. 36 cm×24 cm dikdörtgene kesmeden tam uyan en büyük kare kenarı 12 cm mi 72 cm mi? İkinci soruda, 0’da birlikte başlayan 12 ve 18 dakikalık iki döngü ilk yeniden 6 dakika sonra mı 36 dakika sonra mı ortak olur?",
+                "İlk durumda kare kenarı her ölçüyü bölmelidir: 12 her iki kenarı böler, 72 ise kenarlardan büyüktür. İkinci durumda geçen süre her periyodun tam katıdır: 36 uyar, 6 uymaz. Tahminini bu iki gerekçeyle karşılaştırmak yöntem seçimini açar; bir ön tahmin, bu konunun bütün alt becerilerinin öğrenildiği kaydı değildir."
+              ]
+            },
+            {
+              "code": "S28",
+              "title": "Aynı fark modeli yeni kalan koşulunda bozulabilir",
+              "paragraphs": [
+                "65 ve 89, aynı d’ye bölündüğünde 5 kalıyorsa d, 60 ve 84’ü böler; en büyük 12 ve 12>5 olduğundan geçerlidir. İki şeritten de 5 cm artık bırakınca kullanılabilir uzunluklar 60 ve 84 cm olur. Kesim kaybı yoksa 12 cm boyunda, ilk şeritten 60÷12=5 ve ikinciden 84÷12=7 parça çıkar. Toplam 12 parça elde edilir. Aynı sayılarda kalan 12 olsaydı farklar 53 ve 77 olurdu; EBOB 1, fakat d>12 gerekir. Bu nedenle ikinci durumun çözümü yoktur. Sayılar değişmeden kalan değişince uygun bölenin varlığı da değişebilir.",
+                "6’ya bölmede 1, 8’e bölmede 3 kalan için tek N−1 ortak kat modeli kurulmaz. İki koşulu ayrı yazarak 43=6×7+1=8×5+3 örneğini denetle. N−1=42, 8’in katı değildir; N−3=40 ise 8’in katıdır. İşlem kolay görünsün diye farklı kalanları aynılaştırma.",
+                "N’nin 8’e bölümünde kalan 5 olsaydı N−5, 8’in katı olurdu. 12’ye bölümünde kalan 7 olsaydı N−7, 12’nin katı olurdu. 8 ve 12’nin ikisi de 4’ün katı. İlk koşul N’nin 4’e bölümünde 1, ikinci koşul 3 kalmasını gerektirir. Aynı sayı 4’e bölündüğünde tek bir kalan verir. Bu iki koşula uyan N yoktur."
+              ]
+            },
+            {
+              "code": "S29",
+              "title": "Bir örnek ile bütün uygun durumları ayır",
+              "paragraphs": [
+                "EBOB(a,b)=6 olması a,b’nin mutlaka 6 ve 12 olduğu anlamına gelmez: 18 ve 24 için de en büyük ortak bölen 6’dır. EBOB bilgisi birden çok sayı çifti bırakır; EKOK veya aralık gibi ikinci bir koşul adayları daraltabilir. “Olabilir” için koşulları sağlayan tek çift yeterlidir; “kesin” demek bütün uygun çiftlerde doğru olmasını ister.",
+                "En küçük/en büyük sorusunda bir uygun çift göstermek yalnız varlığını kanıtlar. Daha iyi aday bulunmadığını çarpan çiftlerini eksiksiz tüketerek veya gerekli bir sınırla açıklamalısın. Bir olumlu örnek genel doğruluk kanıtı değildir; ön koşulu sağlayıp sonucu bozan tek karşı örnek ise yanlışlığı gösterir. Gerekçeyi bu kapsam sözcükleriyle uyumlu tut."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-geo-ucgen-merkezleri-031",
+        "after": "b12b0f4bff78b6d30c18553f87283dd77d97ffb80d529a4dbfb0af30ac2f1909",
+        "prior": {
+          "sections": [
+            {
+              "title": "Dört ayrı görev",
+              "text": [
+                "Kenarortay:köşeden karşı kenarın orta noktasına. Açıortay:köşedeki açıyı ikiye. Yükseklik:köşeden karşı kenarın doğrusuna dik.",
+                "Orta dikme:bir kenarın orta noktasından ona dik geçen doğru; genel durumda karşı köşeden geçmez."
+              ]
+            },
+            {
+              "title": "İç ve dış açıortay",
+              "figureTitle": "Dış açıortayda nokta uzantıda olur",
+              "text": [
+                "AD iç açıortay,D∈BC; AB=c,AC=b,BD=m,DC=n ise m/n=c/b ve AD²=bc−mn. Alan(ABD)/Alan(ACD)=m/n.",
+                "Dış açıortay BC’yi E’de keserse E uzantıdadır,BE/CE=AB/AC; büyük–küçük uzaklık farkı BC’dir. AB=AC ise dış açıortay BC’ye paraleldir.",
+                "İç merkez I için ∠BIC=90°+A/2. A karşısındaki dış teğet merkez Iₐ için ∠BIₐC=90°−A/2."
+              ]
+            },
+            {
+              "title": "Kenarortay ve ağırlık merkezi",
+              "text": [
+                "M,BC’nin ortası ve G ağırlık merkezi:AG:GM=2:1,AG=2AM/3,GM=AM/3. Bir kenarortay iki eş alan;üçü birlikte altı eş alan verir.",
+                "BC=a,CA=b,AB=c için4mₐ²=2b²+2c²−a². Altı küçük üçgenin alanları eşit diye kenarları eşit değildir."
+              ]
+            },
+            {
+              "title": "Merkezlerin eş uzaklıkları ve konumu",
+              "text": [
+                "I:iç açıortaylar;kenarlara eş dik uzaklık r. O:orta dikmeler;köşelere eş uzaklık R. H:yükseklikler. G:kenarortaylar.",
+                "I ve G her zaman içeride. H ve O dar üçgende içeride,genişte dışarıda;dik üçgende H dik köşede,O hipotenüsün ortasında."
+              ]
+            },
+            {
+              "title": "Özel üçgen ve ortak alan",
+              "text": [
+                "AB=AC ise A’dan tabana çizilen açıortay,kenarortay,yükseklik çakışır. Eşkenarda I,G,H,O tek noktadır.",
+                "Eşkenarda h=a√3/2,R=2h/3,r=h/3. Dik üçgende hipotenüse ait kenarortay hipotenüsün yarısıdır.",
+                "Her üçgende alan=a·hₐ/2=b·hᵦ/2=c·h𝚌/2; büyük kenara ait yükseklik daha kısadır."
+              ]
+            }
+          ],
+          "source": "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Açıortay 5.1 fiziksel s. 2 ve 5: dış açıortay koşulları. Sorular resmî sınav sorusu değildir."
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-mat-ebob-ekok-kaynak-034",
+        "after": "163a9a89d430b1113ce4348916c87124e6a77196a79dc43dd6445fc30ececd70",
+        "prior": {
+          "sections": [
+            {
+              "title": "Tanım ve bölme yönü",
+              "text": [
+                "EBOB en büyük ortak pozitif bölen; EKOK en küçük ortak pozitif kat. Başlangıç sayıları 1, 2,…; sıfır dahil değil. Bölen: d|a, a=dk ve k tam sayı. Kat: a, d’nin tam tekrarı. “En az” tek başına yöntem seçtirmez."
+              ]
+            },
+            {
+              "title": "Asal üs ve iki sayılı çarpım",
+              "text": [
+                "Her asalın küçük üssü EBOB, büyük üssü EKOK; bulunmayan asalın üssü 0’dır. 72=2³×3², 120=2³×3×5→24 ve 360. İki sayıda ab=EBOB×EKOK; EKOK=(a/EBOB)b. Üçlü çarpım kuralı yok: 2, 4, 8 için 64≠16."
+              ]
+            },
+            {
+              "title": "Aralarında asal ve sayı kurma",
+              "text": [
+                "EBOB=1 ise aralarında asal: 8 ve 9 gibi; ikisi de asal olmak zorunda değil. 6 ve 10 farklı fakat EBOB(6,10)=2. a|b ise EBOB=a, EKOK=b. EBOB=d, EKOK=m için a=dx, b=dy, xy=m/d, EBOB(x,y)=1 ve d|m gerekir. d=4, m=48 için geçerli çiftler (4,48),(12,16); en küçük toplam 28, en büyük 52."
+              ]
+            },
+            {
+              "title": "Öklid ve ortak bölen sayısı",
+              "text": [
+                "a=bq+r→EBOB(a, b)=EBOB(b, r); iki çift aynı ortak bölenlere sahiptir. Son sıfır olmayan kalan EBOB. 252, 198→54, 36, 18, 0; EBOB 18, EKOK 2772. 91, 65→26, 13, 0; EBOB 13.",
+                "Ortak bölenler EBOB’un bölenleridir. 24=2³×3→(3+1)(1+1)=8 pozitif; 8 negatif eşiyle toplam 16. EBOB 1 ise tek pozitif ortak bölen 1; 0 bölen değil."
+              ]
+            },
+            {
+              "title": "Kaplama, ip ve işaret",
+              "text": [
+                "Eş kareler kenarlara paralel, kesmeden/boşluksuz/derzsiz: kenar iki ölçüyü bölmeli. En az kare için en büyük boy EBOB. 36×24, s 12→3×2=6 kare; iki ayrı ipte 3+2=5 parça, ayrı kesimde 3 kesim.",
+                "Kapalı çevrede işaret sayısı=çevre/aralık; +1 yok. Açık kenarda iki uç dahil nokta sayısı=uzunluk/aralık+1. 18 m×30 m parkta s=6 m için çevre 96 m, 16 işaret; açık 18 m kenarda 4 nokta. Alan bölmesi kenara tam uyma şartının yerine geçmez."
+              ]
+            },
+            {
+              "title": "Periyot, uçlar ve başlangıç",
+              "text": [
+                "Sabit periyot ve ortak başlangıçta ilk yeniden ortak süre EKOK’tur. 12 ve 18 dk için 36 dk. [0,72] aralığında 0,36,72: 3 olay; [0,72) ve (0,72] aralıklarında 2 olay. 09.50+36 dk=10.26.",
+                "Başlangıç kayarsa iki ayrı dizi yaz: 12/18, B 6’da→ilk 24; 10/15, B 5’te→20; 8/12, B 4’te→16. Başlangıç bilinmiyorsa ilk ortak an kesin değil; verilmeyeni 0 varsayma."
+              ]
+            },
+            {
+              "title": "Aynı N, aynı kalan",
+              "text": [
+                "N=dq+r, 0≤r<d. İki bölenle aynı r kalanı veriliyorsa N−r ortak kat, N=EKOK×k+r. 8 ve 12 bölenleri, r=5, N>100 için en küçük 101. 6 ve 8 bölenleri, r=1, N<200 için en büyük 193; komşu adayı da denetle. Farklı kalanlarda tek çıkarma geçmez. Aynı 49 nesne altışarlı kutularda 8, sekizerli kutularda 6 kutu doldurur. 49=6×8+1=8×6+1. Her düzende bir nesne artar."
+              ]
+            },
+            {
+              "title": "Bilinmeyen bölen ve kalan sınırı",
+              "text": [
+                "Farklı sayılarda her sayıdan kendi kalanını çıkar; d farkların ortak böleni ve her kalandan büyük olmalı. 85 ve 133’te kalan 1 için 84 ve 132’nin EBOB’u 12. 87’de kalan 3 ve 134’te kalan 2 için yine 12. 77 ve 113’te kalan 5 için en büyük bölen 36.",
+                "Farkların EBOB’u kalan sınırını aşmıyorsa çözüm yok. 17 ve 25’te kalan 5 için EBOB(12,20)=4≤5. 65 ve 89 cm’lik iki şeritte 5’er cm artık bırakılırsa EBOB(60,84)=12 cm. Kesim kaybı olmadan 60÷12=5 ve 84÷12=7 parça çıkar. Boy 12 cm, toplam 12 parçadır. Kalan 12 olsaydı EBOB(53,77)=1 ve d>12 koşulu çelişirdi."
+              ]
+            },
+            {
+              "title": "Üç sayı ve bilinmeyen x",
+              "text": [
+                "Üç veya daha çok sayıda her asalın min/max üssünü seç veya ikili ilerle. 18, 24, 30→EBOB 6, EKOK 360; 12, 18, 30→6 ve 180.",
+                "EBOB(18,12,x)=6 ve EKOK(18,12,x)=360 için en küçük x=120. 40 EKOK’u sağlasa da EBOB’u sağlamaz. EBOB(20,30,x)=10 ve EKOK(20,30,x)=420 için en küçük x=70; 7 tek başına yetmez."
+              ]
+            },
+            {
+              "title": "Üç boyutta küp adedi",
+              "text": [
+                "Küçük küpler her boy ayrı, paralel ve kesimsiz kullanılırsa en küçük ortak büyük kenar EKOK. 12/18 cm→36 cm; adetler(36/12)³=27 ve(36/18)³=8. Her hacim 46.656 cm³; boyları aynı büyük küpte karıştırmak ayrı model."
+              ]
+            },
+            {
+              "title": "Karma prova ve koşul onarımı",
+              "text": [
+                "d=5, m=150 için en küçük toplam 55; d=2, m=72 için 26. Aralarında asal çarpan çiftleri eksiksiz denetlenir. EKOK(72,90)=360. 28 ve 42 cm ipler 14 cm boyda 5 parça. 6 ve 10 dk döngülerinin [0,90) aralığındaki ortak anları 0,30,60: 3 olay.",
+                "40×56 kaplamada en büyük kenar 8→35 kare/ayrı iplerde 12 parça. Kenar özellikle 4 cm verilirse EBOB aranmaz; 140 kare. Model/koşul/birim/son kontrol ayrı tutulur. 6 ve 180 ile yeni bir deneme yapmak için aşağıdaki Destek azaltılan toplamı tamamla örneğini çözümü açmadan dene."
+              ]
+            },
+            {
+              "title": "Rakam, cebir ve kanıt sınırı",
+              "text": [
+                "9 ve 12’ye birlikte bölünmek 108’e bölünmek değil; EKOK 36. Kaynağın 2021 TYT 15 seçili çözümünde A=2, B=5, 225 ve 252→toplam 7; özgün açıklama resmî soru kopyası değildir.",
+                "MEB destek yönteminde aralarında asal olma EBOB=1 verir. n²−6n+10=1 için n=3; EKOK=n⁴+9=90. En küçük toplam 9+10=19. Baskı yılı doğrulanmadı; bütün kitap veya 2027 resmî kapsamı bu üniteyle doğrulanmaz."
+              ]
+            }
+          ]
+        }
+      }
+    ]
   }
 ]

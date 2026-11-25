@@ -13,7 +13,7 @@ const COUNTS: Record<string, number> = {
   // Forge064 üç figürsüz bölüme figür ekledi (elek, mod 3 üçlüsü, basamak filtresi).
   "tyt-mat-asal-kaynak-032": 8,
   "tyt-mat-faktoriyel-kaynak-033": 5,
-  "tyt-mat-ebob-ekok-kaynak-034": 5,
+  "tyt-mat-ebob-ekok-kaynak-034": 6,
   "tyt-mat-rasyonel-kaynak-035": 5,
   "tyt-mat-dogrusal-denklemler-kaynak-036": 5,
   "tyt-mat-basit-esitsizlikler-kaynak-037": 7,

@@ -1,8 +1,8 @@
 {
-  "version": "0.155.0",
+  "version": "0.156.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Bölünme koşullarında ortak katı tabloyla bul. Dış açıortayın tabanla ilişkisini üç farklı kenar durumunda incele.",
-    "en": "Compare joint divisibility conditions and three different external angle bisectors."
+    "tr": "EBOB ve EKOK’ta başlangıç değişince ortak dakikaları gör. Kenarortayda taban uzunluğunu değiştirerek orta nokta ve dik uzaklığı ayır.",
+    "en": "Compare shifted event timelines and the median and altitude of a triangle with a changing base."
   }
 }

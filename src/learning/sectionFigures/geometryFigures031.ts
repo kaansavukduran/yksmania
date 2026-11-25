@@ -1476,35 +1476,40 @@ const ucgenMerkezleri: Record<string, FigureDef> = {
     },
   },
   "Kenarortay uzunluğu ve dik üçgendeki özel hâl": {
-    caption:
-      "a = 6, b = 7, c = 5 için 4mₐ² = 2·49 + 2·25 − 36 = 112. Kenarortay AM ile yükseklik AH aynı köşeden çıksa da farklı parçalardır.",
-    alt: "BC = 6, CA = 7, AB = 5 olan üçgen; A'dan BC'nin orta noktası M'ye kenarortay ve A'dan BC'ye dik inen yükseklik.",
-    draw: () => {
+    caption: "AB=7 ve AC=9 sabit. BC’yi değiştirip orta noktaya giden AM ile dik inen AH’yi karşılaştır.",
+    alt: "ABC üçgeni. A’dan tabanın orta noktası M’ye kenarortay, taban doğrusundaki H’ye kesikli dikme çizilmiş. M’de iki eş parça işareti var.",
+    param: { label: "BC tabanı", min: 4, max: 14, step: 2, init: 8, unit: " birim" },
+    draw: (base) => {
       const B = v(0, 0);
-      const C = v(6, 0);
-      const A = fromSides(6, 5, 7)!;
+      const C = v(base, 0);
+      const A = fromSides(base, 7, 9)!;
       const M = mid(B, C);
       const H = foot(A, B, C);
+      const median = dist(A, M);
+      const height = dist(A, H);
+      const square = (2 * 7 ** 2 + 2 * 9 ** 2 - base ** 2) / 4;
       return {
         els: [
           tri(A, B, C),
+          ...(H[0] < 0 ? [seg(H, B, { tone: "muted", dash: true })] : []),
           seg(A, M, { tone: "a" }),
           seg(A, H, { tone: "b", dash: true }),
           right(H, C, A, "b"),
           ticks(B, M, 1, "a"),
           ticks(M, C, 1, "a"),
-          dim(B, A, "5", C),
-          dim(A, C, "7", B),
-          // H (x = 1) and M (x = 3) are labelled under BC, so BC's length
-          // goes under the free right half; the ticks show BM = MC.
-          txt(mid(M, C), "MC = 3", "s", { tone: "muted", small: true }),
+          dim(B, A, "7", C),
+          dim(A, C, "9", B),
           pt(A, "A", "n"),
           pt(B, "B", "sw"),
           pt(C, "C", "se"),
           pt(M, "M", "s", "a"),
-          pt(H, "H", "s", "b"),
+          pt(H, "H", "nw", "b"),
         ],
-        readout: [`BC = 6, BM = MC = 3 · mₐ = √28 ≈ ${fmt(dist(A, M), 2)}`, `hₐ ≈ ${fmt(dist(A, H), 2)}`],
+        readout: [
+          `BM = MC = ${base / 2} birim`,
+          `AM² = (2·7² + 2·9² − ${base}²)/4 = ${square}`,
+          `AM ${Number.isInteger(Math.sqrt(square)) ? "=" : "≈"} ${fmt(median, 2)} birim, AH ≈ ${fmt(height, 2)} birim`,
+        ],
       };
     },
   },
