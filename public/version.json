@@ -1,8 +1,8 @@
 {
-  "version": "0.197.0",
+  "version": "0.198.0",
   "channel": "alpha",
   "notes": {
-    "tr": "AYT Fizikte iki cismin aynı andaki konumunu birlikte oku. Başlangıç yüksekliğini değiştirip yollar kesişse bile neden buluşmadıklarını gör.",
-    "en": "Compare both positions at the same time. Change the starting height to see how the paths can intersect without the objects meeting."
+    "tr": "AYT Kimyada seçilen katmanda orbital ve spin kısıtlarını kutular üzerinde uygula. İzinli elektron kapasitesiyle atomun gerçek doluluğunu karşılaştır.",
+    "en": "Apply orbital and spin restrictions to the boxes in a chosen shell. Compare the permitted electron capacity with an atom’s actual occupancy."
   }
 }

@@ -20,6 +20,17 @@ interface TheorySupplement {
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const theorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "ayt-kuantum-sayilari": [{
+    title: "Katmanda orbital ve spin koşulunu birlikte say",
+    figureTitle: "Katmanda orbital ve spin koşulunu birlikte say",
+    paragraphs: [
+      "n=3 katmanındaki 3s, 3p ve 3d alt kabuklarında 1, 3 ve 5 orbital vardır. Toplam 9 orbital. İki spin durumu da serbestse en fazla 18 elektron sığar. Argonun temel hâlinde bu katmanda 3s²3p⁶ vardır: gerçek doluluk 8 elektrondur.",
+      "Yalnız mℓ=0 dendiğinde her alt kabuktan bir kutu kalır. Üç kutuda iki zıt spinle kapasite 6. Yalnız mₛ=+½ dendiğinde dokuz kutu da kalır, her kutuda bir okla kapasite 9. İki koşul aynı anda verilirse üç kutunun her birinde bir spin, toplam 3.",
+      "n=4’e geçtiğinde 4s, 4p, 4d ve 4f satırlarını say. mℓ=0 için dört kutu kalır. Spin serbestse 8, spin +½ ile sınırlıysa 4 elektron sığar.",
+    ],
+    summary: "n=3 için 1+3+5=9 orbital ve en çok 18 elektron. mℓ=0 ile 6, yalnız +½ spinle 9, iki koşulla 3 elektron kapasitesi.",
+    appendSection: true,
+  }],
   "bagil-hareket": [{
     title: "Yollar kesişse de zamanı karşılaştır",
     figureTitle: "Yollar kesişse de zamanı karşılaştır",
