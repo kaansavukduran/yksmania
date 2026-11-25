@@ -1,3 +1,4 @@
+import { beforeTytTheoryRevisions } from "./helpers/before-tyt-theory-revisions";
 import { createHash } from "node:crypto";
 import { ChoiceSelect } from "../src/components/ChoiceSelect";
 import { PassThrough } from "node:stream";
@@ -151,7 +152,8 @@ describe("029 narrative recall continuity inside enriched guides", () => {
     expect(sha(narrativePacks)).toBe(
       "52edcce807f2e53f3048f7e117df1ffb437069e114ca083740f075aa7eae55ef",
     );
-    expect(sha(rawGuides)).toBe(
+    const historicalGuides = rawGuides.map((guide) => beforeTytTheoryRevisions("guides", guide.id, guide));
+    expect(sha(historicalGuides)).toBe(
       "e7aba90f4fab2e9ff09450027adfbdabfddef1dc4d50d583fc1e951d7e16fc67",
     );
   });

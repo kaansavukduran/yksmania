@@ -94,12 +94,12 @@ it("appends distinct course cards, examples and quick paths without changing fir
     {
       id: "tyt-geo-ucgende-acilar-031",
       old: 10,
-      sections: 10,
-      examples: 3,
+      sections: 11,
+      examples: 4,
       first: "f031-tyt-geo-ucgende-acilar-031-1",
       official: ["2024-TYT-MAT-32", "E", 34, 43],
       answers: ["62°", "38°", "66°", "75°, 60°, 45°", "95°"],
-      sheet: "Açıortay ve kenarortay",
+      sheet: "Eş kenarlara inen dik uzaklıklar",
     },
     {
       id: "tyt-geo-ucgen-esitsizligi-031",
@@ -143,7 +143,10 @@ it("appends distinct course cards, examples and quick paths without changing fir
     }
     if (id === "tyt-geo-ucgende-acilar-031") {
       expect(summary.sections.map((section) => section.title)).toContain("Üç açıortay kesişimini ayır");
-      expect(lessonGuides.get(id)?.examples.at(-1)?.answer).toBe("100°.");
+      expect(summary.sections.map((section) => section.title)).toContain("Açıortay ve kenarortay");
+      const worked = lessonGuides.get(id)!.examples;
+      expect(worked.map((example) => example.answer)).toContain("100°.");
+      expect(worked.at(-1)?.answer).toBe("AB’ye dik uzaklık 16/5 birim.");
     }
     expect(summary.examples.length).toBeGreaterThanOrEqual(examples + 2);
     expect(pastExamReferences.find((r) => r.id === official[0])).toMatchObject({
