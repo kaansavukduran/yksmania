@@ -1,8 +1,8 @@
 {
-  "version": "0.192.0",
+  "version": "0.193.0",
   "channel": "alpha",
   "notes": {
-    "tr": "AYT Fizik Vektörlerde üç kuvveti uç uca ekle, düşey bileşeni değiştir ve bileşke ile dengeleyicinin her iki eksende sıfır toplam verdiğini gör.",
-    "en": "Add three forces head to tail, change the vertical component, and inspect the equal and opposite balancing vector."
+    "tr": "AYT Kimyada azot ve oksijenin 2p orbital kutularını karşılaştır, elektronların zıt spinle eşleşmesini ve tek elektron sayısını oku.",
+    "en": "Compare nitrogen and oxygen 2p orbital occupancy, opposite spins in a pair, and the number of unpaired electrons."
   }
 }

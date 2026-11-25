@@ -20,6 +20,16 @@ interface TheorySupplement {
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const theorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "ayt-modern-atom-elektron-dizilimi": [{
+    title: "2p kutularında önce tek elektronları yerleştir",
+    figureTitle: "2p kutularında önce tek elektronları yerleştir",
+    paragraphs: [
+      "Her kutu bir orbital, her ok bir elektrondur. 2p alt kabuğunda mₗ değerleri −1, 0 ve +1 olan üç orbital bulunur. Hund kuralına göre eş enerjili kutular önce aynı spinli birer elektron alır.",
+      "Azot: 1s² 2s² 2p³, üç eşleşmemiş elektron. Oksijen: 1s² 2s² 2p⁴, ilk üçü ayrı kutularda, dördüncü elektron bir kutuda zıt spinle eşleşir. İki eşleşmemiş elektron kalır. Eş enerjili kutularda çiftin gösterildiği yer çizim tercihidir.",
+    ],
+    summary: "N: 2p³ kutu dolulukları 1,1,1 ve üç eşleşmemiş elektron. O: 2p⁴ doluluklar 2,1,1 ve iki eşleşmemiş elektron. Bir kutudaki eşleşmede spinler zıttır.",
+    appendSection: true,
+  }],
   "vektorler": [{
     title: "Bileşen işaretini bölgeden bul",
     figureTitle: "Bileşen işaretini bölgeden bul",

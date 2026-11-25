@@ -2163,3 +2163,29 @@ test("AYT three vectors add and balance their signed components", async ({ page,
   }
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("AYT p orbital arrows pair only after three single electrons", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "2p kutularında önce tek elektronları yerleştir");
+  for (const route of ["/#/lesson?id=ayt-modern-atom-elektron-dizilimi", "/#/cheatsheets?topic=detail-408"]) {
+    await page.goto(route);
+    const image = model.getByRole("img");
+    await expect(model).toContainText("Kutu dolulukları 1, 1, 1. 2p’de 3 elektron, 3 eşleşmemiş elektron.");
+    await expect(image.locator("polyline.sf-head")).toHaveCount(3);
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("Kutu dolulukları 2, 1, 1. 2p’de 4 elektron, 2 eşleşmemiş elektron.");
+    await expect(image.locator("polyline.sf-head")).toHaveCount(4);
+    expect(await image.locator("line").evaluateAll((lines) =>
+      lines.map((line) => Number(line.getAttribute("y2")) < Number(line.getAttribute("y1"))))
+    ).toEqual([true, false, true, true]);
+    await checkFrame(page, model);
+  }
+  await page.goto("/#/lesson?id=ayt-modern-atom-elektron-dizilimi");
+  const prior = figure(page, "Cr ve Cu: doğrulanmış iki istisna");
+  await prior.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await expect(prior).toContainText("Gerçek Cr: 4s¹ 3d⁵");
+  expect(learning(await storage(page))).toEqual(before);
+});
