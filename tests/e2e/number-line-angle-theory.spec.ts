@@ -860,3 +860,363 @@ test("Doubling both rhombus diagonals doubles the circle radius and quadruples a
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Two age lines have the same vertical gap at any shared date", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Aynı anda herkes aynı süre yaşlanır");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  const slider = model.getByRole("slider", { name: /bugün = 0/ });
+  await page.goto("/#/lesson?id=yas-problemleri");
+  await next.press("Enter");
+  await expect(model).toContainText("30 − 16 = 14 yıl fark");
+  await slider.fill("4");
+  await expect(model).toContainText("34 − 20 = 14 yıl fark");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-212");
+  await next.press("Enter");
+  await slider.fill("-4");
+  await expect(model).toContainText("26 − 12 = 14 yıl fark");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The known perimeter and diagonal determine the two rectangle sides", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-paralelkenar-ozel-dortgenler-032";
+  const model = figure(page, "Dikdörtgende eş köşegenin kaynağı");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto(`/#/lesson?id=${lesson}`);
+  for (let step = 0; step < 2; step++) await next.press("Enter");
+  await expect(model).toContainText("alan 168 ⇒ 24 ve 7");
+  await next.press("Enter");
+  await expect(model).toContainText("2ab = 17² − 169 = 120 ⇒ alan 60 ⇒ 12 ve 5");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  for (let step = 0; step < 3; step++) await next.press("Enter");
+  await expect(model).toContainText("alan 60 ⇒ 12 ve 5");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Package price and price per gram use different amounts", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Paket fiyatıyla birim fiyat aynı değişken değildir");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto("/#/lesson?id=yuzde-problemleri");
+  await next.press("Enter");
+  await next.press("Enter");
+  await expect(model).toContainText("240/480 = 0,50 TL/g");
+  await expect(model).toContainText("280/400 = 0,70 TL/g");
+  await expect(model).toContainText("Gram fiyatı %40 arttı");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-213");
+  await next.press("Enter");
+  await next.press("Enter");
+  await expect(model).toContainText("Gram fiyatı %40 arttı");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Joining midpoints divides a square into two equal area groups", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-paralelkenar-ozel-dortgenler-032";
+  const model = figure(page, "Orta noktalarla iç kareyi kur");
+  const slider = model.getByRole("slider", { name: /Dış karenin kenarı/ });
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("İç karenin kenarı 4√2 birim");
+  await expect(model).toContainText("İç karenin alanı 32 birim²");
+  await expect(model).toContainText("Dört üçgen toplam 32 birim²");
+  await slider.press("Home");
+  await expect(model).toContainText("İç karenin alanı 8 birim²");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(model).toContainText("Dört üçgen toplam 32 birim²");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Break-even and the first profitable sale are different quantities", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Sabit gider ve birim katkı başabaşı belirler");
+  const slider = model.getByRole("slider", { name: /Satış adedi/ });
+  await page.goto("/#/lesson?id=kar-zarar-problemleri");
+  await expect(model).toContainText("Başabaş 40 adet");
+  await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await slider.fill("35");
+  await expect(model).toContainText("Başabaş. Kâr ve zarar 0 TL");
+  await slider.press("ArrowRight");
+  await expect(model).toContainText("Kâr 20 TL");
+  await slider.fill("40");
+  await expect(model).toContainText("Kâr 100 TL");
+  await checkFrame(page, model);
+
+  await page.goto("/#/cheatsheets?topic=detail-214");
+  await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await slider.fill("34");
+  await expect(model).toContainText("Zarar 20 TL");
+  await expect(model).toContainText("İlk pozitif kâr 36 adette");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("A kite with unequal sides has unequal parts on its symmetry diagonal", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-yamuk-deltoid-032";
+  const model = figure(page, "Deltoidde alanı dört dik üçgenle tamamla");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("AC = 5 + 9 = 14");
+  await next.press("Enter");
+  await expect(model).toContainText("AC = 5 + 16 = 21");
+  await expect(model).toContainText("Alan = 21·24/2 = 252");
+  await expect(model).toContainText("Çevre = 2(13 + 20) = 66");
+  await checkFrame(page, model);
+
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await next.press("Enter");
+  await expect(model).toContainText("Toplam 252 birim²");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("An eight-month interest timeline distinguishes interest from the balance", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Ayı ve günü oranla aynı döneme çevir");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto("/#/lesson?id=faiz-problemleri");
+  await expect(model).toContainText("0,04");
+  await next.press("Enter");
+  const months = model.getByRole("slider");
+  await months.fill("8");
+  await expect(model).toContainText("8 ay = 8/12 yıl. Faiz = 240 TL");
+  await expect(model).toContainText("2.400 TL + 240 TL = 2.640 TL");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-215");
+  await next.press("Enter");
+  await months.press("End");
+  await expect(model).toContainText("12 ay = 12/12 yıl. Faiz = 360 TL");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Inscribed angles on opposite sides of a chord are supplementary", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-cember-aci-040";
+  const model = figure(page, "Kirişin iki tarafında görülen yay değişir");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  const position = model.getByRole("slider");
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("ACB = 100° / 2 = 50°");
+  await position.press("Home");
+  await expect(model).toContainText("ACB = 100° / 2 = 50°");
+  await next.press("Enter");
+  await expect(model).toContainText("ADB = 260° / 2 = 130°");
+  await position.press("End");
+  await expect(model).toContainText("ADB = 260° / 2 = 130°");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await next.press("Enter");
+  await expect(model).toContainText("ADB = 260° / 2 = 130°");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Different mixture masses give a weighted concentration", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Karışırken şeker ve su kütlesini ayrı topla");
+  await page.goto("/#/lesson?id=karisim-problemleri");
+  await expect(model).toContainText("Şeker 24 + 32 = 56 g");
+  await expect(model).toContainText("56/200 → %28");
+  const slider = model.getByRole("slider", { name: /İkinci karışımın kütlesi/ });
+  await slider.fill("120");
+  await expect(model).toContainText("72/240 → %30");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-216");
+  await expect(model).toContainText("56/200 → %28");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The hypotenuse changes between the chord and tangent triangles", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-cember-aci-040";
+  const model = figure(page, "Kiriş ve teğette hipotenüsü ayır");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("Tam kiriş 24 birim");
+  await next.press("Enter");
+  await expect(model).toContainText("√120 ≈ 10,95 birim");
+  const radius = model.getByRole("slider", { name: /Yarıçap/ });
+  await radius.press("End");
+  await expect(model).toContainText("√64 = 8 birim");
+  await checkFrame(page, model);
+
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(figure(page, "Kirişin iki tarafında görülen yay değişir")).toHaveCount(1);
+  await expect(model).toContainText("Tam kiriş 24 birim");
+  await next.press("Enter");
+  await expect(model).toContainText("Bu dik üçgende hipotenüs O ile P arasındaki uzaklık");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Three work lines meet the one-job mark at different times", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "İş payı grafiğinde eğimleri topla");
+  await page.goto("/#/lesson?id=isci-problemleri");
+  await expect(model).toContainText("7,2 saat. A tek %60, B tek %40, birlikte %100 iş");
+  const slider = model.getByRole("slider", { name: /Geçen süre/ });
+  await slider.press("End");
+  await expect(model).toContainText("12 saat. A tek %100, B tek %66,7, birlikte %100 iş");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-217");
+  await expect(model).toContainText("Sonuç 7 saat 12 dakika");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The small circular segment subtracts the exact equilateral triangle area", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-geo-daire-040";
+  const model = figure(page, "Daire parçası: dilimden üçgeni çıkar");
+  await page.goto(`/#/lesson?id=${id}`);
+  await expect(model).toContainText("9π − 18");
+  const angle = model.getByRole("slider", { name: /α/ });
+  await angle.press("Home");
+  await expect(model).toContainText("Dilim 6π birim². Üçgen 9√3 birim²");
+  await expect(model).toContainText("6π − 9√3 ≈ 3,26 birim²");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${id}`);
+  await angle.press("Home");
+  await expect(model).toContainText("6π − 9√3 ≈ 3,26 birim²");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The delay belongs in the lesson, solved example and cheat sheet", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const title = "Gecikmiş açılış yeni evre başlatır";
+  const model = figure(page, title).filter({ visible: true }).first();
+  await page.goto("/#/lesson?id=havuz-problemleri");
+  await expect(model).toContainText("2 saat geçti. Tank %20 dolu");
+  await model.getByRole("slider").press("End");
+  await expect(model).toContainText("6,8 saat geçti. Tank %100 dolu");
+  await checkFrame(page, model);
+  const lessonExample = page.locator(".worked-example").filter({ hasText: "Gecikmeli giriş" });
+  await lessonExample.locator("summary").press("Enter");
+  await lessonExample.getByRole("button", { name: "Çözümün tamamını göster", exact: true }).press("Enter");
+  await expect(figure(lessonExample, title)).toContainText("6 saat 48 dakika");
+
+  await page.goto("/#/cheatsheets?topic=detail-218");
+  await expect(model).toContainText("İlk 2 saat: 2 × 1/10 = 1/5 tank");
+  const sheetExample = page.locator(".worked-example").filter({ hasText: "Gecikmeli giriş" });
+  await sheetExample.getByText("Gecikmeli giriş", { exact: true }).press("Enter");
+  await sheetExample.getByText("Çözümü adım adım gör", { exact: true }).press("Enter");
+  const sheetModel = figure(sheetExample, title);
+  await expect(sheetModel).toContainText("6 saat 48 dakika");
+  await checkFrame(page, sheetModel);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("An internal division moves both coordinates by the same ratio", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Oranla bölünen noktanın yönünü denetle");
+  await page.goto("/#/lesson?id=noktanin-analitigi");
+  await expect(model).toContainText("P = (1; 3)");
+  await expect(model).toContainText("AP = (3; 2), PB = (6; 4)");
+  await model.getByRole("slider", { name: /AP’nin payı/ }).press("ArrowRight");
+  await expect(model).toContainText("P = (2,5; 4)");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-138");
+  await expect(model).toContainText("P = (1; 3)");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The position lines cross only at their shared time and place", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Grafik ile çözümü geri denetle");
+  await page.goto("/#/lesson?id=hiz-problemleri");
+  await expect(model).toContainText("2 saat. A 100 km, B 100 km konumunda. Aralık 0 km");
+  const slider = model.getByRole("slider", { name: /Geçen süre/ });
+  await slider.press("Home");
+  await expect(model).toContainText("0 saat. A 20 km, B 140 km konumunda. Aralık 120 km");
+  await slider.press("End");
+  await expect(model).toContainText("4 saat. A 180 km, B 60 km konumunda. Aralık 120 km");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-219");
+  await expect(model).toContainText("t = 2 saat. İki konum da 100 km");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("A hexagonal prism diagonal uses the farthest base vertices", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-geo-dik-prizmalar-032";
+  const model = figure(page, "Altıgen tabandan prizmanın en uzun köşegenine");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto(`/#/lesson?id=${id}`);
+  await expect(model).toContainText("24√3 cm²");
+  await expect(model).toContainText("Merkezden kenara dik uzaklık 2√3 cm");
+  await next.press("Enter");
+  await expect(model).toContainText("Hacim 216√3 cm³");
+  await expect(model).toContainText("√145 cm");
+  await model.getByRole("slider", { name: /Altıgenin kenarı/ }).press("Home");
+  await expect(model).toContainText("√97 cm");
+  await checkFrame(page, model);
+
+  await page.goto(`/#/cheatsheets?topic=topic-${id}`);
+  await next.press("Enter");
+  await expect(model).toContainText("216 + 48√3 cm²");
+  await expect(model).toContainText("√145 cm");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

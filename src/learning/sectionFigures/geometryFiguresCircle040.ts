@@ -110,6 +110,44 @@ const cember: Record<string, FigureDef> = {
       };
     },
   },
+  "Kirişin iki tarafında görülen yay değişir": {
+    caption: "Küçük AB yayı 100°. Köşenin hangi yayda olduğunu değiştir. Açı, köşenin üzerinde bulunmadığı yayın yarısıdır.",
+    alt: "A ve B’yi birleştiren kiriş kesikli. Çevre açının köşesi seçilen yay boyunca hareket eder. Köşenin karşısındaki yay kalın çizilir.",
+    steps: ["C büyük yayda", "D küçük yayda"],
+    param: { label: "Köşenin yay üzerindeki yeri", min: 0, max: 100, step: 5, init: 50, unit: "%" },
+    draw: (position, step) => {
+      const arcStart = 40;
+      const smallArc = 100;
+      const arcEnd = arcStart + smallArc;
+      const smallSide = step === 1;
+      const seenStart = smallSide ? arcEnd : arcStart;
+      const seenDegrees = smallSide ? 360 - smallArc : smallArc;
+      const vertexStart = smallSide ? arcStart : arcEnd;
+      const vertexDegrees = 360 - seenDegrees;
+      const location = vertexStart + vertexDegrees * (0.18 + position * 0.0064);
+      const A = P(arcStart);
+      const B = P(arcEnd);
+      const X = P(location);
+      const name = smallSide ? "D" : "C";
+      return {
+        els: [
+          circle(O, R, { tone: "ink" }),
+          { k: "poly", ps: Array.from({ length: 49 }, (_, i) => P(seenStart + (seenDegrees * i) / 48)), open: true, tone: "b", bold: true },
+          seg(A, B, { tone: "muted", dash: true }),
+          seg(X, A, { tone: "a", bold: true }),
+          seg(X, B, { tone: "a", bold: true }),
+          ang(X, A, B, `${seenDegrees / 2}°`, { tone: "a" }),
+          pt(A, "A", "e"),
+          pt(B, "B", "w"),
+          pt(X, name, smallSide ? "n" : "s", "a"),
+        ],
+        readout: [
+          `Görülen ${smallSide ? "büyük" : "küçük"} AB yayı ${seenDegrees}°. A${name}B = ${seenDegrees}° / 2 = ${seenDegrees / 2}°.`,
+          "Kirişin karşı tarafındaki çevre açıyla toplam 180° olur.",
+        ],
+      };
+    },
+  },
   "Çapı gören çevre açı dik açıdır": {
     caption: "AB çap. C'yi çember üzerinde gezdir: ACB açısı her zaman 90°'dir; hipotenüs AB, çevrel çemberin çapıdır.",
     alt: "Çemberde yatay çap AB ve çember üzerindeki C noktasından A ve B'ye çizilen kenarlar; C'de dik açı işareti.",
@@ -235,6 +273,65 @@ const cember: Record<string, FigureDef> = {
           txt(Q(o2, 180), "130°", "w", { small: true, tone: "c" }),
           txt(Q(o2, 0), "30°", "w", { small: true, tone: "c" }),
           txt(v(8.6 + 1.2, -r - 0.4), "dış açı = (130 − 30)/2 = 50°", "s", { small: true, bold: true }),
+        ],
+      };
+    },
+  },
+  "Kiriş ve teğette hipotenüsü ayır": {
+    caption: "Yarıçapı değiştir. Kiriş için merkezden inen dikme, teğet için değme noktasındaki diklik bir dik üçgen kurar.",
+    alt: "İlk adımda kirişin orta noktasına merkezden dikme iniyor. İkinci adımda değme noktasında yarıçap ve teğet dik açı oluşturuyor.",
+    steps: ["Yarım kiriş", "Dış noktadan teğet"],
+    param: { label: "Yarıçap", min: 9, max: 15, step: 1, init: 13 },
+    draw: (r, step) => {
+      const scale = 0.25;
+      const chordDistance = 5;
+      const externalDistance = 17;
+      const chordSquared = r ** 2 - chordDistance ** 2;
+      const tangentSquared = externalDistance ** 2 - r ** 2;
+      const els: El[] = [circle(O, r * scale, { tone: "ink" }), pt(O, "O", "sw")];
+      if (step === 0) {
+        const half = Math.sqrt(chordSquared);
+        const M = v(0, chordDistance * scale);
+        const A = v(-half * scale, chordDistance * scale);
+        const B = v(half * scale, chordDistance * scale);
+        els.push(
+          seg(A, B, { tone: "a", bold: true }),
+          seg(O, A, { tone: "b" }),
+          seg(O, M, { tone: "muted", dash: true }),
+          right(M, O, A, "ink"),
+          pt(A, "A", "nw"),
+          pt(B, "B", "ne"),
+          pt(M, "M", "n"),
+          txt(mid(O, M), String(chordDistance), "e", { tone: "ink", small: true }),
+          txt(mid(O, A), String(r), "s", { tone: "b", small: true }),
+        );
+        return {
+          els,
+          readout: [
+            `Yarım kiriş = √(${r}²−${chordDistance}²) = √${chordSquared} ${Number.isInteger(half) ? "=" : "≈"} ${fmt(half, 2)} birim.`,
+            `Tam kiriş ${fmt(2 * half, 2)} birim. Bu dik üçgende hipotenüs yarıçap.`,
+          ],
+        };
+      }
+      const tangent = Math.sqrt(tangentSquared);
+      const touchX = r ** 2 / externalDistance;
+      const T = v(touchX * scale, Math.sqrt(r ** 2 - touchX ** 2) * scale);
+      const P = v(externalDistance * scale, 0);
+      els.push(
+        seg(O, P, { tone: "ink" }),
+        seg(O, T, { tone: "b" }),
+        seg(T, P, { tone: "a", bold: true }),
+        right(T, O, P, "ink"),
+        pt(T, "T", "n"),
+        pt(P, "P", "se"),
+        txt(mid(O, P), String(externalDistance), "s", { tone: "ink", small: true }),
+        txt(mid(O, T), String(r), "nw", { tone: "b", small: true }),
+      );
+      return {
+        els,
+        readout: [
+          `Teğet PT = √(${externalDistance}²−${r}²) = √${tangentSquared} ${Number.isInteger(tangent) ? "=" : "≈"} ${fmt(tangent, 2)} birim.`,
+          "Bu dik üçgende hipotenüs O ile P arasındaki uzaklık.",
         ],
       };
     },
@@ -477,11 +574,15 @@ const daire: Record<string, FigureDef> = {
     alt: "Çemberde dilim, dilimin içindeki üçgen ve kiriş ile yay arasında kalan boyalı daire parçası.",
     param: { label: "α", min: 60, max: 150, step: 30, init: 90, unit: "°" },
     draw: (a) => {
-      const r = 3;
+      const radius = 6;
+      const r = radius / 2;
       const A = pol(r, 0, O);
       const B = pol(r, a, O);
       const seg040: V[] = Array.from({ length: 41 }, (_, i) => pol(r, (a * i) / 40, O));
-      const tri = 0.5 * 36 * Math.sin((a * Math.PI) / 180);
+      const triangle = (radius ** 2 * Math.sin((a * Math.PI) / 180)) / 2;
+      const sectorCoefficient = (radius ** 2 * a) / 360;
+      const piece = sectorCoefficient * Math.PI - triangle;
+      const exactTriangle = a === 60 || a === 120 ? "9√3" : fmt(triangle, 2);
       return {
         els: [
           circle(O, r, { tone: "muted" }),
@@ -492,7 +593,10 @@ const daire: Record<string, FigureDef> = {
           pt(A, "A", "e"),
           pt(B, "B", "n"),
         ],
-        readout: [`Parça = ${fmt(a / 10, 1)}π − ${fmt(tri, 2)}`],
+        readout: [
+          `Dilim ${fmt(sectorCoefficient, 1)}π birim². Üçgen ${exactTriangle} birim².`,
+          `Parça = ${fmt(sectorCoefficient, 1)}π − ${exactTriangle} ≈ ${fmt(piece, 2)} birim².`,
+        ],
       };
     },
   },

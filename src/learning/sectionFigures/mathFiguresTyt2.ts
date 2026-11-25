@@ -207,14 +207,155 @@ const gcd: FigureDef = {
   },
 };
 
+const positionTime: FigureDef = {
+  caption: "Saat ilerledikçe iki aracı aynı konum ekseninde izle. Eğimlerin işareti yönü, doğruların kesişimi ortak yer ve zamanı gösterir.",
+  alt: "Yatay eksen saat, düşey eksen kilometre. A’nın konumu 20’den artıyor, B’nin konumu 140’tan azalıyor. Doğrular 2. saatte 100 kilometrede kesişiyor.",
+  param: { label: "Geçen süre", min: 0, max: 4, step: 0.25, init: 2, unit: " saat" },
+  draw: (t) => {
+    const aStart = 20;
+    const bStart = 140;
+    const aSpeed = 40;
+    const bSpeed = -20;
+    const a = (hour: number) => aStart + aSpeed * hour;
+    const b = (hour: number) => bStart + bSpeed * hour;
+    const meetTime = (bStart - aStart) / (aSpeed - bSpeed);
+    const x = (hour: number) => hour * 1.67;
+    const y = (km: number) => km * 0.023;
+    const point = (hour: number, km: number) => v(x(hour), y(km));
+    const els: El[] = [
+      vec(v(0, 0), v(x(4.45), 0), { tone: "ink" }),
+      vec(v(0, 0), v(0, y(204)), { tone: "ink" }),
+      txt(v(x(4.45), 0), "saat", "se", { small: true }),
+      txt(v(0, y(204)), "km", "n", { small: true }),
+    ];
+    for (const hour of [0, 1, 2, 3, 4]) {
+      els.push(txt(v(x(hour), 0), String(hour), "s", { small: true, tone: "ink" }));
+    }
+    for (const km of [40, 80, 120, 160]) {
+      els.push(seg(point(0, km), point(4, km), { tone: "muted", thin: true, dash: true }));
+      els.push(txt(point(0, km), String(km), "w", { small: true, tone: "ink" }));
+    }
+    els.push(
+      seg(point(0, a(0)), point(4, a(4)), { tone: "a", bold: true }),
+      seg(point(0, b(0)), point(4, b(4)), { tone: "c", bold: true }),
+      txt(point(4, a(4)), "A", "e", { tone: "a" }),
+      txt(point(4, b(4)), "B", "e", { tone: "c" }),
+      seg(point(t, 0), point(t, Math.max(a(t), b(t))), { tone: "muted", dash: true }),
+      ball(point(t, a(t)), 0.1, "a"),
+      ball(point(t, b(t)), 0.1, "c"),
+      ball(point(meetTime, a(meetTime)), 0.085, "ink"),
+    );
+    return {
+      els,
+      readout: [
+        `${fmt(t)} saat. A ${fmt(a(t))} km, B ${fmt(b(t))} km konumunda. Aralık ${fmt(Math.abs(a(t) - b(t)))} km.`,
+        `20 + 40t = 140 − 20t ⇒ t = ${meetTime} saat. İki konum da ${a(meetTime)} km.`,
+        "A’nın eğimi +40 km/sa, B’nin eğimi −20 km/sa. Eksi işaret yönü gösterir.",
+      ],
+    };
+  },
+};
+
+const sharedWorkGraph: FigureDef = {
+  caption: "Sabit hızda eğim, bir saatte biten iş payıdır. A tek 12, B tek 18 saatte bitiriyor. Birlikte çalışmayı gösteren doğru 1 işe daha erken ulaşır.",
+  alt: "Yatay eksen saat, düşey eksen bitirilen iş payı. A, B ve birlikte çalışma doğruları sıfırdan başlar. Bir işi bitiren doğru o noktada sonlanır.",
+  param: { label: "Geçen süre", min: 0, max: 12, step: 0.2, init: 7.2, unit: " saat" },
+  draw: (t) => {
+    const x = (hour: number) => hour * 0.62;
+    const y = (share: number) => share * 4.1;
+    const rateA = 1 / 12;
+    const rateB = 1 / 18;
+    const together = rateA + rateB;
+    const xEnd = x(12.8);
+    const els: El[] = [
+      vec(v(0, 0), v(xEnd, 0), { tone: "ink" }),
+      vec(v(0, 0), v(0, y(1.13)), { tone: "ink" }),
+      seg(v(0, y(1)), v(x(12), y(1)), { tone: "muted", dash: true }),
+      txt(v(xEnd, 0), "saat", "se", { small: true }),
+      txt(v(0, y(1.13)), "iş payı", "n", { small: true }),
+    ];
+    for (const hour of [0, 3, 6, 9, 12]) {
+      els.push(txt(v(x(hour), 0), String(hour), "s", { small: true, tone: "ink" }));
+    }
+    for (const share of [0.5, 1]) {
+      els.push(txt(v(0, y(share)), fmt(share, 1), "w", { small: true, tone: "ink" }));
+    }
+    const models: { name: string; rate: number; tone: Tone }[] = [
+      { name: "A", rate: rateA, tone: "b" },
+      { name: "B", rate: rateB, tone: "c" },
+      { name: "A+B", rate: together, tone: "warn" },
+    ];
+    for (const { name, rate, tone } of models) {
+      const end = Math.min(12, 1 / rate);
+      const target = v(x(end), y(rate * end));
+      els.push(seg(v(0, 0), target, { tone, bold: true }));
+      els.push(txt(target, name, name === "A+B" ? "n" : "e", { tone, small: true, bold: true }));
+    }
+    els.push(seg(v(x(t), 0), v(x(t), y(Math.min(1, t * together))), { tone: "muted", dash: true }));
+    els.push(ball(v(x(Math.min(t, 1 / together)), y(Math.min(1, t * together))), 0.095, "warn"));
+    return {
+      els,
+      readout: [
+        `${fmt(t, 1)} saat. A tek %${fmt(100 * t * rateA, 1)}, B tek %${fmt(100 * t * rateB, 1)}, birlikte %${fmt(100 * Math.min(1, t * together), 1)} iş.`,
+        "Ortak hız 1/12 + 1/18 = 5/36 iş/saat. Bir iş 36/5 = 7,2 saatte biter.",
+        "0,2 saat = 12 dakika. Sonuç 7 saat 12 dakika.",
+      ],
+    };
+  },
+};
+
+const weightedMixture: FigureDef = {
+  caption: "Çubukların tümü karışımın kütlesini, iki parçası şeker ve suyu gösterir. İkinci karışımın kütlesini değiştir ve son yüzdeyi şeker kütlesinden hesapla.",
+  alt: "Üç yatay çubuk ilk karışımı, ikinci karışımı ve sonucu aynı ölçekle gösterir. Her çubuğun ilk bölümü şeker, geri kalanı sudur.",
+  param: { label: "İkinci karışımın kütlesi", min: 40, max: 160, step: 5, init: 80, unit: " g" },
+  draw: (secondMass) => {
+    const firstMass = 120;
+    const firstSugar = (firstMass * 20) / 100;
+    const secondSugar = (secondMass * 40) / 100;
+    const sugar = firstSugar + secondSugar;
+    const total = firstMass + secondMass;
+    const scale = 1 / 34;
+    const rows = [
+      { label: "İlk karışım", mass: firstMass, sugar: firstSugar },
+      { label: "İkinci karışım", mass: secondMass, sugar: secondSugar },
+      { label: "Sonuç", mass: total, sugar },
+    ];
+    const els: El[] = [];
+    rows.forEach((row, index) => {
+      const y = 4 - index * 1.75;
+      els.push(
+        txt(v(0, y + 0.65), `${row.label} · ${row.mass} g`, "ne", { tone: "ink", small: true }),
+        rect(0, y, row.sugar * scale, 0.47, "a"),
+        rect(row.sugar * scale, y, (row.mass - row.sugar) * scale, 0.47, "c"),
+        txt(v(0, y - 0.12), `Şeker ${row.sugar} g · Su ${row.mass - row.sugar} g`, "se", { tone: "ink", small: true }),
+      );
+    });
+    return {
+      els,
+      readout: [
+        `Şeker ${firstSugar} + ${secondSugar} = ${sugar} g. Toplam ${firstMass} + ${secondMass} = ${total} g.`,
+        `Şeker oranı: ${sugar}/${total} → %${fmt((100 * sugar) / total)}.`,
+        "Bu iki farklı yüzdeyi doğrudan ortalamak, yalnız kütleler eşitse doğru sonuç verir.",
+      ],
+    };
+  },
+};
+
 export const mathFiguresTyt2: Record<string, Record<string, FigureDef>> = {
   "hiz-problemleri": {
     "Birbirine gelenler aralığı birlikte kapatır": meeting,
     "Aynı yönde yetişme için arkadaki hızlı olmalı": chase,
     "Tren tamamen geçiyorsa iki uzunluğu say": train,
+    "Grafik ile çözümü geri denetle": positionTime,
   },
-  "isci-problemleri": { "Birlikte hızlar toplanır, süreler değil": work },
-  "karisim-problemleri": { "Saf su eklemek yalnız toplamı büyütür": dilution },
+  "isci-problemleri": {
+    "Birlikte hızlar toplanır, süreler değil": work,
+    "İş payı grafiğinde eğimleri topla": sharedWorkGraph,
+  },
+  "karisim-problemleri": {
+    "Saf su eklemek yalnız toplamı büyütür": dilution,
+    "Karışırken şeker ve su kütlesini ayrı topla": weightedMixture,
+  },
   "ebob-ekok": { "Eş parça ile ortak buluşmayı ayır": gcd },
 };
 

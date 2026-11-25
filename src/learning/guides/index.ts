@@ -389,17 +389,25 @@ for (const extension of forge020BiologyGuideExtensions) {
 // The reader can extend the catalog while preserving its historical entries.
 export function studyGuide(lessonId: string) {
   const guide = clarifiedGuideView(lessonGuides.get(lessonId));
-  const supplement = tytTheorySupplements[lessonId];
-  if (guide && supplement) {
-    const { title, figureTitle, paragraphs, appendSection } = supplement;
-    const sections = appendSection
-      ? [...guide.sections, { title, figureTitle, paragraphs }]
-      : guide.sections.map((section) =>
-          section.title === title
-            ? { ...section, paragraphs: [...section.paragraphs, ...paragraphs], figureTitle }
-            : section
-        );
-    return { ...guide, sections };
+  const supplements = tytTheorySupplements[lessonId];
+  if (guide && supplements) {
+    let sections = guide.sections;
+    let examples = guide.examples;
+    for (const { title, figureTitle, paragraphs, appendSection, workedStep } of supplements) {
+      sections = appendSection
+        ? [...sections, { title, figureTitle, paragraphs }]
+        : sections.map((section) => section.title === title
+          ? { ...section, paragraphs: [...section.paragraphs, ...paragraphs], figureTitle }
+          : section);
+      if (workedStep) {
+        examples = examples.map((example) => example.title === workedStep.title
+          ? { ...example, steps: example.steps.map((step, index) => index === workedStep.index
+            ? { ...step, figureTitle }
+            : step) }
+          : example);
+      }
+    }
+    return { ...guide, sections, examples };
   }
   if (guide?.id === "donusum-oteleme-donme") {
     const components = "Öteleme vektörünün iki bileşenini oku";

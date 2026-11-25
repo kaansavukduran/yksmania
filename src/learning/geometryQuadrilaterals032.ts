@@ -573,7 +573,7 @@ const packs: QuadrilateralPack032[] = [
         title: "Dikdörtgende eş köşegenin kaynağı",
         paragraphs: [
           "Bir paralelkenarın bir açısı 90° ise komşu açılar ve karşı açı eşitliklerinden bütün açıları 90°dir; bu şekil dikdörtgendir. Komşu kenarları a ve b ise çevre 2(a+b), alan ab’dir. Köşegen bir dik üçgenin hipotenüsü olduğundan d²=a²+b² çıkar.",
-          "İki köşegen eş uzunluktadır ve birbirini ortalar. Bu nedenle kesişim O’dan dört köşeye uzaklık d/2’dir; dört köşe aynı çemberdedir ve çevrel yarıçap R=d/2 olur. Kare olmayan dikdörtgende köşegenler genel olarak dik veya açıortay değildir. Köşegen uzunluğunu bir kenar yerine kullanmak alanı yanlış büyütür.",
+          "Köşegenler eş ve birbirini ortaladığından bütün köşeler, kesişim merkezli d/2 yarıçaplı çemberdedir. Kare olmayan dikdörtgenin köşegenleri dik değildir. Çevre 34 ve köşegen 13 ise a+b=17 ve a²+b²=169. 2ab=17²−169=120 olduğundan alan 60 birim². 12 ve 5 hem toplam 17’yi hem köşegen 13’ü sağlar.",
         ],
       },
       {
@@ -1098,6 +1098,7 @@ const summaries: Record<string, CheatSection[]> = {
     },
     {
       title: "Dikdörtgen",
+      figureTitle: "Dikdörtgende eş köşegenin kaynağı",
       text: [
         "S=ab; Ç=2(a+b); d²=a²+b². Köşegenler eş ve birbirini ortalar.",
         "Çevrel çember yarıçapı R=d/2; kare olmadıkça diklik/açıortaylık zorunlu değildir.",

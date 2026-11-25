@@ -108,7 +108,7 @@ TYT;Matematik;Yaş Problemleri;detail-212;yas-problemleri;106;15;6;15;2;1;7
 TYT;Matematik;Yüzde Problemleri;detail-213;yuzde-problemleri;107;15;8;15;2;1;7
 TYT;Matematik;Kar Zarar Problemleri;detail-214;kar-zarar-problemleri;108;15;7;15;2;1;7
 TYT;Matematik;Faiz Problemleri;detail-215;faiz-problemleri;109;14;7;14;7;1;1
-TYT;Matematik;Karışım Problemleri;detail-216;karisim-problemleri;110;14;6;14;6;1;7
+TYT;Matematik;Karışım Problemleri;detail-216;karisim-problemleri;110;15;6;15;6;1;7
 TYT;Tarih;Milli Mücadele Dönemi;detail-245;milli-mucadele;111;10;4;10;4;6;4
 TYT;Kimya;Katılar / viskozite;detail-162;katilar-viskozite;112;9;4;9;4;1;4
 TYT;Kimya;Buharlaşma / buhar basıncı;detail-163;buharlasma-buhar-basinci;113;8;4;8;4;1;3
@@ -119,7 +119,7 @@ TYT;Türkçe;Edat / bağlaç / ünlem;detail-256;edat-baglac-unlem;117;10;5;10;5
 TYT;Biyoloji;Eşeyli Üreme;detail-24;eseyli-ureme;118;8;4;8;4;1;5
 TYT;Biyoloji;Kalıtıma Giriş;detail-25;kalitima-giris;119;8;4;8;4;1;5
 TYT;Biyoloji;Mendel Genetiği;detail-26;mendel-genetigi;120;8;4;8;4;1;5
-TYT;Matematik;İşçi Problemleri;detail-217;isci-problemleri;121;15;6;15;6;1;7
+TYT;Matematik;İşçi Problemleri;detail-217;isci-problemleri;121;16;6;16;6;1;7
 TYT;Matematik;İşçi - Havuz Problemleri;detail-218;havuz-problemleri;122;15;6;15;6;1;7
 TYT;Matematik;Hız Problemleri;detail-219;hiz-problemleri;123;15;6;15;6;1;7
 TYT;Türkçe;Fiiller;detail-257;fiiller;124;10;5;10;5;1;4
@@ -280,7 +280,7 @@ AYT;Kimya;Molarite;detail-419;ayt-molarite;278;10;4;10;4;1;4
 AYT;Kimya;Molarite / iyon derişimi;detail-420;ayt-iyon-derisimi;279;12;4;12;4;1;4
 TYT;Coğrafya;Dünya ve Türkiye'de göçler;detail-68;dunya-turkiye-gocler;280;15;4;15;4;1;3
 TYT;Coğrafya;Ekonomik faaliyetler;detail-69;ekonomik-faaliyetler;281;12;4;12;4;1;2
-TYT;Geometri;Noktanın Analitiği;detail-138;noktanin-analitigi;282;18;6;18;6;1;4
+TYT;Geometri;Noktanın Analitiği;detail-138;noktanin-analitigi;282;19;6;19;6;1;4
 TYT;Türkçe;Paragrafa Giriş;detail-269;paragrafa-giris;283;16;4;16;4;1;3
 AYT;Fizik;Basit makineler;detail-373;basit-makineler-ayt;284;12;4;12;4;3;4
 AYT;Fizik;Elektriksel kuvvet;detail-374;elektriksel-kuvvet-ayt;285;12;4;12;4;1;4
@@ -487,8 +487,8 @@ TYT;Geometri;Üçgende yardımcı elemanlar ve merkezler;topic-tyt-geo-ucgen-mer
 TYT;Geometri;Çokgenler: açı, köşegen ve düzgünlük;topic-tyt-geo-cokgenler-032;tyt-geo-cokgenler-032;486;10;4;5;2;1;3
 TYT;Geometri;Dörtgenlerin özellikleri ve aile ilişkileri;topic-tyt-geo-dortgen-hiyerarsi-032;tyt-geo-dortgen-hiyerarsi-032;487;12;5;5;2;1;3
 TYT;Geometri;Yamuk ve deltoid;topic-tyt-geo-yamuk-deltoid-032;tyt-geo-yamuk-deltoid-032;488;10;4;5;2;2;6
-TYT;Geometri;Paralelkenar, dikdörtgen, eşkenar dörtgen ve kare;topic-tyt-geo-paralelkenar-ozel-dortgenler-032;tyt-geo-paralelkenar-ozel-dortgenler-032;489;10;4;5;2;4;13
-TYT;Geometri;Dik prizmalar: açınım, alan ve hacim;topic-tyt-geo-dik-prizmalar-032;tyt-geo-dik-prizmalar-032;490;8;4;5;2;7;5
+TYT;Geometri;Paralelkenar, dikdörtgen, eşkenar dörtgen ve kare;topic-tyt-geo-paralelkenar-ozel-dortgenler-032;tyt-geo-paralelkenar-ozel-dortgenler-032;489;11;4;6;2;4;13
+TYT;Geometri;Dik prizmalar: açınım, alan ve hacim;topic-tyt-geo-dik-prizmalar-032;tyt-geo-dik-prizmalar-032;490;9;4;6;2;7;5
 TYT;Geometri;Piramitler: yükseklik, yüzey ve kesit;topic-tyt-geo-piramitler-032;tyt-geo-piramitler-032;491;8;4;5;2;2;3
 TYT;Geometri;Geometrinin dili: kaynakla pekiştirme;topic-tyt-geo-acilar-kaynak-pekitirme-032;tyt-geo-acilar-kaynak-pekitirme-032;492;12;10;6;3;1;7
 TYT;Matematik;Asal sayılar: elekten kaynak sorularına;topic-tyt-mat-asal-kaynak-032;tyt-mat-asal-kaynak-032;493;20;12;6;3;1;6
@@ -499,7 +499,7 @@ TYT;Matematik;Birinci dereceden denklemler: eşitliği koru, modeli kur;topic-ty
 TYT;Matematik;Basit eşitsizlikler: sırayı koru, bütün çözümü gör;topic-tyt-mat-basit-esitsizlikler-kaynak-037;tyt-mat-basit-esitsizlikler-kaynak-037;498;40;44;17;5;1;7
 TYT;Matematik;Mutlak değer: uzaklık, koşul ve grafiğin mantığı;topic-tyt-mat-mutlak-deger-kaynak-038;tyt-mat-mutlak-deger-kaynak-038;499;34;38;14;3;1;7
 TYT;Matematik;Üslü sayılar: çarpan, koşul ve ölçeğin mantığı;topic-tyt-mat-uslu-sayilar-kaynak-039;tyt-mat-uslu-sayilar-kaynak-039;500;40;53;16;3;1;7
-TYT;Geometri;Çemberde açı, kiriş ve teğet;topic-tyt-geo-cember-aci-040;tyt-geo-cember-aci-040;501;11;3;4;3;2;6
+TYT;Geometri;Çemberde açı, kiriş ve teğet;topic-tyt-geo-cember-aci-040;tyt-geo-cember-aci-040;501;13;3;6;3;2;6
 TYT;Geometri;Daire, daire dilimi, çevre ve alan;topic-tyt-geo-daire-040;tyt-geo-daire-040;502;10;3;4;3;1;4
 TYT;Geometri;Silindir, koni ve küre;topic-tyt-geo-silindir-koni-kure-040;tyt-geo-silindir-koni-kure-040;503;10;3;4;3;6;8
 TYT;Geometri;Dik üçgende trigonometrik oranlar;topic-tyt-geo-trigonometrik-oranlar-040;tyt-geo-trigonometrik-oranlar-040;504;9;3;4;3;1;0

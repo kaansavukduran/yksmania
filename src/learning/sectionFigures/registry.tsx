@@ -186,7 +186,7 @@ import { biologyFigures060Digestion } from "./biologyFigures060Digestion";
 import { mathFigures060TytNumbers } from "./mathFigures060TytNumbers";
 import { mathFigures060TytAlgebra } from "./mathFigures060TytAlgebra";
 import { mathFigures060TytData } from "./mathFigures060TytData";
-import { capacityWithBoxExample, mathFigures060TytProblems } from "./mathFigures060TytProblems";
+import { capacityWithBoxExample, delayedInlet, mathFigures060TytProblems } from "./mathFigures060TytProblems";
 import { mathFigures062TytNumbers } from "./mathFigures062TytNumbers";
 import { mathFigures062TytRational } from "./mathFigures062TytRational";
 import { mathFigures062TytAlgebra } from "./mathFigures062TytAlgebra";
@@ -230,7 +230,7 @@ import { geographyFigures062Human } from "./geographyFigures062Human";
 import { religionFigures062Rulings } from "./religionFigures062Rulings";
 import { religionFigures062Values } from "./religionFigures062Values";
 import { religionFigures062Belief } from "./religionFigures062Belief";
-import { geometryFigures063Sheets } from "./geometryFigures063Sheets";
+import { geometryFigures063Sheets, squareFromMidpoints } from "./geometryFigures063Sheets";
 import { mathFigures064Sheets } from "./mathFigures064Sheets";
 import { turkishFigures065Sheets } from "./turkishFigures065Sheets";
 import { geographyFigures066Sheets } from "./geographyFigures066Sheets";
@@ -424,6 +424,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   mathFigures060TytAlgebra,
   mathFigures060TytData,
   mathFigures060TytProblems,
+  { "havuz-problemleri": { "Gecikmiş açılış yeni evre başlatır": delayedInlet } },
   religionFigures061Worship,
   religionFigures061Anatolia,
   religionFigures061Life,
@@ -468,6 +469,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   mathFigures062TytAlgebra,
   mathFigures062TytCounting,
   geometryFigures063Sheets,
+  { "tyt-geo-paralelkenar-ozel-dortgenler-032": { "Orta noktalarla iç kareyi kur": squareFromMidpoints } },
   mathFigures064Sheets,
   turkishFigures065Sheets,
   geographyFigures066Sheets,

@@ -852,8 +852,8 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
-| TYT Matematik | 45 / 45 | 45 · 193 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
-| TYT Geometri | 19 / 19 | 19 · 183 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
+| TYT Matematik | 45 / 45 | 45 · 197 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
+| TYT Geometri | 19 / 19 | 19 · 188 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 283 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 155 | 515 / 515 · %100,00 | 11 / 36 · %30,56 | 54 soru · 9 kitapçık | 0 |
@@ -867,7 +867,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2355** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2364** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
@@ -3755,3 +3755,51 @@ Sayı Problemleri fiziksel 1 ve 7 ile Paralelkenar fiziksel 2 ve 5 karşılaşt�
 Kesir Problemleri’nde 120 birimden önce 30 alınıyor. İkinci kesir 90’ın üçte biriyse 60 birim, 120’nin üçte biriyse 50 birim kalıyor. Eşkenar Dörtgen’de köşegenler 16 ve 12 olunca yarımlardan kenar 10, alan 96 ve iç yarıçap 4,8 bulunuyor.
 
 Kesir Problemleri fiziksel 6, Eşkenar Dörtgen fiziksel 2–3 ve 5 karşılaştırıldı. Yeni köklü denklem, ters orantı, kapasite ve kesir örnekleri öğrenci anlatımı ile Kopya Kağıtlarında açılıyor. Eski ders kayıtları ile eski kapasite çiziminin dört adımı kendi doğrulamasını geçiyor. TypeScript, 45 birim, 37 Chromium, 323 çevrimdışı varlık ve 66 görsel yerleşim kontrolü geçti. Sırada Yaş Problemleri fiziksel 1 ve Dikdörtgen fiziksel 2 ile 5 var.
+
+## TYT Matematik ve Geometri · 0.167.0 adayı
+
+Yaş Problemleri’nde iki paralel doğru aynı tarihteki yaşları gösteriyor. Deniz ve Işıl bugün 30 ve 16, dört yıl sonra 34 ve 20 yaşında. Düşey fark her iki anda 14 yıl. Dikdörtgen’de çevre 34 ve köşegen 13 bilgileri alanı 60, kenarları 12 ve 5 olarak belirliyor.
+
+Yaş Problemleri fiziksel 1 ve Dikdörtgen fiziksel 2 ile 5 karşılaştırıldı. TypeScript, 28 hedef birim ve 39 Chromium akışı geçti. 323 çevrimdışı varlık ve 320, 375 ve 1280 pikselde 24 görsel denetlendi. Sırada Yüzde Problemleri fiziksel 12 ve Kare fiziksel 2 ile 5 var.
+
+## TYT Matematik ve Geometri · 0.168.0 adayı
+
+Yüzde Problemleri’nde 480 g ve 240 TL ile 400 g ve 280 TL verileri gram başına fiyatla karşılaştırılıyor. 0,50 TL/g’den 0,70 TL/g’ye geçiş %40 artış. Karede dört kenarın orta noktaları birleştiriliyor. Dış kenar 8 iken iç kenar 4√2, iç alan 32 ve dört köşe üçgeninin toplam alanı 32.
+
+Yüzde Problemleri fiziksel 12 ve Kare fiziksel 2 ile 5 doğrulandı. TypeScript, 26 hedef birim, 6 gerçek Chromium akışı, 12 çizim yerleşimi ve 323 çevrimdışı varlık geçti. Ham soru ve ders kayıtları bayt düzeyinde eş. Sırada Kâr Zarar fiziksel 12 ve Deltoid fiziksel 5 var.
+
+## TYT Matematik ve Geometri · 0.169.0 adayı
+
+Kâr Zarar’da gelir ve maliyet aynı grafikte satış adedine göre değişiyor. 700 TL sabit gider ve 20 TL birim katkıda 35 adet başabaş, 36 adet 20 TL kâr, 40 adet 100 TL kâr. Deltoidde 13 ve 20 birimlik eş kenar çiftleri ile 24 birimlik köşegen korunarak diğer köşegen 5+16, alan 252, çevre 66 bulunuyor.
+
+Kâr Zarar fiziksel 12 ve Deltoid fiziksel 5 karşılaştırıldı. TypeScript, 32 hedef birim, 5 Chromium akışı, 9 çizim yerleşimi ve 323 çevrimdışı varlık geçti. Öğrenme kayıtları değişmeden ders ve Kopya Kağıdı üzerinden sınandı. Sırada Faiz Problemleri fiziksel 1 ve Çemberde Açılar fiziksel 2 ile 5 var.
+
+## TYT Matematik ve Geometri · 0.170.0 adayı
+
+Faiz Problemleri’nde 2.400 TL ve yıllık %15 için 0, 4, 8 ve 12 ayın faizini zaman çizgisinden oku. Sekiz ayda faiz 240 TL ve son tutar 2.640 TL. Çemberde Açılar’da küçük AB yayı 100° iken C büyük yaydayken açı 50°, D küçük yaydayken açı 130°. Sürgü, köşeyi aynı yayda hareket ettirirken açının sabit kaldığını gösteriyor.
+
+Faiz Problemleri fiziksel 1, Çemberde Açılar fiziksel 2 ile 5 karşılaştırıldı. İlk TypeScript kontrolünde noktanın koordinatına yanlış erişim düzeltildi. Ardından TypeScript, 37 hedef birim, 5 Chromium, 9 çizim yerleşimi ve 323 çevrimdışı varlık geçti. Sırada Karışım Problemleri fiziksel 1 ve Çemberde Uzunluk fiziksel 2 ile 5 var.
+
+## TYT Matematik ve Geometri · 0.171.0 adayı
+
+Karışım Problemleri’nde 120 g %20 ile 80 g %40, aynı ölçekli şeker ve su şeritleriyle gösteriliyor. Toplamdaki 56 g şeker ve 200 g karışım %28 verir. Çemberde Uzunluk’ta yarıçap 13 ve kiriş uzaklığı 5 iken kiriş 24. Dış nokta 17 birim uzaktaysa teğet √120. Her adım farklı hipotenüsü ve diklik noktasını gösteriyor.
+
+Karışım Problemleri fiziksel 1, Çemberde Uzunluk fiziksel 2 ve 5 ile karşılaştırıldı. TypeScript, 32 hedef birim ve içerik denetimi geçti. İlk tarayıcı sonucu teğet uzunluğunu tam sayıya yuvarlayan gösterimi yakaladı. İki basamaklı gösterimle aynı 7 Chromium akışı ve 9 çizim yerleşimi geçti. 323 çevrimdışı varlık doğrulandı. Sırada İşçi Problemleri fiziksel 3 ve Dairede Alan fiziksel 2 var.
+
+## TYT Matematik ve Geometri · 0.172.0 adayı
+
+İşçi Problemleri’nde 12 ve 18 saatlik tek çalışma doğruları ile ortak çalışma doğrusu aynı eksende yer alıyor. Ortak hız 5/36 iş/saat, işin bitişi 7 saat 12 dakika. Dairede Alan’da 60° dilimin 6π alanından 9√3 üçgeni çıkarılıyor. Küçük parça yaklaşık 3,26 birim².
+
+İşçi Problemleri fiziksel 3 ve Dairede Alan fiziksel 2 karşılaştırıldı. TypeScript, içerik denetimi, 5 Chromium akışı, 6 çizim yerleşimi ve 323 çevrimdışı varlık geçti. Aynı sonuç ayrı Kopya Kağıtlarında sınandı. Sırada İşçi–Havuz fiziksel 3 ve Noktanın Analitiği fiziksel 2 ile 5 var.
+
+## TYT Matematik ve Geometri · 0.173.0 adayı
+
+Havuz Problemleri’nde B musluğu gecikince doluluk grafiği 2. saatte kırılıyor. İlk pay 1/5, kalan süre 4,8 saat ve toplam 6 saat 48 dakika. Aynı çizim ders, çözümlü örneğin son adımı ve ayrı Kopya Kağıdında açılıyor. Noktanın Analitiği’nde A(−2; 1) ile B(7; 7) arasında 1:2 oranı P(1; 3) veriyor. Vektörleri ve ağırlıkları aynı çizimden karşılaştır.
+
+İşçi–Havuz fiziksel 3 ve Noktanın Analitiği fiziksel 2, 5 ile karşılaştırıldı. Tam PR denetimi önceki iç kare çiziminin ortak şekil listesinde eksik olduğunu yakaladı. Şekil listeye alındı; eski paket içeriği ve test beklentisi korundu. TypeScript, 2.936 hedef birim, 6 Chromium akışı, 9 yerleşim ve 323 çevrimdışı varlık doğrulandı. Sırada Hız Problemleri fiziksel 4 ve Dik Prizmalar fiziksel 6 var.
+
+## TYT Matematik ve Geometri · 0.174.0 adayı
+
+Hız Problemleri’nde iki konum doğrusu, 2. saatte ve 100 km’de kesişiyor. Sürgü, iki aracın konumunu ortak zamanda okutur. Dik Prizmalar’da düzgün altıgenin altı eşkenar üçgeni taban alanını verir. Kenar 4 cm ve yükseklik 9 cm iken hacim 216√3 cm³, en uzun köşegen √145 cm.
+
+Hız Problemleri fiziksel 4 ve Dik Prizmalar fiziksel 6 karşılaştırıldı. Önceki adayın tam CI’ı Havuz için dört şekil sayan denetimi durdurdu. Test artık önceki dört şekli ve yeni gecikme şeklini adlarıyla arıyor. TypeScript, 2.936 hedef birim, 5 Chromium akışı, 6 çizim yerleşimi ve 323 çevrimdışı varlık geçti. Sırada Grafik Problemleri fiziksel 2 ve 5, Küp fiziksel 2 ve 5 var.

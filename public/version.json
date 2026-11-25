@@ -1,8 +1,8 @@
 {
-  "version": "0.166.0",
+  "version": "0.174.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Aynı kesirleri ara kalana ve ilk bütüne uygulayarak farkı gör. Eşkenar dörtgende yarım köşegenlerden kenar, alan ve iç yarıçapı bul.",
-    "en": "Compare taking a fraction of the remainder with taking it from the original amount. Derive a rhombus’s side length, area and inradius."
+    "tr": "Hız Problemleri’nde iki hareketin konum-zaman grafiğini aynı ölçekte oku. Dik Prizmalar’da düzgün altıgeni oluştur ve cisim köşegenini Pisagor ile hesapla.",
+    "en": "Read two movements on one position-time graph and derive a straight hexagonal prism’s longest diagonal from its base and height."
   }
 }

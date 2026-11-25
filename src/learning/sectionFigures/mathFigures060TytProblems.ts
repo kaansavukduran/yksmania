@@ -35,9 +35,35 @@ const simpleLine: FigureDef = {
 const months: FigureDef = {
   caption:
     "Yıllık oran verildiğinde ay sayısı yılın kesrine çevrilir: m ay = m/12 yıl. Sürgüyle ay sayısını değiştir. Yıllık %16 ile 3 ayın faiz katsayısı 0,16·3/12 = 0,04’tür; süreyi 3 yıl almak getiriyi 12 kat büyütür.",
-  alt: "On iki aylık şerit; seçilen ay sayısı kadar hücre dolu; altında yılın kesri ve faiz katsayısı.",
+  alt: "Bir yıllık şeritte seçilen süre vurgulanır. İkinci adımda 4, 8 ve 12 aylık basit faiz ayrı işaretlerle gösterilir.",
+  steps: ["Yıllık %16 için katsayı", "2.400 TL için aylara göre faiz"],
   param: { label: "ay", min: 1, max: 12, step: 1, init: 3 },
-  draw: (m) => {
+  draw: (m, step) => {
+    if (step === 1) {
+      const principal = 2400;
+      const annualRate = 0.15;
+      const interest = (elapsed: number) => (principal * annualRate * elapsed) / 12;
+      const x = (elapsed: number) => elapsed * 0.65;
+      const els: El[] = [seg(v(0, 0), v(x(12), 0), { tone: "muted" })];
+      els.push(seg(v(0, 0), v(x(m), 0), { tone: "a", bold: true }));
+      for (const elapsed of [0, 4, 8, 12]) {
+        const at = x(elapsed);
+        els.push(
+          pt(v(at, 0), undefined, "n", "a"),
+          txt(v(at, 0.12), tl(interest(elapsed)), "n", { tone: "ink", small: true }),
+          txt(v(at, -0.1), `${elapsed} ay`, "s", { tone: "ink", small: true }),
+        );
+      }
+      els.push(...pad(-0.9, 1.1, x(12) + 0.9, -0.95));
+      return {
+        els,
+        readout: [
+          `${m} ay = ${m}/12 yıl. Faiz = ${tl(interest(m))}.`,
+          `Son tutar = ${tl(principal)} + ${tl(interest(m))} = ${tl(principal + interest(m))}.`,
+          "Basit faizde her ay 30 TL eklenir. Faize yeniden faiz işletilmez.",
+        ],
+      };
+    }
     const els: El[] = [];
     for (let i = 0; i < 12; i++) els.push(rect(i * 0.7, 0, 0.62, 0.9, i < m ? "a" : "muted", i < m));
     els.push(txt(v(0, 1.1), "1 yıl = 12 ay", "ne", { tone: "muted", small: true }));
@@ -101,6 +127,48 @@ const netFill: FigureDef = {
     els.push(txt(v(4.7, Math.max(0.3, (t / 18) * 4)), `${t}/18`, "e", { tone: "ink", bold: true }));
     els.push(...pad(-2.4, 5.2, 8.6, -0.8));
     return { els, readout: [`Net 1/18 tank/saat; ${t} saatte ${t}/18 = %${nf((100 * t) / 18, 1)} dolu.`, "Çıkışın sabit debisi su varken geçerlidir."] };
+  },
+};
+
+export const delayedInlet: FigureDef = {
+  caption: "İlk iki saatte yalnız A açık. B açılınca doluluk grafiği dikleşir. Sürgüyle zamanı değiştirip iki evrenin sürelerini ayrı oku.",
+  alt: "Yatay eksende geçen saat ve düşey eksende tank payı. Doluluk doğrusu B'nin açıldığı 2. saatte yön değiştirir ve 6,8. saatte tankın tamamına ulaşır.",
+  param: { label: "Geçen süre", min: 0, max: 6.8, step: 0.2, init: 2, unit: " saat" },
+  draw: (t) => {
+    const starts = 2;
+    const rateA = 1 / 10;
+    const rateB = 1 / 15;
+    const firstShare = starts * rateA;
+    const secondDuration = (1 - firstShare) / (rateA + rateB);
+    const end = starts + secondDuration;
+    const share = Math.min(1, t * rateA + Math.max(0, t - starts) * rateB);
+    const x = (hour: number) => hour * 1.02;
+    const y = (fraction: number) => fraction * 4.2;
+    const secondStart = v(x(starts), y(firstShare));
+    return {
+      els: [
+        vec(v(0, 0), v(x(7.45), 0), { tone: "ink" }),
+        vec(v(0, 0), v(0, y(1.16)), { tone: "ink" }),
+        txt(v(x(7.45), 0), "saat", "se", { small: true }),
+        txt(v(0, y(1.16)), "tank payı", "n", { small: true }),
+        txt(v(0, y(1)), "1", "w", { small: true }),
+        txt(v(0, y(firstShare)), "1/5", "w", { small: true }),
+        seg(v(0, y(1)), v(x(end), y(1)), { tone: "muted", dash: true }),
+        seg(v(0, 0), secondStart, { tone: "b", bold: true }),
+        seg(secondStart, v(x(end), y(1)), { tone: "c", bold: true }),
+        txt(v(x(starts), 0), "2", "s", { small: true }),
+        txt(v(x(end), 0), nf(end, 1), "s", { small: true }),
+        txt(secondStart, "B açılır", "ne", { tone: "ink", small: true }),
+        seg(v(x(t), 0), v(x(t), y(share)), { tone: "muted", dash: true }),
+        pt(v(x(t), y(share)), undefined, "n", "a"),
+      ],
+      readout: [
+        `${nf(t, 1)} saat geçti. Tank %${nf(100 * share, 1)} dolu.`,
+        "İlk 2 saat: 2 × 1/10 = 1/5 tank. Kalan 4/5.",
+        `İkinci hız 1/10 + 1/15 = 1/6 tank/saat. 4/5 ÷ 1/6 = ${nf(secondDuration, 1)} saat.`,
+        `Toplam 2 + ${nf(secondDuration, 1)} = ${nf(end, 1)} saat. 6 saat 48 dakika.`,
+      ],
+    };
   },
 };
 

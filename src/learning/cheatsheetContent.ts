@@ -479,17 +479,25 @@ export const builtInCheatSheets = new Map<string, CheatSheet>(
 export function studyCheatSheet(topicId: string): CheatSheet | undefined {
   const sheet = builtInCheatSheets.get(topicId);
   const lessonId = sheet?.lessonId;
-  const supplement = lessonId ? tytTheorySupplements[lessonId] : undefined;
-  if (sheet && supplement) {
-    const { title, figureTitle, summary, appendSection } = supplement;
-    const sections = appendSection
-      ? [...sheet.sections, { title, figureTitle, text: [summary] }]
-      : sheet.sections.map((section) =>
-          section.title === title
-            ? { ...section, text: [...section.text, summary], figureTitle }
-            : section
-        );
-    return { ...sheet, sections };
+  const supplements = lessonId ? tytTheorySupplements[lessonId] : undefined;
+  if (sheet && supplements) {
+    let sections = sheet.sections;
+    let examples = sheet.examples;
+    for (const { title, figureTitle, summary, appendSection, sheetTitle = title, workedStep } of supplements) {
+      sections = appendSection
+        ? [...sections, { title, figureTitle, text: [summary] }]
+        : sections.map((section) => section.title === sheetTitle
+          ? { ...section, text: [...section.text, summary], figureTitle }
+          : section);
+      if (workedStep) {
+        examples = examples.map((example) => example.title === workedStep.title
+          ? { ...example, stepFigures: example.steps.map((_, index) => index === workedStep.index
+            ? figureTitle
+            : example.stepFigures?.[index]) }
+          : example);
+      }
+    }
+    return { ...sheet, sections, examples };
   }
   if (!lessonId || !["enerji-ve-hareket", "isi-ve-sicaklik", "hal-degisimi", "donusum-oteleme-donme", "durgun-elektrik", "elektrik-akimi", "basinc", "sivilarin-kaldirma-kuvveti", "dalgalara-giris", "yay-dalgalari", "su-dalgalari", "ses-deprem-dalgalari"].includes(lessonId)) return sheet;
   const guide = studyGuide(lessonId);
