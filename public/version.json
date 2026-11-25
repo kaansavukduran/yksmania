@@ -1,8 +1,8 @@
 {
-  "version": "0.185.0",
+  "version": "0.186.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Newton kuvvetlerini iki eksende topla, aynı bürette iki okumanın farkını al ve eşit enerjide iki sıvının sıcaklık değişimini grafikle karşılaştır.",
-    "en": "Separate force sums by axis, subtract two readings on one burette, and compare temperature change for two liquids receiving the same energy."
+    "tr": "Kuvvet–konum grafiğinde net işi hesapla, aynı enerji farkını iki geçiş yolunda gör ve glikozun toplam miktarıyla net oluşumu ayır.",
+    "en": "Calculate signed work, compare two paths between energy levels, and distinguish final glucose amount from net change."
   }
 }

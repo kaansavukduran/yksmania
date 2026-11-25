@@ -1,3 +1,4 @@
+import { glucoseSource005 } from "./glucoseSource005";
 import { germinationSource002, germinationTotal } from "./germinationSource002";
 import type { GuideSection } from "./guides/types";
 import { signedBinomial035 } from "./signedBinomialSource035Model";
@@ -18,6 +19,41 @@ interface TheorySupplement {
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "enerji-ve-hareket": [{
+    title: "Net kuvvet grafiğinden son kinetik enerjiyi bul",
+    figureTitle: "Net kuvvet grafiğinden son kinetik enerjiyi bul",
+    paragraphs: [
+      "Yatay eksen konumu metre, düşey eksen net kuvveti newton cinsinden gösterir. 0–2 m arasında 6 N ile iş 12 J. 2–4 m arasında kuvvet doğrusal olarak sıfıra düştüğünde üçgen alanı 6 J.",
+      "4–5 m arasında kuvvet −2 N, iş −2 J. Net iş 12+6−2=16 J ve kinetik enerjideki değişime eşit. Başlangıç 10 J ise son değer 26 J. Eksen altındaki alanı pozitif almak 30 J sonucuna götürür.",
+    ],
+    summary: "Kuvvet–konum grafiğinde işaretli alanlar 12, 6 ve −2 J. Net iş 16 J. Başlangıç 10 J ise son kinetik enerji 26 J.",
+    appendSection: true,
+  }],
+  "atom-modelleri": [{
+    title: "Aynı enerji farkını iki geçiş yolunda karşılaştır",
+    figureTitle: "Aynı enerji farkını iki geçiş yolunda karşılaştır",
+    paragraphs: [
+      "Bu çizimde A=0, B=4 ve C=8 göreli enerji birimi. C’den A’ya tek geçişte 8 birim salınır. C’den B’ye 4, B’den A’ya 4 birim salınır. Ara düzey iki çıkarma işleminde birbirini götürür: (8−4)+(4−0)=8.",
+      "Aynı başlangıç ve bitiş toplam enerji farkını belirler. Tek aşamalı ve iki aşamalı geçiş farklı sayıda ışık paketiyle gerçekleşir. Merdiven aralıkları bu öğretim modeline ait. Gerçek bir atoma aynı sayıları atama.",
+    ],
+    summary: "C→A: bir geçiş, 8 birim. C→B→A: iki geçiş, 4+4=8 birim. Yolu değiştirince geçiş sayısı değişir, toplam fark aynı kalır.",
+    appendSection: true,
+  }],
+  "karbohidratlar": [{
+    title: "Glikozun toplam miktarı ile artışını ayır",
+    figureTitle: "Glikozun toplam miktarı ile artışını ayır",
+    paragraphs: [
+      "Bu veriler varsayımsal. Başlangıçta 3 birim glikoz vardı. Dördüncü dakikada toplam 11 birim olduğunda net artış 11−3=8 birim, ortalama hız 8/4=2 birim/dakika.",
+      "Dört ile altıncı dakika arasında net değişim 0. Bunun nedeni yalnız bu grafikten belirlenemez. Enzim etkinliği, substrat miktarı ve ölçüm koşulları gibi ek bilgilere ihtiyaç vardır.",
+    ],
+    summary: "İlk dört dakikada son toplam 11, yeni oluşan net miktar 8, ortalama hız 2 birim/dakika. Son iki dakikada net artış 0.",
+    table: {
+      headers: ["Zaman (dk)", "Glikoz (birim)"],
+      rows: glucoseSource005.map(({ minute, amount }) => [String(minute), String(amount)]),
+      layout: "table",
+    },
+    appendSection: true,
+  }],
   "newton": [{
     title: "Yatay ve düşey kuvvetleri ayrı topla",
     figureTitle: "Yatay ve düşey kuvvetleri ayrı topla",

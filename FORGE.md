@@ -854,9 +854,9 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
 | TYT Matematik | 45 / 45 | 45 · 204 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
 | TYT Geometri | 19 / 19 | 19 · 194 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 287 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
-| TYT Kimya | 55 / 55 | 55 · 225 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
-| TYT Biyoloji | 36 / 36 | 36 · 158 | 515 / 515 · %100,00 | 11 / 36 · %30,56 | 54 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 288 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Kimya | 55 / 55 | 55 · 226 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
+| TYT Biyoloji | 36 / 36 | 36 · 159 | 515 / 515 · %100,00 | 11 / 36 · %30,56 | 54 soru · 9 kitapçık | 0 |
 | TYT Tarih | 24 / 24 | 24 · 92 | 390 / 390 · %100,00 | 8 / 24 · %33,33 | 45 soru · 9 kitapçık | 0 |
 | TYT Coğrafya | 40 / 40 | 40 · 175 | 400 / 400 · %100,00 | 9 / 40 · %22,50 | 45 soru · 9 kitapçık | 0 |
 | TYT Felsefe | 17 / 17 | 17 · 69 | 190 / 190 · %100,00 | 5 / 17 · %29,41 | 89 soru · 9 kitapçık | 0 |
@@ -867,7 +867,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2385** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2388** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
@@ -3873,3 +3873,11 @@ Hız grafiğinde dördüncü saniyedeki yön değişimi işaretleniyor. Dört al
 Kutu üzerindeki dört kuvvet yönleriyle çizildi. Yatay ve düşey bileşkeler ayrı hesaplanıyor. Büret şeması aynı ölçekte iki okumayı ve aralarındaki hacmi gösteriyor. Biyolojide iki sıvının sıcaklık artışı tek bir enerji girdisinden hesaplanıyor.
 
 Normal ders ve ayrı Kopya Kağıdı beş Chromium senaryosunda çevrimdışı doğrulandı. TypeScript, 24 hedefli birim, dokuz çizim yerleşimi ve 323 çevrimdışı varlık geçti. Bölüm figürü denetimi başlık eşleşmesini öğrencinin açtığı gerçek ders rehberinde sınar. Ham katalog baytları korundu.
+
+## 0.186.0 adayı · İş, enerji düzeyi ve glikoz miktarı
+
+Kuvvet–konum grafiğindeki üç iş bölgesi 12, 6 ve −2 J verir. Kinetik enerji 10 J’den 26 J’ye çıkar. Aynı iki düzey arasında tek geçişle 8, ara düzey üzerinden 4+4 birim salınır. Glikoz çizgisi ve veri tablosu 11 birim toplam ile ilk dört dakikadaki 8 birim artışı ayırır.
+
+İlk dar ekran denetiminde iki grafiğin etiketleri çakıştı. Etiketler aynı veri bölgelerinde yeniden yerleştirildi. TypeScript, 24 hedefli birim, beş Chromium akışı, dokuz çizim yerleşimi ve 323 çevrimdışı varlık geçti. Ham katalog baytları korundu.
+
+0.185.0 üzerinde 24 Fizik, 55 Kimya ve 36 Biyoloji konusu 320 pikselde 230 çevrimdışı rotada açıldı. Her konuda anlatım, video bağlantısı ve örnek, ayrı Kopya Kağıdında çözüm sınandı. 15 güncel kaynak PDF’nin 285 fiziksel sayfası ilk beş Fen partisi için incelendi. Arşivdeki açık öğretim maddeleri takip ediliyor.

@@ -1839,3 +1839,66 @@ test("A shared energy value drives both specific heat bars", async ({ page, cont
   }
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("A force position graph gives signed work and final kinetic energy", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Net kuvvet grafiğinden son kinetik enerjiyi bul");
+  for (const route of ["/#/lesson?id=enerji-ve-hareket", "/#/cheatsheets?topic=detail-118"]) {
+    await page.goto(route);
+    await expect(model.getByRole("img")).toBeVisible();
+    const next = model.getByRole("button", { name: "İleri", exact: true });
+    await next.press("Enter");
+    await expect(model).toContainText("İşler 12, 6, −2 J. Net iş 16 J.");
+    await next.press("Enter");
+    await expect(model).toContainText("Son kinetik enerji 10 + 16 = 26 J.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Two energy paths have equal totals and different transition counts", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Aynı enerji farkını iki geçiş yolunda karşılaştır");
+  for (const route of ["/#/lesson?id=atom-modelleri", "/#/cheatsheets?topic=detail-143"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Yayılan birim: 8. Toplam 8.");
+    await expect(model).toContainText("Geçiş sayısı 1.");
+    const original = await model.getByRole("img").innerHTML();
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("Yayılan birim: 4 + 4. Toplam 8.");
+    await expect(model).toContainText("Geçiş sayısı 2.");
+    expect(await model.getByRole("img").innerHTML()).not.toBe(original);
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Glucose observations retain baseline, interval rate and data table", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Glikozun toplam miktarı ile artışını ayır");
+  const table = page.getByRole("table").filter({ has: page.getByRole("columnheader", { name: "Glikoz (birim)", exact: true }) });
+  for (const route of ["/#/lesson?id=karbohidratlar", "/#/cheatsheets?topic=detail-5"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Net artış 11 − 3 = 8 birim. Ortalama hız 8 ÷ 4 = 2 birim/dakika.");
+    await expect(table.getByRole("row")).toHaveCount(5);
+    for (const [index, values] of [["0", "3"], ["2", "7"], ["4", "11"], ["6", "11"]].entries()) {
+      const cells = table.getByRole("row").nth(index + 1).getByRole("cell");
+      await expect(cells).toHaveCount(2);
+      for (const [column, value] of values.entries()) await expect(cells.nth(column)).toHaveAccessibleName(value);
+    }
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("Net artış 11 − 11 = 0 birim. Ortalama hız 0 ÷ 2 = 0 birim/dakika.");
+    await expect(model).toContainText("Nedenini belirlemek için başka bilgi gerekir.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
