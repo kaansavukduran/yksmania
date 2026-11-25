@@ -1134,6 +1134,73 @@ const eslikBenzerlik: Record<string, FigureDef> = {
       };
     },
   },
+  "Arada olmayan açı iki üçgene izin verebilir": {
+    caption: "AB = 5 birim ve B açısı 30° sabit. AC uzunluğu, A merkezli çemberin yarıçapıdır. C ancak çember ile B’den çıkan ışının B dışındaki kesişiminde olabilir.",
+    alt: "B’den çıkan yatay kenar ve 30 derece eğimli ışın. A merkezli çember ve A’dan ışına inen dikme. Çemberin izin verdiği C noktaları ışın üzerinde gösterilir.",
+    param: {label: "AC uzunluğu", min: 2, max: 5.5, step: 0.5, init: 4, unit: "birim"},
+    draw: (radius) => {
+      const B = v(0, 0);
+      const A = v(5, 0);
+      const along = pol(1, 30);
+      const H = foot(A, B, along);
+      const height = dist(A, H);
+      const projected = dist(B, H);
+      const delta = radius ** 2 - height ** 2;
+      const candidates = delta < -1e-9 ? [] : Math.abs(delta) < 1e-9
+        ? [projected]
+        : [projected - Math.sqrt(delta), projected + Math.sqrt(delta)].filter((value) => value > 1e-9);
+      const els: El[] = [
+        ray(B, pol(11, 30), {thin: true}),
+        seg(A, B),
+        seg(A, H, {tone: "muted", dash: true}),
+        right(H, B, A),
+        circle(A, radius, {tone: "a", thin: true}),
+        ang(B, A, along, undefined, {tone: "b", r: 28}),
+        pt(A, "A", "s"), pt(B, "B", "sw"), pt(H, "H", "n", "muted"),
+      ];
+      for (const [index, length] of candidates.entries()) {
+        const C = mul(along, length);
+        const tone = index === 0 ? "c" : "b";
+        const name = candidates.length === 1 ? "C" : index === 0 ? "C₁" : "C₂";
+        els.push(seg(A, C, {tone}), pt(C, name, index === 0 ? "nw" : "ne", tone));
+      }
+      const verdict = ["Üçgen kurulamaz.", "Tek üçgen kurulur.", "İki farklı üçgen kurulur."][candidates.length];
+      return {
+        els,
+        readout: [
+          `AB = 5 ve ∠B = 30°. Dik uzaklık AH = ${fmt(height)} birim. AC = ${fmt(radius)} birim.`,
+          verdict,
+          ...(candidates.length ? [`Olası BC uzunlukları: ${candidates.map((length) => fmt(length, 2)).join(" ve ")} birim.`] : []),
+        ],
+      };
+    },
+  },
+  "Üç kenarı eşleştir, ölçeği ayır": {
+    caption: "İkinci üçgenin yönü ters. Üç karşılıklı kenar aynı uzunluktayken eşlik vardır. İkinci üçgenin bütün uzunluklarını aynı oranda değiştirince açıları kalır, boyutu değişir.",
+    alt: "Birbirine bakan iki dik üçgen. A, B ve C, sırasıyla D, E ve F ile eşleşir. İkinci üçgenin boyutu iki adım arasında değişir.",
+    steps: ["Üç kenar aynı", "Her kenar 1,5 kat"],
+    draw: (_, step) => {
+      const A = v(0, 0), B = v(6, 0), C = v(0, 8);
+      const scale = step === 0 ? 1 : 1.5;
+      const D = v(18, 0);
+      const convert = ([x, y]: V) => v(D[0] - scale * x, D[1] + scale * y);
+      const E = convert(B), F = convert(C);
+      const first = [dist(A, B), dist(A, C), dist(B, C)];
+      const second = [dist(D, E), dist(D, F), dist(E, F)];
+      return {
+        els: [
+          tri(A, B, C, "a"), tri(D, E, F, "c"),
+          right(A, B, C), right(D, E, F),
+          pt(A, "A", "sw"), pt(B, "B", "se"), pt(C, "C", "nw"),
+          pt(D, "D", "se"), pt(E, "E", "sw"), pt(F, "F", "ne"),
+        ],
+        readout: [
+          `AB, AC, BC: ${first.map((n) => fmt(n)).join(" · ")}. DE, DF, EF: ${second.map((n) => fmt(n)).join(" · ")}.`,
+          scale === 1 ? "ABC ≅ DEF. Üç karşılıklı kenar eşit." : "ABC ∼ DEF. Boyut oranı 1,5 olduğu için eş değiller.",
+        ],
+      };
+    },
+  },
   "Benzerliği hangi veriler kanıtlar?": {
     caption:
       "Kum saati görünümünde O'daki ters açılar yalnız bir çift eşit açı verir. AB ∥ DC verildiğinde iç ters açılar ikinci çifti sağlar ve AA benzerliği kurulur.",
@@ -1255,37 +1322,43 @@ const eslikBenzerlik: Record<string, FigureDef> = {
   },
   "Uzunluk k iken alan neden k²?": {
     caption:
-      "Kenarları üçe bölünen üçgen 9 eş küçük üçgene ayrılır. t = 2/3 olan üst üçgen bunların 4'ünü kapsar: alan oranı (2/3)² = 4/9, kalan yamuk 5/9.",
-    alt: "Kenarları üç eş parçaya bölünmüş üçgen, kenarlara paralel çizgilerle dokuz eş küçük üçgene ayrılmış; üstteki dört küçük üçgen boyalı.",
-    draw: () => {
+      "Paralel kesitin üstündeki küçük üçgende kenar ve yükseklik aynı oranda değişir. Küçük üçgenin kapladığı birimleri say. Kalan yamuğun alanı, bütün alan eksi küçük üçgenin alanıdır.",
+    alt: "Kenarlarına paralel çizgilerle eş küçük üçgenlere ayrılan büyük üçgen. Üstteki küçük üçgen boyalı. İkinci adımda 25 birimden 9’u boyalı.",
+    steps: ["2/3 uzunluk", "3/5 uzunluk ve kalan 64 birim²"],
+    draw: (_, step) => {
+      const divisions = step === 0 ? 3 : 5;
+      const small = step === 0 ? 2 : 3;
       const A = v(3, 3 * Math.sqrt(3));
       const B = v(0, 0);
       const C = v(6, 0);
       const g = (i: number, j: number): V =>
-        // i steps from A toward B, j steps from A toward C (thirds).
-        add(add(A, mul(sub(B, A), i / 3)), mul(sub(C, A), j / 3));
+        add(add(A, mul(sub(B, A), i / divisions)), mul(sub(C, A), j / divisions));
       const cells: El[] = [];
-      for (let i = 0; i < 3; i++)
-        for (let j = 0; i + j < 3; j++) {
+      for (let i = 0; i < divisions; i++)
+        for (let j = 0; i + j < divisions; j++) {
           const up = [g(i, j), g(i + 1, j), g(i, j + 1)];
-          cells.push(poly(up, { fill: i + j < 2 ? "a" : undefined, thin: true }));
-          if (i + j < 2) {
+          cells.push(poly(up, { fill: i + j < small ? "a" : undefined, thin: true }));
+          if (i + j < divisions - 1) {
             const down = [g(i + 1, j), g(i + 1, j + 1), g(i, j + 1)];
-            cells.push(poly(down, { fill: i + j < 1 ? "a" : undefined, thin: true }));
+            cells.push(poly(down, { fill: i + j < small - 1 ? "a" : undefined, thin: true }));
           }
         }
       return {
         els: [
           ...cells,
           tri(A, B, C),
-          seg(g(2, 0), g(0, 2), { tone: "a", bold: true }),
+          seg(g(small, 0), g(0, small), { tone: "a", bold: true }),
           pt(A, "A", "n"),
           pt(B, "B", "sw"),
           pt(C, "C", "se"),
-          pt(g(2, 0), "D", "w", "a"),
-          pt(g(0, 2), "E", "e", "a"),
+          pt(g(small, 0), "D", "w", "a"),
+          pt(g(0, small), "E", "e", "a"),
         ],
-        readout: ["Uzunluk oranı 2/3 ⇒ alan oranı 4/9", "Yamuk DBCE: 5/9"],
+        readout: [
+          `Uzunluk oranı ${small}/${divisions} ⇒ alan oranı ${small ** 2}/${divisions ** 2}`,
+          `Yamuk DBCE: ${divisions ** 2 - small ** 2}/${divisions ** 2}`,
+          ...(step === 1 ? ["Yamuk 64 birim² ise bütün 64 ÷ (16/25) = 100 birim², üst üçgen 36 birim²."] : []),
+        ],
       };
     },
   },
@@ -1476,35 +1549,40 @@ const ucgenMerkezleri: Record<string, FigureDef> = {
     },
   },
   "Kenarortay uzunluğu ve dik üçgendeki özel hâl": {
-    caption:
-      "a = 6, b = 7, c = 5 için 4mₐ² = 2·49 + 2·25 − 36 = 112. Kenarortay AM ile yükseklik AH aynı köşeden çıksa da farklı parçalardır.",
-    alt: "BC = 6, CA = 7, AB = 5 olan üçgen; A'dan BC'nin orta noktası M'ye kenarortay ve A'dan BC'ye dik inen yükseklik.",
-    draw: () => {
+    caption: "AB=7 ve AC=9 sabit. BC’yi değiştirip orta noktaya giden AM ile dik inen AH’yi karşılaştır.",
+    alt: "ABC üçgeni. A’dan tabanın orta noktası M’ye kenarortay, taban doğrusundaki H’ye kesikli dikme çizilmiş. M’de iki eş parça işareti var.",
+    param: { label: "BC tabanı", min: 4, max: 14, step: 2, init: 8, unit: " birim" },
+    draw: (base) => {
       const B = v(0, 0);
-      const C = v(6, 0);
-      const A = fromSides(6, 5, 7)!;
+      const C = v(base, 0);
+      const A = fromSides(base, 7, 9)!;
       const M = mid(B, C);
       const H = foot(A, B, C);
+      const median = dist(A, M);
+      const height = dist(A, H);
+      const square = (2 * 7 ** 2 + 2 * 9 ** 2 - base ** 2) / 4;
       return {
         els: [
           tri(A, B, C),
+          ...(H[0] < 0 ? [seg(H, B, { tone: "muted", dash: true })] : []),
           seg(A, M, { tone: "a" }),
           seg(A, H, { tone: "b", dash: true }),
           right(H, C, A, "b"),
           ticks(B, M, 1, "a"),
           ticks(M, C, 1, "a"),
-          dim(B, A, "5", C),
-          dim(A, C, "7", B),
-          // H (x = 1) and M (x = 3) are labelled under BC, so BC's length
-          // goes under the free right half; the ticks show BM = MC.
-          txt(mid(M, C), "MC = 3", "s", { tone: "muted", small: true }),
+          dim(B, A, "7", C),
+          dim(A, C, "9", B),
           pt(A, "A", "n"),
           pt(B, "B", "sw"),
           pt(C, "C", "se"),
           pt(M, "M", "s", "a"),
-          pt(H, "H", "s", "b"),
+          pt(H, "H", "nw", "b"),
         ],
-        readout: [`BC = 6, BM = MC = 3 · mₐ = √28 ≈ ${fmt(dist(A, M), 2)}`, `hₐ ≈ ${fmt(dist(A, H), 2)}`],
+        readout: [
+          `BM = MC = ${base / 2} birim`,
+          `AM² = (2·7² + 2·9² − ${base}²)/4 = ${square}`,
+          `AM ${Number.isInteger(Math.sqrt(square)) ? "=" : "≈"} ${fmt(median, 2)} birim, AH ≈ ${fmt(height, 2)} birim`,
+        ],
       };
     },
   },

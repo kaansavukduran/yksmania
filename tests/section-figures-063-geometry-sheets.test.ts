@@ -84,6 +84,8 @@ describe("Forge063 TYT Geometri kopya kâğıdı figürleri", () => {
     const inc = fig("tyt-geo-ucgen-merkezleri-031", "İç merkez I: kenarlara eş dik uzaklık");
     expect(read(inc, 0, 1)).toContain("4 · 24 = 96");
     expect(read(inc, 0, 2)).toContain("rₐ = 24");
+    expect(read(inc, 0, 3)).toContain("r = S / s = 2 birim");
+    expect(read(inc, 0, 4)).toContain("BC’ye teğet noktası (2,4; 4,8)");
     const sym = fig("tyt-geo-ucgen-merkezleri-031", "Simetri ne zaman çizgileri ve merkezleri birleştirir?");
     expect(read(sym, 60)).toContain("I = G = O = H");
     expect(read(sym, 90)).toContain("O ≈ 0");

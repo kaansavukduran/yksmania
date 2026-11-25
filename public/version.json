@@ -1,8 +1,8 @@
 {
-  "version": "0.155.0",
+  "version": "0.160.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Bölünme koşullarında ortak katı tabloyla bul. Dış açıortayın tabanla ilişkisini üç farklı kenar durumunda incele.",
-    "en": "Compare joint divisibility conditions and three different external angle bisectors."
+    "tr": "Mutlak Değer’de iki noktaya uzaklık toplamının sabit kaldığı aralığı keşfet. Üçgende Benzerlik’te 25 eş parçanın alan paylarını karşılaştır.",
+    "en": "Explore constant sums of distances and use 25 equal units to find areas in similar triangles."
   }
 }

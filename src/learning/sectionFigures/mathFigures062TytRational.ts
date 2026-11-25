@@ -39,6 +39,40 @@ const equivalent: FigureDef = {
   },
 };
 
+const signedOrder: FigureDef = {
+  caption: "Sayı doğrusu çeyrek birimlere ayrılmıştır. İşaretleri değiştirince iki nokta sıfıra göre yansır. Sıfıra uzaklıklar aynı kalır, sayıların sırası değişir.",
+  alt: "Sıfırın iki yanında çeyrek birim işaretleri bulunan yatay eksende yarım ve üç çeyrek noktaları. İki noktanın sıfıra uzaklığı ayrı çizgilerle gösterilir.",
+  steps: ["Negatif kesirler", "Pozitif karşıtları"],
+  draw: (_, step) => {
+    const sign = step === 0 ? -1 : 1;
+    const threeQuarters = 3 * sign;
+    const half = 2 * sign;
+    const a = frac(threeQuarters, 4);
+    const b = frac(half, 4);
+    const els: El[] = [
+      vec(v(-4.4, 0), v(4.5, 0), {tone: "ink", thin: true}),
+      ...Array.from({length: 9}, (_, i) => i - 4).map((x) =>
+        seg(v(x, -0.12), v(x, 0.12), {tone: "muted", thin: true})
+      ),
+      txt(v(-4, -0.22), "−1", "s"), txt(v(0, -0.22), "0", "s"), txt(v(4, -0.22), "1", "s"),
+      pt(v(threeQuarters, 0), a, "n", "a"),
+      pt(v(half, 0), b, "s", "c"),
+      seg(v(threeQuarters, -1.1), v(0, -1.1), {tone: "a"}),
+      seg(v(half, -1.8), v(0, -1.8), {tone: "c"}),
+      txt(v(threeQuarters / 2, -1.1), "3/4", "s", {tone: "a"}),
+      txt(v(half / 2, -1.8), "1/2", "s", {tone: "c"}),
+      ...pad(-4.7, 1.05, 4.7, -2.4),
+    ];
+    return {
+      els,
+      readout: [
+        `${a} ${threeQuarters < half ? "<" : ">"} ${b}.`,
+        "Sıfıra uzaklıklar 3/4 ve 1/2 birimdir. Sayının büyüklüğünü eksende sağda kalan nokta belirler.",
+      ],
+    };
+  },
+};
+
 const SUM_STEPS = ["1/2 ve 1/3", "Altılık parçalara çevir", "Parçaları say: 5/6", "2/5 neden olamaz?"];
 const commonParts: FigureDef = {
   caption:
@@ -333,6 +367,7 @@ const growth: FigureDef = {
 export const mathFigures062TytRational: Record<string, Record<string, FigureDef>> = {
   "tyt-mat-rasyonel-kaynak-035": {
     "Denk kesirler aynı noktaya ulaşır": equivalent,
+    "Negatif noktaları uzaklıklarıyla karıştırma": signedOrder,
     "Toplamak için aynı büyüklükte parça üret": commonParts,
     "Bölme kaç tane birim sığdığını sorar": measure,
     "Aynı karşılaştırmayı üç ayrı kanıtla kur": missing,

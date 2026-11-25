@@ -1693,7 +1693,7 @@ const packs031: FoundationPack031[] = [
     title: "Üçgenlerde eşlik ve benzerlik: eşleme, ölçek ve paralellik",
     minutes: 47,
     source:
-      "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir. Eşkenar Üçgen 5.1, fiziksel s. 1 ve 4: eş yükseklikli alan şeritleri.",
+      "Kenar-Açı-Kenar Eşliği 5.1 fiziksel s. 2, arada olmayan açı karşı örneği. Açı-Kenar-Açı ve Kenar-Kenar-Kenar Eşliği 5.1 fiziksel s. 2 ve 8. Üçgende Benzerlik 5.1 fiziksel s. 4 ve 5. MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Sorular resmî sınav sorusu değildir. Eşkenar Üçgen 5.1, fiziksel s. 1 ve 4: eş yükseklikli alan şeritleri.",
     objectives: [
       "Karşılıklı köşeleri belirterek eşlik ve benzerliği ayır.",
       "KKK, KAK, AKA eşlik ve AA, KAK, KKK benzerlik koşullarını gerekçelendir.",
@@ -1748,6 +1748,7 @@ const packs031: FoundationPack031[] = [
         paragraphs: [
           "Benzerlik oranı yeni/eski=k ise her kenar, çevre, yükseklik, kenarortay ve açıortay uzunluğu k ile çarpılır. Alan taban×yükseklik/2 olduğundan iki bağımsız uzunluk da k ile değişir; alan k² ile çarpılır. Hacim sorularında benzer cisim için k³ gerekir, fakat bu ünite düzlem üçgenleri üzerinde çalışır.",
           "Alan oranı 9/25 ise aynı yöndeki pozitif uzunluk oranı 3/5’tir. DE∥BC modelinde t=2/3 için üst üçgenin alanı ana alanın 4/9’u, kalan yamuğun alanı 5/9’udur. Yamuğun alanını doğrudan t ile çarpmak şekillerin hangisinin benzer olduğunu unutmaya yol açar.",
+          "Üst üçgenin uzunluk oranı 3/5 ise alan payı 9/25, kalan yamuğun payı 16/25 olur. Yamuk 64 birim² verildiğinde bütün alan 64 ÷ (16/25)=100 birim² ve üst kısım 36 birim² çıkar. Şekilde boyalı 9 birimin yanındaki 16 birim yamuğu temsil eder.",
         ],
       },
       {
@@ -1763,6 +1764,20 @@ const packs031: FoundationPack031[] = [
         paragraphs: [
           "Eşkenar üçgende tabana paralel kesimler yüksekliği tepeden itibaren üç eş parçaya ayırsın. Tepeden birinci ve ikinci kesime kadar olan şekiller, büyük üçgene sırasıyla 1/3 ve 2/3 uzunluk oranıyla benzerdir. Yükseklik oranı kadar taban oranı da değişir. Bu yüzden biriken alan payları 1/9, 4/9 ve 1 olur.",
           "Şerit alanı bulmak için iki biriken alanı çıkar. Baştan sona eş yükseklikli üç şeridin alan payları 1/9, 3/9 ve 5/9’dur. En alttaki şerit daha geniş tabanlara yayıldığı için en büyüktür. Eğer kesimler paralel değilse önce benzerliğin geçerli olup olmadığını kontrol et.",
+        ],
+      },
+      {
+        title: "Arada olmayan açı iki üçgene izin verebilir",
+        paragraphs: [
+          "AB=5 ve ∠B=30° iken C’nin yeri B’den 30° ile çıkan ışın üzerindedir. AC=4 şartı C’yi A merkezli, yarıçapı 4 olan çemberin üzerine koyar. Çember ışını iki yerde keser. Bu iki üçgende AB, AC ve B açısı aynı olsa da BC uzunlukları farklıdır.",
+          "A’dan ışına indirilen dikme 5·sin 30°=2,5 birimdir. AC daha kısaysa kesişim yoktur. AC=2,5’te çember ışına bir kez teğet olur. AC=4’te iki kesişimi de görürsün. AC=5 olduğunda kesişimlerden biri B’nin kendisidir ve üçgen oluşturmaz.",
+        ],
+      },
+      {
+        title: "Üç kenarı eşleştir, ölçeği ayır",
+        paragraphs: [
+          "6, 8 ve 10 birimlik iki üçgenin karşılıklı kenarları eşleşirse yönleri ters olsa da KKK eşliği vardır. A ile D, B ile E, C ile F karşılıklıysa AB ile DE, AC ile DF, BC ile EF aynı çiftlerdir.",
+          "İkincide uzunluklar 9, 12 ve 15 olursa her oran 3/2 çıkar. Karşılıklı açılar ve üçgenin biçimi korunur. Uzunlukların aynı olması şartı sağlanmadığı için bu durumda KKK benzerliği vardır.",
         ],
       },
     ],
@@ -2120,7 +2135,7 @@ const packs031: FoundationPack031[] = [
     title: "Üçgende yardımcı elemanlar: açıortay, kenarortay ve merkezler",
     minutes: 55,
     source:
-      "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Açıortay 5.1 fiziksel s. 2 ve 5: dış açıortay koşulları. Sorular resmî sınav sorusu değildir.",
+      "MEBİ TYT Matematik Konu Özetleri: üçgenlerde eşlik, benzerlik, yardımcı elemanlar ve dik üçgen seçili sayfaları; Aurelia TYT Geometri özetindeki ilgili ilişkilerle karşılaştırılarak hazırlanmış özgün anlatım, örnek ve sorular. Açıortay 5.1 fiziksel s. 2 ve 5: dış açıortay koşulları. Kenarortay 5.1 fiziksel s. 2 ve 5: Apollonius bağıntısı. Üçgende Merkezler 5.2 fiziksel s. 6 ve 7: iç ve dış teğet çemberler. Sorular resmî sınav sorusu değildir.",
     objectives: [
       "Açıortay, kenarortay, yükseklik ve orta dikmenin farklı tanımlarını ayır.",
       "İç ve dış açıortay oranlarını noktanın konumuyla uygula.",
@@ -2162,6 +2177,8 @@ const packs031: FoundationPack031[] = [
         paragraphs: [
           "Üç iç açıortay üçgenin içinde tek bir I noktasında kesişir. I’nın üç kenarın doğrularına dik uzaklıkları eşittir; bu ortak r uzaklığı iç teğet çemberin yarıçapıdır. Köşelere olan IA,IB,IC uzaklıklarının eşit olması gerekmez.",
           "BIC üçgeninde B ve C açıları ana üçgendeki açıların yarılarıdır. Bu yüzden ∠BIC=180°−(B+C)/2=90°+A/2 olur. A’nın karşısındaki dış teğet çember merkezi Iₐ, B ve C’nin dış açıortaylarının uygun kesişimidir; ∠BIₐC=90°−A/2 olur. İç merkezle dış merkezdeki artı–eksi işaretlerini ayrı düşün.",
+          "ABC dik üçgeninde A=(0; 0), B=(6; 0), C=(0; 8). Pisagor’la BC=10, alan 24 ve yarı çevre 12 birim bulunur. İç yarıçap alanın yarı çevreye bölümüdür: r=24/12=2. A’ya komşu kenar doğrularına dik uzaklık 2 olduğunda merkez I=(2; 2) olur.",
+          "A karşısındaki çemberde yan kenarlara teğetler B ve C’nin ötesindedir. Dış merkezle AB ve AC’nin kurduğu iki üçgenin alanları toplamından BC’ye ait alanı çıkar: 24=rₐ·(6+8−10)/2. Böylece rₐ=24/(12−10)=12 ve Iₐ=(12; 12). Modelde çizgilerin hangi parçasına dokunduğunu karşılaştır.",
         ],
       },
       {
@@ -2176,6 +2193,7 @@ const packs031: FoundationPack031[] = [
         paragraphs: [
           "BC=a, CA=b ve AB=c ise A’dan çizilen kenarortayın uzunluğu mₐ için4mₐ²=2b²+2c²−a²’dir. Bu ifade orta noktanın iki yanındaki küçük üçgenlerde kurulan uzunluk ilişkilerinin toplamından gelir. Dik olmayan üçgende mₐ’yı yükseklik sanarak Pisagor kullanmak doğru değildir.",
           "Dik üçgende hipotenüsün orta noktası üç köşeye eşit uzaklıktadır; bu nedenle dik köşeden hipotenüse çizilen kenarortay hipotenüsün yarısıdır. Bu özellik her kenara ait kenarortay için geçerli değildir. Hipotenüse ait yüksekliğin aynı değer olması ancak ikizkenar dik üçgen gibi ek bir koşulda gerçekleşir.",
+          "AB=7, AC=9 ve BC=8 için AM²=(2·7²+2·9²−8²)/4=49. AM=7 birim. Modelde tabanı 14 yapınca AM=4 olur. Taban 4’e inince H uzantıya çıkabilir. M her zaman BC’nin ortasındadır.",
         ],
       },
       {
@@ -2848,14 +2866,18 @@ const quickSheets031: Record<string, FoundationQuickSheet031> = {
       },
       {
         title: "Eşlik için yeterli koşullar",
+        figureTitle: "Arada olmayan açı iki üçgene izin verebilir",
         text: [
+          "AB=5, AC=4 ve ∠B=30° ile C, bir ışın ile A merkezli çemberin iki kesişiminden biri olabilir. İki BC uzunluğu farklıdır. KAK için verilen açı iki verilen kenarın ortak köşesinde olmalıdır.",
           "KKK:üç karşılıklı kenar eş. KAK:iki karşılıklı kenar ve ARALARINDAKİ açı eş. AKA:iki karşılıklı açı ve aralarındaki kenar eş.",
           "Dik üçgende hipotenüs+bir dik kenar eşliği yeterlidir. Yalnız üç açı eşliği veya rastgele iki kenar+aralarında olmayan açı genel olarak eşliği belirlemez.",
         ],
       },
       {
         title: "Benzerlik için yeterli koşullar",
+        figureTitle: "Üç kenarı eşleştir, ölçeği ayır",
         text: [
+          "6–8–10 ile 9–12–15 için karşılıklı kenar oranı 3/2’dir. İki üçgen aynı biçimde ve farklı büyüklüktedir.",
           "AA:iki karşılıklı açı eş. KAK:iki karşılıklı kenar aynı oranda ve aralarındaki açılar eş. KKK:üç karşılıklı kenar oranı aynı.",
           "Önce benzerliği kanıtla,sonra oran yaz. Kum saati görünümünde ters açı yalnız bir açı çifti verir; ikinci çift için gerekçe gerekir.",
         ],
@@ -2869,7 +2891,9 @@ const quickSheets031: Record<string, FoundationQuickSheet031> = {
       },
       {
         title: "Uzunluk k,alan k²",
+        figureTitle: "Uzunluk k iken alan neden k²?",
         text: [
+          "Yamuk 64 birim² ve alan payı 16/25 ise bütün alan 100 birim². Üst üçgenin alanı 36 birim².",
           "Yeni/eski uzunluk oranı k>0 ise kenar,çevre,yükseklik,kenarortay,açıortay oranı k; alan oranı k².",
           "Paralel kesitte üst küçük üçgenin alanı t², kalan yamuğun alanı1−t² katıdır. Alan oranı9/25 ise aynı yöndeki uzunluk oranı3/5’tir.",
         ],
@@ -2908,6 +2932,7 @@ const quickSheets031: Record<string, FoundationQuickSheet031> = {
       },
       {
         title: "Kenarortay ve ağırlık merkezi",
+        figureTitle: "Kenarortay uzunluğu ve dik üçgendeki özel hâl",
         text: [
           "M,BC’nin ortası ve G ağırlık merkezi:AG:GM=2:1,AG=2AM/3,GM=AM/3. Bir kenarortay iki eş alan;üçü birlikte altı eş alan verir.",
           "BC=a,CA=b,AB=c için4mₐ²=2b²+2c²−a². Altı küçük üçgenin alanları eşit diye kenarları eşit değildir.",
@@ -2915,7 +2940,9 @@ const quickSheets031: Record<string, FoundationQuickSheet031> = {
       },
       {
         title: "Merkezlerin eş uzaklıkları ve konumu",
+        figureTitle: "İç merkez I: kenarlara eş dik uzaklık",
         text: [
+          "S alan, s yarı çevre ve a=BC ise iç yarıçap r=S/s; A karşısındaki dış yarıçap rₐ=S/(s−a). 6, 8, 10 dik üçgeninde S=24, s=12, r=2 ve rₐ=12. Dış çember BC’ye ve iki yan kenarın uzantısına teğettir.",
           "I:iç açıortaylar;kenarlara eş dik uzaklık r. O:orta dikmeler;köşelere eş uzaklık R. H:yükseklikler. G:kenarortaylar.",
           "I ve G her zaman içeride. H ve O dar üçgende içeride,genişte dışarıda;dik üçgende H dik köşede,O hipotenüsün ortasında.",
         ],

@@ -94,7 +94,10 @@ export const absoluteValueSource012Sheets = absoluteValueSource038Sheets.map((sh
   ...sheet,
   sections: sheet.sections.map((section) => {
     const extra = summaryAdditions[section.title];
-    return extra ? { ...section, text: [...section.text, extra] } : section;
+    const revised = extra ? { ...section, text: [...section.text, extra] } : section;
+    return section.title === "Uzaklık toplamı"
+      ? { ...revised, figureTitle: "İki noktaya uzaklık toplamı neden arada sabit?" }
+      : revised;
   }),
   source,
 }));

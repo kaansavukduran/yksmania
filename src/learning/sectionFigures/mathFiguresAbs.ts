@@ -59,25 +59,43 @@ const barScope: FigureDef = {
 };
 
 const distSum: FigureDef = {
-  caption:
-    "|x − 2| + |x + 1|, x noktasının 2'ye ve −1'e uzaklıklarının toplamıdır. x iki nokta arasındayken toplam her zaman 3'tür (iki uç arası); dışarı çıkınca iki parça birlikte büyür. En küçük değer 3, x ∈ [−1, 2].",
-  alt: "Sayı doğrusu −4'ten 6'ya; −1 ve 2 işaretli; sürgüyle kayan x noktasından −1'e ve 2'ye iki renkli uzaklık çubuğu.",
+  caption: "x iki sabit noktanın arasındaysa uzaklıklar uçlar arasındaki uzunluğu verir. Dışarıda, en yakın uca olan uzaklık toplamı iki kat artırır. İkinci durumda toplamın 5 olduğu iki x değerini bul.",
+  alt: "Sayı doğrusu üzerinde iki uç ve x noktası. İki uzaklık, x’in iki uca göre konumuyla birlikte değişen ayrı çubuklarla çizilir.",
+  steps: ["Uçlar −1 ve 2", "Uçlar 1 ve 4"],
   param: { label: "x", min: -4, max: 6, step: 0.5, init: 4 },
-  draw: (x) => {
-    const els: El[] = [];
-    els.push(seg(v(-4.4, 0), v(6.4, 0), { tone: "muted" }));
-    for (let t = -4; t <= 6; t += 2) els.push(txt(v(t, 0), String(t).replace("-", "−"), "s", { small: true, tone: "muted" }));
-    els.push(ball(v(-1, 0), 0.12, "b"), ball(v(2, 0), 0.12, "b"));
-    els.push(txt(v(-1, 0.25), "−1", "n", { small: true, bold: true, tone: "b" }), txt(v(2, 0.25), "2", "n", { small: true, bold: true, tone: "b" }));
-    const d1 = Math.abs(x - 2);
-    const d2 = Math.abs(x + 1);
-    els.push(seg(v(x, 1.0), v(2, 1.0), { tone: "a", bold: true }), seg(v(x, 2.0), v(-1, 2.0), { tone: "c", bold: true }));
-    els.push(txt(v(Math.max(x, 2) + 0.15, 1.0), `|x − 2| = ${fmt(d1, 1)}`, "e", { small: true, tone: "a" }));
-    els.push(txt(v(Math.max(x, -1) + 0.15, 2.0), `|x + 1| = ${fmt(d2, 1)}`, "e", { small: true, tone: "c" }));
-    els.push(seg(v(x, -0.1), v(x, 2.1), { tone: "warn", dash: true }), ball(v(x, 0), 0.1, "warn"));
-    els.push(txt(v(-4.8, 2.6), " ", "c"), txt(v(9.6, -0.8), " ", "c"));
-    const inside = x >= -1 && x <= 2;
-    return { els, readout: [`Toplam = ${fmt(d1, 1)} + ${fmt(d2, 1)} = ${fmt(d1 + d2, 1)}`, inside ? "x arada: toplam iki nokta arası uzaklık, 3." : "x dışarıda: fazladan gidiş-dönüş eklenir, toplam 3'ten büyük."] };
+  draw: (x, step) => {
+    const [left, right] = step === 0 ? [-1, 2] : [1, 4];
+    const dLeft = Math.abs(x - left);
+    const dRight = Math.abs(x - right);
+    const offset = (anchor: number) => anchor < 0 ? `x + ${-anchor}` : `x − ${anchor}`;
+    const minimum = right - left;
+    const total = dLeft + dRight;
+    const els: El[] = [
+      seg(v(-4.4, 0), v(6.4, 0), {tone: "muted"}),
+      ...[-4, -2, 0, 2, 4, 6].filter((tick) => tick !== left && tick !== right)
+        .map((tick) => txt(v(tick, 0), fmt(tick).replace(/^-/, "−"), "s", {small: true, tone: "muted"})),
+      ball(v(left, 0), 0.12, "b"),
+      ball(v(right, 0), 0.12, "b"),
+      txt(v(left, 0.25), fmt(left).replace(/^-/, "−"), "n", {small: true, bold: true, tone: "b"}),
+      txt(v(right, 0.25), fmt(right).replace(/^-/, "−"), "n", {small: true, bold: true, tone: "b"}),
+      seg(v(x, 1), v(right, 1), {tone: "a", bold: true}),
+      seg(v(x, 2), v(left, 2), {tone: "c", bold: true}),
+      txt(v(Math.max(x, right) + 0.15, 1), `|${offset(right)}| = ${fmt(dRight)}`, "e", {small: true, tone: "a"}),
+      txt(v(Math.max(x, left) + 0.15, 2), `|${offset(left)}| = ${fmt(dLeft)}`, "e", {small: true, tone: "c"}),
+      seg(v(x, -0.1), v(x, 2.1), {tone: "warn", dash: true}),
+      ball(v(x, 0), 0.1, "warn"),
+      txt(v(-4.8, 2.6), " ", "c"), txt(v(9.6, -0.8), " ", "c"),
+    ];
+    return {
+      els,
+      readout: [
+        `Toplam = ${fmt(dRight)} + ${fmt(dLeft)} = ${fmt(total)}`,
+        x >= left && x <= right
+          ? `x arada: toplam iki nokta arası uzaklık, ${minimum}.`
+          : `x dışarıda: en küçük uzaklık toplamına ${fmt(total - minimum)} birim eklenir.`,
+        ...(step === 1 ? [total === 5 ? "Bu x, hedef toplamı 5 yapar." : "Bu x, hedef toplam 5’i sağlamaz."] : []),
+      ],
+    };
   },
 };
 

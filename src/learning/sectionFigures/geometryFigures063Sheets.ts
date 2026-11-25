@@ -409,10 +409,40 @@ const ucgenMerkezleri: Record<string, FigureDef> = {
   },
   "İç merkez I: kenarlara eş dik uzaklık": {
     caption:
-      "Adım 1: I'dan üç kenara inen dikmeler eşittir (r); I'nın köşelere uzaklıkları farklıdır. Adım 2: kenarları 12, 16, 20 olan üçgen I'dan üç parçaya ayrılır; her parçanın yüksekliği r = 4 olduğundan alan r·s = 4 · 24 = 96. Adım 3: A'ya karşı dış teğet çemberin merkezi de üç kenar doğrusuna eşit uzaktır ama dışarıdadır: rₐ = 24.",
-    alt: "Üç adım: iç merkez ve iç teğet çember; 12–16–20 dik üçgeninin I'dan üç üçgene ayrılması; aynı üçgende kenar uzantılarına teğet büyük dış teğet çember.",
-    steps: ["İç teğet çember", "Alan = r · s", "Dış teğet çember"],
+      "Adım 1: I'dan üç kenara inen dikmeler eşittir (r); I'nın köşelere uzaklıkları farklıdır. Adım 2: kenarları 12, 16, 20 olan üçgen I'dan üç parçaya ayrılır; her parçanın yüksekliği r = 4 olduğundan alan r·s = 4 · 24 = 96. Adım 3: A'ya karşı dış teğet çemberin merkezi de üç kenar doğrusuna eşit uzaktır ama dışarıdadır: rₐ = 24. Son iki adımda 6, 8 ve 10 kenarlı dik üçgenin iç ve A karşısındaki dış çemberini karşılaştır.",
+    alt: "İç teğet çember, 12–16–20 dik üçgeninde alan ve dış çember, ardından 6–8–10 dik üçgeninde karşılaştırma. Çemberler kenar doğrularına dik parçalarla gösterilir.",
+    steps: ["İç teğet çember", "Alan = r · s", "Dış teğet çember", "6–8–10: iç çember", "6–8–10: dış çember"],
     draw: (_, step) => {
+      if (step >= 3) {
+        const A = v(0, 0);
+        const B = v(6, 0);
+        const C = v(0, 8);
+        const a = dist(B, C);
+        const area = dist(A, B) * dist(A, C) / 2;
+        const s = (a + dist(A, B) + dist(A, C)) / 2;
+        const external = step === 4;
+        const radius = area / (external ? s - a : s);
+        const center = v(radius, radius);
+        const tangent = foot(center, B, C);
+        const onAB = foot(center, A, B);
+        const onAC = foot(center, A, C);
+        const centerLabel = external ? "Iₐ" : "I";
+        return {
+          els: [
+            ...(external ? [seg(B, onAB, {dash: true}), seg(C, onAC, {dash: true})] : []),
+            tri(A, B, C),
+            circle(center, radius, {tone: "a"}),
+            ...[onAB, onAC, tangent].flatMap((point) => [seg(center, point, {tone: "c", dash: true}), pt(point, undefined, "n", "c")]),
+            pt(A, "A", "sw"), pt(B, "B", "se"), pt(C, "C", "nw"),
+            pt(center, centerLabel, "ne", "a"),
+          ],
+          readout: [
+            `Alan ${area} birim². Yarı çevre s = ${s}. ${external ? "rₐ = S / (s − a)" : "r = S / s"} = ${radius} birim.`,
+            `${centerLabel} = (${radius}; ${radius}). BC’ye teğet noktası (${fmt(tangent[0])}; ${fmt(tangent[1])}).`,
+            external ? "BC parçası ile AB ve AC uzantılarına teğet." : "Üç teğet noktası kenar parçalarının üzerinde.",
+          ],
+        };
+      }
       if (step >= 1) {
         const A = v(0, 0);
         const B = v(16, 0);

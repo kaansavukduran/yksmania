@@ -145,9 +145,11 @@ export const ebobEkokSource034Pack:Ebob034Pack = {
     {
       "code": "S14",
       "title": "Başlangıç kayarsa iki ayrı diziyi karşılaştır",
+      "figureTitle": "Başlangıç kayarsa iki ayrı diziyi karşılaştır",
       "paragraphs": [
         "A ilk kez 0’da, sonra her 12 dakikada; B ilk kez 6’da, sonra her 18 dakikada çalışırsa B’nin anları 6, 24, 42,… olur. A’nın 0, 12, 24,… dizisiyle ilk ortak an 24’tür. EKOK(12, 18)=36, ortak anlar bulunursa aralarındaki tekrar süresini anlatır; kaymış başlangıçtaki ilk anı tek başına vermez.",
-        "Örneğin 10 dakikalık A, 0’da; 15 dakikalık B, 5’te başlarsa ilk ortak an 20’dir: A 0, 10, 20; B 5, 20. Başlangıç bilgisi hiç verilmezse periyotlar tek başına ilk ortak anı belirlemez. Verilmeyen başlangıcı 0 kabul edip kesin sonuç uydurma. Küçük örnekte ayrı kat listeleri güvenli ve görünür bir yoldur."
+        "Örneğin 10 dakikalık A, 0’da; 15 dakikalık B, 5’te başlarsa ilk ortak an 20’dir: A 0, 10, 20; B 5, 20. Başlangıç bilgisi hiç verilmezse periyotlar tek başına ilk ortak anı belirlemez. Verilmeyen başlangıcı 0 kabul edip kesin sonuç uydurma. Küçük örnekte ayrı kat listeleri güvenli ve görünür bir yoldur.",
+        "B, 1. dakikada başlarsa A’nın bütün anları 6’nın katı, B’nin bütün anları 6’ya bölündüğünde 1 kalanını verir. Bir an iki farklı kalanı birlikte taşıyamaz. Zaman çizelgesinde 0, 1 ve 6 dakikalık başlangıçları karşılaştır."
       ]
     },
     {
@@ -2325,6 +2327,7 @@ export const ebobEkokSource034Pack:Ebob034Pack = {
     },
     {
       "title": "Periyot, uçlar ve başlangıç",
+      "figureTitle": "Başlangıç kayarsa iki ayrı diziyi karşılaştır",
       "text": [
         "Sabit periyot ve ortak başlangıçta ilk yeniden ortak süre EKOK’tur. 12 ve 18 dk için 36 dk. [0,72] aralığında 0,36,72: 3 olay; [0,72) ve (0,72] aralıklarında 2 olay. 09.50+36 dk=10.26.",
         "Başlangıç kayarsa iki ayrı dizi yaz: 12/18, B 6’da→ilk 24; 10/15, B 5’te→20; 8/12, B 4’te→16. Başlangıç bilinmiyorsa ilk ortak an kesin değil; verilmeyeni 0 varsayma."

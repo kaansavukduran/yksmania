@@ -475,6 +475,7 @@ const sheet: CheatSection[] = [
   },
   {
     title: "Düzlemde eşitsizlik sistemi",
+    figureTitle: "Üç yarı düzlemin ortak bölgesi",
     text: [
       "ax+by=c sınırını çiz, a ve b birlikte 0 olmasın. < ve > kesikli, ≤ ve ≥ kesiksiz. Sınır üzerinde olmayan bir deneme noktası seç. Her koşulun kabul ettiği tarafı bul, sonra ortak bölgeyi al.",
       source011Figure.summary,
