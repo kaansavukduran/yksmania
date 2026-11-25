@@ -742,6 +742,51 @@ const kati: Record<string, FigureDef> = {
       };
     },
   },
+  "Daire diliminden koninin tabanını bul": {
+    caption: "Daire diliminin yayı koninin taban çevresine dönüşür. Kesit adımında 10 cm anadoğru, taban yarıçapı ve dik yüksekliği aynı üçgende gör.",
+    alt: "İlk adımda yarıçapı 10 cm olan ve açısı değişen daire dilimi. İkinci adımda dik koninin eksen kesiti ve taban yarıçapı.",
+    steps: ["Daire dilimi", "Koninin eksen kesiti"],
+    param: { label: "Daire diliminin açısı", min: 36, max: 324, step: 36, init: 216, unit: "°" },
+    draw: (theta, step) => {
+      const slant = 10;
+      const radius = slant * theta / 360;
+      const height = Math.sqrt(slant ** 2 - radius ** 2);
+      const volumeCoefficient = radius ** 2 * height / 3;
+      const readout = [
+        `Yay ${2 * radius}π cm. Taban çevresi de ${2 * radius}π cm. Taban yarıçapı ${radius} cm.`,
+        `Anadoğru ${slant} cm. Dik yükseklik √(${slant}²−${radius}²) ${Number.isInteger(height) ? "=" : "≈"} ${fmt(height, 2)} cm.`,
+        `Hacim ${Number.isInteger(volumeCoefficient) ? "=" : "≈"} ${fmt(volumeCoefficient, 2)}π cm³.`,
+      ];
+      if (step === 0) {
+        const arc = Array.from({ length: 49 }, (_, index) => pol(3.2, 90 - theta / 2 + theta * index / 48, O));
+        return {
+          els: [
+            { k: "poly", ps: [O, ...arc], tone: "a", fill: "a" },
+            txt(O, `${theta}°`, "s", { tone: "ink", small: true }),
+            txt(v(0, 3.2), `yay ${2 * radius}π`, "n", { tone: "a", small: true }),
+            txt(mid(O, arc[0]), "10 cm", "se", { tone: "ink", small: true }),
+          ],
+          readout,
+        };
+      }
+      const scale = 0.45;
+      const T = v(0, height * scale);
+      const A = v(radius * scale, 0);
+      const B = v(-radius * scale, 0);
+      return {
+        els: [
+          { k: "poly", ps: [T, A, B], tone: "ink", fill: "muted" },
+          seg(T, O, { tone: "b", bold: true }),
+          seg(O, A, { tone: "a", bold: true }),
+          right(O, T, A, "ink"),
+          txt(mid(O, T), "h", "w", { tone: "b", small: true }),
+          txt(mid(O, A), "r", "s", { tone: "a", small: true }),
+          txt(mid(T, A), "10 cm", "ne", { tone: "ink", small: true }),
+        ],
+        readout,
+      };
+    },
+  },
   "Koni: hacim silindirin üçte biri": {
     caption: "Aynı taban ve yükseklikte silindir ile koni. Adım adım: üç koni dolusu su silindiri tam doldurur.",
     alt: "Silindir ve içinde aynı taban ve yükseklikte koni; silindirde üç eşit su seviyesi çizgisi.",
@@ -800,6 +845,42 @@ const kati: Record<string, FigureDef> = {
           ...[0, 1, 2, 3].map((i) => circle(v(r * sc + 1.2 + (i % 2) * (r * sc * 0.55 * 2 + 0.2), (i < 2 ? 1 : -1) * (r * sc * 0.55 + 0.1)), r * sc * 0.55, { tone: "c", fill: "c" })),
         ],
         readout: [`S = 4π·${fmt(r * r, 2)} = ${fmt(4 * r * r, 2)}π`, `V = 4π·${fmt(r ** 3, 2)}/3 = ${fmt((4 * r ** 3) / 3, 2)}π`],
+      };
+    },
+  },
+  "Kürenin yarıçapını kesitten geri kur": {
+    caption: "Kürenin merkezinden geçen düşey kesitte yatay kiriş, kesit dairesinin çapıdır. Düzlemi merkezden uzaklaştırınca daire küçülür.",
+    alt: "Küre düşey bir çember profiliyle gösterilir. Yatay kesit çizgisi, merkezden düzleme uzaklık ve kesitin yarıçapı dik üçgen oluşturur.",
+    param: { label: "Düzlemin merkeze uzaklığı", min: 0, max: 13, step: 1, init: 5 },
+    draw: (d) => {
+      const radius = 13;
+      const scale = 0.25;
+      const squared = radius ** 2 - d ** 2;
+      const section = Math.sqrt(squared);
+      const midpoint = v(0, d * scale);
+      const end = v(section * scale, d * scale);
+      const els: El[] = [
+        circle(O, radius * scale, { tone: "ink" }),
+        seg(v(-3.6, midpoint[1]), v(3.6, midpoint[1]), { tone: "muted", dash: true }),
+        seg(O, midpoint, { tone: "b", dash: true }),
+        pt(O, "O", "sw"),
+      ];
+      if (section === 0) {
+        els.push(pt(midpoint, "Temas", "n", "a"));
+      } else {
+        els.push(seg(v(-section * scale, midpoint[1]), end, { tone: "a", bold: true }));
+        els.push(seg(O, end, { tone: "c" }));
+        els.push(txt(mid(midpoint, end), "a", "n", { tone: "a", small: true }));
+        els.push(txt(mid(O, end), "R", "se", { tone: "c", small: true }));
+        if (d) els.push(right(midpoint, O, end, "ink"));
+      }
+      return {
+        els,
+        readout: [
+          `Uzaklık ${d} birim. Kesit yarıçapı √${squared} ${Number.isInteger(section) ? "=" : "≈"} ${fmt(section, 2)} birim.`,
+          `Kesit alanı ${squared}π birim². R² = ${squared} + ${d ** 2} = 169.`,
+          section ? "Kürenin hacmi 8788π/3 birim³." : "Düzlem küreye bir noktada teğet.",
+        ],
       };
     },
   },

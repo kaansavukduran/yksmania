@@ -1360,3 +1360,80 @@ test("The hexagonal pyramid has a different hypotenuse in each cross-section", a
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Only the two requested ordered pairs leave the product", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Koordinat gösterimi ayrık noktaların kümesidir");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto("/#/lesson?id=kartezyen-carpim");
+  await next.press("Enter");
+  await next.press("Enter");
+  await expect(model).toContainText("6 ikiliden (2; 2) ve (2; 3) çıkar. Kalan 4 ikili");
+  await expect(model).toContainText("(1; 1), (1; 2), (1; 3), (2; 1)");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-223");
+  await next.press("Enter");
+  await next.press("Enter");
+  await expect(model).toContainText("Kalan 4 ikili");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The logic truth table retains the same false row in the lesson and sheet", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "İse yalnız doğru öncül ve yanlış sonuçta yanlıştır");
+  const table = page.getByRole("table").filter({ hasText: "İlk koşul" });
+  for (const route of ["/#/lesson?id=mantik-onerme", "/#/cheatsheets?topic=detail-224"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Tek yanlış satır: doğru öncül, yanlış sonuç");
+    await expect(table.getByRole("row", { name: /İlk koşul/ })).toContainText(/p\s*=\s*1,\s*q\s*=\s*0/);
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("A cone inherits its base circumference from the sector arc", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-geo-silindir-koni-kure-040";
+  const model = figure(page, "Daire diliminden koninin tabanını bul");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto(`/#/lesson?id=${id}`);
+  await expect(model).toContainText("Yay 12π cm. Taban çevresi de 12π cm. Taban yarıçapı 6 cm");
+  await next.press("Enter");
+  await expect(model).toContainText("Dik yükseklik √(10²−6²) = 8 cm");
+  await expect(model).toContainText("Hacim = 96π cm³");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${id}`);
+  await expect(model).toContainText("Hacim = 96π cm³");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("A sphere section shrinks to a point at a tangent plane", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-geo-silindir-koni-kure-040";
+  const model = figure(page, "Kürenin yarıçapını kesitten geri kur");
+  await page.goto(`/#/lesson?id=${id}`);
+  await expect(model).toContainText("Kesit alanı 144π birim². R² = 144 + 25 = 169");
+  const distance = model.getByRole("slider", { name: /Düzlemin merkeze uzaklığı/ });
+  await distance.press("End");
+  await expect(model).toContainText("Düzlem küreye bir noktada teğet.");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${id}`);
+  await expect(model).toContainText("Kürenin hacmi 8788π/3 birim³");
+  await expect(figure(page, "Kâğıdı iki yönde sar ve hacimleri karşılaştır")).toBeVisible();
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

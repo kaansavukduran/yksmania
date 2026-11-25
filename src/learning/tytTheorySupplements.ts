@@ -1,10 +1,11 @@
 interface TheorySupplement {
   title: string;
-  figureTitle: string;
+  figureTitle?: string;
   paragraphs: string[];
-  summary: string;
+  summary?: string;
   appendSection?: true;
   sheetTitle?: string;
+  tableLayout?: "table";
   workedStep?: { title: string; index: number };
 }
 
@@ -206,6 +207,39 @@ export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupple
     ],
     summary: "12π×8 dikdörtgenin iki sarımı 288π ve 192 cm³ verir. Oran 3π/2, yan alan her ikisinde 96π cm².",
     appendSection: true,
+  }, {
+    title: "Daire diliminden koninin tabanını bul",
+    figureTitle: "Daire diliminden koninin tabanını bul",
+    paragraphs: [
+      "Yarıçapı 10 cm olan 216° daire diliminin yayı 12π cm. Birleştirildiğinde o yay koninin taban çevresidir. 2πr=12π ile r=6 cm. 10 cm anadoğru ve 6 cm yarıçap için dik yükseklik √(100−36)=8 cm. Hacim 96π cm³.",
+    ],
+    summary: "216° dilimin yayı 12π. Koni r=6, h=8, anadoğru 10 ve hacim 96π cm³.",
+    appendSection: true,
+  }, {
+    title: "Kürenin yarıçapını kesitten geri kur",
+    figureTitle: "Kürenin yarıçapını kesitten geri kur",
+    paragraphs: [
+      "Kesit alanı 144π ise kesit dairesinin yarıçapı a=12 birim. Düzlemin merkeze uzaklığı d=5. R²=a²+d²=144+25=169 ile kürenin yarıçapı 13'tür. Hacim 4π·13³/3=8788π/3 birim³.",
+    ],
+    summary: "Kesit alanı 144π ve uzaklık 5 ise a=12 ve R=13. Küre hacmi 8788π/3 birim³.",
+    appendSection: true,
+  }],
+  "kartezyen-carpim": [{
+    title: "Koordinat gösterimi ayrık noktaların kümesidir",
+    figureTitle: "Koordinat gösterimi ayrık noktaların kümesidir",
+    paragraphs: [
+      "A={1,2}, B={1,2,3} için altı ikili vardır. C={2}, D={2,3} için yalnız (2;2) ve (2;3) çıkar. (2;1) kalır, çünkü ikinci bileşen 1, D’de bulunmaz. Bir ikiliyi çıkarmak için iki üyelik birlikte sağlanmalıdır.",
+    ],
+    summary: "Altı A×B ikilisinden (2;2) ve (2;3) çıkar. Dört ikili kalır. (2;1) kalır.",
+  }],
+  "mantik-onerme": [{
+    title: "İse yalnız doğru öncül ve yanlış sonuçta yanlıştır",
+    figureTitle: "İse yalnız doğru öncül ve yanlış sonuçta yanlıştır",
+    paragraphs: [],
+  }, {
+    title: "Koşullu önermenin dört biçimini ayır",
+    tableLayout: "table",
+    paragraphs: [],
   }],
   "kumeler": [{
     title: "Üç kümenin ayrık bölgelerini içten dışa doldur",

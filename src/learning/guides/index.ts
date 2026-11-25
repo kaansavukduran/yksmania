@@ -393,13 +393,18 @@ export function studyGuide(lessonId: string) {
   if (guide && supplements) {
     let sections = guide.sections;
     let examples = guide.examples;
-    for (const { title, figureTitle, paragraphs, appendSection, workedStep } of supplements) {
+    for (const { title, figureTitle, paragraphs, appendSection, workedStep, tableLayout } of supplements) {
       sections = appendSection
         ? [...sections, { title, figureTitle, paragraphs }]
         : sections.map((section) => section.title === title
-          ? { ...section, paragraphs: [...section.paragraphs, ...paragraphs], figureTitle }
+          ? {
+              ...section,
+              paragraphs: [...section.paragraphs, ...paragraphs],
+              figureTitle: figureTitle ?? section.figureTitle,
+              table: section.table && tableLayout ? { ...section.table, layout: tableLayout } : section.table,
+            }
           : section);
-      if (workedStep) {
+      if (workedStep && figureTitle) {
         examples = examples.map((example) => example.title === workedStep.title
           ? { ...example, steps: example.steps.map((step, index) => index === workedStep.index
             ? { ...step, figureTitle }

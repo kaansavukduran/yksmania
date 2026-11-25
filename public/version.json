@@ -1,8 +1,8 @@
 {
-  "version": "0.177.0",
+  "version": "0.178.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Kümeler’de üçlü kesişimden başlayarak ayrık bölgeleri say. Altıgen piramitte dik yüksekliği, yan yüz yüksekliğini ve yan ayrıtı iki gerçek kesitle ayır.",
-    "en": "Count disjoint regions from the triple intersection and distinguish three pyramid lengths using two cross-sections."
+    "tr": "Kartezyen Çarpım’da seçilen iki noktayı çıkar. Koniyi dilim yayından kur, kürenin yarıçapını kesitten hesapla ve Mantık tablosunu gerçek derste denetle.",
+    "en": "Remove two ordered pairs, build a cone from its sector, derive a sphere radius from its section, and verify the logic table."
   }
 }
