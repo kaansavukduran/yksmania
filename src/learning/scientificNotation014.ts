@@ -5,9 +5,11 @@ import type { GuideSection, WorkedExample } from "./guides/types";
 export const scientificNotationSections: GuideSection[] = [
   {
     title: "Birbirini izleyen büyütmeleri çarp",
+    figureTitle: "Birbirini izleyen büyütmeleri çarp",
     paragraphs: [
       "Büyütme katsayısı, sonraki uzunluğun önceki uzunluğa oranıdır. Bir görüntü önce 5 katına, sonra oluşan görüntü 25 katına çıkarılırsa toplam oran 5·25=125 olur. İki katsayının birimi yoktur. Bu yüzden 3,2×10⁻³ mm genişliğindeki bir çizgi 125 ile çarpıldığında sonuç 0,4 mm olur.",
       "Aşama aşama kontrol et. 0,0032 mm ilk çarpımdan sonra 0,016 mm, ikinci çarpımdan sonra 0,4 mm olur. 5+25 toplarsan 30 kat bulur ve ikinci büyütmeyi ilk görüntüye uygulamamış olursun. Şemadaki kutular işlem sırasını gösterir. Fiziksel uzunluğu kutunun içindeki değerden oku.",
+      "Bilimsel Gösterim ve Katsayı kaynağındaki ölçüyü ikinci adımda seç. 12,5×10⁻³ mm, 0,0125 mm’ye eşittir. İlk 4 kat büyütmede 0,05 mm, ikinci 40 kat büyütmede 2 mm elde edilir. Toplam büyütme 4·40=160 kattır.",
     ],
   },
   {

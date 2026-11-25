@@ -3725,3 +3725,9 @@ Mutlak Değer 1.3.0 fiziksel 8 ve Üçgende Benzerlik 5.1 fiziksel 4–5 ile eş
 Üslü Sayılar’da 24 × 10⁴ ve 0,36 × 10⁸ ifadeleri bilimsel gösterime çevrilirken sonuç sabit kalıyor. Üçgende Alan’da tepe tabana paralel taşınınca 30 ve 45 birim²’lik iki alan korunuyor. Aynı modeller ayrı Kopya Kağıtlarından açılıyor.
 
 Üslü Sayılar 1.3.0 fiziksel 4 ve 7 ile Üçgende Alan 5.2.1 fiziksel 5 karşılaştırıldı. TypeScript, 91 birim testi, 27 Chromium akışı ve 323 çevrimdışı varlık doğrulandı. 12 görsel 320, 375 ve 1280 pikselde denetlendi. Sırada Bilimsel Gösterim ve Katsayı ile Çokgenler var.
+
+## TYT Matematik ve Geometri · 0.162.0 adayı
+
+Bilimsel Gösterim ve Katsayı’da 0,0125 mm önce 4, sonra 40 kat büyütülüyor. Model ara uzunluğu 0,05 mm, son uzunluğu 2 mm olarak gösteriyor. Çokgenler’de kenar sayısı değişince komşu köşeler sayımın dışında kalıyor. Düzgün yedigenin 14 köşegeni ve 900/7° iç açısı aynı modelden okunuyor.
+
+Bilimsel Gösterim ve Katsayı fiziksel 5 ile Çokgenler fiziksel 2 ve 5 karşılaştırıldı. TypeScript, 37 birim, 29 Chromium akışı ve 323 çevrimdışı varlık doğrulandı. 14 görsel 320, 375 ve 1280 pikselde çakışmasız açıldı. Sırada Köklü Sayılar fiziksel 8 ve Genel Dörtgenler fiziksel 2 ile 5 var.

@@ -638,3 +638,50 @@ test("Sliding the apex parallel to the base keeps the two partial areas", async 
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Two magnifications use the updated length and preserve its unit offline", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "bilimsel-gosterim-katsayi";
+  const model = figure(page, "Birbirini izleyen büyütmeleri çarp");
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("0,0032 mm → 0,016 mm → 0,4 mm");
+  await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await model.getByRole("slider", { name: /İkinci büyütme/ }).press("End");
+  await expect(model).toContainText("0,0125 mm → 0,05 mm → 2 mm");
+  await expect(model).toContainText("4 × 40 = 160 kat");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-207");
+  await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await model.getByRole("slider", { name: /İkinci büyütme/ }).press("End");
+  await expect(model).toContainText("0,0125 mm → 0,05 mm → 2 mm");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Polygon diagonal counting excludes adjacent vertices and counts each pair once", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-cokgenler-032";
+  const model = figure(page, "Köşegenleri çift saymadan say");
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("8·5/2 = 20");
+  const slider = model.getByRole("slider", { name: /Kenar sayısı/ });
+  await slider.press("ArrowLeft");
+  await expect(model).toContainText("7·4/2 = 14");
+  await expect(model).toContainText("900/7°");
+  await expect(model.getByRole("img").locator("line")).toHaveCount(14);
+  await slider.press("Home");
+  await expect(model.getByRole("img").locator("line")).toHaveCount(0);
+  await expect(model).toContainText("3·0/2 = 0");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await slider.press("ArrowLeft");
+  await expect(model).toContainText("7·4/2 = 14");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

@@ -162,19 +162,30 @@ const cokgenler: Record<string, FigureDef> = {
   },
   "Köşegenleri çift saymadan say": {
     caption:
-      "Sekizgende A'dan 8 − 3 = 5 köşegen çıkar (turuncu). Her köşeden sayınca 8·5 = 40 olur, ama her köşegen iki ucundan sayıldığı için 20 farklı köşegen vardır.",
-    alt: "Düzgün sekizgen; A köşesinden çıkan beş köşegen kalın, diğer bütün köşegenler ince çizgiyle.",
-    draw: () => {
-      const ps = regular(8, 3, 112.5);
+      "A köşesinden çıkan köşegenler kalın çizgiyle gösterilir. Her köşegen iki uçtan sayıldığı için toplamı ikiye böl. Kenar sayısı değişirken köşegen toplamının ne zaman kenar sayısının iki katına eşit olduğunu bul.",
+    alt: "Değişen kenar sayısına sahip düzgün çokgen. A’dan çıkan köşegenler kalın, diğer köşegenler ince çizgiyle gösterilir.",
+    param: { label: "Kenar sayısı", min: 3, max: 12, step: 1, init: 8 },
+    draw: (n) => {
+      const ps = regular(n, 3, 112.5);
+      const fromOne = n - 3;
+      const all = n * fromOne / 2;
       const els: El[] = [];
-      for (let i = 0; i < 8; i++)
-        for (let j = i + 2; j < 8; j++) {
-          if (i === 0 && j === 7) continue;
+      for (let i = 0; i < n; i++)
+        for (let j = i + 2; j < n; j++) {
+          if (i === 0 && j === n - 1) continue;
           if (i !== 0) els.push(seg(ps[i], ps[j], { thin: true, tone: "muted" }));
         }
-      for (let j = 2; j <= 6; j++) els.push(seg(ps[0], ps[j], { tone: "a" }));
+      for (let j = 2; j <= n - 2; j++) els.push(seg(ps[0], ps[j], { tone: "a" }));
       els.push(poly(ps), ...ps.map((p, i) => pt(p, i === 0 ? "A" : undefined, "nw")));
-      return { els, readout: ["Bir köşeden: 5", "Toplam: 8·5/2 = 20"] };
+      return {
+        els,
+        readout: [
+          `Bir köşeden: ${fromOne}`,
+          `Toplam: ${n}·${fromOne}/2 = ${all}`,
+          `Kenar sayısının iki katı: ${2 * n}.`,
+          ...(all === 2 * n ? ["Eşitlik sağlanır. Düzgün yedigenin bir iç açısı 900/7° olur."] : []),
+        ],
+      };
     },
   },
   "Düzgün olmak iki eşitlik ister": {

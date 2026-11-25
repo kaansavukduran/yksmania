@@ -155,6 +155,11 @@ export interface CheatSheet {
 }
 
 const revisedSectionTextByLesson = new Map([
+  ["bilimsel-gosterim-katsayi", new Map([
+    ["Birbirini izleyen büyütmeleri çarp", [
+      "İkinci çarpanı artık büyümüş uzunluğa uygula. 0,0125 mm önce 4 katıyla 0,05 mm, sonra 40 katıyla 2 mm olur. Tek işlemde çarpan 4·40=160 olur. Katsayıların birimi yoktur.",
+    ]],
+  ])],
   ["isi-ve-sicaklik", new Map([
     [specificHeatTitle, [
       "Öz ısı örnekleri J/(kg·K) cinsindeyse 4.184’e bölerek cal/(g·°C) birimine geç. Demir 448 / 4.184 ≈ 0,107.",

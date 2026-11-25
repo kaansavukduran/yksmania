@@ -7940,5 +7940,572 @@
         }
       }
     ]
+  },
+  {
+    "version": "0.162.0",
+    "receipts": [
+      {
+        "surface": "lessons",
+        "id": "tyt-geo-cokgenler-032",
+        "after": "47171eab465044847f67e0f334a66852c45dad808a24d5d8d021957b99cf8f89",
+        "prior": {
+          "source": {
+            "tr": "MEBİ TYT Matematik Konu Özetleri: Çokgenler (basılı 139/PDF 141); Aurelia Tüm Geometri Özeti PDF 9. Kaynak kavramlarından yazılmış özgün anlatım ve öğretim soruları."
+          },
+          "body": [
+            {
+              "title": {
+                "tr": "Önce kapalı şekli ve köşeleri tanı"
+              },
+              "text": {
+                "tr": "Çokgen, düzlemde doğru parçalarının sırayla birleşip kapandığı şekildir. Bu derste kenarlar yalnız komşu uçlarda kesişir; üst üste binmez ve birbirini ortadan kesmez. Böylece basit çokgenlerden söz ederiz. Bir köşede doğrusal devam eden iki parçayı ayrı iki kenar saymayız. En az üç köşe gerekir; n kenar sayısıysa n≥3 bir tam sayıdır.\n\nKenar iki komşu köşeyi birleştirir. Köşegen ise komşu olmayan iki köşeyi birleştiren doğru parçasıdır. Dört köşeli bir şeklin dört kenarı ve dört köşesi vardır; kenarı uzatmak yeni köşe oluşturmaz. Kendi içinden geçen yıldız çizimlerine bu dersteki açı toplamlarını doğrudan uygulama."
+              }
+            },
+            {
+              "title": {
+                "tr": "Dışbükey ve içbükey: çizimdeki fark"
+              },
+              "text": {
+                "tr": "Her iç açı 180°den küçükse basit çokgen dışbükeydir. En az bir iç açı 180°den büyükse içbükeydir; o köşede şekil içeri çöker. İçbükey bir çokgen de basit ve kapalı olabilir. Çizimin görünüşünü kontrol ederken bir kenar uzantısını yeni kenar diye sayma.\n\nDışbükey bir çokgende seçtiğin köşeden diğer uygun köşelere çizilen köşegenler içeride kalır. İçbükeyde bazı köşegenler dışarı taşabilir. Bu nedenle bütün köşegenleri tek köşeden çizerek üçgenlere ayırma açıklamasını dışbükey şekil üzerinde yaparız; basit içbükey çokgen de uygun köşegenlerle n−2 üçgene ayrılır."
+              }
+            },
+            {
+              "title": {
+                "tr": "İç açı toplamını üçgenlerden çıkar"
+              },
+              "text": {
+                "tr": "Dışbükey n kenarlı bir çokgende bir köşeden başlayıp komşu olmayan bütün köşelere köşegen çiz. Şekil n−2 üçgene ayrılır. Her üçgende iç açı toplamı 180° olduğundan toplam (n−2)·180°dir. Örneğin yedigen beş üçgene ayrılır ve toplam 900° olur.\n\nBu toplam için kenarların veya açıların eşit olması gerekmez. Fakat toplamı n’ye bölüp tek bir iç açıyı bulmak için bütün iç açıların eşit olduğu ayrıca bilinmelidir. Bir açı 180°den büyükse toplam formülü bozulmaz; içbükey açıyı küçük açıyla değiştirmek toplamı bozar."
+              }
+            },
+            {
+              "title": {
+                "tr": "Dış açıda aynı dönüş yönünü koru"
+              },
+              "text": {
+                "tr": "Dışbükey çokgenin çevresinde aynı yönde yürüdüğünü düşün. Her köşede ileriye uzatılmış kenardan sonraki kenara dönersin. Her köşeden bu biçimde bir dış açı seçince bir tam dönüş yapılır: toplam 360°dir. Her iç açı ile yanındaki böyle bir dış açı bütünlerdir; toplamları 180°dir.\n\nAynı köşedeki iki farklı dış açıyı birden toplama ve bazı köşelerde yön değiştirme. İçbükey çokgende yönlü dönüşler kullanılır; içeri çöken köşenin dönüşü ters işaretlidir. Bütün dönüş büyüklüklerini pozitif alarak 360° demek genel olarak doğru değildir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Köşegenleri çift saymadan say"
+              },
+              "text": {
+                "tr": "Bir köşeden kendisine veya iki komşusuna köşegen çizilemez; bu yüzden o köşeden n−3 köşegen çıkar. Bütün n köşede sayarsan n(n−3) elde edersin; fakat her köşegeni iki ucundan da saymış olursun. Farklı köşegen sayısı D=n(n−3)/2 olur.\n\nSekizgende bir köşeden 5, toplamda 20 köşegen vardır. Bir köşeden çizilen köşegen sayısı ile ortaya çıkan üçgen sayısı aynı değildir: ilki n−3, ikincisi n−2’dir. D verilen bir soruda n≥3 tam sayı koşulunu sağlayan kökü seç; negatif kök bir çokgeni temsil etmez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Düzgün olmak iki eşitlik ister"
+              },
+              "text": {
+                "tr": "Düzgün çokgende bütün kenar uzunlukları birbirine eşit ve bütün iç açı ölçüleri birbirine eşittir. Yalnız eş kenarlı bir eşkenar dörtgenin açıları 60° ve 120° olabilir; düzgün değildir. Yalnız eş açılı bir dikdörtgenin komşu kenarları 3 ve 5 olabilir; o da düzgün değildir.\n\nDüzgün n-gende bir dış açı δ=360°/n, bir iç açı α=180°−δ olur. Tersi yönde n=360°/δ=360°/(180°−α) yazılır. Sonuç en az 3 olan tam sayı değilse verilen açıyla düzgün çokgen yoktur. Örneğin 145° iç açı 35° dış açı verir; 360/35 tam sayı değildir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Merkez açısı, çevre ve alanı ilişkilendir"
+              },
+              "text": {
+                "tr": "Düzgün çokgenin merkezi bütün köşelere aynı R uzaklığındadır; R çevrel çember yarıçapıdır. Merkezi ardışık iki köşeye bağladığında merkez açısı 360°/n olur. Bu merkez açısı bir dış açıyla aynı ölçüdedir; farklı yerlerdeki iki açıdan söz ediyoruz. Kenar uzunluğu a ise çevre Ç=n·a’dır.\n\nMerkezden bir kenara indirilen dik uzaklığa apotem denir ve ρ ile gösterilir. Merkezden bütün köşelere çizilen parçalar n eş ikizkenar üçgen oluşturur. Her birinin tabanı a, yüksekliği ρ olduğundan toplam alan S=n·a·ρ/2=Ç·ρ/2 olur. Köşeye uzaklık R ile kenara dik uzaklık ρ’yu birbirine karıştırma."
+              }
+            },
+            {
+              "title": {
+                "tr": "Düzgün altıgeni altı eşkenar üçgenle gör"
+              },
+              "text": {
+                "tr": "Düzgün altıgende merkez açısı 60°dir. Merkezden komşu iki köşeye çizilen R uzunlukları bir ikizkenar üçgen kurar; tepe açısı 60° olunca öteki iki açı da 60° olur. Üçgen eşkenardır, bu yüzden R=a’dır. Apotem bu üçgenin yüksekliğidir: ρ=a√3/2.\n\nAltı eşkenar üçgenin alanından S=6·a²√3/4=3√3·a²/2 bulunur. Çevre 6 a’dır. Bir köşe atlayan kısa köşegen a√3, karşı köşelere giden uzun köşegen 2 a’dır. Örneğin a=4 ise kısa köşegen 4√3, uzun köşegen 8 ve alan 24√3 olur."
+              }
+            },
+            {
+              "title": {
+                "tr": "Genel çember formülünün arkasındaki dik üçgen"
+              },
+              "text": {
+                "tr": "Düzgün n-genin merkezini ve bir kenarının iki ucunu birleştir; sonra merkezden kenara dikme indir. İkizkenar üçgen iki eş dik üçgene ayrılır. Bu yarım üçgende açı θ=180°/n, hipotenüs R, karşı kenar a/2 ve komşu kenar ρ’dur. Dik üçgende sin θ=karşı/hipotenüs, cos θ=komşu/hipotenüs, tan θ=karşı/komşu olarak tanımlanır.\n\nBuradan a=2 R·sin(180°/n), ρ=R·cos(180°/n), S=nR²·sin(360°/n)/2 ve S=n·a²/[4 tan(180°/n)] elde edilir. Bu tamamlayıcı bağıntılarda açı birimi derecedir. Önce şekli tanıdığın üçgenlere ayırmak, özellikle kare ve altıgende daha az işlem gerektirir; trigonometrik bağıntılar bu ayrımın genel yazımıdır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Beşgenin özel oranı ve sonuç denetimi"
+              },
+              "text": {
+                "tr": "Düzgün beşgende iç açı 108°, dış açı 72°dir. Köşegenin kenara oranı (1+√5)/2’dir; bu sayıya altın oran denir. Kenar a ise her köşegen a·(1+√5)/2 olur. Bu bağıntı düzgün beşgene aittir; sıradan beşgenin köşegenleri eşit olmak zorunda değildir.\n\nÇözüm sonunda hem n’nin tam sayı olduğunu hem de istenenin açı mı uzunluk mu alan mı olduğunu denetle. Uzunluk birimle, alan birimkareyle yazılır. Düzgünlük yoksa eşit açı veya eşit kenar varsayma. Modelde köşegenleri açıp kapatmak bir açıklama aracıdır; bağımsız soru başarısının yerine geçmez."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "lessons",
+        "id": "bilimsel-gosterim-katsayi",
+        "after": "e1999d11c4c142ae9601969d670a1b514e2842f8724ed14ea560aef7604c8fba",
+        "prior": {
+          "body": [
+            {
+              "title": {
+                "tr": "Katsayı sayı türünü, üs ölçeği görünür kılar"
+              },
+              "text": {
+                "tr": "Sıfırdan farklı bir gerçek sayı a×10ⁿ biçiminde,1≤|a|<10 ve n tam sayı koşullarıyla yazıldığında standart bilimsel gösterimdedir. a katsayı, n üs; 10ⁿ ise ölçek çarpanıdır. 4,7×10⁵ ile 470000 aynı sayıdır. Burada 10⁵, katsayıya beş eklemek değil 100000 ile çarpmaktır.\n\nNegatif sayılar da bu tanıma girer:−6,2×10³ geçerlidir, çünkü katsayının mutlak değeri 6,2'dir. 10 veya −10 katsayıları sınırın dışında; 1 ve −1 içindedir. Sıfır için 1≤|a| koşulu sağlanamaz; standart sıfırdan farklı sayı tanımı içinde zorla bir katsayı seçilmez. Atölye sıfırı ayrıca belirtir ve sahte normalleştirme üretmez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Virgülün yeri ile üs birlikte hareket eder"
+              },
+              "text": {
+                "tr": "Olağan sayıdan bilimsel gösterime geçerken ilk sıfır olmayan rakamdan sonra virgül bırak. 720000 sayısında 7,2 elde etmek için beş basamak sola gidilir; sayı 7,2×10⁵'tir. Virgülün başlangıcı son sıfırın sağıdır; onu 7 ile 2 arasına taşıyan hareketleri say. Basamakları tek tek saymak ezberlenmiş sıfır sayısından daha güvenilirdir.\n\n0,000072 için 7,2'ye ulaşmak virgülü beş basamak sağa götürür; üs −5 olur. Bilimsel gösterimden olağan yazıma dönerken 10'un pozitif kuvveti virgülü sağa, negatif kuvveti sola taşır. İki dönüşümün yönünü karıştırmamak için çarpanı açık yaz:10⁻⁵=0,00001; 7,2 katı 0,000072'dir. Yaklaşık büyüklük kontrolü son basamak kadar önemlidir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Normalleştirmede değeri koru"
+              },
+              "text": {
+                "tr": "84×10⁻⁵ bir sayıyı doğru belirtir ama katsayı 84 olduğu için standart biçimde değildir. 84=8,4×10 olduğundan 84×10⁻⁵=8,4×10⁻⁴ yapılır. Katsayı 10'a bölünürken üs 1 artar; iki değişim birbirini dengeler. 0,84×10⁻⁵'te katsayı 10 ile çarpılırken üs 1 azalır:8,4×10⁻⁶.\n\nAtölyedeki katsayıyı 10'a böl veya 10 ile çarp işlemleri tam bu dengeyi gösterir. Ölçek değişirken olağan sayı sabit kalmalıdır. Katsayı 10'a eşit olduğunda hâlâ bir adım gerekir; doğru sınır 1≤|a|<10'dur. Son sayıdaki işaret normalleştirme sırasında korunur; negatif katsayıyı pozitif yapmak değeri koruyan işlem değildir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Toplama ve çıkarmada ortak ölçek kur"
+              },
+              "text": {
+                "tr": "3,2×10⁵+7×10⁴ ifadesinde doğrudan katsayıları toplayamazsın; birimler gibi ölçekler eşit olmalıdır. 7×10⁴=0,7×10⁵ yazınca toplam 3,9×10⁵ olur. İstersen küçük üssü ortak alıp(32+7)×10⁴=39×10⁴ yazabilir, sonra normalleştirebilirsin. İki yöntem aynı sayıyı verir.\n\nÇıkarmada da önce üsleri eşitle. Sonuç sıfırdan farklıysa katsayının mutlak değeri 1’den küçük veya 10’a eşit ya da büyük olduğunda yeniden normalleştir. 5×10³−4,8×10³=0,2×10³=2×10². Toplamada üsleri toplamak çarpım kuralını yanlış yere taşır. Sayıları olağan biçime açarak kaba sonuç kontrolü yapmak sıfırların arasında kaybolmayı önler."
+              }
+            },
+            {
+              "title": {
+                "tr": "Çarpma ve bölmede katsayı ile ölçeği ayır"
+              },
+              "text": {
+                "tr": "(a×10ᵐ)(b×10ⁿ)=(ab)×10ᵐ⁺ⁿ'dir. Katsayılar çarpılır, üsler toplanır; ardından standart katsayı aralığı denetlenir. Örneğin(6×10⁻³)(4×10⁵)=24×10²=2,4×10³. Ara katsayı 24 geçerlilik hatası değildir; sadece son bilimsel biçime henüz getirilmemiştir.\n\nBölmede b≠0 koşuluyla katsayılar bölünür ve üsler çıkarılır:(a×10ᵐ)/(b×10ⁿ)=(a/b)×10ᵐ⁻ⁿ. Paydadaki üs negatifse çıkarılan eksi işaretini koru. Bir sonucun üssünü söylemek tek başına sayıyı belirlemez; katsayı, işaret ve varsa fiziksel birim birlikte yazılmalıdır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Karşılaştırmada önce işaret ve standart biçim"
+              },
+              "text": {
+                "tr": "Pozitif, standart bilimsel gösterimlerde üs daha büyükse sayı daha büyüktür; üsler eşitse katsayıya bakılır. 9×10⁻⁸,2×10⁻⁹'dan büyüktür:−8>−9 veya ilkini 90×10⁻⁹ yazarak görebilirsin. Katsayılar standart değilse yalnız üs karşılaştırması güvenilir değildir; 0,01×10⁶ ile 9×10⁵ bunun nedenini gösterir.\n\nNegatif sayılarda önce mutlak büyüklüğü karşılaştırıp sayı doğrusundaki yönü hatırla:−8×10⁴=−80000,−2×10³=−2000'den küçüktür. Negatif bir üs sayıyı negatif yapmaz; işaret katsayıdan gelir. 10'un eşit üs aralıklarını gösteren çizgi logaritmik bir ölçektir; eşit aralıklar eşit toplamsal fark değil, eşit çarpan değişimi belirtir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Birim değişimi de 10'un kuvvetidir"
+              },
+              "text": {
+                "tr": "1 m=10³ mm olduğundan milimetre değerini metreye çevirirken 10³'e böl. 3,2×10⁶ mm=3,2×10³ m. Sayıdaki üssün değişmesi tek başına ölçülen uzunluğun değiştiği anlamına gelmez; kullanılan birim büyümüştür. Birim dönüşümü yapılmadan iki uzunluk sayısını doğrudan oranlamak yanlış model kurabilir.\n\nAlan ve hacim dönüşümünde uzunluk çarpanını sırasıyla karesine ve küpüne yükselt:1 m²=10⁶ mm²,1 m³=10⁹ mm³. Hız gibi türetilmiş birimlerde pay ve paydayı ayrı dönüştür. Bilimsel gösterim yalnız sıfırları kısaltma tekniği değil, işlemde boyutu ve büyüklüğü korumayı kolaylaştıran bir yazımdır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Kesin değer, yaklaşık değer ve ölçüm ayrımı"
+              },
+              "text": {
+                "tr": "Bir sayıyı tam olarak başka biçimde yazmak yuvarlama değildir:0,00000064=6,4×10⁻⁷ eşitliği kesindir. Katsayıyı 6 diye yuvarlarsan yaklaşık değer üretirsin ve≈ işaretiyle belirtmelisin. Soru yaklaşık bir sonuç istemiyorsa rakamları sırf kısa görünsün diye atma; son karşılaştırma veya işlem sonucu değişebilir.\n\nÖlçümün anlamlı basamakları deneysel kesinlik konusudur; bilimsel gösterimde katsayı kullanmak tek başına ölçüm hatasını bildirmez. Soru verilen sayıları tam kabul ediyorsa tam işle; ölçüm hassasiyeti veya yuvarlama kuralı verilmişse onu ayrıca uygula. Son kontrol: katsayı aralıkta mı, üs tam sayı mı, işaret ve birim doğru mu, geri açılan sayı başlangıçla aynı mı?"
+              }
+            },
+            {
+              "title": {
+                "tr": "Birbirini izleyen büyütmeleri çarp"
+              },
+              "text": {
+                "tr": "Büyütme katsayısı, sonraki uzunluğun önceki uzunluğa oranıdır. Bir görüntü önce 5 katına, sonra oluşan görüntü 25 katına çıkarılırsa toplam oran 5·25=125 olur. İki katsayının birimi yoktur. Bu yüzden 3,2×10⁻³ mm genişliğindeki bir çizgi 125 ile çarpıldığında sonuç 0,4 mm olur.\n\nAşama aşama kontrol et. 0,0032 mm ilk çarpımdan sonra 0,016 mm, ikinci çarpımdan sonra 0,4 mm olur. 5+25 toplarsan 30 kat bulur ve ikinci büyütmeyi ilk görüntüye uygulamamış olursun. Şemadaki kutular işlem sırasını gösterir. Fiziksel uzunluğu kutunun içindeki değerden oku."
+              }
+            },
+            {
+              "title": {
+                "tr": "Bir çözüm yolunu seçmeden önce koşulunu ara"
+              },
+              "text": {
+                "tr": "Olağan sayıyı kısaltmak için ilk sıfır olmayan rakamı bul. Katsayı aralık dışındaysa virgülü taşıdığın kadar üssü ters yönde değiştir. Çarpım ve bölümde katsayıları ayrı işle. Bölenin üssü negatifse 5−(−3)=8 gibi parantezle yaz. Toplama ve çıkarmada sayıları önce aynı 10 kuvvetiyle ifade et. Bir birim dönüşümü gerekiyorsa niceliğin birimini her adımda yaz.\n\nYalnız pozitif ve standart biçimde olan iki sayıda büyük üs tek başına daha büyük sayıyı gösterir. 0,004×10⁷=4×10⁴ iken 7×10⁵ daha büyüktür. İlk ifadenin 7 üssünü doğrudan karşılaştırmak yanıltır. İki negatif sayıda önce büyüklükleri karşılaştır ve sıralamayı ters çevir. ‘En az 10⁶’ ifadesinde 10⁶ sınırı dahildir. ‘En çok 10⁻³’ ifadesinde 10⁻³ sınırı dahildir."
+              }
+            },
+            {
+              "title": {
+                "tr": "İlk bozulan eşitliği bulup yeniden dene"
+              },
+              "text": {
+                "tr": "Bir sonuç beklediğinden çok farklıysa ilk adımı denetle. 2,6×10⁵+9×10⁴ için (2,6+9)×10⁹ yazmak iki farklı ölçeği aynı sayar ve çarpım kuralını toplama işlemine taşır. İlk doğru dönüşüm 9×10⁴=0,9×10⁵’tir. (2,6+0,9)×10⁵=3,5×10⁵ sonucu, 260.000+90.000=350.000 işlemiyle doğrulanır.\n\nAynı onarımı yeni sayılarla uygula. 7,3×10⁵+2×10⁴ ifadesini çözmeden önce ikinci terimin ortak ölçekte kaç yüz binlik olduğunu tahmin et. 2×10⁴=0,2×10⁵ olduğu için toplam 7,5×10⁵’tir. Hatalı sonucun işlem türünden, sıralamadan ya da birimden kaynaklandığını bulursan bir sonraki denemede hangi adımı kontrol edeceğini bilirsin."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "tyt-geo-cokgenler-032",
+        "after": "c51ab3621d8938adde8d8adf81df3ea55756c6eb566bc98623d3aaa0aed402b0",
+        "prior": {
+          "source": "MEBİ TYT Matematik Konu Özetleri: Çokgenler (basılı 139/PDF 141); Aurelia Tüm Geometri Özeti PDF 9. Kaynak kavramlarından yazılmış özgün anlatım ve öğretim soruları.",
+          "sections": [
+            {
+              "title": "Önce kapalı şekli ve köşeleri tanı",
+              "paragraphs": [
+                "Çokgen, düzlemde doğru parçalarının sırayla birleşip kapandığı şekildir. Bu derste kenarlar yalnız komşu uçlarda kesişir; üst üste binmez ve birbirini ortadan kesmez. Böylece basit çokgenlerden söz ederiz. Bir köşede doğrusal devam eden iki parçayı ayrı iki kenar saymayız. En az üç köşe gerekir; n kenar sayısıysa n≥3 bir tam sayıdır.",
+                "Kenar iki komşu köşeyi birleştirir. Köşegen ise komşu olmayan iki köşeyi birleştiren doğru parçasıdır. Dört köşeli bir şeklin dört kenarı ve dört köşesi vardır; kenarı uzatmak yeni köşe oluşturmaz. Kendi içinden geçen yıldız çizimlerine bu dersteki açı toplamlarını doğrudan uygulama."
+              ]
+            },
+            {
+              "title": "Dışbükey ve içbükey: çizimdeki fark",
+              "paragraphs": [
+                "Her iç açı 180°den küçükse basit çokgen dışbükeydir. En az bir iç açı 180°den büyükse içbükeydir; o köşede şekil içeri çöker. İçbükey bir çokgen de basit ve kapalı olabilir. Çizimin görünüşünü kontrol ederken bir kenar uzantısını yeni kenar diye sayma.",
+                "Dışbükey bir çokgende seçtiğin köşeden diğer uygun köşelere çizilen köşegenler içeride kalır. İçbükeyde bazı köşegenler dışarı taşabilir. Bu nedenle bütün köşegenleri tek köşeden çizerek üçgenlere ayırma açıklamasını dışbükey şekil üzerinde yaparız; basit içbükey çokgen de uygun köşegenlerle n−2 üçgene ayrılır."
+              ]
+            },
+            {
+              "title": "İç açı toplamını üçgenlerden çıkar",
+              "paragraphs": [
+                "Dışbükey n kenarlı bir çokgende bir köşeden başlayıp komşu olmayan bütün köşelere köşegen çiz. Şekil n−2 üçgene ayrılır. Her üçgende iç açı toplamı 180° olduğundan toplam (n−2)·180°dir. Örneğin yedigen beş üçgene ayrılır ve toplam 900° olur.",
+                "Bu toplam için kenarların veya açıların eşit olması gerekmez. Fakat toplamı n’ye bölüp tek bir iç açıyı bulmak için bütün iç açıların eşit olduğu ayrıca bilinmelidir. Bir açı 180°den büyükse toplam formülü bozulmaz; içbükey açıyı küçük açıyla değiştirmek toplamı bozar."
+              ]
+            },
+            {
+              "title": "Dış açıda aynı dönüş yönünü koru",
+              "paragraphs": [
+                "Dışbükey çokgenin çevresinde aynı yönde yürüdüğünü düşün. Her köşede ileriye uzatılmış kenardan sonraki kenara dönersin. Her köşeden bu biçimde bir dış açı seçince bir tam dönüş yapılır: toplam 360°dir. Her iç açı ile yanındaki böyle bir dış açı bütünlerdir; toplamları 180°dir.",
+                "Aynı köşedeki iki farklı dış açıyı birden toplama ve bazı köşelerde yön değiştirme. İçbükey çokgende yönlü dönüşler kullanılır; içeri çöken köşenin dönüşü ters işaretlidir. Bütün dönüş büyüklüklerini pozitif alarak 360° demek genel olarak doğru değildir."
+              ]
+            },
+            {
+              "title": "Köşegenleri çift saymadan say",
+              "paragraphs": [
+                "Bir köşeden kendisine veya iki komşusuna köşegen çizilemez; bu yüzden o köşeden n−3 köşegen çıkar. Bütün n köşede sayarsan n(n−3) elde edersin; fakat her köşegeni iki ucundan da saymış olursun. Farklı köşegen sayısı D=n(n−3)/2 olur.",
+                "Sekizgende bir köşeden 5, toplamda 20 köşegen vardır. Bir köşeden çizilen köşegen sayısı ile ortaya çıkan üçgen sayısı aynı değildir: ilki n−3, ikincisi n−2’dir. D verilen bir soruda n≥3 tam sayı koşulunu sağlayan kökü seç; negatif kök bir çokgeni temsil etmez."
+              ]
+            },
+            {
+              "title": "Düzgün olmak iki eşitlik ister",
+              "paragraphs": [
+                "Düzgün çokgende bütün kenar uzunlukları birbirine eşit ve bütün iç açı ölçüleri birbirine eşittir. Yalnız eş kenarlı bir eşkenar dörtgenin açıları 60° ve 120° olabilir; düzgün değildir. Yalnız eş açılı bir dikdörtgenin komşu kenarları 3 ve 5 olabilir; o da düzgün değildir.",
+                "Düzgün n-gende bir dış açı δ=360°/n, bir iç açı α=180°−δ olur. Tersi yönde n=360°/δ=360°/(180°−α) yazılır. Sonuç en az 3 olan tam sayı değilse verilen açıyla düzgün çokgen yoktur. Örneğin 145° iç açı 35° dış açı verir; 360/35 tam sayı değildir."
+              ]
+            },
+            {
+              "title": "Merkez açısı, çevre ve alanı ilişkilendir",
+              "paragraphs": [
+                "Düzgün çokgenin merkezi bütün köşelere aynı R uzaklığındadır; R çevrel çember yarıçapıdır. Merkezi ardışık iki köşeye bağladığında merkez açısı 360°/n olur. Bu merkez açısı bir dış açıyla aynı ölçüdedir; farklı yerlerdeki iki açıdan söz ediyoruz. Kenar uzunluğu a ise çevre Ç=n·a’dır.",
+                "Merkezden bir kenara indirilen dik uzaklığa apotem denir ve ρ ile gösterilir. Merkezden bütün köşelere çizilen parçalar n eş ikizkenar üçgen oluşturur. Her birinin tabanı a, yüksekliği ρ olduğundan toplam alan S=n·a·ρ/2=Ç·ρ/2 olur. Köşeye uzaklık R ile kenara dik uzaklık ρ’yu birbirine karıştırma."
+              ]
+            },
+            {
+              "title": "Düzgün altıgeni altı eşkenar üçgenle gör",
+              "paragraphs": [
+                "Düzgün altıgende merkez açısı 60°dir. Merkezden komşu iki köşeye çizilen R uzunlukları bir ikizkenar üçgen kurar; tepe açısı 60° olunca öteki iki açı da 60° olur. Üçgen eşkenardır, bu yüzden R=a’dır. Apotem bu üçgenin yüksekliğidir: ρ=a√3/2.",
+                "Altı eşkenar üçgenin alanından S=6·a²√3/4=3√3·a²/2 bulunur. Çevre 6 a’dır. Bir köşe atlayan kısa köşegen a√3, karşı köşelere giden uzun köşegen 2 a’dır. Örneğin a=4 ise kısa köşegen 4√3, uzun köşegen 8 ve alan 24√3 olur."
+              ]
+            },
+            {
+              "title": "Genel çember formülünün arkasındaki dik üçgen",
+              "paragraphs": [
+                "Düzgün n-genin merkezini ve bir kenarının iki ucunu birleştir; sonra merkezden kenara dikme indir. İkizkenar üçgen iki eş dik üçgene ayrılır. Bu yarım üçgende açı θ=180°/n, hipotenüs R, karşı kenar a/2 ve komşu kenar ρ’dur. Dik üçgende sin θ=karşı/hipotenüs, cos θ=komşu/hipotenüs, tan θ=karşı/komşu olarak tanımlanır.",
+                "Buradan a=2 R·sin(180°/n), ρ=R·cos(180°/n), S=nR²·sin(360°/n)/2 ve S=n·a²/[4 tan(180°/n)] elde edilir. Bu tamamlayıcı bağıntılarda açı birimi derecedir. Önce şekli tanıdığın üçgenlere ayırmak, özellikle kare ve altıgende daha az işlem gerektirir; trigonometrik bağıntılar bu ayrımın genel yazımıdır."
+              ]
+            },
+            {
+              "title": "Beşgenin özel oranı ve sonuç denetimi",
+              "paragraphs": [
+                "Düzgün beşgende iç açı 108°, dış açı 72°dir. Köşegenin kenara oranı (1+√5)/2’dir; bu sayıya altın oran denir. Kenar a ise her köşegen a·(1+√5)/2 olur. Bu bağıntı düzgün beşgene aittir; sıradan beşgenin köşegenleri eşit olmak zorunda değildir.",
+                "Çözüm sonunda hem n’nin tam sayı olduğunu hem de istenenin açı mı uzunluk mu alan mı olduğunu denetle. Uzunluk birimle, alan birimkareyle yazılır. Düzgünlük yoksa eşit açı veya eşit kenar varsayma. Modelde köşegenleri açıp kapatmak bir açıklama aracıdır; bağımsız soru başarısının yerine geçmez."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "bilimsel-gosterim-katsayi",
+        "after": "ee8cacef437de0ae24fd64c509faac78b489d540a0085a442dff617084fcaa57",
+        "prior": {
+          "sections": [
+            {
+              "title": "Katsayı sayı türünü, üs ölçeği görünür kılar",
+              "paragraphs": [
+                "Sıfırdan farklı bir gerçek sayı a×10ⁿ biçiminde,1≤|a|<10 ve n tam sayı koşullarıyla yazıldığında standart bilimsel gösterimdedir. a katsayı, n üs; 10ⁿ ise ölçek çarpanıdır. 4,7×10⁵ ile 470000 aynı sayıdır. Burada 10⁵, katsayıya beş eklemek değil 100000 ile çarpmaktır.",
+                "Negatif sayılar da bu tanıma girer:−6,2×10³ geçerlidir, çünkü katsayının mutlak değeri 6,2'dir. 10 veya −10 katsayıları sınırın dışında; 1 ve −1 içindedir. Sıfır için 1≤|a| koşulu sağlanamaz; standart sıfırdan farklı sayı tanımı içinde zorla bir katsayı seçilmez. Atölye sıfırı ayrıca belirtir ve sahte normalleştirme üretmez."
+              ]
+            },
+            {
+              "title": "Virgülün yeri ile üs birlikte hareket eder",
+              "paragraphs": [
+                "Olağan sayıdan bilimsel gösterime geçerken ilk sıfır olmayan rakamdan sonra virgül bırak. 720000 sayısında 7,2 elde etmek için beş basamak sola gidilir; sayı 7,2×10⁵'tir. Virgülün başlangıcı son sıfırın sağıdır; onu 7 ile 2 arasına taşıyan hareketleri say. Basamakları tek tek saymak ezberlenmiş sıfır sayısından daha güvenilirdir.",
+                "0,000072 için 7,2'ye ulaşmak virgülü beş basamak sağa götürür; üs −5 olur. Bilimsel gösterimden olağan yazıma dönerken 10'un pozitif kuvveti virgülü sağa, negatif kuvveti sola taşır. İki dönüşümün yönünü karıştırmamak için çarpanı açık yaz:10⁻⁵=0,00001; 7,2 katı 0,000072'dir. Yaklaşık büyüklük kontrolü son basamak kadar önemlidir."
+              ]
+            },
+            {
+              "title": "Normalleştirmede değeri koru",
+              "paragraphs": [
+                "84×10⁻⁵ bir sayıyı doğru belirtir ama katsayı 84 olduğu için standart biçimde değildir. 84=8,4×10 olduğundan 84×10⁻⁵=8,4×10⁻⁴ yapılır. Katsayı 10'a bölünürken üs 1 artar; iki değişim birbirini dengeler. 0,84×10⁻⁵'te katsayı 10 ile çarpılırken üs 1 azalır:8,4×10⁻⁶.",
+                "Atölyedeki katsayıyı 10'a böl veya 10 ile çarp işlemleri tam bu dengeyi gösterir. Ölçek değişirken olağan sayı sabit kalmalıdır. Katsayı 10'a eşit olduğunda hâlâ bir adım gerekir; doğru sınır 1≤|a|<10'dur. Son sayıdaki işaret normalleştirme sırasında korunur; negatif katsayıyı pozitif yapmak değeri koruyan işlem değildir."
+              ]
+            },
+            {
+              "title": "Toplama ve çıkarmada ortak ölçek kur",
+              "paragraphs": [
+                "3,2×10⁵+7×10⁴ ifadesinde doğrudan katsayıları toplayamazsın; birimler gibi ölçekler eşit olmalıdır. 7×10⁴=0,7×10⁵ yazınca toplam 3,9×10⁵ olur. İstersen küçük üssü ortak alıp(32+7)×10⁴=39×10⁴ yazabilir, sonra normalleştirebilirsin. İki yöntem aynı sayıyı verir.",
+                "Çıkarmada da önce üsleri eşitle. Sonuç sıfırdan farklıysa katsayının mutlak değeri 1’den küçük veya 10’a eşit ya da büyük olduğunda yeniden normalleştir. 5×10³−4,8×10³=0,2×10³=2×10². Toplamada üsleri toplamak çarpım kuralını yanlış yere taşır. Sayıları olağan biçime açarak kaba sonuç kontrolü yapmak sıfırların arasında kaybolmayı önler."
+              ]
+            },
+            {
+              "title": "Çarpma ve bölmede katsayı ile ölçeği ayır",
+              "paragraphs": [
+                "(a×10ᵐ)(b×10ⁿ)=(ab)×10ᵐ⁺ⁿ'dir. Katsayılar çarpılır, üsler toplanır; ardından standart katsayı aralığı denetlenir. Örneğin(6×10⁻³)(4×10⁵)=24×10²=2,4×10³. Ara katsayı 24 geçerlilik hatası değildir; sadece son bilimsel biçime henüz getirilmemiştir.",
+                "Bölmede b≠0 koşuluyla katsayılar bölünür ve üsler çıkarılır:(a×10ᵐ)/(b×10ⁿ)=(a/b)×10ᵐ⁻ⁿ. Paydadaki üs negatifse çıkarılan eksi işaretini koru. Bir sonucun üssünü söylemek tek başına sayıyı belirlemez; katsayı, işaret ve varsa fiziksel birim birlikte yazılmalıdır."
+              ]
+            },
+            {
+              "title": "Karşılaştırmada önce işaret ve standart biçim",
+              "paragraphs": [
+                "Pozitif, standart bilimsel gösterimlerde üs daha büyükse sayı daha büyüktür; üsler eşitse katsayıya bakılır. 9×10⁻⁸,2×10⁻⁹'dan büyüktür:−8>−9 veya ilkini 90×10⁻⁹ yazarak görebilirsin. Katsayılar standart değilse yalnız üs karşılaştırması güvenilir değildir; 0,01×10⁶ ile 9×10⁵ bunun nedenini gösterir.",
+                "Negatif sayılarda önce mutlak büyüklüğü karşılaştırıp sayı doğrusundaki yönü hatırla:−8×10⁴=−80000,−2×10³=−2000'den küçüktür. Negatif bir üs sayıyı negatif yapmaz; işaret katsayıdan gelir. 10'un eşit üs aralıklarını gösteren çizgi logaritmik bir ölçektir; eşit aralıklar eşit toplamsal fark değil, eşit çarpan değişimi belirtir."
+              ]
+            },
+            {
+              "title": "Birim değişimi de 10'un kuvvetidir",
+              "paragraphs": [
+                "1 m=10³ mm olduğundan milimetre değerini metreye çevirirken 10³'e böl. 3,2×10⁶ mm=3,2×10³ m. Sayıdaki üssün değişmesi tek başına ölçülen uzunluğun değiştiği anlamına gelmez; kullanılan birim büyümüştür. Birim dönüşümü yapılmadan iki uzunluk sayısını doğrudan oranlamak yanlış model kurabilir.",
+                "Alan ve hacim dönüşümünde uzunluk çarpanını sırasıyla karesine ve küpüne yükselt:1 m²=10⁶ mm²,1 m³=10⁹ mm³. Hız gibi türetilmiş birimlerde pay ve paydayı ayrı dönüştür. Bilimsel gösterim yalnız sıfırları kısaltma tekniği değil, işlemde boyutu ve büyüklüğü korumayı kolaylaştıran bir yazımdır."
+              ]
+            },
+            {
+              "title": "Kesin değer, yaklaşık değer ve ölçüm ayrımı",
+              "paragraphs": [
+                "Bir sayıyı tam olarak başka biçimde yazmak yuvarlama değildir:0,00000064=6,4×10⁻⁷ eşitliği kesindir. Katsayıyı 6 diye yuvarlarsan yaklaşık değer üretirsin ve≈ işaretiyle belirtmelisin. Soru yaklaşık bir sonuç istemiyorsa rakamları sırf kısa görünsün diye atma; son karşılaştırma veya işlem sonucu değişebilir.",
+                "Ölçümün anlamlı basamakları deneysel kesinlik konusudur; bilimsel gösterimde katsayı kullanmak tek başına ölçüm hatasını bildirmez. Soru verilen sayıları tam kabul ediyorsa tam işle; ölçüm hassasiyeti veya yuvarlama kuralı verilmişse onu ayrıca uygula. Son kontrol: katsayı aralıkta mı, üs tam sayı mı, işaret ve birim doğru mu, geri açılan sayı başlangıçla aynı mı?"
+              ]
+            },
+            {
+              "title": "Birbirini izleyen büyütmeleri çarp",
+              "paragraphs": [
+                "Büyütme katsayısı, sonraki uzunluğun önceki uzunluğa oranıdır. Bir görüntü önce 5 katına, sonra oluşan görüntü 25 katına çıkarılırsa toplam oran 5·25=125 olur. İki katsayının birimi yoktur. Bu yüzden 3,2×10⁻³ mm genişliğindeki bir çizgi 125 ile çarpıldığında sonuç 0,4 mm olur.",
+                "Aşama aşama kontrol et. 0,0032 mm ilk çarpımdan sonra 0,016 mm, ikinci çarpımdan sonra 0,4 mm olur. 5+25 toplarsan 30 kat bulur ve ikinci büyütmeyi ilk görüntüye uygulamamış olursun. Şemadaki kutular işlem sırasını gösterir. Fiziksel uzunluğu kutunun içindeki değerden oku."
+              ]
+            },
+            {
+              "title": "Bir çözüm yolunu seçmeden önce koşulunu ara",
+              "paragraphs": [
+                "Olağan sayıyı kısaltmak için ilk sıfır olmayan rakamı bul. Katsayı aralık dışındaysa virgülü taşıdığın kadar üssü ters yönde değiştir. Çarpım ve bölümde katsayıları ayrı işle. Bölenin üssü negatifse 5−(−3)=8 gibi parantezle yaz. Toplama ve çıkarmada sayıları önce aynı 10 kuvvetiyle ifade et. Bir birim dönüşümü gerekiyorsa niceliğin birimini her adımda yaz.",
+                "Yalnız pozitif ve standart biçimde olan iki sayıda büyük üs tek başına daha büyük sayıyı gösterir. 0,004×10⁷=4×10⁴ iken 7×10⁵ daha büyüktür. İlk ifadenin 7 üssünü doğrudan karşılaştırmak yanıltır. İki negatif sayıda önce büyüklükleri karşılaştır ve sıralamayı ters çevir. ‘En az 10⁶’ ifadesinde 10⁶ sınırı dahildir. ‘En çok 10⁻³’ ifadesinde 10⁻³ sınırı dahildir."
+              ],
+              "table": {
+                "headers": [
+                  "Yöntem",
+                  "Geçerli yol",
+                  "Sık hata",
+                  "Başka bir örnek"
+                ],
+                "rows": [
+                  [
+                    "Olağan sayıdan gösterime",
+                    "0,00068 = 6,8×10⁻⁴",
+                    "Üssü pozitif yazmak 68.000 verir.",
+                    "0,00068 m = 0,68 mm"
+                  ],
+                  [
+                    "Katsayıyı normalleştir",
+                    "0,54×10⁶ = 5,4×10⁵",
+                    "Katsayı büyürken üs aynı kalırsa sayı 10 kat büyür.",
+                    "54 milyon = 5,4×10⁷"
+                  ],
+                  [
+                    "Çarpma ve bölme",
+                    "(9×10⁴) ÷ (3×10⁻³) = 3×10⁷",
+                    "Üsleri toplamak 3×10¹ verir.",
+                    "Her biri 4×10² g olan 6×10³ kutunun toplam kütlesi 2,4×10³ kg’dır."
+                  ],
+                  [
+                    "Aynı ölçekle topla",
+                    "4,8×10⁸ + 3×10⁷ = 5,1×10⁸",
+                    "İkinci terimi 3×10⁸ saymak onu 10 kat büyütür.",
+                    "480 milyon + 30 milyon = 510 milyon"
+                  ],
+                  [
+                    "İşareti ve katsayıyı kontrol et",
+                    "2,3×10⁶ > 8,7×10⁵",
+                    "Standart dışı 0,002×10⁶ için büyük üs kuralı geçmez.",
+                    "−2.300.000 < −870.000"
+                  ],
+                  [
+                    "Birimi dönüştür",
+                    "6,4×10⁶ mm = 6,4×10³ m",
+                    "Alanı uzunluk çarpanıyla dönüştürmek yanlıştır.",
+                    "6,4×10⁶ mm² = 6,4 m²"
+                  ]
+                ]
+              }
+            },
+            {
+              "title": "İlk bozulan eşitliği bulup yeniden dene",
+              "paragraphs": [
+                "Bir sonuç beklediğinden çok farklıysa ilk adımı denetle. 2,6×10⁵+9×10⁴ için (2,6+9)×10⁹ yazmak iki farklı ölçeği aynı sayar ve çarpım kuralını toplama işlemine taşır. İlk doğru dönüşüm 9×10⁴=0,9×10⁵’tir. (2,6+0,9)×10⁵=3,5×10⁵ sonucu, 260.000+90.000=350.000 işlemiyle doğrulanır.",
+                "Aynı onarımı yeni sayılarla uygula. 7,3×10⁵+2×10⁴ ifadesini çözmeden önce ikinci terimin ortak ölçekte kaç yüz binlik olduğunu tahmin et. 2×10⁴=0,2×10⁵ olduğu için toplam 7,5×10⁵’tir. Hatalı sonucun işlem türünden, sıralamadan ya da birimden kaynaklandığını bulursan bir sonraki denemede hangi adımı kontrol edeceğini bilirsin."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-geo-cokgenler-032",
+        "after": "f64b7f445578c26fb30ded80cde6993d78b7b69cc9149bd54d97c185f378e041",
+        "prior": {
+          "source": "MEBİ TYT Matematik Konu Özetleri: Çokgenler (basılı 139/PDF 141); Aurelia Tüm Geometri Özeti PDF 9. Kaynak kavramlarından yazılmış özgün anlatım ve öğretim soruları.",
+          "sections": [
+            {
+              "title": "Çokgen ve köşegen",
+              "text": [
+                "Basit çokgende n≥3 tam sayı; köşegen komşu olmayan köşeleri birleştirir. Bir köşeden n−3, tümünde n(n−3)/2 köşegen."
+              ]
+            },
+            {
+              "title": "İç ve dış açı toplamları",
+              "text": [
+                "Basit n-gende iç açı toplamı(n−2)·180°. Dışbükeyde aynı yönde birer dış açı toplam 360°; içbükeyde yönlü dönüş işareti gerekir."
+              ]
+            },
+            {
+              "title": "Düzgünlük ve varlık",
+              "text": [
+                "Bütün kenarlar ve bütün iç açılar eşit olmalı. δ=360°/n, α=180°−δ. n=360°/δ en az 3 tam sayı olmalı."
+              ]
+            },
+            {
+              "title": "Merkez, çevre ve alan",
+              "text": [
+                "Kenar a, apotemρ ise Ç=na, S=naρ/2. Çevrel yarıçap R: a=2 Rsin(180°/n),ρ=Rcos(180°/n)."
+              ]
+            },
+            {
+              "title": "Altıgen ve beşgen",
+              "text": [
+                "Düzgün altıgende R=a,ρ=a√3/2, S=3√3 a²/2; kısa köşegen a√3, uzun 2 a. Düzgün beşgende köşegen/kenar=(1+√5)/2."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "detail-207",
+        "after": "16f61df6146bc0c9f69a18f4a39a2fdd044cb022d0269995bdee9d3bc5f583bc",
+        "prior": {
+          "sections": [
+            {
+              "title": "Katsayı sayı türünü, üs ölçeği görünür kılar",
+              "text": [
+                "Sıfırdan farklı bir gerçek sayı a×10ⁿ biçiminde,1≤|a|<10 ve n tam sayı koşullarıyla yazıldığında standart bilimsel gösterimdedir. a katsayı, n üs; 10ⁿ ise ölçek çarpanıdır. 4,7×10⁵ ile 470000 aynı sayıdır. Burada 10⁵, katsayıya beş eklemek değil 100000 ile çarpmaktır."
+              ]
+            },
+            {
+              "title": "Virgülün yeri ile üs birlikte hareket eder",
+              "text": [
+                "Olağan sayıdan bilimsel gösterime geçerken ilk sıfır olmayan rakamdan sonra virgül bırak. 720000 sayısında 7,2 elde etmek için beş basamak sola gidilir; sayı 7,2×10⁵'tir. Virgülün başlangıcı son sıfırın sağıdır; onu 7 ile 2 arasına taşıyan hareketleri say. Basamakları tek tek saymak ezberlenmiş sıfır sayısından daha güvenilirdir."
+              ]
+            },
+            {
+              "title": "Normalleştirmede değeri koru",
+              "text": [
+                "84×10⁻⁵ bir sayıyı doğru belirtir ama katsayı 84 olduğu için standart biçimde değildir. 84=8,4×10 olduğundan 84×10⁻⁵=8,4×10⁻⁴ yapılır. Katsayı 10'a bölünürken üs 1 artar; iki değişim birbirini dengeler. 0,84×10⁻⁵'te katsayı 10 ile çarpılırken üs 1 azalır:8,4×10⁻⁶."
+              ]
+            },
+            {
+              "title": "Toplama ve çıkarmada ortak ölçek kur",
+              "text": [
+                "3,2×10⁵+7×10⁴ ifadesinde doğrudan katsayıları toplayamazsın; birimler gibi ölçekler eşit olmalıdır. 7×10⁴=0,7×10⁵ yazınca toplam 3,9×10⁵ olur. İstersen küçük üssü ortak alıp(32+7)×10⁴=39×10⁴ yazabilir, sonra normalleştirebilirsin. İki yöntem aynı sayıyı verir."
+              ]
+            },
+            {
+              "title": "Çarpma ve bölmede katsayı ile ölçeği ayır",
+              "text": [
+                "(a×10ᵐ)(b×10ⁿ)=(ab)×10ᵐ⁺ⁿ'dir. Katsayılar çarpılır, üsler toplanır; ardından standart katsayı aralığı denetlenir. Örneğin(6×10⁻³)(4×10⁵)=24×10²=2,4×10³. Ara katsayı 24 geçerlilik hatası değildir; sadece son bilimsel biçime henüz getirilmemiştir."
+              ]
+            },
+            {
+              "title": "Karşılaştırmada önce işaret ve standart biçim",
+              "text": [
+                "Pozitif, standart bilimsel gösterimlerde üs daha büyükse sayı daha büyüktür; üsler eşitse katsayıya bakılır. 9×10⁻⁸,2×10⁻⁹'dan büyüktür:−8>−9 veya ilkini 90×10⁻⁹ yazarak görebilirsin. Katsayılar standart değilse yalnız üs karşılaştırması güvenilir değildir; 0,01×10⁶ ile 9×10⁵ bunun nedenini gösterir."
+              ]
+            },
+            {
+              "title": "Birim değişimi de 10'un kuvvetidir",
+              "text": [
+                "1 m=10³ mm olduğundan milimetre değerini metreye çevirirken 10³'e böl. 3,2×10⁶ mm=3,2×10³ m. Sayıdaki üssün değişmesi tek başına ölçülen uzunluğun değiştiği anlamına gelmez; kullanılan birim büyümüştür. Birim dönüşümü yapılmadan iki uzunluk sayısını doğrudan oranlamak yanlış model kurabilir."
+              ]
+            },
+            {
+              "title": "Kesin değer, yaklaşık değer ve ölçüm ayrımı",
+              "text": [
+                "Bir sayıyı tam olarak başka biçimde yazmak yuvarlama değildir:0,00000064=6,4×10⁻⁷ eşitliği kesindir. Katsayıyı 6 diye yuvarlarsan yaklaşık değer üretirsin ve≈ işaretiyle belirtmelisin. Soru yaklaşık bir sonuç istemiyorsa rakamları sırf kısa görünsün diye atma; son karşılaştırma veya işlem sonucu değişebilir."
+              ]
+            },
+            {
+              "title": "Birbirini izleyen büyütmeleri çarp",
+              "text": [
+                "Büyütme katsayısı, sonraki uzunluğun önceki uzunluğa oranıdır. Bir görüntü önce 5 katına, sonra oluşan görüntü 25 katına çıkarılırsa toplam oran 5·25=125 olur. İki katsayının birimi yoktur. Bu yüzden 3,2×10⁻³ mm genişliğindeki bir çizgi 125 ile çarpıldığında sonuç 0,4 mm olur."
+              ]
+            },
+            {
+              "title": "Bir çözüm yolunu seçmeden önce koşulunu ara",
+              "text": [
+                "Olağan sayıyı kısaltmak için ilk sıfır olmayan rakamı bul. Katsayı aralık dışındaysa virgülü taşıdığın kadar üssü ters yönde değiştir. Çarpım ve bölümde katsayıları ayrı işle. Bölenin üssü negatifse 5−(−3)=8 gibi parantezle yaz. Toplama ve çıkarmada sayıları önce aynı 10 kuvvetiyle ifade et. Bir birim dönüşümü gerekiyorsa niceliğin birimini her adımda yaz."
+              ],
+              "table": {
+                "headers": [
+                  "Yöntem",
+                  "Geçerli yol",
+                  "Sık hata",
+                  "Başka bir örnek"
+                ],
+                "rows": [
+                  [
+                    "Olağan sayıdan gösterime",
+                    "0,00068 = 6,8×10⁻⁴",
+                    "Üssü pozitif yazmak 68.000 verir.",
+                    "0,00068 m = 0,68 mm"
+                  ],
+                  [
+                    "Katsayıyı normalleştir",
+                    "0,54×10⁶ = 5,4×10⁵",
+                    "Katsayı büyürken üs aynı kalırsa sayı 10 kat büyür.",
+                    "54 milyon = 5,4×10⁷"
+                  ],
+                  [
+                    "Çarpma ve bölme",
+                    "(9×10⁴) ÷ (3×10⁻³) = 3×10⁷",
+                    "Üsleri toplamak 3×10¹ verir.",
+                    "Her biri 4×10² g olan 6×10³ kutunun toplam kütlesi 2,4×10³ kg’dır."
+                  ],
+                  [
+                    "Aynı ölçekle topla",
+                    "4,8×10⁸ + 3×10⁷ = 5,1×10⁸",
+                    "İkinci terimi 3×10⁸ saymak onu 10 kat büyütür.",
+                    "480 milyon + 30 milyon = 510 milyon"
+                  ],
+                  [
+                    "İşareti ve katsayıyı kontrol et",
+                    "2,3×10⁶ > 8,7×10⁵",
+                    "Standart dışı 0,002×10⁶ için büyük üs kuralı geçmez.",
+                    "−2.300.000 < −870.000"
+                  ],
+                  [
+                    "Birimi dönüştür",
+                    "6,4×10⁶ mm = 6,4×10³ m",
+                    "Alanı uzunluk çarpanıyla dönüştürmek yanlıştır.",
+                    "6,4×10⁶ mm² = 6,4 m²"
+                  ]
+                ]
+              }
+            },
+            {
+              "title": "İlk bozulan eşitliği bulup yeniden dene",
+              "text": [
+                "Bir sonuç beklediğinden çok farklıysa ilk adımı denetle. 2,6×10⁵+9×10⁴ için (2,6+9)×10⁹ yazmak iki farklı ölçeği aynı sayar ve çarpım kuralını toplama işlemine taşır. İlk doğru dönüşüm 9×10⁴=0,9×10⁵’tir. (2,6+0,9)×10⁵=3,5×10⁵ sonucu, 260.000+90.000=350.000 işlemiyle doğrulanır."
+              ]
+            }
+          ]
+        }
+      }
+    ]
   }
 ]

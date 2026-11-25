@@ -55,6 +55,7 @@ const packs: PolygonPack032[] = [
         title: "Köşegenleri çift saymadan say",
         paragraphs: [
           "Bir köşeden kendisine veya iki komşusuna köşegen çizilemez; bu yüzden o köşeden n−3 köşegen çıkar. Bütün n köşede sayarsan n(n−3) elde edersin; fakat her köşegeni iki ucundan da saymış olursun. Farklı köşegen sayısı D=n(n−3)/2 olur.",
+          "Köşegen sayısı kenar sayısının iki katıysa n(n−3)/2=2n olur. n en az 3 olduğu için iki tarafı n’ye böl. n−3=4 ve n=7 bulunur. Yedigen düzgünse her iç açı 900/7° olur. Modelde 7 kenarı seçip 14 köşegenle doğrula.",
           "Sekizgende bir köşeden 5, toplamda 20 köşegen vardır. Bir köşeden çizilen köşegen sayısı ile ortaya çıkan üçgen sayısı aynı değildir: ilki n−3, ikincisi n−2’dir. D verilen bir soruda n≥3 tam sayı koşulunu sağlayan kökü seç; negatif kök bir çokgeni temsil etmez.",
         ],
       },
@@ -534,8 +535,10 @@ const packs: PolygonPack032[] = [
     sheet: [
       {
         title: "Çokgen ve köşegen",
+        figureTitle: "Köşegenleri çift saymadan say",
         text: [
           "Basit çokgende n≥3 tam sayı; köşegen komşu olmayan köşeleri birleştirir. Bir köşeden n−3, tümünde n(n−3)/2 köşegen.",
+          "D=2n ise n’ye bölerek (n−3)/2=2 yaz. n=7 için D=14 olur. Düzgün yedigende iç açı toplamı 900°, her iç açı 900/7° olur.",
         ],
       },
       {
@@ -564,7 +567,7 @@ const packs: PolygonPack032[] = [
       },
     ],
     source:
-      "MEBİ TYT Matematik Konu Özetleri: Çokgenler (basılı 139/PDF 141); Aurelia Tüm Geometri Özeti PDF 9. Kaynak kavramlarından yazılmış özgün anlatım ve öğretim soruları.",
+      "MEBİ TYT Matematik Konu Özetleri: Çokgenler (basılı 139/PDF 141); Aurelia Tüm Geometri Özeti PDF 9 ve Çokgenler PDF fiziksel 5 (G1). Kaynak kavramlarından yazılmış özgün anlatım ve öğretim soruları.",
     minutes: 42,
     id: "tyt-geo-cokgenler-032",
   },
