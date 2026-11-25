@@ -1,8 +1,8 @@
 {
-  "version": "0.200.0",
+  "version": "0.201.0",
   "channel": "alpha",
   "notes": {
-    "tr": "İlk açılışta çevrimdışı hazırlık bir dosyada yarıda kalırsa uygulama aynı sayfada en fazla iki kez yeniden dener. Bağlantı dalgalansa da yeniden yüklemeden çevrimdışı kullanıma geçebilirsin.",
-    "en": "If offline preparation stops on one file at first launch, the app retries up to twice on the same page, so it can become available offline without a reload."
+    "tr": "TYT Matematik sayma ve olasılık derslerine aynı veriden üretilen beş tablo ve on yeni çözümlü örnek eklendi. Permütasyon, tekrarlı permütasyon, kombinasyon, binom ve olasılık tabloları Kopya Kağıtlarında da açılır.",
+    "en": "TYT Mathematics counting and probability lessons gain five data tables and ten new worked examples, also shown in their cheat sheets."
   }
 }

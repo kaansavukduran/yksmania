@@ -44,8 +44,8 @@ it("registers two separate sets with independently checked answers, summaries an
           guidance?.optionReasons.length === 5,
       ),
     ).toBe(true);
-    expect(guide.sections).toHaveLength(6);
-    expect(guide.examples).toHaveLength(3);
+    expect(guide.sections).toHaveLength(7);
+    expect(guide.examples).toHaveLength(5);
     expect(guide.recall).toHaveLength(4);
     expect(sheet.examples.map(({ answer }) => answer)).toEqual(
       guide.examples.map(({ answer }) => answer),

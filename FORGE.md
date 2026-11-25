@@ -1,3 +1,9 @@
+# Sayma ve olasılıkta aynı veriden tablo ve çözümlü örnek · 0.201.0 adayı
+
+TYT Matematik içerik derinleştirmesinin ilk turu, kapsam tablosundaki en ince beş başlığı ele aldı: Permütasyon, Tekrarlı permütasyon, Kombinasyon, Binom açılımı ve Olasılık. Her derse bir tablo bölümü ve iki çözümlü örnek eklendi. P(6,r) ile C(6,r), tekrar bölenleri, C(7,r) ile "en az r" toplamı, Pascal satırları ve iki zarın toplam olasılıkları aynı fonksiyonlardan üretilir. Paragraflardaki sayılar da bu fonksiyonlardan gelir, Kopya Kağıdı aynı tablo nesnesini gösterir.
+
+On yeni örneğin hepsi kaba kuvvet sayımıyla sınandı: 36, 192, 120/24, 18, 185, 28/56/70, 40, 56, 4/7 ve 46/57. Kapsamda bu beş ders 6–7 bölüm ve 3 örnekten 7–8 bölüm ve 5 örneğe çıktı. Kopya Kağıtları 5 bölüm ve 3 örnekten 6 bölüm ve 5 örneğe çıktı. Görsel keşif ve tablolar öğrenme kaydı, XP veya ustalık yazmaz.
+
 # İlk çevrimdışı kurulum hatasından aynı sayfada dönüş · 0.200.0 adayı
 
 0.194.0 ve 0.197.0 ana dal CI koşularında iki ayrı çevrimdışı testte service worker hiç etkinleşmedi; aynı ağaç PR ve elle tetiklenen koşularda geçti. `register()` ön bellek kurulumu bitmeden başarılı döner. 328 dosyalık kurulumdan biri düşünce işçi `redundant` olur, kayıt hatası gelmez ve 0.99'daki yeniden deneme çalışmaz.
