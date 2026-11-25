@@ -45,9 +45,17 @@ describe("Forge060 TYT Matematik bölüm figürleri", () => {
         "sayi-basamaklari": 5,
         "havuz-problemleri": 5,
         "carpanlara-ayirma": 5,
+        "veri-analizi": 5,
       };
       expect(Object.keys(sectionFigures[g] ?? {}).length, g).toBe(expectedCounts[g] ?? 4);
     }
+    expect(Object.keys(sectionFigures["veri-analizi"]).sort()).toEqual([
+      "Ortancayı yazılış sırası belirlemez",
+      "Ortalamayı toplama geri döndür",
+      "Uç değerin etkisini ölç, ezberleme",
+      "Histogramda genişlik de bilgi taşır",
+      "Ham ölçümleri eş genişlikli sınıflara ayır",
+    ].sort());
     expect(Object.keys(sectionFigures["havuz-problemleri"]).sort()).toEqual([
       "Giriş ekler, çıkış azaltır",
       "Başlangıç doluluğunu denklemde tut",

@@ -1,5 +1,17 @@
 import type { LessonGuide, WorkedExample } from "./guides/types";
 
+export const statisticsSource037Measurements = [2, 3, 3, 5, 6, 7, 8, 8, 10, 11] as const;
+const firstClassStart = Math.min(...statisticsSource037Measurements);
+const classCount = 3;
+const classWidth = Math.floor((Math.max(...statisticsSource037Measurements) - firstClassStart) / classCount) + 1;
+
+export const statisticsSource037Classes = Array.from({ length: classCount }, (_, i) => {
+  const lower = firstClassStart + i * classWidth;
+  const upper = lower + classWidth;
+  const values = statisticsSource037Measurements.filter((value) => value >= lower && value < upper);
+  return { lower, upper, values };
+});
+
 export const statisticsSource037Supplement: LessonGuide["sections"] = [
   {
     title: "Bilinmeyen frekansı toplam denklemine yaz",

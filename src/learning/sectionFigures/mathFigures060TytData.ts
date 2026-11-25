@@ -1,3 +1,4 @@
+import { statisticsSource037Classes, statisticsSource037Measurements } from "../statisticsSource037Revision";
 import { pt, seg, txt, v, vec, type El, type FigureDef, type Tone } from "./figureKit";
 import { cell, nf, numberLine, pad, rect, sector, token } from "./mathFigures060TytKit";
 
@@ -96,6 +97,36 @@ const histogram: FigureDef = {
     for (const t of [0, 5, 15, 30]) els.push(txt(v(t * kx, -0.15), String(t), "s", { tone: "muted", small: true, soft: true }));
     els.push(...pad(-0.5, 4.4, 31 * kx + 0.6, -0.8));
     return { els, readout: step === 0 ? ["Alanlar 10, 40, 45: geniş sınıf olduğundan büyük görünür.", "Eksen birimi okunmadan en yüksek sütun en sık sınıf sanılır."] : ["2/5 = 0,4; 4/10 = 0,4; 3/15 = 0,2.", "Alanlar 2, 4, 3: frekansla aynı."] };
+  },
+};
+
+const sourceHistogram: FigureDef = {
+  caption: "Eş genişlikli üç aralıkta her gözlemi bir kez say. Sol sınır aralığa dahil, sağ sınır bir sonrakine aittir.",
+  alt: "Ölçüm değerleri 2, 6, 10 ve 14 ile sınırlandırılan üç eş aralık. Bitişik sütunların yükseklikleri 4, 4 ve 2 gözlem.",
+  steps: ["Bütün gözlemleri say", "6 ve üstünü seç"],
+  draw: (_, step) => {
+    const x = (value: number) => (value - 2) * 0.55;
+    const y = (frequency: number) => frequency * 0.72;
+    const els: El[] = [
+      vec(v(-0.24, 0), v(x(14.55), 0), { tone: "ink", thin: true }),
+      vec(v(-0.24, 0), v(-0.24, y(4.75)), { tone: "ink", thin: true }),
+      txt(v(3.3, -0.54), "Ölçüm değeri", "s", { tone: "ink", small: true }),
+      txt(v(-0.24, y(4.75)), "Gözlem adedi", "n", { tone: "ink", small: true }),
+    ];
+    for (const { lower, upper, values } of statisticsSource037Classes) {
+      const selected = step === 0 || lower >= 6;
+      els.push(rect(x(lower), 0, x(upper) - x(lower), y(values.length), selected ? "a" : "muted", selected));
+      els.push(txt(v((x(lower) + x(upper)) / 2, y(values.length) + 0.12), String(values.length), "n", { tone: "ink", small: true, bold: true }));
+    }
+    for (const value of [2, 6, 10, 14]) els.push(txt(v(x(value), -0.12), String(value), "s", { tone: "ink", small: true }));
+    for (const frequency of [0, 1, 2, 3, 4]) els.push(txt(v(-0.29, y(frequency)), String(frequency), "w", { tone: "ink", small: true }));
+    els.push(...pad(-0.9, 4.2, 7.15, -1.05));
+    const total = statisticsSource037Measurements.length;
+    const above = statisticsSource037Classes.filter(({ lower }) => lower >= 6).reduce((sum, { values }) => sum + values.length, 0);
+    return { els, readout: step === 0
+      ? [`Genişlik 4. Frekanslar ${statisticsSource037Classes.map(({ values }) => values.length).join(", ")}. Toplam ${total} ölçüm.`, "6 yalnız [6,10) sınıfındadır."]
+      : [`6 ve üstünde ${above}/${total}, yani %${100 * above / total}. Eşik bir sınıf sınırıdır.`,
+        "7 ve üstünün kesin adedi yalnız sütunlardan çıkarılamaz. Bu eşik bir sınıfın içindedir."] };
   },
 };
 
@@ -232,6 +263,7 @@ export const mathFigures060TytData: Record<string, Record<string, FigureDef>> = 
     "Ortalamayı toplama geri döndür": meanTotal,
     "Uç değerin etkisini ölç, ezberleme": outlier,
     "Histogramda genişlik de bilgi taşır": histogram,
+    "Ham ölçümleri eş genişlikli sınıflara ayır": sourceHistogram,
   },
   "grafik-problemleri": {
     "Sütunlar kategorileri aynı ölçekle karşılaştırır": truncatedAxis,

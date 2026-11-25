@@ -1,8 +1,8 @@
 {
-  "version": "0.177.0",
+  "version": "0.181.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Kümeler’de üçlü kesişimden başlayarak ayrık bölgeleri say. Altıgen piramitte dik yüksekliği, yan yüz yüksekliğini ve yan ayrıtı iki gerçek kesitle ayır.",
-    "en": "Count disjoint regions from the triple intersection and distinguish three pyramid lengths using two cross-sections."
+    "tr": "Sayı kümelerinde yazılış ve değer ayrımı ile üçgende karşı kenar ve dik yükseklik anlatımı genel TYT kaynaklarıyla karşılaştırılıp görselleştirildi.",
+    "en": "TYT reference sheets informed accessible number membership and triangle-base notation for lessons and cheat sheets."
   }
 }

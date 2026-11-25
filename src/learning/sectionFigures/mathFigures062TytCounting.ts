@@ -1,4 +1,6 @@
-import { circle, pt, seg, txt, v, vec, type El, type FigureDef, type Tone } from "./figureKit";
+import { separatedPermutations032 } from "../separatedPermutationsSource032Model";
+import { waypointPaths033 } from "../waypointPathsSource033Model";
+import { circle, poly, pt, seg, txt, v, vec, type El, type FigureDef, type Tone } from "./figureKit";
 import { cell, choose, fact, frac, pad, rect, sup, table, tn, token } from "./mathFigures062TytKit";
 
 /*
@@ -140,6 +142,32 @@ const adjacent: FigureDef = {
     els.push(txt(v(6 * (w + 0.3) + 0.1, 0.4), "A önde", "e", { tone: "warn", small: true, bold: true }), txt(v(6 * (w + 0.3) + 0.1, -0.9), "B önde", "e", { tone: "muted", small: true }));
     els.push(...pad(-0.3, 1.2, 9.0, -1.0));
     return { els, readout: ["Her sıra, A ile B’yi değiştiren eşiyle çift oluşturur.", "Tam yarısında A önde: 720/2 = 360."] };
+  },
+};
+
+const separateSpecialPeople: FigureDef = {
+  caption: "Dört sıradan kişi iki uç dahil beş boşluk bırakır. Önce üç boşluk seç, sonra farklı üç kişiyi bu yerlere sırala.",
+  alt: "Dört sıradan kişinin çevresindeki beş boşluk soldan sağa numaralı. İkinci çizimde A, B ve C birinci, üçüncü ve beşinci boşlukları doldurur.",
+  steps: ["Beş boşluğu bul", "A, B ve C’yi yerleştir"],
+  draw: (_, step) => {
+    const counts = separatedPermutations032(7, 3, "row");
+    const example = ["A", "", "B", "", "C"];
+    const els: El[] = [];
+    for (let i = 0; i < counts.gaps; i++) {
+      const x = i * 2.2;
+      const person = step === 1 ? example[i] : "";
+      els.push(...cell(x, 0, 0.95, 0.82, person || "?", person ? "a" : "muted", { fill: person !== "" }));
+      els.push(txt(v(x + 0.475, -0.18), String(i + 1), "s", { tone: "ink", small: true }));
+      if (i < counts.ordinary) {
+        els.push(...cell(x + 1.1, 0, 0.95, 0.82, `K${i + 1}`, "c"));
+      }
+    }
+    els.push(...pad(-0.15, 1.18, 10, -0.82));
+    return { els, readout: [
+      `${counts.ordinary} sıradan kişi ${counts.gaps} boşluk bırakır. Üçünü seçmenin C(5, 3) = ${counts.allocations} yolu var.`,
+      step === 0 ? "Ortadaki aralıkları ve iki ucu ayrı ayrı say."
+        : `Seçili 1, 3, 5 boşluklarına A, B, C için ${counts.specialOrders} sıra. Sıradan kişilerin ${counts.ordinaryOrders} sırasıyla toplam ${tn(counts.separated)} düzen.`,
+    ] };
   },
 };
 
@@ -302,6 +330,42 @@ const leadingZero: FigureDef = {
   },
 };
 
+const waypointRoute: FigureDef = {
+  caption: "Örnek yol P’den önce ve sonra iki parçaya ayrılır. Her ilk yol her son yolla birleştirilir. P’ye uğramayanlar bütün yollardan geçenler çıkarılarak bulunur.",
+  alt: "Yatay sağ adım ve düşey yukarı adım eksenleri. Başlangıç 0, 0. P 2, 1. Hedef 4, 3. İlk görünüm P’den geçen, ikinci görünüm P’ye uğramayan bir yol çizer.",
+  steps: ["P’den geçen yol", "P’ye uğramayan yol"],
+  draw: (_, step) => {
+    const target = { x: 4, y: 3 };
+    const stop = { x: 2, y: 1 };
+    const model = waypointPaths033(target, stop);
+    const remaining = choose(target.x + target.y - stop.x - stop.y, target.y - stop.y);
+    const route = model.sampleRoute(step === 0 ? "via" : "avoiding") ?? [];
+    const els: El[] = [];
+    for (let x = 0; x <= target.x; x++) {
+      els.push(seg(v(x, 0), v(x, target.y), { tone: "muted", thin: true }));
+      els.push(txt(v(x, -0.14), String(x), "s", { tone: "ink", small: true, soft: true }));
+    }
+    for (let y = 0; y <= target.y; y++) {
+      els.push(seg(v(0, y), v(target.x, y), { tone: "muted", thin: true }));
+      els.push(txt(v(-0.14, y), String(y), "w", { tone: "ink", small: true, soft: true }));
+    }
+    els.push(txt(v(2, -0.62), "Sağ adım", "s", { tone: "ink", small: true }));
+    els.push(txt(v(0, 3.35), "Yukarı adım", "n", { tone: "ink", small: true }));
+    route.slice(1).forEach((end, index) => {
+      const start = route[index];
+      const afterStop = step === 0 && start.x + start.y >= stop.x + stop.y;
+      els.push(seg(v(start.x, start.y), v(end.x, end.y), { tone: afterStop ? "c" : "a", dash: afterStop, bold: true }));
+    });
+    els.push(pt(v(stop.x, stop.y), "P", "nw", "warn", true), pt(v(target.x, target.y), "Hedef", "ne", "ink"));
+    els.push(...pad(-0.65, 3.9, 4.65, -0.95));
+    return { els, readout: step === 0
+      ? [`P’ye kadar ${model.waypoint.total} yol. P’den hedefe ${remaining} yol. P’den geçen ${model.target.via} tam yol.`,
+        "Düz çizgi P’ye kadar olan örnek parçayı, kesikli çizgi P’den sonraki parçayı gösterir."]
+      : [`Bütün ${model.target.total} yoldan ${model.target.via} geçen yol çıkar. P’ye uğramayan ${model.target.avoiding} yol kalır.`,
+        "Çizilen örnek yol, P işaretine basmadan hedefe ulaşır."] };
+  },
+};
+
 /* ===================== Kombinasyon ===================== */
 
 const LETTERS = "ABCDEFGHI".split("");
@@ -400,6 +464,30 @@ const atLeast: FigureDef = {
       ["En az bir T: 10 − 3 = 7.", "Denetim: 2 · 3 + 1 = 7."],
     ];
     return { els, readout: lines[step] };
+  },
+};
+
+const linesAndTriangles: FigureDef = {
+  caption: "En az üç doğrusal nokta varsa üçgen ile doğru sayımı farklı değişir. A, B, C, D aynı doğru üzerinde. Diğer hiçbir üçlü doğrusal değil.",
+  alt: "A, B, C ve D yatay aynı doğru boyunca. E, F, G, H farklı yüksekliklerde. İlk çizimde A, B, E üçgeni görünür. İkinci çizimde A, B, C ve D’nin ortak doğrusu vurgulanır.",
+  steps: ["Üçgenleri say", "Farklı doğruları say"],
+  draw: (_, step) => {
+    const points = [v(0, 0), v(1, 0), v(3, 0), v(5, 0), v(0.7, 1.4), v(2.2, 3.1), v(4.6, 2.3), v(6.4, 4.7)];
+    const els: El[] = [
+      vec(v(-0.45, -0.45), v(6.8, -0.45), { tone: "muted", thin: true }),
+      vec(v(-0.45, -0.45), v(-0.45, 5.05), { tone: "muted", thin: true }),
+      txt(v(3.25, -0.85), "Yatay koordinat (birim)", "s", { tone: "ink", small: true }),
+      txt(v(-0.43, 5.1), "Düşey koordinat (birim)", "n", { tone: "ink", small: true }),
+      seg(v(-0.14, 0), v(6.15, 0), { tone: step === 0 ? "muted" : "a", bold: step === 1 }),
+    ];
+    for (const tick of [0, 2, 4, 6]) els.push(txt(v(tick, -0.45), String(tick), "s", { tone: "ink", small: true }));
+    for (const tick of [0, 1, 2, 3, 4, 5]) els.push(txt(v(-0.49, tick), String(tick), "w", { tone: "ink", small: true }));
+    if (step === 0) els.push(poly([points[0], points[1], points[4]], { tone: "a", fill: "a" }));
+    points.forEach((point, i) => els.push(pt(point, "ABCDEFGH"[i], "ne", i < 4 ? "ink" : "c")));
+    els.push(...pad(-1.1, 5.9, 7.2, -1.35));
+    return { els, readout: step === 0
+      ? [`${choose(8, 3)} üçlüden ${choose(4, 3)} doğrusal üçlü çıkar. ${choose(8, 3) - choose(4, 3)} üçgen kalır.`, "A, B, E alan kaplar. A, B, C aynı doğru üzerinde kalır."]
+      : [`${choose(8, 2)} nokta çifti. Ortak doğruyu veren ${choose(4, 2)} çiftin yerine bir doğru yaz. ${choose(8, 2) - choose(4, 2) + 1} farklı doğru.`] };
   },
 };
 
@@ -521,6 +609,38 @@ const diceGrid: FigureDef = {
   },
 };
 
+const conditionalDice: FigureDef = {
+  caption: "Toplamın alt sınırı verilince yalnız koşulu sağlayan hücreler paydaya girer. Birinci zarın 6 olduğu hücreler bu alanın içinde yeniden seçilir.",
+  alt: "Satırlarda birinci zarın, sütunlarda ikinci zarın değerleri. Her hücrede toplam. Koşula uygun hücreler dolu; birinci zarı 6 olan uygun hücrelerin yanında nokta var.",
+  param: { label: "Toplamın alt sınırı", min: 2, max: 12, step: 1, init: 9 },
+  draw: (threshold) => {
+    const w = 0.75;
+    const els: El[] = [
+      txt(v(4 * w, 1.02), "İkinci zar", "n", { tone: "ink", small: true }),
+      txt(v(-0.08, -2.55), "İlk zar", "w", { tone: "ink", small: true }),
+    ];
+    let admissible = 0;
+    let firstSix = 0;
+    for (let first = 1; first <= 6; first++) {
+      els.push(...cell(first * w, 0, w, w, String(first), "b"), ...cell(0, -first * w, w, w, String(first), "b"));
+      for (let second = 1; second <= 6; second++) {
+        const sum = first + second;
+        const allowed = sum >= threshold;
+        const event = allowed && first === 6;
+        admissible += Number(allowed);
+        firstSix += Number(event);
+        els.push(...cell(second * w, -first * w, w, w, `${sum}${event ? "·" : ""}`, event ? "warn" : allowed ? "a" : "muted", { fill: allowed }));
+      }
+    }
+    els.push(...pad(-1.22, 1.75, 5.6, -5.0));
+    return { els, readout: [
+      `Toplam en az ${threshold}. Koşullu uzayda ${admissible} çift, ilk zarı 6 olan ${firstSix} çift var.`,
+      `Koşullu olasılık ${firstSix}/${admissible} = ${frac(firstSix, admissible)}. Birlikte gerçekleşme olasılığı ${firstSix}/36.`,
+      "Hücredeki nokta ilk zarı 6 olan uygun bir çifti işaretler.",
+    ] };
+  },
+};
+
 const coinTree: FigureDef = {
   caption:
     "Üç bağımsız adil para atışının ağacı: 8 eş olasılıklı yaprak (Y yazı, T tura). Hiç yazı gelmemesi tek yaprak, TTT: (1/2)³ = 1/8. “En az bir yazı” bunun tümleyenidir: 1 − 1/8 = 7/8. Tümleyen kuralı, ağacı tek tek saymadan aynı sonucu verir.",
@@ -593,18 +713,21 @@ export const mathFigures062TytCounting: Record<string, Record<string, FigureDef>
     "Sabit, gerekli ve yasak öğeler açık bir yuva hesabı ister": digitSlots,
     "Komşu olanları birlikte say, sadece önce gelenleri eşleştir": adjacent,
     "Birbirine karışabilen gruplara önce yer ayır": positions,
+    "Birbirinden ayrı kişilere ayrı boşluklar ver": separateSpecialPeople,
   },
   "tyt-mat-tekrarli-permutasyon-kaynak-033": {
     "Etiketleri silince aynı kalan dizileri bir say": eraseLabels,
     "Sabit yeri çıkar, kalan tür adetlerini güncelle": fixedPlaces,
     "Özdeş kartlar ayrı boşluklara giderken iç sıra oluşmaz": gaps,
     "Sayıda ilk sıfır yasak, kodda koşulu açık oku": leadingZero,
+    "Zorunlu durakta yolu böl, kaçınanı tümleyenden bul": waypointRoute,
   },
   "tyt-mat-kombinasyon-kaynak-034": {
     "Boş seçim ve dışarıda kalanlar": complement,
     "Zorunlu kişiyi sabitle, yasak kişiyi listeden çıkar": forced,
     "Tam ve en az koşullarıyla ayrık durumlar kur": cases,
     "En az bir için hiç olmayanı çıkar": atLeast,
+    "Bir üçlü alanla, bir doğru bütün noktalarıyla belirlenir": linesAndTriangles,
   },
   "tyt-mat-binom-kaynak-035": {
     "Çarpılan her parantezden tek seçim yap": binomTree,
@@ -616,6 +739,7 @@ export const mathFigures062TytCounting: Record<string, Record<string, FigureDef>
     "Örnek uzay hangi sonuçların sayıldığını belirler": diceGrid,
     "En az biri ve tam biri ayır": coinTree,
     "Ortak sonuçları birleşimde bir kez say": venn,
+    "Yeni bilgi geldiğinde paydayı değiştir": conditionalDice,
     "Geri koyma ve bağımsızlık ayrı koşullardır": bagTree,
   },
 };

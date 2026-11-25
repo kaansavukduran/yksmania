@@ -1360,3 +1360,244 @@ test("The hexagonal pyramid has a different hypotenuse in each cross-section", a
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Only the two requested ordered pairs leave the product", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Koordinat gösterimi ayrık noktaların kümesidir");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto("/#/lesson?id=kartezyen-carpim");
+  await next.press("Enter");
+  await next.press("Enter");
+  await expect(model).toContainText("6 ikiliden (2; 2) ve (2; 3) çıkar. Kalan 4 ikili");
+  await expect(model).toContainText("(1; 1), (1; 2), (1; 3), (2; 1)");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-223");
+  await next.press("Enter");
+  await next.press("Enter");
+  await expect(model).toContainText("Kalan 4 ikili");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The logic truth table retains the same false row in the lesson and sheet", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "İse yalnız doğru öncül ve yanlış sonuçta yanlıştır");
+  const table = page.getByRole("table").filter({ hasText: "İlk koşul" });
+  for (const route of ["/#/lesson?id=mantik-onerme", "/#/cheatsheets?topic=detail-224"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Tek yanlış satır: doğru öncül, yanlış sonuç");
+    await expect(table.getByRole("row", { name: /İlk koşul/ })).toContainText(/p\s*=\s*1,\s*q\s*=\s*0/);
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("A cone inherits its base circumference from the sector arc", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-geo-silindir-koni-kure-040";
+  const model = figure(page, "Daire diliminden koninin tabanını bul");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto(`/#/lesson?id=${id}`);
+  await expect(model).toContainText("Yay 12π cm. Taban çevresi de 12π cm. Taban yarıçapı 6 cm");
+  await next.press("Enter");
+  await expect(model).toContainText("Dik yükseklik √(10²−6²) = 8 cm");
+  await expect(model).toContainText("Hacim = 96π cm³");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${id}`);
+  await expect(model).toContainText("Hacim = 96π cm³");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("A sphere section shrinks to a point at a tangent plane", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-geo-silindir-koni-kure-040";
+  const model = figure(page, "Kürenin yarıçapını kesitten geri kur");
+  await page.goto(`/#/lesson?id=${id}`);
+  await expect(model).toContainText("Kesit alanı 144π birim². R² = 144 + 25 = 169");
+  const distance = model.getByRole("slider", { name: /Düzlemin merkeze uzaklığı/ });
+  await distance.press("End");
+  await expect(model).toContainText("Düzlem küreye bir noktada teğet.");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${id}`);
+  await expect(model).toContainText("Kürenin hacmi 8788π/3 birim³");
+  await expect(figure(page, "Kâğıdı iki yönde sar ve hacimleri karşılaştır")).toBeVisible();
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Three special people use three distinct numbered gaps offline", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-mat-permutasyon-kaynak-032";
+  const model = figure(page, "Birbirinden ayrı kişilere ayrı boşluklar ver");
+  for (const route of [`/#/lesson?id=${id}`, `/#/cheatsheets?topic=topic-${id}`]) {
+    await page.goto(route);
+    await expect(model).toContainText("4 sıradan kişi 5 boşluk bırakır");
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("Seçili 1, 3, 5 boşluklarına A, B, C için 6 sıra");
+    await expect(model).toContainText("toplam 1.440 düzen");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The waypoint chart separates both parts before counting its complement", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-mat-tekrarli-permutasyon-kaynak-033";
+  const model = figure(page, "Zorunlu durakta yolu böl, kaçınanı tümleyenden bul");
+  for (const route of [`/#/lesson?id=${id}`, `/#/cheatsheets?topic=topic-${id}`]) {
+    await page.goto(route);
+    await expect(model).toContainText("P’ye kadar 3 yol. P’den hedefe 6 yol. P’den geçen 18 tam yol");
+    const image = model.getByRole("img");
+    await expect(image).toBeVisible();
+    const dashedSegments = image.locator("line.sf-dash");
+    await expect(dashedSegments).toHaveCount(4);
+    expect(await dashedSegments.evaluateAll((lines) => lines.every((line) => {
+      const style = getComputedStyle(line);
+      return style.strokeDasharray !== "none" && style.stroke !== "none"
+        && (line.getAttribute("x1") !== line.getAttribute("x2")
+          || line.getAttribute("y1") !== line.getAttribute("y2"));
+    }))).toBe(true);
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("Bütün 35 yoldan 18 geçen yol çıkar. P’ye uğramayan 17 yol");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The collinear quartet removes triples and merges pairs offline", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-mat-kombinasyon-kaynak-034";
+  const model = figure(page, "Bir üçlü alanla, bir doğru bütün noktalarıyla belirlenir");
+  for (const route of [`/#/lesson?id=${id}`, `/#/cheatsheets?topic=topic-${id}`]) {
+    await page.goto(route);
+    await expect(model).toContainText("56 üçlüden 4 doğrusal üçlü çıkar. 52 üçgen");
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("28 nokta çifti. Ortak doğruyu veren 6 çiftin yerine bir doğru yaz. 23 farklı doğru");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Binomial selections and numeric factors are separate table columns offline", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-mat-binom-kaynak-035";
+  const model = figure(page, "Hedef üssü bir denklemle bul");
+  const table = page.getByRole("table").filter({ hasText: "Seçim adedi" });
+  for (const route of [`/#/lesson?id=${id}`, `/#/cheatsheets?topic=topic-${id}`]) {
+    await page.goto(route);
+    const r2 = table.getByRole("row").nth(3);
+    const terms = r2.getByRole("cell");
+    await expect(terms).toHaveCount(4);
+    for (const [index, entry] of ["2", "3", "1", "12"].entries()) {
+      await expect(terms.nth(index)).toHaveAccessibleName(entry);
+    }
+    await expect(model).toContainText("= 240");
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("Açılımda x¹ terimi yoktur");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Dice conditions change the eligible grid and denominator offline", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-mat-olasilik-kaynak-036";
+  const model = figure(page, "Yeni bilgi geldiğinde paydayı değiştir");
+  for (const route of [`/#/lesson?id=${id}`, `/#/cheatsheets?topic=topic-${id}`]) {
+    await page.goto(route);
+    await expect(model).toContainText("10 çift, ilk zarı 6 olan 4 çift");
+    await expect(model).toContainText("4/10 = 2/5");
+    await model.getByRole("slider", { name: /Toplamın alt sınırı/ }).press("End");
+    await expect(model).toContainText("Koşullu olasılık 1/1 = 1");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The source histogram places a boundary observation in exactly one class", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Ham ölçümleri eş genişlikli sınıflara ayır");
+  const table = page.getByRole("table").filter({ hasText: "Gözlemler" });
+  for (const route of ["/#/lesson?id=veri-analizi", "/#/cheatsheets?topic=detail-225"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Frekanslar 4, 4, 2. Toplam 10 ölçüm");
+    const classCells = table.getByRole("row").nth(2).getByRole("cell");
+    await expect(classCells).toHaveCount(3);
+    for (const [index, entry] of ["[6, 10)", "6, 7, 8, 8", "4"].entries()) {
+      await expect(classCells.nth(index)).toHaveAccessibleName(entry);
+    }
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("6 ve üstünde 6/10, yani %60");
+    await expect(model).toContainText("7 ve üstünün kesin adedi yalnız sütunlardan çıkarılamaz");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Number membership uses evaluated values in an accessible table offline", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const table = page.getByRole("table").filter({ hasText: "Üye olduğu kümeler" });
+  for (const route of ["/#/lesson?id=temel-kavramlar", "/#/cheatsheets?topic=detail-194"]) {
+    await page.goto(route);
+    const divided = table.getByRole("row").filter({ has: page.getByRole("cell", { name: "12/3", exact: true }) });
+    await expect(divided.getByRole("cell", { name: "4", exact: true })).toBeVisible();
+    await expect(divided.getByRole("cell", { name: "ℕ, ℤ, ℚ, ℝ", exact: true })).toBeVisible();
+    const repeating = table.getByRole("row").filter({ has: page.getByRole("cell", { name: "0,333…", exact: true }) });
+    await expect(repeating.getByRole("cell", { name: "1/3", exact: true })).toBeVisible();
+    const forbidden = table.getByRole("row").filter({ has: page.getByRole("cell", { name: "1/0", exact: true }) });
+    await expect(forbidden.getByRole("cell", { name: "Tanımsız", exact: true })).toBeVisible();
+    await checkFrame(page, figure(page, "Sayı kümelerinde önce değeri hesapla"));
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Changing the labelled triangle base changes height but keeps area offline", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-geo-acilar-kaynak-pekitirme-032";
+  const model = figure(page, "Karşı kenarı ve ona ait yüksekliği eşleştir");
+  for (const route of [`/#/lesson?id=${id}`, `/#/cheatsheets?topic=topic-${id}`]) {
+    await page.goto(route);
+    await expect(model).toContainText("Taban a = 4 cm, dik yükseklik 4 cm. Alan 4 × 4 / 2 = 8 cm²");
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("Taban b = 5 cm, dik yükseklik 3,2 cm. Alan 5 × 3,2 / 2 = 8 cm²");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});

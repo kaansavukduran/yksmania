@@ -1,14 +1,108 @@
+import type { GuideSection } from "./guides/types";
+import { signedBinomial035 } from "./signedBinomialSource035Model";
+import { statisticsSource037Classes } from "./statisticsSource037Revision";
+
 interface TheorySupplement {
   title: string;
-  figureTitle: string;
+  figureTitle?: string;
   paragraphs: string[];
-  summary: string;
+  summary?: string;
   appendSection?: true;
   sheetTitle?: string;
+  tableLayout?: "table";
+  table?: GuideSection["table"];
   workedStep?: { title: string; index: number };
 }
 
+const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
+
 export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "temel-kavramlar": [{
+    title: "Sayı kümelerinde önce değeri hesapla",
+    figureTitle: "Sayı kümelerinde önce değeri hesapla",
+    paragraphs: [],
+    summary: "ℕ doğallar 0’dan başlar. Bir sayı daha dar bir kümeye giriyorsa onu kapsayan bütün dış kümelere de girer.",
+    table: {
+      headers: ["İfade", "Değer", "Üye olduğu kümeler"],
+      rows: [
+        ["0", "0", "ℕ, ℤ, ℚ, ℝ"],
+        ["12/3", "4", "ℕ, ℤ, ℚ, ℝ"],
+        ["−7/2", "−3,5", "ℚ, ℝ"],
+        ["0,333…", "1/3", "ℚ, ℝ"],
+        ["√9", "3", "ℕ, ℤ, ℚ, ℝ"],
+        ["√2", "İrrasyonel", "ℝ"],
+        ["√(−1)", "Gerçek sayı yok", "Hiçbiri"],
+        ["1/0", "Tanımsız", "Hiçbiri"],
+      ],
+      layout: "table",
+    },
+  }],
+  "tyt-geo-acilar-kaynak-pekitirme-032": [{
+    title: "Karşı kenarı ve ona ait yüksekliği eşleştir",
+    figureTitle: "Karşı kenarı ve ona ait yüksekliği eşleştir",
+    paragraphs: [
+      "A açısının karşı kenarı BC ve uzunluğu a’dır. Aynı şekilde b=|CA| ve c=|AB|. A’dan BC’ye inen yükseklik BC’ye diktir. Taban CA seçilirse B’den CA’ya dik inilir.",
+      "Bu üçgende BC=4 cm ve ona ait yükseklik 4 cm. CA=5 cm ve ona ait yükseklik 3,2 cm. İki hesaptan da 8 cm² çıkar. Taban ve yükseklik birimleri önce eşitlenir. 1 m=100 cm ise 1 m²=10.000 cm² ve 1 m³=1.000.000 cm³ olur.",
+    ],
+    summary: "a=|BC|, b=|CA|, c=|AB|. Taban değişince ona dik yüksekliği seç. Aynı üçgende 4·4/2=5·3,2/2=8 cm².",
+    appendSection: true,
+  }],
+  "tyt-mat-permutasyon-kaynak-032": [{
+    title: "Birbirinden ayrı kişilere ayrı boşluklar ver",
+    figureTitle: "Birbirinden ayrı kişilere ayrı boşluklar ver",
+    sheetTitle: "Boşluklar",
+    paragraphs: [],
+    summary: "Dört sıradan kişi için beş boşluğun üçü seçilir. Her seçimde farklı A, B ve C altı sırada yerleşir. 4!·C(5,3)·3!=1.440.",
+  }],
+  "tyt-mat-tekrarli-permutasyon-kaynak-033": [{
+    title: "Zorunlu durakta yolu böl, kaçınanı tümleyenden bul",
+    figureTitle: "Zorunlu durakta yolu böl, kaçınanı tümleyenden bul",
+    sheetTitle: "Zorunlu durak",
+    paragraphs: [],
+    summary: "(0,0) → P(2,1) → (4,3) için 3·6=18 geçen yol. Bütün 35 yoldan bunları çıkarınca 17 yol kalır.",
+  }],
+  "tyt-mat-kombinasyon-kaynak-034": [{
+    title: "Bir üçlü alanla, bir doğru bütün noktalarıyla belirlenir",
+    figureTitle: "Bir üçlü alanla, bir doğru bütün noktalarıyla belirlenir",
+    sheetTitle: "Üçgen, doğru ve köşegen",
+    paragraphs: [],
+    summary: "Yalnız dört tanesi doğrusal sekiz nokta için 56−4=52 üçgen, 28−6+1=23 doğru. Aynı doğruyu veren altı çift bir doğruya karşılık gelir.",
+  }],
+  "tyt-mat-binom-kaynak-035": [{
+    title: "Seçim sayısıyla sayısal çarpanı birbirinden ayır",
+    sheetTitle: "Pascal ve işaret",
+    paragraphs: ["(x+2)³ tablosunda r, 2’yi kaç kez seçtiğini söyler. Katsayıyı bulmak için seçim sayısını 2ʳ ile çarp. Örneğin r=2 için 3·4=12 ve üs 1’dir."],
+    summary: "(x+2)³ açılımında seçim sayısı C(3,r), katsayı C(3,r)·2ʳ.",
+    table: {
+      headers: ["2’yi seçme sayısı r", "Seçim adedi", "x’in üssü", "Katsayı"],
+      rows: binomialExample035.terms.map(({ r, choose, exponent, coefficient }) =>
+        [String(r), String(choose), String(exponent), String(coefficient)]),
+      layout: "table",
+    },
+  }, {
+    title: "Hedef üssü bir denklemle bul",
+    figureTitle: "Hedef üssü bir denklemle bul",
+    sheetTitle: "Hedef üs",
+    paragraphs: [],
+  }],
+  "tyt-mat-olasilik-kaynak-036": [{
+    title: "Yeni bilgi geldiğinde paydayı değiştir",
+    figureTitle: "Yeni bilgi geldiğinde paydayı değiştir",
+    sheetTitle: "Koşul",
+    paragraphs: [],
+    summary: "Toplam en az 9 ise 10 eş olasılıklı çift kalır. Bunların dördünde ilk zar 6’dır. Koşullu olasılık 4/10=2/5. Birlikte gerçekleşme 4/36.",
+  }],
+  "veri-analizi": [{
+    title: "Ham ölçümleri eş genişlikli sınıflara ayır",
+    figureTitle: "Ham ölçümleri eş genişlikli sınıflara ayır",
+    paragraphs: [],
+    table: {
+      headers: ["Sınıf", "Gözlemler", "Frekans"],
+      rows: statisticsSource037Classes.map(({ lower, upper, values }) =>
+        [`[${lower}, ${upper})`, values.join(", "), String(values.length)]),
+      layout: "table",
+    },
+  }],
   "koklu-sayilar": [{
     title: "Köklü denklemde önce koşul, sonra kare",
     figureTitle: "Köklü denklemde önce koşul, sonra kare",
@@ -206,6 +300,39 @@ export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupple
     ],
     summary: "12π×8 dikdörtgenin iki sarımı 288π ve 192 cm³ verir. Oran 3π/2, yan alan her ikisinde 96π cm².",
     appendSection: true,
+  }, {
+    title: "Daire diliminden koninin tabanını bul",
+    figureTitle: "Daire diliminden koninin tabanını bul",
+    paragraphs: [
+      "Yarıçapı 10 cm olan 216° daire diliminin yayı 12π cm. Birleştirildiğinde o yay koninin taban çevresidir. 2πr=12π ile r=6 cm. 10 cm anadoğru ve 6 cm yarıçap için dik yükseklik √(100−36)=8 cm. Hacim 96π cm³.",
+    ],
+    summary: "216° dilimin yayı 12π. Koni r=6, h=8, anadoğru 10 ve hacim 96π cm³.",
+    appendSection: true,
+  }, {
+    title: "Kürenin yarıçapını kesitten geri kur",
+    figureTitle: "Kürenin yarıçapını kesitten geri kur",
+    paragraphs: [
+      "Kesit alanı 144π ise kesit dairesinin yarıçapı a=12 birim. Düzlemin merkeze uzaklığı d=5. R²=a²+d²=144+25=169 ile kürenin yarıçapı 13'tür. Hacim 4π·13³/3=8788π/3 birim³.",
+    ],
+    summary: "Kesit alanı 144π ve uzaklık 5 ise a=12 ve R=13. Küre hacmi 8788π/3 birim³.",
+    appendSection: true,
+  }],
+  "kartezyen-carpim": [{
+    title: "Koordinat gösterimi ayrık noktaların kümesidir",
+    figureTitle: "Koordinat gösterimi ayrık noktaların kümesidir",
+    paragraphs: [
+      "A={1,2}, B={1,2,3} için altı ikili vardır. C={2}, D={2,3} için yalnız (2;2) ve (2;3) çıkar. (2;1) kalır, çünkü ikinci bileşen 1, D’de bulunmaz. Bir ikiliyi çıkarmak için iki üyelik birlikte sağlanmalıdır.",
+    ],
+    summary: "Altı A×B ikilisinden (2;2) ve (2;3) çıkar. Dört ikili kalır. (2;1) kalır.",
+  }],
+  "mantik-onerme": [{
+    title: "İse yalnız doğru öncül ve yanlış sonuçta yanlıştır",
+    figureTitle: "İse yalnız doğru öncül ve yanlış sonuçta yanlıştır",
+    paragraphs: [],
+  }, {
+    title: "Koşullu önermenin dört biçimini ayır",
+    tableLayout: "table",
+    paragraphs: [],
   }],
   "kumeler": [{
     title: "Üç kümenin ayrık bölgelerini içten dışa doldur",

@@ -1,4 +1,5 @@
 import { poly, pt, seg, txt, v, vec, type El, type FigureDef, type Tone, type V } from "./figureKit";
+import { cartesianProduct } from "../forge014Math";
 import { cell, nf, numberLine, pad, rect, zs } from "./mathFigures060TytKit";
 
 /*
@@ -220,13 +221,46 @@ const matching: FigureDef = {
   },
 };
 
-const GRID_STEPS = ["A × B", "B × A"];
+const GRID_STEPS = ["A × B", "B × A", "C × D’yi çıkar"];
 const coordPoints: FigureDef = {
   caption:
     "A = {1, 2}, B = {3, 5} için A × B grafiği dört ayrık noktadır; dikdörtgenin içi boyanmaz. (1, 4) arada görünse bile 4 ∉ B olduğundan elemanı değildir (boş daire). B × A’ya geçince noktalar y = x doğrusuna göre yer değiştirir.",
-  alt: "Koordinat düzleminde dört dolu nokta; (1, 4) konumunda boş daire; ikinci adımda noktaların y = x kesikli doğrusuna göre yansımaları.",
+  alt: "Koordinat düzlemi ayrık noktaları gösterir. İkinci adımda bileşenler yer değiştirir. Son adımda çıkarılacak iki nokta çarpı ile işaretlenir.",
   steps: GRID_STEPS,
   draw: (_, step) => {
+    if (step === 2) {
+      const all = cartesianProduct([1, 2], [1, 2, 3]);
+      const removed = cartesianProduct([2], [2, 3]);
+      const excluded = (x: number, y: number) => removed.some(([first, second]) => first === x && second === y);
+      const remain = all.filter(([x, y]) => !excluded(x, y));
+      const point = (x: number, y: number) => v(1.75 * x, 1.33 * y);
+      const els: El[] = [
+        vec(v(0, 0), point(2.55, 0), { tone: "ink" }),
+        vec(v(0, 0), point(0, 3.55), { tone: "ink" }),
+        txt(point(2.55, 0), "A", "se", { small: true }),
+        txt(point(0, 3.55), "B", "n", { small: true }),
+        ...[1, 2].map((x) => txt(point(x, 0), String(x), "s", { small: true })),
+        ...[1, 2, 3].map((y) => txt(point(0, y), String(y), "w", { small: true })),
+      ];
+      for (const [x, y] of all) {
+        const [cx, cy] = point(x, y);
+        if (excluded(x, y)) {
+          const d = 0.12;
+          els.push(seg(v(cx - d, cy - d), v(cx + d, cy + d), { tone: "warn", bold: true }));
+          els.push(seg(v(cx - d, cy + d), v(cx + d, cy - d), { tone: "warn", bold: true }));
+        } else {
+          els.push(pt(v(cx, cy), undefined, "n", "a"));
+        }
+      }
+      return {
+        els,
+        readout: [
+          "A={1, 2}, B={1, 2, 3}, C={2}, D={2, 3}.",
+          `6 ikiliden (2; 2) ve (2; 3) çıkar. Kalan ${remain.length} ikili.`,
+          remain.map(([x, y]) => `(${x}; ${y})`).join(", "),
+        ],
+      };
+    }
     const k = 0.8, els: El[] = [vec(v(0, 0), v(6.3 * k, 0), { tone: "ink", thin: true }), vec(v(0, 0), v(0, 6.3 * k), { tone: "ink", thin: true })];
     for (let i = 1; i <= 5; i++) els.push(seg(v(i * k, -0.07), v(i * k, 0.07), { tone: "muted", thin: true }), txt(v(i * k, -0.12), String(i), "s", { tone: "muted", small: true, soft: true }), seg(v(-0.07, i * k), v(0.07, i * k), { tone: "muted", thin: true }), txt(v(-0.12, i * k), String(i), "w", { tone: "muted", small: true, soft: true }));
     const pts: [number, number][] = [[1, 3], [1, 5], [2, 3], [2, 5]];
