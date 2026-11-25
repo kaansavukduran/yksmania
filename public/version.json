@@ -1,8 +1,8 @@
 {
-  "version": "0.198.0",
+  "version": "0.199.0",
   "channel": "alpha",
   "notes": {
-    "tr": "AYT Kimyada seçilen katmanda orbital ve spin kısıtlarını kutular üzerinde uygula. İzinli elektron kapasitesiyle atomun gerçek doluluğunu karşılaştır.",
-    "en": "Apply orbital and spin restrictions to the boxes in a chosen shell. Compare the permitted electron capacity with an atom’s actual occupancy."
+    "tr": "AYT Biyolojide tek mayozun dört ürününü ve bu ürünlerde kaç genotip bulunduğunu ayrı say. İki yönelimi karşılaştırıp bütün olası genotipleri çizimde gör.",
+    "en": "Count the four products of one meiosis and the number of genotypes separately, then compare orientations to find the full set of possible genotypes."
   }
 }
