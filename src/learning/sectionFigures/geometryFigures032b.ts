@@ -282,6 +282,43 @@ const p3 = (p: P3, label: string, at: "n" | "ne" | "e" | "se" | "s" | "sw" | "w"
   pt(proj(p), label, at, tone);
 
 const dikPrizmalar: Record<string, FigureDef> = {
+  "Küp bölünürken toplam yüzey nasıl değişir?": {
+    caption: "Ayrıtı 6 cm olan küpün her ayrıtına eş parçalar yerleştir. Küçük küpleri ayrı cisimler olarak düşününce temas yüzleri de dışarıya açılır.",
+    alt: "İlk adımda büyük küpün görünen üç yüzünde eş parçaların çizgileri var. İkinci adım aynı ölçekte tek bir küçük küp gösteriyor.",
+    steps: ["Büyük küp ve kesimler", "Ayrılan küçük küpler"],
+    param: { label: "Bir ayrıtın parça sayısı", min: 2, max: 5, step: 1, init: 3 },
+    draw: (n, step) => {
+      const outer = 6;
+      const side = outer / n;
+      const scale = 0.72;
+      const width = (step === 0 ? outer : side) * scale;
+      const { els } = prism([[0, 0], [width, 0], [width, width], [0, width]], width, { fills: { 1: "b" } });
+      if (step === 0) {
+        const edge = (a: P3, b: P3) => seg(proj(a), proj(b), { tone: "a", thin: true });
+        for (let i = 1; i < n; i++) {
+          const x = (width * i) / n;
+          els.push(
+            edge([x, 0, 0], [x, width, 0]),
+            edge([0, x, 0], [width, x, 0]),
+            edge([x, width, 0], [x, width, width]),
+            edge([0, width, x], [width, width, x]),
+            edge([width, 0, x], [width, width, x]),
+            edge([width, x, 0], [width, x, width]),
+          );
+        }
+      }
+      const count = n ** 3;
+      return {
+        els,
+        readout: [
+          `6 cm / ${n} = ${fmt(side, 2)} cm küçük ayrıt. ${n} × ${n} × ${n} = ${count} küp.`,
+          `Büyük hacim 216 cm³. Küçük parçaların toplam hacmi de 216 cm³.`,
+          `Tek küçük küpün yüzeyi ${fmt(6 * side ** 2, 2)} cm². İlk toplam alan 216 cm², yeni toplam alan ${216 * n} cm².`,
+        ],
+      };
+    },
+  },
+
   "Altıgen tabandan prizmanın en uzun köşegenine": {
     caption: "Altı eşkenar üçgenden taban alanını kur. Sonraki adımda tabanın karşıt köşeleri arasındaki 2a ile prizmanın 9 cm dik yüksekliğini kullan.",
     alt: "İlk adımda düzenli altıgen altı eşkenar üçgene ayrılmıştır. İkinci adımda alt ve üst karşıt köşeleri birleştiren cisim köşegeni çizilir.",

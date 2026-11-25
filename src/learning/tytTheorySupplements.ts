@@ -168,6 +168,24 @@ export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupple
     ],
     summary: "a=4 ve h=9 için taban 24√3, yan alan 216, hacim 216√3. Cisim köşegeni √145 cm.",
     appendSection: true,
+  }, {
+    title: "Küp bölünürken toplam yüzey nasıl değişir?",
+    figureTitle: "Küp bölünürken toplam yüzey nasıl değişir?",
+    paragraphs: [
+      "Kayıpsız eritmede 6 cm’lik küpün hacmi 216 cm³ kalır. 2 cm’lik küçük küplerin her biri 8 cm³ olduğundan 27 küp çıkar. Eski yüzey 216 cm², küçüklerin yüzeyleri toplamı 27·24=648 cm². Küçük küpler ayrılınca aradaki temas yüzleri açığa çıkar.",
+      "Her ayrıt n eş parçaya ayrılıyorsa n³ küp çıkar. Her küçük küpün yüzeyi 1/n² kadar olduğu için toplam yüzey n katına çıkar.",
+    ],
+    summary: "6 cm’den 2 cm’ye. Hacim 216 cm³ kalır. 27 küçük küpün yüzeyleri toplamı 648 cm².",
+    appendSection: true,
+  }],
+  "grafik-problemleri": [{
+    title: "Çizgi grafiğinde değişim ile değişim hızı ayrıdır",
+    figureTitle: "Çizgi grafiğinde değişim ile değişim hızı ayrıdır",
+    paragraphs: [
+      "Depo 0, 2, 5. saatlerde 20, 32, 26 L. İlk eğim 12/2=6 L/saat. İkinci eğim −6/3=−2 L/saat. 4. saatte ikinci aralıkta 2 saat geçtiği için 32−4=28 L.",
+      "Bütün aralığı başlangıç ve son noktadan ölç. (26−20)/5=1,2 L/saat. Aynı değeri eğimleri kendi süreleriyle ağırlıklandırarak (2·6+3·(−2))/5 ile denetle.",
+    ],
+    summary: "İlk eğim +6, ikinci −2 L/saat. 4. saatte 28 L. Bütün aralık 6/5=1,2 L/saat.",
   }],
   "kesir-problemleri": [{
     title: "Kalanın kesri yeni bir taban kullanır",

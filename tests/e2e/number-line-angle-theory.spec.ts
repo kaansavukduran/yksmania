@@ -1220,3 +1220,52 @@ test("A hexagonal prism diagonal uses the farthest base vertices", async ({ page
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("The whole graph weights each segment by its duration", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Çizgi grafiğinde değişim ile değişim hızı ayrıdır");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  const hour = model.getByRole("slider");
+  await page.goto("/#/lesson?id=grafik-problemleri");
+  await expect(model).toContainText("eşit (21 L)");
+  await next.press("Enter");
+  await hour.fill("4");
+  await expect(model).toContainText("4 saat. Depo hacmi 28 L");
+  await expect(model).toContainText("0–2 saatte +6 L/saat. 2–5 saatte −2 L/saat");
+  await expect(model).toContainText("(26−20)/5 = 1,2 L/saat");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-220");
+  await next.press("Enter");
+  await hour.press("End");
+  await expect(model).toContainText("5 saat. Depo hacmi 26 L");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Separating equal cubes preserves volume and adds exposed faces", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-geo-dik-prizmalar-032";
+  const model = figure(page, "Küp bölünürken toplam yüzey nasıl değişir?");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  const parts = model.getByRole("slider", { name: /Bir ayrıtın parça sayısı/ });
+  await page.goto(`/#/lesson?id=${id}`);
+  await expect(model).toContainText("3 × 3 × 3 = 27 küp");
+  await expect(model).toContainText("yeni toplam alan 648 cm²");
+  await next.press("Enter");
+  await parts.press("Home");
+  await expect(model).toContainText("2 × 2 × 2 = 8 küp");
+  await expect(model).toContainText("toplam hacmi de 216 cm³");
+  await expect(model).toContainText("yeni toplam alan 432 cm²");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${id}`);
+  await expect(figure(page, "Altıgen tabandan prizmanın en uzun köşegenine")).toBeVisible();
+  await expect(model).toContainText("yeni toplam alan 648 cm²");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
