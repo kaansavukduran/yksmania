@@ -2226,3 +2226,36 @@ test("AYT ATP pool keeps synthesis and hydrolysis separate", async ({ page, cont
   }
   expect(learning(await storage(page))).toEqual(before);
 });
+
+
+test("Quadratic division matches the polynomial and remainder at the divisor roots", async ({ page, context }) => {
+  test.setTimeout(75000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "İkinci derece bölenin iki köküyle kalanı kur");
+  for (const route of ["/#/lesson?id=ayt-polinomlar", "/#/cheatsheets?topic=detail-464"]) {
+    await page.goto(route);
+    const chart = model.getByRole("img");
+    await expect(chart).toBeVisible();
+    const slider = model.getByRole("slider", { name: /Karşılaştırılan x/ });
+
+    await expect(model).toContainText("x = 1 için P(x) = 4, R(x) = 4.");
+    await expect(chart.locator("circle.sf-ball")).toHaveCount(1);
+
+    await slider.fill("2");
+    await expect(model).toContainText("x = 2 için P(x) = 13, R(x) = 13.");
+    await expect(chart.locator("circle.sf-ball")).toHaveCount(1);
+
+    await slider.press("Home");
+    await expect(model).toContainText("x = 0 için P(x) = 1, R(x) = −5.");
+    await expect(model).toContainText("P(x) − R(x) = 6.");
+    await expect(chart.locator("circle.sf-ball")).toHaveCount(2);
+
+    await slider.press("End");
+    await expect(model).toContainText("x = 2,5 için P(x) = 21,625, R(x) = 17,5.");
+    await expect(model).toContainText("P(x) − R(x) = 4,125.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});

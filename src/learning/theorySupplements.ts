@@ -20,6 +20,17 @@ interface TheorySupplement {
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const theorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "ayt-polinomlar": [{
+    title: "İkinci derece bölenin iki köküyle kalanı kur",
+    figureTitle: "İkinci derece bölenin iki köküyle kalanı kur",
+    paragraphs: [
+      "P(x)=x³+2x+1, D(x)=(x−1)(x−2). P=D·Q+R eşitliğinde kalanın derecesi 2’den küçük olmalı. Bu yüzden R(x)=ux+v yazabiliriz. D’nin kökünde D·Q sıfır olur ve P(x)=R(x) kalır.",
+      "P(1)=4, P(2)=13. Böylece u+v=4 ve 2u+v=13. İkinci denklemden ilkini çıkarınca u=9, ardından v=−5 çıkar. Kalan 9x−5 ve bölüm x+3. Kontrol için (x²−3x+2)(x+3)+(9x−5) ifadesini aç, x³+2x+1 elde et.",
+      "Grafikte 1 ve 2’de yükseklikler eşit. 0’da P(0)=1 ve R(0)=−5, dolayısıyla iki grafik farklı. Tek kökü iki kez kullanmak iki bağımsız denklem vermez. İkinci derece bölenin çift katlı kökünde polinom bölmesi yapabilirsin.",
+    ],
+    summary: "D’nin iki farklı kökünde P=R. P(1)=4 ve P(2)=13, u+v=4 ve 2u+v=13 verir. Kalan 9x−5. Kalanın derecesi 1 ve böleninki 2.",
+    appendSection: true,
+  }],
   "atp-metabolizma": [{
     title: "ATP’nin parçalarını say, besinle rolünü karıştırma",
     figureTitle: "ATP’nin parçalarını say, besinle rolünü karıştırma",
