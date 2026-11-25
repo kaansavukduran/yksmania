@@ -186,7 +186,7 @@ import { biologyFigures060Digestion } from "./biologyFigures060Digestion";
 import { mathFigures060TytNumbers } from "./mathFigures060TytNumbers";
 import { mathFigures060TytAlgebra } from "./mathFigures060TytAlgebra";
 import { mathFigures060TytData } from "./mathFigures060TytData";
-import { mathFigures060TytProblems } from "./mathFigures060TytProblems";
+import { capacityWithBoxExample, mathFigures060TytProblems } from "./mathFigures060TytProblems";
 import { mathFigures062TytNumbers } from "./mathFigures062TytNumbers";
 import { mathFigures062TytRational } from "./mathFigures062TytRational";
 import { mathFigures062TytAlgebra } from "./mathFigures062TytAlgebra";
@@ -501,6 +501,10 @@ export const sectionImageFigures = new Map<string, Map<string, LessonPhoto>>([
   }]])],
 ]);
 
+const publishedSectionFigures: Record<string, Record<string, FigureDef>> = {
+  "sayi-problemleri": { "Kapasite eşitliği birimlerin oranını buldurur": capacityWithBoxExample },
+};
+
 export function SectionFigure({
   guideId,
   title,
@@ -511,7 +515,7 @@ export function SectionFigure({
   /** Optional lead-in shown only when the section really has a figure. */
   label?: string;
 }) {
-  const def = sectionFigures[guideId]?.[title];
+  const def = publishedSectionFigures[guideId]?.[title] ?? sectionFigures[guideId]?.[title];
   const photo = sectionImageFigures.get(guideId)?.get(title);
   if (!def && !photo) return null;
   return (

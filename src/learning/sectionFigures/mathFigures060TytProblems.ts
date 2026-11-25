@@ -291,7 +291,7 @@ const consecutiveOdd: FigureDef = {
   },
 };
 
-const CAP_STEPS = ["İki düzen", "Ortak kısmı çıkar", "b = 3a", "Otoparkta 57 yer", "Başka iki kutu düzeni"];
+const CAP_STEPS = ["İki düzen", "Ortak kısmı çıkar", "b = 3a", "Otoparkta 57 yer"];
 const capacity: FigureDef = {
   caption:
     "Aynı depo: 18 küçük + 8 büyük kutu = 12 küçük + 10 büyük kutu. Şeritler aynı uzunluktadır (küçük kutu a, büyük kutu b). İki satırdan ortak 12a + 8b çıkarılınca 6a = 2b kalır: bir büyük kutu üç küçük kutunun yerini alır (b = 3a). Otopark adımında aynı ilişkiyi otomobil yeriyle ölç.",
@@ -356,6 +356,11 @@ const capacity: FigureDef = {
     const lines = [["İki düzen aynı alanı doldurur: 18a + 8b = 12a + 10b.", "Şerit boyları eşit."], ["Ortak 12a + 8b çıkar: 6a = 2b.", "Soluk hücreler iki satırda aynı."], ["b = 3a: bir büyük kutu = üç küçük kutu.", "a’nın gerçek değeri gerekmez."]];
     return { els, readout: lines[step] };
   },
+};
+
+export const capacityWithBoxExample: FigureDef = {
+  ...capacity,
+  steps: [...CAP_STEPS, "Başka iki kutu düzeni"],
 };
 
 const budget: FigureDef = {

@@ -1,3 +1,4 @@
+import { tytTheorySupplements } from "./tytTheorySupplements";
 import { probabilitySheet036 } from "./probabilitySource036";
 import { statisticsSource037QuickText } from "./statisticsSource037Revision";
 import { countingSheets034035 } from "./countingSources034035";
@@ -155,21 +156,6 @@ export interface CheatSheet {
 }
 
 const revisedSectionTextByLesson = new Map([
-  ["kesir-problemleri", new Map([
-    ["Kalanın kesri yeni bir taban kullanır", [
-      "120’den önce 1/4, sonra ara kalanın 1/3’ü alınırsa 60 kalır. İki kesir de ilk bütüne aitse 50 kalır. İkinci kesri hangi miktarla çarptığını yaz.",
-    ]],
-  ])],
-  ["sayi-problemleri", new Map([
-    ["Kapasite eşitliği birimlerin oranını buldurur", [
-      "Toplam kapasite eşit. 10a+4b=4a+7b için ortak terimleri çıkarınca 6a=3b ve b=2a. İki düzen de 18 küçük kutunun yerini kullanır.",
-    ]],
-  ])],
-  ["koklu-sayilar", new Map([
-    ["Köklü denklemde önce koşul, sonra kare", [
-      "√(x+12)=x için x≥0 gerekir. Karesi alınan eşitlikten 4 ve −3 çıkar. √16=4 eşitliği sağlanır, √9=3 değeri −3’e eşit değildir.",
-    ]],
-  ])],
   ["bilimsel-gosterim-katsayi", new Map([
     ["Birbirini izleyen büyütmeleri çarp", [
       "İkinci çarpanı artık büyümüş uzunluğa uygula. 0,0125 mm önce 4 katıyla 0,05 mm, sonra 40 katıyla 2 mm olur. Tek işlemde çarpan 4·40=160 olur. Katsayıların birimi yoktur.",
@@ -493,6 +479,18 @@ export const builtInCheatSheets = new Map<string, CheatSheet>(
 export function studyCheatSheet(topicId: string): CheatSheet | undefined {
   const sheet = builtInCheatSheets.get(topicId);
   const lessonId = sheet?.lessonId;
+  const supplement = lessonId ? tytTheorySupplements[lessonId] : undefined;
+  if (sheet && supplement) {
+    const { title, figureTitle, summary, appendSection } = supplement;
+    const sections = appendSection
+      ? [...sheet.sections, { title, figureTitle, text: [summary] }]
+      : sheet.sections.map((section) =>
+          section.title === title
+            ? { ...section, text: [...section.text, summary], figureTitle }
+            : section
+        );
+    return { ...sheet, sections };
+  }
   if (!lessonId || !["enerji-ve-hareket", "isi-ve-sicaklik", "hal-degisimi", "donusum-oteleme-donme", "durgun-elektrik", "elektrik-akimi", "basinc", "sivilarin-kaldirma-kuvveti", "dalgalara-giris", "yay-dalgalari", "su-dalgalari", "ses-deprem-dalgalari"].includes(lessonId)) return sheet;
   const guide = studyGuide(lessonId);
   return guide ? lessonSheet(lessonId, guide) : sheet;

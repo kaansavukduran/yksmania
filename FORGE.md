@@ -3749,3 +3749,9 @@ Oran Orantı fiziksel 8 ve Yamuk fiziksel 2 ile 5 kullanıldı. TypeScript, 10 b
 Sayı Problemleri’nde aynı kapasiteyi dolduran iki kutu şeridinden ortak terimler çıkarılıyor. Kalan 6a=3b ilişkisi bir büyük kutunun iki küçük kutu kadar yer kapladığını gösteriyor. Paralelkenar’da verilen üç köşeden dördüncü köşe (9; 5), ortak köşegen ortası (5; 3) ve alan 24 birim² bulunuyor.
 
 Sayı Problemleri fiziksel 1 ve 7 ile Paralelkenar fiziksel 2 ve 5 karşılaştırıldı. 22 birim, 35 gerçek Chromium akışı, 323 çevrimdışı varlık ve üç ekran genişliğinde 20 çizim denetlendi. Sırada Kesir Problemleri fiziksel 6 ve Eşkenar Dörtgen fiziksel 2–3 ile 5 var.
+
+## TYT Matematik ve Geometri · 0.166.0 adayı
+
+Kesir Problemleri’nde 120 birimden önce 30 alınıyor. İkinci kesir 90’ın üçte biriyse 60 birim, 120’nin üçte biriyse 50 birim kalıyor. Eşkenar Dörtgen’de köşegenler 16 ve 12 olunca yarımlardan kenar 10, alan 96 ve iç yarıçap 4,8 bulunuyor.
+
+Kesir Problemleri fiziksel 6, Eşkenar Dörtgen fiziksel 2–3 ve 5 karşılaştırıldı. Yeni köklü denklem, ters orantı, kapasite ve kesir örnekleri öğrenci anlatımı ile Kopya Kağıtlarında açılıyor. Eski ders kayıtları ile eski kapasite çiziminin dört adımı kendi doğrulamasını geçiyor. TypeScript, 45 birim, 37 Chromium, 323 çevrimdışı varlık ve 66 görsel yerleşim kontrolü geçti. Sırada Yaş Problemleri fiziksel 1 ve Dikdörtgen fiziksel 2 ile 5 var.

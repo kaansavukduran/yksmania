@@ -117,14 +117,11 @@ const numbers: Pack = {
       "Bir etkinlikte 20 bilet satılması ile 1700 TL gelir elde edilmesi iki farklı bilgidir. Öğrenci bileti x ise yetişkin bileti 20−x olur; her türün sayısı kendi fiyatıyla çarpılır. Bilet sayılarının toplamı 20, gelirlerin toplamı 1700 olmalıdır. Ücretlerle kişi sayılarını doğrudan toplamak birimleri karıştırır.",
       "Aynı yöntem iki ve dört tekerlekli araçlarda, farklı puanlı sorularda veya farklı kapasitedeki masalarda kullanılır. Hepsi birinci türden olsaydı toplamı hesaplamak da geçerli bir başlangıçtır; gerçek toplamla farkı, tür değişiminin birim etkisine bölersin. Bu kısa yol her türün katkısının sabit olduğu koşulda çalışır; değişken indirim veya kademeli puan varsa modeli yeniden kur.",
     ),
-    {
-      title: "Kapasite eşitliği birimlerin oranını buldurur",
-      figureTitle: "Kapasite eşitliği birimlerin oranını buldurur",
-      paragraphs: [
-        "Aynı alanı dolduran iki düzende küçük kutunun alanı a, büyüğün alanı b olsun. İlk çizimde 18a+8b=12a+10b olduğundan ortak terimleri çıkarınca 6a=2b, yani b=3a bulunur. Her türün alanı ve iki düzendeki doluluk koşulları aynı olmalı.",
-        "Son çizimde 10a+4b=4a+7b olur. Her iki toplamdan 4a ve 4b çıkarınca 6a=3b kalır. Bu kez büyük kutu iki küçük kutu kadar yer kaplar. Kapasiteyi iki yoldan denetle: 10+4·2=18 ve 4+7·2=18 küçük kutu yeri.",
-      ],
-    },
+    section(
+      "Kapasite eşitliği birimlerin oranını buldurur",
+      "Aynı depo, her kutunun türüne göre farklı sayıda kutu alabilir. Küçük kutunun kapladığı alan a, büyük kutununki b ise 18 küçük+8 büyük ile 12 küçük+10 büyük aynı alanı doldurduğunda 18a+8b=12a+10b yazılır. Buradan 6a=2b ve b=3a çıkar; bir büyük üç küçük kutunun yerini alır.",
+      "Burada a'yı keyfî bir santimetrekare değeri seçmek zorunda değilsin; istenen çoğu kez oran veya tek türden kapasitedir. Fakat bütün kutuların kendi türleri içinde aynı büyüklükte olduğu, boşluk veya istif farkı olmadığı belirtilmelidir. Başka bir düzende farklı boşluk payı varsa iki toplamı eşitlemek doğru olmaz. Bilinmeyenlerin gereksiz gerçek değerini aramadan sorulan yapıyı yakala.",
+    ),
     section(
       "En az ve en çok eşitlikten fazlasını söyler",
       "'En az 30' x≥30, '30'dan fazla' x>30 demektir. Tam sayılı bir sonuç için x>7,2 koşulunun ilk uygun değeri 8'dir; x≥7 koşulunda 7 kabul edilir. Bütçe veya kapasite koşullarında denklem yerine eşitsizlik gerekir. Yalnız eşitliği çözmek sınırı verir; sınırın hangi tarafının uygun olduğunu ayrıca belirlemelisin.",
@@ -343,14 +340,11 @@ const fractions: Pack = {
       "Bir paranın 2/7'si kullanıldıysa 5/7'si kalır; kullanılan ve kalan kesirlerin toplamı 1'dir. 350 TL için kullanılan 100, kalan 250 TL'dir. 'Geriye 250 TL kalmıştır' bilgisi (5/7)N=250 denklemini kurdurur. 2/7 ile 250'yi çarpmak, kalan verisini başlangıç sanmak olur.",
       "Çubuk modelde bütün tek bir uzunlukla temsil edilir; kullanılan bölüm ile kalan bölüm bu çubuğu tam kaplar. Bu miktar bölünebilir bir para veya sıvı olabilir. Kişi veya kitap adedi ise kesirli sonuç bağlama uygun olmayabilir. Örneğin 10 kişinin 1/3'ü ifadesi tam bir kişi grubu vermediğinden gerçek adet bilgisini yeniden denetlemek gerekir.",
     ),
-    {
-      title: "Kalanın kesri yeni bir taban kullanır",
-      figureTitle: "Kalanın kesri yeni bir taban kullanır",
-      paragraphs: [
-        "Önce bütünün 1/4’ü, sonra kalanın 2/3’ü kullanıldığında ilk kalan 3N/4, ikinci kullanım N/2, son kalan N/4 olur. Her adımda kalan, bir sonraki işlemin bütünü olur.",
-        "120 birimde önce 30 kullan ve 90 bırak. Kalanın 1/3’ü 30 birimdir ve 60 kalır. İkinci kesir ilk bütünün 1/3’ü olsaydı 40 kullanılır, 50 kalırdı. İki şeritte aynı sayıda eş parça var. İkinci kullanımın hangi bütüne ait olduğuna bak.",
-      ],
-    },
+    section(
+      "Kalanın kesri yeni bir taban kullanır",
+      "Önce bütünün 1/4'ü, sonra kalanın 2/3'ü harcanırsa ilk kalan 3N/4'tür. İkinci harcama (2/3)(3N/4)=N/2, son kalan (1/3)(3N/4)=N/4 olur. Sonuç N−N/4−2N/3 değildir; ikinci kesir başlangıç N'ye değil, ara kalana aittir. Her adımda eski kalan, yeni işlemin bütünü olur.",
+      "Birden fazla aşama için kalan çarpanları çarpılır: N·(1−r₁)·(1−r₂)… . Bu zincir yalnız her kesir bir önceki kalana uygulanıyorsa geçerlidir. Atölyede ikinci kesrin referansını değiştir; aynı kesirlerle farklı bir sonucun çıkması bir hesap hatası değil, farklı bir cümlenin modellenmesidir. Harcanan toplamı son kalanı başlangıçtan çıkararak ayrıca denetleyebilirsin.",
+    ),
     section(
       "Aynı başlangıçtan verilen parçalar toplanır",
       "Bir bütçenin 1/4'ü kiraya ve başlangıç bütçesinin 1/3'ü ulaşıma ayrılıyorsa toplam pay 1/4+1/3=7/12'dir. Kalan 5/12 olur. İki kesrin aynı bütüne ait olması toplama için gerekli bilgidir. 'Sonra' sözcüğü tek başına kalanın kesri anlamına gelmez; referansı açık metinden bulmalısın.",
