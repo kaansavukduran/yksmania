@@ -479,16 +479,16 @@ export const builtInCheatSheets = new Map<string, CheatSheet>(
 export function studyCheatSheet(topicId: string): CheatSheet | undefined {
   const sheet = builtInCheatSheets.get(topicId);
   const lessonId = sheet?.lessonId;
-  const supplement = lessonId ? tytTheorySupplements[lessonId] : undefined;
-  if (sheet && supplement) {
-    const { title, figureTitle, summary, appendSection, sheetTitle = title } = supplement;
-    const sections = appendSection
-      ? [...sheet.sections, { title, figureTitle, text: [summary] }]
-      : sheet.sections.map((section) =>
-          section.title === sheetTitle
-            ? { ...section, text: [...section.text, summary], figureTitle }
-            : section
-        );
+  const supplements = lessonId ? tytTheorySupplements[lessonId] : undefined;
+  if (sheet && supplements) {
+    let sections = sheet.sections;
+    for (const { title, figureTitle, summary, appendSection, sheetTitle = title } of supplements) {
+      sections = appendSection
+        ? [...sections, { title, figureTitle, text: [summary] }]
+        : sections.map((section) => section.title === sheetTitle
+          ? { ...section, text: [...section.text, summary], figureTitle }
+          : section);
+    }
     return { ...sheet, sections };
   }
   if (!lessonId || !["enerji-ve-hareket", "isi-ve-sicaklik", "hal-degisimi", "donusum-oteleme-donme", "durgun-elektrik", "elektrik-akimi", "basinc", "sivilarin-kaldirma-kuvveti", "dalgalara-giris", "yay-dalgalari", "su-dalgalari", "ses-deprem-dalgalari"].includes(lessonId)) return sheet;

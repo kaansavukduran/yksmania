@@ -1044,3 +1044,48 @@ test("Inscribed angles on opposite sides of a chord are supplementary", async ({
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Different mixture masses give a weighted concentration", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Karışırken şeker ve su kütlesini ayrı topla");
+  await page.goto("/#/lesson?id=karisim-problemleri");
+  await expect(model).toContainText("Şeker 24 + 32 = 56 g");
+  await expect(model).toContainText("56/200 → %28");
+  const slider = model.getByRole("slider", { name: /İkinci karışımın kütlesi/ });
+  await slider.fill("120");
+  await expect(model).toContainText("72/240 → %30");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-216");
+  await expect(model).toContainText("56/200 → %28");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The hypotenuse changes between the chord and tangent triangles", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-cember-aci-040";
+  const model = figure(page, "Kiriş ve teğette hipotenüsü ayır");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("Tam kiriş 24 birim");
+  await next.press("Enter");
+  await expect(model).toContainText("√120 ≈ 10,95 birim");
+  const radius = model.getByRole("slider", { name: /Yarıçap/ });
+  await radius.press("End");
+  await expect(model).toContainText("√64 = 8 birim");
+  await checkFrame(page, model);
+
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(figure(page, "Kirişin iki tarafında görülen yay değişir")).toHaveCount(1);
+  await expect(model).toContainText("Tam kiriş 24 birim");
+  await next.press("Enter");
+  await expect(model).toContainText("Bu dik üçgende hipotenüs O ile P arasındaki uzaklık");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

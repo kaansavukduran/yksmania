@@ -207,6 +207,43 @@ const gcd: FigureDef = {
   },
 };
 
+const weightedMixture: FigureDef = {
+  caption: "Çubukların tümü karışımın kütlesini, iki parçası şeker ve suyu gösterir. İkinci karışımın kütlesini değiştir ve son yüzdeyi şeker kütlesinden hesapla.",
+  alt: "Üç yatay çubuk ilk karışımı, ikinci karışımı ve sonucu aynı ölçekle gösterir. Her çubuğun ilk bölümü şeker, geri kalanı sudur.",
+  param: { label: "İkinci karışımın kütlesi", min: 40, max: 160, step: 5, init: 80, unit: " g" },
+  draw: (secondMass) => {
+    const firstMass = 120;
+    const firstSugar = (firstMass * 20) / 100;
+    const secondSugar = (secondMass * 40) / 100;
+    const sugar = firstSugar + secondSugar;
+    const total = firstMass + secondMass;
+    const scale = 1 / 34;
+    const rows = [
+      { label: "İlk karışım", mass: firstMass, sugar: firstSugar },
+      { label: "İkinci karışım", mass: secondMass, sugar: secondSugar },
+      { label: "Sonuç", mass: total, sugar },
+    ];
+    const els: El[] = [];
+    rows.forEach((row, index) => {
+      const y = 4 - index * 1.75;
+      els.push(
+        txt(v(0, y + 0.65), `${row.label} · ${row.mass} g`, "ne", { tone: "ink", small: true }),
+        rect(0, y, row.sugar * scale, 0.47, "a"),
+        rect(row.sugar * scale, y, (row.mass - row.sugar) * scale, 0.47, "c"),
+        txt(v(0, y - 0.12), `Şeker ${row.sugar} g · Su ${row.mass - row.sugar} g`, "se", { tone: "ink", small: true }),
+      );
+    });
+    return {
+      els,
+      readout: [
+        `Şeker ${firstSugar} + ${secondSugar} = ${sugar} g. Toplam ${firstMass} + ${secondMass} = ${total} g.`,
+        `Şeker oranı: ${sugar}/${total} → %${fmt((100 * sugar) / total)}.`,
+        "Bu iki farklı yüzdeyi doğrudan ortalamak, yalnız kütleler eşitse doğru sonuç verir.",
+      ],
+    };
+  },
+};
+
 export const mathFiguresTyt2: Record<string, Record<string, FigureDef>> = {
   "hiz-problemleri": {
     "Birbirine gelenler aralığı birlikte kapatır": meeting,
@@ -214,7 +251,10 @@ export const mathFiguresTyt2: Record<string, Record<string, FigureDef>> = {
     "Tren tamamen geçiyorsa iki uzunluğu say": train,
   },
   "isci-problemleri": { "Birlikte hızlar toplanır, süreler değil": work },
-  "karisim-problemleri": { "Saf su eklemek yalnız toplamı büyütür": dilution },
+  "karisim-problemleri": {
+    "Saf su eklemek yalnız toplamı büyütür": dilution,
+    "Karışırken şeker ve su kütlesini ayrı topla": weightedMixture,
+  },
   "ebob-ekok": { "Eş parça ile ortak buluşmayı ayır": gcd },
 };
 

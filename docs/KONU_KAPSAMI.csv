@@ -108,7 +108,7 @@ TYT;Matematik;Yaş Problemleri;detail-212;yas-problemleri;106;15;6;15;2;1;7
 TYT;Matematik;Yüzde Problemleri;detail-213;yuzde-problemleri;107;15;8;15;2;1;7
 TYT;Matematik;Kar Zarar Problemleri;detail-214;kar-zarar-problemleri;108;15;7;15;2;1;7
 TYT;Matematik;Faiz Problemleri;detail-215;faiz-problemleri;109;14;7;14;7;1;1
-TYT;Matematik;Karışım Problemleri;detail-216;karisim-problemleri;110;14;6;14;6;1;7
+TYT;Matematik;Karışım Problemleri;detail-216;karisim-problemleri;110;15;6;15;6;1;7
 TYT;Tarih;Milli Mücadele Dönemi;detail-245;milli-mucadele;111;10;4;10;4;6;4
 TYT;Kimya;Katılar / viskozite;detail-162;katilar-viskozite;112;9;4;9;4;1;4
 TYT;Kimya;Buharlaşma / buhar basıncı;detail-163;buharlasma-buhar-basinci;113;8;4;8;4;1;3
@@ -499,7 +499,7 @@ TYT;Matematik;Birinci dereceden denklemler: eşitliği koru, modeli kur;topic-ty
 TYT;Matematik;Basit eşitsizlikler: sırayı koru, bütün çözümü gör;topic-tyt-mat-basit-esitsizlikler-kaynak-037;tyt-mat-basit-esitsizlikler-kaynak-037;498;40;44;17;5;1;7
 TYT;Matematik;Mutlak değer: uzaklık, koşul ve grafiğin mantığı;topic-tyt-mat-mutlak-deger-kaynak-038;tyt-mat-mutlak-deger-kaynak-038;499;34;38;14;3;1;7
 TYT;Matematik;Üslü sayılar: çarpan, koşul ve ölçeğin mantığı;topic-tyt-mat-uslu-sayilar-kaynak-039;tyt-mat-uslu-sayilar-kaynak-039;500;40;53;16;3;1;7
-TYT;Geometri;Çemberde açı, kiriş ve teğet;topic-tyt-geo-cember-aci-040;tyt-geo-cember-aci-040;501;12;3;5;3;2;6
+TYT;Geometri;Çemberde açı, kiriş ve teğet;topic-tyt-geo-cember-aci-040;tyt-geo-cember-aci-040;501;13;3;6;3;2;6
 TYT;Geometri;Daire, daire dilimi, çevre ve alan;topic-tyt-geo-daire-040;tyt-geo-daire-040;502;10;3;4;3;1;4
 TYT;Geometri;Silindir, koni ve küre;topic-tyt-geo-silindir-koni-kure-040;tyt-geo-silindir-koni-kure-040;503;10;3;4;3;6;8
 TYT;Geometri;Dik üçgende trigonometrik oranlar;topic-tyt-geo-trigonometrik-oranlar-040;tyt-geo-trigonometrik-oranlar-040;504;9;3;4;3;1;0

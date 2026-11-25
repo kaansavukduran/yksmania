@@ -389,16 +389,16 @@ for (const extension of forge020BiologyGuideExtensions) {
 // The reader can extend the catalog while preserving its historical entries.
 export function studyGuide(lessonId: string) {
   const guide = clarifiedGuideView(lessonGuides.get(lessonId));
-  const supplement = tytTheorySupplements[lessonId];
-  if (guide && supplement) {
-    const { title, figureTitle, paragraphs, appendSection } = supplement;
-    const sections = appendSection
-      ? [...guide.sections, { title, figureTitle, paragraphs }]
-      : guide.sections.map((section) =>
-          section.title === title
-            ? { ...section, paragraphs: [...section.paragraphs, ...paragraphs], figureTitle }
-            : section
-        );
+  const supplements = tytTheorySupplements[lessonId];
+  if (guide && supplements) {
+    let sections = guide.sections;
+    for (const { title, figureTitle, paragraphs, appendSection } of supplements) {
+      sections = appendSection
+        ? [...sections, { title, figureTitle, paragraphs }]
+        : sections.map((section) => section.title === title
+          ? { ...section, paragraphs: [...section.paragraphs, ...paragraphs], figureTitle }
+          : section);
+    }
     return { ...guide, sections };
   }
   if (guide?.id === "donusum-oteleme-donme") {

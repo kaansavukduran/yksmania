@@ -277,6 +277,65 @@ const cember: Record<string, FigureDef> = {
       };
     },
   },
+  "Kiriş ve teğette hipotenüsü ayır": {
+    caption: "Yarıçapı değiştir. Kiriş için merkezden inen dikme, teğet için değme noktasındaki diklik bir dik üçgen kurar.",
+    alt: "İlk adımda kirişin orta noktasına merkezden dikme iniyor. İkinci adımda değme noktasında yarıçap ve teğet dik açı oluşturuyor.",
+    steps: ["Yarım kiriş", "Dış noktadan teğet"],
+    param: { label: "Yarıçap", min: 9, max: 15, step: 1, init: 13 },
+    draw: (r, step) => {
+      const scale = 0.25;
+      const chordDistance = 5;
+      const externalDistance = 17;
+      const chordSquared = r ** 2 - chordDistance ** 2;
+      const tangentSquared = externalDistance ** 2 - r ** 2;
+      const els: El[] = [circle(O, r * scale, { tone: "ink" }), pt(O, "O", "sw")];
+      if (step === 0) {
+        const half = Math.sqrt(chordSquared);
+        const M = v(0, chordDistance * scale);
+        const A = v(-half * scale, chordDistance * scale);
+        const B = v(half * scale, chordDistance * scale);
+        els.push(
+          seg(A, B, { tone: "a", bold: true }),
+          seg(O, A, { tone: "b" }),
+          seg(O, M, { tone: "muted", dash: true }),
+          right(M, O, A, "ink"),
+          pt(A, "A", "nw"),
+          pt(B, "B", "ne"),
+          pt(M, "M", "n"),
+          txt(mid(O, M), String(chordDistance), "e", { tone: "ink", small: true }),
+          txt(mid(O, A), String(r), "s", { tone: "b", small: true }),
+        );
+        return {
+          els,
+          readout: [
+            `Yarım kiriş = √(${r}²−${chordDistance}²) = √${chordSquared} ${Number.isInteger(half) ? "=" : "≈"} ${fmt(half, 2)} birim.`,
+            `Tam kiriş ${fmt(2 * half, 2)} birim. Bu dik üçgende hipotenüs yarıçap.`,
+          ],
+        };
+      }
+      const tangent = Math.sqrt(tangentSquared);
+      const touchX = r ** 2 / externalDistance;
+      const T = v(touchX * scale, Math.sqrt(r ** 2 - touchX ** 2) * scale);
+      const P = v(externalDistance * scale, 0);
+      els.push(
+        seg(O, P, { tone: "ink" }),
+        seg(O, T, { tone: "b" }),
+        seg(T, P, { tone: "a", bold: true }),
+        right(T, O, P, "ink"),
+        pt(T, "T", "n"),
+        pt(P, "P", "se"),
+        txt(mid(O, P), String(externalDistance), "s", { tone: "ink", small: true }),
+        txt(mid(O, T), String(r), "nw", { tone: "b", small: true }),
+      );
+      return {
+        els,
+        readout: [
+          `Teğet PT = √(${externalDistance}²−${r}²) = √${tangentSquared} ${Number.isInteger(tangent) ? "=" : "≈"} ${fmt(tangent, 2)} birim.`,
+          "Bu dik üçgende hipotenüs O ile P arasındaki uzaklık.",
+        ],
+      };
+    },
+  },
   "Merkezden kirişe inen dikme kirişi ortalar": {
     caption: "r = 5 birim; kirişin merkeze uzaklığını değiştir. Dikme kirişi ortalar ve r² = d² + (c/2)² dik üçgeni oluşur. Merkeze yaklaşan kiriş uzar.",
     alt: "Çemberde yatay bir kiriş, merkezden kirişe dik çizgi, kirişin iki yarısında eşitlik çentikleri ve yarıçapla oluşan dik üçgen.",

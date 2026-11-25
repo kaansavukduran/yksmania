@@ -1,8 +1,8 @@
 {
-  "version": "0.170.0",
+  "version": "0.171.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Faiz Problemleri’nde yıllık oranı ay çizelgesinden oku. Çemberde Açılar’da aynı kirişin iki tarafında neden 50 ve 130 derece oluştuğunu yaylar üzerinden karşılaştır.",
-    "en": "Read simple interest on a month timeline and compare the arcs seen by inscribed angles on opposite sides of one chord."
+    "tr": "Karışım Problemleri’nde şeker ve su kütlesini ölçekli çubuklarla ayrı takip et. Çemberde Uzunluk dersinde kiriş ve teğet için hipotenüsün nasıl değiştiğini gör.",
+    "en": "Use proportional bars to follow solute and solvent masses. Compare the hypotenuse in the right triangles for a chord and a tangent."
   }
 }
