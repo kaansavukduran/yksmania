@@ -468,6 +468,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   mathFigures062TytAlgebra,
   mathFigures062TytCounting,
   geometryFigures063Sheets,
+  { "tyt-geo-paralelkenar-ozel-dortgenler-032": { "Orta noktalarla iç kareyi kur": squareFromMidpoints } },
   mathFigures064Sheets,
   turkishFigures065Sheets,
   geographyFigures066Sheets,
@@ -502,7 +503,6 @@ export const sectionImageFigures = new Map<string, Map<string, LessonPhoto>>([
 ]);
 
 const publishedSectionFigures: Record<string, Record<string, FigureDef>> = {
-  "tyt-geo-paralelkenar-ozel-dortgenler-032": { "Orta noktalarla iç kareyi kur": squareFromMidpoints },
   "sayi-problemleri": { "Kapasite eşitliği birimlerin oranını buldurur": capacityWithBoxExample },
 };
 

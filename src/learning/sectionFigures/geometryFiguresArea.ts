@@ -450,6 +450,33 @@ const noktaninAnalitigi: Record<string, FigureDef> = {
       };
     },
   },
+  "Oranla bölünen noktanın yönünü denetle": {
+    caption: "A(−2; 1), B(7; 7). AP:PB oranında ilk sayıyı değiştir. İki uzunluğun toplamı AB, iki vektörün toplamı da A’dan B’ye değişimdir.",
+    alt: "Koordinat düzleminde A ve B arasındaki doğru parçası iki renkle AP ve PB olarak ayrılmıştır. P her seçilen oranda doğru parçası üzerinde kalır.",
+    param: { label: "AP’nin payı", min: 1, max: 5, step: 1, init: 1 },
+    draw: (m) => {
+      const n = 2;
+      const A = v(-2, 1);
+      const B = v(7, 7);
+      const P = lerp(A, B, m / (m + n));
+      const ap = sub(P, A);
+      const pb = sub(B, P);
+      return {
+        els: [
+          ...axes(-3, 8, -1, 8, 2),
+          seg(A, P, { tone: "a", bold: true }),
+          seg(P, B, { tone: "b", bold: true }),
+          pt(A, "A(−2; 1)", "nw"),
+          pt(B, "B(7; 7)", "ne"),
+          pt(P, `P${xy(P)}`, "se", "a"),
+        ],
+        readout: [
+          `AP : PB = ${m} : ${n}. A’nın katsayısı ${n}, B’nin katsayısı ${m}. P = ${xy(P)}.`,
+          `AP = ${xy(ap)}, PB = ${xy(pb)}. İki vektör aynı yönde ve toplamları (9; 6).`,
+        ],
+      };
+    },
+  },
   "Dıştan bölme: eksi işaretinin geometrisi": {
     caption:
       "A(0; 0), B(4; 2) ve |AP| : |PB| = 3 : 1. m > n olduğundan P, B'nin ötesindedir: P = (3B − A)/2 = (6; 3).",

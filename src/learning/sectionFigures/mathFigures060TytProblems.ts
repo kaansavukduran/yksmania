@@ -130,6 +130,48 @@ const netFill: FigureDef = {
   },
 };
 
+const delayedInlet: FigureDef = {
+  caption: "İlk iki saatte yalnız A açık. B açılınca doluluk grafiği dikleşir. Sürgüyle zamanı değiştirip iki evrenin sürelerini ayrı oku.",
+  alt: "Yatay eksende geçen saat ve düşey eksende tank payı. Doluluk doğrusu B'nin açıldığı 2. saatte yön değiştirir ve 6,8. saatte tankın tamamına ulaşır.",
+  param: { label: "Geçen süre", min: 0, max: 6.8, step: 0.2, init: 2, unit: " saat" },
+  draw: (t) => {
+    const starts = 2;
+    const rateA = 1 / 10;
+    const rateB = 1 / 15;
+    const firstShare = starts * rateA;
+    const secondDuration = (1 - firstShare) / (rateA + rateB);
+    const end = starts + secondDuration;
+    const share = Math.min(1, t * rateA + Math.max(0, t - starts) * rateB);
+    const x = (hour: number) => hour * 1.02;
+    const y = (fraction: number) => fraction * 4.2;
+    const secondStart = v(x(starts), y(firstShare));
+    return {
+      els: [
+        vec(v(0, 0), v(x(7.45), 0), { tone: "ink" }),
+        vec(v(0, 0), v(0, y(1.16)), { tone: "ink" }),
+        txt(v(x(7.45), 0), "saat", "se", { small: true }),
+        txt(v(0, y(1.16)), "tank payı", "n", { small: true }),
+        txt(v(0, y(1)), "1", "w", { small: true }),
+        txt(v(0, y(firstShare)), "1/5", "w", { small: true }),
+        seg(v(0, y(1)), v(x(end), y(1)), { tone: "muted", dash: true }),
+        seg(v(0, 0), secondStart, { tone: "b", bold: true }),
+        seg(secondStart, v(x(end), y(1)), { tone: "c", bold: true }),
+        txt(v(x(starts), 0), "2", "s", { small: true }),
+        txt(v(x(end), 0), nf(end, 1), "s", { small: true }),
+        txt(secondStart, "B açılır", "ne", { tone: "ink", small: true }),
+        seg(v(x(t), 0), v(x(t), y(share)), { tone: "muted", dash: true }),
+        pt(v(x(t), y(share)), undefined, "n", "a"),
+      ],
+      readout: [
+        `${nf(t, 1)} saat geçti. Tank %${nf(100 * share, 1)} dolu.`,
+        "İlk 2 saat: 2 × 1/10 = 1/5 tank. Kalan 4/5.",
+        `İkinci hız 1/10 + 1/15 = 1/6 tank/saat. 4/5 ÷ 1/6 = ${nf(secondDuration, 1)} saat.`,
+        `Toplam 2 + ${nf(secondDuration, 1)} = ${nf(end, 1)} saat. 6 saat 48 dakika.`,
+      ],
+    };
+  },
+};
+
 const startLevel: FigureDef = {
   caption:
     "Başlangıçta %25 dolu tank, net hız 1/8 tank/saat (sabit kesitli tank: yükseklik hacim payıyla orantılı). Sürgüyle saati değiştir: pay 1/4 + t/8. 3 saatte %62,5, 6 saatte %100. Dolum süresi (1 − 1/4)/(1/8) = 6 saat; 1/r = 8 yazmak ilk suyu yok sayar.",
@@ -417,6 +459,7 @@ export const mathFigures060TytProblems: Record<string, Record<string, FigureDef>
   "havuz-problemleri": {
     "Giriş ekler, çıkış azaltır": netFill,
     "Başlangıç doluluğunu denklemde tut": startLevel,
+    "Gecikmiş açılış yeni evre başlatır": delayedInlet,
     "Kaçağın hızını karşılaştırmadan çıkar": leak,
     "Hacim eşitliği yükseklik eşitliği değildir": twoTanks,
   },

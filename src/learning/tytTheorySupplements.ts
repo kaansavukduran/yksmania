@@ -5,6 +5,7 @@ interface TheorySupplement {
   summary: string;
   appendSection?: true;
   sheetTitle?: string;
+  workedStep?: { title: string; index: number };
 }
 
 export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
@@ -130,6 +131,25 @@ export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupple
     ],
     summary: "r=6 ve α=60° için dilim 6π, üçgen 9√3, küçük parça 6π−9√3 birim².",
     sheetTitle: "Halka ve parça",
+  }],
+  "havuz-problemleri": [{
+    title: "Gecikmiş açılış yeni evre başlatır",
+    figureTitle: "Gecikmiş açılış yeni evre başlatır",
+    paragraphs: [
+      "A tek başına bir tankı 10 saatte doldurur. B 15 saatte doldurur ve iki saat sonra açılır. İlk iki saatte A 1/5 doldurur. Kalan 4/5, birlikte hız 1/6 ile 4,8 saatte dolar. Baştan sona 6,8 saat, yani 6 saat 48 dakika geçer.",
+    ],
+    summary: "İlk 2 saatte A 1/5 tank doldurur. Sonraki 4,8 saatte birlikte 4/5 tank doldurulur. Toplam 6,8 saat.",
+    workedStep: { title: "Gecikmeli giriş", index: 2 },
+  }],
+  "noktanin-analitigi": [{
+    title: "Oranla bölünen noktanın yönünü denetle",
+    figureTitle: "Oranla bölünen noktanın yönünü denetle",
+    paragraphs: [
+      "A(−2; 1), B(7; 7) ve AP:PB=1:2. A’dan B’ye değişim (9; 6). P’ye ulaşmak için bunun üçte birini, (3; 2)’yi al. A’ya ekleyince P(1; 3) çıkar. P’den B’ye (6; 4) kaldığı için oran 1:2.",
+      "P, A’ya daha yakınsa ağırlıklı ortalamada A’nın katsayısı daha büyük çıkar. Çizimi değiştirip bu yönü denetle.",
+    ],
+    summary: "AP:PB=1:2 için P=A+(B−A)/3. (−2; 1)+(3; 2)=(1; 3).",
+    appendSection: true,
   }],
   "kesir-problemleri": [{
     title: "Kalanın kesri yeni bir taban kullanır",

@@ -482,14 +482,22 @@ export function studyCheatSheet(topicId: string): CheatSheet | undefined {
   const supplements = lessonId ? tytTheorySupplements[lessonId] : undefined;
   if (sheet && supplements) {
     let sections = sheet.sections;
-    for (const { title, figureTitle, summary, appendSection, sheetTitle = title } of supplements) {
+    let examples = sheet.examples;
+    for (const { title, figureTitle, summary, appendSection, sheetTitle = title, workedStep } of supplements) {
       sections = appendSection
         ? [...sections, { title, figureTitle, text: [summary] }]
         : sections.map((section) => section.title === sheetTitle
           ? { ...section, text: [...section.text, summary], figureTitle }
           : section);
+      if (workedStep) {
+        examples = examples.map((example) => example.title === workedStep.title
+          ? { ...example, stepFigures: example.steps.map((_, index) => index === workedStep.index
+            ? figureTitle
+            : example.stepFigures?.[index]) }
+          : example);
+      }
     }
-    return { ...sheet, sections };
+    return { ...sheet, sections, examples };
   }
   if (!lessonId || !["enerji-ve-hareket", "isi-ve-sicaklik", "hal-degisimi", "donusum-oteleme-donme", "durgun-elektrik", "elektrik-akimi", "basinc", "sivilarin-kaldirma-kuvveti", "dalgalara-giris", "yay-dalgalari", "su-dalgalari", "ses-deprem-dalgalari"].includes(lessonId)) return sheet;
   const guide = studyGuide(lessonId);

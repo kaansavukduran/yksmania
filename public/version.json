@@ -1,8 +1,8 @@
 {
-  "version": "0.172.0",
+  "version": "0.173.0",
   "channel": "alpha",
   "notes": {
-    "tr": "İşçi Problemleri’nde tamamlanan iş payını üç doğruyla karşılaştır. Dairede Alan’da 60 derecelik küçük daire parçasını dilim ve eşkenar üçgen farkıyla hesapla.",
-    "en": "Compare three work rates on one graph and find the area of a circular segment from the sector and triangle."
+    "tr": "Havuz Problemleri’nde ikinci girişin açıldığı anda grafiğin eğimini izle. Noktanın Analitiği’nde 1:2 içten bölmeyi koordinat, yön ve vektör farkıyla denetle.",
+    "en": "Follow the slope change when a second inlet opens and verify an internal division ratio with coordinates and vectors."
   }
 }

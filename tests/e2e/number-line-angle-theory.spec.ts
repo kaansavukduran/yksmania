@@ -1128,3 +1128,49 @@ test("The small circular segment subtracts the exact equilateral triangle area",
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("The delay belongs in the lesson, solved example and cheat sheet", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const title = "Gecikmiş açılış yeni evre başlatır";
+  const model = figure(page, title).filter({ visible: true }).first();
+  await page.goto("/#/lesson?id=havuz-problemleri");
+  await expect(model).toContainText("2 saat geçti. Tank %20 dolu");
+  await model.getByRole("slider").press("End");
+  await expect(model).toContainText("6,8 saat geçti. Tank %100 dolu");
+  await checkFrame(page, model);
+  const lessonExample = page.locator(".worked-example").filter({ hasText: "Gecikmeli giriş" });
+  await lessonExample.locator("summary").press("Enter");
+  await lessonExample.getByRole("button", { name: "Çözümün tamamını göster", exact: true }).press("Enter");
+  await expect(figure(lessonExample, title)).toContainText("6 saat 48 dakika");
+
+  await page.goto("/#/cheatsheets?topic=detail-218");
+  await expect(model).toContainText("İlk 2 saat: 2 × 1/10 = 1/5 tank");
+  const sheetExample = page.locator(".worked-example").filter({ hasText: "Gecikmeli giriş" });
+  await sheetExample.getByText("Gecikmeli giriş", { exact: true }).press("Enter");
+  await sheetExample.getByText("Çözümü adım adım gör", { exact: true }).press("Enter");
+  const sheetModel = figure(sheetExample, title);
+  await expect(sheetModel).toContainText("6 saat 48 dakika");
+  await checkFrame(page, sheetModel);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("An internal division moves both coordinates by the same ratio", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Oranla bölünen noktanın yönünü denetle");
+  await page.goto("/#/lesson?id=noktanin-analitigi");
+  await expect(model).toContainText("P = (1; 3)");
+  await expect(model).toContainText("AP = (3; 2), PB = (6; 4)");
+  await model.getByRole("slider", { name: /AP’nin payı/ }).press("ArrowRight");
+  await expect(model).toContainText("P = (2,5; 4)");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-138");
+  await expect(model).toContainText("P = (1; 3)");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
