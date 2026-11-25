@@ -64,7 +64,35 @@ function stack(x: number, parts: [number, string, Tone][], scale: number, title:
 const C_SU = 4.2;
 const LF = 334;
 
+const heatCapacityFromSlope: FigureDef = {
+  caption: "İki su örneğinde öz ısı eşit. Kütlesi büyük örnek aynı sıcaklık artışı için daha fazla enerji alır. Q–ΔT doğrusunun eğimi ısı sığasıdır.",
+  alt: "Düşey eksende aktarılan enerji, yatay eksende sıcaklık artışı. 0,2 ve 0,3 kilogramlık su örneklerinin eğimleri 840 ve 1260 J/°C. Sürgü aynı sıcaklık artışını her iki doğru üzerinde gösterir.",
+  param: { label: "Sıcaklık artışı (°C)", min: 0, max: 5, step: 1, init: 5 },
+  draw: (delta) => {
+    const cases = [{ name: "A", mass: 0.2, tone: "a" }, { name: "B", mass: 0.3, tone: "b" }] as const;
+    const heatCapacity = (mass: number) => mass * C_SU * 1000;
+    const point = (change: number, heat: number) => v(change * 1.1, heat / 1750);
+    const els = axes(v(0, 0), 5.9, 4.1, "ΔT (°C)", "Q (J)");
+    for (const value of [0, 1, 2, 3, 4, 5]) {
+      els.push(txt(v(value * 1.1, -0.15), String(value), "s", { small: true }));
+    }
+    for (const heat of [2100, 4200, 6300]) {
+      els.push(txt(v(-0.18, heat / 1750), fmt(heat), "w", { small: true }));
+    }
+    const readout = cases.map(({name, mass, tone}) => {
+      const capacity = heatCapacity(mass), energy = capacity * delta;
+      els.push(seg(v(0, 0), point(5, capacity * 5), { tone, bold: true, dash: name === "B" }));
+      els.push(pt(point(delta, energy), undefined, "n", tone));
+      els.push(txt(v(5.75, capacity * 5 / 1750), name, "e", { tone, bold: true, small: true }));
+      return `${name} (${fmt(mass)} kg): C = ${fmt(capacity)} J/°C. Q = ${fmt(capacity)} × ${delta} = ${fmt(energy)} J.`;
+    });
+    els.push(txt(v(-1.1, 4.6), "", "c"), txt(v(8.1, -1.05), "", "c"));
+    return { els, readout };
+  },
+};
+
 const isi: Record<string, FigureDef> = {
+  "Isı sığasını enerji grafiğinin eğiminden oku": heatCapacityFromSlope,
   [thermalTransferTitle]: thermalTransferFigure,
   [weightedBalanceTitle]: weightedBalanceFigure,
   [exactTemperatureTitle]: exactTemperatureFigure,

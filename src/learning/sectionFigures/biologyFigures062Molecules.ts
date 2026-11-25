@@ -1,4 +1,5 @@
-import { regular, seg, txt, v, type El, type FigureDef } from "./figureKit";
+import { glucoseSource005 } from "../glucoseSource005";
+import { pt, regular, seg, txt, v, vec, type El, type FigureDef } from "./figureKit";
 import { flowFig, tableFig } from "./turkishFigures060Kit";
 import { chains, drawFig, lines, nt, unitDot } from "./biologyFigures062Kit";
 
@@ -306,8 +307,45 @@ const levels = flowFig({
   foot: "Şekil sorusunda gereken katlanma ve etkileşim bilgisini izle.",
 });
 
+const glucoseChange: FigureDef = {
+  caption: "Toplam glikoz ve yeni oluşan glikoz farklıdır. Veriler varsayımsaldır. Çizgi örnek noktalarını birleştirir, ara zamanlarda yeni ölçüm göstermez.",
+  alt: "Zaman 0, 2, 4 ve 6 dakika. Glikoz miktarı sırasıyla 3, 7, 11 ve 11 birim. Önce artış, sonra yatay bölüm.",
+  steps: ["İlk dört dakika", "Dört ile altı arası"],
+  draw: (_, step) => {
+    const first = step === 0 ? 0 : 2, last = step === 0 ? 2 : 3;
+    const point = (minute: number, amount: number) => v(minute, amount * 0.36);
+    const els: El[] = [
+      vec(v(0, 0), v(6.65, 0), { tone: "ink" }),
+      vec(v(0, 0), v(0, 4.6), { tone: "ink" }),
+      txt(v(0, 4.9), "Glikoz (birim)", "e", { small: true, bold: true }),
+      txt(v(5.65, -0.72), "Zaman (dk)", "s", { small: true }),
+      txt(v(-1.0, 5.1), "", "c"),
+      txt(v(7.5, -1.3), "", "c"),
+    ];
+    glucoseSource005.forEach(({minute, amount}, i) => {
+      const at = point(minute, amount);
+      const upcoming = glucoseSource005[i + 1];
+      const tone = i >= first && i <= last ? "b" : "muted";
+      if (upcoming) {
+        const selected = i >= first && i < last;
+        els.push(seg(at, point(upcoming.minute, upcoming.amount), { tone: selected ? "b" : "muted", bold: selected, dash: !selected }));
+      }
+      els.push(pt(at, undefined, "n", tone));
+      els.push(txt(v(minute, -0.16), String(minute), "s", { small: true }));
+    });
+    for (const amount of [0, 3, 7, 11]) els.push(txt(point(-0.14, amount), String(amount), "w", { small: true }));
+    const a = glucoseSource005[first], b = glucoseSource005[last];
+    const delta = b.amount - a.amount, time = b.minute - a.minute;
+    return { els, readout: [
+      `Net artış ${b.amount} − ${a.amount} = ${delta} birim. Ortalama hız ${delta} ÷ ${time} = ${delta / time} birim/dakika.`,
+      ...(step === 1 ? ["Yatay bölge net artış olmadığını gösterir. Nedenini belirlemek için başka bilgi gerekir."] : []),
+    ] };
+  },
+};
+
 export const biologyFigures062Molecules: Record<string, Record<string, FigureDef>> = {
   karbohidratlar: {
+    "Glikozun toplam miktarı ile artışını ayır": glucoseChange,
     "Şekerin adı kadar birim sayısını da oku": sizes,
     "Polisakkaritlerde görev ve bağlanma biçimi": polys,
     "Bağ sayısında zincir sayısını unutma": carbBonds,

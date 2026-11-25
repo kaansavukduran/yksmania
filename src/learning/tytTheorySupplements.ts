@@ -1,3 +1,6 @@
+import { particleCoordinatesSource006 } from "./particleCoordinatesSource006";
+import { glucoseSource005 } from "./glucoseSource005";
+import { germinationSource002, germinationTotal } from "./germinationSource002";
 import type { GuideSection } from "./guides/types";
 import { signedBinomial035 } from "./signedBinomialSource035Model";
 import { statisticsSource037Classes } from "./statisticsSource037Revision";
@@ -17,6 +20,226 @@ interface TheorySupplement {
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "isi-ve-sicaklik": [{
+    title: "Isı sığasını enerji grafiğinin eğiminden oku",
+    figureTitle: "Isı sığasını enerji grafiğinin eğiminden oku",
+    paragraphs: [
+      "Isı sığası C=m·c, örneğin tamamını 1 °C ısıtmak için gereken enerjidir. Suyun öz ısısı yaklaşık 4200 J/(kg·°C). 0,2 kg su için C=840 J/°C, 0,3 kg su için C=1260 J/°C.",
+      "Düşey Q, yatay ΔT ise eğim Q/ΔT birimi J/°C. 5 °C artış için daha küçük örnek 4200 J, daha büyük örnek 6300 J alır. İki çizgide de aynı madde ve hâl değişimi olmayan aralık kullanılıyor.",
+    ],
+    summary: "Q–ΔT grafiğinin eğimi C=m·c. 0,2 ve 0,3 kg suda eğimler 840 ve 1260 J/°C. 5 °C için Q=4200 ve 6300 J.",
+    appendSection: true,
+  }],
+  "atomun-temel-tanecikleri": [{
+    title: "Grafikte önce eksenleri tabloya çevir",
+    figureTitle: "Grafikte önce eksenleri tabloya çevir",
+    paragraphs: [
+      "Üç noktada elektron sayısı 10. U’da proton sayısı 11, V’de 8, W’de 10. Her satırda yükü proton eksi elektron sayısıyla bul. W eşitlik çizgisinde olduğu için nötrdür.",
+      "Nötron sayısı veya kütle numarası için ek veri gerekir. Grafiğin ilk üç adımı aynı koordinat sırasını kullanır. Son adımda eksen adlarının değişmesi U’nun yorumunu değiştirir.",
+    ],
+    summary: "Yatay p, düşey e iken U(11,10) → +1, V(8,10) → −2, W(10,10) → 0. Aynı e sayısı yüklerin eşit olmasını gerektirmez.",
+    table: {
+      headers: ["Nokta", "Proton", "Elektron", "Yük"],
+      rows: particleCoordinatesSource006.map(({name, p, e}) => [name, String(p), String(e), p > e ? `+${p - e}` : String(p - e).replace("-", "−")]),
+      layout: "table",
+    },
+  }],
+  "lipitler": [{
+    title: "Fosfolipitte iki farklı uç",
+    figureTitle: "Fosfolipitte iki farklı uç",
+    paragraphs: [
+      "Çizimin son adımında hücrenin iki sulu yüzünü karşılaştır. Üst başlar dış ortama, alt başlar sitoplazmaya bakar. İki yağ asidi kuyruğu ortadaki bölgeye yönelir.",
+      "Model tipik gliserofosfolipiti sadeleştirerek gösterir. Baş grupları değişebilir. Çizimdeki molekül adedi ve uzaklıklar temsili.",
+    ],
+    summary: "Kutuplu başlar iki sulu yüze bakar. Kuyruklar zarın ortasında birbirine döner. İlk adım tek fosfolipit, son adım iki sulu ortamı gösterir.",
+  }],
+  "enerji-ve-hareket": [{
+    title: "Net kuvvet grafiğinden son kinetik enerjiyi bul",
+    figureTitle: "Net kuvvet grafiğinden son kinetik enerjiyi bul",
+    paragraphs: [
+      "Yatay eksen konumu metre, düşey eksen net kuvveti newton cinsinden gösterir. 0–2 m arasında 6 N ile iş 12 J. 2–4 m arasında kuvvet doğrusal olarak sıfıra düştüğünde üçgen alanı 6 J.",
+      "4–5 m arasında kuvvet −2 N, iş −2 J. Net iş 12+6−2=16 J ve kinetik enerjideki değişime eşit. Başlangıç 10 J ise son değer 26 J. Eksen altındaki alanı pozitif almak 30 J sonucuna götürür.",
+    ],
+    summary: "Kuvvet–konum grafiğinde işaretli alanlar 12, 6 ve −2 J. Net iş 16 J. Başlangıç 10 J ise son kinetik enerji 26 J.",
+    appendSection: true,
+  }],
+  "atom-modelleri": [{
+    title: "Aynı enerji farkını iki geçiş yolunda karşılaştır",
+    figureTitle: "Aynı enerji farkını iki geçiş yolunda karşılaştır",
+    paragraphs: [
+      "Bu çizimde A=0, B=4 ve C=8 göreli enerji birimi. C’den A’ya tek geçişte 8 birim salınır. C’den B’ye 4, B’den A’ya 4 birim salınır. Ara düzey iki çıkarma işleminde birbirini götürür: (8−4)+(4−0)=8.",
+      "Aynı başlangıç ve bitiş toplam enerji farkını belirler. Tek aşamalı ve iki aşamalı geçiş farklı sayıda ışık paketiyle gerçekleşir. Merdiven aralıkları bu öğretim modeline ait. Gerçek bir atoma aynı sayıları atama.",
+    ],
+    summary: "C→A: bir geçiş, 8 birim. C→B→A: iki geçiş, 4+4=8 birim. Yolu değiştirince geçiş sayısı değişir, toplam fark aynı kalır.",
+    appendSection: true,
+  }],
+  "karbohidratlar": [{
+    title: "Glikozun toplam miktarı ile artışını ayır",
+    figureTitle: "Glikozun toplam miktarı ile artışını ayır",
+    paragraphs: [
+      "Bu veriler varsayımsal. Başlangıçta 3 birim glikoz vardı. Dördüncü dakikada toplam 11 birim olduğunda net artış 11−3=8 birim, ortalama hız 8/4=2 birim/dakika.",
+      "Dört ile altıncı dakika arasında net değişim 0. Bunun nedeni yalnız bu grafikten belirlenemez. Enzim etkinliği, substrat miktarı ve ölçüm koşulları gibi ek bilgilere ihtiyaç vardır.",
+    ],
+    summary: "İlk dört dakikada son toplam 11, yeni oluşan net miktar 8, ortalama hız 2 birim/dakika. Son iki dakikada net artış 0.",
+    table: {
+      headers: ["Zaman (dk)", "Glikoz (birim)"],
+      rows: glucoseSource005.map(({ minute, amount }) => [String(minute), String(amount)]),
+      layout: "table",
+    },
+    appendSection: true,
+  }],
+  "newton": [{
+    title: "Yatay ve düşey kuvvetleri ayrı topla",
+    figureTitle: "Yatay ve düşey kuvvetleri ayrı topla",
+    paragraphs: [
+      "Önce hedefi tek seç: 4 kg kutu. İp 18 N sağa, sürtünme 6 N sola, yüzey 40 N yukarı, Dünya 40 N aşağı kuvvet uygular. Sağ ve yukarı pozitif. Hız ve ivme kuvvet oku değildir.",
+      "Yatay toplam 18−6=12 N sağa, düşey toplam 40−40=0. Düşey ivme sıfır, yatay ivme 12/4=3 m/s² sağa. Ağırlık ile normal aynı kutuya etki ettiği için bir etki-tepki çifti oluşturmaz.",
+    ],
+    summary: "Yatay kuvvet 12 N sağa, düşey kuvvet toplamı 0 N. İvme 3 m/s² sağa. Bileşkeyi kuvvet listesine ikinci kez ekleme.",
+    appendSection: true,
+  }],
+  "kimya-guvenlik": [{
+    title: "İlk ve son büret okumasının farkını al",
+    figureTitle: "İlk ve son büret okumasının farkını al",
+    paragraphs: [
+      "Bu bürette sayılar yukarıdan aşağıya artar. İki okuma aynı aletten ve aynı ölçekten gelirse 7,5−2,0=5,5 mL verilmiş olur. Son okuma tek başına aktarılan hacmi göstermez.",
+      "Su gibi camı ıslatan sıvının yüzeyi çukur görünebilir. Göz hizasını ölçü çizgisiyle eşleştir ve uygun durumda çukurun alt noktasını oku. Sıvı değiştiğinde aynı yüzey biçimini varsayma.",
+    ],
+    summary: "İlk okuma 2,0 mL ve son okuma 7,5 mL ise fark 5,5 mL. Aynı aletten okunmuş iki ölçek değeri gerekir.",
+    appendSection: true,
+  }],
+  "su-asit-baz-tuz": [{
+    title: "Eşit enerjide iki sıvının sıcaklık artışını karşılaştır",
+    figureTitle: "Eşit enerjide iki sıvının sıcaklık artışını karşılaştır",
+    paragraphs: [
+      "Öz ısı, bir gram maddenin sıcaklığını 1 °C değiştirmek için gereken enerjidir. Her sıvı 100 g. A’nın öz ısısı 4, B’ninki 2 J/(g·°C). Isı kaybı ve hâl değişimi yok.",
+      "Her birine 800 J verildiğinde ΔT=Q/(m·c). A’da 800/400=2 °C, B’de 800/200=4 °C. Daha büyük öz ısı, aynı kütle ve enerjide daha küçük sıcaklık artışı demektir.",
+    ],
+    summary: "100 g ve 800 J için A 2 °C, B 4 °C ısınır. Hâl değişimi yoksa ΔT=Q/(m·c). Sıcaklık artışı ile verilen enerjiyi ayır.",
+    appendSection: true,
+  }],
+  "dogrusal-hareket": [{
+    title: "Hız sıfırı geçince alanı ayrı hesapla",
+    figureTitle: "Hız sıfırı geçince alanı ayrı hesapla",
+    paragraphs: [
+      "Hız 0–2 s boyunca +4 m/s. Sonraki 3 saniyede hız −2 m/s’ye iniyor. Bu bölümün ivmesi (−2−4)/(5−2)=−2 m/s². Hızın +4’ten sıfıra düşmesi 2 saniye sürer ve yön değişimi t=4 s anındadır.",
+      "Yer değiştirmede 0–2, 2–4, 4–5 ve 5–7 saniye alanları sırayla +8, +4, −1 ve −4 m. Toplam +7 m. Yol için alanların büyüklüklerini topla: 17 m. Süre 7 s. Ortalama hız +1 m/s, ortalama sürat yaklaşık 2,43 m/s.",
+    ],
+    summary: "Dönüş t=4 s. Yer değiştirme +8+4−1−4=+7 m. Yol 8+4+1+4=17 m. Ortalama için ikisini ayrı ayrı 7 saniyeye böl.",
+    appendSection: true,
+  }],
+  "sembolik-dil": [{
+    title: "Alt indis, parantez ve katsayının görevi",
+    figureTitle: "Alt indis, parantez ve katsayının görevi",
+    paragraphs: [
+      "Al₂(SO₄)₃ içinde üç sülfat grubu vardır. Her grupta 1 S ve 4 O. Bir formül biriminde 2 Al, 3 S, 12 O bulunur. Baştaki 3 katsayısı bütün bu sayıları üç katına çıkarır. Toplam 51 atom sayılır, element türü sayısı üç kalır.",
+    ],
+    summary: "Al₂(SO₄)₃: 2 Al, 3 S, 12 O. 3Al₂(SO₄)₃: 6 Al, 9 S, 36 O. Parantez içini çoğalt, sonra dış katsayıyı bütün birime uygula.",
+    table: {
+      headers: ["Element", "Bir formül birimi", "Üç formül birimi"],
+      rows: [["Al", "2", "6"], ["S", "3", "9"], ["O", "12", "36"], ["Toplam", "17", "51"]],
+      layout: "table",
+    },
+  }],
+  "mineraller": [{
+    title: "Ham miktarı değil, karşılanan gereksinimi karşılaştır",
+    figureTitle: "Ham miktarı değil, karşılanan gereksinimi karşılaştır",
+    paragraphs: [
+      "X gereksinimi 10 mg ve elde 5 mg varsa yarısı karşılanır. Y gereksinimi 1 mg ve elde 0,8 mg varsa %80’i karşılanır. Y’nin ham miktarı daha küçük olsa da bu örnekte X daha yetersizdir.",
+      "Y’nin karşılanma yüzdesini değiştir. %50’de iki gereksinim eşit oranda karşılanır. Bu karşılaştırmada diğer etkenler uygun ve model gereksinimleri sabittir.",
+    ],
+    summary: "5/10=%50 ve 0,8/1=%80. Ham miktarı daha az olanı seçmek yanlış sonuç verir. Karşılanan gereksinim en az olan X sınırlayıcıdır.",
+    appendSection: true,
+  }],
+  "madde-ozkutle": [{
+    title: "Eksenler değişince eğimin birimi değişir",
+    figureTitle: "Eksenler değişince eğimin birimi değişir",
+    paragraphs: [
+      "Sabit sıcaklık ve basınçta hacim 10, 20, 30 cm³ iken kütle 20, 40, 60 g. Kütle düşeyse eğim (60−20)/(30−10)=2 g/cm³ olur. Hacim düşeyse eğim (30−10)/(60−20)=0,5 cm³/g. Grafiğin eksenlerini değiştirdin. Maddenin özkütlesi 2 g/cm³ kaldı.",
+      "Kap kütlesi ölçüme eklenirse doğru orijinden geçmeyebilir. O durumda bir noktanın değerlerini doğrudan bölmek kabı da hesaba katar. İki nokta arasındaki farkla eğim yine bulunur.",
+    ],
+    summary: "Kütle düşeydeyse eğim 2 g/cm³. Hacim düşeydeyse 0,5 cm³/g, yani özkütlenin tersi. Doğrunun görünüşü yerine birimi ve iki koordinat farkını oku.",
+    appendSection: true,
+  }],
+  "kimya-disiplinleri": [{
+    title: "Bir projede yapılan işi okuyup alanı seç",
+    paragraphs: [
+      "Aynı ilaç projesi birden çok kimya alanı içerebilir. Her aşamada yapılan işi ayrı oku. Maddenin adından çok incelenen hedef, ölçüm veya karara bak.",
+      "Bir enzimin canlıdaki etkisini araştırmak biyokimyaya bağlıdır. Üretilen maddenin saflığını ölçmek analitik kimyaya, sıcaklıkla tepki hızının ilişkisini araştırmak fizikokimyaya bağlıdır.",
+    ],
+    summary: "Disiplini seçmek için cümledeki işe bak. Sentez, canlı süreç, saflık ölçümü, hıza etki ve üretim ölçeği ayrı görevlerdir.",
+    table: {
+      headers: ["Aşama", "İş", "Kimya alanı"],
+      rows: [
+        ["1", "Organik molekül oluşturma", "Organik kimya"],
+        ["2", "Enzim etkisini inceleme", "Biyokimya"],
+        ["3", "Saflığı ölçme", "Analitik kimya"],
+        ["4", "Sıcaklık ile hız ilişkisini inceleme", "Fizikokimya"],
+        ["5", "Fabrika ölçeğinde üretim", "Endüstriyel kimya"],
+      ],
+      layout: "table",
+    },
+    appendSection: true,
+  }],
+  "bilimsel-yontem": [{
+    title: "Ölçülen en yüksek değer ile veri dışı tahmini ayır",
+    figureTitle: "Ölçülen en yüksek değer ile veri dışı tahmini ayır",
+    paragraphs: [
+      "Bu sayılar varsayımsal öğretim verisidir. Her sıcaklıkta aynı türden 20 tohum için yedinci gün çimlenenler sayılmıştır. Ölçülen en yüksek sayı 25 °C’de 16, oran %80. Sıcaklık artarken 25 °C’den sonra sayı azalır.",
+      "40 °C ölçülmediği için kesin bir çimlenme sayısı yazılamaz. Çizginin iki ölçümü birleştirmesi aradaki her sıcaklıkta deney yapıldığı anlamına gelmez. Türün kesin optimumu için daha sık sıcaklıklar ve bağımsız tekrarlar gerekir.",
+    ],
+    summary: "25 °C’de 16/20 (%80) ölçülen en yüksek değerdir. 40 °C’de sayı bilinmez. Noktalar ölçümü gösterir, onları bağlayan çizgi yeni ölçüm değildir.",
+    table: {
+      headers: ["Sıcaklık (°C)", "Çimlenen tohum", "Oran"],
+      rows: germinationSource002.map(({ temperature, germinated }) =>
+        [String(temperature), `${germinated}/${germinationTotal}`, `%${100 * germinated / germinationTotal}`]),
+      layout: "table",
+    },
+    appendSection: true,
+  }],
+  "fizik-bilimine-giris": [{
+    title: "Geri dönüşte yolu ve yer değiştirmeyi ayır",
+    figureTitle: "Geri dönüşte yolu ve yer değiştirmeyi ayır",
+    paragraphs: [
+      "Konum, seçilen başlangıca göre nerede olduğunu söyler. 0’dan 3 m doğuya gidip 3 m batıya dönersen yine 0’dasın. Yol, iki parça uzunluğunun toplamıdır: 6 m. Yer değiştirme, son konum eksi başlangıç konumudur: 0 m.",
+      "Doğuyu pozitif seçtiğinde 4 m batıya dönersen son konum −1 m olur ve toplam yol 7 m olur. Ortalamaları çıkarmak için toplam süreyi ayrıca bilmen gerekir. Aynı m/s birimi kullanılsa da ortalama süratin payı yol, ortalama hızın payı yer değiştirmedir.",
+    ],
+    summary: "3 m doğu, 3 m batı. Alınan yol 6 m. Başlangıca dönüldüğü için yer değiştirme 0 m.",
+    appendSection: true,
+  }],
+  "simyadan-kimyaya": [{
+    title: "Kütleyi hangi sistemde ölçtüğünü belirle",
+    figureTitle: "Kütleyi hangi sistemde ölçtüğünü belirle",
+    paragraphs: [
+      "Kapalı kaptaki 12 g A ve 8 g B tek bir ürüne tamamen dönüşüyorsa ürün 20 g olur. Her iki tartımda aynı kabın darası çıkarılır. Çizimde başka bir başlangıç kütlesiyle aynı sistem sınırı kuralını denetle.",
+    ],
+    summary: "Dara sabitken ve madde çıkışı yokken 12 g + 8 g = 20 g. Gaz çıkarsa yalnız kapta kalan kütle daha az ölçülebilir.",
+    table: {
+      headers: ["Sistem", "Terazinin kapsadığı", "Çıkarım"],
+      rows: [
+        ["Kapalı", "Bütün 12 g A ve 8 g B", "Kap hariç ürün 20 g"],
+        ["Açık, gaz çıkıyor", "Yalnız içeride kalanlar", "Çıkan gaz dahil toplam madde kütlesi 20 g"],
+      ],
+      layout: "table",
+    },
+  }],
+  "canli-ozellikleri": [{
+    title: "İki farklı sınıflama ekseni",
+    figureTitle: "İki farklı sınıflama ekseni",
+    paragraphs: [
+      "Şema tipik hücre planını gösterir. İnsan alyuvarının olgunlaşırken çekirdeğini ve ribozomlarını kaybetmesi onu prokaryot yapmaz. Örnek hücrenin yapısı ile canlının genel hücre planını ayrı düşün.",
+    ],
+    summary: "Çekirdek zarının bulunmaması ribozomun yokluğu demek değildir. Ribozom zarsızdır. Maya tek hücreli bir ökaryottur.",
+    table: {
+      headers: ["Yapı", "Tipik prokaryot", "Tipik ökaryot"],
+      rows: [
+        ["DNA’nın yeri", "Sitoplazmadaki DNA bölgesi", "Zarla çevrili çekirdek"],
+        ["Ribozom", "Var, zarsız", "Var, zarsız"],
+        ["Mitokondri", "Yok", "Bu hücre planında bulunabilir"],
+      ],
+      layout: "table",
+    },
+  }],
   "temel-kavramlar": [{
     title: "Sayı kümelerinde önce değeri hesapla",
     figureTitle: "Sayı kümelerinde önce değeri hesapla",

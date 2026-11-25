@@ -1,4 +1,6 @@
 import { expect, test, type Locator, type Page } from "@playwright/test";
+import { hydropowerTitle } from "../../src/learning/hydropower062";
+import { thermalTransferTitle } from "../../src/learning/thermalTransfer063";
 import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
 import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse";
 
@@ -1597,6 +1599,391 @@ test("Changing the labelled triangle base changes height but keeps area offline"
     await expect(model).toContainText("Taban a = 4 cm, dik yükseklik 4 cm. Alan 4 × 4 / 2 = 8 cm²");
     await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
     await expect(model).toContainText("Taban b = 5 cm, dik yükseklik 3,2 cm. Alan 5 × 3,2 / 2 = 8 cm²");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The same return can yield six meters travelled and zero displacement", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const picture = figure(page, "Geri dönüşte yolu ve yer değiştirmeyi ayır");
+  for (const route of ["/#/lesson?id=fizik-bilimine-giris", "/#/cheatsheets?topic=detail-114"]) {
+    await page.goto(route);
+    await expect(picture).toContainText("Alınan yol 3 + 3 = 6 m");
+    await expect(picture).toContainText("Yer değiştirme 3 − 3 = 0 m");
+    const west = picture.getByRole("slider", { name: /Batıya gidilen mesafe/ });
+    await west.press("End");
+    await expect(picture).toContainText("Alınan yol 3 + 4 = 7 m");
+    await expect(picture).toContainText("Yer değiştirme 3 − 4 = −1 m");
+    await checkFrame(page, picture);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The closed system table counts twelve and eight grams together", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const table = page.getByRole("table").filter({ hasText: "Terazinin kapsadığı" });
+  const picture = figure(page, "Kütleyi hangi sistemde ölçtüğünü belirle");
+  for (const route of ["/#/lesson?id=simyadan-kimyaya", "/#/cheatsheets?topic=detail-139"]) {
+    await page.goto(route);
+    const closed = table.getByRole("row").filter({ has: page.getByRole("cell", { name: "Kapalı", exact: true }) });
+    await expect(closed.getByRole("cell", { name: "Bütün 12 g A ve 8 g B", exact: true })).toBeVisible();
+    await expect(closed.getByRole("cell", { name: "Kap hariç ürün 20 g", exact: true })).toBeVisible();
+    await expect(picture).toContainText("toplam 148 g");
+    await picture.getByRole("slider").press("End");
+    await expect(picture).toContainText("gösterge 144 g");
+    await checkFrame(page, picture);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The cell table shows ribosomes in both normal cell plans offline", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const table = page.getByRole("table").filter({ hasText: "Tipik prokaryot" });
+  const picture = figure(page, "İki farklı sınıflama ekseni");
+  for (const route of ["/#/lesson?id=canli-ozellikleri", "/#/cheatsheets?topic=detail-1"]) {
+    await page.goto(route);
+    const row = table.getByRole("row").filter({ has: page.getByRole("cell", { name: "Ribozom", exact: true }) });
+    await expect(row.getByRole("cell", { name: "Var, zarsız", exact: true })).toHaveCount(2);
+    await expect(picture).toContainText("zarsız ribozom vardır.");
+    await picture.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(picture).toContainText("DNA çift zarlı çekirdekte");
+    await checkFrame(page, picture);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Swapping density axes changes the slope unit without changing the sample", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Eksenler değişince eğimin birimi değişir");
+  for (const route of ["/#/lesson?id=madde-ozkutle", "/#/cheatsheets?topic=detail-115"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Eğim 40/20 = 2 g/cm³");
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("Eğim 20/40 = 0,5 cm³/g");
+    await expect(model).toContainText("Madde hâlâ 2 g/cm³");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Chemistry project rows match the action to the chemistry discipline", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const table = page.getByRole("table").filter({ hasText: "Fabrika ölçeğinde üretim" });
+  for (const route of ["/#/lesson?id=kimya-disiplinleri", "/#/cheatsheets?topic=detail-140"]) {
+    await page.goto(route);
+    const rows = table.getByRole("row");
+    await expect(rows).toHaveCount(6);
+    for (const [index, field] of ["Organik kimya", "Biyokimya", "Analitik kimya", "Fizikokimya", "Endüstriyel kimya"].entries()) {
+      await expect(rows.nth(index + 1).getByRole("cell", { name: field, exact: true })).toBeVisible();
+    }
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The hypothetical germination graph distinguishes zero from an unmeasured point", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Ölçülen en yüksek değer ile veri dışı tahmini ayır");
+  const table = page.getByRole("table").filter({ hasText: "16/20" });
+  for (const route of ["/#/lesson?id=bilimsel-yontem", "/#/cheatsheets?topic=detail-2"]) {
+    await page.goto(route);
+    await expect(model).toContainText("25 °C’de 16/20 tohum çimlendi (%80)");
+    await expect(table.getByRole("row")).toHaveCount(6);
+    await expect(table.getByRole("row").nth(3).getByRole("cell", { name: "%80", exact: true })).toBeVisible();
+    const temperature = model.getByRole("slider", { name: /İncelenen sıcaklık/ });
+    await temperature.press("End");
+    await expect(model).toContainText("40 °C’de ölçüm yok");
+    await expect(model).toContainText("Kaç tohumun çimleneceği bu tablodan bilinmez");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Motion areas below zero count differently for displacement and distance", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Hız sıfırı geçince alanı ayrı hesapla");
+  for (const route of ["/#/lesson?id=dogrusal-hareket", "/#/cheatsheets?topic=detail-116"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Yön değişimi t = 4 s");
+    const next = model.getByRole("button", { name: "İleri", exact: true });
+    await next.press("Enter");
+    await expect(model).toContainText("İşaretli alanlar +8, +4, −1, −4 m. Yer değiştirme +7 m");
+    await next.press("Enter");
+    await expect(model).toContainText("Alan büyüklüklerinin toplamı 17 m");
+    await expect(model).toContainText("ortalama sürat 2,43 m/s");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("An outer formula coefficient multiplies all three element counts", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Alt indis, parantez ve katsayının görevi");
+  const table = page.getByRole("table").filter({ hasText: "Üç formül birimi" });
+  for (const route of ["/#/lesson?id=sembolik-dil", "/#/cheatsheets?topic=detail-141"]) {
+    await page.goto(route);
+    const next = model.getByRole("button", { name: "İleri", exact: true });
+    for (let i = 0; i < 5; i++) await next.press("Enter");
+    await expect(model).toContainText("Al = 2, S = 3, O = 12");
+    await next.press("Enter");
+    await expect(model).toContainText("Al = 6, S = 9, O = 36");
+    await expect(model).toContainText("toplam 51 atom, 3 element türü");
+    await expect(table.getByRole("row").nth(4).getByRole("cell", { name: "51", exact: true })).toBeVisible();
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Mineral limitation follows fraction of the requirement and can tie", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Ham miktarı değil, karşılanan gereksinimi karşılaştır");
+  for (const route of ["/#/lesson?id=mineraller", "/#/cheatsheets?topic=detail-3"]) {
+    await page.goto(route);
+    await expect(model).toContainText("X daha az karşılanıyor ve bu modelde sınırlayıcı");
+    const range = model.getByRole("slider", { name: /Y için karşılanma/ });
+    await range.fill("50");
+    await expect(model).toContainText("Gereksinimler aynı oranda karşılanıyor");
+    await range.press("Home");
+    await expect(model).toContainText("Y daha az karşılanıyor ve bu modelde sınırlayıcı");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Newton diagram maps four interactions to two force sums", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Yatay ve düşey kuvvetleri ayrı topla");
+  for (const route of ["/#/lesson?id=newton", "/#/cheatsheets?topic=detail-117"]) {
+    await page.goto(route);
+    const image = model.getByRole("img");
+    for (const label of ["İp 18 N", "Sürtünme 6 N", "Normal 40 N", "Ağırlık 40 N"]) {
+      await expect(image.locator("text").filter({ hasText: label })).toHaveCount(1);
+    }
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("Yatay: 18 − 6 = 12 N sağa. Düşey: 40 − 40 = 0 N.");
+    await expect(model).toContainText("Yatay ivme 12 ÷ 4 = 3 m/s² sağa.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("A burette reading is a difference on the same downward scale", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "İlk ve son büret okumasının farkını al");
+  for (const route of ["/#/lesson?id=kimya-guvenlik", "/#/cheatsheets?topic=detail-142"]) {
+    await page.goto(route);
+    await expect(model).toContainText("7,5 − 2 = 5,5 mL");
+    const slider = model.getByRole("slider", { name: /Son büret okuması/ });
+    const original = await model.getByRole("img").innerHTML();
+    await slider.press("Home");
+    await expect(model).toContainText("2 − 2 = 0 mL");
+    await slider.press("End");
+    await expect(model).toContainText("10 − 2 = 8 mL");
+    expect(await model.getByRole("img").innerHTML()).not.toBe(original);
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("A shared energy value drives both specific heat bars", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Eşit enerjide iki sıvının sıcaklık artışını karşılaştır");
+  for (const route of ["/#/lesson?id=su-asit-baz-tuz", "/#/cheatsheets?topic=detail-4"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Sıvı A: 800 ÷ (100 × 4) = 2 °C.");
+    await expect(model).toContainText("Sıvı B: 800 ÷ (100 × 2) = 4 °C.");
+    const slider = model.getByRole("slider", { name: /Her sıvıya verilen enerji/ });
+    const original = await model.getByRole("img").innerHTML();
+    await slider.press("Home");
+    await expect(model).toContainText("Sıvı A: 0 ÷ (100 × 4) = 0 °C.");
+    await expect(model).toContainText("Sıvı B: 0 ÷ (100 × 2) = 0 °C.");
+    await slider.press("End");
+    await expect(model).toContainText("Sıvı A: 1200 ÷ (100 × 4) = 3 °C.");
+    await expect(model).toContainText("Sıvı B: 1200 ÷ (100 × 2) = 6 °C.");
+    expect(await model.getByRole("img").innerHTML()).not.toBe(original);
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("A force position graph gives signed work and final kinetic energy", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Net kuvvet grafiğinden son kinetik enerjiyi bul");
+  for (const route of ["/#/lesson?id=enerji-ve-hareket", "/#/cheatsheets?topic=detail-118"]) {
+    await page.goto(route);
+    await expect(model.getByRole("img")).toBeVisible();
+    const next = model.getByRole("button", { name: "İleri", exact: true });
+    await next.press("Enter");
+    await expect(model).toContainText("İşler 12, 6, −2 J. Net iş 16 J.");
+    await next.press("Enter");
+    await expect(model).toContainText("Son kinetik enerji 10 + 16 = 26 J.");
+    await checkFrame(page, model);
+    if (route.includes("cheatsheets")) {
+      const table = page.getByRole("table").filter({
+        has: page.getByRole("columnheader", { name: "Çekmenin ortalama gücü" }),
+      });
+      await expect(table).toBeVisible();
+      await expect(table.getByRole("cell", { name: "36 W", exact: true })).toBeAttached();
+      const scroll = table.locator("..");
+      await scroll.focus();
+      await expect(scroll).toBeFocused();
+      await scroll.press("ArrowRight");
+      await expect.poll(() => scroll.evaluate((element) => element.scrollLeft)).toBeGreaterThan(0);
+    }
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Two energy paths have equal totals and different transition counts", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Aynı enerji farkını iki geçiş yolunda karşılaştır");
+  for (const route of ["/#/lesson?id=atom-modelleri", "/#/cheatsheets?topic=detail-143"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Yayılan birim: 8. Toplam 8.");
+    await expect(model).toContainText("Geçiş sayısı 1.");
+    const original = await model.getByRole("img").innerHTML();
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("Yayılan birim: 4 + 4. Toplam 8.");
+    await expect(model).toContainText("Geçiş sayısı 2.");
+    expect(await model.getByRole("img").innerHTML()).not.toBe(original);
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Glucose observations retain baseline, interval rate and data table", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Glikozun toplam miktarı ile artışını ayır");
+  const table = page.getByRole("table").filter({ has: page.getByRole("columnheader", { name: "Glikoz (birim)", exact: true }) });
+  for (const route of ["/#/lesson?id=karbohidratlar", "/#/cheatsheets?topic=detail-5"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Net artış 11 − 3 = 8 birim. Ortalama hız 8 ÷ 4 = 2 birim/dakika.");
+    await expect(table.getByRole("row")).toHaveCount(5);
+    for (const [index, values] of [["0", "3"], ["2", "7"], ["4", "11"], ["6", "11"]].entries()) {
+      const cells = table.getByRole("row").nth(index + 1).getByRole("cell");
+      await expect(cells).toHaveCount(2);
+      for (const [column, value] of values.entries()) await expect(cells.nth(column)).toHaveAccessibleName(value);
+    }
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("Net artış 11 − 11 = 0 birim. Ortalama hız 0 ÷ 2 = 0 birim/dakika.");
+    await expect(model).toContainText("Nedenini belirlemek için başka bilgi gerekir.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Energy and heat additions keep published source examples in both readers", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const capacity = figure(page, "Isı sığasını enerji grafiğinin eğiminden oku");
+  const force = figure(page, "Net kuvvet grafiğinden son kinetik enerjiyi bul");
+  for (const [energyRoute, thermalRoute] of [
+    ["/#/lesson?id=enerji-ve-hareket", "/#/lesson?id=isi-ve-sicaklik"],
+    ["/#/cheatsheets?topic=detail-118", "/#/cheatsheets?topic=detail-119"],
+  ]) {
+    await page.goto(energyRoute);
+    await expect(force.getByRole("img")).toBeVisible();
+    await expect(figure(page, hydropowerTitle).getByRole("img")).toBeVisible();
+    await page.goto(thermalRoute);
+    await expect(capacity.getByRole("img")).toBeVisible();
+    await expect(figure(page, thermalTransferTitle).getByRole("img")).toBeVisible();
+    await expect(capacity).toContainText("C = 840 J/°C. Q = 840 × 5 = 4.200 J.");
+    await expect(capacity).toContainText("C = 1.260 J/°C. Q = 1.260 × 5 = 6.300 J.");
+    await capacity.getByRole("slider", { name: /Sıcaklık artışı/ }).press("Home");
+    await expect(capacity).toContainText("Q = 840 × 0 = 0 J.");
+    await checkFrame(page, capacity);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Three particle points retain the same electron count and different charges", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Grafikte önce eksenleri tabloya çevir");
+  const table = page.getByRole("table").filter({
+    has: page.getByRole("columnheader", { name: "Nokta", exact: true }),
+  });
+  for (const route of ["/#/lesson?id=atomun-temel-tanecikleri", "/#/cheatsheets?topic=detail-144"]) {
+    await page.goto(route);
+    await expect(table.getByRole("row")).toHaveCount(4);
+    const next = model.getByRole("button", { name: "İleri", exact: true });
+    for (const [index, values] of [["U", "11", "10", "+1"], ["V", "8", "10", "−2"], ["W", "10", "10", "0"]].entries()) {
+      const cells = table.getByRole("row").nth(index + 1).getByRole("cell");
+      await expect(cells).toHaveCount(4);
+      for (const [column, value] of values.entries()) await expect(cells.nth(column)).toHaveAccessibleName(value);
+      await expect(model).toContainText(`${values[0]}: p = ${values[1]}, e = 10`);
+      await next.press("Enter");
+    }
+    await expect(model).toContainText("e = 11, p = 10 demekti: q = 10 − 11 = −1.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Both aqueous faces remain visible in the lipid bilayer", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Fosfolipitte iki farklı uç");
+  for (const route of ["/#/lesson?id=lipitler", "/#/cheatsheets?topic=detail-6"]) {
+    await page.goto(route);
+    const next = model.getByRole("button", { name: "İleri", exact: true });
+    await next.press("Enter");
+    await expect(model).toContainText("kuyruklar birbirine dönük ortada");
+    await next.press("Enter");
+    const image = model.getByRole("img");
+    await expect(image.getByText("hücre dışı sulu ortam", { exact: true })).toBeVisible();
+    await expect(image.getByText("sitoplazma (sulu)", { exact: true })).toBeVisible();
     await checkFrame(page, model);
   }
   expect(learning(await storage(page))).toEqual(before);

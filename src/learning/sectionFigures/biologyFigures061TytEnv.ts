@@ -111,6 +111,34 @@ const phScale: FigureDef = {
   },
 };
 
+const heatingComparison: FigureDef = {
+  caption: "Eşit kütleli iki sıvı aynı enerjiyi alıyor. Her ikisi de sıvı kalıyor ve ısı kaybı yok. Öz ısı daha büyükse sıcaklık artışı daha küçüktür.",
+  alt: "Sütun grafiği iki sıvının sıcaklık artışını aynı derece ölçeğinde gösterir. 800 joule için A 2 derece, B 4 derece ısınır. Enerji ayarlanabilir.",
+  param: { label: "Her sıvıya verilen enerji (J)", min: 0, max: 1200, step: 100, init: 800 },
+  draw: (energy) => {
+    const mass = 100;
+    const samples = [{ label: "A: c = 4", c: 4, x: 1.2, tone: "a" }, { label: "B: c = 2", c: 2, x: 4, tone: "b" }] as const;
+    const y = (temperature: number) => temperature * 0.7;
+    const els: El[] = [
+      seg(v(0, 0), v(6.2, 0), { tone: "ink" }),
+      seg(v(0, 0), v(0, y(6.7)), { tone: "ink" }),
+      txt(v(0, y(6.9)), "ΔT (°C)", "n", { small: true, bold: true }),
+      ...[0, 2, 4, 6].map((tick) => txt(v(-0.18, y(tick)), String(tick), "w", { small: true })),
+      ...pad(v(-1.1, y(7.8)), v(6.6, -0.9)),
+    ];
+    const readout = samples.map(({ label, c, x, tone }, index) => {
+      const change = energy / (mass * c);
+      if (change > 0) els.push(rect(x, 0, 1.25, y(change), { tone, fill: tone, thin: true }));
+      els.push(
+        txt(v(x + 0.625, -0.16), label, "s", { small: true }),
+        txt(v(x + 0.625, y(change) + 0.12), nf(change, 2), "n", { tone: "ink", small: true, bold: true }),
+      );
+      return `Sıvı ${index === 0 ? "A" : "B"}: ${energy} ÷ (${mass} × ${c}) = ${nf(change, 2)} °C.`;
+    });
+    return { els, readout };
+  },
+};
+
 export const biologyFigures061TytEnv: Record<string, Record<string, FigureDef>> = {
   "dogal-kaynaklar-surdurulebilirlik": {
     "Kaynak bütçesini giriş ve çıkışla kur": budget,
@@ -118,6 +146,7 @@ export const biologyFigures061TytEnv: Record<string, Record<string, FigureDef>> 
     "Önce azalt, sonra yeniden kullan ve geri dönüştür": reduce,
   },
   "su-asit-baz-tuz": {
+    "Eşit enerjide iki sıvının sıcaklık artışını karşılaştır": heatingComparison,
     "pH ölçeği eşit miktarlı bir cetvel değildir": phScale,
   },
 };

@@ -1,3 +1,4 @@
+import { particleCoordinatesSource006 } from "../particleCoordinatesSource006";
 import { ball, circle, poly, seg, txt, v, vec, type El, type FigureDef, type V } from "./figureKit";
 
 /*
@@ -151,11 +152,7 @@ const ionize: FigureDef = {
 };
 
 /* ---------- 4. Grafikte eksenleri oku ---------- */
-const pts: { name: string; p: number; e: number; at: "ne" | "n" | "nw" }[] = [
-  { name: "U", p: 11, e: 10, at: "ne" },
-  { name: "V", p: 8, e: 10, at: "n" },
-  { name: "W", p: 10, e: 10, at: "nw" },
-];
+const labelAnchors = ["ne", "n", "nw"] as const;
 const axes: FigureDef = {
   caption:
     "İleri ile her noktayı tabloya çevir: yatay eksen proton, düşey eksen elektron adedi. Yük = p − e. Kesik p = e doğrusu üzerindeki nokta nötrdür; aynı yatay çizgi aynı elektron sayısıdır, aynı element değildir.",
@@ -172,12 +169,12 @@ const axes: FigureDef = {
     }
     els.push(txt(v(X(15.3), 0), swap ? "e (adet)" : "p (adet)", "e", { tone: "ink", small: true, bold: true }), txt(v(0, X(15.6)), swap ? "p (adet)" : "e (adet)", "n", { tone: "ink", small: true, bold: true }));
     els.push(seg(v(0, 0), v(X(14), X(14)), { tone: "muted", dash: true, thin: true }), txt(v(X(13.2), X(14)), "p = e (nötr)", "w", { tone: "muted", small: true }));
-    pts.forEach((q, i) => {
+    particleCoordinatesSource006.forEach((q, i) => {
       const on = i === step || (swap && i === 0);
-      els.push(circle(v(X(q.p), X(q.e)), 0.12, { tone: on ? "warn" : "muted", fill: on ? "warn" : "muted" }), txt(v(X(q.p), X(q.e) + 0.15), q.name, q.at, { tone: on ? "warn" : "muted", small: true, bold: on }));
+      els.push(circle(v(X(q.p), X(q.e)), 0.12, { tone: on ? "warn" : "muted", fill: on ? "warn" : "muted" }), txt(v(X(q.p), X(q.e) + 0.15), q.name, labelAnchors[i], { tone: on ? "warn" : "muted", small: true, bold: on }));
     });
     if (step < 3) {
-      const q = pts[step];
+      const q = particleCoordinatesSource006[step];
       els.push(seg(v(X(q.p), 0), v(X(q.p), X(q.e)), { tone: "warn", dash: true, thin: true }), seg(v(0, X(q.e)), v(X(q.p), X(q.e)), { tone: "warn", dash: true, thin: true }));
     }
     els.push(txt(v(-0.9, -0.6), " ", "c"), txt(v(7.4, 6.6), " ", "c"));
@@ -186,7 +183,7 @@ const axes: FigureDef = {
         els,
         readout: ["Aynı U(11, 10) noktası, eksenler e–p olsaydı e = 11, p = 10 demekti: q = 10 − 11 = −1.", "Koordinatı ezberden okuma; önce eksen başlıklarını tabloya yaz. Nötron verisi yoksa n ve A bulunamaz."],
       };
-    const q = pts[step];
+    const q = particleCoordinatesSource006[step];
     const z = q.p - q.e;
     return {
       els,

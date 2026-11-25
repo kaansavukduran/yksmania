@@ -471,9 +471,11 @@ test("new models keep controls usable at 320px with 200% UI and 150% text; notes
   await page.getByLabel("Yalnızca yazı boyutu %", { exact: true }).fill("150");
   await setThemePreference(page, "light");
   await page.emulateMedia({ reducedMotion: "reduce" });
-  await page.evaluate(async () => {
-    await navigator.serviceWorker.ready;
-  });
+  await page.waitForFunction(
+    () => navigator.serviceWorker.controller?.state === "activated",
+    undefined,
+    { timeout: 30000 },
+  );
   await context.setOffline(true);
   for (const id of [
     "proteinler",
@@ -488,7 +490,7 @@ test("new models keep controls usable at 320px with 200% UI and 150% text; notes
     "ses-bilgisi",
     "sozcukte-yapi",
   ]) {
-    await open(page, id);
+    await test.step(`Open ${id} offline`, () => open(page, id));
     const isLanguage = id === "ses-bilgisi" || id === "sozcukte-yapi";
     const lab = page.locator(isLanguage ? ".language-lab" : ".narrative-lab");
     if (isLanguage) await languageInteraction(page, id);

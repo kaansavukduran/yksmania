@@ -222,12 +222,45 @@ const ruler: FigureDef = {
   },
 };
 
+const outwardAndReturn: FigureDef = {
+  caption: "Doğuyu pozitif seç. İlk hareket 3 m doğuya. Batıya dönüş mesafesini değiştir ve gidilen yolu son konumla karşılaştır.",
+  alt: "Yatay metre ekseninde 0’dan 3’e doğru gidiş oku, 3’ten 3 eksi dönüş mesafesine batıya doğru ikinci ok. Aynı başlangıç ve son konuma dönülebilir.",
+  param: { label: "Batıya gidilen mesafe", min: 0, max: 4, step: 1, init: 3 },
+  draw: (returnDistance) => {
+    const outward = 3;
+    const final = outward - returnDistance;
+    const els: El[] = [
+      vec(v(-1.4, 0), v(4.5, 0), { tone: "ink", thin: true }),
+      vec(v(0, 1.6), v(outward, 1.6), { tone: "a", bold: true }),
+      txt(v(outward / 2, 1.76), "3 m doğuya", "n", { tone: "ink", small: true }),
+      txt(v(4.35, -0.46), "Konum (m)", "s", { tone: "ink", small: true }),
+    ];
+    for (let i = -1; i <= 4; i++) {
+      els.push(seg(v(i, -0.08), v(i, 0.08), { tone: "ink", thin: true }));
+      els.push(txt(v(i, -0.15), String(i).replace("-", "−"), "s", { tone: "ink", small: true }));
+    }
+    if (returnDistance > 0) {
+      els.push(vec(v(outward, 0.68), v(final, 0.68), { tone: "c", bold: true }));
+      els.push(txt(v((outward + final) / 2, 0.77), `${returnDistance} m batıya`, "n", { tone: "ink", small: true }));
+    }
+    els.push(ball(v(final, 0), 0.085, "warn"));
+    els.push(txt(v(-1.55, 2.5), "", "c"), txt(v(5.15, -1), "", "c"));
+    const endpoint = final === 0 ? "İlk ve son konum aynı."
+      : `Son konum başlangıcın ${Math.abs(final)} m ${final > 0 ? "doğusunda" : "batısında"}.`;
+    return { els, readout: [
+      `Alınan yol ${outward} + ${returnDistance} = ${outward + returnDistance} m.`,
+      `Yer değiştirme ${outward} − ${returnDistance} = ${String(final).replace("-", "−")} m. ${endpoint}`,
+    ] };
+  },
+};
+
 export const physicsFiguresIntro: Record<string, Record<string, FigureDef>> = {
   "fizik-bilimine-giris": {
     "Alanları sorudaki mekanizmaya göre ayır": device,
     "İki sınıflamayı çapraz kontrol et": grid,
     "SI ön eklerini kuvvetiyle dönüştür": powers,
     "Tek eksende ok ve bileşen": signed,
+    "Geri dönüşte yolu ve yer değiştirmeyi ayır": outwardAndReturn,
     "İki yöndeki bileşenlerden bileşkeye": perp,
     "Kalibrasyon ve sıfır sapması": ruler,
   },

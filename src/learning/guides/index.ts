@@ -386,34 +386,8 @@ for (const extension of forge020BiologyGuideExtensions) {
 }
 
 
-// The reader can extend the catalog while preserving its historical entries.
-export function studyGuide(lessonId: string) {
+export function studyGuideWithSourceRevisions(lessonId: string) {
   const guide = clarifiedGuideView(lessonGuides.get(lessonId));
-  const supplements = tytTheorySupplements[lessonId];
-  if (guide && supplements) {
-    let sections = guide.sections;
-    let examples = guide.examples;
-    for (const { title, figureTitle, paragraphs, appendSection, workedStep, tableLayout, table } of supplements) {
-      sections = appendSection
-        ? [...sections, { title, figureTitle, paragraphs, table }]
-        : sections.map((section) => section.title === title
-          ? {
-              ...section,
-              paragraphs: [...section.paragraphs, ...paragraphs],
-              figureTitle: figureTitle ?? section.figureTitle,
-              table: table ?? (section.table && tableLayout ? { ...section.table, layout: tableLayout } : section.table),
-            }
-          : section);
-      if (workedStep && figureTitle) {
-        examples = examples.map((example) => example.title === workedStep.title
-          ? { ...example, steps: example.steps.map((step, index) => index === workedStep.index
-            ? { ...step, figureTitle }
-            : step) }
-          : example);
-      }
-    }
-    return { ...guide, sections, examples };
-  }
   if (guide?.id === "donusum-oteleme-donme") {
     const components = "Öteleme vektörünün iki bileşenini oku";
     const triangle = "Şekli köşe köşe taşı, bağıntıyı geri denetle";
@@ -590,4 +564,35 @@ export function studyGuide(lessonId: string) {
     examples: [...guide.examples, averageWorkPowerExample, cylinderPotentialExample, bicycleEnergyExample, bounceEnergyExample, railEnergyExample, lampEfficiencyExample, hydropowerExample],
     source: `${guide.source} İş ve güç, homojen silindir, bisiklet, sıçrayan top, sürtünmeli ray, lamba verimi ve hidroelektrik örnekleri MEBİ TYT Fizik Konu Özetleri fiziksel 48, 50, 53, 54, 56 ve 58, basılı 46, 48, 51, 52, 54 ve 56. sayfalarla karşılaştırıldı. Sayısal örnekler özgündür. Bisiklet çizimindeki verilen hız oranları kaynak örneğindeki oranlardır.`,
   };
+}
+
+// Apply theory additions after the guide's published source revisions.
+export function studyGuide(lessonId: string) {
+  const guide = studyGuideWithSourceRevisions(lessonId);
+  const supplements = tytTheorySupplements[lessonId];
+  if (guide && supplements) {
+    let sections = guide.sections;
+    let examples = guide.examples;
+    for (const { title, figureTitle, paragraphs, appendSection, workedStep, tableLayout, table } of supplements) {
+      sections = appendSection
+        ? [...sections, { title, figureTitle, paragraphs, table }]
+        : sections.map((section) => section.title === title
+          ? {
+              ...section,
+              paragraphs: [...section.paragraphs, ...paragraphs],
+              figureTitle: figureTitle ?? section.figureTitle,
+              table: table ?? (section.table && tableLayout ? { ...section.table, layout: tableLayout } : section.table),
+            }
+          : section);
+      if (workedStep && figureTitle) {
+        examples = examples.map((example) => example.title === workedStep.title
+          ? { ...example, steps: example.steps.map((step, index) => index === workedStep.index
+            ? { ...step, figureTitle }
+            : step) }
+          : example);
+      }
+    }
+    return { ...guide, sections, examples };
+  }
+  return guide;
 }

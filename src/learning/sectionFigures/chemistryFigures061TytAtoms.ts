@@ -211,19 +211,19 @@ export function countAtoms(f: string): { coef: number; atoms: Count } {
   return { coef, atoms };
 }
 const pretty = (f: string) => f.replace(/(?<=[A-Za-z)])(\d+)/g, (d) => sb(d));
-const FORMULAS = ["H2O", "3H2O", "Ca(OH)2", "(NH4)2SO4", "2(NH4)2SO4"];
+const FORMULAS = ["H2O", "3H2O", "Ca(OH)2", "(NH4)2SO4", "2(NH4)2SO4", "Al2(SO4)3", "3Al2(SO4)3"];
 const TONES: Record<string, Tone> = { H: "b", O: "warn", Ca: "c", N: "a", S: "muted" };
 const formulaCount: FigureDef = {
   caption:
     "Alt indis hemen önündeki sembole, parantezden sonraki indis parantezin içindeki her atoma, baştaki katsayı bütün formüle uygulanır. Ca(OH)₂: 5 atom, 3 tür; 3H₂O: 9 atom, 2 tür; (NH₄)₂SO₄: 15 atom, 4 tür. Katsayı atom sayılarını katlar, element türü sayısını değiştirmez. Çubuklar formülden sayılarak çizilir.",
-  alt: "Üstte seçilen formül büyük yazılı. Altında her element için yatay çubuk ve atom sayısı. Adımlar: H₂O, 3H₂O, Ca(OH)₂, (NH₄)₂SO₄, 2(NH₄)₂SO₄.",
+  alt: "Üstte seçilen formül büyük yazılı. Altında her element için yatay çubuk ve atom sayısı. Adımlar su, kalsiyum hidroksit, amonyum sülfat ve alüminyum sülfat örnekleri ile dış katsayının etkisini gösterir.",
   steps: FORMULAS.map(pretty),
   draw: (_v, step) => {
     const f = FORMULAS[step];
     const { atoms } = countAtoms(f);
     const rows = [...atoms].map(([e, n]) => ({ label: e, value: n, tone: TONES[e] ?? "b", text: String(n) }));
     const total = [...atoms.values()].reduce((a, b) => a + b, 0);
-    const els: El[] = [txt(v(6, 4.3), pretty(f), "c", { bold: true }), ...hbars(rows, { x0: 2.4, y0: 3.2, w: 7.6, max: 16, digits: 0 }), ...pad(v(0.6, 4.9), v(12.0, 3.2 - 4 * 0.85))];
+    const els: El[] = [txt(v(6, 4.3), pretty(f), "c", { bold: true }), ...hbars(rows, { x0: 2.4, y0: 3.2, w: 7.6, max: Math.max(16, ...rows.map(({ value }) => value)), digits: 0 }), ...pad(v(0.6, 4.9), v(12.0, 3.2 - 4 * 0.85))];
     return { els, readout: [`${pretty(f)}: ${[...atoms].map(([e, n]) => `${e} = ${n}`).join(", ")}; toplam ${total} atom, ${atoms.size} element türü.`, "3H₂O ile H₂O₃ aynı gösterim değildir; alt indisi değiştirmek maddenin kimliğini değiştirir."] };
   },
 };

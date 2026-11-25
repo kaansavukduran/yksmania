@@ -1,4 +1,5 @@
-import { type El, type FigureDef } from "./figureKit";
+import { germinationSource002, germinationTotal } from "../germinationSource002";
+import { poly, pt, seg, txt, v, vec, type El, type FigureDef } from "./figureKit";
 import { axis, BAR_R, barRow, LABEL_W } from "./geographyFigures061Kit";
 import { flowFig, quadFig, tableFig } from "./turkishFigures060Kit";
 import { drawFig, lines, nt } from "./biologyFigures062Kit";
@@ -259,6 +260,74 @@ const limiting: FigureDef = drawFig({
   },
 });
 
+const observedGermination: FigureDef = {
+  caption: "Varsayımsal öğretim verisinde her sıcaklık için 20 tohumun yedinci gündeki sayımı var. Yalnız veri noktalarını kesin ölçüm olarak oku.",
+  alt: "15, 20, 25, 30 ve 35 derecede sırasıyla 4, 10, 16, 12, 2 çimlenen tohum. 40 derecede veri noktası yok.",
+  param: { label: "İncelenen sıcaklık", min: 15, max: 40, step: 5, init: 25 },
+  draw: (temperature) => {
+    const x = (value: number) => (value - 15) * 0.26;
+    const y = (count: number) => count * 0.19;
+    const values = germinationSource002.map(({ temperature: t, germinated }) => v(x(t), y(germinated)));
+    const els: El[] = [
+      vec(v(-0.28, 0), v(6.8, 0), { tone: "ink", thin: true }),
+      vec(v(-0.28, 0), v(-0.28, y(21.5)), { tone: "ink", thin: true }),
+      txt(v(5.58, -0.56), "Sıcaklık (°C)", "s", { tone: "ink", small: true }),
+      txt(v(-0.28, y(21.5)), "Çimlenen tohum", "n", { tone: "ink", small: true }),
+      poly(values, { tone: "muted", thin: true, open: true }),
+    ];
+    for (const label of [15, 20, 25, 30, 35, 40]) {
+      els.push(txt(v(x(label), -0.12), String(label), "s", { tone: "ink", small: true }));
+    }
+    for (const count of [0, 5, 10, 15, 20]) {
+      els.push(txt(v(-0.36, y(count)), String(count), "w", { tone: "ink", small: true }));
+    }
+    germinationSource002.forEach(({ temperature: measured, germinated }, i) => {
+      els.push(pt(values[i], String(germinated), "n", measured === temperature ? "warn" : "a"));
+    });
+    const selected = germinationSource002.find((record) => record.temperature === temperature);
+    if (selected) els.push(seg(v(x(temperature), 0), v(x(temperature), y(selected.germinated)), { tone: "warn", dash: true, thin: true }));
+    els.push(txt(v(-1.0, 4.85), "", "c"), txt(v(7.2, -1), "", "c"));
+    return { els, readout: selected
+      ? [`${temperature} °C’de ${selected.germinated}/${germinationTotal} tohum çimlendi (%${100 * selected.germinated / germinationTotal}).`,
+        "Ölçülen en yüksek sayı 25 °C’de 16. Bu veri türün kesin optimumunu göstermez."]
+      : ["40 °C’de ölçüm yok. Kaç tohumun çimleneceği bu tablodan bilinmez.",
+        "Çizginin 35 °C’de bitmesi, 40 °C’de sonucun sıfır olduğu anlamına gelmez."] };
+  },
+};
+
+const requirementRatios: FigureDef = {
+  caption: "İki mineralin gereksinimi farklı. Ham miktar yerine gereksinimin karşılanan yüzdesini karşılaştır.",
+  alt: "İlk çubuk X gereksiniminin yüzde 50’sinde sabit. İkinci çubuk Y için değişir. Kapasite işareti yüzde 100.",
+  param: { label: "Y için karşılanma yüzdesi", min: 0, max: 120, step: 10, init: 80 },
+  draw: (yPercent) => {
+    const xPercent = 50;
+    const lengths = [xPercent, yPercent];
+    const toWidth = (percent: number) => percent * 0.044;
+    const els: El[] = [
+      seg(v(toWidth(100), -0.49), v(toWidth(100), 2.42), { tone: "muted", dash: true }),
+      txt(v(toWidth(100), 2.45), "%100", "n", { tone: "ink", small: true }),
+    ];
+    lengths.forEach((ratio, i) => {
+      const bottom = 1.46 - i * 1.18;
+      const end = toWidth(ratio);
+      if (ratio > 0) {
+        const tone = ratio === Math.min(...lengths) ? "warn" : "a";
+        els.push(poly([v(0, bottom), v(end, bottom), v(end, bottom + 0.49), v(0, bottom + 0.49)], { tone, fill: tone, thin: true }));
+      }
+      els.push(txt(v(-0.35, bottom + 0.245), i === 0 ? "X" : "Y", "w", { tone: "ink", bold: true }));
+      els.push(txt(v(end + 0.16, bottom + 0.245), `%${ratio}`, "e", { tone: "ink", small: true, bold: true }));
+    });
+    els.push(txt(v(-0.84, 3.04), "", "c"), txt(v(6.4, -0.83), "", "c"));
+    const outcome = xPercent === yPercent ? "Gereksinimler aynı oranda karşılanıyor."
+      : `${xPercent < yPercent ? "X" : "Y"} daha az karşılanıyor ve bu modelde sınırlayıcı.`;
+    return { els, readout: [
+      `X için 5 mg / 10 mg oranı %${xPercent}. Y için ${nt(yPercent / 100, 1)} mg / 1 mg oranı %${yPercent}.`,
+      outcome,
+      "Bu karşılaştırmada diğer koşulların uygun olduğu ve gereksinim oranlarının değişmediği kabul edilir.",
+    ] };
+  },
+};
+
 export const biologyFigures062Method: Record<string, Record<string, FigureDef>> = {
   "bilimsel-yontem": {
     "Hipotez, tahmin ve ölçüm": hypothesis,
@@ -267,6 +336,7 @@ export const biologyFigures062Method: Record<string, Record<string, FigureDef>> 
     "Referans grup her zaman boş değildir": controls,
     "Kalibrasyonda iki hata türünü gör": calibration,
     "Sayım, oran ve yüzde": percent,
+    "Ölçülen en yüksek değer ile veri dışı tahmini ayır": observedGermination,
     "Faktörlerin etkisi koşula bağlı olabilir": factorial,
     "Yeni soruyla dönen araştırma": loop,
   },
@@ -275,5 +345,6 @@ export const biologyFigures062Method: Record<string, Record<string, FigureDef>> 
     "Element, iyon ve tuzun dilini ayır": ions,
     "Enzim deneyinde eksiltme ve geri ekleme": cofactor,
     "Minimum gereksinimi oranla karşılaştır": limiting,
+    "Ham miktarı değil, karşılanan gereksinimi karşılaştır": requirementRatios,
   },
 };

@@ -266,10 +266,45 @@ const slide: FigureDef = {
   },
 };
 
+const levelPath: FigureDef = {
+  caption: "C’den A’ya inen iki yolun toplam enerji farkı eşit. B’den geçen yolda iki ayrı geçiş var. Sayılar bu öğretim modelinin göreli enerji düzeyleridir.",
+  alt: "Göreli enerjileri 0, 4 ve 8 olan A, B ve C için üç yatay çizgi. Doğrudan yol tek aşağı ok, B üzerinden yol iki aşağı ok gösterir.",
+  steps: ["C → A", "C → B → A"],
+  draw: (_, step) => {
+    const levels = [{ name: "A", energy: 0 }, { name: "B", energy: 4 }, { name: "C", energy: 8 }];
+    const y = (energy: number) => 0.5 + 0.43 * energy;
+    const path = step === 0 ? [2, 0] : [2, 1, 0];
+    const els: El[] = [
+      vec(v(0, 0.1), v(0, 4.6), { tone: "ink", thin: true }),
+      txt(v(0, 4.85), "Göreli enerji", "e", { small: true }),
+      txt(v(-0.9, -0.35), "", "c"),
+      txt(v(7.5, 5.15), "", "c"),
+    ];
+    levels.forEach(({name, energy}) => {
+      const height = y(energy);
+      els.push(seg(v(0.25, height), v(6.3, height), { tone: "ink" }));
+      els.push(txt(v(-0.2, height), String(energy), "w", { small: true }));
+      els.push(txt(v(6.5, height), name, "e", { small: true, bold: true }));
+    });
+    const emitted = path.slice(1).map((end, i) => {
+      const high = levels[path[i]].energy, low = levels[end].energy;
+      const x = step === 0 ? 3 : 2.25 + i * 1.55;
+      els.push(vec(v(x, y(high) - 0.1), v(x, y(low) + 0.1), { tone: "b", bold: true }));
+      els.push(txt(v(x + 0.2, (y(high) + y(low)) / 2), String(high - low), "e", { tone: "b", bold: true, small: true }));
+      return high - low;
+    });
+    return { els, readout: [
+      `Yayılan birim: ${emitted.join(" + ")}. Toplam ${emitted.reduce((sum, value) => sum + value, 0)}.`,
+      `Geçiş sayısı ${emitted.length}. Başlangıç C ve bitiş A iki yolda aynı.`,
+    ] };
+  },
+};
+
 export const chemistryFiguresAtoms: Record<string, Record<string, FigureDef>> = {
   "atom-modelleri": {
     "Rutherford: çoğu geçer, azı güçlü sapar": rutherford,
     "Bohr: yalnız belirli enerji düzeyleri": bohr,
+    "Aynı enerji farkını iki geçiş yolunda karşılaştır": levelPath,
   },
   "iyonik-bag-ve-guclu-etkilesimler": {
     "Elektron alışverişi iyonu oluşturur; bağ çekimdir": ionic,

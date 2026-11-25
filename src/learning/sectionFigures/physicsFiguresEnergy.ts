@@ -81,7 +81,43 @@ function stack(x: number, parts: [number, string, T][], scale: number, title: st
   return els;
 }
 
+const signedForceWork: FigureDef = {
+  caption: "Kuvvet–konum grafiğinde iş işaretli alandır. Eksen üstü pozitif, eksen altı negatif. Tek noktadaki kuvvet değişimi fazladan alan oluşturmaz.",
+  alt: "Net kuvvet ilk 2 m boyunca 6 N, 2–4 m arasında doğrusal olarak sıfıra iner. 4–5 m arasında −2 N. Üç iş bölgesi aynı eksenlerde.",
+  steps: ["Grafiği oku", "Üç alanı topla", "Son kinetik enerjiyi bul"],
+  draw: (_, step) => {
+    const intervals = [[0, 2, 6, 6], [2, 4, 6, 0], [4, 5, -2, -2]] as const;
+    const point = (x: number, f: number) => v(x * 1.16, f * 0.46);
+    const work = intervals.map(([a, b, fa, fb]) => (b - a) * (fa + fb) / 2);
+    const net = work.reduce((sum, area) => sum + area, 0);
+    const els = axes(v(0, 0), 6.25, 3.3, 1.55, "x (m)", "Net F (N)");
+    intervals.forEach(([a, b, fa, fb], i) => {
+      const tone = work[i] > 0 ? "a" : "warn";
+      if (step > 0) {
+        els.push(poly([point(a, 0), point(a, fa), point(b, fb), point(b, 0)], { tone, fill: tone, thin: true }));
+        const labelX = i === 1 ? a + (b - a) / 3 : (a + b) / 2;
+        const labelForce = i === 1 ? 2.5 : (fa + fb) / 4;
+        els.push(txt(point(labelX, labelForce), fmt(work[i]), "c", { small: true, bold: true }));
+      }
+      els.push(curve([point(a, fa), point(b, fb)], tone));
+    });
+    for (let x = 0; x <= 5; x += 1) els.push(txt(point(x, 0.42), String(x), "n", { small: true }));
+    for (const f of [-2, 6]) els.push(txt(point(-0.12, f), fmt(f), "w", { small: true }));
+    els.push(seg(point(4, 0), point(4, -2), { tone: "muted", thin: true, dash: true }));
+    els.push(txt(v(-0.9, 4.1), "", "c"), txt(v(7.5, -1.6), "", "c"));
+    return {
+      els,
+      readout: [
+        "0–2 m dikdörtgen, 2–4 m üçgen, 4–5 m eksenin altında dikdörtgen.",
+        ...(step > 0 ? [`İşler ${work.map((area) => fmt(area).replace("-", "−")).join(", ")} J. Net iş ${net} J.`] : []),
+        ...(step === 2 ? [`Son kinetik enerji 10 + ${net} = ${10 + net} J.`] : []),
+      ],
+    };
+  },
+};
+
 const enerji: Record<string, FigureDef> = {
+  "Net kuvvet grafiğinden son kinetik enerjiyi bul": signedForceWork,
   [averageWorkPowerTitle]: averageWorkPowerFigure,
   [averageWorkPowerComparisonTitle]: averageWorkPowerComparison,
   [cylinderPotentialTitle]: cylinderPotentialFigure,

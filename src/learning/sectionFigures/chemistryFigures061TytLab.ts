@@ -117,6 +117,30 @@ const glassware: FigureDef = {
   },
 };
 
+const deliveredVolume: FigureDef = {
+  caption: "Aynı bürette küçük okumadan büyük okumaya ilerleyince verilen hacim, son okuma eksi ilk okumadır. Bu çizim yalnız sayısal okumayı gösterir.",
+  alt: "Büret ölçeği yukarıda sıfır, aşağıda 10 mL. İlk okuma 2 mL, değiştirilebilir son okuma başlangıçta 7,5 mL. İki okuma arasındaki aralık işaretli.",
+  param: { label: "Son büret okuması (mL)", min: 2, max: 10, step: 0.5, init: 7.5 },
+  draw: (reading) => {
+    const first = 2;
+    const y = (value: number) => 5 - value * 0.45;
+    const els: El[] = [
+      rect(2.8, y(10), 1.2, y(0) - y(10), { tone: "ink", thin: true }),
+      ...(reading > first ? [rect(2.8, y(reading), 1.2, y(first) - y(reading), { tone: "b", fill: "b", thin: true })] : []),
+      seg(v(3.4, y(10)), v(3.4, 0), { tone: "ink" }),
+      txt(v(2.4, 5.4), "mL", "w", { small: true, bold: true }),
+      ...[0, 2, 4, 6, 8, 10].flatMap((tick) => [
+        seg(v(2.8, y(tick)), v(3.12, y(tick)), { tone: "ink", thin: true }),
+        txt(v(2.5, y(tick)), String(tick), "w", { small: true }),
+      ]),
+      txt(v(4.35, y(first)), `İlk ${nf(first, 1)}`, "ne", { tone: "ink", small: true }),
+      txt(v(4.35, y(reading)), `Son ${nf(reading, 1)}`, "se", { tone: "ink", small: true }),
+      ...pad(v(1.35, 5.85), v(7.0, -0.45)),
+    ];
+    return { els, readout: [`Verilen hacim ${nf(reading, 1)} − ${nf(first, 1)} = ${nf(reading - first, 1)} mL.`] };
+  },
+};
+
 /* ---------------- Su ve hayat ---------------- */
 
 const FLOW = 12;
@@ -332,6 +356,7 @@ export const chemistryFigures061TytLab: Record<string, Record<string, FigureDef>
     "Tehlike ve risk aynı bilgi değildir": risk,
     "Yanıcı ile oksitleyici farklıdır": flammable,
     "Diğer işaretleri etkileriyle ayır": otherSigns,
+    "İlk ve son büret okumasının farkını al": deliveredVolume,
     "Araç seçimi: ne yapmak istiyorsun?": glassware,
   },
   "su-hayat-cevre": {
