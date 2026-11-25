@@ -17,6 +17,36 @@ interface TheorySupplement {
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "temel-kavramlar": [{
+    title: "Sayı kümelerinde önce değeri hesapla",
+    figureTitle: "Sayı kümelerinde önce değeri hesapla",
+    paragraphs: [],
+    summary: "ℕ doğallar 0’dan başlar. Bir sayı daha dar bir kümeye giriyorsa onu kapsayan bütün dış kümelere de girer.",
+    table: {
+      headers: ["İfade", "Değer", "Üye olduğu kümeler"],
+      rows: [
+        ["0", "0", "ℕ, ℤ, ℚ, ℝ"],
+        ["12/3", "4", "ℕ, ℤ, ℚ, ℝ"],
+        ["−7/2", "−3,5", "ℚ, ℝ"],
+        ["0,333…", "1/3", "ℚ, ℝ"],
+        ["√9", "3", "ℕ, ℤ, ℚ, ℝ"],
+        ["√2", "İrrasyonel", "ℝ"],
+        ["√(−1)", "Gerçek sayı yok", "Hiçbiri"],
+        ["1/0", "Tanımsız", "Hiçbiri"],
+      ],
+      layout: "table",
+    },
+  }],
+  "tyt-geo-acilar-kaynak-pekitirme-032": [{
+    title: "Karşı kenarı ve ona ait yüksekliği eşleştir",
+    figureTitle: "Karşı kenarı ve ona ait yüksekliği eşleştir",
+    paragraphs: [
+      "A açısının karşı kenarı BC ve uzunluğu a’dır. Aynı şekilde b=|CA| ve c=|AB|. A’dan BC’ye inen yükseklik BC’ye diktir. Taban CA seçilirse B’den CA’ya dik inilir.",
+      "Bu üçgende BC=4 cm ve ona ait yükseklik 4 cm. CA=5 cm ve ona ait yükseklik 3,2 cm. İki hesaptan da 8 cm² çıkar. Taban ve yükseklik birimleri önce eşitlenir. 1 m=100 cm ise 1 m²=10.000 cm² ve 1 m³=1.000.000 cm³ olur.",
+    ],
+    summary: "a=|BC|, b=|CA|, c=|AB|. Taban değişince ona dik yüksekliği seç. Aynı üçgende 4·4/2=5·3,2/2=8 cm².",
+    appendSection: true,
+  }],
   "tyt-mat-permutasyon-kaynak-032": [{
     title: "Birbirinden ayrı kişilere ayrı boşluklar ver",
     figureTitle: "Birbirinden ayrı kişilere ayrı boşluklar ver",

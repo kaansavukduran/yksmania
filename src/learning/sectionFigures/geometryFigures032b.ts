@@ -5,6 +5,7 @@ import {
   dim,
   dist,
   fmt,
+  foot,
   lerp,
   line,
   meet,
@@ -819,6 +820,34 @@ const piramitler: Record<string, FigureDef> = {
 };
 
 const kaynakPekistirme: Record<string, FigureDef> = {
+  "Karşı kenarı ve ona ait yüksekliği eşleştir": {
+    caption: "Köşenin küçük harfi, karşı kenarın uzunluğunu gösterir. Taban değişince o kenara dik yüksekliği yeniden seç.",
+    alt: "ABC üçgeninde a kenarı BC, b kenarı CA, c kenarı AB. İlk adımda A’dan BC’ye, ikinci adımda B’den CA’ya inen dikme vurgulanır.",
+    steps: ["Taban BC", "Taban CA"],
+    draw: (_, step) => {
+      const A = v(1, 4), B = v(0, 0), C = v(4, 0);
+      const [start, end, vertex, label] = step === 0 ? [B, C, A, "a"] as const : [C, A, B, "b"] as const;
+      const heightFoot = foot(vertex, start, end);
+      const base = dist(start, end);
+      const height = dist(vertex, heightFoot);
+      const els: El[] = [
+        poly([A, B, C], { tone: "muted", fill: "a", thin: true }),
+        seg(start, end, { tone: "a", bold: true }),
+        seg(vertex, heightFoot, { tone: "c", dash: true, bold: true }),
+        right(heightFoot, end, vertex, "ink"),
+        pt(A, "A", "n"), pt(B, "B", "sw"), pt(C, "C", "se"),
+        txt(mid(B, C), "a", "s", { tone: "ink", bold: true }),
+        txt(mid(C, A), "b", "e", { tone: "ink", bold: true }),
+        txt(mid(A, B), "c", "w", { tone: "ink", bold: true }),
+        txt(v(-0.7, -0.8), "", "c"), txt(v(4.8, 4.75), "", "c"),
+      ];
+      return { els, readout: [
+        step === 0 ? "A’nın karşısındaki kenar BC. A’dan BC’ye dik in."
+          : "B’nin karşısındaki kenar CA. B’den CA’ya dik in.",
+        `Taban ${label} = ${fmt(base)} cm, dik yükseklik ${fmt(height)} cm. Alan ${fmt(base)} × ${fmt(height)} / 2 = ${fmt(base * height / 2)} cm².`,
+      ] };
+    },
+  },
   "Doğrusal çiftte açıortaylar": {
     ...linearPairBisectors031,
     caption: "Ortak kolu çevir. Dış kollar zıt yönlerde kaldığında açıortayların arasındaki ölçüyü izle.",

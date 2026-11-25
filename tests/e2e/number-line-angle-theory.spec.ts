@@ -1564,3 +1564,40 @@ test("The source histogram places a boundary observation in exactly one class", 
   }
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Number membership uses evaluated values in an accessible table offline", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const table = page.getByRole("table").filter({ hasText: "Üye olduğu kümeler" });
+  for (const route of ["/#/lesson?id=temel-kavramlar", "/#/cheatsheets?topic=detail-194"]) {
+    await page.goto(route);
+    const divided = table.getByRole("row").filter({ has: page.getByRole("cell", { name: "12/3", exact: true }) });
+    await expect(divided.getByRole("cell", { name: "4", exact: true })).toBeVisible();
+    await expect(divided.getByRole("cell", { name: "ℕ, ℤ, ℚ, ℝ", exact: true })).toBeVisible();
+    const repeating = table.getByRole("row").filter({ has: page.getByRole("cell", { name: "0,333…", exact: true }) });
+    await expect(repeating.getByRole("cell", { name: "1/3", exact: true })).toBeVisible();
+    const forbidden = table.getByRole("row").filter({ has: page.getByRole("cell", { name: "1/0", exact: true }) });
+    await expect(forbidden.getByRole("cell", { name: "Tanımsız", exact: true })).toBeVisible();
+    await checkFrame(page, figure(page, "Sayı kümelerinde önce değeri hesapla"));
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Changing the labelled triangle base changes height but keeps area offline", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-geo-acilar-kaynak-pekitirme-032";
+  const model = figure(page, "Karşı kenarı ve ona ait yüksekliği eşleştir");
+  for (const route of [`/#/lesson?id=${id}`, `/#/cheatsheets?topic=topic-${id}`]) {
+    await page.goto(route);
+    await expect(model).toContainText("Taban a = 4 cm, dik yükseklik 4 cm. Alan 4 × 4 / 2 = 8 cm²");
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("Taban b = 5 cm, dik yükseklik 3,2 cm. Alan 5 × 3,2 / 2 = 8 cm²");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
