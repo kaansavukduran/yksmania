@@ -110,7 +110,7 @@ import { forge012HistoryTopics } from "./forge012History";
 import { forge012TurkishCheatSheets } from "./forge012Turkish";
 import { lessonById, lessons } from "../domain/content";
 import { lessonTopic, studyTopicById } from "../domain/studyPlan";
-import { lessonGuides, studyGuide } from "./guides";
+import { lessonGuides, studyGuideWithSourceRevisions } from "./guides";
 import { clarifiedGuideView } from "./guidePresentation028";
 import { narrativeById } from "./narratives";
 import { physicsCheatSheets } from "./physicsCheatSheets";
@@ -477,9 +477,15 @@ export const builtInCheatSheets = new Map<string, CheatSheet>(
 // Published additions are shown in the reader without changing the original
 // catalog snapshot used by the existing preservation checks.
 export function studyCheatSheet(topicId: string): CheatSheet | undefined {
-  const sheet = builtInCheatSheets.get(topicId);
-  const lessonId = sheet?.lessonId;
-  const supplements = lessonId ? tytTheorySupplements[lessonId] : undefined;
+  const storedSheet = builtInCheatSheets.get(topicId);
+  const lessonId = storedSheet?.lessonId;
+  if (!lessonId) return storedSheet;
+
+  const guide = ["enerji-ve-hareket", "isi-ve-sicaklik", "hal-degisimi", "donusum-oteleme-donme", "durgun-elektrik", "elektrik-akimi", "basinc", "sivilarin-kaldirma-kuvveti", "dalgalara-giris", "yay-dalgalari", "su-dalgalari", "ses-deprem-dalgalari"].includes(lessonId)
+    ? studyGuideWithSourceRevisions(lessonId)
+    : undefined;
+  const sheet = guide ? lessonSheet(lessonId, guide) : storedSheet;
+  const supplements = tytTheorySupplements[lessonId];
   if (sheet && supplements) {
     let sections = sheet.sections;
     let examples = sheet.examples;
@@ -504,7 +510,5 @@ export function studyCheatSheet(topicId: string): CheatSheet | undefined {
     }
     return { ...sheet, sections, examples };
   }
-  if (!lessonId || !["enerji-ve-hareket", "isi-ve-sicaklik", "hal-degisimi", "donusum-oteleme-donme", "durgun-elektrik", "elektrik-akimi", "basinc", "sivilarin-kaldirma-kuvveti", "dalgalara-giris", "yay-dalgalari", "su-dalgalari", "ses-deprem-dalgalari"].includes(lessonId)) return sheet;
-  const guide = studyGuide(lessonId);
-  return guide ? lessonSheet(lessonId, guide) : sheet;
+  return sheet;
 }

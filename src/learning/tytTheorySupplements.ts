@@ -1,3 +1,4 @@
+import { particleCoordinatesSource006 } from "./particleCoordinatesSource006";
 import { glucoseSource005 } from "./glucoseSource005";
 import { germinationSource002, germinationTotal } from "./germinationSource002";
 import type { GuideSection } from "./guides/types";
@@ -19,6 +20,39 @@ interface TheorySupplement {
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "isi-ve-sicaklik": [{
+    title: "Isı sığasını enerji grafiğinin eğiminden oku",
+    figureTitle: "Isı sığasını enerji grafiğinin eğiminden oku",
+    paragraphs: [
+      "Isı sığası C=m·c, örneğin tamamını 1 °C ısıtmak için gereken enerjidir. Suyun öz ısısı yaklaşık 4200 J/(kg·°C). 0,2 kg su için C=840 J/°C, 0,3 kg su için C=1260 J/°C.",
+      "Düşey Q, yatay ΔT ise eğim Q/ΔT birimi J/°C. 5 °C artış için daha küçük örnek 4200 J, daha büyük örnek 6300 J alır. İki çizgide de aynı madde ve hâl değişimi olmayan aralık kullanılıyor.",
+    ],
+    summary: "Q–ΔT grafiğinin eğimi C=m·c. 0,2 ve 0,3 kg suda eğimler 840 ve 1260 J/°C. 5 °C için Q=4200 ve 6300 J.",
+    appendSection: true,
+  }],
+  "atomun-temel-tanecikleri": [{
+    title: "Grafikte önce eksenleri tabloya çevir",
+    figureTitle: "Grafikte önce eksenleri tabloya çevir",
+    paragraphs: [
+      "Üç noktada elektron sayısı 10. U’da proton sayısı 11, V’de 8, W’de 10. Her satırda yükü proton eksi elektron sayısıyla bul. W eşitlik çizgisinde olduğu için nötrdür.",
+      "Nötron sayısı veya kütle numarası için ek veri gerekir. Grafiğin ilk üç adımı aynı koordinat sırasını kullanır. Son adımda eksen adlarının değişmesi U’nun yorumunu değiştirir.",
+    ],
+    summary: "Yatay p, düşey e iken U(11,10) → +1, V(8,10) → −2, W(10,10) → 0. Aynı e sayısı yüklerin eşit olmasını gerektirmez.",
+    table: {
+      headers: ["Nokta", "Proton", "Elektron", "Yük"],
+      rows: particleCoordinatesSource006.map(({name, p, e}) => [name, String(p), String(e), p > e ? `+${p - e}` : String(p - e).replace("-", "−")]),
+      layout: "table",
+    },
+  }],
+  "lipitler": [{
+    title: "Fosfolipitte iki farklı uç",
+    figureTitle: "Fosfolipitte iki farklı uç",
+    paragraphs: [
+      "Çizimin son adımında hücrenin iki sulu yüzünü karşılaştır. Üst başlar dış ortama, alt başlar sitoplazmaya bakar. İki yağ asidi kuyruğu ortadaki bölgeye yönelir.",
+      "Model tipik gliserofosfolipiti sadeleştirerek gösterir. Baş grupları değişebilir. Çizimdeki molekül adedi ve uzaklıklar temsili.",
+    ],
+    summary: "Kutuplu başlar iki sulu yüze bakar. Kuyruklar zarın ortasında birbirine döner. İlk adım tek fosfolipit, son adım iki sulu ortamı gösterir.",
+  }],
   "enerji-ve-hareket": [{
     title: "Net kuvvet grafiğinden son kinetik enerjiyi bul",
     figureTitle: "Net kuvvet grafiğinden son kinetik enerjiyi bul",

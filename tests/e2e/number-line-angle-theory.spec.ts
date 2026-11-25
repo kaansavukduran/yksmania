@@ -1,4 +1,6 @@
 import { expect, test, type Locator, type Page } from "@playwright/test";
+import { hydropowerTitle } from "../../src/learning/hydropower062";
+import { thermalTransferTitle } from "../../src/learning/thermalTransfer063";
 import { registerOfflineBootDiagnostics } from "./helpers/offlineBootDiagnostics";
 import { learning, openCourse, prepare, storage } from "./helpers/revisedCourse";
 
@@ -1898,6 +1900,78 @@ test("Glucose observations retain baseline, interval rate and data table", async
     await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
     await expect(model).toContainText("Net artış 11 − 11 = 0 birim. Ortalama hız 0 ÷ 2 = 0 birim/dakika.");
     await expect(model).toContainText("Nedenini belirlemek için başka bilgi gerekir.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Energy and heat additions keep published source examples in both readers", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const capacity = figure(page, "Isı sığasını enerji grafiğinin eğiminden oku");
+  const force = figure(page, "Net kuvvet grafiğinden son kinetik enerjiyi bul");
+  for (const [energyRoute, thermalRoute] of [
+    ["/#/lesson?id=enerji-ve-hareket", "/#/lesson?id=isi-ve-sicaklik"],
+    ["/#/cheatsheets?topic=detail-118", "/#/cheatsheets?topic=detail-119"],
+  ]) {
+    await page.goto(energyRoute);
+    await expect(force.getByRole("img")).toBeVisible();
+    await expect(figure(page, hydropowerTitle).getByRole("img")).toBeVisible();
+    await page.goto(thermalRoute);
+    await expect(capacity.getByRole("img")).toBeVisible();
+    await expect(figure(page, thermalTransferTitle).getByRole("img")).toBeVisible();
+    await expect(capacity).toContainText("C = 840 J/°C. Q = 840 × 5 = 4.200 J.");
+    await expect(capacity).toContainText("C = 1.260 J/°C. Q = 1.260 × 5 = 6.300 J.");
+    await capacity.getByRole("slider", { name: /Sıcaklık artışı/ }).press("Home");
+    await expect(capacity).toContainText("Q = 840 × 0 = 0 J.");
+    await checkFrame(page, capacity);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Three particle points retain the same electron count and different charges", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Grafikte önce eksenleri tabloya çevir");
+  const table = page.getByRole("table").filter({
+    has: page.getByRole("columnheader", { name: "Nokta", exact: true }),
+  });
+  for (const route of ["/#/lesson?id=atomun-temel-tanecikleri", "/#/cheatsheets?topic=detail-144"]) {
+    await page.goto(route);
+    await expect(table.getByRole("row")).toHaveCount(4);
+    const next = model.getByRole("button", { name: "İleri", exact: true });
+    for (const [index, values] of [["U", "11", "10", "+1"], ["V", "8", "10", "−2"], ["W", "10", "10", "0"]].entries()) {
+      const cells = table.getByRole("row").nth(index + 1).getByRole("cell");
+      await expect(cells).toHaveCount(4);
+      for (const [column, value] of values.entries()) await expect(cells.nth(column)).toHaveAccessibleName(value);
+      await expect(model).toContainText(`${values[0]}: p = ${values[1]}, e = 10`);
+      await next.press("Enter");
+    }
+    await expect(model).toContainText("e = 11, p = 10 demekti: q = 10 − 11 = −1.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Both aqueous faces remain visible in the lipid bilayer", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Fosfolipitte iki farklı uç");
+  for (const route of ["/#/lesson?id=lipitler", "/#/cheatsheets?topic=detail-6"]) {
+    await page.goto(route);
+    const next = model.getByRole("button", { name: "İleri", exact: true });
+    await next.press("Enter");
+    await expect(model).toContainText("kuyruklar birbirine dönük ortada");
+    await next.press("Enter");
+    const image = model.getByRole("img");
+    await expect(image.getByText("hücre dışı sulu ortam", { exact: true })).toBeVisible();
+    await expect(image.getByText("sitoplazma (sulu)", { exact: true })).toBeVisible();
     await checkFrame(page, model);
   }
   expect(learning(await storage(page))).toEqual(before);

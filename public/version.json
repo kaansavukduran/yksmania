@@ -1,8 +1,8 @@
 {
-  "version": "0.186.0",
+  "version": "0.187.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Kuvvet–konum grafiğinde net işi hesapla, aynı enerji farkını iki geçiş yolunda gör ve glikozun toplam miktarıyla net oluşumu ayır.",
-    "en": "Calculate signed work, compare two paths between energy levels, and distinguish final glucose amount from net change."
+    "tr": "Isı sığasını grafik eğiminden bul, atom yüklerini aynı veriden çizilen grafik ve tabloyla karşılaştır ve fosfolipidin iki sulu yüzünü aç.",
+    "en": "Read heat capacity from a slope, compare atomic charges in a shared graph and table, and examine both aqueous faces of a phospholipid bilayer."
   }
 }
