@@ -1857,6 +1857,18 @@ test("A force position graph gives signed work and final kinetic energy", async 
     await next.press("Enter");
     await expect(model).toContainText("Son kinetik enerji 10 + 16 = 26 J.");
     await checkFrame(page, model);
+    if (route.includes("cheatsheets")) {
+      const table = page.getByRole("table").filter({
+        has: page.getByRole("columnheader", { name: "Çekmenin ortalama gücü" }),
+      });
+      await expect(table).toBeVisible();
+      await expect(table.getByRole("cell", { name: "36 W", exact: true })).toBeAttached();
+      const scroll = table.locator("..");
+      await scroll.focus();
+      await expect(scroll).toBeFocused();
+      await scroll.press("ArrowRight");
+      await expect.poll(() => scroll.evaluate((element) => element.scrollLeft)).toBeGreaterThan(0);
+    }
   }
   expect(learning(await storage(page))).toEqual(before);
 });
