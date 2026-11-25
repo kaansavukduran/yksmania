@@ -1,3 +1,17 @@
+# AYT Sayısal kaynak paketleri · 0.194.0 adayı
+
+| Ders | Konu anlatımı ve Kopya Kağıdı |
+| --- | --- |
+| AYT Matematik | Parçalı grafikte açık ve dolu uçtan fonksiyon değerini bulma |
+| AYT Geometri | Paralel doğruların dik uzaklığını ve çakışmayı karşılaştırma |
+| AYT Fizik | Vektör bileşenleri, bileşke ve dengeleyici vektör |
+| AYT Kimya | 2p orbital kutularında Hund kuralı ve elektron eşleşmesi |
+| AYT Biyoloji | ATP’nin yapısı ve başlangıç, üretim, tüketimden son ATP havuzunu bulma |
+
+Beş kaynağın toplam 70 fiziksel sayfası tarandı. Seçili sayfalardaki çizim ve örnekler uygulamanın normal ders yolunda ve ayrı Kopya Kağıdı'nda işlendi. Enerji tablosu, yüksek ölçekte sayfayı genişletmeden klavyeyle kaydırılabiliyor.
+
+[Konu kapsamı](docs/KONU_KAPSAMI.md), mevcut 510 başlığın anlatım, örnek, Kopya Kağıdı ve video durumunu izliyor. Adayın yayın durumu GitHub Actions ve iki web adresinden ayrı doğrulanır. [Kaynak ilerlemesi](docs/ILERLEME.md)
+
 # TYT ve AYT Sayısal konu kapsamı · 0.148.0 adayı
 
 [Konu kapsamı](docs/KONU_KAPSAMI.md) ve [ayrıntılı CSV](docs/KONU_KAPSAMI.csv), normal ders girişine bağlı 510 başlığı gösteriyor. Yerleşik anlatım, çözümlü örnek, Kopya Kağıdı ve video ayrı sütunlarda. Kaynak kâğıdı aktarımının ayrı paydası 137 / 517. Bu sayaç kısmi aktarımı izler.
