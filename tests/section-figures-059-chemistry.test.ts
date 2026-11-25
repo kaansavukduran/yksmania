@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { sectionFigures } from "../src/learning/sectionFigures/registry";
 import { sectionFigureGuideIds } from "../src/learning/sectionFigures/figureGuideIds";
-import { lessonGuides } from "../src/learning/guides";
+import { studyGuide } from "../src/learning/guides";
 
 // Forge059 AYT Kimya figürleri: her figür rehberdeki gerçek bir bölüm
 // başlığına bağlanır; sonuç satırlarındaki sayılar bölüm metnindeki
@@ -43,7 +43,8 @@ describe("Forge059 AYT Kimya bölüm figürleri", () => {
       expect(sectionFigureGuideIds.has(g), g).toBe(true);
       const titles = Object.keys(sectionFigures[g] ?? {});
       expect(titles.length, g).toBeGreaterThanOrEqual(2);
-      const sections = new Set(lessonGuides.get(g)?.sections.map((s) => s.title));
+      // Ekranda gösterilen rehber: kaynak revizyonları ve teori ekleri dahil.
+      const sections = new Set(studyGuide(g)?.sections.map((s) => s.title));
       for (const t of titles) expect(sections.has(t), `${g} / ${t}`).toBe(true);
     }
   });
