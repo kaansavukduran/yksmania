@@ -316,12 +316,12 @@ for (const profile of [
         await e
           .getByRole("button", { name: "İlk adımı göster", exact: true })
           .click();
-        await expect(e.locator(".worked-steps li")).toHaveCount(1);
+        await expect(e.locator(".worked-steps > li")).toHaveCount(1);
         for (const count of [2, 3]) {
           await e
             .getByRole("button", { name: "Sonraki adım", exact: true })
             .click();
-          await expect(e.locator(".worked-steps li")).toHaveCount(count);
+          await expect(e.locator(".worked-steps > li")).toHaveCount(count);
         }
         await expect(e.locator(".worked-conclusion")).toContainText(
           expectedAnswer,

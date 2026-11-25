@@ -1,0 +1,629 @@
+[
+  {
+    "version": "0.149.0",
+    "receipts": [
+      {
+        "surface": "guides",
+        "id": "tyt-geo-acilar-kaynak-pekitirme-032",
+        "after": "ccc52d90a9b6a7101e5fbceb23009296fd966a9802e0e268349600ef66a66714",
+        "prior": {
+          "sections": [
+            {
+              "title": "Çizginin ucunu oku",
+              "paragraphs": [
+                "Nokta, büyüklüğü olan küçük bir top değil, bir konumdur. Çizimde görünür olması için bir benekle gösterilir. A, B ve C gibi büyük harfler bu konumları adlandırır. A ve B farklı iki nokta olduğunda ikisinden geçen tek bir doğru vardır.",
+                "AB doğrusu iki yönde sınırsız uzanır; [AB ışını A’dan başlar ve B yönünde sınırsız uzanır; [AB] doğru parçası A ve B ile sınırlıdır. Ok çizimin devam ettiğini, dolu uç ise o nesnenin uç noktasını anlatır. Doğru parçasını uzatıp doğru elde etmek, ilk nesnenin tanımını değiştiren yeni bir işlemdir."
+              ]
+            },
+            {
+              "title": "Açı adından köşeye ve kollara git",
+              "paragraphs": [
+                "Açı, başlangıcı ortak iki ışın arasındaki açıklıktır. ∠ABC yazımında ortadaki B köşedir. Kollar B’den A’ya ve B’den C’ye yönelen [BA ve [BC ışınlarıdır. m(∠ABC), bu açının ölçüsünü söyler; B noktasının uzunluğu anlamına gelmez.",
+                "Kolların sayfadaki çizimini uzatmak açıyı büyütmez. Ölçü, bir koldan ötekine dönüşle ilgilidir ve burada dereceyle verilir. Görünüşü 90°ye benziyor diye diklik varsayma; ölçü, diklik işareti veya açık bir koşul gerekir."
+              ]
+            },
+            {
+              "title": "Ölçü aralığıyla adlandır",
+              "paragraphs": [
+                "0°<α<90° dar, α=90° dik, 90°<α<180° geniş açıdır. 90° sınırı dar ve geniş aralığının hiçbirine dahil değildir. Örneğin 87° dar, 93° geniştir; ikisinin de 90°ye yakın olması sınıflarını aynı yapmaz.",
+                "180° doğru açı, yani yarım dönüş; 360° tam açı, yani tam dönüştür. Bir noktanın çevresini boşluksuz ve örtüşmesiz kaplayan açıların toplamı 360°dir. Bir çözümde 0° veya 180° bulduğunda soruda dar ya da geniş açı istenip istenmediğini yeniden kontrol et."
+              ]
+            },
+            {
+              "title": "Komşuluk ile toplam koşulunu ayır",
+              "paragraphs": [
+                "Komşu açılar köşeyi ve bir kolu paylaşır, iç bölgeleri kesişmez. Bu koşullar tek başına toplamın 180° olduğunu söylemez: aynı köşede komşu 30° ve 40° açıları birlikte 70° eder. Komşu olmayan açılar da tümler veya bütünler olabilir.",
+                "Tümler açıların toplamı 90°, bütünler açıların toplamı 180°dir. Komşu açıların ortak olmayan kolları ayrıca zıt ışınsa doğrusal çift oluşur; bu durumda 180° toplamı zorunludur. Önce ilişkinin adını ve koşulunu yaz, ardından cebirsel ifadeleri yerleştir."
+              ]
+            },
+            {
+              "title": "Aynı kesişimde ters açıları bul",
+              "paragraphs": [
+                "İki doğru kesiştiğinde karşı karşıya duran açılar ters açılardır ve eşittir. Bu sonuç için başka bir doğruya paralellik gerekmez. Birbirinin yanında duran açılar ters değil, doğrusal çiftin parçalarıdır; toplamları 180°dir.",
+                "Örneğin ters iki açı 93° ise komşuları 87°dir: 93+87=180. Dört açı sırasıyla 93°,87°,93°,87° olur ve 360°yi tamamlar. Ters açıyı ararken önce aynı kesişimde olduğundan emin ol; farklı iki kesişimdeki açıları konuma göre ayrıca adlandır."
+              ]
+            },
+            {
+              "title": "Paralellerde konumu tarif et",
+              "paragraphs": [
+                "Paralel d₁ ve d₂ doğrularını bir kesen kestiğinde, iki kesişimde aynı köşe konumundaki açılar yöndeştir. Paraleller arasında ve kesenin karşı yanlarında olanlar iç ters; paralellerin dışında ve kesenin karşı yanlarında olanlar dış terstir. Bu üç çift türünde ölçüler eşittir.",
+                "Paraleller arasında kesenin aynı yanında bulunan iki iç açının toplamı 180°dir. İçeride–dışarıda ve aynı yanda–karşı yanda ayrımını çizim döndüğünde de koru. Buradaki yöndeş/iç ters/dış ters sonuçları paralellik koşuluna dayanır; aynı kesişimdeki ters açı eşitliği ise yalnız iki doğrunun kesişmesine dayanır."
+              ]
+            },
+            {
+              "title": "Bilinmeyen ile istenen ölçüyü ayır",
+              "paragraphs": [
+                "Tümler örnekte x+(2x+6)=90 kurulur; paralellerin aynı yan iç örneğinde (3x+10)+(2x+20)=180; aynı kesişimde ters açılarda 4x−7=3x+18. Üç denklem arasındaki fark bir işlem ezberi değil, seçilen geometrik ilişkinin sonucudur.",
+                "Denklemden x’i bulmak her zaman soruyu bitirmez. x=25 iken açı 4x−7=93° olabilir; istenen onun komşusuysa 180−93=87° hesaplanır. Sonuçta hem denklemi hem sorulan açıyı hem de sınıfını kontrol et. Aşağıdaki örneklerde her adımı açıp kendi gerekçenle karşılaştır."
+              ]
+            },
+            {
+              "title": "Kendi çözümünü kısa bir gerekçeyle denetle",
+              "paragraphs": [
+                "Çözümüne bir cümle ekle: “Ters oldukları için eşit”, “Tümler oldukları için 90°”, “Paralellerin aynı yan iç açıları oldukları için 180°.” Sadece bir sayı yazmak yerine ilişkiyi söylemek, yanlış eşitliğin nerede kurulduğunu görünür yapar.",
+                "Bir şekil büyüdüğünde ölçülerin büyüdüğünü, her komşu çiftin bütünler olduğunu veya paralellik işareti olmadan iki kesişimdeki açılara eşitlik verebildiğini düşünüyorsan önce modeli değiştirerek karşı örnek ara. Bağımsız sorular kendi verileriyle çözülür; keşif modelini açmak ya da çözümü okumak doğru cevap yerine geçmez."
+              ]
+            },
+            {
+              "title": "Koşul değiştiğinde çözüm yolunu değiştir",
+              "paragraphs": [
+                "Bir problemde tümler deniyorsa toplam 90°, bütünler deniyorsa180° yazılır; aynı köşede olmaları gerekmez. Bir dik açıyı iki bölgeye ayırmak tümler ilişkiye yeni bir örnektir. İki doğrunun kesişimindeki ters açı eşitliğini komşu doğrusal toplamıyla karıştırma. Sayısal cevabının yanında neden o işlemi seçtiğini bir cümleyle açıkla.",
+                "Paralellikte iç ters açıları eşitlemek için önce paralelliği doğrula. Kırık bir yol üzerinde açı ararken köşeden mevcut paralellere paralel bir yardımcı doğru çizmek, açıları iç ters veya yöndeş ilişkiyle taşımayı sağlar. Çizgi eklemek tek başına eşitlik yaratmaz; yeni doğrunun hangi doğruya paralel seçildiğini belirt. Karışık provada notu kapat, önce bağımsız çöz; gerekçeyle denetledikten sonra farklı verilerle yeniden dene."
+              ]
+            },
+            {
+              "title": "Bir tam turdan ÖSYM çözümüne geç",
+              "paragraphs": [
+                "Dikdörtgen duvarlar içindeki bir noktadan saat yönünde eşit açılarla sıralanan ışınları düşün. İlk ışının altıncıda, arada yalnız bir tam tur tamamlanarak yinelenmesi beş eş dönüş aralığı verir: 360°/5=72°. Burada altı ışın etiketi olması altı farklı aralık olduğu anlamına gelmez; 1’den 2’ye ilk, 5’ten 6’ya beşinci aralıktır. Modelde Sonraki dönüş düğmesiyle her aralığı ayrı izle.",
+                "Örnekte2. ışının alt yatay duvarla yaptığı dar açı,3. ışının sol düşey duvarla yaptığı dar açıya eşittir. Yatay ve düşey90° oluşturur; ardışık iki ışın arasındaki72° çıkarıldığında 18° kalır. Eş iki payın her biri 9°dir. Böylece3. ışın yataya9° uzaktır; sonraki72° dönüşle4. ışının üst yatay duvarla yaptığı dar açı 72°−9°=63° olur. Bu çözüm,2024 TYT Temel Matematik 31. sorunun resmî kitapçık ve cevap anahtarıyla karşılaştırılmış özgün açıklamasıdır: D seçeneği 63°. O soru ile uygulamanın özgün alıştırmalarının kimlikleri ayrı tutulur; sayfadaki tek örnek bütün geçmiş sınav arşivini temsil etmez."
+              ]
+            },
+            {
+              "title": "Komşu açıların dış kollarını kontrol et",
+              "paragraphs": [
+                "Yan yana duran 30° ve 40° iki açı aralarında ortak kol paylaşabilir. Dış kolları zıt yönlü değilse 70° toplamı çizime uygundur. 180° beklemek için dış kolların aynı doğru üzerinde ters yönlere uzandığını görmen ya da bu bilgiyi soruda okuman gerekir. 90° toplamı veren iki açı tümlerdir ve ortak köşeleri olmayabilir.",
+                "Bir doğrusal çiftin açıları α ve 180°−α olsun. İç açıortaylar ortak kolun iki tarafında α/2 ile (180°−α)/2 kadar gider. Toplam 90° eder. İki açı 60° ve 120° olduğunda 30°+60°=90° görürsün. Açılar yalnız komşu olup doğrusal çift kurmuyorsa aynı sonuç çıkmaz."
+              ]
+            },
+            {
+              "title": "Paralellik kalkarsa hangi eşitlik kalır?",
+              "paragraphs": [
+                "Bir kesen iki paraleli kestiğinde yöndeş ve iç ters açılar eşittir. Aynı yandaki iç açılarda 180° toplamı kullanılır. Çizimde benzer görünen iki açıyı önce doğru konuma yerleştir. Paralellik verilmediyse ölçüyü bir kesişimden diğerine taşıyamazsın. Bir kesişimdeki ters açılar ise iki doğru hangi yönlerde olursa olsun eşittir.",
+                "İki rayı kesen yol ilk rayla 55° yapıyorsa ikinci paralel raydaki yöndeş açı 55°, aynı yandaki iç açı 125° olur. İkinci rayı döndürürsen bu iki sonuç değişebilir. İlk raydaki kendi komşu ve ters açıları değişmez. Kırık çizgide bir köşeden verilen doğrulara paralel yardımcı çizgi geçirmek, iki kesişimi bu koşulla bağlar."
+              ]
+            }
+          ],
+          "examples": [
+            {
+              "title": "Tümler iki açıyı tanımdan çöz",
+              "prompt": "Tümler iki açıdan büyük olanı, küçük olanın iki katından 6° fazladır. Küçük ve büyük açıların ölçüleri nedir?",
+              "strategy": "Küçüğe x de, büyüğü 2x+6 yaz ve tümler toplamını uygula.",
+              "steps": [
+                {
+                  "label": "Ölçüleri temsil et",
+                  "explanation": "Küçük açı x°, büyük açı (2x+6)°dir. Tümler sözcüğü 90° toplamını verir."
+                },
+                {
+                  "label": "Denklemi çöz",
+                  "explanation": "x+2x+6=90, 3x=84 ve x=28 bulunur."
+                },
+                {
+                  "label": "İki ölçüyü geri koy",
+                  "explanation": "Büyük açı 2·28+6=62°dir. Küçük 28° ve büyük 62° bulunur."
+                }
+              ],
+              "answer": "Küçük açı 28°, büyük açı 62°dir.",
+              "check": "28+62=90 ve 62=2·28+6 koşulları birlikte sağlanır.",
+              "pitfall": "İki kat ifadesini atlayıp büyüğü x+6 yazmak kaynak verisini değiştirir."
+            },
+            {
+              "title": "Paralellerin aynı yan iç açılarını topla",
+              "prompt": "Paralel d₁ ve d₂ doğrularını bir kesen kesiyor. Paraleller arasında, kesenin aynı yanındaki iki iç açının ölçüleri (3x+10)° ve (2x+20)°dir. İki açı kaç derecedir?",
+              "strategy": "Aynı yan iç ve paralellik koşullarını birlikte kullanarak toplamı 180° yap.",
+              "steps": [
+                {
+                  "label": "Konumun sonucunu yaz",
+                  "explanation": "Paralellik ve aynı yan iç konumu nedeniyle (3x+10)+(2x+20)=180 yazılır."
+                },
+                {
+                  "label": "Bilinmeyeni bul",
+                  "explanation": "5x+30=180, 5x=150 ve x=30 olur."
+                },
+                {
+                  "label": "Açıları hesapla",
+                  "explanation": "3·30+10=100° ve 2·30+20=80° bulunur."
+                }
+              ],
+              "answer": "Açılar 100° ve 80°dir.",
+              "check": "100+80=180; bir açı geniş, diğeri dardır.",
+              "pitfall": "Aynı yan iç açıları eşitlemek iç ters ilişkisiyle karıştırmaktır."
+            },
+            {
+              "title": "Ters açıdan komşusuna geç",
+              "prompt": "Kesişen iki doğruda ters iki açının ölçüleri (4x−7)° ve (3x+18)°dir. Bu açılar ve her birinin komşusu kaç derecedir?",
+              "strategy": "Önce tersleri eşitle, ardından komşu doğrusal çiftin 180° toplamını kullan.",
+              "steps": [
+                {
+                  "label": "Ters açı eşitliği",
+                  "explanation": "4x−7=3x+18 eşitliği x=25 verir; paralellik koşulu aranmaz."
+                },
+                {
+                  "label": "Ters ölçüleri bul",
+                  "explanation": "4·25−7=93 ve 3·25+18=93 olduğundan terslerin ikisi de 93°dir."
+                },
+                {
+                  "label": "Komşuya geç",
+                  "explanation": "Komşu açı 180−93=87°dir; kesişimde ölçüler sırayla 93°,87°,93°,87° olur."
+                }
+              ],
+              "answer": "Ters açılar 93°, komşuları 87°dir.",
+              "check": "2·93+2·87=360° ve her doğrusal çiftin toplamı 180°dir.",
+              "pitfall": "x=25 değerini istenen açı sanma; 4x−7 ifadesine geri koy."
+            },
+            {
+              "title": "Hatırlama sorusunu denklemle doğrula",
+              "prompt": "Kesişen iki doğruda karşılıklı duran ters iki açının ölçüleri (5x−10)° ve (3x+30)°dir. x ve açı ölçülerini bul.",
+              "strategy": "Ters açıları eşitle; x’i iki ifadede ayrı ayrı denetle.",
+              "steps": [
+                {
+                  "label": "Eşitlik",
+                  "explanation": "Ters açılar eşit olduğundan 5x−10=3x+30 yazılır."
+                },
+                {
+                  "label": "Çözüm",
+                  "explanation": "2x=40 ve x=20 bulunur."
+                },
+                {
+                  "label": "Denetim",
+                  "explanation": "5·20−10=90 ve 3·20+30=90 olduğundan iki ölçü de 90°dir. Komşular da 90°dir."
+                }
+              ],
+              "answer": "x=20, açı ölçülerinin her biri 90°dir.",
+              "check": "İki ifade aynı 90°yi verir; doğrular bu örnekte diktir.",
+              "pitfall": "x=20 ile açı 20° sonucunu birbirine karıştırma."
+            },
+            {
+              "title": "Doğrusal çiftte toplamın nedenini söyle",
+              "prompt": "Doğrusal çift oluşturan iki komşu açının ölçüleri x° ve (2x+12)°dir. İki açı kaç derecedir?",
+              "strategy": "Zıt dış kolların verdiği 180° toplamını yaz.",
+              "steps": [
+                {
+                  "label": "Koşulu adlandır",
+                  "explanation": "Doğrusal çiftte ortak olmayan kollar zıt ışındır; iki ölçünün toplamı180°dir."
+                },
+                {
+                  "label": "Denklemi çöz",
+                  "explanation": "x+(2x+12)=180, 3x=168 ve x=56 bulunur."
+                },
+                {
+                  "label": "Ölçülere dön",
+                  "explanation": "Diğer açı 2·56+12=124°dir; iki açı 56° ve 124°dir."
+                }
+              ],
+              "answer": "56° ve 124°.",
+              "check": "56+124=180 ve 124=2·56+12 koşulları sağlanır.",
+              "pitfall": "Komşuluk yerine özellikle doğrusal çift koşulunu kullan; tümler toplamı90° değildir."
+            },
+            {
+              "title": "127° ile kesişimin dört açısını tamamla",
+              "prompt": "Kesişen iki doğrunun oluşturduğu açılardan biri 127°dir. Tam karşısındaki ve ona komşu açılar kaç derecedir?",
+              "strategy": "Aynı kesişimde ters eşitlik ve doğrusal çift toplamını ayır.",
+              "steps": [
+                {
+                  "label": "Karşıya geç",
+                  "explanation": "Tam karşıdaki açı ters olduğundan127°dir."
+                },
+                {
+                  "label": "Komşuya geç",
+                  "explanation": "Komşu açı 180−127=53°dir."
+                },
+                {
+                  "label": "Çevreyi tamamla",
+                  "explanation": "Ölçüler sırayla127°,53°,127°,53° olur; toplam 360°dir."
+                }
+              ],
+              "answer": "Karşı açı 127°, komşu açılar 53°dir.",
+              "check": "2·127+2·53=360.",
+              "pitfall": "Ters karşılıklı, komşu yan yana demektir; aynı ilişki değildir."
+            },
+            {
+              "title": "İç ters açıları eşitle",
+              "prompt": "Paralel d₁ ve d₂ doğrularını bir kesen kesiyor. İç ters iki açının ölçüleri (3x+10)° ve (5x−20)°dir. x ve ortak açı ölçüsü nedir?",
+              "strategy": "Paralellik ve iç ters konumu eşitlik verir; toplam 180° kurma.",
+              "steps": [
+                {
+                  "label": "Koşulu yaz",
+                  "explanation": "İç ters ve paralellik nedeniyle3x+10=5x−20."
+                },
+                {
+                  "label": "Bilinmeyeni bul",
+                  "explanation": "30=2x ve x=15."
+                },
+                {
+                  "label": "İki ifadeyi denetle",
+                  "explanation": "3·15+10=55° ve 5·15−20=55°dir."
+                }
+              ],
+              "answer": "x=15; ortak açı 55°dir.",
+              "check": "Her iki ifade55° verir; x=15 açı ölçüsüyle karıştırılmaz.",
+              "pitfall": "Paralellerde her çift180° toplamaz; iç ters çift eşittir."
+            },
+            {
+              "title": "Tam turda eksik bölgeyi bul",
+              "prompt": "Bir noktanın çevresini boşluk ve örtüşme olmadan kaplayan dört açının üçü30°,85° ve 120°dir. Dördüncü açı kaç derecedir?",
+              "strategy": "Tam tur360°den bilinenlerin toplamını çıkar.",
+              "steps": [
+                {
+                  "label": "Bütünü seç",
+                  "explanation": "Dört bölge bir tam çevreyi kapladığından toplam 360°dir."
+                },
+                {
+                  "label": "Bilinenleri topla",
+                  "explanation": "30+85+120=235°."
+                },
+                {
+                  "label": "Eksik açıyı bul",
+                  "explanation": "360−235=125°; eksik bölge125°dir."
+                }
+              ],
+              "answer": "125°.",
+              "check": "30+85+120+125=360.",
+              "pitfall": "180° yalnız yarım dönüş içindir; burada bütün nokta çevresi veriliyor."
+            },
+            {
+              "title": "Desteği azalt: aynı yan iç açı",
+              "prompt": "Paralel iki doğruyu kesen bir doğrunun aynı yan iç açılarından biri 68°dir. Diğeri kaç derecedir?",
+              "strategy": "Önce ilişkiyi kendin adlandır, sonra farkı hesapla.",
+              "steps": [
+                {
+                  "label": "İlişki",
+                  "explanation": "Paralellik ve aynı yan iç konumu toplam 180° verir."
+                },
+                {
+                  "label": "Hesap",
+                  "explanation": "Diğer açı 180−68=112°dir."
+                },
+                {
+                  "label": "Denetim",
+                  "explanation": "68+112=180; biri dar, diğeri geniştir."
+                }
+              ],
+              "answer": "112°.",
+              "check": "68° ile 112° bütünlerdir; eşit olmak zorunda değildir.",
+              "pitfall": "Aynı yan iç açıyla iç ters açıyı karıştırırsan68°yi yinelersin."
+            },
+            {
+              "title": "Bütünler açıların iki açıortayını birleştir",
+              "prompt": "Aynı doğru üzerindeki bitişik açılar 2x+14 ve 3x+6 derecedir. İç açıortayları arasındaki açı kaç derecedir?",
+              "strategy": "Dış kollar zıt ışın. Ölçüleri topla, sonra yarılarını al.",
+              "steps": [
+                {
+                  "label": "Denklem",
+                  "expression": "5x+20=180 ⇒ x=32",
+                  "explanation": "Bitişik açıların toplamı 180°."
+                },
+                {
+                  "label": "Yarılar",
+                  "expression": "(2·32+14)°/2=39°, (3·32+6)°/2=51°",
+                  "explanation": "İki açıortay kendi açısını iki eş parçaya böler."
+                },
+                {
+                  "label": "Açıortaylar arası",
+                  "expression": "39°+51°=90°",
+                  "explanation": "Açıortaylar ortak kolun farklı taraflarında olduğu için iki yarıyı topla."
+                }
+              ],
+              "answer": "90°.",
+              "check": "Açıların tam ölçüleri 78° ve 102°. Toplamı önce ikiye bölmek de 180°/2=90° verir.",
+              "pitfall": "Dış kolların zıt olduğu bilgisi olmadan iki yarım açıyı 90° sayma."
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "temel-kavramlar",
+        "after": "edffecd6aa2b41e39313299b50adf3a04ca1e1bb81ce8d9dae9af1d492b30304",
+        "prior": {
+          "sections": [
+            {
+              "title": "Rakam yazım aracıdır, sayı bir değerdir",
+              "paragraphs": [
+                "Onluk sistemde kullanılan on rakam 0, 1, …, 9’dur. 47 iki rakamla yazılmış bir sayıdır; 4 ve 7 onun rakamlarıdır. 47’de 4’ün sayı değeri 4, basamak değeri 40’tır. ab iki basamaklı sayısı 10a+b anlamına gelir; a ve b’nin çarpımı değildir. a sıfır olamaz, b sıfır olabilir. Bir soruda ‘a bir rakamdır’ deniyorsa a için 12 veya −1 seçilemez.",
+                "Önce sözel bilgiyi matematiğe çevir: ‘rakamları farklı’ a≠b, ‘iki basamaklı’ a∈{1,…,9} ve b∈{0,…,9} demektir. Koşul listesi, hesap kadar önemlidir. Büyük bir onlar basamağı, birler basamağındaki değişimden daha güçlüdür; bu yüzden en büyük iki basamaklı sayı aranırken önce a belirlenir."
+              ]
+            },
+            {
+              "title": "Sayı kümelerinde önce değeri hesapla",
+              "paragraphs": [
+                "Bu anlatımda ℕ={0,1,2,…}; sayma sayıları 1’den başlar. ℤ negatif tam sayıları da kapsar. ℚ, a ve b tam sayı, b≠0 olmak üzere a/b biçimindeki sayılardır. ℝ ise rasyonel ve irrasyonel gerçek sayıları birlikte içerir. ℕ⊂ℤ⊂ℚ⊂ℝ olduğundan 6 tek bir kümeye sıkışmaz: dört kümeye de aittir.",
+                "√36=6 ve 12/4=3 önce hesaplanır; ikisi de doğal sayıdır. √3 rasyonel değildir; 0,272727… ise 27 sürekli tekrarlanıyorsa rasyoneldir. ‘Sonsuz ondalık’ tek başına irrasyonellik kanıtı değildir; sonlu olmayan ve devirli olmayan ondalık açılım ayırt edicidir. Gerçek sayılarda √(−4) tanımlı değildir; bunu negatif bir gerçek sayı sanma.",
+                "Aşağıdaki modelde aynı sayı için bütün doğru kümeleri seç. En dar kümeyi bilmek, onu içeren kümeleri dışlamak anlamına gelmez. Bir kutunun büyük çizilmesi eleman sayısının daha fazla olduğu anlamına gelmez; şema yalnız içerme ilişkisini gösterir."
+              ]
+            },
+            {
+              "title": "İşlem özellikleri hangi dönüşüme izin verir?",
+              "paragraphs": [
+                "Toplamada ve çarpmada sıra değişebilir: a+b=b+a, ab=ba. Gruplama da değişebilir: (a+b)+c=a+(b+c). Çıkarma ve bölme için bu özellikler genel olarak yoktur: 8−3 ile 3−8 farklıdır; 12/(3/2)=8 iken (12/3)/2=2’dir.",
+                "Toplamanın etkisiz elemanı 0, çarpmanın etkisiz elemanı 1’dir. Çarpmada 0 yutandır: a×0=0. Toplama tersi −a her gerçek sayı için vardır; çarpma tersi 1/a yalnız a≠0 için vardır. Dağılma kuralı a(b+c)=ab+ac, bir toplamı çarpıma dönüştürmenin ve ortak çarpan ayırmanın dayanağıdır."
+              ]
+            },
+            {
+              "title": "İşlem önceliği ve eksi işaretinin kapsamı",
+              "paragraphs": [
+                "Önce parantezin içindeki işlem, sonra üs ve kökün kapsadığı işlem, sonra çarpma-bölme, en son toplama-çıkarma yapılır. Aynı öncelikte soldan sağa ilerlenir: 24÷4×3=6×3=18. Çarpmayı bölmenin önüne geçirmek farklı bir ifade hesaplamaktır. Uzun kesir çizgisi de parantez gibi payın ve paydanın tamamını gruplar.",
+                "−5²=−(5²)=−25; (−5)²=25. Birincisinde üs yalnız 5’e, ikincisinde −5’e uygulanır. √25=5’tir; x²=25 denkleminin çözümleri ise −5 ve 5’tir. Karekök sembolünün sonucu negatif olamaz; dolayısıyla √(x²)=|x|. x=−8 için sonuç −8 değil 8’dir."
+              ]
+            },
+            {
+              "title": "Tanım koşulunu sadeleştirerek silemezsin",
+              "paragraphs": [
+                "Bir kesirde payda sıfır olamaz. (3x−6)/(x−2) ifadesinde daha işlem yapmadan x≠2 yazılır. Pay 3(x−2) olduğundan izinli değerlerde sonuç 3’tür. Fakat x=2’yi sonradan eklemek başlangıçtaki 0/0’a değer vermek olur. Sadeleşen ortak çarpan, başlangıç koşulunu ortadan kaldırmaz.",
+                "Sadeleştirme ortak çarpanlar arasında yapılır; toplamın içinden rastgele terim çizilmez. (x+4)/x, x≠0 için 1+4/x’tir. Her iki terimi x’e bölmüş olduk. Bir eşitliği bilinmeyen içeren ifadeye bölmeden önce o ifadenin sıfır olabildiği durumu ayır; x(x−3)=0’ı x’e bölmek x=0 çözümünü kaybettirir."
+              ]
+            },
+            {
+              "title": "Sayı seçerken bütün koşulları aynı anda uygula",
+              "paragraphs": [
+                "a+b=12 ve a,b pozitif tam sayıysa a=1, b=11 seçilebilir; sıfır kullanılamaz. ‘Farklı’ koşulu da varsa a=b=6 yasaktır. En küçük veya en büyük değer, sayının ait olduğu kümeye bağlıdır. Pozitif gerçek sayılarda a değeri sıfıra yaklaşabilir ama sıfır olamaz; bu durum pozitif tam sayıdaki en küçük değer 1 ile aynı değildir.",
+                "Bir ifadeyi büyütmek için bütün değişkenleri en büyük seçmek her zaman doğru değildir. 2a−b’de a’yı büyütmek ve b’yi küçültmek sonucu büyütür. Ayrıca a ile b’yi bağlayan koşul varsa bağımsız seçemezsin. Seçtiğin adayları başlangıç cümlesine geri koy: sayı türü, sıfır, farklılık ve eşitsizlikler korunuyor mu?"
+              ]
+            },
+            {
+              "title": "Bir örnek ispat değildir; karşı örnek yargıyı çürütür",
+              "paragraphs": [
+                "‘İki irrasyonelin toplamı daima irrasyoneldir’ yanlıştır: √2+(−√2)=0. ‘Rasyonel ile irrasyonelin çarpımı irrasyoneldir’ yargısında rasyonelin sıfır olmadığı koşulu gerekir; 0×√2=0’dır. Bir doğru örnek bütün olasılıkları ispatlamaz, fakat geçerli bir karşı örnek ‘her zaman’ iddiasını çürütür.",
+                "Soruyu bitirirken küçük bir kontrol rutini kullan: ifade tanımlı mı, işaret mantıklı mı, seçtiğim sayı izinli mi, işlem yaklaşık mı kesin mi? Kesir sonucu için ondalık kontrol yararlı olabilir; 1/3≈0,333 yazarken yaklaşık işaretini koru. Hesap makinesi yuvarlamasını kesin eşitlik diye aktarma."
+              ]
+            }
+          ],
+          "examples": [
+            {
+              "title": "Önce değer, sonra küme",
+              "prompt": "A=√64, B=−9/3 ve C=0,121212… olsun. Her biri için en dar sayı kümesini belirle; C’de 12 sürekli tekrar ediyor.",
+              "strategy": "Yazılışla karar verme; önce kök, bölüm veya devirli ondalığın değerini incele.",
+              "steps": [
+                {
+                  "label": "Kök ve bölümü hesapla",
+                  "expression": "A=8, B=−3",
+                  "explanation": "8 doğal sayıdır. −3 tam sayıdır; doğal sayı değildir."
+                },
+                {
+                  "label": "Devri kesre dönüştür",
+                  "expression": "100C−C=12 → C=12/99=4/33",
+                  "explanation": "Sonsuz tekrar eden ondalık rasyoneldir; bu kesir tam sayı değildir."
+                }
+              ],
+              "answer": "A için ℕ, B için ℤ, C için ℚ en dar kümelerdir.",
+              "check": "Üçü de ℝ içindedir; A ve B aynı zamanda ℚ içindedir.",
+              "pitfall": "Bir sayıya en dar kümeyi vermek, üst kümelere ait olmadığı anlamına gelmez."
+            },
+            {
+              "title": "Öncelik ve parantez birlikte",
+              "prompt": "−4²+18÷3×2 işlemini hesapla.",
+              "strategy": "Üssün tabanını ve aynı öncelikteki işlemlerin yönünü belirle.",
+              "steps": [
+                {
+                  "label": "Üs kapsamını koru",
+                  "expression": "−4²=−16",
+                  "explanation": "Eksi işareti parantezle tabana alınmamıştır."
+                },
+                {
+                  "label": "Soldan sağa ilerle",
+                  "expression": "18÷3×2=6×2=12",
+                  "explanation": "Çarpma ve bölme aynı önceliktedir."
+                },
+                {
+                  "label": "Son toplam",
+                  "expression": "−16+12=−4",
+                  "explanation": "İşaretli sayıları en son toplarız."
+                }
+              ],
+              "answer": "−4",
+              "check": "(−4)² yazılmış olsaydı farklı bir ifade ve 28 sonucu olurdu.",
+              "pitfall": "Üs tabanını kendiliğinden parantez içine alma."
+            },
+            {
+              "title": "Sadeleşen ifadenin yasak değeri",
+              "prompt": "(5x+15)/(x+3) ifadesini sadeleştir ve geçerli x değerlerini belirt.",
+              "strategy": "Önce paydayı sıfır yapan değeri dışla.",
+              "steps": [
+                {
+                  "label": "Başlangıç koşulu",
+                  "expression": "x≠−3",
+                  "explanation": "Payda sıfır olamaz."
+                },
+                {
+                  "label": "Ortak çarpanı göster",
+                  "expression": "5(x+3)/(x+3)=5",
+                  "explanation": "x+3 sıfır olmadığı için sadeleşebilir."
+                }
+              ],
+              "answer": "x≠−3 için değer 5’tir.",
+              "check": "x=0 yazınca 15/3=5; x=−3 yazınca başlangıç ifadesi tanımsızdır.",
+              "pitfall": "Sonucun sabit olması bütün gerçek x değerlerine izin vermez."
+            },
+            {
+              "title": "Farklı rakamlarla en büyük değer",
+              "prompt": "a ve b farklı rakamlar, a≠0. 3a−b ifadesinin en büyük değeri kaçtır?",
+              "strategy": "Artı katsayılı rakamı büyüt, eksi katsayılı rakamı küçült; farklılığı kontrol et.",
+              "steps": [
+                {
+                  "label": "İzinli adayları seç",
+                  "expression": "a=9, b=0",
+                  "explanation": "Sıfır bir rakamdır ve a’dan farklıdır; a sıfır değildir."
+                },
+                {
+                  "label": "Değeri hesapla",
+                  "expression": "3×9−0=27",
+                  "explanation": "a en büyük, b en küçük izinli değerdedir; başka seçim sonucu büyütemez."
+                }
+              ],
+              "answer": "27",
+              "check": "a=9,b=1 sonucu 26 olur; b’nin pozitif olma koşulu verilmemiştir.",
+              "pitfall": "Rakam ile pozitif rakam aynı küme değildir."
+            }
+          ],
+          "source": "MEBİ TYT Matematik Konu Özetleri PDF s.11–13 (basılı 9–11); OGM Video Ders Notu Temel Kavramlar–Sayılar PDF s.1–2; Aurelia Temel Kavramlar kopya kağıdı s.1–4 ile karşılaştırılmış özgün anlatım, modeller ve çözümler. Resmî soru değildir."
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-geo-acilar-kaynak-pekitirme-032",
+        "after": "39b393addd64d68c12ad7e3859488ce792da8fe3b43541809c624dddd9534db0",
+        "prior": {
+          "sections": [
+            {
+              "title": "Nesneyi uçlarından ayır",
+              "text": [
+                "Nokta konumdur. Doğru iki yönde sınırsız; [AB ışını A başlangıçlı ve B yönünde sınırsız; [AB] iki uçla sınırlıdır."
+              ]
+            },
+            {
+              "title": "Köşe ve ölçü",
+              "text": [
+                "∠ABC’de köşe B, kollar [BA ve [BC. Dar 0°–90° ve geniş 90°–180° aralıklarında uçlar dahil değil; dik 90°, doğru 180°, tam 360°."
+              ]
+            },
+            {
+              "title": "Toplam ilişkileri",
+              "text": [
+                "Tümler 90°, bütünler 180°. Komşuluk tek başına toplam vermez; ortak olmayan kollar zıt ışınsa doğrusal çift ve 180° toplamı oluşur."
+              ]
+            },
+            {
+              "title": "Ters ve paralel açıları",
+              "text": [
+                "Aynı kesişimde ters açılar eşittir; paralellik gerekmez. Paralellerde yöndeş/iç ters/dış ters eşit, aynı yan iç açıların toplamı180°dir."
+              ]
+            },
+            {
+              "title": "Denklemden soruya dön",
+              "text": [
+                "x’i bulduktan sonra açı ifadesine koy; komşu soruluyorsa180°den çıkar. Görünüşten ölçü veya paralellik çıkarma; verilen koşulu kullan."
+              ]
+            },
+            {
+              "title": "Açıortaydan dik açıya",
+              "text": [
+                "α ile 180°−α doğrusal çiftse açıortaylar arasındaki açı α/2+(180°−α)/2=90°.",
+                "Paralellik kalkınca kesişimler arasındaki yöndeş ve iç ters eşitliğini kullanma. Aynı kesişimdeki tersler eşit kalır."
+              ]
+            }
+          ],
+          "examples": [
+            {
+              "title": "Doğrusal çiftte toplamın nedenini söyle",
+              "prompt": "Doğrusal çift oluşturan iki komşu açının ölçüleri x° ve (2x+12)°dir. İki açı kaç derecedir?",
+              "steps": [
+                "Koşulu adlandır: Doğrusal çiftte ortak olmayan kollar zıt ışındır; iki ölçünün toplamı180°dir.",
+                "Denklemi çöz: x+(2x+12)=180, 3x=168 ve x=56 bulunur.",
+                "Ölçülere dön: Diğer açı 2·56+12=124°dir; iki açı 56° ve 124°dir."
+              ],
+              "answer": "56° ve 124°. 56+124=180 ve 124=2·56+12 koşulları sağlanır."
+            },
+            {
+              "title": "İç ters açıları eşitle",
+              "prompt": "Paralel d₁ ve d₂ doğrularını bir kesen kesiyor. İç ters iki açının ölçüleri (3x+10)° ve (5x−20)°dir. x ve ortak açı ölçüsü nedir?",
+              "steps": [
+                "Koşulu yaz: İç ters ve paralellik nedeniyle3x+10=5x−20.",
+                "Bilinmeyeni bul: 30=2x ve x=15.",
+                "İki ifadeyi denetle: 3·15+10=55° ve 5·15−20=55°dir."
+              ],
+              "answer": "x=15; ortak açı 55°dir. Her iki ifade55° verir; x=15 açı ölçüsüyle karıştırılmaz."
+            },
+            {
+              "title": "Bütünler açıların iki açıortayını birleştir",
+              "prompt": "Aynı doğru üzerindeki bitişik açılar 2x+14 ve 3x+6 derecedir. İç açıortayları arasındaki açı kaç derecedir?",
+              "steps": [
+                "Denklem: Bitişik açıların toplamı 180°.",
+                "Yarılar: İki açıortay kendi açısını iki eş parçaya böler.",
+                "Açıortaylar arası: Açıortaylar ortak kolun farklı taraflarında olduğu için iki yarıyı topla."
+              ],
+              "answer": "90°. Açıların tam ölçüleri 78° ve 102°. Toplamı önce ikiye bölmek de 180°/2=90° verir."
+            }
+          ]
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "detail-194",
+        "after": "147cd305044b670c8c25cffc902138ef7e8d09fb2529b03b099e668532192d78",
+        "prior": {
+          "sections": [
+            {
+              "title": "Rakam yazım aracıdır, sayı bir değerdir",
+              "text": [
+                "Onluk sistemde kullanılan on rakam 0, 1, …, 9’dur. 47 iki rakamla yazılmış bir sayıdır; 4 ve 7 onun rakamlarıdır. 47’de 4’ün sayı değeri 4, basamak değeri 40’tır. ab iki basamaklı sayısı 10a+b anlamına gelir; a ve b’nin çarpımı değildir. a sıfır olamaz, b sıfır olabilir. Bir soruda ‘a bir rakamdır’ deniyorsa a için 12 veya −1 seçilemez."
+              ]
+            },
+            {
+              "title": "Sayı kümelerinde önce değeri hesapla",
+              "text": [
+                "Bu anlatımda ℕ={0,1,2,…}; sayma sayıları 1’den başlar. ℤ negatif tam sayıları da kapsar. ℚ, a ve b tam sayı, b≠0 olmak üzere a/b biçimindeki sayılardır. ℝ ise rasyonel ve irrasyonel gerçek sayıları birlikte içerir. ℕ⊂ℤ⊂ℚ⊂ℝ olduğundan 6 tek bir kümeye sıkışmaz: dört kümeye de aittir."
+              ]
+            },
+            {
+              "title": "İşlem özellikleri hangi dönüşüme izin verir?",
+              "text": [
+                "Toplamada ve çarpmada sıra değişebilir: a+b=b+a, ab=ba. Gruplama da değişebilir: (a+b)+c=a+(b+c). Çıkarma ve bölme için bu özellikler genel olarak yoktur: 8−3 ile 3−8 farklıdır; 12/(3/2)=8 iken (12/3)/2=2’dir."
+              ]
+            },
+            {
+              "title": "İşlem önceliği ve eksi işaretinin kapsamı",
+              "text": [
+                "Önce parantezin içindeki işlem, sonra üs ve kökün kapsadığı işlem, sonra çarpma-bölme, en son toplama-çıkarma yapılır. Aynı öncelikte soldan sağa ilerlenir: 24÷4×3=6×3=18. Çarpmayı bölmenin önüne geçirmek farklı bir ifade hesaplamaktır. Uzun kesir çizgisi de parantez gibi payın ve paydanın tamamını gruplar."
+              ]
+            },
+            {
+              "title": "Tanım koşulunu sadeleştirerek silemezsin",
+              "text": [
+                "Bir kesirde payda sıfır olamaz. (3x−6)/(x−2) ifadesinde daha işlem yapmadan x≠2 yazılır. Pay 3(x−2) olduğundan izinli değerlerde sonuç 3’tür. Fakat x=2’yi sonradan eklemek başlangıçtaki 0/0’a değer vermek olur. Sadeleşen ortak çarpan, başlangıç koşulunu ortadan kaldırmaz."
+              ]
+            },
+            {
+              "title": "Sayı seçerken bütün koşulları aynı anda uygula",
+              "text": [
+                "a+b=12 ve a,b pozitif tam sayıysa a=1, b=11 seçilebilir; sıfır kullanılamaz. ‘Farklı’ koşulu da varsa a=b=6 yasaktır. En küçük veya en büyük değer, sayının ait olduğu kümeye bağlıdır. Pozitif gerçek sayılarda a değeri sıfıra yaklaşabilir ama sıfır olamaz; bu durum pozitif tam sayıdaki en küçük değer 1 ile aynı değildir."
+              ]
+            },
+            {
+              "title": "Bir örnek ispat değildir; karşı örnek yargıyı çürütür",
+              "text": [
+                "‘İki irrasyonelin toplamı daima irrasyoneldir’ yanlıştır: √2+(−√2)=0. ‘Rasyonel ile irrasyonelin çarpımı irrasyoneldir’ yargısında rasyonelin sıfır olmadığı koşulu gerekir; 0×√2=0’dır. Bir doğru örnek bütün olasılıkları ispatlamaz, fakat geçerli bir karşı örnek ‘her zaman’ iddiasını çürütür."
+              ]
+            }
+          ],
+          "cautions": [
+            "Bir sayıya en dar kümeyi vermek, üst kümelere ait olmadığı anlamına gelmez.",
+            "Üs tabanını kendiliğinden parantez içine alma.",
+            "Sonucun sabit olması bütün gerçek x değerlerine izin vermez.",
+            "Rakam ile pozitif rakam aynı küme değildir."
+          ],
+          "examples": [
+            {
+              "title": "Önce değer, sonra küme",
+              "prompt": "A=√64, B=−9/3 ve C=0,121212… olsun. Her biri için en dar sayı kümesini belirle; C’de 12 sürekli tekrar ediyor.",
+              "steps": [
+                "Kök ve bölümü hesapla · A=8, B=−3 · 8 doğal sayıdır. −3 tam sayıdır; doğal sayı değildir.",
+                "Devri kesre dönüştür · 100C−C=12 → C=12/99=4/33 · Sonsuz tekrar eden ondalık rasyoneldir; bu kesir tam sayı değildir."
+              ],
+              "answer": "A için ℕ, B için ℤ, C için ℚ en dar kümelerdir. Üçü de ℝ içindedir; A ve B aynı zamanda ℚ içindedir."
+            },
+            {
+              "title": "Öncelik ve parantez birlikte",
+              "prompt": "−4²+18÷3×2 işlemini hesapla.",
+              "steps": [
+                "Üs kapsamını koru · −4²=−16 · Eksi işareti parantezle tabana alınmamıştır.",
+                "Soldan sağa ilerle · 18÷3×2=6×2=12 · Çarpma ve bölme aynı önceliktedir.",
+                "Son toplam · −16+12=−4 · İşaretli sayıları en son toplarız."
+              ],
+              "answer": "−4 (−4)² yazılmış olsaydı farklı bir ifade ve 28 sonucu olurdu."
+            }
+          ],
+          "source": "MEBİ TYT Matematik Konu Özetleri PDF s.11–13 (basılı 9–11); OGM Video Ders Notu Temel Kavramlar–Sayılar PDF s.1–2; Aurelia Temel Kavramlar kopya kağıdı s.1–4 ile karşılaştırılmış özgün anlatım, modeller ve çözümler. Resmî soru değildir."
+        }
+      }
+    ]
+  }
+]

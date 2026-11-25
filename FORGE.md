@@ -852,8 +852,8 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
-| TYT Matematik | 45 / 45 | 45 · 184 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
-| TYT Geometri | 19 / 19 | 19 · 176 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
+| TYT Matematik | 45 / 45 | 45 · 186 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
+| TYT Geometri | 19 / 19 | 19 · 177 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 283 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 155 | 515 / 515 · %100,00 | 11 / 36 · %30,56 | 54 soru · 9 kitapçık | 0 |
@@ -867,7 +867,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2339** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2342** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
@@ -3643,3 +3643,13 @@ imported into the public repository or synchronized.
 Publication completed: [release workflow](https://github.com/kaansavukduran/yksmania/actions/runs/43468351719)
 passed and published `v0.1.0-alpha.1`. Five binaries and signature/source/checksum
 evidence are uploaded. All four jobs in the final package CI run passed.
+
+## TYT Matematik ve Geometri · 0.149.0 adayı
+
+Temel Kavramlar’da sayı sırası ile sıfıra uzaklık aynı sayı doğrusundan okunuyor. Açık ve kapalı tam sayı sınırları özgün çözümlü örnekte ve Kopya Kağıdı’nda çiziliyor. Doğruda Açılar’ın mevcut açıortay modeli konu, örnek ve ayrı Kopya Kağıdı’nda ortak. Öğretim ekleri güncel 5.1 kaynaklarının ilgili sayfalarıyla karşılaştırıldı.
+
+Dik üçgende trigonometrik oranlar için [Khan Academy Türkçe videosu](https://www.youtube.com/watch?v=eUP9gsDzmuQ) eklendi. [Konu kapsamı](docs/KONU_KAPSAMI.md) 510 konuya bağlı video gösteriyor.
+
+TYT Matematik ve Geometri kaynak kâğıdı klasörleri 38 ve 32 dosya içeriyor. 70 dosya kimliği özel kanonik defterle eşleşti. 68 dosyanın boyutu kayıtlı envanterden farklı. Sonraki uygulama eşlemeleri Tek Çift Pozitif Negatif Sayılar fiziksel 5 ve 10. sayfalardaki bölüm koşulları ve Üçgende Açılar fiziksel 8. sayfadaki açıortay ile kenarortay ayrımı.
+
+Adayda TypeScript, 23 birim, 7 Chromium ve 323 çevrimdışı varlık kontrolü geçti. 320 px, %200 arayüz ve %150 yazı ayarında normal anlatım, çözümlü örnek ve Kopya Kağıdı test edildi. İlk testlerin başlık ve tek video paneli beklentileri gerçek ekran davranışına göre düzeltildi ve aynı akışlar yeniden geçti.

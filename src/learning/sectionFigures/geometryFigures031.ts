@@ -64,6 +64,36 @@ const numberLine = (
   ]),
 ];
 
+export const linearPairBisectors031 = {
+  caption:
+    "Bir doğru üzerinde komşu bütünler iki açının iç açıortaylarını çiz. Sürgüyle açıyı değiştir: iki açıortay arasındaki açı hep 90° kalır.",
+  alt: "Yatay bir doğru üzerindeki O noktasından çıkan ışın iki bütünler açı oluşturur; iki açıortay kesikli çizilmiş ve aralarında dik açı işareti var.",
+  param: { label: "α", min: 30, max: 150, step: 2, init: 110, unit: "°" },
+  draw: (a) => {
+    const O = v(0, 0);
+    const E = v(3.2, 0);
+    const W = v(-3.2, 0);
+    const R = pol(3.2, a);
+    const b1 = pol(2.6, a / 2);
+    const b2 = pol(2.6, (a + 180) / 2);
+    return {
+      els: [
+        line(W, E, { ext: 0.2 }),
+        ray(O, R, { ext: 0.2 }),
+        ray(O, b1, { tone: "a", dash: true, ext: 0.1 }),
+        ray(O, b2, { tone: "b", dash: true, ext: 0.1 }),
+        ang(O, E, b1, `${a / 2}°`, { r: 40, tone: "a" }),
+        ang(O, b1, R, undefined, { r: 40, tone: "a" }),
+        ang(O, R, b2, `${(180 - a) / 2}°`, { r: 52, tone: "b" }),
+        ang(O, b2, W, undefined, { r: 52, tone: "b" }),
+        right(O, b1, b2, "ink"),
+        pt(O, "O", "s"),
+      ],
+      readout: [`${a / 2}° + ${(180 - a) / 2}° = 90°`],
+    };
+  },
+} satisfies FigureDef;
+
 const temelAcilar: Record<string, FigureDef> = {
   "Şekli okumaya isimlerden başla": {
     caption:
@@ -251,35 +281,7 @@ const temelAcilar: Record<string, FigureDef> = {
       };
     },
   },
-  "Açıortay ve yardımcı çizgiyle yükü azalt": {
-    caption:
-      "Bir doğru üzerinde komşu bütünler iki açının iç açıortaylarını çiz. Sürgüyle açıyı değiştir: iki açıortay arasındaki açı hep 90° kalır.",
-    alt: "Yatay bir doğru üzerindeki O noktasından çıkan ışın iki bütünler açı oluşturur; iki açıortay kesikli çizilmiş ve aralarında dik açı işareti var.",
-    param: { label: "α", min: 30, max: 150, step: 2, init: 110, unit: "°" },
-    draw: (a) => {
-      const O = v(0, 0);
-      const E = v(3.2, 0);
-      const W = v(-3.2, 0);
-      const R = pol(3.2, a);
-      const b1 = pol(2.6, a / 2);
-      const b2 = pol(2.6, (a + 180) / 2);
-      return {
-        els: [
-          line(W, E, { ext: 0.2 }),
-          ray(O, R, { ext: 0.2 }),
-          ray(O, b1, { tone: "a", dash: true, ext: 0.1 }),
-          ray(O, b2, { tone: "b", dash: true, ext: 0.1 }),
-          ang(O, E, b1, `${a / 2}°`, { r: 40, tone: "a" }),
-          ang(O, b1, R, undefined, { r: 40, tone: "a" }),
-          ang(O, R, b2, `${(180 - a) / 2}°`, { r: 52, tone: "b" }),
-          ang(O, b2, W, undefined, { r: 52, tone: "b" }),
-          right(O, b1, b2, "ink"),
-          pt(O, "O", "s"),
-        ],
-        readout: [`${a / 2}° + ${(180 - a) / 2}° = 90°`],
-      };
-    },
-  },
+  "Açıortay ve yardımcı çizgiyle yükü azalt": linearPairBisectors031,
   "Denklemden sonra şekle geri dön": {
     caption:
       "Önce ilişkiyi söyle, sonra denklemi kur, en sonda x'i istenen ifadeye geri koy. Bulduğun x tek başına açı değildir.",

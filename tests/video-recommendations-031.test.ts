@@ -79,7 +79,12 @@ describe("031 source-bound optional video recommendations", () => {
             "tyt-mat-uslu-sayilar-kaynak-039",
           ].includes(id),
       ),
-    ).toHaveLength(492);
+    ).toHaveLength(493);
+    expect(getLessonVideos031("tyt-geo-trigonometrik-oranlar-040").recommended).toEqual([{
+      channel: "Khan Academy Türkçe",
+      topics: ["Dik üçgende trigonometrik oranlar"],
+      url: "https://www.youtube.com/watch?v=eUP9gsDzmuQ",
+    }]);
     expect(foundationIds.every((id) => seen.has(id))).toBe(true);
     expect(seen.has("tyt-mat-ebob-ekok-kaynak-034")).toBe(true);
     expect(seen.has("tyt-mat-rasyonel-kaynak-035")).toBe(true);

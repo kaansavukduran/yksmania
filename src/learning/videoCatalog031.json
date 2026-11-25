@@ -16609,5 +16609,19 @@
         "url": "https://www.youtube.com/watch?v=uWP54kF6REY"
       }
     ]
+  },
+  {
+    "subjectId": "tyt-geometri",
+    "topic": "Dik üçgende trigonometrik oranlar",
+    "lessonIds": [
+      "tyt-geo-trigonometrik-oranlar-040"
+    ],
+    "recommended": [
+      {
+        "channel": "Khan Academy Türkçe",
+        "url": "https://www.youtube.com/watch?v=eUP9gsDzmuQ"
+      }
+    ],
+    "alternatives": []
   }
 ]

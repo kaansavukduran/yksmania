@@ -1,5 +1,5 @@
 import { poly, pt, seg, txt, v, vec, type El, type FigureDef, type Tone } from "./figureKit";
-import { cell, nf, numberLine, pad, rect, sup, token, zs } from "./mathFigures060TytKit";
+import { cell, interval, nf, numberLine, pad, rect, sup, token, zs } from "./mathFigures060TytKit";
 
 /*
  * TYT Matematik (Forge060) · temel kavramlar, tek–çift ve işaret, asal
@@ -58,6 +58,49 @@ const numberSets: FigureDef = {
     els.push(pt(v(x, y), s, "s", step === 4 ? "warn" : "ink"));
     els.push(...pad(-0.3, 7.9, 15.0, -0.4));
     return { els, readout: [line, "En dar kümeyi bilmek, onu içeren kümeleri dışlamaz."] };
+  },
+};
+
+const compareOnNumberLine: FigureDef = {
+  caption: "A, −3’te sabit. B’yi hareket ettirerek sayıların soldan sağa sırasını ve sıfıra uzaklıklarını karşılaştır.",
+  alt: "Sayı doğrusunda A, −3’te sabit. B seçilen sayıda gösteriliyor. İki nokta örtüşürse A = B olarak yazılıyor.",
+  param: { label: "B’nin değeri", min: -6, max: 6, step: 1, init: 2 },
+  draw: (b) => {
+    const a = -3;
+    const relation = a < b ? "<" : a > b ? ">" : "=";
+    const els = numberLine(-6, 6, 1, 0, [-6, -4, -2, 0, 2, 4, 6]);
+    if (a === b) {
+      els.push(pt(v(a, 0), "A = B", "n", "a"));
+    } else {
+      els.push(pt(v(a, 0), "A", "n", "a"), pt(v(b, 0), "B", "n", "c"));
+    }
+    els.push(...pad(-6.8, 0.9, 6.9, -0.6));
+    return {
+      els,
+      readout: [
+        `Sayı sırası: ${zs(a)} ${relation} ${zs(b)}.`,
+        `Sıfıra uzaklık: A için ${Math.abs(a)}, B için ${Math.abs(b)} birim.`,
+      ],
+    };
+  },
+};
+
+const integerBounds: FigureDef = {
+  caption: "−4≤x<2 aralığında sol uç dahil, sağ uç hariç. Çizgi aralıktaki gerçek sayıları, üst noktalar uygun tam sayıları gösterir.",
+  alt: "−4’te dolu ve 2’de boş uçlu aralık. −4, −3, −2, −1, 0 ve 1’in üzerinde birer tam sayı işareti var.",
+  draw: () => {
+    const lower = -4;
+    const upper = 2;
+    const integers = Array.from({ length: upper - lower }, (_, offset) => lower + offset);
+    return {
+      els: [
+        ...numberLine(-5, 3, 1, 0, [-5, ...integers, upper, 3]),
+        ...interval(lower, upper, 1, 0, "a", false, true),
+        ...integers.map((n) => pt(v(n, 0.45), undefined, "n", "c")),
+        ...pad(-5.6, 0.9, 3.7, -0.6),
+      ],
+      readout: [`${integers.map(zs).join(", ")} → ${integers.length} tam sayı.`],
+    };
   },
 };
 
@@ -579,6 +622,8 @@ export const mathFigures060TytNumbers: Record<string, Record<string, FigureDef>>
   "temel-kavramlar": {
     "Rakam yazım aracıdır, sayı bir değerdir": placeValue,
     "Sayı kümelerinde önce değeri hesapla": numberSets,
+    "Sayı doğrusunda sırayı ve uzaklığı ayır": compareOnNumberLine,
+    "Açık ve kapalı sınırdan tam sayıları bul": integerBounds,
     "İşlem önceliği ve eksi işaretinin kapsamı": orderOps,
     "Tanım koşulunu sadeleştirerek silemezsin": domainHole,
   },

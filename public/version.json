@@ -1,8 +1,8 @@
 {
-  "version": "0.148.0",
+  "version": "0.149.0",
   "channel": "alpha",
   "notes": {
-    "tr": "TYT ve AYT Sayısal konu takip tablosu, yerleşik anlatım ve Kopya Kağıtlarını kaynak aktarımından ayrı gösteriyor. İki üçgen başlığının ortak videosu doğru konu etiketleriyle açılıyor.",
-    "en": "The coverage report separates built-in theory and cheat sheets from source transfers. Both triangle topics now label their shared video."
+    "tr": "Temel Kavramlar’da sayı sırası, uzaklık ve tam sayı sınırları sayı doğrusunda görülüyor. Doğruda Açılar’da komşu doğrusal çift ve açıortaylar etkileşimli çizimde inceleniyor.",
+    "en": "The number line shows order, distance and integer bounds. An interactive diagram shows angle bisectors of a linear pair."
   }
 }

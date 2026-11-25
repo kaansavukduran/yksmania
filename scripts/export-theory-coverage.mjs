@@ -85,10 +85,10 @@ try {
     sourceProgress.reduce((n, row) => n + row.sheetsDone, 0) + " / " + sourceProgress.reduce((n, row) => n + row.sheets, 0),
   ].join(" | ") + " |", "",
   "Anlatım, örnek, Kopya Kağıdı ve video sütunları uygulamadaki mevcut içeriği gösterir. Kaynak kağıdı aktarımı ayrı paydalıdır ve mevcut [kaynak ilerleme tablosundan](ILERLEME.md) gelir. Her konunun kaynakla karşılaştırılması ve öğretim kalitesi ayrıca doğrulanır.",
-  "",
-  "## Eşlemesi açık konular",
   "");
-  for (const row of rows.filter((row) => !row.sections || !row.examples || !row.sheetSections || !hasVideo(row))) {
+  const unmatchedTopics = rows.filter((row) => !row.sections || !row.examples || !row.sheetSections || !hasVideo(row));
+  if (unmatchedTopics.length) table.push("## Eşlemesi açık konular", "");
+  for (const row of unmatchedTopics) {
     const gaps = [
       !row.sections && "anlatım", !row.examples && "çözümlü örnek",
       !row.sheetSections && "Kopya Kağıdı", !hasVideo(row) && "video",

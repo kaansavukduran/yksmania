@@ -27,6 +27,7 @@ import {
   type FigureDef,
   type V,
 } from "./figureKit";
+import { linearPairBisectors031 } from "./geometryFigures031";
 import { prism, proj, pyramid, regularBase, solid, type P3 } from "./solidKit";
 
 const labelAll = (
@@ -631,6 +632,18 @@ const piramitler: Record<string, FigureDef> = {
 };
 
 const kaynakPekistirme: Record<string, FigureDef> = {
+  "Doğrusal çiftte açıortaylar": {
+    ...linearPairBisectors031,
+    caption: "Ortak kolu çevir. Dış kollar zıt yönlerde kaldığında açıortayların arasındaki ölçüyü izle.",
+    param: { ...linearPairBisectors031.param, label: "Sağ koldan ölçülen açı", init: 78 },
+    draw: (angle) => {
+      const frame = linearPairBisectors031.draw(angle);
+      return {
+        ...frame,
+        readout: [`Doğrusal çift: ${angle}° + ${180 - angle}° = 180°.`, ...frame.readout],
+      };
+    },
+  },
   "Açı adından köşeye ve kollara git": {
     caption:
       "Kolları uzat ya da kısalt: ∠ABC'nin ölçüsü değişmez. Ölçü kolların uzunluğuna değil, bir koldan ötekine dönüşe bağlıdır.",

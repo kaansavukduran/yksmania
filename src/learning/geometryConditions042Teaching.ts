@@ -14,6 +14,7 @@ export const lineAngles042: Supplement = {
   sections: [
     {
       title: "Komşu açıların dış kollarını kontrol et",
+      figureTitle: "Doğrusal çiftte açıortaylar",
       paragraphs: [
         "Yan yana duran 30° ve 40° iki açı aralarında ortak kol paylaşabilir. Dış kolları zıt yönlü değilse 70° toplamı çizime uygundur. 180° beklemek için dış kolların aynı doğru üzerinde ters yönlere uzandığını görmen ya da bu bilgiyi soruda okuman gerekir. 90° toplamı veren iki açı tümlerdir ve ortak köşeleri olmayabilir.",
         "Bir doğrusal çiftin açıları α ve 180°−α olsun. İç açıortaylar ortak kolun iki tarafında α/2 ile (180°−α)/2 kadar gider. Toplam 90° eder. İki açı 60° ve 120° olduğunda 30°+60°=90° görürsün. Açılar yalnız komşu olup doğrusal çift kurmuyorsa aynı sonuç çıkmaz.",
@@ -47,6 +48,7 @@ export const lineAngles042: Supplement = {
         {
           label: "Açıortaylar arası",
           expression: "39°+51°=90°",
+          figureTitle: "Doğrusal çiftte açıortaylar",
           explanation:
             "Açıortaylar ortak kolun farklı taraflarında olduğu için iki yarıyı topla.",
         },
@@ -73,6 +75,7 @@ export const lineAngles042: Supplement = {
   sheet: [
     {
       title: "Açıortaydan dik açıya",
+      figureTitle: "Doğrusal çiftte açıortaylar",
       text: [
         "α ile 180°−α doğrusal çiftse açıortaylar arasındaki açı α/2+(180°−α)/2=90°.",
         "Paralellik kalkınca kesişimler arasındaki yöndeş ve iç ters eşitliğini kullanma. Aynı kesişimdeki tersler eşit kalır.",
