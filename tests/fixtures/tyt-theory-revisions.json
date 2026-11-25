@@ -7658,5 +7658,287 @@
         }
       }
     ]
+  },
+  {
+    "version": "0.161.0",
+    "receipts": [
+      {
+        "surface": "guides",
+        "id": "alan-donusumleri",
+        "after": "e8db8d8608883b12d5bb51288ef42db44dacee936df360d6e46da586a404503a",
+        "prior": {
+          "sections": [
+            {
+              "title": "Alan, kaplanan bölgenin ölçüsüdür",
+              "paragraphs": [
+                "Uzunluk bir çizginin, çevre sınırın toplam uzunluğunun, alan ise düzlemde kaplanan bölgenin ölçüsüdür. Dikdörtgende 4 cm ve 7 cm kenarların alanı 28 cm², çevresi 22 cm olur. 4 ile 7’yi toplayıp alan bulamayız. Şeklin eğik görünmesi alanın bulunamayacağı anlamına gelmez; uygun bir taban ve ona ait dik uzaklık aranır.",
+                "Uzunluklar aynı birime getirildikten sonra çarpılır. 1 m=100 cm olduğundan 1 m²=10 000 cm²’dir; yalnız 100 ile çarpmak alan dönüşümünü tamamlamaz. Örneğin 50 cm ile 0,8 m kenarlı dikdörtgenin alanı 50·80=4000 cm²=0,4 m². Birim kareleri sayma fikri, formüllerde neden iki uzunluğun çarpıldığını açıklar."
+              ]
+            },
+            {
+              "title": "Tabanı seçtiğinde yüksekliği de yeniden seçmiş olursun",
+              "paragraphs": [
+                "ABC üçgeninde BC’yi taban seçersek yükseklik, A’dan BC doğrusuna indirilen dikmenin uzunluğudur. Aynı şekil için AB başka bir taban olabilir; bu durumda yükseklik C’den AB doğrusuna olan dik uzaklıktır. Her kenar kendi karşısındaki köşenin o kenar doğrusuna uzaklığıyla eşleştirilmelidir. Bir kenarın yanına yazılmış her sayı yükseklik değildir.",
+                "Dar açılı üçgende yüksekliklerin ayakları kenarların üzerinde olabilir. Geniş açılı üçgende seçilen tabana ait dikmenin ayağı kenarın uzantısına düşebilir; alan formülü değişmez. Dik üçgende dik kenarlardan biri taban, diğeri onun yüksekliği olur. Eğik kenarı yüksekliğin yerine kullanmak, dik uzaklıkla yan uzunluğu karıştırmaktır. Çizim ölçekli değilse dikliği görünüşten değil verilen işaret ve koşullardan çıkar."
+              ]
+            },
+            {
+              "title": "Parçaları taşırken hangi işlemler alanı korur?",
+              "paragraphs": [
+                "Bir parçayı düzlemde kaydırmak, döndürmek veya yansıtmak uzunluklarını ve alanını değiştirmez; bu işlemler parçanın eş bir görüntüsünü oluşturur. Parçaları boşluksuz ve üst üste binmeden yeniden birleştirirsek toplam alan aynı kalır. Bir parçayı büyütmek, küçültmek, silmek veya aynı bölgeyi iki kez saymak bu gerekçeyi bozar.",
+                "Modelde paralelkenarın bir yanındaki üçgen karşı boşluğa taşınır. Taşınan üçgenin büyüklüğü değişmez; kalan parçayla birlikte tabanı b, yüksekliği h olan dikdörtgen olur. Modelde tabanı veya yüksekliği değiştirmek yeni bir şekil üretir; bununla yalnız taşıma adımını aynı şey sanma. Bir şekilden diğerine geçerken alanın korunup korunmadığını her parçayı izleyerek denetle."
+              ]
+            },
+            {
+              "title": "Paralelkenarda alan: eğikliği değil dik uzaklığı kullan",
+              "paragraphs": [
+                "Paralelkenarın karşılıklı kenarları paraleldir. Seçilen taban boyunca iki paralel doğru arasındaki dik uzaklık sabittir. Kesip yeniden yerleştirme, A=b·h formülünü dikdörtgene bağlar. Yan kenar 7 cm ve taban 10 cm verildiğinde alanı 70 cm² diyemeyiz; yan kenarın tabana dik olduğu veya ona ait uygun yüksekliğin verildiği bilinmelidir.",
+                "İki komşu kenar a,b ve aralarındaki açı α biliniyorsa ilgili yükseklik b·sinα olur; A=a·b·sinα. Açının hangi iki kenar arasında olduğunu denetle. Dikdörtgende α=90° olduğundan sinα=1 ve a·b elde edilir. Taban ve dik yükseklik aynı kaldıkça paralelkenarın eğiminin değişmesi alanı değiştirmez; çevre ise değişebilir."
+              ]
+            },
+            {
+              "title": "Üçgen alanındaki yarım nereden gelir?",
+              "paragraphs": [
+                "Bir üçgenin eş bir kopyası uygun biçimde döndürülüp yanına getirildiğinde tabanı b, dik yüksekliği h olan paralelkenar oluşur. Toplam alan b·h, iki eş üçgenin her birinin alanı b·h/2 olur. 1/2 katsayısı bir ezber düzeltmesi değil, iki eş parçanın aynı bütünü paylaşmasının sonucudur. Geniş açılı üçgende de taban doğrusu ve dik uzaklık kullanılarak aynı formül geçerlidir.",
+                "ABC üçgeninin BC=a, CA=b, AB=c kenarlarına ait dik yükseklikleri sırasıyla hₐ,hᵦ,h𝒸 olsun. Aynı alan A=a·hₐ/2=b·hᵦ/2=c·h𝒸/2 ile hesaplanır. Dik üçgende iki dik kenarın çarpımının yarısı kullanılabilir. İki kenar b,c ve aralarındaki açı α biliniyorsa A=b·c·sinα/2; arada olmayan açı bu formüle doğrudan yazılamaz."
+              ]
+            },
+            {
+              "title": "Alan oranını bulurken ortak olan büyüklüğü sadeleştir",
+              "paragraphs": [
+                "A ve D köşelerinin BC doğrusuna olan dik uzaklıkları h₁,h₂ ise ABC ve DBC üçgenleri aynı BC tabanını paylaşır: alan oranı h₁/h₂’dir. A ile D aynı paralel üzerinde ve bu paralel BC’ye paralelse yükseklikler eşittir; alanlar da eşittir. İki şeklin eş alanlı olması tek başına eş veya benzer olduklarını kanıtlamaz.",
+                "ABC üçgeninde D, BC üzerinde bir nokta olsun. ABD ve ADC üçgenlerinin A’dan BC doğrusuna yükseklikleri aynıdır; A(ABD)/A(ADC)=BD/DC. Örneğin BD:DC=2:3 ise alanlar da 2:3 oranında paylaşılır. Büyük üçgenin alanını küçük parçalara bölerken oran paylarının toplamını kullan: toplam 5 paydır. Tabanların aynı doğru üzerinde oluşu ortak yükseklik gerekçesi için önemlidir."
+              ]
+            },
+            {
+              "title": "Kenarortay ve ağırlık merkezinde eş alanlar",
+              "paragraphs": [
+                "Bir kenarortay, köşeyi karşı kenarın orta noktasına birleştirir. BC’nin orta noktası D ise BD=DC; ortak yükseklikten ABD ve ADC eş alanlıdır. Kenarortay iki küçük üçgenin her durumda eş üçgenler olduğunu söylemez; kenar ve açıları ayrıca denetlemeden eşlik sonucu çıkarılmaz.",
+                "Üç kenarortay ağırlık merkezinde kesişir. Kenarların orta noktalarıyla birlikte çizilen üç kenarortay, başlangıç üçgenini altı eş alanlı küçük üçgene ayırır. Bu eş alanlı parçalar genel bir üçgende aynı biçimde olmak zorunda değildir. Toplam alan 72 birim² ise her küçük parçanın alanı 12 birim² olur; şeklin kaç küçük parçayı birleştirdiğini sayarak daha büyük bölgeler bulunabilir."
+              ]
+            },
+            {
+              "title": "Benzerlikte uzunluk oranı ile alan oranını ayır",
+              "paragraphs": [
+                "Benzer iki üçgende karşılıklı uzunluklar k katına çıkıyorsa yükseklik de k katına çıkar. Alan b·h/2 olduğundan alan k² katına çıkar. Uzunluk oranı 3/2 ise alan oranı 9/4; alan oranı 25/9 ise pozitif uzunluk oranı 5/3’tür. Yalnız bir tabanın üç kat olması, yükseklik sabitken alanı üç kat yapar; iki şeklin benzerliği verilmeden otomatik dokuz kat sonucu çıkarma.",
+                "Eşlik, karşılıklı uzunlukların ve açıların korunduğu daha özel durumdur; benzerlik oranı 1 olan benzer şekiller eştir. Alanların eşitliği tek başına ne eşlik ne benzerliktir. Kenarları 2 ve 6 olan dikdörtgenle 3 ve 4 olan dikdörtgenin alanları 12’dir ama kenar oranları uyuşmadığından benzer değillerdir. Çevresi eş olan şekillerin de alanları farklı olabilir."
+              ]
+            },
+            {
+              "title": "Paralelkenarı bölen doğrularda alan ilişkileri",
+              "paragraphs": [
+                "ABCD sıralı köşeli bir paralelkenar olsun. AC köşegeni ABC ve ADC üçgenlerini eş alanlara ayırır; karşı kenarlar eşit ve paralel olduğundan iki üçgen eştir. E, DC kenarı üzerindeyse ABE üçgeninin tabanı AB ve yüksekliği bütün paralelkenarın yüksekliğidir. Bu yüzden A(ABE)=A(ABCD)/2; kalan ADE ile BCE alanlarının toplamı da öteki yarıdır.",
+                "K, paralelkenarın içindeki herhangi bir nokta olsun. ADK ile BCK üçgenlerinin AD ve BC tabanları eşittir; bu tabanlara K’dan olan uzaklıkların toplamı iki paralel doğru arasındaki uzaklıktır. Bu nedenle A(ADK)+A(BCK)=A(ABCD)/2. Aynı şekilde A(ABK)+A(CDK)=A(ABCD)/2. Bu toplamlar eş olsa da tek tek dört üçgenin alanları her K için aynı değildir.",
+                "Daha ayrıntılı kesmede O, AC köşegeni üzerinde seçilsin. O’dan AB’ye paralel çizilen doğru AD ve BC’yi N,L’de; AD’ye paralel çizilen doğru DC ve AB’yi M,K’da kessin. Oluşan DNOM ile KBLO küçük paralelkenarlarının alanları eşittir. O’nun köşegen üzerinde olması ve doğruların belirtilen paralellikleri bu sonuç için gereklidir; herhangi bir iç noktaya aynı sonucu koşulsuz uygulama. Orta noktalı ve paralelli şekillerde önce eş taban/yükseklik veya kenarortay ilişkilerini kur, sonra alan paylarını etiketle; resmin görünüşüne bakarak sayı ezberleme."
+              ]
+            },
+            {
+              "title": "Bir çözümün son denetimi: şekil, diklik, parça ve birim",
+              "paragraphs": [
+                "Verilen şekil üçgen mi paralelkenar mı? Taban ile ona ait yükseklik doğru eşleştirildi mi? Üçgendeki 1/2 katsayısı kullanıldı mı? Bir bölge çıkarılıyorsa alan gerçekten bütünden mi çıkarılıyor? Taşınan parçalar eş boyutta mı, yeni dizilişte örtüşme veya boşluk var mı? Sonuç uzunluk birimiyle değil kare birimle yazılmalıdır.",
+                "Çizim yardımcıdır; açıkça verilmemiş diklik, paralellik, orta nokta veya eşliği göz kararı ekleme. Sonuç şüpheliyse daha basit bir özel durumu deneyebilirsin: paralelkenarı dikdörtgene, dik üçgeni iki katı dikdörtgene dönüştür. Ancak tek bir çizim veya sayısal deneme genel teoremin kanıtı değildir. Model bir örnek düzeni gösterir; genelleme hangi uzunluk ve ilişkilerin korunduğuyla gerekçelendirilir."
+              ]
+            }
+          ],
+          "source": "MEBİ TYT Matematik Konu Özetleri PDF s.139–140 ve 147–148 (basılı 137–138 ve 145–146): üçgende alan, ortak taban/yükseklik, kenarortay/ağırlık merkezi, benzerlik, sinüs ve paralelkenarda alan ilişkileriyle karşılaştırılan özgün açıklamalar. Modelin mevcut kesme-birleştirme yapısı korunur; buradaki çözümlü örnekler resmî sınav sorusu değildir."
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "lesson:alan-donusumleri",
+        "after": "18eb701d94164e9062e03a49d4f35931dfa349f3bfc7f3d72dd47c41c64cc2d7",
+        "prior": {
+          "sections": [
+            {
+              "title": "Alan, kaplanan bölgenin ölçüsüdür",
+              "text": [
+                "Uzunluk bir çizginin, çevre sınırın toplam uzunluğunun, alan ise düzlemde kaplanan bölgenin ölçüsüdür. Dikdörtgende 4 cm ve 7 cm kenarların alanı 28 cm², çevresi 22 cm olur. 4 ile 7’yi toplayıp alan bulamayız. Şeklin eğik görünmesi alanın bulunamayacağı anlamına gelmez; uygun bir taban ve ona ait dik uzaklık aranır."
+              ]
+            },
+            {
+              "title": "Tabanı seçtiğinde yüksekliği de yeniden seçmiş olursun",
+              "text": [
+                "ABC üçgeninde BC’yi taban seçersek yükseklik, A’dan BC doğrusuna indirilen dikmenin uzunluğudur. Aynı şekil için AB başka bir taban olabilir; bu durumda yükseklik C’den AB doğrusuna olan dik uzaklıktır. Her kenar kendi karşısındaki köşenin o kenar doğrusuna uzaklığıyla eşleştirilmelidir. Bir kenarın yanına yazılmış her sayı yükseklik değildir."
+              ]
+            },
+            {
+              "title": "Parçaları taşırken hangi işlemler alanı korur?",
+              "text": [
+                "Bir parçayı düzlemde kaydırmak, döndürmek veya yansıtmak uzunluklarını ve alanını değiştirmez; bu işlemler parçanın eş bir görüntüsünü oluşturur. Parçaları boşluksuz ve üst üste binmeden yeniden birleştirirsek toplam alan aynı kalır. Bir parçayı büyütmek, küçültmek, silmek veya aynı bölgeyi iki kez saymak bu gerekçeyi bozar."
+              ]
+            },
+            {
+              "title": "Paralelkenarda alan: eğikliği değil dik uzaklığı kullan",
+              "text": [
+                "Paralelkenarın karşılıklı kenarları paraleldir. Seçilen taban boyunca iki paralel doğru arasındaki dik uzaklık sabittir. Kesip yeniden yerleştirme, A=b·h formülünü dikdörtgene bağlar. Yan kenar 7 cm ve taban 10 cm verildiğinde alanı 70 cm² diyemeyiz; yan kenarın tabana dik olduğu veya ona ait uygun yüksekliğin verildiği bilinmelidir."
+              ]
+            },
+            {
+              "title": "Üçgen alanındaki yarım nereden gelir?",
+              "text": [
+                "Bir üçgenin eş bir kopyası uygun biçimde döndürülüp yanına getirildiğinde tabanı b, dik yüksekliği h olan paralelkenar oluşur. Toplam alan b·h, iki eş üçgenin her birinin alanı b·h/2 olur. 1/2 katsayısı bir ezber düzeltmesi değil, iki eş parçanın aynı bütünü paylaşmasının sonucudur. Geniş açılı üçgende de taban doğrusu ve dik uzaklık kullanılarak aynı formül geçerlidir."
+              ]
+            },
+            {
+              "title": "Alan oranını bulurken ortak olan büyüklüğü sadeleştir",
+              "text": [
+                "A ve D köşelerinin BC doğrusuna olan dik uzaklıkları h₁,h₂ ise ABC ve DBC üçgenleri aynı BC tabanını paylaşır: alan oranı h₁/h₂’dir. A ile D aynı paralel üzerinde ve bu paralel BC’ye paralelse yükseklikler eşittir; alanlar da eşittir. İki şeklin eş alanlı olması tek başına eş veya benzer olduklarını kanıtlamaz."
+              ]
+            },
+            {
+              "title": "Kenarortay ve ağırlık merkezinde eş alanlar",
+              "text": [
+                "Bir kenarortay, köşeyi karşı kenarın orta noktasına birleştirir. BC’nin orta noktası D ise BD=DC; ortak yükseklikten ABD ve ADC eş alanlıdır. Kenarortay iki küçük üçgenin her durumda eş üçgenler olduğunu söylemez; kenar ve açıları ayrıca denetlemeden eşlik sonucu çıkarılmaz."
+              ]
+            },
+            {
+              "title": "Benzerlikte uzunluk oranı ile alan oranını ayır",
+              "text": [
+                "Benzer iki üçgende karşılıklı uzunluklar k katına çıkıyorsa yükseklik de k katına çıkar. Alan b·h/2 olduğundan alan k² katına çıkar. Uzunluk oranı 3/2 ise alan oranı 9/4; alan oranı 25/9 ise pozitif uzunluk oranı 5/3’tür. Yalnız bir tabanın üç kat olması, yükseklik sabitken alanı üç kat yapar; iki şeklin benzerliği verilmeden otomatik dokuz kat sonucu çıkarma."
+              ]
+            },
+            {
+              "title": "Paralelkenarı bölen doğrularda alan ilişkileri",
+              "text": [
+                "ABCD sıralı köşeli bir paralelkenar olsun. AC köşegeni ABC ve ADC üçgenlerini eş alanlara ayırır; karşı kenarlar eşit ve paralel olduğundan iki üçgen eştir. E, DC kenarı üzerindeyse ABE üçgeninin tabanı AB ve yüksekliği bütün paralelkenarın yüksekliğidir. Bu yüzden A(ABE)=A(ABCD)/2; kalan ADE ile BCE alanlarının toplamı da öteki yarıdır."
+              ]
+            },
+            {
+              "title": "Bir çözümün son denetimi: şekil, diklik, parça ve birim",
+              "text": [
+                "Verilen şekil üçgen mi paralelkenar mı? Taban ile ona ait yükseklik doğru eşleştirildi mi? Üçgendeki 1/2 katsayısı kullanıldı mı? Bir bölge çıkarılıyorsa alan gerçekten bütünden mi çıkarılıyor? Taşınan parçalar eş boyutta mı, yeni dizilişte örtüşme veya boşluk var mı? Sonuç uzunluk birimiyle değil kare birimle yazılmalıdır."
+              ]
+            }
+          ],
+          "source": "MEBİ TYT Matematik Konu Özetleri PDF s.139–140 ve 147–148 (basılı 137–138 ve 145–146): üçgende alan, ortak taban/yükseklik, kenarortay/ağırlık merkezi, benzerlik, sinüs ve paralelkenarda alan ilişkileriyle karşılaştırılan özgün açıklamalar. Modelin mevcut kesme-birleştirme yapısı korunur; buradaki çözümlü örnekler resmî sınav sorusu değildir."
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-mat-uslu-sayilar-kaynak-039",
+        "after": "a1fe4244bb9ec1e38d929752210061c17fe01986cf067f97fbee0230173c430c",
+        "prior": {
+          "sections": [
+            {
+              "title": "Tanım ve parantez",
+              "text": [
+                "a^n, n pozitif tam sayıysa n tane a çarpanıdır. 3⁴=81;4·3=12.",
+                "-2⁴=-16; (-2)⁴=16. Tek üslerde değerlerin çakışması genel eşitlik değildir."
+              ]
+            },
+            {
+              "title": "Sıfır, bir ve negatif taban",
+              "text": [
+                "a¹=a; a≠0 iken a⁰=1. 0ⁿ=0 yalnız pozitif üslerde. 0⁰ ve 0’ın negatif kuvvetleri bu kapsamda tanımsız.",
+                "Negatif tabanda tam sayı üs çiftse pozitif, tekse negatif; (-1)^çift=1, (-1)^tek=-1."
+              ]
+            },
+            {
+              "title": "Negatif üs",
+              "text": [
+                "a≠0 için a^-n=1/aⁿ. Negatif üs sonuç işareti demek değildir.",
+                "(3/4)^-2=16/9; (-2)^-3=-1/8."
+              ]
+            },
+            {
+              "title": "Çarpım, bölüm, iç içe kuvvet",
+              "text": [
+                "Aynı tabanda a^m a^n=a^(m+n); a≠0 için a^m/a^n=a^(m-n).",
+                "Tam sayı üslerde tanımlı ifadeler için(a^m)^n=a^(mn). Rasyonel genel özdeşlikte pozitif taban koşulunu koru."
+              ]
+            },
+            {
+              "title": "Ortak üs ve işlem türü",
+              "text": [
+                "(ab)^n=a^n b^n; (a/b)^n=a^n/b^n; payda 0 olamaz. Sıfır veya negatif üslerde sıfır tabanı da dışlanır.",
+                "2⁵·5⁵=10⁵. Fakat 2³+2⁴=24;2⁷ değil. (1+2)²=9;1²+2²=5."
+              ]
+            },
+            {
+              "title": "Ortak asal ve ortak çarpan",
+              "text": [
+                "4=2²,8=2³,9=3²,27=3³. (4³·8²)/2⁵=2⁷=128.",
+                "c a^n+d a^n=(c+d)a^n. 5^(n+3)-2·5^(n+2)=3·5^(n+2)."
+              ]
+            },
+            {
+              "title": "Verilen kuvvetten yararlan",
+              "text": [
+                "2^x=A,3^x=B→6^x=AB. 3^x=A,5^x=B→75^x=AB².",
+                "2^x=A,3^x=B,5^x=C için 0,18^x=B²/(AC²); asal çarpanların pay/payda yerini koru."
+              ]
+            },
+            {
+              "title": "Denklem",
+              "text": [
+                "a>0, a≠1 iken a^u=a^v⇔u=v. 8^(x-1)=4^(x+2)→x=7. 9^(x-1)=27→x=5/2.",
+                "Taban 1’de üs eşitliği zorunlu değildir; her x çözüm olabilir. Üsler çelişkiye giderse çözüm yoktur. Negatif tabanda tanım alanı/çiftlik ayrı incelenir."
+              ]
+            },
+            {
+              "title": "Karşılaştırma",
+              "text": [
+                "Aynı pozitif tabanda a>1 ise büyük üs büyük;0<a<1 ise büyük üs küçük değer verir. a=1’de eşit.",
+                "2¹⁸=8⁶;3⁵=243>5³=125. Ortak üs pozitif tam sayıysa pozitif taban sırası korunur; negatif üste ters döner."
+              ]
+            },
+            {
+              "title": "Rasyonel üs ve sınırlar",
+              "text": [
+                "a>0 için a^(m/n)=(ⁿ√a)^m, n>0; üssü sadeleştir. 27^(-2/3)=1/9.",
+                "Negatif tabanda en sade payda tekse gerçek kök olabilir: (-8)^(1/3)=-2; çiftse gerçek değil. (-8)^(2/6)=-2.",
+                "((-1)²)^(1/2)=1 ama(-1)^(2·1/2)=-1; negatif tabanda iç içe rasyonel kural koşulsuz değildir."
+              ]
+            },
+            {
+              "title": "Bilimsel standart",
+              "text": [
+                "Sıfırdan farklı sayıda a×10^n, n tam sayı,1≤|a|<10. -3×10⁴ de geçerlidir. Sıfır ayrı yazılır.",
+                "810000000=8,1×10⁸;0,00042=4,2×10^-4. 72×10⁵=7,2×10⁶;0,36×10⁸=3,6×10⁷."
+              ]
+            },
+            {
+              "title": "Bilimsel işlemler ve karşılaştırma",
+              "text": [
+                "Çarpımda katsayılar çarpılır, üsler toplanır; bölümde katsayılar bölünür, üsler çıkarılır; sonra normalleştirilir.",
+                "Toplam/farkta ortak 10 kuvveti gerekir:6×10⁵+4×10⁶=4,6×10⁶. Pozitif normalleşmiş sayıda önce üs; negatiflerde mutlak değer sırası ters döner."
+              ]
+            },
+            {
+              "title": "Eksen ve süreç",
+              "text": [
+                "Logaritmik eksende eşit aralık eşit oran demektir;8,1×10⁸,10⁹’un tam üstünde değildir. Yaklaşık konumu 8,9085’tir.",
+                "Başlangıç N adım 0’dadır. Pozitif q için adım t: Nq^t. 200·2⁶=12800;80·(1/2)⁴=5.",
+                "q=0’da 0. adım başlangıç,1. adımdan sonra 0’dır; bu 0⁰’a değer atamaz."
+              ]
+            },
+            {
+              "title": "Yöntem, denetim ve hatırlama",
+              "text": [
+                "Önce parantez/tanım alanı; sonra işlem türü ve kuralın koşulu; sonra özgün ifadede kontrol.",
+                "İlk gün 1; tekrar 3., 7., 21. gün. Not kapalıyken yeni örneği gerekçelendir. Görsel keşif, okuma, süre veya manuel onay ustalık/XP kanıtı değildir.",
+                "Bu özet kaynaklı özgün uyarlamadır; resmî soru veya bütün arşiv tamamlandı iddiası taşımaz."
+              ]
+            },
+            {
+              "title": "Toplam, kesirli üs ve yüzde azalma",
+              "text": [
+                "2^(x+1)+2^x=(2+1)·2^x. 24’e eşitse 2^x=8 ve x=3. Kontrolü ilk denklemde yap.",
+                "16^(-3/4): dördüncü kök 2 → üçüncü kuvvet 8 → karşılık 1/8. Sadeleşmiş payda negatif tabanda tanım koşulunu belirler.",
+                "Her tur %p azalışta kalan çarpan 1−p/100. %100’de 0. adım başlangıçtır, ilk turdan sonra miktar sıfırdır."
+              ]
+            },
+            {
+              "title": "Birim başına ölçekleme ve geri kontrol",
+              "text": [
+                "Önce gün sayısıyla toplamı bul, sonra karşılık gelen birim sayısına böl. Bulduğun birim başı değeri hedef birim sayısıyla çarp.",
+                "Okul başına 9 milyon ve 81 okul için 81·9·10⁶=30⁶=7,29×10⁸. Kontrol: toplam / okul başına miktar = 81 okul.",
+                "10’un kuvvetindeki değişimi katsayıyla dengele. 81·10⁷=8,1·10⁸ ve 81·10⁸=8,1·10⁹."
+              ]
+            }
+          ]
+        }
+      }
+    ]
   }
 ]

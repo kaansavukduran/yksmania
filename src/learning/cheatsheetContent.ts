@@ -452,7 +452,14 @@ export const builtInCheatSheets = new Map<string, CheatSheet>(
     ...linearEquationsSource036Sheets,
     ...basicInequalitiesSource037Sheets,
     ...absoluteValueSource012Sheets,
-  ...powersSource039Sheets,
+    ...powersSource039Sheets.map((sheet) => ({
+      ...sheet,
+      sections: sheet.sections.map((section) =>
+        section.title === "Bilimsel standart"
+          ? { ...section, figureTitle: "Normalleştirirken miktarı korumak" }
+          : section
+      ),
+    })),
     ...geometryCircle040Sheets,
     ...permutationSheets032033,
     ...countingSheets034035,

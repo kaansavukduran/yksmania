@@ -1,8 +1,8 @@
 {
-  "version": "0.160.0",
+  "version": "0.161.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Mutlak Değer’de iki noktaya uzaklık toplamının sabit kaldığı aralığı keşfet. Üçgende Benzerlik’te 25 eş parçanın alan paylarını karşılaştır.",
-    "en": "Explore constant sums of distances and use 25 equal units to find areas in similar triangles."
+    "tr": "Bilimsel gösterimde katsayı ve üs ters yönde değişirken değeri izle. Ortak yükseklikte iki üçgenin alanını taban paylarından bul.",
+    "en": "Keep the value fixed while normalizing scientific notation and compare areas with a shared height."
   }
 }

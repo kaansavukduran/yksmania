@@ -593,3 +593,48 @@ test("Nine out of twenty-five cells leave sixteen equal cells in the strip", asy
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Changing the scientific coefficient and exponent preserves value", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-mat-uslu-sayilar-kaynak-039";
+  const model = figure(page, "Normalleştirirken miktarı korumak");
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("24 × 10⁴ = 2,4 × 10⁵ = 240.000");
+  await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await expect(model).toContainText("0,36 × 10⁸ = 3,6 × 10⁷ = 36.000.000");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await expect(model).toContainText("24 × 10⁴ = 2,4 × 10⁵ = 240.000");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Sliding the apex parallel to the base keeps the two partial areas", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "alan-donusumleri";
+  const model = figure(page, "Alan oranını bulurken ortak olan büyüklüğü sadeleştir");
+  await page.goto(`/#/lesson?id=${lesson}`);
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await next.press("Enter");
+  await next.press("Enter");
+  await expect(model).toContainText("AB = 2 · 75 / 6 = 25 birim. AD = 10, DB = 15.");
+  const slide = model.getByRole("slider", { name: /Noktayı kaydır/ });
+  await slide.press("Home");
+  const left = await model.getByRole("img").innerHTML();
+  await slide.press("End");
+  expect(await model.getByRole("img").innerHTML()).not.toBe(left);
+  await expect(model).toContainText("Alan(PAD) = 30; alan(PDB) = 45 birim². Yükseklik 6 kalır.");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=lesson:${lesson}`);
+  await next.press("Enter");
+  await next.press("Enter");
+  await expect(model).toContainText("Alan(PAD) = 30; alan(PDB) = 45 birim²");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
