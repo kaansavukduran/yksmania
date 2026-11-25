@@ -141,12 +141,55 @@ const pie: FigureDef = {
   },
 };
 
+const piecewiseTankChange = (t: number) => {
+  const start = 20;
+  const peak = 32;
+  const end = 26;
+  const turn = 2;
+  const duration = 5;
+  const firstRate = (peak - start) / turn;
+  const secondRate = (end - peak) / (duration - turn);
+  const level = t <= turn ? start + firstRate * t : peak + secondRate * (t - turn);
+  const x = (hour: number) => 1.33 * hour;
+  const y = (liters: number) => 0.14 * liters;
+  const point = (hour: number, liters: number) => v(x(hour), y(liters));
+  const els: El[] = [
+    vec(v(0, 0), v(x(5.65), 0), { tone: "ink" }),
+    vec(v(0, 0), v(0, y(36)), { tone: "ink" }),
+    txt(v(x(5.65), 0), "saat", "se", { small: true }),
+    txt(v(0, y(36)), "L", "n", { small: true }),
+  ];
+  for (const hour of [0, 1, 2, 3, 4, 5]) {
+    els.push(txt(point(hour, 0), String(hour), "s", { tone: "ink", small: true }));
+  }
+  for (const liters of [10, 20, 30]) {
+    els.push(seg(point(0, liters), point(5, liters), { tone: "muted", dash: true, thin: true }));
+    els.push(txt(point(0, liters), String(liters), "w", { tone: "ink", small: true }));
+  }
+  els.push(
+    seg(point(0, start), point(turn, peak), { tone: "b", bold: true }),
+    seg(point(turn, peak), point(duration, end), { tone: "c", bold: true }),
+    seg(point(t, 0), point(t, level), { tone: "muted", thin: true, dash: true }),
+    pt(point(t, level), undefined, "n", "a"),
+  );
+  return {
+    els,
+    readout: [
+      `${nf(t, 1)} saat. Depo hacmi ${nf(level, 1)} L.`,
+      `0–2 saatte +${firstRate} L/saat. 2–5 saatte −${Math.abs(secondRate)} L/saat.`,
+      `Bütün aralık (${end}−${start})/${duration} = ${nf((end - start) / duration, 1)} L/saat. Bu iki farklı eğimi doğrudan ortalamak, süreler eşitken geçerlidir.`,
+    ],
+  };
+};
+
 const crossing: FigureDef = {
   caption:
-    "A = 12 + 3t ve B = 18 + t litre, 0 ≤ t ≤ 5 saat (doğrusal model). Sürgüyle t’yi değiştir. t = 3’te ikisi de 21 L olur; hızlar yine farklıdır (3 ve 1 L/saat). t < 3 için B, t > 3 için A daha yüksektir: aynı yükseklik, aynı artış hızı demek değildir.",
-  alt: "Zaman ekseni 0–5 saat, hacim ekseni; iki doğru: A daha dik; t = 3’te kesişim noktası; seçilen t’de düşey kesikli çizgi ve iki değer.",
+    "İlk adımda iki tankın aynı litreye ne zaman ulaştığını, ikinci adımda tek tankın iki aralığındaki eğimleri karşılaştır. Sürgüyle zamanı değiştir ve her adımda litre ile litre/saat birimlerini ayır.",
+  alt: "İlk adım iki tankın kesişen hacim doğrularını gösterir. İkinci adımda tek tankın 20, 32 ve 26 litre değerlerinden geçen iki doğru parçası vardır.",
+  steps: ["İki ayrı tankı karşılaştır", "Bir tankın iki aralığını karşılaştır"],
   param: { label: "t", min: 0, max: 5, step: 0.5, init: 3, unit: " saat" },
-  draw: (t) => {
+  draw: (t, step) => {
+    if (step === 1) return piecewiseTankChange(t);
     const kx = 1.3, ky = 0.15, A = (s: number) => 12 + 3 * s, B = (s: number) => 18 + s;
     const els: El[] = [vec(v(0, 0), v(5.6 * kx, 0), { tone: "ink", thin: true }), vec(v(0, 0), v(0, 29 * ky), { tone: "ink", thin: true }), txt(v(5.6 * kx, 0), "t", "se", { tone: "ink", small: true }), txt(v(0, 29 * ky), "L", "n", { tone: "ink", small: true })];
     for (const s of [0, 1, 2, 3, 4, 5]) els.push(txt(v(s * kx, -0.15), String(s), "s", { tone: "muted", small: true, soft: true }));

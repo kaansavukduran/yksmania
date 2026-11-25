@@ -44,6 +44,7 @@ describe("Forge060 TYT Matematik bölüm figürleri", () => {
         "asal-sayilar": 5,
         "sayi-basamaklari": 5,
         "havuz-problemleri": 5,
+        "carpanlara-ayirma": 5,
       };
       expect(Object.keys(sectionFigures[g] ?? {}).length, g).toBe(expectedCounts[g] ?? 4);
     }
@@ -53,6 +54,13 @@ describe("Forge060 TYT Matematik bölüm figürleri", () => {
       "Kaçağın hızını karşılaştırmadan çıkar",
       "Hacim eşitliği yükseklik eşitliği değildir",
       "Gecikmiş açılış yeni evre başlatır",
+    ].sort());
+    expect(Object.keys(sectionFigures["carpanlara-ayirma"]).sort()).toEqual([
+      "Tam karede uçlar kadar orta terim de önemlidir",
+      "İki kare farkı: toplam ile farkın çarpımı",
+      "x²+bx+c için toplam ve çarpımı birlikte ara",
+      "Baş katsayı 1 değilse çapraz terimlerin toplamını denetle",
+      "x² yerine u yazarak dört kökü bul",
     ].sort());
   });
 

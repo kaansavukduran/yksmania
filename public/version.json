@@ -1,8 +1,8 @@
 {
-  "version": "0.174.0",
+  "version": "0.177.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Hız Problemleri’nde iki hareketin konum-zaman grafiğini aynı ölçekte oku. Dik Prizmalar’da düzgün altıgeni oluştur ve cisim köşegenini Pisagor ile hesapla.",
-    "en": "Read two movements on one position-time graph and derive a straight hexagonal prism’s longest diagonal from its base and height."
+    "tr": "Kümeler’de üçlü kesişimden başlayarak ayrık bölgeleri say. Altıgen piramitte dik yüksekliği, yan yüz yüksekliğini ve yan ayrıtı iki gerçek kesitle ayır.",
+    "en": "Count disjoint regions from the triple intersection and distinguish three pyramid lengths using two cross-sections."
   }
 }

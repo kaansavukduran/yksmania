@@ -168,6 +168,64 @@ export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupple
     ],
     summary: "a=4 ve h=9 için taban 24√3, yan alan 216, hacim 216√3. Cisim köşegeni √145 cm.",
     appendSection: true,
+  }, {
+    title: "Küp bölünürken toplam yüzey nasıl değişir?",
+    figureTitle: "Küp bölünürken toplam yüzey nasıl değişir?",
+    paragraphs: [
+      "Kayıpsız eritmede 6 cm’lik küpün hacmi 216 cm³ kalır. 2 cm’lik küçük küplerin her biri 8 cm³ olduğundan 27 küp çıkar. Eski yüzey 216 cm², küçüklerin yüzeyleri toplamı 27·24=648 cm². Küçük küpler ayrılınca aradaki temas yüzleri açığa çıkar.",
+      "Her ayrıt n eş parçaya ayrılıyorsa n³ küp çıkar. Her küçük küpün yüzeyi 1/n² kadar olduğu için toplam yüzey n katına çıkar.",
+    ],
+    summary: "6 cm’den 2 cm’ye. Hacim 216 cm³ kalır. 27 küçük küpün yüzeyleri toplamı 648 cm².",
+    appendSection: true,
+  }],
+  "grafik-problemleri": [{
+    title: "Çizgi grafiğinde değişim ile değişim hızı ayrıdır",
+    figureTitle: "Çizgi grafiğinde değişim ile değişim hızı ayrıdır",
+    paragraphs: [
+      "Depo 0, 2, 5. saatlerde 20, 32, 26 L. İlk eğim 12/2=6 L/saat. İkinci eğim −6/3=−2 L/saat. 4. saatte ikinci aralıkta 2 saat geçtiği için 32−4=28 L.",
+      "Bütün aralığı başlangıç ve son noktadan ölç. (26−20)/5=1,2 L/saat. Aynı değeri eğimleri kendi süreleriyle ağırlıklandırarak (2·6+3·(−2))/5 ile denetle.",
+    ],
+    summary: "İlk eğim +6, ikinci −2 L/saat. 4. saatte 28 L. Bütün aralık 6/5=1,2 L/saat.",
+  }],
+  "carpanlara-ayirma": [{
+    title: "x² yerine u yazarak dört kökü bul",
+    figureTitle: "x² yerine u yazarak dört kökü bul",
+    paragraphs: [
+      "x⁴−5x²+4 ifadesinde u=x² yazınca (u−1)(u−4) elde edilir. u=1 veya u=4. x²=1 iki işaretli kök −1 ve 1, x²=4 ise −2 ve 2 verir. Grafiğin yatay ekseni bu dört noktada kesilir.",
+      "u bir gerçek sayının karesiyse u≥0 olmalıdır. Yerine koyma adımı, negatif u değerini gerçek x kökü diye yazmayı önler.",
+    ],
+    summary: "u=x² için (u−1)(u−4)=0. x²=1 veya x²=4. Kökler −2, −1, 1 ve 2.",
+    appendSection: true,
+  }],
+  "tyt-geo-silindir-koni-kure-040": [{
+    title: "Kâğıdı iki yönde sar ve hacimleri karşılaştır",
+    figureTitle: "Kâğıdı iki yönde sar ve hacimleri karşılaştır",
+    paragraphs: [
+      "12π×8 dikdörtgende uzun kenar çevre olursa r=6 ve h=8. Hacim π·36·8=288π. Kısa kenar çevre olursa r=4/π ve h=12π. Hacim 192. Oran 288π/192=3π/2.",
+      "Her iki durumda yan alan 96π olur. Tabanların yarıçapı değiştiği için hacim ve kapalı yüzey alanı farklı çıkar. Tabanlar ayrıca eklenir.",
+    ],
+    summary: "12π×8 dikdörtgenin iki sarımı 288π ve 192 cm³ verir. Oran 3π/2, yan alan her ikisinde 96π cm².",
+    appendSection: true,
+  }],
+  "kumeler": [{
+    title: "Üç kümenin ayrık bölgelerini içten dışa doldur",
+    figureTitle: "Üç kümenin ayrık bölgelerini içten dışa doldur",
+    paragraphs: [
+      "50 kişinin A, B, C gruplarında 25, 20, 18 kayıt var. İkili kesişimler 10, 8, 7 ve üçlü kesişim 3. Üçlüdeki 3 kişiyi ikililerden birer kez çıkar. Tam iki grupta 7+5+4=16 kişi kalır.",
+      "Yalnız A 10, yalnız B 6, yalnız C 6. Birleşim 10+6+6+16+3=41. Hiçbir grupta 50−41=9 kişi. Venn’de bölge boyu yerine içindeki sayıyı oku.",
+    ],
+    summary: "Üçlü 3. Tam iki 16. Yalnız A, B, C sırasıyla 10, 6 ve 6. Birleşim 41, dışarıda 9.",
+    appendSection: true,
+  }],
+  "tyt-geo-piramitler-032": [{
+    title: "Altıgen piramitte üç uzunluğun uçlarını karşılaştır",
+    figureTitle: "Altıgen piramitte üç uzunluğun uçlarını karşılaştır",
+    paragraphs: [
+      "Düzgün altıgende kenar 2 cm, iç yarıçap √3 cm ve merkezin bir köşeye uzaklığı 2 cm. Tepe taban merkezinin 3 cm üzerindedir. Taban kenarının ortasına giden yüz yüksekliği √(9+3)=2√3 cm. Bir köşeye giden yan ayrıt √(9+4)=√13 cm.",
+      "Taban alanı 6√3 cm². Altı yan üçgen toplam 12√3 cm², kapalı toplam 18√3 cm². Hacim için dik yükseklik kullanılır: 6√3·3/3=6√3 cm³.",
+    ],
+    summary: "a=2 ve h=3 için iç yarıçap √3, yüz yüksekliği 2√3, yan ayrıt √13. Toplam alan 18√3 cm², hacim 6√3 cm³.",
+    appendSection: true,
   }],
   "kesir-problemleri": [{
     title: "Kalanın kesri yeni bir taban kullanır",

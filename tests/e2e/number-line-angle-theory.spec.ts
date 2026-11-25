@@ -1220,3 +1220,143 @@ test("A hexagonal prism diagonal uses the farthest base vertices", async ({ page
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("The whole graph weights each segment by its duration", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Çizgi grafiğinde değişim ile değişim hızı ayrıdır");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  const hour = model.getByRole("slider");
+  await page.goto("/#/lesson?id=grafik-problemleri");
+  await expect(model).toContainText("eşit (21 L)");
+  await next.press("Enter");
+  await hour.fill("4");
+  await expect(model).toContainText("4 saat. Depo hacmi 28 L");
+  await expect(model).toContainText("0–2 saatte +6 L/saat. 2–5 saatte −2 L/saat");
+  await expect(model).toContainText("(26−20)/5 = 1,2 L/saat");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-220");
+  await next.press("Enter");
+  await hour.press("End");
+  await expect(model).toContainText("5 saat. Depo hacmi 26 L");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Separating equal cubes preserves volume and adds exposed faces", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-geo-dik-prizmalar-032";
+  const model = figure(page, "Küp bölünürken toplam yüzey nasıl değişir?");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  const parts = model.getByRole("slider", { name: /Bir ayrıtın parça sayısı/ });
+  await page.goto(`/#/lesson?id=${id}`);
+  await expect(model).toContainText("3 × 3 × 3 = 27 küp");
+  await expect(model).toContainText("yeni toplam alan 648 cm²");
+  await next.press("Enter");
+  await parts.press("Home");
+  await expect(model).toContainText("2 × 2 × 2 = 8 küp");
+  await expect(model).toContainText("toplam hacmi de 216 cm³");
+  await expect(model).toContainText("yeni toplam alan 432 cm²");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${id}`);
+  await expect(figure(page, "Altıgen tabandan prizmanın en uzun köşegenine")).toBeVisible();
+  await expect(model).toContainText("yeni toplam alan 648 cm²");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Substitution gives four real roots on the plotted polynomial", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "x² yerine u yazarak dört kökü bul");
+  await page.goto("/#/lesson?id=carpanlara-ayirma");
+  await expect(model).toContainText("Kökler −2, −1, 1, 2");
+  const input = model.getByRole("slider", { name: /^x/ });
+  for (const root of [-2, -1, 1, 2]) {
+    await input.fill(String(root));
+    await expect(model).toContainText("için f(x) = 0.");
+  }
+  await input.fill("0");
+  await expect(model).toContainText("x = 0 için f(x) = 4.");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-221");
+  await expect(model).toContainText("Kökler −2, −1, 1, 2");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Two rolls of the same paper keep lateral area and change volume", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-geo-silindir-koni-kure-040";
+  const model = figure(page, "Kâğıdı iki yönde sar ve hacimleri karşılaştır");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto(`/#/lesson?id=${id}`);
+  await expect(model).toContainText("Yan alan 96π cm². Bu sarımın hacmi 288π cm³");
+  await next.press("Enter");
+  await expect(model).toContainText("Yan alan 96π cm². Bu sarımın hacmi 192 cm³");
+  await expect(model).toContainText("12π/8 = 3π/2");
+  await model.getByRole("slider", { name: /Kısa kenar/ }).press("Home");
+  await expect(model).toContainText("Yan alan 48π cm². Bu sarımın hacmi 48 cm³");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${id}`);
+  await next.press("Enter");
+  await expect(model).toContainText("96π cm². Bu sarımın hacmi 192 cm³");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Triple intersections belong to only one displayed Venn region", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Üç kümenin ayrık bölgelerini içten dışa doldur");
+  await page.goto("/#/lesson?id=kumeler");
+  await expect(model).toContainText("Tam iki grupta 16 · Üçünde 3");
+  await expect(model).toContainText("Birleşim 41 · Dışarıda 9");
+  const slider = model.getByRole("slider", { name: /Üç kümede ortak kişi/ });
+  await slider.press("Home");
+  await expect(model).toContainText("Tam iki grupta 25 · Üçünde 0");
+  await expect(model).toContainText("Birleşim 38 · Dışarıda 12");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-222");
+  await expect(model).toContainText("Yalnız A 10 · Yalnız B 6 · Yalnız C 6");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The hexagonal pyramid has a different hypotenuse in each cross-section", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-geo-piramitler-032";
+  const model = figure(page, "Altıgen piramitte üç uzunluğun uçlarını karşılaştır");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto(`/#/lesson?id=${id}`);
+  await expect(model).toContainText("Dik yükseklik 3 cm");
+  await expect(model).toContainText("Yan yüz yüksekliği 2√3 cm. Yan ayrıt √13 cm");
+  await next.press("Enter");
+  await expect(model).toContainText("Kenar ortasından kesit");
+  await checkFrame(page, model);
+  await next.press("Enter");
+  await expect(model).toContainText("Köşeden kesit");
+  await expect(model).toContainText("Kapalı toplam alan 18√3 cm²");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${id}`);
+  await expect(model).toContainText("Hacim 6√3 cm³");
+  await model.getByRole("slider", { name: /Altıgenin kenarı/ }).press("End");
+  await expect(model).toContainText("Hacim 54√3 cm³");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
