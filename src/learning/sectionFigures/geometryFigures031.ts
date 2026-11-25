@@ -383,7 +383,7 @@ const ucgendeAcilar: Record<string, FigureDef> = {
       if (bisector) {
         els.push(
           ang(B, C, X, `${halfB}°`, { tone: "a", r: 45 }),
-          ang(B, X, A, `${halfB}°`, { tone: "a", r: 45 }),
+          ang(B, X, A, undefined, { tone: "a", r: 45 }),
           ang(X, B, C, `${angleAtD}°`, { tone: "b", r: 34 }),
         );
       } else {
