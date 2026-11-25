@@ -1,6 +1,6 @@
 import { separatedPermutations032 } from "../separatedPermutationsSource032Model";
 import { waypointPaths033 } from "../waypointPathsSource033Model";
-import { circle, pt, seg, txt, v, vec, type El, type FigureDef, type Tone } from "./figureKit";
+import { circle, poly, pt, seg, txt, v, vec, type El, type FigureDef, type Tone } from "./figureKit";
 import { cell, choose, fact, frac, pad, rect, sup, table, tn, token } from "./mathFigures062TytKit";
 
 /*
@@ -467,6 +467,30 @@ const atLeast: FigureDef = {
   },
 };
 
+const linesAndTriangles: FigureDef = {
+  caption: "En az üç doğrusal nokta varsa üçgen ile doğru sayımı farklı değişir. A, B, C, D aynı doğru üzerinde. Diğer hiçbir üçlü doğrusal değil.",
+  alt: "A, B, C ve D yatay aynı doğru boyunca. E, F, G, H farklı yüksekliklerde. İlk çizimde A, B, E üçgeni görünür. İkinci çizimde A, B, C ve D’nin ortak doğrusu vurgulanır.",
+  steps: ["Üçgenleri say", "Farklı doğruları say"],
+  draw: (_, step) => {
+    const points = [v(0, 0), v(1, 0), v(3, 0), v(5, 0), v(0.7, 1.4), v(2.2, 3.1), v(4.6, 2.3), v(6.4, 4.7)];
+    const els: El[] = [
+      vec(v(-0.45, -0.45), v(6.8, -0.45), { tone: "muted", thin: true }),
+      vec(v(-0.45, -0.45), v(-0.45, 5.05), { tone: "muted", thin: true }),
+      txt(v(3.25, -0.85), "Yatay koordinat (birim)", "s", { tone: "ink", small: true }),
+      txt(v(-0.43, 5.1), "Düşey koordinat (birim)", "n", { tone: "ink", small: true }),
+      seg(v(-0.14, 0), v(6.15, 0), { tone: step === 0 ? "muted" : "a", bold: step === 1 }),
+    ];
+    for (const tick of [0, 2, 4, 6]) els.push(txt(v(tick, -0.45), String(tick), "s", { tone: "ink", small: true }));
+    for (const tick of [0, 1, 2, 3, 4, 5]) els.push(txt(v(-0.49, tick), String(tick), "w", { tone: "ink", small: true }));
+    if (step === 0) els.push(poly([points[0], points[1], points[4]], { tone: "a", fill: "a" }));
+    points.forEach((point, i) => els.push(pt(point, "ABCDEFGH"[i], "ne", i < 4 ? "ink" : "c")));
+    els.push(...pad(-1.1, 5.9, 7.2, -1.35));
+    return { els, readout: step === 0
+      ? [`${choose(8, 3)} üçlüden ${choose(4, 3)} doğrusal üçlü çıkar. ${choose(8, 3) - choose(4, 3)} üçgen kalır.`, "A, B, E alan kaplar. A, B, C aynı doğru üzerinde kalır."]
+      : [`${choose(8, 2)} nokta çifti. Ortak doğruyu veren ${choose(4, 2)} çiftin yerine bir doğru yaz. ${choose(8, 2) - choose(4, 2) + 1} farklı doğru.`] };
+  },
+};
+
 /* ===================== Binom açılımı ===================== */
 
 const binomTree: FigureDef = {
@@ -585,6 +609,38 @@ const diceGrid: FigureDef = {
   },
 };
 
+const conditionalDice: FigureDef = {
+  caption: "Toplamın alt sınırı verilince yalnız koşulu sağlayan hücreler paydaya girer. Birinci zarın 6 olduğu hücreler bu alanın içinde yeniden seçilir.",
+  alt: "Satırlarda birinci zarın, sütunlarda ikinci zarın değerleri. Her hücrede toplam. Koşula uygun hücreler dolu; birinci zarı 6 olan uygun hücrelerin yanında nokta var.",
+  param: { label: "Toplamın alt sınırı", min: 2, max: 12, step: 1, init: 9 },
+  draw: (threshold) => {
+    const w = 0.75;
+    const els: El[] = [
+      txt(v(4 * w, 1.02), "İkinci zar", "n", { tone: "ink", small: true }),
+      txt(v(-0.08, -2.55), "İlk zar", "w", { tone: "ink", small: true }),
+    ];
+    let admissible = 0;
+    let firstSix = 0;
+    for (let first = 1; first <= 6; first++) {
+      els.push(...cell(first * w, 0, w, w, String(first), "b"), ...cell(0, -first * w, w, w, String(first), "b"));
+      for (let second = 1; second <= 6; second++) {
+        const sum = first + second;
+        const allowed = sum >= threshold;
+        const event = allowed && first === 6;
+        admissible += Number(allowed);
+        firstSix += Number(event);
+        els.push(...cell(second * w, -first * w, w, w, `${sum}${event ? "·" : ""}`, event ? "warn" : allowed ? "a" : "muted", { fill: allowed }));
+      }
+    }
+    els.push(...pad(-1.22, 1.75, 5.6, -5.0));
+    return { els, readout: [
+      `Toplam en az ${threshold}. Koşullu uzayda ${admissible} çift, ilk zarı 6 olan ${firstSix} çift var.`,
+      `Koşullu olasılık ${firstSix}/${admissible} = ${frac(firstSix, admissible)}. Birlikte gerçekleşme olasılığı ${firstSix}/36.`,
+      "Hücredeki nokta ilk zarı 6 olan uygun bir çifti işaretler.",
+    ] };
+  },
+};
+
 const coinTree: FigureDef = {
   caption:
     "Üç bağımsız adil para atışının ağacı: 8 eş olasılıklı yaprak (Y yazı, T tura). Hiç yazı gelmemesi tek yaprak, TTT: (1/2)³ = 1/8. “En az bir yazı” bunun tümleyenidir: 1 − 1/8 = 7/8. Tümleyen kuralı, ağacı tek tek saymadan aynı sonucu verir.",
@@ -671,6 +727,7 @@ export const mathFigures062TytCounting: Record<string, Record<string, FigureDef>
     "Zorunlu kişiyi sabitle, yasak kişiyi listeden çıkar": forced,
     "Tam ve en az koşullarıyla ayrık durumlar kur": cases,
     "En az bir için hiç olmayanı çıkar": atLeast,
+    "Bir üçlü alanla, bir doğru bütün noktalarıyla belirlenir": linesAndTriangles,
   },
   "tyt-mat-binom-kaynak-035": {
     "Çarpılan her parantezden tek seçim yap": binomTree,
@@ -682,6 +739,7 @@ export const mathFigures062TytCounting: Record<string, Record<string, FigureDef>
     "Örnek uzay hangi sonuçların sayıldığını belirler": diceGrid,
     "En az biri ve tam biri ayır": coinTree,
     "Ortak sonuçları birleşimde bir kez say": venn,
+    "Yeni bilgi geldiğinde paydayı değiştir": conditionalDice,
     "Geri koyma ve bağımsızlık ayrı koşullardır": bagTree,
   },
 };

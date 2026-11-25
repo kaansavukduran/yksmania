@@ -1,3 +1,7 @@
+import type { GuideSection } from "./guides/types";
+import { signedBinomial035 } from "./signedBinomialSource035Model";
+import { statisticsSource037Classes } from "./statisticsSource037Revision";
+
 interface TheorySupplement {
   title: string;
   figureTitle?: string;
@@ -6,8 +10,11 @@ interface TheorySupplement {
   appendSection?: true;
   sheetTitle?: string;
   tableLayout?: "table";
+  table?: GuideSection["table"];
   workedStep?: { title: string; index: number };
 }
+
+const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
   "tyt-mat-permutasyon-kaynak-032": [{
@@ -23,6 +30,48 @@ export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupple
     sheetTitle: "Zorunlu durak",
     paragraphs: [],
     summary: "(0,0) → P(2,1) → (4,3) için 3·6=18 geçen yol. Bütün 35 yoldan bunları çıkarınca 17 yol kalır.",
+  }],
+  "tyt-mat-kombinasyon-kaynak-034": [{
+    title: "Bir üçlü alanla, bir doğru bütün noktalarıyla belirlenir",
+    figureTitle: "Bir üçlü alanla, bir doğru bütün noktalarıyla belirlenir",
+    sheetTitle: "Üçgen, doğru ve köşegen",
+    paragraphs: [],
+    summary: "Yalnız dört tanesi doğrusal sekiz nokta için 56−4=52 üçgen, 28−6+1=23 doğru. Aynı doğruyu veren altı çift bir doğruya karşılık gelir.",
+  }],
+  "tyt-mat-binom-kaynak-035": [{
+    title: "Seçim sayısıyla sayısal çarpanı birbirinden ayır",
+    sheetTitle: "Pascal ve işaret",
+    paragraphs: ["(x+2)³ tablosunda r, 2’yi kaç kez seçtiğini söyler. Katsayıyı bulmak için seçim sayısını 2ʳ ile çarp. Örneğin r=2 için 3·4=12 ve üs 1’dir."],
+    summary: "(x+2)³ açılımında seçim sayısı C(3,r), katsayı C(3,r)·2ʳ.",
+    table: {
+      headers: ["2’yi seçme sayısı r", "Seçim adedi", "x’in üssü", "Katsayı"],
+      rows: binomialExample035.terms.map(({ r, choose, exponent, coefficient }) =>
+        [String(r), String(choose), String(exponent), String(coefficient)]),
+      layout: "table",
+    },
+  }, {
+    title: "Hedef üssü bir denklemle bul",
+    figureTitle: "Hedef üssü bir denklemle bul",
+    sheetTitle: "Hedef üs",
+    paragraphs: [],
+  }],
+  "tyt-mat-olasilik-kaynak-036": [{
+    title: "Yeni bilgi geldiğinde paydayı değiştir",
+    figureTitle: "Yeni bilgi geldiğinde paydayı değiştir",
+    sheetTitle: "Koşul",
+    paragraphs: [],
+    summary: "Toplam en az 9 ise 10 eş olasılıklı çift kalır. Bunların dördünde ilk zar 6’dır. Koşullu olasılık 4/10=2/5. Birlikte gerçekleşme 4/36.",
+  }],
+  "veri-analizi": [{
+    title: "Ham ölçümleri eş genişlikli sınıflara ayır",
+    figureTitle: "Ham ölçümleri eş genişlikli sınıflara ayır",
+    paragraphs: [],
+    table: {
+      headers: ["Sınıf", "Gözlemler", "Frekans"],
+      rows: statisticsSource037Classes.map(({ lower, upper, values }) =>
+        [`[${lower}, ${upper})`, values.join(", "), String(values.length)]),
+      layout: "table",
+    },
   }],
   "koklu-sayilar": [{
     title: "Köklü denklemde önce koşul, sonra kare",

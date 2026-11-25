@@ -1,8 +1,8 @@
 {
-  "version": "0.179.0",
+  "version": "0.180.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Permütasyonda beş ayrı boşluk ve Tekrarlı Permütasyonda ara duraktan geçen ve uğramayan yolların çizimleri ders ile ayrı Kopya Kağıdına bağlandı.",
-    "en": "Permutation gap choices and paths through or around a waypoint are linked in the lessons and separate cheat sheets."
+    "tr": "Kombinasyon, Binom Açılımı, Olasılık ve Veri Analizi kaynak örneklerine etkileşimli çizimler ile okunabilir tablolar eklendi.",
+    "en": "Source-based interactive figures and readable tables cover combinations, binomial expansion, probability and data analysis."
   }
 }

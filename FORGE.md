@@ -852,7 +852,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
-| TYT Matematik | 45 / 45 | 45 · 201 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
+| TYT Matematik | 45 / 45 | 45 · 204 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
 | TYT Geometri | 19 / 19 | 19 · 193 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 283 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
@@ -867,7 +867,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2373** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2376** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
@@ -3834,3 +3834,10 @@ Kümeler fiziksel 2 ile 5, Piramit fiziksel 6 karşılaştırıldı. TypeScript,
 Dört sıradan kişinin beş aralığı figürde ayrı ayrı numaralanır. Öğrenci üç farklı kişiyi yerleştirerek 1.440 düzen hesabını denetler. Kafes örneğinde P’ye giden 3 ilk ve 6 son yol parçası 18 tam yol verir. Diğer görünümde P’yi atlayan 17 yolun içinden bir örnek çizilir. İki çizim de ders ve ayrı Kopya Kağıdında çalışır.
 
 TypeScript, 2.928 hedefli birim testi, dört Chromium akışı, altı yerleşim kontrolü ve 323 çevrimdışı varlık başarıyla doğrulandı. SVG çizgisi için ilk tarayıcı ölçümü sıfır boyutlu kutuyu gizli saydı. Tekrar, görünür SVG’de dört kesikli çizgiyi ve çizgi stilini ölçtü.
+
+## 0.180.0 adayı · Kombinasyon, binom, olasılık ve veri
+
+- Kombinasyonda bir doğruda toplanan dört noktayı çizimde gör. Üçgen sayımında dört üçlü çıkarılır. Doğru sayımında altı çift bir doğruya iner.
+- Binom açılımında seçim sayısı ve katsayı ayrı sütunlarda. Olasılıkta iki zarın toplam sınırını değiştirince koşullu payda ve ilk zarın 6 olduğu hücreler birlikte güncellenir.
+- Veri Analizinde üç eş sınıf aynı ham gözlemlerden tablo ve histogram olarak üretilir. Sınırda duran 6 yalnız ikinci sınıfa girer. Histogramdan hangi eşiklerin kesin okunabildiğini karşılaştır.
+- TypeScript, 2.948 hedefli birim, altı Chromium akışı, 12 çizim yerleşimi ve 323 çevrimdışı varlık geçti. Önceki dört veri çizimi ayrı adlarıyla doğrulandı. Yerleşik soru ve ham rehber kataloğu baytları aynı.

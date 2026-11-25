@@ -483,15 +483,15 @@ export function studyCheatSheet(topicId: string): CheatSheet | undefined {
   if (sheet && supplements) {
     let sections = sheet.sections;
     let examples = sheet.examples;
-    for (const { title, figureTitle, summary, appendSection, sheetTitle = title, workedStep, tableLayout } of supplements) {
+    for (const { title, figureTitle, summary, appendSection, sheetTitle = title, workedStep, tableLayout, table } of supplements) {
       sections = appendSection
-        ? [...sections, { title, figureTitle, text: summary ? [summary] : [] }]
+        ? [...sections, { title, figureTitle, text: summary ? [summary] : [], table }]
         : sections.map((section) => section.title === sheetTitle
           ? {
               ...section,
               text: summary ? [...section.text, summary] : section.text,
               figureTitle: figureTitle ?? section.figureTitle,
-              table: section.table && tableLayout ? { ...section.table, layout: tableLayout } : section.table,
+              table: table ?? (section.table && tableLayout ? { ...section.table, layout: tableLayout } : section.table),
             }
           : section);
       if (workedStep && figureTitle) {

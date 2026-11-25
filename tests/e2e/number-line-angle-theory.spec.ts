@@ -1482,3 +1482,85 @@ test("The waypoint chart separates both parts before counting its complement", a
   }
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("The collinear quartet removes triples and merges pairs offline", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-mat-kombinasyon-kaynak-034";
+  const model = figure(page, "Bir üçlü alanla, bir doğru bütün noktalarıyla belirlenir");
+  for (const route of [`/#/lesson?id=${id}`, `/#/cheatsheets?topic=topic-${id}`]) {
+    await page.goto(route);
+    await expect(model).toContainText("56 üçlüden 4 doğrusal üçlü çıkar. 52 üçgen");
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("28 nokta çifti. Ortak doğruyu veren 6 çiftin yerine bir doğru yaz. 23 farklı doğru");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Binomial selections and numeric factors are separate table columns offline", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-mat-binom-kaynak-035";
+  const model = figure(page, "Hedef üssü bir denklemle bul");
+  const table = page.getByRole("table").filter({ hasText: "Seçim adedi" });
+  for (const route of [`/#/lesson?id=${id}`, `/#/cheatsheets?topic=topic-${id}`]) {
+    await page.goto(route);
+    const r2 = table.getByRole("row").nth(3);
+    const terms = r2.getByRole("cell");
+    await expect(terms).toHaveCount(4);
+    for (const [index, entry] of ["2", "3", "1", "12"].entries()) {
+      await expect(terms.nth(index)).toHaveAccessibleName(entry);
+    }
+    await expect(model).toContainText("= 240");
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("Açılımda x¹ terimi yoktur");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Dice conditions change the eligible grid and denominator offline", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-mat-olasilik-kaynak-036";
+  const model = figure(page, "Yeni bilgi geldiğinde paydayı değiştir");
+  for (const route of [`/#/lesson?id=${id}`, `/#/cheatsheets?topic=topic-${id}`]) {
+    await page.goto(route);
+    await expect(model).toContainText("10 çift, ilk zarı 6 olan 4 çift");
+    await expect(model).toContainText("4/10 = 2/5");
+    await model.getByRole("slider", { name: /Toplamın alt sınırı/ }).press("End");
+    await expect(model).toContainText("Koşullu olasılık 1/1 = 1");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The source histogram places a boundary observation in exactly one class", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Ham ölçümleri eş genişlikli sınıflara ayır");
+  const table = page.getByRole("table").filter({ hasText: "Gözlemler" });
+  for (const route of ["/#/lesson?id=veri-analizi", "/#/cheatsheets?topic=detail-225"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Frekanslar 4, 4, 2. Toplam 10 ölçüm");
+    const classCells = table.getByRole("row").nth(2).getByRole("cell");
+    await expect(classCells).toHaveCount(3);
+    for (const [index, entry] of ["[6, 10)", "6, 7, 8, 8", "4"].entries()) {
+      await expect(classCells.nth(index)).toHaveAccessibleName(entry);
+    }
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("6 ve üstünde 6/10, yani %60");
+    await expect(model).toContainText("7 ve üstünün kesin adedi yalnız sütunlardan çıkarılamaz");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});

@@ -20,9 +20,9 @@ const COUNTS: Record<string, number> = {
   "tyt-mat-uslu-sayilar-kaynak-039": 6,
   "tyt-mat-permutasyon-kaynak-032": 5,
   "tyt-mat-tekrarli-permutasyon-kaynak-033": 5,
-  "tyt-mat-kombinasyon-kaynak-034": 4,
+  "tyt-mat-kombinasyon-kaynak-034": 5,
   "tyt-mat-binom-kaynak-035": 4,
-  "tyt-mat-olasilik-kaynak-036": 4,
+  "tyt-mat-olasilik-kaynak-036": 5,
 };
 const ALL = Object.keys(COUNTS);
 const fig = (guide: string, title: string) => {
@@ -70,6 +70,18 @@ describe("Forge062 TYT Matematik kaynak dersleri bölüm figürleri", () => {
     expect(out(perm, "Birbirinden ayrı kişilere ayrı boşluklar ver", 0, 1)).toContain("toplam 1.440 düzen");
     expect(out(repeat, "Zorunlu durakta yolu böl, kaçınanı tümleyenden bul")).toContain("3 yol. P’den hedefe 6 yol. P’den geçen 18");
     expect(out(repeat, "Zorunlu durakta yolu böl, kaçınanı tümleyenden bul", 0, 1)).toContain("uğramayan 17 yol");
+  });
+
+  it("doğrusal üçlüleri atar ve yalnız koşullu zar hücrelerini paydaya alır", () => {
+    const lines = "Bir üçlü alanla, bir doğru bütün noktalarıyla belirlenir";
+    const combination = "tyt-mat-kombinasyon-kaynak-034";
+    expect(out(combination, lines)).toContain("52 üçgen");
+    expect(out(combination, lines, 0, 1)).toContain("23 farklı doğru");
+    const probability = "tyt-mat-olasilik-kaynak-036";
+    const conditional = "Yeni bilgi geldiğinde paydayı değiştir";
+    expect(out(probability, conditional, 2)).toContain("6/36 = 1/6");
+    expect(out(probability, conditional, 9)).toContain("4/10 = 2/5");
+    expect(out(probability, conditional, 12)).toContain("1/1 = 1");
   });
 
   it("her adım ve sürgü ucu çizilir; erişilebilir ad, açıklama ve figcaption var; süs karakteri yok", () => {
