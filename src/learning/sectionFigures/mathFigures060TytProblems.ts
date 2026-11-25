@@ -35,9 +35,35 @@ const simpleLine: FigureDef = {
 const months: FigureDef = {
   caption:
     "Yıllık oran verildiğinde ay sayısı yılın kesrine çevrilir: m ay = m/12 yıl. Sürgüyle ay sayısını değiştir. Yıllık %16 ile 3 ayın faiz katsayısı 0,16·3/12 = 0,04’tür; süreyi 3 yıl almak getiriyi 12 kat büyütür.",
-  alt: "On iki aylık şerit; seçilen ay sayısı kadar hücre dolu; altında yılın kesri ve faiz katsayısı.",
+  alt: "Bir yıllık şeritte seçilen süre vurgulanır. İkinci adımda 4, 8 ve 12 aylık basit faiz ayrı işaretlerle gösterilir.",
+  steps: ["Yıllık %16 için katsayı", "2.400 TL için aylara göre faiz"],
   param: { label: "ay", min: 1, max: 12, step: 1, init: 3 },
-  draw: (m) => {
+  draw: (m, step) => {
+    if (step === 1) {
+      const principal = 2400;
+      const annualRate = 0.15;
+      const interest = (elapsed: number) => (principal * annualRate * elapsed) / 12;
+      const x = (elapsed: number) => elapsed * 0.65;
+      const els: El[] = [seg(v(0, 0), v(x(12), 0), { tone: "muted" })];
+      els.push(seg(v(0, 0), v(x(m), 0), { tone: "a", bold: true }));
+      for (const elapsed of [0, 4, 8, 12]) {
+        const at = x(elapsed);
+        els.push(
+          pt(v(at, 0), undefined, "n", "a"),
+          txt(v(at, 0.12), tl(interest(elapsed)), "n", { tone: "ink", small: true }),
+          txt(v(at, -0.1), `${elapsed} ay`, "s", { tone: "ink", small: true }),
+        );
+      }
+      els.push(...pad(-0.9, 1.1, x(12) + 0.9, -0.95));
+      return {
+        els,
+        readout: [
+          `${m} ay = ${m}/12 yıl. Faiz = ${tl(interest(m))}.`,
+          `Son tutar = ${tl(principal)} + ${tl(interest(m))} = ${tl(principal + interest(m))}.`,
+          "Basit faizde her ay 30 TL eklenir. Faize yeniden faiz işletilmez.",
+        ],
+      };
+    }
     const els: El[] = [];
     for (let i = 0; i < 12; i++) els.push(rect(i * 0.7, 0, 0.62, 0.9, i < m ? "a" : "muted", i < m));
     els.push(txt(v(0, 1.1), "1 yıl = 12 ay", "ne", { tone: "muted", small: true }));

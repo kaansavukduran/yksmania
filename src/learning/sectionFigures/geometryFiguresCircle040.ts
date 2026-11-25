@@ -110,6 +110,44 @@ const cember: Record<string, FigureDef> = {
       };
     },
   },
+  "Kirişin iki tarafında görülen yay değişir": {
+    caption: "Küçük AB yayı 100°. Köşenin hangi yayda olduğunu değiştir. Açı, köşenin üzerinde bulunmadığı yayın yarısıdır.",
+    alt: "A ve B’yi birleştiren kiriş kesikli. Çevre açının köşesi seçilen yay boyunca hareket eder. Köşenin karşısındaki yay kalın çizilir.",
+    steps: ["C büyük yayda", "D küçük yayda"],
+    param: { label: "Köşenin yay üzerindeki yeri", min: 0, max: 100, step: 5, init: 50, unit: "%" },
+    draw: (position, step) => {
+      const arcStart = 40;
+      const smallArc = 100;
+      const arcEnd = arcStart + smallArc;
+      const smallSide = step === 1;
+      const seenStart = smallSide ? arcEnd : arcStart;
+      const seenDegrees = smallSide ? 360 - smallArc : smallArc;
+      const vertexStart = smallSide ? arcStart : arcEnd;
+      const vertexDegrees = 360 - seenDegrees;
+      const location = vertexStart + vertexDegrees * (0.18 + position * 0.0064);
+      const A = P(arcStart);
+      const B = P(arcEnd);
+      const X = P(location);
+      const name = smallSide ? "D" : "C";
+      return {
+        els: [
+          circle(O, R, { tone: "ink" }),
+          { k: "poly", ps: Array.from({ length: 49 }, (_, i) => P(seenStart + (seenDegrees * i) / 48)), open: true, tone: "b", bold: true },
+          seg(A, B, { tone: "muted", dash: true }),
+          seg(X, A, { tone: "a", bold: true }),
+          seg(X, B, { tone: "a", bold: true }),
+          ang(X, A, B, `${seenDegrees / 2}°`, { tone: "a" }),
+          pt(A, "A", "e"),
+          pt(B, "B", "w"),
+          pt(X, name, smallSide ? "n" : "s", "a"),
+        ],
+        readout: [
+          `Görülen ${smallSide ? "büyük" : "küçük"} AB yayı ${seenDegrees}°. A${name}B = ${seenDegrees}° / 2 = ${seenDegrees / 2}°.`,
+          "Kirişin karşı tarafındaki çevre açıyla toplam 180° olur.",
+        ],
+      };
+    },
+  },
   "Çapı gören çevre açı dik açıdır": {
     caption: "AB çap. C'yi çember üzerinde gezdir: ACB açısı her zaman 90°'dir; hipotenüs AB, çevrel çemberin çapıdır.",
     alt: "Çemberde yatay çap AB ve çember üzerindeki C noktasından A ve B'ye çizilen kenarlar; C'de dik açı işareti.",

@@ -77,6 +77,24 @@ export const tytTheorySupplements: Readonly<Record<string, TheorySupplement | un
     summary: "13 ve 20 yan kenarlar, BD=24. Yarım BD=12’den diğer köşegen parçaları 5 ve 16 çıkar. Alan 252, çevre 66.",
     sheetTitle: "Deltoid",
   },
+  "faiz-problemleri": {
+    title: "Ayı ve günü oranla aynı döneme çevir",
+    figureTitle: "Ayı ve günü oranla aynı döneme çevir",
+    paragraphs: [
+      "2.400 TL için yıllık %15 basit faiz 360 TL, aylık faiz 30 TL olur. Sekiz ay 8/12 yıl olduğundan faiz 360·8/12=240 TL ve son tutar 2.640 TL. On iki aydaki 360 TL ile karşılaştırarak faiz ile son tutarı ayır.",
+    ],
+    summary: "2.400 TL ve yıllık %15. 8 ay = 8/12 yıl. Faiz 240 TL, son tutar 2.640 TL. Yatırılan 2.400 TL faiz hesabına temel tutardır.",
+    sheetTitle: "Ayı ve günü oranla aynı döneme çevir",
+  },
+  "tyt-geo-cember-aci-040": {
+    title: "Kirişin iki tarafında görülen yay değişir",
+    figureTitle: "Kirişin iki tarafında görülen yay değişir",
+    paragraphs: [
+      "Küçük AB yayı 100° iken C büyük yaydaysa C’yi içermeyen 100°’lik yay açı hesabına girer. ACB=50°. D küçük yaydaysa gördüğü yay 360°−100°=260° olur. ADB=130° ve iki açı toplamı 180°.",
+    ],
+    summary: "Aynı AB kirişinin farklı tarafındaki C ve D için 100° ve 260° görülür. Çevre açılar 50° ve 130°.",
+    appendSection: true,
+  },
   "kesir-problemleri": {
     title: "Kalanın kesri yeni bir taban kullanır",
     figureTitle: "Kalanın kesri yeni bir taban kullanır",

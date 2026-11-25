@@ -1,8 +1,8 @@
 {
-  "version": "0.169.0",
+  "version": "0.170.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Kâr Zarar dersinde sabit gideri, başabaşı ve ilk kârlı satış adedini ayır. Deltoidde dik köşegenlerle alanı ve çevreyi adım adım hesapla.",
-    "en": "Distinguish break-even from the first profitable sale and use the perpendicular diagonals of a kite to find its area and perimeter."
+    "tr": "Faiz Problemleri’nde yıllık oranı ay çizelgesinden oku. Çemberde Açılar’da aynı kirişin iki tarafında neden 50 ve 130 derece oluştuğunu yaylar üzerinden karşılaştır.",
+    "en": "Read simple interest on a month timeline and compare the arcs seen by inscribed angles on opposite sides of one chord."
   }
 }

@@ -853,7 +853,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
 | TYT Matematik | 45 / 45 | 45 · 193 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
-| TYT Geometri | 19 / 19 | 19 · 183 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
+| TYT Geometri | 19 / 19 | 19 · 184 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 283 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 155 | 515 / 515 · %100,00 | 11 / 36 · %30,56 | 54 soru · 9 kitapçık | 0 |
@@ -867,7 +867,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2355** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2356** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
@@ -3773,3 +3773,9 @@ Yüzde Problemleri fiziksel 12 ve Kare fiziksel 2 ile 5 doğrulandı. TypeScript
 Kâr Zarar’da gelir ve maliyet aynı grafikte satış adedine göre değişiyor. 700 TL sabit gider ve 20 TL birim katkıda 35 adet başabaş, 36 adet 20 TL kâr, 40 adet 100 TL kâr. Deltoidde 13 ve 20 birimlik eş kenar çiftleri ile 24 birimlik köşegen korunarak diğer köşegen 5+16, alan 252, çevre 66 bulunuyor.
 
 Kâr Zarar fiziksel 12 ve Deltoid fiziksel 5 karşılaştırıldı. TypeScript, 32 hedef birim, 5 Chromium akışı, 9 çizim yerleşimi ve 323 çevrimdışı varlık geçti. Öğrenme kayıtları değişmeden ders ve Kopya Kağıdı üzerinden sınandı. Sırada Faiz Problemleri fiziksel 1 ve Çemberde Açılar fiziksel 2 ile 5 var.
+
+## TYT Matematik ve Geometri · 0.170.0 adayı
+
+Faiz Problemleri’nde 2.400 TL ve yıllık %15 için 0, 4, 8 ve 12 ayın faizini zaman çizgisinden oku. Sekiz ayda faiz 240 TL ve son tutar 2.640 TL. Çemberde Açılar’da küçük AB yayı 100° iken C büyük yaydayken açı 50°, D küçük yaydayken açı 130°. Sürgü, köşeyi aynı yayda hareket ettirirken açının sabit kaldığını gösteriyor.
+
+Faiz Problemleri fiziksel 1, Çemberde Açılar fiziksel 2 ile 5 karşılaştırıldı. İlk TypeScript kontrolünde noktanın koordinatına yanlış erişim düzeltildi. Ardından TypeScript, 37 hedef birim, 5 Chromium, 9 çizim yerleşimi ve 323 çevrimdışı varlık geçti. Sırada Karışım Problemleri fiziksel 1 ve Çemberde Uzunluk fiziksel 2 ile 5 var.

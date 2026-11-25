@@ -996,3 +996,51 @@ test("A kite with unequal sides has unequal parts on its symmetry diagonal", asy
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("An eight-month interest timeline distinguishes interest from the balance", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Ayı ve günü oranla aynı döneme çevir");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto("/#/lesson?id=faiz-problemleri");
+  await expect(model).toContainText("0,04");
+  await next.press("Enter");
+  const months = model.getByRole("slider");
+  await months.fill("8");
+  await expect(model).toContainText("8 ay = 8/12 yıl. Faiz = 240 TL");
+  await expect(model).toContainText("2.400 TL + 240 TL = 2.640 TL");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-215");
+  await next.press("Enter");
+  await months.press("End");
+  await expect(model).toContainText("12 ay = 12/12 yıl. Faiz = 360 TL");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Inscribed angles on opposite sides of a chord are supplementary", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-cember-aci-040";
+  const model = figure(page, "Kirişin iki tarafında görülen yay değişir");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  const position = model.getByRole("slider");
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("ACB = 100° / 2 = 50°");
+  await position.press("Home");
+  await expect(model).toContainText("ACB = 100° / 2 = 50°");
+  await next.press("Enter");
+  await expect(model).toContainText("ADB = 260° / 2 = 130°");
+  await position.press("End");
+  await expect(model).toContainText("ADB = 260° / 2 = 130°");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await next.press("Enter");
+  await expect(model).toContainText("ADB = 260° / 2 = 130°");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
