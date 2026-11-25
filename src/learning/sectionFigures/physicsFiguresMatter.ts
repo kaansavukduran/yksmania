@@ -200,10 +200,50 @@ const capillary: FigureDef = {
   },
 };
 
+const swappedDensity: FigureDef = {
+  caption: "Aynı üç ölçümle eksenleri değiştir. Doğrular benzer görünebilir. Birim ve koordinatlardan eğimin özkütle mi, tersi mi olduğunu oku.",
+  alt: "Ölçülen hacimler 10, 20, 30 cm³; karşılık gelen kütleler 20, 40, 60 g. İlk adımda hacim yatay eksende. İkinci adımda kütle yatay eksene geçer.",
+  steps: ["Kütle düşeyde", "Hacim düşeyde"],
+  draw: (_, step) => {
+    const records = [[10, 20], [20, 40], [30, 60]] as const;
+    const massVertical = step === 0;
+    const xValues = records.map((row) => row[massVertical ? 0 : 1]);
+    const yValues = records.map((row) => row[massVertical ? 1 : 0]);
+    const x = (value: number) => value * 6 / xValues[2];
+    const y = (value: number) => value * 3.6 / yValues[2];
+    const els: El[] = [
+      vec(v(0, 0), v(6.65, 0), { tone: "ink" }),
+      vec(v(0, 0), v(0, 4.1), { tone: "ink" }),
+      seg(v(0, 0), v(x(xValues[2]), y(yValues[2])), { tone: "a", bold: true }),
+      txt(v(0, 4.12), massVertical ? "Kütle (g)" : "Hacim (cm³)", "n", { tone: "ink", small: true }),
+      txt(v(5.8, -0.58), massVertical ? "Hacim (cm³)" : "Kütle (g)", "s", { tone: "ink", small: true }),
+      txt(v(-0.12, -0.1), "0", "sw", { tone: "ink", small: true }),
+    ];
+    xValues.forEach((value, i) => {
+      els.push(txt(v(x(value), -0.1), String(value), "s", { tone: "ink", small: true }));
+      els.push(txt(v(-0.15, y(yValues[i])), String(yValues[i]), "w", { tone: "ink", small: true }));
+      els.push(ball(v(x(value), y(yValues[i])), 0.08, "c"));
+    });
+    const first = v(x(xValues[0]), y(yValues[0]));
+    const last = v(x(xValues[2]), y(yValues[2]));
+    const corner = v(last[0], first[1]);
+    els.push(seg(first, corner, { tone: "c", dash: true }), seg(corner, last, { tone: "c", dash: true }));
+    els.push(txt(v(-0.9, 4.85), "", "c"), txt(v(6.8, -1.03), "", "c"));
+    const rise = yValues[2] - yValues[0];
+    const run = xValues[2] - xValues[0];
+    return { els, readout: [
+      `Eğim ${rise}/${run} = ${fmt(rise / run)} ${massVertical ? "g/cm³" : "cm³/g"}.`,
+      massVertical ? "Kütle farkı / hacim farkı. Özkütle 2 g/cm³."
+        : "Hacim farkı / kütle farkı. Bu, özkütlenin tersidir. Madde hâlâ 2 g/cm³.",
+    ] };
+  },
+};
+
 export const physicsFiguresMatter: Record<string, Record<string, FigureDef>> = {
   "madde-ozkutle": {
     "Hacim ölçerken boşluk ve batma koşuluna bak": mezur,
     "Dara içeren m–V grafiği": tare,
+    "Eksenler değişince eğimin birimi değişir": swappedDensity,
     "Özkütle oranı neden miktara bağlı değildir?": slopes,
     "Karışımda kütle ve son hacmi ayır": mix,
     "Yapışma, yüzey ve kılcal boru": capillary,

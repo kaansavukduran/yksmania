@@ -1,8 +1,8 @@
 {
-  "version": "0.182.0",
+  "version": "0.183.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Fizik, Kimya ve Biyoloji girişinde alınan yol ve yer değiştirme, sistem sınırına göre kütle ve hücre planı kaynak örnekleri ekleniyor.",
-    "en": "Introductory physics, chemistry and biology lessons compare distance, system mass boundaries and basic cell plans."
+    "tr": "Özkütle grafiğinde iki eksen düzeni, kimya projesindeki beş disiplin ve çimlenme verisinin ölçüm sınırı ders ve Kopya Kağıdında birlikte incelenir.",
+    "en": "Density axes, roles in a chemistry project and the observation limits of germination data are available in lessons and cheat sheets."
   }
 }

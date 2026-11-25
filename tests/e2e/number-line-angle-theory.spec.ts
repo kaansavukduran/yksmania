@@ -1659,3 +1659,58 @@ test("The cell table shows ribosomes in both normal cell plans offline", async (
   }
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Swapping density axes changes the slope unit without changing the sample", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Eksenler değişince eğimin birimi değişir");
+  for (const route of ["/#/lesson?id=madde-ozkutle", "/#/cheatsheets?topic=detail-115"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Eğim 40/20 = 2 g/cm³");
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("Eğim 20/40 = 0,5 cm³/g");
+    await expect(model).toContainText("Madde hâlâ 2 g/cm³");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Chemistry project rows match the action to the chemistry discipline", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const table = page.getByRole("table").filter({ hasText: "Fabrika ölçeğinde üretim" });
+  for (const route of ["/#/lesson?id=kimya-disiplinleri", "/#/cheatsheets?topic=detail-140"]) {
+    await page.goto(route);
+    const rows = table.getByRole("row");
+    await expect(rows).toHaveCount(6);
+    for (const [index, field] of ["Organik kimya", "Biyokimya", "Analitik kimya", "Fizikokimya", "Endüstriyel kimya"].entries()) {
+      await expect(rows.nth(index + 1).getByRole("cell", { name: field, exact: true })).toBeVisible();
+    }
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The hypothetical germination graph distinguishes zero from an unmeasured point", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Ölçülen en yüksek değer ile veri dışı tahmini ayır");
+  const table = page.getByRole("table").filter({ hasText: "16/20" });
+  for (const route of ["/#/lesson?id=bilimsel-yontem", "/#/cheatsheets?topic=detail-2"]) {
+    await page.goto(route);
+    await expect(model).toContainText("25 °C’de 16/20 tohum çimlendi (%80)");
+    await expect(table.getByRole("row")).toHaveCount(6);
+    await expect(table.getByRole("row").nth(3).getByRole("cell", { name: "%80", exact: true })).toBeVisible();
+    const temperature = model.getByRole("slider", { name: /İncelenen sıcaklık/ });
+    await temperature.press("End");
+    await expect(model).toContainText("40 °C’de ölçüm yok");
+    await expect(model).toContainText("Kaç tohumun çimleneceği bu tablodan bilinmez");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});

@@ -1,3 +1,4 @@
+import { germinationSource002, germinationTotal } from "./germinationSource002";
 import type { GuideSection } from "./guides/types";
 import { signedBinomial035 } from "./signedBinomialSource035Model";
 import { statisticsSource037Classes } from "./statisticsSource037Revision";
@@ -17,6 +18,52 @@ interface TheorySupplement {
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "madde-ozkutle": [{
+    title: "Eksenler değişince eğimin birimi değişir",
+    figureTitle: "Eksenler değişince eğimin birimi değişir",
+    paragraphs: [
+      "Sabit sıcaklık ve basınçta hacim 10, 20, 30 cm³ iken kütle 20, 40, 60 g. Kütle düşeyse eğim (60−20)/(30−10)=2 g/cm³ olur. Hacim düşeyse eğim (30−10)/(60−20)=0,5 cm³/g. Grafiğin eksenlerini değiştirdin. Maddenin özkütlesi 2 g/cm³ kaldı.",
+      "Kap kütlesi ölçüme eklenirse doğru orijinden geçmeyebilir. O durumda bir noktanın değerlerini doğrudan bölmek kabı da hesaba katar. İki nokta arasındaki farkla eğim yine bulunur.",
+    ],
+    summary: "Kütle düşeydeyse eğim 2 g/cm³. Hacim düşeydeyse 0,5 cm³/g, yani özkütlenin tersi. Doğrunun görünüşü yerine birimi ve iki koordinat farkını oku.",
+    appendSection: true,
+  }],
+  "kimya-disiplinleri": [{
+    title: "Bir projede yapılan işi okuyup alanı seç",
+    paragraphs: [
+      "Aynı ilaç projesi birden çok kimya alanı içerebilir. Her aşamada yapılan işi ayrı oku. Maddenin adından çok incelenen hedef, ölçüm veya karara bak.",
+      "Bir enzimin canlıdaki etkisini araştırmak biyokimyaya bağlıdır. Üretilen maddenin saflığını ölçmek analitik kimyaya, sıcaklıkla tepki hızının ilişkisini araştırmak fizikokimyaya bağlıdır.",
+    ],
+    summary: "Disiplini seçmek için cümledeki işe bak. Sentez, canlı süreç, saflık ölçümü, hıza etki ve üretim ölçeği ayrı görevlerdir.",
+    table: {
+      headers: ["Aşama", "İş", "Kimya alanı"],
+      rows: [
+        ["1", "Organik molekül oluşturma", "Organik kimya"],
+        ["2", "Enzim etkisini inceleme", "Biyokimya"],
+        ["3", "Saflığı ölçme", "Analitik kimya"],
+        ["4", "Sıcaklık ile hız ilişkisini inceleme", "Fizikokimya"],
+        ["5", "Fabrika ölçeğinde üretim", "Endüstriyel kimya"],
+      ],
+      layout: "table",
+    },
+    appendSection: true,
+  }],
+  "bilimsel-yontem": [{
+    title: "Ölçülen en yüksek değer ile veri dışı tahmini ayır",
+    figureTitle: "Ölçülen en yüksek değer ile veri dışı tahmini ayır",
+    paragraphs: [
+      "Bu sayılar varsayımsal öğretim verisidir. Her sıcaklıkta aynı türden 20 tohum için yedinci gün çimlenenler sayılmıştır. Ölçülen en yüksek sayı 25 °C’de 16, oran %80. Sıcaklık artarken 25 °C’den sonra sayı azalır.",
+      "40 °C ölçülmediği için kesin bir çimlenme sayısı yazılamaz. Çizginin iki ölçümü birleştirmesi aradaki her sıcaklıkta deney yapıldığı anlamına gelmez. Türün kesin optimumu için daha sık sıcaklıklar ve bağımsız tekrarlar gerekir.",
+    ],
+    summary: "25 °C’de 16/20 (%80) ölçülen en yüksek değerdir. 40 °C’de sayı bilinmez. Noktalar ölçümü gösterir, onları bağlayan çizgi yeni ölçüm değildir.",
+    table: {
+      headers: ["Sıcaklık (°C)", "Çimlenen tohum", "Oran"],
+      rows: germinationSource002.map(({ temperature, germinated }) =>
+        [String(temperature), `${germinated}/${germinationTotal}`, `%${100 * germinated / germinationTotal}`]),
+      layout: "table",
+    },
+    appendSection: true,
+  }],
   "fizik-bilimine-giris": [{
     title: "Geri dönüşte yolu ve yer değiştirmeyi ayır",
     figureTitle: "Geri dönüşte yolu ve yer değiştirmeyi ayır",
