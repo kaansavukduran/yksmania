@@ -1314,3 +1314,49 @@ test("Two rolls of the same paper keep lateral area and change volume", async ({
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Triple intersections belong to only one displayed Venn region", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Üç kümenin ayrık bölgelerini içten dışa doldur");
+  await page.goto("/#/lesson?id=kumeler");
+  await expect(model).toContainText("Tam iki grupta 16 · Üçünde 3");
+  await expect(model).toContainText("Birleşim 41 · Dışarıda 9");
+  const slider = model.getByRole("slider", { name: /Üç kümede ortak kişi/ });
+  await slider.press("Home");
+  await expect(model).toContainText("Tam iki grupta 25 · Üçünde 0");
+  await expect(model).toContainText("Birleşim 38 · Dışarıda 12");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-222");
+  await expect(model).toContainText("Yalnız A 10 · Yalnız B 6 · Yalnız C 6");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The hexagonal pyramid has a different hypotenuse in each cross-section", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-geo-piramitler-032";
+  const model = figure(page, "Altıgen piramitte üç uzunluğun uçlarını karşılaştır");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto(`/#/lesson?id=${id}`);
+  await expect(model).toContainText("Dik yükseklik 3 cm");
+  await expect(model).toContainText("Yan yüz yüksekliği 2√3 cm. Yan ayrıt √13 cm");
+  await next.press("Enter");
+  await expect(model).toContainText("Kenar ortasından kesit");
+  await checkFrame(page, model);
+  await next.press("Enter");
+  await expect(model).toContainText("Köşeden kesit");
+  await expect(model).toContainText("Kapalı toplam alan 18√3 cm²");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${id}`);
+  await expect(model).toContainText("Hacim 6√3 cm³");
+  await model.getByRole("slider", { name: /Altıgenin kenarı/ }).press("End");
+  await expect(model).toContainText("Hacim 54√3 cm³");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

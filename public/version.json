@@ -1,8 +1,8 @@
 {
-  "version": "0.176.0",
+  "version": "0.177.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Çarpanlara Ayırma’da x² yerine u yazarak dört gerçek kökü grafikte gör. Silindir’de aynı dikdörtgenin iki sarımının farklı hacimlerini karşılaştır.",
-    "en": "See four real roots by substituting for x squared and compare the volumes from rolling one rectangular sheet in two directions."
+    "tr": "Kümeler’de üçlü kesişimden başlayarak ayrık bölgeleri say. Altıgen piramitte dik yüksekliği, yan yüz yüksekliğini ve yan ayrıtı iki gerçek kesitle ayır.",
+    "en": "Count disjoint regions from the triple intersection and distinguish three pyramid lengths using two cross-sections."
   }
 }

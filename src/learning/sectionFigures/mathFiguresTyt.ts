@@ -1,4 +1,5 @@
 import { ball, circle, poly, seg, txt, v, vec, type El, type FigureDef, type Tone, type V } from "./figureKit";
+import { threeSetCount029, threeSetCount029Example } from "../threeSetCountSource029Model";
 
 /*
  * TYT Matematik: absolute value as distance on the number line, a two-set
@@ -201,12 +202,53 @@ const bases: FigureDef = {
   },
 };
 
+const threeSetRegions: FigureDef = {
+  caption: "Üçlü kesişimden başla. İkili toplamdan üçlüdeki kişileri çıkar. Her kişi yalnız bir bölgede sayılır.",
+  alt: "A, B ve C kümelerinin kesişen üç dairesi. Her ayrık bölgenin içinde kendi kişi sayısı, dairelerin dışında, dikdörtgenin içinde hiçbir kümeye girmeyenlerin sayısı var.",
+  param: {
+    label: "Üç kümede ortak kişi",
+    min: 0,
+    max: Math.min(threeSetCount029Example.ab, threeSetCount029Example.ac, threeSetCount029Example.bc),
+    step: 1,
+    init: threeSetCount029Example.abc,
+  },
+  draw: (triple) => {
+    const { regions, union, exactlyTwo } = threeSetCount029({ ...threeSetCount029Example, abc: triple });
+    const { onlyA: a, onlyB: b, onlyC: c, onlyAB: ab, onlyAC: ac, onlyBC: bc, outside } = regions;
+    const regionLabels: [number, number, number][] = [
+      [-2.13, 0.69, a], [2.13, 0.69, b], [0, -2.06, c],
+      [0, 1.48, ab], [-1.03, -0.81, ac], [1.03, -0.81, bc],
+      [0, 0.07, triple], [2.83, -2.32, outside],
+    ];
+    return {
+      els: [
+        poly([v(-3.44, -2.88), v(3.44, -2.88), v(3.44, 2.91), v(-3.44, 2.91)], { tone: "muted" }),
+        circle(v(-1.13, 0.65), 1.95, { tone: "a", fill: "a" }),
+        circle(v(1.13, 0.65), 1.95, { tone: "b", fill: "b" }),
+        circle(v(0, -0.73), 1.95, { tone: "c", fill: "c" }),
+        txt(v(-2.63, 1.97), "A", "nw", { tone: "ink", small: true }),
+        txt(v(2.63, 1.97), "B", "ne", { tone: "ink", small: true }),
+        txt(v(1.5, -2.12), "C", "se", { tone: "ink", small: true }),
+        ...regionLabels.map(([x, y, count]) => txt(v(x, y), String(count), "c", { tone: "ink", bold: true })),
+      ],
+      readout: [
+        `Yalnız A ${a} · Yalnız B ${b} · Yalnız C ${c}`,
+        `Tam iki grupta ${exactlyTwo} · Üçünde ${triple}`,
+        `Birleşim ${union} · Dışarıda ${outside}`,
+      ],
+    };
+  },
+};
+
 export const mathFiguresTyt: Record<string, Record<string, FigureDef>> = {
   "mutlak-deger": {
     "Eşitlik iki simetrik uzaklık noktası verir": absEq,
     "Küçüklük içeriyi, büyüklük dışarıyı seçer": absIneq,
   },
-  kumeler: { "Sözel problemde önce dört ayrık bölgeyi doldur": venn },
+  kumeler: {
+    "Sözel problemde önce dört ayrık bölgeyi doldur": venn,
+    "Üç kümenin ayrık bölgelerini içten dışa doldur": threeSetRegions,
+  },
   "oran-oranti": {
     "Ters orantı: sabit işte çarpım": proportion,
     "Pompa sayısını değiştir, sabit işi koru": pumpHours,

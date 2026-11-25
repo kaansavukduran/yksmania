@@ -852,8 +852,8 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
-| TYT Matematik | 45 / 45 | 45 · 198 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
-| TYT Geometri | 19 / 19 | 19 · 190 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
+| TYT Matematik | 45 / 45 | 45 · 199 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
+| TYT Geometri | 19 / 19 | 19 · 191 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 283 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 155 | 515 / 515 · %100,00 | 11 / 36 · %30,56 | 54 soru · 9 kitapçık | 0 |
@@ -867,7 +867,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2367** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2369** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
@@ -3815,3 +3815,9 @@ Grafik Problemleri ve Küp fiziksel 2 ile 5. sayfalardan karşılaştırıldı. 
 Çarpanlara Ayırma’da u=x² yazıp bulunan u=1 ve u=4 değerleri grafikte −2, −1, 1 ve 2 köklerine geri dönüyor. Silindir’de 12π×8 dikdörtgen iki yönde sarılıyor. İki durumda da yan alan 96π cm². Hacimler 288π ve 192 cm³, oran 3π/2.
 
 Çarpanlara Ayırma fiziksel 2 ile 5 ve Silindir fiziksel 5 karşılaştırıldı. TypeScript, 2.925 hedef birim, 5 Chromium akışı, 6 çizim yerleşimi ve 323 çevrimdışı varlık geçti. Önceki dört çarpanlara ayırma çizimi ile yeni kök grafiği adlarıyla denetlendi. Sırada Kümeler fiziksel 2 ve 5, Piramit fiziksel 6 var.
+
+## TYT Matematik ve Geometri · 0.177.0 adayı
+
+Kümeler’de üçlü kesişim değişince bütün ayrık bölgeler ve dışarıdaki kişi sayısı birlikte güncelleniyor. Kaynak örneğinde tam iki grupta 16, birleşimde 41, dışarıda 9 kişi var. Piramit’te tepeyi kenar ortasına ve köşeye bağlayan iki kesit, 3 cm dik yükseklikle 2√3 cm yüz yüksekliği ve √13 cm yan ayrıtı ayırıyor.
+
+Kümeler fiziksel 2 ile 5, Piramit fiziksel 6 karşılaştırıldı. TypeScript, 2.932 hedef birim, 5 Chromium akışı ve 323 çevrimdışı varlık geçti. Geçici disk doluluğu giderilince aynı tarayıcı akışı yeniden çalıştı. 320, 375 ve 1280 pikselde 6 yerleşim geçti. Sırada Kartezyen Çarpım, Koni, Mantık ve Küre var.

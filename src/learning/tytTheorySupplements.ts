@@ -207,6 +207,26 @@ export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupple
     summary: "12π×8 dikdörtgenin iki sarımı 288π ve 192 cm³ verir. Oran 3π/2, yan alan her ikisinde 96π cm².",
     appendSection: true,
   }],
+  "kumeler": [{
+    title: "Üç kümenin ayrık bölgelerini içten dışa doldur",
+    figureTitle: "Üç kümenin ayrık bölgelerini içten dışa doldur",
+    paragraphs: [
+      "50 kişinin A, B, C gruplarında 25, 20, 18 kayıt var. İkili kesişimler 10, 8, 7 ve üçlü kesişim 3. Üçlüdeki 3 kişiyi ikililerden birer kez çıkar. Tam iki grupta 7+5+4=16 kişi kalır.",
+      "Yalnız A 10, yalnız B 6, yalnız C 6. Birleşim 10+6+6+16+3=41. Hiçbir grupta 50−41=9 kişi. Venn’de bölge boyu yerine içindeki sayıyı oku.",
+    ],
+    summary: "Üçlü 3. Tam iki 16. Yalnız A, B, C sırasıyla 10, 6 ve 6. Birleşim 41, dışarıda 9.",
+    appendSection: true,
+  }],
+  "tyt-geo-piramitler-032": [{
+    title: "Altıgen piramitte üç uzunluğun uçlarını karşılaştır",
+    figureTitle: "Altıgen piramitte üç uzunluğun uçlarını karşılaştır",
+    paragraphs: [
+      "Düzgün altıgende kenar 2 cm, iç yarıçap √3 cm ve merkezin bir köşeye uzaklığı 2 cm. Tepe taban merkezinin 3 cm üzerindedir. Taban kenarının ortasına giden yüz yüksekliği √(9+3)=2√3 cm. Bir köşeye giden yan ayrıt √(9+4)=√13 cm.",
+      "Taban alanı 6√3 cm². Altı yan üçgen toplam 12√3 cm², kapalı toplam 18√3 cm². Hacim için dik yükseklik kullanılır: 6√3·3/3=6√3 cm³.",
+    ],
+    summary: "a=2 ve h=3 için iç yarıçap √3, yüz yüksekliği 2√3, yan ayrıt √13. Toplam alan 18√3 cm², hacim 6√3 cm³.",
+    appendSection: true,
+  }],
   "kesir-problemleri": [{
     title: "Kalanın kesri yeni bir taban kullanır",
     figureTitle: "Kalanın kesri yeni bir taban kullanır",

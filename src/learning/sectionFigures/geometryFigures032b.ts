@@ -541,6 +541,67 @@ const dikPrizmalar: Record<string, FigureDef> = {
 };
 
 const piramitler: Record<string, FigureDef> = {
+  "Altıgen piramitte üç uzunluğun uçlarını karşılaştır": {
+    caption: "Dik yükseklik merkezde biter. Yan yüz yüksekliği kenarın ortasına, yan ayrıt köşeye gider. İki kesitte aynı dik yüksekliği bul.",
+    alt: "Dik altıgen piramit ve iki kesit. İlk çizim merkez, kenar orta noktası ve köşeye giden üç uzunluğu gösterir. Kesitler dik yüksekliği aynı tutar.",
+    steps: ["Piramitte üç uzunluk", "Kenar ortasından kesit", "Köşeden kesit"],
+    param: { label: "Altıgenin kenarı", min: 2, max: 6, step: 1, init: 2, unit: " cm" },
+    draw: (a, step) => {
+      const h = 3;
+      const scale = 0.86;
+      const rho = (a * Math.sqrt(3)) / 2;
+      const slant = Math.hypot(h, rho);
+      const edgeSquared = h ** 2 + a ** 2;
+      const areaCoefficient = (3 * a ** 2) / 2;
+      const readout = [
+        `Dik yükseklik ${h} cm. Taban iç yarıçapı ${fmt(a / 2, 1)}√3 cm.`,
+        `Yan yüz yüksekliği ${a === 2 ? "2√3" : "yaklaşık " + fmt(slant, 2)} cm. Yan ayrıt √${edgeSquared} cm.`,
+        `Taban ${fmt(areaCoefficient, 1)}√3 cm². Hacim ${fmt(areaCoefficient * h / 3, 1)}√3 cm³.`,
+        a === 2 ? "Yan alan 12√3 cm². Kapalı toplam alan 18√3 cm²." : `Kapalı toplam alan yaklaşık ${fmt(areaCoefficient * Math.sqrt(3) + 3 * a * slant, 2)} cm².`,
+      ];
+      if (step === 0) {
+        const base = regularBase(6, a * scale);
+        const T: P3 = [0, h * scale, 0];
+        const O: P3 = [0, 0, 0];
+        const A: P3 = [base[0][0], 0, base[0][1]];
+        const M: P3 = [(base[0][0] + base[1][0]) / 2, 0, (base[0][1] + base[1][1]) / 2];
+        const { els } = pyramid(base, T, { fills: { 0: "muted" } });
+        return {
+          els: [
+            ...els,
+            seg(proj(T), proj(O), { tone: "a", dash: true }),
+            seg(proj(T), proj(M), { tone: "b", bold: true }),
+            seg(proj(T), proj(A), { tone: "c", bold: true }),
+            p3(T, "T", "n"),
+            p3(O, "O", "s"),
+          ],
+          readout,
+        };
+      }
+      const halfBase = (step === 1 ? rho : a) * scale;
+      const halfLabel = step === 1 ? "M" : "A";
+      const L = v(-halfBase, 0);
+      const R = v(halfBase, 0);
+      const O = v(0, 0);
+      const T = v(0, h * scale);
+      return {
+        els: [
+          poly([L, R, T], { fill: "muted", tone: "ink" }),
+          poly([O, R, T], { fill: "b", tone: "b", thin: true }),
+          seg(O, T, { tone: "a", bold: true }),
+          right(O, T, R, "ink"),
+          pt(T, "T", "n"),
+          pt(O, "O", "s"),
+          pt(R, halfLabel, "se"),
+          txt(mid(O, T), "h", "w", { small: true, tone: "a" }),
+          txt(mid(T, R), step === 1 ? "s" : "e", "ne", { small: true, tone: "b" }),
+          txt(mid(O, R), step === 1 ? "ρ" : "a", "s", { small: true, tone: "ink" }),
+        ],
+        readout,
+      };
+    },
+  },
+
   "Piramidi bir taban ve bir tepeyle kur": {
     caption:
       "Taban kenar sayısını değiştir: n kenarlı tabanlı piramitte n + 1 köşe, 2n ayrıt ve n + 1 yüz vardır. Yan yüzlerin hepsi üçgendir.",
