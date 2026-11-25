@@ -5,6 +5,7 @@ import {
 import { txt, type Lesson } from "../domain/model";
 import type { CheatSheet } from "./cheatsheetContent";
 import type { LessonGuide } from "./guides/types";
+import { probabilityExamples200, probabilitySection200, probabilitySheet200 } from "./countingDepth200";
 import { probabilityPractice036 } from "./probabilityStatisticsPractice041";
 import { probabilitySource036Sections } from "./probabilitySource036Teaching";
 
@@ -16,7 +17,7 @@ export const probabilityGuide036: LessonGuide = {
     "Birleşim, tam biri ve tümleyeni farklı olaylar olarak yaz.",
     "Koşul geldiğinde paydayı güncelle ve bağımsızlığı denetle.",
   ],
-  sections: probabilitySource036Sections,
+  sections: [...probabilitySource036Sections, probabilitySection200],
   examples: [
     {
       title: "Toplam sınırı geldiğinde üç ayrı olasılığı karşılaştır",
@@ -99,6 +100,7 @@ export const probabilityGuide036: LessonGuide = {
         "Geri koymadan sırasız uygun ikili 5·3=15, bütün ikililer C(8,2)=28.",
       pitfall: "Geri koyma bilgisi değişince ikinci çekişi yeniden kurmamak.",
     },
+    ...probabilityExamples200,
   ],
   recall: [
     {
@@ -176,6 +178,7 @@ export const probabilitySheet036: CheatSheet = {
         "Bağımsızlıkta P(A∩B)=P(A)P(B). İkisi de pozitifse ayrık olaylar bağımsız değildir. Deneysel oran gerçekleşme/deneme sayısıdır, tek başına teorik olasılık vermez.",
       ],
     },
+    probabilitySheet200,
   ],
   cautions: probabilityGuide036.examples.map(({ pitfall }) => pitfall),
   examples: probabilityGuide036.examples.map(

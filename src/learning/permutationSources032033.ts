@@ -7,6 +7,7 @@ import type { LessonGuide, WorkedExample } from "./guides/types";
 import { permutationPractice032, repeatedPermutationPractice033 } from "./permutationPractice032033";
 import { permutationSource032Sections } from "./permutationSource032Teaching";
 import { repeatedPermutationSource033Sections } from "./repeatedPermutationSource033Teaching";
+import { permutationExamples200, permutationSection200, permutationSheet200, repeatedExamples200, repeatedSection200, repeatedSheet200 } from "./countingDepth200";
 
 const permutationExamples: WorkedExample[] = [
   {
@@ -100,8 +101,8 @@ export const permutationGuides032033: LessonGuide[] = [
       "Yuvaya, bloğa veya boşluğa göre hesap kur.",
       "Dönüş, koltuk numarası ve önce gelme koşullarını açıkla.",
     ],
-    sections: permutationSource032Sections,
-    examples: permutationExamples,
+    sections: [...permutationSource032Sections, permutationSection200],
+    examples: [...permutationExamples, ...permutationExamples200],
     recall: [
       { prompt: "P(n,0) neden 1?", answer: "Boş sıralı liste bir tek sonuçtur. Formülde n!/n!=1." },
       { prompt: "A, B’den önceyse bir blok mudur?", answer: "Aralarına başka kişiler girebildiği için blok değildir. İki kişinin yer değiştirilmesiyle eşleştirme yapılabilir." },
@@ -117,8 +118,8 @@ export const permutationGuides032033: LessonGuide[] = [
       "Boşluk, ilk sıfır ve son basamak koşullarını birlikte uygula.",
       "Ara duraktan geçen ve kaçınan yolları sayıp modelde izle.",
     ],
-    sections: repeatedPermutationSource033Sections,
-    examples: repeatedExamples,
+    sections: [...repeatedPermutationSource033Sections, repeatedSection200],
+    examples: [...repeatedExamples, ...repeatedExamples200],
     recall: [
       { prompt: "Etiketli ve özdeş iki A yer değiştirirse ne olur?", answer: "Etiketliyse yeni sıra. Özdeşse aynı görünüş, bu yüzden etiketli sayıda 2! fazlalık." },
       { prompt: "Özdeş iki B bitişik, blok içi kaç farklı sıra?", answer: "Bir görünür sıra. B’leri ayıran iki etiket yok." },
@@ -167,7 +168,7 @@ export const permutationSheets032033: CheatSheet[] = permutationGuides032033.map
   lessonId: guide.id,
   title: supplementalPermutationTopics032033[index].title,
   subjectId: "tyt-matematik",
-  sections: summaries[index].map((text, item) => ({ title: sheetHeadings[index][item], text: [text] })),
+  sections: [...summaries[index].map((text, item) => ({ title: sheetHeadings[index][item], text: [text] })), [permutationSheet200, repeatedSheet200][index]],
   cautions: guide.examples.map(({ pitfall }) => pitfall),
   examples: guide.examples.map(({ title, prompt, steps, answer }) => ({
     title, prompt, steps: steps.map(({ label, expression, explanation }) => [label, expression, explanation].filter(Boolean).join(" · ")), answer,

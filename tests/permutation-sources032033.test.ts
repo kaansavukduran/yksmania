@@ -16,11 +16,11 @@ it("appends the new learning records after all earlier topics", () => {
     const guide = lessonGuides.get(id)!;
     const sheet = builtInCheatSheets.get(lessonTopic[id])!;
     expect(lessonById(id)?.questions).toHaveLength(8);
-    expect(guide.examples).toHaveLength(3);
+    expect(guide.examples).toHaveLength(5);
     expect(guide.recall).toHaveLength(4);
     expect(sheet.lessonId).toBe(id);
     expect(sheet.examples.map(({ answer }) => answer)).toEqual(guide.examples.map(({ answer }) => answer));
-    expect(sheet.sections).toHaveLength(5);
+    expect(sheet.sections).toHaveLength(6);
     const source = pastExamReferences.find((candidate) => candidate.topicIds.includes(lessonTopic[id]))!;
     expect(source.answer).toBe("C");
     const book = officialBooklets.find(({ id }) => id === source.bookletId)!;

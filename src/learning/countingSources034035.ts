@@ -12,6 +12,7 @@ import {
   combinationPractice034,
 } from "./countingPractice034035";
 import type { LessonGuide, WorkedExample } from "./guides/types";
+import { binomialExamples200, binomialSection200, binomialSheet200, combinationExamples200, combinationSection200, combinationSheet200 } from "./countingDepth200";
 
 const combinationExamples: WorkedExample[] = [
   {
@@ -193,8 +194,8 @@ export const countingGuides034035: LessonGuide[] = [
       "Zorunlu, yasak, tam ve en az koşullarını ayrık hesaplara çevir.",
       "Üçgen, doğru ve köşegen sayılarında fazla kayıtları belirle.",
     ],
-    sections: combinationSource034Sections,
-    examples: combinationExamples,
+    sections: [...combinationSource034Sections, combinationSection200],
+    examples: [...combinationExamples, ...combinationExamples200],
     recall: [
       {
         prompt: "C(6,6) ile C(6,0) niçin aynı?",
@@ -227,8 +228,8 @@ export const countingGuides034035: LessonGuide[] = [
       "Pascal katsayısını, işareti, değişken üssünü ve sıra numarasını ayır.",
       "Sabit terimi ve tek-çift katsayı toplamlarını tanım koşuluyla bul.",
     ],
-    sections: binomialSource035Sections,
-    examples: binomialExamples,
+    sections: [...binomialSource035Sections, binomialSection200],
+    examples: [...binomialExamples, ...binomialExamples200],
     recall: [
       {
         prompt: "Binom genel teriminde r neyi gösterir?",
@@ -345,7 +346,7 @@ export const countingSheets034035: CheatSheet[] = countingGuides034035.map(
     lessonId: guide.id,
     title: supplementalCountingTopics034035[index].title,
     subjectId: "tyt-matematik",
-    sections: summarySections[index],
+    sections: [...summarySections[index], [combinationSheet200, binomialSheet200][index]],
     cautions: guide.examples.map(({ pitfall }) => pitfall),
     examples: guide.examples.map(({ title, prompt, steps, answer }) => ({
       title,
