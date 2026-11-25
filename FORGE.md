@@ -852,7 +852,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
-| TYT Matematik | 45 / 45 | 45 · 194 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
+| TYT Matematik | 45 / 45 | 45 · 195 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
 | TYT Geometri | 19 / 19 | 19 · 185 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 283 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
@@ -867,7 +867,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2358** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2359** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
@@ -3785,3 +3785,9 @@ Faiz Problemleri fiziksel 1, Çemberde Açılar fiziksel 2 ile 5 karşılaştır
 Karışım Problemleri’nde 120 g %20 ile 80 g %40, aynı ölçekli şeker ve su şeritleriyle gösteriliyor. Toplamdaki 56 g şeker ve 200 g karışım %28 verir. Çemberde Uzunluk’ta yarıçap 13 ve kiriş uzaklığı 5 iken kiriş 24. Dış nokta 17 birim uzaktaysa teğet √120. Her adım farklı hipotenüsü ve diklik noktasını gösteriyor.
 
 Karışım Problemleri fiziksel 1, Çemberde Uzunluk fiziksel 2 ve 5 ile karşılaştırıldı. TypeScript, 32 hedef birim ve içerik denetimi geçti. İlk tarayıcı sonucu teğet uzunluğunu tam sayıya yuvarlayan gösterimi yakaladı. İki basamaklı gösterimle aynı 7 Chromium akışı ve 9 çizim yerleşimi geçti. 323 çevrimdışı varlık doğrulandı. Sırada İşçi Problemleri fiziksel 3 ve Dairede Alan fiziksel 2 var.
+
+## TYT Matematik ve Geometri · 0.172.0 adayı
+
+İşçi Problemleri’nde 12 ve 18 saatlik tek çalışma doğruları ile ortak çalışma doğrusu aynı eksende yer alıyor. Ortak hız 5/36 iş/saat, işin bitişi 7 saat 12 dakika. Dairede Alan’da 60° dilimin 6π alanından 9√3 üçgeni çıkarılıyor. Küçük parça yaklaşık 3,26 birim².
+
+İşçi Problemleri fiziksel 3 ve Dairede Alan fiziksel 2 karşılaştırıldı. TypeScript, içerik denetimi, 5 Chromium akışı, 6 çizim yerleşimi ve 323 çevrimdışı varlık geçti. Aynı sonuç ayrı Kopya Kağıtlarında sınandı. Sırada İşçi–Havuz fiziksel 3 ve Noktanın Analitiği fiziksel 2 ile 5 var.

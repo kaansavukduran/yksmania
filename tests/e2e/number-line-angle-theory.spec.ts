@@ -1089,3 +1089,42 @@ test("The hypotenuse changes between the chord and tangent triangles", async ({ 
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Three work lines meet the one-job mark at different times", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "İş payı grafiğinde eğimleri topla");
+  await page.goto("/#/lesson?id=isci-problemleri");
+  await expect(model).toContainText("7,2 saat. A tek %60, B tek %40, birlikte %100 iş");
+  const slider = model.getByRole("slider", { name: /Geçen süre/ });
+  await slider.press("End");
+  await expect(model).toContainText("12 saat. A tek %100, B tek %66,7, birlikte %100 iş");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-217");
+  await expect(model).toContainText("Sonuç 7 saat 12 dakika");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("The small circular segment subtracts the exact equilateral triangle area", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-geo-daire-040";
+  const model = figure(page, "Daire parçası: dilimden üçgeni çıkar");
+  await page.goto(`/#/lesson?id=${id}`);
+  await expect(model).toContainText("9π − 18");
+  const angle = model.getByRole("slider", { name: /α/ });
+  await angle.press("Home");
+  await expect(model).toContainText("Dilim 6π birim². Üçgen 9√3 birim²");
+  await expect(model).toContainText("6π − 9√3 ≈ 3,26 birim²");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${id}`);
+  await angle.press("Home");
+  await expect(model).toContainText("6π − 9√3 ≈ 3,26 birim²");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

@@ -1,8 +1,8 @@
 {
-  "version": "0.171.0",
+  "version": "0.172.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Karışım Problemleri’nde şeker ve su kütlesini ölçekli çubuklarla ayrı takip et. Çemberde Uzunluk dersinde kiriş ve teğet için hipotenüsün nasıl değiştiğini gör.",
-    "en": "Use proportional bars to follow solute and solvent masses. Compare the hypotenuse in the right triangles for a chord and a tangent."
+    "tr": "İşçi Problemleri’nde tamamlanan iş payını üç doğruyla karşılaştır. Dairede Alan’da 60 derecelik küçük daire parçasını dilim ve eşkenar üçgen farkıyla hesapla.",
+    "en": "Compare three work rates on one graph and find the area of a circular segment from the sector and triangle."
   }
 }

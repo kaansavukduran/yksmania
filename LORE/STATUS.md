@@ -2,4 +2,4 @@
 
 25 Kasım 2026 · 0.155.0 iki canlı adreste öğrenci akışıyla doğrulandı. [GitHub Pages](https://kaansavukduran.github.io/yksmania/) · [Cloudflare](https://yksmania.pages.dev/). [Tam CI](https://github.com/kaansavukduran/yksmania/actions/runs/45528592894) ve [Pages yayını](https://github.com/kaansavukduran/yksmania/actions/runs/45533520324) başarıyla tamamlandı. [0.160.0 ana dal CI](https://github.com/kaansavukduran/yksmania/actions/runs/45535403861) başladı.
 
-[Konu kapsamı](../docs/KONU_KAPSAMI.md) 510 başlığı izler. 0.171.0 adayı karışım kütlelerini ve kiriş ile teğet üçgenlerini doğruladı. Sırada İşçi Problemleri ve Dairede Alan var. [PDF aktarımı](../docs/ILERLEME.md) · [Forge](../FORGE.md)
+[Konu kapsamı](../docs/KONU_KAPSAMI.md) 510 başlığı izler. 0.172.0 adayı ortak işin eğimlerini ve küçük daire parçasını doğruladı. Sırada İşçi–Havuz ve Noktanın Analitiği var. [PDF aktarımı](../docs/ILERLEME.md) · [Forge](../FORGE.md)

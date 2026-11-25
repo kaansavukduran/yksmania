@@ -574,11 +574,15 @@ const daire: Record<string, FigureDef> = {
     alt: "Çemberde dilim, dilimin içindeki üçgen ve kiriş ile yay arasında kalan boyalı daire parçası.",
     param: { label: "α", min: 60, max: 150, step: 30, init: 90, unit: "°" },
     draw: (a) => {
-      const r = 3;
+      const radius = 6;
+      const r = radius / 2;
       const A = pol(r, 0, O);
       const B = pol(r, a, O);
       const seg040: V[] = Array.from({ length: 41 }, (_, i) => pol(r, (a * i) / 40, O));
-      const tri = 0.5 * 36 * Math.sin((a * Math.PI) / 180);
+      const triangle = (radius ** 2 * Math.sin((a * Math.PI) / 180)) / 2;
+      const sectorCoefficient = (radius ** 2 * a) / 360;
+      const piece = sectorCoefficient * Math.PI - triangle;
+      const exactTriangle = a === 60 || a === 120 ? "9√3" : fmt(triangle, 2);
       return {
         els: [
           circle(O, r, { tone: "muted" }),
@@ -589,7 +593,10 @@ const daire: Record<string, FigureDef> = {
           pt(A, "A", "e"),
           pt(B, "B", "n"),
         ],
-        readout: [`Parça = ${fmt(a / 10, 1)}π − ${fmt(tri, 2)}`],
+        readout: [
+          `Dilim ${fmt(sectorCoefficient, 1)}π birim². Üçgen ${exactTriangle} birim².`,
+          `Parça = ${fmt(sectorCoefficient, 1)}π − ${exactTriangle} ≈ ${fmt(piece, 2)} birim².`,
+        ],
       };
     },
   },

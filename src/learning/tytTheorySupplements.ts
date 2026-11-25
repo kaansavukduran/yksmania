@@ -112,6 +112,25 @@ export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupple
     summary: "120 g %20 ile 80 g %40 birleşirse 56 g şeker ve 144 g su olur. Oran 56/200=%28.",
     appendSection: true,
   }],
+  "isci-problemleri": [{
+    title: "İş payı grafiğinde eğimleri topla",
+    figureTitle: "İş payı grafiğinde eğimleri topla",
+    paragraphs: [
+      "A tek 12, B tek 18 saatte bitiriyorsa bir saatte sırasıyla 3/36 ve 2/36 iş yaparlar. Birlikte eğim 5/36 iş/saat. Bir iş için 36/5=7,2 saat gerekir. Onluk kesir 0,2 saati 60 ile çarpınca 12 dakika. A %60, B %40 iş yapar.",
+    ],
+    summary: "1/12+1/18=5/36 iş/saat. Bir iş 7 saat 12 dakika. Grafiğin düşey ekseni biten işin payı.",
+    appendSection: true,
+  }],
+  "tyt-geo-daire-040": [{
+    title: "Daire parçası: dilimden üçgeni çıkar",
+    figureTitle: "Daire parçası: dilimden üçgeni çıkar",
+    paragraphs: [
+      "Yarıçap 6 ve merkez açı 60° ise dilim 36π·60/360=6π birim². İki yarıçap ve kirişin kurduğu üçgen eşkenar olduğundan alanı 6²√3/4=9√3 birim². Aradaki küçük parça 6π−9√3≈3,26 birim².",
+      "Sınır çizgileri kiriş ve yaydır. Büyük parçayı istiyorsan küçük parçayı bütün dairenin alanından çıkar.",
+    ],
+    summary: "r=6 ve α=60° için dilim 6π, üçgen 9√3, küçük parça 6π−9√3 birim².",
+    sheetTitle: "Halka ve parça",
+  }],
   "kesir-problemleri": [{
     title: "Kalanın kesri yeni bir taban kullanır",
     figureTitle: "Kalanın kesri yeni bir taban kullanır",
