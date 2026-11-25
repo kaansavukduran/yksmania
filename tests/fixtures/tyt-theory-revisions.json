@@ -9252,5 +9252,717 @@
         }
       }
     ]
+  },
+  {
+    "version": "0.164.0",
+    "receipts": [
+      {
+        "surface": "lessons",
+        "id": "tyt-geo-yamuk-deltoid-032",
+        "after": "b152891629706b77faad3502e68b592d91084a06cb243f5b441ec466d2a458c1",
+        "prior": {
+          "source": {
+            "tr": "MEBİ TYT Matematik Konu Özetleri: basılı 141–143 ve 151; Aurelia TYT Geometri Tüm Konular ve Formüller: yamuk/deltoid özetiyle karşılaştırılmış özgün anlatım ve sorular. Kaynağın bütün PDF kapsamı değildir."
+          },
+          "body": [
+            {
+              "title": {
+                "tr": "İsimden önce verilen dörtgeni oku"
+              },
+              "text": {
+                "tr": "Bu ünitede A, B, C, D köşeleri sınır boyunca sıralanmış, kenarları kesişmeyen dışbükey dörtgenler kullanılır. AB∥CD demek, AB ile CD doğrularının paralel olmasıdır. Bu iki kenara taban, AD ve BC’ye yan kenar denir. Köşegenler ise komşu olmayan köşeleri birleştiren AC ve BD’dir; bir köşegen, yan kenar değildir.\n\nBurada MEBİ’nin kapsayıcı tanımı kullanılır: en az bir çift karşı kenarı paralel olan dörtgen yamuktur. Bu yüzden paralelkenar da bir yamuk çeşididir. Yamuğun iki tabanını seçtikten sonra hangi bağıntının genel yamuğa, hangisinin ek simetri koşuluna dayandığını ayır. Çizimin düzgün görünmesi yeni bir eşitlik vermez."
+              }
+            },
+            {
+              "title": {
+                "tr": "Paralellik açıları, yükseklik ise alanı belirler"
+              },
+              "text": {
+                "tr": "AD doğrusu paralel AB ve CD’yi keser. Bu nedenle A ile D’deki iç açıların toplamı 180°dir; B ile C için de aynı sonuç geçerlidir. A=72° verilirse D=108° bulunur. A ile B’nin eşit olması genel yamuk özelliği değildir.\n\nYükseklik h, iki paralel taban doğrusu arasındaki dik uzaklıktır. Yan kenar eğikse uzunluğu h’den büyüktür; alan formülündeki h yerine onu yazamazsın. Dikmenin ayağı taban parçasının dışında kalsa bile doğrular arasındaki uzaklık aynıdır. Önce diklik işaretini bul, sonra uzunluğu kullan."
+              }
+            },
+            {
+              "title": {
+                "tr": "Orta tabanı ortalama olarak kur"
+              },
+              "text": {
+                "tr": "E, AD’nin; F, BC’nin orta noktası olsun. EF tabanlara paraleldir ve |EF|=(|AB|+|CD|)/2 olur. Bu doğru parçası yamuğun yüksekliğinin yarısında yer alır. Köşegenle iki üçgene ayırıp üçgenin orta tabanlarını kullanmak, iki yarım tabanın neden toplandığını gösterir.\n\nUzun taban a, kısa taban c ve a>c olsun. EF üzerindeki köşegen kesişimlerini soldan sağa K ve L diye adlandırırsan |EK|=|LF|=c/2, |KL|=(a−c)/2 olur. Dolayısıyla EF=c/2+(a−c)/2+c/2=(a+c)/2 çıkar. Köşegenlerin kendi orta noktaları arasındaki uzaklık da |a−c|/2’dir; bu uzunluğu orta tabanın tamamıyla karıştırma."
+              }
+            },
+            {
+              "title": {
+                "tr": "Alan formülünü iki üçgenden çıkar"
+              },
+              "text": {
+                "tr": "AC köşegenini çiz. ABC ve ACD üçgenlerinin, sırasıyla AB ve CD tabanlarına ait yükseklikleri aynı h’dir. Alanları ah/2 ve ch/2 olduğundan toplam alan S=(a+c)h/2’dir. Orta taban m=(a+c)/2 ise aynı sonuç S=m·h diye yazılır. Birim uzunluk değil, birimkaredir.\n\nAB∥CD ve E, AD’nin orta noktası ise BEC üçgeninin alanı yamuğun yarısıdır. Bunu üçgen ABD ve BCD’de eş yüksekliğe sahip parçalarla gösterebilirsin. Alt taban üzerindeki bir E noktası için AED ve EBC üçgenlerinin alanları sırasıyla |AE|h/2 ve |EB|h/2’dir. Paylaşılan yüksekliği çizmek, alan oranını şeklin görünüşünden tahmin etmekten güvenlidir."
+              }
+            },
+            {
+              "title": {
+                "tr": "İkizkenar yamukta simetriyi gerçekten doğrula"
+              },
+              "text": {
+                "tr": "Taban uzunlukları farklı olan bir yamukta iki yan kenar eşitse, tabanların orta dikmesi simetri eksenidir. Aynı tabana komşu iki iç açı, köşegenler ve köşegenlerin eksene göre eş parçaları eşittir. Karşı açılar bütünlerdir; bu yamuk çemberseldir. Kapsayıcı yamuk tanımında tabanları eşit paralelkenarda yalnız yan kenar eşliği bu simetriyi kanıtlamaz; böyle bir durumda ayrıca simetri veya taban açı eşliği gerekir.\n\nUzun taban b, kısa taban a ve yan kenar ℓ olsun. Kısa tabanın uçlarından uzun tabana dikmeler indir; iki yandaki yatay fark eşit olduğundan her biri (b−a)/2 olur. Pisagor ile h²=ℓ²−((b−a)/2)² bulunur. Sağ taraf pozitif olmalıdır. Örneğin b=20, a=8, ℓ=10 için yatay parça 6 ve yükseklik 8’dir; 12’lik taban farkının tamamını tek üçgene koymak yanlıştır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Dik yamuk ve dik köşegen koşulunu ayır"
+              },
+              "text": {
+                "tr": "Dik yamukta bir yan kenar tabanlara diktir ve yüksekliğe eşittir. Diğer yan kenar, h ve |a−c| dik kenarlı bir üçgenin hipotenüsüdür. Tabanlar 14 ve 5, yükseklik 12 ise eğik kenar √(9²+12²)=15’tir. Bir açının dik olması, köşegenlerin de dik olduğu anlamına gelmez.\n\nAB=a, CD=c, AD=h olan dik yamukta A=(0,0), B=(a,0), D=(0,h), C=(c,h) seç. AC ve BD vektörlerinin skaler çarpımı −ac+h²’dir. Köşegenler ayrıca dikse h²=ac bulunur. Simetrik ikizkenar yamukta dik köşegen koşulu ise h=(a+c)/2 verir; bunun alanı h² olur. İki özel şeklin bağıntılarını birbirinin yerine kullanma."
+              }
+            },
+            {
+              "title": {
+                "tr": "Köşegen kesişiminden oran ve alan çıkar"
+              },
+              "text": {
+                "tr": "AB∥CD, |AB|=a, |CD|=c ve köşegenlerin kesişimi O olsun. AOB ile COD üçgenleri ters ve iç ters açılardan benzerdir. Buna göre AO/OC=BO/OD=a/c, alanlarının oranı ise a²/c² olur. Uzunluk oranını doğrudan alan oranı olarak kullanma.\n\nCOD’nin alanına S₁, COB’ninkine S₂, AOB’ninkine S₃, AOD’ninkine S₄ de. Aynı taban ve yükseklik ilişkilerinden S₂=S₄ ve S₂·S₄=S₁·S₃ bulunur. S₁=9 ve S₃=25 ise iki yan alan √(9·25)=15, toplam alan 64’tür. Buradaki harfler köşe sırasına ve tanımlanan üçgenlere bağlıdır; şekilsiz bir soruda önce hangi bölgenin adlandırıldığını oku."
+              }
+            },
+            {
+              "title": {
+                "tr": "Deltoidin simetri köşegenini eş kenarlardan bul"
+              },
+              "text": {
+                "tr": "AB=AD ve CB=CD olan dışbükey ABCD dörtgeninde A ile C, B ve D’ye eşit uzaklıktadır. Bu nedenle AC doğrusu BD’nin orta dikmesidir. AC ile BD dik kesişir; kesişim K ise BK=DK olur. ABC ve ADC eş üçgenlerinden AC’nin A ve C açılarını ortaladığı, B ve D açılarının eşit olduğu da çıkar.\n\nGenel deltoidde AC’nin BD’yi ortalaması, BD’nin de AC’yi ortaladığı anlamına gelmez. AK ile KC farklı olabilir. İki köşegenin birbirini ortalaması ek olarak varsa şekil eşkenar dörtgene dönüşür. Deltoidin bütün kenarları ya da köşegenleri eşit diye varsayma; hangi komşu kenar çiftinin eş olduğunu işaretle."
+              }
+            },
+            {
+              "title": {
+                "tr": "Deltoidde alanı dört dik üçgenle tamamla"
+              },
+              "text": {
+                "tr": "AC=e, BD=f ve köşegenler dik olduğundan dört küçük üçgenin alanları toplamı S=ef/2’dir. AB=AD=u, BC=CD=v ise çevre 2(u+v)’dir. Alan için iki köşegenin tamamı gerekir; sadece yarım BD’yi kullanırsan sonucu yarıya düşürürsün.\n\nBK=DK=f/2 olduğunda ABK ile CBK dik üçgenlerinde AK²=u²−(f/2)² ve CK²=v²−(f/2)² yazılır. Dışbükeylikte K iki köşegenin içindedir; AC=AK+KC olur. u=13, v=15, f=24 için AK=5, KC=9 ve AC=14 bulunur. Alan 168, çevre 56’dır; AK=KC dayatmak iki ayrı kenar verisini bozar."
+              }
+            },
+            {
+              "title": {
+                "tr": "Soruda işe yarayan yardımcı çizgiyi seç"
+              },
+              "text": {
+                "tr": "Yamukta önce tabanları işaretle. Açı aranıyorsa paralellik, uzunluk aranıyorsa uygun dikmeler veya orta taban, alan aranıyorsa ortak taban/yükseklik genellikle hesabı kısaltır. Deltoidde ise simetri köşegeniyle başla; yarım köşegen ve bir kenar dik üçgen kuruyorsa Pisagor kullan. Yardımcı çizginin neden çizildiğini bir cümleyle söyle.\n\nSonucu bulduğunda bütün başlangıç koşullarına geri dön: bir kenar hipotenüsten uzun mu, karekök içi pozitif mi, alan birimi doğru mu, özel bağıntı için gerekli diklik veya simetri verilmiş mi? Denetim başka bir formülle de yapılabiliyorsa yap. Bir ezber formülü seçmekten çok, formülün hangi koşulda çalıştığını bilmek benzer sorulara aktarımı sağlar."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "lessons",
+        "id": "oran-oranti",
+        "after": "6083ff48eabc877068d4f4207f8afa40eb05890e577532da263dade97f88d01f",
+        "prior": {
+          "body": [
+            {
+              "title": {
+                "tr": "Oran iki çokluğun hangi sırayla karşılaştırıldığıdır"
+              },
+              "text": {
+                "tr": "a'nın b'ye oranı a/b veya a:b yazılır; b≠0 olmalıdır. 15 kırmızı ve 25 mavi boncuk için kırmızı:mavi=3:5'tir; kırmızı:toplam=15:40=3:8 olur. Oranın paydasının başka parçayı mı bütünü mü anlattığını sözcükle belirt. Oranın tersini almak, aynı soruya farklı bir cevap vermektir.\n\nAynı tür çoklukların oranında birimleri önce eşitle:1 m ile 25 cm için 100/25=4 bulunur; 1/25 değil. Farklı tür çoklukların bölümü birim oran verebilir:150 TL/kg, belirli ürünün kilogram başına ücretidir. Birimsiz oran ile birimli oranı ayırmak sonucun neyi anlattığını korur. Sıfır pay olabilir; sıfır payda olmaz."
+              }
+            },
+            {
+              "title": {
+                "tr": "Eşdeğer oran ve çapraz çarpım koşulu"
+              },
+              "text": {
+                "tr": "a/b=c/d orantısında b,d≠0 iken iki tarafı bd ile çarparak ad=bc elde ederiz. İçler–dışlar kuralı bu cebirsel işlemin kısa adıdır. Pay ve paydayı aynı sıfırdan farklı katsayıyla çarpmak oranı korur; aynı sayıyı eklemek genel olarak korumaz:2/3≠3/4.\n\nBir eşitliği oranlara ayırırken yeni paydaların sıfır olmadığını ayrıca denetle. a/b=c/d=k ise(a+c)/(b+d)=k ancak b+d≠0 olduğunda yazılabilir. Katsayılı toplamlar için de yeni paydanın sıfır olmaması gerekir. Ezberlenmiş bir orantı özelliği, tanımsız bir kesri geçerli yapmaz."
+              }
+            },
+            {
+              "title": {
+                "tr": "Oran gerçek miktarı tek başına belirlemez"
+              },
+              "text": {
+                "tr": "a:b=m:n verildiğinde a=mt,b=nt yazmak ortak ölçek katsayısını görünür kılar. m ve n, miktarların kendisi olmak zorunda değildir; aynı oranın sonsuz farklı büyüklükte örneği vardır. Fiziksel pozitif miktarlarda t>0 seçilir. Toplam verilirse(m+n)t; fark verilirse uygun sırayla(m−n)t denklemi kurulur.\n\na:b=3:5 ve toplam 64 için 8t=64, t=8; miktarlar 24 ve 40'tır. Büyük parçanın 45 olduğu 3:5 paylaşımda ise 5t=45'ten küçük parça 27 olur. Her iki örnekte de iki koşulu birlikte kullanırsın: oran ve toplam ya da bilinen parça. Sonucu hem toplam hem oranla kontrol etmek tek denklem kontrolünden güçlüdür."
+              }
+            },
+            {
+              "title": {
+                "tr": "Doğru orantı: artış değil sabit bölüm"
+              },
+              "text": {
+                "tr": "y=kx doğru orantısında, x≠0 olan veriler için y/x=k sabittir. Pozitif miktarlarda x iki kat olunca y iki kat olur. Sabit birim fiyatlı alışveriş, başka ücret yoksa bu modele uyar. Grafik orijinden geçen doğrudur; modelin x=0 noktasında y=0 vermesi, veri bağlamının sıfıra uzatılabildiği durumda anlamlıdır.\n\ny=x+3 de x artarken artar ama y/x sabit değildir; dolayısıyla doğru orantı değildir. Sabit giriş ücreti veya indirim eşiği olan alışverişte saf doğru orantı modeli bozulabilir. Atölye aynı başlangıç noktasından üç farklı eğriyi karşılaştırır; yalnız iki niceliğin aynı yönde gitmesi yerine sabit oranı ve başlangıç koşulunu denetle."
+              }
+            },
+            {
+              "title": {
+                "tr": "Ters orantı: sabit işte çarpım"
+              },
+              "text": {
+                "tr": "y=k/x ve x≠0 ters orantısında xy=k sabittir. Pozitif x iki kat olunca y yarıya iner. Aynı işi, aynı verimle, aynı günlük çalışma süresinde yapan işçi sayısı ile tamamlanma günü bu modele uyabilir. 6 eş verimli işçi 10 günde bitiriyorsa toplam 60 işçi-gün; 15 işçi için 4 gün gerekir.\n\nHer azalan ilişki ters orantı değildir. y=10−x azalır fakat xy sabit değildir. İşçiler birbirini engelliyor, çalışma saatleri değişiyor veya iş miktarı artıyorsa basit işçi-gün modeli geçerli olmayabilir. Soruda sabit tutulanları yaz: toplam iş, kişi başına hız, günlük süre. Sıfır işçi ile süre hesabı yapmaya çalışmak modelin tanımını aşar."
+              }
+            },
+            {
+              "title": {
+                "tr": "Ters orantılı paylaştırmada ağırlıkları ters çevir"
+              },
+              "text": {
+                "tr": "Bir toplam 3, 4 ve 6 sayılarıyla ters orantılı paylaştırılacaksa paylar 3t, 4t, 6t değildir; k/3, k/4, k/6 olur. Pay oranı 1/3:1/4:1/6=4:3:2 biçiminde yazılabilir. Verilen sayı büyüdükçe alınan pay küçülür; bu yön kontrolü doğru modelin hızlı bir denetimidir.\n\n216 birim için toplam oran 9 parça, bir parça 24; paylar 96, 72, 48 olur. Eşit toplamı doğru orantılı paylaştırmak bambaşka bir dağılım verir. Sonucu denetlerken paylar toplamının bütünü vermesinin yanında her payın karşısındaki sayıyla çarpımını da karşılaştır; üçü de 288 olmalıdır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Birleşik oranlarda ortak bağlantıyı eşitle"
+              },
+              "text": {
+                "tr": "A:B=4:7 ve B:C=14:15 oranlarında B aynı miktarı temsil eder. İlk oranı 2 ile genişletip A:B=8:14 yapınca A:B:C=8:14:15 bulunur. B'yi iki orandan doğrudan yan yana yazıp 4:7:15 demek, ortak bağlantının iki ayrı ölçeğini karıştırır.\n\nCebirsel olarak A/B ve B/C oranları çarpıldığında B≠0 koşuluyla A/C elde edilir. Bu işlem aynı adları taşıyan gerçek ortak niceliklere uygulanmalıdır; iki farklı sorudaki B harfi aynı miktar demek değildir. Toplam veya miktar bilgisi sonradan verilirse bir ortak t ile bütün oranı ölçekle. Birimlerin uyumu birleşik oranda da korunur."
+              }
+            },
+            {
+              "title": {
+                "tr": "Ölçek uzunluk oranıdır; alan ve hacim farklı büyür"
+              },
+              "text": {
+                "tr": "1:s uzunluk ölçeği, çizimdeki uzunluğun gerçeğe oranının 1/s olduğunu anlatır. 1:25000 haritada 7,2 cm gerçekte 180000 cm=1,8 km'dir. Önce aynı birimle çarp, sonra istenen birime dönüştür. Harita üzerindeki sayıyı doğrudan kilometre kabul etme.\n\nBenzer şekillerde bütün uzunluklar k katına çıkarsa alan k², hacim k³ katına çıkar. Bunlar kenar uzunluğuyla doğru orantılı değil, onun karesi veya küpüyle doğru orantılı ilişkilerdir. Her orantının hangi niceliğe kurulduğunu açık yaz: y, x² ile doğru orantılıysa y/x² sabit olur; y/x sabit olmak zorunda değildir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Bileşik koşulu tek model gibi ezberleme"
+              },
+              "text": {
+                "tr": "Bir nicelik x ile doğru, z ile ters orantılıysa y=kx/z yazılabilir; z≠0 ve koşullar tanımlı olmalıdır. Önce bir değişkeni sabit tutarak yönü incele, sonra sabiti verilen bir durumdan bul. Örneğin üretim miktarı aynı verimli kişi sayısı ve süreyle birlikte artabilir; hangi değişkenin sabit olduğu söylenmeden tek bir oran kurmak eksik olur.\n\nÇözüm yolu: sorulan oranı sırayla yaz, birimleri eşitle, sabit bölümü veya çarpımı belirle, ortak katsayıyı bul, yeni durumu hesapla, başlangıç verisiyle kontrol et. Değişen bir sabit ücret veya verim varsa bunu modelin dışında bırakma. Atölyedeki nokta ve tablolar, koşulları değiştirmenin neden aynı orantı sabitini korumadığını görünür kılar."
+              }
+            },
+            {
+              "title": {
+                "tr": "Altın oranı iki karşılaştırmayla tanı"
+              },
+              "text": {
+                "tr": "Bir doğru parçasını, biri öbüründen uzun iki parçaya ayır. Uzun parçaya a, kısa parçaya b dersek a>b>0 olur. Bütün/uzun parça ile uzun/kısa parça oranlarını sırayla yaz. (a+b)/a=a/b sağlanıyorsa bu ortak orana altın oran denir ve φ ile gösterilir. Uzunluklar aynı birimde olduğundan φ birimsizdir. Değeri yaklaşık 1,618’dir.\n\nÖrneğin kısa parça 2 cm, uzun parça 3 cm olursa bütün 5 cm’dir. 5/3 ile 3/2 eşit mi? Çapraz çarpımlar 10 ve 9 olur, dolayısıyla bu bölme altın oranı vermez. Aynı parçalar başka bir uzunluk biriminde yazıldığında iki oran da değişmez. Yaklaşık değer benzer görünebilir. Tanımı belirleyen, iki oranın tam eşitliğidir."
+              }
+            },
+            {
+              "title": {
+                "tr": "Karışımda önce bütünün kaç parça olduğunu bul"
+              },
+              "text": {
+                "tr": "Bir içecekte öz:su=3:5 olsun ve toplam hacim 32 L verilsin. Bütünü 3+5=8 eşit pay gibi düşün; her pay 4 L’dir. Öz 3·4=12 L, su 5·4=20 L olur. Özün karışımdaki yüzdesi 12/32=3/8=%37,5’tir. Özün suya oranı olan 3/5, yüzde hesabında bütünün paydası olamaz.\n\nKarışımı aynı tada sahip olacak biçimde büyütürken iki bileşeni de aynı katsayıyla çarp. 12 L öz ve 20 L suya yalnız 8 L su eklersen karışım 40 L’ye çıkar fakat öz 12 L kalır. Yeni öz payı 12/40=%30’dur. Önce hangi miktarların değiştiğini yaz, sonra yeni toplam ve oranı kur."
+              }
+            },
+            {
+              "title": {
+                "tr": "İş miktarıyla günlük süre aynı değişken değildir"
+              },
+              "text": {
+                "tr": "İş miktarını W, kişi başına saatlik verimi v, kişi sayısını n, günde çalışılan saati h ve çalışma günü sayısını d ile göster. Herkes aynı sabit hızda çalışırsa W=v·n·h·d olur. Kişi, saat ve gün çarpımı toplam kişi-saati verir. W ve v sabitse n veya h arttığında d azalır. W artarsa aynı kişi ve saatle daha çok gün gerekir.\n\n5 kişinin 3 gün boyunca günde 4 saat çalışması 60 kişi-saattir. Aynı ekip, kişi başına günde 6 saate çıkarsa 60/30=2 günde aynı işi tamamlar. İş aynı anda iki katına çıkarsa hedef 120 kişi-saat olur ve 120/30=4 gün gerekir. Sadece kişi veya gün sayısına bakmadan önce verilen işi, kapasiteyi ve günlük saatleri ayır."
+              }
+            },
+            {
+              "title": {
+                "tr": "Ardışık sabit oranda geçiş sayısını say"
+              },
+              "text": {
+                "tr": "Pozitif miktarlarda her geçişin katsayısı r ise bir sonraki değer Nₖ₊₁=r·Nₖ olur. İki geçişte Nₖ₊₂=r²·Nₖ, m geçişte rᵐ·Nₖ elde edilir. 2. adımdan 5. adıma 2→3→4→5, yani üç geçiş vardır. Toplam katsayıyı tek geçiş sanma. 2. değer 16, 5. değer 128 ise r³=8 ve r=2’dir.\n\nGeri giderken her ok için r’ye böl. Bu örnekte 1. değer 16/2=8’dir. Aynı sayıda adım her seferinde aynı katsayıyı verir. Pozitif r≠1 iken farklı geçiş sayıları farklı katsayılar verir. r=1 durumunda tüm terimler aynı değerde kalır ve kaç adım atılırsa atılsın katsayı 1 olur."
+              }
+            },
+            {
+              "title": {
+                "tr": "Oranı yaz, sabiti ve birimi kontrol et"
+              },
+              "text": {
+                "tr": "Pay ve paydanın hangi miktarları anlattığını belirle. a:b=m:n için b≠0 ve n≠0 olmalıdır. Ortak ölçek t=b/n olduğundan sıfır olamaz. Pozitif miktarlarda pozitif ölçek kullanılır. Sonucu hem başlangıç oranıyla hem soruda verilen toplam ya da farkla denetle.\n\nDoğru orantı y=kx biçimindedir. x=0 iken y=0’dır ve y/x oranı hesaplanamaz. Ters orantı y=k/x biçimindedir, x ve k sıfırdan farklıdır. Süre ve iş gibi pozitif nicelikler için k>0’dır. Tablodan bir çözüm yolu seçmeden önce bu koşulları kontrol et."
+              }
+            },
+            {
+              "title": {
+                "tr": "Ortak terimi ve değişen koşulu ayır"
+              },
+              "text": {
+                "tr": "Aynı harfin aynı çokluğu gösterdiğini kontrol et. Süre, verim ve iş miktarından biri değişiyorsa önce hangi çarpanın değiştiğini yaz. Adımlı bir modelde verilen iki konumu işaretle ve aradaki okları say. Bunlar benzer görünen sorularda ilk işlem hatalarını önler."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "tyt-geo-yamuk-deltoid-032",
+        "after": "0993c3f35f7d07b72af03149b95c3af9f5245d49e8f1f33c6154067e68d7aa76",
+        "prior": {
+          "sections": [
+            {
+              "title": "İsimden önce verilen dörtgeni oku",
+              "paragraphs": [
+                "Bu ünitede A, B, C, D köşeleri sınır boyunca sıralanmış, kenarları kesişmeyen dışbükey dörtgenler kullanılır. AB∥CD demek, AB ile CD doğrularının paralel olmasıdır. Bu iki kenara taban, AD ve BC’ye yan kenar denir. Köşegenler ise komşu olmayan köşeleri birleştiren AC ve BD’dir; bir köşegen, yan kenar değildir.",
+                "Burada MEBİ’nin kapsayıcı tanımı kullanılır: en az bir çift karşı kenarı paralel olan dörtgen yamuktur. Bu yüzden paralelkenar da bir yamuk çeşididir. Yamuğun iki tabanını seçtikten sonra hangi bağıntının genel yamuğa, hangisinin ek simetri koşuluna dayandığını ayır. Çizimin düzgün görünmesi yeni bir eşitlik vermez."
+              ]
+            },
+            {
+              "title": "Paralellik açıları, yükseklik ise alanı belirler",
+              "paragraphs": [
+                "AD doğrusu paralel AB ve CD’yi keser. Bu nedenle A ile D’deki iç açıların toplamı 180°dir; B ile C için de aynı sonuç geçerlidir. A=72° verilirse D=108° bulunur. A ile B’nin eşit olması genel yamuk özelliği değildir.",
+                "Yükseklik h, iki paralel taban doğrusu arasındaki dik uzaklıktır. Yan kenar eğikse uzunluğu h’den büyüktür; alan formülündeki h yerine onu yazamazsın. Dikmenin ayağı taban parçasının dışında kalsa bile doğrular arasındaki uzaklık aynıdır. Önce diklik işaretini bul, sonra uzunluğu kullan."
+              ]
+            },
+            {
+              "title": "Orta tabanı ortalama olarak kur",
+              "paragraphs": [
+                "E, AD’nin; F, BC’nin orta noktası olsun. EF tabanlara paraleldir ve |EF|=(|AB|+|CD|)/2 olur. Bu doğru parçası yamuğun yüksekliğinin yarısında yer alır. Köşegenle iki üçgene ayırıp üçgenin orta tabanlarını kullanmak, iki yarım tabanın neden toplandığını gösterir.",
+                "Uzun taban a, kısa taban c ve a>c olsun. EF üzerindeki köşegen kesişimlerini soldan sağa K ve L diye adlandırırsan |EK|=|LF|=c/2, |KL|=(a−c)/2 olur. Dolayısıyla EF=c/2+(a−c)/2+c/2=(a+c)/2 çıkar. Köşegenlerin kendi orta noktaları arasındaki uzaklık da |a−c|/2’dir; bu uzunluğu orta tabanın tamamıyla karıştırma."
+              ]
+            },
+            {
+              "title": "Alan formülünü iki üçgenden çıkar",
+              "paragraphs": [
+                "AC köşegenini çiz. ABC ve ACD üçgenlerinin, sırasıyla AB ve CD tabanlarına ait yükseklikleri aynı h’dir. Alanları ah/2 ve ch/2 olduğundan toplam alan S=(a+c)h/2’dir. Orta taban m=(a+c)/2 ise aynı sonuç S=m·h diye yazılır. Birim uzunluk değil, birimkaredir.",
+                "AB∥CD ve E, AD’nin orta noktası ise BEC üçgeninin alanı yamuğun yarısıdır. Bunu üçgen ABD ve BCD’de eş yüksekliğe sahip parçalarla gösterebilirsin. Alt taban üzerindeki bir E noktası için AED ve EBC üçgenlerinin alanları sırasıyla |AE|h/2 ve |EB|h/2’dir. Paylaşılan yüksekliği çizmek, alan oranını şeklin görünüşünden tahmin etmekten güvenlidir."
+              ]
+            },
+            {
+              "title": "İkizkenar yamukta simetriyi gerçekten doğrula",
+              "paragraphs": [
+                "Taban uzunlukları farklı olan bir yamukta iki yan kenar eşitse, tabanların orta dikmesi simetri eksenidir. Aynı tabana komşu iki iç açı, köşegenler ve köşegenlerin eksene göre eş parçaları eşittir. Karşı açılar bütünlerdir; bu yamuk çemberseldir. Kapsayıcı yamuk tanımında tabanları eşit paralelkenarda yalnız yan kenar eşliği bu simetriyi kanıtlamaz; böyle bir durumda ayrıca simetri veya taban açı eşliği gerekir.",
+                "Uzun taban b, kısa taban a ve yan kenar ℓ olsun. Kısa tabanın uçlarından uzun tabana dikmeler indir; iki yandaki yatay fark eşit olduğundan her biri (b−a)/2 olur. Pisagor ile h²=ℓ²−((b−a)/2)² bulunur. Sağ taraf pozitif olmalıdır. Örneğin b=20, a=8, ℓ=10 için yatay parça 6 ve yükseklik 8’dir; 12’lik taban farkının tamamını tek üçgene koymak yanlıştır."
+              ]
+            },
+            {
+              "title": "Dik yamuk ve dik köşegen koşulunu ayır",
+              "paragraphs": [
+                "Dik yamukta bir yan kenar tabanlara diktir ve yüksekliğe eşittir. Diğer yan kenar, h ve |a−c| dik kenarlı bir üçgenin hipotenüsüdür. Tabanlar 14 ve 5, yükseklik 12 ise eğik kenar √(9²+12²)=15’tir. Bir açının dik olması, köşegenlerin de dik olduğu anlamına gelmez.",
+                "AB=a, CD=c, AD=h olan dik yamukta A=(0,0), B=(a,0), D=(0,h), C=(c,h) seç. AC ve BD vektörlerinin skaler çarpımı −ac+h²’dir. Köşegenler ayrıca dikse h²=ac bulunur. Simetrik ikizkenar yamukta dik köşegen koşulu ise h=(a+c)/2 verir; bunun alanı h² olur. İki özel şeklin bağıntılarını birbirinin yerine kullanma."
+              ]
+            },
+            {
+              "title": "Köşegen kesişiminden oran ve alan çıkar",
+              "paragraphs": [
+                "AB∥CD, |AB|=a, |CD|=c ve köşegenlerin kesişimi O olsun. AOB ile COD üçgenleri ters ve iç ters açılardan benzerdir. Buna göre AO/OC=BO/OD=a/c, alanlarının oranı ise a²/c² olur. Uzunluk oranını doğrudan alan oranı olarak kullanma.",
+                "COD’nin alanına S₁, COB’ninkine S₂, AOB’ninkine S₃, AOD’ninkine S₄ de. Aynı taban ve yükseklik ilişkilerinden S₂=S₄ ve S₂·S₄=S₁·S₃ bulunur. S₁=9 ve S₃=25 ise iki yan alan √(9·25)=15, toplam alan 64’tür. Buradaki harfler köşe sırasına ve tanımlanan üçgenlere bağlıdır; şekilsiz bir soruda önce hangi bölgenin adlandırıldığını oku."
+              ]
+            },
+            {
+              "title": "Deltoidin simetri köşegenini eş kenarlardan bul",
+              "paragraphs": [
+                "AB=AD ve CB=CD olan dışbükey ABCD dörtgeninde A ile C, B ve D’ye eşit uzaklıktadır. Bu nedenle AC doğrusu BD’nin orta dikmesidir. AC ile BD dik kesişir; kesişim K ise BK=DK olur. ABC ve ADC eş üçgenlerinden AC’nin A ve C açılarını ortaladığı, B ve D açılarının eşit olduğu da çıkar.",
+                "Genel deltoidde AC’nin BD’yi ortalaması, BD’nin de AC’yi ortaladığı anlamına gelmez. AK ile KC farklı olabilir. İki köşegenin birbirini ortalaması ek olarak varsa şekil eşkenar dörtgene dönüşür. Deltoidin bütün kenarları ya da köşegenleri eşit diye varsayma; hangi komşu kenar çiftinin eş olduğunu işaretle."
+              ]
+            },
+            {
+              "title": "Deltoidde alanı dört dik üçgenle tamamla",
+              "paragraphs": [
+                "AC=e, BD=f ve köşegenler dik olduğundan dört küçük üçgenin alanları toplamı S=ef/2’dir. AB=AD=u, BC=CD=v ise çevre 2(u+v)’dir. Alan için iki köşegenin tamamı gerekir; sadece yarım BD’yi kullanırsan sonucu yarıya düşürürsün.",
+                "BK=DK=f/2 olduğunda ABK ile CBK dik üçgenlerinde AK²=u²−(f/2)² ve CK²=v²−(f/2)² yazılır. Dışbükeylikte K iki köşegenin içindedir; AC=AK+KC olur. u=13, v=15, f=24 için AK=5, KC=9 ve AC=14 bulunur. Alan 168, çevre 56’dır; AK=KC dayatmak iki ayrı kenar verisini bozar."
+              ]
+            },
+            {
+              "title": "Soruda işe yarayan yardımcı çizgiyi seç",
+              "paragraphs": [
+                "Yamukta önce tabanları işaretle. Açı aranıyorsa paralellik, uzunluk aranıyorsa uygun dikmeler veya orta taban, alan aranıyorsa ortak taban/yükseklik genellikle hesabı kısaltır. Deltoidde ise simetri köşegeniyle başla; yarım köşegen ve bir kenar dik üçgen kuruyorsa Pisagor kullan. Yardımcı çizginin neden çizildiğini bir cümleyle söyle.",
+                "Sonucu bulduğunda bütün başlangıç koşullarına geri dön: bir kenar hipotenüsten uzun mu, karekök içi pozitif mi, alan birimi doğru mu, özel bağıntı için gerekli diklik veya simetri verilmiş mi? Denetim başka bir formülle de yapılabiliyorsa yap. Bir ezber formülü seçmekten çok, formülün hangi koşulda çalıştığını bilmek benzer sorulara aktarımı sağlar."
+              ]
+            }
+          ],
+          "source": "MEBİ TYT Matematik Konu Özetleri: basılı 141–143 ve 151; Aurelia TYT Geometri Tüm Konular ve Formüller: yamuk/deltoid özetiyle karşılaştırılmış özgün anlatım ve sorular. Kaynağın bütün PDF kapsamı değildir."
+        }
+      },
+      {
+        "surface": "guides",
+        "id": "oran-oranti",
+        "after": "d2bb64d91dbef185b2ab71ef2f67ec83f0e223321bbc33834628e07179e341a0",
+        "prior": {
+          "sections": [
+            {
+              "title": "Oran iki çokluğun hangi sırayla karşılaştırıldığıdır",
+              "paragraphs": [
+                "a'nın b'ye oranı a/b veya a:b yazılır; b≠0 olmalıdır. 15 kırmızı ve 25 mavi boncuk için kırmızı:mavi=3:5'tir; kırmızı:toplam=15:40=3:8 olur. Oranın paydasının başka parçayı mı bütünü mü anlattığını sözcükle belirt. Oranın tersini almak, aynı soruya farklı bir cevap vermektir.",
+                "Aynı tür çoklukların oranında birimleri önce eşitle:1 m ile 25 cm için 100/25=4 bulunur; 1/25 değil. Farklı tür çoklukların bölümü birim oran verebilir:150 TL/kg, belirli ürünün kilogram başına ücretidir. Birimsiz oran ile birimli oranı ayırmak sonucun neyi anlattığını korur. Sıfır pay olabilir; sıfır payda olmaz."
+              ]
+            },
+            {
+              "title": "Eşdeğer oran ve çapraz çarpım koşulu",
+              "paragraphs": [
+                "a/b=c/d orantısında b,d≠0 iken iki tarafı bd ile çarparak ad=bc elde ederiz. İçler–dışlar kuralı bu cebirsel işlemin kısa adıdır. Pay ve paydayı aynı sıfırdan farklı katsayıyla çarpmak oranı korur; aynı sayıyı eklemek genel olarak korumaz:2/3≠3/4.",
+                "Bir eşitliği oranlara ayırırken yeni paydaların sıfır olmadığını ayrıca denetle. a/b=c/d=k ise(a+c)/(b+d)=k ancak b+d≠0 olduğunda yazılabilir. Katsayılı toplamlar için de yeni paydanın sıfır olmaması gerekir. Ezberlenmiş bir orantı özelliği, tanımsız bir kesri geçerli yapmaz."
+              ]
+            },
+            {
+              "title": "Oran gerçek miktarı tek başına belirlemez",
+              "paragraphs": [
+                "a:b=m:n verildiğinde a=mt,b=nt yazmak ortak ölçek katsayısını görünür kılar. m ve n, miktarların kendisi olmak zorunda değildir; aynı oranın sonsuz farklı büyüklükte örneği vardır. Fiziksel pozitif miktarlarda t>0 seçilir. Toplam verilirse(m+n)t; fark verilirse uygun sırayla(m−n)t denklemi kurulur.",
+                "a:b=3:5 ve toplam 64 için 8t=64, t=8; miktarlar 24 ve 40'tır. Büyük parçanın 45 olduğu 3:5 paylaşımda ise 5t=45'ten küçük parça 27 olur. Her iki örnekte de iki koşulu birlikte kullanırsın: oran ve toplam ya da bilinen parça. Sonucu hem toplam hem oranla kontrol etmek tek denklem kontrolünden güçlüdür."
+              ]
+            },
+            {
+              "title": "Doğru orantı: artış değil sabit bölüm",
+              "paragraphs": [
+                "y=kx doğru orantısında, x≠0 olan veriler için y/x=k sabittir. Pozitif miktarlarda x iki kat olunca y iki kat olur. Sabit birim fiyatlı alışveriş, başka ücret yoksa bu modele uyar. Grafik orijinden geçen doğrudur; modelin x=0 noktasında y=0 vermesi, veri bağlamının sıfıra uzatılabildiği durumda anlamlıdır.",
+                "y=x+3 de x artarken artar ama y/x sabit değildir; dolayısıyla doğru orantı değildir. Sabit giriş ücreti veya indirim eşiği olan alışverişte saf doğru orantı modeli bozulabilir. Atölye aynı başlangıç noktasından üç farklı eğriyi karşılaştırır; yalnız iki niceliğin aynı yönde gitmesi yerine sabit oranı ve başlangıç koşulunu denetle."
+              ]
+            },
+            {
+              "title": "Ters orantı: sabit işte çarpım",
+              "paragraphs": [
+                "y=k/x ve x≠0 ters orantısında xy=k sabittir. Pozitif x iki kat olunca y yarıya iner. Aynı işi, aynı verimle, aynı günlük çalışma süresinde yapan işçi sayısı ile tamamlanma günü bu modele uyabilir. 6 eş verimli işçi 10 günde bitiriyorsa toplam 60 işçi-gün; 15 işçi için 4 gün gerekir.",
+                "Her azalan ilişki ters orantı değildir. y=10−x azalır fakat xy sabit değildir. İşçiler birbirini engelliyor, çalışma saatleri değişiyor veya iş miktarı artıyorsa basit işçi-gün modeli geçerli olmayabilir. Soruda sabit tutulanları yaz: toplam iş, kişi başına hız, günlük süre. Sıfır işçi ile süre hesabı yapmaya çalışmak modelin tanımını aşar."
+              ]
+            },
+            {
+              "title": "Ters orantılı paylaştırmada ağırlıkları ters çevir",
+              "paragraphs": [
+                "Bir toplam 3, 4 ve 6 sayılarıyla ters orantılı paylaştırılacaksa paylar 3t, 4t, 6t değildir; k/3, k/4, k/6 olur. Pay oranı 1/3:1/4:1/6=4:3:2 biçiminde yazılabilir. Verilen sayı büyüdükçe alınan pay küçülür; bu yön kontrolü doğru modelin hızlı bir denetimidir.",
+                "216 birim için toplam oran 9 parça, bir parça 24; paylar 96, 72, 48 olur. Eşit toplamı doğru orantılı paylaştırmak bambaşka bir dağılım verir. Sonucu denetlerken paylar toplamının bütünü vermesinin yanında her payın karşısındaki sayıyla çarpımını da karşılaştır; üçü de 288 olmalıdır."
+              ]
+            },
+            {
+              "title": "Birleşik oranlarda ortak bağlantıyı eşitle",
+              "paragraphs": [
+                "A:B=4:7 ve B:C=14:15 oranlarında B aynı miktarı temsil eder. İlk oranı 2 ile genişletip A:B=8:14 yapınca A:B:C=8:14:15 bulunur. B'yi iki orandan doğrudan yan yana yazıp 4:7:15 demek, ortak bağlantının iki ayrı ölçeğini karıştırır.",
+                "Cebirsel olarak A/B ve B/C oranları çarpıldığında B≠0 koşuluyla A/C elde edilir. Bu işlem aynı adları taşıyan gerçek ortak niceliklere uygulanmalıdır; iki farklı sorudaki B harfi aynı miktar demek değildir. Toplam veya miktar bilgisi sonradan verilirse bir ortak t ile bütün oranı ölçekle. Birimlerin uyumu birleşik oranda da korunur."
+              ]
+            },
+            {
+              "title": "Ölçek uzunluk oranıdır; alan ve hacim farklı büyür",
+              "paragraphs": [
+                "1:s uzunluk ölçeği, çizimdeki uzunluğun gerçeğe oranının 1/s olduğunu anlatır. 1:25000 haritada 7,2 cm gerçekte 180000 cm=1,8 km'dir. Önce aynı birimle çarp, sonra istenen birime dönüştür. Harita üzerindeki sayıyı doğrudan kilometre kabul etme.",
+                "Benzer şekillerde bütün uzunluklar k katına çıkarsa alan k², hacim k³ katına çıkar. Bunlar kenar uzunluğuyla doğru orantılı değil, onun karesi veya küpüyle doğru orantılı ilişkilerdir. Her orantının hangi niceliğe kurulduğunu açık yaz: y, x² ile doğru orantılıysa y/x² sabit olur; y/x sabit olmak zorunda değildir."
+              ]
+            },
+            {
+              "title": "Bileşik koşulu tek model gibi ezberleme",
+              "paragraphs": [
+                "Bir nicelik x ile doğru, z ile ters orantılıysa y=kx/z yazılabilir; z≠0 ve koşullar tanımlı olmalıdır. Önce bir değişkeni sabit tutarak yönü incele, sonra sabiti verilen bir durumdan bul. Örneğin üretim miktarı aynı verimli kişi sayısı ve süreyle birlikte artabilir; hangi değişkenin sabit olduğu söylenmeden tek bir oran kurmak eksik olur.",
+                "Çözüm yolu: sorulan oranı sırayla yaz, birimleri eşitle, sabit bölümü veya çarpımı belirle, ortak katsayıyı bul, yeni durumu hesapla, başlangıç verisiyle kontrol et. Değişen bir sabit ücret veya verim varsa bunu modelin dışında bırakma. Atölyedeki nokta ve tablolar, koşulları değiştirmenin neden aynı orantı sabitini korumadığını görünür kılar."
+              ]
+            },
+            {
+              "title": "Altın oranı iki karşılaştırmayla tanı",
+              "paragraphs": [
+                "Bir doğru parçasını, biri öbüründen uzun iki parçaya ayır. Uzun parçaya a, kısa parçaya b dersek a>b>0 olur. Bütün/uzun parça ile uzun/kısa parça oranlarını sırayla yaz. (a+b)/a=a/b sağlanıyorsa bu ortak orana altın oran denir ve φ ile gösterilir. Uzunluklar aynı birimde olduğundan φ birimsizdir. Değeri yaklaşık 1,618’dir.",
+                "Örneğin kısa parça 2 cm, uzun parça 3 cm olursa bütün 5 cm’dir. 5/3 ile 3/2 eşit mi? Çapraz çarpımlar 10 ve 9 olur, dolayısıyla bu bölme altın oranı vermez. Aynı parçalar başka bir uzunluk biriminde yazıldığında iki oran da değişmez. Yaklaşık değer benzer görünebilir. Tanımı belirleyen, iki oranın tam eşitliğidir."
+              ]
+            },
+            {
+              "title": "Karışımda önce bütünün kaç parça olduğunu bul",
+              "paragraphs": [
+                "Bir içecekte öz:su=3:5 olsun ve toplam hacim 32 L verilsin. Bütünü 3+5=8 eşit pay gibi düşün; her pay 4 L’dir. Öz 3·4=12 L, su 5·4=20 L olur. Özün karışımdaki yüzdesi 12/32=3/8=%37,5’tir. Özün suya oranı olan 3/5, yüzde hesabında bütünün paydası olamaz.",
+                "Karışımı aynı tada sahip olacak biçimde büyütürken iki bileşeni de aynı katsayıyla çarp. 12 L öz ve 20 L suya yalnız 8 L su eklersen karışım 40 L’ye çıkar fakat öz 12 L kalır. Yeni öz payı 12/40=%30’dur. Önce hangi miktarların değiştiğini yaz, sonra yeni toplam ve oranı kur."
+              ]
+            },
+            {
+              "title": "İş miktarıyla günlük süre aynı değişken değildir",
+              "paragraphs": [
+                "İş miktarını W, kişi başına saatlik verimi v, kişi sayısını n, günde çalışılan saati h ve çalışma günü sayısını d ile göster. Herkes aynı sabit hızda çalışırsa W=v·n·h·d olur. Kişi, saat ve gün çarpımı toplam kişi-saati verir. W ve v sabitse n veya h arttığında d azalır. W artarsa aynı kişi ve saatle daha çok gün gerekir.",
+                "5 kişinin 3 gün boyunca günde 4 saat çalışması 60 kişi-saattir. Aynı ekip, kişi başına günde 6 saate çıkarsa 60/30=2 günde aynı işi tamamlar. İş aynı anda iki katına çıkarsa hedef 120 kişi-saat olur ve 120/30=4 gün gerekir. Sadece kişi veya gün sayısına bakmadan önce verilen işi, kapasiteyi ve günlük saatleri ayır."
+              ]
+            },
+            {
+              "title": "Ardışık sabit oranda geçiş sayısını say",
+              "paragraphs": [
+                "Pozitif miktarlarda her geçişin katsayısı r ise bir sonraki değer Nₖ₊₁=r·Nₖ olur. İki geçişte Nₖ₊₂=r²·Nₖ, m geçişte rᵐ·Nₖ elde edilir. 2. adımdan 5. adıma 2→3→4→5, yani üç geçiş vardır. Toplam katsayıyı tek geçiş sanma. 2. değer 16, 5. değer 128 ise r³=8 ve r=2’dir.",
+                "Geri giderken her ok için r’ye böl. Bu örnekte 1. değer 16/2=8’dir. Aynı sayıda adım her seferinde aynı katsayıyı verir. Pozitif r≠1 iken farklı geçiş sayıları farklı katsayılar verir. r=1 durumunda tüm terimler aynı değerde kalır ve kaç adım atılırsa atılsın katsayı 1 olur."
+              ]
+            },
+            {
+              "title": "Oranı yaz, sabiti ve birimi kontrol et",
+              "paragraphs": [
+                "Pay ve paydanın hangi miktarları anlattığını belirle. a:b=m:n için b≠0 ve n≠0 olmalıdır. Ortak ölçek t=b/n olduğundan sıfır olamaz. Pozitif miktarlarda pozitif ölçek kullanılır. Sonucu hem başlangıç oranıyla hem soruda verilen toplam ya da farkla denetle.",
+                "Doğru orantı y=kx biçimindedir. x=0 iken y=0’dır ve y/x oranı hesaplanamaz. Ters orantı y=k/x biçimindedir, x ve k sıfırdan farklıdır. Süre ve iş gibi pozitif nicelikler için k>0’dır. Tablodan bir çözüm yolu seçmeden önce bu koşulları kontrol et."
+              ],
+              "table": {
+                "headers": [
+                  "İlk hamle",
+                  "Geçerli örnek",
+                  "Yöntemin durduğu yer",
+                  "Aynı yapıda bir uygulama"
+                ],
+                "rows": [
+                  [
+                    "Parçaları ölçekle",
+                    "A:B=3:7 ve toplam 50 ise 10t=50. A=15, B=35.",
+                    "3 ve 7’yi doğrudan miktar saymak toplamı 10’da bırakır.",
+                    "15 açık, 35 koyu plaka için açık:bütün=15:50=3:10."
+                  ],
+                  [
+                    "Eşit oranı çöz",
+                    "5/8=x/40. İki payda da tanımlı. 8x=200, x=25.",
+                    "x/0=5/8 tanımsızdır. Çapraz çarpım x=0 verse bile oran kurulamaz.",
+                    "Aynı kaplama miktarıyla 4 L boya 18 m² kaplıyorsa 6 L, 27 m² kaplar."
+                  ],
+                  [
+                    "Bölümün sabitliğine bak",
+                    "7 m kumaş 84 TL ise birim fiyat 12 TL/m. 10 m, 120 TL.",
+                    "20 TL sabit ücret varken toplam ücretin metre başına bölümü değişir.",
+                    "Sabit 42 km/saat hızla 1,5 saatte 63 km gidilir."
+                  ],
+                  [
+                    "Çarpımın sabitliğine bak",
+                    "10 özdeş makine 9 saatte bitirirse aynı işi 15 makine 6 saatte yapar.",
+                    "İş iki katına çıkarsa 15 makine için süre de 6’dan 12 saate çıkar.",
+                    "Alanı 72 cm² kalan dikdörtgende 8 cm’ye 9 cm, 12 cm’ye 6 cm eşleşir."
+                  ],
+                  [
+                    "Ölçeği aynı birimde uygula",
+                    "1:250 ölçekte 3,6 cm gerçekte 900 cm=9 m olur.",
+                    "250 ile çarpımın birimi hâlâ cm’dir. 900 m demek 100 kat hatadır.",
+                    "1:80 makette 2,5 cm uzunluk gerçekte 200 cm=2 m’dir."
+                  ]
+                ]
+              }
+            },
+            {
+              "title": "Ortak terimi ve değişen koşulu ayır",
+              "paragraphs": [
+                "Aynı harfin aynı çokluğu gösterdiğini kontrol et. Süre, verim ve iş miktarından biri değişiyorsa önce hangi çarpanın değiştiğini yaz. Adımlı bir modelde verilen iki konumu işaretle ve aradaki okları say. Bunlar benzer görünen sorularda ilk işlem hatalarını önler."
+              ],
+              "table": {
+                "headers": [
+                  "İlk hamle",
+                  "Geçerli örnek",
+                  "Yöntemin durduğu yer",
+                  "Aynı yapıda bir uygulama"
+                ],
+                "rows": [
+                  [
+                    "Ortak çokluğu eşitle",
+                    "A:B=3:5 ve B:C=10:7 ise A:B:C=6:10:7.",
+                    "3:5:7 yazmak ikinci orandaki B=10 bilgisini kaybeder.",
+                    "3 sepet 5 kutuyla, 10 kutu 7 çantayla aynı toplam kapasitedeyse 6 sepet=10 kutu=7 çantadır."
+                  ],
+                  [
+                    "Ters ağırlıkları kullan",
+                    "130 TL, 5 ve 8 ile ters paylaşılırsa pay oranı 8:5, paylar 80 ve 50 TL’dir.",
+                    "50 ve 80 TL, 5 ve 8 ile aynı yönde orantı kurar.",
+                    "Bir ürünü 5 ve 8 dakikada üreten makineler aynı sürede 8:5 oranında üretir."
+                  ],
+                  [
+                    "Çarpanları ayrı taşı",
+                    "3 kişi × 4 saat/gün × 6 gün ile 6 kişi × 3 saat/gün × 4 gün, 72 kişi-saat eder.",
+                    "Kişi sayısı ikiye katlanırken günlük saat ve gün değişir. Üretim yalnız kişiye göre hesaplanamaz.",
+                    "2 özdeş fırın 5 saatte 70 ürün pişirirse 5 fırın 2 saatte aynı miktarı pişirir."
+                  ],
+                  [
+                    "Adımlar boyunca katsayıyı çarp",
+                    "N₁=4, N₃=36, N₅=324. İki adımlık oran 9, tek adım katsayısı 3.",
+                    "N₁→N₂ bir, N₂→N₅ üç adımdır. r=3 iken bu katsayılar 3 ve 27’dir.",
+                    "Bir görsel her aşamada 2 kat büyütülüyorsa üç aşamada 2³=8 kat olur."
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "topic-tyt-geo-yamuk-deltoid-032",
+        "after": "2b86e995a56bc28c7cb378b9054eb950cda4dbf3cc12fc00165ff3dc7955d62b",
+        "prior": {
+          "sections": [
+            {
+              "title": "Taban ve açı",
+              "text": [
+                "AB∥CD tabanları seç. Aynı yan kenardaki iki iç açı toplamı 180°dir.",
+                "Kapsayıcı tanımda paralelkenar da yamuktur."
+              ]
+            },
+            {
+              "title": "Orta taban ve alan",
+              "text": [
+                "m=(a+c)/2; S=m·h=(a+c)h/2. h tabanlara dik uzaklıktır.",
+                "Köşegen orta noktaları arası |a−c|/2; orta tabanın tamamı değildir."
+              ]
+            },
+            {
+              "title": "Özel yamuk koşulları",
+              "text": [
+                "Farklı tabanlı ikizkenar yamuk: h²=ℓ²−((b−a)/2)².",
+                "Dik yamukta eğik kenar²=h²+(a−c)². Dik köşegen de varsa h²=ac.",
+                "Simetrik ikizkenar yamukta dik köşegenler varsa h=(a+c)/2."
+              ]
+            },
+            {
+              "title": "Köşegen kesişimi",
+              "text": [
+                "AO/OC=BO/OD=a/c. Benzer taban üçgenleri alan oranı a²/c².",
+                "İki yan üçgen alanı eş; her biri diğer iki alanın çarpımının pozitif kareköküdür."
+              ]
+            },
+            {
+              "title": "Deltoid",
+              "text": [
+                "AB=AD ve CB=CD ise AC, BD’nin orta dikmesidir. BD, AC’yi genelde ortalamaz.",
+                "S=AC·BD/2; Ç=2(AB+BC). Yarım BD ve kenarla Pisagor kur."
+              ]
+            }
+          ],
+          "source": "MEBİ TYT Matematik Konu Özetleri: basılı 141–143 ve 151; Aurelia TYT Geometri Tüm Konular ve Formüller: yamuk/deltoid özetiyle karşılaştırılmış özgün anlatım ve sorular. Kaynağın bütün PDF kapsamı değildir."
+        }
+      },
+      {
+        "surface": "sheets",
+        "id": "detail-209",
+        "after": "147569b79e12f6be5400f29e13d6be6055b86ac5791de2c274ac8ca193b0da99",
+        "prior": {
+          "sections": [
+            {
+              "title": "Oran iki çokluğun hangi sırayla karşılaştırıldığıdır",
+              "text": [
+                "a'nın b'ye oranı a/b veya a:b yazılır; b≠0 olmalıdır. 15 kırmızı ve 25 mavi boncuk için kırmızı:mavi=3:5'tir; kırmızı:toplam=15:40=3:8 olur. Oranın paydasının başka parçayı mı bütünü mü anlattığını sözcükle belirt. Oranın tersini almak, aynı soruya farklı bir cevap vermektir."
+              ]
+            },
+            {
+              "title": "Eşdeğer oran ve çapraz çarpım koşulu",
+              "text": [
+                "a/b=c/d orantısında b,d≠0 iken iki tarafı bd ile çarparak ad=bc elde ederiz. İçler–dışlar kuralı bu cebirsel işlemin kısa adıdır. Pay ve paydayı aynı sıfırdan farklı katsayıyla çarpmak oranı korur; aynı sayıyı eklemek genel olarak korumaz:2/3≠3/4."
+              ]
+            },
+            {
+              "title": "Oran gerçek miktarı tek başına belirlemez",
+              "text": [
+                "a:b=m:n verildiğinde a=mt,b=nt yazmak ortak ölçek katsayısını görünür kılar. m ve n, miktarların kendisi olmak zorunda değildir; aynı oranın sonsuz farklı büyüklükte örneği vardır. Fiziksel pozitif miktarlarda t>0 seçilir. Toplam verilirse(m+n)t; fark verilirse uygun sırayla(m−n)t denklemi kurulur."
+              ]
+            },
+            {
+              "title": "Doğru orantı: artış değil sabit bölüm",
+              "text": [
+                "y=kx doğru orantısında, x≠0 olan veriler için y/x=k sabittir. Pozitif miktarlarda x iki kat olunca y iki kat olur. Sabit birim fiyatlı alışveriş, başka ücret yoksa bu modele uyar. Grafik orijinden geçen doğrudur; modelin x=0 noktasında y=0 vermesi, veri bağlamının sıfıra uzatılabildiği durumda anlamlıdır."
+              ]
+            },
+            {
+              "title": "Ters orantı: sabit işte çarpım",
+              "text": [
+                "y=k/x ve x≠0 ters orantısında xy=k sabittir. Pozitif x iki kat olunca y yarıya iner. Aynı işi, aynı verimle, aynı günlük çalışma süresinde yapan işçi sayısı ile tamamlanma günü bu modele uyabilir. 6 eş verimli işçi 10 günde bitiriyorsa toplam 60 işçi-gün; 15 işçi için 4 gün gerekir."
+              ]
+            },
+            {
+              "title": "Ters orantılı paylaştırmada ağırlıkları ters çevir",
+              "text": [
+                "Bir toplam 3, 4 ve 6 sayılarıyla ters orantılı paylaştırılacaksa paylar 3t, 4t, 6t değildir; k/3, k/4, k/6 olur. Pay oranı 1/3:1/4:1/6=4:3:2 biçiminde yazılabilir. Verilen sayı büyüdükçe alınan pay küçülür; bu yön kontrolü doğru modelin hızlı bir denetimidir."
+              ]
+            },
+            {
+              "title": "Birleşik oranlarda ortak bağlantıyı eşitle",
+              "text": [
+                "A:B=4:7 ve B:C=14:15 oranlarında B aynı miktarı temsil eder. İlk oranı 2 ile genişletip A:B=8:14 yapınca A:B:C=8:14:15 bulunur. B'yi iki orandan doğrudan yan yana yazıp 4:7:15 demek, ortak bağlantının iki ayrı ölçeğini karıştırır."
+              ]
+            },
+            {
+              "title": "Ölçek uzunluk oranıdır; alan ve hacim farklı büyür",
+              "text": [
+                "1:s uzunluk ölçeği, çizimdeki uzunluğun gerçeğe oranının 1/s olduğunu anlatır. 1:25000 haritada 7,2 cm gerçekte 180000 cm=1,8 km'dir. Önce aynı birimle çarp, sonra istenen birime dönüştür. Harita üzerindeki sayıyı doğrudan kilometre kabul etme."
+              ]
+            },
+            {
+              "title": "Bileşik koşulu tek model gibi ezberleme",
+              "text": [
+                "Bir nicelik x ile doğru, z ile ters orantılıysa y=kx/z yazılabilir; z≠0 ve koşullar tanımlı olmalıdır. Önce bir değişkeni sabit tutarak yönü incele, sonra sabiti verilen bir durumdan bul. Örneğin üretim miktarı aynı verimli kişi sayısı ve süreyle birlikte artabilir; hangi değişkenin sabit olduğu söylenmeden tek bir oran kurmak eksik olur."
+              ]
+            },
+            {
+              "title": "Altın oranı iki karşılaştırmayla tanı",
+              "text": [
+                "Bir doğru parçasını, biri öbüründen uzun iki parçaya ayır. Uzun parçaya a, kısa parçaya b dersek a>b>0 olur. Bütün/uzun parça ile uzun/kısa parça oranlarını sırayla yaz. (a+b)/a=a/b sağlanıyorsa bu ortak orana altın oran denir ve φ ile gösterilir. Uzunluklar aynı birimde olduğundan φ birimsizdir. Değeri yaklaşık 1,618’dir."
+              ]
+            },
+            {
+              "title": "Karışımda önce bütünün kaç parça olduğunu bul",
+              "text": [
+                "Bir içecekte öz:su=3:5 olsun ve toplam hacim 32 L verilsin. Bütünü 3+5=8 eşit pay gibi düşün; her pay 4 L’dir. Öz 3·4=12 L, su 5·4=20 L olur. Özün karışımdaki yüzdesi 12/32=3/8=%37,5’tir. Özün suya oranı olan 3/5, yüzde hesabında bütünün paydası olamaz."
+              ]
+            },
+            {
+              "title": "İş miktarıyla günlük süre aynı değişken değildir",
+              "text": [
+                "İş miktarını W, kişi başına saatlik verimi v, kişi sayısını n, günde çalışılan saati h ve çalışma günü sayısını d ile göster. Herkes aynı sabit hızda çalışırsa W=v·n·h·d olur. Kişi, saat ve gün çarpımı toplam kişi-saati verir. W ve v sabitse n veya h arttığında d azalır. W artarsa aynı kişi ve saatle daha çok gün gerekir."
+              ]
+            },
+            {
+              "title": "Ardışık sabit oranda geçiş sayısını say",
+              "text": [
+                "Pozitif miktarlarda her geçişin katsayısı r ise bir sonraki değer Nₖ₊₁=r·Nₖ olur. İki geçişte Nₖ₊₂=r²·Nₖ, m geçişte rᵐ·Nₖ elde edilir. 2. adımdan 5. adıma 2→3→4→5, yani üç geçiş vardır. Toplam katsayıyı tek geçiş sanma. 2. değer 16, 5. değer 128 ise r³=8 ve r=2’dir."
+              ]
+            },
+            {
+              "title": "Oranı yaz, sabiti ve birimi kontrol et",
+              "text": [
+                "Pay ve paydanın hangi miktarları anlattığını belirle. a:b=m:n için b≠0 ve n≠0 olmalıdır. Ortak ölçek t=b/n olduğundan sıfır olamaz. Pozitif miktarlarda pozitif ölçek kullanılır. Sonucu hem başlangıç oranıyla hem soruda verilen toplam ya da farkla denetle."
+              ],
+              "table": {
+                "headers": [
+                  "İlk hamle",
+                  "Geçerli örnek",
+                  "Yöntemin durduğu yer",
+                  "Aynı yapıda bir uygulama"
+                ],
+                "rows": [
+                  [
+                    "Parçaları ölçekle",
+                    "A:B=3:7 ve toplam 50 ise 10t=50. A=15, B=35.",
+                    "3 ve 7’yi doğrudan miktar saymak toplamı 10’da bırakır.",
+                    "15 açık, 35 koyu plaka için açık:bütün=15:50=3:10."
+                  ],
+                  [
+                    "Eşit oranı çöz",
+                    "5/8=x/40. İki payda da tanımlı. 8x=200, x=25.",
+                    "x/0=5/8 tanımsızdır. Çapraz çarpım x=0 verse bile oran kurulamaz.",
+                    "Aynı kaplama miktarıyla 4 L boya 18 m² kaplıyorsa 6 L, 27 m² kaplar."
+                  ],
+                  [
+                    "Bölümün sabitliğine bak",
+                    "7 m kumaş 84 TL ise birim fiyat 12 TL/m. 10 m, 120 TL.",
+                    "20 TL sabit ücret varken toplam ücretin metre başına bölümü değişir.",
+                    "Sabit 42 km/saat hızla 1,5 saatte 63 km gidilir."
+                  ],
+                  [
+                    "Çarpımın sabitliğine bak",
+                    "10 özdeş makine 9 saatte bitirirse aynı işi 15 makine 6 saatte yapar.",
+                    "İş iki katına çıkarsa 15 makine için süre de 6’dan 12 saate çıkar.",
+                    "Alanı 72 cm² kalan dikdörtgende 8 cm’ye 9 cm, 12 cm’ye 6 cm eşleşir."
+                  ],
+                  [
+                    "Ölçeği aynı birimde uygula",
+                    "1:250 ölçekte 3,6 cm gerçekte 900 cm=9 m olur.",
+                    "250 ile çarpımın birimi hâlâ cm’dir. 900 m demek 100 kat hatadır.",
+                    "1:80 makette 2,5 cm uzunluk gerçekte 200 cm=2 m’dir."
+                  ]
+                ]
+              }
+            },
+            {
+              "title": "Ortak terimi ve değişen koşulu ayır",
+              "text": [
+                "Aynı harfin aynı çokluğu gösterdiğini kontrol et. Süre, verim ve iş miktarından biri değişiyorsa önce hangi çarpanın değiştiğini yaz. Adımlı bir modelde verilen iki konumu işaretle ve aradaki okları say. Bunlar benzer görünen sorularda ilk işlem hatalarını önler."
+              ],
+              "table": {
+                "headers": [
+                  "İlk hamle",
+                  "Geçerli örnek",
+                  "Yöntemin durduğu yer",
+                  "Aynı yapıda bir uygulama"
+                ],
+                "rows": [
+                  [
+                    "Ortak çokluğu eşitle",
+                    "A:B=3:5 ve B:C=10:7 ise A:B:C=6:10:7.",
+                    "3:5:7 yazmak ikinci orandaki B=10 bilgisini kaybeder.",
+                    "3 sepet 5 kutuyla, 10 kutu 7 çantayla aynı toplam kapasitedeyse 6 sepet=10 kutu=7 çantadır."
+                  ],
+                  [
+                    "Ters ağırlıkları kullan",
+                    "130 TL, 5 ve 8 ile ters paylaşılırsa pay oranı 8:5, paylar 80 ve 50 TL’dir.",
+                    "50 ve 80 TL, 5 ve 8 ile aynı yönde orantı kurar.",
+                    "Bir ürünü 5 ve 8 dakikada üreten makineler aynı sürede 8:5 oranında üretir."
+                  ],
+                  [
+                    "Çarpanları ayrı taşı",
+                    "3 kişi × 4 saat/gün × 6 gün ile 6 kişi × 3 saat/gün × 4 gün, 72 kişi-saat eder.",
+                    "Kişi sayısı ikiye katlanırken günlük saat ve gün değişir. Üretim yalnız kişiye göre hesaplanamaz.",
+                    "2 özdeş fırın 5 saatte 70 ürün pişirirse 5 fırın 2 saatte aynı miktarı pişirir."
+                  ],
+                  [
+                    "Adımlar boyunca katsayıyı çarp",
+                    "N₁=4, N₃=36, N₅=324. İki adımlık oran 9, tek adım katsayısı 3.",
+                    "N₁→N₂ bir, N₂→N₅ üç adımdır. r=3 iken bu katsayılar 3 ve 27’dir.",
+                    "Bir görsel her aşamada 2 kat büyütülüyorsa üç aşamada 2³=8 kat olur."
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
   }
 ]

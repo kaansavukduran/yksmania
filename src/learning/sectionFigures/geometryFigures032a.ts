@@ -827,16 +827,24 @@ const yamukDeltoid: Record<string, FigureDef> = {
   },
   "İkizkenar yamukta simetriyi gerçekten doğrula": {
     caption:
-      "b = 20, a = 8, ℓ = 10: kısa tabanın uçlarından inen dikmeler 12'lik farkı iki yana 6 ve 6 olarak böler; h = √(100 − 36) = 8.",
-    alt: "Alt tabanı 20, üst tabanı 8, yan kenarları 10 olan ikizkenar yamuk; kesikli simetri ekseni, iki dikme ve yanlarda 6'şar birimlik parçalar.",
-    draw: () => {
-      const [A, B, C, D] = trap(20, 8, 8, 6).map((p) => mul(p, 0.4));
+      "Kısa tabanın uçlarından dikmeleri indir. İki yatay parça eşit olduğundan taban farkını ikiye böl. Ardından Pisagor ile yüksekliği bul.",
+    alt: "İkizkenar yamuk. Kısa tabanın her ucundan uzun tabana dikme iniyor. İki dış parça eşit, yan kenar bir dik üçgenin hipotenüsü.",
+    steps: ["20 ve 8 taban, 10 yan kenar", "18 ve 8 taban, 13 yan kenar"],
+    draw: (_, step) => {
+      const longBase = step === 0 ? 20 : 18;
+      const shortBase = 8;
+      const side = step === 0 ? 10 : 13;
+      const offset = (longBase - shortBase) / 2;
+      const height = Math.sqrt(side ** 2 - offset ** 2);
+      const scale = 0.4;
+      const [A, B, C, D] = trap(longBase, shortBase, height, offset).map((p) => mul(p, scale));
+      const center = longBase * scale / 2;
       const H1 = foot(D, A, B);
       const H2 = foot(C, A, B);
       return {
         els: [
           quad([A, B, C, D], "muted"),
-          seg(v(4, -0.4), v(4, 3.2), { dash: true, tone: "a" }),
+          seg(v(center, -0.4), v(center, height * scale), { dash: true, tone: "a" }),
           seg(D, H1, { dash: true, tone: "b" }),
           seg(C, H2, { dash: true, tone: "b" }),
           right(H1, B, D, "b"),
@@ -845,14 +853,18 @@ const yamukDeltoid: Record<string, FigureDef> = {
           ticks(B, C, 1),
           ang(A, B, D, undefined, { tone: "c" }),
           ang(B, C, A, undefined, { tone: "c" }),
-          dim(A, H1, "6", D, "b"),
-          dim(H2, B, "6", C, "b"),
-          dim(D, H1, "8", B),
-          dim(A, D, "10", B),
-          dim(D, C, "8", A),
+          dim(A, H1, String(offset), D, "b"),
+          dim(H2, B, String(offset), C, "b"),
+          dim(D, H1, String(height), B),
+          dim(A, D, String(side), B),
+          dim(D, C, String(shortBase), A),
           ...labelAll([A, B, C, D], ["A", "B", "C", "D"], ["sw", "se", "ne", "nw"]),
         ],
-        readout: ["(20 − 8)/2 = 6", "h = √(10² − 6²) = 8"],
+        readout: [
+          `(${longBase} − ${shortBase})/2 = ${offset}`,
+          `h = √(${side}² − ${offset}²) = ${height}`,
+          `Alan = (${longBase} + ${shortBase}) × ${height} / 2 = ${(longBase + shortBase) * height / 2} birim².`,
+        ],
       };
     },
   },

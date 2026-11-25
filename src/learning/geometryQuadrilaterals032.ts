@@ -1,7 +1,7 @@
 import { txt, type Lesson, type Question } from "../domain/model";
 import type { QuestionGuidance } from "../domain/questionHelpModel";
 import type { LessonGuide, GuideSection, WorkedExample } from "./guides/types";
-import type { CheatSheet } from "./cheatsheetContent";
+import type { CheatSection, CheatSheet } from "./cheatsheetContent";
 interface QuadrilateralItem032 extends QuestionGuidance {
   prompt: string;
   options: string[];
@@ -62,7 +62,7 @@ const packs: QuadrilateralPack032[] = [
         title: "İkizkenar yamukta simetriyi gerçekten doğrula",
         paragraphs: [
           "Taban uzunlukları farklı olan bir yamukta iki yan kenar eşitse, tabanların orta dikmesi simetri eksenidir. Aynı tabana komşu iki iç açı, köşegenler ve köşegenlerin eksene göre eş parçaları eşittir. Karşı açılar bütünlerdir; bu yamuk çemberseldir. Kapsayıcı yamuk tanımında tabanları eşit paralelkenarda yalnız yan kenar eşliği bu simetriyi kanıtlamaz; böyle bir durumda ayrıca simetri veya taban açı eşliği gerekir.",
-          "Uzun taban b, kısa taban a ve yan kenar ℓ olsun. Kısa tabanın uçlarından uzun tabana dikmeler indir; iki yandaki yatay fark eşit olduğundan her biri (b−a)/2 olur. Pisagor ile h²=ℓ²−((b−a)/2)² bulunur. Sağ taraf pozitif olmalıdır. Örneğin b=20, a=8, ℓ=10 için yatay parça 6 ve yükseklik 8’dir; 12’lik taban farkının tamamını tek üçgene koymak yanlıştır.",
+          "İki dikme, uzun taban b ile kısa taban a’nın farkını d=(b−a)/2 uzunluğunda iki parçaya böler. Yan kenar ℓ hipotenüstür. ℓ>d ise Pisagor’dan h=√(ℓ²−d²) çıkar. İlk çizimde tabanlar 20 ve 8, yan kenar 10, d=6 ve h=8’dir. İkinci çizimde tabanlar 18 ve 8, yan kenar 13, d=5 ve h=12’dir. Alan (18+8)·12/2=156 birim². Eğik yan kenarı yükseklik kabul edersen 169 bulursun.",
         ],
       },
       {
@@ -521,7 +521,7 @@ const packs: QuadrilateralPack032[] = [
       },
     ],
     source:
-      "MEBİ TYT Matematik Konu Özetleri: basılı 141–143 ve 151; Aurelia TYT Geometri Tüm Konular ve Formüller: yamuk/deltoid özetiyle karşılaştırılmış özgün anlatım ve sorular. Kaynağın bütün PDF kapsamı değildir.",
+      "MEBİ TYT Matematik Konu Özetleri: basılı 141–143 ve 151; Aurelia TYT Geometri Tüm Konular ve Formüller: yamuk/deltoid özeti ile Yamuk PDF fiziksel 2 ve 5 (G1) karşılaştırılmış özgün anlatım ve sorular. Kaynağın bütün PDF kapsamı değildir.",
   },
   {
     id: "tyt-geo-paralelkenar-ozel-dortgenler-032",
@@ -1039,7 +1039,7 @@ export const geometryQuadrilaterals032Lessons: Lesson[] = packs.map(
     }),
   }),
 );
-const summaries: Record<string, { title: string; text: string[] }[]> = {
+const summaries: Record<string, CheatSection[]> = {
   "tyt-geo-yamuk-deltoid-032": [
     {
       title: "Taban ve açı",
@@ -1057,6 +1057,7 @@ const summaries: Record<string, { title: string; text: string[] }[]> = {
     },
     {
       title: "Özel yamuk koşulları",
+      figureTitle: "İkizkenar yamukta simetriyi gerçekten doğrula",
       text: [
         "Farklı tabanlı ikizkenar yamuk: h²=ℓ²−((b−a)/2)².",
         "Dik yamukta eğik kenar²=h²+(a−c)². Dik köşegen de varsa h²=ac.",

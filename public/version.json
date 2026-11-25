@@ -1,8 +1,8 @@
 {
-  "version": "0.163.0",
+  "version": "0.164.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Köklü denklemde adayları ilk eşitliğe geri koy. Dörtgende orta noktaların oluşturduğu dikdörtgenin çevresini ve alanını çizimle doğrula.",
-    "en": "Check radical equation candidates in the original equation and find the perimeter and area of a quadrilateral’s midpoint rectangle."
+    "tr": "Ters orantıda pompa sayısı ve çalışma süresini ilişkilendir. İkizkenar yamukta dik yükseklikten alanı adım adım bul.",
+    "en": "Relate pump count to working time and use the vertical height to find an isosceles trapezoid’s area."
   }
 }

@@ -139,6 +139,35 @@ const proportion: FigureDef = {
   },
 };
 
+const pumpHours: FigureDef = {
+  caption: "Pompa sayısı genişliği, çalışma süresi yüksekliği belirler. Aynı iş miktarında pompalar artınca dikdörtgenin alanı sabit kalır.",
+  alt: "Dikdörtgenin her sütunu aynı debide bir pompayı gösterir. Yatay eksen pompa sayısı, düşey eksen çalışma süresi. Sürgü genişliği, iş miktarı adımı alanı değiştirir.",
+  steps: ["Aynı iş", "İki kat iş"],
+  param: { label: "Pompa sayısı", min: 4, max: 16, step: 1, init: 8 },
+  draw: (pumps, step) => {
+    const work = step === 0 ? 120 : 240;
+    const hours = work / pumps;
+    const height = hours / 4;
+    const origin = v(0, 0);
+    return {
+      els: [
+        vec(origin, v(17, 0), { tone: "ink" }),
+        vec(origin, v(0, 16), { tone: "ink" }),
+        poly([origin, v(pumps, 0), v(pumps, height), v(0, height)], { fill: "b" }),
+        ...Array.from({ length: pumps - 1 }, (_, index) =>
+          seg(v(index + 1, 0), v(index + 1, height), { tone: "b", thin: true })
+        ),
+        txt(v(16, -0.5), "Pompa sayısı", "s", { small: true }),
+        txt(v(0, 16), "Saat", "n", { small: true }),
+      ],
+      readout: [
+        `${pumps} pompa. ${work} pompa-saat iş.`,
+        `Süre = ${work} ÷ ${pumps} ${Math.abs(hours * 100 - Math.round(hours * 100)) < 1e-9 ? "=" : "≈"} ${fmt(hours, 2)} saat.`,
+      ],
+    };
+  },
+};
+
 /* ---------- Üslü: taban 1'in hangi yanında ---------- */
 const bases: FigureDef = {
   caption:
@@ -178,6 +207,9 @@ export const mathFiguresTyt: Record<string, Record<string, FigureDef>> = {
     "Küçüklük içeriyi, büyüklük dışarıyı seçer": absIneq,
   },
   kumeler: { "Sözel problemde önce dört ayrık bölgeyi doldur": venn },
-  "oran-oranti": { "Ters orantı: sabit işte çarpım": proportion },
+  "oran-oranti": {
+    "Ters orantı: sabit işte çarpım": proportion,
+    "Pompa sayısını değiştir, sabit işi koru": pumpHours,
+  },
   "uslu-sayilar": { "Sıralamada taban 1'in hangi yanında?": bases },
 };

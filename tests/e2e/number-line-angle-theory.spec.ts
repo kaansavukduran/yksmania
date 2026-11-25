@@ -730,3 +730,50 @@ test("Perpendicular diagonals keep the midpoint rectangle dimensions as the diag
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Pump count changes duration only under the same workload", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Pompa sayısını değiştir, sabit işi koru");
+  await page.goto("/#/lesson?id=oran-oranti");
+  await expect(model).toContainText("120 ÷ 8 = 15 saat");
+  const slider = model.getByRole("slider", { name: "Pompa sayısı" });
+  await slider.fill("12");
+  await expect(model).toContainText("120 ÷ 12 = 10 saat");
+  const sameWork = await model.getByRole("img").innerHTML();
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await next.press("Enter");
+  await expect(model).toContainText("240 ÷ 12 = 20 saat");
+  expect(await model.getByRole("img").innerHTML()).not.toBe(sameWork);
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-209");
+  await slider.fill("12");
+  await next.press("Enter");
+  await expect(model).toContainText("240 ÷ 12 = 20 saat");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Trapezoid height comes from the horizontal half-difference and slanted side", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-yamuk-deltoid-032";
+  const model = figure(page, "İkizkenar yamukta simetriyi gerçekten doğrula");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("h = √(10² − 6²) = 8");
+  await next.press("Enter");
+  await expect(model).toContainText("(18 − 8)/2 = 5");
+  await expect(model).toContainText("h = √(13² − 5²) = 12");
+  await expect(model).toContainText("Alan = (18 + 8) × 12 / 2 = 156 birim²");
+  await checkFrame(page, model);
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await next.press("Enter");
+  await expect(model).toContainText("Alan = (18 + 8) × 12 / 2 = 156 birim²");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

@@ -1098,6 +1098,14 @@ const ratio: Pack = {
       "y=k/x ve x≠0 ters orantısında xy=k sabittir. Pozitif x iki kat olunca y yarıya iner. Aynı işi, aynı verimle, aynı günlük çalışma süresinde yapan işçi sayısı ile tamamlanma günü bu modele uyabilir. 6 eş verimli işçi 10 günde bitiriyorsa toplam 60 işçi-gün; 15 işçi için 4 gün gerekir.",
       "Her azalan ilişki ters orantı değildir. y=10−x azalır fakat xy sabit değildir. İşçiler birbirini engelliyor, çalışma saatleri değişiyor veya iş miktarı artıyorsa basit işçi-gün modeli geçerli olmayabilir. Soruda sabit tutulanları yaz: toplam iş, kişi başına hız, günlük süre. Sıfır işçi ile süre hesabı yapmaya çalışmak modelin tanımını aşar.",
     ),
+    {
+      title: "Pompa sayısını değiştir, sabit işi koru",
+      figureTitle: "Pompa sayısını değiştir, sabit işi koru",
+      paragraphs: [
+        "Aynı debideki 8 pompa aynı anda çalışıp bir işi 15 saatte bitirirse iş 8·15=120 pompa-saattir. 12 pompa için süre 120/12=10 saattir. Pompa sayısı artınca şekildeki genişlik artar, süre kısalır ve alan sabit kalır.",
+        "İş de iki katına çıkarsa artık 240 pompa-saat gerekir. 12 pompa 20 saat çalışır. İlk 10 saatlik sonuç yalnız iş miktarı aynı kaldığında geçerlidir.",
+      ],
+    },
     section(
       "Ters orantılı paylaştırmada ağırlıkları ters çevir",
       "Bir toplam 3, 4 ve 6 sayılarıyla ters orantılı paylaştırılacaksa paylar 3t, 4t, 6t değildir; k/3, k/4, k/6 olur. Pay oranı 1/3:1/4:1/6=4:3:2 biçiminde yazılabilir. Verilen sayı büyüdükçe alınan pay küçülür; bu yön kontrolü doğru modelin hızlı bir denetimidir.",
