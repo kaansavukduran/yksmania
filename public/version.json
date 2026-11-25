@@ -1,8 +1,8 @@
 {
-  "version": "0.193.0",
+  "version": "0.194.0",
   "channel": "alpha",
   "notes": {
-    "tr": "AYT Kimyada azot ve oksijenin 2p orbital kutularını karşılaştır, elektronların zıt spinle eşleşmesini ve tek elektron sayısını oku.",
-    "en": "Compare nitrogen and oxygen 2p orbital occupancy, opposite spins in a pair, and the number of unpaired electrons."
+    "tr": "AYT Biyolojide ATP’nin parçalarını incele ve başlangıç, sentez ve hidrolizden son ATP miktarını aynı ölçekli modelle hesapla.",
+    "en": "Inspect ATP parts and calculate final ATP from the starting amount, synthesis, and hydrolysis on one shared scale."
   }
 }

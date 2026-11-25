@@ -2189,3 +2189,28 @@ test("AYT p orbital arrows pair only after three single electrons", async ({ pag
   await expect(prior).toContainText("Gerçek Cr: 4s¹ 3d⁵");
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("AYT ATP pool keeps synthesis and hydrolysis separate", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "ATP miktarını sentez ve hidrolizle hesapla");
+  for (const route of ["/#/lesson?id=atp-metabolizma", "/#/cheatsheets?topic=detail-283"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Son ATP = 100 + 20 − 35 = 85 molekül.");
+    await expect(model).toContainText("net değişim +15 adet.");
+    const structure = figure(page, "ATP’nin parçalarını say, besinle rolünü karıştırma");
+    await structure.getByRole("button", { name: "γ fosfat", exact: true }).press("Enter");
+    await expect(structure).toContainText("Uç fosfat: hidrolizde ayrılır, ATP + H₂O → ADP + Pi.");
+    const slider = model.getByRole("slider", { name: /Hidrolizlenen ATP/ });
+    await slider.press("Home");
+    await expect(model).toContainText("Son ATP = 100 + 20 − 0 = 120 molekül.");
+    await expect(model).toContainText("net değişim −20 adet.");
+    await slider.press("End");
+    await expect(model).toContainText("Son ATP = 100 + 20 − 60 = 60 molekül.");
+    await expect(model).toContainText("net değişim +40 adet.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});

@@ -20,6 +20,21 @@ interface TheorySupplement {
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const theorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "atp-metabolizma": [{
+    title: "ATP’nin parçalarını say, besinle rolünü karıştırma",
+    figureTitle: "ATP’nin parçalarını say, besinle rolünü karıştırma",
+    paragraphs: [],
+    summary: "ATP; adenin, riboz ve üç fosfat taşır. Hidrolizde uç fosfat ayrılır ve ADP ile serbest fosfat (Pi) oluşur.",
+  }, {
+    title: "ATP miktarını sentez ve hidrolizle hesapla",
+    figureTitle: "ATP miktarını sentez ve hidrolizle hesapla",
+    paragraphs: [
+      "Başlangıçta 100 ATP molekülü var. Modelde aynı zaman aralığında 20 ATP sentezleniyor ve 35’i hidrolizleniyor. Tepkimeler için yeterli başlangıç ADP ve fosfatı var. Son ATP 100+20−35=85.",
+      "Her sentez bir ADP ve bir serbest fosfatı kullanır. Her hidroliz birer ADP ve serbest fosfat oluşturur. İkisinin de net artışı 15. Bu iki tepkimeyle sınırlı modelde ATP ve ADP moleküllerinin toplamı korunur.",
+    ],
+    summary: "Son ATP = başlangıç + sentez − hidroliz. 100+20−35=85. ADP ve serbest fosfatın her biri net 15 artar.",
+    appendSection: true,
+  }],
   "ayt-modern-atom-elektron-dizilimi": [{
     title: "2p kutularında önce tek elektronları yerleştir",
     figureTitle: "2p kutularında önce tek elektronları yerleştir",

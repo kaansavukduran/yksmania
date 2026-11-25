@@ -96,9 +96,39 @@ const kinds: FigureDef = {
   },
 };
 
+const atpPool: FigureDef = {
+  caption: "Kapalı öğretim modelinde başlangıç ATP’sinden hareket et. Sentezlenen ATP’yi ekle, hidrolizlenen ATP’yi çıkar. Başlangıç ve son miktar aynı ölçekle çizilir.",
+  alt: "Yatay iki çubuk. Başlangıçta 100 ATP molekülü. Sentez 20, hidroliz başlangıçta 35, son çubuk 85. Hidroliz sürgüyle değişir.",
+  param: { label: "Hidrolizlenen ATP", min: 0, max: 60, step: 5, init: 35 },
+  draw: (hydrolysis) => {
+    const start = 100, synthesis = 20;
+    const finish = start + synthesis - hydrolysis;
+    const difference = hydrolysis - synthesis;
+    const els: El[] = [
+      seg(v(0, 0.05), v(0, 3.25), { tone: "ink" }),
+      txt(v(0, 3.35), "ATP molekül sayısı", "n", { small: true, bold: true }),
+      txt(v(-2.35, 3.95), "", "c"),
+      txt(v(7.85, -0.5), "", "c"),
+    ];
+    const rows = [{ y: 2.45, label: "Başlangıç", amount: start, tone: "b" }, { y: 1.1, label: "Son ATP", amount: finish, tone: "a" }] as const;
+    for (const {y, label, amount, tone} of rows) {
+      const end = amount * 0.05;
+      els.push(poly([v(0, y - 0.31), v(end, y - 0.31), v(end, y + 0.31), v(0, y + 0.31)], { tone, fill: tone, thin: true }));
+      els.push(txt(v(-0.16, y), label, "w", { small: true, bold: true }));
+      els.push(txt(v(end + 0.2, y), String(amount), "e", { small: true, bold: true }));
+    }
+    const signed = difference > 0 ? `+${difference}` : String(difference).replace("-", "−");
+    return { els, readout: [
+      `Son ATP = ${start} + ${synthesis} − ${hydrolysis} = ${finish} molekül.`,
+      `ADP ve serbest Pi’nin her birindeki net değişim ${signed} adet. ATP + ADP toplamı korunur.`,
+    ] };
+  },
+};
+
 export const biologyFiguresAtp: Record<string, Record<string, FigureDef>> = {
   "atp-metabolizma": {
     "ATP’nin parçalarını say, besinle rolünü karıştırma": atp,
+    "ATP miktarını sentez ve hidrolizle hesapla": atpPool,
     "Fotofosforilasyon: ilk enerji kaynağı ışık, ortak mekanizma kemiozmoz": kinds,
   },
 };
