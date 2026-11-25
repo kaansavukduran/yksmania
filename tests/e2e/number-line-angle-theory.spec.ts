@@ -1714,3 +1714,63 @@ test("The hypothetical germination graph distinguishes zero from an unmeasured p
   }
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Motion areas below zero count differently for displacement and distance", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Hız sıfırı geçince alanı ayrı hesapla");
+  for (const route of ["/#/lesson?id=dogrusal-hareket", "/#/cheatsheets?topic=detail-116"]) {
+    await page.goto(route);
+    await expect(model).toContainText("Yön değişimi t = 4 s");
+    const next = model.getByRole("button", { name: "İleri", exact: true });
+    await next.press("Enter");
+    await expect(model).toContainText("İşaretli alanlar +8, +4, −1, −4 m. Yer değiştirme +7 m");
+    await next.press("Enter");
+    await expect(model).toContainText("Alan büyüklüklerinin toplamı 17 m");
+    await expect(model).toContainText("ortalama sürat 2,43 m/s");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("An outer formula coefficient multiplies all three element counts", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Alt indis, parantez ve katsayının görevi");
+  const table = page.getByRole("table").filter({ hasText: "Üç formül birimi" });
+  for (const route of ["/#/lesson?id=sembolik-dil", "/#/cheatsheets?topic=detail-141"]) {
+    await page.goto(route);
+    const next = model.getByRole("button", { name: "İleri", exact: true });
+    for (let i = 0; i < 5; i++) await next.press("Enter");
+    await expect(model).toContainText("Al = 2, S = 3, O = 12");
+    await next.press("Enter");
+    await expect(model).toContainText("Al = 6, S = 9, O = 36");
+    await expect(model).toContainText("toplam 51 atom, 3 element türü");
+    await expect(table.getByRole("row").nth(4).getByRole("cell", { name: "51", exact: true })).toBeVisible();
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("Mineral limitation follows fraction of the requirement and can tie", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Ham miktarı değil, karşılanan gereksinimi karşılaştır");
+  for (const route of ["/#/lesson?id=mineraller", "/#/cheatsheets?topic=detail-3"]) {
+    await page.goto(route);
+    await expect(model).toContainText("X daha az karşılanıyor ve bu modelde sınırlayıcı");
+    const range = model.getByRole("slider", { name: /Y için karşılanma/ });
+    await range.fill("50");
+    await expect(model).toContainText("Gereksinimler aynı oranda karşılanıyor");
+    await range.press("Home");
+    await expect(model).toContainText("Y daha az karşılanıyor ve bu modelde sınırlayıcı");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});

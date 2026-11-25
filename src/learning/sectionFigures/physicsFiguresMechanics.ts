@@ -107,7 +107,50 @@ const newtonTimeFigure: FigureDef = {
   draw: (time, step) => step === timeMeasures.length ? drawDisplacement(time) : drawTimeGraph(time, timeMeasures[step]),
 };
 
+const velocityAreaSource003: FigureDef = {
+  caption: "Hız sıfırı geçtiğinde alanı böl. Yer değiştirmede eksen altındaki parçalar negatif, alınan yolda bütün alanlar pozitif sayılır.",
+  alt: "Hız zaman grafiğinde 0–2 saniye +4 m/s. 2–5 saniyede doğrusal biçimde +4’ten −2’ye iner ve 4. saniyede sıfırı geçer. 5–7 saniye −2 m/s.",
+  steps: ["Yön değişimini bul", "Alanları işaretle", "Yol ve yer değiştirmeyi karşılaştır"],
+  draw: (_, step) => {
+    const start = 2, end = 5, first = 4, last = -2;
+    const acceleration = (last - first) / (end - start);
+    const turningTime = start - first / acceleration;
+    const times = [0, start, turningTime, end, 7];
+    const velocities = [first, first, 0, last, last];
+    const areas = times.slice(1).map((time, i) => (time - times[i]) * (velocities[i] + velocities[i + 1]) / 2);
+    const signedAreas = areas.map((area) => area >= 0 ? `+${area}` : fmt(area).replace("-", "−"));
+    const displacement = areas.reduce((total, area) => total + area, 0);
+    const distance = areas.reduce((total, area) => total + Math.abs(area), 0);
+    const point = (time: number, velocity: number) => v(time, velocity * 0.62);
+    const els: El[] = [];
+    if (step > 0) areas.forEach((area, i) => {
+      const a = times[i], b = times[i + 1];
+      const outline = area >= 0 ? "a" : "warn";
+      els.push(poly([point(a, 0), point(a, velocities[i]), point(b, velocities[i + 1]), point(b, 0)], { tone: outline, fill: outline, thin: true }));
+      els.push(txt(point((a + b) / 2, (velocities[i] + velocities[i + 1]) * 0.25),
+        `${step === 2 ? Math.abs(area) : fmt(area)}`, "c", { tone: "ink", bold: true, small: true }));
+    });
+    els.push(
+      vec(v(-0.2, 0), v(7.6, 0), { tone: "ink" }),
+      vec(point(0, -2.7), point(0, 4.9), { tone: "ink" }),
+      curve(times.map((time, i) => point(time, velocities[i]))),
+      pt(point(turningTime, 0), undefined, "ne", "warn"),
+      txt(v(7.55, -0.44), "Zaman (s)", "s", { tone: "ink", small: true }),
+      txt(point(0, 5.0), "Hız (m/s)", "n", { tone: "ink", small: true }),
+    );
+    for (const time of times) els.push(txt(v(time, 0.18), String(time), "n", { tone: "muted", small: true }));
+    for (const speed of [-2, 2, 4]) els.push(txt(point(-0.13, speed), fmt(speed), "w", { tone: "ink", small: true }));
+    els.push(txt(v(-0.87, 4.1), "", "c"), txt(v(8.4, -2.12), "", "c"));
+    return { els, readout: [
+      `İvme ${fmt(acceleration)} m/s². Yön değişimi t = ${turningTime} s.`,
+      ...(step > 0 ? [`İşaretli alanlar ${signedAreas.join(", ")} m. Yer değiştirme +${displacement} m.`] : []),
+      ...(step === 2 ? [`Alan büyüklüklerinin toplamı ${distance} m. Ortalama hız +${displacement / 7} m/s, ortalama sürat ${fmt(distance / 7, 2)} m/s.`] : []),
+    ] };
+  },
+};
+
 const dogrusalHareket: Record<string, FigureDef> = {
+  "Hız sıfırı geçince alanı ayrı hesapla": velocityAreaSource003,
   "Gittiğin yol ile vardığın yer aynı şey değil": {
     caption:
       "0'dan +5'e gidip +2'ye dönen cisim: yer değiştirme yalnız ilk ve son konumun farkıdır (Δx = 2 m), yol ise bütün parçaların uzunluğudur (5 + 3 = 8 m).",

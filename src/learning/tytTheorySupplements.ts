@@ -18,6 +18,39 @@ interface TheorySupplement {
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "dogrusal-hareket": [{
+    title: "Hız sıfırı geçince alanı ayrı hesapla",
+    figureTitle: "Hız sıfırı geçince alanı ayrı hesapla",
+    paragraphs: [
+      "Hız 0–2 s boyunca +4 m/s. Sonraki 3 saniyede hız −2 m/s’ye iniyor. Bu bölümün ivmesi (−2−4)/(5−2)=−2 m/s². Hızın +4’ten sıfıra düşmesi 2 saniye sürer ve yön değişimi t=4 s anındadır.",
+      "Yer değiştirmede 0–2, 2–4, 4–5 ve 5–7 saniye alanları sırayla +8, +4, −1 ve −4 m. Toplam +7 m. Yol için alanların büyüklüklerini topla: 17 m. Süre 7 s. Ortalama hız +1 m/s, ortalama sürat yaklaşık 2,43 m/s.",
+    ],
+    summary: "Dönüş t=4 s. Yer değiştirme +8+4−1−4=+7 m. Yol 8+4+1+4=17 m. Ortalama için ikisini ayrı ayrı 7 saniyeye böl.",
+    appendSection: true,
+  }],
+  "sembolik-dil": [{
+    title: "Alt indis, parantez ve katsayının görevi",
+    figureTitle: "Alt indis, parantez ve katsayının görevi",
+    paragraphs: [
+      "Al₂(SO₄)₃ içinde üç sülfat grubu vardır. Her grupta 1 S ve 4 O. Bir formül biriminde 2 Al, 3 S, 12 O bulunur. Baştaki 3 katsayısı bütün bu sayıları üç katına çıkarır. Toplam 51 atom sayılır, element türü sayısı üç kalır.",
+    ],
+    summary: "Al₂(SO₄)₃: 2 Al, 3 S, 12 O. 3Al₂(SO₄)₃: 6 Al, 9 S, 36 O. Parantez içini çoğalt, sonra dış katsayıyı bütün birime uygula.",
+    table: {
+      headers: ["Element", "Bir formül birimi", "Üç formül birimi"],
+      rows: [["Al", "2", "6"], ["S", "3", "9"], ["O", "12", "36"], ["Toplam", "17", "51"]],
+      layout: "table",
+    },
+  }],
+  "mineraller": [{
+    title: "Ham miktarı değil, karşılanan gereksinimi karşılaştır",
+    figureTitle: "Ham miktarı değil, karşılanan gereksinimi karşılaştır",
+    paragraphs: [
+      "X gereksinimi 10 mg ve elde 5 mg varsa yarısı karşılanır. Y gereksinimi 1 mg ve elde 0,8 mg varsa %80’i karşılanır. Y’nin ham miktarı daha küçük olsa da bu örnekte X daha yetersizdir.",
+      "Y’nin karşılanma yüzdesini değiştir. %50’de iki gereksinim eşit oranda karşılanır. Bu karşılaştırmada diğer etkenler uygun ve model gereksinimleri sabittir.",
+    ],
+    summary: "5/10=%50 ve 0,8/1=%80. Ham miktarı daha az olanı seçmek yanlış sonuç verir. Karşılanan gereksinim en az olan X sınırlayıcıdır.",
+    appendSection: true,
+  }],
   "madde-ozkutle": [{
     title: "Eksenler değişince eğimin birimi değişir",
     figureTitle: "Eksenler değişince eğimin birimi değişir",
