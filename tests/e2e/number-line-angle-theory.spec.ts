@@ -2314,3 +2314,34 @@ test("Orbital and spin filters count capacity from the same shell boxes", async 
   }
   expect(learning(await storage(page))).toEqual(before);
 });
+
+
+test("One meiosis shows four products and two types before the possible pool", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Tek mayozun ürünleriyle olası türleri ayır");
+  for (const route of ["/#/lesson?id=genetik-cesitlilik", "/#/cheatsheets?topic=detail-284"]) {
+    await page.goto(route);
+    const chart = model.getByRole("img");
+    await expect(chart).toBeVisible();
+    const next = model.getByRole("button", { name: "İleri", exact: true });
+    const labels = (value: string) => chart.locator("text").filter({ hasText: new RegExp(`^${value}$`) });
+    await expect(model).toContainText("Bu mayozun 4 ürünü: AB, AB, ab, ab. 2 genotip türü.");
+    await expect(labels("AB")).toHaveCount(2);
+    await expect(labels("ab")).toHaveCount(2);
+    await next.press("Enter");
+    await expect(model).toContainText("Bu mayozun 4 ürünü: Ab, Ab, aB, aB. 2 genotip türü.");
+    await expect(labels("Ab")).toHaveCount(2);
+    await expect(labels("aB")).toHaveCount(2);
+    await next.press("Enter");
+    await expect(model).toContainText("Bütün mayozlarda mümkün türler: AB, Ab, aB, ab. 4 tür.");
+    for (const kind of ["AB", "Ab", "aB", "ab"]) {
+      await expect(labels(kind)).toHaveCount(1);
+      await expect(labels(kind)).toBeVisible();
+    }
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});

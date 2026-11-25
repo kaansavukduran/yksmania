@@ -20,6 +20,17 @@ interface TheorySupplement {
 const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, { multiplier: 2, exponent: 0 });
 
 export const theorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
+  "genetik-cesitlilik": [{
+    title: "Tek mayozun ürünleriyle olası türleri ayır",
+    figureTitle: "Tek mayozun ürünleriyle olası türleri ayır",
+    paragraphs: [
+      "AaBb’de A/a ve B/b ayrı kromozom çiftlerinde olsun, parça değişimi olmasın. A ve B aynı kutba giderse tek mayozun dört ürünü AB, AB, ab, ab olur. Dört hücre vardır ve genotipleri iki türdür.",
+      "A ile b aynı kutba yönelirse Ab, Ab, aB, aB oluşur. İki olası yönelimin havuzunda AB, Ab, aB, ab olmak üzere dört tür vardır. Tek mayozdaki hücre sayısını, o mayozdaki tür sayısını ve bütün mayozların olası türlerini ayrı say.",
+      "AABbCc’de ilk çift yalnız A verir. Diğer iki çift bağımsız ayrılırsa 1·2·2=4 olasılık çıkar: ABC, ABc, AbC, Abc. 2ᵏ sayımında k, bağımsız ayrılan heterozigot çiftlerin sayısıdır.",
+    ],
+    summary: "Bağımsız AaBb ve parça değişimsiz örnekte bir mayoz dört ürün ve iki tür verir. İki yönelimin olasılık havuzu dört türdür.",
+    appendSection: true,
+  }],
   "ayt-kuantum-sayilari": [{
     title: "Katmanda orbital ve spin koşulunu birlikte say",
     figureTitle: "Katmanda orbital ve spin koşulunu birlikte say",

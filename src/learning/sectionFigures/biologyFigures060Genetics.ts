@@ -85,6 +85,42 @@ const assortment = mk({
   },
 });
 
+const oneMeiosis = mk({
+  caption: "AaBb’de A/a ve B/b ayrı kromozom çiftlerinde. Bu modelde parça değişimi yok. İlk iki adım birer mayozu, son adım bütün olası türleri gösterir.",
+  alt: "Dört gamet paneli. Her panelde iki ayrı kromozom çubuğu ve taşıdıkları birer alel var. Yönelim değiştikçe tek mayozdaki tekrarlar değişir. Son adım her mümkün türü bir kez gösterir.",
+  h: 160,
+  steps: ["A ile B aynı kutba", "A ile b aynı kutba", "Olası türlerin tamamı"],
+  draw: (_, step) => {
+    const pool = gametes(2);
+    const products = step === 0
+      ? [pool[0], pool[0], pool[3], pool[3]]
+      : step === 1
+        ? [pool[1], pool[1], pool[2], pool[2]]
+        : pool;
+    const kinds = new Set(products).size;
+    const els: El[] = [];
+    products.forEach((product, index) => {
+      const x = 18 + index * 127;
+      els.push(R(x, 18, x + 113, 142, { tone: "muted", fill: "muted" }));
+      [...product].forEach((allele, chromosome) => {
+        const position = x + 35 + chromosome * 43;
+        const tone: Tone = allele === allele.toUpperCase() ? "c" : "a";
+        els.push(T(position, 39, allele, "c", { bold: true, tone }), L(position, 55, position, 105, { bold: true, tone }));
+      });
+      els.push(T(x + 56, 125, product, "c", { bold: true }));
+    });
+    return {
+      els,
+      readout: [
+        step === 2
+          ? `Bütün mayozlarda mümkün türler: ${products.join(", ")}. ${kinds} tür.`
+          : `Bu mayozun ${products.length} ürünü: ${products.join(", ")}. ${kinds} genotip türü.`,
+        "Her üründe A/a’dan ve B/b’den birer alel vardır.",
+      ],
+    };
+  },
+});
+
 const fertilization = mk({
   caption:
     "Döllenme iki örnek uzayını birleştirir (nitel şema): Ab gameti ile aB gameti birleşirse seçilen lokuslar için AaBb zigotu oluşur. Bunun için yeni alel gerekmez; yeni olan genotip birleşimidir. Bir gamet türünün mümkün olması her doğumda seçileceği anlamına gelmez.",
@@ -441,6 +477,7 @@ export const biologyFigures060Genetics: Record<string, Record<string, FigureDef>
     "Aktarım için değişikliğin bulunduğu hücre soyunu izle": lineage,
     "Rekombinasyon mevcut bilgiyi yeniden bir araya getirir": crossing,
     "Bağımsız dağılım için fiziksel yerleşimi denetle": assortment,
+    "Tek mayozun ürünleriyle olası türleri ayır": oneMeiosis,
     "Döllenme iki ayrı örnek uzayını birleştirir": fertilization,
   },
   "ayt-biyoteknoloji": {
