@@ -180,30 +180,46 @@ const markup: FigureDef = {
 
 /* ---------- Kâr–zarar: başabaş ---------- */
 const breakEven: FigureDef = {
-  caption:
-    "Sürgüyle satış adedini değiştir. Örnekte sabit gider 600 TL, birim maliyet 20 TL, birim satış 35 TL. Her ürün 35 − 20 = 15 TL katkı bırakır; sabit gideri karşılamak için 600 ÷ 15 = 40 ürün gerekir. Gelir doğrusu toplam maliyet doğrusunu 40'ta keser.",
-  alt: "Adet–para grafiği: 600'den başlayan toplam maliyet doğrusu ve sıfırdan başlayan gelir doğrusu; 40 adette kesişiyorlar. Sürgüyle hareket eden dikey çizgi kâr ya da zarar aralığını gösterir.",
-  param: { label: "Satış adedi", min: 0, max: 80, step: 5, init: 30 },
-  draw: (n) => {
-    const X = (q: number) => q * 0.09;
-    const Y = (tl: number) => tl * 0.0016;
-    const els: El[] = [vec(v(0, 0), v(X(86), 0), { tone: "ink" }), vec(v(0, 0), v(0, Y(3000)), { tone: "ink" })];
-    els.push(seg(v(0, Y(600)), v(X(80), Y(600 + 20 * 80)), { tone: "warn", bold: true }), seg(v(0, 0), v(X(80), Y(35 * 80)), { tone: "c", bold: true }));
-    els.push(txt(v(X(80), Y(2200)), "toplam maliyet", "e", { tone: "warn", small: true, bold: true }), txt(v(X(80), Y(2800)), "gelir", "e", { tone: "c", small: true, bold: true }));
-    for (const q of [0, 20, 40, 60, 80]) els.push(txt(v(X(q), 0), String(q), "s", { tone: "muted", small: true, soft: true }));
-    els.push(txt(v(0, Y(600)), "600", "w", { tone: "muted", small: true, soft: true }));
-    const rev = 35 * n;
-    const tot = 600 + 20 * n;
-    els.push(seg(v(X(n), 0), v(X(n), Y(Math.max(rev, tot))), { tone: "muted", dash: true, thin: true }));
-    if (rev !== tot) els.push(seg(v(X(n), Y(rev)), v(X(n), Y(tot)), { tone: rev > tot ? "c" : "warn", bold: true }));
-    els.push(ball(v(X(40), Y(1400)), 0.1, "ink"), txt(v(X(40), Y(1400)), "başabaş 40", "nw", { tone: "ink", small: true, bold: true }));
-    els.push(txt(v(X(86), 0), "adet", "se", { tone: "ink", small: true }), txt(v(0, Y(3000)), "TL", "n", { tone: "ink", small: true }));
-    els.push(txt(v(-1.2, Y(3000) + 0.6), " ", "c"), txt(v(X(86) + 2.6, -0.8), " ", "c"));
+  caption: "Satış adedini değiştir. Gelir ve maliyet aynı değerde kesişince başabaşa gelirsin. Kesişimin sağında gelir daha yüksektir.",
+  alt: "Gelir sıfırdan, maliyet sabit giderden başlayan iki doğru. Kesişimin solunda zarar, sağında kâr. Seçilen satış adedi düşey çizgiyle belirtilir.",
+  steps: ["Sabit gider 600 TL", "Sabit gider 700 TL"],
+  param: { label: "Satış adedi", min: 0, max: 80, step: 1, init: 30 },
+  draw: (n, step) => {
+    const [fixed, unitCost, salePrice] = step === 0 ? [600, 20, 35] : [700, 25, 45];
+    const maxQuantity = 80;
+    const contribution = salePrice - unitCost;
+    const breakPoint = fixed / contribution;
+    const revenue = (quantity: number) => salePrice * quantity;
+    const cost = (quantity: number) => fixed + unitCost * quantity;
+    const profit = revenue(n) - cost(n);
+    const x = (quantity: number) => quantity * 0.09;
+    const y = (amount: number) => amount * 0.0016;
+    const point = (quantity: number, amount: number) => v(x(quantity), y(amount));
+    const graphTop = Math.max(revenue(maxQuantity), cost(maxQuantity)) + 220;
+    const graphEnd = x(86);
+    const atBreak = point(breakPoint, revenue(breakPoint));
+    const els: El[] = [
+      vec(v(0, 0), v(graphEnd, 0), { tone: "ink" }),
+      vec(v(0, 0), v(0, y(graphTop)), { tone: "ink" }),
+      seg(point(0, fixed), point(maxQuantity, cost(maxQuantity)), { tone: "warn", bold: true }),
+      seg(v(0, 0), point(maxQuantity, revenue(maxQuantity)), { tone: "c", bold: true }),
+      txt(point(maxQuantity, cost(maxQuantity)), "maliyet", "e", { tone: "warn", small: true }),
+      txt(point(maxQuantity, revenue(maxQuantity)), "gelir", "e", { tone: "c", small: true }),
+      ...[0, 20, 40, 60, 80].map((q) => txt(point(q, 0), String(q), "s", { tone: "muted", small: true })),
+      txt(point(0, fixed), String(fixed), "w", { tone: "muted", small: true }),
+      seg(point(n, 0), point(n, Math.max(revenue(n), cost(n))), { tone: "muted", dash: true, thin: true }),
+      ball(atBreak, 0.1, "ink"),
+      txt(atBreak, `başabaş ${breakPoint}`, "nw", { tone: "ink", small: true }),
+      txt(v(graphEnd, 0), "adet", "se", { small: true }),
+      txt(point(0, graphTop), "TL", "n", { small: true }),
+    ];
+    if (profit !== 0) els.push(seg(point(n, revenue(n)), point(n, cost(n)), { tone: profit > 0 ? "c" : "warn", bold: true }));
     return {
       els,
       readout: [
-        `${n} adet: gelir ${rev} TL, toplam maliyet ${tot} TL → ${rev >= tot ? "kâr" : "zarar"} ${Math.abs(rev - tot)} TL`,
-        "Kâr = katkı · adet − sabit gider = 15n − 600. Başabaşta 15n = 600.",
+        `${n} adet. Gelir ${revenue(n)} TL, toplam maliyet ${cost(n)} TL.`,
+        profit === 0 ? "Başabaş. Kâr ve zarar 0 TL." : `${profit > 0 ? "Kâr" : "Zarar"} ${Math.abs(profit)} TL.`,
+        `Kâr = ${contribution}n − ${fixed}. Başabaş ${breakPoint} adet. İlk pozitif kâr ${Math.floor(breakPoint) + 1} adette.`,
       ],
     };
   },

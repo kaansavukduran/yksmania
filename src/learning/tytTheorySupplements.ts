@@ -4,6 +4,7 @@ interface TheorySupplement {
   paragraphs: string[];
   summary: string;
   appendSection?: true;
+  sheetTitle?: string;
 }
 
 export const tytTheorySupplements: Readonly<Record<string, TheorySupplement | undefined>> = {
@@ -58,6 +59,23 @@ export const tytTheorySupplements: Readonly<Record<string, TheorySupplement | un
     ],
     summary: "Dış kenar a ise iç kenar (a/2)√2, iç alan a²/2. Dıştaki dört eş üçgenin toplam alanı da a²/2.",
     appendSection: true,
+  },
+  "kar-zarar-problemleri": {
+    title: "Sabit gider ve birim katkı başabaşı belirler",
+    figureTitle: "Sabit gider ve birim katkı başabaşı belirler",
+    paragraphs: [
+      "Sabit gider 700 TL, birim maliyet 25 TL ve satış 45 TL ise her ürün 20 TL katkı sağlar. 35 adette başabaş, 36 adette 20 TL kâr olur. En az 100 TL kâr için 20n−700≥100 yaz. İlk uygun tam sayı 40’tır.",
+    ],
+    summary: "20n−700 için 35 başabaş, 36 ilk kâr. 20n−700≥100 için en az 40 adet.",
+  },
+  "tyt-geo-yamuk-deltoid-032": {
+    title: "Deltoidde alanı dört dik üçgenle tamamla",
+    figureTitle: "Deltoidde alanı dört dik üçgenle tamamla",
+    paragraphs: [
+      "BD=24 olduğunda iki yarı da 12’dir. Komşu eş kenar çiftleri 13 ve 20 iken simetri köşegeni 5 ve 16 birimlik parçalara ayrılır. AC=21, alan 21·24/2=252 ve çevre 66 olur. İki üçgenin 60 ve 192 birim² alanlarını toplayarak denetle.",
+    ],
+    summary: "13 ve 20 yan kenarlar, BD=24. Yarım BD=12’den diğer köşegen parçaları 5 ve 16 çıkar. Alan 252, çevre 66.",
+    sheetTitle: "Deltoid",
   },
   "kesir-problemleri": {
     title: "Kalanın kesri yeni bir taban kullanır",

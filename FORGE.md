@@ -3767,3 +3767,9 @@ Yaş Problemleri fiziksel 1 ve Dikdörtgen fiziksel 2 ile 5 karşılaştırıld�
 Yüzde Problemleri’nde 480 g ve 240 TL ile 400 g ve 280 TL verileri gram başına fiyatla karşılaştırılıyor. 0,50 TL/g’den 0,70 TL/g’ye geçiş %40 artış. Karede dört kenarın orta noktaları birleştiriliyor. Dış kenar 8 iken iç kenar 4√2, iç alan 32 ve dört köşe üçgeninin toplam alanı 32.
 
 Yüzde Problemleri fiziksel 12 ve Kare fiziksel 2 ile 5 doğrulandı. TypeScript, 26 hedef birim, 6 gerçek Chromium akışı, 12 çizim yerleşimi ve 323 çevrimdışı varlık geçti. Ham soru ve ders kayıtları bayt düzeyinde eş. Sırada Kâr Zarar fiziksel 12 ve Deltoid fiziksel 5 var.
+
+## TYT Matematik ve Geometri · 0.169.0 adayı
+
+Kâr Zarar’da gelir ve maliyet aynı grafikte satış adedine göre değişiyor. 700 TL sabit gider ve 20 TL birim katkıda 35 adet başabaş, 36 adet 20 TL kâr, 40 adet 100 TL kâr. Deltoidde 13 ve 20 birimlik eş kenar çiftleri ile 24 birimlik köşegen korunarak diğer köşegen 5+16, alan 252, çevre 66 bulunuyor.
+
+Kâr Zarar fiziksel 12 ve Deltoid fiziksel 5 karşılaştırıldı. TypeScript, 32 hedef birim, 5 Chromium akışı, 9 çizim yerleşimi ve 323 çevrimdışı varlık geçti. Öğrenme kayıtları değişmeden ders ve Kopya Kağıdı üzerinden sınandı. Sırada Faiz Problemleri fiziksel 1 ve Çemberde Açılar fiziksel 2 ile 5 var.

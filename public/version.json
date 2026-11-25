@@ -1,8 +1,8 @@
 {
-  "version": "0.168.0",
+  "version": "0.169.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Yüzde Problemleri’nde iki paketin gram fiyatını karşılaştır. Karede kenarların orta noktalarını birleştirerek oluşan iç karenin alanını dört eş üçgenle hesapla.",
-    "en": "Compare the price per gram of two packages and derive the area of the inner square by joining the side midpoints."
+    "tr": "Kâr Zarar dersinde sabit gideri, başabaşı ve ilk kârlı satış adedini ayır. Deltoidde dik köşegenlerle alanı ve çevreyi adım adım hesapla.",
+    "en": "Distinguish break-even from the first profitable sale and use the perpendicular diagonals of a kite to find its area and perimeter."
   }
 }

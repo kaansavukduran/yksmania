@@ -946,3 +946,53 @@ test("Joining midpoints divides a square into two equal area groups", async ({ p
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("Break-even and the first profitable sale are different quantities", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Sabit gider ve birim katkı başabaşı belirler");
+  const slider = model.getByRole("slider", { name: /Satış adedi/ });
+  await page.goto("/#/lesson?id=kar-zarar-problemleri");
+  await expect(model).toContainText("Başabaş 40 adet");
+  await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await slider.fill("35");
+  await expect(model).toContainText("Başabaş. Kâr ve zarar 0 TL");
+  await slider.press("ArrowRight");
+  await expect(model).toContainText("Kâr 20 TL");
+  await slider.fill("40");
+  await expect(model).toContainText("Kâr 100 TL");
+  await checkFrame(page, model);
+
+  await page.goto("/#/cheatsheets?topic=detail-214");
+  await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+  await slider.fill("34");
+  await expect(model).toContainText("Zarar 20 TL");
+  await expect(model).toContainText("İlk pozitif kâr 36 adette");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("A kite with unequal sides has unequal parts on its symmetry diagonal", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const lesson = "tyt-geo-yamuk-deltoid-032";
+  const model = figure(page, "Deltoidde alanı dört dik üçgenle tamamla");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto(`/#/lesson?id=${lesson}`);
+  await expect(model).toContainText("AC = 5 + 9 = 14");
+  await next.press("Enter");
+  await expect(model).toContainText("AC = 5 + 16 = 21");
+  await expect(model).toContainText("Alan = 21·24/2 = 252");
+  await expect(model).toContainText("Çevre = 2(13 + 20) = 66");
+  await checkFrame(page, model);
+
+  await page.goto(`/#/cheatsheets?topic=topic-${lesson}`);
+  await next.press("Enter");
+  await expect(model).toContainText("Toplam 252 birim²");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

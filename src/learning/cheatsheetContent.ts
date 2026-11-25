@@ -481,11 +481,11 @@ export function studyCheatSheet(topicId: string): CheatSheet | undefined {
   const lessonId = sheet?.lessonId;
   const supplement = lessonId ? tytTheorySupplements[lessonId] : undefined;
   if (sheet && supplement) {
-    const { title, figureTitle, summary, appendSection } = supplement;
+    const { title, figureTitle, summary, appendSection, sheetTitle = title } = supplement;
     const sections = appendSection
       ? [...sheet.sections, { title, figureTitle, text: [summary] }]
       : sheet.sections.map((section) =>
-          section.title === title
+          section.title === sheetTitle
             ? { ...section, text: [...section.text, summary], figureTitle }
             : section
         );

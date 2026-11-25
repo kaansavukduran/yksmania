@@ -975,11 +975,18 @@ const yamukDeltoid: Record<string, FigureDef> = {
   },
   "Deltoidde alanı dört dik üçgenle tamamla": {
     caption:
-      "u = 13, v = 15, BD = 24 için BK = 12; AK = √(169 − 144) = 5, KC = √(225 − 144) = 9, AC = 14. Alan 14·24/2 = 168.",
-    alt: "Köşegenleri dik deltoid; dört küçük dik üçgen iki renkle, kenar uzunlukları 13 ve 15, köşegen parçaları 5, 9, 12 ve 12.",
-    draw: () => {
-      const s = 0.25;
-      const [A, B, C, D, K] = [v(-5, 0), v(0, -12), v(9, 0), v(0, 12), v(0, 0)].map((p) => mul(p, s));
+      "BD’nin yarısını iki dik üçgende de kullan. Simetri köşegeninin parçaları eşit olmak zorunda değildir. Her parçayı kendi üçgenindeki Pisagor hesabından bul.",
+    alt: "Dik kesişen köşegenli deltoid. Simetri köşegeni BD’nin iki yarısını eşit yapar. İki renk, simetri köşegeninin farklı uzunluktaki iki parçasını ayırır.",
+    steps: ["Kenarlar 13 ve 15", "Kenarlar 13 ve 20"],
+    draw: (_, step) => {
+      const u = 13;
+      const w = step === 0 ? 15 : 20;
+      const half = 12;
+      const ak = Math.sqrt(u ** 2 - half ** 2);
+      const kc = Math.sqrt(w ** 2 - half ** 2);
+      const diagonal = ak + kc;
+      const scale = 0.25;
+      const [A, B, C, D, K] = [v(-ak, 0), v(0, -half), v(kc, 0), v(0, half), v(0, 0)].map((p) => mul(p, scale));
       return {
         els: [
           poly([K, A, B], { fill: "a", thin: true }),
@@ -990,14 +997,18 @@ const yamukDeltoid: Record<string, FigureDef> = {
           seg(A, C),
           seg(B, D),
           right(K, C, D),
-          dim(A, B, "13", C, "a"),
-          dim(A, D, "13", C, "a"),
-          dim(B, C, "15", A, "b"),
-          dim(C, D, "15", A, "b"),
-          dim(K, B, "12", A),
+          dim(A, B, String(u), C, "a"),
+          dim(A, D, String(u), C, "a"),
+          dim(B, C, String(w), A, "b"),
+          dim(C, D, String(w), A, "b"),
+          dim(K, B, String(half), A),
           ...labelAll([A, B, C, D, K], ["A", "B", "C", "D", "K"], ["w", "s", "e", "n", "ne"]),
         ],
-        readout: ["AC = 5 + 9 = 14", "Alan = 14·24/2 = 168 · Çevre = 2(13 + 15) = 56"],
+        readout: [
+          `AC = ${ak} + ${kc} = ${diagonal}`,
+          `Alan = ${diagonal}·${2 * half}/2 = ${diagonal * half} · Çevre = 2(${u} + ${w}) = ${2 * (u + w)}`,
+          `İki üçgenin alanı ${ak * half} ve ${kc * half} birim². Toplam ${diagonal * half} birim².`,
+        ],
       };
     },
   },
