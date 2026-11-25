@@ -46,3 +46,44 @@ test("persistent worker registration failure ends after two retries", async ({ p
   await setThemePreference(page, "light");
   expect((await storage(page)).settings.theme).toBe("light");
 });
+
+// Bir önbellek dosyası ilk kurulumda kalıcı hata verirse işçi "redundant" olur ve
+// register() başarılı göründüğü için kayıt hatası tetiklenmez. Sayfa yenilenmeden
+// aynı oturumda yeniden kurulum denenmeli.
+test("a failed first install recovers on the same page without reloading", async ({ page, context }) => {
+  let failures = 0;
+  await context.route(/\/assets\/index-[^/]+\.css$/, async (route) => {
+    const fromWorker = route.request().serviceWorker() !== null;
+    if (fromWorker && failures < 1) {
+      failures++;
+      await route.fulfill({ status: 404, body: "" });
+      return;
+    }
+    await route.continue();
+  });
+  const originalNavigation = await page.goto("./#/settings");
+  expect(originalNavigation?.fromServiceWorker()).toBe(false);
+  await setThemePreference(page, "light");
+  await page.waitForFunction(() => navigator.serviceWorker.controller?.state === "activated");
+  expect(failures).toBe(1);
+  await context.setOffline(true);
+  expect((await page.reload())?.fromServiceWorker()).toBe(true);
+  await expect(page.getByText("ÖSYM Mania bir Fragaria Interactive projesidir.", { exact: true })).toBeVisible();
+  expect((await storage(page)).settings.theme).toBe("light");
+});
+
+test("a persistently failing install stops after two same-page retries and the app keeps saving", async ({ page, context }) => {
+  let installs = 0;
+  await context.route(/\/assets\/index-[^/]+\.css$/, async (route) => {
+    if (route.request().serviceWorker() === null) return route.continue();
+    installs++;
+    await route.fulfill({ status: 404, body: "" });
+  });
+  await page.goto("./#/settings");
+  await expect.poll(() => installs).toBe(3);
+  await page.waitForTimeout(2500);
+  expect(installs).toBe(3);
+  expect(await page.evaluate(() => navigator.serviceWorker.controller)).toBeNull();
+  await setThemePreference(page, "light");
+  expect((await storage(page)).settings.theme).toBe("light");
+});
