@@ -297,6 +297,49 @@ const meeting: FigureDef = {
   },
 };
 
+const sameTimeMeeting: FigureDef = {
+  caption: "Zamanı değiştir. A düz, B kesikli yolu izler. Yollar eksenlerde kesişiyor. B başlangıçta bir metre yukarıdayken aynı andaki konumları karşılaştır.",
+  alt: "Yere göre iki konum. A, (0; 0) noktasından sağa ve yukarı hareket eder. B, x = 12 metresinde aşağı iner. Bir sürgü her iki cismin aynı andaki konumunu gösterir.",
+  steps: ["B 8 metreden başlıyor", "B 9 metreden başlıyor"],
+  param: { label: "İki cisim için ortak zaman", min: 0, max: 6, step: 0.5, init: 4, unit: " s", plain: true },
+  draw: (time, step) => {
+    const startB = step === 0 ? 8 : 9;
+    const aAt = (t: number): V => v(3 * t, t);
+    const bAt = (t: number): V => v(12, startB - t);
+    const point = ([x, y]: V): V => v(x * 0.32, y * 0.32);
+    const a = aAt(time);
+    const b = bAt(time);
+    const together = a[0] === b[0] && a[1] === b[1];
+    const coordinates = ([x, y]: V) => `(${nf(x)}; ${nf(y)})`;
+    const els: El[] = [
+      ...plane(-0.45, 6.18, -0.35, 3.16),
+      seg(point(aAt(0)), point(aAt(6)), { tone: "b", bold: true }),
+      seg(point(bAt(0)), point(bAt(6)), { tone: "a", bold: true, dash: true }),
+      ...pad(-0.8, 3.72, 6.8, -0.95),
+    ];
+    for (const x of [6, 12, 18]) els.push(txt(point(v(x, 0)), String(x), "s", { small: true }));
+    for (const y of [4, 8]) els.push(txt(point(v(0, y)), String(y), "w", { small: true }));
+    if (together) {
+      els.push(pt(point(a), "A ve B", "ne", "c"));
+    } else {
+      els.push(
+        pt(point(a), "A", "nw", "b"),
+        pt(point(b), "B", "se", "a"),
+      );
+    }
+    return {
+      els,
+      readout: [
+        `t = ${nf(time)} s: A${coordinates(a)} m, B${coordinates(b)} m.`,
+        together ? "Aynı anda aynı konumdalar." : "Bu anda konumları farklı.",
+        step === 0
+          ? "x ve y eşitliği 4 s ister. İkisi (12; 4) m noktasında buluşur."
+          : "x eşitliği 4 s, y eşitliği 4,5 s ister. Bu yüzden buluşmazlar.",
+      ],
+    };
+  },
+};
+
 /* ===================== Nehir problemleri ===================== */
 
 const RIVER = { d: 120, s: 5, a: 3 };
@@ -537,6 +580,7 @@ export const physicsFigures058Kinematics: Record<string, Record<string, FigureDe
     "Taşıt içindeki hareketi zincirle": chain,
     "İki boyutta çıkarma, sürat çıkarma değildir": relative2d,
     "Karşılaşma için iki koordinat uyuşmalı": meeting,
+    "Yollar kesişse de zamanı karşılaştır": sameTimeMeeting,
   },
   "nehir-problemleri": {
     "Sürüklenme ve alınan yollar": drift,

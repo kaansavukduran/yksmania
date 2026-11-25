@@ -1,3 +1,11 @@
+# Bağıl harekette ortak zaman · 0.197.0 adayı
+
+AYT Fizikte aynı zaman sürgüsü A ve B’nin konumlarını birlikte değiştirir. İlk durumda 4 s’de ikisi (12; 4) m’de buluşur. B bir metre yukarıdan başlayınca yollar yine kesişir. İki cisim kesişim noktasından farklı anlarda geçer. Dersi ve ayrı Kopya Kağıdı’nı 320 pikselde büyük yazıyla çevrimdışı sınadık.
+
+Güncel 12 fiziksel sayfalık kaynağın 2. sayfasındaki grafik ve 5. sayfasındaki karşı örnek işlendi. Tam kesir hesabı, iki tarayıcı senaryosu, üç genişlikte SVG, TypeScript, birim ve PWA kontrolleri geçti.
+
+25 Kasım envanter taramasında 258 klasör ve 563 metadata sayfası tamamlandı. 1.002 ÖSYM PDF'si dahil 9.984 kimlik kanonik envanterle eşleşti. 321 dosya boyutu değişmiş. Kanonik öğretim kararları ayrı kanıtla güncellenir.
+
 # Dönüşümü sondan geri alma · 0.196.0 adayı
 
 AYT Geometride Q(−3; 5) noktasından başlayıp saat yönünde 90° dönerek (5; 3) ara noktasına ulaş. Ötelemeyi çıkarınca ilk nokta (3; 4). Öğrenci aynı adımları ders çiziminde ve ayrı Kopya Kağıdı'ndaki çözümlü örnekte açabilir.
@@ -889,11 +897,11 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Din | 20 / 20 | 20 · 98 | 371 / 371 · %100,00 | 5 / 20 · %25,00 | 46 soru · 9 kitapçık | 0 |
 | AYT Matematik | 17 / 17 | 17 · 40 | 253 / 253 · %100,00 | 2 / 17 · %11,76 | 273 soru · 9 kitapçık | 0 |
 | AYT Geometri | 4 / 4 | 4 · 55 | 45 / 45 · %100,00 | 1 / 4 · %25,00 | 87 soru · 9 kitapçık | 0 |
-| AYT Fizik | 46 / 46 | 46 · 176 | 541 / 541 · %100,00 | 7 / 46 · %15,22 | 126 soru · 9 kitapçık | 0 |
+| AYT Fizik | 46 / 46 | 46 · 177 | 541 / 541 · %100,00 | 7 / 46 · %15,22 | 126 soru · 9 kitapçık | 0 |
 | AYT Kimya | 55 / 55 | 55 · 149 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 326 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2399** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2400** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

@@ -2259,3 +2259,31 @@ test("Quadratic division matches the polynomial and remainder at the divisor roo
   }
   expect(learning(await storage(page))).toEqual(before);
 });
+
+
+test("Relative motion uses the same time for both positions even when paths cross", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Yollar kesişse de zamanı karşılaştır");
+  for (const route of ["/#/lesson?id=bagil-hareket", "/#/cheatsheets?topic=detail-359"]) {
+    await page.goto(route);
+    const chart = model.getByRole("img");
+    await expect(chart).toBeVisible();
+    await expect(model).toContainText("t = 4 s: A(12; 4) m, B(12; 4) m.");
+    await expect(model).toContainText("Aynı anda aynı konumdalar.");
+    await expect(chart.locator("circle.sf-dot")).toHaveCount(1);
+    await model.getByRole("button", { name: "İleri", exact: true }).press("Enter");
+    await expect(model).toContainText("t = 4 s: A(12; 4) m, B(12; 5) m.");
+    await expect(model).toContainText("x eşitliği 4 s, y eşitliği 4,5 s ister.");
+    await expect(chart.locator("circle.sf-dot")).toHaveCount(2);
+    const slider = model.getByRole("slider", { name: /İki cisim için ortak zaman/ });
+    await slider.press("ArrowRight");
+    await expect(model).toContainText("t = 4,5 s: A(13,5; 4,5) m, B(12; 4,5) m.");
+    await slider.press("ArrowRight");
+    await expect(model).toContainText("t = 5 s: A(15; 5) m, B(12; 4) m.");
+    await checkFrame(page, model);
+  }
+  expect(learning(await storage(page))).toEqual(before);
+});

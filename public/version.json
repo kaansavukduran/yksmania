@@ -1,8 +1,8 @@
 {
-  "version": "0.196.0",
+  "version": "0.197.0",
   "channel": "alpha",
   "notes": {
-    "tr": "AYT Geometride son noktadan başla, önce dönmeyi sonra ötelemeyi geri al. Ara noktayı çizimde izle ve başlangıç noktasını ileri işlemlerle denetle.",
-    "en": "Start from the resulting point, undo the rotation, and undo the translation. Follow the intermediate point on the diagram and check the answer with the original forward steps."
+    "tr": "AYT Fizikte iki cismin aynı andaki konumunu birlikte oku. Başlangıç yüksekliğini değiştirip yollar kesişse bile neden buluşmadıklarını gör.",
+    "en": "Compare both positions at the same time. Change the starting height to see how the paths can intersect without the objects meeting."
   }
 }
