@@ -1,8 +1,8 @@
 {
-  "version": "0.173.0",
+  "version": "0.174.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Havuz Problemleri’nde ikinci girişin açıldığı anda grafiğin eğimini izle. Noktanın Analitiği’nde 1:2 içten bölmeyi koordinat, yön ve vektör farkıyla denetle.",
-    "en": "Follow the slope change when a second inlet opens and verify an internal division ratio with coordinates and vectors."
+    "tr": "Hız Problemleri’nde iki hareketin konum-zaman grafiğini aynı ölçekte oku. Dik Prizmalar’da düzgün altıgeni oluştur ve cisim köşegenini Pisagor ile hesapla.",
+    "en": "Read two movements on one position-time graph and derive a straight hexagonal prism’s longest diagonal from its base and height."
   }
 }

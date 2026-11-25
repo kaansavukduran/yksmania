@@ -282,6 +282,60 @@ const p3 = (p: P3, label: string, at: "n" | "ne" | "e" | "se" | "s" | "sw" | "w"
   pt(proj(p), label, at, tone);
 
 const dikPrizmalar: Record<string, FigureDef> = {
+  "Altıgen tabandan prizmanın en uzun köşegenine": {
+    caption: "Altı eşkenar üçgenden taban alanını kur. Sonraki adımda tabanın karşıt köşeleri arasındaki 2a ile prizmanın 9 cm dik yüksekliğini kullan.",
+    alt: "İlk adımda düzenli altıgen altı eşkenar üçgene ayrılmıştır. İkinci adımda alt ve üst karşıt köşeleri birleştiren cisim köşegeni çizilir.",
+    steps: ["Altıgen taban", "Dik prizma"],
+    param: { label: "Altıgenin kenarı", min: 2, max: 7, step: 1, init: 4, unit: " cm" },
+    draw: (a, step) => {
+      const height = 9;
+      const scale = 0.45;
+      const base = regularBase(6, a * scale);
+      const areaCoefficient = (3 * a ** 2) / 2;
+      const lateral = 6 * a * height;
+      const volumeCoefficient = areaCoefficient * height;
+      const diagonalSquared = 4 * a ** 2 + height ** 2;
+      if (step === 0) {
+        const points = base.map(([x, y]) => v(x, y));
+        const O = v(0, 0);
+        const [A, B] = points;
+        const midpoint = mid(A, B);
+        return {
+          els: [
+            poly(points, { tone: "ink" }),
+            poly([O, A, B], { tone: "a", fill: "a" }),
+            ...points.map((point) => seg(O, point, { tone: "muted", thin: true })),
+            seg(O, midpoint, { tone: "b", dash: true }),
+            right(midpoint, O, A, "ink"),
+            pt(O, "O", "sw"),
+            txt(A, `${a} cm`, "e", { tone: "a", small: true }),
+          ],
+          readout: [
+            `Taban alanı 6 × (a²√3 / 4) = ${fmt(areaCoefficient, 1)}√3 cm².`,
+            `Merkezden köşeye ${a} cm. Merkezden kenara dik uzaklık ${fmt(a / 2, 1)}√3 cm.`,
+          ],
+        };
+      }
+      const { vs, els } = prism(base, height * scale, { fills: { 1: "b" } });
+      const from = proj(vs[0]);
+      const opposite = proj(vs[3]);
+      const above = proj(vs[9]);
+      return {
+        els: [
+          ...els,
+          seg(from, opposite, { tone: "b", dash: true }),
+          seg(opposite, above, { tone: "b", bold: true }),
+          seg(from, above, { tone: "a", bold: true }),
+        ],
+        readout: [
+          `Yan alan ${lateral} cm². Kapalı toplam alan ${lateral} + ${fmt(2 * areaCoefficient, 1)}√3 cm².`,
+          `Hacim ${fmt(volumeCoefficient, 1)}√3 cm³.`,
+          `En uzun köşegen √(${2 * a}² + ${height}²) = √${diagonalSquared} cm.`,
+        ],
+      };
+    },
+  },
+
   "Üç boyutlu cismi iki boyutlu çizimden oku": {
     caption:
       "Üçgen dik prizma: iki eş üçgen taban (renkli), tabanları birleştiren yan ayrıtlar ve dikdörtgen yan yüzler. Kesikli çizgi arkada kalan ayrıttır.",

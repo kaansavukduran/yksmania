@@ -852,8 +852,8 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
-| TYT Matematik | 45 / 45 | 45 · 196 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
-| TYT Geometri | 19 / 19 | 19 · 187 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
+| TYT Matematik | 45 / 45 | 45 · 197 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
+| TYT Geometri | 19 / 19 | 19 · 188 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 283 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 224 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 155 | 515 / 515 · %100,00 | 11 / 36 · %30,56 | 54 soru · 9 kitapçık | 0 |
@@ -867,7 +867,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 148 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 325 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2362** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2364** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
@@ -3797,3 +3797,9 @@ Karışım Problemleri fiziksel 1, Çemberde Uzunluk fiziksel 2 ve 5 ile karşı
 Havuz Problemleri’nde B musluğu gecikince doluluk grafiği 2. saatte kırılıyor. İlk pay 1/5, kalan süre 4,8 saat ve toplam 6 saat 48 dakika. Aynı çizim ders, çözümlü örneğin son adımı ve ayrı Kopya Kağıdında açılıyor. Noktanın Analitiği’nde A(−2; 1) ile B(7; 7) arasında 1:2 oranı P(1; 3) veriyor. Vektörleri ve ağırlıkları aynı çizimden karşılaştır.
 
 İşçi–Havuz fiziksel 3 ve Noktanın Analitiği fiziksel 2, 5 ile karşılaştırıldı. Tam PR denetimi önceki iç kare çiziminin ortak şekil listesinde eksik olduğunu yakaladı. Şekil listeye alındı; eski paket içeriği ve test beklentisi korundu. TypeScript, 2.936 hedef birim, 6 Chromium akışı, 9 yerleşim ve 323 çevrimdışı varlık doğrulandı. Sırada Hız Problemleri fiziksel 4 ve Dik Prizmalar fiziksel 6 var.
+
+## TYT Matematik ve Geometri · 0.174.0 adayı
+
+Hız Problemleri’nde iki konum doğrusu, 2. saatte ve 100 km’de kesişiyor. Sürgü, iki aracın konumunu ortak zamanda okutur. Dik Prizmalar’da düzgün altıgenin altı eşkenar üçgeni taban alanını verir. Kenar 4 cm ve yükseklik 9 cm iken hacim 216√3 cm³, en uzun köşegen √145 cm.
+
+Hız Problemleri fiziksel 4 ve Dik Prizmalar fiziksel 6 karşılaştırıldı. Önceki adayın tam CI’ı Havuz için dört şekil sayan denetimi durdurdu. Test artık önceki dört şekli ve yeni gecikme şeklini adlarıyla arıyor. TypeScript, 2.936 hedef birim, 5 Chromium akışı, 6 çizim yerleşimi ve 323 çevrimdışı varlık geçti. Sırada Grafik Problemleri fiziksel 2 ve 5, Küp fiziksel 2 ve 5 var.

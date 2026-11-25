@@ -1174,3 +1174,49 @@ test("An internal division moves both coordinates by the same ratio", async ({ p
   await checkFrame(page, model);
   expect(learning(await storage(page))).toEqual(before);
 });
+
+test("The position lines cross only at their shared time and place", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const model = figure(page, "Grafik ile çözümü geri denetle");
+  await page.goto("/#/lesson?id=hiz-problemleri");
+  await expect(model).toContainText("2 saat. A 100 km, B 100 km konumunda. Aralık 0 km");
+  const slider = model.getByRole("slider", { name: /Geçen süre/ });
+  await slider.press("Home");
+  await expect(model).toContainText("0 saat. A 20 km, B 140 km konumunda. Aralık 120 km");
+  await slider.press("End");
+  await expect(model).toContainText("4 saat. A 180 km, B 60 km konumunda. Aralık 120 km");
+  await checkFrame(page, model);
+  await page.goto("/#/cheatsheets?topic=detail-219");
+  await expect(model).toContainText("t = 2 saat. İki konum da 100 km");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});
+
+test("A hexagonal prism diagonal uses the farthest base vertices", async ({ page, context }) => {
+  test.setTimeout(75_000);
+  await prepare(page, true);
+  const before = learning(await storage(page));
+  await context.setOffline(true);
+  const id = "tyt-geo-dik-prizmalar-032";
+  const model = figure(page, "Altıgen tabandan prizmanın en uzun köşegenine");
+  const next = model.getByRole("button", { name: "İleri", exact: true });
+  await page.goto(`/#/lesson?id=${id}`);
+  await expect(model).toContainText("24√3 cm²");
+  await expect(model).toContainText("Merkezden kenara dik uzaklık 2√3 cm");
+  await next.press("Enter");
+  await expect(model).toContainText("Hacim 216√3 cm³");
+  await expect(model).toContainText("√145 cm");
+  await model.getByRole("slider", { name: /Altıgenin kenarı/ }).press("Home");
+  await expect(model).toContainText("√97 cm");
+  await checkFrame(page, model);
+
+  await page.goto(`/#/cheatsheets?topic=topic-${id}`);
+  await next.press("Enter");
+  await expect(model).toContainText("216 + 48√3 cm²");
+  await expect(model).toContainText("√145 cm");
+  await checkFrame(page, model);
+  expect(learning(await storage(page))).toEqual(before);
+});

@@ -130,7 +130,7 @@ const netFill: FigureDef = {
   },
 };
 
-const delayedInlet: FigureDef = {
+export const delayedInlet: FigureDef = {
   caption: "İlk iki saatte yalnız A açık. B açılınca doluluk grafiği dikleşir. Sürgüyle zamanı değiştirip iki evrenin sürelerini ayrı oku.",
   alt: "Yatay eksende geçen saat ve düşey eksende tank payı. Doluluk doğrusu B'nin açıldığı 2. saatte yön değiştirir ve 6,8. saatte tankın tamamına ulaşır.",
   param: { label: "Geçen süre", min: 0, max: 6.8, step: 0.2, init: 2, unit: " saat" },
@@ -459,7 +459,6 @@ export const mathFigures060TytProblems: Record<string, Record<string, FigureDef>
   "havuz-problemleri": {
     "Giriş ekler, çıkış azaltır": netFill,
     "Başlangıç doluluğunu denklemde tut": startLevel,
-    "Gecikmiş açılış yeni evre başlatır": delayedInlet,
     "Kaçağın hızını karşılaştırmadan çıkar": leak,
     "Hacim eşitliği yükseklik eşitliği değildir": twoTanks,
   },

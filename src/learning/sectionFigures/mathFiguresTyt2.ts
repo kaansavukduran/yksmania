@@ -207,6 +207,55 @@ const gcd: FigureDef = {
   },
 };
 
+const positionTime: FigureDef = {
+  caption: "Saat ilerledikçe iki aracı aynı konum ekseninde izle. Eğimlerin işareti yönü, doğruların kesişimi ortak yer ve zamanı gösterir.",
+  alt: "Yatay eksen saat, düşey eksen kilometre. A’nın konumu 20’den artıyor, B’nin konumu 140’tan azalıyor. Doğrular 2. saatte 100 kilometrede kesişiyor.",
+  param: { label: "Geçen süre", min: 0, max: 4, step: 0.25, init: 2, unit: " saat" },
+  draw: (t) => {
+    const aStart = 20;
+    const bStart = 140;
+    const aSpeed = 40;
+    const bSpeed = -20;
+    const a = (hour: number) => aStart + aSpeed * hour;
+    const b = (hour: number) => bStart + bSpeed * hour;
+    const meetTime = (bStart - aStart) / (aSpeed - bSpeed);
+    const x = (hour: number) => hour * 1.67;
+    const y = (km: number) => km * 0.023;
+    const point = (hour: number, km: number) => v(x(hour), y(km));
+    const els: El[] = [
+      vec(v(0, 0), v(x(4.45), 0), { tone: "ink" }),
+      vec(v(0, 0), v(0, y(204)), { tone: "ink" }),
+      txt(v(x(4.45), 0), "saat", "se", { small: true }),
+      txt(v(0, y(204)), "km", "n", { small: true }),
+    ];
+    for (const hour of [0, 1, 2, 3, 4]) {
+      els.push(txt(v(x(hour), 0), String(hour), "s", { small: true, tone: "ink" }));
+    }
+    for (const km of [40, 80, 120, 160]) {
+      els.push(seg(point(0, km), point(4, km), { tone: "muted", thin: true, dash: true }));
+      els.push(txt(point(0, km), String(km), "w", { small: true, tone: "ink" }));
+    }
+    els.push(
+      seg(point(0, a(0)), point(4, a(4)), { tone: "a", bold: true }),
+      seg(point(0, b(0)), point(4, b(4)), { tone: "c", bold: true }),
+      txt(point(4, a(4)), "A", "e", { tone: "a" }),
+      txt(point(4, b(4)), "B", "e", { tone: "c" }),
+      seg(point(t, 0), point(t, Math.max(a(t), b(t))), { tone: "muted", dash: true }),
+      ball(point(t, a(t)), 0.1, "a"),
+      ball(point(t, b(t)), 0.1, "c"),
+      ball(point(meetTime, a(meetTime)), 0.085, "ink"),
+    );
+    return {
+      els,
+      readout: [
+        `${fmt(t)} saat. A ${fmt(a(t))} km, B ${fmt(b(t))} km konumunda. Aralık ${fmt(Math.abs(a(t) - b(t)))} km.`,
+        `20 + 40t = 140 − 20t ⇒ t = ${meetTime} saat. İki konum da ${a(meetTime)} km.`,
+        "A’nın eğimi +40 km/sa, B’nin eğimi −20 km/sa. Eksi işaret yönü gösterir.",
+      ],
+    };
+  },
+};
+
 const sharedWorkGraph: FigureDef = {
   caption: "Sabit hızda eğim, bir saatte biten iş payıdır. A tek 12, B tek 18 saatte bitiriyor. Birlikte çalışmayı gösteren doğru 1 işe daha erken ulaşır.",
   alt: "Yatay eksen saat, düşey eksen bitirilen iş payı. A, B ve birlikte çalışma doğruları sıfırdan başlar. Bir işi bitiren doğru o noktada sonlanır.",
@@ -297,6 +346,7 @@ export const mathFiguresTyt2: Record<string, Record<string, FigureDef>> = {
     "Birbirine gelenler aralığı birlikte kapatır": meeting,
     "Aynı yönde yetişme için arkadaki hızlı olmalı": chase,
     "Tren tamamen geçiyorsa iki uzunluğu say": train,
+    "Grafik ile çözümü geri denetle": positionTime,
   },
   "isci-problemleri": {
     "Birlikte hızlar toplanır, süreler değil": work,

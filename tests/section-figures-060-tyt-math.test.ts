@@ -43,9 +43,17 @@ describe("Forge060 TYT Matematik bölüm figürleri", () => {
         "bilimsel-gosterim-katsayi": 5,
         "asal-sayilar": 5,
         "sayi-basamaklari": 5,
+        "havuz-problemleri": 5,
       };
       expect(Object.keys(sectionFigures[g] ?? {}).length, g).toBe(expectedCounts[g] ?? 4);
     }
+    expect(Object.keys(sectionFigures["havuz-problemleri"]).sort()).toEqual([
+      "Giriş ekler, çıkış azaltır",
+      "Başlangıç doluluğunu denklemde tut",
+      "Kaçağın hızını karşılaştırmadan çıkar",
+      "Hacim eşitliği yükseklik eşitliği değildir",
+      "Gecikmiş açılış yeni evre başlatır",
+    ].sort());
   });
 
   it("figür metinlerinde uzun tire, şapka üs ve süs simgesi yok; her adım ve uç değer çizilir", () => {

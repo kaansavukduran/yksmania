@@ -151,6 +151,24 @@ export const tytTheorySupplements: Readonly<Record<string, readonly TheorySupple
     summary: "AP:PB=1:2 için P=A+(B−A)/3. (−2; 1)+(3; 2)=(1; 3).",
     appendSection: true,
   }],
+  "hiz-problemleri": [{
+    title: "Grafik ile çözümü geri denetle",
+    figureTitle: "Grafik ile çözümü geri denetle",
+    paragraphs: [
+      "A, 20 km’den +40 km/sa ile, B, 140 km’den −20 km/sa işaretli hızla ilerliyor. 20+40t=140−20t olduğunda 60t=120 ve t=2 saat. Her iki denklem 100 km verir. Grafikte eğim yönü, kesişim aynı konumu ve zamanı gösterir.",
+    ],
+    summary: "20+40t=140−20t, t=2 saat ve konum 100 km. Bir konumun azalması negatif yönü gösterir.",
+  }],
+  "tyt-geo-dik-prizmalar-032": [{
+    title: "Altıgen tabandan prizmanın en uzun köşegenine",
+    figureTitle: "Altıgen tabandan prizmanın en uzun köşegenine",
+    paragraphs: [
+      "Taban kenarı 4 cm ve dik yükseklik 9 cm. Taban alanı 24√3 cm², yan alan 6·4·9=216 cm², iki tabanla toplam 216+48√3 cm². Hacim 216√3 cm³.",
+      "Düzgün altıgenin karşıt köşeleri arasındaki uzaklık 8 cm. Bu uzunlukla 9 cm dik yüksekliği Pisagor’da birleştir. En uzun cisim köşegeni √(64+81)=√145 cm.",
+    ],
+    summary: "a=4 ve h=9 için taban 24√3, yan alan 216, hacim 216√3. Cisim köşegeni √145 cm.",
+    appendSection: true,
+  }],
   "kesir-problemleri": [{
     title: "Kalanın kesri yeni bir taban kullanır",
     figureTitle: "Kalanın kesri yeni bir taban kullanır",
