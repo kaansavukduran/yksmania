@@ -61,4 +61,6 @@ Canlı kabul kök nedeni (0.207.0–0.208.0): bu oturum makinesinin diski %98 do
 
 Derinleştirme 0.210.0 adayı: Fizik dokuz ders (`depth213.ts` ışık/ayna/kırılma, `depth214.ts` mercek/renk/mıknatıs/genleşme), Biyoloji genetik altı ders (`depth215.ts`).
 
-Sıradaki iş: 0.209.0 canlı kabulü, 0.210.0 yayın kapısı; hazır bekleyen turlar ekoloji 6 ders (forge/depth-d217) ve asit-baz-tuz 5 ders (forge/depth-d216) → 0.211.0; çalışan turlar Biyoloji son dört ders (omurgalılar, omurgasızlar, virüsler, eşeyli üreme) ve Kimya mol-kütle 5 ders. Kalan 4 örnekli TYT Fen: Kimya 29 ders. Sonra TYT Türkçe ve Sosyal, ardından beş AYT Sayısal ders. Tur kuralları scratchpad/depth-brief.md.
+Derinleştirme 0.211.0 adayı: Kimya asit-baz-tuz beş ders (`depth216.ts`), Biyoloji ekoloji altı ders (`depth217.ts`), omurgalılar, omurgasızlar, virüsler, eşeyli üreme (`depth218.ts`). TYT Biyoloji'de 4 örnekli ders kalmadı.
+
+Sıradaki iş: 0.210.0 canlı kabulü, 0.211.0 yayın kapısı; çalışan Kimya turları mol-kütle (5 ders) ve bağlar-adlandırma-etkileşimler (5 ders). Kalan 4 örnekli TYT Fen: Kimya 19 ders (hal değişimi, gazlar, karışım ve çözelti, tepkimeler ve hesaplamaları, kimya ve yaşam). Sonra TYT Türkçe ve Sosyal, ardından beş AYT Sayısal ders. Tur kuralları scratchpad/depth-brief.md.

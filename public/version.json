@@ -1,8 +1,8 @@
 {
-  "version": "0.210.0",
+  "version": "0.211.0",
   "channel": "alpha",
   "notes": {
-    "tr": "TYT Fizik'te dokuz derse (ışık, gölge, düzlem ve küresel ayna, kırılma, mercek, prizma ve renk, mıknatıs, genleşme) ve TYT Biyoloji'de altı genetik dersine formülden ya da gamet sayımından üretilen tablo, ikişer çözümlü örnek, Kopya Kağıdı özeti ve bölüm figürü eklendi.",
-    "en": "Nine TYT Physics lessons and six TYT Biology genetics lessons gain a computed data table, two worked examples, a cheat-sheet summary and a section figure each."
+    "tr": "TYT Fen'de on beş derse daha tablo, ikişer çözümlü örnek, Kopya Kağıdı özeti ve bölüm figürü eklendi: Kimya'da asit-baz-tuz, nötrleşme, metallerle tepkime, günlük asit-baz ve sabunlaşma; Biyoloji'de altı ekoloji dersi ile omurgalılar, omurgasızlar, virüsler ve eşeyli üreme.",
+    "en": "Fifteen more TYT Science lessons (acids and bases, ecology, animals, viruses and sexual reproduction) gain a data table, two worked examples, a cheat-sheet summary and a section figure each."
   }
 }

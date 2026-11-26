@@ -78,13 +78,13 @@ TYT;Tarih;Değişen Dünya Dengeleri Osmanlı;detail-239;degisen-dunya-dengeleri
 TYT;Matematik;Köklü Sayılar;detail-208;koklu-sayilar;77;16;7;16;2;1;7
 TYT;Matematik;Oran Orantı;detail-209;oran-oranti;78;16;7;16;2;1;7
 TYT;Matematik;Sayı Problemleri;detail-210;sayi-problemleri;79;13;7;13;4;1;7
-TYT;Biyoloji;Virüsler;detail-14;virusler;80;8;4;8;2;1;4
+TYT;Biyoloji;Virüsler;detail-14;virusler;80;10;6;10;4;1;4
 TYT;Biyoloji;Bakteri ve Arke;detail-15;bakteri-ve-arke;81;9;6;9;4;1;4
 TYT;Biyoloji;Protista;detail-16;protista;82;9;6;9;4;1;4
 TYT;Biyoloji;Bitki;detail-17;bitkiler;83;9;6;9;4;1;5
 TYT;Biyoloji;Mantar;detail-18;mantarlar;84;9;6;9;4;1;4
-TYT;Biyoloji;Omurgasızlar;detail-19;omurgasizlar;85;10;4;10;2;1;3
-TYT;Biyoloji;Omurgalılar;detail-20;omurgalilar;86;10;4;10;2;1;2
+TYT;Biyoloji;Omurgasızlar;detail-19;omurgasizlar;85;11;6;11;4;1;3
+TYT;Biyoloji;Omurgalılar;detail-20;omurgalilar;86;11;6;11;4;1;2
 TYT;Matematik;Kesir Problemleri;detail-211;kesir-problemleri;87;15;7;15;4;1;7
 TYT;Tarih;Değişim Çağında Avrupa ve Osmanlı;detail-240;degisim-caginda-avrupa-osmanli;88;10;4;10;2;2;4
 TYT;Tarih;Devrimler Çağında Değişen Devlet Toplum;detail-241;devrimler-caginda-devlet-toplum;89;10;4;10;2;1;4
@@ -116,7 +116,7 @@ TYT;Kimya;Kaynama , bağıl nem , sıvılar karma test;detail-164;kaynama-bagil-
 TYT;Tarih;Atatürkçülük ve Türk İnkılabı;detail-246;ataturkculuk-inkilap;115;10;4;10;4;3;3
 TYT;Kimya;Gazlar , hal değişim grafiği , plazma;detail-165;gazlar-hal-degisim-plazma;116;9;4;9;4;1;3
 TYT;Türkçe;Edat / bağlaç / ünlem;detail-256;edat-baglac-unlem;117;10;5;10;5;1;4
-TYT;Biyoloji;Eşeyli Üreme;detail-24;eseyli-ureme;118;8;4;8;4;1;5
+TYT;Biyoloji;Eşeyli Üreme;detail-24;eseyli-ureme;118;9;6;9;6;1;5
 TYT;Biyoloji;Kalıtıma Giriş;detail-25;kalitima-giris;119;9;6;9;6;1;5
 TYT;Biyoloji;Mendel Genetiği;detail-26;mendel-genetigi;120;9;6;9;6;1;5
 TYT;Matematik;İşçi Problemleri;detail-217;isci-problemleri;121;16;6;16;6;1;7
@@ -150,12 +150,12 @@ TYT;Matematik;Grafik Problemleri;detail-220;grafik-problemleri;148;15;6;15;6;1;6
 TYT;Matematik;Çarpanlara Ayırma;detail-221;carpanlara-ayirma;149;18;12;18;12;1;5
 TYT;Matematik;Kümeler;detail-222;kumeler;150;13;6;13;6;1;7
 TYT;Kimya;Mol kütle ilişkisi;detail-173;mol-kutle-iliskisi;151;9;4;9;4;1;3
-TYT;Biyoloji;Ekoloji Giriş;detail-31;ekoloji-giris;152;8;4;8;4;1;4
-TYT;Biyoloji;Besin Piramidi;detail-32;besin-piramidi;153;8;4;8;4;1;3
-TYT;Biyoloji;Besin Zinciri ve Ağı;detail-33;besin-zinciri-agi;154;8;4;8;4;1;3
-TYT;Biyoloji;Madde Döngüleri;detail-34;madde-donguleri;155;10;4;10;4;1;3
-TYT;Biyoloji;Güncel Çevre Sorunları;detail-35;guncel-cevre-sorunlari;156;9;4;9;4;1;3
-TYT;Biyoloji;Doğal kaynaklar ve sürdürebilirlik;detail-36;dogal-kaynaklar-surdurulebilirlik;157;9;4;9;4;1;2
+TYT;Biyoloji;Ekoloji Giriş;detail-31;ekoloji-giris;152;9;6;9;6;1;4
+TYT;Biyoloji;Besin Piramidi;detail-32;besin-piramidi;153;9;6;9;6;1;3
+TYT;Biyoloji;Besin Zinciri ve Ağı;detail-33;besin-zinciri-agi;154;9;6;9;6;1;3
+TYT;Biyoloji;Madde Döngüleri;detail-34;madde-donguleri;155;11;6;11;6;1;3
+TYT;Biyoloji;Güncel Çevre Sorunları;detail-35;guncel-cevre-sorunlari;156;10;6;10;6;1;3
+TYT;Biyoloji;Doğal kaynaklar ve sürdürebilirlik;detail-36;dogal-kaynaklar-surdurulebilirlik;157;10;6;10;6;1;2
 TYT;Coğrafya;Atmosferin Katmanları ve Özellikleri;detail-40;atmosfer-katmanlari;158;8;4;8;4;1;2
 TYT;Coğrafya;Sıcaklık;detail-41;cografya-sicaklik;159;8;6;8;6;1;3
 TYT;Fizik;Küresel aynalar;detail-134;kuresel-aynalar;160;9;6;9;6;1;4
@@ -207,8 +207,8 @@ TYT;Coğrafya;Dış kuvvetler Karstik şekiller;detail-51;karstik-sekiller;205;8
 TYT;Coğrafya;Rüzgar ve buzul;detail-52;ruzgar-ve-buzul;206;8;4;8;4;1;2
 TYT;Coğrafya;Dalga ve Akıntılar - Kıyı tipleri;detail-53;dalga-akinti-kiyi-tipleri;207;8;4;8;4;1;2
 TYT;Kimya;Koligatif özellikler / karışımların ayrılması;detail-186;koligatif-ayirma;208;15;4;15;4;1;6
-TYT;Kimya;Asit baz ve tuzlar genel özellikler;detail-187;asit-baz-tuz-ozellikleri;209;12;4;12;4;1;5
-TYT;Kimya;Asit baz tepkimeleri;detail-188;asit-baz-tepkimeleri;210;12;4;12;4;1;4
+TYT;Kimya;Asit baz ve tuzlar genel özellikler;detail-187;asit-baz-tuz-ozellikleri;209;13;6;13;6;1;5
+TYT;Kimya;Asit baz tepkimeleri;detail-188;asit-baz-tepkimeleri;210;13;6;13;6;1;4
 AYT;Fizik;Newton hareket yasaları;detail-361;ayt-newton-hareket-yasalari;211;10;4;10;4;2;1
 AYT;Fizik;Bir boyutta sabit ivmeli hareket;detail-362;bir-boyutta-sabit-ivmeli-hareket;212;9;4;9;4;1;4
 AYT;Biyoloji;Endokrin Sistem Paratiroit;detail-294;endokrin-paratiroit;213;9;4;9;4;1;4
@@ -227,9 +227,9 @@ AYT;Fizik;Bir boyutta sabit ivmeli hareket grafikleri;detail-363;sabit-ivmeli-ha
 AYT;Biyoloji;Duyu Organları Kulak;detail-301;duyu-organlari-kulak;226;10;4;10;4;1;3
 AYT;Biyoloji;Destek Hareket Sistemi Kemik;detail-302;destek-hareket-kemik;227;12;4;12;4;1;3
 AYT;Biyoloji;Destek Hareket Sistemi Kıkırdak ve Eklem;detail-303;destek-hareket-kikirdak-eklem;228;10;4;10;4;1;3
-TYT;Kimya;Asit ve bazların metallerle tepkimeleri;detail-189;asit-baz-metaller;229;12;4;12;4;1;3
-TYT;Kimya;Hayatımızdaki asit ve bazlar;detail-190;hayatimizda-asit-baz;230;13;4;13;4;1;4
-TYT;Kimya;Sabun, Deterjan ve Temizlik Maddeleri;detail-191;sabun-deterjan-temizlik;231;13;4;13;4;1;3
+TYT;Kimya;Asit ve bazların metallerle tepkimeleri;detail-189;asit-baz-metaller;229;13;6;13;6;1;3
+TYT;Kimya;Hayatımızdaki asit ve bazlar;detail-190;hayatimizda-asit-baz;230;14;6;14;6;1;4
+TYT;Kimya;Sabun, Deterjan ve Temizlik Maddeleri;detail-191;sabun-deterjan-temizlik;231;14;6;14;6;1;3
 TYT;Türkçe;Anlatım bozuklukları;detail-265;anlatim-bozukluklari;232;18;6;18;6;1;4
 AYT;Fizik;Atış hareketleri serbest düşme ve limit hız;detail-364;serbest-dusme-limit-hiz;233;10;4;10;4;1;2
 AYT;Fizik;Düşey atış hareketleri;detail-365;dusey-atis;234;10;4;10;4;1;2
