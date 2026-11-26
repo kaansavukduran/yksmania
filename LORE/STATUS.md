@@ -24,6 +24,7 @@
 | 0.208.0 | a8756c1fd5c11317aa843240d099d272e755ed21 |
 | 0.209.0 | 8ac4e9bd7695081d43e98517ead591990cb5a7bc |
 | 0.210.0 | ddd491a8a339a186e72a5e74e405ab150898dbd8 |
+| 0.211.0 | 94f153536836ec4d4e590396474c058a34614a1a |
 
 Cloudflare 0.177.0'da kaldı; sahibin kararıyla ertelendi. Android yalnız kişisel imzalı test paketi. İki site arası yedek aktarım testi tamamlanmadı, kabul sayılmaz.
 
@@ -64,4 +65,6 @@ Derinleştirme 0.210.0 (PR 32 CI yeşil, main CI 45870819772, Pages 45876619976,
 
 Derinleştirme 0.211.0 adayı: Kimya asit-baz-tuz beş ders (`depth216.ts`), Biyoloji ekoloji altı ders (`depth217.ts`), omurgalılar, omurgasızlar, virüsler, eşeyli üreme (`depth218.ts`). TYT Biyoloji'de 4 örnekli ders kalmadı.
 
-Sıradaki iş: 0.211.0 yayın kapısı; hazır bekleyen mol-kütle beş ders (forge/depth-d219); çalışan Kimya turları bağlar-adlandırma (5) ve tepkimeler-sınırlayıcı madde (5). Kalan 4 örnekli TYT Fen: Kimya 14 ders (verim, safsızlık, tepkimeli karışım, katlı oranlar, katı kütlesi; hal değişimi ve gazlar; karışım, çözelti, koligatif; su ve doğa; simya, sembolik dil, polimerler). Sonra TYT Türkçe ve Sosyal, ardından beş AYT Sayısal ders. Tur kuralları scratchpad/depth-brief.md.
+Derinleştirme 0.212.0 adayı: Kimya mol-kütle (`depth219.ts`, izotoplar NIST), bağlar ve adlandırma (`depth220.ts`, Pauling değerleri depth209'dan), tepkimeler ve sınırlayıcı madde (`depth221.ts`, Gauss eleme) on beş ders.
+
+Sıradaki iş: 0.211.0 canlı kabulü, 0.212.0 yayın kapısı; çalışan Kimya turları verim-safsızlık-tepkimeli karışım-katlı oran-katı kütlesi (5) ve hal değişimi-gazlar-buhar basıncı-bağıl nem-katılar-fiziksel/kimyasal değişim (5). Onlardan sonra kalan 4 örnekli TYT Fen: Kimya 9 ders (simyadan kimyaya, sembolik dil, doğa ve kimya, su-hayat-çevre, karışım sınıflandırma ve çözünme, çözelti derişimi, koligatif-ayırma, iki polimer dersi). Sonra TYT Türkçe ve Sosyal, ardından beş AYT Sayısal ders. Tur kuralları scratchpad/depth-brief.md.
