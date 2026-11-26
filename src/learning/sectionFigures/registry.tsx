@@ -253,6 +253,7 @@ import { depthFigures216 } from "./depthFigures216";
 import { depthFigures217 } from "./depthFigures217";
 import { depthFigures218 } from "./depthFigures218";
 import { depthFigures219 } from "./depthFigures219";
+import { depthFigures220 } from "./depthFigures220";
 
 /*
  * Figure packs are merged per guide. A plain object spread replaced a whole
@@ -508,6 +509,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   depthFigures217,
   depthFigures218,
   depthFigures219,
+  depthFigures220,
 ];
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {};
 for (const pack of figurePacks)
