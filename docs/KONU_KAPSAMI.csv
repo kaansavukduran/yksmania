@@ -4,9 +4,9 @@ TYT;Kimya;Kimya disiplinleri;detail-140;kimya-disiplinleri;2;7;3;7;2;1;3
 TYT;Kimya;Kimyanın sembolik dili;detail-141;sembolik-dil;3;8;4;8;2;1;3
 TYT;Kimya;Kimyada iş sağlığı ve güvenliği;detail-142;kimya-guvenlik;4;7;3;7;2;1;3
 TYT;Kimya;Atom modelleri;detail-143;atom-modelleri;5;8;3;8;2;1;3
-TYT;Matematik;Temel Kavramlar;detail-194;temel-kavramlar;6;8;5;8;3;1;5
+TYT;Matematik;Temel Kavramlar;detail-194;temel-kavramlar;6;9;7;9;5;1;5
 TYT;Matematik;Tek Çift Pozitif Negatif Sayılar;detail-195;tek-cift-isaret;7;7;6;7;4;1;5
-TYT;Matematik;Ardışık Sayılar;detail-196;ardisik-sayilar;8;7;5;7;2;1;5
+TYT;Matematik;Ardışık Sayılar;detail-196;ardisik-sayilar;8;8;7;8;4;1;5
 TYT;Matematik;Asal Sayılar;detail-197;asal-sayilar;9;7;6;7;4;1;6
 TYT;Matematik;Faktöriyel Kavramı;detail-198;faktoriyel;10;7;7;7;4;1;7
 TYT;Biyoloji;Canlıların Karakteristik Özellikleri;detail-1;canli-ozellikleri;11;20;6;20;6;1;5
@@ -33,13 +33,13 @@ TYT;Fizik;Newton hareket yasaları;detail-117;newton;31;13;6;13;4;1;3
 TYT;Fizik;Enerji ve hareket;detail-118;enerji-ve-hareket;32;32;15;32;15;1;4
 TYT;Matematik;Bölme Bölünebilme Kuralları;detail-200;bolme-bolunebilme;33;18;6;18;6;1;6
 TYT;Matematik;Ebob Ekok;detail-201;ebob-ekok;34;18;6;18;6;1;6
-TYT;Matematik;Rasyonel Sayılar;detail-202;rasyonel-sayilar;35;10;6;10;2;1;6
+TYT;Matematik;Rasyonel Sayılar;detail-202;rasyonel-sayilar;35;11;8;11;4;1;6
 TYT;Türkçe;Ses bilgisi;detail-250;ses-bilgisi;36;11;12;11;2;1;4
 TYT;Türkçe;Sözcükte yapı;detail-251;sozcukte-yapi;37;12;12;12;2;1;5
 TYT;Biyoloji;Enzimler;detail-8;enzimler;38;20;6;20;6;2;5
 TYT;Biyoloji;Vitaminler;detail-9;vitaminler;39;20;6;20;6;1;5
-TYT;Matematik;Birinci Dereceden Denklemler;detail-203;birinci-dereceden-denklemler;40;6;5;6;2;1;6
-TYT;Matematik;Basit Eşitsizlikler;detail-204;basit-esitsizlikler;41;7;5;7;2;1;7
+TYT;Matematik;Birinci Dereceden Denklemler;detail-203;birinci-dereceden-denklemler;40;7;7;7;4;1;6
+TYT;Matematik;Basit Eşitsizlikler;detail-204;basit-esitsizlikler;41;8;7;8;4;1;7
 TYT;Tarih;Yerleşme ve Devletleşme Sürecinde Selçuklu;detail-232;selcuklu-yerlesme-devletlesme;42;20;6;20;6;1;4
 TYT;Kimya;Katman elektron dizilimi;detail-147;katman-elektron-dizilimi;43;6;3;6;2;1;2
 TYT;Tarih;Beylikten Devlete Osmanlı Siyaseti;detail-233;osmanli-kurulus-siyaseti;44;15;4;15;4;1;5
@@ -61,7 +61,7 @@ TYT;Kimya;Kovalent bağ / polar apolar bağ;detail-155;kovalent-bag-polar-apolar
 TYT;Kimya;Moleküllerde polarlık apolarlık;detail-156;molekullerde-polarlik-apolarlik;60;10;5;10;2;1;4
 TYT;Fizik;Genleşme;detail-120;genlesme;61;8;4;8;2;1;4
 TYT;Fizik;Isı ve Sıcaklık: Hâl Değişimi;detail-121;hal-degisimi;62;9;7;9;4;1;3
-TYT;Matematik;Mutlak Değer;detail-205;mutlak-deger;63;8;5;8;2;1;7
+TYT;Matematik;Mutlak Değer;detail-205;mutlak-deger;63;9;7;9;4;1;7
 TYT;Matematik;Üslü Sayılar;detail-206;uslu-sayilar;64;10;6;10;4;1;7
 TYT;Biyoloji;Hücre Zarında Madde Alışverişleri;detail-12;hucre-zarinda-madde-alisverisleri;65;10;4;10;2;2;4
 TYT;Biyoloji;Canlıların Sınıflandırılması;detail-13;canlilarin-siniflandirilmasi;66;10;4;10;2;1;4
@@ -77,7 +77,7 @@ TYT;Tarih;Klasik Çağda Osmanlı Toplum Düzeni;detail-238;klasik-cag-osmanli-t
 TYT;Tarih;Değişen Dünya Dengeleri Osmanlı;detail-239;degisen-dunya-dengeleri-osmanli;76;11;4;11;2;1;3
 TYT;Matematik;Köklü Sayılar;detail-208;koklu-sayilar;77;16;7;16;2;1;7
 TYT;Matematik;Oran Orantı;detail-209;oran-oranti;78;16;7;16;2;1;7
-TYT;Matematik;Sayı Problemleri;detail-210;sayi-problemleri;79;12;5;12;2;1;7
+TYT;Matematik;Sayı Problemleri;detail-210;sayi-problemleri;79;13;7;13;4;1;7
 TYT;Biyoloji;Virüsler;detail-14;virusler;80;8;4;8;2;1;4
 TYT;Biyoloji;Bakteri ve Arke;detail-15;bakteri-ve-arke;81;8;4;8;2;1;4
 TYT;Biyoloji;Protista;detail-16;protista;82;8;4;8;2;1;4
@@ -85,7 +85,7 @@ TYT;Biyoloji;Bitki;detail-17;bitkiler;83;8;4;8;2;1;5
 TYT;Biyoloji;Mantar;detail-18;mantarlar;84;8;4;8;2;1;4
 TYT;Biyoloji;Omurgasızlar;detail-19;omurgasizlar;85;10;4;10;2;1;3
 TYT;Biyoloji;Omurgalılar;detail-20;omurgalilar;86;10;4;10;2;1;2
-TYT;Matematik;Kesir Problemleri;detail-211;kesir-problemleri;87;14;5;14;2;1;7
+TYT;Matematik;Kesir Problemleri;detail-211;kesir-problemleri;87;15;7;15;4;1;7
 TYT;Tarih;Değişim Çağında Avrupa ve Osmanlı;detail-240;degisim-caginda-avrupa-osmanli;88;10;4;10;2;2;4
 TYT;Tarih;Devrimler Çağında Değişen Devlet Toplum;detail-241;devrimler-caginda-devlet-toplum;89;10;4;10;2;1;4
 TYT;Tarih;Uluslararası İlişkilerde Denge Stratejisi;detail-242;denge-stratejisi;90;10;4;10;2;2;3
@@ -480,12 +480,12 @@ AYT;Biyoloji;Bitkilerde Döllenme ve Çimlenme;detail-356;bitkilerde-dollenme-ci
 AYT;Biyoloji;Canlılar ve Çevre;detail-357;canlilar-ve-cevre;479;24;8;24;8;1;3
 TYT;Geometri;Temel açılar ve paralel doğrular;topic-tyt-geo-temel-acilar-031;tyt-geo-temel-acilar-031;480;8;5;6;4;1;7
 TYT;Geometri;Üçgende açılar;topic-tyt-geo-ucgende-acilar-031;tyt-geo-ucgende-acilar-031;481;11;7;8;6;3;16
-TYT;Geometri;Üçgen eşitsizliği ve açı–kenar ilişkisi;topic-tyt-geo-ucgen-esitsizligi-031;tyt-geo-ucgen-esitsizligi-031;482;11;5;7;4;1;4
+TYT;Geometri;Üçgen eşitsizliği ve açı–kenar ilişkisi;topic-tyt-geo-ucgen-esitsizligi-031;tyt-geo-ucgen-esitsizligi-031;482;12;7;8;6;1;4
 TYT;Geometri;Dik üçgen: Pisagor ve Öklid;topic-tyt-geo-dik-ucgen-031;tyt-geo-dik-ucgen-031;483;10;6;7;4;1;6
 TYT;Geometri;Üçgenlerde eşlik ve benzerlik;topic-tyt-geo-eslik-benzerlik-031;tyt-geo-eslik-benzerlik-031;484;12;6;7;5;3;8
 TYT;Geometri;Üçgende yardımcı elemanlar ve merkezler;topic-tyt-geo-ucgen-merkezleri-031;tyt-geo-ucgen-merkezleri-031;485;12;6;6;4;3;11
 TYT;Geometri;Çokgenler: açı, köşegen ve düzgünlük;topic-tyt-geo-cokgenler-032;tyt-geo-cokgenler-032;486;11;6;6;4;1;3
-TYT;Geometri;Dörtgenlerin özellikleri ve aile ilişkileri;topic-tyt-geo-dortgen-hiyerarsi-032;tyt-geo-dortgen-hiyerarsi-032;487;12;5;5;2;1;3
+TYT;Geometri;Dörtgenlerin özellikleri ve aile ilişkileri;topic-tyt-geo-dortgen-hiyerarsi-032;tyt-geo-dortgen-hiyerarsi-032;487;13;7;6;4;1;3
 TYT;Geometri;Yamuk ve deltoid;topic-tyt-geo-yamuk-deltoid-032;tyt-geo-yamuk-deltoid-032;488;11;6;6;4;2;6
 TYT;Geometri;Paralelkenar, dikdörtgen, eşkenar dörtgen ve kare;topic-tyt-geo-paralelkenar-ozel-dortgenler-032;tyt-geo-paralelkenar-ozel-dortgenler-032;489;12;6;7;4;4;13
 TYT;Geometri;Dik prizmalar: açınım, alan ve hacim;topic-tyt-geo-dik-prizmalar-032;tyt-geo-dik-prizmalar-032;490;11;6;8;4;7;5
