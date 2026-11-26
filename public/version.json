@@ -1,8 +1,8 @@
 {
-  "version": "0.204.0",
+  "version": "0.205.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Yazılım denetimi: yardımsız bitirilen denemeler artık deneme kupalarına sayılıyor, eski boyutta açılıp bitirilen soru setleri planda ve Bugün ekranında tamamlanmış görünüyor, bir dersin ilk öğrenmesi geri alınınca 3/7/21 tekrarları sonraki öğrenmeye bağlanıyor, yedek dosyasının adı yerel tarihi taşıyor. Sınavlar sayfasına dönüş belirgin biçimde hızlandı.",
-    "en": "Software audit: help-free exams now count toward exam trophies, legacy-size question sets count as complete, undoing a first learn session re-anchors its reviews, the backup file name uses the local date, and returning to Exams is much faster."
+    "tr": "Önceki üç turda eklenen on bir tabloya aynı veriden çizilen bölüm figürleri geldi. Çemberde açı, Silindir-koni-küre, Üslü sayılar, Çokgenler, Dik prizmalar ve Piramitler derslerine tablo, ikişer çözümlü örnek, Kopya Kağıdı özeti ve figür eklendi.",
+    "en": "Section figures drawn from the same data now accompany the eleven depth tables, and six more TYT lessons gain a data table, two worked examples, a cheat-sheet summary and a figure."
   }
 }
