@@ -39,7 +39,10 @@ describe("Forge060 TYT Matematik bölüm figürleri", () => {
     for (const g of GUIDES) {
       expect(sectionFigureGuideIds.has(g), g).toBe(true);
       const expectedCounts: Record<string, number> = {
-        "temel-kavramlar": 6,
+        // 0.208.0: temel kavramlar, kesir ve sayı problemlerine birer tablo çizimi.
+        "temel-kavramlar": 7,
+        "kesir-problemleri": 5,
+        "sayi-problemleri": 5,
         "bilimsel-gosterim-katsayi": 5,
         "asal-sayilar": 5,
         "sayi-basamaklari": 5,
