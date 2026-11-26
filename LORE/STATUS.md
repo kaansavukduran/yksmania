@@ -22,6 +22,7 @@
 | 0.206.0 | e6623f221d41b63ba6fc0041fddac28000cf37a2 |
 | 0.207.0 | 6f01dd7cf25c1cba9cca756e5e76328771d9d8e2 |
 | 0.208.0 | a8756c1fd5c11317aa843240d099d272e755ed21 |
+| 0.209.0 | 8ac4e9bd7695081d43e98517ead591990cb5a7bc |
 
 Cloudflare 0.177.0'da kaldı; sahibin kararıyla ertelendi. Android yalnız kişisel imzalı test paketi. İki site arası yedek aktarım testi tamamlanmadı, kabul sayılmaz.
 
@@ -52,8 +53,12 @@ Derinleştirme 0.206.0 (PR 28 CI yeşil; main CI 45798168229 ilk denemede osym-b
 
 Derinleştirme 0.207.0 (PR 29 CI yeşil, main CI 45820596684, Pages 45827485078 build/deploy/verify-published; canlı kabul iki denemede vakaların hepsi geçti (112/112 ve 118/118) yük altında toplam 11 dk sınırı iki kez aşıldı; yük düşünce üçüncü deneme 118/118 PASS): Üçgen eşitsizliği, Dörtgen hiyerarşisi, Birinci dereceden denklemler, Basit eşitsizlikler, Mutlak değer (`depth207.ts`), Temel kavramlar, Ardışık sayılar, Sayı problemleri, Kesir problemleri, Rasyonel sayılar (`depth208.ts`). 0.201.0'dan beri 32 TYT Mat/Geo dersi tablo + 2 örnek + figür aldı; alandaki her ders en az 5 örnek taşır. 6+ örnekli 32 ders henüz ek tablo almadı.
 
-Derinleştirme 0.208.0 (TYT Fen başlangıcı; PR 30 CI yeşil, main CI 45841292452, merge a8756c1): Kimya'nın 3 örnekli dokuz dersi (`depth209.ts` ölçülmüş IE/EN değerleri NIST/CRC kaynaklı, `depth210.ts` GHS/CLP, atom modelleri, Z=1–20 adresleri). osym-brand044 testi main CI'da iki kez 30 sn bütçesini aştığı için 90 sn'ye çıkarıldı (0.207.0 dalı).
+Derinleştirme 0.208.0 (TYT Fen başlangıcı; PR 30 CI yeşil, main CI 45841292452, Pages 45847935727, canlı 118/118 dördüncü denemede): Kimya'nın 3 örnekli dokuz dersi (`depth209.ts` ölçülmüş IE/EN değerleri NIST/CRC kaynaklı, `depth210.ts` GHS/CLP, atom modelleri, Z=1–20 adresleri). osym-brand044 testi main CI'da iki kez 30 sn bütçesini aştığı için 90 sn'ye çıkarıldı (0.207.0 dalı).
 
-Derinleştirme 0.209.0 adayı: Biyoloji on ders (`depth211.ts` sınıflandırma, `depth212.ts` hücre ve bölünme).
+Derinleştirme 0.209.0 (PR 31; CI'da sw-registration-retry üç kurulum denemesini 5 sn'de bekliyordu, paylaşılan makinede yetişmedi, bekleme 30 sn'ye çıkarıldı, dördüncü deneme olmaması kontrolü aynen; merge 8ac4e9b): Biyoloji on ders (`depth211.ts` sınıflandırma, `depth212.ts` hücre ve bölünme).
 
-Sıradaki iş: 0.208.0 canlı kabulü, ardından 0.209.0 (Biyoloji 10 ders, PR) ve 0.210.0 (Fizik 9 + genetik 6 ders, dal forge/depth-210) yayın kapıları. Çalışan turlar: Kimya asit-baz-tuz (5 ders), Biyoloji ekoloji (6 ders). Kalan 4 örnekli TYT Fen: Kimya 34, Biyoloji 4 (omurgalılar, omurgasızlar, virüsler, eşeyli üreme). Sonra TYT Türkçe ve Sosyal, ardından beş AYT Sayısal ders. Tur kuralları scratchpad/depth-brief.md'de; her tur tablo + 2 örnek + Kopya Kağıdı + aynı veriden figür, ölçülmüş sabitler kaynaklı tek sabitte. Soru bankası şu an öncelik değil.
+Canlı kabul kök nedeni (0.207.0–0.208.0): bu oturum makinesinin diski %98 doluydu (1,1 GB boş). Chromium depolama kotasını boş diske göre ayarladığı için 40 MB çevrimdışı önbellek test sırasında boşaltıldı; çevrimdışı vakalarda içerik paketleri `ERR_FAILED` verdi ve sayfa boş kaldı. Eksik paketlerin hepsi yayındaki önbellek listesinde ve sunucuda vardı. Birleşmiş 17 worktree ve yeniden üretilebilir build çıktıları silinince (3,8 GB boş) aynı test 118/118 geçti. Her turdan sonra dist/ silinir.
+
+Derinleştirme 0.210.0 adayı: Fizik dokuz ders (`depth213.ts` ışık/ayna/kırılma, `depth214.ts` mercek/renk/mıknatıs/genleşme), Biyoloji genetik altı ders (`depth215.ts`).
+
+Sıradaki iş: 0.209.0 canlı kabulü, 0.210.0 yayın kapısı; hazır bekleyen turlar ekoloji 6 ders (forge/depth-d217) ve asit-baz-tuz 5 ders (forge/depth-d216) → 0.211.0; çalışan turlar Biyoloji son dört ders (omurgalılar, omurgasızlar, virüsler, eşeyli üreme) ve Kimya mol-kütle 5 ders. Kalan 4 örnekli TYT Fen: Kimya 29 ders. Sonra TYT Türkçe ve Sosyal, ardından beş AYT Sayısal ders. Tur kuralları scratchpad/depth-brief.md.

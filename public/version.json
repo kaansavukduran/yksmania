@@ -1,8 +1,8 @@
 {
-  "version": "0.209.0",
+  "version": "0.210.0",
   "channel": "alpha",
   "notes": {
-    "tr": "TYT Biyoloji'de on derse aynı veriden tablo, ikişer çözümlü örnek, Kopya Kağıdı özeti ve bölüm figürü eklendi: Canlıların sınıflandırılması, Bakteri ve arke, Protista, Mantarlar, Bitkiler, Hücre organelleri, Hücre zarında madde alışverişi, Mitoz, Mayoz ve Eşeysiz üreme.",
-    "en": "Ten TYT Biology lessons gain a data table, two worked examples, a cheat-sheet summary and a section figure each."
+    "tr": "TYT Fizik'te dokuz derse (ışık, gölge, düzlem ve küresel ayna, kırılma, mercek, prizma ve renk, mıknatıs, genleşme) ve TYT Biyoloji'de altı genetik dersine formülden ya da gamet sayımından üretilen tablo, ikişer çözümlü örnek, Kopya Kağıdı özeti ve bölüm figürü eklendi.",
+    "en": "Nine TYT Physics lessons and six TYT Biology genetics lessons gain a computed data table, two worked examples, a cheat-sheet summary and a section figure each."
   }
 }

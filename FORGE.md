@@ -1,3 +1,9 @@
+# TYT Fizik'te dokuz, genetikte altı ders · 0.210.0 adayı
+
+Optikte aydınlanma E = I·cosθ/r², tam gölge ve yarı gölge genişliği benzer üçgenlerden, iki düzlem aynada görüntü sayısı gerçek yansıma zinciriyle, küresel ayna ve mercekte görüntü uzaklığı ve büyütme dersin işaret kuralıyla, kırılma açıları Snell bağıntısıyla hesaplandı; figürler aynı sayılardan gerçek ışın çizer. Prizma ve renklerde ideal RGB kanal modeliyle filtre tablosu, mıknatısta nokta kutup modeliyle pusula yönü, genleşmede CRC katsayılarıyla (yaklaşık) 1 m çubuğun 100 °C'deki uzaması eklendi. Genetikte gamet çeşidi, Mendel ve Mendel dışı oranlar, ABO ve Rh, soy ağacı model eleme ve X'e bağlı çekinik eşleşmeler Punnett sayımından üretildi; test kendi bağımsız sayıcısıyla her hücreyi yeniden hesaplar.
+
+Görsel keşif öğrenme kaydı, XP veya ustalık yazmaz.
+
 # TYT Biyoloji'de on ders · 0.209.0 adayı
 
 Altı canlı grubu aynı sütunlarla (hücre düzeni, duvar, beslenme, örnek), bakteri ve arke sekiz özellikte ayırt etme gücüyle, protistler hareket ve beslenmeyle, mantarlar maya–küf–şapkalı–mikoriza örnekleriyle, bitkiler damar–tohum–meyve anahtarıyla tablolandı. Hücre organellerinde zar sayısı, kendi DNA'sı ve bulunduğu hücre tipi; zar taşımacılığında ATP, protein ve net yön; mitozda 2n=4 ve mayozda 2n=8 hücre için evre evre kromozom, kromatit, DNA (C birimi) ve homolog durumu; eşeysiz üreme yollarında mekanizma ve kalıtsal sonuç eklendi. Evre sayıları ayrı bir DNA molekülü benzetimiyle sınanır; derslerin kendi gösterimi (C birimi, "Ozmoz", partenogenezde mayoz) korunur.
@@ -960,9 +966,9 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
 | TYT Matematik | 45 / 45 | 45 · 221 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
 | TYT Geometri | 19 / 19 | 19 · 209 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
-| TYT Fizik | 24 / 24 | 24 · 289 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
+| TYT Fizik | 24 / 24 | 24 · 298 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 235 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
-| TYT Biyoloji | 36 / 36 | 36 · 169 | 515 / 515 · %100,00 | 11 / 36 · %30,56 | 54 soru · 9 kitapçık | 0 |
+| TYT Biyoloji | 36 / 36 | 36 · 175 | 515 / 515 · %100,00 | 11 / 36 · %30,56 | 54 soru · 9 kitapçık | 0 |
 | TYT Tarih | 24 / 24 | 24 · 93 | 390 / 390 · %100,00 | 8 / 24 · %33,33 | 45 soru · 9 kitapçık | 0 |
 | TYT Coğrafya | 40 / 40 | 40 · 176 | 400 / 400 · %100,00 | 9 / 40 · %22,50 | 45 soru · 9 kitapçık | 0 |
 | TYT Felsefe | 17 / 17 | 17 · 70 | 190 / 190 · %100,00 | 5 / 17 · %29,41 | 89 soru · 9 kitapçık | 0 |
@@ -973,7 +979,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 150 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 327 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2453** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2468** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
