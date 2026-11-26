@@ -1,8 +1,8 @@
 {
-  "version": "0.212.0",
+  "version": "0.213.0",
   "channel": "alpha",
   "notes": {
-    "tr": "TYT Kimya'da on beş derse daha tablo, ikişer çözümlü örnek, Kopya Kağıdı özeti ve bölüm figürü eklendi: mol-kütle ve mol-tanecik ilişkisi, ortalama atom kütlesi, gerçek kütle, sabit oran, bağ türü, iyonik ve kovalent adlandırma, zayıf etkileşimler, hidrojen bağı, denklem denkleştirme, tepkime türleri, miktar geçişi ve sınırlayıcı madde.",
-    "en": "Fifteen more TYT Chemistry lessons (mole, mass and particles, bonding and naming, interactions, equations and limiting reactants) gain a data table, two worked examples, a cheat-sheet summary and a section figure each."
+    "tr": "TYT Kimya'da on dokuz derse daha tablo, ikişer çözümlü örnek, Kopya Kağıdı özeti ve bölüm figürü eklendi: verim, safsızlık, tepkimeli karışım, katlı oranlar, katı kütlesi, gaz yasaları, buhar basıncı, kaynama, katı türleri, fiziksel ve kimyasal değişim, karışımlar, çözelti derişimi, ayırma ve koligatif özellikler, su ve çevre, simya, sembolik dil ve polimerler. Bununla TYT Fen'de dört örnekli ders kalmadı.",
+    "en": "Nineteen more TYT Chemistry lessons gain a data table, two worked examples, a cheat-sheet summary and a section figure each; every TYT Science lesson now has at least five worked examples."
   }
 }

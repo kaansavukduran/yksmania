@@ -25,6 +25,7 @@
 | 0.209.0 | 8ac4e9bd7695081d43e98517ead591990cb5a7bc |
 | 0.210.0 | ddd491a8a339a186e72a5e74e405ab150898dbd8 |
 | 0.211.0 | 94f153536836ec4d4e590396474c058a34614a1a |
+| 0.212.0 | d771f9d5db0de25a3948466faff7a2f367a515f2 |
 
 Cloudflare 0.177.0'da kaldı; sahibin kararıyla ertelendi. Android yalnız kişisel imzalı test paketi. İki site arası yedek aktarım testi tamamlanmadı, kabul sayılmaz.
 
@@ -63,8 +64,10 @@ Canlı kabul kök nedeni (0.207.0–0.208.0): bu oturum makinesinin diski %98 do
 
 Derinleştirme 0.210.0 (PR 32 CI yeşil, main CI 45870819772, Pages 45876619976, canlı 118/118 ilk denemede): Fizik dokuz ders (`depth213.ts` ışık/ayna/kırılma, `depth214.ts` mercek/renk/mıknatıs/genleşme), Biyoloji genetik altı ders (`depth215.ts`).
 
-Derinleştirme 0.211.0 adayı: Kimya asit-baz-tuz beş ders (`depth216.ts`), Biyoloji ekoloji altı ders (`depth217.ts`), omurgalılar, omurgasızlar, virüsler, eşeyli üreme (`depth218.ts`). TYT Biyoloji'de 4 örnekli ders kalmadı.
+Derinleştirme 0.211.0 (PR 33 CI yeşil, main CI 45885264259, Pages 45890756965, canlı 118/118 ilk denemede): Kimya asit-baz-tuz beş ders (`depth216.ts`), Biyoloji ekoloji altı ders (`depth217.ts`), omurgalılar, omurgasızlar, virüsler, eşeyli üreme (`depth218.ts`). TYT Biyoloji'de 4 örnekli ders kalmadı.
 
-Derinleştirme 0.212.0 adayı: Kimya mol-kütle (`depth219.ts`, izotoplar NIST), bağlar ve adlandırma (`depth220.ts`, Pauling değerleri depth209'dan), tepkimeler ve sınırlayıcı madde (`depth221.ts`, Gauss eleme) on beş ders.
+Derinleştirme 0.212.0 (PR 34 CI yeşil, main CI 45893088449, Pages 45898132599, canlı 118/118 ilk denemede): Kimya mol-kütle (`depth219.ts`, izotoplar NIST), bağlar ve adlandırma (`depth220.ts`, Pauling değerleri depth209'dan), tepkimeler ve sınırlayıcı madde (`depth221.ts`, Gauss eleme) on beş ders.
 
-Sıradaki iş: 0.211.0 canlı kabulü, 0.212.0 yayın kapısı; çalışan Kimya turları verim-safsızlık-tepkimeli karışım-katlı oran-katı kütlesi (5) ve hal değişimi-gazlar-buhar basıncı-bağıl nem-katılar-fiziksel/kimyasal değişim (5). Onlardan sonra kalan 4 örnekli TYT Fen: Kimya 9 ders (simyadan kimyaya, sembolik dil, doğa ve kimya, su-hayat-çevre, karışım sınıflandırma ve çözünme, çözelti derişimi, koligatif-ayırma, iki polimer dersi). Sonra TYT Türkçe ve Sosyal, ardından beş AYT Sayısal ders. Tur kuralları scratchpad/depth-brief.md.
+Derinleştirme 0.213.0 adayı: Kimya son on dokuz ders (`depth222.ts` verim/safsızlık/katlı oran, `depth223.ts` gazlar/buhar/kaynama/katılar, `depth224.ts` karışım/derişim/ayırma/su/çevre, `depth225.ts` simya/sembolik dil/polimerler). 0.208.0'dan beri 83 TYT Fen dersi derinleştirildi; her TYT Fen dersi en az 5 örnek taşır.
+
+Sıradaki iş: 0.213.0 yayın kapısı; TYT Türkçe ve Sosyal (4 örnekli 88 ders: Türkçe 14, Tarih 17, Coğrafya 36, Felsefe 14, Din 7) çalışıyor — Türkçe dil bilgisi (ek-fiil, fiilimsiler, ögeler, cümle türleri, deyim-atasözü) ve anlam-paragraf (cümlede anlam, paragrafa giriş, yardımcı düşünce, ikiye bölme, akışı bozan cümle). Ardından beş AYT Sayısal ders. Tur kuralları ve Türkçe/Sosyal ek kuralları scratchpad/depth-brief.md.
