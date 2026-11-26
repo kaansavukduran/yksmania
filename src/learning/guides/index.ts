@@ -573,7 +573,8 @@ export function studyGuide(lessonId: string) {
   if (guide && supplements) {
     let sections = guide.sections;
     let examples = guide.examples;
-    for (const { title, figureTitle, paragraphs, appendSection, workedStep, tableLayout, table } of supplements) {
+    for (const { title, figureTitle, paragraphs, appendSection, workedStep, tableLayout, table, examples: extra } of supplements) {
+      if (extra) examples = [...examples, ...extra];
       sections = appendSection
         ? [...sections, { title, figureTitle, paragraphs, table }]
         : sections.map((section) => section.title === title
