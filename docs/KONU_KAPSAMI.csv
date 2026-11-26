@@ -1,9 +1,9 @@
 ﻿Sınav;Ders;Konu;Konu kimliği;Ders kimliği;Sıra;Anlatım bölümü;Çözümlü örnek;Kopya kağıdı bölümü;Kopya kağıdı örneği;Önerilen video;Alternatif video
 TYT;Kimya;Simyadan kimyaya;detail-139;simyadan-kimyaya;1;9;4;9;2;1;3
-TYT;Kimya;Kimya disiplinleri;detail-140;kimya-disiplinleri;2;7;3;7;2;1;3
+TYT;Kimya;Kimya disiplinleri;detail-140;kimya-disiplinleri;2;8;5;8;4;1;3
 TYT;Kimya;Kimyanın sembolik dili;detail-141;sembolik-dil;3;8;4;8;2;1;3
-TYT;Kimya;Kimyada iş sağlığı ve güvenliği;detail-142;kimya-guvenlik;4;7;3;7;2;1;3
-TYT;Kimya;Atom modelleri;detail-143;atom-modelleri;5;8;3;8;2;1;3
+TYT;Kimya;Kimyada iş sağlığı ve güvenliği;detail-142;kimya-guvenlik;4;8;5;8;4;1;3
+TYT;Kimya;Atom modelleri;detail-143;atom-modelleri;5;9;5;9;4;1;3
 TYT;Matematik;Temel Kavramlar;detail-194;temel-kavramlar;6;9;7;9;5;1;5
 TYT;Matematik;Tek Çift Pozitif Negatif Sayılar;detail-195;tek-cift-isaret;7;7;6;7;4;1;5
 TYT;Matematik;Ardışık Sayılar;detail-196;ardisik-sayilar;8;8;7;8;4;1;5
@@ -28,7 +28,7 @@ TYT;Tarih;Türklerin İslamiyeti Kabulü;detail-231;turklerin-islamiyeti-kabulu;
 TYT;Biyoloji;Proteinler;detail-7;proteinler;27;20;6;20;6;1;5
 TYT;Kimya;Atomun temel tanecikleri;detail-144;atomun-temel-tanecikleri;28;20;6;20;6;1;3
 TYT;Kimya;Atom türleri izotop izoton izobar izoelektronik;detail-145;izotop-izoton-izobar;29;20;6;20;6;1;3
-TYT;Kimya;Periyodik cetvel genel özellikler;detail-146;periyodik-sistem;30;7;4;7;2;1;3
+TYT;Kimya;Periyodik cetvel genel özellikler;detail-146;periyodik-sistem;30;8;6;8;4;1;3
 TYT;Fizik;Newton hareket yasaları;detail-117;newton;31;13;6;13;4;1;3
 TYT;Fizik;Enerji ve hareket;detail-118;enerji-ve-hareket;32;32;15;32;15;1;4
 TYT;Matematik;Bölme Bölünebilme Kuralları;detail-200;bolme-bolunebilme;33;18;6;18;6;1;6
@@ -41,13 +41,13 @@ TYT;Biyoloji;Vitaminler;detail-9;vitaminler;39;20;6;20;6;1;5
 TYT;Matematik;Birinci Dereceden Denklemler;detail-203;birinci-dereceden-denklemler;40;7;7;7;4;1;6
 TYT;Matematik;Basit Eşitsizlikler;detail-204;basit-esitsizlikler;41;8;7;8;4;1;7
 TYT;Tarih;Yerleşme ve Devletleşme Sürecinde Selçuklu;detail-232;selcuklu-yerlesme-devletlesme;42;20;6;20;6;1;4
-TYT;Kimya;Katman elektron dizilimi;detail-147;katman-elektron-dizilimi;43;6;3;6;2;1;2
+TYT;Kimya;Katman elektron dizilimi;detail-147;katman-elektron-dizilimi;43;7;5;7;4;1;2
 TYT;Tarih;Beylikten Devlete Osmanlı Siyaseti;detail-233;osmanli-kurulus-siyaseti;44;15;4;15;4;1;5
 TYT;Tarih;Devletleşme Sürecinde Savaşçılar ve Askerler;detail-234;osmanli-askeri-teskilat;45;15;4;15;4;1;3
-TYT;Kimya;Elementlerin sınıflandırılması;detail-148;elementlerin-siniflandirilmasi;46;6;3;6;2;1;3
-TYT;Kimya;Atom çapı karşılaştırma;detail-149;atom-capi-karsilastirma;47;6;3;6;2;1;3
-TYT;Kimya;İyonlaşma enerjisi;detail-150;iyonlasma-enerjisi;48;6;3;6;2;1;3
-TYT;Kimya;Elektron ilgisi / elektronegatiflik / metalik ametalik özellik;detail-151;elektron-ilgisi-elektronegatiflik;49;6;3;6;2;1;3
+TYT;Kimya;Elementlerin sınıflandırılması;detail-148;elementlerin-siniflandirilmasi;46;7;5;7;4;1;3
+TYT;Kimya;Atom çapı karşılaştırma;detail-149;atom-capi-karsilastirma;47;7;5;7;4;1;3
+TYT;Kimya;İyonlaşma enerjisi;detail-150;iyonlasma-enerjisi;48;7;5;7;4;1;3
+TYT;Kimya;Elektron ilgisi / elektronegatiflik / metalik ametalik özellik;detail-151;elektron-ilgisi-elektronegatiflik;49;7;5;7;4;1;3
 TYT;Tarih;Beylikten Devlete Osmanlı Medeniyeti;detail-235;osmanli-medeniyeti;50;16;4;16;4;1;3
 TYT;Tarih;Dünya Gücü Osmanlı;detail-236;dunya-gucu-osmanli;51;13;5;13;2;2;5
 TYT;Kimya;Kimyasal türler / lewis yapısı;detail-152;kimyasal-turler-lewis;52;12;6;12;2;1;3
