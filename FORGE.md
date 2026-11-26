@@ -1,3 +1,9 @@
+# Derinleştirme figürleri ve altı ders daha · 0.205.0 adayı
+
+0.201.0–0.203.0 turlarında eklenen on bir tabloya bölüm figürü eklendi: permütasyon yuvaları ve C(6,r) çubukları, tekrarlı harf kartları, C(7,r) seçimi, Pascal üçgeni, iki zar ızgarası, parite sayı doğrusu, 1–50 eleği, 5 çarpanı ızgarası, paralel doğrularda sekiz açı, iki özel üçgen ve r=6 dilimi. Figürlerdeki her sayı tabloyu üreten fonksiyondan gelir; test sekiz açıyı gerçek doğrultulardan, zar hücrelerini yol sayısından, elek sonucunu 15 asaldan yeniden sınar.
+
+Çemberde açı ve kiriş, Silindir-koni-küre, Üslü sayılar, Çokgenler, Dik prizmalar ve Piramitler derslerine birer tablo, ikişer çözümlü örnek, Kopya Kağıdı özeti ve figür eklendi. Altı açı türü tek tabloda; küreyi saran silindirde 1:2:3 hacim ve 2:3 yüzey oranı; negatif taban ve üs işaret tablosu; n kenarlı çokgende açı ve köşegen; prizma ve kare piramitte bütün ölçüler. Cevaplar koordinat, dilim integrali, kaba kuvvet ve 3B hacim hesabıyla yeniden sınandı. Görsel keşif öğrenme kaydı, XP veya ustalık yazmaz.
+
 # Yazılım denetimi ve Sınavlar hızlandırması · 0.204.0 adayı
 
 yazilim-denetle ve code-optimization becerileriyle main 66b08eb denetlendi. Kanıtlanan dört mantık hatası düzeltildi ve her biri önce kırılan, sonra geçen bir testle korunuyor. İlk öğrenme oturumu geri alınınca dersin 3/7/21 tekrarları artık kalan en erken öğrenme oturumuna bağlanıyor. Yardımsız bitirilen denemeler deneme kupalarına sayılıyor. Eski boyutta açılıp bitirilen soru seti planda ve Bugün ekranında tamamlanmış görünüyor. Yedek dosyasının adı yerel tarihi taşıyor. Bitişik kelimeli kart metinleri görüntüleme onarımlarıyla düzeltildi.
@@ -930,8 +936,8 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
-| TYT Matematik | 45 / 45 | 45 · 204 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
-| TYT Geometri | 19 / 19 | 19 · 194 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
+| TYT Matematik | 45 / 45 | 45 · 213 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
+| TYT Geometri | 19 / 19 | 19 · 202 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 289 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 226 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 159 | 515 / 515 · %100,00 | 11 / 36 · %30,56 | 54 soru · 9 kitapçık | 0 |
@@ -945,7 +951,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 150 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 327 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2402** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2419** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |

@@ -198,7 +198,7 @@ export const trigSupplement203 = {
 /* ---------- Daire dilimi: aynı yarıçapta açıya göre ---------- */
 
 export const sectorRadius203 = 6;
-const piText = (k: number) => (k === 1 ? "π" : `${Number.isInteger(k) ? k : String(k).replace(".", ",")}π`);
+export const piText203 = (k: number) => (k === 1 ? "π" : `${Number.isInteger(k) ? k : String(k).replace(".", ",")}π`);
 export const sectorRows203 = (r = sectorRadius203) => [30, 60, 90, 120, 180, 270].map((angle) => {
   const g = gcd(angle, 360);
   return {
@@ -214,7 +214,7 @@ const sectorTable = {
   layout: "table" as const,
   headers: ["Merkez açı", "Dairenin kesri", "Yay (cm)", "Dilim alanı (cm²)", "Dilim çevresi (cm)"],
   rows: sectorRows.map(({ angle, fraction, arcPi, areaPi, straight }) =>
-    [`${angle}°`, fraction, piText(arcPi), piText(areaPi), `${straight} + ${piText(arcPi)}`]),
+    [`${angle}°`, fraction, piText203(arcPi), piText203(areaPi), `${straight} + ${piText203(arcPi)}`]),
 };
 const sector90 = sectorRows[2];
 const sector180 = sectorRows[4];
@@ -222,8 +222,8 @@ const sector180 = sectorRows[4];
 export const sectorSection203: GuideSection = {
   title: "Merkez açı değişince yay, alan ve çevre birlikte değişir",
   paragraphs: [
-    `Yarıçap ${sectorRadius203} cm sabit tutulur, yalnız merkez açı değişir. Tam çember çevresi ${piText(2 * sectorRadius203)} cm, daire alanı ${piText(sectorRadius203 ** 2)} cm²’dir. Her satırda önce açının 360°’ye oranı yazılır, yay ve dilim alanı bu kesirle çarpılır. Örneğin 90° için kesir ${sector90.fraction}, yay ${piText(sector90.arcPi)} cm, alan ${piText(sector90.areaPi)} cm²’dir.`,
-    `Açı iki katına çıkınca yay da alan da iki katına çıkar: 90°’den 180°’ye yay ${piText(sector90.arcPi)}’den ${piText(sector180.arcPi)}’ye, alan ${piText(sector90.areaPi)}’den ${piText(sector180.areaPi)}’ye gider. Dilim çevresi ise iki kat olmaz, çünkü iki yarıçap toplamı ${2 * sectorRadius203} cm her satırda sabittir. Her satırda dilim alanı = yay · r / 2 de tutar.`,
+    `Yarıçap ${sectorRadius203} cm sabit tutulur, yalnız merkez açı değişir. Tam çember çevresi ${piText203(2 * sectorRadius203)} cm, daire alanı ${piText203(sectorRadius203 ** 2)} cm²’dir. Her satırda önce açının 360°’ye oranı yazılır, yay ve dilim alanı bu kesirle çarpılır. Örneğin 90° için kesir ${sector90.fraction}, yay ${piText203(sector90.arcPi)} cm, alan ${piText203(sector90.areaPi)} cm²’dir.`,
+    `Açı iki katına çıkınca yay da alan da iki katına çıkar: 90°’den 180°’ye yay ${piText203(sector90.arcPi)}’den ${piText203(sector180.arcPi)}’ye, alan ${piText203(sector90.areaPi)}’den ${piText203(sector180.areaPi)}’ye gider. Dilim çevresi ise iki kat olmaz, çünkü iki yarıçap toplamı ${2 * sectorRadius203} cm her satırda sabittir. Her satırda dilim alanı = yay · r / 2 de tutar.`,
   ],
   table: sectorTable,
 };
@@ -260,7 +260,7 @@ export const sectorExamples203: WorkedExample[] = [
 export const sectorSupplement203 = {
   title: sectorSection203.title,
   paragraphs: sectorSection203.paragraphs,
-  summary: `r=${sectorRadius203}: yay = ${piText(2 * sectorRadius203)}·α/360, alan = ${piText(sectorRadius203 ** 2)}·α/360, çevre = ${2 * sectorRadius203} + yay. Açı iki katına çıkınca yay ve alan iki kat olur, çevre olmaz.`,
+  summary: `r=${sectorRadius203}: yay = ${piText203(2 * sectorRadius203)}·α/360, alan = ${piText203(sectorRadius203 ** 2)}·α/360, çevre = ${2 * sectorRadius203} + yay. Açı iki katına çıkınca yay ve alan iki kat olur, çevre olmaz.`,
   appendSection: true as const,
   table: sectorTable,
   examples: sectorExamples203,

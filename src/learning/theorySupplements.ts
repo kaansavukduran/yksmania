@@ -4,6 +4,9 @@ import { germinationSource002, germinationTotal } from "./germinationSource002";
 import type { GuideSection, WorkedExample } from "./guides/types";
 import { numberDepth202Supplements } from "./numberDepth202";
 import { geometryDepth203Supplements, sectorSupplement203 } from "./geometryDepth203";
+import {
+  circleAngleSupplement206, geometryDepth206Supplements, prismSupplement206, pyramidSupplement206, solidSupplement206,
+} from "./geometryDepth206";
 import { signedBinomial035 } from "./signedBinomialSource035Model";
 import { statisticsSource037Classes } from "./statisticsSource037Revision";
 
@@ -26,6 +29,7 @@ const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, 
 export const theorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
   ...numberDepth202Supplements,
   ...geometryDepth203Supplements,
+  ...geometryDepth206Supplements,
   "genetik-cesitlilik": [{
     title: "Tek mayozun ürünleriyle olası türleri ayır",
     figureTitle: "Tek mayozun ürünleriyle olası türleri ayır",
@@ -591,7 +595,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
     ],
     summary: "r=13, d=5 için kiriş 24. OP=17 için teğet √120=2√30. Dik açı hipotenüsü belirler.",
     appendSection: true,
-  }],
+  }, circleAngleSupplement206],
   "karisim-problemleri": [{
     title: "Karışırken şeker ve su kütlesini ayrı topla",
     figureTitle: "Karışırken şeker ve su kütlesini ayrı topla",
@@ -665,7 +669,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
     ],
     summary: "6 cm’den 2 cm’ye. Hacim 216 cm³ kalır. 27 küçük küpün yüzeyleri toplamı 648 cm².",
     appendSection: true,
-  }],
+  }, prismSupplement206],
   "grafik-problemleri": [{
     title: "Çizgi grafiğinde değişim ile değişim hızı ayrıdır",
     figureTitle: "Çizgi grafiğinde değişim ile değişim hızı ayrıdır",
@@ -710,7 +714,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
     ],
     summary: "Kesit alanı 144π ve uzaklık 5 ise a=12 ve R=13. Küre hacmi 8788π/3 birim³.",
     appendSection: true,
-  }],
+  }, solidSupplement206],
   "kartezyen-carpim": [{
     title: "Koordinat gösterimi ayrık noktaların kümesidir",
     figureTitle: "Koordinat gösterimi ayrık noktaların kümesidir",
@@ -747,7 +751,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
     ],
     summary: "a=2 ve h=3 için iç yarıçap √3, yüz yüksekliği 2√3, yan ayrıt √13. Toplam alan 18√3 cm², hacim 6√3 cm³.",
     appendSection: true,
-  }],
+  }, pyramidSupplement206],
   "kesir-problemleri": [{
     title: "Kalanın kesri yeni bir taban kullanır",
     figureTitle: "Kalanın kesri yeni bir taban kullanır",

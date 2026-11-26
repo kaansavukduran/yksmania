@@ -41,7 +41,10 @@ describe("Forge060 TYT Matematik bölüm figürleri", () => {
       const expectedCounts: Record<string, number> = {
         "temel-kavramlar": 6,
         "bilimsel-gosterim-katsayi": 5,
-        "asal-sayilar": 5,
+        // Derinleştirme (0.202) tablo bölümlerine birer figür ekledi.
+        "tek-cift-isaret": 5,
+        "asal-sayilar": 6,
+        faktoriyel: 5,
         "sayi-basamaklari": 5,
         "havuz-problemleri": 5,
         "carpanlara-ayirma": 5,

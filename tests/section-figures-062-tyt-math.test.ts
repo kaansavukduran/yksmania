@@ -18,11 +18,12 @@ const COUNTS: Record<string, number> = {
   "tyt-mat-dogrusal-denklemler-kaynak-036": 5,
   "tyt-mat-basit-esitsizlikler-kaynak-037": 8,
   "tyt-mat-uslu-sayilar-kaynak-039": 6,
-  "tyt-mat-permutasyon-kaynak-032": 5,
-  "tyt-mat-tekrarli-permutasyon-kaynak-033": 5,
-  "tyt-mat-kombinasyon-kaynak-034": 5,
-  "tyt-mat-binom-kaynak-035": 4,
-  "tyt-mat-olasilik-kaynak-036": 5,
+  // Derinleştirme (0.200) her sayma dersinin tablo bölümüne bir figür ekledi.
+  "tyt-mat-permutasyon-kaynak-032": 6,
+  "tyt-mat-tekrarli-permutasyon-kaynak-033": 6,
+  "tyt-mat-kombinasyon-kaynak-034": 6,
+  "tyt-mat-binom-kaynak-035": 5,
+  "tyt-mat-olasilik-kaynak-036": 6,
 };
 const ALL = Object.keys(COUNTS);
 const fig = (guide: string, title: string) => {
@@ -59,6 +60,7 @@ describe("Forge062 TYT Matematik kaynak dersleri bölüm figürleri", () => {
       "Komşu olanları birlikte say, sadece önce gelenleri eşleştir",
       "Birbirine karışabilen gruplara önce yer ayır",
       "Birbirinden ayrı kişilere ayrı boşluklar ver",
+      "Altı kişiyle sıralı ve sırasız sayıyı yan yana oku",
     ]);
     expect(Object.keys(sectionFigures[repeat])).toEqual([
       "Etiketleri silince aynı kalan dizileri bir say",
@@ -66,6 +68,7 @@ describe("Forge062 TYT Matematik kaynak dersleri bölüm figürleri", () => {
       "Özdeş kartlar ayrı boşluklara giderken iç sıra oluşmaz",
       "Sayıda ilk sıfır yasak, kodda koşulu açık oku",
       "Zorunlu durakta yolu böl, kaçınanı tümleyenden bul",
+      "Tekrar arttıkça görünür dizi sayısı nasıl küçülür",
     ]);
     expect(out(perm, "Birbirinden ayrı kişilere ayrı boşluklar ver", 0, 1)).toContain("toplam 1.440 düzen");
     expect(out(repeat, "Zorunlu durakta yolu böl, kaçınanı tümleyenden bul")).toContain("3 yol. P’den hedefe 6 yol. P’den geçen 18");
