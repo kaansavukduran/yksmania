@@ -1,8 +1,8 @@
 {
-  "version": "0.202.0",
+  "version": "0.203.0",
   "channel": "alpha",
   "notes": {
-    "tr": "TYT Matematik'te Tek-çift ve işaret, Asal sayılar ve Faktöriyel derslerine aynı veriden üretilen birer tablo ve ikişer yeni çözümlü örnek eklendi. Tablolar ve örnekler Kopya Kağıtlarında da görünür.",
-    "en": "TYT Mathematics parity and sign, primes and factorial lessons gain a data table and two worked examples each, also shown in their cheat sheets."
+    "tr": "TYT Geometri'de Temel açılar ve paralellik, Dik üçgende trigonometrik oranlar ve Daire derslerine aynı veriden üretilen birer tablo ve ikişer yeni çözümlü örnek eklendi. Tablolar ve örnekler Kopya Kağıtlarında da görünür.",
+    "en": "TYT Geometry basic angles, right-triangle trigonometric ratios and circle lessons gain a data table and two worked examples each, also shown in their cheat sheets."
   }
 }

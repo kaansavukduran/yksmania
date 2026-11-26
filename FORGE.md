@@ -1,3 +1,9 @@
+# Geometride açı, oran ve dilim tabloları · 0.203.0 adayı
+
+TYT Geometri derinleştirmesinin ilk turu Temel açılar ve paralellik, Dik üçgende trigonometrik oranlar ve Daire derslerini ele aldı. Kabul edilmiş rehberler değişmedi; ekler görüntüleme katmanından derse ve Kopya Kağıdına gelir. Eklenen tablolar şunlar: paralel iki doğru ve kesende sekiz açının konumu, gerekçesi ve α=58° için ölçüsü; 30°, 45° ve 60° oranlarının iki özel üçgenin kenarlarından türetilmesi; r=6 cm'de altı merkez açı için kesir, yay, dilim alanı ve dilim çevresi. Satırlar ve paragraflardaki sayılar aynı fonksiyonlardan gelir.
+
+Altı yeni örnek doğrudan hesapla sınandı: kırık çizgide 85°, açıortaylarda 90° ve 150°, çevre 90 cm, yükseklik 20√3 m, r=6 cm ile 150° ve iki çeyrek dairenin ortak bölgesi 8π−16 cm². Sekiz açı gerçek doğru yönlerinden, özel açı oranları Math.sin/cos/tan ile, ortak bölge sayısal integralle yeniden hesaplandı. Daire dersindeki mevcut 60° daire parçası eki korunur; yeni tablo onun yanına eklendi. Görsel keşif öğrenme kaydı, XP veya ustalık yazmaz.
+
 # Sayı temellerinde tablo ve çözümlü örnek · 0.202.0 adayı
 
 TYT Matematik derinleştirmesinin ikinci turu Tek Çift Pozitif Negatif Sayılar, Asal Sayılar ve Faktöriyel derslerini ele aldı. Bu üç rehberin kabul edilmiş içeriği parmak iziyle korunduğu için değiştirilmedi. Görüntüleme katmanındaki ek düzeneği artık çözümlü örnek de ekleyebiliyor. Ek örnekler derse ve Kopya Kağıdına, tuzakları da Kopya Kağıdının uyarılarına eklenir.
