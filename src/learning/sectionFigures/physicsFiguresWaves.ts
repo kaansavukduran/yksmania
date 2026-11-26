@@ -177,7 +177,6 @@ function pulseInterfaceFigure(boundary: "heavy" | "light", stage: number): Figur
 }
 
 const deg = (r: number) => (r * 180) / Math.PI;
-const rad = (d: number) => (d * Math.PI) / 180;
 
 const giris: Record<string, FigureDef> = {
   "Titreşim yerelde, dalga uzayda ilerler": {

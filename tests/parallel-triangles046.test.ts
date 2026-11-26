@@ -12,7 +12,7 @@ const angle = (first: Point, vertex: Point, second: Point) =>
 describe("özgün paralel üçgen çizimi", () => {
   it("eş kenarlar, paralellik ve çizilen kesişim açıları aynı veriden gelir", () => {
     const [given] = parallelTriangles046.figures;
-    const [ab, bc, ca, ed, df, fe] = given.segments!;
+    const [ab, bc, , ed, df] = given.segments!;
     const a = ab.from, b = ab.to, c = bc.to;
     const e = ed.from, d = ed.to, f = df.to;
     const g = given.arcs![1].center;

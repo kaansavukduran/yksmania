@@ -1,5 +1,5 @@
 import { circle, poly, seg, txt, v, vec, type El, type FigureDef, type Tone, type V } from "./figureKit";
-import { pad, rect } from "./biologyFigures059Kit";
+import { pad } from "./biologyFigures059Kit";
 import { table } from "./biologyFigures059TytKit";
 import { hbars } from "./chemistryFigures060Kit";
 import { boardFig } from "./historyFigures059Kit";

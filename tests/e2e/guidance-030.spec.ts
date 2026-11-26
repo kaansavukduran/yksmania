@@ -15,7 +15,7 @@ import type { AppState, Lesson } from "../../src/domain/model";
 import type { QuestionGuidance } from "../../src/domain/questionHelpModel";
 
 import type { WorkedExample } from "../../src/learning/guides/types";
-import { expectGuideSections, guideSectionCount } from "./helpers/guidePages";
+import { expectGuideSections } from "./helpers/guidePages";
 
 // Node and Playwright read these frozen literal fixtures without importing
 // production presentation functions or requiring JSON module attributes.

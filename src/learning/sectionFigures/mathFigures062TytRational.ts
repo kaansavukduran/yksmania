@@ -1,5 +1,5 @@
 import { power039Fraction, power039Scalar, power039ScientificInput } from "../powersSource039Model";
-import { poly, pt, seg, txt, v, vec, type El, type FigureDef, type Tone } from "./figureKit";
+import { pt, seg, txt, v, vec, type El, type FigureDef, type Tone } from "./figureKit";
 import { cell, frac, nf, pad, rect, sup, tn } from "./mathFigures062TytKit";
 
 /*

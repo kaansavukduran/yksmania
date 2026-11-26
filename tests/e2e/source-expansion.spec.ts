@@ -1,5 +1,5 @@
 import { test, expect, type Page } from "@playwright/test";
-import { expectGuideSections, guideSectionCount, turnToGuideContent } from "./helpers/guidePages";
+import { guideSectionCount, turnToGuideContent } from "./helpers/guidePages";
 async function nav(page: Page, name: string) {
   await expect(page.locator(".sidebar")).toBeAttached();
   const menu = page.getByRole("button", { name: "Menüyü aç", exact: true });

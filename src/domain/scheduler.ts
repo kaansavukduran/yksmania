@@ -57,16 +57,28 @@ export function undoSession(state: AppState, id: string): AppState {
   const deletedReviews = new Set(
     state.reviews.filter((r) => r.originSessionId === id).map((r) => r.id),
   );
+  const sessions = state.sessions.filter((s) => s.id !== id);
+  const reviews = state.reviews
+    .filter((r) => r.originSessionId !== id)
+    .map((r) =>
+      r.completedSessionId === id
+        ? { ...r, completedSessionId: undefined }
+        : r,
+    );
+  // finishSession schedules reviews only for a lesson's first learn session.
+  // If that session is undone while a later learn session remains, the later
+  // one becomes learning day 1 so the lesson keeps its 3/7/21 reviews.
+  const undone = state.sessions.find((s) => s.id === id);
+  if (undone && deletedReviews.size && !reviews.some((r) => r.lessonId === undone.lessonId)) {
+    const next = sessions
+      .filter((s) => s.lessonId === undone.lessonId && s.kind === "learn")
+      .sort((a, b) => a.date.localeCompare(b.date) || a.finishedAt.localeCompare(b.finishedAt))[0];
+    if (next) reviews.push(...createReviews(next));
+  }
   return {
     ...state,
-    sessions: state.sessions.filter((s) => s.id !== id),
-    reviews: state.reviews
-      .filter((r) => r.originSessionId !== id)
-      .map((r) =>
-        r.completedSessionId === id
-          ? { ...r, completedSessionId: undefined }
-          : r,
-      ),
+    sessions,
+    reviews,
     draft:
       state.draft?.reviewId && deletedReviews.has(state.draft.reviewId)
         ? null

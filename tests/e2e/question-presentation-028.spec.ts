@@ -20,7 +20,7 @@ import type {
   HelpQuestion,
   QuestionGuidance,
 } from "../../src/domain/questionHelpModel";
-import { expectGuideSections, guideSectionCount } from "./helpers/guidePages";
+import { expectGuideSections } from "./helpers/guidePages";
 /** Exam drafts carry per-question timing (itemMs, viewedAt) that changes with navigation. */
 const withoutTiming = <T extends object>(draft: T) => {
   const { itemMs: _itemMs, viewedAt: _viewedAt, ...rest } = draft as T & { itemMs?: number[]; viewedAt?: number };

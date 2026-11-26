@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 import { createServer } from "vite";
 import type { AppState, Lesson } from "../../src/domain/model";
 import type { QuestionGuidance } from "../../src/domain/questionHelpModel";
-import { expectGuideSections, guideSectionCount } from "./helpers/guidePages";
+import { expectGuideSections } from "./helpers/guidePages";
 
 const cases = [
   ["Matematik", "oran-oranti", "Math"],
@@ -343,7 +343,9 @@ const guardedCases = [
     index: 3,
     answer: 3,
     selected: 3,
-    options: ["8 ve3", "9 ve1", "7 ve2", "7 ve3", "6 ve6"],
+    // Stored option text is pinned; the typesetter spaces "ve" before a number.
+    rawOptions: ["8 ve3", "9 ve1", "7 ve2", "7 ve3", "6 ve6"],
+    options: ["8 ve 3", "9 ve 1", "7 ve 2", "7 ve 3", "6 ve 6"],
     prompt:
       "Her biri 1 L sabit hacimli iki bölmede X maddesinin başlangıç derişimi dışta 8 mol/L, içte 2 mol/L’dir. Kapalı sistemde tek bir adımda dıştan içe 1 mol X aktarılıyor; üretim ve tüketim yoktur. Yeni dış/iç derişimleri mol/L olarak hangisidir?",
     explanation:

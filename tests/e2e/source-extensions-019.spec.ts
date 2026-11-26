@@ -15,7 +15,7 @@ import {
   forge019TurkishGuideExtensions,
   forge019TurkishLessons,
 } from "../../src/learning/forge019Turkish";
-import { expectGuideSections, guideSectionCount } from "./helpers/guidePages";
+import { expectGuideSections } from "./helpers/guidePages";
 
 test.describe.configure({ mode: "parallel" });
 test.use({ locale: "tr-TR", hasTouch: true });

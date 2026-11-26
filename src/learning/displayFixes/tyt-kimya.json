@@ -266,5 +266,17 @@
  {
   "from": "Bir öğretim modelinde yalnız iki dipol vektörü var: sağa 5 birim ve sola 2 birim. Net vektör hangisidir?",
   "to": "Bir modelde yalnız iki dipol vektörü var: sağa 5 birim ve sola 2 birim. Net vektör hangisidir?"
+ },
+ {
+  "from": "İzotopluk ZV=ZU koşulunu verir. A farkınıΔA=ΔZ+Δn olarak yaz. ΔZ=0,Δn=3 yerleştir; elektron, yük ve hassas kütle için ek veri olmadığını koru. ΔA=0+3=3 tam sayı nükleon farkıdır.",
+  "to": "İzotopluk ZV=ZU koşulunu verir. A farkını ΔA=ΔZ+Δn olarak yaz. ΔZ=0, Δn=3 yerleştir; elektron, yük ve hassas kütle için ek veri olmadığını koru. ΔA=0+3=3 tam sayı nükleon farkıdır."
+ },
+ {
+  "from": "Su O ucuδ−, H uçlarıδ+'dır; katyon O tarafıyla uygun iyon-dipol etkileşimi kurar.",
+  "to": "Su O ucu δ−, H uçları δ+'dır; katyon O tarafıyla uygun iyon-dipol etkileşimi kurar."
+ },
+ {
+  "from": "Suyun yalnız Ca²⁺sertliği",
+  "to": "Suyun yalnız Ca²⁺ sertliği"
  }
 ]

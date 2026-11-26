@@ -6,7 +6,6 @@ import { helpPanels, resolvedGuidance } from "../src/learning/questionHelp";
 import {
   questionGuidanceSchema,
   questionIdentity,
-  type HelpQuestion,
 } from "../src/domain/questionHelpModel";
 import { lessons } from "../src/domain/content";
 import {

@@ -135,6 +135,7 @@ import {
 import {
   THEORY_DEADLINE,
   type AppState,
+  type Lesson,
   type Settings,
   type Session,
 } from "./model";
@@ -316,6 +317,13 @@ export const lessonTopic: Record<string, string> = {
 };
 export const topicLessons = (topicId: string) =>
   lessons.filter((l) => lessonTopic[l.id] === topicId);
+// A saved attempt is complete when it answered every question of the set the
+// learner opened. Sessions saved before questionCount existed are compared with
+// the lesson's current length, as before.
+const completeAttempt = (session: Session, lesson: Lesson) =>
+  lesson.questions.length > 0 &&
+  session.responses.length > 0 &&
+  session.responses.length === Math.min(lesson.questions.length, session.questionCount ?? lesson.questions.length);
 // Latest complete attempt, never a sum/best score across repeated sessions.
 export function topicResults(state: AppState) {
   const results = new Map<string, Session>();
@@ -325,8 +333,7 @@ export function topicResults(state: AppState) {
     if (
       !id ||
       !lesson ||
-      !lesson.questions.length ||
-      session.responses.length !== lesson.questions.length
+      !completeAttempt(session, lesson)
     )
       continue;
     const previous = results.get(id);
@@ -354,8 +361,7 @@ export function completionDates(state: AppState, mode: StudyMode) {
     if (
       id &&
       lesson &&
-      lesson.questions.length > 0 &&
-      s.responses.length === lesson.questions.length &&
+      completeAttempt(s, lesson) &&
       (mode === "questions" ||
         (s.kind === "learn" && s.includesTheory !== false))
     )

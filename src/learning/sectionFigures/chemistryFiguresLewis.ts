@@ -8,8 +8,6 @@ import { ball, poly, seg, txt, v, type El, type FigureDef, type Tone, type V } f
  */
 
 const rad = (d: number) => (d * Math.PI) / 180;
-const rect = (x0: number, x1: number, y0: number, y1: number, tone: Tone, fill = true): El =>
-  poly([v(x0, y1), v(x1, y1), v(x1, y0), v(x0, y0)], { fill: fill ? tone : undefined, tone, thin: true });
 
 /** Atom çevresinde bir yönde nokta çifti (ya da tek nokta). */
 function dots(c: V, angle: number, n: 1 | 2, tone: Tone = "a", r = 0.42): El[] {

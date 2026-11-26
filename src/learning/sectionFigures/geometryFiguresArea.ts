@@ -3,7 +3,6 @@ import {
   dim,
   dist,
   fmt,
-  foot,
   lerp,
   line,
   meet,

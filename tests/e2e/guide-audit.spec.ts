@@ -1,7 +1,7 @@
 import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
-import { expectGuideSections, guideSectionCount, openWorkedExamples } from "./helpers/guidePages";
+import { guideSectionCount, openWorkedExamples } from "./helpers/guidePages";
 test.use({ hasTouch: true, locale: "tr-TR" });
 
 async function nav(page: Page, name: string) {

@@ -1,8 +1,8 @@
 {
-  "version": "0.203.0",
+  "version": "0.204.0",
   "channel": "alpha",
   "notes": {
-    "tr": "TYT Geometri'de Temel açılar ve paralellik, Dik üçgende trigonometrik oranlar ve Daire derslerine aynı veriden üretilen birer tablo ve ikişer yeni çözümlü örnek eklendi. Tablolar ve örnekler Kopya Kağıtlarında da görünür.",
-    "en": "TYT Geometry basic angles, right-triangle trigonometric ratios and circle lessons gain a data table and two worked examples each, also shown in their cheat sheets."
+    "tr": "Yazılım denetimi: yardımsız bitirilen denemeler artık deneme kupalarına sayılıyor, eski boyutta açılıp bitirilen soru setleri planda ve Bugün ekranında tamamlanmış görünüyor, bir dersin ilk öğrenmesi geri alınınca 3/7/21 tekrarları sonraki öğrenmeye bağlanıyor, yedek dosyasının adı yerel tarihi taşıyor. Sınavlar sayfasına dönüş belirgin biçimde hızlandı.",
+    "en": "Software audit: help-free exams now count toward exam trophies, legacy-size question sets count as complete, undoing a first learn session re-anchors its reviews, the backup file name uses the local date, and returning to Exams is much faster."
   }
 }

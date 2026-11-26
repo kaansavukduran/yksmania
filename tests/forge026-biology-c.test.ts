@@ -1,6 +1,5 @@
 import { describe, it, expect, vi } from "vitest";
 import { createHash } from "node:crypto";
-import { readFileSync } from "node:fs";
 import {
   Children,
   createElement,

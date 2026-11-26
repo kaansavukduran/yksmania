@@ -2,7 +2,6 @@ import { useState } from "react";
 import { ArrowRight, Check } from "lucide-react";
 import { useApp } from "../store";
 import {
-  learningReviewPlan,
   repeatName,
   setTheoryReviewCompletion,
   type LearningReview,

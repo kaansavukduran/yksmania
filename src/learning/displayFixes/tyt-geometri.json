@@ -62,5 +62,33 @@
  {
   "from": "Sorulan açı aynı kesişimde tam karşıdadır. Ters açı eşitliği82°=sorulan açı verir. Sorulan82°; komşu sorulsaydı98° olurdu. Denetim: 82+98+82+98=360°.",
   "to": "Sorulan açı aynı kesişimde tam karşıdadır. Ters açı eşitliği 82° = sorulan açı verir. Sorulan 82°; komşu sorulsaydı98° olurdu. Denetim: 82+98+82+98=360°."
+ },
+ {
+  "from": "Dışbükey ABCD yamuğunda AB∥CD, AB=16 veCD=6 birimdir. Yan kenarların orta noktalarından geçen orta taban, iki köşegeni K veL’de kesiyor. KL kaç birimdir?",
+  "to": "Dışbükey ABCD yamuğunda AB∥CD, AB=16 ve CD=6 birimdir. Yan kenarların orta noktalarından geçen orta taban, iki köşegeni K ve L’de kesiyor. KL kaç birimdir?"
+ },
+ {
+  "from": "d₁=13, d₂=10 alınır. S=13·10/2 yazılır. Alan 65 cm²bulunur. Denetim: İki köşegen, dört küçük dik üçgenin yüksekliklerini paylaştırır.",
+  "to": "d₁=13, d₂=10 alınır. S=13·10/2 yazılır. Alan 65 cm² bulunur. Denetim: İki köşegen, dört küçük dik üçgenin yüksekliklerini paylaştırır."
+ },
+ {
+  "from": "Köşegenleri dik kesişen dışbükey ABCD dörtgeninde AB=5, BC=√52 veCD=10 birim. DA kaç birimdir?",
+  "to": "Köşegenleri dik kesişen dışbükey ABCD dörtgeninde AB=5, BC=√52 ve CD=10 birim. DA kaç birimdir?"
+ },
+ {
+  "from": "5²+10²=(√52)²+DA²yazılır. 125=52+DA²olduğundan DA²=73. Uzunluk pozitif olduğu için DA=√73 birimdir. Denetim: AO=3, BO=4, CO=6, DO=8 dik kesişim parçaları bu uzunlukları gerçekleştirir.",
+  "to": "5²+10²=(√52)²+DA² yazılır. 125=52+DA² olduğundan DA²=73. Uzunluk pozitif olduğu için DA=√73 birimdir. Denetim: AO=3, BO=4, CO=6, DO=8 dik kesişim parçaları bu uzunlukları gerçekleştirir."
+ },
+ {
+  "from": "Dışbükey ABCD dörtgeninde A=80°veD=100°. B ile C iç açılarının açıortayları E’de kesişiyor. ∠BEC kaç derecedir?",
+  "to": "Dışbükey ABCD dörtgeninde A=80° ve D=100°. B ile C iç açılarının açıortayları E’de kesişiyor. ∠BEC kaç derecedir?"
+ },
+ {
+  "from": "Dışbükey ABCD deltoidinde AB=AD ve CB=CD’dir. Köşegenler AC=15 cm veBD=8 cm. Alan kaç cm²dir?",
+  "to": "Dışbükey ABCD deltoidinde AB=AD ve CB=CD’dir. Köşegenler AC=15 cm ve BD=8 cm. Alan kaç cm²dir?"
+ },
+ {
+  "from": "AB=AD ve CB=CD olduğundan köşegenler diktir. S=AC·BD/2 formülüne 15 ve 8 yerleştirilir. 15·8/2=60 cm²bulunur. Denetim: İki köşegenin 15 ve 8 olması bütün kenarları eşit yapmaz.",
+  "to": "AB=AD ve CB=CD olduğundan köşegenler diktir. S=AC·BD/2 formülüne 15 ve 8 yerleştirilir. 15·8/2=60 cm² bulunur. Denetim: İki köşegenin 15 ve 8 olması bütün kenarları eşit yapmaz."
  }
 ]

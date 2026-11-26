@@ -134,5 +134,9 @@
  {
   "from": "Uyu- bu kullanımda geçişsizdir; uyut- ekle bebeği nesnesini alabilen geçişli fiile dönüşür. OGM’nin başlangıç geçişliliğine dayanan sınıflamasında bu oldurgandır. Başlangıç zaten geçişli olsaydı ettirgen ayrımı yapılırdı.",
   "to": "Uyu- bu kullanımda geçişsizdir; uyut- ekle bebeği nesnesini alabilen geçişli fiile dönüşür. Başlangıç geçişliliğine dayanan sınıflamada bu oldurgandır. Başlangıç zaten geçişli olsaydı ettirgen ayrımı yapılırdı."
+ },
+ {
+  "from": "X 18 veY 25 içinde en küçük bilinen değer 18’dir. Z 0 seçilirse bütünün en küçüğü değişir; Z 30 seçilirse en büyük de değişir. Yalnız bilinen kayıtlar sınırındaki adayı seç; bilinmeyeni aralığa zorlamadan bırak. Bilinen X ve Y arasında 18<25 olduğundan bu sınırlı yargı doğrudur.",
+  "to": "X 18 ve Y 25 içinde en küçük bilinen değer 18’dir. Z 0 seçilirse bütünün en küçüğü değişir; Z 30 seçilirse en büyük de değişir. Yalnız bilinen kayıtlar sınırındaki adayı seç; bilinmeyeni aralığa zorlamadan bırak. Bilinen X ve Y arasında 18<25 olduğundan bu sınırlı yargı doğrudur."
  }
 ]

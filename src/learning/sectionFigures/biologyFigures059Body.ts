@@ -1,5 +1,5 @@
 import { circle, fmt, poly, seg, txt, v, type El, type FigureDef, type Tone, type V } from "./figureKit";
-import { arrow, axes, box, curve, hi, pad, rect } from "./biologyFigures059Kit";
+import { arrow, axes, box, curve, hi, pad } from "./biologyFigures059Kit";
 
 /*
  * AYT Biyoloji · Kas doku, üriner organlar, sindirim enzimleri ve hormonlar

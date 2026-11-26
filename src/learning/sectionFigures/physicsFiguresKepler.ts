@@ -1,4 +1,4 @@
-import { ball, circle, poly, seg, txt, v, vec, type El, type FigureDef, type V } from "./figureKit";
+import { ball, circle, poly, seg, txt, v, type El, type FigureDef, type V } from "./figureKit";
 
 /*
  * AYT Fizik · Kepler yasaları. İdeal iki cisim modeli: yıldız odakta sabit,

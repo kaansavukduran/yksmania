@@ -1,5 +1,5 @@
 import { txt, type Lesson, type Question } from "../domain/model";
-import type { GuideSection, LessonGuide, WorkedExample } from "./guides/types";
+import type { LessonGuide } from "./guides/types";
 
 const within021 = (n: number, low: number, high: number) =>
   Number.isFinite(n) && n >= low && n <= high;

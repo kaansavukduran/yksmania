@@ -1,7 +1,7 @@
 import { setThemePreference } from "./helpers/theme";
 import { test, expect, type Page } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
-import { expectGuideSections, guideSectionCount } from "./helpers/guidePages";
+import { guideSectionCount } from "./helpers/guidePages";
 test.use({ locale: "tr-TR", hasTouch: true });
 const title = "Çarpanlara ayırma";
 async function nav(page: Page, name: string) {

@@ -15,7 +15,7 @@ export function Calendar({
   start: (l: Lesson, r?: string) => void;
   navigate: (r: string) => void;
 }) {
-  const { state, today, t, l, setSetting } = useApp();
+  const { state, today, t, setSetting } = useApp();
   const [month, setMonth] = useState(() => {
     const d = new Date();
     d.setDate(1);

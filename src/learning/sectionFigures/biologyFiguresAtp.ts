@@ -1,4 +1,4 @@
-import { ball, circle, poly, seg, txt, v, type El, type FigureDef, type Tone } from "./figureKit";
+import { circle, poly, seg, txt, v, type El, type FigureDef, type Tone } from "./figureKit";
 
 /*
  * ATP, schematic (not to scale): adenin – riboz – α–β–γ fosfat with the bond

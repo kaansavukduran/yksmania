@@ -1,4 +1,4 @@
-import { poly, seg, txt, v, vec, type El, type FigureDef, type Tone } from "./figureKit";
+import { poly, txt, v, vec, type El, type FigureDef, type Tone } from "./figureKit";
 
 /*
  * TYT Kimya · Hayatımızdaki asit ve bazlar. Kireç döngüsü:
