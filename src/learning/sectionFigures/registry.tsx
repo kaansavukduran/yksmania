@@ -22,6 +22,7 @@ import { physicsFiguresWaves } from "./physicsFiguresWaves";
 import { physicsFiguresThermal } from "./physicsFiguresThermal";
 import { geometryFiguresCircle040 } from "./geometryFiguresCircle040";
 import { geometryFiguresDepth206 } from "./geometryFiguresDepth206";
+import { geometryFiguresDepth205 } from "./geometryFiguresDepth205";
 import { historyFiguresSeljuk } from "./historyFiguresSeljuk";
 import { biologyFiguresNucleic } from "./biologyFiguresNucleic";
 import { biologyFiguresMitosis } from "./biologyFiguresMitosis";
@@ -260,6 +261,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   { "dalgalara-giris": { [visibleMirrorRayTitle]: physicsFiguresOptics["duzlem-ayna"][visibleMirrorRayTitle] } },
   physicsFiguresThermal,
   geometryFiguresCircle040,
+  geometryFiguresDepth205,
   historyFiguresSeljuk,
   biologyFiguresNucleic,
   biologyFiguresMitosis,

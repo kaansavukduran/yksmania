@@ -1,6 +1,6 @@
 # TYT ve AYT Sayısal konu kapsamı
 
-Uygulama sürümü 0.205.0. Her satır çalışma planındaki bir konuyu ve normal girişte açılan ilk konu anlatımını esas alır.
+Uygulama sürümü 0.206.0. Her satır çalışma planındaki bir konuyu ve normal girişte açılan ilk konu anlatımını esas alır.
 
 | Ders | Konu | Anlatım | Çözümlü örnek | Yerleşik Kopya Kağıdı | Video | Kısmi kaynak kağıdı aktarımı |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
