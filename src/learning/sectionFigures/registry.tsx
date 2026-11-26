@@ -22,6 +22,7 @@ import { physicsFiguresWaves } from "./physicsFiguresWaves";
 import { physicsFiguresThermal } from "./physicsFiguresThermal";
 import { geometryFiguresCircle040 } from "./geometryFiguresCircle040";
 import { geometryFiguresDepth206 } from "./geometryFiguresDepth206";
+import { depthFigures209 } from "./depthFigures209";
 import { historyFiguresSeljuk } from "./historyFiguresSeljuk";
 import { biologyFiguresNucleic } from "./biologyFiguresNucleic";
 import { biologyFiguresMitosis } from "./biologyFiguresMitosis";
@@ -480,6 +481,7 @@ export const figurePacks: Record<string, Record<string, FigureDef>>[] = [
   humanitiesFigures069Sheets,
   depthFigures200,
   geometryFiguresDepth206,
+  depthFigures209,
 ];
 export const sectionFigures: Record<string, Record<string, FigureDef>> = {};
 for (const pack of figurePacks)
