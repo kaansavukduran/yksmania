@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { sectionFigures } from "../src/learning/sectionFigures/registry";
 import { sectionFigureGuideIds } from "../src/learning/sectionFigures/figureGuideIds";
-import { lessonGuides } from "../src/learning/guides";
+import { studyGuide } from "../src/learning/guides";
 
 // Forge059 TYT Biyoloji ve TYT Tarih figürleri: her figür rehberdeki bir
 // bölüm başlığına bağlanır, her durumda sonlu koordinat üretir ve okuma
@@ -50,7 +50,8 @@ describe("Forge059 TYT Biyoloji ve Tarih bölüm figürleri", () => {
 
   it("her figür başlığı rehberdeki bir bölüm başlığıyla birebir eşleşir", () => {
     for (const g of [...BIO, ...HIST]) {
-      const titles = new Set((lessonGuides.get(g)?.sections ?? []).map((s) => s.title));
+      // Gösterilen rehber: 0.211.0 tablo bölümleri görüntüleme katmanında eklenir.
+      const titles = new Set((studyGuide(g)?.sections ?? []).map((s) => s.title));
       for (const t of Object.keys(sectionFigures[g])) expect(titles.has(t), `${g} / ${t}`).toBe(true);
     }
   });

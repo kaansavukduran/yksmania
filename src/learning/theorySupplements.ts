@@ -3,6 +3,7 @@ import { glucoseSource005 } from "./glucoseSource005";
 import { germinationSource002, germinationTotal } from "./germinationSource002";
 import type { GuideSection, WorkedExample } from "./guides/types";
 import { numberDepth202Supplements } from "./numberDepth202";
+import { depth211Supplements } from "./depth211";
 import { geometryDepth203Supplements, sectorSupplement203 } from "./geometryDepth203";
 import {
   circleAngleSupplement206, geometryDepth206Supplements, prismSupplement206, pyramidSupplement206, solidSupplement206,
@@ -32,6 +33,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
   ...geometryDepth203Supplements,
   ...geometryDepth206Supplements,
   ...geometryDepth205Supplements,
+  ...depth211Supplements,
   "genetik-cesitlilik": [{
     title: "Tek mayozun ürünleriyle olası türleri ayır",
     figureTitle: "Tek mayozun ürünleriyle olası türleri ayır",

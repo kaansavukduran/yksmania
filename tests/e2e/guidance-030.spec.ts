@@ -132,6 +132,10 @@ type ReaderMetadata = {
   sheetCount: number;
 };
 const readerMetadata = new Map<string, ReaderMetadata>();
+// Reader counts as displayed: theory supplements (bitkiler 0.211.0) append a
+// table section and two worked examples to the guide and its cheat sheet in
+// the presentation layer; the raw guide and stored sheet stay unchanged.
+const shownCounts = new Map<string, { sections: number; examples: number; sheetSections: number; sheetExamples: number }>();
 const diagnostics = new WeakMap<
   Page,
   { warnings: string[]; consoleErrors: string[]; pageErrors: string[] }
@@ -224,6 +228,14 @@ test.beforeAll(async ({}, info) => {
       else
         for (const fixture of plantsWorkedFixture)
           expect(guide.examples[fixture.index]).toEqual(fixture.before);
+      const shownGuide = guides.studyGuide(id);
+      const shownSheet = sheets.studyCheatSheet(sheet.topicId);
+      shownCounts.set(id, {
+        sections: shownGuide.sections.length,
+        examples: shownGuide.examples.length,
+        sheetSections: shownSheet.sections.length,
+        sheetExamples: shownSheet.examples.length,
+      });
       readerMetadata.set(id, {
         guideMinutes: guide.minutes,
         guideSections: guide.sections.length,
@@ -1071,10 +1083,11 @@ test.describe("030 linked virus and plant guides and built-in sheets", () => {
         await expect(page.locator(".study-title h1")).toHaveText(
           lesson.title.tr,
         );
-        await expectGuideSections(page, target.sections);
+        const shown = shownCounts.get(target.id)!;
+        await expectGuideSections(page, shown.sections);
         await expect(
           page.locator(".guide-examples > .worked-example"),
-        ).toHaveCount(target.examples);
+        ).toHaveCount(shown.examples);
         await expect(page.locator(".guide-recall > details")).toHaveCount(
           target.recall,
         );
@@ -1143,10 +1156,10 @@ test.describe("030 linked virus and plant guides and built-in sheets", () => {
         );
         await expect(
           page.locator(".cheat-sections > .cheat-section"),
-        ).toHaveCount(target.sections);
+        ).toHaveCount(shownCounts.get(target.id)!.sheetSections);
         await expect(
           page.locator(".cheat-examples > .worked-example"),
-        ).toHaveCount(2);
+        ).toHaveCount(shownCounts.get(target.id)!.sheetExamples);
         await expect(page.locator(".cheat-recall-card")).toHaveCount(
           target.recall,
         );
