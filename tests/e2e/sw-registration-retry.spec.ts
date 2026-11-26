@@ -73,6 +73,7 @@ test("a failed first install recovers on the same page without reloading", async
 });
 
 test("a persistently failing install stops after two same-page retries and the app keeps saving", async ({ page, context }) => {
+  test.setTimeout(90_000);
   let installs = 0;
   await context.route(/\/assets\/index-[^/]+\.css$/, async (route) => {
     if (route.request().serviceWorker() === null) return route.continue();
@@ -80,7 +81,9 @@ test("a persistently failing install stops after two same-page retries and the a
     await route.fulfill({ status: 404, body: "" });
   });
   await page.goto("./#/settings");
-  await expect.poll(() => installs).toBe(3);
+  // Each attempt starts a full precache install before the missing stylesheet
+  // fails; on shared CI runners three attempts can take longer than 5 s.
+  await expect.poll(() => installs, { timeout: 30_000 }).toBe(3);
   await page.waitForTimeout(2500);
   expect(installs).toBe(3);
   expect(await page.evaluate(() => navigator.serviceWorker.controller)).toBeNull();
