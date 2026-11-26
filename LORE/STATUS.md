@@ -21,6 +21,7 @@
 | 0.205.0 | 027fbee5955f7aa6ab147f846a5e89524911af71 |
 | 0.206.0 | e6623f221d41b63ba6fc0041fddac28000cf37a2 |
 | 0.207.0 | 6f01dd7cf25c1cba9cca756e5e76328771d9d8e2 |
+| 0.208.0 | a8756c1fd5c11317aa843240d099d272e755ed21 |
 
 Cloudflare 0.177.0'da kaldı; sahibin kararıyla ertelendi. Android yalnız kişisel imzalı test paketi. İki site arası yedek aktarım testi tamamlanmadı, kabul sayılmaz.
 
@@ -49,9 +50,9 @@ Açık konu: CI'da tarayıcı testleri `--workers=2` ile koşarken service worke
 
 Derinleştirme 0.206.0 (PR 28 CI yeşil; main CI 45798168229 ilk denemede osym-brand044 30 sn bütçesini aştı, ikinci deneme geçti; Pages 45807858968, canlı 118/118): Üçgen merkezleri, Eşlik-benzerlik, Dik üçgen, Paralelkenar ailesi, Yamuk-deltoid (`geometryDepth205.ts`, test `geometry-depth205`).
 
-Derinleştirme 0.207.0 (PR 29 CI yeşil, main CI 45820596684, Pages 45827485078 build/deploy/verify-published; canlı kabul iki denemede vakaların hepsi geçti (112/112 ve 118/118) ama bu makinede üç ajan aynı anda tarayıcı testi koşarken toplam 11 dk sınırı aşıldı, yük düşünce yeniden koşulacak): Üçgen eşitsizliği, Dörtgen hiyerarşisi, Birinci dereceden denklemler, Basit eşitsizlikler, Mutlak değer (`depth207.ts`), Temel kavramlar, Ardışık sayılar, Sayı problemleri, Kesir problemleri, Rasyonel sayılar (`depth208.ts`). 0.201.0'dan beri 32 TYT Mat/Geo dersi tablo + 2 örnek + figür aldı; alandaki her ders en az 5 örnek taşır. 6+ örnekli 32 ders henüz ek tablo almadı.
+Derinleştirme 0.207.0 (PR 29 CI yeşil, main CI 45820596684, Pages 45827485078 build/deploy/verify-published; canlı kabul iki denemede vakaların hepsi geçti (112/112 ve 118/118) yük altında toplam 11 dk sınırı iki kez aşıldı; yük düşünce üçüncü deneme 118/118 PASS): Üçgen eşitsizliği, Dörtgen hiyerarşisi, Birinci dereceden denklemler, Basit eşitsizlikler, Mutlak değer (`depth207.ts`), Temel kavramlar, Ardışık sayılar, Sayı problemleri, Kesir problemleri, Rasyonel sayılar (`depth208.ts`). 0.201.0'dan beri 32 TYT Mat/Geo dersi tablo + 2 örnek + figür aldı; alandaki her ders en az 5 örnek taşır. 6+ örnekli 32 ders henüz ek tablo almadı.
 
-Derinleştirme 0.208.0 adayı (TYT Fen başlangıcı): Kimya'nın 3 örnekli dokuz dersi (`depth209.ts` ölçülmüş IE/EN değerleri NIST/CRC kaynaklı, `depth210.ts` GHS/CLP, atom modelleri, Z=1–20 adresleri). osym-brand044 testi main CI'da iki kez 30 sn bütçesini aştığı için 90 sn'ye çıkarıldı (0.207.0 dalı).
+Derinleştirme 0.208.0 (TYT Fen başlangıcı; PR 30 CI yeşil, main CI 45841292452, merge a8756c1): Kimya'nın 3 örnekli dokuz dersi (`depth209.ts` ölçülmüş IE/EN değerleri NIST/CRC kaynaklı, `depth210.ts` GHS/CLP, atom modelleri, Z=1–20 adresleri). osym-brand044 testi main CI'da iki kez 30 sn bütçesini aştığı için 90 sn'ye çıkarıldı (0.207.0 dalı).
 
 Derinleştirme 0.209.0 adayı: Biyoloji on ders (`depth211.ts` sınıflandırma, `depth212.ts` hücre ve bölünme).
 
