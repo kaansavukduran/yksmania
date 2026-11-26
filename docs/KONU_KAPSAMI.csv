@@ -54,7 +54,7 @@ TYT;Kimya;Kimyasal türler / lewis yapısı;detail-152;kimyasal-turler-lewis;52;
 TYT;Fizik;Isı ve sıcaklık;detail-119;isi-ve-sicaklik;53;15;10;15;6;1;4
 TYT;Biyoloji;Nükleik Asitler DNA ve RNA;detail-10;nukleik-asitler;54;11;6;11;2;1;3
 AYT;Biyoloji;ATP ve Metabolizma;detail-283;atp-metabolizma;55;8;4;8;2;1;3
-TYT;Biyoloji;Hücre Organelleri;detail-11;hucre-organelleri;56;8;4;8;2;2;7
+TYT;Biyoloji;Hücre Organelleri;detail-11;hucre-organelleri;56;9;6;9;4;2;7
 TYT;Kimya;Güçlü etkileşimler / iyonik bağ;detail-153;iyonik-bag-ve-guclu-etkilesimler;57;8;4;8;2;1;3
 TYT;Kimya;İyonik bileşiklerin sistematik adlandırılması;detail-154;iyonik-bilesik-adlandirma;58;8;4;8;2;1;4
 TYT;Kimya;Kovalent bağ / polar apolar bağ;detail-155;kovalent-bag-polar-apolar;59;10;5;10;2;1;3
@@ -63,8 +63,8 @@ TYT;Fizik;Genleşme;detail-120;genlesme;61;8;4;8;2;1;4
 TYT;Fizik;Isı ve Sıcaklık: Hâl Değişimi;detail-121;hal-degisimi;62;9;7;9;4;1;3
 TYT;Matematik;Mutlak Değer;detail-205;mutlak-deger;63;9;7;9;4;1;7
 TYT;Matematik;Üslü Sayılar;detail-206;uslu-sayilar;64;10;6;10;4;1;7
-TYT;Biyoloji;Hücre Zarında Madde Alışverişleri;detail-12;hucre-zarinda-madde-alisverisleri;65;10;4;10;2;2;4
-TYT;Biyoloji;Canlıların Sınıflandırılması;detail-13;canlilarin-siniflandirilmasi;66;10;4;10;2;1;4
+TYT;Biyoloji;Hücre Zarında Madde Alışverişleri;detail-12;hucre-zarinda-madde-alisverisleri;65;11;6;11;4;2;4
+TYT;Biyoloji;Canlıların Sınıflandırılması;detail-13;canlilarin-siniflandirilmasi;66;11;6;11;4;1;4
 TYT;Fizik;Durgun elektrik;detail-122;durgun-elektrik;67;10;6;10;4;1;3
 TYT;Fizik;Elektrik akımı;detail-123;elektrik-akimi;68;12;7;16;5;1;4
 TYT;Türkçe;İsimler / isim tamlaması;detail-252;isimler-isim-tamlamasi;69;11;5;11;2;1;4
@@ -79,10 +79,10 @@ TYT;Matematik;Köklü Sayılar;detail-208;koklu-sayilar;77;16;7;16;2;1;7
 TYT;Matematik;Oran Orantı;detail-209;oran-oranti;78;16;7;16;2;1;7
 TYT;Matematik;Sayı Problemleri;detail-210;sayi-problemleri;79;13;7;13;4;1;7
 TYT;Biyoloji;Virüsler;detail-14;virusler;80;8;4;8;2;1;4
-TYT;Biyoloji;Bakteri ve Arke;detail-15;bakteri-ve-arke;81;8;4;8;2;1;4
-TYT;Biyoloji;Protista;detail-16;protista;82;8;4;8;2;1;4
-TYT;Biyoloji;Bitki;detail-17;bitkiler;83;8;4;8;2;1;5
-TYT;Biyoloji;Mantar;detail-18;mantarlar;84;8;4;8;2;1;4
+TYT;Biyoloji;Bakteri ve Arke;detail-15;bakteri-ve-arke;81;9;6;9;4;1;4
+TYT;Biyoloji;Protista;detail-16;protista;82;9;6;9;4;1;4
+TYT;Biyoloji;Bitki;detail-17;bitkiler;83;9;6;9;4;1;5
+TYT;Biyoloji;Mantar;detail-18;mantarlar;84;9;6;9;4;1;4
 TYT;Biyoloji;Omurgasızlar;detail-19;omurgasizlar;85;10;4;10;2;1;3
 TYT;Biyoloji;Omurgalılar;detail-20;omurgalilar;86;10;4;10;2;1;2
 TYT;Matematik;Kesir Problemleri;detail-211;kesir-problemleri;87;15;7;15;4;1;7
@@ -92,9 +92,9 @@ TYT;Tarih;Uluslararası İlişkilerde Denge Stratejisi;detail-242;denge-strateji
 TYT;Tarih;XIX ve XX. Yüzyılda Değişen Sosyoekonomik Hayat;detail-243;degisen-sosyoekonomik-hayat;91;10;4;10;2;1;3
 TYT;Kimya;Kovalent bileşiklerde isimlendirme / metalik bağ;detail-157;kovalent-adlandirma-metalik-bag;92;8;4;8;2;1;3
 TYT;Türkçe;Zarflar;detail-255;zarflar;93;10;5;10;2;1;3
-TYT;Biyoloji;Hücre Bölünmeleri - Mitoz;detail-21;mitoz;94;10;4;10;2;1;5
-TYT;Biyoloji;Eşeysiz Üreme;detail-22;eseysiz-ureme;95;10;4;10;2;1;5
-TYT;Biyoloji;Hücre Bölünmeleri - Mayoz;detail-23;mayoz;96;10;4;10;2;1;6
+TYT;Biyoloji;Hücre Bölünmeleri - Mitoz;detail-21;mitoz;94;11;6;11;4;1;5
+TYT;Biyoloji;Eşeysiz Üreme;detail-22;eseysiz-ureme;95;11;6;11;4;1;5
+TYT;Biyoloji;Hücre Bölünmeleri - Mayoz;detail-23;mayoz;96;11;6;11;4;1;6
 TYT;Kimya;Zayıf etkileşimler;detail-158;zayif-etkilesimler;97;8;4;8;2;1;3
 TYT;Kimya;Hidrojen bağı;detail-159;hidrojen-bagi;98;8;4;8;2;1;3
 TYT;Tarih;20.Yüzyıl Başlarında Osmanlı ve Dünya;detail-244;yirminci-yuzyil-baslarinda-osmanli;99;12;4;12;2;2;4

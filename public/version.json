@@ -1,8 +1,8 @@
 {
-  "version": "0.208.0",
+  "version": "0.209.0",
   "channel": "alpha",
   "notes": {
-    "tr": "TYT Kimya'da dokuz derse aynı veriden tablo, ikişer çözümlü örnek, Kopya Kağıdı özeti ve bölüm figürü eklendi: Katman elektron dizilimi, Elementlerin sınıflandırılması, Atom çapı, İyonlaşma enerjisi, Elektronegatiflik, Kimya disiplinleri, İş sağlığı ve güvenliği, Atom modelleri ve Periyodik sistem.",
-    "en": "Nine TYT Chemistry lessons gain a data table, two worked examples, a cheat-sheet summary and a section figure each."
+    "tr": "TYT Biyoloji'de on derse aynı veriden tablo, ikişer çözümlü örnek, Kopya Kağıdı özeti ve bölüm figürü eklendi: Canlıların sınıflandırılması, Bakteri ve arke, Protista, Mantarlar, Bitkiler, Hücre organelleri, Hücre zarında madde alışverişi, Mitoz, Mayoz ve Eşeysiz üreme.",
+    "en": "Ten TYT Biology lessons gain a data table, two worked examples, a cheat-sheet summary and a section figure each."
   }
 }
