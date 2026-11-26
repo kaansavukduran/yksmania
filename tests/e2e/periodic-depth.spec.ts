@@ -15,7 +15,7 @@ test("four new lessons expose explanations, actual changing models and saved off
   await page.goto("/");
   for (const id of ids) {
     await page.goto("/#/lesson?id=" + id);
-    await expectGuideSections(page, 6);
+    await expectGuideSections(page, 7);
     const lab = page.locator(".periodic-comparison");
     await expect(lab).toBeVisible();
     const first = await lab.getByLabel("İncelenecek durum").inputValue();

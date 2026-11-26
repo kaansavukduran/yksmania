@@ -179,12 +179,15 @@ test.beforeAll(async ({}, testInfo) => {
       ) as { topicId: string; sections: unknown[]; examples: unknown[] };
       expect(guide).toBeTruthy();
       expect(sheet).toBeTruthy();
+      // Count what the reader shows: accepted guide plus published supplements.
+      const shown = guides.studyGuide(item.id);
+      const shownSheet = sheets.studyCheatSheet(sheet.topicId);
       guideMetadata.set(item.id, {
-        sections: guide.sections.length,
-        examples: guide.examples.length,
+        sections: shown.sections.length,
+        examples: shown.examples.length,
         sheetId: sheet.topicId,
-        sheetSections: sheet.sections.length,
-        sheetExamples: sheet.examples.length,
+        sheetSections: shownSheet.sections.length,
+        sheetExamples: shownSheet.examples.length,
       });
     }
   } finally {

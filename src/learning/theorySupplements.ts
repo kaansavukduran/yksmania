@@ -10,6 +10,8 @@ import {
 import { geometryDepth205Supplements, quadSupplement205, trapezoidSupplement205 } from "./geometryDepth205";
 import { depth207Supplements } from "./depth207";
 import { chainSupplement208, depth208Supplements, placeValueSupplement208, wordSupplement208 } from "./depth208";
+import { depth209Supplements } from "./depth209";
+import { atomModelSupplement210, depth210Supplements, disciplineSupplement210, pictogramSupplement210 } from "./depth210";
 import { signedBinomial035 } from "./signedBinomialSource035Model";
 import { statisticsSource037Classes } from "./statisticsSource037Revision";
 
@@ -36,6 +38,8 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
   ...geometryDepth205Supplements,
   ...depth207Supplements,
   ...depth208Supplements,
+  ...depth209Supplements,
+  ...depth210Supplements,
   "genetik-cesitlilik": [{
     title: "Tek mayozun ürünleriyle olası türleri ayır",
     figureTitle: "Tek mayozun ürünleriyle olası türleri ayır",
@@ -253,7 +257,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
     ],
     summary: "C→A: bir geçiş, 8 birim. C→B→A: iki geçiş, 4+4=8 birim. Yolu değiştirince geçiş sayısı değişir, toplam fark aynı kalır.",
     appendSection: true,
-  }],
+  }, atomModelSupplement210],
   "karbohidratlar": [{
     title: "Glikozun toplam miktarı ile artışını ayır",
     figureTitle: "Glikozun toplam miktarı ile artışını ayır",
@@ -288,7 +292,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
     ],
     summary: "İlk okuma 2,0 mL ve son okuma 7,5 mL ise fark 5,5 mL. Aynı aletten okunmuş iki ölçek değeri gerekir.",
     appendSection: true,
-  }],
+  }, pictogramSupplement210],
   "su-asit-baz-tuz": [{
     title: "Eşit enerjide iki sıvının sıcaklık artışını karşılaştır",
     figureTitle: "Eşit enerjide iki sıvının sıcaklık artışını karşılaştır",
@@ -361,7 +365,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
       layout: "table",
     },
     appendSection: true,
-  }],
+  }, disciplineSupplement210],
   "bilimsel-yontem": [{
     title: "Ölçülen en yüksek değer ile veri dışı tahmini ayır",
     figureTitle: "Ölçülen en yüksek değer ile veri dışı tahmini ayır",

@@ -1,8 +1,8 @@
 {
-  "version": "0.207.0",
+  "version": "0.208.0",
   "channel": "alpha",
   "notes": {
-    "tr": "TYT Matematik ve Geometri'de on derse daha aynı veriden üretilen tablo, ikişer çözümlü örnek, Kopya Kağıdı özeti ve bölüm figürü eklendi: Üçgen eşitsizliği, Dörtgen hiyerarşisi, Birinci dereceden denklemler, Basit eşitsizlikler, Mutlak değer, Temel kavramlar, Ardışık sayılar, Sayı problemleri, Kesir problemleri ve Rasyonel sayılar.",
-    "en": "Ten more TYT Mathematics and Geometry lessons gain a data table, two worked examples, a cheat-sheet summary and a section figure each."
+    "tr": "TYT Kimya'da dokuz derse aynı veriden tablo, ikişer çözümlü örnek, Kopya Kağıdı özeti ve bölüm figürü eklendi: Katman elektron dizilimi, Elementlerin sınıflandırılması, Atom çapı, İyonlaşma enerjisi, Elektronegatiflik, Kimya disiplinleri, İş sağlığı ve güvenliği, Atom modelleri ve Periyodik sistem.",
+    "en": "Nine TYT Chemistry lessons gain a data table, two worked examples, a cheat-sheet summary and a section figure each."
   }
 }
