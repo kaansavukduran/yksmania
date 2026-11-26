@@ -2,7 +2,6 @@ import {
   span,
   add,
   circle,
-  dim,
   fmt,
   mul,
   poly,

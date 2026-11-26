@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 import { createServer } from "vite";
 import type { AppState, Lesson } from "../../src/domain/model";
 import type { QuestionGuidance } from "../../src/domain/questionHelpModel";
-import { expectGuideSections, guideSectionCount } from "./helpers/guidePages";
+import { expectGuideSections } from "./helpers/guidePages";
 
 const cases = [
   ["Matematik", "oran-oranti", "Math"],

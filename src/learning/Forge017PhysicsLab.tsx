@@ -15,7 +15,6 @@ import {
   energyModel017,
 } from "./forge017Physics";
 import "./forge017Physics.css";
-import { ChoiceSelect } from "../components/ChoiceSelect";
 const fmt = (n: number, digits = 2) =>
   new Intl.NumberFormat("tr-TR", { maximumFractionDigits: digits }).format(
     Object.is(n, -0) ? 0 : n,
@@ -113,34 +112,6 @@ function Frame({
         tamamlanması oluşturmaz.
       </p>
     </section>
-  );
-}
-function Select({
-  label,
-  value,
-  onChange,
-  options,
-}: {
-  label: string;
-  value: string;
-  onChange: (v: string) => void;
-  options: [string, string][];
-}) {
-  const uid = useId();
-  return (
-    <div className="physics017-select">
-      <label htmlFor={uid}>{label}</label>
-      <ChoiceSelect id={uid} value={value} onChange={(e) => onChange(e.target.value)}>
-        {options.map(([value, name]) => (
-          <option key={value} value={value}>
-            {name}
-          </option>
-        ))}
-      </ChoiceSelect>
-      <p className="small muted">
-        Seçili: {options.find((o) => o[0] === value)?.[1]}
-      </p>
-    </div>
   );
 }
 // View coordinates are physical CSS pixels, including on the narrowest phone.

@@ -21,7 +21,6 @@ import {
   beginExam,
   changeExam,
   examCatalogue,
-  examReference,
   examScore,
   examAssistance,
   finishExam,

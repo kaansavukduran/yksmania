@@ -16,6 +16,7 @@
 | 0.200.0 | f0553c368f9765137ba071b8af2b06623adf473b |
 | 0.201.0 | a21d15570ad71332b09cacd0192e3135df7f4466 |
 | 0.202.0 | d098e6c0c0a302e9bc6685af6a1f5e3601e60da1 |
+| 0.203.0 | 66b08ebbbe7b317ad10cb7093be2710a0f9c08a4 |
 
 Cloudflare 0.177.0'da kaldı; sahibin kararıyla ertelendi. Android yalnız kişisel imzalı test paketi. İki site arası yedek aktarım testi tamamlanmadı, kabul sayılmaz.
 
@@ -27,6 +28,15 @@ Derinleştirme 1. tur 0.201.0 (main CI 45711309496, Pages 45716654360, canlı 11
 
 Derinleştirme 2. tur 0.202.0 (PR 24 CI tamamı yeşil, main CI 45734611237, Pages 45738950338 build/deploy/verify-published, canlı 118/118): Tek-çift, Asal, Faktöriyel; kabul edilmiş rehberler parmak iziyle korunduğu için ekler `theorySupplements` görüntüleme katmanında (artık `examples` da alır).
 
-Derinleştirme 3. tur (0.203.0 adayı): Temel açılar 031 (8 açı tablosu), Trigonometrik oranlar 040 (özel açılar iki üçgenden), Daire 040 (r=6 dilim tablosu; mevcut 60° parça eki korunur, yeni ek yanına). Kaynak: `src/learning/geometryDepth203.ts`, test `tests/geometry-depth203.test.ts` (doğru yönleri, Math.sin/cos/tan, sayısal integral).
+Derinleştirme 3. tur 0.203.0 (PR 25 CI tamamı yeşil, main CI 45746666675, Pages 45751164272 build/deploy/verify-published, canlı 118/118): Temel açılar 031 (8 açı tablosu), Trigonometrik oranlar 040 (özel açılar iki üçgenden), Daire 040 (r=6 dilim tablosu; mevcut 60° parça eki korunur, yeni ek yanına). Kaynak: `src/learning/geometryDepth203.ts`, test `tests/geometry-depth203.test.ts` (doğru yönleri, Math.sin/cos/tan, sayısal integral).
 
-Sıradaki iş: 0.203.0 yayın kapısı, ardından konu anlatımı, çözümlü örnek ve Kopya Kağıtlarını derinleştirme: TYT Matematik ve Geometri (sıradaki en inceler: Birinci dereceden denklemler 203, ardından kapsam tablosunda 3 örnekli kalan TYT Mat/Geo başlıkları) → TYT Fen → TYT Türkçe ve Sosyal → beş AYT Sayısal ders. Soru bankası şu an öncelik değil.
+Denetim ve optimizasyon 0.204.0 adayı (yazilim-denetle + code-optimization, hedef main 66b08eb):
+- A1 Orta: ilk öğrenme oturumu geri alınınca dersin 3/7/21 tekrarları kalıcı siliniyordu; artık kalan en erken öğrenme oturumuna bağlanır (`undoSession`, test `undo-session-reviews`).
+- B1 Orta: uygulama denemeleri hep "learning" kipinde başlattığı için yardımsız deneme kupaları kazanılamıyordu; bağımsızlık artık açılan yardım düzeyinden okunur (`achievements.ts`, test `exam-trophy-independence`).
+- B2 Düşük: eski boyutta açılıp bitirilen set tamamlanmış sayılmıyordu; oturum açılan set boyutunu (`questionCount`, isteğe bağlı alan) saklar, eski kayıtlar eski kuralla okunur (test `legacy-set-completion`).
+- A2 Düşük: yedek dosya adı UTC tarihiydi; `localDate()`.
+- C1 Düşük: bitişik kelimeli kart metinleri `displayFixes` ile onarıldı (içerik kayıtları bayt bayt korunur).
+- Performans: Sınavlar sayfası her girişte bütün soru anlık görüntülerini yeniden kuruyordu; ders başına önbellek. 4x CPU kısıtında tekrar giriş 638–697 ms → 77–94 ms (CONFIRMED, iki A/B ölçümü). İlk giriş ~0,5 s kalır. Soğuk ilk açılış 4x'te ~6,1 s (bütün içerik modulepreload), SW ile sıcak açılış 1,45 s; içeriği tembel yüklemek bilinçli statik rota kararına (Chromium çevrimdışı yenileme hatası) aykırı, Katman 3 öneri.
+- Ölü kod: 65 kullanılmayan bildirim silindi; `noUnusedLocals` tsconfig'de açık. knip bulguları (scripts, sw.js, Inter, workbox) yanlış pozitif.
+
+Sıradaki iş: 0.204.0 yayın kapısı, ardından 11 derinleştirme bölümüne aynı veriden figür ve iki derinleştirme turu (Çemberde açı, Silindir-koni-küre, Üslü sayılar, Çokgenler, Dik prizmalar, Piramitler; Üçgen merkezleri, Eşlik-benzerlik, Dik üçgen, Paralelkenar ailesi, Yamuk-deltoid), ardından konu anlatımı, çözümlü örnek ve Kopya Kağıtlarını derinleştirme: TYT Matematik ve Geometri (sıradaki en inceler: Birinci dereceden denklemler 203, ardından kapsam tablosunda 3 örnekli kalan TYT Mat/Geo başlıkları) → TYT Fen → TYT Türkçe ve Sosyal → beş AYT Sayısal ders. Soru bankası şu an öncelik değil.

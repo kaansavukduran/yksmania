@@ -84,6 +84,8 @@ const sessionSchema = z.object({
   lessonId: id,
   date,
   finishedAt: z.string().max(50),
+  // Size of the set the learner opened; legacy drafts finish at their old size.
+  questionCount: z.number().int().min(1).max(100).optional(),
   responses: z.array(responseSchema).max(100),
   kind: z.enum(["learn", "review", "manual"]),
   minutes: z.number().min(0).max(1440),

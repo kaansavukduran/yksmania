@@ -1,7 +1,7 @@
 import { setThemePreference } from "./helpers/theme";
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
-import { expectGuideSections, guideSectionCount } from "./helpers/guidePages";
+import { expectGuideSections } from "./helpers/guidePages";
 const ids = [
   "elementlerin-siniflandirilmasi",
   "atom-capi-karsilastirma",

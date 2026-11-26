@@ -1,7 +1,6 @@
 import { useEffect, useId, useRef, useState, type ReactNode } from "react";
 import { useExploration } from "./useExploration";
 import {
-  translate021,
   transform021,
   reflectLine021,
   reflectCenter021,

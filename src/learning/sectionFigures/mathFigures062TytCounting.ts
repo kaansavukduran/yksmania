@@ -1,7 +1,7 @@
 import { separatedPermutations032 } from "../separatedPermutationsSource032Model";
 import { waypointPaths033 } from "../waypointPathsSource033Model";
 import { circle, poly, pt, seg, txt, v, vec, type El, type FigureDef, type Tone } from "./figureKit";
-import { cell, choose, fact, frac, pad, rect, sup, table, tn, token } from "./mathFigures062TytKit";
+import { cell, choose, fact, frac, pad, rect, sup, table, tn } from "./mathFigures062TytKit";
 
 /*
  * TYT Matematik (Forge062) · Aurelia sayma ve olasılık dersleri:

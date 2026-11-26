@@ -230,7 +230,7 @@ Tablo, bu daldaki uygulama envanterini ve sürüm kayıtlarını gösterir. PDF 
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
 | Ara hatırlama (mikro ritim): ders · soru | 505 / 510 · %99,02 · 3.052 soru |
-| Gösterim onarımı: soru alanı · ders paragrafı | 962 · 1.634 |
+| Gösterim onarımı: soru alanı · ders paragrafı | 1.132 · 1.634 |
 | Kopya kâğıdı (kısmi aktarım / toplam) | 137 / 517 · %26,50 |
 | Resmî ana başlık · anlatımlı konu · hazır anlatım | 341 · 510 · 510 |
 | İleri ve kaynak soru seti (anlatımı ana konusunda) | 36 |

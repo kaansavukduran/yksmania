@@ -1,4 +1,4 @@
-import { fmt, poly, seg, txt, v, vec, type El, type FigureDef, type Tone } from "./figureKit";
+import { poly, seg, txt, v, vec, type El, type FigureDef, type Tone } from "./figureKit";
 
 /*
  * Water budget and artesian wells (original teaching models, MEB/OGM Coğrafya

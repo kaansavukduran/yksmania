@@ -54,7 +54,7 @@ vi.mock("../src/components/PastExamQuestions", () => ({
 }));
 
 import { initialState } from "../src/domain/model";
-import { lessonById, subjects } from "../src/domain/content";
+import { subjects } from "../src/domain/content";
 import { lessonGuides } from "../src/learning/guides";
 import { questionIdentity } from "../src/domain/questionHelpModel";
 import {

@@ -370,5 +370,37 @@
  {
   "from": "Merkezî miyelin ve iletim sorunları MS öğretim bağlamıyla ilişkilidir. Fakat gerçek bir belirtinin nedenini tek karttan belirlemek veya bütün miyelin sorunlarını aynı hastalık saymak doğru değildir.",
   "to": "Merkezî miyelin ve iletim sorunları MS bağlamıyla ilişkilidir. Fakat gerçek bir belirtinin nedenini tek bilgiden belirlemek veya bütün miyelin sorunlarını aynı hastalık saymak doğru değildir."
+ },
+ {
+  "from": "CanlıX tohumu su, oksijen ve türüne uygun sıcaklıkta çimlenmiyor; uygun soğuk ön işlemden sonra aynı koşullarda çimleniyor. En güçlü yorum hangisidir?",
+  "to": "Canlı X tohumu su, oksijen ve türüne uygun sıcaklıkta çimlenmiyor; uygun soğuk ön işlemden sonra aynı koşullarda çimleniyor. En güçlü yorum hangisidir?"
+ },
+ {
+  "from": "A veB’de aynı canlı, dormansisiz tohum partisi ve sıcaklık kullanılıyor. A’da su ve oksijen yeterli, B’de su yeterli fakat oksijen düşük. A daha çok kök çıkarıyor. Tek etmen karşılaştırması hangi etkiyi sınar?",
+  "to": "A ve B’de aynı canlı, dormansisiz tohum partisi ve sıcaklık kullanılıyor. A’da su ve oksijen yeterli, B’de su yeterli fakat oksijen düşük. A daha çok kök çıkarıyor. Tek etmen karşılaştırması hangi etkiyi sınar?"
+ },
+ {
+  "from": "A veB hatları aynı ortak bahçede, rastgele yerleşim ve tekrarlarla yetiştiriliyor. A’nın ortalama boyu 35, B’nin 50cm; hatlar arası genetik farklılık da doğrulanmış. Hangi ifade veriye en uygundur?",
+  "to": "A ve B hatları aynı ortak bahçede, rastgele yerleşim ve tekrarlarla yetiştiriliyor. A’nın ortalama boyu 35, B’nin 50 cm; hatlar arası genetik farklılık da doğrulanmış. Hangi ifade veriye en uygundur?"
+ },
+ {
+  "from": "KalıtsalX tipinden 40 bireyin 30’u, S tipinden 60 bireyin 20’si üreyebiliyor. Üreyen herX 2, herS 4 yavru bırakıyor. Hangi tip toplamda daha çok yavru katkısı verir?",
+  "to": "Kalıtsal X tipinden 40 bireyin 30’u, S tipinden 60 bireyin 20’si üreyebiliyor. Üreyen her X 2, her S 4 yavru bırakıyor. Hangi tip toplamda daha çok yavru katkısı verir?"
+ },
+ {
+  "from": "Ortak ortamda kalıtsal farkı kabul edilenX hattının verim/kuraklık puanı 10/3, Y’nin 6/9. Yalnız verimi hedefleyerekX seçiliyor. Hangisi doğrudur?",
+  "to": "Ortak ortamda kalıtsal farkı kabul edilen X hattının verim/kuraklık puanı 10/3, Y’nin 6/9. Yalnız verimi hedefleyerek X seçiliyor. Hangisi doğrudur?"
+ },
+ {
+  "from": "X her özellikteY’den yüksektir.",
+  "to": "X her özellikte Y’den yüksektir."
+ },
+ {
+  "from": "Verim içinX seçilir; kuraklık puanındaY daha yüksektir.",
+  "to": "Verim için X seçilir; kuraklık puanında Y daha yüksektir."
+ },
+ {
+  "from": "P veQ’da zorunlu yalnız mayoz yapılır.",
+  "to": "P ve Q’da zorunlu yalnız mayoz yapılır."
  }
 ]

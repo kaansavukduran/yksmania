@@ -394,5 +394,265 @@
  {
   "from": "Okul eşleştirmesi ile kişisel kesin tanıyı ayır.",
   "to": "Kavramsal eşleştirme ile kişisel kesin tanıyı ayır."
+ },
+ {
+  "from": "Üç serbest birimin atomlarını C18H36O18 olarak topla. İki yeni bağdan ayrılan toplam suyu 2H₂O=H4O2 yaz. Karbonu koruyup H ve O’yu çıkar: C18H32O16. Başlangıç 3×formül=C18H36O18; iki sudakiH 4O2 çıkarılınca C18H32O16 kalır.",
+  "to": "Üç serbest birimin atomlarını C18H36O18 olarak topla. İki yeni bağdan ayrılan toplam suyu 2H₂O=H4O2 yaz. Karbonu koruyup H ve O’yu çıkar: C18H32O16. Başlangıç 3×formül=C18H36O18; iki sudaki H4O2 çıkarılınca C18H32O16 kalır."
+ },
+ {
+  "from": "Konumları soldan 1–5 numarala ve iki diziyi alt alta koy. İlk, dördüncü ve beşinci konumlar aynıdır; ikinciA/G, üçüncüG/A farklıdır. Bileşim iki dizide de 2A,2G,1S olsa da fark 2 ve 3 konumlarındadır.",
+  "to": "Konumları soldan 1–5 numarala ve iki diziyi alt alta koy. İlk, dördüncü ve beşinci konumlar aynıdır; ikinci A/G, üçüncü G/A farklıdır. Bileşim iki dizide de 2A,2G,1S olsa da fark 2 ve 3 konumlarındadır."
+ },
+ {
+  "from": "Açık zincirlerde toplamB=N−c bağıntısını kur. 31=36−c olduğundan c=36−31. Ayrı zincir sayısı 5’tir; uzunluklarının eşit olması gerekmez.",
+  "to": "Açık zincirlerde toplam B=N−c bağıntısını kur. 31=36−c olduğundan c=36−31. Ayrı zincir sayısı 5’tir; uzunluklarının eşit olması gerekmez."
+ },
+ {
+  "from": "Açık zincirlerde toplamB=N−c bağıntısını kur.",
+  "to": "Açık zincirlerde toplam B=N−c bağıntısını kur."
+ },
+ {
+  "from": "Metalsiz hız 1’i kontrol 10 ile karşılaştır. YalnızMn²⁺ eklenmesi kontrol hızını geri getirmiştir; Mg²⁺ getirmemiştir. Bu protein ve koşul için yardımcı gereksinimi desteklenir; bütün enzimlere taşınmaz.",
+  "to": "Metalsiz hız 1’i kontrol 10 ile karşılaştır. Yalnız Mn²⁺ eklenmesi kontrol hızını geri getirmiştir; Mg²⁺ getirmemiştir. Bu protein ve koşul için yardımcı gereksinimi desteklenir; bütün enzimlere taşınmaz."
+ },
+ {
+  "from": "Kök yalnız belirtilen rekabetçi mekanizmayı kabul ediyor. Aynı etkin enzimde üst sınır korunabilirken sonluS’de bağlanma rekabeti hızı azaltır. Bu koşullu sonuç başka mekanizmalara veya denge miktarına taşınmaz.",
+  "to": "Kök yalnız belirtilen rekabetçi mekanizmayı kabul ediyor. Aynı etkin enzimde üst sınır korunabilirken sonlu S’de bağlanma rekabeti hızı azaltır. Bu koşullu sonuç başka mekanizmalara veya denge miktarına taşınmaz."
+ },
+ {
+  "from": "A veD yağda, B12 veC suda çözünen gruptadır. Yağda 2+3=5; suda 4+5=9 kart bulunur. Kart adetleri toplanır; ortak gruptaki vitaminlerin görevlerinin aynı olduğu sonucu çıkmaz.",
+  "to": "A ve D yağda, B12 ve C suda çözünen gruptadır. Yağda 2+3=5; suda 4+5=9 kart bulunur. Kart adetleri toplanır; ortak gruptaki vitaminlerin görevlerinin aynı olduğu sonucu çıkmaz."
+ },
+ {
+  "from": "A veD yağda, B12 veC suda çözünen gruptadır.",
+  "to": "A ve D yağda, B12 ve C suda çözünen gruptadır."
+ },
+ {
+  "from": "Su tutulunca X40+20=60, Y30+40=70. Su dökülünce X40, Y30 kalır. Su kararı sıralamayı değiştirir: önceY, sonraX; bu kimyasal kaybı geriye dönük değiştirmez.",
+  "to": "Su tutulunca X40+20=60, Y30+40=70. Su dökülünce X40, Y30 kalır. Su kararı sıralamayı değiştirir: önce Y, sonra X; bu kimyasal kaybı geriye dönük değiştirmez."
+ },
+ {
+  "from": "Tablo iki farklı öncül ve iki farklı ürün eşlemesi verir. Ortak B grubu kimyasal özdeşlik veya görevlerin tamamen eşliği değildir. B2→FAD veB3→NAD ayrımı korunur; yardımcılar enzim proteininden ayrı değerlendirilir.",
+  "to": "Tablo iki farklı öncül ve iki farklı ürün eşlemesi verir. Ortak B grubu kimyasal özdeşlik veya görevlerin tamamen eşliği değildir. B2→FAD ve B3→NAD ayrımı korunur; yardımcılar enzim proteininden ayrı değerlendirilir."
+ },
+ {
+  "from": "B2 ileB3’ün her eksikliği diğerinin sınırsız verilmesiyle giderilir.",
+  "to": "B2 ile B3’ün her eksikliği diğerinin sınırsız verilmesiyle giderilir."
+ },
+ {
+  "from": "FAD veNAD protein enzimin tamamının adlarıdır.",
+  "to": "FAD ve NAD protein enzimin tamamının adlarıdır."
+ },
+ {
+  "from": "B2 veB3 aynı tek molekülün iki zorunlu eş adıdır.",
+  "to": "B2 ve B3 aynı tek molekülün iki zorunlu eş adıdır."
+ },
+ {
+  "from": "X emilimi 80×0,25=20, Y emilimi 80×0,50=40 birimdir. EmilenY/X=40/20=2. Başlangıç miktarları 80 ve 80 eşit kalır; emilim oranı ile besinde bulunan miktarı ayır.",
+  "to": "X emilimi 80×0,25=20, Y emilimi 80×0,50=40 birimdir. Emilen Y/X=40/20=2. Başlangıç miktarları 80 ve 80 eşit kalır; emilim oranı ile besinde bulunan miktarı ayır."
+ },
+ {
+  "from": "A ve B adlı iki model tepkime, uygun protein enzimlerini içeriyor. Eksik yardımcılar eklendiğinde yalnızB1 kökenli X, A’yı 0’dan 10’a; yalnızB12 kökenli Y, B’yi 0’dan 8’e çıkarıyor. X, B’yi; Y, A’yı kurtarmıyor. Hangi sonuç uygundur?",
+  "to": "A ve B adlı iki model tepkime, uygun protein enzimlerini içeriyor. Eksik yardımcılar eklendiğinde yalnız B1 kökenli X, A’yı 0’dan 10’a; yalnız B12 kökenli Y, B’yi 0’dan 8’e çıkarıyor. X, B’yi; Y, A’yı kurtarmıyor. Hangi sonuç uygundur?"
+ },
+ {
+  "from": "X veY protein enzimlerin tamamen aynısıdır.",
+  "to": "X ve Y protein enzimlerin tamamen aynısıdır."
+ },
+ {
+  "from": "A veB’nin son ürünü mutlaka aynı moleküldür.",
+  "to": "A ve B’nin son ürünü mutlaka aynı moleküldür."
+ },
+ {
+  "from": "Yalnızaa",
+  "to": "Yalnız aa"
+ },
+ {
+  "from": "Yalnız Aa iki farklı alel taşır; BB veccaynı alelli homozigottur. Büyük harfli olmak heterozigot olmak demek değildir.",
+  "to": "Yalnız Aa iki farklı alel taşır; BB ve cc aynı alelli homozigottur. Büyük harfli olmak heterozigot olmak demek değildir."
+ },
+ {
+  "from": "A/aiki seçenek, B yalnız B, cyalnızcverir; 1 heterozigot lokus 2 gamet türü üretir. Gamet her lokustan tek alel taşır.",
+  "to": "A/a iki seçenek, B yalnız B, c yalnız c verir; 1 heterozigot lokus 2 gamet türü üretir. Gamet her lokustan tek alel taşır."
+ },
+ {
+  "from": "Sab it lokusları çoğaltma.",
+  "to": "Sabit lokusları çoğaltma."
+ },
+ {
+  "from": "ABc, Abc, aBc, ab c",
+  "to": "ABc, Abc, aBc, abc"
+ },
+ {
+  "from": "Bb ve Cc heterozigot iki bağımsız lokustur; 1×2×2=4 çeşit vardır. Üç lokusun tamamınıheterozigot saymak 8 yanlışını doğurur.",
+  "to": "Bb ve Cc heterozigot iki bağımsız lokustur; 1×2×2=4 çeşit vardır. Üç lokusun tamamını heterozigot saymak 8 yanlışını doğurur."
+ },
+ {
+  "from": "Yalnıza taşır",
+  "to": "Yalnız a taşır"
+ },
+ {
+  "from": "AA vebb",
+  "to": "AA ve bb"
+ },
+ {
+  "from": "Tam baskınlıkta Aa×Aa yavrusununaaolma olasılığı nedir?",
+  "to": "Tam baskınlıkta Aa×Aa yavrusunun aa olma olasılığı nedir?"
+ },
+ {
+  "from": "A, a×A, akarede AA, Aa, Aa, aa oluşturur. Dört eş yoldan yalnız biri aa’dır; bu her dört doğumda kesin bir aa garantisi değildir.",
+  "to": "A, a×A, a karede AA, Aa, Aa, aa oluşturur. Dört eş yoldan yalnız biri aa’dır; bu her dört doğumda kesin bir aa garantisi değildir."
+ },
+ {
+  "from": "Aa ebeveyni A/averir, aa ebeveyni yalnıza. Aa baskın ve aa çekinik eş olasılıklıdır; Aa×Aa’nın 3:1 oranı burada kullanılmaz.",
+  "to": "Aa ebeveyni A/a verir, aa ebeveyni yalnız a. Aa baskın ve aa çekinik eş olasılıklıdır; Aa×Aa’nın 3:1 oranı burada kullanılmaz."
+ },
+ {
+  "from": "AA yalnız A, aa yalnızaaktarır; bütün birleşmeler Aa olur.1:2:1 dağılımı Aa×Aa’ya aittir.",
+  "to": "AA yalnız A, aa yalnız a aktarır; bütün birleşmeler Aa olur.1:2:1 dağılımı Aa×Aa’ya aittir."
+ },
+ {
+  "from": "Tamamıaa",
+  "to": "Tamamı aa"
+ },
+ {
+  "from": "Yarı AA yarıaa",
+  "to": "Yarı AA yarı aa"
+ },
+ {
+  "from": "aa olasılığı 1/4 ve bb olasılığı 1/4’tür. Bağımsızlıkla çarpılır:1/16.9/16 iki baskın fenotipe aittir.",
+  "to": "aa olasılığı 1/4 ve bb olasılığı 1/4’tür. Bağımsızlıkla çarpılır: 1/16. 9/16 iki baskın fenotipe aittir."
+ },
+ {
+  "from": "Hiçaa olmaması (3/4)³=27/64’tür; tümleyeni 37/64.27/64 burada aynı zamanda tam bir aa olayının payıdır, en az biri değildir.",
+  "to": "Hiç aa olmaması (3/4)³=27/64’tür; tümleyeni 37/64. 27/64 burada aynı zamanda tam bir aa olayının payıdır, en az biri değildir."
+ },
+ {
+  "from": "Önce hiçbirindeolmama olayını bul.",
+  "to": "Önce hiçbirinde olmama olayını bul."
+ },
+ {
+  "from": "Tümüpembe",
+  "to": "Tümü pembe"
+ },
+ {
+  "from": "Ara fenotip alellerin kalıcı kaynaşması değildir; normal mayozda R ve rayrılır. Gamet diploit genotip taşımaz.",
+  "to": "Ara fenotip alellerin kalıcı kaynaşması değildir; normal mayozda R ve r ayrılır. Gamet diploit genotip taşımaz."
+ },
+ {
+  "from": "M1/2, N1/2",
+  "to": "M 1/2, N 1/2"
+ },
+ {
+  "from": "M1/4, MN 1/2, N1/4",
+  "to": "M 1/4, MN 1/2, N 1/4"
+ },
+ {
+  "from": "MN 1/2, N1/2",
+  "to": "MN 1/2, N 1/2"
+ },
+ {
+  "from": "Genotip olasılıkları değişmeden fenotipe eşleme değişebilir. Tam baskınlık AA ile Aa’yıaynı grupta toplar; eksik baskınlıkta Aa ayrı görünür.",
+  "to": "Genotip olasılıkları değişmeden fenotipe eşleme değişebilir. Tam baskınlık AA ile Aa’yı aynı grupta toplar; eksik baskınlıkta Aa ayrı görünür."
+ },
+ {
+  "from": "Kare alellerin aktarımını modeller. Klinik uygunluk başka antijenler, bileşenlerve laboratuvar testlerini; kimlik ise daha geniş kanıtı gerektirir.",
+  "to": "Kare alellerin aktarımını modeller. Klinik uygunluk başka antijenler, bileşenler ve laboratuvar testlerini; kimlik ise daha geniş kanıtı gerektirir."
+ },
+ {
+  "from": "Standart XX/XY modelinde XY oğlun Xkromozomu hangi ebeveynden gelir?",
+  "to": "Standart XX/XY modelinde XY oğlun X kromozomu hangi ebeveynden gelir?"
+ },
+ {
+  "from": "Her iki ebeveynden iki Xolarak",
+  "to": "Her iki ebeveynden iki X olarak"
+ },
+ {
+  "from": "Ykromozomundan dönüşür",
+  "to": "Y kromozomundan dönüşür"
+ },
+ {
+  "from": "X’e bağlı çekinik model:XᴬXᵃ anne×XᴬY baba. Tüm çocuklar içinde özelliği gösteren çocuk olasılığı?",
+  "to": "X’e bağlı çekinik model: XᴬXᵃ anne×XᴬY baba. Tüm çocuklar içinde özelliği gösteren çocuk olasılığı?"
+ },
+ {
+  "from": "Baba bütün kızlarına Xᵃ, anne Xᴬverir; her kız heterozigot taşıyıcıdır. Oğullara ise babanın Y’si geçer.",
+  "to": "Baba bütün kızlarına Xᵃ, anne Xᴬ verir; her kız heterozigot taşıyıcıdır. Oğullara ise babanın Y’si geçer."
+ },
+ {
+  "from": "Homolog olmayan Y lokusunun aleli babanın Y’siyle XY oğullara gider; XX kızlar Yalmaz. Bu sade modelin dışında kromozom çeşitliliği ayrıca incelenir.",
+  "to": "Homolog olmayan Y lokusunun aleli babanın Y’siyle XY oğullara gider; XX kızlar Y almaz. Bu sade modelin dışında kromozom çeşitliliği ayrıca incelenir."
+ },
+ {
+  "from": "Ykromozomunun aktarım yolunu izle.",
+  "to": "Y kromozomunun aktarım yolunu izle."
+ },
+ {
+  "from": "Bir soy ağacında dolu simge her soruda kesinaaanlamına gelir mi?",
+  "to": "Bir soy ağacında dolu simge her soruda kesin aa anlamına gelir mi?"
+ },
+ {
+  "from": "Dolu işaret incelenen özelliğin görüldüğünü belirtir. Otozomal çekinikteaa, baskında AA veya Aa olabilir; önce model okunur.",
+  "to": "Dolu işaret incelenen özelliğin görüldüğünü belirtir. Otozomal çekinikte aa, baskında AA veya Aa olabilir; önce model okunur."
+ },
+ {
+  "from": "Evet, bütün modellerdeaa",
+  "to": "Evet, bütün modellerde aa"
+ },
+ {
+  "from": "Otozomal çekinikaaebeveynin özelliği göstermeyen çocuğunun genotipi nedir?",
+  "to": "Otozomal çekinik aa ebeveynin özelliği göstermeyen çocuğunun genotipi nedir?"
+ },
+ {
+  "from": "aa ebeveyn yalnızaaktarır. Çocuk etkilenmiyorsa diğer alel Aolmalıdır; AA olamazçünküaa ebeveynden Aa lamaz.",
+  "to": "aa ebeveyn yalnız a aktarır. Çocuk etkilenmiyorsa diğer alel A olmalıdır; AA olamaz çünkü aa ebeveynden A alamaz."
+ },
+ {
+  "from": "Kız babadan bir X alır; iki çekinik X’ten biri babadan gelmelidir. Bu yüzden standart modelde baba XᵃY veözelliği gösterir.",
+  "to": "Kız babadan bir X alır; iki çekinik X’ten biri babadan gelmelidir. Bu yüzden standart modelde baba XᵃY ve özelliği gösterir."
+ },
+ {
+  "from": "Babanın iki Xᵃtaşıması",
+  "to": "Babanın iki Xᵃ taşıması"
+ },
+ {
+  "from": "Özelliği gösterenaa yolunu çıkar.",
+  "to": "Özelliği gösteren aa yolunu çıkar."
+ },
+ {
+  "from": "Üç modelaynıbiyolojikmekanizmadır",
+  "to": "Üç model aynı biyolojik mekanizmadır"
+ },
+ {
+  "from": "Ailedekesinüçfarklıgenvardır",
+  "to": "Ailede kesin üç farklı gen vardır"
+ },
+ {
+  "from": "Modellerden birirastgelekesin seçilmelidir",
+  "to": "Modellerden biri rastgele kesin seçilmelidir"
+ },
+ {
+  "from": "Bir tetratta homologlarAB,AB veab,ab kromatitlerini taşıyor. A-B arasında iki kardeş olmayan kromatitte tek karşılıklı değişim oluyor. Son dört kromatit işareti hangisidir?",
+  "to": "Bir tetratta homologlar AB,AB ve ab,ab kromatitlerini taşıyor. A-B arasında iki kardeş olmayan kromatitte tek karşılıklı değişim oluyor. Son dört kromatit işareti hangisidir?"
+ },
+ {
+  "from": "KatılanAB veab kromatitleri iki işaret arasındaki ucu değiştirinceAb veaB olur. Diğer iki kardeşAB veab kalır; toplamAB,Ab,aB,ab bulunur. İki kromatide düşmek sayıyı kaybeder, bütününü tek bileşime dönüştürmek katılmayanları yok sayar. A,a,B,b ise tek kromatitteki iki işareti ayırır.",
+  "to": "Katılan AB ve ab kromatitleri iki işaret arasındaki ucu değiştirince Ab ve aB olur. Diğer iki kardeş AB ve ab kalır; toplam AB,Ab,aB,ab bulunur. İki kromatide düşmek sayıyı kaybeder, bütününü tek bileşime dönüştürmek katılmayanları yok sayar. A,a,B,b ise tek kromatitteki iki işareti ayırır."
+ },
+ {
+  "from": "A/a veB/b ayrı homolog çiftlerdedir; parça değişimi yok. Bir mayoz I kutbunaA ve b gidiyor. Normal bu tek mayozun dört son ürünündeki işaretler hangisidir?",
+  "to": "A/a ve B/b ayrı homolog çiftlerdedir; parça değişimi yok. Bir mayoz I kutbuna A ve b gidiyor. Normal bu tek mayozun dört son ürünündeki işaretler hangisidir?"
+ },
+ {
+  "from": "İlk kutupAb alırsa karşı kutup aB alır. Mayoz II’de her takımın kardeş kopyaları ayrıldığındanAb,Ab,aB,aB oluşur. Olası genel bileşim sayısı dört olsa da bu tek olayın dört farklı ürün vermesi gerekmez. Diğer seçenekler homolog paylaşımını veya iki işaretin aynı gamette birlikte oluşunu bozar.",
+  "to": "İlk kutup Ab alırsa karşı kutup aB alır. Mayoz II’de her takımın kardeş kopyaları ayrıldığından Ab,Ab,aB,aB oluşur. Olası genel bileşim sayısı dört olsa da bu tek olayın dört farklı ürün vermesi gerekmez. Diğer seçenekler homolog paylaşımını veya iki işaretin aynı gamette birlikte oluşunu bozar."
+ },
+ {
+  "from": "Aynı soy hattında hücre başına DNA8→16→8→4 birim değişiyor. ArtışS evresine, iki düşüş iki tamamlanmış normal bölünmeye ait; arada başka eşlenme yok. Hangi yorum uygundur?",
+  "to": "Aynı soy hattında hücre başına DNA 8→16→8→4 birim değişiyor. Artış S evresine, iki düşüş iki tamamlanmış normal bölünmeye ait; arada başka eşlenme yok. Hangi yorum uygundur?"
+ },
+ {
+  "from": "Standart diploit mayoz örüntüsüyle uyumludur; son ürün DNA’sıG₁’in yarısıdır",
+  "to": "Standart diploit mayoz örüntüsüyle uyumludur; son ürün DNA’sı G₁’in yarısıdır"
  }
 ]

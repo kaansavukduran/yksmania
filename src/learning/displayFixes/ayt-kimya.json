@@ -298,5 +298,25 @@
  {
   "from": "O²⁻, F⁻, Na⁺, Mg²⁺ iyonlarının hepsi 10 elektrondur; Z değerleri 8,9,11,12. Nitel yarıçapı en küçük olan hangisidir?",
   "to": "O²⁻, F⁻, Na⁺, Mg²⁺ iyonlarının hepsi 10 elektrondur; Z değerleri 8, 9, 11, 12. Nitel yarıçapı en küçük olan hangisidir?"
+ },
+ {
+  "from": "İki mol sudan iki mol H₂ oluşur; 0,60 mol su 0,60 mol H₂ verir. O₂ miktarı su molünün yarısıdır:0,30 mol. H veO atomları 0,60 mol su bilançosuyla korunur. Elektroliz dış enerji gerektirir; bu ayrışma enerji üreten hidroliz diye adlandırılmaz.",
+  "to": "İki mol sudan iki mol H₂ oluşur; 0,60 mol su 0,60 mol H₂ verir. O₂ miktarı su molünün yarısıdır: 0,30 mol. H ve O atomları 0,60 mol su bilançosuyla korunur. Elektroliz dış enerji gerektirir; bu ayrışma enerji üreten hidroliz diye adlandırılmaz."
+ },
+ {
+  "from": "LNG veCNG için doğru ayrım hangisidir?",
+  "to": "LNG ve CNG için doğru ayrım hangisidir?"
+ },
+ {
+  "from": "LNG ileLPG her zaman aynı propan/bütan karışımıdır",
+  "to": "LNG ile LPG her zaman aynı propan/bütan karışımıdır"
+ },
+ {
+  "from": "Selüloz bitkisel yapıların polimer bileşenidir. PE, PVC vePET sentetik yaygın polimer örnekleridir. Etanol ise küçük molekül olduğundan doğru doğal polimer selülozdur. Protein, DNA ve nişasta da doğal polimer örnekleri arasında yer alır.",
+  "to": "Selüloz bitkisel yapıların polimer bileşenidir. PE, PVC ve PET sentetik yaygın polimer örnekleridir. Etanol ise küçük molekül olduğundan doğru doğal polimer selülozdur. Protein, DNA ve nişasta da doğal polimer örnekleri arasında yer alır."
+ },
+ {
+  "from": "PE vePVC atıklarının malzeme türüne göre ayrılması açısından hangi yapısal fark doğrudur?",
+  "to": "PE ve PVC atıklarının malzeme türüne göre ayrılması açısından hangi yapısal fark doğrudur?"
  }
 ]

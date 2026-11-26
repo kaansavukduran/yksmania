@@ -17,13 +17,7 @@ import {
   lymphRegions018,
   immunity018,
   immuneAntigens018,
-  type IntestinalCargo018,
-  type DigestiveSignal018,
-  type BiliaryBlock018,
-  type HeartPhase018,
-  type HemostasisStep018,
   type LymphRegion018,
-  type ImmuneAntigen018,
 } from "./forge018Biology";
 import "./forge018Biology.css";
 import { ChoiceSelect } from "../components/ChoiceSelect";

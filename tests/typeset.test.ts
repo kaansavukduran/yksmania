@@ -52,4 +52,9 @@ describe("display typesetting", () => {
     expect(typeset("Statik sürtünme fs,max değerini aşamaz.")).toBe("Statik sürtünme fs,max değerini aşamaz.");
     expect(typeset("ip,makara ve kütle")).toBe("ip, makara ve kütle");
   });
+
+  it("separates the conjunction ve from a following number only", () => {
+    expect(typeset("Kenarlar 5 ve8; 4 tetrat ve16 kromatit, 35° ve15°.")).toBe("Kenarlar 5 ve 8; 4 tetrat ve 16 kromatit, 35° ve 15°.");
+    expect(typeset("Dove2 kodu, ve ve")).toBe("Dove2 kodu, ve ve");
+  });
 });

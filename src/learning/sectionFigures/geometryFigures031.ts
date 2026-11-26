@@ -3,7 +3,6 @@ import {
   ang,
   angleAt,
   circle,
-  centroid,
   circumcenter,
   dim,
   dist,
@@ -50,7 +49,6 @@ function fromSides(bc: number, ab: number, ac: number): V | undefined {
 }
 const tri = (A: V, B: V, C: V, fill?: "a" | "b" | "c" | "muted") =>
   poly([A, B, C], { fill });
-const r0 = (x: number) => Math.round(x);
 const numberLine = (
   y: number,
   from: number,

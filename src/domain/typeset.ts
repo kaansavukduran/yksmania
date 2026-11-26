@@ -23,6 +23,8 @@ const ellipsis = /(?<![.…])\.\.\.(?!\.)/g;
 // (three letters or more, or one of the short Turkish words below).
 const wordSign = new RegExp(`(?<![A-Za-z0-9${L}])([${L}]{2,})(?=[−%]\\d|°C)`, "g");
 const SHORT_WORDS = new Set(["ve", "de", "da", "ki", "ya"]);
+// “5 ve8”, “4 tetrat ve16 kromatit”: the conjunction glued to the next number.
+const veDigit = new RegExp(`(?<![A-Za-z0-9ÇĞİÖŞÜ${L}])ve(?=\\d)`, "g");
 // “alçalıyor;100 m” and “merkezdir.1.013 hPa”: a clause mark glued to the next number.
 const semicolonDigit = /;(?=\d)/g;
 const sentenceDigit = new RegExp(`([${L}]{4,})\\.(?=\\d)`, "g");
@@ -64,6 +66,7 @@ export function typeset(original: string): string {
       word.length <= 2 && KEEP.has(next) ? m : `${word}${mark} `,
     )
     .replace(wordSign, (m, word: string) => (KEEP.has(word) || (word.length < 3 && !SHORT_WORDS.has(word)) ? m : `${word} `))
+    .replace(veDigit, "ve ")
     .replace(semicolonDigit, "; ")
     .replace(sentenceDigit, "$1. ")
     .replace(capitalFunction, (name: string) => name.toLowerCase())

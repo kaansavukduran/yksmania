@@ -1,5 +1,5 @@
 import { ball, poly, pt, seg, txt, v, vec, type El, type FigureDef, type V } from "./figureKit";
-import { axes, box, curve, nf, pad, xtick, ytick } from "./physicsFigures058Kit";
+import { axes, box, curve, nf, pad, xtick } from "./physicsFigures058Kit";
 
 /*
  * AYT Fizik (Forge058) · Su dalgalarında girişim, ışık teorileri (Young ve

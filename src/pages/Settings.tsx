@@ -11,6 +11,7 @@ import { Capacitor } from "@capacitor/core";
 import { useApp } from "../store";
 import { DateInput } from "../components/DateInput";
 import { parseBackup } from "../domain/storage";
+import { localDate } from "../domain/scheduler";
 import { useConfirmationDialog } from "../components/ConfirmationDialog";
 import { ResetProgress } from "../components/ResetProgress";
 import { defaultAppearance, type Settings as SettingsType } from "../domain/model";
@@ -163,7 +164,7 @@ export function Settings({
   async function exportData() {
     try {
       const data = JSON.stringify(state, null, 2);
-      const name = `YKSMania-yedek-${new Date().toISOString().slice(0, 10)}.json`;
+      const name = `YKSMania-yedek-${localDate()}.json`;
       if (Capacitor.isNativePlatform()) {
         const [{ Filesystem, Directory, Encoding }, { Share }] =
           await Promise.all([

@@ -100,7 +100,11 @@ const PLATINUM_MEMBERS: Record<string, string[]> = {
 export const TROPHIES: TrophyDef[] = [...BASE, ...PLATINUM];
 
 const independentRatio = (s: Session) => (s.responses.length ? s.responses.filter((r) => r.correct && !r.assisted).length / s.responses.length : 0);
-const isIndependentExam = (e: ExamSession) => e.mode !== "learning" && !e.helpEnabled;
+// Learning-mode exams always offer help; helpLevels records every opened panel
+// (since before learning mode became the default), so an exam is independent
+// when no panel was opened. Simulation keeps its stricter older rule.
+const isIndependentExam = (e: ExamSession) =>
+  !e.helpLevels?.some((level) => level > 0) && (e.mode === "learning" || !e.helpEnabled);
 
 function examNetRatio(e: ExamSession): number {
   let correct = 0;

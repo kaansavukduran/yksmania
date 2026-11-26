@@ -10,10 +10,6 @@ function integer026(value: unknown, min: number, max: number) {
     throw new RangeError("Değer bu deneyin tam sayı sınırları dışında.");
   return value;
 }
-function boolean026(value: unknown): asserts value is boolean {
-  if (typeof value !== "boolean")
-    throw new TypeError("Koşul doğru veya yanlış olmalı.");
-}
 function countGroups026(
   size: number,
   links: readonly { a: number; b: number; cut: boolean }[],

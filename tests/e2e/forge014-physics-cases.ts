@@ -1,6 +1,6 @@
 import { expect, type Locator } from "@playwright/test";
 import { forge014PhysicsLessons } from "../../src/learning/forge014Physics";
-import { forge014Case, setRange } from "./forge014-case-helper";
+import { forge014Case } from "./forge014-case-helper";
 async function predict(l: Locator, answer: string, reason: string) {
   await l.getByRole("radio", { name: answer, exact: true }).check();
   const reasonBox = l.getByRole("textbox", {

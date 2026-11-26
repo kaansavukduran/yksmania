@@ -33,7 +33,16 @@ export function scaledExamSeconds(exam: "TYT" | "AYT", count: number) {
     (examReference[exam].seconds * count) / examReference[exam].questions,
   );
 }
-function snapshot(lesson: Lesson): ExamItem[] {
+// Built-in lessons are immutable at runtime, so each lesson's exam view is built
+// once. Callers never mutate these shared items: everything that enters state
+// passes through selectExamVariant's copyItem (structuredClone).
+const snapshots = new WeakMap<Lesson, readonly ExamItem[]>();
+function snapshot(lesson: Lesson): readonly ExamItem[] {
+  let items = snapshots.get(lesson);
+  if (!items) snapshots.set(lesson, (items = buildSnapshot(lesson)));
+  return items;
+}
+function buildSnapshot(lesson: Lesson): ExamItem[] {
   const subject = subjects.find((s) => s.id === lesson.subjectId)!;
   return lesson.questions.map((q) => {
     const helpQuestion = practiceQuestionView(clarifiedQuestionView({
@@ -170,10 +179,9 @@ function branchSpec(subject: Subject): ExamSpec | undefined {
   };
 }
 function previewForId(id: string): ExamSpec | undefined {
-  if (id === "mixed-tyt") return mixed("TYT");
-  if (id === "mixed-ayt") return mixed("AYT");
-  const subject = subjects.find((s) => `branch-${s.id}` === id);
-  return subject ? branchSpec(subject) : undefined;
+  // The catalogue is deterministic, so its cached paper is the preview.
+  catalogueCache ??= buildCatalogue();
+  return catalogueCache.find((spec) => spec.id === id);
 }
 let starIndexCache: StarIndex | undefined;
 /** Estimated 1–10 difficulty star of a built-in question (see difficulty.ts). */
@@ -259,7 +267,12 @@ export function mistakeSprintSpec(
     missingSubjects: [],
   };
 }
+let catalogueCache: readonly ExamSpec[] | undefined;
 export function examCatalogue(): ExamSpec[] {
+  catalogueCache ??= buildCatalogue();
+  return [...catalogueCache];
+}
+function buildCatalogue(): ExamSpec[] {
   return [
     mixed("TYT"),
     mixed("AYT"),

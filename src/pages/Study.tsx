@@ -144,6 +144,7 @@ export function Study({ navigate }: { navigate: (s: string) => void }) {
       date: localDate(),
       finishedAt: new Date().toISOString(),
       responses: draft.responses,
+      questionCount,
       kind: draft.reviewId ? "review" : "learn",
       includesTheory: false,
       minutes: Math.min(
@@ -401,7 +402,7 @@ export function Result({
   navigate: (s: string) => void;
   start: (l: Lesson) => void;
 }) {
-  const { state, t, l } = useApp();
+  const { state, t } = useApp();
   const session = state.sessions.find((s) => s.id === id);
   if (!session) return <p>{t("noData")}</p>;
   const lesson = lessonById(session.lessonId)!;

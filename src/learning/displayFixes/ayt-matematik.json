@@ -158,5 +158,25 @@
  {
   "from": "P(x)=0 sıfır polinomunun derecesi için bu okul tanımında hangisi doğrudur?",
   "to": "P(x)=0 sıfır polinomunun derecesi için hangisi doğrudur?"
+ },
+ {
+  "from": "t=1/2 kökleri π/6,5π/6. t=1 köküπ/2; toplam 3 farklı kök. Üç açının sinüsleri 1/2 veya 1; denklem sıfır olur.",
+  "to": "t=1/2 kökleri π/6,5π/6. t=1 kökü π/2; toplam 3 farklı kök. Üç açının sinüsleri 1/2 veya 1; denklem sıfır olur."
+ },
+ {
+  "from": "x=π/6+kπ veya π/2+kπ. Her aileden k=0,1 aralığa girer. Dört iç açıπ/6 veya 5π/6 mod 2π’dir.",
+  "to": "x=π/6+kπ veya π/2+kπ. Her aileden k=0,1 aralığa girer. Dört iç açı π/6 veya 5π/6 mod 2π’dir."
+ },
+ {
+  "from": "Yarıçapı 4 cm çemberde merkez açıπ/3 radyan. Karşılık gelen küçük yay uzunluğu nedir?",
+  "to": "Yarıçapı 4 cm çemberde merkez açı π/3 radyan. Karşılık gelen küçük yay uzunluğu nedir?"
+ },
+ {
+  "from": "sin 5π/6=1/2. Ana çıktı aralığında bu sinüse sahip açıπ/6’dır.",
+  "to": "sin 5π/6=1/2. Ana çıktı aralığında bu sinüse sahip açı π/6’dır."
+ },
+ {
+  "from": "sinB=4/5; hem B hemπ−B adayını dene.",
+  "to": "sinB=4/5; hem B hem π−B adayını dene."
  }
 ]

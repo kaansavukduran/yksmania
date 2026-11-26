@@ -3,7 +3,7 @@ import { useApp } from "../store";
 import { useExploration } from "./useExploration";
 import { HalfPlaneSource011Lab, IntervalArithmeticSource011Lab } from "./BasicInequalitiesSource011Lab";
 import {
-  ineq037Fraction, ineq037Format, ineq037SetLabel, ineq037Test,
+  ineq037Format, ineq037SetLabel, ineq037Test,
   ineq037Transform, ineq037Compound, ineq037Logic, ineq037Budget,
   ineq037Profit, ineq037Parameter, ineq037VariableFactor,
   type Ineq037Fraction, type Ineq037Interval, type Ineq037Operator,

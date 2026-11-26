@@ -334,5 +334,141 @@
  {
   "from": "vortalama = 18/6 = 3 m/s; süratortalama = 30/6 = 5 m/s. Dönüş, yol ile yer değiştirmeyi ayırır.",
   "to": "vortalama = 18/6 = 3 m/s; ortalama sürat = 30/6 = 5 m/s. Dönüş, yol ile yer değiştirmeyi ayırır."
+ },
+ {
+  "from": "Bu çekirdeğin A sıZ den küçüktür",
+  "to": "Bu çekirdeğin A’sı Z’den küçüktür"
+ },
+ {
+  "from": "β=0,6 veγ=1,25 veriliyor. Hareketli saatin kendi konumunda iki tik arası 8 s ise aynı tikler arası laboratuvar süresi kaç s dir?",
+  "to": "β=0,6 ve γ=1,25 veriliyor. Hareketli saatin kendi konumunda iki tik arası 8 s ise aynı tikler arası laboratuvar süresi kaç s dir?"
+ },
+ {
+  "from": "β=1 deγ=1",
+  "to": "β=1 de γ=1"
+ },
+ {
+  "from": "β=0 daγ=0",
+  "to": "β=0 da γ=0"
+ },
+ {
+  "from": "β=0 daγ=1;|β|1 e alttan yaklaşınca γ sınırsız büyür",
+  "to": "β=0 da γ=1;|β|1 e alttan yaklaşınca γ sınırsız büyür"
+ },
+ {
+  "from": "m>0 olsa daγ tüm hızlarda sonlu kalır",
+  "to": "m>0 olsa da γ tüm hızlarda sonlu kalır"
+ },
+ {
+  "from": "Sabit alan veσ yı oran denkleminde sadeleştir.",
+  "to": "Sabit alan ve σ yı oran denkleminde sadeleştir."
+ },
+ {
+  "from": "hc=1240 eV·nm veW=2,5 eV. Eşik dalga boyu kaç nm dir?",
+  "to": "hc=1240 eV·nm ve W=2,5 eV. Eşik dalga boyu kaç nm dir?"
+ },
+ {
+  "from": "Aynı yüzeye λ=400 nm veλ=800 nm ışık gönderiliyor; hc=1240 eV·nm, W=2 eV. Hangisi uygundur?",
+  "to": "Aynı yüzeye λ=400 nm ve λ=800 nm ışık gönderiliyor; hc=1240 eV·nm, W=2 eV. Hangisi uygundur?"
+ },
+ {
+  "from": "400 nm için E 3,1 eV veKmax 3,1−2=1,1 eV dir. 800 nm için E 1,55 eV bulunur. 1,55<2 olduğundan ikinci ışık fotoelektron vermez.",
+  "to": "400 nm için E 3,1 eV ve Kmax 3,1−2=1,1 eV dir. 800 nm için E 1,55 eV bulunur. 1,55<2 olduğundan ikinci ışık fotoelektron vermez."
+ },
+ {
+  "from": "İkisi deKmax 0,45 eV verir",
+  "to": "İkisi de Kmax 0,45 eV verir"
+ },
+ {
+  "from": "400 nm etki yapar Kmax 1,1 eV;800 nm eşik altıdır",
+  "to": "400 nm etki yapar Kmax 1,1 eV; 800 nm eşik altıdır"
+ },
+ {
+  "from": "Aynı yüzeyde eşik üstü ışığın frekansı veη sabit, foton/s sayısı üç kat yapılıyor. İdeal doyma akımı ve kesme gerilimi nasıl değişir?",
+  "to": "Aynı yüzeyde eşik üstü ışığın frekansı ve η sabit, foton/s sayısı üç kat yapılıyor. İdeal doyma akımı ve kesme gerilimi nasıl değişir?"
+ },
+ {
+  "from": "f sabit olduğundan Eγ veW sabit, Kmax aynıdır. Bu nedenle kesme gerilimi aynı kalır. Φ üç kat olduğundanη sabitken doyma akımı üç kat olur.",
+  "to": "f sabit olduğundan Eγ ve W sabit, Kmax aynıdır. Bu nedenle kesme gerilimi aynı kalır. Φ üç kat olduğundan η sabitken doyma akımı üç kat olur."
+ },
+ {
+  "from": "Eşik üstündeki iki tek renkli demetin güçleri veη leri eşit. İkinci demetin foton enerjisi birincinin iki katı. İdeal doyma akımı I 2/I 1 kaçtır?",
+  "to": "Eşik üstündeki iki tek renkli demetin güçleri ve η leri eşit. İkinci demetin foton enerjisi birincinin iki katı. İdeal doyma akımı I 2/I 1 kaçtır?"
+ },
+ {
+  "from": "P veη ortak çarpanlarını sadeleştir.",
+  "to": "P ve η ortak çarpanlarını sadeleştir."
+ },
+ {
+  "from": "Aynı yüzeyde K ve L ışıklarının kesme gerilimleri eşit, doyma akımları farklı. Eşitη varsayımıyla hangisi uygundur?",
+  "to": "Aynı yüzeyde K ve L ışıklarının kesme gerilimleri eşit, doyma akımları farklı. Eşit η varsayımıyla hangisi uygundur?"
+ },
+ {
+  "from": "Vkesme eşitliğinden Kmax değerleri eşittir. Aynı W olduğundan Eγ=W+Kmax de eşittir. Farklı Isat, eşitη altında farklı Φ anlamına gelir.",
+  "to": "Vkesme eşitliğinden Kmax değerleri eşittir. Aynı W olduğundan Eγ=W+Kmax de eşittir. Farklı Isat, eşit η altında farklı Φ anlamına gelir."
+ },
+ {
+  "from": "A ve B yüzeyleri W=2 eV veW=3 eV. Aynı 4 eV fotonlarla kesme büyüklükleri VA veVB nasıl kıyaslanır?",
+  "to": "A ve B yüzeyleri W=2 eV ve W=3 eV. Aynı 4 eV fotonlarla kesme büyüklükleri VA ve VB nasıl kıyaslanır?"
+ },
+ {
+  "from": "0..180° aralığında cosθ en küçük−1 olur. Bu değerθ180° de gerçekleşir. Δλ2×2,43=4,86 pm en büyük kaymadır.",
+  "to": "0..180° aralığında cosθ en küçük−1 olur. Bu değer θ 180° de gerçekleşir. Δλ2×2,43=4,86 pm en büyük kaymadır."
+ },
+ {
+  "from": "Compton modelinde Eilk, Eson veKe birlikte bütçededir. Dış fotoelektrikte soğurulan foton enerjisi W veK ye dağılır. Ayrım yalnız yüksek-düşük enerji etiketi değil etkileşim ve son durum farkıdır.",
+  "to": "Compton modelinde Eilk, Eson ve Ke birlikte bütçededir. Dış fotoelektrikte soğurulan foton enerjisi W ve K ye dağılır. Ayrım yalnız yüksek-düşük enerji etiketi değil etkileşim ve son durum farkıdır."
+ },
+ {
+  "from": "Hızlandırılmış elektronunp veλ değişimini izle.",
+  "to": "Hızlandırılmış elektronun p ve λ değişimini izle."
+ },
+ {
+  "from": "İkiμL yi üs içinde topla.",
+  "to": "İki μL yi üs içinde topla."
+ },
+ {
+  "from": "Bir satırdakiμL değerleri(0,1;0,9), diğer olası düzende(0,4;0,6). Tek yatay projeksiyon için ne söylenir?",
+  "to": "Bir satırdaki μL değerleri (0,1; 0,9), diğer olası düzende (0,4; 0,6). Tek yatay projeksiyon için ne söylenir?"
+ },
+ {
+  "from": "İki yöntem deX ışını kullanabilir. Tek projeksiyon birikimli yol bilgisi taşır. BT çok yönlü verileri işleyerek kesit çıkarır; fark dalga türü değil ölçüm düzenidir.",
+  "to": "İki yöntem de X ışını kullanabilir. Tek projeksiyon birikimli yol bilgisi taşır. BT çok yönlü verileri işleyerek kesit çıkarır; fark dalga türü değil ölçüm düzenidir."
+ },
+ {
+  "from": "Elektriksel işaret kristal düzenini etkiler. Polarizörlerle birlikte geçen ışık miktarı değişir. Arka aydınlatma LED olabilir; buLCD adını geçersiz kılmaz.",
+  "to": "Elektriksel işaret kristal düzenini etkiler. Polarizörlerle birlikte geçen ışık miktarı değişir. Arka aydınlatma LED olabilir; bu LCD adını geçersiz kılmaz."
+ },
+ {
+  "from": "Elektriksel deşarj gazı uyarıp iyonlaştırabilir. Gazdan çıkan UV fosfor katmanına ulaşır. Fosfor görünür renk verir; buLCD geçirgenlik kontrolünden farklıdır.",
+  "to": "Elektriksel deşarj gazı uyarıp iyonlaştırabilir. Gazdan çıkan UV fosfor katmanına ulaşır. Fosfor görünür renk verir; bu LCD geçirgenlik kontrolünden farklıdır."
+ },
+ {
+  "from": "Üreteç işaretlerini P veN ye eşleştir.",
+  "to": "Üreteç işaretlerini P ve N ye eşleştir."
+ },
+ {
+  "from": "Eg=2 eV ideal yarı iletkene λ=500 nm ışık geliyor; hc=1240 eV·nm. Tek foton bant geçişi enerji koşulu veEg üstü enerji nedir?",
+  "to": "Eg=2 eV ideal yarı iletkene λ=500 nm ışık geliyor; hc=1240 eV·nm. Tek foton bant geçişi enerji koşulu ve Eg üstü enerji nedir?"
+ },
+ {
+  "from": "Ortam hız değişimini frekans değişimi sanmadanλ hesabına taşı.",
+  "to": "Ortam hız değişimini frekans değişimi sanmadan λ hesabına taşı."
+ },
+ {
+  "from": "V aynı, d iki kat; E yarıya iner. İzoleQ sabit deneyi farklı koşuldur ve burada varsayılmaz.",
+  "to": "V aynı, d iki kat; E yarıya iner. İzole Q sabit deneyi farklı koşuldur ve burada varsayılmaz."
+ },
+ {
+  "from": "V sabitken U, C ile doğru orantılıdır ve iki kat olur. İzoleQ sabit deneyinin tersidir.",
+  "to": "V sabitken U, C ile doğru orantılıdır ve iki kat olur. İzole Q sabit deneyinin tersidir."
+ },
+ {
+  "from": "İzoleQ, A,ε aynı olduğundan E aynı; V=Ed iki kat olabilir. BağlıV sabit deneyinin E=V/d karşılaştırması burada uygulanmaz.",
+  "to": "İzole Q, A,ε aynı olduğundan E aynı; V=Ed iki kat olabilir. Bağlı V sabit deneyinin E=V/d karşılaştırması burada uygulanmaz."
+ },
+ {
+  "from": "PaydaΣm sıfır.",
+  "to": "Payda Σm sıfır."
  }
 ]

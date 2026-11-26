@@ -1,4 +1,4 @@
-import { txt, type Lesson, type Question } from "../domain/model";
+import { type Lesson } from "../domain/model";
 import type { LessonGuide } from "./guides/types";
 function integerC026(
   value: unknown,

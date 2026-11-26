@@ -666,5 +666,173 @@
  {
   "from": "Yalnız elektromanyetizma — yalnız termodinamik",
   "to": "Yalnız elektromanyetizma, yalnız termodinamik"
+ },
+ {
+  "from": "İdeal bir kılcalda h=2γcosθ/(ρgr). γ=0,05 N/m,ρ=1000 kg/m³, g=10 m/s², r=1 mm vecosθ=−0,5 verilmiş. h’nin işaretli değeri nedir?",
+  "to": "İdeal bir kılcalda h=2γcosθ/(ρgr). γ=0,05 N/m, ρ=1000 kg/m³, g=10 m/s², r=1 mm ve cosθ=−0,5 verilmiş. h’nin işaretli değeri nedir?"
+ },
+ {
+  "from": "Aynıγ, g ve temas açısında ideal bir kılcal deneyinin ikinci hâlinde sıvı özkütlesi 2 kat, tüp yarıçapı ilk değerin 1/4’ü. İlk yükselme pozitif. Son yükselme ilk değerin kaç katıdır?",
+  "to": "Aynı γ, g ve temas açısında ideal bir kılcal deneyinin ikinci hâlinde sıvı özkütlesi 2 kat, tüp yarıçapı ilk değerin 1/4’ü. İlk yükselme pozitif. Son yükselme ilk değerin kaç katıdır?"
+ },
+ {
+  "from": "Yeniρr çarpanı 2·(1/4)=1/2 katına iner. h ters orantılı olduğundan 1/(1/2)=2 katına çıkar. Kosinüs aynı ve pozitif kaldığı için işaret de pozitif kalır.",
+  "to": "Yeni ρr çarpanı 2·(1/4)=1/2 katına iner. h ters orantılı olduğundan 1/(1/2)=2 katına çıkar. Kosinüs aynı ve pozitif kaldığı için işaret de pozitif kalır."
+ },
+ {
+  "from": "Yeniρr çarpanı 2·(1/4)=1/2 katına iner.",
+  "to": "Yeni ρr çarpanı 2·(1/4)=1/2 katına iner."
+ },
+ {
+  "from": "γ>0,ρ>0, g>0, r>0 olan ideal bir kılcal için temas açısı tam 90° seçilmiş. h=2γcosθ/(ρgr) vecos 90°=0. Hangi sonuç doğrudur?",
+  "to": "γ>0, ρ>0, g>0, r>0 olan ideal bir kılcal için temas açısı tam 90° seçilmiş. h=2γcosθ/(ρgr) ve cos 90°=0. Hangi sonuç doğrudur?"
+ },
+ {
+  "from": "γkesin 0’dır.",
+  "to": "γ kesin 0’dır."
+ },
+ {
+  "from": "h>0; çünküγpozitif.",
+  "to": "h>0; çünkü γ pozitif."
+ },
+ {
+  "from": "h=0;γpozitif kalabilir.",
+  "to": "h=0; γ pozitif kalabilir."
+ },
+ {
+  "from": "Bir deneyde iki sıvı içinγ,ρ, temas açısı ve tüp yarıçapı aynı; viskoziteleri farklı. İdeal h=2γcosθ/(ρgr) yalnız statik denge yüksekliğini veriyor. Bu veriyle hangi kıyas kurulabilir?",
+  "to": "Bir deneyde iki sıvı için γ, ρ, temas açısı ve tüp yarıçapı aynı; viskoziteleri farklı. İdeal h=2γcosθ/(ρgr) yalnız statik denge yüksekliğini veriyor. Bu veriyle hangi kıyas kurulabilir?"
+ },
+ {
+  "from": "Denge bağıntısındakiγ,ρ,θ, raynı olduğundan aynı yerelgile denge yüksekliği aynıdır. Viskozite ve zamana bağlı akış bu bağıntının içinde değildir. Dolayısıyla dengeye aynı sürede veya aynı hızla ulaşılacağı söylenemez.",
+  "to": "Denge bağıntısındaki γ, ρ, θ, r aynı olduğundan aynı yerel g ile denge yüksekliği aynıdır. Viskozite ve zamana bağlı akış bu bağıntının içinde değildir. Dolayısıyla dengeye aynı sürede veya aynı hızla ulaşılacağı söylenemez."
+ },
+ {
+  "from": "Denge bağıntısındakiγ,ρ,θ, raynı olduğundan aynı yerelgile denge yüksekliği aynıdır.",
+  "to": "Denge bağıntısındaki γ, ρ, θ, r aynı olduğundan aynı yerel g ile denge yüksekliği aynıdır."
+ },
+ {
+  "from": "Sabitγvarsayılan bir arayüzün alanı 5 cm² artırılırken en az tersinir dış iş 10μJ ölçülüyor. W=γΔA ve 1 cm²=10⁻⁴ m². γkaç N/m’dir?",
+  "to": "Sabit γ varsayılan bir arayüzün alanı 5 cm² artırılırken en az tersinir dış iş 10 μJ ölçülüyor. W=γΔA ve 1 cm²=10⁻⁴ m². γ kaç N/m’dir?"
+ },
+ {
+  "from": "10μJ=10×10⁻⁶ J; 5 cm²=5×10⁻⁴ m². γ=(10×10⁻⁶)/(5×10⁻⁴)=2×10⁻² J/m². Sonuç 0,02 N/m olur.",
+  "to": "10 μJ=10×10⁻⁶ J; 5 cm²=5×10⁻⁴ m². γ=(10×10⁻⁶)/(5×10⁻⁴)=2×10⁻² J/m². Sonuç 0,02 N/m olur."
+ },
+ {
+  "from": "10μJ=10×10⁻⁶ J; 5 cm²=5×10⁻⁴ m².",
+  "to": "10 μJ=10×10⁻⁶ J; 5 cm²=5×10⁻⁴ m²."
+ },
+ {
+  "from": "Yüzey gerilimi için N/m veJ/m² birimleri kullanılıyor.1 J=1 N·m bilgisine göre hangi açıklama doğrudur?",
+  "to": "Yüzey gerilimi için N/m ve J/m² birimleri kullanılıyor. 1 J=1 N·m bilgisine göre hangi açıklama doğrudur?"
+ },
+ {
+  "from": "J/m²=(N·m)/m². Bir m sadeleşinceN/m kalır. Bu eşitlik, sabitγiçin alan oluşturmaya gereken enerjiyi kuvvet/uzunluk katsayısıyla bağlar.",
+  "to": "J/m²=(N·m)/m². Bir m sadeleşince N/m kalır. Bu eşitlik, sabit γ için alan oluşturmaya gereken enerjiyi kuvvet/uzunluk katsayısıyla bağlar."
+ },
+ {
+  "from": "N/m veJ/m² sayısal olarak her zaman 1000 kat farklıdır.",
+  "to": "N/m ve J/m² sayısal olarak her zaman 1000 kat farklıdır."
+ },
+ {
+  "from": "Aynı sıvı iki farklı yüzey kaplamalı, eşit yarıçaplı düşey tüpe konuyor. γ,ρ, gaynı; ilkindeθ=60°, ikincideθ=120°; cos 60°=+0,5, cos 120°=−0,5. İdeal kılcal modelde iki düzey farkı nasıl ilişkilidir?",
+  "to": "Aynı sıvı iki farklı yüzey kaplamalı, eşit yarıçaplı düşey tüpe konuyor. γ, ρ, g aynı; ilkinde θ=60°, ikincide θ=120°; cos 60°=+0,5, cos 120°=−0,5. İdeal kılcal modelde iki düzey farkı nasıl ilişkilidir?"
+ },
+ {
+  "from": "İşaretliΔx=8·3−2·3=18 m. Toplam yol 24+6=30 m; toplam süre 6 s. Ortalama hız 3 m/s; ortalama sürat 5 m/s.",
+  "to": "İşaretli Δx=8·3−2·3=18 m. Toplam yol 24+6=30 m; toplam süre 6 s. Ortalama hız 3 m/s; ortalama sürat 5 m/s."
+ },
+ {
+  "from": "İşaretliΔx=8·3−2·3=18 m.",
+  "to": "İşaretli Δx=8·3−2·3=18 m."
+ },
+ {
+  "from": "A veB için aynı saatle xA=−6+4 t, xB=12−2 t metre bağıntıları 0–5 s boyunca verilmiş. Karşılaşma zamanı ve konumu hangisidir?",
+  "to": "A ve B için aynı saatle xA=−6+4 t, xB=12−2 t metre bağıntıları 0–5 s boyunca verilmiş. Karşılaşma zamanı ve konumu hangisidir?"
+ },
+ {
+  "from": "İlkΔv=1·3=+3 m/s. İlk evre son hızı 2+3=+5 m/s. Anlık hız sıçraması verilmediğinden ikinci evre ilk hızı da+5 m/s olmalıdır.",
+  "to": "İlk Δv=1·3=+3 m/s. İlk evre son hızı 2+3=+5 m/s. Anlık hız sıçraması verilmediğinden ikinci evre ilk hızı da +5 m/s olmalıdır."
+ },
+ {
+  "from": "İlkΔv=1·3=+3 m/s.",
+  "to": "İlk Δv=1·3=+3 m/s."
+ },
+ {
+  "from": "Dış kuvvet işi 10·3=+30 J. Diğer işler 0 olduğundanΔK=+30 J. Potansiyeller değişmiyorsa mekanik enerji de 30 J artar; sürtünmesizlik dış girişi ortadan kaldırmaz.",
+  "to": "Dış kuvvet işi 10·3=+30 J. Diğer işler 0 olduğundan ΔK=+30 J. Potansiyeller değişmiyorsa mekanik enerji de 30 J artar; sürtünmesizlik dış girişi ortadan kaldırmaz."
+ },
+ {
+  "from": "A veB iki ideal yay, doğal boylarından sırasıyla x ve 2 x kadar uzatılıyor; x>0. Depoladıkları enerji eşit. kB/kA ve bu durumdaki kuvvet büyüklükleri FB/FA nedir?",
+  "to": "A ve B iki ideal yay, doğal boylarından sırasıyla x ve 2 x kadar uzatılıyor; x>0. Depoladıkları enerji eşit. kB/kA ve bu durumdaki kuvvet büyüklükleri FB/FA nedir?"
+ },
+ {
+  "from": "İki yay için kA=100 N/m, kB=200 N/m. Verilen küçükxuzamasında ikisi de Hooke aralığında. Başka malzeme veya esneklik sınırı bilgisi yok. Hangi sonuç zorunludur?",
+  "to": "İki yay için kA=100 N/m, kB=200 N/m. Verilen küçük x uzamasında ikisi de Hooke aralığında. Başka malzeme veya esneklik sınırı bilgisi yok. Hangi sonuç zorunludur?"
+ },
+ {
+  "from": "FA=100 x, FB=200 xolduğundanFB=2 FA. Bu bilgiB’nin aynı uzamada daha büyük kuvvet uyguladığını söyler. Hangi yayın daha büyük maksimum esnek uzamaya dayanacağı verilmemiştir.",
+  "to": "FA=100 x, FB=200 x olduğundan FB=2 FA. Bu bilgi B’nin aynı uzamada daha büyük kuvvet uyguladığını söyler. Hangi yayın daha büyük maksimum esnek uzamaya dayanacağı verilmemiştir."
+ },
+ {
+  "from": "FA=100 x, FB=200 xolduğundanFB=2 FA.",
+  "to": "FA=100 x, FB=200 x olduğundan FB=2 FA."
+ },
+ {
+  "from": "Bkesin iki kat daha uzun esneyebilir.",
+  "to": "B kesin iki kat daha uzun esneyebilir."
+ },
+ {
+  "from": "Aynıx’teBkuvveti 2 kat; esneklik sınırı karşılaştırılamaz.",
+  "to": "Aynı x’te B kuvveti 2 kat; esneklik sınırı karşılaştırılamaz."
+ },
+ {
+  "from": "Potansiyel azalışı 1·10·1=10 J. Direnç kaynaklı iç enerji artışı 1·5=5 J. BaşlangıçK 0; sonK=10−5=5 J.",
+  "to": "Potansiyel azalışı 1·10·1=10 J. Direnç kaynaklı iç enerji artışı 1·5=5 J. Başlangıç K 0; son K=10−5=5 J."
+ },
+ {
+  "from": "Aaygıtı 2 kW ile 5 dakika, Baygıtı 0,5 kW ile 30 dakika sabit çalışıyor. Hangi aygıt daha çok giriş enerjisi tüketir ve EB/EAoranı nedir?",
+  "to": "A aygıtı 2 kW ile 5 dakika, B aygıtı 0,5 kW ile 30 dakika sabit çalışıyor. Hangi aygıt daha çok giriş enerjisi tüketir ve EB/EA oranı nedir?"
+ },
+ {
+  "from": "EA=2·5/60=1/6 kWh. EB=0,5·30/60=1/4 kWh. EB/EA=(1/4)/(1/6)=3/2; Bdaha fazla tüketir.",
+  "to": "EA=2·5/60=1/6 kWh. EB=0,5·30/60=1/4 kWh. EB/EA=(1/4)/(1/6)=3/2; B daha fazla tüketir."
+ },
+ {
+  "from": "En büyükE dik düşmede oluşmalı.",
+  "to": "En büyük E dik düşmede oluşmalı."
+ },
+ {
+  "from": "Φ=4πI=200πlm. Bu toplam akı kayıpsız ortamda çevreleyen kürenin yarıçapından bağımsızdır.",
+  "to": "Φ=4πI=200π lm. Bu toplam akı kayıpsız ortamda çevreleyen kürenin yarıçapından bağımsızdır."
+ },
+ {
+  "from": "Tam katı açı 4πsteradyandır.",
+  "to": "Tam katı açı 4π steradyandır."
+ },
+ {
+  "from": "Bir noktaya bağımsız iki kaynak 24 lx ve 16 lx katkı yapıyor. BirlikteE?",
+  "to": "Bir noktaya bağımsız iki kaynak 24 lx ve 16 lx katkı yapıyor. Birlikte E?"
+ },
+ {
+  "from": "İdeal paralel demette yayılma/soğurma yok, yüzey yönelimi ve demet içindeki konumu aynı. Yüzeyi demet boyunca uzaklaştırmak tek başınaE’yi nasıl etkiler?",
+  "to": "İdeal paralel demette yayılma/soğurma yok, yüzey yönelimi ve demet içindeki konumu aynı. Yüzeyi demet boyunca uzaklaştırmak tek başına E’yi nasıl etkiler?"
+ },
+ {
+  "from": "Ters kare açılarak yayılan noktasal kaynak modelidir. İdeal paralel ve kayıpsız demette uzaklık tek başınaE’yi değiştirmez.",
+  "to": "Ters kare açılarak yayılan noktasal kaynak modelidir. İdeal paralel ve kayıpsız demette uzaklık tek başına E’yi değiştirmez."
+ },
+ {
+  "from": "Her zaman 1/r²azaltır",
+  "to": "Her zaman 1/r² azaltır"
+ },
+ {
+  "from": "Üst ve alt yansıma noktalarının farkıH/2.",
+  "to": "Üst ve alt yansıma noktalarının farkı H/2."
+ },
+ {
+  "from": "Yeni sarım yoğunluğu 2N/(2ℓ)=N/ℓ; I veμ da değişmediğinden B aynıdır. Daha çok sarım tek başına yeterli değildir, sarımların hangi uzunluğa yayıldığı da önemlidir. Bu sonuç uzun ideal bobin yaklaşımı içindir.",
+  "to": "Yeni sarım yoğunluğu 2N/(2ℓ)=N/ℓ; I ve μ da değişmediğinden B aynıdır. Daha çok sarım tek başına yeterli değildir, sarımların hangi uzunluğa yayıldığı da önemlidir. Bu sonuç uzun ideal bobin yaklaşımı içindir."
  }
 ]

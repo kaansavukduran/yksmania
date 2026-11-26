@@ -1,3 +1,9 @@
+# Yazılım denetimi ve Sınavlar hızlandırması · 0.204.0 adayı
+
+yazilim-denetle ve code-optimization becerileriyle main 66b08eb denetlendi. Kanıtlanan dört mantık hatası düzeltildi ve her biri önce kırılan, sonra geçen bir testle korunuyor. İlk öğrenme oturumu geri alınınca dersin 3/7/21 tekrarları artık kalan en erken öğrenme oturumuna bağlanıyor. Yardımsız bitirilen denemeler deneme kupalarına sayılıyor. Eski boyutta açılıp bitirilen soru seti planda ve Bugün ekranında tamamlanmış görünüyor. Yedek dosyasının adı yerel tarihi taşıyor. Bitişik kelimeli kart metinleri görüntüleme onarımlarıyla düzeltildi.
+
+Sınavlar sayfası her açılışta bütün derslerin soru anlık görüntülerini yeniden kuruyordu. Ders başına önbellekle 4x CPU kısıtında tekrar giriş 638–697 ms'den 77–94 ms'ye indi; deneme içerikleri ve seçilen varyantlar aynı kaldı (çıktı parmak izi karşılaştırması). 65 kullanılmayan bildirim silindi ve `noUnusedLocals` açıldı. Kaydedilmiş veriler, tekrar tarihleri ve içerik kayıtları değişmedi.
+
 # Geometride açı, oran ve dilim tabloları · 0.203.0 adayı
 
 TYT Geometri derinleştirmesinin ilk turu Temel açılar ve paralellik, Dik üçgende trigonometrik oranlar ve Daire derslerini ele aldı. Kabul edilmiş rehberler değişmedi; ekler görüntüleme katmanından derse ve Kopya Kağıdına gelir. Eklenen tablolar şunlar: paralel iki doğru ve kesende sekiz açının konumu, gerekçesi ve α=58° için ölçüsü; 30°, 45° ve 60° oranlarının iki özel üçgenin kenarlarından türetilmesi; r=6 cm'de altı merkez açı için kesir, yay, dilim alanı ve dilim çevresi. Satırlar ve paragraflardaki sayılar aynı fonksiyonlardan gelir.
@@ -950,7 +956,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | Bağımsız pedagojik kabul, bütün soru bankası | Doğrulanmadı |
 | Öğretici laboratuvar kabulü, bütün konu envanteri | Doğrulanmadı |
 | Ara hatırlama (mikro ritim): ders · soru | 505 / 510 · %99,02 · 3.052 soru |
-| Gösterim onarımı: soru alanı · ders paragrafı | 962 · 1.634 |
+| Gösterim onarımı: soru alanı · ders paragrafı | 1.132 · 1.634 |
 | Kopya kâğıdı (kısmi aktarım / toplam) | 137 / 517 · %26,50 |
 | Resmî ana başlık · anlatımlı konu · hazır anlatım | 341 · 510 · 510 |
 | İleri ve kaynak soru seti (anlatımı ana konusunda) | 36 |

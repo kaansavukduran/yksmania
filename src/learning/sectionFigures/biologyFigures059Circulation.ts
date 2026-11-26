@@ -1,4 +1,4 @@
-import { circle, fmt, poly, seg, txt, v, vec, type El, type FigureDef, type Tone, type V } from "./figureKit";
+import { circle, fmt, poly, seg, txt, v, type El, type FigureDef, type Tone, type V } from "./figureKit";
 import { arrow, axes, box, curve, hi, pad, rect, vmark } from "./biologyFigures059Kit";
 
 /*
