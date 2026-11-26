@@ -14,12 +14,15 @@ import { depth207Supplements } from "./depth207";
 import { chainSupplement208, depth208Supplements, placeValueSupplement208, wordSupplement208 } from "./depth208";
 import { depth209Supplements } from "./depth209";
 import { depth217Supplements } from "./depth217";
+import { depth220Supplements } from "./depth220";
 import { atomModelSupplement210, depth210Supplements, disciplineSupplement210, pictogramSupplement210 } from "./depth210";
 import { depth213Supplements } from "./depth213";
 import { depth214Supplements } from "./depth214";
 import { depth215Supplements } from "./depth215";
 import { depth216Supplements } from "./depth216";
 import { depth218Supplements } from "./depth218";
+import { depth219Supplements } from "./depth219";
+import { depth221Supplements } from "./depth221";
 import { signedBinomial035 } from "./signedBinomialSource035Model";
 import { statisticsSource037Classes } from "./statisticsSource037Revision";
 
@@ -56,6 +59,9 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
   ...depth216Supplements,
   ...depth217Supplements,
   ...depth218Supplements,
+  ...depth219Supplements,
+  ...depth220Supplements,
+  ...depth221Supplements,
   "genetik-cesitlilik": [{
     title: "Tek mayozun ürünleriyle olası türleri ayır",
     figureTitle: "Tek mayozun ürünleriyle olası türleri ayır",
