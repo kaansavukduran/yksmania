@@ -19,6 +19,7 @@ import { depth213Supplements } from "./depth213";
 import { depth214Supplements } from "./depth214";
 import { depth215Supplements } from "./depth215";
 import { depth216Supplements } from "./depth216";
+import { depth218Supplements } from "./depth218";
 import { signedBinomial035 } from "./signedBinomialSource035Model";
 import { statisticsSource037Classes } from "./statisticsSource037Revision";
 
@@ -54,6 +55,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
   ...depth215Supplements,
   ...depth216Supplements,
   ...depth217Supplements,
+  ...depth218Supplements,
   "genetik-cesitlilik": [{
     title: "Tek mayozun ürünleriyle olası türleri ayır",
     figureTitle: "Tek mayozun ürünleriyle olası türleri ayır",
