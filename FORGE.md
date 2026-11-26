@@ -1,3 +1,9 @@
+# TYT Matematik ve Geometri derinleştirmesi tamamlandı · 0.207.0 adayı
+
+On derse daha tablo, iki çözümlü örnek, Kopya Kağıdı özeti ve bölüm figürü eklendi. Üçgen eşitsizliğinde iki kenar sabitken üçüncü kenarın tam sayı değerleri dar, dik ve geniş diye sınıflandı; dörtgen hiyerarşisinde hangi köşegen koşulunun hangi dörtgeni kesinleştirdiği 5×5 ızgarada kaba kuvvetle sınandı. Denklemde her adımın kökü koruduğu, eşitsizlikte aralık–sayı doğrusu–tam sayı üçlüsü, mutlak değerde merkez ve yarıçap okuması tablolandı. Temel kavramlarda rakam yer değiştirince 11, 9, 99 ve 111 çarpanları; ardışık sayılarda altı listede terim sayısı ve toplam; sayı problemlerinde sözcük sırasının ifadeyi değiştirmesi; kesir problemlerinde dört adımlı harcama; rasyonel sayılarda devirli ondalıktan kesre tek kural eklendi.
+
+0.201.0'dan bu yana 32 TYT Matematik ve Geometri dersi veri tablosu, iki ek çözümlü örnek ve figür aldı; artık bu alanda her ders en az beş çözümlü örnek taşıyor. Altı ve daha fazla örneği olan dersler henüz ek tablo almadı. Görsel keşif öğrenme kaydı, XP veya ustalık yazmaz.
+
 # Üçgen merkezleri, benzerlik, dik üçgen ve dörtgenler · 0.206.0 adayı
 
 Beş TYT Geometri dersine aynı veriden tablo, iki çözümlü örnek, Kopya Kağıdı özeti ve bölüm figürü eklendi. Üçgen merkezlerinde 13–14–15 üçgeninde G, I, H ve O'nun koordinatları ile Euler doğrusu; benzerlikte k oranıyla kenar, çevre ve alanın değişimi; dik üçgende beş üçgende Öklid bağıntıları; dörtgen ailesinde hangi özelliğin hangi dörtgende zorunlu olduğu; yamukta beş ikizkenar yamukta orta taban, alan ve yan kenar. Tablo hücreleri koordinat ve vektör hesabıyla, örnek cevapları bağımsız hesapla sınandı. Kabul edilmiş rehberler ve mevcut ekler korunur. Görsel keşif öğrenme kaydı, XP veya ustalık yazmaz.
@@ -940,8 +946,8 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
 | TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
-| TYT Matematik | 45 / 45 | 45 · 213 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
-| TYT Geometri | 19 / 19 | 19 · 207 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
+| TYT Matematik | 45 / 45 | 45 · 221 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
+| TYT Geometri | 19 / 19 | 19 · 209 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 289 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 226 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
 | TYT Biyoloji | 36 / 36 | 36 · 159 | 515 / 515 · %100,00 | 11 / 36 · %30,56 | 54 soru · 9 kitapçık | 0 |
@@ -955,7 +961,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 150 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 327 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2424** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2434** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
