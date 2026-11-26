@@ -1,3 +1,9 @@
+# TYT Biyoloji'de on ders · 0.209.0 adayı
+
+Altı canlı grubu aynı sütunlarla (hücre düzeni, duvar, beslenme, örnek), bakteri ve arke sekiz özellikte ayırt etme gücüyle, protistler hareket ve beslenmeyle, mantarlar maya–küf–şapkalı–mikoriza örnekleriyle, bitkiler damar–tohum–meyve anahtarıyla tablolandı. Hücre organellerinde zar sayısı, kendi DNA'sı ve bulunduğu hücre tipi; zar taşımacılığında ATP, protein ve net yön; mitozda 2n=4 ve mayozda 2n=8 hücre için evre evre kromozom, kromatit, DNA (C birimi) ve homolog durumu; eşeysiz üreme yollarında mekanizma ve kalıtsal sonuç eklendi. Evre sayıları ayrı bir DNA molekülü benzetimiyle sınanır; derslerin kendi gösterimi (C birimi, "Ozmoz", partenogenezde mayoz) korunur.
+
+Görsel keşif öğrenme kaydı, XP veya ustalık yazmaz.
+
 # TYT Kimya'da dokuz ders · 0.208.0 adayı
 
 TYT Fen derinleştirmesi Kimya'nın en ince dokuz dersiyle başladı. İlk 20 element için katman dağılımı, periyot ve grup Z'den kuralla türetildi; element sınıfları periyot periyot sayıldı; atom çapında her çift için hangi kuralın karar verdiği tablolandı. İyonlaşma enerjisi (kJ/mol, NIST Atomic Spectra Database) ve Pauling elektronegatifliği (CRC Handbook) ölçülmüş değerler olarak tek sabitte tutuldu; periyotta artış, Be→B, N→O, Mg→Al, P→S düşüşleri ve grupta azalış testte veriden sınanır. Kimya disiplinleri meslekleriyle, GHS01–GHS09 piktogramları sinyal sözcükleri ve CLP öncelik kurallarıyla, dört atom modeli kanıt ve sınırlarıyla, Bohr enerji düzeyleri ve 656/486 nm çizgileri formülden hesaplandı.
@@ -956,7 +962,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | TYT Geometri | 19 / 19 | 19 · 209 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 289 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
 | TYT Kimya | 55 / 55 | 55 · 235 | 535 / 535 · %100,00 | 38 / 56 · %67,86 | 63 soru · 9 kitapçık | 0 |
-| TYT Biyoloji | 36 / 36 | 36 · 159 | 515 / 515 · %100,00 | 11 / 36 · %30,56 | 54 soru · 9 kitapçık | 0 |
+| TYT Biyoloji | 36 / 36 | 36 · 169 | 515 / 515 · %100,00 | 11 / 36 · %30,56 | 54 soru · 9 kitapçık | 0 |
 | TYT Tarih | 24 / 24 | 24 · 93 | 390 / 390 · %100,00 | 8 / 24 · %33,33 | 45 soru · 9 kitapçık | 0 |
 | TYT Coğrafya | 40 / 40 | 40 · 176 | 400 / 400 · %100,00 | 9 / 40 · %22,50 | 45 soru · 9 kitapçık | 0 |
 | TYT Felsefe | 17 / 17 | 17 · 70 | 190 / 190 · %100,00 | 5 / 17 · %29,41 | 89 soru · 9 kitapçık | 0 |
@@ -967,7 +973,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 150 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 327 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2443** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2453** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
