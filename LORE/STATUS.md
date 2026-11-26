@@ -20,6 +20,9 @@
 | 0.204.0 | f7e7f74b02eb70358411653ac9f342154b01f5ba |
 | 0.205.0 | 027fbee5955f7aa6ab147f846a5e89524911af71 |
 | 0.206.0 | e6623f221d41b63ba6fc0041fddac28000cf37a2 |
+| 0.207.0 | 6f01dd7cf25c1cba9cca756e5e76328771d9d8e2 |
+| 0.208.0 | a8756c1fd5c11317aa843240d099d272e755ed21 |
+| 0.209.0 | 8ac4e9bd7695081d43e98517ead591990cb5a7bc |
 
 Cloudflare 0.177.0'da kaldı; sahibin kararıyla ertelendi. Android yalnız kişisel imzalı test paketi. İki site arası yedek aktarım testi tamamlanmadı, kabul sayılmaz.
 
@@ -46,14 +49,16 @@ Derinleştirme 0.205.0 (PR 27 CI tamamı yeşil, main CI 45788668180, Pages 4579
 
 Açık konu: CI'da tarayıcı testleri `--workers=2` ile koşarken service worker bazen 30 sn içinde etkinleşmiyor (math.spec, osym-brand044; yerelde 0.203 ve 0.205'te ~3,2 sn). Yeniden denemede geçiyor; CI raporu bu ortamın ağından indirilemedi, kök neden açık.
 
-Derinleştirme 0.206.0 (PR 28 CI tamamı yeşil, merge e6623f2): Üçgen merkezleri, Eşlik-benzerlik, Dik üçgen, Paralelkenar ailesi, Yamuk-deltoid (`geometryDepth205.ts`, test `geometry-depth205`).
+Derinleştirme 0.206.0 (PR 28 CI yeşil; main CI 45798168229 ilk denemede osym-brand044 30 sn bütçesini aştı, ikinci deneme geçti; Pages 45807858968, canlı 118/118): Üçgen merkezleri, Eşlik-benzerlik, Dik üçgen, Paralelkenar ailesi, Yamuk-deltoid (`geometryDepth205.ts`, test `geometry-depth205`).
 
-Derinleştirme 0.207.0 adayı: Üçgen eşitsizliği, Dörtgen hiyerarşisi, Birinci dereceden denklemler, Basit eşitsizlikler, Mutlak değer (`depth207.ts`), Temel kavramlar, Ardışık sayılar, Sayı problemleri, Kesir problemleri, Rasyonel sayılar (`depth208.ts`). 0.201.0'dan beri 32 TYT Mat/Geo dersi tablo + 2 örnek + figür aldı; alandaki her ders en az 5 örnek taşır. 6+ örnekli 32 ders henüz ek tablo almadı.
+Derinleştirme 0.207.0 (PR 29 CI yeşil, main CI 45820596684, Pages 45827485078 build/deploy/verify-published; canlı kabul iki denemede vakaların hepsi geçti (112/112 ve 118/118) yük altında toplam 11 dk sınırı iki kez aşıldı; yük düşünce üçüncü deneme 118/118 PASS): Üçgen eşitsizliği, Dörtgen hiyerarşisi, Birinci dereceden denklemler, Basit eşitsizlikler, Mutlak değer (`depth207.ts`), Temel kavramlar, Ardışık sayılar, Sayı problemleri, Kesir problemleri, Rasyonel sayılar (`depth208.ts`). 0.201.0'dan beri 32 TYT Mat/Geo dersi tablo + 2 örnek + figür aldı; alandaki her ders en az 5 örnek taşır. 6+ örnekli 32 ders henüz ek tablo almadı.
 
-Derinleştirme 0.208.0 adayı (TYT Fen başlangıcı): Kimya'nın 3 örnekli dokuz dersi (`depth209.ts` ölçülmüş IE/EN değerleri NIST/CRC kaynaklı, `depth210.ts` GHS/CLP, atom modelleri, Z=1–20 adresleri). osym-brand044 testi main CI'da iki kez 30 sn bütçesini aştığı için 90 sn'ye çıkarıldı (0.207.0 dalı).
+Derinleştirme 0.208.0 (TYT Fen başlangıcı; PR 30 CI yeşil, main CI 45841292452, Pages 45847935727, canlı 118/118 dördüncü denemede): Kimya'nın 3 örnekli dokuz dersi (`depth209.ts` ölçülmüş IE/EN değerleri NIST/CRC kaynaklı, `depth210.ts` GHS/CLP, atom modelleri, Z=1–20 adresleri). osym-brand044 testi main CI'da iki kez 30 sn bütçesini aştığı için 90 sn'ye çıkarıldı (0.207.0 dalı).
 
-Derinleştirme 0.209.0 adayı: Biyoloji on ders (`depth211.ts` sınıflandırma, `depth212.ts` hücre ve bölünme).
+Derinleştirme 0.209.0 (PR 31; CI'da sw-registration-retry üç kurulum denemesini 5 sn'de bekliyordu, paylaşılan makinede yetişmedi, bekleme 30 sn'ye çıkarıldı, dördüncü deneme olmaması kontrolü aynen; merge 8ac4e9b): Biyoloji on ders (`depth211.ts` sınıflandırma, `depth212.ts` hücre ve bölünme).
+
+Canlı kabul kök nedeni (0.207.0–0.208.0): bu oturum makinesinin diski %98 doluydu (1,1 GB boş). Chromium depolama kotasını boş diske göre ayarladığı için 40 MB çevrimdışı önbellek test sırasında boşaltıldı; çevrimdışı vakalarda içerik paketleri `ERR_FAILED` verdi ve sayfa boş kaldı. Eksik paketlerin hepsi yayındaki önbellek listesinde ve sunucuda vardı. Birleşmiş 17 worktree ve yeniden üretilebilir build çıktıları silinince (3,8 GB boş) aynı test 118/118 geçti. Her turdan sonra dist/ silinir.
 
 Derinleştirme 0.210.0 adayı: Fizik dokuz ders (`depth213.ts` ışık/ayna/kırılma, `depth214.ts` mercek/renk/mıknatıs/genleşme), Biyoloji genetik altı ders (`depth215.ts`).
 
-Sıradaki iş: 0.208.0, 0.209.0, 0.210.0 yayın kapıları; çalışan Kimya turu (asit-baz-tuz, tepkimeler, metaller, hayatımızda asit-baz, sabun-deterjan); kalan 4 örnekli Fen: Kimya 34, Biyoloji 10 ders (ortak ajan özeti scratchpad/depth-brief.md, LORE'a kalıcı kopyası istenirse eklenir); çalışan turlar 0.207 (Üçgen eşitsizliği, Dörtgen hiyerarşisi, Birinci dereceden denklemler, Basit eşitsizlikler, Mutlak değer) ve 0.208 (Temel kavramlar, Ardışık sayılar, Sayı problemleri, Kesir problemleri, Rasyonel sayılar), ardından konu anlatımı, çözümlü örnek ve Kopya Kağıtlarını derinleştirme: TYT Matematik ve Geometri (sıradaki en inceler: Birinci dereceden denklemler 203, ardından kapsam tablosunda 3 örnekli kalan TYT Mat/Geo başlıkları) → TYT Fen → TYT Türkçe ve Sosyal → beş AYT Sayısal ders. Soru bankası şu an öncelik değil.
+Sıradaki iş: 0.209.0 canlı kabulü, 0.210.0 yayın kapısı; hazır bekleyen turlar ekoloji 6 ders (forge/depth-d217) ve asit-baz-tuz 5 ders (forge/depth-d216) → 0.211.0; çalışan turlar Biyoloji son dört ders (omurgalılar, omurgasızlar, virüsler, eşeyli üreme) ve Kimya mol-kütle 5 ders. Kalan 4 örnekli TYT Fen: Kimya 29 ders. Sonra TYT Türkçe ve Sosyal, ardından beş AYT Sayısal ders. Tur kuralları scratchpad/depth-brief.md.
