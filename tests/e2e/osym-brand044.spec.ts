@@ -6,6 +6,8 @@ import { setThemePreference } from "./helpers/theme";
 registerOfflineBootDiagnostics();
 
 test("ÖSYM Mania markası altı temada, büyük yazıda ve çevrimdışı okunur", async ({ page, context }, info) => {
+  // Six themes, three widths and an offline reload exceed the default 30 s on shared CI runners.
+  test.setTimeout(90_000);
   await page.setViewportSize({ width: 320, height: 850 });
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("./#/settings");
