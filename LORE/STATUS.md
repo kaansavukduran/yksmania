@@ -15,6 +15,7 @@
 | 0.199.0 | d2f7ab1a1116fc409f2e732da4cbc616784bb3c6 |
 | 0.200.0 | f0553c368f9765137ba071b8af2b06623adf473b |
 | 0.201.0 | a21d15570ad71332b09cacd0192e3135df7f4466 |
+| 0.202.0 | d098e6c0c0a302e9bc6685af6a1f5e3601e60da1 |
 
 Cloudflare 0.177.0'da kaldı; sahibin kararıyla ertelendi. Android yalnız kişisel imzalı test paketi. İki site arası yedek aktarım testi tamamlanmadı, kabul sayılmaz.
 
@@ -24,6 +25,8 @@ Cloudflare 0.177.0'da kaldı; sahibin kararıyla ertelendi. Android yalnız kiş
 
 Derinleştirme 1. tur 0.201.0 (main CI 45711309496, Pages 45716654360, canlı 118/118): TYT sayma ve olasılık 032–036 her biri +1 veri tablosu, +2 kaba kuvvetle sınanmış çözümlü örnek, Kopya Kağıdında aynı tablo.
 
-Derinleştirme 2. tur (0.202.0 adayı): Tek-çift, Asal, Faktöriyel; kabul edilmiş rehberler parmak iziyle korunduğu için ekler `theorySupplements` görüntüleme katmanında (artık `examples` da alır).
+Derinleştirme 2. tur 0.202.0 (PR 24 CI tamamı yeşil, main CI 45734611237, Pages 45738950338 build/deploy/verify-published, canlı 118/118): Tek-çift, Asal, Faktöriyel; kabul edilmiş rehberler parmak iziyle korunduğu için ekler `theorySupplements` görüntüleme katmanında (artık `examples` da alır).
 
-Sıradaki iş: 0.202.0 yayın kapısı, ardından konu anlatımı, çözümlü örnek ve Kopya Kağıtlarını derinleştirme: TYT Matematik ve Geometri (sıradaki en inceler: Temel açılar 031, trigonometrik oranlar 040, daire 040, Birinci dereceden denklemler 203) → TYT Fen → TYT Türkçe ve Sosyal → beş AYT Sayısal ders. Soru bankası şu an öncelik değil.
+Derinleştirme 3. tur (0.203.0 adayı): Temel açılar 031 (8 açı tablosu), Trigonometrik oranlar 040 (özel açılar iki üçgenden), Daire 040 (r=6 dilim tablosu; mevcut 60° parça eki korunur, yeni ek yanına). Kaynak: `src/learning/geometryDepth203.ts`, test `tests/geometry-depth203.test.ts` (doğru yönleri, Math.sin/cos/tan, sayısal integral).
+
+Sıradaki iş: 0.203.0 yayın kapısı, ardından konu anlatımı, çözümlü örnek ve Kopya Kağıtlarını derinleştirme: TYT Matematik ve Geometri (sıradaki en inceler: Birinci dereceden denklemler 203, ardından kapsam tablosunda 3 örnekli kalan TYT Mat/Geo başlıkları) → TYT Fen → TYT Türkçe ve Sosyal → beş AYT Sayısal ders. Soru bankası şu an öncelik değil.

@@ -478,7 +478,7 @@ AYT;Kimya;Sürdürülebilirlik ve Geri Dönüşüm;detail-461;ayt-surdurulebilir
 AYT;Kimya;Nanoteknoloji ve Bilimsel Gelişmeler;detail-462;ayt-nanoteknoloji-gelismeler;477;18;6;18;6;1;2
 AYT;Biyoloji;Bitkilerde Döllenme ve Çimlenme;detail-356;bitkilerde-dollenme-cimlenme;478;24;8;24;8;1;5
 AYT;Biyoloji;Canlılar ve Çevre;detail-357;canlilar-ve-cevre;479;24;8;24;8;1;3
-TYT;Geometri;Temel açılar ve paralel doğrular;topic-tyt-geo-temel-acilar-031;tyt-geo-temel-acilar-031;480;7;3;5;2;1;7
+TYT;Geometri;Temel açılar ve paralel doğrular;topic-tyt-geo-temel-acilar-031;tyt-geo-temel-acilar-031;480;8;5;6;4;1;7
 TYT;Geometri;Üçgende açılar;topic-tyt-geo-ucgende-acilar-031;tyt-geo-ucgende-acilar-031;481;11;7;8;6;3;16
 TYT;Geometri;Üçgen eşitsizliği ve açı–kenar ilişkisi;topic-tyt-geo-ucgen-esitsizligi-031;tyt-geo-ucgen-esitsizligi-031;482;11;5;7;4;1;4
 TYT;Geometri;Dik üçgen: Pisagor ve Öklid;topic-tyt-geo-dik-ucgen-031;tyt-geo-dik-ucgen-031;483;9;4;6;2;1;6
@@ -500,9 +500,9 @@ TYT;Matematik;Basit eşitsizlikler: sırayı koru, bütün çözümü gör;topic
 TYT;Matematik;Mutlak değer: uzaklık, koşul ve grafiğin mantığı;topic-tyt-mat-mutlak-deger-kaynak-038;tyt-mat-mutlak-deger-kaynak-038;499;34;38;14;3;1;7
 TYT;Matematik;Üslü sayılar: çarpan, koşul ve ölçeğin mantığı;topic-tyt-mat-uslu-sayilar-kaynak-039;tyt-mat-uslu-sayilar-kaynak-039;500;40;53;16;3;1;7
 TYT;Geometri;Çemberde açı, kiriş ve teğet;topic-tyt-geo-cember-aci-040;tyt-geo-cember-aci-040;501;13;3;6;3;2;6
-TYT;Geometri;Daire, daire dilimi, çevre ve alan;topic-tyt-geo-daire-040;tyt-geo-daire-040;502;10;3;4;3;1;4
+TYT;Geometri;Daire, daire dilimi, çevre ve alan;topic-tyt-geo-daire-040;tyt-geo-daire-040;502;11;5;5;5;1;4
 TYT;Geometri;Silindir, koni ve küre;topic-tyt-geo-silindir-koni-kure-040;tyt-geo-silindir-koni-kure-040;503;13;3;7;3;6;8
-TYT;Geometri;Dik üçgende trigonometrik oranlar;topic-tyt-geo-trigonometrik-oranlar-040;tyt-geo-trigonometrik-oranlar-040;504;9;3;4;3;1;0
+TYT;Geometri;Dik üçgende trigonometrik oranlar;topic-tyt-geo-trigonometrik-oranlar-040;tyt-geo-trigonometrik-oranlar-040;504;10;5;5;5;1;0
 TYT;Geometri;Üçgen ve paralelkenarda alan;lesson:alan-donusumleri;alan-donusumleri;505;10;6;10;2;1;5
 TYT;Matematik;Permütasyon;topic-tyt-mat-permutasyon-kaynak-032;tyt-mat-permutasyon-kaynak-032;506;8;5;6;5;2;6
 TYT;Matematik;Tekrarlı permütasyon;topic-tyt-mat-tekrarli-permutasyon-kaynak-033;tyt-mat-tekrarli-permutasyon-kaynak-033;507;7;5;6;5;1;4
