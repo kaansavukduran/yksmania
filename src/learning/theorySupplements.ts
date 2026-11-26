@@ -4,6 +4,7 @@ import { germinationSource002, germinationTotal } from "./germinationSource002";
 import type { GuideSection, WorkedExample } from "./guides/types";
 import { numberDepth202Supplements } from "./numberDepth202";
 import { geometryDepth203Supplements, sectorSupplement203 } from "./geometryDepth203";
+import { geometryDepth205Supplements, quadSupplement205, trapezoidSupplement205 } from "./geometryDepth205";
 import { signedBinomial035 } from "./signedBinomialSource035Model";
 import { statisticsSource037Classes } from "./statisticsSource037Revision";
 
@@ -26,6 +27,7 @@ const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, 
 export const theorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
   ...numberDepth202Supplements,
   ...geometryDepth203Supplements,
+  ...geometryDepth205Supplements,
   "genetik-cesitlilik": [{
     title: "Tek mayozun ürünleriyle olası türleri ayır",
     figureTitle: "Tek mayozun ürünleriyle olası türleri ayır",
@@ -548,7 +550,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
     ],
     summary: "Dış kenar a ise iç kenar (a/2)√2, iç alan a²/2. Dıştaki dört eş üçgenin toplam alanı da a²/2.",
     appendSection: true,
-  }],
+  }, quadSupplement205],
   "kar-zarar-problemleri": [{
     title: "Sabit gider ve birim katkı başabaşı belirler",
     figureTitle: "Sabit gider ve birim katkı başabaşı belirler",
@@ -565,7 +567,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
     ],
     summary: "13 ve 20 yan kenarlar, BD=24. Yarım BD=12’den diğer köşegen parçaları 5 ve 16 çıkar. Alan 252, çevre 66.",
     sheetTitle: "Deltoid",
-  }],
+  }, trapezoidSupplement205],
   "faiz-problemleri": [{
     title: "Ayı ve günü oranla aynı döneme çevir",
     figureTitle: "Ayı ve günü oranla aynı döneme çevir",
