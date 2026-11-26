@@ -179,12 +179,15 @@ test.beforeAll(async ({}, testInfo) => {
       ) as { topicId: string; sections: unknown[]; examples: unknown[] };
       expect(guide).toBeTruthy();
       expect(sheet).toBeTruthy();
+      // The reader shows the accepted guide plus its display supplements.
+      const shown = guides.studyGuide(item.id) as { sections: unknown[]; examples: unknown[] };
+      const shownSheet = sheets.studyCheatSheet(sheet.topicId) as { sections: unknown[]; examples: unknown[] };
       guideMetadata.set(item.id, {
-        sections: guide.sections.length,
-        examples: guide.examples.length,
+        sections: shown.sections.length,
+        examples: shown.examples.length,
         sheetId: sheet.topicId,
-        sheetSections: sheet.sections.length,
-        sheetExamples: sheet.examples.length,
+        sheetSections: shownSheet.sections.length,
+        sheetExamples: shownSheet.examples.length,
       });
     }
   } finally {
