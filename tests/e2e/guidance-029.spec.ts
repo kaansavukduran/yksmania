@@ -29,6 +29,9 @@ let membraneMetadata: {
   sheetRecall: number;
   sheetCount: number;
 };
+// Visible counts include display-layer theory supplements (studyGuide /
+// studyCheatSheet); the raw metadata above stays pinned for preservation.
+let membraneShown: { guideSections: number; guideExamples: number; sheetSections: number; sheetExamples: number };
 const guidance = new Map<string, QuestionGuidance>();
 test.use({ locale: "tr-TR" });
 
@@ -87,6 +90,14 @@ test.beforeAll(async ({}, info) => {
       sheetExamples: sheet.examples.length,
       sheetRecall: sheet.recall.length,
       sheetCount: sheetModule.builtInCheatSheets.size,
+    };
+    const shownGuide = guideModule.studyGuide(guide.id);
+    const shownSheet = sheetModule.studyCheatSheet(sheet.topicId);
+    membraneShown = {
+      guideSections: shownGuide.sections.length,
+      guideExamples: shownGuide.examples.length,
+      sheetSections: shownSheet.sections.length,
+      sheetExamples: shownSheet.examples.length,
     };
   } finally {
     await source.close();
@@ -886,10 +897,10 @@ test.describe("linked membrane guide and built-in sheet", () => {
       await expect(page.locator(".study-title h1")).toHaveText(
         "Hücre zarında madde alışverişleri",
       );
-      await expectGuideSections(page, 10);
+      await expectGuideSections(page, membraneShown.guideSections);
       await expect(
         page.locator(".guide-examples > .worked-example"),
-      ).toHaveCount(4);
+      ).toHaveCount(membraneShown.guideExamples);
       await expect(page.locator(".guide-recall > details")).toHaveCount(5);
       await expect(page.locator(".guide-contents")).toContainText(
         "Yaklaşık 75 dk",
@@ -970,10 +981,10 @@ test.describe("linked membrane guide and built-in sheet", () => {
       );
       await expect(
         page.locator(".cheat-sections > .cheat-section"),
-      ).toHaveCount(10);
+      ).toHaveCount(membraneShown.sheetSections);
       await expect(
         page.locator(".cheat-examples > .worked-example"),
-      ).toHaveCount(2);
+      ).toHaveCount(membraneShown.sheetExamples);
       await expect(page.locator(".cheat-recall-card")).toHaveCount(5);
       await settleRead(page);
       expect(await stored(page)).toEqual(afterTheoryNote);
