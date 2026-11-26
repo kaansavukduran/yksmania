@@ -19,6 +19,7 @@
 | 0.203.0 | 66b08ebbbe7b317ad10cb7093be2710a0f9c08a4 |
 | 0.204.0 | f7e7f74b02eb70358411653ac9f342154b01f5ba |
 | 0.205.0 | 027fbee5955f7aa6ab147f846a5e89524911af71 |
+| 0.206.0 | e6623f221d41b63ba6fc0041fddac28000cf37a2 |
 
 Cloudflare 0.177.0'da kaldı; sahibin kararıyla ertelendi. Android yalnız kişisel imzalı test paketi. İki site arası yedek aktarım testi tamamlanmadı, kabul sayılmaz.
 
@@ -41,12 +42,12 @@ Denetim ve optimizasyon 0.204.0 (PR 26; PR CI'ında guidance-029 yeni "ve"+sayı
 - Performans: Sınavlar sayfası her girişte bütün soru anlık görüntülerini yeniden kuruyordu; ders başına önbellek. 4x CPU kısıtında tekrar giriş 638–697 ms → 77–94 ms (CONFIRMED, iki A/B ölçümü). İlk giriş ~0,5 s kalır. Soğuk ilk açılış 4x'te ~6,1 s (bütün içerik modulepreload), SW ile sıcak açılış 1,45 s; içeriği tembel yüklemek bilinçli statik rota kararına (Chromium çevrimdışı yenileme hatası) aykırı, Katman 3 öneri.
 - Ölü kod: 65 kullanılmayan bildirim silindi; `noUnusedLocals` tsconfig'de açık. knip bulguları (scripts, sw.js, Inter, workbox) yanlış pozitif.
 
-Derinleştirme 0.205.0 (PR 27 CI tamamı yeşil, merge 027fbee): 0.201–0.203 tablolarının on bir bölümüne aynı veriden figür (`sectionFigures/depthFigures200.ts`, test `depth-section-figures`); Çemberde açı, Silindir-koni-küre, Üslü sayılar, Çokgenler, Dik prizmalar, Piramitler tablo + 2 örnek + Kopya Kağıdı + figür (`geometryDepth206.ts`, test `geometry-depth206`). Yerelde check, 413 dosya / 5.786 test, build, Playwright 154/154 (tam figure-overlap-052 ve layout-gate-052 dahil).
+Derinleştirme 0.205.0 (PR 27 CI tamamı yeşil, main CI 45788668180, Pages 45795102686 build/deploy/verify-published, canlı 118/118): 0.201–0.203 tablolarının on bir bölümüne aynı veriden figür (`sectionFigures/depthFigures200.ts`, test `depth-section-figures`); Çemberde açı, Silindir-koni-küre, Üslü sayılar, Çokgenler, Dik prizmalar, Piramitler tablo + 2 örnek + Kopya Kağıdı + figür (`geometryDepth206.ts`, test `geometry-depth206`). Yerelde check, 413 dosya / 5.786 test, build, Playwright 154/154 (tam figure-overlap-052 ve layout-gate-052 dahil).
 
 Açık konu: CI'da tarayıcı testleri `--workers=2` ile koşarken service worker bazen 30 sn içinde etkinleşmiyor (math.spec, osym-brand044; yerelde 0.203 ve 0.205'te ~3,2 sn). Yeniden denemede geçiyor; CI raporu bu ortamın ağından indirilemedi, kök neden açık.
 
-Derinleştirme 0.206.0 adayı: Üçgen merkezleri, Eşlik-benzerlik, Dik üçgen, Paralelkenar ailesi, Yamuk-deltoid (`geometryDepth205.ts`, test `geometry-depth205`).
+Derinleştirme 0.206.0 (PR 28 CI tamamı yeşil, merge e6623f2): Üçgen merkezleri, Eşlik-benzerlik, Dik üçgen, Paralelkenar ailesi, Yamuk-deltoid (`geometryDepth205.ts`, test `geometry-depth205`).
 
 Derinleştirme 0.207.0 adayı: Üçgen eşitsizliği, Dörtgen hiyerarşisi, Birinci dereceden denklemler, Basit eşitsizlikler, Mutlak değer (`depth207.ts`), Temel kavramlar, Ardışık sayılar, Sayı problemleri, Kesir problemleri, Rasyonel sayılar (`depth208.ts`). 0.201.0'dan beri 32 TYT Mat/Geo dersi tablo + 2 örnek + figür aldı; alandaki her ders en az 5 örnek taşır. 6+ örnekli 32 ders henüz ek tablo almadı.
 
-Sıradaki iş: 0.205.0, 0.206.0, 0.207.0 yayın kapıları; TYT Fen çalışıyor (Kimya: atom çapı, elektron ilgisi, element sınıflandırma, iyonlaşma, katman dizilimi; kimya disiplinleri, güvenlik, atom modelleri, periyodik sistem), sonra 4 örnekli 75 Fen dersi; çalışan turlar 0.207 (Üçgen eşitsizliği, Dörtgen hiyerarşisi, Birinci dereceden denklemler, Basit eşitsizlikler, Mutlak değer) ve 0.208 (Temel kavramlar, Ardışık sayılar, Sayı problemleri, Kesir problemleri, Rasyonel sayılar), ardından konu anlatımı, çözümlü örnek ve Kopya Kağıtlarını derinleştirme: TYT Matematik ve Geometri (sıradaki en inceler: Birinci dereceden denklemler 203, ardından kapsam tablosunda 3 örnekli kalan TYT Mat/Geo başlıkları) → TYT Fen → TYT Türkçe ve Sosyal → beş AYT Sayısal ders. Soru bankası şu an öncelik değil.
+Sıradaki iş: 0.206.0 ve 0.207.0 yayın kapıları; TYT Fen çalışıyor (Kimya: atom çapı, elektron ilgisi, element sınıflandırma, iyonlaşma, katman dizilimi; kimya disiplinleri, güvenlik, atom modelleri, periyodik sistem), sonra 4 örnekli 75 Fen dersi; çalışan turlar 0.207 (Üçgen eşitsizliği, Dörtgen hiyerarşisi, Birinci dereceden denklemler, Basit eşitsizlikler, Mutlak değer) ve 0.208 (Temel kavramlar, Ardışık sayılar, Sayı problemleri, Kesir problemleri, Rasyonel sayılar), ardından konu anlatımı, çözümlü örnek ve Kopya Kağıtlarını derinleştirme: TYT Matematik ve Geometri (sıradaki en inceler: Birinci dereceden denklemler 203, ardından kapsam tablosunda 3 örnekli kalan TYT Mat/Geo başlıkları) → TYT Fen → TYT Türkçe ve Sosyal → beş AYT Sayısal ders. Soru bankası şu an öncelik değil.
