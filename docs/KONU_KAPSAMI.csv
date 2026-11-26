@@ -59,7 +59,7 @@ TYT;Kimya;Güçlü etkileşimler / iyonik bağ;detail-153;iyonik-bag-ve-guclu-et
 TYT;Kimya;İyonik bileşiklerin sistematik adlandırılması;detail-154;iyonik-bilesik-adlandirma;58;8;4;8;2;1;4
 TYT;Kimya;Kovalent bağ / polar apolar bağ;detail-155;kovalent-bag-polar-apolar;59;10;5;10;2;1;3
 TYT;Kimya;Moleküllerde polarlık apolarlık;detail-156;molekullerde-polarlik-apolarlik;60;10;5;10;2;1;4
-TYT;Fizik;Genleşme;detail-120;genlesme;61;8;4;8;2;1;4
+TYT;Fizik;Genleşme;detail-120;genlesme;61;9;6;9;4;1;4
 TYT;Fizik;Isı ve Sıcaklık: Hâl Değişimi;detail-121;hal-degisimi;62;9;7;9;4;1;3
 TYT;Matematik;Mutlak Değer;detail-205;mutlak-deger;63;9;7;9;4;1;7
 TYT;Matematik;Üslü Sayılar;detail-206;uslu-sayilar;64;10;6;10;4;1;7
@@ -71,7 +71,7 @@ TYT;Türkçe;İsimler / isim tamlaması;detail-252;isimler-isim-tamlamasi;69;11;
 TYT;Türkçe;Sıfatlar;detail-253;sifatlar;70;11;5;11;2;1;4
 TYT;Türkçe;Zamirler;detail-254;zamirler;71;10;5;10;2;1;4
 TYT;Matematik;Bilimsel Gösterim ve Katsayı;detail-207;bilimsel-gosterim-katsayi;72;11;8;11;2;1;2
-TYT;Fizik;Mıknatıslar ve manyetik alan;detail-124;miknatislar-ve-manyetik-alan;73;8;4;8;2;1;3
+TYT;Fizik;Mıknatıslar ve manyetik alan;detail-124;miknatislar-ve-manyetik-alan;73;9;6;9;4;1;3
 TYT;Tarih;Sultan ve Osmanlı Merkez Teşkilatı;detail-237;sultan-osmanli-merkez-teskilati;74;10;4;10;2;1;3
 TYT;Tarih;Klasik Çağda Osmanlı Toplum Düzeni;detail-238;klasik-cag-osmanli-toplum-duzeni;75;10;4;10;2;1;3
 TYT;Tarih;Değişen Dünya Dengeleri Osmanlı;detail-239;degisen-dunya-dengeleri-osmanli;76;11;4;11;2;1;3
@@ -117,8 +117,8 @@ TYT;Tarih;Atatürkçülük ve Türk İnkılabı;detail-246;ataturkculuk-inkilap;
 TYT;Kimya;Gazlar , hal değişim grafiği , plazma;detail-165;gazlar-hal-degisim-plazma;116;9;4;9;4;1;3
 TYT;Türkçe;Edat / bağlaç / ünlem;detail-256;edat-baglac-unlem;117;10;5;10;5;1;4
 TYT;Biyoloji;Eşeyli Üreme;detail-24;eseyli-ureme;118;8;4;8;4;1;5
-TYT;Biyoloji;Kalıtıma Giriş;detail-25;kalitima-giris;119;8;4;8;4;1;5
-TYT;Biyoloji;Mendel Genetiği;detail-26;mendel-genetigi;120;8;4;8;4;1;5
+TYT;Biyoloji;Kalıtıma Giriş;detail-25;kalitima-giris;119;9;6;9;6;1;5
+TYT;Biyoloji;Mendel Genetiği;detail-26;mendel-genetigi;120;9;6;9;6;1;5
 TYT;Matematik;İşçi Problemleri;detail-217;isci-problemleri;121;16;6;16;6;1;7
 TYT;Matematik;İşçi - Havuz Problemleri;detail-218;havuz-problemleri;122;15;6;15;6;1;7
 TYT;Matematik;Hız Problemleri;detail-219;hiz-problemleri;123;15;6;15;6;1;7
@@ -127,15 +127,15 @@ TYT;Kimya;Doğa ve kimya;detail-166;doga-ve-kimya;125;9;4;9;4;1;3
 TYT;Türkçe;Fiilde çatı;detail-258;fiilde-cati;126;10;5;10;5;1;3
 TYT;Fizik;Su dalgaları;detail-129;su-dalgalari;127;19;16;19;16;1;4
 TYT;Fizik;Ses ve deprem dalgaları;detail-130;ses-deprem-dalgalari;128;11;7;11;7;1;4
-TYT;Fizik;Işık bilgisi;detail-131;isik-bilgisi;129;8;4;8;4;1;3
-TYT;Fizik;Gölge ve yarı gölge;detail-132;golge-yari-golge;130;8;4;8;4;1;3
-TYT;Fizik;Düzlem ayna;detail-133;duzlem-ayna;131;8;4;8;4;1;2
+TYT;Fizik;Işık bilgisi;detail-131;isik-bilgisi;129;9;6;9;6;1;3
+TYT;Fizik;Gölge ve yarı gölge;detail-132;golge-yari-golge;130;9;6;9;6;1;3
+TYT;Fizik;Düzlem ayna;detail-133;duzlem-ayna;131;9;6;9;6;1;2
 TYT;Tarih;İki Savaş Arasındaki Dönemde Türkiye ve Dünya;detail-247;iki-savas-arasi-turkiye-dunya;132;10;4;10;4;2;2
 TYT;Tarih;İki Küresel Savaş Arasında Türkiye ve Dünya;detail-248;kuresel-savaslar-arasinda-turkiye-dunya;133;9;4;9;4;1;1
-TYT;Biyoloji;Mendel'den Sapmalar;detail-27;mendelden-sapmalar;134;8;4;8;4;1;4
-TYT;Biyoloji;Kan Grupları;detail-28;kan-gruplari;135;8;4;8;4;1;4
-TYT;Biyoloji;Eşeyin Belirlenmesi X ve Y Kromozomları;detail-29;eseyin-belirlenmesi;136;8;4;8;4;1;5
-TYT;Biyoloji;Soy Ağaçları;detail-30;soy-agaclari;137;8;4;8;4;1;3
+TYT;Biyoloji;Mendel'den Sapmalar;detail-27;mendelden-sapmalar;134;9;6;9;6;1;4
+TYT;Biyoloji;Kan Grupları;detail-28;kan-gruplari;135;9;6;9;6;1;4
+TYT;Biyoloji;Eşeyin Belirlenmesi X ve Y Kromozomları;detail-29;eseyin-belirlenmesi;136;9;6;9;6;1;5
+TYT;Biyoloji;Soy Ağaçları;detail-30;soy-agaclari;137;9;6;9;6;1;3
 TYT;Tarih;II. Dünya Savaşı Sürecinde ve Sonrasında Türkiye ve Dünya;detail-249;ikinci-dunya-savasi-sonrasi;138;10;4;10;4;1;1
 TYT;Kimya;Su, Hayat ve Çevre Kimyası;detail-167;su-hayat-cevre;139;9;4;9;4;3;2
 TYT;Kimya;Kütle korunumu ve sabit oranlar kanunu;detail-168;kutle-korunumu-sabit-oran;140;9;4;9;4;1;4
@@ -158,14 +158,14 @@ TYT;Biyoloji;Güncel Çevre Sorunları;detail-35;guncel-cevre-sorunlari;156;9;4;
 TYT;Biyoloji;Doğal kaynaklar ve sürdürebilirlik;detail-36;dogal-kaynaklar-surdurulebilirlik;157;9;4;9;4;1;2
 TYT;Coğrafya;Atmosferin Katmanları ve Özellikleri;detail-40;atmosfer-katmanlari;158;8;4;8;4;1;2
 TYT;Coğrafya;Sıcaklık;detail-41;cografya-sicaklik;159;8;6;8;6;1;3
-TYT;Fizik;Küresel aynalar;detail-134;kuresel-aynalar;160;8;4;8;4;1;4
+TYT;Fizik;Küresel aynalar;detail-134;kuresel-aynalar;160;9;6;9;6;1;4
 TYT;Coğrafya;Basınç ve Rüzgarlar;detail-42;basinc-ruzgarlar;161;8;5;8;5;1;3
 TYT;Coğrafya;Nem ve Yağış;detail-43;nem-yagis;162;8;4;8;4;1;3
 TYT;Matematik;Kümeler: Kartezyen Çarpım;detail-223;kartezyen-carpim;163;12;6;12;6;1;5
 TYT;Matematik;Mantık Önerme;detail-224;mantik-onerme;164;14;6;14;6;1;6
-TYT;Fizik;Işığın kırılması;detail-135;isigin-kirilmasi;165;8;4;8;4;1;1
-TYT;Fizik;Mercekler;detail-136;mercekler;166;8;4;8;4;1;4
-TYT;Fizik;Prizmalar ve renkler;detail-137;prizmalar-renkler;167;8;4;8;4;1;2
+TYT;Fizik;Işığın kırılması;detail-135;isigin-kirilmasi;165;9;6;9;6;1;1
+TYT;Fizik;Mercekler;detail-136;mercekler;166;9;6;9;6;1;4
+TYT;Fizik;Prizmalar ve renkler;detail-137;prizmalar-renkler;167;9;6;9;6;1;2
 TYT;Türkçe;Ek fiil;detail-259;ek-fiil;168;8;4;8;4;1;3
 TYT;Türkçe;Fiilimsiler;detail-260;fiilimsiler;169;8;4;8;4;1;4
 AYT;Biyoloji;Genetik Çeşitlilik;detail-284;genetik-cesitlilik;170;9;4;9;4;1;2
