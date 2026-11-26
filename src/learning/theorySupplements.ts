@@ -8,6 +8,7 @@ import {
   circleAngleSupplement206, geometryDepth206Supplements, prismSupplement206, pyramidSupplement206, solidSupplement206,
 } from "./geometryDepth206";
 import { geometryDepth205Supplements, quadSupplement205, trapezoidSupplement205 } from "./geometryDepth205";
+import { depth207Supplements } from "./depth207";
 import { signedBinomial035 } from "./signedBinomialSource035Model";
 import { statisticsSource037Classes } from "./statisticsSource037Revision";
 
@@ -32,6 +33,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
   ...geometryDepth203Supplements,
   ...geometryDepth206Supplements,
   ...geometryDepth205Supplements,
+  ...depth207Supplements,
   "genetik-cesitlilik": [{
     title: "Tek mayozun ürünleriyle olası türleri ayır",
     figureTitle: "Tek mayozun ürünleriyle olası türleri ayır",
