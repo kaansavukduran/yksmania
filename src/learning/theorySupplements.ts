@@ -23,6 +23,10 @@ import { depth216Supplements } from "./depth216";
 import { depth218Supplements } from "./depth218";
 import { depth219Supplements } from "./depth219";
 import { depth221Supplements } from "./depth221";
+import { depth222Supplements } from "./depth222";
+import { depth223Supplements } from "./depth223";
+import { depth224Supplements } from "./depth224";
+import { depth225Supplements, historySupplement225, notationSupplement225 } from "./depth225";
 import { signedBinomial035 } from "./signedBinomialSource035Model";
 import { statisticsSource037Classes } from "./statisticsSource037Revision";
 
@@ -62,6 +66,10 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
   ...depth219Supplements,
   ...depth220Supplements,
   ...depth221Supplements,
+  ...depth222Supplements,
+  ...depth223Supplements,
+  ...depth224Supplements,
+  ...depth225Supplements,
   "genetik-cesitlilik": [{
     title: "Tek mayozun ürünleriyle olası türleri ayır",
     figureTitle: "Tek mayozun ürünleriyle olası türleri ayır",
@@ -347,7 +355,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
       rows: [["Al", "2", "6"], ["S", "3", "9"], ["O", "12", "36"], ["Toplam", "17", "51"]],
       layout: "table",
     },
-  }],
+  }, notationSupplement225],
   "mineraller": [{
     title: "Ham miktarı değil, karşılanan gereksinimi karşılaştır",
     figureTitle: "Ham miktarı değil, karşılanan gereksinimi karşılaştır",
@@ -429,7 +437,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
       ],
       layout: "table",
     },
-  }],
+  }, historySupplement225],
   "canli-ozellikleri": [{
     title: "İki farklı sınıflama ekseni",
     figureTitle: "İki farklı sınıflama ekseni",
