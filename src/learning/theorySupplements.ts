@@ -11,6 +11,7 @@ import { geometryDepth205Supplements, quadSupplement205, trapezoidSupplement205 
 import { depth207Supplements } from "./depth207";
 import { chainSupplement208, depth208Supplements, placeValueSupplement208, wordSupplement208 } from "./depth208";
 import { depth209Supplements } from "./depth209";
+import { depth217Supplements } from "./depth217";
 import { atomModelSupplement210, depth210Supplements, disciplineSupplement210, pictogramSupplement210 } from "./depth210";
 import { signedBinomial035 } from "./signedBinomialSource035Model";
 import { statisticsSource037Classes } from "./statisticsSource037Revision";
@@ -40,6 +41,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
   ...depth208Supplements,
   ...depth209Supplements,
   ...depth210Supplements,
+  ...depth217Supplements,
   "genetik-cesitlilik": [{
     title: "Tek mayozun ürünleriyle olası türleri ayır",
     figureTitle: "Tek mayozun ürünleriyle olası türleri ayır",
