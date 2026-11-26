@@ -23,6 +23,7 @@
 | 0.207.0 | 6f01dd7cf25c1cba9cca756e5e76328771d9d8e2 |
 | 0.208.0 | a8756c1fd5c11317aa843240d099d272e755ed21 |
 | 0.209.0 | 8ac4e9bd7695081d43e98517ead591990cb5a7bc |
+| 0.210.0 | ddd491a8a339a186e72a5e74e405ab150898dbd8 |
 
 Cloudflare 0.177.0'da kaldı; sahibin kararıyla ertelendi. Android yalnız kişisel imzalı test paketi. İki site arası yedek aktarım testi tamamlanmadı, kabul sayılmaz.
 
@@ -55,10 +56,12 @@ Derinleştirme 0.207.0 (PR 29 CI yeşil, main CI 45820596684, Pages 45827485078 
 
 Derinleştirme 0.208.0 (TYT Fen başlangıcı; PR 30 CI yeşil, main CI 45841292452, Pages 45847935727, canlı 118/118 dördüncü denemede): Kimya'nın 3 örnekli dokuz dersi (`depth209.ts` ölçülmüş IE/EN değerleri NIST/CRC kaynaklı, `depth210.ts` GHS/CLP, atom modelleri, Z=1–20 adresleri). osym-brand044 testi main CI'da iki kez 30 sn bütçesini aştığı için 90 sn'ye çıkarıldı (0.207.0 dalı).
 
-Derinleştirme 0.209.0 (PR 31; CI'da sw-registration-retry üç kurulum denemesini 5 sn'de bekliyordu, paylaşılan makinede yetişmedi, bekleme 30 sn'ye çıkarıldı, dördüncü deneme olmaması kontrolü aynen; merge 8ac4e9b): Biyoloji on ders (`depth211.ts` sınıflandırma, `depth212.ts` hücre ve bölünme).
+Derinleştirme 0.209.0 (PR 31; CI'da sw-registration-retry üç kurulum denemesini 5 sn'de bekliyordu, paylaşılan makinede yetişmedi, bekleme 30 sn'ye çıkarıldı, dördüncü deneme olmaması kontrolü aynen; main CI 45861997285, Pages 45867749935, canlı 118/118 ilk denemede): Biyoloji on ders (`depth211.ts` sınıflandırma, `depth212.ts` hücre ve bölünme).
 
-Canlı kabul kök nedeni (0.207.0–0.208.0): bu oturum makinesinin diski %98 doluydu (1,1 GB boş). Chromium depolama kotasını boş diske göre ayarladığı için 40 MB çevrimdışı önbellek test sırasında boşaltıldı; çevrimdışı vakalarda içerik paketleri `ERR_FAILED` verdi ve sayfa boş kaldı. Eksik paketlerin hepsi yayındaki önbellek listesinde ve sunucuda vardı. Birleşmiş 17 worktree ve yeniden üretilebilir build çıktıları silinince (3,8 GB boş) aynı test 118/118 geçti. Her turdan sonra dist/ silinir.
+Canlı kabul kök nedeni (0.207.0–0.208.0): bu oturum makinesinin diski %98 doluydu (1,1 GB boş). Chromium depolama kotasını boş diske göre ayarladığı için 40 MB çevrimdışı önbellek test sırasında boşaltıldı; çevrimdışı vakalarda içerik paketleri `ERR_FAILED` verdi ve sayfa boş kaldı. Eksik paketlerin hepsi yayındaki önbellek listesinde ve sunucuda vardı. Birleşmiş 17 worktree ve yeniden üretilebilir build çıktıları silinince (3,8 GB boş) aynı test 118/118 geçti. Her turdan sonra dist/ silinir. Disk yeniden dolduğunda asıl tüketicinin Vitest 5 modül önbelleği (`node_modules/.vitest-cache`, 7,8 GB) olduğu görüldü; yayın kapısı canlı testten önce 2 saatten eski girdileri siler.
 
-Derinleştirme 0.210.0 adayı: Fizik dokuz ders (`depth213.ts` ışık/ayna/kırılma, `depth214.ts` mercek/renk/mıknatıs/genleşme), Biyoloji genetik altı ders (`depth215.ts`).
+Derinleştirme 0.210.0 (PR 32 CI yeşil, main CI 45870819772, Pages 45876619976, canlı 118/118 ilk denemede): Fizik dokuz ders (`depth213.ts` ışık/ayna/kırılma, `depth214.ts` mercek/renk/mıknatıs/genleşme), Biyoloji genetik altı ders (`depth215.ts`).
 
-Sıradaki iş: 0.209.0 canlı kabulü, 0.210.0 yayın kapısı; hazır bekleyen turlar ekoloji 6 ders (forge/depth-d217) ve asit-baz-tuz 5 ders (forge/depth-d216) → 0.211.0; çalışan turlar Biyoloji son dört ders (omurgalılar, omurgasızlar, virüsler, eşeyli üreme) ve Kimya mol-kütle 5 ders. Kalan 4 örnekli TYT Fen: Kimya 29 ders. Sonra TYT Türkçe ve Sosyal, ardından beş AYT Sayısal ders. Tur kuralları scratchpad/depth-brief.md.
+Derinleştirme 0.211.0 adayı: Kimya asit-baz-tuz beş ders (`depth216.ts`), Biyoloji ekoloji altı ders (`depth217.ts`), omurgalılar, omurgasızlar, virüsler, eşeyli üreme (`depth218.ts`). TYT Biyoloji'de 4 örnekli ders kalmadı.
+
+Sıradaki iş: 0.211.0 yayın kapısı; hazır bekleyen mol-kütle beş ders (forge/depth-d219); çalışan Kimya turları bağlar-adlandırma (5) ve tepkimeler-sınırlayıcı madde (5). Kalan 4 örnekli TYT Fen: Kimya 14 ders (verim, safsızlık, tepkimeli karışım, katlı oranlar, katı kütlesi; hal değişimi ve gazlar; karışım, çözelti, koligatif; su ve doğa; simya, sembolik dil, polimerler). Sonra TYT Türkçe ve Sosyal, ardından beş AYT Sayısal ders. Tur kuralları scratchpad/depth-brief.md.
