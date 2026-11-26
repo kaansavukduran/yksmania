@@ -4,6 +4,7 @@ import { germinationSource002, germinationTotal } from "./germinationSource002";
 import type { GuideSection, WorkedExample } from "./guides/types";
 import { numberDepth202Supplements } from "./numberDepth202";
 import { geometryDepth203Supplements, sectorSupplement203 } from "./geometryDepth203";
+import { depth207Supplements } from "./depth207";
 import { signedBinomial035 } from "./signedBinomialSource035Model";
 import { statisticsSource037Classes } from "./statisticsSource037Revision";
 
@@ -26,6 +27,7 @@ const binomialExample035 = signedBinomial035(3, { multiplier: 1, exponent: 1 }, 
 export const theorySupplements: Readonly<Record<string, readonly TheorySupplement[] | undefined>> = {
   ...numberDepth202Supplements,
   ...geometryDepth203Supplements,
+  ...depth207Supplements,
   "genetik-cesitlilik": [{
     title: "Tek mayozun ürünleriyle olası türleri ayır",
     figureTitle: "Tek mayozun ürünleriyle olası türleri ayır",
