@@ -9,6 +9,7 @@ import {
 } from "./geometryDepth206";
 import { geometryDepth205Supplements, quadSupplement205, trapezoidSupplement205 } from "./geometryDepth205";
 import { depth207Supplements } from "./depth207";
+import { chainSupplement208, depth208Supplements, placeValueSupplement208, wordSupplement208 } from "./depth208";
 import { signedBinomial035 } from "./signedBinomialSource035Model";
 import { statisticsSource037Classes } from "./statisticsSource037Revision";
 
@@ -34,6 +35,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
   ...geometryDepth206Supplements,
   ...geometryDepth205Supplements,
   ...depth207Supplements,
+  ...depth208Supplements,
   "genetik-cesitlilik": [{
     title: "Tek mayozun ürünleriyle olası türleri ayır",
     figureTitle: "Tek mayozun ürünleriyle olası türleri ayır",
@@ -438,7 +440,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
       ],
       layout: "table",
     },
-  }],
+  }, placeValueSupplement208],
   "tyt-geo-acilar-kaynak-pekitirme-032": [{
     title: "Karşı kenarı ve ona ait yüksekliği eşleştir",
     figureTitle: "Karşı kenarı ve ona ait yüksekliği eşleştir",
@@ -530,7 +532,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
       "Son çizimde 10a+4b=4a+7b olur. İki toplamdan da ortak 4a ve 4b çıkarınca 6a=3b kalır. Bir büyük kutu iki küçük kutu kadar yer kaplar. İki düzeni de denetle. 10+4·2=18 ve 4+7·2=18 küçük kutu yeri.",
     ],
     summary: "10a+4b=4a+7b eşitliğinde ortak terimleri çıkar. 6a=3b ve b=2a. İki düzenin kapasitesi 18 küçük kutu yeridir.",
-  }],
+  }, wordSupplement208],
   "yas-problemleri": [{
     title: "Aynı anda herkes aynı süre yaşlanır",
     figureTitle: "Aynı anda herkes aynı süre yaşlanır",
@@ -763,5 +765,5 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
       "120 birimde önce 30 kullan ve 90 bırak. Kalanın 1/3’ü 30 birimdir ve 60 kalır. İkinci kesir ilk bütünün 1/3’ü olsaydı 40 kullanılır, 50 kalırdı. İki şeritte aynı sayıda eş parça var. İkinci kullanımın hangi bütüne ait olduğuna bak.",
     ],
     summary: "120’den önce 1/4, sonra ara kalanın 1/3’ü alınırsa 60 kalır. İki kesir de ilk bütüne aitse 50 kalır.",
-  }],
+  }, chainSupplement208],
 };
