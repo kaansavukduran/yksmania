@@ -1,8 +1,8 @@
 {
-  "version": "0.205.0",
+  "version": "0.206.0",
   "channel": "alpha",
   "notes": {
-    "tr": "Önceki üç turda eklenen on bir tabloya aynı veriden çizilen bölüm figürleri geldi. Çemberde açı, Silindir-koni-küre, Üslü sayılar, Çokgenler, Dik prizmalar ve Piramitler derslerine tablo, ikişer çözümlü örnek, Kopya Kağıdı özeti ve figür eklendi.",
-    "en": "Section figures drawn from the same data now accompany the eleven depth tables, and six more TYT lessons gain a data table, two worked examples, a cheat-sheet summary and a figure."
+    "tr": "TYT Geometri'de Üçgen merkezleri, Eşlik ve benzerlik, Dik üçgen, Paralelkenar ailesi ve Yamuk-deltoid derslerine aynı veriden üretilen birer tablo, ikişer yeni çözümlü örnek, Kopya Kağıdı özeti ve bölüm figürü eklendi.",
+    "en": "TYT Geometry triangle centres, similarity, right triangle, parallelogram family and trapezoid-kite lessons gain a data table, two worked examples, a cheat-sheet summary and a section figure each."
   }
 }
