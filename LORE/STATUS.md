@@ -20,6 +20,7 @@
 | 0.204.0 | f7e7f74b02eb70358411653ac9f342154b01f5ba |
 | 0.205.0 | 027fbee5955f7aa6ab147f846a5e89524911af71 |
 | 0.206.0 | e6623f221d41b63ba6fc0041fddac28000cf37a2 |
+| 0.207.0 | 6f01dd7cf25c1cba9cca756e5e76328771d9d8e2 |
 
 Cloudflare 0.177.0'da kaldı; sahibin kararıyla ertelendi. Android yalnız kişisel imzalı test paketi. İki site arası yedek aktarım testi tamamlanmadı, kabul sayılmaz.
 
@@ -46,9 +47,9 @@ Derinleştirme 0.205.0 (PR 27 CI tamamı yeşil, main CI 45788668180, Pages 4579
 
 Açık konu: CI'da tarayıcı testleri `--workers=2` ile koşarken service worker bazen 30 sn içinde etkinleşmiyor (math.spec, osym-brand044; yerelde 0.203 ve 0.205'te ~3,2 sn). Yeniden denemede geçiyor; CI raporu bu ortamın ağından indirilemedi, kök neden açık.
 
-Derinleştirme 0.206.0 (PR 28 CI tamamı yeşil, merge e6623f2): Üçgen merkezleri, Eşlik-benzerlik, Dik üçgen, Paralelkenar ailesi, Yamuk-deltoid (`geometryDepth205.ts`, test `geometry-depth205`).
+Derinleştirme 0.206.0 (PR 28 CI yeşil; main CI 45798168229 ilk denemede osym-brand044 30 sn bütçesini aştı, ikinci deneme geçti; Pages 45807858968, canlı 118/118): Üçgen merkezleri, Eşlik-benzerlik, Dik üçgen, Paralelkenar ailesi, Yamuk-deltoid (`geometryDepth205.ts`, test `geometry-depth205`).
 
-Derinleştirme 0.207.0 adayı: Üçgen eşitsizliği, Dörtgen hiyerarşisi, Birinci dereceden denklemler, Basit eşitsizlikler, Mutlak değer (`depth207.ts`), Temel kavramlar, Ardışık sayılar, Sayı problemleri, Kesir problemleri, Rasyonel sayılar (`depth208.ts`). 0.201.0'dan beri 32 TYT Mat/Geo dersi tablo + 2 örnek + figür aldı; alandaki her ders en az 5 örnek taşır. 6+ örnekli 32 ders henüz ek tablo almadı.
+Derinleştirme 0.207.0 (PR 29 CI yeşil, main CI 45820596684, Pages 45827485078 build/deploy/verify-published; canlı kabul iki denemede vakaların hepsi geçti (112/112 ve 118/118) ama bu makinede üç ajan aynı anda tarayıcı testi koşarken toplam 11 dk sınırı aşıldı, yük düşünce yeniden koşulacak): Üçgen eşitsizliği, Dörtgen hiyerarşisi, Birinci dereceden denklemler, Basit eşitsizlikler, Mutlak değer (`depth207.ts`), Temel kavramlar, Ardışık sayılar, Sayı problemleri, Kesir problemleri, Rasyonel sayılar (`depth208.ts`). 0.201.0'dan beri 32 TYT Mat/Geo dersi tablo + 2 örnek + figür aldı; alandaki her ders en az 5 örnek taşır. 6+ örnekli 32 ders henüz ek tablo almadı.
 
 Derinleştirme 0.208.0 adayı (TYT Fen başlangıcı): Kimya'nın 3 örnekli dokuz dersi (`depth209.ts` ölçülmüş IE/EN değerleri NIST/CRC kaynaklı, `depth210.ts` GHS/CLP, atom modelleri, Z=1–20 adresleri). osym-brand044 testi main CI'da iki kez 30 sn bütçesini aştığı için 90 sn'ye çıkarıldı (0.207.0 dalı).
 
