@@ -26,6 +26,7 @@
 | 0.210.0 | ddd491a8a339a186e72a5e74e405ab150898dbd8 |
 | 0.211.0 | 94f153536836ec4d4e590396474c058a34614a1a |
 | 0.212.0 | d771f9d5db0de25a3948466faff7a2f367a515f2 |
+| 0.213.0 | 9275e76c1ddae24c8071ef05b7002cf51da7a60f |
 
 Cloudflare 0.177.0'da kaldı; sahibin kararıyla ertelendi. Android yalnız kişisel imzalı test paketi. İki site arası yedek aktarım testi tamamlanmadı, kabul sayılmaz.
 
@@ -68,6 +69,8 @@ Derinleştirme 0.211.0 (PR 33 CI yeşil, main CI 45885264259, Pages 45890756965,
 
 Derinleştirme 0.212.0 (PR 34 CI yeşil, main CI 45893088449, Pages 45898132599, canlı 118/118 ilk denemede): Kimya mol-kütle (`depth219.ts`, izotoplar NIST), bağlar ve adlandırma (`depth220.ts`, Pauling değerleri depth209'dan), tepkimeler ve sınırlayıcı madde (`depth221.ts`, Gauss eleme) on beş ders.
 
-Derinleştirme 0.213.0 adayı: Kimya son on dokuz ders (`depth222.ts` verim/safsızlık/katlı oran, `depth223.ts` gazlar/buhar/kaynama/katılar, `depth224.ts` karışım/derişim/ayırma/su/çevre, `depth225.ts` simya/sembolik dil/polimerler). 0.208.0'dan beri 83 TYT Fen dersi derinleştirildi; her TYT Fen dersi en az 5 örnek taşır.
+Derinleştirme 0.213.0 (PR 35 CI yeşil, main CI 45908596867, Pages 45913044443, canlı 118/118 ilk denemede): Kimya son on dokuz ders (`depth222.ts` verim/safsızlık/katlı oran, `depth223.ts` gazlar/buhar/kaynama/katılar, `depth224.ts` karışım/derişim/ayırma/su/çevre, `depth225.ts` simya/sembolik dil/polimerler). 0.208.0'dan beri 83 TYT Fen dersi derinleştirildi; her TYT Fen dersi en az 5 örnek taşır.
 
-Sıradaki iş: 0.213.0 yayın kapısı; TYT Türkçe ve Sosyal (4 örnekli 88 ders: Türkçe 14, Tarih 17, Coğrafya 36, Felsefe 14, Din 7) çalışıyor — Türkçe dil bilgisi (ek-fiil, fiilimsiler, ögeler, cümle türleri, deyim-atasözü) ve anlam-paragraf (cümlede anlam, paragrafa giriş, yardımcı düşünce, ikiye bölme, akışı bozan cümle). Ardından beş AYT Sayısal ders. Tur kuralları ve Türkçe/Sosyal ek kuralları scratchpad/depth-brief.md.
+Derinleştirme 0.214.0 adayı: TYT Türkçe'nin 4 örnekli on dört dersi (`depth226.ts` dil bilgisi, `depth227.ts` anlam ve paragraf, `depth229.ts` paragraf becerileri). Bütün metinler özgün, paragraf soruları kendi metnini taşır.
+
+Sıradaki iş: 0.214.0 yayın kapısı; çalışan Sosyal turları Tarih (tarih-zaman, Osmanlı kuruluş, askerî teşkilat, medeniyet, merkez teşkilatı), Felsefe (felsefeyi tanıma, düşünme, varlık, bilgi, bilim felsefesi), Coğrafya (dünyanın şekli, coğrafi konum, harita, atmosfer, nem-yağış). Kalan 4 örnekli TYT Sosyal: Tarih 12, Coğrafya 31, Felsefe 9, Din 7. Ardından beş AYT Sayısal ders. Tur kuralları scratchpad/depth-brief.md.
