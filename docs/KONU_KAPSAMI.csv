@@ -13,7 +13,7 @@ TYT;Biyoloji;Canlıların Karakteristik Özellikleri;detail-1;canli-ozellikleri;
 TYT;Biyoloji;Bilimsel Yöntem ve Çalışma Basamakları;detail-2;bilimsel-yontem;12;23;6;23;6;1;4
 TYT;Biyoloji;Mineraller;detail-3;mineraller;13;23;6;23;6;1;3
 TYT;Matematik;Sayı Basamakları;detail-199;sayi-basamaklari;14;18;6;18;6;1;6
-TYT;Tarih;Tarih ve Zaman;detail-226;tarih-zaman;15;16;4;16;4;1;4
+TYT;Tarih;Tarih ve Zaman;detail-226;tarih-zaman;15;17;6;17;6;1;4
 TYT;Tarih;İnsanlığın İlk Dönemleri;detail-227;insanligin-ilk-donemleri;16;20;6;20;6;1;3
 TYT;Fizik;Fizik Bilimine Giriş;detail-114;fizik-bilimine-giris;17;23;8;23;8;1;5
 TYT;Fizik;Madde bilgisi;detail-115;madde-ozkutle;18;25;8;25;8;1;4
@@ -42,13 +42,13 @@ TYT;Matematik;Birinci Dereceden Denklemler;detail-203;birinci-dereceden-denkleml
 TYT;Matematik;Basit Eşitsizlikler;detail-204;basit-esitsizlikler;41;8;7;8;4;1;7
 TYT;Tarih;Yerleşme ve Devletleşme Sürecinde Selçuklu;detail-232;selcuklu-yerlesme-devletlesme;42;20;6;20;6;1;4
 TYT;Kimya;Katman elektron dizilimi;detail-147;katman-elektron-dizilimi;43;7;5;7;4;1;2
-TYT;Tarih;Beylikten Devlete Osmanlı Siyaseti;detail-233;osmanli-kurulus-siyaseti;44;15;4;15;4;1;5
-TYT;Tarih;Devletleşme Sürecinde Savaşçılar ve Askerler;detail-234;osmanli-askeri-teskilat;45;15;4;15;4;1;3
+TYT;Tarih;Beylikten Devlete Osmanlı Siyaseti;detail-233;osmanli-kurulus-siyaseti;44;16;6;16;6;1;5
+TYT;Tarih;Devletleşme Sürecinde Savaşçılar ve Askerler;detail-234;osmanli-askeri-teskilat;45;16;6;16;6;1;3
 TYT;Kimya;Elementlerin sınıflandırılması;detail-148;elementlerin-siniflandirilmasi;46;7;5;7;4;1;3
 TYT;Kimya;Atom çapı karşılaştırma;detail-149;atom-capi-karsilastirma;47;7;5;7;4;1;3
 TYT;Kimya;İyonlaşma enerjisi;detail-150;iyonlasma-enerjisi;48;7;5;7;4;1;3
 TYT;Kimya;Elektron ilgisi / elektronegatiflik / metalik ametalik özellik;detail-151;elektron-ilgisi-elektronegatiflik;49;7;5;7;4;1;3
-TYT;Tarih;Beylikten Devlete Osmanlı Medeniyeti;detail-235;osmanli-medeniyeti;50;16;4;16;4;1;3
+TYT;Tarih;Beylikten Devlete Osmanlı Medeniyeti;detail-235;osmanli-medeniyeti;50;17;6;17;6;1;3
 TYT;Tarih;Dünya Gücü Osmanlı;detail-236;dunya-gucu-osmanli;51;13;5;13;2;2;5
 TYT;Kimya;Kimyasal türler / lewis yapısı;detail-152;kimyasal-turler-lewis;52;12;6;12;2;1;3
 TYT;Fizik;Isı ve sıcaklık;detail-119;isi-ve-sicaklik;53;15;10;15;6;1;4
@@ -72,9 +72,9 @@ TYT;Türkçe;Sıfatlar;detail-253;sifatlar;70;11;5;11;2;1;4
 TYT;Türkçe;Zamirler;detail-254;zamirler;71;10;5;10;2;1;4
 TYT;Matematik;Bilimsel Gösterim ve Katsayı;detail-207;bilimsel-gosterim-katsayi;72;11;8;11;2;1;2
 TYT;Fizik;Mıknatıslar ve manyetik alan;detail-124;miknatislar-ve-manyetik-alan;73;9;6;9;4;1;3
-TYT;Tarih;Sultan ve Osmanlı Merkez Teşkilatı;detail-237;sultan-osmanli-merkez-teskilati;74;10;4;10;2;1;3
-TYT;Tarih;Klasik Çağda Osmanlı Toplum Düzeni;detail-238;klasik-cag-osmanli-toplum-duzeni;75;10;4;10;2;1;3
-TYT;Tarih;Değişen Dünya Dengeleri Osmanlı;detail-239;degisen-dunya-dengeleri-osmanli;76;11;4;11;2;1;3
+TYT;Tarih;Sultan ve Osmanlı Merkez Teşkilatı;detail-237;sultan-osmanli-merkez-teskilati;74;11;6;11;4;1;3
+TYT;Tarih;Klasik Çağda Osmanlı Toplum Düzeni;detail-238;klasik-cag-osmanli-toplum-duzeni;75;11;6;11;4;1;3
+TYT;Tarih;Değişen Dünya Dengeleri Osmanlı;detail-239;degisen-dunya-dengeleri-osmanli;76;12;6;12;4;1;3
 TYT;Matematik;Köklü Sayılar;detail-208;koklu-sayilar;77;16;7;16;2;1;7
 TYT;Matematik;Oran Orantı;detail-209;oran-oranti;78;16;7;16;2;1;7
 TYT;Matematik;Sayı Problemleri;detail-210;sayi-problemleri;79;13;7;13;4;1;7
@@ -86,9 +86,9 @@ TYT;Biyoloji;Mantar;detail-18;mantarlar;84;9;6;9;4;1;4
 TYT;Biyoloji;Omurgasızlar;detail-19;omurgasizlar;85;11;6;11;4;1;3
 TYT;Biyoloji;Omurgalılar;detail-20;omurgalilar;86;11;6;11;4;1;2
 TYT;Matematik;Kesir Problemleri;detail-211;kesir-problemleri;87;15;7;15;4;1;7
-TYT;Tarih;Değişim Çağında Avrupa ve Osmanlı;detail-240;degisim-caginda-avrupa-osmanli;88;10;4;10;2;2;4
-TYT;Tarih;Devrimler Çağında Değişen Devlet Toplum;detail-241;devrimler-caginda-devlet-toplum;89;10;4;10;2;1;4
-TYT;Tarih;Uluslararası İlişkilerde Denge Stratejisi;detail-242;denge-stratejisi;90;10;4;10;2;2;3
+TYT;Tarih;Değişim Çağında Avrupa ve Osmanlı;detail-240;degisim-caginda-avrupa-osmanli;88;11;6;11;4;2;4
+TYT;Tarih;Devrimler Çağında Değişen Devlet Toplum;detail-241;devrimler-caginda-devlet-toplum;89;11;6;11;4;1;4
+TYT;Tarih;Uluslararası İlişkilerde Denge Stratejisi;detail-242;denge-stratejisi;90;11;6;11;4;2;3
 TYT;Tarih;XIX ve XX. Yüzyılda Değişen Sosyoekonomik Hayat;detail-243;degisen-sosyoekonomik-hayat;91;10;4;10;2;1;3
 TYT;Kimya;Kovalent bileşiklerde isimlendirme / metalik bağ;detail-157;kovalent-adlandirma-metalik-bag;92;9;6;9;4;1;3
 TYT;Türkçe;Zarflar;detail-255;zarflar;93;10;5;10;2;1;3
@@ -156,11 +156,11 @@ TYT;Biyoloji;Besin Zinciri ve Ağı;detail-33;besin-zinciri-agi;154;9;6;9;6;1;3
 TYT;Biyoloji;Madde Döngüleri;detail-34;madde-donguleri;155;11;6;11;6;1;3
 TYT;Biyoloji;Güncel Çevre Sorunları;detail-35;guncel-cevre-sorunlari;156;10;6;10;6;1;3
 TYT;Biyoloji;Doğal kaynaklar ve sürdürebilirlik;detail-36;dogal-kaynaklar-surdurulebilirlik;157;10;6;10;6;1;2
-TYT;Coğrafya;Atmosferin Katmanları ve Özellikleri;detail-40;atmosfer-katmanlari;158;8;4;8;4;1;2
+TYT;Coğrafya;Atmosferin Katmanları ve Özellikleri;detail-40;atmosfer-katmanlari;158;9;6;9;6;1;2
 TYT;Coğrafya;Sıcaklık;detail-41;cografya-sicaklik;159;8;6;8;6;1;3
 TYT;Fizik;Küresel aynalar;detail-134;kuresel-aynalar;160;9;6;9;6;1;4
 TYT;Coğrafya;Basınç ve Rüzgarlar;detail-42;basinc-ruzgarlar;161;8;5;8;5;1;3
-TYT;Coğrafya;Nem ve Yağış;detail-43;nem-yagis;162;8;4;8;4;1;3
+TYT;Coğrafya;Nem ve Yağış;detail-43;nem-yagis;162;9;6;9;6;1;3
 TYT;Matematik;Kümeler: Kartezyen Çarpım;detail-223;kartezyen-carpim;163;12;6;12;6;1;5
 TYT;Matematik;Mantık Önerme;detail-224;mantik-onerme;164;14;6;14;6;1;6
 TYT;Fizik;Işığın kırılması;detail-135;isigin-kirilmasi;165;9;6;9;6;1;1
@@ -320,14 +320,14 @@ AYT;Fizik;Manyetik alan;detail-380;manyetik-alan-ayt;318;12;4;12;4;1;3
 AYT;Biyoloji;Üreme Sistemi Kadın Üreme Organları;detail-322;ureme-kadin-organlar;319;11;4;11;4;1;3
 AYT;Biyoloji;Üreme Sistemi Gametogenez;detail-323;ureme-gametogenez;320;12;4;12;4;1;2
 AYT;Biyoloji;Üreme Sistemi Menstrual Döngü;detail-324;ureme-menstrual-dongu;321;12;4;12;4;1;2
-TYT;Coğrafya;Dünya'nın şekli ve hareketleri;detail-74;dunya-sekli-hareket;322;19;4;19;4;1;2
-TYT;Coğrafya;Coğrafi konum;detail-75;cografi-konum;323;15;4;15;4;1;2
-TYT;Coğrafya;Harita bilgisi;detail-76;harita-bilgisi;324;20;4;20;4;1;3
+TYT;Coğrafya;Dünya'nın şekli ve hareketleri;detail-74;dunya-sekli-hareket;322;20;6;20;6;1;2
+TYT;Coğrafya;Coğrafi konum;detail-75;cografi-konum;323;16;6;16;6;1;2
+TYT;Coğrafya;Harita bilgisi;detail-76;harita-bilgisi;324;21;6;21;6;1;3
 AYT;Kimya;Dengeye etki eden faktörler/basınç-hacim etkisi;detail-430;ayt-denge-basinc-hacim;325;12;4;12;4;1;2
 AYT;Kimya;Sulu çözeltilerde denge/asit baz dengesi;detail-431;ayt-sulu-asit-baz-denge;326;12;4;12;4;1;4
-TYT;Felsefe;Felsefeyi Tanıma;detail-97;felsefeyi-tanima;327;21;4;21;4;1;3
-TYT;Felsefe;Felsefe ile Düşünme;detail-98;felsefe-ile-dusunme;328;16;4;16;4;1;3
-TYT;Felsefe;Varlık Felsefesi;detail-99;varlik-felsefesi;329;19;4;19;4;1;2
+TYT;Felsefe;Felsefeyi Tanıma;detail-97;felsefeyi-tanima;327;22;6;22;6;1;3
+TYT;Felsefe;Felsefe ile Düşünme;detail-98;felsefe-ile-dusunme;328;17;6;17;6;1;3
+TYT;Felsefe;Varlık Felsefesi;detail-99;varlik-felsefesi;329;20;6;20;6;1;2
 AYT;Biyoloji;Üreme Sistemi Embriyonik Gelişim;detail-325;ureme-embriyonik-gelisim;330;16;4;16;4;1;4
 AYT;Biyoloji;Komünite Ekolojisi;detail-326;ekoloji-komunite;331;19;4;19;4;3;4
 AYT;Fizik;Manyetik kuvvet;detail-381;manyetik-kuvvet;332;12;4;12;4;1;4
@@ -342,8 +342,8 @@ AYT;Biyoloji;Popülasyon Ekolojisi;detail-327;ekoloji-populasyon;340;14;4;14;4;2
 AYT;Biyoloji;Nükleik Asitler;detail-328;nukleik-asitler-yapi;341;16;4;16;4;1;5
 AYT;Biyoloji;Kalıtım Molekülünün Keşfi;detail-329;kalitim-molekulu-kesfi;342;11;4;11;4;1;4
 AYT;Biyoloji;DNA Replikasyonu;detail-330;dna-eslenmesi;343;17;8;17;8;1;5
-TYT;Felsefe;Bilgi Felsefesi;detail-100;bilgi-felsefesi;344;21;4;21;4;1;2
-TYT;Felsefe;Bilim Felsefesi;detail-101;bilim-felsefesi;345;20;4;20;4;1;2
+TYT;Felsefe;Bilgi Felsefesi;detail-100;bilgi-felsefesi;344;22;6;22;6;1;2
+TYT;Felsefe;Bilim Felsefesi;detail-101;bilim-felsefesi;345;21;6;21;6;1;2
 TYT;Felsefe;Ahlak Felsefesi;detail-102;ahlak-felsefesi;346;23;4;23;4;1;2
 AYT;Kimya;Titrasyon;detail-435;ayt-titrasyon;347;12;4;12;4;1;3
 AYT;Kimya;ÇÖZÜNÜRLÜK DENGESİ / MOLAR ÇÖZÜNÜRLÜK Kç İLİŞKİSİ;detail-436;ayt-cozunurluk-dengesi;348;12;4;12;4;1;4
