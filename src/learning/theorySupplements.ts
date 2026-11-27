@@ -27,6 +27,7 @@ import { depth222Supplements } from "./depth222";
 import { depth223Supplements } from "./depth223";
 import { depth224Supplements } from "./depth224";
 import { depth225Supplements, historySupplement225, notationSupplement225 } from "./depth225";
+import { depth230Supplements, traitSupplement230 } from "./depth230";
 import { signedBinomial035 } from "./signedBinomialSource035Model";
 import { statisticsSource037Classes } from "./statisticsSource037Revision";
 
@@ -70,6 +71,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
   ...depth223Supplements,
   ...depth224Supplements,
   ...depth225Supplements,
+  ...depth230Supplements,
   "genetik-cesitlilik": [{
     title: "Tek mayozun ürünleriyle olası türleri ayır",
     figureTitle: "Tek mayozun ürünleriyle olası türleri ayır",
@@ -193,7 +195,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
     ],
     summary: "Eşit miktar 2+2, varsayılan ihtiyaca göre 1+3. Toplam eşit kaldığı hâlde paylar değişebilir. Ölçütün gerekçesini söyle.",
     appendSection: true,
-  }],
+  }, traitSupplement230],
   "bilgi-ve-inanc": [{
     title: "Üç kaynak birlikte iş görebilir",
     figureTitle: "Üç kaynak birlikte iş görebilir",
