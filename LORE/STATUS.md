@@ -27,6 +27,7 @@
 | 0.211.0 | 94f153536836ec4d4e590396474c058a34614a1a |
 | 0.212.0 | d771f9d5db0de25a3948466faff7a2f367a515f2 |
 | 0.213.0 | 9275e76c1ddae24c8071ef05b7002cf51da7a60f |
+| 0.214.0 | f51526a2d88af5db479e155cba7aa389962fea96 |
 
 Cloudflare 0.177.0'da kaldı; sahibin kararıyla ertelendi. Android yalnız kişisel imzalı test paketi. İki site arası yedek aktarım testi tamamlanmadı, kabul sayılmaz.
 
@@ -71,6 +72,8 @@ Derinleştirme 0.212.0 (PR 34 CI yeşil, main CI 45893088449, Pages 45898132599,
 
 Derinleştirme 0.213.0 (PR 35 CI yeşil, main CI 45908596867, Pages 45913044443, canlı 118/118 ilk denemede): Kimya son on dokuz ders (`depth222.ts` verim/safsızlık/katlı oran, `depth223.ts` gazlar/buhar/kaynama/katılar, `depth224.ts` karışım/derişim/ayırma/su/çevre, `depth225.ts` simya/sembolik dil/polimerler). 0.208.0'dan beri 83 TYT Fen dersi derinleştirildi; her TYT Fen dersi en az 5 örnek taşır.
 
-Derinleştirme 0.214.0 adayı: TYT Türkçe'nin 4 örnekli on dört dersi (`depth226.ts` dil bilgisi, `depth227.ts` anlam ve paragraf, `depth229.ts` paragraf becerileri). Bütün metinler özgün, paragraf soruları kendi metnini taşır.
+Derinleştirme 0.214.0 (PR 36 CI yeşil, main f51526a2d88af5db479e155cba7aa389962fea96, main CI 45921681341, Pages 45925913938, canlı 118/118 ilk denemede): TYT Türkçe'nin 4 örnekli on dört dersi (`depth226.ts` dil bilgisi, `depth227.ts` anlam ve paragraf, `depth229.ts` paragraf becerileri). Bütün metinler özgün, paragraf soruları kendi metnini taşır.
 
-Sıradaki iş: 0.214.0 yayın kapısı; çalışan Sosyal turları Tarih (tarih-zaman, Osmanlı kuruluş, askerî teşkilat, medeniyet, merkez teşkilatı), Felsefe (felsefeyi tanıma, düşünme, varlık, bilgi, bilim felsefesi), Coğrafya (dünyanın şekli, coğrafi konum, harita, atmosfer, nem-yağış). Kalan 4 örnekli TYT Sosyal: Tarih 12, Coğrafya 31, Felsefe 9, Din 7. Ardından beş AYT Sayısal ders. Tur kuralları scratchpad/depth-brief.md.
+Derinleştirme 0.215.0 adayı: TYT Tarih on ders (`depth228.ts` tarih-zaman, Osmanlı kuruluş, askerî teşkilat, medeniyet, merkez teşkilatı; `depth232.ts` toplum düzeni, dünya dengeleri, değişim çağında Avrupa, devrimler çağı, denge stratejisi), Felsefe beş ders (`depth230.ts`), Coğrafya beş ders (`depth231.ts` Güneş açısı, yerel saat, ölçek, atmosfer, Magnus nemi). Yıllar dersin kendi metninde test edilir.
+
+Sıradaki iş: 0.215.0 yayın kapısı; çalışan turlar Felsefe 2 (ahlak, din, siyaset, sanat felsefesi, felsefi okuma-yazma), Coğrafya 2 (doğa-insan, büyük iklim tipleri, Türkiye iklimi, tektonik, iç kuvvetler), Tarih 3 (sosyoekonomik hayat, 20. yüzyıl başı, Millî Mücadele, Atatürkçülük, iki savaş arası). Sonra kalan 4 örnekli TYT Sosyal: Tarih 2 (küresel savaşlar arası, İkinci Dünya Savaşı sonrası), Coğrafya 26, Felsefe 4 (İlk Çağ, Orta Çağ, Rönesans, Aydınlanma), Din 7. Ardından beş AYT Sayısal ders. Tur kuralları scratchpad/depth-brief.md.

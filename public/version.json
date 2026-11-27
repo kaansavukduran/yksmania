@@ -1,8 +1,8 @@
 {
-  "version": "0.214.0",
+  "version": "0.215.0",
   "channel": "alpha",
   "notes": {
-    "tr": "TYT Türkçe'de on dört derse tablo, ikişer çözümlü örnek, Kopya Kağıdı özeti ve bölüm figürü eklendi: ek-fiil, fiilimsiler, cümlenin ögeleri, cümle türleri, deyim ve atasözü, cümlede anlam, paragrafa giriş, yardımcı düşünce, ikiye bölme, akışı bozan cümle, paragrafta sıralama, cümle ekleme, boşluk doldurma ve anlatım biçimleri. Bütün örnek cümle ve paragraflar özgündür.",
-    "en": "Fourteen TYT Turkish lessons gain a data table, two worked examples, a cheat-sheet summary and a section figure each; all sample sentences and passages are original."
+    "tr": "TYT Tarih, Felsefe ve Coğrafya'da on beş derse tablo, ikişer çözümlü örnek, Kopya Kağıdı özeti ve bölüm figürü eklendi. Tarih'te Osmanlı kuruluşundan denge stratejisine on ders, Felsefe'de felsefeyi tanımadan bilim felsefesine beş ders, Coğrafya'da Dünya'nın şekli, coğrafi konum, harita, atmosfer katmanları ve nem-yağış. Tarihler dersin kendi metninden alınır; saat, ölçek, Güneş açısı ve nem hesapları kodda yapılır.",
+    "en": "Fifteen TYT history, philosophy and geography lessons gain a data table, two worked examples, a cheat-sheet summary and a section figure."
   }
 }
