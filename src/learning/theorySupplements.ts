@@ -30,6 +30,7 @@ import { depth225Supplements, historySupplement225, notationSupplement225 } from
 import { depth226Supplements } from "./depth226";
 import { depth227Supplements } from "./depth227";
 import { depth229Supplements } from "./depth229";
+import { depth228Supplements, timeSupplement228 } from "./depth228";
 import { signedBinomial035 } from "./signedBinomialSource035Model";
 import { statisticsSource037Classes } from "./statisticsSource037Revision";
 
@@ -76,6 +77,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
   ...depth226Supplements,
   ...depth227Supplements,
   ...depth229Supplements,
+  ...depth228Supplements,
   "genetik-cesitlilik": [{
     title: "Tek mayozun ürünleriyle olası türleri ayır",
     figureTitle: "Tek mayozun ürünleriyle olası türleri ayır",
@@ -240,7 +242,7 @@ export const theorySupplements: Readonly<Record<string, readonly TheorySupplemen
     ],
     summary: "MÖ 2 → MÖ 1 → MS 1 → MS 2 → MS 3 dizisinde dört aralık, beş etiket var. Süreyi ve iki uç dahil etiket sayısını ayrı hesapla.",
     appendSection: true,
-  }],
+  }, timeSupplement228],
   "isi-ve-sicaklik": [{
     title: "Isı sığasını enerji grafiğinin eğiminden oku",
     figureTitle: "Isı sığasını enerji grafiğinin eğiminden oku",
