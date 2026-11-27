@@ -1,3 +1,9 @@
+# TYT Türkçe'de on dört ders · 0.214.0 adayı
+
+Dil bilgisinde ek-fiil biçimleri ünlü ve ünsüz uyumu kurallarıyla kodda üretildi; fiilimsi türü dersin ek listesinden, öge adı hâl eki ve sorudan, cümle türü öge sırası ve yüklemin çözümlemesinden kuralla türetilir. Deyim ile atasözü genel yargı ölçütüyle ayrıldı. Anlam ve paragraf derslerinde cümle rolleri veri olarak saklanır: gönderme bağları, odak etiketleri ve bağlaçlar. Giriş-sonuç, ana düşünce, ikiye bölme sınırı, akışı bozan cümle, doğru sıra, ekleme yeri ve boşluğa giren seçenek bu veriden kuralla bulunur; test 120 sıranın, beş konumun ve beş seçeneğin hepsini deneyerek cevabın tek olduğunu kanıtlar. Bütün cümle ve paragraflar özgündür ve her paragraf sorusu kendi metnini taşır (YKS-015).
+
+Görsel keşif öğrenme kaydı, XP veya ustalık yazmaz.
+
 # TYT Fen derinleştirmesi tamamlandı · 0.213.0 adayı
 
 TYT Kimya'nın son on dokuz ince dersi işlendi. Verim, safsızlık, tepkimeli karışım, katlı oranlar (N–O ve Fe–O serilerinde 1:2:3:4:5 ve 6:8:9) ve katı kütlesi değişimi tam kesirli hesapla; gaz yasaları oranlarla, buhar basıncı ve kaynama dersin MEBİ değerleriyle, katı türleri yük taşıyıcısıyla, fiziksel ve kimyasal değişim tür listesi ve atom sayımıyla; karışımlar tanecik boyutuyla, derişim dört birimle ve seyreltme-karıştırmayla, ayırma yöntemleri kullandıkları özellikle, koligatif örnekler dersin Kf, Kb ve i değerleriyle; suyun özellikleri CRC değerleriyle, çevre tepkimeleri atom denkliğiyle; simyadan kimyaya katkılar dersin anlattığı sırayla, sembolik dilde formül ayrıştırıcıyla, polimerlerde monomer-tekrar birimi denkliği ve ASTM D7611 ambalaj kodlarıyla tablolandı.
@@ -981,7 +987,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | Ders | Hazır konu / toplam | Bölüm figürleri (konu · figür) | Kademeli çözüm paneli | Kısmi kopya kâğıdı aktarımı | 99_ÖSYM | Figürsüz konu |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Temel İnşa (0. basamak) | 25 ön ders | 25 · 57 | ön derslerde çözümlü örnek | — | — | 0 |
-| TYT Türkçe | 33 / 33 | 33 · 144 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
+| TYT Türkçe | 33 / 33 | 33 · 158 | 380 / 380 · %100,00 | 8 / 33 · %24,24 | 360 soru · 9 kitapçık | 0 |
 | TYT Matematik | 45 / 45 | 45 · 221 | 912 / 912 · %100,00 | 9 / 38 · %23,68 | 269 soru · 9 kitapçık | 0 |
 | TYT Geometri | 19 / 19 | 19 · 209 | 231 / 231 · %100,00 | 5 / 32 · %15,63 | 91 soru · 9 kitapçık | 0 |
 | TYT Fizik | 24 / 24 | 24 · 298 | 319 / 319 · %100,00 | 7 / 24 · %29,17 | 63 soru · 9 kitapçık | 0 |
@@ -997,7 +1003,7 @@ Bu tablo `npm run progress` ile koddan üretilir (docs/ILERLEME.md ile aynıdır
 | AYT Kimya | 55 / 55 | 55 · 150 | 680 / 680 · %100,00 | 11 / 55 · %20,00 | 117 soru · 9 kitapçık | 0 |
 | AYT Biyoloji | 75 / 75 | 75 · 327 | 907 / 907 · %100,00 | 11 / 75 · %14,67 | 117 soru · 9 kitapçık | 0 |
 | Denemeler | 17 hazır deneme (2 karma, 15 ders) | — | 17 denemede toplam 800 soru; incelemede aynı çözüm paneli | — | 18 / 18 YKS kitapçığı (2018–2026) | tam resmî dağılımlı deneme: 2 |
-| **Toplam** | **510 / 510** | **510 · 2518** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
+| **Toplam** | **510 / 510** | **510 · 2532** | **6.669 / 6.669 · %100,00** | **137 / 517 · %26,50** | **1.845 uygulama soru kaydı** | **0** |
 
 | Genel gösterge | Değer |
 | --- | ---: |
